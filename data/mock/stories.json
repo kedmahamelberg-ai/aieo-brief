@@ -1,14 +1,14 @@
 {
   "event-mutualism": {
-    "story_id": "story-1",
+    "story_id": "11111111-1111-1111-1111-111111111111",
     "slug": "ai-assisted-diagnostics-help-clinicians-eventm"
   },
   "event-ai-benefit": {
-    "story_id": "story-2",
+    "story_id": "22222222-2222-2222-2222-222222222222",
     "slug": "creator-content-expands-ai-training-eventa"
   },
   "event-early": {
-    "story_id": "story-3",
+    "story_id": "33333333-3333-3333-3333-333333333333",
     "slug": "government-announces-ai-initiative-evente"
   }
 }

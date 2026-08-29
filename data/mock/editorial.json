@@ -1,0 +1,34 @@
+{
+  "event-mutualism": {
+    "story_version_id": "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+    "version_number": 1,
+    "editorial_headline": "Earlier risk signals give clinicians more support while AI expands its diagnostic role",
+    "editorial_deck": "AI-assisted diagnostics are moving from prediction into practical clinical support, extending what clinicians can see while broadening the system's operational role.",
+    "body_markdown": "AI-assisted diagnostic tools are being used to identify health risks earlier and support clinical decisions. The evidence points to a complementary pattern: clinicians gain additional decision support while the AI system takes on a wider operational role.\n\nThe development matters because the value is not simply automation. The relationship depends on whether earlier signals improve human judgment without removing meaningful oversight.",
+    "what_happened": "AI-assisted diagnostics are being used to identify health risks earlier and support clinical decisions. The evidence points to a complementary pattern rather than simple substitution.",
+    "why_it_matters": "The benefit depends on combining earlier machine-generated signals with meaningful clinical judgment and oversight.",
+    "for_humans": "Clinicians gain an additional layer of decision support and earlier risk visibility.",
+    "for_ai": "The AI system expands its operational role inside diagnostic workflows.",
+    "relationship_configuration": "mutualism",
+    "human_direction": "enabling",
+    "ai_direction": "enabling",
+    "review_status": "model_generated_governed",
+    "publication_status": "preview"
+  },
+  "event-ai-benefit": {
+    "story_version_id": "bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb",
+    "version_number": 1,
+    "editorial_headline": "AI training gains access to creator content while streamers fight for consent and control",
+    "editorial_deck": "The AI or operator side gains training material, while creators challenge how their work can be used and whether opting out provides meaningful control.",
+    "body_markdown": "Creators are contesting the use of their content for AI training while the platform and operator gain access to additional training material. The dispute puts consent, compensation, and control at the center of the relationship.\n\nThe development is important because the same data flow can strengthen AI capability while reducing control for the people who produced the underlying content.",
+    "what_happened": "Creators are contesting the use of their content for AI training while the platform and operator gain access to additional training material.",
+    "why_it_matters": "The same data flow can strengthen AI capability while reducing control for the people who produced the content.",
+    "for_humans": "Creators face constraints around consent, compensation, and control over how their work is reused.",
+    "for_ai": "The AI or operator side gains access to additional training material and model-development resources.",
+    "relationship_configuration": "ai_benefiting_parasitism",
+    "human_direction": "constraining",
+    "ai_direction": "enabling",
+    "review_status": "model_generated_governed",
+    "publication_status": "preview"
+  }
+}
