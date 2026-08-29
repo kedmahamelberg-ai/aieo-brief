@@ -11,17 +11,19 @@ import uuid
 from datetime import datetime, timezone
 
 import requests
-from openai import OpenAI
 from supabase import create_client
 
 OBSERVATORY = os.environ.get(
     "OBSERVATORY_BASE_URL",
     "https://observatory.hamelberg-ai.com",
 ).rstrip("/")
-MODEL = os.environ.get("BRIEF_EDITORIAL_MODEL", "gpt-5.6-luna")
-PROMPT_VERSION = "aieo-brief-editorial-v2a1"
-MAX_SOURCE_CHARS = 6500
-MAX_TOTAL_EVIDENCE_CHARS = 18000
+MODEL = os.environ.get("BRIEF_EDITORIAL_MODEL", "Qwen3-4B-Q4_K_M")
+MODEL_REVISION = os.environ.get("BRIEF_EDITORIAL_MODEL_REVISION", "ggml-org/Qwen3-4B-GGUF:Q4_K_M")
+LLM_BASE_URL = os.environ.get("BRIEF_LOCAL_LLM_URL", "http://127.0.0.1:8080").rstrip("/")
+LLAMA_CPP_VERSION = os.environ.get("BRIEF_LLAMA_CPP_VERSION", "b10516")
+PROMPT_VERSION = "aieo-brief-editorial-local-v2a2"
+MAX_SOURCE_CHARS = 5200
+MAX_TOTAL_EVIDENCE_CHARS = 14000
 
 ELIGIBLE_LEVELS = {
     "strong_multi_source",
@@ -300,7 +302,7 @@ def prompt_for(event, relationship, readiness, sources, retry_note=""):
         )
 
     return f"""
-You are the evidence-bounded editorial writer for AIEO Brief.
+You are the evidence-bounded editorial writer for AIEO Brief. /no_think
 
 AIEO Brief turns fragmented AI coverage into one living development. Write for an intelligent general reader who wants clarity quickly. The public interface is deliberately easy to scan and uses progressive disclosure.
 
@@ -360,20 +362,41 @@ Return ONLY valid JSON with this exact structure:
 }}
 """.strip()
 
-def generate_one(openai_client, event, relationship, readiness, sources):
+def local_completion(prompt: str) -> str:
+    response = requests.post(
+        f"{LLM_BASE_URL}/v1/chat/completions",
+        json={
+            "model": "aieo-editorial",
+            "messages": [
+                {"role": "user", "content": prompt},
+            ],
+            "temperature": 0.2,
+            "top_p": 0.85,
+            "max_tokens": 1100,
+            "seed": 42,
+        },
+        timeout=900,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    choices = payload.get("choices") or []
+    if not choices:
+        raise RuntimeError("Local model returned no choices.")
+    content = (choices[0].get("message") or {}).get("content")
+    if not content:
+        raise RuntimeError("Local model returned an empty response.")
+    return str(content)
+
+def generate_one(event, relationship, readiness, sources):
     prompt = prompt_for(event, relationship, readiness, sources)
     source_texts = [s["evidence"] for s in sources if s.get("evidence")]
 
     last_error = None
     for attempt in range(2):
-        response = openai_client.responses.create(
-            model=MODEL,
-            input=prompt,
-            max_output_tokens=1400,
-        )
+        raw_output = local_completion(prompt)
         try:
-            data = parse_json_output(response.output_text)
-            return validate_output(data, relationship, source_texts), response.output_text
+            data = parse_json_output(raw_output)
+            return validate_output(data, relationship, source_texts), raw_output
         except Exception as exc:
             last_error = exc
             prompt = prompt_for(
@@ -384,7 +407,7 @@ def generate_one(openai_client, event, relationship, readiness, sources):
                 retry_note=(
                     "\nREVISION REQUIRED\n"
                     f"The previous draft failed validation: {exc}. "
-                    "Rewrite from scratch and obey every rule."
+                    "Rewrite from scratch and obey every rule. /no_think"
                 ),
             )
     raise RuntimeError(f"Editorial output failed validation twice: {last_error}")
@@ -406,16 +429,15 @@ def main():
     parser.add_argument("--limit", type=int, default=5, help="0 means all eligible current stories")
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--max-runtime-minutes", type=int, default=105)
     args = parser.parse_args()
 
-    api_key = os.environ.get("OPENAI_API_KEY")
-    if not api_key and not args.dry_run:
-        raise SystemExit(
-            "OPENAI_API_KEY is missing. Add it as a GitHub repository secret before live editorial generation."
-        )
-
     supabase = create_client(os.environ["SUPABASE_URL"], os.environ["SUPABASE_SECRET_KEY"])
-    openai_client = OpenAI(api_key=api_key) if api_key else None
+    if not args.dry_run:
+        health = requests.get(f"{LLM_BASE_URL}/health", timeout=30)
+        health.raise_for_status()
+
+    started_at = time.monotonic()
 
     release, symbiosis = current_inputs()
     current_events = {
@@ -475,6 +497,8 @@ def main():
         json.dumps(
             {
                 "model": MODEL,
+                "model_revision": MODEL_REVISION,
+                "llama_cpp_version": LLAMA_CPP_VERSION,
                 "prompt_version": PROMPT_VERSION,
                 "eligible_before_limit": counters["eligible"],
                 "selected_for_run": len(eligible),
@@ -497,8 +521,10 @@ def main():
             continue
 
         try:
+            if (time.monotonic() - started_at) / 60 >= args.max_runtime_minutes:
+                print("Soft stop before workflow timeout; rerun with the same settings to continue.", flush=True)
+                break
             output, raw_output = generate_one(
-                openai_client,
                 event,
                 relationship,
                 readiness,
@@ -521,9 +547,9 @@ def main():
                 "entity_id": str(story["story_id"]),
                 "task": "editorial_story",
                 "run_id": os.environ.get("GITHUB_RUN_ID"),
-                "provider": "openai",
+                "provider": "local_llama_cpp",
                 "model_name": MODEL,
-                "model_revision": MODEL,
+                "model_revision": MODEL_REVISION,
                 "prompt_version": PROMPT_VERSION,
                 "classifier_version": "reviewed-symbiosis",
                 "input_sha256": fingerprint,
@@ -566,6 +592,8 @@ def main():
                     "source_count": readiness.get("source_count"),
                     "prompt_version": PROMPT_VERSION,
                     "model": MODEL,
+                    "model_revision": MODEL_REVISION,
+                    "llama_cpp_version": LLAMA_CPP_VERSION,
                 },
                 "generated_artifact_id": generated_id,
                 "review_status": "model_generated_governed",
@@ -611,7 +639,7 @@ def main():
     if summary:
         with open(summary, "a", encoding="utf-8") as handle:
             handle.write("## AIEO Brief editorial generation\n\n")
-            handle.write(f"- Model: **{MODEL}**\n")
+            handle.write(f"- Model: **{MODEL}** (local llama.cpp, no paid model API)\n")
             handle.write(f"- Prompt version: **{PROMPT_VERSION}**\n")
             handle.write(f"- Generated: **{counters['generated']}**\n")
             handle.write(f"- Failed: **{counters['failed']}**\n")
