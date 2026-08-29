@@ -4,12 +4,12 @@ on:
   workflow_dispatch:
     inputs:
       limit:
-        description: "Number of eligible current stories to generate. Use 0 for all."
+        description: "Number of eligible current stories to generate. Use 0 for all that fit inside the runtime budget."
         required: true
         default: "5"
         type: string
       dry_run:
-        description: "Inspect eligibility without calling the model or writing drafts"
+        description: "Inspect eligibility without loading the local model or writing drafts"
         required: true
         default: true
         type: boolean
@@ -18,6 +18,11 @@ on:
         required: true
         default: false
         type: boolean
+      max_runtime_minutes:
+        description: "Soft stop for generation so the workflow can finish cleanly"
+        required: true
+        default: "105"
+        type: string
 
 permissions:
   contents: read
@@ -26,10 +31,18 @@ concurrency:
   group: aieo-brief-editorial-generation
   cancel-in-progress: false
 
+env:
+  LLAMA_CPP_TAG: b10516
+  BRIEF_EDITORIAL_MODEL: Qwen3-4B-Q4_K_M
+  BRIEF_EDITORIAL_MODEL_REVISION: ggml-org/Qwen3-4B-GGUF:Q4_K_M
+  BRIEF_LLAMA_CPP_VERSION: b10516
+  MODEL_FILE: .cache/models/Qwen3-4B-Q4_K_M.gguf
+  MODEL_URL: https://huggingface.co/ggml-org/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf?download=true
+
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 125
 
     steps:
       - uses: actions/checkout@v6
@@ -41,17 +54,111 @@ jobs:
 
       - run: python -m pip install -r requirements.txt
 
+      - name: Validate Supabase secrets
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          test -n "$SUPABASE_URL"
+          test -n "$SUPABASE_SECRET_KEY"
+
+      - name: Cache local editorial model
+        if: ${{ inputs.dry_run == false }}
+        uses: actions/cache@v4
+        with:
+          path: .cache/models
+          key: qwen3-4b-q4-k-m-v1
+
+      - name: Download open-weight model
+        if: ${{ inputs.dry_run == false }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$(dirname "$MODEL_FILE")"
+          if [[ ! -s "$MODEL_FILE" ]]; then
+            curl --fail --location --retry 5 --retry-delay 5 \
+              --output "$MODEL_FILE" \
+              "$MODEL_URL"
+          fi
+          ls -lh "$MODEL_FILE"
+
+      - name: Build pinned llama.cpp server
+        if: ${{ inputs.dry_run == false }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 --branch "$LLAMA_CPP_TAG" \
+            https://github.com/ggml-org/llama.cpp.git .llama.cpp
+          cmake -S .llama.cpp -B .llama.cpp/build \
+            -DCMAKE_BUILD_TYPE=Release \
+            -DLLAMA_BUILD_TESTS=OFF \
+            -DLLAMA_BUILD_EXAMPLES=OFF
+          cmake --build .llama.cpp/build --config Release -j 2 --target llama-server
+          .llama.cpp/build/bin/llama-server --version
+
+      - name: Start local editorial model
+        if: ${{ inputs.dry_run == false }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          nohup .llama.cpp/build/bin/llama-server \
+            -m "$MODEL_FILE" \
+            --alias aieo-editorial \
+            --host 127.0.0.1 \
+            --port 8080 \
+            --ctx-size 8192 \
+            --threads 2 \
+            --parallel 1 \
+            > llama-server.log 2>&1 &
+          echo $! > llama-server.pid
+
+          for attempt in $(seq 1 90); do
+            if curl --silent --fail http://127.0.0.1:8080/health >/dev/null; then
+              echo "Local Qwen editorial model is ready."
+              exit 0
+            fi
+            if ! kill -0 "$(cat llama-server.pid)" 2>/dev/null; then
+              echo "llama-server stopped unexpectedly."
+              cat llama-server.log
+              exit 1
+            fi
+            sleep 2
+          done
+
+          echo "Local model did not become ready in time."
+          cat llama-server.log
+          exit 1
+
       - name: Generate evidence-bounded editorial drafts
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          BRIEF_EDITORIAL_MODEL: ${{ vars.BRIEF_EDITORIAL_MODEL || 'gpt-5.6-luna' }}
+          BRIEF_LOCAL_LLM_URL: http://127.0.0.1:8080
           OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
         shell: bash
         run: |
           set -euo pipefail
-          args=(--limit "${{ inputs.limit }}")
+          args=(
+            --limit "${{ inputs.limit }}"
+            --max-runtime-minutes "${{ inputs.max_runtime_minutes }}"
+          )
           if [[ "${{ inputs.dry_run }}" == "true" ]]; then args+=(--dry-run); fi
           if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
           python scripts/generate_editorial_stories.py "${args[@]}"
+
+      - name: Upload local-model log
+        if: ${{ always() && inputs.dry_run == false }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: aieo-local-editorial-model-log-${{ github.run_id }}
+          path: llama-server.log
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Stop local model
+        if: ${{ always() && inputs.dry_run == false }}
+        shell: bash
+        run: |
+          if [[ -f llama-server.pid ]]; then
+            kill "$(cat llama-server.pid)" 2>/dev/null || true
+          fi
