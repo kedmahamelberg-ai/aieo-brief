@@ -1,0 +1,51 @@
+name: Build AIEO Brief Preview
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "templates/**"
+      - "assets/**"
+      - "requirements.txt"
+      - ".github/workflows/build-brief-preview.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aieo-brief-preview
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Validate secrets
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+        run: |
+          test -n "$SUPABASE_URL"
+          test -n "$SUPABASE_SECRET_KEY"
+      - name: Build current AIEO Brief site
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
+        run: python scripts/build_site.py
+      - name: Upload preview site
+        uses: actions/upload-artifact@v4
+        with:
+          name: aieo-brief-preview-${{ github.run_id }}
+          path: _site
+          if-no-files-found: error
+          retention-days: 14
