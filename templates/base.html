@@ -1,4 +1,43 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{% block description %}AIEO Brief: AI developments by who gains, who is constrained, and what changed.{% endblock %}"><title>{% block title %}AIEO Brief{% endblock %}</title><link rel="stylesheet" href="/assets/site.css"></head><body>
-<header class="site-header"><a class="brand" href="/"><span class="brand-mark">A</span><span><strong>AIEO Brief</strong><small>See what changed. See who gains.</small></span></a><nav><a href="/">Brief</a><a href="#relationships">Relationships</a><a href="#research">Research</a><a href="#community">Community</a><span class="premium-pill">Premium soon</span></nav></header>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{% block description %}AIEO Brief. AI developments by who gains, who is constrained, and what changed.{% endblock %}">
+  <title>{% block title %}AIEO Brief{% endblock %}</title>
+  <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to the brief</a>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="AIEO Brief home">
+    <span class="brand-mark">A</span>
+    <span>
+      <strong>AIEO Brief</strong>
+      <small>See what changed. See who gains.</small>
+    </span>
+  </a>
+  <nav aria-label="Primary navigation">
+    <a href="/#latest">Latest</a>
+    <a href="/#relationships">Relationships</a>
+    <a href="/#research">Research</a>
+    <a href="/#community">Discuss</a>
+    <a class="nav-cta" href="/#subscribe">Get the Brief</a>
+  </nav>
+</header>
 {% block content %}{% endblock %}
-<footer><strong>AIEO Brief</strong><span>Built on the AI Empowerment Observatory evidence and event infrastructure.</span><a href="https://observatory.hamelberg-ai.com" target="_blank" rel="noopener noreferrer">Open the Observatory</a></footer><script src="/assets/app.js"></script></body></html>
+<footer>
+  <div>
+    <strong>AIEO Brief</strong>
+    <span>Living AI developments built on the AI Empowerment Observatory evidence infrastructure.</span>
+  </div>
+  <div class="footer-links">
+    <a href="/">Latest</a>
+    <a href="/#relationships">Relationships</a>
+    <a href="/#research">Research</a>
+    <a href="https://observatory.hamelberg-ai.com" target="_blank" rel="noopener noreferrer">Observatory</a>
+  </div>
+</footer>
+<script src="/assets/app.js"></script>
+</body>
+</html>

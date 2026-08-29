@@ -1,7 +1,164 @@
-{% extends "base.html" %}{% block title %}{{ story.headline }} | AIEO Brief{% endblock %}{% block description %}{{ story.what_happened }}{% endblock %}{% block content %}
-<main class="story-page"><a class="back-link" href="/">← Back to the Brief</a><div class="story-layout"><article><div class="story-kicker {{ story.relationship.class }}"><span>{{ story.relationship.people }}</span><span>{{ story.relationship.ai }}</span><strong>{{ story.relationship.label }}</strong></div><h1>{{ story.headline }}</h1><div class="story-meta"><span>{{ story.event_date }}</span><span>{{ story.novelty }}</span><span>{{ story.source_count }} source{% if story.source_count != 1 %}s{% endif %}</span>{% if story.evidence_level == "headline_only" %}<span class="early">Early signal</span>{% endif %}</div>
-<section class="story-section"><span class="section-label">WHAT HAPPENED</span><p class="story-lede">{{ story.what_happened }}</p></section><section class="story-section"><span class="section-label">WHY IT MATTERS</span><p>{{ story.why_it_matters }}</p></section><div class="two-sides"><section><span class="section-label">FOR HUMANS</span><h2>{{ story.relationship.people }}</h2><p>{{ story.human_copy }}</p></section><section><span class="section-label">FOR AI / OPERATOR SIDE</span><h2>{{ story.relationship.ai }}</h2><p>{{ story.ai_copy }}</p></section></div>
-{% if story.evidence_level == "headline_only" %}<aside class="evidence-warning"><strong>Early signal</strong><p>AIEO has source metadata for this development, but no retained full-source article body. The interpretation is deliberately limited.</p></aside>{% endif %}
-<section class="sources"><span class="section-label">SOURCE LINKS</span><h2>Open the reporting behind this development</h2>{% for source in story.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer"><span><strong>{{ source.publisher }}</strong>{{ source.headline }}</span><small>{{ source.published_date }}</small></a>{% endfor %}</section></article>
-<aside class="story-sidebar"><div class="relationship-explainer {{ story.relationship.class }}"><span>{{ story.relationship.people }} · {{ story.relationship.ai }}</span><h3>{{ story.relationship.label }}</h3><small>{{ story.relationship.technical }}</small></div><div class="interaction-box"><button data-action="like">♡ Like</button><button data-action="discuss">💬 Discuss</button><button data-action="share">↗ Share</button><button data-action="save">🔖 Save</button><button data-action="follow">🔔 Follow</button><small>Interaction storage arrives in Phase 3.</small></div><div class="ad-slot story-ad"><span>ADVERTISEMENT</span><strong>Reserved sponsor space</strong></div></aside></div></main>
+{% extends "base.html" %}
+{% block title %}{{ story.headline }} | AIEO Brief{% endblock %}
+{% block description %}{{ story.deck or story.what_happened }}{% endblock %}
+{% block content %}
+<main id="main-content" class="story-page">
+  <a class="back-link" href="/">← Back to the Brief</a>
+
+  <div class="story-layout">
+    <article>
+      <div class="story-kicker {{ story.relationship.class }}">
+        <span>{{ story.relationship.people }}</span>
+        <span>{{ story.relationship.ai }}</span>
+        <strong>{{ story.relationship.label }}</strong>
+      </div>
+
+      <h1>{{ story.headline }}</h1>
+      {% if story.deck %}<p class="story-deck">{{ story.deck }}</p>{% endif %}
+
+      <div class="story-meta">
+        <span>{{ story.event_date }}</span>
+        <span>{{ story.novelty }}</span>
+        <span>{{ story.source_count }} source{% if story.source_count != 1 %}s{% endif %}</span>
+        {% if story.evidence_level == "headline_only" %}
+        <span class="early">Early signal</span>
+        {% elif story.editorial_version %}
+        <span>AIEO Brief v{{ story.editorial_version }}</span>
+        {% endif %}
+      </div>
+
+      <nav class="quick-actions" aria-label="Story actions">
+        <button type="button" data-action="like">♡ Like</button>
+        <button type="button" data-action="discuss">💬 Discuss</button>
+        <button type="button" data-action="share" data-share-url="{{ story.url }}" data-share-title="{{ story.headline }}">↗ Share</button>
+        <button type="button" data-action="save">🔖 Save</button>
+        <button type="button" class="notify-action" data-action="follow">🔔 Notify me</button>
+      </nav>
+
+      <section class="quick-read">
+        <div class="quick-read-title">
+          <span class="eyebrow">QUICK READ</span>
+          <small>Two questions first. Open more only if you want it.</small>
+        </div>
+        <div class="quick-read-grid">
+          <section>
+            <span class="section-label">WHAT HAPPENED</span>
+            <p>{{ story.what_happened }}</p>
+          </section>
+          <section>
+            <span class="section-label">WHY IT MATTERS</span>
+            <p>{{ story.why_it_matters }}</p>
+          </section>
+        </div>
+      </section>
+
+      <div class="two-sides">
+        <section class="human-side">
+          <span class="section-label">FOR HUMANS</span>
+          <h2>{{ story.relationship.people }}</h2>
+          <p>{{ story.for_humans }}</p>
+        </section>
+        <section class="ai-side">
+          <span class="section-label">FOR AI / OPERATOR SIDE</span>
+          <h2>{{ story.relationship.ai }}</h2>
+          <p>{{ story.for_ai }}</p>
+        </section>
+      </div>
+
+      {% if story.evidence_level == "headline_only" %}
+      <aside class="evidence-warning">
+        <strong>Early signal</strong>
+        <p>AIEO has source metadata for this development, but no retained full-source article body. The interpretation is deliberately limited.</p>
+      </aside>
+      {% endif %}
+
+      {% if story.body_paragraphs %}
+      <details class="story-detail" open>
+        <summary>Read the brief</summary>
+        <div class="story-body">
+          {% for paragraph in story.body_paragraphs %}
+          <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+      </details>
+      {% endif %}
+
+      <div class="inline-ad" data-ad-placement="story-inline-1">
+        <span>ADVERTISEMENT</span>
+        <strong>Reserved sponsor space</strong>
+      </div>
+
+      <details class="sources story-detail">
+        <summary>Open source links ({{ story.sources|length }})</summary>
+        <div class="source-list">
+          {% for source in story.sources %}
+          <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
+            <span><strong>{{ source.publisher }}</strong>{{ source.headline }}</span>
+            <small>{{ source.published_date }}</small>
+          </a>
+          {% endfor %}
+        </div>
+      </details>
+
+      <section class="story-subscribe">
+        <div>
+          <span class="eyebrow">FOLLOW THE DEVELOPMENT</span>
+          <h2>Get notified when this story returns.</h2>
+          <p>Story alerts, comments, and account-based follows are the next community layer.</p>
+        </div>
+        <button type="button" class="primary-button" data-action="follow">🔔 Notify me</button>
+      </section>
+    </article>
+
+    <aside class="story-sidebar">
+      <div class="relationship-explainer {{ story.relationship.class }}">
+        <span>{{ story.relationship.people }} &nbsp; {{ story.relationship.ai }}</span>
+        <h3>{{ story.relationship.label }}</h3>
+        <small>{{ story.relationship.technical }}</small>
+      </div>
+
+      <div class="sidebar-actions">
+        <button type="button" data-action="share" data-share-url="{{ story.url }}" data-share-title="{{ story.headline }}">↗ Share anywhere</button>
+        <button type="button" data-action="follow">🔔 Follow updates</button>
+        <button type="button" data-action="discuss">💬 Start discussion</button>
+      </div>
+
+      <div class="ad-slot story-ad" data-ad-placement="story-rail">
+        <span>ADVERTISEMENT</span>
+        <strong>Reserved sponsor space</strong>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<dialog class="share-dialog" id="share-dialog">
+  <form method="dialog" class="dialog-card">
+    <button class="dialog-close" value="cancel" aria-label="Close">×</button>
+    <span class="eyebrow">SHARE THIS DEVELOPMENT</span>
+    <h2>Choose where to share</h2>
+    <div class="share-grid">
+      <a data-share-channel="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a data-share-channel="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a data-share-channel="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a data-share-channel="reddit" target="_blank" rel="noopener noreferrer">Reddit</a>
+      <a data-share-channel="x" target="_blank" rel="noopener noreferrer">X</a>
+      <a data-share-channel="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
+      <a data-share-channel="email">Email</a>
+      <button type="button" data-share-channel="copy">Copy link</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog class="notice-dialog" id="notice-dialog">
+  <form method="dialog" class="dialog-card">
+    <button class="dialog-close" value="cancel" aria-label="Close">×</button>
+    <span class="eyebrow">PREVIEW</span>
+    <h2 id="notice-title">Coming next</h2>
+    <p id="notice-copy"></p>
+    <div class="notice-actions">
+      <a href="/#subscribe">Get Brief updates</a>
+      <button value="cancel">Continue reading</button>
+    </div>
+  </form>
+</dialog>
 {% endblock %}
