@@ -1,0 +1,57 @@
+{
+  "public_status": "human_reviewed",
+  "review": {
+    "event_complete": true
+  },
+  "event": {
+    "configuration_counts": {
+      "mutualism": 18,
+      "ai_benefiting_parasitism": 4,
+      "human_benefiting_parasitism": 0,
+      "competition": 2
+    },
+    "complete_configuration_count": 24,
+    "partial_signal_count": 29,
+    "no_clear_relational_signal_count": 0,
+    "ambiguous_relational_signal_count": 0,
+    "insufficient_evidence_count": 70
+  },
+  "evidence": [
+    {
+      "event_id": "event-mutualism",
+      "reviewed": true,
+      "human_direction": "enabling",
+      "ai_direction": "enabling",
+      "human_experience_type": "extension",
+      "ai_expressive_role": "ai_extension",
+      "configuration": "mutualism",
+      "plain_label": "Both people and the AI side gain",
+      "evidence_summary": "Clinical capability expands while the AI system extends its operational role.",
+      "reasoning": "The evidence supports gains on both sides of the relationship."
+    },
+    {
+      "event_id": "event-ai-benefit",
+      "reviewed": true,
+      "human_direction": "constraining",
+      "ai_direction": "enabling",
+      "human_experience_type": "restriction",
+      "ai_expressive_role": "ai_expansion",
+      "configuration": "ai_benefiting_parasitism",
+      "plain_label": "The AI or operator side gains while people are constrained",
+      "evidence_summary": "Creators face consent and control constraints while training access expands.",
+      "reasoning": "The human and AI directions move in opposite directions."
+    },
+    {
+      "event_id": "event-early",
+      "reviewed": true,
+      "human_direction": "unclear",
+      "ai_direction": "unclear",
+      "human_experience_type": "unclear",
+      "ai_expressive_role": "unclear",
+      "configuration": "insufficient_evidence",
+      "plain_label": "There is not enough evidence to classify the relationship",
+      "evidence_summary": "Only limited public evidence is available.",
+      "reasoning": "A stronger relationship claim would exceed the available evidence."
+    }
+  ]
+}

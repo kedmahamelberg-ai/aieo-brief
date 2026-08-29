@@ -1,0 +1,17 @@
+{
+  "event-mutualism": {
+    "editorial_evidence_level": "strong_multi_source",
+    "full_source_count": 2,
+    "source_count": 3
+  },
+  "event-ai-benefit": {
+    "editorial_evidence_level": "single_full_source",
+    "full_source_count": 1,
+    "source_count": 2
+  },
+  "event-early": {
+    "editorial_evidence_level": "headline_only",
+    "full_source_count": 0,
+    "source_count": 1
+  }
+}

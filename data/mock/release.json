@@ -1,0 +1,68 @@
+{
+  "release_id": "2026-W34",
+  "period_start": "2026-08-17",
+  "period_end": "2026-08-23",
+  "counts": {
+    "ai_relevant_articles": 131,
+    "ai_relevant_event_records": 123,
+    "new_event_records": 1,
+    "recurring_event_records": 122,
+    "extra_coverage": 8
+  },
+  "evidence": [
+    {
+      "event_id": "event-mutualism",
+      "event_title": "AI-assisted diagnostics help clinicians identify risks earlier",
+      "event_summary": "A healthcare deployment uses AI to support earlier identification of patient risk while extending the system operational role.",
+      "event_date": "2026-08-21",
+      "member_article_count": 3,
+      "novelty_status": "recurring",
+      "sources": [
+        {
+          "publisher": "Example Health News",
+          "headline": "AI diagnostic system expands clinical support",
+          "url": "https://example.com/health",
+          "published_date": "2026-08-21"
+        },
+        {
+          "publisher": "Example Medical Review",
+          "headline": "AI-assisted diagnostics move into practice",
+          "url": "https://example.com/medical",
+          "published_date": "2026-08-21"
+        }
+      ]
+    },
+    {
+      "event_id": "event-ai-benefit",
+      "event_title": "Creator content is used to expand AI training while consent is contested",
+      "event_summary": "Creators challenge the use of their content for AI training while the AI or operator side gains access to additional training material.",
+      "event_date": "2026-08-21",
+      "member_article_count": 2,
+      "novelty_status": "recurring",
+      "sources": [
+        {
+          "publisher": "Example Court News",
+          "headline": "Creators challenge AI training practices",
+          "url": "https://example.com/court",
+          "published_date": "2026-08-21"
+        }
+      ]
+    },
+    {
+      "event_id": "event-early",
+      "event_title": "Government announces a new national AI initiative",
+      "event_summary": "",
+      "event_date": "2026-08-22",
+      "member_article_count": 1,
+      "novelty_status": "first_time",
+      "sources": [
+        {
+          "publisher": "Example Public Source",
+          "headline": "Government launches AI initiative",
+          "url": "https://example.com/public",
+          "published_date": "2026-08-22"
+        }
+      ]
+    }
+  ]
+}
