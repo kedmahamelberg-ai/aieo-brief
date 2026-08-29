@@ -1,0 +1,57 @@
+name: Generate AIEO Brief Editorial Drafts
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Number of eligible current stories to generate. Use 0 for all."
+        required: true
+        default: "5"
+        type: string
+      dry_run:
+        description: "Inspect eligibility without calling the model or writing drafts"
+        required: true
+        default: true
+        type: boolean
+      force:
+        description: "Regenerate even when the evidence fingerprint is unchanged"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: aieo-brief-editorial-generation
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: python -m pip install -r requirements.txt
+
+      - name: Generate evidence-bounded editorial drafts
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BRIEF_EDITORIAL_MODEL: ${{ vars.BRIEF_EDITORIAL_MODEL || 'gpt-5.6-luna' }}
+          OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=(--limit "${{ inputs.limit }}")
+          if [[ "${{ inputs.dry_run }}" == "true" ]]; then args+=(--dry-run); fi
+          if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
+          python scripts/generate_editorial_stories.py "${args[@]}"
