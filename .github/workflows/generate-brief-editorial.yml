@@ -23,6 +23,11 @@ on:
         required: true
         default: "105"
         type: string
+      strict:
+        description: "Fail the whole batch if any story is quarantined"
+        required: true
+        default: false
+        type: boolean
 
 permissions:
   contents: read
@@ -144,7 +149,17 @@ jobs:
           )
           if [[ "${{ inputs.dry_run }}" == "true" ]]; then args+=(--dry-run); fi
           if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
+          if [[ "${{ inputs.strict }}" == "true" ]]; then args+=(--strict); fi
           python scripts/generate_editorial_stories.py "${args[@]}"
+
+      - name: Upload quarantined editorial failures
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: aieo-editorial-failures-${{ github.run_id }}
+          path: editorial-generation-failures.json
+          if-no-files-found: ignore
+          retention-days: 14
 
       - name: Upload local-model log
         if: ${{ always() && inputs.dry_run == false }}
