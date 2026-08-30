@@ -24,6 +24,7 @@ LLAMA_CPP_VERSION = os.environ.get("BRIEF_LLAMA_CPP_VERSION", "b10516")
 PROMPT_VERSION = "aieo-brief-editorial-local-v2a3-quality"
 MAX_SOURCE_CHARS = 5200
 MAX_TOTAL_EVIDENCE_CHARS = 14000
+MAX_GENERATION_ATTEMPTS = 4
 
 ELIGIBLE_LEVELS = {
     "strong_multi_source",
