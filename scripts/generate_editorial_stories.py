@@ -21,7 +21,7 @@ MODEL = os.environ.get("BRIEF_EDITORIAL_MODEL", "Qwen3-4B-Q4_K_M")
 MODEL_REVISION = os.environ.get("BRIEF_EDITORIAL_MODEL_REVISION", "ggml-org/Qwen3-4B-GGUF:Q4_K_M")
 LLM_BASE_URL = os.environ.get("BRIEF_LOCAL_LLM_URL", "http://127.0.0.1:8080").rstrip("/")
 LLAMA_CPP_VERSION = os.environ.get("BRIEF_LLAMA_CPP_VERSION", "b10516")
-PROMPT_VERSION = "aieo-brief-editorial-local-v2a2"
+PROMPT_VERSION = "aieo-brief-editorial-local-v2a3-quality"
 MAX_SOURCE_CHARS = 5200
 MAX_TOTAL_EVIDENCE_CHARS = 14000
 
@@ -213,6 +213,24 @@ def input_fingerprint(event, relationship, readiness, sources) -> str:
     }
     return sha256(json.dumps(stable, ensure_ascii=False, sort_keys=True))
 
+def event_kind_hint(event: dict) -> str:
+    title = normalize(event.get("event_title")).casefold()
+    if title.startswith("opinion:") or title.startswith("commentary:"):
+        return "opinion"
+    if title.startswith("prediction:") or title.startswith("forecast:"):
+        return "prediction"
+    if title.startswith("analysis:"):
+        return "analysis"
+    if (
+        title.startswith("study:")
+        or title.startswith("research:")
+        or " new study " in f" {title} "
+        or title.startswith("new study ")
+    ):
+        return "research"
+    return "news"
+
+
 def shared_ten_word_phrase(output_text: str, source_texts: list[str]) -> str | None:
     output_words = re.findall(r"\b[\w'-]+\b", output_text.casefold())
     if len(output_words) < 10:
@@ -227,7 +245,7 @@ def shared_ten_word_phrase(output_text: str, source_texts: list[str]) -> str | N
             return phrase
     return None
 
-def validate_output(data: dict, relationship: dict, source_texts: list[str]):
+def validate_output(data: dict, relationship: dict, source_texts: list[str], event_kind: str):
     required = [
         "editorial_headline",
         "editorial_deck",
@@ -258,6 +276,23 @@ def validate_output(data: dict, relationship: dict, source_texts: list[str]):
         raise ValueError("What happened is too long.")
     if len(cleaned["why_it_matters"]) > 650:
         raise ValueError("Why it matters is too long.")
+
+    headline_lower = cleaned["editorial_headline"].casefold()
+    if event_kind == "opinion" and not headline_lower.startswith("opinion:"):
+        raise ValueError(
+            "This development is opinion/commentary. The editorial headline must begin with 'Opinion:' so commentary is not presented as established fact."
+        )
+    if event_kind == "prediction" and not headline_lower.startswith("prediction:"):
+        raise ValueError(
+            "This development is a prediction/forecast. The editorial headline must begin with 'Prediction:' so a forecast is not presented as an established outcome."
+        )
+    if event_kind == "analysis" and not (
+        headline_lower.startswith("analysis:")
+        or "analysis" in cleaned["editorial_deck"].casefold()
+    ):
+        raise ValueError(
+            "This development is analysis. Label it as analysis in the headline or deck."
+        )
 
     combined = " ".join(
         [
@@ -337,6 +372,12 @@ AI direction: {relationship.get('ai_direction')}
 Reviewed evidence summary: {relationship.get('evidence_summary') or ''}
 Reviewed reasoning: {relationship.get('reasoning') or ''}
 
+SOURCE GENRE / CLAIM STATUS
+Event kind hint: {event_kind_hint(event)}
+If the event kind is opinion, the headline must begin "Opinion:" and describe what the author/commentator argues rather than presenting the argument as established fact.
+If the event kind is prediction, the headline must begin "Prediction:" and describe the forecast rather than presenting it as an achieved outcome.
+If the event kind is analysis, make that analytical status clear in the headline or deck.
+
 EVENT
 AIEO resolved title: {event.get('event_title') or ''}
 AIEO event summary: {event.get('event_summary') or ''}
@@ -362,7 +403,7 @@ Return ONLY valid JSON with this exact structure:
 }}
 """.strip()
 
-def local_completion(prompt: str) -> str:
+def local_completion(prompt: str, attempt: int = 0) -> str:
     response = requests.post(
         f"{LLM_BASE_URL}/v1/chat/completions",
         json={
@@ -370,10 +411,12 @@ def local_completion(prompt: str) -> str:
             "messages": [
                 {"role": "user", "content": prompt},
             ],
-            "temperature": 0.2,
-            "top_p": 0.85,
+            # Slightly more variation on retries helps the local model escape
+            # a source phrase it reproduced in the previous draft.
+            "temperature": min(0.42, 0.20 + (attempt * 0.07)),
+            "top_p": 0.88,
             "max_tokens": 1100,
-            "seed": 42,
+            "seed": 42 + attempt,
         },
         timeout=900,
     )
@@ -387,30 +430,68 @@ def local_completion(prompt: str) -> str:
         raise RuntimeError("Local model returned an empty response.")
     return str(content)
 
+
+def retry_instruction(exc: Exception) -> str:
+    message = str(exc)
+    copied = re.search(
+        r"Output copied a 10-word source phrase:\\s*(.+)$",
+        message,
+        flags=re.I,
+    )
+    if copied:
+        phrase = copied.group(1).strip()
+        return (
+            "\\nREVISION REQUIRED\\n"
+            "The draft reproduced source wording too closely. Rewrite from scratch. "
+            "Preserve factual quantities only when needed, but change the grammar, "
+            "word order, and sentence structure. The exact sequence below is banned "
+            "from every output field, and no other 10-word source sequence may appear.\\n"
+            f"BANNED EXACT PHRASE: {phrase}\\n"
+            "/no_think"
+        )
+
+    return (
+        "\\nREVISION REQUIRED\\n"
+        f"The previous draft failed validation: {message}. "
+        "Rewrite from scratch and obey every rule. /no_think"
+    )
+
+
 def generate_one(event, relationship, readiness, sources):
     prompt = prompt_for(event, relationship, readiness, sources)
     source_texts = [s["evidence"] for s in sources if s.get("evidence")]
+    event_kind = event_kind_hint(event)
 
     last_error = None
-    for attempt in range(2):
-        raw_output = local_completion(prompt)
+    errors = []
+    for attempt in range(MAX_GENERATION_ATTEMPTS):
+        raw_output = local_completion(prompt, attempt=attempt)
         try:
             data = parse_json_output(raw_output)
-            return validate_output(data, relationship, source_texts), raw_output
+            return (
+                validate_output(
+                    data,
+                    relationship,
+                    source_texts,
+                    event_kind,
+                ),
+                raw_output,
+            )
         except Exception as exc:
             last_error = exc
+            errors.append(str(exc))
             prompt = prompt_for(
                 event,
                 relationship,
                 readiness,
                 sources,
-                retry_note=(
-                    "\nREVISION REQUIRED\n"
-                    f"The previous draft failed validation: {exc}. "
-                    "Rewrite from scratch and obey every rule. /no_think"
-                ),
+                retry_note=retry_instruction(exc),
             )
-    raise RuntimeError(f"Editorial output failed validation twice: {last_error}")
+
+    raise RuntimeError(
+        "Editorial output failed validation after "
+        f"{MAX_GENERATION_ATTEMPTS} attempts: {last_error}"
+    )
 
 def existing_same_input(latest_version, fingerprint):
     if not latest_version:
@@ -430,6 +511,11 @@ def main():
     parser.add_argument("--force", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--max-runtime-minutes", type=int, default=105)
+    parser.add_argument(
+        "--strict",
+        action="store_true",
+        help="Fail the whole workflow if any selected story fails. Default is resilient batch mode.",
+    )
     args = parser.parse_args()
 
     supabase = create_client(os.environ["SUPABASE_URL"], os.environ["SUPABASE_SECRET_KEY"])
@@ -450,6 +536,8 @@ def main():
         supabase,
         current_events.keys(),
     )
+
+    failed_items = []
 
     counters = {
         "eligible": 0,
@@ -631,7 +719,33 @@ def main():
             time.sleep(0.2)
         except Exception as exc:
             counters["failed"] += 1
+            failed_items.append(
+                {
+                    "event_id": event_id,
+                    "event_title": event.get("event_title"),
+                    "error_type": type(exc).__name__,
+                    "error": str(exc),
+                }
+            )
             print(f"  ERROR: {type(exc).__name__}: {exc}", flush=True)
+
+    if failed_items:
+        with open(
+            "editorial-generation-failures.json",
+            "w",
+            encoding="utf-8",
+        ) as handle:
+            json.dump(
+                {
+                    "prompt_version": PROMPT_VERSION,
+                    "model": MODEL,
+                    "failed": failed_items,
+                },
+                handle,
+                ensure_ascii=False,
+                indent=2,
+            )
+            handle.write("\n")
 
     print(json.dumps(counters, indent=2))
 
@@ -646,8 +760,23 @@ def main():
             handle.write(f"- Unchanged: **{counters['skipped_unchanged']}**\n")
             handle.write(f"- Headline-only skipped: **{counters['skipped_headline_only']}**\n")
 
-    if counters["failed"]:
-        raise SystemExit(f"{counters['failed']} editorial story/stories failed generation.")
+    if counters["failed"] and summary:
+        with open(summary, "a", encoding="utf-8") as handle:
+            handle.write(
+                "\n> Some drafts were quarantined because they failed validation. "
+                "Previously generated valid stories were kept.\n"
+            )
+
+    # Resilient batch behavior:
+    # - a minority failure does not discard a successful batch;
+    # - if every attempted generation failed, the workflow remains red;
+    # - --strict restores fail-on-any-error behavior for audits.
+    if counters["failed"] and (
+        args.strict or counters["generated"] == 0
+    ):
+        raise SystemExit(
+            f"{counters['failed']} editorial story/stories failed generation."
+        )
 
     return 0
 
