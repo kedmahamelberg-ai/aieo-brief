@@ -102,6 +102,26 @@ def ai_copy(value):
 def paragraphs(value):
     return [part.strip() for part in re.split(r"\n\s*\n", str(value or "")) if part.strip()]
 
+def normalize_public_punctuation():
+    """Keep imported news/editorial punctuation inside the public style contract.
+
+    Source headlines and saved editorial versions are external inputs. A single
+    em dash in either used to make the preview build fail after the site had
+    otherwise rendered successfully. Normalize every generated text asset at
+    the publication boundary so future source copy cannot break the workflow.
+    """
+    text_suffixes = {".html", ".js", ".css", ".json", ".txt"}
+    changed = 0
+    for path in SITE.rglob("*"):
+        if not path.is_file() or path.suffix.lower() not in text_suffixes:
+            continue
+        original = path.read_text(encoding="utf-8", errors="ignore")
+        normalized = re.sub(r"\s*—\s*", " - ", original).replace("–", "-")
+        if normalized != original:
+            path.write_text(normalized, encoding="utf-8")
+            changed += 1
+    return changed
+
 def paged(client, table, columns, page_size=500):
     start = 0
     while True:
@@ -456,12 +476,15 @@ def main():
         encoding="utf-8",
     )
 
+    punctuation_files_normalized = normalize_public_punctuation()
+
     summary = {
         "release_id": release.get("release_id"),
         "stories_built": len(story_cards),
         "editorial_versions_used": sum(card["has_editorial"] for card in story_cards),
         "with_full_source": sum(card["full_source_count"] > 0 for card in story_cards),
         "headline_only": sum(card["evidence_level"] == "headline_only" for card in story_cards),
+        "punctuation_files_normalized": punctuation_files_normalized,
     }
     print(json.dumps(summary, indent=2))
 
