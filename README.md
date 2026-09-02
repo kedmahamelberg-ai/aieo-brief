@@ -22,6 +22,24 @@ It generates:
 
 The reviewed relationship classification is fixed input. The editorial model cannot change it.
 
+### Shared evidence with the Observatory
+
+The Observatory is the collector of record. After each weekly news collection it:
+
+- retrieves article bodies only where automated access is permitted
+- versions those bodies privately in `brief_article_content_snapshots`
+- records failed, blocked, paywalled, and non-article attempts separately
+- gives both Observatory classifiers the best available evidence, preferring a full body over a snippet or headline
+
+The Brief reads the same versioned evidence through the private
+`brief_event_source_evidence` and `brief_event_evidence_readiness` views. It does
+not scrape the same publisher a second time. `validate_observatory_body_contract.py`
+runs before editorial generation and stops the workflow if that shared contract
+is missing or inconsistent.
+
+Article bodies remain service-role-only in Supabase. The public Brief receives
+new AIEO prose and source links, never the stored publisher body.
+
 Headline-only developments are NOT sent to the editorial model. They remain Early signals.
 
 Every generated draft is versioned in:
