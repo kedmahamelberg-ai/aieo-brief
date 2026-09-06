@@ -1,0 +1,29 @@
+{
+  "schema_version": "aieo_culture_library_v1",
+  "collection_version": "2026-09-06-v1",
+  "anchor": "2026-09-06",
+  "timezone": "Europe/Amsterdam",
+  "cycle_days": 400,
+  "source_files_sha256": {
+    "library-art.json": "ed76f9268b2f6ada645b1e434b95e10519e8f8f34ffcdaa4f5201c43777964dd",
+    "library-poetry.json": "ce8dca5000337133e1504ad2417643cc2f1bd81022a17169d97b77bcfa9c8f1a",
+    "library-text.json": "b26f7697906523b9f54be47519d3427e434ea1729ad72227c3f80cc2e93df7f1",
+    "library-quote.json": "d2b4dd2a19f82d69a1cb95cadcd779a2cfe95319b0c5171e736881e1ca5e7bbb",
+    "library-music.json": "453ce8129488d9d665b585fbfb4b92454436a943f57934fab0c0c9baead59d34"
+  },
+  "counts": {
+    "illustration": 400,
+    "music": 400,
+    "poetry": 400,
+    "quote": 400,
+    "text": 400
+  },
+  "total": 2000,
+  "result": "passed",
+  "cached_images": 400,
+  "daily_selection_network_calls": 0,
+  "database_sha256": "f04821f933cb19d7ab3c5d25dcae4414553fdab2954e445bc669385caf2dbdb4",
+  "discoveries": 12,
+  "creators": 284,
+  "review_scope": "Source metadata and content integrity checked automatically; sampled attribution review. Historical views belong to their sources."
+}

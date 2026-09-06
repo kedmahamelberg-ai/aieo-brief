@@ -12,9 +12,10 @@
 {%- endmacro %}
 {% macro card(item) -%}
 <article class="feed-story" data-story-card data-key="{{ item.key }}" data-kind="{{ item.kind }}" data-markets="{{ item.markets|join(' ') }}" data-topic="{{ item.topic }}" data-direction="{{ item.human_direction }}" data-search="{{ (item.headline ~ ' ' ~ item.deck ~ ' ' ~ item.publisher)|lower }}" data-date="{{ item.date }}">
-<div class="story-kicker"><span>{{ item.market_label if item.kind=='news' else item.research_label }}</span>{% if item.kind!='culture' %}<span>{{ item.topic_label }}</span>{% endif %}<span>{{ item.reading_minutes }} min read</span></div>
+<div class="story-kicker"><span>{{ item.market_label if item.kind=='news' else item.research_label }}</span>{% if item.kind!='culture' %}<span>{{ item.topic_label }}</span>{% endif %}{% if item.culture_type=='music' %}<span>{{ (item.duration_seconds/60)|round(0,'ceil')|int }} min listen</span>{% else %}<span>{{ item.reading_minutes }} min read</span>{% endif %}</div>
 <h2><a href="{{ local(item.path) }}">{{ item.headline }}</a></h2><p class="story-deck">{{ item.deck }}</p>
-<div class="source-line"><span>{{ item.creator if item.kind=='culture' else item.publisher }}</span><time datetime="{{ item.date }}">{{ item.display_date }}</time><span data-read-count="{{ item.key }}" hidden></span>{% if item.summary_basis %}<span>{{ item.summary_basis }}</span>{% endif %}</div>
+{% if item.kind=='culture' %}<p class="creator-origin">{{ item.creator_origin or 'Origin not recorded in the source' }}{% if item.language %} · {{ item.language }}{% endif %}</p>{% endif %}
+<div class="source-line"><span>{{ item.creator if item.kind=='culture' else item.publisher }}</span><time datetime="{{ item.date }}">{% if item.kind=='culture' %}Selected {% endif %}{{ item.display_date }}</time><span data-read-count="{{ item.key }}" hidden></span>{% if item.summary_basis and item.kind!='culture' %}<span>{{ item.summary_basis }}</span>{% endif %}</div>
 {{ actions(item) }}
 </article>
 {%- endmacro %}

@@ -1,56 +1,6 @@
 {
   "enabled": true,
   "retention_days": 45,
-  "poets": [
-    "Emily Dickinson",
-    "William Blake",
-    "William Wordsworth",
-    "Christina Rossetti",
-    "John Keats",
-    "Percy Bysshe Shelley",
-    "Walt Whitman",
-    "Ralph Waldo Emerson"
-  ],
-  "books": [
-    {
-      "id": 769,
-      "title": "The Book of Tea",
-      "author": "Kakuzo Okakura",
-      "author_death": 1913,
-      "publication_year": 1906,
-      "body_start": "I. The Cup of Humanity"
-    },
-    {
-      "id": 205,
-      "title": "Walden",
-      "author": "Henry David Thoreau",
-      "author_death": 1862,
-      "publication_year": 1854,
-      "body_start": "Economy"
-    },
-    {
-      "id": 11,
-      "title": "Alice’s Adventures in Wonderland",
-      "author": "Lewis Carroll",
-      "author_death": 1898,
-      "publication_year": 1865,
-      "body_start": "CHAPTER I."
-    },
-    {
-      "id": 289,
-      "title": "The Wind in the Willows",
-      "author": "Kenneth Grahame",
-      "author_death": 1932,
-      "publication_year": 1908,
-      "body_start": "THE RIVER BANK"
-    }
-  ],
-  "source_policy": "Daily selection of existing works, not a claim that they were created today or concern AI. Museum CC0 images and historical English literature; artist-published Internet Archive and ccMixter music requires a commercial reuse licence and source credits.",
-  "music_tags": [
-    "instrumental",
-    "song"
-  ],
-  "archive_music_creators": [
-    "Jess Bottles"
-  ]
+  "selection_timezone": "Europe/Amsterdam",
+  "source_policy": "Daily selection from the stored attributed collection. Art images and literary passages are cached; recordings stream from their credited host only after the reader presses Play. A selection date is not a creation date."
 }

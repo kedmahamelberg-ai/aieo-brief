@@ -8,8 +8,11 @@ from urllib.parse import urlparse
 from xml.sax.saxutils import escape as xml_escape
 import requests
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from brief_contract import validate_pair, load_config, safe_url, digest, MARKETS, PROMPT_VERSION
+from brief_contract import validate_pair, load_config, safe_url, digest, relationship_fingerprint, MARKETS, PROMPT_VERSION
 from brief_database import dbmaps
+from news_notifications import public_settings
+from daily_selection import rotation_plan, reading_day
+from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -24,9 +27,10 @@ def inputs(preview=False):
     if preview:
         return tuple(json.loads((ROOT/'data/preview'/x).read_text()) for x in ('release.json','symbiosis.json'))
     for attempt in range(3):
-        release=fetch(f'{OBS}/data/releases/current.json'); sym=fetch(f'{OBS}/data/symbiosis/current.json')
-        try: validate_pair(release,sym);return release,sym
-        except ValueError:
+        try:
+            release=fetch(f'{OBS}/data/releases/current.json'); sym=fetch(f'{OBS}/data/symbiosis/current.json')
+            validate_pair(release,sym);return release,sym
+        except (ValueError, requests.RequestException):
             if attempt==2: raise
             time.sleep(2)
 def text(value): return re.sub(r'\s+',' ',str(value or '')).replace('—',',').strip()
@@ -101,16 +105,14 @@ def papers():
     return sorted(out,key=lambda x:x['date'],reverse=True)
 
 def culture_items():
-    p=ROOT/'data/culture/current.json'
-    if not p.exists():return []
     labels={'illustration':'Art & illustration','poetry':'Poetry','text':'A short reading','quote':'A quotation','music':'Music'}
     out=[]
-    for r in json.loads(p.read_text()).get('items',[]):
+    for r in culture_publication(root=ROOT).get('items',[]):
         if not re.fullmatch(r'culture:[a-f0-9]{24}',r.get('key','')) or r.get('culture_type') not in labels:raise ValueError('Invalid culture record')
         if not safe_url(r.get('source_url')) or not r.get('creator') or not safe_url(r.get('rights',{}).get('url')):raise ValueError('Culture attribution is incomplete')
         slug=r['key'].replace(':','-');image=r.get('image_path','')
         if image and (not re.fullmatch(r'assets/culture/[a-f0-9]{24}\.jpg',image) or not (ROOT/image).is_file()):image=''
-        out.append({**r,'image_path':image,'kind':'culture','slug':slug,'path':f'culture/{slug}/index.html','sources':[{'publisher':r['publisher'],'headline':r['headline'],'url':r['source_url'],'date':r.get('work_date',''),'language':'en'}],'source_count':1,'display_date':fmt(r['date']),'markets':[],'market_label':'Daily culture','topic':r['culture_type'],'topic_label':labels[r['culture_type']],'research_label':labels[r['culture_type']],'human_direction':'unresolved','ai_direction':'unresolved','evidence_complete':False,'edition':r['date'],'summary_basis':'Selected '+fmt(r['date']),'has_editorial':False,'reading_minutes':max(1,round(len(r.get('excerpt','').split())/200))})
+        out.append({**r,'creator_origin':r.get('creator_origin') or 'Origin not recorded in the source','image_path':image,'kind':'culture','slug':slug,'path':f'culture/{slug}/index.html','sources':[{'publisher':r['publisher'],'headline':r['headline'],'url':r['source_url'],'date':r.get('work_date',''),'language':r.get('language','')}],'source_count':1,'display_date':fmt(r['date']),'markets':[],'market_label':'Daily culture','topic':r['culture_type'],'topic_label':labels[r['culture_type']],'research_label':labels[r['culture_type']],'human_direction':'unresolved','ai_direction':'unresolved','evidence_complete':False,'edition':r['date'],'summary_basis':'Selected '+fmt(r['date']),'has_editorial':False,'reading_minutes':max(1,round(len(r.get('excerpt','').split())/200))})
     for item in out:
         for field in ('excerpt','quote_context'):
             item[field+'_parts']=[{'text':part[1:-1] if part.startswith('_') and part.endswith('_') else part,'emphasis':part.startswith('_') and part.endswith('_')} for part in re.split(r'(_[^_]+_)',item.get(field,''))]
@@ -156,24 +158,30 @@ def main():
         owner,repo=os.environ['GITHUB_REPOSITORY'].split('/',1);baseurl=f'https://{owner}.github.io/{repo}'
     public_config={k:config.get(k) for k in ('site_name','supabase_url','supabase_publishable_key','community_enabled','ga4_measurement_id','adsense')}
     public_config['site_url']=baseurl;public_config['is_preview']=preview
+    public_config['notifications']=public_settings(config, preview)
     sponsor_active=False
     market_counts={code:sum(code in c['markets'] for c in news) for code,_ in MARKETS}
-    lead=next((c for c in news if c['has_editorial'] and c['evidence_complete']),news[0] if news else None)
-    highlights=[];seen=set(lead['markets'] if lead else [])
-    for c in sorted(news,key=lambda c:(c['has_editorial'],c['date']),reverse=True):
-        if c is lead or not c['has_editorial']:continue
-        if set(c['markets'])-seen:highlights.append(c);seen.update(c['markets'])
-        if len(highlights)==2:break
+    rotation=rotation_plan(news, release['release_id'], release['period_end'])
+    day_layout=rotation['layouts'][rotation['slot']]
+    bykey={c['key']:c for c in news}
+    lead=bykey.get(day_layout['lead'])
+    highlights=[bykey[k] for k in day_layout['highlights']]
+    news=[bykey[k] for k in day_layout['order']]
+    for rank, item in enumerate(news):item['daily_rank']=rank
     defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
     latest_culture_date=max((x['date'] for x in culture),default='')
+    defaults.update(rotation=rotation, reading_date=fmt(rotation['selection_date']))
     defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
+    defaults.update(culture_discoveries=culture_discoveries(root=ROOT),culture_library=culture_summary(ROOT))
     def render(path,template,**ctx):
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
         prefix='../'*len(Path(path).parent.parts)
         local=lambda value:prefix+value
         # Full text stays in HTML. The interaction payload only needs metadata.
-        local_items=allcards if ctx.get('page') in ('saved','archive') else list({x['key']:x for x in news+research+culture+([ctx['story']] if ctx.get('story') else [])+ctx.get('related',[])}.values())
-        client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck')} for x in local_items]
+        local_items=allcards if ctx.get('page') in ('saved','archive') else (
+            [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
+            news if ctx.get('page')=='home' else ctx.get('items',[]))
+        client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin')} for x in local_items]
         output=env.get_template(template).render(**defaults,local=local,canonical=(baseurl+'/'+path.removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
@@ -181,6 +189,7 @@ def main():
     render('culture/index.html','culture.html',page='culture',items=culture)
     render('saved/index.html','collection.html',page='saved',items=allcards)
     render('archive/index.html','collection.html',page='archive',items=allcards)
+    render('notifications/index.html','notifications.html',page='notifications')
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
@@ -188,8 +197,14 @@ def main():
         render(item['path'],'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related)
     data=SITE/'data';data.mkdir()
     payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
+    payload['daily_selection']=rotation
     payload.update(culture_count=len(culture),culture=culture)
+    payload['source_relationship_sha256'] = relationship_fingerprint(sym)
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+    shutil.copyfile(ROOT/'assets/news-worker.js', SITE/'news-worker.js')
+    (SITE/'manifest.webmanifest').write_text(json.dumps({'name':'The Brief — AI news','short_name':'The Brief',
+        'id':'./','start_url':'./','scope':'./','display':'standalone','background_color':'#ffffff',
+        'theme_color':'#122b3d','icons':[{'src':'assets/notification-icon.svg','sizes':'any','type':'image/svg+xml','purpose':'any'}]})+'\n')
     (SITE/'.nojekyll').touch()
     publisher_id=(config.get('adsense') or {}).get('publisher_id','')
     if re.fullmatch(r'ca-pub-\d{16}',publisher_id) and not preview:

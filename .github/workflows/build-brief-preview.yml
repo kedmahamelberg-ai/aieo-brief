@@ -1,5 +1,6 @@
 name: Build and Publish AIEO Brief
 on:
+  workflow_call:
   push:
     branches: [main]
     paths: ['scripts/**', 'templates/**', 'assets/**', 'config/**', 'data/**', 'tests/**', 'supabase/**', 'package*.json', 'requirements.txt', '.github/**']
@@ -43,7 +44,7 @@ jobs:
       - name: Run release, headline and privacy regression checks
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
-          node --test tests/core.test.js
+          node --test tests/core.test.js tests/news-worker.test.js
           npm run test:database
       - name: Build the source-bound site and preserve past editions
         run: python scripts/build_site.py --update-archive
@@ -90,3 +91,7 @@ jobs:
       - name: Publish validated Brief
         id: deployment
         uses: actions/deploy-pages@v4
+  notify:
+    needs: deploy
+    uses: ./.github/workflows/send-news-notifications.yml
+    secrets: inherit

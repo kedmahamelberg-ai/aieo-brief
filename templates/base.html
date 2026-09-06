@@ -13,6 +13,8 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="stylesheet" href="{{ local('assets/site.css') }}">
   <link rel="alternate" type="application/rss+xml" title="AIEO Brief" href="{{ local('feed.xml') }}">
+  <link rel="manifest" href="{{ local('manifest.webmanifest') }}">
+  <meta name="theme-color" content="#122b3d">
   {% if is_preview %}<meta name="robots" content="noindex,nofollow">{% endif %}
 </head>
 <body data-page="{{ page }}" {% if story is defined %}data-story-key="{{ story.key }}"{% endif %}>
@@ -22,7 +24,7 @@
 <header class="masthead">
   <a class="wordmark" href="{{ local('index.html') }}">the brief<span>.</span></a>
   <div class="masthead-context">Make sense of AI.<br><span>One story at a time.</span></div>
-  <div class="masthead-actions"><a href="{{ config.newsletter_url }}" class="button small">Get the Pulse</a><button class="text-button" data-action="account">Sign in</button></div>
+  <div class="masthead-actions"><a href="{{ local('notifications/index.html') }}" class="button small">Get news updates</a><button class="text-button" data-action="account">Sign in</button></div>
 </header>
 <nav class="navigation" aria-label="Main"><div class="nav-inner">
   <a href="{{ local('index.html') }}" {% if page=='home' %}aria-current="page"{% endif %}>The news</a>
@@ -35,7 +37,7 @@
 {% block content %}{% endblock %}
 <footer class="site-footer">
   <div><a class="wordmark footer-mark" href="{{ local('index.html') }}">the brief<span>.</span></a><p>A research initiative by Kedma Hamelberg.</p></div>
-  <div><a href="{{ local('about/index.html') }}">How we write</a><a href="{{ local('culture/index.html') }}">Art, words & music</a><a href="{{ local('feed.xml') }}">RSS feed</a></div>
+  <div><a href="{{ local('about/index.html') }}">How we write</a><a href="{{ local('culture/index.html') }}">Art, words & music</a><a href="{{ local('notifications/index.html') }}">News notifications</a><a href="{{ local('feed.xml') }}">RSS feed</a></div>
   <div><a href="{{ local('privacy/index.html') }}">Privacy</a><button class="text-button" data-action="privacy">Privacy choices</button><a href="{{ local('account/index.html') }}">Your account</a></div>
 </footer>
 <dialog id="share-dialog" class="dialog"><button data-close class="close" aria-label="Close sharing">×</button><h2>Pass it on</h2><p data-share-heading></p><div class="share-options">
@@ -49,4 +51,5 @@
 <script id="brief-config" type="application/json">{{ public_config|tojson }}</script>
 <script id="brief-items" type="application/json">{{ client_items|tojson }}</script>
 <script src="{{ local('assets/core.js') }}" defer></script><script src="{{ local('assets/community.js') }}" defer></script><script src="{{ local('assets/analytics.js') }}" defer></script><script src="{{ local('assets/app.js') }}" defer></script>
+{% if page=='notifications' %}<script src="{{ local('assets/notifications.js') }}" defer></script>{% endif %}
 </body></html>

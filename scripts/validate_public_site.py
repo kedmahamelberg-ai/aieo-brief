@@ -5,7 +5,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
 ROOT=Path(__file__).resolve().parents[1]
-PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref'}
+PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref','private_key','manage_token_hash','subscription_id','auth_key'}
 class Page(HTMLParser):
  def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.ids=[];self.headings=0;self.script_data=[];self.capture=False
  def handle_starttag(self,tag,attrs):
@@ -42,11 +42,14 @@ def validate(site):
   if not (site/item['path']).is_file():raise ValueError('Story page missing')
   if item['kind']=='research' and item['has_editorial'] and (not item['limitation'] or item.get('evidence_scope')!='abstract'):raise ValueError('Research summary lacks evidence scope and limit')
   if item['kind']=='culture':
-   if not item.get('creator') or not item.get('rights',{}).get('url') or not item.get('work_date'):raise ValueError('Culture attribution missing')
+   if not item.get('creator') or not item.get('creator_origin') or not item.get('rights',{}).get('url') or not item.get('work_date'):raise ValueError('Culture attribution missing')
    if item['date']!=item['selected_on']:raise ValueError('Selection date changed')
    if item['culture_type']=='quote' and item['excerpt'] not in item.get('quote_context',''):raise ValueError('Quotation is not in its source context')
    if item['culture_type']=='poetry' and item['excerpt']!='\n'.join(item['poem_lines']):raise ValueError('Poem text was altered')
-   if item['culture_type']=='music' and (not item.get('media_url','').startswith('https://') or 'creativecommons.org/' not in item['rights']['url']):raise ValueError('Music lacks a safe licensed source')
+   if item['culture_type']=='music':
+    rights=item['rights'];label=rights.get('label','')
+    if not item.get('media_url','').startswith('https://') or not rights['url'].startswith('https://'):raise ValueError('Music lacks a safe source')
+    if not label.startswith(('CC BY ','CC BY-SA ','CC0','Public domain')) or re.search(r'\b(?:NC|ND)\b',label):raise ValueError('Music lacks compatible source-declared terms')
  pages=list(site.rglob('*.html'));links=0
  for path in pages:
   raw=path.read_text();parser=Page();parser.feed(raw)

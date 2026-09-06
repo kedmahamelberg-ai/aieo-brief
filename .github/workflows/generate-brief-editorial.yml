@@ -1,5 +1,10 @@
 name: Update Brief News and Research
 on:
+  workflow_call:
+    inputs:
+      news_only:
+        type: boolean
+        default: false
   schedule:
     - cron: '15 12 * * *'
   workflow_dispatch:
@@ -46,6 +51,7 @@ jobs:
         run: python scripts/generate_editorial_stories.py --dry-run
       - name: Check research published in the last seven days
         id: collect
+        if: inputs.news_only != true
         continue-on-error: true
         run: python scripts/collect_research.py
       - name: Check pending research

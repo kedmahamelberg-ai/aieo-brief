@@ -10,6 +10,10 @@ MARKETS = [('CA','Canada'),('CN','China'),('FR','France'),('GB','United Kingdom'
 def digest(value):
     return hashlib.sha256(json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(',',':')).encode()).hexdigest()
 
+def relationship_fingerprint(relationship):
+    # Do not trigger new editions just because a generation timestamp changed.
+    return digest(sorted(relationship.get('evidence', []), key=lambda row: str(row.get('event_id', ''))))
+
 def validate_pair(release, relationship):
     for key in ('release_id','period_start','period_end'):
         if not release.get(key) or release[key] != relationship.get(key):
@@ -21,6 +25,9 @@ def validate_pair(release, relationship):
     rids = [str(x.get('event_id') or '') for x in rows]
     if not ids or '' in ids or len(set(ids))!=len(ids) or set(ids)!=set(rids) or len(rids)!=len(ids):
         raise ValueError('Every distinct development must have exactly one directional record.')
+    published_count = (release.get('counts') or {}).get('ai_relevant_event_records')
+    if published_count is not None and published_count != len(ids):
+        raise ValueError('Development rows do not match the Observatory total.')
     counts = {a:{d:0 for d in sorted(DIRECTIONS)} for a in ('human','ai')}
     for row in rows:
         axes = row.get('axes') or {}

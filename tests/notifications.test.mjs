@@ -1,0 +1,40 @@
+import {PGlite} from '@electric-sql/pglite';
+import {readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const db = new PGlite();
+await db.exec('create role anon;create role authenticated;create role service_role bypassrls;grant usage on schema public to anon,authenticated,service_role;');
+const sql=readFileSync('supabase/migrations/202609060003_brief_notifications.sql','utf8');
+await db.exec(sql);await db.exec(sql);
+const endpoint='https://fcm.googleapis.com/fcm/send/exampleToken', token='a'.repeat(64), key='B'.repeat(87), auth='A'.repeat(22);
+const register=(url=endpoint,t=token)=>db.query('select public.brief_push_register($1,$2,$3,$4) as ok',[url,key,auth,t]);
+const role=async name=>db.exec('reset role;set role '+name);
+let checks=0;
+async function blocked(query,params=[]){await assert.rejects(()=>db.query(query,params));checks++;}
+await role('anon');
+await blocked('select * from public.brief_push_config');
+await blocked('select * from public.brief_push_subscriptions');
+await blocked('select * from public.brief_push_deliveries');
+await blocked("select public.brief_push_claim('id','2026-W36')");
+await blocked("select * from public.brief_push_pending('2026-W36',500)");
+await assert.rejects(()=>register());checks++;
+await role('service_role');
+await db.exec("update public.brief_push_config set public_key='public-key',private_key='private-key',last_release='2026-W35'");
+await role('anon');assert.equal((await register()).rows[0].ok,true);checks++;
+assert.equal((await register(endpoint,'b'.repeat(64))).rows[0].ok,false);checks++;
+assert.equal((await register()).rows[0].ok,true);checks++;
+for(const bad of ['https://127.0.0.1/secret','https://fcm.googleapis.com.evil.test/fcm/send/a','https://fcm.googleapis.com@evil.test/fcm/send/a','http://fcm.googleapis.com/fcm/send/a','https://web.push.apple.com/a?next=https://127.0.0.1','https://fcm.googleapis.com:443/fcm/send/a']){await assert.rejects(()=>register(bad));checks++;}
+for(const good of ['https://updates.push.services.mozilla.com/wpush/v2/a_bc-12','https://web.push.apple.com/QX/123']){assert.equal((await register(good)).rows[0].ok,true);checks++;}
+await role('service_role');
+let rows=await db.query('select * from public.brief_push_subscriptions where endpoint=$1',[endpoint]);const sub=rows.rows[0];
+assert.notEqual(sub.manage_token_hash,token);assert.equal(sub.last_release,'2026-W35');checks++;
+assert.equal((await db.query("select public.brief_push_claim($1,'2026-W35') as ok",[sub.subscription_id])).rows[0].ok,false);checks++;
+assert.equal((await db.query("select public.brief_push_claim($1,'2026-W36') as ok",[sub.subscription_id])).rows[0].ok,true);checks++;
+assert.equal((await db.query("select public.brief_push_claim($1,'2026-W36') as ok",[sub.subscription_id])).rows[0].ok,false);checks++;
+await db.query("select public.brief_push_finish($1,'2026-W36')",[sub.subscription_id]);
+assert.equal((await db.query("select public.brief_push_claim($1,'2026-W36') as ok",[sub.subscription_id])).rows[0].ok,false);checks++;
+rows=await db.query("select * from public.brief_push_pending('2026-W36',500)");assert.equal(rows.rows.some(r=>r.subscription_id===sub.subscription_id),false);checks++;
+await role('anon');
+assert.equal((await db.query('select public.brief_push_unsubscribe($1,$2) as ok',[endpoint,'b'.repeat(64)])).rows[0].ok,false);checks++;
+assert.equal((await db.query('select public.brief_push_unsubscribe($1,$2) as ok',[endpoint,token])).rows[0].ok,true);checks++;
+await role('service_role');assert.equal((await db.query('select * from public.brief_push_deliveries where subscription_id=$1',[sub.subscription_id])).rows.length,0);checks++;
+console.log(JSON.stringify({notification_database_checks:checks,migration_runs:2}));await db.close();

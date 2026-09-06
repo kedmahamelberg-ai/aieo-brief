@@ -1,0 +1,43 @@
+name: Send Brief News Notifications
+on:
+  workflow_call:
+  schedule:
+    - cron: '53 * * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Check eligible subscriptions without sending
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency:
+  group: brief-news-notifications
+  cancel-in-progress: false
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
+      BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Notify consenting readers about a deployed edition
+        env:
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          if [[ "$DRY_RUN" == 'true' ]]; then
+            python scripts/news_notifications.py --dry-run
+          else
+            python scripts/news_notifications.py
+          fi
