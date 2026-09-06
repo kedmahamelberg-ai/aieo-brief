@@ -1,61 +1,92 @@
-name: Build AIEO Brief Preview
-
+name: Build and Publish AIEO Brief
 on:
-  workflow_dispatch:
   push:
-    branches:
-      - main
-    paths:
-      - "scripts/**"
-      - "templates/**"
-      - "assets/**"
-      - "requirements.txt"
-      - ".github/workflows/**"
-
+    branches: [main]
+    paths: ['scripts/**', 'templates/**', 'assets/**', 'config/**', 'data/**', 'tests/**', 'supabase/**', 'package*.json', 'requirements.txt', '.github/**']
+  workflow_run:
+    workflows: ['Update Brief News and Research', 'Update Brief Daily Culture']
+    types: [completed]
+  workflow_dispatch:
 permissions:
-  contents: read
-
+  contents: write
+  pages: write
+  id-token: write
 concurrency:
-  group: aieo-brief-preview
-  cancel-in-progress: true
-
+  group: brief-publication
+  cancel-in-progress: false
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
     runs-on: ubuntu-latest
     timeout-minutes: 20
-
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
+      BRIEF_COMMUNITY_ENABLED: ${{ vars.BRIEF_COMMUNITY_ENABLED }}
+      BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
+      GA4_MEASUREMENT_ID: ${{ vars.GA4_MEASUREMENT_ID }}
     steps:
       - uses: actions/checkout@v6
-
+        with:
+          ref: main
       - uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: '3.12'
           cache: pip
-
       - run: python -m pip install -r requirements.txt
-
-      - name: Validate Supabase secrets
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Run release, headline and privacy regression checks
         run: |
-          test -n "$SUPABASE_URL"
-          test -n "$SUPABASE_SECRET_KEY"
-
-      - name: Build current AIEO Brief site
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
-        run: python scripts/build_site.py
-
-      - name: Validate public build
+          python -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/core.test.js
+          npm run test:database
+      - name: Build the source-bound site and preserve past editions
+        run: python scripts/build_site.py --update-archive
+      - name: Validate every public route and the published counts
         run: python scripts/validate_public_site.py
-
-      - name: Upload preview site
+      - name: Register public story links and clean expired reading sessions
+        run: python scripts/register_public_items.py
+      - name: Preserve stable story URLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/archive/stories.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Preserve Brief story pages and edition history'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Downloadable website build
         uses: actions/upload-artifact@v4
         with:
-          name: aieo-brief-preview-${{ github.run_id }}
+          name: aieo-brief-website-${{ github.run_id }}
           path: _site
+          include-hidden-files: true
           if-no-files-found: error
           retention-days: 14
+      - name: Prepare GitHub Pages
+        if: vars.BRIEF_PUBLISH == 'true'
+        uses: actions/configure-pages@v5
+      - name: Upload the public website
+        if: vars.BRIEF_PUBLISH == 'true'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    if: vars.BRIEF_PUBLISH == 'true'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish validated Brief
+        id: deployment
+        uses: actions/deploy-pages@v4

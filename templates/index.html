@@ -1,237 +1,30 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}{% from 'components.html' import card,ad with context %}
 {% block content %}
-<section class="ticker-shell" aria-label="Current relationship signal">
-  <div class="ticker">
-    <div class="ticker-label">
-      <span>THIS WEEK</span>
-      <small>{{ release.period_start }} to {{ release.period_end }}</small>
-    </div>
-    {% for item in ticker %}
-    <a href="#{{ item.key }}" class="ticker-item {{ item.class }}">
-      <span>{{ item.people }} &nbsp; {{ item.ai }}</span>
-      <strong>{{ item.count }}</strong>
-      <small>{{ item.label }}</small>
-    </a>
-    {% endfor %}
-  </div>
-</section>
-
-<div class="top-ad ad-slot-wide" data-ad-placement="top-banner">
-  <span>ADVERTISEMENT</span>
-  <strong>Reserved sponsor space</strong>
-  <small>Campaign measurement will be first-party and separated from editorial ranking.</small>
+<main id="main-content" class="page-shell">
+<div class="edition-line"><span>LATEST OBSERVATORY EDITION</span><time>{{ period_label }}</time><a href="{{ local('about/index.html') }}#sources">{{ news_count }} developments · 5 discovery markets</a></div>
+<section class="opening" aria-label="Start reading">
+<div class="lead-story">
+{% if lead %}<div class="story-kicker"><span>START HERE</span><span>{{ lead.topic_label }}</span><span>{{ lead.reading_minutes }} min read</span></div><h1><a href="{{ local(lead.path) }}">{{ lead.headline }}</a></h1><p>{{ lead.deck }}</p><div class="lead-bottom"><a class="read-link" href="{{ local(lead.path) }}">Read the brief <span aria-hidden="true">→</span></a><span>{{ lead.publisher }}</span></div>{% else %}<h1>Your next AI story, made clearer.</h1><p>The next Observatory edition will appear here after publication.</p>{% endif %}
 </div>
-
-<main id="main-content">
-  <section class="hero-grid">
-    <div class="lead">
-      {% if lead %}
-      <div class="eyebrow">{{ lead.relationship.people }} &nbsp; {{ lead.relationship.ai }} · {{ lead.novelty }}</div>
-      <h1>{{ lead.headline }}</h1>
-      <p class="lead-deck">{{ lead.deck or lead.what_happened }}</p>
-      <div class="lead-meta">
-        <span class="relationship-chip {{ lead.relationship.class }}">{{ lead.relationship.label }}</span>
-        <span>{{ lead.source_count }} sources</span>
-        <span>{{ lead.event_date }}</span>
-      </div>
-      <div class="lead-actions">
-        <a class="primary-button" href="{{ lead.url }}">Open development</a>
-        <button class="ghost-button" type="button" data-action="share" data-share-url="{{ lead.url }}" data-share-title="{{ lead.headline }}">↗ Share</button>
-        <button class="ghost-button" type="button" data-action="follow">🔔 Follow</button>
-      </div>
-      {% endif %}
-    </div>
-
-    <aside class="right-rail">
-      <div class="rail-heading">
-        <span>Worth opening</span>
-        <small>Selected by evidence depth and source coverage. Popularity ranking comes with community data.</small>
-      </div>
-      {% for story in main_cards[:5] %}
-      <a class="ranked-story" href="{{ story.url }}">
-        <b>{{ loop.index }}</b>
-        <span>
-          <strong>{{ story.headline }}</strong>
-          <small>{{ story.relationship.label }} · {{ story.source_count }} sources</small>
-        </span>
-      </a>
-      {% endfor %}
-      <div class="ad-slot" data-ad-placement="rail-home-1">
-        <span>ADVERTISEMENT</span>
-        <strong>Reserved sponsor space</strong>
-      </div>
-    </aside>
-  </section>
-
-  <section class="relationship-nav" id="relationships">
-    <header>
-      <div>
-        <span class="eyebrow">BROWSE BY RELATIONSHIP</span>
-        <h2>Who gained and who was constrained?</h2>
-      </div>
-      <p>Plain language first. Scientific labels stay underneath.</p>
-    </header>
-    <div class="relationship-grid">
-      {% for item in ticker %}
-      <a href="#{{ item.key }}" class="relationship-panel {{ item.class }}">
-        <span>{{ item.people }} &nbsp; {{ item.ai }}</span>
-        <strong>{{ item.label }}</strong>
-        <small>{{ item.technical }} · {{ item.count }} this week</small>
-      </a>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="latest" id="latest">
-    <header class="latest-heading">
-      <div>
-        <span class="eyebrow">LATEST DEVELOPMENTS</span>
-        <h2>One development, all the source links</h2>
-      </div>
-      <p>Use the filters or search box to reduce what is on screen.</p>
-    </header>
-
-    <div class="story-tools" aria-label="Story filters">
-      <label class="story-search">
-        <span>Search developments</span>
-        <input id="story-search" type="search" placeholder="Search this week" autocomplete="off">
-      </label>
-      <div class="filter-row">
-        <button type="button" class="filter-chip active" data-story-filter="all">All</button>
-        <button type="button" class="filter-chip" data-story-filter="mutualism">Both gain</button>
-        <button type="button" class="filter-chip" data-story-filter="ai_benefiting_parasitism">AI side gains</button>
-        <button type="button" class="filter-chip" data-story-filter="human_benefiting_parasitism">People gain</button>
-        <button type="button" class="filter-chip" data-story-filter="competition">Both constrained</button>
-        <button type="button" class="filter-chip" data-story-filter="early">Early signals</button>
-      </div>
-    </div>
-
-    <div class="story-grid" id="story-grid">
-      {% for story in main_cards %}
-      <article
-        class="story-card {{ story.relationship.class }} {% if loop.index > 6 %}is-extra{% endif %}"
-        data-story-card
-        data-relationship="{{ story.relationship.configuration }}"
-        data-early="{{ 'true' if story.evidence_level == 'headline_only' else 'false' }}"
-        data-search="{{ (story.headline ~ ' ' ~ story.deck ~ ' ' ~ story.relationship.label)|lower }}"
-      >
-        <div class="story-topline">
-          <span>{{ story.relationship.people }} &nbsp; {{ story.relationship.ai }}</span>
-          <span>{{ story.novelty }}</span>
-        </div>
-        <h3><a href="{{ story.url }}">{{ story.headline }}</a></h3>
-        <p>{{ story.deck or story.what_happened }}</p>
-        <div class="story-footer">
-          <span>{{ story.source_count }} sources</span>
-          {% if story.evidence_level == "headline_only" %}
-          <span class="early">Early signal</span>
-          {% elif story.full_source_count %}
-          <span>{{ story.full_source_count }} full source{% if story.full_source_count != 1 %}s{% endif %}</span>
-          {% endif %}
-        </div>
-        <div class="card-actions">
-          <a href="{{ story.url }}">Open</a>
-          <button type="button" data-action="share" data-share-url="{{ story.url }}" data-share-title="{{ story.headline }}">↗ Share</button>
-        </div>
-      </article>
-      {% if loop.index == 6 %}
-      <div class="feed-ad is-extra-ad" data-ad-placement="feed-home-1">
-        <span>ADVERTISEMENT</span>
-        <strong>Reserved in-feed sponsor space</strong>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="show-more-row">
-      <button id="show-more-stories" class="secondary-button" type="button">Show 6 more</button>
-      <span id="story-count-status" aria-live="polite"></span>
-    </div>
-  </section>
-
-  <section class="subscribe-band" id="subscribe">
-    <div>
-      <span class="eyebrow">GET THE BRIEF</span>
-      <h2>Follow AI developments without following every headline.</h2>
-      <p>Brief subscriptions and story alerts are being connected next. The current Monthly Pulse is already available.</p>
-    </div>
-    <div class="subscribe-actions">
-      <button type="button" class="primary-button" data-action="subscribe">Join AIEO Brief</button>
-      <a class="secondary-button" href="https://observatory.hamelberg-ai.com/report/" target="_blank" rel="noopener noreferrer">Get the current Pulse</a>
-    </div>
-  </section>
-
-  {% for key, title, cls in [
-    ("mutualism","Both gain","mutualism"),
-    ("ai_benefiting_parasitism","AI side gains, people are constrained","ai-benefit"),
-    ("human_benefiting_parasitism","People gain, AI side is constrained","human-benefit"),
-    ("competition","Both are constrained","competition")
-  ] %}
-  <section class="relationship-stream" id="{{ key }}">
-    <header>
-      <h2>{{ title }}</h2>
-      <span>{{ by_relationship.get(key, [])|length }} current developments</span>
-    </header>
-    <div class="stream-row">
-      {% for story in by_relationship.get(key, [])[:6] %}
-      <a href="{{ story.url }}" class="stream-card {{ cls }}">
-        <strong>{{ story.headline }}</strong>
-        <small>{{ story.source_count }} sources · {{ story.event_date }}</small>
-      </a>
-      {% endfor %}
-      {% if not by_relationship.get(key) %}<p>No current development in this pattern.</p>{% endif %}
-    </div>
-  </section>
-  {% endfor %}
-
-  <section class="split-section">
-    <div id="research" class="research-placeholder">
-      <span class="eyebrow">RESEARCH RADAR · NEXT</span>
-      <h2>What is in it for AI? What is in it for humans?</h2>
-      <p>Open research will appear here as short evidence cards linked to the original paper.</p>
-      <div class="research-skeleton">
-        <span>FOR AI</span>
-        <span>FOR HUMANS & SOCIETY</span>
-      </div>
-    </div>
-    <div id="community" class="community-placeholder">
-      <span class="eyebrow">COMMUNITY · NEXT</span>
-      <h2>Discuss the development, not another duplicate headline.</h2>
-      <p>Accounts will connect comments, saves, likes, follows, notifications, and real popularity rankings to the same living story.</p>
-      <div class="interaction-preview">
-        <span>♡ Like</span><span>💬 Discuss</span><span>↗ Share</span><span>🔖 Save</span><span>🔔 Follow</span>
-      </div>
-    </div>
-  </section>
-</main>
-
-<dialog class="share-dialog" id="share-dialog">
-  <form method="dialog" class="dialog-card">
-    <button class="dialog-close" value="cancel" aria-label="Close">×</button>
-    <span class="eyebrow">SHARE THIS DEVELOPMENT</span>
-    <h2>Choose where to share</h2>
-    <div class="share-grid">
-      <a data-share-channel="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a data-share-channel="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
-      <a data-share-channel="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a data-share-channel="reddit" target="_blank" rel="noopener noreferrer">Reddit</a>
-      <a data-share-channel="x" target="_blank" rel="noopener noreferrer">X</a>
-      <a data-share-channel="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
-      <a data-share-channel="email">Email</a>
-      <button type="button" data-share-channel="copy">Copy link</button>
-    </div>
-  </form>
-</dialog>
-
-<dialog class="notice-dialog" id="notice-dialog">
-  <form method="dialog" class="dialog-card">
-    <button class="dialog-close" value="cancel" aria-label="Close">×</button>
-    <span class="eyebrow">PREVIEW</span>
-    <h2 id="notice-title">Coming next</h2>
-    <p id="notice-copy"></p>
-    <div class="notice-actions">
-      <a href="https://observatory.hamelberg-ai.com/report/" target="_blank" rel="noopener noreferrer">Get the current Pulse</a>
-      <button value="cancel">Continue browsing</button>
-    </div>
-  </form>
-</dialog>
+<div class="opening-list"><span class="eyebrow">ALSO IN THIS EDITION</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
+</section>
+{% if culture_latest %}<section class="daily-invitation" aria-label="Daily culture"><div><span class="eyebrow">A DAILY PAUSE · {{ culture_date }}</span><p>Something to look at. A few words to keep. A little music.</p></div><a class="read-link" href="{{ local('culture/index.html') }}">Take a moment →</a></section>{% endif %}
+<div class="reading-layout">
+<section class="feed-column" id="news" aria-label="News feed">
+<div class="section-heading"><h2>Make time for what matters to you.</h2><span>Read a little. Leave with more clarity.</span></div>
+<div class="feed-controls">
+<div class="market-tabs" aria-label="Discovery market"><button data-market="all" aria-pressed="true">All markets</button>{% for code,name in markets %}<button data-market="{{ code }}" aria-pressed="false">{{ name }}</button>{% endfor %}</div>
+<div class="filter-line"><label class="search-label"><span class="sr-only">Search news</span><input type="search" id="story-search" placeholder="Find a story or topic" autocomplete="off"></label><label><span class="sr-only">Order stories</span><select id="story-sort"><option value="latest">Latest</option><option value="reads">Most read</option><option value="likes">Most liked</option><option value="comments">Most discussed</option></select></label><details class="filter-details"><summary>More filters</summary><label>Topic<select id="topic-filter"><option value="all">All topics</option>{% for value,label in topics %}<option value="{{ value }}">{{ label }}</option>{% endfor %}</select></label><label>Reported effects on people<select id="direction-filter"><option value="all">All readings</option><option value="gain">Benefits</option><option value="loss">Downsides</option><option value="mixed">Benefits and downsides</option><option value="none">No direction stated</option><option value="unresolved">Evidence incomplete</option></select></label></details></div>
+<p class="filter-status" id="filter-status" aria-live="polite"></p>
+</div>
+<div id="story-feed">{% for item in feed %}{{ card(item) }}{% if loop.index==4 %}{{ ad('feed') }}{% endif %}{% endfor %}</div>
+<div class="feed-ending"><button id="show-more-stories" class="button secondary" hidden>Read 8 more stories</button><p id="feed-complete">You have reached the end of this edition. Come back when it suits you.</p></div>
+</section>
+<aside class="reading-rail">
+<section class="rail-section"><span class="eyebrow">A DIFFERENT NEWS WINDOW</span><h2>Five markets. More perspectives.</h2><p>Follow reporting discovered in Canada, China, France, the UK and the US.</p><div class="market-summary">{% for code,name in markets %}<button data-market="{{ code }}"><span>{{ name }}</span><span>{{ market_counts[code] }}</span></button>{% endfor %}</div><a class="text-link" href="{{ local('about/index.html') }}#sources">How the sources are gathered</a></section>
+<section class="rail-section" id="popular-rail" hidden><span class="eyebrow">READERS ARE OPENING</span><h2>Most read this week</h2><ol id="popular-list"></ol><p class="small-copy">Based on opted-in reading sessions.</p></section>
+{{ ad('rail') }}
+<section class="rail-section research-teaser"><span class="eyebrow">RESEARCH, IN PLAIN WORDS</span><h2>What does the evidence say?</h2><p>New papers with the finding, the limitation and a link to the original.</p><a class="read-link" href="{{ local('research/index.html') }}">Explore the research →</a></section>
+{% if config.support_url %}<section class="rail-section"><a class="text-link" href="{{ config.support_url }}" rel="noopener noreferrer">Support independent reading →</a></section>{% endif %}
+</aside></div></main>
 {% endblock %}

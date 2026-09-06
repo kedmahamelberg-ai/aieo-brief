@@ -1,210 +1,56 @@
-# AIEO Brief Phase 2A.2 local-model editorial engine
+# AIEO Brief
 
-Phase 2A.1 turns the working editorial preview into an evidence-bounded editorial product with clearer UX and a full sharing surface.
+A source-linked AI news and research publication, with reading lists, email sign-in, moderated discussion and daily art, words and music, and Google Auto ads.
 
-## What changes
+The Brief uses the Observatory’s canonical weekly release and independent human/AI readings. It preserves those classifications. New headlines and summaries are written only from retained complete article evidence. Research summaries use actual abstracts and identify their limited scope.
 
-### Editorial generation
+## Owner setup
 
-A server-side generator reads only:
-- current AIEO resolved development metadata
-- current reviewed symbiosis relationship
-- private best-available source evidence in Supabase
+Open `OWNER-SETUP.md`. The downloadable update also includes a point-and-click settings form and a Mac installer for this repository.
 
-It generates:
-- original AIEO headline
-- one-sentence deck
-- What happened
-- Why it matters
-- For humans
-- For AI / operator side
-- 2 concise body paragraphs
+The separate Observatory repository is not the installation target.
 
-The reviewed relationship classification is fixed input. The editorial model cannot change it.
+## Build and test
 
-### Shared evidence with the Observatory
+```bash
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -p 'test_*.py'
+node --test tests/core.test.js
+python scripts/build_site.py --preview
+python scripts/validate_public_site.py
+```
 
-The Observatory is the collector of record. After each weekly news collection it:
+Open `_site/index.html`. `--preview` uses the real W35 snapshot included in `data/preview`; it has 110 developments, seven original news summaries and five paper summaries. Sign-in, live counts and advertising are disabled in this offline preview.
 
-- retrieves article bodies only where automated access is permitted
-- versions those bodies privately in `brief_article_content_snapshots`
-- records failed, blocked, paywalled, and non-article attempts separately
-- gives both Observatory classifiers the best available evidence, preferring a full body over a snippet or headline
+For a live build, set `SUPABASE_URL` and `SUPABASE_SECRET_KEY`, configure `config/site.json`, then run `python scripts/build_site.py --update-archive`. The service key stays on the server. `SUPABASE_PUBLISHABLE_KEY` is the only browser key. Apply the included database migration before the automatic writer or community services run.
 
-The Brief reads the same versioned evidence through the private
-`brief_event_source_evidence` and `brief_event_evidence_readiness` views. It does
-not scrape the same publisher a second time. `validate_observatory_body_contract.py`
-runs before editorial generation and stops the workflow if that shared contract
-is missing or inconsistent.
+The optional database tests run a real PostgreSQL engine locally through PGlite:
 
-Article bodies remain service-role-only in Supabase. The public Brief receives
-new AIEO prose and source links, never the stored publisher body.
+```bash
+npm ci
+npm run test:database
+```
 
-Headline-only developments are NOT sent to the editorial model. They remain Early signals.
+## Automatic operation
 
-Every generated draft is versioned in:
-- `brief_generated_artifacts`
-- `brief_story_versions`
+- The daily 12:15 UTC job checks for unfinished news and research published in the last seven days before loading its local model.
+- Successful news versions are saved individually to Supabase. A failed draft retains its source link, and subsequent passes prioritise less-attempted items.
+- Daily default writing budgets are 45 minutes for news and 15 for research. A no-change pass does not download/start the model. GitHub runner minutes still apply.
+- Research collection uses the arXiv and Crossref APIs, with a maximum of six selected records per source per week. It is a selection, not an exhaustive review of AI science. PNAS/SSRN records without abstracts keep their original titles and links.
+- Every generation pass triggers a fresh validated website build. GitHub Pages deployment is enabled by the `BRIEF_PUBLISH=true` repository variable after Pages is configured.
+- The archive preserves story URLs and discussion keys. A separate 04:00 UTC job expires detailed reading sessions after 90 days.
+- No publisher article bodies or private support quotes are copied into the website. Source support lives in the service-only `brief_editorial_provenance` table.
 
-The model, prompt version, input hash, output hash, evidence snapshot IDs, and superseded version are retained for future research and correction.
+## Editorial limits
 
-### Copyright guardrail
+Automatic support checks and model review reduce errors; they do not certify truth. Company claims, forecasts, opinion and study findings keep their attribution. A paper abstract is never labelled as a full-paper reading. Headlines from sources lacking suitable evidence remain clearly identified as publisher headlines.
 
-The model is explicitly instructed to paraphrase. The generator rejects a draft if it contains a 10-word exact phrase from the supplied source evidence and retries once.
+The seven curated W35 summaries are strictly bound to that release hash and its independent axes. They do not override future releases or corrected classifications.
 
-Private publisher article bodies never enter the public `_site`.
+## Automatic daily publishing
 
-### Local open-weight model
+News reads the existing Observatory/Supabase evidence and current weekly release every day at 12:15 UTC. Research discovery checks arXiv and Crossref (PNAS/SSRN) daily, retains recent papers and resumes summaries. Cultural selections run at 05:25 UTC with a 17:25 retry of missing categories. The five daily categories are illustration, poetry, a short reading, an attributed quotation and music. Both update workflows trigger the validated build/publication workflow.
 
-The editorial engine does not use a paid model API. It runs `Qwen3-4B` locally through `llama.cpp` inside the workflow.
+Culture uses museum CC0 images, historic poetry and books, and licensed artist-published Internet Archive / ccMixter music. Original creators, source links, work dates and reuse information are kept. The selection date never replaces the original work date. Configuration: `config/culture.json`. New culture identities use migration `202609060002_brief_culture.sql`, after the first migration.
 
-Default quantization:
-
-`ggml-org/Qwen3-4B-GGUF:Q4_K_M`
-
-The model weights are Apache 2.0 licensed. The Q4_K_M file is about 2.5 GB and fits the standard 8 GB Linux runner used by private GitHub repositories.
-
-The workflow pins llama.cpp to `b10516` for reproducibility and records both the model revision and llama.cpp version with every generated artifact.
-
-Qwen3 is instructed to use non-thinking mode for this editorial task, reducing unnecessary CPU time and output.
-
-### UX
-
-The public preview now includes:
-- sticky simplified navigation
-- horizontally scrollable relationship ticker on small screens
-- top, rail, in-feed, inline-story, and story-rail ad inventory
-- one primary lead development
-- progressive disclosure
-- search and relationship filters
-- only six latest cards visible at first
-- "Show more" in groups of six
-- Quick read on every story
-- What happened and Why it matters first
-- People and AI sides next
-- longer Brief text behind a disclosure
-- source links behind a disclosure
-- sticky story actions
-- prominent notification/follow CTA
-- visible subscription CTA
-- native mobile sharing
-- desktop share dialog for WhatsApp, Telegram, LinkedIn, Reddit, X, Facebook, email, and copy link
-- reduced-motion support
-- large tap targets and keyboard focus states
-
-"Trending" is deliberately renamed "Worth opening" until real first-party views, comments, shares, and saves exist.
-
-## Install in `aieo-brief`
-
-Replace/add:
-
-- requirements.txt
-- scripts/generate_editorial_stories.py
-- scripts/build_site.py
-- scripts/validate_public_site.py
-- templates/base.html
-- templates/index.html
-- templates/story.html
-- assets/site.css
-- assets/app.js
-- .github/workflows/generate-brief-editorial.yml
-- .github/workflows/build-brief-preview.yml
-- data/mock/*
-
-Commit:
-
-`Add evidence-bounded editorial engine and engagement-first UX`
-
-## No paid model API key is required
-
-You do not need `OPENAI_API_KEY` or any other paid inference credential.
-
-The first live generation downloads the open-weight Qwen model and builds a pinned llama.cpp server. Later runs can reuse the GitHub Actions model cache.
-
-Important: the model itself has no API fee. Because `aieo-brief` is a private repository, GitHub-hosted Actions still consume your included private-repository runner minutes. If you want zero external compute charges as well, the same workflow can later be moved to a self-hosted runner on your Mac.
-
-## Safe rollout
-
-### Step 1: eligibility test
-
-Actions -> Generate AIEO Brief Editorial Drafts
-
-Use:
-
-- limit: 5
-- dry_run: true
-- force: false
-
-This makes no model calls and writes nothing.
-
-### Step 2: first five editorial stories
-
-Run again:
-
-- limit: 5
-- dry_run: false
-- force: false
-
-Expected:
-- 5 generated
-- 0 failed
-
-### Step 3: build preview
-
-Actions -> Build AIEO Brief Preview
-
-Download the new preview artifact and inspect the five generated stories.
-
-### Step 4: generate remaining eligible current stories
-
-When the first five look right:
-
-- limit: 0
-- dry_run: false
-- force: false
-
-Unchanged stories are skipped by evidence fingerprint.
-
-### Step 5: rebuild preview
-
-Run Build AIEO Brief Preview again.
-
-## Important preview behavior
-
-The Like, Discuss, Save, Follow, Notify, and Brief subscription buttons are deliberately visible now but do not persist data yet. They explain what the next community layer will do.
-
-Share IS functional now.
-
-Phase 3 will connect the visible interaction surfaces to:
-- first-party pseudonymous event logging
-- accounts
-- comments and replies
-- likes/reactions
-- saves
-- story follows
-- notifications
-- subscriptions
-- real Top 5 / Trending calculations
-- ad impressions and clicks
-
-That is when no engagement signal is lost and every interaction becomes research-ready under explicit consent and governance.
-
-## Acceptance checks
-
-The build fails if:
-- a Supabase or other server secret appears in `_site`
-- private `body_text` appears in public JSON
-- an em dash appears in public output
-- the story page count does not match public JSON
-- homepage engagement/share/ad hooks are missing
-- story share/follow/ad hooks are missing
-
-## UX principle
-
-The first screen answers only:
-
-1. What happened?
-2. Why does it matter?
-3. Who gained or was constrained?
-
-Everything else is progressively disclosed.
+AdSense defaults to Auto ads. The owner connects their publisher ID and published Google consent message once, enables Auto ads in their approved account, and Google then manages ad placement. There is no sponsor solicitation workflow in the public site. No revenue or account approval is guaranteed. See `OWNER-SETUP.md`.

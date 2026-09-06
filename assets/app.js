@@ -1,190 +1,58 @@
-"use strict";
-
-const shareDialog = document.getElementById("share-dialog");
-const noticeDialog = document.getElementById("notice-dialog");
-
-function absoluteUrl(value) {
-  try {
-    return new URL(value || window.location.href, window.location.origin).href;
-  } catch {
-    return window.location.href;
-  }
-}
-
-function openShare(title, value) {
-  const url = absoluteUrl(value);
-  const text = title || document.title;
-  const encodedUrl = encodeURIComponent(url);
-  const encodedText = encodeURIComponent(text);
-
-  if (shareDialog && typeof shareDialog.showModal === "function") {
-    const links = {
-      whatsapp: `https://wa.me/?text=${encodeURIComponent(`${text} ${url}`)}`,
-      telegram: `https://t.me/share/url?url=${encodedUrl}&text=${encodedText}`,
-      linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
-      reddit: `https://www.reddit.com/submit?url=${encodedUrl}&title=${encodedText}`,
-      x: `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedText}`,
-      facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
-      email: `mailto:?subject=${encodedText}&body=${encodeURIComponent(`${text}\n\n${url}`)}`,
-    };
-    Object.entries(links).forEach(([key, href]) => {
-      const node = shareDialog.querySelector(`[data-share-channel="${key}"]`);
-      if (node) node.href = href;
-    });
-    const copy = shareDialog.querySelector('[data-share-channel="copy"]');
-    if (copy) copy.dataset.copyUrl = url;
-    shareDialog.showModal();
-    return;
-  }
-
-  if (navigator.share) {
-    navigator.share({ title: text, url }).catch(() => {});
-  }
-}
-
-function showNotice(action) {
-  if (!noticeDialog) return;
-  const title = noticeDialog.querySelector("#notice-title");
-  const copy = noticeDialog.querySelector("#notice-copy");
-
-  const messages = {
-    subscribe: [
-      "AIEO Brief subscriptions are next",
-      "The interface is ready for subscriptions. The next community layer will store consent, preferences, and subscription behavior in the AIEO research data model. You can receive the current Monthly Pulse now.",
-    ],
-    follow: [
-      "Story notifications are next",
-      "This option will notify you when the same development returns, gains new source coverage, or changes relationship pattern. Account-based follows will be stored as first-party behavioral data.",
-    ],
-    discuss: [
-      "Discussion is next",
-      "Comments and replies will attach to this living development, so the conversation stays with the story when new coverage appears.",
-    ],
-    like: [
-      "Reactions are next",
-      "Likes and other reactions will become part of the first-party engagement layer used for transparent popularity rankings.",
-    ],
-    save: [
-      "Saved stories are next",
-      "Saving will be account-based so collections and reading behavior can persist across devices.",
-    ],
-  };
-  const message = messages[action] || ["Coming next", "This interaction is reserved for the community phase."];
-  if (title) title.textContent = message[0];
-  if (copy) copy.textContent = message[1];
-  noticeDialog.showModal();
-}
-
-document.addEventListener("click", async (event) => {
-  const button = event.target.closest("[data-action]");
-  if (button) {
-    const action = button.dataset.action;
-    if (action === "share") {
-      const title = button.dataset.shareTitle || document.title;
-      const url = button.dataset.shareUrl || window.location.href;
-
-      if (
-        navigator.share &&
-        window.matchMedia("(max-width: 760px)").matches
-      ) {
-        try {
-          await navigator.share({ title, url: absoluteUrl(url) });
-          return;
-        } catch (_) {}
-      }
-      openShare(title, url);
-      return;
-    }
-
-    if (["subscribe","follow","discuss","like","save"].includes(action)) {
-      showNotice(action);
-      return;
-    }
-  }
-
-  const copyButton = event.target.closest('[data-share-channel="copy"]');
-  if (copyButton) {
-    const value = copyButton.dataset.copyUrl || window.location.href;
-    try {
-      await navigator.clipboard.writeText(value);
-      const old = copyButton.textContent;
-      copyButton.textContent = "✓ Copied";
-      setTimeout(() => { copyButton.textContent = old; }, 1500);
-    } catch (_) {
-      window.prompt("Copy this link", value);
-    }
-  }
-});
-
-const storyGrid = document.getElementById("story-grid");
-const searchInput = document.getElementById("story-search");
-const showMore = document.getElementById("show-more-stories");
-const status = document.getElementById("story-count-status");
-let activeFilter = "all";
-let visibleLimit = 6;
-
-function filteredCards() {
-  if (!storyGrid) return [];
-  const query = (searchInput?.value || "").trim().toLowerCase();
-  return [...storyGrid.querySelectorAll("[data-story-card]")].filter((card) => {
-    const relationship = card.dataset.relationship;
-    const early = card.dataset.early === "true";
-    const filterMatch =
-      activeFilter === "all" ||
-      (activeFilter === "early" && early) ||
-      relationship === activeFilter;
-    const searchMatch =
-      !query || (card.dataset.search || "").includes(query);
-    return filterMatch && searchMatch;
-  });
-}
-
-function renderCards() {
-  if (!storyGrid) return;
-  const matches = filteredCards();
-  const allCards = [...storyGrid.querySelectorAll("[data-story-card]")];
-
-  allCards.forEach((card) => {
-    const shouldMatch = matches.includes(card);
-    const index = matches.indexOf(card);
-    card.hidden = !shouldMatch || index >= visibleLimit;
-    card.classList.remove("is-extra");
-  });
-
-  const ad = storyGrid.querySelector(".feed-ad");
-  if (ad) {
-    ad.classList.toggle("visible", matches.length > 6 && visibleLimit > 6);
-  }
-
-  const shown = Math.min(visibleLimit, matches.length);
-  if (status) {
-    status.textContent = `${shown} of ${matches.length} shown`;
-  }
-  if (showMore) {
-    showMore.hidden = shown >= matches.length;
-    showMore.textContent = `Show ${Math.min(6, matches.length - shown)} more`;
-  }
-}
-
-document.querySelectorAll("[data-story-filter]").forEach((button) => {
-  button.addEventListener("click", () => {
-    activeFilter = button.dataset.storyFilter;
-    visibleLimit = 6;
-    document.querySelectorAll("[data-story-filter]").forEach((node) => {
-      node.classList.toggle("active", node === button);
-    });
-    renderCards();
-  });
-});
-
-searchInput?.addEventListener("input", () => {
-  visibleLimit = 6;
-  renderCards();
-});
-
-showMore?.addEventListener("click", () => {
-  visibleLimit += 6;
-  renderCards();
-});
-
-renderCards();
+(function(){'use strict';
+ const config=JSON.parse(document.getElementById('brief-config').textContent),items=JSON.parse(document.getElementById('brief-items').textContent),index=new Map(items.map(i=>[i.key,i])),Core=window.BriefCore,Community=window.BriefCommunity,Analytics=window.BriefAnalytics;
+ const rootURL=document.querySelector('script[data-brief-root]')?new URL(document.querySelector('script[data-brief-root]').dataset.briefRoot):new URL('../',document.querySelector('script[src$="assets/app.js"]').src),SAVED_KEY='aieo-brief-saved-v1';
+ let metrics={},metricsAvailable=false,shareItem=null,toastTimer,saved=new Set(),remoteSaves=new Set(),limit=8,market='all';
+ const page=document.body.dataset.page,storyKey=document.body.dataset.storyKey;
+ const byId=id=>document.getElementById(id);
+ function el(tag,text,cls){const x=document.createElement(tag);if(text!==undefined)x.textContent=text;if(cls)x.className=cls;return x;}
+ function toast(message){const box=byId('toast');box.textContent=String(message);box.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>box.hidden=true,6000);}
+ window.addEventListener('brief-toast',e=>toast(e.detail));
+ function openDialog(id){const d=byId(id);if(!d)return;if(!d.open)d.showModal();}
+ document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>b.closest('dialog').close()));
+ document.querySelectorAll('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close();}}));
+ try{const list=JSON.parse(localStorage.getItem(SAVED_KEY)||'[]');if(Array.isArray(list))saved=new Set(list.filter(k=>typeof k==='string'&&/^(event:[0-9a-f-]{36}|(?:paper|culture):[0-9a-f]{24})$/i.test(k)));}catch{}
+ function remember(){try{localStorage.setItem(SAVED_KEY,JSON.stringify([...saved]));}catch{toast('Browser storage is unavailable. This reading list will last only until you close the page.');}}
+ function isSaved(key){return saved.has(key)||remoteSaves.has(key);}
+ function refreshButtons(){document.querySelectorAll('[data-read-count]').forEach(n=>{const count=Core.safeNumber(metrics[n.dataset.readCount]?.reads);n.hidden=!count;n.textContent=count+' reads this week';});document.querySelectorAll('[data-action="save"]').forEach(b=>{const state=isSaved(b.dataset.key);b.setAttribute('aria-pressed',String(state));b.setAttribute('aria-label',state?'Remove from saved stories':'Save this story');});document.querySelectorAll('[data-action="like"]').forEach(b=>b.setAttribute('aria-pressed',String(!!metrics[b.dataset.key]?.liked)));for(const [attr,field] of [['like','likes'],['comment','comments']])document.querySelectorAll('[data-'+attr+'-count]').forEach(n=>{const m=metrics[n.dataset[attr+'Count']];n.textContent=m?String(Core.safeNumber(m[field])):'';});}
+ function savedList(){if(page!=='saved')return;const out=byId('saved-list');out.replaceChildren();const selected=items.filter(x=>isSaved(x.key)).sort((a,b)=>b.date.localeCompare(a.date));byId('saved-status').textContent=selected.length?selected.length+' saved '+(selected.length===1?'story':'stories'):'Your reading list is empty. Choose Save on any story to find it here.';for(const item of selected){const a=el('article',undefined,'feed-story'),h=el('h2'),link=el('a',item.headline);link.href=new URL(item.path,rootURL).href;h.appendChild(link);a.append(h,el('p',item.deck,'story-deck'));const remove=el('button','Remove from saved');remove.dataset.action='save';remove.dataset.key=item.key;a.appendChild(remove);out.appendChild(a);}}
+ async function save(key){if(!index.has(key))return;const active=!isSaved(key);if(Community.signedIn()){await Community.rpc('brief_community_toggle',{p_story_key:key,p_kind:'save',p_active:active});if(active)remoteSaves.add(key);else remoteSaves.delete(key);}if(active)saved.add(key);else saved.delete(key);remember();refreshButtons();savedList();toast(active?'Saved for later.':'Removed from saved stories.');}
+ function account(){if(!Community.enabled){toast('Sign-in is not connected on this version. You can read, share and save stories on this device.');return;}if(Community.signedIn()){location.href=new URL('account/index.html',rootURL).href;return;}openDialog('account-dialog');}
+ async function like(key){if(!Community.signedIn()){account();return;}const active=!metrics[key]?.liked;await Community.rpc('brief_community_toggle',{p_story_key:key,p_kind:'like',p_active:active});Object.assign(metrics,await Community.metrics([key]));refreshButtons();}
+ function share(key){const item=index.get(key);if(!item)return;shareItem=item;const url=Core.publicURL(config,item,rootURL.href);if(!url){toast('Sharing will use the Brief’s public URL after publication. Original source links already work.');return;}document.querySelector('[data-share-heading]').textContent=item.headline;const links=Core.shareLinks(url,item.headline);document.querySelectorAll('[data-share-channel]').forEach(a=>a.href=links[a.dataset.shareChannel]);openDialog('share-dialog');}
+ async function copyShare(){if(!shareItem)return;const url=Core.publicURL(config,shareItem,rootURL.href);if(!url)return;try{await navigator.clipboard.writeText(url);toast('Link copied.');}catch{const input=el('input');input.value=url;byId('share-dialog').appendChild(input);input.focus();input.select();toast('Copy the selected link.');}Analytics.event('share_option',{story_key:shareItem.key,channel:'copy'});}
+ async function nativeShare(){if(!shareItem)return;const url=Core.publicURL(config,shareItem,rootURL.href);if(navigator.share){try{await navigator.share({title:shareItem.headline,url});Analytics.event('share_option',{story_key:shareItem.key,channel:'device'});}catch(e){if(e.name!=='AbortError')toast('Choose a sharing option or copy the link.');}}else toast('Choose an app above, or copy the link to paste elsewhere.');}
+ const nodes=[...document.querySelectorAll('[data-story-card]')],nodeMap=new Map(nodes.map(n=>[n.dataset.key,n]));
+ const feedItems=nodes.map(n=>({...index.get(n.dataset.key),human_direction:n.dataset.direction,markets:n.dataset.markets.split(' ').filter(Boolean),topic:n.dataset.topic}));
+ function renderFeed(reset=false){if(!nodes.length)return;if(reset)limit=8;const search=byId('story-search')?.value||'',topic=byId('topic-filter')?.value||'all',direction=byId('direction-filter')?.value||'all',sort=byId('story-sort')?.value||'latest';const results=Core.sortItems(Core.filterItems(feedItems,{market,search,topic,direction}),sort,metrics);const root=byId('story-feed');const visible=new Set(results.slice(0,limit).map(x=>x.key));nodes.forEach(n=>n.hidden=!visible.has(n.dataset.key));for(const item of results)root.appendChild(nodeMap.get(item.key));const ad=root.querySelector('.sponsor-unit,.advertisement');if(ad){const anchor=results[Math.min(3,Math.min(limit,results.length)-1)];if(anchor)nodeMap.get(anchor.key).after(ad);ad.hidden=!anchor||(ad.classList.contains('advertisement')&&!ad.querySelector('ins'));}document.querySelectorAll('.market-tabs [data-market]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.market===market)));const haveMetric=results.some(x=>Core.safeNumber(metrics[x.key]?.[sort])>0);let status=`${Math.min(limit,results.length)} of ${results.length} ${page==='research'?'papers':page==='culture'?'selections':'stories'}`;if(sort!=='latest'&&(!metricsAvailable||!haveMetric))status+=' · No readership data yet. Showing latest.';byId('filter-status').textContent=status;byId('show-more-stories').hidden=results.length<=limit;byId('feed-complete').hidden=results.length>limit;byId('feed-complete').textContent=results.length?'You have reached the end. Come back whenever it suits you.':'No stories match these filters.';}
+ document.querySelectorAll('[data-market]').forEach(b=>b.addEventListener('click',()=>{market=b.dataset.market;renderFeed(true);Analytics.event('feed_filter',{market});}));
+ for(const id of ['story-search','story-sort','topic-filter','direction-filter'])byId(id)?.addEventListener(id==='story-search'?'input':'change',()=>{renderFeed(true);if(id==='story-sort')Analytics.event('feed_sort',{sort:byId(id).value});});
+ byId('show-more-stories')?.addEventListener('click',()=>{limit+=8;renderFeed();});
+ function popular(){const list=byId('popular-list'),rail=byId('popular-rail');if(!list)return;const top=Core.sortItems(feedItems,'reads',metrics).filter(i=>Core.safeNumber(metrics[i.key]?.reads)>0).slice(0,5);rail.hidden=!top.length;list.replaceChildren();top.forEach(i=>{const li=el('li'),a=el('a',i.headline);a.href=new URL(i.path,rootURL).href;li.appendChild(a);list.appendChild(li);});}
+ async function loadMetrics(){if(!Community.enabled||!['home','research','culture','story'].includes(page))return;try{metrics=await Community.metrics(items.map(x=>x.key));metricsAvailable=true;refreshButtons();popular();renderFeed();}catch{metricsAvailable=false;}}
+ byId('signin-form')?.addEventListener('submit',async e=>{e.preventDefault();const button=e.target.querySelector('button');button.disabled=true;try{await Community.signIn(new FormData(e.target).get('email'));byId('signin-status').textContent='Check your inbox for a sign-in link. It will bring you back to the Brief.';}catch(err){byId('signin-status').textContent=err.message;}finally{button.disabled=false;}});
+ function commentNode(c){const article=el('article',undefined,'comment'+(c.parent_id?' comment-reply':''));article.id='comment-'+c.id;const meta=el('div',undefined,'comment-meta');meta.append(el('strong',c.display_name),el('time',new Date(c.created_at).toLocaleDateString()));if(c.parent_id)meta.append(el('span','Reply'));article.append(meta,el('p',c.body));const actions=el('div',undefined,'comment-meta');for(const [label,action] of [['Reply','reply'],...(c.mine?[['Delete','delete-comment']]:[['Report','report-comment']])]){const b=el('button',label,'text-button');b.dataset.action=action;b.dataset.id=c.id;b.dataset.name=c.display_name;actions.appendChild(b);}article.appendChild(actions);return article;}
+ async function comments(){if(!storyKey)return;const status=byId('community-status');if(!Community.enabled){status.textContent='Discussion is not connected on this version. You can share this story to discuss it elsewhere.';byId('comment-signin').hidden=true;return;}try{const rows=await Community.rpc('brief_community_comments_for',{p_story_key:storyKey});const list=byId('comments-list');list.replaceChildren(...rows.map(commentNode));status.textContent=rows.length?`${rows.length===200?'Showing the latest ':''}${rows.length} approved ${rows.length===1?'comment':'comments'}`:'Start the conversation with a question or useful context.';byId('comment-signin').hidden=Community.signedIn();byId('comment-form').hidden=!Community.signedIn();}catch{status.textContent='Comments could not be loaded. Please try again later.';}}
+ byId('comment-form')?.addEventListener('submit',async e=>{e.preventDefault();const form=e.target,button=form.querySelector('button[type="submit"]'),data=new FormData(form);button.disabled=true;try{await Community.rpc('brief_community_comment',{p_story_key:storyKey,p_display_name:data.get('display_name'),p_body:data.get('body'),p_parent_id:data.get('parent_id')||null});form.elements.body.value='';form.elements.parent_id.value='';byId('reply-context').hidden=true;byId('comment-status').textContent='Submitted. Your comment will appear after review.';}catch(err){byId('comment-status').textContent=err.message;}finally{button.disabled=false;}});
+ async function accountData(){if(!Community.signedIn())return;const data=await Community.rpc('brief_community_my_data');remoteSaves=new Set(data.saves);for(const key of saved)if(!remoteSaves.has(key)&&index.has(key)){try{await Community.rpc('brief_community_toggle',{p_story_key:key,p_kind:'save',p_active:true});remoteSaves.add(key);}catch{}}refreshButtons();savedList();if(page==='account'){byId('account-status').textContent='Signed in as '+(Community.user()?.email||'a reader')+'.';byId('account-content').hidden=false;const list=byId('my-comments');list.replaceChildren();for(const c of data.comments){const item=commentNode({...c,mine:true});item.prepend(el('p',c.status==='pending'?'Awaiting review':c.status,'small-copy'));list.appendChild(item);}if(!data.comments.length)list.textContent='You have not posted any comments yet.';if(data.moderator){const link=el('a','Open community review','button secondary');link.href=new URL('moderation/index.html',rootURL).href;byId('account-content').prepend(link);}}if(byId('comment-form')&&data.profile)byId('comment-form').elements.display_name.value=data.profile.display_name;}
+ async function moderation(){if(page!=='moderation'||!Community.signedIn())return;try{const data=await Community.rpc('brief_community_moderation_queue');byId('moderation-status').textContent=data.comments.length+' comments to review.';const list=byId('moderation-list');list.replaceChildren();for(const row of data.comments){const box=el('article',undefined,'moderation-item');box.append(el('h2',row.headline),el('p',row.display_name+' · '+row.status,'small-copy'),el('p',row.body));if(row.reports?.length)box.append(el('p','Reports: '+row.reports.join('; '),'small-copy'));const buttons=el('div',undefined,'moderation-actions');for(const [label,status] of [['Publish','published'],['Reject / remove','rejected']]){const b=el('button',label);b.dataset.action='moderate';b.dataset.id=row.id;b.dataset.status=status;buttons.appendChild(b);}box.appendChild(buttons);list.appendChild(box);}byId('enquiries-heading').hidden=false;const enq=byId('enquiries-list');enq.replaceChildren();for(const row of data.enquiries){const box=el('article',undefined,'moderation-item');box.append(el('h3',row.organisation),el('p',row.name+' · '+row.email),el('p',row.message));enq.appendChild(box);}}catch(err){byId('moderation-status').textContent=err.message;}}
+ byId('sponsor-form')?.addEventListener('submit',async e=>{e.preventDefault();if(!Community.signedIn()){byId('sponsor-status').textContent=Community.enabled?'Sign in with this email to send your enquiry.':'For sponsorship, use the project contact link below.';if(Community.enabled)account();return;}const form=e.target,data=new FormData(form),button=form.querySelector('button');button.disabled=true;try{await Community.rpc('brief_community_sponsor',{p_name:data.get('name'),p_email:data.get('email'),p_organisation:data.get('organisation'),p_message:data.get('message')});byId('sponsor-status').textContent='Your enquiry has been received.';form.reset();}catch(err){byId('sponsor-status').textContent=err.message;}finally{button.disabled=false;}});
+ async function downloadData(){const data=await Community.rpc('brief_community_my_data');const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=el('a');a.href=URL.createObjectURL(blob);a.download='my-brief-data.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
+ document.addEventListener('click',async e=>{const b=e.target.closest('[data-action]');if(!b)return;const action=b.dataset.action,key=b.dataset.key;try{
+ if(action==='listen'){const player=byId('culture-audio');if(player&&!player.src){player.src=player.dataset.audioUrl;player.hidden=false;b.hidden=true;player.addEventListener('error',()=>toast('The music host could not load this track. Use the original-source link below.'),{once:true});player.load();player.play().catch(()=>toast('Press play to listen.'));}}else if(action==='save')await save(key);else if(action==='like')await like(key);else if(action==='share')share(key);else if(action==='account')account();else if(action==='native-share')await nativeShare();else if(action==='copy-share')await copyShare();else if(action==='privacy')openDialog('privacy-dialog');else if(action==='ad-privacy')Analytics.adPrivacy();else if(action.startsWith('consent-')){Analytics.choose(action==='consent-accept'||(action==='consent-save'&&byId('analytics-consent').checked));byId('privacy-dialog').close();}else if(action==='signout'){await Community.signOut();location.href=new URL('index.html',rootURL).href;}
+ else if(action==='reply'){if(!Community.signedIn()){account();return;}const f=byId('comment-form');f.elements.parent_id.value=b.dataset.id;byId('reply-context').textContent='Replying to '+b.dataset.name;byId('reply-context').hidden=false;f.elements.body.focus();}
+ else if(action==='delete-comment'){if(confirm('Delete your comment?')){await Community.rpc('brief_community_delete_comment',{p_id:b.dataset.id});await comments();await accountData();}}
+ else if(action==='report-comment'){if(!Community.signedIn()){account();return;}const reason=prompt('What should the moderator check?');if(reason?.trim().length>=3){await Community.rpc('brief_community_report',{p_id:b.dataset.id,p_reason:reason.trim()});toast('Sent to the moderator.');}}
+ else if(action==='moderate'){await Community.rpc('brief_community_moderate',{p_id:b.dataset.id,p_status:b.dataset.status});await moderation();}
+ else if(action==='export-data')await downloadData();else if(action==='delete-profile'&&confirm('Delete your Brief comments, likes, saves and profile? This cannot be undone.')){await Community.rpc('brief_community_delete_profile');saved.clear();remoteSaves.clear();remember();await Community.signOut();location.href=new URL('index.html',rootURL).href;}
+ }catch(err){toast(err.message||'This action could not be completed. Please try again.');}});
+ document.querySelectorAll('[data-share-channel]').forEach(a=>a.addEventListener('click',()=>Analytics.event('share_option',{story_key:shareItem?.key||'',channel:a.dataset.shareChannel})));
+ document.querySelectorAll('[data-source-link]').forEach(a=>a.addEventListener('click',()=>Analytics.event('source_open',{story_key:storyKey||''})));
+ document.querySelectorAll('[data-sponsor-link]').forEach(a=>a.addEventListener('click',()=>Analytics.event('sponsor_click',{placement:'sponsor'})));
+ document.querySelectorAll('[data-read-mode]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-read-mode]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('[data-full-read]').forEach(x=>x.hidden=b.dataset.readMode==='quick');updateProgress();}));
+ let seconds=0,progress=0,readSent=false,readEventSent=false,nextReadAttempt=0,readAttempts=0;
+ function updateProgress(){if(!storyKey)return;const article=byId('article-content'),rect=article.getBoundingClientRect(),end=article.querySelector('.article-body').getBoundingClientRect().bottom;progress=Math.max(0,Math.min(1,(innerHeight-rect.top)/Math.max(1,end-rect.top)));const line=document.querySelector('.reading-progress');if(line)line.style.width=(progress*100)+'%';}
+ if(storyKey){addEventListener('scroll',updateProgress,{passive:true});updateProgress();setInterval(async()=>{if(document.visibilityState!=='visible'||!Analytics.allowed())return;seconds++;if(!readSent&&Date.now()>=nextReadAttempt&&readAttempts<3&&Core.qualifiedRead(seconds,progress,Analytics.allowed())){readSent=true;if(!readEventSent){Analytics.event('qualified_read',{story_key:storyKey,seconds,progress});readEventSent=true;}if(Community.enabled){try{let session;try{session=JSON.parse(sessionStorage.getItem('aieo-brief-reading-session')||'null');}catch{};const day=new Date().toISOString().slice(0,10);if(!session||session.day!==day){session={id:crypto.randomUUID(),day};sessionStorage.setItem('aieo-brief-reading-session',JSON.stringify(session));}await Community.rpc('brief_community_record_read',{p_story_key:storyKey,p_session_id:session.id,p_active_seconds:seconds,p_progress:progress});}catch{readSent=false;readAttempts++;nextReadAttempt=Date.now()+60000;}}}},1000);document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&seconds)Analytics.event('active_reading',{story_key:storyKey,seconds,progress});});}
+ async function authChanged(){document.querySelectorAll('[data-action="account"]').forEach(b=>{if(b.closest('#account-dialog'))return;b.textContent=Community.signedIn()?'Your account':'Sign in';});document.querySelectorAll('[data-action="signout"]').forEach(b=>b.hidden=!Community.signedIn());if(!Community.signedIn())remoteSaves.clear();try{await accountData();await comments();await moderation();}catch(err){toast(err.message);}refreshButtons();}
+ window.addEventListener('brief-auth',authChanged);window.addEventListener('brief-consent',e=>{if(!e.detail.analytics){seconds=0;readSent=false;readEventSent=false;readAttempts=0;nextReadAttempt=0;try{sessionStorage.removeItem('aieo-brief-reading-session');}catch{}}});
+ renderFeed();refreshButtons();savedList();comments();Community.init().then(async()=>{await authChanged();await loadMetrics();}).catch(err=>toast(err.message));
+})();

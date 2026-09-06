@@ -1,0 +1,46 @@
+name: Local evidence-bound editorial model
+description: Start the existing open-weight Qwen model on this runner.
+runs:
+  using: composite
+  steps:
+    - uses: actions/cache@v4
+      with:
+        path: .cache/models
+        key: brief-qwen3-4b-2f3b082b-v1
+    - uses: actions/cache@v4
+      with:
+        path: .llama.cpp
+        key: brief-llama-b10516-${{ runner.os }}-${{ runner.arch }}-v1
+    - shell: bash
+      run: |
+        set -euo pipefail
+        mkdir -p .cache/models
+        model=.cache/models/Qwen3-4B-Q4_K_M.gguf
+        if [[ ! -s "$model" ]]; then
+          curl --fail --location --retry 4 --output "$model.part" \
+            'https://huggingface.co/ggml-org/Qwen3-4B-GGUF/resolve/2f3b082b1356a6123f7ed71e65aea340da25d53c/Qwen3-4B-Q4_K_M.gguf?download=true'
+          mv "$model.part" "$model"
+        fi
+        echo "ab27b9bfa375a178d6cba48f3ad892b94b7739659dcc7aae8058ce0ffed6b328  $model" | sha256sum --check --status
+        if [[ ! -x .llama.cpp/build/bin/llama-server ]]; then
+          if [[ ! -d .llama.cpp ]]; then
+            git clone --depth 1 --branch b10516 https://github.com/ggml-org/llama.cpp.git .llama.cpp
+          fi
+          cmake -S .llama.cpp -B .llama.cpp/build -DCMAKE_BUILD_TYPE=Release \
+            -DLLAMA_BUILD_TESTS=OFF -DLLAMA_BUILD_EXAMPLES=OFF
+          cmake --build .llama.cpp/build -j 2 --target llama-server
+        fi
+        nohup .llama.cpp/build/bin/llama-server -m "$model" \
+          --alias aieo-editorial --host 127.0.0.1 --port 8080 \
+          --ctx-size 12288 --threads 2 --parallel 1 > llama-server.log 2>&1 &
+        echo $! > llama-server.pid
+        for attempt in $(seq 1 90); do
+          if curl --silent --fail http://127.0.0.1:8080/health >/dev/null; then exit 0; fi
+          if ! kill -0 "$(cat llama-server.pid)" 2>/dev/null; then
+            echo 'Local model could not start. Existing articles are preserved.'
+            exit 1
+          fi
+          sleep 2
+        done
+        echo 'Local model startup timed out.'
+        exit 1

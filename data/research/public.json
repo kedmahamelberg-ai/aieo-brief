@@ -1,0 +1,191 @@
+{
+  "schema_version": "aieo_research_public_v1",
+  "period_start": "2026-08-30",
+  "period_end": "2026-09-05",
+  "generated_at": "2026-09-06",
+  "papers": [
+    {
+      "key": "paper:d1167db1aea49c360411dc23",
+      "doi": "",
+      "arxiv_id": "2609.04199v1",
+      "original_headline": "Compile by Training: Turning Natural-Language Specifications into Local Neural Functions",
+      "url": "https://arxiv.org/abs/2609.04199v1",
+      "date": "2026-09-03",
+      "authors": [
+        "Yuntian Deng",
+        "Pengyu Nie",
+        "Stuart Shieber"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "9590cd5bc6b0140e87f66e38cf839955477de342f9bdad62f05a6b8e2465f53f",
+      "headline": "Researchers train small AI functions to handle repeat tasks locally",
+      "deck": "An arXiv preprint describes turning written instructions into reusable tools, with more preparation time up front.",
+      "what_happened": "The researchers report a method that uses larger models to create training examples for a smaller system. Once trained, the resulting function can run without calling those larger models.",
+      "why_it_matters": "This could reduce repeated dependence on a remote provider for a narrow task, according to the proposed approach.",
+      "body_paragraphs": [
+        "The team tested the method on a difficult benchmark subset and reports 83.6% semantic accuracy. It also describes demonstrations involving websites, an avatar and translation.",
+        "That result came with longer setup time than the faster compiler used for comparison. The trade-off is preparation now for a function intended to be reused later."
+      ],
+      "limitation": "This is a preprint summary based on its abstract. One benchmark subset and demonstrations do not establish reliable performance across all real tasks.",
+      "claim_status": "study",
+      "has_editorial": true,
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "authoring": "source_reading_for_this_update"
+    },
+    {
+      "key": "paper:584f8201da9799aff3393d1a",
+      "doi": "",
+      "arxiv_id": "2609.04198v1",
+      "original_headline": "Clean Engineering, Unstable Measurement: A Preregistered Reliability Failure of Black-Box LLM Observers on Shared Endpoints",
+      "url": "https://arxiv.org/abs/2609.04198v1",
+      "date": "2026-09-03",
+      "authors": [
+        "Haoyaun Zhu",
+        "Jie Zhang"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "f0c771907c8da07adceb88481cce6e39c26ed3f9e1e4568ab0da1df1cf32ecf8",
+      "headline": "AI judges gave inconsistent rankings in tests of shared model services",
+      "deck": "A preprint warns that a fixed model name may not guarantee stable results when AI is used to evaluate other AI.",
+      "what_happened": "The authors tested whether repeated requests to model services produced consistent rankings. Their reported results fell below reliability thresholds they had set before collecting the data.",
+      "why_it_matters": "If an evaluator changes its judgments, a score can become difficult to interpret as a change in the system being tested.",
+      "body_paragraphs": [
+        "The campaigns examined repeated requests and later replays. The authors report that several attempted adjustments did not resolve the inconsistency in the settings tested.",
+        "They propose testing the reliability of the judging system before relying on it as an evaluation instrument."
+      ],
+      "limitation": "The abstract concerns external behaviour on shared infrastructure. It does not establish that every model or evaluation method is unreliable. This is a preprint.",
+      "claim_status": "study",
+      "has_editorial": true,
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "authoring": "source_reading_for_this_update"
+    },
+    {
+      "key": "paper:6d844945c837c7a33a3006cd",
+      "doi": "",
+      "arxiv_id": "2609.04197v1",
+      "original_headline": "ESPO: Error-Structured Prompt Optimization via Diagnose, Diversify, and Stabilize",
+      "url": "https://arxiv.org/abs/2609.04197v1",
+      "date": "2026-09-03",
+      "authors": [
+        "Lihao Liu",
+        "Peng Tang",
+        "Kunwar Yashraj Singh",
+        "Shabnam Ghadar"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "7cca0409f2f150e09d5e3138df2e6e48593744f776d811e6cd6cba0b2397ae5a",
+      "headline": "Shorter AI instructions performed better in a new prompt-design study",
+      "deck": "The preprint reports a method that diagnoses mistakes before choosing which instructions to keep.",
+      "what_happened": "The authors propose ESPO, a process for improving model instructions by grouping errors, trying different revisions and checking which choices remain stable. They compare it with an existing method across seven language-task benchmarks.",
+      "why_it_matters": "The study addresses a practical problem: adding more instructions can make a prompt longer without making answers better.",
+      "body_paragraphs": [
+        "The reported average accuracy is 74.67%, compared with 70.91% for the comparison method. The resulting prompts were also shorter.",
+        "Additional tests used other models. The authors report benefits across those tests while showing that one part of their method could hurt results when used without its selection step."
+      ],
+      "limitation": "This summary uses the preprint abstract. Benchmark improvements do not guarantee the same gains in a particular workplace or application.",
+      "claim_status": "study",
+      "has_editorial": true,
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "authoring": "source_reading_for_this_update"
+    },
+    {
+      "key": "paper:731698bc04326d5fc3e76cd1",
+      "doi": "",
+      "arxiv_id": "2609.04194v1",
+      "original_headline": "Legibility is Not Interpretability: Comparing Judged and Actual Importance in Chain-Of-Thought Reasoning",
+      "url": "https://arxiv.org/abs/2609.04194v1",
+      "date": "2026-09-03",
+      "authors": [
+        "Kevin Du",
+        "Alexander Hoyle",
+        "Laura Ruis",
+        "Acyr Locatelli"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "7d08b0322b43d218760478dc82a46ccc493d5515f96803ed37de3699e1a89179",
+      "headline": "Clear-looking AI explanations may not reveal which reasoning steps actually matter",
+      "deck": "A preprint compares how important a step looks with how much it changes the model’s chance of reaching a correct answer.",
+      "what_happened": "The researchers estimated the contribution of individual reasoning steps and tested whether AI judges could recognise the important ones. They report that stronger judges did better than a simple baseline but remained well below the comparison ceiling.",
+      "why_it_matters": "An explanation that reads convincingly can still provide an incomplete picture of the process behind an answer.",
+      "body_paragraphs": [
+        "Training a model to assess individual steps improved results for incorrect answers, according to the abstract. Its judgments remained less informative for correct responses.",
+        "The authors caution against treating readable reasoning text as a complete explanation of model behaviour."
+      ],
+      "limitation": "The evidence here is the preprint abstract. The findings concern the study’s tasks and definition of step importance, not every kind of AI explanation.",
+      "claim_status": "study",
+      "has_editorial": true,
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "authoring": "source_reading_for_this_update"
+    },
+    {
+      "key": "paper:3dbb5af83842291f863af301",
+      "doi": "10.1073/pnas.2612145123",
+      "arxiv_id": "",
+      "original_headline": "Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT",
+      "url": "https://doi.org/10.1073/pnas.2612145123",
+      "date": "2026-09-01",
+      "authors": [
+        "Vishal V. Batchu",
+        "Michelangelo Conserva",
+        "Alex Wilson",
+        "Anna M. Michalak",
+        "Varun Gulshan",
+        "Philip G. Brodrick",
+        "Andrew K. Thorpe",
+        "Christopher V. Arsdale"
+      ],
+      "publisher": "PNAS",
+      "source": "pnas",
+      "research_label": "Journal article",
+      "evidence_scope": "abstract",
+      "access": "Open-license record",
+      "license_urls": [
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "metadata_sha256": "418f7fc1950ee43810da0367691812c727b19edbf8d68d07115525f4bae4097b",
+      "headline": "AI finds additional methane plumes in tests of satellite measurements",
+      "deck": "A PNAS study reports a model for locating emissions in EMIT data, including some sources missed by earlier approaches.",
+      "what_happened": "The researchers trained a model to recognise methane signals using simulated plumes added to satellite measurements. In a real-data benchmark, it recovered 84% of previously hand-labelled plume complexes.",
+      "why_it_matters": "The work could help process large amounts of satellite data and identify emission sources that merit further checking.",
+      "body_paragraphs": [
+        "The authors compared the model with existing approaches and checked results against additional observations, including airborne measurements and controlled releases.",
+        "They also describe using model-quality measures to reduce false detections. Finding a plausible plume is part of the monitoring process; verification still matters."
+      ],
+      "limitation": "This summary is based on the journal article’s abstract. Detection performance does not show that emissions were subsequently reduced.",
+      "claim_status": "study",
+      "has_editorial": true,
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "authoring": "source_reading_for_this_update"
+    }
+  ]
+}

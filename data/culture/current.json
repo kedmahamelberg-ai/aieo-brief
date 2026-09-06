@@ -1,0 +1,152 @@
+{
+  "schema_version": "aieo_daily_culture_v1",
+  "latest_selection_date": "2026-09-06",
+  "generated_at": "2026-09-06T11:09:26.008128+00:00",
+  "editions": {
+    "2026-09-06": [
+      "culture:34cf543807882a862e50d98d",
+      "culture:4031524efe0d6b7aa1fbb023",
+      "culture:5b096804e8a8e1eaa3521c6a",
+      "culture:91b920d2d07bdb73bc2a7b40",
+      "culture:fd35f974e29125d16e947295"
+    ]
+  },
+  "items": [
+    {
+      "key": "culture:34cf543807882a862e50d98d",
+      "culture_type": "illustration",
+      "headline": "Yvette Guilbert",
+      "creator": "Henri de Toulouse-Lautrec (French, 1864–1901)",
+      "source_url": "https://clevelandart.org/art/1950.455",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "basis": "Cleveland Museum of Art open-access record; CC0 image. All named creators died before 1936.",
+        "changes": "Image displayed at a reduced size without cropping.",
+        "credit": "Gift of Leonard C. Hanna Jr."
+      },
+      "work_date": "c. 1894",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1950.455/1950.455_web.jpg",
+      "alt": "Yvette Guilbert by Henri de Toulouse-Lautrec (French, 1864–1901)",
+      "deck": "A drawing from the museum’s open collection. Take a closer look, then explore the work and its artist.",
+      "image_path": "assets/culture/34cf543807882a862e50d98d.jpg",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06"
+    },
+    {
+      "key": "culture:4031524efe0d6b7aa1fbb023",
+      "culture_type": "poetry",
+      "headline": "Laughing Song",
+      "creator": "William Blake",
+      "source_url": "https://poetrydb.org/title/Laughing%20Song:abs/lines.text",
+      "publisher": "PoetryDB",
+      "rights": {
+        "label": "Public-domain poem",
+        "url": "https://poetrydb.org/index.html",
+        "basis": "Original English text; author died 1827.",
+        "changes": "Poem text and line breaks retained as supplied by PoetryDB."
+      },
+      "work_date": "Historical poem",
+      "poem_lines": [
+        "When the green woods laugh with the voice of joy,",
+        "And the dimpling stream runs laughing by;",
+        "When the air does laugh with our merry wit,",
+        "And the green hill laughs with the noise of it;",
+        "",
+        "when the meadows laugh with lively green,",
+        "And the grasshopper laughs in the merry scene,",
+        "When Mary and Susan and Emily",
+        "With their sweet round mouths sing \"Ha, ha he!\"",
+        "",
+        "When the painted birds laugh in the shade,",
+        "Where our table with cherries and nuts is spread:",
+        "Come live, and be merry, and join with me,",
+        "To sing the sweet chorus of \"Ha, ha, he!\""
+      ],
+      "excerpt": "When the green woods laugh with the voice of joy,\nAnd the dimpling stream runs laughing by;\nWhen the air does laugh with our merry wit,\nAnd the green hill laughs with the noise of it;\n\nwhen the meadows laugh with lively green,\nAnd the grasshopper laughs in the merry scene,\nWhen Mary and Susan and Emily\nWith their sweet round mouths sing \"Ha, ha he!\"\n\nWhen the painted birds laugh in the shade,\nWhere our table with cherries and nuts is spread:\nCome live, and be merry, and join with me,\nTo sing the sweet chorus of \"Ha, ha, he!\"",
+      "deck": "A poem by William Blake. Read it at your own pace.",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06"
+    },
+    {
+      "key": "culture:5b096804e8a8e1eaa3521c6a",
+      "culture_type": "text",
+      "headline": "Walden · a short reading",
+      "creator": "Henry David Thoreau",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "label": "Public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205",
+        "basis": "Original English edition; published 1854; author died 1862.",
+        "changes": "One complete paragraph selected; paragraph whitespace normalised."
+      },
+      "work_date": "1854",
+      "excerpt": "Meanwhile also came the chickadees in flocks, which, picking up the crumbs the squirrels had dropped, flew to the nearest twig, and, placing them under their claws, hammered away at them with their little bills, as if it were an insect in the bark, till they were sufficiently reduced for their slender throats. A little flock of these tit-mice came daily to pick a dinner out of my wood-pile, or the crumbs at my door, with faint flitting lisping notes, like the tinkling of icicles in the grass, or else with sprightly _day day day_, or more rarely, in spring-like days, a wiry summery _phe-be_ from the wood-side. They were so familiar that at length one alighted on an armful of wood which I was carrying in, and pecked at the sticks without fear. I once had a sparrow alight upon my shoulder for a moment while I was hoeing in a village garden, and I felt that I was more distinguished by that circumstance than I should have been by any epaulet I could have worn. The squirrels also grew at last to be quite familiar, and occasionally stepped upon my shoe, when that was the nearest way.",
+      "deck": "A short passage from Walden (1854), by Henry David Thoreau.",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06"
+    },
+    {
+      "key": "culture:91b920d2d07bdb73bc2a7b40",
+      "culture_type": "quote",
+      "headline": "The squirrels also grew at last to be quite familiar, and occasionally stepped upon my shoe, when that was the nearest way.",
+      "creator": "Henry David Thoreau",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "label": "Public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205",
+        "basis": "Original English edition; published 1854; author died 1862.",
+        "changes": "A complete sentence quoted from the linked text."
+      },
+      "work_date": "1854",
+      "excerpt": "The squirrels also grew at last to be quite familiar, and occasionally stepped upon my shoe, when that was the nearest way.",
+      "quote_context": "Meanwhile also came the chickadees in flocks, which, picking up the crumbs the squirrels had dropped, flew to the nearest twig, and, placing them under their claws, hammered away at them with their little bills, as if it were an insect in the bark, till they were sufficiently reduced for their slender throats. A little flock of these tit-mice came daily to pick a dinner out of my wood-pile, or the crumbs at my door, with faint flitting lisping notes, like the tinkling of icicles in the grass, or else with sprightly _day day day_, or more rarely, in spring-like days, a wiry summery _phe-be_ from the wood-side. They were so familiar that at length one alighted on an armful of wood which I was carrying in, and pecked at the sticks without fear. I once had a sparrow alight upon my shoulder for a moment while I was hoeing in a village garden, and I felt that I was more distinguished by that circumstance than I should have been by any epaulet I could have worn. The squirrels also grew at last to be quite familiar, and occasionally stepped upon my shoe, when that was the nearest way.",
+      "deck": "From Walden (1854).",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06"
+    },
+    {
+      "key": "culture:fd35f974e29125d16e947295",
+      "culture_type": "music",
+      "headline": "01 Good Light Shine (vocals by Cgee)",
+      "creator": "Jess Bottles and Cgee",
+      "source_url": "https://archive.org/details/GoodLightShine",
+      "publisher": "Internet Archive",
+      "rights": {
+        "label": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "basis": "Source-declared licence",
+        "changes": "Original audio, without edits. Credit retained from the artist’s source record."
+      },
+      "work_date": "2011",
+      "media_url": "https://archive.org/download/GoodLightShine/01GoodLightShinebyCgeeJess.mp3",
+      "duration_seconds": 321,
+      "album": "Good Light Shine",
+      "credits": [],
+      "deck": "Music by Jess Bottles and Cgee. 5:21 to listen.",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06"
+    }
+  ],
+  "source_status": [
+    {
+      "source": "illustration",
+      "status": "already_selected"
+    },
+    {
+      "source": "poetry",
+      "status": "already_selected"
+    },
+    {
+      "source": "reading_and_quote",
+      "status": "already_selected"
+    },
+    {
+      "source": "music",
+      "status": "ok"
+    }
+  ]
+}

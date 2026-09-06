@@ -1,179 +1,105 @@
-name: Generate AIEO Brief Editorial Drafts
-
+name: Update Brief News and Research
 on:
+  schedule:
+    - cron: '15 12 * * *'
   workflow_dispatch:
     inputs:
-      limit:
-        description: "Number of eligible current stories to generate. Use 0 for all that fit inside the runtime budget."
-        required: true
-        default: "5"
-        type: string
       dry_run:
-        description: "Inspect eligibility without loading the local model or writing drafts"
-        required: true
-        default: true
+        description: Check pending work without starting the model
         type: boolean
-      force:
-        description: "Regenerate even when the evidence fingerprint is unchanged"
-        required: true
         default: false
-        type: boolean
-      max_runtime_minutes:
-        description: "Soft stop for generation so the workflow can finish cleanly"
-        required: true
-        default: "105"
+      news_minutes:
+        description: Maximum minutes for news this pass (1 to 105)
         type: string
-      strict:
-        description: "Fail the whole batch if any story is quarantined"
-        required: true
-        default: false
-        type: boolean
-
+        default: '45'
+      research_minutes:
+        description: Maximum minutes for research this pass (1 to 60)
+        type: string
+        default: '15'
 permissions:
-  contents: read
-
+  contents: write
 concurrency:
-  group: aieo-brief-editorial-generation
+  group: brief-generation
   cancel-in-progress: false
-
-env:
-  LLAMA_CPP_TAG: b10516
-  BRIEF_EDITORIAL_MODEL: Qwen3-4B-Q4_K_M
-  BRIEF_EDITORIAL_MODEL_REVISION: ggml-org/Qwen3-4B-GGUF:Q4_K_M
-  BRIEF_LLAMA_CPP_VERSION: b10516
-  MODEL_FILE: .cache/models/Qwen3-4B-Q4_K_M.gguf
-  MODEL_URL: https://huggingface.co/ggml-org/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf?download=true
-
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 125
-
+    timeout-minutes: 200
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
+      BRIEF_EDITORIAL_MODEL_REVISION: ggml-org/Qwen3-4B-GGUF@2f3b082b1356a6123f7ed71e65aea340da25d53c
+      BRIEF_LOCAL_LLM_URL: http://127.0.0.1:8080
     steps:
       - uses: actions/checkout@v6
-
+        with:
+          ref: main
       - uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: '3.12'
           cache: pip
-
       - run: python -m pip install -r requirements.txt
-
-      - name: Validate Supabase secrets
+      - name: Check release and pending news before loading the model
+        id: news
+        continue-on-error: true
+        run: python scripts/generate_editorial_stories.py --dry-run
+      - name: Check research published in the last seven days
+        id: collect
+        continue-on-error: true
+        run: python scripts/collect_research.py
+      - name: Check pending research
+        id: research
+        if: steps.collect.outcome == 'success'
+        run: python scripts/generate_research_summaries.py --dry-run
+      - name: Start the local model only when there is new evidence
+        id: model
+        if: inputs.dry_run != true && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
+        uses: ./.github/actions/local-editorial-model
+      - name: Write and save news one story at a time
+        id: write_news
+        if: inputs.dry_run != true && steps.news.outcome == 'success'
+        continue-on-error: true
         env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-        run: |
-          test -n "$SUPABASE_URL"
-          test -n "$SUPABASE_SECRET_KEY"
-
-      - name: Cache local editorial model
-        if: ${{ inputs.dry_run == false }}
-        uses: actions/cache@v4
-        with:
-          path: .cache/models
-          key: qwen3-4b-q4-k-m-v1
-
-      - name: Download open-weight model
-        if: ${{ inputs.dry_run == false }}
+          NEWS_MINUTES: ${{ inputs.news_minutes || '45' }}
+        run: python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES"
+      - name: Write research with its study limits
+        id: write_research
+        if: inputs.dry_run != true && steps.collect.outcome == 'success'
+        continue-on-error: true
+        env:
+          RESEARCH_MINUTES: ${{ inputs.research_minutes || '15' }}
+        run: python scripts/generate_research_summaries.py --max-runtime-minutes "$RESEARCH_MINUTES"
+      - name: Retain public summaries and resumable progress
+        if: always() && inputs.dry_run != true
         shell: bash
         run: |
           set -euo pipefail
-          mkdir -p "$(dirname "$MODEL_FILE")"
-          if [[ ! -s "$MODEL_FILE" ]]; then
-            curl --fail --location --retry 5 --retry-delay 5 \
-              --output "$MODEL_FILE" \
-              "$MODEL_URL"
-          fi
-          ls -lh "$MODEL_FILE"
-
-      - name: Build pinned llama.cpp server
-        if: ${{ inputs.dry_run == false }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          git clone --depth 1 --branch "$LLAMA_CPP_TAG" \
-            https://github.com/ggml-org/llama.cpp.git .llama.cpp
-          cmake -S .llama.cpp -B .llama.cpp/build \
-            -DCMAKE_BUILD_TYPE=Release \
-            -DLLAMA_BUILD_TESTS=OFF \
-            -DLLAMA_BUILD_EXAMPLES=OFF
-          cmake --build .llama.cpp/build --config Release -j 2 --target llama-server
-          .llama.cpp/build/bin/llama-server --version
-
-      - name: Start local editorial model
-        if: ${{ inputs.dry_run == false }}
-        shell: bash
-        run: |
-          set -euo pipefail
-          nohup .llama.cpp/build/bin/llama-server \
-            -m "$MODEL_FILE" \
-            --alias aieo-editorial \
-            --host 127.0.0.1 \
-            --port 8080 \
-            --ctx-size 8192 \
-            --threads 2 \
-            --parallel 1 \
-            > llama-server.log 2>&1 &
-          echo $! > llama-server.pid
-
-          for attempt in $(seq 1 90); do
-            if curl --silent --fail http://127.0.0.1:8080/health >/dev/null; then
-              echo "Local Qwen editorial model is ready."
-              exit 0
-            fi
-            if ! kill -0 "$(cat llama-server.pid)" 2>/dev/null; then
-              echo "llama-server stopped unexpectedly."
-              cat llama-server.log
-              exit 1
-            fi
-            sleep 2
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for file in data/editorial/retry-state.json data/editorial/status.json data/research/public.json data/research/collection-status.json data/research/generation-status.json data/research/retry-state.json; do
+            if [[ -f "$file" ]]; then git add "$file"; fi
           done
-
-          echo "Local model did not become ready in time."
-          cat llama-server.log
-          exit 1
-
-      - name: Generate evidence-bounded editorial drafts
-        env:
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          BRIEF_LOCAL_LLM_URL: http://127.0.0.1:8080
-          OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
-        shell: bash
-        run: |
-          set -euo pipefail
-          args=(
-            --limit "${{ inputs.limit }}"
-            --max-runtime-minutes "${{ inputs.max_runtime_minutes }}"
-          )
-          if [[ "${{ inputs.dry_run }}" == "true" ]]; then args+=(--dry-run); fi
-          if [[ "${{ inputs.force }}" == "true" ]]; then args+=(--force); fi
-          if [[ "${{ inputs.strict }}" == "true" ]]; then args+=(--strict); fi
-          python scripts/generate_editorial_stories.py "${args[@]}"
-
-      - name: Upload quarantined editorial failures
-        if: ${{ always() }}
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update Brief source summaries and progress'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Retain private research provenance briefly
+        if: always() && inputs.dry_run != true && github.event.repository.private == true
         uses: actions/upload-artifact@v4
         with:
-          name: aieo-editorial-failures-${{ github.run_id }}
-          path: editorial-generation-failures.json
+          name: private-research-validation-${{ github.run_id }}
+          path: data/research/private/validation.json
           if-no-files-found: ignore
           retention-days: 14
-
-      - name: Upload local-model log
-        if: ${{ always() && inputs.dry_run == false }}
-        uses: actions/upload-artifact@v4
-        with:
-          name: aieo-local-editorial-model-log-${{ github.run_id }}
-          path: llama-server.log
-          if-no-files-found: ignore
-          retention-days: 7
-
       - name: Stop local model
-        if: ${{ always() && inputs.dry_run == false }}
+        if: always()
         shell: bash
         run: |
-          if [[ -f llama-server.pid ]]; then
-            kill "$(cat llama-server.pid)" 2>/dev/null || true
-          fi
+          if [[ -f llama-server.pid ]]; then kill "$(cat llama-server.pid)" 2>/dev/null || true; fi
+      - name: Report incomplete automatic drafts
+        if: always() && (steps.news.outcome == 'failure' || steps.write_news.outcome == 'failure' || steps.write_research.outcome == 'failure' || steps.collect.outcome == 'failure')
+        run: |
+          echo '::error::Some sources or drafts need another automatic pass. Saved valid summaries and original source links are preserved.'
+          exit 1

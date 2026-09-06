@@ -1,0 +1,22 @@
+{
+  "schema_version": "aieo_research_inputs_v1",
+  "period_start": "2026-08-30",
+  "period_end": "2026-09-05",
+  "providers": [
+    {
+      "source": "arxiv",
+      "status": "ok",
+      "count": 4
+    },
+    {
+      "source": "pnas",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "source": "ssrn",
+      "status": "ok",
+      "count": 0
+    }
+  ]
+}

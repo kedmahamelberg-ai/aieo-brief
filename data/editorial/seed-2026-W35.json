@@ -1,0 +1,142 @@
+{
+  "fb7e6caf-1500-40aa-810d-c1702c407904": {
+    "event_id": "fb7e6caf-1500-40aa-810d-c1702c407904",
+    "editorial_headline": "Thomson Reuters builds a legal AI model with professional oversight",
+    "editorial_deck": "The company is putting its own model into document review, while keeping other models available to legal teams.",
+    "what_happened": "Thomson Reuters has introduced Thomson, a model trained for legal work. Its first role is reviewing large collections of documents inside CoCounsel Legal. Administrators can choose another model when needed.",
+    "why_it_matters": "The proposal combines specialist information with human judgment about training and evaluation. The company says this approach can make legal AI less costly to develop and run.",
+    "body_markdown": "The team adapted an existing open model using legal material and feedback from professionals. Subject specialists helped define tasks and assess answers, including whether the cited material supported them.\n\nCompany tests suggest competitive performance in legal tasks, especially with access to its own content. Wider outside testing is still planned. Thomson Reuters says client information is excluded from model training.",
+    "for_humans": "Legal teams gain high-volume document review, administrators retain model choice, and professional experts direct model training and evaluation.",
+    "for_ai": "Thomson gains legal knowledge, tool use and deployment within CoCounsel; internal tests claim competitive domain performance.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "1e281f647e18a41c98ccc6710ad709ccafb8a9679fb4542c220e97a61d85445d",
+      "claim_status": "company_claim",
+      "limitation": "Company benchmarks have not yet had extensive independent validation. A product launch does not establish how every legal team will benefit.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  },
+  "9fe18eeb-fd47-4eb4-ab2a-c00b61992673": {
+    "event_id": "9fe18eeb-fd47-4eb4-ab2a-c00b61992673",
+    "editorial_headline": "Businesses build controls around AI to switch models and manage costs",
+    "editorial_deck": "A software layer called a harness lets a team direct its AI tools without tying every workflow to one provider.",
+    "what_happened": "The Wall Street Journal describes how businesses use software around AI models to supply context, manage tasks and choose which model handles a request. Moody’s has built this layer for its own tools.",
+    "why_it_matters": "Control over this software can help a company protect workflows and change providers. Routing tasks between models also gives it a way to manage spending.",
+    "body_markdown": "There is a trade-off between building this layer internally and using one supplied by a vendor. An internal system can keep more control within the business, but a vendor’s system can spare the team from rebuilding common infrastructure.\n\nThe article presents both approaches. It describes Moody’s ability to change the underlying model and Bristol-Myers Squibb’s decision to use Claude as its shared foundation.",
+    "for_humans": "In-house harnesses let teams direct models, protect workflows, switch providers and reduce dependence and token costs.",
+    "for_ai": "Harnesses give agents memory, business context, code execution and workflow reach; routers and controls limit which models act and how much they spend.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "cfef799918632259913494b785cf7b680b4e4d605ed062788e4309206290969e",
+      "claim_status": "reporting",
+      "limitation": "These are reported company choices and explanations, not a controlled comparison of costs or reliability.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  },
+  "6c231012-a07f-4152-b560-782d82f10ec6": {
+    "event_id": "6c231012-a07f-4152-b560-782d82f10ec6",
+    "editorial_headline": "Teach young people to question AI while learning to use it",
+    "editorial_deck": "A magazine project gives children a voice in the debate about AI, alongside practical risks that education needs to address.",
+    "what_happened": "Courrier international reports on an MIT Technology Review issue developed with a magazine for younger readers. The project asked children and teenagers how they experience AI and what they want from it.",
+    "why_it_matters": "The coverage argues for teaching judgment as well as technical use. It identifies unsuitable material, mistaken answers and reliance on chatbots as reasons to guide young users.",
+    "body_markdown": "The young people described a range of thoughtful reactions. The project used everyday situations, including creative work and personal messages, to explore where they felt comfortable using AI.\n\nThe editorial case is for helping children navigate the technology while keeping their own agency. Their views are part of that discussion, alongside adults’ concerns.",
+    "for_humans": "The source advocates AI literacy and young people retaining agency, while identifying inappropriate content, reliance instead of judgment and misplaced trust in wrong answers as concrete risks.",
+    "for_ai": "It describes expanding access to tools that can speak, create and act for young users, alongside unreliable answers as a limitation.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "80005ce164c1843d77d64633e6cad253449d3a6031bcc9eedff3d9d9c77313d2",
+      "claim_status": "analysis",
+      "limitation": "This is reported discussion and an educational argument. It does not measure the effects of a particular teaching programme.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  },
+  "e1866f35-a7c0-4ec3-940f-fe2dd155a512": {
+    "event_id": "e1866f35-a7c0-4ec3-940f-fe2dd155a512",
+    "editorial_headline": "Musicians in a Canadian study describe pressure from AI and seek stronger rights",
+    "editorial_deck": "The widely quoted 87% refers to the 142 respondents who raised AI, within a survey of 263 working musicians.",
+    "what_happened": "Billboard Canada reports that most musicians who discussed AI in a University of Alberta survey viewed it negatively. They described concerns about income, the value of their work and use of creative material without permission.",
+    "why_it_matters": "The article also describes efforts to secure consent, credit and compensation. These initiatives seek to give creators more control as AI music spreads.",
+    "body_markdown": "Reports of synthetic songs and copied musical identities sit alongside the survey findings. These examples explain why some creators see AI as a practical threat to their work and reputation.\n\nRights organisations are exploring ways to register partly AI-generated music and track authorised uses. The article presents these responses alongside the harms and concerns musicians describe.",
+    "for_humans": "Musicians report devaluation, livelihood pressures and unconsented use of identity or recordings. The same article describes consent, attribution, compensation and registration initiatives intended to restore creators’ agency.",
+    "for_ai": "AI music and training resources spread, while consent and rights-management mechanisms constrain authorized use and ongoing legal action seeks further limits.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "62ff7dda567d54e43fd30b6b4eaee81e3a7d27b61ef3579a97f8571364ccb78d",
+      "claim_status": "study",
+      "limitation": "The percentage describes a subset of respondents, not all Canadian musicians. Proposed protections are not proof that the underlying problems are resolved.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  },
+  "bc5adac5-8703-4c42-9b43-08af379576c7": {
+    "event_id": "bc5adac5-8703-4c42-9b43-08af379576c7",
+    "editorial_headline": "Beijing exhibitors show robots designed to make everyday tasks easier",
+    "editorial_deck": "Demonstrations range from screens that adjust to a user’s posture to tools for translation and research.",
+    "what_happened": "At the HICOOL summit, Beijing AI companies presented devices and services for offices, homes and research teams. A desktop robot could follow a user’s position and respond to gestures.",
+    "why_it_matters": "The demonstrations connect AI capabilities to specific uses, such as more comfortable computer work and assistance with research. They also show companies seeking routes from development to wider sales.",
+    "body_markdown": "Companion-robot exhibitors described systems intended to respond to social cues rather than speak constantly. Other displays included interpretation headphones and a scientific research agent.\n\nThe report places these products within Haidian’s network of universities, suppliers, funding and testing opportunities. Some uses are demonstrations today; others, including possible operating-room uses, are plans.",
+    "for_humans": "The report identifies posture-adapting screens, gesture control, translation, research assistance and access to model platforms and computing resources as specific benefits.",
+    "for_ai": "Robots gain social-cue perception, proactive interaction and physical reach; agents perform research tasks and move toward wider commercialization.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "7155212503c4f83cdabe87aaf89e3ab84750654e22d5dd426e4db47b33773bad",
+      "claim_status": "company_claim",
+      "limitation": "An exhibition and company explanations do not establish long-term usefulness, safety or effectiveness in every setting.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  },
+  "4a3b473a-414c-4c6f-8693-da501c118d13": {
+    "event_id": "4a3b473a-414c-4c6f-8693-da501c118d13",
+    "editorial_headline": "AI-linked profits lift technology shares while many other stocks fall",
+    "editorial_deck": "Nvidia and Salesforce led gains after strong results, but the market’s rise was uneven.",
+    "what_happened": "Associated Press reporting carried by The Globe and Mail describes a rise in major US stock indexes after technology companies reported stronger-than-expected results. Nvidia and Salesforce were prominent gainers.",
+    "why_it_matters": "The figures support a picture of strong demand for some AI businesses. They do not show that those gains were shared by everyone in the economy.",
+    "body_markdown": "The companies linked their performance and outlook to demand for AI products. Salesforce also expanded its work with Anthropic, while investors reassessed earlier concerns about competition.\n\nElsewhere, many stocks fell. Retailers and other businesses faced pressures including prices and consumer confidence, which complicate any claim that an AI-led market rise benefits all groups.",
+    "for_humans": "The stored closing-market report does not state an AI-linked change in human access, capability, rights, control or livelihoods. General inflation, retail pressure and non-AI labor-market indicators are not assigned to AI.",
+    "for_ai": "The report describes higher AI-chip demand, AI-related revenue and expanded model integration at Nvidia and Salesforce. These are operator-side expansion claims and business results, with market uncertainty retained as context.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "2d63fad1a4a56a9f5ce8579166d745de7dafbb04a9a9eed43d6c52e29683b6de",
+      "claim_status": "reporting",
+      "limitation": "Share prices and company forecasts are market signals. They do not establish broader improvements in employment, income or public welfare.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  },
+  "c4dbc459-149a-495f-8ba4-008a8058849f": {
+    "event_id": "c4dbc459-149a-495f-8ba4-008a8058849f",
+    "editorial_headline": "Radisson says its AI price matching removes the need for guest claims",
+    "editorial_deck": "The hotel group’s booking system checks eligible lower rates and applies a match automatically.",
+    "what_happened": "Radisson Hotel Group has introduced AI-supported price matching for direct bookings. Its announcement says the system identifies qualifying lower rates on outside platforms and matches them without a separate guest claim.",
+    "why_it_matters": "The company describes a simpler booking process for guests and less manual claim handling for staff. The change also supports its aim of attracting more direct bookings.",
+    "body_markdown": "Traditional guarantees often require a guest to find a lower price and submit proof. Radisson says the new process checks and applies qualifying matches during the booking journey.\n\nThe announcement says the feature covers its properties and a range of large booking platforms. Eligibility still matters: the promise concerns qualifying publicly available rates.",
+    "for_humans": "Guests obtain eligible lower rates without manual claims; hotel staff avoid handling claims and gain pricing visibility.",
+    "for_ai": "The system automatically detects, verifies and applies price matches across the hotel group's properties and booking channels.",
+    "publication_status": "preview",
+    "evidence_basis_summary": {
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "source_release_sha256": "2b1176924c47e1e860de718bb61d4fdb04d9831d5e230fd9153646e5e6b631eb",
+      "axes_sha256": "e683a9f89ccaa5faf768d38a3afce943a15a27b703e6944846c190d424776db9",
+      "claim_status": "company_claim",
+      "limitation": "The source reports the company’s launch and stated benefits. It does not provide an independent test of every booking or rate.",
+      "authoring": "source_reading_for_this_update",
+      "evidence_scope": "complete_sources_supplied_by_owner"
+    }
+  }
+}

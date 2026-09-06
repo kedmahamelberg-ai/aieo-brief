@@ -1,164 +1,25 @@
-{% extends "base.html" %}
-{% block title %}{{ story.headline }} | AIEO Brief{% endblock %}
-{% block description %}{{ story.deck or story.what_happened }}{% endblock %}
+{% extends 'base.html' %}{% from 'components.html' import actions,ad with context %}
+{% block title %}{{ story.headline }} | The Brief{% endblock %}{% block description %}{{ story.deck }}{% endblock %}
 {% block content %}
-<main id="main-content" class="story-page">
-  <a class="back-link" href="/">← Back to the Brief</a>
-
-  <div class="story-layout">
-    <article>
-      <div class="story-kicker {{ story.relationship.class }}">
-        <span>{{ story.relationship.people }}</span>
-        <span>{{ story.relationship.ai }}</span>
-        <strong>{{ story.relationship.label }}</strong>
-      </div>
-
-      <h1>{{ story.headline }}</h1>
-      {% if story.deck %}<p class="story-deck">{{ story.deck }}</p>{% endif %}
-
-      <div class="story-meta">
-        <span>{{ story.event_date }}</span>
-        <span>{{ story.novelty }}</span>
-        <span>{{ story.source_count }} source{% if story.source_count != 1 %}s{% endif %}</span>
-        {% if story.evidence_level == "headline_only" %}
-        <span class="early">Early signal</span>
-        {% elif story.editorial_version %}
-        <span>AIEO Brief v{{ story.editorial_version }}</span>
-        {% endif %}
-      </div>
-
-      <nav class="quick-actions" aria-label="Story actions">
-        <button type="button" data-action="like">♡ Like</button>
-        <button type="button" data-action="discuss">💬 Discuss</button>
-        <button type="button" data-action="share" data-share-url="{{ story.url }}" data-share-title="{{ story.headline }}">↗ Share</button>
-        <button type="button" data-action="save">🔖 Save</button>
-        <button type="button" class="notify-action" data-action="follow">🔔 Notify me</button>
-      </nav>
-
-      <section class="quick-read">
-        <div class="quick-read-title">
-          <span class="eyebrow">QUICK READ</span>
-          <small>Two questions first. Open more only if you want it.</small>
-        </div>
-        <div class="quick-read-grid">
-          <section>
-            <span class="section-label">WHAT HAPPENED</span>
-            <p>{{ story.what_happened }}</p>
-          </section>
-          <section>
-            <span class="section-label">WHY IT MATTERS</span>
-            <p>{{ story.why_it_matters }}</p>
-          </section>
-        </div>
-      </section>
-
-      <div class="two-sides">
-        <section class="human-side">
-          <span class="section-label">FOR HUMANS</span>
-          <h2>{{ story.relationship.people }}</h2>
-          <p>{{ story.for_humans }}</p>
-        </section>
-        <section class="ai-side">
-          <span class="section-label">FOR AI / OPERATOR SIDE</span>
-          <h2>{{ story.relationship.ai }}</h2>
-          <p>{{ story.for_ai }}</p>
-        </section>
-      </div>
-
-      {% if story.evidence_level == "headline_only" %}
-      <aside class="evidence-warning">
-        <strong>Early signal</strong>
-        <p>AIEO has source metadata for this development, but no retained full-source article body. The interpretation is deliberately limited.</p>
-      </aside>
-      {% endif %}
-
-      {% if story.body_paragraphs %}
-      <details class="story-detail" open>
-        <summary>Read the brief</summary>
-        <div class="story-body">
-          {% for paragraph in story.body_paragraphs %}
-          <p>{{ paragraph }}</p>
-          {% endfor %}
-        </div>
-      </details>
-      {% endif %}
-
-      <div class="inline-ad" data-ad-placement="story-inline-1">
-        <span>ADVERTISEMENT</span>
-        <strong>Reserved sponsor space</strong>
-      </div>
-
-      <details class="sources story-detail">
-        <summary>Open source links ({{ story.sources|length }})</summary>
-        <div class="source-list">
-          {% for source in story.sources %}
-          <a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">
-            <span><strong>{{ source.publisher }}</strong>{{ source.headline }}</span>
-            <small>{{ source.published_date }}</small>
-          </a>
-          {% endfor %}
-        </div>
-      </details>
-
-      <section class="story-subscribe">
-        <div>
-          <span class="eyebrow">FOLLOW THE DEVELOPMENT</span>
-          <h2>Get notified when this story returns.</h2>
-          <p>Story alerts, comments, and account-based follows are the next community layer.</p>
-        </div>
-        <button type="button" class="primary-button" data-action="follow">🔔 Notify me</button>
-      </section>
-    </article>
-
-    <aside class="story-sidebar">
-      <div class="relationship-explainer {{ story.relationship.class }}">
-        <span>{{ story.relationship.people }} &nbsp; {{ story.relationship.ai }}</span>
-        <h3>{{ story.relationship.label }}</h3>
-        <small>{{ story.relationship.technical }}</small>
-      </div>
-
-      <div class="sidebar-actions">
-        <button type="button" data-action="share" data-share-url="{{ story.url }}" data-share-title="{{ story.headline }}">↗ Share anywhere</button>
-        <button type="button" data-action="follow">🔔 Follow updates</button>
-        <button type="button" data-action="discuss">💬 Start discussion</button>
-      </div>
-
-      <div class="ad-slot story-ad" data-ad-placement="story-rail">
-        <span>ADVERTISEMENT</span>
-        <strong>Reserved sponsor space</strong>
-      </div>
-    </aside>
-  </div>
-</main>
-
-<dialog class="share-dialog" id="share-dialog">
-  <form method="dialog" class="dialog-card">
-    <button class="dialog-close" value="cancel" aria-label="Close">×</button>
-    <span class="eyebrow">SHARE THIS DEVELOPMENT</span>
-    <h2>Choose where to share</h2>
-    <div class="share-grid">
-      <a data-share-channel="whatsapp" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-      <a data-share-channel="telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
-      <a data-share-channel="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a data-share-channel="reddit" target="_blank" rel="noopener noreferrer">Reddit</a>
-      <a data-share-channel="x" target="_blank" rel="noopener noreferrer">X</a>
-      <a data-share-channel="facebook" target="_blank" rel="noopener noreferrer">Facebook</a>
-      <a data-share-channel="email">Email</a>
-      <button type="button" data-share-channel="copy">Copy link</button>
-    </div>
-  </form>
-</dialog>
-
-<dialog class="notice-dialog" id="notice-dialog">
-  <form method="dialog" class="dialog-card">
-    <button class="dialog-close" value="cancel" aria-label="Close">×</button>
-    <span class="eyebrow">PREVIEW</span>
-    <h2 id="notice-title">Coming next</h2>
-    <p id="notice-copy"></p>
-    <div class="notice-actions">
-      <a href="/#subscribe">Get Brief updates</a>
-      <button value="cancel">Continue reading</button>
-    </div>
-  </form>
-</dialog>
+<div class="reading-progress" aria-hidden="true"></div>
+<main class="page-shell" id="main-content"><div class="article-layout">
+<article id="article-content">
+<div class="breadcrumb"><a href="{{ local('research/index.html' if story.kind=='research' else 'index.html') }}">← {{ 'Research' if story.kind=='research' else 'The news' }}</a></div>
+<header class="article-header"><div class="story-kicker"><span>{{ story.research_label if story.kind=='research' else story.market_label }}</span><span>{{ story.topic_label }}</span><span>{{ story.reading_minutes }} min read</span></div><h1>{{ story.headline }}</h1><p class="deck">{{ story.deck }}</p><div class="source-line"><span>{{ story.publisher }}</span><time datetime="{{ story.date }}">{{ story.display_date }}</time><span data-read-count="{{ story.key }}" hidden></span><span>{{ story.summary_basis }}</span></div>{{ actions(story,true) }}</header>
+{% if story.has_editorial %}<div class="reading-options"><span>Choose your read</span><button data-read-mode="quick" aria-pressed="false">30 seconds</button><button data-read-mode="full" aria-pressed="true">The full brief</button></div>{% endif %}
+<div class="article-body">
+{% if story.display_scope %}<p class="finding-note">{{ story.display_scope }}</p>{% endif %}
+{% if story.kind=='research' %}
+<dl class="paper-facts"><div><dt>Publication</dt><dd>{{ story.publisher }}</dd></div><div><dt>Stage</dt><dd>{{ story.research_label }}</dd></div><div><dt>What we read</dt><dd>{{ story.summary_basis }}</dd></div></dl>
+{% endif %}
+{% if story.has_editorial %}<section><h2>{{ 'What the paper reports' if story.kind=='research' else 'What happened' }}</h2><p>{{ story.what_happened }}</p></section><section class="finding-note"><h2>Why it matters</h2><p>{{ story.why_it_matters }}</p></section><div data-full-read>{% for paragraph in story.body_paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</div>
+{% if story.limitation %}<section><h2>What this does not tell us</h2><p>{{ story.limitation }}</p></section>{% endif %}
+{% else %}<section class="quiet-box"><h2>Read the reporting</h2><p>This item links to the source article. An AIEO summary is not available for this edition.</p><a class="read-link" href="{{ story.sources[0].url }}" target="_blank" rel="noopener noreferrer" data-source-link>Open {{ story.publisher }} ↗</a></section>{% endif %}
+{% if story.kind=='news' %}<section aria-label="People and AI readings" class="axis-grid"><div class="axis-note {{ story.human_direction }}"><h3>FOR PEOPLE</h3><strong>{{ story.human_label }}</strong><p>{{ story.for_humans or 'There is not enough evidence to describe this side.' }}</p></div><div class="axis-note {{ story.ai_direction }}"><h3>FOR AI AND ITS OPERATORS</h3><strong>{{ story.ai_label }}</strong><p>{{ story.for_ai or 'There is not enough evidence to describe this side.' }}</p></div></section><p class="small-copy">These are two separate readings of what the sources describe. Reported claims and risks do not by themselves establish a real-world effect.</p>{% endif %}
+{{ ad('story') }}
+<details class="evidence-detail" open><summary>Original sources · {{ story.source_count }}</summary><ol class="source-list">{% for source in story.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener noreferrer" data-source-link>{{ source.headline or source.publisher }} ↗</a><small>{{ source.publisher }}{% if source.date %} · {{ source.date }}{% endif %}</small></li>{% endfor %}</ol>{% if story.kind=='research' %}<p class="small-copy">Check the original paper for its authors, methods, version and access terms.</p>{% else %}<p class="small-copy">Reporting discovered in {{ story.market_label }}. Discovery market does not mean the event happened there.</p>{% endif %}</details>
+</div>
+{% include 'conversation.html' %}</article>
+<aside class="article-rail"><section class="rail-section"><span class="eyebrow">KEEP READING</span>{% for item in related %}<a class="ranked-story" href="{{ local(item.path) }}"><h2>{{ item.headline }}</h2><p>{{ item.reading_minutes }} min read · {{ item.publisher }}</p></a>{% endfor %}{% if not related %}<p>Explore the other stories in this edition.</p>{% endif %}<a class="text-link" href="{{ local('index.html') }}">Back to the news →</a></section><section class="rail-section"><h2>A calmer way to stay informed.</h2><p>You can save a story and return to it whenever you have time.</p><button class="button secondary" data-action="save" data-key="{{ story.key }}" aria-pressed="false">Save this story</button></section></aside>
+</div></main>
 {% endblock %}

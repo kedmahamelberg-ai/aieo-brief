@@ -1,503 +1,215 @@
 #!/usr/bin/env python3
+"""Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
-
-import argparse
-import json
-import os
-import re
-import shutil
-from datetime import datetime, timezone
+import argparse, collections, json, os, re, shutil, time
+from datetime import datetime, timezone, date
 from pathlib import Path
 from urllib.parse import urlparse
-
+from xml.sax.saxutils import escape as xml_escape
 import requests
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from brief_contract import validate_pair, load_config, safe_url, digest, MARKETS, PROMPT_VERSION
+from brief_database import dbmaps
+ROOT=Path(__file__).resolve().parents[1]
+SITE=ROOT/'_site'
+OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
+TOPICS={'work':'Work & skills','creativity':'Culture & creativity','everyday':'Everyday life','policy':'Rules & rights','technology':'AI & technology','research':'Science & research','business':'Business & investment'}
+DIRECTION_LABELS={'gain':'Benefits reported','loss':'Downsides reported','mixed':'Benefits and downsides','none':'No direction stated','unresolved':'Evidence incomplete'}
+ISO={'CAN':'CA','CHN':'CN','FRA':'FR','GBR':'GB','USA':'US',**dict((k,k) for k,_ in MARKETS)}
 
-ROOT = Path(__file__).resolve().parents[1]
-SITE = ROOT / "_site"
-OBS = os.environ.get(
-    "OBSERVATORY_BASE_URL",
-    "https://observatory.hamelberg-ai.com",
-).rstrip("/")
-
-REL = {
-    "mutualism": ("People ↑","AI ↑","Both gain","Mutualism","mutualism"),
-    "ai_benefiting_parasitism": ("People ↓","AI ↑","AI side gains, people are constrained","AI-benefiting parasitism","ai-benefit"),
-    "human_benefiting_parasitism": ("People ↑","AI ↓","People gain, AI side is constrained","Human-benefiting parasitism","human-benefit"),
-    "competition": ("People ↓","AI ↓","Both are constrained","Competition or co-constraint","competition"),
-    "human_enabling_only": ("People ↑","AI ?","People-side gain only","One-sided human signal","human-only"),
-    "human_constraining_only": ("People ↓","AI ?","People-side constraint only","One-sided human signal","human-only"),
-    "ai_enabling_only": ("People ?","AI ↑","AI-side gain only","One-sided AI signal","ai-only"),
-    "ai_constraining_only": ("People ?","AI ↓","AI-side constraint only","One-sided AI signal","ai-only"),
-    "no_clear_relational_signal": ("People ↔","AI ↔","No clear relationship signal","No clear relational signal","unclear"),
-    "ambiguous_relational_signal": ("People ?","AI ?","Relationship signal is ambiguous","Ambiguous relational signal","unclear"),
-    "insufficient_evidence": ("People ?","AI ?","Evidence is still limited","Insufficient evidence","insufficient"),
-}
-
-def utc_now():
-    return datetime.now(timezone.utc).isoformat()
-
+def utc_now(): return datetime.now(timezone.utc).isoformat()
 def fetch(url):
-    response = requests.get(url, timeout=30)
-    response.raise_for_status()
-    return response.json()
-
-def slugify(value):
-    return (
-        re.sub(r"[^a-z0-9]+", "-", str(value or "").casefold())
-        .strip("-")[:76]
-        or "development"
-    )
-
-def safe_url(value):
-    try:
-        parsed = urlparse(str(value or ""))
-        return str(value) if parsed.scheme in {"http","https"} else "#"
-    except Exception:
-        return "#"
-
+    r=requests.get(url,timeout=45);r.raise_for_status();return r.json()
+def inputs(preview=False):
+    if preview:
+        return tuple(json.loads((ROOT/'data/preview'/x).read_text()) for x in ('release.json','symbiosis.json'))
+    for attempt in range(3):
+        release=fetch(f'{OBS}/data/releases/current.json'); sym=fetch(f'{OBS}/data/symbiosis/current.json')
+        try: validate_pair(release,sym);return release,sym
+        except ValueError:
+            if attempt==2: raise
+            time.sleep(2)
+def text(value): return re.sub(r'\s+',' ',str(value or '')).replace('—',',').strip()
 def fmt(value):
-    try:
-        return datetime.strptime(str(value or "")[:10], "%Y-%m-%d").strftime("%-d %b %Y")
-    except Exception:
-        return str(value or "")[:10] or "Date unavailable"
+    try: return datetime.fromisoformat(str(value)[:10]).strftime('%d %b %Y').lstrip('0')
+    except ValueError: return ''
+def public_evidence(value):
+    # Audit-process commentary is private, while the actual evidence stays intact.
+    sentences=re.split(r'(?<=[.!?])\s+',text(value))
+    bad=re.compile(r'old (?:rationale|classification)|earlier (?:rationale|classification)|previous (?:coding|rationale)|supabase|override|reclassif|gold.standard|rubric|stored body|manually|model.cod|coding|codebook',re.I)
+    return ' '.join(s for s in sentences if not bad.search(s))
+def detect_topic(event):
+    raw=text((event.get('classification') or {}).get('topic')).lower()
+    value=raw+' '+text(event.get('event_title')).lower()
+    for key,terms in [('policy','regulat|polic|law|copyright|govern|rights'),('work','work|job|skill|employ|educat|student|teach|legal'),('creativity','music|creativ|art |film|fiction|culture'),('research','scient|research|study|discovery'),('business','business|invest|profit|stocks|fund|market|valuation|bank')]:
+        if re.search(terms,value):return key
+    return 'technology' if re.search('model|chip|robot|compute|agent',value) else 'everyday'
+def version_valid(version, row, release):
+    if not version or version.get('publication_status') not in ('published','preview'):return False
+    basis=version.get('evidence_basis_summary') or {}
+    return basis.get('prompt_version')==PROMPT_VERSION and basis.get('source_release_sha256')==release.get('content_sha256') and basis.get('axes_sha256')==digest(row.get('axes',{}))
 
-def relmeta(row):
-    key = str((row or {}).get("configuration") or "insufficient_evidence")
-    people, ai, label, technical, cls = REL.get(key, REL["insufficient_evidence"])
-    return {
-        "configuration": key,
-        "people": people,
-        "ai": ai,
-        "label": label,
-        "technical": technical,
-        "class": cls,
-        "reviewed": bool((row or {}).get("reviewed")),
-    }
+def cards(release,sym,registry,readiness,editorial,preview=False):
+    axesmap={r['event_id']:r for r in sym['evidence']}
+    marketmap=collections.defaultdict(set)
+    for article in (release.get('units') or {}).get('coverage_articles',[]):
+        eid=str(article.get('effective_event_id') or article.get('event_id'))
+        for country in article.get('search_markets') or []:
+            if country in ISO:marketmap[eid].add(ISO[country])
+    names=dict(MARKETS);output=[]
+    for event in release['evidence']:
+        eid=str(event.get('effective_event_id') or event['event_id']);row=axesmap[eid];axes=row['axes']
+        reg=registry.get(eid) or {};ready=readiness.get(eid) or {};v=editorial.get(eid)
+        if not version_valid(v,row,release):v=None
+        for key in ('human','ai'):
+            if axes[key]['direction'] not in DIRECTION_LABELS:raise ValueError('Invalid direction')
+        sources=[]
+        for src in event.get('sources') or []:
+            url=safe_url(src.get('url'),allow_http=True)
+            if url:sources.append({'publisher':text(src.get('publisher') or src.get('name') or urlparse(url).hostname),'headline':text(src.get('headline')),'url':url,'date':str(src.get('published_date') or '')[:10],'language':src.get('source_language','')})
+        if not sources:raise ValueError('A story has no usable source link: '+eid)
+        slug=str(reg.get('slug') or 'development-'+eid)
+        if not re.fullmatch(r'[a-zA-Z0-9][a-zA-Z0-9_-]{0,180}',slug):slug='development-'+eid
+        topic=detect_topic(event);market=sorted(marketmap[eid]);original=text(event.get('event_title'))
+        if v:
+            headline=text(v['editorial_headline']);deck=text(v['editorial_deck'])
+            body=[text(p) for p in re.split(r'\n\s*\n',v.get('body_markdown','')) if text(p)]
+            happened=text(v.get('what_happened'));why=text(v.get('why_it_matters'))
+            basis='AIEO summary'
+        else:
+            headline=original;body=[];happened='';why=''
+            deck=text(event.get('event_summary'))
+            if not deck or not axes.get('evidence_complete'):
+                deck='Reporting from '+sources[0]['publisher']+'. Open the source for the article.'
+            basis='Publisher headline'
+        human=public_evidence(axes['human'].get('evidence'));ai=public_evidence(axes['ai'].get('evidence'))
+        if v:human=text(v.get('for_humans')) or human;ai=text(v.get('for_ai')) or ai
+        count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220))
+        output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':axes['human']['direction'],'ai_direction':axes['ai']['direction'],'human_label':DIRECTION_LABELS[axes['human']['direction']],'ai_label':DIRECTION_LABELS[axes['ai']['direction']],'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
+    return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
 
-def novelty(event):
-    value = str(event.get("novelty_status") or "")
-    if value == "recurring" or event.get("recurring_in_period"):
-        return "Seen before"
-    if value == "first_time" or event.get("first_time_in_period"):
-        return "New to AIEO"
-    if value == "follow_on_development" or event.get("follow_on_development"):
-        return "New follow-on"
-    return "Novelty under review"
+def papers():
+    p=ROOT/'data/research/public.json'
+    if not p.exists():return []
+    raw=json.loads(p.read_text()).get('papers',[]);out=[]
+    for r in raw:
+        if not safe_url(r.get('url')):continue
+        key=str(r['key'])
+        if not re.fullmatch(r'paper:[a-f0-9]{24}',key):raise ValueError('Unsafe paper key')
+        slug=key.replace(':','-')
+        out.append({**r,'kind':'research','slug':slug,'path':f'research/{slug}/index.html','source_count':1,'sources':[{'publisher':r['publisher'],'headline':r['original_headline'],'url':r['url'],'date':r['date'],'language':'en'}],'display_date':fmt(r['date']),'markets':[],'market_label':'Research','topic':'research','topic_label':TOPICS['research'],'human_direction':'unresolved','ai_direction':'unresolved','for_humans':'','for_ai':'','human_label':'','ai_label':'','evidence_complete':False,'display_scope':'','edition':r['date'][:7],'summary_basis':r.get('summary_basis','Paper reference'),'body_paragraphs':r.get('body_paragraphs',[]),'reading_minutes':max(1,r.get('reading_minutes',1)),'has_editorial':bool(r.get('has_editorial'))})
+    return sorted(out,key=lambda x:x['date'],reverse=True)
 
-def human_copy(value):
-    return {
-        "enabling": "People gain capability, access, control, or participation.",
-        "constraining": "People face reduced capability, access, control, or participation.",
-        "neutral": "No directional human effect is established.",
-    }.get(value, "The human-side effect is not established.")
-
-def ai_copy(value):
-    return {
-        "enabling": "The AI or operator side gains capability, data, reach, resources, or operating freedom.",
-        "constraining": "The AI or operator side loses capability, reach, resources, or operating freedom.",
-        "neutral": "No directional AI-side effect is established.",
-    }.get(value, "The AI-side effect is not established.")
-
-def paragraphs(value):
-    return [part.strip() for part in re.split(r"\n\s*\n", str(value or "")) if part.strip()]
-
-def normalize_public_punctuation():
-    """Keep imported news/editorial punctuation inside the public style contract.
-
-    Source headlines and saved editorial versions are external inputs. A single
-    em dash in either used to make the preview build fail after the site had
-    otherwise rendered successfully. Normalize every generated text asset at
-    the publication boundary so future source copy cannot break the workflow.
-    """
-    text_suffixes = {".html", ".js", ".css", ".json", ".txt"}
-    changed = 0
-    for path in SITE.rglob("*"):
-        if not path.is_file() or path.suffix.lower() not in text_suffixes:
-            continue
-        original = path.read_text(encoding="utf-8", errors="ignore")
-        normalized = re.sub(r"\s*—\s*", " - ", original).replace("–", "-")
-        if normalized != original:
-            path.write_text(normalized, encoding="utf-8")
-            changed += 1
-    return changed
-
-def paged(client, table, columns, page_size=500):
-    start = 0
-    while True:
-        rows = (
-            client.table(table)
-            .select(columns)
-            .range(start, start + page_size - 1)
-            .execute()
-            .data or []
-        )
-        if not rows:
-            break
-        yield from rows
-        if len(rows) < page_size:
-            break
-        start += page_size
-
-def dbmaps(mock):
-    if mock:
-        stories = json.loads((ROOT/"data/mock/stories.json").read_text())
-        readiness = json.loads((ROOT/"data/mock/readiness.json").read_text())
-        editorial = json.loads((ROOT/"data/mock/editorial.json").read_text())
-        return stories, readiness, editorial
-
-    from supabase import create_client
-    client = create_client(
-        os.environ["SUPABASE_URL"],
-        os.environ["SUPABASE_SECRET_KEY"],
-    )
-    stories = {
-        str(row["event_id"]): row
-        for row in paged(
-            client,
-            "brief_stories",
-            "story_id,event_id,slug,status,current_headline,current_deck,current_takeaway",
-        )
-        if row.get("event_id")
-    }
-    readiness = {
-        str(row["event_id"]): row
-        for row in paged(
-            client,
-            "brief_event_evidence_readiness",
-            "event_id,source_count,full_source_count,headline_only_count,editorial_evidence_level",
-        )
-        if row.get("event_id")
-    }
-
-    # Prefer the highest preview/published version for each story.
-    editorial_by_story = {}
-    rows = list(
-        paged(
-            client,
-            "brief_story_versions",
-            "story_version_id,story_id,event_id,version_number,editorial_headline,"
-            "editorial_deck,body_markdown,what_happened,why_it_matters,for_humans,"
-            "for_ai,relationship_configuration,human_direction,ai_direction,"
-            "review_status,publication_status,created_at",
-        )
-    )
-    rows.sort(key=lambda row: int(row.get("version_number") or 0), reverse=True)
-    for row in rows:
-        if row.get("publication_status") not in {"preview","published"}:
-            continue
-        sid = str(row.get("story_id"))
-        if sid not in editorial_by_story:
-            editorial_by_story[sid] = row
-
-    editorial = {}
-    for event_id, story in stories.items():
-        version = editorial_by_story.get(str(story.get("story_id")))
-        if version:
-            editorial[event_id] = version
-
-    return stories, readiness, editorial
-
-def inputs(mock):
-    if mock:
-        return (
-            json.loads((ROOT/"data/mock/release.json").read_text()),
-            json.loads((ROOT/"data/mock/symbiosis.json").read_text()),
-        )
-    return (
-        fetch(f"{OBS}/data/releases/current.json"),
-        fetch(f"{OBS}/data/symbiosis/current.json"),
-    )
-
-def cards(release, symbiosis, stories, readiness, editorial):
-    relationship_map = {
-        str(row.get("event_id")): row
-        for row in symbiosis.get("evidence", [])
-        if row.get("event_id")
-    }
-    output = []
-
-    for event in release.get("evidence", []):
-        event_id = str(event.get("effective_event_id") or event.get("event_id") or "")
-        if not event_id:
-            continue
-
-        registry = stories.get(event_id, {})
-        evidence_readiness = readiness.get(event_id, {})
-        level = str(
-            evidence_readiness.get("editorial_evidence_level")
-            or "headline_only"
-        )
-        relationship = relationship_map.get(event_id, {})
-        rel = relmeta(relationship)
-        title = str(event.get("event_title") or "Untitled AI development").strip()
-        summary = str(event.get("event_summary") or "").strip()
-        version = editorial.get(event_id)
-
-        if level == "headline_only":
-            # Headline-only cases stay conservative even if an old generated version exists.
-            version = None
-
-        headline = (
-            version.get("editorial_headline")
-            if version
-            else ("Early signal: " + title if level == "headline_only" else title)
-        )
-        deck = (
-            version.get("editorial_deck")
-            if version
-            else (
-                "AIEO has detected this development, but retained source evidence is still limited."
-                if level == "headline_only"
-                else summary
-            )
-        )
-        happened = (
-            version.get("what_happened")
-            if version
-            else (
-                summary
-                or (
-                    "AIEO detected this development, but retained source evidence is still limited. Open the source links below."
-                    if level == "headline_only"
-                    else "AIEO grouped the supporting coverage into one development. Open the source links below."
-                )
-            )
-        )
-        why = (
-            version.get("why_it_matters")
-            if version
-            else (
-                "AIEO is keeping the interpretation conservative until stronger source evidence is available."
-                if level == "headline_only"
-                else (
-                    str(relationship.get("reasoning") or "").strip()
-                    or "The relationship lens separates what changes for people from what changes for the AI or operator side."
-                )
-            )
-        )
-        for_humans = (
-            version.get("for_humans")
-            if version
-            else human_copy(str(relationship.get("human_direction") or "unclear"))
-        )
-        for_ai = (
-            version.get("for_ai")
-            if version
-            else ai_copy(str(relationship.get("ai_direction") or "unclear"))
-        )
-        body = (
-            paragraphs(version.get("body_markdown"))
-            if version
-            else []
-        )
-
-        sources = [
-            {
-                "publisher": source.get("publisher") or source.get("name") or "Publication",
-                "headline": source.get("headline") or "Open source",
-                "url": safe_url(source.get("url")),
-                "published_date": source.get("published_date") or "",
-            }
-            for source in (event.get("sources") or [])
-        ]
-
-        slug = (
-            registry.get("slug")
-            or f"{slugify(title)}-{event_id.replace('-','')[:8]}"
-        )
-
-        output.append(
-            {
-                "event_id": event_id,
-                "story_id": registry.get("story_id"),
-                "slug": slug,
-                "url": f"/story/{slug}/",
-                "headline": headline,
-                "deck": deck,
-                "what_happened": happened,
-                "why_it_matters": why,
-                "for_humans": for_humans,
-                "for_ai": for_ai,
-                "body_paragraphs": body,
-                "event_date": fmt(event.get("event_date")),
-                "event_date_raw": str(event.get("event_date") or ""),
-                "source_count": int(evidence_readiness.get("source_count") or len(sources)),
-                "full_source_count": int(evidence_readiness.get("full_source_count") or 0),
-                "evidence_level": level,
-                "novelty": novelty(event),
-                "sources": sources,
-                "relationship": rel,
-                "editorial_version": int((version or {}).get("version_number") or 0),
-                "has_editorial": bool(version),
-            }
-        )
-
-    order = {
-        "strong_multi_source": 0,
-        "mixed_with_full_source": 1,
-        "single_full_source": 2,
-        "snippet_or_excerpt_only": 3,
-        "headline_only": 4,
-    }
-    output.sort(
-        key=lambda item: (
-            order.get(item["evidence_level"], 9),
-            -item["source_count"],
-            item["event_date_raw"],
-        )
-    )
-    return output
+def culture_items():
+    p=ROOT/'data/culture/current.json'
+    if not p.exists():return []
+    labels={'illustration':'Art & illustration','poetry':'Poetry','text':'A short reading','quote':'A quotation','music':'Music'}
+    out=[]
+    for r in json.loads(p.read_text()).get('items',[]):
+        if not re.fullmatch(r'culture:[a-f0-9]{24}',r.get('key','')) or r.get('culture_type') not in labels:raise ValueError('Invalid culture record')
+        if not safe_url(r.get('source_url')) or not r.get('creator') or not safe_url(r.get('rights',{}).get('url')):raise ValueError('Culture attribution is incomplete')
+        slug=r['key'].replace(':','-');image=r.get('image_path','')
+        if image and (not re.fullmatch(r'assets/culture/[a-f0-9]{24}\.jpg',image) or not (ROOT/image).is_file()):image=''
+        out.append({**r,'image_path':image,'kind':'culture','slug':slug,'path':f'culture/{slug}/index.html','sources':[{'publisher':r['publisher'],'headline':r['headline'],'url':r['source_url'],'date':r.get('work_date',''),'language':'en'}],'source_count':1,'display_date':fmt(r['date']),'markets':[],'market_label':'Daily culture','topic':r['culture_type'],'topic_label':labels[r['culture_type']],'research_label':labels[r['culture_type']],'human_direction':'unresolved','ai_direction':'unresolved','evidence_complete':False,'edition':r['date'],'summary_basis':'Selected '+fmt(r['date']),'has_editorial':False,'reading_minutes':max(1,round(len(r.get('excerpt','').split())/200))})
+    for item in out:
+        for field in ('excerpt','quote_context'):
+            item[field+'_parts']=[{'text':part[1:-1] if part.startswith('_') and part.endswith('_') else part,'emphasis':part.startswith('_') and part.endswith('_')} for part in re.split(r'(_[^_]+_)',item.get(field,''))]
+    return sorted(out,key=lambda x:(x['date'],x['key']),reverse=True)
 
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--mock", action="store_true")
-    args = parser.parse_args()
-
-    release, symbiosis = inputs(args.mock)
-    stories, readiness, editorial = dbmaps(args.mock)
-    story_cards = cards(release, symbiosis, stories, readiness, editorial)
-    if not story_cards:
-        raise SystemExit("No current stories could be built.")
-
-    if SITE.exists():
-        shutil.rmtree(SITE)
-    SITE.mkdir()
-    shutil.copytree(ROOT/"assets", SITE/"assets")
-
-    env = Environment(
-        loader=FileSystemLoader(str(ROOT/"templates")),
-        autoescape=select_autoescape(["html"]),
-    )
-
-    complete = int(
-        (symbiosis.get("event") or {}).get("complete_configuration_count")
-        or 0
-    )
-    configuration_counts = (
-        (symbiosis.get("event") or {}).get("configuration_counts")
-        or {}
-    )
-    ticker = []
-    for key in [
-        "mutualism",
-        "ai_benefiting_parasitism",
-        "human_benefiting_parasitism",
-        "competition",
-    ]:
-        item = relmeta({"configuration": key, "reviewed": True})
-        item["key"] = key
-        item["count"] = int(configuration_counts.get(key) or 0)
-        item["share"] = round(item["count"] / complete * 100) if complete else 0
-        ticker.append(item)
-
-    lead = next(
-        (
-            card
-            for card in story_cards
-            if card["evidence_level"] != "headline_only" and card["has_editorial"]
-        ),
-        next(
-            (
-                card
-                for card in story_cards
-                if card["evidence_level"] != "headline_only"
-            ),
-            story_cards[0],
-        ),
-    )
-    rest = [
-        card for card in story_cards
-        if card["event_id"] != lead["event_id"]
-    ]
-
-    by_relationship = {}
-    for card in story_cards:
-        by_relationship.setdefault(
-            card["relationship"]["configuration"], []
-        ).append(card)
-
-    context = {
-        "release": release,
-        "symbiosis": symbiosis,
-        "cards": story_cards,
-        "lead": lead,
-        "main_cards": rest,
-        "ticker": ticker,
-        "by_relationship": by_relationship,
-        "generated_at": utc_now(),
-    }
-
-    (SITE/"index.html").write_text(
-        env.get_template("index.html").render(**context),
-        encoding="utf-8",
-    )
-
-    story_template = env.get_template("story.html")
-    for card in story_cards:
-        path = SITE/"story"/card["slug"]
-        path.mkdir(parents=True)
-        (path/"index.html").write_text(
-            story_template.render(
-                story=card,
-                release=release,
-                generated_at=utc_now(),
-            ),
-            encoding="utf-8",
-        )
-
-    data = SITE/"data"
-    data.mkdir()
-    public_payload = {
-        "schema_version": "aieo_brief_public_v2a1",
-        "release_id": release.get("release_id"),
-        "period_start": release.get("period_start"),
-        "period_end": release.get("period_end"),
-        "generated_at": utc_now(),
-        "story_count": len(story_cards),
-        "stories": [
-            {
-                "event_id": card["event_id"],
-                "slug": card["slug"],
-                "headline": card["headline"],
-                "deck": card["deck"],
-                "relationship": card["relationship"],
-                "evidence_level": card["evidence_level"],
-                "source_count": card["source_count"],
-                "full_source_count": card["full_source_count"],
-                "novelty": card["novelty"],
-                "editorial_version": card["editorial_version"],
-            }
-            for card in story_cards
-        ],
-    }
-    (data/"current.json").write_text(
-        json.dumps(public_payload, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8",
-    )
-
-    punctuation_files_normalized = normalize_public_punctuation()
-
-    summary = {
-        "release_id": release.get("release_id"),
-        "stories_built": len(story_cards),
-        "editorial_versions_used": sum(card["has_editorial"] for card in story_cards),
-        "with_full_source": sum(card["full_source_count"] > 0 for card in story_cards),
-        "headline_only": sum(card["evidence_level"] == "headline_only" for card in story_cards),
-        "punctuation_files_normalized": punctuation_files_normalized,
-    }
-    print(json.dumps(summary, indent=2))
-
-    step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
-    if step_summary:
-        with open(step_summary, "a", encoding="utf-8") as handle:
-            handle.write("## AIEO Brief Phase 2A.1 preview\n\n")
-            handle.write(f"- Release: **{summary['release_id']}**\n")
-            handle.write(f"- Stories built: **{summary['stories_built']}**\n")
-            handle.write(f"- Editorial versions used: **{summary['editorial_versions_used']}**\n")
-            handle.write(f"- Stories with full-source support: **{summary['with_full_source']}**\n")
-            handle.write(f"- Headline-only early signals: **{summary['headline_only']}**\n")
+    parser=argparse.ArgumentParser();parser.add_argument('--preview',action='store_true');parser.add_argument('--mock',action='store_true',help='Compatibility alias for the real-source preview');parser.add_argument('--output',default='_site');parser.add_argument('--update-archive',action='store_true');args=parser.parse_args()
+    global SITE;SITE=ROOT/args.output
+    if SITE.resolve()==ROOT or ROOT not in SITE.resolve().parents:raise ValueError('Build directory must be inside the repo')
+    preview=args.preview or args.mock
+    config=load_config(ROOT);release,sym=inputs(preview);counts=validate_pair(release,sym)
+    if preview:
+        registry={};readiness={};editorial=json.loads((ROOT/'data/preview/editorial.json').read_text())
+        config.update(community_enabled=False,ga4_measurement_id='',supabase_publishable_key='');config['adsense']['enabled']=False
+    else:
+        registry,readiness,editorial=dbmaps(False)
+        axes_by_id={x['event_id']:x for x in sym['evidence']}
+        for seedfile in sorted((ROOT/'data/editorial').glob('seed-*.json')):
+            for eid,version in json.loads(seedfile.read_text()).items():
+                row=axes_by_id.get(eid)
+                if row and version_valid(version,row,release) and not version_valid(editorial.get(eid),row,release):editorial[eid]=version
+    news=cards(release,sym,registry,readiness,editorial,preview);research=papers();culture=culture_items()
+    archivepath=ROOT/'data/archive/stories.json'
+    old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
+    allitems={x['key']:x for x in old}
+    for item in news+research+culture:
+        previous=allitems.get(item['key'])
+        if previous and previous.get('path') and re.fullmatch(r'(story|research|culture)/[a-zA-Z0-9_-]+/index.html',previous['path']):
+            item['path']=previous['path'];item['slug']=previous['slug']
+        allitems[item['key']]=item
+    # Preserve historical links. For a current research item, replace a changed
+    # or withheld summary with its current metadata-only record.
+    for row in research:
+        allitems[row['key']]=row
+    allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
+    for item in allcards:
+        if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
+    if SITE.exists():shutil.rmtree(SITE)
+    SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
+    env=Environment(loader=FileSystemLoader(str(ROOT/'templates')),autoescape=select_autoescape(['html']))
+    baseurl=config.get('site_url','').rstrip('/')
+    if not baseurl and os.environ.get('GITHUB_REPOSITORY'):
+        owner,repo=os.environ['GITHUB_REPOSITORY'].split('/',1);baseurl=f'https://{owner}.github.io/{repo}'
+    public_config={k:config.get(k) for k in ('site_name','supabase_url','supabase_publishable_key','community_enabled','ga4_measurement_id','adsense')}
+    public_config['site_url']=baseurl;public_config['is_preview']=preview
+    sponsor_active=False
+    market_counts={code:sum(code in c['markets'] for c in news) for code,_ in MARKETS}
+    lead=next((c for c in news if c['has_editorial'] and c['evidence_complete']),news[0] if news else None)
+    highlights=[];seen=set(lead['markets'] if lead else [])
+    for c in sorted(news,key=lambda c:(c['has_editorial'],c['date']),reverse=True):
+        if c is lead or not c['has_editorial']:continue
+        if set(c['markets'])-seen:highlights.append(c);seen.update(c['markets'])
+        if len(highlights)==2:break
+    defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
+    latest_culture_date=max((x['date'] for x in culture),default='')
+    defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
+    def render(path,template,**ctx):
+        target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
+        prefix='../'*len(Path(path).parent.parts)
+        local=lambda value:prefix+value
+        # Full text stays in HTML. The interaction payload only needs metadata.
+        local_items=allcards if ctx.get('page') in ('saved','archive') else list({x['key']:x for x in news+research+culture+([ctx['story']] if ctx.get('story') else [])+ctx.get('related',[])}.values())
+        client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck')} for x in local_items]
+        output=env.get_template(template).render(**defaults,local=local,canonical=(baseurl+'/'+path.removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
+        target.write_text(output,encoding='utf-8')
+    render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
+    render('research/index.html','collection.html',page='research',items=research)
+    render('culture/index.html','culture.html',page='culture',items=culture)
+    render('saved/index.html','collection.html',page='saved',items=allcards)
+    render('archive/index.html','collection.html',page='archive',items=allcards)
+    for page in ('about','privacy','account','moderation'):
+        render(f'{page}/index.html','pages.html',page=page)
+    for item in allcards:
+        related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
+        render(item['path'],'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related)
+    data=SITE/'data';data.mkdir()
+    payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
+    payload.update(culture_count=len(culture),culture=culture)
+    (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+    (SITE/'.nojekyll').touch()
+    publisher_id=(config.get('adsense') or {}).get('publisher_id','')
+    if re.fullmatch(r'ca-pub-\d{16}',publisher_id) and not preview:
+        (SITE/'ads.txt').write_text('google.com, '+publisher_id.removeprefix('ca-')+', DIRECT, f08c47fec0942fa0\n')
+    if baseurl and not preview and not urlparse(baseurl).hostname.endswith('.github.io') and not urlparse(baseurl).path.strip('/'):
+        (SITE/'CNAME').write_text(urlparse(baseurl).hostname+'\n')
+    if baseurl:
+        rss=['<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>AIEO Brief</title><link>'+xml_escape(baseurl)+'</link><description>Clear AI news and research, with original sources.</description>']
+        for item in sorted(news+research+culture,key=lambda x:x['date'],reverse=True)[:100]:
+            url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
+        (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
+        locations=['index.html','research/index.html','culture/index.html','about/index.html']+[i['path'] for i in allcards]
+        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+p.removesuffix('index.html'))+'</loc></url>' for p in locations)+'</urlset>')
+    else:(SITE/'feed.xml').write_text('<?xml version="1.0"?><rss version="2.0"><channel><title>AIEO Brief preview</title><link>https://observatory.hamelberg-ai.com</link><description>Set the Brief site URL for its live feed.</description></channel></rss>')
+    (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
+    if args.update_archive and not preview:
+        archivepath.parent.mkdir(parents=True,exist_ok=True);archivepath.write_text(json.dumps({'schema_version':'aieo_brief_archive_v1','stories':allcards},ensure_ascii=False,indent=2)+'\n')
+    summary={'release':release['release_id'],'news':len(news),'editorial_summaries':sum(x['has_editorial'] for x in news),'research':len(research),'historical_pages':len(allcards),'community_connected':bool(config.get('community_enabled')),'preview':preview}
+    summary['culture']=len(culture)
+    print(json.dumps(summary,indent=2))
+    Path(ROOT/'build-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     return 0
-
-if __name__ == "__main__":
-    raise SystemExit(main())
+if __name__=='__main__':raise SystemExit(main())

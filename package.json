@@ -1,0 +1,11 @@
+{
+  "name": "aieo-brief-verification",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/core.test.js",
+    "test:database": "node tests/community.test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}

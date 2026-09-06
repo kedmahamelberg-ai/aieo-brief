@@ -1,0 +1,20 @@
+{% macro ad(kind) -%}
+{% if sponsor_active %}<aside class="sponsor-unit" aria-label="Sponsored message"><small>SPONSORED · {{ config.sponsor.name }}</small><a href="{{ config.sponsor.url }}" target="_blank" rel="sponsored noopener noreferrer" data-sponsor-link>{{ config.sponsor.message }} <span aria-hidden="true">↗</span></a></aside>
+{% elif config.adsense.enabled and config.adsense.get('mode','auto')=='placements' and config.adsense.slots.get(kind) %}<aside class="advertisement" data-ad-slot="{{ config.adsense.slots[kind] }}" hidden><small>ADVERTISEMENT</small></aside>{% endif %}
+{%- endmacro %}
+{% macro actions(item, full=false) -%}
+<div class="story-actions" data-key="{{ item.key }}">
+<button data-action="like" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">♡</span> Like <span data-like-count="{{ item.key }}"></span></button>
+<a href="{{ local(item.path) }}#conversation" class="comment-link"><span aria-hidden="true">▤</span> Discuss <span data-comment-count="{{ item.key }}"></span></a>
+<button data-action="share" data-key="{{ item.key }}"><span aria-hidden="true">↗</span> Share</button>
+<button data-action="save" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">▱</span> Save</button>
+</div>
+{%- endmacro %}
+{% macro card(item) -%}
+<article class="feed-story" data-story-card data-key="{{ item.key }}" data-kind="{{ item.kind }}" data-markets="{{ item.markets|join(' ') }}" data-topic="{{ item.topic }}" data-direction="{{ item.human_direction }}" data-search="{{ (item.headline ~ ' ' ~ item.deck ~ ' ' ~ item.publisher)|lower }}" data-date="{{ item.date }}">
+<div class="story-kicker"><span>{{ item.market_label if item.kind=='news' else item.research_label }}</span>{% if item.kind!='culture' %}<span>{{ item.topic_label }}</span>{% endif %}<span>{{ item.reading_minutes }} min read</span></div>
+<h2><a href="{{ local(item.path) }}">{{ item.headline }}</a></h2><p class="story-deck">{{ item.deck }}</p>
+<div class="source-line"><span>{{ item.creator if item.kind=='culture' else item.publisher }}</span><time datetime="{{ item.date }}">{{ item.display_date }}</time><span data-read-count="{{ item.key }}" hidden></span>{% if item.summary_basis %}<span>{{ item.summary_basis }}</span>{% endif %}</div>
+{{ actions(item) }}
+</article>
+{%- endmacro %}

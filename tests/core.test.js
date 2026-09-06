@@ -1,0 +1,7 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const C=require('../assets/core.js');
+const items=[{key:'a',headline:'AI in school',publisher:'Journal',deck:'Learning',markets:['CA','FR'],topic:'work',human_direction:'mixed',date:'2026-09-01'},{key:'b',headline:'Satellite research',publisher:'PNAS',deck:'Methane',markets:['US'],topic:'research',human_direction:'gain',date:'2026-09-02'}];
+test('filters combine actual markets, topic and search',()=>{assert.deepEqual(C.filterItems(items,{market:'FR',search:'school',topic:'work',direction:'mixed'}).map(x=>x.key),['a']);assert.equal(C.filterItems(items,{market:'GB'}).length,0);});
+test('most read is derived from measured counts; ties keep latest',()=>{assert.equal(C.sortItems(items,'reads',{a:{reads:10},b:{reads:2}})[0].key,'a');assert.equal(C.sortItems(items,'reads',{})[0].key,'b');});
+test('qualified reading requires consent, time and progress',()=>{assert.equal(C.qualifiedRead(20,.5,true),true);assert.equal(C.qualifiedRead(20,.5,false),false);assert.equal(C.qualifiedRead(19,1,true),false);assert.equal(C.qualifiedRead(99,.49,true),false);});
+test('share URLs encode title and canonical destination',()=>{const links=C.shareLinks('https://example.test/story/a/?x=1&y=2','AI & people');assert.match(links.whatsapp,/https%3A%2F%2Fexample/);assert.match(links.linkedin,/linkedin/);assert.match(links.email,/mailto:/);});
+test('public URL does not share a local filesystem path',()=>{assert.equal(C.publicURL({},{path:'story/a/index.html'},'file:///preview/'),null);});
