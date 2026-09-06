@@ -152,6 +152,7 @@ def main():
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
+    shutil.copyfile(ROOT/'assets/favicon.ico', SITE/'favicon.ico')
     env=Environment(loader=FileSystemLoader(str(ROOT/'templates')),autoescape=select_autoescape(['html']))
     baseurl=config.get('site_url','').rstrip('/')
     if not baseurl and os.environ.get('GITHUB_REPOSITORY'):
@@ -204,7 +205,9 @@ def main():
     shutil.copyfile(ROOT/'assets/news-worker.js', SITE/'news-worker.js')
     (SITE/'manifest.webmanifest').write_text(json.dumps({'name':'The Brief — AI news','short_name':'The Brief',
         'id':'./','start_url':'./','scope':'./','display':'standalone','background_color':'#ffffff',
-        'theme_color':'#122b3d','icons':[{'src':'assets/notification-icon.svg','sizes':'any','type':'image/svg+xml','purpose':'any'}]})+'\n')
+        'theme_color':'#122b3d','icons':[
+            {'src':'assets/favicon-192.png','sizes':'192x192','type':'image/png','purpose':'any'},
+            {'src':'assets/favicon-512.png','sizes':'512x512','type':'image/png','purpose':'any'}]})+'\n')
     (SITE/'.nojekyll').touch()
     publisher_id=(config.get('adsense') or {}).get('publisher_id','')
     if re.fullmatch(r'ca-pub-\d{16}',publisher_id) and not preview:

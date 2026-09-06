@@ -12,7 +12,7 @@ self.addEventListener('push', event => {
   } catch (_) {}
   event.waitUntil(self.registration.showNotification(String(payload.title || 'The Brief').slice(0, 100), {
     body: String(payload.body || 'A new AI news edition is ready.').slice(0, 220),
-    icon: new URL('assets/notification-icon.svg', root).href,
+    icon: new URL('assets/favicon-192.png', root).href,
     tag: String(payload.tag || 'brief-news').slice(0, 80),
     renotify: false,
     data: {url: target}
