@@ -346,6 +346,377 @@
       ]
     },
     {
+      "book_title": "Reflections; or Sentences and Moral Maxims",
+      "content_fingerprint": "3ec9ca6c639f63f3da95acbbda551cc9e7706b8699de1811cc9486e9acb5e04d",
+      "creator": "François de La Rochefoucauld",
+      "creator_origin": "French",
+      "culture_type": "text",
+      "deck": "A passage from Reflections; or Sentences and Moral Maxims. Translated by J. Hain Friswell.",
+      "excerpt": "As regards ourselves our taste has not this all-important discernment. Preoccupation, trouble, all that concern us, present it to us in another aspect. We do not see with the same eyes what does and what does not relate to us. Our taste is guided by the bent of our self-love and temper, which supplies us with new views which we adapt to an infinite number of changes and uncertainties. Our taste is no longer our own, we cease to control it, without our consent it changes, and the same objects appear to us in such divers aspects that ultimately we fail to perceive what we have seen and heard.",
+      "headline": "Reflections; or Sentences and Moral Maxims · a short reading",
+      "key": "culture:7e8ce96692a3f377cdf3c999",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:9105:passage:3ec9ca6c639f63f3da95acbbda551cc9e7706b8699de1811cc9486e9acb5e04d",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1680. Translator: J. Hain Friswell, died 1878. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/9105"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "b240ded9918a8c04662b68a29101976f7f70fccf249be5fabdea579c95cd74e6",
+      "source_locator": "REFLECTIONS; OR, SENTENCES AND MORAL MAXIMS; paragraph 809 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/9105",
+      "translator": "J. Hain Friswell",
+      "work_date": "1871 translation",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-7e8ce96692a3f377cdf3c999",
+      "path": "culture/culture-7e8ce96692a3f377cdf3c999/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Reflections; or Sentences and Moral Maxims · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/9105",
+          "date": "1871 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-06",
+      "summary_basis": "Selected 6 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "As regards ourselves our taste has not this all-important discernment. Preoccupation, trouble, all that concern us, present it to us in another aspect. We do not see with the same eyes what does and what does not relate to us. Our taste is guided by the bent of our self-love and temper, which supplies us with new views which we adapt to an infinite number of changes and uncertainties. Our taste is no longer our own, we cease to control it, without our consent it changes, and the same objects appear to us in such divers aspects that ultimately we fail to perceive what we have seen and heard.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Text, folio 73 (verso) from a Gandavyuha-sutra (Scripture of the Supreme Array)",
+      "art_type": "Painting",
+      "balance_origin": "Nepal",
+      "creator": "Artist unknown",
+      "creator_origin": "Nepal",
+      "culture_type": "illustration",
+      "deck": "Text, folio 73 (verso) from a Gandavyuha-sutra (Scripture of the Supreme Array). ink on palm leaf.",
+      "headline": "Text, folio 73 (verso) from a Gandavyuha-sutra (Scripture of the Supreme Array)",
+      "image_path": "assets/culture/73fc2c07f52de69ce21b37a4.jpg",
+      "key": "culture:73fc2c07f52de69ce21b37a4",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1955.49.3.b/1955.49.3.b_web.jpg",
+      "medium": "ink on palm leaf",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1955.49.3.b",
+      "provenance_id": "cma:133077",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1955.49.3.b",
+      "work_date": "1000–1100s",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-73fc2c07f52de69ce21b37a4",
+      "path": "culture/culture-73fc2c07f52de69ce21b37a4/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Text, folio 73 (verso) from a Gandavyuha-sutra (Scripture of the Supreme Array)",
+          "url": "https://clevelandart.org/art/1955.49.3.b",
+          "date": "1000–1100s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-06",
+      "summary_basis": "Selected 6 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "1407cb648d81b9e95551cbd3d755eb8d1b0f3336a46e8eda62b3bc39080c4d72",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "Whatever is much thought about is at last thought suspicious.",
+      "headline": "Whatever is much thought about is at last thought suspicious.",
+      "key": "culture:3e3bcdfa96ef9b23e4d568a9",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:1407cb648d81b9e95551cbd3d755eb8d1b0f3336a46e8eda62b3bc39080c4d72",
+      "publisher": "Project Gutenberg",
+      "quote_context": "They think much about thee with their circumscribed souls—thou art always suspected by them! Whatever is much thought about is at last thought suspicious.",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 666 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3e3bcdfa96ef9b23e4d568a9",
+      "path": "culture/culture-3e3bcdfa96ef9b23e4d568a9/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Whatever is much thought about is at last thought suspicious.",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-06",
+      "summary_basis": "Selected 6 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Whatever is much thought about is at last thought suspicious.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "They think much about thee with their circumscribed souls—thou art always suspected by them! Whatever is much thought about is at last thought suspicious.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "5c6f84377eaed284a48130869c0d37b101573e8ceb79c74c536c17ea9ce73559",
+      "creator": "T`ung Han-ching",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "The Celestial Weaver, by T`ung Han-ching. Translated by L. Cranmer-Byng.",
+      "excerpt": "A thing of stone beside Lake Kouen-ming\nHas for a thousand autumns borne the name\nOf the Celestial Weaver.  Like that star\nShe shines above the waters, wondering\nAt her pale loveliness.  Unnumbered waves\nHave broidered with green moss the marble folds\nAbout her feet.  Toiling eternally\nThey knock the stone, like tireless shuttles plied\nUpon a sounding loom.\n                       Her pearly locks\nResemble snow-coils on the mountain top;\nHer eyebrows arch -- the crescent moon.  A smile\nLies in the opened lily of her face;\nAnd, since she breathes not, being stone, the birds\nLight on her shoulders, flutter without fear\nAt her still breast.  Immovable she stands\nBefore the shining mirror of her charms\nAnd, gazing on their beauty, lets the years\nSlip into centuries past her. . . .",
+      "headline": "The Celestial Weaver",
+      "key": "culture:3b4042fd2d8a0f6f7485beb2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "A thing of stone beside Lake Kouen-ming",
+        "Has for a thousand autumns borne the name",
+        "Of the Celestial Weaver.  Like that star",
+        "She shines above the waters, wondering",
+        "At her pale loveliness.  Unnumbered waves",
+        "Have broidered with green moss the marble folds",
+        "About her feet.  Toiling eternally",
+        "They knock the stone, like tireless shuttles plied",
+        "Upon a sounding loom.",
+        "                       Her pearly locks",
+        "Resemble snow-coils on the mountain top;",
+        "Her eyebrows arch -- the crescent moon.  A smile",
+        "Lies in the opened lily of her face;",
+        "And, since she breathes not, being stone, the birds",
+        "Light on her shoulders, flutter without fear",
+        "At her still breast.  Immovable she stands",
+        "Before the shining mirror of her charms",
+        "And, gazing on their beauty, lets the years",
+        "Slip into centuries past her. . . ."
+      ],
+      "provenance_id": "pg:390:poem:05b7e36474a20c353660e59d24b64bd5d627b19f2fb26fbdca589a684ee8cfd7",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "The Celestial Weaver",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3b4042fd2d8a0f6f7485beb2",
+      "path": "culture/culture-3b4042fd2d8a0f6f7485beb2/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Celestial Weaver",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-06",
+      "summary_basis": "Selected 6 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "A thing of stone beside Lake Kouen-ming\nHas for a thousand autumns borne the name\nOf the Celestial Weaver.  Like that star\nShe shines above the waters, wondering\nAt her pale loveliness.  Unnumbered waves\nHave broidered with green moss the marble folds\nAbout her feet.  Toiling eternally\nThey knock the stone, like tireless shuttles plied\nUpon a sounding loom.\n                       Her pearly locks\nResemble snow-coils on the mountain top;\nHer eyebrows arch -- the crescent moon.  A smile\nLies in the opened lily of her face;\nAnd, since she breathes not, being stone, the birds\nLight on her shoulders, flutter without fear\nAt her still breast.  Immovable she stands\nBefore the shining mirror of her charms\nAnd, gazing on their beauty, lets the years\nSlip into centuries past her. . . .",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/8/88/JOHN_MICHEL_CELLO-DVORAK_CELLO_CONCERTO_in_B_minor_3rd.ogg",
+      "creator": "Antonín Dvořák",
+      "creator_origin": "Czech",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Antonín Dvořák. 14 minutes to listen.",
+      "duration_seconds": 858,
+      "headline": "JOHN MICHEL CELLO-DVORAK CELLO CONCERTO in B minor 3rd",
+      "key": "culture:0776881a0ebf43c1489f1abb",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/8/88/JOHN_MICHEL_CELLO-DVORAK_CELLO_CONCERTO_in_B_minor_3rd.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k",
+      "original_recording_title": "JOHN MICHEL CELLO-DVORAK CELLO CONCERTO in B minor 3rd",
+      "provenance_id": "commons:2694452",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Antonín Dvořák",
+      "recording_description": "Cello concerto in B minor, Op. 104, B. 191, 3rd movement.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Antonín Dvořák",
+        "label": "CC BY-SA 3.0 (source-declared)",
+        "source_credit": "http://www.garageband.com/artist/cello",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:JOHN_MICHEL_CELLO-DVORAK_CELLO_CONCERTO_in_B_minor_3rd.ogg",
+      "work_date": "between 1894 and 1895 date QS:P,+1894-00-00T00:00:00Z/8,P1319,+1894-00-00T00:00:00Z/9,P1326,+1895-00-00T00:00:00Z/9",
+      "date": "2026-09-06",
+      "selected_on": "2026-09-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0776881a0ebf43c1489f1abb",
+      "path": "culture/culture-0776881a0ebf43c1489f1abb/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "JOHN MICHEL CELLO-DVORAK CELLO CONCERTO in B minor 3rd",
+          "url": "https://commons.wikimedia.org/wiki/File:JOHN_MICHEL_CELLO-DVORAK_CELLO_CONCERTO_in_B_minor_3rd.ogg",
+          "date": "between 1894 and 1895 date QS:P,+1894-00-00T00:00:00Z/8,P1319,+1894-00-00T00:00:00Z/9,P1326,+1895-00-00T00:00:00Z/9",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-06",
+      "summary_basis": "Selected 6 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "key": "paper:d1167db1aea49c360411dc23",
       "doi": "",
       "arxiv_id": "2609.04199v1",
@@ -710,7 +1081,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 91
     },
     {
       "key": "event:dd952d35-cc40-411c-8591-6554d99277b0",
@@ -758,7 +1130,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 51
     },
     {
       "key": "event:c3c34bc9-e3ba-48c1-9705-752c123aee9e",
@@ -806,7 +1179,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 61
     },
     {
       "key": "event:a32aac7a-55a0-4a04-934e-7645928b64fb",
@@ -854,7 +1228,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 108
     },
     {
       "key": "event:a016f327-3189-4395-a5c1-3e6b0ad6ab75",
@@ -902,7 +1277,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 40
     },
     {
       "key": "event:84562587-3d35-41a2-8b7f-60d6f748db15",
@@ -950,7 +1326,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 38
     },
     {
       "key": "event:d6ca4c57-8f70-450b-a93f-37c26e2b5a1c",
@@ -1000,7 +1377,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 31
     },
     {
       "key": "event:c32b8f67-a885-4975-8aa5-e713940b0e67",
@@ -1048,7 +1426,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 92
     },
     {
       "key": "event:bfd5a0e6-d61a-4a97-a6dd-cf8e559f6e50",
@@ -1096,7 +1475,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 27
     },
     {
       "key": "event:bc5adac5-8703-4c42-9b43-08af379576c7",
@@ -1147,7 +1527,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 17
     },
     {
       "key": "event:9ebd7c71-a290-4de4-97f0-ec5ee065042d",
@@ -1195,7 +1576,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 93
     },
     {
       "key": "event:8b3f0eb1-8432-4275-ad87-ac45aee1cd68",
@@ -1243,7 +1625,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 81
     },
     {
       "key": "event:85693635-5d76-4edb-9617-ecd81637d6b1",
@@ -1292,7 +1675,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 79
     },
     {
       "key": "event:7a2046e0-9d27-44f9-b9f8-83a8253eb280",
@@ -1340,7 +1724,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 23
     },
     {
       "key": "event:15aba3c7-7559-4e74-8ea9-993be6fb3261",
@@ -1388,7 +1773,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 24
     },
     {
       "key": "event:1115366b-1c5e-4835-8a89-f72a446312ed",
@@ -1436,7 +1822,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 41
     },
     {
       "key": "event:00284c14-1d24-4e37-992a-63434b8974b9",
@@ -1484,7 +1871,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 74
     },
     {
       "key": "event:f9c0c2c3-fd2b-40bb-9525-94c2909a3588",
@@ -1532,7 +1920,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 66
     },
     {
       "key": "event:ea450577-ad19-48e8-a02a-48270b40ee30",
@@ -1581,7 +1970,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 35
     },
     {
       "key": "event:e8f1cb55-715e-4863-a2e6-e68bfb707026",
@@ -1629,7 +2019,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 69
     },
     {
       "key": "event:e76ed7b0-1150-47fd-8853-2299c271b948",
@@ -1677,7 +2068,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 29
     },
     {
       "key": "event:e1866f35-a7c0-4ec3-940f-fe2dd155a512",
@@ -1728,7 +2120,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 16
     },
     {
       "key": "event:ddffdcda-b6bf-4957-9831-8ce95fb05e75",
@@ -1776,7 +2169,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 36
     },
     {
       "key": "event:d6852802-925f-4a23-89f2-f52ca8ee2e0e",
@@ -1824,7 +2218,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 89
     },
     {
       "key": "event:b35eace4-8e33-4b65-9fd7-687cd9d1b78b",
@@ -1872,7 +2267,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 102
     },
     {
       "key": "event:b138984a-ffa5-41c8-9cac-dc409388c86d",
@@ -1920,7 +2316,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 82
     },
     {
       "key": "event:9e28b8bb-10e0-4f0c-99d0-5fd0c49d9720",
@@ -1968,7 +2365,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 53
     },
     {
       "key": "event:87463e3d-45f1-48a7-823b-fc25619584f5",
@@ -2017,7 +2415,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 54
     },
     {
       "key": "event:87319c4b-d0c5-4610-9fd5-6f9cf53714c0",
@@ -2065,7 +2464,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 8
     },
     {
       "key": "event:7fb83c64-1155-48d2-a591-6dea4a2fd95b",
@@ -2113,7 +2513,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 7
     },
     {
       "key": "event:7cbc3ee3-679b-4840-8685-1cc1befa55c3",
@@ -2161,7 +2562,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 103
     },
     {
       "key": "event:65ab52b1-c922-472b-843a-ca8cc3070d2b",
@@ -2209,7 +2611,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 22
     },
     {
       "key": "event:64d6926a-442c-440d-8372-21b1009e8b40",
@@ -2257,7 +2660,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 11
     },
     {
       "key": "event:59929de9-31be-48e6-b65d-1670f4851345",
@@ -2305,7 +2709,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 96
     },
     {
       "key": "event:3bb6abc9-be60-4500-bd65-8e3f6696bf3a",
@@ -2353,7 +2758,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 28
     },
     {
       "key": "event:3b117ab7-7526-4fe5-a2ec-28a9b31500b6",
@@ -2401,7 +2807,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 95
     },
     {
       "key": "event:36f54cf1-3ab5-4496-9f36-a369fa4e62bd",
@@ -2449,7 +2856,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 42
     },
     {
       "key": "event:3267186f-024f-47aa-b406-6096185cca97",
@@ -2497,7 +2905,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 68
     },
     {
       "key": "event:2dccc286-c4c7-482d-a07c-a885f0c7d011",
@@ -2545,7 +2954,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 32
     },
     {
       "key": "event:207bb492-9b47-45e4-9a02-06433350195d",
@@ -2593,7 +3003,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 48
     },
     {
       "key": "event:1cc7aa2a-089c-476e-9c7f-4a0c5dce3774",
@@ -2641,7 +3052,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 77
     },
     {
       "key": "event:1aeb2829-ecd4-4c3c-b547-eb50a1db2a90",
@@ -2689,7 +3101,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 78
     },
     {
       "key": "event:172e55ac-d3d8-4909-b0d9-e33d1778109e",
@@ -2737,7 +3150,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 3
     },
     {
       "key": "event:143ad789-0ff0-4645-9380-98153c556ab3",
@@ -2787,7 +3201,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 71
     },
     {
       "key": "event:ec4a1e10-c825-4879-a1c6-050951d71477",
@@ -2835,7 +3250,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 34
     },
     {
       "key": "event:e563c6d1-3a01-4d7f-97ea-1b92559e1853",
@@ -2883,7 +3299,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 55
     },
     {
       "key": "event:c4dbc459-149a-495f-8ba4-008a8058849f",
@@ -2934,7 +3351,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 19
     },
     {
       "key": "event:bc7b4584-d90a-4faf-85fd-a78e41c167b5",
@@ -2982,7 +3400,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 90
     },
     {
       "key": "event:b77af074-24ee-44f9-86d1-718e27aedefb",
@@ -3030,7 +3449,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 1
     },
     {
       "key": "event:ac3d7417-8087-4c84-a2ec-dd1b8768976a",
@@ -3078,7 +3498,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 76
     },
     {
       "key": "event:a8960241-1c98-46b5-bcd2-3b399874d1d2",
@@ -3126,7 +3547,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 63
     },
     {
       "key": "event:a0efe330-8ed8-4a67-ab8c-5960ee82c3fb",
@@ -3174,7 +3596,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 64
     },
     {
       "key": "event:9ed95a40-ab46-4d76-b701-7cfd031b1133",
@@ -3222,7 +3645,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 86
     },
     {
       "key": "event:909a35b9-e480-4605-ba61-1503c17455e1",
@@ -3270,7 +3694,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 70
     },
     {
       "key": "event:8bf3d389-7766-466d-8f25-3480ec85cb98",
@@ -3318,7 +3743,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 12
     },
     {
       "key": "event:832968eb-4185-4fb3-8712-88200d759cf5",
@@ -3366,7 +3792,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 65
     },
     {
       "key": "event:6c231012-a07f-4152-b560-782d82f10ec6",
@@ -3417,7 +3844,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 18
     },
     {
       "key": "event:699bf4f4-7e3d-4b9d-9b09-321fdc622202",
@@ -3465,7 +3893,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 59
     },
     {
       "key": "event:686c3177-6cc8-4603-b17d-365c62ab1f35",
@@ -3513,7 +3942,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 15
     },
     {
       "key": "event:602ed24e-b928-4b87-8fad-f9bfd2e9544b",
@@ -3561,7 +3991,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 60
     },
     {
       "key": "event:55b446cb-c17d-4c5a-b544-f034cfcfcb94",
@@ -3609,7 +4040,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 39
     },
     {
       "key": "event:4b15b2c2-7e21-4148-af2b-355564342be5",
@@ -3657,7 +4089,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 88
     },
     {
       "key": "event:4a3b473a-414c-4c6f-8693-da501c118d13",
@@ -3708,7 +4141,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 21
     },
     {
       "key": "event:45596d7e-5fe3-4121-a477-16b61f8041d0",
@@ -3756,7 +4190,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 85
     },
     {
       "key": "event:3aa32691-d132-4eb1-9ed7-32fa4e617154",
@@ -3804,7 +4239,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 75
     },
     {
       "key": "event:3a9a70d7-0c5d-4317-83a1-bb6dbfb36833",
@@ -3852,7 +4288,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 46
     },
     {
       "key": "event:395c2036-a625-42fe-a461-6a270cd997e3",
@@ -3900,7 +4337,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 4
     },
     {
       "key": "event:2ff5d6f9-c42e-4684-b657-a4d553aecbec",
@@ -3948,7 +4386,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 44
     },
     {
       "key": "event:2e452bbd-a9b1-441f-90d9-c7fd2477dc09",
@@ -3996,7 +4435,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 45
     },
     {
       "key": "event:2cce67b0-7fa9-49e1-b76f-ebe366fff9e9",
@@ -4044,7 +4484,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 56
     },
     {
       "key": "event:27459097-7617-4a62-81cf-ba1835f7f467",
@@ -4092,7 +4533,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 26
     },
     {
       "key": "event:2394ef80-4482-46a4-8675-41d815045eeb",
@@ -4140,7 +4582,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 9
     },
     {
       "key": "event:152394eb-4b37-4022-97bd-01ecd82e4114",
@@ -4188,7 +4631,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 73
     },
     {
       "key": "event:0b6a05bf-f28d-43c5-8325-bac94d9170f6",
@@ -4236,7 +4680,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 2
     },
     {
       "key": "event:00396d3e-532a-4f9c-ae6d-69e909d3f426",
@@ -4284,7 +4729,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 107
     },
     {
       "key": "event:fd6d4d29-b7b7-4a92-ac71-8ca32de98186",
@@ -4339,7 +4785,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 57
     },
     {
       "key": "event:fc16e022-51ac-4e71-b263-00c4b3c7be07",
@@ -4387,7 +4834,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 105
     },
     {
       "key": "event:cf64f370-2129-4f56-b669-c0d0350f1146",
@@ -4435,7 +4883,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 58
     },
     {
       "key": "event:b199dc3b-65a0-4235-a04f-6530a0618d56",
@@ -4483,7 +4932,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 37
     },
     {
       "key": "event:a8cec4b6-1473-4f0f-81e8-94bf140ff4dd",
@@ -4531,7 +4981,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 97
     },
     {
       "key": "event:9272dce9-381b-4345-bdaf-f8142923a32b",
@@ -4579,7 +5030,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 5
     },
     {
       "key": "event:8a41af89-e567-409d-be59-dc4637e4cfd3",
@@ -4627,7 +5079,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 104
     },
     {
       "key": "event:6c125f41-0a5f-44fb-8af8-ef2f281ee194",
@@ -4675,7 +5128,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 94
     },
     {
       "key": "event:6522d107-8d62-462d-95bd-41ced83a9a9b",
@@ -4723,7 +5177,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 33
     },
     {
       "key": "event:5f682ae1-17c1-4bba-8db1-b4a8590cef83",
@@ -4773,7 +5228,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 100
     },
     {
       "key": "event:51b36745-7cfa-47e8-a276-9b70444e613b",
@@ -4821,7 +5277,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 47
     },
     {
       "key": "event:2d35d24e-ecd1-4ecc-a6db-a20743a85385",
@@ -4869,7 +5326,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 43
     },
     {
       "key": "event:e9664542-5c26-4611-85e2-21e94b6cbabd",
@@ -4917,7 +5375,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 0
     },
     {
       "key": "event:e832909f-b43d-4646-8f89-b635eb5851ea",
@@ -4965,7 +5424,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 101
     },
     {
       "key": "event:e3ec7e9d-9a52-4151-89f9-c0c54c89b2dc",
@@ -5013,7 +5473,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 13
     },
     {
       "key": "event:cc124c80-f0d0-4f65-b45d-dd37942aef88",
@@ -5061,7 +5522,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 67
     },
     {
       "key": "event:aa90c16e-14e9-47f0-9e94-54bd3dd561a3",
@@ -5110,7 +5572,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 84
     },
     {
       "key": "event:896c07f2-3e72-40eb-b114-fb9bc7507b14",
@@ -5158,7 +5621,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 109
     },
     {
       "key": "event:88b3bea6-bc29-4565-bc30-f646c2da8fc1",
@@ -5206,7 +5670,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 30
     },
     {
       "key": "event:82e67fff-c7c6-44fc-9ce9-f7fc9a2a33e9",
@@ -5254,7 +5719,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 106
     },
     {
       "key": "event:7b5d8532-d0b5-412f-8f2b-a9e0a0bdf83d",
@@ -5302,7 +5768,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 52
     },
     {
       "key": "event:688d2116-cde9-4293-9b86-a4ec2585cea7",
@@ -5350,7 +5817,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 62
     },
     {
       "key": "event:4eafaa25-203c-49e3-b06b-03f9bdf4e95d",
@@ -5398,7 +5866,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 49
     },
     {
       "key": "event:397bf0ad-6578-456f-abd0-513969ffe9f0",
@@ -5446,7 +5915,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 72
     },
     {
       "key": "event:1e5f8b9a-8366-4555-8ffa-d67018eb6c5f",
@@ -5496,7 +5966,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 50
     },
     {
       "key": "event:1117bece-0bee-4b48-beb6-590720633fb6",
@@ -5544,7 +6015,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 6
     },
     {
       "key": "event:fb7e6caf-1500-40aa-810d-c1702c407904",
@@ -5595,7 +6067,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 20
     },
     {
       "key": "event:d2378fa6-c423-47f7-86ce-5230db95819f",
@@ -5643,7 +6116,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 10
     },
     {
       "key": "event:9fe18eeb-fd47-4eb4-ab2a-c00b61992673",
@@ -5694,7 +6168,8 @@
       "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 25
     },
     {
       "key": "event:7dc52761-158f-4319-8bc5-2ab6a88f2175",
@@ -5742,7 +6217,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 14
     },
     {
       "key": "event:7078c1bf-f3f4-4ab6-a30a-42a054c6caaa",
@@ -5791,7 +6267,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 99
     },
     {
       "key": "event:16fb7116-2b40-47e1-ae66-0fc7814a024a",
@@ -5839,7 +6316,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 98
     },
     {
       "key": "event:0f88ac0e-34c9-4291-a626-9ebe99b4c9bd",
@@ -5887,7 +6365,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 87
     },
     {
       "key": "event:07dd1da3-4efe-4177-9d12-cd22a1c8d5b5",
@@ -5935,7 +6414,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 83
     },
     {
       "key": "event:ed6bf134-8dc7-4bd2-b578-72333277d67a",
@@ -5983,7 +6463,8 @@
       "has_editorial": false,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
-      "period_end": "2026-08-30"
+      "period_end": "2026-08-30",
+      "daily_rank": 80
     }
   ]
 }
