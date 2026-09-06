@@ -966,6 +966,128 @@
       "edition": "2026-09"
     },
     {
+      "key": "paper:91078ae8ed566fc820332ae5",
+      "doi": "",
+      "arxiv_id": "2609.04190v1",
+      "original_headline": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+      "url": "https://arxiv.org/abs/2609.04190v1",
+      "date": "2026-09-03",
+      "authors": [
+        "Adheesh Sunil Juvekar",
+        "Onkar Kishor Susladkar",
+        "Kiet A. Nguyen",
+        "Muntasir Wahed",
+        "Nabeel Bashir",
+        "Xiaona Zhou",
+        "Tianjiao Yu",
+        "Vedant Shah",
+        "Ismini Lourentzou"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "34f25afe065ed0cd2e7ad9e16b2a9dab85395b3290409ae066eddc51ef1c774c",
+      "has_editorial": false,
+      "headline": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-91078ae8ed566fc820332ae5",
+      "path": "research/paper-91078ae8ed566fc820332ae5/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "One Editor, Many Edits: A Unified Training-Free Framework for Diverse Video Editing",
+          "url": "https://arxiv.org/abs/2609.04190v1",
+          "date": "2026-09-03",
+          "language": "en"
+        }
+      ],
+      "display_date": "3 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:219ed345ddee1b6421d660b0",
+      "doi": "",
+      "arxiv_id": "2609.04189v1",
+      "original_headline": "Robust PAC Learning of Concurrent Stochastic Games",
+      "url": "https://arxiv.org/abs/2609.04189v1",
+      "date": "2026-09-03",
+      "authors": [
+        "Angel Y. He",
+        "David Parker"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "4d52bb11e388f4313b1318e60ed5eb0e69ca854a2416c7c1afc766e3cb5728fc",
+      "has_editorial": true,
+      "headline": "New AI Framework Handles Uncertain Game Scenarios",
+      "deck": "A new AI method learns to play games with uncertain rules and finds optimal strategies.",
+      "what_happened": "Researchers developed an AI framework that learns to play concurrent stochastic games with uncertain transitions, ensuring it can find near-optimal strategies or prove no exact solution exists.",
+      "why_it_matters": "This advancement could improve AI's ability to handle complex, uncertain environments where traditional methods fail.",
+      "body_paragraphs": [
+        "The framework uses a data-driven approach to maintain confidence in transition kernels, allowing it to explore game states effectively. It also introduces a 'Nash margin' to determine if an optimal strategy exists.",
+        "The method has been tested on benchmark games and shows promise in handling uncertainty, though it requires a minimum reachability condition to function properly."
+      ],
+      "limitation": "The method requires a minimum reachability condition to function, limiting its applicability in some scenarios.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "kind": "research",
+      "slug": "paper-219ed345ddee1b6421d660b0",
+      "path": "research/paper-219ed345ddee1b6421d660b0/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Robust PAC Learning of Concurrent Stochastic Games",
+          "url": "https://arxiv.org/abs/2609.04189v1",
+          "date": "2026-09-03",
+          "language": "en"
+        }
+      ],
+      "display_date": "3 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
       "key": "paper:3dbb5af83842291f863af301",
       "doi": "10.1073/pnas.2612145123",
       "arxiv_id": "",
@@ -1090,14 +1212,17 @@
       "kind": "news",
       "slug": "development-dd952d35-cc40-411c-8591-6554d99277b0",
       "path": "story/development-dd952d35-cc40-411c-8591-6554d99277b0/index.html",
-      "headline": "Prediction: If Artificial Intelligence (AI) Leads to Unprecedented Economic Growth, These 2 S&P 500 Stocks Are Once-in-a-Decade Buying Opportunities Right Now",
+      "headline": "AI Growth May Boost Visa and Mastercard Revenue",
       "original_headline": "Prediction: If Artificial Intelligence (AI) Leads to Unprecedented Economic Growth, These 2 S&P 500 Stocks Are Once-in-a-Decade Buying Opportunities Right Now",
-      "deck": "Reporting from The Globe and Mail. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The article's explicit optimistic scenario links AI-driven economic growth to increased income and spending; agents would conduct transactions for people and organizations.",
-      "for_ai": "Visa and Mastercard create platforms enabling autonomous AI payments, extending agents' operative reach.",
+      "deck": "AI could drive economic growth, benefiting payment giants like Visa and Mastercard.",
+      "what_happened": "The article suggests that if AI leads to unprecedented economic growth, Visa and Mastercard could benefit from increased payment activity.",
+      "why_it_matters": "AI's potential to boost economic activity could lead to higher transaction volumes, increasing revenue for payment platforms.",
+      "body_paragraphs": [
+        "The article highlights that Visa and Mastercard are developing AI platforms to handle more payments, which could lead to increased revenue as more transactions occur.",
+        "The article also notes that Visa and Mastercard have strong network effects, giving them a competitive advantage in the payment industry."
+      ],
+      "for_humans": "AI-driven economic growth could lead to higher income and spending, benefiting individuals and organizations.",
+      "for_ai": "AI agents could handle more commerce, increasing revenue for payment platforms like Visa and Mastercard.",
       "human_direction": "gain",
       "ai_direction": "gain",
       "human_label": "Benefits reported",
@@ -1124,14 +1249,14 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "forecast",
+      "limitation": "The article is a prediction based on optimistic scenarios and does not account for potential negative impacts of AI on the economy.",
+      "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 51
+      "daily_rank": 16
     },
     {
       "key": "event:c3c34bc9-e3ba-48c1-9705-752c123aee9e",
@@ -1378,7 +1503,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 31
+      "daily_rank": 36
     },
     {
       "key": "event:c32b8f67-a885-4975-8aa5-e713940b0e67",
@@ -1823,7 +1948,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 41
+      "daily_rank": 46
     },
     {
       "key": "event:00284c14-1d24-4e37-992a-63434b8974b9",
@@ -2121,7 +2246,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 16
+      "daily_rank": 21
     },
     {
       "key": "event:ddffdcda-b6bf-4957-9831-8ce95fb05e75",
@@ -2170,7 +2295,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 36
+      "daily_rank": 41
     },
     {
       "key": "event:d6852802-925f-4a23-89f2-f52ca8ee2e0e",
@@ -4142,7 +4267,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 21
+      "daily_rank": 26
     },
     {
       "key": "event:45596d7e-5fe3-4121-a477-16b61f8041d0",
@@ -4289,7 +4414,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 46
+      "daily_rank": 51
     },
     {
       "key": "event:395c2036-a625-42fe-a461-6a270cd997e3",
@@ -4534,7 +4659,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 26
+      "daily_rank": 31
     },
     {
       "key": "event:2394ef80-4482-46a4-8675-41d815045eeb",
