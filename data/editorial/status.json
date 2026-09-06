@@ -1,0 +1,62 @@
+{
+  "release_id": "2026-W35",
+  "counts": {
+    "unchanged": 0,
+    "source_not_ready": 55,
+    "new_registry": 54,
+    "needs_model": 55,
+    "needs_rebind": 0,
+    "selected": 55,
+    "generated": 1,
+    "rebound": 0,
+    "failed": 11,
+    "deferred": 43
+  },
+  "failed_items": [
+    {
+      "event_id": "c3c34bc9-e3ba-48c1-9705-752c123aee9e",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "a016f327-3189-4395-a5c1-3e6b0ad6ab75",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "84562587-3d35-41a2-8b7f-60d6f748db15",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "bc5adac5-8703-4c42-9b43-08af379576c7",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "8b3f0eb1-8432-4275-ad87-ac45aee1cd68",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "85693635-5d76-4edb-9617-ecd81637d6b1",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "15aba3c7-7559-4e74-8ea9-993be6fb3261",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "1115366b-1c5e-4835-8a89-f72a446312ed",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "00284c14-1d24-4e37-992a-63434b8974b9",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "f9c0c2c3-fd2b-40bb-9525-94c2909a3588",
+      "error_type": "ValueError"
+    },
+    {
+      "event_id": "ea450577-ad19-48e8-a02a-48270b40ee30",
+      "error_type": "ValueError"
+    }
+  ],
+  "updated_at": "2026-09-06T16:21:14.184727+00:00"
+}
