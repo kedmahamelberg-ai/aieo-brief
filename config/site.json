@@ -2,9 +2,10 @@
   "site_name": "AIEO Brief",
   "site_url": "",
   "observatory_url": "https://observatory.hamelberg-ai.com",
+  "personal_site_url": "https://kedmahamelberg.com/",
   "supabase_url": "",
   "supabase_publishable_key": "",
-  "ga4_measurement_id": "",
+  "ga4_measurement_id": "G-QC9205V7V7",
   "community_enabled": false,
   "adsense": {
     "enabled": false,

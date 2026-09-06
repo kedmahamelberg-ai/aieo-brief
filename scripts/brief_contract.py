@@ -57,10 +57,11 @@ def safe_url(value, allow_mail=False, allow_http=False):
 
 def load_config(root):
     c=json.loads((Path(root)/'config/site.json').read_text())
+    c.setdefault('personal_site_url', 'https://kedmahamelberg.com/')
     for key,env in [('site_url','BRIEF_SITE_URL'),('supabase_url','SUPABASE_URL'),('supabase_publishable_key','SUPABASE_PUBLISHABLE_KEY'),('ga4_measurement_id','GA4_MEASUREMENT_ID')]:
         if os.environ.get(env): c[key]=os.environ[env]
     if os.environ.get('BRIEF_COMMUNITY_ENABLED'): c['community_enabled']=os.environ['BRIEF_COMMUNITY_ENABLED'].lower()=='true'
-    for key in ('site_url','observatory_url','supabase_url','support_url','newsletter_url','privacy_contact_url'):
+    for key in ('site_url','observatory_url','personal_site_url','supabase_url','support_url','newsletter_url','privacy_contact_url'):
         if c.get(key) and not safe_url(c[key]): raise ValueError('Use an absolute HTTPS URL for '+key)
     for key in ('site_url','supabase_url'):
         parsed=urlparse(c.get(key,''))

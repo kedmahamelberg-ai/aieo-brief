@@ -10,7 +10,7 @@
 </div>
 <div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
 </section>
-{% if culture_latest %}<section class="daily-invitation" aria-label="Daily culture"><div><span class="eyebrow">A DAILY PAUSE · {{ culture_date }}</span><p>Something to look at. A few words to keep. A little music.</p></div><a class="read-link" href="{{ local('culture/index.html') }}">Take a moment →</a></section>{% endif %}
+{% if culture_latest %}<section class="daily-invitation" aria-label="Daily culture"><div><span class="eyebrow">A DAILY PAUSE · {{ culture_date }}</span><p>Something to look at. A few words to keep. A little music.</p></div><a class="read-link moment-link" href="{{ local('culture/index.html') }}"><span class="moment-cup" aria-hidden="true"><img class="moment-cup-image" src="{{ local('assets/take-a-moment-cup.png') }}" width="72" height="72" alt="" loading="lazy"><img class="moment-steam" src="{{ local('assets/take-a-moment-steam.png') }}" width="72" height="72" alt="" loading="lazy"></span><span>Take a moment →</span></a></section>{% endif %}
 <div class="reading-layout">
 <section class="feed-column" id="news" aria-label="News feed">
 <div class="section-heading"><h2>Make time for what matters to you.</h2><span>Read a little. Leave with more clarity.</span></div>

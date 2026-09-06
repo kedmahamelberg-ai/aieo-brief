@@ -41,16 +41,24 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci --ignore-scripts
+      - name: Resolve the live GitHub Pages address
+        id: pages
+        if: vars.BRIEF_PUBLISH == 'true'
+        uses: actions/configure-pages@v5
       - name: Run release, headline and privacy regression checks
         run: |
           python -m unittest discover -s tests -p 'test_*.py'
           node --test tests/core.test.js tests/news-worker.test.js
           npm run test:database
       - name: Build the source-bound site and preserve past editions
+        env:
+          BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL || steps.pages.outputs.base_url }}
         run: python scripts/build_site.py --update-archive
       - name: Validate every public route and the published counts
         run: python scripts/validate_public_site.py
       - name: Register public story links and clean expired reading sessions
+        env:
+          BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL || steps.pages.outputs.base_url }}
         run: python scripts/register_public_items.py
       - name: Preserve stable story URLs
         shell: bash
@@ -72,9 +80,6 @@ jobs:
           include-hidden-files: true
           if-no-files-found: error
           retention-days: 14
-      - name: Prepare GitHub Pages
-        if: vars.BRIEF_PUBLISH == 'true'
-        uses: actions/configure-pages@v5
       - name: Upload the public website
         if: vars.BRIEF_PUBLISH == 'true'
         uses: actions/upload-pages-artifact@v4
