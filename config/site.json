@@ -1,6 +1,6 @@
 {
   "site_name": "AIEO Brief",
-  "site_url": "",
+  "site_url": "https://brief.hamelberg-ai.com",
   "observatory_url": "https://observatory.hamelberg-ai.com",
   "personal_site_url": "https://kedmahamelberg.com/",
   "supabase_url": "",
@@ -9,7 +9,7 @@
   "community_enabled": false,
   "adsense": {
     "enabled": false,
-    "publisher_id": "",
+    "publisher_id": "ca-pub-5170234738371400",
     "cmp_enabled": false,
     "slots": {
       "feed": "",

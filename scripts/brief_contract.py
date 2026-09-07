@@ -78,6 +78,9 @@ def load_config(root):
     ga=c.get('ga4_measurement_id','')
     if ga and not re.fullmatch(r'G-[A-Z0-9]+',ga): raise ValueError('GA4 measurement ID must start G-.')
     ad=c.get('adsense') or {}
+    for slot in (ad.get('slots') or {}).values():
+        if slot and (not isinstance(slot,str) or not re.fullmatch(r'\d{1,20}',slot)):
+            raise ValueError('Ad-unit IDs must contain only digits.')
     if ad.get('publisher_id') and not re.fullmatch(r'ca-pub-\d{16}',ad.get('publisher_id','')):raise ValueError('Invalid AdSense publisher ID')
     if ad.get('mode','auto') not in ('auto','placements'):raise ValueError('Choose auto or placements for advertising mode.')
     if ad.get('enabled'):

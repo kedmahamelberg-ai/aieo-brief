@@ -118,6 +118,14 @@ def culture_items():
             item[field+'_parts']=[{'text':part[1:-1] if part.startswith('_') and part.endswith('_') else part,'emphasis':part.startswith('_') and part.endswith('_')} for part in re.split(r'(_[^_]+_)',item.get(field,''))]
     return sorted(out,key=lambda x:(x['date'],x['key']),reverse=True)
 
+def advertising_eligible(page, story=None, news=()):
+    """Exclude source-only links, account pages and cultural excerpts from ads."""
+    def editorial(item):
+        return bool(item.get('has_editorial') and (item.get('what_happened') or item.get('body_paragraphs')))
+    if page == 'home':
+        return len(news) >= 4 and any(editorial(item) for item in news)
+    return page == 'story' and bool(story) and story.get('kind') in ('news', 'research') and editorial(story)
+
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--preview',action='store_true');parser.add_argument('--mock',action='store_true',help='Compatibility alias for the real-source preview');parser.add_argument('--output',default='_site');parser.add_argument('--update-archive',action='store_true');args=parser.parse_args()
     global SITE;SITE=ROOT/args.output
@@ -183,7 +191,9 @@ def main():
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
             news if ctx.get('page')=='home' else ctx.get('items',[]))
         client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin')} for x in local_items]
-        output=env.get_template(template).render(**defaults,local=local,canonical=(baseurl+'/'+path.removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
+        page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
+        page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
+        output=env.get_template(template).render(**page_defaults,local=local,canonical=(baseurl+'/'+path.removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
     render('research/index.html','collection.html',page='research',items=research)

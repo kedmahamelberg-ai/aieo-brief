@@ -42,7 +42,7 @@
 <footer class="site-footer">
   <div><a class="wordmark footer-mark" href="{{ local('index.html') }}">the brief<span>.</span></a><p>A research initiative by <a href="{{ config.personal_site_url }}">Kedma Hamelberg</a>.</p><a href="{{ config.observatory_url }}">AI Empowerment Observatory ↗</a><a href="{{ config.personal_site_url }}">Kedma’s research and work ↗</a></div>
   <div><a href="{{ local('about/index.html') }}">How we write</a><a href="{{ local('culture/index.html') }}">Art, words & music</a><a href="{{ local('notifications/index.html') }}">News notifications</a><a href="{{ local('feed.xml') }}">RSS feed</a></div>
-  <div><a href="{{ local('privacy/index.html') }}">Privacy</a><button class="text-button" data-action="privacy">Privacy choices</button><a href="{{ local('account/index.html') }}">Your account</a></div>
+  <div><a href="{{ local('privacy/index.html') }}">Privacy</a><button class="text-button" data-action="privacy">Privacy choices</button><a href="{{ local('account/index.html') }}">Your account</a>{% if config.support_url %}<a href="{{ config.support_url }}" target="_blank" rel="noopener noreferrer" data-support-link="footer">Support the Brief</a>{% endif %}</div>
 </footer>
 <dialog id="share-dialog" class="dialog"><button data-close class="close" aria-label="Close sharing">×</button><h2>Pass it on</h2><p data-share-heading></p><div class="share-options">
 {% for label,channel in [('WhatsApp','whatsapp'),('LinkedIn','linkedin'),('Facebook','facebook'),('Bluesky','bluesky'),('X','x'),('Reddit','reddit'),('Telegram','telegram'),('Email','email')] %}<a data-share-channel="{{ channel }}" target="_blank" rel="noopener noreferrer">{{ label }}</a>{% endfor %}

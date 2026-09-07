@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 from datetime import datetime, timedelta
+from pathlib import Path
 from zoneinfo import ZoneInfo
 import requests
 from brief_contract import validate_pair, relationship_fingerprint
@@ -30,6 +31,9 @@ def needs_update(release, relationship, published):
 def brief_url():
     if os.environ.get('BRIEF_SITE_URL'):
         return os.environ['BRIEF_SITE_URL'].rstrip('/')
+    configured = json.loads((Path(__file__).resolve().parents[1] / 'config/site.json').read_text()).get('site_url')
+    if configured:
+        return configured.rstrip('/')
     owner, repo = os.environ.get('GITHUB_REPOSITORY', 'kedmahamelberg-ai/aieo-brief').split('/', 1)
     return f'https://{owner}.github.io/{repo}'
 
