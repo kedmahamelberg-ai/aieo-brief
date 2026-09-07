@@ -45,6 +45,8 @@ jobs:
           python-version: '3.12'
           cache: pip
       - run: python -m pip install -r requirements.txt
+      - name: Check editorial rules and resumable progress
+        run: python -m unittest discover -s tests -p 'test_editorial_recovery.py' -v
       - name: Check release and pending news before loading the model
         id: news
         continue-on-error: true
@@ -107,5 +109,5 @@ jobs:
       - name: Report incomplete automatic drafts
         if: always() && (steps.news.outcome == 'failure' || steps.write_news.outcome == 'failure' || steps.write_research.outcome == 'failure' || steps.collect.outcome == 'failure')
         run: |
-          echo '::error::Some sources or drafts need another automatic pass. Saved valid summaries and original source links are preserved.'
+          echo '::error::A source check or draft generation failed. Check the earlier failed step and the draft rejection reasons in the run summary. Saved valid summaries and original source links are preserved.'
           exit 1

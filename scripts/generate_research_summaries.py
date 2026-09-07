@@ -4,10 +4,11 @@ Only original prose and bibliographic metadata are written to the public researc
 """
 from __future__ import annotations
 import argparse,json,os,time
+from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
 from brief_contract import PROMPT_VERSION,digest,safe_url
-from editorial_engine import write_story
+from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
 ROOT=Path(__file__).resolve().parents[1]
 PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256')
 
@@ -40,7 +41,7 @@ def main():
     from supabase import create_client
     client=create_client(os.environ['SUPABASE_URL'],os.environ['SUPABASE_SECRET_KEY'])
     deadline=time.monotonic()+args.max_runtime_minutes*60;counts={'generated':0,'failed':0,'metadata_only':0,'deferred':0,'unchanged':0}
-    audit=[];selected=[]
+    audit=[];selected=[];failures=[]
     retry_path=ROOT/'data/research/retry-state.json'
     retry=json.loads(retry_path.read_text()) if retry_path.exists() else {}
     def checkpoint():
@@ -48,7 +49,7 @@ def main():
         path=ROOT/'data/research/public.json';tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
         retry_path.write_text(json.dumps(retry,indent=2)+'\n')
     work=sorted(data['papers'],key=lambda p:(retry.get(p['key'],{}).get('attempts',0),p['date'],p['key']))
-    for p in work:
+    for n,p in enumerate(work):
         if not safe_url(p.get('url')):continue
         prior=old.get(p['key'],{})
         if p not in todo and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
@@ -57,24 +58,35 @@ def main():
         if not p.get('abstract'):counts['metadata_only']+=1;selected.append(base);checkpoint();continue
         if time.monotonic()>deadline-90:counts['deferred']+=1;selected.append(base);checkpoint();continue
         retry[p['key']]={'attempts':retry.get(p['key'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
+        stage='generation'
+        print(f'[{n+1}/{len(work)}] Preparing research '+p['key'],flush=True)
         try:
             sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':p['abstract'],'evidence_basis':'abstract_only'}]
             kind='preprint' if p['source'] in ('arxiv','ssrn') else 'abstract'
             draft,proof=write_story({'event_title':p['original_headline']},{},sources,kind=kind,deadline=deadline)
             record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_basis':'Summary of the abstract','prompt_version':PROMPT_VERSION,'reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
+            stage='persistence'
             client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'validation':proof}},on_conflict='input_sha256').execute()
             selected.append(record);counts['generated']+=1
             retry.pop(p['key'],None)
             audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p['abstract'],'validation':proof,'output_sha256':digest(record)})
+            print('Saved research '+p['key'],flush=True)
         except TimeoutError:counts['deferred']+=1;selected.append(base)
-        except Exception as e:counts['failed']+=1;selected.append(base);print('Summary withheld for '+p['key']+' ('+type(e).__name__+')')
+        except Exception as e:
+            counts['failed']+=1;selected.append(base)
+            diagnostic=failure_diagnostic(e,stage)
+            failures.append({'key':p['key'],**diagnostic})
+            print('Summary withheld for '+p['key']+': '+json.dumps(diagnostic,sort_keys=True),flush=True)
         checkpoint()
     retry={k:v for k,v in retry.items() if k in {p['key'] for p in data['papers']}}
     checkpoint()
     (ROOT/'data/research/private/validation.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
-    (ROOT/'data/research/generation-status.json').write_text(json.dumps(counts,indent=2)+'\n')
+    failure_counts=dict(Counter(x['code'] for x in failures))
+    (ROOT/'data/research/generation-status.json').write_text(json.dumps({**counts,'engine_version':ENGINE_VERSION,'failure_counts':failure_counts,'failed_items':failures,'updated_at':datetime.now(timezone.utc).isoformat()},indent=2)+'\n')
     print(json.dumps(counts,indent=2))
     if os.environ.get('GITHUB_STEP_SUMMARY'):
-        with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('## Research\n\n'+'\n'.join(f'- {k}: **{v}**' for k,v in counts.items())+'\n\nAbstract-only summaries are labelled. Sources without an abstract remain original-paper links.\n')
+        with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+            f.write('## Research\n\n'+'\n'.join(f'- {k}: **{v}**' for k,v in counts.items())+'\n\nAbstract-only summaries are labelled. Sources without an abstract remain original-paper links.\n')
+            if failures:f.write('\nDraft rejection reasons:\n\n'+'\n'.join(f'- `{code}`: **{count}**' for code,count in sorted(failure_counts.items()))+'\n\nSafe per-item details are in `data/research/generation-status.json`.\n')
     if counts['failed'] and not counts['generated']:raise SystemExit(1)
 if __name__=='__main__':main()

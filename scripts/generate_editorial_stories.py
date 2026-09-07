@@ -4,13 +4,14 @@ No complete body, no invented rewrite. Existing publisher-linked entries stay re
 """
 from __future__ import annotations
 import argparse,json,os,time,uuid
+from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
 from supabase import create_client
 from brief_contract import PROMPT_VERSION,digest,fixed_relationship,validate_pair
 from brief_database import current_maps
 from build_site import inputs
-from editorial_engine import write_story
+from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
 from source_evidence_quality import assess_body
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
@@ -81,6 +82,7 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--limit',type=int,default=0);p.add_argument('--force',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--max-runtime-minutes',type=int,default=45);p.add_argument('--strict',action='store_true');args=p.parse_args()
     if not 1<=args.max_runtime_minutes<=105 or not 0<=args.limit<=1000:raise ValueError('Use a 1–105 minute budget and a limit of 0–1000.')
     release,sym=inputs();validate_pair(release,sym)
+    print('Reading completed Observatory edition: '+release['release_id'],flush=True)
     client=create_client(os.environ['SUPABASE_URL'],os.environ['SUPABASE_SECRET_KEY'])
     client.table('brief_editorial_provenance').select('input_sha256').limit(1).execute()
     ids=[str(e.get('effective_event_id') or e['event_id']) for e in release['evidence']]
@@ -93,25 +95,32 @@ def main():
     deadline=time.monotonic()+args.max_runtime_minutes*60;failures=[]
     for n,item in enumerate(items):
         if time.monotonic()>deadline-90:counts['deferred']=len(items)-n;break
+        stage='generation'
+        print(f'[{n+1}/{len(items)}] Preparing news {item["eid"]}',flush=True)
         try:
             if item['reuse']:draft=item['latest'];proof={}
             else:draft,proof=write_story(item['event'],item['relation']['axes'],item['sources'],deadline=deadline)
+            stage='persistence'
             persist(client,item,release,draft,proof);counts['rebound' if item['reuse'] else 'generated']+=1;state.pop(item['fp'],None)
             print(f'Saved {item["eid"]}: {draft["editorial_headline"]}',flush=True)
         except TimeoutError:counts['deferred']=len(items)-n;break
         except Exception as e:
             counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
-            failures.append({'event_id':item['eid'],'error_type':type(e).__name__})
+            diagnostic=failure_diagnostic(e,stage)
+            failures.append({'event_id':item['eid'],**diagnostic})
             # Do not print PostgREST errors: they can contain private failing rows.
-            print(f'Kept source link for {item["eid"]}; draft was not published ({type(e).__name__}).',flush=True)
+            print(f'Kept source link for {item["eid"]}; draft withheld: '+json.dumps(diagnostic,sort_keys=True),flush=True)
     path=ROOT/'data/editorial';path.mkdir(parents=True,exist_ok=True)
     # Keep bounded retry metadata only; no bodies, quotes or private errors enter Git.
     active={x['fp'] for x in items};state={k:v for k,v in state.items() if k in active}
     (path/'retry-state.json').write_text(json.dumps(state,indent=2)+'\n')
-    (path/'status.json').write_text(json.dumps({'release_id':release['release_id'],'counts':counts,'failed_items':failures,'updated_at':datetime.now(timezone.utc).isoformat()},indent=2)+'\n')
+    failure_counts=dict(Counter(x['code'] for x in failures))
+    (path/'status.json').write_text(json.dumps({'release_id':release['release_id'],'engine_version':ENGINE_VERSION,'counts':counts,'failure_counts':failure_counts,'failed_items':failures,'updated_at':datetime.now(timezone.utc).isoformat()},indent=2)+'\n')
     print(json.dumps(counts,indent=2))
     if os.environ.get('GITHUB_STEP_SUMMARY'):
-        with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('## Brief news generation\n\n'+ '\n'.join(f'- {k.replace("_"," ")}: **{v}**' for k,v in counts.items())+'\n\nUnfinished items resume automatically. Source links remain available.\n')
+        with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
+            f.write('## Brief news generation\n\nCompleted edition: **'+release['release_id']+'**.\n\n'+ '\n'.join(f'- {k.replace("_"," ")}: **{v}**' for k,v in counts.items())+'\n\nDeferred items remain queued for the next generation run. Source links remain available.\n')
+            if failures:f.write('\nDraft rejection reasons:\n\n'+'\n'.join(f'- `{code}`: **{count}**' for code,count in sorted(failure_counts.items()))+'\n\nSafe per-item details are in `data/editorial/status.json`.\n')
     if counts['failed'] and (args.strict or not counts['generated']+counts['rebound']):return 1
     return 0
 if __name__=='__main__':raise SystemExit(main())
