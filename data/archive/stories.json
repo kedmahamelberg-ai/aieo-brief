@@ -1081,6 +1081,360 @@
       ]
     },
     {
+      "key": "paper:af880433876f4e2e2ebf458c",
+      "doi": "",
+      "arxiv_id": "2609.05404v1",
+      "original_headline": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+      "url": "https://arxiv.org/abs/2609.05404v1",
+      "date": "2026-09-04",
+      "authors": [
+        "Sihwa Park"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "08af9ec6c47719b7fbd1c8611075bd729bdf41526a6c688e835567c0f4dd729d",
+      "has_editorial": false,
+      "headline": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-af880433876f4e2e2ebf458c",
+      "path": "research/paper-af880433876f4e2e2ebf458c/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
+          "url": "https://arxiv.org/abs/2609.05404v1",
+          "date": "2026-09-04",
+          "language": "en"
+        }
+      ],
+      "display_date": "4 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:a2a02f3834100731fa4b30d5",
+      "doi": "",
+      "arxiv_id": "2609.05401v1",
+      "original_headline": "Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models",
+      "url": "https://arxiv.org/abs/2609.05401v1",
+      "date": "2026-09-04",
+      "authors": [
+        "Wonje Jeung",
+        "Sangyeon Yoon",
+        "Hyesoo Hong",
+        "Yoonjun Cho",
+        "Dongjae Jeon",
+        "Bumjun Kim",
+        "Jean Oh",
+        "Youngjae Yu",
+        "Albert No"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "3fbdf796a239455facea40b35e1b3115646d1516fb876e17728b9fa0167f72f8",
+      "has_editorial": false,
+      "headline": "Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-a2a02f3834100731fa4b30d5",
+      "path": "research/paper-a2a02f3834100731fa4b30d5/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Same Trajectory, Contradictory Rewards (ROBORMBENCH): Paraphrase Fragility in Vision Language Reward Models",
+          "url": "https://arxiv.org/abs/2609.05401v1",
+          "date": "2026-09-04",
+          "language": "en"
+        }
+      ],
+      "display_date": "4 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:931e105f0c64db0569d48b27",
+      "doi": "",
+      "arxiv_id": "2609.05415v1",
+      "original_headline": "UniMate: One Unified Model to Animate Diverse Skeletons",
+      "url": "https://arxiv.org/abs/2609.05415v1",
+      "date": "2026-09-04",
+      "authors": [
+        "Linzhan Mou",
+        "Jiahui Lei",
+        "Zhiyang Dou",
+        "Chenyue Cai",
+        "Chaoyue Song",
+        "Adam Finkelstein",
+        "Szymon Rusinkiewicz"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "b098318d7e8808fc95f51cf8b8aa0b62c0b311f312bda2f69beb28e66d4e88ef",
+      "has_editorial": false,
+      "headline": "UniMate: One Unified Model to Animate Diverse Skeletons",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-931e105f0c64db0569d48b27",
+      "path": "research/paper-931e105f0c64db0569d48b27/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "UniMate: One Unified Model to Animate Diverse Skeletons",
+          "url": "https://arxiv.org/abs/2609.05415v1",
+          "date": "2026-09-04",
+          "language": "en"
+        }
+      ],
+      "display_date": "4 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:7aa62c0974d9fdd79752a847",
+      "doi": "",
+      "arxiv_id": "2609.05403v1",
+      "original_headline": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+      "url": "https://arxiv.org/abs/2609.05403v1",
+      "date": "2026-09-04",
+      "authors": [
+        "Quoc H. Nguyen",
+        "Ali Lafzi",
+        "Abhijeet Phatak",
+        "Siddharth Pratap Singh",
+        "Rohit Upadhyay",
+        "Yogananda Domlur Seetharama",
+        "Chittaranjan Tripathy"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "a6ed472d32e45e09bb1e2ac81ee03cca126fa94d897b22106580dd4fa237f15a",
+      "has_editorial": false,
+      "headline": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-7aa62c0974d9fdd79752a847",
+      "path": "research/paper-7aa62c0974d9fdd79752a847/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+          "url": "https://arxiv.org/abs/2609.05403v1",
+          "date": "2026-09-04",
+          "language": "en"
+        }
+      ],
+      "display_date": "4 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:79f5371de41555e5281d0972",
+      "doi": "",
+      "arxiv_id": "2609.05405v1",
+      "original_headline": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+      "url": "https://arxiv.org/abs/2609.05405v1",
+      "date": "2026-09-04",
+      "authors": [
+        "Ji Soo Lee",
+        "Xilun Chen",
+        "Pierce Chuang",
+        "Ashish Shenoy",
+        "Jason Wei",
+        "Dohwan Ko",
+        "Hyunwoo J. Kim",
+        "Benoit Corda"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "8b6ce8155b9fe27c13ad94a6141f34de7ca05cb3f5b4e7c41b0f8f39d87654be",
+      "has_editorial": false,
+      "headline": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-79f5371de41555e5281d0972",
+      "path": "research/paper-79f5371de41555e5281d0972/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "WearableQA: A Benchmark for Health Reasoning over Real-World Wearable Data",
+          "url": "https://arxiv.org/abs/2609.05405v1",
+          "date": "2026-09-04",
+          "language": "en"
+        }
+      ],
+      "display_date": "4 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:03924bfde20e0b10ba47461b",
+      "doi": "",
+      "arxiv_id": "2609.05396v1",
+      "original_headline": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+      "url": "https://arxiv.org/abs/2609.05396v1",
+      "date": "2026-09-04",
+      "authors": [
+        "Yuxiao Li",
+        "Keke Hu",
+        "Santiago Mazuelas",
+        "Yuan Shen"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "f7a8ac5e6b4663ff3101a6fcf724338cbd34814d1687172252be8416e3182f1b",
+      "has_editorial": false,
+      "headline": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-03924bfde20e0b10ba47461b",
+      "path": "research/paper-03924bfde20e0b10ba47461b/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "A Deep Generative Model for Synthesizing Labeled Wireless Signals",
+          "url": "https://arxiv.org/abs/2609.05396v1",
+          "date": "2026-09-04",
+          "language": "en"
+        }
+      ],
+      "display_date": "4 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
       "key": "paper:d1167db1aea49c360411dc23",
       "doi": "",
       "arxiv_id": "2609.04199v1",
@@ -1816,7 +2170,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 22
+      "daily_rank": 32
     },
     {
       "key": "event:d6ca4c57-8f70-450b-a93f-37c26e2b5a1c",
@@ -2214,7 +2568,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 7
+      "daily_rank": 17
     },
     {
       "key": "event:15aba3c7-7559-4e74-8ea9-993be6fb3261",
@@ -2855,7 +3209,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 37
+      "daily_rank": 42
     },
     {
       "key": "event:87463e3d-45f1-48a7-823b-fc25619584f5",
@@ -3248,7 +3602,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 12
+      "daily_rank": 22
     },
     {
       "key": "event:3b117ab7-7526-4fe5-a2ec-28a9b31500b6",
@@ -3395,7 +3749,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 52
+      "daily_rank": 57
     },
     {
       "key": "event:2dccc286-c4c7-482d-a07c-a885f0c7d011",
@@ -3452,12 +3806,15 @@
       "kind": "news",
       "slug": "development-207bb492-9b47-45e4-9a02-06433350195d",
       "path": "story/development-207bb492-9b47-45e4-9a02-06433350195d/index.html",
-      "headline": "Artificial intelligence: Trump administration sanctions against Anthropic canceled by a federal judge",
+      "headline": "Federal judge cancels Trump sanctions on Anthropic over criticism of government",
       "original_headline": "Artificial intelligence: Trump administration sanctions against Anthropic canceled by a federal judge",
-      "deck": "Reporting from Le Monde.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A federal judge in the U.S. has canceled sanctions against Anthropic, an AI company, over its public criticism of the government.",
+      "what_happened": "A federal judge in the U.S. has canceled sanctions against Anthropic, an AI company, over its public criticism of the government.",
+      "why_it_matters": "The ruling highlights the tension between government control and free speech in the context of AI development.",
+      "body_paragraphs": [
+        "The judge ruled that the sanctions were illegal, stating that the government had punished the company for criticizing it, not for any real security risks.",
+        "The decision was based on the argument that the government had abandoned its original claim that Anthropic could modify its models after delivery to make them inoperable by the military."
+      ],
       "for_humans": "The ruling protects criticism of government and preserves the company's ability to refuse autonomous lethal attacks and mass surveillance uses.",
       "for_ai": "One set of contract sanctions is annulled, restoring access, but a separate procurement restriction remains unresolved and the company's use restrictions persist.",
       "human_direction": "gain",
@@ -3486,14 +3843,14 @@
       "topic": "policy",
       "topic_label": "Rules & rights",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "company_claim",
+      "limitation": "The decision only addresses one of two legal cases against the government, and the outcome is not final.",
+      "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 32
+      "daily_rank": 2
     },
     {
       "key": "event:1cc7aa2a-089c-476e-9c7f-4a0c5dce3774",
@@ -3550,14 +3907,17 @@
       "kind": "news",
       "slug": "development-1aeb2829-ecd4-4c3c-b547-eb50a1db2a90",
       "path": "story/development-1aeb2829-ecd4-4c3c-b547-eb50a1db2a90/index.html",
-      "headline": "A Cultural History of Artificial Intelligence",
+      "headline": "Book Examines AI's Cultural Roots, Not Just Tech Progress",
       "original_headline": "A Cultural History of Artificial Intelligence",
-      "deck": "Reporting from Fabula, la recherche en littérature. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The notice introduces a cultural-history book and poses questions about knowledge and teaching; it supplies no particular directional human effect.",
-      "for_ai": "The historical panorama does not establish a new AI capability, resource change, restriction or failure.",
+      "deck": "A cultural history of AI explores its roots in philosophy, art, and science, not just its technological development.",
+      "what_happened": "A new book examines the cultural history of AI, tracing its roots in philosophy, art, and science rather than just its technological development.",
+      "why_it_matters": "Understanding AI's cultural roots can help us better grasp its impact on society and technology.",
+      "body_paragraphs": [
+        "The book, 'Une histoire culturelle de l'intelligence artificielle', explores how the concept of AI has evolved alongside human culture, from ancient myths to modern technology.",
+        "The book argues that AI is not just a product of technological progress, but a reflection of human thought and creativity."
+      ],
+      "for_humans": "The book highlights how AI has been shaped by human culture and ideas over time.",
+      "for_ai": "The book shows that AI is not just a technological advancement, but a cultural phenomenon.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -3584,14 +3944,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The book focuses on the cultural history of AI, not its current technological capabilities or future potential.",
+      "has_editorial": true,
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 62
+      "daily_rank": 12
     },
     {
       "key": "event:172e55ac-d3d8-4909-b0d9-e33d1778109e",
@@ -4037,7 +4397,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 47
+      "daily_rank": 52
     },
     {
       "key": "event:a0efe330-8ed8-4a67-ab8c-5960ee82c3fb",
@@ -4334,7 +4694,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 2
+      "daily_rank": 7
     },
     {
       "key": "event:699bf4f4-7e3d-4b9d-9b09-321fdc622202",
@@ -5121,7 +5481,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 57
+      "daily_rank": 62
     },
     {
       "key": "event:0b6a05bf-f28d-43c5-8325-bac94d9170f6",
@@ -5373,7 +5733,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 42
+      "daily_rank": 47
     },
     {
       "key": "event:b199dc3b-65a0-4235-a04f-6530a0618d56",
@@ -5667,7 +6027,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 17
+      "daily_rank": 27
     },
     {
       "key": "event:5f682ae1-17c1-4bba-8db1-b4a8590cef83",
@@ -5816,7 +6176,7 @@
       "edition": "2026-W35",
       "period_start": "2026-08-24",
       "period_end": "2026-08-30",
-      "daily_rank": 27
+      "daily_rank": 37
     },
     {
       "key": "event:e9664542-5c26-4611-85e2-21e94b6cbabd",
