@@ -1,7 +1,7 @@
 {
-  "generated": 1,
-  "failed": 1,
+  "generated": 0,
+  "failed": 5,
   "metadata_only": 0,
-  "deferred": 0,
-  "unchanged": 5
+  "deferred": 1,
+  "unchanged": 1
 }

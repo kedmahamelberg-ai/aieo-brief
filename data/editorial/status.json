@@ -1,62 +1,50 @@
 {
   "release_id": "2026-W35",
   "counts": {
-    "unchanged": 0,
+    "unchanged": 1,
     "source_not_ready": 55,
-    "new_registry": 54,
-    "needs_model": 55,
+    "new_registry": 53,
+    "needs_model": 54,
     "needs_rebind": 0,
-    "selected": 55,
-    "generated": 1,
+    "selected": 54,
+    "generated": 2,
     "rebound": 0,
-    "failed": 11,
-    "deferred": 43
+    "failed": 8,
+    "deferred": 44
   },
   "failed_items": [
     {
-      "event_id": "c3c34bc9-e3ba-48c1-9705-752c123aee9e",
+      "event_id": "e8f1cb55-715e-4863-a2e6-e68bfb707026",
       "error_type": "ValueError"
     },
     {
-      "event_id": "a016f327-3189-4395-a5c1-3e6b0ad6ab75",
+      "event_id": "e1866f35-a7c0-4ec3-940f-fe2dd155a512",
       "error_type": "ValueError"
     },
     {
-      "event_id": "84562587-3d35-41a2-8b7f-60d6f748db15",
+      "event_id": "ddffdcda-b6bf-4957-9831-8ce95fb05e75",
       "error_type": "ValueError"
     },
     {
-      "event_id": "bc5adac5-8703-4c42-9b43-08af379576c7",
+      "event_id": "87463e3d-45f1-48a7-823b-fc25619584f5",
       "error_type": "ValueError"
     },
     {
-      "event_id": "8b3f0eb1-8432-4275-ad87-ac45aee1cd68",
+      "event_id": "64d6926a-442c-440d-8372-21b1009e8b40",
       "error_type": "ValueError"
     },
     {
-      "event_id": "85693635-5d76-4edb-9617-ecd81637d6b1",
+      "event_id": "3b117ab7-7526-4fe5-a2ec-28a9b31500b6",
       "error_type": "ValueError"
     },
     {
-      "event_id": "15aba3c7-7559-4e74-8ea9-993be6fb3261",
+      "event_id": "3267186f-024f-47aa-b406-6096185cca97",
       "error_type": "ValueError"
     },
     {
-      "event_id": "1115366b-1c5e-4835-8a89-f72a446312ed",
-      "error_type": "ValueError"
-    },
-    {
-      "event_id": "00284c14-1d24-4e37-992a-63434b8974b9",
-      "error_type": "ValueError"
-    },
-    {
-      "event_id": "f9c0c2c3-fd2b-40bb-9525-94c2909a3588",
-      "error_type": "ValueError"
-    },
-    {
-      "event_id": "ea450577-ad19-48e8-a02a-48270b40ee30",
+      "event_id": "1cc7aa2a-089c-476e-9c7f-4a0c5dce3774",
       "error_type": "ValueError"
     }
   ],
-  "updated_at": "2026-09-06T16:21:14.184727+00:00"
+  "updated_at": "2026-09-07T18:30:23.076621+00:00"
 }
