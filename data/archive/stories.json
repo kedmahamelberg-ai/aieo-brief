@@ -1503,7 +1503,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 96
+      "daily_rank": 109
     },
     {
       "key": "event:d4ff674f-b8ed-4fb1-b37e-75f0bfcd1632",
@@ -1552,7 +1552,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 7
+      "daily_rank": 12
     },
     {
       "key": "event:d27c9e97-c061-4eec-a2f4-8a2717501a7f",
@@ -1748,7 +1748,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 82
+      "daily_rank": 104
     },
     {
       "key": "event:67ac90b6-b067-4967-bf41-a4e616d9e741",
@@ -1762,13 +1762,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "no people outcome stated No human-side relation is described",
+      "for_ai": "no AI-side enabling or constraining signal is described No AI-side relation is described",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -1797,7 +1797,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 112
+      "daily_rank": 92
     },
     {
       "key": "event:4fffba8b-06fe-4e3c-9470-7dbd52259df0",
@@ -1895,7 +1895,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 92
+      "daily_rank": 108
     },
     {
       "key": "event:392286f7-815a-410d-9560-80a7e2f99012",
@@ -1944,7 +1944,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 2
+      "daily_rank": 7
     },
     {
       "key": "event:33018ed3-7996-4cca-a937-09b4f91a74ab",
@@ -1995,7 +1995,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 15
+      "daily_rank": 20
     },
     {
       "key": "event:23af84b3-78cd-4c90-8504-ef0bb7390004",
@@ -2009,13 +2009,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No human-side relation is described in the evidence.",
+      "for_ai": "No AI-side relation is described in the evidence.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -2044,7 +2044,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 24
+      "daily_rank": 116
     },
     {
       "key": "event:1e3c2f6c-b23f-4eed-8339-7de1da42f2dc",
@@ -2193,7 +2193,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 57
+      "daily_rank": 77
     },
     {
       "key": "event:e5d2be95-5396-4dc4-9327-38500e6d9eae",
@@ -2242,7 +2242,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 110
+      "daily_rank": 112
     },
     {
       "key": "event:de21aed2-e74b-49b1-90b9-5deedb0e3fcf",
@@ -2291,7 +2291,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 35
+      "daily_rank": 40
     },
     {
       "key": "event:d9cba3eb-4b9f-4ac9-a024-7d9939c77c9e",
@@ -2305,13 +2305,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No human benefit or loss is stated in the evidence. No human-side relation is described in the evidence.",
+      "for_ai": "The AI system is described as lacking judgment, consciousness, and accountability. No AI-side relation is described in the evidence.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -2340,7 +2340,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 108
+      "daily_rank": 62
     },
     {
       "key": "event:d37b2be0-9d2c-4153-8d11-8835ca3412fa",
@@ -2487,7 +2487,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 52
+      "daily_rank": 72
     },
     {
       "key": "event:774fc675-1a43-4d20-8128-5f606d0d70b9",
@@ -2536,7 +2536,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 129
+      "daily_rank": 2
     },
     {
       "key": "event:3a4752e6-f707-49c4-9dc2-ddaca4acd615",
@@ -2637,7 +2637,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 106
+      "daily_rank": 111
     },
     {
       "key": "event:0ef85c02-5f7e-43ff-af8d-649872eac9f3",
@@ -3147,7 +3147,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 30
+      "daily_rank": 35
     },
     {
       "key": "event:f26d3127-52e2-4890-9966-4a8927ced43c",
@@ -3211,13 +3211,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No human-side relation is described",
+      "for_ai": "No AI-side relation is described",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -3246,7 +3246,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 113
+      "daily_rank": 106
     },
     {
       "key": "event:e5795415-71b8-4100-a353-48946f22632c",
@@ -3260,13 +3260,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "AIIDPZ supports the expansion of green innovation and productivity through enhanced environmental governance and industrial structure upgrading. AIIDPZ may accelerate the diffusion and practical application of green technologies, contributing to broader sustainability outcomes in China. AI integration lowers innovation costs and improves efficiency for green technologies, contributing to GTFP growth.",
+      "for_ai": "AIIDPZ facilitates the expansion of AI-related industries and green technological innovation by improving input support, knowledge production, and technology diffusion. AIIDPZ may strengthen the local innovation base, improve the efficiency of green knowledge creation, and promote the wider diffusion and application of green technologies. AI integration into R&D processes enhances efficiency and reduces costs, supporting technological progress.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -3295,7 +3295,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 60
+      "daily_rank": 117
     },
     {
       "key": "event:e10e8619-5773-4920-8345-e13187705e73",
@@ -3309,13 +3309,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No human outcome is stated in the evidence.",
+      "for_ai": "The AI system is described as being tested and used for a specific purpose.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -3344,7 +3344,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 109
+      "daily_rank": 67
     },
     {
       "key": "event:dc627899-6d70-4509-b41d-8a7f0c9aaac5",
@@ -3442,7 +3442,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 19
+      "daily_rank": 24
     },
     {
       "key": "event:d69cc405-aaec-4ad4-be80-c162bf08a6f1",
@@ -3456,13 +3456,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "People lose critical thinking ability due to overuse of AI.",
+      "for_ai": "AI is not shown to be restricted or expanded in the evidence.",
+      "human_direction": "loss",
+      "ai_direction": "none",
+      "human_label": "Downsides reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -3491,7 +3491,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 87
+      "daily_rank": 124
     },
     {
       "key": "event:cdbb1d6b-1dec-4cfa-bad5-e9e669724acd",
@@ -3540,7 +3540,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 111
+      "daily_rank": 113
     },
     {
       "key": "event:cce1898b-61a8-4b5d-81ac-f08f2b052c0b",
@@ -3638,7 +3638,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 12
+      "daily_rank": 17
     },
     {
       "key": "event:ca258beb-54a8-40b4-8d3d-dafccfe2bba3",
@@ -3687,7 +3687,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 27
+      "daily_rank": 32
     },
     {
       "key": "event:c58e1ce4-7e9a-4b24-b013-141538839aec",
@@ -3834,7 +3834,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 17
+      "daily_rank": 22
     },
     {
       "key": "event:b3cb89ce-9df0-4942-af91-84c91c948507",
@@ -3883,7 +3883,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 42
+      "daily_rank": 52
     },
     {
       "key": "event:ab9b1f67-3f71-43b0-abc7-c134a2010a28",
@@ -3982,7 +3982,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 31
+      "daily_rank": 36
     },
     {
       "key": "event:95f21dd4-08db-414a-8056-6878e77489df",
@@ -4031,7 +4031,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 0
+      "daily_rank": 5
     },
     {
       "key": "event:8f232022-6fa8-4234-8fba-d11588add8f8",
@@ -4081,7 +4081,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 127
+      "daily_rank": 0
     },
     {
       "key": "event:8e3a6b24-79ce-4f43-bf46-88d823051eab",
@@ -4228,7 +4228,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 121
+      "daily_rank": 126
     },
     {
       "key": "event:732f0944-c89f-4789-b57b-03eaa38945a1",
@@ -4375,7 +4375,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 131
+      "daily_rank": 4
     },
     {
       "key": "event:64fa70e7-454a-4c16-8f89-068f25115a81",
@@ -4425,7 +4425,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 25
+      "daily_rank": 30
     },
     {
       "key": "event:633b70d3-3fef-4736-a3a6-2bb088b4ae82",
@@ -4474,7 +4474,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 26
+      "daily_rank": 31
     },
     {
       "key": "event:52997965-d132-4493-b555-6119c7b73658",
@@ -4523,7 +4523,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 124
+      "daily_rank": 129
     },
     {
       "key": "event:3bef1ee4-73a4-40a9-ae78-aebe241e5313",
@@ -4572,7 +4572,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 36
+      "daily_rank": 41
     },
     {
       "key": "event:3a88e517-2b7c-4593-b18e-b67998684eba",
@@ -4621,7 +4621,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 6
+      "daily_rank": 11
     },
     {
       "key": "event:39d21944-7e6d-431f-aae2-e208d49a3523",
@@ -4719,7 +4719,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 22
+      "daily_rank": 27
     },
     {
       "key": "event:1a8dce4b-a641-4a3b-8139-a9a8b5aa2e27",
@@ -4768,7 +4768,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 11
+      "daily_rank": 16
     },
     {
       "key": "event:1980db5b-8fc2-43d7-91c7-2f51ae1adf8c",
@@ -4817,7 +4817,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 51
+      "daily_rank": 56
     },
     {
       "key": "event:17cc1033-88ee-4f1b-b925-f12389dc4371",
@@ -4866,7 +4866,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 47
+      "daily_rank": 57
     },
     {
       "key": "event:14a3e4f9-2082-4a66-8388-4769f458914c",
@@ -4915,7 +4915,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 62
+      "daily_rank": 82
     },
     {
       "key": "event:0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e",
@@ -4964,7 +4964,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 56
+      "daily_rank": 61
     },
     {
       "key": "event:0600999d-ccb9-4027-8ae9-5be206859e05",
@@ -5013,7 +5013,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 32
+      "daily_rank": 42
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -5433,7 +5433,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 1
+      "daily_rank": 6
     },
     {
       "key": "event:f43ef28e-4940-4f12-a103-dec4ccd6a947",
@@ -5482,7 +5482,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 37
+      "daily_rank": 47
     },
     {
       "key": "event:e8493da9-a236-4682-a671-622201325f49",
@@ -5580,7 +5580,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 61
+      "daily_rank": 66
     },
     {
       "key": "event:dad9cc10-664d-4fbc-8c38-e7bc54edd0cd",
@@ -5630,7 +5630,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 5
+      "daily_rank": 10
     },
     {
       "key": "event:d8688fe5-b296-4348-8bcc-76e4049fe1d2",
@@ -6073,7 +6073,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 72
+      "daily_rank": 96
     },
     {
       "key": "event:773354b6-1079-450e-8e5e-3935431a225b",
@@ -6180,7 +6180,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 50
+      "daily_rank": 55
     },
     {
       "key": "event:6a1bf0d1-89d8-446f-a87e-981516305427",
@@ -6281,7 +6281,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 10
+      "daily_rank": 15
     },
     {
       "key": "event:543da78e-6d3d-4071-94d2-02eeb40b0843",
@@ -6379,7 +6379,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 77
+      "daily_rank": 100
     },
     {
       "key": "event:4c5ce73c-c3be-4a83-a144-40f53e9e66e4",
@@ -6442,13 +6442,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No specific human benefit or loss is stated in the text.",
+      "for_ai": "No specific AI benefit or loss is stated in the text.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -6477,7 +6477,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 71
+      "daily_rank": 1
     },
     {
       "key": "event:3af20206-acab-420f-b52d-885f65bcec17",
@@ -6527,7 +6527,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 116
+      "daily_rank": 121
     },
     {
       "key": "event:38d9e439-8ce2-4560-8d2c-50a2d09e563b",
@@ -6576,7 +6576,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 21
+      "daily_rank": 26
     },
     {
       "key": "event:22cd9c7b-4d5d-4569-9331-5249c8d6e865",
@@ -6640,7 +6640,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 9
+      "daily_rank": 14
     },
     {
       "key": "event:1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba",
@@ -6689,7 +6689,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 16
+      "daily_rank": 21
     },
     {
       "key": "event:17ab9564-5a2b-4731-bcc6-10512c2f5c13",
@@ -6787,7 +6787,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 45
+      "daily_rank": 50
     },
     {
       "key": "event:fd27a296-a477-4b7b-a423-0abd44c8203e",
@@ -6942,7 +6942,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 4
+      "daily_rank": 9
     },
     {
       "key": "event:ba2ec4bb-2616-4c18-940b-decb4d76a25d",
@@ -6991,7 +6991,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 67
+      "daily_rank": 87
     },
     {
       "key": "event:b975add8-abad-452e-9aa5-320d321c4402",
@@ -7336,7 +7336,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 104
+      "daily_rank": 110
     },
     {
       "key": "event:5bf25621-e911-4ba0-bdb7-ccc0140103b5",
@@ -7401,13 +7401,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No human-side relation is described in the evidence.",
+      "for_ai": "No AI-side relation is described in the evidence.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -7436,7 +7436,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 100
+      "daily_rank": 37
     },
     {
       "key": "event:465b44bd-5916-49ac-b41c-fba8eade1e4e",
@@ -7485,7 +7485,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 41
+      "daily_rank": 46
     },
     {
       "key": "event:2ef9455f-3a42-47e7-b098-3a8bb7bb0f6c",
@@ -7583,7 +7583,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 66
+      "daily_rank": 71
     },
     {
       "key": "event:19b81d33-4e8e-4ae1-8d2f-c519907aac89",
@@ -7682,7 +7682,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 20
+      "daily_rank": 25
     },
     {
       "key": "paper:3dbb5af83842291f863af301",
@@ -8047,7 +8047,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 122
+      "daily_rank": 127
     },
     {
       "key": "event:5adc07af-8169-4863-b79f-66022d317338",
@@ -8342,7 +8342,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 46
+      "daily_rank": 51
     },
     {
       "key": "event:dd9a2ad1-9b6d-41bf-95c9-3f48c924a9f5",
@@ -8538,7 +8538,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 126
+      "daily_rank": 131
     },
     {
       "key": "event:9a00aba1-9893-4596-a882-f4441e0b2bd8",
@@ -8646,7 +8646,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 55
+      "daily_rank": 60
     },
     {
       "key": "event:2a2c1673-b9fc-4424-852c-6f246f5b1faa",
@@ -8696,7 +8696,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 117
+      "daily_rank": 122
     },
     {
       "key": "event:119227b7-8482-42b4-840a-8f6c8038f964",
@@ -8745,7 +8745,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 40
+      "daily_rank": 45
     },
     {
       "key": "event:faeac2bd-3bc2-4d29-88da-cf5a41acc662",
@@ -11813,7 +11813,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 14
+      "daily_rank": 19
     },
     {
       "key": "event:4a3b473a-414c-4c6f-8693-da501c118d13",
