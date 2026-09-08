@@ -2,6 +2,370 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Tiger",
+      "art_type": "Painting",
+      "balance_origin": "China",
+      "creator": "Fachang Muqi (Chinese, 1220–1280)",
+      "creator_origin": "China, Southern Song dynasty (1127-1279)",
+      "culture_type": "illustration",
+      "deck": "Tiger. Hanging scroll; ink and slight color on silk.",
+      "headline": "Tiger",
+      "image_path": "assets/culture/d3d20e7a058b292482be0847.jpg",
+      "key": "culture:d3d20e7a058b292482be0847",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1958.427.2/1958.427.2_web.jpg",
+      "medium": "Hanging scroll; ink and slight color on silk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1958.427.2",
+      "provenance_id": "cma:135432",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1958.427.2",
+      "work_date": "c. 1250–79",
+      "date": "2026-09-09",
+      "selected_on": "2026-09-09",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-d3d20e7a058b292482be0847",
+      "path": "culture/culture-d3d20e7a058b292482be0847/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Tiger",
+          "url": "https://clevelandart.org/art/1958.427.2",
+          "date": "c. 1250–79",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-09",
+      "summary_basis": "Selected 9 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Papéis Avulsos",
+      "content_fingerprint": "5feef31972a153c22d348a5a18533e6b390ca4289cc2fdcb1b93c82dfb4a1bc1",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Papéis Avulsos.",
+      "excerpt": "Eram quasi onze horas quando acabou a leitura deste segundo quadro. Duarte mal podia conter a colera; era já impossivel ir ao Rio Comprido. Não é fóra de proposito conjecturar que, se o major expirasse naquelle momento, Duarte agradecia a morte como um beneficio da Providencia. Os sentimentos do bacharel não faziam crer tamanha ferocidade; mas a leitura de um máu livro é capaz de produzir phenomenos ainda mais espantosos. Accresce que, emquanto aos olhos carnaes do bacharel apparecia em toda a sua espessura a grenha de Lopo Alves, fulgiam-lhe ao espirito os fios de ouro que ornavam a formosa cabeça de Cecilia; via-a com os olhos azues, a tez branca e rosada, o gesto delicado e gracioso, dominando todas as demais damas que deviam estar no salão da viuva Menezes. Via aquillo, e ouvia mentalmente a musica, a palestra, o sôar dos passos, e o ruge-ruge das sedas; emquanto a voz rouquenha e sensaborona de Lopo Alves ia desfiando os quadros e os dialogos, com a impassibilidade de uma grande convicção.",
+      "headline": "Papéis Avulsos · a short reading",
+      "key": "culture:b0138ac6040299d093b7abc4",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:57001:passage:5feef31972a153c22d348a5a18533e6b390ca4289cc2fdcb1b93c82dfb4a1bc1",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/57001"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "68d9d8a21dc3b4f1adb9fdaad9b962304bbb04d9472df4df328b6f8432bdfbe6",
+      "source_locator": "O ALIENISTA; paragraph 373 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/57001",
+      "translator": "",
+      "work_date": "1882",
+      "date": "2026-09-09",
+      "selected_on": "2026-09-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-b0138ac6040299d093b7abc4",
+      "path": "culture/culture-b0138ac6040299d093b7abc4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Papéis Avulsos · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/57001",
+          "date": "1882",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-09",
+      "summary_basis": "Selected 9 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Eram quasi onze horas quando acabou a leitura deste segundo quadro. Duarte mal podia conter a colera; era já impossivel ir ao Rio Comprido. Não é fóra de proposito conjecturar que, se o major expirasse naquelle momento, Duarte agradecia a morte como um beneficio da Providencia. Os sentimentos do bacharel não faziam crer tamanha ferocidade; mas a leitura de um máu livro é capaz de produzir phenomenos ainda mais espantosos. Accresce que, emquanto aos olhos carnaes do bacharel apparecia em toda a sua espessura a grenha de Lopo Alves, fulgiam-lhe ao espirito os fios de ouro que ornavam a formosa cabeça de Cecilia; via-a com os olhos azues, a tez branca e rosada, o gesto delicado e gracioso, dominando todas as demais damas que deviam estar no salão da viuva Menezes. Via aquillo, e ouvia mentalmente a musica, a palestra, o sôar dos passos, e o ruge-ruge das sedas; emquanto a voz rouquenha e sensaborona de Lopo Alves ia desfiando os quadros e os dialogos, com a impassibilidade de uma grande convicção.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "3a15d2608a5d0411dc262ec13a44df5313b3225eb7356892edd0cd010e63fdc7",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "poetry",
+      "deck": "Gitanjali · 43, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+      "excerpt": "The day was when I did not keep myself in readiness for thee; and\nentering my heart unbidden even as one of the common crowd, unknown to\nme, my king, thou didst press the signet of eternity upon many a\nfleeting moment of my life.\n\nAnd today when by chance I light upon them and see thy signature, I\nfind they have lain scattered in the dust mixed with the memory of joys\nand sorrows of my trivial days forgotten.\n\nThou didst not turn in contempt from my childish play among dust, and\nthe steps that I heard in my playroom are the same that are echoing\nfrom star to star.",
+      "headline": "Gitanjali · 43",
+      "key": "culture:94488c9837226791bb54e1f7",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "The day was when I did not keep myself in readiness for thee; and",
+        "entering my heart unbidden even as one of the common crowd, unknown to",
+        "me, my king, thou didst press the signet of eternity upon many a",
+        "fleeting moment of my life.",
+        "",
+        "And today when by chance I light upon them and see thy signature, I",
+        "find they have lain scattered in the dust mixed with the memory of joys",
+        "and sorrows of my trivial days forgotten.",
+        "",
+        "Thou didst not turn in contempt from my childish play among dust, and",
+        "the steps that I heard in my playroom are the same that are echoing",
+        "from star to star."
+      ],
+      "provenance_id": "pg:7164:poem:21bc59b117f482434995d6d9d88dc0835adb551592d2ecb625f3b74cb31a6596",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/7164"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "eda666f014d2f3191662a609d978823ce544afce6e2b0331458be4598ae219d5",
+      "source_locator": "43",
+      "source_url": "https://www.gutenberg.org/ebooks/7164",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1912",
+      "date": "2026-09-09",
+      "selected_on": "2026-09-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-94488c9837226791bb54e1f7",
+      "path": "culture/culture-94488c9837226791bb54e1f7/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Gitanjali · 43",
+          "url": "https://www.gutenberg.org/ebooks/7164",
+          "date": "1912",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-09",
+      "summary_basis": "Selected 9 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The day was when I did not keep myself in readiness for thee; and\nentering my heart unbidden even as one of the common crowd, unknown to\nme, my king, thou didst press the signet of eternity upon many a\nfleeting moment of my life.\n\nAnd today when by chance I light upon them and see thy signature, I\nfind they have lain scattered in the dust mixed with the memory of joys\nand sorrows of my trivial days forgotten.\n\nThou didst not turn in contempt from my childish play among dust, and\nthe steps that I heard in my playroom are the same that are echoing\nfrom star to star.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Isaac_Albeniz_-_suite_espanola_op._47_-_leyenda.ogg",
+      "creator": "Isaac Albéniz",
+      "creator_origin": "Spanish",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Isaac Albéniz. 6 minutes to listen.",
+      "duration_seconds": 401,
+      "headline": "Isaac Albeniz - suite espanola op. 47 - leyenda",
+      "key": "culture:3aa2ddd1d743d3c7ea915117",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Isaac_Albeniz_-_suite_espanola_op._47_-_leyenda.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Isaac_Alb%C3%A9niz",
+      "original_recording_title": "Isaac Albeniz - suite espanola op. 47 - leyenda",
+      "provenance_id": "commons:3433640",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "(See Musopen for author information)",
+      "recording_description": "Asturias , from Chants d'Espagne and Suite española op. 47",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "(See Musopen for author information)",
+        "label": "Public domain (source-declared)",
+        "source_credit": "This work comes from the non profit U.S. organization Musopen where it is available at the following link: http://www.musopen.com The Musopen website requires all uploaders to \"represent and warrant that content uploaded to the site is in the public domain\" (see FAQ #4 ). Musopen's own works ( \"Musopen Materials\" and \"Musopen Service\", not user content or public domain content ), are fully copyrighted and may not be used freely as stated in their Terms and Conditions of Use .",
+        "url": "https://commons.wikimedia.org/wiki/File:Isaac_Albeniz_-_suite_espanola_op._47_-_leyenda.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Isaac_Albeniz_-_suite_espanola_op._47_-_leyenda.ogg",
+      "work_date": "Date not stated in source",
+      "date": "2026-09-09",
+      "selected_on": "2026-09-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3aa2ddd1d743d3c7ea915117",
+      "path": "culture/culture-3aa2ddd1d743d3c7ea915117/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Isaac Albeniz - suite espanola op. 47 - leyenda",
+          "url": "https://commons.wikimedia.org/wiki/File:Isaac_Albeniz_-_suite_espanola_op._47_-_leyenda.ogg",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-09",
+      "summary_basis": "Selected 9 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "9ccb1b4b00764a2f478eb886b3d9c59508cae110f513ce8b2f764c7ef6fe1f8f",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "Thou implantedst thy highest aim into the heart of those passions: then became they thy virtues and joys.",
+      "headline": "Thou implantedst thy highest aim into the heart of those passions: then became they thy virtues and joys.",
+      "key": "culture:1c673f144bf59694351ce5f7",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:9ccb1b4b00764a2f478eb886b3d9c59508cae110f513ce8b2f764c7ef6fe1f8f",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Thou implantedst thy highest aim into the heart of those passions: then became they thy virtues and joys.",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 440 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-09-09",
+      "selected_on": "2026-09-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-1c673f144bf59694351ce5f7",
+      "path": "culture/culture-1c673f144bf59694351ce5f7/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Thou implantedst thy highest aim into the heart of those passions: then became they thy virtues and joys.",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-09",
+      "summary_basis": "Selected 9 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Thou implantedst thy highest aim into the heart of those passions: then became they thy virtues and joys.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Thou implantedst thy highest aim into the heart of those passions: then became they thy virtues and joys.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Walden",
       "content_fingerprint": "851b1304fe90d2b79423fd4e1391cf82166f93adbbabe1282d941b6e34423aae",
       "creator": "Henry David Thoreau",
@@ -1503,7 +1867,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 109
+      "daily_rank": 90
     },
     {
       "key": "event:d4ff674f-b8ed-4fb1-b37e-75f0bfcd1632",
@@ -1552,7 +1916,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 17
+      "daily_rank": 130
     },
     {
       "key": "event:d27c9e97-c061-4eec-a2f4-8a2717501a7f",
@@ -1601,7 +1965,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 59
+      "daily_rank": 45
     },
     {
       "key": "event:d122facd-a1e2-4c37-a97b-de81f79ee629",
@@ -1650,7 +2014,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 69
+      "daily_rank": 55
     },
     {
       "key": "event:aed8b907-508a-46de-9970-e6502c58f41d",
@@ -1699,7 +2063,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 94
+      "daily_rank": 79
     },
     {
       "key": "event:7c586f12-0987-4e20-b11a-df5ae27d411d",
@@ -1748,7 +2112,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 106
+      "daily_rank": 87
     },
     {
       "key": "event:67ac90b6-b067-4967-bf41-a4e616d9e741",
@@ -1797,7 +2161,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 96
+      "daily_rank": 77
     },
     {
       "key": "event:4fffba8b-06fe-4e3c-9470-7dbd52259df0",
@@ -1846,7 +2210,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 74
+      "daily_rank": 60
     },
     {
       "key": "event:42938ff8-b997-463a-ab37-51bcec416e1b",
@@ -1895,7 +2259,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 108
+      "daily_rank": 89
     },
     {
       "key": "event:392286f7-815a-410d-9560-80a7e2f99012",
@@ -1944,7 +2308,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 12
+      "daily_rank": 125
     },
     {
       "key": "event:33018ed3-7996-4cca-a937-09b4f91a74ab",
@@ -1995,7 +2359,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 20
+      "daily_rank": 1
     },
     {
       "key": "event:23af84b3-78cd-4c90-8504-ef0bb7390004",
@@ -2044,7 +2408,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 116
+      "daily_rank": 97
     },
     {
       "key": "event:1e3c2f6c-b23f-4eed-8339-7de1da42f2dc",
@@ -2093,7 +2457,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 98
+      "daily_rank": 83
     },
     {
       "key": "event:03d6b027-28b5-4e3f-8636-4d9d13f6f2ff",
@@ -2144,7 +2508,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 91
+      "daily_rank": 72
     },
     {
       "key": "event:eeebe01b-abfb-40cb-ab8d-590ba175bf69",
@@ -2193,7 +2557,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 82
+      "daily_rank": 63
     },
     {
       "key": "event:e5d2be95-5396-4dc4-9327-38500e6d9eae",
@@ -2242,7 +2606,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 112
+      "daily_rank": 93
     },
     {
       "key": "event:de21aed2-e74b-49b1-90b9-5deedb0e3fcf",
@@ -2291,7 +2655,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 40
+      "daily_rank": 26
     },
     {
       "key": "event:d9cba3eb-4b9f-4ac9-a024-7d9939c77c9e",
@@ -2340,7 +2704,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 67
+      "daily_rank": 48
     },
     {
       "key": "event:d37b2be0-9d2c-4153-8d11-8835ca3412fa",
@@ -2389,7 +2753,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 130
+      "daily_rank": 111
     },
     {
       "key": "event:a81f4d37-bee4-4b0c-81b2-6754d03a2a86",
@@ -2438,7 +2802,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 120
+      "daily_rank": 101
     },
     {
       "key": "event:8ca1d082-3d5a-45a9-bd74-b3b4567649f1",
@@ -2487,7 +2851,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 77
+      "daily_rank": 58
     },
     {
       "key": "event:774fc675-1a43-4d20-8128-5f606d0d70b9",
@@ -2536,7 +2900,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 7
+      "daily_rank": 120
     },
     {
       "key": "event:3a4752e6-f707-49c4-9dc2-ddaca4acd615",
@@ -2588,7 +2952,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 119
+      "daily_rank": 100
     },
     {
       "key": "event:30832275-2860-4e72-bad3-24d9bc043dcb",
@@ -2637,7 +3001,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 111
+      "daily_rank": 92
     },
     {
       "key": "event:0ef85c02-5f7e-43ff-af8d-649872eac9f3",
@@ -2686,7 +3050,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 79
+      "daily_rank": 65
     },
     {
       "key": "paper:af880433876f4e2e2ebf458c",
@@ -3098,7 +3462,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 123
+      "daily_rank": 109
     },
     {
       "key": "event:fb3a9764-c7b4-4cfe-b262-59390f0a073d",
@@ -3147,7 +3511,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 35
+      "daily_rank": 21
     },
     {
       "key": "event:f26d3127-52e2-4890-9966-4a8927ced43c",
@@ -3197,7 +3561,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 70
+      "daily_rank": 56
     },
     {
       "key": "event:ed2de16b-eddd-45ee-88e0-412f82075580",
@@ -3249,7 +3613,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 124
+      "daily_rank": 105
     },
     {
       "key": "event:e5795415-71b8-4100-a353-48946f22632c",
@@ -3298,7 +3662,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 117
+      "daily_rank": 98
     },
     {
       "key": "event:e10e8619-5773-4920-8345-e13187705e73",
@@ -3347,7 +3711,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 72
+      "daily_rank": 53
     },
     {
       "key": "event:dc627899-6d70-4509-b41d-8a7f0c9aaac5",
@@ -3396,7 +3760,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 99
+      "daily_rank": 80
     },
     {
       "key": "event:db308be6-8407-48f8-9990-4ddc7cbdb902",
@@ -3445,7 +3809,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 24
+      "daily_rank": 15
     },
     {
       "key": "event:d69cc405-aaec-4ad4-be80-c162bf08a6f1",
@@ -3497,7 +3861,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 114
+      "daily_rank": 95
     },
     {
       "key": "event:cdbb1d6b-1dec-4cfa-bad5-e9e669724acd",
@@ -3546,7 +3910,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 113
+      "daily_rank": 94
     },
     {
       "key": "event:cce1898b-61a8-4b5d-81ac-f08f2b052c0b",
@@ -3595,7 +3959,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 18
+      "daily_rank": 4
     },
     {
       "key": "event:ccb8f41c-96e0-4993-9260-17382a5faa13",
@@ -3644,7 +4008,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 22
+      "daily_rank": 3
     },
     {
       "key": "event:ca258beb-54a8-40b4-8d3d-dafccfe2bba3",
@@ -3693,7 +4057,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 37
+      "daily_rank": 18
     },
     {
       "key": "event:c58e1ce4-7e9a-4b24-b013-141538839aec",
@@ -3742,7 +4106,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 54
+      "daily_rank": 40
     },
     {
       "key": "event:c44c5cdd-0b1b-4e6e-9f0c-c31d535340b0",
@@ -3791,7 +4155,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 76
+      "daily_rank": 67
     },
     {
       "key": "event:bedfedab-eb0d-4f88-bb4c-7e75b2d10a56",
@@ -3840,7 +4204,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 27
+      "daily_rank": 8
     },
     {
       "key": "event:b3cb89ce-9df0-4942-af91-84c91c948507",
@@ -3889,7 +4253,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 57
+      "daily_rank": 38
     },
     {
       "key": "event:ab9b1f67-3f71-43b0-abc7-c134a2010a28",
@@ -3939,7 +4303,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 105
+      "daily_rank": 86
     },
     {
       "key": "event:aa0599ea-4248-4e2b-b73f-ebf9216341ab",
@@ -3988,7 +4352,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 36
+      "daily_rank": 27
     },
     {
       "key": "event:95f21dd4-08db-414a-8056-6878e77489df",
@@ -4037,7 +4401,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 5
+      "daily_rank": 118
     },
     {
       "key": "event:8f232022-6fa8-4234-8fba-d11588add8f8",
@@ -4087,7 +4451,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 0
+      "daily_rank": 113
     },
     {
       "key": "event:8e3a6b24-79ce-4f43-bf46-88d823051eab",
@@ -4136,7 +4500,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 23
+      "daily_rank": 9
     },
     {
       "key": "event:7d8027f3-2423-42ea-b765-4ec49cd8d16b",
@@ -4185,7 +4549,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 93
+      "daily_rank": 78
     },
     {
       "key": "event:78c2f5af-e751-412a-9344-cc485fa2863b",
@@ -4234,7 +4598,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 126
+      "daily_rank": 112
     },
     {
       "key": "event:732f0944-c89f-4789-b57b-03eaa38945a1",
@@ -4283,7 +4647,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 33
+      "daily_rank": 19
     },
     {
       "key": "event:71a63729-a029-4530-babf-a6a31142d7c1",
@@ -4297,13 +4661,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "The initiative aims to enhance teacher capabilities through AI, providing new opportunities for professional development.",
+      "for_ai": "The AI system is being integrated into teacher training to support and extend educational outcomes.",
+      "human_direction": "gain",
+      "ai_direction": "none",
+      "human_label": "Benefits reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -4332,7 +4696,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 88
+      "daily_rank": 116
     },
     {
       "key": "event:6ce3c0c6-be5d-4d1f-9652-cbdec70559a6",
@@ -4381,7 +4745,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 4
+      "daily_rank": 122
     },
     {
       "key": "event:64fa70e7-454a-4c16-8f89-068f25115a81",
@@ -4431,7 +4795,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 30
+      "daily_rank": 11
     },
     {
       "key": "event:633b70d3-3fef-4736-a3a6-2bb088b4ae82",
@@ -4480,7 +4844,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 31
+      "daily_rank": 22
     },
     {
       "key": "event:52997965-d132-4493-b555-6119c7b73658",
@@ -4529,7 +4893,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 2
+      "daily_rank": 115
     },
     {
       "key": "event:3bef1ee4-73a4-40a9-ae78-aebe241e5313",
@@ -4578,7 +4942,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 41
+      "daily_rank": 32
     },
     {
       "key": "event:3a88e517-2b7c-4593-b18e-b67998684eba",
@@ -4627,7 +4991,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 11
+      "daily_rank": 2
     },
     {
       "key": "event:39d21944-7e6d-431f-aae2-e208d49a3523",
@@ -4676,7 +5040,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 129
+      "daily_rank": 110
     },
     {
       "key": "event:2ccb707e-963e-45cb-9208-31f203cfb46b",
@@ -4725,7 +5089,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 32
+      "daily_rank": 13
     },
     {
       "key": "event:1a8dce4b-a641-4a3b-8139-a9a8b5aa2e27",
@@ -4774,7 +5138,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 16
+      "daily_rank": 7
     },
     {
       "key": "event:1980db5b-8fc2-43d7-91c7-2f51ae1adf8c",
@@ -4823,7 +5187,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 56
+      "daily_rank": 52
     },
     {
       "key": "event:17cc1033-88ee-4f1b-b925-f12389dc4371",
@@ -4872,7 +5236,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 62
+      "daily_rank": 43
     },
     {
       "key": "event:14a3e4f9-2082-4a66-8388-4769f458914c",
@@ -4921,7 +5285,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 87
+      "daily_rank": 68
     },
     {
       "key": "event:0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e",
@@ -4970,7 +5334,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 61
+      "daily_rank": 57
     },
     {
       "key": "event:0600999d-ccb9-4027-8ae9-5be206859e05",
@@ -5019,7 +5383,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 47
+      "daily_rank": 28
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -5439,7 +5803,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 6
+      "daily_rank": 129
     },
     {
       "key": "event:f43ef28e-4940-4f12-a103-dec4ccd6a947",
@@ -5488,7 +5852,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 52
+      "daily_rank": 33
     },
     {
       "key": "event:e8493da9-a236-4682-a671-622201325f49",
@@ -5537,7 +5901,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 65
+      "daily_rank": 51
     },
     {
       "key": "event:e1d8387d-cedc-44d8-8532-cf6df54c38f6",
@@ -5586,7 +5950,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 66
+      "daily_rank": 62
     },
     {
       "key": "event:dad9cc10-664d-4fbc-8c38-e7bc54edd0cd",
@@ -5636,7 +6000,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 10
+      "daily_rank": 123
     },
     {
       "key": "event:d8688fe5-b296-4348-8bcc-76e4049fe1d2",
@@ -5650,13 +6014,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No specific human benefit or loss is stated in the evidence.",
+      "for_ai": "No specific AI benefit or loss is stated in the evidence.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -5685,7 +6049,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 81
+      "daily_rank": 124
     },
     {
       "key": "event:d2e3da8c-5231-459c-9744-f3203ec75193",
@@ -5699,13 +6063,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "The research allows educators, scientists, filmmakers, and students to create professional-quality videos without specialized equipment or expertise. Yanardag's research expands access to video production through AI, making it more inclusive.",
+      "for_ai": "The AI system is being developed to give users director-like control over video production, making it more accessible and user-friendly.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -5734,7 +6098,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 86
+      "daily_rank": 42
     },
     {
       "key": "event:cd48bb1a-8114-4ed4-8383-33043275bbc6",
@@ -5783,7 +6147,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 39
+      "daily_rank": 25
     },
     {
       "key": "event:c83cdfff-7de8-4905-925e-8d3874f07929",
@@ -5832,7 +6196,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 38
+      "daily_rank": 24
     },
     {
       "key": "event:c45780fc-95f0-479a-a994-ff3c1b463678",
@@ -5883,7 +6247,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 103
+      "daily_rank": 84
     },
     {
       "key": "event:bb8d8aef-ad4f-46f9-8620-399124314c19",
@@ -5932,7 +6296,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 44
+      "daily_rank": 30
     },
     {
       "key": "event:ad2792d4-804f-401d-972f-ef4fa6e85538",
@@ -5981,7 +6345,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 73
+      "daily_rank": 64
     },
     {
       "key": "event:aaaa057a-4473-46a3-9ff6-66082481f5c7",
@@ -6030,7 +6394,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 48
+      "daily_rank": 34
     },
     {
       "key": "event:99fb997a-527c-45ff-b9ea-fc17b06e1173",
@@ -6079,7 +6443,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 100
+      "daily_rank": 81
     },
     {
       "key": "event:773354b6-1079-450e-8e5e-3935431a225b",
@@ -6128,7 +6492,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 49
+      "daily_rank": 35
     },
     {
       "key": "event:71fecc86-aff2-4922-adf1-3629c78740a4",
@@ -6186,7 +6550,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 55
+      "daily_rank": 41
     },
     {
       "key": "event:6a1bf0d1-89d8-446f-a87e-981516305427",
@@ -6236,7 +6600,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 89
+      "daily_rank": 75
     },
     {
       "key": "event:577b8602-94a7-4de8-ac26-a656ca2aadbe",
@@ -6287,7 +6651,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 15
+      "daily_rank": 128
     },
     {
       "key": "event:543da78e-6d3d-4071-94d2-02eeb40b0843",
@@ -6336,7 +6700,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 107
+      "daily_rank": 88
     },
     {
       "key": "event:53af177d-e4a1-4d76-8402-d65b41761b74",
@@ -6385,7 +6749,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 104
+      "daily_rank": 85
     },
     {
       "key": "event:4c5ce73c-c3be-4a83-a144-40f53e9e66e4",
@@ -6434,7 +6798,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 29
+      "daily_rank": 20
     },
     {
       "key": "event:41be96d7-4ba8-492e-bd0c-d9d9880b96ac",
@@ -6483,7 +6847,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 1
+      "daily_rank": 119
     },
     {
       "key": "event:3af20206-acab-420f-b52d-885f65bcec17",
@@ -6533,7 +6897,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 121
+      "daily_rank": 107
     },
     {
       "key": "event:38d9e439-8ce2-4560-8d2c-50a2d09e563b",
@@ -6582,7 +6946,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 26
+      "daily_rank": 17
     },
     {
       "key": "event:22cd9c7b-4d5d-4569-9331-5249c8d6e865",
@@ -6646,7 +7010,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 14
+      "daily_rank": 5
     },
     {
       "key": "event:1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba",
@@ -6695,7 +7059,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 21
+      "daily_rank": 12
     },
     {
       "key": "event:17ab9564-5a2b-4731-bcc6-10512c2f5c13",
@@ -6744,7 +7108,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 84
+      "daily_rank": 70
     },
     {
       "key": "event:0bd5c6f7-5694-49f2-b1c8-f49a12941302",
@@ -6793,7 +7157,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 50
+      "daily_rank": 36
     },
     {
       "key": "event:fd27a296-a477-4b7b-a423-0abd44c8203e",
@@ -6842,7 +7206,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 125
+      "daily_rank": 106
     },
     {
       "key": "event:d4718180-b6b3-44eb-afd5-c100dab7f1b5",
@@ -6891,7 +7255,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 58
+      "daily_rank": 44
     },
     {
       "key": "event:bd7c60d8-c9f6-4f1c-a37e-854c40fafb80",
@@ -6905,12 +7269,12 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "The ban restricts access to AI for students, limiting their ability to use AI tools in education.",
-      "for_ai": "The AI system is not directly restricted or expanded in the text, as the focus is on human access rather than AI capabilities.",
-      "human_direction": "none",
-      "ai_direction": "none",
-      "human_label": "No direction stated",
-      "ai_label": "No direction stated",
+      "for_humans": "Students in New York are restricted from using AI until third grade.",
+      "for_ai": "The use of AI is prohibited for students in New York until third grade.",
+      "human_direction": "loss",
+      "ai_direction": "loss",
+      "human_label": "Downsides reported",
+      "ai_label": "Downsides reported",
       "evidence_complete": true,
       "display_scope": "",
       "sources": [
@@ -6948,7 +7312,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 9
+      "daily_rank": 127
     },
     {
       "key": "event:ba2ec4bb-2616-4c18-940b-decb4d76a25d",
@@ -6997,7 +7361,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 92
+      "daily_rank": 73
     },
     {
       "key": "event:b975add8-abad-452e-9aa5-320d321c4402",
@@ -7046,7 +7410,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 118
+      "daily_rank": 99
     },
     {
       "key": "event:a2110819-497f-4676-ba83-78b8276636fa",
@@ -7060,13 +7424,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No specific human benefit or loss is stated.",
+      "for_ai": "No specific AI benefit or loss is stated.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -7095,7 +7459,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 90
+      "daily_rank": 16
     },
     {
       "key": "event:a1694695-eb25-46b7-bdee-3022e7ec2ed1",
@@ -7144,7 +7508,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 63
+      "daily_rank": 49
     },
     {
       "key": "event:8b3e0b9c-3c16-4c5d-853e-9ec089d31d37",
@@ -7193,7 +7557,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 75
+      "daily_rank": 61
     },
     {
       "key": "event:725a288e-7870-43da-93de-afbe7e21b957",
@@ -7242,7 +7606,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 43
+      "daily_rank": 29
     },
     {
       "key": "event:6c9295a1-b05b-4460-ae35-f0804f206ae7",
@@ -7293,7 +7657,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 128
+      "daily_rank": 114
     },
     {
       "key": "event:681028a0-2216-4c44-b8e9-27afdfab3643",
@@ -7342,7 +7706,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 110
+      "daily_rank": 91
     },
     {
       "key": "event:5bf25621-e911-4ba0-bdb7-ccc0140103b5",
@@ -7393,7 +7757,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 80
+      "daily_rank": 66
     },
     {
       "key": "event:597361eb-15a8-4428-8b37-5158b8d2f7ee",
@@ -7442,7 +7806,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 42
+      "daily_rank": 23
     },
     {
       "key": "event:465b44bd-5916-49ac-b41c-fba8eade1e4e",
@@ -7491,7 +7855,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 46
+      "daily_rank": 37
     },
     {
       "key": "event:2ef9455f-3a42-47e7-b098-3a8bb7bb0f6c",
@@ -7540,7 +7904,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 64
+      "daily_rank": 50
     },
     {
       "key": "event:2e775ad5-0983-4568-a9bc-d3a72dc003a8",
@@ -7554,13 +7918,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "Students using LAUSD-issued devices are restricted from using generative AI, which limits their access to a potential resource.",
+      "for_ai": "The AI system is not explicitly described as being restricted or expanded in the text, but the policy is in place to limit its use.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -7589,7 +7953,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 71
+      "daily_rank": 104
     },
     {
       "key": "event:19b81d33-4e8e-4ae1-8d2f-c519907aac89",
@@ -7638,7 +8002,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 83
+      "daily_rank": 74
     },
     {
       "key": "event:0334c706-bf57-49e7-9d43-39081361d867",
@@ -7688,7 +8052,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 25
+      "daily_rank": 6
     },
     {
       "key": "paper:3dbb5af83842291f863af301",
@@ -7807,7 +8171,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 85
+      "daily_rank": 71
     },
     {
       "key": "event:d9dec465-0f8e-440c-a77f-9a17fe5b81b1",
@@ -7856,7 +8220,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 97
+      "daily_rank": 82
     },
     {
       "key": "event:b644c656-548e-4fd6-bc31-94ca6ac70140",
@@ -7905,7 +8269,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 13
+      "daily_rank": 131
     },
     {
       "key": "event:8e5a0cc5-9068-4322-a9fc-a0714a0729ae",
@@ -7954,7 +8318,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 8
+      "daily_rank": 126
     },
     {
       "key": "event:666d3899-6112-48bc-ab98-2e740c33b4f2",
@@ -8003,7 +8367,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 78
+      "daily_rank": 69
     },
     {
       "key": "event:63bd4191-6fb9-4537-94cc-78c70eef8434",
@@ -8053,7 +8417,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 127
+      "daily_rank": 108
     },
     {
       "key": "event:5adc07af-8169-4863-b79f-66022d317338",
@@ -8102,7 +8466,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 28
+      "daily_rank": 14
     },
     {
       "key": "event:30bf5f2a-6410-4f23-a0a2-4ff6e1a34789",
@@ -8116,13 +8480,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No people-side benefit or loss is explicitly stated.",
+      "for_ai": "No AI-side gain or loss is explicitly stated.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -8151,7 +8515,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 34
+      "daily_rank": 102
     },
     {
       "key": "event:307bb2d7-dbce-4128-8333-643af0544163",
@@ -8200,7 +8564,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 3
+      "daily_rank": 121
     },
     {
       "key": "event:0f371306-78fa-41b0-a71a-3237a7b03b99",
@@ -8214,13 +8578,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No people-side benefit or constraint is explicitly stated.",
+      "for_ai": "No AI-side benefit or constraint is explicitly stated.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -8249,7 +8613,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 101
+      "daily_rank": 54
     },
     {
       "key": "event:03524948-20d9-42af-94ce-f75de98be054",
@@ -8298,7 +8662,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 95
+      "daily_rank": 76
     },
     {
       "key": "event:f1abf7ae-f64e-4b0e-87e3-17e0e340a2f6",
@@ -8348,7 +8712,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 51
+      "daily_rank": 47
     },
     {
       "key": "event:dd9a2ad1-9b6d-41bf-95c9-3f48c924a9f5",
@@ -8397,7 +8761,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 53
+      "daily_rank": 39
     },
     {
       "key": "event:bb4625b4-fae6-4463-a52b-af94b72b873a",
@@ -8446,7 +8810,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 115
+      "daily_rank": 96
     },
     {
       "key": "event:b959d80a-99ba-4618-8955-d78818aea10f",
@@ -8495,7 +8859,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 68
+      "daily_rank": 59
     },
     {
       "key": "event:b3fbb0e3-13bf-411b-968f-109215671c8b",
@@ -8544,7 +8908,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 131
+      "daily_rank": 117
     },
     {
       "key": "event:9a00aba1-9893-4596-a882-f4441e0b2bd8",
@@ -8558,13 +8922,13 @@
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
+      "for_humans": "No human-side relation is described in the evidence.",
+      "for_ai": "No AI-side relation is described in the evidence.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
       "display_scope": "",
       "sources": [
         {
@@ -8601,7 +8965,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 102
+      "daily_rank": 0
     },
     {
       "key": "event:5cadae34-87fa-4070-930a-71dd3a1799a7",
@@ -8652,7 +9016,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 60
+      "daily_rank": 46
     },
     {
       "key": "event:2a2c1673-b9fc-4424-852c-6f246f5b1faa",
@@ -8702,7 +9066,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 122
+      "daily_rank": 103
     },
     {
       "key": "event:119227b7-8482-42b4-840a-8f6c8038f964",
@@ -8751,7 +9115,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 45
+      "daily_rank": 31
     },
     {
       "key": "event:faeac2bd-3bc2-4d29-88da-cf5a41acc662",
@@ -11819,7 +12183,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 19
+      "daily_rank": 10
     },
     {
       "key": "event:4a3b473a-414c-4c6f-8693-da501c118d13",
