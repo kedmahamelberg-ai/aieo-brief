@@ -1,7 +1,28 @@
 {
   "generated": 0,
-  "failed": 5,
+  "failed": 2,
   "metadata_only": 0,
-  "deferred": 1,
-  "unchanged": 1
+  "deferred": 4,
+  "unchanged": 0,
+  "engine_version": "aieo-editorial-runtime-v2",
+  "failure_counts": {
+    "draft_quote_unsupported": 2
+  },
+  "failed_items": [
+    {
+      "key": "paper:af880433876f4e2e2ebf458c",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v2"
+    },
+    {
+      "key": "paper:03924bfde20e0b10ba47461b",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v2"
+    }
+  ],
+  "updated_at": "2026-09-08T17:37:17.217925+00:00"
 }

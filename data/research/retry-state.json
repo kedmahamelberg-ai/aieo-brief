@@ -1,11 +1,11 @@
 {
   "paper:03924bfde20e0b10ba47461b": {
-    "attempts": 1,
-    "last_attempt": "2026-09-07T18:30:23.691676+00:00"
+    "attempts": 2,
+    "last_attempt": "2026-09-08T17:28:21.870147+00:00"
   },
   "paper:79f5371de41555e5281d0972": {
-    "attempts": 1,
-    "last_attempt": "2026-09-07T18:33:13.413362+00:00"
+    "attempts": 2,
+    "last_attempt": "2026-09-08T17:33:52.361230+00:00"
   },
   "paper:7aa62c0974d9fdd79752a847": {
     "attempts": 1,
@@ -18,5 +18,9 @@
   "paper:a2a02f3834100731fa4b30d5": {
     "attempts": 1,
     "last_attempt": "2026-09-07T18:42:26.715826+00:00"
+  },
+  "paper:af880433876f4e2e2ebf458c": {
+    "attempts": 1,
+    "last_attempt": "2026-09-08T17:22:27.168185+00:00"
   }
 }
