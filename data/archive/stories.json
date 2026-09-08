@@ -1552,7 +1552,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 12
+      "daily_rank": 17
     },
     {
       "key": "event:d27c9e97-c061-4eec-a2f4-8a2717501a7f",
@@ -1748,7 +1748,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 104
+      "daily_rank": 106
     },
     {
       "key": "event:67ac90b6-b067-4967-bf41-a4e616d9e741",
@@ -1797,7 +1797,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 92
+      "daily_rank": 96
     },
     {
       "key": "event:4fffba8b-06fe-4e3c-9470-7dbd52259df0",
@@ -1944,7 +1944,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 7
+      "daily_rank": 12
     },
     {
       "key": "event:33018ed3-7996-4cca-a937-09b4f91a74ab",
@@ -2193,7 +2193,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 77
+      "daily_rank": 82
     },
     {
       "key": "event:e5d2be95-5396-4dc4-9327-38500e6d9eae",
@@ -2340,7 +2340,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 62
+      "daily_rank": 67
     },
     {
       "key": "event:d37b2be0-9d2c-4153-8d11-8835ca3412fa",
@@ -2487,7 +2487,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 72
+      "daily_rank": 77
     },
     {
       "key": "event:774fc675-1a43-4d20-8128-5f606d0d70b9",
@@ -2536,7 +2536,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 2
+      "daily_rank": 7
     },
     {
       "key": "event:3a4752e6-f707-49c4-9dc2-ddaca4acd615",
@@ -2588,7 +2588,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 114
+      "daily_rank": 119
     },
     {
       "key": "event:30832275-2860-4e72-bad3-24d9bc043dcb",
@@ -3205,14 +3205,17 @@
       "kind": "news",
       "slug": "development-ed2de16b-eddd-45ee-88e0-412f82075580",
       "path": "story/development-ed2de16b-eddd-45ee-88e0-412f82075580/index.html",
-      "headline": "Deceptive Photos | Artificial Intelligence Enters Real Estate Brokerage Sites",
+      "headline": "AI Photos Raise Real Estate Concerns",
       "original_headline": "Deceptive Photos | Artificial Intelligence Enters Real Estate Brokerage Sites",
-      "deck": "Reporting from 98.5 Montréal. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
-      "for_ai": "No AI-side relation is described",
+      "deck": "A new report highlights the use of AI-generated images in real estate, raising questions about their accuracy and impact on buyers.",
+      "what_happened": "AI-generated images of homes are increasingly used in real estate listings, but some of these images do not accurately represent the actual condition of the homes. This has led to concerns among buyers and real estate professionals about the reliability of these images. The use of AI in this context is still in its early stages, and there is no clear consensus on how to regulate its use.",
+      "why_it_matters": "The use of AI-generated images in real estate could have significant implications for buyers, as they may not accurately represent the actual condition of the homes. This could lead to misleading information and potential financial losses for buyers. Additionally, the use of AI in this context raises questions about the role of human judgment in real estate transactions.",
+      "body_paragraphs": [
+        "The use of AI-generated images in real estate is a growing trend, with some real estate agents using these images to attract buyers. However, these images may not accurately represent the actual condition of the homes. This has led to concerns among buyers and real estate professionals about the reliability of these images. The use of AI in this context is still in its early stages, and there is no clear consensus on how to regulate its use.",
+        "The potential impact of AI-generated images on real estate transactions is significant. Buyers may be misled by these images, which do not accurately represent the actual condition of the homes. This could lead to financial losses for buyers and potential legal issues for real estate agents. Additionally, the use of AI in this context raises questions about the role of human judgment in real estate transactions."
+      ],
+      "for_humans": "Buyers may be misled by AI-generated images of homes, which do not accurately represent the actual condition of the homes.",
+      "for_ai": "AI-generated images of homes are being used in real estate listings, but there is no clear consensus on how to regulate their use.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -3239,14 +3242,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "study",
+      "limitation": "The study does not provide a comprehensive analysis of the impact of AI-generated images on real estate transactions. It is possible that the use of AI-generated images has a more significant impact on certain types of real estate transactions than others. Additionally, the study does not provide a clear consensus on how to regulate the use of AI-generated images in real estate transactions.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 106
+      "daily_rank": 124
     },
     {
       "key": "event:e5795415-71b8-4100-a353-48946f22632c",
@@ -3344,7 +3347,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 67
+      "daily_rank": 72
     },
     {
       "key": "event:dc627899-6d70-4509-b41d-8a7f0c9aaac5",
@@ -3450,13 +3453,16 @@
       "kind": "news",
       "slug": "development-d69cc405-aaec-4ad4-be80-c162bf08a6f1",
       "path": "story/development-d69cc405-aaec-4ad4-be80-c162bf08a6f1/index.html",
-      "headline": "People who use a lot of AI lose their critical thinking ability.",
+      "headline": "AI Overuse Linked to Reduced Critical Thinking",
       "original_headline": "People who use a lot of AI lose their critical thinking ability.",
-      "deck": "Reporting from 98.5 Montréal. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "People lose critical thinking ability due to overuse of AI.",
+      "deck": "A study suggests that heavy AI use may impair critical thinking, raising concerns about its impact on human cognition.",
+      "what_happened": "A radio interview discussed research indicating that excessive AI use can lead to a decline in critical thinking skills, particularly among students. The interview featured Dr. David Fortin, a neurosurgeon and author, who warned that overreliance on AI could weaken cognitive functions and reduce personal satisfaction. He emphasized the need to use AI as a supportive tool rather than a replacement for human reasoning.",
+      "why_it_matters": "The findings highlight the potential risks of overusing AI in education and daily life, suggesting that reliance on technology may erode essential cognitive abilities. This is particularly concerning for younger users who are more likely to engage with AI tools regularly.",
+      "body_paragraphs": [
+        "The interview discussed a study suggesting that overreliance on AI can lead to a decline in critical thinking skills. Dr. David Fortin, a neurosurgeon and author, explained that excessive use of AI, particularly through platforms like ChatGPT, can cause cognitive atrophy, reducing creativity and mental well-being. He emphasized the importance of using AI as a supportive tool rather than a replacement for human reasoning.",
+        "The study's findings raise concerns about the long-term effects of AI on human cognition. While AI can assist in tasks requiring quick information retrieval, overuse may lead to a decrease in problem-solving skills and independent thinking. This is particularly relevant for students who may become dependent on AI for academic tasks, potentially hindering their ability to think critically."
+      ],
+      "for_humans": "Heavy AI use may reduce critical thinking ability, especially in students, by weakening cognitive functions and decreasing personal satisfaction.",
       "for_ai": "AI is not shown to be restricted or expanded in the evidence.",
       "human_direction": "loss",
       "ai_direction": "none",
@@ -3484,14 +3490,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "study",
+      "limitation": "The study focuses on students and does not account for the impact of AI on adults or other age groups. Additionally, the research does not provide long-term data on the effects of AI use on cognitive abilities.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 124
+      "daily_rank": 114
     },
     {
       "key": "event:cdbb1d6b-1dec-4cfa-bad5-e9e669724acd",
@@ -3638,7 +3644,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 17
+      "daily_rank": 22
     },
     {
       "key": "event:ca258beb-54a8-40b4-8d3d-dafccfe2bba3",
@@ -3687,7 +3693,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 32
+      "daily_rank": 37
     },
     {
       "key": "event:c58e1ce4-7e9a-4b24-b013-141538839aec",
@@ -3834,7 +3840,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 22
+      "daily_rank": 27
     },
     {
       "key": "event:b3cb89ce-9df0-4942-af91-84c91c948507",
@@ -3883,7 +3889,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 52
+      "daily_rank": 57
     },
     {
       "key": "event:ab9b1f67-3f71-43b0-abc7-c134a2010a28",
@@ -4523,7 +4529,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 129
+      "daily_rank": 2
     },
     {
       "key": "event:3bef1ee4-73a4-40a9-ae78-aebe241e5313",
@@ -4670,7 +4676,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 119
+      "daily_rank": 129
     },
     {
       "key": "event:2ccb707e-963e-45cb-9208-31f203cfb46b",
@@ -4719,7 +4725,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 27
+      "daily_rank": 32
     },
     {
       "key": "event:1a8dce4b-a641-4a3b-8139-a9a8b5aa2e27",
@@ -4866,7 +4872,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 57
+      "daily_rank": 62
     },
     {
       "key": "event:14a3e4f9-2082-4a66-8388-4769f458914c",
@@ -4915,7 +4921,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 82
+      "daily_rank": 87
     },
     {
       "key": "event:0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e",
@@ -5013,7 +5019,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 42
+      "daily_rank": 47
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -5482,7 +5488,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 47
+      "daily_rank": 52
     },
     {
       "key": "event:e8493da9-a236-4682-a671-622201325f49",
@@ -6073,7 +6079,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 96
+      "daily_rank": 100
     },
     {
       "key": "event:773354b6-1079-450e-8e5e-3935431a225b",
@@ -6379,7 +6385,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 100
+      "daily_rank": 104
     },
     {
       "key": "event:4c5ce73c-c3be-4a83-a144-40f53e9e66e4",
@@ -6991,7 +6997,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 87
+      "daily_rank": 92
     },
     {
       "key": "event:b975add8-abad-452e-9aa5-320d321c4402",
@@ -7436,7 +7442,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 37
+      "daily_rank": 42
     },
     {
       "key": "event:465b44bd-5916-49ac-b41c-fba8eade1e4e",
