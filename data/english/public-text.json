@@ -826,6 +826,354 @@
       },
       "output_sha256": "50b42acbd3c73fef3742a9a4a0f8cb4e282c5626b573ceef7a02e181b46d7075",
       "policy": "brief-english-display-v1"
+    },
+    "bc62186e5e709a993ab7a058d9e3c5600d6e3496e763bf2eb1510cfd4a432cf4": {
+      "english": {
+        "0": "ChatGPT's global market share has fallen below 50% for the first time, marking a new phase of multipolar balance in the global large-model market; foreign tech giants are breaking through in turn, pricing and cost structures in domestic and international markets are changing rapidly; open-source and domestic models are accelerating their participation in the competition.",
+        "1": "The competitive landscape and governance mechanisms are simultaneously reshaping the global AI ecosystem, having far-reaching effects on each country's strategies, industrial investments, and pace of innovation.",
+        "2": "The development of global large models has shifted from a simple competition in technical performance to a comprehensive game involving costs, industrial logic, and governance rules. The report notes that ChatGPT's share in the global AI assistant market fell below 50% for the first time, drawing attention to multi-party competitive dynamics, while also showing notable divergence between domestic and international pricing and cost structures. Different regions and companies are participating in the new market order through open models, pricing strategies, and compute power infrastructure.\nIn terms of governance and compute sovereignty, countries are promoting more systematic rulemaking and the enhancement of autonomous controllability. The article emphasizes a trend of raising governance frameworks from the level of industrial-technical to institutional-rule levels; interstate competition is focusing on governance discourse power and compliance frameworks. Conflicts and cooperation coexist; the global AI ecosystem must seek a balance among innovation, safety, and universal access.",
+        "3": "The original text is a composite report from a single news source; the facts and trends involved require further verification with evidence from multiple sources and time series."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b380c91ff0e2c694eee183f449fd665f3d330017715d80c961e8df211884a428",
+      "policy": "brief-english-display-v1"
+    },
+    "26c96c5a7fa3680eba7453297b643b917340c85e427c92b8b211df8829a22057": {
+      "english": {
+        "0": "Reporting from Jiangsu Provincial Committee News Network. Open the source for the article.",
+        "1": "Jiangsu Provincial Committee News Network",
+        "2": "Jiangsu Provincial Committee News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "126af13b2465daa8b0f804c7f9ee9ef535ac4bccfceedc6dc8b92698f9800744",
+      "policy": "brief-english-display-v1"
+    },
+    "a79de54124f4f2e4a09bf29f912b07ad425408df6bfeb3ddf1130e9429998811": {
+      "english": {
+        "0": "Beijing Municipal People's Government Portal Website",
+        "1": "Beijing Municipal People's Government Portal Website"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8ea135b99984b1a98ad64d0ac334f8f4dfa7964a8c691eaf384ffa95bbf20ed3",
+      "policy": "brief-english-display-v1"
+    },
+    "496b0c3d053899b6e582164250a4636cf8995349f4bcae1a022dc1fdb7e990fb": {
+      "english": {
+        "0": "Reporting from Gènéthique. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e4b697acfc4eee437bd4861c122721520a75766faafaccb46064999ce833a687",
+      "policy": "brief-english-display-v1"
+    },
+    "489afee274d6da918ca226c9f8f51524c35b21f68fc9fcdf167e743a1a841bc6": {
+      "english": {
+        "0": "Reporting from Xinhua Net. Open the source for the article.",
+        "1": "Xinhua Net",
+        "2": "Xinhua Net",
+        "3": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "359263b9f136c59d3dba7bf6c5f2d88075beed3997bbd11125cad86a92ab9848",
+      "policy": "brief-english-display-v1"
+    },
+    "0d7a2d51c569997e7df9a34873a5421f33b82b7969dd86f4c01b1bb2779ad204": {
+      "english": {
+        "0": "Reporting from the Chinese Academy of Sciences. Open the source for the article.",
+        "1": "Chinese Academy of Sciences",
+        "2": "Chinese Academy of Sciences"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4b967e9677af386da0141c0ac586f07b7c39d0154aff4a87163f015d68c3c8a9",
+      "policy": "brief-english-display-v1"
+    },
+    "fcf12095351ebf4458c878556dae184be2dbbeec4c7b02688ea57ec554ffb9a0": {
+      "english": {
+        "0": "Reporting from China Daily Online. Open the source for the article.",
+        "1": "China Daily Online",
+        "2": "China Daily Online"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "534933a91dde1dfd5c6b43985b0786fa36bb5df645dc2185556cb6cf0375b8a8",
+      "policy": "brief-english-display-v1"
+    },
+    "fe19c678f2a1f9c6769b29647351bbdcd7d4439e26d24e549db4abe416b7fee9": {
+      "english": {
+        "0": "Reporting from University of Montreal. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8d4a8c837901f9314e59896f756df773fd7d35ee0b56a8b541c034e63263a95f",
+      "policy": "brief-english-display-v1"
+    },
+    "6dd4527599d5a0f4fdb2669cdf4e7a16b18175e76af4d167895684ac487d5e86": {
+      "english": {
+        "0": "Reporting from Le Canard enchaîné. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c9545c0045ed9ba99e4b97302c55960d6667846ff300538c5a3f3e6a3a414830",
+      "policy": "brief-english-display-v1"
+    },
+    "34cd50263287431205304b1b8c766e04fec37487fb4640e46e405dfb93db6aa2": {
+      "english": {
+        "0": "Artificial Intelligence: Ads Are Coming to ChatGPT in France",
+        "1": "Artificial Intelligence: Ads Are Coming to ChatGPT in France",
+        "2": "Artificial Intelligence: Ads Are Coming to ChatGPT in France"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "792f3a6dc4bf11cee4e97634bcb3f069f2d629f4ab836aa2cabe4ee6377b617c",
+      "policy": "brief-english-display-v1"
+    },
+    "b1889503686ea3bc48c3d15492ba38b1c98b94dd9199adc0481d3f8e1f8bd400": {
+      "english": {
+        "0": "Nobel Prize in Literature · 2002",
+        "1": "Hungarian",
+        "2": "Discover Imre Kertész"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c1dfcf2168b83d66fd4358b567e4ea60b2dc7e8d8a321fd10bc6a25312ec2462",
+      "policy": "brief-english-display-v1"
+    },
+    "888bac574a102185089d23636072494f42479c62ba10de5308ef03da481f6efd": {
+      "english": {
+        "0": "Nobel Prize in Literature · 1988",
+        "1": "Egyptian",
+        "2": "Discover Naguib Mahfouz"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7c3103e99e27f922aeedac2d50eb7eef1fe847a0f0c855bf82af259b512721c7",
+      "policy": "brief-english-display-v1"
+    },
+    "30265dbdc335da14e019ffb52ee3a805d69c55fd4af86079f6b963071141577f": {
+      "english": {
+        "0": "Nobel Prize in Literature · 1945",
+        "1": "Chilean"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "98ef8bfd6de4f083c849d400773c2eb905231449c0e62df4e15f567a0cff282f",
+      "policy": "brief-english-display-v1"
+    },
+    "3fec49484dd0f1d91077491239ad26a2f0089791955afadc0bda2562f71d23fc": {
+      "english": {
+        "0": "Nobel Prize in Literature · 1986",
+        "1": "Nigerian",
+        "2": "Discover Wole Soyinka"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6227f93a6261bbb5d2754506659bca7ff74301371179bd7f887a11eea0e68bde",
+      "policy": "brief-english-display-v1"
+    },
+    "def95e644e42da7b8ca768b08c592bbbb5fcf2b81c92352433f787232a9c5c4e": {
+      "english": {
+        "0": "Nobel Prize in Literature · 1913",
+        "1": "Indian · Bengali"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "65a3e7e9b944fadb6fcaa7d820048c46cd68235e4a06afb0eed0eeffc988b123",
+      "policy": "brief-english-display-v1"
+    },
+    "191187e83db66f17f8889862ac68f00abc189a0da51a131420197ed8de4968cf": {
+      "english": {
+        "0": "Russian",
+        "1": "Tolstoy in the nomination archive"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d94076c0281c189ef3b9103b923e4883755151afcd82acef69a17d367e2c71bf",
+      "policy": "brief-english-display-v1"
+    },
+    "313644b22ec1180b2cbbc156b6dbb1c491865a22aca3d04b7a9384745cd643e4": {
+      "english": {
+        "0": "Nobel Prize in Literature · 2024"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0806534f2e5e6aef6594c8f0f8a9288486848c4ff14428e019e32bafd16c54cb",
+      "policy": "brief-english-display-v1"
+    },
+    "e829d0132fda6b714b6511f7b301f70197df90a6892302826d8832fdced8deeb": {
+      "english": {
+        "0": "The Metamorphosis"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "099090ca9c1f826e894187b28bc853f0705ad86bd3903445fa5d6ebd7b7b0332",
+      "policy": "brief-english-display-v1"
     }
   }
 }
