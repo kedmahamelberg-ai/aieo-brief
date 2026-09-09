@@ -1231,6 +1231,128 @@
       },
       "output_sha256": "f5ee2c4ea7d90338cc3691d6898e946a74671c769ee006d0cdb8d50a1f4a06bf",
       "policy": "brief-english-display-v1"
+    },
+    "e53d630f53e0aecc5c36b14fc9d73306145ef1e83ec76f4cd842f52218aa6af1": {
+      "english": {
+        "0": "Reporting from Le Monde diplomatique. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "3a00ea5bae7064268ffefb3611a956a68cbc1bd96c477419a4a9db81a75c0f9d",
+      "policy": "brief-english-display-v1"
+    },
+    "b339ee8df26174aeca5073d4f4705bf094c615fdc13a446ba4de615b34066088": {
+      "english": {
+        "0": "English"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "898cb559c80795d21e802ce0e0b5d7afb9b149a90b240c2a0230cf81e7de341f",
+      "policy": "brief-english-display-v1"
+    },
+    "0f6b33363b2b578e057f2a2c9fedefc064c51fed91611ab59a30bd1fbf0d8631": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Divan of Hafiz · XXIII",
+        "2": "XXIII",
+        "3": "Divan of Hafiz · XXIII"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d033bfaed85c90c8aff4132a90e425ac96d3f7d952a2c07028e561fe9dc8f01f",
+      "policy": "brief-english-display-v1"
+    },
+    "8aaa41768a300527d5fc13e7ba87f1489a441a287f911687ae10ac230866e429": {
+      "english": {
+        "0": "Text, folio 115 (verso) from a Gandavyuha-sutra (Manuscript of the Supreme Array)",
+        "1": "Nepal",
+        "2": "Text, folio 115 (verso) from a Gandavyuha-sutra (Manuscript of the Supreme Array). ink on palm leaf.",
+        "3": "Text, folio 115 (verso) from a Gandavyuha-sutra (Manuscript of the Supreme Array)",
+        "4": "CC0 image",
+        "5": "Text, folio 115 (verso) from a Gandavyuha-sutra (Manuscript of the Supreme Array)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "61fbea09b02f7d2e281525eefb603eb68870b89c80e777a566565b8e1519d950",
+      "policy": "brief-english-display-v1"
+    },
+    "d28355447dcb5374e528c00d08e4c56068437725c53f7dbb8d67b5acdf3a8edf": {
+      "english": {
+        "0": "Russian",
+        "1": "Composer",
+        "2": "Borodin - String Quartet No. 1 in A major - II. Andante con moto (Musopen String Quartet)",
+        "3": "Borodin - String Quartet No. 1 in A major - II. Andante con moto",
+        "4": "Borodin - String Quartet No. 1 in A major - II. Andante con moto (Musopen String Quartet)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f8c3b70b1862df239cedced66e0ecbd8eda0f7cd09d766ebb3051a95c7c41a0b",
+      "policy": "brief-english-display-v1"
+    },
+    "04282ecd6e88c4156a25f787d5755ae7ff3a3dcca2810008aa6926b42224826e": {
+      "english": {
+        "0": "Reporting from China Economic Net. Open the source for the article.",
+        "1": "China Economic Net",
+        "2": "China Economic Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7d71a4b8cbb7d2c76e7555e08a0a81e09a1f313a5449ad41426a8adc4142bcc7",
+      "policy": "brief-english-display-v1"
     }
   }
 }
