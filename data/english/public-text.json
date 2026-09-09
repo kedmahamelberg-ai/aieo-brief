@@ -1174,6 +1174,63 @@
       },
       "output_sha256": "099090ca9c1f826e894187b28bc853f0705ad86bd3903445fa5d6ebd7b7b0332",
       "policy": "brief-english-display-v1"
+    },
+    "b871b0e78f9720279a4780aa0de085ba03fa467dcd62411c727edbe9e63ce7d8": {
+      "english": {
+        "0": "Reporting from Observer Network. Open the source for the article.",
+        "1": "Observer Network",
+        "2": "Observer Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "937bb562bfbd7e619706d397578910e78a02b960431b0798e4a06a8098dcf879",
+      "policy": "brief-english-display-v1"
+    },
+    "4b32ff006accdb7cb5c6c0773713027dee2b720f76ed6a885d63c121ed5f8d05": {
+      "english": {
+        "0": "Nobel Prize in Literature · 2012"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "3bec44175212d8a66770233d5ce7acea81de3836847e7b77de0da69371ab2dc1",
+      "policy": "brief-english-display-v1"
+    },
+    "49ad45c6b67d02a476c82db09618644d1b21ee7802c072a6c6d355ce72c1147e": {
+      "english": {
+        "0": "Spanish · Catalan",
+        "1": "Explore Dalí’s 1931 painting and its museum record."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f5ee2c4ea7d90338cc3691d6898e946a74671c769ee006d0cdb8d50a1f4a06bf",
+      "policy": "brief-english-display-v1"
     }
   }
 }
