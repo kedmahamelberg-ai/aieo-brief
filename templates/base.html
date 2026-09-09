@@ -10,6 +10,12 @@
   <meta property="og:description" content="{{ story.deck if story is defined else 'AI news you can make sense of. Read, discuss and explore the sources.' }}">
   <meta name="twitter:card" content="summary">
   {% if config.adsense.publisher_id %}<meta name="google-adsense-account" content="{{ config.adsense.publisher_id }}">{% endif %}
+  {% if not is_preview and (page == 'home' or ads_eligible) and config.adsense.publisher_id == 'ca-pub-5170234738371400' %}
+  <!-- AIEO AdSense connection v1: verification is separate from ad permission. -->
+  <script>window.adsbygoogle=window.adsbygoogle||[];window.adsbygoogle.pauseAdRequests=1;</script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5170234738371400"
+     crossorigin="anonymous"></script>
+  {% endif %}
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="stylesheet" href="{{ local('assets/site.css') }}">
   <link rel="icon" href="{{ local('favicon.ico') }}" sizes="16x16 32x32 48x48">

@@ -12,13 +12,23 @@
  document.querySelectorAll('[data-ad-slot]').forEach(slot=>{if(slot.querySelector('ins')||!/^\d{1,20}$/.test(slot.dataset.adSlot))return;
  if(slot.dataset.adKind==='rail'&&!window.matchMedia('(min-width:901px)').matches)return;
  slot.hidden=false;const ins=document.createElement('ins');ins.className='adsbygoogle';ins.style.display='block';ins.dataset.adClient=c.publisher_id;ins.dataset.adSlot=slot.dataset.adSlot;ins.dataset.adFormat='auto';ins.dataset.fullWidthResponsive='true';slot.appendChild(ins);(window.adsbygoogle=window.adsbygoogle||[]).push({});});}
- function adRequests(){if(config.is_preview||!config.adsense?.page_eligible)return;if(adsLoaded){renderAdUnits();return;}adsLoaded=true;const c=config.adsense;const script=document.createElement('script');script.async=true;script.crossOrigin='anonymous';script.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(c.publisher_id);document.head.appendChild(script);renderAdUnits();}
+ function adRequests(){
+ if(config.is_preview||!config.adsense?.enabled||!config.adsense.cmp_enabled||!config.adsense.page_eligible)return;
+ window.adsbygoogle=window.adsbygoogle||[];
+ window.adsbygoogle.pauseAdRequests=0;
+ if(adsLoaded){renderAdUnits();return;}adsLoaded=true;const c=config.adsense;
+ const url='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+encodeURIComponent(c.publisher_id);
+ // Reuse the publisher tag already in the HTML head; never load it twice.
+ const exists=Array.from(document.querySelectorAll('script[src]')).some(s=>s.src===url);
+ if(!exists){const script=document.createElement('script');script.async=true;script.crossOrigin='anonymous';script.src=url;document.head.appendChild(script);}
+ renderAdUnits();
+ }
  function initAds(){const ad=config.adsense;if(!ad?.enabled||!ad.cmp_enabled||!ad.page_eligible||config.is_preview)return;const pub=ad.publisher_id.replace(/^ca-/,'');if(!/^pub-\d{16}$/.test(pub))return;
  // Google's Funding Choices message must be published for this site in AdSense.
  // No ad request runs until the CMP supplies its TCF decision.
 
  window.googlefc=window.googlefc||{};window.googlefc.callbackQueue=window.googlefc.callbackQueue||[];
- const hideAds=()=>{const hadAds=adsLoaded;document.querySelectorAll('.google-auto-placed').forEach(s=>s.remove());document.querySelectorAll('[data-ad-slot]').forEach(s=>{s.hidden=true;s.querySelectorAll('ins').forEach(x=>x.remove());});adsLoaded=false;if(hadAds)location.reload();};
+ const hideAds=()=>{window.adsbygoogle=window.adsbygoogle||[];window.adsbygoogle.pauseAdRequests=1;const hadAds=adsLoaded;document.querySelectorAll('.google-auto-placed').forEach(s=>s.remove());document.querySelectorAll('[data-ad-slot]').forEach(s=>{s.hidden=true;s.querySelectorAll('ins').forEach(x=>x.remove());});adsLoaded=false;if(hadAds)location.reload();};
  window.googlefc.callbackQueue.push({CONSENT_API_READY:()=>{if(typeof window.__tcfapi!=='function')return;window.__tcfapi('addEventListener',2,(data,ok)=>{if(!ok||!data||!['tcloaded','useractioncomplete'].includes(data.eventStatus))return;const allowed=data.gdprApplies===false||(data.gdprApplies===true&&data.tcString&&data.purpose?.consents?.[1]&&data.vendor?.consents?.[755]);if(allowed)adRequests();else hideAds();});}});
  // Consent mode also supplies an explicit inapplicable/granted state outside
  // TCF regions. Google receives the CMP's GPP signals for US-state choices.
