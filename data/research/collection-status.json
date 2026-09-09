@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-09-02",
-  "period_end": "2026-09-08",
+  "period_start": "2026-09-03",
+  "period_end": "2026-09-09",
   "providers": [
     {
       "source": "arxiv",
