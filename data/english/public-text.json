@@ -1,0 +1,831 @@
+{
+  "policy": "brief-english-display-v1",
+  "entries": {
+    "fb3f0aaa3d5c77c293a65ddf80f4c45c1fec856f052653e3aff34a61842815b3": {
+      "english": {
+        "0": "Reporting from Mon Carnet — on digital news. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cdd1fbf55095ed70cc1e7f046bc50e11f9ee2b11f22764a299d45670b97e26f2",
+      "policy": "brief-english-display-v1"
+    },
+    "14a506ab412f7fc34d1664ceae52adc92054136611a0fa4c7aed238ff62994e1": {
+      "english": {
+        "0": "A new-type AI Institute at Dalian University of Technology was inaugurated and began operating, focusing on interdisciplinary education and talent development; but existing reports come from the university, and external verification is still needed.",
+        "1": "On September 3, Dalian University of Technology's School of Artificial Intelligence (AI HUB) was officially inaugurated and began operating, announcing the establishment of an 'interdisciplinary, open, platform-based' academic entity, organized around general intelligence, embodied intelligence, intelligent applications, and intelligent R&D.",
+        "2": "This institution attempts to break down disciplinary barriers, promote internal multidisciplinary collaboration and cross-college mobility, and aims to become a leading force in digital-intelligent transformation, but the evidence remains mainly from the university, with external impact to be observed.",
+        "3": "On September 3, Dalian University of Technology's School of Artificial Intelligence (AI HUB) was officially inaugurated, positioned as a 'cross-disciplinary, open, platform-based' new-type reform vehicle, aiming to break down disciplinary barriers and promote the integration of interdisciplinary education and research. The university states that AI HUB will center on PI teams, implement a flat, matrix-based operating model, and strive to form a global layout in general intelligence, embodied intelligence, intelligent applications, and intelligent R&D. The institute also proposes to lead the university-wide talent development in the field of artificial intelligence, relying on team-building and cutting-edge research projects to link bachelor's, master's, and doctoral training paths, and to open global talent recruitment and multi-channel faculty participation, in order to accelerate the formation of an academic and educational ecosystem with global comparative advantages.",
+        "4": "For ordinary readers and young people, understand the new organization and goals of the AI campus.",
+        "5": "Dalian University of Technology News Network",
+        "6": "Dalian University of Technology News Network",
+        "7": "Based solely on materials released by the university, lacking independent verification, and with no external independent confirmation or long-term observation yet."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9cdd774145ec0ee1d83df74f549b71a521ff0773d9287f8c6f05d9fd6c8a099e",
+      "policy": "brief-english-display-v1"
+    },
+    "089114cada5f2855809f338fa66b283727084aaeac6cab148d0ed822bb44673c": {
+      "english": {
+        "0": "People's Daily reports: the Gansu Province releases the 2026–2030 'Artificial Intelligence + Education' Action Plan, covering universities, computing power platforms, and smart classrooms.",
+        "1": "The Gansu Department of Education and four other departments launched the action plan, focusing on the application of artificial intelligence in education and industry collaboration.",
+        "2": "Gansu announced the development of the 'Gansu Province Artificial Intelligence + Education Action Plan (2026–2030)', proposing five items and fifteen key tasks to promote collaborative innovation among universities, enterprises, and research institutes, to build an education computing power platform and upgrade classrooms.",
+        "3": "The plan aims to drive the digital transformation of education and improve educational quality through AI, while emphasizing coordinated advancement of industry-education integration and the building of technological infrastructure.",
+        "4": "The plan was issued by the Gansu Provincial Department of Education and five departments; it proposes establishing a joint innovation mechanism and a demand–supply matching platform, cultivating demonstration projects around key industries such as new energy, new materials, and equipment manufacturing, and encouraging universities to treat Artificial Intelligence as a public foundational course or an elective course to strengthen the linkage between education and industry.\nMoreover, the plan includes laying out a provincial-level education computing platform, advancing smart classroom construction, updating training equipment, and establishing industry-education integrated internship bases, aiming to enhance the application capability of educational technology and the integration of industry and education.",
+        "5": "To explain policy points to ordinary readers and young people, avoiding exaggeration of impact.",
+        "6": "People's Daily",
+        "7": "People's Daily",
+        "8": "This text only describes the key points of government plans and measures, and does not provide direct evidence on AI benefits, learning outcomes, or actual implementation effects, and should not be generalized as a universal norm or global conclusion."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2c770bb1b95a27c2c880f1a926902364d93f3b8ce56508deb5adab847098f231",
+      "policy": "brief-english-display-v1"
+    },
+    "5ba4c9486f26d16585fab6583c5ce93284dfc59bb104e84a6cd921ebe2021569": {
+      "english": {
+        "0": "Reporting from Dalian University of Technology News Network. Open the source for the article.",
+        "1": "Dalian University of Technology News Network",
+        "2": "Dalian University of Technology News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "acc514f3abcb9d2b1758a84daa1d7e57d48705fd47f9b8a368eda8fd62afba53",
+      "policy": "brief-english-display-v1"
+    },
+    "ddf0e75bfdfd63d6696378046f62f7ad2fecd4bf37bc82fc48e36fc33f750ff2": {
+      "english": {
+        "0": "ScienceNet, News",
+        "1": "ScienceNet, News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "301e1f40d08c6c7a613f873822b3430f20bcc9ddf7cef47fa39f13ef916b5b63",
+      "policy": "brief-english-display-v1"
+    },
+    "bf26886d6a31e8c43523bf8ceefb4e35e1b53f674675bac7cd05f71aa0ab1660": {
+      "english": {
+        "0": "Bricklayers, nurses, and electricians currently escape AI, says Le Temps, with caveats",
+        "1": "Some professions remain less threatened by generative AIs, according to a Swiss study; the salary outlook remains uncertain.",
+        "2": "Le Temps reports that, in the face of generative AIs, some manual professions and those in direct contact remain less exposed to automation at this stage, and the impact on wages remains to be specified.",
+        "3": "The account presents mixed gains and losses: some jobs appear to resist for the moment, but long-term effects and wage effects are not known.",
+        "4": "The article examines trades such as construction, plumbing, electrical work and care, arguing that they face fewer threats from generative AI thanks to unstructured physical environments and strong human interactions.\nIt nevertheless notes that the conclusions are discussed as a current image of the labor market, and not as universal forecast; future effects on wages and careers remain uncertain and dependent on various factors.",
+        "5": "For younger readers, understand that not everyone is immediately replaced by AI and that some jobs remain human and manual.",
+        "6": "The article does not generalize about all professions nor all contexts; it is a current viewpoint and does not specify future wage developments."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5a4e492e711053a2a8374b6daf38b6567222742ab92fa8bd46bff8c0b1d69403",
+      "policy": "brief-english-display-v1"
+    },
+    "cad396e7aa50349e51e5eed4696c9615142b4804576d2a64cbc65fc5aea66aa2": {
+      "english": {
+        "0": "Reporting from China Science and Technology Network. Open the source for the article.",
+        "1": "China Science and Technology Network",
+        "2": "China Science and Technology Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "042eee3f4e182c4c96756528941e485653f7f3f5db11601267d3a9d819533567",
+      "policy": "brief-english-display-v1"
+    },
+    "e7f350b396e629154bf5a355d682ec239f7917cc21eca3d838cd60c940473d25": {
+      "english": {
+        "0": "Reporting from China Science and Technology Network. Open the source for the article.",
+        "1": "The 'Songyang' series of vertical large models are being developed and deployed to support scientific research and agricultural production.",
+        "2": "China Science and Technology Network",
+        "3": "China Science and Technology Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a09f6968732e68d4704c4c20242f6897b2cc54fc97d6b3f24c1014e21b01f9db",
+      "policy": "brief-english-display-v1"
+    },
+    "5004c368b582b87602918eb516aee47dd90f9b8b13da96ecbc792356543ff322": {
+      "english": {
+        "0": "Xinhua Net",
+        "1": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ec27b103f74bab6bb061444426f5a3c996d0909e00a811856df9d787a72e528a",
+      "policy": "brief-english-display-v1"
+    },
+    "f1311d1dc9f175e351d76c5953388ac136498cbef95f78bec3416604c14e7944": {
+      "english": {
+        "0": "China Science and Technology Network",
+        "1": "China Science and Technology Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "3e6251bc72d4dbf1a74ef73e9d7ca3e8aa115ecf084fd37f8b5641e394b22797",
+      "policy": "brief-english-display-v1"
+    },
+    "75e4220918356b5bd892127ac62fb9fb35852d76d6a40a51c4865014b5d12aba": {
+      "english": {
+        "0": "Reporting from Xinhua Net. Open the source for the article.",
+        "1": "Xinhua Net",
+        "2": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "742932388c47ba397544c9e0ff8473786d7405b8744d79474f7e145327ed9956",
+      "policy": "brief-english-display-v1"
+    },
+    "bb2769d24b7a1421de53a36cfdbf36857544caee8706ec385dc7538e9920abdc": {
+      "english": {
+        "0": "CNR (China National Radio)",
+        "1": "CNR (China National Radio)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "76f1cc0dd5d4be91ae6cbda95f37794164c7eefa63e503645e9cda965997b7d1",
+      "policy": "brief-english-display-v1"
+    },
+    "68527e263de9c6dba9fda1f3a195be67dce507ce804481f123259c53c335dbea": {
+      "english": {
+        "0": "A formal standard \"Artificial Intelligence Token (Token) Operations Management Capability Requirements\" has been released, focusing on core directions of token operation management platforms: resource onboarding, services, costs, analytics and compliance auditing, etc., prepared jointly by industry participants.",
+        "1": "Standardization contributes to transparency and cost control, but the current text does not commit to specific benefits for humans or the AI side; further application and evaluation are needed to define actual impact.",
+        "2": "AI applications are moving from pilot testing to large-scale deployment, and Token is regarded as an important carrier linking computing power, models, and applications. The standard was co-authored by the Unicom Digital Intelligence Core, proposing a full lifecycle management framework covering resources, services, billing, and auditing, aiming to provide enterprises with a unified operational benchmark.\\nThe framework emphasizes multi-dimensional data monitoring, traceability, and compliance, striving to enable comparable operational analysis and cost control for different models and services on the same platform. At the same time, the document clarifies the practical differences and implementation difficulties that still need to be addressed in standard adoption, and urges users to evaluate based on actual deployment results.",
+        "3": "Xinhua Net",
+        "4": "Xinhua Net",
+        "5": "A report based on a single official document; it does not contain explicit commitments or quantitative evidence of actual benefits for users, and does not provide direct impact on people or the AI side."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0cd4c70d501f71122a5437ce290bbb4e093ef3fc350cdfd1dd98241275746611",
+      "policy": "brief-english-display-v1"
+    },
+    "081c549b50a88a69b72c1a0e9399d9714ab9db534683817852f52ebcdff5bb3e": {
+      "english": {
+        "0": "The country’s first iteration and upgrade of a chemical industry large model, emphasizing the leap from knowledge Q&A to intelligent execution of chemical tasks, while also disclosing performance data and application scope.",
+        "1": "Xinhua News Agency reports that 3.0Pro was developed and released jointly by the Dalian Institute of Chemical Physics of the Chinese Academy of Sciences, iFlytek, Alibaba Cloud, and others; it establishes a four-layer technical framework, integrates more than 400 chemical intelligence agents and tools, is trained on vast chemical-specialized data, forming a complete loop of understanding, planning, execution, and validation.",
+        "2": "The result demonstrates the deployment potential of an industry-grade large model in real working conditions, but performance gains are relative to specific scenarios and do not equate to universal utility across all industries.",
+        "3": "This release shows that general-purpose models targeted at specific industries are evolving toward executable tasks; 3.0Pro’s accuracy in text-based and multimodal Q&A has significantly improved, and it has been opened for use by more than 300 enterprises and institutions. Platform API calls have reached tens of millions, illustrating traceable data from the lab to real-world applications.\nThe development team also described a complete work loop, emphasizing the coordination of cognition, execution, and validation, and the establishment of data centers and pilot-scale platforms covering the full chain, aiming to shorten the path from research to production, while noting that the achievement still needs validation in more scenarios.",
+        "4": "Help teenagers and the public adopt a rational attitude toward AI applications in professional fields.",
+        "5": "Focus on how understanding models collaborate in chemical tasks, rather than simply replacing humans.",
+        "6": "Xinhua Net",
+        "7": "Xinhua Net",
+        "8": "The report is based on specific industry environments and institutional information, and does not provide direct extrapolation to other industries, nor broad universally applicable conclusions."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "296f104d73dee9325fe9fc4750afad0a7ca8667aa1f4bdc4476c72be7629e754",
+      "policy": "brief-english-display-v1"
+    },
+    "f5878983dfda4f483fe7372eb51e35d5a7a24f0896917cd7a39bfb54bb8f8d64": {
+      "english": {
+        "0": "Généatique, a long history of genealogical software, integrates automatic transcription and translation tools thanks to artificial intelligence, and relies on the data from the SOCFACE project to read and index nominative censuses.",
+        "1": "The integration of AI in a historical tool shows how technologies can support personal research, while reminding of the limits of accuracy and reliance on databases.",
+        "2": "Généatique, born in the 1980s and kept relevant for forty years, evolves with artificial intelligence to help genealogists process old documents. The company Mise à jour offers tools that transform the work of indexing and transcription, continuing the goal of constructing and representing genealogical trees.\nThe integration relies on specific data such as the SOCFACE project, which reads and indexes nominative censuses thanks to AI. This approach illustrates gains in automation while emphasizing that results remain dependent on data quality and algorithms, with limits of fidelity and context in historical records.\n],",
+        "3": "The article describes the integration of AI tools and the use of SOCFACE, but does not provide measurable figures on accuracy, nor an independent assessment of performance, and implicitly notes limits of fidelity and dependence on specific data."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "32b2218c32110b345acfa9bd31304ac12d66510ce2ff05213542da2b4b0401e8",
+      "policy": "brief-english-display-v1"
+    },
+    "194657de0c4bf30b578e67ac372ae76c9be3edd77655d6609c96d4b44d271c49": {
+      "english": {
+        "0": "Tiger",
+        "1": "Tiger",
+        "2": "CC0 image",
+        "3": "Tiger"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "811eeb38884b2c025051030baf0a2c87808a429269de32cd906863ea88dab0b8",
+      "policy": "brief-english-display-v1"
+    },
+    "2dc6255b42883bae0d8e017567b2233b3c3b63b86dc89a336fc3427b0260bc5a": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Loose Papers.",
+        "3": "It was almost eleven o'clock when the reading of this second scene ended. Duarte could hardly contain his anger; it was already impossible to go to Rio Comprido. It is not out of place to conjecture that, if the major were to expire at that moment, Duarte would welcome death as a blessing from Providence. The bachelor’s feelings did not convince him of such ferocity; but the reading of a bad book is capable of producing still more astonishing phenomena. Moreover, as to the bachelor’s fleshy eyes, in full view appeared the tangle of Lopo Alves, the golden strands that adorned Cecilia’s beautiful head flashed into his spirit; he saw her with blue eyes, white and rosy complexion, a delicate and graceful gesture, dominating all the other ladies who should have been in Widow Menezes’s salon. He saw that, and mentally heard the music, the discourse, the rustle of steps, and the swish of silks; while the hoarse and tiresome voice of Lopo Alves was stringing together the scenes and dialogues, with the impassibility of a strong conviction.",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8f057c0104eda92b1fd1b2e148d60f1e1db57dc4c781f6da318f684430cbe4c5",
+      "policy": "brief-english-display-v1"
+    },
+    "c76e25532c885870af9527d78703a6ea03d7d127e89290e113824f0201d8ab0c": {
+      "english": {
+        "0": "Indian · Bengali",
+        "1": "Gitanjali · 43, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+        "2": "Gitanjali · 43",
+        "3": "Gitanjali · 43"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0d2ad256066ba0003ed9ad0057385d0bdd5b15ed4abea77023f627e6b9c98ccd",
+      "policy": "brief-english-display-v1"
+    },
+    "b3e01ccd98d798d97147962ec0285b158c627c0b0005203a4055669837bb8edf": {
+      "english": {
+        "0": "Spanish",
+        "1": "Composer",
+        "2": "A recording of music by Isaac Albéniz. 6 minutes to listen.",
+        "3": "Isaac Albéniz - Suite Española Op. 47 - Leyenda",
+        "4": "Asturias, from Chants d'Espagne and Suite Española Op. 47",
+        "5": "Isaac Albéniz - Suite Española Op. 47 - Leyenda"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bf7a171e51277b9d94ed142176d39d889df878d0686fb698fd9c7e0ee7ae4743",
+      "policy": "brief-english-display-v1"
+    },
+    "ae22d9abefb41323414ea243cf01cd87f2112d8053c52836fb4f4fd8311ee6be": {
+      "english": {
+        "0": "Walden",
+        "1": "American",
+        "2": "From Walden."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5ae2c9451010cdc0b1968d48eaf9b391982a3c866e3a51082070cfe0b8e1248e",
+      "policy": "brief-english-display-v1"
+    },
+    "b72044e5f0865f93eeb1b159c4559f8055c7af87c09f71caa7a4419f34f43d09": {
+      "english": {
+        "0": "Dhammapada",
+        "1": "Dhammapada · a short reading",
+        "2": "Dhammapada · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1cdbc9d690f79932a08fe4ca08c7925d3836d81992ed9e1c44703a059238b198",
+      "policy": "brief-english-display-v1"
+    },
+    "43cae05033ccfa83223c01f96ec502cff10870a3cf5ef8803887c033faab6a14": {
+      "english": {
+        "0": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2e67ab9bb9ca8d5c743689d04f57983e1ecc1c3b08b41ece7f60a095623acffb",
+      "policy": "brief-english-display-v1"
+    },
+    "81d4ffb0b17bd0979fcc2afa6a7ebac6840833623eba2c1d4672f397b6ea4464": {
+      "english": {
+        "0": "Hungarian",
+        "1": "Composer"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f79b02157a6b43e84e9ead27b03bba2d433e5be003849cea236dabd9b291203d",
+      "policy": "brief-english-display-v1"
+    },
+    "7136b4d23280937827f6e25e13bdc1d5b82510be59f2fd5e292fa60b0a5b65d1": {
+      "english": {
+        "0": "English",
+        "1": "A poem by William Blake.",
+        "2": "A DREAM",
+        "3": "A DREAM",
+        "4": "A DREAM"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1a7ea7948b4dd7bdf57ab0d025ba953f3afd60e6d038e81c9c35083ed4a74f81",
+      "policy": "brief-english-display-v1"
+    },
+    "e9bd736dc1ee6fce325f00fa7bc100ec0fd5cc1d4a0146de83e30009c945ef1c": {
+      "english": {
+        "0": "Indian · Bengali",
+        "1": "Gitanjali · 76, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+        "2": "Gitanjali · 76",
+        "3": "Gitanjali · 76"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cc4a2d58d67f910e866da839e138e987552c7ba24a07c6caa2e01cd460d32354",
+      "policy": "brief-english-display-v1"
+    },
+    "20162ee7c1a64fbde52249f5eb5619665ea19a4097340ea6b75de3945a73a881": {
+      "english": {
+        "0": "Japan, Momoyama period (1573–1615)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "83a5ab556082d1b14b66054b7e3be568adaef2354776196437826decfa7b1bdf",
+      "policy": "brief-english-display-v1"
+    },
+    "f89aca3e4fbbea3098652f1e26bdcf5aab686c3f7457341116118e20ff2d5a5f": {
+      "english": {
+        "0": "Italian",
+        "1": "Composer",
+        "2": "Paul De Bra - Vivaldi's Lute Concerto in D major, RV 93 - II. Largo (Accordion Orchestra)",
+        "3": "Vivaldi's Lute Concerto in D major, RV 93 - II. Largo (Accordion Orchestra)",
+        "4": "https://imslp.org/wiki/Chamber_Concerto_in_D_major%2C_RV_93_(Vivaldi%2C_Antonio)",
+        "5": "Paul De Bra - Vivaldi's Lute Concerto in D major, RV 93 - II. Largo (Accordion Orchestra)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c3d7656fddb08d1fb6e30440973a984c34d69b549051f34e892e3ce44d149a66",
+      "policy": "brief-english-display-v1"
+    },
+    "4891380793c1b741f8ceb28de5ed07853e37777d80ed68eb7d57cc951e014a5c": {
+      "english": {
+        "0": "Thus Spake Zarathustra",
+        "1": "German"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f5b09682e0894977d8161df07d5d80d5bcc7a69d48091c55886088491a183f5b",
+      "policy": "brief-english-display-v1"
+    },
+    "f8fbac82aec531a19c4fd610331c2f8a901d4a8d7cf2f1bad4dc808dbe6144cb": {
+      "english": {
+        "0": "Dhammapada",
+        "1": "From Dhammapada. Translation by F. Max Müller."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0d80d325501119fc6ebccef4bd29716844cec29dc77e49539ddd9e6311bf3a92",
+      "policy": "brief-english-display-v1"
+    },
+    "ef275c85a92c6787fa49e8816683ba5565d46d9f35fee12bac7f274026aa4152": {
+      "english": {
+        "0": "Nepal",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8f6cc9aaecbfc22cc2dd113c66a45d3e250c40195d6d0883ac79cbbb7ef0b78d",
+      "policy": "brief-english-display-v1"
+    },
+    "acdeab5f818f675f62a232d17c9e22fb099bea780bb68cfaf56bed9cdf5f6fc0": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer",
+        "2": "A recording of music by Antonín Dvořák. 14 minutes to listen.",
+        "3": "JOHN MICHEL CELLO-DVORAK CELLO CONCERTO in B minor 3rd",
+        "4": "Cello concerto in B minor, Op. 104, B. 191, 3rd movement.",
+        "5": "http://www.garageband.com/artist/cello",
+        "6": "JOHN MICHEL CELLO-DVORAK CELLO CONCERTO in B minor 3rd"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "935bc2f390140f357bf9a50c947da02400daa77a5bb6874d61f76baaa295fc97",
+      "policy": "brief-english-display-v1"
+    },
+    "47f526af20edbb29d0be4f14145937a5c0a2e76c8602fc41fec5bab0d63f63fb": {
+      "english": {
+        "0": "CC BY 4.0"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ce3618c1c95a56c309e8111b9c0ba11f9b7282bfeb6a3d8f6544288797aa52fb",
+      "policy": "brief-english-display-v1"
+    },
+    "150c91904e95173c1ee4bdead6a2e57e2180a00ef21b04b431d3ab8e5b4c3276": {
+      "english": {
+        "0": "Public-domain text",
+        "1": "From Walden (1854)."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c52a1292d9197557475fa442dce6e270f4ab9a76b462009e375ed57ce15f4a16",
+      "policy": "brief-english-display-v1"
+    },
+    "de67dc940c1d084dfc122bc37bee5bcc3270e00654f21126fc5ecb545d2bd6d1": {
+      "english": {
+        "0": "Public-domain text"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7c5e74c6ab15977744231fa2656ec414852f3e27c6ee19166fe47252560e3d60",
+      "policy": "brief-english-display-v1"
+    },
+    "790535cfdd77f7fcef407250fa7a5b3ca3fdd4026ee253eb04789e1bed06abfb": {
+      "english": {
+        "0": "Public-domain poem"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4748d5c676bcf3c65e07cd30e248e10406d6715720bdd6a060c267f21684d12e",
+      "policy": "brief-english-display-v1"
+    },
+    "b965e96e15746730661d1edf1ac2bd69dceb310ae35d06233b396069cc488a7c": {
+      "english": {
+        "0": "Yvette Guilbert",
+        "1": "CC0 image",
+        "2": "Yvette Guilbert by Henri de Toulouse-Lautrec (French, 1864–1901)",
+        "3": "Yvette Guilbert"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8eb9335f35e298a1e3e22c863c4cd20cd5cd121fc026555946440c714a3e2077",
+      "policy": "brief-english-display-v1"
+    },
+    "30779f7828fd7a0295a08ee151cbdae7f01e54c28ab30bc133a3cba4465e02f7": {
+      "english": {
+        "0": "Reporting from Qiushi. Open the source for the article.",
+        "1": "Qiushi",
+        "2": "Qiushi"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b69e502f5d994185501bf311eb63828f56aedf2c85346d87a90e18e56e020553",
+      "policy": "brief-english-display-v1"
+    },
+    "98e510ecd2afab324c197bf20713bf6ad8ce68211520fa58cb8bda99a07ccee0": {
+      "english": {
+        "0": "ChatGPT Images: Bring Your Ideas to Life",
+        "1": "ChatGPT Images: Bring Your Ideas to Life",
+        "2": "ChatGPT Images: Bring Your Ideas to Life"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "587c277722abeae4f6057fb971dbc48ed42c3dd1aace80b4b5bbe86b4872d696",
+      "policy": "brief-english-display-v1"
+    },
+    "c83e97ecac3dd69286516ff5c646df4925ed7e08423757b4ccc269d296d1fabe": {
+      "english": {
+        "0": "Artificial Intelligence: ChatGPT Can't Publish It",
+        "1": "Artificial Intelligence: ChatGPT Can't Publish It",
+        "2": "Reporting from Le Canard enchaîné. Open the source for the article.",
+        "3": "Artificial Intelligence: ChatGPT Can't Publish It"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4ca96f7d449b9f65a9c7133f038f557dee87fc45fa28171f8a7c3b12c43a554c",
+      "policy": "brief-english-display-v1"
+    },
+    "adf258db0d71612d8d73b7e5006622f143918ab34410a6f442b89ce73876e60b": {
+      "english": {
+        "0": "Reporting from Guangzhou Municipal People's Government. Open the source for the article.",
+        "1": "Guangzhou Municipal People's Government",
+        "2": "Guangzhou Municipal People's Government"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "50b42acbd3c73fef3742a9a4a0f8cb4e282c5626b573ceef7a02e181b46d7075",
+      "policy": "brief-english-display-v1"
+    }
+  }
+}
