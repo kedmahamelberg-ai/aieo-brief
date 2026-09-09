@@ -17,3 +17,6 @@ node_modules/
 
 data/research/public.tmp
 data/culture/current.tmp
+
+# Local AI accounting contains no text and is retained as a CI artifact.
+.ai-usage/

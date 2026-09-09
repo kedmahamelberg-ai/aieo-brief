@@ -4,6 +4,7 @@ No complete body, no invented rewrite. Existing publisher-linked entries stay re
 """
 from __future__ import annotations
 import argparse,json,os,time,uuid
+import ai_runtime
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -14,19 +15,23 @@ from build_site import inputs
 from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
 from source_evidence_quality import assess_body
 ROOT=Path(__file__).resolve().parents[1]
-MODEL=os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
+MODEL=ai_runtime.identity()['model'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
+MODEL_REVISION=ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','2f3b082b1356a6123f7ed71e65aea340da25d53c')
 
-def source_payload(rows):
+def source_payload(rows, allowed=None, fingerprints=None):
     result=[]
     for row in sorted(rows,key=lambda r:(not r.get('is_canonical_source'),str(r.get('article_id')))):
+        aid=str(row.get('article_id') or '')
+        if allowed is not None and aid not in allowed:continue
         evidence=str(row.get('evidence_text') or '').strip()
         quality=assess_body({'body_text':evidence,'content_basis':row.get('evidence_basis')})
         if row.get('evidence_basis')!='full_source' or not quality['usable_complete_body']:continue
+        if fingerprints is not None and fingerprints.get(aid)!=quality.get('body_sha256'):continue
         result.append({'source_number':len(result)+1,'publisher':str(row.get('publisher') or ''),'headline':str(row.get('source_headline') or ''),'published_at':str(row.get('published_at') or ''),'evidence_basis':'full_source','evidence':evidence,'evidence_ref':row.get('evidence_ref'),'source_url':row.get('source_url'),'quality':quality})
     return result
 
 def fingerprint(event,axes,sources):
-    return digest({'prompt_version':PROMPT_VERSION,'model_revision':os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','2f3b082b1356a6123f7ed71e65aea340da25d53c'),'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
+    return digest({'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
 def same_input(latest,fp):return ((latest or {}).get('evidence_basis_summary') or {}).get('input_fingerprint')==fp
 
 def candidates(release,sym,maps,force=False):
@@ -34,7 +39,10 @@ def candidates(release,sym,maps,force=False):
     counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
         eid=str(event.get('effective_event_id') or event['event_id']);relation=fixed_relationship(axis[eid]);story=stories.get(eid)
-        sources=source_payload(evidence.get(eid,[]))
+        bound=bool(release.get('complete_content'))
+        allowed={str(s['article_id']) for s in event.get('sources',[])} if bound else None
+        fingerprints=(axis[eid].get('evidence_basis_summary') or {}).get('source_fingerprints',{}) if bound else None
+        sources=source_payload(evidence.get(eid,[]),allowed,fingerprints)
         if not sources or not relation['axes'].get('evidence_complete'):counts['source_not_ready']+=1;continue
         fp=fingerprint(event,relation['axes'],sources);latest=versions.get(str((story or {}).get('story_id')))
         reusable=not force and same_input(latest,fp) and latest.get('publication_status') in ('published','preview')
@@ -68,7 +76,7 @@ def persist(client,item,release,draft,proof):
         generated_id=latest.get('generated_artifact_id');basis={**latest['evidence_basis_summary'],**basis}
     else:
         output={k:v for k,v in draft.items() if k!='support'}
-        artifact={'entity_type':'brief_story','entity_id':str(story['story_id']),'task':'editorial_story','run_id':os.environ.get('GITHUB_RUN_ID'),'provider':'local_llama_cpp','model_name':MODEL,'model_revision':os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','ggml-org/Qwen3-4B-GGUF:Q4_K_M'),'prompt_version':PROMPT_VERSION,'classifier_version':'independent-directional-v1','input_sha256':item['fp'],'output_sha256':digest(output),'output_text':json.dumps(output,ensure_ascii=False),'output_json':output,'evidence_snapshot_ids':[ref for s in item['sources'] if (ref:=valid_uuid(s.get('evidence_ref')))],'human_review_status':'governed_preview'}
+        artifact={'entity_type':'brief_story','entity_id':str(story['story_id']),'task':'editorial_story','run_id':os.environ.get('GITHUB_RUN_ID'),'provider':'openai' if ai_runtime.uses_openai() else 'local_llama_cpp','model_name':MODEL,'model_revision':MODEL_REVISION,'prompt_version':PROMPT_VERSION,'classifier_version':'independent-directional-v1','input_sha256':item['fp'],'output_sha256':digest(output),'output_text':json.dumps(output,ensure_ascii=False),'output_json':output,'evidence_snapshot_ids':[ref for s in item['sources'] if (ref:=valid_uuid(s.get('evidence_ref')))],'human_review_status':'governed_preview'}
         client.table('brief_editorial_provenance').upsert({'input_sha256':item['fp'],'proof':proof},on_conflict='input_sha256').execute()
         rows=client.table('brief_generated_artifacts').insert(artifact).execute().data or []
         if not rows:raise RuntimeError('Draft provenance was not saved.')
@@ -92,6 +100,7 @@ def main():
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'needs_model={str(any(not x["reuse"] for x in items)).lower()}\npending={len(items)}\n')
     if args.dry_run:print(json.dumps(counts,indent=2));return 0
+    ai_runtime.require_key()
     deadline=time.monotonic()+args.max_runtime_minutes*60;failures=[]
     for n,item in enumerate(items):
         if time.monotonic()>deadline-90:counts['deferred']=len(items)-n;break

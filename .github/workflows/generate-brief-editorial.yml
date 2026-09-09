@@ -36,6 +36,10 @@ jobs:
       OBSERVATORY_BASE_URL: https://observatory.hamelberg-ai.com
       BRIEF_EDITORIAL_MODEL_REVISION: ggml-org/Qwen3-4B-GGUF@2f3b082b1356a6123f7ed71e65aea340da25d53c
       BRIEF_LOCAL_LLM_URL: http://127.0.0.1:8080
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      AIEO_AI_PROVIDER: ${{ vars.AIEO_AI_PROVIDER || 'openai' }}
+      AIEO_AI_MAX_JOB_USD: ${{ vars.AIEO_AI_MAX_JOB_USD || '0.50' }}
+      AIEO_AI_LEDGER: ${{ runner.temp }}/ai-usage/brief.json
     steps:
       - uses: actions/checkout@v6
         with:
@@ -46,7 +50,9 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - name: Check editorial rules and resumable progress
-        run: python -m unittest discover -s tests -p 'test_editorial_recovery.py' -v
+        run: AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_editorial_recovery.py' -v
+      - name: Resolve the scheduled AI model
+        run: python scripts/ai_runtime.py --export
       - name: Check release and pending news before loading the model
         id: news
         continue-on-error: true
@@ -60,9 +66,12 @@ jobs:
         id: research
         if: steps.collect.outcome == 'success'
         run: python scripts/generate_research_summaries.py --dry-run
+      - name: Check API access before writing
+        if: inputs.dry_run != true && env.AIEO_AI_PROVIDER == 'openai' && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
+        run: python scripts/ai_runtime.py --preflight
       - name: Start the local model only when there is new evidence
         id: model
-        if: inputs.dry_run != true && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
+        if: inputs.dry_run != true && env.AIEO_AI_PROVIDER == 'local' && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
         uses: ./.github/actions/local-editorial-model
       - name: Write and save news one story at a time
         id: write_news
@@ -101,6 +110,17 @@ jobs:
           path: data/research/private/validation.json
           if-no-files-found: ignore
           retention-days: 14
+      - name: Report AI usage
+        if: always()
+        run: python scripts/ai_runtime.py --report
+      - name: Keep AI usage counts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: brief-ai-usage-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/ai-usage/*.json
+          if-no-files-found: ignore
+          retention-days: 30
       - name: Stop local model
         if: always()
         shell: bash

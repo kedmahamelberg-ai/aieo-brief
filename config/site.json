@@ -28,5 +28,9 @@
   },
   "support_url": "",
   "newsletter_url": "https://observatory.hamelberg-ai.com/report/",
-  "privacy_contact_url": "https://observatory.hamelberg-ai.com/privacy/"
+  "privacy_contact_url": "https://observatory.hamelberg-ai.com/privacy/",
+  "revenue": {
+    "contact_url": "mailto:kedma@hamelberg-ai.com",
+    "offers": []
+  }
 }

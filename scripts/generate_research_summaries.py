@@ -4,6 +4,7 @@ Only original prose and bibliographic metadata are written to the public researc
 """
 from __future__ import annotations
 import argparse,json,os,time
+import ai_runtime
 from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
@@ -20,7 +21,7 @@ def load():
     return data,{r['key']:r for r in public['papers']}
 
 def pending(data,old):
-    return [p for p in data['papers'] if p.get('abstract') and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial'))]
+    return [p for p in data['papers'] if p.get('abstract') and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
@@ -38,6 +39,7 @@ def main():
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'pending={len(todo)}\nneeds_model={str(bool(todo)).lower()}\n')
     if args.dry_run:print(json.dumps({'pending':len(todo),'records':len(data['papers'])}));return
+    ai_runtime.require_key()
     from supabase import create_client
     client=create_client(os.environ['SUPABASE_URL'],os.environ['SUPABASE_SECRET_KEY'])
     deadline=time.monotonic()+args.max_runtime_minutes*60;counts={'generated':0,'failed':0,'metadata_only':0,'deferred':0,'unchanged':0}
@@ -64,9 +66,9 @@ def main():
             sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':p['abstract'],'evidence_basis':'abstract_only'}]
             kind='preprint' if p['source'] in ('arxiv','ssrn') else 'abstract'
             draft,proof=write_story({'event_title':p['original_headline']},{},sources,kind=kind,deadline=deadline)
-            record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_basis':'Summary of the abstract','prompt_version':PROMPT_VERSION,'reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
+            record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_basis':'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
             stage='persistence'
-            client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'validation':proof}},on_conflict='input_sha256').execute()
+            client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'validation':proof}},on_conflict='input_sha256').execute()
             selected.append(record);counts['generated']+=1
             retry.pop(p['key'],None)
             audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p['abstract'],'validation':proof,'output_sha256':digest(record)})

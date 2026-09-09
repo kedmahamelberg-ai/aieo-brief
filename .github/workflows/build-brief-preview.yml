@@ -47,8 +47,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Run release, headline and privacy regression checks
         run: |
-          python -m unittest discover -s tests -p 'test_*.py'
-          node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js
+          AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_*.py'
+          node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js tests/carousels.test.js
           npm run test:database
       - name: Build the source-bound site and preserve past editions
         env:

@@ -10,7 +10,7 @@
 </div>
 <div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
 </section>
-{% if culture_latest %}<section class="daily-invitation" aria-label="Daily culture"><div><span class="eyebrow">A DAILY PAUSE · {{ culture_date }}</span><p>Something to look at. A few words to keep. A little music.</p></div><a class="read-link moment-link" href="{{ local('culture/index.html') }}"><span class="moment-cup" aria-hidden="true"><img class="moment-cup-image" src="{{ local('assets/take-a-moment-cup.png') }}" width="72" height="72" alt="" loading="lazy"><img class="moment-steam" src="{{ local('assets/take-a-moment-steam.png') }}" width="72" height="72" alt="" loading="lazy"></span><span>Take a moment →</span></a></section>{% endif %}
+{% include 'discovery-carousels.html' %}
 {{ ad('feed') }}
 <div class="reading-layout">
 <section class="feed-column" id="news" aria-label="News feed">
@@ -27,7 +27,7 @@
 <section class="rail-section"><span class="eyebrow">A DIFFERENT NEWS WINDOW</span><h2>Five markets. More perspectives.</h2><p>Follow reporting discovered in Canada, China, France, the UK and the US.</p><div class="market-summary">{% for code,name in markets %}<button data-market="{{ code }}"><span>{{ name }}</span><span>{{ market_counts[code] }}</span></button>{% endfor %}</div><a class="text-link" href="{{ local('about/index.html') }}#sources">How the sources are gathered</a></section>
 <section class="rail-section" id="popular-rail" hidden><span class="eyebrow">READERS ARE OPENING</span><h2>Most read this week</h2><ol id="popular-list"></ol><p class="small-copy">Based on opted-in reading sessions.</p></section>
 {{ ad('rail') }}
-<section class="rail-section research-teaser"><span class="eyebrow">RESEARCH, IN PLAIN WORDS</span><h2>What does the evidence say?</h2><p>New papers with the finding, the limitation and a link to the original.</p><a class="read-link" href="{{ local('research/index.html') }}">Explore the research →</a></section>
+<section class="rail-section support-teaser"><span class="eyebrow">INDEPENDENT, TOGETHER</span><h2>Help keep good reading open.</h2><p>Support a publication that makes room for clarity, curiosity and a little culture.</p><a class="read-link" href="{{ local('support/index.html') }}">Support or sponsor the Brief →</a></section>
 {% if config.support_url %}<section class="rail-section"><a class="text-link" href="{{ config.support_url }}" target="_blank" rel="noopener noreferrer" data-support-link="sidebar">Support independent reading →</a></section>{% endif %}
 </aside></div></main>
 {% endblock %}

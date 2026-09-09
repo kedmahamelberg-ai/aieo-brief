@@ -1,5 +1,5 @@
 {% macro ad(kind) -%}
-{% if sponsor_active %}<aside class="sponsor-unit" aria-label="Sponsored message"><small>SPONSORED · {{ config.sponsor.name }}</small><a href="{{ config.sponsor.url }}" target="_blank" rel="sponsored noopener noreferrer" data-sponsor-link>{{ config.sponsor.message }} <span aria-hidden="true">↗</span></a></aside>
+{% if sponsor_active and ads_eligible and kind in ('feed','story') %}<aside class="sponsor-unit" aria-label="Sponsored message"><small>SPONSORED · {{ config.sponsor.name }}</small><a href="{{ config.sponsor.url }}" target="_blank" rel="sponsored noopener noreferrer" data-sponsor-link>{{ config.sponsor.message }} <span aria-hidden="true">↗</span></a></aside>
 {% elif ads_eligible and config.adsense.enabled and config.adsense.get('mode','auto')=='placements' and config.adsense.slots.get(kind) %}<aside class="advertisement advertisement-{{ kind }}" aria-label="Advertisement" data-ad-kind="{{ kind }}" data-ad-slot="{{ config.adsense.slots[kind] }}" hidden><small>ADVERTISEMENT</small></aside>{% endif %}
 {%- endmacro %}
 {% macro actions(item, full=false) -%}

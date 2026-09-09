@@ -2,7 +2,7 @@
   "name": "aieo-brief-verification",
   "private": true,
   "scripts": {
-    "test": "node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js",
+    "test": "node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js tests/carousels.test.js",
     "test:database": "node tests/community.test.mjs && node tests/notifications.test.mjs"
   },
   "devDependencies": {

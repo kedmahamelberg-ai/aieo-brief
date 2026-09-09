@@ -56,7 +56,10 @@ class WeeklyHandoff(unittest.TestCase):
         self.assertEqual(sum(validate_pair(self.release, self.sym)['human'].values()),len(self.release['evidence']))
 
     def test_temporary_deployment_mismatch_is_retried(self):
-        bad=copy.deepcopy(self.sym); bad['release_id']='2026-W34'
-        with patch('build_site.fetch',side_effect=[self.release,bad,self.release,self.sym]), patch('build_site.time.sleep'):
+        from test_complete_content_import import example_export
+        good=example_export();bad=copy.deepcopy(good);bad['relationship']['release_id']='2026-W34'
+        with patch('build_site.fetch',side_effect=[bad,good]) as fetch, patch('build_site.time.sleep'):
             release, sym = inputs()
         self.assertEqual(release['release_id'], sym['release_id'])
+        self.assertEqual(fetch.call_count,2)
+        self.assertTrue(all(call.args[0].endswith('/data/brief/current.json') for call in fetch.call_args_list))

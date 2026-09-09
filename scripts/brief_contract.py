@@ -23,7 +23,7 @@ def validate_pair(release, relationship):
     ids = [str(x.get('effective_event_id') or x.get('event_id') or '') for x in release.get('evidence',[])]
     rows = relationship.get('evidence',[])
     rids = [str(x.get('event_id') or '') for x in rows]
-    if not ids or '' in ids or len(set(ids))!=len(ids) or set(ids)!=set(rids) or len(rids)!=len(ids):
+    if (not ids and not release.get('complete_content')) or '' in ids or len(set(ids))!=len(ids) or set(ids)!=set(rids) or len(rids)!=len(ids):
         raise ValueError('Every distinct development must have exactly one directional record.')
     published_count = (release.get('counts') or {}).get('ai_relevant_event_records')
     if published_count is not None and published_count != len(ids):
@@ -36,6 +36,45 @@ def validate_pair(release, relationship):
             if val not in DIRECTIONS: raise ValueError('Missing independent '+axis+' direction: '+str(row.get('event_id')))
             counts[axis][val]+=1
     return counts
+
+
+def validate_complete_export(payload):
+    """Validate the atomic, complete-source export before any Brief import."""
+    if payload.get('schema_version') != 'aieo_brief_export_v1':
+        raise ValueError('The Observatory complete-content export is required.')
+    release, relationship = payload['release'], payload['relationship']
+    binding = release.get('complete_content') or {}
+    if not binding or binding != relationship.get('complete_content'):
+        raise ValueError('Complete-content bindings do not match.')
+    for record in (release, relationship):
+        if digest({k:v for k,v in record.items() if k!='content_sha256'}) != record.get('content_sha256'):
+            raise ValueError('Complete-content export hash does not match its records.')
+    validate_pair(release, relationship)
+    allowed = set(binding['eligible_event_ids'])
+    articles = set(binding['eligible_source_ids'])
+    if set(str(e.get('effective_event_id') or e['event_id']) for e in release['evidence']) != allowed:
+        raise ValueError('Brief developments differ from the eligible inventory.')
+    coverage = release.get('units',{}).get('coverage_articles',[])
+    if {str(a['article_id']) for a in coverage} != articles or len(coverage)!=len(articles):
+        raise ValueError('Brief sources differ from the eligible inventory.')
+    by_event={str(e.get('effective_event_id') or e['event_id']):e for e in release['evidence']}
+    for row in relationship['evidence']:
+        basis = row.get('evidence_basis_summary') or {}
+        if not row.get('axes',{}).get('evidence_complete') or not row.get('sources'):
+            raise ValueError('A Brief development has no complete source reading.')
+        if any(row['axes'][axis]['direction']=='unresolved' for axis in ('human','ai')):
+            raise ValueError('An unresolved reading cannot enter the complete-content export.')
+        source_ids=[str(s['article_id']) for s in row['sources']]
+        released_ids=[str(s['article_id']) for s in by_event[str(row['event_id'])].get('sources',[])]
+        if set(source_ids)!=set(released_ids) or len(set(source_ids))!=len(source_ids) or len(set(released_ids))!=len(released_ids):
+            raise ValueError('A development and its reading must name the same complete sources.')
+        for source in row['sources']:
+            aid = str(source['article_id'])
+            quality = (basis.get('source_quality') or {}).get(aid,{})
+            fingerprint = (basis.get('source_fingerprints') or {}).get(aid)
+            if aid not in articles or quality.get('usable_complete_body') is not True or not fingerprint or quality.get('body_sha256')!=fingerprint:
+                raise ValueError('A Brief source lacks matching full-body provenance.')
+    return release, relationship
 
 def fixed_relationship(row):
     axes=row.get('axes') or {}
@@ -96,4 +135,11 @@ def load_config(root):
         if not safe_url(sponsor['url']):raise ValueError('Invalid sponsor URL')
         if date.fromisoformat(sponsor['ends'])<date.fromisoformat(sponsor['starts']):raise ValueError('Sponsor end date precedes its start')
         if len(sponsor['name'])>100 or len(sponsor['message'])>180:raise ValueError('Keep the sponsor message concise')
+    revenue=c.setdefault('revenue',{'contact_url':'mailto:kedma@hamelberg-ai.com','offers':[]})
+    contact=revenue.get('contact_url','')
+    if not re.fullmatch(r'mailto:[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+',contact):raise ValueError('Use a mailto address without query parameters for revenue enquiries.')
+    if not isinstance(revenue.get('offers',[]),list) or len(revenue.get('offers',[]))>6:raise ValueError('Use up to six reader resources.')
+    for offer in revenue.get('offers',[]):
+        if not isinstance(offer,dict) or offer.get('kind') not in ('affiliate','product'):raise ValueError('Label resources as affiliate or product.')
+        if not safe_url(offer.get('url')) or not offer.get('title') or not offer.get('description'):raise ValueError('Resources need an HTTPS destination, title and description.')
     return c

@@ -8,7 +8,7 @@ from urllib.parse import urlparse
 from xml.sax.saxutils import escape as xml_escape
 import requests
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from brief_contract import validate_pair, load_config, safe_url, digest, relationship_fingerprint, MARKETS, PROMPT_VERSION
+from brief_contract import validate_complete_export, validate_pair, load_config, safe_url, digest, relationship_fingerprint, MARKETS, PROMPT_VERSION
 from brief_database import dbmaps
 from news_notifications import public_settings
 from daily_selection import rotation_plan, reading_day
@@ -28,8 +28,7 @@ def inputs(preview=False):
         return tuple(json.loads((ROOT/'data/preview'/x).read_text()) for x in ('release.json','symbiosis.json'))
     for attempt in range(3):
         try:
-            release=fetch(f'{OBS}/data/releases/current.json'); sym=fetch(f'{OBS}/data/symbiosis/current.json')
-            validate_pair(release,sym);return release,sym
+            return validate_complete_export(fetch(f'{OBS}/data/brief/current.json'))
         except (ValueError, requests.RequestException):
             if attempt==2: raise
             time.sleep(2)
@@ -126,6 +125,11 @@ def advertising_eligible(page, story=None, news=()):
         return len(news) >= 4 and any(editorial(item) for item in news)
     return page == 'story' and bool(story) and story.get('kind') in ('news', 'research') and editorial(story)
 
+def sponsor_is_active(config, day, preview=False):
+    sponsor=config.get('sponsor',{})
+    return bool(not preview and sponsor.get('enabled') and sponsor.get('starts','')<=day<=sponsor.get('ends',''))
+
+
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--preview',action='store_true');parser.add_argument('--mock',action='store_true',help='Compatibility alias for the real-source preview');parser.add_argument('--output',default='_site');parser.add_argument('--update-archive',action='store_true');args=parser.parse_args()
     global SITE;SITE=ROOT/args.output
@@ -145,7 +149,8 @@ def main():
     news=cards(release,sym,registry,readiness,editorial,preview);research=papers();culture=culture_items()
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
-    allitems={x['key']:x for x in old}
+    current_keys={x['key'] for x in news}
+    allitems={x['key']:x for x in old if not (x.get('kind')=='news' and x.get('edition')==release['release_id'] and x['key'] not in current_keys)}
     for item in news+research+culture:
         previous=allitems.get(item['key'])
         if previous and previous.get('path') and re.fullmatch(r'(story|research|culture)/[a-zA-Z0-9_-]+/index.html',previous['path']):
@@ -168,7 +173,9 @@ def main():
     public_config={k:config.get(k) for k in ('site_name','supabase_url','supabase_publishable_key','community_enabled','ga4_measurement_id','adsense')}
     public_config['site_url']=baseurl;public_config['is_preview']=preview
     public_config['notifications']=public_settings(config, preview)
-    sponsor_active=False
+    sponsor=config.get('sponsor',{})
+    today=reading_day().isoformat()
+    sponsor_active=sponsor_is_active(config,today,preview)
     market_counts={code:sum(code in c['markets'] for c in news) for code,_ in MARKETS}
     rotation=rotation_plan(news, release['release_id'], release['period_end'])
     day_layout=rotation['layouts'][rotation['slot']]
@@ -181,6 +188,8 @@ def main():
     latest_culture_date=max((x['date'] for x in culture),default='')
     defaults.update(rotation=rotation, reading_date=fmt(rotation['selection_date']))
     defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
+    culture_featured=sorted(defaults['culture_latest'],key=lambda x:({'illustration':0,'poetry':1,'music':2,'text':3,'quote':4}.get(x['culture_type'],5)))
+    defaults.update(culture_featured=culture_featured, research_featured=sorted(research,key=lambda x:not x.get('has_editorial'))[:6])
     defaults.update(culture_discoveries=culture_discoveries(root=ROOT),culture_library=culture_summary(ROOT))
     def render(path,template,**ctx):
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
@@ -201,6 +210,7 @@ def main():
     render('saved/index.html','collection.html',page='saved',items=allcards)
     render('archive/index.html','collection.html',page='archive',items=allcards)
     render('notifications/index.html','notifications.html',page='notifications')
+    render('support/index.html','support.html',page='support')
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
@@ -208,6 +218,7 @@ def main():
         render(item['path'],'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related)
     data=SITE/'data';data.mkdir()
     payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
+    payload['complete_content']=release.get('complete_content',{})
     payload['daily_selection']=rotation
     payload.update(culture_count=len(culture),culture=culture)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)

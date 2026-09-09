@@ -2,7 +2,7 @@ import copy,json,os,sys,tempfile,unittest,subprocess
 from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
-from build_site import advertising_eligible
+from build_site import advertising_eligible,sponsor_is_active
 from brief_contract import load_config
 from check_observatory_update import brief_url
 class Advertising(unittest.TestCase):
@@ -28,3 +28,11 @@ class Advertising(unittest.TestCase):
    self.assertIn('already up to date',run(p).stdout);before=target.read_bytes();self.assertNotEqual(run({**p,'support_url':'javascript:bad'}).returncode,0);self.assertEqual(target.read_bytes(),before)
    ad={**original['adsense'],'enabled':True,'cmp_enabled':True,'mode':'placements','slots':{'feed':'12345'}}
    self.assertEqual(run({'schema_version':p['schema_version'],'adsense':ad}).returncode,0);self.assertTrue(json.loads(target.read_text())['adsense']['enabled']);self.assertTrue(list(parent.glob('Brief-settings-backup-*')));self.assertFalse(list(repo.glob('Brief-settings-backup-*')))
+
+ def test_direct_sponsorship_obeys_campaign_dates_and_preview(self):
+  config={'sponsor':{'enabled':True,'starts':'2026-09-08','ends':'2026-09-15'}}
+  self.assertTrue(sponsor_is_active(config,'2026-09-08'))
+  self.assertTrue(sponsor_is_active(config,'2026-09-15'))
+  for day in ('2026-09-07','2026-09-16'):self.assertFalse(sponsor_is_active(config,day))
+  self.assertFalse(sponsor_is_active(config,'2026-09-10',True))
+  config['sponsor']['enabled']=False;self.assertFalse(sponsor_is_active(config,'2026-09-10'))
