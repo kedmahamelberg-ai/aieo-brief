@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Your reading selection | The Brief{% endblock %}
+{% block content %}
+<main id="main-content" class="page-shell plain-page">
+  <p class="eyebrow">A few minutes for you</p><h1>Your reading selection.</h1>
+  <p>Only the categories you chose. Open a story, explore an idea, or take a pause.</p>
+  <div id="digest-items" aria-live="polite"></div>
+  <p class="small-copy"><a href="{{ local('notifications/index.html') }}">Change my updates</a> · <a href="{{ local('index.html') }}">Explore today’s Brief</a></p>
+</main>
+{% endblock %}

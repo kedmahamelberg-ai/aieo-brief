@@ -117,6 +117,13 @@ def load_config(root):
     ga=c.get('ga4_measurement_id','')
     if ga and not re.fullmatch(r'G-[A-Z0-9]+',ga): raise ValueError('GA4 measurement ID must start G-.')
     ad=c.get('adsense') or {}
+    for field, variable in [('enabled','BRIEF_ADSENSE_ENABLED'),('cmp_enabled','BRIEF_ADSENSE_CMP_ENABLED')]:
+        if os.environ.get(variable): ad[field]=os.environ[variable].lower()=='true'
+    if os.environ.get('BRIEF_ADSENSE_MODE'): ad['mode']=os.environ['BRIEF_ADSENSE_MODE']
+    for kind in ('feed','rail','story'):
+        value=os.environ.get('BRIEF_ADSENSE_'+kind.upper()+'_SLOT')
+        if value: ad.setdefault('slots',{})[kind]=value
+    c['adsense']=ad
     for slot in (ad.get('slots') or {}).values():
         if slot and (not isinstance(slot,str) or not re.fullmatch(r'\d{1,20}',slot)):
             raise ValueError('Ad-unit IDs must contain only digits.')

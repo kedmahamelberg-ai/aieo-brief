@@ -15,6 +15,7 @@
     <article class="carousel-slide culture-preview culture-{{ item.culture_type }}" data-carousel-slide role="group" aria-roledescription="slide" aria-label="{{ loop.index }} of {{ culture_featured|length }}">
       {% if item.image_path %}<a class="culture-preview-image" href="{{ local(item.path) }}" tabindex="-1" aria-hidden="true"><img src="{{ local(item.image_path) }}" alt="" width="380" height="260" loading="lazy"></a>{% else %}<div class="culture-preview-words" aria-hidden="true">{% if item.culture_type=='music' %}<span class="music-mark">♪</span><span>A change of tempo.</span>{% else %}<span class="quotation-mark">“</span><p>{{ item.excerpt|replace('_','')|truncate(150) }}</p>{% endif %}</div>{% endif %}
       <div class="culture-preview-copy"><span class="eyebrow">{{ item.topic_label }} · {{ 'A short listen' if item.culture_type=='music' else 'A moment for you' }}</span><h3><a data-feature-link="culture" href="{{ local(item.path) }}">{{ item.book_title if item.culture_type=='quote' and item.book_title else item.headline }}</a></h3><p class="preview-credit">{{ item.creator }}{% if item.work_date %} · {{ item.work_date }}{% endif %}</p><a class="read-link" data-feature-link="culture" href="{{ local(item.path) }}">{{ 'Listen a little' if item.culture_type=='music' else 'Look a little closer' if item.culture_type=='illustration' else 'Take a moment' }} →</a></div>
+      <div class="public-metrics" data-public-metrics="{{ item.key }}"><span><strong data-metric="views">—</strong> views</span><span><strong data-metric="likes">—</strong> likes</span></div>
     </article>
   {% endfor %}
   </div>
@@ -27,6 +28,7 @@
   {% for item in research_featured %}
     <article class="carousel-slide research-preview" data-carousel-slide role="group" aria-roledescription="slide" aria-label="{{ loop.index }} of {{ research_featured|length }}">
       <div class="research-meta"><span>{{ item.research_label }}</span><time datetime="{{ item.date }}">{{ item.display_date }}</time></div><h3><a data-feature-link="research" href="{{ local(item.path) }}">{{ item.headline }}</a></h3><p>{{ item.deck if item.has_editorial else 'Explore the original paper, its authors and the kind of evidence behind it.' }}</p><div class="research-preview-bottom"><span>{{ 'Abstract summary' if item.has_editorial and item.evidence_scope=='abstract' else 'Research summary' if item.has_editorial else 'Paper to explore' }}</span><a class="read-link" data-feature-link="research" href="{{ local(item.path) }}">{{ 'Read the finding' if item.has_editorial else 'Explore the paper' }} →</a></div>
+      <div class="public-metrics" data-public-metrics="{{ item.key }}"><span><strong data-metric="views">—</strong> views</span><span><strong data-metric="likes">—</strong> likes</span></div>
     </article>
   {% else %}<article class="carousel-slide research-preview" data-carousel-slide><h3>A good question is a good beginning.</h3><p>Explore the research collection as new papers become available.</p><a class="read-link" href="{{ local('research/index.html') }}">Visit research →</a></article>{% endfor %}
   </div>

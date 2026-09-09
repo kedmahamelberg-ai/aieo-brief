@@ -14,7 +14,7 @@
  else if(hash.has('error_description')){const err=hash.get('error_description');history.replaceState(null,'',location.pathname+location.search);throw new Error(err);}
  else if(session){try{await access();const user=await request('/auth/v1/user',undefined,session.access_token,'GET');session.user=user;persist(session);}catch{persist(null);}}
  }
- async function signIn(email){if(!enabled)throw new Error('Sign-in is not connected on this version. Reading and device-local saves are available.');const redirect=config.site_url.replace(/\/$/,'')+'/account/';if(!redirect.startsWith('https://'))throw new Error('The live Brief URL is needed for email sign-in.');return request('/auth/v1/otp?redirect_to='+encodeURIComponent(redirect),{email,create_user:true},null);}
+ async function signIn(email){if(!enabled)throw new Error('Sign-in is temporarily unavailable. Please try again shortly.');const redirect=config.site_url.replace(/\/$/,'')+'/account/';if(!redirect.startsWith('https://'))throw new Error('The live Brief URL is needed for email sign-in.');return request('/auth/v1/otp?redirect_to='+encodeURIComponent(redirect),{email,create_user:true},null);}
  async function signOut(){try{if(session)await request('/auth/v1/logout',{},await access());}finally{persist(null);}}
  async function metrics(keys){let all={};for(let n=0;n<keys.length;n+=200)Object.assign(all,await rpc('brief_community_metrics',{p_keys:keys.slice(n,n+200)}));return all;}
  window.BriefCommunity={enabled,init,rpc,metrics,signIn,signOut,signedIn:()=>!!session,user:()=>session?.user||null};

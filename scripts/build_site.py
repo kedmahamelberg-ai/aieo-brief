@@ -196,9 +196,9 @@ def main():
         prefix='../'*len(Path(path).parent.parts)
         local=lambda value:prefix+value
         # Full text stays in HTML. The interaction payload only needs metadata.
-        local_items=allcards if ctx.get('page') in ('saved','archive') else (
+        local_items=allcards if ctx.get('page') in ('saved','archive','digest') else (
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
-            news if ctx.get('page')=='home' else ctx.get('items',[]))
+            news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
         client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
@@ -210,6 +210,7 @@ def main():
     render('saved/index.html','collection.html',page='saved',items=allcards)
     render('archive/index.html','collection.html',page='archive',items=allcards)
     render('notifications/index.html','notifications.html',page='notifications')
+    render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)

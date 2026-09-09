@@ -1,30 +1,36 @@
 {% extends 'base.html' %}
-{% block title %}Get news updates | The Brief{% endblock %}
+{% block title %}Choose your updates | The Brief{% endblock %}
 {% block content %}
 <main id="main-content" class="page-shell plain-page updates-page">
-  <p class="eyebrow">Stay in the loop</p>
-  <h1>New AI news. At your pace.</h1>
-  <p>Get a notification when the next weekly edition is ready. One alert, with news from all five markets.</p>
-  <section class="updates-option" id="browser-updates" hidden>
-    <h2>Notify me on this device</h2>
-    <p>No email address or account needed. You can turn alerts off here whenever you like.</p>
-    <button class="button" id="enable-notifications" disabled>Turn on news notifications</button>
-    <button class="button secondary" id="disable-notifications" hidden>Turn off notifications</button>
-    <p id="notification-status" role="status" aria-live="polite"></p>
+  <p class="eyebrow">A little perspective, twice a day</p>
+  <h1>Your interests. Your Brief.</h1>
+  <p>Pick any combination. A morning update and an evening update, without an inbox full of emails.</p>
+  <section class="updates-option" id="browser-updates">
+    <h2>What would you like?</h2>
+    <fieldset class="topic-choices" id="notification-topics"><legend class="sr-only">Choose your notification categories independently</legend>
+      <label><input type="checkbox" name="notification-topic" value="news" checked> AI newspaper</label>
+      <label><input type="checkbox" name="notification-topic" value="culture"> Culture</label>
+      <label><input type="checkbox" name="notification-topic" value="research"> AI research</label>
+    </fieldset>
+    <p class="small-copy">Browser notifications on this device, around 08:30 and 18:30 Amsterdam time. Up to two alerts a day, combining only your selected categories. Selections can revisit an earlier story; an update is not always breaking news. No account needed.</p>
+    <button class="button" id="enable-notifications" disabled>Notify me</button>
+    <button class="button" id="save-notification-preferences" hidden>Save my choices</button>
+    <button class="button secondary" id="disable-notifications" hidden>Turn off updates</button>
+    <p id="notification-status" role="status" aria-live="polite">Checking notifications on this device…</p>
   </section>
   <p id="notification-device-help" class="small-copy" hidden></p>
   <section class="updates-option">
-    <h2>Follow in your news reader</h2>
-    <p>Get new stories, research and the daily pause in the reader you already use.</p>
+    <h2>Already have a news reader?</h2>
+    <p>Follow stories, research and the daily pause in the reader you use.</p>
     <a class="button secondary" href="{{ local('feed.xml') }}">Open the news feed</a>
     <button class="text-button" id="copy-news-feed">Copy feed link</button>
     <p id="feed-copy-status" class="small-copy" role="status"></p>
   </section>
   <section class="updates-option">
-    <h2>Prefer email?</h2>
-    <p>Subscribe to the Observatory’s Monthly Pulse for a less frequent roundup.</p>
+    <h2>Prefer occasional email?</h2>
+    <p>The Observatory’s Monthly Pulse is a separate, less frequent email roundup.</p>
     <a class="text-link" href="{{ config.newsletter_url }}">Get the Monthly Pulse →</a>
   </section>
-  <p class="small-copy">Browser alerts are separate from analytics and newsletter subscriptions. <a href="{{ local('privacy/index.html') }}">Read about privacy</a>.</p>
+  <p class="small-copy">Change these choices or turn off alerts here at any time. Browser and scheduling delays can affect delivery. Notification permission does not give consent to analytics. <a href="{{ local('privacy/index.html') }}">Privacy</a>.</p>
 </main>
 {% endblock %}

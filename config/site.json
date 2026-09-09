@@ -3,10 +3,10 @@
   "site_url": "https://brief.hamelberg-ai.com",
   "observatory_url": "https://observatory.hamelberg-ai.com",
   "personal_site_url": "https://kedmahamelberg.com/",
-  "supabase_url": "",
-  "supabase_publishable_key": "",
+  "supabase_url": "https://tricsbvxamjzfeckivhz.supabase.co",
+  "supabase_publishable_key": "sb_publishable_MZIVSCpa5w6JAhSptPIqrQ_vTmzhbfF",
   "ga4_measurement_id": "G-QC9205V7V7",
-  "community_enabled": false,
+  "community_enabled": true,
   "adsense": {
     "enabled": false,
     "publisher_id": "ca-pub-5170234738371400",

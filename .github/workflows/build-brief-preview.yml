@@ -27,6 +27,12 @@ jobs:
       BRIEF_COMMUNITY_ENABLED: ${{ vars.BRIEF_COMMUNITY_ENABLED }}
       BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
       GA4_MEASUREMENT_ID: ${{ vars.GA4_MEASUREMENT_ID }}
+      BRIEF_ADSENSE_ENABLED: ${{ vars.BRIEF_ADSENSE_ENABLED }}
+      BRIEF_ADSENSE_CMP_ENABLED: ${{ vars.BRIEF_ADSENSE_CMP_ENABLED }}
+      BRIEF_ADSENSE_MODE: ${{ vars.BRIEF_ADSENSE_MODE }}
+      BRIEF_ADSENSE_FEED_SLOT: ${{ vars.BRIEF_ADSENSE_FEED_SLOT }}
+      BRIEF_ADSENSE_RAIL_SLOT: ${{ vars.BRIEF_ADSENSE_RAIL_SLOT }}
+      BRIEF_ADSENSE_STORY_SLOT: ${{ vars.BRIEF_ADSENSE_STORY_SLOT }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -96,7 +102,3 @@ jobs:
       - name: Publish validated Brief
         id: deployment
         uses: actions/deploy-pages@v4
-  notify:
-    needs: deploy
-    uses: ./.github/workflows/send-news-notifications.yml
-    secrets: inherit
