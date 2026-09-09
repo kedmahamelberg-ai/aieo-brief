@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
-import argparse, collections, json, os, re, shutil, time
+import argparse, collections, copy, json, os, re, shutil, time
 from datetime import datetime, timezone, date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -13,6 +13,7 @@ from brief_database import dbmaps
 from news_notifications import public_settings
 from daily_selection import rotation_plan, reading_day
 from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
+from english_publication import EnglishPublication, content_version, LAYOUT
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -161,6 +162,16 @@ def main():
     for row in research:
         allitems[row['key']]=row
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
+    raw_archive=copy.deepcopy(allcards)
+    english=EnglishPublication(ROOT, allow_model=(not preview and os.environ.get('BRIEF_TRANSLATE_ENGLISH')=='true'))
+    current_order={x['key']:i for i,x in enumerate(news+research+culture)}
+    public_by_key={x['key']:english.apply(x) for x in sorted(allcards,key=lambda x:current_order.get(x['key'],100000))}
+    allcards=[public_by_key[x['key']] for x in allcards]
+    news=[public_by_key[x['key']] for x in news]
+    research=[public_by_key[x['key']] for x in research]
+    culture=[public_by_key[x['key']] for x in culture]
+    for item in allcards:
+        item['content_hash'],_=content_version(item)
     for item in allcards:
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
     if SITE.exists():shutil.rmtree(SITE)
@@ -172,6 +183,7 @@ def main():
         owner,repo=os.environ['GITHUB_REPOSITORY'].split('/',1);baseurl=f'https://{owner}.github.io/{repo}'
     public_config={k:config.get(k) for k in ('site_name','supabase_url','supabase_publishable_key','community_enabled','ga4_measurement_id','adsense')}
     public_config['site_url']=baseurl;public_config['is_preview']=preview
+    public_config['layout_version']=LAYOUT;public_config['release_id']=release['release_id']
     public_config['notifications']=public_settings(config, preview)
     sponsor=config.get('sponsor',{})
     today=reading_day().isoformat()
@@ -190,7 +202,7 @@ def main():
     defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
     culture_featured=sorted(defaults['culture_latest'],key=lambda x:({'illustration':0,'poetry':1,'music':2,'text':3,'quote':4}.get(x['culture_type'],5)))
     defaults.update(culture_featured=culture_featured, research_featured=sorted(research,key=lambda x:not x.get('has_editorial'))[:6])
-    defaults.update(culture_discoveries=culture_discoveries(root=ROOT),culture_library=culture_summary(ROOT))
+    defaults.update(culture_discoveries=[english.apply(x) for x in culture_discoveries(root=ROOT)],culture_library=culture_summary(ROOT))
     def render(path,template,**ctx):
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
         prefix='../'*len(Path(path).parent.parts)
@@ -199,7 +211,7 @@ def main():
         local_items=allcards if ctx.get('page') in ('saved','archive','digest') else (
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
             news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
-        client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin')} for x in local_items]
+        client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
         output=env.get_template(template).render(**page_defaults,local=local,canonical=(baseurl+'/'+path.removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
@@ -224,6 +236,7 @@ def main():
     payload.update(culture_count=len(culture),culture=culture)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+    (data/'public-items.json').write_text(json.dumps({'items':allcards},ensure_ascii=False)+'\n')
     shutil.copyfile(ROOT/'assets/news-worker.js', SITE/'news-worker.js')
     (SITE/'manifest.webmanifest').write_text(json.dumps({'name':'The Brief — AI news','short_name':'The Brief',
         'id':'./','start_url':'./','scope':'./','display':'standalone','background_color':'#ffffff',
@@ -246,9 +259,11 @@ def main():
     else:(SITE/'feed.xml').write_text('<?xml version="1.0"?><rss version="2.0"><channel><title>AIEO Brief preview</title><link>https://observatory.hamelberg-ai.com</link><description>Set the Brief site URL for its live feed.</description></channel></rss>')
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
     if args.update_archive and not preview:
-        archivepath.parent.mkdir(parents=True,exist_ok=True);archivepath.write_text(json.dumps({'schema_version':'aieo_brief_archive_v1','stories':allcards},ensure_ascii=False,indent=2)+'\n')
+        archivepath.parent.mkdir(parents=True,exist_ok=True);archivepath.write_text(json.dumps({'schema_version':'aieo_brief_archive_v1','stories':raw_archive},ensure_ascii=False,indent=2)+'\n')
     summary={'release':release['release_id'],'news':len(news),'editorial_summaries':sum(x['has_editorial'] for x in news),'research':len(research),'historical_pages':len(allcards),'community_connected':bool(config.get('community_enabled')),'preview':preview}
     summary['culture']=len(culture)
+    summary['english_publication']={**english.summary(),'scope':'current items, archived items and discovery credits','current_news_pending':sum(x.get('english_status')=='pending' for x in news),'current_research_pending':sum(x.get('english_status')=='pending' for x in research),'current_culture_pending':sum(x.get('english_status')=='pending' for x in culture)}
+    if english.pending:print('::warning::Some English display translations remain pending. Inspect current and archive coverage in the build summary before treating the edition as fully translated.')
     print(json.dumps(summary,indent=2))
     Path(ROOT/'build-summary.json').write_text(json.dumps(summary,indent=2)+'\n')
     return 0

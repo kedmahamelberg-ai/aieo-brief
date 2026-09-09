@@ -9,4 +9,5 @@ if load_config(root).get('community_enabled'):
  client=create_client(os.environ['SUPABASE_URL'],os.environ['SUPABASE_SECRET_KEY'])
  result=client.rpc('brief_community_maintain').execute()
  print('Expired reading sessions removed:',result.data)
+ print('Expired UX history removed:',client.rpc('brief_ux_maintain').execute().data)
 else:print('Community is disabled; no database maintenance requested.')

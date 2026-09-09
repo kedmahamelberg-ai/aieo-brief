@@ -7,6 +7,7 @@
 <div class="breadcrumb"><a href="{{ local('research/index.html' if story.kind=='research' else 'index.html') }}">← {{ 'Research' if story.kind=='research' else 'The news' }}</a></div>
 <header class="article-header"><div class="story-kicker"><span>{{ story.research_label if story.kind=='research' else story.market_label }}</span><span>{{ story.topic_label }}</span><span>{{ story.reading_minutes }} min read</span></div><h1>{{ story.headline }}</h1><p class="deck">{{ story.deck }}</p><div class="source-line"><span>{{ story.publisher }}</span><time datetime="{{ story.date }}">{{ story.display_date }}</time><span data-read-count="{{ story.key }}" hidden></span><span>{{ story.summary_basis }}</span></div>{{ actions(story,true) }}</header>
 {% if story.has_editorial %}<div class="reading-options"><span>Choose your read</span><button data-read-mode="quick" aria-pressed="false">30 seconds</button><button data-read-mode="full" aria-pressed="true">The full brief</button></div>{% endif %}
+{% if story.brief_translation_note %}<p class="small-copy">{{ story.brief_translation_note }}</p>{% endif %}
 <div class="article-body">
 {% if story.display_scope %}<p class="finding-note">{{ story.display_scope }}</p>{% endif %}
 {% if story.kind=='research' %}

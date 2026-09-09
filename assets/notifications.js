@@ -88,7 +88,7 @@
     if (permission !== 'granted') { status.textContent = 'Updates remain off. Keep reading as usual.'; enable.disabled = permission === 'denied'; return; }
     try {
       subscription = await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:bytes(config.notifications.public_key)});
-      await persist(); showState(true); status.textContent = 'You’re all set. Your chosen topics, in up to two browser updates a day.';
+      await persist(); window.BriefUX?.track('notification_enabled',{state:topics().sort().join('_')}); showState(true); status.textContent = 'You’re all set. Your chosen topics, in up to two browser updates a day.';
     } catch (e) {
       if (subscription) await subscription.unsubscribe().catch(() => {});
       subscription = null; showState(false); status.textContent = e.message || 'Updates were not activated.';
@@ -96,7 +96,7 @@
   });
   save.addEventListener('click', async () => {
     save.disabled = true;
-    try { await persist(); status.textContent = 'Saved. Future updates will include only your selected categories.'; }
+    try { await persist(); window.BriefUX?.track('notification_enabled',{state:topics().sort().join('_')}); status.textContent = 'Saved. Future updates will include only your selected categories.'; }
     catch (e) { status.textContent = e.message; }
     finally { save.disabled = false; }
   });
@@ -107,7 +107,7 @@
       // Stop local alerts even if the server cannot be reached.
       if (subscription) await subscription.unsubscribe();
       if (endpoint) await rpc('brief_push_unsubscribe', {p_endpoint:endpoint,p_token:token()});
-      subscription = null; localStorage.removeItem(tokenKey); showState(false); status.textContent = 'Updates are off on this device.';
+      window.BriefUX?.track('notification_disabled'); subscription = null; localStorage.removeItem(tokenKey); showState(false); status.textContent = 'Updates are off on this device.';
     } catch (_) { disable.disabled = false; status.textContent = 'Browser alerts are stopped. Press Turn off again to remove the saved preference.'; }
   });
 })();

@@ -4,6 +4,7 @@
 <main class="page-shell" id="main-content"><div class="article-layout"><article id="article-content">
 <div class="breadcrumb"><a href="{{ local('culture/index.html') }}">← A daily pause</a></div>
 <header class="article-header"><div class="story-kicker"><span>{{ story.topic_label }}</span><span>Selected {{ story.display_date }}</span></div><h1>{{ story.headline if story.culture_type!='quote' else 'From '+(story.book_title or story.creator) }}</h1><p class="deck">{{ story.deck }}</p><p class="creator-origin">{{ story.creator_origin or 'Origin not recorded in the source' }}{% if story.language %} · {{ story.language }}{% endif %}</p><div class="source-line"><span>{{ story.creator }}</span><span>{{ story.work_date }}</span><span data-read-count="{{ story.key }}" hidden></span></div>{{ actions(story,true) }}</header>
+{% if story.brief_translation_note %}<p class="small-copy">{{ story.brief_translation_note }}</p>{% endif %}
 <div class="article-body culture-body">
 {% if story.culture_type=='illustration' %}<figure class="artwork"><img src="{{ local(story.image_path) if story.image_path else story.media_url }}" alt="{{ story.alt }}" width="800" height="650"><figcaption>{{ story.headline }} · {{ story.creator }} · {{ story.work_date }}<br>{{ story.rights.credit or story.publisher }}</figcaption></figure>
 {% elif story.culture_type=='poetry' %}<div class="poem" aria-label="Poem">{% for line in story.poem_lines %}<span>{{ line if line else ' ' }}</span>{% endfor %}</div>
