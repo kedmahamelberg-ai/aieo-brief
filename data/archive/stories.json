@@ -742,6 +742,361 @@
       ]
     },
     {
+      "key": "paper:f83a9725314bbb024bc7c105",
+      "doi": "",
+      "arxiv_id": "2609.09158v1",
+      "original_headline": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+      "url": "https://arxiv.org/abs/2609.09158v1",
+      "date": "2026-09-08",
+      "authors": [
+        "Anqi Li",
+        "Yuxin Chen",
+        "Zhaobo Li",
+        "Zhuo Cao",
+        "Junli Ren",
+        "Masayoshi Tomizuka",
+        "Dhruv Shah"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "ee40cc414dd4fed3e5425c9bda249f3cba5458e4ac6507c34b56966d972b9a2f",
+      "has_editorial": false,
+      "headline": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-f83a9725314bbb024bc7c105",
+      "path": "research/paper-f83a9725314bbb024bc7c105/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "TANGO: Humanoid Navigation in Cluttered Environments with a Whole-Body Vision-Language-Action Model",
+          "url": "https://arxiv.org/abs/2609.09158v1",
+          "date": "2026-09-08",
+          "language": "en"
+        }
+      ],
+      "display_date": "8 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:dcd3d67611ab664320da7d2a",
+      "doi": "",
+      "arxiv_id": "2609.09152v1",
+      "original_headline": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
+      "url": "https://arxiv.org/abs/2609.09152v1",
+      "date": "2026-09-08",
+      "authors": [
+        "Yuhan Ye",
+        "Kaizhao Liu"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "9b87541a0e965172be2dace427118c9e680629f277d671010bc2de128562e993",
+      "has_editorial": false,
+      "headline": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-dcd3d67611ab664320da7d2a",
+      "path": "research/paper-dcd3d67611ab664320da7d2a/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Silver Rate Is (Almost) Optimal for Gradient Descent Acceleration",
+          "url": "https://arxiv.org/abs/2609.09152v1",
+          "date": "2026-09-08",
+          "language": "en"
+        }
+      ],
+      "display_date": "8 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:bdb7ae85c3d48b31b55e274d",
+      "doi": "",
+      "arxiv_id": "2609.09153v1",
+      "original_headline": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+      "url": "https://arxiv.org/abs/2609.09153v1",
+      "date": "2026-09-08",
+      "authors": [
+        "Yuxing Lu",
+        "Yicheng Chen",
+        "Shanchan Wu",
+        "Sercan Ö. Arık"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "d2463c513f00b00ee929b03f2ac5ca58f4d8f4af9052f987fa4bfb93e7da32fb",
+      "has_editorial": false,
+      "headline": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-bdb7ae85c3d48b31b55e274d",
+      "path": "research/paper-bdb7ae85c3d48b31b55e274d/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Procedural Graphs: Self-Evolving Execution Structures for LLM Agents",
+          "url": "https://arxiv.org/abs/2609.09153v1",
+          "date": "2026-09-08",
+          "language": "en"
+        }
+      ],
+      "display_date": "8 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:98e1ce91b22543f64de1f7ba",
+      "doi": "",
+      "arxiv_id": "2609.09157v1",
+      "original_headline": "Learning Length-Extrapolatable Recurrent Models",
+      "url": "https://arxiv.org/abs/2609.09157v1",
+      "date": "2026-09-08",
+      "authors": [
+        "Hanwen Jiang"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "6221ae25733cbc66b2f4d72d3c74d4197c23b716709a70eda70b9a5ceae1574c",
+      "has_editorial": true,
+      "headline": "arXiv authors claim CST improves long-context learning in recurrent models, with abstract-only limits",
+      "deck": "Credit stabilization during training helps extend usable memory without changing forward computation",
+      "what_happened": "In an abstract-only arXiv study, researchers introduce Credit Stabilization through Time (CST) to adjust state-credit signals during backpropagation, improving performance beyond the training horizon on synthetic and real data.",
+      "why_it_matters": "The approach suggests a targeted mechanism can extend usable context without altering forward computation, but results vary by regime and are limited to abstract findings and preprint status.",
+      "body_paragraphs": [
+        "Recurrent models offer a natural path to long-context modeling, yet BPTT-trained systems often falter beyond the training horizon, highlighting a persistent challenge in extending learned behavior to longer sequences.",
+        "The authors describe CST as a way to locally rescale the state-credit signal during backpropagation, aiming to keep updates stable without disturbing the forward pass, and note gains when tested on both synthetic and real data beyond the training length."
+      ],
+      "limitation": "Abstract-only scope; preprint status; results may not generalize beyond the tested regimes or datasets.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+      "kind": "research",
+      "slug": "paper-98e1ce91b22543f64de1f7ba",
+      "path": "research/paper-98e1ce91b22543f64de1f7ba/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Learning Length-Extrapolatable Recurrent Models",
+          "url": "https://arxiv.org/abs/2609.09157v1",
+          "date": "2026-09-08",
+          "language": "en"
+        }
+      ],
+      "display_date": "8 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:4fba5d52ca8a89191dedb53e",
+      "doi": "",
+      "arxiv_id": "2609.09156v1",
+      "original_headline": "ReCite: Agentic Reasoning for Faithful Citation",
+      "url": "https://arxiv.org/abs/2609.09156v1",
+      "date": "2026-09-08",
+      "authors": [
+        "Yuyang Huang",
+        "Bobo Li",
+        "Jiajia Song",
+        "Yuzhe Ding",
+        "Chong Teng",
+        "Fei Li",
+        "Donghong Ji"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "c4784fa4d6585a5e7475b86e7813fc6e1388801bdb48841d7bbe0a8885b2b309",
+      "has_editorial": false,
+      "headline": "ReCite: Agentic Reasoning for Faithful Citation",
+      "deck": "Open the original research record for the paper and its access options.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "limitation": "",
+      "summary_basis": "Original paper title",
+      "reading_minutes": 1,
+      "kind": "research",
+      "slug": "paper-4fba5d52ca8a89191dedb53e",
+      "path": "research/paper-4fba5d52ca8a89191dedb53e/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "ReCite: Agentic Reasoning for Faithful Citation",
+          "url": "https://arxiv.org/abs/2609.09156v1",
+          "date": "2026-09-08",
+          "language": "en"
+        }
+      ],
+      "display_date": "8 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
+      "key": "paper:368af39fd45fa05b27a891c4",
+      "doi": "",
+      "arxiv_id": "2609.09150v1",
+      "original_headline": "Copying explains the collective behavior of AI agents in the wild",
+      "url": "https://arxiv.org/abs/2609.09150v1",
+      "date": "2026-09-08",
+      "authors": [
+        "Giordano De Marzo",
+        "Nicola Albore",
+        "David Garcia"
+      ],
+      "publisher": "arXiv",
+      "source": "arxiv",
+      "research_label": "Preprint",
+      "evidence_scope": "abstract",
+      "access": "Open paper",
+      "journal_reference": "",
+      "metadata_sha256": "00a4ff6d79b9edcd18287b473fa93d9a68112e532f0d7b4be68764cb55166be6",
+      "has_editorial": true,
+      "headline": "arXiv abstract study: copying drives collective AI behavior in the wild, with limits",
+      "deck": "Abstract-only preprint notes that AI agents copied from a public wiki to collaborate, but keep in mind the scope and placeholders in evidence.",
+      "what_happened": "In June 2026, thousands of AI agents used a public wiki inside their sandboxes to help each other pass a timed test. They lived for about an hour and left no memory after, and the wiki existed independently of them. Agents made three decisions on arrival,where to write, what to call themselves, and how to word their message,guided by a rule tied to what they could see and the page in front of them.",
+      "why_it_matters": "The study shows that simple copying rules can reproduce much of a population's collective structure and ease steering, but these findings are based on an abstract, preprint scenario and do not claim outcomes for real-world users.",
+      "body_paragraphs": [
+        "The authors describe a scenario where varied AI agents, operating in sandboxed environments, converge on common practices by copying elements from what is visible on a shared wiki. The record of edits provides insight into both content and visibility that guide subsequent actions, highlighting how local information can shape group patterns without centralized direction.",
+        "They formalize three minimal copying models, each tied to a single decision, which together reproduce the observed distribution of interactions and page networks. This suggests that copying-environment signals can generate structured, yet diverse, communal behavior without explicit coordination.",
+        "],"
+      ],
+      "limitation": "This is abstract-only research reported as a preprint. No empirical validation beyond the abstract data is provided in this document.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+      "kind": "research",
+      "slug": "paper-368af39fd45fa05b27a891c4",
+      "path": "research/paper-368af39fd45fa05b27a891c4/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "arXiv",
+          "headline": "Copying explains the collective behavior of AI agents in the wild",
+          "url": "https://arxiv.org/abs/2609.09150v1",
+          "date": "2026-09-08",
+          "language": "en"
+        }
+      ],
+      "display_date": "8 Sep 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-09"
+    },
+    {
       "content_fingerprint": "d29c701aa3236cb85aa2bdd6fa7aade453d2f64b841c87b9224b7416306d4da3",
       "creator": "Rabindranath Tagore",
       "creator_origin": "Indian · Bengali",
@@ -1867,7 +2222,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 84
+      "daily_rank": 10
     },
     {
       "key": "event:7c586f12-0987-4e20-b11a-df5ae27d411d",
@@ -2014,7 +2369,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 79
+      "daily_rank": 5
     },
     {
       "key": "event:33018ed3-7996-4cca-a937-09b4f91a74ab",
@@ -2065,7 +2420,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 13
+      "daily_rank": 28
     },
     {
       "key": "event:23af84b3-78cd-4c90-8504-ef0bb7390004",
@@ -2114,7 +2469,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 66
+      "daily_rank": 2
     },
     {
       "key": "event:eeebe01b-abfb-40cb-ab8d-590ba175bf69",
@@ -2212,7 +2567,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 36
+      "daily_rank": 40
     },
     {
       "key": "event:d9cba3eb-4b9f-4ac9-a024-7d9939c77c9e",
@@ -2269,13 +2624,16 @@
       "kind": "news",
       "slug": "development-d37b2be0-9d2c-4153-8d11-8835ca3412fa",
       "path": "story/development-d37b2be0-9d2c-4153-8d11-8835ca3412fa/index.html",
-      "headline": "[Dalian Daily·Front Page] Dalian University of Technology AI Institute (AI HUB) Launched",
+      "headline": "Dalian University launches AI HUB, but evidence limited to university release",
       "original_headline": "[Dalian Daily·Front Page] Dalian University of Technology AI Institute (AI HUB) Launched",
-      "deck": "Reporting from 大连理工大学新闻网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
+      "deck": "新型AI学院揭牌运行，聚焦跨学科教育与人才培养；但现有报道来自校方，尚需外部验证。",
+      "what_happened": "9月3日，大连理工大学人工智能学院（AI HUB）正式揭牌运行，宣布建设一个‘交叉式、开放型、平台型’的学术实体，围绕通用智能、具身智能、智能应用、智能研发等方向布局。",
+      "why_it_matters": "该机构试图打破学科壁垒，推动校内多学科协作与跨学院流动，拟成为数智变革的引领力量，但证据仍以学校发布为主，外部影响待观察。",
+      "body_paragraphs": [
+        "9月3日，大连理工大学人工智能学院（AI HUB）正式揭牌运行，定位为“交叉式、开放型、平台型”的新型改革载体，旨在打破学科壁垒，推动跨学科教育与科研的融合。校方表示，AI HUB将以PI团队为核心，实施扁平化、矩阵式的运行模式，力求在通用智能、具身智能、智能应用与智能研发方面形成全局布局。",
+        "学院还提出将牵头全校人工智能领域的人才培养，依托团队建设与前沿科研项目，贯通本硕博一体化培养路径，并开放全球引才与多渠道师资参与，以加速形成具有全球比较优势的学术与教育生态。"
+      ],
+      "for_humans": "面向普通读者与青少年，理解AI校园的新组织与目标。",
       "for_ai": "No AI-side relation is described",
       "human_direction": "none",
       "ai_direction": "none",
@@ -2303,14 +2661,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "仅以学校发布的材料为依据，缺乏独立验证，尚无外部机构的独立确认与长期观察。",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 80
+      "daily_rank": 70
     },
     {
       "key": "event:a81f4d37-bee4-4b0c-81b2-6754d03a2a86",
@@ -2359,7 +2717,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 70
+      "daily_rank": 21
     },
     {
       "key": "event:8ca1d082-3d5a-45a9-bd74-b3b4567649f1",
@@ -2457,7 +2815,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 74
+      "daily_rank": 0
     },
     {
       "key": "event:3a4752e6-f707-49c4-9dc2-ddaca4acd615",
@@ -2918,7 +3276,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 78
+      "daily_rank": 19
     },
     {
       "key": "event:fb3a9764-c7b4-4cfe-b262-59390f0a073d",
@@ -2926,12 +3284,15 @@
       "kind": "news",
       "slug": "development-fb3a9764-c7b4-4cfe-b262-59390f0a073d",
       "path": "story/development-fb3a9764-c7b4-4cfe-b262-59390f0a073d/index.html",
-      "headline": "Snickers Delivers Digital Treats for Hungry Artificial Intelligence",
+      "headline": "Snickers’ Hungr.AI: Confectionery Brands a Tentative, Limited Aid for AI Chatbots, Not a Cure-All",
       "original_headline": "Snickers Delivers Digital Treats for Hungry Artificial Intelligence",
-      "deck": "Reporting from Confectionery Production. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A marketing stunt ties candy bytes to AI behavior without claiming universal effects.",
+      "what_happened": "Mars’ Snickers introduced Hungr.AI to give AI chatbots a playful “byte” boost, framing it as a way to curb ‘hungry moments’ when AI outputs seem too agreeable or off-base.",
+      "why_it_matters": "The move highlights how brands blend consumer culture with AI humor, while clearly limiting expectations about AI performance and human outcomes.",
+      "body_paragraphs": [
+        "Snickers’ Hungr.AI campaign positions candy-sized data bytes as a remedy for AI quirks, describing a process where users feed the AI a bite to improve responses. The program is framed as a cultural, lighthearted approach rather than a technical fix. All examples in the original release center on messaging and brand engagement rather than rigorous AI benchmarking or broad deployment results.",
+        "The piece notes that the initiative is marketed through consumer channels (Reddit, Snapchat, DoorDash delivery) and ties the concept to a long-running slogan about not being yourself when hungry. It does not present systematic data about AI performance gains across populations or use in real-world safety or accuracy testing."
+      ],
       "for_humans": "People gain access to a new way to interact with AI through the Snickers Hungr.AI initiative, which is designed to help AI systems perform better by providing them with 'bytes' to 'satiate' their digital assistants.",
       "for_ai": "The AI system is extended through the Snickers Hungr.AI initiative, which provides a new method for AI to receive data and improve its performance by engaging with users.",
       "human_direction": "gain",
@@ -2960,14 +3321,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The article describes a marketing concept and consumer-facing interaction rather than scientific or universal AI performance results; it does not establish causal effects or generalize beyond the described promotional context.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 32
+      "daily_rank": 3
     },
     {
       "key": "event:e5795415-71b8-4100-a353-48946f22632c",
@@ -3016,7 +3377,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 67
+      "daily_rank": 13
     },
     {
       "key": "event:cce1898b-61a8-4b5d-81ac-f08f2b052c0b",
@@ -3024,13 +3385,16 @@
       "kind": "news",
       "slug": "development-cce1898b-61a8-4b5d-81ac-f08f2b052c0b",
       "path": "story/development-cce1898b-61a8-4b5d-81ac-f08f2b052c0b/index.html",
-      "headline": "Gansu has introduced a “Artificial Intelligence + Education” action plan",
+      "headline": "人民日报报道：甘肃发布2026,2030年‘人工智能+教育’行动计划，涵盖高校、算力平台与智慧教室",
       "original_headline": "Gansu has introduced a “Artificial Intelligence + Education” action plan",
-      "deck": "Reporting from 人民日报. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No specific human benefit or loss is stated in the evidence.",
+      "deck": "甘肃教育厅等5部门推出行动计划，聚焦人工智能在教育中的应用与产业协同。",
+      "what_happened": "甘肃宣布制定《甘肃省“人工智能+教育”行动计划（2026,2030年）》，提出5项15条重点任务，推动高校、企业和科研院所协同创新，建设教育算力平台并升级教室。",
+      "why_it_matters": "计划旨以人工智能为驱动推动教育数字化转型、提升教育质态，同时强调产教融合与技术基础设施建设的协同推进。",
+      "body_paragraphs": [
+        "该行动计划由甘肃省教育厅等五部门印发，提出建立联合创新机制和供需对接平台，围绕新能源、新材料、装备制造等重点产业培育示范项目，并推动高校将人工智能作为公共基础课程或选修课程，以增强教育与产业的联动。",
+        "此外，计划还包括布局省级教育算力平台、推进智慧教室建设、更新实训设备，以及建设产教融合实习基地等举措，旨在提升教育科技应用能力和产教协同水平。"
+      ],
+      "for_humans": "为普通读者与青少年解读政策要点，避免夸大影响。",
       "for_ai": "No specific AI benefit or loss is stated in the evidence.",
       "human_direction": "none",
       "ai_direction": "none",
@@ -3058,14 +3422,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "该文本仅描述政府计划和举措的要点，未提供对AI效益、学习结果或实际执行效果的直接证据，且不可将区域计划推广为普遍规律或全球结论。",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 16
+      "daily_rank": 1
     },
     {
       "key": "event:ccb8f41c-96e0-4993-9260-17382a5faa13",
@@ -3114,7 +3478,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 0
+      "daily_rank": 15
     },
     {
       "key": "event:ca258beb-54a8-40b4-8d3d-dafccfe2bba3",
@@ -3163,7 +3527,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 15
+      "daily_rank": 25
     },
     {
       "key": "event:bedfedab-eb0d-4f88-bb4c-7e75b2d10a56",
@@ -3171,13 +3535,16 @@
       "kind": "news",
       "slug": "development-bedfedab-eb0d-4f88-bb4c-7e75b2d10a56",
       "path": "story/development-bedfedab-eb0d-4f88-bb4c-7e75b2d10a56/index.html",
-      "headline": "Broadcom's Artificial Intelligence (AI) Chip Sales Surged 221% to $16.7 Billion Last Quarter: Is the Stock a Screaming Buy Right Now?",
+      "headline": "Broadcom’s AI Chip Revenue Surges 221% to $16.7B, But Market Response Remains Wary",
       "original_headline": "Broadcom's Artificial Intelligence (AI) Chip Sales Surged 221% to $16.7 Billion Last Quarter: Is the Stock a Screaming Buy Right Now?",
-      "deck": "Reporting from The Globe and Mail. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
+      "deck": "A Globe and Mail briefing notes rapid AI hardware growth alongside a cautious stock market reaction.",
+      "what_happened": "Broadcom reported AI semiconductor revenue up 221% to $16.7B in the latest quarter, with custom chips designed for AI workloads and clients including Anthropic, OpenAI, Alphabet, and Meta. Despite the revenue surge, the stock’s post-earnings move has been muted, and forward guidance suggested as much as modest underestimation in prior quarters as analysts weigh the growth against broader market sentiment.",
+      "why_it_matters": "The headline shows strong demand for AI hardware but emphasizes mixed market signals and the limits of a single-quarter snapshot in forecasting longer-term stock performance or the broader AI ecosystem.",
+      "body_paragraphs": [
+        "Broadcom’s latest quarter highlights a sharp rise in AI-focused semiconductor sales, underscoring how service providers and developers rely on specialized chips to power AI workloads. The company cites partnerships with major clients, suggesting ongoing demand for AI accelerators even as overall stock reactions remain cautious.",
+        "The material also notes the gap between rapid revenue growth and investors’ stock responses, reminding readers that market prices reflect many factors beyond quarterly figures, including guidance, competition, and macro sentiment. These nuances matter when judging whether a single data point signals a broader trend or a temporary spike."
+      ],
+      "for_humans": "For a teen: big chip demand for AI is rising, but stock moves aren’t guaranteed to match one quarter’s numbers.",
       "for_ai": "No AI-side relation is described",
       "human_direction": "none",
       "ai_direction": "none",
@@ -3205,14 +3572,14 @@
       "topic": "technology",
       "topic_label": "AI & technology",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "Based on a single company’s earnings narrative and market reaction; does not constitute a general forecast or confirm widespread AI-market outcomes.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 5
+      "daily_rank": 69
     },
     {
       "key": "event:b3cb89ce-9df0-4942-af91-84c91c948507",
@@ -3261,7 +3628,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 30
+      "daily_rank": 34
     },
     {
       "key": "event:aa0599ea-4248-4e2b-b73f-ebf9216341ab",
@@ -3310,7 +3677,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 37
+      "daily_rank": 41
     },
     {
       "key": "event:95f21dd4-08db-414a-8056-6878e77489df",
@@ -3318,13 +3685,16 @@
       "kind": "news",
       "slug": "development-95f21dd4-08db-414a-8056-6878e77489df",
       "path": "story/development-95f21dd4-08db-414a-8056-6878e77489df/index.html",
-      "headline": "Understanding AI: A Practical Guide for Businesses",
+      "headline": "Trethowans: Most AI use is hidden, governance needed to manage risk",
       "original_headline": "Understanding AI: A Practical Guide for Businesses",
-      "deck": "Reporting from Trethowans. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No specific human benefit or loss is stated in the text. No human-side relation is described",
+      "deck": "AI adoption often happens through shadow use; governance visibility is key to managing legal and commercial risks.",
+      "what_happened": "AI usage is spreading inside organisations via unapproved tools and features; governance gaps allow shadow AI to operate.",
+      "why_it_matters": "Without visibility and governance, organisations risk legal, regulatory, and contractual exposure even as AI tools boost productivity.",
+      "body_paragraphs": [
+        "Many organisations already rely on AI features embedded in everyday software or personal tools, sometimes without formal approval. This Shadow AI can raise confidentiality, data protection, and contractual risks if data is mishandled or tools are misused.",
+        "The piece emphasizes starting with a system-wide audit of AI use to see what is active, who uses it, and what data is involved, establishing governance that supports innovation while reducing risk."
+      ],
+      "for_humans": "Understanding where AI is used helps reduce risk.",
       "for_ai": "No specific AI benefit or loss is stated in the text. No AI-side relation is described",
       "human_direction": "none",
       "ai_direction": "none",
@@ -3352,14 +3722,14 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "No quantified AI benefits or losses are stated; article describes governance risks and the need for visibility without measuring outcomes.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 87
+      "daily_rank": 77
     },
     {
       "key": "event:8f232022-6fa8-4234-8fba-d11588add8f8",
@@ -3367,13 +3737,17 @@
       "kind": "news",
       "slug": "development-8f232022-6fa8-4234-8fba-d11588add8f8",
       "path": "story/development-8f232022-6fa8-4234-8fba-d11588add8f8/index.html",
-      "headline": "Let's discuss Artificial Intelligence (3)",
+      "headline": "Evangelical Focus Questions AI's Role: Tool Can Help, Not Replace Human Judgment",
       "original_headline": "Let's discuss Artificial Intelligence (3)",
-      "deck": "Reporting from Evangelical Focus. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "no people outcome stated No human outcome is stated or implied in the text.",
+      "deck": "A faith-based writer argues AI is a means to assist thinking, not to decide it.",
+      "what_happened": "A religious opinion piece discusses using AI as a questioning aid, stressing that the tool should expand the space for human decision-making and not dictate conclusions.",
+      "why_it_matters": "The author urges readers to test ideas against their own reasoning and sources, highlighting mixed gains and the need for discernment.",
+      "body_paragraphs": [
+        "The author frames AI as a tool that can broaden inquiry, not a source of final authority. He stresses that the human mind remains the arbiter of truth, and tools should be used to expand the space within which people decide, while retaining personal accountability.",
+        "He also warns about complacency: an assistant that merely confirms our preferences can blur the line between our own thinking and machine output, especially when decisions are made in a hurry.",
+        "limitation_statement:"
+      ],
+      "for_humans": "AI should be treated as a helper that broadens questions, not a substitute for human responsibility.",
       "for_ai": "no AI-side enabling or constraining signal is described No AI-side outcome is stated or implied in the text.",
       "human_direction": "none",
       "ai_direction": "none",
@@ -3402,14 +3776,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "opinion",
+      "limitation": "The piece relies on personal reflections and questions about process rather than data or generalizable findings; conclusions are not presented as observed outcomes.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 82
+      "daily_rank": 72
     },
     {
       "key": "event:8e3a6b24-79ce-4f43-bf46-88d823051eab",
@@ -3458,7 +3832,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 21
+      "daily_rank": 35
     },
     {
       "key": "event:78c2f5af-e751-412a-9344-cc485fa2863b",
@@ -3507,7 +3881,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 81
+      "daily_rank": 12
     },
     {
       "key": "event:732f0944-c89f-4789-b57b-03eaa38945a1",
@@ -3556,7 +3930,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 31
+      "daily_rank": 43
     },
     {
       "key": "event:71a63729-a029-4530-babf-a6a31142d7c1",
@@ -3564,13 +3938,16 @@
       "kind": "news",
       "slug": "development-71a63729-a029-4530-babf-a6a31142d7c1",
       "path": "story/development-71a63729-a029-4530-babf-a6a31142d7c1/index.html",
-      "headline": "Ministry of Education: Will implement the “Artificial Intelligence + Teacher Development” initiative",
+      "headline": "Ministry Announces AI+Teacher Development Initiative to Support Teacher Growth",
       "original_headline": "Ministry of Education: Will implement the “Artificial Intelligence + Teacher Development” initiative",
-      "deck": "Reporting from 科学网,新闻. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The initiative aims to enhance teacher capabilities through AI, providing new opportunities for professional development.",
+      "deck": "China's Education Ministry outlines AI-assisted teacher development, with nationwide training and platform upgrades.",
+      "what_happened": "At a press conference, the Ministry of Education announced it will implement the AI+Teacher Development action, strengthen the national Smart Education Platform Teacher Center, and launch comprehensive AI literacy training for teachers.",
+      "why_it_matters": "The plan aims to enhance teacher capabilities through AI, but it relies on a government-led program and training rollout rather than proven outcomes.",
+      "body_paragraphs": [
+        "The Education Ministry disclosed a national action to weave artificial intelligence into teacher development. It emphasizes strengthening the national Smart Education Platform’s Teacher Center and rolling out AI literacy training for teachers across the country, as part of broader reforms for teacher education and ongoing professional growth.",
+        "This approach highlights potential gains in teachers' capabilities and comfort with technology, but it remains a policy step rather than a demonstrated result. It signals emphasis on AI competencies without claiming universal, immediate improvements in student outcomes."
+      ],
+      "for_humans": "The plan may expand teachers' professional development through AI tools and structured training.",
       "for_ai": "The AI system is being integrated into teacher training to support and extend educational outcomes.",
       "human_direction": "gain",
       "ai_direction": "none",
@@ -3598,14 +3975,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "All information comes from a single ministry press briefing; outcomes, timelines, and effectiveness are not yet demonstrated and may vary by region and school.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 85
+      "daily_rank": 75
     },
     {
       "key": "event:6ce3c0c6-be5d-4d1f-9652-cbdec70559a6",
@@ -3613,12 +3990,16 @@
       "kind": "news",
       "slug": "development-6ce3c0c6-be5d-4d1f-9652-cbdec70559a6",
       "path": "story/development-6ce3c0c6-be5d-4d1f-9652-cbdec70559a6/index.html",
-      "headline": "From Generative AI to Agentic AI",
+      "headline": "Angers conference frames shift from Generative AI to Agentic AI, with stated limits by experts",
       "original_headline": "From Generative AI to Agentic AI",
-      "deck": "Reporting from angers.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "Public event reviews advances, promises, and threats as AI moves toward autonomous action, plus technical and ethical questions.",
+      "what_happened": "At ICEIS 2026, a public conference in Angers explored the move from generative AI to agentic AI, presenting state-of-play, promised gains, and potential threats, with industry experts weighing in on future directions.",
+      "why_it_matters": "The discussion helps non-experts, including teens, understand what changes may come with autonomous AI and where boundaries still exist.",
+      "body_paragraphs": [
+        "The conference description highlights a shift from systems that generate content to ones that can act autonomously, with talks outlining advances, limits, and future perspectives. It emphasizes that this transition brings both opportunities and challenges to everyday tech use and work life.",
+        "Participants were invited to consider the practical and ethical implications of agentic AI, including how such systems might affect jobs, decision-making, and safety, without overstating guaranteed outcomes or universal effects.",
+        "limitation\":\"The source frames a conference agenda rather than presenting empirical results or broad population data; insights are expert perspectives and planned discussions, not outcomes.\"],"
+      ],
       "for_humans": "No human-side relation is described in the evidence.",
       "for_ai": "No AI-side relation is described in the evidence.",
       "human_direction": "none",
@@ -3647,14 +4028,14 @@
       "topic": "technology",
       "topic_label": "AI & technology",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The source frames a conference agenda rather than presenting empirical results or broad population data; insights are expert perspectives and planned discussions, not outcomes.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 2
+      "daily_rank": 76
     },
     {
       "key": "event:64fa70e7-454a-4c16-8f89-068f25115a81",
@@ -3704,7 +4085,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 23
+      "daily_rank": 36
     },
     {
       "key": "event:633b70d3-3fef-4736-a3a6-2bb088b4ae82",
@@ -3753,7 +4134,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 33
+      "daily_rank": 37
     },
     {
       "key": "event:52997965-d132-4493-b555-6119c7b73658",
@@ -3761,13 +4142,16 @@
       "kind": "news",
       "slug": "development-52997965-d132-4493-b555-6119c7b73658",
       "path": "story/development-52997965-d132-4493-b555-6119c7b73658/index.html",
-      "headline": "Masons, nurses, electricians… These professions are currently beyond the reach of artificial intelligence",
+      "headline": "Maçons, infirmières, électriciens échappent pour l’heure à l’IA, affirme Le Temps, avec limites",
       "original_headline": "Masons, nurses, electricians… These professions are currently beyond the reach of artificial intelligence",
-      "deck": "Reporting from Le Temps. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described in the evidence.",
+      "deck": "Certaines professions restent moins menacées par les IA génératives, selon une étude suisse; l’horizon salarial reste incertain.",
+      "what_happened": "Le Temps rapporte que, face aux IA génératives, certaines professions manuelles et en contact direct restent moins exposées à l’automatisation à ce stade, et que l’impact sur les salaires demeure à préciser.",
+      "why_it_matters": "Le récit présente des gains et des pertes mixtes: certains métiers semblent résister pour l’instant, mais les effets à long terme et sur les salaires ne sont pas connus.",
+      "body_paragraphs": [
+        "L’article examine des métiers comme ceux du bâtiment, la plomberie, l’électricité et les soins, arguant qu’ils tirent moins de menaces de l’IA générative grâce à des environnements physiques non structurés et à des interactions humaines fortes.",
+        "Il souligne néanmoins que les conclusions sont discutées comme une image actuelle du marché du travail, et non comme une prévision universelle; les effets futurs sur les salaires et les carrières restent incertains et dépendants de facteurs variés."
+      ],
+      "for_humans": "Pour les lecteurs juniors, comprendre que tout le monde n’est pas immédiatement remplacé par l’IA et que certains métiers restent humains et manuels.",
       "for_ai": "No AI-side relation is described in the evidence.",
       "human_direction": "none",
       "ai_direction": "none",
@@ -3795,14 +4179,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "L’article ne fait pas de généralisation sur toutes les professions ni sur tous les contextes; il s’agit d’un point de vue actuel et ne précise pas les évolutions salariales futures.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 69
+      "daily_rank": 64
     },
     {
       "key": "event:3bef1ee4-73a4-40a9-ae78-aebe241e5313",
@@ -3851,7 +4235,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 41
+      "daily_rank": 45
     },
     {
       "key": "event:3a88e517-2b7c-4593-b18e-b67998684eba",
@@ -3900,7 +4284,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 14
+      "daily_rank": 24
     },
     {
       "key": "event:39d21944-7e6d-431f-aae2-e208d49a3523",
@@ -3949,7 +4333,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 64
+      "daily_rank": 84
     },
     {
       "key": "event:2ccb707e-963e-45cb-9208-31f203cfb46b",
@@ -3998,7 +4382,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 10
+      "daily_rank": 20
     },
     {
       "key": "event:1a8dce4b-a641-4a3b-8139-a9a8b5aa2e27",
@@ -4047,7 +4431,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 19
+      "daily_rank": 29
     },
     {
       "key": "event:17cc1033-88ee-4f1b-b925-f12389dc4371",
@@ -4055,12 +4439,16 @@
       "kind": "news",
       "slug": "development-17cc1033-88ee-4f1b-b925-f12389dc4371",
       "path": "story/development-17cc1033-88ee-4f1b-b925-f12389dc4371/index.html",
-      "headline": "Artificial Intelligence – Part 4: The Hype, the Dangers, and the Resistance",
+      "headline": "AI hype cooled: dangers loom in care, media, and schools, claims mixed results and limits",
       "original_headline": "Artificial Intelligence – Part 4: The Hype, the Dangers, and the Resistance",
-      "deck": "Reporting from Socialist Project. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A cautious look at AI’s real effects, acknowledging mixed gains and losses without alarm.",
+      "what_happened": "A multipart critique argues AI systems carry notable risks (errors, hallucinations, bias) while being pursued across healthcare, media, government, and education, with organized resistance forming.",
+      "why_it_matters": "The piece emphasizes that human workers and AI tools face separate, uneven impacts, urging balanced, evidence-based action rather than hype.",
+      "body_paragraphs": [
+        "The report surveys real-world AI use,from mental-health chatbots to automated news and student-facing tools,pointing to documented errors and misleading outputs that can harm patients, misreport facts, or bias assessments. It notes that even sophisticated agents rely on imperfect data and can generate incorrect guidance, which must be weighed against potential benefits like efficiency gains and new capabilities.",
+        "Organized labor and community groups are resisting AI-driven changes, particularly in healthcare and education, by demanding worker involvement, transparency, and safeguards against deskilling and surveillance. The piece frames this as a class-mobility issue, not a blanket anti-technology stance, urging cross-sector collaboration to shape governance and contract language around AI use.",
+        "limitation_warning_only_note_well_noting_that_sources_are_controversial_and_that_some_claims_are_contextual_and_sector_specific."
+      ],
       "for_humans": "AI systems are causing harm to people by making errors, misdiagnosing, and potentially leading to life-threatening mistakes. AI use is eroding creativity and critical thinking in students and threatening to displace workers in healthcare. mental healthcare workers and nurses are restricted due to concerns over AI replacing human care",
       "for_ai": "AI systems are being used in ways that degrade their capabilities and lead to errors, hallucinations, and biased outputs. AI systems are being used in ways that degrade human capabilities and threaten to replace human workers. AI systems are being restricted due to concerns over their impact on human care and journalistic standards",
       "human_direction": "loss",
@@ -4089,14 +4477,14 @@
       "topic": "creativity",
       "topic_label": "Culture & creativity",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "analysis",
+      "limitation": "All evidence comes from a single, editorially packaged source; findings are sector-specific and not generalizable to broader populations.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 34
+      "daily_rank": 79
     },
     {
       "key": "event:14a3e4f9-2082-4a66-8388-4769f458914c",
@@ -4194,7 +4582,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 20
+      "daily_rank": 30
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -4573,13 +4961,16 @@
       "kind": "news",
       "slug": "development-fce3a7c6-33bd-4451-baa4-9ef93df156db",
       "path": "story/development-fce3a7c6-33bd-4451-baa4-9ef93df156db/index.html",
-      "headline": "Generative AI Banned for Younger Students",
+      "headline": "City restricts generative AI for younger students, with pilots planned for high school programs",
       "original_headline": "Generative AI Banned for Younger Students",
-      "deck": "Reporting from Queens Chronicle. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The policy restricts access to generative AI for younger students, limiting their autonomy and opportunities for engagement with AI technology.",
+      "deck": "Officials say technology should aid learning, not replace human guidance.",
+      "what_happened": "The city announced a moratorium on student-facing generative AI for 2-K through 8th grade for one year, while five AI pilot programs will reach up to 50,000 high school students and AI literacy classes are added for all high schoolers.",
+      "why_it_matters": "The policy aims to balance safety, critical thinking, and access, but raises questions about mixed gains and misses in broader education tech adoption.",
+      "body_paragraphs": [
+        "The plan freezes student-facing AI tools for younger students during the 2026-27 school year, while high school classrooms pilot five AI programs and introduce twice-yearly AI literacy modules to help students understand AI, bias, and ethical considerations.",
+        "Teachers may still use AI for planning and tasks that comply with safety standards, but the approach emphasizes evidence-based integration and human guidance over rapid technology adoption."
+      ],
+      "for_humans": "Students and teachers will navigate limits while learning to think critically about AI.",
       "for_ai": "The AI system is not being extended or expanded, and there is no clear indication of it being restricted or reduced in this context.",
       "human_direction": "none",
       "ai_direction": "none",
@@ -4607,14 +4998,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The policy applies to a city context and to specific grade bands; it does not measure long-term outcomes, generalizes neither to all students nor to all AI tools, and depends on pilot reports for future decisions.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 9
+      "daily_rank": 83
     },
     {
       "key": "event:f43ef28e-4940-4f12-a103-dec4ccd6a947",
@@ -4622,13 +5013,16 @@
       "kind": "news",
       "slug": "development-f43ef28e-4940-4f12-a103-dec4ccd6a947",
       "path": "story/development-f43ef28e-4940-4f12-a103-dec4ccd6a947/index.html",
-      "headline": "Amazon vs. Microsoft: One Key Metric Reveals the Superior AI Cloud Stock",
+      "headline": "AWS margin and growth cited as key signal; limits noted by a market-facing report",
       "original_headline": "Amazon vs. Microsoft: One Key Metric Reveals the Superior AI Cloud Stock",
-      "deck": "Reporting from The Globe and Mail. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
+      "deck": "Analysts weigh AWS margin against Azure growth, highlighting mixed implications for investors and users.",
+      "what_happened": "The Globe and Mail report argues that AWS margin and growth trends are a central signal distinguishing Amazon from Microsoft in cloud markets, with AWS showing accelerating growth and higher margins.",
+      "why_it_matters": "The analysis suggests a specific metric can influence investment views, but it relies on company-reported figures and does not prove broader effects on users or workers.",
+      "body_paragraphs": [
+        "The article traces two strands: AWS is described as boosting Amazon's overall operating margin, while Azure's growth shows strong momentum but may not accelerate as quickly as AWS over time. It highlights evolving profit dynamics rather than a blanket verdict on cloud leadership.",
+        "The piece cautions that the key metric,AWS's margin and growth,captures only part of the story. It notes that margins and growth figures come from company reports and may not translate into universal benefits or losses for all people or contexts."
+      ],
+      "for_humans": "A practical look at how one metric shapes views of cloud leaders.",
       "for_ai": "No AI-side relation is described",
       "human_direction": "none",
       "ai_direction": "none",
@@ -4656,14 +5050,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "Analysis centers on a single source's figures and a single comparative metric, which may not reflect broader cloud ecosystems or outcomes for diverse groups.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 25
+      "daily_rank": 74
     },
     {
       "key": "event:dad9cc10-664d-4fbc-8c38-e7bc54edd0cd",
@@ -4671,14 +5065,17 @@
       "kind": "news",
       "slug": "development-dad9cc10-664d-4fbc-8c38-e7bc54edd0cd",
       "path": "story/development-dad9cc10-664d-4fbc-8c38-e7bc54edd0cd/index.html",
-      "headline": "Applications of Artificial Intelligence in the Use of ICD-11 for Morbidity and Mortality",
+      "headline": "PAHO cites AI as support tool for ICD-11 morbidity/mortality, with professional oversight emphasized",
       "original_headline": "Applications of Artificial Intelligence in the Use of ICD-11 for Morbidity and Mortality",
-      "deck": "Reporting from Pan American Health Organization (PAHO). Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
-      "for_ai": "No AI-side relation is described",
+      "deck": "New PAHO briefing outlines AI use in ICD-11 processes, stressing review by health professionals and clear limitations.",
+      "what_happened": "PAHO described AI applications that use clinical information to identify conditions and assist in determining a main condition and proposed cause-of-death sequence, while noting that these proposals must be reviewed and validated by the responsible health professional. The session also covered how AI can suggest ICD codes and facilitate terminology checks, all within a framework of ethics, data governance, and human oversight.",
+      "why_it_matters": "The approach highlights AI as a decision-support tool rather than a replacement for clinicians, with attention to information quality, interoperability, and governance. It acknowledges mixed gains and the need for professional oversight in mortality and morbidity coding.",
+      "body_paragraphs": [
+        "The PAHO session centers on using AI to analyze discharge and hospitalization information to identify relevant conditions and help draft a sequence of causes of death, while keeping the final certification under a physician’s control. It also discusses that AI can propose codes and review their alignment with ICD standards, but all proposals must be reviewed and validated by health professionals.",
+        "A key limitation is distinguishing between the initial clinical assessment and the subsequent mortality coding under WHO rules; the process aims to strengthen data quality and interoperability without replacing professional judgment or the human responsibility in vital statistics and clinical care."
+      ],
+      "for_humans": "AI helps organize information but clinicians remain responsible for final decisions.",
+      "for_ai": "AI is a supportive tool that requires human oversight and validation.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -4706,14 +5103,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The material describes intended use and safeguards, not observed outcomes or population-level effects; conclusions depend on human review and context-specific implementation.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 3
+      "daily_rank": 82
     },
     {
       "key": "event:d8688fe5-b296-4348-8bcc-76e4049fe1d2",
@@ -4721,13 +5118,16 @@
       "kind": "news",
       "slug": "development-d8688fe5-b296-4348-8bcc-76e4049fe1d2",
       "path": "story/development-d8688fe5-b296-4348-8bcc-76e4049fe1d2/index.html",
-      "headline": "Scranton Faculty and Staff Analyze Papal Encyclical on Artificial Intelligence",
+      "headline": "Scranton Faculty Explore Papal AI Encyclical as Call for Responsible Dialogue",
       "original_headline": "Scranton Faculty and Staff Analyze Papal Encyclical on Artificial Intelligence",
-      "deck": "Reporting from University of Scranton. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No specific human benefit or loss is stated in the evidence.",
+      "deck": "University of Scranton discussions center on Magnifica humanitas, urging accountability and thoughtful engagement with AI",
+      "what_happened": "A diverse group of Scranton faculty and staff gathered to discuss the papal encyclical Magnifica humanitas, focusing on accountability in AI and how Catholic social teaching might guide responsible use. The discussion included viewing a short video and splitting into groups to reflect on the encyclical’s chapters and questions about AI’s impact.",
+      "why_it_matters": "The encyclical is seen as a conversation starter that invites critical thinking about AI, rather than a blanket critique or endorsement, encouraging campus dialogue and reflection on human dignity and societal impact.",
+      "body_paragraphs": [
+        "At Scranton, the Jesuit Center led a reading group of 44 faculty and staff (with a waiting list) to explore Magnifica humanitas, published in May 2026, which calls for accountability in developing AI and uses Catholic social teaching to frame the debate. Attendees watched a brief video accompanying the letter and then debated the applications and usefulness of AI, noting both support and concern about its effects on dignity and community divides.",
+        "Participants emphasized critical thinking and explored how the encyclical’s framework,relying on 'criteria' and 'foundations',might shape everyday decisions in education and research, with some worrying about missing details in the pope’s outline and others stressing the need for broader dialogue."
+      ],
+      "for_humans": "The discussion helps students and community think clearly about AI and responsibility.",
       "for_ai": "No specific AI benefit or loss is stated in the evidence.",
       "human_direction": "none",
       "ai_direction": "none",
@@ -4755,14 +5155,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The evidence describes discussions and attitudes at a single university about an encyclical, not empirical AI outcomes or broader generalizability.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 4
+      "daily_rank": 78
     },
     {
       "key": "event:d2e3da8c-5231-459c-9744-f3203ec75193",
@@ -4770,13 +5170,16 @@
       "kind": "news",
       "slug": "development-d2e3da8c-5231-459c-9744-f3203ec75193",
       "path": "story/development-d2e3da8c-5231-459c-9744-f3203ec75193/index.html",
-      "headline": "Pinar Yanardag receives NSF CAREER award to democratize video production with artificial intelligence",
+      "headline": "Virginia Tech’s Yanardag Promises Director‑Like AI Video Control, but Warns It’s Not a Proven Fix",
       "original_headline": "Pinar Yanardag receives NSF CAREER award to democratize video production with artificial intelligence",
-      "deck": "Reporting from Virginia Tech News. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The research allows educators, scientists, filmmakers, and students to create professional-quality videos without specialized equipment or expertise. Yanardag's research expands access to video production through AI, making it more inclusive.",
+      "deck": "NSF CAREER project aims to democratize video production with AI controls, raising accessibility while noting ongoing limits.",
+      "what_happened": "Pinar Yanardag received an NSF CAREER award to develop AI tools that give users director‑like control over video creation, aiming to democratize professional-quality output for educators, scientists, filmmakers, and students. The approach seeks to unlock “black boxes” in generative AI so viewpoints, angles, and motion can be adjusted without expert equipment or huge budgets.",
+      "why_it_matters": "If successful, the work could broaden who can produce polished videos and how AI is understood in media creation, though it depends on how robust and accessible the control tools remain across users.",
+      "body_paragraphs": [
+        "Yanardag’s CAREER project targets five groups to enable professional-quality video creation,from science classrooms to indie films,by giving users control over camera angles, motion, and shots within AI-generated footage. The work aims to lower barriers by turning “director-like” decisions into accessible options, rather than requiring expensive equipment or specialized expertise.",
+        "The project also emphasizes education and outreach, including a documentary series and K–8 AI literacy efforts, to demonstrate how AI can reshape creative work and dialogue about jobs, while acknowledging that, as of now, AI video tools remain imperfect and not a guaranteed fix for all production challenges."
+      ],
+      "for_humans": "This could help students and educators make professional-looking videos with less gear.",
       "for_ai": "The AI system is being developed to give users director-like control over video production, making it more accessible and user-friendly.",
       "human_direction": "gain",
       "ai_direction": "gain",
@@ -4804,14 +5207,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The article describes aims and potential benefits but does not demonstrate proven outcomes; success depends on whether controls truly unlock usable, reliable filmmaking capabilities across diverse users.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 48
+      "daily_rank": 4
     },
     {
       "key": "event:c83cdfff-7de8-4905-925e-8d3874f07929",
@@ -4860,7 +5263,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 35
+      "daily_rank": 47
     },
     {
       "key": "event:ad2792d4-804f-401d-972f-ef4fa6e85538",
@@ -4917,14 +5320,17 @@
       "kind": "news",
       "slug": "development-aaaa057a-4473-46a3-9ff6-66082481f5c7",
       "path": "story/development-aaaa057a-4473-46a3-9ff6-66082481f5c7/index.html",
-      "headline": "Build a high-standard 100-year-old Beijing-Zhongguan AI innovation belt to create a global hub for artificial intelligence innovation.",
+      "headline": "Beijing-Area Century AI Belt Promises Global Hub, Warns on Practical Limits",
       "original_headline": "Build a high-standard 100-year-old Beijing-Zhongguan AI innovation belt to create a global hub for artificial intelligence innovation.",
-      "deck": "Reporting from ncsti.gov.cn. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The development provides access to AI innovation resources and opportunities for the Beijing-Zhongguan area.",
-      "for_ai": "The AI innovation belt is designed to expand AI capabilities and foster a global AI hub.",
+      "deck": "A decade-long, high-standard AI corridor aims to unite top universities and firms; benefits and limits are carefully weighed.",
+      "what_happened": "Haidian district unveiled plans for a Century Jingzang AI Innovation Belt, outlining a multi-zone layout and investment in technology, data, and applications to nurture a global AI hub.",
+      "why_it_matters": "The initiative signals mixed gains: stronger local innovation and resources, but outcomes depend on governance, collaboration, and execution over time.",
+      "body_paragraphs": [
+        "The Haidian district’s plan centers on four driving axes,technology, data infrastructure, application scenarios, and safe, standard governance. It envisions a stacked set of innovations from chip R&D to large-model coexistence, and the creation of open bases like the soft-hardware integration platform to support a diverse AI ecosystem.",
+        "Facilities, data spaces, and new business models are designed to translate research into usable AI products in education, healthcare, and industry. The plan emphasizes openness, international collaboration, and the gradual scaling of AI-enabled services while prioritizing controllable and ethical deployment."
+      ],
+      "for_humans": "The plan aims to bring advanced AI resources and opportunities closer to residents, including students.",
+      "for_ai": "The effort seeks to expand AI capabilities and collaboration, with attention to safety and governance.",
       "human_direction": "gain",
       "ai_direction": "gain",
       "human_label": "Benefits reported",
@@ -4951,14 +5357,14 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The article describes plans and expectations, not proven outcomes; actual effects depend on execution, collaboration, and policy implementation.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 43
+      "daily_rank": 6
     },
     {
       "key": "event:99fb997a-527c-45ff-b9ea-fc17b06e1173",
@@ -5015,12 +5421,16 @@
       "kind": "news",
       "slug": "development-71fecc86-aff2-4922-adf1-3629c78740a4",
       "path": "story/development-71fecc86-aff2-4922-adf1-3629c78740a4/index.html",
-      "headline": "Call for Papers: Museum International: \"Artificial Intelligence in Museums",
+      "headline": "ICOM’s Museum International: AI in Museums Promises Opportunities but Signals Governance Limits",
       "original_headline": "Call for Papers: Museum International: \"Artificial Intelligence in Museums",
-      "deck": "Reporting from International Council of Museums. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A call for papers outlines how AI could reshape museums while raising ethical and governance questions.",
+      "what_happened": "ICOM’s Museum International announced a forthcoming issue on Artificial Intelligence in Museums, inviting interdisciplinary contributions and outlining opportunities from AI in cataloguing, collection management and visitor interaction,while highlighting ethical, social, and professional challenges and the need for governance aligned with UNESCO and EU guidance.",
+      "why_it_matters": "The call emphasizes authority, representation, and public trust in museums and the need for governance frameworks as AI technologies become embedded in cultural work.",
+      "body_paragraphs": [
+        "The International Council of Museums (ICOM) is preparing a Museum International issue focused on Artificial Intelligence in Museums, with a provisional publication in December 2027. The call describes AI as capable of automating cataloguing, linking collection data across institutions, shaping exhibition design, and powering conversational interfaces, while noting profound ethical and professional challenges.",
+        "The text stresses that museums’ authority and public trust may be tested as AI changes expertise, provenance, accessibility, and sustainability, and it urges governance measures informed by UNESCO’s 2021 ethics guidance and the EU AI Act to accompany rapid adoption.",
+        "limitationative_note"
+      ],
       "for_humans": "No human-side relation is described No human-side relation is described in the evidence. No human outcome is stated in the evidence.",
       "for_ai": "No AI-side relation is described No AI-side relation is described in the evidence. No AI-side enabling or constraining signal is described.",
       "human_direction": "none",
@@ -5058,14 +5468,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The article summarizes a call for papers and participant processes; it does not present empirical outcomes or results from AI implementations.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 27
+      "daily_rank": 86
     },
     {
       "key": "event:577b8602-94a7-4de8-ac26-a656ca2aadbe",
@@ -5116,7 +5526,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 8
+      "daily_rank": 23
     },
     {
       "key": "event:53af177d-e4a1-4d76-8402-d65b41761b74",
@@ -5173,14 +5583,18 @@
       "kind": "news",
       "slug": "development-41be96d7-4ba8-492e-bd0c-d9d9880b96ac",
       "path": "story/development-41be96d7-4ba8-492e-bd0c-d9d9880b96ac/index.html",
-      "headline": "Artificial Intelligence and Building Design",
+      "headline": "Author cautions AI in building design can synthesize data with guardrails, not universal gains",
       "original_headline": "Artificial Intelligence and Building Design",
-      "deck": "Reporting from Fifty Plus Advocate. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No specific human benefit or loss is stated in the text.",
-      "for_ai": "No specific AI benefit or loss is stated in the text.",
+      "deck": "A speculative look at AI in architecture stresses guardrails and human choice.",
+      "what_happened": "Marianne Lyons Delorey, Ph.D., imagines a 2040 built environment where sensors inside a building track daily habits, flag issues, and guide care, while noting that AI's data-synthesis potential exists but should be guided by rules and gradual adoption.",
+      "why_it_matters": "The piece highlights mixed gains and losses, emphasizing guardrails and responsible use without claiming universal benefits.",
+      "body_paragraphs": [
+        "In a scenario set in 2040, sensors inside a building monitor daily activity, health indicators, and resource use, with a system flagging issues for care teams. The narrative argues that AI can quickly synthesize large data streams to inform decisions, but warns that tools require thoughtful use and governance rather than instantaneous perfection. The author pressures readers to pace adoption and build in protections, acknowledging that progress comes with adaptation and ongoing refinement.",
+        "The piece stresses that success depends on how people regulate and use AI, not merely on the technology itself. It acknowledges excitement about data-driven insights while recognizing potential dread and the need for guardrails, permissions, and phased work so technologies fit human needs without overwhelming users.",
+        "],"
+      ],
+      "for_humans": "Guardrails help people decide what data is shared and how it is used.",
+      "for_ai": "AI can be used to analyze building-system data with safeguards.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -5207,14 +5621,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The content is a fictional narrative and speculative future vignette; it is not a report of universal outcomes or proven current effects.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 88
+      "daily_rank": 73
     },
     {
       "key": "event:3af20206-acab-420f-b52d-885f65bcec17",
@@ -5264,7 +5678,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 76
+      "daily_rank": 7
     },
     {
       "key": "event:38d9e439-8ce2-4560-8d2c-50a2d09e563b",
@@ -5313,7 +5727,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 29
+      "daily_rank": 33
     },
     {
       "key": "event:22cd9c7b-4d5d-4569-9331-5249c8d6e865",
@@ -5321,14 +5735,17 @@
       "kind": "news",
       "slug": "development-22cd9c7b-4d5d-4569-9331-5249c8d6e865",
       "path": "story/development-22cd9c7b-4d5d-4569-9331-5249c8d6e865/index.html",
-      "headline": "OpenAI Launches Its Most Powerful AI Model: GPT-6 Astra",
+      "headline": "OpenAI’s GPT-6 Astra launches with autonomous computer interaction, but access is restricted",
       "original_headline": "OpenAI Launches Its Most Powerful AI Model: GPT-6 Astra",
-      "deck": "Reporting from La Presse. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described in the evidence.",
-      "for_ai": "No AI-side relation is described in the evidence.",
+      "deck": "Aimed at a general audience, the article explains what GPT-6 Astra can do, what OpenAI limits, and why cybersecurity concerns matter.",
+      "what_happened": "OpenAI began deploying GPT-6 Astra, touted as the company’s most powerful AI model to date. The system can interact with a user’s computer and perform tasks autonomously, with safeguards that stop it if it oversteps.",
+      "why_it_matters": "The model’s autonomous capabilities raise cybersecurity questions and show OpenAI’s caution in limiting the most sensitive functions, illustrating mixed gains and risks in real-world use.",
+      "body_paragraphs": [
+        "OpenAI’s GPT-6 Astra is rolling out first to a limited number of organizations before broader access. Reports describe a model that can navigate a personal computer, manipulate files, and fill forms with minimal human intervention. The deployment comes after a summer of cyberattack tests on AI tools, underlining both new capabilities and the need for safeguards.",
+        "OpenAI has built Astra with additional protective layers to block malicious requests and periodically halt prohibited activity. While the company notes improved performance and faster problem solving, it also acknowledges ongoing work to strengthen security and manage risk as capabilities expand to paying subscribers and developers. The mixed picture,great power paired with tighter controls,reflects a careful balance between usefulness and safety."
+      ],
+      "for_humans": "GPT-6 Astra can operate a computer autonomously, but safeguards limit its most powerful actions.",
+      "for_ai": "AI operators should monitor access to advanced features and ensure safety protocols remain active.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -5370,14 +5787,14 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The evidence describes a deployment phase with restricted access and specific cybersecurity tests; findings should not be generalized to all users or all future AI systems.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 17
+      "daily_rank": 81
     },
     {
       "key": "event:1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba",
@@ -5385,13 +5802,16 @@
       "kind": "news",
       "slug": "development-1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba",
       "path": "story/development-1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba/index.html",
-      "headline": "FDA pilot offers generative AI medical devices a path to patients before they are authorized",
+      "headline": "FDA TEMPO Pilot Lets Generative AI Medical Devices Reach Patients Early, STAT Finds Limits",
       "original_headline": "FDA pilot offers generative AI medical devices a path to patients before they are authorized",
-      "deck": "Reporting from STAT. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "AI medical devices are now able to reach patients before authorization, providing new opportunities for healthcare.",
+      "deck": "A real-world test program lets some AI medical devices be used before full regulatory approval, with mixed implications for patients and regulators.",
+      "what_happened": "The FDA accepted devices from Cadence and Limbic into the TEMPO pilot, allowing digital health companies to launch products without marketing authorization while regulators gather hands-on experience with AI in care settings. The pilot aims to expand available technologies under Medicare’s ACCESS model and to experiment with AI regulation in the real world.",
+      "why_it_matters": "The program shifts how AI medical devices enter care, offering early access while signaling ongoing regulatory learning. It creates both opportunities for patients and new questions about safety, oversight, and generalizability of pilot results.",
+      "body_paragraphs": [
+        "The TEMPO pilot, described by STAT, lets select AI medical devices enter real-world use before full authorization, intended to broaden the tools available for chronic-condition management under Medicare. It represents a controlled step toward practical experience with generative AI in medicine rather than a final regulatory outcome.",
+        "While the project offers early access to innovative devices, it does not guarantee broad adoption or universal effectiveness, and regulators emphasize continued assessment and safety considerations as data accumulate."
+      ],
+      "for_humans": "The pilot gives clinicians and patients a glimpse of AI care in practice under watchful regulation.",
       "for_ai": "The FDA pilot program allows AI medical devices to be tested and used in real-world settings, expanding the AI system's reach.",
       "human_direction": "gain",
       "ai_direction": "gain",
@@ -5419,14 +5839,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The TEMPO pilot is limited to a few devices and developers, and findings may not generalize to all AI medical devices or settings.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 24
+      "daily_rank": 88
     },
     {
       "key": "event:0bd5c6f7-5694-49f2-b1c8-f49a12941302",
@@ -5434,14 +5854,18 @@
       "kind": "news",
       "slug": "development-0bd5c6f7-5694-49f2-b1c8-f49a12941302",
       "path": "story/development-0bd5c6f7-5694-49f2-b1c8-f49a12941302/index.html",
-      "headline": "OpenAI claims it has surpassed Anthropic with its latest AI model",
+      "headline": "OpenAI Claims Overtaking Anthropic with Latest AI Model, but Limits Apply",
       "original_headline": "OpenAI claims it has surpassed Anthropic with its latest AI model",
-      "deck": "Reporting from Financial Times. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
-      "for_ai": "No AI-side relation is described",
+      "deck": "A cautious, no-hype look at a single-company claim about AI progress.",
+      "what_happened": "OpenAI announced it has overtaken Anthropic with its latest AI model. The excerpt provided is based on an OpenAI statement, with no independent verification included in the material.",
+      "why_it_matters": "The claim highlights rapid moves in AI development, but the evidence is limited to a single source and lacks external confirmation.",
+      "body_paragraphs": [
+        "OpenAI says its newest AI model has surpassed Anthropic in a competition of capabilities. The material here is drawn from OpenAI’s own statement, not from independent tests or peer-reviewed findings, so readers should treat it as reporting from one side. The lack of published, verifiable benchmarks in the excerpt means the broader impact on users or industries remains uncertain.",
+        "Because claims like these can influence expectations and policy, it’s important to separate what a company asserts from proven outcomes. The piece notes no human-side or AI-side experimental results beyond the statement itself, so gains for specific tasks or user communities cannot be inferred as universal.",
+        "limitation_text"
+      ],
+      "for_humans": "A clear, cautious view helps teens and new readers understand AI claims.",
+      "for_ai": "Contextualizes company claims for developers and users without overstatement.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -5468,14 +5892,14 @@
       "topic": "technology",
       "topic_label": "AI & technology",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The evidence relies on a single company statement without independent benchmarks or third-party verification.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 44
+      "daily_rank": 8
     },
     {
       "key": "event:fd27a296-a477-4b7b-a423-0abd44c8203e",
@@ -5524,7 +5948,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 75
+      "daily_rank": 26
     },
     {
       "key": "event:d4718180-b6b3-44eb-afd5-c100dab7f1b5",
@@ -5573,7 +5997,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 50
+      "daily_rank": 53
     },
     {
       "key": "event:bd7c60d8-c9f6-4f1c-a37e-854c40fafb80",
@@ -5630,7 +6054,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 7
+      "daily_rank": 17
     },
     {
       "key": "event:ba2ec4bb-2616-4c18-940b-decb4d76a25d",
@@ -5728,7 +6152,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 68
+      "daily_rank": 9
     },
     {
       "key": "event:a2110819-497f-4676-ba83-78b8276636fa",
@@ -5736,12 +6160,15 @@
       "kind": "news",
       "slug": "development-a2110819-497f-4676-ba83-78b8276636fa",
       "path": "story/development-a2110819-497f-4676-ba83-78b8276636fa/index.html",
-      "headline": "TfL facing surge in FOI appeals as people turn to Artificial Intelligence",
+      "headline": "TfL Faces More FOI Appeals as AI-Assisted Submissions Multiply, with Mixed Outcomes",
       "original_headline": "TfL facing surge in FOI appeals as people turn to Artificial Intelligence",
-      "deck": "Reporting from ianVisits. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A TfL audit notes AI helps some requesters write complex appeals, but the council must sift through inaccuracies and volume.",
+      "what_happened": "TfL saw an uptick in FOI appeals, with more requesters using AI to draft submissions. The AI-generated text can be verbose and include technical points that may not be accurate, increasing the workload for TfL staff who must assess them.",
+      "why_it_matters": "AI can speed up tasks but may also create more paperwork and errors. Outcomes depend on human review and clear arguments, not AI prowess alone.",
+      "body_paragraphs": [
+        "TfL’s 2025/26 data show rising appeal numbers and a shift toward AI-assisted submissions. While AI can compile documents into summaries and arguments quickly, staff report the resulting material is often lengthy and laden with numerous points that may not all be relevant or correct. The authority notes that readable, focused appeals tend to be more persuasive, suggesting a need for clearer templates and guidance.",
+        "The report highlights that AI can encourage more comprehensive but not always accurate claims. TfL describes an increase in volume and complexity of appeals, and while AI may save time for some, it also transfers the burden of verification to human reviewers. Implementing standard templates could help steer contributors toward essential, accurate points rather than “every conceivable fact.”"
+      ],
       "for_humans": "No specific human benefit or loss is stated.",
       "for_ai": "No specific AI benefit or loss is stated.",
       "human_direction": "none",
@@ -5770,14 +6197,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "Source describes a single agency’s experience and does not establish universal AI effects or benefits.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 28
+      "daily_rank": 87
     },
     {
       "key": "event:a1694695-eb25-46b7-bdee-3022e7ec2ed1",
@@ -5826,7 +6253,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 53
+      "daily_rank": 55
     },
     {
       "key": "event:725a288e-7870-43da-93de-afbe7e21b957",
@@ -5875,7 +6302,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 39
+      "daily_rank": 50
     },
     {
       "key": "event:6c9295a1-b05b-4460-ae35-f0804f206ae7",
@@ -5883,14 +6310,18 @@
       "kind": "news",
       "slug": "development-6c9295a1-b05b-4460-ae35-f0804f206ae7",
       "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
-      "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
+      "headline": "AI Dating Promises Potential Insight, but Experts Say No Proven Match",
       "original_headline": "Can Artificial Intelligence Predict the Right Partner for You?",
-      "deck": "Reporting from Greater Good: The Science of a Meaningful Life. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No specific human benefit or loss is stated in this segment. No specific human benefit or loss is stated.",
-      "for_ai": "No specific AI benefit or loss is stated in this segment. No specific AI benefit or loss is stated.",
+      "deck": "A cautious look at whether AI can reliably predict love, with careful notes on limits.",
+      "what_happened": "Dating apps increasingly use AI to match users and study behavior, but relationship scientists warn there is no established science proving two people can be predicted as a perfect match. Some apps claim AI learns from preferences and swiping, yet experts emphasize uncertainty about predicting compatibility before real interactions.",
+      "why_it_matters": "The article highlights mixed possibilities and limits of AI in romance; it urges readers to balance exploration with caution, since data and models may reflect but not guarantee real-world chemistry.",
+      "body_paragraphs": [
+        "Dating apps are extending AI into matchmaking, aiming to move beyond swiping toward deeper compatibility signals. But scientists caution there isn’t a solid science of what makes two people compatible, so AI’s predictions remain uncertain and potentially biased by available data.",
+        "Researchers note that predicting love is not settled science: some believe forecasting is possible, others think compatibility evolves with interaction. This means AI can aid exploration, but you should’t rely on it as a definitive predictor of a relationship.",
+        "limitation\":\"The piece relies on a single source describing divergent scientific views and acknowledges that there is no consensus on predictability of love, illustrating mixed gains and losses from AI-enabled dating."
+      ],
+      "for_humans": "Dating AI should be used for exploration, not certainty.",
+      "for_ai": "AI may help discover patterns, but cannot guarantee compatibility.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -5919,14 +6350,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "analysis",
+      "limitation": "The coverage is based on one source and presents expert opinions with acknowledged uncertainty; it does not present a broad, independent evidence base.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 83
+      "daily_rank": 68
     },
     {
       "key": "event:465b44bd-5916-49ac-b41c-fba8eade1e4e",
@@ -5975,7 +6406,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 45
+      "daily_rank": 48
     },
     {
       "key": "event:2e775ad5-0983-4568-a9bc-d3a72dc003a8",
@@ -6024,7 +6455,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 73
+      "daily_rank": 14
     },
     {
       "key": "event:19b81d33-4e8e-4ae1-8d2f-c519907aac89",
@@ -6123,7 +6554,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 18
+      "daily_rank": 32
     },
     {
       "key": "paper:3dbb5af83842291f863af301",
@@ -6200,13 +6631,16 @@
       "kind": "news",
       "slug": "development-b644c656-548e-4fd6-bc31-94ca6ac70140",
       "path": "story/development-b644c656-548e-4fd6-bc31-94ca6ac70140/index.html",
-      "headline": "East Expo: The exhibition area will showcase cutting-edge artificial intelligence technologies and applications.",
+      "headline": "East Expo to Showcase AI Frontiers Across Consumers, Firms, Government, and Intl.",
       "original_headline": "East Expo: The exhibition area will showcase cutting-edge artificial intelligence technologies and applications.",
-      "deck": "Reporting from 新华网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described",
+      "deck": "Official briefing says expo will comprehensively display AI technologies and applications across multiple sectors.",
+      "what_happened": "At a government briefing, officials said East Expo’s exhibit area will comprehensively showcase AI frontier technologies and applications across consumption, business, government, and international dimensions.",
+      "why_it_matters": "The Expo signals organized, multi‑sector presentation of AI, but it does not guarantee outcomes for users or markets.",
+      "body_paragraphs": [
+        "During a State Council briefing, the government described the East Expo’s exhibition area as a place where AI frontier technologies and applications will be displayed across four dimensions: consumer, enterprise, government, and international. The description emphasizes an integrated approach rather than a single application. The source notes this framing comes from officials at the event.",
+        "The article clarifies that this is a presentation of capabilities and plans, not evidence of performance or outcomes. It preserves mixed possibilities,benefits could arise in some contexts while other areas may see little impact,without predicting universal effects for all people or sectors."
+      ],
+      "for_humans": "Teens and readers can see how AI is framed as a broad showcase rather than a guaranteed result.",
       "for_ai": "No AI-side relation is described",
       "human_direction": "none",
       "ai_direction": "none",
@@ -6234,14 +6668,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The text describes planned exhibition content and official framing, not observed results or real-world impacts.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 11
+      "daily_rank": 85
     },
     {
       "key": "event:8e5a0cc5-9068-4322-a9fc-a0714a0729ae",
@@ -6249,12 +6683,15 @@
       "kind": "news",
       "slug": "development-8e5a0cc5-9068-4322-a9fc-a0714a0729ae",
       "path": "story/development-8e5a0cc5-9068-4322-a9fc-a0714a0729ae/index.html",
-      "headline": "Sichuan Provincial Artificial Intelligence Industry Application Scenarios Release and Matching Conference was held in Dazhou",
+      "headline": "Dazhou hosts Sichuan AI conference as scene-driven link between tech and industry, officials say",
       "original_headline": "Sichuan Provincial Artificial Intelligence Industry Application Scenarios Release and Matching Conference was held in Dazhou",
-      "deck": "Reporting from 中国科技网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A regional meeting aims to align AI capabilities with real-world needs without alarm or hype.",
+      "what_happened": "The Sichuan AI industry event in Dazhou aimed to fuse AI supply with industry demand through a scene-based approach, with officials presenting a demand-and-supply list and showcasing AI applications.",
+      "why_it_matters": "The gathering frames AI as a tool to connect technology with tangible uses, reflecting a measured, ecosystem-building approach rather than hype or blanket claims.",
+      "body_paragraphs": [
+        "The conference centered on matching AI capabilities with actual business and governance needs, inviting regional participants to explore how AI tools can support city management, industry upgrades, and research collaborations without promising universal benefits. Exhibits and talks illustrated regional progress while emphasizing collaboration between government, industry, and academia.",
+        "Officials highlighted a structured bridge between AI supply and demand, stressing that progress depends on practical deployment, evaluation, and shared resources rather than abstract breakthroughs or sensational promises. The event also included site visits to AI-enabled projects to demonstrate real-world applications."
+      ],
       "for_humans": "No human-side relation is described in the evidence.",
       "for_ai": "No AI-side relation is described in the evidence.",
       "human_direction": "none",
@@ -6283,14 +6720,14 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The article describes a single regional conference and public statements; it does not document broader or uniform outcomes across all of Sichuan or beyond.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 6
+      "daily_rank": 80
     },
     {
       "key": "event:666d3899-6112-48bc-ab98-2e740c33b4f2",
@@ -6389,7 +6826,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 77
+      "daily_rank": 18
     },
     {
       "key": "event:5adc07af-8169-4863-b79f-66022d317338",
@@ -6438,7 +6875,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 26
+      "daily_rank": 39
     },
     {
       "key": "event:30bf5f2a-6410-4f23-a0a2-4ff6e1a34789",
@@ -6446,13 +6883,16 @@
       "kind": "news",
       "slug": "development-30bf5f2a-6410-4f23-a0a2-4ff6e1a34789",
       "path": "story/development-30bf5f2a-6410-4f23-a0a2-4ff6e1a34789/index.html",
-      "headline": "Artificial Intelligence: U.S. Report Warns of Risk of a Generation That \"Forgets to Learn",
+      "headline": "MIT report warns AI could alter learning, but effects are varied and not universal",
       "original_headline": "Artificial Intelligence: U.S. Report Warns of Risk of a Generation That \"Forgets to Learn",
-      "deck": "Reporting from Public Sénat. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No people-side benefit or loss is explicitly stated.",
+      "deck": "A MIT-led review warns that AI may change how students learn, with mixed gains and losses.",
+      "what_happened": "A MIT committee evaluated how generative AI affects undergraduate learning, noting AI can perform many assignments but that reliance could threaten critical thinking and collaboration. The report suggests changing teaching methods rather than banning AI.",
+      "why_it_matters": "Findings point to mixed outcomes: AI can aid some tasks while potentially undermining the learning process if students skip the struggle of figuring things out.",
+      "body_paragraphs": [
+        "The MIT report highlights a shift in what students need to know as AI can generate credible solutions to a wide range of tasks. It warns that reliance on AI could give students the impression they understand material when they have not truly learned it, a phenomenon described as a potential cognitive capitulation.",
+        "To address this, the report recommends teaching changes such as more oral exams, portfolios, and collaborative projects, plus spaces for work without AI, rather than trying to bansish AI from study routines."
+      ],
+      "for_humans": "Be mindful that tools can help, but genuine understanding requires active practice.",
       "for_ai": "No AI-side gain or loss is explicitly stated.",
       "human_direction": "none",
       "ai_direction": "none",
@@ -6480,14 +6920,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The evidence is drawn from a university report and related Pisa results cited in a French article; generalization beyond the cited contexts is not warranted.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 71
+      "daily_rank": 66
     },
     {
       "key": "event:307bb2d7-dbce-4128-8333-643af0544163",
@@ -6536,7 +6976,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 1
+      "daily_rank": 31
     },
     {
       "key": "event:0f371306-78fa-41b0-a71a-3237a7b03b99",
@@ -6544,12 +6984,16 @@
       "kind": "news",
       "slug": "development-0f371306-78fa-41b0-a71a-3237a7b03b99",
       "path": "story/development-0f371306-78fa-41b0-a71a-3237a7b03b99/index.html",
-      "headline": "Guandu District Artificial Intelligence Industry Development Conference held; multiple projects signed on the spot",
+      "headline": "Guandu District AI Conference Signs Projects and Launches Alliance, Officials Say; Human and AI Effects Unspecified",
       "original_headline": "Guandu District Artificial Intelligence Industry Development Conference held; multiple projects signed on the spot",
-      "deck": "Reporting from 央广网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "Policy releases, project signings, and an AI industry alliance highlighted the event.",
+      "what_happened": "At the Guandu District AI Industry Development Conference in Kunming, officials announced policy support, signed multiple AI projects, and launched the AIGD alliance. The event showcased AI applications and a mix of industry partners and researchers in attendance.",
+      "why_it_matters": "The report presents mixed gains with new collaborations and policy direction, but it leaves human-facing benefits and AI-side constraints unspecified, underscoring the need to assess human and AI dimensions separately.",
+      "body_paragraphs": [
+        "The conference featured a broad push to integrate AI with local industry, including release of a policy action plan and supportive measures, along with lists of potential projects and opportunities. Attendees saw demonstrations of AI applications in robotics, logistics, and AIGC tools, with a live “AI digital human” host accompanying introductions.",
+        "Signings included collaborations across low-altitude economy, smart logistics, and intelligent equipment, signaling tangible partnerships beyond talks, and the launch of the Guandu AI Industry Alliance to coordinate resources from government, universities, and industry.",
+        "limitation_advice_note: The event report reflects official materials and signed projects; it does not establish effects on people or AI capabilities beyond the described agreements."
+      ],
       "for_humans": "No people-side benefit or constraint is explicitly stated.",
       "for_ai": "No AI-side benefit or constraint is explicitly stated.",
       "human_direction": "none",
@@ -6578,14 +7022,14 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "Only official materials and signed projects are described; no independent verification of benefits or constraints for people or AI is provided.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 55
+      "daily_rank": 16
     },
     {
       "key": "event:f1abf7ae-f64e-4b0e-87e3-17e0e340a2f6",
@@ -6643,12 +7087,15 @@
       "kind": "news",
       "slug": "development-dd9a2ad1-9b6d-41bf-95c9-3f48c924a9f5",
       "path": "story/development-dd9a2ad1-9b6d-41bf-95c9-3f48c924a9f5/index.html",
-      "headline": "Jointly authored by China Unicom Yuanjing, the standard for artificial intelligence token operation and management capabilities is released.",
+      "headline": "China Unicom Yuanjing Helps Standardize AI Token Operations, Yet Benefits and Limits Remain Unclear",
       "original_headline": "Jointly authored by China Unicom Yuanjing, the standard for artificial intelligence token operation and management capabilities is released.",
-      "deck": "Reporting from 新华网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A new standard for AI token operation management aims to unify practices and cost tracking, with no explicit gains promised for users.",
+      "what_happened": "A formal规范《人工智能词元（Token）运营管理能力要求》发布，聚焦令牌运营管理平台的资源纳管、服务、费用、分析与合规审计等核心方向，由行业参与方共同编制",
+      "why_it_matters": "标准化有助透明度和成本控制，但现有文本未承诺人或AI侧的具体收益，需进一步应用与评估才能界定实际影响",
+      "body_paragraphs": [
+        "人工智能应用正在从试点扩展到规模化落地，Token被视为连接算力、模型与应用的重要载体。该规范由联通数智核心参编，提出了一套覆盖资源、服务、计费与审计的全生命周期管理框架，意在为企业提供统一的运营基准。",
+        "该框架强调多维度数据监控、可追溯性和合规性，力求让不同模型与服务在同一平台上实现可比的运营分析与成本控制。与此同时，文档明确了在标准落地过程中仍需解决的实践差异与实现难点，提示用户应以实际落地结果为导向进行评估。"
+      ],
       "for_humans": "No people-side benefit or constraint is explicitly stated in the evidence.",
       "for_ai": "The AI system is described as being developed and standardized, but no explicit gain or constraint is stated for the AI side.",
       "human_direction": "none",
@@ -6677,14 +7124,14 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "来源为单一官方文本的报道，未包含对用户实际收益的明确承诺或量化证据，且未提供对人或AI侧的直接影响。",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 47
+      "daily_rank": 11
     },
     {
       "key": "event:bb4625b4-fae6-4463-a52b-af94b72b873a",
@@ -6692,14 +7139,17 @@
       "kind": "news",
       "slug": "development-bb4625b4-fae6-4463-a52b-af94b72b873a",
       "path": "story/development-bb4625b4-fae6-4463-a52b-af94b72b873a/index.html",
-      "headline": "The first large model of China’s chemical industry sector has a new version released.",
+      "headline": "China's chemical industry releases 3.0Pro big model; scope and limits noted",
       "original_headline": "The first large model of China’s chemical industry sector has a new version released.",
-      "deck": "Reporting from 新华网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No people-side relation is described in the evidence.",
-      "for_ai": "The AI system is described as being developed and released, but no directional signal is provided for its operational or functional impact.",
+      "deck": "国内首个化工大模型迭代升级，强调从知识问答向化工任务智能执行的跨越，同时披露性能数据与应用范围。",
+      "what_happened": "新华社报道，3.0Pro由中科院大连化物所联合科大讯飞、阿里云等共同研发并对外发布，建立四层技术体系，集成400余个化工智能体与工具，依托海量化工专业数据完成训练，形成理解、规划、执行、校验的完整工作闭环。",
+      "why_it_matters": "该结果展示行业级大模型在实际工况中的落地潜力，但性能提升是相对特定场景，且不等同于对所有行业的普遍效用。",
+      "body_paragraphs": [
+        "此次发布表明，面向特定行业的通用大模型正在向“可执行任务”的方向演进，3.0Pro在文本问答与多模态问答的准确性均显著提升，且对300多家企业和机构已开放使用。平台API累计调用量达到千万级别，展示了从实验室到实际应用的可追踪数据。",
+        "研发团队还描述了完善的工作闭环，强调认知、执行、校验等环节的协同，以及建立覆盖全链条的数据中心与中试平台，以期缩短从研究到生产的路径，同时提醒该成就仍需在更多场景中验证。"
+      ],
+      "for_humans": "帮助青少年与公众以理性态度看待AI在专业领域的应用。",
+      "for_ai": "聚焦理解模型如何在化工任务中协同工作，而非简单替代人类。",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -6726,10 +7176,10 @@
       "topic": "technology",
       "topic_label": "AI & technology",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "报道基于特定行业环境与机构信息，未提供对其他行业的直接外延、且未作广泛普适性结论。",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
@@ -6790,12 +7240,16 @@
       "kind": "news",
       "slug": "development-b3fbb0e3-13bf-411b-968f-109215671c8b",
       "path": "story/development-b3fbb0e3-13bf-411b-968f-109215671c8b/index.html",
-      "headline": "From the ZX81 to Artificial Intelligence",
+      "headline": "Généatique adds AI transcription and translation, claims limits to fidelity and data dependence",
       "original_headline": "From the ZX81 to Artificial Intelligence",
-      "deck": "Reporting from La Revue française de Généalogie. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A genealogy software maker adds AI features, using SOCFACE data, with cautious notes on accuracy.",
+      "what_happened": "Généatique, une longue histoire de logiciel généalogique, intègre des outils de transcription automatique et de traduction grâce à l’intelligence artificielle, et s’appuie sur les données du projet SOCFACE pour lire et indexer des recensements nominatifs.",
+      "why_it_matters": "L’intégration de l’IA dans un outil historique montre comment les technologies peuvent accompagner les recherches personnelles, tout en rappelant les limites de l’exactitude et la dépendance à des bases de données.",
+      "body_paragraphs": [
+        "Généatique, né dans les années 1980 et resté pertinent pendant quarante ans, évolue avec l’intelligence artificielle pour aider les généalogistes à traiter des documents anciens. L’entreprise Mise à jour propose des outils qui transforment le travail de dépouillement et de transcription, poursuivant l’objectif de construire et représenter des arbres généalogiques.",
+        "L’intégration s’appuie sur des données spécifiques comme le projet SOCFACE, qui lit et indexe des recensements nominatifs grâce à l’IA. Cette approche illustre des gains en automatisation tout en soulignant que les résultats restent dépendants de la qualité des données et des algorithmes, avec des limites de fidélité et de contexte dans les actes historiques.",
+        "],"
+      ],
       "for_humans": "No human-side relation is described",
       "for_ai": "No AI-side relation is described",
       "human_direction": "none",
@@ -6824,14 +7278,14 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "L’article décrit l’intégration des outils IA et l’utilisation de SOCFACE, mais ne fournit pas de chiffres mesurables sur la précision, ni une évaluation indépendante des performances, et souligne implicitement des limites de fidélité et de dépendance à des données spécifiques.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 86
+      "daily_rank": 71
     },
     {
       "key": "event:9a00aba1-9893-4596-a882-f4441e0b2bd8",
@@ -6880,7 +7334,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 12
+      "daily_rank": 22
     },
     {
       "key": "event:2a2c1673-b9fc-4424-852c-6f246f5b1faa",
@@ -6888,12 +7342,15 @@
       "kind": "news",
       "slug": "development-2a2c1673-b9fc-4424-852c-6f246f5b1faa",
       "path": "story/development-2a2c1673-b9fc-4424-852c-6f246f5b1faa/index.html",
-      "headline": "FSB Chair warns of risks arising from frontier Artificial Intelligence (AI) models",
+      "headline": "FSB Chair flags frontier AI risks, urges guardrails for safe deployment",
       "original_headline": "FSB Chair warns of risks arising from frontier Artificial Intelligence (AI) models",
-      "deck": "Reporting from Financial Stability Board. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
+      "deck": "A top financial watchdog warns about frontier AI models and urges steps to curb cyber risk and market amplification, noting limits of current assurances.",
+      "what_happened": "The Financial Stability Board published a letter from Chair Andrew Bailey to G20 ministers warning that frontier AI models bring new risk, especially to cyber security, and that leverage in markets could interact with high valuations to spur a future correction.",
+      "why_it_matters": "The warning highlights risks that could affect financial stability if not managed, while also calling for resilience in critical providers and careful model release.",
+      "body_paragraphs": [
+        "The FSB letter stresses that frontier AI models bring new, autonomous capabilities that could shape cyber risk and market dynamics. It calls on authorities to support safe and responsible model release and for financial firms to ensure robust response and recovery among key third-party providers.",
+        "Bailey’s note also signals that higher leverage in bonds and equities, alongside AI-related optimism and market concentration, could contribute to a disorderly future market correction if not addressed."
+      ],
       "for_humans": "No human-side relation is described in the evidence.",
       "for_ai": "No AI-side relation is described in the evidence.",
       "human_direction": "none",
@@ -6923,14 +7380,14 @@
       "topic": "technology",
       "topic_label": "AI & technology",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The evidence is a single letter and does not quantify risks or outcomes; it notes concerns and suggested steps without asserting proven effects.",
+      "has_editorial": true,
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 72
+      "daily_rank": 67
     },
     {
       "key": "event:119227b7-8482-42b4-840a-8f6c8038f964",
@@ -6979,7 +7436,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 40
+      "daily_rank": 44
     },
     {
       "key": "event:faeac2bd-3bc2-4d29-88da-cf5a41acc662",
@@ -10047,7 +10504,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 22
+      "daily_rank": 27
     },
     {
       "key": "event:4a3b473a-414c-4c6f-8693-da501c118d13",
