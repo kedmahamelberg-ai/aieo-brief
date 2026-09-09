@@ -1821,55 +1821,6 @@
       ]
     },
     {
-      "key": "event:e3737276-f438-46f2-8106-2653df26bc8a",
-      "event_id": "e3737276-f438-46f2-8106-2653df26bc8a",
-      "kind": "news",
-      "slug": "development-e3737276-f438-46f2-8106-2653df26bc8a",
-      "path": "story/development-e3737276-f438-46f2-8106-2653df26bc8a/index.html",
-      "headline": "Authors unite against 'AI slop' at book fair",
-      "original_headline": "Authors unite against 'AI slop' at book fair",
-      "deck": "Reporting from Village Report. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Village Report",
-          "headline": "Authors unite against 'AI slop' at book fair",
-          "url": "https://www.villagereport.ca/village-picks/authors-unite-against-ai-slop-at-book-fair-12749155",
-          "date": "2026-09-06",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Village Report",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 90
-    },
-    {
       "key": "event:d4ff674f-b8ed-4fb1-b37e-75f0bfcd1632",
       "event_id": "d4ff674f-b8ed-4fb1-b37e-75f0bfcd1632",
       "kind": "news",
@@ -1916,154 +1867,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 130
-    },
-    {
-      "key": "event:d27c9e97-c061-4eec-a2f4-8a2717501a7f",
-      "event_id": "d27c9e97-c061-4eec-a2f4-8a2717501a7f",
-      "kind": "news",
-      "slug": "development-d27c9e97-c061-4eec-a2f4-8a2717501a7f",
-      "path": "story/development-d27c9e97-c061-4eec-a2f4-8a2717501a7f/index.html",
-      "headline": "Nvidia, Conductor of the AI Bubble",
-      "original_headline": "Nvidia, Conductor of the AI Bubble",
-      "deck": "Reporting from Mediapart. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Mediapart",
-          "headline": "Nvidia, Conductor of the AI Bubble",
-          "url": "https://www.mediapart.fr/journal/economie-et-social/060926/nvidia-chef-d-orchestre-de-la-bulle-de-l-intelligence-artificielle",
-          "date": "2026-09-06",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Mediapart",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 45
-    },
-    {
-      "key": "event:d122facd-a1e2-4c37-a97b-de81f79ee629",
-      "event_id": "d122facd-a1e2-4c37-a97b-de81f79ee629",
-      "kind": "news",
-      "slug": "development-d122facd-a1e2-4c37-a97b-de81f79ee629",
-      "path": "story/development-d122facd-a1e2-4c37-a97b-de81f79ee629/index.html",
-      "headline": "Artificial Intelligence: \"Companies are taking the subject by the horns",
-      "original_headline": "Artificial Intelligence: \"Companies are taking the subject by the horns",
-      "deck": "Reporting from L'Alsace. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "L'Alsace",
-          "headline": "Artificial Intelligence: \"Companies are taking the subject by the horns",
-          "url": "https://www.lalsace.fr/economie/2026/09/06/intelligence-artificielle-les-entreprises-prennent-le-sujet-a-bras-le-corps",
-          "date": "2026-09-06",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "L'Alsace",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 55
-    },
-    {
-      "key": "event:aed8b907-508a-46de-9970-e6502c58f41d",
-      "event_id": "aed8b907-508a-46de-9970-e6502c58f41d",
-      "kind": "news",
-      "slug": "development-aed8b907-508a-46de-9970-e6502c58f41d",
-      "path": "story/development-aed8b907-508a-46de-9970-e6502c58f41d/index.html",
-      "headline": "BOOK. Digital, social networks and artificial intelligence: Are our lives now becoming capsules?",
-      "original_headline": "BOOK. Digital, social networks and artificial intelligence: Are our lives now becoming capsules?",
-      "deck": "Reporting from ladepeche.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "ladepeche.fr",
-          "headline": "BOOK. Digital, social networks and artificial intelligence: Are our lives now becoming capsules?",
-          "url": "https://www.ladepeche.fr/2026/09/06/livre-numerique-reseaux-sociaux-et-intelligence-artificielle-nos-vies-sont-elles-devenues-des-capsules-13535505.php",
-          "date": "2026-09-06",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "ladepeche.fr",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "work",
-      "topic_label": "Work & skills",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 79
+      "daily_rank": 84
     },
     {
       "key": "event:7c586f12-0987-4e20-b11a-df5ae27d411d",
@@ -2112,7 +1916,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 87
+      "daily_rank": 62
     },
     {
       "key": "event:67ac90b6-b067-4967-bf41-a4e616d9e741",
@@ -2161,105 +1965,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 77
-    },
-    {
-      "key": "event:4fffba8b-06fe-4e3c-9470-7dbd52259df0",
-      "event_id": "4fffba8b-06fe-4e3c-9470-7dbd52259df0",
-      "kind": "news",
-      "slug": "development-4fffba8b-06fe-4e3c-9470-7dbd52259df0",
-      "path": "story/development-4fffba8b-06fe-4e3c-9470-7dbd52259df0/index.html",
-      "headline": "Artificial Intelligence: Google Changes the Game with Its AI Answers Overview",
-      "original_headline": "Artificial Intelligence: Google Changes the Game with Its AI Answers Overview",
-      "deck": "Reporting from ladepeche.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "ladepeche.fr",
-          "headline": "Artificial Intelligence: Google Changes the Game with Its AI Answers Overview",
-          "url": "https://www.ladepeche.fr/2026/09/06/intelligence-artificielle-google-change-les-regles-du-jeu-avec-ses-reponses-ai-overviews-13538470.php",
-          "date": "2026-09-06",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "ladepeche.fr",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 60
-    },
-    {
-      "key": "event:42938ff8-b997-463a-ab37-51bcec416e1b",
-      "event_id": "42938ff8-b997-463a-ab37-51bcec416e1b",
-      "kind": "news",
-      "slug": "development-42938ff8-b997-463a-ab37-51bcec416e1b",
-      "path": "story/development-42938ff8-b997-463a-ab37-51bcec416e1b/index.html",
-      "headline": "Artificial intelligence causes a drop in graphic registration at Shawinigan Cégep",
-      "original_headline": "Artificial intelligence causes a drop in graphic registration at Shawinigan Cégep",
-      "deck": "Reporting from Radio-Canada. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Radio-Canada",
-          "headline": "Artificial intelligence causes a drop in graphic registration at Shawinigan Cégep",
-          "url": "https://ici.radio-canada.ca/info/videos/1-10752004/intelligence-artificielle-fait-chuter-inscriptions-en-graphisme-au-cegep-shawinigan",
-          "date": "2026-09-06",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Radio-Canada",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 89
+      "daily_rank": 54
     },
     {
       "key": "event:392286f7-815a-410d-9560-80a7e2f99012",
@@ -2308,7 +2014,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 125
+      "daily_rank": 79
     },
     {
       "key": "event:33018ed3-7996-4cca-a937-09b4f91a74ab",
@@ -2359,7 +2065,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 1
+      "daily_rank": 13
     },
     {
       "key": "event:23af84b3-78cd-4c90-8504-ef0bb7390004",
@@ -2408,107 +2114,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 97
-    },
-    {
-      "key": "event:1e3c2f6c-b23f-4eed-8339-7de1da42f2dc",
-      "event_id": "1e3c2f6c-b23f-4eed-8339-7de1da42f2dc",
-      "kind": "news",
-      "slug": "development-1e3c2f6c-b23f-4eed-8339-7de1da42f2dc",
-      "path": "story/development-1e3c2f6c-b23f-4eed-8339-7de1da42f2dc/index.html",
-      "headline": "Artificial Intelligence: \"A rupture could occur if the models themselves became capable of accelerating their own progression",
-      "original_headline": "Artificial Intelligence: \"A rupture could occur if the models themselves became capable of accelerating their own progression",
-      "deck": "Reporting from Le Monde.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Monde.fr",
-          "headline": "Artificial Intelligence: \"A rupture could occur if the models themselves became capable of accelerating their own progression",
-          "url": "https://www.lemonde.fr/idees/article/2026/09/06/intelligence-artificielle-une-rupture-pourrait-intervenir-si-les-modeles-devenaient-eux-memes-capables-d-accelerer-leur-propre-progression_6767376_3232.html",
-          "date": "2026-09-06",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Monde.fr",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "technology",
-      "topic_label": "AI & technology",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 83
-    },
-    {
-      "key": "event:03d6b027-28b5-4e3f-8636-4d9d13f6f2ff",
-      "event_id": "03d6b027-28b5-4e3f-8636-4d9d13f6f2ff",
-      "kind": "news",
-      "slug": "development-03d6b027-28b5-4e3f-8636-4d9d13f6f2ff",
-      "path": "story/development-03d6b027-28b5-4e3f-8636-4d9d13f6f2ff/index.html",
-      "headline": "A Caution About Artificial Intelligence",
-      "original_headline": "A Caution About Artificial Intelligence",
-      "deck": "Reporting from The ClassicCars.com Journal. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "The ClassicCars.com Journal",
-          "headline": "A Caution About Artificial Intelligence",
-          "url": "https://journal.classiccars.com/2026/09/06/a-caution-about-artificial-intelligence",
-          "date": "2026-09-06",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "The ClassicCars.com Journal",
-      "date": "2026-09-06",
-      "display_date": "6 Sep 2026",
-      "markets": [
-        "CA",
-        "GB",
-        "US"
-      ],
-      "market_label": "Canada · United Kingdom · United States",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 72
+      "daily_rank": 66
     },
     {
       "key": "event:eeebe01b-abfb-40cb-ab8d-590ba175bf69",
@@ -2557,56 +2163,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 63
-    },
-    {
-      "key": "event:e5d2be95-5396-4dc4-9327-38500e6d9eae",
-      "event_id": "e5d2be95-5396-4dc4-9327-38500e6d9eae",
-      "kind": "news",
-      "slug": "development-e5d2be95-5396-4dc4-9327-38500e6d9eae",
-      "path": "story/development-e5d2be95-5396-4dc4-9327-38500e6d9eae/index.html",
-      "headline": "When Artificial Intelligence Invites Itself into Your Glass",
-      "original_headline": "When Artificial Intelligence Invites Itself into Your Glass",
-      "deck": "Reporting from Le Devoir. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Devoir",
-          "headline": "When Artificial Intelligence Invites Itself into Your Glass",
-          "url": "https://www.ledevoir.com/plaisirs/vin/1005926/quand-intelligence-artificielle-invite-votre-verre",
-          "date": "2026-09-05",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Devoir",
-      "date": "2026-09-05",
-      "display_date": "5 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 93
+      "daily_rank": 46
     },
     {
       "key": "event:de21aed2-e74b-49b1-90b9-5deedb0e3fcf",
@@ -2655,7 +2212,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 26
+      "daily_rank": 36
     },
     {
       "key": "event:d9cba3eb-4b9f-4ac9-a024-7d9939c77c9e",
@@ -2704,7 +2261,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 48
+      "daily_rank": 38
     },
     {
       "key": "event:d37b2be0-9d2c-4153-8d11-8835ca3412fa",
@@ -2753,7 +2310,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 111
+      "daily_rank": 80
     },
     {
       "key": "event:a81f4d37-bee4-4b0c-81b2-6754d03a2a86",
@@ -2802,7 +2359,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 101
+      "daily_rank": 70
     },
     {
       "key": "event:8ca1d082-3d5a-45a9-bd74-b3b4567649f1",
@@ -2851,7 +2408,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 58
+      "daily_rank": 42
     },
     {
       "key": "event:774fc675-1a43-4d20-8128-5f606d0d70b9",
@@ -2900,7 +2457,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 120
+      "daily_rank": 74
     },
     {
       "key": "event:3a4752e6-f707-49c4-9dc2-ddaca4acd615",
@@ -2908,17 +2465,14 @@
       "kind": "news",
       "slug": "development-3a4752e6-f707-49c4-9dc2-ddaca4acd615",
       "path": "story/development-3a4752e6-f707-49c4-9dc2-ddaca4acd615/index.html",
-      "headline": "Universidad de Guadalajara highlights AI's positive impact on entrepreneurship",
+      "headline": "The Innovate Forum highlights the impact of artificial intelligence on entrepreneurship.",
       "original_headline": "The Innovate Forum highlights the impact of artificial intelligence on entrepreneurship.",
-      "deck": "The Universidad de Guadalajara discusses how AI tools are being used to support entrepreneurship and innovation.",
-      "what_happened": "At the Innovate Forum 2024, Universidad de Guadalajara highlighted how AI tools are being used to support entrepreneurship and innovation. The university's UCEI unit discussed how AI can stimulate creativity and innovation, with examples like ChatGPT and chatbots like Chatbase, ManyChat, and Landbot. The forum also addressed the importance of legal and ethical considerations in AI use for entrepreneurship.",
-      "why_it_matters": "The use of AI in entrepreneurship can lead to increased efficiency, creativity, and innovation. However, it is important to consider the legal and ethical implications of using AI tools in business.",
-      "body_paragraphs": [
-        "The Universidad de Guadalajara's UCEI unit discussed how AI can stimulate creativity and innovation in entrepreneurship. The unit's director, Gabriela Villanueva Lomelí, emphasized the importance of using AI tools to support creativity and innovation in students and teachers. She also highlighted the importance of clear instructions when using AI tools like ChatGPT to ensure accurate and useful information for businesses.",
-        "The UCEI unit also discussed how AI can be used to organize, manage, and plan businesses. Chatbots like Chatbase, ManyChat, and Landbot were highlighted as tools that can automate processes and improve efficiency for businesses with limited resources. The unit's professor, Aurora Araceli Carbajal Silva, emphasized the importance of these tools in improving customer service in clinics and small businesses."
-      ],
-      "for_humans": "AI tools can help entrepreneurs by stimulating creativity and innovation, but it is important to consider the legal and ethical implications of using AI in business.",
-      "for_ai": "AI tools can be used to support entrepreneurship by stimulating creativity and innovation, but it is important to consider the legal and ethical implications of using AI in business.",
+      "deck": "Reporting from Universidad de Guadalajara. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The university is gaining access to AI tools that support entrepreneurship and innovation.",
+      "for_ai": "The AI tools are being used to support entrepreneurship and innovation.",
       "human_direction": "gain",
       "ai_direction": "gain",
       "human_label": "Benefits reported",
@@ -2945,55 +2499,6 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
-      "claim_status": "study",
-      "limitation": "The study is based on the Universidad de Guadalajara's Innovate Forum 2024 and does not include a broader sample or survey data.",
-      "has_editorial": true,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 100
-    },
-    {
-      "key": "event:30832275-2860-4e72-bad3-24d9bc043dcb",
-      "event_id": "30832275-2860-4e72-bad3-24d9bc043dcb",
-      "kind": "news",
-      "slug": "development-30832275-2860-4e72-bad3-24d9bc043dcb",
-      "path": "story/development-30832275-2860-4e72-bad3-24d9bc043dcb/index.html",
-      "headline": "AI Blows (a bit) on the Return",
-      "original_headline": "AI Blows (a bit) on the Return",
-      "deck": "Reporting from Le Devoir. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Devoir",
-          "headline": "AI Blows (a bit) on the Return",
-          "url": "https://www.ledevoir.com/opinion/chroniques/1006727/ia-souffle-peu-rentree",
-          "date": "2026-09-05",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Devoir",
-      "date": "2026-09-05",
-      "display_date": "5 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
       "summary_basis": "Publisher headline",
       "claim_status": "reporting",
       "limitation": "",
@@ -3001,56 +2506,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 92
-    },
-    {
-      "key": "event:0ef85c02-5f7e-43ff-af8d-649872eac9f3",
-      "event_id": "0ef85c02-5f7e-43ff-af8d-649872eac9f3",
-      "kind": "news",
-      "slug": "development-0ef85c02-5f7e-43ff-af8d-649872eac9f3",
-      "path": "story/development-0ef85c02-5f7e-43ff-af8d-649872eac9f3/index.html",
-      "headline": "New viruses created by artificial intelligence",
-      "original_headline": "New viruses created by artificial intelligence",
-      "deck": "Reporting from Mediapart. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Mediapart",
-          "headline": "New viruses created by artificial intelligence",
-          "url": "https://www.mediapart.fr/journal/culture-et-idees/050926/des-nouveaux-virus-fabriques-par-l-intelligence-artificielle",
-          "date": "2026-09-05",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Mediapart",
-      "date": "2026-09-05",
-      "display_date": "5 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 65
+      "daily_rank": 56
     },
     {
       "key": "paper:af880433876f4e2e2ebf458c",
@@ -3462,7 +2918,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 109
+      "daily_rank": 78
     },
     {
       "key": "event:fb3a9764-c7b4-4cfe-b262-59390f0a073d",
@@ -3511,109 +2967,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 21
-    },
-    {
-      "key": "event:f26d3127-52e2-4890-9966-4a8927ced43c",
-      "event_id": "f26d3127-52e2-4890-9966-4a8927ced43c",
-      "kind": "news",
-      "slug": "development-f26d3127-52e2-4890-9966-4a8927ced43c",
-      "path": "story/development-f26d3127-52e2-4890-9966-4a8927ced43c/index.html",
-      "headline": "The generative AI learning penalty in secondary school",
-      "original_headline": "The generative AI learning penalty in secondary school",
-      "deck": "Reporting from CEPR. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "CEPR",
-          "headline": "The generative AI learning penalty in secondary school",
-          "url": "https://cepr.org/voxeu/columns/generative-ai-learning-penalty-secondary-school",
-          "date": "2026-09-04",
-          "language": "en"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "CEPR",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CA",
-        "GB"
-      ],
-      "market_label": "Canada · United Kingdom",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 56
-    },
-    {
-      "key": "event:ed2de16b-eddd-45ee-88e0-412f82075580",
-      "event_id": "ed2de16b-eddd-45ee-88e0-412f82075580",
-      "kind": "news",
-      "slug": "development-ed2de16b-eddd-45ee-88e0-412f82075580",
-      "path": "story/development-ed2de16b-eddd-45ee-88e0-412f82075580/index.html",
-      "headline": "AI Photos Raise Real Estate Concerns",
-      "original_headline": "Deceptive Photos | Artificial Intelligence Enters Real Estate Brokerage Sites",
-      "deck": "A new report highlights the use of AI-generated images in real estate, raising questions about their accuracy and impact on buyers.",
-      "what_happened": "AI-generated images of homes are increasingly used in real estate listings, but some of these images do not accurately represent the actual condition of the homes. This has led to concerns among buyers and real estate professionals about the reliability of these images. The use of AI in this context is still in its early stages, and there is no clear consensus on how to regulate its use.",
-      "why_it_matters": "The use of AI-generated images in real estate could have significant implications for buyers, as they may not accurately represent the actual condition of the homes. This could lead to misleading information and potential financial losses for buyers. Additionally, the use of AI in this context raises questions about the role of human judgment in real estate transactions.",
-      "body_paragraphs": [
-        "The use of AI-generated images in real estate is a growing trend, with some real estate agents using these images to attract buyers. However, these images may not accurately represent the actual condition of the homes. This has led to concerns among buyers and real estate professionals about the reliability of these images. The use of AI in this context is still in its early stages, and there is no clear consensus on how to regulate its use.",
-        "The potential impact of AI-generated images on real estate transactions is significant. Buyers may be misled by these images, which do not accurately represent the actual condition of the homes. This could lead to financial losses for buyers and potential legal issues for real estate agents. Additionally, the use of AI in this context raises questions about the role of human judgment in real estate transactions."
-      ],
-      "for_humans": "Buyers may be misled by AI-generated images of homes, which do not accurately represent the actual condition of the homes.",
-      "for_ai": "AI-generated images of homes are being used in real estate listings, but there is no clear consensus on how to regulate their use.",
-      "human_direction": "none",
-      "ai_direction": "none",
-      "human_label": "No direction stated",
-      "ai_label": "No direction stated",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "98.5 Montréal",
-          "headline": "Deceptive Photos | Artificial Intelligence Enters Real Estate Brokerage Sites",
-          "url": "https://www.985fm.ca/audio/799805/l-intelligence-artificielle-s-invite-dans-les-sites-de-courtage-immobilier",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "98.5 Montréal",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
-      "claim_status": "study",
-      "limitation": "The study does not provide a comprehensive analysis of the impact of AI-generated images on real estate transactions. It is possible that the use of AI-generated images has a more significant impact on certain types of real estate transactions than others. Additionally, the study does not provide a clear consensus on how to regulate the use of AI-generated images in real estate transactions.",
-      "has_editorial": true,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 105
+      "daily_rank": 32
     },
     {
       "key": "event:e5795415-71b8-4100-a353-48946f22632c",
@@ -3662,255 +3016,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 98
-    },
-    {
-      "key": "event:e10e8619-5773-4920-8345-e13187705e73",
-      "event_id": "e10e8619-5773-4920-8345-e13187705e73",
-      "kind": "news",
-      "slug": "development-e10e8619-5773-4920-8345-e13187705e73",
-      "path": "story/development-e10e8619-5773-4920-8345-e13187705e73/index.html",
-      "headline": "Pilot project in the metro | Artificial intelligence at STM: \"There is no facial recognition",
-      "original_headline": "Pilot project in the metro | Artificial intelligence at STM: \"There is no facial recognition",
-      "deck": "Reporting from 98.5 Montréal. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human outcome is stated in the evidence.",
-      "for_ai": "The AI system is described as being tested and used for a specific purpose.",
-      "human_direction": "none",
-      "ai_direction": "none",
-      "human_label": "No direction stated",
-      "ai_label": "No direction stated",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "98.5 Montréal",
-          "headline": "Pilot project in the metro | Artificial intelligence at STM: \"There is no facial recognition",
-          "url": "https://www.985fm.ca/audio/799847/intelligence-artificielle-a-la-stm-il-n-y-a-aucune-reconnaissance-faciale",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "98.5 Montréal",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 53
-    },
-    {
-      "key": "event:dc627899-6d70-4509-b41d-8a7f0c9aaac5",
-      "event_id": "dc627899-6d70-4509-b41d-8a7f0c9aaac5",
-      "kind": "news",
-      "slug": "development-dc627899-6d70-4509-b41d-8a7f0c9aaac5",
-      "path": "story/development-dc627899-6d70-4509-b41d-8a7f0c9aaac5/index.html",
-      "headline": "AI in a Fragmenting World: Why 'Connector' Economies Can Still Gain",
-      "original_headline": "AI in a Fragmenting World: Why 'Connector' Economies Can Still Gain",
-      "deck": "Reporting from CEPR. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "CEPR",
-          "headline": "AI in a Fragmenting World: Why 'Connector' Economies Can Still Gain",
-          "url": "https://cepr.org/voxeu/columns/ai-fragmenting-world-why-connector-economies-can-still-gain",
-          "date": "2026-09-04",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "CEPR",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "GB"
-      ],
-      "market_label": "United Kingdom",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 80
-    },
-    {
-      "key": "event:db308be6-8407-48f8-9990-4ddc7cbdb902",
-      "event_id": "db308be6-8407-48f8-9990-4ddc7cbdb902",
-      "kind": "news",
-      "slug": "development-db308be6-8407-48f8-9990-4ddc7cbdb902",
-      "path": "story/development-db308be6-8407-48f8-9990-4ddc7cbdb902/index.html",
-      "headline": "Artificial Intelligence: How AI Spewed Racist Clichés",
-      "original_headline": "Artificial Intelligence: How AI Spewed Racist Clichés",
-      "deck": "Reporting from Le Canard enchaîné. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Canard enchaîné",
-          "headline": "Artificial Intelligence: How AI Spewed Racist Clichés",
-          "url": "https://www.lecanardenchaine.fr/technologie-sciences/54781-comment-l-ia-m-a-debite-des-cliches-racistes",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Canard enchaîné",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 15
-    },
-    {
-      "key": "event:d69cc405-aaec-4ad4-be80-c162bf08a6f1",
-      "event_id": "d69cc405-aaec-4ad4-be80-c162bf08a6f1",
-      "kind": "news",
-      "slug": "development-d69cc405-aaec-4ad4-be80-c162bf08a6f1",
-      "path": "story/development-d69cc405-aaec-4ad4-be80-c162bf08a6f1/index.html",
-      "headline": "AI Overuse Linked to Reduced Critical Thinking",
-      "original_headline": "People who use a lot of AI lose their critical thinking ability.",
-      "deck": "A study suggests that heavy AI use may impair critical thinking, raising concerns about its impact on human cognition.",
-      "what_happened": "A radio interview discussed research indicating that excessive AI use can lead to a decline in critical thinking skills, particularly among students. The interview featured Dr. David Fortin, a neurosurgeon and author, who warned that overreliance on AI could weaken cognitive functions and reduce personal satisfaction. He emphasized the need to use AI as a supportive tool rather than a replacement for human reasoning.",
-      "why_it_matters": "The findings highlight the potential risks of overusing AI in education and daily life, suggesting that reliance on technology may erode essential cognitive abilities. This is particularly concerning for younger users who are more likely to engage with AI tools regularly.",
-      "body_paragraphs": [
-        "The interview discussed a study suggesting that overreliance on AI can lead to a decline in critical thinking skills. Dr. David Fortin, a neurosurgeon and author, explained that excessive use of AI, particularly through platforms like ChatGPT, can cause cognitive atrophy, reducing creativity and mental well-being. He emphasized the importance of using AI as a supportive tool rather than a replacement for human reasoning.",
-        "The study's findings raise concerns about the long-term effects of AI on human cognition. While AI can assist in tasks requiring quick information retrieval, overuse may lead to a decrease in problem-solving skills and independent thinking. This is particularly relevant for students who may become dependent on AI for academic tasks, potentially hindering their ability to think critically."
-      ],
-      "for_humans": "Heavy AI use may reduce critical thinking ability, especially in students, by weakening cognitive functions and decreasing personal satisfaction.",
-      "for_ai": "AI is not shown to be restricted or expanded in the evidence.",
-      "human_direction": "loss",
-      "ai_direction": "none",
-      "human_label": "Downsides reported",
-      "ai_label": "No direction stated",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "98.5 Montréal",
-          "headline": "People who use a lot of AI lose their critical thinking ability.",
-          "url": "https://www.985fm.ca/audio/799740/les-gens-qui-utilisent-beaucoup-l-ia-perdent-en-capacite-de-pensee-critique",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "98.5 Montréal",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
-      "claim_status": "study",
-      "limitation": "The study focuses on students and does not account for the impact of AI on adults or other age groups. Additionally, the research does not provide long-term data on the effects of AI use on cognitive abilities.",
-      "has_editorial": true,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 95
-    },
-    {
-      "key": "event:cdbb1d6b-1dec-4cfa-bad5-e9e669724acd",
-      "event_id": "cdbb1d6b-1dec-4cfa-bad5-e9e669724acd",
-      "kind": "news",
-      "slug": "development-cdbb1d6b-1dec-4cfa-bad5-e9e669724acd",
-      "path": "story/development-cdbb1d6b-1dec-4cfa-bad5-e9e669724acd/index.html",
-      "headline": "Film on Marilyn Monroe: The Director Refused to Use AI",
-      "original_headline": "Film on Marilyn Monroe: The Director Refused to Use AI",
-      "deck": "Reporting from qub.ca. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "qub.ca",
-          "headline": "Film on Marilyn Monroe: The Director Refused to Use AI",
-          "url": "https://www.qub.ca/article/film-sur-marilyn-monroe-la-realisatrice-a-renonce-a-utiliser-l-ia-2131645095",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "qub.ca",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "creativity",
-      "topic_label": "Culture & creativity",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 94
+      "daily_rank": 67
     },
     {
       "key": "event:cce1898b-61a8-4b5d-81ac-f08f2b052c0b",
@@ -3959,7 +3065,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 4
+      "daily_rank": 16
     },
     {
       "key": "event:ccb8f41c-96e0-4993-9260-17382a5faa13",
@@ -4008,7 +3114,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 3
+      "daily_rank": 0
     },
     {
       "key": "event:ca258beb-54a8-40b4-8d3d-dafccfe2bba3",
@@ -4057,105 +3163,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 18
-    },
-    {
-      "key": "event:c58e1ce4-7e9a-4b24-b013-141538839aec",
-      "event_id": "c58e1ce4-7e9a-4b24-b013-141538839aec",
-      "kind": "news",
-      "slug": "development-c58e1ce4-7e9a-4b24-b013-141538839aec",
-      "path": "story/development-c58e1ce4-7e9a-4b24-b013-141538839aec/index.html",
-      "headline": "New York bans artificial intelligence in classrooms until high school",
-      "original_headline": "New York bans artificial intelligence in classrooms until high school",
-      "deck": "Reporting from Le Figaro. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Figaro",
-          "headline": "New York bans artificial intelligence in classrooms until high school",
-          "url": "https://www.lefigaro.fr/international/new-york-interdit-l-intelligence-artificielle-en-classe-jusqu-au-lycee-20260904",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Figaro",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 40
-    },
-    {
-      "key": "event:c44c5cdd-0b1b-4e6e-9f0c-c31d535340b0",
-      "event_id": "c44c5cdd-0b1b-4e6e-9f0c-c31d535340b0",
-      "kind": "news",
-      "slug": "development-c44c5cdd-0b1b-4e6e-9f0c-c31d535340b0",
-      "path": "story/development-c44c5cdd-0b1b-4e6e-9f0c-c31d535340b0/index.html",
-      "headline": "LAUSD has blocked students from generative AI. How will it teach them about it?",
-      "original_headline": "LAUSD has blocked students from generative AI. How will it teach them about it?",
-      "deck": "Reporting from dailynews.com. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "dailynews.com",
-          "headline": "LAUSD has blocked students from generative AI. How will it teach them about it?",
-          "url": "https://www.dailynews.com/2026/09/03/lausd-has-blocked-students-from-generative-ai-how-will-it-teach-them-about-it",
-          "date": "2026-09-04",
-          "language": "en"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "dailynews.com",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "US"
-      ],
-      "market_label": "United States",
-      "topic": "work",
-      "topic_label": "Work & skills",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 67
+      "daily_rank": 15
     },
     {
       "key": "event:bedfedab-eb0d-4f88-bb4c-7e75b2d10a56",
@@ -4204,7 +3212,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 8
+      "daily_rank": 5
     },
     {
       "key": "event:b3cb89ce-9df0-4942-af91-84c91c948507",
@@ -4253,57 +3261,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 38
-    },
-    {
-      "key": "event:ab9b1f67-3f71-43b0-abc7-c134a2010a28",
-      "event_id": "ab9b1f67-3f71-43b0-abc7-c134a2010a28",
-      "kind": "news",
-      "slug": "development-ab9b1f67-3f71-43b0-abc7-c134a2010a28",
-      "path": "story/development-ab9b1f67-3f71-43b0-abc7-c134a2010a28/index.html",
-      "headline": "Artificial intelligence will not save the audiovisual industry; it risks destroying it.",
-      "original_headline": "Artificial intelligence will not save the audiovisual industry; it risks destroying it.",
-      "deck": "Reporting from Le Monde.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Monde.fr",
-          "headline": "Artificial intelligence will not save the audiovisual industry; it risks destroying it.",
-          "url": "https://www.lemonde.fr/idees/article/2026/09/04/l-intelligence-artificielle-ne-sauvera-pas-la-production-audiovisuelle-elle-risque-de-l-achever_6765781_3232.html",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Monde.fr",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CA",
-        "FR"
-      ],
-      "market_label": "Canada · France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 86
+      "daily_rank": 30
     },
     {
       "key": "event:aa0599ea-4248-4e2b-b73f-ebf9216341ab",
@@ -4352,7 +3310,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 27
+      "daily_rank": 37
     },
     {
       "key": "event:95f21dd4-08db-414a-8056-6878e77489df",
@@ -4401,7 +3359,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 118
+      "daily_rank": 87
     },
     {
       "key": "event:8f232022-6fa8-4234-8fba-d11588add8f8",
@@ -4451,7 +3409,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 113
+      "daily_rank": 82
     },
     {
       "key": "event:8e3a6b24-79ce-4f43-bf46-88d823051eab",
@@ -4500,56 +3458,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 9
-    },
-    {
-      "key": "event:7d8027f3-2423-42ea-b765-4ec49cd8d16b",
-      "event_id": "7d8027f3-2423-42ea-b765-4ec49cd8d16b",
-      "kind": "news",
-      "slug": "development-7d8027f3-2423-42ea-b765-4ec49cd8d16b",
-      "path": "story/development-7d8027f3-2423-42ea-b765-4ec49cd8d16b/index.html",
-      "headline": "The third “Xingzhi Cup” National Artificial Intelligence Innovation Application Competition was launched in Longgang – Government Affairs Updates",
-      "original_headline": "The third “Xingzhi Cup” National Artificial Intelligence Innovation Application Competition was launched in Longgang – Government Affairs Updates",
-      "deck": "Reporting from lg.gov.cn. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "lg.gov.cn",
-          "headline": "The third “Xingzhi Cup” National Artificial Intelligence Innovation Application Competition was launched in Longgang – Government Affairs Updates",
-          "url": "https://www.lg.gov.cn/xxgk/xwzx/zwdt/content/post_12967039.html",
-          "date": "2026-09-04",
-          "language": "zh"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "lg.gov.cn",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "CN"
-      ],
-      "market_label": "China",
-      "topic": "policy",
-      "topic_label": "Rules & rights",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 78
+      "daily_rank": 21
     },
     {
       "key": "event:78c2f5af-e751-412a-9344-cc485fa2863b",
@@ -4598,7 +3507,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 112
+      "daily_rank": 81
     },
     {
       "key": "event:732f0944-c89f-4789-b57b-03eaa38945a1",
@@ -4647,7 +3556,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 19
+      "daily_rank": 31
     },
     {
       "key": "event:71a63729-a029-4530-babf-a6a31142d7c1",
@@ -4696,7 +3605,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 116
+      "daily_rank": 85
     },
     {
       "key": "event:6ce3c0c6-be5d-4d1f-9652-cbdec70559a6",
@@ -4745,7 +3654,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 122
+      "daily_rank": 2
     },
     {
       "key": "event:64fa70e7-454a-4c16-8f89-068f25115a81",
@@ -4795,7 +3704,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 11
+      "daily_rank": 23
     },
     {
       "key": "event:633b70d3-3fef-4736-a3a6-2bb088b4ae82",
@@ -4844,7 +3753,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 22
+      "daily_rank": 33
     },
     {
       "key": "event:52997965-d132-4493-b555-6119c7b73658",
@@ -4893,7 +3802,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 115
+      "daily_rank": 69
     },
     {
       "key": "event:3bef1ee4-73a4-40a9-ae78-aebe241e5313",
@@ -4942,7 +3851,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 32
+      "daily_rank": 41
     },
     {
       "key": "event:3a88e517-2b7c-4593-b18e-b67998684eba",
@@ -4991,7 +3900,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 2
+      "daily_rank": 14
     },
     {
       "key": "event:39d21944-7e6d-431f-aae2-e208d49a3523",
@@ -5040,7 +3949,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 110
+      "daily_rank": 64
     },
     {
       "key": "event:2ccb707e-963e-45cb-9208-31f203cfb46b",
@@ -5089,7 +3998,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 13
+      "daily_rank": 10
     },
     {
       "key": "event:1a8dce4b-a641-4a3b-8139-a9a8b5aa2e27",
@@ -5138,56 +4047,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 7
-    },
-    {
-      "key": "event:1980db5b-8fc2-43d7-91c7-2f51ae1adf8c",
-      "event_id": "1980db5b-8fc2-43d7-91c7-2f51ae1adf8c",
-      "kind": "news",
-      "slug": "development-1980db5b-8fc2-43d7-91c7-2f51ae1adf8c",
-      "path": "story/development-1980db5b-8fc2-43d7-91c7-2f51ae1adf8c/index.html",
-      "headline": "5 Things Doctors Should Know About Medical AI Regulation",
-      "original_headline": "5 Things Doctors Should Know About Medical AI Regulation",
-      "deck": "Reporting from Medscape. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Medscape",
-          "headline": "5 Things Doctors Should Know About Medical AI Regulation",
-          "url": "https://www.medscape.com/viewarticle/5-things-doctors-should-know-about-medical-ai-regulation-2026a1000wxy",
-          "date": "2026-09-04",
-          "language": "en"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Medscape",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "US"
-      ],
-      "market_label": "United States",
-      "topic": "policy",
-      "topic_label": "Rules & rights",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 52
+      "daily_rank": 19
     },
     {
       "key": "event:17cc1033-88ee-4f1b-b925-f12389dc4371",
@@ -5236,7 +4096,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 43
+      "daily_rank": 34
     },
     {
       "key": "event:14a3e4f9-2082-4a66-8388-4769f458914c",
@@ -5285,56 +4145,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 68
-    },
-    {
-      "key": "event:0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e",
-      "event_id": "0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e",
-      "kind": "news",
-      "slug": "development-0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e",
-      "path": "story/development-0b1cd3e8-e2ed-4b93-9afc-9a96e9cb611e/index.html",
-      "headline": "Another big school district bans generative AI, this time for all students",
-      "original_headline": "Another big school district bans generative AI, this time for all students",
-      "deck": "Reporting from The Washington Post. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "The Washington Post",
-          "headline": "Another big school district bans generative AI, this time for all students",
-          "url": "https://www.washingtonpost.com/education/2026/09/03/another-big-school-district-bans-generative-ai-this-time-all-students",
-          "date": "2026-09-04",
-          "language": "en"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "The Washington Post",
-      "date": "2026-09-04",
-      "display_date": "4 Sep 2026",
-      "markets": [
-        "US"
-      ],
-      "market_label": "United States",
-      "topic": "work",
-      "topic_label": "Work & skills",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 57
+      "daily_rank": 49
     },
     {
       "key": "event:0600999d-ccb9-4027-8ae9-5be206859e05",
@@ -5383,7 +4194,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 28
+      "daily_rank": 20
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -5803,7 +4614,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 129
+      "daily_rank": 9
     },
     {
       "key": "event:f43ef28e-4940-4f12-a103-dec4ccd6a947",
@@ -5852,105 +4663,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 33
-    },
-    {
-      "key": "event:e8493da9-a236-4682-a671-622201325f49",
-      "event_id": "e8493da9-a236-4682-a671-622201325f49",
-      "kind": "news",
-      "slug": "development-e8493da9-a236-4682-a671-622201325f49",
-      "path": "story/development-e8493da9-a236-4682-a671-622201325f49/index.html",
-      "headline": "Shipping’s AI challenge is no longer artificial intelligence. It’s data",
-      "original_headline": "Shipping’s AI challenge is no longer artificial intelligence. It’s data",
-      "deck": "Reporting from Lloyd's List. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Lloyd's List",
-          "headline": "Shipping’s AI challenge is no longer artificial intelligence. It’s data",
-          "url": "https://www.lloydslist.com/LL1158355/Shippings-AI-challenge-is-no-longer-artificial-intelligence-Its-data",
-          "date": "2026-09-03",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Lloyd's List",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "GB"
-      ],
-      "market_label": "United Kingdom",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 51
-    },
-    {
-      "key": "event:e1d8387d-cedc-44d8-8532-cf6df54c38f6",
-      "event_id": "e1d8387d-cedc-44d8-8532-cf6df54c38f6",
-      "kind": "news",
-      "slug": "development-e1d8387d-cedc-44d8-8532-cf6df54c38f6",
-      "path": "story/development-e1d8387d-cedc-44d8-8532-cf6df54c38f6/index.html",
-      "headline": "The Battle for Serious AI Regulation Has Secured a Major Win in Massachusetts",
-      "original_headline": "The Battle for Serious AI Regulation Has Secured a Major Win in Massachusetts",
-      "deck": "Reporting from thenation.com. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "thenation.com",
-          "headline": "The Battle for Serious AI Regulation Has Secured a Major Win in Massachusetts",
-          "url": "https://www.thenation.com?post_type=article&p=608600",
-          "date": "2026-09-03",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "thenation.com",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "US"
-      ],
-      "market_label": "United States",
-      "topic": "policy",
-      "topic_label": "Rules & rights",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 62
+      "daily_rank": 25
     },
     {
       "key": "event:dad9cc10-664d-4fbc-8c38-e7bc54edd0cd",
@@ -6000,7 +4713,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 123
+      "daily_rank": 3
     },
     {
       "key": "event:d8688fe5-b296-4348-8bcc-76e4049fe1d2",
@@ -6049,7 +4762,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 124
+      "daily_rank": 4
     },
     {
       "key": "event:d2e3da8c-5231-459c-9744-f3203ec75193",
@@ -6098,56 +4811,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 42
-    },
-    {
-      "key": "event:cd48bb1a-8114-4ed4-8383-33043275bbc6",
-      "event_id": "cd48bb1a-8114-4ed4-8383-33043275bbc6",
-      "kind": "news",
-      "slug": "development-cd48bb1a-8114-4ed4-8383-33043275bbc6",
-      "path": "story/development-cd48bb1a-8114-4ed4-8383-33043275bbc6/index.html",
-      "headline": "Culture History of AI\" addresses artificial intelligence as a global social phenomenon and an anthropological revolution",
-      "original_headline": "Culture History of AI\" addresses artificial intelligence as a global social phenomenon and an anthropological revolution",
-      "deck": "Reporting from Le Monde.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Monde.fr",
-          "headline": "Culture History of AI\" addresses artificial intelligence as a global social phenomenon and an anthropological revolution",
-          "url": "https://www.lemonde.fr/livres/article/2026/09/03/histoire-culturelle-de-l-ia-aborde-l-intelligence-artificielle-comme-un-phenomene-social-global-et-une-revolution-anthropologique_6764959_3260.html",
-          "date": "2026-09-03",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Monde.fr",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "creativity",
-      "topic_label": "Culture & creativity",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 25
+      "daily_rank": 48
     },
     {
       "key": "event:c83cdfff-7de8-4905-925e-8d3874f07929",
@@ -6196,107 +4860,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 24
-    },
-    {
-      "key": "event:c45780fc-95f0-479a-a994-ff3c1b463678",
-      "event_id": "c45780fc-95f0-479a-a994-ff3c1b463678",
-      "kind": "news",
-      "slug": "development-c45780fc-95f0-479a-a994-ff3c1b463678",
-      "path": "story/development-c45780fc-95f0-479a-a994-ff3c1b463678/index.html",
-      "headline": "A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence",
-      "original_headline": "A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence",
-      "deck": "Reporting from Nature. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Nature",
-          "headline": "A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence",
-          "url": "https://www.nature.com/articles/s41746-026-03155-7",
-          "date": "2026-09-03",
-          "language": "en"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Nature",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "CA",
-        "GB",
-        "US"
-      ],
-      "market_label": "Canada · United Kingdom · United States",
-      "topic": "work",
-      "topic_label": "Work & skills",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 84
-    },
-    {
-      "key": "event:bb8d8aef-ad4f-46f9-8620-399124314c19",
-      "event_id": "bb8d8aef-ad4f-46f9-8620-399124314c19",
-      "kind": "news",
-      "slug": "development-bb8d8aef-ad4f-46f9-8620-399124314c19",
-      "path": "story/development-bb8d8aef-ad4f-46f9-8620-399124314c19/index.html",
-      "headline": "Artificial Intelligence: The model can operate entirely on its own with a computer and hack sophisticated computer systems, OpenAI launches GPT-6",
-      "original_headline": "Artificial Intelligence: The model can operate entirely on its own with a computer and hack sophisticated computer systems, OpenAI launches GPT-6",
-      "deck": "Reporting from ladepeche.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "ladepeche.fr",
-          "headline": "Artificial Intelligence: The model can operate entirely on its own with a computer and hack sophisticated computer systems, OpenAI launches GPT-6",
-          "url": "https://www.ladepeche.fr/2026/09/03/intelligence-artificielle-le-modele-est-capable-de-se-servir-tout-seul-dun-ordinateur-et-de-pirater-des-systemes-informatiques-sophistiques-openai-13534602.php",
-          "date": "2026-09-03",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "ladepeche.fr",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "technology",
-      "topic_label": "AI & technology",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 30
+      "daily_rank": 35
     },
     {
       "key": "event:ad2792d4-804f-401d-972f-ef4fa6e85538",
@@ -6345,7 +4909,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 64
+      "daily_rank": 59
     },
     {
       "key": "event:aaaa057a-4473-46a3-9ff6-66082481f5c7",
@@ -6394,7 +4958,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 34
+      "daily_rank": 43
     },
     {
       "key": "event:99fb997a-527c-45ff-b9ea-fc17b06e1173",
@@ -6443,56 +5007,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 81
-    },
-    {
-      "key": "event:773354b6-1079-450e-8e5e-3935431a225b",
-      "event_id": "773354b6-1079-450e-8e5e-3935431a225b",
-      "kind": "news",
-      "slug": "development-773354b6-1079-450e-8e5e-3935431a225b",
-      "path": "story/development-773354b6-1079-450e-8e5e-3935431a225b/index.html",
-      "headline": "Artificial Intelligence for the Well-being of Pigs",
-      "original_headline": "Artificial Intelligence for the Well-being of Pigs",
-      "deck": "Reporting from La France Agricole. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "La France Agricole",
-          "headline": "Artificial Intelligence for the Well-being of Pigs",
-          "url": "https://www.lafranceagricole.fr/porcin/article/902972/l-intelligence-artificielle-au-service-du-bien-etre",
-          "date": "2026-09-04",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "La France Agricole",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 35
+      "daily_rank": 58
     },
     {
       "key": "event:71fecc86-aff2-4922-adf1-3629c78740a4",
@@ -6550,57 +5065,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 41
-    },
-    {
-      "key": "event:6a1bf0d1-89d8-446f-a87e-981516305427",
-      "event_id": "6a1bf0d1-89d8-446f-a87e-981516305427",
-      "kind": "news",
-      "slug": "development-6a1bf0d1-89d8-446f-a87e-981516305427",
-      "path": "story/development-6a1bf0d1-89d8-446f-a87e-981516305427/index.html",
-      "headline": "The Two-Year Anniversary of the Framework Convention: A Conference to Promote Trustworthy AI",
-      "original_headline": "The Two-Year Anniversary of the Framework Convention: A Conference to Promote Trustworthy AI",
-      "deck": "Reporting from coe.int. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "coe.int",
-          "headline": "The Two-Year Anniversary of the Framework Convention: A Conference to Promote Trustworthy AI",
-          "url": "https://www.coe.int/fr/web/artificial-intelligence/-/framework-convention-marks-two-years-anniversary-conference-to-advance-trustworthy-ai",
-          "date": "2026-09-03",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "coe.int",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "CA",
-        "FR"
-      ],
-      "market_label": "Canada · France",
-      "topic": "work",
-      "topic_label": "Work & skills",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 75
+      "daily_rank": 27
     },
     {
       "key": "event:577b8602-94a7-4de8-ac26-a656ca2aadbe",
@@ -6651,56 +5116,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 128
-    },
-    {
-      "key": "event:543da78e-6d3d-4071-94d2-02eeb40b0843",
-      "event_id": "543da78e-6d3d-4071-94d2-02eeb40b0843",
-      "kind": "news",
-      "slug": "development-543da78e-6d3d-4071-94d2-02eeb40b0843",
-      "path": "story/development-543da78e-6d3d-4071-94d2-02eeb40b0843/index.html",
-      "headline": "Hugging Face, a French artificial intelligence startup, defends its acquisition by the American Nvidia in the name of \"open source.",
-      "original_headline": "Hugging Face, a French artificial intelligence startup, defends its acquisition by the American Nvidia in the name of \"open source.",
-      "deck": "Reporting from Le Monde.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Monde.fr",
-          "headline": "Hugging Face, a French artificial intelligence startup, defends its acquisition by the American Nvidia in the name of \"open source.",
-          "url": "https://www.lemonde.fr/economie/article/2026/09/03/fondee-par-des-francais-la-start-up-d-intelligence-artificielle-hugging-face-defend-son-rachat-par-l-americain-nvidia-au-nom-de-l-open-source_6765217_3234.html",
-          "date": "2026-09-03",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Le Monde.fr",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 88
+      "daily_rank": 8
     },
     {
       "key": "event:53af177d-e4a1-4d76-8402-d65b41761b74",
@@ -6749,56 +5165,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 85
-    },
-    {
-      "key": "event:4c5ce73c-c3be-4a83-a144-40f53e9e66e4",
-      "event_id": "4c5ce73c-c3be-4a83-a144-40f53e9e66e4",
-      "kind": "news",
-      "slug": "development-4c5ce73c-c3be-4a83-a144-40f53e9e66e4",
-      "path": "story/development-4c5ce73c-c3be-4a83-a144-40f53e9e66e4/index.html",
-      "headline": "The race to artificial intelligence is dragging down the U.S. trade deficit",
-      "original_headline": "The race to artificial intelligence is dragging down the U.S. trade deficit",
-      "deck": "Reporting from Les Echos. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Les Echos",
-          "headline": "The race to artificial intelligence is dragging down the U.S. trade deficit",
-          "url": "https://www.lesechos.fr/monde/ameriques/la-course-a-lintelligence-artificielle-fait-deraper-le-deficit-commercial-americain-2249681",
-          "date": "2026-09-03",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Les Echos",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 20
+      "daily_rank": 60
     },
     {
       "key": "event:41be96d7-4ba8-492e-bd0c-d9d9880b96ac",
@@ -6847,7 +5214,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 119
+      "daily_rank": 88
     },
     {
       "key": "event:3af20206-acab-420f-b52d-885f65bcec17",
@@ -6897,7 +5264,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 107
+      "daily_rank": 76
     },
     {
       "key": "event:38d9e439-8ce2-4560-8d2c-50a2d09e563b",
@@ -6946,7 +5313,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 17
+      "daily_rank": 29
     },
     {
       "key": "event:22cd9c7b-4d5d-4569-9331-5249c8d6e865",
@@ -7010,7 +5377,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 5
+      "daily_rank": 17
     },
     {
       "key": "event:1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba",
@@ -7059,56 +5426,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 12
-    },
-    {
-      "key": "event:17ab9564-5a2b-4731-bcc6-10512c2f5c13",
-      "event_id": "17ab9564-5a2b-4731-bcc6-10512c2f5c13",
-      "kind": "news",
-      "slug": "development-17ab9564-5a2b-4731-bcc6-10512c2f5c13",
-      "path": "story/development-17ab9564-5a2b-4731-bcc6-10512c2f5c13/index.html",
-      "headline": "The Factory of the World - Racing to Artificial Intelligence: Eat or Be Eaten",
-      "original_headline": "The Factory of the World - Racing to Artificial Intelligence: Eat or Be Eaten",
-      "deck": "Reporting from rfi.fr. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "rfi.fr",
-          "headline": "The Factory of the World - Racing to Artificial Intelligence: Eat or Be Eaten",
-          "url": "https://www.rfi.fr/fr/podcasts/la-fabrique-du-monde/20260903-course-%C3%A0-l-intelligence-artificielle-manger-ou-%C3%AAtre-mang%C3%A9",
-          "date": "2026-09-03",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "rfi.fr",
-      "date": "2026-09-03",
-      "display_date": "3 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 70
+      "daily_rank": 24
     },
     {
       "key": "event:0bd5c6f7-5694-49f2-b1c8-f49a12941302",
@@ -7157,7 +5475,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 36
+      "daily_rank": 44
     },
     {
       "key": "event:fd27a296-a477-4b7b-a423-0abd44c8203e",
@@ -7206,7 +5524,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 106
+      "daily_rank": 75
     },
     {
       "key": "event:d4718180-b6b3-44eb-afd5-c100dab7f1b5",
@@ -7255,7 +5573,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 44
+      "daily_rank": 50
     },
     {
       "key": "event:bd7c60d8-c9f6-4f1c-a37e-854c40fafb80",
@@ -7312,7 +5630,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 127
+      "daily_rank": 7
     },
     {
       "key": "event:ba2ec4bb-2616-4c18-940b-decb4d76a25d",
@@ -7361,7 +5679,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 73
+      "daily_rank": 52
     },
     {
       "key": "event:b975add8-abad-452e-9aa5-320d321c4402",
@@ -7410,7 +5728,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 99
+      "daily_rank": 68
     },
     {
       "key": "event:a2110819-497f-4676-ba83-78b8276636fa",
@@ -7459,7 +5777,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 16
+      "daily_rank": 28
     },
     {
       "key": "event:a1694695-eb25-46b7-bdee-3022e7ec2ed1",
@@ -7508,56 +5826,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 49
-    },
-    {
-      "key": "event:8b3e0b9c-3c16-4c5d-853e-9ec089d31d37",
-      "event_id": "8b3e0b9c-3c16-4c5d-853e-9ec089d31d37",
-      "kind": "news",
-      "slug": "development-8b3e0b9c-3c16-4c5d-853e-9ec089d31d37",
-      "path": "story/development-8b3e0b9c-3c16-4c5d-853e-9ec089d31d37/index.html",
-      "headline": "Anthropic hires architect of UK AI policy as MPs warn of 'clear conflict of interest'",
-      "original_headline": "Anthropic hires architect of UK AI policy as MPs warn of 'clear conflict of interest'",
-      "deck": "Reporting from The Register. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "The Register",
-          "headline": "Anthropic hires architect of UK AI policy as MPs warn of 'clear conflict of interest'",
-          "url": "https://www.theregister.com/public-sector/2026/09/02/anthropic-hires-architect-of-uk-ai-policy-as-mps-warn-of-clear-conflict-of-interest/5293903",
-          "date": "2026-09-02",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "The Register",
-      "date": "2026-09-02",
-      "display_date": "2 Sep 2026",
-      "markets": [
-        "GB"
-      ],
-      "market_label": "United Kingdom",
-      "topic": "policy",
-      "topic_label": "Rules & rights",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 61
+      "daily_rank": 53
     },
     {
       "key": "event:725a288e-7870-43da-93de-afbe7e21b957",
@@ -7606,7 +5875,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 29
+      "daily_rank": 39
     },
     {
       "key": "event:6c9295a1-b05b-4460-ae35-f0804f206ae7",
@@ -7657,156 +5926,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 114
-    },
-    {
-      "key": "event:681028a0-2216-4c44-b8e9-27afdfab3643",
-      "event_id": "681028a0-2216-4c44-b8e9-27afdfab3643",
-      "kind": "news",
-      "slug": "development-681028a0-2216-4c44-b8e9-27afdfab3643",
-      "path": "story/development-681028a0-2216-4c44-b8e9-27afdfab3643/index.html",
-      "headline": "US and Big Tech Push for Looser AI Regulations at G20 Meeting",
-      "original_headline": "US and Big Tech Push for Looser AI Regulations at G20 Meeting",
-      "deck": "Reporting from PYMNTS.com. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "PYMNTS.com",
-          "headline": "US and Big Tech Push for Looser AI Regulations at G20 Meeting",
-          "url": "https://www.pymnts.com/news/artificial-intelligence/2026/us-calls-for-relaxed-approach-to-ai-regulation-at-g20-gathering",
-          "date": "2026-09-02",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "PYMNTS.com",
-      "date": "2026-09-02",
-      "display_date": "2 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "policy",
-      "topic_label": "Rules & rights",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 91
-    },
-    {
-      "key": "event:5bf25621-e911-4ba0-bdb7-ccc0140103b5",
-      "event_id": "5bf25621-e911-4ba0-bdb7-ccc0140103b5",
-      "kind": "news",
-      "slug": "development-5bf25621-e911-4ba0-bdb7-ccc0140103b5",
-      "path": "story/development-5bf25621-e911-4ba0-bdb7-ccc0140103b5/index.html",
-      "headline": "Designing Physics Experiments with Artificial Intelligence",
-      "original_headline": "Designing Physics Experiments with Artificial Intelligence",
-      "deck": "Reporting from Nature. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Nature",
-          "headline": "Designing Physics Experiments with Artificial Intelligence",
-          "url": "https://www.nature.com/articles/s41586-026-10898-6",
-          "date": "2026-09-02",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Nature",
-      "date": "2026-09-02",
-      "display_date": "2 Sep 2026",
-      "markets": [
-        "CA",
-        "GB",
-        "US"
-      ],
-      "market_label": "Canada · United Kingdom · United States",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 66
-    },
-    {
-      "key": "event:597361eb-15a8-4428-8b37-5158b8d2f7ee",
-      "event_id": "597361eb-15a8-4428-8b37-5158b8d2f7ee",
-      "kind": "news",
-      "slug": "development-597361eb-15a8-4428-8b37-5158b8d2f7ee",
-      "path": "story/development-597361eb-15a8-4428-8b37-5158b8d2f7ee/index.html",
-      "headline": "The Case of Jean-François Desaulniers | Detecting Artificial Intelligence in the Electoral Campaign in Quebec",
-      "original_headline": "The Case of Jean-François Desaulniers | Detecting Artificial Intelligence in the Electoral Campaign in Quebec",
-      "deck": "Reporting from fm1077.ca. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "No human-side relation is described in the evidence.",
-      "for_ai": "No AI-side relation is described in the evidence.",
-      "human_direction": "none",
-      "ai_direction": "none",
-      "human_label": "No direction stated",
-      "ai_label": "No direction stated",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "fm1077.ca",
-          "headline": "The Case of Jean-François Desaulniers | Detecting Artificial Intelligence in the Electoral Campaign in Quebec",
-          "url": "https://www.fm1077.ca/audio/799319/deceler-l-intelligence-artificielle-dans-la-campagne-electorale-au-quebec",
-          "date": "2026-09-02",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "fm1077.ca",
-      "date": "2026-09-02",
-      "display_date": "2 Sep 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 23
+      "daily_rank": 83
     },
     {
       "key": "event:465b44bd-5916-49ac-b41c-fba8eade1e4e",
@@ -7855,56 +5975,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 37
-    },
-    {
-      "key": "event:2ef9455f-3a42-47e7-b098-3a8bb7bb0f6c",
-      "event_id": "2ef9455f-3a42-47e7-b098-3a8bb7bb0f6c",
-      "kind": "news",
-      "slug": "development-2ef9455f-3a42-47e7-b098-3a8bb7bb0f6c",
-      "path": "story/development-2ef9455f-3a42-47e7-b098-3a8bb7bb0f6c/index.html",
-      "headline": "How does Saint-Gobain use artificial intelligence?",
-      "original_headline": "How does Saint-Gobain use artificial intelligence?",
-      "deck": "Reporting from Batiactu. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Batiactu",
-          "headline": "How does Saint-Gobain use artificial intelligence?",
-          "url": "https://www.batiactu.com/edito/comment-saint-gobain-utilise-t-il-intelligence-artificielle-75227.php",
-          "date": "2026-09-02",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Batiactu",
-      "date": "2026-09-02",
-      "display_date": "2 Sep 2026",
-      "markets": [
-        "FR"
-      ],
-      "market_label": "France",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 50
+      "daily_rank": 45
     },
     {
       "key": "event:2e775ad5-0983-4568-a9bc-d3a72dc003a8",
@@ -7953,7 +6024,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 104
+      "daily_rank": 73
     },
     {
       "key": "event:19b81d33-4e8e-4ae1-8d2f-c519907aac89",
@@ -8002,7 +6073,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 74
+      "daily_rank": 63
     },
     {
       "key": "event:0334c706-bf57-49e7-9d43-39081361d867",
@@ -8052,7 +6123,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 6
+      "daily_rank": 18
     },
     {
       "key": "paper:3dbb5af83842291f863af301",
@@ -8124,105 +6195,6 @@
       "edition": "2026-09"
     },
     {
-      "key": "event:f0119089-ef78-4d1b-83e0-53e08997277b",
-      "event_id": "f0119089-ef78-4d1b-83e0-53e08997277b",
-      "kind": "news",
-      "slug": "development-f0119089-ef78-4d1b-83e0-53e08997277b",
-      "path": "story/development-f0119089-ef78-4d1b-83e0-53e08997277b/index.html",
-      "headline": "ChatGPT and Grok Added to the Department of War's AI System Options",
-      "original_headline": "ChatGPT and Grok Added to the Department of War's AI System Options",
-      "deck": "Reporting from U.S. Department of War (.gov). Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "U.S. Department of War (.gov)",
-          "headline": "ChatGPT and Grok Added to the Department of War's AI System Options",
-          "url": "https://www.war.gov/News/News-Stories/Article/Article/4588244/chatgpt-grok-added-to-war-departments-ai-system-options",
-          "date": "2026-09-01",
-          "language": "tl"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "U.S. Department of War (.gov)",
-      "date": "2026-09-01",
-      "display_date": "1 Sep 2026",
-      "markets": [
-        "CA",
-        "GB"
-      ],
-      "market_label": "Canada · United Kingdom",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 71
-    },
-    {
-      "key": "event:d9dec465-0f8e-440c-a77f-9a17fe5b81b1",
-      "event_id": "d9dec465-0f8e-440c-a77f-9a17fe5b81b1",
-      "kind": "news",
-      "slug": "development-d9dec465-0f8e-440c-a77f-9a17fe5b81b1",
-      "path": "story/development-d9dec465-0f8e-440c-a77f-9a17fe5b81b1/index.html",
-      "headline": "Guanggu launched its first “FDE+ Agent” training program, aiming to train over 1,000 AI product managers.",
-      "original_headline": "Guanggu launched its first “FDE+ Agent” training program, aiming to train over 1,000 AI product managers.",
-      "deck": "Reporting from hubei.gov.cn. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "hubei.gov.cn",
-          "headline": "Guanggu launched its first “FDE+ Agent” training program, aiming to train over 1,000 AI product managers.",
-          "url": "https://www.hubei.gov.cn/zhuanti/2021zt/2021wsgg/2012ggmd/202609/t20260901_6004971.shtml",
-          "date": "2026-09-01",
-          "language": "zh"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "hubei.gov.cn",
-      "date": "2026-09-01",
-      "display_date": "1 Sep 2026",
-      "markets": [
-        "CN"
-      ],
-      "market_label": "China",
-      "topic": "technology",
-      "topic_label": "AI & technology",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 82
-    },
-    {
       "key": "event:b644c656-548e-4fd6-bc31-94ca6ac70140",
       "event_id": "b644c656-548e-4fd6-bc31-94ca6ac70140",
       "kind": "news",
@@ -8269,7 +6241,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 131
+      "daily_rank": 11
     },
     {
       "key": "event:8e5a0cc5-9068-4322-a9fc-a0714a0729ae",
@@ -8318,7 +6290,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 126
+      "daily_rank": 6
     },
     {
       "key": "event:666d3899-6112-48bc-ab98-2e740c33b4f2",
@@ -8367,7 +6339,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 69
+      "daily_rank": 61
     },
     {
       "key": "event:63bd4191-6fb9-4537-94cc-78c70eef8434",
@@ -8417,7 +6389,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 108
+      "daily_rank": 77
     },
     {
       "key": "event:5adc07af-8169-4863-b79f-66022d317338",
@@ -8466,7 +6438,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 14
+      "daily_rank": 26
     },
     {
       "key": "event:30bf5f2a-6410-4f23-a0a2-4ff6e1a34789",
@@ -8515,7 +6487,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 102
+      "daily_rank": 71
     },
     {
       "key": "event:307bb2d7-dbce-4128-8333-643af0544163",
@@ -8564,7 +6536,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 121
+      "daily_rank": 1
     },
     {
       "key": "event:0f371306-78fa-41b0-a71a-3237a7b03b99",
@@ -8613,56 +6585,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 54
-    },
-    {
-      "key": "event:03524948-20d9-42af-94ce-f75de98be054",
-      "event_id": "03524948-20d9-42af-94ce-f75de98be054",
-      "kind": "news",
-      "slug": "development-03524948-20d9-42af-94ce-f75de98be054",
-      "path": "story/development-03524948-20d9-42af-94ce-f75de98be054/index.html",
-      "headline": "Ensuring multiomics data reproducibility for artificial intelligence with reference materials as a common calibrator",
-      "original_headline": "Ensuring multiomics data reproducibility for artificial intelligence with reference materials as a common calibrator",
-      "deck": "Reporting from Nature. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Nature",
-          "headline": "Ensuring multiomics data reproducibility for artificial intelligence with reference materials as a common calibrator",
-          "url": "https://www.nature.com/articles/s41587-026-03267-1",
-          "date": "2026-09-01",
-          "language": "en"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "Nature",
-      "date": "2026-09-01",
-      "display_date": "1 Sep 2026",
-      "markets": [
-        "GB"
-      ],
-      "market_label": "United Kingdom",
-      "topic": "everyday",
-      "topic_label": "Everyday life",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 76
+      "daily_rank": 55
     },
     {
       "key": "event:f1abf7ae-f64e-4b0e-87e3-17e0e340a2f6",
@@ -8712,7 +6635,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 47
+      "daily_rank": 51
     },
     {
       "key": "event:dd9a2ad1-9b6d-41bf-95c9-3f48c924a9f5",
@@ -8761,7 +6684,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 39
+      "daily_rank": 47
     },
     {
       "key": "event:bb4625b4-fae6-4463-a52b-af94b72b873a",
@@ -8810,7 +6733,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 96
+      "daily_rank": 65
     },
     {
       "key": "event:b959d80a-99ba-4618-8955-d78818aea10f",
@@ -8859,7 +6782,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 59
+      "daily_rank": 57
     },
     {
       "key": "event:b3fbb0e3-13bf-411b-968f-109215671c8b",
@@ -8908,7 +6831,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 117
+      "daily_rank": 86
     },
     {
       "key": "event:9a00aba1-9893-4596-a882-f4441e0b2bd8",
@@ -8918,7 +6841,7 @@
       "path": "story/development-9a00aba1-9893-4596-a882-f4441e0b2bd8/index.html",
       "headline": "Artificial intelligence could cause global economic downturn, Bank of England governor warns",
       "original_headline": "Artificial intelligence could cause global economic downturn, Bank of England governor warns",
-      "deck": "Reporting from Sky News. Open the source for the article.",
+      "deck": "Reporting from BFM. Open the source for the article.",
       "what_happened": "",
       "why_it_matters": "",
       "body_paragraphs": [],
@@ -8932,13 +6855,6 @@
       "display_scope": "",
       "sources": [
         {
-          "publisher": "Sky News",
-          "headline": "Artificial intelligence could cause global economic downturn, Bank of England governor warns",
-          "url": "https://news.sky.com/story/artificial-intelligence-could-cause-global-economic-downturn-bank-of-england-governor-warns-13579423",
-          "date": "2026-08-31",
-          "language": "en"
-        },
-        {
           "publisher": "BFM",
           "headline": "Artificial intelligence poses a serious risk to the global economy, warns the Governor of the Bank of England.",
           "url": "https://www.bfmtv.com/tech/intelligence-artificielle/l-intelligence-artificielle-fait-peser-un-risque-grave-sur-l-economie-mondiale-previent-le-gouverneur-de-la-banque-d-angleterre_AN-202609010334.html",
@@ -8946,66 +6862,14 @@
           "language": "fr"
         }
       ],
-      "source_count": 2,
-      "publisher": "Sky News",
-      "date": "2026-08-31",
-      "display_date": "31 Aug 2026",
-      "markets": [
-        "FR",
-        "GB"
-      ],
-      "market_label": "France · United Kingdom",
-      "topic": "policy",
-      "topic_label": "Rules & rights",
-      "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
-      "edition": "2026-W36",
-      "period_start": "2026-08-31",
-      "period_end": "2026-09-06",
-      "daily_rank": 0
-    },
-    {
-      "key": "event:5cadae34-87fa-4070-930a-71dd3a1799a7",
-      "event_id": "5cadae34-87fa-4070-930a-71dd3a1799a7",
-      "kind": "news",
-      "slug": "development-5cadae34-87fa-4070-930a-71dd3a1799a7",
-      "path": "story/development-5cadae34-87fa-4070-930a-71dd3a1799a7/index.html",
-      "headline": "Tidal AI Policy",
-      "original_headline": "Tidal AI Policy",
-      "deck": "Reporting from TIDAL. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "",
-      "for_ai": "",
-      "human_direction": "unresolved",
-      "ai_direction": "unresolved",
-      "human_label": "Evidence incomplete",
-      "ai_label": "Evidence incomplete",
-      "evidence_complete": false,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "TIDAL",
-          "headline": "Tidal AI Policy",
-          "url": "https://tidal.com/ai-policy",
-          "date": "2026-08-31",
-          "language": "un"
-        }
-      ],
       "source_count": 1,
-      "publisher": "TIDAL",
+      "publisher": "BFM",
       "date": "2026-08-31",
       "display_date": "31 Aug 2026",
       "markets": [
-        "CA",
-        "GB",
-        "US"
+        "FR"
       ],
-      "market_label": "Canada · United Kingdom · United States",
+      "market_label": "France",
       "topic": "policy",
       "topic_label": "Rules & rights",
       "reading_minutes": 1,
@@ -9016,7 +6880,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 46
+      "daily_rank": 12
     },
     {
       "key": "event:2a2c1673-b9fc-4424-852c-6f246f5b1faa",
@@ -9066,7 +6930,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 103
+      "daily_rank": 72
     },
     {
       "key": "event:119227b7-8482-42b4-840a-8f6c8038f964",
@@ -9115,7 +6979,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 31
+      "daily_rank": 40
     },
     {
       "key": "event:faeac2bd-3bc2-4d29-88da-cf5a41acc662",
@@ -12183,7 +10047,7 @@
       "edition": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",
-      "daily_rank": 10
+      "daily_rank": 22
     },
     {
       "key": "event:4a3b473a-414c-4c6f-8693-da501c118d13",
