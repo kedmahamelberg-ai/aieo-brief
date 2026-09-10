@@ -43,8 +43,22 @@ RESEARCH_THEMES = (
     ("human interaction and creativity", re.compile(r"human|interaction|creative|music|art|interface|tangible", re.I)),
 )
 NATURE_IMAGES = {
-    "markets": "assets/weekly-overviews/river-delta.png",
-    "research": "assets/weekly-overviews/forest-path.png",
+    "markets": {
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+    },
+    "research": {
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+    },
 }
 SCHEMA = "aieo_weekly_overview_archive_v1"
 
@@ -165,8 +179,7 @@ def _market_overview(news: list[dict], release: dict) -> dict:
         "scope_note": scope_note,
         "word_count": _words(summary + " " + scope_note),
         "reading_minutes": 1,
-        "image_path": NATURE_IMAGES["markets"],
-        "image_alt": "An original aerial-style illustration of a river branching into a delta",
+        **copy.deepcopy(NATURE_IMAGES["markets"]),
         "entries": entries,
         "active_market_count": len(active),
     }
@@ -268,8 +281,7 @@ def _research_overview(research: list[dict], release: dict) -> dict:
         "scope_note": note,
         "word_count": _words(summary + " " + note),
         "reading_minutes": 1,
-        "image_path": NATURE_IMAGES["research"],
-        "image_alt": "An original aerial-style illustration of a path through a forest canopy",
+        **copy.deepcopy(NATURE_IMAGES["research"]),
         "papers": featured,
         "paper_count": len(sourced),
         "affiliation_verified_count": len(qualified),
@@ -323,10 +335,19 @@ def prepare_weekly_overviews(
     archive_path = Path(root) / "data/weekly-overviews/history.json"
     history = _load_history(archive_path)
     records = {
-        _plain(item.get("release_id")): item
+        _plain(item.get("release_id")): copy.deepcopy(item)
         for item in history["overviews"]
         if isinstance(item, dict) and _plain(item.get("release_id"))
     }
+    # Replace the retired generated illustrations in every archived week too.
+    for archived in records.values():
+        for section in ("markets", "research"):
+            if isinstance(archived.get(section), dict):
+                archived[section].update(copy.deepcopy(NATURE_IMAGES[section]))
+        archived.pop("content_sha256", None)
+        archived["content_sha256"] = hashlib.sha256(
+            json.dumps(archived, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
     records[release_id] = current
     ordered = sorted(
         records.values(),
