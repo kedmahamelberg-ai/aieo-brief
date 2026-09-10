@@ -11,7 +11,7 @@ from pathlib import Path
 from brief_contract import PROMPT_VERSION,digest,safe_url
 from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
 ROOT=Path(__file__).resolve().parents[1]
-PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256')
+PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256')
 
 def load():
     path=ROOT/'data/research/private/inputs.json'
@@ -55,7 +55,7 @@ def main():
         if not safe_url(p.get('url')):continue
         prior=old.get(p['key'],{})
         if p not in todo and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
-            counts['unchanged']+=1;selected.append(prior);continue
+            counts['unchanged']+=1;selected.append({**prior,**public_record(p)});continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
         if not p.get('abstract'):counts['metadata_only']+=1;selected.append(base);checkpoint();continue
         if time.monotonic()>deadline-90:counts['deferred']+=1;selected.append(base);checkpoint();continue

@@ -34,6 +34,15 @@ def validate(site):
  if len(keys)!=len(set(keys)):raise ValueError('Duplicate story IDs')
  if len(news)!=payload['story_count'] or len(papers)!=payload['research_count']:raise ValueError('Inconsistent collection count')
  if len(culture)!=payload.get('culture_count',0):raise ValueError('Inconsistent culture count')
+ overview=payload.get('weekly_overview') or {}
+ if overview.get('schema_version')!='aieo_weekly_overview_v1':raise ValueError('Weekly overview missing')
+ if len((overview.get('markets') or {}).get('entries') or [])!=5:raise ValueError('Weekly overview must retain five discovery markets')
+ if (overview.get('markets') or {}).get('word_count',999)>145 or (overview.get('research') or {}).get('word_count',999)>145:raise ValueError('Weekly overview exceeds one-minute editorial limit')
+ if not (site/overview.get('path','')).is_file() or not (site/'week-from-above/index.html').is_file():raise ValueError('Weekly overview pages missing')
+ social=json.loads((site/'data/social/current.json').read_text())
+ if social.get('release_id')!=payload.get('release_id') or len(social.get('items',[]))!=2:raise ValueError('Social traffic queue does not match the edition')
+ for paper in (overview.get('research') or {}).get('papers') or []:
+  if not str(paper.get('url','')).startswith('https://') or 'institutions' not in paper:raise ValueError('Research overview source or affiliation status missing')
  for axis in ('human','ai'):
   counts=collections.Counter(x[axis+'_direction'] for x in news)
   if any(counts[k]!=v for k,v in payload['directional_counts'][axis].items()):raise ValueError('Wrong '+axis+' totals')

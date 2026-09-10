@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Weekly AI overviews | The Brief{% endblock %}
+{% block description %}The archive of one-minute weekly views across five AI discovery markets and the research compass.{% endblock %}
+{% block content %}
+<main id="main-content" class="page-shell weekly-archive-page">
+  <header class="weekly-page-header">
+    <span class="eyebrow">THE WEEK FROM ABOVE</span>
+    <h1>AI, seen from a little higher up.</h1>
+    <p>Five reporting streams. One research compass. Source-linked and stored week by week.</p>
+  </header>
+  <div class="weekly-archive-grid">
+    {% for overview in overview_archive %}
+    <article>
+      <a class="weekly-archive-image" href="{{ local(overview.path) }}"><img src="{{ local(overview.markets.image_path) }}" alt="" width="1200" height="675"></a>
+      <span class="eyebrow">{{ overview.period_start }} – {{ overview.period_end }}</span>
+      <h2><a href="{{ local(overview.path) }}">{{ overview.markets.title }}</a></h2>
+      <p>{{ overview.markets.deck }}</p>
+      <p class="weekly-research-line"><strong>Research</strong> {{ overview.research.title }}</p>
+      <a class="read-link" href="{{ local(overview.path) }}">Read both one-minute views →</a>
+    </article>
+    {% else %}
+    <p>The first weekly overview will appear with the next completed edition.</p>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

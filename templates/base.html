@@ -8,7 +8,13 @@
   <meta property="og:type" content="{{ 'article' if story is defined else 'website' }}">
   <meta property="og:title" content="{{ story.headline if story is defined else 'The Brief | AI Empowerment Observatory' }}">
   <meta property="og:description" content="{{ story.deck if story is defined else 'AI news you can make sense of. Read, discuss and explore the sources.' }}">
-  <meta name="twitter:card" content="summary">
+  {% if page_image is defined and page_image %}
+  <meta property="og:image" content="{{ (config.site_url ~ '/' if config.site_url else '') ~ page_image }}">
+  <meta property="og:image:width" content="1200"><meta property="og:image:height" content="675">
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}<meta name="twitter:card" content="summary">{% endif %}
+  <meta name="robots" content="{{ 'noindex,nofollow' if is_preview else 'max-image-preview:large' }}">
+  {% if structured_data is defined and structured_data %}<script type="application/ld+json">{{ structured_data|tojson }}</script>{% endif %}
   {% if config.adsense.publisher_id %}<meta name="google-adsense-account" content="{{ config.adsense.publisher_id }}">{% endif %}
   {% if not is_preview and (page == 'home' or ads_eligible) and config.adsense.publisher_id == 'ca-pub-5170234738371400' %}
   <!-- AIEO AdSense connection v1: verification is separate from ad permission. -->
@@ -25,7 +31,6 @@
   <link rel="alternate" type="application/rss+xml" title="AIEO Brief" href="{{ local('feed.xml') }}">
   <link rel="manifest" href="{{ local('manifest.webmanifest') }}">
   <meta name="theme-color" content="#122b3d">
-  {% if is_preview %}<meta name="robots" content="noindex,nofollow">{% endif %}
 </head>
 <body data-page="{{ page }}" {% if story is defined %}data-story-key="{{ story.key }}"{% endif %}>
 <a class="skip-link" href="#main-content">Skip to the stories</a>
@@ -39,6 +44,7 @@
 <nav class="navigation" aria-label="Main"><div class="nav-inner">
   <a href="{{ local('index.html') }}" {% if page=='home' %}aria-current="page"{% endif %}>The news</a>
   <a href="{{ local('research/index.html') }}" {% if page=='research' %}aria-current="page"{% endif %}>Research</a>
+  <a href="{{ local('week-from-above/index.html') }}" {% if page in ('weekly-archive','weekly-overview') %}aria-current="page"{% endif %}>Week from above</a>
   <a href="{{ local('culture/index.html') }}" {% if page=='culture' %}aria-current="page"{% endif %}>A daily pause</a>
   <a href="{{ local('saved/index.html') }}" {% if page=='saved' %}aria-current="page"{% endif %}>Saved</a>
   <a href="{{ local('archive/index.html') }}" {% if page=='archive' %}aria-current="page"{% endif %}>Past editions</a>
@@ -47,7 +53,7 @@
 {% block content %}{% endblock %}
 <footer class="site-footer">
   <div><a class="wordmark footer-mark" href="{{ local('index.html') }}">the brief<span>.</span></a><p>A research initiative by <a href="{{ config.personal_site_url }}">Kedma Hamelberg</a>.</p><a href="{{ config.observatory_url }}">AI Empowerment Observatory ↗</a><a href="{{ config.personal_site_url }}">Kedma’s research and work ↗</a></div>
-  <div><a href="{{ local('about/index.html') }}">How we write</a><a href="{{ local('culture/index.html') }}">Art, words & music</a><a href="{{ local('notifications/index.html') }}">Choose your updates</a><a href="{{ local('feed.xml') }}">RSS feed</a><a href="{{ local('support/index.html') }}">Support & sponsorship</a></div>
+  <div><a href="{{ local('about/index.html') }}">How we write</a><a href="{{ local('week-from-above/index.html') }}">Weekly AI overview</a><a href="{{ local('culture/index.html') }}">Art, words & music</a><a href="{{ local('notifications/index.html') }}">Choose your updates</a><a href="{{ local('feed.xml') }}">RSS feed</a><a href="{{ local('support/index.html') }}">Support & sponsorship</a></div>
   <div><a href="{{ local('privacy/index.html') }}">Privacy</a><button class="text-button" data-action="privacy">Privacy choices</button><a href="{{ local('account/index.html') }}">Your account</a>{% if config.support_url %}<a href="{{ config.support_url }}" target="_blank" rel="noopener noreferrer" data-support-link="footer">Support the Brief</a>{% endif %}</div>
 </footer>
 <dialog id="share-dialog" class="dialog"><button data-close class="close" aria-label="Close sharing">×</button><h2>Pass it on</h2><p data-share-heading></p><div class="share-options">

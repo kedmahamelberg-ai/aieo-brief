@@ -14,6 +14,7 @@ from news_notifications import public_settings
 from daily_selection import rotation_plan, reading_day
 from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
 from english_publication import EnglishPublication, content_version, LAYOUT
+from weekly_overviews import prepare_weekly_overviews, social_queue
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -174,6 +175,7 @@ def main():
         item['content_hash'],_=content_version(item)
     for item in allcards:
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
+    weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview))
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
     shutil.copyfile(ROOT/'assets/favicon.ico', SITE/'favicon.ico')
@@ -203,6 +205,7 @@ def main():
     culture_featured=sorted(defaults['culture_latest'],key=lambda x:({'illustration':0,'poetry':1,'music':2,'text':3,'quote':4}.get(x['culture_type'],5)))
     defaults.update(culture_featured=culture_featured, research_featured=sorted(research,key=lambda x:not x.get('has_editorial'))[:6])
     defaults.update(culture_discoveries=[english.apply(x) for x in culture_discoveries(root=ROOT)],culture_library=culture_summary(ROOT))
+    defaults.update(weekly_overview=weekly_overview,overview_archive=overview_archive)
     def render(path,template,**ctx):
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
         prefix='../'*len(Path(path).parent.parts)
@@ -224,6 +227,10 @@ def main():
     render('notifications/index.html','notifications.html',page='notifications')
     render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
+    weekly_image=(baseurl+'/'+weekly_overview['markets']['image_path']) if baseurl else weekly_overview['markets']['image_path']
+    weekly_schema={'@context':'https://schema.org','@type':'Article','headline':weekly_overview['markets']['title'],'description':weekly_overview['markets']['deck'],'datePublished':weekly_overview['period_end'],'dateModified':weekly_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@type':'Organization','name':'The Brief'},'image':[weekly_image] if weekly_image else []}
+    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',overview_archive=overview_archive,page_image=weekly_overview['markets']['image_path'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research.'})
+    render(weekly_overview['path'],'weekly-overview.html',page='weekly-overview',weekly_overview=weekly_overview,page_image=weekly_overview['markets']['image_path'],structured_data=weekly_schema)
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
@@ -235,8 +242,11 @@ def main():
     payload['daily_selection']=rotation
     payload.update(culture_count=len(culture),culture=culture)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)
+    payload['weekly_overview']=weekly_overview
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
     (data/'public-items.json').write_text(json.dumps({'items':allcards},ensure_ascii=False)+'\n')
+    social=data/'social';social.mkdir()
+    (social/'current.json').write_text(json.dumps(social_queue(weekly_overview,baseurl),ensure_ascii=False,indent=2)+'\n')
     shutil.copyfile(ROOT/'assets/news-worker.js', SITE/'news-worker.js')
     (SITE/'manifest.webmanifest').write_text(json.dumps({'name':'The Brief — AI news','short_name':'The Brief',
         'id':'./','start_url':'./','scope':'./','display':'standalone','background_color':'#ffffff',
@@ -251,10 +261,12 @@ def main():
         (SITE/'CNAME').write_text(urlparse(baseurl).hostname+'\n')
     if baseurl:
         rss=['<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>AIEO Brief</title><link>'+xml_escape(baseurl)+'</link><description>Clear AI news and research, with original sources.</description>']
+        weekly_url=baseurl+'/'+weekly_overview['path'].removesuffix('index.html')
+        rss.append('<item><title>'+xml_escape(weekly_overview['markets']['title'])+'</title><link>'+xml_escape(weekly_url)+'</link><guid isPermaLink="false">weekly:'+xml_escape(weekly_overview['release_id'])+'</guid><description>'+xml_escape(weekly_overview['markets']['deck'])+'</description></item>')
         for item in sorted(news+research+culture,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
-        locations=['index.html','research/index.html','culture/index.html','about/index.html']+[i['path'] for i in allcards]
+        locations=['index.html','research/index.html','culture/index.html','about/index.html','week-from-above/index.html']+[x['path'] for x in overview_archive]+[i['path'] for i in allcards]
         (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+p.removesuffix('index.html'))+'</loc></url>' for p in locations)+'</urlset>')
     else:(SITE/'feed.xml').write_text('<?xml version="1.0"?><rss version="2.0"><channel><title>AIEO Brief preview</title><link>https://observatory.hamelberg-ai.com</link><description>Set the Brief site URL for its live feed.</description></channel></rss>')
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
@@ -262,6 +274,9 @@ def main():
         archivepath.parent.mkdir(parents=True,exist_ok=True);archivepath.write_text(json.dumps({'schema_version':'aieo_brief_archive_v1','stories':raw_archive},ensure_ascii=False,indent=2)+'\n')
     summary={'release':release['release_id'],'news':len(news),'editorial_summaries':sum(x['has_editorial'] for x in news),'research':len(research),'historical_pages':len(allcards),'community_connected':bool(config.get('community_enabled')),'preview':preview}
     summary['culture']=len(culture)
+    summary['weekly_overview_path']=weekly_overview['path']
+    summary['weekly_market_word_count']=weekly_overview['markets']['word_count']
+    summary['weekly_research_word_count']=weekly_overview['research']['word_count']
     summary['english_publication']={**english.summary(),'scope':'current items, archived items and discovery credits','current_news_pending':sum(x.get('english_status')=='pending' for x in news),'current_research_pending':sum(x.get('english_status')=='pending' for x in research),'current_culture_pending':sum(x.get('english_status')=='pending' for x in culture)}
     if english.pending:print('::warning::Some English display translations remain pending. Inspect current and archive coverage in the build summary before treating the edition as fully translated.')
     print(json.dumps(summary,indent=2))

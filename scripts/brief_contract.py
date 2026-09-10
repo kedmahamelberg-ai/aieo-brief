@@ -142,7 +142,7 @@ def load_config(root):
         if not safe_url(sponsor['url']):raise ValueError('Invalid sponsor URL')
         if date.fromisoformat(sponsor['ends'])<date.fromisoformat(sponsor['starts']):raise ValueError('Sponsor end date precedes its start')
         if len(sponsor['name'])>100 or len(sponsor['message'])>180:raise ValueError('Keep the sponsor message concise')
-    revenue=c.setdefault('revenue',{'contact_url':'mailto:kedma@hamelberg-ai.com','offers':[]})
+    revenue=c.setdefault('revenue',{'contact_url':'mailto:research@hamelberg-ai.com','offers':[]})
     contact=revenue.get('contact_url','')
     if not re.fullmatch(r'mailto:[A-Za-z0-9_.+%-]+@[A-Za-z0-9.-]+',contact):raise ValueError('Use a mailto address without query parameters for revenue enquiries.')
     if not isinstance(revenue.get('offers',[]),list) or len(revenue.get('offers',[]))>6:raise ValueError('Use up to six reader resources.')

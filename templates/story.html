@@ -11,7 +11,7 @@
 <div class="article-body">
 {% if story.display_scope %}<p class="finding-note">{{ story.display_scope }}</p>{% endif %}
 {% if story.kind=='research' %}
-<dl class="paper-facts"><div><dt>Publication</dt><dd>{{ story.publisher }}</dd></div><div><dt>Stage</dt><dd>{{ story.research_label }}</dd></div><div><dt>What we read</dt><dd>{{ story.summary_basis }}</dd></div></dl>
+<dl class="paper-facts"><div><dt>Publication</dt><dd>{{ story.publisher }}</dd></div><div><dt>Stage</dt><dd>{{ story.research_label }}</dd></div><div><dt>What we read</dt><dd>{{ story.summary_basis }}</dd></div><div><dt>Authors</dt><dd>{{ story.authors|join(', ') if story.authors else 'See the source record' }}</dd></div><div><dt>Universities and research institutions</dt><dd>{{ story.institutions|join(', ') if story.institutions else 'Not yet supplied in verified metadata; the Brief does not guess.' }}</dd></div></dl>{% if story.affiliation_source_url %}<p class="small-copy">Institution metadata: <a href="{{ story.affiliation_source_url }}" target="_blank" rel="noopener noreferrer">OpenAlex record ↗</a></p>{% endif %}
 {% endif %}
 {% if story.has_editorial %}<section><h2>{{ 'What the paper reports' if story.kind=='research' else 'What happened' }}</h2><p>{{ story.what_happened }}</p></section><section class="finding-note"><h2>Why it matters</h2><p>{{ story.why_it_matters }}</p></section><div data-full-read>{% for paragraph in story.body_paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</div>
 {% if story.limitation %}<section><h2>What this does not tell us</h2><p>{{ story.limitation }}</p></section>{% endif %}

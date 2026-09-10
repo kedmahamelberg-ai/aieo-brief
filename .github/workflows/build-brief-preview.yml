@@ -51,6 +51,12 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci --ignore-scripts
+      - name: Refresh no-cost research affiliation metadata
+        continue-on-error: true
+        env:
+          RESEARCH_CONTACT_EMAIL: research@hamelberg-ai.com
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python scripts/enrich_public_research_affiliations.py
       - name: Resolve the live GitHub Pages address
         id: pages
         if: vars.BRIEF_PUBLISH == 'true'
@@ -87,6 +93,8 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/archive/stories.json
+          if [[ -f data/weekly-overviews/history.json ]]; then git add data/weekly-overviews/history.json; fi
+          if [[ -f data/research/public.json ]]; then git add data/research/public.json; fi
           if [[ -f data/english/public-text.json ]]; then git add data/english/public-text.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Preserve Brief story pages and edition history'

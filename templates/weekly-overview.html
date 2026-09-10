@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}The week from above | The Brief{% endblock %}
+{% block description %}A one-minute, source-linked view of what selected AI reporting emphasized across five discovery markets and where this week’s research is moving.{% endblock %}
+{% block content %}
+<main id="main-content" class="page-shell weekly-overview-page">
+  <div class="weekly-breadcrumb"><a href="{{ local('week-from-above/index.html') }}">← All weekly overviews</a></div>
+  <header class="weekly-page-header">
+    <span class="eyebrow">{{ weekly_overview.markets.eyebrow }}</span>
+    <h1>{{ weekly_overview.markets.title }}</h1>
+    <p>{{ period_label }} · two one-minute readings</p>
+  </header>
+
+  <article id="five-markets" class="weekly-feature weekly-feature-detail">
+    <figure>
+      <img src="{{ local(weekly_overview.markets.image_path) }}" alt="{{ weekly_overview.markets.image_alt }}" width="1200" height="675">
+      <figcaption>River delta · original AIEO illustration dedicated to CC0.</figcaption>
+    </figure>
+    <div class="weekly-feature-copy">
+      <span class="eyebrow">{{ weekly_overview.markets.eyebrow }} · 1 MIN READ</span>
+      <h2>{{ weekly_overview.markets.title }}</h2>
+      <p class="weekly-deck">{{ weekly_overview.markets.deck }}</p>
+      <div class="market-current-list">
+        {% for entry in weekly_overview.markets.entries %}
+        <section>
+          <h3>{{ entry.name }}</h3>
+          <p>{{ entry.sentence }}</p>
+          {% if entry.story %}<p class="weekly-source"><a href="{{ local(entry.story.path) }}">Read the Brief</a>{% if entry.story.source_url %} · <a href="{{ entry.story.source_url }}" target="_blank" rel="noopener noreferrer">{{ entry.story.publisher }} source ↗</a>{% endif %}</p>{% endif %}
+        </section>
+        {% endfor %}
+      </div>
+      <p class="weekly-scope">{{ weekly_overview.markets.scope_note }}</p>
+    </div>
+  </article>
+
+  <article id="research-compass" class="weekly-feature weekly-feature-detail weekly-feature-research">
+    <figure>
+      <img src="{{ local(weekly_overview.research.image_path) }}" alt="{{ weekly_overview.research.image_alt }}" width="1200" height="675">
+      <figcaption>Forest path · original AIEO illustration dedicated to CC0.</figcaption>
+    </figure>
+    <div class="weekly-feature-copy">
+      <span class="eyebrow">{{ weekly_overview.research.eyebrow }} · 1 MIN READ</span>
+      <h2>{{ weekly_overview.research.title }}</h2>
+      <p class="weekly-deck">{{ weekly_overview.research.deck }}</p>
+      <p>{{ weekly_overview.research.summary }}</p>
+      {% if weekly_overview.research.papers %}
+      <ol class="research-source-list">
+        {% for paper in weekly_overview.research.papers %}
+        <li>
+          <h3><a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">{{ paper.original_headline }} ↗</a></h3>
+          <p><strong>Authors</strong> {{ paper.authors|join(', ') }}</p>
+          <p><strong>Universities and research institutions</strong> {{ paper.institutions|join(', ') if paper.institutions else 'Not yet supplied in verified metadata; the Brief does not guess.' }}</p>
+          <p class="weekly-source">{{ paper.label }} · {{ paper.publisher }}{% if paper.path %} · <a href="{{ local(paper.path) }}">Read the Brief summary</a>{% endif %}{% if paper.affiliation_source_url %} · <a href="{{ paper.affiliation_source_url }}" target="_blank" rel="noopener noreferrer">Affiliation record ↗</a>{% endif %}</p>
+        </li>
+        {% endfor %}
+      </ol>
+      {% endif %}
+      <p class="weekly-scope">{{ weekly_overview.research.scope_note }}</p>
+    </div>
+  </article>
+</main>
+{% endblock %}

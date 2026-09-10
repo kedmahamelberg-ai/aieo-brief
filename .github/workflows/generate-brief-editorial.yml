@@ -37,6 +37,8 @@ jobs:
       BRIEF_EDITORIAL_MODEL_REVISION: ggml-org/Qwen3-4B-GGUF@2f3b082b1356a6123f7ed71e65aea340da25d53c
       BRIEF_LOCAL_LLM_URL: http://127.0.0.1:8080
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+      RESEARCH_CONTACT_EMAIL: research@hamelberg-ai.com
       AIEO_AI_PROVIDER: ${{ vars.AIEO_AI_PROVIDER || 'openai' }}
       AIEO_AI_MAX_JOB_USD: ${{ vars.AIEO_AI_MAX_JOB_USD || '0.50' }}
     steps:

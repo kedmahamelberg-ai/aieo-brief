@@ -9,6 +9,7 @@ from pathlib import Path
 from xml.etree import ElementTree as ET
 from urllib.parse import quote
 import requests
+from research_affiliations import enrich_affiliations
 ROOT=Path(__file__).resolve().parents[1]
 AI=re.compile(r'artificial intelligence|machine learning|large language model|generative ai|deep learning|\bllms?\b|\bchatgpt\b|\bchatbots?\b|\bai\b',re.I)
 N={'a':'http://www.w3.org/2005/Atom','ar':'http://arxiv.org/schemas/atom'}
@@ -76,7 +77,8 @@ def main():
  for r in rows:
   key=r['key'];old=unique.get(key)
   if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
- payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'papers':list(unique.values())}
+ affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
+ payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'papers':list(unique.values())}
  (private/'inputs.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
  (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
  print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))

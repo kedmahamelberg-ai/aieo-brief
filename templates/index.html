@@ -11,6 +11,29 @@
 <div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
 </section>
 {% include 'discovery-carousels.html' %}
+{% if weekly_overview %}
+<section class="weekly-home" aria-labelledby="weekly-home-title">
+  <div class="weekly-home-image">
+    <img src="{{ local(weekly_overview.markets.image_path) }}" alt="{{ weekly_overview.markets.image_alt }}" width="1200" height="675">
+  </div>
+  <div class="weekly-home-main">
+    <span class="eyebrow">{{ weekly_overview.markets.eyebrow }} · 1 MIN READ</span>
+    <h2 id="weekly-home-title">{{ weekly_overview.markets.title }}</h2>
+    <p>{{ weekly_overview.markets.deck }}</p>
+    <div class="weekly-market-chips" aria-label="Five discovery markets">
+      {% for entry in weekly_overview.markets.entries %}<span><strong>{{ entry.name }}</strong> {{ entry.topic }}</span>{% endfor %}
+    </div>
+    <a class="read-link" href="{{ local(weekly_overview.path) }}#five-markets">See the five-market view →</a>
+  </div>
+  <aside class="weekly-home-research">
+    <span class="eyebrow">{{ weekly_overview.research.eyebrow }} · 1 MIN READ</span>
+    <h3>{{ weekly_overview.research.title }}</h3>
+    <p>{{ weekly_overview.research.deck }}</p>
+    <a class="read-link" href="{{ local(weekly_overview.path) }}#research-compass">Follow the research direction →</a>
+  </aside>
+</section>
+{% endif %}
+
 {{ ad('feed') }}
 <div class="reading-layout">
 <section class="feed-column" id="news" aria-label="News feed">
