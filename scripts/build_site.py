@@ -229,8 +229,8 @@ def main():
     render('support/index.html','support.html',page='support')
     weekly_image=(baseurl+'/'+weekly_overview['markets']['image_path']) if baseurl else weekly_overview['markets']['image_path']
     weekly_schema={'@context':'https://schema.org','@type':'Article','headline':weekly_overview['markets']['title'],'description':weekly_overview['markets']['deck'],'datePublished':weekly_overview['period_end'],'dateModified':weekly_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@type':'Organization','name':'The Brief'},'image':[weekly_image] if weekly_image else []}
-    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',overview_archive=overview_archive,page_image=weekly_overview['markets']['image_path'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research.'})
-    render(weekly_overview['path'],'weekly-overview.html',page='weekly-overview',weekly_overview=weekly_overview,page_image=weekly_overview['markets']['image_path'],structured_data=weekly_schema)
+    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',page_image=weekly_overview['markets']['image_path'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research.'})
+    render(weekly_overview['path'],'weekly-overview.html',page='weekly-overview',page_image=weekly_overview['markets']['image_path'],structured_data=weekly_schema)
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
