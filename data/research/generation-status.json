@@ -1,11 +1,43 @@
 {
-  "generated": 0,
-  "failed": 0,
+  "generated": 2,
+  "failed": 4,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 0,
   "engine_version": "aieo-editorial-runtime-v4-english",
-  "failure_counts": {},
-  "failed_items": [],
-  "updated_at": "2026-09-09T17:07:00.977141+00:00"
+  "failure_counts": {
+    "draft_quote_unsupported": 2,
+    "source_wording_copied": 2
+  },
+  "failed_items": [
+    {
+      "key": "paper:0128f79130a13e61cd041896",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:2410f94842a200f9eaa301ee",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:a58059278a60d21c3f104fcf",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:f6e3c3bba0ea2b42cf8eb467",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    }
+  ],
+  "updated_at": "2026-09-10T16:41:09.075112+00:00"
 }
