@@ -35,7 +35,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7212038284"
     },
     {
       "key": "paper:dcd3d67611ab664320da7d2a",
@@ -63,7 +67,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7212060869"
     },
     {
       "key": "paper:bdb7ae85c3d48b31b55e274d",
@@ -93,7 +101,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7212007724"
     },
     {
       "key": "paper:98e1ce91b22543f64de1f7ba",
@@ -126,7 +138,10 @@
       "reading_minutes": 1,
       "claim_status": "study",
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1"
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00"
     },
     {
       "key": "paper:4fba5d52ca8a89191dedb53e",
@@ -159,7 +174,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7212081511"
     },
     {
       "key": "paper:368af39fd45fa05b27a891c4",
@@ -195,7 +214,10 @@
       "reading_minutes": 1,
       "claim_status": "study",
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1"
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00"
     },
     {
       "key": "paper:af880433876f4e2e2ebf458c",
@@ -222,7 +244,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7211880076"
     },
     {
       "key": "paper:a2a02f3834100731fa4b30d5",
@@ -257,7 +283,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7211882901"
     },
     {
       "key": "paper:931e105f0c64db0569d48b27",
@@ -290,7 +320,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7211882896"
     },
     {
       "key": "paper:7aa62c0974d9fdd79752a847",
@@ -323,7 +357,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7211908217"
     },
     {
       "key": "paper:79f5371de41555e5281d0972",
@@ -357,7 +395,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7211918531"
     },
     {
       "key": "paper:03924bfde20e0b10ba47461b",
@@ -387,7 +429,9 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00"
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -422,7 +466,10 @@
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "authoring": "source_reading_for_this_update"
+      "authoring": "source_reading_for_this_update",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00"
     },
     {
       "key": "paper:91078ae8ed566fc820332ae5",
@@ -457,7 +504,11 @@
       "body_paragraphs": [],
       "limitation": "",
       "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "reading_minutes": 1,
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7208706548"
     },
     {
       "key": "paper:731698bc04326d5fc3e76cd1",
@@ -493,7 +544,11 @@
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "authoring": "source_reading_for_this_update"
+      "authoring": "source_reading_for_this_update",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7208783901"
     },
     {
       "key": "paper:6d844945c837c7a33a3006cd",
@@ -529,7 +584,9 @@
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "authoring": "source_reading_for_this_update"
+      "authoring": "source_reading_for_this_update",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00"
     },
     {
       "key": "paper:584f8201da9799aff3393d1a",
@@ -563,7 +620,11 @@
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "authoring": "source_reading_for_this_update"
+      "authoring": "source_reading_for_this_update",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7208745310"
     },
     {
       "key": "paper:219ed345ddee1b6421d660b0",
@@ -596,7 +657,10 @@
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "claim_status": "study",
-      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes"
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "institutions": [],
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00"
     },
     {
       "key": "paper:3dbb5af83842291f863af301",
@@ -638,7 +702,14 @@
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "authoring": "source_reading_for_this_update"
+      "authoring": "source_reading_for_this_update",
+      "institutions": [
+        "Google (United States)",
+        "Carnegie Institution for Science",
+        "Jet Propulsion Laboratory"
+      ],
+      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_source_url": "https://openalex.org/W7154228460"
     }
   ]
 }
