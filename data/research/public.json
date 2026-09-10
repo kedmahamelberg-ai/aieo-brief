@@ -644,7 +644,8 @@
       "summary_basis": "Original paper title",
       "reading_minutes": 1,
       "institutions": [],
-      "source_verified_at": "2026-09-10T11:42:17.614996+00:00"
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T16:41:47.438431+00:00"
     },
     {
       "key": "paper:d1167db1aea49c360411dc23",
@@ -799,7 +800,9 @@
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
       "authoring": "source_reading_for_this_update",
       "institutions": [],
-      "source_verified_at": "2026-09-10T11:42:17.614996+00:00"
+      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+      "affiliation_checked_at": "2026-09-10T16:41:47.438431+00:00",
+      "affiliation_source_url": "https://openalex.org/W7208726090"
     },
     {
       "key": "paper:584f8201da9799aff3393d1a",
