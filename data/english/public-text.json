@@ -1353,6 +1353,26 @@
       },
       "output_sha256": "7d71a4b8cbb7d2c76e7555e08a0a81e09a1f313a5449ad41426a8adc4142bcc7",
       "policy": "brief-english-display-v1"
+    },
+    "c4c7ea170de9f4fc543bf200dd389cfff982e0c84add8683adcf19a68a98e2c7": {
+      "english": {
+        "0": "Reporting from Voice of America. Open the source for the article.",
+        "1": "Voice of America",
+        "2": "Voice of America"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5c3ed74c728680414bf133dbf45b985c71ef9b201eaa069e3fda69b71e459d4d",
+      "policy": "brief-english-display-v1"
     }
   }
 }
