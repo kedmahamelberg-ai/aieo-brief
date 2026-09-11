@@ -1373,6 +1373,90 @@
       },
       "output_sha256": "5c3ed74c728680414bf133dbf45b985c71ef9b201eaa069e3fda69b71e459d4d",
       "policy": "brief-english-display-v1"
+    },
+    "1c70eae56999758928148f5066f2d598d834f52eac007102041a19131ff7df62": {
+      "english": {
+        "0": "Indian",
+        "1": "Leili, by Sarojini Naidu.",
+        "2": "Leili",
+        "3": "LEILI",
+        "4": "Leili"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e9514486107b5358b19ce738872b86e237fa42e07e46e53b6097f2f035e08908",
+      "policy": "brief-english-display-v1"
+    },
+    "4c0479be594e6d2478fe2290d4e4ac8c6a06b6bad3220809462f9d18e10348d1": {
+      "english": {
+        "0": "The Prophet"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "78abca86407f56b23f6c5147624fa067cb31cce193cb1fdf773ccf41d4e2e6e3",
+      "policy": "brief-english-display-v1"
+    },
+    "4193aa42856070429f6f82de954e127cec404f18214f610bc92b4a38ce6737a1": {
+      "english": {
+        "0": "German",
+        "1": "Composer",
+        "2": "Beethoven - String Quartet No. 6 in B flat major, Op. 18 No. 6 - IV. The Melancholy (Musopen String Quartet)",
+        "3": "Beethoven - String Quartet No. 6 in B flat major, Op. 18 No. 6 - IV. The Melancholy",
+        "4": "Beethoven - String Quartet No. 6 in B flat major, Op. 18 No. 6 - IV. The Melancholy (Musopen String Quartet)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "74c487bbf58ef426a349fac580e8117eea3262efb3fb82e8227a8ce62aef71e1",
+      "policy": "brief-english-display-v1"
+    },
+    "d058a3fcf2d262a3f105c4964d86064366f4751afd02aee545f747d36bf68e59": {
+      "english": {
+        "0": "Susanna Anderson Rose",
+        "1": "Susanna Anderson Rose. oil on wood.",
+        "2": "Susanna Anderson Rose",
+        "3": "CC0 image",
+        "4": "Susanna Anderson Rose"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "df949d9abe7f1a82171b053ce123bc41d2b4ab6fa5aa73720ca2f72ff31ec2a4",
+      "policy": "brief-english-display-v1"
     }
   }
 }
