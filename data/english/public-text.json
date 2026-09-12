@@ -1597,6 +1597,26 @@
       },
       "output_sha256": "a0a191fa218b3da1c52e4bc7f2878848d317fcdd8c57ae39b7a8bd8f8b9e218e",
       "policy": "brief-english-display-v1"
+    },
+    "f674a8fa017f2b381db319e627dc6464abf7faf91f8352842c600990c4eb9855": {
+      "english": {
+        "0": "Reporting from People's Daily. Open the source for the article.",
+        "1": "People's Daily",
+        "2": "People's Daily"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "43e7ff637e0e1a72a9ee5453094648adc410bd7099e976ba373b77c686b7b747",
+      "policy": "brief-english-display-v1"
     }
   }
 }
