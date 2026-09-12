@@ -1559,6 +1559,26 @@
       },
       "output_sha256": "7848f0037e610413b846c4b16d188c0dd77494a8577e77ca84f33abf798a8df6",
       "policy": "brief-english-display-v1"
+    },
+    "11579cdcd3f779d46426be62306fc84c1e1f1793e45c1f675a87a9f184369d77": {
+      "english": {
+        "0": "Reporting from CNR Network. Open the source for the article.",
+        "1": "CNR Network",
+        "2": "CNR Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f8f6105def71a881806a78806042a673bcce7256ce509515a2fa95baaec84010",
+      "policy": "brief-english-display-v1"
     }
   }
 }
