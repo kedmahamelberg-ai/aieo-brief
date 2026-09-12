@@ -64,7 +64,7 @@ jobs:
       - name: Run release, headline and privacy regression checks
         run: |
           AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_*.py'
-          node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js tests/carousels.test.js tests/ux-history.test.js
+          node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js tests/carousels.test.js tests/ux-history.test.js tests/public-metrics.test.js
           npm run test:database
       - name: Initialize bounded English translation ledger
         shell: bash

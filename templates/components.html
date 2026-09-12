@@ -3,12 +3,12 @@
 {% elif ads_eligible and config.adsense.enabled and config.adsense.get('mode','auto')=='placements' and config.adsense.slots.get(kind) %}<aside class="advertisement advertisement-{{ kind }}" aria-label="Advertisement" data-ad-kind="{{ kind }}" data-ad-slot="{{ config.adsense.slots[kind] }}" hidden><small>ADVERTISEMENT</small></aside>{% endif %}
 {%- endmacro %}
 {% macro actions(item, full=false) -%}
-<div class="public-metrics" data-public-metrics="{{ item.key }}" aria-label="Public readership and engagement">
-<span><strong data-metric="views">—</strong> views</span><span><strong data-metric="likes">—</strong> likes</span><span><strong data-metric="comments">—</strong> comments</span><span><strong data-metric="shares">—</strong> share actions</span><span><strong data-metric="saves">—</strong> account saves</span><span><strong data-metric="reads">—</strong> engaged reads (7d)</span><a href="{{ local('privacy/index.html') }}#public-counts" aria-label="How these numbers are measured">ⓘ</a>
+<div class="public-metrics" data-public-metrics="{{ item.key }}" aria-label="Public readership and engagement" hidden>
+<span hidden><strong data-metric="views"></strong> views</span><span hidden><strong data-metric="likes"></strong> likes</span><span hidden><strong data-metric="comments"></strong> comments</span><span hidden><strong data-metric="shares"></strong> share actions</span><span hidden><strong data-metric="saves"></strong> account saves</span><span hidden><strong data-metric="reads"></strong> engaged reads (7d)</span><a href="{{ local('privacy/index.html') }}#public-counts" aria-label="How these numbers are measured">ⓘ</a>
 </div>
 <div class="story-actions" data-key="{{ item.key }}">
-<button data-action="like" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">♡</span> Like <span data-like-count="{{ item.key }}"></span></button>
-<a href="{{ local(item.path) }}#conversation" class="comment-link"><span aria-hidden="true">▤</span> Discuss <span data-comment-count="{{ item.key }}"></span></a>
+<button data-action="like" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">♡</span> Like <span data-like-count="{{ item.key }}" hidden></span></button>
+<a href="{{ local(item.path) }}#conversation" class="comment-link"><span aria-hidden="true">▤</span> Discuss <span data-comment-count="{{ item.key }}" hidden></span></a>
 <button data-action="share" data-key="{{ item.key }}"><span aria-hidden="true">↗</span> Share</button>
 <button data-action="save" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">▱</span> Save</button>
 </div>

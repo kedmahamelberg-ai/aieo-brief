@@ -16,10 +16,15 @@
   function display(metrics) {
     document.querySelectorAll('[data-public-metrics]').forEach(row => {
       const item = metrics?.[row.dataset.publicMetrics];
+      let visible = false;
       row.querySelectorAll('[data-metric]').forEach(n => {
-        const number = item?.[n.dataset.metric];
-        n.textContent = typeof number === 'number' && Number.isFinite(number) && number >= 0 ? new Intl.NumberFormat().format(number) : '—';
+        const number = window.BriefCore.publicMetricNumber(item?.[n.dataset.metric]);
+        const show = number !== null;
+        n.parentElement.hidden = !show;
+        n.textContent = show ? new Intl.NumberFormat().format(number) : '';
+        visible ||= show;
       });
+      row.hidden = !visible;
     });
   }
   async function refresh() {
@@ -27,8 +32,11 @@
     const keys = [...new Set([...document.querySelectorAll('[data-public-metrics]')].map(n => n.dataset.publicMetrics).filter(k => keyPattern.test(k)))];
     if (!keys.length) return;
     inFlight = true;
-    try { display(await community.metrics(keys)); }
-    catch (_) { /* An unavailable count remains a dash, not a fabricated zero. */ }
+    try {
+      const metrics = await community.metrics(keys);
+      window.dispatchEvent(new CustomEvent('brief-metrics', {detail:metrics}));
+    }
+    catch (_) { /* No placeholder statistics when the service is unavailable. */ }
     finally { inFlight = false; }
   }
   async function record(key, kind) {
