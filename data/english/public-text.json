@@ -1539,6 +1539,26 @@
       },
       "output_sha256": "79dc5c89fb6eed8d6a5f9f31b730fce94b999ea0dd52974ec15dd86d18c60bee",
       "policy": "brief-english-display-v1"
+    },
+    "fb0578cda7f69d55a0e2fcd4e86d46cae48d88875f54f5a5afcf8a3de5345b97": {
+      "english": {
+        "0": "Reporting from ScienceNet, News. Open the source for the article.",
+        "1": "ScienceNet, News",
+        "2": "ScienceNet, News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7848f0037e610413b846c4b16d188c0dd77494a8577e77ca84f33abf798a8df6",
+      "policy": "brief-english-display-v1"
     }
   }
 }

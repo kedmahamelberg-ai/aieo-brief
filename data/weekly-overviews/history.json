@@ -13,9 +13,9 @@
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
         "deck": "Across the five discovery markets, everyday use met work and skills. The balance differed by reporting stream.",
-        "summary": "China: selected reporting leaned toward work and skills, with “Dalian University launches AI HUB, but evidence limited to university release”… United States: selected reporting leaned toward work and skills, with “FDA TEMPO Pilot Lets Generative AI Medical Devices Reach Patients… United Kingdom: selected reporting leaned toward everyday use, with “FSB Chair flags frontier AI risks, urges guardrails for safe deployment”… France: the discovery stream centred most often on work and skills, including “Meta Claims Muse Spark 1.3 Rivals OpenAI and… Canada: the discovery stream centred most often on rules and rights, including “Amazon to close Mechanical Turk; a shift in…",
+        "summary": "China: selected reporting leaned toward work and skills, with “[New Advantages in Forging] AI HUB of School of Artificial Intelligence…” as one visible signal. United States: selected reporting leaned toward work and skills, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal. United Kingdom: selected reporting leaned toward everyday use, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal. France: the discovery stream centred most often on work and skills, including “Call for Papers: Museum International: \"Artificial Intelligence in Museums.” Canada: the discovery stream centred most often on rules and rights, including “Can Artificial Intelligence Predict the Right Partner for You?.”",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
-        "word_count": 127,
+        "word_count": 137,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
         "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
@@ -29,12 +29,12 @@
             "name": "China",
             "count": 23,
             "topic": "Work And Skills",
-            "sentence": "China: selected reporting leaned toward work and skills, with “Dalian University launches AI HUB, but evidence limited to university release” as one visible signal.",
+            "sentence": "China: selected reporting leaned toward work and skills, with “[New Advantages in Forging] AI HUB of School of Artificial Intelligence…” as one visible signal.",
             "story": {
-              "headline": "Dalian University launches AI HUB, but evidence limited to university release",
-              "path": "story/development-d37b2be0-9d2c-4153-8d11-8835ca3412fa/index.html",
+              "headline": "[New Advantages in Forging] AI HUB of School of Artificial Intelligence, Dalian University of Technology Officially Established",
+              "path": "story/development-732f0944-c89f-4789-b57b-03eaa38945a1/index.html",
               "publisher": "Dalian University of Technology News Network",
-              "source_url": "https://news.dlut.edu.cn/info/1071/151455.htm"
+              "source_url": "https://news.dlut.edu.cn/info/1022/151335.htm"
             }
           },
           {
@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 19,
             "topic": "Work And Skills",
-            "sentence": "United States: selected reporting leaned toward work and skills, with “FDA TEMPO Pilot Lets Generative AI Medical Devices Reach Patients Early…” as one visible signal.",
+            "sentence": "United States: selected reporting leaned toward work and skills, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal.",
             "story": {
-              "headline": "FDA TEMPO Pilot Lets Generative AI Medical Devices Reach Patients Early, STAT Finds Limits",
-              "path": "story/development-1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba/index.html",
-              "publisher": "STAT",
-              "source_url": "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation"
+              "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
+              "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
+              "publisher": "Greater Good: The Science of a Meaningful Life",
+              "source_url": "https://greatergood.berkeley.edu/article/item/can_artificial_intelligence_predict_the_right_partner_for_you"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 18,
             "topic": "Everyday Use",
-            "sentence": "United Kingdom: selected reporting leaned toward everyday use, with “FSB Chair flags frontier AI risks, urges guardrails for safe deployment” as one visible signal.",
+            "sentence": "United Kingdom: selected reporting leaned toward everyday use, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal.",
             "story": {
-              "headline": "FSB Chair flags frontier AI risks, urges guardrails for safe deployment",
-              "path": "story/development-2a2c1673-b9fc-4424-852c-6f246f5b1faa/index.html",
-              "publisher": "Financial Stability Board",
-              "source_url": "https://www.fsb.org/2026/08/fsb-chair-warns-of-risks-arising-from-frontier-artificial-intelligence-ai-models"
+              "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
+              "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
+              "publisher": "Greater Good: The Science of a Meaningful Life",
+              "source_url": "https://greatergood.berkeley.edu/article/item/can_artificial_intelligence_predict_the_right_partner_for_you"
             }
           },
           {
@@ -68,25 +68,25 @@
             "name": "France",
             "count": 11,
             "topic": "Work And Skills",
-            "sentence": "France: the discovery stream centred most often on work and skills, including “Meta Claims Muse Spark 1.3 Rivals OpenAI and Anthropic, But Verification….”",
+            "sentence": "France: the discovery stream centred most often on work and skills, including “Call for Papers: Museum International: \"Artificial Intelligence in Museums.”",
             "story": {
-              "headline": "Meta Claims Muse Spark 1.3 Rivals OpenAI and Anthropic, But Verification Remains Difficult",
-              "path": "story/development-78c2f5af-e751-412a-9344-cc485fa2863b/index.html",
-              "publisher": "Siècle Digital",
-              "source_url": "https://siecledigital.fr/2026/09/04/meta-affirme-avoir-rattrape-openai-et-anthropic-avec-son-nouveau-modele-dia"
+              "headline": "Call for Papers: Museum International: \"Artificial Intelligence in Museums",
+              "path": "story/development-71fecc86-aff2-4922-adf1-3629c78740a4/index.html",
+              "publisher": "International Council of Museums",
+              "source_url": "https://icom.museum/en/news/call-for-papers-museum-international-artificial-intelligence-in-museums"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 39,
+            "count": 41,
             "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Amazon to close Mechanical Turk; a shift in AI-enabled workflows, per….”",
+            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Can Artificial Intelligence Predict the Right Partner for You?.”",
             "story": {
-              "headline": "Amazon to close Mechanical Turk; a shift in AI-enabled workflows, per Yahoo Finance",
-              "path": "story/development-67ac90b6-b067-4967-bf41-a4e616d9e741/index.html",
-              "publisher": "Yahoo! Finance Canada",
-              "source_url": "https://ca.finance.yahoo.com/news/amazon-bezos-nicknamed-artificial-artificial-192119001.html"
+              "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
+              "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
+              "publisher": "Greater Good: The Science of a Meaningful Life",
+              "source_url": "https://greatergood.berkeley.edu/article/item/can_artificial_intelligence_predict_the_right_partner_for_you"
             }
           }
         ],
@@ -142,7 +142,7 @@
         "paper_count": 13,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "8264f3cdd60371846430eab1786ae890e827e87876c5db58ef8959017657365f"
+      "content_sha256": "22e222391a704945dc5fcadedcfed74c167f483aedce546aad7121760a18eadf"
     }
   ]
 }
