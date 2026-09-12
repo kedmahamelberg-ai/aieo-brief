@@ -2,6 +2,382 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Patamanjari Ragini of Dipak, from a Ragamala",
+      "art_type": "Painting",
+      "balance_origin": "Northern India",
+      "creator": "Artist unknown",
+      "creator_origin": "Northern India, Pahari kingdoms",
+      "culture_type": "illustration",
+      "deck": "Patamanjari Ragini of Dipak, from a Ragamala. Gum tempera and ink on paper.",
+      "headline": "Patamanjari Ragini of Dipak, from a Ragamala",
+      "image_path": "assets/culture/fff41f92348c96767b2be977.jpg",
+      "key": "culture:fff41f92348c96767b2be977",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1990.39/1990.39_web.jpg",
+      "medium": "Gum tempera and ink on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1990.39",
+      "provenance_id": "cma:155591",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of John D. Proctor",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1990.39",
+      "work_date": "c. 1740–50",
+      "date": "2026-09-12",
+      "selected_on": "2026-09-12",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-fff41f92348c96767b2be977",
+      "path": "culture/culture-fff41f92348c96767b2be977/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Patamanjari Ragini of Dipak, from a Ragamala",
+          "url": "https://clevelandart.org/art/1990.39",
+          "date": "c. 1740–50",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "12 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-12",
+      "summary_basis": "Selected 12 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "8b3af381fb165e64461d42de2141a0f202b3878005cf0cad00422007c7226f2b",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "text",
+      "deck": "A passage from Stray Birds. Translated by Rabindranath Tagore.",
+      "excerpt": "Cheerless is the day, the light under frowning clouds is like a punished child with traces of tears on its pale cheeks, and the cry of the wind is like the cry of a wounded world. But I know I am travelling to meet my Friend.",
+      "headline": "Stray Birds · a short reading",
+      "key": "culture:fa8e61f7bd01dedc316b0db4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:passage:8b3af381fb165e64461d42de2141a0f202b3878005cf0cad00422007c7226f2b",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 322 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-09-12",
+      "selected_on": "2026-09-12",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-fa8e61f7bd01dedc316b0db4",
+      "path": "culture/culture-fa8e61f7bd01dedc316b0db4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Stray Birds · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "12 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-12",
+      "summary_basis": "Selected 12 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Cheerless is the day, the light under frowning clouds is like a punished child with traces of tears on its pale cheeks, and the cry of the wind is like the cry of a wounded world. But I know I am travelling to meet my Friend.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "2254fceeb196cf8964dcb73f5428b3aa7c79c569752aa4abd6b734925c6811db",
+      "creator": "William Blake",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by William Blake.",
+      "excerpt": "Little Fly,\nThy summer's play\nMy thoughtless hand\nHas brushed away.\n\nAm not I\nA fly like thee?\nOr art not thou\nA man like me?\n\nFor I dance\nAnd drink, and sing,\nTill some blind hand\nShall brush my wing.\n\nIf thought is life\nAnd strength and breath\nAnd the want\nOf thought is death;\n\nThen am I\nA happy fly,\nIf I live,\nOr if I die.",
+      "headline": "The Fly",
+      "key": "culture:7c845035a4b2f66ce94c5da2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Little Fly,",
+        "Thy summer's play",
+        "My thoughtless hand",
+        "Has brushed away.",
+        "",
+        "Am not I",
+        "A fly like thee?",
+        "Or art not thou",
+        "A man like me?",
+        "",
+        "For I dance",
+        "And drink, and sing,",
+        "Till some blind hand",
+        "Shall brush my wing.",
+        "",
+        "If thought is life",
+        "And strength and breath",
+        "And the want",
+        "Of thought is death;",
+        "",
+        "Then am I",
+        "A happy fly,",
+        "If I live,",
+        "Or if I die."
+      ],
+      "provenance_id": "poetrydb:William Blake:The Fly",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1827.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "72fc39e005e7461703685838d5a1f02d1c7169a633d4aca12b88710a9cddc79d",
+      "source_locator": "The Fly",
+      "source_url": "https://poetrydb.org/title/The%20Fly:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1827",
+      "date": "2026-09-12",
+      "selected_on": "2026-09-12",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-7c845035a4b2f66ce94c5da2",
+      "path": "culture/culture-7c845035a4b2f66ce94c5da2/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "The Fly",
+          "url": "https://poetrydb.org/title/The%20Fly:abs/lines.text",
+          "date": "Before 1827",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "12 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-12",
+      "summary_basis": "Selected 12 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Little Fly,\nThy summer's play\nMy thoughtless hand\nHas brushed away.\n\nAm not I\nA fly like thee?\nOr art not thou\nA man like me?\n\nFor I dance\nAnd drink, and sing,\nTill some blind hand\nShall brush my wing.\n\nIf thought is life\nAnd strength and breath\nAnd the want\nOf thought is death;\n\nThen am I\nA happy fly,\nIf I live,\nOr if I die.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Dhammapada",
+      "content_fingerprint": "66a1083cda21a15e236cc3581bab329238c71cdac720e1d1c08339633b6cb1c5",
+      "creator": "Traditional Buddhist verse",
+      "creator_origin": "South Asian · early Buddhist tradition",
+      "culture_type": "quote",
+      "deck": "From Dhammapada. Translation by F. Max Müller.",
+      "excerpt": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death.",
+      "headline": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death.",
+      "key": "culture:4908f6587751b47c0503da40",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2017:quote:66a1083cda21a15e236cc3581bab329238c71cdac720e1d1c08339633b6cb1c5",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death. Those who are in earnest do not die, those who are thoughtless are as if dead already.",
+      "rights": {
+        "basis": "Author died ancient. Translator: F. Max Müller, died 1900. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2017"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "f69de0fef89409005a7cfce2557319cc78c91dbcdfee2c110ef7cb7285ef320a",
+      "source_locator": "Chapter I. The Twin-Verses; paragraph 22 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2017",
+      "translator": "F. Max Müller",
+      "work_date": "1881 translation",
+      "date": "2026-09-12",
+      "selected_on": "2026-09-12",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-4908f6587751b47c0503da40",
+      "path": "culture/culture-4908f6587751b47c0503da40/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death.",
+          "url": "https://www.gutenberg.org/ebooks/2017",
+          "date": "1881 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "12 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-12",
+      "summary_basis": "Selected 12 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Earnestness is the path of immortality (Nirvana), thoughtlessness the path of death. Those who are in earnest do not die, those who are thoughtless are as if dead already.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/32/Franz_Liszt_-_Un_Sospiro_Etude%2C_Db_Major.ogg",
+      "creator": "Franz Liszt",
+      "creator_origin": "Hungarian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Liszt. 6 minutes to listen.",
+      "duration_seconds": 361,
+      "headline": "Franz Liszt - Un Sospiro Etude, Db Major",
+      "key": "culture:10f5b14c0c59de045d497d09",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Franz_Liszt_-_Un_Sospiro_Etude%2C_Db_Major.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Liszt",
+      "original_recording_title": "Franz Liszt - Un Sospiro Etude, Db Major",
+      "provenance_id": "commons:1066033",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Franz Liszt",
+      "recording_description": "Un Sospiro Etude, Db Major",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Franz Liszt",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Franz_Liszt_-_Un_Sospiro_Etude,_Db_Major.ogg",
+      "work_date": "Unknown date",
+      "date": "2026-09-12",
+      "selected_on": "2026-09-12",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-10f5b14c0c59de045d497d09",
+      "path": "culture/culture-10f5b14c0c59de045d497d09/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Franz Liszt - Un Sospiro Etude, Db Major",
+          "url": "https://commons.wikimedia.org/wiki/File:Franz_Liszt_-_Un_Sospiro_Etude,_Db_Major.ogg",
+          "date": "Unknown date",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "12 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-12",
+      "summary_basis": "Selected 12 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "a58b09ae7b7087cc3c4cb26af24e92c34b07d94b8a45b019a3f0889edd819337",
       "creator": "Sarojini Naidu",
       "creator_origin": "Indian",

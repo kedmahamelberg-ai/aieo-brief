@@ -1457,6 +1457,88 @@
       },
       "output_sha256": "df949d9abe7f1a82171b053ce123bc41d2b4ab6fa5aa73720ca2f72ff31ec2a4",
       "policy": "brief-english-display-v1"
+    },
+    "346c0f6793e1816c1e0bef691c1fe5cab7a3ee80f34e5954817f82d3c20a3e4e": {
+      "english": {
+        "0": "Patamanjari Ragini of Dipak, from a Ragamala",
+        "1": "Patamanjari Ragini of Dipak, from a Ragamala. Gum tempera and ink on paper.",
+        "2": "Patamanjari Ragini of Dipak, from a Ragamala",
+        "3": "CC0 image",
+        "4": "Patamanjari Ragini of Dipak, from a Ragamala"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e76f852e2abc61627e479c609dc7b02edc59e6b935565bd79354783f786356d1",
+      "policy": "brief-english-display-v1"
+    },
+    "fc41e15ea86707e563d822bf449d1ce0c7a65b24ec4c5a4f255c1443a70d3e89": {
+      "english": {
+        "0": "Indian · Bengali"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b7ccf3d3d448eb480d886a9fb5869d9a342b5730e324c8827acef15690a07025",
+      "policy": "brief-english-display-v1"
+    },
+    "48c2a4b779926a9ddbfec4abf695af0a6e5c97edbd5832377555ddd9feca0ac5": {
+      "english": {
+        "0": "English",
+        "1": "A poem by William Blake."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "737fcc285c7e98749ae992d7e669289b9179b3c5a704ad9373abfa691b5885e1",
+      "policy": "brief-english-display-v1"
+    },
+    "4ba4ac834acf52017017ad328bb824a5ec936f71f6938002e5cd5e85467d0e73": {
+      "english": {
+        "0": "Hungarian",
+        "1": "Composer",
+        "2": "Franz Liszt - Un Sospiro Etude, Db Major",
+        "3": "Un Sospiro Etude, Db Major",
+        "4": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "5": "Franz Liszt - Un Sospiro Etude, Db Major"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "79dc5c89fb6eed8d6a5f9f31b730fce94b999ea0dd52974ec15dd86d18c60bee",
+      "policy": "brief-english-display-v1"
     }
   }
 }
