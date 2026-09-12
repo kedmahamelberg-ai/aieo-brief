@@ -1579,6 +1579,24 @@
       },
       "output_sha256": "f8f6105def71a881806a78806042a673bcce7256ce509515a2fa95baaec84010",
       "policy": "brief-english-display-v1"
+    },
+    "ad3dfcd91a5cf02de572f8075ffabd5b61f375e1a89cb705558331e0cb961b92": {
+      "english": {
+        "0": "Reporting from The French Review of Genealogy. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a0a191fa218b3da1c52e4bc7f2878848d317fcdd8c57ae39b7a8bd8f8b9e218e",
+      "policy": "brief-english-display-v1"
     }
   }
 }
