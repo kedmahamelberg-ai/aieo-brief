@@ -1,8 +1,8 @@
 {
   "schema_version": "aieo_research_public_v1",
-  "period_start": "2026-09-05",
-  "period_end": "2026-09-11",
-  "generated_at": "2026-09-11T16:41:45.798129+00:00",
+  "period_start": "2026-09-06",
+  "period_end": "2026-09-12",
+  "generated_at": "2026-09-12T15:32:29.318934+00:00",
   "papers": [
     {
       "key": "paper:c4483c1dedbc6347609474f1",
@@ -16,7 +16,7 @@
         "Claudius Gros"
       ],
       "institutions": [],
-      "source_verified_at": "2026-09-11T16:27:30.496000+00:00",
+      "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -24,15 +24,22 @@
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "1c8487f4412f5fb387a7d95d78fcb81e3a72d6d9e392da68b4c020f5c96fbc44",
-      "has_editorial": false,
-      "headline": "Distance generalization in transformers: why bother with positional encoding?",
-      "deck": "Open the original research record for the paper and its access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "has_editorial": true,
+      "headline": "arXiv researchers question positional encoding gains for distance generalization in transformers",
+      "deck": "A cautious look at how distance, not just context length, influences transformer performance with different positional encodings.",
+      "what_happened": "We construct two synthetic delay copy tasks with fixed context length but varying inter-token distances, testing whether schemes like RoPE or ALiBi improve distance resolution versus no positional encoding, and whether distance learning transfers depend on data diversity.",
+      "why_it_matters": "The study investigates mechanism-level questions about how distance and encoding choices affect transformer behavior, highlighting that results are context-dependent and not universal.",
+      "body_paragraphs": [
+        "This work examines distance generalization by altering the gaps between source and recall tokens while keeping the overall input length fixed. Using two synthetic delay tasks, the authors test whether RoPE or ALiBi provide better distance resolution than no encoding (NoPE) and how the variety of training distances affects outcomes.",
+        "They report that gains from specific encodings depend on setup and that understanding underlying mechanisms is key, rather than assuming universal improvements across all tasks or data.",
+        "limitation_1"
+      ],
+      "limitation": "Abstract-only scope; preprint status. Do not generalize results to real-world populations. The findings reflect controlled, synthetic tasks and should not be interpreted as universal performance guarantees.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1"
     },
     {
       "key": "paper:9eb8184bd94b781cf9d3d59f",
@@ -46,8 +53,8 @@
         "Longbo Huang"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-11T16:27:30.496000+00:00",
-      "source_verified_at": "2026-09-11T16:27:30.496000+00:00",
+      "affiliation_checked_at": "2026-09-12T15:30:34.842161+00:00",
+      "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -77,8 +84,8 @@
         "Li Charlie Xia"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-11T16:27:30.496000+00:00",
-      "source_verified_at": "2026-09-11T16:27:30.496000+00:00",
+      "affiliation_checked_at": "2026-09-12T15:30:34.842161+00:00",
+      "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -111,7 +118,7 @@
         "Yi Ding"
       ],
       "institutions": [],
-      "source_verified_at": "2026-09-11T16:27:30.496000+00:00",
+      "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -142,8 +149,8 @@
         "Taka Kato"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-11T16:27:30.496000+00:00",
-      "source_verified_at": "2026-09-11T16:27:30.496000+00:00",
+      "affiliation_checked_at": "2026-09-12T15:30:34.842161+00:00",
+      "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -151,15 +158,21 @@
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "3bf8374213086aee9c28887a0205b3b4b0161f3dcf2b2eeaaeaf271fb7144fa6",
-      "has_editorial": false,
-      "headline": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
-      "deck": "Open the original research record for the paper and its access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "has_editorial": true,
+      "headline": "arXiv researchers report Generative Marketing Mix Modeling links GEO and GEM to business impact with identification limits",
+      "deck": "A new abstract-only framework attempts to measure causal effects of Generative Engine Optimization and Generative Engine Marketing amidst incomplete data.",
+      "what_happened": "Researchers propose Generative Marketing Mix Modeling (GMMM) to estimate causal effects of GEO and GEM by combining generated-answer data, question counts, and notice probabilities, then comparing business responses under alternative sequences.",
+      "why_it_matters": "The method aims to separate potential effects of generative system exposure from other factors, but findings are based on abstract data and simulations, not full real-world validation.",
+      "body_paragraphs": [
+        "GMMM is designed to infer causal relationships when standard marketing data miss how often users see a firm's name in generated responses. By using simulated product recommendations in English and Japanese, the method explores how repeated generated answers and sponsored placements might influence outcomes.",
+        "The study clarifies that results rely on assumptions for identifiability and are not evidence of universal effects; it emphasizes the need for careful interpretation given data limitations and the abstract nature of the analysis."
+      ],
+      "limitation": "Abstract-only scope; the work is a preprint. No peer-reviewed validation or real-world causality can be concluded from the abstract. Efficacy depends on simulation assumptions and available notice probabilities.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1"
     },
     {
       "key": "paper:0d5e2d5b3a5727364a5be92f",
@@ -176,8 +189,8 @@
         "Luke Zettlemoyer"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-11T16:27:30.496000+00:00",
-      "source_verified_at": "2026-09-11T16:27:30.496000+00:00",
+      "affiliation_checked_at": "2026-09-12T15:30:34.842161+00:00",
+      "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",

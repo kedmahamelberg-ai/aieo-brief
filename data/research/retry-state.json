@@ -1,22 +1,14 @@
 {
-  "paper:19390e1e53b6297a2105106b": {
-    "attempts": 1,
-    "last_attempt": "2026-09-11T16:39:34.510891+00:00"
-  },
   "paper:3e00a358ccf1e278ebe24fec": {
-    "attempts": 1,
-    "last_attempt": "2026-09-11T16:40:10.060162+00:00"
+    "attempts": 2,
+    "last_attempt": "2026-09-12T15:31:00.275146+00:00"
   },
   "paper:92c048bbfc3785e7e4fc6ffe": {
-    "attempts": 1,
-    "last_attempt": "2026-09-11T16:40:42.777328+00:00"
+    "attempts": 2,
+    "last_attempt": "2026-09-12T15:31:23.939837+00:00"
   },
   "paper:9eb8184bd94b781cf9d3d59f": {
-    "attempts": 1,
-    "last_attempt": "2026-09-11T16:40:52.344826+00:00"
-  },
-  "paper:c4483c1dedbc6347609474f1": {
-    "attempts": 1,
-    "last_attempt": "2026-09-11T16:41:22.479343+00:00"
+    "attempts": 2,
+    "last_attempt": "2026-09-12T15:31:48.668021+00:00"
   }
 }
