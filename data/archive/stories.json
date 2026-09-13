@@ -2,6 +2,394 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Landscape with Fishermen",
+      "art_type": "Painting",
+      "balance_origin": "Korea",
+      "creator": "attributed to Yi Bul-hae (Korean, active 1500s)",
+      "creator_origin": "Korea, Joseon dynasty (1392–1910)",
+      "culture_type": "illustration",
+      "deck": "Landscape with Fishermen. hanging scroll; ink and slight color on silk.",
+      "headline": "Landscape with Fishermen",
+      "image_path": "assets/culture/97abbdb5c1d0736480efcec7.jpg",
+      "key": "culture:97abbdb5c1d0736480efcec7",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2015.516/2015.516_web.jpg",
+      "medium": "hanging scroll; ink and slight color on silk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2015.516",
+      "provenance_id": "cma:79932",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift from the Collection of George Gund III",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2015.516",
+      "work_date": "1600s",
+      "date": "2026-09-13",
+      "selected_on": "2026-09-13",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-97abbdb5c1d0736480efcec7",
+      "path": "culture/culture-97abbdb5c1d0736480efcec7/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Landscape with Fishermen",
+          "url": "https://clevelandart.org/art/2015.516",
+          "date": "1600s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-13",
+      "summary_basis": "Selected 13 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "9314e44b7873c9542714e4846e36e96fd2c0abb07aa53b73374ac4ab338cd93b",
+      "creator": "Hafiz",
+      "creator_origin": "Iranian · Persian",
+      "culture_type": "poetry",
+      "deck": "Divan of Hafiz · V, by Hafiz. Translated by Gertrude Bell.",
+      "excerpt": "Oh Turkish maid of Shiraz! in thy hand\n         If thou’lt take my heart, for the mole on thy cheek\n         I would barter Bokhara and Samarkand.\n         Bring, Cup-bearer, all that is left of thy wine!\n         In the Garden of Paradise vainly thou’lt seek\n         The lip of the fountain of Ruknabad,\n         And the bowers of Mosalla where roses twine.\n\n         They have filled the city with blood and broil,\n         Those soft-voiced Lulis for whom we sigh;\n         As Turkish robbers fall on the spoil,\n         They have robbed and plundered the peace of my heart.\n         Dowered is my mistress, a beggar am I;\n         What shall I bring her? a beautiful face\n         Needs nor jewel nor mole nor the tiring-maid’s art.\n\n         Brave tales of singers and wine relate,\n         The key to the Hidden ’twere vain to seek;\n         No wisdom of ours has unlocked that gate,\n         And locked to our wisdom it still shall be.\n         But of Joseph’s beauty the lute shall speak;\n         And the minstrel knows that Zuleika came forth,\n         Love parting the curtains of modesty.\n\n         When thou spokest ill of thy servant ’twas well—\n         God pardon thee! for thy words were sweet;\n         Not unwelcomed the bitterest answer fell\n         From lips where the ruby and sugar lay.\n         But, fair Love, let good counsel direct thy feet;\n         Far dearer to youth than dear life itself\n         Are the warnings of one grown wise—and grey!\n\n         The song is sung and the pearl is strung;\n         Come hither, oh Hafiz, and sing again!\n         And the listening Heavens above thee hung\n         Shall loose o’er thy verse the Pleiades’ chain.",
+      "headline": "Divan of Hafiz · V",
+      "key": "culture:75feac0bd22928e4467eb89d",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Oh Turkish maid of Shiraz! in thy hand",
+        "         If thou’lt take my heart, for the mole on thy cheek",
+        "         I would barter Bokhara and Samarkand.",
+        "         Bring, Cup-bearer, all that is left of thy wine!",
+        "         In the Garden of Paradise vainly thou’lt seek",
+        "         The lip of the fountain of Ruknabad,",
+        "         And the bowers of Mosalla where roses twine.",
+        "",
+        "         They have filled the city with blood and broil,",
+        "         Those soft-voiced Lulis for whom we sigh;",
+        "         As Turkish robbers fall on the spoil,",
+        "         They have robbed and plundered the peace of my heart.",
+        "         Dowered is my mistress, a beggar am I;",
+        "         What shall I bring her? a beautiful face",
+        "         Needs nor jewel nor mole nor the tiring-maid’s art.",
+        "",
+        "         Brave tales of singers and wine relate,",
+        "         The key to the Hidden ’twere vain to seek;",
+        "         No wisdom of ours has unlocked that gate,",
+        "         And locked to our wisdom it still shall be.",
+        "         But of Joseph’s beauty the lute shall speak;",
+        "         And the minstrel knows that Zuleika came forth,",
+        "         Love parting the curtains of modesty.",
+        "",
+        "         When thou spokest ill of thy servant ’twas well—",
+        "         God pardon thee! for thy words were sweet;",
+        "         Not unwelcomed the bitterest answer fell",
+        "         From lips where the ruby and sugar lay.",
+        "         But, fair Love, let good counsel direct thy feet;",
+        "         Far dearer to youth than dear life itself",
+        "         Are the warnings of one grown wise—and grey!",
+        "",
+        "         The song is sung and the pearl is strung;",
+        "         Come hither, oh Hafiz, and sing again!",
+        "         And the listening Heavens above thee hung",
+        "         Shall loose o’er thy verse the Pleiades’ chain."
+      ],
+      "provenance_id": "pg:74883:poem:fa0f54443bdbcf9bb63f941f54b4cbc6aa695ffff0e948277ecf6b623be6e724",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 14th century. Translator: Gertrude Bell, died 1926. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/74883"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ed837d62a8df162d16126a48d3505e7369407ad71e9eabc9372291e34365bddb",
+      "source_locator": "V",
+      "source_url": "https://www.gutenberg.org/ebooks/74883",
+      "translator": "Gertrude Bell",
+      "work_date": "1897 translation",
+      "date": "2026-09-13",
+      "selected_on": "2026-09-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-75feac0bd22928e4467eb89d",
+      "path": "culture/culture-75feac0bd22928e4467eb89d/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Divan of Hafiz · V",
+          "url": "https://www.gutenberg.org/ebooks/74883",
+          "date": "1897 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-13",
+      "summary_basis": "Selected 13 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Oh Turkish maid of Shiraz! in thy hand\n         If thou’lt take my heart, for the mole on thy cheek\n         I would barter Bokhara and Samarkand.\n         Bring, Cup-bearer, all that is left of thy wine!\n         In the Garden of Paradise vainly thou’lt seek\n         The lip of the fountain of Ruknabad,\n         And the bowers of Mosalla where roses twine.\n\n         They have filled the city with blood and broil,\n         Those soft-voiced Lulis for whom we sigh;\n         As Turkish robbers fall on the spoil,\n         They have robbed and plundered the peace of my heart.\n         Dowered is my mistress, a beggar am I;\n         What shall I bring her? a beautiful face\n         Needs nor jewel nor mole nor the tiring-maid’s art.\n\n         Brave tales of singers and wine relate,\n         The key to the Hidden ’twere vain to seek;\n         No wisdom of ours has unlocked that gate,\n         And locked to our wisdom it still shall be.\n         But of Joseph’s beauty the lute shall speak;\n         And the minstrel knows that Zuleika came forth,\n         Love parting the curtains of modesty.\n\n         When thou spokest ill of thy servant ’twas well—\n         God pardon thee! for thy words were sweet;\n         Not unwelcomed the bitterest answer fell\n         From lips where the ruby and sugar lay.\n         But, fair Love, let good counsel direct thy feet;\n         Far dearer to youth than dear life itself\n         Are the warnings of one grown wise—and grey!\n\n         The song is sung and the pearl is strung;\n         Come hither, oh Hafiz, and sing again!\n         And the listening Heavens above thee hung\n         Shall loose o’er thy verse the Pleiades’ chain.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "b7ffa0f176477d295532fb428a5787fab4df0b61169d6e9ab4b7d1e417aa2c7d",
+      "creator": "Francis Bacon",
+      "creator_origin": "English",
+      "culture_type": "quote",
+      "deck": "From Essays.",
+      "excerpt": "Wisdom for a man's self is, in many branches thereof, a depraved thing.",
+      "headline": "Wisdom for a man's self is, in many branches thereof, a depraved thing.",
+      "key": "culture:4258d22778339512066df689",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:575:quote:b7ffa0f176477d295532fb428a5787fab4df0b61169d6e9ab4b7d1e417aa2c7d",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Wisdom for a man's self is, in many branches thereof, a depraved thing. It is the wisdom of rats, that will be sure to leave a house, somewhat before it fall. It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him. It is the wisdom of crocodiles, that shed tears when they would devour. But that which is specially to be noted is, that those which (as Cicero says of Pompey) are sui amantes, sine rivali, are many times unfortunate. And whereas they have, all their times, sacrificed to themselves, they become in the end, themselves sacrifices to the inconstancy of fortune, whose wings they thought, by their self-wisdom, to have pinioned.",
+      "rights": {
+        "basis": "Author died 1626. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/575"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1e8cae20a522dc2c3af515c7903974e38299c215afdf22708699cc478c409f4e",
+      "source_locator": "Of Truth; paragraph 150 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/575",
+      "translator": "",
+      "work_date": "1625",
+      "date": "2026-09-13",
+      "selected_on": "2026-09-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-4258d22778339512066df689",
+      "path": "culture/culture-4258d22778339512066df689/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Wisdom for a man's self is, in many branches thereof, a depraved thing.",
+          "url": "https://www.gutenberg.org/ebooks/575",
+          "date": "1625",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-13",
+      "summary_basis": "Selected 13 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Wisdom for a man's self is, in many branches thereof, a depraved thing.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Wisdom for a man's self is, in many branches thereof, a depraved thing. It is the wisdom of rats, that will be sure to leave a house, somewhat before it fall. It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him. It is the wisdom of crocodiles, that shed tears when they would devour. But that which is specially to be noted is, that those which (as Cicero says of Pompey) are sui amantes, sine rivali, are many times unfortunate. And whereas they have, all their times, sacrificed to themselves, they become in the end, themselves sacrifices to the inconstancy of fortune, whose wings they thought, by their self-wisdom, to have pinioned.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Faur%C3%A9_-_Violin_Sonata_No._1_-_III._Scherzo._Allegro_vivo.ogg",
+      "creator": "Gabriel Fauré",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Gabriel Fauré. 4 minutes to listen.",
+      "duration_seconds": 249,
+      "headline": "Fauré - Violin Sonata No. 1 - III. Scherzo. Allegro vivo",
+      "key": "culture:281691a816d128db0ddfcc19",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Faur%C3%A9_-_Violin_Sonata_No._1_-_III._Scherzo._Allegro_vivo.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Gabriel_Faur%C3%A9",
+      "original_recording_title": "Fauré - Violin Sonata No. 1 - III. Scherzo. Allegro vivo",
+      "provenance_id": "commons:98752183",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Yeh Che-Jui, Chiayi Symphony Orchestra",
+      "recording_description": "Violin Sonata No. 1 in A major, Op. 13, by Gabriel Fauré. Performed by Yeh Che-Jui in 2019.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Yeh Che-Jui, Chiayi Symphony Orchestra",
+        "label": "CC BY 3.0 (source-declared)",
+        "source_credit": "YouTube : https://www.youtube.com/watch?v=xFJVAWkAWf4 – View/save archived versions on archive.org",
+        "url": "https://creativecommons.org/licenses/by/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Faur%C3%A9_-_Violin_Sonata_No._1_-_III._Scherzo._Allegro_vivo.ogg",
+      "work_date": "2019",
+      "date": "2026-09-13",
+      "selected_on": "2026-09-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-281691a816d128db0ddfcc19",
+      "path": "culture/culture-281691a816d128db0ddfcc19/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Fauré - Violin Sonata No. 1 - III. Scherzo. Allegro vivo",
+          "url": "https://commons.wikimedia.org/wiki/File:Faur%C3%A9_-_Violin_Sonata_No._1_-_III._Scherzo._Allegro_vivo.ogg",
+          "date": "2019",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-13",
+      "summary_basis": "Selected 13 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "0bf3f6d8cc406c850dd4483bfb67de63d402fbd518f6e4af574f93447472c5f1",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "text",
+      "deck": "A passage from Tao Te Ching. Translated by James Legge.",
+      "excerpt": "The multitude of men look satisfied and pleased; as if enjoying a full banquet, as if mounted on a tower in spring. I alone seem listless and still, my desires having as yet given no indication of their presence. I am like an infant which has not yet smiled. I look dejected and forlorn, as if I had no home to go to. The multitude of men all have enough and to spare. I alone seem to have lost everything. My mind is that of a stupid man; I am in a state of chaos.",
+      "headline": "Tao Te Ching · a short reading",
+      "key": "culture:060fbc3929a9704cf8ef742a",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:passage:0bf3f6d8cc406c850dd4483bfb67de63d402fbd518f6e4af574f93447472c5f1",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 62 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-09-13",
+      "selected_on": "2026-09-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-060fbc3929a9704cf8ef742a",
+      "path": "culture/culture-060fbc3929a9704cf8ef742a/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Tao Te Ching · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-13",
+      "summary_basis": "Selected 13 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The multitude of men look satisfied and pleased; as if enjoying a full banquet, as if mounted on a tower in spring. I alone seem listless and still, my desires having as yet given no indication of their presence. I am like an infant which has not yet smiled. I look dejected and forlorn, as if I had no home to go to. The multitude of men all have enough and to spare. I alone seem to have lost everything. My mind is that of a stupid man; I am in a state of chaos.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Patamanjari Ragini of Dipak, from a Ragamala",
       "art_type": "Painting",
       "balance_origin": "Northern India",

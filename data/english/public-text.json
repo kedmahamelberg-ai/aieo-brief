@@ -1617,6 +1617,85 @@
       },
       "output_sha256": "43e7ff637e0e1a72a9ee5453094648adc410bd7099e976ba373b77c686b7b747",
       "policy": "brief-english-display-v1"
+    },
+    "7dddebc9c714426dfc4bff4f1061441741cd5f01fdf1afdb4014bf30a13ff466": {
+      "english": {
+        "0": "Korea, Joseon dynasty (1392–1910)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "50fdd118c4b555739194b61a7c771a0101cd2126e894878b9b572b4c783a399a",
+      "policy": "brief-english-display-v1"
+    },
+    "1ac730c8704ec6b7cdc3ee94902491c981067399512b3e1d980fe0ec68ada8b5": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Divan of Hafiz · V",
+        "2": "V",
+        "3": "Divan of Hafiz · V"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b06557f48b7f35e3195d4ad6e514d9279659c9b143a88039638de2d47f64fc1a",
+      "policy": "brief-english-display-v1"
+    },
+    "a91b8aee4308ca9c315c2e27ca481db9bd3ccaea8b688c82fd61d202277b00da": {
+      "english": {
+        "0": "Composer",
+        "1": "Fauré - Violin Sonata No. 1 - III. Scherzo. Allegro vivo",
+        "2": "YouTube : https://www.youtube.com/watch?v=xFJVAWkAWf4 – View/save archived versions on archive.org",
+        "3": "Fauré - Violin Sonata No. 1 - III. Scherzo. Allegro vivo"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "27e8d0b6cff973be1e3dd25e45f2085dde36dcdff650083f98a189c8c8e527d5",
+      "policy": "brief-english-display-v1"
+    },
+    "3c93b40fd5981fa98e9ba7400f510087c8b69fecac2173e4ddf0bdc431f43a62": {
+      "english": {
+        "0": "Tao Te Ching"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9b973b18cd1df75017f359e75e3dbb336b61712579d0ebe1d79d97f31145c860",
+      "policy": "brief-english-display-v1"
     }
   }
 }
