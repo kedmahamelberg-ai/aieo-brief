@@ -13,9 +13,9 @@
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
         "deck": "Across the five discovery markets, everyday use met work and skills. The balance differed by reporting stream.",
-        "summary": "China: selected reporting leaned toward work and skills, with “[New Advantages in Forging] AI HUB of School of Artificial Intelligence…” as one visible signal. United States: selected reporting leaned toward work and skills, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal. United Kingdom: selected reporting leaned toward everyday use, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal. France: the discovery stream centred most often on work and skills, including “Call for Papers: Museum International: \"Artificial Intelligence in Museums.” Canada: the discovery stream centred most often on rules and rights, including “Can Artificial Intelligence Predict the Right Partner for You?.”",
+        "summary": "China: selected reporting leaned toward work and skills, with “China Unicom Yuanjing Co-authors Token Operations Standard, with clear scope and…” as one visible signal. United States: selected reporting leaned toward work and skills, with “FDA TEMPO Pilot Lets Generative AI Medical Devices Trial Through Before…” as one visible signal. United Kingdom: selected reporting leaned toward everyday use, with “AI’s unseen risks demand international action, but dangers may arrive quietly…” as one visible signal. France: the discovery stream centred most often on work and skills, including “Bank of England Chief Warns AI Frontiers Could Slow Global Economy….” Canada: the discovery stream centred most often on rules and rights, including “Canada's Five Principles for Regulating Future Data Centers: Government Framing with….”",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
-        "word_count": 137,
+        "word_count": 145,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
         "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
@@ -29,12 +29,12 @@
             "name": "China",
             "count": 23,
             "topic": "Work And Skills",
-            "sentence": "China: selected reporting leaned toward work and skills, with “[New Advantages in Forging] AI HUB of School of Artificial Intelligence…” as one visible signal.",
+            "sentence": "China: selected reporting leaned toward work and skills, with “China Unicom Yuanjing Co-authors Token Operations Standard, with clear scope and…” as one visible signal.",
             "story": {
-              "headline": "[New Advantages in Forging] AI HUB of School of Artificial Intelligence, Dalian University of Technology Officially Established",
-              "path": "story/development-732f0944-c89f-4789-b57b-03eaa38945a1/index.html",
-              "publisher": "Dalian University of Technology News Network",
-              "source_url": "https://news.dlut.edu.cn/info/1022/151335.htm"
+              "headline": "China Unicom Yuanjing Co-authors Token Operations Standard, with clear scope and limits",
+              "path": "story/development-dd9a2ad1-9b6d-41bf-95c9-3f48c924a9f5/index.html",
+              "publisher": "Xinhua Net",
+              "source_url": ""
             }
           },
           {
@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 19,
             "topic": "Work And Skills",
-            "sentence": "United States: selected reporting leaned toward work and skills, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal.",
+            "sentence": "United States: selected reporting leaned toward work and skills, with “FDA TEMPO Pilot Lets Generative AI Medical Devices Trial Through Before…” as one visible signal.",
             "story": {
-              "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
-              "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
-              "publisher": "Greater Good: The Science of a Meaningful Life",
-              "source_url": "https://greatergood.berkeley.edu/article/item/can_artificial_intelligence_predict_the_right_partner_for_you"
+              "headline": "FDA TEMPO Pilot Lets Generative AI Medical Devices Trial Through Before Full Authorization, Regulators Say",
+              "path": "story/development-1f5689b2-f6f1-42f9-8e86-9bbdc0d1b6ba/index.html",
+              "publisher": "STAT",
+              "source_url": "https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 18,
             "topic": "Everyday Use",
-            "sentence": "United Kingdom: selected reporting leaned toward everyday use, with “Can Artificial Intelligence Predict the Right Partner for You?” as one visible signal.",
+            "sentence": "United Kingdom: selected reporting leaned toward everyday use, with “AI’s unseen risks demand international action, but dangers may arrive quietly…” as one visible signal.",
             "story": {
-              "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
-              "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
-              "publisher": "Greater Good: The Science of a Meaningful Life",
-              "source_url": "https://greatergood.berkeley.edu/article/item/can_artificial_intelligence_predict_the_right_partner_for_you"
+              "headline": "AI’s unseen risks demand international action, but dangers may arrive quietly, not with a bang",
+              "path": "story/development-119227b7-8482-42b4-840a-8f6c8038f964/index.html",
+              "publisher": "The Guardian",
+              "source_url": "https://www.theguardian.com/technology/2026/aug/30/ais-worst-disasters-will-arrive-unannounced"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 11,
             "topic": "Work And Skills",
-            "sentence": "France: the discovery stream centred most often on work and skills, including “Call for Papers: Museum International: \"Artificial Intelligence in Museums.”",
+            "sentence": "France: the discovery stream centred most often on work and skills, including “Bank of England Chief Warns AI Frontiers Could Slow Global Economy….”",
             "story": {
-              "headline": "Call for Papers: Museum International: \"Artificial Intelligence in Museums",
-              "path": "story/development-71fecc86-aff2-4922-adf1-3629c78740a4/index.html",
-              "publisher": "International Council of Museums",
-              "source_url": "https://icom.museum/en/news/call-for-papers-museum-international-artificial-intelligence-in-museums"
+              "headline": "Bank of England Chief Warns AI Frontiers Could Slow Global Economy; Limits and Governance Noted",
+              "path": "story/development-9a00aba1-9893-4596-a882-f4441e0b2bd8/index.html",
+              "publisher": "BFM",
+              "source_url": "https://www.bfmtv.com/tech/intelligence-artificielle/l-intelligence-artificielle-fait-peser-un-risque-grave-sur-l-economie-mondiale-previent-le-gouverneur-de-la-banque-d-angleterre_AN-202609010334.html"
             }
           },
           {
@@ -81,12 +81,12 @@
             "name": "Canada",
             "count": 41,
             "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Can Artificial Intelligence Predict the Right Partner for You?.”",
+            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Canada's Five Principles for Regulating Future Data Centers: Government Framing with….”",
             "story": {
-              "headline": "Can Artificial Intelligence Predict the Right Partner for You?",
-              "path": "story/development-6c9295a1-b05b-4460-ae35-f0804f206ae7/index.html",
-              "publisher": "Greater Good: The Science of a Meaningful Life",
-              "source_url": "https://greatergood.berkeley.edu/article/item/can_artificial_intelligence_predict_the_right_partner_for_you"
+              "headline": "Canada's Five Principles for Regulating Future Data Centers: Government Framing with Local Gains",
+              "path": "story/development-ccb8f41c-96e0-4993-9260-17382a5faa13/index.html",
+              "publisher": "Radio-Canada",
+              "source_url": "https://ici.radio-canada.ca/nouvelle/2280517/cadre-national-ia"
             }
           }
         ],
@@ -142,7 +142,7 @@
         "paper_count": 13,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "22e222391a704945dc5fcadedcfed74c167f483aedce546aad7121760a18eadf"
+      "content_sha256": "9ea793d309dc89a0113d69cfb00e2c048a8ab20865750dbaa9bebc484b6a9dc6"
     }
   ]
 }

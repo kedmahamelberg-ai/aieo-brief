@@ -1696,6 +1696,62 @@
       },
       "output_sha256": "9b973b18cd1df75017f359e75e3dbb336b61712579d0ebe1d79d97f31145c860",
       "policy": "brief-english-display-v1"
+    },
+    "3dfda10ad728a1fb7c82556838c2a199f2256be6e772aac702921c31d2cd620d": {
+      "english": {
+        "0": "Dalian University of Technology News Network",
+        "1": "Dalian University of Technology News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9668142d8aca4b681e79544616b9a251f933f5a02ce458219454813b51b736d4",
+      "policy": "brief-english-display-v1"
+    },
+    "82e9b351467f832f4b4e8e88598e5d517334cb7cba84efee6b18d9c8ac977adc": {
+      "english": {
+        "0": "Scranton Faculty Say Papal Encyclical on AI Encourages Dialogue, Not a Full Critique"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a6ec0bee3323cb0139d101bceb5ac6ef6db9d93f18f501c0af835be03d7f0e64",
+      "policy": "brief-english-display-v1"
+    },
+    "403d604cabb482dad2b0dbf014ad0e2c21364c634b9ac2d5648b45a9ae12f2f7": {
+      "english": {
+        "0": "Jiangsu Provincial Party Committee News Network",
+        "1": "Jiangsu Provincial Party Committee News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5a55a9f1531501854f40223ec025e81a57556303e863df7795923d63d2200619",
+      "policy": "brief-english-display-v1"
     }
   }
 }
