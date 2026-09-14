@@ -2,6 +2,393 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Timaeus",
+      "content_fingerprint": "338df54e3901c1b93ab4844e0dc04ef9a05fab00138bd55ae2f1aa65a68ceb8f",
+      "creator": "Plato",
+      "creator_origin": "Greek",
+      "culture_type": "text",
+      "deck": "A passage from Timaeus. Translated by Benjamin Jowett.",
+      "excerpt": "Such as we have seen, is the nature and such are the causes of respiration,—the subject in which this discussion originated. For the fire cuts the food and following the breath surges up within, fire and breath rising together and filling the veins by drawing up out of the belly and pouring into them the cut portions of the food; and so the streams of food are kept flowing through the whole body in all animals. And fresh cuttings from kindred substances, whether the fruits of the earth or herb of the field, which God planted to be our daily food, acquire all sorts of colours by their inter-mixture; but red is the most pervading of them, being created by the cutting action of fire and by the impression which it makes on a moist substance; and hence the liquid which circulates in the body has a colour such as we have described. The liquid itself we call blood, which nourishes the flesh and the whole body, whence all parts are watered and empty places filled.",
+      "headline": "Timaeus · a short reading",
+      "key": "culture:dcbde744f3d9dfa4da396403",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1572:passage:338df54e3901c1b93ab4844e0dc04ef9a05fab00138bd55ae2f1aa65a68ceb8f",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died -348. Translator: Benjamin Jowett, died 1893. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1572"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af8576f807a2d709ec13daf55fba8d0285af1ba15dcdb466bc50ae1d5080f7ad",
+      "source_locator": "PERSONS OF THE DIALOGUE: Socrates, Critias, Timaeus, Hermocrates.; paragraph 113 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1572",
+      "translator": "Benjamin Jowett",
+      "work_date": "1892 translation",
+      "date": "2026-09-14",
+      "selected_on": "2026-09-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dcbde744f3d9dfa4da396403",
+      "path": "culture/culture-dcbde744f3d9dfa4da396403/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Timaeus · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/1572",
+          "date": "1892 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-14",
+      "summary_basis": "Selected 14 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Such as we have seen, is the nature and such are the causes of respiration,—the subject in which this discussion originated. For the fire cuts the food and following the breath surges up within, fire and breath rising together and filling the veins by drawing up out of the belly and pouring into them the cut portions of the food; and so the streams of food are kept flowing through the whole body in all animals. And fresh cuttings from kindred substances, whether the fruits of the earth or herb of the field, which God planted to be our daily food, acquire all sorts of colours by their inter-mixture; but red is the most pervading of them, being created by the cutting action of fire and by the impression which it makes on a moist substance; and hence the liquid which circulates in the body has a colour such as we have described. The liquid itself we call blood, which nourishes the flesh and the whole body, whence all parts are watered and empty places filled.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "dbab04bc3cb6683749a0b71afc6ada589bdb8864d29a4770cf62717b117fd19a",
+      "creator": "John Keats",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by John Keats.",
+      "excerpt": "Season of mists and mellow fruitfulness,\nClose bosom-friend of the maturing sun;\nConspiring with him how to load and bless\nWith fruit the vines that round the thatch-eaves run;\nTo bend with apples the mossed cottage-trees,\nAnd fill all fruit with ripeness to the core;\nTo swell the gourd, and plump the hazel shells\nWith a sweet kernel; to set budding more,\nAnd still more, later flowers for the bees,\nUntil they think warm days will never cease,\nFor Summer has o'er-brimmed their clammy cell.\n\nWho hath not seen thee oft amid thy store?\nSometimes whoever seeks abroad may find\nThee sitting careless on a granary floor,\nThy hair soft-lifted by the winnowing wind;\nOr on a half-reaped furrow sound asleep,\nDrowsed with the fume of poppies, while thy hook\nSpares the next swath and all its twined flowers;\nAnd sometimes like a gleaner thou dost keep\nSteady thy laden head across a brook;\nOr by a cider-press, with patient look,\nThou watchest the last oozings, hours by hours.\n\nWhere are the songs of Spring? Ay, where are they?\nThink not of them, thou hast thy music too,---\nWhile barred clouds bloom the soft-dying day,\nAnd touch the stubble-plains with rosy hue;\nThen in a wailful choir, the small gnats mourn\nAmong the river sallows, borne aloft\nOr sinking as the light wind lives or dies;\nAnd full-grown lambs loud bleat from hilly bourn;\nHedge-crickets sing; and now with treble soft\nThe redbreast whistles from a garden-croft,\nAnd gathering swallows twitter in the skies.",
+      "headline": "Ode To Autumn",
+      "key": "culture:a53d3b15ffcb98bf9729395f",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Season of mists and mellow fruitfulness,",
+        "Close bosom-friend of the maturing sun;",
+        "Conspiring with him how to load and bless",
+        "With fruit the vines that round the thatch-eaves run;",
+        "To bend with apples the mossed cottage-trees,",
+        "And fill all fruit with ripeness to the core;",
+        "To swell the gourd, and plump the hazel shells",
+        "With a sweet kernel; to set budding more,",
+        "And still more, later flowers for the bees,",
+        "Until they think warm days will never cease,",
+        "For Summer has o'er-brimmed their clammy cell.",
+        "",
+        "Who hath not seen thee oft amid thy store?",
+        "Sometimes whoever seeks abroad may find",
+        "Thee sitting careless on a granary floor,",
+        "Thy hair soft-lifted by the winnowing wind;",
+        "Or on a half-reaped furrow sound asleep,",
+        "Drowsed with the fume of poppies, while thy hook",
+        "Spares the next swath and all its twined flowers;",
+        "And sometimes like a gleaner thou dost keep",
+        "Steady thy laden head across a brook;",
+        "Or by a cider-press, with patient look,",
+        "Thou watchest the last oozings, hours by hours.",
+        "",
+        "Where are the songs of Spring? Ay, where are they?",
+        "Think not of them, thou hast thy music too,---",
+        "While barred clouds bloom the soft-dying day,",
+        "And touch the stubble-plains with rosy hue;",
+        "Then in a wailful choir, the small gnats mourn",
+        "Among the river sallows, borne aloft",
+        "Or sinking as the light wind lives or dies;",
+        "And full-grown lambs loud bleat from hilly bourn;",
+        "Hedge-crickets sing; and now with treble soft",
+        "The redbreast whistles from a garden-croft,",
+        "And gathering swallows twitter in the skies."
+      ],
+      "provenance_id": "poetrydb:John Keats:Ode To Autumn",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1821.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "7dde6ad36cd94b7014a0a880411ddf7b0d6518a4a104e7c403a501d5631a27c7",
+      "source_locator": "Ode To Autumn",
+      "source_url": "https://poetrydb.org/title/Ode%20To%20Autumn:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1821",
+      "date": "2026-09-14",
+      "selected_on": "2026-09-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a53d3b15ffcb98bf9729395f",
+      "path": "culture/culture-a53d3b15ffcb98bf9729395f/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Ode To Autumn",
+          "url": "https://poetrydb.org/title/Ode%20To%20Autumn:abs/lines.text",
+          "date": "Before 1821",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-14",
+      "summary_basis": "Selected 14 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Season of mists and mellow fruitfulness,\nClose bosom-friend of the maturing sun;\nConspiring with him how to load and bless\nWith fruit the vines that round the thatch-eaves run;\nTo bend with apples the mossed cottage-trees,\nAnd fill all fruit with ripeness to the core;\nTo swell the gourd, and plump the hazel shells\nWith a sweet kernel; to set budding more,\nAnd still more, later flowers for the bees,\nUntil they think warm days will never cease,\nFor Summer has o'er-brimmed their clammy cell.\n\nWho hath not seen thee oft amid thy store?\nSometimes whoever seeks abroad may find\nThee sitting careless on a granary floor,\nThy hair soft-lifted by the winnowing wind;\nOr on a half-reaped furrow sound asleep,\nDrowsed with the fume of poppies, while thy hook\nSpares the next swath and all its twined flowers;\nAnd sometimes like a gleaner thou dost keep\nSteady thy laden head across a brook;\nOr by a cider-press, with patient look,\nThou watchest the last oozings, hours by hours.\n\nWhere are the songs of Spring? Ay, where are they?\nThink not of them, thou hast thy music too,---\nWhile barred clouds bloom the soft-dying day,\nAnd touch the stubble-plains with rosy hue;\nThen in a wailful choir, the small gnats mourn\nAmong the river sallows, borne aloft\nOr sinking as the light wind lives or dies;\nAnd full-grown lambs loud bleat from hilly bourn;\nHedge-crickets sing; and now with treble soft\nThe redbreast whistles from a garden-croft,\nAnd gathering swallows twitter in the skies.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Col. F. G. Oldham (recto, top)",
+      "art_type": "Photograph",
+      "balance_origin": "India",
+      "creator": "Raja Deen Dayal (Indian, 1844–1905)",
+      "creator_origin": "India",
+      "culture_type": "illustration",
+      "deck": "Col. F. G. Oldham (recto, top). albumen print.",
+      "headline": "Col. F. G. Oldham (recto, top)",
+      "image_path": "assets/culture/571586e7f1135bd3b06c25f5.jpg",
+      "key": "culture:571586e7f1135bd3b06c25f5",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2023.121.19.1/2023.121.19.1_web.jpg",
+      "medium": "albumen print",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2023.121.19.1",
+      "provenance_id": "cma:664316",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2023.121.19.1",
+      "work_date": "c. 1882–87",
+      "date": "2026-09-14",
+      "selected_on": "2026-09-14",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-571586e7f1135bd3b06c25f5",
+      "path": "culture/culture-571586e7f1135bd3b06c25f5/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Col. F. G. Oldham (recto, top)",
+          "url": "https://clevelandart.org/art/2023.121.19.1",
+          "date": "c. 1882–87",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-14",
+      "summary_basis": "Selected 14 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Walden",
+      "content_fingerprint": "3d5f7fbbd5526e4dcd9ce3b45e5879c5536f84b8af00aba8751d362d4a8e6dcd",
+      "creator": "Henry David Thoreau",
+      "creator_origin": "American",
+      "culture_type": "quote",
+      "deck": "From Walden.",
+      "excerpt": "The finest qualities of our nature, like the bloom on fruits, can be preserved only by the most delicate handling.",
+      "headline": "The finest qualities of our nature, like the bloom on fruits, can be preserved only by the most delicate handling.",
+      "key": "culture:3c4c22fe734e216f60c6c365",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:205:quote:3d5f7fbbd5526e4dcd9ce3b45e5879c5536f84b8af00aba8751d362d4a8e6dcd",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Most men, even in this comparatively free country, through mere ignorance and mistake, are so occupied with the factitious cares and superfluously coarse labors of life that its finer fruits cannot be plucked by them. Their fingers, from excessive toil, are too clumsy and tremble too much for that. Actually, the laboring man has not leisure for a true integrity day by day; he cannot afford to sustain the manliest relations to men; his labor would be depreciated in the market. He has no time to be anything but a machine. How can he remember well his ignorance—which his growth requires—who has so often to use his knowledge? We should feed and clothe him gratuitously sometimes, and recruit him with our cordials, before we judge of him. The finest qualities of our nature, like the bloom on fruits, can be preserved only by the most delicate handling. Yet we do not treat ourselves nor one another thus tenderly.",
+      "rights": {
+        "basis": "Author died 1862. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ae102eeb00d51790a6b024d8b6c73d3b5cc6d63b47fea3cd532c9678a6935469",
+      "source_locator": "Economy; paragraph 15 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "translator": "",
+      "work_date": "1854",
+      "date": "2026-09-14",
+      "selected_on": "2026-09-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3c4c22fe734e216f60c6c365",
+      "path": "culture/culture-3c4c22fe734e216f60c6c365/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The finest qualities of our nature, like the bloom on fruits, can be preserved only by the most delicate handling.",
+          "url": "https://www.gutenberg.org/ebooks/205",
+          "date": "1854",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-14",
+      "summary_basis": "Selected 14 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The finest qualities of our nature, like the bloom on fruits, can be preserved only by the most delicate handling.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Most men, even in this comparatively free country, through mere ignorance and mistake, are so occupied with the factitious cares and superfluously coarse labors of life that its finer fruits cannot be plucked by them. Their fingers, from excessive toil, are too clumsy and tremble too much for that. Actually, the laboring man has not leisure for a true integrity day by day; he cannot afford to sustain the manliest relations to men; his labor would be depreciated in the market. He has no time to be anything but a machine. How can he remember well his ignorance—which his growth requires—who has so often to use his knowledge? We should feed and clothe him gratuitously sometimes, and recruit him with our cordials, before we judge of him. The finest qualities of our nature, like the bloom on fruits, can be preserved only by the most delicate handling. Yet we do not treat ourselves nor one another thus tenderly.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/d/df/PDP-CH_-_Staatskapelle_Berlin_-_Leo_Blech_-_Prince_Igor_-_Alexander_Borodin_-_Dance_No._8_-_Electrola-ej609-62-788.flac",
+      "creator": "Alexander Borodin",
+      "creator_origin": "Russian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Alexander Borodin. 4 minutes to listen.",
+      "duration_seconds": 240,
+      "headline": "Prince Igor (opera)",
+      "key": "culture:330b64cec6cef96903162454",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/PDP-CH_-_Staatskapelle_Berlin_-_Leo_Blech_-_Prince_Igor_-_Alexander_Borodin_-_Dance_No._8_-_Electrola-ej609-62-788.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Alexander_Borodin",
+      "original_recording_title": "PDP-CH - Staatskapelle Berlin - Leo Blech - Prince Igor - Alexander Borodin - Dance No. 8 - Electrola-ej609-62-788",
+      "provenance_id": "commons:39835236",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Staatskapelle Berlin Vocal range: instrumental Title/Work: Prince Igor (opera) Content: Dance No. 8 Genre(s): Opera terminology",
+      "recording_description": "1st release date: 1931 1st recording date: 7 October 1930 Place of recording: Berlin, Singakademie Author(s)/Composer(s): Alexander Borodin (1833-1887) Lyricist(s): none Music arranger(s): Nikolai Rimsky-Korsakov (1844-1908) and Alexander Glazunov (1865-1936) Conductor: Leo Blech (1871-1958) Performer(s): Staatskapelle Berlin Vocal range: instrumental Title/Work: Prince Igor (opera) Content: Dance No. 8 Genre(s): Opera terminology",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Staatskapelle Berlin Vocal range: instrumental Title/Work: Prince Igor (opera) Content: Dance No. 8 Genre(s): Opera terminology",
+        "label": "Public domain (source-declared)",
+        "source_credit": "http://pool.publicdomainproject.org/index.php?title=Electrola-ej609-62-788",
+        "url": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Staatskapelle_Berlin_-_Leo_Blech_-_Prince_Igor_-_Alexander_Borodin_-_Dance_No._8_-_Electrola-ej609-62-788.flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Staatskapelle_Berlin_-_Leo_Blech_-_Prince_Igor_-_Alexander_Borodin_-_Dance_No._8_-_Electrola-ej609-62-788.flac",
+      "work_date": "Date not stated in source",
+      "date": "2026-09-14",
+      "selected_on": "2026-09-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-330b64cec6cef96903162454",
+      "path": "culture/culture-330b64cec6cef96903162454/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Prince Igor (opera)",
+          "url": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Staatskapelle_Berlin_-_Leo_Blech_-_Prince_Igor_-_Alexander_Borodin_-_Dance_No._8_-_Electrola-ej609-62-788.flac",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-14",
+      "summary_basis": "Selected 14 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Landscape with Fishermen",
       "art_type": "Painting",
       "balance_origin": "Korea",

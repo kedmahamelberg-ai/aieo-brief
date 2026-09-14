@@ -1752,6 +1752,89 @@
       },
       "output_sha256": "5a55a9f1531501854f40223ec025e81a57556303e863df7795923d63d2200619",
       "policy": "brief-english-display-v1"
+    },
+    "f46fce1853e4f9a0c511999f105a1d74bd465612b09647c895cabdcc53bdc8be": {
+      "english": {
+        "0": "Timaeus",
+        "1": "Greek",
+        "2": "PERSONS OF THE DIALOGUE: Socrates, Critias, Timaeus, Hermocrates.; paragraph 113 in the selected body section"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5c62fe15244f2bbb6c9418fc8bcfea107e6bb2061f3d5169cf687b50332a6e37",
+      "policy": "brief-english-display-v1"
+    },
+    "3843055394508b28a0294087adae8f7308135978bc118594d4699ea45ca5bb18": {
+      "english": {
+        "0": "English",
+        "1": "Ode To Autumn",
+        "2": "Ode To Autumn",
+        "3": "Ode To Autumn"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b0493717e2baaffe955c997f06f8c57f0042757ec4ca72aaa3cff9028af92b9d",
+      "policy": "brief-english-display-v1"
+    },
+    "2c3ce799dfe8dc326dcf0ca01572c045644945c50f3d4834c95da8b7a888cf1e": {
+      "english": {
+        "0": "India",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d89fa4de86192d2689e87a8e68f9bfd652cd916efcf94c4f20bf779632f37e24",
+      "policy": "brief-english-display-v1"
+    },
+    "6f005bd1f9db9e7b85f60420cf268ed284ebfe619565bbc26b54dfb6377bc7d5": {
+      "english": {
+        "0": "Russian",
+        "1": "Composer",
+        "2": "Prince Igor (opera)",
+        "3": "1st release date: 1931 1st recording date: 7 October 1930 Place of recording: Berlin, Singakademie Author(s)/Composer(s): Alexander Borodin (1833-1887) Lyricist(s): none Music arranger(s): Nikolai Rimsky-Korsakov (1844-1908) and Alexander Glazunov (1865-1936) Conductor: Leo Blech (1871-1958) Performer(s): Staatskapelle Berlin Vocal range: instrumental Title/Work: Prince Igor (opera) Content: Dance No. 8 Genre(s): Opera terminology",
+        "4": "http://pool.publicdomainproject.org/index.php?title=Electrola-ej609-62-788",
+        "5": "Prince Igor (opera)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e5838df01e368733fb161bff592a132cadb6fe215a65fa8a3991cb26828a0994",
+      "policy": "brief-english-display-v1"
     }
   }
 }
