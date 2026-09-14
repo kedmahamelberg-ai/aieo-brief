@@ -16,6 +16,7 @@ from culture_library import publication as culture_publication, discoveries as c
 from english_publication import EnglishPublication, content_version, LAYOUT
 from weekly_overviews import prepare_weekly_overviews, social_queue
 from short_links import short_link_routes
+from search_metadata import identity_graph
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -218,7 +219,9 @@ def main():
         client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
-        output=env.get_template(template).render(**page_defaults,local=local,canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
+        canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else '')
+        page_defaults['identity_data']=identity_graph(ROOT,canonical,ctx.get('page'))
+        output=env.get_template(template).render(**page_defaults,local=local,canonical=canonical,client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
     render('research/index.html','collection.html',page='research',items=research)
@@ -291,7 +294,7 @@ def main():
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=['index.html','research/index.html','culture/index.html','about/index.html','week-from-above/index.html']+[x['path'] for x in overview_archive]+[i['path'] for i in allcards]
-        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+p.removesuffix('index.html'))+'</loc></url>' for p in locations)+'</urlset>')
+        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+p.removesuffix('index.html'))+'</loc>'+('<image:image><image:loc>https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg</image:loc></image:image>' if p=='about/index.html' else '')+'</url>' for p in locations)+'</urlset>')
     else:(SITE/'feed.xml').write_text('<?xml version="1.0"?><rss version="2.0"><channel><title>AIEO Brief preview</title><link>https://observatory.hamelberg-ai.com</link><description>Set the Brief site URL for its live feed.</description></channel></rss>')
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
     if args.update_archive and not preview:
