@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  {% if short_destination is defined %}<meta http-equiv="refresh" content="0;url={{ short_destination }}">{% endif %}
   <title>{% block title %}The Brief | AI Empowerment Observatory{% endblock %}</title>
   <meta name="description" content="{% block description %}Read what AI news means for people. Clear summaries, original sources and research across five markets.{% endblock %}">
   {% if canonical %}<link rel="canonical" href="{{ canonical }}"><meta property="og:url" content="{{ canonical }}">{% endif %}

@@ -15,6 +15,7 @@ from daily_selection import rotation_plan, reading_day
 from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
 from english_publication import EnglishPublication, content_version, LAYOUT
 from weekly_overviews import prepare_weekly_overviews, social_queue
+from short_links import short_link_routes
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -217,7 +218,7 @@ def main():
         client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
-        output=env.get_template(template).render(**page_defaults,local=local,canonical=(baseurl+'/'+path.removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
+        output=env.get_template(template).render(**page_defaults,local=local,canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else ''),client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
     render('research/index.html','collection.html',page='research',items=research)
@@ -248,7 +249,18 @@ def main():
     for item in allcards:
         related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
         render(item['path'],'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related)
+    campaign_file=ROOT/'config/social-links.json'
+    campaigns=json.loads(campaign_file.read_text()).get('links',[]) if campaign_file.exists() else []
+    # Preview snapshots may predate a live campaign; live builds must resolve all links.
+    if preview:campaigns=[x for x in campaigns if x['article_path'] in {c['path'] for c in allcards}]
+    short_routes=short_link_routes(allcards,campaigns,baseurl)
+    by_path={c['path']:c for c in allcards}
+    for alias,route in short_routes.items():
+        item=by_path[route['article_path']]
+        related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
+        render(alias,'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related,canonical_path=item['path'],short_destination=route['destination'])
     data=SITE/'data';data.mkdir()
+    (data/'short-links.json').write_text(json.dumps(short_routes,ensure_ascii=False,indent=2)+'\n')
     payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
     payload['complete_content']=release.get('complete_content',{})
     payload['daily_selection']=rotation
