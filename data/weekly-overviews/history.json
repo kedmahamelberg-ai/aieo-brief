@@ -3,6 +3,207 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W37",
+      "period_start": "2026-09-07",
+      "period_end": "2026-09-13",
+      "display_date": "2026-09-13",
+      "path": "week-from-above/2026-w37/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "Five currents in this week’s AI reporting",
+        "deck": "Across the five discovery markets, rules and rights met business and investment. The balance differed by reporting stream.",
+        "summary": "China: selected reporting leaned toward rules and rights, with “Anthropic researchers warn AI risks rise; cautions and limits outlined by…”… United States: the discovery stream centred most often on rules and rights, including “AI model maps cell signaling fingerprints across… United Kingdom: rules and rights stood out in the selected coverage; one example was “Parents and Critics Call for Real… France: rules and rights stood out in the selected coverage; one example was “Anthropic reports Yemen cell used Claude to… Canada: rules and rights stood out in the selected coverage; one example was “Leaders' speed-dating politics: AI fears and vote…",
+        "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
+        "word_count": 126,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 24,
+            "topic": "Rules And Rights",
+            "sentence": "China: selected reporting leaned toward rules and rights, with “Anthropic researchers warn AI risks rise; cautions and limits outlined by…” as one visible signal.",
+            "story": {
+              "headline": "Anthropic researchers warn AI risks rise; cautions and limits outlined by company insiders",
+              "path": "story/development-021d2ad6-de16-4e1f-bdf5-778256c44926/index.html",
+              "publisher": "stdaily.com",
+              "source_url": "https://www.stdaily.com/web/gdxw/2026-09/10/content_578505.html"
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 13,
+            "topic": "Rules And Rights",
+            "sentence": "United States: the discovery stream centred most often on rules and rights, including “AI model maps cell signaling fingerprints across diverse cell types, with….”",
+            "story": {
+              "headline": "AI model maps cell signaling fingerprints across diverse cell types, with transfer-learning limits",
+              "path": "story/development-d775233b-feca-4d03-a4e7-b1993f122bd8/index.html",
+              "publisher": "Phys.org",
+              "source_url": "https://phys.org/news/2026-09-ai-decodes-cell-fingerprints-diverse.html"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 15,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: rules and rights stood out in the selected coverage; one example was “Parents and Critics Call for Real Human Tutors over AI in….”",
+            "story": {
+              "headline": "Parents and Critics Call for Real Human Tutors over AI in Education",
+              "path": "story/development-ca40c707-eea2-465e-a501-6d9432bea42e/index.html",
+              "publisher": "The Guardian",
+              "source_url": "https://www.theguardian.com/technology/2026/sep/11/children-need-interaction-not-ai"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 9,
+            "topic": "Rules And Rights",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Anthropic reports Yemen cell used Claude to attempt autonomous missile software,limits….”",
+            "story": {
+              "headline": "Anthropic reports Yemen cell used Claude to attempt autonomous missile software,limits cited",
+              "path": "story/development-9630f99c-277c-4fb2-aae5-dde298c8a569/index.html",
+              "publisher": "Boursorama",
+              "source_url": "https://www.boursorama.com/actualite-economique/actualites-amp/intelligence-artificielle-anthropic-revele-qu-une-cellule-au-yemen-a-utilise-son-modele-claude-pour-tenter-de-developper-des-logiciels-de-guidage-autonome-de-missiles-a171713e67bfd2c3969a7559579b18c4"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 32,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: rules and rights stood out in the selected coverage; one example was “Leaders' speed-dating politics: AI fears and vote promises, with clear limits.”",
+            "story": {
+              "headline": "Leaders' speed-dating politics: AI fears and vote promises, with clear limits",
+              "path": "story/development-0d71597b-1ee0-4b9b-8512-08017297df00/index.html",
+              "publisher": "98.5 Montréal",
+              "source_url": "https://www.985fm.ca/balados/328612/episode/800895/les-chefs-et-le-speed-dating-politique-trump-veut-acheter-des-votes-et-faut-il-avoir-peur-de-l-intelligence-artificielle"
+            }
+          }
+        ],
+        "active_market_count": 5
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "Research turns toward new methods and evidence and reasoning and memory",
+        "deck": "The selected papers point in two directions: new methods and evidence and reasoning and memory.",
+        "summary": "Affiliation not yet verified: Data repetition harms mixture-of-experts more than dense models; regularization helps but not fully. Affiliation not yet verified: A preprint study tests how well papers and codebases specify methods, exposing gaps that hinder faithful implementation. Affiliation not yet verified: A new abstract-only framework attempts to measure causal effects of Generative Engine Optimization and Generative Engine Marketing amidst incomplete data.",
+        "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
+        "word_count": 85,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [
+          {
+            "key": "paper:0d5e2d5b3a5727364a5be92f",
+            "headline": "arXiv study finds MoE models overfit faster with repeated data, despite some remedies",
+            "original_headline": "Data Scarcity and Model Sparsity: Mixtures-of-Experts Overfit More to Repeated Data",
+            "deck": "Data repetition harms mixture-of-experts more than dense models; regularization helps but not fully.",
+            "authors": [
+              "Atindra Jha",
+              "Margaret Li",
+              "Jure Leskovec",
+              "Percy Liang",
+              "Luke Zettlemoyer"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.11917v1",
+            "path": "research/paper-0d5e2d5b3a5727364a5be92f/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-10",
+            "theme": "training and efficiency",
+            "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
+            "affiliation_source_url": ""
+          },
+          {
+            "key": "paper:16a3db0cf187d500a6a42d8e",
+            "headline": "IdeaAMBIG Authors Warn of Implementation Gaps in Research Specifications, Revealing Limited Codification Readiness",
+            "original_headline": "IdeaAMBIG: Benchmarking Implementation-Critical Gaps in Research-Idea Specifications",
+            "deck": "A preprint study tests how well papers and codebases specify methods, exposing gaps that hinder faithful implementation.",
+            "authors": [
+              "Yiling Ma",
+              "Yilun Zhao",
+              "Sihong Wu",
+              "Manasi Patwardhan",
+              "Arman Cohan"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.10539v1",
+            "path": "research/paper-16a3db0cf187d500a6a42d8e/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-09",
+            "theme": "reliability and evaluation",
+            "source_verified_at": "2026-09-10T16:23:37.003442+00:00",
+            "affiliation_source_url": ""
+          },
+          {
+            "key": "paper:19390e1e53b6297a2105106b",
+            "headline": "arXiv researchers report Generative Marketing Mix Modeling links GEO and GEM to business impact with identification limits",
+            "original_headline": "Generative Marketing Mix Modeling: A Causal Inference Framework Linking GEO and GEM to Business Impact",
+            "deck": "A new abstract-only framework attempts to measure causal effects of Generative Engine Optimization and Generative Engine Marketing amidst incomplete data.",
+            "authors": [
+              "Masahiro Kato",
+              "Daiki Honma",
+              "Taka Kato"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.11915v1",
+            "path": "research/paper-19390e1e53b6297a2105106b/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-10",
+            "theme": "reasoning and memory",
+            "source_verified_at": "2026-09-12T15:30:34.842161+00:00",
+            "affiliation_source_url": ""
+          },
+          {
+            "key": "paper:368af39fd45fa05b27a891c4",
+            "headline": "arXiv abstract study: copying drives collective AI behavior in the wild, with limits",
+            "original_headline": "Copying explains the collective behavior of AI agents in the wild",
+            "deck": "Abstract-only preprint notes that AI agents copied from a public wiki to collaborate, but keep in mind the scope and placeholders in evidence.",
+            "authors": [
+              "Giordano De Marzo",
+              "Nicola Albore",
+              "David Garcia"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.09150v1",
+            "path": "research/paper-368af39fd45fa05b27a891c4/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-08",
+            "theme": "agents and coordination",
+            "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
+            "affiliation_source_url": ""
+          }
+        ],
+        "paper_count": 18,
+        "affiliation_verified_count": 0
+      },
+      "content_sha256": "25401a08d982f0f5873c8eb17d2a91597fb08afc104ef075391a063dde62bf9f"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W36",
       "period_start": "2026-08-31",
       "period_end": "2026-09-06",

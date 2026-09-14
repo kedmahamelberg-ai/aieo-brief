@@ -1835,6 +1835,199 @@
       },
       "output_sha256": "e5838df01e368733fb161bff592a132cadb6fe215a65fa8a3991cb26828a0994",
       "policy": "brief-english-display-v1"
+    },
+    "b26a0f8f91b7acd768a8fc49df885394dec006e260ece11186ccc5e2606fc582": {
+      "english": {
+        "0": "Reporting from Xinhua Net Zhejiang. Open the source for the article.",
+        "1": "Xinhua Net Zhejiang",
+        "2": "Xinhua Net Zhejiang"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4f816b1a028995a0d2b2d3646c2b7b6e2fc9d244f84290891d190e9e0e685912",
+      "policy": "brief-english-display-v1"
+    },
+    "b633a7e241ed194b3bac3780160eb25e79140b8f1aa7df899c6e6ed7b1285d18": {
+      "english": {
+        "0": "Artificial Intelligence at Service of Madame Ève-Marie",
+        "1": "Artificial Intelligence at Service of Madame Ève-Marie"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1284d61738a6893ab81debebaf08d9fe878586a55ec2505a01f28953d7a8f00e",
+      "policy": "brief-english-display-v1"
+    },
+    "527357158b4e61a776bc1808c77182e92fa0f0ff92da846c86263951466d79f9": {
+      "english": {
+        "0": "Using ChatGPT to defend in court? Yes, but be aware of \"hallucinations\"",
+        "1": "Using ChatGPT to defend in court? Yes, but be aware of \"hallucinations\"",
+        "2": "Using ChatGPT to defend in court? Yes, but be aware of \"hallucinations\""
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "fac0fc425c7d1dfa6b08417f8c4c2c1b45779e023f612c43d0d430fb957708b4",
+      "policy": "brief-english-display-v1"
+    },
+    "3d09bba5f96032514508062ae3f6c935ef9481ebad1748a95d37b19cb36d7391": {
+      "english": {
+        "0": "Reporting from Stratégies. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "64737653275878ec7cbacf31503033a2549488ef96c45e7103567a771701fe27",
+      "policy": "brief-english-display-v1"
+    },
+    "0010ef80ecfa3758d96363a159a59ba91559d8582d6f143ccc41ead24ae38b83": {
+      "english": {
+        "0": "Reporting from Beijing Municipal People's Government Portal. Open the source for the article.",
+        "1": "n/a",
+        "2": "n/a",
+        "3": "Beijing Municipal People's Government Portal",
+        "4": "Beijing Municipal People's Government Portal"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "50e0a87a645b64280b83a44c0ed17ca63886e5e0c9f019d4b3c0294e7446f72e",
+      "policy": "brief-english-display-v1"
+    },
+    "e08ce4054b734c13b899a080ae98e427aec71472c128018508af2637453c7246": {
+      "english": {
+        "0": "Reporting from Sichuan News. Open the source for the article.",
+        "1": "Sichuan News",
+        "2": "Sichuan News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2cb29927eefd6ae88e470feb94082d1a220b47808bd839f93d263ca7ab23fb4a",
+      "policy": "brief-english-display-v1"
+    },
+    "54e56de8a8b899ed4ae32d9e021870446dc3e6701102791549b8d7c4e13688e5": {
+      "english": {
+        "0": "Observer Network",
+        "1": "Observer Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "66c6bd305edf1e429673a126bf2d9a32291a0515ae10c27d02f2377f0f4c1d40",
+      "policy": "brief-english-display-v1"
+    },
+    "657b1a0d2e6ffeea20aec698ffbf079861d05c6a9a8fcca5542a4b646fce8265": {
+      "english": {
+        "0": "Beijing Municipal People's Government Portal Website"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "05c82e468b6d125d8817ea631383e44f5befdb4e99738daf503f329a07a21325",
+      "policy": "brief-english-display-v1"
+    },
+    "0867f86db6e5608aadd2a6e3a6306579f6a5297cc6658ad0e67c10dd775349c2": {
+      "english": {
+        "0": "AI-enabled transformation of undergraduate education aims to enhance learning outcomes"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b631f23f6222068548e1ee76311cec5e9ddaebe89eee0370c4c5d929256b8c73",
+      "policy": "brief-english-display-v1"
+    },
+    "ea1b3898680d23b9d0f8c8e069847690e477563a51c4ae44ce9220908e994226": {
+      "english": {
+        "0": "Guangming Online",
+        "1": "Guangming Online"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ff23c0863d9f806decd6449e25413edf4949dc81a73fc1302b29f62d39c774f4",
+      "policy": "brief-english-display-v1"
     }
   }
 }
