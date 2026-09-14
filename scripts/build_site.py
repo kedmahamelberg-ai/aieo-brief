@@ -227,10 +227,22 @@ def main():
     render('notifications/index.html','notifications.html',page='notifications')
     render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
-    weekly_image=(baseurl+'/'+weekly_overview['markets']['image_path']) if baseurl else weekly_overview['markets']['image_path']
-    weekly_schema={'@context':'https://schema.org','@type':'Article','headline':weekly_overview['markets']['title'],'description':weekly_overview['markets']['deck'],'datePublished':weekly_overview['period_end'],'dateModified':weekly_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@type':'Organization','name':'The Brief'},'image':[weekly_image] if weekly_image else []}
     render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',page_image=weekly_overview['markets']['image_path'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research.'})
-    render(weekly_overview['path'],'weekly-overview.html',page='weekly-overview',page_image=weekly_overview['markets']['image_path'],structured_data=weekly_schema)
+    # Every URL exposed by the weekly archive and sitemap must be materialized.
+    # The current edition and all earlier editions are rendered from the
+    # versioned overview history, so a new week can never break the prior week.
+    for archived_overview in overview_archive:
+        archived_image=(baseurl+'/'+archived_overview['markets']['image_path']) if baseurl else archived_overview['markets']['image_path']
+        archived_schema={'@context':'https://schema.org','@type':'Article','headline':archived_overview['markets']['title'],'description':archived_overview['markets']['deck'],'datePublished':archived_overview['period_end'],'dateModified':archived_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@type':'Organization','name':'The Brief'},'image':[archived_image] if archived_image else []}
+        render(
+            archived_overview['path'],
+            'weekly-overview.html',
+            page='weekly-overview',
+            page_image=archived_overview['markets']['image_path'],
+            structured_data=archived_schema,
+            weekly_page_overview=archived_overview,
+            weekly_page_period_label=fmt(archived_overview['period_start'])+' - '+fmt(archived_overview['period_end']),
+        )
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
