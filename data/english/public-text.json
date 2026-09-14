@@ -2028,6 +2028,65 @@
       },
       "output_sha256": "ff23c0863d9f806decd6449e25413edf4949dc81a73fc1302b29f62d39c774f4",
       "policy": "brief-english-display-v1"
+    },
+    "a8e50bf48dd06f8b1b5e5e1f70790d44c664a991c4c432715cd08622be8cc25c": {
+      "english": {
+        "0": "Reporting from Beijing Municipal People's Government Portal. Open the source for the article.",
+        "1": "Beijing Municipal People's Government Portal",
+        "2": "Beijing Municipal People's Government Portal"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5ac4272551eede4c7e1d88cee605acfb1ff4988143d37f643b69e153743890a5",
+      "policy": "brief-english-display-v1"
+    },
+    "0e2c7c6785252b46e7d757a1ccc8ec61a7c739720fd6bf6a337477341511ce5c": {
+      "english": {
+        "0": "Beihang University News Network",
+        "1": "Beihang University News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c08107a3b9397cd82a110be27bbdadad6b67aeea4080b9c54dd71f5c8e73cef5",
+      "policy": "brief-english-display-v1"
+    },
+    "409daacef385506ea8e3bf473ce66ebcd2d4144bb404d6d665f227c96c765bbb": {
+      "english": {
+        "0": "Policy, resources, and provision of services drive AI ecosystem expansion",
+        "1": "Shanghai Municipal People's Government",
+        "2": "Shanghai Municipal People's Government"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "dbef43a39f6df7d49924dbe4a24023e4c06543a42eb9c83a0d5b81a57b3e3551",
+      "policy": "brief-english-display-v1"
     }
   }
 }
