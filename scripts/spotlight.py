@@ -20,9 +20,9 @@ def spotlight_feed(root, stories, baseurl, release_id, generated_at):
     used=set()
     for story in selected:
         photo=story_photo(story,registry)
-        if not photo or photo['source_url'] in used:continue
+        if not photo or photo['sha256'] in used:continue
         market=photo['market']
-        used.add(photo['source_url'])
+        used.add(photo['sha256'])
         items.append({'id':story['key'],'headline':story['headline'],'summary':story.get('deck',''),
             'url':urljoin(baseurl+'/',story['path']),'date':story.get('date',''),
             'market':NAMES[market], 'image':urljoin(baseurl+'/',photo['path']),

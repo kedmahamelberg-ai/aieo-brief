@@ -14,3 +14,5 @@ The Observatory handoff runs hourly and triggers publication of new editions. Ev
 `config/story-photos.json` is the canonical photo pool and exact-article override registry. `scripts/story_photos.py` resolves images for story Open Graph previews, compact social links, and the carousel. Unpinned stories get a stable article-based choice from their discovery markets. The carousel skips repeated source images, selecting other current stories instead. It never fills with last week's stories. Photographs are geographic illustrations, not photographs of the reported event.
 
 Social renderers must call `assert_distinct_story_photos` for the batch before generating assets. One story can share its photo across all platforms and its Story frames; different articles in the batch cannot. The W38 renderer now consumes this registry, preserving its seven already-approved unique photographs. The former `spotlight-photos.json` country-only mapping is retired.
+
+Preflight a social batch with `python scripts/story_photos.py /path/to/batch.json`. Duplicate checking uses file content hashes, so renaming a photo cannot bypass it.
