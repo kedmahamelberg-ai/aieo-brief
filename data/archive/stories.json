@@ -2,6 +2,362 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "0715956b50afd96824a5ce630a6bebd960558db980d0f569ce0471942a1716ab",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "The world has opened its heart of light in the morning.",
+      "headline": "The world has opened its heart of light in the morning.",
+      "key": "culture:daf2e911b472d1f2c609767e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:0715956b50afd96824a5ce630a6bebd960558db980d0f569ce0471942a1716ab",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The world has opened its heart of light in the morning. Come out, my heart, with thy love to meet it.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 157 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-09-15",
+      "selected_on": "2026-09-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-daf2e911b472d1f2c609767e",
+      "path": "culture/culture-daf2e911b472d1f2c609767e/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The world has opened its heart of light in the morning.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-15",
+      "summary_basis": "Selected 15 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The world has opened its heart of light in the morning.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The world has opened its heart of light in the morning. Come out, my heart, with thy love to meet it.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "0b1389bf0e05ec2aee881afb44f27f37df3a15a93cbbbf6405c3ae4d3dbb71b4",
+      "creator": "Omar Khayyam, after Edward FitzGerald",
+      "creator_origin": "Iranian · Persian",
+      "culture_type": "poetry",
+      "deck": "Rubáiyát · XXIX, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+      "excerpt": "Into this Universe, and why not knowing,\n Nor whence, like Water willy-nilly flowing:\n   And out of it, as Wind along the Waste,\n I know not whither, willy-nilly blowing.",
+      "headline": "Rubáiyát · XXIX",
+      "key": "culture:aad15fa82a56141c70461cec",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Into this Universe, and why not knowing,",
+        " Nor whence, like Water willy-nilly flowing:",
+        "   And out of it, as Wind along the Waste,",
+        " I know not whither, willy-nilly blowing."
+      ],
+      "provenance_id": "pg:246:poem:3d3a7a4ca5ee33caede4b4ba3412eebf94c304722a39ddf610944b25dca18c90",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1131. Translator: Edward FitzGerald, died 1883. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/246"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "09f7f0aa58212f5622cbf914eff7e0ae4e14fbc12de174220b470e66dec6eb65",
+      "source_locator": "XXIX",
+      "source_url": "https://www.gutenberg.org/ebooks/246",
+      "translator": "Edward FitzGerald",
+      "work_date": "1859 English adaptation",
+      "date": "2026-09-15",
+      "selected_on": "2026-09-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-aad15fa82a56141c70461cec",
+      "path": "culture/culture-aad15fa82a56141c70461cec/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Rubáiyát · XXIX",
+          "url": "https://www.gutenberg.org/ebooks/246",
+          "date": "1859 English adaptation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-15",
+      "summary_basis": "Selected 15 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Into this Universe, and why not knowing,\n Nor whence, like Water willy-nilly flowing:\n   And out of it, as Wind along the Waste,\n I know not whither, willy-nilly blowing.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "cad9631afb5b4bc2f16bfc1345fbf206fe3d113ed9de1e44c635a75b8eb6e11a",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "text",
+      "deck": "A passage from Tao Te Ching. Translated by James Legge.",
+      "excerpt": "In the highest antiquity, (the people) did not know that there were (their rulers). In the next age they loved them and praised them. In the next they feared them; in the next they despised them. Thus it was that when faith (in the Tao) was deficient (in the rulers) a want of faith in them ensued (in the people).",
+      "headline": "Tao Te Ching · a short reading",
+      "key": "culture:a8a3d714cbf04902dcaadd0d",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:passage:cad9631afb5b4bc2f16bfc1345fbf206fe3d113ed9de1e44c635a75b8eb6e11a",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 51 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-09-15",
+      "selected_on": "2026-09-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a8a3d714cbf04902dcaadd0d",
+      "path": "culture/culture-a8a3d714cbf04902dcaadd0d/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Tao Te Ching · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-15",
+      "summary_basis": "Selected 15 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "In the highest antiquity, (the people) did not know that there were (their rulers). In the next age they loved them and praised them. In the next they feared them; in the next they despised them. Thus it was that when faith (in the Tao) was deficient (in the rulers) a want of faith in them ensued (in the people).",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Austria.ogg",
+      "creator": "Wolfgang Amadeus Mozart",
+      "creator_origin": "Austrian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Wolfgang Amadeus Mozart. 1 minutes to listen.",
+      "duration_seconds": 65,
+      "headline": "Austria",
+      "key": "culture:9cb22b3b411b3f6aab7dfb9c",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Austria.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+      "original_recording_title": "Austria",
+      "provenance_id": "commons:1754934",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Wolfgang Amadeus Mozart",
+      "recording_description": "Himno nacional de Austria",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Wolfgang Amadeus Mozart",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Transferred from es.wikipedia to Commons.",
+        "url": "https://commons.wikimedia.org/wiki/File:Austria.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Austria.ogg",
+      "work_date": "2 November 2004 (original upload date)",
+      "date": "2026-09-15",
+      "selected_on": "2026-09-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9cb22b3b411b3f6aab7dfb9c",
+      "path": "culture/culture-9cb22b3b411b3f6aab7dfb9c/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Austria",
+          "url": "https://commons.wikimedia.org/wiki/File:Austria.ogg",
+          "date": "2 November 2004 (original upload date)",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-15",
+      "summary_basis": "Selected 15 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Scholar Playing a Qin",
+      "art_type": "Painting",
+      "balance_origin": "Korea",
+      "creator": "Artist unknown",
+      "creator_origin": "Korea, Joseon dynasty (1392–1910)",
+      "culture_type": "illustration",
+      "deck": "Scholar Playing a Qin. album leaf; ink and color on silk.",
+      "headline": "Scholar Playing a Qin",
+      "image_path": "assets/culture/800f2f3351b68d8b93e1f455.jpg",
+      "key": "culture:800f2f3351b68d8b93e1f455",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1990.69/1990.69_web.jpg",
+      "medium": "album leaf; ink and color on silk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1990.69",
+      "provenance_id": "cma:155625",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1990.69",
+      "work_date": "1800s",
+      "date": "2026-09-15",
+      "selected_on": "2026-09-15",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-800f2f3351b68d8b93e1f455",
+      "path": "culture/culture-800f2f3351b68d8b93e1f455/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Scholar Playing a Qin",
+          "url": "https://clevelandart.org/art/1990.69",
+          "date": "1800s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-15",
+      "summary_basis": "Selected 15 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Timaeus",
       "content_fingerprint": "338df54e3901c1b93ab4844e0dc04ef9a05fab00138bd55ae2f1aa65a68ceb8f",
       "creator": "Plato",

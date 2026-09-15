@@ -2087,6 +2087,50 @@
       },
       "output_sha256": "dbef43a39f6df7d49924dbe4a24023e4c06543a42eb9c83a0d5b81a57b3e3551",
       "policy": "brief-english-display-v1"
+    },
+    "c5897098e4140c278d6fbbede34a2b7b58b4ed3dfa771bb5cab8a3e45ac443a6": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Rubáiyát · XXIX, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+        "2": "Rubáiyát · XXIX",
+        "3": "XXIX",
+        "4": "Rubáiyát · XXIX"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "88ba78398f6e863239f6e0828f0a42a9495543c5f17fd4516db3cfa0d31a4a78",
+      "policy": "brief-english-display-v1"
+    },
+    "853633c640e8ebe28632b3cb116ce3efa587aa43ad776635a7945738c732899e": {
+      "english": {
+        "0": "Austrian",
+        "1": "Composer",
+        "2": "Austria",
+        "3": "National anthem of Austria",
+        "4": "Austria"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f34442e2718f66ab52a8b7cf044e2947800985333adf89fd0bb8fdcfa0be93d5",
+      "policy": "brief-english-display-v1"
     }
   }
 }
