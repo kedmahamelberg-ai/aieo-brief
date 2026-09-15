@@ -2150,6 +2150,25 @@
       },
       "output_sha256": "004f6bb113e2c0c99fd6262c246b179863fbfcdca6ef2e606d9454df62c5133b",
       "policy": "brief-english-display-v1"
+    },
+    "ac30ad4e6f9573ed4c66334d8d0ee2e562566e73b7884393f304621513c87619": {
+      "english": {
+        "0": "Sichuan News",
+        "1": "Sichuan News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "313aca4f8d87ee6a82960a316046ab8d6ad2ee5d7bbdb8e7be08eed2ec075f9f",
+      "policy": "brief-english-display-v1"
     }
   }
 }
