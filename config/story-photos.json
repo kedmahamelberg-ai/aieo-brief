@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "photos": {
+    "us": {
+      "path": "assets/spotlight/us.jpg",
+      "alt": "United States Capitol 10",
+      "credit": "Kurt Kaiser",
+      "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "market": "US"
+    },
+    "gb": {
+      "path": "assets/spotlight/gb.jpg",
+      "alt": "Armistice Day 2025 in London, United Kingdom - 10",
+      "credit": "Department for Culture, Media and Sport",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Armistice_Day_2025_in_London,_United_Kingdom_-_10.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "market": "GB"
+    },
+    "ca": {
+      "path": "assets/spotlight/ca.jpg",
+      "alt": "Entrance of the Monastery of the Augustines in Quebec City",
+      "credit": "Wilfredor",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Entrance_of_the_Monastery_of_the_Augustines_in_Quebec_City.jpg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "market": "CA"
+    },
+    "cn": {
+      "path": "assets/spotlight/cn.jpg",
+      "alt": "Rocky Chinese landscape, by John Dudgeon (Getty 1047CG)",
+      "credit": "John Dudgeon",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rocky_Chinese_landscape,_by_John_Dudgeon_(Getty_1047CG).jpg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "market": "CN"
+    },
+    "fr": {
+      "path": "assets/spotlight/fr.jpg",
+      "alt": "Avenue des Champs-Elysées, Paris 12 December 2020",
+      "credit": "Pierre Blaché from Paris, France",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Avenue_des_Champs-Elys%C3%A9es,_Paris_12_December_2020.jpg",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "market": "FR"
+    },
+    "us-finance": {
+      "market": "US",
+      "path": "assets/spotlight/us-finance.jpg",
+      "alt": "Wall street.JPG",
+      "credit": "User: (WT-shared) Ypsilonatshared at wts wikivoyage",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wall_street.JPG",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    "gb-classroom": {
+      "market": "GB",
+      "path": "assets/spotlight/gb-classroom.jpg",
+      "alt": "Classroom - England - 1920s? - B&W.jpg",
+      "credit": "Unknown photographer",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Classroom_-_England_-_1920s%3F_-_B%26W.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    "beijing": {
+      "market": "CN",
+      "path": "assets/spotlight/beijing.jpg",
+      "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+      "credit": "Scott Meltzer",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+      "license": "Public domain dedication by the photographer, worldwide",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    "quebec": {
+      "market": "CA",
+      "path": "assets/spotlight/quebec.jpg",
+      "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+      "credit": "Wilfredor",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+      "license": "CC0 1.0 Universal",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    "new-york": {
+      "market": "US",
+      "path": "assets/spotlight/new-york.jpg",
+      "alt": "New York panorama from the Empire State Building. Archival geographic context, not the NYSBA event.",
+      "credit": "Martin Dürrschnabel",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skyline-New-York-City.jpg",
+      "license": "Public domain dedication by the photographer, worldwide",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  },
+  "stories": {
+    "story/development-26648e81-99a8-4c80-8ecc-2131c018fccb/index.html": "us",
+    "story/development-615660e1-9b80-4f9f-a8f1-235f739ecbf8/index.html": "gb",
+    "story/development-765d8143-3bc7-4d1b-b9e3-b79577cb58b9/index.html": "ca",
+    "story/development-348f537e-eedc-4881-8911-52b7aadb1328/index.html": "cn",
+    "story/development-bae3d251-df95-4a75-b823-9d7dff403781/index.html": "fr",
+    "story/development-df9ced14-26f8-4020-aebb-786f329c0893/index.html": "us-finance",
+    "story/development-ca40c707-eea2-465e-a501-6d9432bea42e/index.html": "gb-classroom",
+    "story/development-7c448b17-5222-473e-aca5-cc6870473c55/index.html": "cn",
+    "story/development-f6d8e93a-5464-4745-96b3-684850ff946d/index.html": "beijing"
+  }
+}

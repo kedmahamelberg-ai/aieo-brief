@@ -18,6 +18,7 @@ from weekly_overviews import prepare_weekly_overviews, social_queue
 from short_links import short_link_routes
 from search_metadata import identity_graph
 from spotlight import spotlight_feed
+from story_photos import photo_registry, story_photo
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -209,7 +210,13 @@ def main():
     defaults.update(culture_featured=culture_featured, research_featured=sorted(research,key=lambda x:not x.get('has_editorial'))[:6])
     defaults.update(culture_discoveries=[english.apply(x) for x in culture_discoveries(root=ROOT)],culture_library=culture_summary(ROOT))
     defaults.update(weekly_overview=weekly_overview,overview_archive=overview_archive)
+    photos=photo_registry(ROOT)
     def render(path,template,**ctx):
+        article=ctx.get('story')
+        if article and article.get('kind')=='news':
+            photo=story_photo(article,photos)
+            if photo:
+                ctx.update(page_image=photo['path'],page_image_alt=photo['alt'])
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
         prefix='../'*len(Path(path).parent.parts)
         local=lambda value:prefix+value
