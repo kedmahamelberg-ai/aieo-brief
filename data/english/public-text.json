@@ -2131,6 +2131,25 @@
       },
       "output_sha256": "f34442e2718f66ab52a8b7cf044e2947800985333adf89fd0bb8fdcfa0be93d5",
       "policy": "brief-english-display-v1"
+    },
+    "194c7a055f2468577387506a93d71f1b1da81303662a7c420ae2bdb256fccd7e": {
+      "english": {
+        "0": "People's Daily",
+        "1": "People's Daily"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "004f6bb113e2c0c99fd6262c246b179863fbfcdca6ef2e606d9454df62c5133b",
+      "policy": "brief-english-display-v1"
     }
   }
 }
