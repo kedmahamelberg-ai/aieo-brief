@@ -17,6 +17,7 @@ from english_publication import EnglishPublication, content_version, LAYOUT
 from weekly_overviews import prepare_weekly_overviews, social_queue
 from short_links import short_link_routes
 from search_metadata import identity_graph
+from spotlight import spotlight_feed
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -270,6 +271,8 @@ def main():
     payload.update(culture_count=len(culture),culture=culture)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)
     payload['weekly_overview']=weekly_overview
+    spotlight=spotlight_feed(ROOT, [lead]+[n for n in news if n is not lead] if lead else news, baseurl, release['release_id'], utc_now())
+    (data/'spotlight.json').write_text(json.dumps(spotlight,ensure_ascii=False,indent=2)+'\n')
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
     (data/'public-items.json').write_text(json.dumps({'items':allcards},ensure_ascii=False)+'\n')
     social=data/'social';social.mkdir()

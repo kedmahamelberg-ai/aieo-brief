@@ -1,0 +1,42 @@
+{
+  "US": {
+    "path": "assets/spotlight/us.jpg",
+    "alt": "United States Capitol 10",
+    "credit": "Kurt Kaiser",
+    "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "GB": {
+    "path": "assets/spotlight/gb.jpg",
+    "alt": "Armistice Day 2025 in London, United Kingdom - 10",
+    "credit": "Department for Culture, Media and Sport",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Armistice_Day_2025_in_London,_United_Kingdom_-_10.jpg",
+    "license": "Public domain",
+    "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+  },
+  "CA": {
+    "path": "assets/spotlight/ca.jpg",
+    "alt": "Entrance of the Monastery of the Augustines in Quebec City",
+    "credit": "Wilfredor",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Entrance_of_the_Monastery_of_the_Augustines_in_Quebec_City.jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "CN": {
+    "path": "assets/spotlight/cn.jpg",
+    "alt": "Rocky Chinese landscape, by John Dudgeon (Getty 1047CG)",
+    "credit": "John Dudgeon",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rocky_Chinese_landscape,_by_John_Dudgeon_(Getty_1047CG).jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "FR": {
+    "path": "assets/spotlight/fr.jpg",
+    "alt": "Avenue des Champs-Elys\u00e9es, Paris 12 December 2020",
+    "credit": "Pierre Blach\u00e9 from Paris, France",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Avenue_des_Champs-Elys%C3%A9es,_Paris_12_December_2020.jpg",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  }
+}
