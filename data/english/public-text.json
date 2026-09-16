@@ -2169,6 +2169,65 @@
       },
       "output_sha256": "313aca4f8d87ee6a82960a316046ab8d6ad2ee5d7bbdb8e7be08eed2ec075f9f",
       "policy": "brief-english-display-v1"
+    },
+    "15de7bff0255941bf6647268565f6e91fbcd45b441cb7304273062d65ba27601": {
+      "english": {
+        "0": "Composer",
+        "1": "Gymnopédie no.3",
+        "2": "Gymnopédie no.3"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "41fdb1a30c85df0aa13343a54cf52c82cd203314a4f52ca37b21bcfa38a78c6a",
+      "policy": "brief-english-display-v1"
+    },
+    "05a3e02e27096b7975c3110221b8547dda810f983801f28456e1f19a18671d83": {
+      "english": {
+        "0": "Songs of Kabir · LXXXVII",
+        "1": "LXXXVII",
+        "2": "Songs of Kabir · LXXXVII"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6c36571066cb69abc3c264b950f6b6933e99b0af9413a94861563ff07813b5f3",
+      "policy": "brief-english-display-v1"
+    },
+    "180a76ad16e3bc4dfdc5e234487a32b10a7790e8b8cc0fed0069ec0da76a889e": {
+      "english": {
+        "0": "China, Ming dynasty (1368–1644)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f05454dadc0ddb9ad6da658b859b9922067d8b4bf513b7c5cc1da643f5b6af36",
+      "policy": "brief-english-display-v1"
     }
   }
 }

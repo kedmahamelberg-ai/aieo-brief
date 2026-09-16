@@ -2,6 +2,368 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Gymnop%C3%A9die_no.3.ogg",
+      "creator": "Erik Satie",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Erik Satie. 2 minutes to listen.",
+      "duration_seconds": 156,
+      "headline": "Gymnopédie no.3",
+      "key": "culture:f5d599f82c3c9538205cf3df",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Gymnop%C3%A9die_no.3.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Erik_Satie",
+      "original_recording_title": "Gymnopédie no.3",
+      "provenance_id": "commons:10291267",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Teknopazzo",
+      "recording_description": "One of the most famous opera of Eric Satie (1866-1925), French composer and pianist. It was published in Paris in 1888.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Teknopazzo",
+        "label": "CC0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gymnop%C3%A9die_no.3.ogg",
+      "work_date": "1880",
+      "date": "2026-09-16",
+      "selected_on": "2026-09-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f5d599f82c3c9538205cf3df",
+      "path": "culture/culture-f5d599f82c3c9538205cf3df/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Gymnopédie no.3",
+          "url": "https://commons.wikimedia.org/wiki/File:Gymnop%C3%A9die_no.3.ogg",
+          "date": "1880",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-16",
+      "summary_basis": "Selected 16 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Meditations",
+      "content_fingerprint": "5d1ebb877de8520bd3093735a713e6a98b1289748185bf4ec58474bb26aeb77d",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "text",
+      "deck": "A passage from Meditations. Translated by Méric Casaubon.",
+      "excerpt": "LIV. The sun seemeth to be shed abroad. And indeed it is diffused but not effused. For that diffusion of it is a τάσις or an extension. For therefore are the beams of it called ἀκτῖνες from the word ἐκτείνεσθαι to be stretched out and extended. Now what a sunbeam is, thou mayest know if thou observe the light of the sun, when through some narrow hole it pierceth into some room that is dark. For it is always in a direct line. And as by any solid body, that it meets with in the way that is not penetrable by air, it is divided and abrupted, and yet neither slides off, or falls down, but stayeth there nevertheless: such must the diffusion in the mind be; not an effusion, but an extension. What obstacles and impediments soever she meeteth within her way, she must not violently, and by way of an impetuous onset light upon them; neither must she fall down; but she must stand, and give light unto that which doth admit of it. For as for that which doth not, it is its own fault and loss, if it bereave itself of her light.",
+      "headline": "Meditations · a short reading",
+      "key": "culture:ed463fe2a0872258d2dfccc3",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:passage:5d1ebb877de8520bd3093735a713e6a98b1289748185bf4ec58474bb26aeb77d",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 283 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-09-16",
+      "selected_on": "2026-09-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ed463fe2a0872258d2dfccc3",
+      "path": "culture/culture-ed463fe2a0872258d2dfccc3/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Meditations · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-16",
+      "summary_basis": "Selected 16 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "LIV. The sun seemeth to be shed abroad. And indeed it is diffused but not effused. For that diffusion of it is a τάσις or an extension. For therefore are the beams of it called ἀκτῖνες from the word ἐκτείνεσθαι to be stretched out and extended. Now what a sunbeam is, thou mayest know if thou observe the light of the sun, when through some narrow hole it pierceth into some room that is dark. For it is always in a direct line. And as by any solid body, that it meets with in the way that is not penetrable by air, it is divided and abrupted, and yet neither slides off, or falls down, but stayeth there nevertheless: such must the diffusion in the mind be; not an effusion, but an extension. What obstacles and impediments soever she meeteth within her way, she must not violently, and by way of an impetuous onset light upon them; neither must she fall down; but she must stand, and give light unto that which doth admit of it. For as for that which doth not, it is its own fault and loss, if it bereave itself of her light.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "7adb62227d962f765d4a8d7d313565133d3844606a875545159381bc99da0f26",
+      "creator": "Francis Bacon",
+      "creator_origin": "English",
+      "culture_type": "quote",
+      "deck": "From Essays.",
+      "excerpt": "For you must note, that we speak now of the heart, and not of the purse.",
+      "headline": "For you must note, that we speak now of the heart, and not of the purse.",
+      "key": "culture:d311bbd66e4fd8c08b7d47d3",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:575:quote:7adb62227d962f765d4a8d7d313565133d3844606a875545159381bc99da0f26",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The blessing of Judah and Issachar will never meet; that the same people, or nation, should be both the lion's whelp and the ass between burthens; neither will it be, that a people overlaid with taxes, should ever become valiant and martial. It is true that taxes levied by consent of the estate, do abate men's courage less: as it hath been seen notably, in the excises of the Low Countries; and, in some degree, in the subsidies of England. For you must note, that we speak now of the heart, and not of the purse. So that although the same tribute and tax, laid by consent or by imposing, be all one to the purse, yet it works diversely upon the courage. So that you may conclude, that no people overcharged with tribute, is fit for empire.",
+      "rights": {
+        "basis": "Author died 1626. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/575"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1e8cae20a522dc2c3af515c7903974e38299c215afdf22708699cc478c409f4e",
+      "source_locator": "Of Truth; paragraph 176 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/575",
+      "translator": "",
+      "work_date": "1625",
+      "date": "2026-09-16",
+      "selected_on": "2026-09-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d311bbd66e4fd8c08b7d47d3",
+      "path": "culture/culture-d311bbd66e4fd8c08b7d47d3/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "For you must note, that we speak now of the heart, and not of the purse.",
+          "url": "https://www.gutenberg.org/ebooks/575",
+          "date": "1625",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-16",
+      "summary_basis": "Selected 16 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "For you must note, that we speak now of the heart, and not of the purse.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The blessing of Judah and Issachar will never meet; that the same people, or nation, should be both the lion's whelp and the ass between burthens; neither will it be, that a people overlaid with taxes, should ever become valiant and martial. It is true that taxes levied by consent of the estate, do abate men's courage less: as it hath been seen notably, in the excises of the Low Countries; and, in some degree, in the subsidies of England. For you must note, that we speak now of the heart, and not of the purse. So that although the same tribute and tax, laid by consent or by imposing, be all one to the purse, yet it works diversely upon the courage. So that you may conclude, that no people overcharged with tribute, is fit for empire.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "a440abf2f8a315e7891f015d9fddb9df02ebbb7dbf9f5805915e494185a11f79",
+      "creator": "Kabir",
+      "creator_origin": "Indian · North Indian poetic tradition",
+      "culture_type": "poetry",
+      "deck": "Songs of Kabir · LXXXVII, by Kabir. Translated by Rabindranath Tagore.",
+      "excerpt": "Clouds thicken in the sky!  O, listen to the deep voice of their\n    roaring;\n  The rain comes from the east with its monotonous murmur.\n  Take care of the fences and boundaries of your fields, lest the\n    rains overflow them;\n  Prepare the soil of deliverance, and let the creepers of love and\n    renunciation be soaked in this shower.\n  It is the prudent farmer who will bring his harvest home; he\n    shall fill both his vessels, and feed both the wise men and the\n    saints.",
+      "headline": "Songs of Kabir · LXXXVII",
+      "key": "culture:3670262d2eca3d6b19488080",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Clouds thicken in the sky!  O, listen to the deep voice of their",
+        "    roaring;",
+        "  The rain comes from the east with its monotonous murmur.",
+        "  Take care of the fences and boundaries of your fields, lest the",
+        "    rains overflow them;",
+        "  Prepare the soil of deliverance, and let the creepers of love and",
+        "    renunciation be soaked in this shower.",
+        "  It is the prudent farmer who will bring his harvest home; he",
+        "    shall fill both his vessels, and feed both the wise men and the",
+        "    saints."
+      ],
+      "provenance_id": "pg:6519:poem:e93063d1b1ba7683eb4ec4b3edc415f79ec71ee1e8ab470702550440419ef1d0",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 15th century. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6519"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2ecd0d98ffffe86fa795c6885a9caf8f8f5805607003f91b311cede5dc63c4f9",
+      "source_locator": "LXXXVII",
+      "source_url": "https://www.gutenberg.org/ebooks/6519",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1915 translation",
+      "date": "2026-09-16",
+      "selected_on": "2026-09-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3670262d2eca3d6b19488080",
+      "path": "culture/culture-3670262d2eca3d6b19488080/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Songs of Kabir · LXXXVII",
+          "url": "https://www.gutenberg.org/ebooks/6519",
+          "date": "1915 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-16",
+      "summary_basis": "Selected 16 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Clouds thicken in the sky!  O, listen to the deep voice of their\n    roaring;\n  The rain comes from the east with its monotonous murmur.\n  Take care of the fences and boundaries of your fields, lest the\n    rains overflow them;\n  Prepare the soil of deliverance, and let the creepers of love and\n    renunciation be soaked in this shower.\n  It is the prudent farmer who will bring his harvest home; he\n    shall fill both his vessels, and feed both the wise men and the\n    saints.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Zhi and Xu's Pure Conversation",
+      "art_type": "Painting",
+      "balance_origin": "China",
+      "creator": "Lan Ying (Chinese, 1585–after 1664)",
+      "creator_origin": "China, Ming dynasty (1368–1644)",
+      "culture_type": "illustration",
+      "deck": "Zhi and Xu's Pure Conversation. Hanging scroll; ink on paper.",
+      "headline": "Zhi and Xu's Pure Conversation",
+      "image_path": "assets/culture/330da05f24f5ff94f2366ecc.jpg",
+      "key": "culture:330da05f24f5ff94f2366ecc",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1970.128/1970.128_web.jpg",
+      "medium": "Hanging scroll; ink on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1970.128",
+      "provenance_id": "cma:144920",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of Stephen O. K. Chen",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1970.128",
+      "work_date": "1643",
+      "date": "2026-09-16",
+      "selected_on": "2026-09-16",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-330da05f24f5ff94f2366ecc",
+      "path": "culture/culture-330da05f24f5ff94f2366ecc/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Zhi and Xu's Pure Conversation",
+          "url": "https://clevelandart.org/art/1970.128",
+          "date": "1643",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-16",
+      "summary_basis": "Selected 16 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Stray Birds",
       "content_fingerprint": "0715956b50afd96824a5ce630a6bebd960558db980d0f569ce0471942a1716ab",
       "creator": "Rabindranath Tagore",
