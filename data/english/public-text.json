@@ -2228,6 +2228,25 @@
       },
       "output_sha256": "f05454dadc0ddb9ad6da658b859b9922067d8b4bf513b7c5cc1da643f5b6af36",
       "policy": "brief-english-display-v1"
+    },
+    "d671327fe264ffe8123b6a06c4791d57d111974360b4e399695e01175dc08563": {
+      "english": {
+        "0": "Xinhua Net Zhejiang",
+        "1": "Xinhua Net Zhejiang"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d7f2f32f85fe7140f61fdfdffe90156f351265d48e605036f05ddbc167aa3aa8",
+      "policy": "brief-english-display-v1"
     }
   }
 }
