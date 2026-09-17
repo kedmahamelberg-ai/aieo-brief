@@ -2247,6 +2247,65 @@
       },
       "output_sha256": "d7f2f32f85fe7140f61fdfdffe90156f351265d48e605036f05ddbc167aa3aa8",
       "policy": "brief-english-display-v1"
+    },
+    "c309009d47760d622fe1ab3c59bc7d594d73708991633937b04f3ad36dba255c": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Divan of Hafiz · XXIX",
+        "2": "XXIX",
+        "3": "Divan of Hafiz · XXIX"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e2971adbf3ad8e62652211805755e77a9b54cecb500bd854655e22d5ccf7a560",
+      "policy": "brief-english-display-v1"
+    },
+    "351f1b539cf7931bf1bbd2e82d1b14c1afc0ece71d34e0a085b2559aba9f098e": {
+      "english": {
+        "0": "Italian",
+        "1": "Composer"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c11211223e999be0c98cc5814db82570ea48dabdc35e321df3dcf920db17f8b5",
+      "policy": "brief-english-display-v1"
+    },
+    "bb4b1ecb003c535d7c2436c595450c5af7c97cf787825823634962b65e873c7d": {
+      "english": {
+        "0": "Japan, Edo period (1615–1868)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0360976465ad61cd5788d5bfebf0287b8deb70e3e66a50dc19750b2159241c80",
+      "policy": "brief-english-display-v1"
     }
   }
 }
