@@ -2306,6 +2306,29 @@
       },
       "output_sha256": "0360976465ad61cd5788d5bfebf0287b8deb70e3e66a50dc19750b2159241c80",
       "policy": "brief-english-display-v1"
+    },
+    "d5207eb8e4e625c996347a0c1efdee25c20cbf3e19b03e5dc27392e43d2cda6e": {
+      "english": {
+        "0": "Relics of the Old House",
+        "1": "Brazilian",
+        "2": "A passage from Relíquias de Casa Velha.",
+        "3": "It was neither easy nor brief. In the Battle of the Crossroads I believe that I faced it with the necessary intrepidity and discipline, and I must note here that I was getting used to the life of civil war. The hatreds I heard were reactionary forces. On one side and the other they fought with ardor, and the passion I felt began to take hold of me. I had already read my name in a general order, and in spoken voice I had received praises, which I could not help but deem just, and even now I declare such praises. But let us get to the main matter, which is to end this.",
+        "4": "Relics of the Old House · a short reading",
+        "5": "Relíquias de Casa Velha · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4bf6bb2526cb0fe0d8850a6f24c2872212e2801e99e60b99898e4d0d0d1120a0",
+      "policy": "brief-english-display-v1"
     }
   }
 }
