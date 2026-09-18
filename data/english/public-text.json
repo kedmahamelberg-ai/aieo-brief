@@ -2329,6 +2329,70 @@
       },
       "output_sha256": "4bf6bb2526cb0fe0d8850a6f24c2872212e2801e99e60b99898e4d0d0d1120a0",
       "policy": "brief-english-display-v1"
+    },
+    "224f1590bcc1ceb14ab37e398648bc767e7466f4756eeda0e1548c3ad370c41b": {
+      "english": {
+        "0": "Walden",
+        "1": "American",
+        "2": "A passage from Walden."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "95a1997e67d8ce52aa5a4fcb69ea8c68adb0a98011b896dd947ba906deaae430",
+      "policy": "brief-english-display-v1"
+    },
+    "8f71c175ccf71b7e9b5bd10050370921b56196d14958cc55d76c11ce1355f76d": {
+      "english": {
+        "0": "Portrait of a Woman",
+        "1": "Portrait of a Woman. oil on wood.",
+        "2": "Portrait of a Woman",
+        "3": "CC0 image",
+        "4": "Portrait of a Woman"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a0eaa087965547d2e2ad6269a4c261b23c03cb72db8448310c417db370b92ebd",
+      "policy": "brief-english-display-v1"
+    },
+    "d333e20e27307722daaa75a229a51649a9cd06f4fbb77970483569f80af86dac": {
+      "english": {
+        "0": "Austrian",
+        "1": "Composer",
+        "2": "Mozart - String Quartet No. 15 in D minor, K421 - III. Minuetto (Allegretto) (Musopen String Quartet)",
+        "3": "Mozart - String Quartet No. 15 in D minor, K421 - III. Minuetto (Allegretto)",
+        "4": "Mozart - String Quartet No. 15 in D minor, K421 - III. Minuetto (Allegretto) (Musopen String Quartet)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4ba9d0e56c8927317273382226cbae626e26fbc2ffa00545a921fc7378ba71ab",
+      "policy": "brief-english-display-v1"
     }
   }
 }
