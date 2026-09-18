@@ -1,49 +1,36 @@
 {
-  "generated": 1,
-  "failed": 5,
+  "generated": 3,
+  "failed": 3,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 0,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
-    "draft_quote_unsupported": 5
+    "source_wording_copied": 1,
+    "draft_quote_unsupported": 2
   },
   "failed_items": [
     {
-      "key": "paper:32c138fb77cba32030edf1e8",
+      "key": "paper:47fa01a92e69fa2dc2494e5e",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:8987c6f3b34d54ecea94b595",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:5fb6f0c0b1a3b86857bd4190",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "key": "paper:8b5b985ef43a7a836af1b183",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "key": "paper:8df2c3cd71b49d271188da46",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "key": "paper:ed239bfec48e67d1897158cb",
+      "key": "paper:e5545b4a167296b407cac3b1",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-17T17:10:56.101267+00:00"
+  "updated_at": "2026-09-18T16:33:45.632747+00:00"
 }
