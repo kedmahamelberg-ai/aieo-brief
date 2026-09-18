@@ -2393,6 +2393,26 @@
       },
       "output_sha256": "4ba9d0e56c8927317273382226cbae626e26fbc2ffa00545a921fc7378ba71ab",
       "policy": "brief-english-display-v1"
+    },
+    "06e07fec0a63253be7bdee79ba475f0388794408c570b7b17c798a888b778955": {
+      "english": {
+        "0": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
+        "1": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
+        "2": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "13fe63969efb576a7568d853dc9440750e1a9f33af29e1ac85297e870d6ba086",
+      "policy": "brief-english-display-v1"
     }
   }
 }
