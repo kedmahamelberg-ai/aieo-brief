@@ -1,8 +1,8 @@
 {
   "schema_version": "aieo_research_public_v1",
-  "period_start": "2026-09-12",
-  "period_end": "2026-09-18",
-  "generated_at": "2026-09-18T16:33:45.630906+00:00",
+  "period_start": "2026-09-13",
+  "period_end": "2026-09-19",
+  "generated_at": "2026-09-19T15:59:04.083354+00:00",
   "papers": [
     {
       "key": "paper:e5545b4a167296b407cac3b1",
@@ -18,13 +18,10 @@
         "Ali Darvishi",
         "Hamidreza Bolhasani"
       ],
-      "institutions": [
-        "Shahid Beheshti University of Medical Sciences",
-        "Shiraz University of Medical Sciences"
-      ],
-      "affiliation_source_url": "https://openalex.org/W7213496934",
-      "affiliation_checked_at": "2026-09-18T16:23:16.561488+00:00",
-      "source_verified_at": "2026-09-18T16:23:16.561488+00:00",
+      "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7213580677",
+      "affiliation_checked_at": "2026-09-19T15:52:21.848924+00:00",
+      "source_verified_at": "2026-09-19T15:52:21.848924+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -54,8 +51,8 @@
         "Andrianos Michail"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-18T16:23:16.561488+00:00",
-      "source_verified_at": "2026-09-18T16:23:16.561488+00:00",
+      "affiliation_checked_at": "2026-09-19T15:52:21.848924+00:00",
+      "source_verified_at": "2026-09-19T15:52:21.848924+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -94,8 +91,9 @@
         "Xun Wang"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-18T16:23:16.561488+00:00",
-      "source_verified_at": "2026-09-18T16:23:16.561488+00:00",
+      "affiliation_source_url": "https://openalex.org/W7213586722",
+      "affiliation_checked_at": "2026-09-19T15:52:21.848924+00:00",
+      "source_verified_at": "2026-09-19T15:52:21.848924+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -129,8 +127,8 @@
         "Max Simchowitz"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-18T16:23:16.561488+00:00",
-      "source_verified_at": "2026-09-18T16:23:16.561488+00:00",
+      "affiliation_checked_at": "2026-09-19T15:52:21.848924+00:00",
+      "source_verified_at": "2026-09-19T15:52:21.848924+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -152,7 +150,8 @@
       "reading_minutes": 1,
       "claim_status": "study",
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1"
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+      "affiliation_source_url": "https://openalex.org/W7213593653"
     },
     {
       "key": "paper:5a17a2b03c3e61659f68d43e",
@@ -168,8 +167,8 @@
         "Emilio Ferrara"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-18T16:23:16.561488+00:00",
-      "source_verified_at": "2026-09-18T16:23:16.561488+00:00",
+      "affiliation_checked_at": "2026-09-19T15:52:21.848924+00:00",
+      "source_verified_at": "2026-09-19T15:52:21.848924+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -211,8 +210,9 @@
         "Iro Armeni"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-18T16:23:16.561488+00:00",
-      "source_verified_at": "2026-09-18T16:23:16.561488+00:00",
+      "affiliation_source_url": "https://openalex.org/W7213609969",
+      "affiliation_checked_at": "2026-09-19T15:52:21.848924+00:00",
+      "source_verified_at": "2026-09-19T15:52:21.848924+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -220,15 +220,21 @@
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "d01b77f9beecd417738b6f7c00d3a2fb802f6dfe74487413894a9921b3e860a9",
-      "has_editorial": false,
-      "headline": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-      "deck": "Open the original research record for the paper and its access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1
+      "has_editorial": true,
+      "headline": "FAMOS: Sparse-Observation 3D Articulation with Multi-State Transformer, Yet Abstract-Only Limits Apply",
+      "deck": "A feed-forward model learns movable-part segmentation and joint parameters from partial views.",
+      "what_happened": "The paper introduces FAMOS, a model that aggregates sparse partial point clouds to predict movable parts and joints, using a Multi-state Articulation Transformer, and a data generator to train on diverse synthetic assets.",
+      "why_it_matters": "This abstract-only preprint demonstrates improvements over baselines in controlled settings, but results hinge on synthetic data and abstract objectives.",
+      "body_paragraphs": [
+        "FAMOS tackles the challenge of modeling articulated objects from sparse monocular observations by predicting both movable-part segmentation and joint parameters from an unordered set of partial point clouds. It uses a Multi-state Articulation Transformer to aggregate cues across observations and handles variable input counts, including a single view.",
+        "To train, the authors introduce a procedural data generator that creates self-annotated assets, aiming to broaden scale and diversity beyond existing datasets, and they report improvements over prior feed-forward and optimization-based methods on several benchmarks."
+      ],
+      "limitation": "This is an abstract-only preprint. The reported results rely on synthetic data and may not fully reflect real-world performance. Further validation on real-world datasets is needed.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1"
     },
     {
       "key": "paper:ed239bfec48e67d1897158cb",

@@ -1,22 +1,15 @@
 {
-  "generated": 3,
-  "failed": 3,
+  "generated": 1,
+  "failed": 2,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 0,
+  "unchanged": 3,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
-    "source_wording_copied": 1,
-    "draft_quote_unsupported": 2
+    "draft_quote_unsupported": 1,
+    "unexpected_error": 1
   },
   "failed_items": [
-    {
-      "key": "paper:47fa01a92e69fa2dc2494e5e",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
     {
       "key": "paper:8987c6f3b34d54ecea94b595",
       "error_type": "EditorialError",
@@ -26,11 +19,11 @@
     },
     {
       "key": "paper:e5545b4a167296b407cac3b1",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-18T16:33:45.632747+00:00"
+  "updated_at": "2026-09-19T15:59:04.116720+00:00"
 }
