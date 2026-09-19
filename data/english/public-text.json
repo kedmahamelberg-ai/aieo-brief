@@ -2413,6 +2413,69 @@
       },
       "output_sha256": "13fe63969efb576a7568d853dc9440750e1a9f33af29e1ac85297e870d6ba086",
       "policy": "brief-english-display-v1"
+    },
+    "b2f695fa11890b3c3da153fddc98bfedcad05c9d288a218c484ac3c6bd2e41e8": {
+      "english": {
+        "0": "Prajnaparamita flanked by two bodhisattvas, folio 187 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+        "1": "Prajnaparamita flanked by two bodhisattvas, folio 187 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra). Gum tempera and ink on palm leaf.",
+        "2": "Prajnaparamita flanked by two bodhisattvas, folio 187 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+        "3": "CC0 image",
+        "4": "Prajnaparamita flanked by two bodhisattvas, folio 187 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "edf1000109d513bf1cac1a58a11d0735fab3583151efa02185c2cbb073939fe7",
+      "policy": "brief-english-display-v1"
+    },
+    "c231ac4e767e12441fc0cd5cb211fb0be64bb31ee588345f1e9611628f299bcc": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Divan of Hafiz · XXXIII",
+        "2": "XXXIII",
+        "3": "Divan of Hafiz · XXXIII"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7549e2593125e56354dfc40f28afbc4dc86cc5137b4cffa82ea5776d1061f3b1",
+      "policy": "brief-english-display-v1"
+    },
+    "524834315d530e20a1deb4aa0f353a4bfeb1a9aee30d418c7c242a9b1ab2ab80": {
+      "english": {
+        "0": "Composer",
+        "1": "Lullaby by Gabriel Fauré Op. 56 No. 1",
+        "2": "Lullaby by Gabriel Fauré Op. 56 No. 1"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8ad1982f290a567458ac5fb924a473701c7d297c9547c11d8a13d195786cdf04",
+      "policy": "brief-english-display-v1"
     }
   }
 }
