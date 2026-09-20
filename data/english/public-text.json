@@ -2476,6 +2476,71 @@
       },
       "output_sha256": "8ad1982f290a567458ac5fb924a473701c7d297c9547c11d8a13d195786cdf04",
       "policy": "brief-english-display-v1"
+    },
+    "10af0dfd5d9a5efc97c7a8426ca3d929ab1ed08105897b219b28508a9be9543f": {
+      "english": {
+        "0": "Norwegian",
+        "1": "Composer",
+        "2": "Grieg song Solveig, Peer Gynt - Alina Ribina (audio)",
+        "3": "Music - Edvard Grieg. Ukrainian translation and performance - Alina Ribina",
+        "4": "Music - Edvard Grieg. Ukrainian translation and performance - Alina Ribina",
+        "5": "YouTube: https://www.youtube.com/watch?v=N6K8_JZuSp8 – View/save archived versions on archive.org",
+        "6": "Grieg song Solveig, Peer Gynt - Alina Ribina (audio)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f6927df70b4146e7df54614ab8bbec79012c4c2f22e6d1bbf737f93516d375e2",
+      "policy": "brief-english-display-v1"
+    },
+    "9f2c7390c710b021848ecdb92d3df494100f128156da878ad79d26ea39bcb275": {
+      "english": {
+        "0": "American"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "956ebd3d55faa9d10dc2f9771361697d6c3213e828e70c631d41ee18f02962b4",
+      "policy": "brief-english-display-v1"
+    },
+    "4ea455376cc93ae63f3f01dc9a052f40a2aa6d685203736aa114b9ed220b108c": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Loose Papers.",
+        "3": "--Charity, Mr. Soares, certainly enters into my procedure, but enters as seasoning, as the salt of things, which is how I interpret the saying of St. Paul to the Corinthians: \"If I know as much as can be known, and do not have charity, I am nothing.\" The main thing in this my work of the Green House is to study madness deeply, its various grains, to classify the cases, to discover, in short, the cause of the phenomenon and the universal remedy. This is the mystery of my heart. I believe that with this I render a good service to humanity.",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "68286d1d7e152358305f309fa2cf56f07b6b80d3149ee298722a1feabee81c40",
+      "policy": "brief-english-display-v1"
     }
   }
 }

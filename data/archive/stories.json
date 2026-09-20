@@ -2,6 +2,387 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/2/29/%D0%93%D1%80%D1%96%D0%B3_%D0%BF%D1%96%D1%81%D0%BD%D1%8F_%D0%A1%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D0%B9%D0%B3_%D0%9F%D0%B5%D1%80_%D0%93%D1%8E%D0%BD%D1%82_-_%D0%90%D0%BB%D1%96%D0%BD%D0%B0_%D0%A0%D0%B8%D0%B1%D1%96%D0%BD%D0%B0_%28%D0%B0%D1%83%D0%B4%D1%96%D0%BE%29.ogg",
+      "creator": "Edvard Grieg",
+      "creator_origin": "Norwegian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Edvard Grieg. 4 minutes to listen.",
+      "duration_seconds": 279,
+      "headline": "Гріг пісня Сольвейг Пер Гюнт - Аліна Рибіна (аудіо)",
+      "key": "culture:c8d2451844ec60991608c26a",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/%D0%93%D1%80%D1%96%D0%B3_%D0%BF%D1%96%D1%81%D0%BD%D1%8F_%D0%A1%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D0%B9%D0%B3_%D0%9F%D0%B5%D1%80_%D0%93%D1%8E%D0%BD%D1%82_-_%D0%90%D0%BB%D1%96%D0%BD%D0%B0_%D0%A0%D0%B8%D0%B1%D1%96%D0%BD%D0%B0_%28%D0%B0%D1%83%D0%B4%D1%96%D0%BE%29.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Edvard_Grieg",
+      "original_recording_title": "Гріг пісня Сольвейг Пер Гюнт - Аліна Рибіна (аудіо)",
+      "provenance_id": "commons:65070322",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Музика - Едвард Гріг. Український переклад та виконання - Аліна Рибіна",
+      "recording_description": "Edward Grieg Solveig`s Song (from music to the play of Ibsen \"Per Gunt\"). Translated into Ukrainian and performed by Alina Rybina Piano - Olena Sinchuk Recording from the gala concert of the winners of the contest \"World Classics in Ukrainian\"",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Музика - Едвард Гріг. Український переклад та виконання - Аліна Рибіна",
+        "label": "CC BY-SA 3.0 (source-declared)",
+        "source_credit": "YouTube : https://www.youtube.com/watch?v=N6K8_JZuSp8 – View/save archived versions on archive.org",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%D0%93%D1%80%D1%96%D0%B3_%D0%BF%D1%96%D1%81%D0%BD%D1%8F_%D0%A1%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D0%B9%D0%B3_%D0%9F%D0%B5%D1%80_%D0%93%D1%8E%D0%BD%D1%82_-_%D0%90%D0%BB%D1%96%D0%BD%D0%B0_%D0%A0%D0%B8%D0%B1%D1%96%D0%BD%D0%B0_(%D0%B0%D1%83%D0%B4%D1%96%D0%BE).ogg",
+      "work_date": "2017-12-12",
+      "date": "2026-09-20",
+      "selected_on": "2026-09-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c8d2451844ec60991608c26a",
+      "path": "culture/culture-c8d2451844ec60991608c26a/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Гріг пісня Сольвейг Пер Гюнт - Аліна Рибіна (аудіо)",
+          "url": "https://commons.wikimedia.org/wiki/File:%D0%93%D1%80%D1%96%D0%B3_%D0%BF%D1%96%D1%81%D0%BD%D1%8F_%D0%A1%D0%BE%D0%BB%D1%8C%D0%B2%D0%B5%D0%B9%D0%B3_%D0%9F%D0%B5%D1%80_%D0%93%D1%8E%D0%BD%D1%82_-_%D0%90%D0%BB%D1%96%D0%BD%D0%B0_%D0%A0%D0%B8%D0%B1%D1%96%D0%BD%D0%B0_(%D0%B0%D1%83%D0%B4%D1%96%D0%BE).ogg",
+          "date": "2017-12-12",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-20",
+      "summary_basis": "Selected 20 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "affb310a5393612b8f2ece3faf1705f64653ff168d00a22210a0208126781f18",
+      "creator": "Emily Dickinson",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Emily Dickinson.",
+      "excerpt": "Better -- than Music!  For I -- who heard it --\nI was used -- to the Birds -- before --\nThis -- was different -- 'Twas Translation --\nOf all tunes I knew -- and more --\n\n'Twasn't contained -- like other stanza --\nNo one could play it -- the second time --\nBut the Composer -- perfect Mozart --\nPerish with him -- that Keyless Rhyme!\n\nSo -- Children -- told how Brooks in Eden --\nBubbled a better -- Melody --\nQuaintly infer -- Eve's great surrender --\nUrging the feet -- that would -- not -- fly --\n\nChildren -- matured -- are wiser -- mostly --\nEden -- a legend -- dimly told --\nEve -- and the Anguish -- Grandame's story --\nBut -- I was telling a tune -- I heard --\n\nNot such a strain -- the Church -- baptizes --\nWhen the last Saint -- goes up the Aisles --\nNot such a stanza splits the silence --\nWhen the Redemption strikes her Bells --\n\nLet me not spill -- its smallest cadence --\nHumming -- for promise -- when alone --\nHumming -- until my faint Rehearsal --\nDrop into tune -- around the Throne --",
+      "headline": "Better -- than Music! For I -- who heard it --",
+      "key": "culture:7a4c594e711a7003fe3d15ee",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Better -- than Music!  For I -- who heard it --",
+        "I was used -- to the Birds -- before --",
+        "This -- was different -- 'Twas Translation --",
+        "Of all tunes I knew -- and more --",
+        "",
+        "'Twasn't contained -- like other stanza --",
+        "No one could play it -- the second time --",
+        "But the Composer -- perfect Mozart --",
+        "Perish with him -- that Keyless Rhyme!",
+        "",
+        "So -- Children -- told how Brooks in Eden --",
+        "Bubbled a better -- Melody --",
+        "Quaintly infer -- Eve's great surrender --",
+        "Urging the feet -- that would -- not -- fly --",
+        "",
+        "Children -- matured -- are wiser -- mostly --",
+        "Eden -- a legend -- dimly told --",
+        "Eve -- and the Anguish -- Grandame's story --",
+        "But -- I was telling a tune -- I heard --",
+        "",
+        "Not such a strain -- the Church -- baptizes --",
+        "When the last Saint -- goes up the Aisles --",
+        "Not such a stanza splits the silence --",
+        "When the Redemption strikes her Bells --",
+        "",
+        "Let me not spill -- its smallest cadence --",
+        "Humming -- for promise -- when alone --",
+        "Humming -- until my faint Rehearsal --",
+        "Drop into tune -- around the Throne --"
+      ],
+      "provenance_id": "poetrydb:Emily Dickinson:Better -- than Music! For I -- who heard it --",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1886.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "7610e238c2626421a8521cf522b01cf6dc92f2171282b024381ddd74bca9393a",
+      "source_locator": "Better -- than Music! For I -- who heard it --",
+      "source_url": "https://poetrydb.org/title/Better%20--%20than%20Music%21%20For%20I%20--%20who%20heard%20it%20--:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1886",
+      "date": "2026-09-20",
+      "selected_on": "2026-09-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-7a4c594e711a7003fe3d15ee",
+      "path": "culture/culture-7a4c594e711a7003fe3d15ee/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Better -- than Music! For I -- who heard it --",
+          "url": "https://poetrydb.org/title/Better%20--%20than%20Music%21%20For%20I%20--%20who%20heard%20it%20--:abs/lines.text",
+          "date": "Before 1886",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-20",
+      "summary_basis": "Selected 20 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Better -- than Music!  For I -- who heard it --\nI was used -- to the Birds -- before --\nThis -- was different -- 'Twas Translation --\nOf all tunes I knew -- and more --\n\n'Twasn't contained -- like other stanza --\nNo one could play it -- the second time --\nBut the Composer -- perfect Mozart --\nPerish with him -- that Keyless Rhyme!\n\nSo -- Children -- told how Brooks in Eden --\nBubbled a better -- Melody --\nQuaintly infer -- Eve's great surrender --\nUrging the feet -- that would -- not -- fly --\n\nChildren -- matured -- are wiser -- mostly --\nEden -- a legend -- dimly told --\nEve -- and the Anguish -- Grandame's story --\nBut -- I was telling a tune -- I heard --\n\nNot such a strain -- the Church -- baptizes --\nWhen the last Saint -- goes up the Aisles --\nNot such a stanza splits the silence --\nWhen the Redemption strikes her Bells --\n\nLet me not spill -- its smallest cadence --\nHumming -- for promise -- when alone --\nHumming -- until my faint Rehearsal --\nDrop into tune -- around the Throne --",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "907eab694bb0e76398872d5d98540b58161b85aee6d6db49f3068566c3512106",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "quote",
+      "deck": "From Tao Te Ching. Translation by James Legge.",
+      "excerpt": "The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice.",
+      "headline": "The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice.",
+      "key": "culture:71f12528291fda09345544e1",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:quote:907eab694bb0e76398872d5d98540b58161b85aee6d6db49f3068566c3512106",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice. I know hereby what advantage belongs to doing nothing (with a purpose).",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 143 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-09-20",
+      "selected_on": "2026-09-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-71f12528291fda09345544e1",
+      "path": "culture/culture-71f12528291fda09345544e1/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice.",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-20",
+      "summary_basis": "Selected 20 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The softest thing in the world dashes against and overcomes the hardest; that which has no (substantial) existence enters where there is no crevice. I know hereby what advantage belongs to doing nothing (with a purpose).",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Plate 11: Joseph",
+      "art_type": "Print",
+      "balance_origin": "Netherlands",
+      "creator": "Jacob de Gheyn II (Netherlandish, 1565–1629) · after Karel I van Mander (Netherlandish, 1548–1606)",
+      "creator_origin": "Netherlands",
+      "culture_type": "illustration",
+      "deck": "Plate 11: Joseph. engraving.",
+      "headline": "Plate 11: Joseph",
+      "image_path": "assets/culture/6244caada3a5afca9d0b2fb0.jpg",
+      "key": "culture:6244caada3a5afca9d0b2fb0",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2024.145.9/2024.145.9_web.jpg",
+      "medium": "engraving",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2024.145.9",
+      "provenance_id": "cma:681932",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Carole W. and Charles B. Rosenblatt Endowment Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2024.145.9",
+      "work_date": "c. 1589",
+      "date": "2026-09-20",
+      "selected_on": "2026-09-20",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-6244caada3a5afca9d0b2fb0",
+      "path": "culture/culture-6244caada3a5afca9d0b2fb0/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Plate 11: Joseph",
+          "url": "https://clevelandart.org/art/2024.145.9",
+          "date": "c. 1589",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-20",
+      "summary_basis": "Selected 20 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Papéis Avulsos",
+      "content_fingerprint": "032286397cdd642a7d893f2ebc49e50a57b880fbc0f3c9e83eb5b42f10ff4777",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Papéis Avulsos.",
+      "excerpt": "--A caridade, Sr. Soares, entra de certo no meu procedimento, mas entra como tempero, como o sal das cousas, que é assim que interpreto o dito de S. Paulo aos Corinthios: «Se eu conhecer quanto se pode saber, e não tiver caridade, não sou nada.» O principal nesta minha obra da Casa Verde é estudar profundamente a loucura, os seus diversos grãos, classificar-lbe os casos, descobrir emfim a causa do phenomeno e o remedio universal. Este é o mysterio do meu coração. Creio que com isto presto um bom serviço á humanidade.",
+      "headline": "Papéis Avulsos · a short reading",
+      "key": "culture:58827bde6cededc5f1f7b0da",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:57001:passage:032286397cdd642a7d893f2ebc49e50a57b880fbc0f3c9e83eb5b42f10ff4777",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/57001"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "68d9d8a21dc3b4f1adb9fdaad9b962304bbb04d9472df4df328b6f8432bdfbe6",
+      "source_locator": "O ALIENISTA; paragraph 21 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/57001",
+      "translator": "",
+      "work_date": "1882",
+      "date": "2026-09-20",
+      "selected_on": "2026-09-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-58827bde6cededc5f1f7b0da",
+      "path": "culture/culture-58827bde6cededc5f1f7b0da/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Papéis Avulsos · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/57001",
+          "date": "1882",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-20",
+      "summary_basis": "Selected 20 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "--A caridade, Sr. Soares, entra de certo no meu procedimento, mas entra como tempero, como o sal das cousas, que é assim que interpreto o dito de S. Paulo aos Corinthios: «Se eu conhecer quanto se pode saber, e não tiver caridade, não sou nada.» O principal nesta minha obra da Casa Verde é estudar profundamente a loucura, os seus diversos grãos, classificar-lbe os casos, descobrir emfim a causa do phenomeno e o remedio universal. Este é o mysterio do meu coração. Creio que com isto presto um bom serviço á humanidade.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Prajnaparamita flanked by two bodhisattvas, folio 187 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
       "art_type": "Painting",
       "balance_origin": "Eastern India",
