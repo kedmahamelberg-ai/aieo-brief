@@ -1,9 +1,9 @@
 {
-  "generated": 1,
+  "generated": 0,
   "failed": 2,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 3,
+  "unchanged": 4,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
     "draft_quote_unsupported": 1,
@@ -25,5 +25,5 @@
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-19T15:59:04.116720+00:00"
+  "updated_at": "2026-09-20T16:08:48.807960+00:00"
 }
