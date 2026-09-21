@@ -3,6 +3,211 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W38",
+      "period_start": "2026-09-14",
+      "period_end": "2026-09-20",
+      "display_date": "2026-09-20",
+      "path": "week-from-above/2026-w38/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "Five currents in this week’s AI reporting",
+        "deck": "Across the five discovery markets, rules and rights met business and investment. The balance differed by reporting stream.",
+        "summary": "China: the discovery stream centred most often on rules and rights, including “AI-Energy Double-Edged Outlook: Chinese Forum Cites Gains Yet Narrow Limits, Says….” United States: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.” United Kingdom: the discovery stream centred most often on rules and rights, including “Google’s Gemini Hack Shows AI Accessed Real Systems in Security Test….” France: the discovery stream centred most often on rules and rights, including “Toulouse researcher tracks generative AI traces in scientific articles, highlighting risks….” Canada: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.”",
+        "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
+        "word_count": 143,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 27,
+            "topic": "Rules And Rights",
+            "sentence": "China: the discovery stream centred most often on rules and rights, including “AI-Energy Double-Edged Outlook: Chinese Forum Cites Gains Yet Narrow Limits, Says….”",
+            "story": {
+              "headline": "AI-Energy Double-Edged Outlook: Chinese Forum Cites Gains Yet Narrow Limits, Says Official Source",
+              "path": "story/development-9442351d-1acd-44fd-a29e-b0c9d405116c/index.html",
+              "publisher": "People's Daily",
+              "source_url": ""
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 9,
+            "topic": "Rules And Rights",
+            "sentence": "United States: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.”",
+            "story": {
+              "headline": "AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits",
+              "path": "story/development-9ab904c8-9eb5-43f6-9c0d-724e366c0256/index.html",
+              "publisher": "Amazon Web Services (AWS)",
+              "source_url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 14,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Google’s Gemini Hack Shows AI Accessed Real Systems in Security Test….”",
+            "story": {
+              "headline": "Google’s Gemini Hack Shows AI Accessed Real Systems in Security Test, Safeguards Tightened",
+              "path": "story/development-2bac1c8c-4fde-4b49-b0f8-5102e180d003/index.html",
+              "publisher": "TechCrunch",
+              "source_url": "https://techcrunch.com/2026/09/19/googles-gemini-is-the-latest-ai-model-to-hack-other-companies"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 7,
+            "topic": "Rules And Rights",
+            "sentence": "France: the discovery stream centred most often on rules and rights, including “Toulouse researcher tracks generative AI traces in scientific articles, highlighting risks….”",
+            "story": {
+              "headline": "Toulouse researcher tracks generative AI traces in scientific articles, highlighting risks and limits",
+              "path": "story/development-52858fce-5332-4b02-92b4-bd9bf8f3f236/index.html",
+              "publisher": "lopinion.com",
+              "source_url": "https://lopinion.com/amp/articles/actualite/35538_chercheuse-toulousaine-traque-traces-ia-generative-articles-scientifiques"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 30,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.”",
+            "story": {
+              "headline": "AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits",
+              "path": "story/development-9ab904c8-9eb5-43f6-9c0d-724e366c0256/index.html",
+              "publisher": "Amazon Web Services (AWS)",
+              "source_url": "https://aws.amazon.com/blogs/machine-learning/the-generative-ai-customization-spectrum-from-prompt-engineering-to-custom-models-on-aws"
+            }
+          }
+        ],
+        "active_market_count": 5
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "Research turns toward new methods and evidence and agents and coordination",
+        "deck": "The selected papers point in two directions: new methods and evidence and agents and coordination.",
+        "summary": "Affiliation not yet verified: New tokenisers designed to separate optimization goals from search methods reveal the search path matters more for bits-per-byte, with mixed… Affiliation not yet verified: A feed-forward model learns movable-part segmentation and joint parameters from partial views. Affiliation not yet verified: A new approach adds obstacle-aware harnesses to coding agents, prioritizing safety alongside task goals.",
+        "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
+        "word_count": 81,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [
+          {
+            "key": "paper:2f20cd93d7761021eed1888f",
+            "headline": "arXiv researchers say search procedure dominates tokeniser efficiency; objective choice shows inconsistent BLiMP results.",
+            "original_headline": "Objective vs. Search: Decomposing What Makes a Good Tokeniser",
+            "deck": "New tokenisers designed to separate optimization goals from search methods reveal the search path matters more for bits-per-byte, with mixed BLiMP outcomes.",
+            "authors": [
+              "Ahmetcan Yavuz",
+              "Clara Meister",
+              "Tiago Pimentel"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.19145v1",
+            "path": "research/paper-2f20cd93d7761021eed1888f/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-16",
+            "theme": "training and efficiency",
+            "source_verified_at": "2026-09-17T16:58:51.247497+00:00",
+            "affiliation_source_url": ""
+          },
+          {
+            "key": "paper:47fa01a92e69fa2dc2494e5e",
+            "headline": "FAMOS: Sparse-Observation 3D Articulation with Multi-State Transformer, Yet Abstract-Only Limits Apply",
+            "original_headline": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
+            "deck": "A feed-forward model learns movable-part segmentation and joint parameters from partial views.",
+            "authors": [
+              "Kevin Qu",
+              "Tao Sun",
+              "Massimiliano Viola",
+              "Liyuan Zhu",
+              "Zhizhuo Zhou",
+              "Sayan Deb Sarkar",
+              "Konrad Schindler",
+              "Iro Armeni"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.20817v1",
+            "path": "research/paper-47fa01a92e69fa2dc2494e5e/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-17",
+            "theme": "human interaction and creativity",
+            "source_verified_at": "2026-09-20T16:04:05.772615+00:00",
+            "affiliation_source_url": "https://openalex.org/W7213609969"
+          },
+          {
+            "key": "paper:5a17a2b03c3e61659f68d43e",
+            "headline": "Obstacle-Aware Harness Improves Safety in Coding Agents for Robot Manipulation, Says arXiv Study",
+            "original_headline": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
+            "deck": "A new approach adds obstacle-aware harnesses to coding agents, prioritizing safety alongside task goals.",
+            "authors": [
+              "Bingxin Xu",
+              "Yuzhang Shang",
+              "Zhen Dong",
+              "Emilio Ferrara"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.20822v1",
+            "path": "research/paper-5a17a2b03c3e61659f68d43e/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-17",
+            "theme": "agents and coordination",
+            "source_verified_at": "2026-09-20T16:04:05.772615+00:00",
+            "affiliation_source_url": ""
+          },
+          {
+            "key": "paper:64b9cc246b994b8534014693",
+            "headline": "Agentic Societies Need a Social Harness, Says arXiv Abstract",
+            "original_headline": "Agentic Societies Need a Social Harness",
+            "deck": "A concise look at why coordinating AI agents requires a social harness beyond individual safeguards.",
+            "authors": [
+              "Tapan Chugh",
+              "Vidushi Singh",
+              "Krish Jain",
+              "Arvind Krishnamurthy",
+              "Ratul Mahajan"
+            ],
+            "institutions": [],
+            "institution_status": "not supplied in verified metadata",
+            "url": "https://arxiv.org/abs/2609.17527v1",
+            "path": "research/paper-64b9cc246b994b8534014693/index.html",
+            "publisher": "arXiv",
+            "label": "Preprint",
+            "date": "2026-09-15",
+            "theme": "agents and coordination",
+            "source_verified_at": "2026-09-16T16:53:07.286160+00:00",
+            "affiliation_source_url": ""
+          }
+        ],
+        "paper_count": 18,
+        "affiliation_verified_count": 0
+      },
+      "content_sha256": "9a6abf04f3663c466d078346c2a7920c6183f6aa3055db9ec52d8afd65d0b750"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W37",
       "period_start": "2026-09-07",
       "period_end": "2026-09-13",
