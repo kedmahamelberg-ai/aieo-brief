@@ -279,6 +279,306 @@
         "utm_campaign": "brief_2026_w38",
         "utm_content": "SUN_RESEARCH_GEO"
       }
+    },
+    {
+      "slug": "26w39-1f",
+      "article_path": "story/development-3c6ed92a-f1bd-42cd-87e0-ae2aa8fa8232/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "MON10_US_SECURITY"
+      }
+    },
+    {
+      "slug": "26w39-1l",
+      "article_path": "story/development-3c6ed92a-f1bd-42cd-87e0-ae2aa8fa8232/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "MON10_US_SECURITY"
+      }
+    },
+    {
+      "slug": "26w39-2f",
+      "article_path": "story/development-2b2b5372-5f01-4739-9323-00f915d6bf64/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "MON18_CA_OVERSIGHT"
+      }
+    },
+    {
+      "slug": "26w39-2l",
+      "article_path": "story/development-2b2b5372-5f01-4739-9323-00f915d6bf64/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "MON18_CA_OVERSIGHT"
+      }
+    },
+    {
+      "slug": "26w39-3f",
+      "article_path": "story/development-3666838a-896d-40d8-816f-bdfb5d4399f8/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "TUE10_CN_PACE"
+      }
+    },
+    {
+      "slug": "26w39-3l",
+      "article_path": "story/development-3666838a-896d-40d8-816f-bdfb5d4399f8/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "TUE10_CN_PACE"
+      }
+    },
+    {
+      "slug": "26w39-4f",
+      "article_path": "story/development-c284eac8-7061-4d5f-9596-b85131725529/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "TUE18_GB_LAWSUIT"
+      }
+    },
+    {
+      "slug": "26w39-4l",
+      "article_path": "story/development-c284eac8-7061-4d5f-9596-b85131725529/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "TUE18_GB_LAWSUIT"
+      }
+    },
+    {
+      "slug": "26w39-5f",
+      "article_path": "research/paper-64b9cc246b994b8534014693/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "WED06_RESEARCH_HARNESS"
+      }
+    },
+    {
+      "slug": "26w39-5l",
+      "article_path": "research/paper-64b9cc246b994b8534014693/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "WED06_RESEARCH_HARNESS"
+      }
+    },
+    {
+      "slug": "26w39-6f",
+      "article_path": "story/development-52858fce-5332-4b02-92b4-bd9bf8f3f236/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "WED10_FR_SCIENCE"
+      }
+    },
+    {
+      "slug": "26w39-6l",
+      "article_path": "story/development-52858fce-5332-4b02-92b4-bd9bf8f3f236/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "WED10_FR_SCIENCE"
+      }
+    },
+    {
+      "slug": "26w39-7f",
+      "article_path": "story/development-8bd28e15-2c08-4826-bed9-41f8b29831cb/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "WED18_US_GUARDRAILS"
+      }
+    },
+    {
+      "slug": "26w39-7l",
+      "article_path": "story/development-8bd28e15-2c08-4826-bed9-41f8b29831cb/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "WED18_US_GUARDRAILS"
+      }
+    },
+    {
+      "slug": "26w39-8f",
+      "article_path": "story/development-25e7d3db-3917-45ff-acab-7268ed7a6fb5/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "THU10_CA_WORKERS"
+      }
+    },
+    {
+      "slug": "26w39-8l",
+      "article_path": "story/development-25e7d3db-3917-45ff-acab-7268ed7a6fb5/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "THU10_CA_WORKERS"
+      }
+    },
+    {
+      "slug": "26w39-9f",
+      "article_path": "story/development-41e75dfc-b7b5-4c1a-adb1-0fe4e5f2611b/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "THU18_CN_ASEAN"
+      }
+    },
+    {
+      "slug": "26w39-9l",
+      "article_path": "story/development-41e75dfc-b7b5-4c1a-adb1-0fe4e5f2611b/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "THU18_CN_ASEAN"
+      }
+    },
+    {
+      "slug": "26w39-10f",
+      "article_path": "story/development-bd59a14b-3190-49d1-a6af-3e951818f3bf/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "FRI10_GB_DATACENTRES"
+      }
+    },
+    {
+      "slug": "26w39-10l",
+      "article_path": "story/development-bd59a14b-3190-49d1-a6af-3e951818f3bf/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "FRI10_GB_DATACENTRES"
+      }
+    },
+    {
+      "slug": "26w39-11f",
+      "article_path": "story/development-50d3a3e6-2702-4670-b29a-109a9cc06de3/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "FRI18_FR_MISTRAL"
+      }
+    },
+    {
+      "slug": "26w39-11l",
+      "article_path": "story/development-50d3a3e6-2702-4670-b29a-109a9cc06de3/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "FRI18_FR_MISTRAL"
+      }
+    },
+    {
+      "slug": "26w39-12f",
+      "article_path": "story/development-f3ed8be3-c277-4165-9cc1-eb2f5256d235/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SAT10_US_LUNAR"
+      }
+    },
+    {
+      "slug": "26w39-12l",
+      "article_path": "story/development-f3ed8be3-c277-4165-9cc1-eb2f5256d235/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SAT10_US_LUNAR"
+      }
+    },
+    {
+      "slug": "26w39-13f",
+      "article_path": "story/development-0f553203-9667-449b-b6d8-d7441e887a3d/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SAT18_CA_RAIL"
+      }
+    },
+    {
+      "slug": "26w39-13l",
+      "article_path": "story/development-0f553203-9667-449b-b6d8-d7441e887a3d/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SAT18_CA_RAIL"
+      }
+    },
+    {
+      "slug": "26w39-14f",
+      "article_path": "story/development-0f103be3-813d-4f0b-b8f9-69a6989bd23b/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SUN10_CN_AVIATION"
+      }
+    },
+    {
+      "slug": "26w39-14l",
+      "article_path": "story/development-0f103be3-813d-4f0b-b8f9-69a6989bd23b/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SUN10_CN_AVIATION"
+      }
+    },
+    {
+      "slug": "26w39-15f",
+      "article_path": "story/development-5392258e-87ac-4115-9df7-94c230214169/index.html",
+      "tracking": {
+        "utm_source": "facebook",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SUN18_GB_FRONTIER"
+      }
+    },
+    {
+      "slug": "26w39-15l",
+      "article_path": "story/development-5392258e-87ac-4115-9df7-94c230214169/index.html",
+      "tracking": {
+        "utm_source": "linkedin",
+        "utm_medium": "organic_social",
+        "utm_campaign": "brief_2026_w39",
+        "utm_content": "SUN18_GB_FRONTIER"
+      }
     }
   ]
 }
