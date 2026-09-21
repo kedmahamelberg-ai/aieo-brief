@@ -2541,6 +2541,224 @@
       },
       "output_sha256": "68286d1d7e152358305f309fa2cf56f07b6b80d3149ee298722a1feabee81c40",
       "policy": "brief-english-display-v1"
+    },
+    "a3cdc5a687629e9094ffd39dcf7939403a176df4501cbffc08aa2236dcdb88d2": {
+      "english": {
+        "0": "Reporting from Xi Jinping Thought on Diplomacy and China's Diplomacy in the New Era. Open the source for the article.",
+        "1": "Exhibition activities and interactions show that humans gain new opportunities and cooperation through AI.",
+        "2": "AI expands its influence by extending exhibition areas, facilitating cross-border cooperation and market matching.",
+        "3": "Xi Jinping Thought on Diplomacy and China's Diplomacy in the New Era.",
+        "4": "Xi Jinping Thought on Diplomacy and China's Diplomacy in the New Era."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4a03ea36d72c5e9c90ce6aa12d183533374c89057588b084b2d643a086672f97",
+      "policy": "brief-english-display-v1"
+    },
+    "aa6579bd22742c7b21463eebecd6c9b8f05402e2272b67450278940835bc4a81": {
+      "english": {
+        "0": "deck",
+        "1": "Reporting from Guangming Online. Open the source for the article.",
+        "2": "Guangming Online"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8fd65918c06f16d4e8b7db32f7010f4fc4f0d71ec2641dd122e8539e3c1326cc",
+      "policy": "brief-english-display-v1"
+    },
+    "1857cc10f9ddeea428de0d5bf53dd88523bcb18528e3523509d4e5965ce775ed": {
+      "english": {
+        "0": "Reporting from Beihang News Network. Open the source for the article.",
+        "1": "Beihang News Network",
+        "2": "Beihang News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4f3f1fa39e414eab4d7f19d6e76df27890008aa9a4a3eeda7b1ec0465e85942c",
+      "policy": "brief-english-display-v1"
+    },
+    "31522cdca0e5890feef283811b8691a18fdf7b52e58677cba0b7e2c2014d2eee": {
+      "english": {
+        "0": "Promote AI application deployment and capability expansion through training",
+        "1": "Shanghai Municipal People's Government",
+        "2": "Shanghai Municipal People's Government"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0f89d0e96ddd65d69b614dda3af25ff7e3856b1897447e171024d499a9e6b32e",
+      "policy": "brief-english-display-v1"
+    },
+    "c20b6dacf49f771e5070c794edf5d240e85c6a02eca3dbfe3acfc04cc083b9d4": {
+      "english": {
+        "0": "Reporting from the China Xiong'an Official Website. Open the source for the article.",
+        "1": "China Xiong'an Official Website",
+        "2": "China Xiong'an Official Website"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "952a6d554565f6adda7163981cd1974f2c2327c85c27beebb67a33c7016991b4",
+      "policy": "brief-english-display-v1"
+    },
+    "091f741313dcc25ce5d73e8e6f0d95fe00fe4afe288880c7873a69eb97af5a59": {
+      "english": {
+        "0": "Roman"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a5d653ce2d8400b796dd40c90ad89c4b19adc9d074703474a09c0952469d81e3",
+      "policy": "brief-english-display-v1"
+    },
+    "7f1ba2073f052e0ce07a314a7d4599cb1c3f5c54ec3062e38b155fbf9998e24f": {
+      "english": {
+        "0": "III"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "61d5fcddc1340a9742c688e5676a81254a99cbca0cbf03d365658b70e9bfbe8a",
+      "policy": "brief-english-display-v1"
+    },
+    "3ae8c99e03d1c3d9e613002455674994db09cbfb064c623d64bb657c086b01f4": {
+      "english": {
+        "0": "Italian",
+        "1": "Composer",
+        "2": "A recording of music by Domenico Scarlatti. 2 minutes to listen.",
+        "3": "D-Scarlatti-Sonata-K159-C",
+        "4": "D. Scarlatti, Sonata K159 C, Veronica van der Knaap, Christchurch, New Zealand",
+        "5": "D-Scarlatti-Sonata-K159-C"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "dbd571f385e2d11945273e76b9b50522cdf0a6f16dbe84c3386f6252c7a2042d",
+      "policy": "brief-english-display-v1"
+    },
+    "cc3bd147c69e457540f4e9f75679acbdcaba1ad279b3417da27532499b1d86db": {
+      "english": {
+        "0": "Iran, Tabriz, Ilkhanid period (1256-1353)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "99240f8b009a39f5d43677625336d48aa9023e86735ea8e32e1f4e85b18b97bc",
+      "policy": "brief-english-display-v1"
+    },
+    "29bbcbefb00307c6360836dde1161d2f2c43f2d83b470371d6c39744b2f9f1d6": {
+      "english": {
+        "0": "neutral",
+        "1": "neutral"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8bf7964f8f83f0a1318d0ccdf8a898ba9c56722d9680438736fe561fdfba28ea",
+      "policy": "brief-english-display-v1"
+    },
+    "ccffa7d1e6ab6ce70fea7022f44c095ef3486f0e09c701c3d24c681f867c7962": {
+      "english": {
+        "0": "USTC News Network",
+        "1": "USTC News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a6dcf8205e201a789bfdbf1b944046d4f284522068bceb414b38bcdd3e23f271",
+      "policy": "brief-english-display-v1"
     }
   }
 }
