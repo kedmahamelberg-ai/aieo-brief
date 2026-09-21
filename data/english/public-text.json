@@ -2721,6 +2721,44 @@
       },
       "output_sha256": "99240f8b009a39f5d43677625336d48aa9023e86735ea8e32e1f4e85b18b97bc",
       "policy": "brief-english-display-v1"
+    },
+    "29bbcbefb00307c6360836dde1161d2f2c43f2d83b470371d6c39744b2f9f1d6": {
+      "english": {
+        "0": "neutral",
+        "1": "neutral"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8bf7964f8f83f0a1318d0ccdf8a898ba9c56722d9680438736fe561fdfba28ea",
+      "policy": "brief-english-display-v1"
+    },
+    "ccffa7d1e6ab6ce70fea7022f44c095ef3486f0e09c701c3d24c681f867c7962": {
+      "english": {
+        "0": "USTC News Network",
+        "1": "USTC News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a6dcf8205e201a789bfdbf1b944046d4f284522068bceb414b38bcdd3e23f271",
+      "policy": "brief-english-display-v1"
     }
   }
 }
