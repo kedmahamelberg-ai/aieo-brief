@@ -2759,6 +2759,25 @@
       },
       "output_sha256": "a6dcf8205e201a789bfdbf1b944046d4f284522068bceb414b38bcdd3e23f271",
       "policy": "brief-english-display-v1"
+    },
+    "584c0eb62cfdd776d6d273e09cad6bd19ea4f5d753a43a1f57cfd3a00aa66213": {
+      "english": {
+        "0": "China Civil Aviation Network",
+        "1": "China Civil Aviation Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2d48f0cbfc98e5a8695be3dd649e793effa7ac74b7c491d85b3825411e670946",
+      "policy": "brief-english-display-v1"
     }
   }
 }
