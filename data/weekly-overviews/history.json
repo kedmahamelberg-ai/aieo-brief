@@ -13,7 +13,7 @@
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
         "deck": "Across the five discovery markets, rules and rights met business and investment. The balance differed by reporting stream.",
-        "summary": "China: the discovery stream centred most often on rules and rights, including “AI-Energy Double-Edged Outlook: Chinese Forum Cites Gains Yet Narrow Limits, Says….” United States: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.” United Kingdom: the discovery stream centred most often on rules and rights, including “Google’s Gemini Hack Shows AI Accessed Real Systems in Security Test….” France: the discovery stream centred most often on rules and rights, including “Toulouse researcher tracks generative AI traces in scientific articles, highlighting risks….” Canada: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.”",
+        "summary": "China: the discovery stream centred most often on rules and rights, including “China hosts side event on AI empowering human rights; officials urge….” United States: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.” United Kingdom: the discovery stream centred most often on rules and rights, including “Google’s Gemini Hack Shows AI Accessed Real Systems in Security Test….” France: the discovery stream centred most often on rules and rights, including “Toulouse researcher tracks generative AI traces in scientific articles, highlighting risks….” Canada: rules and rights stood out in the selected coverage; one example was “AWS's Generative AI Customization Spectrum: Practical Steps, Costs, and Limits.”",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
         "word_count": 143,
         "reading_minutes": 1,
@@ -29,12 +29,12 @@
             "name": "China",
             "count": 27,
             "topic": "Rules And Rights",
-            "sentence": "China: the discovery stream centred most often on rules and rights, including “AI-Energy Double-Edged Outlook: Chinese Forum Cites Gains Yet Narrow Limits, Says….”",
+            "sentence": "China: the discovery stream centred most often on rules and rights, including “China hosts side event on AI empowering human rights; officials urge….”",
             "story": {
-              "headline": "AI-Energy Double-Edged Outlook: Chinese Forum Cites Gains Yet Narrow Limits, Says Official Source",
-              "path": "story/development-9442351d-1acd-44fd-a29e-b0c9d405116c/index.html",
-              "publisher": "People's Daily",
-              "source_url": ""
+              "headline": "China hosts side event on AI empowering human rights; officials urge inclusive governance with limits",
+              "path": "story/development-716c5f21-b7d0-4a58-9cad-c2592e1482c0/index.html",
+              "publisher": "Xinhua Net",
+              "source_url": "https://www.news.cn/world/20260917/f65816871cc2412581abf6e45c929962/c.html"
             }
           },
           {
@@ -241,7 +241,7 @@
         "paper_count": 24,
         "affiliation_verified_count": 0
       },
-      "content_sha256": "31df1f9e8fc97d9fda99a89a05985f32900ca8c0235124c5b0a2fad2d2affed2"
+      "content_sha256": "932fa2a0c8321aa077402aefaf4f344aee700014e8fec29f7277a55120508ce5"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
