@@ -2778,6 +2778,52 @@
       },
       "output_sha256": "2d48f0cbfc98e5a8695be3dd649e793effa7ac74b7c491d85b3825411e670946",
       "policy": "brief-english-display-v1"
+    },
+    "d7a461d4b23869232dcecfdd60e4b2ea317dfdb95a7869d49a7a843de8090f3b": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Loose Papers.",
+        "3": "The next day, in the agreed manner, we went to the houses of the said bonzo, named Pomada, an elder of one hundred and eight years, very learned and knowledgeable in divine and human letters, and greatly approved by all that gentility, and for that very reason ill regarded by other bonzos, who died of pure jealousy. And having heard the said bonzo tell Titané who we were and what we wanted, he first began us with various ceremonies and rites necessary for the reception of the doctrine, and only after that did he raise his voice to confide it to us and explain it.",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b67a3344ca802ef332a06d3f6ab3952ba7a4090fe294b67f0d5177ffebb04e32",
+      "policy": "brief-english-display-v1"
+    },
+    "431b8534880e79dbc245b7192548121bb9befe32494197782d9ef6ad6cfb0fd4": {
+      "english": {
+        "0": "German",
+        "1": "Composer",
+        "2": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)",
+        "3": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)",
+        "4": "(Piano Performance by eldüendesüarez)",
+        "5": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f264eb1a6681728c02988f267acd10d5a262e4feae2fc09783c83ffbc2e3b9e0",
+      "policy": "brief-english-display-v1"
     }
   }
 }

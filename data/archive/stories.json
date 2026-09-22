@@ -2,6 +2,378 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Papéis Avulsos",
+      "content_fingerprint": "77836e7ec10e77d27f230c59d86abbdcf997922224cdddb9912dd6d23e5677f7",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Papéis Avulsos.",
+      "excerpt": "No dia seguinte, ao modo concertado, fomos ás casas do dito bonzo, por nome Pomada, um ancião de cento e oito annos, muito lido e sabido nas letras divinas e humanas, e grandemente aceito a toda aquella gentilidade, e por isso mesmo mal visto de outros bonzos, que se finavam de puro ciume. E tendo ouvido o dito bonzo a Titané quem eramos e o que queriamos, iniciou-nos primeiro com varias ceremonias e bugiarias necessarias á recepção da doutrina, e só depois d'ella é que alçou a voz para confial-a e explical-a.",
+      "headline": "Papéis Avulsos · a short reading",
+      "key": "culture:ffcc3c854ea64f9009a0c90f",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:57001:passage:77836e7ec10e77d27f230c59d86abbdcf997922224cdddb9912dd6d23e5677f7",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/57001"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "68d9d8a21dc3b4f1adb9fdaad9b962304bbb04d9472df4df328b6f8432bdfbe6",
+      "source_locator": "O ALIENISTA; paragraph 704 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/57001",
+      "translator": "",
+      "work_date": "1882",
+      "date": "2026-09-22",
+      "selected_on": "2026-09-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ffcc3c854ea64f9009a0c90f",
+      "path": "culture/culture-ffcc3c854ea64f9009a0c90f/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Papéis Avulsos · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/57001",
+          "date": "1882",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-22",
+      "summary_basis": "Selected 22 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "No dia seguinte, ao modo concertado, fomos ás casas do dito bonzo, por nome Pomada, um ancião de cento e oito annos, muito lido e sabido nas letras divinas e humanas, e grandemente aceito a toda aquella gentilidade, e por isso mesmo mal visto de outros bonzos, que se finavam de puro ciume. E tendo ouvido o dito bonzo a Titané quem eramos e o que queriamos, iniciou-nos primeiro com varias ceremonias e bugiarias necessarias á recepção da doutrina, e só depois d'ella é que alçou a voz para confial-a e explical-a.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "622ee61f1ae7578eba6fbe0c1d49d72bb1e42230a911627b4c46103a52906f0d",
+      "creator": "Michel de Montaigne",
+      "creator_origin": "French",
+      "culture_type": "quote",
+      "deck": "From Essays. Translation by Charles Cotton.",
+      "excerpt": "We are not without virtuous men, but ‘tis according to our notions of virtue.",
+      "headline": "We are not without virtuous men, but ‘tis according to our notions of virtue.",
+      "key": "culture:f7d7eba161dd41478920e9f0",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:3600:quote:622ee61f1ae7578eba6fbe0c1d49d72bb1e42230a911627b4c46103a52906f0d",
+      "publisher": "Project Gutenberg",
+      "quote_context": "would have laughed at it, so little does the Spartan innocence resemble that of France. We are not without virtuous men, but ‘tis according to our notions of virtue. Whoever has his manners established in regularity above the standard of the age he lives in, let him either wrest or blunt his rules, or, which I would rather advise him to, let him retire, and not meddle with us at all. What will he get by it?",
+      "rights": {
+        "basis": "Author died 1592. Translator: Charles Cotton, died 1687. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/3600"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "3bf0e2438123e1e2750d35ef37d3a13211bfd4e434315b1c78afc8cbd3d75931",
+      "source_locator": "CHAPTER I; paragraph 4633 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/3600",
+      "translator": "Charles Cotton",
+      "work_date": "1685–1686 translation",
+      "date": "2026-09-22",
+      "selected_on": "2026-09-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f7d7eba161dd41478920e9f0",
+      "path": "culture/culture-f7d7eba161dd41478920e9f0/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "We are not without virtuous men, but ‘tis according to our notions of virtue.",
+          "url": "https://www.gutenberg.org/ebooks/3600",
+          "date": "1685–1686 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-22",
+      "summary_basis": "Selected 22 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "We are not without virtuous men, but ‘tis according to our notions of virtue.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "would have laughed at it, so little does the Spartan innocence resemble that of France. We are not without virtuous men, but ‘tis according to our notions of virtue. Whoever has his manners established in regularity above the standard of the age he lives in, let him either wrest or blunt his rules, or, which I would rather advise him to, let him retire, and not meddle with us at all. What will he get by it?",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "995ae85929c85c7535618798831b532f4ed5c5c157fc0a54cef488fb4cc4de19",
+      "creator": "Robert Louis Stevenson",
+      "creator_origin": "Scottish",
+      "culture_type": "poetry",
+      "deck": "A poem by Robert Louis Stevenson.",
+      "excerpt": "OVER the land is April,\nOver my heart a rose;\nOver the high, brown mountain\nThe sound of singing goes.\nSay, love, do you hear me,\nHear my sonnets ring?\nOver the high, brown mountain,\nLove, do you hear me sing?\n\nBy highway, love, and byway\nThe snows succeed the rose.\nOver the high, brown mountain\nThe wind of winter blows.\nSay, love, do you hear me,\nHear my sonnets ring?\nOver the high, brown mountain\nI sound the song of spring,\nI throw the flowers of spring.\nDo you hear the song of spring?\nHear you the songs of spring?",
+      "headline": "Over The Land Is April",
+      "key": "culture:ce7696a5105cd206bf208ed2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "OVER the land is April,",
+        "Over my heart a rose;",
+        "Over the high, brown mountain",
+        "The sound of singing goes.",
+        "Say, love, do you hear me,",
+        "Hear my sonnets ring?",
+        "Over the high, brown mountain,",
+        "Love, do you hear me sing?",
+        "",
+        "By highway, love, and byway",
+        "The snows succeed the rose.",
+        "Over the high, brown mountain",
+        "The wind of winter blows.",
+        "Say, love, do you hear me,",
+        "Hear my sonnets ring?",
+        "Over the high, brown mountain",
+        "I sound the song of spring,",
+        "I throw the flowers of spring.",
+        "Do you hear the song of spring?",
+        "Hear you the songs of spring?"
+      ],
+      "provenance_id": "poetrydb:Robert Louis Stevenson:Over The Land Is April",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1894.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "04d7ae06b20c3cc040fe6215e4ee40b23bc17e989495d7333fc114acd1e763ec",
+      "source_locator": "Over The Land Is April",
+      "source_url": "https://poetrydb.org/title/Over%20The%20Land%20Is%20April:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1894",
+      "date": "2026-09-22",
+      "selected_on": "2026-09-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ce7696a5105cd206bf208ed2",
+      "path": "culture/culture-ce7696a5105cd206bf208ed2/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Over The Land Is April",
+          "url": "https://poetrydb.org/title/Over%20The%20Land%20Is%20April:abs/lines.text",
+          "date": "Before 1894",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-22",
+      "summary_basis": "Selected 22 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "OVER the land is April,\nOver my heart a rose;\nOver the high, brown mountain\nThe sound of singing goes.\nSay, love, do you hear me,\nHear my sonnets ring?\nOver the high, brown mountain,\nLove, do you hear me sing?\n\nBy highway, love, and byway\nThe snows succeed the rose.\nOver the high, brown mountain\nThe wind of winter blows.\nSay, love, do you hear me,\nHear my sonnets ring?\nOver the high, brown mountain\nI sound the song of spring,\nI throw the flowers of spring.\nDo you hear the song of spring?\nHear you the songs of spring?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Portrait of Mary Wise",
+      "art_type": "Painting",
+      "balance_origin": "England",
+      "creator": "Thomas Gainsborough (British, 1727–1788)",
+      "creator_origin": "England, 18th century",
+      "culture_type": "illustration",
+      "deck": "Portrait of Mary Wise. oil on canvas.",
+      "headline": "Portrait of Mary Wise",
+      "image_path": "assets/culture/aa8c6c1de132b695974ab6e7.jpg",
+      "key": "culture:aa8c6c1de132b695974ab6e7",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1944.82/1944.82_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1944.82",
+      "provenance_id": "cma:124080",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "The Elisabeth Severance Prentiss Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1944.82",
+      "work_date": "c. 1774",
+      "date": "2026-09-22",
+      "selected_on": "2026-09-22",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-aa8c6c1de132b695974ab6e7",
+      "path": "culture/culture-aa8c6c1de132b695974ab6e7/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Portrait of Mary Wise",
+          "url": "https://clevelandart.org/art/1944.82",
+          "date": "c. 1774",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-22",
+      "summary_basis": "Selected 22 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Brahms_-_Ballade_in_G_Op-118_No-3_%28Piano_Performance_by_eld%C3%BCendes%C3%BCarez%29.wav",
+      "creator": "Johannes Brahms",
+      "creator_origin": "German",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Johannes Brahms. 3 minutes to listen.",
+      "duration_seconds": 226,
+      "headline": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)",
+      "key": "culture:a2c8699453eefce8b2b825e1",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Brahms_-_Ballade_in_G_Op-118_No-3_%28Piano_Performance_by_eld%C3%BCendes%C3%BCarez%29.wav",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Johannes_Brahms",
+      "original_recording_title": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)",
+      "provenance_id": "commons:139505799",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Brahms",
+      "recording_description": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Brahms",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "(Piano Performance by eldüendesüarez)",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brahms_-_Ballade_in_G_Op-118_No-3_(Piano_Performance_by_eld%C3%BCendes%C3%BCarez).wav",
+      "work_date": "2023-10-25",
+      "date": "2026-09-22",
+      "selected_on": "2026-09-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a2c8699453eefce8b2b825e1",
+      "path": "culture/culture-a2c8699453eefce8b2b825e1/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Brahms - Ballade in G Op-118 No-3 (Piano Performance by eldüendesüarez)",
+          "url": "https://commons.wikimedia.org/wiki/File:Brahms_-_Ballade_in_G_Op-118_No-3_(Piano_Performance_by_eld%C3%BCendes%C3%BCarez).wav",
+          "date": "2023-10-25",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-22",
+      "summary_basis": "Selected 22 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Meditations",
       "content_fingerprint": "1e1e4d8c463c19fe5598cff1ca11734adc7d9afd95f801956f419b8470a017b3",
       "creator": "Marcus Aurelius",
