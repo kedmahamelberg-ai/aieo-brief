@@ -2824,6 +2824,104 @@
       },
       "output_sha256": "f264eb1a6681728c02988f267acd10d5a262e4feae2fc09783c83ffbc2e3b9e0",
       "policy": "brief-english-display-v1"
+    },
+    "6a4d5882ec9674148b70bcf52a416cd2bd4fd16e011023049a24f33d923c2c18": {
+      "english": {
+        "0": "Phantastes"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9369df25c4bec794af4f71903ed921a474aeb1d8e9cb1ed12ca3b66bd7011b25",
+      "policy": "brief-english-display-v1"
+    },
+    "112ea0e0fc18ea6d23dfca8c807ec300c13ade1dc88d42b6af77d0eb3a4641d0": {
+      "english": {
+        "0": "Nuremberg Hesperides: No. 125 - Limon Ponzino from Naples. Palace of the Most Noble Cornaro at Fiesso",
+        "1": "Hungary",
+        "2": "Nuremberg Hesperides: No. 125 - Limon Ponzino from Naples. Palace of the Most Noble Cornaro at Fiesso. engraving, hand-colored.",
+        "3": "Nuremberg Hesperides: No. 125 - Limon Ponzino from Naples. Palace of the Most Noble Cornaro at Fiesso",
+        "4": "CC0 image",
+        "5": "Nuremberg Hesperides: No. 125 - Limon Ponzino from Naples. Palace of the Most Noble Cornaro at Fiesso"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "52bcdb0eb7c9cd68e41cc7024f9f10c43300620d026fa5a7b74b95060c483791",
+      "policy": "brief-english-display-v1"
+    },
+    "afbb8dc386c1ff2fd4a7b41864f5a03a03f5fa2e2541ebfaf86ff63efb16c0f4": {
+      "english": {
+        "0": "Indian · Bengali",
+        "1": "63"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "230d9f5c8c61bc05c840f81c78f4bdb660b1c74caf80a6c9ea9b2553036ea4c0",
+      "policy": "brief-english-display-v1"
+    },
+    "3776530a9e95d235f6e88e83fb39020f4d77fafb8f83f179632c359a2d0ccd50": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bc9198003351ccdaf5b445184567b6ba94d1110b20be479fe64cfc9146ba7c72",
+      "policy": "brief-english-display-v1"
+    },
+    "d61301e587b783a25ee3a89b2336e14907d6f435c950efb9eed6818a850effb6": {
+      "english": {
+        "0": "Roman",
+        "1": "From Meditations. Translation by Méric Casaubon."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "39e977c6d04d6ee9b2708064812fd609911b5ba8b60ed052723657316e9d546b",
+      "policy": "brief-english-display-v1"
     }
   }
 }
