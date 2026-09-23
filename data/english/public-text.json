@@ -2922,6 +2922,26 @@
       },
       "output_sha256": "39e977c6d04d6ee9b2708064812fd609911b5ba8b60ed052723657316e9d546b",
       "policy": "brief-english-display-v1"
+    },
+    "6857592c1ab2902da221b0d8419e5a40999a86d5781b011ec99fc971b6862967": {
+      "english": {
+        "0": "The 2026 ASEAN AI Cooperation Conference in Nanning gathered hundreds of officials, researchers, and industry players to discuss embodied AI, AI finance, and data flow, while featuring a triple-host format with real, digital, and robotic hosts. The event showcased several tech achievements and cross-border collaboration efforts.",
+        "1": "China Science and Technology Network",
+        "2": "China Science and Technology Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a5905e9340c80d2018c6e55916512e2a7a934db8dc9a78eb34807d384bf2a821",
+      "policy": "brief-english-display-v1"
     }
   }
 }
