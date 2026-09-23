@@ -1,31 +1,37 @@
 {
-  "generated": 1,
-  "failed": 6,
+  "generated": 2,
+  "failed": 5,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 0,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
-    "draft_quote_unsupported": 5,
-    "unexpected_error": 1
+    "draft_quote_unsupported": 5
   },
   "failed_items": [
     {
-      "key": "paper:47c872344980686c78abcef2",
+      "key": "paper:120f1c0de26b8dedc69521a5",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:51c8d44339da80a4bb09e20c",
+      "key": "paper:5894cfc1db7fb782423977a4",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:5d74e8baa82f3997a26d3818",
+      "key": "paper:67e21bee9c3ad9b19fe5843d",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:7d0a40c406677c0cbc959bdf",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -33,25 +39,11 @@
     },
     {
       "key": "paper:8778a5cfae74250c006dc1f6",
-      "error_type": "AIError",
-      "stage": "generation",
-      "code": "unexpected_error",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "key": "paper:b7375b7c4499d4dab9ad10b7",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "key": "paper:f41b3ce96304db5af2623dfa",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-22T17:16:32.967459+00:00"
+  "updated_at": "2026-09-23T17:19:35.560115+00:00"
 }
