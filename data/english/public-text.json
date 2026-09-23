@@ -2942,6 +2942,24 @@
       },
       "output_sha256": "a5905e9340c80d2018c6e55916512e2a7a934db8dc9a78eb34807d384bf2a821",
       "policy": "brief-english-display-v1"
+    },
+    "fccf46a31d1c417777009e166caf74a62ca0b3fc7fc85bd32df912a9fba0ce8b": {
+      "english": {
+        "0": "A poem by Robert Louis Stevenson."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "57bf888228152c8d6f96d885ab51ec88554d27f1f66049a6292ae023b87dbec6",
+      "policy": "brief-english-display-v1"
     }
   }
 }
