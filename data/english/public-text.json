@@ -2960,6 +2960,44 @@
       },
       "output_sha256": "57bf888228152c8d6f96d885ab51ec88554d27f1f66049a6292ae023b87dbec6",
       "policy": "brief-english-display-v1"
+    },
+    "f3ebd46c67044d05a9f569a2ed86535347deff5f2e499aa522d7bbeba517fe4d": {
+      "english": {
+        "0": "Russian",
+        "1": "Composer"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ebfdebae416872f15c9b0c96ef3b04a0167a2e8e4dedd375157cd6e6981a0fc6",
+      "policy": "brief-english-display-v1"
+    },
+    "ea4ebe71cbf1e5dabbd0d8fd5514b621330d2e5c691a801b7925c576347d628c": {
+      "english": {
+        "0": "American",
+        "1": "A poem by Walt Whitman."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ee4f9044d0053bcbeadb52df58425d4aec7841a5b51e2ed82cced3f69f8ff845",
+      "policy": "brief-english-display-v1"
     }
   }
 }
