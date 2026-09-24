@@ -1,37 +1,57 @@
 {
-  "generated": 2,
-  "failed": 5,
+  "generated": 1,
+  "failed": 7,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 0,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
-    "draft_quote_unsupported": 5
+    "draft_quote_unsupported": 4,
+    "source_scope_review_failed": 1,
+    "source_wording_copied": 1,
+    "unexpected_error": 1
   },
   "failed_items": [
     {
-      "key": "paper:120f1c0de26b8dedc69521a5",
+      "key": "paper:22b011bcac2b8544080f0790",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:5894cfc1db7fb782423977a4",
+      "key": "paper:917abed9d2411e8863148866",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:67e21bee9c3ad9b19fe5843d",
+      "key": "paper:b3ea5a09b6b614b0b4bdbcde",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v4-english",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    },
+    {
+      "key": "paper:e3bbbfd1a0ea82e4c41cefe1",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:e898a82af6e553b18875f6b7",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:7d0a40c406677c0cbc959bdf",
+      "key": "paper:ee0a18630f85eb0baaab3868",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -39,11 +59,11 @@
     },
     {
       "key": "paper:8778a5cfae74250c006dc1f6",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-23T17:19:35.560115+00:00"
+  "updated_at": "2026-09-24T17:24:25.444787+00:00"
 }
