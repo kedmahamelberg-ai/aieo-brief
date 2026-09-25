@@ -1,69 +1,50 @@
 {
-  "generated": 1,
-  "failed": 7,
+  "generated": 2,
+  "failed": 5,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 0,
+  "unchanged": 1,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
     "draft_quote_unsupported": 4,
-    "source_scope_review_failed": 1,
-    "source_wording_copied": 1,
-    "unexpected_error": 1
+    "source_wording_copied": 1
   },
   "failed_items": [
     {
-      "key": "paper:22b011bcac2b8544080f0790",
+      "key": "paper:274dbbba68ea40f846544cfe",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:917abed9d2411e8863148866",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "key": "paper:b3ea5a09b6b614b0b4bdbcde",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v4-english",
-      "failed_checks": [
-        "headline_supported"
-      ]
-    },
-    {
-      "key": "paper:e3bbbfd1a0ea82e4c41cefe1",
+      "key": "paper:7d119f27477a53a853493825",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:e898a82af6e553b18875f6b7",
+      "key": "paper:89b82eaa3cf98db4130d7dd1",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:ee0a18630f85eb0baaab3868",
+      "key": "paper:a656b205117891f6802c2ff4",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:8778a5cfae74250c006dc1f6",
-      "error_type": "AIError",
-      "stage": "generation",
-      "code": "unexpected_error",
+      "key": "paper:bb8616d7fdcc329289fc5a8e",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-24T17:24:25.444787+00:00"
+  "updated_at": "2026-09-25T17:20:18.277680+00:00"
 }
