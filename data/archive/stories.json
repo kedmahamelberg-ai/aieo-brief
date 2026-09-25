@@ -2,6 +2,362 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Divertimento_in_F_major%2C_K._138_%28125c%29_-_1st_movement.oga",
+      "creator": "Wolfgang Amadeus Mozart",
+      "creator_origin": "Austrian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Wolfgang Amadeus Mozart. 4 minutes to listen.",
+      "duration_seconds": 252,
+      "headline": "Divertimento in F major, K. 138 (125c) - 1st movement",
+      "key": "culture:f30c2704b537f2dfdafac9ba",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Divertimento_in_F_major%2C_K._138_%28125c%29_-_1st_movement.oga",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+      "original_recording_title": "Divertimento in F major, K. 138 (125c) - 1st movement",
+      "provenance_id": "commons:22463857",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Wolfgang Amadeus Mozart",
+      "recording_description": "Wolfgang Amadeus Mozart , 1772, \"1st movement of Divertimento in F major, K. 138/125c\". Performed by the Tsumugi Orchestra conducted by Takashi Inoue on 15 Aug 2010 at the Fukuoka City Children's Science and Culture Center Hall, Japan.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Wolfgang Amadeus Mozart",
+        "label": "CC BY 3.0 (source-declared)",
+        "source_credit": "http://imslp.org/wiki/Divertimento_in_F_major,_K.138/125c_(Mozart,_Wolfgang_Amadeus)#For_String_Orchestra",
+        "url": "https://creativecommons.org/licenses/by/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Divertimento_in_F_major,_K._138_(125c)_-_1st_movement.oga",
+      "work_date": "2010-08-15",
+      "date": "2026-09-25",
+      "selected_on": "2026-09-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f30c2704b537f2dfdafac9ba",
+      "path": "culture/culture-f30c2704b537f2dfdafac9ba/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Divertimento in F major, K. 138 (125c) - 1st movement",
+          "url": "https://commons.wikimedia.org/wiki/File:Divertimento_in_F_major,_K._138_(125c)_-_1st_movement.oga",
+          "date": "2010-08-15",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-25",
+      "summary_basis": "Selected 25 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "White Nights",
+      "content_fingerprint": "e1c8012f88a769b62a8c06172b009e952fc249a75f3aaa8e4fe13afb2555827c",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "\"Yes, brother, how could I have the face to turn up there?... I have changed my mind. It was only that I could not stay on alone without you; now you are coming back with me I'll sit down to write again. Let us go!\"",
+      "headline": "White Nights · a short reading",
+      "key": "culture:dbfc92fa191424ee8e7714b4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:e1c8012f88a769b62a8c06172b009e952fc249a75f3aaa8e4fe13afb2555827c",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 1184 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-09-25",
+      "selected_on": "2026-09-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dbfc92fa191424ee8e7714b4",
+      "path": "culture/culture-dbfc92fa191424ee8e7714b4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-25",
+      "summary_basis": "Selected 25 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "\"Yes, brother, how could I have the face to turn up there?... I have changed my mind. It was only that I could not stay on alone without you; now you are coming back with me I'll sit down to write again. Let us go!\"",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "5774eca2a107a66d175ff5f80321ae560b91e358ec019e8f3257395230ad2d36",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "What the populace once learned to believe without reasons, who could— refute it to them by means of reasons?",
+      "headline": "What the populace once learned to believe without reasons, who could— refute it to them by means of reasons?",
+      "key": "culture:d03dec5c13bb3f56a230c080",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:5774eca2a107a66d175ff5f80321ae560b91e358ec019e8f3257395230ad2d36",
+      "publisher": "Project Gutenberg",
+      "quote_context": "What the populace once learned to believe without reasons, who could— refute it to them by means of reasons?",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 3470 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-09-25",
+      "selected_on": "2026-09-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d03dec5c13bb3f56a230c080",
+      "path": "culture/culture-d03dec5c13bb3f56a230c080/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "What the populace once learned to believe without reasons, who could— refute it to them by means of reasons?",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-25",
+      "summary_basis": "Selected 25 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "What the populace once learned to believe without reasons, who could— refute it to them by means of reasons?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "What the populace once learned to believe without reasons, who could— refute it to them by means of reasons?",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "0c36fcb643169e0136e15c8bc70c2c1cfe21a348e888adb910b9b1525bfdd1d8",
+      "creator": "Omar Khayyam, after Edward FitzGerald",
+      "creator_origin": "Iranian · Persian",
+      "culture_type": "poetry",
+      "deck": "Rubáiyát · C, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+      "excerpt": "Yon rising Moon that looks for us again--\n How oft hereafter will she wax and wane;\n   How oft hereafter rising look for us\n Through this same Garden--and for one in vain!",
+      "headline": "Rubáiyát · C",
+      "key": "culture:73d71a1c7db6c772a045ed3a",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Yon rising Moon that looks for us again--",
+        " How oft hereafter will she wax and wane;",
+        "   How oft hereafter rising look for us",
+        " Through this same Garden--and for one in vain!"
+      ],
+      "provenance_id": "pg:246:poem:d725281d7462c7c0d41cc77b0c37c30fc2553178cf46f839888d281ea393fd20",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1131. Translator: Edward FitzGerald, died 1883. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/246"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "09f7f0aa58212f5622cbf914eff7e0ae4e14fbc12de174220b470e66dec6eb65",
+      "source_locator": "C",
+      "source_url": "https://www.gutenberg.org/ebooks/246",
+      "translator": "Edward FitzGerald",
+      "work_date": "1859 English adaptation",
+      "date": "2026-09-25",
+      "selected_on": "2026-09-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-73d71a1c7db6c772a045ed3a",
+      "path": "culture/culture-73d71a1c7db6c772a045ed3a/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Rubáiyát · C",
+          "url": "https://www.gutenberg.org/ebooks/246",
+          "date": "1859 English adaptation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-25",
+      "summary_basis": "Selected 25 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Yon rising Moon that looks for us again--\n How oft hereafter will she wax and wane;\n   How oft hereafter rising look for us\n Through this same Garden--and for one in vain!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Virgin and Child with Saint Jerome and Saint Catherine of Alexandria",
+      "art_type": "Painting",
+      "balance_origin": "Italy",
+      "creator": "Carolino da Viterbo (Italian)",
+      "creator_origin": "Italy, Siena(?)",
+      "culture_type": "illustration",
+      "deck": "Virgin and Child with Saint Jerome and Saint Catherine of Alexandria. tempera and gold on wood panel.",
+      "headline": "Virgin and Child with Saint Jerome and Saint Catherine of Alexandria",
+      "image_path": "assets/culture/261b342b228ba91b96a932cc.jpg",
+      "key": "culture:261b342b228ba91b96a932cc",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1956.719/1956.719_web.jpg",
+      "medium": "tempera and gold on wood panel",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1956.719",
+      "provenance_id": "cma:134237",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "The Fanny Tewksbury King Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1956.719",
+      "work_date": "c. 1450",
+      "date": "2026-09-25",
+      "selected_on": "2026-09-25",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-261b342b228ba91b96a932cc",
+      "path": "culture/culture-261b342b228ba91b96a932cc/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Virgin and Child with Saint Jerome and Saint Catherine of Alexandria",
+          "url": "https://clevelandart.org/art/1956.719",
+          "date": "c. 1450",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-25",
+      "summary_basis": "Selected 25 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Borodin_-_String_Quartet_No._1_in_A_major_-_I._Moderato_-_Allegro_%28Musopen_String_Quartet%29.flac",
       "creator": "Alexander Borodin",
       "creator_origin": "Russian",

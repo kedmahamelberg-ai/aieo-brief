@@ -2998,6 +2998,85 @@
       },
       "output_sha256": "ee4f9044d0053bcbeadb52df58425d4aec7841a5b51e2ed82cced3f69f8ff845",
       "policy": "brief-english-display-v1"
+    },
+    "8f337467e8f2b9c95d940377b383c7fe5bd445a596f62dec94ece0b4cd2d5ed2": {
+      "english": {
+        "0": "Austrian",
+        "1": "Composer",
+        "2": "http://imslp.org/wiki/Divertimento_in_F_major,_K.138/125c_(Mozart,_Wolfgang_Amadeus)#For_String_Orchestra"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8626543c3404552be8799fbdd11e9931e558c1e2c8692eb6de229055b693a46c",
+      "policy": "brief-english-display-v1"
+    },
+    "4d20b2e9f8816584777ed33e8390be5b9218289c5ca56e6a9e2f650b5735ac85": {
+      "english": {
+        "0": "Russian"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0951e1c996a08d2c83ecc9f891ac5abdff12473315ce5d865fd8304e56afb228",
+      "policy": "brief-english-display-v1"
+    },
+    "9e8e722bc826a54faef2d32f7f6bf27f32922fde71283b7361fc0610db3adaab": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Rubáiyát · C, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+        "2": "Rubáiyát · C",
+        "3": "C",
+        "4": "Rubáiyát · C"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6a9391d0b74b8589371a552e4eb01440973d7539abdcc1ea12c47388fa8c29dd",
+      "policy": "brief-english-display-v1"
+    },
+    "18020ad31e41e1abc4a6a1bc440107c58760b6446a3b2c3f752c90d8b9474e6e": {
+      "english": {
+        "0": "Italy, Siena(?)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "188e76d259739ed4a7a12ebab1003f7acb8aebf36912d7dc933192b3cb1accf1",
+      "policy": "brief-english-display-v1"
     }
   }
 }
