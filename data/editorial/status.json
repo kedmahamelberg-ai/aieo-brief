@@ -2,20 +2,20 @@
   "release_id": "2026-W38",
   "engine_version": "aieo-editorial-runtime-v4-english",
   "counts": {
-    "unchanged": 55,
+    "unchanged": 58,
     "source_not_ready": 0,
-    "new_registry": 20,
-    "needs_model": 20,
+    "new_registry": 17,
+    "needs_model": 17,
     "needs_rebind": 0,
-    "selected": 20,
+    "selected": 17,
     "generated": 3,
     "rebound": 0,
-    "failed": 17,
+    "failed": 14,
     "deferred": 0
   },
   "failure_counts": {
-    "draft_quote_unsupported": 15,
-    "unsupported_number": 1,
+    "draft_quote_unsupported": 11,
+    "unsupported_number": 2,
     "source_wording_copied": 1
   },
   "failed_items": [
@@ -44,7 +44,7 @@
       "event_id": "27003419-fc1d-442d-bbc0-69d2e03f8940",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
@@ -62,13 +62,6 @@
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "event_id": "046e6fe8-5409-4650-8999-fd4426e0aa39",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
       "event_id": "974b3864-2bdf-458a-8c29-386b0e44c5cd",
       "error_type": "EditorialError",
       "stage": "draft_validation",
@@ -77,13 +70,6 @@
     },
     {
       "event_id": "dc2ad4d9-407b-4f1e-b62d-eafbfcbc5e6f",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
-      "event_id": "a6840bd3-2aee-4323-92bd-a05cc827c4b1",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -125,13 +111,6 @@
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "event_id": "2d34cc3a-43d1-4c4b-bec2-4357ce2a4fa5",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
-    },
-    {
       "event_id": "de3abeeb-fc4f-4014-8e04-6047641cea35",
       "error_type": "EditorialError",
       "stage": "draft_validation",
@@ -139,5 +118,5 @@
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-25T17:17:53.187406+00:00"
+  "updated_at": "2026-09-26T16:29:04.410882+00:00"
 }
