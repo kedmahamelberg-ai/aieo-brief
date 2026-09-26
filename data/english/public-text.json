@@ -3077,6 +3077,68 @@
       },
       "output_sha256": "188e76d259739ed4a7a12ebab1003f7acb8aebf36912d7dc933192b3cb1accf1",
       "policy": "brief-english-display-v1"
+    },
+    "b26662cb27bf6ee468fa53df7b8634a8507c68adec0785e0be397070c53d7f1a": {
+      "english": {
+        "0": "The material reflects a single withdrawn study and ministers, with unresolved questions about whether the platform and data collection existed independently of the author."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b196291a960542fb5d069e45a3c448e636476d50493f58b2ca556ec86305d498",
+      "policy": "brief-english-display-v1"
+    },
+    "66ca22abd2659d3d4fba40d36d7d3f7bf193d397227d610bb0c68d06769b2023": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer",
+        "2": "Smetana - Hubicka - Skrivanci song",
+        "3": "Czech Wikipedia 10 concert",
+        "4": "Smetana - Hubicka - Skrivanci song"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4a15c88916d2ffeea64c85e9bf6adc65579b3a2a9411b047b1e58d1c3dafdba6",
+      "policy": "brief-english-display-v1"
+    },
+    "e817b55d40ead2f3fb8a8eff98b53f728ee999d3d3b488c73dd4528f9c26c919": {
+      "english": {
+        "0": "The Enchiridion",
+        "1": "Greek · Roman-era philosopher",
+        "2": "The Enchiridion · a short reading",
+        "3": "THE ENCHIRIDION; paragraph 12 in the selected body section",
+        "4": "The Enchiridion · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "40197d304ea75b40d416f8555bd3e51b64191c9fb22cc485a3689c7eb3c5d03d",
+      "policy": "brief-english-display-v1"
     }
   }
 }
