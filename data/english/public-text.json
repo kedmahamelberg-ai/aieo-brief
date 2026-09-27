@@ -3139,6 +3139,49 @@
       },
       "output_sha256": "40197d304ea75b40d416f8555bd3e51b64191c9fb22cc485a3689c7eb3c5d03d",
       "policy": "brief-english-display-v1"
+    },
+    "78d064c2ee0697cbe2afc924e67edf0474a2074bdd0637e1b4ff553af055a9cb": {
+      "english": {
+        "0": "Hungarian",
+        "1": "Composer",
+        "2": "Liszt-ConsolationNo4",
+        "3": "Liszt-ConsolationNo4"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c9dd83ea7d91f987a607712bf3fd22318a827245aab799cdcbc0ed7a66679c6d",
+      "policy": "brief-english-display-v1"
+    },
+    "e36913492b188f22357dd245f00ceeaa9d93fe9e0e4948a9aa7e863afbce511c": {
+      "english": {
+        "0": "English",
+        "1": "A poem by Christina Rossetti.",
+        "2": "A Birthday",
+        "3": "A Birthday",
+        "4": "A Birthday"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8eb63aab0e57cab6060cbf7c9a20742d532cbee1f0f70e834b0d566f4718b012",
+      "policy": "brief-english-display-v1"
     }
   }
 }
