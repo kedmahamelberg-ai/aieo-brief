@@ -3344,6 +3344,26 @@
       },
       "output_sha256": "35038cc371db821291dc7336003cc1849b35b2f0aee81d3ef92192db6f60a32a",
       "policy": "brief-english-display-v1"
+    },
+    "68194681b4b340f6df220bc70a06d682588ba59751018e5aca5fcef917a9784a": {
+      "english": {
+        "0": "Thélyson Orélien denies having used AI to write his novel C’était ça ou mourir",
+        "1": "Thélyson Orélien denies having used AI to write his novel C’était ça ou mourir",
+        "2": "Thélyson Orélien denies having used AI to write his novel C’était ça ou mourir"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f779683725eff33997ff24627c70f38eca839f31ccacc2e167a4477cfe5fff45",
+      "policy": "brief-english-display-v1"
     }
   }
 }
