@@ -3323,6 +3323,27 @@
       },
       "output_sha256": "5ceec7dd98ae2389c0a71b720999cfa9726429bc38056cec8392d8ab7759889c",
       "policy": "brief-english-display-v1"
+    },
+    "dc90b031964668591f9efbf75901a445d1c853914fc95dd6afbcf5e864160f54": {
+      "english": {
+        "0": "Reporting from the Office of the Central Cyberspace Security and Informatization Commission. Open the source for the article.",
+        "1": "Regulatory filing and filing imply AI deployment is being gated or limited by policy.",
+        "2": "Office of the Central Cyberspace Security and Informatization Commission.",
+        "3": "Office of the Central Cyberspace Security and Informatization Commission."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "35038cc371db821291dc7336003cc1849b35b2f0aee81d3ef92192db6f60a32a",
+      "policy": "brief-english-display-v1"
     }
   }
 }
