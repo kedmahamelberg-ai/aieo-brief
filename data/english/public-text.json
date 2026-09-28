@@ -3182,6 +3182,147 @@
       },
       "output_sha256": "8eb63aab0e57cab6060cbf7c9a20742d532cbee1f0f70e834b0d566f4718b012",
       "policy": "brief-english-display-v1"
+    },
+    "60e11f16c2e54a16bc7fa0aaaaad1b8ba4e4654995137668eb1b4d77e0f37c9e": {
+      "english": {
+        "0": "OpenAI’s out-of-control AI agent sought help from Chinese large models",
+        "1": "OpenAI’s out-of-control AI agent sought help from Chinese large models",
+        "2": "OpenAI’s out-of-control AI agent sought help from Chinese large models"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "93eb444842b0faada0be8f7a62be3395aa846e99881a83e6e83454e0669d099b",
+      "policy": "brief-english-display-v1"
+    },
+    "5b943180a4e321ccf40d185360d56bbbae1d6b752bd8bce212e11cb56dda4062": {
+      "english": {
+        "0": "Marie-Josée Saint-Pierre participates in discussions on artificial intelligence at the Ottawa International Animation Festival",
+        "1": "Marie-Josée Saint-Pierre participates in discussions on artificial intelligence at the Ottawa International Animation Festival"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "52d2193011a97f746f2f62e1bccbf1438daffdee805b6758249b2199d4997cb5",
+      "policy": "brief-english-display-v1"
+    },
+    "9919c09980712c00660646204c9bd7b20d0d83544dc4d26a6adff97e64c9d684": {
+      "english": {
+        "0": "Reporting from Entreprendre à Montpellier. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4f1490ecb0dd3c4a94d6c947bbc04e3e62b3087f70e856c4531a5c387b638221",
+      "policy": "brief-english-display-v1"
+    },
+    "a8efdf88a53adf42bfc2dd835af9506bde966bdbe5a6829cb3011647bc8d7f77": {
+      "english": {
+        "0": "Tongji University News Network",
+        "1": "Tongji University News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9ef87507c91434a698382b647abc53da9f26e10d59604fa7d753a31a5612311a",
+      "policy": "brief-english-display-v1"
+    },
+    "1df3012bc64570f1cfb69af1cbfd961528647c66dbc162c26523e13a11b1af21": {
+      "english": {
+        "0": "Reporting from the Jiangsu Cyberspace Administration. Open the source for the article.",
+        "1": "Jiangsu Cyberspace Administration",
+        "2": "Jiangsu Cyberspace Administration"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "91638478416202b8d3b5ca469a40d679dc9bbc421474fc62710a75abc5222481",
+      "policy": "brief-english-display-v1"
+    },
+    "5b8f90cb90a3de858dd57abe70da22e8debe8458e6796730124a0bb3df97aee4": {
+      "english": {
+        "0": "English",
+        "1": "Composer",
+        "2": "Henry Purcell - Toccata Amajor",
+        "3": "Toccata in A major",
+        "4": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "5": "Henry Purcell - Toccata Amajor"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4c148e94faba1acb38c08f02d44b6a1d6fe06b53919075f20d2b206e53b08cdb",
+      "policy": "brief-english-display-v1"
+    },
+    "76843e4658ec6665573f5350a5251a6190a29a23ced28b101ad14d9eb3ec2d96": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Rubáiyát · XCVII, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+        "2": "Rubáiyát · XCVII",
+        "3": "XCVII",
+        "4": "Rubáiyát · XCVII"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5ceec7dd98ae2389c0a71b720999cfa9726429bc38056cec8392d8ab7759889c",
+      "policy": "brief-english-display-v1"
     }
   }
 }

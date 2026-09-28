@@ -3,6 +3,200 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W39",
+      "period_start": "2026-09-21",
+      "period_end": "2026-09-27",
+      "display_date": "2026-09-27",
+      "path": "week-from-above/2026-w39/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "Five currents in this week’s AI reporting",
+        "deck": "Across the five discovery markets, rules and rights met work and skills. The balance differed by reporting stream.",
+        "summary": "China: selected reporting leaned toward rules and rights, with “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed…”… United States: the discovery stream centred most often on work and skills, including “Independent Mathematics and AI Advisory Group Formed… United Kingdom: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group… France: the discovery stream centred most often on work and skills, including “ENS- PSL Findings on Data and AI: Mixed… Canada: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed…",
+        "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
+        "word_count": 126,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 26,
+            "topic": "Rules And Rights",
+            "sentence": "China: selected reporting leaned toward rules and rights, with “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed…” as one visible signal.",
+            "story": {
+              "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
+              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "publisher": "OpenAI",
+              "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 11,
+            "topic": "Work And Skills",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
+            "story": {
+              "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
+              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "publisher": "OpenAI",
+              "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 13,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
+            "story": {
+              "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
+              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "publisher": "OpenAI",
+              "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 11,
+            "topic": "Work And Skills",
+            "sentence": "France: the discovery stream centred most often on work and skills, including “ENS- PSL Findings on Data and AI: Mixed Gains, Clear Limits….”",
+            "story": {
+              "headline": "ENS- PSL Findings on Data and AI: Mixed Gains, Clear Limits, and Ongoing Questions",
+              "path": "story/development-d92c4ce5-47ec-4178-9351-2d6b4285c2b5/index.html",
+              "publisher": "PSL | ENS",
+              "source_url": "https://www.ens.psl.eu/actualites/les-savoirs-de-l-ecole-les-donnees-et-l-intelligence-artificielle"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 26,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
+            "story": {
+              "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
+              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "publisher": "OpenAI",
+              "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+            }
+          }
+        ],
+        "active_market_count": 5
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "Research turns toward agents and coordination and new methods and evidence",
+        "deck": "The selected papers point in two directions: agents and coordination and new methods and evidence.",
+        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Reanalysis of 74 studies shows learning opportunities and explanations matter; mixed outcomes. Hasso Plattner Institute, University of Potsdam, Stanford University: An abstract study introduces AICO, a non-retraining, statistically principled method to identify feature influence in AI models, while noting scope… Georgia Institute of Technology: Open the original research record for the paper and its access options.",
+        "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
+        "word_count": 96,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [
+          {
+            "key": "paper:8778a5cfae74250c006dc1f6",
+            "headline": "Abstract-Only Evidence: Human Learning Could Boost Human–AI Synergy, But Gains Vary",
+            "original_headline": "Human learning is an understudied but promising lever for boosting human–AI synergy",
+            "deck": "Reanalysis of 74 studies shows learning opportunities and explanations matter; mixed outcomes.",
+            "authors": [
+              "Julian Berger",
+              "Jason W. Burton",
+              "Ralph Hertwig",
+              "Thomas Kosch",
+              "Ralf H. J. M. Kurvers",
+              "Benito Kurzenberger",
+              "Christopher Lazik",
+              "Linda Onnasch",
+              "Tobias Rieger",
+              "Anna I. Thoma",
+              "Dirk U. Wulff",
+              "Stefan M. Herzog"
+            ],
+            "institutions": [
+              "Universitat Pompeu Fabra",
+              "University of Southern Denmark",
+              "Max Planck Institute for Human Development",
+              "Barcelona School of Economics"
+            ],
+            "institution_status": "verified",
+            "url": "https://doi.org/10.1073/pnas.2536100123",
+            "path": "research/paper-8778a5cfae74250c006dc1f6/index.html",
+            "publisher": "PNAS",
+            "label": "Journal article",
+            "date": "2026-09-21",
+            "theme": "human interaction and creativity",
+            "source_verified_at": "",
+            "affiliation_source_url": "https://openalex.org/W7213950595"
+          },
+          {
+            "key": "paper:afd9c531da091aca39b7d1e3",
+            "headline": "AICO Feature Significance Tests Spell Out Which Features Drive AI Predictions, With Limits",
+            "original_headline": "AICO: Feature significance tests for supervised learning",
+            "deck": "An abstract study introduces AICO, a non-retraining, statistically principled method to identify feature influence in AI models, while noting scope and limitations.",
+            "authors": [
+              "Kay Giesecke",
+              "Enguerrand Horel",
+              "Chartsiri Jirachotkulthorn"
+            ],
+            "institutions": [
+              "Hasso Plattner Institute",
+              "University of Potsdam",
+              "Stanford University"
+            ],
+            "institution_status": "verified",
+            "url": "https://doi.org/10.1073/pnas.2530045123",
+            "path": "research/paper-afd9c531da091aca39b7d1e3/index.html",
+            "publisher": "PNAS",
+            "label": "Journal article",
+            "date": "2026-09-23",
+            "theme": "training and efficiency",
+            "source_verified_at": "",
+            "affiliation_source_url": "https://openalex.org/W4416615353"
+          },
+          {
+            "key": "paper:e3bbbfd1a0ea82e4c41cefe1",
+            "headline": "Contrastive Learning for Authorship Verification",
+            "original_headline": "Contrastive Learning for Authorship Verification",
+            "deck": "Open the original research record for the paper and its access options.",
+            "authors": [
+              "Peter Kirby"
+            ],
+            "institutions": [
+              "Georgia Institute of Technology"
+            ],
+            "institution_status": "verified",
+            "url": "https://arxiv.org/abs/2609.28471v1",
+            "path": "research/paper-e3bbbfd1a0ea82e4c41cefe1/index.html",
+            "publisher": "arXiv",
+            "label": "arXiv version · journal reference supplied",
+            "date": "2026-09-23",
+            "theme": "new methods and evidence",
+            "source_verified_at": "2026-09-24T17:09:16.600960+00:00",
+            "affiliation_source_url": "https://openalex.org/W7213745193"
+          }
+        ],
+        "paper_count": 26,
+        "affiliation_verified_count": 3
+      },
+      "content_sha256": "96abda85cf0298d243755db73b0e2034ac33aa16544885cd17415bf64108d504"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W38",
       "period_start": "2026-09-14",
       "period_end": "2026-09-20",
