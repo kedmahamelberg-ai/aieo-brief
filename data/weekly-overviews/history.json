@@ -79,7 +79,7 @@
           {
             "code": "CA",
             "name": "Canada",
-            "count": 26,
+            "count": 27,
             "topic": "Rules And Rights",
             "sentence": "Canada: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
             "story": {
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "0b119606544ab43df28dfae8ca229044fe57b1930d2f7f63a4fc3853ac7119e1"
+      "content_sha256": "d11c3c313bd8011b4f6b2fddcec874650a21bc2869944defe8181dc1042d0d3b"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
