@@ -16,6 +16,7 @@ from culture_library import publication as culture_publication, discoveries as c
 from english_publication import EnglishPublication, content_version, LAYOUT
 from weekly_overviews import prepare_weekly_overviews, social_queue
 from short_links import short_link_routes
+from article_urls import assign_article_urls
 from search_metadata import identity_graph
 from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
@@ -172,6 +173,11 @@ def main():
     current_order={x['key']:i for i,x in enumerate(news+research+culture)}
     public_by_key={x['key']:english.apply(x) for x in sorted(allcards,key=lambda x:current_order.get(x['key'],100000))}
     allcards=[public_by_key[x['key']] for x in allcards]
+    assign_article_urls(allcards, old)
+    for archived in raw_archive:
+        public = public_by_key[archived['key']]
+        for field in ('path', 'slug', 'legacy_paths', 'url_slug_version'):
+            if field in public:archived[field] = copy.deepcopy(public[field])
     news=[public_by_key[x['key']] for x in news]
     research=[public_by_key[x['key']] for x in research]
     culture=[public_by_key[x['key']] for x in culture]
@@ -260,10 +266,12 @@ def main():
     for item in allcards:
         related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
         render(item['path'],'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related)
+        for alias in item.get('legacy_paths', []):
+            render(alias,'story.html',page='story',story=item,related=related,canonical_path=item['path'],short_destination=baseurl+'/'+item['path'].removesuffix('index.html'))
     campaign_file=ROOT/'config/social-links.json'
     campaigns=json.loads(campaign_file.read_text()).get('links',[]) if campaign_file.exists() else []
     # Preview snapshots may predate a live campaign; live builds must resolve all links.
-    if preview:campaigns=[x for x in campaigns if x['article_path'] in {c['path'] for c in allcards}]
+    if preview:campaigns=[x for x in campaigns if x['article_path'] in {p for c in allcards for p in [c['path']]+c.get('legacy_paths',[])}]
     short_routes=short_link_routes(allcards,campaigns,baseurl)
     by_path={c['path']:c for c in allcards}
     for alias,route in short_routes.items():

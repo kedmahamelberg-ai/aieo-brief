@@ -11,13 +11,14 @@ def article_alias(path):
 
 
 def short_link_routes(items, campaigns, baseurl):
-    by_path = {item['path']: item for item in items}
+    by_path = {path: item for item in items for path in [item['path']] + item.get('legacy_paths', [])}
     routes = {}
     for path in sorted(by_path):
         alias = article_alias(path)
         if alias in routes:
             raise ValueError('Short address collision; preserve existing aliases before resolving')
-        routes[alias] = {'article_path': path, 'destination': baseurl + '/' + path}
+        canonical = by_path[path]['path']
+        routes[alias] = {'article_path': canonical, 'destination': baseurl + '/' + canonical}
     for entry in campaigns:
         slug = entry['slug']
         path = entry['article_path']
@@ -33,5 +34,6 @@ def short_link_routes(items, campaigns, baseurl):
         alias = 's/' + slug + '/index.html'
         if alias in routes:
             raise ValueError('Duplicate short address: ' + slug)
-        routes[alias] = {'article_path': path, 'destination': baseurl + '/' + path + '?' + urlencode(tracking)}
+        canonical = by_path[path]['path']
+        routes[alias] = {'article_path': canonical, 'destination': baseurl + '/' + canonical + '?' + urlencode(tracking)}
     return routes
