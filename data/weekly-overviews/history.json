@@ -32,7 +32,7 @@
             "sentence": "China: selected reporting leaned toward rules and rights, with “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed…” as one visible signal.",
             "story": {
               "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
-              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "path": "story/independent-mathematics-ai-advisory-group-formed-gains-limits/index.html",
               "publisher": "OpenAI",
               "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
             }
@@ -45,7 +45,7 @@
             "sentence": "United States: the discovery stream centred most often on work and skills, including “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
             "story": {
               "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
-              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "path": "story/independent-mathematics-ai-advisory-group-formed-gains-limits/index.html",
               "publisher": "OpenAI",
               "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
             }
@@ -58,7 +58,7 @@
             "sentence": "United Kingdom: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
             "story": {
               "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
-              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "path": "story/independent-mathematics-ai-advisory-group-formed-gains-limits/index.html",
               "publisher": "OpenAI",
               "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
             }
@@ -71,7 +71,7 @@
             "sentence": "France: the discovery stream centred most often on work and skills, including “ENS- PSL Findings on Data and AI: Mixed Gains, Clear Limits….”",
             "story": {
               "headline": "ENS- PSL Findings on Data and AI: Mixed Gains, Clear Limits, and Ongoing Questions",
-              "path": "story/development-d92c4ce5-47ec-4178-9351-2d6b4285c2b5/index.html",
+              "path": "story/ens-psl-findings-data-ai-mixed-ongoing-questions/index.html",
               "publisher": "PSL | ENS",
               "source_url": "https://www.ens.psl.eu/actualites/les-savoirs-de-l-ecole-les-donnees-et-l-intelligence-artificielle"
             }
@@ -84,7 +84,7 @@
             "sentence": "Canada: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
             "story": {
               "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
-              "path": "story/development-3741c35e-bffe-4ebb-9f81-cda4e4f059a6/index.html",
+              "path": "story/independent-mathematics-ai-advisory-group-formed-gains-limits/index.html",
               "publisher": "OpenAI",
               "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
             }
@@ -135,7 +135,7 @@
             ],
             "institution_status": "verified",
             "url": "https://doi.org/10.1073/pnas.2536100123",
-            "path": "research/paper-8778a5cfae74250c006dc1f6/index.html",
+            "path": "research/abstract-only-evidence-human-learning-could-boost-gains-vary/index.html",
             "publisher": "PNAS",
             "label": "Journal article",
             "date": "2026-09-21",
@@ -160,7 +160,7 @@
             ],
             "institution_status": "verified",
             "url": "https://doi.org/10.1073/pnas.2530045123",
-            "path": "research/paper-afd9c531da091aca39b7d1e3/index.html",
+            "path": "research/aico-feature-significance-tests-spell-out-predictions-limits/index.html",
             "publisher": "PNAS",
             "label": "Journal article",
             "date": "2026-09-23",
@@ -181,7 +181,7 @@
             ],
             "institution_status": "verified",
             "url": "https://arxiv.org/abs/2609.28471v1",
-            "path": "research/paper-e3bbbfd1a0ea82e4c41cefe1/index.html",
+            "path": "research/contrastive-learning-authorship-verification/index.html",
             "publisher": "arXiv",
             "label": "arXiv version · journal reference supplied",
             "date": "2026-09-23",
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "d11c3c313bd8011b4f6b2fddcec874650a21bc2869944defe8181dc1042d0d3b"
+      "content_sha256": "1695ca398429f6e7be83bf68f12f76c48a9f492a63255e231f4557f794d54293"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
