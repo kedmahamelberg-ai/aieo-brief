@@ -2,6 +2,386 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Rear View of Seated Man",
+      "art_type": "Drawing",
+      "balance_origin": "Italy",
+      "creator": "Carlo Vimercati (Italian, 1660–1715)",
+      "creator_origin": "Italy",
+      "culture_type": "illustration",
+      "deck": "Rear View of Seated Man. red chalk heightened with white chalk.",
+      "headline": "Rear View of Seated Man",
+      "image_path": "assets/culture/e481d126784aedd1e9d55287.jpg",
+      "key": "culture:e481d126784aedd1e9d55287",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1963.72/1963.72_web.jpg",
+      "medium": "red chalk heightened with white chalk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1963.72",
+      "provenance_id": "cma:140054",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of Mr. and Mrs. Leopold Blumka",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1963.72",
+      "work_date": "late 1600s?",
+      "date": "2026-09-29",
+      "selected_on": "2026-09-29",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-e481d126784aedd1e9d55287",
+      "path": "culture/culture-e481d126784aedd1e9d55287/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Rear View of Seated Man",
+          "url": "https://clevelandart.org/art/1963.72",
+          "date": "late 1600s?",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "29 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-29",
+      "summary_basis": "Selected 29 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "d32962a330f96350c68db2d71970a987177c2d94dbd1463245e7b1d02b6d39a5",
+      "creator": "Emily Dickinson",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Emily Dickinson.",
+      "excerpt": "A something in a summer's Day\nAs slow her flambeaux burn away\nWhich solemnizes me.\n\nA something in a summer's noon --\nA depth -- an Azure -- a perfume --\nTranscending ecstasy.\n\nAnd still within a summer's night\nA something so transporting bright\nI clap my hands to see --\n\nThen veil my too inspecting face\nLets such a subtle -- shimmering grace\nFlutter too far for me --\n\nThe wizard fingers never rest --\nThe purple brook within the breast\nStill chafes it narrow bed --\n\nStill rears the East her amber Flag --\nGuides still the sun along the Crag\nHis Caravan of Red --\n\nSo looking on -- the night -- the morn\nConclude the wonder gay --\nAnd I meet, coming thro' the dews\nAnother summer's Day!",
+      "headline": "A something in a summer's Day",
+      "key": "culture:9e741bf608957ee631049957",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "A something in a summer's Day",
+        "As slow her flambeaux burn away",
+        "Which solemnizes me.",
+        "",
+        "A something in a summer's noon --",
+        "A depth -- an Azure -- a perfume --",
+        "Transcending ecstasy.",
+        "",
+        "And still within a summer's night",
+        "A something so transporting bright",
+        "I clap my hands to see --",
+        "",
+        "Then veil my too inspecting face",
+        "Lets such a subtle -- shimmering grace",
+        "Flutter too far for me --",
+        "",
+        "The wizard fingers never rest --",
+        "The purple brook within the breast",
+        "Still chafes it narrow bed --",
+        "",
+        "Still rears the East her amber Flag --",
+        "Guides still the sun along the Crag",
+        "His Caravan of Red --",
+        "",
+        "So looking on -- the night -- the morn",
+        "Conclude the wonder gay --",
+        "And I meet, coming thro' the dews",
+        "Another summer's Day!"
+      ],
+      "provenance_id": "poetrydb:Emily Dickinson:A something in a summer's Day",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1886.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d1fd38d316bb73cd6def695ed39039c2955320420cdc10f818086c9faeae7e07",
+      "source_locator": "A something in a summer's Day",
+      "source_url": "https://poetrydb.org/title/A%20something%20in%20a%20summer%27s%20Day:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1886",
+      "date": "2026-09-29",
+      "selected_on": "2026-09-29",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9e741bf608957ee631049957",
+      "path": "culture/culture-9e741bf608957ee631049957/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "A something in a summer's Day",
+          "url": "https://poetrydb.org/title/A%20something%20in%20a%20summer%27s%20Day:abs/lines.text",
+          "date": "Before 1886",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "29 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-29",
+      "summary_basis": "Selected 29 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "A something in a summer's Day\nAs slow her flambeaux burn away\nWhich solemnizes me.\n\nA something in a summer's noon --\nA depth -- an Azure -- a perfume --\nTranscending ecstasy.\n\nAnd still within a summer's night\nA something so transporting bright\nI clap my hands to see --\n\nThen veil my too inspecting face\nLets such a subtle -- shimmering grace\nFlutter too far for me --\n\nThe wizard fingers never rest --\nThe purple brook within the breast\nStill chafes it narrow bed --\n\nStill rears the East her amber Flag --\nGuides still the sun along the Crag\nHis Caravan of Red --\n\nSo looking on -- the night -- the morn\nConclude the wonder gay --\nAnd I meet, coming thro' the dews\nAnother summer's Day!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "f6d488e5c76a30e5f87586b1033a2606a06a7164afe493549bd40d1e3ad2cefd",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "One cannot listen to different pieces of music at the same time, a real comprehension of the beautiful being possible only through concentration upon some central motive.",
+      "headline": "One cannot listen to different pieces of music at the same time, a real comprehension of the beautiful being possible only through concentration upon some central motive.",
+      "key": "culture:59c22156429c2422cf2e4183",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:f6d488e5c76a30e5f87586b1033a2606a06a7164afe493549bd40d1e3ad2cefd",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The term, Abode of Vacancy, besides conveying the Taoist theory of the all-containing, involves the conception of a continued need of change in decorative motives. The tea-room is absolutely empty, except for what may be placed there temporarily to satisfy some aesthetic mood. Some special art object is brought in for the occasion, and everything else is selected and arranged to enhance the beauty of the principal theme. One cannot listen to different pieces of music at the same time, a real comprehension of the beautiful being possible only through concentration upon some central motive. Thus it will be seen that the system of decoration in our tea-rooms is opposed to that which obtains in the West, where the interior of a house is often converted into a museum. To a Japanese, accustomed to simplicity of ornamentation and frequent change of decorative method, a Western interior permanently filled with a vast array of pictures, statuary, and bric-a-brac gives the impression of mere vulgar display of riches. It calls for a mighty wealth of appreciation to enjoy the constant sight of even a masterpiece, and limitless indeed must be the capacity for artistic feeling in those who can exist day after day in the midst of such confusion of color and form as is to be often seen in the homes of Europe and America.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 70 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-09-29",
+      "selected_on": "2026-09-29",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-59c22156429c2422cf2e4183",
+      "path": "culture/culture-59c22156429c2422cf2e4183/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "One cannot listen to different pieces of music at the same time, a real comprehension of the beautiful being possible only through concentration upon some central motive.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "29 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-29",
+      "summary_basis": "Selected 29 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "One cannot listen to different pieces of music at the same time, a real comprehension of the beautiful being possible only through concentration upon some central motive.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The term, Abode of Vacancy, besides conveying the Taoist theory of the all-containing, involves the conception of a continued need of change in decorative motives. The tea-room is absolutely empty, except for what may be placed there temporarily to satisfy some aesthetic mood. Some special art object is brought in for the occasion, and everything else is selected and arranged to enhance the beauty of the principal theme. One cannot listen to different pieces of music at the same time, a real comprehension of the beautiful being possible only through concentration upon some central motive. Thus it will be seen that the system of decoration in our tea-rooms is opposed to that which obtains in the West, where the interior of a house is often converted into a museum. To a Japanese, accustomed to simplicity of ornamentation and frequent change of decorative method, a Western interior permanently filled with a vast array of pictures, statuary, and bric-a-brac gives the impression of mere vulgar display of riches. It calls for a mighty wealth of appreciation to enjoy the constant sight of even a masterpiece, and limitless indeed must be the capacity for artistic feeling in those who can exist day after day in the midst of such confusion of color and form as is to be often seen in the homes of Europe and America.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/36/Dvo%C5%99%C3%A1k_-_String_Quartet_No._12_in_F_major%2C_Op._96_%27American%27_-_IV._Finale._Vivace_ma_non_troppo_%28Musopen_String_Quartet%29.flac",
+      "creator": "Antonín Dvořák",
+      "creator_origin": "Czech",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Antonín Dvořák. 5 minutes to listen.",
+      "duration_seconds": 352,
+      "headline": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace ma non troppo (Musopen String Quartet)",
+      "key": "culture:57eee4858326e5d98d7c2145",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Dvo%C5%99%C3%A1k_-_String_Quartet_No._12_in_F_major%2C_Op._96_%27American%27_-_IV._Finale._Vivace_ma_non_troppo_%28Musopen_String_Quartet%29.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k",
+      "original_recording_title": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace ma non troppo (Musopen String Quartet)",
+      "provenance_id": "commons:155121443",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Antonín Dvořák",
+      "recording_description": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace ma non troppo",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Antonín Dvořák",
+        "label": "Public domain (source-declared)",
+        "source_credit": "This work comes from the non profit U.S. organization Musopen where it is available at the following link: https://archive.org/details/MusopenCollectionAsFlac The Musopen website requires all uploaders to \"represent and warrant that content uploaded to the site is in the public domain\" (see FAQ #4 ). Musopen's own works ( \"Musopen Materials\" and \"Musopen Service\", not user content or public domain content ), are fully copyrighted and may not be used freely as stated in their Terms and Conditions of Use .",
+        "url": "https://commons.wikimedia.org/wiki/File:Dvo%C5%99%C3%A1k_-_String_Quartet_No._12_in_F_major,_Op._96_%27American%27_-_IV._Finale._Vivace_ma_non_troppo_(Musopen_String_Quartet).flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dvo%C5%99%C3%A1k_-_String_Quartet_No._12_in_F_major,_Op._96_%27American%27_-_IV._Finale._Vivace_ma_non_troppo_(Musopen_String_Quartet).flac",
+      "work_date": "2012",
+      "date": "2026-09-29",
+      "selected_on": "2026-09-29",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-57eee4858326e5d98d7c2145",
+      "path": "culture/culture-57eee4858326e5d98d7c2145/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace ma non troppo (Musopen String Quartet)",
+          "url": "https://commons.wikimedia.org/wiki/File:Dvo%C5%99%C3%A1k_-_String_Quartet_No._12_in_F_major,_Op._96_%27American%27_-_IV._Finale._Vivace_ma_non_troppo_(Musopen_String_Quartet).flac",
+          "date": "2012",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "29 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-29",
+      "summary_basis": "Selected 29 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "White Nights",
+      "content_fingerprint": "baa27f6728435a6c9e210565ec69acebb82c7eaed3e5f0b09bb2efa202a998e0",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "\"Brother, I feel so lighthearted now, there is such sweetness in my soul ...\" said Vasya, getting up and pacing about the room excitedly. \"Don't you feel the same? We shall be poor, of course, but we shall be happy; and you know it is not a wild fancy; our happiness is not a fairy tale; we shall be happy in reality!...\"",
+      "headline": "White Nights · a short reading",
+      "key": "culture:485f77b4f4b53823764d2175",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:baa27f6728435a6c9e210565ec69acebb82c7eaed3e5f0b09bb2efa202a998e0",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 957 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-09-29",
+      "selected_on": "2026-09-29",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-485f77b4f4b53823764d2175",
+      "path": "culture/culture-485f77b4f4b53823764d2175/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "29 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-29",
+      "summary_basis": "Selected 29 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "\"Brother, I feel so lighthearted now, there is such sweetness in my soul ...\" said Vasya, getting up and pacing about the room excitedly. \"Don't you feel the same? We shall be poor, of course, but we shall be happy; and you know it is not a wild fancy; our happiness is not a fairy tale; we shall be happy in reality!...\"",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/4/48/Henry_Purcell_-_Toccata_Amajor.ogg",
       "creator": "Henry Purcell",
       "creator_origin": "English",

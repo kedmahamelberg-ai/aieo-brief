@@ -3364,6 +3364,48 @@
       },
       "output_sha256": "f779683725eff33997ff24627c70f38eca839f31ccacc2e167a4477cfe5fff45",
       "policy": "brief-english-display-v1"
+    },
+    "3ab5bc39b5674c94f79a916a7f9493e81218b56e3e18ff3e9b2a279e5ff9647f": {
+      "english": {
+        "0": "Italy",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "55daf3f80e27aed68e9752ce4bd9f42e45a46301a5a5dcf9ddda9c82bb6c4ab8",
+      "policy": "brief-english-display-v1"
+    },
+    "edaaa3690fc370785747697ec031c9e6eab04b6f5471b2d95bb136c5934a04d4": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer",
+        "2": "A recording of music by Antonín Dvořák. 5 minutes to listen.",
+        "3": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace, but not too much",
+        "4": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace, but not too much",
+        "5": "Dvořák - String Quartet No. 12 in F major, Op. 96 'American' - IV. Finale. Vivace, but not too much (Musopen String Quartet)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "280a05c9dcd8e04fcf24e9fdc290bc7c5b615f1b602ce8ac196c6e6b72ffa5ca",
+      "policy": "brief-english-display-v1"
     }
   }
 }
