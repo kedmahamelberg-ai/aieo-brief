@@ -1,47 +1,49 @@
 {
-  "generated": 2,
-  "failed": 4,
+  "generated": 1,
+  "failed": 5,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 1,
   "engine_version": "aieo-editorial-runtime-v4-english",
   "failure_counts": {
-    "draft_quote_unsupported": 2,
-    "source_wording_copied": 1,
-    "source_scope_review_failed": 1
+    "draft_quote_unsupported": 5
   },
   "failed_items": [
     {
-      "key": "paper:4c52d9d35cbcdc947d90efee",
+      "key": "paper:22fdd436cf5247440f1a28ae",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:512408022e433328407a59ff",
+      "key": "paper:49c57c8551a5c19a7054f474",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "source_wording_copied",
+      "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:885f7850edf3b73b9fa79d59",
+      "key": "paper:8c434a5d9bb28111b2a8a371",
       "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v4-english",
-      "failed_checks": [
-        "population_preserved"
-      ]
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v4-english"
     },
     {
-      "key": "paper:b6cd0b6a946ea63906af6944",
+      "key": "paper:b71c83b23e17c06b500ce184",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v4-english"
+    },
+    {
+      "key": "paper:f2dff715da7f13e829ff9f32",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v4-english"
     }
   ],
-  "updated_at": "2026-09-28T20:06:06.504047+00:00"
+  "updated_at": "2026-09-29T18:27:01.206013+00:00"
 }
