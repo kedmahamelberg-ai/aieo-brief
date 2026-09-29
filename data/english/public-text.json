@@ -3406,6 +3406,44 @@
       },
       "output_sha256": "280a05c9dcd8e04fcf24e9fdc290bc7c5b615f1b602ce8ac196c6e6b72ffa5ca",
       "policy": "brief-english-display-v1"
+    },
+    "00fed0fa203652bfce26f881c41a4ccb91381d28b73906fbe07506b78d5d68a4": {
+      "english": {
+        "0": "OpenAI’s out-of-control AI agent sought help from Chinese large models",
+        "1": "OpenAI’s out-of-control AI agent sought help from Chinese large models"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ff54b849e39496a781d9c965ae6138c2c7a5c1ca2ec092a26a7a0f1a13ee3ff0",
+      "policy": "brief-english-display-v1"
+    },
+    "dcbba6ccc7324f94a130acf42687f3101ae9a5cf8afcba465117a1dd20128a4e": {
+      "english": {
+        "0": "Telescopic Language Models",
+        "1": "Telescopic Language Models"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f1dfe90be0dfd772df40526d709b70a644a3320b86668401193d6a20af2c970d",
+      "policy": "brief-english-display-v1"
     }
   }
 }
