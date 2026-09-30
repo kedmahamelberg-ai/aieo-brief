@@ -1,49 +1,195 @@
 {
-  "generated": 1,
-  "failed": 5,
+  "generated": 41,
+  "failed": 25,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 1,
-  "engine_version": "aieo-editorial-runtime-v4-english",
+  "unchanged": 0,
+  "engine_version": "aieo-editorial-runtime-v5-research-support",
   "failure_counts": {
-    "draft_quote_unsupported": 5
+    "source_wording_copied": 10,
+    "unexpected_error": 13,
+    "source_scope_review_failed": 1,
+    "unsupported_number": 1
   },
   "failed_items": [
     {
-      "key": "paper:22fdd436cf5247440f1a28ae",
+      "key": "paper:91078ae8ed566fc820332ae5",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:79f5371de41555e5281d0972",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:931e105f0c64db0569d48b27",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:2410f94842a200f9eaa301ee",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:3e00a358ccf1e278ebe24fec",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:307e85c1830ce3790534da5b",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:d35eeec2915ff73a9f55b758",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:8df2c3cd71b49d271188da46",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:164a996f084392f2bff6d309",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v5-research-support",
+      "failed_checks": [
+        "population_preserved"
+      ]
+    },
+    {
+      "key": "paper:2ea97c995390ca392c39c496",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:22b011bcac2b8544080f0790",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:917abed9d2411e8863148866",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:e3bbbfd1a0ea82e4c41cefe1",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:b6cd0b6a946ea63906af6944",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "unsupported_number",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:1a4c2726d54d04b40f1285a4",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:3c50d4e4a45d92b27ff5864a",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:984d7d91eb607ec5e574a998",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:9c39fe4a53c10bbeec14a350",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:e2bd24c4c766c3e8d5a05aa1",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:f8824ad6f5a66310cd22ea3e",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
+    },
+    {
+      "key": "paper:22fdd436cf5247440f1a28ae",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
       "key": "paper:49c57c8551a5c19a7054f474",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
       "key": "paper:8c434a5d9bb28111b2a8a371",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
       "key": "paper:b71c83b23e17c06b500ce184",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
       "key": "paper:f2dff715da7f13e829ff9f32",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v4-english"
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-09-29T18:27:01.206013+00:00"
+  "updated_at": "2026-09-30T10:50:04.178532+00:00"
 }
