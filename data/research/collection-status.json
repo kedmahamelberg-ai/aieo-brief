@@ -105,44 +105,8 @@
       "institutions": 0
     },
     {
-      "key": "paper:22b011bcac2b8544080f0790",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:2ea97c995390ca392c39c496",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:164a996f084392f2bff6d309",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:8df2c3cd71b49d271188da46",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
       "key": "paper:d35eeec2915ff73a9f55b758",
       "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:307e85c1830ce3790534da5b",
-      "status": "unavailable",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:3e00a358ccf1e278ebe24fec",
-      "status": "unavailable",
       "source_verified": true,
       "institutions": 0
     },
@@ -153,26 +117,14 @@
       "institutions": 0
     },
     {
-      "key": "paper:931e105f0c64db0569d48b27",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
       "key": "paper:79f5371de41555e5281d0972",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:91078ae8ed566fc820332ae5",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
     }
   ],
   "recovery": {
-    "recovered": 19,
+    "recovered": 11,
     "unavailable": 0
   }
 }
