@@ -269,6 +269,22 @@ class GenerationCheckpoints(unittest.TestCase):
             self.assertNotIn('PRIVATE_FEEDBACK', status_text + output.getvalue())
             self.assertIn('model_json_invalid', (root / 'summary.md').read_text())
 
+    def test_failed_refresh_keeps_valid_summary_for_unchanged_evidence(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root, _ = self.context(stack, folder)
+            self.research_context(stack, root, 1)
+            data, _ = research.load()
+            prior = {**data['papers'][0], 'has_editorial': True,
+                     'headline': 'Previously checked summary', 'prompt_version': 'older'}
+            prior.pop('abstract')
+            research.load.return_value = (data, {prior['key']: prior})
+            stack.enter_context(patch.object(research, 'write_story', side_effect=TimeoutError()))
+            research.main()
+            saved = json.loads((root / 'data/research/public.json').read_text())['papers'][0]
+            self.assertTrue(saved['has_editorial'])
+            self.assertEqual(saved['headline'], prior['headline'])
+            self.assertNotIn('abstract', saved)
+
     def test_research_with_no_valid_drafts_still_reports_failure(self):
         with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
             root, _ = self.context(stack, folder)
