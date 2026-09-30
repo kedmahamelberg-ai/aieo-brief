@@ -95,8 +95,8 @@
       "research": {
         "kind": "research",
         "eyebrow": "THE RESEARCH COMPASS",
-        "title": "Research turns toward new methods and evidence and agents and coordination",
-        "deck": "The selected papers point in two directions: new methods and evidence and agents and coordination.",
+        "title": "Research turns toward agents and coordination and new methods and evidence",
+        "deck": "The selected papers point in two directions: agents and coordination and new methods and evidence.",
         "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Reanalysis of 74 studies shows learning opportunities and explanations matter; mixed outcomes. Hasso Plattner Institute, University of Potsdam, Stanford University: An abstract study introduces AICO, a non-retraining, statistically principled method to identify feature influence in AI models, while noting scope… Georgia Institute of Technology: Open the original research record for the paper and its access options.",
         "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
         "word_count": 96,
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "1695ca398429f6e7be83bf68f12f76c48a9f492a63255e231f4557f794d54293"
+      "content_sha256": "2356ebfabe546a3be7135adce00fdc6229dd21d040344814b4b9157fd4d76a93"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
