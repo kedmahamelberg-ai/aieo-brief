@@ -312,6 +312,41 @@ class GenerationCheckpoints(unittest.TestCase):
             self.assertEqual(saved['headline'], prior['headline'])
             self.assertNotIn('abstract', saved)
 
+    def test_full_paper_reaches_writer_but_private_text_never_reaches_public_json(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root, _ = self.context(stack, folder)
+            draft = self.research_context(stack, root, 1)
+            stack.enter_context(patch.object(research, 'read_paper', return_value={
+                'status':'read','text':'PRIVATE COMPLETE PAPER with final-page limitations',
+                'pages':12,'text_sha256':'paper-hash','pdf_sha256':'pdf-hash',
+                'url':'https://arxiv.org/pdf/2609.35767v1'}))
+            writer=stack.enter_context(patch.object(research, 'write_story', return_value=(draft,{})))
+            research.main()
+            self.assertEqual(writer.call_args.kwargs['kind'],'paper')
+            self.assertIn('final-page limitations',writer.call_args.args[2][0]['evidence'])
+            public=(root/'data/research/public.json').read_text()
+            saved=json.loads(public)['papers'][0]
+            self.assertEqual(saved['summary_basis'],'Summary of the paper')
+            self.assertEqual(saved['paper_pages'],12)
+            self.assertNotIn('PRIVATE COMPLETE PAPER',public)
+
+    def test_unavailable_pdf_does_not_downgrade_an_existing_paper_reading(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root, _ = self.context(stack, folder)
+            self.research_context(stack, root, 1)
+            data, _ = research.load()
+            prior={**data['papers'][0],'has_editorial':True,'evidence_scope':'paper_text',
+                   'headline':'Checked full-paper summary','prompt_version':'older'}
+            prior.pop('abstract')
+            research.load.return_value=(data,{prior['key']:prior})
+            stack.enter_context(patch.object(research,'read_paper',return_value={'status':'pdf_unavailable'}))
+            writer=stack.enter_context(patch.object(research,'write_story'))
+            research.main()
+            writer.assert_not_called()
+            saved=json.loads((root/'data/research/public.json').read_text())['papers'][0]
+            self.assertEqual(saved['evidence_scope'],'paper_text')
+            self.assertEqual(saved['headline'],prior['headline'])
+
     def test_research_with_no_valid_drafts_still_reports_failure(self):
         with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
             root, _ = self.context(stack, folder)
