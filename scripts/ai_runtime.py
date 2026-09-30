@@ -126,7 +126,7 @@ def ledger():
         os.replace(temp, path)
 
 
-def completion(messages, schema, *, name="aieo_reading", timeout=120):
+def completion(messages, schema, *, name="aieo_reading", timeout=120, max_request_bytes=196608):
     require_key()
     p = selected_policy()
     if not uses_openai():
@@ -138,7 +138,7 @@ def completion(messages, schema, *, name="aieo_reading", timeout=120):
                "response_format": {"type": "json_schema", "json_schema": {
                    "name": name, "strict": True, "schema": strict_schema(schema)}}}
     encoded = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-    if len(encoded) > 196608:
+    if len(encoded) > min(max_request_bytes, 384000):
         raise AIError("Input exceeds the bounded request size; retain complete evidence in smaller segments")
     input_rate, output_rate = RATES[p["model"]]
     # UTF-8 bytes provide a conservative upper bound for text tokenization;
