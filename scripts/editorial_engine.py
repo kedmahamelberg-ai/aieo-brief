@@ -87,6 +87,8 @@ def research_quotes(sources):
  # Every option remains a literal substring of the complete abstract.
  quotes=[]
  for source in sources:
+  if source.get('evidence_quotes'):
+   quotes.extend(source['evidence_quotes']);continue
   for sentence in re.split(r'(?<=[.!?])\s+',normalized(source['evidence'])):
    while len(sentence)>400:
     cut=sentence.rfind(' ',12,350)
@@ -98,7 +100,7 @@ def research_quotes(sources):
 def draft_schema(sources,kind):
  schema=copy.deepcopy(SCHEMA)
  schema['properties']['support']['items']['properties']['source_number']={'type':'integer','enum':sorted({s['source_number'] for s in sources})}
- if kind in ('preprint','abstract'):
+ if kind in ('preprint','abstract','paper'):
   schema['properties']['claim_status']['enum']=['study']
   schema['properties']['limitation']['minLength']=1
   quotes=research_quotes(sources)
@@ -165,8 +167,8 @@ def read_segment(text,deadline):
 def compile_evidence(sources,deadline=None):
  total=sum(len(s['evidence']) for s in sources)
  if total<=6000 or (ai_runtime.uses_openai() and sum(len(s["evidence"].encode("utf-8")) for s in sources)<=64000):return sources,[]
- chunks=[(s,c) for s in sources for c in evidence_chunks(s['evidence'],limit=3600,overlap=160)]
- if len(chunks)>24:raise ValueError('Evidence exceeds the automatic reading budget; no source was truncated.')
+ chunks=[(s,c) for s in sources for c in evidence_chunks(s['evidence'],limit=7000 if s.get('evidence_basis')=='paper_text' else 3600,overlap=160)]
+ if len(chunks)>(64 if any(s.get('evidence_basis')=='paper_text' for s in sources) else 24):raise ValueError('Evidence exceeds the automatic reading budget; no source was truncated.')
  notes=[];trace=[]
  for s,c in chunks:
   note,quotes=read_segment(c['text'],deadline)
@@ -205,7 +207,10 @@ def validate_draft(d,sources,kind='news'):
  numbers=lambda s:set(re.findall(r'(?<!\w)\d+(?:[.,]\d+)*(?:%)?',s))
  if numbers(public)-numbers(' '.join(s['evidence']+' '+s.get('headline','') for s in sources)):raise ValueError('Draft introduces a numeric value that is not present in the sources.')
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
- if kind in ('preprint','abstract') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')
+ if kind in ('preprint','abstract','paper') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')
+ if kind=='paper':
+  quick=' '.join(d[k] for k in ('what_happened','why_it_matters','limitation'))
+  if len(quick.split())>110 or len((quick+' '+' '.join(d['body_paragraphs'])).split())>200:raise ValueError('Research is too long: keep the quick overview within 110 words and the full brief within 200 words.')
  return {k:([x.replace('—',',').strip() for x in v] if k=='body_paragraphs' else v.replace('—',',').strip() if isinstance(v,str) else v) for k,v in d.items()}
 
 REVIEW_CHECKS=('headline_supported','population_preserved','claim_status_preserved','no_unstated_effects','main_story_only','english_only')
@@ -232,17 +237,20 @@ Write an original AIEO Brief article for a general reader, including a teenager.
 Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining what happened, 1-2 explaining why it matters, and for_humans and for_ai as one short sentence or an empty string when unstated. Add two original body paragraphs with useful detail, each at most 750 characters. Include a meaningful limitation. Provide private exact source support (field, source_number, quote) in three to six entries, including one each for editorial_headline, what_happened and why_it_matters. Each exact quote must be 12 to 400 characters. When a source is supplied as segment notes, use its evidence_quotes for exact support. Support quotes are not published. Keep claim_status explicit.\n'''
  prompt+='Character limits per text field: '+json.dumps(FIELD_LIMITS)+'\n'
  if kind in ('preprint','abstract'):prompt+='This is abstract-only research. claim_status must be study. State the abstract-only scope and, where applicable, preprint status in limitation.\n'
- schema=draft_schema(sources,kind)
- quote_options=research_quotes(sources) if kind in ('preprint','abstract') else []
+ schema=draft_schema(compiled,kind)
+ quote_options=research_quotes(compiled) if kind in ('preprint','abstract','paper') else []
  if quote_options:prompt+='EXACT PRIVATE SUPPORT CATALOG (choose quote_id): '+json.dumps(dict(enumerate(quote_options)),ensure_ascii=False)+'\n'
- if kind in ('preprint','abstract'):
+ if kind in ('preprint','abstract','paper'):
   prompt+='For private support, select the quote_id of a relevant exact passage from the numbered catalog. The source_number must match the passage. Do not reproduce the quote in your public writing. Write a short explanation of the problem, approach and reported result in everyday words. Explain necessary technical terms. Omit equations and symbolic notation; explain mathematical results in ordinary words. Describe the assumptions in your own words rather than copying a technical list from the abstract. Do not fill space with unsupported benefits.\n'
+ if kind in ('preprint','abstract','paper'):
+  prompt+='RESEARCH READER CONTRACT: Write for practitioners with high-school education and some IT experience, across business, public services, government and other organizations. Use everyday English, short sentences and no unexplained acronyms. The title must say the useful finding in 8-14 plain words; avoid method names and boilerplate such as with limits. The deck states the problem. what_happened (35-50 words) combines the problem, approach and key finding. why_it_matters (20-35 words) explains a practical decision and, if useful, one small example clearly framed as hypothetical, not a tested deployment or promised benefit. limitation (15-25 words) gives the main uncertainty. Together these three fields form a complete 30-second overview of the whole evidence. body_paragraphs adds ONLY two short paragraphs of 25-40 words each: useful method/result context and a practical implication or trade-off. Full brief including the quick overview must stay under 200 words. No repetition, equations, benchmark lists or promotional claims. At most one short reflective question, only when it helps readers consider a real evidence-grounded trade-off; do not force one into every story. Never infer practical effectiveness from a laboratory score.\n'
+  if kind=='paper':prompt+='You have the complete extracted PDF text, or verified notes covering every text segment. Read beyond the abstract: methods, results, discussion and limitations. Publication stage: '+str(event.get('research_label','Research'))+'. Preserve that stage. This is a paper-TEXT reading, not visual inspection: do not infer values from unextracted charts or images. Do not call the reading abstract-only.\n'
  prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nFIXED INDEPENDENT AXES (do not override): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
  if cjk*2+(len(prompt)-cjk)/3>(65000 if ai_runtime.uses_openai() else 9000):raise ValueError('Complete evidence exceeds the model context budget.')
  last=None;draft=None;corrections=[]
- for attempt in range(5 if kind in ('preprint','abstract') else 3):
+ for attempt in range(5 if kind in ('preprint','abstract','paper') else 3):
   try:
    feedback=('\nCorrect ALL previously identified problems:\n'+'\n'.join(corrections) if corrections else '')
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)

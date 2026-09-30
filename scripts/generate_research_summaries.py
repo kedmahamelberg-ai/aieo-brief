@@ -5,6 +5,7 @@ Only original prose and bibliographic metadata are written to the public researc
 from __future__ import annotations
 import argparse,json,os,time
 import ai_runtime
+from research_reading import read_paper, needs_upgrade, READING_VERSION
 from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
@@ -21,7 +22,7 @@ def load():
     return data,{r['key']:r for r in public['papers']}
 
 def pending(data,old):
-    return [p for p in data['papers'] if p.get('abstract') and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
+    return [p for p in data['papers'] if p.get('abstract') and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and not needs_upgrade(old[p['key']]) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
@@ -52,12 +53,14 @@ def main():
         payload={'schema_version':'aieo_research_public_v1','period_start':data['period_start'],'period_end':data['period_end'],'generated_at':datetime.now(timezone.utc).isoformat(),'papers':merge_recent(old,selected,data['period_end'])}
         path=ROOT/'data/research/public.json';tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
         retry_path.write_text(json.dumps(retry,indent=2)+'\n')
-    work=sorted(data['papers'],key=lambda p:(retry.get(p['key'],{}).get('attempts',0),p['date'],p['key']))
+    priority_file=ROOT/'data/research/reading-priority.json'
+    priority=json.loads(priority_file.read_text()) if priority_file.exists() else []
+    work=sorted(data['papers'],key=lambda p:(p['key'] not in priority,retry.get(p['key'],{}).get('attempts',0),-date.fromisoformat(p['date']).toordinal(),p['key']))
     for n,p in enumerate(work):
         if not safe_url(p.get('url')):continue
         prior=old.get(p['key'],{})
         if p not in todo and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
-            counts['unchanged']+=1;selected.append({**prior,**public_record(p)});continue
+            counts['unchanged']+=1;selected.append({**public_record(p),**prior});continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
         if not p.get('abstract'):
@@ -67,17 +70,24 @@ def main():
         stage='generation'
         print(f'[{n+1}/{len(work)}] Preparing research '+p['key'],flush=True)
         try:
-            sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':p['abstract'],'evidence_basis':'abstract_only'}]
-            kind='preprint' if p['source'] in ('arxiv','ssrn') else 'abstract'
+            reading=read_paper(p)
+            full=reading['status']=='read'
+            if not full and prior.get('evidence_scope')=='paper_text' and prior.get('metadata_sha256')==p['metadata_sha256']:
+                counts['deferred']+=1;selected.append(prior);checkpoint();continue
+            evidence=reading['text'] if full else p['abstract']
+            sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':evidence,'evidence_basis':'paper_text' if full else 'abstract_only'}]
+            kind='paper' if full else ('preprint' if p['source'] in ('arxiv','ssrn') else 'abstract')
             seed_path=ROOT/'data/research/editorial-seeds.json'
             seeds=json.loads(seed_path.read_text()) if seed_path.exists() else {}
             seed=seeds.get(p['key'],{})
-            event={'event_title':p['original_headline']}
-            if seed.get('metadata_sha256')==p['metadata_sha256']:event['draft_seed']=seed.get('draft')
+            event={'event_title':p['original_headline'],'research_label':p.get('research_label','Research')}
+            if not full and seed.get('metadata_sha256')==p['metadata_sha256']:event['draft_seed']=seed.get('draft')
             draft,proof=write_story(event,{},sources,kind=kind,deadline=deadline)
-            record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the abstract (from PDF)' if p.get('abstract_format')=='pdf' else 'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
+            record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the paper' if full else 'Summary of the abstract (from PDF)' if p.get('abstract_format')=='pdf' else 'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
+            record.update(research_reading_version=READING_VERSION,evidence_scope='paper_text' if full else 'abstract',full_text_status=reading['status'],full_text_retry_after=(date.today()+timedelta(days=7)).isoformat())
+            if full:record.update(pdf_url=reading['url'],paper_pages=reading['pages'],paper_text_sha256=reading['text_sha256'])
             stage='persistence'
-            client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'validation':proof}},on_conflict='input_sha256').execute()
+            client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'reading_version':READING_VERSION,'evidence_sha256':digest(evidence),'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'paper_reading':{k:v for k,v in reading.items() if k!='text'},'evidence':evidence,'validation':proof}},on_conflict='input_sha256').execute()
             selected.append(record);counts['generated']+=1
             retry.pop(p['key'],None)
             audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p['abstract'],'validation':proof,'output_sha256':digest(record)})

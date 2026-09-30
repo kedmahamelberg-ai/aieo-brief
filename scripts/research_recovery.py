@@ -12,6 +12,7 @@ from urllib.parse import quote
 
 import requests
 from research_pdf import read_pdf_abstract
+from research_reading import needs_upgrade
 
 
 class AbstractPage(HTMLParser):
@@ -51,7 +52,7 @@ def unfinished(root):
             for row in json.loads(file.read_text()).get(field, []):
                 if row.get('kind') == 'research' or row.get('key', '').startswith('paper:'):
                     records[row['key']] = row
-    return [r for r in records.values() if not r.get('has_editorial')]
+    return [r for r in records.values() if needs_upgrade(r)]
 
 
 def recover(paper, get):
@@ -88,6 +89,7 @@ def recover(paper, get):
               'metadata_sha256': hashlib.sha256((paper['original_headline'] + '\n' + abstract).encode()).hexdigest()}
     if pdf_source:
         result.update(pdf_url=pdf_source,abstract_source_url=pdf_source,abstract_format='pdf')
+    if pdf_urls:result['pdf_url']=pdf_urls[0]
     if aid:
         result['pdf_url'] = 'https://arxiv.org/pdf/' + aid
     return result
