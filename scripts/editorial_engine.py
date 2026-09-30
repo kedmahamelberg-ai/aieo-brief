@@ -174,7 +174,7 @@ def copied_phrase(copy,sources):
  words=re.findall(r"\b[\w'-]+\b",copy.casefold());texts=[' '.join(re.findall(r"\b[\w'-]+\b",s.casefold())) for s in sources]
  for n in range(max(0,len(words)-9)):
   phrase=' '.join(words[n:n+10])
-  if any(phrase in s for s in texts):return True
+  if any(phrase in s for s in texts):return phrase
  return False
 
 @validation_errors('draft_validation')
@@ -196,7 +196,8 @@ def validate_draft(d,sources,kind='news'):
   supported.add(support.get('field'))
  if not {'editorial_headline','what_happened','why_it_matters'}.issubset(supported):raise ValueError('Headline, development and significance each need source support.')
  public=' '.join(d[k] for k in TEXT_FIELDS)+' '+' '.join(d['body_paragraphs'])+' '+str(d.get('limitation',''))
- if copied_phrase(public,[s['evidence'] for s in sources]):raise ValueError('The draft repeats ten consecutive source words. Rewrite in original language.')
+ copied=copied_phrase(public,[s['evidence'] for s in sources])
+ if copied:raise ValueError('The draft repeats ten consecutive source words. Rewrite this passage in original language: '+copied)
  numbers=lambda s:set(re.findall(r'(?<!\w)\d+(?:[.,]\d+)*(?:%)?',s))
  if numbers(public)-numbers(' '.join(s['evidence']+' '+s.get('headline','') for s in sources)):raise ValueError('Draft introduces a numeric value that is not present in the sources.')
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
@@ -234,10 +235,12 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
  if cjk*2+(len(prompt)-cjk)/3>(65000 if ai_runtime.uses_openai() else 9000):raise ValueError('Complete evidence exceeds the model context budget.')
- last=None
+ last=None;draft=None
  for attempt in range(3):
   try:
-   draft=call_json(prompt+('\nRevise because: '+getattr(last,'feedback',str(last)) if last else ''),schema,deadline=deadline,attempt=attempt,stage='draft')
+   feedback=('\nRevise because: '+getattr(last,'feedback',str(last)) if last else '')
+   if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
+   draft=call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft')
    draft=validate_draft(draft,sources,kind)
    scope=review_scope(draft,compiled,deadline)
    return draft,{'engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
