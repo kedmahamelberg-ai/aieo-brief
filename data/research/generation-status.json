@@ -1,21 +1,11 @@
 {
-  "generated": 0,
-  "failed": 1,
+  "generated": 1,
+  "failed": 0,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 6,
   "engine_version": "aieo-editorial-runtime-v5-research-support",
-  "failure_counts": {
-    "source_wording_copied": 1
-  },
-  "failed_items": [
-    {
-      "key": "paper:2410f94842a200f9eaa301ee",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    }
-  ],
-  "updated_at": "2026-09-30T11:15:45.259000+00:00"
+  "failure_counts": {},
+  "failed_items": [],
+  "updated_at": "2026-09-30T11:20:30.479662+00:00"
 }
