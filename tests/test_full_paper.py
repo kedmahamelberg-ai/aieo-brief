@@ -5,8 +5,18 @@ from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf
 import editorial_engine as engine
+from validate_public_site import validate_research_reading
 
 class FullPaperReading(unittest.TestCase):
+    def test_publication_accepts_verified_paper_reading_but_rejects_false_labels(self):
+        paper={'evidence_scope':'paper_text','limitation':'Lab results only.',
+               'full_text_status':'read','paper_pages':36,'paper_text_sha256':'a'*64,
+               'summary_basis':'Summary of the paper'}
+        validate_research_reading(paper)
+        for changed in ({'paper_text_sha256':''},{'full_text_status':'pdf_unavailable'},
+                        {'evidence_scope':'abstract'},{'limitation':''}):
+            with self.assertRaises(ValueError):validate_research_reading({**paper,**changed})
+
     def test_direct_paper_reading_retains_the_last_page(self):
         text='A complete evidence sentence. '*6500+'Final-page limitation.'
         sources=[{'source_number':1,'evidence':text,'evidence_basis':'paper_text'}]
