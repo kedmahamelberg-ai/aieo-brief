@@ -176,7 +176,9 @@ def completion(messages, schema, *, name="aieo_reading", timeout=120):
                 # A 4xx response did not generate an answer; 5xx is uncertain.
                 if 400 <= response.status_code < 500:
                     state["calls"][slot]["cost_usd"] = 0
-                if not transient:
+                # A malformed item/schema is local to that request. Do not poison
+                # the shared ledger and skip every later independent article.
+                if response.status_code in {401, 403, 404} or code == "insufficient_quota":
                     state["fatal_error"] = safe_error
             if transient and attempt < 2:
                 try:

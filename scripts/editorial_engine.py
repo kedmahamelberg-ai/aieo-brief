@@ -102,7 +102,11 @@ def draft_schema(sources,kind):
   schema['properties']['claim_status']['enum']=['study']
   schema['properties']['limitation']['minLength']=1
   quotes=research_quotes(sources)
-  if quotes:schema['properties']['support']['items']['properties']['quote']['enum']=quotes
+  if quotes:
+   support=schema['properties']['support']['items']
+   support['properties'].pop('quote')
+   support['properties']['quote_id']={'type':'integer','enum':list(range(len(quotes)))}
+   support['required']=['field','source_number','quote_id']
  return schema
 
 def normalized(value):return re.sub(r'\s+',' ',str(value or '')).strip()
@@ -229,8 +233,10 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  prompt+='Character limits per text field: '+json.dumps(FIELD_LIMITS)+'\n'
  if kind in ('preprint','abstract'):prompt+='This is abstract-only research. claim_status must be study. State the abstract-only scope and, where applicable, preprint status in limitation.\n'
  schema=draft_schema(sources,kind)
+ quote_options=research_quotes(sources) if kind in ('preprint','abstract') else []
+ if quote_options:prompt+='EXACT PRIVATE SUPPORT CATALOG (choose quote_id): '+json.dumps(dict(enumerate(quote_options)),ensure_ascii=False)+'\n'
  if kind in ('preprint','abstract'):
-  prompt+='For private support, select a relevant exact passage from the permitted quote options in the schema. Do not rewrite, combine, shorten or translate it. The source_number must match the passage. Write a short explanation of the problem, approach and reported result in everyday words. Explain necessary technical terms. Do not fill space with unsupported benefits.\n'
+  prompt+='For private support, select the quote_id of a relevant exact passage from the numbered catalog. The source_number must match the passage. Do not reproduce the quote in your public writing. Write a short explanation of the problem, approach and reported result in everyday words. Explain necessary technical terms. Do not fill space with unsupported benefits.\n'
  prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nFIXED INDEPENDENT AXES (do not override): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
@@ -241,6 +247,12 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    feedback=('\nRevise because: '+getattr(last,'feedback',str(last)) if last else '')
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
    draft=call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft')
+   if quote_options:
+    for support in draft.get('support',[]):
+     if isinstance(support,dict) and 'quote_id' in support:
+      index=support.pop('quote_id')
+      if type(index) is not int or not 0<=index<len(quote_options):raise ValueError('Draft cites unsupported source text.')
+      support['quote']=quote_options[index]
    draft=validate_draft(draft,sources,kind)
    scope=review_scope(draft,compiled,deadline)
    return draft,{'engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
