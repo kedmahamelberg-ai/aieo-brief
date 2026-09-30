@@ -32,5 +32,42 @@
         }
       ]
     }
+  },
+  "paper:22fdd436cf5247440f1a28ae": {
+    "metadata_sha256": "705add28fbf30fdcbaf490655715c6fba134aba9d346db8b54b1f3b46f692d7f",
+    "evidence_scope": "paper_text",
+    "paper_text_sha256": "336f663338d85ada383f3ef0a78a0dcc1e90911b8014defc1c15a030778b86ea",
+    "draft": {
+      "editorial_headline": "Training helps an AI image maker spot and repair its mistakes",
+      "editorial_deck": "Researchers tested whether an image-generating model could improve its own work instead of relying on a separate critic.",
+      "what_happened": "The team trained one AI model to inspect an image, describe mistakes and try a repair. Rewarding successful repairs improved its performance on image-generation tests. Much of the gain came from choosing better fixes, rather than making a better first image.",
+      "why_it_matters": "For a design team, the idea is an image tool that catches a missing object before a person reviews the draft. That application has not been tested here.",
+      "for_humans": "",
+      "for_ai": "",
+      "body_paragraphs": [
+        "The same model writes the correction and redraws the image. A separate checking system helps during training, but is not needed when the trained model is used.",
+        "Self-checking still makes mistakes, and additional repair rounds require computing time. Would the improved draft justify that extra processing in your workflow?"
+      ],
+      "claim_status": "study",
+      "limitation": "This preprint tests one model and selected tasks. It does not establish dependable performance on everyday business work.",
+      "support": [
+        {
+          "field": "editorial_headline",
+          "source_number": 1,
+          "quote_id": 15
+        },
+        {
+          "field": "what_happened",
+          "source_number": 1,
+          "quote_id": 28
+        },
+        {
+          "field": "why_it_matters",
+          "source_number": 1,
+          "quote_id": 6
+        }
+      ]
+    },
+    "support_catalog_sha256": "95ff8a751099f8be2f1638a28baacb081dd88f44c55375f0f2c86ae7b03c955b"
   }
 }
