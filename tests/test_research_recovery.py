@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import research_recovery as recovery
 from research_pdf import abstract_from_text
+from research_reading import READING_VERSION
 import editorial_engine as engine
 from generate_research_summaries import merge_recent
 
@@ -73,7 +74,7 @@ class ResearchRecovery(unittest.TestCase):
                 rows, status = recovery.recover_unfinished(root, [], Mock())
             self.assertEqual(rows, [paper])
             self.assertEqual(status['unavailable'], 1)
-            (root / 'data/research/public.json').write_text(json.dumps({'papers': [{**paper, 'has_editorial': True}]}))
+            (root / 'data/research/public.json').write_text(json.dumps({'papers': [{**paper, 'has_editorial': True, 'research_reading_version': READING_VERSION, 'evidence_scope':'paper_text'}]}))
             self.assertEqual(recovery.unfinished(root), [])
 
     def test_repaired_old_paper_reaches_archive_build(self):
