@@ -48,6 +48,20 @@ def accepted_review():
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_editorial_seed_still_requires_validation_and_scope_review(self):
+        draft, sources = fixture()
+        with patch.object(engine, 'call_json', return_value=accepted_review()) as model:
+            result, proof = engine.write_story({'draft_seed': draft}, {}, sources, kind='preprint')
+        self.assertEqual(result['what_happened'], draft['what_happened'])
+        self.assertEqual(proof['draft_origin'], 'reviewed_editorial_seed')
+        self.assertEqual(model.call_args.kwargs['stage'], 'scope_review')
+        bad = copy.deepcopy(draft)
+        bad['what_happened'] = 'The study included 999 people.'
+        with patch.object(engine, 'call_json', side_effect=[draft, accepted_review()]) as model:
+            result, proof = engine.write_story({'draft_seed': bad}, {}, sources, kind='preprint')
+        self.assertEqual(result['what_happened'], draft['what_happened'])
+        self.assertEqual(proof['draft_origin'], 'model')
+
     def test_absent_dimensions_do_not_force_an_invented_effect(self):
         for field in ('for_humans', 'for_ai'):
             draft, sources = fixture()
