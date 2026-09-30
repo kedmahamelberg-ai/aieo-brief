@@ -7,6 +7,15 @@ from research_reading import extract_paper, needs_upgrade, READING_VERSION, allo
 import editorial_engine as engine
 
 class FullPaperReading(unittest.TestCase):
+    def test_direct_paper_reading_retains_the_last_page(self):
+        text='A complete evidence sentence. '*3400+'Final-page limitation.'
+        sources=[{'source_number':1,'evidence':text,'evidence_basis':'paper_text'}]
+        with patch.object(engine.ai_runtime,'uses_openai',return_value=True):
+            compiled,trace=engine.compile_evidence(sources)
+        self.assertEqual(compiled,sources)
+        self.assertIn('Final-page limitation.',compiled[0]['evidence'])
+        self.assertFalse(trace)
+
     def test_every_page_is_read_and_identity_checked(self):
         pages=[Mock(),Mock(),Mock()]
         for i,p in enumerate(pages):p.extract_text.return_value=('Study title\n' if not i else '')+('Evidence about methods and results. '*60)
