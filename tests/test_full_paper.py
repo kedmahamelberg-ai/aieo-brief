@@ -3,11 +3,19 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf
+from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf, style_problem
 import editorial_engine as engine
 from validate_public_site import validate_research_reading
 
 class FullPaperReading(unittest.TestCase):
+    def test_practitioner_style_rejects_unexplained_shorthand_and_vague_titles(self):
+        self.assertTrue(style_problem({'headline':'Native RL boosts repair rates','what_happened':'SFT was compared with RL.'}))
+        self.assertTrue(style_problem({'headline':'Unified models improve readiness'}))
+        self.assertFalse(style_problem({'headline':'Training helps an AI image maker repair its mistakes',
+                                      'what_happened':'The model learned through rewards for successful repairs.'}))
+        self.assertTrue(needs_upgrade({'has_editorial':True,'research_reading_version':READING_VERSION,
+                                       'evidence_scope':'paper_text','headline':'Native RL boosts repair rates'}))
+
     def test_publication_accepts_verified_paper_reading_but_rejects_false_labels(self):
         paper={'evidence_scope':'paper_text','limitation':'Lab results only.',
                'full_text_status':'read','paper_pages':36,'paper_text_sha256':'a'*64,
