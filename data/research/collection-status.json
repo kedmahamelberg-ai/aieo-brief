@@ -57,31 +57,7 @@
       "institutions": 0
     },
     {
-      "key": "paper:f2dff715da7f13e829ff9f32",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
       "key": "paper:d0a4e59e87ffb282eae1e762",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:b71c83b23e17c06b500ce184",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:8c434a5d9bb28111b2a8a371",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:49c57c8551a5c19a7054f474",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
@@ -118,12 +94,6 @@
     },
     {
       "key": "paper:512408022e433328407a59ff",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:4c52d9d35cbcdc947d90efee",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
@@ -616,7 +586,7 @@
     }
   ],
   "recovery": {
-    "recovered": 93,
+    "recovered": 88,
     "unavailable": 0
   }
 }
