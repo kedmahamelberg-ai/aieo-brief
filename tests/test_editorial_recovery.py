@@ -48,6 +48,18 @@ def accepted_review():
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_research_readability_edit_is_checked_against_original_source(self):
+        draft,sources=fixture()
+        technical=copy.deepcopy(draft)
+        technical['editorial_headline']='Native RL highlights musician concerns'
+        edited={k:v for k,v in draft.items() if k!='support'}
+        with patch.object(engine,'call_json',side_effect=[technical,edited,accepted_review()]) as model:
+            result,_=engine.write_story({}, {}, sources, kind='paper')
+        self.assertEqual(result['editorial_headline'],draft['editorial_headline'])
+        self.assertEqual(model.call_args_list[1].kwargs['stage'],'reading_level')
+        self.assertEqual(model.call_args_list[2].kwargs['stage'],'scope_review')
+        self.assertIn(sources[0]['evidence'],model.call_args_list[2].args[0])
+
     def test_editorial_seed_still_requires_validation_and_scope_review(self):
         draft, sources = fixture()
         with patch.object(engine, 'call_json', return_value=accepted_review()) as model:
