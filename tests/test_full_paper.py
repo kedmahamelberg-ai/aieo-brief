@@ -18,11 +18,12 @@ class FullPaperReading(unittest.TestCase):
 
     def test_every_page_is_read_and_identity_checked(self):
         pages=[Mock(),Mock(),Mock()]
-        for i,p in enumerate(pages):p.extract_text.return_value=('Study title\n' if not i else '')+('Evidence about methods and results. '*60)
+        for i,p in enumerate(pages):p.extract_text.return_value=('Study title\n' if not i else '')+('Evidence about methods and results. '*60)+'\x00'
         reader=Mock(is_encrypted=False,pages=pages)
         with patch('pypdf.PdfReader',return_value=reader):
             result=extract_paper(b'%PDF-test','Study title')
             self.assertEqual(result['pages'],3)
+            self.assertNotIn('\x00',result['text'])
             self.assertIn('[PDF page 3]',result['text'])
             with self.assertRaises(ValueError):extract_paper(b'%PDF-test','Other paper')
             pages[1].extract_text.return_value=''
@@ -34,6 +35,11 @@ class FullPaperReading(unittest.TestCase):
         self.assertTrue(needs_upgrade({**row,'evidence_scope':'abstract','full_text_retry_after':'2020-01-01'}))
         self.assertFalse(needs_upgrade({**row,'evidence_scope':'abstract','full_text_retry_after':'2099-01-01'}))
         self.assertFalse(allowed_pdf('https://arxiv.org.evil.example/paper'))
+    def test_segment_ids_resolve_to_exact_evidence(self):
+        with patch.object(engine,'call_json',return_value={'note':'A supported note.','quote_ids':[0]}):
+            note,quotes=engine.read_segment('The complete source sentence describes a tested method.',None)
+        self.assertEqual(quotes,['The complete source sentence describes a tested method.'])
+
     def test_segment_quote_catalog_uses_verified_quotes_not_note_text(self):
         source={'source_number':1,'evidence':'A paraphrased note.', 'evidence_quotes':['An exact passage from the paper.']}
         self.assertEqual(engine.research_quotes([source]), source['evidence_quotes'])
