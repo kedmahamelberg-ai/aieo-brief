@@ -27,7 +27,7 @@ def extract_paper(content, title):
     reader = PdfReader(io.BytesIO(content))
     if reader.is_encrypted or not 2 <= len(reader.pages) <= 120:
         raise ValueError('unsupported_pdf')
-    pages = [unicodedata.normalize('NFKC', p.extract_text() or '') for p in reader.pages]
+    pages = [re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', unicodedata.normalize('NFKC', p.extract_text() or '')) for p in reader.pages]
     normal = lambda s: re.sub(r'\W+', '', s).casefold()
     if normal(title) not in normal(pages[0]):
         raise ValueError('paper_identity_mismatch')
