@@ -236,7 +236,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  quote_options=research_quotes(sources) if kind in ('preprint','abstract') else []
  if quote_options:prompt+='EXACT PRIVATE SUPPORT CATALOG (choose quote_id): '+json.dumps(dict(enumerate(quote_options)),ensure_ascii=False)+'\n'
  if kind in ('preprint','abstract'):
-  prompt+='For private support, select the quote_id of a relevant exact passage from the numbered catalog. The source_number must match the passage. Do not reproduce the quote in your public writing. Write a short explanation of the problem, approach and reported result in everyday words. Explain necessary technical terms. Do not fill space with unsupported benefits.\n'
+  prompt+='For private support, select the quote_id of a relevant exact passage from the numbered catalog. The source_number must match the passage. Do not reproduce the quote in your public writing. Write a short explanation of the problem, approach and reported result in everyday words. Explain necessary technical terms. Omit equations and symbolic notation; explain mathematical results in ordinary words. Describe the assumptions in your own words rather than copying a technical list from the abstract. Do not fill space with unsupported benefits.\n'
  prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nFIXED INDEPENDENT AXES (do not override): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
