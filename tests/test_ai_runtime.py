@@ -35,6 +35,16 @@ class AIRuntime(unittest.TestCase):
             self.assertEqual(ai.resolve_policy(datetime(2026,12,10,tzinfo=timezone.utc))['model'],'gpt-5.6-luna')
             self.assertEqual(ai.resolve_policy(datetime(2027,1,1,tzinfo=timezone.utc))['model'],'gpt-5.6-luna')
 
+    def test_large_paper_request_is_explicit_and_still_bounded(self):
+        messages=[{'role':'user','content':'evidence '*28000}]
+        with patch.object(ai.requests,'post',return_value=self.response()) as post:
+            with self.assertRaises(ai.AIError):ai.completion(messages,self.schema)
+            post.assert_not_called()
+            ai.completion(messages,self.schema,max_request_bytes=384000)
+            self.assertEqual(post.call_count,1)
+            with self.assertRaises(ai.AIError):ai.completion([{'role':'user','content':'x'*400000}],self.schema,max_request_bytes=999999)
+            self.assertEqual(post.call_count,1)
+
     def test_key_missing_stops_before_network_or_ledger(self):
         with patch.dict(os.environ, {'OPENAI_API_KEY':''}), patch.object(ai.requests,'post') as post:
             with self.assertRaises(ai.AIError):ai.completion(self.messages,self.schema)

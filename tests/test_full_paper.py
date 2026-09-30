@@ -8,7 +8,7 @@ import editorial_engine as engine
 
 class FullPaperReading(unittest.TestCase):
     def test_direct_paper_reading_retains_the_last_page(self):
-        text='A complete evidence sentence. '*3400+'Final-page limitation.'
+        text='A complete evidence sentence. '*6500+'Final-page limitation.'
         sources=[{'source_number':1,'evidence':text,'evidence_basis':'paper_text'}]
         with patch.object(engine.ai_runtime,'uses_openai',return_value=True):
             compiled,trace=engine.compile_evidence(sources)
