@@ -3569,6 +3569,27 @@
       },
       "output_sha256": "7620b92ada974c5ba79aaac463ee12cd7f4c617f6de319f1e679c6110fb7ca00",
       "policy": "brief-english-display-v1"
+    },
+    "f62f56c0deee18910ebbea1b52f1bd71a28b67665b09f27e6964c236256f68ed": {
+      "english": {
+        "0": "A government agency announced registration for three mobile AI services, including YOYO Claw, to align with regulatory requirements and managed deployment rules. The notice emphasizes filing information and ongoing oversight rather than performance or reach.",
+        "1": "A government notice confirms that three AI services operating on mobile devices have filed registration information to comply with national rules. The announcement emphasizes steps to foster safe, orderly deployment under the governing measures, but it stops short of broad claims about performance or reach.\nThe report focuses on regulatory actions rather than user outcomes, emphasizing procedural compliance over market success, and naming the specific services rather than extrapolating to all mobile AI offerings.",
+        "2": "Office of the Central Cyberspace Security and Informatization Commission",
+        "3": "Office of the Central Cyberspace Security and Informatization Commission"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e983d75263f165e393bfa726e327705ec156f26918a158b1d0ad055e63bf4dab",
+      "policy": "brief-english-display-v1"
     }
   }
 }
