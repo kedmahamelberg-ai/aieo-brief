@@ -52,7 +52,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-07",
       "paper_pages": 27,
-      "paper_text_sha256": "9fc0fab4edea13fdba5652e05bb434ff5c72f011b3f004f5ea1e3af152905bff"
+      "paper_text_sha256": "9fc0fab4edea13fdba5652e05bb434ff5c72f011b3f004f5ea1e3af152905bff",
+      "affiliation_checked_at": "2026-09-30T13:12:11.472796+00:00"
     },
     {
       "key": "paper:e2bd24c4c766c3e8d5a05aa1",
@@ -302,7 +303,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-07",
       "paper_pages": 25,
-      "paper_text_sha256": "521c43ad04d895a39804d3e77a1e273bbda7524d9ebe757d89d63d6bca08522c"
+      "paper_text_sha256": "521c43ad04d895a39804d3e77a1e273bbda7524d9ebe757d89d63d6bca08522c",
+      "affiliation_checked_at": "2026-09-30T13:12:11.472796+00:00"
     },
     {
       "key": "paper:f2dff715da7f13e829ff9f32",
