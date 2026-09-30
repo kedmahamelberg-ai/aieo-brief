@@ -2,7 +2,7 @@
   "schema_version": "aieo_research_public_v1",
   "period_start": "2026-09-24",
   "period_end": "2026-09-30",
-  "generated_at": "2026-09-30T11:08:21.506578+00:00",
+  "generated_at": "2026-09-30T11:13:01.130714+00:00",
   "papers": [
     {
       "key": "paper:f8824ad6f5a66310cd22ea3e",
@@ -23,8 +23,8 @@
         "Ying Wei"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-30T11:07:56.515288+00:00",
-      "source_verified_at": "2026-09-30T11:07:56.515288+00:00",
+      "affiliation_checked_at": "2026-09-30T11:12:26.128404+00:00",
+      "source_verified_at": "2026-09-30T11:12:26.128404+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -63,8 +63,8 @@
         "Fabio Caraffini"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-30T11:07:56.515288+00:00",
-      "source_verified_at": "2026-09-30T11:07:56.515288+00:00",
+      "affiliation_checked_at": "2026-09-30T11:12:26.128404+00:00",
+      "source_verified_at": "2026-09-30T11:12:26.128404+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -104,8 +104,8 @@
         "Yang Gao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-30T11:07:56.515288+00:00",
-      "source_verified_at": "2026-09-30T11:07:56.515288+00:00",
+      "affiliation_checked_at": "2026-09-30T11:12:26.128404+00:00",
+      "source_verified_at": "2026-09-30T11:12:26.128404+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -154,8 +154,8 @@
         "Sunghwan Hong"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-30T11:07:56.515288+00:00",
-      "source_verified_at": "2026-09-30T11:07:56.515288+00:00",
+      "affiliation_checked_at": "2026-09-30T11:12:26.128404+00:00",
+      "source_verified_at": "2026-09-30T11:12:26.128404+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -204,8 +204,8 @@
         "Ion Stoica"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-30T11:07:56.515288+00:00",
-      "source_verified_at": "2026-09-30T11:07:56.515288+00:00",
+      "affiliation_checked_at": "2026-09-30T11:12:26.128404+00:00",
+      "source_verified_at": "2026-09-30T11:12:26.128404+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -248,8 +248,8 @@
         "Xun Gao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-30T11:07:56.515288+00:00",
-      "source_verified_at": "2026-09-30T11:07:56.515288+00:00",
+      "affiliation_checked_at": "2026-09-30T11:12:26.128404+00:00",
+      "source_verified_at": "2026-09-30T11:12:26.128404+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",

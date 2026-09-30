@@ -6,16 +6,20 @@
   "unchanged": 6,
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "failure_counts": {
-    "source_wording_copied": 1
+    "source_scope_review_failed": 1
   },
   "failed_items": [
     {
       "key": "paper:2410f94842a200f9eaa301ee",
       "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v5-research-support",
+      "failed_checks": [
+        "headline_supported",
+        "population_preserved"
+      ]
     }
   ],
-  "updated_at": "2026-09-30T11:08:21.511767+00:00"
+  "updated_at": "2026-09-30T11:13:01.135408+00:00"
 }
