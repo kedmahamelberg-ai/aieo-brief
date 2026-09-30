@@ -1,5 +1,8 @@
 name: Update Brief News and Research
 on:
+  push:
+    branches: [main]
+    paths: ['scripts/research_recovery.py', 'scripts/collect_research.py', 'scripts/generate_research_summaries.py', 'scripts/editorial_engine.py']
   workflow_call:
     inputs:
       news_only:
@@ -9,6 +12,10 @@ on:
     - cron: '15 12 * * *'
   workflow_dispatch:
     inputs:
+      research_only:
+        description: Repair research without spending the shared writing budget on news
+        type: boolean
+        default: false
       dry_run:
         description: Check pending work without starting the model
         type: boolean
@@ -61,6 +68,7 @@ jobs:
         run: python scripts/ai_runtime.py --export
       - name: Check release and pending news before loading the model
         id: news
+        if: inputs.research_only != true && github.event_name != 'push'
         continue-on-error: true
         run: python scripts/generate_editorial_stories.py --dry-run
       - name: Check research published in the last seven days
@@ -91,7 +99,7 @@ jobs:
         if: inputs.dry_run != true && steps.collect.outcome == 'success'
         continue-on-error: true
         env:
-          RESEARCH_MINUTES: ${{ inputs.research_minutes || '15' }}
+          RESEARCH_MINUTES: ${{ inputs.research_minutes || (github.event_name == 'push' && '60') || '15' }}
         run: python scripts/generate_research_summaries.py --max-runtime-minutes "$RESEARCH_MINUTES"
       - name: Retain public summaries and resumable progress
         if: always() && inputs.dry_run != true
