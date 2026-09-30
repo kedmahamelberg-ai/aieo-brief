@@ -4,6 +4,7 @@ Private evidence/support quotes are retained in generation metadata, never in th
 from __future__ import annotations
 import json,os,re,time,hashlib,copy,functools
 import ai_runtime
+from research_reading import style_problem
 import requests
 from source_evidence_quality import evidence_chunks
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
@@ -229,7 +230,9 @@ def validate_draft(d,sources,kind='news'):
  if numbers(public)-numbers(' '.join(s['evidence']+' '+s.get('headline','') for s in sources)):raise ValueError('Draft introduces a numeric value that is not present in the sources.')
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
  if kind in ('preprint','abstract','paper') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')
- if kind=='paper':
+ if kind in ('preprint','abstract','paper'):
+  problem=style_problem(d)
+  if problem:raise ValueError(problem)
   quick=' '.join(d[k] for k in ('what_happened','why_it_matters','limitation'))
   if len(quick.split())>110 or len((quick+' '+' '.join(d['body_paragraphs'])).split())>200:raise ValueError('Research is too long: keep the quick overview within 110 words and the full brief within 200 words.')
  return {k:([x.replace('—',',').strip() for x in v] if k=='body_paragraphs' else v.replace('—',',').strip() if isinstance(v,str) else v) for k,v in d.items()}
@@ -267,6 +270,8 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
   prompt+='RESEARCH READER CONTRACT: Write for practitioners with high-school education and some IT experience, across business, public services, government and other organizations. Use everyday English, short sentences and no unexplained acronyms. The title must say the useful finding in 8-14 plain words; avoid method names and boilerplate such as with limits. The deck states the problem. what_happened (35-50 words) combines the problem, approach and key finding. why_it_matters (20-35 words) explains a practical decision and, if useful, one small example clearly framed as hypothetical, not a tested deployment or promised benefit. limitation (15-25 words) gives the main uncertainty. Together these three fields form a complete 30-second overview of the whole evidence. body_paragraphs adds ONLY two short paragraphs of 25-40 words each: useful method/result context and a practical implication or trade-off. Full brief including the quick overview must stay under 200 words. No repetition, equations, benchmark lists or promotional claims. At most one short reflective question, only when it helps readers consider a real evidence-grounded trade-off; do not force one into every story. Never infer practical effectiveness from a laboratory score.\n'
   if kind=='paper':prompt+='You have the complete extracted PDF text, or verified notes covering every text segment. Read beyond the abstract: methods, results, discussion and limitations. Publication stage: '+str(event.get('research_label','Research'))+'. Preserve that stage. This is a paper-TEXT reading, not visual inspection: do not infer values from unextracted charts or images. Do not call the reading abstract-only.\n'
  prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nFIXED INDEPENDENT AXES (do not override): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
+ if kind in ('preprint','abstract','paper'):
+  prompt+='\nEND OF SOURCE MATERIAL. Now write for a busy practitioner, not a researcher. Use ordinary words in the title; no method names or unfamiliar acronyms. Replace technical shorthand throughout (for example, say training with rewards rather than RL, and training on examples rather than SFT). Use one concrete, explicitly hypothetical work example when useful. Explain the actual finding and the main uncertainty. Keep both reading views complete and the full brief below 200 words.\n'
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
  if cjk*2+(len(prompt)-cjk)/3>((120000 if kind=='paper' else 65000) if ai_runtime.uses_openai() else 9000):raise ValueError('Complete evidence exceeds the model context budget.')

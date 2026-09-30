@@ -11,7 +11,7 @@ READING_VERSION = 'paper-practitioner-v1'
 
 
 def needs_upgrade(row):
-    return (not row.get('has_editorial') or row.get('research_reading_version') != READING_VERSION
+    return (not row.get('has_editorial') or bool(style_problem(row)) or row.get('research_reading_version') != READING_VERSION
             or (row.get('evidence_scope') != 'paper_text' and row.get('full_text_retry_after', '9999') <= date.today().isoformat()))
 
 
@@ -71,3 +71,15 @@ def read_paper(paper):
         return {'status': 'pdf_unavailable'}
     except Exception:
         return {'status': 'pdf_text_unreadable'}
+
+
+def style_problem(row):
+    """Reader-facing research must not require an unexplained acronym glossary."""
+    title=row.get('editorial_headline',row.get('headline',''))
+    public=' '.join(str(row.get(k,'')) for k in ('editorial_headline','headline','editorial_deck','deck','what_happened','why_it_matters','limitation'))+' '+' '.join(row.get('body_paragraphs',[]))
+    acronyms=set(re.findall(r'\b[A-Z][A-Z0-9-]{1,}\b',public))-{'AI','IT','API','GPU','CPU','PDF','EU','UK','US','USA','UN','NASA'}
+    if public.count('?')>1:return 'Use at most one reflective question across the entire brief.'
+    if acronyms:return 'Replace unexplained acronyms with everyday words throughout: '+', '.join(sorted(acronyms))
+    if re.search(r'\b(native|unified|readiness|benchmark|paradigm|latent|quantization|distillation)\b|with (?:limits|caveats)|abstract.only',title,re.I):
+        return 'Rewrite the title around the concrete finding in ordinary words, without method jargon or boilerplate about limits.'
+    return ''

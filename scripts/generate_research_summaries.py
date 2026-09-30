@@ -10,7 +10,7 @@ from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
 from brief_contract import PROMPT_VERSION,digest,safe_url
-from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
+from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION,research_quotes
 ROOT=Path(__file__).resolve().parents[1]
 PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256','pdf_url','abstract_source_url','abstract_format')
 
@@ -83,7 +83,7 @@ def main():
             seeds=json.loads(seed_path.read_text()) if seed_path.exists() else {}
             seed=seeds.get(p['key'],{})
             event={'event_title':p['original_headline'],'research_label':p.get('research_label','Research')}
-            if not full and seed.get('metadata_sha256')==p['metadata_sha256']:event['draft_seed']=seed.get('draft')
+            if seed.get('metadata_sha256')==p['metadata_sha256'] and ((not full and seed.get('evidence_scope','abstract')=='abstract') or (full and seed.get('paper_text_sha256')==reading['text_sha256'] and seed.get('support_catalog_sha256')==digest(research_quotes(sources)))):event['draft_seed']=seed.get('draft')
             draft,proof=write_story(event,{},sources,kind=kind,deadline=deadline)
             record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the paper' if full else 'Summary of the abstract (from PDF)' if p.get('abstract_format')=='pdf' else 'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
             record.update(research_reading_version=READING_VERSION,evidence_scope='paper_text' if full else 'abstract',full_text_status=reading['status'],full_text_retry_after=(date.today()+timedelta(days=7)).isoformat())
