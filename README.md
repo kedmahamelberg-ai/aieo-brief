@@ -36,6 +36,7 @@ npm run test:database
 - The daily 12:15 UTC job checks for unfinished news and research published in the last seven days before loading its local model.
 - Successful news versions are saved individually to Supabase. A failed draft retains its source link, and subsequent passes prioritise less-attempted items.
 - Daily default writing budgets are 45 minutes for news and 15 for research. A no-change pass does not download/start the model. GitHub runner minutes still apply.
+- Unfinished published research is rechecked by its exact arXiv version or DOI, including archived papers outside the discovery window. Abstract summaries select exact private support passages and still pass the original accuracy checks. Failed refreshes preserve validated summaries when the evidence is unchanged.
 - Research collection uses the arXiv and Crossref APIs, with a maximum of six selected records per source per week. It is a selection, not an exhaustive review of AI science. PNAS/SSRN records without abstracts keep their original titles and links.
 - Every generation pass triggers a fresh validated website build. GitHub Pages deployment is enabled by the `BRIEF_PUBLISH=true` repository variable after Pages is configured.
 - The archive preserves story URLs and discussion keys. A separate 04:00 UTC job expires detailed reading sessions after 90 days.
