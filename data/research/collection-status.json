@@ -22,7 +22,7 @@
   "affiliation_enrichment": [
     {
       "key": "paper:9c39fe4a53c10bbeec14a350",
-      "status": "unavailable",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
@@ -57,48 +57,6 @@
       "institutions": 0
     },
     {
-      "key": "paper:f2dff715da7f13e829ff9f32",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:d0a4e59e87ffb282eae1e762",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:b71c83b23e17c06b500ce184",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:49c57c8551a5c19a7054f474",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:22fdd436cf5247440f1a28ae",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:e8236a8307e332e347cd8ce0",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:98c993a316ee49333a699b41",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
       "key": "paper:885f7850edf3b73b9fa79d59",
       "status": "cached",
       "source_verified": true,
@@ -111,31 +69,7 @@
       "institutions": 0
     },
     {
-      "key": "paper:4c52d9d35cbcdc947d90efee",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:bb8616d7fdcc329289fc5a8e",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
       "key": "paper:a656b205117891f6802c2ff4",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:89b82eaa3cf98db4130d7dd1",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:7d119f27477a53a853493825",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
@@ -143,18 +77,6 @@
     {
       "key": "paper:6559977218176f1a059832b2",
       "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:274dbbba68ea40f846544cfe",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:ee0a18630f85eb0baaab3868",
-      "status": "unavailable",
       "source_verified": true,
       "institutions": 0
     },
@@ -169,24 +91,6 @@
       "status": "cached",
       "source_verified": true,
       "institutions": 1
-    },
-    {
-      "key": "paper:afd9c531da091aca39b7d1e3",
-      "status": "cached",
-      "source_verified": false,
-      "institutions": 3
-    },
-    {
-      "key": "paper:917abed9d2411e8863148866",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:22b011bcac2b8544080f0790",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
     },
     {
       "key": "paper:9d60118f276a36f57f3b6c0a",
@@ -484,7 +388,7 @@
     }
   ],
   "recovery": {
-    "recovered": 71,
+    "recovered": 55,
     "unavailable": 0
   }
 }
