@@ -27,6 +27,17 @@ def inspect_json(value):
    inspect_json(v)
  elif isinstance(value,list):
   for v in value:inspect_json(v)
+def validate_research_reading(item):
+ if not item.get('limitation') or item.get('evidence_scope') not in ('abstract','paper_text'):
+  raise ValueError('Research summary lacks evidence scope and limit')
+ if item['evidence_scope']=='paper_text':
+  if (item.get('full_text_status')!='read' or not isinstance(item.get('paper_pages'),int)
+      or item['paper_pages']<1 or not re.fullmatch(r'[0-9a-f]{64}',item.get('paper_text_sha256',''))
+      or item.get('summary_basis')!='Summary of the paper'):
+   raise ValueError('Paper summary lacks a completed, identifiable paper reading')
+ elif item.get('summary_basis')=='Summary of the paper':
+  raise ValueError('An abstract must not be labelled as a paper reading')
+
 def validate(site):
  if not site.exists():raise ValueError('No built website')
  payload=json.loads((site/'data/current.json').read_text());inspect_json(payload)
@@ -49,7 +60,7 @@ def validate(site):
  for item in news+papers+culture:
   if not item['sources'] or len(item['sources'])!=item['source_count']:raise ValueError('Missing or inconsistent source list')
   if not (site/item['path']).is_file():raise ValueError('Story page missing')
-  if item['kind']=='research' and item['has_editorial'] and (not item['limitation'] or item.get('evidence_scope')!='abstract'):raise ValueError('Research summary lacks evidence scope and limit')
+  if item['kind']=='research' and item['has_editorial']:validate_research_reading(item)
   if item['kind']=='culture':
    if not item.get('creator') or not item.get('creator_origin') or not item.get('rights',{}).get('url') or not item.get('work_date'):raise ValueError('Culture attribution missing')
    if item['date']!=item['selected_on']:raise ValueError('Selection date changed')
