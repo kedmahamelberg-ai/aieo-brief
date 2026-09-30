@@ -95,11 +95,11 @@
       "research": {
         "kind": "research",
         "eyebrow": "THE RESEARCH COMPASS",
-        "title": "Research turns toward agents and coordination and training and efficiency",
-        "deck": "The selected papers point in two directions: agents and coordination and training and efficiency.",
-        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Reanalysis of 74 studies shows learning opportunities and explanations matter; mixed outcomes. Hasso Plattner Institute, University of Potsdam, Stanford University: An abstract study introduces AICO, a non-retraining, statistically principled method to identify feature influence in AI models, while noting scope… Georgia Institute of Technology: A preliminary arXiv preprint evaluates design choices and reports high accuracy in a specific task.",
+        "title": "Research turns toward agents and coordination and reliability and evaluation",
+        "deck": "The selected papers point in two directions: agents and coordination and reliability and evaluation.",
+        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Abstract-only findings show learning features shape how well people and AI cooperate, with effects not guaranteed across settings. Hasso Plattner Institute, University of Potsdam, Stanford University: AICO introduces a method to test which features influence predictions without retraining, aiming for trustworthy AI,yet the work is abstract-only. Georgia Institute of Technology: A comparison of training methods finds contrastive learning often beats binary classification on PAN21 data, with context length and data…",
         "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
-        "word_count": 99,
+        "word_count": 111,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
         "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
@@ -110,9 +110,9 @@
         "papers": [
           {
             "key": "paper:8778a5cfae74250c006dc1f6",
-            "headline": "Abstract-Only Evidence: Human Learning Could Boost Human–AI Synergy, But Gains Vary",
+            "headline": "Humans Learning Can Boost Human–AI Synergy, but Context Matters",
             "original_headline": "Human learning is an understudied but promising lever for boosting human–AI synergy",
-            "deck": "Reanalysis of 74 studies shows learning opportunities and explanations matter; mixed outcomes.",
+            "deck": "Abstract-only findings show learning features shape how well people and AI cooperate, with effects not guaranteed across settings.",
             "authors": [
               "Julian Berger",
               "Jason W. Burton",
@@ -139,15 +139,15 @@
             "publisher": "PNAS",
             "label": "Journal article",
             "date": "2026-09-21",
-            "theme": "human interaction and creativity",
+            "theme": "reasoning and memory",
             "source_verified_at": "",
             "affiliation_source_url": "https://openalex.org/W7213950595"
           },
           {
             "key": "paper:afd9c531da091aca39b7d1e3",
-            "headline": "AICO Feature Significance Tests Spell Out Which Features Drive AI Predictions, With Limits",
+            "headline": "AICO Finds Feature Testing Boosts Transparency, but Scope Remains Abstract",
             "original_headline": "AICO: Feature significance tests for supervised learning",
-            "deck": "An abstract study introduces AICO, a non-retraining, statistically principled method to identify feature influence in AI models, while noting scope and limitations.",
+            "deck": "AICO introduces a method to test which features influence predictions without retraining, aiming for trustworthy AI,yet the work is abstract-only.",
             "authors": [
               "Kay Giesecke",
               "Enguerrand Horel",
@@ -170,9 +170,9 @@
           },
           {
             "key": "paper:e3bbbfd1a0ea82e4c41cefe1",
-            "headline": "Abstract-only preprint claims contrastive learning outperforms classification in authorship verification (with limits)",
+            "headline": "Contrastive Learning Outperforms Classification for PAN21 Authorship Verification, Claims by Kirby",
             "original_headline": "Contrastive Learning for Authorship Verification",
-            "deck": "A preliminary arXiv preprint evaluates design choices and reports high accuracy in a specific task.",
+            "deck": "A comparison of training methods finds contrastive learning often beats binary classification on PAN21 data, with context length and data augmentation shaping outcomes.",
             "authors": [
               "Peter Kirby"
             ],
@@ -185,7 +185,7 @@
             "publisher": "arXiv",
             "label": "arXiv version · journal reference supplied",
             "date": "2026-09-23",
-            "theme": "new methods and evidence",
+            "theme": "reasoning and memory",
             "source_verified_at": "2026-09-24T17:09:16.600960+00:00",
             "affiliation_source_url": "https://openalex.org/W7213745193"
           }
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "11ffe108a4bd1c219c673defeb010cdbbc01163f554680dc01e8e0a31b9480c0"
+      "content_sha256": "d918db0a0c6dd9c012e268499dd6315c047a30e68a5f09222534234868ab3307"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
