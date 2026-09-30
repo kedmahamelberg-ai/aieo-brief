@@ -241,10 +241,10 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
  if cjk*2+(len(prompt)-cjk)/3>(65000 if ai_runtime.uses_openai() else 9000):raise ValueError('Complete evidence exceeds the model context budget.')
- last=None;draft=None
- for attempt in range(3):
+ last=None;draft=None;corrections=[]
+ for attempt in range(5 if kind in ('preprint','abstract') else 3):
   try:
-   feedback=('\nRevise because: '+getattr(last,'feedback',str(last)) if last else '')
+   feedback=('\nCorrect ALL previously identified problems:\n'+'\n'.join(corrections) if corrections else '')
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
    draft=call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft')
    if quote_options:
@@ -256,5 +256,8 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    draft=validate_draft(draft,sources,kind)
    scope=review_scope(draft,compiled,deadline)
    return draft,{'engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
-  except (ValueError,requests.RequestException) as e:last=e
+  except (ValueError,requests.RequestException) as e:
+   last=e
+   correction=getattr(e,'feedback',str(e))
+   if correction not in corrections:corrections.append(correction)
  raise last
