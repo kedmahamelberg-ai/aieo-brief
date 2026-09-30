@@ -55,7 +55,7 @@ def crossref(source,start,end,limit):
   licenses=[x.get('URL','') for x in row.get('license') or []]
   oa=any('creativecommons.org/licenses/' in u or 'creativecommons.org/publicdomain/' in u for u in licenses)
   authors=[plain((a.get('given','')+' '+a.get('family',''))) for a in row.get('author') or []]
-  out.append({'key':identity(doi,''),'doi':doi,'arxiv_id':'','original_headline':title,'abstract':abstract,'url':'https://doi.org/'+quote(doi,safe='/'),'date':day,'authors':authors,'publisher':'PNAS' if source=='pnas' else 'SSRN','source':source,'research_label':'Journal article' if source=='pnas' else 'Working paper / preprint','evidence_scope':'abstract' if abstract else 'metadata_only','access':'Open-license record' if oa else 'Check access at source','license_urls':licenses,'metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
+  out.append({'key':identity(doi,''),'doi':doi,'arxiv_id':'','original_headline':title,'abstract':abstract,'pdf_url':next((link.get('URL','') for link in row.get('link',[]) if link.get('content-type')=='application/pdf'),''),'url':'https://doi.org/'+quote(doi,safe='/'),'date':day,'authors':authors,'publisher':'PNAS' if source=='pnas' else 'SSRN','source':source,'research_label':'Journal article' if source=='pnas' else 'Working paper / preprint','evidence_scope':'abstract' if abstract else 'metadata_only','access':'Open-license record' if oa else 'Check access at source','license_urls':licenses,'metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
   if len(out)>=limit:break
  return out
 

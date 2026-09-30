@@ -92,7 +92,9 @@ def main():
             retry.pop(p['key'],None)
             audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p['abstract'],'validation':proof,'output_sha256':digest(record)})
             print('Saved research '+p['key'],flush=True)
-        except TimeoutError:counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'})
+        except TimeoutError as error:
+            counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'})
+            if isinstance(error,ai_runtime.AIBudgetExceeded):deadline=time.monotonic()
         except Exception as e:
             counts['failed']+=1;selected.append({**fallback,'summary_status':'retrying'})
             diagnostic=failure_diagnostic(e,stage)
