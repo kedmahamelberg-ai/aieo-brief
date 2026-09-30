@@ -85,6 +85,17 @@ class EditorialRecovery(unittest.TestCase):
         self.assertIn('PREVIOUS REJECTED DRAFT', model.call_args_list[1].args[0])
         self.assertIn('263 musicians', model.call_args_list[1].args[0])
 
+    def test_research_resolves_support_ids_to_verified_source_passages(self):
+        draft, sources = fixture()
+        quotes = engine.research_quotes(sources)
+        wanted = 'A large majority raised concerns about payment.'
+        draft['support'] = [{'field': field, 'source_number': 1, 'quote_id': quotes.index(wanted)}
+                            for field in engine.SUPPORT_FIELDS]
+        with patch.object(engine, 'call_json', side_effect=[draft, accepted_review()]):
+            result, proof = engine.write_story({}, {}, sources, kind='preprint')
+        self.assertEqual(proof['support'][0]['quote'], wanted)
+        self.assertNotIn('quote_id', result['support'][0])
+
     def test_exhausted_retries_keep_the_actual_validation_reason(self):
         draft, sources = fixture()
         draft['support'][0]['quote'] = 'This quotation is absent from the source.'

@@ -78,6 +78,18 @@ class AIRuntime(unittest.TestCase):
                 self.assertNotIn('private diagnostic',str(error.exception))
             self.assertEqual(post.call_count,1)
 
+    def test_bad_request_does_not_block_the_next_independent_article(self):
+        with patch.object(ai.requests, 'post', side_effect=[
+                self.response(400, error={'code': 'invalid_json_schema', 'message': 'private schema'}),
+                self.response()]) as post:
+            with self.assertRaises(ai.AIError):
+                ai.completion(self.messages, self.schema)
+            result = ai.completion(self.messages, self.schema)
+        self.assertEqual(post.call_count, 2)
+        self.assertEqual(result['choices'][0]['finish_reason'], 'stop')
+        self.assertNotIn('fatal_error', json.loads(ai.ledger_path().read_text()))
+        self.assertNotIn('private schema', ai.ledger_path().read_text())
+
     def test_rate_limit_retries_are_bounded(self):
         with patch.object(ai.requests,'post',side_effect=[self.response(429),self.response()]) as post, patch.object(ai.time,'sleep'):
             ai.completion(self.messages,self.schema)

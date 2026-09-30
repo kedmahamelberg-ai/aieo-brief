@@ -19,7 +19,9 @@ class ResearchRecovery(unittest.TestCase):
         evidence = 'An exact sentence about the experiment. ' + 'Long evidence phrase ' * 80
         sources = [{'source_number': 1, 'evidence': evidence}]
         schema = engine.draft_schema(sources, 'preprint')
-        quotes = schema['properties']['support']['items']['properties']['quote']['enum']
+        quotes = engine.research_quotes(sources)
+        self.assertEqual(schema['properties']['support']['items']['properties']['quote_id']['enum'], list(range(len(quotes))))
+        self.assertNotIn('quote', schema['properties']['support']['items']['properties'])
         self.assertTrue(quotes)
         for quote in quotes:
             self.assertTrue(12 <= len(quote) <= 400)
