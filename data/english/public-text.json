@@ -3512,6 +3512,44 @@
       },
       "output_sha256": "f18a0e7b111dfa1abe5982164e55185ed979b18785ce48a254d515a80c4326a9",
       "policy": "brief-english-display-v1"
+    },
+    "af7fc42c53bbff1f1325b4bc3bb46d21f0c847a12ddb2a0cbf9c9220ea7fd68a": {
+      "english": {
+        "0": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization",
+        "1": "LeapQuant: Efficient Linear Attention with Accurate Recurrent State Quantization"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "88de009c5d08e78791c360337c5709b4c19e2cd1c8798640890fcb563c52b4d5",
+      "policy": "brief-english-display-v1"
+    },
+    "81254c264b16a67efb743776a854f7238a5ad7c6d5e98b32ce4a0c62b47ede99": {
+      "english": {
+        "0": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
+        "1": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "368f07d56b7fd76da7ebd49467be73934b839ae46631baa8f910582c7fcbbfd7",
+      "policy": "brief-english-display-v1"
     }
   }
 }
