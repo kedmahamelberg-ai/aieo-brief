@@ -1,0 +1,36 @@
+{
+  "paper:2410f94842a200f9eaa301ee": {
+    "metadata_sha256": "7be2acae6cc2935c0477672da96d2b4f0b60ab39f2814baf9ed93d5ec8d381ad",
+    "draft": {
+      "editorial_headline": "Preprint clarifies how many observations are needed to identify the best option",
+      "editorial_deck": "A mathematical result links the difficulty of choosing among noisy options to how closely their average outcomes are grouped.",
+      "what_happened": "The authors report a proof of the gap-entropy conjecture. It concerns choosing the option with the highest average outcome while keeping the chance of a wrong choice below a specified level.",
+      "why_it_matters": "The result describes how the required number of observations depends on both the gaps between options and how those gaps are distributed.",
+      "for_humans": "",
+      "for_ai": "",
+      "body_paragraphs": [
+        "The analysis assumes independent observations with Gaussian noise of unit variance, bounded average outcomes and exactly one best option. Its main comparison averages over every way of assigning labels to the options.",
+        "The abstract also describes a single algorithm with a related observation bound and an extra term determined by the nearest rival. These are mathematical guarantees under stated assumptions, rather than results from a real-world deployment."
+      ],
+      "claim_status": "study",
+      "limitation": "This account uses the abstract of a preprint. It does not independently check the proof, and the stated guarantees depend on the mathematical assumptions.",
+      "support": [
+        {
+          "field": "editorial_headline",
+          "source_number": 1,
+          "quote_id": 0
+        },
+        {
+          "field": "what_happened",
+          "source_number": 1,
+          "quote_id": 0
+        },
+        {
+          "field": "why_it_matters",
+          "source_number": 1,
+          "quote_id": 0
+        }
+      ]
+    }
+  }
+}
