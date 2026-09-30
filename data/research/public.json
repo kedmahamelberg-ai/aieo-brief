@@ -2,7 +2,7 @@
   "schema_version": "aieo_research_public_v1",
   "period_start": "2026-09-24",
   "period_end": "2026-09-30",
-  "generated_at": "2026-09-30T14:32:28.499382+00:00",
+  "generated_at": "2026-09-30T18:22:01.388354+00:00",
   "papers": [
     {
       "key": "paper:f8824ad6f5a66310cd22ea3e",
@@ -2701,19 +2701,19 @@
       "abstract_source_url": "https://arxiv.org/abs/2609.20816v1",
       "abstract_format": "html",
       "has_editorial": true,
-      "headline": "Paint-Anything shows hex-color control by ByteDance with limits and room to grow",
-      "deck": "A new model aims to let users specify exact colors (via 24-bit hex values) for both generating and editing images, but with careful training choices and known limits.",
-      "what_happened": "Paint-Anything was trained on Paint-500K data, using object-level hex supervision and high-noise gated pure-color anchors. It jointly learns generation and editing in one model and reports major gains on color fidelity benchmarks compared to the base model.",
-      "why_it_matters": "The approach suggests a unified way to handle precise color control in diffusion models, which could enable more predictable recoloring and color adherence in real images.",
+      "headline": "Exact hex colors improve image color control but have real limits",
+      "deck": "A practical look at how exact 24-bit hex colors in prompts steer image color, and where confidence fades.",
+      "what_happened": "The system was trained to follow exact hex color codes in prompts to create or edit images. It keeps colors faithful for some objects, but accuracy drops when the scene is complex or objects blend with backgrounds.",
+      "why_it_matters": "Using hex codes can help keep brand colors without extra software, but you must expect some color mismatches in busy scenes.",
       "body_paragraphs": [
-        "Paint-Anything builds a shared hex-prompt interface that links 24-bit color values to object-level color responses in both creation and modification tasks. It uses real-image supervision plus pure-color anchors to anchor color mapping, and it gates these anchors at high-noise steps to keep image realism.",
-        "The study shows that hex-based prompts can improve object-level color fidelity and compositional color binding, while noting that not all scenes localize perfectly or achieve target colors, especially under challenging lighting or shading."
+        "Training used real color examples that link hex values to objects. The goal is to apply this rule to new images and edits by mentioning the color.",
+        "A practical takeaway is that explicit hex codes help color fidelity for simple, localized objects, but precise binding may fail in cluttered or unclear scenes."
       ],
-      "limitation": "Color fidelity relies on object localization and high-noise gated anchors; some prompts still fail to localize targets or match exact hex colors in complex scenes.",
+      "limitation": "Color accuracy depends on lighting and scene; linking a hex to a region may fail if the area is unclear.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
-      "summary_status": "retrying",
+      "summary_status": "ready",
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
       "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
       "research_reading_version": "paper-practitioner-v1",
@@ -3710,19 +3710,19 @@
       "abstract_source_url": "https://arxiv.org/abs/2609.11915v1",
       "abstract_format": "html",
       "has_editorial": true,
-      "headline": "GMMM Finds GEO and GEM Effects Hard to Distill Across Markets",
-      "deck": "A Bayesian approach tests how generated AI inputs in marketing interact with traditional ad spend, showing mixed results and important limits.",
-      "what_happened": "Researchers built Generative Marketing Mix Modeling (GMMM) to estimate causal effects of generated inputs (GEO) and sponsored placements (GEM). They used a Bayesian framework with uncertainty over occurrence and notice probabilities, drawing on 2,240 answers to 56 questions from two GPT models.",
-      "why_it_matters": "Results show no universal advantage in estimating GEO/GEM effects; accuracy depends on market inputs and modeling choices, so decisions should be cautious and evidence-grounded.",
+      "headline": "How measurement methods change observed effects from generated answers and sponsored placements",
+      "deck": "A new model links generative engine changes and paid placements to business outcomes using simulated data.",
+      "what_happened": "The study tests a way to estimate effects from generated answers and paid placements using simulated product questions in English and Japanese. It shows that simply counting how often something appears and whether users notice it can change estimated impact, depending on data and methods.",
+      "why_it_matters": "Practitioners should track how often brand mentions appear in generated content and whether users notice sponsored placements; results depend on the setup and can vary.",
       "body_paragraphs": [
-        "The study compares methods for estimating GEO/GEM effects and notes that input transformations and uncertainty handling change reported error and bias. Missing observations also complicate combining sources.",
-        "Differences across markets and later measurement changes can shift effects; use conservative assumptions and focus on method validity rather than single numbers."
+        "How a measurement is built matters for interpreting effects. The study shows updating measurements with response data can change what you think about generated answers and paid mentions, affecting budgeting and planning.",
+        "A practical tip is to collect data on how often things appear, whether users notice them, and the market context, since language and questions can change results."
       ],
-      "limitation": "Small treatment units per market and sensitivity to measurement assumptions limit generalizability to all settings.",
+      "limitation": "Findings come from simulated data and selected setups; real-world variation may limit applicability.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
-      "summary_status": "retrying",
+      "summary_status": "ready",
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
       "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
       "research_reading_version": "paper-practitioner-v1",
@@ -4953,61 +4953,6 @@
       "full_text_retry_after": "2026-10-07",
       "paper_pages": 35,
       "paper_text_sha256": "37ebf56fdc4cb1328544d674157958a19390d448ef8f8a83f304980ec9f8bb8f"
-    },
-    {
-      "key": "paper:3dbb5af83842291f863af301",
-      "doi": "10.1073/pnas.2612145123",
-      "arxiv_id": "",
-      "original_headline": "Global monitoring of methane point sources using deep learning on hyperspectral radiance measurements from EMIT",
-      "url": "https://doi.org/10.1073/pnas.2612145123",
-      "date": "2026-09-01",
-      "authors": [
-        "Vishal V. Batchu",
-        "Michelangelo Conserva",
-        "Alex Wilson",
-        "Anna M. Michalak",
-        "Varun Gulshan",
-        "Philip G. Brodrick",
-        "Andrew K. Thorpe",
-        "Christopher V. Arsdale"
-      ],
-      "institutions": [
-        "Google (United States)",
-        "Carnegie Institution for Science",
-        "Jet Propulsion Laboratory"
-      ],
-      "affiliation_source_url": "https://openalex.org/W7154228460",
-      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
-      "publisher": "PNAS",
-      "source": "pnas",
-      "research_label": "Journal article",
-      "evidence_scope": "abstract",
-      "access": "Open-license record",
-      "license_urls": [
-        "https://creativecommons.org/licenses/by/4.0/"
-      ],
-      "metadata_sha256": "418f7fc1950ee43810da0367691812c727b19edbf8d68d07115525f4bae4097b",
-      "abstract_source_url": "https://doi.org/10.1073/pnas.2612145123",
-      "abstract_format": "metadata",
-      "has_editorial": true,
-      "headline": "Satellite method detects methane leaks quickly across large areas",
-      "deck": "A satellite data approach searches globally for methane leaks, promising fast, scalable monitoring while noting uncertainties.",
-      "what_happened": "A new system scans many wavelengths from satellites to locate methane plumes. Trained on millions of simulated plumes and tested with real data, it shows high recall and can detect weaker plumes, but results depend on the simulations used.",
-      "why_it_matters": "If reliable, this could speed up leak finding and targeting, helping safety and climate work, though practical caveats remain for agencies and operators in some situations.",
-      "body_paragraphs": [
-        "The approach uses broad satellite data and ground checks to spot leaks over large areas. It trained on many simulated plumes and checked against real data for reliability.",
-        "In practice, teams could mark likely leak sites for quick follow-up, but performance may change with weather, site conditions, or sensor status."
-      ],
-      "limitation": "The work relies on simulated data and specific tests; real-world performance under diverse weather and site conditions is uncertain.",
-      "summary_basis": "Summary of the abstract",
-      "reading_minutes": 1,
-      "claim_status": "study",
-      "summary_status": "ready",
-      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
-      "research_reading_version": "paper-practitioner-v1",
-      "full_text_status": "no_supported_pdf",
-      "full_text_retry_after": "2026-10-07"
     }
   ]
 }
