@@ -11,7 +11,7 @@ from pathlib import Path
 from brief_contract import PROMPT_VERSION,digest,safe_url
 from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
 ROOT=Path(__file__).resolve().parents[1]
-PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256')
+PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256','pdf_url')
 
 def load():
     path=ROOT/'data/research/private/inputs.json'
@@ -30,6 +30,8 @@ def merge_recent(old,updates,end,days=28):
     cutoff=(date.fromisoformat(end)-timedelta(days=days-1)).isoformat()
     merged={key:r for key,r in old.items() if cutoff<=r.get('date','')<=end}
     merged.update({r['key']:r for r in updates if cutoff<=r.get('date','')<=end})
+    # Repaired historical articles must reach the next site/archive build too.
+    merged.update({r['key']:r for r in updates if r.get('has_editorial') and r.get('date','')<=end})
     return sorted(merged.values(),key=lambda r:(r['date'],r['key']),reverse=True)
 
 def main():
@@ -57,8 +59,10 @@ def main():
         if p not in todo and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append({**prior,**public_record(p)});continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
-        if not p.get('abstract'):counts['metadata_only']+=1;selected.append(base);checkpoint();continue
-        if time.monotonic()>deadline-90:counts['deferred']+=1;selected.append(base);checkpoint();continue
+        fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
+        if not p.get('abstract'):
+            counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
+        if time.monotonic()>deadline-90:counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'});checkpoint();continue
         retry[p['key']]={'attempts':retry.get(p['key'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
         stage='generation'
         print(f'[{n+1}/{len(work)}] Preparing research '+p['key'],flush=True)
@@ -66,16 +70,16 @@ def main():
             sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':p['abstract'],'evidence_basis':'abstract_only'}]
             kind='preprint' if p['source'] in ('arxiv','ssrn') else 'abstract'
             draft,proof=write_story({'event_title':p['original_headline']},{},sources,kind=kind,deadline=deadline)
-            record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_basis':'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
+            record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
             stage='persistence'
             client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'validation':proof}},on_conflict='input_sha256').execute()
             selected.append(record);counts['generated']+=1
             retry.pop(p['key'],None)
             audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p['abstract'],'validation':proof,'output_sha256':digest(record)})
             print('Saved research '+p['key'],flush=True)
-        except TimeoutError:counts['deferred']+=1;selected.append(base)
+        except TimeoutError:counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'})
         except Exception as e:
-            counts['failed']+=1;selected.append(base)
+            counts['failed']+=1;selected.append({**fallback,'summary_status':'retrying'})
             diagnostic=failure_diagnostic(e,stage)
             failures.append({'key':p['key'],**diagnostic})
             print('Summary withheld for '+p['key']+': '+json.dumps(diagnostic,sort_keys=True),flush=True)

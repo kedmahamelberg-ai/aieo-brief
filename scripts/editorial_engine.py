@@ -9,7 +9,7 @@ from source_evidence_quality import evidence_chunks
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v4-english'
+ENGINE_VERSION='aieo-editorial-runtime-v5-research-support'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -82,12 +82,27 @@ def failure_diagnostic(error,stage):
  elif isinstance(error,ValueError):result['code']='value_error_unclassified'
  return result
 
+def research_quotes(sources):
+ # Offer exact passages instead of asking the writer to transcribe evidence.
+ # Every option remains a literal substring of the complete abstract.
+ quotes=[]
+ for source in sources:
+  for sentence in re.split(r'(?<=[.!?])\s+',normalized(source['evidence'])):
+   while len(sentence)>400:
+    cut=sentence.rfind(' ',12,350)
+    if cut<12:cut=350
+    quotes.append(sentence[:cut]);sentence=sentence[cut:].strip()
+   if len(sentence)>=12:quotes.append(sentence)
+ return list(dict.fromkeys(quotes))
+
 def draft_schema(sources,kind):
  schema=copy.deepcopy(SCHEMA)
  schema['properties']['support']['items']['properties']['source_number']={'type':'integer','enum':sorted({s['source_number'] for s in sources})}
  if kind in ('preprint','abstract'):
   schema['properties']['claim_status']['enum']=['study']
   schema['properties']['limitation']['minLength']=1
+  quotes=research_quotes(sources)
+  if quotes:schema['properties']['support']['items']['properties']['quote']['enum']=quotes
  return schema
 
 def normalized(value):return re.sub(r'\s+',' ',str(value or '')).strip()
@@ -213,6 +228,8 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  prompt+='Character limits per text field: '+json.dumps(FIELD_LIMITS)+'\n'
  if kind in ('preprint','abstract'):prompt+='This is abstract-only research. claim_status must be study. State the abstract-only scope and, where applicable, preprint status in limitation.\n'
  schema=draft_schema(sources,kind)
+ if kind in ('preprint','abstract'):
+  prompt+='For private support, select a relevant exact passage from the permitted quote options in the schema. Do not rewrite, combine, shorten or translate it. The source_number must match the passage. Write a short explanation of the problem, approach and reported result in everyday words. Explain necessary technical terms. Do not fill space with unsupported benefits.\n'
  prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nFIXED INDEPENDENT AXES (do not override): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))

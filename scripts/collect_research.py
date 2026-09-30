@@ -10,6 +10,7 @@ from xml.etree import ElementTree as ET
 from urllib.parse import quote
 import requests
 from research_affiliations import enrich_affiliations
+from research_recovery import recover_unfinished
 ROOT=Path(__file__).resolve().parents[1]
 AI=re.compile(r'artificial intelligence|machine learning|large language model|generative ai|deep learning|\bllms?\b|\bchatgpt\b|\bchatbots?\b|\bai\b',re.I)
 N={'a':'http://www.w3.org/2005/Atom','ar':'http://arxiv.org/schemas/atom'}
@@ -31,7 +32,7 @@ def arxiv(start,end,limit):
   if not aid or not start<=day<=end:continue
   authors=[plain(a.findtext('a:name','',N)) for a in entry.findall('a:author',N)]
   journal=plain(entry.findtext('ar:journal_ref','',N))
-  out.append({'key':identity(doi,aid),'doi':doi,'arxiv_id':aid,'original_headline':title,'abstract':abstract,'url':'https://arxiv.org/abs/'+aid,'date':day,'authors':authors,'publisher':'arXiv','source':'arxiv','research_label':'arXiv version · journal reference supplied' if journal else 'Preprint','journal_reference':journal,'evidence_scope':'abstract','access':'Open paper','metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
+  out.append({'key':identity(doi,aid),'doi':doi,'arxiv_id':aid,'original_headline':title,'abstract':abstract,'pdf_url':'https://arxiv.org/pdf/'+aid,'url':'https://arxiv.org/abs/'+aid,'date':day,'authors':authors,'publisher':'arXiv','source':'arxiv','research_label':'arXiv version · journal reference supplied' if journal else 'Preprint','journal_reference':journal,'evidence_scope':'abstract','access':'Open paper','metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
  return out
 
 def crossref(source,start,end,limit):
@@ -71,14 +72,15 @@ def main():
    rows.extend(found);status.append({'source':source,'status':'ok','count':len(found)})
   except (requests.RequestException,ValueError,ET.ParseError) as e:status.append({'source':source,'status':'unavailable','error_type':type(e).__name__})
   time.sleep(3) # Respectful spacing, including arXiv's single-connection guidance.
- if all(x['status']=='unavailable' for x in status):raise SystemExit('All research providers unavailable. Prior published research is retained.')
+ rows,recovery_status=recover_unfinished(ROOT,rows,get)
+ if all(x['status']=='unavailable' for x in status) and not any(r.get('abstract') for r in rows):raise SystemExit('All research providers unavailable. Prior published research is retained.')
  private=ROOT/'data/research/private';private.mkdir(parents=True,exist_ok=True)
  unique={}
  for r in rows:
   key=r['key'];old=unique.get(key)
   if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
  affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
- payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'papers':list(unique.values())}
+ payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'recovery':recovery_status,'papers':list(unique.values())}
  (private/'inputs.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
  (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
  print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))
