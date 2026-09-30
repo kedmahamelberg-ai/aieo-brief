@@ -82,6 +82,8 @@ class EditorialRecovery(unittest.TestCase):
             result, _ = engine.write_story({}, {}, sources)
         self.assertEqual(result['what_happened'], good['what_happened'])
         self.assertIn('numeric value', model.call_args_list[1].args[0])
+        self.assertIn('PREVIOUS REJECTED DRAFT', model.call_args_list[1].args[0])
+        self.assertIn('263 musicians', model.call_args_list[1].args[0])
 
     def test_exhausted_retries_keep_the_actual_validation_reason(self):
         draft, sources = fixture()
