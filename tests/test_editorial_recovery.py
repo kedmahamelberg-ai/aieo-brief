@@ -316,6 +316,9 @@ class GenerationCheckpoints(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
             root, _ = self.context(stack, folder)
             draft = self.research_context(stack, root, 1)
+            data,_=research.load()
+            data['papers'][0].pop('abstract')
+            data['papers'][0]['pdf_url']='https://arxiv.org/pdf/2609.35767v1'
             stack.enter_context(patch.object(research, 'read_paper', return_value={
                 'status':'read','text':'PRIVATE COMPLETE PAPER with final-page limitations',
                 'pages':12,'text_sha256':'paper-hash','pdf_sha256':'pdf-hash',
