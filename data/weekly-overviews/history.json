@@ -97,9 +97,9 @@
         "eyebrow": "THE RESEARCH COMPASS",
         "title": "Research turns toward agents and coordination and reliability and evaluation",
         "deck": "The selected papers point in two directions: agents and coordination and reliability and evaluation.",
-        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Abstract-only findings show learning features shape how well people and AI cooperate, with effects not guaranteed across settings. Hasso Plattner Institute, University of Potsdam, Stanford University: The problem of hidden inputs governing decisions is addressed with a retraining-free method, plus caveats about scope. Georgia Institute of Technology: A comparison of training methods finds contrastive learning often beats binary classification on PAN21 data, with context length and data…",
+        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: New analysis shows human learning helps AI help, but results depend on feedback and explanations. Hasso Plattner Institute, University of Potsdam, Stanford University: The problem of hidden inputs governing decisions is addressed with a retraining-free method, plus caveats about scope. Georgia Institute of Technology: A model that compares two texts at once shows higher accuracy when longer context is used, but results depend on…",
         "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
-        "word_count": 107,
+        "word_count": 104,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
         "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
@@ -110,9 +110,9 @@
         "papers": [
           {
             "key": "paper:8778a5cfae74250c006dc1f6",
-            "headline": "Humans Learning Can Boost Human–AI Synergy, but Context Matters",
+            "headline": "Feedback and explanations boost effective use of artificial intelligence",
             "original_headline": "Human learning is an understudied but promising lever for boosting human–AI synergy",
-            "deck": "Abstract-only findings show learning features shape how well people and AI cooperate, with effects not guaranteed across settings.",
+            "deck": "New analysis shows human learning helps AI help, but results depend on feedback and explanations.",
             "authors": [
               "Julian Berger",
               "Jason W. Burton",
@@ -139,7 +139,7 @@
             "publisher": "PNAS",
             "label": "Journal article",
             "date": "2026-09-21",
-            "theme": "reasoning and memory",
+            "theme": "reliability and evaluation",
             "source_verified_at": "",
             "affiliation_source_url": "https://openalex.org/W7213950595"
           },
@@ -170,9 +170,9 @@
           },
           {
             "key": "paper:e3bbbfd1a0ea82e4c41cefe1",
-            "headline": "Contrastive Learning Outperforms Classification for PAN21 Authorship Verification, Claims by Kirby",
+            "headline": "Comparing two texts beats single-text checks for author verification",
             "original_headline": "Contrastive Learning for Authorship Verification",
-            "deck": "A comparison of training methods finds contrastive learning often beats binary classification on PAN21 data, with context length and data augmentation shaping outcomes.",
+            "deck": "A model that compares two texts at once shows higher accuracy when longer context is used, but results depend on training choices and data setup.",
             "authors": [
               "Peter Kirby"
             ],
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "f7cb943d42d361d466bfffc3eece0351e84e6fea4363fe1e510715ac3f751179"
+      "content_sha256": "b6b80d19c806da7d87eccfe3b5c2c7288129efe70bbd05eaabad69122460fef8"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
