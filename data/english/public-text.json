@@ -3550,6 +3550,25 @@
       },
       "output_sha256": "368f07d56b7fd76da7ebd49467be73934b839ae46631baa8f910582c7fcbbfd7",
       "policy": "brief-english-display-v1"
+    },
+    "a4b99e92de0b02994d632f9f7e36177ad48578fe4646f317cf45e65b9f6deef3": {
+      "english": {
+        "0": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization",
+        "1": "STEPQuant: When and Where Errors Matter in Delta-Rule Recurrent State Quantization"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7620b92ada974c5ba79aaac463ee12cd7f4c617f6de319f1e679c6110fb7ca00",
+      "policy": "brief-english-display-v1"
     }
   }
 }
