@@ -9,6 +9,7 @@ from unittest.mock import Mock, patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import research_recovery as recovery
+from research_pdf import abstract_from_text
 import editorial_engine as engine
 from generate_research_summaries import merge_recent
 
@@ -24,6 +25,20 @@ class ResearchRecovery(unittest.TestCase):
             self.assertTrue(12 <= len(quote) <= 400)
             self.assertIn(quote, engine.normalized(evidence))
         self.assertNotIn('enum', engine.draft_schema(sources, 'news')['properties']['support']['items']['properties']['quote'])
+
+    def test_pdf_abstract_requires_title_and_complete_boundaries(self):
+        abstract = 'Researchers compare a new method with a baseline. The tests report improvements for the evaluated model.'
+        text = 'Study title\nAuthor names\nAbstract\n' + abstract + '\n1 Introduction\nUnrelated body detail.'
+        self.assertEqual(abstract_from_text(text, 'Study title'), abstract)
+        self.assertEqual(abstract_from_text(text, 'Different title'), '')
+        self.assertEqual(abstract_from_text(text.split('1 Introduction')[0], 'Study title'), '')
+
+    def test_pdf_fallback_after_abstract_page_failure(self):
+        get = Mock(side_effect=recovery.requests.Timeout)
+        with patch.object(recovery, 'read_pdf_abstract', return_value='Verified abstract text. ' * 6):
+            result = recovery.recover(self.paper(), get)
+        self.assertEqual(result['abstract_format'], 'pdf')
+        self.assertEqual(result['abstract_source_url'], 'https://arxiv.org/pdf/2609.35767v1')
 
     def paper(self):
         return {'key': 'paper:one', 'arxiv_id': '2609.35767v1', 'original_headline': 'Study title',
