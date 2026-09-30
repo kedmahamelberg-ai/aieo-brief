@@ -97,9 +97,9 @@
         "eyebrow": "THE RESEARCH COMPASS",
         "title": "Research turns toward agents and coordination and reliability and evaluation",
         "deck": "The selected papers point in two directions: agents and coordination and reliability and evaluation.",
-        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Abstract-only findings show learning features shape how well people and AI cooperate, with effects not guaranteed across settings. Hasso Plattner Institute, University of Potsdam, Stanford University: AICO introduces a method to test which features influence predictions without retraining, aiming for trustworthy AI,yet the work is abstract-only. Georgia Institute of Technology: A comparison of training methods finds contrastive learning often beats binary classification on PAN21 data, with context length and data…",
+        "summary": "Universitat Pompeu Fabra, University of Southern Denmark, Max Planck Institute for Human Development, Barcelona School of Economics: Abstract-only findings show learning features shape how well people and AI cooperate, with effects not guaranteed across settings. Hasso Plattner Institute, University of Potsdam, Stanford University: The problem of hidden inputs governing decisions is addressed with a retraining-free method, plus caveats about scope. Georgia Institute of Technology: A comparison of training methods finds contrastive learning often beats binary classification on PAN21 data, with context length and data…",
         "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
-        "word_count": 111,
+        "word_count": 107,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
         "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
@@ -145,9 +145,9 @@
           },
           {
             "key": "paper:afd9c531da091aca39b7d1e3",
-            "headline": "AICO Finds Feature Testing Boosts Transparency, but Scope Remains Abstract",
+            "headline": "A New Way to Check Which Features Really Drive AI Predictions, Without Retrying Models",
             "original_headline": "AICO: Feature significance tests for supervised learning",
-            "deck": "AICO introduces a method to test which features influence predictions without retraining, aiming for trustworthy AI,yet the work is abstract-only.",
+            "deck": "The problem of hidden inputs governing decisions is addressed with a retraining-free method, plus caveats about scope.",
             "authors": [
               "Kay Giesecke",
               "Enguerrand Horel",
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "d918db0a0c6dd9c012e268499dd6315c047a30e68a5f09222534234868ab3307"
+      "content_sha256": "f7cb943d42d361d466bfffc3eece0351e84e6fea4363fe1e510715ac3f751179"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
