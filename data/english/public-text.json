@@ -3444,6 +3444,74 @@
       },
       "output_sha256": "f1dfe90be0dfd772df40526d709b70a644a3320b86668401193d6a20af2c970d",
       "policy": "brief-english-display-v1"
+    },
+    "fdbdf12adba2768c071e94f24eb4631cba526c239b365872419e61a0ab3e19a2": {
+      "english": {
+        "0": "Nuremberg Hesperides: La Luchetta Imoperiale",
+        "1": "Hungary",
+        "2": "Nuremberg Hesperides: La Luchetta Imoperiale. etching.",
+        "3": "Nuremberg Hesperides: La Luchetta Imoperiale",
+        "4": "CC0 image",
+        "5": "Nuremberg Hesperides: La Luchetta Imoperiale"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4272a89bafa3aad126d19effa750ccf2d3696a1b5632ef0c1a556d6a8cec6a95",
+      "policy": "brief-english-display-v1"
+    },
+    "f070efb0523dad71a8eca67551ec322842bb49b6d1b37d275092458b2f196efe": {
+      "english": {
+        "0": "Indian · Bengali",
+        "1": "Gitanjali · 7, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+        "2": "Gitanjali · 7",
+        "3": "Gitanjali · 7"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5f69a735123fa873cc922e5cce1b60982dde0472ef33bec80f78d345425c76af",
+      "policy": "brief-english-display-v1"
+    },
+    "2612d9a1bde1b94ffbc2b81c6ffe4624c1db90c791a6645f71dc8719ac655ffe": {
+      "english": {
+        "0": "Spanish",
+        "1": "Composer",
+        "2": "A recording of music by Isaac Albéniz. 2 minutes to listen.",
+        "3": "Isaac Albeniz - Tango Op.165 No.2 - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+        "4": "Arrangement for alto saxophone and piano of Isaac Albéniz's piano suite Spain: six album leaves, op. 165, no. 2: Tango (which is not a tango but a habanera).",
+        "5": "David Hernando Vitores and Kayoko Morimoto (Wasei Duo). Saxophone and piano. Performed at the Museum of Romanticism (Madrid) on November 3, 2015.",
+        "6": "Isaac Albeniz - Tango Op.165 No.2 - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f18a0e7b111dfa1abe5982164e55185ed979b18785ce48a254d515a80c4326a9",
+      "policy": "brief-english-display-v1"
     }
   }
 }

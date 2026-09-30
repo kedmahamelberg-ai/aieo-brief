@@ -2,6 +2,365 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Nurnbergische Hesperides: La Luchetta Imoperiale",
+      "art_type": "Print",
+      "balance_origin": "Hungary",
+      "creator": "Joseph de Montalegre (Hungarian)",
+      "creator_origin": "Hungary",
+      "culture_type": "illustration",
+      "deck": "Nurnbergische Hesperides: La Luchetta Imoperiale. etching.",
+      "headline": "Nurnbergische Hesperides: La Luchetta Imoperiale",
+      "image_path": "assets/culture/dd1612d284ee7d11244caa74.jpg",
+      "key": "culture:dd1612d284ee7d11244caa74",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1994.74/1994.74_web.jpg",
+      "medium": "etching",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1994.74",
+      "provenance_id": "cma:157539",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of John C. Bonebrake in honor of Louise S. Richards",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1994.74",
+      "work_date": "1714",
+      "date": "2026-09-30",
+      "selected_on": "2026-09-30",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-dd1612d284ee7d11244caa74",
+      "path": "culture/culture-dd1612d284ee7d11244caa74/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Nurnbergische Hesperides: La Luchetta Imoperiale",
+          "url": "https://clevelandart.org/art/1994.74",
+          "date": "1714",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-30",
+      "summary_basis": "Selected 30 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Walden",
+      "content_fingerprint": "4b390a70b8b2be026bf6085732c602bce2e5e7d0d0a75e85c3827b435a0e8655",
+      "creator": "Henry David Thoreau",
+      "creator_origin": "American",
+      "culture_type": "quote",
+      "deck": "From Walden.",
+      "excerpt": "The purity men love is like the mists which envelop the earth, and not like the azure ether beyond.",
+      "headline": "The purity men love is like the mists which envelop the earth, and not like the azure ether beyond.",
+      "key": "culture:d26c67416691d1afe154e80f",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:205:quote:4b390a70b8b2be026bf6085732c602bce2e5e7d0d0a75e85c3827b435a0e8655",
+      "publisher": "Project Gutenberg",
+      "quote_context": "I do not suppose that I have attained to obscurity, but I should be proud if no more fatal fault were found with my pages on this score than was found with the Walden ice. Southern customers objected to its blue color, which is the evidence of its purity, as if it were muddy, and preferred the Cambridge ice, which is white, but tastes of weeds. The purity men love is like the mists which envelop the earth, and not like the azure ether beyond.",
+      "rights": {
+        "basis": "Author died 1862. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ae102eeb00d51790a6b024d8b6c73d3b5cc6d63b47fea3cd532c9678a6935469",
+      "source_locator": "Economy; paragraph 515 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "translator": "",
+      "work_date": "1854",
+      "date": "2026-09-30",
+      "selected_on": "2026-09-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d26c67416691d1afe154e80f",
+      "path": "culture/culture-d26c67416691d1afe154e80f/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The purity men love is like the mists which envelop the earth, and not like the azure ether beyond.",
+          "url": "https://www.gutenberg.org/ebooks/205",
+          "date": "1854",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-30",
+      "summary_basis": "Selected 30 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The purity men love is like the mists which envelop the earth, and not like the azure ether beyond.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "I do not suppose that I have attained to obscurity, but I should be proud if no more fatal fault were found with my pages on this score than was found with the Walden ice. Southern customers objected to its blue color, which is the evidence of its purity, as if it were muddy, and preferred the Cambridge ice, which is white, but tastes of weeds. The purity men love is like the mists which envelop the earth, and not like the azure ether beyond.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "6115a2d08eeb9da839a044dfb69687812ed91728073fecfcc11e42c8ebecf8d1",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "poetry",
+      "deck": "Gitanjali · 7, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+      "excerpt": "My song has put off her adornments. She has no pride of dress and\ndecoration. Ornaments would mar our union; they would come between thee\nand me; their jingling would drown thy whispers.\n\nMy poet’s vanity dies in shame before thy sight. O master poet, I have\nsat down at thy feet. Only let me make my life simple and straight,\nlike a flute of reed for thee to fill with music.",
+      "headline": "Gitanjali · 7",
+      "key": "culture:ae64fe692b6b08725782547f",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "My song has put off her adornments. She has no pride of dress and",
+        "decoration. Ornaments would mar our union; they would come between thee",
+        "and me; their jingling would drown thy whispers.",
+        "",
+        "My poet’s vanity dies in shame before thy sight. O master poet, I have",
+        "sat down at thy feet. Only let me make my life simple and straight,",
+        "like a flute of reed for thee to fill with music."
+      ],
+      "provenance_id": "pg:7164:poem:06b28b581fc987fd10599699e9956175218407695bffbb2c723ef061a99a1994",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/7164"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "eda666f014d2f3191662a609d978823ce544afce6e2b0331458be4598ae219d5",
+      "source_locator": "7",
+      "source_url": "https://www.gutenberg.org/ebooks/7164",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1912",
+      "date": "2026-09-30",
+      "selected_on": "2026-09-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ae64fe692b6b08725782547f",
+      "path": "culture/culture-ae64fe692b6b08725782547f/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Gitanjali · 7",
+          "url": "https://www.gutenberg.org/ebooks/7164",
+          "date": "1912",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-30",
+      "summary_basis": "Selected 30 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "My song has put off her adornments. She has no pride of dress and\ndecoration. Ornaments would mar our union; they would come between thee\nand me; their jingling would drown thy whispers.\n\nMy poet’s vanity dies in shame before thy sight. O master poet, I have\nsat down at thy feet. Only let me make my life simple and straight,\nlike a flute of reed for thee to fill with music.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/66/Isaac_Albeniz_-_Tango_Op.165_N%C2%BA2_-_David_Hernando_Vitores_-_Kayoko_Morimoto_%28Wasei_Duo%29.ogg",
+      "creator": "Isaac Albéniz",
+      "creator_origin": "Spanish",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Isaac Albéniz. 2 minutes to listen.",
+      "duration_seconds": 145,
+      "headline": "Isaac Albeniz - Tango Op.165 Nº2 - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+      "key": "culture:6779698811332e0b248ed0bd",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Isaac_Albeniz_-_Tango_Op.165_N%C2%BA2_-_David_Hernando_Vitores_-_Kayoko_Morimoto_%28Wasei_Duo%29.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Isaac_Alb%C3%A9niz",
+      "original_recording_title": "Isaac Albeniz - Tango Op.165 Nº2 - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+      "provenance_id": "commons:44923081",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Isaac Albéniz (1860-1909), composer",
+      "recording_description": "Arrangement for alto saxophone and piano of Isaac Albéniz 's piano suite España: seis hojas de álbum , op. 165, n. 2: Tango (which is not a tango but an habanera ).",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Isaac Albéniz (1860-1909), composer",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "David Hernando Vitores y Kayoko Morimoto ( Wasei Dúo ). Saxophone and piano. Performed at Museum of Romanticism (Madrid) on November 3, 2015.",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Isaac_Albeniz_-_Tango_Op.165_N%C2%BA2_-_David_Hernando_Vitores_-_Kayoko_Morimoto_(Wasei_Duo).ogg",
+      "work_date": "2015-11-10",
+      "date": "2026-09-30",
+      "selected_on": "2026-09-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-6779698811332e0b248ed0bd",
+      "path": "culture/culture-6779698811332e0b248ed0bd/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Isaac Albeniz - Tango Op.165 Nº2 - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+          "url": "https://commons.wikimedia.org/wiki/File:Isaac_Albeniz_-_Tango_Op.165_N%C2%BA2_-_David_Hernando_Vitores_-_Kayoko_Morimoto_(Wasei_Duo).ogg",
+          "date": "2015-11-10",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-30",
+      "summary_basis": "Selected 30 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "a7653205b2daf2dcc4eea1cfb4b8fe04472384868a92c83e433de30d0afae318",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "text",
+      "deck": "A passage from Tao Te Ching. Translated by James Legge.",
+      "excerpt": "Abstaining from speech marks him who is obeying the spontaneity of his nature. A violent wind does not last for a whole morning; a sudden rain does not last for the whole day. To whom is it that these (two) things are owing? To Heaven and Earth. If Heaven and Earth cannot make such (spasmodic) actings last long, how much less can man!",
+      "headline": "Tao Te Ching · a short reading",
+      "key": "culture:147036cb54d846f199f28e1e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:passage:a7653205b2daf2dcc4eea1cfb4b8fe04472384868a92c83e433de30d0afae318",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 70 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-09-30",
+      "selected_on": "2026-09-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-147036cb54d846f199f28e1e",
+      "path": "culture/culture-147036cb54d846f199f28e1e/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Tao Te Ching · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Sep 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-09-30",
+      "summary_basis": "Selected 30 Sep 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Abstaining from speech marks him who is obeying the spontaneity of his nature. A violent wind does not last for a whole morning; a sudden rain does not last for the whole day. To whom is it that these (two) things are owing? To Heaven and Earth. If Heaven and Earth cannot make such (spasmodic) actings last long, how much less can man!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Rear View of Seated Man",
       "art_type": "Drawing",
       "balance_origin": "Italy",
