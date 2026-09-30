@@ -22,7 +22,7 @@ def load():
     return data,{r['key']:r for r in public['papers']}
 
 def pending(data,old):
-    return [p for p in data['papers'] if p.get('abstract') and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and not needs_upgrade(old[p['key']]) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
+    return [p for p in data['papers'] if (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and not needs_upgrade(old[p['key']]) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
@@ -63,7 +63,7 @@ def main():
             counts['unchanged']+=1;selected.append({**public_record(p),**prior});continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
-        if not p.get('abstract'):
+        if not (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')):
             counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
         if time.monotonic()>deadline-90:counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'});checkpoint();continue
         retry[p['key']]={'attempts':retry.get(p['key'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
@@ -74,6 +74,8 @@ def main():
             full=reading['status']=='read'
             if not full and prior.get('evidence_scope')=='paper_text' and prior.get('metadata_sha256')==p['metadata_sha256']:
                 counts['deferred']+=1;selected.append(prior);checkpoint();continue
+            if not full and not p.get('abstract'):
+                counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
             evidence=reading['text'] if full else p['abstract']
             sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':evidence,'evidence_basis':'paper_text' if full else 'abstract_only'}]
             kind='paper' if full else ('preprint' if p['source'] in ('arxiv','ssrn') else 'abstract')
@@ -87,10 +89,10 @@ def main():
             record.update(research_reading_version=READING_VERSION,evidence_scope='paper_text' if full else 'abstract',full_text_status=reading['status'],full_text_retry_after=(date.today()+timedelta(days=7)).isoformat())
             if full:record.update(pdf_url=reading['url'],paper_pages=reading['pages'],paper_text_sha256=reading['text_sha256'])
             stage='persistence'
-            client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'reading_version':READING_VERSION,'evidence_sha256':digest(evidence),'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'paper_reading':{k:v for k,v in reading.items() if k!='text'},'evidence':evidence,'validation':proof}},on_conflict='input_sha256').execute()
+            client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'reading_version':READING_VERSION,'evidence_sha256':digest(evidence),'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p.get('abstract',''),'metadata_sha256':p['metadata_sha256'],'paper_reading':{k:v for k,v in reading.items() if k!='text'},'evidence':evidence,'validation':proof}},on_conflict='input_sha256').execute()
             selected.append(record);counts['generated']+=1
             retry.pop(p['key'],None)
-            audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p['abstract'],'validation':proof,'output_sha256':digest(record)})
+            audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p.get('abstract',''),'validation':proof,'output_sha256':digest(record)})
             print('Saved research '+p['key'],flush=True)
         except TimeoutError as error:
             counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'})
