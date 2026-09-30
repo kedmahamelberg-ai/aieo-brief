@@ -246,7 +246,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
   try:
    feedback=('\nCorrect ALL previously identified problems:\n'+'\n'.join(corrections) if corrections else '')
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
-   draft=call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft')
+   draft=copy.deepcopy(event['draft_seed']) if attempt==0 and isinstance(event.get('draft_seed'),dict) else call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft')
    if quote_options:
     for support in draft.get('support',[]):
      if isinstance(support,dict) and 'quote_id' in support:
@@ -255,7 +255,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
       support['quote']=quote_options[index]
    draft=validate_draft(draft,sources,kind)
    scope=review_scope(draft,compiled,deadline)
-   return draft,{'engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
+   return draft,{'draft_origin':'reviewed_editorial_seed' if attempt==0 and event.get('draft_seed') else 'model','engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
   except (ValueError,requests.RequestException) as e:
    last=e
    correction=getattr(e,'feedback',str(e))

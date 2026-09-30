@@ -69,7 +69,12 @@ def main():
         try:
             sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':p['abstract'],'evidence_basis':'abstract_only'}]
             kind='preprint' if p['source'] in ('arxiv','ssrn') else 'abstract'
-            draft,proof=write_story({'event_title':p['original_headline']},{},sources,kind=kind,deadline=deadline)
+            seed_path=ROOT/'data/research/editorial-seeds.json'
+            seeds=json.loads(seed_path.read_text()) if seed_path.exists() else {}
+            seed=seeds.get(p['key'],{})
+            event={'event_title':p['original_headline']}
+            if seed.get('metadata_sha256')==p['metadata_sha256']:event['draft_seed']=seed.get('draft')
+            draft,proof=write_story(event,{},sources,kind=kind,deadline=deadline)
             record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the abstract (from PDF)' if p.get('abstract_format')=='pdf' else 'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
             stage='persistence'
             client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p['abstract'],'metadata_sha256':p['metadata_sha256'],'validation':proof}},on_conflict='input_sha256').execute()
