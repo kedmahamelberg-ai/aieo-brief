@@ -2,28 +2,29 @@
   "release_id": "2026-W39",
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "counts": {
-    "unchanged": 50,
+    "unchanged": 54,
     "source_not_ready": 0,
-    "new_registry": 32,
-    "needs_model": 32,
+    "new_registry": 28,
+    "needs_model": 28,
     "needs_rebind": 0,
-    "selected": 32,
-    "generated": 4,
+    "selected": 28,
+    "generated": 1,
     "rebound": 0,
-    "failed": 28,
+    "failed": 27,
     "deferred": 0
   },
   "failure_counts": {
-    "unexpected_error": 1,
-    "draft_quote_unsupported": 25,
-    "unsupported_number": 2
+    "source_wording_copied": 1,
+    "draft_quote_unsupported": 23,
+    "unsupported_number": 2,
+    "unexpected_error": 1
   },
   "failed_items": [
     {
       "event_id": "7a85b033-6869-4f5d-83eb-d5e89339bc09",
-      "error_type": "AIError",
-      "stage": "generation",
-      "code": "unexpected_error",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -195,13 +196,6 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
-      "event_id": "dd0d1cda-dc35-4613-b9b4-f2e246076509",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
       "event_id": "b186cfaa-8dc9-4c75-ae1b-22096dac59ff",
       "error_type": "EditorialError",
       "stage": "draft_validation",
@@ -210,11 +204,11 @@
     },
     {
       "event_id": "4101563e-4273-43ad-a25a-953e799b4de7",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-09-30T18:17:44.132306+00:00"
+  "updated_at": "2026-10-01T18:41:36.418303+00:00"
 }
