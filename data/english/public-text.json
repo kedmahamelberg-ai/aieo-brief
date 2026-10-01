@@ -3590,6 +3590,43 @@
       },
       "output_sha256": "e983d75263f165e393bfa726e327705ec156f26918a158b1d0ad055e63bf4dab",
       "policy": "brief-english-display-v1"
+    },
+    "623150108eb1ba48619c4590d42dda8452cb2de6f583d334236e194932caa2f3": {
+      "english": {
+        "0": "Composer"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "601a3cc592ac34759f9ad9cc526ac1273e9ae43d93944177a845026676fd66de",
+      "policy": "brief-english-display-v1"
+    },
+    "23884eedf32048dd422307fc615849dfc499deed9a9c70780d65c021b235ac94": {
+      "english": {
+        "0": "America",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b16de4e3699360abbbfaf5c0c9df349d7173ffc1a0c3785032d6e58a2d4533ea",
+      "policy": "brief-english-display-v1"
     }
   }
 }

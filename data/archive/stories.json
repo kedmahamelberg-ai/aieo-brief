@@ -2,6 +2,372 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "0de8030ec4e595f9da3d13be38bb2bb91c48b046fec66de2580264622c670913",
+      "creator": "Elizabeth Barrett Browning",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by Elizabeth Barrett Browning.",
+      "excerpt": "I see thine image through my tears to-night,\nAnd yet to-day I saw thee smiling. How\nRefer the cause?—Beloved, is it thou\nOr I, who makes me sad? The acolyte\nAmid the chanted joy and thankful rite\nMay so fall flat, with pale insensate brow,\nOn the altar-stair. I hear thy voice and vow,\nPerplexed, uncertain, since thou art out of sight,\nAs he, in his swooning ears, the choir's Amen.\nBeloved, dost thou love? or did I see all\nThe glory as I dreamed, and fainted when\nToo vehement light dilated my ideal,\nFor my soul's eyes? Will that light come again,\nAs now these tears come—falling hot and real?",
+      "headline": "Sonnet 30 - I see thine image through my tears to-night",
+      "key": "culture:5b30cfed71b39981e4f6eb23",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "I see thine image through my tears to-night,",
+        "And yet to-day I saw thee smiling. How",
+        "Refer the cause?—Beloved, is it thou",
+        "Or I, who makes me sad? The acolyte",
+        "Amid the chanted joy and thankful rite",
+        "May so fall flat, with pale insensate brow,",
+        "On the altar-stair. I hear thy voice and vow,",
+        "Perplexed, uncertain, since thou art out of sight,",
+        "As he, in his swooning ears, the choir's Amen.",
+        "Beloved, dost thou love? or did I see all",
+        "The glory as I dreamed, and fainted when",
+        "Too vehement light dilated my ideal,",
+        "For my soul's eyes? Will that light come again,",
+        "As now these tears come—falling hot and real?"
+      ],
+      "provenance_id": "poetrydb:Elizabeth Barrett Browning:Sonnet 30 - I see thine image through my tears to-night",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1861.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d554687a58ad2b93ae62a902e772ebe23dd481138156285bc1d3c279e65fbb98",
+      "source_locator": "Sonnet 30 - I see thine image through my tears to-night",
+      "source_url": "https://poetrydb.org/title/Sonnet%2030%20-%20I%20see%20thine%20image%20through%20my%20tears%20to-night:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1861",
+      "date": "2026-10-01",
+      "selected_on": "2026-10-01",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-5b30cfed71b39981e4f6eb23",
+      "path": "culture/culture-5b30cfed71b39981e4f6eb23/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Sonnet 30 - I see thine image through my tears to-night",
+          "url": "https://poetrydb.org/title/Sonnet%2030%20-%20I%20see%20thine%20image%20through%20my%20tears%20to-night:abs/lines.text",
+          "date": "Before 1861",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "1 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-01",
+      "summary_basis": "Selected 1 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I see thine image through my tears to-night,\nAnd yet to-day I saw thee smiling. How\nRefer the cause?—Beloved, is it thou\nOr I, who makes me sad? The acolyte\nAmid the chanted joy and thankful rite\nMay so fall flat, with pale insensate brow,\nOn the altar-stair. I hear thy voice and vow,\nPerplexed, uncertain, since thou art out of sight,\nAs he, in his swooning ears, the choir's Amen.\nBeloved, dost thou love? or did I see all\nThe glory as I dreamed, and fainted when\nToo vehement light dilated my ideal,\nFor my soul's eyes? Will that light come again,\nAs now these tears come—falling hot and real?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Madman",
+      "content_fingerprint": "17c8a79037d736c92c39c2401fefa041a962138fcb7aeb42b0a70db11960c60c",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "quote",
+      "deck": "From The Madman.",
+      "excerpt": "Second Self: Yours is a better lot than mine, brother, for it is given to me to be this madman's joyous self.",
+      "headline": "Second Self: Yours is a better lot than mine, brother, for it is given to me to be this madman's joyous self.",
+      "key": "culture:123e26684c8ce706b3d69777",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:5616:quote:17c8a79037d736c92c39c2401fefa041a962138fcb7aeb42b0a70db11960c60c",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Second Self: Yours is a better lot than mine, brother, for it is given to me to be this madman's joyous self. I laugh his laughter and sing his happy hours, and with thrice winged feet I dance his brighter thoughts. It is I that would rebel against my weary existence.",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/5616"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1323c30d086bdcffe136e37baecb86d15718c773239ad3a50ef05ef63bbafcbc",
+      "source_locator": "By Kahlil Gibran; paragraph 64 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/5616",
+      "translator": "",
+      "work_date": "1918",
+      "date": "2026-10-01",
+      "selected_on": "2026-10-01",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-123e26684c8ce706b3d69777",
+      "path": "culture/culture-123e26684c8ce706b3d69777/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Second Self: Yours is a better lot than mine, brother, for it is given to me to be this madman's joyous self.",
+          "url": "https://www.gutenberg.org/ebooks/5616",
+          "date": "1918",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "1 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-01",
+      "summary_basis": "Selected 1 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Second Self: Yours is a better lot than mine, brother, for it is given to me to be this madman's joyous self.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Second Self: Yours is a better lot than mine, brother, for it is given to me to be this madman's joyous self. I laugh his laughter and sing his happy hours, and with thrice winged feet I dance his brighter thoughts. It is I that would rebel against my weary existence.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/0/04/20091104_Alisa_Weilerstein_and_Jason_Yoder_-_Saint_Sa%C3%ABns%27_The_Swan.ogv",
+      "creator": "Camille Saint-Saëns",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Camille Saint-Saëns. 2 minutes to listen.",
+      "duration_seconds": 176,
+      "headline": "20091104 Alisa Weilerstein and Jason Yoder - Saint Saëns' The Swan",
+      "key": "culture:0be24dbf291e32ab6ca84cc4",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/0/04/20091104_Alisa_Weilerstein_and_Jason_Yoder_-_Saint_Sa%C3%ABns%27_The_Swan.ogv",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Camille_Saint-Sa%C3%ABns",
+      "original_recording_title": "20091104 Alisa Weilerstein and Jason Yoder - Saint Saëns' The Swan",
+      "provenance_id": "commons:15065718",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Camille Saint-Saëns",
+      "recording_description": "Le cygne from The Carnival of the Animals performed by Alisa Weilerstein and Jason Yoder at the White House Evening of Classical Music on November 4, 2009. Although originally scored for cello and piano , this is an arrangement of cello and marimba .",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Camille Saint-Saëns",
+        "label": "Public domain (source-declared)",
+        "source_credit": "http://www.whitehouse.gov/photos-and-video/video/alisa-weilerstein-and-jason-yoder-perform-white-house-5-8",
+        "url": "https://commons.wikimedia.org/wiki/File:20091104_Alisa_Weilerstein_and_Jason_Yoder_-_Saint_Sa%C3%ABns%27_The_Swan.ogv"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20091104_Alisa_Weilerstein_and_Jason_Yoder_-_Saint_Sa%C3%ABns%27_The_Swan.ogv",
+      "work_date": "1886",
+      "date": "2026-10-01",
+      "selected_on": "2026-10-01",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0be24dbf291e32ab6ca84cc4",
+      "path": "culture/culture-0be24dbf291e32ab6ca84cc4/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "20091104 Alisa Weilerstein and Jason Yoder - Saint Saëns' The Swan",
+          "url": "https://commons.wikimedia.org/wiki/File:20091104_Alisa_Weilerstein_and_Jason_Yoder_-_Saint_Sa%C3%ABns%27_The_Swan.ogv",
+          "date": "1886",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "1 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-01",
+      "summary_basis": "Selected 1 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Mount Starr King, Yosemite",
+      "art_type": "Painting",
+      "balance_origin": "America",
+      "creator": "Albert Bierstadt (American, born Prussia [now Germany], 1830–1902)",
+      "creator_origin": "America",
+      "culture_type": "illustration",
+      "deck": "Mount Starr King, Yosemite. oil on canvas on panel-back stretcher.",
+      "headline": "Mount Starr King, Yosemite",
+      "image_path": "assets/culture/0a0991b72f0779ec2e8f5472.jpg",
+      "key": "culture:0a0991b72f0779ec2e8f5472",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1922.684/1922.684_web.jpg",
+      "medium": "oil on canvas on panel-back stretcher",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1922.684",
+      "provenance_id": "cma:172815",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Hinman B. Hurlbut Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1922.684",
+      "work_date": "1866",
+      "date": "2026-10-01",
+      "selected_on": "2026-10-01",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-0a0991b72f0779ec2e8f5472",
+      "path": "culture/culture-0a0991b72f0779ec2e8f5472/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Mount Starr King, Yosemite",
+          "url": "https://clevelandart.org/art/1922.684",
+          "date": "1866",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "1 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-01",
+      "summary_basis": "Selected 1 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Phantastes",
+      "content_fingerprint": "b7530e0204a83cf8e70ab6916d70358d7d1a06e1b3e91ac696b3151aa69bde48",
+      "creator": "George MacDonald",
+      "creator_origin": "Scottish",
+      "culture_type": "text",
+      "deck": "A passage from Phantastes.",
+      "excerpt": "A fierce struggle arose in Cosmo’s bosom. Now she was in his power. She did not dislike him at least; and he could see her when he would. To break the mirror would be to destroy his very life, to banish out of his universe the only glory it possessed. The whole world would be but a prison, if he annihilated the one window that looked into the paradise of love. Not yet pure in love, he hesitated.",
+      "headline": "Phantastes · a short reading",
+      "key": "culture:06970962ed3cd1ff6b9ff1d4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:325:passage:b7530e0204a83cf8e70ab6916d70358d7d1a06e1b3e91ac696b3151aa69bde48",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1905. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/325"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "33a174fa0bebdf574474cd1554a91dd2a8ca554d80e3e53dc7f7ebf17774b751",
+      "source_locator": "CHAPTER I.; paragraph 387 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/325",
+      "translator": "",
+      "work_date": "1858",
+      "date": "2026-10-01",
+      "selected_on": "2026-10-01",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-06970962ed3cd1ff6b9ff1d4",
+      "path": "culture/culture-06970962ed3cd1ff6b9ff1d4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Phantastes · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/325",
+          "date": "1858",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "1 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-01",
+      "summary_basis": "Selected 1 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "A fierce struggle arose in Cosmo’s bosom. Now she was in his power. She did not dislike him at least; and he could see her when he would. To break the mirror would be to destroy his very life, to banish out of his universe the only glory it possessed. The whole world would be but a prison, if he annihilated the one window that looked into the paradise of love. Not yet pure in love, he hesitated.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Nurnbergische Hesperides: La Luchetta Imoperiale",
       "art_type": "Print",
       "balance_origin": "Hungary",
