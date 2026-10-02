@@ -3627,6 +3627,66 @@
       },
       "output_sha256": "b16de4e3699360abbbfaf5c0c9df349d7173ffc1a0c3785032d6e58a2d4533ea",
       "policy": "brief-english-display-v1"
+    },
+    "aad13eb89463369d08b7f59f6c812e7fdfdf82369c822569e6cef79ea47a427d": {
+      "english": {
+        "0": "Songs of Kabir · XXXVIII",
+        "1": "XXXVIII",
+        "2": "Songs of Kabir · XXXVIII"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9225ed8a45bc7b2f2bb5441b3a4d163192cbbc3d183afe8ea6f66355835502b0",
+      "policy": "brief-english-display-v1"
+    },
+    "e53c9ef18b3cc1a28793d3d553ba43c8ba06f703aa1883df5c0f04ed5b413daf": {
+      "english": {
+        "0": "Myanmar or Thailand",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c10c2a4bcb09d9580acf8c7457e8d5c9b5d158e881659e24e8bc27840cda4cd0",
+      "policy": "brief-english-display-v1"
+    },
+    "d9662a4d515ea7b95aa53092a20ddc5e3d62041c262655e672576e2cfd9c8416": {
+      "english": {
+        "0": "Russian–American",
+        "1": "Composer",
+        "2": "Rach3 Variation",
+        "3": "Rach3 Variation"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5f878c67f38cf306024dd2cd0b800afc70b5f316f4e9eb507a10b43decbd0b85",
+      "policy": "brief-english-display-v1"
     }
   }
 }
