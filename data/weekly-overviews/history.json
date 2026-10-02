@@ -13,7 +13,7 @@
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
         "deck": "Across the five discovery markets, rules and rights met work and skills. The balance differed by reporting stream.",
-        "summary": "China: selected reporting leaned toward rules and rights, with “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed…”… United States: the discovery stream centred most often on work and skills, including “Independent Mathematics and AI Advisory Group Formed… United Kingdom: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group… France: the discovery stream centred most often on work and skills, including “ENS- PSL Findings on Data and AI: Mixed… Canada: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed…",
+        "summary": "China: selected reporting leaned toward rules and rights, with “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed…”… United States: the discovery stream centred most often on rules and rights, including “Independent Mathematics and AI Advisory Group Formed… United Kingdom: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group… France: the discovery stream centred most often on work and skills, including “ENS- PSL Findings on Data and AI: Mixed… Canada: rules and rights stood out in the selected coverage; one example was “Independent Mathematics and AI Advisory Group Formed…",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
         "word_count": 126,
         "reading_minutes": 1,
@@ -40,9 +40,9 @@
           {
             "code": "US",
             "name": "United States",
-            "count": 11,
-            "topic": "Work And Skills",
-            "sentence": "United States: the discovery stream centred most often on work and skills, including “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
+            "count": 12,
+            "topic": "Rules And Rights",
+            "sentence": "United States: the discovery stream centred most often on rules and rights, including “Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed….”",
             "story": {
               "headline": "Independent Mathematics and AI Advisory Group Formed by OpenAI, Signals Mixed Gains and Limits",
               "path": "story/independent-mathematics-ai-advisory-group-formed-gains-limits/index.html",
@@ -66,7 +66,7 @@
           {
             "code": "FR",
             "name": "France",
-            "count": 11,
+            "count": 12,
             "topic": "Work And Skills",
             "sentence": "France: the discovery stream centred most often on work and skills, including “ENS- PSL Findings on Data and AI: Mixed Gains, Clear Limits….”",
             "story": {
@@ -193,7 +193,7 @@
         "paper_count": 32,
         "affiliation_verified_count": 3
       },
-      "content_sha256": "b6b80d19c806da7d87eccfe3b5c2c7288129efe70bbd05eaabad69122460fef8"
+      "content_sha256": "ba6b3a00b28a9d1ff0e30f24288b93564121649f30b2afdced96ec3186084c44"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",

@@ -6551,6 +6551,61 @@
       "url_slug_version": 1
     },
     {
+      "key": "event:9559b794-2d01-4f2d-93d2-9df224116a7c",
+      "event_id": "9559b794-2d01-4f2d-93d2-9df224116a7c",
+      "kind": "news",
+      "slug": "oregon-moves-frontier-ai-regulation-independent-cautious-timelines",
+      "path": "story/oregon-moves-frontier-ai-regulation-independent-cautious-timelines/index.html",
+      "headline": "Oregon Moves Frontier AI Regulation, With Independent Reviews and Cautious Timelines",
+      "original_headline": "Oregon Is the Latest State to Move on Frontier AI Regulation",
+      "deck": "State issues executive order to require third-party safety reviews for frontier AI used in procurement.",
+      "what_happened": "Oregon Governor Tina Kotek issued Executive Order 26-26 to establish safeguards and oversight for frontier AI in state government procurement, directing the CIO to develop independent third-party review standards for AI safety within 90 days. The move aligns Oregon with California and precedents set by other states contemplating safety reviews and potential kill-switch requirements for frontier AI.",
+      "why_it_matters": "Governance measures aim to reduce risk while enabling responsible frontier AI use in state operations, though timelines and standards are still being defined and are not uniform across states.",
+      "body_paragraphs": [
+        "Oregon’s EO requires frontier AI models used by state agencies to undergo independent, third-party safety reviews, setting a framework for procurement and technology-use practices. The governor’s office says the standards will address adequate review criteria and potential protections like a kill switch, balancing innovation with safety.",
+        "As Oregon considers guidance from California and other states, officials emphasize that the measures are about governance, not a blanket restriction on AI. The implementation timeline remains open-ended for adopting final standards, reflecting ongoing debate about how best to regulate rapidly evolving models."
+      ],
+      "for_humans": "Clear rules can help teens and adults understand how safeguards affect AI use.",
+      "for_ai": "Structured safety reviews may improve oversight without halting innovation.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "govtech.com",
+          "headline": "Oregon Is the Latest State to Move on Frontier AI Regulation",
+          "url": "https://www.govtech.com/artificial-intelligence/oregon-is-latest-state-to-move-on-frontier-ai-regulation",
+          "date": "2026-09-26",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "govtech.com",
+      "date": "2026-09-25",
+      "display_date": "25 Sep 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "This article reports on a state executive order and interim steps; it does not claim universal effects beyond Oregon’s procurement context or general population-level outcomes.",
+      "has_editorial": true,
+      "edition": "2026-W39",
+      "period_start": "2026-09-21",
+      "period_end": "2026-09-27",
+      "legacy_paths": [
+        "story/development-9559b794-2d01-4f2d-93d2-9df224116a7c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Borodin_-_String_Quartet_No._1_in_A_major_-_I._Moderato_-_Allegro_%28Musopen_String_Quartet%29.flac",
       "creator": "Alexander Borodin",
       "creator_origin": "Russian",
@@ -10514,6 +10569,58 @@
       "period_end": "2026-09-27",
       "legacy_paths": [
         "story/development-04065316-7cdb-4e29-a099-649a3eeeb275/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:de08945b-6e68-4025-9384-276dc729cf1d",
+      "event_id": "de08945b-6e68-4025-9384-276dc729cf1d",
+      "kind": "news",
+      "slug": "dassault-aviation-equips-rafale-artificial-intelligence",
+      "path": "story/dassault-aviation-equips-rafale-artificial-intelligence/index.html",
+      "headline": "Dassault Aviation equips the Rafale with artificial intelligence.",
+      "original_headline": "Dassault Aviation equips the Rafale with artificial intelligence.",
+      "deck": "Reporting from Avionslegendaires.net. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Pilots gain new support from AI-enhanced avionics, extending their existing capabilities.",
+      "for_ai": "AI systems are deployed to augment flight management and pilot support, expanding operational reach.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Avionslegendaires.net",
+          "headline": "Dassault Aviation equips the Rafale with artificial intelligence.",
+          "url": "https://www.avionslegendaires.net/2026/09/actu/dassault-aviation-dope-le-rafale-a-lintelligence-artificielle",
+          "date": "2026-09-23",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Avionslegendaires.net",
+      "date": "2026-09-23",
+      "display_date": "23 Sep 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W39",
+      "period_start": "2026-09-21",
+      "period_end": "2026-09-27",
+      "legacy_paths": [
+        "story/development-de08945b-6e68-4025-9384-276dc729cf1d/index.html"
       ],
       "url_slug_version": 1
     },
