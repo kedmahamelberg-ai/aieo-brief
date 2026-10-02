@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-09-25",
-  "period_end": "2026-10-01",
+  "period_start": "2026-09-26",
+  "period_end": "2026-10-02",
   "providers": [
     {
       "source": "arxiv",
@@ -21,38 +21,44 @@
   ],
   "affiliation_enrichment": [
     {
+      "key": "paper:aef923dfcd50cbbb44358983",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:8ac0cb5873c4983acf5958fe",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:b639175ab5669341d26866a4",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:970d887d723be1b90cd1f564",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:52c3ba78f28c68d12f1a0973",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:e0bb12a673a09e4302347c6b",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
       "key": "paper:f0e996cee34e20dd34ce1ec8",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:3eb30285bafd279d63502d2d",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:fa397945abbc8f90f4870412",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:ea70531dea6568a8efc7b94a",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:4a19620ff16b18c4c4611928",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:baa1718febeede56b7b7af8a",
-      "status": "not_matched",
+      "status": "cached",
       "source_verified": true,
       "institutions": 0
     },
@@ -64,7 +70,7 @@
     }
   ],
   "recovery": {
-    "recovered": 1,
+    "recovered": 2,
     "unavailable": 0
   }
 }

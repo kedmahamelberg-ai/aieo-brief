@@ -1,29 +1,26 @@
 {
-  "generated": 5,
-  "failed": 2,
+  "generated": 7,
+  "failed": 1,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 0,
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "failure_counts": {
-    "research_unexplained_shorthand": 1,
-    "unexpected_error": 1
+    "source_scope_review_failed": 1
   },
   "failed_items": [
     {
-      "key": "paper:f0e996cee34e20dd34ce1ec8",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "research_unexplained_shorthand",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
       "key": "paper:af880433876f4e2e2ebf458c",
-      "error_type": "AIError",
-      "stage": "generation",
-      "code": "unexpected_error",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v5-research-support",
+      "failed_checks": [
+        "headline_supported",
+        "population_preserved",
+        "claim_status_preserved"
+      ]
     }
   ],
-  "updated_at": "2026-10-01T18:49:25.281308+00:00"
+  "updated_at": "2026-10-02T18:15:33.671566+00:00"
 }
