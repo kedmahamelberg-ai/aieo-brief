@@ -733,6 +733,92 @@
       ]
     },
     {
+      "key": "paper:beaf7b4a534a2a4135c21b97",
+      "doi": "10.1073/pnas.2607372123",
+      "arxiv_id": "",
+      "original_headline": "Deep learning of fossil pollen morphology reveals 25,000 y of ecological change in eastern African grasslands",
+      "url": "https://doi.org/10.1073/pnas.2607372123",
+      "date": "2026-10-02",
+      "authors": [
+        "Marc-Élie Adaimé",
+        "Shu Kong",
+        "Michael A. Urban",
+        "F. Alayne Street-Perrott",
+        "Dirk Verschuren",
+        "Surangi W. Punyasena"
+      ],
+      "institutions": [
+        "Smithsonian Institution",
+        "University of Illinois Urbana-Champaign",
+        "University of Macau",
+        "University of New Brunswick",
+        "Swansea University",
+        "Ghent University"
+      ],
+      "affiliation_source_url": "https://openalex.org/W7216550066",
+      "affiliation_checked_at": "2026-10-03T16:16:15.842835+00:00",
+      "publisher": "PNAS",
+      "source": "pnas",
+      "research_label": "Journal article",
+      "evidence_scope": "abstract",
+      "access": "Open-license record",
+      "license_urls": [
+        "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+      ],
+      "metadata_sha256": "873e1b9e942c6c094ec40e3959eb3b84453299683e753df0279b40bd5e2f9efa",
+      "pdf_url": "",
+      "has_editorial": true,
+      "headline": "Fossil pollen reveals 25,000 years of grassland change in eastern Africa, researchers say",
+      "deck": "New imaging and learning methods link pollen shape to grass diversity, with limits.",
+      "what_happened": "Researchers used high-resolution pollen imaging and a mixed data learning approach to tie pollen appearance to grass types and their photosynthesis. Across a 25,000-year lake record, they found a decline in grass diversity between roughly 21,500 and 16,000 years ago, and a gradual drop in the share of fast-photosynthesizing grasses as conditions cooled.",
+      "why_it_matters": "Understanding past grassland shifts helps land managers plan for biodiversity, fire risk, and habitat restoration, while recognizing limits tied to sites and time.",
+      "body_paragraphs": [
+        "The study treats pollen images as data: take close-up photos, label what is known, and look for patterns that hint at grass type and photosynthesis. It shows shape can signal different grass groups.",
+        "In practice, map past grass changes to guide land-use decisions, but results depend on the studied region and time window, so keep expectations modest."
+      ],
+      "limitation": "Results come from a single lake- sediment record; findings depend on site and time window and are not a global history.",
+      "summary_basis": "Summary of the abstract",
+      "reading_minutes": 1,
+      "claim_status": "study",
+      "summary_status": "ready",
+      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+      "research_reading_version": "paper-practitioner-v1",
+      "full_text_status": "no_supported_pdf",
+      "full_text_retry_after": "2026-10-10",
+      "kind": "research",
+      "slug": "fossil-pollen-reveals-25-000-years-researchers-say",
+      "path": "research/fossil-pollen-reveals-25-000-years-researchers-say/index.html",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "PNAS",
+          "headline": "Deep learning of fossil pollen morphology reveals 25,000 y of ecological change in eastern African grasslands",
+          "url": "https://doi.org/10.1073/pnas.2607372123",
+          "date": "2026-10-02",
+          "language": "en"
+        }
+      ],
+      "display_date": "2 Oct 2026",
+      "markets": [],
+      "market_label": "Research",
+      "topic": "research",
+      "topic_label": "Science & research",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "for_humans": "",
+      "for_ai": "",
+      "human_label": "",
+      "ai_label": "",
+      "evidence_complete": false,
+      "display_scope": "",
+      "edition": "2026-10",
+      "legacy_paths": [
+        "research/paper-beaf7b4a534a2a4135c21b97/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "0de8030ec4e595f9da3d13be38bb2bb91c48b046fec66de2580264622c670913",
       "creator": "Elizabeth Barrett Browning",
       "creator_origin": "English",
@@ -1115,6 +1201,7 @@
         "Ismini Lourentzou"
       ],
       "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7216562282",
       "affiliation_checked_at": "2026-10-02T17:52:25.067310+00:00",
       "source_verified_at": "2026-10-02T17:52:25.067310+00:00",
       "publisher": "arXiv",
@@ -1198,6 +1285,7 @@
         "Haozhi Qi"
       ],
       "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7216576645",
       "affiliation_checked_at": "2026-10-02T17:52:25.067310+00:00",
       "source_verified_at": "2026-10-02T17:52:25.067310+00:00",
       "publisher": "arXiv",
@@ -1274,6 +1362,7 @@
         "Ivan Laptev"
       ],
       "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7216169820",
       "affiliation_checked_at": "2026-10-02T17:52:25.067310+00:00",
       "source_verified_at": "2026-10-02T17:52:25.067310+00:00",
       "publisher": "arXiv",
@@ -1352,6 +1441,7 @@
         "Stella X. Yu"
       ],
       "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7216479077",
       "affiliation_checked_at": "2026-10-02T17:52:25.067310+00:00",
       "source_verified_at": "2026-10-02T17:52:25.067310+00:00",
       "publisher": "arXiv",
@@ -1429,6 +1519,7 @@
         "Muzammal Naseer"
       ],
       "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7215932886",
       "affiliation_checked_at": "2026-10-02T17:52:25.067310+00:00",
       "source_verified_at": "2026-10-02T17:52:25.067310+00:00",
       "publisher": "arXiv",
@@ -1516,6 +1607,7 @@
         "Chelsea Finn"
       ],
       "institutions": [],
+      "affiliation_source_url": "https://openalex.org/W7216217917",
       "affiliation_checked_at": "2026-10-02T17:52:25.067310+00:00",
       "source_verified_at": "2026-10-02T17:52:25.067310+00:00",
       "publisher": "arXiv",
@@ -32675,24 +32767,24 @@
       "abstract_source_url": "https://arxiv.org/abs/2609.05404v1",
       "abstract_format": "html",
       "has_editorial": true,
-      "headline": "Diffusion TV Shows How Tangible Interaction Shapes Understanding of Diffusion Models (With Limits)",
-      "deck": "A CRT-based installation lets people feel the AI generation steps, but exact understanding remains uneven.",
-      "what_happened": "Diffusion TV mapped antenna and knob actions to intermediate denoising states of diffusion models, presenting audiences with three channels,Past (extinct species), Present (endangered), and Future (speculative). Sixteen extinct and fourteen endangered species were identified for visuals and sounds, created with AI tools; observations were informal and not systematically measured.",
-      "why_it_matters": "The project suggests a non-traditional, embodied path to explainable AI, showing hands-on engagement shapes interpretation even when precise technical understanding isn’t guaranteed.",
+      "headline": "Hands-on television demo shows how artificial intelligence image generation works",
+      "deck": "A modified old television lets visitors explore the step-by-step creation of images produced by artificial intelligence, focusing on process over perfect outputs and inviting reflection rather than promises.",
+      "what_happened": "A modified old television lets visitors turn a dial to move images and sounds created by artificial intelligence through rough intermediate stages toward clearer outputs. The display emphasizes the process, not exact final results, and invites observation rather than instruction.",
+      "why_it_matters": "The setup helps non-experts grasp how generative artificial intelligence works without overpromising mastery of the full system.",
       "body_paragraphs": [
-        "Diffusion TV foregrounds the generative process over the final output, letting people experience intermediate states as part of AI creation rather than just finished images. Tangible controls map to denoising steps, making abstract processes perceptible without deep technical instruction.",
-        "The project relied on informal observations rather than formal testing, so results vary with prior familiarity and may not generalize to all audiences or situations."
+        "The exhibit uses a small, physical control and a step-by-step image change, helping people understand the process rather than numbers or measurable results.",
+        "This kind of demo can spark discussion about artificial intelligence, but a single display cannot fully show how real systems behave across many tasks or data sets."
       ],
-      "limitation": "Observations were informal and not based on systematic evaluation, so findings may not generalize.",
+      "limitation": "Notes come from informal feedback at a single exhibit and lack controlled measurements or wider, repeated testing.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
-      "summary_status": "retrying",
+      "summary_status": "ready",
       "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
       "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "read",
-      "full_text_retry_after": "2026-10-07",
+      "full_text_retry_after": "2026-10-10",
       "paper_pages": 5,
       "paper_text_sha256": "383e30b282d5ff1baa12dc4658b110824306963604e4a9cee284029666fc5cbf",
       "kind": "research",
