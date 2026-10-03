@@ -3706,6 +3706,50 @@
       },
       "output_sha256": "cd73615733cdcfd3c68d210fd36cb518a9180931ffd4673a5f8d91020d4c658f",
       "policy": "brief-english-display-v1"
+    },
+    "6bb76098a35294b061afebfca87be53d6770e0665681ccf923c7469ee07e67c5": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Divan of Hafiz · XV",
+        "2": "XV",
+        "3": "Divan of Hafiz · XV"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "514989bebfaba83dbc64586492083a62d51dd47db145f79812bb6bf92ca91fce",
+      "policy": "brief-english-display-v1"
+    },
+    "dca540a8f4c7f80fb3f8f95f905712bdbbf43b811e13fe4c5675e3d6eb79944a": {
+      "english": {
+        "0": "Paraguayan",
+        "1": "A guitar performance by Agustín Barrios. 3 minutes to listen.",
+        "2": "Matilde (mazurka) García. Famous guitar virtuoso Agustín Barrios. 340z 1912 Atlanta 65.37 (zgQ9QNokTVI)",
+        "3": "Matilde mazurka by Carlos Garcia Tolsa, performed by Agustín Barrios, Record ATLANTA No. 340z, Side A, Matrix No. 65.37 (65370)",
+        "4": "Matilde (mazurka) García. Famous guitar virtuoso Agustín Barrios. 340z 1912 Atlanta 65.37",
+        "5": "Matilde (mazurka) García. Famous guitar virtuoso Agustín Barrios. 340z 1912 Atlanta 65.37 (zgQ9QNokTVI)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7f3047c857b9e9cb6566191f6cfc85156339d347fc51ce04585292582d483e5c",
+      "policy": "brief-english-display-v1"
     }
   }
 }
