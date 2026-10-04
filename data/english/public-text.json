@@ -3750,6 +3750,67 @@
       },
       "output_sha256": "7f3047c857b9e9cb6566191f6cfc85156339d347fc51ce04585292582d483e5c",
       "policy": "brief-english-display-v1"
+    },
+    "24deb86337f00512175b6f0364afaab6e16f06195796642389ec3e6102bafcf5": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Loose Papers.",
+        "3": "I tell you only three. One day, Xavier came to believe that he could finally seize the fugitive and pin her permanently in his brain. He opened an opposition newspaper, and read astonished these words: \"The ministry seems to ignore that politics is, like life, a clumsy or sly horse, and, not being a good horseman, because he never was, he should at least seem that he is.\" Ah! finally! exclaimed Xavier, here you are wedged in the fish's belly; you can no longer escape me.\" But, in vain! the idea escaped him, leaving no trace other than a confused reminiscence. Somber, desperate, he began to walk, walking, until night fell; passing by a theater, he entered; many people, many lights, much joy; his heart grew calm. Culmination of benefits: it was a comedy by Pires, a new comedy. He sat beside the author, applauded the work with enthusiasm, with sincere love of artist and brother. In the second act, scene VIII, he trembled. \"D. Eugenia, the gallant tells a lady, the horse can be compared to life, which is also a clumsy or sly horse; he who is not a good horseman should take care to seem that he is one.\" The author, with a timid look, peered at Xavier's face to see the effect of that reflection, while Xavier repeated the same plea as on other occasions;—\"My dear annel...\"",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "65ae0043636151ca8a72d6da05d060642931d8d2bd059f1ca1d8df44b9cc5147",
+      "policy": "brief-english-display-v1"
+    },
+    "706247061ba207d7e488e40a7e23af605bda90824a43ddcd794bd9ce2fda64cf": {
+      "english": {
+        "0": "American",
+        "1": "Composer"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f2aedd0a7cbeacc2cbfaafd40629a02a1f2008449dd821d0fe9e32f48eed615c",
+      "policy": "brief-english-display-v1"
+    },
+    "432aa93de6798d48eb79e3a5af8ef16b6724273179861d96614313181a6a34b0": {
+      "english": {
+        "0": "Byzantine Empire, Abu Mena (Egypt)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cdfd5a7f7561151adf9846f0f2b9f2dee05fb2c518fdeea3dc3879505529d4e1",
+      "policy": "brief-english-display-v1"
     }
   }
 }

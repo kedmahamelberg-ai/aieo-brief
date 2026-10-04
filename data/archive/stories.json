@@ -2,6 +2,381 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Papéis Avulsos",
+      "content_fingerprint": "af507eff0d2444c41621a8ca5638e2f46f72ae43d0e3b7aff635ed2dbc596019",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Papéis Avulsos.",
+      "excerpt": "Conto-lhe só tres. Um dia, o Xavier chegou a crer que podia emfim agarrar a fugitiva, e fincal-a perpetuamente no cerebro. Abriu um jornal de opposição, e leu estupefacto estas palavras: «O ministerio parece ignorar que a politica é, como a vida, um cavallo chucro ou manhoso, e, não podendo ser bom cavalleiro, porque nunca o foi, devia ao menos parecer que o é.» Ah! emfim! exclamou o Xavier, cá estás engastado no bucho do peixe; já me não podes fugir.» Mas, em vão! a idéa fugia-lhe, sem deixar outro vestigio mais do que uma confusa reminiscencia. Sombrio, desesperado, começou a andar, a andar, até que a noite caiu; passando por um theatro, entrou; muita gente, muitas luzes, muita alegria; o coração aquietou-se-lhe. Cumulo de beneficios: era uma comedia do Pires, uma comedia nova. Sentou-se ao pé do autor, applaudiu a obra com enthusiasmo, com sincero amor de artista e de irmão. No segundo acto, scena VIII, estremeceu. «D. Eugenia, diz o galan a uma senhora, o cavallo póde ser comparado á vida, que é também um cavallo chucro ou manhoso; quem não for bom cavalleiro, deve cuidar de parecer que o é.» O autor, com o olhar timido, espiava no rosto do Xavier o effeito d'aquella reflexão, emquanto o Xavier repetia a mesma supplica das outras vezes;--«Meu querido annel...",
+      "headline": "Papéis Avulsos · a short reading",
+      "key": "culture:bfe432c4fce53c31dbc25437",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:57001:passage:af507eff0d2444c41621a8ca5638e2f46f72ae43d0e3b7aff635ed2dbc596019",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/57001"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "68d9d8a21dc3b4f1adb9fdaad9b962304bbb04d9472df4df328b6f8432bdfbe6",
+      "source_locator": "O ALIENISTA; paragraph 803 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/57001",
+      "translator": "",
+      "work_date": "1882",
+      "date": "2026-10-04",
+      "selected_on": "2026-10-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-bfe432c4fce53c31dbc25437",
+      "path": "culture/culture-bfe432c4fce53c31dbc25437/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Papéis Avulsos · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/57001",
+          "date": "1882",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-04",
+      "summary_basis": "Selected 4 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Conto-lhe só tres. Um dia, o Xavier chegou a crer que podia emfim agarrar a fugitiva, e fincal-a perpetuamente no cerebro. Abriu um jornal de opposição, e leu estupefacto estas palavras: «O ministerio parece ignorar que a politica é, como a vida, um cavallo chucro ou manhoso, e, não podendo ser bom cavalleiro, porque nunca o foi, devia ao menos parecer que o é.» Ah! emfim! exclamou o Xavier, cá estás engastado no bucho do peixe; já me não podes fugir.» Mas, em vão! a idéa fugia-lhe, sem deixar outro vestigio mais do que uma confusa reminiscencia. Sombrio, desesperado, começou a andar, a andar, até que a noite caiu; passando por um theatro, entrou; muita gente, muitas luzes, muita alegria; o coração aquietou-se-lhe. Cumulo de beneficios: era uma comedia do Pires, uma comedia nova. Sentou-se ao pé do autor, applaudiu a obra com enthusiasmo, com sincero amor de artista e de irmão. No segundo acto, scena VIII, estremeceu. «D. Eugenia, diz o galan a uma senhora, o cavallo póde ser comparado á vida, que é também um cavallo chucro ou manhoso; quem não for bom cavalleiro, deve cuidar de parecer que o é.» O autor, com o olhar timido, espiava no rosto do Xavier o effeito d'aquella reflexão, emquanto o Xavier repetia a mesma supplica das outras vezes;--«Meu querido annel...",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Scott_Joplin_-_Something_Doing_%281903%29.ogg",
+      "creator": "Scott Joplin",
+      "creator_origin": "American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Scott Joplin. 3 minutes to listen.",
+      "duration_seconds": 198,
+      "headline": "Scott Joplin - Something Doing (1903)",
+      "key": "culture:9b097d5bf7e66bb0ef9319b5",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Scott_Joplin_-_Something_Doing_%281903%29.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Scott_Joplin",
+      "original_recording_title": "Scott Joplin - Something Doing (1903)",
+      "provenance_id": "commons:156073686",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Gnissah",
+      "recording_description": "Scott Joplin - Something Doing (1903)",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Gnissah",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://commons.wikimedia.org/wiki/File:Scott_Joplin_-_Something_Doing_(1903).ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Scott_Joplin_-_Something_Doing_(1903).ogg",
+      "work_date": "2024-12-01",
+      "date": "2026-10-04",
+      "selected_on": "2026-10-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9b097d5bf7e66bb0ef9319b5",
+      "path": "culture/culture-9b097d5bf7e66bb0ef9319b5/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Scott Joplin - Something Doing (1903)",
+          "url": "https://commons.wikimedia.org/wiki/File:Scott_Joplin_-_Something_Doing_(1903).ogg",
+          "date": "2024-12-01",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-04",
+      "summary_basis": "Selected 4 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "5e4d5af13506023f85c2191480127ffb209cad134e465da861cfb67a1d68f069",
+      "creator": "Li Po",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "On the Banks of Jo-yeh, by Li Po. Translated by L. Cranmer-Byng.",
+      "excerpt": "They gather lilies down the stream,\nA net of willows drooping low\nHides boat from boat; and to and fro\nSweet whispered confidences seem\n    'Mid laughing trills to flow.\n\nIn the green deeps a shaft of gold\nLimns their elaborate attire;\nThrough silken sleeves the winds aspire,\nEmbalmed, to stray, and, growing bold,\n    Swell them to their desire.\n\nBut who are these, the cavaliers\nThat gleam along the river-side?\nBy three, by five they prance with pride\nBeyond the willow-line that sheers\n    Over the trellised tide.\n\nA charger neighs; one turns to start,\nCrushing the kingcups as he flies,\nAnd one pale maiden vainly tries\nTo hush the tumult in her heart\n    And veil the secret of her eyes.",
+      "headline": "On the Banks of Jo-yeh",
+      "key": "culture:6a128a140b616cf130a5632b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "They gather lilies down the stream,",
+        "A net of willows drooping low",
+        "Hides boat from boat; and to and fro",
+        "Sweet whispered confidences seem",
+        "    'Mid laughing trills to flow.",
+        "",
+        "In the green deeps a shaft of gold",
+        "Limns their elaborate attire;",
+        "Through silken sleeves the winds aspire,",
+        "Embalmed, to stray, and, growing bold,",
+        "    Swell them to their desire.",
+        "",
+        "But who are these, the cavaliers",
+        "That gleam along the river-side?",
+        "By three, by five they prance with pride",
+        "Beyond the willow-line that sheers",
+        "    Over the trellised tide.",
+        "",
+        "A charger neighs; one turns to start,",
+        "Crushing the kingcups as he flies,",
+        "And one pale maiden vainly tries",
+        "To hush the tumult in her heart",
+        "    And veil the secret of her eyes."
+      ],
+      "provenance_id": "pg:390:poem:239d422ebc740c78aa03ad9fc347267242c07265060cb691ff21f072602e0c79",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "On the Banks of Jo-yeh",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-10-04",
+      "selected_on": "2026-10-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-6a128a140b616cf130a5632b",
+      "path": "culture/culture-6a128a140b616cf130a5632b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "On the Banks of Jo-yeh",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-04",
+      "summary_basis": "Selected 4 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "They gather lilies down the stream,\nA net of willows drooping low\nHides boat from boat; and to and fro\nSweet whispered confidences seem\n    'Mid laughing trills to flow.\n\nIn the green deeps a shaft of gold\nLimns their elaborate attire;\nThrough silken sleeves the winds aspire,\nEmbalmed, to stray, and, growing bold,\n    Swell them to their desire.\n\nBut who are these, the cavaliers\nThat gleam along the river-side?\nBy three, by five they prance with pride\nBeyond the willow-line that sheers\n    Over the trellised tide.\n\nA charger neighs; one turns to start,\nCrushing the kingcups as he flies,\nAnd one pale maiden vainly tries\nTo hush the tumult in her heart\n    And veil the secret of her eyes.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "327e23ea2b74b4e9a6dba56e6c785b7e5cceecacfe7ba87166574adc1ebdc11c",
+      "creator": "Michel de Montaigne",
+      "creator_origin": "French",
+      "culture_type": "quote",
+      "deck": "From Essays. Translation by Charles Cotton.",
+      "excerpt": "Reason has so many forms that we know not to which to take; experience has no fewer; the consequence we would draw from the comparison of events is unsure, by reason they are always unlike.",
+      "headline": "Reason has so many forms that we know not to which to take; experience has no fewer; the consequence we would draw from the comparison of events is unsure, by reason they are always unlike.",
+      "key": "culture:45c389207b56db38f67387f1",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:3600:quote:327e23ea2b74b4e9a6dba56e6c785b7e5cceecacfe7ba87166574adc1ebdc11c",
+      "publisher": "Project Gutenberg",
+      "quote_context": "which is a means much more weak and cheap; but truth is so great a thing that we ought not to disdain any mediation that will guide us to it. Reason has so many forms that we know not to which to take; experience has no fewer; the consequence we would draw from the comparison of events is unsure, by reason they are always unlike. There is no quality so universal in this image of things as diversity and variety. Both the Greeks and the Latins and we, for the most express example of similitude, employ that of eggs; and yet there have been men, particularly one at Delphos, who could distinguish marks of difference amongst eggs so well that he never mistook one for another, and having many hens, could tell which had laid it.",
+      "rights": {
+        "basis": "Author died 1592. Translator: Charles Cotton, died 1687. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/3600"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "3bf0e2438123e1e2750d35ef37d3a13211bfd4e434315b1c78afc8cbd3d75931",
+      "source_locator": "CHAPTER I; paragraph 5028 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/3600",
+      "translator": "Charles Cotton",
+      "work_date": "1685–1686 translation",
+      "date": "2026-10-04",
+      "selected_on": "2026-10-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-45c389207b56db38f67387f1",
+      "path": "culture/culture-45c389207b56db38f67387f1/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Reason has so many forms that we know not to which to take; experience has no fewer; the consequence we would draw from the comparison of events is unsure, by reason they are always unlike.",
+          "url": "https://www.gutenberg.org/ebooks/3600",
+          "date": "1685–1686 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-04",
+      "summary_basis": "Selected 4 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Reason has so many forms that we know not to which to take; experience has no fewer; the consequence we would draw from the comparison of events is unsure, by reason they are always unlike.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "which is a means much more weak and cheap; but truth is so great a thing that we ought not to disdain any mediation that will guide us to it. Reason has so many forms that we know not to which to take; experience has no fewer; the consequence we would draw from the comparison of events is unsure, by reason they are always unlike. There is no quality so universal in this image of things as diversity and variety. Both the Greeks and the Latins and we, for the most express example of similitude, employ that of eggs; and yet there have been men, particularly one at Delphos, who could distinguish marks of difference amongst eggs so well that he never mistook one for another, and having many hens, could tell which had laid it.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Pilgrim's Flask with Saint Menas",
+      "art_type": "Ceramic",
+      "balance_origin": "Byzantine Empire",
+      "creator": "Artist unknown",
+      "creator_origin": "Byzantine Empire, Abu Mena (Egypt)",
+      "culture_type": "illustration",
+      "deck": "Pilgrim's Flask with Saint Menas. terracotta.",
+      "headline": "Pilgrim's Flask with Saint Menas",
+      "image_path": "assets/culture/4580ee8a374ee36fe528062f.jpg",
+      "key": "culture:4580ee8a374ee36fe528062f",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1999.231/1999.231_web.jpg",
+      "medium": "terracotta",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1999.231",
+      "provenance_id": "cma:160975",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of Bruce Ferrini in memory of Robert P. Bergman",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1999.231",
+      "work_date": "400–600 CE",
+      "date": "2026-10-04",
+      "selected_on": "2026-10-04",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-4580ee8a374ee36fe528062f",
+      "path": "culture/culture-4580ee8a374ee36fe528062f/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Pilgrim's Flask with Saint Menas",
+          "url": "https://clevelandart.org/art/1999.231",
+          "date": "400–600 CE",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-04",
+      "summary_basis": "Selected 4 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "White Nights",
       "content_fingerprint": "ffe851a5e8353a522abf5cb341dee5bf3bcb1572dd838406efb3cfe9f9ecf65c",
       "creator": "Fyodor Dostoyevsky",
