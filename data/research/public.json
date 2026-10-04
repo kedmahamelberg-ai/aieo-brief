@@ -1,8 +1,8 @@
 {
   "schema_version": "aieo_research_public_v1",
-  "period_start": "2026-09-27",
-  "period_end": "2026-10-03",
-  "generated_at": "2026-10-03T16:30:15.235349+00:00",
+  "period_start": "2026-09-28",
+  "period_end": "2026-10-04",
+  "generated_at": "2026-10-04T16:59:47.348652+00:00",
   "papers": [
     {
       "key": "paper:beaf7b4a534a2a4135c21b97",
@@ -5001,52 +5001,6 @@
       "full_text_retry_after": "2026-10-07",
       "paper_pages": 9,
       "paper_text_sha256": "bbeee8e9445325e0c4184a735e175f875726d3ec85f702539822f6c6cd556b4e"
-    },
-    {
-      "key": "paper:af880433876f4e2e2ebf458c",
-      "doi": "",
-      "arxiv_id": "2609.05404v1",
-      "original_headline": "Diffusion TV: Experiencing Diffusion Models through Tangible, Embodied Interaction",
-      "url": "https://arxiv.org/abs/2609.05404v1",
-      "date": "2026-09-04",
-      "authors": [
-        "Sihwa Park"
-      ],
-      "institutions": [],
-      "affiliation_source_url": "https://openalex.org/W7211880076",
-      "affiliation_checked_at": "2026-09-10T11:42:17.614996+00:00",
-      "source_verified_at": "2026-09-10T11:42:17.614996+00:00",
-      "publisher": "arXiv",
-      "source": "arxiv",
-      "research_label": "Preprint",
-      "evidence_scope": "paper_text",
-      "access": "Open paper",
-      "journal_reference": "",
-      "metadata_sha256": "08af9ec6c47719b7fbd1c8611075bd729bdf41526a6c688e835567c0f4dd729d",
-      "pdf_url": "https://arxiv.org/pdf/2609.05404v1",
-      "abstract_source_url": "https://arxiv.org/abs/2609.05404v1",
-      "abstract_format": "html",
-      "has_editorial": true,
-      "headline": "Hands-on television demo shows how artificial intelligence image generation works",
-      "deck": "A modified old television lets visitors explore the step-by-step creation of images produced by artificial intelligence, focusing on process over perfect outputs and inviting reflection rather than promises.",
-      "what_happened": "A modified old television lets visitors turn a dial to move images and sounds created by artificial intelligence through rough intermediate stages toward clearer outputs. The display emphasizes the process, not exact final results, and invites observation rather than instruction.",
-      "why_it_matters": "The setup helps non-experts grasp how generative artificial intelligence works without overpromising mastery of the full system.",
-      "body_paragraphs": [
-        "The exhibit uses a small, physical control and a step-by-step image change, helping people understand the process rather than numbers or measurable results.",
-        "This kind of demo can spark discussion about artificial intelligence, but a single display cannot fully show how real systems behave across many tasks or data sets."
-      ],
-      "limitation": "Notes come from informal feedback at a single exhibit and lack controlled measurements or wider, repeated testing.",
-      "summary_basis": "Summary of the paper",
-      "reading_minutes": 1,
-      "claim_status": "study",
-      "summary_status": "ready",
-      "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
-      "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
-      "research_reading_version": "paper-practitioner-v1",
-      "full_text_status": "read",
-      "full_text_retry_after": "2026-10-10",
-      "paper_pages": 5,
-      "paper_text_sha256": "383e30b282d5ff1baa12dc4658b110824306963604e4a9cee284029666fc5cbf"
     }
   ]
 }

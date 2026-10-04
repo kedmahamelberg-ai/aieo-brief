@@ -8,14 +8,13 @@
     "needs_model": 28,
     "needs_rebind": 0,
     "selected": 28,
-    "generated": 0,
+    "generated": 3,
     "rebound": 0,
-    "failed": 28,
+    "failed": 25,
     "deferred": 0
   },
   "failure_counts": {
-    "draft_quote_unsupported": 25,
-    "unexpected_error": 2,
+    "draft_quote_unsupported": 24,
     "unsupported_number": 1
   },
   "failed_items": [
@@ -28,13 +27,6 @@
     },
     {
       "event_id": "7a85b033-6869-4f5d-83eb-d5e89339bc09",
-      "error_type": "AIError",
-      "stage": "generation",
-      "code": "unexpected_error",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "e34755ff-8183-4989-be56-3977cfda724f",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -49,13 +41,6 @@
     },
     {
       "event_id": "5d404237-7865-49a7-8f00-419828f3ef2c",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "50c6a4dd-4224-4fb0-8eb8-c2f5a14bc9d2",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -83,17 +68,10 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
-      "event_id": "b79c077a-7627-428f-a44f-6b3288498f57",
+      "event_id": "7ecf23f5-1791-46d9-9696-3fafc15b29f0",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "7ecf23f5-1791-46d9-9696-3fafc15b29f0",
-      "error_type": "AIError",
-      "stage": "generation",
-      "code": "unexpected_error",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -216,5 +194,5 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-10-03T16:27:48.703951+00:00"
+  "updated_at": "2026-10-04T16:59:46.855694+00:00"
 }
