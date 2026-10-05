@@ -3876,6 +3876,123 @@
       },
       "output_sha256": "2a2b5c14d2f4765d3c42fc4c129ae3b2247a0f8d16bd51afbc21963261165bf8",
       "policy": "brief-english-display-v1"
+    },
+    "cc4e4f402bd024d67b59a0d72f53cf0f36848f0432120a5bcb64b02937c7b683": {
+      "english": {
+        "0": "SCO Artificial Intelligence Expert Forum held in Astana",
+        "1": "SCO Artificial Intelligence Expert Forum held in Astana",
+        "2": "SCO Artificial Intelligence Expert Forum held in Astana"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4285c48f4586b1bdeaee52772473ed728fd51442293c923d5aeb1bcd17c207a8",
+      "policy": "brief-english-display-v1"
+    },
+    "ac10b61f47338dbc5e1396a16ac7ff8d8fbf37ee6e09a0fc34b08304a80c0025": {
+      "english": {
+        "0": "Reporting from the French Federation of Diabetics. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c492cd7cfeb6f311fa06f1ef173717e308601a8141484e0df39be82f955f2f4b",
+      "policy": "brief-english-display-v1"
+    },
+    "9e19068c74b85d11dc08093fd41103983b70730fc176d32f6d57139a00657275": {
+      "english": {
+        "0": "Reporting from the Robert-Sauvé Research Institute. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b6dfdf7c3557132f5b33917a4f0ec00eb6cd9c1be63a783b2901b5f77c63a82d",
+      "policy": "brief-english-display-v1"
+    },
+    "39ff6bd79b28ba42f87ca02cfe6c7b7cafafa780f56b4330319df38f583910ba": {
+      "english": {
+        "0": "Reporting from Harbin Institute of Technology. Open the source for the article.",
+        "1": "Harbin Institute of Technology",
+        "2": "Harbin Institute of Technology"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9e6ddb09b712c35420eb3c931ef452233eb385a83ea9c798a1b46fc4b606ae29",
+      "policy": "brief-english-display-v1"
+    },
+    "0c4653c35fa40cbb626926e91de8f08957744abfc6365c7efa7b910f1c564669": {
+      "english": {
+        "0": "Transcript: Trump ignores AI regulation",
+        "1": "Transcript: Trump ignores AI regulation"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b2e02729e840b40f7f3c1e59b2c115bff7cb709483734d612d7357994bf66be5",
+      "policy": "brief-english-display-v1"
+    },
+    "303b3a3e51ae368332bd8f0f2e7ce461a4b67075562dd4dd0de4f3dd99b9c0f1": {
+      "english": {
+        "0": "Reporting from The Beijing News. Open the source for the article.",
+        "1": "Beijing News",
+        "2": "Xinhua Net",
+        "3": "Caixin",
+        "4": "Beijing News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1fc8c7cd267af352a25e991394ef140e18bf5f5d26a1cd03d52d8198345fa2b5",
+      "policy": "brief-english-display-v1"
     }
   }
 }
