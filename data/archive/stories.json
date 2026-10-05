@@ -2,6 +2,402 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Essays",
+      "content_fingerprint": "136696e0dd8924a5fbc8e51ed995daecc59cd84e1d6c1c3a4655054bb241a751",
+      "creator": "Francis Bacon",
+      "creator_origin": "English",
+      "culture_type": "text",
+      "deck": "A passage from Essays.",
+      "excerpt": "That the usurer breaketh the first law, that was made for mankind after the fall, which was, in sudore vultus tui comedes panem tuum; not, in sudore vultus alieni. That usurers should have orange-tawny bonnets, because they do judaize. That it is against nature for money to beget money; and the like. I say this only, that usury is a concessum propter duritiem cordis; for since there must be borrowing and lending, and men are so hard of heart, as they will not lend freely, usury must be permitted. Some others, have made suspicious and cunning propositions of banks, discovery of men's estates, and other inventions. But few have spoken of usury usefully. It is good to set before us, the incommodities and commodities of usury, that the good, may be either weighed out or culled out; and warily to provide, that while we make forth to that which is better, we meet not with that which is worse.",
+      "headline": "Essays · a short reading",
+      "key": "culture:fee5b135aec9f013704f09d2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:575:passage:136696e0dd8924a5fbc8e51ed995daecc59cd84e1d6c1c3a4655054bb241a751",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1626. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/575"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1e8cae20a522dc2c3af515c7903974e38299c215afdf22708699cc478c409f4e",
+      "source_locator": "Of Truth; paragraph 229 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/575",
+      "translator": "",
+      "work_date": "1625",
+      "date": "2026-10-05",
+      "selected_on": "2026-10-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-fee5b135aec9f013704f09d2",
+      "path": "culture/culture-fee5b135aec9f013704f09d2/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Essays · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/575",
+          "date": "1625",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-05",
+      "summary_basis": "Selected 5 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "That the usurer breaketh the first law, that was made for mankind after the fall, which was, in sudore vultus tui comedes panem tuum; not, in sudore vultus alieni. That usurers should have orange-tawny bonnets, because they do judaize. That it is against nature for money to beget money; and the like. I say this only, that usury is a concessum propter duritiem cordis; for since there must be borrowing and lending, and men are so hard of heart, as they will not lend freely, usury must be permitted. Some others, have made suspicious and cunning propositions of banks, discovery of men's estates, and other inventions. But few have spoken of usury usefully. It is good to set before us, the incommodities and commodities of usury, that the good, may be either weighed out or culled out; and warily to provide, that while we make forth to that which is better, we meet not with that which is worse.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "dd4fdc895ca701d665597d293ad80cf7ad6d8459fcde2893ec5c838e364e4fb4",
+      "creator": "Hafiz",
+      "creator_origin": "Iranian · Persian",
+      "culture_type": "poetry",
+      "deck": "Divan of Hafiz · XIII, by Hafiz. Translated by Gertrude Bell.",
+      "excerpt": "Lady that hast my heart within thy hand,\n          Thou heed’st me not; and if thou turn thine ear\n          Unto the wise, thou shalt not understand—\n          Behold the fault is thine, our words were clear.\n          For all the tumult in my drunken brain\n          Praise God! who trieth not His slave in vain;\n          Nor this world nor the next shall make me fear!\n\n          My weary heart eternal silence keeps—\n          I know not who has slipped into my heart;\n          Though I am silent, one within me weeps.\n          My soul shall rend the painted veil apart.\n          Where art thou, Minstrel! touch thy saddest strings\n          Till clothed in music such as sorrow sings,\n          My mournful story from thy zither sweeps.\n\n          Lo, not at any time I lent mine ear\n          To hearken to the glories of the earth;\n          Only thy beauty to mine eyes was dear.\n          Sleep has forsaken me, and from the birth\n          Of night till day I weave bright dreams of thee;\n          Drunk with a hundred nights of revelry,\n          Where is the tavern that sets forth such cheer!\n\n          My heart, sad hermit, stains the cloister floor\n          With drops of blood, the sweat of anguish dire;\n          Ah, wash me clean, and o’er my body pour\n          Love’s generous wine! the worshippers of fire\n          Have bowed them down and magnified my name,\n          For in my heart there burns a living flame,\n          Transpiercing Death’s impenetrable door.\n\n          What instrument through last night’s silence rang?\n          My life into his lay the minstrel wove,\n          And filled my brain with the sweet song he sang.\n          It was the proclamation of thy love\n          That shook the strings of Life’s most secret lyre,\n          And still my breast heaves with last night’s desire,\n          For countless echoes from that music sprang.\n\n          And ever, since the time that Hafiz heard\n          His Lady’s voice, as from a rocky hill\n          Reverberates the softly spoken word,\n          So echoes of desire his bosom fill.",
+      "headline": "Divan of Hafiz · XIII",
+      "key": "culture:dfbad0f13047dcd6a2806268",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Lady that hast my heart within thy hand,",
+        "          Thou heed’st me not; and if thou turn thine ear",
+        "          Unto the wise, thou shalt not understand—",
+        "          Behold the fault is thine, our words were clear.",
+        "          For all the tumult in my drunken brain",
+        "          Praise God! who trieth not His slave in vain;",
+        "          Nor this world nor the next shall make me fear!",
+        "",
+        "          My weary heart eternal silence keeps—",
+        "          I know not who has slipped into my heart;",
+        "          Though I am silent, one within me weeps.",
+        "          My soul shall rend the painted veil apart.",
+        "          Where art thou, Minstrel! touch thy saddest strings",
+        "          Till clothed in music such as sorrow sings,",
+        "          My mournful story from thy zither sweeps.",
+        "",
+        "          Lo, not at any time I lent mine ear",
+        "          To hearken to the glories of the earth;",
+        "          Only thy beauty to mine eyes was dear.",
+        "          Sleep has forsaken me, and from the birth",
+        "          Of night till day I weave bright dreams of thee;",
+        "          Drunk with a hundred nights of revelry,",
+        "          Where is the tavern that sets forth such cheer!",
+        "",
+        "          My heart, sad hermit, stains the cloister floor",
+        "          With drops of blood, the sweat of anguish dire;",
+        "          Ah, wash me clean, and o’er my body pour",
+        "          Love’s generous wine! the worshippers of fire",
+        "          Have bowed them down and magnified my name,",
+        "          For in my heart there burns a living flame,",
+        "          Transpiercing Death’s impenetrable door.",
+        "",
+        "          What instrument through last night’s silence rang?",
+        "          My life into his lay the minstrel wove,",
+        "          And filled my brain with the sweet song he sang.",
+        "          It was the proclamation of thy love",
+        "          That shook the strings of Life’s most secret lyre,",
+        "          And still my breast heaves with last night’s desire,",
+        "          For countless echoes from that music sprang.",
+        "",
+        "          And ever, since the time that Hafiz heard",
+        "          His Lady’s voice, as from a rocky hill",
+        "          Reverberates the softly spoken word,",
+        "          So echoes of desire his bosom fill."
+      ],
+      "provenance_id": "pg:74883:poem:e9392c364151dc47b56c79c7e8ddfa94f6621fc78b76a0caffbe13c9565197fb",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 14th century. Translator: Gertrude Bell, died 1926. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/74883"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ed837d62a8df162d16126a48d3505e7369407ad71e9eabc9372291e34365bddb",
+      "source_locator": "XIII",
+      "source_url": "https://www.gutenberg.org/ebooks/74883",
+      "translator": "Gertrude Bell",
+      "work_date": "1897 translation",
+      "date": "2026-10-05",
+      "selected_on": "2026-10-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dfbad0f13047dcd6a2806268",
+      "path": "culture/culture-dfbad0f13047dcd6a2806268/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Divan of Hafiz · XIII",
+          "url": "https://www.gutenberg.org/ebooks/74883",
+          "date": "1897 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-05",
+      "summary_basis": "Selected 5 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 2,
+      "excerpt_parts": [
+        {
+          "text": "Lady that hast my heart within thy hand,\n          Thou heed’st me not; and if thou turn thine ear\n          Unto the wise, thou shalt not understand—\n          Behold the fault is thine, our words were clear.\n          For all the tumult in my drunken brain\n          Praise God! who trieth not His slave in vain;\n          Nor this world nor the next shall make me fear!\n\n          My weary heart eternal silence keeps—\n          I know not who has slipped into my heart;\n          Though I am silent, one within me weeps.\n          My soul shall rend the painted veil apart.\n          Where art thou, Minstrel! touch thy saddest strings\n          Till clothed in music such as sorrow sings,\n          My mournful story from thy zither sweeps.\n\n          Lo, not at any time I lent mine ear\n          To hearken to the glories of the earth;\n          Only thy beauty to mine eyes was dear.\n          Sleep has forsaken me, and from the birth\n          Of night till day I weave bright dreams of thee;\n          Drunk with a hundred nights of revelry,\n          Where is the tavern that sets forth such cheer!\n\n          My heart, sad hermit, stains the cloister floor\n          With drops of blood, the sweat of anguish dire;\n          Ah, wash me clean, and o’er my body pour\n          Love’s generous wine! the worshippers of fire\n          Have bowed them down and magnified my name,\n          For in my heart there burns a living flame,\n          Transpiercing Death’s impenetrable door.\n\n          What instrument through last night’s silence rang?\n          My life into his lay the minstrel wove,\n          And filled my brain with the sweet song he sang.\n          It was the proclamation of thy love\n          That shook the strings of Life’s most secret lyre,\n          And still my breast heaves with last night’s desire,\n          For countless echoes from that music sprang.\n\n          And ever, since the time that Hafiz heard\n          His Lady’s voice, as from a rocky hill\n          Reverberates the softly spoken word,\n          So echoes of desire his bosom fill.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Saying Farewell at Xunyang (Song of the Pipa)",
+      "art_type": "Painting",
+      "balance_origin": "China",
+      "creator": "Wen Boren (Chinese, 1502–1575)",
+      "creator_origin": "China, Ming dynasty (1368–1644)",
+      "culture_type": "illustration",
+      "deck": "Saying Farewell at Xunyang (Song of the Pipa). handscroll; ink and color on paper.",
+      "headline": "Saying Farewell at Xunyang (Song of the Pipa)",
+      "image_path": "assets/culture/a5e7b3fd9e0bc2996ed5b726.jpg",
+      "key": "culture:a5e7b3fd9e0bc2996ed5b726",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1954.581/1954.581_web.jpg",
+      "medium": "handscroll; ink and color on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1954.581",
+      "provenance_id": "cma:132014",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1954.581",
+      "work_date": "1500s",
+      "date": "2026-10-05",
+      "selected_on": "2026-10-05",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-a5e7b3fd9e0bc2996ed5b726",
+      "path": "culture/culture-a5e7b3fd9e0bc2996ed5b726/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Saying Farewell at Xunyang (Song of the Pipa)",
+          "url": "https://clevelandart.org/art/1954.581",
+          "date": "1500s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-05",
+      "summary_basis": "Selected 5 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Madman",
+      "content_fingerprint": "89f2e75beee79b650c5334243eae6a25203ad77f4b51ef46bc092ae96337365f",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "quote",
+      "deck": "From The Madman.",
+      "excerpt": "My friend, thou art good and cautious and wise; nay, thou art perfect--and I, too, speak with thee wisely and cautiously.",
+      "headline": "My friend, thou art good and cautious and wise; nay, thou art perfect--and I, too, speak with thee wisely and cautiously.",
+      "key": "culture:9dcc83ba5452be1aa52829d0",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:5616:quote:89f2e75beee79b650c5334243eae6a25203ad77f4b51ef46bc092ae96337365f",
+      "publisher": "Project Gutenberg",
+      "quote_context": "My friend, thou art good and cautious and wise; nay, thou art perfect--and I, too, speak with thee wisely and cautiously. And yet I am mad. But I mask my madness. I would be mad alone.",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/5616"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1323c30d086bdcffe136e37baecb86d15718c773239ad3a50ef05ef63bbafcbc",
+      "source_locator": "By Kahlil Gibran; paragraph 27 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/5616",
+      "translator": "",
+      "work_date": "1918",
+      "date": "2026-10-05",
+      "selected_on": "2026-10-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9dcc83ba5452be1aa52829d0",
+      "path": "culture/culture-9dcc83ba5452be1aa52829d0/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "My friend, thou art good and cautious and wise; nay, thou art perfect--and I, too, speak with thee wisely and cautiously.",
+          "url": "https://www.gutenberg.org/ebooks/5616",
+          "date": "1918",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-05",
+      "summary_basis": "Selected 5 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "My friend, thou art good and cautious and wise; nay, thou art perfect--and I, too, speak with thee wisely and cautiously.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "My friend, thou art good and cautious and wise; nay, thou art perfect--and I, too, speak with thee wisely and cautiously. And yet I am mad. But I mask my madness. I would be mad alone.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/0/09/Maurice_Ravel_-_Pavane_pour_une_infante_d%C3%A9funte_-_David_Hernando_Vitores_-_Kayoko_Morimoto_%28Wasei_Duo%29.oga",
+      "creator": "Maurice Ravel",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Maurice Ravel. 5 minutes to listen.",
+      "duration_seconds": 332,
+      "headline": "Maurice Ravel - Pavane pour une infante défunte - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+      "key": "culture:27415484a657e20b1e7c8e65",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/Maurice_Ravel_-_Pavane_pour_une_infante_d%C3%A9funte_-_David_Hernando_Vitores_-_Kayoko_Morimoto_%28Wasei_Duo%29.oga",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Maurice_Ravel",
+      "original_recording_title": "Maurice Ravel - Pavane pour une infante défunte - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+      "provenance_id": "commons:44923346",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Maurice Ravel",
+      "recording_description": "Pavane por une infante defunte",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Maurice Ravel",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "David Hernando Vitores y Kayoko Morimoto ( Wasei Dúo ). Saxophone and piano. Performed at Museum of Romanticism (Madrid) on November 3, 2015.",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_-_Pavane_pour_une_infante_d%C3%A9funte_-_David_Hernando_Vitores_-_Kayoko_Morimoto_(Wasei_Duo).oga",
+      "work_date": "2015-11-10",
+      "date": "2026-10-05",
+      "selected_on": "2026-10-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-27415484a657e20b1e7c8e65",
+      "path": "culture/culture-27415484a657e20b1e7c8e65/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Maurice Ravel - Pavane pour une infante défunte - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+          "url": "https://commons.wikimedia.org/wiki/File:Maurice_Ravel_-_Pavane_pour_une_infante_d%C3%A9funte_-_David_Hernando_Vitores_-_Kayoko_Morimoto_(Wasei_Duo).oga",
+          "date": "2015-11-10",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-05",
+      "summary_basis": "Selected 5 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Papéis Avulsos",
       "content_fingerprint": "af507eff0d2444c41621a8ca5638e2f46f72ae43d0e3b7aff635ed2dbc596019",
       "creator": "Machado de Assis",

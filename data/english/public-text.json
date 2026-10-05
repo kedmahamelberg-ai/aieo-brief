@@ -3811,6 +3811,71 @@
       },
       "output_sha256": "cdfd5a7f7561151adf9846f0f2b9f2dee05fb2c518fdeea3dc3879505529d4e1",
       "policy": "brief-english-display-v1"
+    },
+    "fb965c1ffbd5fdc8163819f671062c14dc6349ec22bec0d5ecf51015f9a5c6ed": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Divan of Hafiz · XIII",
+        "2": "XIII",
+        "3": "Divan of Hafiz · XIII"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f0254be996285b542f18b553d4d093b07f9d6f2e80cf67ae97736389678ce230",
+      "policy": "brief-english-display-v1"
+    },
+    "8c8e22cd0cbcef6c8eb5430ed770e80ef1d71168bf44adbc9bee4704e2ca9d0c": {
+      "english": {
+        "0": "Saying Farewell at Xunyang (Song of the Pipa)",
+        "1": "China, Ming dynasty (1368–1644)",
+        "2": "Saying Farewell at Xunyang (Song of the Pipa)",
+        "3": "CC0 image",
+        "4": "Saying Farewell at Xunyang (Song of the Pipa)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a4609b76377b6b5958a033b2525091b0c2286d385412aca3f5aa74007a9f8892",
+      "policy": "brief-english-display-v1"
+    },
+    "b8995b6cd92bb424c99b17c5e84e4a7ceeecaf156a2c0e749c57f228ea4995df": {
+      "english": {
+        "0": "Composer",
+        "1": "Maurice Ravel - Pavane for a Dead Infanta - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)",
+        "2": "Pavane for a Dead Infanta",
+        "3": "David Hernando Vitores and Kayoko Morimoto (Wasei Duo). Saxophone and piano. Performed at the Museum of Romanticism (Madrid) on November 3, 2015.",
+        "4": "Maurice Ravel - Pavane for a Dead Infanta - David Hernando Vitores - Kayoko Morimoto (Wasei Duo)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2a2b5c14d2f4765d3c42fc4c129ae3b2247a0f8d16bd51afbc21963261165bf8",
+      "policy": "brief-english-display-v1"
     }
   }
 }
