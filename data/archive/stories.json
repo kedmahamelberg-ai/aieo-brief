@@ -2,6 +2,393 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Qur'an Manuscript Folio (verso)",
+      "art_type": "Manuscript",
+      "balance_origin": "Southern Spain",
+      "creator": "Artist unknown",
+      "creator_origin": "Southern Spain",
+      "culture_type": "illustration",
+      "deck": "Qur'an Manuscript Folio (verso). ink, gold, and color on parchment.",
+      "headline": "Qur'an Manuscript Folio (verso)",
+      "image_path": "assets/culture/f67f5802fda7f12138a604d8.jpg",
+      "key": "culture:f67f5802fda7f12138a604d8",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1933.440.b/1933.440.b_web.jpg",
+      "medium": "ink, gold, and color on parchment",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1933.440.b",
+      "provenance_id": "cma:114192",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Edward L. Whittemore Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1933.440.b",
+      "work_date": "1200s–1300s",
+      "date": "2026-10-06",
+      "selected_on": "2026-10-06",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-f67f5802fda7f12138a604d8",
+      "path": "culture/culture-f67f5802fda7f12138a604d8/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Qur'an Manuscript Folio (verso)",
+          "url": "https://clevelandart.org/art/1933.440.b",
+          "date": "1200s–1300s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-06",
+      "summary_basis": "Selected 6 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "736b8ae14824c4e5f25b3175f22c639727e35385523dc05b06068a3b30d3fa73",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "The truly beautiful must always be in it.",
+      "headline": "The truly beautiful must always be in it.",
+      "key": "culture:61c829c1928741dc6f7a1170",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:736b8ae14824c4e5f25b3175f22c639727e35385523dc05b06068a3b30d3fa73",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Tea is a work of art and needs a master hand to bring out its noblest qualities. We have good and bad tea, as we have good and bad paintings--generally the latter. There is no single recipe for making the perfect tea, as there are no rules for producing a Titian or a Sesson. Each preparation of the leaves has its individuality, its special affinity with water and heat, its own method of telling a story. The truly beautiful must always be in it. How much do we not suffer through the constant failure of society to recognise this simple and fundamental law of art and life; Lichilai, a Sung poet, has sadly remarked that there were three most deplorable things in the world: the spoiling of fine youths through false education, the degradation of fine art through vulgar admiration, and the utter waste of fine tea through incompetent manipulation.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 20 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-10-06",
+      "selected_on": "2026-10-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-61c829c1928741dc6f7a1170",
+      "path": "culture/culture-61c829c1928741dc6f7a1170/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The truly beautiful must always be in it.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-06",
+      "summary_basis": "Selected 6 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The truly beautiful must always be in it.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Tea is a work of art and needs a master hand to bring out its noblest qualities. We have good and bad tea, as we have good and bad paintings--generally the latter. There is no single recipe for making the perfect tea, as there are no rules for producing a Titian or a Sesson. Each preparation of the leaves has its individuality, its special affinity with water and heat, its own method of telling a story. The truly beautiful must always be in it. How much do we not suffer through the constant failure of society to recognise this simple and fundamental law of art and life; Lichilai, a Sung poet, has sadly remarked that there were three most deplorable things in the world: the spoiling of fine youths through false education, the degradation of fine art through vulgar admiration, and the utter waste of fine tea through incompetent manipulation.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/7/71/Mussorgsky_Pictures_at_an_Exhibition_Part3.ogg",
+      "creator": "Modest Mussorgsky",
+      "creator_origin": "Russian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Modest Mussorgsky. 1 minutes to listen.",
+      "duration_seconds": 87,
+      "headline": "Mussorgsky Pictures at an Exhibition Part3",
+      "key": "culture:292cb945e5fa3352d83876a5",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/7/71/Mussorgsky_Pictures_at_an_Exhibition_Part3.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Modest_Mussorgsky",
+      "original_recording_title": "Mussorgsky Pictures at an Exhibition Part3",
+      "provenance_id": "commons:4715223",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Bernd Krueger",
+      "recording_description": "Modest Mussorgsky: Pictures at an Exhibition Part 3 Promenade - The Tuileries The original piano version",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Bernd Krueger",
+        "label": "CC BY-SA 2.0 de (source-declared)",
+        "source_credit": "http://www.piano-midi.de/ogg.htm (created in MIDI and recorded from a digital piano)",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mussorgsky_Pictures_at_an_Exhibition_Part3.ogg",
+      "work_date": "2008-08-20",
+      "date": "2026-10-06",
+      "selected_on": "2026-10-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-292cb945e5fa3352d83876a5",
+      "path": "culture/culture-292cb945e5fa3352d83876a5/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Mussorgsky Pictures at an Exhibition Part3",
+          "url": "https://commons.wikimedia.org/wiki/File:Mussorgsky_Pictures_at_an_Exhibition_Part3.ogg",
+          "date": "2008-08-20",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-06",
+      "summary_basis": "Selected 6 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "3106d2517316adda12492f93ad5ed843594009f6ad8c7bb243abdb41f747967e",
+      "creator": "Christina Rossetti",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by Christina Rossetti.",
+      "excerpt": "When I was dead, my spirit turned\nTo seek the much-frequented house:\nI passed the door, and saw my friends\nFeasting beneath green orange boughs;\nFrom hand to hand they pushed the wine,\nThey sucked the pulp of plum and peach;\nThey sang, they jested, and they laughed,\nFor each was loved of each.\n\nI listened to thier honest chat:\nSaid one: \"To-morrow we shall be\nPlod plod along the featureless sands,\nAnd coasting miles and miles of sea.\"\nSaid one: \"Before the turn of tide\nWe will achieve the eyrie-seat.\"\nSaid one: \"To-morrow shall be like\nTo-day, but much more sweet.\"\n\n\"To-morrow,\" said they, strong with hope,\nAnd dwelt upon the pleasant way:\n\"To-morrow,\" cried they, one and all,\nWhile no one spoke of yesterday.\nTheir life stood full at blessed noon;\nI, only I, had passed away:\n\"To-morrow and to-day,\" they cried;\nI was of yesterday.\n\nI shivered comfortless, but cast\nNo chill across the table-cloth;\nI, all-forgotten, shivered, sad\nTo stay, and yet to part how loth:\nI passed from the familiar room,\nI who from love had passed away,\nLike the remembrance of a guest\nThat tarrieth but a day.",
+      "headline": "At Home",
+      "key": "culture:0b546dac665a9d468556f748",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "When I was dead, my spirit turned",
+        "To seek the much-frequented house:",
+        "I passed the door, and saw my friends",
+        "Feasting beneath green orange boughs;",
+        "From hand to hand they pushed the wine,",
+        "They sucked the pulp of plum and peach;",
+        "They sang, they jested, and they laughed,",
+        "For each was loved of each.",
+        "",
+        "I listened to thier honest chat:",
+        "Said one: \"To-morrow we shall be",
+        "Plod plod along the featureless sands,",
+        "And coasting miles and miles of sea.\"",
+        "Said one: \"Before the turn of tide",
+        "We will achieve the eyrie-seat.\"",
+        "Said one: \"To-morrow shall be like",
+        "To-day, but much more sweet.\"",
+        "",
+        "\"To-morrow,\" said they, strong with hope,",
+        "And dwelt upon the pleasant way:",
+        "\"To-morrow,\" cried they, one and all,",
+        "While no one spoke of yesterday.",
+        "Their life stood full at blessed noon;",
+        "I, only I, had passed away:",
+        "\"To-morrow and to-day,\" they cried;",
+        "I was of yesterday.",
+        "",
+        "I shivered comfortless, but cast",
+        "No chill across the table-cloth;",
+        "I, all-forgotten, shivered, sad",
+        "To stay, and yet to part how loth:",
+        "I passed from the familiar room,",
+        "I who from love had passed away,",
+        "Like the remembrance of a guest",
+        "That tarrieth but a day."
+      ],
+      "provenance_id": "poetrydb:Christina Rossetti:At Home",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1894.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "63c7f6059098d42954dd5a177ceaf6a95c4e3384387dc281e24d2abfd0601200",
+      "source_locator": "At Home",
+      "source_url": "https://poetrydb.org/title/At%20Home:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1894",
+      "date": "2026-10-06",
+      "selected_on": "2026-10-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0b546dac665a9d468556f748",
+      "path": "culture/culture-0b546dac665a9d468556f748/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "At Home",
+          "url": "https://poetrydb.org/title/At%20Home:abs/lines.text",
+          "date": "Before 1894",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-06",
+      "summary_basis": "Selected 6 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "When I was dead, my spirit turned\nTo seek the much-frequented house:\nI passed the door, and saw my friends\nFeasting beneath green orange boughs;\nFrom hand to hand they pushed the wine,\nThey sucked the pulp of plum and peach;\nThey sang, they jested, and they laughed,\nFor each was loved of each.\n\nI listened to thier honest chat:\nSaid one: \"To-morrow we shall be\nPlod plod along the featureless sands,\nAnd coasting miles and miles of sea.\"\nSaid one: \"Before the turn of tide\nWe will achieve the eyrie-seat.\"\nSaid one: \"To-morrow shall be like\nTo-day, but much more sweet.\"\n\n\"To-morrow,\" said they, strong with hope,\nAnd dwelt upon the pleasant way:\n\"To-morrow,\" cried they, one and all,\nWhile no one spoke of yesterday.\nTheir life stood full at blessed noon;\nI, only I, had passed away:\n\"To-morrow and to-day,\" they cried;\nI was of yesterday.\n\nI shivered comfortless, but cast\nNo chill across the table-cloth;\nI, all-forgotten, shivered, sad\nTo stay, and yet to part how loth:\nI passed from the familiar room,\nI who from love had passed away,\nLike the remembrance of a guest\nThat tarrieth but a day.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "In Love With the Czarina",
+      "content_fingerprint": "2127b5f59dfad246fa2958d6325de9a9549d96e9047c965ddfb448de02fb7df0",
+      "creator": "Mór Jókai",
+      "creator_origin": "Hungarian",
+      "culture_type": "text",
+      "deck": "A passage from In Love With the Czarina. Translated by Louis Felbermann.",
+      "excerpt": "Timur's camp was always full of learned men, poets, and lute singers. When he devastated a country or uprooted a town, there was never a living soul left behind his track--not the sound of a child's cry, the bark of a dog, or the crow of a cock--everything was destroyed!",
+      "headline": "In Love With the Czarina · a short reading",
+      "key": "culture:0292f7a351a2b57cf6fced89",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:34574:passage:2127b5f59dfad246fa2958d6325de9a9549d96e9047c965ddfb448de02fb7df0",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1904. Translator: Louis Felbermann, died 1937. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/34574"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2dce2a32dc7503291c66c84c4c4c30f2274b5d713fee023419da2d15ea47403c",
+      "source_locator": "IN LOVE WITH THE CZARINA; paragraph 103 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/34574",
+      "translator": "Louis Felbermann",
+      "work_date": "1894 translation",
+      "date": "2026-10-06",
+      "selected_on": "2026-10-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0292f7a351a2b57cf6fced89",
+      "path": "culture/culture-0292f7a351a2b57cf6fced89/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "In Love With the Czarina · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/34574",
+          "date": "1894 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-06",
+      "summary_basis": "Selected 6 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Timur's camp was always full of learned men, poets, and lute singers. When he devastated a country or uprooted a town, there was never a living soul left behind his track--not the sound of a child's cry, the bark of a dog, or the crow of a cock--everything was destroyed!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Essays",
       "content_fingerprint": "136696e0dd8924a5fbc8e51ed995daecc59cd84e1d6c1c3a4655054bb241a751",
       "creator": "Francis Bacon",
@@ -5886,8 +6273,8 @@
       "key": "event:f31eac79-309d-4af4-bdbe-7ebedbb6c9f6",
       "event_id": "f31eac79-309d-4af4-bdbe-7ebedbb6c9f6",
       "kind": "news",
-      "slug": "development-f31eac79-309d-4af4-bdbe-7ebedbb6c9f6",
-      "path": "story/development-f31eac79-309d-4af4-bdbe-7ebedbb6c9f6/index.html",
+      "slug": "europe-there-no-technological-actor-willing-klaba-ovhcloud",
+      "path": "story/europe-there-no-technological-actor-willing-klaba-ovhcloud/index.html",
       "headline": "In Europe, there is no technological actor willing to invest in artificial intelligence,\" laments Octave Klaba (OVHcloud)",
       "original_headline": "In Europe, there is no technological actor willing to invest in artificial intelligence,\" laments Octave Klaba (OVHcloud)",
       "deck": "Reporting from LCP-Assemblée nationale. Open the source for the article.",
@@ -5928,7 +6315,11 @@
       "has_editorial": false,
       "edition": "2026-W40",
       "period_start": "2026-09-28",
-      "period_end": "2026-10-04"
+      "period_end": "2026-10-04",
+      "legacy_paths": [
+        "story/development-f31eac79-309d-4af4-bdbe-7ebedbb6c9f6/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:dff2b4a5-1c4b-4b8c-bedb-5ca5f3aae71c",
@@ -6143,8 +6534,8 @@
       "key": "event:8c21a9f0-dccb-4dc3-b291-59a703f158f1",
       "event_id": "8c21a9f0-dccb-4dc3-b291-59a703f158f1",
       "kind": "news",
-      "slug": "development-8c21a9f0-dccb-4dc3-b291-59a703f158f1",
-      "path": "story/development-8c21a9f0-dccb-4dc3-b291-59a703f158f1/index.html",
+      "slug": "notice-organizing-special-training-course-artificial-social-sciences",
+      "path": "story/notice-organizing-special-training-course-artificial-social-sciences/index.html",
       "headline": "Notice on Organizing a Special Training Course on “Artificial Intelligence + Philosophy and Social Sciences”",
       "original_headline": "Notice on Organizing a Special Training Course on “Artificial Intelligence + Philosophy and Social Sciences”",
       "deck": "Reporting from 中国社会科学网. Open the source for the article.",
@@ -6185,7 +6576,11 @@
       "has_editorial": false,
       "edition": "2026-W40",
       "period_start": "2026-09-28",
-      "period_end": "2026-10-04"
+      "period_end": "2026-10-04",
+      "legacy_paths": [
+        "story/development-8c21a9f0-dccb-4dc3-b291-59a703f158f1/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:7fc5e843-c790-4525-8cc6-c4e73d3c659d",

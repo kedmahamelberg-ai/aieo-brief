@@ -3993,6 +3993,123 @@
       },
       "output_sha256": "1fc8c7cd267af352a25e991394ef140e18bf5f5d26a1cd03d52d8198345fa2b5",
       "policy": "brief-english-display-v1"
+    },
+    "12906bf622e4857d63d8feba77877a6e395fedc0dd13642d53a037bf42f7add9": {
+      "english": {
+        "0": "Reporting from LCP - National Assembly. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a1901438bcc70d35e436e6ff4a88fcd4c08740b0ad9779d13805d21b07811405",
+      "policy": "brief-english-display-v1"
+    },
+    "e1a5d2d8edbf3f547d6ce5ae8796832c9d61922e507d3face63e7ccd8bb2d6bb": {
+      "english": {
+        "0": "Reporting from China Social Sciences Network. Open the source for the article.",
+        "1": "China Social Sciences Network",
+        "2": "China Social Sciences Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "556a40707ee7b48ac7d8f6b22e4d4a8fedbe60a2e07540f29f1c5347af8e40c9",
+      "policy": "brief-english-display-v1"
+    },
+    "deb9746ced412386fa10ea8d6ef483e998d60d7c21cfbc281c595b964605d8de": {
+      "english": {
+        "0": "Qur'an Manuscript Folio (verso)",
+        "1": "Qur'an Manuscript Folio (verso)",
+        "2": "CC0 image",
+        "3": "Qur'an Manuscript Folio (verso)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a10ce9044ca018d032d97e744ed2d7a6af076a1f30b122697971fdf5c97c3312",
+      "policy": "brief-english-display-v1"
+    },
+    "6854c0d122baa951454e80911c108f08ecd0886577360bc66e112302dc82bc91": {
+      "english": {
+        "0": "Russian",
+        "1": "Composer",
+        "2": "Mussorgsky Pictures at an Exhibition Part3",
+        "3": "Mussorgsky Pictures at an Exhibition Part3"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e39841850e996e7276af28031d85ee08224d67780a6f34aff2e3afe129beb347",
+      "policy": "brief-english-display-v1"
+    },
+    "ddd719c982dc7ff42ea019c45e5897619d3b84ae4a82e8e4c830a3d53feca226": {
+      "english": {
+        "0": "English",
+        "1": "A poem by Christina Rossetti."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "38e3150f1daa314cbe6dcc787ecb06280004ec043fe65c97ad134fbc5467b89c",
+      "policy": "brief-english-display-v1"
+    },
+    "ad27366a503ce5fb9e860f30b571bf5a1a2154ed0b0d96bf57f910de9e52681c": {
+      "english": {
+        "0": "Hungarian"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "509120c837565bab95659edc647a1a66688aaac970878cb504f62a245c5adcfd",
+      "policy": "brief-english-display-v1"
     }
   }
 }
