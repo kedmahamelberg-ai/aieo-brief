@@ -4130,6 +4130,45 @@
       },
       "output_sha256": "9a0a3d952b04524f12c920bc56ee2e666371285d716fb4632c23b94dc8a1e3e2",
       "policy": "brief-english-display-v1"
+    },
+    "93e50c69ae8d8657aca587c46f5cef74f68ba97b7acaf3ad9cb1bdd5f13fb5ba": {
+      "english": {
+        "0": "Harbin Institute of Technology",
+        "1": "Harbin Institute of Technology"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9cf5871cc0f3d2bdb1029edd92a6f4435cee3cb6ea861f51d481b1ea27052342",
+      "policy": "brief-english-display-v1"
+    },
+    "6d600ef738e5d9dfbb4ee090a04e23adceb7a61602a3fd379e149640a691704c": {
+      "english": {
+        "0": "Reporting from Fudan Development Research Institute. Open the source for the article.",
+        "1": "Fudan Development Research Institute",
+        "2": "Fudan Development Research Institute"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "07da00906548007054e5292833891b58937bc35652ca17d658b81647544b30c3",
+      "policy": "brief-english-display-v1"
     }
   }
 }

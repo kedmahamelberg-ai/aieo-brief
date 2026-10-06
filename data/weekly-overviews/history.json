@@ -13,9 +13,9 @@
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
         "deck": "Across the five discovery markets, rules and rights met work and skills. The balance differed by reporting stream.",
-        "summary": "China: the discovery stream centred most often on business and investment, including “WIPO Report Finds AI-Driven Investment Rise in Global Innovation, But Gains….” United States: the discovery stream centred most often on rules and rights, including “Trinity Student Finds Mixed AI Benefits and Clear Limits in Campus….” United Kingdom: the discovery stream centred most often on rules and rights, including “Trump AI deal rebrands AI as 'Superintelligence' with vague safeguards, claims….” France: selected reporting leaned toward business and investment, with “Department to test artificial intelligence to streamline public data work” as one visible signal. Canada: selected reporting leaned toward work and skills, with “Google Unveils Gemini 4 Argon, Its New High-End AI Model, With…” as one visible signal.",
+        "summary": "China: the discovery stream centred most often on business and investment, including “Tsinghua and Xin Jixuan Announce Self-Evolving AI for… United States: the discovery stream centred most often on rules and rights, including “Trinity Student Finds Mixed AI Benefits and… United Kingdom: the discovery stream centred most often on rules and rights, including “OpenAI Pauses GPT-6.1 Astra Rollout Over Safety… France: selected reporting leaned toward business and investment, with “Education International questions AI reference frameworks' role in turning schools into…”… Canada: selected reporting leaned toward work and skills, with “Google Unveils Gemini 4 Argon, Its New High-End AI Model, With…”…",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
-        "word_count": 144,
+        "word_count": 127,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
         "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
@@ -29,12 +29,12 @@
             "name": "China",
             "count": 26,
             "topic": "Business And Investment",
-            "sentence": "China: the discovery stream centred most often on business and investment, including “WIPO Report Finds AI-Driven Investment Rise in Global Innovation, But Gains….”",
+            "sentence": "China: the discovery stream centred most often on business and investment, including “Tsinghua and Xin Jixuan Announce Self-Evolving AI for Industry, Citing Practical….”",
             "story": {
-              "headline": "WIPO Report Finds AI-Driven Investment Rise in Global Innovation, But Gains Vary by Region",
-              "path": "story/wipo-report-finds-ai-driven-investment-rise-vary-region/index.html",
-              "publisher": "Xinhua Net",
-              "source_url": "https://www.news.cn/world/20260930/ae8d1380da1e4bacbf823e8a01b2543d/c.html"
+              "headline": "Tsinghua and Xin Jixuan Announce Self-Evolving AI for Industry, Citing Practical Limits",
+              "path": "story/tsinghua-university-collaborates-xin-jixuan-wangheng-ai-system/index.html",
+              "publisher": "Original source",
+              "source_url": "https://www.stdaily.com/web/gdxw/2026-10/01/content_591102.html"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Trump AI deal rebrands AI as 'Superintelligence' with vague safeguards, claims….”",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “OpenAI Pauses GPT-6.1 Astra Rollout Over Safety Concerns, Unveils Dots Toolset.”",
             "story": {
-              "headline": "Trump AI deal rebrands AI as 'Superintelligence' with vague safeguards, claims limited",
-              "path": "story/trump-ai-deal-rebrands-ai-superintelligence-claims-limited/index.html",
-              "publisher": "The Guardian",
-              "source_url": "https://www.theguardian.com/us-news/2026/sep/29/trump-ai-deal-tech-ceos-superintelligence"
+              "headline": "OpenAI Pauses GPT-6.1 Astra Rollout Over Safety Concerns, Unveils Dots Toolset",
+              "path": "story/exclusive-openai-cancels-release-new-ai-safety-concerns/index.html",
+              "publisher": "BBC",
+              "source_url": "https://www.bbc.com/news/articles/cm5y5nynl75ko"
             }
           },
           {
@@ -68,18 +68,18 @@
             "name": "France",
             "count": 10,
             "topic": "Business And Investment",
-            "sentence": "France: selected reporting leaned toward business and investment, with “Department to test artificial intelligence to streamline public data work” as one visible signal.",
+            "sentence": "France: selected reporting leaned toward business and investment, with “Education International questions AI reference frameworks' role in turning schools into…” as one visible signal.",
             "story": {
-              "headline": "Department to test artificial intelligence to streamline public data work",
-              "path": "story/department-test-artificial-intelligence-streamline-public-data-work/index.html",
-              "publisher": "Département de Maine-et-Loire",
-              "source_url": "https://www.maine-et-loire.fr/espace-presse/communique-de-presse/le-departement-va-tester-lintelligence-artificielle"
+              "headline": "Education International questions AI reference frameworks' role in turning schools into experimentation and value-extraction sites",
+              "path": "story/do-corporate-ai-reference-frameworks-contribute-hubs-ai/index.html",
+              "publisher": "Education International",
+              "source_url": "https://www.ei-ie.org/fr/item/33089:les-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 20,
+            "count": 21,
             "topic": "Work And Skills",
             "sentence": "Canada: selected reporting leaned toward work and skills, with “Google Unveils Gemini 4 Argon, Its New High-End AI Model, With…” as one visible signal.",
             "story": {
@@ -141,7 +141,7 @@
         "paper_count": 25,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "d4195d0d3c8015946881b5da6f35deb171855a661da720c7507215a64a88cc3a"
+      "content_sha256": "0819629bdc02e8631e710cc738f1100c2f8a6d32d9ed03c9743e2f206ca2713c"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
