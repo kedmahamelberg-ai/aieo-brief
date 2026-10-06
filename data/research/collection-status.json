@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-09-28",
-  "period_end": "2026-10-04",
+  "period_start": "2026-09-30",
+  "period_end": "2026-10-06",
   "providers": [
     {
       "source": "arxiv",
@@ -11,7 +11,7 @@
     {
       "source": "pnas",
       "status": "ok",
-      "count": 1
+      "count": 2
     },
     {
       "source": "ssrn",
@@ -21,40 +21,46 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:aef923dfcd50cbbb44358983",
-      "status": "matched",
+      "key": "paper:ee90b4329340ff0ca7cce9e5",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:8ac0cb5873c4983acf5958fe",
-      "status": "matched",
+      "key": "paper:d52d160802593956b568d1cd",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:b639175ab5669341d26866a4",
-      "status": "matched",
+      "key": "paper:0b9ac466361f212a7f400797",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:970d887d723be1b90cd1f564",
-      "status": "matched",
+      "key": "paper:942b07476ba478fd97fad34b",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:52c3ba78f28c68d12f1a0973",
-      "status": "matched",
+      "key": "paper:43c56994d720737f45d6a6bc",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:e0bb12a673a09e4302347c6b",
-      "status": "matched",
+      "key": "paper:bed346eb8166e98841e252c5",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
+    },
+    {
+      "key": "paper:565eb5d350d80d2a2f647f6b",
+      "status": "matched",
+      "source_verified": false,
+      "institutions": 8
     },
     {
       "key": "paper:beaf7b4a534a2a4135c21b97",

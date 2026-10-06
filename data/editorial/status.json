@@ -2,29 +2,22 @@
   "release_id": "2026-W40",
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "counts": {
-    "unchanged": 0,
+    "unchanged": 39,
     "source_not_ready": 0,
-    "new_registry": 57,
-    "needs_model": 57,
-    "needs_rebind": 23,
-    "selected": 80,
-    "generated": 16,
-    "rebound": 23,
-    "failed": 41,
+    "new_registry": 41,
+    "needs_model": 41,
+    "needs_rebind": 0,
+    "selected": 41,
+    "generated": 6,
+    "rebound": 0,
+    "failed": 35,
     "deferred": 0
   },
   "failure_counts": {
-    "draft_quote_unsupported": 37,
-    "unsupported_number": 4
+    "draft_quote_unsupported": 32,
+    "unsupported_number": 3
   },
   "failed_items": [
-    {
-      "event_id": "bbe81baf-0731-4b4e-90d6-3d4c2ae01afa",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
     {
       "event_id": "dc8c1260-ab3a-4934-b469-d5d0727e4a91",
       "error_type": "EditorialError",
@@ -40,21 +33,7 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
-      "event_id": "12a1115b-6aaf-43b1-aac1-9e13bf15e6af",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
       "event_id": "e0852335-0e8a-4068-a4bb-a4a26f7382e7",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "917ce5b0-d3eb-4f85-9dcc-8bf5017f878e",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -104,13 +83,6 @@
     },
     {
       "event_id": "98a47f7a-e2ae-494b-a64b-c667cb44bafb",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "842fb794-6eb2-4f36-9459-a259b9eb1090",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -183,14 +155,14 @@
       "event_id": "a7432d81-3a62-4e3a-8ac2-262a649eeb67",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
       "event_id": "8c21a9f0-dccb-4dc3-b291-59a703f158f1",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -216,13 +188,6 @@
     },
     {
       "event_id": "3e9d6831-ad4a-486f-9786-61868b4ae63d",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "101a7898-b3ed-47ae-bb0f-a64a4f318d08",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -267,7 +232,7 @@
       "event_id": "4e74e6b5-21fb-4abb-9fb6-710f7d7045f3",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -279,13 +244,6 @@
     },
     {
       "event_id": "ee90eaef-22ea-43d4-a7d3-a469df3fa321",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "ae373c54-958e-4875-8b48-05314ae7970e",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
@@ -306,5 +264,5 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-10-06T11:17:55.865413+00:00"
+  "updated_at": "2026-10-06T18:40:27.114500+00:00"
 }

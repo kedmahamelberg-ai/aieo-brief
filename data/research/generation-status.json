@@ -1,11 +1,11 @@
 {
-  "generated": 0,
+  "generated": 7,
   "failed": 0,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 7,
+  "unchanged": 1,
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "failure_counts": {},
   "failed_items": [],
-  "updated_at": "2026-10-04T16:59:47.354976+00:00"
+  "updated_at": "2026-10-06T18:48:10.365620+00:00"
 }
