@@ -4810,8 +4810,8 @@
       "key": "event:6e68944f-9b8e-4240-af56-6e86f9b2a797",
       "event_id": "6e68944f-9b8e-4240-af56-6e86f9b2a797",
       "kind": "news",
-      "slug": "development-6e68944f-9b8e-4240-af56-6e86f9b2a797",
-      "path": "story/development-6e68944f-9b8e-4240-af56-6e86f9b2a797/index.html",
+      "slug": "chinese-ambassador-us-xie-feng-china-twilight-humanity",
+      "path": "story/chinese-ambassador-us-xie-feng-china-twilight-humanity/index.html",
       "headline": "Chinese Ambassador to the US Xie Feng: China and the US should work together to ensure that new technologies such as artificial intelligence bring about “the dawn of a new era” rather than “the twilight of humanity”.",
       "original_headline": "Chinese Ambassador to the US Xie Feng: China and the US should work together to ensure that new technologies such as artificial intelligence bring about “the dawn of a new era” rather than “the twilight of humanity”.",
       "deck": "Reporting from 中华人民共和国驻美利坚合众国大使馆. Open the source for the article.",
@@ -4852,7 +4852,11 @@
       "has_editorial": false,
       "edition": "2026-W40",
       "period_start": "2026-09-28",
-      "period_end": "2026-10-04"
+      "period_end": "2026-10-04",
+      "legacy_paths": [
+        "story/development-6e68944f-9b8e-4240-af56-6e86f9b2a797/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:5ffc6ad2-690a-4267-a3b5-04802b17214b",

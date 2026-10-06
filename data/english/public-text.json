@@ -4110,6 +4110,26 @@
       },
       "output_sha256": "509120c837565bab95659edc647a1a66688aaac970878cb504f62a245c5adcfd",
       "policy": "brief-english-display-v1"
+    },
+    "4f1bdc98a0469bf1efe74da08a0b683788277ed693815a1adf140658385fe97f": {
+      "english": {
+        "0": "Reporting from the Embassy of the People's Republic of China in the United States. Open the source for the article.",
+        "1": "Embassy of the People's Republic of China in the United States",
+        "2": "Embassy of the People's Republic of China in the United States"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9a0a3d952b04524f12c920bc56ee2e666371285d716fb4632c23b94dc8a1e3e2",
+      "policy": "brief-english-display-v1"
     }
   }
 }
