@@ -13,9 +13,9 @@
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
         "deck": "Across the five discovery markets, rules and rights met work and skills. The balance differed by reporting stream.",
-        "summary": "China: the discovery stream centred most often on business and investment, including “Tsinghua and Xin Jixuan Announce Self-Evolving AI for… United States: the discovery stream centred most often on rules and rights, including “Trinity Student Finds Mixed AI Benefits and… United Kingdom: the discovery stream centred most often on rules and rights, including “OpenAI Pauses GPT-6.1 Astra Rollout Over Safety… France: selected reporting leaned toward business and investment, with “Education International questions AI reference frameworks' role in turning schools into…”… Canada: selected reporting leaned toward work and skills, with “Google Unveils Gemini 4 Argon, Its New High-End AI Model, With…”…",
+        "summary": "China: the discovery stream centred most often on business and investment, including “China Launches AI+Philosophy and Social Sciences Training to… United States: the discovery stream centred most often on rules and rights, including “Trinity Student Finds Mixed AI Benefits and… United Kingdom: the discovery stream centred most often on rules and rights, including “OpenAI Pauses GPT-6.1 Astra Rollout Over Safety… France: selected reporting leaned toward business and investment, with “Education International questions AI reference frameworks' role in turning schools into…”… Canada: selected reporting leaned toward work and skills, with “Google Unveils Gemini 4 Argon, Its New High-End AI Model, With…”…",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
-        "word_count": 127,
+        "word_count": 128,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
         "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
@@ -29,12 +29,12 @@
             "name": "China",
             "count": 26,
             "topic": "Business And Investment",
-            "sentence": "China: the discovery stream centred most often on business and investment, including “Tsinghua and Xin Jixuan Announce Self-Evolving AI for Industry, Citing Practical….”",
+            "sentence": "China: the discovery stream centred most often on business and investment, including “China Launches AI+Philosophy and Social Sciences Training to Broaden Human–AI Research….”",
             "story": {
-              "headline": "Tsinghua and Xin Jixuan Announce Self-Evolving AI for Industry, Citing Practical Limits",
-              "path": "story/tsinghua-university-collaborates-xin-jixuan-wangheng-ai-system/index.html",
-              "publisher": "China Science and Technology Network",
-              "source_url": "https://www.stdaily.com/web/gdxw/2026-10/01/content_591102.html"
+              "headline": "China Launches AI+Philosophy and Social Sciences Training to Broaden Human–AI Research Roles",
+              "path": "story/notice-organizing-special-training-course-artificial-social-sciences/index.html",
+              "publisher": "China Social Sciences Network",
+              "source_url": "https://www.cssn.cn/ggzp/202609/t20260930_6071607.shtml"
             }
           },
           {
@@ -95,8 +95,8 @@
       "research": {
         "kind": "research",
         "eyebrow": "THE RESEARCH COMPASS",
-        "title": "Research turns toward reliability and evaluation and reasoning and memory",
-        "deck": "The selected papers point in two directions: reliability and evaluation and reasoning and memory.",
+        "title": "Research turns toward training and efficiency and reliability and evaluation",
+        "deck": "The selected papers point in two directions: training and efficiency and reliability and evaluation.",
         "summary": "Smithsonian Institution, University of Illinois Urbana-Champaign, University of Macau, University of New Brunswick: New imaging and learning methods link pollen shape to grass diversity, with limits.",
         "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
         "word_count": 49,
@@ -141,7 +141,7 @@
         "paper_count": 25,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "a5ff284db52c14951c2752d352101ef811a68043ce56cb2fe498e783f8cbd8e3"
+      "content_sha256": "19bbcdc7fffb11a8ce2ed6f6555be67a4dc950c4968cb759e48251f761bf8b08"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",

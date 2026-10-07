@@ -4250,6 +4250,25 @@
       },
       "output_sha256": "c4bd5b83e1bffe5afd754a220d3f7e2abf16c49665ec21bdd6d8791b1f44b075",
       "policy": "brief-english-display-v1"
+    },
+    "07f0e742ca12a376ffa08581546ae002030db30f65f3a54c744741fa17425b13": {
+      "english": {
+        "0": "China Social Sciences Network",
+        "1": "China Social Sciences Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "457dc72091029b3e2643ef4436da2392c6c4f49fde5783e7e4cb7d875b8a54db",
+      "policy": "brief-english-display-v1"
     }
   }
 }
