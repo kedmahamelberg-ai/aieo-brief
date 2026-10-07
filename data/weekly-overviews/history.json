@@ -33,7 +33,7 @@
             "story": {
               "headline": "Tsinghua and Xin Jixuan Announce Self-Evolving AI for Industry, Citing Practical Limits",
               "path": "story/tsinghua-university-collaborates-xin-jixuan-wangheng-ai-system/index.html",
-              "publisher": "Original source",
+              "publisher": "China Science and Technology Network",
               "source_url": "https://www.stdaily.com/web/gdxw/2026-10/01/content_591102.html"
             }
           },
@@ -141,7 +141,7 @@
         "paper_count": 25,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "0819629bdc02e8631e710cc738f1100c2f8a6d32d9ed03c9743e2f206ca2713c"
+      "content_sha256": "a5ff284db52c14951c2752d352101ef811a68043ce56cb2fe498e783f8cbd8e3"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",

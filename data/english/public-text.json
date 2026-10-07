@@ -4169,6 +4169,87 @@
       },
       "output_sha256": "07da00906548007054e5292833891b58937bc35652ca17d658b81647544b30c3",
       "policy": "brief-english-display-v1"
+    },
+    "3c61c4784d1b5f6fdf2e79c64baf915c46081816402910980ec77720c780d0a8": {
+      "english": {
+        "0": "China Science and Technology Network",
+        "1": "China Science and Technology Network",
+        "2": "The described self-evolving AI system is designed for specific industrial contexts (voiceprint / fire safety perception) and does not imply universal generalization or benefits for all AI applications. The article reports on a collaboration and planned directions, not established outcomes."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "56add319c70fca8331513074ad546890a3c7886ad377041f03d65e6ef026d180",
+      "policy": "brief-english-display-v1"
+    },
+    "e9994bfff803b30969c4f5bcd8e2902172dcb6eaaa0fce7a34f281fc48a21e7d": {
+      "english": {
+        "0": "Tranquil Repose",
+        "1": "Tranquil Repose",
+        "2": "Tranquil Repose"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b5c6c270665e4ddfed70c6bf6b08cf136901d290a7696a2fccc74dd5d8d67c12",
+      "policy": "brief-english-display-v1"
+    },
+    "9948f5af255c7a6a685e7ab3037bade4572e162f256b24cdb027286ee086076e": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer",
+        "2": "Bedřich Smetana - My Homeland - III. Šárka",
+        "3": "\"Šárka\", the second from Bedřich Smetana's set of six symphonic poems Má Vlast",
+        "4": "Bedřich Smetana - My Homeland - III. Šárka"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "29e8ba875f7ab5707d76d2913ccdf69b7a2ebce6c8015e6b2cd81347aa680040",
+      "policy": "brief-english-display-v1"
+    },
+    "1de4dc29a99dc84ccb277575863923de3e20f6d0d2a9f609b33ab6035b0b8ca9": {
+      "english": {
+        "0": "Republic of Venice, Kingdom of Candia, Candia (Heraklion, Crete, Greece) or Byzantine Empire, Constantinople (Istanbul, Turkey)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c4bd5b83e1bffe5afd754a220d3f7e2abf16c49665ec21bdd6d8791b1f44b075",
+      "policy": "brief-english-display-v1"
     }
   }
 }
