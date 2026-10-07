@@ -17,7 +17,7 @@ from english_publication import EnglishPublication, content_version, LAYOUT
 from weekly_overviews import prepare_weekly_overviews, social_queue
 from short_links import short_link_routes
 from article_urls import assign_article_urls
-from search_metadata import identity_graph
+from search_metadata import identity_graph, canonical_local
 from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
 ROOT=Path(__file__).resolve().parents[1]
@@ -185,7 +185,7 @@ def main():
         item['content_hash'],_=content_version(item)
     for item in allcards:
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
-    weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview))
+    weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview),allow_model=(not preview and os.environ.get('BRIEF_WRITE_WEEKLY_OVERVIEWS')=='true'))
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
     shutil.copyfile(ROOT/'assets/favicon.ico', SITE/'favicon.ico')
@@ -225,7 +225,7 @@ def main():
                 ctx.update(page_image=photo['path'],page_image_alt=photo['alt'])
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
         prefix='../'*len(Path(path).parent.parts)
-        local=lambda value:prefix+value
+        local=lambda value:canonical_local(value,prefix)
         # Full text stays in HTML. The interaction payload only needs metadata.
         local_items=allcards if ctx.get('page') in ('saved','archive','digest') else (
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
@@ -252,6 +252,8 @@ def main():
     for archived_overview in overview_archive:
         archived_image=(baseurl+'/'+archived_overview['markets']['image_path']) if baseurl else archived_overview['markets']['image_path']
         archived_schema={'@context':'https://schema.org','@type':'Article','headline':archived_overview['markets']['title'],'description':archived_overview['markets']['deck'],'datePublished':archived_overview['period_end'],'dateModified':archived_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@type':'Organization','name':'The Brief'},'image':[archived_image] if archived_image else []}
+        if archived_overview.get('editorial_status') == 'ready':
+            archived_schema['author']={'@type':'Person','@id':'https://kedmahamelberg.com/#person','name':'Kedma Hamelberg','url':'https://kedmahamelberg.com/'}
         render(
             archived_overview['path'],
             'weekly-overview.html',
@@ -311,7 +313,7 @@ def main():
         for item in sorted(news+research+culture,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
-        locations=['index.html','research/index.html','culture/index.html','about/index.html','week-from-above/index.html']+[x['path'] for x in overview_archive]+[i['path'] for i in allcards]
+        locations=['index.html','research/index.html','culture/index.html','archive/index.html','about/index.html','week-from-above/index.html']+[x['path'] for x in overview_archive]+[i['path'] for i in allcards]
         (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+p.removesuffix('index.html'))+'</loc>'+('<image:image><image:loc>https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg</image:loc></image:image>' if p=='about/index.html' else '')+'</url>' for p in locations)+'</urlset>')
     else:(SITE/'feed.xml').write_text('<?xml version="1.0"?><rss version="2.0"><channel><title>AIEO Brief preview</title><link>https://observatory.hamelberg-ai.com</link><description>Set the Brief site URL for its live feed.</description></channel></rss>')
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))

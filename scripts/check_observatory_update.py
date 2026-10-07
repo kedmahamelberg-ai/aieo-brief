@@ -28,6 +28,20 @@ def needs_update(release, relationship, published):
     ))
 
 
+def needs_weekly_review(release, published):
+    """Retry bounded editorial checks without regenerating all news summaries."""
+    from weekly_editorials import START, VERSION
+    if release['period_start'] < START:
+        return False
+    overview = published.get('weekly_overview') or {}
+    if overview.get('release_id') != release['release_id'] or overview.get('editorial_version') != VERSION:
+        return True
+    return any(section.get('status') == 'pending'
+               and section.get('pending_reason') in ('generation_pending', 'editorial_check_pending')
+               and section.get('attempts', 0) < 3
+               for section in (overview.get('markets', {}), overview.get('research', {})))
+
+
 def brief_url():
     if os.environ.get('BRIEF_SITE_URL'):
         return os.environ['BRIEF_SITE_URL'].rstrip('/')
@@ -50,15 +64,17 @@ def main():
         response.raise_for_status()
         published = response.json()
     changed = needs_update(release, relationship, published)
+    weekly = needs_weekly_review(release, published)
     expected = expected_period()
     current = (release['period_start'], release['period_end']) == expected
     summary = {'observatory_edition': release['release_id'], 'period_start': release['period_start'],
                'period_end': release['period_end'], 'developments': len(release['evidence']),
-               'brief_needs_update': changed, 'latest_completed_week': current}
+               'brief_needs_update': changed, 'weekly_review_needs_update': weekly, 'latest_completed_week': current}
     print(json.dumps(summary, indent=2))
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
             output.write(f'needs_update={str(changed).lower()}\n')
+            output.write(f'needs_weekly_review={str(weekly).lower()}\n')
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
             output.write(f"## Observatory → Brief\n\nEdition **{release['release_id']}**, {release['period_start']} to {release['period_end']}. "

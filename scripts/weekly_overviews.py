@@ -309,6 +309,7 @@ def prepare_weekly_overviews(
     root: Path,
     *,
     write_archive: bool = False,
+    allow_model: bool = False,
 ) -> tuple[dict, list[dict]]:
     """Return the current overview and newest-first archive.
 
@@ -339,15 +340,12 @@ def prepare_weekly_overviews(
         for item in history["overviews"]
         if isinstance(item, dict) and _plain(item.get("release_id"))
     }
-    # Replace the retired generated illustrations in every archived week too.
-    for archived in records.values():
-        for section in ("markets", "research"):
-            if isinstance(archived.get(section), dict):
-                archived[section].update(copy.deepcopy(NATURE_IMAGES[section]))
-        archived.pop("content_sha256", None)
-        archived["content_sha256"] = hashlib.sha256(
-            json.dumps(archived, sort_keys=True, ensure_ascii=False, separators=(",", ":")).encode("utf-8")
-        ).hexdigest()
+    from weekly_editorials import apply_editorials
+    current = apply_editorials(current, news, research, root, list(records.values()), allow_model=allow_model)
+    current.pop('content_sha256', None)
+    current['content_sha256'] = hashlib.sha256(
+        json.dumps(current, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
+    ).hexdigest()
     records[release_id] = current
     ordered = sorted(
         records.values(),

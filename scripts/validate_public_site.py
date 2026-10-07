@@ -4,14 +4,17 @@ import argparse,collections,json,re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
+from xml.etree import ElementTree
 ROOT=Path(__file__).resolve().parents[1]
 PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref','private_key','manage_token_hash','subscription_id','auth_key'}
 class Page(HTMLParser):
- def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.ids=[];self.headings=0;self.script_data=[];self.capture=False
+ def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.ids=[];self.headings=0;self.script_data=[];self.capture=False;self.canonicals=[];self.robots=''
  def handle_starttag(self,tag,attrs):
   a=dict(attrs)
   if 'id' in a:self.ids.append(a['id'])
   if tag=='h1':self.headings+=1
+  if tag=='link' and a.get('rel')=='canonical':self.canonicals.append(a.get('href',''))
+  if tag=='meta' and a.get('name')=='robots':self.robots=a.get('content','')
   if tag in ('a','link','script','img'):
    value=a.get('src') if tag in ('script','img') else a.get('href')
    if value:self.links.append(value)
@@ -48,7 +51,12 @@ def validate(site):
  overview=payload.get('weekly_overview') or {}
  if overview.get('schema_version')!='aieo_weekly_overview_v1':raise ValueError('Weekly overview missing')
  if len((overview.get('markets') or {}).get('entries') or [])!=5:raise ValueError('Weekly overview must retain five discovery markets')
- if (overview.get('markets') or {}).get('word_count',999)>145 or (overview.get('research') or {}).get('word_count',999)>145:raise ValueError('Weekly overview exceeds one-minute editorial limit')
+ if overview.get('editorial_version'):
+  from weekly_editorials import validate_section
+  for kind in ('markets','research'):validate_section(overview[kind])
+  for paper in overview['research'].get('papers',[]):
+   if not overview['period_start']<=paper.get('date','')<=overview['period_end']:raise ValueError('Weekly paper is outside the edition week')
+ elif (overview.get('markets') or {}).get('word_count',999)>145 or (overview.get('research') or {}).get('word_count',999)>145:raise ValueError('Weekly overview exceeds one-minute editorial limit')
  if not (site/overview.get('path','')).is_file() or not (site/'week-from-above/index.html').is_file():raise ValueError('Weekly overview pages missing')
  social=json.loads((site/'data/social/current.json').read_text())
  if social.get('release_id')!=payload.get('release_id') or len(social.get('items',[]))!=2:raise ValueError('Social traffic queue does not match the edition')
@@ -70,9 +78,10 @@ def validate(site):
     rights=item['rights'];label=rights.get('label','')
     if not item.get('media_url','').startswith('https://') or not rights['url'].startswith('https://'):raise ValueError('Music lacks a safe source')
     if not label.startswith(('CC BY ','CC BY-SA ','CC0','Public domain')) or re.search(r'\b(?:NC|ND)\b',label):raise ValueError('Music lacks compatible source-declared terms')
- pages=list(site.rglob('*.html'));links=0
+ pages=list(site.rglob('*.html'));links=0;metadata={}
  for path in pages:
   raw=path.read_text();parser=Page();parser.feed(raw)
+  metadata[path.resolve()]=parser
   if parser.headings!=1:raise ValueError(f'{path.relative_to(site)} needs one page heading')
   if len(parser.ids)!=len(set(parser.ids)):raise ValueError('Duplicate element IDs: '+str(path))
   if re.search(r'sb_secret_|SUPABASE_SECRET_KEY|\bservice_role\b|"body_text"|"evidence_text"',raw):raise ValueError('Private material reached HTML')
@@ -85,6 +94,17 @@ def validate(site):
    if target.is_dir():target=target/'index.html'
    if site.resolve() not in target.parents or not target.is_file():raise ValueError('Broken local link '+str(path.relative_to(site))+': '+url)
    links+=1
+ sitemap=site/'sitemap.xml'
+ if sitemap.exists():
+  urls=[x.text for x in ElementTree.parse(sitemap).findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc')]
+  if not urls or len(urls)!=len(set(urls)):raise ValueError('Sitemap is empty or repeats canonical URLs')
+  base=urls[0]
+  preview='Disallow: /' in (site/'robots.txt').read_text()
+  for url in urls:
+   if not url.startswith(base) or not base.endswith('/') or url.endswith('index.html'):raise ValueError('Sitemap must use canonical directory URLs')
+   page=metadata.get((site/unquote(url[len(base):])/'index.html').resolve())
+   if page is None or page.canonicals!=[url]:raise ValueError('Sitemap destination and HTML canonical disagree')
+   if not preview and 'noindex' in page.robots.lower():raise ValueError('Public sitemap page accidentally has noindex')
  for f in site.rglob('*'):
   if f.is_file() and f.suffix in ('.sql','.py','.env','.csv'):raise ValueError('Private/build-only file in published website')
  return {'html_pages':len(pages),'local_destinations_checked':links,'news':len(news),'research':len(papers),'culture':len(culture),'source_links':sum(x['source_count'] for x in news),'human_counts':payload['directional_counts']['human'],'ai_counts':payload['directional_counts']['ai'],'result':'passed'}
