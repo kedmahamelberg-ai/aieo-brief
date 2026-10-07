@@ -2,6 +2,388 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Alice’s Adventures in Wonderland",
+      "content_fingerprint": "b4e440d65b1cdb4b112d357820c20f924aaa4018c7f8af5a026269bcb44f2f6e",
+      "creator": "Lewis Carroll",
+      "creator_origin": "English",
+      "culture_type": "text",
+      "deck": "A passage from Alice’s Adventures in Wonderland.",
+      "excerpt": "It was so long since she had been anything near the right size, that it felt quite strange at first; but she got used to it in a few minutes, and began talking to herself, as usual. “Come, there’s half my plan done now! How puzzling all these changes are! I’m never sure what I’m going to be, from one minute to another! However, I’ve got back to my right size: the next thing is, to get into that beautiful garden—how _is_ that to be done, I wonder?” As she said this, she came suddenly upon an open place, with a little house in it about four feet high. “Whoever lives there,” thought Alice, “it’ll never do to come upon them _this_ size: why, I should frighten them out of their wits!” So she began nibbling at the righthand bit again, and did not venture to go near the house till she had brought herself down to nine inches high.",
+      "headline": "Alice’s Adventures in Wonderland · a short reading",
+      "key": "culture:ac98b10581a3033983d884ae",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:11:passage:b4e440d65b1cdb4b112d357820c20f924aaa4018c7f8af5a026269bcb44f2f6e",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1898. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/11"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "9a6730d17a67f0a73034ab7df4b86779e67c8e19f6a64e1c5d81d0a697288278",
+      "source_locator": "CHAPTER I.; paragraph 229 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/11",
+      "translator": "",
+      "work_date": "1865",
+      "date": "2026-10-07",
+      "selected_on": "2026-10-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ac98b10581a3033983d884ae",
+      "path": "culture/culture-ac98b10581a3033983d884ae/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Alice’s Adventures in Wonderland · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/11",
+          "date": "1865",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-07",
+      "summary_basis": "Selected 7 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "It was so long since she had been anything near the right size, that it felt quite strange at first; but she got used to it in a few minutes, and began talking to herself, as usual. “Come, there’s half my plan done now! How puzzling all these changes are! I’m never sure what I’m going to be, from one minute to another! However, I’ve got back to my right size: the next thing is, to get into that beautiful garden—how ",
+          "emphasis": false
+        },
+        {
+          "text": "is",
+          "emphasis": true
+        },
+        {
+          "text": " that to be done, I wonder?” As she said this, she came suddenly upon an open place, with a little house in it about four feet high. “Whoever lives there,” thought Alice, “it’ll never do to come upon them ",
+          "emphasis": false
+        },
+        {
+          "text": "this",
+          "emphasis": true
+        },
+        {
+          "text": " size: why, I should frighten them out of their wits!” So she began nibbling at the righthand bit again, and did not venture to go near the house till she had brought herself down to nine inches high.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "3b165385d929bf2cf8a2031eca3bc6c4df82e313a3e222a1f59a6b58206203ca",
+      "creator": "Ssu-K`ung T`u",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "Tranquil Repose, by Ssu-K`ung T`u. Translated by L. Cranmer-Byng.",
+      "excerpt": "It dwells in the quiet silence,\n Unseen upon hill and plain,\n'Tis lapped by the tideless harmonies,\n It soars with the lonely crane.\n\nAs the springtime breeze whose flutter\n The silken skirts hath blown,\nAs the wind-drawn note of the bamboo flute\n Whose charm we would make our own, --\n\nChance-met, it seems to surrender;\n Sought, and it lures us on;\nEver shifting in form and fantasy,\n It eludes us, and is gone.",
+      "headline": "Tranquil Repose",
+      "key": "culture:81141df3f51d15a7e9e9c642",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "It dwells in the quiet silence,",
+        " Unseen upon hill and plain,",
+        "'Tis lapped by the tideless harmonies,",
+        " It soars with the lonely crane.",
+        "",
+        "As the springtime breeze whose flutter",
+        " The silken skirts hath blown,",
+        "As the wind-drawn note of the bamboo flute",
+        " Whose charm we would make our own, --",
+        "",
+        "Chance-met, it seems to surrender;",
+        " Sought, and it lures us on;",
+        "Ever shifting in form and fantasy,",
+        " It eludes us, and is gone."
+      ],
+      "provenance_id": "pg:390:poem:b2facce02c0b1a53ebb06aada1a11e3b179aef3e3ea8eab492fb039f555038a8",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "Tranquil Repose",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-10-07",
+      "selected_on": "2026-10-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-81141df3f51d15a7e9e9c642",
+      "path": "culture/culture-81141df3f51d15a7e9e9c642/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Tranquil Repose",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-07",
+      "summary_basis": "Selected 7 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "It dwells in the quiet silence,\n Unseen upon hill and plain,\n'Tis lapped by the tideless harmonies,\n It soars with the lonely crane.\n\nAs the springtime breeze whose flutter\n The silken skirts hath blown,\nAs the wind-drawn note of the bamboo flute\n Whose charm we would make our own, --\n\nChance-met, it seems to surrender;\n Sought, and it lures us on;\nEver shifting in form and fantasy,\n It eludes us, and is gone.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bedrich_Smetana_-_ma_vlast_-_iii._sarka.ogg",
+      "creator": "Bedřich Smetana",
+      "creator_origin": "Czech",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Bedřich Smetana. 11 minutes to listen.",
+      "duration_seconds": 668,
+      "headline": "Bedrich Smetana - ma vlast - iii. sarka",
+      "key": "culture:5105d4301827236c066a4c9b",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Bedrich_Smetana_-_ma_vlast_-_iii._sarka.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Bed%C5%99ich_Smetana",
+      "original_recording_title": "Bedrich Smetana - ma vlast - iii. sarka",
+      "provenance_id": "commons:3432863",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Bedřich Smetana (see Musopen for author information)",
+      "recording_description": "\"Šárka\", the second from Bedřich Smetana 's set of six symphonic poems Má vlast",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Bedřich Smetana (see Musopen for author information)",
+        "label": "Public domain (source-declared)",
+        "source_credit": "This work comes from the non profit U.S. organization Musopen where it is available at the following link: http://www.musopen.com The Musopen website requires all uploaders to \"represent and warrant that content uploaded to the site is in the public domain\" (see FAQ #4 ). Musopen's own works ( \"Musopen Materials\" and \"Musopen Service\", not user content or public domain content ), are fully copyrighted and may not be used freely as stated in their Terms and Conditions of Use .",
+        "url": "https://commons.wikimedia.org/wiki/File:Bedrich_Smetana_-_ma_vlast_-_iii._sarka.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bedrich_Smetana_-_ma_vlast_-_iii._sarka.ogg",
+      "work_date": "19 th century date QS:P,+1850-00-00T00:00:00Z/7",
+      "date": "2026-10-07",
+      "selected_on": "2026-10-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-5105d4301827236c066a4c9b",
+      "path": "culture/culture-5105d4301827236c066a4c9b/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Bedrich Smetana - ma vlast - iii. sarka",
+          "url": "https://commons.wikimedia.org/wiki/File:Bedrich_Smetana_-_ma_vlast_-_iii._sarka.ogg",
+          "date": "19 th century date QS:P,+1850-00-00T00:00:00Z/7",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-07",
+      "summary_basis": "Selected 7 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Icon of the Mother of God and Infant Christ (Virgin Eleousa)",
+      "art_type": "Painting",
+      "balance_origin": "Republic of Venice",
+      "creator": "attributed to Angelos Akotantos (Cretan, died 1450)",
+      "creator_origin": "Republic of Venice, Kingdom of Candia, Candia (Heraklion, Crete, Greece) or Byzantine Empire, Constantinople (Istanbul, Turkey)",
+      "culture_type": "illustration",
+      "deck": "Icon of the Mother of God and Infant Christ (Virgin Eleousa). tempera and gold on wood.",
+      "headline": "Icon of the Mother of God and Infant Christ (Virgin Eleousa)",
+      "image_path": "assets/culture/4ac151ecf9b113441a104e13.jpg",
+      "key": "culture:4ac151ecf9b113441a104e13",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2010.154/2010.154_web.jpg",
+      "medium": "tempera and gold on wood",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2010.154",
+      "provenance_id": "cma:168322",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Leonard C. Hanna Jr. Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2010.154",
+      "work_date": "c. 1425–50",
+      "date": "2026-10-07",
+      "selected_on": "2026-10-07",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-4ac151ecf9b113441a104e13",
+      "path": "culture/culture-4ac151ecf9b113441a104e13/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Icon of the Mother of God and Infant Christ (Virgin Eleousa)",
+          "url": "https://clevelandart.org/art/2010.154",
+          "date": "c. 1425–50",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-07",
+      "summary_basis": "Selected 7 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "60c043b6d8939e800f76323e521b18fb36791f9e379f410c66b172e27066c89d",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "I have dipped the vessel of my heart into this silent hour; it has filled with love.",
+      "headline": "I have dipped the vessel of my heart into this silent hour; it has filled with love.",
+      "key": "culture:0923ee40add030a1a27a4c00",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:60c043b6d8939e800f76323e521b18fb36791f9e379f410c66b172e27066c89d",
+      "publisher": "Project Gutenberg",
+      "quote_context": "I have dipped the vessel of my heart into this silent hour; it has filled with love.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 180 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-10-07",
+      "selected_on": "2026-10-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0923ee40add030a1a27a4c00",
+      "path": "culture/culture-0923ee40add030a1a27a4c00/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "I have dipped the vessel of my heart into this silent hour; it has filled with love.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-07",
+      "summary_basis": "Selected 7 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I have dipped the vessel of my heart into this silent hour; it has filled with love.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "I have dipped the vessel of my heart into this silent hour; it has filled with love.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Qur'an Manuscript Folio (verso)",
       "art_type": "Manuscript",
       "balance_origin": "Southern Spain",
