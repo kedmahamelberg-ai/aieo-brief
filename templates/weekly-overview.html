@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
-{% block title %}The week from above | The Brief{% endblock %}
-{% block description %}A one-minute, source-linked view of what selected AI reporting emphasized across five discovery markets and where this week’s research is moving.{% endblock %}
+{% from 'weekly-prose.html' import prose with context %}
+{% block title %}{{ weekly_page_overview.markets.title if weekly_page_overview is defined else weekly_overview.markets.title }} | The Brief{% endblock %}
+{% block description %}{{ weekly_page_overview.markets.deck if weekly_page_overview is defined else weekly_overview.markets.deck }}{% endblock %}
 {% block content %}
 {% set page_weekly_overview = weekly_page_overview if weekly_page_overview is defined else weekly_overview %}
 {% set page_period_label = weekly_page_period_label if weekly_page_period_label is defined else period_label %}
@@ -12,14 +13,18 @@
     <p>{{ page_period_label }} · two one-minute readings</p>
   </header>
 
-  <article id="five-markets" class="weekly-feature weekly-feature-detail">
+  <article id="five-markets" class="weekly-feature weekly-feature-detail{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
     <figure>
+      {% if page_weekly_overview.markets.image_reason %}<p class="weekly-image-metaphor">{{ page_weekly_overview.markets.image_reason }}</p>{% endif %}
       <img src="{{ local(page_weekly_overview.markets.image_path) }}" alt="{{ page_weekly_overview.markets.image_alt }}" width="1200" height="675">
       <figcaption><a href="{{ page_weekly_overview.markets.image_source_url }}" target="_blank" rel="noopener noreferrer">{{ page_weekly_overview.markets.image_caption }}</a> · {{ page_weekly_overview.markets.image_credit }} · {{ page_weekly_overview.markets.image_rights }}.</figcaption>
     </figure>
     <div class="weekly-feature-copy">
       <span class="eyebrow">{{ page_weekly_overview.markets.eyebrow }} · 1 MIN READ</span>
       <h2>{{ page_weekly_overview.markets.title }}</h2>
+      {% if page_weekly_overview.editorial_version %}
+      {{ prose(page_weekly_overview.markets) }}
+      {% else %}
       <p class="weekly-deck">{{ page_weekly_overview.markets.deck }}</p>
       <div class="market-current-list">
         {% for entry in page_weekly_overview.markets.entries %}
@@ -31,19 +36,25 @@
         {% endfor %}
       </div>
       <p class="weekly-scope">{{ page_weekly_overview.markets.scope_note }}</p>
+      {% endif %}
     </div>
   </article>
 
-  <article id="research-compass" class="weekly-feature weekly-feature-detail weekly-feature-research">
+  <article id="research-compass" class="weekly-feature weekly-feature-detail weekly-feature-research{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
     <figure>
+      {% if page_weekly_overview.research.image_reason %}<p class="weekly-image-metaphor">{{ page_weekly_overview.research.image_reason }}</p>{% endif %}
       <img src="{{ local(page_weekly_overview.research.image_path) }}" alt="{{ page_weekly_overview.research.image_alt }}" width="1200" height="675">
       <figcaption><a href="{{ page_weekly_overview.research.image_source_url }}" target="_blank" rel="noopener noreferrer">{{ page_weekly_overview.research.image_caption }}</a> · {{ page_weekly_overview.research.image_credit }} · {{ page_weekly_overview.research.image_rights }}.</figcaption>
     </figure>
     <div class="weekly-feature-copy">
       <span class="eyebrow">{{ page_weekly_overview.research.eyebrow }} · 1 MIN READ</span>
       <h2>{{ page_weekly_overview.research.title }}</h2>
+      {% if page_weekly_overview.editorial_version %}
+      {{ prose(page_weekly_overview.research) }}
+      {% else %}
       <p class="weekly-deck">{{ page_weekly_overview.research.deck }}</p>
       <p>{{ page_weekly_overview.research.summary }}</p>
+      {% endif %}
       {% if page_weekly_overview.research.papers %}
       <ol class="research-source-list">
         {% for paper in page_weekly_overview.research.papers %}
@@ -51,12 +62,12 @@
           <h3><a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">{{ paper.original_headline }} ↗</a></h3>
           <p><strong>Authors</strong> {{ paper.authors|join(', ') }}</p>
           <p><strong>Universities and research institutions</strong> {{ paper.institutions|join(', ') if paper.institutions else 'Not yet supplied in verified metadata; the Brief does not guess.' }}</p>
-          <p class="weekly-source">{{ paper.label }} · {{ paper.publisher }}{% if paper.path %} · <a href="{{ local(paper.path) }}">Read the Brief summary</a>{% endif %}{% if paper.affiliation_source_url %} · <a href="{{ paper.affiliation_source_url }}" target="_blank" rel="noopener noreferrer">Affiliation record ↗</a>{% endif %}</p>
+          <p class="weekly-source">{{ paper.label }}{% if paper.summary_basis %} · {{ paper.summary_basis }}{% endif %} · {{ paper.publisher }}{% if paper.path %} · <a href="{{ local(paper.path) }}">Read the Brief summary</a>{% endif %}{% if paper.affiliation_source_url %} · <a href="{{ paper.affiliation_source_url }}" target="_blank" rel="noopener noreferrer">Affiliation record ↗</a>{% endif %}</p>
         </li>
         {% endfor %}
       </ol>
       {% endif %}
-      <p class="weekly-scope">{{ page_weekly_overview.research.scope_note }}</p>
+      {% if not page_weekly_overview.editorial_version %}<p class="weekly-scope">{{ page_weekly_overview.research.scope_note }}</p>{% endif %}
     </div>
   </article>
 </main>

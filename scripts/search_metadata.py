@@ -1,6 +1,11 @@
 """Public identity connections; original paper authors remain separate."""
 import json
+import re
 from pathlib import Path
+
+def canonical_local(value, prefix=''):
+    """Link directly to directory canonicals, retaining queries and fragments."""
+    return (prefix + re.sub(r'(^|/)index\.html(?=$|[?#])', r'\1', value)) or './'
 
 def identity_graph(root, canonical, page):
     nodes = json.loads((Path(root)/'config/search-identity.json').read_text())
