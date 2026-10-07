@@ -1,0 +1,13 @@
+{% macro prose(section) %}
+{% if section.status == 'ready' %}
+<p class="weekly-byline">By <a href="{{ local('about/index.html') }}">{{ section.author }}</a></p>
+<div class="weekly-prose">
+{% for paragraph in section.prose %}
+<p>{% for part in paragraph %}{% if not loop.first %} {% endif %}{% if part.path %}<a href="{{ local(part.path) }}">{{ part.text }}</a>{% else %}{{ part.text }}{% endif %}{% endfor %}</p>
+{% endfor %}
+</div>
+<p class="weekly-scope">{{ section.scope_note }}</p>
+{% else %}
+<p>{{ section.deck }}</p>
+{% endif %}
+{% endmacro %}

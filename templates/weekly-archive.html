@@ -10,9 +10,9 @@
   </header>
   <div class="weekly-archive-grid">
     {% for overview in overview_archive %}
-    <article>
+    <article{% if overview.editorial_version %} class="weekly-editorial"{% endif %}>
       <a class="weekly-archive-image" href="{{ local(overview.path) }}"><img src="{{ local(overview.markets.image_path) }}" alt="" width="1200" height="675"></a>
-      <span class="eyebrow">{{ overview.period_start }} – {{ overview.period_end }}</span>
+      <span class="eyebrow">{{ overview.period_start }} to {{ overview.period_end }}</span>
       <h2><a href="{{ local(overview.path) }}">{{ overview.markets.title }}</a></h2>
       <p>{{ overview.markets.deck }}</p>
       <p class="weekly-research-line"><strong>Research</strong> {{ overview.research.title }}</p>
