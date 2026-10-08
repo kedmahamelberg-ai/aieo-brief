@@ -4309,6 +4309,25 @@
       },
       "output_sha256": "6dd1526e50ce750e4a8cb0da49485373f972f5c39c5751bf9f5ef5a0070a0a98",
       "policy": "brief-english-display-v1"
+    },
+    "8bc3a94c970e0c0ac5e8fe03f0a4dbf9c2e0df16f300f57288975ff325c3357a": {
+      "english": {
+        "0": "Embassy of the People's Republic of China in the United States of America",
+        "1": "Embassy of the People's Republic of China in the United States of America"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "260ac1addc474ca578ed0d333f726d67aee8a0aa1695c8b2765e991dff8135af",
+      "policy": "brief-english-display-v1"
     }
   }
 }
