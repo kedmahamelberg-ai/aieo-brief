@@ -4269,6 +4269,46 @@
       },
       "output_sha256": "457dc72091029b3e2643ef4436da2392c6c4f49fde5783e7e4cb7d875b8a54db",
       "policy": "brief-english-display-v1"
+    },
+    "72d782125a8836211131b6a9053c0fd8c1b23c201b0c2f2a352f42811b6ee775": {
+      "english": {
+        "0": "English",
+        "1": "Stanzas",
+        "2": "Stanzas",
+        "3": "Stanzas"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cbd1cf9757ebf33e7157bb149320be96f7063e7b42b5ec451d149d816897e851",
+      "policy": "brief-english-display-v1"
+    },
+    "9dbac8933cbb831edb808d273d79191b49362b24aa9d8f90b8d55d2293e73600": {
+      "english": {
+        "0": "Iran ?, Seljuq period (1037–1194)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6dd1526e50ce750e4a8cb0da49485373f972f5c39c5751bf9f5ef5a0070a0a98",
+      "policy": "brief-english-display-v1"
     }
   }
 }
