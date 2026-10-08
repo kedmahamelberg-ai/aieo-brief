@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-01",
-  "period_end": "2026-10-07",
+  "period_start": "2026-10-02",
+  "period_end": "2026-10-08",
   "providers": [
     {
       "source": "arxiv",
@@ -21,37 +21,37 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:ec6051cd7f4df06fe3d3d58b",
+      "key": "paper:8aab2aec69ddadbff5c1fabe",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:bce1a30728d0ed2913098f01",
+      "key": "paper:e147ebb70b7a60538b9bd244",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:638dcb62b97028e23e0ca672",
+      "key": "paper:c5c68c1a65cf3976a4883771",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:055b9b5d805d1ccaa140b485",
+      "key": "paper:f3dbf64096db81d53718e888",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:bde74b0fced76d036272063a",
+      "key": "paper:df8bfe89a17081f4ddd36d12",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:ffef774ddb3a189377388257",
+      "key": "paper:c14779f2225e1ef304f1fffd",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
@@ -69,49 +69,7 @@
       "institutions": 6
     },
     {
-      "key": "paper:f2dff715da7f13e829ff9f32",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:b71c83b23e17c06b500ce184",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:afd9c531da091aca39b7d1e3",
-      "status": "cached",
-      "source_verified": false,
-      "institutions": 3
-    },
-    {
-      "key": "paper:8778a5cfae74250c006dc1f6",
-      "status": "cached",
-      "source_verified": false,
-      "institutions": 8
-    },
-    {
-      "key": "paper:47c872344980686c78abcef2",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:5996c5241e61feebfc5835cb",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:3ffa2d84b6e20da2db465da1",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:16a3db0cf187d500a6a42d8e",
+      "key": "paper:baa1718febeede56b7b7af8a",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
@@ -121,16 +79,10 @@
       "status": "cached",
       "source_verified": true,
       "institutions": 0
-    },
-    {
-      "key": "paper:3dbb5af83842291f863af301",
-      "status": "cached",
-      "source_verified": false,
-      "institutions": 3
     }
   ],
   "recovery": {
-    "recovered": 10,
+    "recovered": 2,
     "unavailable": 0
   }
 }
