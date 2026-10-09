@@ -12,7 +12,7 @@
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
         "title": "Five currents in this week’s AI reporting",
-        "deck": "Across the five discovery markets, rules and rights met work and skills. The balance differed by reporting stream.",
+        "deck": "Across the five discovery markets, rules and rights met business and investment. The balance differed by reporting stream.",
         "summary": "China: the discovery stream centred most often on business and investment, including “China Launches AI+Philosophy and Social Sciences Training to… United States: the discovery stream centred most often on rules and rights, including “Trinity Student Finds Mixed AI Benefits and… United Kingdom: the discovery stream centred most often on rules and rights, including “OpenAI Pauses GPT-6.1 Astra Rollout Over Safety… France: selected reporting leaned toward business and investment, with “Education International questions AI reference frameworks' role in turning schools into…”… Canada: selected reporting leaned toward work and skills, with “Google Unveils Gemini 4 Argon, Its New High-End AI Model, With…”…",
         "scope_note": "This is a map of selected reporting discovered in each market, not a forecast of national policy, public opinion or all AI activity in that country.",
         "word_count": 128,
@@ -40,7 +40,7 @@
           {
             "code": "US",
             "name": "United States",
-            "count": 15,
+            "count": 14,
             "topic": "Rules And Rights",
             "sentence": "United States: the discovery stream centred most often on rules and rights, including “Trinity Student Finds Mixed AI Benefits and Clear Limits in Campus….”",
             "story": {
@@ -141,7 +141,7 @@
         "paper_count": 25,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "19bbcdc7fffb11a8ce2ed6f6555be67a4dc950c4968cb759e48251f761bf8b08"
+      "content_sha256": "7acc8e69fce0dcf8bc05ed371da62a22e2ba628c82e162ae6af3329b9bbb84c2"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
