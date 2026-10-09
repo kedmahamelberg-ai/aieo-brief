@@ -1,17 +1,17 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-02",
-  "period_end": "2026-10-08",
+  "period_start": "2026-10-03",
+  "period_end": "2026-10-09",
   "providers": [
     {
       "source": "arxiv",
-      "status": "ok",
-      "count": 6
+      "status": "unavailable",
+      "error_type": "HTTPError"
     },
     {
       "source": "pnas",
       "status": "ok",
-      "count": 2
+      "count": 1
     },
     {
       "source": "ssrn",
@@ -21,68 +21,20 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:8aab2aec69ddadbff5c1fabe",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:e147ebb70b7a60538b9bd244",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:c5c68c1a65cf3976a4883771",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:f3dbf64096db81d53718e888",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:df8bfe89a17081f4ddd36d12",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:c14779f2225e1ef304f1fffd",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
       "key": "paper:565eb5d350d80d2a2f647f6b",
       "status": "matched",
       "source_verified": false,
       "institutions": 8
     },
     {
-      "key": "paper:beaf7b4a534a2a4135c21b97",
-      "status": "matched",
-      "source_verified": false,
-      "institutions": 6
-    },
-    {
-      "key": "paper:baa1718febeede56b7b7af8a",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:91078ae8ed566fc820332ae5",
+      "key": "paper:52c3ba78f28c68d12f1a0973",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
     }
   ],
   "recovery": {
-    "recovered": 2,
+    "recovered": 1,
     "unavailable": 0
   }
 }
