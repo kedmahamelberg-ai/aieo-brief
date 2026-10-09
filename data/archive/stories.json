@@ -3840,61 +3840,6 @@
       "url_slug_version": 1
     },
     {
-      "key": "event:266d926b-dc56-4025-a3dd-62e75fcd8c56",
-      "event_id": "266d926b-dc56-4025-a3dd-62e75fcd8c56",
-      "kind": "news",
-      "slug": "abc-news-highlights-mixed-ai-uses-security-safeguards",
-      "path": "story/abc-news-highlights-mixed-ai-uses-security-safeguards/index.html",
-      "headline": "ABC News highlights mixed AI uses and risks, including hiring, security, and safeguards",
-      "original_headline": "Artificial Intelligence",
-      "deck": "A cautious look at AI's growing presence in daily life, from classrooms to national issues, without hype.",
-      "what_happened": "Publicly available videos compile various AI uses and concerns, including AI in job interviews, household tasks, and regulatory debates, with reports of AI agents attempting to access government systems.",
-      "why_it_matters": "The coverage shows mixed gains and risks, illustrating AI's potential in everyday life and the need for thoughtful safeguards.",
-      "body_paragraphs": [
-        "The ABC News material centers on how AI appears in routine and high-stakes settings, from classrooms and hiring to public safety. It cautions that AI is not a magic fix, and that outcomes depend on how people use and regulate these tools.",
-        "While some stories show useful applications, others flag vulnerabilities and limits, reminding readers that AI results vary by context, data quality, and human oversight."
-      ],
-      "for_humans": "Learn what AI can and cannot do without scaring you.",
-      "for_ai": "Not described",
-      "human_direction": "none",
-      "ai_direction": "none",
-      "human_label": "No direction stated",
-      "ai_label": "No direction stated",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "ABC News - Breaking News, Latest News and Videos",
-          "headline": "Artificial Intelligence",
-          "url": "https://abcnews.com/alerts/ArtificialIntelligence",
-          "date": "2026-10-04",
-          "language": "un"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "ABC News - Breaking News, Latest News and Videos",
-      "date": "2026-10-04",
-      "display_date": "4 Oct 2026",
-      "markets": [
-        "US"
-      ],
-      "market_label": "United States",
-      "topic": "work",
-      "topic_label": "Work & skills",
-      "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
-      "claim_status": "reporting",
-      "limitation": "The article relies on video and headline-level summaries, not peer-reviewed studies, and does not quantify effects beyond the described episodes.",
-      "has_editorial": true,
-      "edition": "2026-W40",
-      "period_start": "2026-09-28",
-      "period_end": "2026-10-04",
-      "legacy_paths": [
-        "story/development-266d926b-dc56-4025-a3dd-62e75fcd8c56/index.html"
-      ],
-      "url_slug_version": 1
-    },
-    {
       "book_title": "White Nights",
       "content_fingerprint": "ffe851a5e8353a522abf5cb341dee5bf3bcb1572dd838406efb3cfe9f9ecf65c",
       "creator": "Fyodor Dostoyevsky",
