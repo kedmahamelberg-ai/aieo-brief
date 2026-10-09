@@ -4328,6 +4328,113 @@
       },
       "output_sha256": "260ac1addc474ca578ed0d333f726d67aee8a0aa1695c8b2765e991dff8135af",
       "policy": "brief-english-display-v1"
+    },
+    "55033470b5b87d207d6ec1d46def5b4ba66d502e07d1925706e59f0115d60c54": {
+      "english": {
+        "0": "Parrot",
+        "1": "Hungary",
+        "2": "Parrot",
+        "3": "CC0 image",
+        "4": "Parrot"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9aea8d7e82a20ed375de58412be12e104301b189af06ea466083b3230605dea5",
+      "policy": "brief-english-display-v1"
+    },
+    "ca055fc968429d2b2b6052db1b424ac4a2fcbb57d2706e8a843f87b6abc852b8": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer",
+        "2": "A recording of music by Antonin Dvorak. 6 minutes to listen.",
+        "3": "YouTube : https://www.youtube.com/watch?v=dpTdxZ12bGo – View/save archived versions on archive.org"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b565722c34c071d71525dd0b6c54c69808088d43521dd7ddeea08ad875a31116",
+      "policy": "brief-english-display-v1"
+    },
+    "0c12b6ff37bd1019f5558b443a4656c9353da301ae8c2d578b92e068e81c43d7": {
+      "english": {
+        "0": "Indian",
+        "1": "The Poet's Love-Song, by Sarojini Naidu."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cae75836e61336ad24d0fbdbeb8c10bd3f4e3e04b7f4fd8e542765ac321363d7",
+      "policy": "brief-english-display-v1"
+    },
+    "c074a5097a3a0efab9ec5f937a44859142d6983be964387483699fdbb0dc08d1": {
+      "english": {
+        "0": "Timaeus",
+        "1": "Greek",
+        "2": "PERSONS OF THE DIALOGUE: Socrates, Critias, Timaeus, Hermocrates.; paragraph 89 in the selected body section"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7fac1b149378bb4dd8fa717c8e6cf6118c7869831e4001a00914b32399097746",
+      "policy": "brief-english-display-v1"
+    },
+    "8ff2a53e42e63da4de68bcea93d48eb84f145c4d6a19b8a0be31523e3107b344": {
+      "english": {
+        "0": "Russian–American",
+        "1": "Composer",
+        "2": "I loved my sorrow",
+        "3": "S. Rachmaninov, Pleshcheyev, Yu. Otroshenko",
+        "4": "Sergei Rachmaninoff. \"In my sorrow I loved him\" in Ukrainian translation by Yuri Otroshenko. Performed by Anna Kolesnik-Ratushna",
+        "5": "S. Rachmaninov, Pleshcheyev, Yu. Otroshenko",
+        "6": "CD \"In the language of nightingales to you, my dear ones\"",
+        "7": "I loved my sorrow"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d6da2ef17efaf53a5e1c5571049f6ab154d92abc2ac4229426f26464a611d79a",
+      "policy": "brief-english-display-v1"
     }
   }
 }

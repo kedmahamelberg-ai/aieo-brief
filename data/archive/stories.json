@@ -2,6 +2,371 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Parrot",
+      "art_type": "Ceramic",
+      "balance_origin": "Hungary",
+      "creator": "Zsolnay Factory (Hungarian)",
+      "creator_origin": "Hungary",
+      "culture_type": "illustration",
+      "deck": "Parrot. earthenware with lustre glazes.",
+      "headline": "Parrot",
+      "image_path": "assets/culture/d7fb3ec3185dbe1f7d592800.jpg",
+      "key": "culture:d7fb3ec3185dbe1f7d592800",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1984.190/1984.190_web.jpg",
+      "medium": "earthenware with lustre glazes",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1984.190",
+      "provenance_id": "cma:151901",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift in memory of Mrs. Magda Nàdasy, from her estate",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1984.190",
+      "work_date": "c. 1910",
+      "date": "2026-10-09",
+      "selected_on": "2026-10-09",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-d7fb3ec3185dbe1f7d592800",
+      "path": "culture/culture-d7fb3ec3185dbe1f7d592800/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Parrot",
+          "url": "https://clevelandart.org/art/1984.190",
+          "date": "c. 1910",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-09",
+      "summary_basis": "Selected 9 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dvorak_American_Quartet_1st_Movement_Seraphina.ogg",
+      "creator": "Antonín Dvořák",
+      "creator_origin": "Czech",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Antonín Dvořák. 6 minutes to listen.",
+      "duration_seconds": 392,
+      "headline": "Dvorak American Quartet 1st Movement Seraphina",
+      "key": "culture:b6a3c2f6a0ada63b481db3e8",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Dvorak_American_Quartet_1st_Movement_Seraphina.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k",
+      "original_recording_title": "Dvorak American Quartet 1st Movement Seraphina",
+      "provenance_id": "commons:16704222",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Antonin Dvorak, played by the Seraphina Quartet",
+      "recording_description": "First movement of the Dvorak American Quartet, played by the Seraphina Quartet (Caeli Smith and Sabrina Tabby, violins; Madeline Smith, viola; Genevieve Tabby, cello)",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Antonin Dvorak, played by the Seraphina Quartet",
+        "label": "CC BY 3.0 (source-declared)",
+        "source_credit": "YouTube : https://www.youtube.com/watch?v=dpTdxZ12bGo – View/save archived versions on archive.org",
+        "url": "https://creativecommons.org/licenses/by/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dvorak_American_Quartet_1st_Movement_Seraphina.ogg",
+      "work_date": "2007-08-03",
+      "date": "2026-10-09",
+      "selected_on": "2026-10-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-b6a3c2f6a0ada63b481db3e8",
+      "path": "culture/culture-b6a3c2f6a0ada63b481db3e8/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Dvorak American Quartet 1st Movement Seraphina",
+          "url": "https://commons.wikimedia.org/wiki/File:Dvorak_American_Quartet_1st_Movement_Seraphina.ogg",
+          "date": "2007-08-03",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-09",
+      "summary_basis": "Selected 9 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "043d0d96b4da58ad099333a53b5e3bfbf8db40dfce98ade6bd1b7c5448d05525",
+      "creator": "Sarojini Naidu",
+      "creator_origin": "Indian",
+      "culture_type": "poetry",
+      "deck": "The Poet's Love-Song, by Sarojini Naidu.",
+      "excerpt": "In noon-tide hours, O Love, secure and strong,\n     I need thee not; mad dreams are mine to bind\n     The world to my desire, and hold the wind\n  A voiceless captive to my conquering song.\n     I need thee not, I am content with these:\n     Keep silence in thy soul, beyond the seas!\n\n  But in the desolate hour of midnight, when\n     An ecstasy of starry silence sleeps\n     On the still mountains and the soundless deeps,\n  And my soul hungers for thy voice, O then,\n     Love, like the magic of wild melodies,\n     Let thy soul answer mine across the seas.",
+      "headline": "The Poet's Love-Song",
+      "key": "culture:84b5e3254a2e50433cb40e72",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "In noon-tide hours, O Love, secure and strong,",
+        "     I need thee not; mad dreams are mine to bind",
+        "     The world to my desire, and hold the wind",
+        "  A voiceless captive to my conquering song.",
+        "     I need thee not, I am content with these:",
+        "     Keep silence in thy soul, beyond the seas!",
+        "",
+        "  But in the desolate hour of midnight, when",
+        "     An ecstasy of starry silence sleeps",
+        "     On the still mountains and the soundless deeps,",
+        "  And my soul hungers for thy voice, O then,",
+        "     Love, like the magic of wild melodies,",
+        "     Let thy soul answer mine across the seas."
+      ],
+      "provenance_id": "pg:680:poem:5443df74712dcbf03571ce8466c18bcad337f0a683b2ee48056e2326d422d0d7",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1949. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "43b66624f43d0564b45974d76131a5058bd18909e6d49c12683dc8ec6216238d",
+      "source_locator": "THE POET'S LOVE-SONG",
+      "source_url": "https://www.gutenberg.org/ebooks/680",
+      "translator": "",
+      "work_date": "1905",
+      "date": "2026-10-09",
+      "selected_on": "2026-10-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-84b5e3254a2e50433cb40e72",
+      "path": "culture/culture-84b5e3254a2e50433cb40e72/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Poet's Love-Song",
+          "url": "https://www.gutenberg.org/ebooks/680",
+          "date": "1905",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-09",
+      "summary_basis": "Selected 9 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "In noon-tide hours, O Love, secure and strong,\n     I need thee not; mad dreams are mine to bind\n     The world to my desire, and hold the wind\n  A voiceless captive to my conquering song.\n     I need thee not, I am content with these:\n     Keep silence in thy soul, beyond the seas!\n\n  But in the desolate hour of midnight, when\n     An ecstasy of starry silence sleeps\n     On the still mountains and the soundless deeps,\n  And my soul hungers for thy voice, O then,\n     Love, like the magic of wild melodies,\n     Let thy soul answer mine across the seas.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "03a552fe6d12a05f4765ead1af8e4d32e44fe5755f4680314207b0dbd2b998c6",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "quote",
+      "deck": "From Tao Te Ching. Translation by James Legge.",
+      "excerpt": "When a reconciliation is effected (between two parties) after a great animosity, there is sure to be a grudge remaining (in the mind of the one who was wrong).",
+      "headline": "When a reconciliation is effected (between two parties) after a great animosity, there is sure to be a grudge remaining (in the mind of the one who was wrong).",
+      "key": "culture:7809ba95dc2bb65bb96a0565",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:quote:03a552fe6d12a05f4765ead1af8e4d32e44fe5755f4680314207b0dbd2b998c6",
+      "publisher": "Project Gutenberg",
+      "quote_context": "When a reconciliation is effected (between two parties) after a great animosity, there is sure to be a grudge remaining (in the mind of the one who was wrong). And how can this be beneficial (to the other)?",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 276 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-10-09",
+      "selected_on": "2026-10-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-7809ba95dc2bb65bb96a0565",
+      "path": "culture/culture-7809ba95dc2bb65bb96a0565/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "When a reconciliation is effected (between two parties) after a great animosity, there is sure to be a grudge remaining (in the mind of the one who was wrong).",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-09",
+      "summary_basis": "Selected 9 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "When a reconciliation is effected (between two parties) after a great animosity, there is sure to be a grudge remaining (in the mind of the one who was wrong).",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "When a reconciliation is effected (between two parties) after a great animosity, there is sure to be a grudge remaining (in the mind of the one who was wrong). And how can this be beneficial (to the other)?",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Timaeus",
+      "content_fingerprint": "f4828e62d112ca160fd4105ef67e7f8ce25ae33b6515d3ab7938318bf5df140c",
+      "creator": "Plato",
+      "creator_origin": "Greek",
+      "culture_type": "text",
+      "deck": "A passage from Timaeus. Translated by Benjamin Jowett.",
+      "excerpt": "I have thus shown the various classes of bodies as they are diversified by their forms and combinations and changes into one another, and now I must endeavour to set forth their affections and the causes of them. In the first place, the bodies which I have been describing are necessarily objects of sense. But we have not yet considered the origin of flesh, or what belongs to flesh, or of that part of the soul which is mortal. And these things cannot be adequately explained without also explaining the affections which are concerned with sensation, nor the latter without the former: and yet to explain them together is hardly possible; for which reason we must assume first one or the other and afterwards examine the nature of our hypothesis. In order, then, that the affections may follow regularly after the elements, let us presuppose the existence of body and soul.",
+      "headline": "Timaeus · a short reading",
+      "key": "culture:6c7128062d5dd5fd42921b5f",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1572:passage:f4828e62d112ca160fd4105ef67e7f8ce25ae33b6515d3ab7938318bf5df140c",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died -348. Translator: Benjamin Jowett, died 1893. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1572"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af8576f807a2d709ec13daf55fba8d0285af1ba15dcdb466bc50ae1d5080f7ad",
+      "source_locator": "PERSONS OF THE DIALOGUE: Socrates, Critias, Timaeus, Hermocrates.; paragraph 89 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1572",
+      "translator": "Benjamin Jowett",
+      "work_date": "1892 translation",
+      "date": "2026-10-09",
+      "selected_on": "2026-10-09",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-6c7128062d5dd5fd42921b5f",
+      "path": "culture/culture-6c7128062d5dd5fd42921b5f/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Timaeus · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/1572",
+          "date": "1892 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "9 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-09",
+      "summary_basis": "Selected 9 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I have thus shown the various classes of bodies as they are diversified by their forms and combinations and changes into one another, and now I must endeavour to set forth their affections and the causes of them. In the first place, the bodies which I have been describing are necessarily objects of sense. But we have not yet considered the origin of flesh, or what belongs to flesh, or of that part of the soul which is mortal. And these things cannot be adequately explained without also explaining the affections which are concerned with sensation, nor the latter without the former: and yet to explain them together is hardly possible; for which reason we must assume first one or the other and afterwards examine the nature of our hypothesis. In order, then, that the affections may follow regularly after the elements, let us presuppose the existence of body and soul.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "58eb0a236875e1e4496a73ab9fe83aea422c672dd94a13e0ccb9d9f94ee62c6b",
       "creator": "John Keats",
       "creator_origin": "English",
