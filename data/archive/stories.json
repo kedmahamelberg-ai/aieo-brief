@@ -2,6 +2,370 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "The Virgin Crowned by Angels",
+      "art_type": "Painting",
+      "balance_origin": "Germany",
+      "creator": "Stefan Lochner (German, 1400-c. 1452)",
+      "creator_origin": "Germany, Cologne",
+      "culture_type": "illustration",
+      "deck": "The Virgin Crowned by Angels. oil on wood.",
+      "headline": "The Virgin Crowned by Angels",
+      "image_path": "assets/culture/f14f684deb452b9adbd66e10.jpg",
+      "key": "culture:f14f684deb452b9adbd66e10",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1968.20/1968.20_web.jpg",
+      "medium": "oil on wood",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1968.20",
+      "provenance_id": "cma:143761",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1968.20",
+      "work_date": "c. 1450",
+      "date": "2026-10-10",
+      "selected_on": "2026-10-10",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-f14f684deb452b9adbd66e10",
+      "path": "culture/culture-f14f684deb452b9adbd66e10/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "The Virgin Crowned by Angels",
+          "url": "https://clevelandart.org/art/1968.20",
+          "date": "c. 1450",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "10 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-10",
+      "summary_basis": "Selected 10 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "d131a9ecb10e15f1d0a838d5c95e3833f2cb3afb538aa91eb22086f78d95320a",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "text",
+      "deck": "A passage from The Book of Tea.",
+      "excerpt": "Sad as it is, we cannot conceal the fact that in spite of our companionship with flowers we have not risen very far above the brute. Scratch the sheepskin and the wolf within us will soon show his teeth. It has been said that a man at ten is an animal, at twenty a lunatic, at thirty a failure, at forty a fraud, and at fifty a criminal. Perhaps he becomes a criminal because he has never ceased to be an animal. Nothing is real to us but hunger, nothing sacred except our own desires. Shrine after shrine has crumbled before our eyes; but one altar is forever preserved, that whereon we burn incense to the supreme idol,--ourselves. Our god is great, and money is his Prophet! We devastate nature in order to make sacrifice to him. We boast that we have conquered Matter and forget that it is Matter that has enslaved us. What atrocities do we not perpetrate in the name of culture and refinement!",
+      "headline": "The Book of Tea · a short reading",
+      "key": "culture:9f775f11407c516c4331d9cc",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:passage:d131a9ecb10e15f1d0a838d5c95e3833f2cb3afb538aa91eb22086f78d95320a",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 94 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-10-10",
+      "selected_on": "2026-10-10",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9f775f11407c516c4331d9cc",
+      "path": "culture/culture-9f775f11407c516c4331d9cc/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Book of Tea · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "10 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-10",
+      "summary_basis": "Selected 10 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Sad as it is, we cannot conceal the fact that in spite of our companionship with flowers we have not risen very far above the brute. Scratch the sheepskin and the wolf within us will soon show his teeth. It has been said that a man at ten is an animal, at twenty a lunatic, at thirty a failure, at forty a fraud, and at fifty a criminal. Perhaps he becomes a criminal because he has never ceased to be an animal. Nothing is real to us but hunger, nothing sacred except our own desires. Shrine after shrine has crumbled before our eyes; but one altar is forever preserved, that whereon we burn incense to the supreme idol,--ourselves. Our god is great, and money is his Prophet! We devastate nature in order to make sacrifice to him. We boast that we have conquered Matter and forget that it is Matter that has enslaved us. What atrocities do we not perpetrate in the name of culture and refinement!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "20b2d7b53244245e161d1d8d34d09f570ee897b2a529f18fff567c8aaba0b023",
+      "creator": "Ssu-K`ung T`u",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "The Poet's Vision, by Ssu-K`ung T`u. Translated by L. Cranmer-Byng.",
+      "excerpt": "Wine that recalls the glow of spring,\nUpon the thatch a sudden shower,\nA gentle scholar in the bower,\nWhere tall bamboos their shadows fling,\nWhite clouds in heavens newly clear,\nAnd wandering wings through depths of trees,\nThen pillowed in green shade, he sees\nA torrent foaming to the mere;\nAround his dreams the dead leaves fall;\nCalm as the starred chrysanthemum,\nHe notes the season glories come,\nAnd reads the books that never pall.",
+      "headline": "The Poet's Vision",
+      "key": "culture:91a29e9000a5810ff97205d4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Wine that recalls the glow of spring,",
+        "Upon the thatch a sudden shower,",
+        "A gentle scholar in the bower,",
+        "Where tall bamboos their shadows fling,",
+        "White clouds in heavens newly clear,",
+        "And wandering wings through depths of trees,",
+        "Then pillowed in green shade, he sees",
+        "A torrent foaming to the mere;",
+        "Around his dreams the dead leaves fall;",
+        "Calm as the starred chrysanthemum,",
+        "He notes the season glories come,",
+        "And reads the books that never pall."
+      ],
+      "provenance_id": "pg:390:poem:614ea41a37a4eb93605462a9f39ee262f69051e9c34a7682eae2a00af805aafb",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "The Poet's Vision",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-10-10",
+      "selected_on": "2026-10-10",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-91a29e9000a5810ff97205d4",
+      "path": "culture/culture-91a29e9000a5810ff97205d4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Poet's Vision",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "10 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-10",
+      "summary_basis": "Selected 10 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Wine that recalls the glow of spring,\nUpon the thatch a sudden shower,\nA gentle scholar in the bower,\nWhere tall bamboos their shadows fling,\nWhite clouds in heavens newly clear,\nAnd wandering wings through depths of trees,\nThen pillowed in green shade, he sees\nA torrent foaming to the mere;\nAround his dreams the dead leaves fall;\nCalm as the starred chrysanthemum,\nHe notes the season glories come,\nAnd reads the books that never pall.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sergei_Rachmaninoff_-_Etudes-Tableaux%2C_Op._39%2C_No._5.oga",
+      "creator": "Sergei Rachmaninoff",
+      "creator_origin": "Russian–American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Sergei Rachmaninoff. 4 minutes to listen.",
+      "duration_seconds": 271,
+      "headline": "Sergei Rachmaninoff - Etudes-Tableaux, Op. 39, No. 5",
+      "key": "culture:65834803a5264f3405d7a1b6",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Sergei_Rachmaninoff_-_Etudes-Tableaux%2C_Op._39%2C_No._5.oga",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "original_recording_title": "Sergei Rachmaninoff - Etudes-Tableaux, Op. 39, No. 5",
+      "provenance_id": "commons:3177299",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Karine Gilanyan",
+      "recording_description": "Étude-Tableau in E-flat minor (Op. 39, No. 5) composed by Sergei Rachmaninoff , published 1917.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Karine Gilanyan",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Musopen ( https://musopen.org/music/1208-etudes-tableaux-op-39/ ), a repository of Public Domain recordings",
+        "url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Etudes-Tableaux,_Op._39,_No._5.oga"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Etudes-Tableaux,_Op._39,_No._5.oga",
+      "work_date": "between 2005 and 2007 date QS:P,+2005-00-00T00:00:00Z/8,P1319,+2005-00-00T00:00:00Z/9,P1326,+2007-00-00T00:00:00Z/9",
+      "date": "2026-10-10",
+      "selected_on": "2026-10-10",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-65834803a5264f3405d7a1b6",
+      "path": "culture/culture-65834803a5264f3405d7a1b6/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Sergei Rachmaninoff - Etudes-Tableaux, Op. 39, No. 5",
+          "url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Etudes-Tableaux,_Op._39,_No._5.oga",
+          "date": "between 2005 and 2007 date QS:P,+2005-00-00T00:00:00Z/8,P1319,+2005-00-00T00:00:00Z/9,P1326,+2007-00-00T00:00:00Z/9",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "10 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-10",
+      "summary_basis": "Selected 10 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "3a407dfd5c87ede4b512f4548d0185b83770be605d09973d9dfcd1d4c4c9a1be",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "Let your music, like a sword, pierce the noise of the market to its heart.",
+      "headline": "Let your music, like a sword, pierce the noise of the market to its heart.",
+      "key": "culture:494cf6a9561982d19d0a5e82",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:3a407dfd5c87ede4b512f4548d0185b83770be605d09973d9dfcd1d4c4c9a1be",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Let your music, like a sword, pierce the noise of the market to its heart.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 275 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-10-10",
+      "selected_on": "2026-10-10",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-494cf6a9561982d19d0a5e82",
+      "path": "culture/culture-494cf6a9561982d19d0a5e82/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Let your music, like a sword, pierce the noise of the market to its heart.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "10 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-10",
+      "summary_basis": "Selected 10 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Let your music, like a sword, pierce the noise of the market to its heart.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Let your music, like a sword, pierce the noise of the market to its heart.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Parrot",
       "art_type": "Ceramic",
       "balance_origin": "Hungary",

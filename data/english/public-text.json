@@ -4435,6 +4435,27 @@
       },
       "output_sha256": "d6da2ef17efaf53a5e1c5571049f6ab154d92abc2ac4229426f26464a611d79a",
       "policy": "brief-english-display-v1"
+    },
+    "a755ec2829537b4e72a3306c8c2028d198cc29e0d1b781de1af23ecb3e319b93": {
+      "english": {
+        "0": "Russian–American",
+        "1": "Composer",
+        "2": "Sergei Rachmaninoff - Etudes-Tableaux, Op. 39, No. 5",
+        "3": "Sergei Rachmaninoff - Etudes-Tableaux, Op. 39, No. 5"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "633221ef2fae61a5edd664f1e0ff23b4f06251a3d05a8993dacf3552f521678c",
+      "policy": "brief-english-display-v1"
     }
   }
 }
