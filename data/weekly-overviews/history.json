@@ -97,9 +97,9 @@
         "eyebrow": "THE RESEARCH COMPASS",
         "title": "Research turns toward training and efficiency and reliability and evaluation",
         "deck": "The selected papers point in two directions: training and efficiency and reliability and evaluation.",
-        "summary": "Smithsonian Institution, University of Illinois Urbana-Champaign, University of Macau, University of New Brunswick: New imaging and learning methods link pollen shape to grass diversity, with limits.",
+        "summary": "Smithsonian Institution, University of Illinois Urbana-Champaign, University of Macau, University of New Brunswick: New imaging and AI read ancient grass pollen to map past ecosystems without hype.",
         "scope_note": "Institution names come from source or OpenAlex metadata and are shown only as affiliations, not as endorsements. Preprints and abstract-only evidence remain labelled.",
-        "word_count": 49,
+        "word_count": 50,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
         "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
@@ -110,9 +110,9 @@
         "papers": [
           {
             "key": "paper:beaf7b4a534a2a4135c21b97",
-            "headline": "Fossil pollen reveals 25,000 years of grassland change in eastern Africa, researchers say",
+            "headline": "Fossil pollen and AI show 25,000 years of grassland change in East Africa",
             "original_headline": "Deep learning of fossil pollen morphology reveals 25,000 y of ecological change in eastern African grasslands",
-            "deck": "New imaging and learning methods link pollen shape to grass diversity, with limits.",
+            "deck": "New imaging and AI read ancient grass pollen to map past ecosystems without hype.",
             "authors": [
               "Marc-Élie Adaimé",
               "Shu Kong",
@@ -133,7 +133,7 @@
             "publisher": "PNAS",
             "label": "Journal article",
             "date": "2026-10-02",
-            "theme": "new methods and evidence",
+            "theme": "training and efficiency",
             "source_verified_at": "",
             "affiliation_source_url": "https://openalex.org/W7216550066"
           }
@@ -141,7 +141,7 @@
         "paper_count": 25,
         "affiliation_verified_count": 1
       },
-      "content_sha256": "7acc8e69fce0dcf8bc05ed371da62a22e2ba628c82e162ae6af3329b9bbb84c2"
+      "content_sha256": "1425a0e0c335de8691d35b73382b6cb388d141c53d97630787344e42ee51197c"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
