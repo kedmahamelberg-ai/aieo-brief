@@ -2,20 +2,20 @@
   "release_id": "2026-W40",
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "counts": {
-    "unchanged": 54,
+    "unchanged": 57,
     "source_not_ready": 0,
-    "new_registry": 25,
-    "needs_model": 25,
+    "new_registry": 22,
+    "needs_model": 22,
     "needs_rebind": 0,
-    "selected": 25,
-    "generated": 3,
+    "selected": 22,
+    "generated": 1,
     "rebound": 0,
-    "failed": 22,
+    "failed": 21,
     "deferred": 0
   },
   "failure_counts": {
     "draft_quote_unsupported": 18,
-    "unsupported_number": 3,
+    "unsupported_number": 2,
     "source_wording_copied": 1
   },
   "failed_items": [
@@ -30,7 +30,7 @@
       "event_id": "60e6dd7c-107c-430a-8e85-ce67c12f807e",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "draft_quote_unsupported",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -69,17 +69,10 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
-      "event_id": "98a47f7a-e2ae-494b-a64b-c667cb44bafb",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
       "event_id": "44c518ad-a30e-44b1-84a1-780ddaff627f",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -93,7 +86,7 @@
       "event_id": "062ed102-7b72-41a9-b078-1e2422731eb1",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -174,5 +167,5 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-10-09T18:35:36.632273+00:00"
+  "updated_at": "2026-10-10T17:27:19.316968+00:00"
 }
