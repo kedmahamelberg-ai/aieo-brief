@@ -1,8 +1,10 @@
 (function(){'use strict';
  const config=JSON.parse(document.getElementById('brief-config').textContent),C=window.BriefCore,consentKey='aieo-brief-consent-v2';let consent=null,loaded=false,adsLoaded=false;
  try{const saved=JSON.parse(localStorage.getItem(consentKey));if(C.consentValid(saved))consent=saved;}catch{}
+ // New readers are measured by default. A saved opt-out remains respected.
+ if(!consent)consent={version:1,analytics:true,research:false,at:Date.now()};
  window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
- gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+ gtag('consent','default',{analytics_storage:consent.analytics?'granted':'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
  function analyticsAllowed(){return !!(consent?.analytics&&!config.is_preview);}
  function loadGA(){if(!analyticsAllowed()||!config.ga4_measurement_id||loaded)return;loaded=true;window['ga-disable-'+config.ga4_measurement_id]=false;gtag('consent','update',{analytics_storage:'granted'});const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(config.ga4_measurement_id);document.head.appendChild(script);gtag('js',new Date());gtag('config',config.ga4_measurement_id,{send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false});event('page_view',{});}
  function event(name,props={}){if(!['page_view','active_reading','qualified_read'].includes(name))window.BriefUX?.track(name,props);if(!analyticsAllowed()||!loaded)return;const allowed={};for(const key of ['story_key','channel','kind','seconds','progress','market','sort','placement'])if(['string','number','boolean'].includes(typeof props[key]))allowed[key]=String(props[key]).slice(0,150);gtag('event',name,{...allowed,page_location:location.origin+location.pathname,page_referrer:'',page_title:document.title});}
