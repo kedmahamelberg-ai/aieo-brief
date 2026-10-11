@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-04",
-  "period_end": "2026-10-10",
+  "period_start": "2026-10-05",
+  "period_end": "2026-10-11",
   "providers": [
     {
       "source": "arxiv",
@@ -61,16 +61,10 @@
       "status": "matched",
       "source_verified": false,
       "institutions": 8
-    },
-    {
-      "key": "paper:beaf7b4a534a2a4135c21b97",
-      "status": "cached",
-      "source_verified": false,
-      "institutions": 6
     }
   ],
   "recovery": {
-    "recovered": 1,
+    "recovered": 0,
     "unavailable": 0
   }
 }
