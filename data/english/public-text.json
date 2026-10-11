@@ -4456,6 +4456,70 @@
       },
       "output_sha256": "633221ef2fae61a5edd664f1e0ff23b4f06251a3d05a8993dacf3552f521678c",
       "policy": "brief-english-display-v1"
+    },
+    "3af469b37770e8e8a136de8ab6bcd0fa0526ddb28f15fb12d028ae9bbb1e864a": {
+      "english": {
+        "0": "Composer",
+        "1": "Chopin-Lullaby",
+        "2": "Chopin-Lullaby"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5d129401e8bc72336a0512428dc88a9847ff7cd09eb943ec9f936726183347cf",
+      "policy": "brief-english-display-v1"
+    },
+    "a42cf3a47f58a37db754674b81acec870ab1dea7a5276a23b50e6b5ca8054638": {
+      "english": {
+        "0": "The Enchiridion",
+        "1": "Greek · Roman-era philosopher",
+        "2": "The Enchiridion · a short reading",
+        "3": "THE ENCHIRIDION; paragraph 33 in the selected body section",
+        "4": "The Enchiridion · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7e9f37df347a251b91a569e11c8726f53385db934e2848893626295f9f1c5a8e",
+      "policy": "brief-english-display-v1"
+    },
+    "e834a6bcbf9e1c58ca2bf7e697400ce27a232b97762cfd0997149f5f285d7b1b": {
+      "english": {
+        "0": "Saint Ambrose",
+        "1": "Spain",
+        "2": "Saint Ambrose",
+        "3": "CC0 image",
+        "4": "Saint Ambrose"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "485bb6107663ed8ff57f05258c7c611452a4de7695b4b9d07b31301d4f253cbb",
+      "policy": "brief-english-display-v1"
     }
   }
 }
