@@ -97,7 +97,7 @@
         "papers": [],
         "pending_reason": "editorial_check_pending",
         "input_hash": "3425314cbbf49c19deb5f8ca537ee24ced777b1a0d628882f8513950d85dc7ac",
-        "attempts": 1
+        "attempts": 2
       },
       "research": {
         "kind": "research",
@@ -122,11 +122,11 @@
         "prose": [],
         "pending_reason": "editorial_check_pending",
         "input_hash": "3987a1b5056884ad0485badfe8026d0f912dc507f5b585fba49f437b18c58fc6",
-        "attempts": 1
+        "attempts": 2
       },
       "editorial_version": "kedma-weekly-v1",
       "editorial_status": "pending",
-      "content_sha256": "5f56772a4960d2dbbddeca0e4a89c2d3098af1077be17cbb73dd2f85a1f91ce2"
+      "content_sha256": "f915e6bc828a1a9db3b0755a3ac7770db41ba08767bc61b19b28e3aeac39fbf1"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",

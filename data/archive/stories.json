@@ -2690,8 +2690,8 @@
       "key": "event:c4e2d44a-d6c8-48cf-bac0-aaeecbd00fe3",
       "event_id": "c4e2d44a-d6c8-48cf-bac0-aaeecbd00fe3",
       "kind": "news",
-      "slug": "development-c4e2d44a-d6c8-48cf-bac0-aaeecbd00fe3",
-      "path": "story/development-c4e2d44a-d6c8-48cf-bac0-aaeecbd00fe3/index.html",
+      "slug": "information-protection-anchor-ai-development",
+      "path": "story/information-protection-anchor-ai-development/index.html",
       "headline": "Information protection: The anchor of AI development",
       "original_headline": "Information protection: The anchor of AI development",
       "deck": "Reporting from 半月谈. Open the source for the article.",
@@ -2732,7 +2732,11 @@
       "has_editorial": false,
       "edition": "2026-W41",
       "period_start": "2026-10-05",
-      "period_end": "2026-10-11"
+      "period_end": "2026-10-11",
+      "legacy_paths": [
+        "story/development-c4e2d44a-d6c8-48cf-bac0-aaeecbd00fe3/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:c0e5d9c7-a421-4239-9b46-d36922438e00",

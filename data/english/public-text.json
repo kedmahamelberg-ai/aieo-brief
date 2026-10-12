@@ -4761,6 +4761,26 @@
       },
       "output_sha256": "17ac432a62d791fe406d793baa842aa9220be0996ada4ce1408b5542546e4641",
       "policy": "brief-english-display-v1"
+    },
+    "bfda0b8bf6e299180ae19b989b9482c868d81878afa7c393e45cfa1f2977a99d": {
+      "english": {
+        "0": "Reporting from Banyuetan. Open the source for the article.",
+        "1": "Banyuetan",
+        "2": "Banyuetan"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7cff1a2622c11ac202cfcef3ad7deb841d02030a932983c26e1cfc25cb456bad",
+      "policy": "brief-english-display-v1"
     }
   }
 }
