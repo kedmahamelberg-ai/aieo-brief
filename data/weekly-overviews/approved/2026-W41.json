@@ -1,0 +1,105 @@
+{
+  "release_id": "2026-W41",
+  "human_approved_at": "2026-10-12T00:00:00+02:00",
+  "approved_by": "Kedma Hamelberg",
+  "markets": {
+    "kind": "markets",
+    "eyebrow": "THE WEEK FROM ABOVE",
+    "editorial_version": "kedma-weekly-v5",
+    "status": "ready",
+    "author": "Kedma Hamelberg",
+    "human_approved": true,
+    "title": "The choices around AI are becoming more visible",
+    "deck": "This week’s stories were less about one big technical leap and more about the choices that shape everyday use.",
+    "summary": "This week’s stories were less about one big technical leap and more about the choices that shape everyday use. AWS introduced a tool to help coding agents prepare AI systems for deployment, while a French analysis linked AI-exposed jobs with early changes in youth hiring. Neither story proves a wider outcome on its own. Elsewhere, an international forum called for shared rules and cooperation, Greenpeace France focused on environmental and social costs, and Spain’s new HR rules emphasised transparency and meaningful human oversight. Taken together, these are five separate reports, not a single global trend. But they point to the same question: can useful AI systems be built with care for work, power, resources and accountability?",
+    "prose": [
+      [
+        {"text": "This week’s stories were less about one big technical leap and more about the choices that shape everyday use.", "source_key": "", "path": ""},
+        {"text": "AWS introduced a tool to help coding agents prepare AI systems for deployment", "source_key": "event:690144fd-c864-4d34-bb1d-036f88bd2641", "path": "story/aws-debuts-sagemaker-ai-optimized-inference-skill-limits-caveats/index.html"},
+        {"text": ", while a", "source_key": "", "path": ""},
+        {"text": "French analysis linked AI-exposed jobs with early changes in youth hiring", "source_key": "event:799b6925-bfca-4440-8ae6-37964b929d12", "path": "story/banque-de-france-finds-early-youth-ai-limits/index.html"},
+        {"text": ". Neither story proves a wider outcome on its own.", "source_key": "", "path": ""}
+      ],
+      [
+        {"text": "Elsewhere, an", "source_key": "", "path": ""},
+        {"text": "international forum called for shared rules and cooperation", "source_key": "event:4313dd84-da65-4ba6-aeb1-2dac04a6b93a", "path": "story/forum-calls-global-inclusive-ai-cooperation-shared-gains/index.html"},
+        {"text": ",", "source_key": "", "path": ""},
+        {"text": "Greenpeace France focused on environmental and social costs", "source_key": "event:26f50f46-77b5-4970-8663-105dd61f0910", "path": "story/greenpeace-dangers-ai-environmental-costs-governance-greenpeace-france/index.html"},
+        {"text": ", and", "source_key": "", "path": ""},
+        {"text": "Spain’s new HR rules emphasised transparency and meaningful human oversight", "source_key": "event:3369ad25-ac15-4e7e-88e5-303ccb86dd7b", "path": "story/eu-ai-act-tightens-spains-hr-oversight-transparency/index.html"},
+        {"text": ". Taken together, these are five separate reports, not a single global trend. But they point to the same question: can useful AI systems be built with care for work, power, resources and accountability?", "source_key": "", "path": ""}
+      ]
+    ],
+    "scope_note": "Five selected stories from five discovery markets.",
+    "word_count": 131,
+    "reading_minutes": 1,
+    "source_hashes": {
+      "event:690144fd-c864-4d34-bb1d-036f88bd2641": "259affc899826b6eb7eabb0391f62e4b5c3a337dd5fe6dea958950820e14f3e3",
+      "event:799b6925-bfca-4440-8ae6-37964b929d12": "51eacebfff65a27fcf616651dd6f61fcf211831a79cdaa3971256734515fedce",
+      "event:4313dd84-da65-4ba6-aeb1-2dac04a6b93a": "fad1cc3527993584ad02dca47af573e4fb4306ff660b6b6dc76de503d84fe1fc",
+      "event:26f50f46-77b5-4970-8663-105dd61f0910": "7ac7932a8e957c77423c933539762a0e3e10859ddecc27d44d0b295d964cfae2",
+      "event:3369ad25-ac15-4e7e-88e5-303ccb86dd7b": "cfebdbd051d506679e1ce53e354bebedf934689a711ebf0d79f21ff81852d369"
+    },
+    "image_key": "culture:17657226dfb2d1a06f0e42d2",
+    "image_work_key": "4038af1dc717e07cc28761bc9b6b5e038d894722701ef2d9fd17c39e29336329",
+    "image_path": "assets/culture/17657226dfb2d1a06f0e42d2.jpg",
+    "image_alt": "Musical Scene",
+    "image_caption": "Musical Scene",
+    "image_credit": "Gerrit van Honthorst (Dutch, 1590–1656) · Cleveland Museum of Art",
+    "image_rights": "CC0 image",
+    "image_source_url": "https://clevelandart.org/art/2019.6",
+    "image_reason": "Different instruments make one scene, much like separate reports shaping a wider conversation.",
+    "review_checks": {"grounded": true, "clear_high_school_language": true, "coherent_prose": true, "meaningful_connection": true, "source_limits_preserved": true, "no_invented_personal_experience": true, "image_metaphor_supported": true},
+    "entries": [
+      {"code": "US", "name": "United States", "topic": "", "story": {"path": "story/aws-debuts-sagemaker-ai-optimized-inference-skill-limits-caveats/index.html"}},
+      {"code": "CA", "name": "Canada", "topic": "", "story": {"path": "story/banque-de-france-finds-early-youth-ai-limits/index.html"}},
+      {"code": "CN", "name": "China", "topic": "", "story": {"path": "story/forum-calls-global-inclusive-ai-cooperation-shared-gains/index.html"}},
+      {"code": "FR", "name": "France", "topic": "", "story": {"path": "story/greenpeace-dangers-ai-environmental-costs-governance-greenpeace-france/index.html"}},
+      {"code": "GB", "name": "United Kingdom", "topic": "", "story": {"path": "story/eu-ai-act-tightens-spains-hr-oversight-transparency/index.html"}}
+    ]
+  },
+  "research": {
+    "kind": "research",
+    "eyebrow": "THE RESEARCH COMPASS",
+    "editorial_version": "kedma-weekly-v5",
+    "status": "ready",
+    "author": "Kedma Hamelberg",
+    "human_approved": true,
+    "title": "Remembering more is not always enough",
+    "deck": "Two studies this week look at how AI systems use the past to act in the present.",
+    "summary": "Two studies this week look at how AI systems use the past to act in the present. One tested Ledger, a memory tool that records where objects are and how they move in first-person video. It answered some later spatial questions without replaying the video, but became less reliable when the scene changed. The second study found that longer video history helped a robot control task only when the model had first learned to predict what might happen next. More stored information alone was not the answer. Both papers suggest that useful AI memory depends on how information is organised and trained, not simply on how much of it is kept.",
+    "prose": [
+      [
+        {"text": "Two studies this week look at how AI systems use the past to act in the present. One tested", "source_key": "", "path": ""},
+        {"text": "Ledger, a memory tool that records where objects are and how they move in first-person video", "source_key": "paper:8aab2aec69ddadbff5c1fabe", "path": "research/ledger-memory-helps-recall-object-locations-scene-changes/index.html"},
+        {"text": ". It answered some later spatial questions without replaying the video, but became less reliable when the scene changed.", "source_key": "", "path": ""}
+      ],
+      [
+        {"text": "The", "source_key": "", "path": ""},
+        {"text": "second study found that longer video history helped a robot control task only when the model had first learned to predict what might happen next", "source_key": "paper:f3dbf64096db81d53718e888", "path": "research/longer-video-history-helps-robot-control-future-prediction-pretraining/index.html"},
+        {"text": ". More stored information alone was not the answer. Both papers suggest that useful AI memory depends on how information is organised and trained, not simply on how much of it is kept.", "source_key": "", "path": ""}
+      ]
+    ],
+    "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
+    "word_count": 132,
+    "reading_minutes": 1,
+    "source_hashes": {
+      "paper:8aab2aec69ddadbff5c1fabe": "6c39d4f40b49830096cb1cbf647de46121c1d35aeb63912864189a12ec49a234",
+      "paper:f3dbf64096db81d53718e888": "e2c80c9d59a62c4f76f76614a5ee374ae6bd0d73ff437c7ca4e0366fc0908f80"
+    },
+    "image_key": "culture:975c8a27d5db43a80e723c8f",
+    "image_work_key": "0b6c695046ce3a15235f38ebae4550517f7a18f2c978744c8ebf3daf7e512c4d",
+    "image_path": "assets/culture/975c8a27d5db43a80e723c8f.jpg",
+    "image_alt": "Landscape after Guo Zhongshu",
+    "image_caption": "Landscape after Guo Zhongshu",
+    "image_credit": "Bada Shanren (Chinese, 1626–1705) · Cleveland Museum of Art",
+    "image_rights": "CC0 image",
+    "image_source_url": "https://clevelandart.org/art/1955.36",
+    "image_reason": "A landscape holds many connected details, like a memory that must remain useful as the view changes.",
+    "review_checks": {"grounded": true, "clear_high_school_language": true, "coherent_prose": true, "meaningful_connection": true, "source_limits_preserved": true, "no_invented_personal_experience": true, "image_metaphor_supported": true},
+    "papers": [
+      {"key": "paper:8aab2aec69ddadbff5c1fabe", "url": "https://arxiv.org/abs/2610.10538v1", "path": "research/ledger-memory-helps-recall-object-locations-scene-changes/index.html", "original_headline": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos", "authors": ["Shravan Chaudhari", "William Paul", "Suchi Saria", "Rama Chellappa", "Homanga Bharadhwaj"], "institutions": [], "label": "Preprint", "summary_basis": "Summary of the paper", "publisher": "arXiv"},
+      {"key": "paper:f3dbf64096db81d53718e888", "url": "https://arxiv.org/abs/2610.10528v1", "path": "research/longer-video-history-helps-robot-control-future-prediction-pretraining/index.html", "original_headline": "Long-WAM: Scaling the Context of World-Action Models", "authors": ["Wei Huang", "Bohan Zhang", "Chenzhi Liu", "Isabella Liu", "Shuai Yang", "Weian Mao", "Luozhou Wang", "Yicheng Xiao", "Weifeng Lin", "Qixin Hu", "Bryan Chu", "Sifei Liu", "Linxi Fan", "Xiaojuan Qi", "Song Han", "Yukang Chen"], "institutions": [], "label": "Preprint", "summary_basis": "Summary of the paper", "publisher": "arXiv"}
+    ]
+  }
+}
