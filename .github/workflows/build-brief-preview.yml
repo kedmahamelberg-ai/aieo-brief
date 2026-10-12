@@ -25,7 +25,9 @@ jobs:
       AIEO_AI_PROVIDER: ${{ vars.AIEO_AI_PROVIDER || 'openai' }}
       AIEO_AI_MAX_JOB_USD: ${{ vars.AIEO_AI_MAX_JOB_USD || '0.50' }}
       BRIEF_TRANSLATE_ENGLISH: ${{ !contains(github.event.head_commit.message, '[no-cost-build]') }}
-      BRIEF_WRITE_WEEKLY_OVERVIEWS: ${{ !contains(github.event.head_commit.message, '[no-cost-build]') }}
+      # Weekly prose is prepared in a private review artifact.  A public build
+      # may render only a previously human-approved edition from the archive.
+      BRIEF_WRITE_WEEKLY_OVERVIEWS: 'false'
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       SUPABASE_PUBLISHABLE_KEY: ${{ vars.SUPABASE_PUBLISHABLE_KEY }}
