@@ -142,6 +142,49 @@ def sitemap_articles(items):
     """
     return [item for item in items if item.get('has_editorial') and (item.get('what_happened') or item.get('body_paragraphs'))]
 
+
+def absolute_url(baseurl, path):
+    return (baseurl.rstrip('/') + '/' + path.lstrip('/')) if baseurl and path else ''
+
+
+def image_object(baseurl, path, alt='', caption='', credit='', rights='', source_url=''):
+    """Describe a page image in schema without inventing ownership details."""
+    url = absolute_url(baseurl, path)
+    if not url:
+        return None
+    result = {'@type': 'ImageObject', 'contentUrl': url, 'url': url,
+              'caption': caption or alt, 'description': alt or caption,
+              'representativeOfPage': True}
+    if credit:
+        result['creditText'] = credit
+    if rights:
+        result['copyrightNotice'] = rights
+    if source_url:
+        result['isBasedOn'] = source_url
+    return result
+
+
+def article_schema(item, canonical, baseurl, page_image='', page_image_alt=''):
+    """Source-linked Article markup for people, search and answer engines."""
+    if not item or not item.get('has_editorial'):
+        return None
+    image = image_object(baseurl, page_image, page_image_alt)
+    schema = {'@context': 'https://schema.org',
+              '@type': 'NewsArticle' if item.get('kind') == 'news' else 'Article',
+              'mainEntityOfPage': {'@type': 'WebPage', '@id': canonical},
+              'headline': item['headline'], 'description': item['deck'],
+              'datePublished': item['date'], 'dateModified': item['date'],
+              'author': {'@type': 'Person', '@id': 'https://kedmahamelberg.com/#person',
+                         'name': 'Kedma Hamelberg', 'url': 'https://kedmahamelberg.com/'},
+              'publisher': {'@id': 'https://brief.hamelberg-ai.com/#organization'},
+              'about': {'@type': 'Thing', 'name': item.get('topic_label', 'AI')},
+              'citation': [source['url'] for source in item.get('sources', []) if source.get('url')]}
+    if item.get('limitation'):
+        schema['disambiguatingDescription'] = item['limitation']
+    if image:
+        schema['image'] = image
+    return schema
+
 def sponsor_is_active(config, day, preview=False):
     sponsor=config.get('sponsor',{})
     return bool(not preview and sponsor.get('enabled') and sponsor.get('starts','')<=day<=sponsor.get('ends',''))
@@ -245,6 +288,14 @@ def main():
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
         canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else '')
         page_defaults['identity_data']=identity_graph(ROOT,canonical,ctx.get('page'))
+        # A separate JSON-LD block states what the article says, where its
+        # evidence is, and which image represents it.  This is deliberately
+        # derived only from visible, source-linked page content.
+        existing_schema = ctx.get('structured_data')
+        generated_schema = article_schema(article, canonical, baseurl,
+                                          ctx.get('page_image', ''), ctx.get('page_image_alt', ''))
+        if generated_schema:
+            ctx['structured_data'] = ([existing_schema] if existing_schema else []) + [generated_schema]
         output=env.get_template(template).render(**page_defaults,local=local,canonical=canonical,client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
@@ -255,13 +306,16 @@ def main():
     render('notifications/index.html','notifications.html',page='notifications')
     render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
-    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',page_image=weekly_overview['markets']['image_path'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research.'})
+    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',page_image=weekly_overview['markets']['image_path'],page_image_alt=weekly_overview['markets']['image_alt'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research. Every overview links to its original reporting and papers.','about':{'@type':'Thing','name':'AI news and research'}})
     # Every URL exposed by the weekly archive and sitemap must be materialized.
     # The current edition and all earlier editions are rendered from the
     # versioned overview history, so a new week can never break the prior week.
     for archived_overview in overview_archive:
         archived_image=(baseurl+'/'+archived_overview['markets']['image_path']) if baseurl else archived_overview['markets']['image_path']
-        archived_schema={'@context':'https://schema.org','@type':'Article','headline':archived_overview['markets']['title'],'description':archived_overview['markets']['deck'],'datePublished':archived_overview['period_end'],'dateModified':archived_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@type':'Organization','name':'The Brief'},'image':[archived_image] if archived_image else []}
+        market_image=image_object(baseurl, archived_overview['markets']['image_path'], archived_overview['markets'].get('image_alt',''), archived_overview['markets'].get('image_caption',''), archived_overview['markets'].get('image_credit',''), archived_overview['markets'].get('image_rights',''), archived_overview['markets'].get('image_source_url',''))
+        research_image=image_object(baseurl, archived_overview['research']['image_path'], archived_overview['research'].get('image_alt',''), archived_overview['research'].get('image_caption',''), archived_overview['research'].get('image_credit',''), archived_overview['research'].get('image_rights',''), archived_overview['research'].get('image_source_url',''))
+        archived_schema={'@context':'https://schema.org','@type':'Article','headline':archived_overview['markets']['title'],'description':archived_overview['markets']['deck'],'datePublished':archived_overview['period_end'],'dateModified':archived_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@id':'https://brief.hamelberg-ai.com/#organization'},'about':{'@type':'Thing','name':'Weekly AI news and research overview'},'citation':[absolute_url(baseurl, entry['story']['path']) for entry in archived_overview['markets'].get('entries',[]) if entry.get('story',{}).get('path')]+[paper['url'] for paper in archived_overview['research'].get('papers',[]) if paper.get('url')]}
+        archived_schema['image']=[image for image in (market_image,research_image) if image]
         if archived_overview.get('editorial_status') == 'ready':
             archived_schema['author']={'@type':'Person','@id':'https://kedmahamelberg.com/#person','name':'Kedma Hamelberg','url':'https://kedmahamelberg.com/'}
         render(
@@ -269,6 +323,7 @@ def main():
             'weekly-overview.html',
             page='weekly-overview',
             page_image=archived_overview['markets']['image_path'],
+            page_image_alt=archived_overview['markets'].get('image_alt',''),
             structured_data=archived_schema,
             weekly_page_overview=archived_overview,
             weekly_page_period_label=fmt(archived_overview['period_start'])+' - '+fmt(archived_overview['period_end']),
@@ -324,12 +379,16 @@ def main():
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=[
-            ('index.html',today),('research/index.html',today),('culture/index.html',today),
-            ('archive/index.html',today),('about/index.html',today),('week-from-above/index.html',release['period_end']),
-            *[(x['path'],x['period_end']) for x in overview_archive],
-            *[(item['path'],item['date']) for item in sitemap_articles(allcards)],
+            ('index.html',today,''),('research/index.html',today,''),('culture/index.html',today,''),
+            ('archive/index.html',today,''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
+            *[(x['path'],x['period_end'],x['markets'].get('image_path','')) for x in overview_archive],
+            *[(item['path'],item['date'],'') for item in sitemap_articles(allcards)],
         ]
-        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+path.removesuffix('index.html'))+'</loc><lastmod>'+xml_escape(modified)+'</lastmod>'+('<image:image><image:loc>https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg</image:loc></image:image>' if path=='about/index.html' else '')+'</url>' for path,modified in locations)+'</urlset>')
+        def sitemap_url(path, modified, image=''):
+            image_url = image if image.startswith('http') else absolute_url(baseurl, image)
+            image_xml = '<image:image><image:loc>'+xml_escape(image_url)+'</image:loc></image:image>' if image_url else ''
+            return '<url><loc>'+xml_escape(baseurl+'/'+path.removesuffix('index.html'))+'</loc><lastmod>'+xml_escape(modified)+'</lastmod>'+image_xml+'</url>'
+        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+''.join(sitemap_url(*entry) for entry in locations)+'</urlset>')
 
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
     if args.update_archive and not preview:
