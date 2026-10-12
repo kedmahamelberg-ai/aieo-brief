@@ -14,7 +14,7 @@ import time
 from pathlib import Path
 
 START = '2026-10-05'
-VERSION = 'kedma-weekly-v1'
+VERSION = 'kedma-weekly-v2'
 AUTHOR = 'Kedma Hamelberg'
 MARKETS = ('US', 'CA', 'CN', 'FR', 'GB')
 NAMES = dict(zip(MARKETS, ('United States', 'Canada', 'China', 'France', 'United Kingdom')))
