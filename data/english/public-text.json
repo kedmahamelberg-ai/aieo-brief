@@ -4821,6 +4821,28 @@
       },
       "output_sha256": "e73d86807a869fd949ad2f137c5445ce83769d65f775fb5565921ffc3d171810",
       "policy": "brief-english-display-v1"
+    },
+    "9e72d31100caf88db75fb8e0635eb2b17607f94929d0a7413514deef1290149c": {
+      "english": {
+        "0": "Russian",
+        "1": "Composer",
+        "2": "Mussorgsky Pictures at an Exhibition Part 7",
+        "3": "Modest Mussorgsky: Pictures at an Exhibition Part 7 Promenade - The Market Place of Limoges - Catacombs - With the dead in a dead language The original piano version",
+        "4": "Mussorgsky Pictures at an Exhibition Part 7"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1ba1b9f7ca962aca3f4ffc0dbfb8a114997f90ea7fb2b6e22e93cc594be25e84",
+      "policy": "brief-english-display-v1"
     }
   }
 }
