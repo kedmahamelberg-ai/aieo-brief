@@ -151,18 +151,44 @@ class WeeklyEditorialTests(unittest.TestCase):
         fourth=self.generate(previous,call=lambda *a,**k:self.fail('Retry cap exceeded'))
         self.assertEqual(fourth['markets']['pending_reason'],'review_needs_attention')
 
+    def test_new_format_revision_retries_an_exhausted_older_draft(self):
+        """A changed editorial brief must supersede a prior retry cap.
+
+        This protects format corrections such as a new word cap, plain-language
+        requirement, source selection rule, or artwork rule.  Those corrections
+        need a fresh checked draft rather than the earlier placeholder.
+        """
+        def reject(prompt, **kwargs):
+            return dict.fromkeys(CHECKS, False) if kwargs['stage'] == 'weekly_review' else self.call(prompt, **kwargs)
+
+        previous = []
+        for _ in range(3):
+            previous = [self.generate(previous, call=reject)]
+        for section in ('markets', 'research'):
+            previous[0][section]['editorial_version'] = 'kedma-weekly-v1'
+            previous[0][section]['attempts'] = 3
+            previous[0][section]['pending_reason'] = 'review_needs_attention'
+            previous[0][section]['input_hash'] = 'v1-input-hash'
+
+        recovered = self.generate(previous)
+        self.assertEqual(recovered['editorial_status'], 'ready')
+        for section in ('markets', 'research'):
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v4')
+            self.assertLessEqual(recovered[section]['word_count'], 200)
+
     def test_old_week_is_not_rewritten_in_new_voice(self):
         self.release.update(release_id='2026-W40',period_start='2026-09-28',period_end='2026-10-04')
         result=self.generate()
         self.assertNotIn('editorial_version',result)
         self.assertEqual(self.calls,[])
 
-    def test_punctuation_missing_link_and_invented_number_are_rejected(self):
+    def test_natural_punctuation_is_accepted_but_missing_links_and_invented_numbers_are_rejected(self):
         good=self.generate()['markets']
         draft={'title':good['title'],'paragraphs':[[{k:p[k] for k in ('text','source_key')} for p in paragraph] for paragraph in good['prose']], 'image_key':good['image_key'],'image_reason':good['image_reason']}
-        for title in ('A title with a colon here:', 'A title with an en dash – here', 'A gain of 987654'):
-            broken={**draft,'title':title}
-            with self.assertRaises(ValueError):validate_draft(broken,self.news,[{'key':good['image_key']}])
+        natural={**draft,'title':'A title with a colon: and an en dash – naturally'}
+        validate_draft(natural,self.news,[{'key':good['image_key']}])
+        broken={**draft,'title':'A gain of 987654'}
+        with self.assertRaises(ValueError):validate_draft(broken,self.news,[{'key':good['image_key']}])
         broken=copy.deepcopy(draft)
         broken['paragraphs'][0][1]['source_key']=''
         with self.assertRaises(ValueError):validate_draft(broken,self.news,[{'key':good['image_key']}])
