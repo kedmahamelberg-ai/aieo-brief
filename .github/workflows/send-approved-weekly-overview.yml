@@ -1,0 +1,35 @@
+name: Send Approved Weekly Overview
+on:
+  workflow_dispatch:
+    inputs:
+      release_id:
+        description: Approved weekly release ID, for example 2026-W41
+        required: true
+        type: string
+      confirmation:
+        description: Type SEND_APPROVED_WEEKLY_OVERVIEW to send the broadcast
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  send:
+    if: inputs.confirmation == 'SEND_APPROVED_WEEKLY_OVERVIEW'
+    runs-on: ubuntu-latest
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+      RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Confirm the approved content without sending
+        run: python scripts/send_weekly_overview_broadcast.py '${{ inputs.release_id }}'
+      - name: Send the approved Resend broadcast
+        run: python scripts/send_weekly_overview_broadcast.py '${{ inputs.release_id }}' --send
