@@ -4520,6 +4520,247 @@
       },
       "output_sha256": "485bb6107663ed8ff57f05258c7c611452a4de7695b4b9d07b31301d4f253cbb",
       "policy": "brief-english-display-v1"
+    },
+    "141c664cdc2a4c5d74ade0d88420a4d28dc3b08f6768b706418de83c16b58a3b": {
+      "english": {
+        "0": "Reporting from Invest Xiamen. Open the source for the article.",
+        "1": "Invest Xiamen",
+        "2": "Invest Xiamen"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a2f02b126c6593b30e49fc1d913634376a626d829e0379d3ee24687357d39599",
+      "policy": "brief-english-display-v1"
+    },
+    "6dc14e6d2cdc2c0d543db0f61d372f8a142926d5c4ec1f92763dbedc5e92a8d1": {
+      "english": {
+        "0": "Reporting from the National Natural Science Foundation of China. Open the source for the article.",
+        "1": "National Natural Science Foundation of China",
+        "2": "National Natural Science Foundation of China"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "129b3fd9c5ff32d0d4262fa6cec98a7ae64475c7e4c21b8f8c9853b58f4f7d30",
+      "policy": "brief-english-display-v1"
+    },
+    "1e15e492094f4324c164918685b667663475c6cdfc1907caf6462b4cb370a253": {
+      "english": {
+        "0": "Reporting from USTC News Network. Open the source for the article.",
+        "1": "USTC News Network",
+        "2": "USTC News Network",
+        "3": "USTC News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0d0c2f9972ab26f0fdc86a29dfc1ca03a89230bb71f407743302a0b3fffa3f11",
+      "policy": "brief-english-display-v1"
+    },
+    "8645dddde667ce2113d5b7789a0ed3676662ba991e7855fe1443447c491c5f8c": {
+      "english": {
+        "0": "People's Daily Online Hainan Channel",
+        "1": "People's Daily Online Hainan Channel"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "95de1b9ac4f716ab1758ba4964920f425cfba1ee115f8d14dedd66fdd04c47fb",
+      "policy": "brief-english-display-v1"
+    },
+    "1fe48905bb60e7d39b1218fe99f81b1a8c2a367acc4f17dab61eada1f6d1f61e": {
+      "english": {
+        "0": "Artificial Intelligence Is Not Gender Neutral, Professor Claudia Flores Tells UN",
+        "1": "Artificial Intelligence Is Not Gender Neutral, Professor Claudia Flores Tells UN"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "beb2402c418797a3a86850755991d48dd0654b02dd1190029392b1afb8076449",
+      "policy": "brief-english-display-v1"
+    },
+    "92371bab606ab3a587cdf3c368e9f6d8731c55d2509f4868b60b74def925f67c": {
+      "english": {
+        "0": "Reporting from Guangming Online. Open the source for the article.",
+        "1": "A short sentence describing how humans gain scalable capabilities through AI, with AI as a tool collaborating to augment human capabilities.",
+        "2": "A short sentence describing how AI expands its own capabilities and influence through specialization and auxiliary roles.",
+        "3": "Guangming Online",
+        "4": "Guangming Online"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "89adcb091bfd497c8cd99e48439097e81a8742382188a7fd96a068ed37a8cecd",
+      "policy": "brief-english-display-v1"
+    },
+    "1c65aaac785abe5ebe4736867accd9ef84dbae4181eaeb37758ab5cef49dcf3d": {
+      "english": {
+        "0": "Tsinghua University",
+        "1": "Tsinghua University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b0fb0db78455011c5b4762314d36ac52f5e3af03aa19fc96db676e7545dee9ca",
+      "policy": "brief-english-display-v1"
+    },
+    "e58e875a6fc3ec8b0c2ed96601c420ed23f3eab63725dddfa9f19c0057d8d54a": {
+      "english": {
+        "0": "Reporting from the Hubei Provincial Department of Economy and Information Technology. Open the source for the article.",
+        "1": "Hubei Provincial Department of Economy and Information Technology",
+        "2": "Hubei Provincial Department of Economy and Information Technology"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "58e43f9014efe615ad308d3ff2356903f0b72bad55cd9aac35291055d114b1d2",
+      "policy": "brief-english-display-v1"
+    },
+    "52fb331c6b5ff4c2b68f9db4de1ff5cab431130b052c44035ff3ba367566997f": {
+      "english": {
+        "0": "The International Forum report, based on the People's Daily article, describes a push for open, inclusive AI collaboration across nations, with emphasis on governance, safety, and shared opportunities. It notes that global cooperation can help ensure AI advances benefit many, not just a few, while acknowledging governance challenges and the need for human-centered approaches.",
+        "1": "People's Daily",
+        "2": "People's Daily"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "569f0e362a815befd2336e36cbed396a62adb9ab1d43019adf602438e6f4e35c",
+      "policy": "brief-english-display-v1"
+    },
+    "5b6938f7c1736638d3241d216f8e03b696d18694f23b78f51c5ff1f425ddcb8a": {
+      "english": {
+        "0": "Super Intelligence",
+        "1": "Super Intelligence",
+        "2": "Super Intelligence"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "94ff9ac6b3349cfb89598690380899dce1380430e8f927155e2f0611cfe10a31",
+      "policy": "brief-english-display-v1"
+    },
+    "1d9de1a7d89a8eb4826825f30050a6ed17830071393f02593b60a2d6eac869c0": {
+      "english": {
+        "0": "Italian",
+        "1": "Composer",
+        "2": "Rondeau & Campell - Vivaldi's The Harmonic Inspiration, Concerto No. 9, RV 230 - II. Larghetto (Trumpet & Organ)",
+        "3": "Vivaldi's The Harmonic Inspiration, Concerto No. 9, RV 230 - II. Larghetto (Trumpet & Organ)",
+        "4": "https://imslp.org/wiki/Violin_Concerto_in_D_major%2C_RV_230_(Vivaldi%2C_Antonio)",
+        "5": "Rondeau & Campell - Vivaldi's The Harmonic Inspiration, Concerto No. 9, RV 230 - II. Larghetto (Trumpet & Organ)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6f54659bf78bc9c0bd573ba30cacc1cd612b6ac1c057a245b026dcc2667896ea",
+      "policy": "brief-english-display-v1"
+    },
+    "addb4ac3e3fb6dcc2258b282dadeff6f47f2c8050a63b712af071318ce27f0bf": {
+      "english": {
+        "0": "Thirty-one"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "17ac432a62d791fe406d793baa842aa9220be0996ada4ce1408b5542546e4641",
+      "policy": "brief-english-display-v1"
     }
   }
 }
