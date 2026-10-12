@@ -41,6 +41,14 @@ def validate_research_reading(item):
  elif item.get('summary_basis')=='Summary of the paper':
   raise ValueError('An abstract must not be labelled as a paper reading')
 
+def validate_weekly_research_window(overview,papers):
+ """Use canonical public-paper dates, not the shortened approval record."""
+ by_key={paper.get('key'):paper for paper in papers}
+ for key in (overview.get('research') or {}).get('source_hashes') or {}:
+  paper=by_key.get(key)
+  if not paper or not overview['period_start']<=paper.get('date','')<=overview['period_end']:
+   raise ValueError('Weekly paper is outside the edition week')
+
 def validate(site):
  if not site.exists():raise ValueError('No built website')
  payload=json.loads((site/'data/current.json').read_text());inspect_json(payload)
@@ -54,8 +62,7 @@ def validate(site):
  if overview.get('editorial_version'):
   from weekly_editorials import validate_section
   for kind in ('markets','research'):validate_section(overview[kind])
-  for paper in overview['research'].get('papers',[]):
-   if not overview['period_start']<=paper.get('date','')<=overview['period_end']:raise ValueError('Weekly paper is outside the edition week')
+  validate_weekly_research_window(overview,papers)
  elif (overview.get('markets') or {}).get('word_count',999)>145 or (overview.get('research') or {}).get('word_count',999)>145:raise ValueError('Weekly overview exceeds one-minute editorial limit')
  if not (site/overview.get('path','')).is_file() or not (site/'week-from-above/index.html').is_file():raise ValueError('Weekly overview pages missing')
  social=json.loads((site/'data/social/current.json').read_text())
