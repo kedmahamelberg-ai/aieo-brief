@@ -132,6 +132,16 @@ def advertising_eligible(page, story=None, news=()):
         return len(news) >= 4 and any(editorial(item) for item in news)
     return page == 'story' and bool(story) and story.get('kind') in ('news', 'research') and editorial(story)
 
+def sitemap_articles(items):
+    """Return only original, substantial Brief articles for sitemap submission.
+
+    Archive and culture pages remain public and linked from their collections, but
+    a sitemap should not ask a crawler to process source-only cards or short
+    excerpts as standalone search results. The page itself stays available to
+    readers and retains its canonical URL.
+    """
+    return [item for item in items if item.get('has_editorial') and (item.get('what_happened') or item.get('body_paragraphs'))]
+
 def sponsor_is_active(config, day, preview=False):
     sponsor=config.get('sponsor',{})
     return bool(not preview and sponsor.get('enabled') and sponsor.get('starts','')<=day<=sponsor.get('ends',''))
@@ -313,9 +323,14 @@ def main():
         for item in sorted(news+research+culture,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
-        locations=['index.html','research/index.html','culture/index.html','archive/index.html','about/index.html','week-from-above/index.html']+[x['path'] for x in overview_archive]+[i['path'] for i in allcards]
-        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+p.removesuffix('index.html'))+'</loc>'+('<image:image><image:loc>https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg</image:loc></image:image>' if p=='about/index.html' else '')+'</url>' for p in locations)+'</urlset>')
-    else:(SITE/'feed.xml').write_text('<?xml version="1.0"?><rss version="2.0"><channel><title>AIEO Brief preview</title><link>https://observatory.hamelberg-ai.com</link><description>Set the Brief site URL for its live feed.</description></channel></rss>')
+                locations=[
+            ('index.html',today),('research/index.html',today),('culture/index.html',today),
+            ('archive/index.html',today),('about/index.html',today),('week-from-above/index.html',release['period_end']),
+            *[(x['path'],x['period_end']) for x in overview_archive],
+            *[(item['path'],item['date']) for item in sitemap_articles(allcards)],
+        ]
+        (SITE/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">'+''.join('<url><loc>'+xml_escape(baseurl+'/'+path.removesuffix('index.html'))+'</loc><lastmod>'+xml_escape(modified)+'</lastmod>'+('<image:image><image:loc>https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg</image:loc></image:image>' if path=='about/index.html' else '')+'</url>' for path,modified in locations)+'</urlset>')
+
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
     if args.update_archive and not preview:
         archivepath.parent.mkdir(parents=True,exist_ok=True);archivepath.write_text(json.dumps({'schema_version':'aieo_brief_archive_v1','stories':raw_archive},ensure_ascii=False,indent=2)+'\n')
