@@ -5,7 +5,7 @@ from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf, style_problem
 import editorial_engine as engine
-from validate_public_site import validate_research_reading
+from validate_public_site import validate_research_reading, validate_weekly_research_window
 
 class FullPaperReading(unittest.TestCase):
     def test_practitioner_style_rejects_unexplained_shorthand_and_vague_titles(self):
@@ -24,6 +24,16 @@ class FullPaperReading(unittest.TestCase):
         for changed in ({'paper_text_sha256':''},{'full_text_status':'pdf_unavailable'},
                         {'evidence_scope':'abstract'},{'limitation':''}):
             with self.assertRaises(ValueError):validate_research_reading({**paper,**changed})
+
+    def test_weekly_research_window_uses_canonical_paper_dates(self):
+        overview={'period_start':'2026-10-05','period_end':'2026-10-11',
+                  'research':{'source_hashes':{'paper:one':'hash','paper:two':'hash'},
+                              'papers':[{'key':'paper:one'},{'key':'paper:two'}]}}
+        canonical=[{'key':'paper:one','date':'2026-10-07'},
+                   {'key':'paper:two','date':'2026-10-11'}]
+        validate_weekly_research_window(overview,canonical)
+        with self.assertRaises(ValueError):
+            validate_weekly_research_window(overview,[canonical[0],{'key':'paper:two','date':'2026-10-12'}])
 
     def test_direct_paper_reading_retains_the_last_page(self):
         text='A complete evidence sentence. '*6500+'Final-page limitation.'
