@@ -4802,6 +4802,25 @@
       },
       "output_sha256": "9d1170d9ca5fec370f35f8e4b85d99ad40bb3c4de4a69f19eb3318434c403dfb",
       "policy": "brief-english-display-v1"
+    },
+    "d12dccb189de414c18eeee46f9e3f9c07e6b1a9fd3578f81fd95b5edb9f27413": {
+      "english": {
+        "0": "Super Intelligence",
+        "1": "Super Intelligence"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e73d86807a869fd949ad2f137c5445ce83769d65f775fb5565921ffc3d171810",
+      "policy": "brief-english-display-v1"
     }
   }
 }
