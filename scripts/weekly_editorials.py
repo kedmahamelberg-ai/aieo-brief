@@ -17,7 +17,7 @@ START = '2026-10-05'
 # Bump this whenever the public weekly format changes.  The version is part of
 # the saved input fingerprint, so an exhausted draft under an older brief can
 # never keep the old format in place after the brief is revised.
-VERSION = 'kedma-weekly-v4'
+VERSION = 'kedma-weekly-v5'
 AUTHOR = 'Kedma Hamelberg'
 MARKETS = ('US', 'CA', 'CN', 'FR', 'GB')
 NAMES = dict(zip(MARKETS, ('United States', 'Canada', 'China', 'France', 'United Kingdom')))
@@ -188,6 +188,17 @@ def ready_valid(section, available):
                                 for key, value in hashes.items())
 
 
+def human_approval(root, release_id):
+    """Load a reviewed edition without ever treating it as a model draft."""
+    path = Path(root) / 'data/weekly-overviews/approved' / (release_id + '.json')
+    if not path.exists():
+        return {}
+    value = json.loads(path.read_text(encoding='utf-8'))
+    if value.get('release_id') != release_id or not value.get('human_approved_at'):
+        raise ValueError('weekly_human_approval_invalid')
+    return value
+
+
 def validate_section(section):
     if section.get('status') == 'pending':
         if section.get('author') or section.get('prose'):
@@ -246,7 +257,19 @@ def create_section(kind, selected, pictures, base, call):
     deadline = time.monotonic() + 240
     payload = json.dumps({'sources': source_payload, 'artworks': picture_payload}, ensure_ascii=False)
     draft = call(brief + payload, schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_draft')
-    validate_draft(draft, selected, pictures)
+    try:
+        validate_draft(draft, selected, pictures)
+    except ValueError as error:
+        # A structurally safe repair is cheaper and more reliable than leaving
+        # a whole week blank for a recoverable link or numeral mistake.
+        draft = call(
+            'Correct this draft without adding facts. The validation failure was '
+            + str(error) + '. Keep every supplied source key exactly once, use '
+            'only numbers present in the supplied evidence, and return the same schema.\n'
+            + json.dumps({'requirements': brief, 'sources': source_payload,
+                          'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
+            schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_repair')
+        validate_draft(draft, selected, pictures)
     chosen = next(x for x in pictures if x['key'] == draft['image_key'])
     review = call(
         'Independently check this weekly editorial against its evidence and the writing requirements. '
@@ -290,9 +313,20 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
         return current
     current['editorial_version'] = VERSION
     previous = next((x for x in history if x['release_id'] == current['release_id']), {})
+    approved = human_approval(root, current['release_id'])
     usage_history = copy.deepcopy(history)
     for kind, rows in (('markets', news), ('research', research)):
         available = {x['key']: x for x in eligible(rows, current)}
+        reviewed = approved.get(kind, {})
+        if reviewed:
+            if not ready_valid(reviewed, available):
+                raise ValueError('weekly_human_approval_sources_changed')
+            validate_section(reviewed)
+            if not reviewed.get('human_approved'):
+                raise ValueError('weekly_human_approval_missing_marker')
+            current[kind] = copy.deepcopy(reviewed)
+            usage_history.append({kind: current[kind]})
+            continue
         old = previous.get(kind, {})
         if ready_valid(old, available):
             validate_section(old)
