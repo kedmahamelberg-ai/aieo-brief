@@ -1529,8 +1529,8 @@
       "key": "event:ee64301f-1401-4db7-bc0e-c8fff325d5ef",
       "event_id": "ee64301f-1401-4db7-bc0e-c8fff325d5ef",
       "kind": "news",
-      "slug": "development-ee64301f-1401-4db7-bc0e-c8fff325d5ef",
-      "path": "story/development-ee64301f-1401-4db7-bc0e-c8fff325d5ef/index.html",
+      "slug": "ai-driven-scheduling-upgrades-massage-chair-lines-claims-limits",
+      "path": "story/ai-driven-scheduling-upgrades-massage-chair-lines-claims-limits/index.html",
       "headline": "AI-Driven Scheduling Upgrades Massage Chair Lines, iRest Claims Limits",
       "original_headline": "From “Intelligent Manufacturing” to “Intelligent Computing”: Artificial Intelligence Reshapes Massage Chairs Production Lines",
       "deck": "A study-like briefing on how AI-enabled scheduling reshapes a massage chair factory, with careful notes on scope and limits.",
@@ -1575,7 +1575,11 @@
       "has_editorial": true,
       "edition": "2026-W41",
       "period_start": "2026-10-05",
-      "period_end": "2026-10-11"
+      "period_end": "2026-10-11",
+      "legacy_paths": [
+        "story/development-ee64301f-1401-4db7-bc0e-c8fff325d5ef/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:c6e0c5ac-7d07-48f5-9a31-71652ad2bc82",

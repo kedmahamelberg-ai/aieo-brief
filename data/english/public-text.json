@@ -4781,6 +4781,27 @@
       },
       "output_sha256": "7cff1a2622c11ac202cfcef3ad7deb841d02030a932983c26e1cfc25cb456bad",
       "policy": "brief-english-display-v1"
+    },
+    "a76bef89a380346b3f045afbc938f2c15a1152a55cca4d5e0f1600d8a32c4f0b": {
+      "english": {
+        "0": "A Chinese manufacturer shifted from human-led scheduling to an AI-driven algorithm, applying Zhishuanyun to optimize order, capacity, and material flows on an iRest Ailiste production line.",
+        "1": "In Zhejiang’s iRest Ailiste digital workshop, a massage chair is assembled through tightly coordinated subteams and a streamlined line. Real-time device data flows through MES, WMS, and other systems, and the key question, how much to produce, when to run, and when parts arrive, has shifted from seasoned schedulers to an intelligent algorithm powered by Zhishuanyun.\nThe company frames this as a broader shift from 'smart manufacturing' to 'intelligent computation' in manufacturing. While the AI-driven scheduling promises efficiency gains and lower costs, the description remains focused on this facility and does not claim universal results for all industries or products. The update also notes a broader regional plan to cultivate AI-enabled firms, suggesting potential scale, but without asserting universal outcomes.\nA meaningful limitation is that these improvements are described within a single plant and under a provincial pilot framework, so extrapolations to broader populations or all manufacturing contexts would be inappropriate.",
+        "2": "Xinhua Net Zhejiang",
+        "3": "Xinhua Net Zhejiang"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9d1170d9ca5fec370f35f8e4b85d99ad40bb3c4de4a69f19eb3318434c403dfb",
+      "policy": "brief-english-display-v1"
     }
   }
 }
