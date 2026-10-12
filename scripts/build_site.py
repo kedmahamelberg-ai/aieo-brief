@@ -323,7 +323,7 @@ def main():
         for item in sorted(news+research+culture,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
-                                locations=[
+        locations=[
             ('index.html',today),('research/index.html',today),('culture/index.html',today),
             ('archive/index.html',today),('about/index.html',today),('week-from-above/index.html',release['period_end']),
             *[(x['path'],x['period_end']) for x in overview_archive],
