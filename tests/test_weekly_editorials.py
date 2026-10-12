@@ -173,7 +173,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         recovered = self.generate(previous)
         self.assertEqual(recovered['editorial_status'], 'ready')
         for section in ('markets', 'research'):
-            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v4')
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v5')
             self.assertLessEqual(recovered[section]['word_count'], 200)
 
     def test_old_week_is_not_rewritten_in_new_voice(self):
@@ -192,6 +192,21 @@ class WeeklyEditorialTests(unittest.TestCase):
         broken=copy.deepcopy(draft)
         broken['paragraphs'][0][1]['source_key']=''
         with self.assertRaises(ValueError):validate_draft(broken,self.news,[{'key':good['image_key']}])
+
+    def test_human_approved_edition_is_used_without_calling_model(self):
+        generated = self.generate()
+        approval = {"release_id": self.release['release_id'], "human_approved_at": "2026-10-12T00:00:00Z"}
+        for kind in ('markets', 'research'):
+            approval[kind] = copy.deepcopy(generated[kind])
+            approval[kind]['human_approved'] = True
+        path = self.root/'data/weekly-overviews/approved'
+        path.mkdir(parents=True)
+        (path/(self.release['release_id']+'.json')).write_text(json.dumps(approval))
+        current, _ = prepare_weekly_overviews(self.news, self.papers, self.release, self.root)
+        result = apply_editorials(current, self.news, self.papers, self.root, [], allow_model=True,
+                                  call=lambda *a, **k: self.fail('Human approval must not call the model'))
+        self.assertTrue(result['markets']['human_approved'])
+        self.assertTrue(result['research']['human_approved'])
 
 
 if __name__ == '__main__':
