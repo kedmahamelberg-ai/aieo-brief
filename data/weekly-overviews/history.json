@@ -11,124 +11,272 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "The weekly news review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
-        "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
-        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
-        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
-        "image_credit": "NPS Photo / Tim Rains",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
-        "image_rights": "Public domain · Full Granting Rights",
-        "entries": [
-          {
-            "code": "CN",
-            "name": "China",
-            "count": 22,
-            "topic": "Culture And Creativity",
-            "sentence": "China: the discovery stream centred most often on culture and creativity, including “Hainan AI Humanoid Sorting Robot Trains in Real Scenes to Boost….”",
-            "story": {
-              "headline": "Hainan AI Humanoid Sorting Robot Trains in Real Scenes to Boost Practical Deployment",
-              "path": "story/hainan-ai-humanoid-sorting-robot-trains-practical-deployment/index.html",
-              "publisher": "People's Daily Online Hainan Channel",
-              "source_url": ""
+        "editorial_version": "kedma-weekly-v5",
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "human_approved": true,
+        "title": "The choices around AI are becoming more visible",
+        "deck": "This week’s stories were less about one big technical leap and more about the choices that shape everyday use.",
+        "summary": "This week’s stories were less about one big technical leap and more about the choices that shape everyday use. AWS introduced a tool to help coding agents prepare AI systems for deployment, while a French analysis linked AI-exposed jobs with early changes in youth hiring. Neither story proves a wider outcome on its own. Elsewhere, an international forum called for shared rules and cooperation, Greenpeace France focused on environmental and social costs, and Spain’s new HR rules emphasised transparency and meaningful human oversight. Taken together, these are five separate reports, not a single global trend. But they point to the same question: can useful AI systems be built with care for work, power, resources and accountability?",
+        "prose": [
+          [
+            {
+              "text": "This week’s stories were less about one big technical leap and more about the choices that shape everyday use.",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "AWS introduced a tool to help coding agents prepare AI systems for deployment",
+              "source_key": "event:690144fd-c864-4d34-bb1d-036f88bd2641",
+              "path": "story/aws-debuts-sagemaker-ai-optimized-inference-skill-limits-caveats/index.html"
+            },
+            {
+              "text": ", while a",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "French analysis linked AI-exposed jobs with early changes in youth hiring",
+              "source_key": "event:799b6925-bfca-4440-8ae6-37964b929d12",
+              "path": "story/banque-de-france-finds-early-youth-ai-limits/index.html"
+            },
+            {
+              "text": ". Neither story proves a wider outcome on its own.",
+              "source_key": "",
+              "path": ""
             }
-          },
+          ],
+          [
+            {
+              "text": "Elsewhere, an",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "international forum called for shared rules and cooperation",
+              "source_key": "event:4313dd84-da65-4ba6-aeb1-2dac04a6b93a",
+              "path": "story/forum-calls-global-inclusive-ai-cooperation-shared-gains/index.html"
+            },
+            {
+              "text": ",",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "Greenpeace France focused on environmental and social costs",
+              "source_key": "event:26f50f46-77b5-4970-8663-105dd61f0910",
+              "path": "story/greenpeace-dangers-ai-environmental-costs-governance-greenpeace-france/index.html"
+            },
+            {
+              "text": ", and",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "Spain’s new HR rules emphasised transparency and meaningful human oversight",
+              "source_key": "event:3369ad25-ac15-4e7e-88e5-303ccb86dd7b",
+              "path": "story/eu-ai-act-tightens-spains-hr-oversight-transparency/index.html"
+            },
+            {
+              "text": ". Taken together, these are five separate reports, not a single global trend. But they point to the same question: can useful AI systems be built with care for work, power, resources and accountability?",
+              "source_key": "",
+              "path": ""
+            }
+          ]
+        ],
+        "scope_note": "Five selected stories from five discovery markets.",
+        "word_count": 131,
+        "reading_minutes": 1,
+        "source_hashes": {
+          "event:690144fd-c864-4d34-bb1d-036f88bd2641": "259affc899826b6eb7eabb0391f62e4b5c3a337dd5fe6dea958950820e14f3e3",
+          "event:799b6925-bfca-4440-8ae6-37964b929d12": "51eacebfff65a27fcf616651dd6f61fcf211831a79cdaa3971256734515fedce",
+          "event:4313dd84-da65-4ba6-aeb1-2dac04a6b93a": "fad1cc3527993584ad02dca47af573e4fb4306ff660b6b6dc76de503d84fe1fc",
+          "event:26f50f46-77b5-4970-8663-105dd61f0910": "7ac7932a8e957c77423c933539762a0e3e10859ddecc27d44d0b295d964cfae2",
+          "event:3369ad25-ac15-4e7e-88e5-303ccb86dd7b": "cfebdbd051d506679e1ce53e354bebedf934689a711ebf0d79f21ff81852d369"
+        },
+        "image_key": "culture:17657226dfb2d1a06f0e42d2",
+        "image_work_key": "4038af1dc717e07cc28761bc9b6b5e038d894722701ef2d9fd17c39e29336329",
+        "image_path": "assets/culture/17657226dfb2d1a06f0e42d2.jpg",
+        "image_alt": "Musical Scene",
+        "image_caption": "Musical Scene",
+        "image_credit": "Gerrit van Honthorst (Dutch, 1590–1656) · Cleveland Museum of Art",
+        "image_rights": "CC0 image",
+        "image_source_url": "https://clevelandart.org/art/2019.6",
+        "image_reason": "Different instruments make one scene, much like separate reports shaping a wider conversation.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "entries": [
           {
             "code": "US",
             "name": "United States",
-            "count": 14,
-            "topic": "Rules And Rights",
-            "sentence": "United States: rules and rights stood out in the selected coverage; one example was “AWS debuts SageMaker AI-optimized inference skill for coding agents, with limits….”",
+            "topic": "",
             "story": {
-              "headline": "AWS debuts SageMaker AI-optimized inference skill for coding agents, with limits and caveats",
-              "path": "story/aws-debuts-sagemaker-ai-optimized-inference-skill-limits-caveats/index.html",
-              "publisher": "Amazon Web Services (AWS)",
-              "source_url": "https://aws.amazon.com/blogs/machine-learning/new-agent-skill-amazon-sagemaker-optimized-generative-ai-inference-for-your-coding-agent"
-            }
-          },
-          {
-            "code": "GB",
-            "name": "United Kingdom",
-            "count": 13,
-            "topic": "Rules And Rights",
-            "sentence": "United Kingdom: selected reporting leaned toward rules and rights, with “MegazoneCloud and Portal26 Partner in Korea to Expand AI Governance and…” as one visible signal.",
-            "story": {
-              "headline": "MegazoneCloud and Portal26 Partner in Korea to Expand AI Governance and Security, with Limits",
-              "path": "story/megazonecloud-portal26-partner-korea-expand-ai-security-limits/index.html",
-              "publisher": "Cybersecurity Insiders",
-              "source_url": "https://www.cybersecurity-insiders.com/megazonecloud-partners-with-portal26-to-strengthen-generative-ai-governance-and-security-in-korea"
-            }
-          },
-          {
-            "code": "FR",
-            "name": "France",
-            "count": 11,
-            "topic": "Work And Skills",
-            "sentence": "France: selected reporting leaned toward work and skills, with “Trump Pushes 'Super Intelligence' Term, Labels AI Users as Enemies, with…” as one visible signal.",
-            "story": {
-              "headline": "Trump Pushes 'Super Intelligence' Term, Labels AI Users as Enemies, with Limits",
-              "path": "story/trump-pushes-super-intelligence-term-labels-enemies-limits/index.html",
-              "publisher": "Noovo Info",
-              "source_url": "https://www.noovo.info/nouvelles/international/article/trump-considerera-quiconque-utilise-le-terme-intelligence-artificielle-au-lieu-de-super-intelligence-comme-un-ennemi"
+              "path": "story/aws-debuts-sagemaker-ai-optimized-inference-skill-limits-caveats/index.html"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 28,
-            "topic": "Business And Investment",
-            "sentence": "Canada: selected reporting leaned toward business and investment, with “Trump Pushes 'Super Intelligence' Term, Labels AI Users as Enemies, with…” as one visible signal.",
+            "topic": "",
             "story": {
-              "headline": "Trump Pushes 'Super Intelligence' Term, Labels AI Users as Enemies, with Limits",
-              "path": "story/trump-pushes-super-intelligence-term-labels-enemies-limits/index.html",
-              "publisher": "Noovo Info",
-              "source_url": "https://www.noovo.info/nouvelles/international/article/trump-considerera-quiconque-utilise-le-terme-intelligence-artificielle-au-lieu-de-super-intelligence-comme-un-ennemi"
+              "path": "story/banque-de-france-finds-early-youth-ai-limits/index.html"
+            }
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "topic": "",
+            "story": {
+              "path": "story/forum-calls-global-inclusive-ai-cooperation-shared-gains/index.html"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "topic": "",
+            "story": {
+              "path": "story/greenpeace-dangers-ai-environmental-costs-governance-greenpeace-france/index.html"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "topic": "",
+            "story": {
+              "path": "story/eu-ai-act-tightens-spains-hr-oversight-transparency/index.html"
             }
           }
-        ],
-        "active_market_count": 5,
-        "editorial_version": "kedma-weekly-v4",
-        "status": "pending",
-        "prose": [],
-        "papers": [],
-        "pending_reason": "editorial_check_pending",
-        "input_hash": "bf7aa7a29e8a5775cc8a4d12f8dfaaba727b938174569cd46c305f4a5f8441e4",
-        "attempts": 1,
-        "last_error": "weekly_exact_source_coverage"
+        ]
       },
       "research": {
         "kind": "research",
         "eyebrow": "THE RESEARCH COMPASS",
-        "title": "The weekly research review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "editorial_version": "kedma-weekly-v5",
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "human_approved": true,
+        "title": "Remembering more is not always enough",
+        "deck": "Two studies this week look at how AI systems use the past to act in the present.",
+        "summary": "Two studies this week look at how AI systems use the past to act in the present. One tested Ledger, a memory tool that records where objects are and how they move in first-person video. It answered some later spatial questions without replaying the video, but became less reliable when the scene changed. The second study found that longer video history helped a robot control task only when the model had first learned to predict what might happen next. More stored information alone was not the answer. Both papers suggest that useful AI memory depends on how information is organised and trained, not simply on how much of it is kept.",
+        "prose": [
+          [
+            {
+              "text": "Two studies this week look at how AI systems use the past to act in the present. One tested",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "Ledger, a memory tool that records where objects are and how they move in first-person video",
+              "source_key": "paper:8aab2aec69ddadbff5c1fabe",
+              "path": "research/ledger-memory-helps-recall-object-locations-scene-changes/index.html"
+            },
+            {
+              "text": ". It answered some later spatial questions without replaying the video, but became less reliable when the scene changed.",
+              "source_key": "",
+              "path": ""
+            }
+          ],
+          [
+            {
+              "text": "The",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "second study found that longer video history helped a robot control task only when the model had first learned to predict what might happen next",
+              "source_key": "paper:f3dbf64096db81d53718e888",
+              "path": "research/longer-video-history-helps-robot-control-future-prediction-pretraining/index.html"
+            },
+            {
+              "text": ". More stored information alone was not the answer. Both papers suggest that useful AI memory depends on how information is organised and trained, not simply on how much of it is kept.",
+              "source_key": "",
+              "path": ""
+            }
+          ]
+        ],
+        "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
+        "word_count": 132,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
-        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
-        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
-        "image_credit": "Neal Herbert / NPS",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
-        "image_rights": "Public domain · Full Granting Rights",
-        "papers": [],
-        "paper_count": 25,
-        "affiliation_verified_count": 1,
-        "editorial_version": "kedma-weekly-v4",
-        "status": "pending",
-        "prose": [],
-        "pending_reason": "editorial_check_pending",
-        "input_hash": "13648d97ab2dd9f694638542c90862dd0965d6b1b62a78532319ab752c08c273",
-        "attempts": 1,
-        "last_error": "weekly_unsupported_number"
+        "source_hashes": {
+          "paper:8aab2aec69ddadbff5c1fabe": "6c39d4f40b49830096cb1cbf647de46121c1d35aeb63912864189a12ec49a234",
+          "paper:f3dbf64096db81d53718e888": "e2c80c9d59a62c4f76f76614a5ee374ae6bd0d73ff437c7ca4e0366fc0908f80"
+        },
+        "image_key": "culture:975c8a27d5db43a80e723c8f",
+        "image_work_key": "0b6c695046ce3a15235f38ebae4550517f7a18f2c978744c8ebf3daf7e512c4d",
+        "image_path": "assets/culture/975c8a27d5db43a80e723c8f.jpg",
+        "image_alt": "Landscape after Guo Zhongshu",
+        "image_caption": "Landscape after Guo Zhongshu",
+        "image_credit": "Bada Shanren (Chinese, 1626–1705) · Cleveland Museum of Art",
+        "image_rights": "CC0 image",
+        "image_source_url": "https://clevelandart.org/art/1955.36",
+        "image_reason": "A landscape holds many connected details, like a memory that must remain useful as the view changes.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "papers": [
+          {
+            "key": "paper:8aab2aec69ddadbff5c1fabe",
+            "url": "https://arxiv.org/abs/2610.10538v1",
+            "path": "research/ledger-memory-helps-recall-object-locations-scene-changes/index.html",
+            "original_headline": "Never Look Back: Understanding Persistence in 3D Object Memory from Egocentric Videos",
+            "authors": [
+              "Shravan Chaudhari",
+              "William Paul",
+              "Suchi Saria",
+              "Rama Chellappa",
+              "Homanga Bharadhwaj"
+            ],
+            "institutions": [],
+            "label": "Preprint",
+            "summary_basis": "Summary of the paper",
+            "publisher": "arXiv"
+          },
+          {
+            "key": "paper:f3dbf64096db81d53718e888",
+            "url": "https://arxiv.org/abs/2610.10528v1",
+            "path": "research/longer-video-history-helps-robot-control-future-prediction-pretraining/index.html",
+            "original_headline": "Long-WAM: Scaling the Context of World-Action Models",
+            "authors": [
+              "Wei Huang",
+              "Bohan Zhang",
+              "Chenzhi Liu",
+              "Isabella Liu",
+              "Shuai Yang",
+              "Weian Mao",
+              "Luozhou Wang",
+              "Yicheng Xiao",
+              "Weifeng Lin",
+              "Qixin Hu",
+              "Bryan Chu",
+              "Sifei Liu",
+              "Linxi Fan",
+              "Xiaojuan Qi",
+              "Song Han",
+              "Yukang Chen"
+            ],
+            "institutions": [],
+            "label": "Preprint",
+            "summary_basis": "Summary of the paper",
+            "publisher": "arXiv"
+          }
+        ]
       },
-      "editorial_version": "kedma-weekly-v4",
-      "editorial_status": "pending",
-      "content_sha256": "264e9db0b95fbd87766d6425827d0391ec146a6176f3086efaa3db214508e74a"
+      "editorial_version": "kedma-weekly-v5",
+      "editorial_status": "ready",
+      "content_sha256": "5762c8594dfd4217a46657a2fe4bc9cf1a1753a0c36b838957f9894ebc105d43"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
