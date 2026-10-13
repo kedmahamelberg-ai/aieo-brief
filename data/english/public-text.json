@@ -4843,6 +4843,25 @@
       },
       "output_sha256": "1ba1b9f7ca962aca3f4ffc0dbfb8a114997f90ea7fb2b6e22e93cc594be25e84",
       "policy": "brief-english-display-v1"
+    },
+    "456581b877c4ca75073d89e34e256e1a130cc1e5ded5672bf9e9750db02ef54c": {
+      "english": {
+        "0": "Semi-Monthly Talk",
+        "1": "Semi-Monthly Talk"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "09796fd278ef33959609b018cccacf90e3512fc901938c63cef2489d8ec1225b",
+      "policy": "brief-english-display-v1"
     }
   }
 }
