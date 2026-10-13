@@ -4862,6 +4862,25 @@
       },
       "output_sha256": "09796fd278ef33959609b018cccacf90e3512fc901938c63cef2489d8ec1225b",
       "policy": "brief-english-display-v1"
+    },
+    "7039bab23ad954a1276099b6f051708ebd05b2fa10e5a810e1d1c2ec51d79cf7": {
+      "english": {
+        "0": "National Natural Science Foundation of China",
+        "1": "National Natural Science Foundation of China"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "3375265342311f022c03f84746865df9171c98733d0fa834706633cf16c2f739",
+      "policy": "brief-english-display-v1"
     }
   }
 }
