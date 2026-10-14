@@ -4881,6 +4881,51 @@
       },
       "output_sha256": "3375265342311f022c03f84746865df9171c98733d0fa834706633cf16c2f739",
       "policy": "brief-english-display-v1"
+    },
+    "52f571b9d8a1b08663cc2bd98a0b9f8de8a80e19b0a195efb8327b10cc223355": {
+      "english": {
+        "0": "Sanjo Kantaro II in the Role of Urashima Taro",
+        "1": "Japan, Edo period (1615–1868)",
+        "2": "Sanjo Kantaro II in the Role of Urashima Taro",
+        "3": "CC0 image",
+        "4": "Sanjo Kantaro II in the Role of Urashima Taro"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c727713246531ea71ced29772abfe374a0ec97109300574d262cc77d91b839ac",
+      "policy": "brief-english-display-v1"
+    },
+    "af05b91112187d3ed1cf0ee6bdd285011111bdc870b9c8747438343b5d2c2842": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Loose Papers.",
+        "3": "Crispim paled. What important matter could it be, if not some sad news from the entourage, and especially from the wife? Because this topic must be clearly defined, since the chroniclers insist on it there: Crispim loved the wife, and, for thirty years, they had never been apart for a single day. Thus are explained the monologues that he now made, and which the servants often heard him utter: --\"Go on, well done, who told you to consent to Cesaria's voyage? Flatterer, clumsy flatterer! Only to flatter Dr. Bacamarte. For now endure yourself; go on, endure yourself, soul of a lackey, scoundrel, vile, miserable. You say _amen_ to everything, don't you? there you have the profit, you rogue!\" And many other ugly names, that a man should not say to others, much less to himself. From this to imagining the effect of the message is nothing. As quickly as he received it, so quickly did he give up the drugs and fly to Casa Verde.",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9ed41b8ecd7e149ca37c9a549cc675432e0e35a1642f3ef24829b94e2064b640",
+      "policy": "brief-english-display-v1"
     }
   }
 }

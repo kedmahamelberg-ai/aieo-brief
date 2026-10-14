@@ -2,6 +2,370 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "2bbd3ded0b077528f13570bc30c0e99112e2f46a4284156f402f3a7f4f7aa702",
+      "creator": "Po Chu-i",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "A Palace Story, by Po Chu-i. Translated by L. Cranmer-Byng.",
+      "excerpt": "A network handkerchief contains no tear.\n'Tis dawn at court ere wine and music sate.\nThe rich red crops no aftermath await.\nRest on a screen, and you will fall, I fear.",
+      "headline": "A Palace Story",
+      "key": "culture:e3e1d5475331448922a49156",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "A network handkerchief contains no tear.",
+        "'Tis dawn at court ere wine and music sate.",
+        "The rich red crops no aftermath await.",
+        "Rest on a screen, and you will fall, I fear."
+      ],
+      "provenance_id": "pg:390:poem:667996d9adf42bb9750f77fdeb23ce37612e6311d3fb218b9372001d71f517d5",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "A Palace Story",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-10-14",
+      "selected_on": "2026-10-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-e3e1d5475331448922a49156",
+      "path": "culture/culture-e3e1d5475331448922a49156/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "A Palace Story",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-14",
+      "summary_basis": "Selected 14 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "A network handkerchief contains no tear.\n'Tis dawn at court ere wine and music sate.\nThe rich red crops no aftermath await.\nRest on a screen, and you will fall, I fear.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "1904364e451d3f30ec4673d08d7bc2c83794b6fa08747541dd732bdd1e095628",
+      "creator": "Francis Bacon",
+      "creator_origin": "English",
+      "culture_type": "quote",
+      "deck": "From Essays.",
+      "excerpt": "It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him.",
+      "headline": "It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him.",
+      "key": "culture:d5027def98df0bf45841afef",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:575:quote:1904364e451d3f30ec4673d08d7bc2c83794b6fa08747541dd732bdd1e095628",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Wisdom for a man's self is, in many branches thereof, a depraved thing. It is the wisdom of rats, that will be sure to leave a house, somewhat before it fall. It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him. It is the wisdom of crocodiles, that shed tears when they would devour. But that which is specially to be noted is, that those which (as Cicero says of Pompey) are sui amantes, sine rivali, are many times unfortunate. And whereas they have, all their times, sacrificed to themselves, they become in the end, themselves sacrifices to the inconstancy of fortune, whose wings they thought, by their self-wisdom, to have pinioned.",
+      "rights": {
+        "basis": "Author died 1626. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/575"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1e8cae20a522dc2c3af515c7903974e38299c215afdf22708699cc478c409f4e",
+      "source_locator": "Of Truth; paragraph 150 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/575",
+      "translator": "",
+      "work_date": "1625",
+      "date": "2026-10-14",
+      "selected_on": "2026-10-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d5027def98df0bf45841afef",
+      "path": "culture/culture-d5027def98df0bf45841afef/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him.",
+          "url": "https://www.gutenberg.org/ebooks/575",
+          "date": "1625",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-14",
+      "summary_basis": "Selected 14 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Wisdom for a man's self is, in many branches thereof, a depraved thing. It is the wisdom of rats, that will be sure to leave a house, somewhat before it fall. It is the wisdom of the fox, that thrusts out the badger, who digged and made room for him. It is the wisdom of crocodiles, that shed tears when they would devour. But that which is specially to be noted is, that those which (as Cicero says of Pompey) are sui amantes, sine rivali, are many times unfortunate. And whereas they have, all their times, sacrificed to themselves, they become in the end, themselves sacrifices to the inconstancy of fortune, whose wings they thought, by their self-wisdom, to have pinioned.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Sanjo Kantaro II in the Role of Urashima Taro",
+      "art_type": "Painting",
+      "balance_origin": "Japan",
+      "creator": "Kaigetsudō Ando (Japanese, c. 1671–1743)",
+      "creator_origin": "Japan, Edo period (1615–1868)",
+      "culture_type": "illustration",
+      "deck": "Sanjo Kantaro II in the Role of Urashima Taro. hanging scroll; ink and color on paper.",
+      "headline": "Sanjo Kantaro II in the Role of Urashima Taro",
+      "image_path": "assets/culture/728da17b5536da9251538157.jpg",
+      "key": "culture:728da17b5536da9251538157",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1961.41/1961.41_web.jpg",
+      "medium": "hanging scroll; ink and color on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1961.41",
+      "provenance_id": "cma:136933",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Dudley P. Allen Fund and various donors, by exchange",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1961.41",
+      "work_date": "early 1700s",
+      "date": "2026-10-14",
+      "selected_on": "2026-10-14",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-728da17b5536da9251538157",
+      "path": "culture/culture-728da17b5536da9251538157/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Sanjo Kantaro II in the Role of Urashima Taro",
+          "url": "https://clevelandart.org/art/1961.41",
+          "date": "early 1700s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-14",
+      "summary_basis": "Selected 14 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/4/4e/F.Schubert._Auf_dem_Flusse_%28in_Ukrainian%29.ogv.ogg",
+      "creator": "Franz Schubert",
+      "creator_origin": "Austrian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Schubert. 3 minutes to listen.",
+      "duration_seconds": 232,
+      "headline": "F.Schubert. Auf dem Flusse (in Ukrainian).ogv",
+      "key": "culture:4f6179c6bc05d8fdd24c4b9c",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/F.Schubert._Auf_dem_Flusse_%28in_Ukrainian%29.ogv.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Schubert",
+      "original_recording_title": "F.Schubert. Auf dem Flusse (in Ukrainian).ogv",
+      "provenance_id": "commons:78185908",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Music by Franz Schubert Lyrics by Wilhelm Müller Ukrainian translation by Julie Gershunskaya",
+      "recording_description": "F. Schubert. Auf dem Flusse (in Ukrainian). Solo - Oksana Petrykova. Piano - Andriy Bondarenko",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Music by Franz Schubert Lyrics by Wilhelm Müller Ukrainian translation by Julie Gershunskaya",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "YouTube : https://www.youtube.com/watch?v=IxR35NpzdDI – View/save archived versions on archive.org",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:F.Schubert._Auf_dem_Flusse_(in_Ukrainian).ogv.ogg",
+      "work_date": "2019-03-02",
+      "date": "2026-10-14",
+      "selected_on": "2026-10-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-4f6179c6bc05d8fdd24c4b9c",
+      "path": "culture/culture-4f6179c6bc05d8fdd24c4b9c/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "F.Schubert. Auf dem Flusse (in Ukrainian).ogv",
+          "url": "https://commons.wikimedia.org/wiki/File:F.Schubert._Auf_dem_Flusse_(in_Ukrainian).ogv.ogg",
+          "date": "2019-03-02",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-14",
+      "summary_basis": "Selected 14 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Papéis Avulsos",
+      "content_fingerprint": "8d3cf870482ba53ddb42ae9eb9a1d13f3d0757457f0918883c165c475d728a18",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Papéis Avulsos.",
+      "excerpt": "Crispim empallideceu. Que negocio importante podia ser, se não alguma triste noticia da comitiva, e especialmente da mulher? Porque este topico deve ficar claramente definido, visto insistirem nelle os chronistas: Crispim amava a mulher, e, desde trinta annos, nunca estiveram separados um só dia. Assim se explicam os monologos que elle fazia agora, e que os famulos lhe ouviam muita vez:--«Anda, bem feito, quem te mandou consentir na viagem de Cesaria? Bajulador, torpe bajulador! Só para adular ao Dr. Bacamarte. Pois agora aguenta-te; anda, aguenta-te, alma de lacaio, fracalhão, vil, miseravel. Dizes _amen_ a tudo, não é? ahi tens o lucro, biltre!--E muitos outros nomes feios, que um homem não deve dizer aos outros, quanto mais a si mesmo. Daqui a imaginar o effeito do recado é um nada. Tão depressa elle o recebeu como abriu mão das drogas e voou á Casa Verde.",
+      "headline": "Papéis Avulsos · a short reading",
+      "key": "culture:402076973e1f0f583772ead3",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:57001:passage:8d3cf870482ba53ddb42ae9eb9a1d13f3d0757457f0918883c165c475d728a18",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/57001"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "68d9d8a21dc3b4f1adb9fdaad9b962304bbb04d9472df4df328b6f8432bdfbe6",
+      "source_locator": "O ALIENISTA; paragraph 62 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/57001",
+      "translator": "",
+      "work_date": "1882",
+      "date": "2026-10-14",
+      "selected_on": "2026-10-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-402076973e1f0f583772ead3",
+      "path": "culture/culture-402076973e1f0f583772ead3/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Papéis Avulsos · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/57001",
+          "date": "1882",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-14",
+      "summary_basis": "Selected 14 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Crispim empallideceu. Que negocio importante podia ser, se não alguma triste noticia da comitiva, e especialmente da mulher? Porque este topico deve ficar claramente definido, visto insistirem nelle os chronistas: Crispim amava a mulher, e, desde trinta annos, nunca estiveram separados um só dia. Assim se explicam os monologos que elle fazia agora, e que os famulos lhe ouviam muita vez:--«Anda, bem feito, quem te mandou consentir na viagem de Cesaria? Bajulador, torpe bajulador! Só para adular ao Dr. Bacamarte. Pois agora aguenta-te; anda, aguenta-te, alma de lacaio, fracalhão, vil, miseravel. Dizes ",
+          "emphasis": false
+        },
+        {
+          "text": "amen",
+          "emphasis": true
+        },
+        {
+          "text": " a tudo, não é? ahi tens o lucro, biltre!--E muitos outros nomes feios, que um homem não deve dizer aos outros, quanto mais a si mesmo. Daqui a imaginar o effeito do recado é um nada. Tão depressa elle o recebeu como abriu mão das drogas e voou á Casa Verde.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Walden",
       "content_fingerprint": "4853f7b51bfc01be44d56b9060bf77dd5ece9a877452cc25fbc4b8e7b5844e38",
       "creator": "Henry David Thoreau",
