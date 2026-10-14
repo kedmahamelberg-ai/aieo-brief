@@ -4926,6 +4926,29 @@
       },
       "output_sha256": "9ed41b8ecd7e149ca37c9a549cc675432e0e35a1642f3ef24829b94e2064b640",
       "policy": "brief-english-display-v1"
+    },
+    "153250fc29bffc3d3f6cfea5252ba5e4aab4dfab76a4b1fb826d92a97993118e": {
+      "english": {
+        "0": "Austrian",
+        "1": "Composer",
+        "2": "F. Schubert. On the River (in Ukrainian).ogv",
+        "3": "F. Schubert. On the River (in Ukrainian). Solo - Oksana Petrykova. Piano - Andriy Bondarenko",
+        "4": "YouTube : https://www.youtube.com/watch?v=IxR35NpzdDI – View/save archived versions on archive.org",
+        "5": "F. Schubert. On the River (in Ukrainian).ogv"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "43f945e4dd5ad6b96aafedbce035d115014846d57697faad1eab0c88a969b2be",
+      "policy": "brief-english-display-v1"
     }
   }
 }
