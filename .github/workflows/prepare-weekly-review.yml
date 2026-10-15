@@ -1,7 +1,10 @@
 name: Prepare Weekly Brief Review
 on:
+  # The Observatory dispatches Follow Observatory Editions after its weekly
+  # release is published. Do not prepare the same weekly review after each
+  # daily Brief news update or during hourly handoff checks.
   workflow_run:
-    workflows: ['Update Brief News and Research']
+    workflows: ['Follow Observatory Editions']
     types: [completed]
   workflow_dispatch:
 permissions:
@@ -11,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   prepare:
-    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.event == 'workflow_dispatch')
     runs-on: ubuntu-latest
     timeout-minutes: 20
     env:

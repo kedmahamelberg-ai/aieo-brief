@@ -17,7 +17,7 @@ from weekly_overviews import prepare_weekly_overviews
 
 def main() -> None:
     release, symbiosis = inputs()
-    registry, readiness, editorial = dbmaps()
+    registry, readiness, editorial = dbmaps(False)
     news = cards(release, symbiosis, registry, readiness, editorial)
     research = papers()
     # This returns a candidate in memory only.  write_archive=False is the
