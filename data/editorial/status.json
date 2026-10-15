@@ -2,36 +2,22 @@
   "release_id": "2026-W41",
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "counts": {
-    "unchanged": 50,
+    "unchanged": 53,
     "source_not_ready": 0,
-    "new_registry": 29,
-    "needs_model": 29,
+    "new_registry": 26,
+    "needs_model": 26,
     "needs_rebind": 0,
-    "selected": 29,
-    "generated": 3,
+    "selected": 26,
+    "generated": 4,
     "rebound": 0,
-    "failed": 26,
+    "failed": 22,
     "deferred": 0
   },
   "failure_counts": {
-    "draft_quote_unsupported": 24,
-    "unsupported_number": 2
+    "draft_quote_unsupported": 21,
+    "unsupported_number": 1
   },
   "failed_items": [
-    {
-      "event_id": "a84e7895-0ffa-428d-9294-e5053d2eaa95",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "e6691673-99c5-42fb-bfc1-439621fd0aa6",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
     {
       "event_id": "f0017903-1505-47bb-9f54-788f184566f8",
       "error_type": "EditorialError",
@@ -51,13 +37,6 @@
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
-      "event_id": "806ed08c-21fd-4efd-bc78-3f174d7ace11",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -145,13 +124,6 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
-      "event_id": "5f775f28-1928-4b28-8211-9fab0ca8241a",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
-    },
-    {
       "event_id": "a8ea81b2-3378-4d3a-af99-ee120784a5d1",
       "error_type": "EditorialError",
       "stage": "draft_validation",
@@ -201,5 +173,5 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-10-14T17:30:10.517887+00:00"
+  "updated_at": "2026-10-15T17:09:50.459186+00:00"
 }
