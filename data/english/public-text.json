@@ -5046,6 +5046,24 @@
       },
       "output_sha256": "8207144a9e605d9ced3bb9b5a37dbdcacac0ef79173fc97c3896f5227f9fdc6e",
       "policy": "brief-english-display-v1"
+    },
+    "42d4bf2755b12844599c069e398e3c33264cae5cfa0dcffd3c32233f1ed4967c": {
+      "english": {
+        "0": "Anthropic’s announcement centers on AI-enabled data exploration in biology. The company says 950 autonomous agents reviewed sequences, narrowing to 20 primes and highlighting a novel DNA pattern near a reverse transcriptase gene. Scientists quoted in the source report describe the results as preliminary and not a full demonstration of genetic editing, underscoring that much work remains before any practical use.\nLinguistic and institutional scrutiny follows, with experts cautioning that automated findings must be tested in real labs, and that autonomous analysis does not by itself establish mechanism or utility. The story also notes that such claims can influence investment and public perception, making cautious interpretation essential for students, parents, and researchers alike."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ef4cd4c55bae5f55d0cf1e01a0810cf882aaf0263e26b4d0901edf5cade85b26",
+      "policy": "brief-english-display-v1"
     }
   }
 }
