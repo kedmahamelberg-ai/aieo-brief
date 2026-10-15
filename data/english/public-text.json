@@ -4949,6 +4949,84 @@
       },
       "output_sha256": "43f945e4dd5ad6b96aafedbce035d115014846d57697faad1eab0c88a969b2be",
       "policy": "brief-english-display-v1"
+    },
+    "b401f6d5867129794df171e2ba9b73d176c50deb0bee6b749bbbc71f0f6e7fb0": {
+      "english": {
+        "0": "The competition opens with a focus on safety development and innovative applications, covering large models, embodied intelligence, and intelligent agents. It invites teams nationwide to participate, aiming to translate competition outcomes into practical AI deployment and governance improvements.\nOrganizers describe post-contest services such as showcasing award-winning achievements, connecting projects with government and investment partners, and providing support in talent, computing resources, and governance standards, reflecting a measured view of AI value that emphasizes responsible use and policy alignment.",
+        "1": "Invest in Xiamen",
+        "2": "Invest in Xiamen"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "698fb4cbe7737a6c1718d0fd806db74850ee2fb8482c64d049d43bc0fd0e3a8a",
+      "policy": "brief-english-display-v1"
+    },
+    "c3bace58de1695ac1316a172dc7d22a737f3a344b312186d31bc49fee9222a8a": {
+      "english": {
+        "0": "Mamluk Sultanate (Egypt or Syria)",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ffefa6e7ba28b098425fd6e4eedc4a19dd7eecf3b1a07f30de0de4edf9951266",
+      "policy": "brief-english-display-v1"
+    },
+    "2093ad9f44b72f3d4574ee58195b2028e07830b781ca3009361a48ad3c0ea198": {
+      "english": {
+        "0": "Indian",
+        "1": "In Praise Of Henna, by Sarojini Naidu."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "752a72f560af0531a71a35628c35ea0565bb3f8b0e8a03566163ece33b4c6175",
+      "policy": "brief-english-display-v1"
+    },
+    "30f2c3ef375bf479f892326e923448845d867e096d65d99d85ee5adbcda6d287": {
+      "english": {
+        "0": "Czech",
+        "1": "Composer",
+        "2": "Intro of Bedrich Smetana's Libuse is official fanfare of the president"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "202eab2066f74de716125c17663d3c4c7bd70ede00a27b88c770d7fd445fbdec",
+      "policy": "brief-english-display-v1"
     }
   }
 }
