@@ -5064,6 +5064,92 @@
       },
       "output_sha256": "ef4cd4c55bae5f55d0cf1e01a0810cf882aaf0263e26b4d0901edf5cade85b26",
       "policy": "brief-english-display-v1"
+    },
+    "6c86640e063f44bee551a8f6d052a923d684d8ffedcff14c71352b75dc6adb7d": {
+      "english": {
+        "0": "Italy, Tuscany",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "31e13374e5707aa5ce5805004c2b3af64e7325ab15f3f2afc948d78208b4288c",
+      "policy": "brief-english-display-v1"
+    },
+    "1e886a3ef84064f4cab1788fa1427e92dc8b307dbf2cebfa593d7d89e2357a03": {
+      "english": {
+        "0": "Ukrainian",
+        "1": "Composer",
+        "2": "Lysenko—God, the great and the only one",
+        "3": "Mykola Lysenko (music), Oleksandr Konysky (lyrics), Ivan Franko Lviv National University (performance), Yuriy Bulka (recording and post-processing)",
+        "4": "Mykola Lysenko (music), Oleksandr Konysky (lyrics), Ivan Franko Lviv National University (performance), Yuriy Bulka (recording and post-processing)",
+        "5": "Lysenko—God, the great and the only one"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e5576483c0d2f4b35109e1cf8f6b6bb7e6414446f497970c1d4176da0ed889e3",
+      "policy": "brief-english-display-v1"
+    },
+    "0487cd0bea1690651736b7094395e87aed6c361f8403c031e50b518e1be9f120": {
+      "english": {
+        "0": "A poem by Robert Louis Stevenson.",
+        "1": "Sonnet I",
+        "2": "Sonnet I",
+        "3": "Sonnet I"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "246809b54f37b40e2b4501e1983c0257e489b62ecdd22db1f7e125a8e7572a87",
+      "policy": "brief-english-display-v1"
+    },
+    "23c3d421347f41d42c0874bb7aef7e62e8ffc9e3d4e68a7de915b986d0475d08": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Papéis Avulsos.",
+        "3": "--Let us come to the main point. Once you have entered the career, you must take all care in the ideas you have to nurture for use by others and for yourself. The best would be not to have them at all; you will understand this well, imagining, for example, an actor deprived of the use of an arm. He can, by a miracle of artific e, disguise the defect from the eyes of the audience; but it would be much better to have both. The same happens with ideas; one can, with force, suppress them, hide them even unto death; but neither that skill is common, nor would such constant effort suit the exercise of life.",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "15d000ea6016594a16c997beb73b0e8e4041ff48c64eb3007258b65e4c960471",
+      "policy": "brief-english-display-v1"
     }
   }
 }
