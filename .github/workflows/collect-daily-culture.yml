@@ -23,6 +23,10 @@ jobs:
       - name: Select today's five works from the stored collection
         id: culture
         run: python -u scripts/collect_daily_culture.py
+      - name: Authorize this generated-data commit
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Preserve the daily selection
         shell: bash
         run: |
@@ -35,3 +39,4 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
+

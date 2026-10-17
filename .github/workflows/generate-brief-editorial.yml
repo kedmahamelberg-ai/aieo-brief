@@ -101,6 +101,11 @@ jobs:
         env:
           RESEARCH_MINUTES: ${{ inputs.research_minutes || (github.event_name == 'push' && '60') || '15' }}
         run: python scripts/generate_research_summaries.py --max-runtime-minutes "$RESEARCH_MINUTES"
+      - name: Authorize this generated-data commit
+        if: always() && inputs.dry_run != true
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Retain public summaries and resumable progress
         if: always() && inputs.dry_run != true
         shell: bash
@@ -145,3 +150,4 @@ jobs:
         run: |
           echo '::error::A source check or draft generation failed. Check the earlier failed step and the draft rejection reasons in the run summary. Saved valid summaries and original source links are preserved.'
           exit 1
+

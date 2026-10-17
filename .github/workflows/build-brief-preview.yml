@@ -89,6 +89,10 @@ jobs:
         env:
           BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL || steps.pages.outputs.base_url }}
         run: python scripts/register_public_items.py
+      - name: Authorize this generated-data commit
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Preserve stable story URLs
         shell: bash
         run: |
@@ -138,3 +142,4 @@ jobs:
       - name: Publish validated Brief
         id: deployment
         uses: actions/deploy-pages@v4
+
