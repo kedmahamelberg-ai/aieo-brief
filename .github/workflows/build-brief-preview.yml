@@ -10,6 +10,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pull-requests: write
   pages: write
   id-token: write
 concurrency:
@@ -89,21 +90,21 @@ jobs:
         env:
           BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL || steps.pages.outputs.base_url }}
         run: python scripts/register_public_items.py
-      - name: Preserve stable story URLs
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/archive/stories.json
-          if [[ -f data/weekly-overviews/history.json ]]; then git add data/weekly-overviews/history.json; fi
-          if [[ -f data/research/public.json ]]; then git add data/research/public.json; fi
-          if [[ -f data/english/public-text.json ]]; then git add data/english/public-text.json; fi
-          if ! git diff --cached --quiet; then
-            git commit -m 'Preserve Brief story pages and edition history'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+      - name: Propose stable story URLs
+        uses: peter-evans/create-pull-request@v8
+        with:
+          add-paths: |
+            data/archive/stories.json
+            data/weekly-overviews/history.json
+            data/research/public.json
+            data/english/public-text.json
+          branch: automation/brief-stable-story-urls
+          branch-suffix: timestamp
+          sign-commits: true
+          commit-message: Preserve Brief story pages and edition history
+          title: Preserve Brief story pages and edition history
+          body: |
+            Automated build output. Review the story URLs and edition history before merging.
       - name: Retain English translation checkpoints
         if: always()
         uses: actions/upload-artifact@v4
