@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-10",
-  "period_end": "2026-10-16",
+  "period_start": "2026-10-11",
+  "period_end": "2026-10-17",
   "providers": [
     {
       "source": "arxiv",
@@ -11,7 +11,7 @@
     {
       "source": "pnas",
       "status": "ok",
-      "count": 0
+      "count": 1
     },
     {
       "source": "ssrn",
@@ -22,51 +22,57 @@
   "affiliation_enrichment": [
     {
       "key": "paper:0979e7e5e265ef51edf69854",
-      "status": "not_matched",
+      "status": "matched",
       "source_verified": true,
       "institutions": 0
     },
     {
       "key": "paper:f3eb34cfc4dbc11c5f59ecbf",
-      "status": "not_matched",
+      "status": "matched",
       "source_verified": true,
       "institutions": 0
     },
     {
       "key": "paper:f531ec67658703d4a74dc338",
-      "status": "not_matched",
+      "status": "matched",
       "source_verified": true,
       "institutions": 0
     },
     {
       "key": "paper:e4a39cf0737d1bf337e1365e",
-      "status": "not_matched",
+      "status": "matched",
       "source_verified": true,
       "institutions": 0
     },
     {
       "key": "paper:4b7039eb642df7ee420bac98",
-      "status": "not_matched",
+      "status": "matched",
       "source_verified": true,
       "institutions": 0
     },
     {
       "key": "paper:fc85cf610b63b353b53ceaa6",
-      "status": "not_matched",
+      "status": "matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:2f957ce8eb10b9f003400850",
+      "key": "paper:73719334b220689bc34e3c32",
+      "status": "matched",
+      "source_verified": false,
+      "institutions": 2
+    },
+    {
+      "key": "paper:a85a49e4a9adaf23963031a9",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:52c3ba78f28c68d12f1a0973",
+      "key": "paper:beaf7b4a534a2a4135c21b97",
       "status": "cached",
-      "source_verified": true,
-      "institutions": 0
+      "source_verified": false,
+      "institutions": 6
     },
     {
       "key": "paper:91078ae8ed566fc820332ae5",

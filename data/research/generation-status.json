@@ -1,21 +1,24 @@
 {
-  "generated": 8,
+  "generated": 3,
   "failed": 1,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 0,
+  "unchanged": 6,
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "failure_counts": {
-    "unsupported_number": 1
+    "source_scope_review_failed": 1
   },
   "failed_items": [
     {
-      "key": "paper:91078ae8ed566fc820332ae5",
+      "key": "paper:a85a49e4a9adaf23963031a9",
       "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v5-research-support"
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v5-research-support",
+      "failed_checks": [
+        "claim_status_preserved"
+      ]
     }
   ],
-  "updated_at": "2026-10-16T16:55:38.368954+00:00"
+  "updated_at": "2026-10-17T15:39:16.473625+00:00"
 }
