@@ -5150,6 +5150,69 @@
       },
       "output_sha256": "15d000ea6016594a16c997beb73b0e8e4041ff48c64eb3007258b65e4c960471",
       "policy": "brief-english-display-v1"
+    },
+    "edab183ac7bdf9253ab9914b603932c86b9cae5d07ce427a23d67ca535029f2b": {
+      "english": {
+        "0": "Iranian · Persian",
+        "1": "Rubáiyát · LXXV, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+        "2": "Rubáiyát · LXXV",
+        "3": "LXXV",
+        "4": "Rubáiyát · LXXV"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a3c65344aebbdbdc56e84a7eb3e90d4a656746f71864df987e096543aaa4d53a",
+      "policy": "brief-english-display-v1"
+    },
+    "33d6888334179fda4a8f5c34d14b5a3dbb3a8e04787c0ec12dffccb64058121c": {
+      "english": {
+        "0": "Central China",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8e731863b6515c1ee3a5ece5c2d49256ef669173bd15ecbaaa11b67ea2f1c8cd",
+      "policy": "brief-english-display-v1"
+    },
+    "5f0061bd0da471abc6c3882037f368d00b3c73b191a67c6e4967363528e8856f": {
+      "english": {
+        "0": "Italian",
+        "1": "Composer",
+        "2": "08 - As He Spoke",
+        "3": "As He Spoke, from Antonio Vivaldi's Magnificat.",
+        "4": "08 - As He Spoke"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b063f3d9e0e8957ad39b7c7fc9b87b82864959ec22fe95f316a88830138761e6",
+      "policy": "brief-english-display-v1"
     }
   }
 }
