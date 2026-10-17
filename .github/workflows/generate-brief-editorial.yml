@@ -30,6 +30,7 @@ on:
         default: '15'
 permissions:
   contents: write
+  pull-requests: write
 concurrency:
   group: brief-generation
   cancel-in-progress: false
@@ -101,21 +102,24 @@ jobs:
         env:
           RESEARCH_MINUTES: ${{ inputs.research_minutes || (github.event_name == 'push' && '60') || '15' }}
         run: python scripts/generate_research_summaries.py --max-runtime-minutes "$RESEARCH_MINUTES"
-      - name: Retain public summaries and resumable progress
+      - name: Propose public summaries and resumable progress
         if: always() && inputs.dry_run != true
-        shell: bash
-        run: |
-          set -euo pipefail
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          for file in data/editorial/retry-state.json data/editorial/status.json data/research/public.json data/research/collection-status.json data/research/generation-status.json data/research/retry-state.json; do
-            if [[ -f "$file" ]]; then git add "$file"; fi
-          done
-          if ! git diff --cached --quiet; then
-            git commit -m 'Update Brief source summaries and progress'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+        uses: peter-evans/create-pull-request@v8
+        with:
+          add-paths: |
+            data/editorial/retry-state.json
+            data/editorial/status.json
+            data/research/public.json
+            data/research/collection-status.json
+            data/research/generation-status.json
+            data/research/retry-state.json
+          branch: automation/brief-source-summaries
+          branch-suffix: timestamp
+          sign-commits: true
+          commit-message: Update Brief source summaries and progress
+          title: Update Brief source summaries and progress
+          body: |
+            Automated source summaries and progress. Review the generated content before merging.
       - name: Retain private research provenance briefly
         if: always() && inputs.dry_run != true && github.event.repository.private == true
         uses: actions/upload-artifact@v4
