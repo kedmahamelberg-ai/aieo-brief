@@ -4,9 +4,6 @@ on:
   push:
     branches: [main]
     paths: ['scripts/**', 'templates/**', 'assets/**', 'config/**', 'data/**', 'tests/**', 'supabase/**', 'package*.json', 'requirements.txt', '.github/**']
-  workflow_run:
-    workflows: ['Update Brief News and Research', 'Update Brief Daily Culture']
-    types: [completed]
   workflow_dispatch:
 permissions:
   contents: write
@@ -18,7 +15,8 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: github.event_name != 'workflow_run' || github.event.workflow_run.head_branch == 'main'
+    outputs:
+      archive_pr: ${{ steps.archive-pr.outputs.pull-request-number }}
     runs-on: ubuntu-latest
     timeout-minutes: 35
     env:
@@ -91,6 +89,7 @@ jobs:
           BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL || steps.pages.outputs.base_url }}
         run: python scripts/register_public_items.py
       - name: Propose stable story URLs
+        id: archive-pr
         uses: peter-evans/create-pull-request@v8
         with:
           add-paths: |
@@ -129,7 +128,7 @@ jobs:
         with:
           path: _site
   deploy:
-    if: vars.BRIEF_PUBLISH == 'true'
+    if: vars.BRIEF_PUBLISH == 'true' && needs.build.outputs.archive_pr == ''
     needs: build
     runs-on: ubuntu-latest
     environment:
