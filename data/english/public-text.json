@@ -5279,6 +5279,27 @@
       },
       "output_sha256": "594084e76353db72b8113aa4226701cfc6a7986a58bbfba408c532cfe3d9f9fd",
       "policy": "brief-english-display-v1"
+    },
+    "97c8eb42cfca4f265828644781daf8374163ee398fd2de1a813f3e60d438fb1c": {
+      "english": {
+        "0": "The province’s AI Creation series brings together the AI Zao Wu Contest, the AI innovation applications contest, and the national general AI contest to reflect a full cycle from idea to deployment. It emphasizes removing barriers in knowledge, ability, and resources, aiming to improve opportunities for researchers and young talents to contribute to real-world AI projects.\nThree distinct contests emphasize different outcomes, leading frontier ideas, ensuring industry-ready applications, and attracting talent and original innovation, while remaining open to a broad audience. The overall aim is to strengthen regional AI branding and encourage collaboration among universities, national labs, and industry partners, though actual gains will depend on subsequent support, funding, and market uptake.",
+        "1": "USTC News Network",
+        "2": "USTC News Network",
+        "3": "USTC News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f8ef0e825be59937a0940c8237a16ba18340b6e25799e03aedc14b72cfe9cda2",
+      "policy": "brief-english-display-v1"
     }
   }
 }
