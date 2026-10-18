@@ -5300,6 +5300,24 @@
       },
       "output_sha256": "f8ef0e825be59937a0940c8237a16ba18340b6e25799e03aedc14b72cfe9cda2",
       "policy": "brief-english-display-v1"
+    },
+    "12a062137ab3df0572e8085bb046ef9d32b67213e484d433ba7deedb0e9efbc6": {
+      "english": {
+        "0": "Thélyson Orélien Case: Literary Criticism Tested by Artificial Intelligence"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bc243bde7e79a7504ec9b5583dd4ae7f45cfe78241034425044d6c9bb2aeea9d",
+      "policy": "brief-english-display-v1"
     }
   }
 }
