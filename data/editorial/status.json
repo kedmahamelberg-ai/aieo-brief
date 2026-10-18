@@ -8,22 +8,12 @@
     "needs_model": 1,
     "needs_rebind": 0,
     "selected": 1,
-    "generated": 0,
+    "generated": 1,
     "rebound": 0,
-    "failed": 1,
+    "failed": 0,
     "deferred": 0
   },
-  "failure_counts": {
-    "unsupported_number": 1
-  },
-  "failed_items": [
-    {
-      "event_id": "c0c45d55-ad31-41bf-9fc7-82885a87955d",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
-    }
-  ],
-  "updated_at": "2026-10-18T18:25:03.439561+00:00"
+  "failure_counts": {},
+  "failed_items": [],
+  "updated_at": "2026-10-18T18:54:40.341514+00:00"
 }
