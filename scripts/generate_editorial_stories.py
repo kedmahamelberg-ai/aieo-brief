@@ -12,7 +12,7 @@ from supabase import create_client
 from brief_contract import PROMPT_VERSION,digest,fixed_relationship,validate_pair
 from brief_database import current_maps
 from build_site import inputs
-from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION
+from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION
 from source_evidence_quality import assess_body
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=ai_runtime.identity()['model'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
@@ -33,6 +33,18 @@ def source_payload(rows, allowed=None, fingerprints=None):
 def fingerprint(event,axes,sources):
     return digest({'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
 def same_input(latest,fp):return ((latest or {}).get('evidence_basis_summary') or {}).get('input_fingerprint')==fp
+
+def retain_numeric_rejection(client,item,error):
+    # This existing provenance table has RLS enabled and no public policies.
+    # Retain only the last bounded validation feedback, never in Git or logs.
+    # A later successful generation replaces this entry with its accepted proof.
+    if not isinstance(error,EditorialError) or error.code!='unsupported_number':return
+    client.table('brief_editorial_provenance').upsert({
+        'input_sha256':item['fp'],
+        'proof':{'rejected':True,'event_id':item['eid'],'run_id':os.environ.get('GITHUB_RUN_ID'),
+                 'engine_version':ENGINE_VERSION,'diagnostic':failure_diagnostic(error,'generation'),
+                 'private_retry_feedback':error.feedback[:3000]},
+    },on_conflict='input_sha256').execute()
 
 def candidates(release,sym,maps,force=False):
     stories,readiness,evidence,versions=maps;axis={r['event_id']:r for r in sym['evidence']};selected=[]
@@ -116,6 +128,9 @@ def main():
         except Exception as e:
             counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
             diagnostic=failure_diagnostic(e,stage)
+            if stage=='generation':
+                try:retain_numeric_rejection(client,item,e)
+                except Exception:print('Private numeric rejection diagnostic could not be retained.',flush=True)
             failures.append({'event_id':item['eid'],**diagnostic})
             # Do not print PostgREST errors: they can contain private failing rows.
             print(f'Kept source link for {item["eid"]}; draft withheld: '+json.dumps(diagnostic,sort_keys=True),flush=True)
