@@ -61,16 +61,10 @@
       "status": "matched",
       "source_verified": false,
       "institutions": 2
-    },
-    {
-      "key": "paper:a85a49e4a9adaf23963031a9",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
     }
   ],
   "recovery": {
-    "recovered": 1,
+    "recovered": 0,
     "unavailable": 0
   }
 }
