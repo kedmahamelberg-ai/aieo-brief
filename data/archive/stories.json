@@ -2,6 +2,377 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "d4c74fe04377b2f710e63a945de5a009bd79afffebe833800fbf3ba0ce059661",
+      "creator": "William Blake",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by William Blake.",
+      "excerpt": "Dear mother, dear mother, the Church is cold;\nBut the Alehouse is healthy, and pleasant, and warm.\nBesides, I can tell where I am used well;\nThe poor parsons with wind like a blown bladder swell.\n\nBut, if at the Church they would give us some ale,\nAnd a pleasant fire our souls to regale,\nWe'd sing and we'd pray all the livelong day,\nNor ever once wish from the Church to stray.\n\nThen the Parson might preach, and drink, and sing,\nAnd we'd be as happy as birds in the spring;\nAnd modest Dame Lurch, who is always at church,\nWould not have bandy children, nor fasting, nor birch.\n\nAnd God, like a father, rejoicing to see\nHis children as pleasant and happy as he,\nWould have no more quarrel with the Devil or the barrel,\nBut kiss him, and give him both drink and apparel.",
+      "headline": "The Little Vagabond",
+      "key": "culture:dbe36d8c1e919792a4373065",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Dear mother, dear mother, the Church is cold;",
+        "But the Alehouse is healthy, and pleasant, and warm.",
+        "Besides, I can tell where I am used well;",
+        "The poor parsons with wind like a blown bladder swell.",
+        "",
+        "But, if at the Church they would give us some ale,",
+        "And a pleasant fire our souls to regale,",
+        "We'd sing and we'd pray all the livelong day,",
+        "Nor ever once wish from the Church to stray.",
+        "",
+        "Then the Parson might preach, and drink, and sing,",
+        "And we'd be as happy as birds in the spring;",
+        "And modest Dame Lurch, who is always at church,",
+        "Would not have bandy children, nor fasting, nor birch.",
+        "",
+        "And God, like a father, rejoicing to see",
+        "His children as pleasant and happy as he,",
+        "Would have no more quarrel with the Devil or the barrel,",
+        "But kiss him, and give him both drink and apparel."
+      ],
+      "provenance_id": "poetrydb:William Blake:The Little Vagabond",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1827.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "f9fd3b8af597234d5d83662a63fb1e68a318f79804a51453605079831ca38038",
+      "source_locator": "The Little Vagabond",
+      "source_url": "https://poetrydb.org/title/The%20Little%20Vagabond:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1827",
+      "date": "2026-10-18",
+      "selected_on": "2026-10-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dbe36d8c1e919792a4373065",
+      "path": "culture/culture-dbe36d8c1e919792a4373065/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "The Little Vagabond",
+          "url": "https://poetrydb.org/title/The%20Little%20Vagabond:abs/lines.text",
+          "date": "Before 1827",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-18",
+      "summary_basis": "Selected 18 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Dear mother, dear mother, the Church is cold;\nBut the Alehouse is healthy, and pleasant, and warm.\nBesides, I can tell where I am used well;\nThe poor parsons with wind like a blown bladder swell.\n\nBut, if at the Church they would give us some ale,\nAnd a pleasant fire our souls to regale,\nWe'd sing and we'd pray all the livelong day,\nNor ever once wish from the Church to stray.\n\nThen the Parson might preach, and drink, and sing,\nAnd we'd be as happy as birds in the spring;\nAnd modest Dame Lurch, who is always at church,\nWould not have bandy children, nor fasting, nor birch.\n\nAnd God, like a father, rejoicing to see\nHis children as pleasant and happy as he,\nWould have no more quarrel with the Devil or the barrel,\nBut kiss him, and give him both drink and apparel.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Relíquias de Casa Velha",
+      "content_fingerprint": "5d608f7323961cfb77d4963895d5b9628dec6483badf7714aa021023e3b59da2",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Relíquias de Casa Velha.",
+      "excerpt": "A ultima vez que vi Eduardo Prado foi na vespera de deixar o Rio de Janeiro para recolher a S. Paulo, dizem que com o germen do mal e da morte em si. Naquella occasião era todo vida e saúde. Quem então me dissesse que elle ia tambem deixar o mundo, não me causaria espanto, porque a injustiça da natureza acostuma a gente aos seus golpes; mas, é certo que eu buscaria maneira de obter outras horas como aquella, em que me detivesse ao pé delle, para ouvil-o e admiral-o.",
+      "headline": "Relíquias de Casa Velha · a short reading",
+      "key": "culture:9b75a23a69dede0f91b6da7c",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:67935:passage:5d608f7323961cfb77d4963895d5b9628dec6483badf7714aa021023e3b59da2",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/67935"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2781969a94ae7687dbeea26d6809ce8ff500b1c5997789b3d2d908997b348516",
+      "source_locator": "MARIA CORA; paragraph 539 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/67935",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-10-18",
+      "selected_on": "2026-10-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9b75a23a69dede0f91b6da7c",
+      "path": "culture/culture-9b75a23a69dede0f91b6da7c/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Relíquias de Casa Velha · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/67935",
+          "date": "1906",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-18",
+      "summary_basis": "Selected 18 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "A ultima vez que vi Eduardo Prado foi na vespera de deixar o Rio de Janeiro para recolher a S. Paulo, dizem que com o germen do mal e da morte em si. Naquella occasião era todo vida e saúde. Quem então me dissesse que elle ia tambem deixar o mundo, não me causaria espanto, porque a injustiça da natureza acostuma a gente aos seus golpes; mas, é certo que eu buscaria maneira de obter outras horas como aquella, em que me detivesse ao pé delle, para ouvil-o e admiral-o.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Mussorgsky_Pictures_at_an_Exhibition_Part1.ogg",
+      "creator": "Modest Mussorgsky",
+      "creator_origin": "Russian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Modest Mussorgsky. 3 minutes to listen.",
+      "duration_seconds": 212,
+      "headline": "Mussorgsky Pictures at an Exhibition Part1",
+      "key": "culture:984bbd7111df16a0df577ce4",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Mussorgsky_Pictures_at_an_Exhibition_Part1.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Modest_Mussorgsky",
+      "original_recording_title": "Mussorgsky Pictures at an Exhibition Part1",
+      "provenance_id": "commons:4714499",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Bernd Krueger",
+      "recording_description": "Modest Mussorgsky: Pictures at an Exhibition Part 1 Promenade - Gnomus The original piano version",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Bernd Krueger",
+        "label": "CC BY-SA 2.0 de (source-declared)",
+        "source_credit": "http://www.piano-midi.de/ogg.htm (created in MIDI and recorded from a digital piano)",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mussorgsky_Pictures_at_an_Exhibition_Part1.ogg",
+      "work_date": "2008-08-18",
+      "date": "2026-10-18",
+      "selected_on": "2026-10-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-984bbd7111df16a0df577ce4",
+      "path": "culture/culture-984bbd7111df16a0df577ce4/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Mussorgsky Pictures at an Exhibition Part1",
+          "url": "https://commons.wikimedia.org/wiki/File:Mussorgsky_Pictures_at_an_Exhibition_Part1.ogg",
+          "date": "2008-08-18",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-18",
+      "summary_basis": "Selected 18 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "753ced0b2d86b4f211300d9a7a3395dd5ad492ead7880ce874cd4c748db75bcc",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love.",
+      "headline": "When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love.",
+      "key": "culture:755d5ceda219df621797fe91",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:753ced0b2d86b4f211300d9a7a3395dd5ad492ead7880ce874cd4c748db75bcc",
+      "publisher": "Project Gutenberg",
+      "quote_context": "When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 329 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-10-18",
+      "selected_on": "2026-10-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-755d5ceda219df621797fe91",
+      "path": "culture/culture-755d5ceda219df621797fe91/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-18",
+      "summary_basis": "Selected 18 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "When all the strings of my life will be tuned, my Master, then at every touch of thine will come out the music of love.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "April (No. 706)",
+      "art_type": "Textile",
+      "balance_origin": "America",
+      "creator": "Clayton Knight (American, 1891–1969) · Stehli Silks Corporation (United States; Pennsylvania, Lancaster; and New York, New York, 1840–c. 1955)",
+      "creator_origin": "America, New York",
+      "culture_type": "illustration",
+      "deck": "April (No. 706). silk: plain weave, roller printed.",
+      "headline": "April (No. 706)",
+      "image_path": "assets/culture/42613ec321af5e9541ac298b.jpg",
+      "key": "culture:42613ec321af5e9541ac298b",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1928.585/1928.585_web.jpg",
+      "medium": "silk: plain weave, roller printed",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1928.585",
+      "provenance_id": "cma:109978",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of the Stehli Silks Corporation",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1928.585",
+      "work_date": "1927",
+      "date": "2026-10-18",
+      "selected_on": "2026-10-18",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-42613ec321af5e9541ac298b",
+      "path": "culture/culture-42613ec321af5e9541ac298b/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "April (No. 706)",
+          "url": "https://clevelandart.org/art/1928.585",
+          "date": "1927",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-18",
+      "summary_basis": "Selected 18 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "f8e3fc12bc04e1512d1af47041905c6999fcc69f0b7ae93647a85f72353a4fcf",
       "creator": "Omar Khayyam, after Edward FitzGerald",
       "creator_origin": "Iranian · Persian",

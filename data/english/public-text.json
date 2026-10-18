@@ -5213,6 +5213,72 @@
       },
       "output_sha256": "b063f3d9e0e8957ad39b7c7fc9b87b82864959ec22fe95f316a88830138761e6",
       "policy": "brief-english-display-v1"
+    },
+    "c4cb69c788882a305b159892885b409bfdd94e6e6ab7d12b8a7842156ffa5fa4": {
+      "english": {
+        "0": "Relics of the Old House",
+        "1": "Brazilian",
+        "2": "A passage from Relíquias de Casa Velha.",
+        "3": "The last time I saw Eduardo Prado was on the eve of leaving Rio de Janeiro to go to São Paulo, they say, with the germ of evil and of death itself. On that occasion he was all life and health. Whoever then told me that he would also leave the world would not astonish me, because the injustice of nature accustoms people to its blows; but it is certain that I would seek a way to obtain other hours like that one, in which I would linger at his side, to hear him and admire him.",
+        "4": "Relíquias de Casa Velha · a short reading",
+        "5": "Relíquias de Casa Velha · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d7135e53f9d15dea0960addaeeef43701b1b12921b0534844d5c68451f5f592e",
+      "policy": "brief-english-display-v1"
+    },
+    "35838238cc14dc9a5da2ea771e68cdd1c4c34bba9c74fca8469678b26313de62": {
+      "english": {
+        "0": "Russian",
+        "1": "Composer",
+        "2": "Mussorgsky Pictures at an Exhibition Part1",
+        "3": "Modest Mussorgsky: Pictures at an Exhibition Part 1 Promenade - Gnomus The original piano version",
+        "4": "Mussorgsky Pictures at an Exhibition Part1"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c8dc74f51231e2f9548aa9d89f263112057e2b776aa0c40becc804b919b1aa9b",
+      "policy": "brief-english-display-v1"
+    },
+    "4d33487e31dbb8f5616ab149a4edabba973ccf3b89ab688d2a85a7e69cfaf156": {
+      "english": {
+        "0": "April (No. 706)",
+        "1": "April (No. 706)",
+        "2": "CC0 image",
+        "3": "April (No. 706)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "594084e76353db72b8113aa4226701cfc6a7986a58bbfba408c532cfe3d9f9fd",
+      "policy": "brief-english-display-v1"
     }
   }
 }
