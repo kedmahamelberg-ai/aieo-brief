@@ -27,7 +27,10 @@ class ResearchRecovery(unittest.TestCase):
         for quote in quotes:
             self.assertTrue(12 <= len(quote) <= 400)
             self.assertIn(quote, engine.normalized(evidence))
-        self.assertNotIn('enum', engine.draft_schema(sources, 'news')['properties']['support']['items']['properties']['quote'])
+        news_support = engine.draft_schema(sources, 'news')['properties']['support']['items']['properties']
+        self.assertNotIn('quote', news_support)
+        self.assertNotIn('source_number', news_support)
+        self.assertEqual(news_support['quote_id']['enum'], list(range(len(engine.support_catalog(sources)))))
 
     def test_pdf_abstract_requires_title_and_complete_boundaries(self):
         abstract = 'Researchers compare a new method with a baseline. The tests report improvements for the evaluated model.'
