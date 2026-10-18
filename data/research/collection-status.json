@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-11",
-  "period_end": "2026-10-17",
+  "period_start": "2026-10-12",
+  "period_end": "2026-10-18",
   "providers": [
     {
       "source": "arxiv",
@@ -67,22 +67,10 @@
       "status": "cached",
       "source_verified": true,
       "institutions": 0
-    },
-    {
-      "key": "paper:beaf7b4a534a2a4135c21b97",
-      "status": "cached",
-      "source_verified": false,
-      "institutions": 6
-    },
-    {
-      "key": "paper:91078ae8ed566fc820332ae5",
-      "status": "matched",
-      "source_verified": true,
-      "institutions": 0
     }
   ],
   "recovery": {
-    "recovered": 3,
+    "recovered": 1,
     "unavailable": 0
   }
 }

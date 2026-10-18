@@ -2,20 +2,20 @@
   "release_id": "2026-W41",
   "engine_version": "aieo-editorial-runtime-v5-research-support",
   "counts": {
-    "unchanged": 60,
+    "unchanged": 62,
     "source_not_ready": 0,
-    "new_registry": 19,
-    "needs_model": 19,
+    "new_registry": 17,
+    "needs_model": 17,
     "needs_rebind": 0,
-    "selected": 19,
-    "generated": 2,
+    "selected": 17,
+    "generated": 0,
     "rebound": 0,
     "failed": 17,
     "deferred": 0
   },
   "failure_counts": {
-    "draft_quote_unsupported": 16,
-    "source_scope_review_failed": 1
+    "draft_quote_unsupported": 15,
+    "unsupported_number": 2
   },
   "failed_items": [
     {
@@ -35,12 +35,9 @@
     {
       "event_id": "6d2a1142-4f6b-49d0-a4e3-521e8dc551d9",
       "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v5-research-support",
-      "failed_checks": [
-        "english_only"
-      ]
+      "stage": "draft_validation",
+      "code": "draft_quote_unsupported",
+      "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
       "event_id": "55805f6a-0460-44c3-aea1-8f1e71834dc3",
@@ -88,7 +85,7 @@
       "event_id": "c0c45d55-ad31-41bf-9fc7-82885a87955d",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -116,7 +113,7 @@
       "event_id": "305cc5f4-e43d-420b-b48d-3be953a62157",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "draft_quote_unsupported",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     },
     {
@@ -141,5 +138,5 @@
       "engine_version": "aieo-editorial-runtime-v5-research-support"
     }
   ],
-  "updated_at": "2026-10-17T15:37:53.504775+00:00"
+  "updated_at": "2026-10-18T15:56:09.359703+00:00"
 }
