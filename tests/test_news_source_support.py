@@ -7,6 +7,36 @@ from test_editorial_recovery import engine, fixture, accepted_review
 
 
 class NewsSourceSupport(unittest.TestCase):
+    def test_numeric_tokens_do_not_depend_on_source_language_boundaries(self):
+        text = '模型Example5.0-9B在9项中通过8项，自2021年迭代4次，类别10B。'
+        self.assertEqual(engine.numeric_values(text), {'5.0', '9', '8', '2021', '4', '10'})
+        self.assertNotIn('0', engine.numeric_values(text))
+        self.assertEqual(engine.numeric_values('Reported 12.5% of 1,000 cases.'), {'12.5%', '1,000'})
+
+    def test_supported_cjk_numbers_pass_but_invented_values_still_fail(self):
+        draft, sources = fixture()
+        sources[0]['evidence'] += ' 模型Example5.0-9B在9项中通过8项，自2021年迭代4次，类别10B。'
+        draft['what_happened'] = 'The report says Example5.0-9B led 8 of 9 tests after 4 updates since 2021.'
+        self.assertEqual(engine.validate_draft(draft, sources)['what_happened'], draft['what_happened'])
+        for text in ('The model led 80 of 90 tests.', 'The model has 11B parameters.',
+                     'The report dates to 2022.', 'The model is Example5.1-9B.'):
+            bad = copy.deepcopy(draft)
+            bad['what_happened'] = text
+            with self.subTest(text=text), self.assertRaises(engine.EditorialError) as caught:
+                engine.validate_draft(bad, sources)
+            self.assertEqual(caught.exception.code, 'unsupported_number')
+
+    def test_decimal_fragments_and_percentage_changes_cannot_pass(self):
+        draft, sources = fixture()
+        sources[0]['evidence'] += ' Model5.0 achieved 12.5% in a separate test.'
+        for text in ('The result was 0.', 'The result was 5.', 'The result was 12.5.',
+                     'The result was 12%.', 'The result was 125%.'):
+            bad = copy.deepcopy(draft)
+            bad['what_happened'] = text
+            with self.subTest(text=text), self.assertRaises(engine.EditorialError) as caught:
+                engine.validate_draft(bad, sources)
+            self.assertEqual(caught.exception.code, 'unsupported_number')
+
     def test_news_uses_source_bound_ids_and_validates_original_text(self):
         draft, sources = fixture()
         catalog = engine.support_catalog(sources)
