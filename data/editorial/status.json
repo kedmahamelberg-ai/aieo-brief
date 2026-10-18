@@ -1,14 +1,14 @@
 {
   "release_id": "2026-W41",
-  "engine_version": "aieo-editorial-runtime-v6-source-bound-support",
+  "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens",
   "counts": {
-    "unchanged": 62,
+    "unchanged": 78,
     "source_not_ready": 0,
-    "new_registry": 17,
-    "needs_model": 17,
+    "new_registry": 1,
+    "needs_model": 1,
     "needs_rebind": 0,
-    "selected": 17,
-    "generated": 16,
+    "selected": 1,
+    "generated": 0,
     "rebound": 0,
     "failed": 1,
     "deferred": 0
@@ -22,8 +22,8 @@
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v6-source-bound-support"
+      "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
     }
   ],
-  "updated_at": "2026-10-18T17:31:36.413355+00:00"
+  "updated_at": "2026-10-18T18:25:03.439561+00:00"
 }
