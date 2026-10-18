@@ -10,7 +10,7 @@ from source_evidence_quality import evidence_chunks
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v6-source-bound-support'
+ENGINE_VERSION='aieo-editorial-runtime-v7-complete-numeric-tokens'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -148,6 +148,15 @@ def resolve_support(draft,catalog):
  return draft
 
 def normalized(value):return re.sub(r'\s+',' ',str(value or '')).strip()
+
+def numeric_values(text):
+ # CJK characters are Unicode word characters, so a word-boundary assertion
+ # hides real source numbers beside them. Read each complete digit token from
+ # its beginning instead; this also prevents accepting 0 as a fragment of 5.0.
+ # Keep exact spelling, decimals, separators and percent signs: no conversions,
+ # rounding, magnitude expansion or extra numeric values are authorized here.
+ return set(re.findall(r'\d+(?:[.,]\d+)*(?:%)?',text))
+
 def deadline_check(deadline):
  if deadline and time.monotonic()>deadline-25:raise TimeoutError('Editorial runtime budget reached; resume on the next run.')
 def call_json(prompt,schema=SCHEMA,deadline=None,attempt=0,stage='draft',paper=False):
@@ -257,10 +266,9 @@ def validate_draft(d,sources,kind='news'):
  public=' '.join(d[k] for k in TEXT_FIELDS)+' '+' '.join(d['body_paragraphs'])+' '+str(d.get('limitation',''))
  copied=copied_phrase(public,[s['evidence'] for s in sources])
  if copied:raise ValueError('The draft repeats ten consecutive source words. Rewrite this passage in original language: '+copied)
- numbers=lambda s:set(re.findall(r'(?<!\w)\d+(?:[.,]\d+)*(?:%)?',s))
- allowed_numbers=numbers(' '.join(s['evidence']+' '+s.get('headline','') for s in sources))
+ allowed_numbers=numeric_values(' '.join(s['evidence']+' '+s.get('headline','') for s in sources))
  numeric_fields={**{k:d[k] for k in TEXT_FIELDS},'limitation':d.get('limitation',''),**{f'body_paragraphs[{i}]':text for i,text in enumerate(d['body_paragraphs'])}}
- unsupported={field:sorted(numbers(text)-allowed_numbers) for field,text in numeric_fields.items() if numbers(text)-allowed_numbers}
+ unsupported={field:sorted(numeric_values(text)-allowed_numbers) for field,text in numeric_fields.items() if numeric_values(text)-allowed_numbers}
  if unsupported:raise ValueError('Draft introduces a numeric value that is not present in the sources. Correct these fields and values using only the evidence: '+json.dumps(unsupported,sort_keys=True)+'. Preserve supported numbers and their denominators; omit an unsupported value only when the claim remains accurate. Do not invent a replacement.')
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
  if kind in ('preprint','abstract','paper') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')
