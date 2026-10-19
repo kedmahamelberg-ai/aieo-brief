@@ -1,11 +1,11 @@
 {
-  "generated": 0,
+  "generated": 7,
   "failed": 0,
   "metadata_only": 0,
   "deferred": 0,
-  "unchanged": 7,
+  "unchanged": 1,
   "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens",
   "failure_counts": {},
   "failed_items": [],
-  "updated_at": "2026-10-18T18:54:40.869523+00:00"
+  "updated_at": "2026-10-19T18:46:44.736778+00:00"
 }
