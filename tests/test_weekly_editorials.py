@@ -166,6 +166,41 @@ class WeeklyEditorialTests(unittest.TestCase):
         self.assertEqual(attempts.count('weekly_review_repeat'), 2)
         self.assertTrue(all(result[k]['review_checks']['grounded'] for k in ('markets','research')))
 
+    def test_malformed_inline_part_gets_targeted_bounded_repairs(self):
+        stages = []
+        def repair(prompt, **kwargs):
+            stage = kwargs['stage']
+            stages.append(stage)
+            draft = self.call(prompt, **kwargs)
+            if stage == 'weekly_review':
+                return draft
+            if stage in ('weekly_draft', 'weekly_repair'):
+                draft['paragraphs'][0][0]['text'] = ''
+            if stage == 'weekly_repair':
+                self.assertIn('paragraph 1, part 1: text must be a nonempty string', prompt)
+            return draft
+        result = self.generate(call=repair)
+        self.assertEqual(result['editorial_status'], 'ready')
+        self.assertEqual(stages.count('weekly_repair_final'), 2)
+        self.assertEqual(stages.count('weekly_review'), 2)
+
+    def test_repeated_malformed_part_never_reaches_independent_review(self):
+        stages = []
+        def malformed(prompt, **kwargs):
+            stage = kwargs['stage']
+            stages.append(stage)
+            draft = self.call(prompt, **kwargs)
+            if stage == 'weekly_review':
+                return draft
+            draft['paragraphs'][0][0]['text'] = ''
+            return draft
+        result = self.generate(call=malformed)
+        self.assertEqual(result['editorial_status'], 'pending')
+        self.assertEqual(stages.count('weekly_repair_final'), 2)
+        self.assertNotIn('weekly_review', stages)
+        self.assertEqual(result['research']['last_error'],
+                         'weekly_part: paragraph 1, part 1: text must be a nonempty string')
+
     def test_new_format_revision_retries_an_exhausted_older_draft(self):
         """A changed editorial brief must supersede a prior retry cap.
 

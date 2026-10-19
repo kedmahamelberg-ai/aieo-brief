@@ -149,14 +149,17 @@ def validate_draft(draft, selected, pictures):
     if not isinstance(paragraphs, list) or not 2 <= len(paragraphs) <= 4:
         raise ValueError('weekly_paragraphs')
     links, strings = [], []
-    for paragraph in paragraphs:
+    for paragraph_index, paragraph in enumerate(paragraphs, 1):
         if not isinstance(paragraph, list) or not 1 <= len(paragraph) <= 14:
             raise ValueError('weekly_parts')
-        for part in paragraph:
-            if (not isinstance(part, dict) or set(part) != {'text', 'source_key'}
-                    or not isinstance(part['text'], str) or not part['text'].strip()
-                    or not isinstance(part['source_key'], str)):
-                raise ValueError('weekly_part')
+        for part_index, part in enumerate(paragraph, 1):
+            location = f'weekly_part: paragraph {paragraph_index}, part {part_index}: '
+            if not isinstance(part, dict) or set(part) != {'text', 'source_key'}:
+                raise ValueError(location + 'use exactly text and source_key fields')
+            if not isinstance(part['text'], str) or not part['text'].strip():
+                raise ValueError(location + 'text must be a nonempty string')
+            if not isinstance(part['source_key'], str):
+                raise ValueError(location + 'source_key must be a string; use an empty string for unlinked text')
             strings.append(part['text'])
             if part['source_key']:
                 links.append(part['source_key'])
@@ -257,19 +260,25 @@ def create_section(kind, selected, pictures, base, call):
     deadline = time.monotonic() + 240
     payload = json.dumps({'sources': source_payload, 'artworks': picture_payload}, ensure_ascii=False)
     draft = call(brief + payload, schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_draft')
-    try:
-        validate_draft(draft, selected, pictures)
-    except ValueError as error:
-        # A structurally safe repair is cheaper and more reliable than leaving
-        # a whole week blank for a recoverable link or numeral mistake.
-        draft = call(
-            'Correct this draft without adding facts. The validation failure was '
-            + str(error) + '. Keep every supplied source key exactly once, use '
-            'only numbers present in the supplied evidence, and return the same schema.\n'
-            + json.dumps({'requirements': brief, 'sources': source_payload,
-                          'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
-            schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_repair')
-        validate_draft(draft, selected, pictures)
+    # A model can return an empty or malformed inline part despite the JSON
+    # schema. Give it a precise location and one more bounded chance to repair
+    # the shape. Every candidate still passes all source and content checks.
+    for repair_number in range(2):
+        try:
+            validate_draft(draft, selected, pictures)
+            break
+        except ValueError as error:
+            draft = call(
+                'Correct this draft without adding facts. The validation failure was '
+                + str(error) + '. Every part must contain exactly a nonempty text string '
+                'and a source_key string. Use an empty source_key for unlinked text. '
+                'Keep every supplied source key exactly once, use only numbers present '
+                'in the supplied evidence, and return the same schema.\n'
+                + json.dumps({'requirements': brief, 'sources': source_payload,
+                              'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
+                schema=DRAFT_SCHEMA, deadline=deadline,
+                stage='weekly_repair' if repair_number == 0 else 'weekly_repair_final')
+    validate_draft(draft, selected, pictures)
     def check(candidate, stage):
         artwork = next(x for x in pictures if x['key'] == candidate['image_key'])
         verdict = call(
