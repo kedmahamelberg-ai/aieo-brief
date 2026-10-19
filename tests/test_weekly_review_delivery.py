@@ -58,12 +58,18 @@ class WeeklyReviewDeliveryTests(unittest.TestCase):
         self.assertTrue(accepted['research']['human_approved'])
         self.assertEqual(accepted['approved_by'], 'kedmahamelberg-ai')
 
-    def test_email_shows_full_source_linked_prose_and_pending_has_no_approval(self):
+    def test_email_shows_plain_prose_and_named_source_links_and_pending_has_no_approval(self):
         url = 'https://github.com/' + REPOSITORY + '/actions/runs/123'
         ready = email_content(self.draft, url)
         self.assertIn('Review and approve on GitHub', ready['html'])
         self.assertIn('Request corrections on GitHub', ready['html'])
         self.assertIn('https://brief.hamelberg-ai.com/story/', ready['html'])
+        self.assertIn('Read the reporting', ready['html'])
+        self.assertIn('Read the research', ready['html'])
+        self.assertIn(self.fixture['research']['papers'][0]['original_headline'], ready['html'])
+        linked_part = next(part for paragraph in self.fixture['research']['prose']
+                           for part in paragraph if part['source_key'])
+        self.assertNotIn('>' + linked_part['text'] + '</a>', ready['html'])
         self.assertIn('src="cid:brief-weekly-markets"', ready['html'])
         self.assertIn('src="cid:brief-weekly-research"', ready['html'])
         self.assertEqual({item['content_id'] for item in ready['attachments']},

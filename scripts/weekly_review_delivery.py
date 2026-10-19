@@ -86,16 +86,28 @@ def section_html(section: dict, kind: str, image_src: str = "") -> str:
                  + html.escape(str(section.get("author", ""))) + '</p>')
     paragraphs = []
     for paragraph in section["prose"]:
-        parts = []
-        for part in paragraph:
-            value = html.escape(part["text"])
-            if part["source_key"]:
-                target = "https://brief.hamelberg-ai.com/" + html.escape(part["path"], quote=True)
-                value = '<a style="color:#08727a;text-decoration:underline" href="' + target + '">' + value + "</a>"
-            parts.append(value)
         paragraphs.append('<p style="margin:0 0 16px;color:#243746;font:16px/1.65 Georgia,serif">'
-                          + " ".join(parts) + "</p>")
+                          + " ".join(html.escape(part["text"]) for part in paragraph) + "</p>")
     frame.extend(paragraphs)
+    if kind == "markets":
+        sources = [(entry["story"]["path"], entry["story"].get("headline") or entry["name"],
+                    entry["story"].get("publisher", "")) for entry in section["entries"]]
+        source_heading = "Read the reporting"
+    else:
+        sources = [(paper["path"], paper.get("headline") or paper["original_headline"],
+                    paper.get("publisher", "")) for paper in section["papers"]]
+        source_heading = "Read the research"
+    frame.append('<div style="margin:20px 0 0;padding-top:14px;border-top:1px solid #dfe6e5">'
+                 '<p style="margin:0 0 10px;color:#1a6971;font:700 12px Arial,sans-serif;'
+                 'letter-spacing:.08em;text-transform:uppercase">' + source_heading + '</p>')
+    for path, headline, publisher in sources:
+        target = "https://brief.hamelberg-ai.com/" + html.escape(path, quote=True)
+        frame.append('<p style="margin:0 0 9px;font:14px/1.45 Arial,sans-serif">'
+                     '<a style="color:#08727a;text-decoration:underline;text-underline-offset:3px" href="'
+                     + target + '">' + html.escape(headline) + ' ↗</a>'
+                     + ('<br><span style="color:#60747b;font-size:12px">' + html.escape(publisher)
+                        + '</span>' if publisher else '') + '</p>')
+    frame.append('</div>')
     frame.append('<p style="margin:8px 0 0;color:#60747b;font-size:12px;line-height:1.5">'
                  + html.escape(str(section.get("scope_note", ""))) + '</p>')
     return "".join(frame) + "</div></td></tr></table>"

@@ -223,7 +223,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         recovered = self.generate(previous)
         self.assertEqual(recovered['editorial_status'], 'ready')
         for section in ('markets', 'research'):
-            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v7')
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v8')
             self.assertLessEqual(recovered[section]['word_count'], 200)
 
     def test_old_week_is_not_rewritten_in_new_voice(self):
@@ -271,6 +271,21 @@ class WeeklyEditorialTests(unittest.TestCase):
             validate_draft(draft, [{'key': 'sourceA'}, {'key': 'sourceB'}],
                            [{'key': 'picture0'}])
 
+    def test_length_feedback_gives_the_count_and_source_titles_are_saved(self):
+        good = self.generate()['markets']
+        self.assertTrue(all(entry['story']['headline'] for entry in good['entries']))
+        self.assertTrue(all(entry['story']['publisher'] for entry in good['entries']))
+        draft = {'title': ' '.join(['Very long title'] * 80),
+                 'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
+                                 for part in paragraph] for paragraph in good['prose']],
+                 'image_key': good['image_key'], 'image_reason': good['image_reason']}
+        with self.assertRaisesRegex(ValueError, r'weekly_length: \d+ words'):
+            validate_draft(draft, self.news, [{'key': good['image_key']}])
+        changed = copy.deepcopy(good)
+        changed['entries'][0]['story']['path'] = 'story/another/index.html'
+        with self.assertRaisesRegex(ValueError, 'source list does not match'):
+            validate_section(changed)
+
     def test_source_markers_cannot_appear_in_visible_prose(self):
         good = self.generate()['markets']
         draft = {'title': good['title'],
@@ -278,6 +293,9 @@ class WeeklyEditorialTests(unittest.TestCase):
                                  for part in paragraph] for paragraph in good['prose']],
                  'image_key': good['image_key'], 'image_reason': good['image_reason']}
         draft['paragraphs'][0][0]['text'] += ' See sourceA.'
+        with self.assertRaisesRegex(ValueError, 'weekly_citation_marker_in_text'):
+            validate_draft(draft, self.news, [{'key': good['image_key']}])
+        draft['paragraphs'][0][0]['text'] = 'See paper:214dec5532c4cb3bfe817fe3.'
         with self.assertRaisesRegex(ValueError, 'weekly_citation_marker_in_text'):
             validate_draft(draft, self.news, [{'key': good['image_key']}])
 
