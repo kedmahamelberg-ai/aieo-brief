@@ -5653,6 +5653,46 @@
       },
       "output_sha256": "f81297d3dca9ee8756a9fdd43eee294dbaf25b3d990af2d71cce41284f6edabd",
       "policy": "brief-english-display-v1"
+    },
+    "ba10a2ab41d9a84f65bba880e51e69f683a5c677e616c2ef18471525b09f0894": {
+      "english": {
+        "0": "7 large-scale vertical-domain models, forming the “strong backbone” of Shandong’s AI.",
+        "1": "Xinhua News App",
+        "2": "7 large-scale vertical-domain models, forming the “strong backbone” of Shandong’s AI.",
+        "3": "Xinhua News App"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0ab20ed394dbd543046c6691e7a1e3398e08b15e4e116580a24ae8835e51054d",
+      "policy": "brief-english-display-v1"
+    },
+    "ed0a26db8a2e47195638f6c4e994b88793750a88138284665cb114c6a967f81c": {
+      "english": {
+        "0": "Voice of America",
+        "1": "Voice of America"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e7804328b7d0b8000f7738639c1d3ac844644f7d320238a73c63523e1680eff7",
+      "policy": "brief-english-display-v1"
     }
   }
 }
