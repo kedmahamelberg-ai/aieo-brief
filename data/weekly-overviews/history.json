@@ -91,12 +91,12 @@
           }
         ],
         "active_market_count": 5,
-        "editorial_version": "kedma-weekly-v9",
+        "editorial_version": "kedma-weekly-v10",
         "status": "pending",
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "09e8ac6e5bfe849d1b86de8cb9a72aa38df260e0cbf5cd739066ec922073a426",
+        "input_hash": "80063f42fd68e93b574b470de69f132017528d63c40c9114064c3f42cb350dad",
         "attempts": 0
       },
       "research": {
@@ -117,16 +117,16 @@
         "papers": [],
         "paper_count": 25,
         "affiliation_verified_count": 1,
-        "editorial_version": "kedma-weekly-v9",
+        "editorial_version": "kedma-weekly-v10",
         "status": "pending",
         "prose": [],
         "pending_reason": "generation_pending",
-        "input_hash": "4ad8fbdf60465e59cd01b0f674014264d7b30a3806beba794dd57a5bd79ec5b6",
+        "input_hash": "22c3b14fa45d73881f456182ce3b67aa55d61d56a0d06ac347d15c1ad2122274",
         "attempts": 0
       },
-      "editorial_version": "kedma-weekly-v9",
+      "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "edc5c6dac182bffb4b544634236f806665e4ef54e3000851f713c5187479165f"
+      "content_sha256": "f62c636aca4b84543e313b97c308b9202dd2ddc6dd51cfe06abfa0a2d48bd549"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
