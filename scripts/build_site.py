@@ -40,6 +40,10 @@ def inputs(preview=False):
             if attempt==2: raise
             time.sleep(2)
 def text(value): return re.sub(r'\s+',' ',str(value or '')).replace('—',',').strip()
+def clean_body_paragraphs(paragraphs):
+    """Drop isolated generator markers from previously stored editorial bodies."""
+    marker=re.compile(r'[a-z0-9_ ,]*_placeholder[a-z0-9_ ,]*',re.I)
+    return [p for p in paragraphs if not (isinstance(p,str) and marker.fullmatch(p.strip()))]
 def fmt(value):
     try: return datetime.fromisoformat(str(value)[:10]).strftime('%d %b %Y').lstrip('0')
     except ValueError: return ''
@@ -83,7 +87,7 @@ def cards(release,sym,registry,readiness,editorial,preview=False):
         topic=detect_topic(event);market=sorted(marketmap[eid]);original=text(event.get('event_title'))
         if v:
             headline=text(v['editorial_headline']);deck=text(v['editorial_deck'])
-            body=[text(p) for p in re.split(r'\n\s*\n',v.get('body_markdown','')) if text(p)]
+            body=clean_body_paragraphs([text(p) for p in re.split(r'\n\s*\n',v.get('body_markdown','')) if text(p)])
             happened=text(v.get('what_happened'));why=text(v.get('why_it_matters'))
             basis='AIEO summary'
         else:
@@ -209,6 +213,9 @@ def main():
     news=cards(release,sym,registry,readiness,editorial,preview);research=papers();culture=culture_items()
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
+    for item in old:
+        if item.get('kind')=='news':
+            item['body_paragraphs']=clean_body_paragraphs(item.get('body_paragraphs',[]))
     current_keys={x['key'] for x in news}
     allitems={x['key']:x for x in old if not (x.get('kind')=='news' and x.get('edition')==release['release_id'] and x['key'] not in current_keys)}
     for item in news+research+culture:

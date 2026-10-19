@@ -3,10 +3,11 @@ from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from brief_contract import validate_pair,load_config,digest,PROMPT_VERSION
-from build_site import cards,version_valid
+from build_site import cards,version_valid,clean_body_paragraphs
 from generate_editorial_stories import source_payload,candidates
 from source_evidence_quality import evidence_chunks
-from editorial_engine import validate_draft,compile_evidence,review_scope
+from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
+from validate_public_site import inspect_json
 class Publication(unittest.TestCase):
  @classmethod
  def setUpClass(cls):
@@ -59,6 +60,14 @@ class Publication(unittest.TestCase):
   with self.assertRaises(ValueError):validate_draft(d,s)
   d,s=self.draft();d['support'][0]['quote']='An invented sentence that is absent.'
   with self.assertRaises(ValueError):validate_draft(d,s)
+ def test_placeholder_draft_and_public_data_are_rejected(self):
+  d,s=self.draft();d['body_paragraphs'].append('limitation_note_placeholder')
+  with self.assertRaises(EditorialError) as caught:validate_draft(d,s)
+  self.assertEqual(caught.exception.code,'draft_placeholder')
+  with self.assertRaisesRegex(ValueError,'Draft placeholder'):inspect_json({'items':[{'body_paragraphs':d['body_paragraphs']}]})
+ def test_stored_placeholder_paragraph_is_dropped(self):
+  body=['A sourced development.','limitation_note_placeholder','A supported detail.']
+  self.assertEqual(clean_body_paragraphs(body),['A sourced development.','A supported detail.'])
  def test_scope_review_rejects_a_changed_percentage_population(self):
   d,s=self.draft()
   with patch('editorial_engine.call_json',return_value={'headline_supported':True,'population_preserved':False,'claim_status_preserved':True,'no_unstated_effects':True,'main_story_only':True,'reason':'The headline generalises a subgroup to all respondents.'}),self.assertRaises(ValueError):review_scope(d,s)

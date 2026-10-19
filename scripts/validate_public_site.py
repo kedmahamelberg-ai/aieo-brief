@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from xml.etree import ElementTree
 ROOT=Path(__file__).resolve().parents[1]
+DRAFT_MARKER=re.compile(r'\b(?:[a-z0-9_]*_placeholder[a-z0-9_]*|placeholder_[a-z0-9_]+)\b',re.I)
 PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref','private_key','manage_token_hash','subscription_id','auth_key'}
 class Page(HTMLParser):
  def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.ids=[];self.headings=0;self.script_data=[];self.capture=False;self.canonicals=[];self.robots=''
@@ -30,6 +31,7 @@ def inspect_json(value):
    inspect_json(v)
  elif isinstance(value,list):
   for v in value:inspect_json(v)
+ elif isinstance(value,str) and DRAFT_MARKER.search(value):raise ValueError('Draft placeholder reached public data')
 def validate_research_reading(item):
  if not item.get('limitation') or item.get('evidence_scope') not in ('abstract','paper_text'):
   raise ValueError('Research summary lacks evidence scope and limit')
@@ -52,6 +54,7 @@ def validate_weekly_research_window(overview,papers):
 def validate(site):
  if not site.exists():raise ValueError('No built website')
  payload=json.loads((site/'data/current.json').read_text());inspect_json(payload)
+ inspect_json(json.loads((site/'data/public-items.json').read_text()))
  news=payload['stories'];papers=payload['research'];culture=payload.get('culture',[]);keys=[x['key'] for x in news+papers+culture]
  if len(keys)!=len(set(keys)):raise ValueError('Duplicate story IDs')
  if len(news)!=payload['story_count'] or len(papers)!=payload['research_count']:raise ValueError('Inconsistent collection count')
@@ -92,6 +95,7 @@ def validate(site):
   if parser.headings!=1:raise ValueError(f'{path.relative_to(site)} needs one page heading')
   if len(parser.ids)!=len(set(parser.ids)):raise ValueError('Duplicate element IDs: '+str(path))
   if re.search(r'sb_secret_|SUPABASE_SECRET_KEY|\bservice_role\b|"body_text"|"evidence_text"',raw):raise ValueError('Private material reached HTML')
+  if DRAFT_MARKER.search(raw):raise ValueError('Draft placeholder reached HTML: '+str(path.relative_to(site)))
   for data in parser.script_data:inspect_json(json.loads(data))
   for url in parser.links:
    p=urlsplit(url)
