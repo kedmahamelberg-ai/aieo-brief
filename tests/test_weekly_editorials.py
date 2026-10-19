@@ -8,6 +8,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from weekly_editorials import (apply_editorials, validate_draft, validate_section,
+                               validate_citation_alignment, validate_public_weekly_sources,
                                news_selection, research_selection, eligible, art_candidates, CHECKS)
 from weekly_overviews import prepare_weekly_overviews
 from check_observatory_update import needs_weekly_review
@@ -223,7 +224,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         recovered = self.generate(previous)
         self.assertEqual(recovered['editorial_status'], 'ready')
         for section in ('markets', 'research'):
-            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v9')
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v10')
             self.assertLessEqual(recovered[section]['word_count'], 200)
 
     def test_old_week_is_not_rewritten_in_new_voice(self):
@@ -357,6 +358,52 @@ class WeeklyEditorialTests(unittest.TestCase):
                                   call=lambda *a, **k: self.fail('Human approval must not call the model'))
         self.assertTrue(result['markets']['human_approved'])
         self.assertTrue(result['research']['human_approved'])
+
+    def test_citation_cannot_describe_another_selected_story(self):
+        sources = [
+            {'key': 'ca', 'headline': 'Canadian grant for soybean and barley varieties',
+             'deck': 'Regional cultivar development in Eastern Canada will accelerate local crop research.'},
+            {'key': 'us', 'headline': 'American parents discuss artificial intelligence with children',
+             'deck': 'Families ask how to handle curious questions and practical cautions.'},
+        ]
+        prose = [[{'text': 'The regional project aims to accelerate local cultivar development.',
+                   'source_key': 'us'}]]
+        with self.assertRaisesRegex(ValueError, 'weekly_citation_source_mismatch'):
+            validate_citation_alignment(prose, sources)
+        prose[0][0]['source_key'] = 'ca'
+        validate_citation_alignment(prose, sources)
+
+    def test_approved_source_survives_public_slug_only_with_reachable_legacy_link(self):
+        generated = self.generate()
+        approval = {'release_id': self.release['release_id'],
+                    'human_approved_at': '2026-10-12T00:00:00Z'}
+        for kind in ('markets', 'research'):
+            approval[kind] = copy.deepcopy(generated[kind])
+            approval[kind]['human_approved'] = True
+        path = self.root/'data/weekly-overviews/approved'
+        path.mkdir(parents=True)
+        (path/(self.release['release_id']+'.json')).write_text(json.dumps(approval))
+        public_news, public_research = copy.deepcopy(self.news), copy.deepcopy(self.papers)
+        for row in public_news + public_research:
+            old_path = row['path']
+            row['path'] = old_path.replace('/index.html', '-readable/index.html')
+            row['legacy_paths'] = [old_path]
+        overview, _ = prepare_weekly_overviews(public_news, public_research,
+                                                self.release, self.root,
+                                                source_news=self.news,
+                                                source_research=self.papers)
+        self.assertEqual(overview['editorial_status'], 'ready')
+        validate_public_weekly_sources(overview, self.news, self.papers,
+                                       public_news, public_research)
+        public_news[0]['legacy_paths'] = []
+        with self.assertRaisesRegex(ValueError, 'weekly_public_link_missing'):
+            validate_public_weekly_sources(overview, self.news, self.papers,
+                                           public_news, public_research)
+        public_news[0]['legacy_paths'] = [self.news[0]['path']]
+        public_news[0]['deck'] = 'A substantively different claim'
+        with self.assertRaisesRegex(ValueError, 'weekly_public_source_changed'):
+            validate_public_weekly_sources(overview, self.news, self.papers,
+                                           public_news, public_research)
 
 
 if __name__ == '__main__':
