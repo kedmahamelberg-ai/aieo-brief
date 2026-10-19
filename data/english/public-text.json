@@ -5337,6 +5337,302 @@
       },
       "output_sha256": "1d348f198877713ccdc4241511fcd025423863ba6409891557d5da90101a64a2",
       "policy": "brief-english-display-v1"
+    },
+    "3569d59c7395d60958a4fbe0b647055b90d2ba24f5f53fb5080da9daaffcf484": {
+      "english": {
+        "0": "During a Chongqing youth talent event, authorities released the AI industry supply-and-demand list to map supplier capabilities and demand needs, and to illustrate concrete investment and collaboration plans from several companies.",
+        "1": "Chongqing News",
+        "2": "Chongqing News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "23fc50513e2ae6144e02982a320fa4109a2ca5e2758703b4b4bbf40b774905fd",
+      "policy": "brief-english-display-v1"
+    },
+    "1c66d55096d12c83fc56ab7626fb1c4cb00fefaa58207ad491e3f2fb011deb27": {
+      "english": {
+        "0": "The China Artificial Intelligence Innovation Index 2026 was released at the 2026 Donghu Forum, using data from 2020–2025 across 31 provinces. Guangdong and Beijing lead, while Hubei ranks among the upper tier in multiple dimensions, including education indicators and publication output. The report emphasizes regional variation and cautions against assuming uniform national progress.",
+        "1": "China Science and Technology Network",
+        "2": "China Science and Technology Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f0fc60d31032d9f65b92310182190c373b2246e89f2527ca41229f4844708fbc",
+      "policy": "brief-english-display-v1"
+    },
+    "4e55b8649411f7f6d6052760b67958c8ed4d2398f63aeb37d32e3057ee593676": {
+      "english": {
+        "0": "East Money",
+        "1": "East Money"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0e3e34f964c28ea68f672680e08d0d112c35612d0d5bc43d5cdc8a851d5e56aa",
+      "policy": "brief-english-display-v1"
+    },
+    "582c1bec36afdeb927cef1f3bebd27e9b505509d0f4abe9693bbdf3ed18ddc1c": {
+      "english": {
+        "0": "China Daily Network",
+        "1": "China Daily Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d9b11f349059d4810db46ee721f2f038deca48dc3395906700313a8f096ee149",
+      "policy": "brief-english-display-v1"
+    },
+    "198e5e215754d9b3e007e2bb63553c3da28aaebc6c5151fbbe6a4b32cecf19e8": {
+      "english": {
+        "0": "Reporting from the National Solidarity Fund for Autonomy (CNSA). Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "16382eb97c11154d81f472838202c98bc808f37cf28032cecbf69d2d7a1f0160",
+      "policy": "brief-english-display-v1"
+    },
+    "8dd6b8a9ba62c428b8963d924c2d8cd9b53891c7a6d4aec9f1419bf40807f4bb": {
+      "english": {
+        "0": "China Communist Party News Network",
+        "1": "China Communist Party News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "69ce511353004f509e1cadadacb28a6741f80415cb3c36f8fb7352ab30d44018",
+      "policy": "brief-english-display-v1"
+    },
+    "25b2555dd506eac2ea0fdea708fa66ef96b00b4bf766600f1a1802fbe688fa19": {
+      "english": {
+        "0": "7 large-scale Chuiyu models, forming the “strong backbone” of Shandong’s AI.",
+        "1": "7 large-scale Chuiyu models, forming the “strong backbone” of Shandong’s AI.",
+        "2": "Reporting from Xinhua Net Client. Open the source for the article.",
+        "3": "Xinhua Net Client",
+        "4": "7 large-scale Chuiyu models, forming the “strong backbone” of Shandong’s AI.",
+        "5": "Xinhua Net Client"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f009bc54271f691ee0a7bbf676f56865e6f8e9fd0d5b68f0d47e986e23d2823d",
+      "policy": "brief-english-display-v1"
+    },
+    "64e91dba7ca50af13518d5bb0eec9dbcb06a6ddce871facc8bcb517cd6bdf33e": {
+      "english": {
+        "0": "Shanghai Municipal People's Government",
+        "1": "Shanghai Municipal People's Government"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "dd1517f291051d0921650d5d9a0c3c98e44fcd48046958488e0428fe8a40bc08",
+      "policy": "brief-english-display-v1"
+    },
+    "cfbb3bb010efd921fc15153049c5c85bf7fbf9d05bf2cb481138a7e7af696654": {
+      "english": {
+        "0": "What AI is currently doing is only planting new flowers in the garden of mathematics, or, more precisely, just a brick on the building of the mathematics edifice, and it is still far from the mathematical edifice behind it being completed.",
+        "1": "ScienceNet, News",
+        "2": "ScienceNet, News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bfd3e9912cc50bdb603e926908cd6bf3999d2c5516a8a5ad3f4642b3eda3479d",
+      "policy": "brief-english-display-v1"
+    },
+    "a528b45da2bae5df7444823314286ccdf99e915f79833dd98b9b9e6f84506394": {
+      "english": {
+        "0": "21 Caijing",
+        "1": "21 Caijing"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "75020840bae29ef46dda458261f69973084dc20859443d8324ca6c1c225a7207",
+      "policy": "brief-english-display-v1"
+    },
+    "130341123a059dc93fdd6ac1778c8ca5df34f1930a572c56cb27f0d963fbd893": {
+      "english": {
+        "0": "Journalists report China, the ASEAN AI Application Cooperation Center in Nanning has launched AI innovation cooperation, signing 61 domestic projects, releasing 54 opportunity lists, and 84 ASEAN needs, demonstrating the expansion of regional cooperation. Repeated surveys and filming show the center is promoting ASEAN scenario deployment through research and development, integration, and application pathways, while there are challenges in increasing concentration and in the deployment of applications.",
+        "1": "The center's expansion provides a public service portal and an operational hub for regional AI applications, promoting regional cooperation, but is limited by project density, the speed of scenario deployment, and the complexities of cross-border collaboration. Benefits and limitations coexist; attention must be paid to whether people can benefit equally and to the capacity boundaries of operators.",
+        "2": "Nanning's AI Application Cooperation Center is depicted as an important platform for deepening regional AI cooperation, centering on national needs, regional capabilities, and ASEAN expectations, and is moving toward more 'AI+' opportunities and ASEAN-scenario alignment. This brings potential job opportunities and service convenience, but also exposes challenges in early deployment, cross-border collaboration, and funding empowerment. As the number of projects increases, the center emphasizes its roles as a public service portal, a showcase window, and an operational hub, while also needing to beware of over-centralization, deployment speeds lagging behind expansion, and uncertainties arising from differences in cross-regional regulations and markets.",
+        "3": "Xinhua Net",
+        "4": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c11aa6083a9540f1abc04b46e98e9dda82a598877c6e44edcc556e4ba1f90241",
+      "policy": "brief-english-display-v1"
+    },
+    "2d471f89c9e1c99084181713f76d28a4bf981f9ab82d7e0616e77ec357211ae5": {
+      "english": {
+        "0": "Qiushi",
+        "1": "Qiushi"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d1f35e33219fc0d77c111f2d4effb97bfec0d7220ec2f155a01cb3fa01e835a1",
+      "policy": "brief-english-display-v1"
+    },
+    "27b933219f7c5041287080b4ed4500aebea02d2f930cf63e34fd62d87c2f5b13": {
+      "english": {
+        "0": "Reporting from Le Monde Informatique. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "480c286db47a150d08adb8cd0bfb599669c62f2ad71d6f6f491b0d240aea1e9b",
+      "policy": "brief-english-display-v1"
+    },
+    "cf372c13147ade070490653c72c64d5d5d34a1d2f5c8021bcbd7a8a3e402ab3f": {
+      "english": {
+        "0": "Hungarian",
+        "1": "Composer",
+        "2": "The Carmel Quartet"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4e50a84101154075e29bb24619b58575903e2c69086c901280ec3835e8833051",
+      "policy": "brief-english-display-v1"
+    },
+    "716ec985b3feade1b3714d1862d5aaac15d205ef1a0add1bd37a1f3fba4ce9d5": {
+      "english": {
+        "0": "Portrait of Charlotte and Sarah Carteret-Hardy",
+        "1": "Portrait of Charlotte and Sarah Carteret-Hardy",
+        "2": "CC0 image",
+        "3": "Portrait of Charlotte and Sarah Carteret-Hardy"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "239a8e30c48f809b830a366156f85fa2eaad2bdccc2bd1b296c81997a6fd641a",
+      "policy": "brief-english-display-v1"
     }
   }
 }

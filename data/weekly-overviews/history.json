@@ -3,6 +3,133 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W42",
+      "period_start": "2026-10-12",
+      "period_end": "2026-10-18",
+      "display_date": "2026-10-18",
+      "path": "week-from-above/2026-w42/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 28,
+            "topic": "Work And Skills",
+            "sentence": "China: selected reporting leaned toward work and skills, with “UN Warns AI, Green Energy, and Economic Transformation May Leave Vulnerable…” as one visible signal.",
+            "story": {
+              "headline": "UN Warns AI, Green Energy, and Economic Transformation May Leave Vulnerable Groups Behind",
+              "path": "story/un-warns-ai-green-energy-economic-groups-behind/index.html",
+              "publisher": "UN News",
+              "source_url": "https://news.un.org/zh/story/2026/10/1143006"
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 17,
+            "topic": "Rules And Rights",
+            "sentence": "United States: selected reporting leaned toward rules and rights, with “Columbia Law's AI Initiative aims to expand legal training with cautious…” as one visible signal.",
+            "story": {
+              "headline": "Columbia Law's AI Initiative aims to expand legal training with cautious, responsible use of AI",
+              "path": "story/columbia-law-s-ai-initiative-aims-use-ai/index.html",
+              "publisher": "Columbia Law School",
+              "source_url": "https://www.law.columbia.edu/news/archive/ai-cls-columbia-law-schools-artificial-intelligence-initiative"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 15,
+            "topic": "Business And Investment",
+            "sentence": "United Kingdom: selected reporting leaned toward business and investment, with “Starling, NVIDIA, and Civo claim sovereign-cloud AI plan improves control and…” as one visible signal.",
+            "story": {
+              "headline": "Starling, NVIDIA, and Civo claim sovereign-cloud AI plan improves control and resilience, with limits",
+              "path": "story/starling-nvidia-civo-claim-sovereign-cloud-ai-resilience-limits/index.html",
+              "publisher": "FinTech Global",
+              "source_url": "https://fintech.global/2026/10/15/starling-turns-to-uk-sovereign-cloud-to-develop-banking-ai-model"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 17,
+            "topic": "Everyday Use",
+            "sentence": "France: the discovery stream centred most often on everyday use, including “Parliamentary Roundtable on AI and Plagiarism Highlights Nuances and Limits, Experts….”",
+            "story": {
+              "headline": "Parliamentary Roundtable on AI and Plagiarism Highlights Nuances and Limits, Experts Warn",
+              "path": "story/parliamentary-roundtable-ai-plagiarism-highlights-nuances-experts-warn/index.html",
+              "publisher": "LCP-Assemblée nationale",
+              "source_url": "https://lcp.fr/programmes/la-seance-est-ouverte/intelligence-artificielle-et-plagiat-table-ronde-a-l-assemblee"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 25,
+            "topic": "Work And Skills",
+            "sentence": "Canada: the discovery stream centred most often on work and skills, including “225 AI Researchers Demand Immediate Changes to Prevent Major Security Incidents.”",
+            "story": {
+              "headline": "225 AI Researchers Demand Immediate Changes to Prevent Major Security Incidents",
+              "path": "story/225-ai-researchers-demand-immediate-changes-security-incidents/index.html",
+              "publisher": "Le Devoir",
+              "source_url": "https://www.ledevoir.com/economie/techno/1016384/225-chercheurs-ia-reclament-changements-immediats-prevenir-incidents-majeurs"
+            }
+          }
+        ],
+        "active_market_count": 5,
+        "editorial_version": "kedma-weekly-v5",
+        "status": "pending",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "generation_pending",
+        "input_hash": "73633124077b450d853f77bb49f324d5aac66ff8688f3fde0d7cdd8e9dca70bb",
+        "attempts": 0
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "The weekly research review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [],
+        "paper_count": 19,
+        "affiliation_verified_count": 1,
+        "editorial_version": "kedma-weekly-v5",
+        "status": "pending",
+        "prose": [],
+        "pending_reason": "generation_pending",
+        "input_hash": "ef69427383b1e806ea0e344b0f852947cba52a6f885275f595384673c90ea322",
+        "attempts": 0
+      },
+      "editorial_version": "kedma-weekly-v5",
+      "editorial_status": "pending",
+      "content_sha256": "e7399a3fedd56dcf34c91f6a8f43a6c15e3140b3e2e36f67009ef9cc11cf055c"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W41",
       "period_start": "2026-10-05",
       "period_end": "2026-10-11",
