@@ -140,7 +140,7 @@ class WeeklyEditorialTests(unittest.TestCase):
 
     def test_rejected_review_is_not_published_and_retry_is_bounded(self):
         def reject(prompt, **kwargs):
-            return dict.fromkeys(CHECKS,False) if kwargs['stage']=='weekly_review' else self.call(prompt,**kwargs)
+            return dict.fromkeys(CHECKS,False) if kwargs['stage'] in ('weekly_review','weekly_review_repeat') else self.call(prompt,**kwargs)
         previous=[]
         for expected in range(1,4):
             result=self.generate(previous,call=reject)
@@ -151,6 +151,21 @@ class WeeklyEditorialTests(unittest.TestCase):
         fourth=self.generate(previous,call=lambda *a,**k:self.fail('Retry cap exceeded'))
         self.assertEqual(fourth['markets']['pending_reason'],'review_needs_attention')
 
+    def test_failed_independent_review_requires_a_new_checked_revision(self):
+        attempts = []
+        def correct(prompt, **kwargs):
+            attempts.append(kwargs['stage'])
+            if kwargs['stage'] == 'weekly_review':
+                return {name: name != 'grounded' for name in CHECKS}
+            if kwargs['stage'] == 'weekly_review_repeat':
+                return dict.fromkeys(CHECKS, True)
+            return self.call(prompt, **kwargs)
+        result = self.generate(call=correct)
+        self.assertEqual(result['editorial_status'], 'ready')
+        self.assertEqual(attempts.count('weekly_review_repair'), 2)
+        self.assertEqual(attempts.count('weekly_review_repeat'), 2)
+        self.assertTrue(all(result[k]['review_checks']['grounded'] for k in ('markets','research')))
+
     def test_new_format_revision_retries_an_exhausted_older_draft(self):
         """A changed editorial brief must supersede a prior retry cap.
 
@@ -159,7 +174,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         need a fresh checked draft rather than the earlier placeholder.
         """
         def reject(prompt, **kwargs):
-            return dict.fromkeys(CHECKS, False) if kwargs['stage'] == 'weekly_review' else self.call(prompt, **kwargs)
+            return dict.fromkeys(CHECKS, False) if kwargs['stage'] in ('weekly_review','weekly_review_repeat') else self.call(prompt, **kwargs)
 
         previous = []
         for _ in range(3):

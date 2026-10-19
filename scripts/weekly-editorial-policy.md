@@ -23,20 +23,28 @@ remain visible and the image is shown without cropping. Used files, source URLs
 and artwork identities are excluded so duplicate catalog records cannot repeat
 an illustration. Extend the verified art library if the unused pool runs out.
 
-The regular publication build runs this after validating the Observatory export
-and loading the Brief summaries. The existing Follow Observatory Editions workflow
-starts publication after the news-writing handoff. Its hourly check also retries
-pending weekly checks without rerunning the whole news-writing job. Daily research
-publication can supply missing papers. No additional scheduled service is required.
+The Monday Prepare Weekly Brief Review workflow uses the latest validated
+Observatory release and Brief summaries to make a private draft artifact. It
+also runs after a manually dispatched Observatory handoff or when dispatched
+directly. It emails the draft to the owner's configured private address. When
+either section is pending, the email explains why and offers no approval action.
+The public build renders only editions with an owner-approved file in
+data/weekly-overviews/approved/; it cannot generate or publish new prose.
 
-Each section uses at most one draft and one independent review per attempt, within
-the existing shared AI job spending cap. Three attempts per unchanged input are
-allowed. An incomplete source set, failed review or depleted image pool produces
-a clearly labelled pending section without an author byline. GitHub warns when
-manual attention is needed. A deliberate retry after fixing a transient problem
-can remove the pending section's attempts and input_hash fields from
-data/weekly-overviews/history.json and rerun publication. Do not edit ready prose
-or source provenance to bypass checks.
+When both sections pass, GitHub's weekly-editorial environment waits for a
+review by kedmahamelberg-ai. The owner can approve or reject with a correction
+comment on the workflow run. The approval job verifies GitHub's review history,
+the exact draft digest, both editorial checks, and the current source hashes.
+Only then may the scheduled publisher commit that reviewed edition and run the
+public build. Rejecting the review leaves the draft unpublished. A revision
+requires another review run and another approval.
+
+Each section may use one structural repair and one revision after a failed
+independent check, always followed by a fresh independent check and within the
+existing shared AI job spending cap. An incomplete source set, failed review or
+depleted image pool produces a clearly labelled pending section without an
+author byline. GitHub warns when manual attention is needed. Do not edit ready
+prose or source provenance to bypass checks.
 
 Approved sections are cached with hashes of their selected public sources.
 Daily ordering and rebuilds preserve the prose and pictures. Changes or withdrawal
