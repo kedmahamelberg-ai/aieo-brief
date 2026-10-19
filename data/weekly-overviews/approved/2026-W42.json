@@ -1,0 +1,359 @@
+{
+  "release_id": "2026-W42",
+  "human_approved_at": "2026-10-19T19:55:36.961087+00:00",
+  "approved_by": "kedmahamelberg-ai",
+  "markets": {
+    "kind": "markets",
+    "eyebrow": "THE WEEK FROM ABOVE",
+    "title": "A Week of AI Reflections on Work and Trust",
+    "deck": "A parent-psychoanalyst notes that a curious child can stay engaged when an AI answers questions, but missing friction can blunt the lesson of not knowing. What I notice is how the week threads together small questions from different fields into a common theme of careful use and human guidance.",
+    "summary": "A parent-psychoanalyst notes that a curious child can stay engaged when an AI answers questions, but missing friction can blunt the lesson of not knowing. What I notice is how the week threads together small questions from different fields into a common theme of careful use and human guidance. The grant for Eastern Canada shows AI may speed crop research, yet regional focus reminds us that results may not travel far from the field. The BBC report frames translation as a helpful starting point where human oversight remains essential to preserve meaning and safety. The parliamentary session underscores that discussions on editing and plagiarism are about governance and responsibility rather than fixed rules. Microsoft outlines Decision-1 as a probability tool for routing and checks, but experts urge caution and ongoing verification before wide reliance.",
+    "scope_note": "Five selected stories from five discovery markets.",
+    "word_count": 150,
+    "reading_minutes": 1,
+    "image_path": "assets/culture/68bfbd537d24650e53593499.jpg",
+    "image_alt": "Landscape with the Town on a River and the Cottage between Trees",
+    "image_caption": "Landscape with the Town on a River and the Cottage between Trees",
+    "image_credit": "Hanns Lautensack (German, 1524–1566) · Cleveland Museum of Art",
+    "image_source_url": "https://clevelandart.org/art/1938.386",
+    "image_rights": "CC0 image",
+    "entries": [
+      {
+        "code": "US",
+        "name": "United States",
+        "topic": "Work & skills",
+        "story": {
+          "path": "story/development-0982f395-8dfc-4295-9854-f397d9d37376/index.html",
+          "headline": "What My Son Learn From AI: Curious Minds, Quick Answers, and Cautions",
+          "publisher": "Greater Good: The Science of a Meaningful Life"
+        }
+      },
+      {
+        "code": "CA",
+        "name": "Canada",
+        "topic": "Business & investment",
+        "story": {
+          "path": "story/development-066d286a-e716-4813-8ca9-f2d8de58219f/index.html",
+          "headline": "Canada funds AI-driven cereal crop research at Céréla inc., with regional limits",
+          "publisher": "Radio-Canada"
+        }
+      },
+      {
+        "code": "CN",
+        "name": "China",
+        "topic": "Culture & creativity",
+        "story": {
+          "path": "story/development-06dae59c-0fc5-48f8-8628-1871fc4d4857/index.html",
+          "headline": "BBC Finds AI Translation Advancing, Yet Humans Still Essential, With Notable Limits",
+          "publisher": "BBC"
+        }
+      },
+      {
+        "code": "FR",
+        "name": "France",
+        "topic": "Culture & creativity",
+        "story": {
+          "path": "story/development-0842e71a-cb28-4f40-b8d8-0dc0362b1321/index.html",
+          "headline": "Parliamentary Roundtable on AI and Plagiarism Highlights Nuances and Limits, Experts Warn",
+          "publisher": "LCP-Assemblée nationale"
+        }
+      },
+      {
+        "code": "GB",
+        "name": "United Kingdom",
+        "topic": "Business & investment",
+        "story": {
+          "path": "story/development-0e56ea78-cc10-4f8d-8376-8347e734ff11/index.html",
+          "headline": "Microsoft's Decision-1: a probability-based AI for routing and verification, with caveats",
+          "publisher": "InfoWorld"
+        }
+      }
+    ],
+    "active_market_count": 5,
+    "editorial_version": "kedma-weekly-v10",
+    "status": "ready",
+    "author": "Kedma Hamelberg",
+    "prose": [
+      [
+        {
+          "text": "A parent-psychoanalyst notes that a curious child can stay engaged when an AI answers questions, but missing friction can blunt the lesson of not knowing.",
+          "source_key": "event:0982f395-8dfc-4295-9854-f397d9d37376",
+          "path": "story/development-0982f395-8dfc-4295-9854-f397d9d37376/index.html"
+        },
+        {
+          "text": "What I notice is how the week threads together small questions from different fields into a common theme of careful use and human guidance.",
+          "source_key": "",
+          "path": ""
+        }
+      ],
+      [
+        {
+          "text": "The grant for Eastern Canada shows AI may speed crop research, yet regional focus reminds us that results may not travel far from the field.",
+          "source_key": "event:066d286a-e716-4813-8ca9-f2d8de58219f",
+          "path": "story/development-066d286a-e716-4813-8ca9-f2d8de58219f/index.html"
+        },
+        {
+          "text": "The BBC report frames translation as a helpful starting point where human oversight remains essential to preserve meaning and safety.",
+          "source_key": "event:06dae59c-0fc5-48f8-8628-1871fc4d4857",
+          "path": "story/development-06dae59c-0fc5-48f8-8628-1871fc4d4857/index.html"
+        }
+      ],
+      [
+        {
+          "text": "The parliamentary session underscores that discussions on editing and plagiarism are about governance and responsibility rather than fixed rules.",
+          "source_key": "event:0842e71a-cb28-4f40-b8d8-0dc0362b1321",
+          "path": "story/development-0842e71a-cb28-4f40-b8d8-0dc0362b1321/index.html"
+        },
+        {
+          "text": "Microsoft outlines Decision-1 as a probability tool for routing and checks, but experts urge caution and ongoing verification before wide reliance.",
+          "source_key": "event:0e56ea78-cc10-4f8d-8376-8347e734ff11",
+          "path": "story/development-0e56ea78-cc10-4f8d-8376-8347e734ff11/index.html"
+        }
+      ]
+    ],
+    "source_hashes": {
+      "event:0982f395-8dfc-4295-9854-f397d9d37376": "2df8ed772a140eb16b667357394277502e25044f537bdfd66767300858b31688",
+      "event:066d286a-e716-4813-8ca9-f2d8de58219f": "dffe813673b85613f5f2963fcc416b7940e4840c3a433cac7f469970b073f9d6",
+      "event:06dae59c-0fc5-48f8-8628-1871fc4d4857": "0a4bb07a601ba9bff92deecb9c8fa64209b723adda08c14634d94747d248cb79",
+      "event:0842e71a-cb28-4f40-b8d8-0dc0362b1321": "bbb5d0d88ce84bdbdd4adff95a480d339381f8dff230cfe1cbd1f4097df3a4ec",
+      "event:0e56ea78-cc10-4f8d-8376-8347e734ff11": "004a859fec364d523ef5156fab702fe9f42f0d60bb5aba35517e466b35262078"
+    },
+    "image_key": "culture:68bfbd537d24650e53593499",
+    "image_work_key": "b16a291dfa52bed7973bf57a6394cb9906632e562ebed86522afec8b518b4844",
+    "image_reason": "The landscape scene mirrors a careful journey through questions and checks across a quiet town river valley.",
+    "review_checks": {
+      "grounded": true,
+      "clear_high_school_language": true,
+      "coherent_prose": true,
+      "meaningful_connection": true,
+      "source_limits_preserved": true,
+      "no_invented_personal_experience": true,
+      "image_metaphor_supported": true
+    },
+    "human_approved": true
+  },
+  "research": {
+    "kind": "research",
+    "eyebrow": "THE RESEARCH COMPASS",
+    "title": "A Gentle Look at Long Horizon Tasks and Quality Signals",
+    "deck": "What I notice is a careful thread linking denser rewards and progress across long horizon tasks. The dense rewards study shows that such signals can speed up learning in some domains, but gains vary with model size and task; early results indicate bigger models benefit more, yet performance still trails frontier models when tasks require alignment and careful checks. I observe that the evidence is cautious, context dependent, and explains differences across settings.",
+    "summary": "What I notice is a careful thread linking denser rewards and progress across long horizon tasks. The dense rewards study shows that such signals can speed up learning in some domains, but gains vary with model size and task; early results indicate bigger models benefit more, yet performance still trails frontier models when tasks require alignment and careful checks. I observe that the evidence is cautious, context dependent, and explains differences across settings. Another thread appears in the quality aware pretraining study. Episode level tagging sometimes lifts performance, but results depend on the task and the model training steps. The lesson is not simply more data, but smarter labeling and testing within budget. Practically, you might start with episode based quality tagging and measure impact within your own tasks, keeping pilots small and criteria clear. What remains true across both reports is the need for careful evaluation and comparison.",
+    "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
+    "word_count": 174,
+    "reading_minutes": 1,
+    "image_path": "assets/culture/8eea39af449d45a754850845.jpg",
+    "image_alt": "Pastoral Landscape with Ruins and a Ford",
+    "image_caption": "Pastoral Landscape with Ruins and a Ford",
+    "image_credit": "Gerhardt Janssen (Dutch, 1636–1725) · Cleveland Museum of Art",
+    "image_source_url": "https://clevelandart.org/art/2022.51",
+    "image_rights": "CC0 image",
+    "papers": [
+      {
+        "key": "paper:214dec5532c4cb3bfe817fe3",
+        "doi": "",
+        "arxiv_id": "2610.18868v1",
+        "original_headline": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+        "url": "https://arxiv.org/abs/2610.18868v1",
+        "date": "2026-10-13",
+        "authors": [
+          "Wenbo Hu",
+          "Shraman Pramanick",
+          "Krishna Kumar Singh",
+          "Nanyun Peng",
+          "Kai-Wei Chang",
+          "Yong Jae Lee"
+        ],
+        "institutions": [],
+        "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+        "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
+        "publisher": "arXiv",
+        "source": "arxiv",
+        "research_label": "Preprint",
+        "evidence_scope": "paper_text",
+        "access": "Open paper",
+        "journal_reference": "",
+        "metadata_sha256": "7f0b3095bde1304fdc6046010461df6e73abb8e84a7197b80344b88edcf74e2e",
+        "pdf_url": "https://arxiv.org/pdf/2610.18868v1",
+        "has_editorial": true,
+        "headline": "Dense rewards help long-horizon training, but gains vary by task",
+        "deck": "A new dataset and training recipe aim to make long-horizon AI tasks learnable, yet improvements differ across models and tasks.",
+        "what_happened": "Researchers created a large set of 1,170 long-horizon task environments that use dense progress rewards, plus a training method. Open models trained with these signals show gains on some long tasks and better generalization to other benchmarks, but overall performance trails leading models and varies by domain.",
+        "why_it_matters": "Dense progress rewards can speed up learning for complex tasks, but results depend on model size, domain, and setup. Practitioners should temper expectations and test case by case.",
+        "body_paragraphs": [
+          "The work builds a big library of long tasks across software, data, math and security, with progress checkable at many steps, not just at the end.",
+          "Early results show bigger models gain more from dense rewards, but overall performance still trails frontier models and depends on careful domain alignment and quality checks."
+        ],
+        "limitation": "Results come from synthetic, self-contained tasks; real-world gains depend on how similar tasks are to actual work and on model capabilities.",
+        "summary_basis": "Summary of the paper",
+        "reading_minutes": 1,
+        "claim_status": "study",
+        "summary_status": "ready",
+        "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+        "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "research_reading_version": "paper-practitioner-v1",
+        "full_text_status": "read",
+        "full_text_retry_after": "2026-10-21",
+        "paper_pages": 39,
+        "paper_text_sha256": "b2120754e0cd0fa95a60272afb3d4278be9b6d6abc2f568cd29a5c60a2a11d42",
+        "kind": "research",
+        "slug": "paper-214dec5532c4cb3bfe817fe3",
+        "path": "research/paper-214dec5532c4cb3bfe817fe3/index.html",
+        "source_count": 1,
+        "sources": [
+          {
+            "publisher": "arXiv",
+            "headline": "Tev: Scaling Long-Horizon Agentic Environments with Dense Progress Rewards",
+            "url": "https://arxiv.org/abs/2610.18868v1",
+            "date": "2026-10-13",
+            "language": "en"
+          }
+        ],
+        "display_date": "13 Oct 2026",
+        "markets": [],
+        "market_label": "Research",
+        "topic": "research",
+        "topic_label": "Science & research",
+        "human_direction": "unresolved",
+        "ai_direction": "unresolved",
+        "for_humans": "",
+        "for_ai": "",
+        "human_label": "",
+        "ai_label": "",
+        "evidence_complete": false,
+        "display_scope": "",
+        "edition": "2026-10",
+        "label": "Preprint"
+      },
+      {
+        "key": "paper:7ce2a9c17eb88d26060efb61",
+        "doi": "",
+        "arxiv_id": "2610.18869v1",
+        "original_headline": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
+        "url": "https://arxiv.org/abs/2610.18869v1",
+        "date": "2026-10-13",
+        "authors": [
+          "Mingxuan Yan",
+          "Litian Gong",
+          "Dihong Huang",
+          "Zhixu Li",
+          "Tianyu Zhang",
+          "Wenqian Zhang",
+          "Hefeifei Jiang",
+          "Peihao Li",
+          "Jian Zhang",
+          "Mengfei Zhao",
+          "Yikai Tang",
+          "Hai Zhai",
+          "Zehao Wang",
+          "Ruijian Liang",
+          "Yanjia Huang",
+          "Lin Shao",
+          "Changliu Liu",
+          "Kaiyu Hang",
+          "Zhiwen Fan",
+          "Masayoshi Tomizuka",
+          "Jianfei Yang",
+          "Jiachen Li"
+        ],
+        "institutions": [],
+        "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+        "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
+        "publisher": "arXiv",
+        "source": "arxiv",
+        "research_label": "Preprint",
+        "evidence_scope": "paper_text",
+        "access": "Open paper",
+        "journal_reference": "",
+        "metadata_sha256": "d3e0b28d5972f50bad21cb01fb7445b2c8bc8d355203f20ac8d318d978db6467",
+        "pdf_url": "https://arxiv.org/pdf/2610.18869v1",
+        "has_editorial": true,
+        "headline": "Focusing on episode quality improves some AI learning results more than others",
+        "deck": "A controlled study tests how labeling demonstrations by quality affects learning across simulations and real tasks, showing modest to notable gains depending on method and context.",
+        "what_happened": "Researchers tested whether quality signals from demonstrations change how AI learns. They used 5,000 simulated and 19,250 pretraining demonstrations across three learning models, finding that episode-level quality often boosts average success, but results vary significantly by task and model training steps.",
+        "why_it_matters": "For managers, choosing how to tag and use quality signals matters more than sheer data volume; a simple change can raise performance in some tasks but not others.",
+        "body_paragraphs": [
+          "Quality signals helped some policies improve, especially when training emphasized whole episodes rather than individual moments. But gains depended on the reward definition and model used.",
+          "Practically, you might start with episode-based quality tagging and test its effect within your own tasks and data budgets. Improve it with clear criteria and small pilots first."
+        ],
+        "limitation": "Results depend on the task set, model type, and how quality labels are applied; not guaranteed to generalize to other tasks.",
+        "summary_basis": "Summary of the paper",
+        "reading_minutes": 1,
+        "claim_status": "study",
+        "summary_status": "ready",
+        "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+        "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "research_reading_version": "paper-practitioner-v1",
+        "full_text_status": "read",
+        "full_text_retry_after": "2026-10-21",
+        "paper_pages": 9,
+        "paper_text_sha256": "7910f8fa77cf1c5a249aec2f9c3ba431ce58e4c021e2456df2abef87dd1da3dd",
+        "kind": "research",
+        "slug": "paper-7ce2a9c17eb88d26060efb61",
+        "path": "research/paper-7ce2a9c17eb88d26060efb61/index.html",
+        "source_count": 1,
+        "sources": [
+          {
+            "publisher": "arXiv",
+            "headline": "What Matters in Quality-Aware VLA Pretraining: A Benchmark and Empirical Study",
+            "url": "https://arxiv.org/abs/2610.18869v1",
+            "date": "2026-10-13",
+            "language": "en"
+          }
+        ],
+        "display_date": "13 Oct 2026",
+        "markets": [],
+        "market_label": "Research",
+        "topic": "research",
+        "topic_label": "Science & research",
+        "human_direction": "unresolved",
+        "ai_direction": "unresolved",
+        "for_humans": "",
+        "for_ai": "",
+        "human_label": "",
+        "ai_label": "",
+        "evidence_complete": false,
+        "display_scope": "",
+        "edition": "2026-10",
+        "label": "Preprint"
+      }
+    ],
+    "paper_count": 25,
+    "affiliation_verified_count": 1,
+    "editorial_version": "kedma-weekly-v10",
+    "status": "ready",
+    "author": "Kedma Hamelberg",
+    "prose": [
+      [
+        {
+          "text": "What I notice is a careful thread linking denser rewards and progress across long horizon tasks. The dense rewards study shows that such signals can speed up learning in some domains, but gains vary with model size and task; early results indicate bigger models benefit more, yet performance still trails frontier models when tasks require alignment and careful checks. I observe that the evidence is cautious, context dependent, and explains differences across settings.",
+          "source_key": "paper:214dec5532c4cb3bfe817fe3",
+          "path": "research/paper-214dec5532c4cb3bfe817fe3/index.html"
+        }
+      ],
+      [
+        {
+          "text": "Another thread appears in the quality aware pretraining study. Episode level tagging sometimes lifts performance, but results depend on the task and the model training steps. The lesson is not simply more data, but smarter labeling and testing within budget. Practically, you might start with episode based quality tagging and measure impact within your own tasks, keeping pilots small and criteria clear. What remains true across both reports is the need for careful evaluation and comparison.",
+          "source_key": "paper:7ce2a9c17eb88d26060efb61",
+          "path": "research/paper-7ce2a9c17eb88d26060efb61/index.html"
+        }
+      ]
+    ],
+    "source_hashes": {
+      "paper:214dec5532c4cb3bfe817fe3": "cfa63c43da71b3b12533e59d0c0f91986c49a2ab4e3ac920e10340b0574c284a",
+      "paper:7ce2a9c17eb88d26060efb61": "223ccfa8c92b6d364b470b7e2366b587c4638ae621f58e0cc44c0401b70231a1"
+    },
+    "image_key": "culture:8eea39af449d45a754850845",
+    "image_work_key": "50147fdad234fc25521d325b6d7732b02bd0446735a97a4eeee6346cb0408a13",
+    "image_reason": "A quiet river crossing echoes balance between effort and patience in long horizon learning.",
+    "review_checks": {
+      "grounded": true,
+      "clear_high_school_language": true,
+      "coherent_prose": true,
+      "meaningful_connection": true,
+      "source_limits_preserved": true,
+      "no_invented_personal_experience": true,
+      "image_metaphor_supported": true
+    },
+    "human_approved": true
+  }
+}
