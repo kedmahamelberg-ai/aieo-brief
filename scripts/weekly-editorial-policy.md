@@ -6,9 +6,10 @@ Earlier editions retain their existing presentation.
 
 Both reviews use flowing prose in normal type, credited to Kedma Hamelberg.
 The title, prose and evidence-scope note together must stay below 200 words.
-The prose contains no colon, en dash or em dash. It links directly to the Brief
-posts and ends with one relevant reflective question. The writer must use plain
-English, preserve uncertainty and never invent personal experiences.
+Natural punctuation is allowed. The prose links directly to the Brief posts.
+The writer must use plain English, preserve uncertainty and never invent
+personal experiences. The title, prose and artwork reason use full forms
+instead of contractions; grammatical possessives remain acceptable.
 
 The news review requires five different completed summaries, one per discovery
 market, drawn from the edition week. Markets describe discovery streams, not
