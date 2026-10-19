@@ -223,7 +223,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         recovered = self.generate(previous)
         self.assertEqual(recovered['editorial_status'], 'ready')
         for section in ('markets', 'research'):
-            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v8')
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v9')
             self.assertLessEqual(recovered[section]['word_count'], 200)
 
     def test_old_week_is_not_rewritten_in_new_voice(self):
@@ -261,6 +261,30 @@ class WeeklyEditorialTests(unittest.TestCase):
             self.assertTrue(all(part['path'].startswith(('story/', 'research/'))
                                 for paragraph in result[kind]['prose'] for part in paragraph
                                 if part['source_key']))
+
+    def test_short_artwork_markers_restore_eligible_catalog_choice(self):
+        seen_artworks = []
+        def marked(prompt, **kwargs):
+            if kwargs['stage'] == 'weekly_draft':
+                payload = json.loads(prompt.split('\n')[-1])
+                seen_artworks.append(payload['artworks'])
+            return self.call(prompt, **kwargs)
+        result = self.generate(call=marked)
+        self.assertEqual(result['editorial_status'], 'ready')
+        self.assertEqual(seen_artworks[0][0]['key'], 'artAA')
+        catalog = json.loads((self.root/'data/culture/library-art.json').read_text())
+        eligible_keys = {row['key'] for row in catalog}
+        for kind in ('markets', 'research'):
+            self.assertIn(result[kind]['image_key'], eligible_keys)
+            self.assertNotIn(result[kind]['image_key'], {row['key'] for row in seen_artworks[0]})
+
+    def test_ineligible_artwork_marker_stays_blocked_with_precise_feedback(self):
+        draft = self.call(json.dumps({'sources': [{'key': 'sourceA'}, {'key': 'sourceB'}],
+                                      'artworks': [{'key': 'artAA'}]}), stage='weekly_draft')
+        draft['image_key'] = 'not-an-artwork'
+        with self.assertRaisesRegex(ValueError, 'weekly_image_not_eligible: choose one of artAA'):
+            validate_draft(draft, [{'key': 'sourceA'}, {'key': 'sourceB'}],
+                           [{'key': 'artAA'}])
 
     def test_missing_citation_feedback_names_the_marker(self):
         draft = self.call(json.dumps({'sources': [{'key': 'sourceA'}, {'key': 'sourceB'}],
