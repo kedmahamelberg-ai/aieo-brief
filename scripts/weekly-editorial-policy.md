@@ -6,7 +6,8 @@ Earlier editions retain their existing presentation.
 
 Both reviews use flowing prose in normal type, credited to Kedma Hamelberg.
 The title, prose and evidence-scope note together must stay below 200 words.
-Natural punctuation is allowed. The prose links directly to the Brief posts.
+Natural punctuation is allowed. A clearly named source list after the prose
+links to the Brief posts without making whole paragraphs into links.
 The writer must use plain English, preserve uncertainty and never invent
 personal experiences. The title, prose and artwork reason use full forms
 instead of contractions; grammatical possessives remain acceptable.
@@ -29,7 +30,7 @@ Observatory release and Brief summaries to make a private draft artifact. It
 also runs after a manually dispatched Observatory handoff or when dispatched
 directly. The artifact contains a JSON record for exact approval verification
 and a self-contained HTML preview for reading. The owner email shows the same
-visual cards, selected rights-cleared artwork, full prose, and source links.
+visual cards, selected rights-cleared artwork, full prose, and named source links.
 When either section is pending, the email explains why and offers no approval
 action.
 The public build renders only editions with an owner-approved file in

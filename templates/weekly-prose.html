@@ -3,9 +3,19 @@
 <p class="weekly-byline">By <a href="{{ local('about/index.html') }}">{{ section.author }}</a></p>
 <div class="weekly-prose">
 {% for paragraph in section.prose %}
-<p>{% for part in paragraph %}{% if not loop.first %} {% endif %}{% if part.path %}<a href="{{ local(part.path) }}">{{ part.text }}</a>{% else %}{{ part.text }}{% endif %}{% endfor %}</p>
+<p>{% for part in paragraph %}{% if not loop.first %} {% endif %}{{ part.text }}{% endfor %}</p>
 {% endfor %}
 </div>
+<aside class="weekly-reading" aria-label="Sources for this weekly overview">
+  <h3>{% if section.kind == 'markets' %}Read the reporting{% else %}Read the research{% endif %}</h3>
+  <ul>
+  {% if section.kind == 'markets' %}
+    {% for entry in section.entries %}<li><a href="{{ local(entry.story.path) }}">{{ entry.story.headline or entry.name ~ ' selected story' }} <span aria-hidden="true">↗</span></a>{% if entry.story.publisher %}<small>{{ entry.story.publisher }}</small>{% endif %}</li>{% endfor %}
+  {% else %}
+    {% for paper in section.papers %}<li><a href="{{ local(paper.path) }}">{{ paper.headline or paper.original_headline }} <span aria-hidden="true">↗</span></a>{% if paper.publisher %}<small>{{ paper.publisher }}</small>{% endif %}</li>{% endfor %}
+  {% endif %}
+  </ul>
+</aside>
 <p class="weekly-scope">{{ section.scope_note }}</p>
 {% else %}
 <p>{{ section.deck }}</p>
