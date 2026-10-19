@@ -6,17 +6,25 @@ on:
   workflow_run:
     workflows: ['Follow Observatory Editions']
     types: [completed]
+  schedule:
+    - cron: '15 12 * * 1'
   workflow_dispatch:
 permissions:
   contents: read
+  actions: read
 concurrency:
   group: brief-weekly-review
   cancel-in-progress: false
 jobs:
   prepare:
-    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.event == 'workflow_dispatch')
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main' && github.event.workflow_run.event == 'workflow_dispatch')
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    outputs:
+      ready: ${{ steps.review.outputs.ready }}
+      needs_review: ${{ steps.review.outputs.needs_review }}
+      draft_sha256: ${{ steps.review.outputs.draft_sha256 }}
+      release_id: ${{ steps.review.outputs.release_id }}
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
@@ -33,6 +41,7 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - name: Prepare review-only weekly overview
+        id: review
         run: python scripts/prepare_weekly_review.py
       - name: Keep the review for human approval
         uses: actions/upload-artifact@v4
@@ -40,3 +49,78 @@ jobs:
           name: weekly-review-${{ github.run_id }}
           path: weekly-review-draft.json
           retention-days: 30
+  email:
+    needs: prepare
+    if: needs.prepare.outputs.needs_review == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+      WEEKLY_REVIEW_TO_EMAIL: ${{ secrets.WEEKLY_REVIEW_TO_EMAIL }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: weekly-review-${{ github.run_id }}
+      - name: Email the private draft to its owner
+        env:
+          DRAFT_SHA256: ${{ needs.prepare.outputs.draft_sha256 }}
+        run: python scripts/weekly_review_delivery.py email --sha256 "$DRAFT_SHA256" --run-id "$GITHUB_RUN_ID"
+  approve:
+    needs: [prepare, email]
+    if: needs.prepare.outputs.ready == 'true' && needs.email.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: weekly-editorial
+    env:
+      SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+      SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - uses: actions/download-artifact@v4
+        with:
+          name: weekly-review-${{ github.run_id }}
+      - name: Verify owner approval and current sources
+        env:
+          DRAFT_SHA256: ${{ needs.prepare.outputs.draft_sha256 }}
+        run: python scripts/weekly_review_delivery.py approve --sha256 "$DRAFT_SHA256" --run-id "$GITHUB_RUN_ID"
+      - name: Authorize the approved edition commit
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
+      - name: Preserve the exact approved edition
+        shell: bash
+        env:
+          RELEASE_ID: ${{ needs.prepare.outputs.release_id }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add "data/weekly-overviews/approved/$RELEASE_ID.json"
+          git commit -m "Publish owner-approved weekly overview $RELEASE_ID"
+          git pull --rebase origin main
+          git push origin HEAD:main
+  publish:
+    needs: approve
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/build-brief-preview.yml
+    secrets: inherit
