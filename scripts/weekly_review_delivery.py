@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import base64
 import hashlib
 import html
 import json
@@ -22,6 +23,7 @@ OWNER_LOGIN = "kedmahamelberg-ai"
 OWNER_ID = 209744145
 ENVIRONMENT = "weekly-editorial"
 RELEASE_ID = re.compile(r"202\d-W\d{2}\Z")
+IMAGE_TYPES = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png"}
 
 
 def load_draft(path: Path, expected_sha256: str) -> dict:
@@ -49,10 +51,39 @@ def load_draft(path: Path, expected_sha256: str) -> dict:
     return draft
 
 
-def section_html(section: dict) -> str:
+def section_html(section: dict, kind: str, image_src: str = "") -> str:
+    label = "News" if kind == "markets" else "Research"
+    title = html.escape(str(section.get("title", "")))
+    frame = [
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        'style="margin:0 0 24px;background:#ffffff;border:1px solid #dfe6e5;border-radius:12px">',
+        '<tr><td style="padding:0 0 26px">',
+    ]
+    if image_src:
+        frame.append('<img src="' + html.escape(image_src, quote=True) + '" alt="'
+                     + html.escape(str(section.get("image_alt", "")), quote=True)
+                     + '" width="600" style="display:block;width:100%;height:auto;border:0;'
+                     'border-radius:12px 12px 0 0">')
+        art_url = str(section.get("image_source_url", ""))
+        if not art_url.startswith("https://"):
+            raise ValueError("Weekly review artwork source URL is invalid")
+        frame.append('<p style="margin:12px 28px 0;color:#60747b;font-size:12px;line-height:1.5">'
+                     + '<a style="color:#08727a" href="' + html.escape(art_url, quote=True)
+                     + '">' + html.escape(str(section.get("image_caption", ""))) + '</a> · '
+                     + html.escape(str(section.get("image_credit", ""))) + ' · '
+                     + html.escape(str(section.get("image_rights", ""))) + '</p>')
+    frame.append('<div style="padding:18px 28px 0">'
+                 '<p style="margin:0 0 8px;color:#1a6971;font-size:12px;font-weight:700;'
+                 'letter-spacing:.12em;text-transform:uppercase">' + label + ' · Weekly overview</p>'
+                 '<h2 style="margin:0 0 14px;color:#142d39;font:normal 28px/1.2 Georgia,serif">'
+                 + title + '</h2>')
     if section.get("status") != "ready":
         reason = html.escape(str(section.get("last_error") or section.get("pending_reason") or "source checks pending"))
-        return "<p>This section is awaiting editorial checks (" + reason + ").</p>"
+        frame.append('<p style="margin:0;color:#6d4f2c;line-height:1.6">This section is awaiting '
+                     'editorial checks (' + reason + ').</p>')
+        return "".join(frame) + "</div></td></tr></table>"
+    frame.append('<p style="margin:0 0 18px;color:#60747b;font-size:13px">By '
+                 + html.escape(str(section.get("author", ""))) + '</p>')
     paragraphs = []
     for paragraph in section["prose"]:
         parts = []
@@ -60,40 +91,103 @@ def section_html(section: dict) -> str:
             value = html.escape(part["text"])
             if part["source_key"]:
                 target = "https://brief.hamelberg-ai.com/" + html.escape(part["path"], quote=True)
-                value = '<a href="' + target + '">' + value + "</a>"
+                value = '<a style="color:#08727a;text-decoration:underline" href="' + target + '">' + value + "</a>"
             parts.append(value)
-        paragraphs.append("<p>" + " ".join(parts) + "</p>")
-    return "".join(paragraphs)
+        paragraphs.append('<p style="margin:0 0 16px;color:#243746;font:16px/1.65 Georgia,serif">'
+                          + " ".join(parts) + "</p>")
+    frame.extend(paragraphs)
+    frame.append('<p style="margin:8px 0 0;color:#60747b;font-size:12px;line-height:1.5">'
+                 + html.escape(str(section.get("scope_note", ""))) + '</p>')
+    return "".join(frame) + "</div></td></tr></table>"
 
 
-def email_content(draft: dict, run_url: str) -> dict:
+def review_images(overview: dict, root: Path) -> dict:
+    """Read the exact rights-cleared artwork selected in the checked draft."""
+    result = {}
+    root = root.resolve()
+    for kind in ("markets", "research"):
+        section = overview[kind]
+        if section.get("status") != "ready":
+            continue
+        validate_section(section)
+        relative = Path(str(section["image_path"]))
+        if (relative.is_absolute() or relative.parts[:2] != ("assets", "culture")
+                or ".." in relative.parts or relative.suffix.lower() not in IMAGE_TYPES):
+            raise ValueError("Weekly review artwork path is invalid")
+        path = (root / relative).resolve()
+        if root not in path.parents or not path.is_file():
+            raise ValueError("Weekly review artwork is missing")
+        content = path.read_bytes()
+        if not content or len(content) > 4_000_000:
+            raise ValueError("Weekly review artwork size is invalid")
+        result[kind] = {"filename": path.name,
+                        "content_type": IMAGE_TYPES[relative.suffix.lower()],
+                        "content": base64.b64encode(content).decode("ascii")}
+    return result
+
+
+def email_content(draft: dict, run_url: str, *, root: Path = ROOT,
+                  image_mode: str = "cid") -> dict:
+    if image_mode not in ("cid", "data"):
+        raise ValueError("Unknown weekly review image mode")
     overview = draft["overview"]
     ready = overview["editorial_status"] == "ready"
     status_label = "Ready for your approval" if ready else "Checks still pending"
+    images = review_images(overview, root)
+    attachments = []
     body = [
-        '<main style="max-width:650px;margin:auto;font:16px/1.6 Arial,sans-serif;color:#243746">',
-        "<h1>The Brief weekly review</h1>",
-        "<p><strong>" + html.escape(draft["release_id"]) + " · " + status_label + "</strong></p>",
-        "<p>This unpublished draft covers " + html.escape(draft["period_start"])
-        + " through " + html.escape(draft["period_end"]) + ".</p>",
+        '<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8">'
+        '<meta name="viewport" content="width=device-width,initial-scale=1">'
+        '<title>The Brief weekly review ' + html.escape(draft["release_id"]) + '</title></head>'
+        '<body style="margin:0;background:#edf2f1;color:#243746">'
+        '<div lang="en" dir="ltr" style="padding:24px 12px">'
+        '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" '
+        'style="max-width:640px;margin:auto"><tr><td>',
+        '<p style="margin:0 0 12px;color:#1a6971;font:700 13px Arial,sans-serif;'
+        'letter-spacing:.15em;text-transform:uppercase">The Brief · Owner review</p>',
+        '<h1 style="margin:0 0 8px;color:#142d39;font:normal 36px/1.16 Georgia,serif">'
+        'Your weekly overview</h1>',
+        '<p style="margin:0 0 12px;font:15px/1.5 Arial,sans-serif">'
+        + html.escape(draft["release_id"]) + ' · ' + html.escape(draft["period_start"])
+        + ' to ' + html.escape(draft["period_end"]) + '</p>',
+        '<p style="margin:0 0 24px;color:#1a6971;font:700 13px Arial,sans-serif">'
+        + status_label + ' · Unpublished preview</p>',
     ]
-    for kind, heading in (("markets", "News"), ("research", "Research")):
+    for kind in ("markets", "research"):
         section = overview[kind]
-        body.append("<h2>" + heading + ": " + html.escape(section["title"]) + "</h2>")
-        body.append(section_html(section))
+        image = images.get(kind)
+        image_src = ""
+        if image:
+            if image_mode == "cid":
+                content_id = "brief-weekly-" + kind
+                image_src = "cid:" + content_id
+                attachments.append({**image, "content_id": content_id})
+            else:
+                image_src = "data:" + image["content_type"] + ";base64," + image["content"]
+        body.append(section_html(section, kind, image_src))
     safe_url = html.escape(run_url, quote=True)
     if ready:
-        body.append("<p>Both sections passed the source and editorial checks. GitHub will ask you to approve or reject the protected publication job. A rejection lets you leave correction notes.</p>")
-        for button_label in ("Review and approve on GitHub", "Request corrections on GitHub"):
-            body.append('<p><a style="display:inline-block;padding:12px 18px;background:#183e50;color:white;text-decoration:none" href="'
-                        + safe_url + '">' + button_label + "</a></p>")
+        body.append('<p style="font:15px/1.6 Arial,sans-serif">Both sections passed the source '
+                    'and editorial checks. On GitHub, choose <strong>Approve and deploy</strong> '
+                    'to publish this exact draft, or <strong>Reject</strong> and enter correction notes.</p>')
+        body.append('<p><a style="display:inline-block;padding:13px 20px;background:#183e50;'
+                    'border-radius:6px;color:#fff;font:700 14px Arial,sans-serif;text-decoration:none" '
+                    'href="' + safe_url + '">Review and approve on GitHub</a> '
+                    '<a style="display:inline-block;padding:13px 20px;color:#183e50;'
+                    'font:700 14px Arial,sans-serif" href="' + safe_url
+                    + '">Request corrections on GitHub</a></p>')
     else:
-        body.append("<p>Approval is unavailable while a section is pending. The failed check is shown above and in the workflow run.</p>")
+        body.append('<p style="font:15px/1.6 Arial,sans-serif">Approval is unavailable while '
+                    'a section is pending. The failed check is shown in the card above.</p>')
         body.append('<p><a href="' + safe_url + '">Open the review run</a></p>')
-    body.append("<p>These links open GitHub; clicking an email link alone cannot publish.</p></main>")
+    body.append('<p style="margin:28px 0 0;color:#60747b;font:12px/1.5 Arial,sans-serif">'
+                'The artwork, prose, and source links above are the private draft. These buttons '
+                'open GitHub; clicking an email link alone cannot publish.</p>'
+                '</td></tr></table></div></body></html>')
     return {
         "subject": "The Brief weekly draft " + draft["release_id"] + " — " + status_label,
         "html": "".join(body),
+        "attachments": attachments,
     }
 
 

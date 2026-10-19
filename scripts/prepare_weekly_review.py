@@ -15,6 +15,7 @@ from build_site import ROOT, cards, inputs, papers
 from brief_database import dbmaps
 from weekly_overviews import prepare_weekly_overviews
 from weekly_editorials import validate_section
+from weekly_review_delivery import REPOSITORY, email_content
 
 
 def main() -> None:
@@ -44,6 +45,12 @@ def main() -> None:
     path = Path("weekly-review-draft.json")
     path.write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    )
+    run_id = os.environ.get("GITHUB_RUN_ID", "")
+    run_url = ("https://github.com/" + REPOSITORY + "/actions/runs/" + run_id
+               if run_id.isdigit() else "https://github.com/" + REPOSITORY + "/actions")
+    Path("weekly-review-preview.html").write_text(
+        email_content(payload, run_url, image_mode="data")["html"], encoding="utf-8"
     )
     already_approved = (ROOT / "data/weekly-overviews/approved" / (str(payload["release_id"]) + ".json")).exists()
     output = os.environ.get("GITHUB_OUTPUT")

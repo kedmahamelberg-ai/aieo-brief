@@ -223,7 +223,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         recovered = self.generate(previous)
         self.assertEqual(recovered['editorial_status'], 'ready')
         for section in ('markets', 'research'):
-            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v5')
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v6')
             self.assertLessEqual(recovered[section]['word_count'], 200)
 
     def test_old_week_is_not_rewritten_in_new_voice(self):
@@ -242,6 +242,26 @@ class WeeklyEditorialTests(unittest.TestCase):
         broken=copy.deepcopy(draft)
         broken['paragraphs'][0][1]['source_key']=''
         with self.assertRaises(ValueError):validate_draft(broken,self.news,[{'key':good['image_key']}])
+
+    def test_contractions_are_rejected_but_possessives_remain_valid(self):
+        good = self.generate()['markets']
+        draft = {'title': good['title'],
+                 'paragraphs': [[{k: p[k] for k in ('text', 'source_key')} for p in paragraph]
+                                for paragraph in good['prose']],
+                 'image_key': good['image_key'], 'image_reason': good['image_reason']}
+        for title in ("What's next for learning", "What’s next for learning"):
+            with self.assertRaisesRegex(ValueError, 'weekly_contraction'):
+                validate_draft({**draft, 'title': title}, self.news,
+                               [{'key': good['image_key']}])
+        prose = copy.deepcopy(draft)
+        prose['paragraphs'][0][0]['text'] += " We don't know every effect."
+        with self.assertRaisesRegex(ValueError, 'weekly_contraction'):
+            validate_draft(prose, self.news, [{'key': good['image_key']}])
+        with self.assertRaisesRegex(ValueError, 'weekly_contraction'):
+            validate_draft({**draft, 'image_reason': "It's a bridge between ideas."},
+                           self.news, [{'key': good['image_key']}])
+        validate_draft({**draft, 'title': "This Week’s Learning Review"}, self.news,
+                       [{'key': good['image_key']}])
 
     def test_human_approved_edition_is_used_without_calling_model(self):
         generated = self.generate()

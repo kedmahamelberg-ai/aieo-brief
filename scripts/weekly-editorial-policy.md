@@ -6,9 +6,10 @@ Earlier editions retain their existing presentation.
 
 Both reviews use flowing prose in normal type, credited to Kedma Hamelberg.
 The title, prose and evidence-scope note together must stay below 200 words.
-The prose contains no colon, en dash or em dash. It links directly to the Brief
-posts and ends with one relevant reflective question. The writer must use plain
-English, preserve uncertainty and never invent personal experiences.
+Natural punctuation is allowed. The prose links directly to the Brief posts.
+The writer must use plain English, preserve uncertainty and never invent
+personal experiences. The title, prose and artwork reason use full forms
+instead of contractions; grammatical possessives remain acceptable.
 
 The news review requires five different completed summaries, one per discovery
 market, drawn from the edition week. Markets describe discovery streams, not
@@ -26,8 +27,11 @@ an illustration. Extend the verified art library if the unused pool runs out.
 The Monday Prepare Weekly Brief Review workflow uses the latest validated
 Observatory release and Brief summaries to make a private draft artifact. It
 also runs after a manually dispatched Observatory handoff or when dispatched
-directly. It emails the draft to the owner's configured private address. When
-either section is pending, the email explains why and offers no approval action.
+directly. The artifact contains a JSON record for exact approval verification
+and a self-contained HTML preview for reading. The owner email shows the same
+visual cards, selected rights-cleared artwork, full prose, and source links.
+When either section is pending, the email explains why and offers no approval
+action.
 The public build renders only editions with an owner-approved file in
 data/weekly-overviews/approved/; it cannot generate or publish new prose.
 
@@ -39,7 +43,7 @@ Only then may the scheduled publisher commit that reviewed edition and run the
 public build. Rejecting the review leaves the draft unpublished. A revision
 requires another review run and another approval.
 
-Each section may use one structural repair and one revision after a failed
+Each section may use two bounded structural repairs and one revision after a failed
 independent check, always followed by a fresh independent check and within the
 existing shared AI job spending cap. An incomplete source set, failed review or
 depleted image pool produces a clearly labelled pending section without an

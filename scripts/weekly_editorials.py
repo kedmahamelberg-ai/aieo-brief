@@ -17,7 +17,7 @@ START = '2026-10-05'
 # Bump this whenever the public weekly format changes.  The version is part of
 # the saved input fingerprint, so an exhausted draft under an older brief can
 # never keep the old format in place after the brief is revised.
-VERSION = 'kedma-weekly-v5'
+VERSION = 'kedma-weekly-v6'
 AUTHOR = 'Kedma Hamelberg'
 MARKETS = ('US', 'CA', 'CN', 'FR', 'GB')
 NAMES = dict(zip(MARKETS, ('United States', 'Canada', 'China', 'France', 'United Kingdom')))
@@ -138,6 +138,11 @@ CHECKS = ('grounded', 'clear_high_school_language', 'coherent_prose', 'meaningfu
           'source_limits_preserved', 'no_invented_personal_experience',
           'image_metaphor_supported')
 REVIEW_SCHEMA = schema_object({name: {'type': 'boolean'} for name in CHECKS})
+CONTRACTION = re.compile(
+    r"\b(?:what|it|that|who|where|when|how|there|here|let|he|she|we|you|they|I)[’']"
+    r"(?:s|m|re|ve|ll|d)\b|\b\w+n[’']t\b|\b\w+[’'](?:re|ve|ll|d)\b",
+    re.IGNORECASE,
+)
 
 
 def validate_draft(draft, selected, pictures):
@@ -180,6 +185,8 @@ def validate_draft(draft, selected, pictures):
     reason = draft['image_reason']
     if not isinstance(reason, str) or not reason.strip() or words(reason) > 30 or re.search(r'<|https?\b|www\.', reason):
         raise ValueError('weekly_image_reason')
+    if CONTRACTION.search(text + ' ' + reason):
+        raise ValueError('weekly_contraction')
     return text
 
 
@@ -236,6 +243,8 @@ def create_section(kind, selected, pictures, base, call):
     brief = (
         'Write an original weekly overview for The Brief, ghostwritten for Kedma Hamelberg. '
         'Use warm, thoughtful, plain English at average high school reading level. '
+        'Do not use contractions in the title, prose, or artwork reason. Write "what is", '
+        '"it is", "do not", and similar full forms. Ordinary possessives are allowed. '
         'A personal observation such as what I notice is welcome, but never invent an experience, '
         'interview, expertise, emotion or endorsement. Use flowing connected prose, not a list or '
         'country boxes. Explain a clear thread and real differences. Avoid jargon and grand claims. '
@@ -272,6 +281,7 @@ def create_section(kind, selected, pictures, base, call):
                 'Correct this draft without adding facts. The validation failure was '
                 + str(error) + '. Every part must contain exactly a nonempty text string '
                 'and a source_key string. Use an empty source_key for unlinked text. '
+                'Use no contractions anywhere in the title, prose, or artwork reason. '
                 'Keep every supplied source key exactly once, use only numbers present '
                 'in the supplied evidence, and return the same schema.\n'
                 + json.dumps({'requirements': brief, 'sources': source_payload,
@@ -303,6 +313,7 @@ def create_section(kind, selected, pictures, base, call):
             'Revise this weekly draft to address these failed editorial checks: '
             + ', '.join(failed) + '. Keep every source key exactly once and stay strictly '
             'within the supplied evidence. Preserve study limits and attribution. '
+            'Use no contractions in the title, prose, or artwork reason. '
             'Use only supported numbers and eligible artwork. Return the draft schema.\n'
             + json.dumps({'requirements': brief, 'sources': source_payload,
                           'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),

@@ -64,6 +64,14 @@ class WeeklyReviewDeliveryTests(unittest.TestCase):
         self.assertIn('Review and approve on GitHub', ready['html'])
         self.assertIn('Request corrections on GitHub', ready['html'])
         self.assertIn('https://brief.hamelberg-ai.com/story/', ready['html'])
+        self.assertIn('src="cid:brief-weekly-markets"', ready['html'])
+        self.assertIn('src="cid:brief-weekly-research"', ready['html'])
+        self.assertEqual({item['content_id'] for item in ready['attachments']},
+                         {'brief-weekly-markets', 'brief-weekly-research'})
+        self.assertIn('image_credit', self.fixture['markets'])
+        preview = email_content(self.draft, url, image_mode='data')
+        self.assertIn('src="data:image/jpeg;base64,', preview['html'])
+        self.assertEqual(preview['attachments'], [])
         pending = copy.deepcopy(self.draft)
         pending['requires_human_approval'] = False
         pending['overview']['editorial_status'] = 'pending'
@@ -72,6 +80,7 @@ class WeeklyReviewDeliveryTests(unittest.TestCase):
         message = email_content(pending, url)
         self.assertNotIn('Review and approve on GitHub', message['html'])
         self.assertIn('editorial_check_pending', message['html'])
+        self.assertEqual(len(message['attachments']), 1)
 
 
 if __name__ == '__main__':
