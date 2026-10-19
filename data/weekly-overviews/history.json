@@ -115,7 +115,7 @@
         "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
         "image_rights": "Public domain · Full Granting Rights",
         "papers": [],
-        "paper_count": 19,
+        "paper_count": 25,
         "affiliation_verified_count": 1,
         "editorial_version": "kedma-weekly-v5",
         "status": "pending",
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v5",
       "editorial_status": "pending",
-      "content_sha256": "e7399a3fedd56dcf34c91f6a8f43a6c15e3140b3e2e36f67009ef9cc11cf055c"
+      "content_sha256": "7d80bb4afb88074fa7c221651fb62833b1828bc776705d3bf5b1d85f0962ea24"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
