@@ -15,6 +15,7 @@ from daily_selection import rotation_plan, reading_day
 from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
 from english_publication import EnglishPublication, content_version, LAYOUT
 from weekly_overviews import prepare_weekly_overviews, social_queue
+from weekly_editorials import validate_public_weekly_sources
 from short_links import short_link_routes
 from article_urls import assign_article_urls
 from search_metadata import identity_graph, canonical_local
@@ -211,6 +212,7 @@ def main():
                 row=axes_by_id.get(eid)
                 if row and version_valid(version,row,release) and not version_valid(editorial.get(eid),row,release):editorial[eid]=version
     news=cards(release,sym,registry,readiness,editorial,preview);research=papers();culture=culture_items()
+    weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(research)
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
     for item in old:
@@ -245,7 +247,8 @@ def main():
         item['content_hash'],_=content_version(item)
     for item in allcards:
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
-    weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview),allow_model=(not preview and os.environ.get('BRIEF_WRITE_WEEKLY_OVERVIEWS')=='true'))
+    weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview),allow_model=(not preview and os.environ.get('BRIEF_WRITE_WEEKLY_OVERVIEWS')=='true'),source_news=weekly_source_news,source_research=weekly_source_research)
+    validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,news,research)
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
     shutil.copyfile(ROOT/'assets/favicon.ico', SITE/'favicon.ico')

@@ -262,6 +262,9 @@ def validate_live_sources(draft: dict) -> None:
         available = {row["key"]: row for row in eligible(rows, release)}
         if not ready_valid(draft["overview"][kind], available):
             raise ValueError("Weekly " + kind + " sources changed before approval")
+        from weekly_editorials import validate_citation_alignment
+        section = draft["overview"][kind]
+        validate_citation_alignment(section["prose"], [available[key] for key in section["source_hashes"]])
 
 
 def approved_file(draft: dict, reviews: list[dict], now: datetime) -> dict:

@@ -310,6 +310,8 @@ def prepare_weekly_overviews(
     *,
     write_archive: bool = False,
     allow_model: bool = False,
+    source_news: list[dict] | None = None,
+    source_research: list[dict] | None = None,
 ) -> tuple[dict, list[dict]]:
     """Return the current overview and newest-first archive.
 
@@ -341,7 +343,9 @@ def prepare_weekly_overviews(
         if isinstance(item, dict) and _plain(item.get("release_id"))
     }
     from weekly_editorials import apply_editorials
-    current = apply_editorials(current, news, research, root, list(records.values()), allow_model=allow_model)
+    current = apply_editorials(current, source_news if source_news is not None else news,
+                               source_research if source_research is not None else research,
+                               root, list(records.values()), allow_model=allow_model)
     current.pop('content_sha256', None)
     current['content_sha256'] = hashlib.sha256(
         json.dumps(current, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
