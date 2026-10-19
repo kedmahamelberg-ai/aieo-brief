@@ -6,6 +6,7 @@ pending notice, never an invented review under the editor's name.
 from __future__ import annotations
 
 import copy
+from collections import Counter
 import hashlib
 import itertools
 import json
@@ -17,7 +18,7 @@ START = '2026-10-05'
 # Bump this whenever the public weekly format changes.  The version is part of
 # the saved input fingerprint, so an exhausted draft under an older brief can
 # never keep the old format in place after the brief is revised.
-VERSION = 'kedma-weekly-v6'
+VERSION = 'kedma-weekly-v7'
 AUTHOR = 'Kedma Hamelberg'
 MARKETS = ('US', 'CA', 'CN', 'FR', 'GB')
 NAMES = dict(zip(MARKETS, ('United States', 'Canada', 'China', 'France', 'United Kingdom')))
@@ -168,8 +169,14 @@ def validate_draft(draft, selected, pictures):
             strings.append(part['text'])
             if part['source_key']:
                 links.append(part['source_key'])
-    if sorted(links) != sorted(x['key'] for x in selected):
-        raise ValueError('weekly_exact_source_coverage')
+    expected = Counter(x['key'] for x in selected)
+    actual = Counter(links)
+    if actual != expected:
+        missing = sorted((expected - actual).elements())
+        repeated_or_unknown = sorted((actual - expected).elements())
+        raise ValueError('weekly_exact_source_coverage: missing '
+                         + ', '.join(missing or ['none']) + '; repeated or unknown '
+                         + ', '.join(repeated_or_unknown or ['none']))
     text = ' '.join([draft['title']] + strings)
     if not 60 <= words(text) <= 180:
         raise ValueError('weekly_length')  # room for a short evidence-scope note
@@ -177,6 +184,8 @@ def validate_draft(draft, selected, pictures):
     # raw links, which would be both unsafe and redundant with the source links.
     if re.search(r'<|https?\b|www\.', text):
         raise ValueError('weekly_markup_or_raw_url')
+    if re.search(r'\bsource[A-Z]\b|\b(?:paper|development):[a-z0-9_-]+\b', text, re.IGNORECASE):
+        raise ValueError('weekly_citation_marker_in_text')
     source_text = json.dumps([evidence(x) for x in selected], ensure_ascii=False)
     if set(re.findall(r'\d+(?:[.,]\d+)*', text)) - set(re.findall(r'\d+(?:[.,]\d+)*', source_text)):
         raise ValueError('weekly_unsupported_number')
@@ -238,7 +247,13 @@ def validate_section(section):
 
 
 def create_section(kind, selected, pictures, base, call):
-    source_payload = [{**evidence(x), 'selected_market': x.get('selected_market', '')} for x in selected]
+    # Long opaque database keys are easy for the writer to omit or mistype.
+    # Give it short citation markers, then restore the exact saved keys before
+    # building links. Both forms must pass exact coverage validation.
+    aliases = {f'source{chr(65 + index)}': row for index, row in enumerate(selected)}
+    model_selected = [{**row, 'key': alias} for alias, row in aliases.items()]
+    source_payload = [{**evidence(x), 'selected_market': x.get('selected_market', '')}
+                      for x in model_selected]
     picture_payload = [{k: x.get(k) for k in ('key', 'headline', 'alt', 'deck')} for x in pictures]
     brief = (
         'Write an original weekly overview for The Brief, ghostwritten for Kedma Hamelberg. '
@@ -255,6 +270,7 @@ def create_section(kind, selected, pictures, base, call):
         'Do not force a question or address named stakeholder categories. Return two to four paragraphs of parts. '
         'Each part contains natural text and source_key. Use an empty source_key for plain prose, '
         'and each supplied source key exactly once on a short meaningful inline link phrase. '
+        'Source keys are citation markers only. Never write them in the visible text. '
         'Spaces between parts will be inserted. Order the sources to make the narrative flow. '
         + ('Use one different news development from each of the five assigned discovery markets. '
            'Do not treat discovery market as a claim about where an event happened, and do not generalize '
@@ -274,7 +290,7 @@ def create_section(kind, selected, pictures, base, call):
     # the shape. Every candidate still passes all source and content checks.
     for repair_number in range(2):
         try:
-            validate_draft(draft, selected, pictures)
+            validate_draft(draft, model_selected, pictures)
             break
         except ValueError as error:
             draft = call(
@@ -283,12 +299,13 @@ def create_section(kind, selected, pictures, base, call):
                 'and a source_key string. Use an empty source_key for unlinked text. '
                 'Use no contractions anywhere in the title, prose, or artwork reason. '
                 'Keep every supplied source key exactly once, use only numbers present '
-                'in the supplied evidence, and return the same schema.\n'
+                'in the supplied evidence, never print a source key in visible text, '
+                'and return the same schema.\n'
                 + json.dumps({'requirements': brief, 'sources': source_payload,
                               'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
                 schema=DRAFT_SCHEMA, deadline=deadline,
                 stage='weekly_repair' if repair_number == 0 else 'weekly_repair_final')
-    validate_draft(draft, selected, pictures)
+    validate_draft(draft, model_selected, pictures)
     def check(candidate, stage):
         artwork = next(x for x in pictures if x['key'] == candidate['image_key'])
         verdict = call(
@@ -318,13 +335,17 @@ def create_section(kind, selected, pictures, base, call):
             + json.dumps({'requirements': brief, 'sources': source_payload,
                           'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
             schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_review_repair')
-        validate_draft(draft, selected, pictures)
+        validate_draft(draft, model_selected, pictures)
         chosen, review, failed = check(draft, 'weekly_review_repeat')
     if failed:
         raise ValueError('weekly_independent_review_failed:' + ','.join(failed))
-    by_key = {x['key']: x for x in selected}
-    prose = [[{**part, 'path': by_key[part['source_key']]['path'] if part['source_key'] else ''}
+    prose = [[{**part,
+               'source_key': aliases[part['source_key']]['key'] if part['source_key'] else '',
+               'path': aliases[part['source_key']]['path'] if part['source_key'] else ''}
               for part in paragraph] for paragraph in draft['paragraphs']]
+    saved_draft = {**draft, 'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
+                                          for part in paragraph] for paragraph in prose]}
+    validate_draft(saved_draft, selected, pictures)
     paragraph_text = [' '.join(part['text'] for part in p) for p in prose]
     note = ('Five selected stories from five discovery markets.' if kind == 'markets' else
             'Two papers from this week. Publication status and reading scope are shown with the sources.')

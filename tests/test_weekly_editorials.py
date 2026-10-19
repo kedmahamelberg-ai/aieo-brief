@@ -223,7 +223,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         recovered = self.generate(previous)
         self.assertEqual(recovered['editorial_status'], 'ready')
         for section in ('markets', 'research'):
-            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v6')
+            self.assertEqual(recovered[section]['editorial_version'], 'kedma-weekly-v7')
             self.assertLessEqual(recovered[section]['word_count'], 200)
 
     def test_old_week_is_not_rewritten_in_new_voice(self):
@@ -242,6 +242,44 @@ class WeeklyEditorialTests(unittest.TestCase):
         broken=copy.deepcopy(draft)
         broken['paragraphs'][0][1]['source_key']=''
         with self.assertRaises(ValueError):validate_draft(broken,self.news,[{'key':good['image_key']}])
+
+    def test_short_citation_markers_restore_exact_saved_source_keys(self):
+        prompts = []
+        def marked(prompt, **kwargs):
+            if kwargs['stage'] == 'weekly_draft':
+                payload = json.loads(prompt.split('\n')[-1])
+                prompts.append(payload['sources'])
+            return self.call(prompt, **kwargs)
+        result = self.generate(call=marked)
+        self.assertEqual(result['editorial_status'], 'ready')
+        self.assertEqual([row['key'] for row in prompts[0]],
+                         ['sourceA', 'sourceB', 'sourceC', 'sourceD', 'sourceE'])
+        for kind, rows in (('markets', self.news), ('research', self.papers)):
+            linked = [part['source_key'] for paragraph in result[kind]['prose']
+                      for part in paragraph if part['source_key']]
+            self.assertEqual(sorted(linked), sorted(row['key'] for row in rows))
+            self.assertTrue(all(part['path'].startswith(('story/', 'research/'))
+                                for paragraph in result[kind]['prose'] for part in paragraph
+                                if part['source_key']))
+
+    def test_missing_citation_feedback_names_the_marker(self):
+        draft = self.call(json.dumps({'sources': [{'key': 'sourceA'}, {'key': 'sourceB'}],
+                                      'artworks': [{'key': 'picture0'}]}), stage='weekly_draft')
+        draft['paragraphs'][0] = [part for part in draft['paragraphs'][0]
+                                  if part['source_key'] != 'sourceB']
+        with self.assertRaisesRegex(ValueError, 'missing sourceB'):
+            validate_draft(draft, [{'key': 'sourceA'}, {'key': 'sourceB'}],
+                           [{'key': 'picture0'}])
+
+    def test_source_markers_cannot_appear_in_visible_prose(self):
+        good = self.generate()['markets']
+        draft = {'title': good['title'],
+                 'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
+                                 for part in paragraph] for paragraph in good['prose']],
+                 'image_key': good['image_key'], 'image_reason': good['image_reason']}
+        draft['paragraphs'][0][0]['text'] += ' See sourceA.'
+        with self.assertRaisesRegex(ValueError, 'weekly_citation_marker_in_text'):
+            validate_draft(draft, self.news, [{'key': good['image_key']}])
 
     def test_contractions_are_rejected_but_possessives_remain_valid(self):
         good = self.generate()['markets']
