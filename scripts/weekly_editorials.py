@@ -18,7 +18,7 @@ START = '2026-10-05'
 # Bump this whenever the public weekly format changes.  The version is part of
 # the saved input fingerprint, so an exhausted draft under an older brief can
 # never keep the old format in place after the brief is revised.
-VERSION = 'kedma-weekly-v8'
+VERSION = 'kedma-weekly-v9'
 AUTHOR = 'Kedma Hamelberg'
 MARKETS = ('US', 'CA', 'CN', 'FR', 'GB')
 NAMES = dict(zip(MARKETS, ('United States', 'Canada', 'China', 'France', 'United Kingdom')))
@@ -190,8 +190,9 @@ def validate_draft(draft, selected, pictures):
     source_text = json.dumps([evidence(x) for x in selected], ensure_ascii=False)
     if set(re.findall(r'\d+(?:[.,]\d+)*', text)) - set(re.findall(r'\d+(?:[.,]\d+)*', source_text)):
         raise ValueError('weekly_unsupported_number')
-    if draft['image_key'] not in {x['key'] for x in pictures}:
-        raise ValueError('weekly_image_not_eligible')
+    valid_images = {x['key'] for x in pictures}
+    if draft['image_key'] not in valid_images:
+        raise ValueError('weekly_image_not_eligible: choose one of ' + ', '.join(sorted(valid_images)))
     reason = draft['image_reason']
     if not isinstance(reason, str) or not reason.strip() or words(reason) > 30 or re.search(r'<|https?\b|www\.', reason):
         raise ValueError('weekly_image_reason')
@@ -263,7 +264,13 @@ def create_section(kind, selected, pictures, base, call):
     model_selected = [{**row, 'key': alias} for alias, row in aliases.items()]
     source_payload = [{**evidence(x), 'selected_market': x.get('selected_market', '')}
                       for x in model_selected]
-    picture_payload = [{k: x.get(k) for k in ('key', 'headline', 'alt', 'deck')} for x in pictures]
+    # The art catalog has similarly opaque keys. Use compact markers for the
+    # model, then validate its choice again against the original eligible pool.
+    art_aliases = {f'art{chr(65 + index // 26)}{chr(65 + index % 26)}': row
+                   for index, row in enumerate(pictures)}
+    model_pictures = [{**row, 'key': alias} for alias, row in art_aliases.items()]
+    picture_payload = [{k: x.get(k) for k in ('key', 'headline', 'alt', 'deck')}
+                       for x in model_pictures]
     brief = (
         'Write an original weekly overview for The Brief, ghostwritten for Kedma Hamelberg. '
         'Use warm, thoughtful, plain English at average high school reading level. '
@@ -287,8 +294,8 @@ def create_section(kind, selected, pictures, base, call):
            'Do not treat discovery market as a claim about where an event happened, and do not generalize '
            'five stories into a national trend. ' if kind == 'markets' else
            'Connect these two papers through a specific shared question or complementary approach, '
-           'Keep each paper passage concise. '
-           'while retaining each finding and its limitation. Do not imply a collaboration. ')
+           'while retaining each finding and its limitation. Keep each paper passage concise. '
+           'Do not imply a collaboration. ')
         + 'Choose one supplied artwork as a metaphor or inspiration for the review. '
         'Explain the connection in image_reason in no more than 30 words using no colon or dash. '
         'Prefer evocative landscapes, everyday scenes or patterns over sensational violent imagery. '
@@ -302,7 +309,7 @@ def create_section(kind, selected, pictures, base, call):
     # the shape. Every candidate still passes all source and content checks.
     for repair_number in range(2):
         try:
-            validate_draft(draft, model_selected, pictures)
+            validate_draft(draft, model_selected, model_pictures)
             break
         except ValueError as error:
             draft = call(
@@ -313,14 +320,15 @@ def create_section(kind, selected, pictures, base, call):
                 'If the failure is weekly_length, rewrite the title and prose to 120 to 150 words total. '
                 'Keep every supplied source key exactly once, use only numbers present '
                 'in the supplied evidence, never print a source key in visible text, '
+                'Choose an image_key exactly from the supplied artwork markers '
                 'and return the same schema.\n'
                 + json.dumps({'requirements': brief, 'sources': source_payload,
                               'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
                 schema=DRAFT_SCHEMA, deadline=deadline,
                 stage='weekly_repair' if repair_number == 0 else 'weekly_repair_final')
-    validate_draft(draft, model_selected, pictures)
+    validate_draft(draft, model_selected, model_pictures)
     def check(candidate, stage):
-        artwork = next(x for x in pictures if x['key'] == candidate['image_key'])
+        artwork = next(x for x in model_pictures if x['key'] == candidate['image_key'])
         verdict = call(
             'Independently check this weekly editorial against its evidence and the writing requirements. '
             'Return true only for checks that pass. Reject unsupported statements, implied national trends, '
@@ -348,15 +356,17 @@ def create_section(kind, selected, pictures, base, call):
             + json.dumps({'requirements': brief, 'sources': source_payload,
                           'artworks': picture_payload, 'draft': draft}, ensure_ascii=False),
             schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_review_repair')
-        validate_draft(draft, model_selected, pictures)
+        validate_draft(draft, model_selected, model_pictures)
         chosen, review, failed = check(draft, 'weekly_review_repeat')
     if failed:
         raise ValueError('weekly_independent_review_failed:' + ','.join(failed))
+    chosen = art_aliases[draft['image_key']]
     prose = [[{**part,
                'source_key': aliases[part['source_key']]['key'] if part['source_key'] else '',
                'path': aliases[part['source_key']]['path'] if part['source_key'] else ''}
               for part in paragraph] for paragraph in draft['paragraphs']]
-    saved_draft = {**draft, 'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
+    saved_draft = {**draft, 'image_key': chosen['key'],
+                   'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
                                           for part in paragraph] for paragraph in prose]}
     validate_draft(saved_draft, selected, pictures)
     paragraph_text = [' '.join(part['text'] for part in p) for p in prose]
