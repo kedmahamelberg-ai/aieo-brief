@@ -5633,6 +5633,26 @@
       },
       "output_sha256": "239a8e30c48f809b830a366156f85fa2eaad2bdccc2bd1b296c81997a6fd641a",
       "policy": "brief-english-display-v1"
+    },
+    "c854b897eee5df58e6f96c331073f7ff865a6b59138b05d9b4dd51bbc97ad0da": {
+      "english": {
+        "0": "gamma-star-Y|X Shifts Provide Well-Defined Measure of Distribution Changes Across Domains",
+        "1": "Researchers defined a gamma-star-Y|X shift via entropic optimal transport to stay well-defined when source and target covariate supports do not overlap, and they developed estimators and the DataShifts algorithm to quantify shifts from samples.",
+        "2": "Estimators depend on sample quality and chosen beta; high dimensions still pose practical biases and require enough data."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f81297d3dca9ee8756a9fdd43eee294dbaf25b3d990af2d71cce41284f6edabd",
+      "policy": "brief-english-display-v1"
     }
   }
 }
