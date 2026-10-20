@@ -17,6 +17,7 @@ from source_evidence_quality import assess_body
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=ai_runtime.identity()['model'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
 MODEL_REVISION=ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','2f3b082b1356a6123f7ed71e65aea340da25d53c')
+REPEATED_REJECTIONS={'unsupported_number','source_wording_copied','draft_quote_unsupported','source_scope_review_failed'}
 
 def source_payload(rows, allowed=None, fingerprints=None):
     result=[]
@@ -34,6 +35,9 @@ def fingerprint(event,axes,sources):
     return digest({'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
 def same_input(latest,fp):return ((latest or {}).get('evidence_basis_summary') or {}).get('input_fingerprint')==fp
 
+def rejected_twice(retry,previous_code=None):
+    return retry.get('attempts',0)>=2 and (retry.get('last_code') or previous_code) in REPEATED_REJECTIONS
+
 def retain_numeric_rejection(client,item,error):
     # This existing provenance table has RLS enabled and no public policies.
     # Retain only the last bounded validation feedback, never in Git or logs.
@@ -48,7 +52,12 @@ def retain_numeric_rejection(client,item,error):
 
 def candidates(release,sym,maps,force=False):
     stories,readiness,evidence,versions=maps;axis={r['event_id']:r for r in sym['evidence']};selected=[]
-    counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
+    counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0,'skipped_rejected':0}
+    q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
+    status_path=ROOT/'data/editorial/status.json'
+    previous=json.loads(status_path.read_text()) if status_path.exists() else {}
+    previous_codes={row['event_id']:row.get('code') for row in previous.get('failed_items',[]) if row.get('event_id')} if previous.get('release_id')==release['release_id'] else {}
+    active=set()
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
         eid=str(event.get('effective_event_id') or event['event_id']);relation=fixed_relationship(axis[eid]);story=stories.get(eid)
         bound=bool(release.get('complete_content'))
@@ -57,14 +66,19 @@ def candidates(release,sym,maps,force=False):
         sources=source_payload(evidence.get(eid,[]),allowed,fingerprints)
         if not sources or not relation['axes'].get('evidence_complete'):counts['source_not_ready']+=1;continue
         fp=fingerprint(event,relation['axes'],sources);latest=versions.get(str((story or {}).get('story_id')))
+        active.add(fp)
         reusable=not force and same_input(latest,fp) and latest.get('publication_status') in ('published','preview')
         if reusable and latest['evidence_basis_summary'].get('source_release_sha256')==release['content_sha256']:
             counts['unchanged']+=1;continue
+        retry=state.get(fp,{})
+        if not force and not reusable and rejected_twice(retry,previous_codes.get(eid)):
+            retry['last_code']=retry.get('last_code') or previous_codes.get(eid)
+            counts['skipped_rejected']+=1;continue
         key='needs_rebind' if reusable else 'needs_model';counts[key]+=1
         if not story:counts['new_registry']+=1
         selected.append({'event':event,'eid':eid,'relation':relation,'sources':sources,'fp':fp,'latest':latest,'story':story,'reuse':reusable})
     # A failed item from an earlier attempt does not starve the rest of the week.
-    q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
+    state={fp:row for fp,row in state.items() if fp in active}
     selected.sort(key=lambda x:(state.get(x['fp'],{}).get('attempts',0),not x['reuse']))
     return selected,counts,state
 
@@ -126,8 +140,8 @@ def main():
             print(f'Saved {item["eid"]}: {draft["editorial_headline"]}',flush=True)
         except TimeoutError:counts['deferred']=len(items)-n;break
         except Exception as e:
-            counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
             diagnostic=failure_diagnostic(e,stage)
+            counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat(),'last_code':diagnostic['code']}
             if stage=='generation':
                 try:retain_numeric_rejection(client,item,e)
                 except Exception:print('Private numeric rejection diagnostic could not be retained.',flush=True)
@@ -136,7 +150,6 @@ def main():
             print(f'Kept source link for {item["eid"]}; draft withheld: '+json.dumps(diagnostic,sort_keys=True),flush=True)
     path=ROOT/'data/editorial';path.mkdir(parents=True,exist_ok=True)
     # Keep bounded retry metadata only; no bodies, quotes or private errors enter Git.
-    active={x['fp'] for x in items};state={k:v for k,v in state.items() if k in active}
     (path/'retry-state.json').write_text(json.dumps(state,indent=2)+'\n')
     failure_counts=dict(Counter(x['code'] for x in failures))
     (path/'status.json').write_text(json.dumps({'release_id':release['release_id'],'engine_version':ENGINE_VERSION,'counts':counts,'failure_counts':failure_counts,'failed_items':failures,'updated_at':datetime.now(timezone.utc).isoformat()},indent=2)+'\n')
