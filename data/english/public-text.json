@@ -5693,6 +5693,47 @@
       },
       "output_sha256": "e7804328b7d0b8000f7738639c1d3ac844644f7d320238a73c63523e1680eff7",
       "policy": "brief-english-display-v1"
+    },
+    "8e9bc741ada0fab8e247d76172e0d1f1f31fbcf77e9462d61784f17193107224": {
+      "english": {
+        "0": "German",
+        "1": "Composer",
+        "2": "Johannes Brahms - Op.45 A German Requiem - (05) You now have sorrow",
+        "3": "“You now have sorrow” - 5th movement of A German Requiem composed by Johannes Brahms.",
+        "4": "Johannes Brahms - Op.45 A German Requiem - (05) You now have sorrow"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "333988c7a8137d2ef9fb2b8c578ec305a671fddf146c15abcc1cd4cf32a69a91",
+      "policy": "brief-english-display-v1"
+    },
+    "4f97c57581b4500351a98a9438554a415b097ba69c965429ca7f7323e0bb951f": {
+      "english": {
+        "0": "Mesoamerica, Mexico, Guanajuato, Chupícuaro",
+        "1": "CC0 image"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "9c541689055bb383c1be9f4f990bc0c46d1413c5aaf4ac7b818de24d51e86a3b",
+      "policy": "brief-english-display-v1"
     }
   }
 }

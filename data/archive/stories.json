@@ -2,6 +2,372 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/2/29/Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_%2805%29_Ihr_habt_nun_Traurigkeit.ogg",
+      "creator": "Johannes Brahms",
+      "creator_origin": "German",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Johannes Brahms. 6 minutes to listen.",
+      "duration_seconds": 395,
+      "headline": "Johannes Brahms - Op.45 Ein Deutsches Requiem - (05) Ihr habt nun Traurigkeit",
+      "key": "culture:f069ec84a38b3f49f6f0f4fd",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_%2805%29_Ihr_habt_nun_Traurigkeit.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Johannes_Brahms",
+      "original_recording_title": "Johannes Brahms - Op.45 Ein Deutsches Requiem - (05) Ihr habt nun Traurigkeit",
+      "provenance_id": "commons:234800",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "The Holden Consort Orchestra and Choir",
+      "recording_description": "“Ihr habt nun Traurigkeit” - 5th movement of Ein deutsches Requiem composed by Johannes Brahms .",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "The Holden Consort Orchestra and Choir",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "http://hebb.mit.edu/FreeMusic/Brahms/ (now offline, older versions still accessible via https://web.archive.org/web/20050206200827/hebb.mit.edu/FreeMusic/Brahms/ The files have now moved to http://ml.cs.colorado.edu/~ben/Brahms/",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_(05)_Ihr_habt_nun_Traurigkeit.ogg",
+      "work_date": "recorded July, 14, 2001",
+      "date": "2026-10-20",
+      "selected_on": "2026-10-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f069ec84a38b3f49f6f0f4fd",
+      "path": "culture/culture-f069ec84a38b3f49f6f0f4fd/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Johannes Brahms - Op.45 Ein Deutsches Requiem - (05) Ihr habt nun Traurigkeit",
+          "url": "https://commons.wikimedia.org/wiki/File:Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_(05)_Ihr_habt_nun_Traurigkeit.ogg",
+          "date": "recorded July, 14, 2001",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-20",
+      "summary_basis": "Selected 20 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "697e5e68cebd19d3737571de4422d2a24e250030a8ad7248649c119d395682cf",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "Gaps are left in life through which comes the sad music of death.",
+      "headline": "Gaps are left in life through which comes the sad music of death.",
+      "key": "culture:dd023474bb92137bbe4faf02",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:697e5e68cebd19d3737571de4422d2a24e250030a8ad7248649c119d395682cf",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Gaps are left in life through which comes the sad music of death.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 156 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-10-20",
+      "selected_on": "2026-10-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dd023474bb92137bbe4faf02",
+      "path": "culture/culture-dd023474bb92137bbe4faf02/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Gaps are left in life through which comes the sad music of death.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-20",
+      "summary_basis": "Selected 20 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Gaps are left in life through which comes the sad music of death.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Gaps are left in life through which comes the sad music of death.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Female Figurine",
+      "art_type": "Sculpture",
+      "balance_origin": "Mesoamerica",
+      "creator": "Artist unknown",
+      "creator_origin": "Mesoamerica, Mexico, Guanajuato, Chupícuaro",
+      "culture_type": "illustration",
+      "deck": "Female Figurine. earthenware with pigment.",
+      "headline": "Female Figurine",
+      "image_path": "assets/culture/73770fd85d566354323c63bc.jpg",
+      "key": "culture:73770fd85d566354323c63bc",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1990.138/1990.138_web.jpg",
+      "medium": "earthenware with pigment",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1990.138",
+      "provenance_id": "cma:155407",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of Mr. and Mrs. James C. Gruener",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1990.138",
+      "work_date": "c. 400–100 BCE",
+      "date": "2026-10-20",
+      "selected_on": "2026-10-20",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-73770fd85d566354323c63bc",
+      "path": "culture/culture-73770fd85d566354323c63bc/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Female Figurine",
+          "url": "https://clevelandart.org/art/1990.138",
+          "date": "c. 400–100 BCE",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-20",
+      "summary_basis": "Selected 20 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "a88da7f8745d7aa303c8f84f618f9194c546cd0d8fc729301a545267b3da40fb",
+      "creator": "John Keats",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by John Keats.",
+      "excerpt": "Much have I travell'd in the realms of gold,\n    And many goodly states and kingdoms seen;\n    Round many western islands have I been\nWhich bards in fealty to Apollo hold.\nOft of one wide expanse had I been told\n    That deep-brow'd Homer ruled as his demesne;\n    Yet did I never breathe its pure serene\nTill I heard Chapman speak out loud and bold:\nThen felt I like some watcher of the skies\n    When a new planet swims into his ken;\nOr like stout Cortez when with eagle eyes\n    He star'd at the Pacific--and all his men\nLook'd at each other with a wild surmise--\n    Silent, upon a peak in Darien.",
+      "headline": "On First Looking Into Chapman's Homer",
+      "key": "culture:5ee2a1f80970e840f4e5f7e4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Much have I travell'd in the realms of gold,",
+        "    And many goodly states and kingdoms seen;",
+        "    Round many western islands have I been",
+        "Which bards in fealty to Apollo hold.",
+        "Oft of one wide expanse had I been told",
+        "    That deep-brow'd Homer ruled as his demesne;",
+        "    Yet did I never breathe its pure serene",
+        "Till I heard Chapman speak out loud and bold:",
+        "Then felt I like some watcher of the skies",
+        "    When a new planet swims into his ken;",
+        "Or like stout Cortez when with eagle eyes",
+        "    He star'd at the Pacific--and all his men",
+        "Look'd at each other with a wild surmise--",
+        "    Silent, upon a peak in Darien."
+      ],
+      "provenance_id": "poetrydb:John Keats:On First Looking Into Chapman's Homer",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1821.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "13835f78a8a2d9a5d45c197d97f0d666c8eb2b8db5e01eedae6acc48020d6ed7",
+      "source_locator": "On First Looking Into Chapman's Homer",
+      "source_url": "https://poetrydb.org/title/On%20First%20Looking%20Into%20Chapman%27s%20Homer:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1821",
+      "date": "2026-10-20",
+      "selected_on": "2026-10-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-5ee2a1f80970e840f4e5f7e4",
+      "path": "culture/culture-5ee2a1f80970e840f4e5f7e4/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "On First Looking Into Chapman's Homer",
+          "url": "https://poetrydb.org/title/On%20First%20Looking%20Into%20Chapman%27s%20Homer:abs/lines.text",
+          "date": "Before 1821",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-20",
+      "summary_basis": "Selected 20 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Much have I travell'd in the realms of gold,\n    And many goodly states and kingdoms seen;\n    Round many western islands have I been\nWhich bards in fealty to Apollo hold.\nOft of one wide expanse had I been told\n    That deep-brow'd Homer ruled as his demesne;\n    Yet did I never breathe its pure serene\nTill I heard Chapman speak out loud and bold:\nThen felt I like some watcher of the skies\n    When a new planet swims into his ken;\nOr like stout Cortez when with eagle eyes\n    He star'd at the Pacific--and all his men\nLook'd at each other with a wild surmise--\n    Silent, upon a peak in Darien.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "White Nights",
+      "content_fingerprint": "f367125d9f462f71dc98f92920e0a7e3338027e44b163286a50b9da3c138cada",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "But luckily for me the general attention was distracted at the moment by the masterly acting of our host, who was playing the chief part in the performance, some comedy of Scribe's. Every one began to applaud; under cover of the noise I stole away and hurried to the furthest end of the room, from which, concealed behind a column, I looked with horror towards the place where the treacherous beauty was sitting. She was still laughing, holding her handkerchief to her lips. And for a long time she was continually turning round, looking for me in every direction, probably regretting that our silly tussle was so soon over, and hatching some other trick to play on me.",
+      "headline": "White Nights · a short reading",
+      "key": "culture:58d69deff24effeab9ac8ed8",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:f367125d9f462f71dc98f92920e0a7e3338027e44b163286a50b9da3c138cada",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 1510 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-10-20",
+      "selected_on": "2026-10-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-58d69deff24effeab9ac8ed8",
+      "path": "culture/culture-58d69deff24effeab9ac8ed8/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-20",
+      "summary_basis": "Selected 20 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "But luckily for me the general attention was distracted at the moment by the masterly acting of our host, who was playing the chief part in the performance, some comedy of Scribe's. Every one began to applaud; under cover of the noise I stole away and hurried to the furthest end of the room, from which, concealed behind a column, I looked with horror towards the place where the treacherous beauty was sitting. She was still laughing, holding her handkerchief to her lips. And for a long time she was continually turning round, looking for me in every direction, probably regretting that our silly tussle was so soon over, and hatching some other trick to play on me.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "The Prophet",
       "content_fingerprint": "e298832447a160b87fa8f08b455769872d227eef1249ef591388169b52b7e1b1",
       "creator": "Kahlil Gibran",
