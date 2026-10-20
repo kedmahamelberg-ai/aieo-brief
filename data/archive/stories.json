@@ -4780,6 +4780,62 @@
       "url_slug_version": 1
     },
     {
+      "key": "event:39e9cf28-e8a8-41e2-a770-e3ecab699e7b",
+      "event_id": "39e9cf28-e8a8-41e2-a770-e3ecab699e7b",
+      "kind": "news",
+      "slug": "penn-medicine-ai-percival-detects-unseen-scans-limits",
+      "path": "story/penn-medicine-ai-percival-detects-unseen-scans-limits/index.html",
+      "headline": "Penn Medicine AI Percival detects unseen health issues in CT scans, with limits",
+      "original_headline": "An AI model can detect hidden health issues in CT scans",
+      "deck": "A new AI model analyzes CT scans to reveal hidden health signals beyond the original test, but findings are early and not yet clinical proof.",
+      "what_happened": "Researchers trained Percival on hundreds of thousands of CT scans and found it uncovers unseen patterns and future health risks beyond the initial reason for the scan, running in the background to pick up what is unseen.",
+      "why_it_matters": "If validated clinically, Percival could support proactive care by flagging early risks; open-source code may invite broader validation and improvements across settings.",
+      "body_paragraphs": [
+        "The Penn Medicine team developed Percival to analyze CT scans beyond the original testing purpose, aiming to detect signals of disease and forecast future health issues that may not be obvious to human readers. Using data from more than 350,000 people, the model demonstrated the potential to identify patterns linked to chronic conditions such as atrial fibrillation and chronic kidney disease, and it outperformed a similar model in flagging certain cancers and liver issues.",
+        "A key goal is to make imaging more useful for proactive care, not just diagnosis. The researchers emphasize openness,Percival’s code and training specs are open source to encourage broader validation and improvement, while continuing to test robustness before regular clinical use.",
+        "limitation_per_field_used_is_missing_or_not_confirmed_? Yes, the study notes preclinical testing and relies on data from a single health system; broader validation is required."
+      ],
+      "for_humans": "Doctors and patients could gain clearer diagnostic support and earlier interventions.",
+      "for_ai": "AI expands data from imaging to inform medical decisions.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Penn Medicine",
+          "headline": "An AI model can detect hidden health issues in CT scans",
+          "url": "https://www.pennmedicine.org/news/ai-model-can-uncover-unseen-health-issues-in-ct-scans",
+          "date": "2026-10-16",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Penn Medicine",
+      "date": "2026-10-16",
+      "display_date": "16 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "technology",
+      "topic_label": "AI & technology",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Results are preclinical and based on data from the Penn Medicine BioBank; generalizability to other populations or settings requires further study.",
+      "has_editorial": true,
+      "edition": "2026-W42",
+      "period_start": "2026-10-12",
+      "period_end": "2026-10-18",
+      "legacy_paths": [
+        "story/development-39e9cf28-e8a8-41e2-a770-e3ecab699e7b/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "Cap with Striped Inscribed Silk",
       "art_type": "Textile",
       "balance_origin": "Mamluk Sultanate (Egypt or Syria)",
@@ -6145,13 +6201,17 @@
       "kind": "news",
       "slug": "college-holds-community-roundtable-discussion-listening-artificial-intelligence",
       "path": "story/college-holds-community-roundtable-discussion-listening-artificial-intelligence/index.html",
-      "headline": "College holds community ‘roundtable discussion and listening session’ on artificial intelligence",
+      "headline": "Dartmouth's Campus AI Roundtable Signals Need for Contextual Rules and Ongoing Dialogue",
       "original_headline": "College holds community ‘roundtable discussion and listening session’ on artificial intelligence",
-      "deck": "Reporting from The Dartmouth. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The campus event aims to establish guidelines and training for AI use, signaling an effort to extend human capacity with AI-aware norms.",
+      "deck": "Campus leaders hosted a discussion and listening session to explore guidelines, training, and context-specific AI use, inviting broad participation while noting limits on media access.",
+      "what_happened": "Dartmouth organized a campus roundtable on artificial intelligence co-hosted by campus life leadership and student government. Attendees discussed norms, training, and context-based usage, with a panel of leaders and faculty, and emphasized ongoing dialogue beyond a single event.",
+      "why_it_matters": "The event shows a campus effort to balance innovation with responsible use, acknowledging that AI norms differ by context and require ongoing, inclusive discussion rather than one-off mandates.",
+      "body_paragraphs": [
+        "The roundtable brought together students, staff, and faculty to discuss how AI should be used at the College and what kinds of guidelines would help people learn and act responsibly. Organizers framed the session as a starting point for future programming and strategy, not a single universal rule, with attention to department-specific needs and training. Attendees heard from campus leaders about aiming for shared principles that guide usage across contexts.",
+        "Participants stressed that one size does not fit all and that governance must adapt as technology evolves, with input from diverse campus voices including ethical and environmental concerns. The event was positioned as an initial step in a longer process, signaling ongoing conversations about authorship, transparency, and policy development across campus.",
+        "limitation\":\"The article reports on a university event and participant statements, not a population-wide assessment or a full policy rollout; broader effects should be inferred cautiously.\""
+      ],
+      "for_humans": "The campus is trying to build thoughtful AI norms with broad input, not instant rules.",
       "for_ai": "Not explicitly evidenced; no clear AI-side capability change is described.",
       "human_direction": "gain",
       "ai_direction": "none",
@@ -6179,10 +6239,10 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "The article relies on a university event and participant statements; it does not establish universal AI effects or policy outcomes beyond campus dialogue.",
+      "has_editorial": true,
       "edition": "2026-W42",
       "period_start": "2026-10-12",
       "period_end": "2026-10-18",
@@ -7118,6 +7178,61 @@
       "period_end": "2026-10-18",
       "legacy_paths": [
         "story/development-066d286a-e716-4813-8ca9-f2d8de58219f/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:295898d6-a235-4348-8852-422124689f04",
+      "event_id": "295898d6-a235-4348-8852-422124689f04",
+      "kind": "news",
+      "slug": "applied-ai-delivers-real-world-outputs-pace-oversight-limits",
+      "path": "story/applied-ai-delivers-real-world-outputs-pace-oversight-limits/index.html",
+      "headline": "Applied AI Delivers Real-World Outputs, Pace Cautions on Ongoing Oversight and Limits",
+      "original_headline": "How Can We Apply Artificial Intelligence?",
+      "deck": "Applied AI is being used to solve real problems, but reliability, governance, and data quality matter for long-term success.",
+      "what_happened": "Pace University outlines how applied AI turns working models into deployable tools,from fraud detection to medical imaging,and emphasizes ongoing maintenance, governance, and data management as essential for trustworthy results.",
+      "why_it_matters": "The field shows real benefits in speed, cost reduction, and decision quality, but evidence also notes negative outcomes and the need for continuous monitoring and ethical safeguards.",
+      "body_paragraphs": [
+        "Applied AI is described as the practice of turning capable AI models into working systems that people actually use. It foregrounds deployment, reliability, and accountability as the core challenges while noting that success is measured by solving real problems, not by model novelty.",
+        "Across industries, the approach adapts existing techniques to concrete tasks,such as triaging medical cases or detecting fraud,while stressing that data quality, governance, and monitoring determine whether a system remains accurate and fair over time."
+      ],
+      "for_humans": "Applied AI can help in everyday tasks, with careful use.",
+      "for_ai": "Applied AI relies on robust data, governance, and ongoing monitoring to stay reliable.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Pace University",
+          "headline": "How Can We Apply Artificial Intelligence?",
+          "url": "https://www.pace.edu/news/applied-ai",
+          "date": "2026-10-15",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Pace University",
+      "date": "2026-10-15",
+      "display_date": "15 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "analysis",
+      "limitation": "The article summarizes a single source’s position on applied AI and does not generalize beyond described contexts.",
+      "has_editorial": true,
+      "edition": "2026-W42",
+      "period_start": "2026-10-12",
+      "period_end": "2026-10-18",
+      "legacy_paths": [
+        "story/development-295898d6-a235-4348-8852-422124689f04/index.html"
       ],
       "url_slug_version": 1
     },
