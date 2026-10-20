@@ -227,6 +227,33 @@ class ModelTransport(unittest.TestCase):
 
 
 class GenerationCheckpoints(unittest.TestCase):
+    def test_rejected_news_input_is_not_scheduled_again_until_it_changes(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root = Path(folder)
+            (root / 'data/editorial').mkdir(parents=True)
+            (root / 'data/editorial/retry-state.json').write_text(json.dumps({
+                'same-input': {'attempts': 2, 'last_attempt': '2026-10-20T17:00:00+00:00'}
+            }))
+            (root / 'data/editorial/status.json').write_text(json.dumps({
+                'release_id': '2026-W42',
+                'failed_items': [{'event_id': 'event-1', 'code': 'unsupported_number'}]
+            }))
+            stack.enter_context(patch.object(news, 'ROOT', root))
+            stack.enter_context(patch.object(news, 'source_payload', return_value=[{'evidence': 'Complete source'}]))
+            stack.enter_context(patch.object(news, 'fixed_relationship', return_value={'axes': {'evidence_complete': True}}))
+            fingerprint = stack.enter_context(patch.object(news, 'fingerprint', return_value='same-input'))
+            release = {'release_id': '2026-W42', 'content_sha256': 'release-hash',
+                       'evidence': [{'event_id': 'event-1', 'event_date': '2026-10-19'}]}
+            sym = {'evidence': [{'event_id': 'event-1'}]}
+            maps = ({}, {}, {'event-1': [{}]}, {})
+            items, counts, state = news.candidates(release, sym, maps)
+            self.assertEqual(items, [])
+            self.assertEqual(counts['skipped_rejected'], 1)
+            self.assertEqual(state['same-input']['last_code'], 'unsupported_number')
+            self.assertEqual(len(news.candidates(release, sym, maps, force=True)[0]), 1)
+            fingerprint.return_value = 'changed-input'
+            self.assertEqual(len(news.candidates(release, sym, maps)[0]), 1)
+
     def context(self, stack, folder):
         root = Path(folder)
         (root / 'data/research/private').mkdir(parents=True)
