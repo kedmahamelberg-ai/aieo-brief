@@ -2,20 +2,20 @@
   "release_id": "2026-W42",
   "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens",
   "counts": {
-    "unchanged": 0,
+    "unchanged": 88,
     "source_not_ready": 0,
-    "new_registry": 10,
-    "needs_model": 10,
-    "needs_rebind": 85,
-    "selected": 95,
-    "generated": 3,
-    "rebound": 85,
+    "new_registry": 7,
+    "needs_model": 7,
+    "needs_rebind": 0,
+    "selected": 7,
+    "generated": 0,
+    "rebound": 0,
     "failed": 7,
     "deferred": 0
   },
   "failure_counts": {
-    "unsupported_number": 6,
-    "source_scope_review_failed": 1
+    "unsupported_number": 5,
+    "source_wording_copied": 2
   },
   "failed_items": [
     {
@@ -28,12 +28,9 @@
     {
       "event_id": "adb6a229-aa0e-4052-9665-57cd54ba4934",
       "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens",
-      "failed_checks": [
-        "english_only"
-      ]
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
     },
     {
       "event_id": "ff9f567f-9aa1-42cd-99bc-8a768d8157cf",
@@ -67,9 +64,9 @@
       "event_id": "aa62137e-ccad-48ec-bf45-fb512c2961db",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
     }
   ],
-  "updated_at": "2026-10-20T09:05:28.939436+00:00"
+  "updated_at": "2026-10-20T17:04:14.204096+00:00"
 }
