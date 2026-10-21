@@ -8,14 +8,13 @@
     "needs_model": 7,
     "needs_rebind": 0,
     "selected": 7,
-    "generated": 0,
+    "generated": 1,
     "rebound": 0,
-    "failed": 7,
+    "failed": 6,
     "deferred": 0
   },
   "failure_counts": {
-    "unsupported_number": 5,
-    "source_wording_copied": 2
+    "unsupported_number": 6
   },
   "failed_items": [
     {
@@ -23,13 +22,6 @@
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
-    },
-    {
-      "event_id": "adb6a229-aa0e-4052-9665-57cd54ba4934",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
     },
     {
@@ -64,9 +56,9 @@
       "event_id": "aa62137e-ccad-48ec-bf45-fb512c2961db",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "source_wording_copied",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
     }
   ],
-  "updated_at": "2026-10-20T17:04:14.204096+00:00"
+  "updated_at": "2026-10-21T17:15:18.856418+00:00"
 }
