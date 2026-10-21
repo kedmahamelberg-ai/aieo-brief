@@ -2,6 +2,365 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Landscape of the Four Seasons",
+      "art_type": "Painting",
+      "balance_origin": "Korea",
+      "creator": "Yi Sumun (Korean, b. c. 1404)",
+      "creator_origin": "Korea, Joseon dynasty (1392–1910)",
+      "culture_type": "illustration",
+      "deck": "Landscape of the Four Seasons. Pair of six-panel screens; ink and slight color on paper.",
+      "headline": "Landscape of the Four Seasons",
+      "image_path": "assets/culture/d529d36ec3307a0c08d13c0b.jpg",
+      "key": "culture:d529d36ec3307a0c08d13c0b",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1976.92/1976.92_web.jpg",
+      "medium": "Pair of six-panel screens; ink and slight color on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1976.92",
+      "provenance_id": "cma:148853",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1976.92",
+      "work_date": "late 1400s",
+      "date": "2026-10-21",
+      "selected_on": "2026-10-21",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-d529d36ec3307a0c08d13c0b",
+      "path": "culture/culture-d529d36ec3307a0c08d13c0b/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Landscape of the Four Seasons",
+          "url": "https://clevelandart.org/art/1976.92",
+          "date": "late 1400s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-21",
+      "summary_basis": "Selected 21 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Papéis Avulsos",
+      "content_fingerprint": "b071c880359923b73697d2043bc0b4d674f91e17dcace693490adf07b2e495cc",
+      "creator": "Machado de Assis",
+      "creator_origin": "Brazilian",
+      "culture_type": "text",
+      "deck": "A passage from Papéis Avulsos.",
+      "excerpt": "O ultimo foi primeiro. Já lhe disse que o Xavier transmittira a idéa a um amigo. Uma semana depois da comedia cae o amigo doente, com tal gravidade que em quatro dias estava á morte. O Xavier corre a vel-o; e o infeliz ainda o pôde conhecer, estender-lhe a mão fria e tremula, cravar-lhe um longo olhar baço da ultima hora, e, com a voz sumida, echo do sepulchro, soluçar-lhe: «Cá voou, meu caro Xavier, o cavallo chucro ou manhoso da vida deitou-me ao chão: se fui mau cavalleiro, não sei; mas forcejei por parecel-o bom.» Não se ria; elle contou-me isto com lagrimas. Contou-me tambem que a idéa ainda esvoaçou alguns minutos sobre o cadaver, faiscando as bellas azas de christal, que elle cria ser diamante; depois estalou um risinho de escarneo, ingrato e parricida, e fugiu como das outras vezes, mettendo-se no cerebro de alguns sujeitos, amigos da casa, que alli estavam, tranzidos de dor, e recolheram com saudade esse pio legado do defuncto. Adeus.",
+      "headline": "Papéis Avulsos · a short reading",
+      "key": "culture:d2d85ab80a60e0726fe92100",
+      "language": "Portuguese",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:57001:passage:b071c880359923b73697d2043bc0b4d674f91e17dcace693490adf07b2e495cc",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/57001"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "68d9d8a21dc3b4f1adb9fdaad9b962304bbb04d9472df4df328b6f8432bdfbe6",
+      "source_locator": "O ALIENISTA; paragraph 807 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/57001",
+      "translator": "",
+      "work_date": "1882",
+      "date": "2026-10-21",
+      "selected_on": "2026-10-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d2d85ab80a60e0726fe92100",
+      "path": "culture/culture-d2d85ab80a60e0726fe92100/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Papéis Avulsos · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/57001",
+          "date": "1882",
+          "language": "Portuguese"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-21",
+      "summary_basis": "Selected 21 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "O ultimo foi primeiro. Já lhe disse que o Xavier transmittira a idéa a um amigo. Uma semana depois da comedia cae o amigo doente, com tal gravidade que em quatro dias estava á morte. O Xavier corre a vel-o; e o infeliz ainda o pôde conhecer, estender-lhe a mão fria e tremula, cravar-lhe um longo olhar baço da ultima hora, e, com a voz sumida, echo do sepulchro, soluçar-lhe: «Cá voou, meu caro Xavier, o cavallo chucro ou manhoso da vida deitou-me ao chão: se fui mau cavalleiro, não sei; mas forcejei por parecel-o bom.» Não se ria; elle contou-me isto com lagrimas. Contou-me tambem que a idéa ainda esvoaçou alguns minutos sobre o cadaver, faiscando as bellas azas de christal, que elle cria ser diamante; depois estalou um risinho de escarneo, ingrato e parricida, e fugiu como das outras vezes, mettendo-se no cerebro de alguns sujeitos, amigos da casa, que alli estavam, tranzidos de dor, e recolheram com saudade esse pio legado do defuncto. Adeus.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "116c2a2abecb58b2de5aa9875d9830e51e298c2aba9d2abc25d004ee8c0da097",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "The claims of contemporary art cannot be ignored in any vital scheme of life.",
+      "headline": "The claims of contemporary art cannot be ignored in any vital scheme of life.",
+      "key": "culture:46a223a3f44ecfc2b0055705",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:116c2a2abecb58b2de5aa9875d9830e51e298c2aba9d2abc25d004ee8c0da097",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The claims of contemporary art cannot be ignored in any vital scheme of life. The art of to-day is that which really belongs to us: it is our own reflection. In condemning it we but condemn ourselves. We say that the present age possesses no art:--who is responsible for this? It is indeed a shame that despite all our rhapsodies about the ancients we pay so little attention to our own possibilities. Struggling artists, weary souls lingering in the shadow of cold disdain! In our self-centered century, what inspiration do we offer them? The past may well look with pity at the poverty of our civilisation; the future will laugh at the barrenness of our art. We are destroying the beautiful in life. Would that some great wizard might from the stem of society shape a mighty harp whose strings would resound to the touch of genius.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 90 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-10-21",
+      "selected_on": "2026-10-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-46a223a3f44ecfc2b0055705",
+      "path": "culture/culture-46a223a3f44ecfc2b0055705/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The claims of contemporary art cannot be ignored in any vital scheme of life.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-21",
+      "summary_basis": "Selected 21 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The claims of contemporary art cannot be ignored in any vital scheme of life.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The claims of contemporary art cannot be ignored in any vital scheme of life. The art of to-day is that which really belongs to us: it is our own reflection. In condemning it we but condemn ourselves. We say that the present age possesses no art:--who is responsible for this? It is indeed a shame that despite all our rhapsodies about the ancients we pay so little attention to our own possibilities. Struggling artists, weary souls lingering in the shadow of cold disdain! In our self-centered century, what inspiration do we offer them? The past may well look with pity at the poverty of our civilisation; the future will laugh at the barrenness of our art. We are destroying the beautiful in life. Would that some great wizard might from the stem of society shape a mighty harp whose strings would resound to the touch of genius.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/33/Rimsky-Korsakov%2C_Russian_Easter_Festival_Overture%2C_Op._36.ogg",
+      "creator": "Nikolai Rimsky-Korsakov",
+      "creator_origin": "Russian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Nikolai Rimsky-Korsakov. 15 minutes to listen.",
+      "duration_seconds": 935,
+      "headline": "Rimsky-Korsakov, Russian Easter Festival Overture, Op. 36",
+      "key": "culture:41aa87403164ebd88b13e89c",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Rimsky-Korsakov%2C_Russian_Easter_Festival_Overture%2C_Op._36.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Nikolai_Rimsky-Korsakov",
+      "original_recording_title": "Rimsky-Korsakov, Russian Easter Festival Overture, Op. 36",
+      "provenance_id": "commons:22303199",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Nikolai Rimsky-Korsakov",
+      "recording_description": "Russian Easter Festival Overture, op. 36",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Nikolai Rimsky-Korsakov",
+        "label": "CC0 (source-declared)",
+        "source_credit": "This work comes from the non profit U.S. organization Musopen where it is available at the following link: http://www.musopen.org/music/piece/1579 The Musopen website requires all uploaders to \"represent and warrant that content uploaded to the site is in the public domain\" (see FAQ #4 ). Musopen's own works ( \"Musopen Materials\" and \"Musopen Service\", not user content or public domain content ), are fully copyrighted and may not be used freely as stated in their Terms and Conditions of Use .",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rimsky-Korsakov,_Russian_Easter_Festival_Overture,_Op._36.ogg",
+      "work_date": "Date not stated in source",
+      "date": "2026-10-21",
+      "selected_on": "2026-10-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-41aa87403164ebd88b13e89c",
+      "path": "culture/culture-41aa87403164ebd88b13e89c/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Rimsky-Korsakov, Russian Easter Festival Overture, Op. 36",
+          "url": "https://commons.wikimedia.org/wiki/File:Rimsky-Korsakov,_Russian_Easter_Festival_Overture,_Op._36.ogg",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-21",
+      "summary_basis": "Selected 21 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "ea7295abf30d89755c993e1411d6014ad503de57f1936454bbc3aa7b205d4108",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "poetry",
+      "deck": "The Gardener · 48, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+      "excerpt": "Free me from the bonds of your sweetness, my love!  No more of\n   this wine of kisses.\n This mist of heavy incense stifles my heart.\n Open the doors, make room for the morning light.\n I am lost in you, wrapped in the folds of your caresses.\n Free me from your spells, and give me back the manhood to offer\n   you my freed heart.",
+      "headline": "The Gardener · 48",
+      "key": "culture:124a489e3517bae757f6f667",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Free me from the bonds of your sweetness, my love!  No more of",
+        "   this wine of kisses.",
+        " This mist of heavy incense stifles my heart.",
+        " Open the doors, make room for the morning light.",
+        " I am lost in you, wrapped in the folds of your caresses.",
+        " Free me from your spells, and give me back the manhood to offer",
+        "   you my freed heart."
+      ],
+      "provenance_id": "pg:6686:poem:fe0b59953955b7f65c22320a5643a10331f9e1d9e6b119ad45edfc71d7dd4f4d",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6686"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5d2c7d33b91b4c8c1459dfa94db44c71d961159c8c8fd0cfcc617252a6e52c75",
+      "source_locator": "48",
+      "source_url": "https://www.gutenberg.org/ebooks/6686",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1913",
+      "date": "2026-10-21",
+      "selected_on": "2026-10-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-124a489e3517bae757f6f667",
+      "path": "culture/culture-124a489e3517bae757f6f667/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Gardener · 48",
+          "url": "https://www.gutenberg.org/ebooks/6686",
+          "date": "1913",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-21",
+      "summary_basis": "Selected 21 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Free me from the bonds of your sweetness, my love!  No more of\n   this wine of kisses.\n This mist of heavy incense stifles my heart.\n Open the doors, make room for the morning light.\n I am lost in you, wrapped in the folds of your caresses.\n Free me from your spells, and give me back the manhood to offer\n   you my freed heart.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/2/29/Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_%2805%29_Ihr_habt_nun_Traurigkeit.ogg",
       "creator": "Johannes Brahms",
       "creator_origin": "German",

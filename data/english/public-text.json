@@ -5734,6 +5734,29 @@
       },
       "output_sha256": "9c541689055bb383c1be9f4f990bc0c46d1413c5aaf4ac7b818de24d51e86a3b",
       "policy": "brief-english-display-v1"
+    },
+    "bfcf8527eb663c7e3c9475d29fd81ba5a0f9be2b4346f61f7fe4666c8afc9577": {
+      "english": {
+        "0": "Loose Papers",
+        "1": "Brazilian",
+        "2": "A passage from Loose Papers.",
+        "3": "The last one came first. I already told you that Xavier transmitted the idea to a friend. A week after the comedy, the friend fell ill, with such gravity that in four days he was near death. Xavier runs to see him; and the unhappy man could still recognize him, extend to him his cold and tremulous hand, fix to him a long dull stare of the last hour, and, with a voice grown faint, echoing from the tomb, sob to him: “There flew away, my dear Xavier, the clumsy or sly horse of life that threw me to the ground: if I was a bad horseman, I do not know; but I strove to make him seem good.” Do not laugh; he told me this with tears. He also told me that the idea still hovered for a few minutes over the corpse, flashing the beautiful wings of crystal, which he believed to be diamond; then burst a sneer of scorn, ungrateful and parricidal, and he fled as in other times, settling into the minds of some people, friends of the house, who there were, overwhelmed with pain, and they recalled with longing that devout legacy of the deceased. Farewell.",
+        "4": "Loose Papers · a short reading",
+        "5": "Loose Papers · a short reading"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b0e95459ef61edbf306d3b6be52fdc2fff40e75e155c897a90d5061f0919b238",
+      "policy": "brief-english-display-v1"
     }
   }
 }
