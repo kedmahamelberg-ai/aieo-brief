@@ -5105,9 +5105,18 @@
         "Liam Paninski",
         "Eva L. Dyer"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-09-21T18:12:47.454532+00:00",
-      "source_verified_at": "2026-09-21T18:12:47.454532+00:00",
+      "institutions": [
+        "University of Pennsylvania",
+        "Mila - Quebec Artificial Intelligence Institute",
+        "Université de Montréal",
+        "Stanford University",
+        "Columbia University",
+        "Allen Institute",
+        "ISPA - Instituto Universitário",
+        "William James Center for Research"
+      ],
+      "affiliation_checked_at": "2026-10-21T19:21:23.169635+00:00",
+      "source_verified_at": "2026-10-21T19:21:23.169635+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -5136,7 +5145,8 @@
       "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
-      "full_text_retry_after": "2026-10-28"
+      "full_text_retry_after": "2026-10-28",
+      "affiliation_source_url": "https://openalex.org/W7213988565"
     },
     {
       "key": "paper:3ffa2d84b6e20da2db465da1",
@@ -5152,8 +5162,8 @@
         "Asim Kadav"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-09-21T18:12:47.454532+00:00",
-      "source_verified_at": "2026-09-21T18:12:47.454532+00:00",
+      "affiliation_checked_at": "2026-10-21T19:21:23.169635+00:00",
+      "source_verified_at": "2026-10-21T19:21:23.169635+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -5182,7 +5192,8 @@
       "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
-      "full_text_retry_after": "2026-10-28"
+      "full_text_retry_after": "2026-10-28",
+      "affiliation_source_url": "https://openalex.org/W7213890474"
     },
     {
       "key": "paper:16a3db0cf187d500a6a42d8e",
