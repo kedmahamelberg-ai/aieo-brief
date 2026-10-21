@@ -89,14 +89,14 @@ jobs:
         uses: ./.github/actions/local-editorial-model
       - name: Write and save news one story at a time
         id: write_news
-        if: inputs.dry_run != true && steps.news.outcome == 'success'
+        if: inputs.dry_run != true && steps.news.outcome == 'success' && steps.news.outputs.pending != '0' && steps.news.outputs.pending != ''
         continue-on-error: true
         env:
           NEWS_MINUTES: ${{ inputs.news_minutes || '45' }}
         run: python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES"
       - name: Write research with its study limits
         id: write_research
-        if: inputs.dry_run != true && steps.collect.outcome == 'success'
+        if: inputs.dry_run != true && steps.collect.outcome == 'success' && steps.research.outputs.pending != '0' && steps.research.outputs.pending != ''
         continue-on-error: true
         env:
           RESEARCH_MINUTES: ${{ inputs.research_minutes || (github.event_name == 'push' && '60') || '15' }}
