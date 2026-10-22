@@ -5780,6 +5780,25 @@
       },
       "output_sha256": "dbb80dac15f52ec29a7e8a6923a4678cdcf15cd4da0f8280875eb413ab5ccef1",
       "policy": "brief-english-display-v1"
+    },
+    "c2a3463096d5c5ee0d5859f1a7b69d0d32657d60fa70163c158d595af7a2f12c": {
+      "english": {
+        "0": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions",
+        "1": "A Quasipolynomial Algorithm for $\\ell_\\infty$ Contractions"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d9c8b01e4b8137ee3283c7afcb2343e20e9aafd4d7d07eefac0a6ae5642e37fc",
+      "policy": "brief-english-display-v1"
     }
   }
 }
