@@ -14,7 +14,7 @@ from news_notifications import public_settings
 from daily_selection import rotation_plan, reading_day
 from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
 from english_publication import EnglishPublication, content_version, LAYOUT
-from weekly_overviews import prepare_weekly_overviews, social_queue
+from weekly_overviews import prepare_weekly_overviews, engagement_items, social_queue
 from weekly_editorials import validate_public_weekly_sources
 from short_links import short_link_routes
 from article_urls import assign_article_urls
@@ -248,6 +248,8 @@ def main():
     for item in allcards:
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
     weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview),allow_model=(not preview and os.environ.get('BRIEF_WRITE_WEEKLY_OVERVIEWS')=='true'),source_news=weekly_source_news,source_research=weekly_source_research)
+    weekly_items=engagement_items(overview_archive)
+    weekly_items_by_key={item['key']:item for item in weekly_items}
     validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,news,research)
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
@@ -290,10 +292,10 @@ def main():
         prefix='../'*len(Path(path).parent.parts)
         local=lambda value:canonical_local(value,prefix)
         # Full text stays in HTML. The interaction payload only needs metadata.
-        local_items=allcards if ctx.get('page') in ('saved','archive','digest') else (
+        local_items=allcards+weekly_items if ctx.get('page')=='saved' else allcards if ctx.get('page') in ('archive','digest') else (
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
             news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
-        client=[{k:x.get(k) for k in ('key','headline','path','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
+        client=[{k:x.get(k) for k in ('key','headline','path','anchor','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
         canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else '')
@@ -316,7 +318,7 @@ def main():
     render('notifications/index.html','notifications.html',page='notifications')
     render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
-    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',page_image=weekly_overview['markets']['image_path'],page_image_alt=weekly_overview['markets']['image_alt'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research. Every overview links to its original reporting and papers.','about':{'@type':'Thing','name':'AI news and research'}})
+    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',items=weekly_items,weekly_items_by_key=weekly_items_by_key,page_image=weekly_overview['markets']['image_path'],page_image_alt=weekly_overview['markets']['image_alt'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research. Every overview links to its original reporting and papers.','about':{'@type':'Thing','name':'AI news and research'}})
     # Every URL exposed by the weekly archive and sitemap must be materialized.
     # The current edition and all earlier editions are rendered from the
     # versioned overview history, so a new week can never break the prior week.
@@ -338,6 +340,9 @@ def main():
             structured_data=archived_schema,
             weekly_page_overview=rendered_overview,
             weekly_page_period_label=fmt(archived_overview['period_start'])+' - '+fmt(archived_overview['period_end']),
+            items=[weekly_items_by_key[f"weekly:{archived_overview['release_id']}:{section}"] for section in ('markets','research')],
+            weekly_markets_item=weekly_items_by_key[f"weekly:{archived_overview['release_id']}:markets"],
+            weekly_research_item=weekly_items_by_key[f"weekly:{archived_overview['release_id']}:research"],
         )
     for page in ('about','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
@@ -367,7 +372,7 @@ def main():
     spotlight=spotlight_feed(ROOT, [lead]+[n for n in news if n is not lead] if lead else news, baseurl, release['release_id'], utc_now())
     (data/'spotlight.json').write_text(json.dumps(spotlight,ensure_ascii=False,indent=2)+'\n')
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
-    (data/'public-items.json').write_text(json.dumps({'items':allcards},ensure_ascii=False)+'\n')
+    (data/'public-items.json').write_text(json.dumps({'items':allcards+weekly_items},ensure_ascii=False)+'\n')
     social=data/'social';social.mkdir()
     (social/'current.json').write_text(json.dumps(social_queue(weekly_overview,baseurl),ensure_ascii=False,indent=2)+'\n')
     shutil.copyfile(ROOT/'assets/news-worker.js', SITE/'news-worker.js')
