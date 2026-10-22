@@ -2,28 +2,22 @@
   "release_id": "2026-W42",
   "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens",
   "counts": {
-    "unchanged": 88,
+    "unchanged": 89,
     "source_not_ready": 0,
-    "new_registry": 7,
-    "needs_model": 7,
+    "new_registry": 6,
+    "needs_model": 6,
     "needs_rebind": 0,
-    "selected": 7,
+    "selected": 6,
     "generated": 1,
     "rebound": 0,
-    "failed": 6,
+    "failed": 5,
     "deferred": 0
   },
   "failure_counts": {
-    "unsupported_number": 6
+    "unsupported_number": 4,
+    "source_wording_copied": 1
   },
   "failed_items": [
-    {
-      "event_id": "b837005d-aef2-47c5-acb0-d7f3adf480ec",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
-    },
     {
       "event_id": "ff9f567f-9aa1-42cd-99bc-8a768d8157cf",
       "error_type": "EditorialError",
@@ -56,9 +50,9 @@
       "event_id": "aa62137e-ccad-48ec-bf45-fb512c2961db",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v7-complete-numeric-tokens"
     }
   ],
-  "updated_at": "2026-10-21T17:15:18.856418+00:00"
+  "updated_at": "2026-10-22T17:13:32.272832+00:00"
 }
