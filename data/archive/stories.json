@@ -2,6 +2,371 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "52c0b201820441c5a4f3c159892537cfb297e2117c919eccd4ff681f95e08d22",
+      "creator": "Po Chu-i",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "Sleeplessness, by Po Chu-i. Translated by L. Cranmer-Byng.",
+      "excerpt": "I cannot rest when the cool is gone from June,\nBut haunt the dim verandah till the moon\n      Fades from the dawn's pursuit.\nThe stirrup-fires beneath the terrace flare;\nOver the star-domed court a low, sad air\n      Roams from a hidden lute.\n\nThis endless heat doth urge me to extremes;\nYet cool of autumn waits till the wild goose screams\n      In the track of whirling skies.\nMy hand is laid upon the cup once more,\nAnd of the red-gold vintage I implore\n      The sleep that night denies.",
+      "headline": "Sleeplessness",
+      "key": "culture:c613d063ba8ed84ec359d672",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "I cannot rest when the cool is gone from June,",
+        "But haunt the dim verandah till the moon",
+        "      Fades from the dawn's pursuit.",
+        "The stirrup-fires beneath the terrace flare;",
+        "Over the star-domed court a low, sad air",
+        "      Roams from a hidden lute.",
+        "",
+        "This endless heat doth urge me to extremes;",
+        "Yet cool of autumn waits till the wild goose screams",
+        "      In the track of whirling skies.",
+        "My hand is laid upon the cup once more,",
+        "And of the red-gold vintage I implore",
+        "      The sleep that night denies."
+      ],
+      "provenance_id": "pg:390:poem:0d9f66f042de0d78b6bc967b15fe929b8a1ac8adb3aa3fb1ca1675f857d09b9f",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "Sleeplessness",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-10-22",
+      "selected_on": "2026-10-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c613d063ba8ed84ec359d672",
+      "path": "culture/culture-c613d063ba8ed84ec359d672/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Sleeplessness",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-22",
+      "summary_basis": "Selected 22 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I cannot rest when the cool is gone from June,\nBut haunt the dim verandah till the moon\n      Fades from the dawn's pursuit.\nThe stirrup-fires beneath the terrace flare;\nOver the star-domed court a low, sad air\n      Roams from a hidden lute.\n\nThis endless heat doth urge me to extremes;\nYet cool of autumn waits till the wild goose screams\n      In the track of whirling skies.\nMy hand is laid upon the cup once more,\nAnd of the red-gold vintage I implore\n      The sleep that night denies.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Madman",
+      "content_fingerprint": "50cfd8db5bc2657be920fdf0d24829f1d508a68f89b2587188e5adb22d59d7ee",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "text",
+      "deck": "A passage from The Madman.",
+      "excerpt": "Once there lived a man who had a valley-full of needles. And one day the mother of Jesus came to him and said: \"Friend, my son's garment is torn and I must needs mend it before he goeth to the temple. Wouldst thou not give me a needle?\"",
+      "headline": "The Madman · a short reading",
+      "key": "culture:bac0af090c2aa66e15928a3b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:5616:passage:50cfd8db5bc2657be920fdf0d24829f1d508a68f89b2587188e5adb22d59d7ee",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/5616"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1323c30d086bdcffe136e37baecb86d15718c773239ad3a50ef05ef63bbafcbc",
+      "source_locator": "By Kahlil Gibran; paragraph 59 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/5616",
+      "translator": "",
+      "work_date": "1918",
+      "date": "2026-10-22",
+      "selected_on": "2026-10-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-bac0af090c2aa66e15928a3b",
+      "path": "culture/culture-bac0af090c2aa66e15928a3b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Madman · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/5616",
+          "date": "1918",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-22",
+      "summary_basis": "Selected 22 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Once there lived a man who had a valley-full of needles. And one day the mother of Jesus came to him and said: \"Friend, my son's garment is torn and I must needs mend it before he goeth to the temple. Wouldst thou not give me a needle?\"",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Pastoral Landscape with Ruins and a Ford",
+      "art_type": "Print",
+      "balance_origin": "Netherlands",
+      "creator": "Gerhardt Janssen (Dutch, 1636–1725)",
+      "creator_origin": "Netherlands",
+      "culture_type": "illustration",
+      "deck": "Pastoral Landscape with Ruins and a Ford. etching and open-bite on laid paper.",
+      "headline": "Pastoral Landscape with Ruins and a Ford",
+      "image_path": "assets/culture/8eea39af449d45a754850845.jpg",
+      "key": "culture:8eea39af449d45a754850845",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2022.51/2022.51_web.jpg",
+      "medium": "etching and open-bite on laid paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2022.51",
+      "provenance_id": "cma:455547",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Jo Hershey Selden Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2022.51",
+      "work_date": "1722",
+      "date": "2026-10-22",
+      "selected_on": "2026-10-22",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-8eea39af449d45a754850845",
+      "path": "culture/culture-8eea39af449d45a754850845/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Pastoral Landscape with Ruins and a Ford",
+          "url": "https://clevelandart.org/art/2022.51",
+          "date": "1722",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-22",
+      "summary_basis": "Selected 22 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "18ff34c25affad534afaf64fb59c98dc3a5f4f393f1775522ce0bf170fc636ef",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "Our desire lends the colours of the rainbow to the mere mists and vapours of life.",
+      "headline": "Our desire lends the colours of the rainbow to the mere mists and vapours of life.",
+      "key": "culture:8ab2244e9af370e6415e3dca",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:18ff34c25affad534afaf64fb59c98dc3a5f4f393f1775522ce0bf170fc636ef",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Our desire lends the colours of the rainbow to the mere mists and vapours of life.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 226 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-10-22",
+      "selected_on": "2026-10-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-8ab2244e9af370e6415e3dca",
+      "path": "culture/culture-8ab2244e9af370e6415e3dca/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Our desire lends the colours of the rainbow to the mere mists and vapours of life.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-22",
+      "summary_basis": "Selected 22 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Our desire lends the colours of the rainbow to the mere mists and vapours of life.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Our desire lends the colours of the rainbow to the mere mists and vapours of life.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vivaldi_-_Cello_Concerto_Gmaj_-_1._Allegro.ogg",
+      "creator": "Antonio Vivaldi",
+      "creator_origin": "Italian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Antonio Vivaldi. 3 minutes to listen.",
+      "duration_seconds": 196,
+      "headline": "Vivaldi - Cello Concerto Gmaj - 1. Allegro",
+      "key": "culture:54cee6a3e363963e38e03ead",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Vivaldi_-_Cello_Concerto_Gmaj_-_1._Allegro.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Antonio_Vivaldi",
+      "original_recording_title": "Vivaldi - Cello Concerto Gmaj - 1. Allegro",
+      "provenance_id": "commons:5313182",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "the Advent Chamber Orchestra with Stephen Balderston (cello)",
+      "recording_description": "Vivaldi's Cello Concerto in G major, RV 413",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "the Advent Chamber Orchestra with Stephen Balderston (cello)",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Cello_Concerto_Gmaj_-_1._Allegro.ogg",
+      "work_date": "2008-10",
+      "date": "2026-10-22",
+      "selected_on": "2026-10-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-54cee6a3e363963e38e03ead",
+      "path": "culture/culture-54cee6a3e363963e38e03ead/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Vivaldi - Cello Concerto Gmaj - 1. Allegro",
+          "url": "https://commons.wikimedia.org/wiki/File:Vivaldi_-_Cello_Concerto_Gmaj_-_1._Allegro.ogg",
+          "date": "2008-10",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-22",
+      "summary_basis": "Selected 22 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Landscape of the Four Seasons",
       "art_type": "Painting",
       "balance_origin": "Korea",

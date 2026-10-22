@@ -5757,6 +5757,29 @@
       },
       "output_sha256": "b0e95459ef61edbf306d3b6be52fdc2fff40e75e155c897a90d5061f0919b238",
       "policy": "brief-english-display-v1"
+    },
+    "ba36fea87a115408dac78ee4ac1e0e0d264e953c257ae2f5fc98154fb5bf81b7": {
+      "english": {
+        "0": "Italian",
+        "1": "Composer",
+        "2": "Vivaldi - Cello Concerto Gmaj - 1. Allegro",
+        "3": "Vivaldi's Cello Concerto in G major, RV 413",
+        "4": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "5": "Vivaldi - Cello Concerto Gmaj - 1. Allegro"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "dbb80dac15f52ec29a7e8a6923a4678cdcf15cd4da0f8280875eb413ab5ccef1",
+      "policy": "brief-english-display-v1"
     }
   }
 }
