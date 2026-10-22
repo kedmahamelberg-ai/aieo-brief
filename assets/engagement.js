@@ -3,8 +3,9 @@
   const community = window.BriefCommunity;
   const consent = () => !!(window.BriefAnalytics?.allowed() && community?.enabled);
   const storageKey = 'brief-public-metric-session';
-  const keyPattern = /^(event:[0-9a-f-]{36}|(?:paper|culture):[0-9a-f]{24})$/i;
+  const keyPattern = /^(event:[0-9a-f-]{36}|(?:paper|culture):[0-9a-f]{24}|weekly:\d{4}-W\d{2}:(?:markets|research))$/i;
   let session, elapsed = 0, viewDone = false, inFlight = false, retryAt = 0;
+  const weeklyReads = new Map();
   function sessionId() {
     if (!consent()) return null;
     try {
@@ -49,7 +50,7 @@
   window.addEventListener('brief-metrics-refresh', refresh);
   window.addEventListener('brief-auth', refresh);
   window.addEventListener('brief-consent', e => {
-    if (!e.detail?.analytics) { elapsed = 0; session = null; viewDone = false; try { sessionStorage.removeItem(storageKey); } catch (_) {} }
+    if (!e.detail?.analytics) { elapsed = 0; session = null; viewDone = false; weeklyReads.clear(); try { sessionStorage.removeItem(storageKey); } catch (_) {} }
   });
   document.addEventListener('click', e => {
     const link = e.target.closest?.('#share-dialog a[data-share-channel]');
@@ -64,6 +65,33 @@
     if (elapsed < 5) return;
     viewDone = true;
     record(key, 'view').catch(() => { viewDone = false; retryAt = Date.now() + 60000; });
+  }, 1000);
+  // Each detail page contains two readings. Count time only while that reading
+  // is visible, and use the same consent and qualification rules as stories.
+  setInterval(() => {
+    if (!consent() || document.hidden) return;
+    document.querySelectorAll('[data-engagement-key]').forEach(node => {
+      const key = node.dataset.engagementKey;
+      if (!keyPattern.test(key || '')) return;
+      const copy = node.querySelector('[data-weekly-reading-body]');
+      const rect = copy?.getBoundingClientRect();
+      if (!rect || Math.min(rect.bottom, innerHeight) - Math.max(rect.top, 0) < Math.min(160, rect.height * .25)) return;
+      const state = weeklyReads.get(key) || {seconds:0,viewDone:false,readDone:false,viewRetryAt:0,readRetryAt:0};
+      weeklyReads.set(key, state);
+      state.seconds++;
+      if (state.seconds >= 5 && !state.viewDone && Date.now() >= state.viewRetryAt) {
+        state.viewDone = true;
+        record(key, 'view').catch(() => { state.viewDone = false; state.viewRetryAt = Date.now() + 60000; });
+      }
+      const progress = Math.max(0, Math.min(1, (innerHeight - rect.top) / Math.max(1, rect.height)));
+      if (!state.readDone && Date.now() >= state.readRetryAt &&
+          window.BriefCore.qualifiedRead(state.seconds, progress, consent())) {
+        state.readDone = true;
+        community.rpc('brief_community_record_read', {
+          p_story_key:key,p_session_id:sessionId(),p_active_seconds:state.seconds,p_progress:progress
+        }).then(() => refresh()).catch(() => { state.readDone = false; state.readRetryAt = Date.now() + 60000; });
+      }
+    });
   }, 1000);
   setInterval(() => { if (!document.hidden) refresh(); }, 60000);
   refresh();
