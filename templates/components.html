@@ -8,7 +8,7 @@
 </div>
 <div class="story-actions" data-key="{{ item.key }}">
 <button data-action="like" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">♡</span> Like <span data-like-count="{{ item.key }}" hidden></span></button>
-<a href="{{ local(item.path) }}#conversation" class="comment-link"><span aria-hidden="true">▤</span> Discuss <span data-comment-count="{{ item.key }}" hidden></span></a>
+<a href="{{ local(item.path) }}#{{ item.get('conversation_anchor', 'conversation') }}" class="comment-link"><span aria-hidden="true">▤</span> Discuss <span data-comment-count="{{ item.key }}" hidden></span></a>
 <button data-action="share" data-key="{{ item.key }}"><span aria-hidden="true">↗</span> Share</button>
 <button data-action="save" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">▱</span> Save</button>
 </div>

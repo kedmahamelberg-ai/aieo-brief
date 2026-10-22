@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% from 'weekly-prose.html' import prose with context %}
+{% from 'components.html' import actions with context %}
+{% from 'conversation.html' import conversation with context %}
 {% block title %}{{ weekly_page_overview.markets.title if weekly_page_overview is defined else weekly_overview.markets.title }} | The Brief{% endblock %}
 {% block description %}{{ weekly_page_overview.markets.deck if weekly_page_overview is defined else weekly_overview.markets.deck }}{% endblock %}
 {% block content %}
@@ -13,7 +15,7 @@
     <p>{{ page_period_label }} · two one-minute readings</p>
   </header>
 
-  <article id="five-markets" class="weekly-feature weekly-feature-detail{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
+  <article id="five-markets" data-engagement-key="{{ weekly_markets_item.key }}" class="weekly-feature weekly-feature-detail{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
     <figure>
       {% if page_weekly_overview.markets.image_reason %}<p class="weekly-image-metaphor">{{ page_weekly_overview.markets.image_reason }}</p>{% endif %}
       <img src="{{ local(page_weekly_overview.markets.image_path) }}" alt="{{ page_weekly_overview.markets.image_alt }}" width="1200" height="675">
@@ -22,6 +24,8 @@
     <div class="weekly-feature-copy">
       <span class="eyebrow">{{ page_weekly_overview.markets.eyebrow }} · 1 MIN READ</span>
       <h2>{{ page_weekly_overview.markets.title }}</h2>
+      {{ actions(weekly_markets_item, true) }}
+      <div data-weekly-reading-body>
       {% if page_weekly_overview.editorial_version %}
       {{ prose(page_weekly_overview.markets) }}
       {% else %}
@@ -37,10 +41,12 @@
       </div>
       <p class="weekly-scope">{{ page_weekly_overview.markets.scope_note }}</p>
       {% endif %}
+      </div>
+      {{ conversation(weekly_markets_item, weekly_markets_item.conversation_anchor) }}
     </div>
   </article>
 
-  <article id="research-compass" class="weekly-feature weekly-feature-detail weekly-feature-research{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
+  <article id="research-compass" data-engagement-key="{{ weekly_research_item.key }}" class="weekly-feature weekly-feature-detail weekly-feature-research{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
     <figure>
       {% if page_weekly_overview.research.image_reason %}<p class="weekly-image-metaphor">{{ page_weekly_overview.research.image_reason }}</p>{% endif %}
       <img src="{{ local(page_weekly_overview.research.image_path) }}" alt="{{ page_weekly_overview.research.image_alt }}" width="1200" height="675">
@@ -49,6 +55,8 @@
     <div class="weekly-feature-copy">
       <span class="eyebrow">{{ page_weekly_overview.research.eyebrow }} · 1 MIN READ</span>
       <h2>{{ page_weekly_overview.research.title }}</h2>
+      {{ actions(weekly_research_item, true) }}
+      <div data-weekly-reading-body>
       {% if page_weekly_overview.editorial_version %}
       {{ prose(page_weekly_overview.research) }}
       {% else %}
@@ -68,6 +76,8 @@
       </ol>
       {% endif %}
       {% if not page_weekly_overview.editorial_version %}<p class="weekly-scope">{{ page_weekly_overview.research.scope_note }}</p>{% endif %}
+      </div>
+      {{ conversation(weekly_research_item, weekly_research_item.conversation_anchor) }}
     </div>
   </article>
 </main>
