@@ -18,7 +18,7 @@ from weekly_overviews import prepare_weekly_overviews, social_queue
 from weekly_editorials import validate_public_weekly_sources
 from short_links import short_link_routes
 from article_urls import assign_article_urls
-from search_metadata import identity_graph, canonical_local
+from search_metadata import identity_graph, canonical_local, weekly_overview_with_canonical_links
 from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
 ROOT=Path(__file__).resolve().parents[1]
@@ -321,10 +321,11 @@ def main():
     # The current edition and all earlier editions are rendered from the
     # versioned overview history, so a new week can never break the prior week.
     for archived_overview in overview_archive:
+        rendered_overview=weekly_overview_with_canonical_links(archived_overview,allcards)
         archived_image=(baseurl+'/'+archived_overview['markets']['image_path']) if baseurl else archived_overview['markets']['image_path']
         market_image=image_object(baseurl, archived_overview['markets']['image_path'], archived_overview['markets'].get('image_alt',''), archived_overview['markets'].get('image_caption',''), archived_overview['markets'].get('image_credit',''), archived_overview['markets'].get('image_rights',''), archived_overview['markets'].get('image_source_url',''))
         research_image=image_object(baseurl, archived_overview['research']['image_path'], archived_overview['research'].get('image_alt',''), archived_overview['research'].get('image_caption',''), archived_overview['research'].get('image_credit',''), archived_overview['research'].get('image_rights',''), archived_overview['research'].get('image_source_url',''))
-        archived_schema={'@context':'https://schema.org','@type':'Article','headline':archived_overview['markets']['title'],'description':archived_overview['markets']['deck'],'datePublished':archived_overview['period_end'],'dateModified':archived_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@id':'https://brief.hamelberg-ai.com/#organization'},'about':{'@type':'Thing','name':'Weekly AI news and research overview'},'citation':[absolute_url(baseurl, entry['story']['path']) for entry in archived_overview['markets'].get('entries',[]) if entry.get('story',{}).get('path')]+[paper['url'] for paper in archived_overview['research'].get('papers',[]) if paper.get('url')]}
+        archived_schema={'@context':'https://schema.org','@type':'Article','headline':archived_overview['markets']['title'],'description':archived_overview['markets']['deck'],'datePublished':archived_overview['period_end'],'dateModified':archived_overview['period_end'],'author':{'@type':'Organization','name':'AI Empowerment Observatory'},'publisher':{'@id':'https://brief.hamelberg-ai.com/#organization'},'about':{'@type':'Thing','name':'Weekly AI news and research overview'},'citation':[absolute_url(baseurl, entry['story']['path'].removesuffix('index.html')) for entry in rendered_overview['markets'].get('entries',[]) if entry.get('story',{}).get('path')]+[paper['url'] for paper in rendered_overview['research'].get('papers',[]) if paper.get('url')]}
         archived_schema['image']=[image for image in (market_image,research_image) if image]
         if archived_overview.get('editorial_status') == 'ready':
             archived_schema['author']={'@type':'Person','@id':'https://kedmahamelberg.com/#person','name':'Kedma Hamelberg','url':'https://kedmahamelberg.com/'}
@@ -335,7 +336,7 @@ def main():
             page_image=archived_overview['markets']['image_path'],
             page_image_alt=archived_overview['markets'].get('image_alt',''),
             structured_data=archived_schema,
-            weekly_page_overview=archived_overview,
+            weekly_page_overview=rendered_overview,
             weekly_page_period_label=fmt(archived_overview['period_start'])+' - '+fmt(archived_overview['period_end']),
         )
     for page in ('about','privacy','account','moderation'):

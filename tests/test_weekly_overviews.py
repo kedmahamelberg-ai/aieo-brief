@@ -9,9 +9,24 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
 from weekly_overviews import prepare_weekly_overviews, social_queue
 from research_affiliations import enrich_affiliations
+from search_metadata import weekly_overview_with_canonical_links
 
 
 class WeeklyOverviewTests(unittest.TestCase):
+    def test_saved_overview_links_follow_current_article_urls(self):
+        saved = {
+            'markets': {'entries': [{'story': {'path': 'story/old/index.html'}}]},
+            'research': {'papers': [{'path': 'research/old/index.html'}]},
+        }
+        items = [
+            {'path': 'story/current/index.html', 'legacy_paths': ['story/old/index.html']},
+            {'path': 'research/current/index.html', 'legacy_paths': ['research/old/index.html']},
+        ]
+        rendered = weekly_overview_with_canonical_links(saved, items)
+        self.assertEqual(rendered['markets']['entries'][0]['story']['path'], 'story/current/index.html')
+        self.assertEqual(rendered['research']['papers'][0]['path'], 'research/current/index.html')
+        self.assertEqual(saved['markets']['entries'][0]['story']['path'], 'story/old/index.html')
+
     def news(self):
         rows=[]
         for index,(code,name) in enumerate((('CA','Canada'),('CN','China'),('FR','France'),('GB','United Kingdom'),('US','United States'))):
