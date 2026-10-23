@@ -8,8 +8,9 @@ on:
       news_only:
         type: boolean
         default: false
-  schedule:
-    - cron: '15 12 * * *'
+      research_only:
+        type: boolean
+        default: false
   workflow_dispatch:
     inputs:
       research_only:
