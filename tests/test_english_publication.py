@@ -6,12 +6,14 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from english_publication import EnglishPublication,digest,POLICY,content_version,non_latin,slots
+from english_publication import EnglishPublication,digest,POLICY,content_version,non_latin,slots,culture_slots
+from build_site import require_english_culture
+from culture_library import validate_record
 
 class EnglishPublicationTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory();self.addCleanup(self.temp.cleanup)
-        self.row={'key':'culture:'+'a'*24,'kind':'culture','headline':'Papéis avulsos',
+        self.row={'key':'culture:'+'a'*24,'kind':'culture','culture_type':'text','headline':'Papéis avulsos',
                   'excerpt':'Eram quase onze horas quando acabou a leitura.',
                   'language':'Portuguese','creator':'Machado de Assis',
                   'poem_lines':[],'body_paragraphs':[],
@@ -29,11 +31,11 @@ class EnglishPublicationTests(unittest.TestCase):
         self.assertEqual(row,self.row);self.assertEqual(out['headline'],'Miscellaneous Papers')
         self.assertEqual(out['key'],row['key']);self.assertEqual(out['sources'][0]['url'],row['sources'][0]['url'])
         self.assertEqual(out['creator'],'Machado de Assis');self.assertEqual(out['publication_language'],'en')
-        self.assertEqual(out['sources'][0]['headline'],'Artificial intelligence and education')
+        self.assertEqual(out['sources'][0]['headline'],row['sources'][0]['headline'])
         self.assertTrue(out['brief_translation_note']);self.assertEqual(out['excerpt_parts'][0]['text'],out['excerpt'])
     def test_failure_has_english_notice_no_foreign_prose(self):
         eng=EnglishPublication(self.temp.name,False,self.checker);out=eng.apply(self.row)
-        self.assertEqual(out['english_status'],'pending');self.assertFalse(non_latin(out['sources'][0]['headline']))
+        self.assertEqual(out['english_status'],'pending');self.assertEqual(out['sources'][0]['headline'],self.row['sources'][0]['headline'])
         self.assertNotIn('Eram',out['excerpt']);self.assertEqual(eng.pending,1)
     def test_cache_avoids_repeated_model_calls(self):
         eng=EnglishPublication(self.temp.name,True,self.checker)
@@ -61,5 +63,48 @@ class EnglishPublicationTests(unittest.TestCase):
     def test_nonlatin_detection(self):
         for text in ['人工智能','الذكاء الاصطناعي','исследование','研究']:self.assertTrue(non_latin(text))
         self.assertFalse(non_latin('Français, Portuguese and English'))
+
+    def test_old_reviewed_literary_translation_is_reused(self):
+        eng=EnglishPublication(self.temp.name,False,self.checker)
+        old=[(p,v) for p,v in slots(self.row) if self.checker(v,str(p[-1]))]
+        values={str(i):v for i,(_,v) in enumerate(old)}
+        eng.cache[digest({'policy':POLICY,'fields':values})]=self.translator(values)
+        eng.save()
+        out=eng.apply(self.row)
+        self.assertEqual(out['english_status'],'translated')
+        self.assertEqual(out['excerpt'],'It was almost eleven when the reading ended.')
+        self.assertEqual(out['sources'][0]['headline'],self.row['sources'][0]['headline'])
+
+    def test_published_culture_has_no_translation_placeholders(self):
+        root=Path(__file__).resolve().parents[1]
+        cache=self.temp.name+'/data/english/public-text.json'
+        Path(cache).parent.mkdir(parents=True)
+        Path(cache).write_bytes((root/'data/english/public-text.json').read_bytes())
+        eng=EnglishPublication(self.temp.name,False)
+        archive=json.loads((root/'data/archive/stories.json').read_text())['stories']
+        culture=[item for item in archive if item.get('kind')=='culture']
+        self.assertGreaterEqual(len(culture),200)
+        public={item['key']:eng.apply(item) for item in culture}
+        self.assertFalse([key for key,item in public.items() if item['english_status']=='pending'])
+        gauguin=public['culture:21b374cc5db78518fc910f06']
+        self.assertEqual(gauguin['headline'],'In the Waves (Dans les Vagues)')
+        self.assertEqual(gauguin['rights']['label'],'CC0 image')
+
+    def test_collection_marks_only_real_translation_work(self):
+        root=Path(__file__).resolve().parents[1]
+        counts={}
+        for kind in ('art','poetry','text','quote','music'):
+            rows=json.loads((root/f'data/culture/library-{kind}.json').read_text())
+            self.assertEqual(len(rows),400)
+            for row in rows:validate_record(row)
+            counts[kind]=sum(bool(list(culture_slots(row))) for row in rows)
+        self.assertEqual(counts,{'art':0,'poetry':22,'text':29,'quote':0,'music':4})
+
+    def test_untranslated_culture_blocks_publication(self):
+        pending={'key':'culture:'+'a'*24,'kind':'culture','english_status':'pending'}
+        with self.assertRaisesRegex(ValueError,'Untranslated culture cannot be published'):
+            require_english_culture([pending])
+        require_english_culture([pending],preview=True)
+        require_english_culture([{'key':'news','kind':'news','english_status':'pending'}])
 
 if __name__=='__main__':unittest.main()

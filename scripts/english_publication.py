@@ -68,6 +68,33 @@ def slots(item, prefix=()):
                         yield from slots(row, path + (i,))
 
 
+def culture_slots(item):
+    """Translate literary content, while keeping work titles and source credits intact.
+
+    The generic language detector mistakes short English metadata (including
+    ``CC0 image`` and Roman numerals) for foreign prose. Source-language metadata
+    is authoritative for the stored literary collection.
+    """
+    kind = item.get('culture_type')
+    language = str(item.get('language') or '').casefold()
+    if kind in ('poetry', 'text', 'quote') and language not in ('', 'en', 'english'):
+        fields = ('headline', 'deck', 'book_title')
+        fields += ('poem_lines',) if kind == 'poetry' else ('excerpt', 'quote_context') if kind == 'quote' else ('excerpt',)
+        for field in fields:
+            value = item.get(field)
+            if field == 'poem_lines' and isinstance(value, list):
+                value = '\n'.join(value)
+            if isinstance(value, str) and value.strip():
+                yield (field,), value
+    elif kind == 'music':
+        # A title beginning in another script needs an English display title.
+        # Parenthetical original titles and proper names remain as source titles.
+        title = str(item.get('headline') or '')
+        first = next((c for c in title if c.isalpha()), '')
+        if first and 'LATIN' not in unicodedata.name(first, ''):
+            yield ('headline',), title
+
+
 def put(item, path, value):
     target = item
     for part in path[:-1]:
@@ -136,7 +163,8 @@ class EnglishPublication:
 
     def apply(self, item):
         result = copy.deepcopy(item)
-        candidates = [(path, value) for path, value in slots(item) if self.checker(value, str(path[-1]))]
+        candidates = (list(culture_slots(item)) if item.get('kind') == 'culture' else
+                      [(path, value) for path, value in slots(item) if self.checker(value, str(path[-1]))])
         if not candidates:
             result.update(publication_language='en', english_status='checked')
             parts(result)
@@ -144,11 +172,27 @@ class EnglishPublication:
         values = {str(i): text for i, (_, text) in enumerate(candidates)}
         self.field_labels={str(i):'.'.join(map(str,path)) for i,(path,_) in enumerate(candidates)}
         key = digest({'policy': POLICY, 'fields': values})
+        def valid(cached, expected):
+            return (cached and cached.get('policy') == POLICY and
+                    cached.get('output_sha256') == digest(cached.get('english')) and
+                    set(cached.get('english', {})) == set(expected) and
+                    all(cached.get('review', {}).get(k) is True for k in
+                        ('english_only', 'meaning_preserved', 'attribution_preserved')))
         entry = self.cache.get(key)
-        if entry and (entry.get('policy') != POLICY or entry.get('output_sha256') != digest(entry.get('english'))
-                      or set(entry.get('english', {})) != set(values)
-                      or not all(entry.get('review', {}).get(k) is True for k in ['english_only','meaning_preserved','attribution_preserved'])):
+        if not valid(entry, values):
             entry = None
+        if entry is None and item.get('kind') == 'culture':
+            # Reuse reviewed translations made before culture-specific filtering.
+            old = [(path, value) for path, value in slots(item) if self.checker(value, str(path[-1]))]
+            old_values = {str(i): value for i, (_, value) in enumerate(old)}
+            previous = self.cache.get(digest({'policy': POLICY, 'fields': old_values}))
+            if valid(previous, old_values):
+                by_path = {path: previous['english'][str(i)] for i, (path, _) in enumerate(old)}
+                if all(path in by_path for path, _ in candidates):
+                    translated = {str(i): by_path[path] for i, (path, _) in enumerate(candidates)}
+                    entry = {**previous, 'english': translated, 'output_sha256': digest(translated)}
+                    self.cache[key] = entry
+                    self.save()
         if entry:
             self.cached += 1
         elif self.allow_model and not self.stopped:
