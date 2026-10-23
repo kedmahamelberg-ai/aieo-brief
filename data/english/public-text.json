@@ -5799,6 +5799,231 @@
       },
       "output_sha256": "d9c8b01e4b8137ee3283c7afcb2343e20e9aafd4d7d07eefac0a6ae5642e37fc",
       "policy": "brief-english-display-v1"
+    },
+    "6ccd93bc53ed63b41ef90da92b106a16d501db70f0046c6268882d504b9ec3c3": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "The last one came first. I already told you that Xavier transmitted the idea to a friend. A week after the comedy, the friend fell ill, with such gravity that in four days he was near death. Xavier runs to see him; and the unhappy man could still recognize him, extend to him his cold and tremulous hand, fix to him a long dull stare of the last hour, and, with a voice grown faint, echoing from the tomb, sob to him: “There flew away, my dear Xavier, the clumsy or sly horse of life that threw me to the ground: if I was a bad horseman, I do not know; but I strove to make him seem good.” Do not laugh; he told me this with tears. He also told me that the idea still hovered for a few minutes over the corpse, flashing the beautiful wings of crystal, which he believed to be diamond; then burst a sneer of scorn, ungrateful and parricidal, and he fled as in other times, settling into the minds of some people, friends of the house, who there were, overwhelmed with pain, and they recalled with longing that devout legacy of the deceased. Farewell."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "348152d51f42dcb39e0f22b016b4327879413004247f80b6bde2b9b4f0b62289",
+      "policy": "brief-english-display-v1"
+    },
+    "6753fefd4f741c1efdc33e3336b78349750fc8dfb91a87a5ca56f2225b851a3d": {
+      "english": {
+        "0": "Relíquias de Casa Velha · a short reading",
+        "1": "A passage from Relíquias de Casa Velha.",
+        "2": "Relics of the Old House",
+        "3": "The last time I saw Eduardo Prado was on the eve of leaving Rio de Janeiro to go to São Paulo, they say, with the germ of evil and of death itself. On that occasion he was all life and health. Whoever then told me that he would also leave the world would not astonish me, because the injustice of nature accustoms people to its blows; but it is certain that I would seek a way to obtain other hours like that one, in which I would linger at his side, to hear him and admire him."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "79f30a6582f61b705068cf34e85ee23aab675387ba81c9733c76f5e636dca2d3",
+      "policy": "brief-english-display-v1"
+    },
+    "9fe8460e3a695bd5ceb578bc157774d4c5009441256e048c22a0da865bec5cbe": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Papéis Avulsos.",
+        "2": "Loose Papers",
+        "3": "--Let us come to the main point. Once you have entered the career, you must take all care in the ideas you have to nurture for use by others and for yourself. The best would be not to have them at all; you will understand this well, imagining, for example, an actor deprived of the use of an arm. He can, by a miracle of artific e, disguise the defect from the eyes of the audience; but it would be much better to have both. The same happens with ideas; one can, with force, suppress them, hide them even unto death; but neither that skill is common, nor would such constant effort suit the exercise of life."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1232c6664b04946285bdf1e19a951058a1402b19ec40e3958fa0e8cdbbc440e1",
+      "policy": "brief-english-display-v1"
+    },
+    "af48c87a77cd9c9abd77f705fb6d403c953bce2ea5abb405c6534a2f5e9ed388": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "Crispim paled. What important matter could it be, if not some sad news from the entourage, and especially from the wife? Because this topic must be clearly defined, since the chroniclers insist on it there: Crispim loved the wife, and, for thirty years, they had never been apart for a single day. Thus are explained the monologues that he now made, and which the servants often heard him utter: --\"Go on, well done, who told you to consent to Cesaria's voyage? Flatterer, clumsy flatterer! Only to flatter Dr. Bacamarte. For now endure yourself; go on, endure yourself, soul of a lackey, scoundrel, vile, miserable. You say _amen_ to everything, don't you? there you have the profit, you rogue!\" And many other ugly names, that a man should not say to others, much less to himself. From this to imagining the effect of the message is nothing. As quickly as he received it, so quickly did he give up the drugs and fly to Casa Verde."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2c91570fff1bfb2055b01a852ce943eb10746c5a0c2ab315eef589e0a517eec5",
+      "policy": "brief-english-display-v1"
+    },
+    "8d164142b8fca36bb97cd5e8128507161256a4e626b486bc0bb416a6a330adf9": {
+      "english": {
+        "0": "I loved my sorrow"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "3cc0474d58b41ed6422cba90acce91832bf5e0a4b52f51ec856b80a0f5a6fe22",
+      "policy": "brief-english-display-v1"
+    },
+    "3339c74110635060d2dc2b9ef339471059b1a5436f004115ab3904296126caad": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "I tell you only three. One day, Xavier came to believe that he could finally seize the fugitive and pin her permanently in his brain. He opened an opposition newspaper, and read astonished these words: \"The ministry seems to ignore that politics is, like life, a clumsy or sly horse, and, not being a good horseman, because he never was, he should at least seem that he is.\" Ah! finally! exclaimed Xavier, here you are wedged in the fish's belly; you can no longer escape me.\" But, in vain! the idea escaped him, leaving no trace other than a confused reminiscence. Somber, desperate, he began to walk, walking, until night fell; passing by a theater, he entered; many people, many lights, much joy; his heart grew calm. Culmination of benefits: it was a comedy by Pires, a new comedy. He sat beside the author, applauded the work with enthusiasm, with sincere love of artist and brother. In the second act, scene VIII, he trembled. \"D. Eugenia, the gallant tells a lady, the horse can be compared to life, which is also a clumsy or sly horse; he who is not a good horseman should take care to seem that he is one.\" The author, with a timid look, peered at Xavier's face to see the effect of that reflection, while Xavier repeated the same plea as on other occasions;—\"My dear annel...\""
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6d8d463431fac5475783e8ec125753880d80995e579d00925a80b6083b19f8d7",
+      "policy": "brief-english-display-v1"
+    },
+    "c36522bd3e94da01a02700b4127f9ee0be558d86392dfefa96eee1ac8bcde83d": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "The next day, in the agreed manner, we went to the houses of the said bonzo, named Pomada, an elder of one hundred and eight years, very learned and knowledgeable in divine and human letters, and greatly approved by all that gentility, and for that very reason ill regarded by other bonzos, who died of pure jealousy. And having heard the said bonzo tell Titané who we were and what we wanted, he first began us with various ceremonies and rites necessary for the reception of the doctrine, and only after that did he raise his voice to confide it to us and explain it."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0aac62de8be0e5c511641aecba4ec6d7f467e5495582df1c16523cf54a68b4cd",
+      "policy": "brief-english-display-v1"
+    },
+    "a46209920d6915d48e886acc5d218b9d23d6200ad710fd084af568362e242568": {
+      "english": {
+        "0": "Grieg song Solveig, Peer Gynt - Alina Ribina (audio)"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8dae403da90dfbb7b437c9df84170d4b991ddcd4b65c8cf0779b01b96d367e6a",
+      "policy": "brief-english-display-v1"
+    },
+    "13cd1f87d589cb1936aef2993b8909442356c3b3d8b97d4146356afc8e8d0613": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "--Charity, Mr. Soares, certainly enters into my procedure, but enters as seasoning, as the salt of things, which is how I interpret the saying of St. Paul to the Corinthians: \"If I know as much as can be known, and do not have charity, I am nothing.\" The main thing in this my work of the Green House is to study madness deeply, its various grains, to classify the cases, to discover, in short, the cause of the phenomenon and the universal remedy. This is the mystery of my heart. I believe that with this I render a good service to humanity."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1a8ae4b9175bf498ca2a12b82a9ed38e08fcf8ee1183df8ec18e0ce0f8feb763",
+      "policy": "brief-english-display-v1"
+    },
+    "20ccd6b3bd5ddb35981160a1d2f2f81294da50280a6a9875dfb925e47bfb1634": {
+      "english": {
+        "0": "Relics of the Old House · a short reading",
+        "1": "A passage from Relíquias de Casa Velha.",
+        "2": "Relics of the Old House",
+        "3": "It was neither easy nor brief. In the Battle of the Crossroads I believe that I faced it with the necessary intrepidity and discipline, and I must note here that I was getting used to the life of civil war. The hatreds I heard were reactionary forces. On one side and the other they fought with ardor, and the passion I felt began to take hold of me. I had already read my name in a general order, and in spoken voice I had received praises, which I could not help but deem just, and even now I declare such praises. But let us get to the main matter, which is to end this."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4303bda54087a6884f811d68e9c516f5f08c88ebbc47ddc8dd2e9b981d39c18c",
+      "policy": "brief-english-display-v1"
+    },
+    "68b750af19122f04e0cf2ee35737d35dfcb91da326e0ebb18f31a56e29fbb2f0": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "It was almost eleven o'clock when the reading of this second scene ended. Duarte could hardly contain his anger; it was already impossible to go to Rio Comprido. It is not out of place to conjecture that, if the major were to expire at that moment, Duarte would welcome death as a blessing from Providence. The bachelor’s feelings did not convince him of such ferocity; but the reading of a bad book is capable of producing still more astonishing phenomena. Moreover, as to the bachelor’s fleshy eyes, in full view appeared the tangle of Lopo Alves, the golden strands that adorned Cecilia’s beautiful head flashed into his spirit; he saw her with blue eyes, white and rosy complexion, a delicate and graceful gesture, dominating all the other ladies who should have been in Widow Menezes’s salon. He saw that, and mentally heard the music, the discourse, the rustle of steps, and the swish of silks; while the hoarse and tiresome voice of Lopo Alves was stringing together the scenes and dialogues, with the impassibility of a strong conviction."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "89452f51765f3cc03338ad706eeb22487e7af02f889cbbee8fcae3e431fc55fd",
+      "policy": "brief-english-display-v1"
     }
   }
 }
