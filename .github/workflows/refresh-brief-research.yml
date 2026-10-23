@@ -1,0 +1,13 @@
+name: Refresh Brief Research
+on:
+  schedule:
+    - cron: '15 12 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  research:
+    uses: ./.github/workflows/generate-brief-editorial.yml
+    with:
+      research_only: true
+    secrets: inherit
