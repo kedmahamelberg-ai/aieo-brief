@@ -53,6 +53,8 @@ def validate_record(row, root=None, check_image=False):
         if not row.get('recording_credit'):
             raise ValueError('Recording credit is missing')
     else:
+        if not row.get('language'):
+            raise ValueError('Literary source language is missing: ' + row['key'])
         if not row.get('excerpt') or not row.get('source_locator'):
             raise ValueError('Text or its location is missing')
         if kind == 'quote' and row['excerpt'] not in row.get('quote_context', ''):
