@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from 'components.html' import actions with context %}
 {% block title %}Weekly AI overviews | The Brief{% endblock %}
 {% block description %}The archive of one-minute weekly views across five AI discovery markets and the research compass.{% endblock %}
 {% block content %}
@@ -10,12 +11,16 @@
   </header>
   <div class="weekly-archive-grid">
     {% for overview in overview_archive %}
+    {% set markets_item = weekly_items_by_key['weekly:' ~ overview.release_id ~ ':markets'] %}
+    {% set research_item = weekly_items_by_key['weekly:' ~ overview.release_id ~ ':research'] %}
     <article{% if overview.editorial_version %} class="weekly-editorial"{% endif %}>
       <a class="weekly-archive-image" href="{{ local(overview.path) }}"><img src="{{ local(overview.markets.image_path) }}" alt="" width="1200" height="675"></a>
       <span class="eyebrow">{{ overview.period_start }} to {{ overview.period_end }}</span>
       <h2><a href="{{ local(overview.path) }}">{{ overview.markets.title }}</a></h2>
       <p>{{ overview.markets.deck }}</p>
-      <p class="weekly-research-line"><strong>Research</strong> {{ overview.research.title }}</p>
+      {{ actions(markets_item) }}
+      <p class="weekly-research-line"><strong>Research</strong> <a href="{{ local(overview.path) }}#research-compass">{{ overview.research.title }}</a></p>
+      {{ actions(research_item) }}
       <a class="read-link" href="{{ local(overview.path) }}">Read both one-minute views →</a>
     </article>
     {% else %}

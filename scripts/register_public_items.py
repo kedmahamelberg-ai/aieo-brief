@@ -16,7 +16,7 @@ def main():
  archive=ROOT/'_site/data/public-items.json'
  if not archive.exists():raise ValueError('Build the site with --update-archive before registering its stories.')
  stories=json.loads(archive.read_text())['items']
- rows=[{'story_key':s['key'],'headline':s['headline'],'url':base.rstrip('/')+'/'+s['path'].removesuffix('index.html'),'kind':s['kind'],'published_date':s['date']} for s in stories]
+ rows=[{'story_key':s['key'],'headline':s['headline'],'url':base.rstrip('/')+'/'+s['path'].removesuffix('index.html')+('#'+s['anchor'] if s.get('anchor') else ''),'kind':s['kind'],'published_date':s['date']} for s in stories]
  for start in range(0,len(rows),100):client.table('brief_community_items').upsert(rows[start:start+100],on_conflict='story_key').execute()
  versions=[{'content_hash':content_version(s)[0],'story_key':s['key'],'layout_version':LAYOUT,'snapshot':content_version(s)[1]} for s in stories]
  for start in range(0,len(versions),100):client.table('brief_ux_content_versions').upsert(versions[start:start+100],on_conflict='content_hash',ignore_duplicates=True).execute()

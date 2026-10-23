@@ -6,6 +6,7 @@ await db.exec(`create role anon;create role authenticated;create role service_ro
 const sql=readFileSync('supabase/migrations/202609060001_brief_community.sql','utf8');
 await db.exec(sql);await db.exec(sql);
 const cultureSQL=readFileSync('supabase/migrations/202609060002_brief_culture.sql','utf8');await db.exec(cultureSQL);await db.exec(cultureSQL);
+const weeklySQL=readFileSync('supabase/migrations/202610220001_weekly_engagement.sql','utf8');await db.exec(weeklySQL);await db.exec(weeklySQL);
 const u1='11111111-1111-4111-8111-111111111111',u2='22222222-2222-4222-8222-222222222222',u3='33333333-3333-4333-8333-333333333333';
 const k1='event:aaaaaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa',k2='paper:abcdef0123456789abcdef01';
 await db.query(`insert into auth.users values($1,'first@example.test',now()),($2,'second@example.test',now()),($3,'unverified@example.test',null)`,[u1,u2,u3]);
@@ -36,4 +37,14 @@ await db.query(`select public.brief_community_sponsor('Reader','first@example.te
 await db.query('select public.brief_community_delete_profile()');r=await db.query('select public.brief_community_my_data() as d');assert.deepEqual(r.rows[0].d.saves,[]);assert.deepEqual(r.rows[0].d.likes,[]);assert.deepEqual(r.rows[0].d.comments,[]);checks++;
 await role('service_role');await db.query('insert into public.brief_community_reads values($1,$2,current_date-91,30)',[k2,u2]);r=await db.query('select public.brief_community_maintain() as n');assert.equal(r.rows[0].n,1);checks++;
 const cultureKey='culture:1234567890abcdef12345678';await db.query(`insert into public.brief_community_items(story_key,headline,url,kind,published_date) values($1,'Daily poem','https://example.test/culture/daily/','culture',current_date)`,[cultureKey]);await role('authenticated',u2);await db.query(`select public.brief_community_toggle($1,'like',true)`,[cultureKey]);await db.query(`select public.brief_community_toggle($1,'save',true)`,[cultureKey]);await db.query(`select public.brief_community_comment($1,'Second reader','A thoughtful daily selection.',null)`,[cultureKey]);r=await db.query('select public.brief_community_metrics($1) as m',[[cultureKey]]);assert.equal(r.rows[0].m[cultureKey].likes,1);checks++;await role('anon');r=await db.query('select public.brief_community_comments_for($1) as comments',[cultureKey]);assert.equal(r.rows[0].comments.length,0);checks++;
-console.log(JSON.stringify({postgres:'PGlite',migration_runs:4,checks_passed:checks}));await db.close();
+const weeklyNews='weekly:2026-W42:markets',weeklyResearch='weekly:2026-W42:research';
+await role('service_role');
+await db.query("insert into public.brief_community_items(story_key,headline,url,kind,published_date) values($1,'Weekly news','https://example.test/week-from-above/2026-w42/#five-markets','weekly_news',current_date),($2,'Weekly research','https://example.test/week-from-above/2026-w42/#research-compass','weekly_research',current_date)",[weeklyNews,weeklyResearch]);
+await role('authenticated',u2);
+await db.query("select public.brief_community_toggle($1,'like',true)",[weeklyNews]);
+await db.query("select public.brief_community_toggle($1,'save',true)",[weeklyResearch]);
+await db.query("select public.brief_community_comment($1,'Second reader','This weekly summary raises a useful question.',null)",[weeklyNews]);
+r=await db.query('select public.brief_community_metrics($1) as m',[[weeklyNews,weeklyResearch]]);
+assert.equal(r.rows[0].m[weeklyNews].likes,1);assert.equal(r.rows[0].m[weeklyResearch].likes,0);
+assert.equal(r.rows[0].m[weeklyResearch].saved,true);checks++;
+console.log(JSON.stringify({postgres:'PGlite',migration_runs:6,checks_passed:checks}));await db.close();

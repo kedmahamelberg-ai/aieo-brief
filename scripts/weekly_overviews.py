@@ -363,6 +363,32 @@ def prepare_weekly_overviews(
     return current, copy.deepcopy(ordered)
 
 
+def engagement_items(overviews: list[dict]) -> list[dict]:
+    """Give each published weekly reading a stable community identity."""
+    items = []
+    for overview in overviews:
+        release_id = _plain(overview.get('release_id'))
+        if not re.fullmatch(r'\d{4}-W(?:0[1-9]|[1-4]\d|5[0-3])', release_id):
+            raise ValueError('A weekly engagement item needs a valid release ID.')
+        for section, kind, anchor in (
+            ('markets', 'weekly_news', 'five-markets'),
+            ('research', 'weekly_research', 'research-compass'),
+        ):
+            summary = overview[section]
+            items.append({
+                'key': f'weekly:{release_id}:{section}',
+                'kind': kind,
+                'headline': summary['title'],
+                'deck': summary['deck'],
+                'path': overview['path'],
+                'anchor': anchor,
+                'conversation_anchor': f'conversation-{section}',
+                'date': overview['period_end'],
+                'edition': release_id,
+            })
+    return items
+
+
 def social_queue(current: dict, base_url: str) -> dict:
     base_url = _plain(base_url).rstrip("/")
     destination = base_url + "/" + (current["path"][:-10] if current["path"].endswith("index.html") else current["path"]) if base_url else ""

@@ -12,13 +12,19 @@ for(const value of [0,1,2,undefined,null,-1,NaN,Infinity,2.5,'3',true,{},Number.
 for(const value of [3,4,25,1234]){
  test('publish actual count '+value,()=>assert.equal(Core.publicMetricNumber(value),value));
 }
+test('weekly sharing points to the selected reading',()=>{
+ const url=Core.publicURL({site_url:'https://brief.example.test'},{
+  path:'week-from-above/2026-w42/index.html',anchor:'research-compass'
+ });
+ assert.equal(url,'https://brief.example.test/week-from-above/2026-w42/#research-compass');
+});
 function makeRow(key){
  const names=['views','likes','comments','shares','saves','reads'];
  const nodes=names.map(metric=>({dataset:{metric},textContent:'',parentElement:{hidden:true}}));
  return {dataset:{publicMetrics:key},hidden:true,nodes,querySelectorAll:()=>nodes};
 }
-function engagementHarness(){
- const key='event:00000000-0000-0000-0000-000000000000',row=makeRow(key),handlers={},intervals=[];
+function engagementHarness(key='event:00000000-0000-0000-0000-000000000000'){
+ const row=makeRow(key),handlers={},intervals=[];
  let result={},fail=false,calls=[];
  const window={BriefCore:Core,BriefAnalytics:{allowed:()=>false},BriefCommunity:{enabled:true,
  metrics:async keys=>{calls.push(keys);if(fail)throw new Error('unavailable');return result;},rpc:()=>{throw new Error('No engagement writes in display tests');}},
@@ -42,6 +48,13 @@ test('each statistic is independently hidden; no empty strip or info link',async
 test('polling announces updated metrics to both display renderers',async()=>{
  const h=engagementHarness();await h.tick();h.set({[h.key]:{views:3}});
  await h.window.BriefEngagement.refresh();assert.equal(h.row.nodes[0].textContent,'3');
+ assert.equal(h.row.hidden,false);
+});
+test('weekly readings use the same public count baseline',async()=>{
+ const h=engagementHarness('weekly:2026-W42:markets');await h.tick();
+ h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:2,likes:3}}});
+ assert.equal(h.row.nodes[0].parentElement.hidden,true);
+ assert.equal(h.row.nodes[1].textContent,'3');
  assert.equal(h.row.hidden,false);
 });
 test('unavailable metrics do not fabricate zero counts',async()=>{
