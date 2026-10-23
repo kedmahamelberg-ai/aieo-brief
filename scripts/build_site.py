@@ -129,6 +129,11 @@ def culture_items():
             item[field+'_parts']=[{'text':part[1:-1] if part.startswith('_') and part.endswith('_') else part,'emphasis':part.startswith('_') and part.endswith('_')} for part in re.split(r'(_[^_]+_)',item.get(field,''))]
     return sorted(out,key=lambda x:(x['date'],x['key']),reverse=True)
 
+def require_english_culture(items, preview=False):
+    pending=[x['key'] for x in items if x.get('kind')=='culture' and x.get('english_status')=='pending']
+    if pending and not preview:
+        raise ValueError('Untranslated culture cannot be published: '+', '.join(pending))
+
 def advertising_eligible(page, story=None, news=()):
     """Exclude source-only links, account pages and cultural excerpts from ads."""
     def editorial(item):
@@ -232,9 +237,12 @@ def main():
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
     raw_archive=copy.deepcopy(allcards)
     english=EnglishPublication(ROOT, allow_model=(not preview and os.environ.get('BRIEF_TRANSLATE_ENGLISH')=='true'))
-    current_order={x['key']:i for i,x in enumerate(news+research+culture)}
+    # Prepare the day's cultural translations before the shared model budget is
+    # spent on less time-sensitive archive and news display fields.
+    current_order={x['key']:i for i,x in enumerate(culture+news+research)}
     public_by_key={x['key']:english.apply(x) for x in sorted(allcards,key=lambda x:current_order.get(x['key'],100000))}
     allcards=[public_by_key[x['key']] for x in allcards]
+    require_english_culture(allcards, preview)
     assign_article_urls(allcards, old)
     for archived in raw_archive:
         public = public_by_key[archived['key']]
