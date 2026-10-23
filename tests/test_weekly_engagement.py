@@ -63,15 +63,18 @@ class WeeklyEngagementTests(unittest.TestCase):
         self.assertEqual(html.count('data-action="like"'), 2)
         self.assertEqual(html.count('data-action="save"'), 2)
 
-    def test_archive_exposes_both_readings(self):
+    def test_archive_links_to_both_readings_without_repeating_actions(self):
         html = self.env.get_template('weekly-archive.html').render(
             overview_archive=[self.overview],
             weekly_items_by_key={item['key']: item for item in self.items},
             local=lambda path: '/' + path,
         )
-        for item in self.items:
-            self.assertIn(f'data-public-metrics="{item["key"]}"', html)
+        self.assertIn('The week in news', html)
+        self.assertIn('The week in research', html)
         self.assertIn('/week-from-above/2026-w42/index.html#research-compass', html)
+        self.assertIn('Read both one-minute views', html)
+        self.assertNotIn('class="story-actions"', html)
+        self.assertNotIn('class="public-metrics"', html)
 
 
 if __name__ == '__main__':
