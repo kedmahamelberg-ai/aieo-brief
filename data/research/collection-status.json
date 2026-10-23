@@ -55,22 +55,10 @@
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
-    },
-    {
-      "key": "paper:f531ec67658703d4a74dc338",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:52c3ba78f28c68d12f1a0973",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 0
     }
   ],
   "recovery": {
-    "recovered": 2,
+    "recovered": 0,
     "unavailable": 0
   }
 }
