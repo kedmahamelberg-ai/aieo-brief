@@ -10,7 +10,7 @@ from source_evidence_quality import evidence_chunks
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v7-complete-numeric-tokens'
+ENGINE_VERSION='aieo-editorial-runtime-v8-source-numeric-typography'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -159,6 +159,23 @@ def numeric_values(text):
  # rounding, magnitude expansion or extra numeric values are authorized here.
  return set(re.findall(r'\d+(?:[.,]\d+)*(?:%)?',text))
 
+def source_numeric_aliases(text):
+ # Preserve exact value while accepting common source typography: French
+ # grouping spaces, decimal commas, and a space before the percent sign.
+ # Only the evidence creates aliases; draft numbers never authorize themselves.
+ aliases=set()
+ for match in re.finditer(r'(?<![\d.,])(\d{1,3}(?:[ \u00a0\u202f]\d{3})+)(?!\d)',text):
+  groups=re.split(r'[ \u00a0\u202f]',match.group(1))
+  aliases.add(','.join(groups))
+  aliases.add(''.join(groups))
+ for match in re.finditer(r'(?<![\d.,])(\d+),([0-9]{1,2})(\s*%)?',text):
+  number=match.group(1)+'.'+match.group(2)
+  aliases.add(number)
+  if match.group(3):aliases.add(number+'%')
+ for match in re.finditer(r'(?<![\d.,])(\d+(?:[.,]\d+)?)\s+%',text):
+  aliases.add(match.group(1)+'%')
+ return aliases
+
 def deadline_check(deadline):
  if deadline and time.monotonic()>deadline-25:raise TimeoutError('Editorial runtime budget reached; resume on the next run.')
 def call_json(prompt,schema=SCHEMA,deadline=None,attempt=0,stage='draft',paper=False):
@@ -269,7 +286,8 @@ def validate_draft(d,sources,kind='news'):
  if DRAFT_MARKER.search(public):raise ValueError('Draft contains a placeholder marker')
  copied=copied_phrase(public,[s['evidence'] for s in sources])
  if copied:raise ValueError('The draft repeats ten consecutive source words. Rewrite this passage in original language: '+copied)
- allowed_numbers=numeric_values(' '.join(s['evidence']+' '+s.get('headline','') for s in sources))
+ source_numbers=' '.join(s['evidence']+' '+s.get('headline','') for s in sources)
+ allowed_numbers=numeric_values(source_numbers)|source_numeric_aliases(source_numbers)
  numeric_fields={**{k:d[k] for k in TEXT_FIELDS},'limitation':d.get('limitation',''),**{f'body_paragraphs[{i}]':text for i,text in enumerate(d['body_paragraphs'])}}
  unsupported={field:sorted(numeric_values(text)-allowed_numbers) for field,text in numeric_fields.items() if numeric_values(text)-allowed_numbers}
  if unsupported:raise ValueError('Draft introduces a numeric value that is not present in the sources. Correct these fields and values using only the evidence: '+json.dumps(unsupported,sort_keys=True)+'. Preserve supported numbers and their denominators; omit an unsupported value only when the claim remains accurate. Do not invent a replacement.')
