@@ -2,6 +2,370 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Meditations",
+      "content_fingerprint": "ff0531cd9b2e39a69352c856cb48fbe840cbbfa3dedb5a087c1cf83afc8eea8e",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "quote",
+      "deck": "From Meditations. Translation by Méric Casaubon.",
+      "excerpt": "Let thy reasonable faculty, work upon his reasonable faculty; show him his fault, admonish him.",
+      "headline": "Let thy reasonable faculty, work upon his reasonable faculty; show him his fault, admonish him.",
+      "key": "culture:9b07200a0464bc62cd232d65",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:quote:ff0531cd9b2e39a69352c856cb48fbe840cbbfa3dedb5a087c1cf83afc8eea8e",
+      "publisher": "Project Gutenberg",
+      "quote_context": "XXII. Be not angry neither with him whose breath, neither with him whose arm holes, are offensive. What can he do? such is his breath naturally, and such are his arm holes; and from such, such an effect, and such a smell must of necessity proceed. 'O, but the man (sayest thou) hath understanding in him, and might of himself know, that he by standing near, cannot choose but offend.' And thou also (God bless thee!) hast understanding. Let thy reasonable faculty, work upon his reasonable faculty; show him his fault, admonish him. If he hearken unto thee, thou hast cured him, and there will be no more occasion of anger.",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 119 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-10-23",
+      "selected_on": "2026-10-23",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9b07200a0464bc62cd232d65",
+      "path": "culture/culture-9b07200a0464bc62cd232d65/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Let thy reasonable faculty, work upon his reasonable faculty; show him his fault, admonish him.",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "23 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-23",
+      "summary_basis": "Selected 23 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Let thy reasonable faculty, work upon his reasonable faculty; show him his fault, admonish him.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "XXII. Be not angry neither with him whose breath, neither with him whose arm holes, are offensive. What can he do? such is his breath naturally, and such are his arm holes; and from such, such an effect, and such a smell must of necessity proceed. 'O, but the man (sayest thou) hath understanding in him, and might of himself know, that he by standing near, cannot choose but offend.' And thou also (God bless thee!) hast understanding. Let thy reasonable faculty, work upon his reasonable faculty; show him his fault, admonish him. If he hearken unto thee, thou hast cured him, and there will be no more occasion of anger.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/63/Sergei_Rachmaninoff_-_piano_concerto_no._2_in_c_minor%2C_op._18_-_i._moderato.ogg",
+      "creator": "Sergei Rachmaninoff",
+      "creator_origin": "Russian–American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Sergei Rachmaninoff. 10 minutes to listen.",
+      "duration_seconds": 654,
+      "headline": "Sergei Rachmaninoff - piano concerto no. 2 in c minor, op. 18 - i. moderato",
+      "key": "culture:91783230ba0d76c88784690a",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Sergei_Rachmaninoff_-_piano_concerto_no._2_in_c_minor%2C_op._18_-_i._moderato.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "original_recording_title": "Sergei Rachmaninoff - piano concerto no. 2 in c minor, op. 18 - i. moderato",
+      "provenance_id": "commons:3434493",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Sergei Rachmaninoff",
+      "recording_description": "Piano concerto no. 2 in c minor, op. 18 - i. moderato",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Sergei Rachmaninoff",
+        "label": "Public domain (source-declared)",
+        "source_credit": "http://www.musopen.com",
+        "url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_piano_concerto_no._2_in_c_minor,_op._18_-_i._moderato.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_piano_concerto_no._2_in_c_minor,_op._18_-_i._moderato.ogg",
+      "work_date": "Date not stated in source",
+      "date": "2026-10-23",
+      "selected_on": "2026-10-23",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-91783230ba0d76c88784690a",
+      "path": "culture/culture-91783230ba0d76c88784690a/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Sergei Rachmaninoff - piano concerto no. 2 in c minor, op. 18 - i. moderato",
+          "url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_piano_concerto_no._2_in_c_minor,_op._18_-_i._moderato.ogg",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "23 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-23",
+      "summary_basis": "Selected 23 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "5bb3bd86844a9f245dfd0ad47a8f354e39d4ef58e28d46f29669e00a71944868",
+      "creator": "Kabir",
+      "creator_origin": "Indian · North Indian poetic tradition",
+      "culture_type": "poetry",
+      "deck": "Songs of Kabir · XCIV, by Kabir. Translated by Rabindranath Tagore.",
+      "excerpt": "O sadhu! my land is a sorrowless land.\n  I cry aloud to all, to the king and the beggar, the emperor and\n    the fakir--\n  Whosoever seeks for shelter in the Highest, let all come and\n    settle in my land!\n  Let the weary come and lay his burdens here!\n\n  So live here, my brother, that you may cross with ease to that\n    other shore.\n  It is a land without earth or sky, without moon or stars;\n  For only the radiance of Truth shines in my Lord's Durbar.\n  Kabîr says: \"O beloved brother!  naught is essential save Truth.\"",
+      "headline": "Songs of Kabir · XCIV",
+      "key": "culture:6507e50ac90d8c4636505f35",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "O sadhu! my land is a sorrowless land.",
+        "  I cry aloud to all, to the king and the beggar, the emperor and",
+        "    the fakir--",
+        "  Whosoever seeks for shelter in the Highest, let all come and",
+        "    settle in my land!",
+        "  Let the weary come and lay his burdens here!",
+        "",
+        "  So live here, my brother, that you may cross with ease to that",
+        "    other shore.",
+        "  It is a land without earth or sky, without moon or stars;",
+        "  For only the radiance of Truth shines in my Lord's Durbar.",
+        "  Kabîr says: \"O beloved brother!  naught is essential save Truth.\""
+      ],
+      "provenance_id": "pg:6519:poem:6a37e00ef7b160552b813ce39954c1837ce34698d7d6bb932f1ddd0e6a392074",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 15th century. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6519"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2ecd0d98ffffe86fa795c6885a9caf8f8f5805607003f91b311cede5dc63c4f9",
+      "source_locator": "XCIV",
+      "source_url": "https://www.gutenberg.org/ebooks/6519",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1915 translation",
+      "date": "2026-10-23",
+      "selected_on": "2026-10-23",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-6507e50ac90d8c4636505f35",
+      "path": "culture/culture-6507e50ac90d8c4636505f35/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Songs of Kabir · XCIV",
+          "url": "https://www.gutenberg.org/ebooks/6519",
+          "date": "1915 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "23 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-23",
+      "summary_basis": "Selected 23 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "O sadhu! my land is a sorrowless land.\n  I cry aloud to all, to the king and the beggar, the emperor and\n    the fakir--\n  Whosoever seeks for shelter in the Highest, let all come and\n    settle in my land!\n  Let the weary come and lay his burdens here!\n\n  So live here, my brother, that you may cross with ease to that\n    other shore.\n  It is a land without earth or sky, without moon or stars;\n  For only the radiance of Truth shines in my Lord's Durbar.\n  Kabîr says: \"O beloved brother!  naught is essential save Truth.\"",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Alice’s Adventures in Wonderland",
+      "content_fingerprint": "1b81faba10cf4abc93a63aa7ffe59be19acff44b1a1c3b684d98bb39f5e4dbb9",
+      "creator": "Lewis Carroll",
+      "creator_origin": "English",
+      "culture_type": "text",
+      "deck": "A passage from Alice’s Adventures in Wonderland.",
+      "excerpt": "As she said these words her foot slipped, and in another moment, splash! she was up to her chin in salt water. Her first idea was that she had somehow fallen into the sea, “and in that case I can go back by railway,” she said to herself. (Alice had been to the seaside once in her life, and had come to the general conclusion, that wherever you go to on the English coast you find a number of bathing machines in the sea, some children digging in the sand with wooden spades, then a row of lodging houses, and behind them a railway station.) However, she soon made out that she was in the pool of tears which she had wept when she was nine feet high.",
+      "headline": "Alice’s Adventures in Wonderland · a short reading",
+      "key": "culture:33b34254d233d61e9e3001da",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:11:passage:1b81faba10cf4abc93a63aa7ffe59be19acff44b1a1c3b684d98bb39f5e4dbb9",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1898. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/11"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "9a6730d17a67f0a73034ab7df4b86779e67c8e19f6a64e1c5d81d0a697288278",
+      "source_locator": "CHAPTER I.; paragraph 48 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/11",
+      "translator": "",
+      "work_date": "1865",
+      "date": "2026-10-23",
+      "selected_on": "2026-10-23",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-33b34254d233d61e9e3001da",
+      "path": "culture/culture-33b34254d233d61e9e3001da/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Alice’s Adventures in Wonderland · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/11",
+          "date": "1865",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "23 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-23",
+      "summary_basis": "Selected 23 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "As she said these words her foot slipped, and in another moment, splash! she was up to her chin in salt water. Her first idea was that she had somehow fallen into the sea, “and in that case I can go back by railway,” she said to herself. (Alice had been to the seaside once in her life, and had come to the general conclusion, that wherever you go to on the English coast you find a number of bathing machines in the sea, some children digging in the sand with wooden spades, then a row of lodging houses, and behind them a railway station.) However, she soon made out that she was in the pool of tears which she had wept when she was nine feet high.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "In the Waves (Dans les Vagues)",
+      "art_type": "Painting",
+      "balance_origin": "France",
+      "creator": "Paul Gauguin (French, 1848–1903)",
+      "creator_origin": "France, 19th century",
+      "culture_type": "illustration",
+      "deck": "In the Waves (Dans les Vagues). oil on canvas.",
+      "headline": "In the Waves (Dans les Vagues)",
+      "image_path": "assets/culture/21b374cc5db78518fc910f06.jpg",
+      "key": "culture:21b374cc5db78518fc910f06",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1978.63/1978.63_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1978.63",
+      "provenance_id": "cma:149410",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of Mr. and Mrs. William Powell Jones",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1978.63",
+      "work_date": "1889",
+      "date": "2026-10-23",
+      "selected_on": "2026-10-23",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-21b374cc5db78518fc910f06",
+      "path": "culture/culture-21b374cc5db78518fc910f06/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "In the Waves (Dans les Vagues)",
+          "url": "https://clevelandart.org/art/1978.63",
+          "date": "1889",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "23 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-23",
+      "summary_basis": "Selected 23 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "52c0b201820441c5a4f3c159892537cfb297e2117c919eccd4ff681f95e08d22",
       "creator": "Po Chu-i",
       "creator_origin": "Chinese",
