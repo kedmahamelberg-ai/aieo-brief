@@ -2,6 +2,388 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "26666060443dfdf73e14361598b1380450d864c8ba1c415a67a9800011a8ab43",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "Nothing liveth any longer that I love,—how should I still love myself?",
+      "headline": "Nothing liveth any longer that I love,—how should I still love myself?",
+      "key": "culture:f6b411a09a0bde68c9407919",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:26666060443dfdf73e14361598b1380450d864c8ba1c415a67a9800011a8ab43",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Too much hath become clear unto me: now it doth not concern me any more. Nothing liveth any longer that I love,—how should I still love myself?",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 3292 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-10-24",
+      "selected_on": "2026-10-24",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f6b411a09a0bde68c9407919",
+      "path": "culture/culture-f6b411a09a0bde68c9407919/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Nothing liveth any longer that I love,—how should I still love myself?",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "24 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-24",
+      "summary_basis": "Selected 24 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Nothing liveth any longer that I love,—how should I still love myself?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Too much hath become clear unto me: now it doth not concern me any more. Nothing liveth any longer that I love,—how should I still love myself?",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Shepherds in a Landscape",
+      "art_type": "Print",
+      "balance_origin": "Italy",
+      "creator": "Giulio Campagnola (Italian, 1482–1515) · and Domenico Campagnola (Italian, 1500–1564)",
+      "creator_origin": "Italy",
+      "culture_type": "illustration",
+      "deck": "Shepherds in a Landscape. engraving.",
+      "headline": "Shepherds in a Landscape",
+      "image_path": "assets/culture/ed725922114fb471ff5b44eb.jpg",
+      "key": "culture:ed725922114fb471ff5b44eb",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1948.12/1948.12_web.jpg",
+      "medium": "engraving",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1948.12",
+      "provenance_id": "cma:125873",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Dudley P. Allen Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1948.12",
+      "work_date": "c. 1517",
+      "date": "2026-10-24",
+      "selected_on": "2026-10-24",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-ed725922114fb471ff5b44eb",
+      "path": "culture/culture-ed725922114fb471ff5b44eb/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Shepherds in a Landscape",
+          "url": "https://clevelandart.org/art/1948.12",
+          "date": "c. 1517",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "24 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-24",
+      "summary_basis": "Selected 24 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Liszt-ConsolationNo5.ogg",
+      "creator": "Franz Liszt",
+      "creator_origin": "Hungarian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Liszt. 2 minutes to listen.",
+      "duration_seconds": 177,
+      "headline": "Liszt-ConsolationNo5",
+      "key": "culture:a4874611fd4ffff6dbfc1877",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Liszt-ConsolationNo5.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Liszt",
+      "original_recording_title": "Liszt-ConsolationNo5",
+      "provenance_id": "commons:92865116",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Constantin Stephan, piano",
+      "recording_description": "Audio recording of \"Consolation No. 5\" by Franz Liszt, performed by Constantin Stephan",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Constantin Stephan, piano",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Liszt-ConsolationNo5.ogg",
+      "work_date": "2020-08-03",
+      "date": "2026-10-24",
+      "selected_on": "2026-10-24",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a4874611fd4ffff6dbfc1877",
+      "path": "culture/culture-a4874611fd4ffff6dbfc1877/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Liszt-ConsolationNo5",
+          "url": "https://commons.wikimedia.org/wiki/File:Liszt-ConsolationNo5.ogg",
+          "date": "2020-08-03",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "24 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-24",
+      "summary_basis": "Selected 24 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "White Nights",
+      "content_fingerprint": "237a4ddf0f78c01f680242f3b905b8d98871de62d5d38d9064b4610dd1dbb2cc",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "It was some time, however, before I consented to recognize that truth. Waking up in the morning after some hours of heavy, leaden sleep, and immediately realizing all that had happened on the previous day, I was positively amazed at my last night's _sentimentality_ with Liza, at all those \"outcries of horror and pity.\" \"To think of having such an attack of womanish hysteria, pah!\" I concluded. And what did I thrust my address upon her for? What if she comes? Let her come, though; it doesn't matter.... But _obviously_, that was not now the chief and the most important matter: I had to make haste and at all costs save my reputation in the eyes of Zverkov and Simonov as quickly as possible; that was the chief business. And I was so taken up that morning that I actually forgot all about Liza.",
+      "headline": "White Nights · a short reading",
+      "key": "culture:720e42dbb8d080b781229afd",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:237a4ddf0f78c01f680242f3b905b8d98871de62d5d38d9064b4610dd1dbb2cc",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 795 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-10-24",
+      "selected_on": "2026-10-24",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-720e42dbb8d080b781229afd",
+      "path": "culture/culture-720e42dbb8d080b781229afd/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "24 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-24",
+      "summary_basis": "Selected 24 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "It was some time, however, before I consented to recognize that truth. Waking up in the morning after some hours of heavy, leaden sleep, and immediately realizing all that had happened on the previous day, I was positively amazed at my last night's ",
+          "emphasis": false
+        },
+        {
+          "text": "sentimentality",
+          "emphasis": true
+        },
+        {
+          "text": " with Liza, at all those \"outcries of horror and pity.\" \"To think of having such an attack of womanish hysteria, pah!\" I concluded. And what did I thrust my address upon her for? What if she comes? Let her come, though; it doesn't matter.... But ",
+          "emphasis": false
+        },
+        {
+          "text": "obviously",
+          "emphasis": true
+        },
+        {
+          "text": ", that was not now the chief and the most important matter: I had to make haste and at all costs save my reputation in the eyes of Zverkov and Simonov as quickly as possible; that was the chief business. And I was so taken up that morning that I actually forgot all about Liza.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "96064da846182bc0fbd886d61ea2462b83b786bdfecadb4a4ba0e90e97f3d953",
+      "creator": "John Keats",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by John Keats.",
+      "excerpt": "Standing aloof in giant ignorance,\n    Of thee I hear and of the Cyclades,\nAs one who sits ashore and longs perchance\n    To visit dolphin-coral in deep seas.\nSo thou wast blind;--but then the veil was rent,\n    For Jove uncurtain'd Heaven to let thee live,\nAnd Neptune made for thee a spumy tent,\n    And Pan made sing for thee his forest-hive;\nAye on the shores of darkness there is light,\n    And precipices show untrodden green,\nThere is a budding morrow in midnight,\n    There is a triple sight in blindness keen;\nSuch seeing hadst thou, as it once befel\nTo Dian, Queen of Earth, and Heaven, and Hell.",
+      "headline": "To Homer",
+      "key": "culture:39f2ad3c7685f1561863f698",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Standing aloof in giant ignorance,",
+        "    Of thee I hear and of the Cyclades,",
+        "As one who sits ashore and longs perchance",
+        "    To visit dolphin-coral in deep seas.",
+        "So thou wast blind;--but then the veil was rent,",
+        "    For Jove uncurtain'd Heaven to let thee live,",
+        "And Neptune made for thee a spumy tent,",
+        "    And Pan made sing for thee his forest-hive;",
+        "Aye on the shores of darkness there is light,",
+        "    And precipices show untrodden green,",
+        "There is a budding morrow in midnight,",
+        "    There is a triple sight in blindness keen;",
+        "Such seeing hadst thou, as it once befel",
+        "To Dian, Queen of Earth, and Heaven, and Hell."
+      ],
+      "provenance_id": "poetrydb:John Keats:To Homer",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1821.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "e253c8e909f9f66c3142ed72131170ac138e9ded4082f9d253394f10d70a987a",
+      "source_locator": "To Homer",
+      "source_url": "https://poetrydb.org/title/To%20Homer:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1821",
+      "date": "2026-10-24",
+      "selected_on": "2026-10-24",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-39f2ad3c7685f1561863f698",
+      "path": "culture/culture-39f2ad3c7685f1561863f698/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "To Homer",
+          "url": "https://poetrydb.org/title/To%20Homer:abs/lines.text",
+          "date": "Before 1821",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "24 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-24",
+      "summary_basis": "Selected 24 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Standing aloof in giant ignorance,\n    Of thee I hear and of the Cyclades,\nAs one who sits ashore and longs perchance\n    To visit dolphin-coral in deep seas.\nSo thou wast blind;--but then the veil was rent,\n    For Jove uncurtain'd Heaven to let thee live,\nAnd Neptune made for thee a spumy tent,\n    And Pan made sing for thee his forest-hive;\nAye on the shores of darkness there is light,\n    And precipices show untrodden green,\nThere is a budding morrow in midnight,\n    There is a triple sight in blindness keen;\nSuch seeing hadst thou, as it once befel\nTo Dian, Queen of Earth, and Heaven, and Hell.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Meditations",
       "content_fingerprint": "ff0531cd9b2e39a69352c856cb48fbe840cbbfa3dedb5a087c1cf83afc8eea8e",
       "creator": "Marcus Aurelius",
