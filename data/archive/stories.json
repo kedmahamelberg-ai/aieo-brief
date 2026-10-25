@@ -2,6 +2,404 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Portrait of Mrs. Leneve",
+      "art_type": "Painting",
+      "balance_origin": "England",
+      "creator": "Peter Lely (British, 1618–1680)",
+      "creator_origin": "England, 17th century",
+      "culture_type": "illustration",
+      "deck": "Portrait of Mrs. Leneve. oil on canvas.",
+      "headline": "Portrait of Mrs. Leneve",
+      "image_path": "assets/culture/bd9096e1ad5f2c0ec87778b4.jpg",
+      "key": "culture:bd9096e1ad5f2c0ec87778b4",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1942.247/1942.247_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1942.247",
+      "provenance_id": "cma:121946",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of Mrs. Otto Miller",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1942.247",
+      "work_date": "c. 1657",
+      "date": "2026-10-25",
+      "selected_on": "2026-10-25",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-bd9096e1ad5f2c0ec87778b4",
+      "path": "culture/culture-bd9096e1ad5f2c0ec87778b4/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Portrait of Mrs. Leneve",
+          "url": "https://clevelandart.org/art/1942.247",
+          "date": "c. 1657",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-25",
+      "summary_basis": "Selected 25 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Prophet",
+      "content_fingerprint": "8a9ac0e2e755e93b15958044dcc7d7df624e429efc16812c0c4775dc3ae2f51f",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "quote",
+      "deck": "From The Prophet.",
+      "excerpt": "For the breath of life is in the sunlight and the hand of life is in the wind.",
+      "headline": "For the breath of life is in the sunlight and the hand of life is in the wind.",
+      "key": "culture:aa33973cfb26a4f8b54b1dbf",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:58585:quote:8a9ac0e2e755e93b15958044dcc7d7df624e429efc16812c0c4775dc3ae2f51f",
+      "publisher": "Project Gutenberg",
+      "quote_context": "For the breath of life is in the sunlight and the hand of life is in the wind.",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/58585"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "e4c7f1820ffbfa4d6e2186a1a9f649f3a3b15df2478c7373a24560574af3bcfc",
+      "source_locator": "Almustafa, the chosen and the; paragraph 308 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/58585",
+      "translator": "",
+      "work_date": "1923",
+      "date": "2026-10-25",
+      "selected_on": "2026-10-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-aa33973cfb26a4f8b54b1dbf",
+      "path": "culture/culture-aa33973cfb26a4f8b54b1dbf/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "For the breath of life is in the sunlight and the hand of life is in the wind.",
+          "url": "https://www.gutenberg.org/ebooks/58585",
+          "date": "1923",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-25",
+      "summary_basis": "Selected 25 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "For the breath of life is in the sunlight and the hand of life is in the wind.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "For the breath of life is in the sunlight and the hand of life is in the wind.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Zortziko_d%27Albeniz.flac",
+      "creator": "Isaac Albéniz",
+      "creator_origin": "Spanish",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Isaac Albéniz. 3 minutes to listen.",
+      "duration_seconds": 211,
+      "headline": "Zortziko d'Albeniz",
+      "key": "culture:6ce05c485865901077986216",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Zortziko_d%27Albeniz.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Isaac_Alb%C3%A9niz",
+      "original_recording_title": "Zortziko d'Albeniz",
+      "provenance_id": "commons:51999893",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Isaac Albéniz (1860 - 1909), composer File: Flopinot2012",
+      "recording_description": "Zortziko (titled \"Zortzico\") n°6 from the piano suite \"España\" op.165 (1890) by Isaac Albéniz (1860-1909) reconstructed through a software (Encore) legally bought by the user under the producer's licence (Gvox) : this file is NOT taken from a CD or a live recording from a concert, and is not subject to copyright violation.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Isaac Albéniz (1860 - 1909), composer File: Flopinot2012",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Zortziko_d%27Albeniz.flac",
+      "work_date": "2016-10-02",
+      "date": "2026-10-25",
+      "selected_on": "2026-10-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-6ce05c485865901077986216",
+      "path": "culture/culture-6ce05c485865901077986216/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Zortziko d'Albeniz",
+          "url": "https://commons.wikimedia.org/wiki/File:Zortziko_d%27Albeniz.flac",
+          "date": "2016-10-02",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-25",
+      "summary_basis": "Selected 25 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "6ec8ce422b252dd8d0c8c483666d1338cadaedb29ecd34f4556c288028f52a1e",
+      "creator": "Sarojini Naidu",
+      "creator_origin": "Indian",
+      "culture_type": "poetry",
+      "deck": "To My Children, by Sarojini Naidu.",
+      "excerpt": "Jaya Surya, aetat 4\n\n  Golden sun of victory, born\n  In my life's unclouded morn,\n  In my lambent sky of love,\n  May your growing glory prove\n  Sacred to your consecration,\n  To my heart and to my nation.\n  Sun of victory, may you be\n  Sun of song and liberty.\n\n\n  Padmaja, aetat 3\n\n  Lotus-maiden, you who claim\n  All the sweetness of your name,\n  Lakshmi, fortune's queen, defend you,\n  Lotus-born like you, and send you\n  Balmy moons of love to bless you,\n  Gentle joy-winds to caress you.\n  Lotus-maiden, may you be\n  Fragrant of all ecstasy.\n\n\n  Ranadheera, aetat 2\n\n  Little lord of battle, hail\n  In your newly-tempered mail!\n  Learn to conquer, learn to fight\n  In the foremost flanks of right,\n  Like Valmiki's heroes bold,\n  Rubies girt in epic gold.\n  Lord of battle, may you be,\n  Lord of love and chivalry.\n\n\n  Lilamani, aetat 1\n\n  Limpid jewel of delight\n  Severed from the tender night\n  Of your sheltering mother-mine,\n  Leap and sparkle, dance and shine,\n  Blithely and securely set\n  In love's magic coronet.\n  Living jewel, may you be\n  Laughter-bound and sorrow-free.",
+      "headline": "To My Children",
+      "key": "culture:4cbe241762f6fe0abb699823",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Jaya Surya, aetat 4",
+        "",
+        "  Golden sun of victory, born",
+        "  In my life's unclouded morn,",
+        "  In my lambent sky of love,",
+        "  May your growing glory prove",
+        "  Sacred to your consecration,",
+        "  To my heart and to my nation.",
+        "  Sun of victory, may you be",
+        "  Sun of song and liberty.",
+        "",
+        "",
+        "  Padmaja, aetat 3",
+        "",
+        "  Lotus-maiden, you who claim",
+        "  All the sweetness of your name,",
+        "  Lakshmi, fortune's queen, defend you,",
+        "  Lotus-born like you, and send you",
+        "  Balmy moons of love to bless you,",
+        "  Gentle joy-winds to caress you.",
+        "  Lotus-maiden, may you be",
+        "  Fragrant of all ecstasy.",
+        "",
+        "",
+        "  Ranadheera, aetat 2",
+        "",
+        "  Little lord of battle, hail",
+        "  In your newly-tempered mail!",
+        "  Learn to conquer, learn to fight",
+        "  In the foremost flanks of right,",
+        "  Like Valmiki's heroes bold,",
+        "  Rubies girt in epic gold.",
+        "  Lord of battle, may you be,",
+        "  Lord of love and chivalry.",
+        "",
+        "",
+        "  Lilamani, aetat 1",
+        "",
+        "  Limpid jewel of delight",
+        "  Severed from the tender night",
+        "  Of your sheltering mother-mine,",
+        "  Leap and sparkle, dance and shine,",
+        "  Blithely and securely set",
+        "  In love's magic coronet.",
+        "  Living jewel, may you be",
+        "  Laughter-bound and sorrow-free."
+      ],
+      "provenance_id": "pg:680:poem:abe322aa1ecf4bc334c1795dc83615495437a3e902f0d09f58a3082589983472",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1949. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "43b66624f43d0564b45974d76131a5058bd18909e6d49c12683dc8ec6216238d",
+      "source_locator": "TO MY CHILDREN",
+      "source_url": "https://www.gutenberg.org/ebooks/680",
+      "translator": "",
+      "work_date": "1905",
+      "date": "2026-10-25",
+      "selected_on": "2026-10-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-4cbe241762f6fe0abb699823",
+      "path": "culture/culture-4cbe241762f6fe0abb699823/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "To My Children",
+          "url": "https://www.gutenberg.org/ebooks/680",
+          "date": "1905",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-25",
+      "summary_basis": "Selected 25 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Jaya Surya, aetat 4\n\n  Golden sun of victory, born\n  In my life's unclouded morn,\n  In my lambent sky of love,\n  May your growing glory prove\n  Sacred to your consecration,\n  To my heart and to my nation.\n  Sun of victory, may you be\n  Sun of song and liberty.\n\n\n  Padmaja, aetat 3\n\n  Lotus-maiden, you who claim\n  All the sweetness of your name,\n  Lakshmi, fortune's queen, defend you,\n  Lotus-born like you, and send you\n  Balmy moons of love to bless you,\n  Gentle joy-winds to caress you.\n  Lotus-maiden, may you be\n  Fragrant of all ecstasy.\n\n\n  Ranadheera, aetat 2\n\n  Little lord of battle, hail\n  In your newly-tempered mail!\n  Learn to conquer, learn to fight\n  In the foremost flanks of right,\n  Like Valmiki's heroes bold,\n  Rubies girt in epic gold.\n  Lord of battle, may you be,\n  Lord of love and chivalry.\n\n\n  Lilamani, aetat 1\n\n  Limpid jewel of delight\n  Severed from the tender night\n  Of your sheltering mother-mine,\n  Leap and sparkle, dance and shine,\n  Blithely and securely set\n  In love's magic coronet.\n  Living jewel, may you be\n  Laughter-bound and sorrow-free.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "61b407767679e1c0a754451ce2f29ef43fa1127d95e40f0bdc3bbc43dfeb8937",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "text",
+      "deck": "A passage from Tao Te Ching. Translated by James Legge.",
+      "excerpt": "What men dislike is to be orphans, to have little virtue, to be as carriages without naves; and yet these are the designations which kings and princes use for themselves. So it is that some things are increased by being diminished, and others are diminished by being increased.",
+      "headline": "Tao Te Ching · a short reading",
+      "key": "culture:24759a10f5c3111955f31061",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:passage:61b407767679e1c0a754451ce2f29ef43fa1127d95e40f0bdc3bbc43dfeb8937",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 141 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-10-25",
+      "selected_on": "2026-10-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-24759a10f5c3111955f31061",
+      "path": "culture/culture-24759a10f5c3111955f31061/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Tao Te Ching · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-25",
+      "summary_basis": "Selected 25 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "What men dislike is to be orphans, to have little virtue, to be as carriages without naves; and yet these are the designations which kings and princes use for themselves. So it is that some things are increased by being diminished, and others are diminished by being increased.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Thus Spake Zarathustra",
       "content_fingerprint": "26666060443dfdf73e14361598b1380450d864c8ba1c415a67a9800011a8ab43",
       "creator": "Friedrich Nietzsche",
