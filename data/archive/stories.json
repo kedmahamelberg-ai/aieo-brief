@@ -2,6 +2,362 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Overture_in_C_minor%2C_TH_38_-_Pyotr_Ilyich_Tchaikovsky.ogg",
+      "creator": "Pyotr Ilyich Tchaikovsky",
+      "creator_origin": "Russian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Pyotr Ilyich Tchaikovsky. 14 minutes to listen.",
+      "duration_seconds": 868,
+      "headline": "Overture in C minor, TH 38 - Pyotr Ilyich Tchaikovsky",
+      "key": "culture:fcc475ae4c097df30d2f2a35",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Overture_in_C_minor%2C_TH_38_-_Pyotr_Ilyich_Tchaikovsky.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky",
+      "original_recording_title": "Overture in C minor, TH 38 - Pyotr Ilyich Tchaikovsky",
+      "provenance_id": "commons:173509453",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Omega13a",
+      "recording_description": "Something I made in MuseScore 4 based on a PDF I found of Tchaikovsky's Overture in C minor. I used the MuseSounds sound profile rather than the default one and adjusted the panning so it sounds like you are standing in front of the orchestra.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Omega13a",
+        "label": "CC BY 4.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Overture_in_C_minor,_TH_38_-_Pyotr_Ilyich_Tchaikovsky.ogg",
+      "work_date": "2025-08-24",
+      "date": "2026-10-26",
+      "selected_on": "2026-10-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-fcc475ae4c097df30d2f2a35",
+      "path": "culture/culture-fcc475ae4c097df30d2f2a35/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Overture in C minor, TH 38 - Pyotr Ilyich Tchaikovsky",
+          "url": "https://commons.wikimedia.org/wiki/File:Overture_in_C_minor,_TH_38_-_Pyotr_Ilyich_Tchaikovsky.ogg",
+          "date": "2025-08-24",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-26",
+      "summary_basis": "Selected 26 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Prophet",
+      "content_fingerprint": "299fa5ba0f62cdfb538be500c8d52db0ea7ebb2f62ed35f7c680fd7ee3c45c56",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "text",
+      "deck": "A passage from The Prophet.",
+      "excerpt": "And when the storm comes, and the mighty wind shakes the forest, and thunder and lightning proclaim the majesty of the sky,--then let your heart say in awe, “God moves in passion.”",
+      "headline": "The Prophet · a short reading",
+      "key": "culture:b9c378f38e6427b3eb22addc",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:58585:passage:299fa5ba0f62cdfb538be500c8d52db0ea7ebb2f62ed35f7c680fd7ee3c45c56",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/58585"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "e4c7f1820ffbfa4d6e2186a1a9f649f3a3b15df2478c7373a24560574af3bcfc",
+      "source_locator": "Almustafa, the chosen and the; paragraph 454 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/58585",
+      "translator": "",
+      "work_date": "1923",
+      "date": "2026-10-26",
+      "selected_on": "2026-10-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-b9c378f38e6427b3eb22addc",
+      "path": "culture/culture-b9c378f38e6427b3eb22addc/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Prophet · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/58585",
+          "date": "1923",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-26",
+      "summary_basis": "Selected 26 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "And when the storm comes, and the mighty wind shakes the forest, and thunder and lightning proclaim the majesty of the sky,--then let your heart say in awe, “God moves in passion.”",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Reflections; or Sentences and Moral Maxims",
+      "content_fingerprint": "9107687b7cd9646d2fbc2f4ef6cc545877ed306909eccab4db458387ccfd9e40",
+      "creator": "François de La Rochefoucauld",
+      "creator_origin": "French",
+      "culture_type": "quote",
+      "deck": "From Reflections; or Sentences and Moral Maxims. Translation by J. Hain Friswell.",
+      "excerpt": "Moderation is the languor and sloth of the soul, Ambition its activity and heat.",
+      "headline": "Moderation is the languor and sloth of the soul, Ambition its activity and heat.",
+      "key": "culture:ae51067c9f40f7344328f88c",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:9105:quote:9107687b7cd9646d2fbc2f4ef6cc545877ed306909eccab4db458387ccfd9e40",
+      "publisher": "Project Gutenberg",
+      "quote_context": "293.--Moderation cannot claim the merit of opposing and overcoming Ambition: they are never found together. Moderation is the languor and sloth of the soul, Ambition its activity and heat.",
+      "rights": {
+        "basis": "Author died 1680. Translator: J. Hain Friswell, died 1878. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/9105"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "b240ded9918a8c04662b68a29101976f7f70fccf249be5fabdea579c95cd74e6",
+      "source_locator": "REFLECTIONS; OR, SENTENCES AND MORAL MAXIMS; paragraph 372 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/9105",
+      "translator": "J. Hain Friswell",
+      "work_date": "1871 translation",
+      "date": "2026-10-26",
+      "selected_on": "2026-10-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ae51067c9f40f7344328f88c",
+      "path": "culture/culture-ae51067c9f40f7344328f88c/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Moderation is the languor and sloth of the soul, Ambition its activity and heat.",
+          "url": "https://www.gutenberg.org/ebooks/9105",
+          "date": "1871 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-26",
+      "summary_basis": "Selected 26 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Moderation is the languor and sloth of the soul, Ambition its activity and heat.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "293.--Moderation cannot claim the merit of opposing and overcoming Ambition: they are never found together. Moderation is the languor and sloth of the soul, Ambition its activity and heat.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "08b2b424f7976c46f4faff96dd324f5484b8c1263c1386b529e246853d91c9a1",
+      "creator": "Omar Khayyam, after Edward FitzGerald",
+      "creator_origin": "Iranian · Persian",
+      "culture_type": "poetry",
+      "deck": "Rubáiyát · XXXIII, by Omar Khayyam, after Edward FitzGerald. Translated by Edward FitzGerald.",
+      "excerpt": "Then to the rolling Heav'n itself I cried,\n Asking, \"What Lamp had Destiny to guide\n   Her little Children stumbling in the Dark?\"\n And--\"A blind understanding!\" Heav'n replied.",
+      "headline": "Rubáiyát · XXXIII",
+      "key": "culture:71010431b49e9c653a2b498a",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Then to the rolling Heav'n itself I cried,",
+        " Asking, \"What Lamp had Destiny to guide",
+        "   Her little Children stumbling in the Dark?\"",
+        " And--\"A blind understanding!\" Heav'n replied."
+      ],
+      "provenance_id": "pg:246:poem:df2a970ac4b9d877e5afbc4f46d34fe26ffc52c6ad5afa708cc318a73b109ae9",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1131. Translator: Edward FitzGerald, died 1883. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/246"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "09f7f0aa58212f5622cbf914eff7e0ae4e14fbc12de174220b470e66dec6eb65",
+      "source_locator": "XXXIII",
+      "source_url": "https://www.gutenberg.org/ebooks/246",
+      "translator": "Edward FitzGerald",
+      "work_date": "1859 English adaptation",
+      "date": "2026-10-26",
+      "selected_on": "2026-10-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-71010431b49e9c653a2b498a",
+      "path": "culture/culture-71010431b49e9c653a2b498a/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Rubáiyát · XXXIII",
+          "url": "https://www.gutenberg.org/ebooks/246",
+          "date": "1859 English adaptation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-26",
+      "summary_basis": "Selected 26 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Then to the rolling Heav'n itself I cried,\n Asking, \"What Lamp had Destiny to guide\n   Her little Children stumbling in the Dark?\"\n And--\"A blind understanding!\" Heav'n replied.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Three female figures, folio 89 (verso), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "art_type": "Painting",
+      "balance_origin": "Eastern India",
+      "creator": "Artist unknown",
+      "creator_origin": "Eastern India, Bihar, Vikramashila Monastery. Painting: Nepal, Kathmandu",
+      "culture_type": "illustration",
+      "deck": "Three female figures, folio 89 (verso), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra). gum tempera and ink on palm leaf.",
+      "headline": "Three female figures, folio 89 (verso), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "image_path": "assets/culture/34ec102ce58daef092d0ff3e.jpg",
+      "key": "culture:34ec102ce58daef092d0ff3e",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1938.301.89.b/1938.301.89.b_web.jpg",
+      "medium": "gum tempera and ink on palm leaf",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1938.301.89.b",
+      "provenance_id": "cma:117660",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1938.301.89.b",
+      "work_date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+      "date": "2026-10-26",
+      "selected_on": "2026-10-26",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-34ec102ce58daef092d0ff3e",
+      "path": "culture/culture-34ec102ce58daef092d0ff3e/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Three female figures, folio 89 (verso), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+          "url": "https://clevelandart.org/art/1938.301.89.b",
+          "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-26",
+      "summary_basis": "Selected 26 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Portrait of Mrs. Leneve",
       "art_type": "Painting",
       "balance_origin": "England",
