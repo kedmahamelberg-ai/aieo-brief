@@ -16,7 +16,7 @@ CASES = [
   'Purdue Northwest is piloting an AI literacy requirement.'),
  ('future_event', 'The event is scheduled for 28 October. This announcement was published on 23 October.',
   'The event took place on 23 October.',
-  'The announcement schedules the event for 28 October.'),
+  'The event is scheduled for 28 October.'),
  ('subgroup', 'One-third of the surveyed young adults used chatbots for drug information. Half of that subgroup used them monthly.',
   'Half of all surveyed young adults used chatbots monthly.',
   'Half of the subgroup using chatbots for drug information reported monthly use.'),
@@ -47,6 +47,8 @@ def evaluate(review=review_scope):
             except EditorialError as error:
                 if error.code not in {'source_scope_review_failed', 'claim_grounding_failed'}:raise
                 passed = False
+                # These fixtures are synthetic and public; diagnostics contain no private sources.
+                print(name + ':' + label + ' ' + error.code + ': ' + error.feedback, flush=True)
             if passed != should_pass:failed.append(name + ':' + label)
             print(name + ':' + label + (' PASS' if passed == should_pass else ' FAIL'), flush=True)
     if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))

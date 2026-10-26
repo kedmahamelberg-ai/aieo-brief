@@ -3,8 +3,9 @@
 No complete body, no invented rewrite. Existing publisher-linked entries stay readable.
 """
 from __future__ import annotations
-import argparse,json,os,time,uuid
+import argparse,json,os,time,uuid,hashlib
 import ai_runtime
+import claim_grounding
 from editorial_corrections import is_locked
 from collections import Counter
 from datetime import datetime,timezone
@@ -76,6 +77,11 @@ def valid_uuid(v):
     except (ValueError,TypeError):return None
 
 def persist(client,item,release,draft,proof):
+    if not item.get('reuse'):
+        grounding=(proof.get('scope_review') or {}).get('grounding') or {}
+        public_sha=hashlib.sha256(json.dumps(claim_grounding.units(draft),sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+        if grounding.get('version')!=claim_grounding.VERSION or grounding.get('public_sha256')!=public_sha:
+            raise EditorialError('publication_proof_mismatch','Draft lacks a matching final grounding proof.',stage='persistence')
     story=item['story'];eid=item['eid'];latest=item['latest'];relation=item['relation']
     if not story:
         story={'story_id':str(uuid.uuid4()),'event_id':eid,'slug':'development-'+eid,'status':'active'}
@@ -86,6 +92,7 @@ def persist(client,item,release,draft,proof):
         if not rows:raise RuntimeError('Story registry did not return the saved row.')
         story=rows[0]
     basis={'prompt_version':PROMPT_VERSION,'source_release_sha256':release['content_sha256'],'release_id':release['release_id'],'axes_sha256':digest(relation['axes']),'axes':relation['axes'],'input_fingerprint':item['fp'],'full_source_count':len(item['sources']),'model':MODEL,'claim_status':draft.get('claim_status','reporting'),'limitation':draft.get('limitation',''),'validation':'source_support_and_original_wording'}
+    if not item['reuse']:basis['grounding_version']=claim_grounding.VERSION
     if item['reuse']:
         basis['claim_status']=latest['evidence_basis_summary'].get('claim_status','reporting');basis['limitation']=latest['evidence_basis_summary'].get('limitation','')
         generated_id=latest.get('generated_artifact_id');basis={**latest['evidence_basis_summary'],**basis}

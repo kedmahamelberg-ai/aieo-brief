@@ -132,11 +132,11 @@
   "research": {
     "kind": "research",
     "eyebrow": "THE RESEARCH COMPASS",
-    "title": "A Quiet Inquiry into Modest Gains and Cautious Corrections in Visual Reasoning",
-    "deck": "What is learned from OpenVLHarness is that simply increasing the memory of a model does not guarantee large jumps in visual reasoning. The approach adds a simple layer to keep images, data, and links in memory, so the model can reuse evidence across steps. In a set of twenty two benchmarks the gains were modest, and the benefit depended on the backbone and setup. This is not a dramatic breakthrough, yet it offers a practical reminder that organization and recall can help accuracy without exploding cost.",
-    "summary": "What is learned from OpenVLHarness is that simply increasing the memory of a model does not guarantee large jumps in visual reasoning. The approach adds a simple layer to keep images, data, and links in memory, so the model can reuse evidence across steps. In a set of twenty two benchmarks the gains were modest, and the benefit depended on the backbone and setup. This is not a dramatic breakthrough, yet it offers a practical reminder that organization and recall can help accuracy without exploding cost. What is learned from the visually guided corrections study is that improvements can appear when the system relies on clues that are visible, yet the results do not always hold on new images or unseen data. The method has three parts: a verifier, a mentor, and a gate that accepts edits tied to visible clues. The story is mixed, and the caution is clear: improvements must endure beyond the training context to be trustworthy, and trade offs must be weighed.",
+    "title": "Better Visual Answers Through Memory and Visible Clues",
+    "deck": "OpenVLHarness adds tools and memory so an AI can reuse images and earlier tool results. Across twenty two tests, it improves average scores by 9.7–12.6 points over the comparison systems. The modest gains described in the abstract came from giving the starting model more computing time alone. They were not the gains from OpenVLHarness. The results vary with the underlying model and test setup.",
+    "summary": "OpenVLHarness adds tools and memory so an AI can reuse images and earlier tool results. Across twenty two tests, it improves average scores by 9.7–12.6 points over the comparison systems. The modest gains described in the abstract came from giving the starting model more computing time alone. They were not the gains from OpenVLHarness. The results vary with the underlying model and test setup. The visually guided corrections study uses a checker, a teaching model and a filter that favors changes supported by visible clues. It improves over the starting model on all four extra tests of wider performance and has the best average. Some rivals score better on one test. Comparing each result with the right starting point matters when judging these gains.",
     "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
-    "word_count": 193,
+    "word_count": 150,
     "reading_minutes": 1,
     "image_path": "assets/culture/8c7df0b43ce2ab4b36e2c102.jpg",
     "image_alt": "Sudden Shower over Shin-Ōhashi Bridge and Atake, from One Hundred Famous Views of Edo",
@@ -177,13 +177,13 @@
         "metadata_sha256": "557057f1bbad267b14b827dd200956e37f861ff421432668becfc68a6cda145f",
         "pdf_url": "https://arxiv.org/pdf/2610.26860v1",
         "has_editorial": true,
-        "headline": "OpenVLHarness shows modest gains from multimodal memory in visual reasoning",
-        "deck": "A preprint study tests a multimodal tool that stores and uses visual data across steps, finding small improvements but noting limits and costs.",
-        "what_happened": "A controlled study on 22 benchmarks found that simply increasing the inference budget of a base model yields only modest gains for visual reasoning tasks. OpenVLHarness adds a capability layer and persistent multimodal memory to organize tool outputs and evidence across steps, improving average scores by about 9.7–12.6 points over baselines and lowering token costs in some cases.",
+        "headline": "Keeping images and tool results helps AI answer visual questions",
+        "deck": "OpenVLHarness improves test scores by 9.7–12.6 points. The smaller gains described in the abstract come from giving the starting AI more computing time alone.",
+        "what_happened": "Across 22 tests, giving a basic AI model more time to answer produced only modest gains. OpenVLHarness instead adds tools and memory for images, text and earlier tool results. It improves average scores by 9.7–12.6 points over the comparison systems.",
         "why_it_matters": "The approach suggests practical ways to organize external tools and evidence when reasoning with images, with gains that depend on the task and resource use.",
         "body_paragraphs": [
-          "OpenVLHarness introduces a way to keep images, data, and links in memory during a task, so the model can reuse evidence without starting over. In tests across 22 benchmarks, it raised average scores compared with no-tool baselines, though the size of gains varied by backbone and setup.",
-          "A practical takeaway is that linking outputs from different tools and keeping a memory of what the model saw can help accuracy, but benefits are not guaranteed for every task and may come with higher complexity and cost."
+          "The system keeps images, information and links available during a task. This lets the AI reuse evidence across several steps instead of starting again each time.",
+          "The reported gains vary with the underlying AI model and test setup. The abstract also reports lower token use in some comparisons. Tokens are the pieces of text processed by an AI."
         ],
         "limitation": "This is an abstract-only preprint; results are not finalized and may change in peer review.",
         "summary_basis": "Summary of the abstract",
@@ -195,6 +195,10 @@
         "research_reading_version": "paper-practitioner-v1",
         "full_text_status": "pdf_size_limit",
         "full_text_retry_after": "2026-10-27",
+        "manual_source_audit": {
+          "date": "2026-10-26",
+          "approved": true
+        },
         "kind": "research",
         "slug": "paper-6e9ca4b2faaee021f6509905",
         "path": "research/paper-6e9ca4b2faaee021f6509905/index.html",
@@ -250,9 +254,9 @@
         "metadata_sha256": "9f3f91c63d024b38ebd9c1b199910156c068588d4a12c44973594a1dbedbc243",
         "pdf_url": "https://arxiv.org/pdf/2610.26856v1",
         "has_editorial": true,
-        "headline": "Using visible clues to guide AI corrections yields mixed results across tests",
-        "deck": "Gating AI corrections to align with visible clues yields uneven improvements and may not hold on unseen data.",
-        "what_happened": "Researchers trained a vision-language model in three steps: a verifier scores results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. On six benchmarks, some tests improved, but not all holdout data.",
+        "headline": "Corrections based on visible clues improve AI scores across tests",
+        "deck": "The method improves average scores on six main tests and four extra tests of wider performance, without beating every rival on every test.",
+        "what_happened": "The method uses a checker, a teaching model that suggests changes, and a filter favoring changes supported by visible clues. It beats the starting model on all four extra tests and has the best average. Some rivals do better on one test.",
         "why_it_matters": "Teams should test gains on unseen data and ensure upgrades come from real visual clues, not tricks learned during training.",
         "body_paragraphs": [
           "The method has three parts: a verifier rates results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. Results vary by task.",
@@ -270,6 +274,10 @@
         "full_text_retry_after": "2026-10-27",
         "paper_pages": 18,
         "paper_text_sha256": "8579af76ad6fe0ef53f3b0bf395da5063d5bca6b3ccc618d55ace023e3715c3d",
+        "manual_source_audit": {
+          "date": "2026-10-26",
+          "approved": true
+        },
         "kind": "research",
         "slug": "paper-950cc7fc17d32a70459713fe",
         "path": "research/paper-950cc7fc17d32a70459713fe/index.html",
@@ -308,26 +316,26 @@
     "prose": [
       [
         {
-          "text": "What is learned from OpenVLHarness is that simply increasing the memory of a model does not guarantee large jumps in visual reasoning. The approach adds a simple layer to keep images, data, and links in memory, so the model can reuse evidence across steps. In a set of twenty two benchmarks the gains were modest, and the benefit depended on the backbone and setup. This is not a dramatic breakthrough, yet it offers a practical reminder that organization and recall can help accuracy without exploding cost.",
+          "text": "OpenVLHarness adds tools and memory so an AI can reuse images and earlier tool results. Across twenty two tests, it improves average scores by 9.7–12.6 points over the comparison systems. The modest gains described in the abstract came from giving the starting model more computing time alone. They were not the gains from OpenVLHarness. The results vary with the underlying model and test setup.",
           "source_key": "paper:6e9ca4b2faaee021f6509905",
           "path": "research/paper-6e9ca4b2faaee021f6509905/index.html"
         }
       ],
       [
         {
-          "text": "What is learned from the visually guided corrections study is that improvements can appear when the system relies on clues that are visible, yet the results do not always hold on new images or unseen data. The method has three parts: a verifier, a mentor, and a gate that accepts edits tied to visible clues. The story is mixed, and the caution is clear: improvements must endure beyond the training context to be trustworthy, and trade offs must be weighed.",
+          "text": "The visually guided corrections study uses a checker, a teaching model and a filter that favors changes supported by visible clues. It improves over the starting model on all four extra tests of wider performance and has the best average. Some rivals score better on one test. Comparing each result with the right starting point matters when judging these gains.",
           "source_key": "paper:950cc7fc17d32a70459713fe",
           "path": "research/paper-950cc7fc17d32a70459713fe/index.html"
         }
       ]
     ],
     "source_hashes": {
-      "paper:6e9ca4b2faaee021f6509905": "89b275acd50e327567a12fb87ea701de410a1e2e63aaa8b25d822e7531c34304",
-      "paper:950cc7fc17d32a70459713fe": "ad30a5787d5563d56b8c66892a93d0a776f65485420e44572cd1a400cef62483"
+      "paper:6e9ca4b2faaee021f6509905": "103d3567612c0e61eed4e2956afd7e937088e0b4ea55ded70847883dbf7a656d",
+      "paper:950cc7fc17d32a70459713fe": "f40ee8f9579735f8cafc8c0f93fd660436cdd9ac67157a6d2bd7728e66321524"
     },
     "image_key": "culture:8c7df0b43ce2ab4b36e2c102",
     "image_work_key": "5ebe6ac4e7cde27efa7adcdddad5921cd4105f918fc45d438eb12dcf53c7d24b",
-    "image_reason": "A distant shower of rain softens a busy landscape, echoing how small gains appear after careful, layered effort in a complicated task.",
+    "image_reason": "The bridge offers a visual link to the steps that connect evidence with an answer.",
     "review_checks": {
       "grounded": true,
       "clear_high_school_language": true,
@@ -338,5 +346,6 @@
       "image_metaphor_supported": true
     },
     "human_approved": true
-  }
+  },
+  "correction_note": "2026-10-26: Applied the user-approved corrections for OpenVLHarness and visually guided corrections to their repeated claims in the research overview. News overview unchanged."
 }

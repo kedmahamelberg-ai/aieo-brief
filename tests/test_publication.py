@@ -80,4 +80,29 @@ class Publication(unittest.TestCase):
   with patch('generate_editorial_stories.ROOT',Path(tempfile.gettempdir())/'no-brief-retry-state'):
    selected,counts,_=candidates(r,sym,({}, {},evidence,{}))
   self.assertEqual(len(selected),1);self.assertEqual(counts['needs_model'],1)
+ def test_grounded_empty_impacts_do_not_restore_old_axis_prose(self):
+  from claim_grounding import VERSION
+  seed=copy.deepcopy(self.seed);eid=next(iter(seed))
+  seed[eid]['for_humans']='';seed[eid]['for_ai']=''
+  legacy=next(x for x in cards(self.release,self.sym,{}, {},seed,True) if x['event_id']==eid)
+  self.assertTrue(legacy['for_humans'] or legacy['for_ai'])
+  seed[eid]['evidence_basis_summary']['grounding_version']=VERSION
+  grounded=next(x for x in cards(self.release,self.sym,{}, {},seed,True) if x['event_id']==eid)
+  self.assertEqual(grounded['for_humans'],'');self.assertEqual(grounded['for_ai'],'')
+ def test_changed_draft_cannot_be_saved_with_an_old_review(self):
+  import hashlib
+  from unittest.mock import Mock
+  import claim_grounding
+  from generate_editorial_stories import persist
+  draft,_=self.draft();client=Mock()
+  proof={'scope_review':{'grounding':{'version':claim_grounding.VERSION,'public_sha256':hashlib.sha256(json.dumps(claim_grounding.units(draft),sort_keys=True,ensure_ascii=False).encode()).hexdigest()}}}
+  draft['editorial_deck']='An unreviewed new claim.'
+  with self.assertRaises(EditorialError) as caught:persist(client,{'reuse':False},{},draft,proof)
+  self.assertEqual(caught.exception.code,'publication_proof_mismatch');client.table.assert_not_called()
+ def test_missing_review_cannot_reach_the_database(self):
+  from unittest.mock import Mock
+  from generate_editorial_stories import persist
+  draft,_=self.draft();client=Mock()
+  with self.assertRaises(EditorialError):persist(client,{'reuse':False},{},draft,{})
+  client.table.assert_not_called()
 if __name__=='__main__':unittest.main()

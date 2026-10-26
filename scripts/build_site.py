@@ -2,6 +2,7 @@
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
 from editorial_corrections import apply_corrections
+from claim_grounding import VERSION as GROUNDING_VERSION
 import argparse, collections, copy, json, os, re, shutil, time
 from datetime import datetime, timezone, date
 from pathlib import Path
@@ -99,7 +100,12 @@ def cards(release,sym,registry,readiness,editorial,preview=False):
                 deck='Reporting from '+sources[0]['publisher']+'. Open the source for the article.'
             basis='Publisher headline'
         human=public_evidence(axes['human'].get('evidence'));ai=public_evidence(axes['ai'].get('evidence'))
-        if v:human=text(v.get('for_humans')) or human;ai=text(v.get('for_ai')) or ai
+        if v:
+            if (v.get('evidence_basis_summary') or {}).get('grounding_version')==GROUNDING_VERSION:
+                # Empty is an intentional reviewed result, not a request for old prose.
+                human=text(v.get('for_humans'));ai=text(v.get('for_ai'))
+            else:
+                human=text(v.get('for_humans')) or human;ai=text(v.get('for_ai')) or ai
         count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220))
         output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':axes['human']['direction'],'ai_direction':axes['ai']['direction'],'human_label':DIRECTION_LABELS[axes['human']['direction']],'ai_label':DIRECTION_LABELS[axes['ai']['direction']],'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
