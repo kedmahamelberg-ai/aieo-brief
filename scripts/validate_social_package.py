@@ -16,7 +16,8 @@ def validate(batch, audit=None, since=None, platform=None):
     topics = {x['id']: x for x in batch['topics']}
     errors = []
     seen = set()
-    records = {x['id']: x for x in (audit or {}).get('items', [])}
+    audit_items = (audit or {}).get('items', [])
+    records = audit_items if isinstance(audit_items, dict) else {x['id']: x for x in audit_items}
     for item in batch['items']:
         p = item['platform']
         if p not in ('linkedin', 'facebook', 'instagram') or (platform and p != platform):
@@ -51,6 +52,10 @@ def validate(batch, audit=None, since=None, platform=None):
         assets = item.get('prepared_carousel_assets', [])
         expected_assets = 1 if p == 'linkedin' else 3
         require(len(assets) == expected_assets and all(Path(a).is_file() for a in assets), f'missing expected {expected_assets} image asset(s)')
+        if p in ('facebook', 'instagram'):
+            expected_names = [f"{t['id']}_carousel_{n}.png" for n in (1, 2, 3)]
+            require([Path(a).name for a in assets] == expected_names, 'prepared carousel order must be cover, explanation, CTA')
+            require(item.get('feed_asset') == assets[0], 'feed asset must be the carousel cover')
         if p == 'linkedin':
             single_image = item.get('single_image_asset')
             require(single_image and Path(single_image).is_file(), 'missing LinkedIn single image')
@@ -71,6 +76,10 @@ def validate(batch, audit=None, since=None, platform=None):
             expected_count = 1 if p == 'linkedin' else 3
             require(a.get('media_count') == expected_count, f'saved media count is not {expected_count}')
             require(a.get('media_type') == ('single_image' if p == 'linkedin' else 'photo_carousel'), 'saved media type differs from policy')
+            if p in ('facebook', 'instagram'):
+                require(a.get('saved_media_order') == ['cover', 'explanation', 'cta'], 'saved carousel order must be cover, explanation, CTA')
+                require(a.get('saved_order_checked_after_save') is True, 'carousel order was not checked after save')
+                require(a.get('saved_order_evidence') and Path(a['saved_order_evidence']).is_file(), 'missing post-save carousel order evidence')
             require(a.get('scheduled_at') == item['scheduled_at'], 'saved schedule mismatch')
             require(a.get('evidence') and Path(a['evidence']).is_file(), 'missing saved-UI evidence')
             if p == 'instagram':
