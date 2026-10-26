@@ -11,6 +11,7 @@ from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'scripts'))
 import prepare_social_review as social
+import validate_social_package as validation
 
 
 def news(market,number):
@@ -55,6 +56,41 @@ class SocialProduction(unittest.TestCase):
   self.assertIn('needs: deploy',build);self.assertIn("if: needs.deploy.result == 'success'",build)
   self.assertNotIn('cron:',trigger);self.assertNotIn('workflow_run:',trigger)
   self.assertNotIn('OPENAI_API_KEY',trigger);self.assertNotIn('SOCIAL_ACCESS_TOKEN',trigger)
+
+ def test_carousel_requires_prepared_and_post_save_order(self):
+     topics=social.topic_plan(self.items,date(2026,10,26),self.news)
+     with tempfile.TemporaryDirectory() as d:
+         batch=social.build(topics,{},Path(d),'2026-W43',date(2026,10,19),date(2026,10,25),date(2026,10,26))
+         item=next(i for i in batch['items'] if i['platform']=='instagram')
+         topic=next(t for t in topics if t['id']==item['topic_id'])
+         batch={'topics':[topic],'items':[item]}
+         for path in item['prepared_carousel_assets']+item['story']['frames']:
+             Path(path).parent.mkdir(parents=True,exist_ok=True)
+             Path(path).touch()
+         evidence=Path(d,'saved-preview.png')
+         evidence.touch()
+         card_evidence=[Path(d,f'saved-card-{n}.png') for n in (1,2,3)]
+         for path in card_evidence:path.touch()
+         record=dict(id=item['id'],status='VERIFIED',caption_verified=True,
+             account_verified=True,media_order_verified=True,destination_verified=True,
+             media_count=3,media_type='photo_carousel',scheduled_at=item['scheduled_at'],
+             evidence=str(evidence),saved_media_order=['cover','explanation','cta'],
+             saved_order_checked_after_save=True,saved_order_evidence=[str(p) for p in card_evidence],
+             story_frames_verified=3,story_time_verified=True)
+         audit={'items':[record]}
+         self.assertEqual(validation.validate(batch,audit),[])
+         item['prepared_carousel_assets'][0],item['prepared_carousel_assets'][2]=item['prepared_carousel_assets'][2],item['prepared_carousel_assets'][0]
+         self.assertTrue(any('prepared carousel order' in e for e in validation.validate(batch,audit)))
+         item['prepared_carousel_assets'][0],item['prepared_carousel_assets'][2]=item['prepared_carousel_assets'][2],item['prepared_carousel_assets'][0]
+         record['saved_media_order']=['cta','explanation','cover']
+         self.assertTrue(any('saved carousel order' in e for e in validation.validate(batch,audit)))
+         record['saved_media_order']=['cover','explanation','cta']
+         record['saved_order_checked_after_save']=False
+         self.assertTrue(any('checked after save' in e for e in validation.validate(batch,audit)))
+         record['saved_order_checked_after_save']=True
+         record['saved_order_evidence']=[str(card_evidence[0])]*3
+         self.assertTrue(any('three distinct' in e for e in validation.validate(batch,audit)))
+
 
 class CuratedPhotoReproducibility(unittest.TestCase):
     def test_reviewed_bytes_do_not_depend_on_cdn(self):
