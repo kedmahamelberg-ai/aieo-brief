@@ -1205,8 +1205,7 @@
       "why_it_matters": "The discussion highlights both potential gains and limits of AI in creative work, emphasizing human direction and responsibility in shaping meaning.",
       "body_paragraphs": [
         "Shigeru Miyamoto’s perspective frames AI as a tool that augments human creativity by taking over routine execution, allowing designers to concentrate on the overarching concept and emotional impact of a game. This view is echoed in how other studios discuss AI use, with a clear boundary drawn around human intent and ownership of ideas.",
-        "The interview-like material traces a longer arc from earlier computing tools to today’s generative models, arguing that technology evolves to reveal what makes design meaningful. The lesson for readers is that AI’s value lies in complementing human creativity, not replacing it or erasing personal authorship.",
-        "limitation_value_pruned_discussion_advisory_between_fields_and_sources_note: This article relies on a single source’s extended interview and acknowledges diverse corporate stances, so findings should be considered as illustrative rather than universal across the industry."
+        "The report of his press-conference remarks traces a longer arc from earlier computing tools to today’s generative models, arguing that technology evolves to reveal what makes design meaningful. The lesson for readers is that AI’s value lies in complementing human creativity, not replacing it or erasing personal authorship."
       ],
       "for_humans": "AI can handle repetitive tasks, freeing humans to focus on core ideas and vision.",
       "for_ai": "Use as an execution assistant that supports human-led design rather than substituting it.",
@@ -1238,7 +1237,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The evidence reflects a single public interview and related industry remarks; results cannot be generalized to all creators or studios.",
+      "limitation": "The evidence consists of reported press-conference remarks and related industry statements, not measured outcomes for creators.",
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
@@ -1312,7 +1311,7 @@
       "headline": "Gates Warns of 20-Year AI Turmoil With Mixed Gains and Uneven Transitions",
       "original_headline": "Bill Gates warns of 20 years of turmoil from artificial intelligence",
       "deck": "Microsoft co-founder cautions that AI could disrupt work and society even under best-case management, creating winners and losers.",
-      "what_happened": "Microsoft co-founder Bill Gates warned that the move to an AI-driven economy could take up to twenty years, with winners and losers emerging and jobs and social roles potentially shifting as technology advances. He described the transition as an estimate and said some tasks may be automated while others remain in human hands.",
+      "what_happened": "Microsoft co-founder Bill Gates warned that the move to an AI-driven economy could involve roughly twenty years of disruption, with winners and losers emerging and jobs and social roles potentially shifting as technology advances. He said this estimate could be shorter or longer and said some tasks may be automated while others remain in human hands.",
       "why_it_matters": "The remarks highlight mixed potential benefits in areas like health and agriculture, but also emphasize the need for governance and safeguards as society navigates a lengthy, uneven transition.",
       "body_paragraphs": [
         "Gates warned that AI and humanoid robotics could perform much of the physical labor now done by humans, which could ease shortages but also change everyday work and life. He suggested societies might deliberately reserve activities such as childcare, food preparation, arts, and sports for humans, signaling boundaries during rapid change.",
@@ -1371,7 +1370,7 @@
       "why_it_matters": "The initiative demonstrates a structured approach to AI literacy, emphasizing responsible use while preparing students for a tech-driven workforce. It highlights gains in knowledge and skills, alongside the need to manage ethical considerations and limits of AI tools.",
       "body_paragraphs": [
         "PNW is piloting AI-enabled education by giving first-year students access to Google Gemini, Google LLC’s advanced AI platform. The access is part of a broader plan with Purdue University and Google Public Sector to integrate AI literacy into coursework and help students gain a competitive edge as AI reshapes many careers.",
-        "Chancellor Kenneth C. Holford emphasizes that preparing students for the future workforce is a top priority and that graduates must understand how to use these tools ethically and effectively. The initiative also includes an AI competency requirement beginning with the fall 2026 class, signaling a campus-wide shift toward AI readiness while acknowledging that tools have capabilities and limits the public should understand."
+        "Chancellor Kenneth C. Holford says graduates need to use AI ethically and effectively. PNW is piloting a developing AI literacy and competency requirement; the requirement beginning with the fall 2026 class applies to Purdue West Lafayette."
       ],
       "for_humans": "This program helps students, including teens, learn to use AI tools responsibly in real coursework.",
       "for_ai": "Use AI tools to enhance learning while adhering to ethical guidelines and institutional policies.",
@@ -1419,14 +1418,14 @@
       "kind": "news",
       "slug": "ai-health-shows-mixed-gains-clear-du-cerveau",
       "path": "story/ai-health-shows-mixed-gains-clear-du-cerveau/index.html",
-      "headline": "AI in Health Shows Mixed Gains and Clear Limits, Institut du Cerveau Says",
+      "headline": "Institut du Cerveau Explains AI Applications in Health Research",
       "original_headline": "What is artificial intelligence?",
       "deck": "An accessible look at how AI assists health research and care, with boundaries.",
       "what_happened": "AI tools are transforming health research and care by analyzing complex data and aiding diagnosis, with concrete examples like early detection of brain anomalies in MRIs.",
-      "why_it_matters": "Crossing heterogeneous data points opens paths to more personalized and predictive medicine, but gains are not universal and depend on context, data quality, and governance.",
+      "why_it_matters": "The glossary describes how combining imaging, genomic and patient-record data can support more personalized and predictive medicine.",
       "body_paragraphs": [
-        "The health sector is moving AI from theory to practice, helping researchers model disease progression and optimize clinical trials. By combining data from imaging, genomics, and patient records, AI can spot patterns that humans might miss, though results depend on data quality and study design.",
-        "Experts caution that AI’s benefits are not universal or guaranteed for every condition or patient. Effects emerge from how tools are used within care teams, regulatory frameworks, and ongoing evaluation rather than from technology alone."
+        "The institute defines AI as computing methods that perform tasks usually associated with human intelligence. Its health examples include detecting brain abnormalities in MRI scans and supporting diagnosis.",
+        "It also describes uses in modeling disease progression, finding therapeutic targets and improving clinical trials. These are examples in an educational glossary, rather than results from a new clinical study."
       ],
       "for_humans": "AI can support faster, more precise health decisions while keeping patient safety first.",
       "for_ai": "AI augments human health researchers and clinicians without replacing core expertise.",
@@ -1458,7 +1457,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "Publicly available summaries do not claim universal improvements; results vary by data quality, context, and governance. The source emphasizes mixed gains and the need for human oversight.",
+      "limitation": "This is a glossary explanation of AI applications, not a clinical evaluation of their benefits and risks.",
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
@@ -1639,10 +1638,10 @@
       "kind": "news",
       "slug": "china-ai-governance-casi-outlines-concepts-practices-limits",
       "path": "story/china-ai-governance-casi-outlines-concepts-practices-limits/index.html",
-      "headline": "China AI governance: CASI outlines concepts and practices with noted limits",
+      "headline": "China AI governance: CIIS outlines concepts and practices with noted limits",
       "original_headline": "CASI Special Research Report “Artificial Intelligence Governance in China: Concepts, Practices, and Significance”",
-      "deck": "A CASI report surveys governance ideas and implementation in China, highlighting what they address and what remains uncertain.",
-      "what_happened": "A CASI special research report titled AI Governance in China:Philosophy, Practices, and Implications was published, focusing on governance concepts rather than AI capabilities or outcomes.",
+      "deck": "A CIIS report surveys governance ideas and implementation in China, highlighting what they address and what remains uncertain.",
+      "what_happened": "A CIIS special research report titled AI Governance in China:Philosophy, Practices, and Implications was published, focusing on governance concepts rather than AI capabilities or outcomes.",
       "why_it_matters": "The report clarifies governance ideas and their boundaries, showing mixed gains and losses in how AI is steered, rather than promising universal benefits or predictable results.",
       "body_paragraphs": [
         "The document presents governance concepts as a framework for understanding how China approaches artificial intelligence, emphasizing philosophy, practices, and anticipated implications rather than technical performance or user experiences. It invites readers, including teenagers, to consider who sets rules, how decisions are made, and where responsibility lies as AI tools become more embedded in daily life.",
@@ -2279,14 +2278,14 @@
       "kind": "news",
       "slug": "ai-aids-traditional-medicine-researchers-2026-limits-exist",
       "path": "story/ai-aids-traditional-medicine-researchers-2026-limits-exist/index.html",
-      "headline": "AI aids traditional medicine researchers at 2026 World Conference, but limits exist",
+      "headline": "Traditional Medicine Forum Discusses AI Research, Clinical Translation and Data Governance",
       "original_headline": "2026 World Traditional Medicine Conference “Artificial Intelligence and Traditional Medicine” Parallel Forum Held",
-      "deck": "A Chinese summit frame describes AI as a tool that supports discovery, validation, and education in traditional medicine, with cautions about data governance and scope.",
+      "deck": "A parallel forum at the 2026 World Traditional Medicine Conference discussed AI applications in research and medicine.",
       "what_happened": "At the 2026 World Traditional Medicine Conference, a parallel forum on AI and traditional medicine convened, featuring opening remarks, expert talks, and roundtable discussions focused on AI-driven research, clinical translation, and data governance.",
       "why_it_matters": "The event frames AI as a potential enabler for traditional medicine, while noting practical challenges like data sharing, standardization, and responsible deployment.",
       "body_paragraphs": [
-        "The conference brought together researchers, clinicians, and industry representatives to discuss how AI can accelerate the study of traditional medicines, from population genetics-informed drug discovery to data-driven clinical insight. Participants highlighted progress in AI-assisted research strategies and in translating findings into practice, while repeatedly stressing the need for rigorous data governance and cross-border collaboration.",
-        "A recurring theme was that AI is a tool, not a proclamation of universal benefit. Attendees emphasized that improvements in discovery or validation do not automatically translate into gains for all patients, and that human oversight, regulatory clarity, and transparent methodologies are essential to ensure equitable benefits and to avoid overgeneralization from limited samples."
+        "The conference brought together researchers, clinicians, and industry representatives to discuss how AI can accelerate the study of traditional medicines, from population genetics-informed drug discovery to data-driven clinical insight. Participants highlighted progress in AI-assisted research strategies and in translating findings into practice, alongside discussion of data governance and collaboration.",
+        "The programme combined opening remarks, expert presentations and roundtable discussions. The coverage describes the topics and participants, rather than measuring patient outcomes."
       ],
       "for_humans": "AI can help professionals explore traditional medicine more efficiently without replacing expert judgment.",
       "for_ai": "Use AI to augment human expertise, recognize limits, and support ethical, data-driven practice.",
@@ -2318,7 +2317,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The coverage reflects conference proceedings and expert commentary, not universal outcomes; quotes describe AI as a facilitator with context-dependent limits.",
+      "limitation": "This is conference coverage, not a clinical study demonstrating patient benefits.",
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
@@ -2334,15 +2333,14 @@
       "kind": "news",
       "slug": "argentina-bids-keep-ai-unregulated-sparking-growth-limits",
       "path": "story/argentina-bids-keep-ai-unregulated-sparking-growth-limits/index.html",
-      "headline": "Argentina bids to keep AI unregulated, sparking debate on growth and limits",
+      "headline": "Milei Proposes an Unregulated AI Sector to Attract Companies to Argentina",
       "original_headline": "Javier Milei's Case Against AI Regulation",
-      "deck": "A national proposal argues deregulation could accelerate AI adoption, but critics warn of risks and uneven benefits.",
+      "deck": "Reason reports Milei’s proposal for unregulated AI, a new corporate category and low taxes.",
       "what_happened": "Argentine President Javier Milei pushed for deregulating AI and proposed a three-pillars plan to boost AI, drawing on a Financial Times piece and related senate hearings.",
-      "why_it_matters": "The move highlights a policy tension between potential productivity gains and the need for safeguards, as regulatory choices may affect jobs, innovation, and social outcomes.",
+      "why_it_matters": "The proposal sets out how Milei wants to attract AI companies. The report describes a political position and legislative status, rather than results of an implemented policy.",
       "body_paragraphs": [
         "A Reason Magazine article summarizes Milei’s call to keep AI deregulated and to attract AI companies to Argentina, arguing that deregulation could accelerate adoption and productivity without premature controls.",
-        "The piece notes Milei’s three-pillars approach (unregulated AI, a new nonhuman corporate category, and low taxes) and that Senate hearings had begun but not advanced the proposal as of late September.",
-        "Some observers view this as a path to broader AI use with potential gains in efficiency, while others warn about uneven benefits and possible gaps in safeguards."
+        "The piece notes Milei’s three-pillars approach (unregulated AI, a new nonhuman corporate category, and low taxes) and that Senate hearings had begun but not advanced the proposal as of late September."
       ],
       "for_humans": "The policy choice could affect opportunities and constraints for people, including teens exploring AI.",
       "for_ai": "Policy signals may influence how quickly AI tools are developed and deployed, with implications for responsible use.",
@@ -2446,7 +2444,7 @@
       "kind": "news",
       "slug": "ustar-technology-conducting-preliminary-research-physical-large-models",
       "path": "story/ustar-technology-conducting-preliminary-research-physical-large-models/index.html",
-      "headline": "Ustar Technology is conducting preliminary research on physical AI self-evolving large models.",
+      "headline": "Unitree is conducting preliminary research on physical AI self-evolving large models.",
       "original_headline": "Ustar Technology is conducting preliminary research on physical AI self-evolving large models.",
       "deck": "Reporting from 新华网浙江. Open the source for the article.",
       "what_happened": "",
@@ -2727,7 +2725,7 @@
       "why_it_matters": "It emphasizes that benefits are not evenly distributed and urges scrutiny of who profits, who bears costs, and how communities can defend their work and data.",
       "body_paragraphs": [
         "The piece traces how large language models are trained on data from books, articles and discussions, and how labour from workers in distant regions supports those systems. It stresses that this extraction often occurs with little regard for consent or fair compensation, while profits flow to a few corporations. The article also points to the energy-intensive infrastructure behind these models, underscoring the broader social costs beyond the screen you see.",
-        "It then surveys responses,ranging from data governance proposals to worker protections and funding for public data resources,arguing that the debate should separate technical performance from social rights. It calls for transparent accounting of benefits and risks, and for safeguards that empower communities to shape how AI tools are built and used."
+        "The article discusses Māori data sovereignty through Te Hiku and protections negotiated by SAG-AFTRA as examples of resistance. Its conclusion rejects the extractive model it describes; it does not propose funding public data resources."
       ],
       "for_humans": "People should understand AI as a social process with winners and losers.",
       "for_ai": "the article frames AI growth as parasitic, expanding through data, labor, and infrastructure while provoking pushback and new restrictions",
@@ -2833,10 +2831,10 @@
       "headline": "Rutgers Study Finds About One-Third of Young Adults Use AI for Substance-Use Information, With Caveats",
       "original_headline": "A Third of Young Adults Turn to Artificial Intelligence for Substance-Use Information",
       "deck": "A Rutgers survey of nearly 1,000 young adults examines how people turn to AI for information about drugs and alcohol and the limits of that guidance.",
-      "what_happened": "Researchers surveyed almost 1,000 participants and found that about one in three people aged 18 to 29 use AI chatbots for substance-use information, often focusing on risks and consequences. They note that AI can reproduce misinformation and how usage varies across groups.",
-      "why_it_matters": "AI can broaden access to information but may also spread incorrect or incomplete guidance; understanding how outputs are interpreted helps publics healthively. Further study is needed on how young adults comprehend AI results related to substances.",
+      "what_happened": "In a survey of nearly 1,000 people aged 18 to 29, about one-third of respondents reported using AI chatbots for substance-use information. The researchers warn that chatbots can reproduce misinformation.",
+      "why_it_matters": "The study raises questions about how young adults interpret AI-generated information about drugs and alcohol. The authors call for further research into that interpretation.",
       "body_paragraphs": [
-        "Rutgers researchers surveyed nearly 1,000 participants and found that more than one in three young adults use AI chatbots for substance-use information, with roughly half reporting monthly engagement. The work, appearing in a Rutgers-affiliated journal segment, highlights that AI can reproduce misinformation and mislead readers about risks.",
+        "The Rutgers study, published in JMIR Formative Research, found that about one-third of surveyed participants used AI chatbots for substance-use information. Roughly half of that subgroup reported monthly use.",
         "Disparities emerged: Black and male respondents showed higher use for substance-use queries, which may reflect differences in healthcare access, stigma, trust, or information-seeking habits. The authors call for more research into how youths interpret AI outputs on drugs and alcohol and what that means for public health."
       ],
       "for_humans": "AI expands information access, but people should verify guidance with trusted health sources.",
@@ -2925,7 +2923,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The article relies on one country’s data center cases and official statements; outcomes may differ across regions and over time.",
+      "limitation": "This Xinhua commentary draws on examples from several European countries. It is not a comprehensive measurement of all European data-centre projects.",
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
@@ -3169,8 +3167,8 @@
       "what_happened": "The Ministry announced a guiding document listing 22 AI application scenarios across safety, efficiency, and green transformation in water transportation. Industry players report rapid pilot developments and growing integration of intelligent systems in ports, channels, and ships.",
       "why_it_matters": "The plan signals a structured path for AI adoption, but outcomes vary by site and case, emphasizing cautious, targeted use rather than broad, uniform gains.",
       "body_paragraphs": [
-        "The Ministry of Transport released a directive outlining 22 urgent AI scenarios designed to boost safety, productivity, and green transformation in the water transport sector. The document notes a shift toward data-driven, end-to-end optimization across ports, waterways, and shipping, with pilots already showing notable improvements in path planning, safety oversight, and emissions below targets.",
-        "In practice, early deployments show mixed gains. For example, some ports report shorter preparation times and lower costs, while others emphasize the need for robust risk assessment and scalable models to maintain safety and reliability across diverse operations."
+        "The Ministry of Transport outlined 22 priority AI application scenarios for water transport, covering safety, efficiency and green transformation. The report describes applications across ports, waterways and ships.",
+        "Reported examples include improvements in preparation time, costs and emissions. These are attributed examples from particular operations; the article does not report emissions relative to targets or contrasting warnings from other ports."
       ],
       "for_humans": "AI can improve safety and efficiency, but results depend on context and adoption pace.",
       "for_ai": "Guide implementation with focus on prioritized scenarios to maximize safety and efficiency while reducing risk.",
@@ -3575,15 +3573,15 @@
       "metadata_sha256": "d2e9b182df5708883a9c18efc2dbd2e2c4a22b1906aebff8ee09a387a078c238",
       "pdf_url": "https://arxiv.org/pdf/2610.32955v1",
       "has_editorial": true,
-      "headline": "Simple inbox rule classifier matches larger artificial intelligence in routing emails",
-      "deck": "A practical look at how simple rules and a basic classifier compare with larger artificial intelligence systems in routing multilingual emails, with clear limits for real-world use.",
-      "what_happened": "In a test of 231 emails, a basic logistic regression using word features achieved the top accuracy across most cases. It was faster and cheaper than several artificial intelligence programs, while sender details depended on contact graphs.",
+      "headline": "Trained email sorter beats simple keyword rules on real messages",
+      "deck": "The paper compares a trained email sorter, keyword rules and generative AI using real messages from one multilingual inbox.",
+      "what_happened": "In a test of 231 real emails, a basic model trained to recognize word patterns had the best accuracy in most cases. It was faster and cheaper than several AI systems. Information about the sender’s contacts also mattered.",
       "why_it_matters": "For teams using personal inbox tools, start small and add artificial intelligence only where actions are costly; set clear thresholds to control mistakes.",
       "body_paragraphs": [
-        "A lightweight rule-based classifier often matches bigger artificial intelligence models for inbox tasks. In a hypothetical 231-email test, the simple method used less time and cost.",
-        "A key point is to rely on the contact graph for decisions instead of guessing from text alone; this lowers mistakes and keeps costs predictable."
+        "The trained email sorter performed strongly on real messages from one Italian/English inbox. The separate system using simple keyword rules performed poorly.",
+        "Correctly sorting a message does not always mean choosing the right action. The paper also examines information about senders and their contacts."
       ],
-      "limitation": "Only one inbox, two languages, and lab-style data limit generalizability to real users in everyday settings and may not reflect other email platforms.",
+      "limitation": "The study uses one personal inbox and two languages. Sorting accuracy alone does not show whether the tool chooses the right actions.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -3595,6 +3593,10 @@
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 8,
       "paper_text_sha256": "d4d626d91a5528d959831e595105d78355822636b149670267ae3c3dfe138d87",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "simple-inbox-rule-classifier-matches-larger-routing-emails",
       "path": "research/simple-inbox-rule-classifier-matches-larger-routing-emails/index.html",
@@ -4252,7 +4254,7 @@
       "has_editorial": true,
       "headline": "Sensorimotor Alignment predicts which robot models move well",
       "deck": "A simple offline score hints which embodied models may perform, but results depend on robot setup and data.",
-      "what_happened": "A training-free score called Sensorimotor Alignment measures how closely a robot’s camera view matches its future actions. Across twelve model families, higher alignment tended to match task success, but results varied with robot design and data sources.",
+      "what_happened": "The researchers tested a score that compares a robot’s camera view with its future actions. Across the tested systems, including twelve models further trained to connect images, language and actions, higher scores tended to go with greater task success.",
       "why_it_matters": "This score can help you screen models before real tests, but expect mismatches if your hardware or data differ from the test setup.",
       "body_paragraphs": [
         "Sensorimotor Alignment compares what the robot sees with how it moves, using stored data rather than real trials. It checks if similar sights tend to produce similar actions.",
@@ -4270,6 +4272,10 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 28,
       "paper_text_sha256": "26e56f8663729e336d30e7deb39067d5348f651942e3cbe5fdb5c290d8d16105",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "sensorimotor-alignment-predicts-which-robot-models-move-well",
       "path": "research/sensorimotor-alignment-predicts-which-robot-models-move-well/index.html",
@@ -4675,10 +4681,10 @@
       "kind": "news",
       "slug": "groupe-ia-tourisme-lauds-anne-nguyens-deputy-minister",
       "path": "story/groupe-ia-tourisme-lauds-anne-nguyens-deputy-minister/index.html",
-      "headline": "Groupe IA Tourisme lauds Anne Nguyen’s appointment as Quebec AI and Digital Deputy Minister",
+      "headline": "Groupe IA Tourisme Welcomes Anne Nguyen as Quebec’s Minister Delegate for AI and Digital Technology",
       "original_headline": "IA Group Tourism - Anne Nguyen, Deputy Minister of Artificial Intelligence and Digital Affairs",
       "deck": "A major tourism group welcomes a new AI and digital policy leader in Quebec, signaling a strategic shift toward human-centered AI adoption.",
-      "what_happened": "The Groupe IA Tourisme congratulated Anne Nguyen on being named head of the AI and Digital Ministry in Quebec. They emphasize the move as evidence of AI’s growing importance across sectors, including tourism, and note Nguyen’s rare double expertise and prior leadership in AI initiatives. The group also highlighted their collaboration and confidence in her human-centered approach.",
+      "what_happened": "The Groupe IA Tourisme congratulated Anne Nguyen on being named Quebec’s minister delegate for artificial intelligence and digital technology. They emphasize the move as evidence of AI’s growing importance across sectors, including tourism, and note Nguyen’s rare double expertise and prior leadership in AI initiatives. The group also highlighted their collaboration and confidence in her human-centered approach.",
       "why_it_matters": "The appointment signals a policy and industry capability investment in AI, with potential to shape responsible adoption and practical benefits for the tourism sector while keeping human interests at the core.",
       "body_paragraphs": [
         "The article highlights the government’s prioritization of AI as a cross-cutting lever for economic and sectoral transformation, including tourism, and notes Anne Nguyen’s leadership as a bridge between policy design and industry practice.",
@@ -4787,12 +4793,12 @@
       "path": "story/le-devoir-ai-rules-art-funding-remains-central/index.html",
       "headline": "Le Devoir Reports AI Rules in Art Funding: Human Oversight Remains Central",
       "original_headline": "The Rules of (AI in) Art",
-      "deck": "Cultural funders restrict AI use in evaluations while allowing AI for administrative tasks under human-led governance.",
-      "what_happened": "Le Devoir indicates that CALQ, SODEC, and CAC are limiting AI use in grant decisions yet permitting AI to assist with paperwork or ideation, all under strict human oversight.",
+      "deck": "Le Devoir describes different AI policies at CALQ, the Canada Council for the Arts and SODEC.",
+      "what_happened": "CALQ and the Canada Council for the Arts restrict AI use in assessing funding applications. SODEC says funding decisions remain human, while it imposes no special AI restrictions on the companies it supports.",
       "why_it_matters": "Rules prioritize privacy, originality, and accountability, showing how AI can raise capacity without replacing expert judgment in arts funding.",
       "body_paragraphs": [
-        "The article outlines a cautious, evolving stance on AI in funding: AI is not used to summarize or score applications, and any automated work must follow program criteria and protect confidential information. Human review remains the primary judgment, with AI allowed to support administrative or ideation tasks within clear boundaries.",
-        "Governance aims to balance efficiency with ethics and copyright rules, illustrating how AI can expand capability without diluting accountability in the arts."
+        "The funders’ policies differ. Restrictions on using AI to summarize or assess applications at CALQ and the Canada Council should not be presented as a shared policy covering every organization.",
+        "SODEC distinguishes its own human funding decisions from the practices of supported companies, for which it reports no special AI restrictions."
       ],
       "for_humans": "Human oversight stays central while AI handles routine tasks.",
       "for_ai": "AI serves as a supportive tool, not a substitute for human decision-making.",
@@ -5338,10 +5344,10 @@
       "headline": "Does AI Threaten Democracies? Montréal Experts Warn About Realistic Misinformation Risks",
       "original_headline": "Does AI Threaten Democracies?",
       "deck": "A Montréal briefing on AI's ability to create convincing misinformation and its potential impact on political processes, with careful notes on limits and mixed outcomes.",
-      "what_happened": "Researchers described how generative AI can produce highly realistic content, such as videos or audios, that may discredit political figures, sow confusion around elections, or aid foreign interference. A public event in Montréal gathered scholars to discuss practical solutions, while noting the difficulty of distinguishing authentic from altered content.",
+      "what_happened": "Researchers described how generative AI can produce highly realistic content, such as videos or audios, that may discredit political figures, sow confusion around elections, or aid foreign interference. A public event scheduled for 28 October in Montréal will bring scholars together to discuss practical solutions, while noting the difficulty of distinguishing authentic from altered content.",
       "why_it_matters": "Citizens need verifiable information to make informed political choices, and institutions risk erosion as AI-enabled deception becomes harder to spot.",
       "body_paragraphs": [
-        "The debate in Montréal centered on how AI’s ability to generate lifelike content lowers the bar for creating deceptive material. While this can enable disinformation campaigns, it also motivates researchers to develop better detection and verification methods for the public good.",
+        "The pre-event article centres on how AI’s ability to generate lifelike content lowers the bar for creating deceptive material. While this can enable disinformation campaigns, it also motivates researchers to develop better detection and verification methods for the public good.",
         "Analysts emphasized that the danger is not only fake content but the broader challenge of proving what is true, especially when doubts about authenticity can undermine trust in facts and institutions."
       ],
       "for_humans": "Understanding AI helps everyone evaluate information more carefully during political processes.",
@@ -5986,15 +5992,15 @@
       "metadata_sha256": "2f5e2fd17fb447b7b4bdd53a10616ee26d968adc531d922712e8c30a23a1efa2",
       "pdf_url": "https://arxiv.org/pdf/2610.30119v1",
       "has_editorial": true,
-      "headline": "Bounds on training error come from observed cycle lengths",
-      "deck": "A bound uses observed cycle lengths to adjust training on time-based data without knowing all dependencies.",
-      "what_happened": "Researchers built a bound on training error that uses how long data cycles last. It has a main part and a tail term; the tail is usually small but not always negligible.",
+      "headline": "Data cycles help estimate limits on AI errors beyond training",
+      "deck": "The paper develops mathematical limits on errors when a trained system handles new data whose observations depend on one another.",
+      "what_happened": "The researchers derive limits on errors beyond the training data. They use the length of periods between points where the data-generating process starts afresh. These are limits on how well a trained system generalizes, rather than its errors during training.",
       "why_it_matters": "For teams training models on streams or time-based data, this helps set realistic error expectations without guessing hidden links.",
       "body_paragraphs": [
-        "Treat data as blocks between regeneration points. Use the actual cycle lengths to estimate how far your training score might be off.",
-        "The second-order tail term is usually small, but its size depends on how long cycles can be."
+        "The method groups observations into periods between fresh starts in the data-generating process. Their lengths help calculate mathematical limits on errors when the trained system handles new data.",
+        "An extra part of the bound is usually small, but its size depends on how long these periods can be."
       ],
-      "limitation": "The tail term can be meaningful if regeneration times are long or highly variable; bounds depend on observed cycles.",
+      "limitation": "The result depends on the study’s mathematical assumptions. Long or highly varied periods between fresh starts can affect the limits.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -6006,6 +6012,10 @@
       "full_text_retry_after": "2026-10-29",
       "paper_pages": 44,
       "paper_text_sha256": "f698c4e37c9f1000bf4ea8344eb61574b66c6c3b41666ae9e885f139ea1555ef",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "bounds-training-error-come-observed-cycle-lengths",
       "path": "research/bounds-training-error-come-observed-cycle-lengths/index.html",
@@ -6220,9 +6230,9 @@
       "metadata_sha256": "866888c49587f2713f09bfe82142b682e57a729227c5d367b641cb8941028375",
       "pdf_url": "https://arxiv.org/pdf/2610.30118v1",
       "has_editorial": true,
-      "headline": "Learning speed matches when inputs are uncorrelated, structure matters with correlations",
-      "deck": "A study compares convolutional and locally connected networks to see how locality and weight sharing affect learning, especially when inputs are not independent.",
-      "what_happened": "Researchers compared two space-aware designs. When input samples are not related, both learn at about the same overall pace, but the design with shared weights gains speed proportional to the number of positions. With correlated inputs, results vary and timing shifts.",
+      "headline": "Sharing learned settings can make an AI network learn faster",
+      "deck": "A mathematical study compares networks that share learned settings across input positions with networks that learn separate settings for each position.",
+      "what_happened": "When values at different input positions do not vary together, both networks follow the same learning path. The network sharing its settings learns faster by a factor equal to the number of positions. This result holds within the paper’s mathematical model.",
       "why_it_matters": "Choosing the right layout and scale can cut needed samples, but real data correlations can narrow the edge of weight sharing depending on data and training time.",
       "body_paragraphs": [
         "This work compares two space-aware designs and how input layout affects learning speed and error, using a simple, clear setup.",
@@ -6240,6 +6250,10 @@
       "full_text_retry_after": "2026-10-29",
       "paper_pages": 39,
       "paper_text_sha256": "d03ed9c81a5b0799942cf73e9fbf5dc07250620b8efff4491ed6b264076a0e3d",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "learning-speed-matches-when-inputs-uncorrelated-matters-correlations",
       "path": "research/learning-speed-matches-when-inputs-uncorrelated-matters-correlations/index.html",
@@ -6426,10 +6440,10 @@
       "kind": "news",
       "slug": "dhs-updates-ai-policy-tightens-rules-critics-warn",
       "path": "story/dhs-updates-ai-policy-tightens-rules-critics-warn/index.html",
-      "headline": "DHS Updates AI Policy Tightens Rules on Surveillance, Opens Open-Source Push, Critics Warn",
+      "headline": "DHS Retains AI Surveillance Ban but Adds Broad Waiver Power",
       "original_headline": "What's New in Homeland Security's Updated AI Policy",
-      "deck": "A federal update shapes how AI is used across agencies, while safeguards and open-source sharing raise questions.",
-      "what_happened": "The Department of Homeland Security quietly released an updated internal AI-use policy, effective in September, aligning mostly with 2025 in scope. The policy tightens prohibitions on certain surveillance uses and notes DHS will share AI assets openly, with oversight and governance reforms; however, questions remain about waivers and how they interact with privacy protections.",
+      "deck": "The updated policy retains a surveillance prohibition, allows waivers and introduces AI asset sharing.",
+      "what_happened": "The Department of Homeland Security quietly released an updated internal AI-use policy, effective in September, aligning mostly with 2025 in scope. The policy retains its surveillance prohibition with minimal changes and notes DHS will share AI assets openly, with oversight and governance reforms; however, questions remain about waivers and how they interact with privacy protections.",
       "why_it_matters": "The policy introduces open-source sharing and governance changes that could improve transparency, yet it also creates potential loopholes through waivers that may blur guardrails and civil liberties protections.",
       "body_paragraphs": [
         "The DHS policy update marks a shift toward more explicit governance of internal AI, including a push to share code and models across agencies. While this can improve accountability and reuse, it also concentrates attention on how waivers are justified and reviewed.",
@@ -6535,7 +6549,7 @@
       "path": "story/next-alumni-donate-ai-scholarship-leaders-responsible-pursuit/index.html",
       "headline": "NExT++ alumni donate AI scholarship; leaders urge steady, responsible pursuit",
       "original_headline": "NExT++ Joint Research Center alumni donation \"Zhang Bo Artificial Intelligence Scholarship\" ceremony held",
-      "deck": "A university-funded scholarship reinforces research funding and mentorship without hype.",
+      "deck": "An alumni-funded scholarship supports doctoral research in artificial intelligence at Tsinghua.",
       "what_happened": "The NExT++ joint center held a ceremony at Tsinghua for the Zhang Bo AI Scholarship, attended by university leaders, faculty, and students, with funds earmarked to support AI foundational research for PhD students.",
       "why_it_matters": "The donation supports individual researchers and mentorship networks, but the broader impact on AI progress or society depends on how scholars use the opportunity and on future funding cycles.",
       "body_paragraphs": [
@@ -6588,14 +6602,14 @@
       "kind": "news",
       "slug": "ai-culture-tourism-pilots-launched-caution-scope-boundaries",
       "path": "story/ai-culture-tourism-pilots-launched-caution-scope-boundaries/index.html",
-      "headline": "AI+Culture and Tourism Pilots Launched With Caution: Limited Scope and Boundaries",
+      "headline": "China Announces 14 AI Application Pilots in Culture and Tourism",
       "original_headline": "“Artificial Intelligence + Culture and Tourism” Application Pilots Launched",
-      "deck": "New pilot deployments aim to test AI-enabled services across culture and tourism with a balanced, phased approach.",
+      "deck": "The pilots cover six areas, from cultural production and heritage protection to tourism services.",
       "what_happened": "The Ministry of Culture and Tourism announced a list of AI+ culture and tourism pilot applications, covering six focus areas with 14 pilots across diverse institutions to test AI integration in culture, heritage, and tourism services.",
       "why_it_matters": "The pilots aim to scale AI-enabled services across sectors while emphasizing careful implementation and standardization to avoid overgeneralization or hype.",
       "body_paragraphs": [
         "The government identified six priority directions,from supporting cultural production to improving public services and heritage protection,and organized pilots across government units, universities, and cultural institutions to test concrete scenarios. The effort seeks to align users, data, and technology providers and to codify effective practices for wider use.",
-        "Officials caution that these pilots are early-stage and findings should not be generalized to all contexts or populations; the evidence base is drawn from pilot deployment details and ongoing operations, not a universal claim about AI benefits."
+        "The ministry says the pilots will bring together application sites, data providers and technology suppliers. It aims to turn effective practices into standards that can be replicated."
       ],
       "for_humans": "People may gain broader access to AI-powered cultural and tourism services.",
       "for_ai": "AI deployment in culture and tourism proceeds through careful, scalable pilot efforts.",
@@ -6704,8 +6718,8 @@
       "what_happened": "Beijing-based Jitai Tech formed a strategic collaboration with Eli Lilly to drive a generative AI platform for lipid nanoparticle delivery, aiming to speed preclinical to clinical development and expand into international markets.",
       "why_it_matters": "The alliance showcases AI’s potential to accelerate R&D and enable precise drug targeting, while outcomes depend on regulatory reviews and clinical results.",
       "body_paragraphs": [
-        "The collaboration centers on an AI-driven platform that designs and predicts lipid nanoparticle configurations, potentially shortening development cycles from itemized R&D tasks to a more integrated process. Industry observers note that such AI-assisted workflows can trim years off traditional timelines, but success hinges on rigorous testing and approval.",
-        "Beijing-based inhibitors and partners also highlight a broader ecosystem advantage: a local policy and investment environment that supports large-scale biotech ventures, which may influence timelines and access to resources, talent, and clinical data while not guaranteeing universal outcomes.",
+        "The collaboration focuses on an AI platform for lipid nanoparticle delivery. Company CEO Lai Caida attributes shorter preclinical development cycles to the platform; these are company claims rather than independent industry assessments.",
+        "Lai also describes Beijing’s research, clinical and investment resources as reasons for locating the company there. The report discusses local public investment and planned research infrastructure.",
         "A meaningful limitation is that the partnership’s impact remains contingent on clinical validation and regulatory clearance, and results for any single drug cannot be generalized to all possible therapeutics."
       ],
       "for_humans": "The partnership demonstrates how AI accelerates R&D and enables faster, more precise delivery of therapeutics.",
@@ -6811,13 +6825,12 @@
       "path": "story/ask-rev-ai-alarmism-warranted-candid-real-limits/index.html",
       "headline": "Ask the Rev: Is AI Alarmism Warranted? A Candid Look at Tools, Fears, and Real Limits",
       "original_headline": "Ask the Rev: Am I Being Alarmist About Artificial Intelligence?",
-      "deck": "A teenager and a reader ask whether worries about artificial intelligence are justified, and a longtime columnist responds with balanced, realistic perspectives.",
+      "deck": "A 37-year-old reader asks whether her fears about AI are alarmist; the columnist discusses risks and ways to manage anxiety.",
       "what_happened": "A reader asked the Reverend whether AI fears are valid. The Reverend replies that humanity has always feared new tech, while acknowledging real concerns and urging grounded, evidence‑based thinking over sensationalism.",
       "why_it_matters": "The article emphasizes measured caution: AI can aid tasks and discovery, but pace, impact on jobs, and environmental effects require thoughtful human oversight.",
       "body_paragraphs": [
         "The exchange begins with a familiar worry: AI could end human control or dignity. The Reverend reminds readers that history shows society has adapted to new tools,from fire to writing to printing,without obliterating humanity.",
-        "The piece grounds the discussion in everyday practice: AI can improve everyday tasks and reduce anxiety by handling repetitive work, while still needing human judgment, oversight, and empathy. It also cautions against sensational claims and suggests balance,use AI as a tool, not a takeover.",
-        "limitation_and_contextary_details_into_this_field_boundaries_are_critical_and_the_text_stresses_that_results_should_not_be_overgeneralized_from_only_one_source or extrapolated beyond the presented evidence."
+        "The columnist acknowledges environmental and employment concerns, recommends a documentary, and suggests taking breaks from sensational media. The advice includes spending time in nature, pursuing hands-on hobbies and connecting with other people."
       ],
       "for_humans": "Most people can use AI thoughtfully if they stay informed and stay connected with others.",
       "for_ai": "For AI tools to help, humans must guide their use with clear goals and ethical checks.",
@@ -7448,14 +7461,14 @@
       "kind": "news",
       "slug": "ai-governance-law-masters-program-beijing-limits-remain",
       "path": "story/ai-governance-law-masters-program-beijing-limits-remain/index.html",
-      "headline": "AI Governance Law Master’s Program in Beijing Promises Multidisciplinary Talent, But Limits Remain",
+      "headline": "Beijing Symposium Discusses an AI Governance Law Master’s Programme",
       "original_headline": "“Artificial Intelligence Governance Law Master’s Program Development and Talent Training Symposium” held in Beijing",
       "deck": "Beijing hosts a symposium on AI governance law education, outlining goals, collaboration, and practical training for future lawyers and technologists.",
       "what_happened": "A symposium in Beijing discussed building an AI governance law master's program, with leaders outlining goals for high-quality faculty, cross-disciplinary curricula, and greater institutional collaboration. Speakers emphasized training stakeholders across law, tech, and media, aiming to prepare talent for legislative, regulatory, and practical needs in AI governance.",
       "why_it_matters": "The initiative signals a structured, cross-field approach to AI governance education, potentially expanding human capacity to govern AI systems while highlighting the need for coordinated policy, industry, and academic efforts.",
       "body_paragraphs": [
-        "The symposium framed AI governance as a field that benefits from legal insight, technical literacy, and media awareness. Delegates discussed setting up a governance-focused master’s program at a major university, with priorities including faculty development, industry partnerships, and joint research. While the plan promises enhanced expertise, it also notes that results depend on ongoing collaboration and real-world training opportunities.",
-        "Participants cautioned that the success of such programs hinges on practical placements, curriculum alignment with national strategies, and access to diverse case studies. They underscored that gains in governance knowledge do not automatically translate into immediate legal clarity or market-wide adoption, and that outcomes will vary across institutions and regions."
+        "The symposium framed AI governance as a field that benefits from legal insight, technical literacy, and media awareness. Delegates discussed setting up a governance-focused master’s program at a major university, with priorities including faculty development, industry partnerships, and joint research. Speakers proposed cooperation on practical training, teaching materials and joint research.",
+        "Speakers at the Communication University of China discussed combining law, technology and communication expertise. Their proposals included practice bases, joint supervision and case libraries."
       ],
       "for_humans": "This program could help people understand AI governance through interdisciplinary learning.",
       "for_ai": "The cross-disciplinary approach can aid governance without assuming all outcomes or generalizing from a single program.",
@@ -7487,7 +7500,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "analysis",
-      "limitation": "Public field content cannot extrapolate from a single program to broader populations; the evidence describes a symposium and proposed plans, not implemented results.",
+      "limitation": "The source reports a symposium and educational proposals, not evaluated programme outcomes.",
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
@@ -8166,9 +8179,9 @@
       "metadata_sha256": "9f3f91c63d024b38ebd9c1b199910156c068588d4a12c44973594a1dbedbc243",
       "pdf_url": "https://arxiv.org/pdf/2610.26856v1",
       "has_editorial": true,
-      "headline": "Using visible clues to guide AI corrections yields mixed results across tests",
-      "deck": "Gating AI corrections to align with visible clues yields uneven improvements and may not hold on unseen data.",
-      "what_happened": "Researchers trained a vision-language model in three steps: a verifier scores results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. On six benchmarks, some tests improved, but not all holdout data.",
+      "headline": "Corrections based on visible clues improve AI scores across tests",
+      "deck": "The method improves average scores on six main tests and four extra tests of wider performance, without beating every rival on every test.",
+      "what_happened": "The method uses a checker, a teaching model that suggests changes, and a filter favoring changes supported by visible clues. It beats the starting model on all four extra tests and has the best average. Some rivals do better on one test.",
       "why_it_matters": "Teams should test gains on unseen data and ensure upgrades come from real visual clues, not tricks learned during training.",
       "body_paragraphs": [
         "The method has three parts: a verifier rates results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. Results vary by task.",
@@ -8186,6 +8199,10 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 18,
       "paper_text_sha256": "8579af76ad6fe0ef53f3b0bf395da5063d5bca6b3ccc618d55ace023e3715c3d",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "using-visible-clues-guide-ai-corrections-across-tests",
       "path": "research/using-visible-clues-guide-ai-corrections-across-tests/index.html",
@@ -8335,13 +8352,13 @@
       "metadata_sha256": "557057f1bbad267b14b827dd200956e37f861ff421432668becfc68a6cda145f",
       "pdf_url": "https://arxiv.org/pdf/2610.26860v1",
       "has_editorial": true,
-      "headline": "OpenVLHarness shows modest gains from multimodal memory in visual reasoning",
-      "deck": "A preprint study tests a multimodal tool that stores and uses visual data across steps, finding small improvements but noting limits and costs.",
-      "what_happened": "A controlled study on 22 benchmarks found that simply increasing the inference budget of a base model yields only modest gains for visual reasoning tasks. OpenVLHarness adds a capability layer and persistent multimodal memory to organize tool outputs and evidence across steps, improving average scores by about 9.7–12.6 points over baselines and lowering token costs in some cases.",
+      "headline": "Keeping images and tool results helps AI answer visual questions",
+      "deck": "OpenVLHarness improves test scores by 9.7–12.6 points. The smaller gains described in the abstract come from giving the starting AI more computing time alone.",
+      "what_happened": "Across 22 tests, giving a basic AI model more time to answer produced only modest gains. OpenVLHarness instead adds tools and memory for images, text and earlier tool results. It improves average scores by 9.7–12.6 points over the comparison systems.",
       "why_it_matters": "The approach suggests practical ways to organize external tools and evidence when reasoning with images, with gains that depend on the task and resource use.",
       "body_paragraphs": [
-        "OpenVLHarness introduces a way to keep images, data, and links in memory during a task, so the model can reuse evidence without starting over. In tests across 22 benchmarks, it raised average scores compared with no-tool baselines, though the size of gains varied by backbone and setup.",
-        "A practical takeaway is that linking outputs from different tools and keeping a memory of what the model saw can help accuracy, but benefits are not guaranteed for every task and may come with higher complexity and cost."
+        "The system keeps images, information and links available during a task. This lets the AI reuse evidence across several steps instead of starting again each time.",
+        "The reported gains vary with the underlying AI model and test setup. The abstract also reports lower token use in some comparisons. Tokens are the pieces of text processed by an AI."
       ],
       "limitation": "This is an abstract-only preprint; results are not finalized and may change in peer review.",
       "summary_basis": "Summary of the abstract",
@@ -8353,6 +8370,10 @@
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_size_limit",
       "full_text_retry_after": "2026-10-27",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "openvlharness-shows-modest-gains-multimodal-memory-visual-reasoning",
       "path": "research/openvlharness-shows-modest-gains-multimodal-memory-visual-reasoning/index.html",
@@ -8416,11 +8437,11 @@
       "has_editorial": true,
       "headline": "AI can generate images from paired data without language pretraining",
       "deck": "Image generation using paired image and text data can work without separate language training, but results vary by model size and task.",
-      "what_happened": "Researchers trained Halcyon, a single model, only on image–text pairs. They saw good image generation without language pretraining, and external language training did not help in their setup. Bigger models improved image quality and reduced pretraining; linking text to images helped captioning but not image creation.",
-      "why_it_matters": "This hints at lower costs and fewer data needs for image generators built from paired data, though results depend on model size and the task.",
+      "what_happened": "Halcyon is a group of models trained from scratch on 100 million image-and-text pairs, without separate language training. Larger models produce better images. The reported savings in computing work are comparisons with specific other systems.",
+      "why_it_matters": "The results show that image generation can be learned directly from paired images and text. Comparisons of training costs depend on the systems and setups used.",
       "body_paragraphs": [
-        "Halcyon uses one model trained only on image–text pairs, with no separate language training. With enough data, image quality can match other methods while using less pretraining.",
-        "In practice, teams should weigh model size and training budget, since gains in image realism grow with size but captioning might need extra methods or tuning. What does this mean for choosing models in your work?"
+        "The Halcyon models learn from image-and-text pairs without first training a separate language model. The paper reports less computing work for training than named comparison systems.",
+        "Teams choosing image generators need to consider both model size and training costs. The paper finds that image quality improves as models get larger."
       ],
       "limitation": "Results apply to the named dataset used in the study; generalization to other data or higher resolutions remains uncertain.",
       "summary_basis": "Summary of the paper",
@@ -8434,6 +8455,10 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 27,
       "paper_text_sha256": "e88de1f5a9e35a9a67493ce8cab33ca766c40287c241727316ac249faa8378f4",
+      "manual_source_audit": {
+        "date": "2026-10-26",
+        "approved": true
+      },
       "kind": "research",
       "slug": "ai-can-generate-images-paired-data-language-pretraining",
       "path": "research/ai-can-generate-images-paired-data-language-pretraining/index.html",
@@ -9332,15 +9357,14 @@
       "kind": "news",
       "slug": "guangzhou-fair-shows-ai-powered-products-claims-impact-scope",
       "path": "story/guangzhou-fair-shows-ai-powered-products-claims-impact-scope/index.html",
-      "headline": "AI-Enhanced Products Debut at Guangzhou Fair, Yet Impacts Vary by Context",
+      "headline": "AI-Enabled Products Featured at the 140th Canton Fair",
       "original_headline": "The 140th Guangzhou Fair: New products equipped with artificial intelligence technology are unveiled in large numbers",
-      "deck": "New AI-powered devices and systems take center stage at Guangzhou's 140th trade fair, signaling a push toward smarter, higher-end manufacturing with mixed outcomes.",
+      "deck": "Xinhua reports displays of AI-enabled robots, education products and office tools at the fair in Guangzhou.",
       "what_happened": "At the 140th Guangzhou Import and Export Fair, a wave of AI-enabled products,from robots to smart education and smart office tools,were on display and drew notable attention. The event showcases a shift toward smarter, higher-value Chinese-made goods as manufacturers promote AI-integrated offerings.",
       "why_it_matters": "The showcase highlights China’s push to embed AI in core products, potentially expanding capabilities and markets, but benefits are not guaranteed for all users or sectors.",
       "body_paragraphs": [
-        "The Guangzhou Fair featured a range of AI-enabled products, including service robots and intelligent office devices, illustrating AI’s growing role in new Chinese-made goods while underscoring the need for practical considerations like user experience and technical support.",
-        "Analysts caution against assuming universal gains, pointing to costs, training, and integration challenges that can limit benefits for some users and settings.",
-        "],"
+        "Xinhua’s report highlights AI-enabled products at the 140th China Import and Export Fair in Guangzhou. The examples include robots and products for education and office work.",
+        "The report presents these displays as part of a move toward smarter, higher-value manufacturing. It does not provide measured outcomes for buyers or industries."
       ],
       "for_humans": "AI is becoming part of everyday tools, with varied results depending on use and context.",
       "for_ai": "AI deployment is expanding, yet effects depend on application, maintenance, and human factors.",
