@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
+from editorial_corrections import apply_corrections
 import argparse, collections, copy, json, os, re, shutil, time
 from datetime import datetime, timezone, date
 from pathlib import Path
@@ -217,6 +218,7 @@ def main():
                 row=axes_by_id.get(eid)
                 if row and version_valid(version,row,release) and not version_valid(editorial.get(eid),row,release):editorial[eid]=version
     news=cards(release,sym,registry,readiness,editorial,preview);research=papers();culture=culture_items()
+    apply_corrections(news,ROOT);apply_corrections(research,ROOT)
     weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(research)
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
@@ -235,6 +237,7 @@ def main():
     for row in research:
         allitems[row['key']]=row
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
+    apply_corrections(allcards,ROOT)
     raw_archive=copy.deepcopy(allcards)
     english=EnglishPublication(ROOT, allow_model=(not preview and os.environ.get('BRIEF_TRANSLATE_ENGLISH')=='true'))
     # Prepare the day's cultural translations before the shared model budget is

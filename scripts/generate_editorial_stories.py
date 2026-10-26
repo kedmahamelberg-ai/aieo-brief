@@ -5,6 +5,7 @@ No complete body, no invented rewrite. Existing publisher-linked entries stay re
 from __future__ import annotations
 import argparse,json,os,time,uuid
 import ai_runtime
+from editorial_corrections import is_locked
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -31,7 +32,7 @@ def source_payload(rows, allowed=None, fingerprints=None):
     return result
 
 def fingerprint(event,axes,sources):
-    return digest({'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
+    return digest({'engine_version':ENGINE_VERSION,'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
 def same_input(latest,fp):return ((latest or {}).get('evidence_basis_summary') or {}).get('input_fingerprint')==fp
 
 def retain_numeric_rejection(client,item,error):
@@ -50,7 +51,9 @@ def candidates(release,sym,maps,force=False):
     stories,readiness,evidence,versions=maps;axis={r['event_id']:r for r in sym['evidence']};selected=[]
     counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
-        eid=str(event.get('effective_event_id') or event['event_id']);relation=fixed_relationship(axis[eid]);story=stories.get(eid)
+        eid=str(event.get('effective_event_id') or event['event_id'])
+        if is_locked('event:'+eid,ROOT):counts['unchanged']+=1;continue
+        relation=fixed_relationship(axis[eid]);story=stories.get(eid)
         bound=bool(release.get('complete_content'))
         allowed={str(s['article_id']) for s in event.get('sources',[])} if bound else None
         fingerprints=(axis[eid].get('evidence_basis_summary') or {}).get('source_fingerprints',{}) if bound else None

@@ -126,14 +126,16 @@ def ledger():
         os.replace(temp, path)
 
 
-def completion(messages, schema, *, name="aieo_reading", timeout=120, max_request_bytes=196608):
+def completion(messages, schema, *, name="aieo_reading", timeout=120, max_request_bytes=196608, reasoning_effort=None):
     require_key()
     p = selected_policy()
     if not uses_openai():
         raise AIError("OpenAI completion called while local provider is selected")
+    if reasoning_effort is not None and reasoning_effort not in {"low", "medium", "high"}:
+        raise AIError("Unsupported review reasoning effort")
     clean_messages = [{**m, "content": str(m["content"]).replace("/no_think", "")} for m in messages]
     payload = {"model": p["model"], "messages": clean_messages,
-               "reasoning_effort": p["reasoning_effort"],
+               "reasoning_effort": reasoning_effort or p["reasoning_effort"],
                "max_completion_tokens": p["max_completion_tokens"], "store": False,
                "response_format": {"type": "json_schema", "json_schema": {
                    "name": name, "strict": True, "schema": strict_schema(schema)}}}
@@ -198,7 +200,7 @@ def completion(messages, schema, *, name="aieo_reading", timeout=120, max_reques
         if all(type(usage.get(k)) is int and usage[k] >= 0 for k in ("prompt_tokens", "completion_tokens")):
             actual = (usage["prompt_tokens"] * input_rate + usage["completion_tokens"] * output_rate) / 1e6
         audit = {"provider": "openai", "requested_model": p["model"], "returned_model": result.get("model"),
-                 "revision": p["revision"], "reasoning_effort": p["reasoning_effort"],
+                 "revision": p["revision"], "reasoning_effort": reasoning_effort or p["reasoning_effort"],
                  "request_id": response.headers.get("x-request-id"), "usage": usage,
                  "cost_usd": actual, "elapsed_seconds": round(time.monotonic() - start, 3), "status": "completed"}
         with ledger() as state:

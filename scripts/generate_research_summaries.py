@@ -5,6 +5,7 @@ Only original prose and bibliographic metadata are written to the public researc
 from __future__ import annotations
 import argparse,json,os,time
 import ai_runtime
+from editorial_corrections import is_locked
 from research_reading import read_paper, needs_upgrade, READING_VERSION
 from collections import Counter
 from datetime import datetime,timezone,timedelta,date
@@ -22,7 +23,7 @@ def load():
     return data,{r['key']:r for r in public['papers']}
 
 def pending(data,old):
-    return [p for p in data['papers'] if (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and not needs_upgrade(old[p['key']]) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
+    return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
@@ -59,6 +60,8 @@ def main():
     for n,p in enumerate(work):
         if not safe_url(p.get('url')):continue
         prior=old.get(p['key'],{})
+        if is_locked(p['key'],ROOT) and prior.get('has_editorial'):
+            counts['unchanged']+=1;selected.append(prior);continue
         if p not in todo and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append({**public_record(p),**prior});continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
@@ -86,7 +89,7 @@ def main():
             if seed.get('metadata_sha256')==p['metadata_sha256'] and ((not full and seed.get('evidence_scope','abstract')=='abstract') or (full and seed.get('paper_text_sha256')==reading['text_sha256'] and seed.get('support_catalog_sha256')==digest(research_quotes(sources)))):event['draft_seed']=seed.get('draft')
             draft,proof=write_story(event,{},sources,kind=kind,deadline=deadline)
             record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the paper' if full else 'Summary of the abstract (from PDF)' if p.get('abstract_format')=='pdf' else 'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
-            record.update(research_reading_version=READING_VERSION,evidence_scope='paper_text' if full else 'abstract',full_text_status=reading['status'],full_text_retry_after=(date.today()+timedelta(days=7)).isoformat())
+            record.update(editorial_engine_version=ENGINE_VERSION,research_reading_version=READING_VERSION,evidence_scope='paper_text' if full else 'abstract',full_text_status=reading['status'],full_text_retry_after=(date.today()+timedelta(days=7)).isoformat())
             if full:record.update(pdf_url=reading['url'],paper_pages=reading['pages'],paper_text_sha256=reading['text_sha256'])
             stage='persistence'
             client.table('brief_editorial_provenance').upsert({'input_sha256':digest({'paper':p['key'],'metadata':p['metadata_sha256'],'prompt':PROMPT_VERSION,'reading_version':READING_VERSION,'evidence_sha256':digest(evidence),'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'}),'proof':{'abstract':p.get('abstract',''),'metadata_sha256':p['metadata_sha256'],'paper_reading':{k:v for k,v in reading.items() if k!='text'},'evidence':evidence,'validation':proof}},on_conflict='input_sha256').execute()
