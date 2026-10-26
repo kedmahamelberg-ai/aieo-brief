@@ -16,7 +16,7 @@ CASES = [
   'Purdue Northwest is piloting an AI literacy requirement.'),
  ('future_event', 'The event is scheduled for 28 October. This announcement was published on 23 October.',
   'The event took place on 23 October.',
-  'The announcement schedules the event for 28 October.'),
+  'The event is scheduled for 28 October.'),
  ('subgroup', 'One-third of the surveyed young adults used chatbots for drug information. Half of that subgroup used them monthly.',
   'Half of all surveyed young adults used chatbots monthly.',
   'Half of the subgroup using chatbots for drug information reported monthly use.'),
