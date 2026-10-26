@@ -11,122 +11,343 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "The weekly news review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "title": "A Gentle Overview of AI and News This Week",
+        "deck": "What I notice is that MediSyn, a generalist AI model, can produce realistic medical images across six specialties and ten modalities, yet concerns about privacy and attribution shadow the progress.",
+        "summary": "What I notice is that MediSyn, a generalist AI model, can produce realistic medical images across six specialties and ten modalities, yet concerns about privacy and attribution shadow the progress. What matters is that AI aided publishing can accelerate workflows from planning to editing, but quality hinges on careful human review, balance between novelty and respect for readers, and the realities of market reception. The BBC and corporate reports on military AI deals illustrate governance challenges, employee pressures, and the need for guardrails that slow harm while allowing responsible experimentation. The discourse on intelligence insists we distinguish appearance from understanding, and asks how much authority to grant to machine outputs while preserving human judgment. The OpenAI breakthroughs raise questions about verification, reproducibility, and who benefits when machine-led proofs and summaries scale across mathematics, inviting thoughtful consideration of future collaboration.",
+        "scope_note": "Five selected stories from five discovery markets.",
+        "word_count": 155,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
-        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
-        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
-        "image_credit": "NPS Photo / Tim Rains",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
-        "image_rights": "Public domain · Full Granting Rights",
+        "image_path": "assets/culture/91b3a22c299c6a7568bd76c8.jpg",
+        "image_alt": "The Patio",
+        "image_caption": "The Patio",
+        "image_credit": "John Singer Sargent (American, born Italy, 1856–1925) · Cleveland Museum of Art",
+        "image_source_url": "https://clevelandart.org/art/1946.293",
+        "image_rights": "CC0 image",
         "entries": [
-          {
-            "code": "CN",
-            "name": "China",
-            "count": 19,
-            "topic": "Business And Investment",
-            "sentence": "China: business and investment stood out in the selected coverage; one example was “Beijing AI Nanodelivery Platform Goes Global via Lilly Deal, with Beijing….”",
-            "story": {
-              "headline": "Beijing AI Nanodelivery Platform Goes Global via Lilly Deal, with Beijing Backing and Limits",
-              "path": "story/beijing-ai-nanodelivery-platform-goes-global-backing-limits/index.html",
-              "publisher": "Beijing Municipal People's Government Portal Website",
-              "source_url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202610/t20261021_4912648.html"
-            }
-          },
           {
             "code": "US",
             "name": "United States",
-            "count": 17,
-            "topic": "Work And Skills",
-            "sentence": "United States: work and skills stood out in the selected coverage; one example was “Stanford Researchers Unveil MediSyn, a Generalist AI for Medical Images, Demonstrating….”",
+            "topic": "AI & technology",
             "story": {
+              "path": "story/development-02a2714e-e16b-4978-80ea-041ed60f222a/index.html",
               "headline": "Stanford Researchers Unveil MediSyn, a Generalist AI for Medical Images, Demonstrating Access Gains and Privacy Limits",
-              "path": "story/stanford-researchers-unveil-medisyn-generalist-ai-privacy-limits/index.html",
-              "publisher": "Stanford Medicine",
-              "source_url": "https://med.stanford.edu/cvi/mission/news_center/articles_announcements/2026/ai-model-for-medical-image-generation.html"
-            }
-          },
-          {
-            "code": "GB",
-            "name": "United Kingdom",
-            "count": 11,
-            "topic": "Rules And Rights",
-            "sentence": "United Kingdom: rules and rights stood out in the selected coverage; one example was “AI Advances in CNS Autoimmune Care: Review Finds Early Evidence With….”",
-            "story": {
-              "headline": "AI Advances in CNS Autoimmune Care: Review Finds Early Evidence With Limits",
-              "path": "story/ai-advances-cns-autoimmune-care-review-evidence-limits/index.html",
-              "publisher": "EMJ",
-              "source_url": "https://www.emjreviews.com/neurology/news/artificial-intelligence-advances-cns-autoimmune-disease-care"
-            }
-          },
-          {
-            "code": "FR",
-            "name": "France",
-            "count": 13,
-            "topic": "Rules And Rights",
-            "sentence": "France: rules and rights stood out in the selected coverage; one example was “France Tests Generative AI to Monitor Over 6 Million Job Seekers….”",
-            "story": {
-              "headline": "France Tests Generative AI to Monitor Over 6 Million Job Seekers, Raising Questions About Control",
-              "path": "story/france-tests-generative-ai-monitor-over-about-control/index.html",
-              "publisher": "La Quadrature du Net",
-              "source_url": "https://www.laquadrature.net/2026/10/23/france-travail-experimente-une-ia-generative-de-controle"
+              "publisher": "Stanford Medicine"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 25,
-            "topic": "Rules And Rights",
-            "sentence": "Canada: selected reporting leaned toward rules and rights, with “Canada expands Prairie AI program, highlighting mixed regional gains and limits…” as one visible signal.",
+            "topic": "Work & skills",
             "story": {
-              "headline": "Canada expands Prairie AI program, highlighting mixed regional gains and limits on adoption",
-              "path": "story/canada-expands-prairie-ai-program-highlighting-limits-adoption/index.html",
-              "publisher": "PR Newswire Canada",
-              "source_url": "https://www.newswire.ca/news-releases/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces-884796310.html"
+              "path": "story/development-01cbb5f3-b090-4595-af69-222090405225/index.html",
+              "headline": "South African author Coral Hart defends 371 AI-assisted books, highlighting mixed outcomes",
+              "publisher": "Radio-Canada"
+            }
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "topic": "Rules & rights",
+            "story": {
+              "path": "story/development-0fbf931c-f9d3-4f89-ae12-9092642fcb97/index.html",
+              "headline": "Google's military AI contracts trigger resignations and fears, BBC reports with limits",
+              "publisher": "BBC"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "topic": "Culture & creativity",
+            "story": {
+              "path": "story/development-0581e72c-e932-4106-be9d-82963c3e1e32/index.html",
+              "headline": "Generative AI: Ioan Roxin says machines push humans to rethink intelligence",
+              "publisher": "450.fm"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "topic": "Culture & creativity",
+            "story": {
+              "path": "story/development-26854938-c93b-4f16-849a-e35a688ed599/index.html",
+              "headline": "Is the Best Mathematician in the World an AI Model? OpenAI’s 2026 Breakthroughs",
+              "publisher": "Monthly Review"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "pending",
-        "prose": [],
-        "papers": [],
-        "pending_reason": "generation_pending",
-        "input_hash": "d63ca383e6107a21e956dda7e070aec731d9002345917bb07cf146f79cd85037",
-        "attempts": 0
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "prose": [
+          [
+            {
+              "text": "What I notice is that MediSyn, a generalist AI model, can produce realistic medical images across six specialties and ten modalities, yet concerns about privacy and attribution shadow the progress.",
+              "source_key": "event:02a2714e-e16b-4978-80ea-041ed60f222a",
+              "path": "story/development-02a2714e-e16b-4978-80ea-041ed60f222a/index.html"
+            }
+          ],
+          [
+            {
+              "text": "What matters is that AI aided publishing can accelerate workflows from planning to editing, but quality hinges on careful human review, balance between novelty and respect for readers, and the realities of market reception.",
+              "source_key": "event:01cbb5f3-b090-4595-af69-222090405225",
+              "path": "story/development-01cbb5f3-b090-4595-af69-222090405225/index.html"
+            }
+          ],
+          [
+            {
+              "text": "The BBC and corporate reports on military AI deals illustrate governance challenges, employee pressures, and the need for guardrails that slow harm while allowing responsible experimentation.",
+              "source_key": "event:0fbf931c-f9d3-4f89-ae12-9092642fcb97",
+              "path": "story/development-0fbf931c-f9d3-4f89-ae12-9092642fcb97/index.html"
+            }
+          ],
+          [
+            {
+              "text": "The discourse on intelligence insists we distinguish appearance from understanding, and asks how much authority to grant to machine outputs while preserving human judgment.",
+              "source_key": "event:0581e72c-e932-4106-be9d-82963c3e1e32",
+              "path": "story/development-0581e72c-e932-4106-be9d-82963c3e1e32/index.html"
+            },
+            {
+              "text": "The OpenAI breakthroughs raise questions about verification, reproducibility, and who benefits when machine-led proofs and summaries scale across mathematics, inviting thoughtful consideration of future collaboration.",
+              "source_key": "event:26854938-c93b-4f16-849a-e35a688ed599",
+              "path": "story/development-26854938-c93b-4f16-849a-e35a688ed599/index.html"
+            }
+          ]
+        ],
+        "source_hashes": {
+          "event:02a2714e-e16b-4978-80ea-041ed60f222a": "799b12ade5d6a58d4f5a05d3508776fec54e9a818dce71dfd5f1e893c82fac8c",
+          "event:01cbb5f3-b090-4595-af69-222090405225": "07a54fc8ff358b2887ee296f62e4159bd1001f9c01816670906dcd365d74fc49",
+          "event:0fbf931c-f9d3-4f89-ae12-9092642fcb97": "63fec0245589bd07fc930bf709468a31e2c71a3cb6c6cc0e624785f5104a0ccf",
+          "event:0581e72c-e932-4106-be9d-82963c3e1e32": "1e69e30f853f5f083470ced6bb647d7ee12e4362a50163cfce1bc1afcb916a0c",
+          "event:26854938-c93b-4f16-849a-e35a688ed599": "5eeefb9fac0eda5e3b22b07246e13ee83e4e1fb19b379ac6cdf119b791c4dbb2"
+        },
+        "image_key": "culture:91b3a22c299c6a7568bd76c8",
+        "image_work_key": "0dbe74c69fe4814a00ecc8364e0f79a054fa4e690ff4588097f325289c353de8",
+        "image_reason": "The Patio invites quiet reflection, a calm scene that mirrors the need for patient judgment in complex AI developments.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "human_approved": true
       },
       "research": {
         "kind": "research",
         "eyebrow": "THE RESEARCH COMPASS",
-        "title": "The weekly research review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "title": "A Quiet Inquiry into Modest Gains and Cautious Corrections in Visual Reasoning",
+        "deck": "What is learned from OpenVLHarness is that simply increasing the memory of a model does not guarantee large jumps in visual reasoning. The approach adds a simple layer to keep images, data, and links in memory, so the model can reuse evidence across steps. In a set of twenty two benchmarks the gains were modest, and the benefit depended on the backbone and setup. This is not a dramatic breakthrough, yet it offers a practical reminder that organization and recall can help accuracy without exploding cost.",
+        "summary": "What is learned from OpenVLHarness is that simply increasing the memory of a model does not guarantee large jumps in visual reasoning. The approach adds a simple layer to keep images, data, and links in memory, so the model can reuse evidence across steps. In a set of twenty two benchmarks the gains were modest, and the benefit depended on the backbone and setup. This is not a dramatic breakthrough, yet it offers a practical reminder that organization and recall can help accuracy without exploding cost. What is learned from the visually guided corrections study is that improvements can appear when the system relies on clues that are visible, yet the results do not always hold on new images or unseen data. The method has three parts: a verifier, a mentor, and a gate that accepts edits tied to visible clues. The story is mixed, and the caution is clear: improvements must endure beyond the training context to be trustworthy, and trade offs must be weighed.",
+        "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
+        "word_count": 193,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
-        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
-        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
-        "image_credit": "Neal Herbert / NPS",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
-        "image_rights": "Public domain · Full Granting Rights",
-        "papers": [],
+        "image_path": "assets/culture/8c7df0b43ce2ab4b36e2c102.jpg",
+        "image_alt": "Sudden Shower over Shin-Ōhashi Bridge and Atake, from One Hundred Famous Views of Edo",
+        "image_caption": "Sudden Shower over Shin-Ōhashi Bridge and Atake, from One Hundred Famous Views of Edo",
+        "image_credit": "Utagawa Hiroshige (Japanese, 1797–1858) · Cleveland Museum of Art",
+        "image_source_url": "https://clevelandart.org/art/1921.318",
+        "image_rights": "CC0 image",
+        "papers": [
+          {
+            "key": "paper:6e9ca4b2faaee021f6509905",
+            "doi": "",
+            "arxiv_id": "2610.26860v1",
+            "original_headline": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+            "url": "https://arxiv.org/abs/2610.26860v1",
+            "date": "2026-10-19",
+            "authors": [
+              "Yu Zhou",
+              "Cheng-Fu Yang",
+              "Rui Sun",
+              "Di Wu",
+              "Sibo Peng",
+              "Mingyang Zhang",
+              "Zhen Yang",
+              "Ruiyi Zhang",
+              "Nanyun Peng",
+              "Zhe Gan",
+              "Kai-Wei Chang"
+            ],
+            "institutions": [],
+            "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+            "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
+            "publisher": "arXiv",
+            "source": "arxiv",
+            "research_label": "Preprint",
+            "evidence_scope": "abstract",
+            "access": "Open paper",
+            "journal_reference": "",
+            "metadata_sha256": "557057f1bbad267b14b827dd200956e37f861ff421432668becfc68a6cda145f",
+            "pdf_url": "https://arxiv.org/pdf/2610.26860v1",
+            "has_editorial": true,
+            "headline": "OpenVLHarness shows modest gains from multimodal memory in visual reasoning",
+            "deck": "A preprint study tests a multimodal tool that stores and uses visual data across steps, finding small improvements but noting limits and costs.",
+            "what_happened": "A controlled study on 22 benchmarks found that simply increasing the inference budget of a base model yields only modest gains for visual reasoning tasks. OpenVLHarness adds a capability layer and persistent multimodal memory to organize tool outputs and evidence across steps, improving average scores by about 9.7–12.6 points over baselines and lowering token costs in some cases.",
+            "why_it_matters": "The approach suggests practical ways to organize external tools and evidence when reasoning with images, with gains that depend on the task and resource use.",
+            "body_paragraphs": [
+              "OpenVLHarness introduces a way to keep images, data, and links in memory during a task, so the model can reuse evidence without starting over. In tests across 22 benchmarks, it raised average scores compared with no-tool baselines, though the size of gains varied by backbone and setup.",
+              "A practical takeaway is that linking outputs from different tools and keeping a memory of what the model saw can help accuracy, but benefits are not guaranteed for every task and may come with higher complexity and cost."
+            ],
+            "limitation": "This is an abstract-only preprint; results are not finalized and may change in peer review.",
+            "summary_basis": "Summary of the abstract",
+            "reading_minutes": 1,
+            "claim_status": "study",
+            "summary_status": "ready",
+            "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+            "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+            "research_reading_version": "paper-practitioner-v1",
+            "full_text_status": "pdf_size_limit",
+            "full_text_retry_after": "2026-10-27",
+            "kind": "research",
+            "slug": "paper-6e9ca4b2faaee021f6509905",
+            "path": "research/paper-6e9ca4b2faaee021f6509905/index.html",
+            "source_count": 1,
+            "sources": [
+              {
+                "publisher": "arXiv",
+                "headline": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+                "url": "https://arxiv.org/abs/2610.26860v1",
+                "date": "2026-10-19",
+                "language": "en"
+              }
+            ],
+            "display_date": "19 Oct 2026",
+            "markets": [],
+            "market_label": "Research",
+            "topic": "research",
+            "topic_label": "Science & research",
+            "human_direction": "unresolved",
+            "ai_direction": "unresolved",
+            "for_humans": "",
+            "for_ai": "",
+            "human_label": "",
+            "ai_label": "",
+            "evidence_complete": false,
+            "display_scope": "",
+            "edition": "2026-10",
+            "label": "Preprint"
+          },
+          {
+            "key": "paper:950cc7fc17d32a70459713fe",
+            "doi": "",
+            "arxiv_id": "2610.26856v1",
+            "original_headline": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+            "url": "https://arxiv.org/abs/2610.26856v1",
+            "date": "2026-10-19",
+            "authors": [
+              "Shiao Xie",
+              "Siyu Chen",
+              "Jianwei Lv",
+              "Xiandong Li",
+              "Yujin Wang"
+            ],
+            "institutions": [],
+            "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+            "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
+            "publisher": "arXiv",
+            "source": "arxiv",
+            "research_label": "Preprint",
+            "evidence_scope": "paper_text",
+            "access": "Open paper",
+            "journal_reference": "",
+            "metadata_sha256": "9f3f91c63d024b38ebd9c1b199910156c068588d4a12c44973594a1dbedbc243",
+            "pdf_url": "https://arxiv.org/pdf/2610.26856v1",
+            "has_editorial": true,
+            "headline": "Using visible clues to guide AI corrections yields mixed results across tests",
+            "deck": "Gating AI corrections to align with visible clues yields uneven improvements and may not hold on unseen data.",
+            "what_happened": "Researchers trained a vision-language model in three steps: a verifier scores results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. On six benchmarks, some tests improved, but not all holdout data.",
+            "why_it_matters": "Teams should test gains on unseen data and ensure upgrades come from real visual clues, not tricks learned during training.",
+            "body_paragraphs": [
+              "The method has three parts: a verifier rates results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. Results vary by task.",
+              "A practical takeaway is to check whether improvements persist on new images and questions, not just on the training set, before broad use."
+            ],
+            "limitation": "Findings come from a curated, synthetic-like data setup and may not generalize to everyday real-world images outside controlled tests contexts.",
+            "summary_basis": "Summary of the paper",
+            "reading_minutes": 1,
+            "claim_status": "study",
+            "summary_status": "ready",
+            "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+            "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+            "research_reading_version": "paper-practitioner-v1",
+            "full_text_status": "read",
+            "full_text_retry_after": "2026-10-27",
+            "paper_pages": 18,
+            "paper_text_sha256": "8579af76ad6fe0ef53f3b0bf395da5063d5bca6b3ccc618d55ace023e3715c3d",
+            "kind": "research",
+            "slug": "paper-950cc7fc17d32a70459713fe",
+            "path": "research/paper-950cc7fc17d32a70459713fe/index.html",
+            "source_count": 1,
+            "sources": [
+              {
+                "publisher": "arXiv",
+                "headline": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+                "url": "https://arxiv.org/abs/2610.26856v1",
+                "date": "2026-10-19",
+                "language": "en"
+              }
+            ],
+            "display_date": "19 Oct 2026",
+            "markets": [],
+            "market_label": "Research",
+            "topic": "research",
+            "topic_label": "Science & research",
+            "human_direction": "unresolved",
+            "ai_direction": "unresolved",
+            "for_humans": "",
+            "for_ai": "",
+            "human_label": "",
+            "ai_label": "",
+            "evidence_complete": false,
+            "display_scope": "",
+            "edition": "2026-10",
+            "label": "Preprint"
+          }
+        ],
         "paper_count": 18,
         "affiliation_verified_count": 0,
         "editorial_version": "kedma-weekly-v10",
-        "status": "pending",
-        "prose": [],
-        "pending_reason": "generation_pending",
-        "input_hash": "43f7fc3bc6ce4a9c121de123e72032abb49437642463d80f9a5bf74b2a06acfe",
-        "attempts": 0
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "prose": [
+          [
+            {
+              "text": "What is learned from OpenVLHarness is that simply increasing the memory of a model does not guarantee large jumps in visual reasoning. The approach adds a simple layer to keep images, data, and links in memory, so the model can reuse evidence across steps. In a set of twenty two benchmarks the gains were modest, and the benefit depended on the backbone and setup. This is not a dramatic breakthrough, yet it offers a practical reminder that organization and recall can help accuracy without exploding cost.",
+              "source_key": "paper:6e9ca4b2faaee021f6509905",
+              "path": "research/paper-6e9ca4b2faaee021f6509905/index.html"
+            }
+          ],
+          [
+            {
+              "text": "What is learned from the visually guided corrections study is that improvements can appear when the system relies on clues that are visible, yet the results do not always hold on new images or unseen data. The method has three parts: a verifier, a mentor, and a gate that accepts edits tied to visible clues. The story is mixed, and the caution is clear: improvements must endure beyond the training context to be trustworthy, and trade offs must be weighed.",
+              "source_key": "paper:950cc7fc17d32a70459713fe",
+              "path": "research/paper-950cc7fc17d32a70459713fe/index.html"
+            }
+          ]
+        ],
+        "source_hashes": {
+          "paper:6e9ca4b2faaee021f6509905": "89b275acd50e327567a12fb87ea701de410a1e2e63aaa8b25d822e7531c34304",
+          "paper:950cc7fc17d32a70459713fe": "ad30a5787d5563d56b8c66892a93d0a776f65485420e44572cd1a400cef62483"
+        },
+        "image_key": "culture:8c7df0b43ce2ab4b36e2c102",
+        "image_work_key": "5ebe6ac4e7cde27efa7adcdddad5921cd4105f918fc45d438eb12dcf53c7d24b",
+        "image_reason": "A distant shower of rain softens a busy landscape, echoing how small gains appear after careful, layered effort in a complicated task.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "human_approved": true
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "pending",
-      "content_sha256": "e0d7f93d0a41a5251623e6d770ace661de54a82656fe15b5ebcea646892a2290"
+      "editorial_status": "ready",
+      "content_sha256": "1cae82cad03556df2fbe31bc7cc22937be225d8651713a8e701ddd51b4a8e6e2"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
