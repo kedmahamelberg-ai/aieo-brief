@@ -6104,6 +6104,44 @@
       },
       "output_sha256": "6ba10c6e5e1c1296de6000ff7403bea0d19bbd4a6637bced8dfc6c6fe0845256",
       "policy": "brief-english-display-v1"
+    },
+    "4ed2884ad34af340a7a0496e5fcfa21c12fc50cb4a08722fb1c1dc98ede2bdc1": {
+      "english": {
+        "0": "Education Online",
+        "1": "Education Online"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "85c1169e8b1eb530371658003be3a03a45111faef8bc532e6ca86d266f7a0c18",
+      "policy": "brief-english-display-v1"
+    },
+    "291489e89f30663c6bd493151c7632630848fb21a4dedbd57de8c7d3cf85a1fb": {
+      "english": {
+        "0": "SANA",
+        "1": "SANA"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7b8af6ab5be7788b9ca5d92c38922c64a05e9d3f7b7e4f4850b96d537bbf0547",
+      "policy": "brief-english-display-v1"
     }
   }
 }

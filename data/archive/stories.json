@@ -2389,8 +2389,8 @@
       "key": "event:bbdb560f-9439-4cd2-9d20-e5a6eceea400",
       "event_id": "bbdb560f-9439-4cd2-9d20-e5a6eceea400",
       "kind": "news",
-      "slug": "development-bbdb560f-9439-4cd2-9d20-e5a6eceea400",
-      "path": "story/development-bbdb560f-9439-4cd2-9d20-e5a6eceea400/index.html",
+      "slug": "university-president-li-jiancheng-warns-ai-driven-mixed-effects",
+      "path": "story/university-president-li-jiancheng-warns-ai-driven-mixed-effects/index.html",
       "headline": "University President Li Jiancheng Warns AI-Driven Education Paradigms Bring Mixed Effects",
       "original_headline": "Li Jiancheng, President of Zhongnan University: The Transformation of University Education Paradigms in the Age of Artificial Intelligence",
       "deck": "Li Jiancheng discusses AI in higher education, emphasizing mixed outcomes and the need for careful governance and broad access.",
@@ -2434,7 +2434,11 @@
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
-      "period_end": "2026-10-25"
+      "period_end": "2026-10-25",
+      "legacy_paths": [
+        "story/development-bbdb560f-9439-4cd2-9d20-e5a6eceea400/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:b7cc7093-b0e0-4f9b-9d7a-1469436f671f",
@@ -4376,8 +4380,8 @@
       "key": "event:deea09a4-eb14-4f41-9dd5-b0ad0e927a7e",
       "event_id": "deea09a4-eb14-4f41-9dd5-b0ad0e927a7e",
       "kind": "news",
-      "slug": "development-deea09a4-eb14-4f41-9dd5-b0ad0e927a7e",
-      "path": "story/development-deea09a4-eb14-4f41-9dd5-b0ad0e927a7e/index.html",
+      "slug": "barclays-cut-5-000-jobs-push-outcomes-workers",
+      "path": "story/barclays-cut-5-000-jobs-push-outcomes-workers/index.html",
       "headline": "Barclays to cut 5,000 jobs and push AI, signaling mixed outcomes for workers",
       "original_headline": "Barclays plans to cut 5,000 jobs and invest in artificial intelligence.",
       "deck": "The bank plans AI-driven efficiency gains while warning of job displacement and costs.",
@@ -4421,7 +4425,11 @@
       "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
-      "period_end": "2026-10-25"
+      "period_end": "2026-10-25",
+      "legacy_paths": [
+        "story/development-deea09a4-eb14-4f41-9dd5-b0ad0e927a7e/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:deaf3165-fc11-4d8f-a2d7-b36b8b44dae0",
