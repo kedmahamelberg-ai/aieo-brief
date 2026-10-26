@@ -69,11 +69,13 @@ class SocialProduction(unittest.TestCase):
              Path(path).touch()
          evidence=Path(d,'saved-preview.png')
          evidence.touch()
+         card_evidence=[Path(d,f'saved-card-{n}.png') for n in (1,2,3)]
+         for path in card_evidence:path.touch()
          record=dict(id=item['id'],status='VERIFIED',caption_verified=True,
              account_verified=True,media_order_verified=True,destination_verified=True,
              media_count=3,media_type='photo_carousel',scheduled_at=item['scheduled_at'],
              evidence=str(evidence),saved_media_order=['cover','explanation','cta'],
-             saved_order_checked_after_save=True,saved_order_evidence=str(evidence),
+             saved_order_checked_after_save=True,saved_order_evidence=[str(p) for p in card_evidence],
              story_frames_verified=3,story_time_verified=True)
          audit={'items':[record]}
          self.assertEqual(validation.validate(batch,audit),[])
@@ -85,6 +87,9 @@ class SocialProduction(unittest.TestCase):
          record['saved_media_order']=['cover','explanation','cta']
          record['saved_order_checked_after_save']=False
          self.assertTrue(any('checked after save' in e for e in validation.validate(batch,audit)))
+         record['saved_order_checked_after_save']=True
+         record['saved_order_evidence']=[str(card_evidence[0])]*3
+         self.assertTrue(any('three distinct' in e for e in validation.validate(batch,audit)))
 
 
 class CuratedPhotoReproducibility(unittest.TestCase):
