@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-19",
-  "period_end": "2026-10-25",
+  "period_start": "2026-10-20",
+  "period_end": "2026-10-26",
   "providers": [
     {
       "source": "arxiv",
@@ -21,50 +21,56 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:f43f0438b78d0581be9514a1",
-      "status": "matched",
+      "key": "paper:63d21524277ff8a08182f272",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:9427adb92275c694947a1ab1",
-      "status": "matched",
+      "key": "paper:7bbd3a7ad9a42c34a458e0b4",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:fc6e789c05ec5666287f4971",
-      "status": "matched",
+      "key": "paper:d1229d463409b34d02d0201e",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:02d1554ed760a075f05e900a",
-      "status": "matched",
+      "key": "paper:4d45a5933f739285098c2ef6",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:519928daf71585bdd3910f28",
-      "status": "matched",
+      "key": "paper:d907a9308040263ee845963c",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:cf35699cd94083a8ecf54c61",
-      "status": "matched",
+      "key": "paper:785b9bb560f565c8334bd1eb",
+      "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:a85a49e4a9adaf23963031a9",
+      "key": "paper:4b728467c180ee49d0785123",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:3a3475ffddec2b1bfb6c31e2",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
     }
   ],
   "recovery": {
-    "recovered": 1,
+    "recovered": 2,
     "unavailable": 0
   }
 }
