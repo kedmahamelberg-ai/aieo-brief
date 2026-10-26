@@ -2,7 +2,7 @@
 {% from 'weekly-prose.html' import prose with context %}
 {% from 'components.html' import actions with context %}
 {% from 'conversation.html' import conversation with context %}
-{% block title %}{{ weekly_page_overview.markets.title if weekly_page_overview is defined else weekly_overview.markets.title }} | The Brief{% endblock %}
+{% block title %}The week in AI, {{ weekly_page_period_label if weekly_page_period_label is defined else period_label }} | The Brief{% endblock %}
 {% block description %}{{ weekly_page_overview.markets.deck if weekly_page_overview is defined else weekly_overview.markets.deck }}{% endblock %}
 {% block content %}
 {% set page_weekly_overview = weekly_page_overview if weekly_page_overview is defined else weekly_overview %}
@@ -11,8 +11,8 @@
   <div class="weekly-breadcrumb"><a href="{{ local('week-from-above/index.html') }}">← All weekly overviews</a></div>
   <header class="weekly-page-header">
     <span class="eyebrow">{{ page_weekly_overview.markets.eyebrow }}</span>
-    <h1>{{ page_weekly_overview.markets.title }}</h1>
-    <p>{{ page_period_label }} · two one-minute readings</p>
+    <h1>The week in AI, {{ page_period_label }}</h1>
+    <p>Two one-minute readings</p>
   </header>
 
   <article id="five-markets" data-engagement-key="{{ weekly_markets_item.key }}" class="weekly-feature weekly-feature-detail{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">

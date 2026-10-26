@@ -62,6 +62,9 @@ class WeeklyEngagementTests(unittest.TestCase):
         self.assertEqual(html.count('data-weekly-reading-body'), 2)
         self.assertEqual(html.count('data-action="like"'), 2)
         self.assertEqual(html.count('data-action="save"'), 2)
+        self.assertIn('<h1>The week in AI, 12 Oct - 18 Oct</h1>', html)
+        self.assertIn('<h2>The week in news</h2>', html)
+        self.assertNotIn('<h1>The week in news</h1>', html)
 
     def test_archive_links_to_both_readings_without_repeating_actions(self):
         html = self.env.get_template('weekly-archive.html').render(
