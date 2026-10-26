@@ -1,4 +1,6 @@
 import importlib.util
+import hashlib
+import zipfile
 import json
 import sys
 import tempfile
@@ -53,5 +55,28 @@ class SocialProduction(unittest.TestCase):
   self.assertIn('needs: deploy',build);self.assertIn("if: needs.deploy.result == 'success'",build)
   self.assertNotIn('cron:',trigger);self.assertNotIn('workflow_run:',trigger)
   self.assertNotIn('OPENAI_API_KEY',trigger);self.assertNotIn('SOCIAL_ACCESS_TOKEN',trigger)
+
+class CuratedPhotoReproducibility(unittest.TestCase):
+    def test_reviewed_bytes_do_not_depend_on_cdn(self):
+        with tempfile.TemporaryDirectory() as d:
+            output = Path(d); (output/'sources').mkdir()
+            data = b'reviewed photo bytes'
+            archive = output/'photos.zip'
+            with zipfile.ZipFile(archive,'w') as z: z.writestr('sources/photo.jpg',data)
+            photos = {'photo': dict(local_source='sources/photo.jpg',source_url='https://example.org/photo',sha256=hashlib.sha256(data).hexdigest())}
+            history = dict(source_urls=[],sha256=[])
+            with patch.object(social,'fetch',side_effect=AssertionError('Network must not replace reviewed bytes')):
+                social.curated_photos(photos,history,output,archive)
+            self.assertEqual((output/'sources/photo.jpg').read_bytes(),data)
+            photos['photo']['sha256'] = 'unexpected'
+            with self.assertRaisesRegex(ValueError,'archive content changed'):
+                social.curated_photos(photos,history,output,archive)
+
+    def test_all_recovery_photos_match_pinned_archive(self):
+        config = json.loads((ROOT/'config/social-2026-W43.json').read_text())
+        with tempfile.TemporaryDirectory() as d:
+            output = Path(d); (output/'sources').mkdir()
+            social.curated_photos(config['photos'],dict(source_urls=[],sha256=[]),output,ROOT/'config/social-photos-2026-W43.zip')
+            self.assertEqual(len(list((output/'sources').glob('*.jpg'))),14)
 
 if __name__=='__main__':unittest.main()
