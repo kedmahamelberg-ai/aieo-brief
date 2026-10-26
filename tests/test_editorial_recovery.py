@@ -43,8 +43,13 @@ def fixture():
     return draft, [{'source_number': 1, 'headline': 'Musician study', 'evidence': source}]
 
 
-def accepted_review():
-    return {**dict.fromkeys(engine.REVIEW_CHECKS, True), 'reason': 'Supported.'}
+def accepted_review(draft=None):
+    default, sources = fixture()
+    draft = draft or default
+    return {**dict.fromkeys(engine.REVIEW_CHECKS + engine.claim_grounding.CHECKS, True), 'reason': 'Supported.',
+            'field_reviews': [{'field': key, 'verdict': 'supported', 'reason': 'Test verifier fixture.',
+                               'citations': [{'source_number': 1, 'quote': sources[0]['evidence'][:42]}]}
+                              for key in engine.claim_grounding.units(draft)]}
 
 
 class EditorialRecovery(unittest.TestCase):
@@ -78,7 +83,7 @@ class EditorialRecovery(unittest.TestCase):
         for field in ('for_humans', 'for_ai'):
             draft, sources = fixture()
             draft[field] = ''
-            with patch.object(engine, 'call_json', side_effect=[draft, accepted_review()]) as model:
+            with patch.object(engine, 'call_json', side_effect=[draft, accepted_review(draft)]) as model:
                 result, proof = engine.write_story({}, {}, sources)
             self.assertEqual(result[field], '')
             self.assertEqual(proof['engine_version'], engine.ENGINE_VERSION)

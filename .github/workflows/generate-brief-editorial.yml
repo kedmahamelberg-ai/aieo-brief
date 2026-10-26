@@ -64,7 +64,9 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - name: Check editorial rules and resumable progress
-        run: AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_editorial_recovery.py' -v
+        run: |
+          AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_editorial_recovery.py' -v
+          AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_claim_grounding.py' -v
       - name: Resolve the scheduled AI model
         run: python scripts/ai_runtime.py --export
       - name: Check release and pending news before loading the model
@@ -81,6 +83,9 @@ jobs:
         id: research
         if: steps.collect.outcome == 'success'
         run: python scripts/generate_research_summaries.py --dry-run
+      - name: Require source-grounding regression gate
+        if: inputs.dry_run != true && env.AIEO_AI_PROVIDER == 'openai' && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
+        run: python scripts/evaluate_grounding.py
       - name: Check API access before writing
         if: inputs.dry_run != true && env.AIEO_AI_PROVIDER == 'openai' && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
         run: python scripts/ai_runtime.py --preflight
