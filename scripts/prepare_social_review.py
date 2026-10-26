@@ -10,6 +10,7 @@ import os
 import re
 import subprocess
 import time
+import zipfile
 from collections import Counter
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -143,6 +144,21 @@ def header(t):
     return 'The brief AI research' if t['kind'] == 'Research' else 'The brief AI news from '+t['country']
 
 
+def curated_photos(photos, history, output, archive):
+    """Use the reviewed bytes, not a CDN thumbnail that can be re-encoded."""
+    with zipfile.ZipFile(archive) as bundle:
+        for photo in photos.values():
+            if photo['source_url'] in history['source_urls'] or photo['sha256'] in history['sha256']:
+                raise ValueError('Curated photo already used by another batch')
+            relative = Path(photo['local_source'])
+            if relative.is_absolute() or '..' in relative.parts or relative.parts[0] != 'sources':
+                raise ValueError('Invalid curated photo path')
+            data = bundle.read(relative.as_posix())
+            if hashlib.sha256(data).hexdigest() != photo['sha256']:
+                raise ValueError('Reviewed photo archive content changed')
+            (output / relative).write_bytes(data)
+
+
 def cta(t):
     return 'Read the research briefing on The Brief.' if t['kind'] == 'Research' else 'Read the full story on The Brief.'
 
@@ -274,10 +290,7 @@ def main():
     history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
     if curated:
         photos=curated['photos']
-        for p in photos.values():
-            if p['source_url'] in history['source_urls'] or p['sha256'] in history['sha256']:raise ValueError('Curated photo already used by another batch')
-            fetch(p['download_url'],output/p['local_source'])
-            if hashlib.sha256((output/p['local_source']).read_bytes()).hexdigest()!=p['sha256']:raise ValueError('Photo content changed')
+        curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip')
     else:photos=new_photos(topics,history,output)
     if len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14:raise ValueError('Fourteen distinct photographs required')
     save(output/'PHOTO_MANIFEST.json',photos);save(output/'topics.json',topics)
