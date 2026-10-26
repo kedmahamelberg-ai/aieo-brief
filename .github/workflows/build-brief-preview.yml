@@ -143,3 +143,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
+  social_review:
+    # This is a deployment dependency, not another clock or workflow_run chain.
+    needs: deploy
+    if: needs.deploy.result == 'success'
+    uses: ./.github/workflows/prepare-social-review.yml
+    with:
+      website_artifact: aieo-brief-website-${{ github.run_id }}
+    secrets: inherit
