@@ -52,12 +52,17 @@ class WeeklyEditorialTests(unittest.TestCase):
         if kwargs['stage'] == 'weekly_review':
             return dict.fromkeys(CHECKS, True)
         payload = json.loads(prompt.split('\n')[-2] if prompt.endswith('\n') else prompt.split('\n')[-1])
-        parts = [{'text': 'What I notice this week is the value of asking how an answer was checked. A promising result gives us a starting point, but it does not settle every question.', 'source_key': ''}]
+        later_week = bool(payload.get('recent_style', {}).get('openings'))
+        opening = ('A careful test can reveal where a confident answer falls short.' if later_week else
+                   'A promising result gives us a starting point, but it does not settle every question.')
+        parts = [{'text': opening, 'source_key': ''}]
         for row in payload['sources']:
             parts.append({'text': 'This work on checking answers', 'source_key': row['key']})
             parts.append({'text': 'shows why careful testing matters.', 'source_key': ''})
-        return {'title': 'A closer look at the answers', 'paragraphs': [parts, [
-            {'text': 'The findings remain limited to the tasks tested. Before we trust a confident answer in daily life, what would help us see where it might still go wrong?', 'source_key': ''}]],
+        return {'title': 'Careful checks before trust' if later_week else 'A closer look at the answers',
+                'paragraphs': [parts, [
+            {'text': ('The findings remain limited to the tasks tested. That gives us a useful reason to ask how an answer was checked.' if later_week else
+                      'The findings remain limited to the tasks tested. Before we trust a confident answer in daily life, what would help us see where it might still go wrong?'), 'source_key': ''}]],
             'image_key': payload['artworks'][0]['key'], 'image_reason': 'A bridge suggests the careful steps between a promising finding and everyday trust.'}
 
     def generate(self, history=None, call=None):
@@ -94,6 +99,34 @@ class WeeklyEditorialTests(unittest.TestCase):
         paths = [x[kind]['image_path'] for x in (first,second) for kind in ('markets','research')]
         self.assertEqual(len(set(paths)),4)
         self.assertEqual(first,saved)
+        self.assertNotEqual(first['markets']['title'], second['markets']['title'])
+        self.assertNotEqual(first['markets']['prose'][0][0]['text'], second['markets']['prose'][0][0]['text'])
+
+    def test_stock_opening_repeated_opening_and_multiple_questions_are_rejected(self):
+        section = self.generate()['markets']
+        draft = {'title': section['title'], 'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
+                 for part in paragraph] for paragraph in section['prose']],
+                 'image_key': section['image_key'], 'image_reason': section['image_reason']}
+        stock = copy.deepcopy(draft)
+        stock['paragraphs'][0][0]['text'] = 'What I noticed this week is that careful checking matters.'
+        with self.assertRaisesRegex(ValueError, 'weekly_stock_opening'):
+            validate_draft(stock, self.news, [{'key': section['image_key']}], enforce_style=True)
+        with self.assertRaisesRegex(ValueError, 'weekly_repeated_opening'):
+            validate_draft(draft, self.news, [{'key': section['image_key']}],
+                           [section['prose'][0][0]['text']], enforce_style=True)
+        with self.assertRaisesRegex(ValueError, 'weekly_too_many_questions'):
+            validate_draft({**draft, 'title': 'How do we check an answer?'},
+                           self.news, [{'key': section['image_key']}], enforce_style=True)
+        with self.assertRaisesRegex(ValueError, 'weekly_question_repeated_next_week'):
+            validate_draft(draft, self.news, [{'key': section['image_key']}],
+                           enforce_style=True, questions_allowed=False)
+
+    def test_old_checked_weekly_prose_remains_valid_after_style_change(self):
+        history = json.loads((Path(__file__).resolve().parents[1] /
+                              'data/weekly-overviews/history.json').read_text())['overviews']
+        old = next(item for item in history if item['release_id'] == '2026-W43')
+        self.assertTrue(old['markets']['summary'].startswith('What I notice'))
+        validate_section(old['markets'])
 
     def test_missing_market_or_second_paper_is_pending_without_byline(self):
         self.news.pop()
