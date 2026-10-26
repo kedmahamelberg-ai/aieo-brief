@@ -47,6 +47,8 @@ def evaluate(review=review_scope):
             except EditorialError as error:
                 if error.code not in {'source_scope_review_failed', 'claim_grounding_failed'}:raise
                 passed = False
+                # These fixtures are synthetic and public; diagnostics contain no private sources.
+                print(name + ':' + label + ' ' + error.code + ': ' + error.feedback, flush=True)
             if passed != should_pass:failed.append(name + ':' + label)
             print(name + ':' + label + (' PASS' if passed == should_pass else ' FAIL'), flush=True)
     if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))
