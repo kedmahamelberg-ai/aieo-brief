@@ -79,7 +79,11 @@ def validate(batch, audit=None, since=None, platform=None):
             if p in ('facebook', 'instagram'):
                 require(a.get('saved_media_order') == ['cover', 'explanation', 'cta'], 'saved carousel order must be cover, explanation, CTA')
                 require(a.get('saved_order_checked_after_save') is True, 'carousel order was not checked after save')
-                require(a.get('saved_order_evidence') and Path(a['saved_order_evidence']).is_file(), 'missing post-save carousel order evidence')
+                order_evidence = a.get('saved_order_evidence', [])
+                require(isinstance(order_evidence, list) and len(order_evidence) == 3
+                        and len(set(order_evidence)) == 3
+                        and all(Path(path).is_file() for path in order_evidence),
+                        'missing three distinct post-save carousel card screenshots')
             require(a.get('scheduled_at') == item['scheduled_at'], 'saved schedule mismatch')
             require(a.get('evidence') and Path(a['evidence']).is_file(), 'missing saved-UI evidence')
             if p == 'instagram':
