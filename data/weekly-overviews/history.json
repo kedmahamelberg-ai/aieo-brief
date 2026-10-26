@@ -3,6 +3,133 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W43",
+      "period_start": "2026-10-19",
+      "period_end": "2026-10-25",
+      "display_date": "2026-10-25",
+      "path": "week-from-above/2026-w43/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 19,
+            "topic": "Business And Investment",
+            "sentence": "China: business and investment stood out in the selected coverage; one example was “Beijing AI Nanodelivery Platform Goes Global via Lilly Deal, with Beijing….”",
+            "story": {
+              "headline": "Beijing AI Nanodelivery Platform Goes Global via Lilly Deal, with Beijing Backing and Limits",
+              "path": "story/beijing-ai-nanodelivery-platform-goes-global-backing-limits/index.html",
+              "publisher": "Beijing Municipal People's Government Portal Website",
+              "source_url": "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202610/t20261021_4912648.html"
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 17,
+            "topic": "Work And Skills",
+            "sentence": "United States: work and skills stood out in the selected coverage; one example was “Stanford Researchers Unveil MediSyn, a Generalist AI for Medical Images, Demonstrating….”",
+            "story": {
+              "headline": "Stanford Researchers Unveil MediSyn, a Generalist AI for Medical Images, Demonstrating Access Gains and Privacy Limits",
+              "path": "story/stanford-researchers-unveil-medisyn-generalist-ai-privacy-limits/index.html",
+              "publisher": "Stanford Medicine",
+              "source_url": "https://med.stanford.edu/cvi/mission/news_center/articles_announcements/2026/ai-model-for-medical-image-generation.html"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 11,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: rules and rights stood out in the selected coverage; one example was “AI Advances in CNS Autoimmune Care: Review Finds Early Evidence With….”",
+            "story": {
+              "headline": "AI Advances in CNS Autoimmune Care: Review Finds Early Evidence With Limits",
+              "path": "story/ai-advances-cns-autoimmune-care-review-evidence-limits/index.html",
+              "publisher": "EMJ",
+              "source_url": "https://www.emjreviews.com/neurology/news/artificial-intelligence-advances-cns-autoimmune-disease-care"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 13,
+            "topic": "Rules And Rights",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “France Tests Generative AI to Monitor Over 6 Million Job Seekers….”",
+            "story": {
+              "headline": "France Tests Generative AI to Monitor Over 6 Million Job Seekers, Raising Questions About Control",
+              "path": "story/france-tests-generative-ai-monitor-over-about-control/index.html",
+              "publisher": "La Quadrature du Net",
+              "source_url": "https://www.laquadrature.net/2026/10/23/france-travail-experimente-une-ia-generative-de-controle"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 25,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: selected reporting leaned toward rules and rights, with “Canada expands Prairie AI program, highlighting mixed regional gains and limits…” as one visible signal.",
+            "story": {
+              "headline": "Canada expands Prairie AI program, highlighting mixed regional gains and limits on adoption",
+              "path": "story/canada-expands-prairie-ai-program-highlighting-limits-adoption/index.html",
+              "publisher": "PR Newswire Canada",
+              "source_url": "https://www.newswire.ca/news-releases/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces-884796310.html"
+            }
+          }
+        ],
+        "active_market_count": 5,
+        "editorial_version": "kedma-weekly-v10",
+        "status": "pending",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "generation_pending",
+        "input_hash": "d63ca383e6107a21e956dda7e070aec731d9002345917bb07cf146f79cd85037",
+        "attempts": 0
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "The weekly research review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [],
+        "paper_count": 18,
+        "affiliation_verified_count": 0,
+        "editorial_version": "kedma-weekly-v10",
+        "status": "pending",
+        "prose": [],
+        "pending_reason": "generation_pending",
+        "input_hash": "43f7fc3bc6ce4a9c121de123e72032abb49437642463d80f9a5bf74b2a06acfe",
+        "attempts": 0
+      },
+      "editorial_version": "kedma-weekly-v10",
+      "editorial_status": "pending",
+      "content_sha256": "e0d7f93d0a41a5251623e6d770ace661de54a82656fe15b5ebcea646892a2290"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W42",
       "period_start": "2026-10-12",
       "period_end": "2026-10-18",

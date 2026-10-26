@@ -6024,6 +6024,86 @@
       },
       "output_sha256": "89452f51765f3cc03338ad706eeb22487e7af02f889cbbee8fcae3e431fc55fd",
       "policy": "brief-english-display-v1"
+    },
+    "d9b88a5addd75dc7d7985c738d84a7222ae0b17cb7967684116d458d625e0fed": {
+      "english": {
+        "0": "AI Serves as a Guide in Museums in Trois-Rivières",
+        "1": "AI Serves as a Guide in Museums in Trois-Rivières",
+        "2": "AI Serves as a Guide in Museums in Trois-Rivières"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2ba74bd4028ffd646f957acffdfec76b945f6e2d339de3266a41edd26b8b18aa",
+      "policy": "brief-english-display-v1"
+    },
+    "d1d53b1135752155b4766147d509e2649907d86508a34d045bdfd5eea6165d47": {
+      "english": {
+        "0": "China Institute of International Studies",
+        "1": "China Institute of International Studies"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "7551f75ed7efec6006b8a3285ede14a4c3955032ca9ad49bd63b1b1b66cdbf34",
+      "policy": "brief-english-display-v1"
+    },
+    "d9997159ecb05325d2c9c67c559ff4e5bf84b0cd4af5d10e0b8509864cb42ef3": {
+      "english": {
+        "0": "Academic Annual Meeting of Tsinghua University Institute of Artificial Intelligence and Beijing-Shanghai-Hong Kong AI Academic Exchange Conference Held",
+        "1": "Tsinghua University",
+        "2": "Academic Annual Meeting of Tsinghua University Institute of Artificial Intelligence and Beijing-Shanghai-Hong Kong AI Academic Exchange Conference held",
+        "3": "Tsinghua University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bd7b242a2cf3e4f244c984a0e5fcc64f8551320e123bee888772786249a0ebb8",
+      "policy": "brief-english-display-v1"
+    },
+    "b648128994fbdf16832c9500d9cf7a8cc060cbafb3d0f973c03869842f5fad17": {
+      "english": {
+        "0": "Reporting from Qingdao Government Affairs Network. Open the source for the article.",
+        "1": "Qingdao Government Affairs Network",
+        "2": "Qingdao Government Affairs Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6ba10c6e5e1c1296de6000ff7403bea0d19bbd4a6637bced8dfc6c6fe0845256",
+      "policy": "brief-english-display-v1"
     }
   }
 }
