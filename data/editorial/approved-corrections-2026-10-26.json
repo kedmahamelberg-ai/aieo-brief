@@ -383,16 +383,18 @@
           "A lightweight rule-based classifier often matches bigger artificial intelligence models for inbox tasks. In a hypothetical 231-email test, the simple method used less time and cost.",
           "A key point is to rely on the contact graph for decisions instead of guessing from text alone; this lowers mistakes and keeps costs predictable."
         ],
-        "limitation": "Only one inbox, two languages, and lab-style data limit generalizability to real users in everyday settings and may not reflect other email platforms."
+        "limitation": "Only one inbox, two languages, and lab-style data limit generalizability to real users in everyday settings and may not reflect other email platforms.",
+        "what_happened": "In a test of 231 emails, a basic logistic regression using word features achieved the top accuracy across most cases. It was faster and cheaper than several artificial intelligence programs, while sender details depended on contact graphs."
       },
       "after": {
-        "headline": "Trained inbox classifier outperforms simple keyword rules on real emails",
-        "deck": "The paper compares a trained text classifier, keyword rules and generative AI on real emails from one multilingual inbox.",
+        "headline": "Trained email sorter beats simple keyword rules on real messages",
+        "deck": "The paper compares a trained email sorter, keyword rules and generative AI using real messages from one multilingual inbox.",
         "body_paragraphs": [
-          "A trained logistic-regression classifier using word features performed strongly on real emails from one Italian/English inbox. The separate keyword rules performed poorly.",
-          "The paper separates text classification from action quality. Sender relationships and contact-graph information matter for decisions about what to do with an email."
+          "The trained email sorter performed strongly on real messages from one Italian/English inbox. The separate system using simple keyword rules performed poorly.",
+          "Correctly sorting a message does not always mean choosing the right action. The paper also examines information about senders and their contacts."
         ],
-        "limitation": "The evaluation uses one personal inbox and two languages; classification accuracy alone does not establish the quality of resulting actions."
+        "limitation": "The study uses one personal inbox and two languages. Sorting accuracy alone does not show whether the tool chooses the right actions.",
+        "what_happened": "In a test of 231 real emails, a basic model trained to recognize word patterns had the best accuracy in most cases. It was faster and cheaper than several AI systems. Information about the sender’s contacts also mattered."
       }
     },
     {
@@ -402,7 +404,7 @@
         "what_happened": "A training-free score called Sensorimotor Alignment measures how closely a robot’s camera view matches its future actions. Across twelve model families, higher alignment tended to match task success, but results varied with robot design and data sources."
       },
       "after": {
-        "what_happened": "A training-free score called Sensorimotor Alignment measures how closely a robot’s camera view matches its future actions. Across tested embodied models, including twelve fine-tuned vision-language-action models, higher alignment tended to match task success, but results varied with robot design and data sources."
+        "what_happened": "The researchers tested a score that compares a robot’s camera view with its future actions. Across the tested systems, including twelve models further trained to connect images, language and actions, higher scores tended to go with greater task success."
       }
     },
     {
@@ -415,16 +417,18 @@
         "body_paragraphs": [
           "Treat data as blocks between regeneration points. Use the actual cycle lengths to estimate how far your training score might be off.",
           "The second-order tail term is usually small, but its size depends on how long cycles can be."
-        ]
+        ],
+        "limitation": "The tail term can be meaningful if regeneration times are long or highly variable; bounds depend on observed cycles."
       },
       "after": {
-        "headline": "Observed data cycles help bound how well classifiers generalize",
-        "deck": "The paper derives generalization-error bounds for classifiers learning from dependent data with regenerative structure.",
-        "what_happened": "The researchers derive bounds on generalization error using observed regeneration-cycle lengths. These bounds concern how learned classifiers perform beyond their training data, rather than their training error.",
+        "headline": "Data cycles help estimate limits on AI errors beyond training",
+        "deck": "The paper develops mathematical limits on errors when a trained system handles new data whose observations depend on one another.",
+        "what_happened": "The researchers derive limits on errors beyond the training data. They use the length of periods between points where the data-generating process starts afresh. These are limits on how well a trained system generalizes, rather than its errors during training.",
         "body_paragraphs": [
-          "The analysis groups dependent observations into blocks between regeneration points. Observed cycle lengths contribute to bounds on the difference between empirical and expected performance.",
-          "The second-order tail term is usually small, but its size depends on how long cycles can be."
-        ]
+          "The method groups observations into periods between fresh starts in the data-generating process. Their lengths help calculate mathematical limits on errors when the trained system handles new data.",
+          "An extra part of the bound is usually small, but its size depends on how long these periods can be."
+        ],
+        "limitation": "The result depends on the study’s mathematical assumptions. Long or highly varied periods between fresh starts can affect the limits."
       }
     },
     {
@@ -432,11 +436,13 @@
       "arxiv_id": "2610.30118v1",
       "before": {
         "headline": "Learning speed matches when inputs are uncorrelated, structure matters with correlations",
-        "what_happened": "Researchers compared two space-aware designs. When input samples are not related, both learn at about the same overall pace, but the design with shared weights gains speed proportional to the number of positions. With correlated inputs, results vary and timing shifts."
+        "what_happened": "Researchers compared two space-aware designs. When input samples are not related, both learn at about the same overall pace, but the design with shared weights gains speed proportional to the number of positions. With correlated inputs, results vary and timing shifts.",
+        "deck": "A study compares convolutional and locally connected networks to see how locality and weight sharing affect learning, especially when inputs are not independent."
       },
       "after": {
-        "headline": "Shared weights accelerate learning when input positions are uncorrelated",
-        "what_happened": "With uncorrelated input positions, convolutional and locally connected networks follow the same learning trajectory, but the convolutional network learns P times faster, where P is the number of positions. This result holds in the paper’s mathematical model."
+        "headline": "Sharing learned settings can make an AI network learn faster",
+        "what_happened": "When values at different input positions do not vary together, both networks follow the same learning path. The network sharing its settings learns faster by a factor equal to the number of positions. This result holds within the paper’s mathematical model.",
+        "deck": "A mathematical study compares networks that share learned settings across input positions with networks that learn separate settings for each position."
       }
     },
     {
@@ -448,9 +454,9 @@
         "what_happened": "Researchers trained a vision-language model in three steps: a verifier scores results, a teaching mentor offers token edits, and a gate accepts edits that match visible clues. On six benchmarks, some tests improved, but not all holdout data."
       },
       "after": {
-        "headline": "Visually grounded corrections improve average scores on main and holdout tests",
-        "deck": "VAG improves average performance on six main and four holdout benchmarks, without leading every individual comparison.",
-        "what_happened": "The method combines a verifier, a self-distillation teacher and a gate that favors visually attributable corrections. It improves over the base model on all four holdout tasks and achieves the highest holdout average, although some competing methods score higher on POPE."
+        "headline": "Corrections based on visible clues improve AI scores across tests",
+        "deck": "The method improves average scores on six main tests and four extra tests of wider performance, without beating every rival on every test.",
+        "what_happened": "The method uses a checker, a teaching model that suggests changes, and a filter favoring changes supported by visible clues. It beats the starting model on all four extra tests and has the best average. Some rivals do better on one test."
       }
     },
     {
@@ -465,11 +471,11 @@
         ]
       },
       "after": {
-        "what_happened": "Halcyon is a family of models trained from scratch on 100 million image–text pairs without separate language pretraining. Image quality improves with scale. Reported compute savings are comparisons with specific baselines, not a claim that larger models need less pretraining.",
-        "why_it_matters": "The results show that competitive image generation can be learned directly from paired images and text. Compute comparisons depend on the baselines and training setup.",
+        "what_happened": "Halcyon is a group of models trained from scratch on 100 million image-and-text pairs, without separate language training. Larger models produce better images. The reported savings in computing work are comparisons with specific other systems.",
+        "why_it_matters": "The results show that image generation can be learned directly from paired images and text. Comparisons of training costs depend on the systems and setups used.",
         "body_paragraphs": [
-          "The Halcyon family learns from image–text pairs without first training a separate language model. The paper reports lower training compute than named comparison systems.",
-          "In practice, teams should weigh model size and training budget, since gains in image realism grow with size but captioning might need extra methods or tuning. What does this mean for choosing models in your work?"
+          "The Halcyon models learn from image-and-text pairs without first training a separate language model. The paper reports less computing work for training than named comparison systems.",
+          "Teams choosing image generators need to consider both model size and training costs. The paper finds that image quality improves as models get larger."
         ]
       }
     },
@@ -478,11 +484,21 @@
       "arxiv_id": "2610.26860v1",
       "before": {
         "headline": "OpenVLHarness shows modest gains from multimodal memory in visual reasoning",
-        "deck": "A preprint study tests a multimodal tool that stores and uses visual data across steps, finding small improvements but noting limits and costs."
+        "deck": "A preprint study tests a multimodal tool that stores and uses visual data across steps, finding small improvements but noting limits and costs.",
+        "what_happened": "A controlled study on 22 benchmarks found that simply increasing the inference budget of a base model yields only modest gains for visual reasoning tasks. OpenVLHarness adds a capability layer and persistent multimodal memory to organize tool outputs and evidence across steps, improving average scores by about 9.7–12.6 points over baselines and lowering token costs in some cases.",
+        "body_paragraphs": [
+          "OpenVLHarness introduces a way to keep images, data, and links in memory during a task, so the model can reuse evidence without starting over. In tests across 22 benchmarks, it raised average scores compared with no-tool baselines, though the size of gains varied by backbone and setup.",
+          "A practical takeaway is that linking outputs from different tools and keeping a memory of what the model saw can help accuracy, but benefits are not guaranteed for every task and may come with higher complexity and cost."
+        ]
       },
       "after": {
-        "headline": "OpenVLHarness improves visual reasoning with tools and persistent multimodal memory",
-        "deck": "The abstract reports gains of 9.7–12.6 benchmark points with OpenVLHarness; modest gains describe increasing the base model’s inference budget alone."
+        "headline": "Keeping images and tool results helps AI answer visual questions",
+        "deck": "OpenVLHarness improves test scores by 9.7–12.6 points. The smaller gains described in the abstract come from giving the starting AI more computing time alone.",
+        "what_happened": "Across 22 tests, giving a basic AI model more time to answer produced only modest gains. OpenVLHarness instead adds tools and memory for images, text and earlier tool results. It improves average scores by 9.7–12.6 points over the comparison systems.",
+        "body_paragraphs": [
+          "The system keeps images, information and links available during a task. This lets the AI reuse evidence across several steps instead of starting again each time.",
+          "The reported gains vary with the underlying AI model and test setup. The abstract also reports lower token use in some comparisons. Tokens are the pieces of text processed by an AI."
+        ]
       }
     }
   ],
