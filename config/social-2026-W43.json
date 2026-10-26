@@ -1,0 +1,612 @@
+{
+  "topics": [
+    {
+      "id": "MON10_CA_MUSEUMS",
+      "date": "2026-10-26",
+      "time": "10:00",
+      "kind": "News",
+      "country": "Canada",
+      "market": "CA",
+      "photo": "ca-museums",
+      "path": "story/ai-serves-guide-museums-trois-rivieres/index.html",
+      "headline": "AI Serves as a Guide in Museums in Trois-Rivières",
+      "hook": "Museum guides are learning to answer back.",
+      "fact": "Two museums in Trois-Rivières are using AI audioguides that adapt language and stories to visitors, with staff controlling the source material.",
+      "tags": [
+        "#TheBrief",
+        "#MuseumTechnology",
+        "#CanadaAI"
+      ],
+      "second_subject_tag": "#DigitalCulture",
+      "evidence": "Source-backed reporting; Le Devoir",
+      "source_urls": [
+        "https://www.ledevoir.com/culture/1018862/ia-sert-guide-musees-trois-rivieres"
+      ],
+      "source_limitation": "Reported experiences come from two museums in a single city; results may not generalize to all museums or contexts.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "MON18_FR_WORK",
+      "date": "2026-10-26",
+      "time": "18:00",
+      "kind": "News",
+      "country": "France",
+      "market": "FR",
+      "photo": "fr-work",
+      "path": "story/france-tests-generative-ai-monitor-over-about-control/index.html",
+      "headline": "France Tests Generative AI to Monitor Over 6 Million Job Seekers, Raising Questions About Control",
+      "hook": "Who checks the AI helping to check job seekers?",
+      "fact": "La Quadrature du Net reports that France Travail is testing generative AI to assist employment controls, raising questions about personal data and human review.",
+      "tags": [
+        "#TheBrief",
+        "#AIGovernance",
+        "#FranceAI"
+      ],
+      "second_subject_tag": "#PublicServices",
+      "evidence": "Source-backed reporting; La Quadrature du Net",
+      "source_urls": [
+        "https://www.laquadrature.net/2026/10/23/france-travail-experimente-une-ia-generative-de-controle"
+      ],
+      "source_limitation": "Based on leaked internal materials and public summaries, with limited technical detail and no published outcomes.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "TUE10_US_LITERACY",
+      "date": "2026-10-27",
+      "time": "10:00",
+      "kind": "News",
+      "country": "United States",
+      "market": "US",
+      "photo": "us-literacy",
+      "path": "story/purdue-northwest-lets-first-year-students-use-use-emphasized/index.html",
+      "headline": "Purdue Northwest Lets First-Year Students Use Google Gemini to Build AI Literacy, with Ethical Use Emphasized",
+      "hook": "A university is pairing AI access with lessons in how to use it.",
+      "fact": "Purdue Northwest is giving incoming students Gemini licences alongside guidance on ethical use, as part of a pilot for AI literacy.",
+      "tags": [
+        "#TheBrief",
+        "#AILiteracy",
+        "#USAI"
+      ],
+      "second_subject_tag": "#HigherEducation",
+      "evidence": "Source-backed reporting; Purdue University Northwest",
+      "source_urls": [
+        "https://www.pnw.edu/purdue-university-northwest-provides-first-year-students-google-gemini-licenses-to-support-artificial-intelligence-literacy"
+      ],
+      "source_limitation": "The report describes a pilot program and institutional goals; it does not claim universal outcomes for all students or all institutions, and results may vary across programs and fields.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "TUE18_CN_SHIPPING",
+      "date": "2026-10-27",
+      "time": "18:00",
+      "kind": "News",
+      "country": "China",
+      "market": "CN",
+      "photo": "cn-shipping",
+      "path": "story/shipping-ai-scenarios-unveiled-traffic-authority-practical-steps/index.html",
+      "headline": "Shipping AI Scenarios Unveiled by Traffic Authority, With Limits and Practical Steps",
+      "hook": "China has mapped 22 ways to bring AI into shipping.",
+      "fact": "The transport plan focuses on safety, efficiency and greener operations across ports, waterways and ships, with results still tied to individual deployments.",
+      "tags": [
+        "#TheBrief",
+        "#MaritimeTechnology",
+        "#ChinaAI"
+      ],
+      "second_subject_tag": "#AIAdoption",
+      "evidence": "Source-backed reporting; People's Daily",
+      "source_urls": [
+        "https://paper.people.com.cn/rmrbhwb/pc/content/202610/23/content_30187264.html"
+      ],
+      "source_limitation": "Results are context-dependent; the cited improvements are per-scene pilots and should not be generalized to all operators or regions.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "WED06_RESEARCH_MEMORY",
+      "date": "2026-10-28",
+      "time": "06:00",
+      "kind": "Research",
+      "country": "",
+      "market": "",
+      "path": "research/openvlharness-shows-modest-gains-multimodal-memory-visual-reasoning/index.html",
+      "headline": "OpenVLHarness shows modest gains from multimodal memory in visual reasoning",
+      "hook": "Better visual reasoning may need better memory, not just more computation.",
+      "fact": "OpenVLHarness organizes images, tool outputs and evidence across steps. Its preprint reports improvements across 22 benchmarks, with gains varying by model and setup.",
+      "tags": [
+        "#TheBrief",
+        "#AIResearch",
+        "#MultimodalAI"
+      ],
+      "second_subject_tag": "#MachineLearning",
+      "evidence": "Preprint, abstract only",
+      "source_urls": [
+        "https://arxiv.org/abs/2610.26860v1"
+      ],
+      "source_limitation": "This is an abstract-only preprint; results are not finalized and may change in peer review.",
+      "substack_lead": "The research pick asks what an AI system should remember while it works."
+    },
+    {
+      "id": "WED10_GB_GOVERNANCE",
+      "date": "2026-10-28",
+      "time": "10:00",
+      "kind": "News",
+      "country": "United Kingdom",
+      "market": "GB",
+      "photo": "gb-governance",
+      "path": "story/eu-ai-act-sets-lifecycle-governance-varies-framework/index.html",
+      "headline": "EU AI Act sets lifecycle governance standard, UK alignment varies by framework",
+      "hook": "AI oversight does not end when a product launches.",
+      "fact": "A product law analysis compares EU monitoring duties with the UK approach through existing regulators, showing why cross-border governance needs continuing attention.",
+      "tags": [
+        "#TheBrief",
+        "#AIGovernance",
+        "#UKAI"
+      ],
+      "second_subject_tag": "#ResponsibleAI",
+      "evidence": "Source-backed reporting; Hogan Lovells Cadwalader",
+      "source_urls": [
+        "https://www.hlc.com/en/publications/the-eu-ai-act-and-uk-ai-regulation-a-product-law-perspective"
+      ],
+      "source_limitation": "Private quotes are cited from source material and reflect regulatory discussion, not empirical outcomes or universal policy guarantees.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "WED18_CA_PRAIRIES",
+      "date": "2026-10-28",
+      "time": "18:00",
+      "kind": "News",
+      "country": "Canada",
+      "market": "CA",
+      "photo": "ca-prairies",
+      "path": "story/canada-expands-prairie-ai-program-highlighting-limits-adoption/index.html",
+      "headline": "Canada expands Prairie AI program, highlighting mixed regional gains and limits on adoption",
+      "hook": "Canada is expanding support for AI adoption in the Prairies.",
+      "fact": "The regional initiative backs adoption and commercialization in sectors including farming, energy and transport. Its impact will depend on local uptake and delivery.",
+      "tags": [
+        "#TheBrief",
+        "#AIAdoption",
+        "#CanadaAI"
+      ],
+      "second_subject_tag": "#RegionalDevelopment",
+      "evidence": "Source-backed reporting; PR Newswire Canada",
+      "source_urls": [
+        "https://www.newswire.ca/news-releases/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces-884796310.html"
+      ],
+      "source_limitation": "The evidence describes a policy expansion and funding, not observed outcomes; results depend on execution and regional uptake.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "THU10_FR_FLUIDS",
+      "date": "2026-10-29",
+      "time": "10:00",
+      "kind": "News",
+      "country": "France",
+      "market": "FR",
+      "photo": "fr-fluids",
+      "path": "story/ai-augmented-multiscale-fluid-mechanics-ifpen-finds-careful-modelling/index.html",
+      "headline": "AI-augmented Multiscale Fluid Mechanics: IFPEN Finds Promise and Limits, Citing Careful Modelling",
+      "hook": "Can AI make complex fluid simulations more practical?",
+      "fact": "IFPEN describes models that connect fine-scale physics with coarser simulations, with promising tests in turbulence and combustion and precision still under scrutiny.",
+      "tags": [
+        "#TheBrief",
+        "#ScientificComputing",
+        "#FranceAI"
+      ],
+      "second_subject_tag": "#FluidDynamics",
+      "evidence": "Source-backed reporting; IFPEN",
+      "source_urls": [
+        "https://www.ifpenergiesnouvelles.fr/breve/intelligence-artificielle-en-mecanique-des-fluides-numerique-multi-echelle"
+      ],
+      "source_limitation": "Findings are context-specific (specific models and test cases) and do not generalize to all flows or full-scale systems without further validation.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "THU18_CN_LAW",
+      "date": "2026-10-29",
+      "time": "18:00",
+      "kind": "News",
+      "country": "China",
+      "market": "CN",
+      "photo": "cn-law",
+      "path": "story/ai-governance-law-masters-program-beijing-limits-remain/index.html",
+      "headline": "AI Governance Law Master’s Program in Beijing Promises Multidisciplinary Talent, But Limits Remain",
+      "hook": "Training AI governors means bringing law and technology together.",
+      "fact": "A Beijing symposium explored an AI governance law master’s programme, combining legal study, technical literacy and practical training. The proposals remain plans.",
+      "tags": [
+        "#TheBrief",
+        "#AIGovernance",
+        "#ChinaAI"
+      ],
+      "second_subject_tag": "#LegalEducation",
+      "evidence": "Source-backed reporting; China Social Sciences Network",
+      "source_urls": [
+        "https://www.cssn.cn/skgz/bwyc/202610/t20261020_6074109.shtml"
+      ],
+      "source_limitation": "Public field content cannot extrapolate from a single program to broader populations; the evidence describes a symposium and proposed plans, not implemented results.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "FRI10_US_FOOD",
+      "date": "2026-10-30",
+      "time": "10:00",
+      "kind": "News",
+      "country": "United States",
+      "market": "US",
+      "photo": "us-food",
+      "path": "story/harvard-huds-expands-winnow-ai-cut-gains-cautions/index.html",
+      "headline": "Harvard HUDS Expands Winnow AI to Cut Food Waste, With Notable Gains and Cautions",
+      "hook": "The useful AI signal may be what gets left on a plate.",
+      "fact": "Harvard dining teams are using AI to measure food waste and adjust menus and batch sizes. The reported reductions also depend on staff decisions and student habits.",
+      "tags": [
+        "#TheBrief",
+        "#FoodWaste",
+        "#USAI"
+      ],
+      "second_subject_tag": "#SustainableAI",
+      "evidence": "Source-backed reporting; The Harvard Crimson",
+      "source_urls": [
+        "https://www.thecrimson.com/article/2026/10/21/huds-learning-report"
+      ],
+      "source_limitation": "The findings reflect a single university's program and student behavior, limiting generalization beyond Harvard HUDS facilities and context.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "FRI18_GB_JOBS",
+      "date": "2026-10-30",
+      "time": "18:00",
+      "kind": "News",
+      "country": "United Kingdom",
+      "market": "GB",
+      "photo": "gb-jobs",
+      "path": "story/barclays-cut-5-000-jobs-push-outcomes-workers/index.html",
+      "headline": "Barclays to cut 5,000 jobs and push AI, signaling mixed outcomes for workers",
+      "hook": "At Barclays, the AI efficiency story comes with a workforce cost.",
+      "fact": "The UK bank plans about 5,000 job reductions this year as it pursues technology and AI efficiencies, bringing questions about transition and responsibility into focus.",
+      "tags": [
+        "#TheBrief",
+        "#FutureOfWork",
+        "#UKAI"
+      ],
+      "second_subject_tag": "#BankingTechnology",
+      "evidence": "Source-backed reporting; SANA",
+      "source_urls": [
+        "https://sana.sy/fr/economy/2337067"
+      ],
+      "source_limitation": "The article relies on a single source with quoted figures; broader, independent verification is limited in the supplied material.",
+      "market_rationale": "UK bank is the featured subject; upstream discovery tag CA is not the subject country",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "SAT10_CA_ARTS",
+      "date": "2026-10-31",
+      "time": "10:00",
+      "kind": "News",
+      "country": "Canada",
+      "market": "CA",
+      "photo": "ca-arts",
+      "path": "story/le-devoir-ai-rules-art-funding-remains-central/index.html",
+      "headline": "Le Devoir Reports AI Rules in Art Funding: Human Oversight Remains Central",
+      "hook": "AI can help with arts paperwork. Who should judge the art?",
+      "fact": "Le Devoir reports that Canadian cultural funders are setting boundaries around AI in grant evaluation while allowing some administrative assistance under human oversight.",
+      "tags": [
+        "#TheBrief",
+        "#CreativeIndustries",
+        "#CanadaAI"
+      ],
+      "second_subject_tag": "#AIGovernance",
+      "evidence": "Source-backed reporting; Le Devoir",
+      "source_urls": [
+        "https://www.ledevoir.com/culture/1018601/regles-ia-art"
+      ],
+      "source_limitation": "Findings reflect internal guidelines and statements from specific cultural arts bodies; real-world outcomes may vary across programs and over time.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "SAT18_FR_HEALTH",
+      "date": "2026-10-31",
+      "time": "18:00",
+      "kind": "News",
+      "country": "France",
+      "market": "FR",
+      "photo": "fr-health",
+      "path": "story/ai-health-shows-mixed-gains-clear-du-cerveau/index.html",
+      "headline": "AI in Health Shows Mixed Gains and Clear Limits, Institut du Cerveau Says",
+      "hook": "In brain research, better pattern recognition still needs human judgement.",
+      "fact": "Institut du Cerveau explains how AI supports imaging and complex health research, with results shaped by data quality, study design and clinical context.",
+      "tags": [
+        "#TheBrief",
+        "#MedicalAI",
+        "#FranceAI"
+      ],
+      "second_subject_tag": "#Neuroscience",
+      "evidence": "Source-backed reporting; Institut du Cerveau",
+      "source_urls": [
+        "https://institutducerveau.org/lexique/intelligence-artificielle-ia"
+      ],
+      "source_limitation": "Publicly available summaries do not claim universal improvements; results vary by data quality, context, and governance. The source emphasizes mixed gains and the need for human oversight.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "SUN10_CN_DELIVERY",
+      "date": "2026-11-01",
+      "time": "10:00",
+      "kind": "News",
+      "country": "China",
+      "market": "CN",
+      "photo": "cn-delivery",
+      "path": "story/beijing-ai-nanodelivery-platform-goes-global-backing-limits/index.html",
+      "headline": "Beijing AI Nanodelivery Platform Goes Global via Lilly Deal, with Beijing Backing and Limits",
+      "hook": "AI drug delivery research is moving into an international partnership.",
+      "fact": "Beijing-based Jitai Tech and Eli Lilly are collaborating on AI-designed lipid nanoparticles. Whether the approach delivers clinical benefits remains to be tested.",
+      "tags": [
+        "#TheBrief",
+        "#DrugDiscovery",
+        "#ChinaAI"
+      ],
+      "second_subject_tag": "#Biotechnology",
+      "evidence": "Source-backed reporting; Beijing Municipal People's Government Portal Website",
+      "source_urls": [
+        "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202610/t20261021_4912648.html"
+      ],
+      "source_limitation": "Results are contingent on future clinical data and regulatory approvals; do not generalize findings.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    },
+    {
+      "id": "SUN18_US_NEWSROOM",
+      "date": "2026-11-01",
+      "time": "18:00",
+      "kind": "News",
+      "country": "United States",
+      "market": "US",
+      "photo": "us-newsroom",
+      "path": "story/civil-beat-affirms-cautious-ai-policy-clear-limits/index.html",
+      "headline": "Civil Beat Affirms Cautious AI Policy With Human Oversight and Clear Limits",
+      "hook": "A newsroom is drawing a clear line around AI use.",
+      "fact": "Honolulu Civil Beat says AI will support limited work behind the scenes, while people remain responsible for journalism and AI will not write its stories or alter photographs.",
+      "tags": [
+        "#TheBrief",
+        "#Journalism",
+        "#USAI"
+      ],
+      "second_subject_tag": "#ResponsibleAI",
+      "evidence": "Source-backed reporting; Honolulu Civil Beat",
+      "source_urls": [
+        "https://www.civilbeat.org/2026/10/civil-beats-artificial-intelligence-policy"
+      ],
+      "source_limitation": "The article reflects a single newsroom’s policy and may not generalize to other outlets or industries.",
+      "market_rationale": "Featured country context reviewed against article and source",
+      "substack_lead": "This is one of the questions running through this week’s Brief."
+    }
+  ],
+  "photos": {
+    "ca-museums": {
+      "title": "Plaines d'Abraham, Quebec ville, Canada 4.jpg",
+      "creator": "Wilfredor",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Plaines_d%27Abraham,_Quebec_ville,_Canada_4.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Plaines_d%27Abraham%2C_Quebec_ville%2C_Canada_4.jpg/1920px-Plaines_d%27Abraham%2C_Quebec_ville%2C_Canada_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Plaines d'Abraham, Quebec ville, Canada",
+      "local_source": "sources/ca-museums.jpg",
+      "sha256": "b843531c377170a60d6e067fd3c41e044567fafde7d68f0618fcb922ee07cedf",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "ca-prairies": {
+      "title": "Malbaie River in Hautes-Gorges-de-la-Rivière-Malbaie National Park, Quebec, Canada.jpg",
+      "creator": "Dav2z at English Wikipedia",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Malbaie_River_in_Hautes-Gorges-de-la-Rivi%C3%A8re-Malbaie_National_Park,_Quebec,_Canada.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Malbaie_River_in_Hautes-Gorges-de-la-Rivi%C3%A8re-Malbaie_National_Park%2C_Quebec%2C_Canada.jpg/1920px-Malbaie_River_in_Hautes-Gorges-de-la-Rivi%C3%A8re-Malbaie_National_Park%2C_Quebec%2C_Canada.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "Public domain",
+      "license_url": "",
+      "description": "Author: David Touzin (dav2z) (3 Aug 2006), in the Hautes Gorges de la Rivière Malbaie.",
+      "local_source": "sources/ca-prairies.jpg",
+      "sha256": "b8775d074272c6682127177e2e17ca87a4a33c058a489d19af1c661f9f1bc42e",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "ca-arts": {
+      "title": "Parc du réservoir Beaudet 2.jpg",
+      "creator": "Wilfredor",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Parc_du_r%C3%A9servoir_Beaudet_2.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Parc_du_r%C3%A9servoir_Beaudet_2.jpg/1920px-Parc_du_r%C3%A9servoir_Beaudet_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Park of the Beaudet dam",
+      "local_source": "sources/ca-arts.jpg",
+      "sha256": "7ad2b0f526613995424056a6f076a8dcfeed25fe134bc0dfa8d5e38f2bddb3b1",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "fr-work": {
+      "title": "Pont Royal and Musée d'Orsay, Paris 10 July 2020.jpg",
+      "creator": "Pierre Blaché from Paris, France",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pont_Royal_and_Mus%C3%A9e_d%27Orsay,_Paris_10_July_2020.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Pont_Royal_and_Mus%C3%A9e_d%27Orsay%2C_Paris_10_July_2020.jpg/1920px-Pont_Royal_and_Mus%C3%A9e_d%27Orsay%2C_Paris_10_July_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Pont Royal and Musée d'Orsay at dusk, Paris, France.",
+      "local_source": "sources/fr-work.jpg",
+      "sha256": "5e72c8435dc342cdf21f4c7c29d7df55a4d5c45912499b2215f727a41e021b6c",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "fr-fluids": {
+      "title": "Cityscape of Paris with traffic (Unsplash).jpg",
+      "creator": "Pedro Gandra pedrogandra",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cityscape_of_Paris_with_traffic_(Unsplash).jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Cityscape_of_Paris_with_traffic_%28Unsplash%29.jpg/1920px-Cityscape_of_Paris_with_traffic_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Arc de Triomphe, Paris, France",
+      "local_source": "sources/fr-fluids.jpg",
+      "sha256": "8284f67fda96f87d72f1030f98a40a5dd0e1c191a2cdb7cc18ceedcb52577a1e",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "fr-health": {
+      "title": "Toits Paris Saint Augustin depuis arc de Triomphe.jpg",
+      "creator": "Jebulon",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Toits_Paris_Saint_Augustin_depuis_arc_de_Triomphe.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Toits_Paris_Saint_Augustin_depuis_arc_de_Triomphe.jpg/1920px-Toits_Paris_Saint_Augustin_depuis_arc_de_Triomphe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Roofs of Paris, dome and pinnacles of church Saint-Augustin, view from Arc de Triomphe.",
+      "local_source": "sources/fr-health.jpg",
+      "sha256": "a3f0619a1d711e8c3372afe264de6dcbdc9c289158655466f4d6e6b27a25c563",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "us-literacy": {
+      "title": "Aerial view of the Butler University campus in Indianapolis, Indiana.jpg",
+      "creator": "Carol M. Highsmith",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Butler_University_campus_in_Indianapolis,_Indiana.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Aerial_view_of_the_Butler_University_campus_in_Indianapolis%2C_Indiana.jpg/1920px-Aerial_view_of_the_Butler_University_campus_in_Indianapolis%2C_Indiana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "Public domain",
+      "license_url": "",
+      "description": "Title: Aerial view of the Butler University campus in Indianapolis, Indiana. Medium: 1 photograph : digital, TIFF file, color. Notes: Title, date and keywords based on information provided by the photographer. Photographs in the Carol M. Highsmith Archive, Library of Congress, Prints and Photographs Division. Carol M. Highsmith Photography, Inc.; 2016; (DLC/PP-2016:103-1). Forms part of the Carol M. Highsmith Archive. Reproduction Number: LC-DIG-highsm-40852 (original digital file). Call Number: LC-DIG-highsm 40852 (ONLINE) [P&P]",
+      "local_source": "sources/us-literacy.jpg",
+      "sha256": "88a0aada5c05ff85cf9621c2bb90aa636312d689bd16a2b779a7c825879b671e",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "us-food": {
+      "title": "University of Arkansas Campus 07.jpg",
+      "creator": "Brandonrush",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:University_of_Arkansas_Campus_07.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/University_of_Arkansas_Campus_07.jpg/1920px-University_of_Arkansas_Campus_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Humphries Hall on the campus of the University of Arkansas in Fayetteville",
+      "local_source": "sources/us-food.jpg",
+      "sha256": "cd15b9486776b69341667087273d0112fc886b80a6b8e9865c98e033b16d48fb",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "us-newsroom": {
+      "title": "Skyline Ahua Station 01.jpg",
+      "creator": "The Eloquent Peasant",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skyline_Ahua_Station_01.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Skyline_Ahua_Station_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Skyline Ahua Station",
+      "local_source": "sources/us-newsroom.jpg",
+      "sha256": "7ced3f8237afa2e2a59d07df0365cff47562b75219cb413f9de5b3d6575f6226",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "cn-shipping": {
+      "title": "Shanghai skyline from the bund.jpg",
+      "creator": "https://www.pxfuel.com/en/free-photo-ovozr",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shanghai_skyline_from_the_bund.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Shanghai_skyline_from_the_bund.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Shanghai skyline from The Bund",
+      "local_source": "sources/cn-shipping.jpg",
+      "sha256": "0163bb8f6f6d395558d1f0f17fc740cc88eb652f3d676c42ea329553b74480ee",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "cn-law": {
+      "title": "Shanghai Skyline 2012.jpg",
+      "creator": "Yourusernamewillbepublic2",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shanghai_Skyline_2012.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Shanghai_Skyline_2012.jpg/1920px-Shanghai_Skyline_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Shanghai Skyline 2012",
+      "local_source": "sources/cn-law.jpg",
+      "sha256": "5ee6cd57330dba60ea4113892f5ea0d329a2735f8e9dcdc128c784b6017091db",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "cn-delivery": {
+      "title": "Shanghai Skyline 2025.jpg",
+      "creator": "Gankbank789",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shanghai_Skyline_2025.jpg",
+      "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Shanghai_Skyline_2025.jpg/1920px-Shanghai_Skyline_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Shanghai Skyline 2025",
+      "local_source": "sources/cn-delivery.jpg",
+      "sha256": "380add60c485a578b5e562476de366f2b0ebe6a15d73b73d2bc589d316c1fd1d",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "gb-governance": {
+      "title": "River Thames riverside park with London skyline at Vauxhall-2026.jpg",
+      "creator": "Raman Ghimire",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:River_Thames_riverside_park_with_London_skyline_at_Vauxhall-2026.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/8/82/River_Thames_riverside_park_with_London_skyline_at_Vauxhall-2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "rights_status": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "A riverside view of the London skyline near Vauxhall, with the River Thames in the foreground and modern residential and office towers of the Nine Elms development visible in the background. The photograph was taken from a park along the south bank of the river.",
+      "local_source": "sources/gb-governance.jpg",
+      "sha256": "1e5a243acf30fe9639b82e0fb2e2b2a7e1e6921e2fbe284367e9d2cc3bb12a56",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    },
+    "gb-jobs": {
+      "title": "River.thames.view.london.arp.jpg",
+      "creator": "",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:River.thames.view.london.arp.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/0/0e/River.thames.view.london.arp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "rights_status": "Public domain",
+      "license_url": "",
+      "description": "",
+      "local_source": "sources/gb-jobs.jpg",
+      "sha256": "64a59ec177715a600fd8060259a0c41a45e709424aac1e90817771a397444a58",
+      "verified_on": "2026-10-26",
+      "duplicate_check": "PASS, source URL and SHA-256 absent from previous weekly batches",
+      "use": "Illustrative country photograph, not a photograph of the reported event"
+    }
+  },
+  "substack_post": {
+    "status": "DRAFT_NOT_APPROVED_DO_NOT_PUBLISH",
+    "proposed_at": "2026-10-26T12:00:00+01:00",
+    "title": "Who stays in control when AI enters everyday work?",
+    "subtitle": "Fourteen stories across five markets, plus research on memory for visual AI agents",
+    "body": "This week’s Brief follows AI into museum tours, university classrooms, ports, dining halls and the decisions that shape working life. Canada’s museum guides show how new tools can adapt to people. France Travail’s experiment asks who keeps control when a system reviews people. The UK banking story puts the workforce consequences in view, while China’s shipping and legal education plans show how institutions prepare for adoption. Our research pick explores whether visual AI agents can reason more effectively by keeping track of evidence across steps. Read the selected stories for the original sources, practical context and limits behind the headlines.",
+    "destination": "https://brief.hamelberg-ai.com/?utm_source=substack_post&utm_medium=organic_social&utm_campaign=brief_2026_w44&utm_content=WEEKLY_POST"
+  }
+}
