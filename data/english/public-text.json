@@ -6142,6 +6142,26 @@
       },
       "output_sha256": "7b8af6ab5be7788b9ca5d92c38922c64a05e9d3f7b7e4f4850b96d537bbf0547",
       "policy": "brief-english-display-v1"
+    },
+    "20e9e63f67af5dba1dafb5420344a4a0831eafe9104888d1a3f9e556d9e6e768": {
+      "english": {
+        "0": "Reporting from Nanjing University. Open the source for the article.",
+        "1": "Nanjing University",
+        "2": "Nanjing University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "fd07c62de8cfde480d609a052e4deffea0921153ba6e233038cc76a8c676f4fe",
+      "policy": "brief-english-display-v1"
     }
   }
 }
