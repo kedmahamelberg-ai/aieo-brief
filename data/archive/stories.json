@@ -2,6 +2,377 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/36/22_-_Mut_%28BK_2967-1%2C_ER_275%29.flac",
+      "creator": "Franz Schubert",
+      "creator_origin": "Austrian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Schubert. 1 minutes to listen.",
+      "duration_seconds": 113,
+      "headline": "22 - Mut (BK 2967-1, ER 275)",
+      "key": "culture:e240d5b7836c03eb923aefcd",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/22_-_Mut_%28BK_2967-1%2C_ER_275%29.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Schubert",
+      "original_recording_title": "22 - Mut (BK 2967-1, ER 275)",
+      "provenance_id": "commons:42265746",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Franz Schubert, 1827",
+      "recording_description": "Mut, vingt-deuxième lied du recueil Winterreise de Franz Schubert sur un poème de Müller. Chanté par le baryton viennois Hans Duhan.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Franz Schubert, 1827",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Hans Duhan, Gramophone",
+        "url": "https://commons.wikimedia.org/wiki/File:22_-_Mut_(BK_2967-1,_ER_275).flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:22_-_Mut_(BK_2967-1,_ER_275).flac",
+      "work_date": "1928",
+      "date": "2026-10-27",
+      "selected_on": "2026-10-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-e240d5b7836c03eb923aefcd",
+      "path": "culture/culture-e240d5b7836c03eb923aefcd/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "22 - Mut (BK 2967-1, ER 275)",
+          "url": "https://commons.wikimedia.org/wiki/File:22_-_Mut_(BK_2967-1,_ER_275).flac",
+          "date": "1928",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-27",
+      "summary_basis": "Selected 27 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Green Tara",
+      "art_type": "Painting",
+      "balance_origin": "Central Tibet",
+      "creator": "attributed to Aniko (Nepalese, active in Tibet mid- to late 1200s)",
+      "creator_origin": "Central Tibet",
+      "culture_type": "illustration",
+      "deck": "Green Tara. thangka; gum tempera, ink, and gold on sized cotton; mount: silk.",
+      "headline": "Green Tara",
+      "image_path": "assets/culture/d803f9cdc4f7bc8c05d88c49.jpg",
+      "key": "culture:d803f9cdc4f7bc8c05d88c49",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1970.156/1970.156_web.jpg",
+      "medium": "thangka; gum tempera, ink, and gold on sized cotton; mount: silk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1970.156",
+      "provenance_id": "cma:144961",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund by exchange",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1970.156",
+      "work_date": "c. 1260s, mounted 2020",
+      "date": "2026-10-27",
+      "selected_on": "2026-10-27",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-d803f9cdc4f7bc8c05d88c49",
+      "path": "culture/culture-d803f9cdc4f7bc8c05d88c49/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Green Tara",
+          "url": "https://clevelandart.org/art/1970.156",
+          "date": "c. 1260s, mounted 2020",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-27",
+      "summary_basis": "Selected 27 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Prophet",
+      "content_fingerprint": "e27dfc6d724ac336d593a6fb5be416d9dd4f436e071cec29f6d4f25fcecb3d91",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "quote",
+      "deck": "From The Prophet.",
+      "excerpt": "For what distances can love reach that are not in that vast sphere?",
+      "headline": "For what distances can love reach that are not in that vast sphere?",
+      "key": "culture:87ecacbae03d3bf0accffb47",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:58585:quote:e27dfc6d724ac336d593a6fb5be416d9dd4f436e071cec29f6d4f25fcecb3d91",
+      "publisher": "Project Gutenberg",
+      "quote_context": "For what distances can love reach that are not in that vast sphere?",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/58585"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "e4c7f1820ffbfa4d6e2186a1a9f649f3a3b15df2478c7373a24560574af3bcfc",
+      "source_locator": "Almustafa, the chosen and the; paragraph 772 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/58585",
+      "translator": "",
+      "work_date": "1923",
+      "date": "2026-10-27",
+      "selected_on": "2026-10-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-87ecacbae03d3bf0accffb47",
+      "path": "culture/culture-87ecacbae03d3bf0accffb47/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "For what distances can love reach that are not in that vast sphere?",
+          "url": "https://www.gutenberg.org/ebooks/58585",
+          "date": "1923",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-27",
+      "summary_basis": "Selected 27 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "For what distances can love reach that are not in that vast sphere?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "For what distances can love reach that are not in that vast sphere?",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "5bf7a8be99399a38b772ba5ddb8cd5de24ab62bf148d1788f57e1f70a426cb3a",
+      "creator": "Walt Whitman",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Walt Whitman.",
+      "excerpt": "ON journeys through the States we start,\n(Ay, through the world—urged by these songs,\nSailing henceforth to every land—to every sea;)\nWe, willing learners of all, teachers of all, and lovers of all.\n\nWe have watch’d the seasons dispensing themselves, and passing on,\nWe have said, Why should not a man or woman do as much as the seasons, and effuse as much?\n\n\nWe dwell a while in every city and town;\nWe pass through Kanada, the north-east, the vast valley of the Mississippi, and the\n    Southern\n  States;\nWe confer on equal terms with each of The States,\nWe make trial of ourselves, and invite men and women to hear;\nWe say to ourselves, Remember, fear not, be candid, promulge the body and the Soul;\nDwell a while and pass on—Be copious, temperate, chaste, magnetic,\nAnd what you effuse may then return as the seasons return,\nAnd may be just as much as the seasons.",
+      "headline": "On Journeys Through The States.",
+      "key": "culture:2aecbf7c7376065d8c0540c2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "ON journeys through the States we start,",
+        "(Ay, through the world—urged by these songs,",
+        "Sailing henceforth to every land—to every sea;)",
+        "We, willing learners of all, teachers of all, and lovers of all.",
+        "",
+        "We have watch’d the seasons dispensing themselves, and passing on,",
+        "We have said, Why should not a man or woman do as much as the seasons, and effuse as much?",
+        "",
+        "",
+        "We dwell a while in every city and town;",
+        "We pass through Kanada, the north-east, the vast valley of the Mississippi, and the",
+        "    Southern",
+        "  States;",
+        "We confer on equal terms with each of The States,",
+        "We make trial of ourselves, and invite men and women to hear;",
+        "We say to ourselves, Remember, fear not, be candid, promulge the body and the Soul;",
+        "Dwell a while and pass on—Be copious, temperate, chaste, magnetic,",
+        "And what you effuse may then return as the seasons return,",
+        "And may be just as much as the seasons."
+      ],
+      "provenance_id": "poetrydb:Walt Whitman:On Journeys Through The States.",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1892.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "1e562dbd5508728982ebcdbbc789129359ef93e9c43b0c6fe01e914d943be492",
+      "source_locator": "On Journeys Through The States.",
+      "source_url": "https://poetrydb.org/title/On%20Journeys%20Through%20The%20States.:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1892",
+      "date": "2026-10-27",
+      "selected_on": "2026-10-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-2aecbf7c7376065d8c0540c2",
+      "path": "culture/culture-2aecbf7c7376065d8c0540c2/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "On Journeys Through The States.",
+          "url": "https://poetrydb.org/title/On%20Journeys%20Through%20The%20States.:abs/lines.text",
+          "date": "Before 1892",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-27",
+      "summary_basis": "Selected 27 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "ON journeys through the States we start,\n(Ay, through the world—urged by these songs,\nSailing henceforth to every land—to every sea;)\nWe, willing learners of all, teachers of all, and lovers of all.\n\nWe have watch’d the seasons dispensing themselves, and passing on,\nWe have said, Why should not a man or woman do as much as the seasons, and effuse as much?\n\n\nWe dwell a while in every city and town;\nWe pass through Kanada, the north-east, the vast valley of the Mississippi, and the\n    Southern\n  States;\nWe confer on equal terms with each of The States,\nWe make trial of ourselves, and invite men and women to hear;\nWe say to ourselves, Remember, fear not, be candid, promulge the body and the Soul;\nDwell a while and pass on—Be copious, temperate, chaste, magnetic,\nAnd what you effuse may then return as the seasons return,\nAnd may be just as much as the seasons.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "8d7c4c9d2ac5e503d28268d799c558acaf35436bc63bf4474fc1d44944b49513",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "text",
+      "deck": "A passage from The Book of Tea.",
+      "excerpt": "A special contribution of Zen to Eastern thought was its recognition of the mundane as of equal importance with the spiritual. It held that in the great relation of things there was no distinction of small and great, an atom possessing equal possibilities with the universe. The seeker for perfection must discover in his own life the reflection of the inner light. The organisation of the Zen monastery was very significant of this point of view. To every member, except the abbot, was assigned some special work in the caretaking of the monastery, and curiously enough, to the novices was committed the lighter duties, while to the most respected and advanced monks were given the more irksome and menial tasks. Such services formed a part of the Zen discipline and every least action must be done absolutely perfectly. Thus many a weighty discussion ensued while weeding the garden, paring a turnip, or serving tea. The whole ideal of Teaism is a result of this Zen conception of greatness in the smallest incidents of life. Taoism furnished the basis for aesthetic ideals, Zennism made them practical.",
+      "headline": "The Book of Tea · a short reading",
+      "key": "culture:2a43d57074a9fa1cadfa2017",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:passage:8d7c4c9d2ac5e503d28268d799c558acaf35436bc63bf4474fc1d44944b49513",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 52 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-10-27",
+      "selected_on": "2026-10-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-2a43d57074a9fa1cadfa2017",
+      "path": "culture/culture-2a43d57074a9fa1cadfa2017/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Book of Tea · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-27",
+      "summary_basis": "Selected 27 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "A special contribution of Zen to Eastern thought was its recognition of the mundane as of equal importance with the spiritual. It held that in the great relation of things there was no distinction of small and great, an atom possessing equal possibilities with the universe. The seeker for perfection must discover in his own life the reflection of the inner light. The organisation of the Zen monastery was very significant of this point of view. To every member, except the abbot, was assigned some special work in the caretaking of the monastery, and curiously enough, to the novices was committed the lighter duties, while to the most respected and advanced monks were given the more irksome and menial tasks. Such services formed a part of the Zen discipline and every least action must be done absolutely perfectly. Thus many a weighty discussion ensued while weeding the garden, paring a turnip, or serving tea. The whole ideal of Teaism is a result of this Zen conception of greatness in the smallest incidents of life. Taoism furnished the basis for aesthetic ideals, Zennism made them practical.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Overture_in_C_minor%2C_TH_38_-_Pyotr_Ilyich_Tchaikovsky.ogg",
       "creator": "Pyotr Ilyich Tchaikovsky",
       "creator_origin": "Russian",
@@ -8536,6 +8907,8 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 45,
       "paper_text_sha256": "0d5cf90b1e05d034b254abed0e13eedbe5a82d9cd6adec154e14f98609c0ca3c",
+      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_source_url": "https://openalex.org/W7223028650",
       "kind": "research",
       "slug": "computer-assisted-design-tests-show-mixed-results-working-designs",
       "path": "research/computer-assisted-design-tests-show-mixed-results-working-designs/index.html",
@@ -8619,6 +8992,8 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 18,
       "paper_text_sha256": "18702c0d20c72c758be931667e230970bb1c5e47df54d27f475add74bf99eeca",
+      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_source_url": "https://openalex.org/W7223060590",
       "kind": "research",
       "slug": "public-capability-scores-partly-predict-fastest-robot-systems",
       "path": "research/public-capability-scores-partly-predict-fastest-robot-systems/index.html",
@@ -22453,7 +22828,9 @@
         "Joanna Knight",
         "James Bishop"
       ],
-      "institutions": [],
+      "institutions": [
+        "The Alan Turing Institute"
+      ],
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -22484,6 +22861,8 @@
       "full_text_retry_after": "2026-10-19",
       "paper_pages": 64,
       "paper_text_sha256": "a9456708ecdee2b9c9786ff1282f8756f9aa5a2e3cc89175f63b494bbd588c10",
+      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_source_url": "https://openalex.org/W7221541683",
       "kind": "research",
       "slug": "ai-can-navigate-wikipedia-links-but-fast-humans",
       "path": "research/ai-can-navigate-wikipedia-links-but-fast-humans/index.html",

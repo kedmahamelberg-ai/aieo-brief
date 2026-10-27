@@ -1104,7 +1104,9 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 45,
-      "paper_text_sha256": "0d5cf90b1e05d034b254abed0e13eedbe5a82d9cd6adec154e14f98609c0ca3c"
+      "paper_text_sha256": "0d5cf90b1e05d034b254abed0e13eedbe5a82d9cd6adec154e14f98609c0ca3c",
+      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_source_url": "https://openalex.org/W7223028650"
     },
     {
       "key": "paper:33156a4506e931a4122a8f9e",
@@ -1156,7 +1158,9 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 18,
-      "paper_text_sha256": "18702c0d20c72c758be931667e230970bb1c5e47df54d27f475add74bf99eeca"
+      "paper_text_sha256": "18702c0d20c72c758be931667e230970bb1c5e47df54d27f475add74bf99eeca",
+      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_source_url": "https://openalex.org/W7223060590"
     },
     {
       "key": "paper:dec570fcf47eb931adfb423f",
@@ -2465,7 +2469,9 @@
         "Joanna Knight",
         "James Bishop"
       ],
-      "institutions": [],
+      "institutions": [
+        "The Alan Turing Institute"
+      ],
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2495,7 +2501,9 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-19",
       "paper_pages": 64,
-      "paper_text_sha256": "a9456708ecdee2b9c9786ff1282f8756f9aa5a2e3cc89175f63b494bbd588c10"
+      "paper_text_sha256": "a9456708ecdee2b9c9786ff1282f8756f9aa5a2e3cc89175f63b494bbd588c10",
+      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_source_url": "https://openalex.org/W7221541683"
     },
     {
       "key": "paper:4a6f4c43d19f2e1e1a0f1922",
