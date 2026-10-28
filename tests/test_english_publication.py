@@ -7,7 +7,6 @@ from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from english_publication import EnglishPublication,digest,POLICY,content_version,non_latin,slots,culture_slots
-from build_site import require_english_culture
 from culture_library import validate_record
 
 class EnglishPublicationTests(unittest.TestCase):
@@ -100,11 +99,23 @@ class EnglishPublicationTests(unittest.TestCase):
             counts[kind]=sum(bool(list(culture_slots(row))) for row in rows)
         self.assertEqual(counts,{'art':0,'poetry':22,'text':29,'quote':0,'music':4})
 
-    def test_untranslated_culture_blocks_publication(self):
-        pending={'key':'culture:'+'a'*24,'kind':'culture','english_status':'pending'}
-        with self.assertRaisesRegex(ValueError,'Untranslated culture cannot be published'):
-            require_english_culture([pending])
-        require_english_culture([pending],preview=True)
-        require_english_culture([{'key':'news','kind':'news','english_status':'pending'}])
+    def test_scots_poem_uses_notice_then_retries_translation(self):
+        root=Path(__file__).resolve().parents[1]
+        rows=json.loads((root/'data/culture/library-poetry.json').read_text())
+        original=next(row for row in rows if row['key']=='culture:220e95c7ab0f123ae5ab4b3a')
+        original={**original,'kind':'culture'}
+        eng=EnglishPublication(self.temp.name,False)
+        pending=eng.apply(original)
+        self.assertEqual(pending['english_status'],'pending')
+        self.assertNotIn('WHOM will you send',pending['excerpt'])
+        self.assertEqual(pending['excerpt'],'\n'.join(pending['poem_lines']))
+        self.assertEqual(original['language'],'Scots')
+        retry=EnglishPublication(self.temp.name,True)
+        def translated(values):
+            output={k:'A reviewed English translation' for k in values}
+            return {'policy':POLICY,'english':output,'review':{'english_only':True,'meaning_preserved':True,'attribution_preserved':True},'output_sha256':digest(output)}
+        with patch.object(retry,'translate',side_effect=translated):
+            self.assertEqual(retry.apply(original)['english_status'],'translated')
+        self.assertEqual(EnglishPublication(self.temp.name,False).apply(original)['english_status'],'translated')
 
 if __name__=='__main__':unittest.main()
