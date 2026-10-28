@@ -504,7 +504,16 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
         reviewed = approved.get(kind, {})
         if reviewed:
             if not ready_valid(reviewed, available):
-                raise ValueError('weekly_human_approval_sources_changed')
+                # Keep the rest of the site publishable without presenting stale
+                # signed prose as if it still matched the current sources.
+                current[kind] = {**current[kind], 'editorial_version': VERSION,
+                                 'status': 'pending', 'author': '',
+                                 'title': 'The weekly news review is being prepared' if kind == 'markets' else 'The weekly research review is being prepared',
+                                 'deck': 'The review will appear when its sources and editorial checks are complete.',
+                                 'summary': '', 'prose': [], 'scope_note': '', 'word_count': 0,
+                                 'papers': [], 'pending_reason': 'approved_sources_changed'}
+                print('::warning::Weekly ' + kind + ' review is pending because approved sources changed.')
+                continue
             validate_section(reviewed)
             validate_citation_alignment(reviewed['prose'], [available[key] for key in reviewed['source_hashes']])
             if not reviewed.get('human_approved'):
