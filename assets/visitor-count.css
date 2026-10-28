@@ -1,0 +1,3 @@
+.site-footer .visitor-count{grid-column:1/-1;padding-top:18px;border-top:1px solid var(--line);font-size:.9rem;color:var(--ink);letter-spacing:0}
+.visitor-count strong{color:var(--accent);font-variant-numeric:tabular-nums}
+.visitor-count small{display:block;margin-top:4px;color:var(--muted);font-size:.75rem}
