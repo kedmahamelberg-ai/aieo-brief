@@ -87,6 +87,10 @@ def fixed_relationship(row):
             'ai_direction':old[axes['ai']['direction']], 'axes':axes,
             'configuration':row.get('configuration') or 'ambiguous_relational_signal'}
 
+def editorial_source_fingerprint(event, relationship):
+    """Bind reuse to the full public event and its source/axis provenance."""
+    return digest({'event': event, 'relationship': relationship})
+
 def safe_url(value, allow_mail=False, allow_http=False):
     value=str(value or '').strip()
     p=urlparse(value)
