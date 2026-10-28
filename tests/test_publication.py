@@ -9,6 +9,20 @@ from source_evidence_quality import evidence_chunks
 from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
 from validate_public_site import inspect_json
 class Publication(unittest.TestCase):
+ def test_summary_reuse_requires_identical_event_and_relationship_provenance(self):
+  from brief_contract import editorial_source_fingerprint, PROMPT_VERSION, digest
+  event={'event_id':'one','sources':[{'article_id':'a'}]}
+  row={'event_id':'one','axes':{'human':{'direction':'gain'}},'evidence_basis_summary':{'source_fingerprints':{'a':'original'}}}
+  old='old-release-hash'; release={'release_id':'2026-W43','content_sha256':'new-release-hash'}
+  version={'publication_status':'preview','evidence_basis_summary':{'prompt_version':PROMPT_VERSION,'axes_sha256':digest(row['axes']),'release_id':'2026-W43','source_release_sha256':old}}
+  proof={old:{'one':editorial_source_fingerprint(event,row)}}
+  self.assertTrue(version_valid(version,row,release,event,proof))
+  changed=copy.deepcopy(row);changed['evidence_basis_summary']['source_fingerprints']['a']='changed'
+  self.assertFalse(version_valid(version,changed,release,event,proof))
+  self.assertFalse(version_valid(version,row,release,{**event,'event_title':'changed'},proof))
+  version['evidence_basis_summary']['editorial_source_fingerprint']=proof[old]['one']
+  self.assertTrue(version_valid(version,row,release,event))
+  self.assertFalse(version_valid(version,row,{**release,'release_id':'other-week'},event))
  @classmethod
  def setUpClass(cls):
   cls.release=json.loads((ROOT/'data/preview/release.json').read_text());cls.sym=json.loads((ROOT/'data/preview/symbiosis.json').read_text());cls.seed=json.loads((ROOT/'data/preview/editorial.json').read_text())
