@@ -66,8 +66,8 @@
   <div><a href="{{ local('about/index.html') }}">How we write</a><a href="{{ local('week-from-above/index.html') }}">Weekly AI overview</a><a href="{{ local('culture/index.html') }}">Art, words & music</a><a href="{{ local('notifications/index.html') }}">Choose your updates</a><a href="{{ local('feed.xml') }}">RSS feed</a><a href="{{ local('support/index.html') }}">Support & sponsorship</a></div>
   <div><a href="{{ local('privacy/index.html') }}">Privacy</a><button class="text-button" data-action="privacy">Privacy choices</button><a href="{{ local('account/index.html') }}">Your account</a>{% if config.support_url %}<a href="{{ config.support_url }}" target="_blank" rel="noopener noreferrer" data-support-link="footer">Support via PayPal ↗</a>{% endif %}</div>
 {% include 'social-links.html' %}
-{% if config.visitor_total is defined and config.visitor_total.count is number %}
-<div class="visitor-count">Total visitors: <strong>{{ "{:,}".format(config.visitor_total.count) }}</strong><small>{{ config.visitor_total.source }} · {{ config.visitor_total.period_label }}</small></div>
+{% if config.visitor_total is defined and config.visitor_total.count is number and config.visitor_total.count > 1000 %}
+<div class="visitor-count">Total visitors: <strong>{{ "{:,}".format(config.visitor_total.count) }}</strong></div>
 {% endif %}
 </footer>
 <dialog id="share-dialog" class="dialog"><button data-close class="close" aria-label="Close sharing">×</button><h2>Pass it on</h2><p data-share-heading></p><div class="share-options">
