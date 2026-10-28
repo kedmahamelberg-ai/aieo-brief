@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
-from english_publication import EnglishPublication,digest,POLICY,content_version,non_latin,slots,culture_slots
+from english_publication import EnglishPublication,digest,POLICY,NOTICE,content_version,non_latin,slots,culture_slots
 from culture_library import validate_record
 
 class EnglishPublicationTests(unittest.TestCase):
@@ -74,7 +74,7 @@ class EnglishPublicationTests(unittest.TestCase):
         self.assertEqual(out['excerpt'],'It was almost eleven when the reading ended.')
         self.assertEqual(out['sources'][0]['headline'],self.row['sources'][0]['headline'])
 
-    def test_published_culture_has_no_translation_placeholders(self):
+    def test_archived_culture_pending_translations_are_labelled(self):
         root=Path(__file__).resolve().parents[1]
         cache=self.temp.name+'/data/english/public-text.json'
         Path(cache).parent.mkdir(parents=True)
@@ -84,7 +84,21 @@ class EnglishPublicationTests(unittest.TestCase):
         culture=[item for item in archive if item.get('kind')=='culture']
         self.assertGreaterEqual(len(culture),200)
         public={item['key']:eng.apply(item) for item in culture}
-        self.assertFalse([key for key,item in public.items() if item['english_status']=='pending'])
+        for original in culture:
+            item=public[original['key']]
+            if item['english_status']!='pending':
+                continue
+            with self.subTest(key=item['key']):
+                self.assertEqual(item['brief_translation_note'],NOTICE)
+                self.assertEqual(item['sources'][0]['url'],original['sources'][0]['url'])
+                if item['culture_type'] in ('poetry','text','quote'):
+                    self.assertEqual(item['excerpt'],NOTICE)
+                if item['culture_type']=='poetry':
+                    self.assertEqual(item['excerpt'],'\n'.join(item['poem_lines']))
+                if item['culture_type']=='quote':
+                    self.assertEqual(item['quote_context'],NOTICE)
+                if item['culture_type']=='music':
+                    self.assertEqual(item['headline'],'A cultural work awaiting English translation')
         gauguin=public['culture:21b374cc5db78518fc910f06']
         self.assertEqual(gauguin['headline'],'In the Waves (Dans les Vagues)')
         self.assertEqual(gauguin['rights']['label'],'CC0 image')
