@@ -5,7 +5,7 @@ Both repositories use the same `config/ai-models.json` and `scripts/ai_runtime.p
 | New job starts | Provider / model |
 | --- | --- |
 | Before 10 December 2026, 00:00 UTC | OpenAI `gpt-5-nano` |
-| From 10 December 2026, 00:00 UTC | OpenAI `gpt-5.6-luna` |
+| From 10 December 2026, 00:00 UTC | OpenAI `gpt-6-luna` |
 
 The model is fixed at job startup. A job crossing midnight finishes with its original model; new jobs use the new one. The transition is implemented in code and does not require a December commit. A direct process override `AIEO_AI_MODEL` takes precedence, so do not pin it when running the automatic schedule.
 
@@ -27,4 +27,4 @@ For an explicit rollback, set the repository variable `AIEO_AI_PROVIDER=local`; 
 
 After deployment, compare a small sample of Nano outputs against the full sources: include benefit, harm, mixed and “no direction stated” records across the collection languages. Check quotation support, population scope and the final paragraph. Do not improve headline percentages by accepting unsupported classifications.
 
-Official documentation checked 8 September 2026: [GPT-5 nano](https://developers.openai.com/api/docs/models/gpt-5-nano), [GPT-5.6 Luna](https://developers.openai.com/api/docs/models/gpt-5.6-luna), [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs). Luna has a higher token price than Nano; the transition is not a cost reduction.
+Official documentation: [GPT-5 nano](https://developers.openai.com/api/docs/models/gpt-5-nano), [GPT-6 Luna](https://developers.openai.com/api/docs/models/gpt-6-luna), [Structured Outputs](https://developers.openai.com/api/docs/guides/structured-outputs). Luna has a higher token price than Nano; the transition is not a cost reduction compared with Nano.

@@ -32,8 +32,8 @@ class AIRuntime(unittest.TestCase):
     def test_cutover_at_exact_december_boundary_and_future_years(self):
         with patch.dict(os.environ, {}, clear=True):
             self.assertEqual(ai.resolve_policy(datetime(2026,12,9,23,59,59,tzinfo=timezone.utc))['model'],'gpt-5-nano')
-            self.assertEqual(ai.resolve_policy(datetime(2026,12,10,tzinfo=timezone.utc))['model'],'gpt-5.6-luna')
-            self.assertEqual(ai.resolve_policy(datetime(2027,1,1,tzinfo=timezone.utc))['model'],'gpt-5.6-luna')
+            self.assertEqual(ai.resolve_policy(datetime(2026,12,10,tzinfo=timezone.utc))['model'],'gpt-6-luna')
+            self.assertEqual(ai.resolve_policy(datetime(2027,1,1,tzinfo=timezone.utc))['model'],'gpt-6-luna')
 
     def test_large_paper_request_is_explicit_and_still_bounded(self):
         messages=[{'role':'user','content':'evidence '*28000}]
@@ -65,10 +65,10 @@ class AIRuntime(unittest.TestCase):
         self.assertAlmostEqual(json.loads(log)['calls'][0]['cost_usd'],.000025)
 
     def test_luna_payload_uses_luna_and_its_price(self):
-        with patch.dict(os.environ, {'AIEO_AI_MODEL':'gpt-5.6-luna'}), patch.object(ai.requests,'post',return_value=self.response()) as post:
+        with patch.dict(os.environ, {'AIEO_AI_MODEL':'gpt-6-luna'}), patch.object(ai.requests,'post',return_value=self.response()) as post:
             result=ai.completion(self.messages,self.schema)
-        self.assertEqual(post.call_args.kwargs['json']['model'],'gpt-5.6-luna')
-        self.assertAlmostEqual(result['aieo_ai']['cost_usd'],.000085)
+        self.assertEqual(post.call_args.kwargs['json']['model'],'gpt-6-luna')
+        self.assertAlmostEqual(result['aieo_ai']['cost_usd'],.0000375)
 
     def test_cost_cap_is_reserved_before_request(self):
         with patch.dict(os.environ, {'AIEO_AI_MAX_JOB_USD':'0.000001'}), patch.object(ai.requests,'post') as post:
