@@ -188,7 +188,7 @@ def validate_public_weekly_sources(overview, raw_news, raw_research, public_news
         raw = {row['key']: row for row in raw_rows}
         public = {row['key']: row for row in public_rows}
         for key, digest in section['source_hashes'].items():
-            if key not in raw or key not in public or fingerprint(evidence(raw[key])) != digest:
+            if key not in raw or key not in public or not source_matches(section, key, raw[key], digest):
                 raise ValueError('weekly_public_source_changed: ' + key)
             for field in FIELDS:
                 if field != 'path' and raw[key].get(field) != public[key].get(field):
@@ -276,8 +276,18 @@ def ready_valid(section, available):
     if section.get('editorial_version') != VERSION or section.get('status') != 'ready':
         return False
     hashes = section.get('source_hashes', {})
-    return bool(hashes) and all(key in available and fingerprint(evidence(available[key])) == value
+    return bool(hashes) and all(key in available and source_matches(section, key, available[key], value)
                                 for key, value in hashes.items())
+
+def source_matches(section, key, row, expected):
+    if fingerprint(evidence(row)) == expected:
+        return True
+    # Existing approvals included the original internal URL in their hash.
+    # Recreate that exact hash only using the path actually cited for this key;
+    # public-link validation separately requires it to remain a live alias.
+    paths = {part.get('path') for paragraph in section.get('prose', []) for part in paragraph
+             if part.get('source_key') == key and part.get('path')}
+    return any(fingerprint(evidence({**row, 'path': path})) == expected for path in paths)
 
 
 def human_approval(root, release_id):
