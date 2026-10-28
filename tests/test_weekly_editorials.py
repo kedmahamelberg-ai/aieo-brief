@@ -15,6 +15,18 @@ from check_observatory_update import needs_weekly_review
 
 
 class WeeklyEditorialTests(unittest.TestCase):
+    def test_approved_source_survives_url_rename_but_not_changed_content(self):
+        from weekly_editorials import ready_valid, validate_public_weekly_sources
+        result = self.generate()
+        renamed = copy.deepcopy(self.news)
+        for row in renamed:
+            row['legacy_paths'] = [row['path']]
+            row['path'] = 'story/renamed-' + row['key'] + '/index.html'
+        available = {row['key']: row for row in renamed}
+        self.assertTrue(ready_valid(result['markets'], available))
+        validate_public_weekly_sources(result, renamed, self.papers, renamed, self.papers)
+        renamed[0]['what_happened'] = 'Different source evidence.'
+        self.assertFalse(ready_valid(result['markets'], {row['key']: row for row in renamed}))
     def setUp(self):
         logger = patch('weekly_editorials.print', create=True)
         logger.start()
@@ -122,9 +134,8 @@ class WeeklyEditorialTests(unittest.TestCase):
                            enforce_style=True, questions_allowed=False)
 
     def test_old_checked_weekly_prose_remains_valid_after_style_change(self):
-        history = json.loads((Path(__file__).resolve().parents[1] /
-                              'data/weekly-overviews/history.json').read_text())['overviews']
-        old = next(item for item in history if item['release_id'] == '2026-W43')
+        old = json.loads((Path(__file__).resolve().parents[1] /
+                          'data/weekly-overviews/approved/2026-W43.json').read_text())
         self.assertTrue(old['markets']['summary'].startswith('What I notice'))
         validate_section(old['markets'])
 
