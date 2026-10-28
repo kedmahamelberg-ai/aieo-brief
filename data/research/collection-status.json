@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-21",
-  "period_end": "2026-10-27",
+  "period_start": "2026-10-22",
+  "period_end": "2026-10-28",
   "providers": [
     {
       "source": "arxiv",
@@ -21,37 +21,37 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:db7787c00fc710e1bd5a3ab4",
+      "key": "paper:1dbf169232bfe56a98161086",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:d8fe9c5d066ec4173ccf81c9",
+      "key": "paper:953663a4d7f238b04e9dd85b",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:459685a48916907713e0dd32",
+      "key": "paper:eef2f5c6eed261c5b6c3d76c",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:74e40ec16e8b21e3d89a9fb6",
+      "key": "paper:8456c4a8f0b84625a21d58bc",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:b7533ca4aa15ae1f9ba611ce",
+      "key": "paper:0c15309690f7fb8f402bc674",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:8205c1adb3dbd967a732b093",
+      "key": "paper:7989c70405ca03a21659f4d0",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
@@ -64,6 +64,12 @@
     },
     {
       "key": "paper:6e9ca4b2faaee021f6509905",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:bde74b0fced76d036272063a",
       "status": "cached",
       "source_verified": true,
       "institutions": 0
@@ -85,10 +91,64 @@
       "status": "cached",
       "source_verified": false,
       "institutions": 8
+    },
+    {
+      "key": "paper:f2dff715da7f13e829ff9f32",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:b71c83b23e17c06b500ce184",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:afd9c531da091aca39b7d1e3",
+      "status": "cached",
+      "source_verified": false,
+      "institutions": 3
+    },
+    {
+      "key": "paper:8778a5cfae74250c006dc1f6",
+      "status": "matched",
+      "source_verified": false,
+      "institutions": 8
+    },
+    {
+      "key": "paper:47c872344980686c78abcef2",
+      "status": "matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:5996c5241e61feebfc5835cb",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 8
+    },
+    {
+      "key": "paper:3ffa2d84b6e20da2db465da1",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:16a3db0cf187d500a6a42d8e",
+      "status": "cached",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:3dbb5af83842291f863af301",
+      "status": "cached",
+      "source_verified": false,
+      "institutions": 3
     }
   ],
   "recovery": {
-    "recovered": 4,
+    "recovered": 14,
     "unavailable": 0
   }
 }
