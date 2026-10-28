@@ -6162,6 +6162,82 @@
       },
       "output_sha256": "fd07c62de8cfde480d609a052e4deffea0921153ba6e233038cc76a8c676f4fe",
       "policy": "brief-english-display-v1"
+    },
+    "f55c3bc897f44ba52d15a4b2fad331c20642b5ad83f489933e5cb286070611de": {
+      "english": {
+        "0": "518. Ballad on Mr. Heron’s Election—No. 1",
+        "1": "A poem by Robert Burns.",
+        "2": "Who will you send to London town,\n  To Parliament and all that?\nOr who in all the country round\n  The best deserves to fall for that?\n    For all that, and all that,\n    Through Galloway and all that,\n  Where is the Laird or belted Knight\n    The best deserves to fall for that?\n\nWho sees Kerroughtree’s open gate,\n  (And who has never seen that?)\nWho ever with Kerroughtree met,\n  And has a doubt of all that?\n    For all that, and all that,\n    Here’s Heron yet for all that!\n  The independent patriot,\n    The honest man, and all that.\n\nThough wit and worth, in either sex,\n  Saint Mary’s Isle can show that,\nWith Dukes and Lords let Selkirk mix,\n  And well does Selkirk fall for that.\n    For all that, and all that,\n    Here’s Heron yet for all that!\n  The independent commoner\n    Shall be the man for all that.\n\nBut why should we to Nobles join,\n  And is it against the law, that?\nFor why, a Lord may be a fool,\n  With ribband, star and all that,\n    For all that, and all that,\n    Here’s Heron yet for all that!\n  A Lord may be a lousy lout,\n    With ribband, star and all that.\n\n\nA beardless boy comes over the hills,\n  With uncle’s purse and all that;\nBut we’ll have one from among ourselves,\n  A man we know, and all that.\n    For all that, and all that,\n    Here’s Heron yet for all that!\n  For we’re not to be bought and sold,\n    Like nags, and nowt, and all that.\n\n\nThen let us drink—The Stewartry,\n  Kerroughtree’s laird, and all that,\nOur representative to be,\n  For well he’s worthy of all that.\n    For all that, and all that,\n    Here’s Heron yet for all that!\nA House of Commons such as he,\n  They would be blessed who saw that."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bfdd190ed4fda3f38d714ef7d4927f82d984af26da76561aeb479a73e7930a67",
+      "policy": "brief-english-display-v1"
+    },
+    "9e08c97867f7e43ecaa3f19cddea1b8f0a299f2719d7506c8fb8568d60244dd1": {
+      "english": {
+        "0": "Reporting from Institut du Cerveau. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a07fb3f23c0b5db30483508a5b78389c7d224be188f22c98346099ea0c237183",
+      "policy": "brief-english-display-v1"
+    },
+    "624991bef27b7980a4ac4cec91e1865391f62c868ec92543341b9bbb3ec666c4": {
+      "english": {
+        "0": "Reporting from SANA. Open the source for the article.",
+        "1": "SANA",
+        "2": "SANA"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8f2009580631dd9349a6b991a8a8eb2755d89422b99da4032e18170d311ef17b",
+      "policy": "brief-english-display-v1"
+    },
+    "3e3ea16649fd8a9321a3083c6908d521e9bb2a682a4f2627a0fa24ee31399431": {
+      "english": {
+        "0": "deck\nReporting from Confédération CFTC. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0e1c8c70a86f207338a922f95fd6c109bbbee0935ac7225454be03d8db512b76",
+      "policy": "brief-english-display-v1"
     }
   }
 }

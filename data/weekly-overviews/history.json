@@ -11,129 +11,92 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "A Gentle Overview of AI and News This Week",
-        "deck": "What I notice is that MediSyn, a generalist AI model, can produce realistic medical images across six specialties and ten modalities, yet concerns about privacy and attribution shadow the progress.",
-        "summary": "What I notice is that MediSyn, a generalist AI model, can produce realistic medical images across six specialties and ten modalities, yet concerns about privacy and attribution shadow the progress. What matters is that AI aided publishing can accelerate workflows from planning to editing, but quality hinges on careful human review, balance between novelty and respect for readers, and the realities of market reception. The BBC and corporate reports on military AI deals illustrate governance challenges, employee pressures, and the need for guardrails that slow harm while allowing responsible experimentation. The discourse on intelligence insists we distinguish appearance from understanding, and asks how much authority to grant to machine outputs while preserving human judgment. The OpenAI breakthroughs raise questions about verification, reproducibility, and who benefits when machine-led proofs and summaries scale across mathematics, inviting thoughtful consideration of future collaboration.",
-        "scope_note": "Five selected stories from five discovery markets.",
-        "word_count": 155,
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
         "reading_minutes": 1,
-        "image_path": "assets/culture/91b3a22c299c6a7568bd76c8.jpg",
-        "image_alt": "The Patio",
-        "image_caption": "The Patio",
-        "image_credit": "John Singer Sargent (American, born Italy, 1856–1925) · Cleveland Museum of Art",
-        "image_source_url": "https://clevelandart.org/art/1946.293",
-        "image_rights": "CC0 image",
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
         "entries": [
-          {
-            "code": "US",
-            "name": "United States",
-            "topic": "AI & technology",
-            "story": {
-              "path": "story/development-02a2714e-e16b-4978-80ea-041ed60f222a/index.html",
-              "headline": "Stanford Researchers Unveil MediSyn, a Generalist AI for Medical Images, Demonstrating Access Gains and Privacy Limits",
-              "publisher": "Stanford Medicine"
-            }
-          },
-          {
-            "code": "CA",
-            "name": "Canada",
-            "topic": "Work & skills",
-            "story": {
-              "path": "story/development-01cbb5f3-b090-4595-af69-222090405225/index.html",
-              "headline": "South African author Coral Hart defends 371 AI-assisted books, highlighting mixed outcomes",
-              "publisher": "Radio-Canada"
-            }
-          },
           {
             "code": "CN",
             "name": "China",
-            "topic": "Rules & rights",
+            "count": 19,
+            "topic": "Business And Investment",
+            "sentence": "China: business and investment stood out in the selected coverage; one example was “China AI governance: CIIS outlines concepts and practices with noted limits.”",
             "story": {
-              "path": "story/development-0fbf931c-f9d3-4f89-ae12-9092642fcb97/index.html",
-              "headline": "Google's military AI contracts trigger resignations and fears, BBC reports with limits",
-              "publisher": "BBC"
+              "headline": "China AI governance: CIIS outlines concepts and practices with noted limits",
+              "path": "story/china-ai-governance-casi-outlines-concepts-practices-limits/index.html",
+              "publisher": "China Institute of International Studies",
+              "source_url": "https://www.ciis.org.cn/yjcg/zzybg/202610/t20261023_10736.html"
             }
           },
           {
-            "code": "FR",
-            "name": "France",
-            "topic": "Culture & creativity",
+            "code": "US",
+            "name": "United States",
+            "count": 17,
+            "topic": "Work And Skills",
+            "sentence": "United States: work and skills stood out in the selected coverage; one example was “DHS Retains AI Surveillance Ban but Adds Broad Waiver Power.”",
             "story": {
-              "path": "story/development-0581e72c-e932-4106-be9d-82963c3e1e32/index.html",
-              "headline": "Generative AI: Ioan Roxin says machines push humans to rethink intelligence",
-              "publisher": "450.fm"
+              "headline": "DHS Retains AI Surveillance Ban but Adds Broad Waiver Power",
+              "path": "story/dhs-updates-ai-policy-tightens-rules-critics-warn/index.html",
+              "publisher": "FedScoop",
+              "source_url": "https://fedscoop.com/dhs-ai-policy-updates"
             }
           },
           {
             "code": "GB",
             "name": "United Kingdom",
-            "topic": "Culture & creativity",
+            "count": 11,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: rules and rights stood out in the selected coverage; one example was “The EU AI Act and UK AI regulation: A product law….”",
             "story": {
-              "path": "story/development-26854938-c93b-4f16-849a-e35a688ed599/index.html",
-              "headline": "Is the Best Mathematician in the World an AI Model? OpenAI’s 2026 Breakthroughs",
-              "publisher": "Monthly Review"
+              "headline": "The EU AI Act and UK AI regulation: A product law perspective",
+              "path": "story/eu-ai-act-sets-lifecycle-governance-varies-framework/index.html",
+              "publisher": "Hogan Lovells Cadwalader",
+              "source_url": "https://www.hlc.com/en/publications/the-eu-ai-act-and-uk-ai-regulation-a-product-law-perspective"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 14,
+            "topic": "Work And Skills",
+            "sentence": "France: work and skills stood out in the selected coverage; one example was “France tests a generative AI for control.”",
+            "story": {
+              "headline": "France tests a generative AI for control",
+              "path": "story/france-tests-generative-ai-monitor-over-about-control/index.html",
+              "publisher": "La Quadrature du Net",
+              "source_url": "https://www.laquadrature.net/2026/10/23/france-travail-experimente-une-ia-generative-de-controle"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 25,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: selected reporting leaned toward rules and rights, with “Ask the Rev: Am I Being Alarmist About Artificial Intelligence?” as one visible signal.",
+            "story": {
+              "headline": "Ask the Rev: Am I Being Alarmist About Artificial Intelligence?",
+              "path": "story/ask-rev-ai-alarmism-warranted-candid-real-limits/index.html",
+              "publisher": "Seven Days Vermont",
+              "source_url": "https://www.sevendaysvt.com/arts-culture/asktherev/ask-the-rev-am-i-being-alarmist-about-artificial-intelligence"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "ready",
-        "author": "Kedma Hamelberg",
-        "prose": [
-          [
-            {
-              "text": "What I notice is that MediSyn, a generalist AI model, can produce realistic medical images across six specialties and ten modalities, yet concerns about privacy and attribution shadow the progress.",
-              "source_key": "event:02a2714e-e16b-4978-80ea-041ed60f222a",
-              "path": "story/development-02a2714e-e16b-4978-80ea-041ed60f222a/index.html"
-            }
-          ],
-          [
-            {
-              "text": "What matters is that AI aided publishing can accelerate workflows from planning to editing, but quality hinges on careful human review, balance between novelty and respect for readers, and the realities of market reception.",
-              "source_key": "event:01cbb5f3-b090-4595-af69-222090405225",
-              "path": "story/development-01cbb5f3-b090-4595-af69-222090405225/index.html"
-            }
-          ],
-          [
-            {
-              "text": "The BBC and corporate reports on military AI deals illustrate governance challenges, employee pressures, and the need for guardrails that slow harm while allowing responsible experimentation.",
-              "source_key": "event:0fbf931c-f9d3-4f89-ae12-9092642fcb97",
-              "path": "story/development-0fbf931c-f9d3-4f89-ae12-9092642fcb97/index.html"
-            }
-          ],
-          [
-            {
-              "text": "The discourse on intelligence insists we distinguish appearance from understanding, and asks how much authority to grant to machine outputs while preserving human judgment.",
-              "source_key": "event:0581e72c-e932-4106-be9d-82963c3e1e32",
-              "path": "story/development-0581e72c-e932-4106-be9d-82963c3e1e32/index.html"
-            },
-            {
-              "text": "The OpenAI breakthroughs raise questions about verification, reproducibility, and who benefits when machine-led proofs and summaries scale across mathematics, inviting thoughtful consideration of future collaboration.",
-              "source_key": "event:26854938-c93b-4f16-849a-e35a688ed599",
-              "path": "story/development-26854938-c93b-4f16-849a-e35a688ed599/index.html"
-            }
-          ]
-        ],
-        "source_hashes": {
-          "event:02a2714e-e16b-4978-80ea-041ed60f222a": "799b12ade5d6a58d4f5a05d3508776fec54e9a818dce71dfd5f1e893c82fac8c",
-          "event:01cbb5f3-b090-4595-af69-222090405225": "07a54fc8ff358b2887ee296f62e4159bd1001f9c01816670906dcd365d74fc49",
-          "event:0fbf931c-f9d3-4f89-ae12-9092642fcb97": "63fec0245589bd07fc930bf709468a31e2c71a3cb6c6cc0e624785f5104a0ccf",
-          "event:0581e72c-e932-4106-be9d-82963c3e1e32": "1e69e30f853f5f083470ced6bb647d7ee12e4362a50163cfce1bc1afcb916a0c",
-          "event:26854938-c93b-4f16-849a-e35a688ed599": "5eeefb9fac0eda5e3b22b07246e13ee83e4e1fb19b379ac6cdf119b791c4dbb2"
-        },
-        "image_key": "culture:91b3a22c299c6a7568bd76c8",
-        "image_work_key": "0dbe74c69fe4814a00ecc8364e0f79a054fa4e690ff4588097f325289c353de8",
-        "image_reason": "The Patio invites quiet reflection, a calm scene that mirrors the need for patient judgment in complex AI developments.",
-        "review_checks": {
-          "grounded": true,
-          "clear_high_school_language": true,
-          "coherent_prose": true,
-          "meaningful_connection": true,
-          "source_limits_preserved": true,
-          "no_invented_personal_experience": true,
-          "image_metaphor_supported": true
-        },
-        "human_approved": true
+        "status": "pending",
+        "author": "",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "approved_sources_changed"
       },
       "research": {
         "kind": "research",
@@ -354,8 +317,8 @@
         "human_approved": true
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "ready",
-      "content_sha256": "7d07f2e0a7f59d82272542e86cfe06d8bfabce62f07e7edc6024a245d738c632"
+      "editorial_status": "pending",
+      "content_sha256": "d89e2e7f52de9e98081ce9a902ae63a6b48efe0b7cc4804fd41755a3c7b6b940"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
