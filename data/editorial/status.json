@@ -1,65 +1,318 @@
 {
   "release_id": "2026-W43",
-  "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography",
+  "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
   "counts": {
-    "unchanged": 0,
+    "unchanged": 34,
     "source_not_ready": 0,
-    "new_registry": 74,
-    "needs_model": 75,
+    "new_registry": 6,
+    "needs_model": 42,
     "needs_rebind": 0,
-    "selected": 75,
-    "generated": 69,
+    "selected": 42,
+    "generated": 0,
     "rebound": 0,
-    "failed": 6,
+    "failed": 42,
     "deferred": 0
   },
   "failure_counts": {
-    "unsupported_number": 5,
-    "source_wording_copied": 1
+    "unexpected_error": 38,
+    "source_wording_copied": 2,
+    "unsupported_number": 2
   },
   "failed_items": [
     {
-      "event_id": "b7cc7093-b0e0-4f9b-9d7a-1469436f671f",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography"
+      "event_id": "c4d79c25-b4c5-43a1-960d-7f77512d7ca3",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "df8764fa-1bf3-4d52-b39d-734a15039cb4",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "2f62dc92-f680-4fda-a56e-9a1aaa6af984",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "26854938-c93b-4f16-849a-e35a688ed599",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "1a8df9d4-f94e-497b-98cc-a45e7166b8d5",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "02a2714e-e16b-4978-80ea-041ed60f222a",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "f60869df-0f79-4513-98a5-4cf7e7b186c3",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "f21f647c-2632-4c6a-b89e-c73c13316adc",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "bbdb560f-9439-4cd2-9d20-e5a6eceea400",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "9acccdea-8c6a-473f-9dea-1c39a8a185a5",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "6de2f8a5-cad0-4d5f-ae30-bc9e30fc00f1",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "4a81f774-36ea-4413-8ecf-3452a764c11a",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "0581e72c-e932-4106-be9d-82963c3e1e32",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "01cbb5f3-b090-4595-af69-222090405225",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "f9aafb34-5a47-45a1-9ced-1ae235fc4468",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "ea2a546b-e202-4443-9fe8-5b866bf489f1",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "deaf3165-fc11-4d8f-a2d7-b36b8b44dae0",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "event_id": "de6ac8b1-1c34-4ae6-87f9-04e3f573e042",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography"
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "dabbc6bd-5a3f-4d5d-8f57-0036aa090b1c",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "62ada00b-160b-4913-9f1b-518f2abdff04",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "event_id": "5f20bc85-fcca-4543-93ab-cd0ae0059408",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "4a06ac0f-359f-4b58-aed8-729132287812",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography"
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "279877d4-3dca-41a5-b561-a5bd3097c589",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "168ce96c-3c6f-43bd-8209-8ac5ee8fcd31",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "0fbf931c-f9d3-4f89-ae12-9092642fcb97",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "05fb32cf-5dbe-485a-ac35-7e00714ec5e0",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "event_id": "e2e89dc5-075a-40f1-821b-aa3232662606",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography"
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "5ab58d42-fa0d-4340-81e2-ad959baef0f5",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "376def3e-4086-4e4c-8af0-41947016f806",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "event_id": "250a45cd-9a5c-4405-ae4b-66625c0c1ff6",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography"
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "f7b45aee-a7be-453c-80ca-0db6c4333b70",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "92f03a2f-62f5-4e04-87d9-7abe1b888061",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "6c944bd0-c976-477e-bf3d-0c2fe54716ce",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "34bea6da-58bc-475e-8c6c-d50e91b3524b",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "349f607c-0fce-4c77-b2b7-b61215716311",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "298e43df-e097-4fa6-a949-2750f2ad7e17",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "0ab346fd-e7eb-49c6-9193-7ce6f5e05f64",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "event_id": "ce676615-712f-46c1-97be-74ff29ea8bc2",
       "error_type": "EditorialError",
       "stage": "draft_validation",
       "code": "unsupported_number",
-      "engine_version": "aieo-editorial-runtime-v8-source-numeric-typography"
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "a554d1da-fc34-4065-8313-5168548b3631",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "85854934-6ae7-4b89-aa5e-7297a633d19e",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "65a2e321-d947-4e80-9002-baec1946f70d",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "374d8141-9d2f-4ff9-ad6f-abeeafc46c9d",
+      "error_type": "AIError",
+      "stage": "generation",
+      "code": "unexpected_error",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     }
   ],
-  "updated_at": "2026-10-26T12:24:15.287502+00:00"
+  "updated_at": "2026-10-28T21:31:13.551285+00:00"
 }
