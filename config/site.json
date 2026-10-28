@@ -32,5 +32,17 @@
   "revenue": {
     "contact_url": "mailto:research@hamelberg-ai.com",
     "offers": []
+  },
+  "visitor_total": {
+    "count": 287,
+    "source": "Google Analytics",
+    "metric": "totalUsers",
+    "property_id": "549530905",
+    "hostname": "brief.hamelberg-ai.com",
+    "period_start": "2026-09-01",
+    "period_end": "2026-10-28",
+    "period_label": "1 Sep–28 Oct 2026",
+    "updated_at": "2026-10-28",
+    "refresh": "manual_snapshot"
   }
 }
