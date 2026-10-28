@@ -25,7 +25,7 @@ VERSION = "aieo-openai-json-v1"
 ENDPOINT = "https://api.openai.com/v1/chat/completions"
 # USD / million tokens, verified 2026-09-08. Cached input is charged at the
 # uncached rate here; Luna includes its documented possible cache-write premium.
-RATES = {"gpt-5-nano": (0.05, 0.40), "gpt-5.6-luna": (0.25, 1.20)}
+RATES = {"gpt-5-nano": (0.05, 0.40), "gpt-6-luna": (0.125, 0.50)}
 
 
 class AIError(RuntimeError):
