@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 from xml.sax.saxutils import escape as xml_escape
 import requests
 from jinja2 import Environment, FileSystemLoader, select_autoescape
-from brief_contract import validate_complete_export, validate_pair, load_config, safe_url, digest, relationship_fingerprint, MARKETS, PROMPT_VERSION
+from brief_contract import validate_complete_export, validate_pair, load_config, safe_url, digest, editorial_source_fingerprint, relationship_fingerprint, MARKETS, PROMPT_VERSION
 from brief_database import dbmaps
 from news_notifications import public_settings
 from daily_selection import rotation_plan, reading_day
@@ -61,12 +61,18 @@ def detect_topic(event):
     for key,terms in [('policy','regulat|polic|law|copyright|govern|rights'),('work','work|job|skill|employ|educat|student|teach|legal'),('creativity','music|creativ|art |film|fiction|culture'),('research','scient|research|study|discovery'),('business','business|invest|profit|stocks|fund|market|valuation|bank')]:
         if re.search(terms,value):return key
     return 'technology' if re.search('model|chip|robot|compute|agent',value) else 'everyday'
-def version_valid(version, row, release):
+def version_valid(version, row, release, event=None, legacy_proofs=None):
     if not version or version.get('publication_status') not in ('published','preview'):return False
     basis=version.get('evidence_basis_summary') or {}
-    return basis.get('prompt_version')==PROMPT_VERSION and basis.get('source_release_sha256')==release.get('content_sha256') and basis.get('axes_sha256')==digest(row.get('axes',{}))
+    if basis.get('prompt_version')!=PROMPT_VERSION or basis.get('axes_sha256')!=digest(row.get('axes',{})):return False
+    if basis.get('source_release_sha256')==release.get('content_sha256'):return True
+    if not event or basis.get('release_id')!=release.get('release_id'):return False
+    proof=basis.get('editorial_source_fingerprint')
+    if not proof:
+        proof=(legacy_proofs or {}).get(basis.get('source_release_sha256'),{}).get(str(row.get('event_id')))
+    return bool(proof and proof==editorial_source_fingerprint(event,row))
 
-def cards(release,sym,registry,readiness,editorial,preview=False):
+def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=None):
     axesmap={r['event_id']:r for r in sym['evidence']}
     marketmap=collections.defaultdict(set)
     for article in (release.get('units') or {}).get('coverage_articles',[]):
@@ -77,7 +83,7 @@ def cards(release,sym,registry,readiness,editorial,preview=False):
     for event in release['evidence']:
         eid=str(event.get('effective_event_id') or event['event_id']);row=axesmap[eid];axes=row['axes']
         reg=registry.get(eid) or {};ready=readiness.get(eid) or {};v=editorial.get(eid)
-        if not version_valid(v,row,release):v=None
+        if not version_valid(v,row,release,event,legacy_proofs):v=None
         for key in ('human','ai'):
             if axes[key]['direction'] not in DIRECTION_LABELS:raise ValueError('Invalid direction')
         sources=[]
@@ -218,7 +224,9 @@ def main():
             for eid,version in json.loads(seedfile.read_text()).items():
                 row=axes_by_id.get(eid)
                 if row and version_valid(version,row,release) and not version_valid(editorial.get(eid),row,release):editorial[eid]=version
-    news=cards(release,sym,registry,readiness,editorial,preview);research=papers();culture=culture_items()
+    proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
+    legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
+    news=cards(release,sym,registry,readiness,editorial,preview,legacy_proofs);research=papers();culture=culture_items()
     apply_corrections(news,ROOT);apply_corrections(research,ROOT)
     weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(research)
     archivepath=ROOT/'data/archive/stories.json'

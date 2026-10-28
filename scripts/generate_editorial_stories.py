@@ -11,7 +11,7 @@ from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
 from supabase import create_client
-from brief_contract import PROMPT_VERSION,digest,fixed_relationship,validate_pair
+from brief_contract import PROMPT_VERSION,digest,editorial_source_fingerprint,fixed_relationship,validate_pair
 from brief_database import current_maps
 from build_site import inputs
 from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION
@@ -66,7 +66,7 @@ def candidates(release,sym,maps,force=False):
             counts['unchanged']+=1;continue
         key='needs_rebind' if reusable else 'needs_model';counts[key]+=1
         if not story:counts['new_registry']+=1
-        selected.append({'event':event,'eid':eid,'relation':relation,'sources':sources,'fp':fp,'latest':latest,'story':story,'reuse':reusable})
+        selected.append({'event':event,'eid':eid,'relation':relation,'source_relationship':axis[eid],'sources':sources,'fp':fp,'latest':latest,'story':story,'reuse':reusable})
     # A failed item from an earlier attempt does not starve the rest of the week.
     q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
     selected.sort(key=lambda x:(state.get(x['fp'],{}).get('attempts',0),not x['reuse']))
@@ -91,7 +91,7 @@ def persist(client,item,release,draft,proof):
         rows=client.table('brief_stories').insert(story).execute().data or []
         if not rows:raise RuntimeError('Story registry did not return the saved row.')
         story=rows[0]
-    basis={'prompt_version':PROMPT_VERSION,'source_release_sha256':release['content_sha256'],'release_id':release['release_id'],'axes_sha256':digest(relation['axes']),'axes':relation['axes'],'input_fingerprint':item['fp'],'full_source_count':len(item['sources']),'model':MODEL,'claim_status':draft.get('claim_status','reporting'),'limitation':draft.get('limitation',''),'validation':'source_support_and_original_wording'}
+    basis={'prompt_version':PROMPT_VERSION,'source_release_sha256':release['content_sha256'],'release_id':release['release_id'],'axes_sha256':digest(relation['axes']),'axes':relation['axes'],'input_fingerprint':item['fp'],'editorial_source_fingerprint':editorial_source_fingerprint(item['event'],item['source_relationship']),'full_source_count':len(item['sources']),'model':MODEL,'claim_status':draft.get('claim_status','reporting'),'limitation':draft.get('limitation',''),'validation':'source_support_and_original_wording'}
     if not item['reuse']:basis['grounding_version']=claim_grounding.VERSION
     if item['reuse']:
         basis['claim_status']=latest['evidence_basis_summary'].get('claim_status','reporting');basis['limitation']=latest['evidence_basis_summary'].get('limitation','')
