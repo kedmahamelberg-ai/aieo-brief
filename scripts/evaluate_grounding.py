@@ -20,7 +20,7 @@ CASES = [
   'The event is scheduled for 28 October.'),
  ('subgroup', 'One-third of the surveyed young adults used chatbots for drug information. Half of that subgroup used them monthly.',
   'Half of all surveyed young adults used chatbots monthly.',
-  'Half of the subgroup using chatbots for drug information reported monthly use.'),
+  'Half of the subgroup using chatbots for drug information used them monthly.'),
  ('invented_warning', 'The glossary defines AI and lists medical imaging and diagnosis as examples. It reports no interviews or expert statements.',
   'Experts interviewed for the glossary warned that AI erodes human oversight.',
   'The glossary lists medical imaging and diagnosis as AI applications.'),
@@ -65,9 +65,9 @@ def evaluate(review=review_scope):
            'why_it_matters':'The assistant group handled tickets faster, while the measured rate of mistakes stayed the same.',
            'for_humans':'Staff using the assistant finished support tickets faster on average.',
            'for_ai':'The provider received feedback from employees during the trial.',
-           'limitation':'The study involved one employer and did not examine longer-term effects.',
+           'limitation':'The study involved one employer and did not measure effects beyond four weeks.',
            'body_paragraphs':['The assistant group finished tickets 20 percent faster on average. Supervisors reviewed the replies.',
-                              'The researchers did not measure changes in jobs, wages, or customer satisfaction.'],
+                              'The researchers did not measure job losses, pay changes, or customer satisfaction.'],
            'claim_status':'study'}
     for label,should_pass in [('correct',True),('wrong_body',False)]:
         candidate=copy.deepcopy(draft)
