@@ -26,6 +26,49 @@ def normalized(text):
     return re.sub(r'\s+', ' ', text).strip()
 
 
+def source_catalog(sources):
+    """Number all original source text, without selecting or summarizing it."""
+    catalog=[]
+    for source in sources:
+        text=source['evidence']; position=0
+        while position<len(text):
+            end=min(len(text),position+600)
+            if end<len(text):
+                boundary=text.rfind(' ',position+300,end)
+                if boundary>position:end=boundary
+            catalog.append({'quote_id':len(catalog),'source_number':source['source_number'],
+                            'quote':text[position:end]})
+            position=end
+    return catalog
+
+
+def catalog_schema(schema,draft,catalog):
+    result=extend_schema(schema,draft)
+    valid=[row['quote_id'] for row in catalog if len(normalized(row['quote']))>=12]
+    if not valid:raise ValueError('Original sources have no citable passages.')
+    citation=result['properties']['field_reviews']['items']['properties']['citations']['items']
+    citation['properties']={'quote_id':{'type':'integer','enum':valid}}
+    citation['required']=['quote_id']
+    return result
+
+
+def resolve_citations(result,catalog):
+    import copy
+    result=copy.deepcopy(result)
+    for row in result.get('field_reviews',[]):
+        for citation in row.get('citations',[]):
+            if 'quote_id' not in citation:continue  # Legacy exact quotes still face validate().
+            index=citation['quote_id']
+            if type(index) is not int or not 0<=index<len(catalog):
+                raise ValueError('Grounding citation references an unknown passage.')
+            passage=catalog[index]
+            if not 12<=len(normalized(passage['quote']))<=600:
+                raise ValueError('Grounding citation references an unusable passage.')
+            citation.clear()
+            citation.update(source_number=passage['source_number'],quote=passage['quote'])
+    return result
+
+
 def extend_schema(schema, draft):
     import copy
     result = copy.deepcopy(schema)
@@ -49,7 +92,7 @@ def extend_schema(schema, draft):
 
 
 INSTRUCTIONS = '''\nADVERSARIAL GROUNDING REVIEW:
-Review EVERY factual clause of EVERY listed field, including every sentence in each body paragraph, all caveats, implications and examples. Do not rely on the writer's support quotes. Select exact quotes from ORIGINAL SOURCES yourself. A quote merely on the same topic is not support. A field is supported only if ALL its claims are entailed by the cited source context; a plausible inference is not enough. Use uncertain whenever the evidence cannot settle a claim. Reject unsupported negative claims as well as positive claims. Empty optional fields are allowed.
+Review EVERY factual clause of EVERY listed field, including every sentence in each body paragraph, all caveats, implications and examples. Do not rely on the writer's support quotes. Select passages from ORIGINAL SOURCES yourself. A quote merely on the same topic is not support. A field is supported only if ALL its claims are entailed by the cited source context; a plausible inference is not enough. Use uncertain whenever the evidence cannot settle a claim. Reject unsupported negative claims as well as positive claims. Empty optional fields are allowed.
 Set each boolean check to true when the draft satisfies that rule, including when that dimension is not mentioned. Review factual content only in non-empty public fields. Empty fields are not unsupported claims and must not cause a failed check. Completeness and required-field checks happen separately before this review. A concise summary may omit unrelated details; reject an omission only when it changes the meaning of a claim that the draft actually makes. Do not require every source date or every comparison in each field. Preserve qualifiers needed for the stated claim.
 source_is_substantive: original text contains the relevant article or research, not only navigation, a video caption, login text or a newsletter teaser. Abstracts are allowed only with the matching scope.
 entities_and_roles_preserved: keep exact organization, campus, person, title, model versus family, trained classifier versus rules, and singular/plural distinctions in the claims actually made. Omitting a separate source action or detail is not an entity or role change; reject only when an asserted claim changes who did what or which entity is involved.
@@ -57,7 +100,7 @@ dates_and_event_status_preserved: preserve scheduled versus completed events and
 comparators_and_metrics_preserved: check each number WITH its denominator, subgroup, metric, baseline, direction and qualifier. Training error is not generalization error. Same trajectory is not equal speed. A worse score than one competitor is not a failure to improve over the base model.
 provenance_preserved: published or obtained does not mean leaked, stolen, confidential or unauthorized. Preserve who made each claim.
 limitations_and_examples_supported: do not invent critics, warnings, cautions, mixed results, targets, independent confirmation, lab data, hypothetical studies, or practical applications. Do not turn real observations into hypothetical examples. A missing detail may be described only as absent from the supplied material, not absent from the underlying research. A scope statement can cite supplied evidence metadata; a substantive claim cannot be supported by metadata alone.
-Return one field_reviews entry for EACH field ID. Each entry must cover ALL clauses, give a verdict, and cite exact original-language passages with source_number. Supported entries require citations. False/uncertain, omitted or duplicate fields prevent publication. Never repair text inside the review.\n'''
+Return one field_reviews entry for EACH field ID. Each entry must cover ALL clauses, give a verdict, and cite original-language passages using the identifiers required by the schema. Supported entries require citations. False/uncertain, omitted or duplicate fields prevent publication. Never repair text inside the review.\n'''
 
 
 def validate(result, draft, sources):

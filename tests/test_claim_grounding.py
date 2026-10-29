@@ -46,6 +46,33 @@ class GroundingGate(unittest.TestCase):
             with self.subTest(citation=citation), self.assertRaises(ValueError):
                 grounding.validate(review, draft, sources)
 
+    def test_catalog_preserves_every_character_and_resolves_exact_source_identity(self):
+        text=('Original Français 中文 evidence with a denominator.\n'*70)+'Final limitation.'
+        sources=[{'source_number':7,'evidence':text}]
+        catalog=grounding.source_catalog(sources)
+        self.assertEqual(''.join(row['quote'] for row in catalog),text)
+        self.assertTrue(all(len(row['quote'])<=600 for row in catalog))
+        index=len(catalog)-1
+        result={'field_reviews':[{'citations':[{'quote_id':index}]}]}
+        resolved=grounding.resolve_citations(result,catalog)['field_reviews'][0]['citations'][0]
+        self.assertEqual(resolved,{'source_number':7,'quote':catalog[index]['quote']})
+        self.assertIn('Final limitation.',resolved['quote'])
+        self.assertIn('quote_id',result['field_reviews'][0]['citations'][0])
+        for bad in (-1,len(catalog),True,'0'):
+            with self.assertRaises(ValueError):grounding.resolve_citations({'field_reviews':[{'citations':[{'quote_id':bad}]}]},catalog)
+
+    def test_catalog_review_still_requires_support_for_every_field(self):
+        draft,sources=fixture();catalog=grounding.source_catalog(sources)
+        review=accepted_review()
+        for row in review['field_reviews']:row['citations']=[{'quote_id':0}]
+        with patch.object(engine,'call_json',return_value=review) as model:
+            proof=engine.review_scope(draft,sources)
+        citation_schema=model.call_args.args[1]['properties']['field_reviews']['items']['properties']['citations']['items']
+        self.assertEqual(citation_schema['required'],['quote_id'])
+        self.assertEqual(proof['grounding']['field_reviews'][0]['citations'][0]['quote'],sources[0]['evidence'])
+        review['field_reviews'][0]['verdict']='unsupported'
+        with patch.object(engine,'call_json',return_value=review),self.assertRaises(engine.EditorialError):engine.review_scope(draft,sources)
+
     def test_duplicate_fields_cannot_hide_unreviewed_paragraph(self):
         draft, sources = fixture(); review = accepted_review()
         review['field_reviews'][-1] = copy.deepcopy(review['field_reviews'][0])
