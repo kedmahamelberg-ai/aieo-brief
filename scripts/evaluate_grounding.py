@@ -59,7 +59,7 @@ def evaluate(review=review_scope):
               'Supervisors checked the replies, and the measured error rate did not change. The provider received staff feedback during the trial. '
               'The researchers report that the trial covered one employer and did not measure effects after four weeks. '
               'They did not measure job losses, pay changes, or customer satisfaction.')
-    draft={'editorial_headline':'One company trial finds faster support replies with an AI assistant',
+    draft={'editorial_headline':'Company trial finds workers finish support tickets faster with AI',
            'editorial_deck':'Researchers compared two groups of support employees over four weeks.',
            'what_happened':'The study assigned 80 workers at one employer to two groups. Half used an AI writing assistant and half did not.',
            'why_it_matters':'The assistant group handled tickets faster, while the measured rate of mistakes stayed the same.',
@@ -78,6 +78,7 @@ def evaluate(review=review_scope):
         except EditorialError as error:
             if error.code not in {'source_scope_review_failed','claim_grounding_failed'}:raise
             passed=False
+            print('full_draft:'+label+' '+error.code+': '+error.feedback,flush=True)
         if passed!=should_pass:failed.append('full_draft:'+label)
         print('full_draft:'+label+(' PASS' if passed==should_pass else ' FAIL'),flush=True)
     if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))
