@@ -29,7 +29,7 @@ CASES = [
   'Observed regeneration-cycle lengths enter the bound on generalization error.'),
  ('speed', 'With uncorrelated input positions, both networks follow the same trajectory, but the convolutional network learns P times faster.',
   'The networks learn at the same speed with uncorrelated input samples.',
-  'The convolutional network learns P times faster with uncorrelated input positions.'),
+  'With uncorrelated input positions, the networks follow the same trajectory, while the convolutional network learns P times faster.'),
  ('comparator', 'The method improves over the base model on all four holdout tasks. A competing method scores higher on one task.',
   'The method fails to improve over the base model on some holdout tasks.',
   'The method improves over the base model on all four holdout tasks, but does not beat every competitor.')]

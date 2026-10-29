@@ -334,7 +334,7 @@ def review_scope(draft,compiled,deadline=None,paper=False):
         result=claim_grounding.resolve_citations(result,catalog)
         grounding=claim_grounding.validate(result,draft,compiled)
     except ValueError as error:
-        raise EditorialError('claim_grounding_failed','Public-field grounding did not pass.',stage='scope_review',feedback=str(error)) from error
+        raise EditorialError('claim_grounding_failed','Public-field grounding did not pass.',stage='scope_review',feedback=(str(error)+'; '+str(result.get('reason','')))[:600]) from error
     return {**{k:result[k] for k in REVIEW_CHECKS},'grounding':grounding}
 
 @validation_errors('draft')
