@@ -6238,6 +6238,24 @@
       },
       "output_sha256": "0e1c8c70a86f207338a922f95fd6c109bbbee0935ac7225454be03d8db512b76",
       "policy": "brief-english-display-v1"
+    },
+    "ba8b759ea451f8075de8fc60392bb9bbc18905138e438b36ad608677a4160d70": {
+      "english": {
+        "0": "The BFM report centers on a clear hiring gap for young graduates in the most exposed jobs, contrasted with smaller declines in less exposed areas. It notes a sizable drop in CDI hires for 21-29-year-olds between late 2022 and March 2026, and highlights a particularly steep decrease among computer developers.\nThese figures come from observed hiring data for defined timeframes and occupations, not a universal statement about all workers. The pattern points to mixed gains and losses linked to AI readiness in exposed roles rather than a broad economy-wide shift."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "49c04ba7f381a02864bb1b8c846f86c050093e247925da50fbf64213bfd294f8",
+      "policy": "brief-english-display-v1"
     }
   }
 }
