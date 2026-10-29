@@ -378,6 +378,32 @@ class GenerationCheckpoints(unittest.TestCase):
             self.assertEqual(caught.exception.code, 1)
             self.assertTrue((root / 'data/research/generation-status.json').exists())
 
+    def test_repeated_model_exhaustion_stops_after_three_and_saves_remaining_queue(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root, output = self.context(stack, folder)
+            self.research_context(stack, root, 8)
+            error=research.ai_runtime.AIError('No public answer',code='model_output_limit',reasoning_tokens=32768)
+            error.stage='scope_review'
+            writer=stack.enter_context(patch.object(research,'write_story',side_effect=error))
+            with self.assertRaises(SystemExit):research.main()
+            self.assertEqual(writer.call_count,3)
+            status=json.loads((root/'data/research/generation-status.json').read_text())
+            self.assertEqual((status['failed'],status['deferred']),(3,5))
+            self.assertEqual(status['failure_counts'],{'model_output_limit':3})
+            self.assertEqual(status['failed_items'][0]['stage'],'scope_review')
+            self.assertEqual(len(json.loads((root/'data/research/public.json').read_text())['papers']),8)
+
+    def test_account_failure_defers_the_rest_without_more_model_calls(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root, _ = self.context(stack, folder)
+            self.research_context(stack, root, 4)
+            writer=stack.enter_context(patch.object(research,'write_story',side_effect=research.ai_runtime.AIError(
+                'Access unavailable',code='model_access_or_quota',fatal=True)))
+            with self.assertRaises(SystemExit):research.main()
+            self.assertEqual(writer.call_count,1)
+            status=json.loads((root/'data/research/generation-status.json').read_text())
+            self.assertEqual((status['failed'],status['deferred']),(1,3))
+
 
 if __name__ == '__main__':
     unittest.main()

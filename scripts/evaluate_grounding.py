@@ -5,6 +5,7 @@ Synthetic minimal pairs reproduce audited mistakes. Passing does not establish
 an error rate on real articles; failing blocks automatic generation.
 """
 import time
+import copy
 from editorial_engine import review_scope, EditorialError
 
 CASES = [
@@ -35,7 +36,7 @@ CASES = [
 
 
 def evaluate(review=review_scope):
-    failed = []; deadline = time.monotonic() + 840
+    failed = []; deadline = time.monotonic() + 1500
     for name, evidence, wrong, correct in CASES:
         for label, text, should_pass in [('wrong', wrong, False), ('correct', correct, True)]:
             draft = {'editorial_headline': text, 'editorial_deck': '', 'what_happened': '',
@@ -51,7 +52,35 @@ def evaluate(review=review_scope):
                 print(name + ':' + label + ' ' + error.code + ': ' + error.feedback, flush=True)
             if passed != should_pass:failed.append(name + ':' + label)
             print(name + ':' + label + (' PASS' if passed == should_pass else ' FAIL'), flush=True)
+    # Single-field minimal pairs do not exercise the output budget of the real
+    # all-fields gate. Include a complete nine-field draft and a body-only error.
+    evidence=('Researchers randomly assigned 80 support employees at one company to two groups for four weeks. '
+              'Forty employees used an AI writing assistant; forty did not. The assistant group completed support tickets 20 percent faster on average. '
+              'Supervisors checked the replies, and the measured error rate did not change. The provider received staff feedback during the trial. '
+              'The researchers report that the trial covered one employer and did not measure effects after four weeks. '
+              'They did not measure job losses, pay changes, or customer satisfaction.')
+    draft={'editorial_headline':'One company trial finds faster support replies with an AI assistant',
+           'editorial_deck':'Researchers compared two groups of support employees over four weeks.',
+           'what_happened':'The study assigned 80 workers at one employer to two groups. Half used an AI writing assistant and half did not.',
+           'why_it_matters':'The assistant group handled tickets faster, while the measured rate of mistakes stayed the same.',
+           'for_humans':'Staff using the assistant finished support tickets faster on average.',
+           'for_ai':'The provider received feedback from employees during the trial.',
+           'limitation':'The study involved one employer and did not examine longer-term effects.',
+           'body_paragraphs':['The assistant group finished tickets 20 percent faster on average. Supervisors reviewed the replies.',
+                              'The researchers did not measure changes in jobs, wages, or customer satisfaction.'],
+           'claim_status':'study'}
+    for label,should_pass in [('correct',True),('wrong_body',False)]:
+        candidate=copy.deepcopy(draft)
+        if not should_pass:candidate['body_paragraphs'][1]='The assistant caused job losses and raised wages across all employers.'
+        try:
+            review(candidate,[{'source_number':1,'evidence':evidence,'evidence_basis':'full_source'}],deadline)
+            passed=True
+        except EditorialError as error:
+            if error.code not in {'source_scope_review_failed','claim_grounding_failed'}:raise
+            passed=False
+        if passed!=should_pass:failed.append('full_draft:'+label)
+        print('full_draft:'+label+(' PASS' if passed==should_pass else ' FAIL'),flush=True)
     if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))
-    print('All 16 live grounding checks passed.', flush=True)
+    print('All 18 live grounding checks passed, including full-draft completion.', flush=True)
 
 if __name__ == '__main__':evaluate()

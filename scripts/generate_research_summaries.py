@@ -47,7 +47,7 @@ def main():
     from supabase import create_client
     client=create_client(os.environ['SUPABASE_URL'],os.environ['SUPABASE_SECRET_KEY'])
     deadline=time.monotonic()+args.max_runtime_minutes*60;counts={'generated':0,'failed':0,'metadata_only':0,'deferred':0,'unchanged':0}
-    audit=[];selected=[];failures=[]
+    audit=[];selected=[];failures=[];repeated_model_failure=None;model_failure_streak=0
     retry_path=ROOT/'data/research/retry-state.json'
     retry=json.loads(retry_path.read_text()) if retry_path.exists() else {}
     def checkpoint():
@@ -97,6 +97,7 @@ def main():
             retry.pop(p['key'],None)
             audit.append({'key':p['key'],'metadata_sha256':p['metadata_sha256'],'abstract':p.get('abstract',''),'validation':proof,'output_sha256':digest(record)})
             print('Saved research '+p['key'],flush=True)
+            repeated_model_failure=None;model_failure_streak=0
         except TimeoutError as error:
             counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'})
             if isinstance(error,ai_runtime.AIBudgetExceeded):deadline=time.monotonic()
@@ -105,6 +106,17 @@ def main():
             diagnostic=failure_diagnostic(e,stage)
             failures.append({'key':p['key'],**diagnostic})
             print('Summary withheld for '+p['key']+': '+json.dumps(diagnostic,sort_keys=True),flush=True)
+            if isinstance(e,ai_runtime.AIError):
+                fingerprint=(diagnostic['stage'],diagnostic['code'])
+                model_failure_streak=model_failure_streak+1 if fingerprint==repeated_model_failure else 1
+                repeated_model_failure=fingerprint
+                if e.fatal or model_failure_streak>=3:
+                    # Stop paying for the same systemic failure across the queue.
+                    # The remaining items are checkpointed as deferred below.
+                    deadline=time.monotonic()
+                    print('::warning::Research model processing stopped after repeated/systemic '+diagnostic['code']+'; remaining papers are saved for a later pass.',flush=True)
+            else:
+                repeated_model_failure=None;model_failure_streak=0
         checkpoint()
     retry={k:v for k,v in retry.items() if k in {p['key'] for p in data['papers']}}
     checkpoint()
