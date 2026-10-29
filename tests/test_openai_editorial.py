@@ -28,3 +28,19 @@ class OpenAIEditorial(unittest.TestCase):
             with self.assertRaises(ai.AIError):engine.call_json('Article to read')
         self.assertEqual(request.call_count, 1)
         self.assertEqual(request.call_args.args[1], engine.SCHEMA)
+
+    def test_review_budget_depends_on_real_field_count_and_diagnostics_retain_stage(self):
+        error=ai.AIError('Safe explanation',code='model_output_limit',max_completion_tokens=32768,completion_tokens=32768,reasoning_tokens=32768)
+        schema={'properties':{'field_reviews':{'minItems':9}}}
+        with patch.object(ai,'completion',side_effect=error) as request:
+            with self.assertRaises(ai.AIError):engine.call_json('Private source',schema,stage='scope_review')
+        self.assertEqual(request.call_args.kwargs['max_completion_tokens'],32768)
+        self.assertEqual(request.call_args.kwargs['reasoning_effort'],'medium')
+        diagnostic=engine.failure_diagnostic(error,'generation')
+        self.assertEqual(diagnostic['code'],'model_output_limit')
+        self.assertEqual(diagnostic['stage'],'scope_review')
+        self.assertEqual(diagnostic['reasoning_tokens'],32768)
+        self.assertNotIn('Safe explanation',str(diagnostic))
+        with patch.object(ai,'completion',side_effect=ai.AIError('Unavailable')) as request:
+            with self.assertRaises(ai.AIError):engine.call_json('Source',{'properties':{'field_reviews':{'minItems':1}}},stage='scope_review')
+        self.assertNotIn('max_completion_tokens',request.call_args.kwargs)

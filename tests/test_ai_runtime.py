@@ -119,6 +119,32 @@ class AIRuntime(unittest.TestCase):
         for branch in result['properties']['dimension']['anyOf']:
             self.assertEqual(branch['required'],['present']);self.assertFalse(branch['additionalProperties'])
 
+    def test_review_budget_reserves_cost_and_is_sent_without_changing_model(self):
+        with patch.object(ai.requests,'post',return_value=self.response()) as post:
+            ai.completion(self.messages,self.schema,max_completion_tokens=32768,reasoning_effort='medium',timeout=290)
+        payload=post.call_args.kwargs['json']
+        self.assertEqual(payload['max_completion_tokens'],32768)
+        self.assertEqual(payload['reasoning_effort'],'medium')
+        self.assertEqual(payload['model'],'gpt-5-nano')
+        self.assertEqual(post.call_args.kwargs['timeout'],(10,290))
+        with patch.dict(os.environ,{'AIEO_AI_MAX_JOB_USD':'0.01'}),patch.object(ai.requests,'post') as post:
+            ai.selected_policy.cache_clear()
+            with self.assertRaises(ai.AIBudgetExceeded):ai.completion(self.messages,self.schema,max_completion_tokens=32768)
+            post.assert_not_called()
+
+    def test_reasoning_exhaustion_has_safe_diagnostic_and_is_not_logged_as_completed(self):
+        response=self.response(choices=[{'finish_reason':'length','message':{'content':'private partial'}}],
+            usage={'prompt_tokens':100,'completion_tokens':8192,'completion_tokens_details':{'reasoning_tokens':8192}})
+        with patch.object(ai.requests,'post',return_value=response) as post:
+            with self.assertRaises(ai.AIError) as caught:ai.completion(self.messages,self.schema)
+        self.assertEqual(post.call_count,1)
+        self.assertEqual(caught.exception.code,'model_output_limit')
+        self.assertEqual(caught.exception.details['reasoning_tokens'],8192)
+        entry=json.loads(ai.ledger_path().read_text())['calls'][0]
+        self.assertEqual(entry['status'],'output_limit')
+        self.assertEqual(entry['finish_reason'],'length')
+        self.assertNotIn('private partial',ai.ledger_path().read_text())
+
     def test_nonfinite_budget_and_unapproved_model_are_rejected(self):
         for setting in ({'AIEO_AI_MAX_JOB_USD':'nan'},{'AIEO_AI_MAX_JOB_USD':'-1'},{'AIEO_AI_MODEL':'imaginary-model'}):
             with patch.dict(os.environ,setting):

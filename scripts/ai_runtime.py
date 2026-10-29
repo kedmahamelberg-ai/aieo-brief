@@ -31,6 +31,14 @@ RATES = {"gpt-5-nano": (0.05, 0.40), "gpt-6-luna": (0.125, 0.50)}
 class AIError(RuntimeError):
     """Safe error text, without response bodies or authorization headers."""
 
+    def __init__(self, message, *, code="model_request_failed", fatal=False, **details):
+        super().__init__(message)
+        self.code = code
+        self.fatal = fatal
+        self.details = {key: value for key, value in details.items()
+                        if key in {"http_status", "max_completion_tokens", "completion_tokens", "reasoning_tokens"}
+                        and type(value) is int and value >= 0}
+
 
 class AIBudgetExceeded(TimeoutError):
     """Leave remaining work resumable when the configured job cap is reached."""
@@ -126,45 +134,51 @@ def ledger():
         os.replace(temp, path)
 
 
-def completion(messages, schema, *, name="aieo_reading", timeout=120, max_request_bytes=196608, reasoning_effort=None):
+def completion(messages, schema, *, name="aieo_reading", timeout=120, max_request_bytes=196608, reasoning_effort=None, max_completion_tokens=None):
     require_key()
     p = selected_policy()
     if not uses_openai():
         raise AIError("OpenAI completion called while local provider is selected")
     if reasoning_effort is not None and reasoning_effort not in {"low", "medium", "high"}:
         raise AIError("Unsupported review reasoning effort")
+    token_limit = p["max_completion_tokens"] if max_completion_tokens is None else max_completion_tokens
+    if type(token_limit) is not int or not 2048 <= token_limit <= 32768:
+        raise ValueError("Per-request completion budget must be 2048–32768 tokens")
     clean_messages = [{**m, "content": str(m["content"]).replace("/no_think", "")} for m in messages]
     payload = {"model": p["model"], "messages": clean_messages,
                "reasoning_effort": reasoning_effort or p["reasoning_effort"],
-               "max_completion_tokens": p["max_completion_tokens"], "store": False,
+               "max_completion_tokens": token_limit, "store": False,
                "response_format": {"type": "json_schema", "json_schema": {
                    "name": name, "strict": True, "schema": strict_schema(schema)}}}
     encoded = json.dumps(payload, ensure_ascii=False).encode("utf-8")
     if len(encoded) > min(max_request_bytes, 384000):
-        raise AIError("Input exceeds the bounded request size; retain complete evidence in smaller segments")
+        raise AIError("Input exceeds the bounded request size; retain complete evidence in smaller segments", code="model_input_limit")
     input_rate, output_rate = RATES[p["model"]]
     # UTF-8 bytes provide a conservative upper bound for text tokenization;
     # add framing/schema overhead before reserving the maximum output cost.
-    reserved = ((len(encoded) + 4096) * input_rate + p["max_completion_tokens"] * output_rate) / 1e6
+    reserved = ((len(encoded) + 4096) * input_rate + token_limit * output_rate) / 1e6
     last = None
     for attempt in range(3):
         with ledger() as state:
             if state.get("fatal_error"):
-                raise AIError(state["fatal_error"])
+                raise AIError(state["fatal_error"], code="model_access_or_quota", fatal=True)
             if len(state["calls"]) >= p["max_job_requests"] or sum(c["cost_usd"] for c in state["calls"]) + reserved > p["max_job_usd"]:
                 raise AIBudgetExceeded("AI job spending/request limit reached; saved work can be resumed")
             slot = len(state["calls"])
             state["calls"].append({"requested_model": p["model"], "cost_usd": reserved,
-                                  "status": "reserved", "prompt_sha256": hashlib.sha256(encoded).hexdigest()})
+                                  "status": "reserved", "task": name, "max_completion_tokens": token_limit,
+                                  "prompt_sha256": hashlib.sha256(encoded).hexdigest()})
         start = time.monotonic()
         try:
             response = requests.post(ENDPOINT, json=payload,
                 headers={"Authorization": "Bearer " + os.environ["OPENAI_API_KEY"].strip()},
-                timeout=(10, min(180, max(1, timeout))), allow_redirects=False)
+                timeout=(10, min(300 if token_limit > 16384 else 180, max(1, timeout))), allow_redirects=False)
         except requests.RequestException:
             # The request may have been billed. Keep its reservation and avoid
             # an automatic duplicate after an ambiguous transport failure.
-            raise AIError("OpenAI connection failed; request reservation retained") from None
+            with ledger() as state:
+                state["calls"][slot]["status"] = "transport_error"
+            raise AIError("OpenAI connection failed; request reservation retained", code="model_connection_error") from None
         if response.status_code != 200:
             code = ""
             try:
@@ -190,26 +204,36 @@ def completion(messages, schema, *, name="aieo_reading", timeout=120, max_reques
                 time.sleep(delay)
                 last = safe_error
                 continue
-            raise AIError(safe_error)
+            fatal = response.status_code in {401, 403, 404} or code == "insufficient_quota"
+            raise AIError(safe_error, code="model_access_or_quota" if fatal else "model_http_error", fatal=fatal, http_status=response.status_code)
         try:
             result = response.json()
         except ValueError:
-            raise AIError("OpenAI returned an invalid response; request reservation retained") from None
+            with ledger() as state:
+                state["calls"][slot]["status"] = "invalid_response"
+            raise AIError("OpenAI returned an invalid response; request reservation retained", code="model_response_invalid") from None
         usage = result.get("usage") or {}
         actual = reserved
         if all(type(usage.get(k)) is int and usage[k] >= 0 for k in ("prompt_tokens", "completion_tokens")):
             actual = (usage["prompt_tokens"] * input_rate + usage["completion_tokens"] * output_rate) / 1e6
+        choice = (result.get("choices") or [{}])[0]
+        finish_reason = choice.get("finish_reason")
+        refused = bool((choice.get("message") or {}).get("refusal"))
+        status = "refused" if refused else "completed" if finish_reason == "stop" else "output_limit" if finish_reason == "length" else "unfinished"
         audit = {"provider": "openai", "requested_model": p["model"], "returned_model": result.get("model"),
                  "revision": p["revision"], "reasoning_effort": reasoning_effort or p["reasoning_effort"],
                  "request_id": response.headers.get("x-request-id"), "usage": usage,
-                 "cost_usd": actual, "elapsed_seconds": round(time.monotonic() - start, 3), "status": "completed"}
+                 "cost_usd": actual, "elapsed_seconds": round(time.monotonic() - start, 3), "status": status,
+                 "finish_reason": finish_reason if finish_reason in {"stop", "length", "content_filter", "tool_calls", "function_call"} else "unknown"}
         with ledger() as state:
             state["calls"][slot].update(audit)
-        choice = (result.get("choices") or [{}])[0]
-        if (choice.get("message") or {}).get("refusal"):
-            raise AIError("OpenAI declined this request; no classification or draft was accepted")
-        if choice.get("finish_reason") != "stop":
-            raise AIError("OpenAI answer was unfinished; no classification or draft was accepted")
+        if refused:
+            raise AIError("OpenAI declined this request; no classification or draft was accepted", code="model_refusal")
+        if finish_reason != "stop":
+            raise AIError("OpenAI answer was unfinished; no classification or draft was accepted",
+                          code="model_output_limit" if finish_reason == "length" else "model_output_unfinished",
+                          max_completion_tokens=token_limit, completion_tokens=usage.get("completion_tokens"),
+                          reasoning_tokens=(usage.get("completion_tokens_details") or {}).get("reasoning_tokens"))
         result["aieo_ai"] = audit
         return result
     raise AIError(last or "OpenAI request failed")
