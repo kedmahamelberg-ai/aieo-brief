@@ -2,6 +2,372 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "6122bafc3489adf8d8139c256db7af066475733cfa03ff19f48787e389f52d18",
+      "creator": "John Keats",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by John Keats.",
+      "excerpt": "Bright star, would I were steadfast as thou art—\n    Not in lone splendour hung aloft the night\nAnd watching, with eternal lids apart,\n    Like nature's patient, sleepless Eremite,\nThe moving waters at their priestlike task\n    Of pure ablution round earth's human shores,\nOr gazing on the new soft-fallen mask\n    Of snow upon the mountains and the moors—\nNo—yet still steadfast, still unchangeable,\n    Pillow'd upon my fair love's ripening breast,\nTo feel for ever its soft fall and swell,\n    Awake for ever in a sweet unrest,\nStill, still to hear her tender-taken breath,\nAnd so live ever—or else swoon to death.",
+      "headline": "Bright Star, Would I Were Steadfast As Thou Art",
+      "key": "culture:c75613fac52255fa192153b2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Bright star, would I were steadfast as thou art—",
+        "    Not in lone splendour hung aloft the night",
+        "And watching, with eternal lids apart,",
+        "    Like nature's patient, sleepless Eremite,",
+        "The moving waters at their priestlike task",
+        "    Of pure ablution round earth's human shores,",
+        "Or gazing on the new soft-fallen mask",
+        "    Of snow upon the mountains and the moors—",
+        "No—yet still steadfast, still unchangeable,",
+        "    Pillow'd upon my fair love's ripening breast,",
+        "To feel for ever its soft fall and swell,",
+        "    Awake for ever in a sweet unrest,",
+        "Still, still to hear her tender-taken breath,",
+        "And so live ever—or else swoon to death."
+      ],
+      "provenance_id": "poetrydb:John Keats:Bright Star, Would I Were Steadfast As Thou Art",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1821.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "f4dcc47fc2cbdfaabcf7a505dedf83089272cd91f82ae3828607e91117f00d85",
+      "source_locator": "Bright Star, Would I Were Steadfast As Thou Art",
+      "source_url": "https://poetrydb.org/title/Bright%20Star%2C%20Would%20I%20Were%20Steadfast%20As%20Thou%20Art:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1821",
+      "date": "2026-10-30",
+      "selected_on": "2026-10-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c75613fac52255fa192153b2",
+      "path": "culture/culture-c75613fac52255fa192153b2/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Bright Star, Would I Were Steadfast As Thou Art",
+          "url": "https://poetrydb.org/title/Bright%20Star%2C%20Would%20I%20Were%20Steadfast%20As%20Thou%20Art:abs/lines.text",
+          "date": "Before 1821",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-30",
+      "summary_basis": "Selected 30 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Bright star, would I were steadfast as thou art—\n    Not in lone splendour hung aloft the night\nAnd watching, with eternal lids apart,\n    Like nature's patient, sleepless Eremite,\nThe moving waters at their priestlike task\n    Of pure ablution round earth's human shores,\nOr gazing on the new soft-fallen mask\n    Of snow upon the mountains and the moors—\nNo—yet still steadfast, still unchangeable,\n    Pillow'd upon my fair love's ripening breast,\nTo feel for ever its soft fall and swell,\n    Awake for ever in a sweet unrest,\nStill, still to hear her tender-taken breath,\nAnd so live ever—or else swoon to death.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "9c961f8540508dabb3b9c66265a98c239e3df8e2e8714576a524330e661040d7",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "The heaven of modern humanity is indeed shattered in the Cyclopean struggle for wealth and power.",
+      "headline": "The heaven of modern humanity is indeed shattered in the Cyclopean struggle for wealth and power.",
+      "key": "culture:c63f42a3931fbf1c2bef7077",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:9c961f8540508dabb3b9c66265a98c239e3df8e2e8714576a524330e661040d7",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The heaven of modern humanity is indeed shattered in the Cyclopean struggle for wealth and power. The world is groping in the shadow of egotism and vulgarity. Knowledge is bought through a bad conscience, benevolence practiced for the sake of utility. The East and the West, like two dragons tossed in a sea of ferment, in vain strive to regain the jewel of life. We need a Niuka again to repair the grand devastation; we await the great Avatar. Meanwhile, let us have a sip of tea. The afternoon glow is brightening the bamboos, the fountains are bubbling with delight, the soughing of the pines is heard in our kettle. Let us dream of evanescence, and linger in the beautiful foolishness of things.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 18 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-10-30",
+      "selected_on": "2026-10-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c63f42a3931fbf1c2bef7077",
+      "path": "culture/culture-c63f42a3931fbf1c2bef7077/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The heaven of modern humanity is indeed shattered in the Cyclopean struggle for wealth and power.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-30",
+      "summary_basis": "Selected 30 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The heaven of modern humanity is indeed shattered in the Cyclopean struggle for wealth and power.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The heaven of modern humanity is indeed shattered in the Cyclopean struggle for wealth and power. The world is groping in the shadow of egotism and vulgarity. Knowledge is bought through a bad conscience, benevolence practiced for the sake of utility. The East and the West, like two dragons tossed in a sea of ferment, in vain strive to regain the jewel of life. We need a Niuka again to repair the grand devastation; we await the great Avatar. Meanwhile, let us have a sip of tea. The afternoon glow is brightening the bamboos, the fountains are bubbling with delight, the soughing of the pines is heard in our kettle. Let us dream of evanescence, and linger in the beautiful foolishness of things.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "George Washington",
+      "art_type": "Painting",
+      "balance_origin": "United States",
+      "creator": "Artist unknown",
+      "creator_origin": "United States",
+      "culture_type": "illustration",
+      "deck": "George Washington. oil on canvas.",
+      "headline": "George Washington",
+      "image_path": "assets/culture/af01ee023ab2a055035b8438.jpg",
+      "key": "culture:af01ee023ab2a055035b8438",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1921.2552/1921.2552_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1921.2552",
+      "provenance_id": "cma:172929",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Hinman B. Hurlbut Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1921.2552",
+      "work_date": "c. 1790s",
+      "date": "2026-10-30",
+      "selected_on": "2026-10-30",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-af01ee023ab2a055035b8438",
+      "path": "culture/culture-af01ee023ab2a055035b8438/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "George Washington",
+          "url": "https://clevelandart.org/art/1921.2552",
+          "date": "c. 1790s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-30",
+      "summary_basis": "Selected 30 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Enchiridion",
+      "content_fingerprint": "853db206910bdd11b73388812cd22c9c793219d0e07cf64e9d102c9ce9e3bdca",
+      "creator": "Epictetus",
+      "creator_origin": "Greek · Roman-era philosopher",
+      "culture_type": "text",
+      "deck": "A passage from The Enchiridion. Translated by Thomas Wentworth Higginson.",
+      "excerpt": "It is a mark of want of intellect to spend much time in things relating to the body, as to be immoderate in exercises, in eating and drinking, and in the discharge of other animal functions. These things should be done incidentally and our main strength be applied to our reason.",
+      "headline": "The Enchiridion · a short reading",
+      "key": "culture:8a168a579ae130439e59dadb",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:45109:passage:853db206910bdd11b73388812cd22c9c793219d0e07cf64e9d102c9ce9e3bdca",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 135. Translator: Thomas Wentworth Higginson, died 1911. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/45109"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "881297baad06ca8a5bbcdf58e2012b7af544e5ba1bccf16a81ad34ab51f4e0b8",
+      "source_locator": "THE ENCHIRIDION; paragraph 99 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/45109",
+      "translator": "Thomas Wentworth Higginson",
+      "work_date": "1865 translation",
+      "date": "2026-10-30",
+      "selected_on": "2026-10-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-8a168a579ae130439e59dadb",
+      "path": "culture/culture-8a168a579ae130439e59dadb/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Enchiridion · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/45109",
+          "date": "1865 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-30",
+      "summary_basis": "Selected 30 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "It is a mark of want of intellect to spend much time in things relating to the body, as to be immoderate in exercises, in eating and drinking, and in the discharge of other animal functions. These things should be done incidentally and our main strength be applied to our reason.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Domenico_Scarlatti_-_Sonate_en_mi_majeur_Kk._20_%28Wanda_Landowska%2C_1934%29.flac",
+      "creator": "Domenico Scarlatti",
+      "creator_origin": "Italian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Domenico Scarlatti. 1 minutes to listen.",
+      "duration_seconds": 83,
+      "headline": "Domenico Scarlatti - Sonate en mi majeur Kk. 20 (Wanda Landowska, 1934)",
+      "key": "culture:2860d470da8770f87c939366",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Domenico_Scarlatti_-_Sonate_en_mi_majeur_Kk._20_%28Wanda_Landowska%2C_1934%29.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Domenico_Scarlatti",
+      "original_recording_title": "Domenico Scarlatti - Sonate en mi majeur Kk. 20 (Wanda Landowska, 1934)",
+      "provenance_id": "commons:138887127",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Domenico Scarlatti",
+      "recording_description": "Domenico Scarlatti, Sonata in E major (Kirkpatrick 20), by Wanda Landowska at the harpsichord (1934).",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Domenico Scarlatti",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Médiathèque musicale Mahler - fonds discophiles (ref. HMV DB 4960-4965)",
+        "url": "https://commons.wikimedia.org/wiki/File:Domenico_Scarlatti_-_Sonate_en_mi_majeur_Kk._20_(Wanda_Landowska,_1934).flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Domenico_Scarlatti_-_Sonate_en_mi_majeur_Kk._20_(Wanda_Landowska,_1934).flac",
+      "work_date": "2023-10-14",
+      "date": "2026-10-30",
+      "selected_on": "2026-10-30",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-2860d470da8770f87c939366",
+      "path": "culture/culture-2860d470da8770f87c939366/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Domenico Scarlatti - Sonate en mi majeur Kk. 20 (Wanda Landowska, 1934)",
+          "url": "https://commons.wikimedia.org/wiki/File:Domenico_Scarlatti_-_Sonate_en_mi_majeur_Kk._20_(Wanda_Landowska,_1934).flac",
+          "date": "2023-10-14",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "30 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-30",
+      "summary_basis": "Selected 30 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Essays",
       "content_fingerprint": "bc119eb74dc9d2e9cc9ad15293df1d96e35d0066919afbae851a8a9a8a012206",
       "creator": "Francis Bacon",
@@ -848,7 +1214,7 @@
         "The study looks at each stone, not whole walls, to map how Shivta grew. It combines drone imagery with close photos to count stones and map sizes and layouts.",
         "For practitioners, the lesson is that broad settlement patterns can come from repeated stone choices and wall spacing, not only from famous buildings or dates."
       ],
-      "limitation": "Abstract-only scope; no field validation reported.",
+      "limitation": "This summary uses only the abstract; the full paper’s methods and field validation were not assessed.",
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -1277,7 +1643,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224120249",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1347,7 +1713,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224121694",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1431,7 +1797,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224122670",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1509,7 +1875,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224093146",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1587,7 +1953,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224108955",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1663,7 +2029,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224119346",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5132,7 +5498,7 @@
         "Egor Bondarev"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5210,8 +5576,13 @@
         "Anqi Liu",
         "Laixi Shi"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "institutions": [
+        "University of California San Diego",
+        "Duke University",
+        "Johns Hopkins University",
+        "University of California, Berkeley"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5242,6 +5613,7 @@
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 48,
       "paper_text_sha256": "ee3081f2ffd58fce20992b9578649cf43ff324ab42e65cf3a5741c6471a40ca3",
+      "affiliation_source_url": "https://openalex.org/W7223700254",
       "kind": "research",
       "slug": "online-methods-often-beat-standard-training-complex-changes",
       "path": "research/online-methods-often-beat-standard-training-complex-changes/index.html",
@@ -5286,8 +5658,11 @@
         "Lianhui Qin",
         "Shenji Wan"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "institutions": [
+        "New York University",
+        "University of California San Diego"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5318,6 +5693,7 @@
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 25,
       "paper_text_sha256": "0855b42ebe68ff5ac6d12f806f722fc8f178f70be3a5c28e5daa1d6d7a12bc1b",
+      "affiliation_source_url": "https://openalex.org/W7223670809",
       "kind": "research",
       "slug": "realistic-indoor-room-layouts-help-robots-real-spaces",
       "path": "research/realistic-indoor-room-layouts-help-robots-real-spaces/index.html",
@@ -5361,7 +5737,7 @@
         "Federico Lucca"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5438,8 +5814,10 @@
       "authors": [
         "James E. Dobson"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "institutions": [
+        "Dartmouth College"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5470,6 +5848,7 @@
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 15,
       "paper_text_sha256": "69cefd390ebc310e58b65c43679d6ebe042a746c282063c0bb89f22d81e34072",
+      "affiliation_source_url": "https://openalex.org/W7223668919",
       "kind": "research",
       "slug": "instruction-tuned-ai-follows-prompts-outputs-reflect-training-rules",
       "path": "research/instruction-tuned-ai-follows-prompts-outputs-reflect-training-rules/index.html",
@@ -5518,7 +5897,7 @@
         "Haozhi Qi"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -5961,7 +6340,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223269505",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6038,9 +6417,13 @@
         "Kaiyu Hang",
         "Chen Wei"
       ],
-      "institutions": [],
+      "institutions": [
+        "Rice University",
+        "Nvidia (United Kingdom)",
+        "Nvidia (United States)"
+      ],
       "affiliation_source_url": "https://openalex.org/W7223379583",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6119,7 +6502,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223406000",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6195,9 +6578,11 @@
         "Devansh Gupta",
         "Meisam Razaviyayn"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Southern California"
+      ],
       "affiliation_source_url": "https://openalex.org/W7223320540",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6278,7 +6663,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223410188",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6354,9 +6739,12 @@
         "Ryan J. Tibshirani",
         "Tijana Zrnic"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Toronto",
+        "Stanford University",
+        "University of California, Berkeley"
+      ],
       "affiliation_source_url": "https://openalex.org/W7223293283",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6387,6 +6775,7 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 40,
       "paper_text_sha256": "a32b153301af90f706156d90892a315bc72122e4002b316416192d9997ccaf58",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "kind": "research",
       "slug": "selective-auditing-reduces-human-reviews-but-mistakes-check",
       "path": "research/selective-auditing-reduces-human-reviews-but-mistakes-check/index.html",
@@ -7779,8 +8168,12 @@
         "Imon Banerjee",
         "Pierre Alquier"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "University of Chicago",
+        "École Supérieure des Sciences Économiques et Commerciales",
+        "ESSEC Business School"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -7815,6 +8208,7 @@
         "date": "2026-10-26",
         "approved": true
       },
+      "affiliation_source_url": "https://openalex.org/W7223205593",
       "kind": "research",
       "slug": "bounds-training-error-come-observed-cycle-lengths",
       "path": "research/bounds-training-error-come-observed-cycle-lengths/index.html",
@@ -7865,7 +8259,7 @@
         "Jeong Joon Park"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -7942,8 +8336,10 @@
         "Sunhao Dai",
         "Jun Xu"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Renmin University of China"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -7974,6 +8370,7 @@
       "full_text_retry_after": "2026-10-29",
       "paper_pages": 13,
       "paper_text_sha256": "bd9d8dc055c73891b8b83d5079accf4cd1571b823879c3d5bfd807c2692cd8bf",
+      "affiliation_source_url": "https://openalex.org/W7223230235",
       "kind": "research",
       "slug": "different-history-items-need-different-processing-some-predictions",
       "path": "research/different-history-items-need-different-processing-some-predictions/index.html",
@@ -8017,8 +8414,10 @@
         "Francesco Mori",
         "Melanie Weber"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Harvard University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -8053,6 +8452,7 @@
         "date": "2026-10-26",
         "approved": true
       },
+      "affiliation_source_url": "https://openalex.org/W7223198452",
       "kind": "research",
       "slug": "learning-speed-matches-when-inputs-uncorrelated-matters-correlations",
       "path": "research/learning-speed-matches-when-inputs-uncorrelated-matters-correlations/index.html",
@@ -8096,8 +8496,10 @@
         "Zhennan Wan",
         "Jianfei Chen"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Tsinghua University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -8128,6 +8530,7 @@
       "full_text_retry_after": "2026-10-29",
       "paper_pages": 17,
       "paper_text_sha256": "1744baf70ba2fc8bae9e0626952be09451d0b483b46542442c7b628e82ebd4db",
+      "affiliation_source_url": "https://openalex.org/W7223228096",
       "kind": "research",
       "slug": "ai-can-improve-handling-long-text-steps-itself",
       "path": "research/ai-can-improve-handling-long-text-steps-itself/index.html",
@@ -8171,8 +8574,10 @@
         "Ashkan Soleymani",
         "Gabriele Farina"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Massachusetts Institute of Technology"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -8201,6 +8606,7 @@
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
       "full_text_retry_after": "2026-10-29",
+      "affiliation_source_url": "https://openalex.org/W7223230721",
       "kind": "research",
       "slug": "arxiv-authors-suggest-quasipolynomial-time-hint-infinity-norm-fixed-points",
       "path": "research/arxiv-authors-suggest-quasipolynomial-time-hint-infinity-norm-fixed-points/index.html",
@@ -10018,8 +10424,10 @@
         "Xiandong Li",
         "Yujin Wang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "institutions": [
+        "Baidu (China)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -10054,6 +10462,7 @@
         "date": "2026-10-26",
         "approved": true
       },
+      "affiliation_source_url": "https://openalex.org/W7223055148",
       "kind": "research",
       "slug": "using-visible-clues-guide-ai-corrections-across-tests",
       "path": "research/using-visible-clues-guide-ai-corrections-across-tests/index.html",
@@ -10108,7 +10517,7 @@
         "Jiachen Li"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -10192,7 +10601,7 @@
         "Kai-Wei Chang"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -10274,8 +10683,12 @@
         "Li Fei-Fei",
         "Michael Poli"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "institutions": [
+        "V. G. Khlopin Radium Institute",
+        "Radica Systems (China)",
+        "Stanford University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -10310,6 +10723,7 @@
         "date": "2026-10-26",
         "approved": true
       },
+      "affiliation_source_url": "https://openalex.org/W7223048829",
       "kind": "research",
       "slug": "ai-can-generate-images-paired-data-language-pretraining",
       "path": "research/ai-can-generate-images-paired-data-language-pretraining/index.html",
@@ -10387,7 +10801,7 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 45,
       "paper_text_sha256": "0d5cf90b1e05d034b254abed0e13eedbe5a82d9cd6adec154e14f98609c0ca3c",
-      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "affiliation_source_url": "https://openalex.org/W7223028650",
       "kind": "research",
       "slug": "computer-assisted-design-tests-show-mixed-results-working-designs",
@@ -10472,7 +10886,7 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 18,
       "paper_text_sha256": "18702c0d20c72c758be931667e230970bb1c5e47df54d27f475add74bf99eeca",
-      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "affiliation_source_url": "https://openalex.org/W7223060590",
       "kind": "research",
       "slug": "public-capability-scores-partly-predict-fastest-robot-systems",
@@ -14359,8 +14773,11 @@
         "Nathalie Baracaldo",
         "Kimin Lee"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Korea Advanced Institute of Science and Technology",
+        "IBM (United States)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -14391,6 +14808,7 @@
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 30,
       "paper_text_sha256": "f6b2543720cb958cccb14993d61635b7de18c048c719ec4e8c9a5776a1383ac2",
+      "affiliation_source_url": "https://openalex.org/W7222941228",
       "kind": "research",
       "slug": "behavioral-couplings-language-models-can-surface-document-training",
       "path": "research/behavioral-couplings-language-models-can-surface-document-training/index.html",
@@ -14438,8 +14856,11 @@
         "Evert van Nieuwenburg",
         "Vedran Dunjko"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Leiden University",
+        "Airbus Defence and Space GmbH (Germany)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -14470,6 +14891,7 @@
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 29,
       "paper_text_sha256": "506caad55b7a3352b0ff7c08a0d2c0a86205f4698277bff1cd70582b70a8b48b",
+      "affiliation_source_url": "https://openalex.org/W7222968586",
       "kind": "research",
       "slug": "fixed-task-queries-change-how-quantum-learn-data",
       "path": "research/fixed-task-queries-change-how-quantum-learn-data/index.html",
@@ -14516,7 +14938,7 @@
         "Aniruddha Mahapatra"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -14594,8 +15016,13 @@
         "Joel Reardon",
         "Indrakshi Ray"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Colorado State University",
+        "New Jersey Institute of Technology",
+        "University of Calgary",
+        "Stony Brook University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -14626,6 +15053,7 @@
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 12,
       "paper_text_sha256": "da71f1f620d1443e255395c3ab8edcbbea865e2f138b1110bb3cbc7ff802d03c",
+      "affiliation_source_url": "https://openalex.org/W7222953278",
       "kind": "research",
       "slug": "many-health-apps-request-data-without-study-finds",
       "path": "research/many-health-apps-request-data-without-study-finds/index.html",
@@ -14691,8 +15119,17 @@
         "Yingcheng Wu",
         "Ling Yang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Chinese University of Hong Kong",
+        "University of Michigan",
+        "National University of Singapore",
+        "Princeton University",
+        "Peking University People's Hospital",
+        "Fudan University",
+        "Peking University",
+        "Stanford University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -14723,6 +15160,7 @@
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 39,
       "paper_text_sha256": "0bcd4b9fa14a08ad1055bcc7739d341b26ec31a172f7626963cd51cff4f9a736",
+      "affiliation_source_url": "https://openalex.org/W7222955595",
       "kind": "research",
       "slug": "computer-assisted-reviews-gave-small-quality-gains-few-tests",
       "path": "research/computer-assisted-reviews-gave-small-quality-gains-few-tests/index.html",
@@ -14773,8 +15211,12 @@
         "James C. Dickerson",
         "Monica S. Lam"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Stanford University",
+        "University of Massachusetts Amherst",
+        "Stanford Medicine"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -14805,6 +15247,7 @@
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 61,
       "paper_text_sha256": "411ea76f93df166fb30d49523a6f02ba6d3772c875ed9421cc018ac5e4f96105",
+      "affiliation_source_url": "https://openalex.org/W7222950516",
       "kind": "research",
       "slug": "seventy-seven-percent-reproduced-large-cancer-data-test",
       "path": "research/seventy-seven-percent-reproduced-large-cancer-data-test/index.html",
@@ -15286,7 +15729,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222498763",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -15372,7 +15815,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222556117",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -15448,9 +15891,12 @@
         "Susanne F. Yelin",
         "Mikhail D. Lukin"
       ],
-      "institutions": [],
+      "institutions": [
+        "QuEra Computing (United States)",
+        "Harvard University"
+      ],
       "affiliation_source_url": "https://openalex.org/W7222580396",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -15532,7 +15978,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222418060",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -15612,9 +16058,12 @@
         "Michael Bohlke-Schneider",
         "Bernie Wang"
       ],
-      "institutions": [],
+      "institutions": [
+        "California Institute of Technology",
+        "Amazon (United States)"
+      ],
       "affiliation_source_url": "https://openalex.org/W7222685402",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -15698,7 +16147,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222575962",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -17673,8 +18122,11 @@
         "Gertjan J. Burghouts",
         "Cees G. M. Snoek"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "University of Amsterdam",
+        "Netherlands Organisation for Applied Scientific Research"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -17705,6 +18157,7 @@
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 48,
       "paper_text_sha256": "70062b89505ec0a843f072e25175c78543b0b4b1a640c63b22940d5714d7dde0",
+      "affiliation_source_url": "https://openalex.org/W7222241426",
       "kind": "research",
       "slug": "elastic-transformers-can-run-different-compute-without-retraining",
       "path": "research/elastic-transformers-can-run-different-compute-without-retraining/index.html",
@@ -17751,7 +18204,7 @@
         "Koushil Sreenath"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -17829,8 +18282,10 @@
         "Michael Kaisers",
         "Adam Fisch"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "Google (United States)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -17861,6 +18316,7 @@
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 40,
       "paper_text_sha256": "c3e7b1a59f8e7ebf8cdc3f1fcc33646605d6717e4f151494ec5a924b76ca0ba8",
+      "affiliation_source_url": "https://openalex.org/W7222030852",
       "kind": "research",
       "slug": "first-price-auctions-ai-prompts-can-stay-strong-competition",
       "path": "research/first-price-auctions-ai-prompts-can-stay-strong-competition/index.html",
@@ -17906,8 +18362,12 @@
         "Zehao Wang",
         "Jiachen Li"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "Northeastern University",
+        "University of California, Riverside",
+        "Georgia Institute of Technology"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -17938,6 +18398,7 @@
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 20,
       "paper_text_sha256": "43b53edc08dea1d8276af524edbb76b427527126eaa8dfb4fcb7bfd69e2b1b2f",
+      "affiliation_source_url": "https://openalex.org/W7222239080",
       "kind": "research",
       "slug": "small-amount-human-input-can-improve-real-work",
       "path": "research/small-amount-human-input-can-improve-real-work/index.html",
@@ -17988,8 +18449,12 @@
         "Shuang Yang",
         "Jiaxuan You"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "University of Illinois Urbana-Champaign",
+        "University of California San Diego",
+        "Meta (United States)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -18022,6 +18487,7 @@
       "full_text_retry_after": "2026-10-23",
       "paper_pages": 31,
       "paper_text_sha256": "6e45a9339df2a41aebb5d0bcd88beefe01c11ebc97b31c6b872eca7cd3f6c6e0",
+      "affiliation_source_url": "https://openalex.org/W7221858561",
       "kind": "research",
       "slug": "co-evolving-acting-forecasting-language-agents",
       "path": "research/co-evolving-acting-forecasting-language-agents/index.html",
@@ -18064,8 +18530,11 @@
       "authors": [
         "Afshin Khadangi"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "University of Luxembourg",
+        "Interdisciplinary Centre for Security, Reliability and Trust"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -18096,6 +18565,7 @@
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 14,
       "paper_text_sha256": "39364af120cb6fb7f07ae7a7618de57abbdf6cddcab2f3cac38ced8e8235f161",
+      "affiliation_source_url": "https://openalex.org/W7222208923",
       "kind": "research",
       "slug": "small-gains-memory-guided-attention-shown-tiny-test",
       "path": "research/small-gains-memory-guided-attention-shown-tiny-test/index.html",
@@ -18892,7 +19362,7 @@
         "Yu-Lun Liu"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -18987,7 +19457,7 @@
         "Jiachen Li"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -19064,8 +19534,12 @@
         "Karl Jansen",
         "Shinichi Nakajima"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "Technische Universität Berlin",
+        "Cyprus Institute",
+        "Deutsches Elektronen-Synchrotron DESY"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -19096,6 +19570,7 @@
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 8,
       "paper_text_sha256": "5bfbd4613a9e927dc669adeead54da9f044ce46222da8340341d677960f24d3a",
+      "affiliation_source_url": "https://openalex.org/W7221781945",
       "kind": "research",
       "slug": "data-free-diffusion-training-matches-data-based-results-field-theory",
       "path": "research/data-free-diffusion-training-matches-data-based-results-field-theory/index.html",
@@ -19139,8 +19614,11 @@
         "Minghao Luo",
         "Liang Chen"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "Chinese University of Hong Kong",
+        "École Polytechnique Fédérale de Lausanne"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -19171,6 +19649,7 @@
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 23,
       "paper_text_sha256": "363f0dbd2bf8836c58a8c3d8840c165940bc5a3d4e9247e1e3edfd8b073d2963",
+      "affiliation_source_url": "https://openalex.org/W7221778062",
       "kind": "research",
       "slug": "training-free-method-trims-reasoning-steps-without-losing-accuracy",
       "path": "research/training-free-method-trims-reasoning-steps-without-losing-accuracy/index.html",
@@ -19218,8 +19697,12 @@
         "Yuzhang Shang",
         "Emilio Ferrara"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "University of Southern California",
+        "University of Central Florida",
+        "Stony Brook University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -19250,6 +19733,7 @@
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 12,
       "paper_text_sha256": "879f656ebc3fd525ba3bd2ddb2cfc9613590d82687420947684bb3453ca71110",
+      "affiliation_source_url": "https://openalex.org/W7221786049",
       "kind": "research",
       "slug": "chunkact-reduces-robot-planning-calls-reusing-memory-chunks",
       "path": "research/chunkact-reduces-robot-planning-calls-reusing-memory-chunks/index.html",
@@ -19297,8 +19781,11 @@
         "Kai-Wei Chang",
         "Yong Jae Lee"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "Adobe Systems (United States)",
+        "University of California, Los Angeles"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -19329,6 +19816,7 @@
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 39,
       "paper_text_sha256": "b2120754e0cd0fa95a60272afb3d4278be9b6d6abc2f568cd29a5c60a2a11d42",
+      "affiliation_source_url": "https://openalex.org/W7221771723",
       "kind": "research",
       "slug": "dense-rewards-help-long-horizon-training-but-vary-task",
       "path": "research/dense-rewards-help-long-horizon-training-but-vary-task/index.html",
@@ -24233,7 +24721,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221535013",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -24387,7 +24875,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221570310",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -24462,7 +24950,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221532418",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -24538,9 +25026,11 @@
         "Raymond Douglas",
         "Christian Schroeder de Witt"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Oxford"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221522658",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -24616,9 +25106,11 @@
         "Shanmugarajan Balasubramanian",
         "Elif Uysal"
       ],
-      "institutions": [],
+      "institutions": [
+        "Middle East Technical University"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221552514",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -25181,9 +25673,11 @@
         "Drew T. Nguyen",
         "William Fithian"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of California, Berkeley"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221103730",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -25264,7 +25758,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221094165",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -25337,9 +25831,11 @@
       "authors": [
         "Abbas Raftari"
       ],
-      "institutions": [],
+      "institutions": [
+        "Walsh College"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221118714",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -25418,9 +25914,11 @@
         "Rosario Scalise",
         "Byron Boots"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Washington"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221144332",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -25495,9 +25993,12 @@
         "Yassine Ouali",
         "Georgios Tzimiropoulos"
       ],
-      "institutions": [],
+      "institutions": [
+        "Gheorghe Asachi Technical University of Iași",
+        "Queen Mary University of London"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221150102",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -25574,9 +26075,13 @@
         "Cordelia Schmid",
         "Jiajun Wu"
       ],
-      "institutions": [],
+      "institutions": [
+        "Max Planck Institute for Intelligent Systems",
+        "Stanford University",
+        "Institut national de recherche en sciences et technologies du numérique"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221158853",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27066,7 +27571,7 @@
         "Yukang Chen"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27140,8 +27645,10 @@
         "Saif Punjwani",
         "Micah Goldblum"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "Columbia University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27172,6 +27679,7 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 20,
       "paper_text_sha256": "b85f48cd6a6b8d0ae59e38674659e3335d5ad8e48f43d59a6998de2dd12857de",
+      "affiliation_source_url": "https://openalex.org/W7220986689",
       "kind": "research",
       "slug": "separating-exploration-training-improves-math-problem-other-skills",
       "path": "research/separating-exploration-training-improves-math-problem-other-skills/index.html",
@@ -27216,8 +27724,10 @@
         "Haoyuan Cai",
         "Ali H. Sayed"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "École Polytechnique Fédérale de Lausanne"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27248,6 +27758,7 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 36,
       "paper_text_sha256": "e82048392eb3b3c4d69d265e71334e60d4416c461ac8a2b3ff95f99b8547f609",
+      "affiliation_source_url": "https://openalex.org/W7220978541",
       "kind": "research",
       "slug": "clipped-distributed-training-reaches-fast-convergence-noisy-data",
       "path": "research/clipped-distributed-training-reaches-fast-convergence-noisy-data/index.html",
@@ -27296,8 +27807,11 @@
         "Yongqi Li",
         "Wenjie Li"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "Hong Kong Polytechnic University",
+        "University of Science and Technology of China"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27328,6 +27842,7 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 39,
       "paper_text_sha256": "acae172b87903df4c2d886af0c888aeacbbb6758477a755dc95ac1d8347216c5",
+      "affiliation_source_url": "https://openalex.org/W7221006331",
       "kind": "research",
       "slug": "targeted-updates-ai-memory-reduce-unwanted-changes",
       "path": "research/targeted-updates-ai-memory-reduce-unwanted-changes/index.html",
@@ -27371,8 +27886,10 @@
         "Mikey Watts",
         "Yuchen Cui"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "University of California, Los Angeles"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27403,6 +27920,7 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 9,
       "paper_text_sha256": "d6189fb6a2e4580b834c23ede6ad75ef79e04a0aeb81267c698c2defdacf757b",
+      "affiliation_source_url": "https://openalex.org/W7220957799",
       "kind": "research",
       "slug": "simple-word-change-can-boost-ai-experts-warn",
       "path": "research/simple-word-change-can-boost-ai-experts-warn/index.html",
@@ -27449,8 +27967,11 @@
         "Rama Chellappa",
         "Homanga Bharadhwaj"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "Johns Hopkins University",
+        "Johns Hopkins University Applied Physics Laboratory"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -27481,6 +28002,7 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 48,
       "paper_text_sha256": "072aac7a9df4973bc42b246c3f1e6eaf46d9fcf1a601da120dea060b139bec87",
+      "affiliation_source_url": "https://openalex.org/W7220998679",
       "kind": "research",
       "slug": "ledger-memory-helps-recall-object-locations-scene-changes",
       "path": "research/ledger-memory-helps-recall-object-locations-scene-changes/index.html",
@@ -28192,8 +28714,12 @@
         "Changyu Chen",
         "Diyi Yang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "institutions": [
+        "Stanford University",
+        "Georgia Institute of Technology",
+        "Carnegie Mellon University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -28224,6 +28750,7 @@
       "full_text_retry_after": "2026-10-14",
       "paper_pages": 32,
       "paper_text_sha256": "791cdad7723284199f5598987c51c06a61ff29bc0c8c990f66ba3ef637376bf5",
+      "affiliation_source_url": "https://openalex.org/W7220917321",
       "kind": "research",
       "slug": "adaptive-teaching-system-shows-mixed-gains-math-learners",
       "path": "research/adaptive-teaching-system-shows-mixed-gains-math-learners/index.html",
@@ -28276,7 +28803,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -28352,7 +28879,7 @@
         "Vladimir Petrik"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -28426,8 +28953,10 @@
         "Kevin Zhang",
         "Stephen Bates"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "institutions": [
+        "Massachusetts Institute of Technology"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -28458,6 +28987,7 @@
       "full_text_retry_after": "2026-10-14",
       "paper_pages": 45,
       "paper_text_sha256": "bcfe12e4f881c6c9be8d194b83b11f82796782f363b4bc050535b9f896dd5ede",
+      "affiliation_source_url": "https://openalex.org/W7221037034",
       "kind": "research",
       "slug": "adding-useful-data-can-shrink-prediction-institute-technology",
       "path": "research/adding-useful-data-can-shrink-prediction-institute-technology/index.html",
@@ -28506,7 +29036,7 @@
         "Cheng Zhang"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -28584,8 +29114,12 @@
         "Manasi Patwardhan",
         "Arman Cohan"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "institutions": [
+        "University of Illinois Urbana-Champaign",
+        "Yale University",
+        "Tata Consultancy Services (India)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -28616,6 +29150,7 @@
       "full_text_retry_after": "2026-10-14",
       "paper_pages": 30,
       "paper_text_sha256": "aacb6711f8c816e8dcd827bce11c960a39b9ff626c6ad6963bca7c8fdc8783c9",
+      "affiliation_source_url": "https://openalex.org/W7220940947",
       "kind": "research",
       "slug": "artificial-intelligence-using-paper-anchors-improves-has-limits",
       "path": "research/artificial-intelligence-using-paper-anchors-improves-has-limits/index.html",
@@ -29392,7 +29927,7 @@
         "Yu-Lun Liu"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -29470,8 +30005,12 @@
         "Sewon Min",
         "Alexei A. Efros"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "institutions": [
+        "University of California, Berkeley",
+        "University of Washington",
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -29502,6 +30041,7 @@
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 56,
       "paper_text_sha256": "0176f0be60772d9e36cc06067ae447bfbad99c8663f08678bfa81ba55c44d828",
+      "affiliation_source_url": "https://openalex.org/W7220869605",
       "kind": "research",
       "slug": "fixing-early-tokens-can-boost-some-coding-tests",
       "path": "research/fixing-early-tokens-can-boost-some-coding-tests/index.html",
@@ -29545,7 +30085,7 @@
         "Gregory D. Bellchambers"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -29623,7 +30163,7 @@
         "Or Patashnik"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -29805,8 +30345,11 @@
         "Bingxin Xu",
         "Yuzhang Shang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "institutions": [
+        "University of Central Florida",
+        "University of Southern California"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -29837,6 +30380,7 @@
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 13,
       "paper_text_sha256": "d946a2969ac39109ff51672b8ba5492e59a792968c0ccd216afba0b9f6727e7d",
+      "affiliation_source_url": "https://openalex.org/W7220718897",
       "kind": "research",
       "slug": "single-demo-video-can-teach-robots-fewer-examples",
       "path": "research/single-demo-video-can-teach-robots-fewer-examples/index.html",
@@ -29881,8 +30425,10 @@
         "Zhiping Lin",
         "Yimin Yang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "institutions": [
+        "Western University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -29913,6 +30459,7 @@
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 19,
       "paper_text_sha256": "18e5fa00e54109a0a2809f32aa9355e1dd7ac76f8bb111cb1d265933ae968b23",
+      "affiliation_source_url": "https://openalex.org/W7220724148",
       "kind": "research",
       "slug": "debiasing-model-backbones-shows-partial-gains-lingering-biases",
       "path": "research/debiasing-model-backbones-shows-partial-gains-lingering-biases/index.html",
@@ -35461,8 +36008,13 @@
         "Seungho Han",
         "Dongyeop Kang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-01T18:25:19.101737+00:00",
+      "institutions": [
+        "University of Minnesota",
+        "Korea Advanced Institute of Science and Technology",
+        "Seoul National University",
+        "Hanyang University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-01T18:25:19.101737+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -35494,6 +36046,7 @@
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
       "full_text_retry_after": "2026-11-05",
+      "affiliation_source_url": "https://openalex.org/W7215116981",
       "kind": "research",
       "slug": "evoduet-boosts-discovery-co-evolving-web-search-evidence-preliminary",
       "path": "research/evoduet-boosts-discovery-co-evolving-web-search-evidence-preliminary/index.html",
@@ -38355,7 +38908,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7214720513",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -38534,7 +39087,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7214705325",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -63374,7 +63927,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7212184418",
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

@@ -73,7 +73,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224120249",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -112,7 +112,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224121694",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -165,7 +165,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224122670",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -212,7 +212,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224093146",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -259,7 +259,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224108955",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -304,7 +304,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224119346",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -392,7 +392,7 @@
         "Egor Bondarev"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -439,8 +439,13 @@
         "Anqi Liu",
         "Laixi Shi"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "institutions": [
+        "University of California San Diego",
+        "Duke University",
+        "Johns Hopkins University",
+        "University of California, Berkeley"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -470,7 +475,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 48,
-      "paper_text_sha256": "ee3081f2ffd58fce20992b9578649cf43ff324ab42e65cf3a5741c6471a40ca3"
+      "paper_text_sha256": "ee3081f2ffd58fce20992b9578649cf43ff324ab42e65cf3a5741c6471a40ca3",
+      "affiliation_source_url": "https://openalex.org/W7223700254"
     },
     {
       "key": "paper:7bbd3a7ad9a42c34a458e0b4",
@@ -484,8 +490,11 @@
         "Lianhui Qin",
         "Shenji Wan"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "institutions": [
+        "New York University",
+        "University of California San Diego"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -515,7 +524,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 25,
-      "paper_text_sha256": "0855b42ebe68ff5ac6d12f806f722fc8f178f70be3a5c28e5daa1d6d7a12bc1b"
+      "paper_text_sha256": "0855b42ebe68ff5ac6d12f806f722fc8f178f70be3a5c28e5daa1d6d7a12bc1b",
+      "affiliation_source_url": "https://openalex.org/W7223670809"
     },
     {
       "key": "paper:785b9bb560f565c8334bd1eb",
@@ -528,7 +538,7 @@
         "Federico Lucca"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -574,8 +584,10 @@
       "authors": [
         "James E. Dobson"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "institutions": [
+        "Dartmouth College"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -605,7 +617,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-11-02",
       "paper_pages": 15,
-      "paper_text_sha256": "69cefd390ebc310e58b65c43679d6ebe042a746c282063c0bb89f22d81e34072"
+      "paper_text_sha256": "69cefd390ebc310e58b65c43679d6ebe042a746c282063c0bb89f22d81e34072",
+      "affiliation_source_url": "https://openalex.org/W7223668919"
     },
     {
       "key": "paper:4d45a5933f739285098c2ef6",
@@ -623,7 +636,7 @@
         "Haozhi Qi"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-26T18:42:15.934233+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -670,7 +683,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223269505",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -716,9 +729,13 @@
         "Kaiyu Hang",
         "Chen Wei"
       ],
-      "institutions": [],
+      "institutions": [
+        "Rice University",
+        "Nvidia (United Kingdom)",
+        "Nvidia (United States)"
+      ],
       "affiliation_source_url": "https://openalex.org/W7223379583",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -766,7 +783,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223406000",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -811,9 +828,11 @@
         "Devansh Gupta",
         "Meisam Razaviyayn"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Southern California"
+      ],
       "affiliation_source_url": "https://openalex.org/W7223320540",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -863,7 +882,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223410188",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -913,7 +932,7 @@
         "Stanford University",
         "University of California, Berkeley"
       ],
-      "affiliation_source_url": "https://arxiv.org/html/2610.31662v1",
+      "affiliation_source_url": "https://openalex.org/W7223293283",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -943,7 +962,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 40,
-      "paper_text_sha256": "a32b153301af90f706156d90892a315bc72122e4002b316416192d9997ccaf58"
+      "paper_text_sha256": "a32b153301af90f706156d90892a315bc72122e4002b316416192d9997ccaf58",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00"
     },
     {
       "key": "paper:ca09311982118ba0a4af82b9",
@@ -956,8 +976,12 @@
         "Imon Banerjee",
         "Pierre Alquier"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "University of Chicago",
+        "École Supérieure des Sciences Économiques et Commerciales",
+        "ESSEC Business School"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -991,7 +1015,8 @@
       "manual_source_audit": {
         "date": "2026-10-26",
         "approved": true
-      }
+      },
+      "affiliation_source_url": "https://openalex.org/W7223205593"
     },
     {
       "key": "paper:c36ad19ab1722e275d8ae7fd",
@@ -1011,7 +1036,7 @@
         "Jeong Joon Park"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1057,8 +1082,10 @@
         "Sunhao Dai",
         "Jun Xu"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Renmin University of China"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1088,7 +1115,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-29",
       "paper_pages": 13,
-      "paper_text_sha256": "bd9d8dc055c73891b8b83d5079accf4cd1571b823879c3d5bfd807c2692cd8bf"
+      "paper_text_sha256": "bd9d8dc055c73891b8b83d5079accf4cd1571b823879c3d5bfd807c2692cd8bf",
+      "affiliation_source_url": "https://openalex.org/W7223230235"
     },
     {
       "key": "paper:80b7f4f901f2d036315cb5ea",
@@ -1101,8 +1129,10 @@
         "Francesco Mori",
         "Melanie Weber"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Harvard University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1136,7 +1166,8 @@
       "manual_source_audit": {
         "date": "2026-10-26",
         "approved": true
-      }
+      },
+      "affiliation_source_url": "https://openalex.org/W7223198452"
     },
     {
       "key": "paper:477b549028f8ddbeb5ab9909",
@@ -1149,8 +1180,10 @@
         "Zhennan Wan",
         "Jianfei Chen"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Tsinghua University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1180,7 +1213,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-29",
       "paper_pages": 17,
-      "paper_text_sha256": "1744baf70ba2fc8bae9e0626952be09451d0b483b46542442c7b628e82ebd4db"
+      "paper_text_sha256": "1744baf70ba2fc8bae9e0626952be09451d0b483b46542442c7b628e82ebd4db",
+      "affiliation_source_url": "https://openalex.org/W7223228096"
     },
     {
       "key": "paper:45e83a947a80ae191ee436a7",
@@ -1193,8 +1227,10 @@
         "Ashkan Soleymani",
         "Gabriele Farina"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-22T17:08:47.180502+00:00",
+      "institutions": [
+        "Massachusetts Institute of Technology"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-22T17:08:47.180502+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1222,7 +1258,8 @@
       "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
-      "full_text_retry_after": "2026-10-29"
+      "full_text_retry_after": "2026-10-29",
+      "affiliation_source_url": "https://openalex.org/W7223230721"
     },
     {
       "key": "paper:950cc7fc17d32a70459713fe",
@@ -1238,8 +1275,10 @@
         "Xiandong Li",
         "Yujin Wang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "institutions": [
+        "Baidu (China)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1273,7 +1312,8 @@
       "manual_source_audit": {
         "date": "2026-10-26",
         "approved": true
-      }
+      },
+      "affiliation_source_url": "https://openalex.org/W7223055148"
     },
     {
       "key": "paper:885df656780abfb1fd6e1b17",
@@ -1297,7 +1337,7 @@
         "Jiachen Li"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1350,7 +1390,7 @@
         "Kai-Wei Chang"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1401,8 +1441,12 @@
         "Li Fei-Fei",
         "Michael Poli"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-20T17:01:18.474396+00:00",
+      "institutions": [
+        "V. G. Khlopin Radium Institute",
+        "Radica Systems (China)",
+        "Stanford University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1436,7 +1480,8 @@
       "manual_source_audit": {
         "date": "2026-10-26",
         "approved": true
-      }
+      },
+      "affiliation_source_url": "https://openalex.org/W7223048829"
     },
     {
       "key": "paper:42e65efeb0db42baec4a0f8b",
@@ -1483,7 +1528,7 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 45,
       "paper_text_sha256": "0d5cf90b1e05d034b254abed0e13eedbe5a82d9cd6adec154e14f98609c0ca3c",
-      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "affiliation_source_url": "https://openalex.org/W7223028650"
     },
     {
@@ -1537,7 +1582,7 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 18,
       "paper_text_sha256": "18702c0d20c72c758be931667e230970bb1c5e47df54d27f475add74bf99eeca",
-      "affiliation_checked_at": "2026-10-27T09:11:57.384599+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "affiliation_source_url": "https://openalex.org/W7223060590"
     },
     {
@@ -1555,8 +1600,11 @@
         "Nathalie Baracaldo",
         "Kimin Lee"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Korea Advanced Institute of Science and Technology",
+        "IBM (United States)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1586,7 +1634,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 30,
-      "paper_text_sha256": "f6b2543720cb958cccb14993d61635b7de18c048c719ec4e8c9a5776a1383ac2"
+      "paper_text_sha256": "f6b2543720cb958cccb14993d61635b7de18c048c719ec4e8c9a5776a1383ac2",
+      "affiliation_source_url": "https://openalex.org/W7222941228"
     },
     {
       "key": "paper:7466a626537fe0a82e35c116",
@@ -1603,8 +1652,11 @@
         "Evert van Nieuwenburg",
         "Vedran Dunjko"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Leiden University",
+        "Airbus Defence and Space GmbH (Germany)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1634,7 +1686,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 29,
-      "paper_text_sha256": "506caad55b7a3352b0ff7c08a0d2c0a86205f4698277bff1cd70582b70a8b48b"
+      "paper_text_sha256": "506caad55b7a3352b0ff7c08a0d2c0a86205f4698277bff1cd70582b70a8b48b",
+      "affiliation_source_url": "https://openalex.org/W7222968586"
     },
     {
       "key": "paper:73719334b220689bc34e3c32",
@@ -1700,7 +1753,7 @@
         "Aniruddha Mahapatra"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1747,8 +1800,13 @@
         "Joel Reardon",
         "Indrakshi Ray"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Colorado State University",
+        "New Jersey Institute of Technology",
+        "University of Calgary",
+        "Stony Brook University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1778,7 +1836,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 12,
-      "paper_text_sha256": "da71f1f620d1443e255395c3ab8edcbbea865e2f138b1110bb3cbc7ff802d03c"
+      "paper_text_sha256": "da71f1f620d1443e255395c3ab8edcbbea865e2f138b1110bb3cbc7ff802d03c",
+      "affiliation_source_url": "https://openalex.org/W7222953278"
     },
     {
       "key": "paper:2ea1e541983978373168f001",
@@ -1813,8 +1872,17 @@
         "Yingcheng Wu",
         "Ling Yang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Chinese University of Hong Kong",
+        "University of Michigan",
+        "National University of Singapore",
+        "Princeton University",
+        "Peking University People's Hospital",
+        "Fudan University",
+        "Peking University",
+        "Stanford University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1844,7 +1912,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 39,
-      "paper_text_sha256": "0bcd4b9fa14a08ad1055bcc7739d341b26ec31a172f7626963cd51cff4f9a736"
+      "paper_text_sha256": "0bcd4b9fa14a08ad1055bcc7739d341b26ec31a172f7626963cd51cff4f9a736",
+      "affiliation_source_url": "https://openalex.org/W7222955595"
     },
     {
       "key": "paper:13dac6b11dbbb4f5907945b0",
@@ -1864,8 +1933,12 @@
         "James C. Dickerson",
         "Monica S. Lam"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-19T18:41:31.850697+00:00",
+      "institutions": [
+        "Stanford University",
+        "University of Massachusetts Amherst",
+        "Stanford Medicine"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-19T18:41:31.850697+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1895,7 +1968,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-26",
       "paper_pages": 61,
-      "paper_text_sha256": "411ea76f93df166fb30d49523a6f02ba6d3772c875ed9421cc018ac5e4f96105"
+      "paper_text_sha256": "411ea76f93df166fb30d49523a6f02ba6d3772c875ed9421cc018ac5e4f96105",
+      "affiliation_source_url": "https://openalex.org/W7222950516"
     },
     {
       "key": "paper:fc85cf610b63b353b53ceaa6",
@@ -1921,7 +1995,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222498763",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1976,7 +2050,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222556117",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2021,9 +2095,12 @@
         "Susanne F. Yelin",
         "Mikhail D. Lukin"
       ],
-      "institutions": [],
+      "institutions": [
+        "QuEra Computing (United States)",
+        "Harvard University"
+      ],
       "affiliation_source_url": "https://openalex.org/W7222580396",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2074,7 +2151,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222418060",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2123,9 +2200,12 @@
         "Michael Bohlke-Schneider",
         "Bernie Wang"
       ],
-      "institutions": [],
+      "institutions": [
+        "California Institute of Technology",
+        "Amazon (United States)"
+      ],
       "affiliation_source_url": "https://openalex.org/W7222685402",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2178,7 +2258,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222575962",
-      "affiliation_checked_at": "2026-10-16T16:37:13.714475+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2223,8 +2303,11 @@
         "Gertjan J. Burghouts",
         "Cees G. M. Snoek"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "University of Amsterdam",
+        "Netherlands Organisation for Applied Scientific Research"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2254,7 +2337,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 48,
-      "paper_text_sha256": "70062b89505ec0a843f072e25175c78543b0b4b1a640c63b22940d5714d7dde0"
+      "paper_text_sha256": "70062b89505ec0a843f072e25175c78543b0b4b1a640c63b22940d5714d7dde0",
+      "affiliation_source_url": "https://openalex.org/W7222241426"
     },
     {
       "key": "paper:62a5453460a8a204b01b2fa1",
@@ -2270,7 +2354,7 @@
         "Koushil Sreenath"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2317,8 +2401,10 @@
         "Michael Kaisers",
         "Adam Fisch"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "Google (United States)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2348,7 +2434,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 40,
-      "paper_text_sha256": "c3e7b1a59f8e7ebf8cdc3f1fcc33646605d6717e4f151494ec5a924b76ca0ba8"
+      "paper_text_sha256": "c3e7b1a59f8e7ebf8cdc3f1fcc33646605d6717e4f151494ec5a924b76ca0ba8",
+      "affiliation_source_url": "https://openalex.org/W7222030852"
     },
     {
       "key": "paper:350a1d938f480da12367f6bb",
@@ -2363,8 +2450,12 @@
         "Zehao Wang",
         "Jiachen Li"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "Northeastern University",
+        "University of California, Riverside",
+        "Georgia Institute of Technology"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2394,7 +2485,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 20,
-      "paper_text_sha256": "43b53edc08dea1d8276af524edbb76b427527126eaa8dfb4fcb7bfd69e2b1b2f"
+      "paper_text_sha256": "43b53edc08dea1d8276af524edbb76b427527126eaa8dfb4fcb7bfd69e2b1b2f",
+      "affiliation_source_url": "https://openalex.org/W7222239080"
     },
     {
       "key": "paper:2f957ce8eb10b9f003400850",
@@ -2414,8 +2506,12 @@
         "Shuang Yang",
         "Jiaxuan You"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "University of Illinois Urbana-Champaign",
+        "University of California San Diego",
+        "Meta (United States)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2447,7 +2543,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-23",
       "paper_pages": 31,
-      "paper_text_sha256": "6e45a9339df2a41aebb5d0bcd88beefe01c11ebc97b31c6b872eca7cd3f6c6e0"
+      "paper_text_sha256": "6e45a9339df2a41aebb5d0bcd88beefe01c11ebc97b31c6b872eca7cd3f6c6e0",
+      "affiliation_source_url": "https://openalex.org/W7221858561"
     },
     {
       "key": "paper:1dc9535c5cc22676d4d166eb",
@@ -2459,8 +2556,11 @@
       "authors": [
         "Afshin Khadangi"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-15T16:59:12.591468+00:00",
+      "institutions": [
+        "University of Luxembourg",
+        "Interdisciplinary Centre for Security, Reliability and Trust"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-15T16:59:12.591468+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2490,7 +2590,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-22",
       "paper_pages": 14,
-      "paper_text_sha256": "39364af120cb6fb7f07ae7a7618de57abbdf6cddcab2f3cac38ced8e8235f161"
+      "paper_text_sha256": "39364af120cb6fb7f07ae7a7618de57abbdf6cddcab2f3cac38ced8e8235f161",
+      "affiliation_source_url": "https://openalex.org/W7222208923"
     },
     {
       "key": "paper:aef142187047eea442a6b8ca",
@@ -2505,7 +2606,7 @@
         "Yu-Lun Liu"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2569,7 +2670,7 @@
         "Jiachen Li"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2615,8 +2716,12 @@
         "Karl Jansen",
         "Shinichi Nakajima"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "Technische Universität Berlin",
+        "Cyprus Institute",
+        "Deutsches Elektronen-Synchrotron DESY"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2646,7 +2751,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 8,
-      "paper_text_sha256": "5bfbd4613a9e927dc669adeead54da9f044ce46222da8340341d677960f24d3a"
+      "paper_text_sha256": "5bfbd4613a9e927dc669adeead54da9f044ce46222da8340341d677960f24d3a",
+      "affiliation_source_url": "https://openalex.org/W7221781945"
     },
     {
       "key": "paper:410606f0acbf6afe75ca42b2",
@@ -2659,8 +2765,11 @@
         "Minghao Luo",
         "Liang Chen"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "Chinese University of Hong Kong",
+        "École Polytechnique Fédérale de Lausanne"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2690,7 +2799,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 23,
-      "paper_text_sha256": "363f0dbd2bf8836c58a8c3d8840c165940bc5a3d4e9247e1e3edfd8b073d2963"
+      "paper_text_sha256": "363f0dbd2bf8836c58a8c3d8840c165940bc5a3d4e9247e1e3edfd8b073d2963",
+      "affiliation_source_url": "https://openalex.org/W7221778062"
     },
     {
       "key": "paper:24842f165e9a0b556a4d781b",
@@ -2707,8 +2817,12 @@
         "Yuzhang Shang",
         "Emilio Ferrara"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "University of Southern California",
+        "University of Central Florida",
+        "Stony Brook University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2738,7 +2852,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 12,
-      "paper_text_sha256": "879f656ebc3fd525ba3bd2ddb2cfc9613590d82687420947684bb3453ca71110"
+      "paper_text_sha256": "879f656ebc3fd525ba3bd2ddb2cfc9613590d82687420947684bb3453ca71110",
+      "affiliation_source_url": "https://openalex.org/W7221786049"
     },
     {
       "key": "paper:214dec5532c4cb3bfe817fe3",
@@ -2755,8 +2870,11 @@
         "Kai-Wei Chang",
         "Yong Jae Lee"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "institutions": [
+        "Adobe Systems (United States)",
+        "University of California, Los Angeles"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2786,7 +2904,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-21",
       "paper_pages": 39,
-      "paper_text_sha256": "b2120754e0cd0fa95a60272afb3d4278be9b6d6abc2f568cd29a5c60a2a11d42"
+      "paper_text_sha256": "b2120754e0cd0fa95a60272afb3d4278be9b6d6abc2f568cd29a5c60a2a11d42",
+      "affiliation_source_url": "https://openalex.org/W7221771723"
     },
     {
       "key": "paper:95bec2e0376f84aa8d30aacb",
@@ -2803,7 +2922,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221535013",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2895,7 +3014,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221570310",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2939,7 +3058,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221532418",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2984,9 +3103,11 @@
         "Raymond Douglas",
         "Christian Schroeder de Witt"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Oxford"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221522658",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3031,9 +3152,11 @@
         "Shanmugarajan Balasubramanian",
         "Elif Uysal"
       ],
-      "institutions": [],
+      "institutions": [
+        "Middle East Technical University"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221552514",
-      "affiliation_checked_at": "2026-10-12T21:16:03.497361+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3076,9 +3199,11 @@
         "Drew T. Nguyen",
         "William Fithian"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of California, Berkeley"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221103730",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3128,7 +3253,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7221094165",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3170,9 +3295,11 @@
       "authors": [
         "Abbas Raftari"
       ],
-      "institutions": [],
+      "institutions": [
+        "Walsh College"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221118714",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3220,9 +3347,11 @@
         "Rosario Scalise",
         "Byron Boots"
       ],
-      "institutions": [],
+      "institutions": [
+        "University of Washington"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221144332",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3266,9 +3395,12 @@
         "Yassine Ouali",
         "Georgios Tzimiropoulos"
       ],
-      "institutions": [],
+      "institutions": [
+        "Gheorghe Asachi Technical University of Iași",
+        "Queen Mary University of London"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221150102",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3314,9 +3446,13 @@
         "Cordelia Schmid",
         "Jiajun Wu"
       ],
-      "institutions": [],
+      "institutions": [
+        "Max Planck Institute for Intelligent Systems",
+        "Stanford University",
+        "Institut national de recherche en sciences et technologies du numérique"
+      ],
       "affiliation_source_url": "https://openalex.org/W7221158853",
-      "affiliation_checked_at": "2026-10-10T17:20:44.432451+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3374,7 +3510,7 @@
         "Yukang Chen"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3417,8 +3553,10 @@
         "Saif Punjwani",
         "Micah Goldblum"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "Columbia University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3448,7 +3586,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 20,
-      "paper_text_sha256": "b85f48cd6a6b8d0ae59e38674659e3335d5ad8e48f43d59a6998de2dd12857de"
+      "paper_text_sha256": "b85f48cd6a6b8d0ae59e38674659e3335d5ad8e48f43d59a6998de2dd12857de",
+      "affiliation_source_url": "https://openalex.org/W7220986689"
     },
     {
       "key": "paper:df8bfe89a17081f4ddd36d12",
@@ -3462,8 +3601,10 @@
         "Haoyuan Cai",
         "Ali H. Sayed"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "École Polytechnique Fédérale de Lausanne"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3493,7 +3634,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 36,
-      "paper_text_sha256": "e82048392eb3b3c4d69d265e71334e60d4416c461ac8a2b3ff95f99b8547f609"
+      "paper_text_sha256": "e82048392eb3b3c4d69d265e71334e60d4416c461ac8a2b3ff95f99b8547f609",
+      "affiliation_source_url": "https://openalex.org/W7220978541"
     },
     {
       "key": "paper:c5c68c1a65cf3976a4883771",
@@ -3511,8 +3653,11 @@
         "Yongqi Li",
         "Wenjie Li"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "Hong Kong Polytechnic University",
+        "University of Science and Technology of China"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3542,7 +3687,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 39,
-      "paper_text_sha256": "acae172b87903df4c2d886af0c888aeacbbb6758477a755dc95ac1d8347216c5"
+      "paper_text_sha256": "acae172b87903df4c2d886af0c888aeacbbb6758477a755dc95ac1d8347216c5",
+      "affiliation_source_url": "https://openalex.org/W7221006331"
     },
     {
       "key": "paper:c14779f2225e1ef304f1fffd",
@@ -3555,8 +3701,10 @@
         "Mikey Watts",
         "Yuchen Cui"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "University of California, Los Angeles"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3586,7 +3734,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 9,
-      "paper_text_sha256": "d6189fb6a2e4580b834c23ede6ad75ef79e04a0aeb81267c698c2defdacf757b"
+      "paper_text_sha256": "d6189fb6a2e4580b834c23ede6ad75ef79e04a0aeb81267c698c2defdacf757b",
+      "affiliation_source_url": "https://openalex.org/W7220957799"
     },
     {
       "key": "paper:8aab2aec69ddadbff5c1fabe",
@@ -3602,8 +3751,11 @@
         "Rama Chellappa",
         "Homanga Bharadhwaj"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-08T18:50:49.114521+00:00",
+      "institutions": [
+        "Johns Hopkins University",
+        "Johns Hopkins University Applied Physics Laboratory"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3633,7 +3785,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 48,
-      "paper_text_sha256": "072aac7a9df4973bc42b246c3f1e6eaf46d9fcf1a601da120dea060b139bec87"
+      "paper_text_sha256": "072aac7a9df4973bc42b246c3f1e6eaf46d9fcf1a601da120dea060b139bec87",
+      "affiliation_source_url": "https://openalex.org/W7220998679"
     },
     {
       "key": "paper:ffef774ddb3a189377388257",
@@ -3649,8 +3802,12 @@
         "Changyu Chen",
         "Diyi Yang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "institutions": [
+        "Stanford University",
+        "Georgia Institute of Technology",
+        "Carnegie Mellon University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3680,7 +3837,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-14",
       "paper_pages": 32,
-      "paper_text_sha256": "791cdad7723284199f5598987c51c06a61ff29bc0c8c990f66ba3ef637376bf5"
+      "paper_text_sha256": "791cdad7723284199f5598987c51c06a61ff29bc0c8c990f66ba3ef637376bf5",
+      "affiliation_source_url": "https://openalex.org/W7220917321"
     },
     {
       "key": "paper:ec6051cd7f4df06fe3d3d58b",
@@ -3702,7 +3860,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3747,7 +3905,7 @@
         "Vladimir Petrik"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3790,8 +3948,10 @@
         "Kevin Zhang",
         "Stephen Bates"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "institutions": [
+        "Massachusetts Institute of Technology"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3821,7 +3981,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-14",
       "paper_pages": 45,
-      "paper_text_sha256": "bcfe12e4f881c6c9be8d194b83b11f82796782f363b4bc050535b9f896dd5ede"
+      "paper_text_sha256": "bcfe12e4f881c6c9be8d194b83b11f82796782f363b4bc050535b9f896dd5ede",
+      "affiliation_source_url": "https://openalex.org/W7221037034"
     },
     {
       "key": "paper:638dcb62b97028e23e0ca672",
@@ -3839,7 +4000,7 @@
         "Cheng Zhang"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3886,8 +4047,12 @@
         "Manasi Patwardhan",
         "Arman Cohan"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-07T18:57:25.012871+00:00",
+      "institutions": [
+        "University of Illinois Urbana-Champaign",
+        "Yale University",
+        "Tata Consultancy Services (India)"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3917,7 +4082,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-14",
       "paper_pages": 30,
-      "paper_text_sha256": "aacb6711f8c816e8dcd827bce11c960a39b9ff626c6ad6963bca7c8fdc8783c9"
+      "paper_text_sha256": "aacb6711f8c816e8dcd827bce11c960a39b9ff626c6ad6963bca7c8fdc8783c9",
+      "affiliation_source_url": "https://openalex.org/W7220940947"
     },
     {
       "key": "paper:ee90b4329340ff0ca7cce9e5",
@@ -3935,7 +4101,7 @@
         "Yu-Lun Liu"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3982,8 +4148,12 @@
         "Sewon Min",
         "Alexei A. Efros"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "institutions": [
+        "University of California, Berkeley",
+        "University of Washington",
+        "Allen Institute for Artificial Intelligence"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4013,7 +4183,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 56,
-      "paper_text_sha256": "0176f0be60772d9e36cc06067ae447bfbad99c8663f08678bfa81ba55c44d828"
+      "paper_text_sha256": "0176f0be60772d9e36cc06067ae447bfbad99c8663f08678bfa81ba55c44d828",
+      "affiliation_source_url": "https://openalex.org/W7220869605"
     },
     {
       "key": "paper:bed346eb8166e98841e252c5",
@@ -4026,7 +4197,7 @@
         "Gregory D. Bellchambers"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4073,7 +4244,7 @@
         "Or Patashnik"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4193,8 +4364,11 @@
         "Bingxin Xu",
         "Yuzhang Shang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "institutions": [
+        "University of Central Florida",
+        "University of Southern California"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4224,7 +4398,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 13,
-      "paper_text_sha256": "d946a2969ac39109ff51672b8ba5492e59a792968c0ccd216afba0b9f6727e7d"
+      "paper_text_sha256": "d946a2969ac39109ff51672b8ba5492e59a792968c0ccd216afba0b9f6727e7d",
+      "affiliation_source_url": "https://openalex.org/W7220718897"
     },
     {
       "key": "paper:0b9ac466361f212a7f400797",
@@ -4238,8 +4413,10 @@
         "Zhiping Lin",
         "Yimin Yang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-06T18:20:42.601087+00:00",
+      "institutions": [
+        "Western University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4269,7 +4446,8 @@
       "full_text_status": "read",
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 19,
-      "paper_text_sha256": "18e5fa00e54109a0a2809f32aa9355e1dd7ac76f8bb111cb1d265933ae968b23"
+      "paper_text_sha256": "18e5fa00e54109a0a2809f32aa9355e1dd7ac76f8bb111cb1d265933ae968b23",
+      "affiliation_source_url": "https://openalex.org/W7220724148"
     },
     {
       "key": "paper:beaf7b4a534a2a4135c21b97",
@@ -4345,8 +4523,13 @@
         "Seungho Han",
         "Dongyeop Kang"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-01T18:25:19.101737+00:00",
+      "institutions": [
+        "University of Minnesota",
+        "Korea Advanced Institute of Science and Technology",
+        "Seoul National University",
+        "Hanyang University"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-01T18:25:19.101737+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4377,7 +4560,8 @@
       "editorial_engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
-      "full_text_retry_after": "2026-11-05"
+      "full_text_retry_after": "2026-11-05",
+      "affiliation_source_url": "https://openalex.org/W7215116981"
     },
     {
       "key": "paper:f2dff715da7f13e829ff9f32",
@@ -4402,7 +4586,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7214720513",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4458,7 +4642,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7214705325",
-      "affiliation_checked_at": "2026-10-29T20:05:34.451488+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4667,7 +4851,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7212184418",
-      "affiliation_checked_at": "2026-10-14T17:09:14.296497+00:00",
+      "affiliation_checked_at": "2026-10-30T07:36:23.560213+00:00",
       "source_verified_at": "2026-10-14T17:09:14.296497+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
