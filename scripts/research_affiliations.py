@@ -120,8 +120,7 @@ class _ArxivAuthorInstitutions(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
         self.depth = 0
-        self.cell = None
-        self.cells = []
+        self.parts = []
 
     def handle_starttag(self, tag, attrs):
         classes = dict(attrs).get("class", "").split()
@@ -130,21 +129,16 @@ class _ArxivAuthorInstitutions(HTMLParser):
         elif self.depth:
             if tag == "div":
                 self.depth += 1
-            if tag == "span" and "ltx_td" in classes:
-                self.cell = []
 
     def handle_endtag(self, tag):
-        if self.depth and tag == "span" and self.cell is not None:
-            value = _plain("".join(self.cell))
-            if value:
-                self.cells.append(value)
-            self.cell = None
         if self.depth and tag == "div":
             self.depth -= 1
 
     def handle_data(self, data):
-        if self.cell is not None:
-            self.cell.append(data)
+        if self.depth:
+            value = _plain(data)
+            if value:
+                self.parts.append(value)
 
 
 def _arxiv_institutions(paper):
@@ -156,13 +150,15 @@ def _arxiv_institutions(paper):
     response.raise_for_status()
     parser = _ArxivAuthorInstitutions()
     parser.feed(response.text)
-    authors = {_normal(a) for a in paper.get("authors") or []}
-    if not authors.intersection({_normal(cell) for cell in parser.cells}):
+    author_block = _normal(" ".join(parser.parts))
+    if not any(_normal(author) in author_block for author in paper.get("authors") or [] if _normal(author)):
         return [], ""
     names = []
-    for cell in parser.cells:
-        if re.search(r"\b(university|université|universidad|institute|college|academy)\b", cell, re.I) and _normal(cell) not in {_normal(name) for name in names}:
-            names.append(cell)
+    for part in parser.parts:
+        if (re.search(r"\b(university|université|universidad|institute|college|academy)\b", part, re.I)
+                and len(part) < 140 and "@" not in part
+                and _normal(part) not in {_normal(name) for name in names}):
+            names.append(part)
     return names[:8], url if names else ""
 
 
@@ -190,7 +186,10 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
             source_ok = True
 
         affiliation_age = _age_days(paper.get("affiliation_checked_at"), now)
-        if paper["institutions"] and affiliation_age is not None and affiliation_age < refresh_days:
+        fallback_age = _age_days(paper.get("affiliation_fallback_checked_at"), now)
+        if (affiliation_age is not None and affiliation_age < refresh_days
+                and (paper["institutions"] or not paper.get("arxiv_id")
+                     or (fallback_age is not None and fallback_age < refresh_days))):
             status.append({
                 "key": paper.get("key"),
                 "status": "cached",
@@ -213,6 +212,7 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
                 result = "not_matched"
             if (not paper["institutions"] or paper.get("affiliation_source_url", "").startswith("https://arxiv.org/html/")) and paper.get("arxiv_id"):
                 names, url = _arxiv_institutions(paper)
+                paper["affiliation_fallback_checked_at"] = verified_at
                 if names:
                     paper["institutions"] = names
                     paper["affiliation_source_url"] = url
@@ -226,6 +226,7 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
         except (requests.RequestException, ValueError, TypeError):
             try:
                 names, url = _arxiv_institutions(paper)
+                paper["affiliation_fallback_checked_at"] = verified_at
                 if names:
                     paper["institutions"] = names
                     paper["affiliation_source_url"] = url
