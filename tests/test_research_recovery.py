@@ -12,7 +12,7 @@ import research_recovery as recovery
 from research_pdf import abstract_from_text
 from research_reading import READING_VERSION
 import editorial_engine as engine
-from generate_research_summaries import merge_recent, pending
+from generate_research_summaries import merge_recent, pending, research_work_order
 
 
 class ResearchRecovery(unittest.TestCase):
@@ -94,6 +94,13 @@ class ResearchRecovery(unittest.TestCase):
         prior.update(prompt_version=PROMPT_VERSION,editorial_engine_version=ENGINE_VERSION)
         with patch('generate_research_summaries.ai_runtime.uses_openai',return_value=False):
             self.assertEqual(pending({'papers':[paper]},{paper['key']:prior}),[paper])
+
+    def test_visible_source_only_pages_precede_new_papers_despite_retry_count(self):
+        pending_paper={'key':'paper:old','date':'2026-10-26'}
+        new_paper={'key':'paper:new','date':'2026-10-30'}
+        old={'paper:old':{'has_editorial':False}}
+        retry={'paper:old':{'attempts':3}}
+        self.assertEqual(research_work_order([new_paper,pending_paper],old,retry,[])[0],pending_paper)
 
 if __name__ == '__main__':
     unittest.main()
