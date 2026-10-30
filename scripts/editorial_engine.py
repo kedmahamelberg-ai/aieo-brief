@@ -8,6 +8,7 @@ import claim_grounding
 from research_reading import style_problem
 import requests
 from source_evidence_quality import evidence_chunks
+from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
@@ -151,7 +152,6 @@ def resolve_support(draft,catalog):
    support.update(passage)
  return draft
 
-DRAFT_MARKER=re.compile(r'\b(?:[a-z0-9_]*_placeholder[a-z0-9_]*|placeholder_[a-z0-9_]+|limitation_[a-z0-9_]+|(?:for_humans|for_ai|evidence_basis|claim_status)_[a-z0-9_]+)\b',re.I)
 def normalized(value):return re.sub(r'\s+',' ',str(value or '')).strip()
 
 def numeric_values(text):
@@ -302,7 +302,7 @@ def validate_draft(d,sources,kind='news'):
   supported.add(support.get('field'))
  if not {'editorial_headline','what_happened','why_it_matters'}.issubset(supported):raise ValueError('Headline, development and significance each need source support.')
  public=' '.join(d[k] for k in TEXT_FIELDS)+' '+' '.join(d['body_paragraphs'])+' '+str(d.get('limitation',''))
- if DRAFT_MARKER.search(public):raise ValueError('Draft contains a placeholder marker')
+ if DRAFT_MARKER.search(public) or any(FIELD_FRAGMENT.match(p) or LEADING_ARTIFACT.match(p) for p in d['body_paragraphs']):raise ValueError('Draft contains a placeholder marker')
  copied=copied_phrase(public,[s['evidence'] for s in sources])
  if copied:raise ValueError('The draft repeats ten consecutive source words. Rewrite this passage in original language: '+copied)
  source_numbers=' '.join(s['evidence']+' '+s.get('headline','') for s in sources)
