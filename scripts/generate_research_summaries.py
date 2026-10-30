@@ -28,6 +28,18 @@ def pending(data,old):
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
 
+def research_work_order(papers,old,retry,priority):
+    def rank(p):
+        prior=old.get(p['key'])
+        if prior and not prior.get('has_editorial'):
+            return 0  # Repair a visible source-only page first.
+        if prior and p.get('pdf_url') and p['pdf_url']!=prior.get('pdf_url'):
+            return 1  # Reopen an abstract when the original PDF becomes available.
+        if prior and needs_upgrade(prior):
+            return 2
+        return 3 if not prior else 4
+    return sorted(papers,key=lambda p:(p['key'] not in priority,rank(p),retry.get(p['key'],{}).get('attempts',0),-date.fromisoformat(p['date']).toordinal(),p['key']))
+
 def merge_recent(old,updates,end,days=28):
     cutoff=(date.fromisoformat(end)-timedelta(days=days-1)).isoformat()
     merged={key:r for key,r in old.items() if cutoff<=r.get('date','')<=end}
@@ -56,7 +68,7 @@ def main():
         retry_path.write_text(json.dumps(retry,indent=2)+'\n')
     priority_file=ROOT/'data/research/reading-priority.json'
     priority=json.loads(priority_file.read_text()) if priority_file.exists() else []
-    work=sorted(data['papers'],key=lambda p:(p['key'] not in priority,old.get(p['key'],{}).get('has_editorial',False),retry.get(p['key'],{}).get('attempts',0),-date.fromisoformat(p['date']).toordinal(),p['key']))
+    work=research_work_order(data['papers'],old,retry,priority)
     for n,p in enumerate(work):
         if not safe_url(p.get('url')):continue
         prior=old.get(p['key'],{})
