@@ -35,7 +35,7 @@ class OpenAIEditorial(unittest.TestCase):
         with patch.object(ai,'completion',side_effect=error) as request:
             with self.assertRaises(ai.AIError):engine.call_json('Private source',schema,stage='scope_review')
         self.assertEqual(request.call_args.kwargs['max_completion_tokens'],32768)
-        self.assertEqual(request.call_args.kwargs['reasoning_effort'],'medium')
+        self.assertEqual([call.kwargs['reasoning_effort'] for call in request.call_args_list],['medium','low'])
         diagnostic=engine.failure_diagnostic(error,'generation')
         self.assertEqual(diagnostic['code'],'model_output_limit')
         self.assertEqual(diagnostic['stage'],'scope_review')
@@ -44,3 +44,11 @@ class OpenAIEditorial(unittest.TestCase):
         with patch.object(ai,'completion',side_effect=ai.AIError('Unavailable')) as request:
             with self.assertRaises(ai.AIError):engine.call_json('Source',{'properties':{'field_reviews':{'minItems':1}}},stage='scope_review')
         self.assertNotIn('max_completion_tokens',request.call_args.kwargs)
+
+    def test_output_limit_retry_still_requires_a_complete_review(self):
+        schema={'properties':{'field_reviews':{'minItems':9}}}
+        answer={'choices':[{'message':{'content':'{"field_reviews": []}'}}]}
+        with patch.object(ai,'completion',side_effect=[ai.AIError('unfinished',code='model_output_limit'),answer]) as request:
+            result=engine.call_json('Private source',schema,stage='scope_review')
+        self.assertEqual(result,{'field_reviews':[]})
+        self.assertEqual([call.kwargs['reasoning_effort'] for call in request.call_args_list],['medium','low'])
