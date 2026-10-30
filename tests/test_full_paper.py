@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf, style_problem
+from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
 import editorial_engine as engine
 from validate_public_site import validate_research_reading, validate_weekly_research_window
 
@@ -63,6 +63,14 @@ class FullPaperReading(unittest.TestCase):
         self.assertTrue(needs_upgrade({**row,'evidence_scope':'abstract','full_text_retry_after':'2020-01-01'}))
         self.assertFalse(needs_upgrade({**row,'evidence_scope':'abstract','full_text_retry_after':'2099-01-01'}))
         self.assertFalse(allowed_pdf('https://arxiv.org.evil.example/paper'))
+
+    def test_crossref_unspecified_pnas_pdf_is_accepted_only_for_exact_doi(self):
+        doi='10.1073/pnas.2628851123'
+        good='https://pnas.org/doi/pdf/'+doi
+        links=[{'URL':good,'content-type':'unspecified'},
+               {'URL':'https://pnas.org/doi/pdf/10.1073/pnas.999','content-type':'unspecified'},
+               {'URL':good+'.evil.example','content-type':'unspecified'}]
+        self.assertEqual(publisher_pdf_urls(doi,links),[good])
     def test_segment_ids_resolve_to_exact_evidence(self):
         with patch.object(engine,'call_json',return_value={'note':'A supported note.','quote_ids':[0]}):
             note,quotes=engine.read_segment('The complete source sentence describes a tested method.',None)

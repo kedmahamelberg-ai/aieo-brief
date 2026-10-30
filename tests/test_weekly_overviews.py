@@ -93,6 +93,20 @@ class ResearchAffiliationTests(unittest.TestCase):
         self.assertEqual(paper['institutions'],[])
         self.assertFalse(result[0]['source_verified'])
 
+    def test_arxiv_author_affiliations_do_not_use_repository_host(self):
+        paper={**self.paper(),'arxiv_id':'2610.31662v1','authors':['Isaac Gibbs','Elise L. Han'],
+               'institutions':[],'affiliation_checked_at':'2026-10-23T17:04:52Z'}
+        html='''<div class="ltx_authors"><span class="ltx_td">Isaac Gibbs</span>
+        <span class="ltx_td">University of Toronto</span><span class="ltx_td">Elise L. Han</span>
+        <span class="ltx_td">Stanford University</span></div>'''
+        work={'id':'https://openalex.org/W7223293283','authorships':[],
+              'primary_location':{'source':{'display_name':'arXiv (Cornell University)'}}}
+        with patch('research_affiliations._verify_source',return_value=True), patch('research_affiliations._lookup',return_value=work), patch('research_affiliations.requests.get',return_value=type('Response',(),{'text':html,'raise_for_status':lambda self:None})()), patch('research_affiliations.time.sleep'):
+            result=enrich_affiliations([paper])
+        self.assertEqual(paper['institutions'],['University of Toronto','Stanford University'])
+        self.assertEqual(paper['affiliation_source_url'],'https://arxiv.org/html/2610.31662v1')
+        self.assertEqual(result[0]['status'],'arxiv_authors')
+
 
 if __name__=='__main__':
     unittest.main()

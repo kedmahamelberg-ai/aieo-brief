@@ -21,7 +21,7 @@ def main():
     before=json.dumps(papers,sort_keys=True,ensure_ascii=False)
     status=enrich_affiliations(papers,contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
     after=json.dumps(papers,sort_keys=True,ensure_ascii=False)
-    counts={name:sum(row['status']==name for row in status) for name in ('matched','not_matched','cached','unavailable')}
+    counts={name:sum(row['status']==name for row in status) for name in ('matched','arxiv_authors','not_matched','cached','unavailable')}
     counts['source_verified']=sum(bool(row.get('source_verified')) for row in status)
     if before!=after:
         PATH.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

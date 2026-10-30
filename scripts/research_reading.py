@@ -4,7 +4,7 @@ import io
 import re
 import unicodedata
 from datetime import date
-from urllib.parse import urlparse
+from urllib.parse import unquote, urlparse
 import requests
 
 READING_VERSION = 'paper-practitioner-v1'
@@ -18,6 +18,23 @@ def needs_upgrade(row):
 def allowed_pdf(url):
     host = (urlparse(url).hostname or '').lower()
     return url.startswith('https://') and any(host == d or host.endswith('.' + d) for d in ('arxiv.org', 'pnas.org', 'ssrn.com'))
+
+
+def publisher_pdf_urls(doi, links):
+    """Accept Crossref's publisher PDF even when it labels its type unspecified."""
+    urls = []
+    for link in links or []:
+        url = link.get('URL', '')
+        if not allowed_pdf(url):
+            continue
+        path = unquote(urlparse(url).path).lower()
+        official_pnas = (doi.lower().startswith('10.1073/pnas.') and
+                         (urlparse(url).hostname or '').lower() in ('pnas.org', 'www.pnas.org') and
+                         path == '/doi/pdf/' + doi.lower())
+        if link.get('content-type') == 'application/pdf' or official_pnas:
+            if url not in urls:
+                urls.append(url)
+    return urls
 
 
 def extract_paper(content, title):

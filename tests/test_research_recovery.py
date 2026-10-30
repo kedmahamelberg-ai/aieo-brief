@@ -12,7 +12,7 @@ import research_recovery as recovery
 from research_pdf import abstract_from_text
 from research_reading import READING_VERSION
 import editorial_engine as engine
-from generate_research_summaries import merge_recent
+from generate_research_summaries import merge_recent, pending
 
 
 class ResearchRecovery(unittest.TestCase):
@@ -83,6 +83,17 @@ class ResearchRecovery(unittest.TestCase):
     def test_repaired_old_paper_reaches_archive_build(self):
         paper = {**self.paper(), 'has_editorial': True}
         self.assertIn(paper, merge_recent({}, [paper], '2026-09-30'))
+
+    def test_new_publisher_pdf_reopens_abstract_summary_before_retry_date(self):
+        paper={**self.paper(),'metadata_sha256':'same','abstract':'Verified abstract text.',
+               'pdf_url':'https://pnas.org/doi/pdf/10.1073/pnas.2628851123'}
+        prior={**paper,'has_editorial':True,'pdf_url':'','evidence_scope':'abstract',
+               'full_text_retry_after':'2099-01-01','research_reading_version':READING_VERSION}
+        from brief_contract import PROMPT_VERSION
+        from editorial_engine import ENGINE_VERSION
+        prior.update(prompt_version=PROMPT_VERSION,editorial_engine_version=ENGINE_VERSION)
+        with patch('generate_research_summaries.ai_runtime.uses_openai',return_value=False):
+            self.assertEqual(pending({'papers':[paper]},{paper['key']:prior}),[paper])
 
 if __name__ == '__main__':
     unittest.main()
