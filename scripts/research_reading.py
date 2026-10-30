@@ -10,6 +10,21 @@ import requests
 READING_VERSION = 'paper-practitioner-v1'
 
 
+def verified_paper_reading(row):
+    """A stored full-paper label needs the completed reading's source proof."""
+    return (row.get('summary_basis') == 'Summary of the paper'
+            and row.get('full_text_status') == 'read'
+            and type(row.get('paper_pages')) is int and row['paper_pages'] >= 1
+            and bool(re.fullmatch(r'[0-9a-f]{64}', row.get('paper_text_sha256', ''))))
+
+
+def restore_reading_scope(row):
+    """Repair a collector-scope overwrite only when full-paper proof survives."""
+    if row.get('evidence_scope') != 'paper_text' and verified_paper_reading(row):
+        return {**row, 'evidence_scope': 'paper_text'}
+    return row
+
+
 def needs_upgrade(row):
     return (not row.get('has_editorial') or bool(style_problem(row)) or row.get('research_reading_version') != READING_VERSION
             or (row.get('evidence_scope') != 'paper_text' and row.get('full_text_retry_after', '9999') <= date.today().isoformat()))
