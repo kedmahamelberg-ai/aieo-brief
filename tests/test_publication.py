@@ -80,8 +80,19 @@ class Publication(unittest.TestCase):
   self.assertEqual(caught.exception.code,'draft_placeholder')
   with self.assertRaisesRegex(ValueError,'Draft placeholder'):inspect_json({'items':[{'body_paragraphs':d['body_paragraphs']}]})
  def test_stored_placeholder_paragraph_is_dropped(self):
-  body=['A sourced development.','limitation_note_placeholder','A supported detail.']
+  body=['A sourced development.','limitation_note_placeholder','limitation_rating":"A stray model field."],','limitation_note: A duplicate caveat.','limitationynthetic_relevance_note: Duplicate caveat.','meaningful_limitation_summary_note: Another duplicate.','A supported detail.']
   self.assertEqual(clean_body_paragraphs(body),['A sourced development.','A supported detail.'])
+ def test_legacy_archive_artifacts_are_removed_before_publication(self):
+  from editorial_artifacts import DRAFT_MARKER,LEADING_ARTIFACT
+  stories=json.loads((ROOT/'data/archive/stories.json').read_text())['stories']
+  self.assertFalse([(story['key'],paragraph) for story in stories for paragraph in clean_body_paragraphs(story.get('body_paragraphs',[])) if DRAFT_MARKER.search(paragraph) or LEADING_ARTIFACT.match(paragraph)])
+ def test_serialized_editorial_field_is_rejected_before_publication(self):
+  for fragment in ('limitation_rating":"A stray model field."],','limitationynthetic_relevance_note: A duplicate caveat.','meaningful_limitation_summary_note: Another duplicate.'):
+   d,s=self.draft();d['body_paragraphs'].append(fragment)
+   with self.subTest(fragment=fragment):
+    with self.assertRaises(EditorialError) as caught:validate_draft(d,s)
+    self.assertEqual(caught.exception.code,'draft_placeholder')
+    with self.assertRaisesRegex(ValueError,'Draft placeholder'):inspect_json({'items':[{'body_paragraphs':[fragment]}]})
  def test_scope_review_rejects_a_changed_percentage_population(self):
   d,s=self.draft()
   with patch('editorial_engine.call_json',return_value={'headline_supported':True,'population_preserved':False,'claim_status_preserved':True,'no_unstated_effects':True,'main_story_only':True,'reason':'The headline generalises a subgroup to all respondents.'}),self.assertRaises(ValueError):review_scope(d,s)

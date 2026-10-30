@@ -23,6 +23,7 @@ from article_urls import assign_article_urls
 from search_metadata import identity_graph, canonical_local, weekly_overview_with_canonical_links
 from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
+from editorial_artifacts import isolated_artifact
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -44,9 +45,8 @@ def inputs(preview=False):
             time.sleep(2)
 def text(value): return re.sub(r'\s+',' ',str(value or '')).replace('—',',').strip()
 def clean_body_paragraphs(paragraphs):
-    """Drop isolated generator markers from previously stored editorial bodies."""
-    marker=re.compile(r'[a-z0-9_ ,]*_placeholder[a-z0-9_ ,]*',re.I)
-    return [p for p in paragraphs if not (isinstance(p,str) and marker.fullmatch(p.strip()))]
+    """Drop isolated generator fields from previously stored editorial bodies."""
+    return [p for p in paragraphs if not isolated_artifact(p)]
 def fmt(value):
     try: return datetime.fromisoformat(str(value)[:10]).strftime('%d %b %Y').lstrip('0')
     except ValueError: return ''
@@ -125,7 +125,7 @@ def papers():
         key=str(r['key'])
         if not re.fullmatch(r'paper:[a-f0-9]{24}',key):raise ValueError('Unsafe paper key')
         slug=key.replace(':','-')
-        out.append({**r,'kind':'research','slug':slug,'path':f'research/{slug}/index.html','source_count':1,'sources':[{'publisher':r['publisher'],'headline':r['original_headline'],'url':r['url'],'date':r['date'],'language':'en'}],'display_date':fmt(r['date']),'markets':[],'market_label':'Research','topic':'research','topic_label':TOPICS['research'],'human_direction':'unresolved','ai_direction':'unresolved','for_humans':'','for_ai':'','human_label':'','ai_label':'','evidence_complete':False,'display_scope':'','edition':r['date'][:7],'summary_basis':r.get('summary_basis','Paper reference'),'body_paragraphs':r.get('body_paragraphs',[]),'reading_minutes':max(1,r.get('reading_minutes',1)),'has_editorial':bool(r.get('has_editorial'))})
+        out.append({**r,'kind':'research','slug':slug,'path':f'research/{slug}/index.html','source_count':1,'sources':[{'publisher':r['publisher'],'headline':r['original_headline'],'url':r['url'],'date':r['date'],'language':'en'}],'display_date':fmt(r['date']),'markets':[],'market_label':'Research','topic':'research','topic_label':TOPICS['research'],'human_direction':'unresolved','ai_direction':'unresolved','for_humans':'','for_ai':'','human_label':'','ai_label':'','evidence_complete':False,'display_scope':'','edition':r['date'][:7],'summary_basis':r.get('summary_basis','Paper reference'),'body_paragraphs':clean_body_paragraphs(r.get('body_paragraphs',[])),'reading_minutes':max(1,r.get('reading_minutes',1)),'has_editorial':bool(r.get('has_editorial'))})
     return sorted(out,key=lambda x:x['date'],reverse=True)
 
 def culture_items():
@@ -232,7 +232,7 @@ def main():
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
     for item in old:
-        if item.get('kind')=='news':
+        if item.get('kind') in ('news','research'):
             item['body_paragraphs']=clean_body_paragraphs(item.get('body_paragraphs',[]))
     current_keys={x['key'] for x in news}
     allitems={x['key']:x for x in old if not (x.get('kind')=='news' and x.get('edition')==release['release_id'] and x['key'] not in current_keys)}
