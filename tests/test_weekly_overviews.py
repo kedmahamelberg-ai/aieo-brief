@@ -106,6 +106,16 @@ class ResearchAffiliationTests(unittest.TestCase):
         self.assertEqual(paper['institutions'],['University of Toronto','Stanford University'])
         self.assertEqual(paper['affiliation_source_url'],'https://arxiv.org/html/2610.31662v1')
         self.assertEqual(result[0]['status'],'arxiv_authors')
+        self.assertTrue(paper['affiliation_fallback_checked_at'])
+
+    def test_arxiv_nested_author_cells_keep_universities_separate(self):
+        paper={**self.paper(),'arxiv_id':'2610.37658v1','authors':['Jiahao Zhang']}
+        html='''<div class="ltx_authors"><span class="ltx_td"><span class="ltx_p">
+        <span class="ltx_text">Jiahao Zhang</span>Zhengzhou University of Aeronautics
+        </span><span class="ltx_p">author@example.org</span></span></div>'''
+        with patch('research_affiliations._verify_source',return_value=True), patch('research_affiliations._lookup',return_value=None), patch('research_affiliations.requests.get',return_value=type('Response',(),{'text':html,'raise_for_status':lambda self:None})()), patch('research_affiliations.time.sleep'):
+            enrich_affiliations([paper])
+        self.assertEqual(paper['institutions'],['Zhengzhou University of Aeronautics'])
 
 
 if __name__=='__main__':
