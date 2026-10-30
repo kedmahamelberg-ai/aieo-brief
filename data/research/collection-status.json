@@ -69,12 +69,6 @@
       "institutions": 3
     },
     {
-      "key": "paper:45e83a947a80ae191ee436a7",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
       "key": "paper:6e9ca4b2faaee021f6509905",
       "status": "cached",
       "source_verified": true,
@@ -118,7 +112,7 @@
     }
   ],
   "recovery": {
-    "recovered": 8,
+    "recovered": 7,
     "unavailable": 0
   }
 }
