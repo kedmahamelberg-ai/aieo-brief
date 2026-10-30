@@ -12,7 +12,7 @@ from urllib.parse import quote
 
 import requests
 from research_pdf import read_pdf_abstract
-from research_reading import needs_upgrade
+from research_reading import needs_upgrade, publisher_pdf_urls
 
 
 class AbstractPage(HTMLParser):
@@ -52,7 +52,7 @@ def unfinished(root):
             for row in json.loads(file.read_text()).get(field, []):
                 if row.get('kind') == 'research' or row.get('key', '').startswith('paper:'):
                     records[row['key']] = row
-    return [r for r in records.values() if needs_upgrade(r)]
+    return [r for r in records.values() if needs_upgrade(r) or (r.get('source') == 'pnas' and not r.get('pdf_url'))]
 
 
 def recover(paper, get):
@@ -68,8 +68,8 @@ def recover(paper, get):
     elif doi.startswith('10.'):
         row = get('https://api.crossref.org/works/' + quote(doi, safe='')).json()['message']
         title = (row.get('title') or [''])[0]
-        abstract = re.sub('<[^>]+>', ' ', row.get('abstract') or '')
-        pdf_urls=[link.get('URL','') for link in row.get('link',[]) if link.get('content-type')=='application/pdf']
+        abstract = re.sub('<[^>]+>', ' ', row.get('abstract') or '') or paper.get('abstract', '')
+        pdf_urls=publisher_pdf_urls(doi,row.get('link'))
     else:
         return None
     pdf_source=''
@@ -101,7 +101,8 @@ def recover_unfinished(root, rows, get):
     backlog={paper['key']:paper for paper in unfinished(root)}
     backlog.update({paper['key']:paper for paper in rows if not paper.get('abstract')})
     for paper in sorted(backlog.values(), key=lambda p: (p.get('date', ''), p['key']), reverse=True):
-        if selected.get(paper['key'], {}).get('abstract'):
+        existing = selected.get(paper['key'], {})
+        if existing.get('abstract') and (existing.get('pdf_url') or paper.get('source') != 'pnas'):
             continue
         try:
             result = recover(paper, get)

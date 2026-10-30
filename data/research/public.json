@@ -46,7 +46,7 @@
         "The study looks at each stone, not whole walls, to map how Shivta grew. It combines drone imagery with close photos to count stones and map sizes and layouts.",
         "For practitioners, the lesson is that broad settlement patterns can come from repeated stone choices and wall spacing, not only from famous buildings or dates."
       ],
-      "limitation": "Abstract-only scope; no field validation reported.",
+      "limitation": "This summary uses only the abstract; the full paper’s methods and field validation were not assessed.",
       "summary_basis": "Summary of the abstract",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -908,9 +908,12 @@
         "Ryan J. Tibshirani",
         "Tijana Zrnic"
       ],
-      "institutions": [],
-      "affiliation_source_url": "https://openalex.org/W7223293283",
-      "affiliation_checked_at": "2026-10-23T17:04:52.381687+00:00",
+      "institutions": [
+        "University of Toronto",
+        "Stanford University",
+        "University of California, Berkeley"
+      ],
+      "affiliation_source_url": "https://arxiv.org/html/2610.31662v1",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

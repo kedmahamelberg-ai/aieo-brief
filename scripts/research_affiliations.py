@@ -12,6 +12,7 @@ import re
 import time
 from datetime import datetime, timezone
 from difflib import SequenceMatcher
+from html.parser import HTMLParser
 from urllib.parse import quote
 
 import requests
@@ -114,6 +115,57 @@ def _institutions(work):
     return names[:8]
 
 
+class _ArxivAuthorInstitutions(HTMLParser):
+    """Read affiliation cells in arXiv's author block, never the repository name."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.depth = 0
+        self.cell = None
+        self.cells = []
+
+    def handle_starttag(self, tag, attrs):
+        classes = dict(attrs).get("class", "").split()
+        if tag == "div" and "ltx_authors" in classes and not self.depth:
+            self.depth = 1
+        elif self.depth:
+            if tag == "div":
+                self.depth += 1
+            if tag == "span" and "ltx_td" in classes:
+                self.cell = []
+
+    def handle_endtag(self, tag):
+        if self.depth and tag == "span" and self.cell is not None:
+            value = _plain("".join(self.cell))
+            if value:
+                self.cells.append(value)
+            self.cell = None
+        if self.depth and tag == "div":
+            self.depth -= 1
+
+    def handle_data(self, data):
+        if self.cell is not None:
+            self.cell.append(data)
+
+
+def _arxiv_institutions(paper):
+    aid = _plain(paper.get("arxiv_id"))
+    if not re.fullmatch(r"\d{4}\.\d{4,5}(?:v\d+)?", aid):
+        return [], ""
+    url = f"https://arxiv.org/html/{aid}"
+    response = requests.get(url, timeout=30, headers={"User-Agent": "AIEO-Brief/3.2 (author affiliation check; https://brief.hamelberg-ai.com)"})
+    response.raise_for_status()
+    parser = _ArxivAuthorInstitutions()
+    parser.feed(response.text)
+    authors = {_normal(a) for a in paper.get("authors") or []}
+    if not authors.intersection({_normal(cell) for cell in parser.cells}):
+        return [], ""
+    names = []
+    for cell in parser.cells:
+        if re.search(r"\b(university|université|universidad|institute|college|academy)\b", cell, re.I) and _normal(cell) not in {_normal(name) for name in names}:
+            names.append(cell)
+    return names[:8], url if names else ""
+
+
 def _age_days(value, now):
     value = _plain(value)
     if not value:
@@ -138,7 +190,7 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
             source_ok = True
 
         affiliation_age = _age_days(paper.get("affiliation_checked_at"), now)
-        if affiliation_age is not None and affiliation_age < refresh_days:
+        if paper["institutions"] and affiliation_age is not None and affiliation_age < refresh_days:
             status.append({
                 "key": paper.get("key"),
                 "status": "cached",
@@ -150,15 +202,21 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
             work = _lookup(paper, contact=contact)
             paper["affiliation_checked_at"] = verified_at
             if work:
-                paper["institutions"] = _institutions(work)
+                names = _institutions(work)
+                if names:
+                    paper["institutions"] = names
                 work_id = _plain(work.get("id"))
-                if work_id:
+                if work_id and names:
                     paper["affiliation_source_url"] = "https://openalex.org/" + work_id.rsplit("/", 1)[-1]
                 result = "matched"
             else:
-                paper["institutions"] = []
-                paper.pop("affiliation_source_url", None)
                 result = "not_matched"
+            if (not paper["institutions"] or paper.get("affiliation_source_url", "").startswith("https://arxiv.org/html/")) and paper.get("arxiv_id"):
+                names, url = _arxiv_institutions(paper)
+                if names:
+                    paper["institutions"] = names
+                    paper["affiliation_source_url"] = url
+                    result = "arxiv_authors"
             status.append({
                 "key": paper.get("key"),
                 "status": result,
@@ -166,6 +224,19 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
                 "institutions": len(paper["institutions"]),
             })
         except (requests.RequestException, ValueError, TypeError):
+            try:
+                names, url = _arxiv_institutions(paper)
+                if names:
+                    paper["institutions"] = names
+                    paper["affiliation_source_url"] = url
+                    paper["affiliation_checked_at"] = verified_at
+                    status.append({
+                        "key": paper.get("key"), "status": "arxiv_authors",
+                        "source_verified": source_ok, "institutions": len(names),
+                    })
+                    continue
+            except requests.RequestException:
+                pass
             status.append({
                 "key": paper.get("key"),
                 "status": "unavailable",

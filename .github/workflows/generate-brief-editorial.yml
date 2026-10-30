@@ -28,7 +28,7 @@ on:
       research_minutes:
         description: Maximum minutes for research this pass (1 to 60)
         type: string
-        default: '15'
+        default: '60'
 permissions:
   contents: write
 concurrency:
@@ -105,7 +105,7 @@ jobs:
         if: inputs.dry_run != true && steps.collect.outcome == 'success'
         continue-on-error: true
         env:
-          RESEARCH_MINUTES: ${{ inputs.research_minutes || (github.event_name == 'push' && '60') || '15' }}
+          RESEARCH_MINUTES: ${{ inputs.research_minutes || '60' }}
         run: python scripts/generate_research_summaries.py --max-runtime-minutes "$RESEARCH_MINUTES"
       - name: Authorize this generated-data commit
         if: always() && inputs.dry_run != true

@@ -23,7 +23,7 @@ def load():
     return data,{r['key']:r for r in public['papers']}
 
 def pending(data,old):
-    return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
+    return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and not (p.get('pdf_url') and p.get('pdf_url') != old[p['key']].get('pdf_url')) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
@@ -39,7 +39,7 @@ def merge_recent(old,updates,end,days=28):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--dry-run',action='store_true');parser.add_argument('--max-runtime-minutes',type=int,default=15);args=parser.parse_args()
     if not 1<=args.max_runtime_minutes<=60:raise ValueError('Use a 1–60 minute research budget.')
-    data,old=load();todo=pending(data,old)
+    data,old=load();todo=pending(data,old);todo_keys={p['key'] for p in todo}
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'pending={len(todo)}\nneeds_model={str(bool(todo)).lower()}\n')
     if args.dry_run:print(json.dumps({'pending':len(todo),'records':len(data['papers'])}));return
@@ -56,14 +56,18 @@ def main():
         retry_path.write_text(json.dumps(retry,indent=2)+'\n')
     priority_file=ROOT/'data/research/reading-priority.json'
     priority=json.loads(priority_file.read_text()) if priority_file.exists() else []
-    work=sorted(data['papers'],key=lambda p:(p['key'] not in priority,retry.get(p['key'],{}).get('attempts',0),-date.fromisoformat(p['date']).toordinal(),p['key']))
+    work=sorted(data['papers'],key=lambda p:(p['key'] not in priority,old.get(p['key'],{}).get('has_editorial',False),retry.get(p['key'],{}).get('attempts',0),-date.fromisoformat(p['date']).toordinal(),p['key']))
     for n,p in enumerate(work):
         if not safe_url(p.get('url')):continue
         prior=old.get(p['key'],{})
+        if not p.get('institutions') and prior.get('institutions'):
+            p={**p,'institutions':prior['institutions'],
+               'affiliation_source_url':prior.get('affiliation_source_url',''),
+               'affiliation_checked_at':prior.get('affiliation_checked_at','')}
         if is_locked(p['key'],ROOT) and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append(prior);continue
-        if p not in todo and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
-            counts['unchanged']+=1;selected.append({**public_record(p),**prior});continue
+        if p['key'] not in todo_keys and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
+            counts['unchanged']+=1;selected.append({**prior,**public_record(p)});continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
         if not (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')):
