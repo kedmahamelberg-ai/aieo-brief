@@ -117,6 +117,15 @@ class ResearchAffiliationTests(unittest.TestCase):
             enrich_affiliations([paper])
         self.assertEqual(paper['institutions'],['Zhengzhou University of Aeronautics'])
 
+    def test_arxiv_explicit_affiliations_include_acronyms_and_labs(self):
+        paper={**self.paper(),'arxiv_id':'2610.37666v1','authors':['Chaehyun Kim']}
+        html='''<div class="ltx_authors"><span class="ltx_personname">Chaehyun Kim</span>
+        <span class="ltx_contact ltx_role_affiliation"><span class="ltx_contact_name">Affiliation: </span><span class="ltx_text">NVIDIA</span></span>
+        <span class="ltx_contact ltx_role_affiliation"><span class="ltx_contact_name">Affiliation: </span><span class="ltx_text">KAIST</span></span></div>'''
+        with patch('research_affiliations._verify_source',return_value=True), patch('research_affiliations._lookup',return_value=None), patch('research_affiliations.requests.get',return_value=type('Response',(),{'text':html,'raise_for_status':lambda self:None})()), patch('research_affiliations.time.sleep'):
+            enrich_affiliations([paper])
+        self.assertEqual(paper['institutions'],['NVIDIA','KAIST'])
+
 
 if __name__=='__main__':
     unittest.main()

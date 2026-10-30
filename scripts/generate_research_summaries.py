@@ -13,7 +13,7 @@ from pathlib import Path
 from brief_contract import PROMPT_VERSION,digest,safe_url
 from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION,research_quotes
 ROOT=Path(__file__).resolve().parents[1]
-PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','affiliation_fallback_checked_at','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256','pdf_url','abstract_source_url','abstract_format')
+PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','affiliation_fallback_checked_at','affiliation_fallback_version','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256','pdf_url','abstract_source_url','abstract_format')
 
 def load():
     path=ROOT/'data/research/private/inputs.json'
@@ -64,7 +64,8 @@ def main():
             p={**p,'institutions':prior['institutions'],
                'affiliation_source_url':prior.get('affiliation_source_url',''),
                'affiliation_checked_at':prior.get('affiliation_checked_at',''),
-               'affiliation_fallback_checked_at':prior.get('affiliation_fallback_checked_at','')}
+               'affiliation_fallback_checked_at':prior.get('affiliation_fallback_checked_at',''),
+               'affiliation_fallback_version':prior.get('affiliation_fallback_version','')}
         if is_locked(p['key'],ROOT) and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append(prior);continue
         if p['key'] not in todo_keys and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):

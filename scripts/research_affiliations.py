@@ -18,6 +18,7 @@ from urllib.parse import quote
 import requests
 
 OPENALEX = "https://api.openalex.org/works"
+AFFILIATION_PARSER_VERSION = "arxiv-author-v2"
 
 
 def _plain(value):
@@ -121,6 +122,10 @@ class _ArxivAuthorInstitutions(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.depth = 0
         self.parts = []
+        self.affiliation_depth = 0
+        self.label_depth = 0
+        self.affiliation_parts = []
+        self.affiliations = []
 
     def handle_starttag(self, tag, attrs):
         classes = dict(attrs).get("class", "").split()
@@ -129,8 +134,23 @@ class _ArxivAuthorInstitutions(HTMLParser):
         elif self.depth:
             if tag == "div":
                 self.depth += 1
+            if tag == "span" and "ltx_role_affiliation" in classes:
+                self.affiliation_depth = 1
+                self.affiliation_parts = []
+            elif tag == "span" and self.affiliation_depth:
+                self.affiliation_depth += 1
+                if "ltx_contact_name" in classes:
+                    self.label_depth = self.affiliation_depth
 
     def handle_endtag(self, tag):
+        if tag == "span" and self.affiliation_depth:
+            if self.label_depth == self.affiliation_depth:
+                self.label_depth = 0
+            self.affiliation_depth -= 1
+            if not self.affiliation_depth:
+                value = _plain("".join(self.affiliation_parts))
+                if value:
+                    self.affiliations.append(value)
         if self.depth and tag == "div":
             self.depth -= 1
 
@@ -139,6 +159,8 @@ class _ArxivAuthorInstitutions(HTMLParser):
             value = _plain(data)
             if value:
                 self.parts.append(value)
+                if self.affiliation_depth and not self.label_depth:
+                    self.affiliation_parts.append(value)
 
 
 def _arxiv_institutions(paper):
@@ -154,6 +176,9 @@ def _arxiv_institutions(paper):
     if not any(_normal(author) in author_block for author in paper.get("authors") or [] if _normal(author)):
         return [], ""
     names = []
+    for part in parser.affiliations:
+        if len(part) < 140 and "@" not in part and _normal(part) not in {_normal(name) for name in names}:
+            names.append(part)
     for part in parser.parts:
         if (re.search(r"\b(university|université|universidad|institute|college|academy)\b", part, re.I)
                 and len(part) < 140 and "@" not in part
@@ -189,7 +214,8 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
         fallback_age = _age_days(paper.get("affiliation_fallback_checked_at"), now)
         if (affiliation_age is not None and affiliation_age < refresh_days
                 and (paper["institutions"] or not paper.get("arxiv_id")
-                     or (fallback_age is not None and fallback_age < refresh_days))):
+                     or (fallback_age is not None and fallback_age < refresh_days
+                         and paper.get("affiliation_fallback_version") == AFFILIATION_PARSER_VERSION))):
             status.append({
                 "key": paper.get("key"),
                 "status": "cached",
@@ -213,6 +239,7 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
             if (not paper["institutions"] or paper.get("affiliation_source_url", "").startswith("https://arxiv.org/html/")) and paper.get("arxiv_id"):
                 names, url = _arxiv_institutions(paper)
                 paper["affiliation_fallback_checked_at"] = verified_at
+                paper["affiliation_fallback_version"] = AFFILIATION_PARSER_VERSION
                 if names:
                     paper["institutions"] = names
                     paper["affiliation_source_url"] = url
@@ -227,6 +254,7 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
             try:
                 names, url = _arxiv_institutions(paper)
                 paper["affiliation_fallback_checked_at"] = verified_at
+                paper["affiliation_fallback_version"] = AFFILIATION_PARSER_VERSION
                 if names:
                     paper["institutions"] = names
                     paper["affiliation_source_url"] = url
