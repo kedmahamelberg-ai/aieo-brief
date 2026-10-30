@@ -114,9 +114,12 @@
         "Seungryong Kim",
         "Fu-En Yang"
       ],
-      "institutions": [],
-      "affiliation_source_url": "https://openalex.org/W7224121694",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "institutions": [
+        "NVIDIA",
+        "KAIST"
+      ],
+      "affiliation_source_url": "https://arxiv.org/html/2610.37666v1",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -148,7 +151,8 @@
       "full_text_retry_after": "2026-11-05",
       "paper_pages": 34,
       "paper_text_sha256": "82abe6a757fe5e0b671b1752ef33d855f50e434fabd2a39790b3125418a679ec",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:8456c4a8f0b84625a21d58bc",
@@ -170,7 +174,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7224122670",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -202,7 +206,8 @@
       "full_text_retry_after": "2026-11-05",
       "paper_pages": 40,
       "paper_text_sha256": "8cf8c38667136da074a5217f4f22f4a07ed2b972625395e558f719526dfcdc5a",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:7989c70405ca03a21659f4d0",
@@ -557,8 +562,10 @@
       "authors": [
         "Federico Lucca"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "institutions": [
+        "Independent researcher, Trento, Italy"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-26T18:42:15.934233+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -593,7 +600,9 @@
         "date": "2026-10-26",
         "approved": true
       },
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_source_url": "https://arxiv.org/html/2610.32955v1"
     },
     {
       "key": "paper:63d21524277ff8a08182f272",
@@ -708,7 +717,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223269505",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -739,7 +748,8 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 69,
       "paper_text_sha256": "1e08fa5940fd62d8dd8712ff5fc98d07da9cf464ab61c3025782bd7ab8505069",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:f43f0438b78d0581be9514a1",
@@ -809,7 +819,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223406000",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -840,7 +850,8 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 9,
       "paper_text_sha256": "ba30ff4bcf9ec5088f87f847c40d9ff36f3b3d0cde9afdc6d5573b760be55c63",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:9427adb92275c694947a1ab1",
@@ -909,7 +920,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223410188",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -940,7 +951,8 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 42,
       "paper_text_sha256": "6dcc767ae92278f48d956de47db9fd4518b2a24e20564203e80fc5b25e70ee90",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:02d1554ed760a075f05e900a",
@@ -1599,7 +1611,9 @@
         "He Wang",
         "Li Yi"
       ],
-      "institutions": [],
+      "institutions": [
+        "Galbot Team"
+      ],
       "source_verified_at": "2026-10-20T17:01:18.474396+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -1630,9 +1644,10 @@
       "full_text_retry_after": "2026-10-27",
       "paper_pages": 18,
       "paper_text_sha256": "18702c0d20c72c758be931667e230970bb1c5e47df54d27f475add74bf99eeca",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
-      "affiliation_source_url": "https://openalex.org/W7223060590",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_source_url": "https://arxiv.org/html/2610.26848v1",
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:dec570fcf47eb931adfb423f",
@@ -2048,7 +2063,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222498763",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2079,7 +2094,8 @@
       "full_text_retry_after": "2026-10-23",
       "paper_pages": 32,
       "paper_text_sha256": "8c8c49b5c1b48139c20372f4cb33849dfd145622a220c8f0a886eeaacf2a0651",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:f531ec67658703d4a74dc338",
@@ -2209,7 +2225,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222418060",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -2240,7 +2256,8 @@
       "full_text_retry_after": "2026-10-23",
       "paper_pages": 16,
       "paper_text_sha256": "a06bc880074464351eb26d51737045e70a84897bff6b63ce701d83da24f272f0",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:4b7039eb642df7ee420bac98",
@@ -3147,9 +3164,11 @@
       "authors": [
         "Tianyi Wu"
       ],
-      "institutions": [],
-      "affiliation_source_url": "https://openalex.org/W7221532418",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "institutions": [
+        "Amazon"
+      ],
+      "affiliation_source_url": "https://arxiv.org/html/2610.13924v1",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-12T21:16:03.497361+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3180,7 +3199,8 @@
       "research_reading_version": "paper-practitioner-v1",
       "full_text_status": "pdf_text_unreadable",
       "full_text_retry_after": "2026-11-02",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:34f4d260d7a8eeacaaab6530",
@@ -3607,7 +3627,7 @@
         "Yukang Chen"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3638,7 +3658,8 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 28,
       "paper_text_sha256": "e566298166004d83bc10aa823863b004a88614c746d159eceeeda3cb706a7f70",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2"
     },
     {
       "key": "paper:e147ebb70b7a60538b9bd244",
@@ -3958,7 +3979,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-30T07:50:58.953953+00:00",
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4308,8 +4329,11 @@
       "authors": [
         "Gregory D. Bellchambers"
       ],
-      "institutions": [],
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "institutions": [
+        "PhysicsX Ltd.",
+        "London, EC2A 4DQ"
+      ],
+      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4340,7 +4364,9 @@
       "full_text_retry_after": "2026-10-13",
       "paper_pages": 13,
       "paper_text_sha256": "803738eff100c3d8335eed7302c6fce4c5af725d4c42fd873863f85c90fa94fd",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00"
+      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_source_url": "https://arxiv.org/html/2610.06834v1"
     },
     {
       "key": "paper:942b07476ba478fd97fad34b",
