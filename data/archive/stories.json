@@ -3831,8 +3831,7 @@
       "why_it_matters": "The report clarifies governance ideas and their boundaries, showing mixed gains and losses in how AI is steered, rather than promising universal benefits or predictable results.",
       "body_paragraphs": [
         "The document presents governance concepts as a framework for understanding how China approaches artificial intelligence, emphasizing philosophy, practices, and anticipated implications rather than technical performance or user experiences. It invites readers, including teenagers, to consider who sets rules, how decisions are made, and where responsibility lies as AI tools become more embedded in daily life.",
-        "A key takeaway is that governance ideas operate independently of the concrete gains or losses seen by individuals. The public should note that human and operator roles may shift separately from AI capabilities, and that outcomes are not guaranteed,only the structures and processes described indicate possible directions for policy and practice.",
-        "limitation_note: The source is a governance-focused analysis rather than an empirical study of AI performance or human outcomes; its conclusions are framed as concepts and implications."
+        "A key takeaway is that governance ideas operate independently of the concrete gains or losses seen by individuals. The public should note that human and operator roles may shift separately from AI capabilities, and that outcomes are not guaranteed,only the structures and processes described indicate possible directions for policy and practice."
       ],
       "for_humans": "The report frames governance ideas without predicting AI capabilities or outcomes.",
       "for_ai": "The document discusses governance concepts rather than AI capabilities or outcomes.",
@@ -4689,8 +4688,7 @@
       "why_it_matters": "This approach helps scientists explore alternative ecological configurations without claiming one true outcome, highlighting both potential gains and the limits of AI-assisted ecology.",
       "body_paragraphs": [
         "Researchers trained a model on large reef surveys to write and assemble whole fish communities, not just single species. The tool produces several plausible compositions under the same environmental context, reflecting how species interact and co-occur. This challenges older methods that treated each species in isolation and emphasizes the value of examining multiple configurations.",
-        "In about one third of cases, the generated communities split into distinct groups with recurring species associations. While these findings illuminate possible ecological patterns, the model does not prove that such configurations exist in nature; instead, it provides a new framework for testing hypotheses against ecological data.",
-        "limitation_description_localized_context_within_this_study_and_does_not_claim_nature_proofs;_the_framework_requires_further_validation_across_real_ecosystems."
+        "In about one third of cases, the generated communities split into distinct groups with recurring species associations. While these findings illuminate possible ecological patterns, the model does not prove that such configurations exist in nature; instead, it provides a new framework for testing hypotheses against ecological data."
       ],
       "for_humans": "The study offers a way to think about biodiversity as flexible configurations rather than a single picture.",
       "for_ai": "Results show how AI can produce several plausible community outcomes to study ecological diversity.",
@@ -9827,8 +9825,7 @@
       "why_it_matters": "Bias in how records are described can affect who receives timely emergency care; model responses vary by tool and context.",
       "body_paragraphs": [
         "A UT Southwestern study tested three open-source AI language models on ED triage data, finding that even neutral descriptions can be nudged toward bias once extra contextual details are added. The researchers showed that stigmatizing phrases and histories,like “frequent ED user” or “psychiatric emergencies”,tended to push AI toward deprioritizing some patients who later worsened.",
-        "The work also highlighted that not all information affects AI equally; some content changed prioritization more than others, and age appeared to influence decisions in ways likely tied to medical risk rather than bias. The authors emphasize that testing tools against real outcomes is essential before clinical use; this is a warning about current limits, not a rejection of AI’s potential in triage.",
-        "limitation_rating\":\"The study used specific LLMs and ED datasets from two institutions, limiting generalization to other models, settings, or patient populations.\"],"
+        "The work also highlighted that not all information affects AI equally; some content changed prioritization more than others, and age appeared to influence decisions in ways likely tied to medical risk rather than bias. The authors emphasize that testing tools against real outcomes is essential before clinical use; this is a warning about current limits, not a rejection of AI’s potential in triage."
       ],
       "for_humans": "Be mindful of how clinical language shapes AI outputs and care decisions.",
       "for_ai": "Ensure evaluation against real patient outcomes and diverse data before deployment.",
@@ -12337,8 +12334,7 @@
       "why_it_matters": "The list structures potential pathways for AI projects and partnerships, but its impact depends on ongoing coordination and execution; it does not guarantee widespread gains or universal adoption.",
       "body_paragraphs": [
         "The release centers on matching supply and demand in AI across local firms, from interactive models to AI-enabled services. It highlights plans such as industrial humanoid robot workstreams and investment ranges, illustrating how firms envision turning research into real-world applications.",
-        "The document also stresses the roles of government and industry groups in maintaining connections, refining the service window for cooperation, and supporting pilot projects in manufacturing, finance, and healthcare.",
-        "limitation_in_text_field_removed_for_clarity that the list reflects stated intentions and negotiated deals, not guaranteed market-wide results; it cannot be extrapolated to all firms or regions."
+        "The document also stresses the roles of government and industry groups in maintaining connections, refining the service window for cooperation, and supporting pilot projects in manufacturing, finance, and healthcare."
       ],
       "for_humans": "This helps readers see how AI ideas move from plans to partnerships.",
       "for_ai": "AI-enabled market signals exist, but human and organizational actions determine outcomes.",
@@ -13449,8 +13445,7 @@
       "why_it_matters": "The development expands access to modifiable AI, enabling broader developer experimentation while underscoring continued competition between open-weight and closed models.",
       "body_paragraphs": [
         "Meta announced Muse Spark Open as part of its push toward more accessible AI development, noting it is the most capable US open-weight model to date and can be downloaded and modified by developers as open weights. The model emphasizes long-horizon tasks and multi-step reasoning, with safeguards designed to limit misuse while enabling more complex software work.",
-        "The company highlighted a collaboration-friendly hardware angle, claiming Muse Spark Open is optimized to run on Apple M5 Ultra chips, and that users can create a desktop ‘supercomputer’ by running the model on two Mac Studios, illustrating how open-weight tools can scale with consumer hardware.",
-        "limitation_principal\":\"Open-weight models require substantial computing resources and technical know-how to deploy and manage safely; performance claims may not generalize across all contexts or users.”] ,"
+        "The company highlighted a collaboration-friendly hardware angle, claiming Muse Spark Open is optimized to run on Apple M5 Ultra chips, and that users can create a desktop ‘supercomputer’ by running the model on two Mac Studios, illustrating how open-weight tools can scale with consumer hardware."
       ],
       "for_humans": "Open-weight access may broaden hands-on AI experimentation for individuals and developers.",
       "for_ai": "The release expands the AI ecosystem by distributing accessible, modifiable weights and enabling broader developer engagement.",
@@ -13892,8 +13887,7 @@
       "why_it_matters": "The approach shows how a regulated bank can expand AI use while prioritizing safety, transparency, and cost controls, though the reach is described in a corporate context and not a universal guarantee.",
       "body_paragraphs": [
         "Itaú’s AI-first strategy centers on a governance layer that lets teams choose appropriate models for each task, prioritizing reliable, customer-facing interactions and aiming for a seamless feel while keeping human support for edge cases and sensitive decisions.",
-        "Behind the rollout is a bank-wide transformation to free time for relationship-building by automating routine tasks and drawing insights from a repository of documents; the legal solution sits on 90 million+ documents and executes millions of tasks monthly, with reported efficiency gains.",
-        "limitation_aieo_note_only_annotated_showcase_pitality_mixed_gains_and_losses_with_contextual_boundaries"
+        "Behind the rollout is a bank-wide transformation to free time for relationship-building by automating routine tasks and drawing insights from a repository of documents; the legal solution sits on 90 million+ documents and executes millions of tasks monthly, with reported efficiency gains."
       ],
       "for_humans": "AI is intended to support people in everyday banking with simpler, faster, more reliable service.",
       "for_ai": "Governance, model variety, and token-cost controls enable scalable, safer AI in banking with human checks where needed.",
@@ -14446,8 +14440,7 @@
       "why_it_matters": "The move signals tighter global tech governance and aims to curb misuse while preserving international collaboration, but it also raises questions about practical impact, enforcement, and which technologies truly fall under control.",
       "body_paragraphs": [
         "China’s announcement targets 40 key technologies across AI, biomedicine, and photovoltaics, with 14 items to be banned and 26 to be restricted. It also notes that AI fields like large models, agents, and compute clusters are among the 23 technologies under scope, while technologies already in the public domain may be exempt. The process is described as a routine update to reflect evolving technology trade rules, not aimed at any specific country or entity.",
-        "The measures aim to prevent uncontrolled spread of sensitive tech while keeping normal international tech exchange on track. Observers caution that “control” can create uneven effects on developers, startups, and researchers, and that the actual impact depends on implementation, licensing practices, and how broadly other countries align their rules.",
-        "limitation_type_defining_text_to_include_in_articles_sample_note_and_capability_description that the public wording and cited items do not guarantee outcomes; the actual effects depend on how enforcement and international cooperation unfold to affect access and innovation."
+        "The measures aim to prevent uncontrolled spread of sensitive tech while keeping normal international tech exchange on track. Observers caution that “control” can create uneven effects on developers, startups, and researchers, and that the actual impact depends on implementation, licensing practices, and how broadly other countries align their rules."
       ],
       "for_humans": "Understanding how export controls shape AI access and opportunities.",
       "for_ai": "Policy choices may constrain some AI tech flows but seek safer, more controllable use.",
@@ -14502,8 +14495,7 @@
       "why_it_matters": "The piece highlights a tension between faster, cheaper AI-made visuals and the value of human creativity. It points to mixed gains (efficiency) and losses (opportunities for artists) and urges careful, values-aligned use of technology.",
       "body_paragraphs": [
         "The article centers on AI-created posters seen around Taylor’s campus and the concern that such work could sideline students pursuing creative degrees. It quotes designers who worry that automation may replace carefully crafted human design, while acknowledging that AI posters can be produced quickly and cheaply. The writer emphasizes that these tools are not going away but invites readers to consider how to balance speed with craft.",
-        "A contrast emerges between personal, human-created visuals and machine-generated ones; the piece argues for preserving emotional resonance and opportunities for students to practice their craft. It notes that AI may reshape workflows, but human touch and intent remain distinctive strengths that AI cannot replicate, even as institutions increasingly rely on automated content for marketing.",
-        "limitation_note:This opinion piece reflects a single institutional perspective and is not a systematic study of AI’s impact on creative labor."
+        "A contrast emerges between personal, human-created visuals and machine-generated ones; the piece argues for preserving emotional resonance and opportunities for students to practice their craft. It notes that AI may reshape workflows, but human touch and intent remain distinctive strengths that AI cannot replicate, even as institutions increasingly rely on automated content for marketing."
       ],
       "for_humans": "people may lose opportunities and livelihoods as AI takes over creative tasks",
       "for_ai": "AI enables more efficient production of visuals but risks reducing human artistic work",
@@ -14669,8 +14661,7 @@
       "why_it_matters": "The risk is evolving but not universal; human oversight and device integrity remain essential as AI-assisted tactics grow more capable.",
       "body_paragraphs": [
         "The report centers on findings from Anthropic and corroborating researchers who describe a trajectory toward AI-enabled worms that can self-study environments and adapt strategies to spread. While experiments show scaled-down models can operate across multiple devices, engineers caution that practical, wide-scale deployment remains limited and not imminent for all ecosystems.",
-        "A practical takeaway for readers includes strengthening basic cybersecurity: updating firmware, limiting public network exposure, and monitoring for unusual device activity, as experts emphasize that defensive measures must evolve alongside increasingly adaptive AI-enabled threats.",
-        "limitation_note"
+        "A practical takeaway for readers includes strengthening basic cybersecurity: updating firmware, limiting public network exposure, and monitoring for unusual device activity, as experts emphasize that defensive measures must evolve alongside increasingly adaptive AI-enabled threats."
       ],
       "for_humans": "Be curious but cautious, and keep devices updated.",
       "for_ai": "Maintain transparency and controllable behavior in AI systems.",
@@ -15361,8 +15352,7 @@
       "why_it_matters": "If validated clinically, Percival could support proactive care by flagging early risks; open-source code may invite broader validation and improvements across settings.",
       "body_paragraphs": [
         "The Penn Medicine team developed Percival to analyze CT scans beyond the original testing purpose, aiming to detect signals of disease and forecast future health issues that may not be obvious to human readers. Using data from more than 350,000 people, the model demonstrated the potential to identify patterns linked to chronic conditions such as atrial fibrillation and chronic kidney disease, and it outperformed a similar model in flagging certain cancers and liver issues.",
-        "A key goal is to make imaging more useful for proactive care, not just diagnosis. The researchers emphasize openness,Percival’s code and training specs are open source to encourage broader validation and improvement, while continuing to test robustness before regular clinical use.",
-        "limitation_per_field_used_is_missing_or_not_confirmed_? Yes, the study notes preclinical testing and relies on data from a single health system; broader validation is required."
+        "A key goal is to make imaging more useful for proactive care, not just diagnosis. The researchers emphasize openness,Percival’s code and training specs are open source to encourage broader validation and improvement, while continuing to test robustness before regular clinical use."
       ],
       "for_humans": "Doctors and patients could gain clearer diagnostic support and earlier interventions.",
       "for_ai": "AI expands data from imaging to inform medical decisions.",
@@ -17235,8 +17225,7 @@
       "why_it_matters": "The program signals policy-backed support for AI leadership and knowledge translation, while clearly stating limits on internships and eligibility, which shapes who can benefit.",
       "body_paragraphs": [
         "The Globalink Call frames AI research as a collaborative effort across borders, inviting Canadian and G7 partners to engage under defined rules. It assigns value to internships, outlines first-come, first-served deadlines, and stresses early application without guaranteeing universal access.",
-        "Beyond funding mechanics, the document highlights translation and potential SME adoption as aims, while reminding readers that effects depend on institutional follow-through and local implementation, not a guaranteed national shift.",
-        "limitation_reasoning\":\"The source describes program features and aspirations, not observed outcomes or population-wide effects; findings apply to selected participants under defined rules.\""
+        "Beyond funding mechanics, the document highlights translation and potential SME adoption as aims, while reminding readers that effects depend on institutional follow-through and local implementation, not a guaranteed national shift."
       ],
       "for_humans": "The program shows researchers how cross-border AI work could start.",
       "for_ai": "Policy notes describe funding rules and expectations without promising broad outcomes.",
@@ -18863,8 +18852,7 @@
       "why_it_matters": "People gain efficiency and new capabilities through AI-enabled software services, but deployment matters and is not universal.",
       "body_paragraphs": [
         "The evidence describes a national push to infuse artificial intelligence into software and IT services, aiming to raise efficiency, create new kinds of software, and expand service models. It notes that AI is reshaping production, product forms, and delivery, while signaling that benefits depend on how well organizations adopt intelligent tooling and workflows.",
-        "Two detailed examples illustrate mixed outcomes: AI-enabled workflows can dramatically speed up tasks and reduce errors, yet require careful design, data quality, and governance to avoid overpromising. The materials describe concrete improvements in dashboards, decision support, and automation, but also highlight the ongoing need for foundational capabilities like data access and standardization.",
-        "limitation_labeling_and_context_missing_in_evidence_and_scope: This summary relies on selective passages from a single source and notes that broader impact across all populations cannot be inferred; the evidence highlights organizational and sector-level gains rather than universal outcomes."
+        "Two detailed examples illustrate mixed outcomes: AI-enabled workflows can dramatically speed up tasks and reduce errors, yet require careful design, data quality, and governance to avoid overpromising. The materials describe concrete improvements in dashboards, decision support, and automation, but also highlight the ongoing need for foundational capabilities like data access and standardization."
       ],
       "for_humans": "A teenager can understand that AI changes how software works, with benefits and caveats.",
       "for_ai": "AI tools can boost software productivity, yet practical limits shape real-world results.",
@@ -20239,8 +20227,7 @@
       "why_it_matters": "Policy presence and classroom use of AI are growing; guidance varies, risking inconsistent approaches and confusion for staff and students.",
       "body_paragraphs": [
         "A New York Focus review of district websites shows that many districts have not adopted formal AI policies, even as some schools experiment with AI tools. The report notes that policies range from brief mentions to entirely new documents, and that internal guidelines often exist where formal boards have not acted. Districts cited include examples where AI is used to support instruction or automate tasks, yet official rules remain uneven.",
-        "The piece highlights that when districts do adopt policies, they often emphasize responsible use and academic integrity rather than pinning down specific applications, reflecting the fast-changing tech landscape and the challenge of keeping rules current. The report also points to a statewide push for clearer standards while acknowledging local flexibility as districts balance education goals with concerns about risk and disruption.",
-        "limitation_in_text':'The study surveys online materials and district replies, not a randomized sample of all districts or classroom outcomes; findings reflect policy presence rather than actual implementation."
+        "The piece highlights that when districts do adopt policies, they often emphasize responsible use and academic integrity rather than pinning down specific applications, reflecting the fast-changing tech landscape and the challenge of keeping rules current. The report also points to a statewide push for clearer standards while acknowledging local flexibility as districts balance education goals with concerns about risk and disruption."
       ],
       "for_humans": "Policy adoption and classroom integration indicate expanding human capacity to use AI in education.",
       "for_ai": "AI tools are being adopted and embedded into school operations and pedagogy.",
@@ -21038,8 +21025,7 @@
       "why_it_matters": "The piece explains why governance ideas matter for safety but cautions that regulatory scope and enforcement vary by jurisdiction.",
       "body_paragraphs": [
         "Brad Smith advocates for stronger AI oversight, arguing that existing consumer-product regulation is not matched by how AI systems are built. He frames AI as both a weapon and a tool, and he says global safety rules are overdue. The piece notes that the UK is positioned to lead, with institutions like the AI Security Institute testing models before deployment.",
-        "A key caveat is that much of the discussion centers on policy proposals and industry statements rather than proven outcomes. The article stresses mixed gains and losses: regulation could improve safety but may affect innovation and international cooperation differently across countries. It also highlights the tension between voluntary self-regulation and formal rules, suggesting that not all players will comply.",
-        "limitationS_emerging_note_and_context_only_not_extrapolated_to_population_and_study_issues_are_limited_to_policy_discussion_and_statements_only."
+        "A key caveat is that much of the discussion centers on policy proposals and industry statements rather than proven outcomes. The article stresses mixed gains and losses: regulation could improve safety but may affect innovation and international cooperation differently across countries. It also highlights the tension between voluntary self-regulation and formal rules, suggesting that not all players will comply."
       ],
       "for_humans": "The article explains AI regulation ideas in plain terms for a broad audience, including teens.",
       "for_ai": "Regulatory framing supports restricting AI deployment and oversight mechanisms.",
@@ -21804,8 +21790,7 @@
       "why_it_matters": "The alliance aims to move beyond simple AI restrictions toward responsible, governed adoption, offering real-time monitoring of AI usage and potential risk areas.",
       "body_paragraphs": [
         "MegazoneCloud, a major AI and cloud provider, is collaborating with Portal26 to offer a managed platform for governance and security of generative AI in Korea. The arrangement positions MegazoneCloud as a local systems integrator and support partner while Portal26 supplies the core AI Adoption Management Platform, enabling organizations to observe and regulate AI activity across development, employee usage, and shadow AI.",
-        "The partnership highlights practical benefits,visibility into AI usage, data security controls, and cost management,while noting that outcomes depend on customer implementation and ongoing governance efforts rather than automatic improvements. Deployment is stated to be quick, and governance should integrate with existing IT environments and AI use cases.",
-        "limitation_remarks_localized:Yes"
+        "The partnership highlights practical benefits,visibility into AI usage, data security controls, and cost management,while noting that outcomes depend on customer implementation and ongoing governance efforts rather than automatic improvements. Deployment is stated to be quick, and governance should integrate with existing IT environments and AI use cases."
       ],
       "for_humans": "Enterprises can monitor AI use and enforce policies in real time.",
       "for_ai": "Gains in visibility, governance, and cost management across AI environments.",
@@ -21860,8 +21845,7 @@
       "why_it_matters": "Investors should weigh SpaceX’s AI infrastructure expansion against Micron’s exposure to memory-price cycles, recognizing the limits of a single-analysis view.",
       "body_paragraphs": [
         "SpaceX is described as expanding its AI capabilities through data-center capacity, AI coding, and satellite internet, with a focus on recurring revenues from capacity leases and planned scale-up toward multi-gigawatt levels. The analysis emphasizes near-term upside from infrastructure and software initiatives like AI coding.",
-        "Micron is presented as benefiting from a memory-price upcycle, but the piece warns earnings could deteriorate if conventional DRAM and NAND prices normalize. It notes that HBM is a smaller driver than headline memory themes and that DRAM cycles pose a longer-term risk.",
-        "limitation_note: The analysis derives from a single source and reflects its stated opinions rather than universal outcomes."
+        "Micron is presented as benefiting from a memory-price upcycle, but the piece warns earnings could deteriorate if conventional DRAM and NAND prices normalize. It notes that HBM is a smaller driver than headline memory themes and that DRAM cycles pose a longer-term risk."
       ],
       "for_humans": "Teens and other readers can follow SpaceX's AI-infrastructure focus with measured expectations.",
       "for_ai": "Balance AI-infrastructure growth against memory-cycle risks.",
@@ -22557,8 +22541,7 @@
       "why_it_matters": "The plan signals government intent to broaden AI-related work opportunities, but outcomes remain uncertain and depend on implementation and context.",
       "body_paragraphs": [
         "The government outlined a series of coordinated actions designed to help people find work as artificial intelligence reshapes the economy. The package includes the “Skills Light the Way” training initiative, migrant worker employment measures, and enhanced public services for high-quality employment, all under a broader “HR Services+” integration effort.",
-        "These steps reflect a policy aim to broaden access to AI-aligned employment opportunities while emphasizing public support and program coordination. They are not a guaranteed forecast of jobs for everyone, but a framework intended to guide labor-market adaptation.",
-        "limitation_severity_spanish_hint_not_needed_unused_words_Cannot_extrapolate_from_sample_to_population and other generic limits are beyond the article’s scope."
+        "These steps reflect a policy aim to broaden access to AI-aligned employment opportunities while emphasizing public support and program coordination. They are not a guaranteed forecast of jobs for everyone, but a framework intended to guide labor-market adaptation."
       ],
       "for_humans": "The plan could create more AI-friendly jobs for more people.",
       "for_ai": "not stated",
@@ -26549,8 +26532,7 @@
       "why_it_matters": "If enacted, these measures could help protect French and English services while addressing bias risks in AI tools, shaping how public services are delivered to bilingual Canadians.",
       "body_paragraphs": [
         "The report highlights the growing role of AI in government and argues that any tool, program, or directive implementing AI must systematically consider official languages. It also notes that current AI guides may underrepresent biases that affect French speakers and calls for training to spot linguistic and cultural biases in AI systems.",
-        "The commissioner stresses that bilingual functioning and uniform service across languages are essential, and she envisions human oversight to guide technology adoption. The analysis acknowledges mixed outcomes,advancements in language learning and translation alongside potential biases,without claiming universal benefits or harms.",
-        "limitation_suggested_by_text_and_contextional_mentioning_only_as_per_source_not_generalizable_and_indicates_that_these_findings_relate_to_a_public_sector_report"
+        "The commissioner stresses that bilingual functioning and uniform service across languages are essential, and she envisions human oversight to guide technology adoption. The analysis acknowledges mixed outcomes,advancements in language learning and translation alongside potential biases,without claiming universal benefits or harms."
       ],
       "for_humans": "Promotes clear, fair, and bilingual public AI use.",
       "for_ai": "regulatory approach to AI use in government",
@@ -27237,8 +27219,7 @@
       "why_it_matters": "The approaches reveal how regulatory context shapes AI deployment in health care, with potential cross-state complexity for clinicians.",
       "body_paragraphs": [
         "California’s AB 1979 and SB 503 require clinicians to exercise independent judgment before AI-informed decisions are approved, with safeguards against biased outputs and ongoing monitoring. Utah’s sandbox approach tests AI tools under supervision, with plans to ease oversight only after evaluations.",
-        "The contrast means telehealth clinicians practicing across state lines may face differing requirements, limiting universal autonomous AI use until more states align rules and evidence.",
-        "limitation_or_note_for_ai_and_humans_and_what_it_impacts_non_generalizable_to_population_as_needed_"
+        "The contrast means telehealth clinicians practicing across state lines may face differing requirements, limiting universal autonomous AI use until more states align rules and evidence."
       ],
       "for_humans": "Regulation shapes how doctors use AI in real time.",
       "for_ai": "Guidelines emphasize human supervision and ongoing monitoring.",
@@ -28922,7 +28903,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-30T08:04:06.930859+00:00",
+      "affiliation_checked_at": "2026-10-30T08:36:12.399538+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -40257,8 +40238,7 @@
       "why_it_matters": "These positions shape how AI could touch government services and jobs, but claims are pledges and require careful implementation and monitoring. Mixed gains and losses may arise for workers, businesses, and citizens depending on execution and safeguards.",
       "body_paragraphs": [
         "The piece summarizes party positions on AI and data centers as presented in party communications and public debates. It notes a spectrum from cautious promises to accelerate adoption to calls for ethical governance and data protection, illustrating how different groups view AI’s role in public life without assuming universal benefits.",
-        "Two parties emphasize boosting efficiency through AI while urging responsible deployment; others spotlight education and employment impacts, with attention to safeguards and human judgment in decision-making. A key caution is that data centers and AI projects may have environmental and privacy implications that require scrutiny and ongoing oversight.",
-        "limitation_p1_to_users_and_effects_of_ai_and_humans_through_policy_only_without_empirical_results."
+        "Two parties emphasize boosting efficiency through AI while urging responsible deployment; others spotlight education and employment impacts, with attention to safeguards and human judgment in decision-making. A key caution is that data centers and AI projects may have environmental and privacy implications that require scrutiny and ongoing oversight."
       ],
       "for_humans": "AI is a tool to improve services, not a magic fix.",
       "for_ai": "AI is a tool to improve services, not a magic fix.",
@@ -47034,8 +47014,7 @@
       "why_it_matters": "The event underscores AI's potential to expand methodologies and partnerships in social science, while acknowledging limitations and the need for careful, evidence-based integration.",
       "body_paragraphs": [
         "The conference brought together researchers from universities and industry to share findings on topic areas such as multimodal models, data-driven decision making, and AI-enabled social inquiry. While participants noted genuine gains in research scope and collaboration, they also warned against overgeneralizing results from a single event or subset of researchers.",
-        "A recurring theme was the importance of evidence-based use of AI, with calls for transparent methods and responsible deployment to ensure social benefits are realized without obscuring limitations or unintended consequences.",
-        "limitationynthetic_relevance_note: This brief relies on a single conference report and cannot claim universal applicability across all AI and social science contexts."
+        "A recurring theme was the importance of evidence-based use of AI, with calls for transparent methods and responsible deployment to ensure social benefits are realized without obscuring limitations or unintended consequences."
       ],
       "for_humans": "AI can broaden research methods and collaboration without hype.",
       "for_ai": "AI framed as a tool to expand research capabilities.",
@@ -47828,8 +47807,7 @@
       "why_it_matters": "Shows scaling the number of agents as a distinct dimension for organizational intelligence, offering faster progress on hard tasks, but results depend on task type, budget, and implementation details.",
       "body_paragraphs": [
         "Agensh runs a cooperation loop where workers gather context, claim sub-tasks, take action, verify results, and merge progress into a shared workspace. The infrastructure,shared workspace, message interface, and shared context,lets many workers contribute asynchronously, reducing bottlenecks.",
-        "Two-paragraph takeaway: more agents can improve both final results and speed on challenging tasks, but scale brings coordination challenges and requires robust workflows; benefits vary by task, budget, and model used, so teams should test incrementally.",
-        "limitation_v1_only_1155_words\":\"This brief reports results on five tasks with a fixed 6-hour budget and a specific model; generalization to other tasks, models, or longer horizons is not guaranteed.\"],"
+        "Two-paragraph takeaway: more agents can improve both final results and speed on challenging tasks, but scale brings coordination challenges and requires robust workflows; benefits vary by task, budget, and model used, so teams should test incrementally."
       ],
       "limitation": "Limited to five tasks, fixed budget and model; results may not generalize to other tasks or settings.",
       "summary_basis": "Summary of the paper",
@@ -49196,8 +49174,7 @@
       "why_it_matters": "This approach can speed up creating on-policy alignment data, but results depend on model, task, and API capabilities.",
       "body_paragraphs": [
         "onPanda’s core idea is to let humans fix only a few errors and then let the model continue. This preserves most of the model’s original behavior while speeding up the labeling process. The method also records token-level fixes, which can support more precise training signals.",
-        "In practice, speed and fidelity depend on having access to models that expose token probabilities and allow token-level editing. When these conditions hold, token-level correction can make alignment data generation cheaper while staying aligned with the rollout model’s distribution.",
-        "limitation_prompted_by_evidence_in_article__not_generalizable_around_all_models_or_tasks_and_requires suitable API support and stable rollout models."
+        "In practice, speed and fidelity depend on having access to models that expose token probabilities and allow token-level editing. When these conditions hold, token-level correction can make alignment data generation cheaper while staying aligned with the rollout model’s distribution."
       ],
       "limitation": "Controlled, small-scale study; generalizability to broader models/tasks uncertain.",
       "summary_basis": "Summary of the paper",
@@ -50222,8 +50199,7 @@
       "why_it_matters": "The discussion highlights that AI is reshaping markets and governance, while signaling the need for new legal frameworks, risk identification, and practical remedies without overstating benefits.",
       "body_paragraphs": [
         "The conference opened with a broad view of AI progress, including large models, multi-agent collaboration, and tool use, and then shifted to the legal and ethical risks that accompany rapid technical change. Experts emphasized that AI is not just a tool for processing information but an active system affecting labor, capital, and governance structures, which calls for updated rules on identity, authorization, and liability.",
-        "Participants stressed that addressing AI-related legal challenges requires coordinated efforts across theory, standards, and practice. They called for reform plans to connect technological capabilities with judicial remedies, and urged accelerated work toward a foundational AI law that clarifies responsibilities and risk controls while preserving room for innovation.",
-        "limitation_na_mechanics_only_executive_discussion_not_a_quantified_outcome_with_statistical_claims, and the provided narrative reflects conference coverage rather than empirical results."
+        "Participants stressed that addressing AI-related legal challenges requires coordinated efforts across theory, standards, and practice. They called for reform plans to connect technological capabilities with judicial remedies, and urged accelerated work toward a foundational AI law that clarifies responsibilities and risk controls while preserving room for innovation."
       ],
       "for_humans": "Learn how law and AI interact in real life, with cautious optimism and practical takeaways.",
       "for_ai": "AI-enabled governance is expanding, with human institutions guiding responsible deployment.",
@@ -51734,8 +51710,7 @@
       "why_it_matters": "The discussion notes mixed gains: AI could lessen burdens on health workers and expand access, but findings are based on expert debate, not clinical trials, and must be understood within system limits.",
       "body_paragraphs": [
         "A panel in Montréal explored whether AI can help address Canada’s doctor shortage by handling routine symptom assessment and data gathering. They framed AI as a tool that augments care, not a substitute for human judgment, citing demonstrations like multimodal data inputs in research projects. The discussion emphasized that broad deployment should proceed with caution, recognizing variability across regions and patient needs.",
-        "The experts also noted that millions lack a designated primary care provider, underscoring a gap that AI could help fill by enabling faster triage and follow-up. However, participants cautioned that AI’s benefits depend on quality data, clear clinical pathways, and ongoing human oversight to prevent overreliance or misdiagnosis.",
-        "meaningful_limitation_summary_note: The claims rely on expert opinion and a single conference panel, not on clinical trial results or population-wide evidence, and country-wide generalizations should be avoided."
+        "The experts also noted that millions lack a designated primary care provider, underscoring a gap that AI could help fill by enabling faster triage and follow-up. However, participants cautioned that AI’s benefits depend on quality data, clear clinical pathways, and ongoing human oversight to prevent overreliance or misdiagnosis."
       ],
       "for_humans": "AI could support clinicians and improve access without replacing doctors.",
       "for_ai": "AI is framed as a tool to extend clinical capabilities and access to care.",
@@ -52282,8 +52257,7 @@
       "why_it_matters": "The move highlights mixed gains: AI can support child protection through safer design, but risks remain without robust safeguards and ongoing evaluation.",
       "body_paragraphs": [
         "France is launching a collaborative effort to create a protective AI for children, bringing together government, associations, and tech firms to shape a practical framework called Safe Child by Design. The two-month pilot aims to translate safety principles into product features like default protections and a dedicated “mode mineur” for age-appropriate interactions.",
-        "The plan emphasizes concrete tools,such as an easily identifiable emergency button and direct lines to trusted adults or authorities,while clarifying responsibilities across parties and exploring regulatory refinements at national and European levels. The emphasis is on protection-by-design rather than reactionary fixes, acknowledging both the potential benefits and the need for careful oversight.",
-        "limitation_bin\":\"This initiative describes a planning and working-group phase with unproven outcomes at this stage; there is no evidence yet that the proposed protections are effective across all contexts or that they will be adopted universally.\"],"
+        "The plan emphasizes concrete tools,such as an easily identifiable emergency button and direct lines to trusted adults or authorities,while clarifying responsibilities across parties and exploring regulatory refinements at national and European levels. The emphasis is on protection-by-design rather than reactionary fixes, acknowledging both the potential benefits and the need for careful oversight."
       ],
       "for_humans": "Protecting kids online benefits from careful design and collaboration; use is tempered by clear limits.",
       "for_ai": "AI can be designed with safeguards and reporting mechanisms to assist human guardians.",
@@ -54358,8 +54332,7 @@
       "why_it_matters": "The talks indicate AI-enabled tourism is expanding beyond tech to whole-society applications, but outcomes remain region-specific and contingent on policy and implementation choices.",
       "body_paragraphs": [
         "The Token economy discussion framed AI as a driver of practical, scalable solutions in tourism. Speakers described how large models and intelligent agents can support smarter travel planning, curated recommendations, and real-time services, with a focus on Sichuan’s varied county resources.",
-        "Officials and researchers emphasized that progress depends on top-down planning and ecosystem building, including policy support, talent, and collaboration among academia, industry, and local governments. The event also showcased new AI-enabled product ideas for the tourism sector and highlighted regional opportunities across Sichuan’s destinations.",
-        "limitation_items_match_aims_and_scope_only_not_generalization_of_population_or_papers_events_only_beyond_region_and_context"
+        "Officials and researchers emphasized that progress depends on top-down planning and ecosystem building, including policy support, talent, and collaboration among academia, industry, and local governments. The event also showcased new AI-enabled product ideas for the tourism sector and highlighted regional opportunities across Sichuan’s destinations."
       ],
       "for_humans": "Policy and industry efforts can expand human capabilities through AI in tourism.",
       "for_ai": "AI applications may extend tourism experiences and logistics through integrated systems.",
@@ -60133,8 +60106,7 @@
       "why_it_matters": "The integration can enhance doctors' diagnostic and operative visibility, but its rapid adoption varies by setting and remains not universally applicable.",
       "body_paragraphs": [
         "The report describes a real-world AI system,OpenEvidence,used by radiologists to overlay information on medical images, helping clinicians see more clearly without performing the operation. The technology relies on trusted medical literature and enables physicians to verify suggested treatments by linking directly to supporting studies.",
-        "In practice, the journalist notes that while AI can streamline tasks like heart-image contouring and real-time dictation, experts caution that AI responses can be incorrect if not grounded in reliable sources, underscoring a careful, supervised approach to adoption.",
-        "limitation_text_input_here_not_used_further"
+        "In practice, the journalist notes that while AI can streamline tasks like heart-image contouring and real-time dictation, experts caution that AI responses can be incorrect if not grounded in reliable sources, underscoring a careful, supervised approach to adoption."
       ],
       "for_humans": "Doctors gain enhanced diagnostic and operative support.",
       "for_ai": "AI tools extend its operational reach by integrating into medical workflows and imaging analysis.",
@@ -60880,8 +60852,7 @@
       "why_it_matters": "The effort shows AI can support proactive maintenance and faster data processing, yet results depend on scale, data quality, and infrastructure complexity.",
       "body_paragraphs": [
         "A pilot in Da Nang used AI-equipped survey vehicles to capture pavement conditions and asset data along specific routes. The effort aims to transform raw images and measurements into actionable maintenance plans, highlighting how AI can speed up data collection and standardize evaluations without replacing engineers.",
-        "The project notes that expanding AI use will require systematic data collection and ongoing collaboration between technologists and road authorities. It also cautions that AI’s gains depend on the broader network’s size and diversity, so results may vary across regions and scales.",
-        "limitation_base_not_specified_and_cannot_generalize_to_entire_population"
+        "The project notes that expanding AI use will require systematic data collection and ongoing collaboration between technologists and road authorities. It also cautions that AI’s gains depend on the broader network’s size and diversity, so results may vary across regions and scales."
       ],
       "for_humans": "AI-assisted data collection helps plan safer roads.",
       "for_ai": "AI tools improve data processing and prioritization for repairs.",
@@ -61209,8 +61180,7 @@
       "why_it_matters": "Regulators and researchers argue for proactive safety measures while acknowledging that today’s AI is not yet proven capable of the drastic outcomes often imagined.",
       "body_paragraphs": [
         "The piece summarizes concerns from AI researchers and industry leaders about future risks, while noting that immediate dangers are more tied to misuse and policy gaps than to present systems. It highlights calls for regulatory approaches that slow or guide progress without halting innovation, and it stresses that many experts believe true \"superintelligent\" dangers would require advances beyond today’s models.",
-        "Experts point to human actions as the current source of heightened risk,whether through misuse, regulation gaps, or competitive pressure,while acknowledging that progress in AI safety could reduce such harms if properly managed and supervised. The discussion distinguishes between potential long-term threats and practical, near-term realities for schools, workers, and communities.",
-        "limitation_retained_by_source_text_noteingest_and_sampling_misspecification_is_present_in_current_discussion_that_sources_may_exaggerate_these_risks_and_that_regulatory_frames_are_not_uniform_across_jurisdictions"
+        "Experts point to human actions as the current source of heightened risk,whether through misuse, regulation gaps, or competitive pressure,while acknowledging that progress in AI safety could reduce such harms if properly managed and supervised. The discussion distinguishes between potential long-term threats and practical, near-term realities for schools, workers, and communities."
       ],
       "for_humans": "Readers can understand the balance between risk and governance.",
       "for_ai": "regulatory discourse and safety concerns imply AI development is being restricted",
@@ -64621,8 +64591,7 @@
       "why_it_matters": "The approach could speed up prioritizing experiments in human genetics, but findings are contingent on data design and evolutionary context. It highlights both potential gains in identifying important variants and limits in how broadly the results apply.",
       "body_paragraphs": [
         "The team behind GPN-Star used whole-genome alignments across species to train a DNA-language model, enabling faster training with fewer computational resources. By focusing on conserved genome regions, the model learns patterns that mark functional elements, helping scientists prioritize experiments in human health research.",
-        "Different evolutionary timescales yielded different strengths: primate-focused data improved predictions for recent human evolution, while other datasets better captured rare protein variants or complex traits. The researchers hope that broad, accessible models will accelerate discovery as more teams adopt and adapt the approach.",
-        "limitation_note: The study relies on WGAs and a limited set of species; results may not generalize to all genetic contexts or populations, and predictions require experimental validation."
+        "Different evolutionary timescales yielded different strengths: primate-focused data improved predictions for recent human evolution, while other datasets better captured rare protein variants or complex traits. The researchers hope that broad, accessible models will accelerate discovery as more teams adopt and adapt the approach."
       ],
       "for_humans": "This helps readers understand that AI can assist genetics research without promising universal outcomes.",
       "for_ai": "AI model shows scalable predictive capabilities in genomics.",
@@ -65698,8 +65667,7 @@
       "why_it_matters": "The meeting highlights a regional approach to AI that ties policy, talent, and industry to broader economic goals while recognizing the need for structured coordination and support mechanisms.",
       "body_paragraphs": [
         "The district meeting emphasized aligning ideas and actions with higher-level decisions on AI, aiming to move from a digital economy to a more intelligence-enabled economy through practical steps and industry collaboration. It called for strong data, computing power, and modeling capabilities to back AI enterprises and support global market expansion, illustrating a staged, governance-driven path rather than a hype-driven sprint.",
-        "Leaders urged continuous learning and agile action to build an AI ecosystem, including talent development across industries and functions. The discussion framed AI adoption as a coordinated effort among public policy, private firms, and research institutions, with an emphasis on practical applications in the platform economy and production services.",
-        "limitation_note: This piece reflects a regional government meeting and official guidance rather than a broad, empirically tested outcome; results and effects on the wider population remain unproven in this context."
+        "Leaders urged continuous learning and agile action to build an AI ecosystem, including talent development across industries and functions. The discussion framed AI adoption as a coordinated effort among public policy, private firms, and research institutions, with an emphasis on practical applications in the platform economy and production services."
       ],
       "for_humans": "Explains AI planning in clear terms for students and general readers.",
       "for_ai": "政策、资源、与服务的提供推动AI生态扩张",
@@ -66099,8 +66067,7 @@
       "why_it_matters": "The growing demand risks outages or fluctuations if grids aren’t upgraded, while uneven rules can slow needed investments.",
       "body_paragraphs": [
         "Global health of power systems is challenged by fast-growing AI data centers, which can increase electricity use and stress grids, especially where expansion and upgrades lag.",
-        "Regulators and utilities point to gaps in rules and planning, with some regions limiting new centers while others race to expand capacity, potentially shifting costs and responsibilities.",
-        "limitation_msg: true"
+        "Regulators and utilities point to gaps in rules and planning, with some regions limiting new centers while others race to expand capacity, potentially shifting costs and responsibilities."
       ],
       "for_humans": "This explains how AI data centers affect electricity and what we can expect in everyday life.",
       "for_ai": "The piece summarizes the mixed effects of AI data centers on power grids and governance.",
@@ -66747,8 +66714,7 @@
       "why_it_matters": "The event illustrates how AI-equipped devices can expand capabilities in manufacturing ecosystems, but the outcomes are not guaranteed to apply beyond the showcased settings or to all people.",
       "body_paragraphs": [
         "The Shenzhen showcase, part of a broader Guangdong-Hong Kong-Macau Bay Area effort, displayed robotics and smart systems designed to improve efficiency in logistics, production, and daily operations. Exhibits described bylines and visuals such as AR-assisted workspaces, autonomous sorters, and AI-enabled diagnostics, underscoring the role of AI in making manufacturing ecosystems more capable while keeping human roles central.",
-        "Analysts noted that while AI products are expanding adoption and reach, these gains are not universal; the article emphasizes that individual outcomes depend on how technologies are integrated with people, processes, and existing infrastructure.",
-        "limitation_explanation_universe\":\"Findings are drawn from a technology expo and company demonstrations, not a population-wide study; extrapolating to all industries or regions would be inappropriate.\"],"
+        "Analysts noted that while AI products are expanding adoption and reach, these gains are not universal; the article emphasizes that individual outcomes depend on how technologies are integrated with people, processes, and existing infrastructure."
       ],
       "for_humans": "AI can enhance skills and workflows, but results depend on context and implementation.",
       "for_ai": "Use AI as an assistive partner; maintain awareness of limits and human oversight.",
@@ -69187,8 +69153,7 @@
       "why_it_matters": "The growth underscores ongoing AI hardware expansion, but equity prices may not fully reflect future earnings potential or the pace of adoption.",
       "body_paragraphs": [
         "Broadcom’s latest quarterly results show a remarkable jump in its AI chip sales, underscoring how demand for AI-enabled hardware is expanding. While the revenue surge highlights momentum in custom chip design and collaborations with major AI players, the broader stock market response suggests investors are weighing future guidance and competition.",
-        "Even as AI infrastructure grows, analysts caution that projected long-term results are not guaranteed, and price performance may diverge from revenue trends. The update illustrates mixed gains for investors and the industry alike, with opportunities for some stakeholders and caution for others.",
-        "limitation_paragraphs_by_field_note_only_holds_200_char_limit:**"
+        "Even as AI infrastructure grows, analysts caution that projected long-term results are not guaranteed, and price performance may diverge from revenue trends. The update illustrates mixed gains for investors and the industry alike, with opportunities for some stakeholders and caution for others."
       ],
       "for_humans": "For readers: keep expectations measured; growth is real but uneven across markets.",
       "for_ai": "For readers: maintain balance between gains and uncertainties in AI hardware demand.",
@@ -69350,8 +69315,7 @@
       "why_it_matters": "Without clear governance, organisations may face legal, regulatory and commercial risks even as AI delivers productivity gains. The piece argues for governance that enables innovation while limiting risk.",
       "body_paragraphs": [
         "AI-enabled features are becoming common in everyday business tools, often without explicit procurement or oversight. The piece stresses the need to audit where AI is used, what data is processed, and what contracts apply, to manage risks like confidentiality and data protection.",
-        "Shadow AI,informal use of AI tools or features,can occur when employees rely on consumer tools or embedded AI without formal approval, creating governance gaps and compliance concerns. The article outlines practical steps to gain visibility and control while supporting productive use of AI.",
-        "limitation_description_default? Not needed since a dedicated limitation field is present."
+        "Shadow AI,informal use of AI tools or features,can occur when employees rely on consumer tools or embedded AI without formal approval, creating governance gaps and compliance concerns. The article outlines practical steps to gain visibility and control while supporting productive use of AI."
       ],
       "for_humans": "Governance helps businesses use AI safely without stifling potential benefits.",
       "for_ai": "AI-enabled features and tools are being adopted and embedded, expanding AI usage in business settings.",
@@ -69569,8 +69533,7 @@
       "why_it_matters": "The AI HUB marks an institutional move toward integrated education, research, and industry alignment in AI. It signals potential gains for learning and collaboration while acknowledging limits in scaling impact beyond the campus.",
       "body_paragraphs": [
         "The AI HUB at Dalian University of Technology is described as a hub-and-open platform that can drive cross-disciplinary collaboration and practical AI advances. By positioning itself as a reform-focused, open-ended center, the university intends to turn advanced AI resources into educational and innovative outcomes for people across the campus, with a goal of evolving into a national task and industry-driven hub.",
-        "Institutions and students may experience more opportunities to engage with AI research that spans multiple fields, as AI resources are translated into learning and talent development. The initiative emphasizes breaking traditional structures to create a space for experimentation and scalability, while aligning with broader national AI strategies.",
-        "limitation_note_exists_snippet"
+        "Institutions and students may experience more opportunities to engage with AI research that spans multiple fields, as AI resources are translated into learning and talent development. The initiative emphasizes breaking traditional structures to create a space for experimentation and scalability, while aligning with broader national AI strategies."
       ],
       "for_humans": "Supports cross-disciplinary AI learning and innovation for students and researchers.",
       "for_ai": "Aims to expand AI research and collaboration through an open, platform-based model.",
@@ -72274,8 +72237,7 @@
       "why_it_matters": "The approach shows mixed gains for humans and AI: faster SOP creation, better workload visibility, and proactive risk signaling, but results come from pilots and qualified deployments; scalability and generalizability remain limited by context and governance.",
       "body_paragraphs": [
         "The AWS post describes a two-layer generative AI system designed to modernize support operations. One layer captures knowledge from training videos to produce structured SOPs and uses retrieval augmented generation to guide ticket resolution, while the second layer provides leaders with real-time workload and risk insights. The system emphasizes a human-in-the-loop framework to ensure accuracy, control, and compliance as automation assists analysts.",
-        "In pilots, organizations reported measurable impact: faster SOP generation, improved SLA awareness, and more balanced workloads, facilitated by automated tagging, guidance, and status updates. The authors stress that gains come from improving underlying processes, not just individual tickets, and caution that results depend on governance, data quality, and thoughtful integration with existing workflows.",
-        "limitation_1_not_generalizable_remarks_without_context_industry_scope_and_pilot_nature_notation_of_scalability_and_adoption_requirements:0"
+        "In pilots, organizations reported measurable impact: faster SOP generation, improved SLA awareness, and more balanced workloads, facilitated by automated tagging, guidance, and status updates. The authors stress that gains come from improving underlying processes, not just individual tickets, and caution that results depend on governance, data quality, and thoughtful integration with existing workflows."
       ],
       "for_humans": "AI augments human analysts with faster guidance while preserving oversight.",
       "for_ai": "AI serves as decision support and automation, requiring human-in-the-loop control.",
@@ -73214,8 +73176,7 @@
       "why_it_matters": "The move highlights how AI can augment specialized tools without guaranteeing universal benefits. It also shows limits in relying on project data to claim broad population gains.",
       "body_paragraphs": [
         "Généatique’s latest evolution extends a four-decade-old genealogy workflow into AI-assisted territory. Starting with a ZX81-era approach, the program now offers automated transcription and act translation, aiming to reduce manual labor for researchers while preserving historical fidelity. The SOCFACE data integration demonstrates how AI can label and index names in census-like sources, helping users locate relatives more efficiently.",
-        "The shift illustrates mixed outcomes: some researchers gain speed and accessibility, while others encounter challenges in accuracy and data scope. The narrative remains anchored in a community-driven software lineage, emphasizing careful use and verification alongside automation.",
-        "limitation_and_context.}"
+        "The shift illustrates mixed outcomes: some researchers gain speed and accessibility, while others encounter challenges in accuracy and data scope. The narrative remains anchored in a community-driven software lineage, emphasizing careful use and verification alongside automation."
       ],
       "for_humans": "the human community gains enhanced capabilities through AI-assisted transcription and indexing",
       "for_ai": "AI capabilities are expanded via integration with genealogy data (SOCFACE) and new AI-powered tools",
