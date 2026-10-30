@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse,json,os,time
 import ai_runtime
 from editorial_corrections import is_locked
-from research_reading import read_paper, needs_upgrade, READING_VERSION
+from research_reading import read_paper, needs_upgrade, restore_reading_scope, READING_VERSION
 from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
@@ -20,13 +20,21 @@ def load():
     if not path.exists():raise ValueError('Collect recent research before generating summaries.')
     data=json.loads(path.read_text());p=ROOT/'data/research/public.json'
     public=json.loads(p.read_text()) if p.exists() else {'papers':[]}
-    return data,{r['key']:r for r in public['papers']}
+    return data,{r['key']:restore_reading_scope(r) for r in public['papers']}
 
 def pending(data,old):
     return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and not (p.get('pdf_url') and p.get('pdf_url') != old[p['key']].get('pdf_url')) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
+
+def unchanged_record(prior, paper):
+    # Discovery's evidence_scope describes its abstract input. It must never
+    # overwrite the scope proven by a previously published paper reading.
+    metadata=public_record(paper)
+    metadata.pop('evidence_scope',None)
+    metadata.pop('pdf_url',None)
+    return {**prior,**metadata}
 
 def research_work_order(papers,old,retry,priority):
     def rank(p):
@@ -81,7 +89,7 @@ def main():
         if is_locked(p['key'],ROOT) and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append(prior);continue
         if p['key'] not in todo_keys and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
-            counts['unchanged']+=1;selected.append({**prior,**public_record(p)});continue
+            counts['unchanged']+=1;selected.append(unchanged_record(prior,p));continue
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
         if not (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')):

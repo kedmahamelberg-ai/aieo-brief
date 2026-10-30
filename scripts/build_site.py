@@ -24,6 +24,7 @@ from search_metadata import identity_graph, canonical_local, weekly_overview_wit
 from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
 from editorial_artifacts import isolated_artifact
+from research_reading import restore_reading_scope
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -121,12 +122,25 @@ def papers():
     if not p.exists():return []
     raw=json.loads(p.read_text()).get('papers',[]);out=[]
     for r in raw:
+        r=restore_reading_scope(r)
         if not safe_url(r.get('url')):continue
         key=str(r['key'])
         if not re.fullmatch(r'paper:[a-f0-9]{24}',key):raise ValueError('Unsafe paper key')
         slug=key.replace(':','-')
         out.append({**r,'kind':'research','slug':slug,'path':f'research/{slug}/index.html','source_count':1,'sources':[{'publisher':r['publisher'],'headline':r['original_headline'],'url':r['url'],'date':r['date'],'language':'en'}],'display_date':fmt(r['date']),'markets':[],'market_label':'Research','topic':'research','topic_label':TOPICS['research'],'human_direction':'unresolved','ai_direction':'unresolved','for_humans':'','for_ai':'','human_label':'','ai_label':'','evidence_complete':False,'display_scope':'','edition':r['date'][:7],'summary_basis':r.get('summary_basis','Paper reference'),'body_paragraphs':clean_body_paragraphs(r.get('body_paragraphs',[])),'reading_minutes':max(1,r.get('reading_minutes',1)),'has_editorial':bool(r.get('has_editorial'))})
     return sorted(out,key=lambda x:x['date'],reverse=True)
+
+def persist_repaired_research_scopes(path):
+    """Save proof-backed scope repairs with the validated publication archive."""
+    if not path.exists():return 0
+    payload=json.loads(path.read_text())
+    old=payload.get('papers',[])
+    repaired=[restore_reading_scope(row) for row in old]
+    changed=sum(a!=b for a,b in zip(old,repaired))
+    if changed:
+        payload['papers']=repaired
+        path.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+    return changed
 
 def culture_items():
     labels={'illustration':'Art & illustration','poetry':'Poetry','text':'A short reading','quote':'A quotation','music':'Music'}
@@ -430,6 +444,7 @@ def main():
 
     (SITE/'robots.txt').write_text('User-agent: *\n'+('Disallow: /\n' if preview else 'Allow: /\n'+('Sitemap: '+baseurl+'/sitemap.xml\n' if baseurl else '')))
     if args.update_archive and not preview:
+        persist_repaired_research_scopes(ROOT/'data/research/public.json')
         archivepath.parent.mkdir(parents=True,exist_ok=True);archivepath.write_text(json.dumps({'schema_version':'aieo_brief_archive_v1','stories':raw_archive},ensure_ascii=False,indent=2)+'\n')
     summary={'release':release['release_id'],'news':len(news),'editorial_summaries':sum(x['has_editorial'] for x in news),'research':len(research),'historical_pages':len(allcards),'community_connected':bool(config.get('community_enabled')),'preview':preview}
     summary['culture']=len(culture)

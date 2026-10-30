@@ -10,9 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import research_recovery as recovery
 from research_pdf import abstract_from_text
-from research_reading import READING_VERSION
+from research_reading import READING_VERSION, restore_reading_scope
 import editorial_engine as engine
-from generate_research_summaries import merge_recent, pending, research_work_order
+from generate_research_summaries import merge_recent, pending, research_work_order, unchanged_record
 
 
 class ResearchRecovery(unittest.TestCase):
@@ -101,6 +101,43 @@ class ResearchRecovery(unittest.TestCase):
         old={'paper:old':{'has_editorial':False}}
         retry={'paper:old':{'attempts':3}}
         self.assertEqual(research_work_order([new_paper,pending_paper],old,retry,[])[0],pending_paper)
+
+    def test_discovery_metadata_cannot_downgrade_a_verified_full_paper(self):
+        prior={**self.paper(),'has_editorial':True,'evidence_scope':'paper_text',
+               'summary_basis':'Summary of the paper','full_text_status':'read',
+               'paper_pages':7,'paper_text_sha256':'a'*64,
+               'pdf_url':'https://arxiv.org/pdf/2609.35767v1'}
+        discovery={**self.paper(),'evidence_scope':'abstract','pdf_url':'',
+                   'institutions':['Verified University']}
+        merged=unchanged_record(prior,discovery)
+        self.assertEqual(merged['evidence_scope'],'paper_text')
+        self.assertEqual(merged['pdf_url'],prior['pdf_url'])
+        self.assertEqual(merged['institutions'],['Verified University'])
+        damaged={**merged,'evidence_scope':'abstract'}
+        self.assertEqual(restore_reading_scope(damaged)['evidence_scope'],'paper_text')
+        damaged['paper_text_sha256']=''
+        self.assertEqual(restore_reading_scope(damaged)['evidence_scope'],'abstract')
+
+    def test_current_research_build_repairs_only_proven_paper_scopes(self):
+        from build_site import papers
+        from validate_public_site import validate_research_reading
+        for paper in papers():
+            if paper.get('has_editorial'):
+                validate_research_reading(paper)
+
+    def test_publication_persists_proof_backed_scope_repair(self):
+        from build_site import persist_repaired_research_scopes
+        with tempfile.TemporaryDirectory() as folder:
+            path=Path(folder)/'public.json'
+            valid={**self.paper(),'summary_basis':'Summary of the paper',
+                   'evidence_scope':'abstract','full_text_status':'read',
+                   'paper_pages':3,'paper_text_sha256':'b'*64}
+            unproven={**valid,'key':'paper:unproven','paper_text_sha256':''}
+            path.write_text(json.dumps({'papers':[valid,unproven]}))
+            self.assertEqual(persist_repaired_research_scopes(path),1)
+            rows=json.loads(path.read_text())['papers']
+            self.assertEqual([row['evidence_scope'] for row in rows],['paper_text','abstract'])
+            self.assertEqual(persist_repaired_research_scopes(path),0)
 
 if __name__ == '__main__':
     unittest.main()
