@@ -2,6 +2,368 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Meditations",
+      "content_fingerprint": "443ef50f7224a7b131fed21649f024e3920b354e1b32867bc12a9f438b204ade",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "text",
+      "deck": "A passage from Meditations. Translated by Méric Casaubon.",
+      "excerpt": "XXVII. Wipe off all idle fancies, and say unto thyself incessantly; Now if I will, it is in my power to keep out of this my soul all wickedness, all lust, and concupiscences, all trouble and confusion. But on the contrary to behold and consider all things according to their true nature, and to carry myself towards everything according to its true worth. Remember then this thy power that nature hath given thee.",
+      "headline": "Meditations · a short reading",
+      "key": "culture:f35a1cb698b44b420e585ea4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:passage:443ef50f7224a7b131fed21649f024e3920b354e1b32867bc12a9f438b204ade",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 256 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-10-31",
+      "selected_on": "2026-10-31",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f35a1cb698b44b420e585ea4",
+      "path": "culture/culture-f35a1cb698b44b420e585ea4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Meditations · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "31 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-31",
+      "summary_basis": "Selected 31 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "XXVII. Wipe off all idle fancies, and say unto thyself incessantly; Now if I will, it is in my power to keep out of this my soul all wickedness, all lust, and concupiscences, all trouble and confusion. But on the contrary to behold and consider all things according to their true nature, and to carry myself towards everything according to its true worth. Remember then this thy power that nature hath given thee.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/1/11/Edvard_Grieg_-_piano_concerto_in_a_minor%2C_op._16_-_iii._allegro_moderato_molto.ogg",
+      "creator": "Edvard Grieg",
+      "creator_origin": "Norwegian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Edvard Grieg. 10 minutes to listen.",
+      "duration_seconds": 630,
+      "headline": "Edvard Grieg - piano concerto in a minor, op. 16 - iii. allegro moderato molto",
+      "key": "culture:5721ae6ed89dd133e179e5a0",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Edvard_Grieg_-_piano_concerto_in_a_minor%2C_op._16_-_iii._allegro_moderato_molto.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Edvard_Grieg",
+      "original_recording_title": "Edvard Grieg - piano concerto in a minor, op. 16 - iii. allegro moderato molto",
+      "provenance_id": "commons:3433029",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Edvard Grieg",
+      "recording_description": "Piano concerto in a minor, op. 16 - iii. allegro moderato molto .",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Edvard Grieg",
+        "label": "Public domain (source-declared)",
+        "source_credit": "http://www.musopen.com",
+        "url": "https://commons.wikimedia.org/wiki/File:Edvard_Grieg_-_piano_concerto_in_a_minor,_op._16_-_iii._allegro_moderato_molto.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Edvard_Grieg_-_piano_concerto_in_a_minor,_op._16_-_iii._allegro_moderato_molto.ogg",
+      "work_date": "1858/1859",
+      "date": "2026-10-31",
+      "selected_on": "2026-10-31",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-5721ae6ed89dd133e179e5a0",
+      "path": "culture/culture-5721ae6ed89dd133e179e5a0/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Edvard Grieg - piano concerto in a minor, op. 16 - iii. allegro moderato molto",
+          "url": "https://commons.wikimedia.org/wiki/File:Edvard_Grieg_-_piano_concerto_in_a_minor,_op._16_-_iii._allegro_moderato_molto.ogg",
+          "date": "1858/1859",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "31 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-31",
+      "summary_basis": "Selected 31 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "a6a853a413cb4e4dd19e9adae16bb9606d20c8a3394c974834c43858f617ac31",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "quote",
+      "deck": "From Tao Te Ching. Translation by James Legge.",
+      "excerpt": "My mind is that of a stupid man; I am in a state of chaos.",
+      "headline": "My mind is that of a stupid man; I am in a state of chaos.",
+      "key": "culture:443a0b93768b9ee11abdc660",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:quote:a6a853a413cb4e4dd19e9adae16bb9606d20c8a3394c974834c43858f617ac31",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The multitude of men look satisfied and pleased; as if enjoying a full banquet, as if mounted on a tower in spring. I alone seem listless and still, my desires having as yet given no indication of their presence. I am like an infant which has not yet smiled. I look dejected and forlorn, as if I had no home to go to. The multitude of men all have enough and to spare. I alone seem to have lost everything. My mind is that of a stupid man; I am in a state of chaos.",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 62 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-10-31",
+      "selected_on": "2026-10-31",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-443a0b93768b9ee11abdc660",
+      "path": "culture/culture-443a0b93768b9ee11abdc660/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "My mind is that of a stupid man; I am in a state of chaos.",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "31 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-31",
+      "summary_basis": "Selected 31 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "My mind is that of a stupid man; I am in a state of chaos.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The multitude of men look satisfied and pleased; as if enjoying a full banquet, as if mounted on a tower in spring. I alone seem listless and still, my desires having as yet given no indication of their presence. I am like an infant which has not yet smiled. I look dejected and forlorn, as if I had no home to go to. The multitude of men all have enough and to spare. I alone seem to have lost everything. My mind is that of a stupid man; I am in a state of chaos.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "View of Emmerich",
+      "art_type": "Painting",
+      "balance_origin": "Netherlands",
+      "creator": "Jan van Goyen (Dutch, 1596–1656)",
+      "creator_origin": "Netherlands",
+      "culture_type": "illustration",
+      "deck": "View of Emmerich. oil on wood.",
+      "headline": "View of Emmerich",
+      "image_path": "assets/culture/35e97764e17b7b8489177f16.jpg",
+      "key": "culture:35e97764e17b7b8489177f16",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1959.351/1959.351_web.jpg",
+      "medium": "oil on wood",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1959.351",
+      "provenance_id": "cma:135840",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1959.351",
+      "work_date": "1645",
+      "date": "2026-10-31",
+      "selected_on": "2026-10-31",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-35e97764e17b7b8489177f16",
+      "path": "culture/culture-35e97764e17b7b8489177f16/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "View of Emmerich",
+          "url": "https://clevelandart.org/art/1959.351",
+          "date": "1645",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "31 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-31",
+      "summary_basis": "Selected 31 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "0b48e7a2326fbe7b4d88f000642d6752ae4bb436ac1a19a5917bd1c904958e22",
+      "creator": "Kabir",
+      "creator_origin": "Indian · North Indian poetic tradition",
+      "culture_type": "poetry",
+      "deck": "Songs of Kabir · XLVII, by Kabir. Translated by Rabindranath Tagore.",
+      "excerpt": "There is a strange tree, which stands without roots and bears\n    fruits without blossoming;\n  It has no branches and no leaves, it is lotus all over.\n  Two birds sing there; one is the Guru, and the other the\n    disciple:\n  The disciple chooses the manifold fruits of life and tastes them,\n    and the Guru beholds him in joy.\n  What Kabîr says is hard to understand: \"The bird is beyond\n    seeking, yet it is most clearly visible.  The Formless is in\n    the midst of all forms.  I sing the glory of forms.\"",
+      "headline": "Songs of Kabir · XLVII",
+      "key": "culture:03941b1cb68a0a71cf9062b4",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "There is a strange tree, which stands without roots and bears",
+        "    fruits without blossoming;",
+        "  It has no branches and no leaves, it is lotus all over.",
+        "  Two birds sing there; one is the Guru, and the other the",
+        "    disciple:",
+        "  The disciple chooses the manifold fruits of life and tastes them,",
+        "    and the Guru beholds him in joy.",
+        "  What Kabîr says is hard to understand: \"The bird is beyond",
+        "    seeking, yet it is most clearly visible.  The Formless is in",
+        "    the midst of all forms.  I sing the glory of forms.\""
+      ],
+      "provenance_id": "pg:6519:poem:dc48c8e227ba3efe5e48b6af95d8f94694f8348b1299f4c197c65ce529c2755f",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 15th century. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6519"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2ecd0d98ffffe86fa795c6885a9caf8f8f5805607003f91b311cede5dc63c4f9",
+      "source_locator": "XLVII",
+      "source_url": "https://www.gutenberg.org/ebooks/6519",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1915 translation",
+      "date": "2026-10-31",
+      "selected_on": "2026-10-31",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-03941b1cb68a0a71cf9062b4",
+      "path": "culture/culture-03941b1cb68a0a71cf9062b4/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Songs of Kabir · XLVII",
+          "url": "https://www.gutenberg.org/ebooks/6519",
+          "date": "1915 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "31 Oct 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-10-31",
+      "summary_basis": "Selected 31 Oct 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "There is a strange tree, which stands without roots and bears\n    fruits without blossoming;\n  It has no branches and no leaves, it is lotus all over.\n  Two birds sing there; one is the Guru, and the other the\n    disciple:\n  The disciple chooses the manifold fruits of life and tastes them,\n    and the Guru beholds him in joy.\n  What Kabîr says is hard to understand: \"The bird is beyond\n    seeking, yet it is most clearly visible.  The Formless is in\n    the midst of all forms.  I sing the glory of forms.\"",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "6122bafc3489adf8d8139c256db7af066475733cfa03ff19f48787e389f52d18",
       "creator": "John Keats",
       "creator_origin": "English",
@@ -29430,7 +29792,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-30T19:57:15.153605+00:00",
+      "affiliation_checked_at": "2026-10-31T09:50:08.227812+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
