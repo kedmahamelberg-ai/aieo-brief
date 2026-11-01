@@ -9,7 +9,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 from brief_contract import validate_pair, relationship_fingerprint
-from check_observatory_update import needs_update, expected_period
+from check_observatory_update import needs_update, expected_period, missing_news_summaries, needs_editorial_retry
 from build_site import inputs
 
 
@@ -32,6 +32,25 @@ class WeeklyHandoff(unittest.TestCase):
         self.assertFalse(needs_update(self.release, self.sym, self.published))
         self.sym['generated_at'] = '2099-01-01T12:00:00Z'
         self.assertFalse(needs_update(self.release, self.sym, self.published))
+
+    def test_missing_editorial_is_retried_once_daily(self):
+        event = self.release['evidence'][0]
+        self.published['stories'] = [{'event_id': event['event_id'],
+                                      'evidence_complete': True, 'has_editorial': False}]
+        now = datetime(2026, 11, 1, 12, tzinfo=ZoneInfo('Europe/Amsterdam'))
+        self.assertEqual(missing_news_summaries(self.release, self.published), 1)
+        self.assertTrue(needs_editorial_retry(self.release, self.published, {}, now))
+        status = {'release_id': self.release['release_id'], 'updated_at': '2026-11-01T08:00:00Z'}
+        self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
+        status['updated_at'] = '2026-10-31T08:00:00Z'
+        self.assertTrue(needs_editorial_retry(self.release, self.published, status, now))
+        self.published['stories'][0]['has_editorial'] = True
+        self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
+        self.published['stories'][0]['has_editorial'] = False
+        self.published['stories'][0]['evidence_complete'] = False
+        self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
+        self.published['release_id'] = '2026-W00'
+        self.assertEqual(missing_news_summaries(self.release, self.published), 0)
 
     def test_same_week_correction_is_picked_up(self):
         self.sym['evidence'][0]['axes']['human']['direction'] = 'loss' if self.sym['evidence'][0]['axes']['human']['direction']!='loss' else 'gain'
