@@ -73,7 +73,9 @@ def validation_errors(stage):
     field=message.split(':',1)[-1].strip() if code=='draft_field_too_long' else None
     # The exception message is for retry feedback only; the public diagnostic
     # function below never serializes it.
-    raise EditorialError(code,'Editorial validation failed: '+code,stage=stage,field=field,feedback=message) from error
+    wrapped=EditorialError(code,'Editorial validation failed: '+code,stage=stage,field=field,feedback=message)
+    wrapped.retry_feedback=getattr(error,'retry_feedback',[])
+    raise wrapped from error
   return checked
  return decorate
 
@@ -163,14 +165,20 @@ def numeric_values(text):
  return set(re.findall(r'\d+(?:[.,]\d+)*(?:%)?',text))
 
 def source_numeric_aliases(text):
- # Preserve exact value while accepting common source typography: French
- # grouping spaces, decimal commas, and a space before the percent sign.
+ # Preserve exact value while accepting common source typography: thousands
+ # grouping, French grouping spaces, decimal commas, and spaced percent signs.
  # Only the evidence creates aliases; draft numbers never authorize themselves.
  aliases=set()
  for match in re.finditer(r'(?<![\d.,])(\d{1,3}(?:[ \u00a0\u202f]\d{3})+)(?!\d)',text):
   groups=re.split(r'[ \u00a0\u202f]',match.group(1))
   aliases.add(','.join(groups))
   aliases.add(''.join(groups))
+ for match in re.finditer(r'(?<![\d.,])(\d{4,})(?![\d.,%])',text):
+  digits=match.group(1)
+  groups=[]
+  while digits:
+   groups.insert(0,digits[-3:]);digits=digits[:-3]
+  aliases.add(','.join(groups))
  for match in re.finditer(r'(?<![\d.,])(\d+),([0-9]{1,2})(\s*%)?',text):
   number=match.group(1)+'.'+match.group(2)
   aliases.add(number)
@@ -403,4 +411,5 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    last=e
    correction=getattr(e,'feedback',str(e))
    if correction not in corrections:corrections.append(correction)
+ if last is not None:last.retry_feedback=[message[:600] for message in corrections]
  raise last

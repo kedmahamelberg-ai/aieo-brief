@@ -1,8 +1,5 @@
 name: Update Brief News and Research
 on:
-  push:
-    branches: [main]
-    paths: ['scripts/research_recovery.py', 'scripts/collect_research.py', 'scripts/generate_research_summaries.py', 'scripts/editorial_engine.py']
   workflow_call:
     inputs:
       news_only:
@@ -14,6 +11,9 @@ on:
       news_limit:
         type: string
         default: '0'
+      news_event_ids:
+        type: string
+        default: ''
   workflow_dispatch:
     inputs:
       news_only:
@@ -40,6 +40,10 @@ on:
         description: Maximum news stories to write this pass (0 means all pending)
         type: string
         default: '0'
+      news_event_ids:
+        description: Comma-separated event UUIDs to repair (blank means all pending)
+        type: string
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -82,9 +86,11 @@ jobs:
         run: python scripts/ai_runtime.py --export
       - name: Check release and pending news before loading the model
         id: news
-        if: inputs.research_only != true && github.event_name != 'push'
+        if: inputs.research_only != true
         continue-on-error: true
-        run: python scripts/generate_editorial_stories.py --dry-run
+        env:
+          NEWS_EVENT_IDS: ${{ inputs.news_event_ids || '' }}
+        run: python scripts/generate_editorial_stories.py --dry-run --event-ids "$NEWS_EVENT_IDS"
       - name: Check research published in the last seven days
         id: collect
         if: inputs.news_only != true
@@ -111,7 +117,12 @@ jobs:
         env:
           NEWS_MINUTES: ${{ inputs.news_minutes || '45' }}
           NEWS_LIMIT: ${{ inputs.news_limit || '0' }}
-        run: python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES" --limit "$NEWS_LIMIT"
+          NEWS_EVENT_IDS: ${{ inputs.news_event_ids || '' }}
+          NEWS_STRICT: ${{ inputs.news_only || false }}
+        run: |
+          args=()
+          if [[ "$NEWS_STRICT" == 'true' ]]; then args+=(--strict); fi
+          python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES" --limit "$NEWS_LIMIT" --event-ids "$NEWS_EVENT_IDS" "${args[@]}"
       - name: Write research with its study limits
         id: write_research
         if: inputs.dry_run != true && steps.collect.outcome == 'success'
