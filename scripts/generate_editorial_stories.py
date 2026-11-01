@@ -67,9 +67,11 @@ def candidates(release,sym,maps,force=False):
         key='needs_rebind' if reusable else 'needs_model';counts[key]+=1
         if not story:counts['new_registry']+=1
         selected.append({'event':event,'eid':eid,'relation':relation,'source_relationship':axis[eid],'sources':sources,'fp':fp,'latest':latest,'story':story,'reuse':reusable})
-    # A failed item from an earlier attempt does not starve the rest of the week.
+    # Fill missing public stories before revising stories that already have a
+    # usable version. A model-version change can otherwise queue dozens of
+    # rewrites ahead of a small number of headline-only pages.
     q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
-    selected.sort(key=lambda x:(state.get(x['fp'],{}).get('attempts',0),not x['reuse']))
+    selected.sort(key=lambda x:(bool(x['latest']),state.get(x['fp'],{}).get('attempts',0),not x['reuse']))
     return selected,counts,state
 
 def valid_uuid(v):
