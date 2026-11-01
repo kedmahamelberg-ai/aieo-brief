@@ -14,6 +14,20 @@ from test_editorial_recovery import fixture, accepted_review
 
 
 class GroundingGate(unittest.TestCase):
+    def test_pilot_cannot_become_other_campus_requirement(self):
+        source={'source_number':1,'evidence':'Purdue Northwest is piloting an AI literacy requirement. The fall 2026 requirement applies to Purdue West Lafayette.'}
+        wrong={'editorial_headline':'Purdue Northwest requires AI literacy for the fall 2026 class.'}
+        correct={'editorial_headline':'Purdue Northwest is piloting an AI literacy requirement.'}
+        self.assertEqual(grounding.pilot_requirement_escalation(wrong,[source]),'Purdue Northwest')
+        self.assertIsNone(grounding.pilot_requirement_escalation(correct,[source]))
+        second={'source_number':2,'evidence':'Purdue Northwest requires AI literacy for all incoming students.'}
+        self.assertIsNone(grounding.pilot_requirement_escalation(wrong,[source,second]))
+        with patch.object(engine,'call_json') as model:
+            with self.assertRaises(engine.EditorialError) as caught:
+                engine.review_scope(wrong,[source])
+            self.assertEqual(caught.exception.code,'source_scope_review_failed')
+            model.assert_not_called()
+
     def test_missing_body_or_limitation_review_cannot_publish(self):
         draft, sources = fixture()
         for field in ('body_paragraphs[0]', 'limitation', 'editorial_deck'):
