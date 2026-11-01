@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse,json,os,time,uuid,hashlib
 import ai_runtime
 import claim_grounding
-from editorial_corrections import is_locked
+from editorial_corrections import corrections,is_locked
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -50,17 +50,26 @@ def retain_numeric_rejection(client,item,error):
 
 def candidates(release,sym,maps,force=False):
     stories,readiness,evidence,versions=maps;axis={r['event_id']:r for r in sym['evidence']};selected=[]
+    approved=corrections(ROOT)
     counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
         eid=str(event.get('effective_event_id') or event['event_id'])
-        if is_locked('event:'+eid,ROOT):counts['unchanged']+=1;continue
-        relation=fixed_relationship(axis[eid]);story=stories.get(eid)
+        story=stories.get(eid)
+        latest=versions.get(str((story or {}).get('story_id')))
+        if is_locked('event:'+eid,ROOT):
+            correction=approved.get('event:'+eid,{})
+            if latest or set(correction)!={'headline'}:
+                counts['unchanged']+=1;continue
+            # A reviewed spelling correction to a source headline must not
+            # prevent the first editorial summary from being written.
+            event={**event,'event_title':correction['headline']}
+        relation=fixed_relationship(axis[eid])
         bound=bool(release.get('complete_content'))
         allowed={str(s['article_id']) for s in event.get('sources',[])} if bound else None
         fingerprints=(axis[eid].get('evidence_basis_summary') or {}).get('source_fingerprints',{}) if bound else None
         sources=source_payload(evidence.get(eid,[]),allowed,fingerprints)
         if not sources or not relation['axes'].get('evidence_complete'):counts['source_not_ready']+=1;continue
-        fp=fingerprint(event,relation['axes'],sources);latest=versions.get(str((story or {}).get('story_id')))
+        fp=fingerprint(event,relation['axes'],sources)
         reusable=not force and same_input(latest,fp) and latest.get('publication_status') in ('published','preview')
         if reusable and latest['evidence_basis_summary'].get('source_release_sha256')==release['content_sha256']:
             counts['unchanged']+=1;continue

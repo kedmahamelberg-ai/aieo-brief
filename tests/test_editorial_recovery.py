@@ -53,6 +53,21 @@ def accepted_review(draft=None):
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_headline_correction_does_not_lock_missing_summary(self):
+        eid='b7cc7093-b0e0-4f9b-9d7a-1469436f671f'
+        event={'event_id':eid,'event_title':'Ustar Technology researches physical AI','event_date':'2026-10-23'}
+        release={'evidence':[event],'complete_content':False,'content_sha256':'edition'}
+        sym={'evidence':[{'event_id':eid}]}
+        relation={'axes':{'evidence_complete':True}}
+        source={'source_number':1,'publisher':'Source','headline':'Unitree research','evidence':'The company describes preliminary research on physical AI.'}
+        with tempfile.TemporaryDirectory() as directory,patch.object(news,'ROOT',Path(directory)),patch.object(news,'is_locked',return_value=True),patch.object(news,'corrections',return_value={'event:'+eid:{'headline':'Unitree researches physical AI'}}),patch.object(news,'fixed_relationship',return_value=relation),patch.object(news,'source_payload',return_value=[source]):
+            selected,counts,_=news.candidates(release,sym,({}, {},{},{}))
+            self.assertEqual(counts['needs_model'],1)
+            self.assertEqual(selected[0]['event']['event_title'],'Unitree researches physical AI')
+            existing={'s':{'story_version_id':'v','publication_status':'preview'}}
+            selected,counts,_=news.candidates(release,sym,({eid:{'story_id':'s'}},{},{},existing))
+            self.assertEqual(selected,[])
+
     def test_research_readability_edit_is_checked_against_original_source(self):
         draft,sources=fixture()
         technical=copy.deepcopy(draft)
