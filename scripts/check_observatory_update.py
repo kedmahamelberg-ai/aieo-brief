@@ -42,6 +42,34 @@ def needs_weekly_review(release, published):
                for section in (overview.get('markets', {}), overview.get('research', {})))
 
 
+def missing_news_summaries(release, published):
+    """Count source-ready stories in this edition that still lack Brief prose."""
+    if published.get('release_id') != release['release_id']:
+        return 0
+    expected = {str(event.get('effective_event_id') or event['event_id'])
+                for event in release['evidence']}
+    return sum(str(story.get('event_id')) in expected
+               and story.get('evidence_complete') is True
+               and not story.get('has_editorial')
+               for story in published.get('stories', []))
+
+
+def needs_editorial_retry(release, published, status, now=None):
+    """Retry incomplete current editions once a day, even if sources did not change."""
+    if not missing_news_summaries(release, published):
+        return False
+    if status.get('release_id') != release['release_id']:
+        return True
+    try:
+        last_attempt = datetime.fromisoformat(status['updated_at'].replace('Z', '+00:00'))
+        if last_attempt.tzinfo is None:
+            return True
+        today = (now or datetime.now(ZoneInfo('Europe/Amsterdam'))).astimezone(ZoneInfo('Europe/Amsterdam')).date()
+        return last_attempt.astimezone(ZoneInfo('Europe/Amsterdam')).date() < today
+    except (KeyError, TypeError, ValueError):
+        return True
+
+
 def brief_url():
     if os.environ.get('BRIEF_SITE_URL'):
         return os.environ['BRIEF_SITE_URL'].rstrip('/')
@@ -65,20 +93,28 @@ def main():
         published = response.json()
     changed = needs_update(release, relationship, published)
     weekly = needs_weekly_review(release, published)
+    status_path = Path(__file__).resolve().parents[1] / 'data/editorial/status.json'
+    status = json.loads(status_path.read_text()) if status_path.exists() else {}
+    missing = missing_news_summaries(release, published)
+    retry = needs_editorial_retry(release, published, status)
     expected = expected_period()
     current = (release['period_start'], release['period_end']) == expected
     summary = {'observatory_edition': release['release_id'], 'period_start': release['period_start'],
                'period_end': release['period_end'], 'developments': len(release['evidence']),
-               'brief_needs_update': changed, 'weekly_review_needs_update': weekly, 'latest_completed_week': current}
+               'brief_needs_update': changed, 'weekly_review_needs_update': weekly,
+               'missing_news_summaries': missing, 'news_retry_due': retry,
+               'latest_completed_week': current}
     print(json.dumps(summary, indent=2))
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
             output.write(f'needs_update={str(changed).lower()}\n')
             output.write(f'needs_weekly_review={str(weekly).lower()}\n')
+            output.write(f'needs_editorial_retry={str(retry).lower()}\n')
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
             output.write(f"## Observatory → Brief\n\nEdition **{release['release_id']}**, {release['period_start']} to {release['period_end']}. "
-                         f"{len(release['evidence'])} developments. {'Update required.' if changed else 'Both published editions match.'}\n")
+                         f"{len(release['evidence'])} developments. {'Update required.' if changed else 'Source editions match.'} "
+                         f"**{missing} source-ready news summaries missing**; {'retry due' if retry else 'no retry due now'}.\n")
     if args.require_current and (changed or not current):
         raise ValueError('The two live websites have not both published the latest complete week. Check the weekly pipeline and Follow Observatory Editions runs.')
 
