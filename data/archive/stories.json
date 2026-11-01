@@ -2,6 +2,373 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "The lovelorn heroine, from a Sat Sai of Bihari",
+      "art_type": "Painting",
+      "balance_origin": "Northern India",
+      "creator": "Artist unknown",
+      "creator_origin": "Northern India, Pahari kingdoms",
+      "culture_type": "illustration",
+      "deck": "The lovelorn heroine, from a Sat Sai of Bihari. Gum tempera and gold on paper.",
+      "headline": "The lovelorn heroine, from a Sat Sai of Bihari",
+      "image_path": "assets/culture/e41b76da4b517df332128224.jpg",
+      "key": "culture:e41b76da4b517df332128224",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1971.86/1971.86_web.jpg",
+      "medium": "Gum tempera and gold on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1971.86",
+      "provenance_id": "cma:146196",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Andrew R. and Martha Holden Jennings Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1971.86",
+      "work_date": "1780–90",
+      "date": "2026-11-02",
+      "selected_on": "2026-11-02",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-e41b76da4b517df332128224",
+      "path": "culture/culture-e41b76da4b517df332128224/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "The lovelorn heroine, from a Sat Sai of Bihari",
+          "url": "https://clevelandart.org/art/1971.86",
+          "date": "1780–90",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "2 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-02",
+      "summary_basis": "Selected 2 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Faur%C3%A9_-_Violin_Sonata_No._1_-_II._Andante.ogg",
+      "creator": "Gabriel Fauré",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Gabriel Fauré. 7 minutes to listen.",
+      "duration_seconds": 449,
+      "headline": "Fauré - Violin Sonata No. 1 - II. Andante",
+      "key": "culture:ab02b60bddfed72b0a09a301",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Faur%C3%A9_-_Violin_Sonata_No._1_-_II._Andante.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Gabriel_Faur%C3%A9",
+      "original_recording_title": "Fauré - Violin Sonata No. 1 - II. Andante",
+      "provenance_id": "commons:98752185",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Yeh Che-Jui, Chiayi Symphony Orchestra",
+      "recording_description": "Violin Sonata No. 1 in A major, Op. 13, by Gabriel Fauré. Performed by Yeh Che-Jui in 2019.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Yeh Che-Jui, Chiayi Symphony Orchestra",
+        "label": "CC BY 3.0 (source-declared)",
+        "source_credit": "YouTube : https://www.youtube.com/watch?v=xFJVAWkAWf4 – View/save archived versions on archive.org",
+        "url": "https://creativecommons.org/licenses/by/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Faur%C3%A9_-_Violin_Sonata_No._1_-_II._Andante.ogg",
+      "work_date": "2019",
+      "date": "2026-11-02",
+      "selected_on": "2026-11-02",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ab02b60bddfed72b0a09a301",
+      "path": "culture/culture-ab02b60bddfed72b0a09a301/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Fauré - Violin Sonata No. 1 - II. Andante",
+          "url": "https://commons.wikimedia.org/wiki/File:Faur%C3%A9_-_Violin_Sonata_No._1_-_II._Andante.ogg",
+          "date": "2019",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "2 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-02",
+      "summary_basis": "Selected 2 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Dhammapada",
+      "content_fingerprint": "4d3b28caac1edbed2f887c61e9afc26a35f58ab8b3ec7038e98a405a4e9cb6bc",
+      "creator": "Traditional Buddhist verse",
+      "creator_origin": "South Asian · early Buddhist tradition",
+      "culture_type": "quote",
+      "deck": "From Dhammapada. Translation by F. Max Müller.",
+      "excerpt": "Men who have no riches, who live on recognised food, who have perceived void and unconditioned freedom (Nirvana), their path is difficult to understand, like that of birds in the air.",
+      "headline": "Men who have no riches, who live on recognised food, who have perceived void and unconditioned freedom (Nirvana), their path is difficult to understand, like that of birds in the air.",
+      "key": "culture:66c3483cdf8ebfba1e0e8a69",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2017:quote:4d3b28caac1edbed2f887c61e9afc26a35f58ab8b3ec7038e98a405a4e9cb6bc",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Men who have no riches, who live on recognised food, who have perceived void and unconditioned freedom (Nirvana), their path is difficult to understand, like that of birds in the air.",
+      "rights": {
+        "basis": "Author died ancient. Translator: F. Max Müller, died 1900. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2017"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "f69de0fef89409005a7cfce2557319cc78c91dbcdfee2c110ef7cb7285ef320a",
+      "source_locator": "Chapter I. The Twin-Verses; paragraph 96 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2017",
+      "translator": "F. Max Müller",
+      "work_date": "1881 translation",
+      "date": "2026-11-02",
+      "selected_on": "2026-11-02",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-66c3483cdf8ebfba1e0e8a69",
+      "path": "culture/culture-66c3483cdf8ebfba1e0e8a69/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Men who have no riches, who live on recognised food, who have perceived void and unconditioned freedom (Nirvana), their path is difficult to understand, like that of birds in the air.",
+          "url": "https://www.gutenberg.org/ebooks/2017",
+          "date": "1881 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "2 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-02",
+      "summary_basis": "Selected 2 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Men who have no riches, who live on recognised food, who have perceived void and unconditioned freedom (Nirvana), their path is difficult to understand, like that of birds in the air.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Men who have no riches, who live on recognised food, who have perceived void and unconditioned freedom (Nirvana), their path is difficult to understand, like that of birds in the air.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "In Love With the Czarina",
+      "content_fingerprint": "a922d111ad591921265886d28aac543c297f6da407742ec6a18dc050477c4d57",
+      "creator": "Mór Jókai",
+      "creator_origin": "Hungarian",
+      "culture_type": "text",
+      "deck": "A passage from In Love With the Czarina. Translated by Louis Felbermann.",
+      "excerpt": "One day two hundred strangers appeared before Bria Rocca's town; peculiar looking people--such indeed as the good inhabitants had never yet beheld in their country. Straight to the Palace of Bria Rocca did the two hundred horsemen ride along, in presence of curious crowds and with sound of trumpet. Then the leader placed his soldiers in line, and a respectful message that he should allow them to pay him their respects was sent to the Cazcique. The leader's name was Valdivia, now for the first time pronounced in that territory. Did not the land of Chili tremble when she heard this name for the first time? Did not the river swell? Did not the volcanic mountains which had lain dormant for a long time burst out into violent eruption? No, oh no! They are deceived who imagine that the soil is mother of her people and that she feels and grieves over her sons' dangers. The soil is a coquette who delights in strangers, reveals her bosom to them, and to them as to others gives her bloom; she makes love to a new-comer and protects him from hostile attacks; on the graves of her old admirers does she grow him flowers.",
+      "headline": "In Love With the Czarina · a short reading",
+      "key": "culture:44b472f541cb9e90221c39c5",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:34574:passage:a922d111ad591921265886d28aac543c297f6da407742ec6a18dc050477c4d57",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1904. Translator: Louis Felbermann, died 1937. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/34574"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2dce2a32dc7503291c66c84c4c4c30f2274b5d713fee023419da2d15ea47403c",
+      "source_locator": "IN LOVE WITH THE CZARINA; paragraph 333 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/34574",
+      "translator": "Louis Felbermann",
+      "work_date": "1894 translation",
+      "date": "2026-11-02",
+      "selected_on": "2026-11-02",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-44b472f541cb9e90221c39c5",
+      "path": "culture/culture-44b472f541cb9e90221c39c5/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "In Love With the Czarina · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/34574",
+          "date": "1894 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "2 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-02",
+      "summary_basis": "Selected 2 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "One day two hundred strangers appeared before Bria Rocca's town; peculiar looking people--such indeed as the good inhabitants had never yet beheld in their country. Straight to the Palace of Bria Rocca did the two hundred horsemen ride along, in presence of curious crowds and with sound of trumpet. Then the leader placed his soldiers in line, and a respectful message that he should allow them to pay him their respects was sent to the Cazcique. The leader's name was Valdivia, now for the first time pronounced in that territory. Did not the land of Chili tremble when she heard this name for the first time? Did not the river swell? Did not the volcanic mountains which had lain dormant for a long time burst out into violent eruption? No, oh no! They are deceived who imagine that the soil is mother of her people and that she feels and grieves over her sons' dangers. The soil is a coquette who delights in strangers, reveals her bosom to them, and to them as to others gives her bloom; she makes love to a new-comer and protects him from hostile attacks; on the graves of her old admirers does she grow him flowers.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "3df54cb1ad7bb8bd19424b8c28a86c9ba160af90dc9ae8b8e080757903f26133",
+      "creator": "Kabir",
+      "creator_origin": "Indian · North Indian poetic tradition",
+      "culture_type": "poetry",
+      "deck": "Songs of Kabir · LXI, by Kabir. Translated by Rabindranath Tagore.",
+      "excerpt": "When at last you are come to the ocean of happiness, do not go\n    back thirsty.\n  Wake, foolish man!  for Death stalks you.  Here is pure water\n    before you; drink it at every breath.\n  Do not follow the mirage on foot, but thirst for the nectar;\n  Dhruva, Prahlad, and Shukadeva have drunk of it, and also Raidas\n    has tasted it:\n  The saints are drunk with love, their thirst is for love.\n  Kabîr says: \"Listen to me, brother!  The nest of fear is broken.\n  Not for a moment have you come face to face with the world:\n  You are weaving your bondage of falsehood, your words are full of\n    deception:\n  With the load of desires which you.  hold on your head, how can\n    you be light?\"\n  Kabîr says: \"Keep within you truth, detachment, and love.\"",
+      "headline": "Songs of Kabir · LXI",
+      "key": "culture:039f26f48a9cddf17ededb24",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "When at last you are come to the ocean of happiness, do not go",
+        "    back thirsty.",
+        "  Wake, foolish man!  for Death stalks you.  Here is pure water",
+        "    before you; drink it at every breath.",
+        "  Do not follow the mirage on foot, but thirst for the nectar;",
+        "  Dhruva, Prahlad, and Shukadeva have drunk of it, and also Raidas",
+        "    has tasted it:",
+        "  The saints are drunk with love, their thirst is for love.",
+        "  Kabîr says: \"Listen to me, brother!  The nest of fear is broken.",
+        "  Not for a moment have you come face to face with the world:",
+        "  You are weaving your bondage of falsehood, your words are full of",
+        "    deception:",
+        "  With the load of desires which you.  hold on your head, how can",
+        "    you be light?\"",
+        "  Kabîr says: \"Keep within you truth, detachment, and love.\""
+      ],
+      "provenance_id": "pg:6519:poem:17c8e8e0c0285470d8634c7d73e5e5825e7aceb1e97878d2d0e267c2b095b943",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 15th century. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6519"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2ecd0d98ffffe86fa795c6885a9caf8f8f5805607003f91b311cede5dc63c4f9",
+      "source_locator": "LXI",
+      "source_url": "https://www.gutenberg.org/ebooks/6519",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1915 translation",
+      "date": "2026-11-02",
+      "selected_on": "2026-11-02",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-039f26f48a9cddf17ededb24",
+      "path": "culture/culture-039f26f48a9cddf17ededb24/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Songs of Kabir · LXI",
+          "url": "https://www.gutenberg.org/ebooks/6519",
+          "date": "1915 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "2 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-02",
+      "summary_basis": "Selected 2 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "When at last you are come to the ocean of happiness, do not go\n    back thirsty.\n  Wake, foolish man!  for Death stalks you.  Here is pure water\n    before you; drink it at every breath.\n  Do not follow the mirage on foot, but thirst for the nectar;\n  Dhruva, Prahlad, and Shukadeva have drunk of it, and also Raidas\n    has tasted it:\n  The saints are drunk with love, their thirst is for love.\n  Kabîr says: \"Listen to me, brother!  The nest of fear is broken.\n  Not for a moment have you come face to face with the world:\n  You are weaving your bondage of falsehood, your words are full of\n    deception:\n  With the load of desires which you.  hold on your head, how can\n    you be light?\"\n  Kabîr says: \"Keep within you truth, detachment, and love.\"",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Timaeus",
       "content_fingerprint": "a0005d7d53168d549de016d39f239521e1f965df88c2c1c92cb63d06e704eec1",
       "creator": "Plato",
@@ -10457,14 +10824,17 @@
       "kind": "news",
       "slug": "artificial-intelligence-digital-world-industrial-site",
       "path": "story/artificial-intelligence-digital-world-industrial-site/index.html",
-      "headline": "Artificial Intelligence: From the Digital World to the Industrial Site",
+      "headline": "AI Moves From Digital Screens to Factory Floors, Blueprints and Robots Lead the Way",
       "original_headline": "Artificial Intelligence: From the Digital World to the Industrial Site",
-      "deck": "Reporting from 青岛政务网. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "People are described as benefiting from AI-enabled productivity and new opportunities in manufacturing and industry.",
-      "for_ai": "AI is framed as performing tasks, optimizing processes, and enabling new capabilities in physical and industrial contexts.",
+      "deck": "AI blends the digital world with real work settings, shaping factories, logistics, and new jobs.",
+      "what_happened": "A public report highlights AI moving from screens to physical work, with large investments and new data centers helping AI run in the real world. It notes a major acquisition and growing use in manufacturing and industry.",
+      "why_it_matters": "AI is expanding practical use in manufacturing and industry, which can raise efficiency and change jobs. The shift depends on data, power, and reliable robotics.",
+      "body_paragraphs": [
+        "In Qingdao, AI is described as a working partner, not a distant dream. The article points to robots gathering data and training in real settings and to big bets on AI that aims to accelerate understanding of physical tasks.",
+        "The piece also notes that power and data centers are key to AI growth, with new facilities and cross-border AI projects designed to push AI into real work like manufacturing and logistics."
+      ],
+      "for_humans": "AI is becoming a practical helper at work, not just a gadget.",
+      "for_ai": "Context for AI’s real-world impact without hype.",
       "human_direction": "gain",
       "ai_direction": "gain",
       "human_label": "Benefits reported",
@@ -10491,10 +10861,10 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
       "limitation": "",
-      "has_editorial": false,
+      "has_editorial": true,
       "edition": "2026-W43",
       "period_start": "2026-10-19",
       "period_end": "2026-10-25",
@@ -30242,7 +30612,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-01T22:48:26.332587+00:00",
+      "affiliation_checked_at": "2026-11-01T23:20:27.898251+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

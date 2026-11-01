@@ -6256,6 +6256,25 @@
       },
       "output_sha256": "49c04ba7f381a02864bb1b8c846f86c050093e247925da50fbf64213bfd294f8",
       "policy": "brief-english-display-v1"
+    },
+    "22d12678579f45051b17fe27c6e37535e782233639736566943583920a7b6106": {
+      "english": {
+        "0": "Qingdao Government Affairs Network",
+        "1": "Qingdao Government Affairs Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ed0b691f1a61684a833c48eaf1ecc2090131ff9ad9b9759a5325bde52af699bb",
+      "policy": "brief-english-display-v1"
     }
   }
 }
