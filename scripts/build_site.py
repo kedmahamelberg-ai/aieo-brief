@@ -25,6 +25,7 @@ from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
 from editorial_artifacts import isolated_artifact
 from research_reading import restore_reading_scope
+from source_evidence_quality import assess_body
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -75,6 +76,8 @@ def version_valid(version, row, release, event=None, legacy_proofs=None):
 
 def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=None):
     axesmap={r['event_id']:r for r in sym['evidence']}
+    supplement_path=ROOT/'data/editorial/source-supplements.json'
+    supplements=json.loads(supplement_path.read_text()).get('sources',{}) if supplement_path.exists() else {}
     marketmap=collections.defaultdict(set)
     for article in (release.get('units') or {}).get('coverage_articles',[]):
         eid=str(article.get('effective_event_id') or article.get('event_id'))
@@ -91,6 +94,13 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
         for src in event.get('sources') or []:
             url=safe_url(src.get('url'),allow_http=True)
             if url:sources.append({'publisher':text(src.get('publisher') or src.get('name') or urlparse(url).hostname),'headline':text(src.get('headline')),'url':url,'date':str(src.get('published_date') or '')[:10],'language':src.get('source_language','')})
+        supplement=supplements.get(eid,{})
+        if supplement:
+            url=safe_url(supplement.get('source_url'))
+            quality=assess_body({'body_text':supplement.get('evidence_text'),'content_basis':'full_source'})
+            if url and quality['usable_complete_body'] and quality['body_sha256']==supplement.get('evidence_sha256'):
+                sources.append({'publisher':text(supplement['publisher']),'headline':text(supplement['headline']),
+                                'url':url,'date':str(supplement.get('published_at') or '')[:10],'language':'zh'})
         if not sources:raise ValueError('A story has no usable source link: '+eid)
         slug=str(reg.get('slug') or 'development-'+eid)
         if not re.fullmatch(r'[a-zA-Z0-9][a-zA-Z0-9_-]{0,180}',slug):slug='development-'+eid

@@ -1,0 +1,115 @@
+{
+  "schema_version": "source_bound_news_seeds_v1",
+  "seeds": {
+    "de6ac8b1-1c34-4ae6-87f9-04e3f573e042": {
+      "evidence_sha256": ["ae42e41de1031716a595c3ca02bb03befb6a921d6bbeb0ce727a6c757c19591d"],
+      "draft": {
+        "editorial_headline": "INRAE book explains AI methods for linking food and bioproduct data to decisions",
+        "editorial_deck": "The volume describes ways to connect varied evidence and expert knowledge, with examples in packaging and cheese production.",
+        "what_happened": "INRAE describes a book coordinated by its scientists about knowledge engineering for food and bioproduct industries. It sets out methods for connecting experimental data, expert knowledge and stakeholder preferences so they can inform decisions.",
+        "why_it_matters": "The examples show where these methods could be applied, including packaging choices and cheese quality. The article describes the methods and applications, without reporting measured improvements from their use.",
+        "for_humans": "The book describes decision tools that bring different evidence and stakeholder preferences into view.",
+        "for_ai": "The methods formalize expert knowledge and connect varied data for automated reasoning.",
+        "body_paragraphs": [
+          "Food and bioproduct research draws on chemistry, microbiology, nutrition and other fields. INRAE says the data can differ in format and completeness, so the methods first relate them through a shared vocabulary.",
+          "The book describes workflows to collect, organize and update information. Its examples include biodegradable packaging materials, food packaging choices and technological recommendations for cheese quality. It also discusses decisions involving several stakeholders whose preferences may conflict."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is INRAE's description of a book; the article does not provide measured outcomes for the described tools.",
+        "support": [
+          {"field": "editorial_headline", "source_number": 1, "quote": "Un nouvel ouvrage coordonné par trois scientifiques INRAE, Patrice Buche, Pierre Bisquert et Rallou Thomopoulos, présente les méthodes développées notamment à Montpellier pour transformer données et connaissances en outils d’aide à la décision."},
+          {"field": "what_happened", "source_number": 1, "quote": "L’ouvrage présente des chaînes de traitement – ou workflows – permettant de collecter, organiser, partager, relier et actualiser différentes sources d’information"},
+          {"field": "why_it_matters", "source_number": 1, "quote": "Ces méthodes sont illustrées par des applications très concrètes dans les filières alimentaires et les bioproduits : conception de matériaux composites d’emballage biodégradables, choix d’emballages alimentaires ou encore formulation de recommandations technologiques pour améliorer la qualité des fromages."}
+        ]
+      }
+    },
+    "e2e89dc5-075a-40f1-821b-aa3232662606": {
+      "evidence_sha256": ["cba795e76b92f6cc3bd682f7e782a4e9f754d91805329adcf56e83bfe815d725"],
+      "draft": {
+        "editorial_headline": "Nanjing University begins AI literacy course for new students with a caution about hype",
+        "editorial_deck": "University leader Tan Tieniu opened the course with basic concepts, applications and limits of AI.",
+        "what_happened": "Nanjing University says Tan Tieniu gave the first lecture of its AI literacy core course to incoming undergraduate and graduate students. He covered AI concepts and applications, and urged students to assess inflated claims about what the technology can do.",
+        "why_it_matters": "The university plans AI teaching across undergraduate majors and makes general AI instruction part of incoming graduate students' required courses. This is an education plan and opening lecture, not evidence of learning outcomes.",
+        "for_humans": "New students are being taught AI concepts alongside its current limits and common misconceptions.",
+        "for_ai": "The university plans practical activities and cooperation with AI companies as part of the course.",
+        "body_paragraphs": [
+          "Tan distinguished specialist, generative and embodied AI and discussed examples of their use. He warned students against treating broad claims, including claims that AI already has human feelings, as established facts.",
+          "The university says its course will include later sessions with specialists and practice activities. It reports the start of the program but gives no measure of what students have learned from it."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The source is the university's report of its own opening lecture and plans; it does not report educational results.",
+        "support": [
+          {"field": "editorial_headline", "source_number": 1, "quote": "为线上线下近12000名2026级本科及研究生新生讲授人工智能通识核心课第一讲"},
+          {"field": "what_happened", "source_number": 1, "quote": "他提醒同学们，虽然人工智能早已是全民热词，但热潮之下有许多观点看法还有待商榷，人工智能领域的概念混淆、认识误区、刻意炒作也时有发生。"},
+          {"field": "why_it_matters", "source_number": 1, "quote": "推进“AI+”课程覆盖所有学生、全部专业；另一方面，全面实施“研究生AI+创新能力培养行动计划”，将人工智能通识课纳入研究生新生必修环节"}
+        ]
+      }
+    },
+    "250a45cd-9a5c-4405-ae4b-66625c0c1ff6": {
+      "evidence_sha256": ["8b7c38578799b0fa965299aceb1076c852d24835f0715986399b23e1fa81b0ad"],
+      "draft": {
+        "editorial_headline": "Qingdao article maps local robotics and computing projects as an industrial AI bet",
+        "editorial_deck": "City reporting describes robot training facilities, industrial models and computing infrastructure while arguing for further investment.",
+        "what_happened": "A Qingdao city article surveys local efforts in physical AI, which connects software decisions with action in the physical world. It describes robot training facilities, factory AI projects and computing infrastructure, alongside the city's plans to expand those sectors.",
+        "why_it_matters": "The article shows how Qingdao is positioning its manufacturing and data assets for emerging AI markets. Its forecasts and ambitions are the city's claims, not measured future economic results.",
+        "for_humans": "The article describes local industrial projects, without establishing their effects on workers or residents.",
+        "for_ai": "Local companies are developing robot control and industrial models that link sensing, planning and action.",
+        "body_paragraphs": [
+          "The report points to industrial models and robots being trained with real-world data. It says Qingdao is building training sites for embodied AI and describes factory systems under development by local companies.",
+          "It also lists computing centers and projects meant to supply AI services. The piece argues that these investments could strengthen the city's industry, but those future outcomes remain projections."
+        ],
+        "claim_status": "analysis",
+        "limitation": "This city-affiliated article combines reported projects with forecasts and advocacy; future effects have not been measured in the source.",
+        "support": [
+          {"field": "editorial_headline", "source_number": 1, "quote": "持续布局人工智能产业新赛道，抢抓AI激活的产业新变量成为推动产业升级，在新一轮全球产业竞争中抢占先机的关键。"},
+          {"field": "what_happened", "source_number": 1, "quote": "智能制造被认为是物理AI有望率先落地的场景之一。卡奥斯打造了以高质量工业数据为燃料，依托本体建模与数字孪生技术构建的工业世界模型"},
+          {"field": "why_it_matters", "source_number": 1, "quote": "数据是当下具身智能乃至物理AI的关键痛点。青岛布局建设“1+N”具身智能训练场。"}
+        ]
+      }
+    },
+    "b7cc7093-b0e0-4f9b-9d7a-1469436f671f": {
+      "evidence_sha256": ["6a7ab1d558f62970013d3fa42607ab33ede3b01b5204748cfbb192fec6fd9e66"],
+      "draft": {
+        "editorial_headline": "Unitree says it is researching a self-improving model for physical AI robots",
+        "editorial_deck": "Chair Wang Xingxing described a proposed cycle of simulation, real-world testing and feedback at a company event.",
+        "what_happened": "Unitree says it is doing preliminary research on a model for physical AI robots. Its chair described a system that would search research papers, write code, train in simulation and test in real settings before feeding results into another round.",
+        "why_it_matters": "The plan shows how Unitree wants to automate parts of robot-model development. The source reports a research proposal, not results showing that the new model works.",
+        "for_humans": "The company described a future research process, not an observed change for robot users or workers.",
+        "for_ai": "If developed, the proposed system would use test feedback to guide further model training.",
+        "body_paragraphs": [
+          "The announcement came at a Unitree partner event in Hangzhou focused on physical AI. Wang Xingxing described a loop in which an AI model gathers information, builds and tests in simulation, then checks performance in real environments.",
+          "The event also announced a physical AI competition. Unitree reported production and sales progress for an existing humanoid robot, which is separate from the preliminary model research."
+        ],
+        "claim_status": "company_claim",
+        "limitation": "The self-improving model is in preliminary research; the report provides no performance result for it.",
+        "support": [
+          {"field": "editorial_headline", "source_number": 1, "quote": "目前宇树科技正在预研“物理AI机器人自进化V1.0”大模型"},
+          {"field": "what_happened", "source_number": 1, "quote": "就是让AI模型自己去搜罗论文、写代码，在仿真环境做训练，再到真实环境测试，测试结果由模型自己打分并反馈，形成自循环。"},
+          {"field": "why_it_matters", "source_number": 1, "quote": "建立一套“AI自主驱动、AI调研建模、AI训练验证、AI改进优化”的正向循环，不断提升模型能力的迭代升级和数据的利用效率。"}
+        ]
+      }
+    },
+    "ce676615-712f-46c1-97be-74ff29ea8bc2": {
+      "evidence_sha256": ["d7fa77d5830925f3185adf095faa2721f96a9829295f3d948dd58e312b218bd4"],
+      "draft": {
+        "editorial_headline": "China's industry ministry describes its AI manufacturing push and planned product support",
+        "editorial_deck": "At a press briefing, an official described industrial AI programs and plans for devices and suppliers.",
+        "what_happened": "Ministry official Wei Wei said China is promoting AI in manufacturing. He cited work on industrial applications, datasets and device standards, then outlined plans to develop practical solutions and support AI-enabled products.",
+        "why_it_matters": "The remarks set out ministry priorities for AI in production and consumer devices. The progress figures are ministry claims, while the proposed steps are plans rather than measured future results.",
+        "for_humans": "The plans include wider availability of AI devices, but the source does not measure consumer effects.",
+        "for_ai": "The ministry plans to support industrial AI solutions and application service providers.",
+        "body_paragraphs": [
+          "Wei described applications in manufacturing sectors and work to build industrial datasets and standards. His account also cited the ministry's estimates of industry size and adoption; those figures are official claims from the briefing.",
+          "Next steps include developing solutions for practical settings, renewing AI devices and linking product suppliers with buyers. The official mentioned computers, phones, robotics and medical equipment among the areas the ministry wants to support."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is an official account of programs, estimates and plans; the supplied transcript does not independently verify their effects.",
+        "support": [
+          {"field": "editorial_headline", "source_number": 1, "quote": "坚持产业发展和应用促进两手抓，推动人工智能深度赋能新型工业化"},
+          {"field": "what_happened", "source_number": 1, "quote": "一是场景牵引应用拓展。按照“一业一图谱、一景一档案”的模式，围绕钢铁、汽车、医药等20个行业，凝练1000余个高价值应用场景"},
+          {"field": "why_it_matters", "source_number": 1, "quote": "下一步，我们将加力推进人工智能产业发展和赋能制造业，以更实举措助力商品消费提质升级。"}
+        ]
+      }
+    }
+  }
+}

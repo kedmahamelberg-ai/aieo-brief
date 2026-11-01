@@ -53,6 +53,32 @@ def accepted_review(draft=None):
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_news_seed_requires_exact_source_hash(self):
+        eid='00000000-0000-0000-0000-000000000001'
+        event={'event_id':eid,'event_title':'Source title','event_date':'2026-10-22'}
+        release={'evidence':[event],'complete_content':False,'content_sha256':'edition'}
+        sym={'evidence':[{'event_id':eid}]}
+        source={'source_number':1,'publisher':'Source','headline':'Source title','evidence':'Complete article text.','quality':{'body_sha256':'matching-hash'}}
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);(root/'data/editorial').mkdir(parents=True)
+            (root/'data/editorial/news-seeds.json').write_text(json.dumps({'seeds':{eid:{'evidence_sha256':['matching-hash'],'draft':{'editorial_headline':'Checked title'}}}}))
+            with patch.object(news,'ROOT',root),patch.object(news,'fixed_relationship',return_value={'axes':{'evidence_complete':True}}),patch.object(news,'source_payload',return_value=[source]):
+                selected,_,_=news.candidates(release,sym,({}, {},{},{}))
+                self.assertEqual(selected[0]['event']['draft_seed']['editorial_headline'],'Checked title')
+                source['quality']['body_sha256']='changed-hash'
+                selected,_,_=news.candidates(release,sym,({}, {},{},{}))
+                self.assertNotIn('draft_seed',selected[0]['event'])
+
+    def test_video_caption_uses_verified_official_transcript(self):
+        from source_evidence_quality import assess_body
+        caption='10月19日，工业和信息化部介绍人工智能产业情况。\n新华社音视频部制作'
+        self.assertIn('video_caption_only',assess_body({'body_text':caption,'content_basis':'full_source'})['flags'])
+        eid='ce676615-712f-46c1-97be-74ff29ea8bc2'
+        supplement=json.loads((ROOT/'data/editorial/source-supplements.json').read_text())['sources'][eid]
+        import hashlib
+        self.assertEqual(hashlib.sha256(supplement['evidence_text'].encode()).hexdigest(),supplement['evidence_sha256'])
+        self.assertTrue(assess_body({'body_text':supplement['evidence_text'],'content_basis':'full_source'})['usable_complete_body'])
+
     def test_headline_correction_does_not_lock_missing_summary(self):
         eid='b7cc7093-b0e0-4f9b-9d7a-1469436f671f'
         event={'event_id':eid,'event_title':'Ustar Technology researches physical AI','event_date':'2026-10-23'}
