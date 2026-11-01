@@ -12713,9 +12713,16 @@
           "url": "http://www.news.cn/tech/20261019/af74d678ec1e4397b7847d67bdfde148/c.html",
           "date": "2026-10-19",
           "language": "zh"
+        },
+        {
+          "publisher": "Ministry of Commerce of the People's Republic of China",
+          "headline": "Official transcript: Wei Wei on AI and industrialization",
+          "url": "https://interview.mofcom.gov.cn/detail/202610/ff808081a143defb01a17730f4a50044.html",
+          "date": "2026-10-19",
+          "language": "zh"
         }
       ],
-      "source_count": 1,
+      "source_count": 2,
       "publisher": "新华网",
       "date": "2026-10-19",
       "display_date": "19 Oct 2026",
@@ -30612,7 +30619,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-01T23:20:27.898251+00:00",
+      "affiliation_checked_at": "2026-11-01T23:32:13.368705+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

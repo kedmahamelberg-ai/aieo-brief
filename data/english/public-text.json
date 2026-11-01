@@ -6275,6 +6275,27 @@
       },
       "output_sha256": "ed0b691f1a61684a833c48eaf1ecc2090131ff9ad9b9759a5325bde52af699bb",
       "policy": "brief-english-display-v1"
+    },
+    "eaf6b7841c3726192aefb2082bb82ebce335f79f5c4d62c3dd628adbf8eb91f8": {
+      "english": {
+        "0": "Reporting from Xinhua Net. Open the source for the article.",
+        "1": "Xinhua Net",
+        "2": "Official transcript: Wei Wei on AI and industrialization",
+        "3": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b142fe92033cd2c01bdaacac4ea02498292dea33f4af0477ed0d3b0fdc38a1b4",
+      "policy": "brief-english-display-v1"
     }
   }
 }
