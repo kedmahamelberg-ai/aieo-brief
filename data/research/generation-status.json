@@ -1,58 +1,51 @@
 {
-  "generated": 1,
+  "generated": 0,
   "failed": 5,
   "metadata_only": 0,
   "deferred": 0,
   "unchanged": 9,
   "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
   "failure_counts": {
-    "unsupported_number": 1,
-    "source_scope_review_failed": 2,
-    "claim_grounding_failed": 2
+    "source_wording_copied": 2,
+    "claim_grounding_failed": 2,
+    "unsupported_number": 1
   },
   "failed_items": [
     {
       "key": "paper:7cba509615081b2bc0d1faf2",
       "error_type": "EditorialError",
       "stage": "draft_validation",
-      "code": "unsupported_number",
+      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "key": "paper:beaf7b4a534a2a4135c21b97",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
-      "failed_checks": [
-        "headline_supported",
-        "claim_status_preserved"
-      ]
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "key": "paper:91078ae8ed566fc820332ae5",
       "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
+      "stage": "draft_validation",
+      "code": "unsupported_number",
       "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "key": "paper:afd9c531da091aca39b7d1e3",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
-      "failed_checks": [
-        "no_unstated_effects"
-      ]
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "key": "paper:3ffa2d84b6e20da2db465da1",
       "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
       "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     }
   ],
-  "updated_at": "2026-11-01T18:25:22.590666+00:00"
+  "updated_at": "2026-11-01T22:08:26.373336+00:00"
 }
