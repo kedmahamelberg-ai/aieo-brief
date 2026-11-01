@@ -17,6 +17,7 @@ jobs:
     outputs:
       needs_update: ${{ steps.edition.outputs.needs_update }}
       needs_weekly_review: ${{ steps.edition.outputs.needs_weekly_review }}
+      needs_editorial_retry: ${{ steps.edition.outputs.needs_editorial_retry }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -33,7 +34,7 @@ jobs:
         run: python scripts/check_observatory_update.py
   editorial:
     needs: check
-    if: needs.check.outputs.needs_update == 'true'
+    if: needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_editorial_retry == 'true'
     uses: ./.github/workflows/generate-brief-editorial.yml
     with:
       news_only: true
@@ -42,6 +43,6 @@ jobs:
     needs: [check, editorial]
     # A failed draft must not hide valid new source links. The build still
     # rejects incomplete or mismatched Observatory release data itself.
-    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_weekly_review == 'true') && needs.editorial.result != 'cancelled'
+    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true') && needs.editorial.result != 'cancelled'
     uses: ./.github/workflows/build-brief-preview.yml
     secrets: inherit
