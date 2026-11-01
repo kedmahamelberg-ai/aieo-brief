@@ -11,7 +11,7 @@ from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
 from supabase import create_client
-from brief_contract import PROMPT_VERSION,digest,editorial_source_fingerprint,fixed_relationship,validate_pair
+from brief_contract import PROMPT_VERSION,digest,editorial_source_fingerprint,fixed_relationship,validate_pair,safe_url
 from brief_database import current_maps
 from build_site import inputs
 from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION
@@ -51,6 +51,10 @@ def retain_numeric_rejection(client,item,error):
 def candidates(release,sym,maps,force=False):
     stories,readiness,evidence,versions=maps;axis={r['event_id']:r for r in sym['evidence']};selected=[]
     approved=corrections(ROOT)
+    seed_path=ROOT/'data/editorial/news-seeds.json'
+    seeds=json.loads(seed_path.read_text()).get('seeds',{}) if seed_path.exists() else {}
+    supplement_path=ROOT/'data/editorial/source-supplements.json'
+    supplements=json.loads(supplement_path.read_text()).get('sources',{}) if supplement_path.exists() else {}
     counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
         eid=str(event.get('effective_event_id') or event['event_id'])
@@ -68,7 +72,19 @@ def candidates(release,sym,maps,force=False):
         allowed={str(s['article_id']) for s in event.get('sources',[])} if bound else None
         fingerprints=(axis[eid].get('evidence_basis_summary') or {}).get('source_fingerprints',{}) if bound else None
         sources=source_payload(evidence.get(eid,[]),allowed,fingerprints)
+        supplement=supplements.get(eid,{})
+        if supplement:
+            body=str(supplement.get('evidence_text') or '')
+            quality=assess_body({'body_text':body,'content_basis':'full_source'})
+            if (quality['usable_complete_body'] and quality['body_sha256']==supplement.get('evidence_sha256')
+                    and safe_url(supplement.get('source_url'))):
+                sources.append({'source_number':len(sources)+1,'publisher':supplement['publisher'],
+                                'headline':supplement['headline'],'evidence_basis':'official_transcript',
+                                'evidence':body,'source_url':supplement['source_url'],'quality':quality})
         if not sources or not relation['axes'].get('evidence_complete'):counts['source_not_ready']+=1;continue
+        seed=seeds.get(eid,{})
+        if seed and [s.get('quality',{}).get('body_sha256') for s in sources]==seed.get('evidence_sha256'):
+            event={**event,'draft_seed':seed['draft']}
         fp=fingerprint(event,relation['axes'],sources)
         reusable=not force and same_input(latest,fp) and latest.get('publication_status') in ('published','preview')
         if reusable and latest['evidence_basis_summary'].get('source_release_sha256')==release['content_sha256']:
