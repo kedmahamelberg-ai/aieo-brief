@@ -1,8 +1,5 @@
 name: Update Brief News and Research
 on:
-  push:
-    branches: [main]
-    paths: ['scripts/research_recovery.py', 'scripts/collect_research.py', 'scripts/generate_research_summaries.py', 'scripts/editorial_engine.py']
   workflow_call:
     inputs:
       news_only:
@@ -89,7 +86,7 @@ jobs:
         run: python scripts/ai_runtime.py --export
       - name: Check release and pending news before loading the model
         id: news
-        if: inputs.research_only != true && github.event_name != 'push'
+        if: inputs.research_only != true
         continue-on-error: true
         env:
           NEWS_EVENT_IDS: ${{ inputs.news_event_ids || '' }}
