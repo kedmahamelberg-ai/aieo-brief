@@ -18,6 +18,7 @@ jobs:
       needs_update: ${{ steps.edition.outputs.needs_update }}
       needs_weekly_review: ${{ steps.edition.outputs.needs_weekly_review }}
       needs_editorial_retry: ${{ steps.edition.outputs.needs_editorial_retry }}
+      missing_news_summaries: ${{ steps.edition.outputs.missing_news_summaries }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -38,6 +39,7 @@ jobs:
     uses: ./.github/workflows/generate-brief-editorial.yml
     with:
       news_only: true
+      news_limit: ${{ needs.check.outputs.needs_update == 'true' && '0' || needs.check.outputs.missing_news_summaries }}
     secrets: inherit
   publish:
     needs: [check, editorial]

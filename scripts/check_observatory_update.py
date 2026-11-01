@@ -110,6 +110,7 @@ def main():
             output.write(f'needs_update={str(changed).lower()}\n')
             output.write(f'needs_weekly_review={str(weekly).lower()}\n')
             output.write(f'needs_editorial_retry={str(retry).lower()}\n')
+            output.write(f'missing_news_summaries={missing}\n')
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
             output.write(f"## Observatory → Brief\n\nEdition **{release['release_id']}**, {release['period_start']} to {release['period_end']}. "

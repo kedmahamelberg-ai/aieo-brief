@@ -11,6 +11,9 @@ on:
       research_only:
         type: boolean
         default: false
+      news_limit:
+        type: string
+        default: '0'
   workflow_dispatch:
     inputs:
       research_only:
@@ -29,6 +32,10 @@ on:
         description: Maximum minutes for research this pass (1 to 60)
         type: string
         default: '60'
+      news_limit:
+        description: Maximum news stories to write this pass (0 means all pending)
+        type: string
+        default: '0'
 permissions:
   contents: write
 concurrency:
@@ -99,7 +106,8 @@ jobs:
         continue-on-error: true
         env:
           NEWS_MINUTES: ${{ inputs.news_minutes || '45' }}
-        run: python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES"
+          NEWS_LIMIT: ${{ inputs.news_limit || '0' }}
+        run: python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES" --limit "$NEWS_LIMIT"
       - name: Write research with its study limits
         id: write_research
         if: inputs.dry_run != true && steps.collect.outcome == 'success'
