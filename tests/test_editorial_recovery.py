@@ -53,6 +53,39 @@ def accepted_review(draft=None):
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_repair_selection_prioritizes_missing_public_summary(self):
+        missing='00000000-0000-0000-0000-000000000001'
+        current='00000000-0000-0000-0000-000000000002'
+        release={'evidence':[{'event_id':missing,'event_date':'2026-10-22'},
+                             {'event_id':current,'event_date':'2026-10-22'}],
+                 'complete_content':False,'content_sha256':'edition','release_id':'2026-W43'}
+        sym={'evidence':[{'event_id':missing},{'event_id':current}]}
+        versions={'missing':{'story_version_id':'old','publication_status':'preview'},
+                  'current':{'story_version_id':'new','publication_status':'preview'}}
+        maps=({missing:{'story_id':'missing'},current:{'story_id':'current'}},{}, {},versions)
+        source={'source_number':1,'publisher':'Source','headline':'Article','evidence':'Complete source text.'}
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);(root/'data/editorial').mkdir(parents=True)
+            (root/'data/editorial/retry-state.json').write_text(json.dumps({missing:{'attempts':5}}))
+            with patch.object(news,'ROOT',root),patch.object(news,'corrections',return_value={}),patch.object(news,'fixed_relationship',return_value={'axes':{'evidence_complete':True}}),patch.object(news,'source_payload',return_value=[source]),patch.object(news,'fingerprint',side_effect=lambda e,*_:e['event_id']),patch.object(news,'version_valid',side_effect=lambda _v,_r,_l,e,_p:e['event_id']==current):
+                selected,_,_=news.candidates(release,sym,maps)
+        self.assertEqual([item['eid'] for item in selected],[missing,current])
+
+    def test_targeted_news_repair_rejects_unknown_ids(self):
+        eid='00000000-0000-0000-0000-000000000001'
+        other='00000000-0000-0000-0000-000000000002'
+        release={'evidence':[{'event_id':eid},{'event_id':other}]}
+        items=[{'eid':other},{'eid':eid}]
+        self.assertEqual(news.select_event_ids(items,eid,release),[items[1]])
+        with self.assertRaisesRegex(ValueError,'not in the completed edition'):
+            news.select_event_ids(items,'00000000-0000-0000-0000-000000000003',release)
+        with self.assertRaisesRegex(ValueError,'no pending source-ready draft'):
+            news.select_event_ids([items[1]],other,release)
+
+    def test_source_digits_allow_equivalent_thousands_grouping(self):
+        self.assertIn('12,000',engine.source_numeric_aliases('近12000名新生'))
+        self.assertNotIn('12,000',engine.source_numeric_aliases('近12000%'))
+
     def test_news_seed_requires_exact_source_hash(self):
         eid='00000000-0000-0000-0000-000000000001'
         event={'event_id':eid,'event_title':'Source title','event_date':'2026-10-22'}
@@ -312,6 +345,19 @@ class GenerationCheckpoints(unittest.TestCase):
             self.assertEqual(status['failure_counts'], {'draft_quote_unsupported': 1})
             self.assertEqual(status['release_id'], '2026-W35')
             self.assertNotIn('PRIVATE_FEEDBACK', status_text + output.getvalue())
+
+    def test_capped_news_run_keeps_retry_state_for_unselected_items(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root,_=self.context(stack,folder)
+            draft=self.news_context(stack,root,2)
+            stack.enter_context(patch.object(sys,'argv',['generate','--limit','1']))
+            items=news.candidates.return_value[0]
+            news.candidates.return_value=(items,{}, {'input-1':{'attempts':2}})
+            stack.enter_context(patch.object(news,'write_story',return_value=(draft,{})))
+            stack.enter_context(patch.object(news,'persist'))
+            self.assertEqual(news.main(),0)
+            state=json.loads((root/'data/editorial/retry-state.json').read_text())
+            self.assertEqual(state['input-1']['attempts'],2)
 
     def test_database_failure_remains_failed_with_its_stage_visible(self):
         with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:

@@ -13,7 +13,7 @@ from pathlib import Path
 from supabase import create_client
 from brief_contract import PROMPT_VERSION,digest,editorial_source_fingerprint,fixed_relationship,validate_pair,safe_url
 from brief_database import current_maps
-from build_site import inputs
+from build_site import inputs,version_valid
 from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION
 from source_evidence_quality import assess_body
 ROOT=Path(__file__).resolve().parents[1]
@@ -36,16 +36,17 @@ def fingerprint(event,axes,sources):
     return digest({'engine_version':ENGINE_VERSION,'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
 def same_input(latest,fp):return ((latest or {}).get('evidence_basis_summary') or {}).get('input_fingerprint')==fp
 
-def retain_numeric_rejection(client,item,error):
+def retain_rejection(client,item,error):
     # This existing provenance table has RLS enabled and no public policies.
-    # Retain only the last bounded validation feedback, never in Git or logs.
+    # Retain bounded validation feedback for each attempt, never in Git or logs.
     # A later successful generation replaces this entry with its accepted proof.
-    if not isinstance(error,EditorialError) or error.code!='unsupported_number':return
+    if not isinstance(error,EditorialError):return
     client.table('brief_editorial_provenance').upsert({
         'input_sha256':item['fp'],
         'proof':{'rejected':True,'event_id':item['eid'],'run_id':os.environ.get('GITHUB_RUN_ID'),
                  'engine_version':ENGINE_VERSION,'diagnostic':failure_diagnostic(error,'generation'),
-                 'private_retry_feedback':error.feedback[:3000]},
+                 'private_retry_feedback':error.feedback[:3000],
+                 'private_attempt_feedback':getattr(error,'retry_feedback',[])[:5]},
     },on_conflict='input_sha256').execute()
 
 def candidates(release,sym,maps,force=False):
@@ -55,6 +56,8 @@ def candidates(release,sym,maps,force=False):
     seeds=json.loads(seed_path.read_text()).get('seeds',{}) if seed_path.exists() else {}
     supplement_path=ROOT/'data/editorial/source-supplements.json'
     supplements=json.loads(supplement_path.read_text()).get('sources',{}) if supplement_path.exists() else {}
+    proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
+    legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
     counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
         eid=str(event.get('effective_event_id') or event['event_id'])
@@ -67,6 +70,7 @@ def candidates(release,sym,maps,force=False):
             # A reviewed spelling correction to a source headline must not
             # prevent the first editorial summary from being written.
             event={**event,'event_title':correction['headline']}
+        public_current=version_valid(latest,axis[eid],release,event,legacy_proofs)
         relation=fixed_relationship(axis[eid])
         bound=bool(release.get('complete_content'))
         allowed={str(s['article_id']) for s in event.get('sources',[])} if bound else None
@@ -91,13 +95,25 @@ def candidates(release,sym,maps,force=False):
             counts['unchanged']+=1;continue
         key='needs_rebind' if reusable else 'needs_model';counts[key]+=1
         if not story:counts['new_registry']+=1
-        selected.append({'event':event,'eid':eid,'relation':relation,'source_relationship':axis[eid],'sources':sources,'fp':fp,'latest':latest,'story':story,'reuse':reusable})
+        selected.append({'event':event,'eid':eid,'relation':relation,'source_relationship':axis[eid],'sources':sources,'fp':fp,'latest':latest,'public_current':public_current,'story':story,'reuse':reusable})
     # Fill missing public stories before revising stories that already have a
     # usable version. A model-version change can otherwise queue dozens of
     # rewrites ahead of a small number of headline-only pages.
     q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
-    selected.sort(key=lambda x:(bool(x['latest']),state.get(x['fp'],{}).get('attempts',0),not x['reuse']))
+    selected.sort(key=lambda x:(x['public_current'],state.get(x['fp'],{}).get('attempts',0),bool(x['latest']),not x['reuse']))
     return selected,counts,state
+
+def select_event_ids(items,raw,release):
+    requested=[value.strip() for value in raw.split(',') if value.strip()]
+    if not requested:return items
+    if any(valid_uuid(value)!=value for value in requested):raise ValueError('Event IDs must be comma-separated UUIDs.')
+    available={str(event.get('effective_event_id') or event['event_id']) for event in release['evidence']}
+    missing=set(requested)-available
+    if missing:raise ValueError('Requested event IDs are not in the completed edition: '+', '.join(sorted(missing)))
+    selected=[item for item in items if item['eid'] in set(requested)]
+    absent=set(requested)-{item['eid'] for item in selected}
+    if absent:raise ValueError('Requested event IDs have no pending source-ready draft: '+', '.join(sorted(absent)))
+    return selected
 
 def valid_uuid(v):
     try:return str(uuid.UUID(str(v)))
@@ -136,7 +152,7 @@ def persist(client,item,release,draft,proof):
     client.table('brief_stories').update({'current_headline':draft['editorial_headline'],'current_deck':draft['editorial_deck'],'current_takeaway':draft['why_it_matters'],'last_updated_at':datetime.now(timezone.utc).isoformat()}).eq('story_id',story['story_id']).execute()
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--limit',type=int,default=0);p.add_argument('--force',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--max-runtime-minutes',type=int,default=45);p.add_argument('--strict',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--limit',type=int,default=0);p.add_argument('--event-ids',default='');p.add_argument('--force',action='store_true');p.add_argument('--dry-run',action='store_true');p.add_argument('--max-runtime-minutes',type=int,default=45);p.add_argument('--strict',action='store_true');args=p.parse_args()
     if not 1<=args.max_runtime_minutes<=105 or not 0<=args.limit<=1000:raise ValueError('Use a 1–105 minute budget and a limit of 0–1000.')
     release,sym=inputs();validate_pair(release,sym)
     print('Reading completed Observatory edition: '+release['release_id'],flush=True)
@@ -144,6 +160,8 @@ def main():
     client.table('brief_editorial_provenance').select('input_sha256').limit(1).execute()
     ids=[str(e.get('effective_event_id') or e['event_id']) for e in release['evidence']]
     items,counts,state=candidates(release,sym,current_maps(client,ids),args.force)
+    active_fingerprints={item['fp'] for item in items}
+    items=select_event_ids(items,args.event_ids,release)
     if args.limit:items=items[:args.limit]
     counts.update(selected=len(items),generated=0,rebound=0,failed=0,deferred=0)
     if os.environ.get('GITHUB_OUTPUT'):
@@ -166,14 +184,14 @@ def main():
             counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
             diagnostic=failure_diagnostic(e,stage)
             if stage=='generation':
-                try:retain_numeric_rejection(client,item,e)
-                except Exception:print('Private numeric rejection diagnostic could not be retained.',flush=True)
+                try:retain_rejection(client,item,e)
+                except Exception:print('Private rejection diagnostic could not be retained.',flush=True)
             failures.append({'event_id':item['eid'],**diagnostic})
             # Do not print PostgREST errors: they can contain private failing rows.
             print(f'Kept source link for {item["eid"]}; draft withheld: '+json.dumps(diagnostic,sort_keys=True),flush=True)
     path=ROOT/'data/editorial';path.mkdir(parents=True,exist_ok=True)
     # Keep bounded retry metadata only; no bodies, quotes or private errors enter Git.
-    active={x['fp'] for x in items};state={k:v for k,v in state.items() if k in active}
+    state={k:v for k,v in state.items() if k in active_fingerprints}
     (path/'retry-state.json').write_text(json.dumps(state,indent=2)+'\n')
     failure_counts=dict(Counter(x['code'] for x in failures))
     (path/'status.json').write_text(json.dumps({'release_id':release['release_id'],'engine_version':ENGINE_VERSION,'counts':counts,'failure_counts':failure_counts,'failed_items':failures,'updated_at':datetime.now(timezone.utc).isoformat()},indent=2)+'\n')

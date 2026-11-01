@@ -8,17 +8,17 @@ from unittest.mock import Mock
 
 
 class NewsSourceSupport(unittest.TestCase):
-    def test_numeric_rejection_feedback_stays_in_private_provenance(self):
+    def test_rejection_feedback_stays_in_private_provenance(self):
         client = Mock()
         error = engine.EditorialError('unsupported_number', 'Safe public reason',
                                       feedback='PRIVATE_NUMERIC_FEEDBACK')
-        news.retain_numeric_rejection(client, {'fp': 'input-hash', 'eid': 'event-id'}, error)
+        news.retain_rejection(client, {'fp': 'input-hash', 'eid': 'event-id'}, error)
         client.table.assert_called_once_with('brief_editorial_provenance')
         saved = client.table.return_value.upsert.call_args.args[0]
         self.assertEqual(saved['proof']['private_retry_feedback'], 'PRIVATE_NUMERIC_FEEDBACK')
         self.assertNotIn('PRIVATE_NUMERIC_FEEDBACK', json.dumps(engine.failure_diagnostic(error, 'generation')))
         client.reset_mock()
-        news.retain_numeric_rejection(client, {'fp': 'input-hash', 'eid': 'event-id'}, RuntimeError('PRIVATE_DATABASE_ERROR'))
+        news.retain_rejection(client, {'fp': 'input-hash', 'eid': 'event-id'}, RuntimeError('PRIVATE_DATABASE_ERROR'))
         client.table.assert_not_called()
 
     def test_numeric_tokens_do_not_depend_on_source_language_boundaries(self):
