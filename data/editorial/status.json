@@ -2,33 +2,36 @@
   "release_id": "2026-W43",
   "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
   "counts": {
-    "unchanged": 35,
+    "unchanged": 36,
     "source_not_ready": 0,
-    "new_registry": 6,
-    "needs_model": 41,
+    "new_registry": 5,
+    "needs_model": 40,
     "needs_rebind": 0,
-    "selected": 7,
-    "generated": 2,
+    "selected": 5,
+    "generated": 1,
     "rebound": 0,
-    "failed": 5,
+    "failed": 4,
     "deferred": 0
   },
   "failure_counts": {
-    "source_scope_review_failed": 1,
-    "unsupported_number": 1,
+    "source_wording_copied": 1,
     "claim_grounding_failed": 2,
-    "source_wording_copied": 1
+    "unsupported_number": 1
   },
   "failed_items": [
+    {
+      "event_id": "b7cc7093-b0e0-4f9b-9d7a-1469436f671f",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "source_wording_copied",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
     {
       "event_id": "de6ac8b1-1c34-4ae6-87f9-04e3f573e042",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
-      "failed_checks": [
-        "headline_supported"
-      ]
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
       "event_id": "e2e89dc5-075a-40f1-821b-aa3232662606",
@@ -38,26 +41,12 @@
       "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
-      "event_id": "250a45cd-9a5c-4405-ae4b-66625c0c1ff6",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
-    },
-    {
       "event_id": "ce676615-712f-46c1-97be-74ff29ea8bc2",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "claim_grounding_failed",
       "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
-    },
-    {
-      "event_id": "df8764fa-1bf3-4d52-b39d-734a15039cb4",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     }
   ],
-  "updated_at": "2026-11-01T22:27:47.699397+00:00"
+  "updated_at": "2026-11-01T23:20:02.056987+00:00"
 }
