@@ -26,6 +26,27 @@ def normalized(text):
     return re.sub(r'\s+', ' ', text).strip()
 
 
+def pilot_requirement_escalation(draft, sources):
+    """Catch a pilot at one institution recast as a requirement there.
+
+    A source can mention a separate institution's requirement in the same
+    passage, so checking only for the word ``requirement`` is insufficient.
+    """
+    public = ' '.join(units(draft).values())
+    sentences = [sentence for source in sources for sentence in re.split(r'(?<=[.!?])\s+', normalized(source['evidence']))]
+    for sentence in sentences:
+        match = re.search(r'\b([A-Z][\w-]*(?:\s+[A-Z][\w-]*){0,3})\s+(?:is|are)\s+piloting\b', sentence)
+        if not match:
+            continue
+        institution = match.group(1)
+        asserted = re.search(r'\b' + re.escape(institution) + r'\b[^.!?]{0,80}\b(?:requires?|mandates?)\b', public, re.I)
+        supported = any(re.search(r'\b' + re.escape(institution) + r'\b[^.!?]{0,80}\b(?:requires?|mandates?)\b', other, re.I)
+                        for other in sentences)
+        if asserted and not supported:
+            return institution
+    return None
+
+
 def source_catalog(sources):
     """Number all original source text, without selecting or summarizing it."""
     catalog=[]
@@ -96,6 +117,7 @@ Review EVERY factual clause of EVERY listed field, including every sentence in e
 Set each boolean check to true when the draft satisfies that rule, including when that dimension is not mentioned. Review factual content only in non-empty public fields. Empty fields are not unsupported claims and must not cause a failed check. Completeness and required-field checks happen separately before this review. A concise summary may omit unrelated details; reject an omission only when it changes the meaning of a claim that the draft actually makes. Do not require every source date or every comparison in each field. Preserve qualifiers needed for the stated claim.
 source_is_substantive: original text contains the relevant article or research, not only navigation, a video caption, login text or a newsletter teaser. Abstracts are allowed only with the matching scope.
 entities_and_roles_preserved: keep exact organization, campus, person, title, model versus family, trained classifier versus rules, and singular/plural distinctions in the claims actually made. Omitting a separate source action or detail is not an entity or role change; reject only when an asserted claim changes who did what or which entity is involved.
+In particular, a pilot at one institution does not establish a requirement at that institution when the source assigns the requirement to a different institution.
 dates_and_event_status_preserved: preserve scheduled versus completed events and estimates versus deadlines; roughly twenty years is not up to twenty years.
 comparators_and_metrics_preserved: check each number WITH its denominator, subgroup, metric, baseline, direction and qualifier. Training error is not generalization error. Same trajectory is not equal speed. A worse score than one competitor is not a failure to improve over the base model.
 provenance_preserved: published or obtained does not mean leaked, stolen, confidential or unauthorized. Preserve who made each claim.
