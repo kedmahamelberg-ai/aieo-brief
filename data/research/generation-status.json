@@ -6,9 +6,9 @@
   "unchanged": 9,
   "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
   "failure_counts": {
-    "source_wording_copied": 2,
-    "claim_grounding_failed": 2,
-    "unsupported_number": 1
+    "source_wording_copied": 1,
+    "claim_grounding_failed": 3,
+    "source_scope_review_failed": 1
   },
   "failed_items": [
     {
@@ -28,8 +28,8 @@
     {
       "key": "paper:91078ae8ed566fc820332ae5",
       "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "unsupported_number",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
       "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
     },
     {
@@ -42,10 +42,13 @@
     {
       "key": "paper:3ffa2d84b6e20da2db465da1",
       "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "source_wording_copied",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+      "failed_checks": [
+        "headline_supported"
+      ]
     }
   ],
-  "updated_at": "2026-11-01T22:08:26.373336+00:00"
+  "updated_at": "2026-11-01T22:47:46.292989+00:00"
 }
