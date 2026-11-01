@@ -53,6 +53,13 @@ def accepted_review(draft=None):
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_readable_full_paper_skips_extra_rewrite(self):
+        draft,sources=fixture()
+        with patch.object(engine,'call_json',side_effect=[draft,accepted_review()]) as model:
+            result,_=engine.write_story({}, {}, sources, kind='paper')
+        self.assertEqual(result['editorial_headline'],draft['editorial_headline'])
+        self.assertEqual([call.kwargs['stage'] for call in model.call_args_list],['draft','scope_review'])
+
     def test_research_readability_edit_is_checked_against_original_source(self):
         draft,sources=fixture()
         technical=copy.deepcopy(draft)

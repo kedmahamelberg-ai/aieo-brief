@@ -378,7 +378,9 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
    draft=copy.deepcopy(event['draft_seed']) if attempt==0 and isinstance(event.get('draft_seed'),dict) else call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft',paper=kind=='paper')
    draft=resolve_support(draft,catalog)
-   if (kind=='paper' and not (attempt==0 and isinstance(event.get('draft_seed'),dict))) or (kind in ('preprint','abstract','paper') and style_problem(draft)):
+   # A second model rewrite can introduce copied wording, unsupported numbers
+   # or scope changes into an already readable paper draft.
+   if kind in ('preprint','abstract','paper') and style_problem(draft):
     readable_schema=copy.deepcopy(SCHEMA)
     readable_schema['properties'].pop('support')
     readable_schema['required'].remove('support')
