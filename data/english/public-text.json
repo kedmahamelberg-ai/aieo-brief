@@ -6529,6 +6529,25 @@
       },
       "output_sha256": "8cb3b0fdff735f773a3360f8cd950acdfdfbd5dc73333ed8464306e1c4295e94",
       "policy": "brief-english-display-v1"
+    },
+    "a7a68bbc31d816d79bea98bc57351115f607ec0da58dd0bb1e16311fd83ffa06": {
+      "english": {
+        "0": "Shanghai Observer News",
+        "1": "Shanghai Observer News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "98830ca29345b8f265398e43218c0fd32b991034c96a71d225ee54cffbed5713",
+      "policy": "brief-english-display-v1"
     }
   }
 }
