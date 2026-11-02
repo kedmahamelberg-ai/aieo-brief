@@ -10,6 +10,18 @@ from editorial_engine import EditorialError
 
 
 class LiveEvaluationControlTests(unittest.TestCase):
+    def test_targeted_diagnosis_runs_both_verdicts_and_rejects_unknown_case(self):
+        calls=[]
+        def review(draft, sources, deadline):
+            calls.append(draft['editorial_headline'])
+            if draft['editorial_headline']==next(row[2] for row in evaluate_grounding.CASES if row[0]=='classroom_scope'):
+                raise EditorialError('claim_grounding_failed', 'Synthetic rejection')
+        evaluate_grounding.evaluate(review, case_name='classroom_scope')
+        self.assertEqual(len(calls),2)
+        with self.assertRaises(ValueError):evaluate_grounding.evaluate(review, case_name='not_a_case')
+        with self.assertRaisesRegex(RuntimeError,'classroom_scope:wrong'):
+            evaluate_grounding.evaluate(lambda *args:None, case_name='classroom_scope')
+
     def test_one_false_rejection_of_supported_fixture_is_rechecked(self):
         correct = {row[3] for row in evaluate_grounding.CASES}
         attempts = Counter()
