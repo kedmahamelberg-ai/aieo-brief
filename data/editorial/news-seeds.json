@@ -263,14 +263,14 @@
         "177bc2556a98a7ae5fce95a03b0e67096f5323a6472678b1fd365daf5759948f"
       ],
       "draft": {
-        "editorial_headline": "Marquette invites students to discuss AI engagement and discernment",
-        "editorial_deck": "Raynor Library plans an open student conversation about how people engage with AI.",
-        "what_happened": "Raynor Library’s Connect team plans a student-centered discussion of artificial intelligence in its Beaumier Suites. The event is designed to gather student perspectives on AI engagement and discerning AI.",
-        "why_it_matters": "Students are being invited to share their views in an open discussion of AI use. Raynor Library and MU’s Discerning AI Research Community are presenting the event.",
+        "editorial_headline": "Raynor Library plans a student discussion about artificial intelligence",
+        "editorial_deck": "The Nov. 4 event seeks students’ views on engaging with AI.",
+        "what_happened": "On Nov. 4, Raynor Library’s Connect team plans to lead a discussion with students about artificial intelligence. The organizers want to hear students’ views on engaging with AI and what they call discerning AI.",
+        "why_it_matters": "The session is designed to gather students’ perspectives on AI engagement in an open setting.",
         "for_humans": "",
         "for_ai": "",
         "body_paragraphs": [
-          "The Connect team will facilitate the conversation. The calendar notice says students need an MUID for entry and do not need to register."
+          "The discussion is scheduled for 6 p.m. in Raynor Library’s Beaumier Suites. Students need an MUID to enter, and no registration is required."
         ],
         "claim_status": "reporting",
         "limitation": "",
@@ -288,7 +288,7 @@
           {
             "field": "why_it_matters",
             "source_number": 1,
-            "quote": "This will be an open, welcoming environment for student discussions."
+            "quote": "This event is designed to gather student perspectives on a variety of issues concerning AI engagement and discerning AI."
           }
         ]
       }
