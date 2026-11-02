@@ -2,7 +2,9 @@
   "schema_version": "source_bound_news_seeds_v1",
   "seeds": {
     "de6ac8b1-1c34-4ae6-87f9-04e3f573e042": {
-      "evidence_sha256": ["ae42e41de1031716a595c3ca02bb03befb6a921d6bbeb0ce727a6c757c19591d"],
+      "evidence_sha256": [
+        "ae42e41de1031716a595c3ca02bb03befb6a921d6bbeb0ce727a6c757c19591d"
+      ],
       "draft": {
         "editorial_headline": "INRAE book explains AI methods for linking food and bioproduct data to decisions",
         "editorial_deck": "The volume describes ways to connect varied evidence and expert knowledge, with examples in packaging and cheese production.",
@@ -17,14 +19,28 @@
         "claim_status": "reporting",
         "limitation": "This is INRAE's description of a book; the article does not provide measured outcomes for the described tools.",
         "support": [
-          {"field": "editorial_headline", "source_number": 1, "quote": "Un nouvel ouvrage coordonné par trois scientifiques INRAE, Patrice Buche, Pierre Bisquert et Rallou Thomopoulos, présente les méthodes développées notamment à Montpellier pour transformer données et connaissances en outils d’aide à la décision."},
-          {"field": "what_happened", "source_number": 1, "quote": "L’ouvrage présente des chaînes de traitement – ou workflows – permettant de collecter, organiser, partager, relier et actualiser différentes sources d’information"},
-          {"field": "why_it_matters", "source_number": 1, "quote": "Ces méthodes sont illustrées par des applications très concrètes dans les filières alimentaires et les bioproduits : conception de matériaux composites d’emballage biodégradables, choix d’emballages alimentaires ou encore formulation de recommandations technologiques pour améliorer la qualité des fromages."}
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Un nouvel ouvrage coordonné par trois scientifiques INRAE, Patrice Buche, Pierre Bisquert et Rallou Thomopoulos, présente les méthodes développées notamment à Montpellier pour transformer données et connaissances en outils d’aide à la décision."
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "L’ouvrage présente des chaînes de traitement – ou workflows – permettant de collecter, organiser, partager, relier et actualiser différentes sources d’information"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Ces méthodes sont illustrées par des applications très concrètes dans les filières alimentaires et les bioproduits : conception de matériaux composites d’emballage biodégradables, choix d’emballages alimentaires ou encore formulation de recommandations technologiques pour améliorer la qualité des fromages."
+          }
         ]
       }
     },
     "e2e89dc5-075a-40f1-821b-aa3232662606": {
-      "evidence_sha256": ["cba795e76b92f6cc3bd682f7e782a4e9f754d91805329adcf56e83bfe815d725"],
+      "evidence_sha256": [
+        "cba795e76b92f6cc3bd682f7e782a4e9f754d91805329adcf56e83bfe815d725"
+      ],
       "draft": {
         "editorial_headline": "Nanjing University begins AI literacy course for new students with a caution about hype",
         "editorial_deck": "University leader Tan Tieniu opened the course with basic concepts, applications and limits of AI.",
@@ -39,14 +55,28 @@
         "claim_status": "reporting",
         "limitation": "The source is the university's report of its own opening lecture and plans; it does not report educational results.",
         "support": [
-          {"field": "editorial_headline", "source_number": 1, "quote": "为线上线下近12000名2026级本科及研究生新生讲授人工智能通识核心课第一讲"},
-          {"field": "what_happened", "source_number": 1, "quote": "他提醒同学们，虽然人工智能早已是全民热词，但热潮之下有许多观点看法还有待商榷，人工智能领域的概念混淆、认识误区、刻意炒作也时有发生。"},
-          {"field": "why_it_matters", "source_number": 1, "quote": "推进“AI+”课程覆盖所有学生、全部专业；另一方面，全面实施“研究生AI+创新能力培养行动计划”，将人工智能通识课纳入研究生新生必修环节"}
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "为线上线下近12000名2026级本科及研究生新生讲授人工智能通识核心课第一讲"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "他提醒同学们，虽然人工智能早已是全民热词，但热潮之下有许多观点看法还有待商榷，人工智能领域的概念混淆、认识误区、刻意炒作也时有发生。"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "推进“AI+”课程覆盖所有学生、全部专业；另一方面，全面实施“研究生AI+创新能力培养行动计划”，将人工智能通识课纳入研究生新生必修环节"
+          }
         ]
       }
     },
     "250a45cd-9a5c-4405-ae4b-66625c0c1ff6": {
-      "evidence_sha256": ["8b7c38578799b0fa965299aceb1076c852d24835f0715986399b23e1fa81b0ad"],
+      "evidence_sha256": [
+        "8b7c38578799b0fa965299aceb1076c852d24835f0715986399b23e1fa81b0ad"
+      ],
       "draft": {
         "editorial_headline": "Qingdao article maps local robotics and computing projects as an industrial AI bet",
         "editorial_deck": "City reporting describes robot training facilities, industrial models and computing infrastructure while arguing for further investment.",
@@ -61,14 +91,28 @@
         "claim_status": "analysis",
         "limitation": "This city-affiliated article combines reported projects with forecasts and advocacy; future effects have not been measured in the source.",
         "support": [
-          {"field": "editorial_headline", "source_number": 1, "quote": "持续布局人工智能产业新赛道，抢抓AI激活的产业新变量成为推动产业升级，在新一轮全球产业竞争中抢占先机的关键。"},
-          {"field": "what_happened", "source_number": 1, "quote": "智能制造被认为是物理AI有望率先落地的场景之一。卡奥斯打造了以高质量工业数据为燃料，依托本体建模与数字孪生技术构建的工业世界模型"},
-          {"field": "why_it_matters", "source_number": 1, "quote": "数据是当下具身智能乃至物理AI的关键痛点。青岛布局建设“1+N”具身智能训练场。"}
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "持续布局人工智能产业新赛道，抢抓AI激活的产业新变量成为推动产业升级，在新一轮全球产业竞争中抢占先机的关键。"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "智能制造被认为是物理AI有望率先落地的场景之一。卡奥斯打造了以高质量工业数据为燃料，依托本体建模与数字孪生技术构建的工业世界模型"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "数据是当下具身智能乃至物理AI的关键痛点。青岛布局建设“1+N”具身智能训练场。"
+          }
         ]
       }
     },
     "b7cc7093-b0e0-4f9b-9d7a-1469436f671f": {
-      "evidence_sha256": ["6a7ab1d558f62970013d3fa42607ab33ede3b01b5204748cfbb192fec6fd9e66"],
+      "evidence_sha256": [
+        "6a7ab1d558f62970013d3fa42607ab33ede3b01b5204748cfbb192fec6fd9e66"
+      ],
       "draft": {
         "editorial_headline": "Unitree says it is researching a self-improving model for physical AI robots",
         "editorial_deck": "Chair Wang Xingxing described a proposed cycle of simulation, real-world testing and feedback at a company event.",
@@ -83,14 +127,28 @@
         "claim_status": "company_claim",
         "limitation": "The self-improving model is in preliminary research; the report provides no performance result for it.",
         "support": [
-          {"field": "editorial_headline", "source_number": 1, "quote": "目前宇树科技正在预研“物理AI机器人自进化V1.0”大模型"},
-          {"field": "what_happened", "source_number": 1, "quote": "就是让AI模型自己去搜罗论文、写代码，在仿真环境做训练，再到真实环境测试，测试结果由模型自己打分并反馈，形成自循环。"},
-          {"field": "why_it_matters", "source_number": 1, "quote": "建立一套“AI自主驱动、AI调研建模、AI训练验证、AI改进优化”的正向循环，不断提升模型能力的迭代升级和数据的利用效率。"}
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "目前宇树科技正在预研“物理AI机器人自进化V1.0”大模型"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "就是让AI模型自己去搜罗论文、写代码，在仿真环境做训练，再到真实环境测试，测试结果由模型自己打分并反馈，形成自循环。"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "建立一套“AI自主驱动、AI调研建模、AI训练验证、AI改进优化”的正向循环，不断提升模型能力的迭代升级和数据的利用效率。"
+          }
         ]
       }
     },
     "ce676615-712f-46c1-97be-74ff29ea8bc2": {
-      "evidence_sha256": ["d7fa77d5830925f3185adf095faa2721f96a9829295f3d948dd58e312b218bd4"],
+      "evidence_sha256": [
+        "d7fa77d5830925f3185adf095faa2721f96a9829295f3d948dd58e312b218bd4"
+      ],
       "draft": {
         "editorial_headline": "China's industry ministry describes its AI manufacturing push and planned product support",
         "editorial_deck": "At a press briefing, an official described industrial AI programs and plans for devices and suppliers.",
@@ -105,9 +163,62 @@
         "claim_status": "reporting",
         "limitation": "This is an official account of programs, estimates and plans; the supplied transcript does not independently verify their effects.",
         "support": [
-          {"field": "editorial_headline", "source_number": 1, "quote": "坚持产业发展和应用促进两手抓，推动人工智能深度赋能新型工业化"},
-          {"field": "what_happened", "source_number": 1, "quote": "一是场景牵引应用拓展。按照“一业一图谱、一景一档案”的模式，围绕钢铁、汽车、医药等20个行业，凝练1000余个高价值应用场景"},
-          {"field": "why_it_matters", "source_number": 1, "quote": "下一步，我们将加力推进人工智能产业发展和赋能制造业，以更实举措助力商品消费提质升级。"}
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "坚持产业发展和应用促进两手抓，推动人工智能深度赋能新型工业化"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "一是场景牵引应用拓展。按照“一业一图谱、一景一档案”的模式，围绕钢铁、汽车、医药等20个行业，凝练1000余个高价值应用场景"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "下一步，我们将加力推进人工智能产业发展和赋能制造业，以更实举措助力商品消费提质升级。"
+          }
+        ]
+      }
+    },
+    "5fdf807e-7a33-4be4-9209-c5e7663adde8": {
+      "evidence_sha256": [
+        "3dd9c6a84eb6f0f86de903a4f5dab34f379c8b70662e2a43bfac4665ade26ef2"
+      ],
+      "draft": {
+        "editorial_headline": "Villefranche groups invite people to discuss AI uses and unanswered questions",
+        "editorial_deck": "A local information meeting lists everyday tools, misleading media, human roles and possible technical progress as topics.",
+        "what_happened": "A Villefranche-de-Rouergue notice announces an information meeting about what artificial intelligence is and how it works. It lists voice assistants, recommendations, translation tools and chatbots, alongside misleading videos and altered images.",
+        "why_it_matters": "The organizers invite people to discuss whether AI might influence decisions or replace human roles, and where it could bring technical progress. The notice poses these as questions; it reports no answers or observed effects.",
+        "for_humans": "The notice raises questions about AI shaping decisions and replacing human roles; it does not say those effects have occurred.",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Guilhem Landès will lead the discussion. The notice says he has more than ten years of experience helping families and organizations address internet risks through training, content and awareness work.",
+          "The Association Familiale Laïque and Maison de l’amitié de Villefranche propose the meeting. The announcement gives discussion topics but no findings about specific AI systems."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is an event announcement. Its questions about AI are discussion topics, not findings.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Venez vous informer et discuter avec Guilhem Landès"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Elle s’invite de plus en plus dans nos vies : assistants vocaux, recommandations personnalisées, nouveaux produits ou services, outils de traduction, chatbots mais aussi vidéos trompeuses, images truquées"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Ne risque t-elle pas de prendre la place de l’humain, d’induire nos comportements, d’influencer nos décisions ?"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Dans quels domaines peut-elle être porteuse de progrès technologiques ?"
+          }
         ]
       }
     }
