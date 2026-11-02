@@ -23527,7 +23527,7 @@
         "Koushil Sreenath"
       ],
       "institutions": [
-        "The authors are with the University of California, Berkeley"
+        "University of California, Berkeley"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.20606v1",
       "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
@@ -31105,10 +31105,11 @@
         "Aaron D. Ames"
       ],
       "institutions": [
-        "This work is supported by The Dow Chemical Company project #227027AW and in part by Technology Innovation Institute"
+        "California Institute of Technology",
+        "New York University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.12467v1",
-      "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_checked_at": "2026-11-02T12:29:24.698380+00:00",
       "source_verified_at": "2026-10-10T17:20:44.432451+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -31139,7 +31140,8 @@
       "full_text_retry_after": "2026-10-17",
       "paper_pages": 8,
       "paper_text_sha256": "1c13fe60199c193a640abe654f0a10037513a74d392fcda3ecdc5650669a9ce1",
-      "affiliation_fallback_checked_at": "2026-10-30T07:43:27.165651+00:00",
+      "affiliation_fallback_checked_at": "2026-11-02T12:29:24.698380+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "contextual-safety-filter-reduces-dangerous-robot-motion-generators",
       "path": "research/contextual-safety-filter-reduces-dangerous-robot-motion-generators/index.html",
@@ -34155,7 +34157,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_checked_at": "2026-11-02T12:29:24.698380+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -35453,8 +35455,7 @@
         "Gregory D. Bellchambers"
       ],
       "institutions": [
-        "PhysicsX Ltd",
-        "London, EC2A 4DQ"
+        "PhysicsX Ltd"
       ],
       "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
       "source_verified_at": "2026-10-06T18:20:42.601087+00:00",
