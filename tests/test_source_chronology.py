@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from build_site import cards
 from generate_editorial_stories import candidates
-from source_chronology import dated_source_year, older_source_year
+from source_chronology import dated_source_year, older_source_year, public_event_ids, public_directional_counts
 
 
 class SourceChronologyTests(unittest.TestCase):
@@ -25,6 +25,10 @@ class SourceChronologyTests(unittest.TestCase):
         selected, counts, _ = candidates(release, {'evidence': []}, ({}, {}, {}, {}))
         self.assertEqual(selected, [])
         self.assertEqual(counts['source_date_mismatch'], 1)
+        self.assertEqual(public_event_ids(release), set())
+        relationship = {'evidence': [{'event_id': event['event_id'], 'axes': {
+            'human': {'direction': 'mixed'}, 'ai': {'direction': 'gain'}}}]}
+        self.assertEqual(sum(public_directional_counts(release, relationship)['human'].values()), 0)
 
     def test_url_year_needs_a_clear_publication_path_and_all_sources(self):
         self.assertEqual(dated_source_year('https://example.org/news/2026/story'), 2026)
