@@ -26,7 +26,7 @@ from story_photos import photo_registry, story_photo
 from editorial_artifacts import isolated_artifact
 from research_reading import restore_reading_scope
 from source_evidence_quality import assess_body
-from source_chronology import older_source_year
+from source_chronology import older_source_year, public_directional_counts
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -243,7 +243,8 @@ def main():
     global SITE;SITE=ROOT/args.output
     if SITE.resolve()==ROOT or ROOT not in SITE.resolve().parents:raise ValueError('Build directory must be inside the repo')
     preview=args.preview or args.mock
-    config=load_config(ROOT);release,sym=inputs(preview);counts=validate_pair(release,sym)
+    config=load_config(ROOT);release,sym=inputs(preview);validate_pair(release,sym)
+    counts=public_directional_counts(release,sym)
     if preview:
         registry={};readiness={};editorial=json.loads((ROOT/'data/preview/editorial.json').read_text())
         config.update(community_enabled=False,ga4_measurement_id='',supabase_publishable_key='');config['adsense']['enabled']=False
