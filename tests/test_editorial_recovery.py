@@ -242,6 +242,16 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(model.call_args.kwargs['stage'], 'reading_level')
         self.assertEqual(review.call_count, 1)
 
+    def test_publisher_name_digits_are_valid_source_metadata(self):
+        draft, sources = fixture()
+        sources[0]['publisher'] = 'FOX5 Vegas'
+        draft['editorial_headline'] = 'FOX5 Vegas reports musician concerns about AI payment'
+        self.assertEqual(engine.validate_draft(draft, sources)['editorial_headline'],
+                         draft['editorial_headline'])
+        draft['editorial_headline'] = 'FOX6 Vegas reports musician concerns about AI payment'
+        with self.assertRaisesRegex(engine.EditorialError, 'unsupported_number'):
+            engine.validate_draft(draft, sources)
+
     def test_absent_dimensions_do_not_force_an_invented_effect(self):
         for field in ('for_humans', 'for_ai'):
             draft, sources = fixture()
