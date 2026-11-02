@@ -6296,6 +6296,45 @@
       },
       "output_sha256": "b142fe92033cd2c01bdaacac4ea02498292dea33f4af0477ed0d3b0fdc38a1b4",
       "policy": "brief-english-display-v1"
+    },
+    "91b2753544d50972a3e5dc87a782f114335e27f11453b3d89d2d4565954628ce": {
+      "english": {
+        "0": "Nanjing University",
+        "1": "Nanjing University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0085ab29e142c509004cea3a702fd5f6e6aa0c81c9d342b97a42cbd6c448e704",
+      "policy": "brief-english-display-v1"
+    },
+    "025e9a2d044e089c7b73af980aa1ff51b0a4bd01a0c88c6b4494c399a07c68a6": {
+      "english": {
+        "0": "Xinhua Net",
+        "1": "Official transcript: Wei Wei on AI and industrialization",
+        "2": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "14c4bc756c9310e296ff2d30c57c2cb0e0f86fc3e88bbda64000293804401c13",
+      "policy": "brief-english-display-v1"
     }
   }
 }
