@@ -16,6 +16,13 @@ import social_review_delivery as delivery
 
 
 class SocialReviewDelivery(unittest.TestCase):
+    def test_approval_and_site_tests_can_import_without_image_renderer(self):
+        spec = importlib.util.spec_from_file_location('social_delivery_without_pillow', ROOT / 'scripts/social_review_delivery.py')
+        module = importlib.util.module_from_spec(spec)
+        with patch.dict(sys.modules, {'PIL': None}):
+            spec.loader.exec_module(module)
+        self.assertEqual(module.OWNER_EMAIL, delivery.OWNER_EMAIL)
+
     def setUp(self):
         self.entry = dict(publication_week='2026-W45', status=delivery.STATUS,
                           artifact_url='https://github.com/' + delivery.REPO + '/actions/runs/123/artifacts/456',

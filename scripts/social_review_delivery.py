@@ -15,7 +15,6 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
-from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'kedmahamelberg-ai/aieo-brief'
@@ -71,6 +70,9 @@ def image_data(folder, relative, width=480):
     path = (folder / relative).resolve()
     if folder.resolve() not in path.parents or not path.is_file():
         raise ValueError('Review image is outside the downloaded package or missing')
+    # Only the mail-rendering workflow installs Pillow. Approval checks and the
+    # site's general regression suite must not need that optional dependency.
+    from PIL import Image
     with Image.open(path) as image:
         image = image.convert('RGB')
         image.thumbnail((width, width * 2))
