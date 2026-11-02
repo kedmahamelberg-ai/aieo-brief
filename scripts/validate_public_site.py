@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import urlsplit,unquote
 from xml.etree import ElementTree
 from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
+from research_reading import verified_paper_reading
 ROOT=Path(__file__).resolve().parents[1]
 PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref','private_key','manage_token_hash','subscription_id','auth_key'}
 class Page(HTMLParser):
@@ -36,9 +37,7 @@ def validate_research_reading(item):
  if not item.get('limitation') or item.get('evidence_scope') not in ('abstract','paper_text'):
   raise ValueError('Research summary lacks evidence scope and limit')
  if item['evidence_scope']=='paper_text':
-  if (item.get('full_text_status')!='read' or not isinstance(item.get('paper_pages'),int)
-      or item['paper_pages']<1 or not re.fullmatch(r'[0-9a-f]{64}',item.get('paper_text_sha256',''))
-      or item.get('summary_basis')!='Summary of the paper'):
+  if not verified_paper_reading(item):
    raise ValueError('Paper summary lacks a completed, identifiable paper reading')
  elif item.get('summary_basis')=='Summary of the paper':
   raise ValueError('An abstract must not be labelled as a paper reading')

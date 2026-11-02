@@ -9,7 +9,9 @@ import requests
 
 READING_VERSION = 'paper-practitioner-v1'
 PDF_READER_VERSION = 2
+HTML_READER_VERSION = 1
 MAX_PDF_BYTES = 64 * 1024 * 1024
+MAX_HTML_BYTES = 8 * 1024 * 1024
 MAX_PAPER_CHARS = 600000
 
 
@@ -17,7 +19,10 @@ def verified_paper_reading(row):
     """A stored full-paper label needs the completed reading's source proof."""
     return (row.get('summary_basis') == 'Summary of the paper'
             and row.get('full_text_status') == 'read'
-            and type(row.get('paper_pages')) is int and row['paper_pages'] >= 1
+            and ((type(row.get('paper_pages')) is int and row['paper_pages'] >= 1)
+                 or (type(row.get('paper_sections')) is int and row['paper_sections'] >= 2
+                     and row.get('paper_source_url') == 'https://arxiv.org/html/' + str(row.get('arxiv_id', ''))
+                     and bool(re.fullmatch(r'\d{4}\.\d{4,5}(?:v\d+)?', str(row.get('arxiv_id', ''))))))
             and bool(re.fullmatch(r'[0-9a-f]{64}', row.get('paper_text_sha256', ''))))
 
 
@@ -32,6 +37,9 @@ def needs_upgrade(row):
     return (not row.get('has_editorial') or bool(style_problem(row)) or row.get('research_reading_version') != READING_VERSION
             or (row.get('evidence_scope') != 'paper_text' and row.get('pdf_reader_version', 1) < PDF_READER_VERSION
                 and row.get('full_text_status') in ('pdf_size_limit', 'pdf_text_unreadable'))
+            or (row.get('evidence_scope') != 'paper_text' and row.get('arxiv_id')
+                and row.get('html_reader_version', 0) < HTML_READER_VERSION
+                and row.get('full_text_status') in ('pdf_size_limit', 'pdf_text_unreadable', 'pdf_unavailable', 'incomplete_text_extraction', 'paper_reading_size'))
             or (row.get('evidence_scope') != 'paper_text' and row.get('full_text_retry_after', '9999') <= date.today().isoformat()))
 
 
@@ -103,12 +111,64 @@ def extract_paper(content, title):
             'text_sha256': hashlib.sha256(text.encode()).hexdigest()}
 
 
+def extract_arxiv_html(content, title):
+    """Read the complete arXiv article, excluding the site's surrounding UI."""
+    from bs4 import BeautifulSoup
+    if b'</article>' not in content.lower():
+        raise ValueError('incomplete_html_article')
+    soup = BeautifulSoup(content, 'html.parser')
+    article = soup.select_one('article.ltx_document')
+    heading = article.select_one('h1.ltx_title_document') if article else None
+    if not heading:
+        raise ValueError('html_article_missing')
+    words = lambda value: re.findall(r'\w+', unicodedata.normalize('NFKC', value).casefold())
+    if words(heading.get_text(' ', strip=True)) != words(title):
+        raise ValueError('paper_identity_mismatch')
+    sections = article.find_all('section', recursive=False)
+    if len(sections) < 2 or not article.select_one('.ltx_abstract'):
+        raise ValueError('incomplete_html_article')
+    for element in article.select('script, style'):
+        element.decompose()
+    text = '\n\n'.join(element.get_text(' ', strip=True) for element in article.children
+                       if getattr(element, 'name', None) and element.get_text(' ', strip=True))
+    text = unicodedata.normalize('NFKC', text)
+    if not 2500 <= len(text) <= MAX_PAPER_CHARS:
+        raise ValueError('paper_reading_size')
+    return {'text': text, 'sections': len(sections), 'html_sha256': hashlib.sha256(content).hexdigest(),
+            'text_sha256': hashlib.sha256(text.encode()).hexdigest()}
+
+
+def read_arxiv_html(paper):
+    arxiv_id = str(paper.get('arxiv_id') or '')
+    if not re.fullmatch(r'\d{4}\.\d{4,5}(?:v\d+)?', arxiv_id):
+        return {'status': 'html_unavailable'}
+    url = 'https://arxiv.org/html/' + arxiv_id
+    try:
+        with requests.get(url, stream=True, allow_redirects=False, timeout=45,
+                          headers={'User-Agent': 'AIEO-Brief (paper reading; https://brief.hamelberg-ai.com)'}) as response:
+            if response.status_code != 200 or 'text/html' not in response.headers.get('Content-Type', '').lower():
+                return {'status': 'html_unavailable'}
+            parts = []; size = 0
+            for chunk in response.iter_content(65536):
+                size += len(chunk)
+                if size > MAX_HTML_BYTES:
+                    return {'status': 'html_size_limit'}
+                parts.append(chunk)
+        return {**extract_arxiv_html(b''.join(parts), paper['original_headline']),
+                'status': 'read', 'url': url, 'format': 'arxiv_html'}
+    except requests.RequestException:
+        return {'status': 'html_unavailable'}
+    except ValueError as error:
+        return {'status': str(error) if str(error) in ('html_article_missing', 'incomplete_html_article',
+                                                     'paper_identity_mismatch', 'paper_reading_size') else 'html_text_unreadable'}
+
+
 def read_paper(paper):
     url = paper.get('pdf_url', '')
     if not url and paper.get('arxiv_id'):
         url = 'https://arxiv.org/pdf/' + paper['arxiv_id']
     if not allowed_pdf(url):
-        return {'status': 'no_supported_pdf'}
+        return read_arxiv_html(paper) if paper.get('arxiv_id') else {'status': 'no_supported_pdf'}
     try:
         # Follow only redirects within the original-source allowlist.
         for _ in range(5):
@@ -118,19 +178,24 @@ def read_paper(paper):
                     from urllib.parse import urljoin
                     url = urljoin(url, response.headers.get('Location', ''))
                     if not allowed_pdf(url):
-                        return {'status': 'unsupported_pdf_redirect'}
+                        return read_arxiv_html(paper) if paper.get('arxiv_id') else {'status': 'unsupported_pdf_redirect'}
                     continue
                 response.raise_for_status()
                 parts = []; size = 0
                 for chunk in response.iter_content(65536):
                     size += len(chunk)
                     if size > MAX_PDF_BYTES:
-                        return {'status': 'pdf_size_limit'}
+                        return read_arxiv_html(paper) if paper.get('arxiv_id') else {'status': 'pdf_size_limit'}
                     parts.append(chunk)
-                return {**extract_paper(b''.join(parts), paper['original_headline']), 'status': 'read', 'url': url}
-        return {'status': 'pdf_redirect_limit'}
+                try:
+                    return {**extract_paper(b''.join(parts), paper['original_headline']), 'status': 'read', 'url': url, 'format': 'pdf'}
+                except Exception:
+                    if paper.get('arxiv_id'):
+                        return read_arxiv_html(paper)
+                    raise
+        return read_arxiv_html(paper) if paper.get('arxiv_id') else {'status': 'pdf_redirect_limit'}
     except requests.RequestException:
-        return {'status': 'pdf_unavailable'}
+        return read_arxiv_html(paper) if paper.get('arxiv_id') else {'status': 'pdf_unavailable'}
     except ValueError as error:
         return {'status': str(error) if str(error) in ('not_pdf', 'unsupported_pdf', 'paper_identity_mismatch',
                                                        'incomplete_text_extraction', 'paper_reading_size') else 'pdf_text_unreadable'}
