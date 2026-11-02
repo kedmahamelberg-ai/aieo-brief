@@ -26,6 +26,7 @@ from story_photos import photo_registry, story_photo
 from editorial_artifacts import isolated_artifact
 from research_reading import restore_reading_scope
 from source_evidence_quality import assess_body
+from source_chronology import older_source_year
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -85,6 +86,10 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
             if country in ISO:marketmap[eid].add(ISO[country])
     names=dict(MARKETS);output=[]
     for event in release['evidence']:
+        old_year=older_source_year(event)
+        if old_year:
+            print('::warning::Withheld news event '+str(event.get('event_id'))+' from the current edition: source URL dates it to '+str(old_year)+', but the release dates it to '+str(event.get('event_date'))+'.')
+            continue
         eid=str(event.get('effective_event_id') or event['event_id']);row=axesmap[eid];axes=row['axes']
         reg=registry.get(eid) or {};ready=readiness.get(eid) or {};v=editorial.get(eid)
         if not version_valid(v,row,release,event,legacy_proofs):v=None
