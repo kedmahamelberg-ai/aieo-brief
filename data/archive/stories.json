@@ -2622,8 +2622,8 @@
       "key": "event:c61edb69-6551-44fb-9ca0-94270c874772",
       "event_id": "c61edb69-6551-44fb-9ca0-94270c874772",
       "kind": "news",
-      "slug": "development-c61edb69-6551-44fb-9ca0-94270c874772",
-      "path": "story/development-c61edb69-6551-44fb-9ca0-94270c874772/index.html",
+      "slug": "will-ai-losing-control-lead-human-through-code",
+      "path": "story/will-ai-losing-control-lead-human-through-code/index.html",
       "headline": "Will AI losing control lead to human extinction? Governance cannot be determined solely through code.",
       "original_headline": "Will AI losing control lead to human extinction? Governance cannot be determined solely through code.",
       "deck": "Reporting from 上观新闻. Open the source for the article.",
@@ -2664,7 +2664,11 @@
       "has_editorial": false,
       "edition": "2026-W44",
       "period_start": "2026-10-26",
-      "period_end": "2026-11-01"
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-c61edb69-6551-44fb-9ca0-94270c874772/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:ae12f344-2c33-4d0a-b7ce-2d14af24fd23",
@@ -12466,8 +12470,8 @@
       "key": "event:ae5f9d94-d8ad-4dd6-907d-76329f70defe",
       "event_id": "ae5f9d94-d8ad-4dd6-907d-76329f70defe",
       "kind": "news",
-      "slug": "development-ae5f9d94-d8ad-4dd6-907d-76329f70defe",
-      "path": "story/development-ae5f9d94-d8ad-4dd6-907d-76329f70defe/index.html",
+      "slug": "online-training-field-artificial-intelligence",
+      "path": "story/online-training-field-artificial-intelligence/index.html",
       "headline": "Online Training in the Field of Artificial Intelligence",
       "original_headline": "Online Training in the Field of Artificial Intelligence",
       "deck": "Reporting from Organisation internationale de la Francophonie (OIF). Open the source for the article.",
@@ -12509,7 +12513,11 @@
       "has_editorial": false,
       "edition": "2026-W44",
       "period_start": "2026-10-26",
-      "period_end": "2026-11-01"
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-ae5f9d94-d8ad-4dd6-907d-76329f70defe/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "alt": "Landscape of the Four Seasons",
@@ -33604,7 +33612,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-02T03:45:44.959719+00:00",
+      "affiliation_checked_at": "2026-11-02T03:51:16.790271+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

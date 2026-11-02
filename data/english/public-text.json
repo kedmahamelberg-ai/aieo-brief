@@ -6471,6 +6471,24 @@
       },
       "output_sha256": "cbfb1367d8f1b5a6827b5259708e05db176d734ae7fb505d2ef5aca08da6f3ab",
       "policy": "brief-english-display-v1"
+    },
+    "4589e8bca5f99f360cba5c76454b8cdab11fda737f88acb5a99277ebf5521ba2": {
+      "english": {
+        "0": "Reporting from International Organization of La Francophonie (OIF). Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "094fab384f1e6be99039ceae0accfd89a0ee2682d57544b6faf4155d969c6b78",
+      "policy": "brief-english-display-v1"
     }
   }
 }

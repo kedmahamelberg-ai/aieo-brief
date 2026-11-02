@@ -68,12 +68,12 @@
             "name": "France",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "France: selected reporting leaned toward rules and rights, with “Generative AI: What is the real environmental impact and how to…” as one visible signal.",
+            "sentence": "France: selected reporting leaned toward rules and rights, with “Online Training in the Field of Artificial Intelligence” as one visible signal.",
             "story": {
-              "headline": "Generative AI: What is the real environmental impact and how to regulate it?",
-              "path": "story/generative-ai-what-real-environmental-impact-how-regulate/index.html",
-              "publisher": "Fédération Française de la Randonnée Pédestre",
-              "source_url": "https://www.ffrandonnee.fr/s-informer/actualites/ia-generative-quel-impact-environnemental-reel-et-comment-l-encadrer"
+              "headline": "Online Training in the Field of Artificial Intelligence",
+              "path": "story/online-training-field-artificial-intelligence/index.html",
+              "publisher": "Organisation internationale de la Francophonie (OIF)",
+              "source_url": "https://www.francophonie.org/formation-en-ligne-intelligence-artificielle-et-manipulations-de-linformation-8752"
             }
           },
           {
@@ -124,7 +124,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "9c6915f8b841719516ff31f6e90bb60653a90e6052ff742abab0dd8f1bc661cd"
+      "content_sha256": "e8c067486e78351efcc6d4bf819e9f491333d350442e3ab9df7dcac7670cb830"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
