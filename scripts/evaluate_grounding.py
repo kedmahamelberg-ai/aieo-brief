@@ -61,7 +61,7 @@ CASES = [
   'The malware tries another model in an attempt to bypass safeguards.'),
  ('qualitative_method', 'Researchers interviewed 18 artists and collaborators about creative work. This was qualitative research, with no controlled creativity experiment.',
   'A controlled experiment proves that AI increases artists’ creativity.',
-  'Researchers used 18 qualitative interviews to explore artists’ creative work.')]
+  'Researchers interviewed 18 artists and collaborators about creative work in a qualitative study; they did not run a controlled creativity experiment.')]
 
 
 def evaluate(review=review_scope, case_name=None):
