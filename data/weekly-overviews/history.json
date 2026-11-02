@@ -3,6 +3,131 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "display_date": "2026-11-01",
+      "path": "week-from-above/2026-w44/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 13,
+            "topic": "Business And Investment",
+            "sentence": "China: the discovery stream centred most often on business and investment, including “Xinhua View: AI Boosts Electric Power but Needs Caution and Data.”",
+            "story": {
+              "headline": "Xinhua View: AI Boosts Electric Power but Needs Caution and Data",
+              "path": "story/xinhua-view-ai-boosts-electric-power-caution-data/index.html",
+              "publisher": "Xinhua Net",
+              "source_url": "https://www.news.cn/fortune/20261101/b893ce7dacdc47a79a2a6ad5660bc04a/c.html"
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 14,
+            "topic": "Work And Skills",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “AI Ethics in Self-Study: Mixed Lessons for Humans and AI, CPA….”",
+            "story": {
+              "headline": "AI Ethics in Self-Study: Mixed Lessons for Humans and AI, CPA Journal Finds",
+              "path": "story/ai-ethics-self-study-mixed-lessons-humans-journal-finds/index.html",
+              "publisher": "The CPA Journal",
+              "source_url": "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 11,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Dutch Lawmakers Seek to Keep Generative AI Out of Primary School….”",
+            "story": {
+              "headline": "Dutch Lawmakers Seek to Keep Generative AI Out of Primary School Learning",
+              "path": "story/dutch-lawmakers-seek-keep-generative-ai-school-learning/index.html",
+              "publisher": "NL Times",
+              "source_url": "https://nltimes.nl/2026/10/29/dutch-mps-want-ban-primary-school-children-using-generative-ai"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 11,
+            "topic": "Rules And Rights",
+            "sentence": "France: selected reporting leaned toward rules and rights, with “Generative AI: What is the real environmental impact and how to…” as one visible signal.",
+            "story": {
+              "headline": "Generative AI: What is the real environmental impact and how to regulate it?",
+              "path": "story/generative-ai-what-real-environmental-impact-how-regulate/index.html",
+              "publisher": "Fédération Française de la Randonnée Pédestre",
+              "source_url": "https://www.ffrandonnee.fr/s-informer/actualites/ia-generative-quel-impact-environnemental-reel-et-comment-l-encadrer"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 19,
+            "topic": "Work And Skills",
+            "sentence": "Canada: the discovery stream centred most often on work and skills, including “AI to Correct Our Students? Emilia’s Claims Meet Real Limits.”",
+            "story": {
+              "headline": "AI to Correct Our Students? Emilia’s Claims Meet Real Limits",
+              "path": "story/ai-correct-our-students-emilias-claims-real-limits/index.html",
+              "publisher": "Le Soleil",
+              "source_url": "https://www.lesoleil.com/actualites/education/2026/10/30/lintelligence-artificielle-pour-corriger-nos-eleves-BTVP3V52ANHV5EMKQ4TLKXNWJQ"
+            }
+          }
+        ],
+        "active_market_count": 5,
+        "editorial_version": "kedma-weekly-v10",
+        "status": "pending",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "sources_incomplete"
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "The weekly research review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [],
+        "paper_count": 15,
+        "affiliation_verified_count": 13,
+        "editorial_version": "kedma-weekly-v10",
+        "status": "pending",
+        "prose": [],
+        "pending_reason": "generation_pending",
+        "input_hash": "3bf81523ca6e53a49aa8567b013a7f55c5db90842b908111ce436a12031bad28",
+        "attempts": 0
+      },
+      "editorial_version": "kedma-weekly-v10",
+      "editorial_status": "pending",
+      "content_sha256": "9c6915f8b841719516ff31f6e90bb60653a90e6052ff742abab0dd8f1bc661cd"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W43",
       "period_start": "2026-10-19",
       "period_end": "2026-10-25",

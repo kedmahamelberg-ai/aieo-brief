@@ -735,6 +735,436 @@
       ]
     },
     {
+      "key": "event:e296077f-2e7b-4910-82c9-484d2339e050",
+      "event_id": "e296077f-2e7b-4910-82c9-484d2339e050",
+      "kind": "news",
+      "slug": "xinhua-view-ai-boosts-electric-power-caution-data",
+      "path": "story/xinhua-view-ai-boosts-electric-power-caution-data/index.html",
+      "headline": "Xinhua View: AI Boosts Electric Power but Needs Caution and Data",
+      "original_headline": "Xinhua View | How AI Can Enhance Power Industry and Help Ensure Power Supply for Thousands of Homes",
+      "deck": "AI helps forecast and manage grid needs, yet regional differences and data gaps require careful use.",
+      "what_happened": "AI-powered forecasts and tools are being used to predict wind, solar, and hydro output; new models speed up planning and enable virtual power plants; AI also aids in monitoring and safety.",
+      "why_it_matters": "These tools can raise efficiency and reliability, but results depend on validation, data quality, and sensible market rules.",
+      "body_paragraphs": [
+        "AI helps the power sector run more smoothly by predicting outputs and matching supply with demand. The growth of virtual power plants invites broader participation from everyday users.",
+        "These advances bring both gains and limits, and require measured steps like validation and clear data standards to avoid overreach."
+      ],
+      "for_humans": "AI opens new ways for people to participate in power systems.",
+      "for_ai": "Use AI with strong data governance and verification.",
+      "human_direction": "mixed",
+      "ai_direction": "gain",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "新华网",
+          "headline": "Xinhua View | How AI Can Enhance Power Supply and Help Ensure Power for Thousands of Homes",
+          "url": "https://www.news.cn/fortune/20261101/b893ce7dacdc47a79a2a6ad5660bc04a/c.html",
+          "date": "2026-11-01",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "新华网",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-e296077f-2e7b-4910-82c9-484d2339e050/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031",
+      "event_id": "e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031",
+      "kind": "news",
+      "slug": "ma-zhaoyuan-humans-keep-irreplaceable-value-within-limits",
+      "path": "story/ma-zhaoyuan-humans-keep-irreplaceable-value-within-limits/index.html",
+      "headline": "Ma Zhaoyuan says humans keep irreplaceable value in AI era, within limits",
+      "original_headline": "What is the irreplaceable value of humans in the AI era? Ma Zhaoyuan, a professor at the Engineering College of Southern University of Science and Technology, is a guest on Zhuhai Lecture Hall.",
+      "deck": "A university professor urges balanced growth of human skills like MAPLE.",
+      "what_happened": "At a Zhuhai lecture, Ma Zhaoyuan argued that AI handles computable tasks while humans should focus on uniquely human thinking. He warned against training people to resemble AI and promoted MAPLE skills as the base for AI-era competence.",
+      "why_it_matters": "The talk frames human value as something AI cannot replace and outlines skills that keep people essential in a technology-driven world.",
+      "body_paragraphs": [
+        "The professor traced how logic and science grew from old ideas to modern methods. He said AI is powerful but can only handle computable parts of work, while ethics, meaning, and beauty live beyond language and code.",
+        "He outlined MAPLE skills,Math, Art, Physical, Literature, Engineering,as the base for future abilities, and urged education to help people talk with machines and with each other, not just perform tasks."
+      ],
+      "for_humans": "Humans should cultivate uniquely human skills that AI cannot copy.",
+      "for_ai": "AI should support human thinking, not replace it.",
+      "human_direction": "gain",
+      "ai_direction": "loss",
+      "human_label": "Benefits reported",
+      "ai_label": "Downsides reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "珠海网",
+          "headline": "What is the irreplaceable value of humans in the AI era? Ma Zhaoyuan, a professor at the Engineering College of Southern University of Science and Technology, appeared on Zhuhai Lecture Hall.",
+          "url": "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html",
+          "date": "2026-11-01",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "珠海网",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Evidence comes from a single lecture and its written transcript; scope is a written source with public quotes.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:ca268de9-72d8-44c6-a8a4-177151d08911",
+      "event_id": "ca268de9-72d8-44c6-a8a4-177151d08911",
+      "kind": "news",
+      "slug": "chambly-how-integrate-artificial-intelligence-home-quebec-expert",
+      "path": "story/chambly-how-integrate-artificial-intelligence-home-quebec-expert/index.html",
+      "headline": "Chambly: How to Integrate Artificial Intelligence at Home, According to a Quebec Expert",
+      "original_headline": "Chambly: How to Integrate Artificial Intelligence into the Home",
+      "deck": "A local newspaper outlines a family-friendly way to bring AI into daily life without hype.",
+      "what_happened": "A Quebec AI expert, Édith-Anne Murray, published a book to help families talk about AI and use it responsibly at home. The article describes how AI is now in homes and can be used for small, practical tasks.",
+      "why_it_matters": "The piece argues AI can support learning and daily chores when used within clear family guidelines and conversations.",
+      "body_paragraphs": [
+        "The article centers on Édith-Anne Murray and her book, which aims to demystify AI for parents and kids alike. It notes that AI is already in homes and comes in many forms, from computers to phones, affecting both teens and adults.",
+        "It encourages setting a family framework and school rules. AI should be useful, not a shortcut that erodes learning. The point is to learn to use AI well, not to avoid it altogether."
+      ],
+      "for_humans": "Families can learn to guide AI use responsibly at home.",
+      "for_ai": "AI can aid home learning and tasks when used with family values and rules.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Le Journal de Chambly",
+          "headline": "Chambly: How to Integrate Artificial Intelligence into the Home",
+          "url": "https://www.journaldechambly.com/culture/chambly-comment-integrer-lintelligence-artificielle-a-la-maison",
+          "date": "2026-11-01",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Le Journal de Chambly",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Source is a single newspaper report; not a full study.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-ca268de9-72d8-44c6-a8a4-177151d08911/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883",
+      "event_id": "bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883",
+      "kind": "news",
+      "slug": "artificial-intelligence-jesuit-university-student-conversation",
+      "path": "story/artificial-intelligence-jesuit-university-student-conversation/index.html",
+      "headline": "Artificial Intelligence at a Jesuit University: A Student Conversation",
+      "original_headline": "Artificial Intelligence at a Jesuit University: A Student Conversation",
+      "deck": "Reporting from Marquette Today. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "the event invites student input on AI engagement, indicating an expansion of human capacity to discuss and assess AI implications",
+      "for_ai": "not applicable",
+      "human_direction": "gain",
+      "ai_direction": "none",
+      "human_label": "Benefits reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Marquette Today",
+          "headline": "Artificial Intelligence at a Jesuit University: A Student Conversation",
+          "url": "https://today.marquette.edu/calendar/artificial-intelligence-in-a-jesuit-university-a-student-conversation",
+          "date": "2026-11-01",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Marquette Today",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:a1e2b2b0-2a69-44e9-812b-f9c03426461e",
+      "event_id": "a1e2b2b0-2a69-44e9-812b-f9c03426461e",
+      "kind": "news",
+      "slug": "chengdu-launches-xiaolian-ai-help-public-traditional-couplets",
+      "path": "story/chengdu-launches-xiaolian-ai-help-public-traditional-couplets/index.html",
+      "headline": "Chengdu Launches Xiaolian AI to Help Public Create Traditional Couplets",
+      "original_headline": "The AI “Xiaolian” for couplet creation was launched in Chengdu",
+      "deck": "New AI tool makes couplet writing easier using everyday life topics.",
+      "what_happened": "On November 1, Chengdu released Xiaolian AI, a professional AI product focused on couplet creation and scenario-based use. It was developed by Sichuan cultural-tech firms and experts from the Sichuan Association of Couplets, and it lets people draw from travel, music, education, and social life to participate in creating couplets.",
+      "why_it_matters": "The project shows how AI can lower barriers to traditional literary creation and invite broader public participation, linking modern life with tradition.",
+      "body_paragraphs": [
+        "The launch introduces a tool that lets people write memorial couplets from photos, sightseeing moments, or personal trip notes. It aims to turn a traditional craft into an everyday, accessible activity rather than a niche skill.",
+        "Experts emphasize that couplets blend strict rules with creative expression, and the new AI tries to balance both by guiding rhythm and diction while keeping the art open to ordinary users."
+      ],
+      "for_humans": "AI helps people create, share, and enjoy traditional couplets.",
+      "for_ai": "AI supports creative engagement in language arts.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "中国新闻网",
+          "headline": "The AI “Xiaolian” for couplet creation was launched in Chengdu",
+          "url": "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html",
+          "date": "2026-11-01",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "中国新闻网",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "creativity",
+      "topic_label": "Culture & creativity",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Evidence is a single news report about a product launch; no data on user outcomes or population effects are presented.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-a1e2b2b0-2a69-44e9-812b-f9c03426461e/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd",
+      "event_id": "61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd",
+      "kind": "news",
+      "slug": "wolf-prize-winner-dobensky-ai-won-they-work",
+      "path": "story/wolf-prize-winner-dobensky-ai-won-they-work/index.html",
+      "headline": "Wolf Prize Winner Dobensky: AI Won't Replace Mathematicians, but Changes How They Work",
+      "original_headline": "Interview with Dobensky, winner of the Wolf Prize in Mathematics: AI will not replace mathematicians",
+      "deck": "An interview explains why AI acts as a helper, not a substitute, for math research.",
+      "what_happened": "Dobensky explained that AI currently acts as a powerful tool for finding and recombining math literature, not as an inventor of new ideas. She warned that AI cannot yet replace human proofs and understanding, and emphasized that researchers should use AI to handle heavy literature tasks while preserving human judgment.",
+      "why_it_matters": "The interview shows that AI can speed up work and expand reach, but humans must guide questions and verify results to keep math rigorous and meaningful.",
+      "body_paragraphs": [
+        "The Wolf Prize winner reflects on how AI can make math work quicker. AI can search and stitch together ideas from many papers, which helps researchers see connections faster. But Dobensky says a machine’s output is not the same as a new, proven mathematical idea, and human insight remains essential."
+      ],
+      "for_humans": "AI helps with reading and organizing math papers, but humans decide what matters.",
+      "for_ai": "AI should be used as an efficient tool to support mathematical research, not as a replacement for human insight.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "科学网,新闻",
+          "headline": "Interview with Dobensky, winner of the Wolf Prize in Mathematics: AI will not replace mathematicians",
+          "url": "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm",
+          "date": "2026-11-01",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "科学网,新闻",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "creativity",
+      "topic_label": "Culture & creativity",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Based on an interview with a single expert; reflects her views and may not represent all mathematicians.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:11dcf5d8-1bd7-4629-8a91-15442fbefeea",
+      "event_id": "11dcf5d8-1bd7-4629-8a91-15442fbefeea",
+      "kind": "news",
+      "slug": "ai-empowers-various-industries-first-hand-insights-ai-consumption",
+      "path": "story/ai-empowers-various-industries-first-hand-insights-ai-consumption/index.html",
+      "headline": "AI Empowers Various Industries: First-hand Insights | N possible ways of “AI + Consumption”",
+      "original_headline": "AI Empowers Various Industries: First-hand Insights | N possible ways of “AI + Consumption”",
+      "deck": "Reporting from 新华网. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "People gain new abilities and access through AI-enabled products and services.",
+      "for_ai": "AI technology demonstrates scalable deployment from chips to end-user devices, enabling widespread use.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "新华网",
+          "headline": "AI Empowers Various Industries , First-hand Observations | N possible ways of “AI + Consumption”",
+          "url": "https://www.news.cn/fortune/20261101/251ff8f5316d41709a5f773b6efb7f57/c.html",
+          "date": "2026-11-01",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "新华网",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-11dcf5d8-1bd7-4629-8a91-15442fbefeea/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:03c19c5b-ebc2-49d1-b4ad-020e753d6fba",
+      "event_id": "03c19c5b-ebc2-49d1-b4ad-020e753d6fba",
+      "kind": "news",
+      "slug": "cash-flow-challenges-era-artificial-intelligence-tech-stocks",
+      "path": "story/cash-flow-challenges-era-artificial-intelligence-tech-stocks/index.html",
+      "headline": "Cash flow challenges in the era of artificial intelligence: Why Wall Street is becoming more cautious about tech stocks",
+      "original_headline": "Cash flow challenges in the era of artificial intelligence: Why Wall Street is becoming more cautious about tech stocks",
+      "deck": "Reporting from Moomoo. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "not specified",
+      "for_ai": "AI infrastructure expansion and capital expenditure to support AI capabilities",
+      "human_direction": "none",
+      "ai_direction": "mixed",
+      "human_label": "No direction stated",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Moomoo",
+          "headline": "Cash flow challenges in the era of artificial intelligence: Why Wall Street is becoming more cautious about tech stocks",
+          "url": "https://www.moomoo.com/hans/community/feed/the-ai-cash-flow-reckoning-why-wall-street-is-becomingmore-117543580336134",
+          "date": "2026-11-01",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Moomoo",
+      "date": "2026-11-01",
+      "display_date": "1 Nov 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-03c19c5b-ebc2-49d1-b4ad-020e753d6fba/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Meditations",
       "content_fingerprint": "443ef50f7224a7b131fed21649f024e3920b354e1b32867bc12a9f438b204ade",
       "creator": "Marcus Aurelius",
@@ -1095,6 +1525,275 @@
           "emphasis": false
         }
       ]
+    },
+    {
+      "key": "event:f1db55f9-fd35-4368-bb5a-8223a6bcbf0b",
+      "event_id": "f1db55f9-fd35-4368-bb5a-8223a6bcbf0b",
+      "kind": "news",
+      "slug": "international-observation-u-s-midterm-elections-first-time",
+      "path": "story/international-observation-u-s-midterm-elections-first-time/index.html",
+      "headline": "International Observation | U.S. Midterm Elections: The impact of artificial intelligence is highlighted for the first time",
+      "original_headline": "International Observation | U.S. Midterm Elections: The impact of artificial intelligence is highlighted for the first time",
+      "deck": "Reporting from 新华网. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Voters gain information-access capabilities via AI, suggesting an expansion of human information-processing capacity.",
+      "for_ai": "AI extends its reach into political information ecosystems through summaries, comparisons, and targeted messaging.",
+      "human_direction": "mixed",
+      "ai_direction": "mixed",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "新华网",
+          "headline": "International Observation | U.S. Midterm Elections: The impact of artificial intelligence is clearly evident for the first time",
+          "url": "https://www.news.cn/world/20261031/101e6e534c31460285c998d9b08e670f/c.html",
+          "date": "2026-10-31",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "新华网",
+      "date": "2026-10-31",
+      "display_date": "31 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-f1db55f9-fd35-4368-bb5a-8223a6bcbf0b/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:e709b8c6-8cbb-4316-90e6-126ccb92066f",
+      "event_id": "e709b8c6-8cbb-4316-90e6-126ccb92066f",
+      "kind": "news",
+      "slug": "artificial-intelligence-paradox-field-fear-job-increased-business",
+      "path": "story/artificial-intelligence-paradox-field-fear-job-increased-business/index.html",
+      "headline": "The Artificial Intelligence paradox in the IT field: fear of job losses, or hope of increased business",
+      "original_headline": "The Artificial Intelligence paradox in the IT field: fear of job losses, or hope of increased business",
+      "deck": "Reporting from NTT Data. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "IT professionals see AI as a solution to workforce shortages, expanding their ability to work effectively.",
+      "for_ai": "AI/IA is viewed as a capability that supports human workers and expands organizational capacity.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "NTT Data",
+          "headline": "The Artificial Intelligence paradox in the IT field: fear of job losses, or hope of increased business",
+          "url": "https://www.nttdata.com/en-be/news/2023/the-artificial-intelligence-paradox-in-the-it-field-fear-of-job-losses-or-hope-of-increased-business",
+          "date": "2026-10-31",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "NTT Data",
+      "date": "2026-10-31",
+      "display_date": "31 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-e709b8c6-8cbb-4316-90e6-126ccb92066f/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:dc0daa8d-2ed7-460a-8bdd-89df1f06af7a",
+      "event_id": "dc0daa8d-2ed7-460a-8bdd-89df1f06af7a",
+      "kind": "news",
+      "slug": "ai-new-face-fear-unknown",
+      "path": "story/ai-new-face-fear-unknown/index.html",
+      "headline": "AI, the New Face of Fear of the Unknown",
+      "original_headline": "AI, the New Face of Fear of the Unknown",
+      "deck": "Experts describe AI growth as rapid and anxiety-inducing, but urge calm, education, and careful choices.",
+      "what_happened": "Le Devoir reports that generative AI’s rapid growth fuels public fears about jobs, creativity, and control. Psychologists describe anxiety from the unknown, and researchers note AI’s speed and ease of access differ from past tech shifts, creating new challenges.",
+      "why_it_matters": "Understanding AI risks and benefits hinges on reliable information and education, not panic. People may need to adapt skills as AI becomes more present in daily life.",
+      "body_paragraphs": [
+        "The article highlights fears about losing work or autonomy as AI grows. It links real threats like cybersecurity and identity theft to the wider talk, rather than hype.",
+        "Experts compare AI’s fast growth to past revolutions, but warn AI spreads faster and is easier to access, which can raise anxiety and confusion."
+      ],
+      "for_humans": "Understand AI’s pace and limits without alarm.",
+      "for_ai": "",
+      "human_direction": "loss",
+      "ai_direction": "none",
+      "human_label": "Downsides reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Le Devoir",
+          "headline": "AI, the New Face of Fear of the Unknown",
+          "url": "https://www.ledevoir.com/actualites/societe/1021130/ia-nouveau-visage-peur-inconnu",
+          "date": "2026-10-31",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Le Devoir",
+      "date": "2026-10-31",
+      "display_date": "31 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-dc0daa8d-2ed7-460a-8bdd-89df1f06af7a/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:c871cafc-aaec-4135-be78-467304176c01",
+      "event_id": "c871cafc-aaec-4135-be78-467304176c01",
+      "kind": "news",
+      "slug": "agnico-eagle-ai-aids-mining-real-time-data-driven-decisions",
+      "path": "story/agnico-eagle-ai-aids-mining-real-time-data-driven-decisions/index.html",
+      "headline": "Agnico Eagle AI Aids Mining with Real-Time Monitoring and Data-Driven Decisions",
+      "original_headline": "Mining in the Age of Artificial Intelligence – Rouyn-Noranda and Abitibi-West",
+      "deck": "Real-time tracking and AI pilots are being tested; AI is a decision-support tool, not a replacement for experts.",
+      "what_happened": "Agnico Eagle already uses real-time monitoring and is developing AI-assisted ore sorting and an automated drill in exploration. Several AI applications are being evaluated and integrated gradually.",
+      "why_it_matters": "AI acts to support human teams by improving data collection and analysis, while keeping human judgment central and ensuring careful, tested deployment.",
+      "body_paragraphs": [
+        "Agnico Eagle has real-time tracking in its operations. The company is exploring an automated drill and AI-assisted ore sorting as pilots, not as full replacements.",
+        "Experts say these tools are meant to aid workers and analysts, not to replace their professional judgment or hands-on experience."
+      ],
+      "for_humans": "AI helps people make better, informed choices without taking over.",
+      "for_ai": "AI serves as decision-support to human teams.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "journallecitoyen.com",
+          "headline": "Mining in the Age of Artificial Intelligence – Rouyn-Noranda and Abitibi-West",
+          "url": "https://journallecitoyen.com/articles/art-12966",
+          "date": "2026-10-31",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "journallecitoyen.com",
+      "date": "2026-10-31",
+      "display_date": "31 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Scope limited to Agnico Eagle operations and described pilot projects; not representative of all mining.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-c871cafc-aaec-4135-be78-467304176c01/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:8fa122ef-a5c4-4a09-819c-479a93690948",
+      "event_id": "8fa122ef-a5c4-4a09-819c-479a93690948",
+      "kind": "news",
+      "slug": "ai-appraisal-model-driven-victim-prioritization-volta-limits-gains",
+      "path": "story/ai-appraisal-model-driven-victim-prioritization-volta-limits-gains/index.html",
+      "headline": "AI Appraisal: Model-driven Victim Prioritization in VOLTA Infostealer , Limits and Gains",
+      "original_headline": "AI Appraisal: Model-driven Victim Prioritization in the VOLTA Infostealer",
+      "deck": "A security analyst-style look at how an AI layer helps sort thieves’ targets, with clear limits.",
+      "what_happened": "VOLTA harvested data from victims and produced a structured bundle ranking assets by monetization and enriched the data with stolen sessions, then sent it to an AI system to draft a target assessment.",
+      "why_it_matters": "The AI layer changes how attackers prioritize targets, but the data harvest also raises privacy and asset-risk concerns for victims.",
+      "body_paragraphs": [
+        "Security researchers describe VOLTA as a mature infostealer with an added AI layer. It collects many data types, creates a dossier, and ranks targets by value.",
+        "The AI is used to expand, organize, and present the data in a way that helps the attacker decide who to pursue next, while the process includes safeguards like model chaining to overcome refusals."
+      ],
+      "for_humans": "What happened shows why privacy matters when devices and accounts are connected.",
+      "for_ai": "",
+      "human_direction": "loss",
+      "ai_direction": "gain",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Cisco Talos Blog",
+          "headline": "AI Appraisal: Model-driven Victim Prioritization in the VOLTA Infostealer",
+          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+          "date": "2026-10-31",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Cisco Talos Blog",
+      "date": "2026-10-31",
+      "display_date": "31 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "technology",
+      "topic_label": "AI & technology",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "analysis",
+      "limitation": "The article relies on a single source and describes observed capabilities; it does not prove wider trends or real-world prevalence beyond the source.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-8fa122ef-a5c4-4a09-819c-479a93690948/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "content_fingerprint": "6122bafc3489adf8d8139c256db7af066475733cfa03ff19f48787e389f52d18",
@@ -1536,6 +2235,1010 @@
       "edition": "2026-10",
       "legacy_paths": [
         "research/paper-be49d96abd2a3f5b615d1f08/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:eee5f3ae-e20f-409e-896a-bdc5c355b9f0",
+      "event_id": "eee5f3ae-e20f-409e-896a-bdc5c355b9f0",
+      "kind": "news",
+      "slug": "pope-artificial-intelligence-any-decision-affects-news-network",
+      "path": "story/pope-artificial-intelligence-any-decision-affects-news-network/index.html",
+      "headline": "Pope on artificial intelligence: Any decision that affects human life must not be entrusted to others – Vatican News Network",
+      "original_headline": "Pope on artificial intelligence: Any decision that affects human life must not be entrusted to others – Vatican News Network",
+      "deck": "Reporting from Vatican News. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The text argues that humans must guide and not delegate life-affecting AI decisions, indicating a constraint on AI use.",
+      "for_ai": "The article frames AI as a tool to be controlled and supervised by humans, indicating AI operational restriction.",
+      "human_direction": "none",
+      "ai_direction": "loss",
+      "human_label": "No direction stated",
+      "ai_label": "Downsides reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Vatican News",
+          "headline": "Pope on Artificial Intelligence: Any decision that affects human life must not be entrusted to others – Vatican News Network",
+          "url": "https://www.vaticannews.va/zh/pope/news/2026-10/pope-ai-decisions-affecting-human-life-must-never-be-delegated.html",
+          "date": "2026-10-30",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Vatican News",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-eee5f3ae-e20f-409e-896a-bdc5c355b9f0/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:eca3c27b-0861-4171-9037-bf9662300a2e",
+      "event_id": "eca3c27b-0861-4171-9037-bf9662300a2e",
+      "kind": "news",
+      "slug": "dutch-lawmakers-seek-keep-generative-ai-school-learning",
+      "path": "story/dutch-lawmakers-seek-keep-generative-ai-school-learning/index.html",
+      "headline": "Dutch Lawmakers Seek to Keep Generative AI Out of Primary School Learning",
+      "original_headline": "Dutch Lawmakers Seek to Keep Generative AI Out of Primary School Learning",
+      "deck": "Parliament pushes to limit AI use in early education, amid concerns about critical thinking and reading skills.",
+      "what_happened": "A motion from Volt Nederland and CDA asks the government to ban primary school pupils from using generative AI. It has broad parliamentary backing and will be submitted during discussions on the education budget.",
+      "why_it_matters": "Young pupils develop critical thinking, creativity, and imagination in primary school; the use of generative AI could affect that development.",
+      "body_paragraphs": [
+        "The Dutch Tweede Kamer is weighing a ban on using generative AI tools by primary school students. The motion argues that early schooling is a key time for thinking and creativity, and that AI could threaten this development.",
+        "Education groups note that the rule would not stop schools from teaching about AI, and they stress the importance of source evaluation as technology grows in learning."
+      ],
+      "for_humans": "A cautious look at policy choices that affect how kids learn with new tools.",
+      "for_ai": "",
+      "human_direction": "loss",
+      "ai_direction": "loss",
+      "human_label": "Downsides reported",
+      "ai_label": "Downsides reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "NL Times",
+          "headline": "Dutch MPs want to ban primary school children from using generative AI",
+          "url": "https://nltimes.nl/2026/10/29/dutch-mps-want-ban-primary-school-children-using-generative-ai",
+          "date": "2026-10-29",
+          "language": "un"
+        },
+        {
+          "publisher": "Hungarian Conservative",
+          "headline": "Dutch Lawmakers Seek to Keep Generative AI Out of Primary School Learning",
+          "url": "https://www.hungarianconservative.com/articles/current/netherlands-primary-schools-generative-ai-restrictions",
+          "date": "2026-10-30",
+          "language": "en"
+        }
+      ],
+      "source_count": 2,
+      "publisher": "NL Times",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "GB"
+      ],
+      "market_label": "United Kingdom",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Focus is on a policy proposal and parliamentary debate; not a judgment on effectiveness or broader outcomes.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-eca3c27b-0861-4171-9037-bf9662300a2e/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:ec0267bf-57e9-4224-bb75-19c763d8e419",
+      "event_id": "ec0267bf-57e9-4224-bb75-19c763d8e419",
+      "kind": "news",
+      "slug": "ai-ethics-self-study-mixed-lessons-humans-journal-finds",
+      "path": "story/ai-ethics-self-study-mixed-lessons-humans-journal-finds/index.html",
+      "headline": "AI Ethics in Self-Study: Mixed Lessons for Humans and AI, CPA Journal Finds",
+      "original_headline": "Artificial Intelligence and the Ethics of Self-Study",
+      "deck": "A CPA Journal piece says AI shapes assessments and ethics, but depends on how programs design and guide use.",
+      "what_happened": "The CPA Journal essay discusses how AI tools like ChatGPT raise ethical questions in continuing professional education (CPE) self-study. It argues that current standards silence on AI can tempt misuse, and it advocates more human-centered, fair assessment designs rather than hard bans. It also describes a dual-path assessment idea and shows that students tend to choose AI when given fair options.",
+      "why_it_matters": "If ethics and learning quality hinge on how assessments are shaped, providers must design tasks that reduce AI abuse while still measuring genuine understanding. This matters for professionals and students who rely on self-study to stay competent.",
+      "body_paragraphs": [
+        "AI tools are changing how people learn and test what they know. The article says that AI can answer hard questions well, which makes fair testing harder. It also notes that current rules don’t clearly ban AI use, so guidance is needed to stay fair and honest.",
+        "Some fixes are suggested, like limiting information given in tests and offering two paths: take the test without AI or pass with AI but higher standards. The point is to keep integrity without simply stopping AI from helping learners."
+      ],
+      "for_humans": "AI can help learning when used with thoughtful rules and fair paths.",
+      "for_ai": "Use AI responsibly by following ethical design and clear guidelines.",
+      "human_direction": "mixed",
+      "ai_direction": "mixed",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "The CPA Journal",
+          "headline": "Artificial Intelligence and the Ethics of Self-Study",
+          "url": "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study",
+          "date": "2026-10-30",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "The CPA Journal",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "analysis",
+      "limitation": "This brief is based on a single CPA Journal essay and its cited passages; it does not claim a comprehensive survey or multiple sources beyond the provided material.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-ec0267bf-57e9-4224-bb75-19c763d8e419/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:e0fe87bf-1d6f-4c14-93ea-18627a3c600e",
+      "event_id": "e0fe87bf-1d6f-4c14-93ea-18627a3c600e",
+      "kind": "news",
+      "slug": "ai-correct-our-students-emilias-claims-real-limits",
+      "path": "story/ai-correct-our-students-emilias-claims-real-limits/index.html",
+      "headline": "AI to Correct Our Students? Emilia’s Claims Meet Real Limits",
+      "original_headline": "Artificial Intelligence to Correct Our Students?",
+      "deck": "A Quebec tool called Emilia pre-corrects student writing to save teachers time, but experts warn that judging reasoning and handwriting remains hard.",
+      "what_happened": "Emilia is a Quebec-based platform that pre-corrects student writing across five dimensions and uses a 32-code system; teachers review and approve changes, while students receive feedback after teacher validation. The tool claims high accuracy and time savings, and relies on generic training materials rather than student data.",
+      "why_it_matters": "The system could free teachers to focus more on instruction and student support, but it also raises questions about how well automated feedback captures reasoning, style, and potential biases.",
+      "body_paragraphs": [
+        "Emilia is a Quebec platform designed to help teachers correct student writing. It runs a pre-correction pass across five areas: writing situation, coherence, vocabulary, syntax, and spelling, and marks errors with 32 codes tied to the Quebec program. A marked copy is sent to the teacher, who can approve, reject, or tweak the suggestions, and students receive feedback after the teacher’s review.",
+        "The system relies on generic training materials with deliberate mistakes and a skills corpus aligned to the local program, not on student work for training the models. Some teachers find Emilia too strict, and experts say understanding a student’s reasoning or argument quality is harder for automation. Manuscripts remain a major technical challenge, and the tool currently focuses on keyboard input rather than handwriting."
+      ],
+      "for_humans": "Teachers gain time and keep instructional control.",
+      "for_ai": "Emilia provides automated pre-corrections to speed up workflow.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Le Soleil",
+          "headline": "Artificial Intelligence to Correct Our Students?",
+          "url": "https://www.lesoleil.com/actualites/education/2026/10/30/lintelligence-artificielle-pour-corriger-nos-eleves-BTVP3V52ANHV5EMKQ4TLKXNWJQ",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Le Soleil",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "reporting",
+      "limitation": "Focus is on keyboard input; evaluation of argumentation and handwriting remains limited; potential biases in models are noted.",
+      "has_editorial": true,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-e0fe87bf-1d6f-4c14-93ea-18627a3c600e/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:d80ad193-31f0-4e81-815d-a9f449ebd58b",
+      "event_id": "d80ad193-31f0-4e81-815d-a9f449ebd58b",
+      "kind": "news",
+      "slug": "ai-decode-human-behaviors",
+      "path": "story/ai-decode-human-behaviors/index.html",
+      "headline": "AI to decode human behaviors",
+      "original_headline": "AI to decode human behaviors",
+      "deck": "Reporting from Radio-Canada. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Transparency and consent are emphasized, suggesting human actors can benefit",
+      "for_ai": "AI automates data analysis and provides actionable insights",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Radio-Canada",
+          "headline": "AI to decode human behaviors",
+          "url": "https://ici.radio-canada.ca/nouvelle/2296820/ia-prevision-succes-test-psychometrique",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Radio-Canada",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-d80ad193-31f0-4e81-815d-a9f449ebd58b/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:d068745d-d472-4766-a180-c8d27272ff2e",
+      "event_id": "d068745d-d472-4766-a180-c8d27272ff2e",
+      "kind": "news",
+      "slug": "auburn-engineering-artificial-intelligence-aquaculture-research-statewide-investment",
+      "path": "story/auburn-engineering-artificial-intelligence-aquaculture-research-statewide-investment/index.html",
+      "headline": "Auburn Engineering artificial intelligence and aquaculture research projects part of $8.1 million statewide investment",
+      "original_headline": "Auburn Engineering artificial intelligence and aquaculture research projects part of $8.1 million statewide investment",
+      "deck": "Reporting from Auburn University. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Public safety and efficiency gains are highlighted as outcomes of AI-enabled tools, signaling a positive human capacity expansion.",
+      "for_ai": "AI tools are being extended and deployed to new public-facing tasks (safety, accessibility), implying enhanced operational reach.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Auburn University",
+          "headline": "Auburn Engineering artificial intelligence and aquaculture research projects part of $8.1 million statewide investment",
+          "url": "https://eng.auburn.edu/news/2026/10/auburn-university-ai-and-aquaculture-research-projects-part-of-multi-milltion-dollar-statewide-investment",
+          "date": "2026-10-30",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Auburn University",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-d068745d-d472-4766-a180-c8d27272ff2e/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:c8f3ade5-8ad8-4aa3-b867-1c229ce72a38",
+      "event_id": "c8f3ade5-8ad8-4aa3-b867-1c229ce72a38",
+      "kind": "news",
+      "slug": "purdue-researchers-explore-how-students-engage-stem-classrooms",
+      "path": "story/purdue-researchers-explore-how-students-engage-stem-classrooms/index.html",
+      "headline": "Purdue researchers explore how students engage with artificial intelligence in STEM classrooms",
+      "original_headline": "Purdue researchers explore how students engage with artificial intelligence in STEM classrooms",
+      "deck": "Reporting from Purdue Polytechnic. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "students engage with AI as a learning partner and are encouraged to critique and verify AI outputs",
+      "for_ai": "AI provides answers and insights that can aid student reasoning but may bypass deeper iteration unless tasks are designed to require evaluation",
+      "human_direction": "mixed",
+      "ai_direction": "mixed",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Purdue Polytechnic",
+          "headline": "Purdue researchers explore how students engage with artificial intelligence in STEM classrooms",
+          "url": "https://polytechnic.purdue.edu/newsroom/purdue-researchers-explore-how-students-engage-artificial-intelligence-stem-classrooms",
+          "date": "2026-10-30",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Purdue Polytechnic",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-c8f3ade5-8ad8-4aa3-b867-1c229ce72a38/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:c61edb69-6551-44fb-9ca0-94270c874772",
+      "event_id": "c61edb69-6551-44fb-9ca0-94270c874772",
+      "kind": "news",
+      "slug": "development-c61edb69-6551-44fb-9ca0-94270c874772",
+      "path": "story/development-c61edb69-6551-44fb-9ca0-94270c874772/index.html",
+      "headline": "Will AI losing control lead to human extinction? Governance cannot be determined solely through code.",
+      "original_headline": "Will AI losing control lead to human extinction? Governance cannot be determined solely through code.",
+      "deck": "Reporting from 上观新闻. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "no clear human-side outcome described in the excerpt",
+      "for_ai": "no clear AI-side enabling or constraining signal described in the excerpt",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "上观新闻",
+          "headline": "Will AI loss of control lead to human extinction? Governance cannot be determined solely through code.",
+          "url": "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1204479&sid=11",
+          "date": "2026-10-30",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "上观新闻",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01"
+    },
+    {
+      "key": "event:ae12f344-2c33-4d0a-b7ce-2d14af24fd23",
+      "event_id": "ae12f344-2c33-4d0a-b7ce-2d14af24fd23",
+      "kind": "news",
+      "slug": "rewriting-copyright-law-generative-ai-would-hurt-everyone",
+      "path": "story/rewriting-copyright-law-generative-ai-would-hurt-everyone/index.html",
+      "headline": "Rewriting Copyright Law for Generative AI Would Hurt Everyone",
+      "original_headline": "Rewriting Copyright Law for Generative AI Would Hurt Everyone",
+      "deck": "Reporting from Electronic Frontier Foundation. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The article argues that preserving broad fair-use rights enables public research and journalism to leverage AI tools more effectively.",
+      "for_ai": "The piece discusses AI models training and usage in ways that could expand capabilities if fair-use rights are protected.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Electronic Frontier Foundation",
+          "headline": "Rewriting Copyright Law for Generative AI Would Hurt Everyone",
+          "url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone",
+          "date": "2026-10-31",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Electronic Frontier Foundation",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CA",
+        "GB",
+        "US"
+      ],
+      "market_label": "Canada · United Kingdom · United States",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-ae12f344-2c33-4d0a-b7ce-2d14af24fd23/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:a25700d8-1aa9-4c2c-9ed0-7245c1ae9430",
+      "event_id": "a25700d8-1aa9-4c2c-9ed0-7245c1ae9430",
+      "kind": "news",
+      "slug": "one-three-quebecers-now-uses-artificial-personal-finances",
+      "path": "story/one-three-quebecers-now-uses-artificial-personal-finances/index.html",
+      "headline": "One in three Quebecers now uses artificial intelligence to manage their personal finances",
+      "original_headline": "One in three Quebecers now uses artificial intelligence to manage their personal finances",
+      "deck": "Reporting from Mon Carnet – de l'actualité numérique. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "People are adopting AI to enhance financial understanding and decision-making.",
+      "for_ai": "AI is providing information and guidance that users rely on for personal finances.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Mon Carnet – de l'actualité numérique",
+          "headline": "One in three Quebecers now uses artificial intelligence to manage their personal finances",
+          "url": "https://moncarnet.com/2026/10/30/un-quebecois-sur-trois-utilise-desormais-lintelligence-artificielle-pour-gerer-ses-finances-personnelles",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Mon Carnet – de l'actualité numérique",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-a25700d8-1aa9-4c2c-9ed0-7245c1ae9430/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:8ccd7810-b4c4-4a30-8452-0aa761cbf05d",
+      "event_id": "8ccd7810-b4c4-4a30-8452-0aa761cbf05d",
+      "kind": "news",
+      "slug": "top-scientists-discuss-shanghai-ai-deeply-using-ai",
+      "path": "story/top-scientists-discuss-shanghai-ai-deeply-using-ai/index.html",
+      "headline": "Top scientists discuss in Shanghai: AI deeply empowers scientific research, but we must also be careful of the “perils of using AI”",
+      "original_headline": "Top scientists discuss in Shanghai: AI deeply empowers scientific research, but we must also be careful of the “perils of using AI”",
+      "deck": "Reporting from 上观新闻. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "the article describes AI enhancing researchers' capabilities, enabling more effective scientific work",
+      "for_ai": "the article frames AI as a tool that expands the capabilities of researchers and the research process",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "上观新闻",
+          "headline": "Top scientists discuss in Shanghai: AI is deeply empowering scientific research, but we must also be cautious about the “dangers of using AI”",
+          "url": "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1204339&sid=11",
+          "date": "2026-10-30",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "上观新闻",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "creativity",
+      "topic_label": "Culture & creativity",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-8ccd7810-b4c4-4a30-8452-0aa761cbf05d/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:8bfde1de-e12b-425e-bc3e-3feb295df5f8",
+      "event_id": "8bfde1de-e12b-425e-bc3e-3feb295df5f8",
+      "kind": "news",
+      "slug": "people-s-sharp-review-vigilant-against-wrong-theory",
+      "path": "story/people-s-sharp-review-vigilant-against-wrong-theory/index.html",
+      "headline": "People's Sharp Review: Be vigilant against the “China AI goes wrong theory”",
+      "original_headline": "People's Sharp Review: Be vigilant against the “China AI goes wrong theory”",
+      "deck": "Reporting from 东方财富. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "People gain capacity and opportunities through AI-enabled applications across industry and governance.",
+      "for_ai": "AI enables widespread deployment and productivity gains within national strategies.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "东方财富",
+          "headline": "People's Sharp Review: Be vigilant against the “China AI goes wrong theory”",
+          "url": "https://finance.eastmoney.com/a/202610303915128590.html",
+          "date": "2026-10-30",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "东方财富",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-8bfde1de-e12b-425e-bc3e-3feb295df5f8/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:87ea2dec-32c3-4c41-9cd0-3d58261ab7b7",
+      "event_id": "87ea2dec-32c3-4c41-9cd0-3d58261ab7b7",
+      "kind": "news",
+      "slug": "why-artificial-intelligence-can-t-replace-financial-planner",
+      "path": "story/why-artificial-intelligence-can-t-replace-financial-planner/index.html",
+      "headline": "Why Artificial Intelligence Can't Replace Your Financial Planner",
+      "original_headline": "Why Artificial Intelligence Can't Replace Your Financial Planner",
+      "deck": "Reporting from The South Dakota Standard. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "People use AI to augment their research and decision-making capacity in financial planning.",
+      "for_ai": "Not explicitly described as gaining new capabilities in this piece; AI mostly described as a tool.",
+      "human_direction": "gain",
+      "ai_direction": "none",
+      "human_label": "Benefits reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "The South Dakota Standard",
+          "headline": "Why Artificial Intelligence Can't Replace Your Financial Planner",
+          "url": "https://www.sdstandardnow.com/home/why-artificial-intelligence-cant-replace-your-financial-planner",
+          "date": "2026-10-30",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "The South Dakota Standard",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-87ea2dec-32c3-4c41-9cd0-3d58261ab7b7/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:80accf30-06fe-4e06-87df-7a3d501ede25",
+      "event_id": "80accf30-06fe-4e06-87df-7a3d501ede25",
+      "kind": "news",
+      "slug": "does-artificial-intelligence-threaten-women-s-jobs",
+      "path": "story/does-artificial-intelligence-threaten-women-s-jobs/index.html",
+      "headline": "Does Artificial Intelligence Threaten Women's Jobs?",
+      "original_headline": "Does Artificial Intelligence Threaten Women's Jobs?",
+      "deck": "Reporting from BBC. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The piece describes both opportunities and risks for women tied to AI adoption.",
+      "for_ai": "The article frames AI as expanding capabilities and opportunities but also displacing routine labor, indicating dual effects on AI deployment.",
+      "human_direction": "mixed",
+      "ai_direction": "mixed",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "BBC",
+          "headline": "Does Artificial Intelligence Threaten Women's Jobs?",
+          "url": "https://www.bbc.com/afrique/articles/c6gm0lvpglpxo",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "BBC",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-80accf30-06fe-4e06-87df-7a3d501ede25/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:7e3cacae-5c59-49c4-b1fd-8540b4f3e020",
+      "event_id": "7e3cacae-5c59-49c4-b1fd-8540b4f3e020",
+      "kind": "news",
+      "slug": "asian-growth-driven-artificial-intelligence",
+      "path": "story/asian-growth-driven-artificial-intelligence/index.html",
+      "headline": "Asian growth driven by artificial intelligence",
+      "original_headline": "Asian growth driven by artificial intelligence",
+      "deck": "Reporting from Asialyst. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "People benefit from higher growth and new tech-enabled opportunities across Asia-Pacific.",
+      "for_ai": "AI enables higher productivity through exports, investment, and data-center expansion.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Asialyst",
+          "headline": "Asian growth driven by artificial intelligence",
+          "url": "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Asialyst",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-7e3cacae-5c59-49c4-b1fd-8540b4f3e020/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:7d7d6da7-2c39-4885-a45e-60a178bcd95a",
+      "event_id": "7d7d6da7-2c39-4885-a45e-60a178bcd95a",
+      "kind": "news",
+      "slug": "artificial-intelligence-horror-story",
+      "path": "story/artificial-intelligence-horror-story/index.html",
+      "headline": "Artificial Intelligence is a Horror Story",
+      "original_headline": "Artificial Intelligence is a Horror Story",
+      "deck": "Reporting from Literary Hub. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "AI is portrayed as harming human autonomy and dignity, warning against its pervasive influence.",
+      "for_ai": "Not explicitly described as constrained or improved; the piece centers on human harm, with no clear AI-side expansion.",
+      "human_direction": "loss",
+      "ai_direction": "none",
+      "human_label": "Downsides reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Literary Hub",
+          "headline": "Artificial Intelligence is a Horror Story",
+          "url": "https://lithub.com/artificial-intelligence-is-a-horror-story",
+          "date": "2026-10-30",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Literary Hub",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "CA",
+        "GB",
+        "US"
+      ],
+      "market_label": "Canada · United Kingdom · United States",
+      "topic": "creativity",
+      "topic_label": "Culture & creativity",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-7d7d6da7-2c39-4885-a45e-60a178bcd95a/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:5fdf807e-7a33-4be4-9209-c5e7663adde8",
+      "event_id": "5fdf807e-7a33-4be4-9209-c5e7663adde8",
+      "kind": "news",
+      "slug": "information-meeting-artificial-intelligence-what-we-talking-about",
+      "path": "story/information-meeting-artificial-intelligence-what-we-talking-about/index.html",
+      "headline": "Information meeting \"Artificial Intelligence: What are we talking about?",
+      "original_headline": "Information meeting \"Artificial Intelligence: What are we talking about?",
+      "deck": "Reporting from Villefranche-de-Rouergue. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "the article notes concerns about AI potentially displacing humans but does not establish concrete human outcomes",
+      "for_ai": "not applicable",
+      "human_direction": "loss",
+      "ai_direction": "none",
+      "human_label": "Downsides reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Villefranche-de-Rouergue",
+          "headline": "Information meeting \"Artificial Intelligence: What are we talking about?",
+          "url": "https://villefranche-de-rouergue.fr/agenda/reunion-dinformation-intelligence-artificielle-de-quoi-parle-t-on",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Villefranche-de-Rouergue",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-5fdf807e-7a33-4be4-9209-c5e7663adde8/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:1822aa22-554b-49e9-a322-04c06a1bfb3c",
+      "event_id": "1822aa22-554b-49e9-a322-04c06a1bfb3c",
+      "kind": "news",
+      "slug": "confronting-what-lurks-shadows-ai-regulation-governance",
+      "path": "story/confronting-what-lurks-shadows-ai-regulation-governance/index.html",
+      "headline": "Confronting What Lurks in the Shadows: AI Regulation and Governance",
+      "original_headline": "Confronting What Lurks in the Shadows: AI Regulation and Governance",
+      "deck": "Reporting from Infosecurity Magazine. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Governance and policy need to evolve as AI usage expands in workplaces and regulatory scrutiny increases.",
+      "for_ai": "AI deployment is expanding through shadow use and incidents, prompting governance and regulation.",
+      "human_direction": "loss",
+      "ai_direction": "mixed",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Infosecurity Magazine",
+          "headline": "Confronting What Lurks in the Shadows: AI Regulation and Governance",
+          "url": "https://www.infosecurity-magazine.com/opinions/shadows-ai-regulation-governance",
+          "date": "2026-10-30",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Infosecurity Magazine",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "GB"
+      ],
+      "market_label": "United Kingdom",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-1822aa22-554b-49e9-a322-04c06a1bfb3c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:073c942b-dcbb-4b64-a4d7-4c76e0a705c0",
+      "event_id": "073c942b-dcbb-4b64-a4d7-4c76e0a705c0",
+      "kind": "news",
+      "slug": "generative-ai-what-real-environmental-impact-how-regulate",
+      "path": "story/generative-ai-what-real-environmental-impact-how-regulate/index.html",
+      "headline": "Generative AI: What is the real environmental impact and how to regulate it?",
+      "original_headline": "Generative AI: What is the real environmental impact and how to regulate it?",
+      "deck": "Reporting from Fédération Française de la Randonnée Pédestre. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Consumers and regulators seek to curb AI energy use and emissions.",
+      "for_ai": "Regulatory and design changes aim to lower AI energy intensity and resource use.",
+      "human_direction": "gain",
+      "ai_direction": "loss",
+      "human_label": "Benefits reported",
+      "ai_label": "Downsides reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Fédération Française de la Randonnée Pédestre",
+          "headline": "Generative AI: What is the real environmental impact and how to regulate it?",
+          "url": "https://www.ffrandonnee.fr/s-informer/actualites/ia-generative-quel-impact-environnemental-reel-et-comment-l-encadrer",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Fédération Française de la Randonnée Pédestre",
+      "date": "2026-10-30",
+      "display_date": "30 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-073c942b-dcbb-4b64-a4d7-4c76e0a705c0/index.html"
       ],
       "url_slug_version": 1
     },
@@ -2434,6 +4137,601 @@
       "url_slug_version": 1
     },
     {
+      "key": "event:fcdb6abc-5fba-422e-9520-87887fccfed9",
+      "event_id": "fcdb6abc-5fba-422e-9520-87887fccfed9",
+      "kind": "news",
+      "slug": "ai-misuse-artificial-intelligence-may-result-judicial-practice",
+      "path": "story/ai-misuse-artificial-intelligence-may-result-judicial-practice/index.html",
+      "headline": "AI: Misuse of Artificial Intelligence May Result in Fines for Abuse of Recourse (New State of Judicial Practice)",
+      "original_headline": "AI: Misuse of Artificial Intelligence May Result in Fines for Abuse of Recourse (New State of Judicial Practice)",
+      "deck": "Reporting from Gossement AVOCATS. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "no explicit human reasoning trace beyond regulatory outcomes",
+      "for_ai": "no internal AI reasoning trace; focus is on legal outcomes of AI usage",
+      "human_direction": "loss",
+      "ai_direction": "gain",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Gossement AVOCATS",
+          "headline": "AI: Misuse of Artificial Intelligence May Result in Fines for Abuse of Recourse (New State of Judicial Practice)",
+          "url": "https://www.gossement-avocats.com/blog/ia-lusage-abusif-de-lintelligence-artificielle-peut-mener-a-une-amende-pour-recours-abusif-tribunal-administratif-de-rennes-19-aout-2026-n2508168",
+          "date": "2026-10-29",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Gossement AVOCATS",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-fcdb6abc-5fba-422e-9520-87887fccfed9/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:eb1b892f-21b3-4c35-9dcb-68d717537fb5",
+      "event_id": "eb1b892f-21b3-4c35-9dcb-68d717537fb5",
+      "kind": "news",
+      "slug": "amazon-speeds-up-cloud-computing-but-ai-rising",
+      "path": "story/amazon-speeds-up-cloud-computing-but-ai-rising/index.html",
+      "headline": "Amazon speeds up cloud computing, but the cost of AI is rising.",
+      "original_headline": "Amazon speeds up cloud computing, but the cost of AI is rising.",
+      "deck": "Reporting from Le Devoir. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "not specified",
+      "for_ai": "not specified",
+      "human_direction": "loss",
+      "ai_direction": "gain",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Le Devoir",
+          "headline": "Amazon speeds up cloud computing, but the cost of AI is rising.",
+          "url": "https://www.ledevoir.com/economie/techno/1020941/amazon-accelere-informatique-distance-mais-facture-ia-alourdit",
+          "date": "2026-10-29",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Le Devoir",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-eb1b892f-21b3-4c35-9dcb-68d717537fb5/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:99139724-e99a-469f-9f3d-dddcc3477e54",
+      "event_id": "99139724-e99a-469f-9f3d-dddcc3477e54",
+      "kind": "news",
+      "slug": "ottawa-will-invest-1-6-billion-company-cohere",
+      "path": "story/ottawa-will-invest-1-6-billion-company-cohere/index.html",
+      "headline": "Ottawa will invest $1.6 billion in AI company Cohere",
+      "original_headline": "Ottawa will invest $1.6 billion in AI company Cohere",
+      "deck": "Reporting from Le Devoir. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Canada aims to strengthen sovereign AI capability and economic opportunity for its workforce.",
+      "for_ai": "Investment accelerates model development, compute capacity, and deployment readiness of Cohere in Canada.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Le Devoir",
+          "headline": "Ottawa will invest $1.6 billion in AI company Cohere",
+          "url": "https://www.ledevoir.com/economie/techno/1020686/ottawa-investit-1-6-milliard-entreprise-ia-cohere",
+          "date": "2026-10-29",
+          "language": "fr"
+        },
+        {
+          "publisher": "Radio-Canada",
+          "headline": "Ottawa invests up to $1.6 billion in the Canadian AI company Cohere",
+          "url": "https://ici.radio-canada.ca/nouvelle/2296872/cohere-investissement-ottawa-intelligence-artificielle",
+          "date": "2026-10-29",
+          "language": "fr"
+        }
+      ],
+      "source_count": 2,
+      "publisher": "Le Devoir",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-99139724-e99a-469f-9f3d-dddcc3477e54/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:75722252-2bee-4162-89a3-126672ed9f64",
+      "event_id": "75722252-2bee-4162-89a3-126672ed9f64",
+      "kind": "news",
+      "slug": "cjc-safe-use-artificial-intelligence-prepare-court-documents",
+      "path": "story/cjc-safe-use-artificial-intelligence-prepare-court-documents/index.html",
+      "headline": "CJC reports on 'safe' use of artificial intelligence to prepare court documents",
+      "original_headline": "CJC reports on 'safe' use of artificial intelligence to prepare court documents",
+      "deck": "Reporting from The Law Society Gazette. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Policy-driven use of AI aims to extend professional capabilities without compromising accuracy.",
+      "for_ai": "AI is deployed to assist in document preparation under safeguards to ensure reliability.",
+      "human_direction": "gain",
+      "ai_direction": "none",
+      "human_label": "Benefits reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "The Law Society Gazette",
+          "headline": "CJC reports on 'safe' use of artificial intelligence to prepare court documents",
+          "url": "https://www.lawgazette.co.uk/news/cjc-reports-on-safe-use-of-artificial-intelligence-to-prepare-court-documents/5128388.article",
+          "date": "2026-10-29",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "The Law Society Gazette",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "GB"
+      ],
+      "market_label": "United Kingdom",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-75722252-2bee-4162-89a3-126672ed9f64/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:5e16799b-e2a8-4b50-83cc-1f0c9e7b4942",
+      "event_id": "5e16799b-e2a8-4b50-83cc-1f0c9e7b4942",
+      "kind": "news",
+      "slug": "openai-ceo-sam-altman-claims-ai-awesome-world",
+      "path": "story/openai-ceo-sam-altman-claims-ai-awesome-world/index.html",
+      "headline": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
+      "original_headline": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
+      "deck": "Reporting from ABC7 Bay Area. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "people may benefit from AI-driven progress and capabilities",
+      "for_ai": "AI capabilities are advancing, enabling broader reach and autonomy",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "ABC7 Bay Area",
+          "headline": "OpenAI CEO Sam Altman claims AI singularity has arrived: 'Awesome for the world'",
+          "url": "https://abc7news.com/post/openai-ceo-sam-altman-claims-artificial-intelligence-singularity-has-arrived/19588207?userab=kfsn_content_recs-582%2Avariant_a_control_kfsn-2512%2Ckabc_content_recs-577%2Avariant_c_trending-2482%2Cwls_content_recs-584%2Avariant_a_control_wls-2516%2Cwtvd_content_recs-585%2Avariant_a_control_wtvd-2518%2Cktrk_content_recs-587%2Avariant_a_control_ktrk-2522%2Cwpvi_content_recs-586%2Avariant_b_trending_wpvi-2521%2Cabcn_article_nfy_v2-691%2Acontrol-3727%2Cotv_web_content_rec-539%2Avariant_c_trending-2268%2Cotv_web_topic-580%2Avariant_b_topic_redesign-2509%2Cfollow_abcnews_otv_on_google-654%2Avariant_b_share_drop_down-3495%2Cotv_search_page_design_unification-546%2Avariant_b_search_redesign-2300%2Cotv_web_live-581%2Avariant_b_live_redesign-2511%2Cfollow_otv_on_google-683%2Avariant_b_share_drop_down-3661%2Cabcn_popular_reads_exp_followup-648%2Avariant_c_autotagswpopularity-3458%2Cotv_mobile_web_content_recs-639%2Avariant_a_control-3429%2Ckgo_content_recs-583%2Avariant_b_trending_kgo-2515%2Cabcn_verts_midterms-671%2Avariant_a_control-3586%2Cotvlink_abcnnav-576%2Avariant_b_local-2479",
+          "date": "2026-10-29",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "ABC7 Bay Area",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-5e16799b-e2a8-4b50-83cc-1f0c9e7b4942/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:4cd58638-a43e-4568-8d81-a14e18e7a1cc",
+      "event_id": "4cd58638-a43e-4568-8d81-a14e18e7a1cc",
+      "kind": "news",
+      "slug": "does-artificial-intelligence-make-artists-more-creative",
+      "path": "story/does-artificial-intelligence-make-artists-more-creative/index.html",
+      "headline": "Does Artificial Intelligence Make Artists More Creative?",
+      "original_headline": "Does Artificial Intelligence Make Artists More Creative?",
+      "deck": "Reporting from The Conversation. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Artists gain new creative avenues and reorganize their workflow to leverage AI, reflecting a positive, expanding relationship.",
+      "for_ai": "AI facilitates greater reach and creative exploration, with human collaboration shaping output.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "The Conversation",
+          "headline": "Does Artificial Intelligence Make Artists More Creative?",
+          "url": "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465",
+          "date": "2026-10-29",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "The Conversation",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "CA",
+        "FR"
+      ],
+      "market_label": "Canada · France",
+      "topic": "creativity",
+      "topic_label": "Culture & creativity",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-4cd58638-a43e-4568-8d81-a14e18e7a1cc/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:42652864-f9b9-420a-bde8-e018d404882f",
+      "event_id": "42652864-f9b9-420a-bde8-e018d404882f",
+      "kind": "news",
+      "slug": "nih-awards-morgan-state-520-000-intelligence-research",
+      "path": "story/nih-awards-morgan-state-520-000-intelligence-research/index.html",
+      "headline": "NIH Awards Morgan State $520,000 Grant to Advance Biomedical Artificial Intelligence Research",
+      "original_headline": "NIH Awards Morgan State $520,000 Grant to Advance Biomedical Artificial Intelligence Research",
+      "deck": "Reporting from Morgan State University. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The funding enables new human-AI research capacity and student opportunities.",
+      "for_ai": "Funding supports development and deployment of AIM-based research at Morgan State, expanding AI capability in biomedical data processing.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Morgan State University",
+          "headline": "NIH Awards Morgan State $520,000 Grant to Advance Biomedical Artificial Intelligence Research",
+          "url": "https://www.morgan.edu/news/nih-awards-morgan-grant-to-advance-biomedical-ai-research",
+          "date": "2026-10-29",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Morgan State University",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-42652864-f9b9-420a-bde8-e018d404882f/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:41d91767-f7b9-41e1-95c0-5a62e24c3b5c",
+      "event_id": "41d91767-f7b9-41e1-95c0-5a62e24c3b5c",
+      "kind": "news",
+      "slug": "artificial-intelligence-s-bit-like-atomic-international-agreements",
+      "path": "story/artificial-intelligence-s-bit-like-atomic-international-agreements/index.html",
+      "headline": "Artificial Intelligence, It's a Bit Like the Atomic Bomb\": Pascal Lamy's Call for \"International Agreements",
+      "original_headline": "Artificial Intelligence, It's a Bit Like the Atomic Bomb\": Pascal Lamy's Call for \"International Agreements",
+      "deck": "Reporting from LCP-Assemblée nationale. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Governance proposals enable safer AI use by coordinating incident sharing and bottom-up collaboration.",
+      "for_ai": "Calls for international agreements to contain AI risks imply restricting AI deployment without consensus.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "LCP-Assemblée nationale",
+          "headline": "Artificial Intelligence, It's a Bit Like the Atomic Bomb\": Pascal Lamy's Call for \"International Agreements",
+          "url": "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy",
+          "date": "2026-10-29",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "LCP-Assemblée nationale",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-41d91767-f7b9-41e1-95c0-5a62e24c3b5c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:397ff61f-c87f-4673-829a-35f178298366",
+      "event_id": "397ff61f-c87f-4673-829a-35f178298366",
+      "kind": "news",
+      "slug": "artificial-intelligence-security-sector-governance-risk-reform-opportunity",
+      "path": "story/artificial-intelligence-security-sector-governance-risk-reform-opportunity/index.html",
+      "headline": "Artificial Intelligence and the Security Sector: Governance Risk or Reform Opportunity?",
+      "original_headline": "Artificial Intelligence and the Security Sector: Governance Risk or Reform Opportunity?",
+      "deck": "Reporting from Arab Reform Initiative. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "AI can extend human judgment in SSR when bounds are clear and oversight is present.",
+      "for_ai": "AI outputs can mislead if not bounded by oversight and expert validation; otherwise, AI aids reform processes.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Arab Reform Initiative",
+          "headline": "Artificial Intelligence and the Security Sector: Governance Risk or Reform Opportunity?",
+          "url": "https://www.arab-reform.net/publication/artificial-intelligence-and-the-security-sector-governance-risk-or-reform-opportunity",
+          "date": "2026-10-29",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Arab Reform Initiative",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-397ff61f-c87f-4673-829a-35f178298366/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:254e6644-7404-4bb6-922a-548e875708b5",
+      "event_id": "254e6644-7404-4bb6-922a-548e875708b5",
+      "kind": "news",
+      "slug": "generative-ai-news-report-2026-standalone-information-infrastructure",
+      "path": "story/generative-ai-news-report-2026-standalone-information-infrastructure/index.html",
+      "headline": "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure",
+      "original_headline": "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure",
+      "deck": "Reporting from reutersinstitute.politics.ox.ac.uk. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The evidence shows growing adoption and empowerment of people through AI-enabled information tools. People gain new capabilities in information access and processing through AI-driven outputs. People are adopting generative AI in journalism, expanding their toolset and capacity. Public attitudes toward AI in news are shifting with increased usage driving optimism among users and skepticism among non-users.",
+      "for_ai": "AI tools are expanding in availability and usage across multiple platforms and countries. AI expands its role as an information intermediary and output provider. AI systems are described as producing outputs and extending their reach in news workflows. AI features as information intermediaries are expanding in use and visibility across the news ecosystem.",
+      "human_direction": "mixed",
+      "ai_direction": "mixed",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "reutersinstitute.politics.ox.ac.uk",
+          "headline": "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure",
+          "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure",
+          "date": "2026-10-29",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "reutersinstitute.politics.ox.ac.uk",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "GB"
+      ],
+      "market_label": "United Kingdom",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-254e6644-7404-4bb6-922a-548e875708b5/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:0633cab1-acfe-46fc-b52c-41ad85400c26",
+      "event_id": "0633cab1-acfe-46fc-b52c-41ad85400c26",
+      "kind": "news",
+      "slug": "mistral-has-launched-ai-model-giving-over-cybersecurity",
+      "path": "story/mistral-has-launched-ai-model-giving-over-cybersecurity/index.html",
+      "headline": "Mistral has launched its AI model, giving companies greater control over their cybersecurity.",
+      "original_headline": "Mistral has launched its AI model, giving companies greater control over their cybersecurity.",
+      "deck": "Reporting from Euronews.com. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Organizations seek greater sovereignty and control over security tooling through self-hosting and open weights.",
+      "for_ai": "Open weights enable self-hosted, controllable AI that can be integrated into existing security workflows.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Euronews.com",
+          "headline": "Mistral has launched its AI model, giving companies greater control over their cybersecurity.",
+          "url": "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse",
+          "date": "2026-10-29",
+          "language": "fr"
+        },
+        {
+          "publisher": "Euronews.com",
+          "headline": "Mistral releases latest AI model for download, giving companies more control over their cybersecurity",
+          "url": "https://www.euronews.com/2026/10/29/mistral-releases-latest-ai-model-for-download-giving-companies-more-control-over-their-cyb",
+          "date": "2026-10-29",
+          "language": "en"
+        },
+        {
+          "publisher": "CSO Online",
+          "headline": "Mistral open-sources AI model despite warning it could aid cyberattacks",
+          "url": "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html",
+          "date": "2026-10-30",
+          "language": "en"
+        }
+      ],
+      "source_count": 3,
+      "publisher": "Euronews.com",
+      "date": "2026-10-29",
+      "display_date": "29 Oct 2026",
+      "markets": [
+        "FR",
+        "GB"
+      ],
+      "market_label": "France · United Kingdom",
+      "topic": "technology",
+      "topic_label": "AI & technology",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-0633cab1-acfe-46fc-b52c-41ad85400c26/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Timaeus",
       "content_fingerprint": "55df922bd81ddc9805ea32aa05f08979d718a340a5315a598a89ab986711705c",
       "creator": "Plato",
@@ -2925,6 +5223,215 @@
       "edition": "2026-10",
       "legacy_paths": [
         "research/paper-7cba509615081b2bc0d1faf2/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:fa4be99b-5a95-45ef-8779-6339a3132628",
+      "event_id": "fa4be99b-5a95-45ef-8779-6339a3132628",
+      "kind": "news",
+      "slug": "artificial-intelligence-not-threat-public-service-values",
+      "path": "story/artificial-intelligence-not-threat-public-service-values/index.html",
+      "headline": "Artificial Intelligence Is Not a Threat to Public Service Values",
+      "original_headline": "Artificial Intelligence Is Not a Threat to Public Service Values",
+      "deck": "Reporting from Acteurs Publics. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "AI-supported mutability aims to improve service while preserving human roles",
+      "for_ai": "AI-enabled service optimization and human-centric governance are discussed as aligned goals",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Acteurs Publics",
+          "headline": "Artificial Intelligence Is Not a Threat to Public Service Values",
+          "url": "https://acteurspublics.fr/articles/lintelligence-artificielle-un-imperatif-de-mutabilite-pour-le-service-public",
+          "date": "2026-10-28",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Acteurs Publics",
+      "date": "2026-10-28",
+      "display_date": "28 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-fa4be99b-5a95-45ef-8779-6339a3132628/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:819dd06c-335d-4a92-aaa6-d98284b77b17",
+      "event_id": "819dd06c-335d-4a92-aaa6-d98284b77b17",
+      "kind": "news",
+      "slug": "s-very-effective-impersonation-scams-aided-police-detective",
+      "path": "story/s-very-effective-impersonation-scams-aided-police-detective/index.html",
+      "headline": "'It's very effective': Impersonation scams aided by artificial intelligence on the rise, police detective says",
+      "original_headline": "'It's very effective': Impersonation scams aided by artificial intelligence on the rise, police detective says",
+      "deck": "Reporting from CityNews Toronto. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "people face financial harm from AI-assisted scams",
+      "for_ai": "AI enables more convincing impersonation, increasing scam effectiveness",
+      "human_direction": "loss",
+      "ai_direction": "gain",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "CityNews Toronto",
+          "headline": "'It's very effective': Impersonation scams aided by artificial intelligence on the rise, police detective says",
+          "url": "https://toronto.citynews.ca/2026/10/28/its-very-effective-impersonation-scams-aided-by-artificial-intelligence-on-the-rise-tps-detective-says",
+          "date": "2026-10-28",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "CityNews Toronto",
+      "date": "2026-10-28",
+      "display_date": "28 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-819dd06c-335d-4a92-aaa6-d98284b77b17/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:4d89c39d-c300-44c4-8611-be5d1415a03a",
+      "event_id": "4d89c39d-c300-44c4-8611-be5d1415a03a",
+      "kind": "news",
+      "slug": "could-next-gen-artificial-intelligence-help-map-space-outposts",
+      "path": "story/could-next-gen-artificial-intelligence-help-map-space-outposts/index.html",
+      "headline": "Could next-gen artificial intelligence help map out future space outposts?",
+      "original_headline": "Could next-gen artificial intelligence help map out future space outposts?",
+      "deck": "Reporting from Phys.org. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "AI serves as an active decision-support partner that augments human analysis without replacing human judgment.",
+      "for_ai": "AI provides structured analysis and explanations to support human planning.",
+      "human_direction": "gain",
+      "ai_direction": "none",
+      "human_label": "Benefits reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Phys.org",
+          "headline": "Could next-gen artificial intelligence help map out future space outposts?",
+          "url": "https://phys.org/news/2026-10-gen-artificial-intelligence-future-space.html",
+          "date": "2026-10-28",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Phys.org",
+      "date": "2026-10-28",
+      "display_date": "28 Oct 2026",
+      "markets": [
+        "CA",
+        "US"
+      ],
+      "market_label": "Canada · United States",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-4d89c39d-c300-44c4-8611-be5d1415a03a/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:07795759-acdb-4977-88f5-af091ca32280",
+      "event_id": "07795759-acdb-4977-88f5-af091ca32280",
+      "kind": "news",
+      "slug": "artificial-intelligence-transforms-workforce-regulations",
+      "path": "story/artificial-intelligence-transforms-workforce-regulations/index.html",
+      "headline": "Artificial intelligence transforms the workforce, regulations",
+      "original_headline": "Artificial intelligence transforms the workforce, regulations",
+      "deck": "Reporting from FOX5 Vegas. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "People are urged to learn AI and adapt to a changing job landscape, implying a positive adjustment of human capabilities.",
+      "for_ai": "AI is deployed and discussed as a productive tool requiring oversight, governance, and broader adoption across industries.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "FOX5 Vegas",
+          "headline": "Artificial intelligence transforms the workforce, regulations",
+          "url": "https://www.fox5vegas.com/2026/10/28/artificial-intelligence-transforms-workforce-regulations",
+          "date": "2026-10-29",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "FOX5 Vegas",
+      "date": "2026-10-28",
+      "display_date": "28 Oct 2026",
+      "markets": [
+        "US"
+      ],
+      "market_label": "United States",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-07795759-acdb-4977-88f5-af091ca32280/index.html"
       ],
       "url_slug_version": 1
     },
@@ -3798,6 +6305,214 @@
       "url_slug_version": 1
     },
     {
+      "key": "event:fab0bac4-4447-4538-a576-c1e61a39fc7f",
+      "event_id": "fab0bac4-4447-4538-a576-c1e61a39fc7f",
+      "kind": "news",
+      "slug": "why-should-central-bank-interested-artificial-french-bank",
+      "path": "story/why-should-central-bank-interested-artificial-french-bank/index.html",
+      "headline": "Why Should a Central Bank Be Interested in Artificial Intelligence? The Example of the French Bank",
+      "original_headline": "Why Should a Central Bank Be Interested in Artificial Intelligence? The Example of the French Bank",
+      "deck": "Reporting from Banque de France. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Banks and supervisors use AI to extend and augment existing capabilities.",
+      "for_ai": "AI provides outputs and automation that expand institutional capacity.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Banque de France",
+          "headline": "Why Should a Central Bank Be Interested in Artificial Intelligence? The Example of the French Bank",
+          "url": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/pourquoi-une-banque-centrale-devrait-elle-sinteresser-lintelligence-artificielle-lexemple-de-la",
+          "date": "2026-10-27",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Banque de France",
+      "date": "2026-10-27",
+      "display_date": "27 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-fab0bac4-4447-4538-a576-c1e61a39fc7f/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:97ab4dd5-573a-48a3-a2ea-d1d35947a89c",
+      "event_id": "97ab4dd5-573a-48a3-a2ea-d1d35947a89c",
+      "kind": "news",
+      "slug": "using-ai-speed-up-mri-scans-nhs-highland",
+      "path": "story/using-ai-speed-up-mri-scans-nhs-highland/index.html",
+      "headline": "Using AI to Speed Up MRI Scans in NHS Highland",
+      "original_headline": "Using AI to Speed Up MRI Scans in NHS Highland",
+      "deck": "Reporting from NHS Highland. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The AI tool augments existing radiology workflow by automating protocoling steps, freeing staff time for patient care.",
+      "for_ai": "The AI demonstrates performance on referral triage similar to or matching human decision-making in some scan types, indicating useful operational extension.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "NHS Highland",
+          "headline": "Using AI to Speed Up MRI Scans in NHS Highland",
+          "url": "https://www.nhshighland.scot.nhs.uk/about/nhs-highland-charity/how-we-make-a-difference/using-artificial-intelligence-to-speed-up-mri-scans-in-nhs-highland",
+          "date": "2026-10-27",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "NHS Highland",
+      "date": "2026-10-27",
+      "display_date": "27 Oct 2026",
+      "markets": [
+        "GB"
+      ],
+      "market_label": "United Kingdom",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-97ab4dd5-573a-48a3-a2ea-d1d35947a89c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:5a89027e-1050-46e1-9cb2-98d69839c6b9",
+      "event_id": "5a89027e-1050-46e1-9cb2-98d69839c6b9",
+      "kind": "news",
+      "slug": "cross-request-kv-cache-exposure-glm-5-3-remediation-sglang",
+      "path": "story/cross-request-kv-cache-exposure-glm-5-3-remediation-sglang/index.html",
+      "headline": "Cross-Request KV Cache Exposure in the GLM-5.3 Workers AI Model and Our Remediation with SGLang",
+      "original_headline": "Cross-Request KV Cache Exposure in the GLM-5.3 Workers AI Model and Our Remediation with SGLang",
+      "deck": "Reporting from Cloudflare Blog. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "privacy and security risk from cross-request data exposure noted; remediation implemented to prevent recurrence",
+      "for_ai": "system enhancements and patches deployed to fix KV cache and disaggregation bugs; ongoing hardening and upstream collaboration",
+      "human_direction": "loss",
+      "ai_direction": "gain",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Cloudflare Blog",
+          "headline": "Cross-Request KV Cache Exposure in the GLM-5.3 Workers AI Model and Our Remediation with SGLang",
+          "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation",
+          "date": "2026-10-27",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Cloudflare Blog",
+      "date": "2026-10-27",
+      "display_date": "27 Oct 2026",
+      "markets": [
+        "GB"
+      ],
+      "market_label": "United Kingdom",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-5a89027e-1050-46e1-9cb2-98d69839c6b9/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:44ab6ed0-994e-4c80-8eea-1c58773e4ede",
+      "event_id": "44ab6ed0-994e-4c80-8eea-1c58773e4ede",
+      "kind": "news",
+      "slug": "artificial-intelligence-education-let-s-draw-inspiration-asia",
+      "path": "story/artificial-intelligence-education-let-s-draw-inspiration-asia/index.html",
+      "headline": "Artificial Intelligence and Education: Let's Draw Inspiration from Asia!",
+      "original_headline": "Artificial Intelligence and Education: Let's Draw Inspiration from Asia!",
+      "deck": "Reporting from Maddyness. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The education-focused integration of AI implies people extend existing learning capacities through AI tools.",
+      "for_ai": "AI-enabled education demonstrates growing deployment and capability, extending its operative reach in schools and curricula.",
+      "human_direction": "mixed",
+      "ai_direction": "gain",
+      "human_label": "Benefits and downsides",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Maddyness",
+          "headline": "Artificial Intelligence and Education: Let's Draw Inspiration from Asia!",
+          "url": "https://www.maddyness.com?p=1443460",
+          "date": "2026-10-27",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Maddyness",
+      "date": "2026-10-27",
+      "display_date": "27 Oct 2026",
+      "markets": [
+        "FR"
+      ],
+      "market_label": "France",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-44ab6ed0-994e-4c80-8eea-1c58773e4ede/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Overture_in_C_minor%2C_TH_38_-_Pyotr_Ilyich_Tchaikovsky.ogg",
       "creator": "Pyotr Ilyich Tchaikovsky",
       "creator_origin": "Russian",
@@ -4233,6 +6948,215 @@
       "edition": "2026-10",
       "legacy_paths": [
         "research/paper-7de8e086b715a97caa852c62/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:ab59cb71-30d0-477a-9d1b-5847bf955761",
+      "event_id": "ab59cb71-30d0-477a-9d1b-5847bf955761",
+      "kind": "news",
+      "slug": "preliminary-report-independent-international-scientific-panel-ai",
+      "path": "story/preliminary-report-independent-international-scientific-panel-ai/index.html",
+      "headline": "Preliminary Report | Independent International Scientific Panel on AI",
+      "original_headline": "Preliminary Report | Independent International Scientific Panel on AI",
+      "deck": "Reporting from Welcome to the United Nations. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The report discusses governance and societal implications without asserting direct human capabilities gained or constrained.",
+      "for_ai": "The report discusses governance and societal implications without asserting direct AI capabilities gained or constrained.",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Welcome to the United Nations",
+          "headline": "Preliminary Report | Independent International Scientific Panel on AI",
+          "url": "https://www.un.org/independent-international-scientific-panel-ai/zh/preliminary-report",
+          "date": "2026-10-26",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Welcome to the United Nations",
+      "date": "2026-10-26",
+      "display_date": "26 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-ab59cb71-30d0-477a-9d1b-5847bf955761/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:a460e83f-36fd-40c1-bffa-b7156272d145",
+      "event_id": "a460e83f-36fd-40c1-bffa-b7156272d145",
+      "kind": "news",
+      "slug": "anthropic-s-claude-ai-model-accessed-data-us",
+      "path": "story/anthropic-s-claude-ai-model-accessed-data-us/index.html",
+      "headline": "Anthropic's Claude AI model accessed Georgia voter data in the US",
+      "original_headline": "Anthropic's Claude AI model accessed Georgia voter data in the US",
+      "deck": "Reporting from The Guardian. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "not provided",
+      "for_ai": "not provided",
+      "human_direction": "loss",
+      "ai_direction": "gain",
+      "human_label": "Downsides reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "The Guardian",
+          "headline": "Anthropic's Claude AI model accessed Georgia voter data in the US",
+          "url": "https://www.theguardian.com/technology/2026/oct/26/anthropics-claude-ai-model-accessed-georgia-voter-data-in-us",
+          "date": "2026-10-26",
+          "language": "un"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "The Guardian",
+      "date": "2026-10-26",
+      "display_date": "26 Oct 2026",
+      "markets": [
+        "GB",
+        "US"
+      ],
+      "market_label": "United Kingdom · United States",
+      "topic": "technology",
+      "topic_label": "AI & technology",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-a460e83f-36fd-40c1-bffa-b7156272d145/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:297f4ab8-5043-4b40-a664-fd6328f0d4b2",
+      "event_id": "297f4ab8-5043-4b40-a664-fd6328f0d4b2",
+      "kind": "news",
+      "slug": "hkex-introduces-artificial-intelligence-semiconductor-indices",
+      "path": "story/hkex-introduces-artificial-intelligence-semiconductor-indices/index.html",
+      "headline": "HKEX Introduces Artificial Intelligence and Semiconductor Indices",
+      "original_headline": "HKEX Introduces Artificial Intelligence and Semiconductor Indices",
+      "deck": "Reporting from 人民日报. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Investors gain new tools to access AI-related opportunities, signaling expanding opportunity.",
+      "for_ai": "Index-based exposure reflects growing AI sector activity and reach in financial markets.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits reported",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "人民日报",
+          "headline": "Hong Kong Exchange launches artificial intelligence and semiconductor indices",
+          "url": "http://paper.people.com.cn/rmrbhwb/pc/content/202610/27/content_30187918.html",
+          "date": "2026-10-26",
+          "language": "zh"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "人民日报",
+      "date": "2026-10-26",
+      "display_date": "26 Oct 2026",
+      "markets": [
+        "CN"
+      ],
+      "market_label": "China",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-297f4ab8-5043-4b40-a664-fd6328f0d4b2/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:1509885f-d854-4259-b08c-4a69e98479a3",
+      "event_id": "1509885f-d854-4259-b08c-4a69e98479a3",
+      "kind": "news",
+      "slug": "udem-creates-chair-artificial-intelligence-dedicated-cardiovascular-care",
+      "path": "story/udem-creates-chair-artificial-intelligence-dedicated-cardiovascular-care/index.html",
+      "headline": "The UdeM creates a chair in artificial intelligence dedicated to cardiovascular care",
+      "original_headline": "The UdeM creates a chair in artificial intelligence dedicated to cardiovascular care",
+      "deck": "Reporting from Université de Montréal. Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "The initiative aims to expand clinicians' capabilities and patient outcomes through AI-driven analysis and decision support.",
+      "for_ai": "AI infrastructure and expertise are being developed to support clinical practice and education.",
+      "human_direction": "gain",
+      "ai_direction": "mixed",
+      "human_label": "Benefits reported",
+      "ai_label": "Benefits and downsides",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Université de Montréal",
+          "headline": "The UdeM creates a chair in artificial intelligence dedicated to cardiovascular care",
+          "url": "https://nouvelles.umontreal.ca/article/2026/10/26/l-udem-cree-une-chaire-en-intelligence-artificielle-consacree-aux-soins-cardiovasculaires",
+          "date": "2026-10-26",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Université de Montréal",
+      "date": "2026-10-26",
+      "display_date": "26 Oct 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "everyday",
+      "topic_label": "Everyday life",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
+      "legacy_paths": [
+        "story/development-1509885f-d854-4259-b08c-4a69e98479a3/index.html"
       ],
       "url_slug_version": 1
     },
@@ -9537,6 +12461,55 @@
         "story/development-05fb32cf-5dbe-485a-ac35-7e00714ec5e0/index.html"
       ],
       "url_slug_version": 1
+    },
+    {
+      "key": "event:ae5f9d94-d8ad-4dd6-907d-76329f70defe",
+      "event_id": "ae5f9d94-d8ad-4dd6-907d-76329f70defe",
+      "kind": "news",
+      "slug": "development-ae5f9d94-d8ad-4dd6-907d-76329f70defe",
+      "path": "story/development-ae5f9d94-d8ad-4dd6-907d-76329f70defe/index.html",
+      "headline": "Online Training in the Field of Artificial Intelligence",
+      "original_headline": "Online Training in the Field of Artificial Intelligence",
+      "deck": "Reporting from Organisation internationale de la Francophonie (OIF). Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Expansion: educators gain new capacity to counter AI-driven misinformation through online training.",
+      "for_ai": "Not described",
+      "human_direction": "gain",
+      "ai_direction": "none",
+      "human_label": "Benefits reported",
+      "ai_label": "No direction stated",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Organisation internationale de la Francophonie (OIF)",
+          "headline": "Online Training: Artificial Intelligence and Information Manipulation",
+          "url": "https://www.francophonie.org/formation-en-ligne-intelligence-artificielle-et-manipulations-de-linformation-8752",
+          "date": "2026-10-30",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Organisation internationale de la Francophonie (OIF)",
+      "date": "2026-10-22",
+      "display_date": "22 Oct 2026",
+      "markets": [
+        "CA",
+        "FR"
+      ],
+      "market_label": "Canada · France",
+      "topic": "work",
+      "topic_label": "Work & skills",
+      "reading_minutes": 1,
+      "summary_basis": "Publisher headline",
+      "claim_status": "reporting",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01"
     },
     {
       "alt": "Landscape of the Four Seasons",
@@ -30631,7 +33604,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-01T23:54:32.835849+00:00",
+      "affiliation_checked_at": "2026-11-02T03:45:44.959719+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -31192,21 +34165,18 @@
       "kind": "news",
       "slug": "super-intelligence",
       "path": "story/super-intelligence/index.html",
-      "headline": "NASA Reports Super Intelligence Enables Autonomous Decisions with Mixed Gains, Not a Universal Solution",
+      "headline": "Super Intelligence",
       "original_headline": "Super Intelligence",
-      "deck": "NASA describes how super intelligence supports missions and safety while warning against overgeneralizing its effects.",
-      "what_happened": "NASA describes the adoption and use of super intelligence across missions, including autonomous vehicle-like systems, data analysis, and decision-support for spacecraft and aircraft. The agency highlights current applications and partnerships to advance SI in the space sector.",
-      "why_it_matters": "The report shows mixed gains,autonomy and efficiency alongside ongoing need for human oversight and collaboration with external SI leaders.",
-      "body_paragraphs": [
-        "NASA discusses its adoption of super intelligence (SI) to analyze data, operate autonomously, and support mission planning across Moon and Mars programs. The piece notes SI’s role in sifting satellite imagery, enabling autonomous navigation, and keeping systems safe, while emphasizing partnerships to develop the space economy.",
-        "The agency flags that SI is not a one-size-fits-all solution; its benefits are context-specific and rely on clear human guidance, safety protocols, and careful integration with existing systems."
-      ],
-      "for_humans": "Understand AI helps, but human judgment and oversight remain essential.",
-      "for_ai": "AI assists missions but human operators remain central.",
+      "deck": "Reporting from NASA (.gov). Open the source for the article.",
+      "what_happened": "",
+      "why_it_matters": "",
+      "body_paragraphs": [],
+      "for_humans": "Evidence shows humans gain from AI-enabled mission operations and data analysis.",
+      "for_ai": "AI systems demonstrate extended reach through autonomous decision-making and supporting missions.",
       "human_direction": "gain",
-      "ai_direction": "mixed",
+      "ai_direction": "gain",
       "human_label": "Benefits reported",
-      "ai_label": "Benefits and downsides",
+      "ai_label": "Benefits reported",
       "evidence_complete": true,
       "display_scope": "",
       "sources": [
@@ -31214,7 +34184,7 @@
           "publisher": "NASA (.gov)",
           "headline": "Super Intelligence",
           "url": "https://www.nasa.gov/super-intelligence",
-          "date": "2026-10-06",
+          "date": "2026-10-30",
           "language": "fr"
         }
       ],
@@ -31228,16 +34198,16 @@
         "US"
       ],
       "market_label": "Canada · United Kingdom · United States",
-      "topic": "business",
-      "topic_label": "Business & investment",
+      "topic": "policy",
+      "topic_label": "Rules & rights",
       "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
+      "summary_basis": "Publisher headline",
       "claim_status": "reporting",
-      "limitation": "Evidence is drawn from a single agency’s communications and policy context; findings are not generalized to all contexts or populations.",
-      "has_editorial": true,
-      "edition": "2026-W41",
-      "period_start": "2026-10-05",
-      "period_end": "2026-10-11",
+      "limitation": "",
+      "has_editorial": false,
+      "edition": "2026-W44",
+      "period_start": "2026-10-26",
+      "period_end": "2026-11-01",
       "legacy_paths": [
         "story/development-4acc36c0-655b-46b3-9527-f619157ba259/index.html"
       ],

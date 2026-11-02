@@ -6335,6 +6335,142 @@
       },
       "output_sha256": "14c4bc756c9310e296ff2d30c57c2cb0e0f86fc3e88bbda64000293804401c13",
       "policy": "brief-english-display-v1"
+    },
+    "00a4a46572fb14b2a201f851881b6c74b65ff162796d71ea1eafa1f77b2bcab9": {
+      "english": {
+        "0": "Zhuhai Net",
+        "1": "Zhuhai Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "3b7805bb3fa0da8ce8007e7d4accc7380502ccba3da117369cd478ad48d76dee",
+      "policy": "brief-english-display-v1"
+    },
+    "be891aab35dd6c8f82a8f851fa73498d0624543de87fe0a43cd6aa930dd25c5f": {
+      "english": {
+        "0": "China News Service",
+        "1": "China News Service"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e939fa50ed4c6f60ae1d66c0541e184b6812e178c4968261681d6efe08aab575",
+      "policy": "brief-english-display-v1"
+    },
+    "1cc281aa42208aacaba7f72a187a5d3b8f557e018f451e16f2a57d4a419e8034": {
+      "english": {
+        "0": "Reporting from Shangguan News. Open the source for the article.",
+        "1": "Shangguan News",
+        "2": "Shangguan News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "68dc009c8dfb4369dcdcd070d87a0630f71720a785bb46059bb20827b2a2e30b",
+      "policy": "brief-english-display-v1"
+    },
+    "05f849df3a9e38eb423475464e04f0985f201af96c4896014eb7c3010e38c06e": {
+      "english": {
+        "0": "Reporting from Eastmoney. Open the source for the article.",
+        "1": "Eastmoney",
+        "2": "Eastmoney"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "64e7800b62388eb2dfd932e808abce3bc8bddd488a7b5672507700741ccd6dee",
+      "policy": "brief-english-display-v1"
+    },
+    "65588e7efb34810262ce5027e72f98c53513ea04a9de8044caef112c923518ec": {
+      "english": {
+        "0": "Reporting from the French Federation of Hiking. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "1d288e55a62f402e665c48ad9ffe5ceda3d75ea6dbddc01594ac6699b7a1d4cf",
+      "policy": "brief-english-display-v1"
+    },
+    "c94bfd15534151bf2d4be97736642e6381b595ebeff48cb39fb9882c83acbe98": {
+      "english": {
+        "0": "Reporting from Acteurs Publics. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "54d080a94c51b32c3ce60ecb4ed271fe1e8a5627ccfa3e4b4d17a0ba096d6e17",
+      "policy": "brief-english-display-v1"
+    },
+    "e073d0e94ebe17133a33b5499b4f599a7b88148808db194d0c970fe1613ca09f": {
+      "english": {
+        "0": "HKEX Introduces Artificial Intelligence and Semiconductor Indices",
+        "1": "HKEX Introduces Artificial Intelligence and Semiconductor Indices",
+        "2": "Reporting from People's Daily. Open the source for the article.",
+        "3": "People's Daily",
+        "4": "People's Daily"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cbfb1367d8f1b5a6827b5259708e05db176d734ae7fb505d2ef5aca08da6f3ab",
+      "policy": "brief-english-display-v1"
     }
   }
 }
