@@ -81,15 +81,15 @@
       "institutions": 1
     },
     {
+      "key": "paper:565eb5d350d80d2a2f647f6b",
+      "status": "cached",
+      "source_verified": false,
+      "institutions": 8
+    },
+    {
       "key": "paper:beaf7b4a534a2a4135c21b97",
       "status": "cached",
       "source_verified": false,
-      "institutions": 6
-    },
-    {
-      "key": "paper:52c3ba78f28c68d12f1a0973",
-      "status": "cached",
-      "source_verified": true,
       "institutions": 6
     },
     {
@@ -105,9 +105,9 @@
       "institutions": 3
     },
     {
-      "key": "paper:5996c5241e61feebfc5835cb",
+      "key": "paper:8778a5cfae74250c006dc1f6",
       "status": "cached",
-      "source_verified": true,
+      "source_verified": false,
       "institutions": 8
     },
     {
@@ -117,20 +117,14 @@
       "institutions": 1
     },
     {
-      "key": "paper:16a3db0cf187d500a6a42d8e",
+      "key": "paper:3dbb5af83842291f863af301",
       "status": "cached",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
-      "key": "paper:91078ae8ed566fc820332ae5",
-      "status": "arxiv_authors",
-      "source_verified": true,
+      "source_verified": false,
       "institutions": 3
     }
   ],
   "recovery": {
-    "recovered": 10,
+    "recovered": 9,
     "unavailable": 0
   }
 }
