@@ -137,6 +137,14 @@ class ResearchAffiliationTests(unittest.TestCase):
         self.assertEqual(clean_institutions(values,['Nicolas Ballas']),[
             'Courant Institute, New York University','National University of Singapore',
             'University of Oxford','School of Computing'])
+        self.assertEqual(clean_institutions([
+            'California Institute of Technology, CA 91125, USA',
+            'New York University, NY 10012, USA',
+            'This work is supported by The Dow Chemical Company project #227027AW.',
+            'London, EC2A 4DQ',
+            'The authors are with the University of California, Berkeley.']),
+            ['California Institute of Technology','New York University',
+             'University of California, Berkeley'])
 
     def test_arxiv_fallback_ignores_project_links_and_numbered_names(self):
         paper={**self.paper(),'arxiv_id':'2610.42148v1','authors':['Bobo Li']}
