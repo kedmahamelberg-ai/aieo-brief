@@ -1,0 +1,184 @@
+{
+  "schema_version": "source_checked_social_geography_v1",
+  "articles": {
+    "event:8fa122ef-a5c4-4a09-819c-479a93690948": {
+      "markets": [
+        "US"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer"
+      ],
+      "content_sha256": "8add204d184c27cc823d0b351b8e55593ffaff48a854f64e5ceb628edca1f7b5"
+    },
+    "event:ca268de9-72d8-44c6-a8a4-177151d08911": {
+      "markets": [
+        "CA"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://www.journaldechambly.com/culture/chambly-comment-integrer-lintelligence-artificielle-a-la-maison"
+      ],
+      "content_sha256": "5e3742e6390910991621f453bb2b286f1fad9955321f25fb6d3fc4ae2a29c9d2"
+    },
+    "event:97ab4dd5-573a-48a3-a2ea-d1d35947a89c": {
+      "markets": [
+        "GB"
+      ],
+      "rationale": "UK public health provider and clinical project",
+      "source_urls": [
+        "https://www.nhshighland.scot.nhs.uk/about/nhs-highland-charity/how-we-make-a-difference/using-artificial-intelligence-to-speed-up-mri-scans-in-nhs-highland"
+      ],
+      "content_sha256": "dcb45e003288acfb63b9f41c55d1683f66a57eba9fa1a615e1859470f103f486"
+    },
+    "event:0633cab1-acfe-46fc-b52c-41ad85400c26": {
+      "markets": [
+        "FR"
+      ],
+      "rationale": "French AI company and its model release",
+      "source_urls": [
+        "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse",
+        "https://www.euronews.com/2026/10/29/mistral-releases-latest-ai-model-for-download-giving-companies-more-control-over-their-cyb",
+        "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html"
+      ],
+      "content_sha256": "245b13864d5e1d0a59c7525d201b32c88ec33f4a91a3239b4f5df00b22af28a6"
+    },
+    "event:a1e2b2b0-2a69-44e9-812b-f9c03426461e": {
+      "markets": [
+        "CN"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html"
+      ],
+      "content_sha256": "2a330a47b01c04d3fb081839c23b2c75a25aba68a6d6d897ce4ddaf56c1b4328"
+    },
+    "event:ec0267bf-57e9-4224-bb75-19c763d8e419": {
+      "markets": [
+        "US"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study"
+      ],
+      "content_sha256": "2aca568142160f1e58f736a2c7b6e6a173055328d67e5148b61ed541b1875421"
+    },
+    "event:c871cafc-aaec-4135-be78-467304176c01": {
+      "markets": [
+        "CA"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://journallecitoyen.com/articles/art-12966"
+      ],
+      "content_sha256": "1fe588869cfdc445f668629a2da8b0f7ab5e86e6bd2ba55277b89d3dd884a508"
+    },
+    "event:254e6644-7404-4bb6-922a-548e875708b5": {
+      "markets": [
+        "GB"
+      ],
+      "rationale": "University of Oxford Reuters Institute report and UK respondents",
+      "source_urls": [
+        "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+      ],
+      "content_sha256": "b46fe85f3d703cb3c55c69887160678f57df48fbf859dc100456a0c7a2af7c77"
+    },
+    "event:41d91767-f7b9-41e1-95c0-5a62e24c3b5c": {
+      "markets": [
+        "FR"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy"
+      ],
+      "content_sha256": "0ea1b6028da129d3a0291a486b0f9a5c7f8ac8f22ec3117529cf8260f5dc2d3d"
+    },
+    "event:e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031": {
+      "markets": [
+        "CN"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html"
+      ],
+      "content_sha256": "7de82473e26c5d86e7344334e0e79d0e9b3c13f12cc1d56202f16eca2b6d8546"
+    },
+    "event:dc0daa8d-2ed7-460a-8bdd-89df1f06af7a": {
+      "markets": [
+        "CA"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://www.ledevoir.com/actualites/societe/1021130/ia-nouveau-visage-peur-inconnu"
+      ],
+      "content_sha256": "ab8b437ee57dc9a2d11516818e9b8620349228ea1e775589027cdce4f1cc38dd"
+    },
+    "event:75722252-2bee-4162-89a3-126672ed9f64": {
+      "markets": [
+        "GB"
+      ],
+      "rationale": "Civil justice institutions of England and Wales",
+      "source_urls": [
+        "https://www.lawgazette.co.uk/news/cjc-reports-on-safe-use-of-artificial-intelligence-to-prepare-court-documents/5128388.article"
+      ],
+      "content_sha256": "7a2b415b34e396f081750e5e32de04da13d1fa87907ae5bd95ec92331479cff3"
+    },
+    "event:4cd58638-a43e-4568-8d81-a14e18e7a1cc": {
+      "markets": [
+        "FR"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465"
+      ],
+      "content_sha256": "132ac5da64cdfd7969ff532197cc48f67323e5e782cef2e65e47f18e7bc60050"
+    },
+    "event:61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd": {
+      "markets": [
+        "CN"
+      ],
+      "rationale": "Source-checked institution, event or reporting context in the featured country",
+      "source_urls": [
+        "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm"
+      ],
+      "content_sha256": "c776c1b875a00330e14f8db5933837b9fc38a937c5d12b1d5c91b5129a2f1a18"
+    },
+    "event:7d7d6da7-2c39-4885-a45e-60a178bcd95a": {
+      "markets": [
+        "US"
+      ],
+      "rationale": "US writer and publication; not a UK story",
+      "source_urls": [
+        "https://lithub.com/artificial-intelligence-is-a-horror-story"
+      ],
+      "content_sha256": "9cffbf4f6bf565b204c342acb283bad803bcc73367b5a06174b363e821935d5d"
+    },
+    "event:eca3c27b-0861-4171-9037-bf9662300a2e": {
+      "markets": [],
+      "rationale": "Dutch policy is outside this five-country lineup",
+      "source_urls": [
+        "https://nltimes.nl/2026/10/29/dutch-mps-want-ban-primary-school-children-using-generative-ai",
+        "https://www.hungarianconservative.com/articles/current/netherlands-primary-schools-generative-ai-restrictions"
+      ],
+      "content_sha256": "11042e8d98aef4b501d53fd44505c91dc820cbd4613c3a85dc9b4d9c89159ada"
+    },
+    "event:ae12f344-2c33-4d0a-b7ce-2d14af24fd23": {
+      "markets": [
+        "US"
+      ],
+      "rationale": "US copyright litigation, not UK law",
+      "source_urls": [
+        "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone"
+      ],
+      "content_sha256": "b803e64a647583d8f27e96d43822efb58ad523ed578de839003fd5b90ba68e11"
+    },
+    "event:7e3cacae-5c59-49c4-b1fd-8540b4f3e020": {
+      "markets": [],
+      "rationale": "Regional Asian economic analysis does not establish a French featured subject",
+      "source_urls": [
+        "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle"
+      ],
+      "content_sha256": "3ec525af09a9968719c72f9c378e380c1d849ef29b7d4f517c518bf284e7abdb"
+    }
+  }
+}

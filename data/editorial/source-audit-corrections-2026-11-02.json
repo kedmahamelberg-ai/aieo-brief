@@ -1,0 +1,466 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "authorization": "Owner requested all posts and destination articles be checked against their sources and errors fixed on 2026-11-02.",
+  "checked_at": "2026-11-02T12:47:48.199662+01:00",
+  "review_method": "Direct comparison of complete news source text; research abstract verified in PubMed; new court coverage also checked against executive recommendations in the final CJC report.",
+  "news": [
+    {
+      "key": "event:8fa122ef-a5c4-4a09-819c-479a93690948",
+      "reason": "The LLM ranks the stolen bundle; model failover attempts to bypass refusals and is not a safety measure.",
+      "before": {
+        "what_happened": "VOLTA harvested data from victims and produced a structured bundle ranking assets by monetization and enriched the data with stolen sessions, then sent it to an AI system to draft a target assessment.",
+        "body_paragraphs": [
+          "Security researchers describe VOLTA as a mature infostealer with an added AI layer. It collects many data types, creates a dossier, and ranks targets by value.",
+          "The AI is used to expand, organize, and present the data in a way that helps the attacker decide who to pursue next, while the process includes safeguards like model chaining to overcome refusals."
+        ],
+        "for_humans": "What happened shows why privacy matters when devices and accounts are connected."
+      },
+      "after": {
+        "what_happened": "Cisco Talos reports that VOLTA collects stolen credentials and other victim data, enriches the bundle through stolen sessions, then sends it to a language model to produce a target assessment and rank assets by potential value.",
+        "body_paragraphs": [
+          "The malware assembles a local victim dossier before asking an AI system to interpret it. Cisco Talos describes the model as an analyst helping the operator decide which stolen assets to pursue.",
+          "When one model refuses, VOLTA can try other models. That fallback is an attempt to work around model refusals, not a safeguard for victims. The report describes this malware sample and does not establish how widespread the technique is."
+        ],
+        "for_humans": "The reported theft and profiling create privacy and financial risks for victims."
+      },
+      "source_urls": [
+        "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+          "status": 200,
+          "response_sha256": "81d85d1719b17ceeebde21baf781cc0d7c423ec7b4876862a6f2cacca1913a8b"
+        }
+      ],
+      "event_id": "8fa122ef-a5c4-4a09-819c-479a93690948"
+    },
+    {
+      "key": "event:7d7d6da7-2c39-4885-a45e-60a178bcd95a",
+      "reason": "The source is an explicitly anti-generative-AI opinion essay, not a balanced account that avoids demonizing AI.",
+      "before": {
+        "deck": "A literary essay argues that Generative AI is a form of horror that can mislead us into thinking it helps while it hurts, urging caution without demonizing technology.",
+        "what_happened": "A literary essay frames Generative AI as bodily horror invading daily life and eroding self-worth. It ties AI's impact to commentary on humanity and warns that conveniences can mask harm.",
+        "body_paragraphs": [
+          "The essay treats AI as a troubling force that touches normal routines, searches, messages, and the way we understand ourselves. It warns that relying on easy AI tools may erode our sense of worth and agency if we accept convenience without question.",
+          "It also argues for keeping human creativity and critical thinking at the center of learning, art, and daily decisions to resist handing every task to machines."
+        ],
+        "for_humans": "AI can shape daily life and challenge autonomy if not watched carefully.",
+        "limitation": "Based on a single essay; not a broad survey or multiple sources.",
+        "claim_status": "opinion"
+      },
+      "after": {
+        "deck": "Nick Ripatrazone uses horror imagery to argue against generative AI in everyday life.",
+        "what_happened": "In a Literary Hub opinion essay, Nick Ripatrazone argues that generative AI undermines dignity and agency. He compares its spread through daily routines with body horror and calls for resistance through human-made art and writing.",
+        "body_paragraphs": [
+          "Ripatrazone draws on horror films and an older vision of a disembodied human brain to explain his opposition to generative AI. His argument treats apparently convenient tools as harmful to human dignity.",
+          "He urges readers to keep making art and literature themselves and to resist accepting AI as inevitable. These are the author’s moral and cultural arguments, not findings from an experiment or survey."
+        ],
+        "for_humans": "Ripatrazone argues that refusing AI and continuing human creative work protects dignity and agency.",
+        "limitation": "A strongly critical opinion essay by one writer; it supplies no experimental measure of AI’s effects.",
+        "claim_status": "opinion"
+      },
+      "source_urls": [
+        "https://lithub.com/artificial-intelligence-is-a-horror-story"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://lithub.com/artificial-intelligence-is-a-horror-story",
+          "status": 200,
+          "response_sha256": "d028403cc8454153915387c91f709293e9f8f65c1c555ff7972743c31e9dfbaa"
+        }
+      ],
+      "event_id": "7d7d6da7-2c39-4885-a45e-60a178bcd95a"
+    },
+    {
+      "key": "event:a1e2b2b0-2a69-44e9-812b-f9c03426461e",
+      "reason": "纪念联 means commemorative couplets here, not necessarily funeral or memorial verses; product benefits are claims.",
+      "before": {
+        "body_paragraphs": [
+          "The launch introduces a tool that lets people write memorial couplets from photos, sightseeing moments, or personal trip notes. It aims to turn a traditional craft into an everyday, accessible activity rather than a niche skill.",
+          "Experts emphasize that couplets blend strict rules with creative expression, and the new AI tries to balance both by guiding rhythm and diction while keeping the art open to ordinary users."
+        ],
+        "for_humans": "AI helps people create, share, and enjoy traditional couplets.",
+        "for_ai": "AI supports creative engagement in language arts."
+      },
+      "after": {
+        "body_paragraphs": [
+          "The report says Xiaolian AI was launched in Chengdu on 1 November. Developers and Sichuan couplet specialists describe a tool for creating traditional couplets from everyday interests.",
+          "Examples include travel photographs, sightseeing, birthdays and shop openings. The aim is to make the craft more accessible; the report does not measure whether users become better writers."
+        ],
+        "for_humans": "The developers say the tool lowers the barrier to participating in traditional couplet writing.",
+        "for_ai": "The launch presents AI as a tool for assisting a traditional language art."
+      },
+      "source_urls": [
+        "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html",
+          "status": 200,
+          "response_sha256": "58684af8699e2a4e7c0dd301c1fdb138d8e45981865a2af921dc3dd65d53fd67"
+        }
+      ],
+      "event_id": "a1e2b2b0-2a69-44e9-812b-f9c03426461e"
+    },
+    {
+      "key": "event:ec0267bf-57e9-4224-bb75-19c763d8e419",
+      "reason": "An author’s classroom experience must not be presented as a general research result about students or professionals.",
+      "before": {
+        "headline": "AI Ethics in Self-Study: Mixed Lessons for Humans and AI, CPA Journal Finds",
+        "what_happened": "The CPA Journal essay discusses how AI tools like ChatGPT raise ethical questions in continuing professional education (CPE) self-study. It argues that current standards silence on AI can tempt misuse, and it advocates more human-centered, fair assessment designs rather than hard bans. It also describes a dual-path assessment idea and shows that students tend to choose AI when given fair options.",
+        "body_paragraphs": [
+          "AI tools are changing how people learn and test what they know. The article says that AI can answer hard questions well, which makes fair testing harder. It also notes that current rules don’t clearly ban AI use, so guidance is needed to stay fair and honest.",
+          "Some fixes are suggested, like limiting information given in tests and offering two paths: take the test without AI or pass with AI but higher standards. The point is to keep integrity without simply stopping AI from helping learners."
+        ],
+        "for_humans": "AI can help learning when used with thoughtful rules and fair paths.",
+        "for_ai": "Use AI responsibly by following ethical design and clear guidelines.",
+        "limitation": "This brief is based on a single CPA Journal essay and its cited passages; it does not claim a comprehensive survey or multiple sources beyond the provided material.",
+        "claim_status": "analysis"
+      },
+      "after": {
+        "headline": "CPA Journal essay proposes fairer assessments when learners can use AI",
+        "what_happened": "Dov Fischer’s CPA Journal essay argues that self-study accounting assessments need clearer ethical design as AI makes answering questions easier. He proposes a choice between assessments with and without AI, and describes student preferences in his own teaching.",
+        "body_paragraphs": [
+          "The essay considers qualified assessments in continuing professional education. Fischer argues that providers should reduce incentives for misuse rather than rely on copying restrictions or declarations that AI was not used.",
+          "His suggested two-path assessment uses different pass thresholds for work with and without AI. He describes students choosing the AI option in his own exams, but this anecdote does not establish how learners generally behave."
+        ],
+        "for_humans": "Fischer argues that fair assessment design can support integrity while acknowledging AI use.",
+        "for_ai": "The proposal treats AI use as a design and guidance issue rather than evidence that learning has improved.",
+        "limitation": "An essay with an example from the author’s teaching, not a representative study of students or CPE participants.",
+        "claim_status": "opinion"
+      },
+      "source_urls": [
+        "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study",
+          "status": 200,
+          "response_sha256": "9f5fe949a16e33c781da28727589c33e668ee55ad2f947c222535cea77153d9a"
+        }
+      ],
+      "event_id": "ec0267bf-57e9-4224-bb75-19c763d8e419"
+    },
+    {
+      "key": "event:97ab4dd5-573a-48a3-a2ea-d1d35947a89c",
+      "reason": "The NHS source says brain and spine results were comparable to staff, not worse than staff; any time saving is projected.",
+      "before": {
+        "headline": "NHS Highland Says AI Aids MRI Triage in Some Cases, With Clear Limits",
+        "deck": "A small AI tool helps sort referral notes and spot scan types, with safety checks still done by humans.",
+        "what_happened": "The NHS Highland team built a two-step AI tool that reads MRI referral notes to group scans and then identifies the exact type of scan. In early results, AI performed well for data-rich scans, but brain and spine accuracy lagged behind staff. Any AI suggestion still required a radiographer to approve before scanning.",
+        "body_paragraphs": [
+          "The NHS Highland project trained an AI with 7,275 MRI referrals and built a simple two-step tool. First, it reads notes to group scans by area; second, it chooses the exact scan. Early results are promising for data-rich types, but brain and spine scans still lag behind staff performance. The AI matched or approached human decision levels in some cases, and two radiographers often disagreed when choosing brain/spine protocols, suggesting the AI can be a helpful companion for clinicians.",
+          "Safety and next steps were kept at the forefront. Any AI suggestion needed a radiographer’s check before scanning, which protects patients while lowering workload over time. The team plans ongoing training with more data to refine capabilities."
+        ],
+        "for_humans": "The tool aims to save time while keeping safety checks.",
+        "for_ai": "AI may support staff, but not yet replace human checks in scans.",
+        "limitation": "Data availability and varying accuracy across scan types limit generalization beyond the NHS Highland setting."
+      },
+      "after": {
+        "headline": "NHS Highland tests AI support for choosing MRI scan protocols",
+        "deck": "Early results vary by scan type, and radiographers still check the recommendations.",
+        "what_happened": "NHS Highland describes a two-step AI tool that reads MRI referral notes and suggests scan protocols. Its case study reports strong results for some scan types and lower brain and spine scores, which it describes as comparable to staff. Radiographers must check suggestions.",
+        "body_paragraphs": [
+          "The team trained the tool on existing referrals to classify a general scan area and then a more specific protocol. The case study says the amount of training data differed between scan types.",
+          "Potential staff-time savings are an estimate, not a demonstrated result. The charity-funded project still requires checks before scanning, further refinement and safeguards for rollout."
+        ],
+        "for_humans": "NHS Highland describes potential staff support, with radiographers retaining the checking role.",
+        "for_ai": "The tool suggests protocols from referral notes; it does not replace clinical responsibility.",
+        "limitation": "A provider case study of an early project, not independent clinical validation or a proven reduction in waiting times."
+      },
+      "source_urls": [
+        "https://www.nhshighland.scot.nhs.uk/about/nhs-highland-charity/how-we-make-a-difference/using-artificial-intelligence-to-speed-up-mri-scans-in-nhs-highland"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://www.nhshighland.scot.nhs.uk/about/nhs-highland-charity/how-we-make-a-difference/using-artificial-intelligence-to-speed-up-mri-scans-in-nhs-highland",
+          "status": 200,
+          "response_sha256": "8183668e9045587648d232a2ddd1eb28c16d95876a760b6a1405587871cee1b9"
+        }
+      ],
+      "event_id": "97ab4dd5-573a-48a3-a2ea-d1d35947a89c"
+    },
+    {
+      "key": "event:254e6644-7404-4bb6-922a-548e875708b5",
+      "reason": "Create a substantive source-checked Brief article before using this Oxford report as a replacement social destination.",
+      "before": {
+        "headline": "Generative AI and News Report 2026: From Standalone Tools to Information Infrastructure",
+        "deck": "Reporting from reutersinstitute.politics.ox.ac.uk. Open the source for the article.",
+        "what_happened": "",
+        "body_paragraphs": [],
+        "why_it_matters": "",
+        "limitation": "",
+        "has_editorial": false,
+        "summary_basis": "Publisher headline",
+        "claim_status": "reporting",
+        "for_humans": "The evidence shows growing adoption and empowerment of people through AI-enabled information tools. People gain new capabilities in information access and processing through AI-driven outputs. People are adopting generative AI in journalism, expanding their toolset and capacity. Public attitudes toward AI in news are shifting with increased usage driving optimism among users and skepticism among non-users.",
+        "for_ai": "AI tools are expanding in availability and usage across multiple platforms and countries. AI expands its role as an information intermediary and output provider. AI systems are described as producing outputs and extending their reach in news workflows. AI features as information intermediaries are expanding in use and visibility across the news ecosystem."
+      },
+      "after": {
+        "headline": "Oxford report finds wider AI use but continued unease about AI-made news",
+        "deck": "A nine-country survey separates growing use from public attitudes to journalism.",
+        "what_happened": "The Reuters Institute at the University of Oxford reports growing use of generative AI alongside continued discomfort with AI-produced news. Its 2026 survey covers nine countries, while comparisons over time use the six countries included in earlier waves.",
+        "body_paragraphs": [
+          "The report examines how people encounter and use AI, including for information and news. Greater use does not mean that respondents are equally comfortable with every application.",
+          "The authors distinguish news made mainly by AI from supporting tasks such as translation. Results rely on self-reported online survey responses; they do not prove that AI changes trust or represent countries outside the sample."
+        ],
+        "why_it_matters": "The findings separate adoption, convenience and attitudes to news production rather than treating them as the same thing.",
+        "limitation": "A weighted online survey with self-reporting and sampling limitations; historical comparisons cover six countries, not all nine.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked summary of the published report",
+        "claim_status": "reporting",
+        "for_humans": "The survey records different attitudes to AI depending on how it is used in journalism.",
+        "for_ai": ""
+      },
+      "source_urls": [
+        "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure",
+          "status": 200,
+          "response_sha256": "4c19c90e14869f9e1ca037979276496be05e95edcab6c5721ed5079c6165dd31"
+        }
+      ],
+      "event_id": "254e6644-7404-4bb6-922a-548e875708b5"
+    },
+    {
+      "key": "event:75722252-2bee-4162-89a3-126672ed9f64",
+      "reason": "Create a substantive Brief article grounded in the final report and the Gazette coverage; recommendations are not enacted rules.",
+      "before": {
+        "headline": "CJC reports on 'safe' use of artificial intelligence to prepare court documents",
+        "deck": "Reporting from The Law Society Gazette. Open the source for the article.",
+        "what_happened": "",
+        "body_paragraphs": [],
+        "why_it_matters": "",
+        "limitation": "",
+        "has_editorial": false,
+        "summary_basis": "Publisher headline",
+        "claim_status": "reporting",
+        "for_humans": "Policy-driven use of AI aims to extend professional capabilities without compromising accuracy.",
+        "for_ai": "AI is deployed to assist in document preparation under safeguards to ensure reliability."
+      },
+      "after": {
+        "headline": "Civil Justice Council proposes targeted safeguards for AI in court documents",
+        "deck": "The England and Wales report keeps professional responsibility central.",
+        "what_happened": "The Civil Justice Council’s final report recommends a risk-based approach to AI use in civil court documents in England and Wales. It proposes targeted declarations for factual witness statements and expert evidence, rather than a general declaration for all legal drafting.",
+        "body_paragraphs": [
+          "The report recommends a Practice Direction clarifying responsibility, accuracy and verification. Legal representatives would remain accountable under their existing professional obligations.",
+          "It also calls for urgent work on guidance for people representing themselves. These are recommendations to rule-makers and regulators, not a statement that every proposed safeguard is already in force."
+        ],
+        "why_it_matters": "The proposals distinguish uses that may affect evidence from other drafting tasks while keeping people responsible.",
+        "limitation": "A summary of the report’s executive recommendations and contemporaneous reporting; this is not legal advice or confirmation of implementation.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked summary of the final report and Gazette coverage",
+        "claim_status": "reporting",
+        "for_humans": "The report proposes safeguards intended to protect the accuracy and integrity of civil proceedings.",
+        "for_ai": ""
+      },
+      "source_urls": [
+        "https://www.lawgazette.co.uk/news/cjc-reports-on-safe-use-of-artificial-intelligence-to-prepare-court-documents/5128388.article",
+        "https://www.judiciary.uk/wp-content/uploads/2026/10/Use-of-AI-for-the-Preparation-of-Court-Documents-Final-Report.pdf"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://www.lawgazette.co.uk/news/cjc-reports-on-safe-use-of-artificial-intelligence-to-prepare-court-documents/5128388.article",
+          "status": 200,
+          "response_sha256": "c1969a243c02bffe573f45eeb0018b317a8f346bfa64aa2967f6ccf47a52865d"
+        }
+      ],
+      "event_id": "75722252-2bee-4162-89a3-126672ed9f64"
+    },
+    {
+      "key": "event:4cd58638-a43e-4568-8d81-a14e18e7a1cc",
+      "reason": "Include the study’s qualitative method and limits rather than implying measured gains in creativity.",
+      "before": {
+        "headline": "Does AI Make Artists More Creative? The Conversation Shows Mixed Gains and Limits",
+        "what_happened": "AI tools allowed more people to create images from descriptions. The article highlights milestones like the Christie’s sale of Edmond de Belamy and MoMA’s Unsupervised installation, and notes that access to generative tools expanded around 2022.",
+        "body_paragraphs": [
+          "AI tools let more people try image creation from text, expanding who can participate in art. The piece notes that while AI broadens options, human craft and authorship still matter, since people decide meaning, presentation, and credit.",
+          "The article discusses shifting roles among artists, engineers, and institutions and how storytelling and credit are becoming part of the art itself."
+        ],
+        "limitation": "Limited to The Conversation article and its interviewed sources.",
+        "for_humans": "AI offers new paths, but humans still shape and credit the work.",
+        "claim_status": "reporting"
+      },
+      "after": {
+        "headline": "French researchers examine how AI changes artistic work and attribution",
+        "what_happened": "Writing in The Conversation, researchers describe interviews with 18 people involved in AI-assisted art. They argue that these tools can expand exploration while moving human work toward planning, selecting outputs and explaining who contributed.",
+        "body_paragraphs": [
+          "The article discusses examples including the Paris collective Obvious and museum installations. Its interviewees include artists, critics, researchers and engineers, rather than a representative sample of all artists.",
+          "The authors examine how creative and technical roles overlap and how presenting a machine as the creator can hide human contributions. The interviews do not establish a general or causal increase in artistic creativity."
+        ],
+        "limitation": "A qualitative interview-based analysis, not an experiment or a representative survey of artists.",
+        "for_humans": "The authors argue that human creative decisions and collaborators should remain visible.",
+        "claim_status": "analysis"
+      },
+      "source_urls": [
+        "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465",
+          "status": 200,
+          "response_sha256": "5893969dabdb980f139ebac9be4f83a6a42125357d7a05ebbd53c7538cfd6988"
+        }
+      ],
+      "event_id": "4cd58638-a43e-4568-8d81-a14e18e7a1cc"
+    },
+    {
+      "key": "event:61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd",
+      "reason": "Correct the mistranslated name using the source’s full Chinese name and the official Duke profile.",
+      "before": {
+        "headline": "Wolf Prize Winner Dobensky: AI Won't Replace Mathematicians, but Changes How They Work",
+        "what_happened": "Dobensky explained that AI currently acts as a powerful tool for finding and recombining math literature, not as an inventor of new ideas. She warned that AI cannot yet replace human proofs and understanding, and emphasized that researchers should use AI to handle heavy literature tasks while preserving human judgment.",
+        "body_paragraphs": [
+          "The Wolf Prize winner reflects on how AI can make math work quicker. AI can search and stitch together ideas from many papers, which helps researchers see connections faster. But Dobensky says a machine’s output is not the same as a new, proven mathematical idea, and human insight remains essential."
+        ],
+        "for_humans": "AI helps with reading and organizing math papers, but humans decide what matters.",
+        "for_ai": "AI should be used as an efficient tool to support mathematical research, not as a replacement for human insight."
+      },
+      "after": {
+        "headline": "Ingrid Daubechies says AI can assist mathematicians without replacing their judgment",
+        "what_happened": "In an interview during the World Laureates Forum, mathematician Ingrid Daubechies said AI can help search and combine mathematical literature. She cautioned that combining existing results is not the same as an original breakthrough and that people must understand and check proofs.",
+        "body_paragraphs": [
+          "Daubechies describes potential gains from using AI to handle large bodies of mathematical writing. Her comments distinguish useful assistance from evidence of independent conceptual invention.",
+          "She argues that human understanding and judgment remain necessary. This is one expert’s interview perspective, not a controlled evaluation of every AI system or a consensus statement from all mathematicians."
+        ],
+        "for_humans": "Daubechies argues that researchers should use AI assistance while checking and understanding the reasoning.",
+        "for_ai": "Her proposed role for AI is support for literature work, with people retaining mathematical judgment."
+      },
+      "source_urls": [
+        "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm",
+        "https://fitzpatrick.duke.edu/faculty/ingrid-daubechies"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm",
+          "status": 200,
+          "response_sha256": "a186c05c3be585336fbe1a93cd4175adfb87cd7bf4210589b3f48d7242c0fee9"
+        },
+        {
+          "url": "https://fitzpatrick.duke.edu/faculty/ingrid-daubechies",
+          "status": 200,
+          "response_sha256": "082cfb20cd80e60f2b38910704922aaa82b4fad930876ca0b5b512d00535ea1c"
+        }
+      ],
+      "event_id": "61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd"
+    },
+    {
+      "key": "event:c871cafc-aaec-4135-be78-467304176c01",
+      "reason": "Attribute decision-support benefits to the company’s account and distinguish development from deployment.",
+      "before": {
+        "for_humans": "AI helps people make better, informed choices without taking over."
+      },
+      "after": {
+        "for_humans": "The company describes decision support for staff; the source supplies no measured performance gains."
+      },
+      "source_urls": [
+        "https://journallecitoyen.com/articles/art-12966"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://journallecitoyen.com/articles/art-12966",
+          "status": 200,
+          "response_sha256": "792477eb4f6482ffba59613c0885807aa4e19b63ea680972d7c6f7183ada0c97"
+        }
+      ],
+      "event_id": "c871cafc-aaec-4135-be78-467304176c01"
+    },
+    {
+      "key": "event:41d91767-f7b9-41e1-95c0-5a62e24c3b5c",
+      "reason": "Keep proposed safety benefits attributed to the interviewee.",
+      "before": {
+        "for_humans": "We can stay safer by sharing AI incidents and building trust.",
+        "for_ai": "Use coordinated reporting and inclusive dialogue to lower risk and improve safety."
+      },
+      "after": {
+        "for_humans": "Lamy argues that cooperation and sharing serious AI incidents could help manage risks.",
+        "for_ai": "His proposal is coordinated incident reporting and inclusive discussion, not an already adopted safety system."
+      },
+      "source_urls": [
+        "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy",
+          "status": 200,
+          "response_sha256": "d0898e779122474182e54b92d1763eef5d5e63f07a6c6c190db8319caf7379d0"
+        }
+      ],
+      "event_id": "41d91767-f7b9-41e1-95c0-5a62e24c3b5c"
+    },
+    {
+      "key": "event:e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031",
+      "reason": "The claim about irreplaceable human capabilities is the lecturer’s argument, not an established experimental finding.",
+      "before": {
+        "for_humans": "Humans should cultivate uniquely human skills that AI cannot copy.",
+        "for_ai": "AI should support human thinking, not replace it."
+      },
+      "after": {
+        "for_humans": "Ma argues that education should develop human judgment and capabilities rather than train people to resemble AI.",
+        "for_ai": "He presents AI as support for human thinking, within his philosophical account of computability."
+      },
+      "source_urls": [
+        "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html",
+          "status": 200,
+          "response_sha256": "12b798f3d98ed9dac5e734ea436748dbf470720aae06c19b722da92344a262a7"
+        }
+      ],
+      "event_id": "e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031"
+    }
+  ],
+  "research": [
+    {
+      "key": "paper:be49d96abd2a3f5b615d1f08",
+      "reason": "Preserve abstract-only scope and identify the publication as a Perspective proposing a legal accountability framework.",
+      "before": {
+        "headline": "Responsibility for AI outcomes rests with design decisions",
+        "deck": "Explains how human aims shape AI and why tracing responsibility matters",
+        "what_happened": "The source says every machine learning system starts with a human goal. Data, how it is used, user interaction, and postlaunch checks add layers of human intent, so results reflect many aims, not one single voice, for any situation today.",
+        "body_paragraphs": [
+          "The main idea is that human goals guide what the system does. By checking goals, data choices, and after-launch oversight, teams can see who is responsible.",
+          "In practice, organizations should map who decided what, how data was chosen, and who watches the system after launch. This keeps safety tied to accountability."
+        ],
+        "why_it_matters": "Knowing who is in charge helps set rules and fixes; it avoids guessing and points to where rules should apply in AI system work today.",
+        "limitation": "Abstract-only scope; no new experiments or results are reported; preprint status not specified",
+        "research_label": "Journal article",
+        "claim_status": "study"
+      },
+      "after": {
+        "headline": "A PNAS Perspective links AI accountability to human design decisions",
+        "deck": "Martin Hilbert proposes tracing responsibility through the machine-learning pipeline.",
+        "what_happened": "In a PNAS Perspective, Martin Hilbert argues that AI responsibility can be traced through human choices about objectives, training data, deployment and oversight. The abstract proposes a way to analyse legal accountability; it does not report a new experiment.",
+        "body_paragraphs": [
+          "The argument treats AI outputs as the result of several layers of human intention rather than the speech of one actor. It proposes examining who contributed, causation and how responsibility should be shared.",
+          "The abstract also identifies unresolved problems, including opaque models, many contributors and harms that appear after deployment. This briefing covers the abstract, not a full-text reading or proof that the proposed framework works in court."
+        ],
+        "why_it_matters": "The Perspective offers a way to connect technical design choices with accountability while identifying remaining legal problems.",
+        "limitation": "Abstract-only summary of a published Perspective; no experimental findings or full-paper reading are claimed.",
+        "research_label": "Perspective",
+        "claim_status": "perspective"
+      },
+      "source_urls": [
+        "https://doi.org/10.1073/pnas.2610670123",
+        "https://pubmed.ncbi.nlm.nih.gov/42961910/"
+      ],
+      "retrieval_proofs": [
+        {
+          "url": "https://doi.org/10.1073/pnas.2610670123",
+          "status": 403,
+          "response_sha256": "5b5cdc6010079298a82762f9ddadf7f6f04dbc33b425a24afbd41ddee65b011c"
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42961910/",
+          "status": 200,
+          "response_sha256": "44fc4bbc72af9f437c90a92996c3b08fccdfd470e15aa8919d1c75b18d99a984"
+        }
+      ]
+    }
+  ]
+}

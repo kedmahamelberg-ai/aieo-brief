@@ -1,0 +1,338 @@
+{
+  "schema_version": "brief_social_source_audit_v1",
+  "publication_week": "2026-W45",
+  "review_revision": 2,
+  "baseline_batch_sha256": "e3369c77933e09d4ab9a5b84066e14fe604fc8a194eec2a5240a72224445cee7",
+  "reviewed_on": "2026-11-02",
+  "status": "SOURCE_CHECKED_CORRECTIONS_REQUIRE_OWNER_REVIEW",
+  "scope": "All 15 original selections and all 60 tracked platform URLs; replacement articles also compared with their sources. Photo rights, subjects and country relevance checked.",
+  "original_destination_checks": {
+    "total": 60,
+    "http_200": 60,
+    "intended_article_matches": 60
+  },
+  "limitations": [
+    "PNAS full paper was not reviewed: DOI access was challenged. The published abstract was verified in PubMed.",
+    "A working URL does not establish article accuracy. Source fidelity and evidence scope were checked separately.",
+    "Platform previews reproduce the supplied text and media; native platform layout may vary."
+  ],
+  "items": [
+    {
+      "original_topic_id": "MON10_US_6761C89B",
+      "corrected_topic_id": "MON10_US_6761C89B",
+      "selection": "VOLTA infostealer",
+      "result": "CORRECTED",
+      "finding": "The model ranks stolen information after collection. Model chaining bypasses refusals; it is not a safety safeguard.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/ai-appraisal-model-driven-victim-prioritization-volta-limits-gains/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/ai-appraisal-model-driven-victim-prioritization-volta-limits-gains/index.html",
+      "checked_source_urls": [
+        "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer"
+      ],
+      "article_content_sha256": "8add204d184c27cc823d0b351b8e55593ffaff48a854f64e5ceb628edca1f7b5"
+    },
+    {
+      "original_topic_id": "MON18_CA_965AD1A7",
+      "corrected_topic_id": "MON18_CA_965AD1A7",
+      "selection": "Chambly family AI book",
+      "result": "PASS",
+      "finding": "The Canadian book report supports the article and social claims. Advice and benefits remain attributed to the author.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/chambly-how-integrate-artificial-intelligence-home-quebec-expert/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/chambly-how-integrate-artificial-intelligence-home-quebec-expert/index.html",
+      "checked_source_urls": [
+        "https://www.journaldechambly.com/culture/chambly-comment-integrer-lintelligence-artificielle-a-la-maison"
+      ],
+      "article_content_sha256": "5e3742e6390910991621f453bb2b286f1fad9955321f25fb6d3fc4ae2a29c9d2"
+    },
+    {
+      "original_topic_id": "TUE10_GB_B8AE4708",
+      "corrected_topic_id": "TUE10_GB_9F4E47B6",
+      "selection": "Lit Hub essay → NHS Highland",
+      "result": "REPLACED_AND_CORRECTED",
+      "finding": "US essay was incorrectly assigned UK; its strong anti-AI argument was softened into the opposite framing. Corrected original essay. UK replacement uses NHS Highland, correcting brain/spine results to comparable to staff and identifying projected time savings.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/artificial-intelligence-horror-story/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/using-ai-speed-up-mri-scans-nhs-highland/index.html",
+      "checked_source_urls": [
+        "https://lithub.com/artificial-intelligence-is-a-horror-story",
+        "https://www.nhshighland.scot.nhs.uk/about/nhs-highland-charity/how-we-make-a-difference/using-artificial-intelligence-to-speed-up-mri-scans-in-nhs-highland"
+      ],
+      "article_content_sha256": "dcb45e003288acfb63b9f41c55d1683f66a57eba9fa1a615e1859470f103f486"
+    },
+    {
+      "original_topic_id": "TUE18_FR_F2E9B175",
+      "corrected_topic_id": "TUE18_FR_D28683D7",
+      "selection": "Asian growth analysis → Mistral",
+      "result": "REPLACED",
+      "finding": "French-language regional Asian analysis did not support a France-labelled post. Replaced with French company Mistral’s model release; performance claims remain attributed to the company.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/asian-growth-driven-artificial-intelligence/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/mistral-has-launched-ai-model-giving-over-cybersecurity/index.html",
+      "checked_source_urls": [
+        "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle",
+        "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse",
+        "https://www.euronews.com/2026/10/29/mistral-releases-latest-ai-model-for-download-giving-companies-more-control-over-their-cyb",
+        "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html"
+      ],
+      "article_content_sha256": "245b13864d5e1d0a59c7525d201b32c88ec33f4a91a3239b4f5df00b22af28a6"
+    },
+    {
+      "original_topic_id": "WED06_RESEARCH",
+      "corrected_topic_id": "WED06_RESEARCH",
+      "selection": "Hilbert PNAS Perspective",
+      "result": "CORRECTED_SCOPE",
+      "finding": "Published Perspective proposing a responsibility framework, not experimental research. DOI returned 403; authoritative PubMed abstract was checked. The corrected article and post explicitly limit their scope to the abstract.",
+      "original_article_url": "https://brief.hamelberg-ai.com/research/responsibility-ai-outcomes-rests-design-decisions/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/research/responsibility-ai-outcomes-rests-design-decisions/index.html",
+      "checked_source_urls": [
+        "https://doi.org/10.1073/pnas.2610670123",
+        "https://pubmed.ncbi.nlm.nih.gov/42961910/"
+      ],
+      "article_content_sha256": "ec5b061176af7ab6b92668002ddd66f3e24714845feb5265713b62fd7cc28345"
+    },
+    {
+      "original_topic_id": "WED10_CN_48D928D5",
+      "corrected_topic_id": "WED10_CN_48D928D5",
+      "selection": "Chengdu couplet tool",
+      "result": "CORRECTED",
+      "finding": "Commemorative/travel couplets should not be translated as funeral memorial writing. Product benefits are attributed to developers.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/chengdu-launches-xiaolian-ai-help-public-traditional-couplets/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/chengdu-launches-xiaolian-ai-help-public-traditional-couplets/index.html",
+      "checked_source_urls": [
+        "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html"
+      ],
+      "article_content_sha256": "2a330a47b01c04d3fb081839c23b2c75a25aba68a6d6d897ce4ddaf56c1b4328"
+    },
+    {
+      "original_topic_id": "WED18_US_DEB8402C",
+      "corrected_topic_id": "WED18_US_DEB8402C",
+      "selection": "Accounting education essay",
+      "result": "CORRECTED",
+      "finding": "One educator’s classroom anecdote does not establish a general finding about student preferences. Revised headline, article and post preserve the essay’s limited evidence.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/ai-ethics-self-study-mixed-lessons-humans-journal-finds/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/ai-ethics-self-study-mixed-lessons-humans-journal-finds/index.html",
+      "checked_source_urls": [
+        "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study"
+      ],
+      "article_content_sha256": "2aca568142160f1e58f736a2c7b6e6a173055328d67e5148b61ed541b1875421"
+    },
+    {
+      "original_topic_id": "THU10_CA_963B0DEA",
+      "corrected_topic_id": "THU10_CA_963B0DEA",
+      "selection": "Agnico Eagle mining",
+      "result": "CORRECTED_IMAGE_AND_ATTRIBUTION",
+      "finding": "Source supports deployed monitoring and separate pilots. Expected benefits are company claims. Replaced wildfire image with a neutral Canadian landscape, labelled illustrative.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/agnico-eagle-ai-aids-mining-real-time-data-driven-decisions/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/agnico-eagle-ai-aids-mining-real-time-data-driven-decisions/index.html",
+      "checked_source_urls": [
+        "https://journallecitoyen.com/articles/art-12966"
+      ],
+      "article_content_sha256": "1fe588869cfdc445f668629a2da8b0f7ab5e86e6bd2ba55277b89d3dd884a508"
+    },
+    {
+      "original_topic_id": "THU18_GB_1F5C9C12",
+      "corrected_topic_id": "THU18_GB_398A2BEB",
+      "selection": "Dutch schools → Oxford Reuters Institute",
+      "result": "REPLACED",
+      "finding": "Dutch policy proposal is not UK news. Original reporting remains a proposal. Added a substantive Brief summary of Oxford’s nine-country survey, six-country trend scope, self-report and online-sampling limits.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/dutch-lawmakers-seek-keep-generative-ai-school-learning/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/generative-ai-news-report-2026-standalone-information-infrastructure/index.html",
+      "checked_source_urls": [
+        "https://nltimes.nl/2026/10/29/dutch-mps-want-ban-primary-school-children-using-generative-ai",
+        "https://www.hungarianconservative.com/articles/current/netherlands-primary-schools-generative-ai-restrictions",
+        "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+      ],
+      "article_content_sha256": "b46fe85f3d703cb3c55c69887160678f57df48fbf859dc100456a0c7a2af7c77"
+    },
+    {
+      "original_topic_id": "FRI10_FR_8562AB5E",
+      "corrected_topic_id": "FRI10_FR_8562AB5E",
+      "selection": "Pascal Lamy interview",
+      "result": "PASS_WITH_ATTRIBUTION_EDIT",
+      "finding": "Interview supports the account. Regulation and expected benefits are Lamy’s proposals, not adopted law or measured outcomes.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/artificial-intelligence-s-bit-like-atomic-international-agreements/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/artificial-intelligence-s-bit-like-atomic-international-agreements/index.html",
+      "checked_source_urls": [
+        "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy"
+      ],
+      "article_content_sha256": "0ea1b6028da129d3a0291a486b0f9a5c7f8ac8f22ec3117529cf8260f5dc2d3d"
+    },
+    {
+      "original_topic_id": "FRI18_CN_3FA54CFF",
+      "corrected_topic_id": "FRI18_CN_3FA54CFF",
+      "selection": "Ma Zhaoyuan lecture",
+      "result": "PASS_WITH_ATTRIBUTION_EDIT",
+      "finding": "Lecture supports the account. Claims about AI and human understanding are the speaker’s views, not experimentally demonstrated limits.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/ma-zhaoyuan-humans-keep-irreplaceable-value-within-limits/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/ma-zhaoyuan-humans-keep-irreplaceable-value-within-limits/index.html",
+      "checked_source_urls": [
+        "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html"
+      ],
+      "article_content_sha256": "7de82473e26c5d86e7344334e0e79d0e9b3c13f12cc1d56202f16eca2b6d8546"
+    },
+    {
+      "original_topic_id": "SAT10_CA_C65B8770",
+      "corrected_topic_id": "SAT10_CA_C65B8770",
+      "selection": "Le Devoir and fear of AI",
+      "result": "PASS",
+      "finding": "Reported expert comments support the article. It is not a representative national opinion survey.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/ai-new-face-fear-unknown/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/ai-new-face-fear-unknown/index.html",
+      "checked_source_urls": [
+        "https://www.ledevoir.com/actualites/societe/1021130/ia-nouveau-visage-peur-inconnu"
+      ],
+      "article_content_sha256": "ab8b437ee57dc9a2d11516818e9b8620349228ea1e775589027cdce4f1cc38dd"
+    },
+    {
+      "original_topic_id": "SAT18_GB_0E4CD0EF",
+      "corrected_topic_id": "SAT18_GB_8AF13F5B",
+      "selection": "EFF fair use → Civil Justice Council",
+      "result": "REPLACED",
+      "finding": "US copyright advocacy was incorrectly labelled UK. Added a substantive summary of England and Wales recommendations, checked against the report’s executive recommendations. Targeted safeguards are proposals; no blanket disclosure rule is asserted.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/rewriting-copyright-law-generative-ai-would-hurt-everyone/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/cjc-safe-use-artificial-intelligence-prepare-court-documents/index.html",
+      "checked_source_urls": [
+        "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone",
+        "https://www.lawgazette.co.uk/news/cjc-reports-on-safe-use-of-artificial-intelligence-to-prepare-court-documents/5128388.article"
+      ],
+      "article_content_sha256": "7a2b415b34e396f081750e5e32de04da13d1fa87907ae5bd95ec92331479cff3"
+    },
+    {
+      "original_topic_id": "SUN10_FR_2BB23FAE",
+      "corrected_topic_id": "SUN10_FR_2BB23FAE",
+      "selection": "French artists and creativity",
+      "result": "CORRECTED_METHOD",
+      "finding": "Added the qualitative method: 18 interviews, not a causal experiment proving that AI increases creativity.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/does-artificial-intelligence-make-artists-more-creative/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/does-artificial-intelligence-make-artists-more-creative/index.html",
+      "checked_source_urls": [
+        "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465"
+      ],
+      "article_content_sha256": "132ac5da64cdfd7969ff532197cc48f67323e5e782cef2e65e47f18e7bc60050"
+    },
+    {
+      "original_topic_id": "SUN18_CN_CD90D5E8",
+      "corrected_topic_id": "SUN18_CN_CD90D5E8",
+      "selection": "Ingrid Daubechies interview",
+      "result": "CORRECTED_NAME_AND_IMAGE",
+      "finding": "Corrected the mistranslated name using Duke’s official profile. Claims remain expert opinion. Replaced an unrelated man’s portrait with an illustrative Shanghai skyline.",
+      "original_article_url": "https://brief.hamelberg-ai.com/story/wolf-prize-winner-dobensky-ai-won-they-work/index.html",
+      "corrected_article_url": "https://brief.hamelberg-ai.com/story/wolf-prize-winner-dobensky-ai-won-they-work/index.html",
+      "checked_source_urls": [
+        "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm"
+      ],
+      "article_content_sha256": "c776c1b875a00330e14f8db5933837b9fc38a937c5d12b1d5c91b5129a2f1a18"
+    }
+  ],
+  "source_http_checks": [
+    {
+      "url": "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:47.788868+01:00"
+    },
+    {
+      "url": "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:47.790884+01:00"
+    },
+    {
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:47.792656+01:00"
+    },
+    {
+      "url": "https://doi.org/10.1073/pnas.2610670123",
+      "kind": "original_source",
+      "status": 403,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:47.795958+01:00"
+    },
+    {
+      "url": "https://journallecitoyen.com/articles/art-12966",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:47.994836+01:00"
+    },
+    {
+      "url": "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:48.060926+01:00"
+    },
+    {
+      "url": "https://lithub.com/artificial-intelligence-is-a-horror-story",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:48.300006+01:00"
+    },
+    {
+      "url": "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:48.623780+01:00"
+    },
+    {
+      "url": "https://nltimes.nl/2026/10/29/dutch-mps-want-ban-primary-school-children-using-generative-ai",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:48.916997+01:00"
+    },
+    {
+      "url": "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:48.969986+01:00"
+    },
+    {
+      "url": "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:49.083841+01:00"
+    },
+    {
+      "url": "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:49.089763+01:00"
+    },
+    {
+      "url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:49.156760+01:00"
+    },
+    {
+      "url": "https://www.hungarianconservative.com/articles/current/netherlands-primary-schools-generative-ai-restrictions",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:49.336732+01:00"
+    },
+    {
+      "url": "https://www.journaldechambly.com/culture/chambly-comment-integrer-lintelligence-artificielle-a-la-maison",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:50.396595+01:00"
+    },
+    {
+      "url": "https://www.ledevoir.com/actualites/societe/1021130/ia-nouveau-visage-peur-inconnu",
+      "kind": "original_source",
+      "status": 200,
+      "sha256": null,
+      "captured_at": "2026-11-02T12:35:50.457459+01:00"
+    }
+  ]
+}

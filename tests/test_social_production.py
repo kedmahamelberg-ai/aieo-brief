@@ -15,10 +15,18 @@ import validate_social_package as validation
 
 
 def news(market,number):
- return dict(kind='news',edition='2026-W43',period_start='2026-10-19',period_end='2026-10-25',date='2026-10-24',markets=[market],path=f'story/{market.lower()}-{number}/index.html',headline='A useful AI development',deck='A source-backed introduction',what_happened='Researchers reported a finding in a specific study.',body_paragraphs=['Evidence and context.'],sources=[{'url':'https://example.org/source'}],has_editorial=True)
+ return dict(kind='news',edition='2026-W43',period_start='2026-10-19',period_end='2026-10-25',date='2026-10-24',markets=[market],path=f'story/{market.lower()}-{number}/index.html',headline='A useful AI development in '+social.COUNTRIES[market],deck='A source-backed introduction',what_happened='Researchers reported a finding in a specific study.',body_paragraphs=['Evidence and context.'],sources=[{'url':'https://example.org/source'}],has_editorial=True)
 
 
 class SocialProduction(unittest.TestCase):
+ def test_discovery_market_cannot_turn_dutch_news_into_uk_news(self):
+  row=news('GB',1);row.update(headline='Dutch lawmakers propose rules for school AI',what_happened='The Dutch parliament discusses a proposal for primary schools.')
+  self.assertEqual(social.verified_markets(row),[])
+ def test_us_essay_is_not_uk_news_and_nhs_is_uk_news(self):
+  row=news('GB',1);row.update(headline='A literary critic discusses AI and dignity',what_happened='An essay compares generative AI with horror.')
+  self.assertEqual(social.verified_markets(row),[])
+  row.update(headline='NHS Highland tests MRI referral support')
+  self.assertEqual(social.verified_markets(row),['GB'])
  def setUp(self):
   self.news=[news(m,n) for m in social.COUNTRIES for n in range(4)]
   self.items=self.news+[dict(kind='research',date='2026-10-22',path='research/one/index.html',headline='A research result',deck='A research question',what_happened='An abstract describes the findings.',sources=[{'url':'https://example.org/paper'}],research_label='Preprint',summary_basis='Summary of the abstract')]
