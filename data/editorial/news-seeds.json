@@ -221,6 +221,42 @@
           }
         ]
       }
+    },
+    "42652864-f9b9-420a-bde8-e018d404882f": {
+      "evidence_sha256": [
+        "55462b16ca0eed81fc52497368638716e854e5e1df8317a16e78debdb52d1eb7"
+      ],
+      "draft": {
+        "editorial_headline": "Morgan State grant funds study of how AI combines biomedical signals",
+        "editorial_deck": "A four-year federal award supports research on shared and distinct information across biomedical observations.",
+        "what_happened": "Morgan State University says a National Institutes of Health award will support a four-year project led by Timothy Oladunni. The team will study how AI systems separate information shared across biomedical observations from insights unique to each source.",
+        "why_it_matters": "The project aims to test when combining data helps model performance and reliability. The announcement describes planned foundational research, not completed findings or measured clinical benefits.",
+        "for_humans": "The grant creates opportunities for Morgan State students to participate in biomedical AI research.",
+        "for_ai": "Researchers aim to improve how models represent shared and distinct information in biomedical signals.",
+        "body_paragraphs": [
+          "The initial award is $130,134, and the university expects approximately $520,000 over the four-year project. It began September 10, 2026, and is scheduled through July 31, 2030.",
+          "Oladunni’s earlier work examined how more data can add overlap and computational cost without necessarily improving predictions. The new project builds on that idea by developing and testing approaches to complementary information."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The announcement describes a research plan and reports no results from the new project.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Morgan State University has received a four-year research award totaling approximately $520,000 from the National Institutes of Health (NIH)"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "The project, titled ORBIL-AI: Orthogonality-Regularized Biomedical Information-theoretic Learning, is led by Timothy Oladunni"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "we are developing and testing principles that explain when combining information is beneficial and how those relationships affect model performance and reliability."
+          }
+        ]
+      }
     }
   }
 }
