@@ -1,9 +1,9 @@
 import sys
 import unittest
 from pathlib import Path
-from unittest.mock import Mock, patch
+from unittest.mock import MagicMock, Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from research_reading import extract_paper, needs_upgrade, READING_VERSION, PDF_READER_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
+from research_reading import extract_paper, extract_arxiv_html, read_paper, needs_upgrade, READING_VERSION, PDF_READER_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
 import editorial_engine as engine
 from validate_public_site import validate_research_reading, validate_weekly_research_window
 
@@ -67,6 +67,50 @@ class FullPaperReading(unittest.TestCase):
         self.assertFalse(needs_upgrade({**row,'evidence_scope':'abstract','full_text_status':'pdf_text_unreadable',
                                         'pdf_reader_version':PDF_READER_VERSION,'full_text_retry_after':'2099-01-01'}))
         self.assertFalse(allowed_pdf('https://arxiv.org.evil.example/paper'))
+
+    def test_unreadable_arxiv_pdf_uses_complete_verified_html(self):
+        title='When Should We Intervene at Test Time?'
+        html=('<html><body><nav>Site navigation</nav><article class="ltx_document">'
+              '<h1 class="ltx_title_document">'+title+'</h1>'
+              '<div class="ltx_abstract">The abstract describes the problem. </div>'
+              '<section><h2>Methods</h2><p>'+('Methods explain the intervention and its evidence. '*35)+'</p></section>'
+              '<section><h2>Results</h2><p>'+('Results include observed tradeoffs and limits. '*35)+'</p></section>'
+              '</article><footer>Report an issue</footer></body></html>').encode()
+        def response(content, content_type):
+            item=MagicMock(status_code=200,headers={'Content-Type':content_type},is_redirect=False)
+            item.__enter__.return_value=item
+            item.iter_content.return_value=[content]
+            return item
+        paper={'arxiv_id':'2610.37658v1','pdf_url':'https://arxiv.org/pdf/2610.37658v1',
+               'original_headline':title}
+        with patch('research_reading.requests.get',side_effect=[response(b'not a pdf','application/pdf'),response(html,'text/html')]) as get:
+            reading=read_paper(paper)
+        self.assertEqual(reading['status'],'read')
+        self.assertEqual(reading['format'],'arxiv_html')
+        self.assertEqual(reading['sections'],2)
+        self.assertIn('Results include observed tradeoffs',reading['text'])
+        self.assertNotIn('Site navigation',reading['text'])
+        self.assertEqual(get.call_args_list[1].args[0],'https://arxiv.org/html/2610.37658v1')
+        validate_research_reading({'evidence_scope':'paper_text','summary_basis':'Summary of the paper',
+                                   'full_text_status':'read','limitation':'Only two controlled tests were reported.',
+                                   'arxiv_id':paper['arxiv_id'],'paper_source_url':reading['url'],
+                                   'paper_sections':reading['sections'],'paper_text_sha256':reading['text_sha256']})
+        with self.assertRaises(ValueError):
+            validate_research_reading({'evidence_scope':'paper_text','summary_basis':'Summary of the paper',
+                                       'full_text_status':'read','limitation':'Only two controlled tests were reported.',
+                                       'arxiv_id':paper['arxiv_id'],'paper_source_url':'https://arxiv.org/html/9999.99999',
+                                       'paper_sections':reading['sections'],'paper_text_sha256':reading['text_sha256']})
+        with self.assertRaisesRegex(ValueError,'paper_identity_mismatch'):
+            extract_arxiv_html(html,'Another Paper')
+        with self.assertRaisesRegex(ValueError,'incomplete_html_article'):
+            extract_arxiv_html(html.replace(b'</article>',b''),title)
+
+    def test_prior_arxiv_pdf_failure_gets_one_immediate_html_retry(self):
+        row={'has_editorial':True,'research_reading_version':READING_VERSION,'evidence_scope':'abstract',
+             'arxiv_id':'2610.37658v1','full_text_status':'pdf_text_unreadable',
+             'pdf_reader_version':PDF_READER_VERSION,'full_text_retry_after':'2099-01-01'}
+        self.assertTrue(needs_upgrade(row))
+        self.assertFalse(needs_upgrade({**row,'html_reader_version':1}))
 
     def test_long_complete_pdf_is_read_without_truncating_its_last_page(self):
         pages=[Mock() for _ in range(169)]
