@@ -1,21 +1,21 @@
 {
   "release_id": "2026-W44",
-  "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+  "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
   "counts": {
-    "unchanged": 32,
+    "unchanged": 12,
     "source_not_ready": 0,
-    "new_registry": 24,
-    "needs_model": 25,
+    "source_date_mismatch": 1,
+    "new_registry": 4,
+    "needs_model": 44,
     "needs_rebind": 0,
-    "selected": 25,
-    "generated": 19,
+    "selected": 4,
+    "generated": 3,
     "rebound": 0,
-    "failed": 6,
+    "failed": 1,
     "deferred": 0
   },
   "failure_counts": {
-    "claim_grounding_failed": 4,
-    "source_scope_review_failed": 2
+    "claim_grounding_failed": 1
   },
   "failed_items": [
     {
@@ -23,49 +23,8 @@
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
-    },
-    {
-      "event_id": "11dcf5d8-1bd7-4629-8a91-15442fbefeea",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
-      "failed_checks": [
-        "headline_supported"
-      ]
-    },
-    {
-      "event_id": "03c19c5b-ebc2-49d1-b4ad-020e753d6fba",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
-    },
-    {
-      "event_id": "e709b8c6-8cbb-4316-90e6-126ccb92066f",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
-    },
-    {
-      "event_id": "254e6644-7404-4bb6-922a-548e875708b5",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
-      "failed_checks": [
-        "headline_supported"
-      ]
-    },
-    {
-      "event_id": "5a89027e-1050-46e1-9cb2-98d69839c6b9",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
     }
   ],
-  "updated_at": "2026-11-02T11:35:55.209404+00:00"
+  "updated_at": "2026-11-02T14:44:08.338323+00:00"
 }
