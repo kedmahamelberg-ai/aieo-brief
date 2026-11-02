@@ -165,7 +165,7 @@ class WeeklyApprovedCorrections(unittest.TestCase):
         audit = json.loads((root/'data/editorial/weekly-corrections-2026-10-26.json').read_text())
         approved = json.loads((root/'data/weekly-overviews/approved/2026-W43.json').read_text())
         section = approved['research']
-        available = {x['key']:x for x in apply_corrections(papers(), root)}
+        available = {x['key']:x for x in apply_corrections(papers(sanitize=False), root)}
         self.assertEqual(section, audit['after'])
         self.assertTrue(ready_valid(section, available))
         validate_section(section)
