@@ -408,12 +408,14 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    try:
     scope=review_scope(draft,review_sources,deadline,paper=kind=='paper')
    except EditorialError as error:
-    # An optional news limitation may be rejected even when every substantive
-    # claim is grounded. Omit it and verify the entire draft again rather than
-    # regenerating all fields with the same unsupported caveat.
-    if kind!='news' or not draft.get('limitation') or error.code!='claim_grounding_failed' or not re.search(r'\blimitation\b',error.feedback,re.I):
+    # The reviewer can reject an unsupported optional reading while the core
+    # news claims are grounded. Remove only the named optional fields, then
+    # verify the entire draft again rather than accepting a partial review.
+    optional=[field for field in ('for_humans','for_ai') if re.search(r'\b'+field+r'\s*:',error.feedback,re.I)]
+    if re.search(r'\blimitation\b',error.feedback,re.I):optional.append('limitation')
+    if kind!='news' or error.code!='claim_grounding_failed' or not any(draft.get(field) for field in optional):
      raise
-    draft['limitation']=''
+    for field in optional:draft[field]=''
     draft=validate_draft(draft,sources,kind)
     scope=review_scope(draft,review_sources,deadline,paper=False)
    return draft,{'draft_origin':'reviewed_editorial_seed' if attempt==0 and event.get('draft_seed') else 'model','engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
