@@ -423,7 +423,19 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
     draft.update({k:edited[k] for k in readable_schema['required']})
    draft=validate_draft(draft,sources,kind)
    review_sources=sources+[{'source_number':0,'evidence':'Supplied reading scope: '+kind+'. Publication label: '+str(event.get('research_label','unspecified'))+'. '+ '; '.join('Source '+str(s['source_number'])+' evidence basis: '+str(s.get('evidence_basis','unspecified')) for s in sources)}]
-   scope=review_scope(draft,review_sources,deadline,paper=kind=='paper')
+   try:
+    scope=review_scope(draft,review_sources,deadline,paper=kind=='paper')
+   except EditorialError as error:
+    # The reviewer can reject an unsupported optional reading while the core
+    # news claims are grounded. Remove only the named optional fields, then
+    # verify the entire draft again rather than accepting a partial review.
+    optional=[field for field in ('for_humans','for_ai') if re.search(r'\b'+field+r'\s*:',error.feedback,re.I)]
+    if re.search(r'\blimitation\b',error.feedback,re.I):optional.append('limitation')
+    if kind!='news' or error.code!='claim_grounding_failed' or not any(draft.get(field) for field in optional):
+     raise
+    for field in optional:draft[field]=''
+    draft=validate_draft(draft,sources,kind)
+    scope=review_scope(draft,review_sources,deadline,paper=False)
    return draft,{'draft_origin':'reviewed_editorial_seed' if attempt==0 and event.get('draft_seed') else 'model','engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
   except (ValueError,requests.RequestException) as e:
    last=e

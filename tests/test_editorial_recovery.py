@@ -197,6 +197,26 @@ class EditorialRecovery(unittest.TestCase):
             with self.assertRaises(engine.EditorialError):
                 engine.review_scope(draft, sources)
         self.assertEqual(model.call_count, 1)
+    def test_news_rechecks_whole_draft_without_unsupported_optional_limitation(self):
+        draft, sources = fixture()
+        rejected = engine.EditorialError('claim_grounding_failed', 'Grounding failed',
+                                         stage='scope_review', feedback='limitation: not stated in source')
+        with patch.object(engine, 'review_scope', side_effect=[rejected, {'grounding': {}}]) as review:
+            result, _ = engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
+        self.assertEqual(result['limitation'], '')
+        self.assertEqual(review.call_count, 2)
+        self.assertEqual(review.call_args.args[0]['limitation'], '')
+
+    def test_news_rechecks_whole_draft_without_unsupported_ai_reading(self):
+        draft, sources = fixture()
+        draft['for_ai'] = 'The source reports a new model benefit.'
+        rejected = engine.EditorialError('claim_grounding_failed', 'Grounding failed',
+                                         stage='scope_review', feedback='for_ai: forecast not stated in source')
+        with patch.object(engine, 'review_scope', side_effect=[rejected, {'grounding': {}}]) as review:
+            result, _ = engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
+        self.assertEqual(result['for_ai'], '')
+        self.assertEqual(result['limitation'], draft['limitation'])
+        self.assertEqual(review.call_count, 2)
 
     def test_absent_dimensions_do_not_force_an_invented_effect(self):
         for field in ('for_humans', 'for_ai'):
