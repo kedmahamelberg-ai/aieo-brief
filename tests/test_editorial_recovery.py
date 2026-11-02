@@ -177,6 +177,25 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(result['what_happened'], draft['what_happened'])
         self.assertEqual(proof['draft_origin'], 'model')
 
+    def test_news_removes_only_named_unsupported_paragraph_then_rechecks_all_fields(self):
+        draft, sources = fixture()
+        draft['body_paragraphs'].append('A future payoff is guaranteed.')
+        rejected = engine.EditorialError('claim_grounding_failed', 'Grounding failed',
+                                         stage='scope_review', feedback='body_paragraphs[1]: future payoff not in source')
+        with patch.object(engine, 'review_scope', side_effect=[rejected, {'grounding': {}}]) as review:
+            result, _ = engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
+        self.assertEqual(result['body_paragraphs'], [draft['body_paragraphs'][0]])
+        self.assertEqual(review.call_count, 2)
+        self.assertEqual(review.call_args.args[0]['editorial_headline'], draft['editorial_headline'])
+
+    def test_news_keeps_sole_paragraph_when_reviewer_rejects_it(self):
+        draft, sources = fixture()
+        rejected = engine.EditorialError('claim_grounding_failed', 'Grounding failed',
+                                         stage='scope_review', feedback='body_paragraphs[0]: unsupported')
+        with patch.object(engine, 'review_scope', side_effect=rejected) as review:
+            with self.assertRaises(engine.EditorialError):
+                engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
+
     def test_omitted_entity_gets_second_full_grounding_review(self):
         draft, sources = fixture()
         first = accepted_review(draft)
