@@ -3,14 +3,14 @@
     "2026-W45": {
       "source_edition": "2026-W44",
       "publication_week": "2026-W45",
-      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41409498209/artifacts/13124519236",
-      "run_id": "41409498209",
-      "artifact_id": "13124519236",
-      "batch_sha256": "e3369c77933e09d4ab9a5b84066e14fe604fc8a194eec2a5240a72224445cee7",
-      "provider_message_id": "01a19bea-631b-7653-a1e5-1741fb31c497",
+      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41442991736/artifacts/13140303719",
+      "run_id": "41442991736",
+      "artifact_id": "13140303719",
+      "batch_sha256": "4ff515c8e476aa43b7caa6003cefd50e4266cfd7451a156d1c2b594dbcdf3136",
+      "provider_message_id": "01a19c2f-488d-7bad-b389-26ae0ff69dc7",
       "review_version": "post-preview-v2",
-      "review_run_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41433111558",
-      "accepted_at": "2026-11-02T11:59:52.257098+01:00",
+      "review_run_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41443100761",
+      "accepted_at": "2026-11-02T13:15:07.465507+01:00",
       "recipient": "kedma@hamelberg-ai.com",
       "status": "accepted_by_email_provider"
     }
