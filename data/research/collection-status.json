@@ -30,7 +30,7 @@
       "key": "paper:a16e0523d2143d9984fed614",
       "status": "arxiv_authors",
       "source_verified": true,
-      "institutions": 5
+      "institutions": 2
     },
     {
       "key": "paper:1de2657fc1355d9f28f75849",
@@ -42,13 +42,13 @@
       "key": "paper:de6674789d124556ac1d8e17",
       "status": "arxiv_authors",
       "source_verified": true,
-      "institutions": 3
+      "institutions": 1
     },
     {
       "key": "paper:2dedc4dc558b8a96beade31c",
       "status": "arxiv_authors",
       "source_verified": true,
-      "institutions": 2
+      "institutions": 1
     },
     {
       "key": "paper:2b534ae15654aff4cd88fc4c",
@@ -69,43 +69,13 @@
       "institutions": 5
     },
     {
-      "key": "paper:f877ea74f804370c463f3135",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 2
-    },
-    {
       "key": "paper:eef2f5c6eed261c5b6c3d76c",
       "status": "cached",
       "source_verified": true,
       "institutions": 2
     },
     {
-      "key": "paper:1dbf169232bfe56a98161086",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
-      "key": "paper:d907a9308040263ee845963c",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
-      "key": "paper:45e83a947a80ae191ee436a7",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
       "key": "paper:6e9ca4b2faaee021f6509905",
-      "status": "cached",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
-      "key": "paper:4b728467c180ee49d0785123",
       "status": "cached",
       "source_verified": true,
       "institutions": 1
@@ -220,7 +190,7 @@
     }
   ],
   "recovery": {
-    "recovered": 25,
+    "recovered": 20,
     "unavailable": 0
   }
 }

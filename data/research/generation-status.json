@@ -1,47 +1,48 @@
 {
-  "generated": 5,
+  "generated": 10,
   "failed": 4,
   "metadata_only": 0,
-  "deferred": 22,
+  "deferred": 12,
   "unchanged": 2,
-  "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+  "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
   "failure_counts": {
+    "source_scope_review_failed": 1,
     "claim_grounding_failed": 2,
-    "model_output_limit": 1,
-    "model_connection_error": 1
+    "research_unexplained_shorthand": 1
   },
   "failed_items": [
     {
       "key": "paper:7cba509615081b2bc0d1faf2",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+      "failed_checks": [
+        "headline_supported",
+        "claim_status_preserved"
+      ]
     },
     {
       "key": "paper:beaf7b4a534a2a4135c21b97",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
     },
     {
-      "key": "paper:eef2f5c6eed261c5b6c3d76c",
-      "error_type": "AIError",
-      "stage": "draft",
-      "code": "model_output_limit",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
-      "max_completion_tokens": 8192,
-      "completion_tokens": 8192,
-      "reasoning_tokens": 8192
-    },
-    {
-      "key": "paper:f531ec67658703d4a74dc338",
-      "error_type": "AIError",
+      "key": "paper:62a5453460a8a204b01b2fa1",
+      "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "model_connection_error",
-      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "key": "paper:3a3475ffddec2b1bfb6c31e2",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "research_unexplained_shorthand",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
     }
   ],
-  "updated_at": "2026-11-02T09:45:18.089221+00:00"
+  "updated_at": "2026-11-02T14:26:06.081322+00:00"
 }
