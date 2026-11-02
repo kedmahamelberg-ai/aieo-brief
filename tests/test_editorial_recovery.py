@@ -218,6 +218,18 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(result['limitation'], draft['limitation'])
         self.assertEqual(review.call_count, 2)
 
+    def test_long_news_report_is_read_in_complete_bounded_segments(self):
+        source = {'source_number': 1, 'evidence_basis': 'full_source',
+                  'evidence': ('A complete report paragraph with substantial context.\n' * 1700)}
+        with patch.object(engine, 'read_segment', return_value=('Checked segment note',
+                                                                ['A complete report paragraph'])) as reader:
+            notes, trace = engine.compile_evidence([source])
+        self.assertGreater(len(trace), 24)
+        self.assertLessEqual(len(trace), 40)
+        self.assertEqual(trace[0]['start'], 0)
+        self.assertEqual(trace[-1]['end'], len(source['evidence']))
+        self.assertEqual(reader.call_count, len(notes))
+
     def test_absent_dimensions_do_not_force_an_invented_effect(self):
         for field in ('for_humans', 'for_ai'):
             draft, sources = fixture()
