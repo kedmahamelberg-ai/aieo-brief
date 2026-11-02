@@ -450,9 +450,13 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
     # verify the entire draft again rather than accepting a partial review.
     optional=[field for field in ('for_humans','for_ai') if re.search(r'\b'+field+r'\s*:',error.feedback,re.I)]
     if re.search(r'\blimitation\b',error.feedback,re.I):optional.append('limitation')
-    if kind!='news' or error.code!='claim_grounding_failed' or not any(draft.get(field) for field in optional):
+    unsupported_paragraphs={int(match.group(1)) for match in re.finditer(r'\bbody_paragraphs\[(\d+)\]\s*:',error.feedback,re.I)}
+    removable={index for index in unsupported_paragraphs if 0<=index<len(draft['body_paragraphs'])}
+    if len(removable)>=len(draft['body_paragraphs']):removable=set()
+    if kind!='news' or error.code!='claim_grounding_failed' or not (any(draft.get(field) for field in optional) or removable):
      raise
     for field in optional:draft[field]=''
+    if removable:draft['body_paragraphs']=[paragraph for index,paragraph in enumerate(draft['body_paragraphs']) if index not in removable]
     draft=validate_draft(draft,sources,kind)
     scope=review_scope(draft,review_sources,deadline,paper=False)
    return draft,{'draft_origin':'reviewed_editorial_seed' if attempt==0 and event.get('draft_seed') else 'model','engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
