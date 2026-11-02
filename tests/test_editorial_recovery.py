@@ -261,6 +261,18 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(model.call_args.kwargs['stage'], 'reading_level')
         self.assertEqual(review.call_count, 1)
 
+    def test_research_copied_source_wording_is_paraphrased_then_fully_reviewed(self):
+        draft, sources = fixture()
+        draft['body_paragraphs'] = [sources[0]['evidence']]
+        edited = {key: value for key, value in draft.items() if key != 'support'}
+        edited['body_paragraphs'] = ['The survey records concerns about payment from 142 musicians.']
+        with patch.object(engine, 'call_json', return_value=edited) as model, \
+             patch.object(engine, 'review_scope', return_value={'grounding': {}}) as review:
+            result, _ = engine.write_story({'draft_seed': draft}, {}, sources, kind='abstract')
+        self.assertEqual(result['body_paragraphs'], edited['body_paragraphs'])
+        self.assertEqual(model.call_args.kwargs['stage'], 'reading_level')
+        self.assertEqual(review.call_count, 1)
+
     def test_publisher_name_digits_are_valid_source_metadata(self):
         draft, sources = fixture()
         sources[0]['publisher'] = 'FOX5 Vegas'

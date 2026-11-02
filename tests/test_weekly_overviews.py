@@ -8,8 +8,9 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
 from weekly_overviews import prepare_weekly_overviews, social_queue
-from research_affiliations import enrich_affiliations
+from research_affiliations import clean_institutions, enrich_affiliations
 from search_metadata import weekly_overview_with_canonical_links
+import build_site
 
 
 class WeeklyOverviewTests(unittest.TestCase):
@@ -125,6 +126,42 @@ class ResearchAffiliationTests(unittest.TestCase):
         with patch('research_affiliations._verify_source',return_value=True), patch('research_affiliations._lookup',return_value=None), patch('research_affiliations.requests.get',return_value=type('Response',(),{'text':html,'raise_for_status':lambda self:None})()), patch('research_affiliations.time.sleep'):
             enrich_affiliations([paper])
         self.assertEqual(paper['institutions'],['NVIDIA','KAIST'])
+
+    def test_author_block_debris_is_not_an_institution(self):
+        values=['Nicolas Ballas2','1Courant Institute, New York University',
+                'Courant Institute, New York University',
+                '1National University of Singapore2University of Oxford',
+                'National University of Singapore','University of Oxford',
+                'Project Page:https://flide.org','Source Code:https://github.com/example',
+                'Cambridge, MA 02139, USA','School of Computing. E-mail: author@example.org']
+        self.assertEqual(clean_institutions(values,['Nicolas Ballas']),[
+            'Courant Institute, New York University','National University of Singapore',
+            'University of Oxford','School of Computing'])
+
+    def test_arxiv_fallback_ignores_project_links_and_numbered_names(self):
+        paper={**self.paper(),'arxiv_id':'2610.42148v1','authors':['Bobo Li']}
+        html='''<div class="ltx_authors"><span>Bobo Li</span>
+        <span class="ltx_role_affiliation">1National University of Singapore2University of Oxford</span>
+        <span>National University of Singapore</span><span>University of Oxford</span>
+        <span class="ltx_role_affiliation">Project Page:https://flide.org</span>
+        <span class="ltx_role_affiliation">Source Code:https://github.com/example</span></div>'''
+        response=type('Response',(),{'text':html,'raise_for_status':lambda self:None})()
+        with patch('research_affiliations._verify_source',return_value=True), patch('research_affiliations._lookup',return_value=None), patch('research_affiliations.requests.get',return_value=response), patch('research_affiliations.time.sleep'):
+            enrich_affiliations([paper])
+        self.assertEqual(paper['institutions'],['National University of Singapore','University of Oxford'])
+
+    def test_site_hides_legacy_affiliation_artifacts_before_publication(self):
+        paper={'key':'paper:'+'a'*24,'url':'https://arxiv.org/abs/2610.42148v1',
+               'original_headline':'Verified AI paper','publisher':'arXiv','date':'2026-10-30',
+               'authors':['Bobo Li'],'institutions':['Project Page:https://flide.org',
+                   'National University of Singapore','University of Oxford']}
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'data/research/public.json'
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps({'papers':[paper]}))
+            with patch.object(build_site,'ROOT',Path(directory)):
+                rendered=build_site.papers()
+        self.assertEqual(rendered[0]['institutions'],['National University of Singapore','University of Oxford'])
 
 
 if __name__=='__main__':

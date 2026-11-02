@@ -18,7 +18,7 @@ from urllib.parse import quote
 import requests
 
 OPENALEX = "https://api.openalex.org/works"
-AFFILIATION_PARSER_VERSION = "arxiv-author-v2"
+AFFILIATION_PARSER_VERSION = "arxiv-author-v3"
 
 
 def _plain(value):
@@ -27,6 +27,26 @@ def _plain(value):
 
 def _normal(value):
     return re.sub(r"[^a-z0-9]+", " ", _plain(value).casefold()).strip()
+
+
+def clean_institutions(values, authors=()):
+    """Keep institution names, excluding author-block links and footnote debris."""
+    author_names = {_normal(author) for author in authors if _normal(author)}
+    names = []
+    seen = set()
+    for value in values or []:
+        name = re.split(r"\s*(?:E-?mail)\s*:", _plain(value), maxsplit=1, flags=re.I)[0].strip().rstrip(' .,:;')
+        if (not name or len(name) >= 140
+                or re.search(r"https?://|www\.|@|\b(?:project page|source code)\b", name, re.I)
+                or re.search(r"^\d+[A-Z]|[a-z]\d+[A-Z]|\d+$", name)
+                or re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?\b", name)
+                or _normal(name) in author_names):
+            continue
+        key = _normal(name)
+        if key and key not in seen:
+            names.append(name)
+            seen.add(key)
+    return names[:8]
 
 
 def _request(url, *, params=None, contact=""):
@@ -113,7 +133,7 @@ def _institutions(work):
             name = _plain(institution.get("display_name"))
             if name and name.casefold() not in {item.casefold() for item in names}:
                 names.append(name)
-    return names[:8]
+    return clean_institutions(names)
 
 
 class _ArxivAuthorInstitutions(HTMLParser):
@@ -175,16 +195,13 @@ def _arxiv_institutions(paper):
     author_block = _normal(" ".join(parser.parts))
     if not any(_normal(author) in author_block for author in paper.get("authors") or [] if _normal(author)):
         return [], ""
-    names = []
-    for part in parser.affiliations:
-        if len(part) < 140 and "@" not in part and _normal(part) not in {_normal(name) for name in names}:
-            names.append(part)
+    names = clean_institutions(parser.affiliations, paper.get("authors"))
     for part in parser.parts:
         if (re.search(r"\b(university|université|universidad|institute|college|academy)\b", part, re.I)
-                and len(part) < 140 and "@" not in part
-                and _normal(part) not in {_normal(name) for name in names}):
-            names.append(part)
-    return names[:8], url if names else ""
+                and part not in names):
+            names.extend(clean_institutions([part], paper.get("authors")))
+            names = clean_institutions(names, paper.get("authors"))
+    return names, url if names else ""
 
 
 def _age_days(value, now):
@@ -203,7 +220,7 @@ def enrich_affiliations(papers, *, contact="", refresh_days=30):
     verified_at = now.isoformat()
     status = []
     for paper in papers:
-        paper.setdefault("institutions", [])
+        paper["institutions"] = clean_institutions(paper.get("institutions"), paper.get("authors"))
         source_age = _age_days(paper.get("source_verified_at"), now)
         source_ok = source_age is not None and source_age < refresh_days
         if not source_ok and _verify_source(paper.get("url")):
