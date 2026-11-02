@@ -79,8 +79,10 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(news.select_event_ids(items,eid,release),[items[1]])
         with self.assertRaisesRegex(ValueError,'not in the completed edition'):
             news.select_event_ids(items,'00000000-0000-0000-0000-000000000003',release)
-        with self.assertRaisesRegex(ValueError,'no pending source-ready draft'):
-            news.select_event_ids([items[1]],other,release)
+        # A known ID can become complete or lose usable source text while a
+        # targeted run waits. It must not block other requested stories.
+        self.assertEqual(news.select_event_ids([items[1]],other,release),[])
+        self.assertEqual(news.select_event_ids([items[1]],eid+','+other,release),[items[1]])
 
     def test_source_digits_allow_equivalent_thousands_grouping(self):
         self.assertIn('12,000',engine.source_numeric_aliases('近12000名新生'))

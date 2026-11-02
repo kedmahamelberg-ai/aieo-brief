@@ -117,7 +117,7 @@ def select_event_ids(items,raw,release):
     if missing:raise ValueError('Requested event IDs are not in the completed edition: '+', '.join(sorted(missing)))
     selected=[item for item in items if item['eid'] in set(requested)]
     absent=set(requested)-{item['eid'] for item in selected}
-    if absent:raise ValueError('Requested event IDs have no pending source-ready draft: '+', '.join(sorted(absent)))
+    if absent:print('::warning::Requested event IDs already resolved or without a source-ready draft: '+', '.join(sorted(absent)),flush=True)
     return selected
 
 def valid_uuid(v):
