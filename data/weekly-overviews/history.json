@@ -29,12 +29,12 @@
             "name": "China",
             "count": 13,
             "topic": "Business And Investment",
-            "sentence": "China: the discovery stream centred most often on business and investment, including “Xinhua View: AI Boosts Electric Power but Needs Caution and Data.”",
+            "sentence": "China: the discovery stream centred most often on business and investment, including “UN Independent AI Panel Warns Safeguards Lag Behind Growth.”",
             "story": {
-              "headline": "Xinhua View: AI Boosts Electric Power but Needs Caution and Data",
-              "path": "story/xinhua-view-ai-boosts-electric-power-caution-data/index.html",
-              "publisher": "Xinhua Net",
-              "source_url": "https://www.news.cn/fortune/20261101/b893ce7dacdc47a79a2a6ad5660bc04a/c.html"
+              "headline": "UN Independent AI Panel Warns Safeguards Lag Behind Growth",
+              "path": "story/preliminary-report-independent-international-scientific-panel-ai/index.html",
+              "publisher": "Welcome to the United Nations",
+              "source_url": "https://www.un.org/independent-international-scientific-panel-ai/zh/preliminary-report"
             }
           },
           {
@@ -96,7 +96,7 @@
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "e79166187f2cf63ae6971bc6906bf50837965c1765b5f02af27ba4ee56421a21",
+        "input_hash": "7af58b19ef9a293aa85abb67a6e86991c60386330abf3457dafc0353852d2d4e",
         "attempts": 0
       },
       "research": {
@@ -115,8 +115,8 @@
         "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
         "image_rights": "Public domain · Full Granting Rights",
         "papers": [],
-        "paper_count": 15,
-        "affiliation_verified_count": 13,
+        "paper_count": 21,
+        "affiliation_verified_count": 18,
         "editorial_version": "kedma-weekly-v10",
         "status": "pending",
         "prose": [],
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "deb40beacb527d79e1ce24d2b1942b5c104d63e04c575745e6b46d33c3886229"
+      "content_sha256": "f5cbefcdf9f7383b2879ff8213464089a5978406e74bdd4cf9e8bd1592322f7d"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
