@@ -229,6 +229,42 @@ class WeeklyEditorialTests(unittest.TestCase):
         self.assertEqual(stages.count('weekly_repair_final'), 2)
         self.assertEqual(stages.count('weekly_review'), 2)
 
+    def test_editorial_revision_missing_a_source_is_repaired_then_checked_again(self):
+        stages = []
+        def repair(prompt, **kwargs):
+            stage = kwargs['stage']; stages.append(stage)
+            if stage == 'weekly_review':
+                return {name: name != 'clear_high_school_language' for name in CHECKS}
+            if stage == 'weekly_review_repeat':
+                return dict.fromkeys(CHECKS, True)
+            draft = self.call(prompt, **kwargs)
+            if stage == 'weekly_review_repair':
+                for paragraph in draft['paragraphs']:
+                    for part in paragraph:
+                        if part['source_key'] == 'sourceA': part['source_key'] = ''
+            if stage == 'weekly_review_shape_repair':
+                self.assertIn('missing sourceA', prompt)
+            return draft
+        result = self.generate(call=repair)
+        self.assertEqual(result['editorial_status'], 'ready')
+        self.assertEqual(stages.count('weekly_review_shape_repair'), 2)
+        self.assertEqual(stages.count('weekly_review_repeat'), 2)
+
+    def test_revision_shape_repair_cannot_override_failed_independent_review(self):
+        stages = []
+        def reject(prompt, **kwargs):
+            stage = kwargs['stage']; stages.append(stage)
+            if stage in ('weekly_review', 'weekly_review_repeat'):
+                return dict.fromkeys(CHECKS, False)
+            draft = self.call(prompt, **kwargs)
+            if stage == 'weekly_review_repair':
+                draft['paragraphs'][0][0]['text'] = ''
+            return draft
+        result = self.generate(call=reject)
+        self.assertEqual(result['editorial_status'], 'pending')
+        self.assertEqual(stages.count('weekly_review_shape_repair'), 2)
+        self.assertEqual(stages.count('weekly_review_repeat'), 2)
+
     def test_repeated_malformed_part_never_reaches_independent_review(self):
         stages = []
         def malformed(prompt, **kwargs):
