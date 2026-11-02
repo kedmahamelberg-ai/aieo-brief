@@ -2,29 +2,19 @@
   "release_id": "2026-W44",
   "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
   "counts": {
-    "unchanged": 12,
+    "unchanged": 15,
     "source_not_ready": 0,
     "source_date_mismatch": 1,
-    "new_registry": 4,
-    "needs_model": 44,
+    "new_registry": 1,
+    "needs_model": 41,
     "needs_rebind": 0,
-    "selected": 4,
-    "generated": 3,
+    "selected": 1,
+    "generated": 1,
     "rebound": 0,
-    "failed": 1,
+    "failed": 0,
     "deferred": 0
   },
-  "failure_counts": {
-    "claim_grounding_failed": 1
-  },
-  "failed_items": [
-    {
-      "event_id": "bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
-    }
-  ],
-  "updated_at": "2026-11-02T14:44:08.338323+00:00"
+  "failure_counts": {},
+  "failed_items": [],
+  "updated_at": "2026-11-02T17:11:31.127869+00:00"
 }
