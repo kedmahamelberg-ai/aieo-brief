@@ -55,7 +55,7 @@ def missing_news_summaries(release, published):
 
 
 def needs_editorial_retry(release, published, status, now=None):
-    """Retry incomplete current editions once a day, even if sources did not change."""
+    """Resume time-deferred work promptly; pace repeated draft rejections daily."""
     if not missing_news_summaries(release, published):
         return False
     if status.get('release_id') != release['release_id']:
@@ -64,8 +64,11 @@ def needs_editorial_retry(release, published, status, now=None):
         last_attempt = datetime.fromisoformat(status['updated_at'].replace('Z', '+00:00'))
         if last_attempt.tzinfo is None:
             return True
-        today = (now or datetime.now(ZoneInfo('Europe/Amsterdam'))).astimezone(ZoneInfo('Europe/Amsterdam')).date()
-        return last_attempt.astimezone(ZoneInfo('Europe/Amsterdam')).date() < today
+        current = (now or datetime.now(ZoneInfo('Europe/Amsterdam'))).astimezone(ZoneInfo('Europe/Amsterdam'))
+        local_attempt = last_attempt.astimezone(ZoneInfo('Europe/Amsterdam'))
+        if status.get('counts', {}).get('deferred', 0) > 0:
+            return (current - local_attempt).total_seconds() >= 2 * 3600
+        return local_attempt.date() < current.date()
     except (KeyError, TypeError, ValueError):
         return True
 
