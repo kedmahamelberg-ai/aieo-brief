@@ -313,7 +313,7 @@ def validate_draft(d,sources,kind='news'):
  if DRAFT_MARKER.search(public) or any(FIELD_FRAGMENT.match(p) or LEADING_ARTIFACT.match(p) for p in d['body_paragraphs']):raise ValueError('Draft contains a placeholder marker')
  copied=copied_phrase(public,[s['evidence'] for s in sources])
  if copied:raise ValueError('The draft repeats ten consecutive source words. Rewrite this passage in original language: '+copied)
- source_numbers=' '.join(s['evidence']+' '+s.get('headline','') for s in sources)
+ source_numbers=' '.join(s['evidence']+' '+s.get('headline','')+' '+s.get('publisher','') for s in sources)
  allowed_numbers=numeric_values(source_numbers)|source_numeric_aliases(source_numbers)
  numeric_fields={**{k:d[k] for k in TEXT_FIELDS},'limitation':d.get('limitation',''),**{f'body_paragraphs[{i}]':text for i,text in enumerate(d['body_paragraphs'])}}
  unsupported={field:sorted(numeric_values(text)-allowed_numbers) for field,text in numeric_fields.items() if numeric_values(text)-allowed_numbers}
