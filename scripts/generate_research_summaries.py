@@ -114,6 +114,8 @@ def main():
         try:
             reading=read_paper(p)
             full=reading['status']=='read'
+            if not full and prior.get('evidence_scope')=='paper_text' and prior.get('metadata_sha256')==p['metadata_sha256']:
+                counts['deferred']+=1;selected.append(prior);checkpoint();continue
             if not full:
                 counts['metadata_only']+=1
                 selected.append({**base,'summary_status':'full_text_required',
