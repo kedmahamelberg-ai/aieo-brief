@@ -65,8 +65,31 @@ def extract_paper(content, title):
     if reader.is_encrypted or not 2 <= len(reader.pages) <= 200:
         raise ValueError('unsupported_pdf')
     pages = [re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', unicodedata.normalize('NFKC', p.extract_text() or '')) for p in reader.pages]
-    normal = lambda s: re.sub(r'\W+', '', s).casefold()
-    if normal(title) not in normal(pages[0]):
+    def title_words(value):
+        value = value.replace(r'\ell', 'ℓ').replace(r'\infty', '∞').replace('_', '')
+        return re.findall(r'\w+|∞', unicodedata.normalize('NFKC', value).casefold())
+
+    expected = title_words(title)
+    actual = title_words(pages[0][:500])
+    exact = ''.join(expected) in ''.join(actual)
+    # Publisher metadata sometimes omits a year or article in the PDF title.
+    # Permit only a few inserted words, never substitutions or missing title words.
+    near = False
+    if not exact and len(expected) >= 8:
+        for start in range(min(len(actual), 30)):
+            if actual[start] != expected[0]:
+                continue
+            pos = start; extras = 0
+            for word in expected[1:]:
+                pos += 1
+                while pos < len(actual) and actual[pos] != word and extras < 3:
+                    pos += 1; extras += 1
+                if pos >= len(actual) or actual[pos] != word:
+                    break
+            else:
+                near = True
+                break
+    if not (exact or near):
         raise ValueError('paper_identity_mismatch')
     # A figure or formula page can have little selectable text without making
     # the surrounding, fully extracted paper an abstract-only reading.
