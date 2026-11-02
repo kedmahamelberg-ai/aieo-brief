@@ -230,6 +230,18 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(trace[-1]['end'], len(source['evidence']))
         self.assertEqual(reader.call_count, len(notes))
 
+    def test_news_copied_source_wording_is_paraphrased_then_fully_reviewed(self):
+        draft, sources = fixture()
+        draft['body_paragraphs'] = [sources[0]['evidence']]
+        edited = {key: value for key, value in draft.items() if key != 'support'}
+        edited['body_paragraphs'] = ['Researchers questioned 142 musicians about AI and recorded concerns about payment.']
+        with patch.object(engine, 'call_json', return_value=edited) as model, \
+             patch.object(engine, 'review_scope', return_value={'grounding': {}}) as review:
+            result, _ = engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
+        self.assertEqual(result['body_paragraphs'], edited['body_paragraphs'])
+        self.assertEqual(model.call_args.kwargs['stage'], 'reading_level')
+        self.assertEqual(review.call_count, 1)
+
     def test_absent_dimensions_do_not_force_an_invented_effect(self):
         for field in ('for_humans', 'for_ai'):
             draft, sources = fixture()
