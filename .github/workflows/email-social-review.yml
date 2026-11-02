@@ -1,7 +1,7 @@
 name: Email Social Approval Batch
 on:
   workflow_run:
-    workflows: ['Build and Publish AIEO Brief', 'Prepare Social Approval Batch']
+    workflows: ['Build and Publish AIEO Brief', 'Prepare Social Approval Batch', 'Repair Social Approval Batch']
     types: [completed]
   # Deliver the current batch when this repair is installed, too.
   push:

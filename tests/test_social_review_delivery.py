@@ -37,12 +37,25 @@ class SocialReviewDelivery(unittest.TestCase):
 
     def test_old_or_previously_emailed_batch_does_not_send_again(self):
         self.assertIsNone(delivery.delivery_plan(self.state, {}, date(2026, 11, 9)))
-        self.assertIsNone(delivery.delivery_plan(self.state, {'weeks': {'2026-W45': {'review_version': delivery.REVIEW_VERSION}}}, date(2026, 11, 2)))
+        self.assertIsNone(delivery.delivery_plan(self.state, {'weeks': {'2026-W45': {'review_version': delivery.REVIEW_VERSION, 'artifact_url': self.entry['artifact_url']}}}, date(2026, 11, 2)))
         self.entry['status'] = 'partial'
         self.assertIsNone(delivery.delivery_plan(self.state, {}, date(2026, 11, 2)))
 
     def test_old_plain_review_gets_one_visual_review_upgrade(self):
         self.assertIsNotNone(delivery.delivery_plan(self.state, {'weeks': {'2026-W45': {}}}, date(2026, 11, 2)))
+
+    def test_corrected_artifact_needs_a_new_email_and_new_approval(self):
+        receipt = {'weeks': {'2026-W45': {'review_version': delivery.REVIEW_VERSION, 'artifact_url': self.entry['artifact_url']}}}
+        self.entry['artifact_url'] = 'https://github.com/' + delivery.REPO + '/actions/runs/987/artifacts/654'
+        self.entry['run_id'] = '987'
+        self.assertIsNotNone(delivery.delivery_plan(self.state, receipt, date(2026, 11, 2)))
+        with tempfile.TemporaryDirectory() as directory, patch.object(delivery, 'ROOT', Path(directory)):
+            path = Path(directory) / 'data/social-production/approved/2026-W45.json'
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps({**self.plan, 'status': 'APPROVED'}))
+            self.assertTrue(delivery.already_approved(self.plan))
+            path.write_text(json.dumps({**self.plan, 'status': 'SUPERSEDED_PENDING_CORRECTED_REVIEW'}))
+            self.assertFalse(delivery.already_approved(self.plan))
 
     def test_platform_caption_and_ordered_images_are_one_preview(self):
         item = dict(platform='instagram', account='The Brief', scheduled_at='2026-11-02T10:00:00+01:00',

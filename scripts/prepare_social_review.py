@@ -74,13 +74,39 @@ def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub('<[^>]+>', '', str(text or '')))).strip().replace('–', ', ').replace('—', ', ').replace(':', ',')
 
 
+def geography_fingerprint(row):
+    value = {key: row.get(key) for key in ('headline', 'deck', 'what_happened', 'body_paragraphs')}
+    value['source_urls'] = sorted(source['url'] for source in row.get('sources', []))
+    return hashlib.sha256(json.dumps(value, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
+def verified_markets(row):
+    """Discovery-stream labels are not evidence of a story's featured country."""
+    checked = read(ROOT / 'config/social-geography.json', {}).get('articles', {}).get(row.get('key'))
+    if checked is not None:
+        if checked.get('content_sha256') != geography_fingerprint(row):
+            raise ValueError('Reviewed social geography is stale for ' + row['key'])
+        return [market for market in checked['markets'] if market in COUNTRIES]
+    # A conservative candidate check for future editions. The full package
+    # still requires source and visual review before the owner can approve it.
+    material = ' '.join(str(row.get(key) or '') for key in ('headline', 'deck', 'what_happened'))
+    anchors = {
+        'US': r'\b(?:United States|U\.S\.|American|NASA|White House|New York)\b',
+        'CA': r'\b(?:Canada|Canadian|Quebec|Québec|Montréal|Montreal|Chambly|Rouyn)\b',
+        'GB': r'\b(?:United Kingdom|British|Britain|UK|NHS|England|Wales|Scotland|Scottish|University of Oxford|Reuters Institute)\b',
+        'FR': r'\b(?:France|French|Paris|Mistral)\b',
+        'CN': r'\b(?:China|Chinese|Chengdu|Beijing|Shanghai|Zhuhai|Hong Kong)\b',
+    }
+    return [market for market in row.get('markets', []) if market in anchors and re.search(anchors[market], material, re.I)]
+
+
 def topic_plan(items, monday, news):
     """Select an even five-market draft; no missing market is silently replaced."""
     target = {k: 3 for k in COUNTRIES}
     target[list(COUNTRIES)[monday.isocalendar().week % 5]] = 2
     pools = {}
     for market in COUNTRIES:
-        pools[market] = [i for i in news if market in i.get('markets', []) and i.get('what_happened') and i.get('body_paragraphs') and i.get('sources') and not any('_localized_' in str(p) for p in i.get('body_paragraphs', []))]
+        pools[market] = [i for i in news if market in verified_markets(i) and i.get('what_happened') and i.get('body_paragraphs') and i.get('sources') and not any('_localized_' in str(p) for p in i.get('body_paragraphs', []))]
         pools[market].sort(key=lambda i: (not i.get('has_editorial'), -date.fromisoformat(i['date']).toordinal(), i['path']))
     topics, used, counts, previous = [], set(), Counter(), None
     for n in range(14):
@@ -92,7 +118,7 @@ def topic_plan(items, monday, news):
         used.add(a['path']); counts[market] += 1; previous = market
         day = monday + timedelta(days=n // 2); hour = '10:00' if n % 2 == 0 else '18:00'
         ident = day.strftime('%a').upper() + hour[:2] + '_' + market + '_' + hashlib.sha256(a['path'].encode()).hexdigest()[:8].upper()
-        topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES[market], 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO[market]], 'second_subject_tag': '#AIGovernance', 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Source edition market assignment; confirm subject geography during editorial review', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
+        topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES[market], 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO[market]], 'second_subject_tag': '#AIGovernance', 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Country anchored in the article or a matching source-checked geography record; discovery labels alone are insufficient', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
     if counts != Counter(target):
         raise ValueError('The five-market balance is incomplete')
     research = [i for i in items if i.get('kind') == 'research' and str(monday - timedelta(days=7)) <= i.get('date', '') < str(monday) and i.get('what_happened') and i.get('sources')]
@@ -287,6 +313,8 @@ def main():
     for t in topics:
         current=next((i for i in items if i.get('path')==t['path']),None)
         if not current or (t['kind']=='News' and current.get('edition')!=release):raise ValueError('Selected article is not in the deployed edition')
+        if t['kind'] == 'News' and t['market'] not in verified_markets(current):
+            raise ValueError('Featured country is not supported by the selected article: ' + t['id'])
     history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
     if curated:
         photos=curated['photos']

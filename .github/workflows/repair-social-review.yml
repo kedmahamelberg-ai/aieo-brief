@@ -1,0 +1,64 @@
+name: Repair Social Approval Batch
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Build and Publish AIEO Brief']
+    types: [completed]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: brief-social-production
+  cancel-in-progress: false
+jobs:
+  repair:
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=11,<13' 'requests>=2.32,<3'
+      - name: Read the current edition's pending repair
+        id: repair
+        run: python scripts/repair_social_review.py plan
+      - uses: actions/download-artifact@v4
+        if: steps.repair.outputs.needed == 'true'
+        with:
+          artifact-ids: ${{ steps.repair.outputs.artifact_id }}
+          run-id: ${{ steps.repair.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: original-social-review
+          merge-multiple: true
+      - name: Rebuild the audited copy against the live corrected articles
+        if: steps.repair.outputs.needed == 'true'
+        run: python scripts/repair_social_review.py produce
+      - uses: actions/upload-artifact@v4
+        id: artifact
+        if: steps.repair.outputs.needed == 'true'
+        with:
+          name: social-review-${{ github.run_id }}-revision-2
+          path: social-review
+          if-no-files-found: error
+          retention-days: 90
+      - name: Authorize the corrected draft receipt
+        if: steps.repair.outputs.needed == 'true'
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
+      - name: Preserve original approval and register the corrected review
+        if: steps.repair.outputs.needed == 'true'
+        env:
+          SOCIAL_ARTIFACT_URL: ${{ steps.artifact.outputs.artifact-url }}
+        run: |
+          python scripts/repair_social_review.py record
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/social-production config/social-photo-history.json
+          git commit -m 'Register source-audited W45 social review revision 2 [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main

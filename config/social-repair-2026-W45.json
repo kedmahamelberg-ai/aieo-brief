@@ -1,0 +1,524 @@
+{
+  "schema_version": "brief_social_repair_v1",
+  "revision": 2,
+  "publication_week": "2026-W45",
+  "source_edition": "2026-W44",
+  "baseline_batch_sha256": "e3369c77933e09d4ab9a5b84066e14fe604fc8a194eec2a5240a72224445cee7",
+  "topic_updates": [
+    {
+      "previous_topic_id": "MON10_US_6761C89B",
+      "topic": {
+        "id": "MON10_US_6761C89B",
+        "date": "2026-11-02",
+        "time": "10:00",
+        "kind": "News",
+        "country": "United States",
+        "market": "US",
+        "path": "story/ai-appraisal-model-driven-victim-prioritization-volta-limits-gains/index.html",
+        "headline": "AI Appraisal, Model-driven Victim Prioritization in VOLTA Infostealer , Limits and Gains",
+        "hook": "A malware sample asks AI to turn stolen information into a target assessment.",
+        "fact": "Cisco Talos reports that VOLTA collects stolen credentials and other victim data, enriches the bundle through stolen sessions, then sends it to a language model to produce a target assessment and rank assets by potential value.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#USAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer"
+        ],
+        "source_limitation": "The article relies on a single source and describes observed capabilities; it does not prove wider trends or real-world prevalence beyond the source.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "MON10_US_6761C89B",
+        "source_key": "event:8fa122ef-a5c4-4a09-819c-479a93690948",
+        "article_content_sha256": "8add204d184c27cc823d0b351b8e55593ffaff48a854f64e5ceb628edca1f7b5"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "MON18_CA_965AD1A7",
+      "topic": {
+        "id": "MON18_CA_965AD1A7",
+        "date": "2026-11-02",
+        "time": "18:00",
+        "kind": "News",
+        "country": "Canada",
+        "market": "CA",
+        "path": "story/chambly-how-integrate-artificial-intelligence-home-quebec-expert/index.html",
+        "headline": "Chambly, How to Integrate Artificial Intelligence at Home, According to a Quebec Expert",
+        "hook": "A local newspaper outlines a family-friendly way to bring AI into daily life without hype.",
+        "fact": "A Quebec AI expert, Édith-Anne Murray, published a book to help families talk about AI and use it responsibly at home. The article describes how AI is now in homes and can be used for small, practical tasks.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#CanadaAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://www.journaldechambly.com/culture/chambly-comment-integrer-lintelligence-artificielle-a-la-maison"
+        ],
+        "source_limitation": "Source is a single newspaper report; not a full study.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "MON18_CA_965AD1A7",
+        "source_key": "event:ca268de9-72d8-44c6-a8a4-177151d08911",
+        "article_content_sha256": "5e3742e6390910991621f453bb2b286f1fad9955321f25fb6d3fc4ae2a29c9d2"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "TUE10_GB_B8AE4708",
+      "topic": {
+        "id": "TUE10_GB_9F4E47B6",
+        "date": "2026-11-03",
+        "time": "10:00",
+        "kind": "News",
+        "country": "United Kingdom",
+        "market": "GB",
+        "path": "story/using-ai-speed-up-mri-scans-nhs-highland/index.html",
+        "headline": "NHS Highland tests AI support for choosing MRI scan protocols",
+        "hook": "An NHS Highland project tests AI support while radiographers keep the final check.",
+        "fact": "NHS Highland reports early tests of an AI tool for choosing MRI scan protocols. Results varied by scan type; brain and spine results were described as comparable to staff. A radiographer must still check each suggestion.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#UKAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://www.nhshighland.scot.nhs.uk/about/nhs-highland-charity/how-we-make-a-difference/using-artificial-intelligence-to-speed-up-mri-scans-in-nhs-highland"
+        ],
+        "source_limitation": "A provider case study of an early project, not independent clinical validation or a proven reduction in waiting times.",
+        "market_rationale": "UK public health provider and clinical project",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "TUE10_GB_B8AE4708",
+        "source_key": "event:97ab4dd5-573a-48a3-a2ea-d1d35947a89c",
+        "article_content_sha256": "dcb45e003288acfb63b9f41c55d1683f66a57eba9fa1a615e1859470f103f486"
+      },
+      "replacement": true
+    },
+    {
+      "previous_topic_id": "TUE18_FR_F2E9B175",
+      "topic": {
+        "id": "TUE18_FR_D28683D7",
+        "date": "2026-11-03",
+        "time": "18:00",
+        "kind": "News",
+        "country": "France",
+        "market": "FR",
+        "path": "story/mistral-has-launched-ai-model-giving-over-cybersecurity/index.html",
+        "headline": "Mistral Opens ML4 Weights, Giving Firms Self-Hosted AI for Cybersecurity, With Cautions",
+        "hook": "France’s Mistral offers downloadable model weights, with security responsibilities for those running them.",
+        "fact": "Mistral has released Large 4 weights for organisations to run on their own systems. Reported performance claims come from the company. Self-hosting gives users more control but still requires suitable hardware and security expertise.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#FranceAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse",
+          "https://www.euronews.com/2026/10/29/mistral-releases-latest-ai-model-for-download-giving-companies-more-control-over-their-cyb",
+          "https://www.csoonline.com/article/4242648/mistral-releases-large-4-weights-despite-warning-of-cyberattack-uplift.html"
+        ],
+        "source_limitation": "Limitation: Guardrail and safety updates may not automatically apply to downloaded, self-hosted copies; open-weight deployments rely on customers’ own security practices.",
+        "market_rationale": "French AI company and its model release",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "TUE18_FR_F2E9B175",
+        "source_key": "event:0633cab1-acfe-46fc-b52c-41ad85400c26",
+        "article_content_sha256": "245b13864d5e1d0a59c7525d201b32c88ec33f4a91a3239b4f5df00b22af28a6"
+      },
+      "replacement": true
+    },
+    {
+      "previous_topic_id": "WED06_RESEARCH",
+      "topic": {
+        "id": "WED06_RESEARCH",
+        "date": "2026-11-04",
+        "time": "06:00",
+        "kind": "Research",
+        "country": "",
+        "market": "",
+        "path": "research/responsibility-ai-outcomes-rests-design-decisions/index.html",
+        "headline": "A PNAS Perspective links AI accountability to human design decisions",
+        "hook": "A published Perspective asks how human choices can guide AI accountability.",
+        "fact": "Martin Hilbert’s PNAS Perspective argues that AI accountability can be traced through human choices about goals, data, deployment and oversight. This briefing covers the abstract of a proposed legal framework, not experimental findings or a full-paper reading.",
+        "tags": [
+          "#TheBrief",
+          "#AIResearch",
+          "#ResearchCommunity"
+        ],
+        "second_subject_tag": "#MachineLearning",
+        "evidence": "Published Perspective, abstract-only briefing",
+        "source_urls": [
+          "https://doi.org/10.1073/pnas.2610670123",
+          "https://pubmed.ncbi.nlm.nih.gov/42961910/"
+        ],
+        "source_limitation": "Abstract-only summary of a published Perspective; no experimental findings or full-paper reading are claimed.",
+        "substack_lead": "The research selection examines the evidence behind the result.",
+        "source_key": "paper:be49d96abd2a3f5b615d1f08",
+        "article_content_sha256": "ec5b061176af7ab6b92668002ddd66f3e24714845feb5265713b62fd7cc28345"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "WED10_CN_48D928D5",
+      "topic": {
+        "id": "WED10_CN_48D928D5",
+        "date": "2026-11-04",
+        "time": "10:00",
+        "kind": "News",
+        "country": "China",
+        "market": "CN",
+        "path": "story/chengdu-launches-xiaolian-ai-help-public-traditional-couplets/index.html",
+        "headline": "Chengdu Launches Xiaolian AI to Help Public Create Traditional Couplets",
+        "hook": "A Chengdu launch connects traditional couplet writing with everyday interests.",
+        "fact": "On November 1, Chengdu released Xiaolian AI, a professional AI product focused on couplet creation and scenario-based use. It was developed by Sichuan cultural-tech firms and experts from the Sichuan Association of Couplets, and it lets people draw from travel, music, education, and social life to participate in creating couplets.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#ChinaAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "http://www.sc.chinanews.com.cn/kjws/2026-11-01/251534.html"
+        ],
+        "source_limitation": "Evidence is a single news report about a product launch; no data on user outcomes or population effects are presented.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "WED10_CN_48D928D5",
+        "source_key": "event:a1e2b2b0-2a69-44e9-812b-f9c03426461e",
+        "article_content_sha256": "2a330a47b01c04d3fb081839c23b2c75a25aba68a6d6d897ce4ddaf56c1b4328"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "WED18_US_DEB8402C",
+      "topic": {
+        "id": "WED18_US_DEB8402C",
+        "date": "2026-11-04",
+        "time": "18:00",
+        "kind": "News",
+        "country": "United States",
+        "market": "US",
+        "path": "story/ai-ethics-self-study-mixed-lessons-humans-journal-finds/index.html",
+        "headline": "CPA Journal essay proposes fairer assessments when learners can use AI",
+        "hook": "An accounting educator asks how assessment design should respond to AI.",
+        "fact": "Dov Fischer’s CPA Journal essay argues that self-study accounting assessments need clearer ethical design as AI makes answering questions easier. He proposes a choice between assessments with and without AI, and describes student preferences in his own teaching.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#USAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study"
+        ],
+        "source_limitation": "An essay with an example from the author’s teaching, not a representative study of students or CPE participants.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "WED18_US_DEB8402C",
+        "source_key": "event:ec0267bf-57e9-4224-bb75-19c763d8e419",
+        "article_content_sha256": "2aca568142160f1e58f736a2c7b6e6a173055328d67e5148b61ed541b1875421"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "THU10_CA_963B0DEA",
+      "topic": {
+        "id": "THU10_CA_963B0DEA",
+        "date": "2026-11-05",
+        "time": "10:00",
+        "kind": "News",
+        "country": "Canada",
+        "market": "CA",
+        "path": "story/agnico-eagle-ai-aids-mining-real-time-data-driven-decisions/index.html",
+        "headline": "Agnico Eagle AI Aids Mining with Real-Time Monitoring and Data-Driven Decisions",
+        "hook": "Real-time tracking and AI pilots are being tested; AI is a decision-support tool, not a replacement for experts.",
+        "fact": "Agnico Eagle already uses real-time monitoring and is developing AI-assisted ore sorting and an automated drill in exploration. Several AI applications are being evaluated and integrated gradually.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#CanadaAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://journallecitoyen.com/articles/art-12966"
+        ],
+        "source_limitation": "Scope limited to Agnico Eagle operations and described pilot projects; not representative of all mining.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "THU10_CA_963B0DEA",
+        "source_key": "event:c871cafc-aaec-4135-be78-467304176c01",
+        "article_content_sha256": "1fe588869cfdc445f668629a2da8b0f7ab5e86e6bd2ba55277b89d3dd884a508"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "THU18_GB_1F5C9C12",
+      "topic": {
+        "id": "THU18_GB_398A2BEB",
+        "date": "2026-11-05",
+        "time": "18:00",
+        "kind": "News",
+        "country": "United Kingdom",
+        "market": "GB",
+        "path": "story/generative-ai-news-report-2026-standalone-information-infrastructure/index.html",
+        "headline": "Oxford report finds wider AI use but continued unease about AI-made news",
+        "hook": "Oxford researchers find growing AI use alongside persistent unease about AI-produced news.",
+        "fact": "The Reuters Institute’s 2026 report surveys AI use and attitudes in nine countries. It finds growing use alongside discomfort with AI-produced news. Comparisons with previous years cover six countries, and the findings rely on self-reported online responses.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#UKAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure"
+        ],
+        "source_limitation": "A weighted online survey with self-reporting and sampling limitations; historical comparisons cover six countries, not all nine.",
+        "market_rationale": "University of Oxford Reuters Institute report and UK respondents",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "THU18_GB_1F5C9C12",
+        "source_key": "event:254e6644-7404-4bb6-922a-548e875708b5",
+        "article_content_sha256": "b46fe85f3d703cb3c55c69887160678f57df48fbf859dc100456a0c7a2af7c77"
+      },
+      "replacement": true
+    },
+    {
+      "previous_topic_id": "FRI10_FR_8562AB5E",
+      "topic": {
+        "id": "FRI10_FR_8562AB5E",
+        "date": "2026-11-06",
+        "time": "10:00",
+        "kind": "News",
+        "country": "France",
+        "market": "FR",
+        "path": "story/artificial-intelligence-s-bit-like-atomic-international-agreements/index.html",
+        "headline": "Pascal Lamy urges international AI rules while warning on cooperation limits",
+        "hook": "An ex-WTO leader wants global rules for AI but questions how rivals will cooperate.",
+        "fact": "Pascal Lamy urged international accords to manage AI risks after comparing AI to nuclear weapons in a podcast. He calls for bottom-up cooperation and shared incident reports to build common rules.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#FranceAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://lcp.fr/actualites/l-intelligence-artificielle-c-est-un-peu-comme-la-bombe-nucleaire-l-appel-de-pascal-lamy"
+        ],
+        "source_limitation": "Based on a single interview/podcast; reflects Lamy's views and calls for cooperation rather than an established global rule.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "FRI10_FR_8562AB5E",
+        "source_key": "event:41d91767-f7b9-41e1-95c0-5a62e24c3b5c",
+        "article_content_sha256": "0ea1b6028da129d3a0291a486b0f9a5c7f8ac8f22ec3117529cf8260f5dc2d3d"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "FRI18_CN_3FA54CFF",
+      "topic": {
+        "id": "FRI18_CN_3FA54CFF",
+        "date": "2026-11-06",
+        "time": "18:00",
+        "kind": "News",
+        "country": "China",
+        "market": "CN",
+        "path": "story/ma-zhaoyuan-humans-keep-irreplaceable-value-within-limits/index.html",
+        "headline": "Ma Zhaoyuan says humans keep irreplaceable value in AI era, within limits",
+        "hook": "A university professor urges balanced growth of human skills like MAPLE.",
+        "fact": "At a Zhuhai lecture, Ma Zhaoyuan argued that AI handles computable tasks while humans should focus on uniquely human thinking. He warned against training people to resemble AI and promoted MAPLE skills as the base for AI-era competence.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#ChinaAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://pub-zhtb.hizh.cn/a/202611/01/AP6ae730a2e4b0203a518dee06.html"
+        ],
+        "source_limitation": "Evidence comes from a single lecture and its written transcript; scope is a written source with public quotes.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "FRI18_CN_3FA54CFF",
+        "source_key": "event:e1e2132c-5a5f-43e1-8b06-7c7e3cfb7031",
+        "article_content_sha256": "7de82473e26c5d86e7344334e0e79d0e9b3c13f12cc1d56202f16eca2b6d8546"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "SAT10_CA_C65B8770",
+      "topic": {
+        "id": "SAT10_CA_C65B8770",
+        "date": "2026-11-07",
+        "time": "10:00",
+        "kind": "News",
+        "country": "Canada",
+        "market": "CA",
+        "path": "story/ai-new-face-fear-unknown/index.html",
+        "headline": "AI, the New Face of Fear of the Unknown",
+        "hook": "Experts describe AI growth as rapid and anxiety-inducing, but urge calm, education, and careful choices.",
+        "fact": "Le Devoir reports that generative AI’s rapid growth fuels public fears about jobs, creativity, and control. Psychologists describe anxiety from the unknown, and researchers note AI’s speed and ease of access differ from past tech shifts, creating new challenges.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#CanadaAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://www.ledevoir.com/actualites/societe/1021130/ia-nouveau-visage-peur-inconnu"
+        ],
+        "source_limitation": "",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "SAT10_CA_C65B8770",
+        "source_key": "event:dc0daa8d-2ed7-460a-8bdd-89df1f06af7a",
+        "article_content_sha256": "ab8b437ee57dc9a2d11516818e9b8620349228ea1e775589027cdce4f1cc38dd"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "SAT18_GB_0E4CD0EF",
+      "topic": {
+        "id": "SAT18_GB_8AF13F5B",
+        "date": "2026-11-07",
+        "time": "18:00",
+        "kind": "News",
+        "country": "United Kingdom",
+        "market": "GB",
+        "path": "story/cjc-safe-use-artificial-intelligence-prepare-court-documents/index.html",
+        "headline": "Civil Justice Council proposes targeted safeguards for AI in court documents",
+        "hook": "An England and Wales report proposes safeguards for AI-assisted court documents.",
+        "fact": "The Civil Justice Council recommends a risk-based approach to AI in civil proceedings. It proposes targeted safeguards for witness statements and expert evidence while keeping legal professionals responsible. The report makes recommendations, not a general ban or a declaration that new rules are in force.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#UKAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://www.lawgazette.co.uk/news/cjc-reports-on-safe-use-of-artificial-intelligence-to-prepare-court-documents/5128388.article"
+        ],
+        "source_limitation": "A summary of the report’s executive recommendations and contemporaneous reporting; this is not legal advice or confirmation of implementation.",
+        "market_rationale": "Civil justice institutions of England and Wales",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "SAT18_GB_0E4CD0EF",
+        "source_key": "event:75722252-2bee-4162-89a3-126672ed9f64",
+        "article_content_sha256": "7a2b415b34e396f081750e5e32de04da13d1fa87907ae5bd95ec92331479cff3"
+      },
+      "replacement": true
+    },
+    {
+      "previous_topic_id": "SUN10_FR_2BB23FAE",
+      "topic": {
+        "id": "SUN10_FR_2BB23FAE",
+        "date": "2026-11-08",
+        "time": "10:00",
+        "kind": "News",
+        "country": "France",
+        "market": "FR",
+        "path": "story/does-artificial-intelligence-make-artists-more-creative/index.html",
+        "headline": "French researchers examine how AI changes artistic work and attribution",
+        "hook": "French researchers explore who does the creative work when artists use AI.",
+        "fact": "Writing in The Conversation, researchers describe interviews with 18 people involved in AI-assisted art. They argue that these tools can expand exploration while moving human work toward planning, selecting outputs and explaining who contributed.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#FranceAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://theconversation.com/lintelligence-artificielle-rend-elle-les-artistes-plus-creatifs-293465"
+        ],
+        "source_limitation": "A qualitative interview-based analysis, not an experiment or a representative survey of artists.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "SUN10_FR_2BB23FAE",
+        "source_key": "event:4cd58638-a43e-4568-8d81-a14e18e7a1cc",
+        "article_content_sha256": "132ac5da64cdfd7969ff532197cc48f67323e5e782cef2e65e47f18e7bc60050"
+      },
+      "replacement": false
+    },
+    {
+      "previous_topic_id": "SUN18_CN_CD90D5E8",
+      "topic": {
+        "id": "SUN18_CN_CD90D5E8",
+        "date": "2026-11-08",
+        "time": "18:00",
+        "kind": "News",
+        "country": "China",
+        "market": "CN",
+        "path": "story/wolf-prize-winner-dobensky-ai-won-they-work/index.html",
+        "headline": "Ingrid Daubechies says AI can assist mathematicians without replacing their judgment",
+        "hook": "Ingrid Daubechies distinguishes useful AI assistance from mathematical understanding.",
+        "fact": "In an interview during the World Laureates Forum, mathematician Ingrid Daubechies said AI can help search and combine mathematical literature. She cautioned that combining existing results is not the same as an original breakthrough and that people must understand and check proofs.",
+        "tags": [
+          "#TheBrief",
+          "#ResponsibleAI",
+          "#ChinaAI"
+        ],
+        "second_subject_tag": "#AIGovernance",
+        "evidence": "Published source-checked reporting",
+        "source_urls": [
+          "https://news.sciencenet.cn/htmlnews/2026/11/574018.shtm"
+        ],
+        "source_limitation": "Based on an interview with a single expert; reflects her views and may not represent all mathematicians.",
+        "market_rationale": "Source-checked institution, event or reporting context in the featured country",
+        "substack_lead": "From this week’s Brief, a closer look at how AI is being used.",
+        "photo": "SUN18_CN_CD90D5E8",
+        "source_key": "event:61fb91f6-9ffc-401e-87c0-e6d0ab21b7fd",
+        "article_content_sha256": "c776c1b875a00330e14f8db5933837b9fc38a937c5d12b1d5c91b5129a2f1a18"
+      },
+      "replacement": false
+    }
+  ],
+  "reason": "Owner-requested full source audit and correction of country labels, attribution, names and evidence scope.",
+  "copy_policy": "Preserve dates and accounts. Replace four article selections, repair source-grounded copy, and replace wildfire and unrelated portrait with two fresh CC0 country photographs.",
+  "photo_replacements": {
+    "THU10_CA_963B0DEA": {
+      "title": "Canada winter landscape.jpg",
+      "creator": "Anonymous (via PxHere)",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Canada_winter_landscape.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Canada_winter_landscape.jpg",
+      "rights_status": "CC0",
+      "repository_source": "config/social-repair-2026-W45/photos/canada.jpg",
+      "local_source": "sources/THU10_CA_963B0DEA.jpg",
+      "sha256": "a7de20d408f1fd4ad21ceea51ce497347fb8fa72181c2be8e255caa263142cc9",
+      "verified_on": "2026-11-02",
+      "duplicate_check": "PASS, source URL and derivative SHA-256 absent from permanent history",
+      "use": "Illustrative country photograph; not a photograph of the reported person, mine or institution.",
+      "processing": "Resized to at most 1280 pixels, JPEG quality 74; no generative imagery"
+    },
+    "SUN18_CN_CD90D5E8": {
+      "title": "Shanghai Skyline1.jpg",
+      "creator": "Mussi Katz",
+      "archive": "Wikimedia Commons",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Shanghai_Skyline1.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Shanghai_Skyline1.jpg",
+      "rights_status": "CC0",
+      "repository_source": "config/social-repair-2026-W45/photos/china.jpg",
+      "local_source": "sources/SUN18_CN_CD90D5E8.jpg",
+      "sha256": "89e10de5be1694f50a4dfc73711724b6ff4b46b27c4c4e0ebea7ba2a47653d01",
+      "verified_on": "2026-11-02",
+      "duplicate_check": "PASS, source URL and derivative SHA-256 absent from permanent history",
+      "use": "Illustrative country photograph; not a photograph of the reported person, mine or institution.",
+      "processing": "Resized to at most 1280 pixels, JPEG quality 74; no generative imagery"
+    }
+  }
+}

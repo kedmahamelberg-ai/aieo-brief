@@ -43,10 +43,17 @@ def delivery_plan(state, receipts, today):
     match = ARTIFACT.fullmatch(entry.get('artifact_url', ''))
     if not match or match[1] != str(entry.get('run_id')):
         raise ValueError('Invalid completed social artifact receipt')
-    if receipts.get('weeks', {}).get(week, {}).get('review_version') == REVIEW_VERSION:
+    receipt = receipts.get('weeks', {}).get(week, {})
+    if receipt.get('review_version') == REVIEW_VERSION and receipt.get('artifact_url') == entry['artifact_url']:
         return None
     return dict(source_edition=edition, publication_week=week,
                 artifact_url=entry['artifact_url'], run_id=match[1], artifact_id=match[2])
+
+
+def already_approved(plan):
+    path = ROOT / 'data/social-production/approved' / (plan['publication_week'] + '.json')
+    approval = read(path, {})
+    return approval.get('status') == 'APPROVED' and approval.get('artifact_url') == plan['artifact_url']
 
 
 def load_batch(folder, plan):
@@ -227,9 +234,11 @@ def approve(folder, run_id):
              'approved_at': datetime.now(ZONE).isoformat(), 'approval_method': 'github_environment_review',
              'approval_run_id': run_id, 'publishing_status': 'NOT_PUBLISHED_BY_THIS_WORKFLOW'}
     if path.exists():
-        if read(path).get('batch_sha256') != digest:
+        previous = read(path)
+        if previous.get('batch_sha256') == digest and previous.get('status') == 'APPROVED':
+            return
+        if previous.get('status') != 'SUPERSEDED_PENDING_CORRECTED_REVIEW' or previous.get('corrected_batch_sha256') != digest:
             raise ValueError('A different social batch already has approval for this week')
-        return
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, indent=2) + '\n')
 
@@ -251,7 +260,7 @@ def main():
         if os.environ.get('GITHUB_OUTPUT'):
             with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
                 output.write('needed=' + str(plan is not None).lower() + '\n')
-                approved = bool(plan and (ROOT / 'data/social-production/approved' / (plan['publication_week'] + '.json')).exists())
+                approved = bool(plan and already_approved(plan))
                 output.write('needs_approval=' + str(plan is not None and not approved).lower() + '\n')
                 if plan:
                     output.write('run_id=' + plan['run_id'] + '\nartifact_id=' + plan['artifact_id'] + '\n')
