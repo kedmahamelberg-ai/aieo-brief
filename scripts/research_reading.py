@@ -8,6 +8,9 @@ from urllib.parse import unquote, urlparse
 import requests
 
 READING_VERSION = 'paper-practitioner-v1'
+PDF_READER_VERSION = 2
+MAX_PDF_BYTES = 64 * 1024 * 1024
+MAX_PAPER_CHARS = 600000
 
 
 def verified_paper_reading(row):
@@ -27,6 +30,8 @@ def restore_reading_scope(row):
 
 def needs_upgrade(row):
     return (not row.get('has_editorial') or bool(style_problem(row)) or row.get('research_reading_version') != READING_VERSION
+            or (row.get('evidence_scope') != 'paper_text' and row.get('pdf_reader_version', 1) < PDF_READER_VERSION
+                and row.get('full_text_status') in ('pdf_size_limit', 'pdf_text_unreadable'))
             or (row.get('evidence_scope') != 'paper_text' and row.get('full_text_retry_after', '9999') <= date.today().isoformat()))
 
 
@@ -57,17 +62,19 @@ def extract_paper(content, title):
     if not content.startswith(b'%PDF-'):
         raise ValueError('not_pdf')
     reader = PdfReader(io.BytesIO(content))
-    if reader.is_encrypted or not 2 <= len(reader.pages) <= 120:
+    if reader.is_encrypted or not 2 <= len(reader.pages) <= 200:
         raise ValueError('unsupported_pdf')
     pages = [re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', unicodedata.normalize('NFKC', p.extract_text() or '')) for p in reader.pages]
     normal = lambda s: re.sub(r'\W+', '', s).casefold()
     if normal(title) not in normal(pages[0]):
         raise ValueError('paper_identity_mismatch')
-    # Do not call a partial or image-only extraction a paper reading.
-    if any(len(re.sub(r'\s+', '', p)) < 80 for p in pages):
+    # A figure or formula page can have little selectable text without making
+    # the surrounding, fully extracted paper an abstract-only reading.
+    sparse_pages = sum(len(re.sub(r'\s+', '', p)) < 80 for p in pages)
+    if sparse_pages > (1 if len(pages) >= 10 else 0):
         raise ValueError('incomplete_text_extraction')
     text = '\n\n'.join('[PDF page %d]\n%s' % (i + 1, p) for i, p in enumerate(pages))
-    if len(text) < 2500 or len(text) > 210000:
+    if len(text) < 2500 or len(text) > MAX_PAPER_CHARS:
         raise ValueError('paper_reading_size')
     return {'text': text, 'pages': len(pages), 'pdf_sha256': hashlib.sha256(content).hexdigest(),
             'text_sha256': hashlib.sha256(text.encode()).hexdigest()}
@@ -94,13 +101,16 @@ def read_paper(paper):
                 parts = []; size = 0
                 for chunk in response.iter_content(65536):
                     size += len(chunk)
-                    if size > 32 * 1024 * 1024:
+                    if size > MAX_PDF_BYTES:
                         return {'status': 'pdf_size_limit'}
                     parts.append(chunk)
                 return {**extract_paper(b''.join(parts), paper['original_headline']), 'status': 'read', 'url': url}
         return {'status': 'pdf_redirect_limit'}
     except requests.RequestException:
         return {'status': 'pdf_unavailable'}
+    except ValueError as error:
+        return {'status': str(error) if str(error) in ('not_pdf', 'unsupported_pdf', 'paper_identity_mismatch',
+                                                       'incomplete_text_extraction', 'paper_reading_size') else 'pdf_text_unreadable'}
     except Exception:
         return {'status': 'pdf_text_unreadable'}
 
