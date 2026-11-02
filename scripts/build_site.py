@@ -134,12 +134,13 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
         output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':axes['human']['direction'],'ai_direction':axes['ai']['direction'],'human_label':DIRECTION_LABELS[axes['human']['direction']],'ai_label':DIRECTION_LABELS[axes['ai']['direction']],'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
 
-def papers():
+def papers(sanitize=True):
     p=ROOT/'data/research/public.json'
     if not p.exists():return []
     raw=json.loads(p.read_text()).get('papers',[]);out=[]
     for r in raw:
         r=restore_reading_scope(r)
+        if sanitize:r=withhold_abstract_summary(r)
         r['institutions']=clean_institutions(r.get('institutions'),r.get('authors'))
         if not safe_url(r.get('url')):continue
         key=str(r['key'])
@@ -259,9 +260,9 @@ def main():
                 if row and version_valid(version,row,release) and not version_valid(editorial.get(eid),row,release):editorial[eid]=version
     proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
     legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
-    news=cards(release,sym,registry,readiness,editorial,preview,legacy_proofs);research=papers();culture=culture_items()
-    apply_corrections(news,ROOT);apply_corrections(research,ROOT)
-    weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(research)
+    news=cards(release,sym,registry,readiness,editorial,preview,legacy_proofs);research=papers();weekly_source_research=papers(sanitize=False);culture=culture_items()
+    apply_corrections(news,ROOT);apply_corrections(research,ROOT);apply_corrections(weekly_source_research,ROOT)
+    weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(weekly_source_research)
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
     for item in old:
