@@ -33,6 +33,23 @@ def restore_reading_scope(row):
     return row
 
 
+def withhold_abstract_summary(row):
+    """Remove editorial copy unless a complete paper reading is cryptographically proven."""
+    if row.get('has_editorial') and not verified_paper_reading(row):
+        return {**row,
+                'has_editorial': False,
+                'headline': row.get('original_headline') or row.get('headline', ''),
+                'deck': 'A checked summary requires reading the full paper. Open the paper for its source and access options.',
+                'what_happened': '',
+                'why_it_matters': '',
+                'body_paragraphs': [],
+                'limitation': '',
+                'summary_basis': 'Original paper title',
+                'reading_minutes': 1,
+                'summary_status': 'full_text_required'}
+    return row
+
+
 def needs_upgrade(row):
     return (not row.get('has_editorial') or bool(style_problem(row)) or row.get('research_reading_version') != READING_VERSION
             or (row.get('evidence_scope') != 'paper_text' and row.get('pdf_reader_version', 1) < PDF_READER_VERSION

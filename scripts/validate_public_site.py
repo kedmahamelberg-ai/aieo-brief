@@ -36,11 +36,10 @@ def inspect_json(value):
 def validate_research_reading(item):
  if not item.get('limitation') or item.get('evidence_scope') not in ('abstract','paper_text'):
   raise ValueError('Research summary lacks evidence scope and limit')
- if item['evidence_scope']=='paper_text':
-  if not verified_paper_reading(item):
-   raise ValueError('Paper summary lacks a completed, identifiable paper reading')
- elif item.get('summary_basis')=='Summary of the paper':
-  raise ValueError('An abstract must not be labelled as a paper reading')
+ if item.get('evidence_scope') != 'paper_text':
+  raise ValueError('A published research summary must be based on a verified full-paper reading')
+ if not verified_paper_reading(item):
+  raise ValueError('Paper summary lacks a completed, identifiable paper reading')
 
 def validate_weekly_research_window(overview,papers):
  """Use canonical public-paper dates, not the shortened approval record."""

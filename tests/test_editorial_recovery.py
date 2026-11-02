@@ -509,9 +509,14 @@ class GenerationCheckpoints(unittest.TestCase):
         papers = [{'key': f'paper:{n}', 'original_headline': 'Musician study',
                    'url': f'https://example.org/paper/{n}', 'date': '2026-09-07',
                    'publisher': 'Study archive', 'source': 'arxiv', 'metadata_sha256': f'hash-{n}',
+                   'arxiv_id': '2609.35767v1', 'pdf_url': f'https://arxiv.org/pdf/2609.35767v1',
                    'abstract': sources[0]['evidence']} for n in range(size)]
         stack.enter_context(patch.object(research, 'load', return_value=(
             {'period_start': '2026-09-01', 'period_end': '2026-09-07', 'papers': papers}, {})))
+        stack.enter_context(patch.object(research, 'read_paper', side_effect=lambda paper: {
+            'status':'read', 'text':'A complete paper with methods, results, and limitations. '*80,
+            'pages':12, 'text_sha256':'a'*64, 'pdf_sha256':'b'*64,
+            'url':paper['pdf_url'], 'format':'pdf'}))
         return draft
 
     def test_research_checkpoints_preserve_good_summaries_and_original_links(self):

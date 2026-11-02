@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse,json,os,time
 import ai_runtime
 from editorial_corrections import is_locked
-from research_reading import read_paper, needs_upgrade, restore_reading_scope, READING_VERSION, PDF_READER_VERSION, HTML_READER_VERSION
+from research_reading import read_paper, needs_upgrade, restore_reading_scope, withhold_abstract_summary, verified_paper_reading, READING_VERSION, PDF_READER_VERSION, HTML_READER_VERSION
 from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
@@ -20,7 +20,7 @@ def load():
     if not path.exists():raise ValueError('Collect recent research before generating summaries.')
     data=json.loads(path.read_text());p=ROOT/'data/research/public.json'
     public=json.loads(p.read_text()) if p.exists() else {'papers':[]}
-    return data,{r['key']:restore_reading_scope(r) for r in public['papers']}
+    return data,{r['key']:withhold_abstract_summary(restore_reading_scope(r)) for r in public['papers']}
 
 def pending(data,old):
     return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and not (p.get('pdf_url') and p.get('pdf_url') != old[p['key']].get('pdf_url')) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
@@ -59,7 +59,20 @@ def merge_recent(old,updates,end,days=28):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--dry-run',action='store_true');parser.add_argument('--max-runtime-minutes',type=int,default=15);args=parser.parse_args()
     if not 1<=args.max_runtime_minutes<=60:raise ValueError('Use a 1–60 minute research budget.')
-    data,old=load();todo=pending(data,old);todo_keys={p['key'] for p in todo}
+    data,old=load()
+    input_keys={p['key'] for p in data['papers']}
+    # Retry previously published abstract-based records even when this week's
+    # discovery export no longer contains them.
+    repairs=[]
+    for prior in old.values():
+        if verified_paper_reading(prior) or prior.get('key') in input_keys:
+            continue
+        if not (prior.get('arxiv_id') or prior.get('pdf_url')):
+            continue
+        repairs.append({**prior,'abstract':'','publisher':prior.get('publisher',''),
+                        'source':prior.get('source',''),'original_headline':prior.get('original_headline') or prior.get('headline','')})
+    data['papers'].extend(repairs)
+    todo=pending(data,old);todo_keys={p['key'] for p in todo}
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'pending={len(todo)}\nneeds_model={str(bool(todo)).lower()}\n')
     if args.dry_run:print(json.dumps({'pending':len(todo),'records':len(data['papers'])}));return
@@ -103,11 +116,17 @@ def main():
             full=reading['status']=='read'
             if not full and prior.get('evidence_scope')=='paper_text' and prior.get('metadata_sha256')==p['metadata_sha256']:
                 counts['deferred']+=1;selected.append(prior);checkpoint();continue
-            if not full and not p.get('abstract'):
-                counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
-            evidence=reading['text'] if full else p['abstract']
-            sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':evidence,'evidence_basis':'paper_text' if full else 'abstract_only'}]
-            kind='paper' if full else ('preprint' if p['source'] in ('arxiv','ssrn') else 'abstract')
+            if not full:
+                counts['metadata_only']+=1
+                selected.append({**base,'summary_status':'full_text_required',
+                                 'full_text_status':reading['status'],
+                                 'full_text_retry_after':(date.today()+timedelta(days=7)).isoformat()})
+                checkpoint()
+                print('Withheld abstract-only research summary '+p['key']+': '+reading['status'],flush=True)
+                continue
+            evidence=reading['text']
+            sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':evidence,'evidence_basis':'paper_text'}]
+            kind='paper'
             seed_path=ROOT/'data/research/editorial-seeds.json'
             seeds=json.loads(seed_path.read_text()) if seed_path.exists() else {}
             seed=seeds.get(p['key'],{})
