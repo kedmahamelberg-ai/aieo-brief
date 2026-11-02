@@ -5,7 +5,7 @@ import hashlib
 import re
 from typing import Any
 
-QUALITY_VERSION = "stored_source_quality_v3"
+QUALITY_VERSION = "stored_source_quality_v4"
 ACCESS_GATES = (
     r"you have\s+\d+(?:[.,]\d+)?\s*%\s+of (?:this|the) article",
     r"(?:remaining|reste)\s+\d+(?:[.,]\d+)?\s*%",
@@ -36,6 +36,9 @@ def assess_body(row: dict[str, Any], *, language: str = "") -> dict[str, Any]:
         flags.append("corrupted_encoding")
     if body and sum(char.isalpha() for char in body) < 80:
         flags.append("too_little_written_content")
+    if (len(body) < 1000 and len(re.findall(r"\{\{[A-Za-z][^}]{0,80}\}\}", body)) >= 3
+            or "此文章不存在或已下线" in body):
+        flags.append("unrendered_or_unavailable_source")
     if len(body) < 500 and re.search(r"(?:新华社)?音视频部制作\s*$", body):
         flags.append("video_caption_only")
     basis = str(row.get("content_basis") or "")

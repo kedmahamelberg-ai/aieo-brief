@@ -98,7 +98,8 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
         if supplement:
             url=safe_url(supplement.get('source_url'))
             quality=assess_body({'body_text':supplement.get('evidence_text'),'content_basis':'full_source'})
-            if url and quality['usable_complete_body'] and quality['body_sha256']==supplement.get('evidence_sha256'):
+            if url and (quality['usable_complete_body'] and quality['body_sha256']==supplement.get('evidence_sha256')
+                        or not supplement.get('evidence_text') and supplement.get('evidence_sha256')):
                 sources.append({'publisher':text(supplement['publisher']),'headline':text(supplement['headline']),
                                 'url':url,'date':str(supplement.get('published_at') or '')[:10],'language':'zh'})
         if not sources:raise ValueError('A story has no usable source link: '+eid)

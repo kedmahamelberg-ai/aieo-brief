@@ -112,6 +112,28 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(hashlib.sha256(supplement['evidence_text'].encode()).hexdigest(),supplement['evidence_sha256'])
         self.assertTrue(assess_body({'body_text':supplement['evidence_text'],'content_basis':'full_source'})['usable_complete_body'])
 
+    def test_publisher_template_is_not_complete_source_evidence(self):
+        from source_evidence_quality import assess_body
+        template='{{summary}}\n来源：上观新闻\n作者：{{author}}\n{{brTitle}}\n{{editorLabel}}：{{maineditor}}\n此文章不存在或已下线'
+        quality=assess_body({'body_text':template,'content_basis':'full_source'})
+        self.assertIn('unrendered_or_unavailable_source',quality['flags'])
+        self.assertFalse(quality['usable_complete_body'])
+        valid='This original article reports on an AI governance forum and describes the statements of several speakers. '*10
+        self.assertTrue(assess_body({'body_text':valid+' Example {{template}}','content_basis':'full_source'})['usable_complete_body'])
+
+    def test_verified_copy_requires_the_exact_published_body_hash(self):
+        from source_supplements import verified_text
+        import hashlib
+        body=('A university published the full attributed article with methods and source context. '*8).strip()
+        markup=('<div class="v_news_content"><p>'+body+'</p></div>').encode()
+        response=Mock(content=markup)
+        response.raise_for_status.return_value=None
+        supplement={'source_url':'https://www.ecnu.edu.cn/info/example.htm',
+                    'evidence_sha256':hashlib.sha256(body.encode()).hexdigest()}
+        self.assertEqual(verified_text(supplement,get=lambda *a,**k:response),body)
+        self.assertEqual(verified_text({**supplement,'evidence_sha256':'0'*64},get=lambda *a,**k:response),'')
+        self.assertEqual(verified_text({**supplement,'source_url':'https://evil.example/story'},get=lambda *a,**k:response),'')
+
     def test_headline_correction_does_not_lock_missing_summary(self):
         eid='b7cc7093-b0e0-4f9b-9d7a-1469436f671f'
         event={'event_id':eid,'event_title':'Ustar Technology researches physical AI','event_date':'2026-10-23'}
