@@ -129,6 +129,27 @@ def topic_plan(items, monday, news):
     return sorted(topics, key=lambda t: (t['date'], t['time']))
 
 
+def country_scene_candidate(page, market):
+    """Reject misleading people/disaster images before any photo download.
+
+    This is a conservative candidate filter, not a replacement for visual
+    review of every final image against its article.
+    """
+    info = page.get('imageinfo', [{}])[0]
+    meta = info.get('extmetadata', {})
+    material = clean(' '.join([page.get('title', ''),
+        str(meta.get('ImageDescription', {}).get('value', '')),
+        str(meta.get('Categories', {}).get('value', ''))]))
+    if re.search(r'\b(?:painting|drawing|maps?|engraving|lithograph|illustration|portrait|headshot|selfie|people|persons?|man|woman|men|women|wildfires?|fires?|floods?|earthquake|disaster|war|protest|funeral|memorial)\b', material, re.I):
+        return False
+    places = {'US': r'United States|New York|Manhattan|American|USA',
+              'CA': r'Canada|Canadian|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan',
+              'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland',
+              'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai'}
+    scene = r'\b(?:skyline[0-9]*|cityscape|landscape|river|lake|mountains?|forest|trees|crater|coast|harbou?r|bridge|buildings?|cathedral|countryside|city)\b'
+    return bool(market in places and re.search(r'\b(?:'+places[market]+r')\b', material, re.I) and re.search(scene, material, re.I))
+
+
 def new_photos(topics, history, output):
     """Use only Commons public-domain/CC0 photos, with permanent duplicate history."""
     old_urls = set(history.get('source_urls', [])); old_hashes = set(history.get('sha256', []))
@@ -147,7 +168,7 @@ def new_photos(topics, history, output):
                 if license not in ('Public domain', 'CC0') or info.get('mime') != 'image/jpeg' or min(info.get('width', 0), info.get('height', 0)) < 900 or url in old_urls:
                     continue
                 title = page['title'].removeprefix('File:')
-                if re.search(r'\b(painting|drawing|map|engraving|lithograph|illustration)\b', title, re.I):
+                if not country_scene_candidate(page, market):
                     continue
                 path = output/'sources'/f"{topic['id']}.jpg"
                 try:

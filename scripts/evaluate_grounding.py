@@ -34,7 +34,34 @@ CASES = [
   'With uncorrelated input positions, the networks follow the same trajectory, while the convolutional network learns P times faster.'),
  ('comparator', 'The method improves over the base model on all four holdout tasks. A competing method scores higher on one task.',
   'The method fails to improve over the base model on some holdout tasks.',
-  'The method improves over the base model on all four holdout tasks, but does not beat every competitor.')]
+  'The method improves over the base model on all four holdout tasks, but does not beat every competitor.'),
+ ('source_position', 'In this opinion essay, the writer calls generative AI harmful and argues that artists should reject it.',
+  'The writer advocates adopting AI without condemning the technology.',
+  'The opinion writer argues that artists should reject generative AI.'),
+ ('clinical_comparator', 'Brain and spine protocol accuracy was lower than for other scan types but comparable to staff decisions.',
+  'The tool performed worse than staff on brain and spine protocols.',
+  'Brain and spine protocol accuracy was described as comparable to staff decisions.'),
+ ('classroom_scope', 'An accounting educator describes one classroom episode in an opinion essay. The essay reports no representative survey of students.',
+  'The study finds that students generally prefer AI to learning independently.',
+  'An accounting educator reflects on one classroom episode in an opinion essay.'),
+ ('perspective_scope', 'The published Perspective proposes a legal framework connecting responsibility to human intentions. This supplied text is the abstract, not the complete paper. It reports no experiment.',
+  'The experiment proves that the proposed accountability system works.',
+  'The supplied abstract describes a published Perspective proposing a legal framework for responsibility.'),
+ ('translated_identity', 'The interview identifies the mathematician as 英格丽·多贝西 (Ingrid Daubechies), who discusses AI assistance.',
+  'Mathematician Dobensky discusses AI assistance in the interview.',
+  'Mathematician Ingrid Daubechies discusses AI assistance in the interview.'),
+ ('projected_benefit', 'The provider estimates the tool could save 300 staff hours a year. No realised time saving has yet been measured.',
+  'The tool has saved 300 staff hours a year.',
+  'The provider estimates a potential saving of 300 staff hours a year.'),
+ ('country_context', 'This French-language article analyses expected AI growth across Asian economies. It does not describe an AI deployment in France.',
+  'France deploys AI in the economic programme described by the article.',
+  'The French-language article analyses expected AI growth across Asian economies.'),
+ ('harmful_bypass', 'The malware tries another model after a refusal, attempting to bypass safeguards and produce the attacker’s assessment.',
+  'Model chaining provides safety safeguards for the malware process.',
+  'The malware tries another model in an attempt to bypass a refusal.'),
+ ('qualitative_method', 'Researchers interviewed 18 artists and collaborators about creative work. This was qualitative research, with no controlled creativity experiment.',
+  'A controlled experiment proves that AI increases artists’ creativity.',
+  'Researchers used 18 qualitative interviews to explore artists’ creative work.')]
 
 
 def evaluate(review=review_scope):
@@ -93,6 +120,6 @@ def evaluate(review=review_scope):
         if passed!=should_pass:failed.append('full_draft:'+label)
         print('full_draft:'+label+(' PASS' if passed==should_pass else ' FAIL'),flush=True)
     if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))
-    print('All 18 live grounding checks passed, including full-draft completion.', flush=True)
+    print('All '+str(2*len(CASES)+2)+' live grounding checks passed, including full-draft completion.', flush=True)
 
 if __name__ == '__main__':evaluate()
