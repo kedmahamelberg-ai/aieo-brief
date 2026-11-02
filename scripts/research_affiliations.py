@@ -36,10 +36,18 @@ def clean_institutions(values, authors=()):
     seen = set()
     for value in values or []:
         name = re.split(r"\s*(?:E-?mail)\s*:", _plain(value), maxsplit=1, flags=re.I)[0].strip().rstrip(' .,:;')
+        name = re.sub(r"^The authors are with (?:the )?", "", name, flags=re.I)
+        if re.search(r"^(?:this work|the work|the study) (?:is|was) (?:supported|funded)\b", name, re.I):
+            continue
+        postal = re.search(r",\s*(?:[A-Z]{2}\s+\d{5}(?:-\d{4})?|[A-Z]{1,2}\d[A-Z\d]?\s+\d[A-Z]{2})(?:,\s*[^,]+)?$", name)
+        if postal:
+            prefix = name[:postal.start()]
+            if not re.search(r"\b(?:university|institute|school|college|academy|laboratory|lab|department|centre|center|research|ltd|inc)\b", prefix, re.I):
+                continue
+            name = prefix
         if (not name or len(name) >= 140
                 or re.search(r"https?://|www\.|@|\b(?:project page|source code)\b", name, re.I)
                 or re.search(r"^\d+[A-Z]|[a-z]\d+[A-Z]|\d+$", name)
-                or re.search(r"\b[A-Z]{2}\s+\d{5}(?:-\d{4})?\b", name)
                 or _normal(name) in author_names):
             continue
         key = _normal(name)
