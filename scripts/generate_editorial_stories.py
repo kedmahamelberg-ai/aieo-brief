@@ -16,6 +16,7 @@ from brief_database import current_maps
 from build_site import inputs,version_valid
 from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION
 from source_evidence_quality import assess_body
+from source_supplements import verified_text
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=ai_runtime.identity()['model'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
 MODEL_REVISION=ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','2f3b082b1356a6123f7ed71e65aea340da25d53c')
@@ -78,12 +79,12 @@ def candidates(release,sym,maps,force=False):
         sources=source_payload(evidence.get(eid,[]),allowed,fingerprints)
         supplement=supplements.get(eid,{})
         if supplement:
-            body=str(supplement.get('evidence_text') or '')
+            body=verified_text(supplement)
             quality=assess_body({'body_text':body,'content_basis':'full_source'})
             if (quality['usable_complete_body'] and quality['body_sha256']==supplement.get('evidence_sha256')
                     and safe_url(supplement.get('source_url'))):
                 sources.append({'source_number':len(sources)+1,'publisher':supplement['publisher'],
-                                'headline':supplement['headline'],'evidence_basis':'official_transcript',
+                                'headline':supplement['headline'],'evidence_basis':'official_transcript' if supplement.get('evidence_text') else 'verified_copy',
                                 'evidence':body,'source_url':supplement['source_url'],'quality':quality})
         if not sources or not relation['axes'].get('evidence_complete'):counts['source_not_ready']+=1;continue
         seed=seeds.get(eid,{})
