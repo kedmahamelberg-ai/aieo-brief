@@ -369,6 +369,78 @@
           }
         ]
       }
+    },
+    "254e6644-7404-4bb6-922a-548e875708b5": {
+      "evidence_sha256": [
+        "97960b84026b1201f0cb8efea8eb9826487ab48138e667eb08d7aa4cd08585f0"
+      ],
+      "draft": {
+        "editorial_headline": "Reuters Institute finds AI use widening across nine countries",
+        "editorial_deck": "A 2026 survey charts rising direct use of generative AI and more encounters with it inside search and other services.",
+        "what_happened": "The Reuters Institute surveyed people in nine countries about generative AI use and expectations. In six countries with earlier data, weekly use of standalone AI systems rose from 34% last year to 51% in 2026.",
+        "why_it_matters": "Across the countries surveyed, 57% said they had encountered AI summaries in search in the previous week. The report also found that 67% had not used an AI agent in that week.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Daily use of generative AI systems in the six countries with earlier surveys rose from 7% in 2024 to 16% in 2025 and 28% in 2026.",
+          "The report says use remains more common among younger people, those with higher incomes and education, and people in occupations classified as highly skilled."
+        ],
+        "claim_status": "study",
+        "limitation": "The cross-year use figures refer to six countries with earlier surveys; the 2026 survey covers nine countries.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Our survey in nine countries (Argentina, Australia, Denmark, Finland, France, Japan, Norway, the UK, and the USA) explored how people use generative AI"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "weekly use up from one-third (34%) last year to half (51%) in 2026 in the six countries where we have data from previous years."
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "57% across countries say they have encountered AI summaries in the last week"
+          }
+        ]
+      }
+    },
+    "5a89027e-1050-46e1-9cb2-98d69839c6b9": {
+      "evidence_sha256": [
+        "50f9733443f13a3b2e26cbb3e2aaf884466b6787911d808664549d2b7c0b0853"
+      ],
+      "draft": {
+        "editorial_headline": "Cloudflare reports cross-customer AI responses and says flaw is fixed",
+        "editorial_deck": "The company says 155 responses from its GLM-5.3 model contained data from other customers’ requests before remediation.",
+        "what_happened": "Cloudflare says a tenant-isolation problem affected its GLM-5.3 Workers AI model from August 27 to September 9, 2026. It says some customers received responses containing data from other customers’ recent requests.",
+        "why_it_matters": "The disclosure documents a cross-customer data exposure in one hosted model. Cloudflare says no other Workers AI model was affected and it has hardened its production SGLang deployments.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The company identified 155 affected responses, each tied to a prompt exceeding 681,280 tokens. It restored the model on September 9.",
+          "After excluding its own and the researcher’s tests, the company says it found no evidence of deliberate exploitation. It published the incident report alongside a post from SGLang."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "We have remediated the issue, and we restored the model on September 9."
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Between August 27 and September 9, a small number of customers using the GLM 5.3 Workers AI model received responses that contained data from other customers"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "We have confirmed that no other model hosted on Workers AI was affected."
+          }
+        ]
+      }
     }
   }
 }
