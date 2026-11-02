@@ -139,7 +139,7 @@ def papers():
     if not p.exists():return []
     raw=json.loads(p.read_text()).get('papers',[]);out=[]
     for r in raw:
-        r=withhold_abstract_summary(restore_reading_scope(r))
+        r=restore_reading_scope(r)
         r['institutions']=clean_institutions(r.get('institutions'),r.get('authors'))
         if not safe_url(r.get('url')):continue
         key=str(r['key'])
@@ -282,6 +282,7 @@ def main():
         allitems[row['key']]=row
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
     apply_corrections(allcards,ROOT)
+    allcards=[withhold_abstract_summary(x) if x.get('kind')=='research' else x for x in allcards]
     raw_archive=copy.deepcopy(allcards)
     english=EnglishPublication(ROOT, allow_model=(not preview and os.environ.get('BRIEF_TRANSLATE_ENGLISH')=='true'))
     # Prepare the day's cultural translations before the shared model budget is
