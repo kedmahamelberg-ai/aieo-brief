@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 14,
             "topic": "Work And Skills",
-            "sentence": "United States: the discovery stream centred most often on work and skills, including “EFF warns broad fair use is essential to keep AI benefits….”",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “Literary critic Nick Ripatrazone warns AI can erode autonomy and dignity.”",
             "story": {
-              "headline": "EFF warns broad fair use is essential to keep AI benefits public",
-              "path": "story/rewriting-copyright-law-generative-ai-would-hurt-everyone/index.html",
-              "publisher": "Electronic Frontier Foundation",
-              "source_url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone"
+              "headline": "Literary critic Nick Ripatrazone warns AI can erode autonomy and dignity",
+              "path": "story/artificial-intelligence-horror-story/index.html",
+              "publisher": "Literary Hub",
+              "source_url": "https://lithub.com/artificial-intelligence-is-a-horror-story"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “EFF warns broad fair use is essential to keep AI benefits….”",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Literary critic Nick Ripatrazone warns AI can erode autonomy and dignity.”",
             "story": {
-              "headline": "EFF warns broad fair use is essential to keep AI benefits public",
-              "path": "story/rewriting-copyright-law-generative-ai-would-hurt-everyone/index.html",
-              "publisher": "Electronic Frontier Foundation",
-              "source_url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone"
+              "headline": "Literary critic Nick Ripatrazone warns AI can erode autonomy and dignity",
+              "path": "story/artificial-intelligence-horror-story/index.html",
+              "publisher": "Literary Hub",
+              "source_url": "https://lithub.com/artificial-intelligence-is-a-horror-story"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "France: selected reporting leaned toward rules and rights, with “Online Training in the Field of Artificial Intelligence” as one visible signal.",
+            "sentence": "France: selected reporting leaned toward rules and rights, with “IMF Sees Asia Growth Powered by AI, But Risks Linger” as one visible signal.",
             "story": {
-              "headline": "Online Training in the Field of Artificial Intelligence",
-              "path": "story/online-training-field-artificial-intelligence/index.html",
-              "publisher": "Organisation internationale de la Francophonie (OIF)",
-              "source_url": "https://www.francophonie.org/formation-en-ligne-intelligence-artificielle-et-manipulations-de-linformation-8752"
+              "headline": "IMF Sees Asia Growth Powered by AI, But Risks Linger",
+              "path": "story/asian-growth-driven-artificial-intelligence/index.html",
+              "publisher": "Asialyst",
+              "source_url": "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle"
             }
           },
           {
@@ -81,12 +81,12 @@
             "name": "Canada",
             "count": 19,
             "topic": "Work And Skills",
-            "sentence": "Canada: the discovery stream centred most often on work and skills, including “AI to Correct Our Students? Emilia’s Claims Meet Real Limits.”",
+            "sentence": "Canada: the discovery stream centred most often on work and skills, including “Literary critic Nick Ripatrazone warns AI can erode autonomy and dignity.”",
             "story": {
-              "headline": "AI to Correct Our Students? Emilia’s Claims Meet Real Limits",
-              "path": "story/ai-correct-our-students-emilias-claims-real-limits/index.html",
-              "publisher": "Le Soleil",
-              "source_url": "https://www.lesoleil.com/actualites/education/2026/10/30/lintelligence-artificielle-pour-corriger-nos-eleves-BTVP3V52ANHV5EMKQ4TLKXNWJQ"
+              "headline": "Literary critic Nick Ripatrazone warns AI can erode autonomy and dignity",
+              "path": "story/artificial-intelligence-horror-story/index.html",
+              "publisher": "Literary Hub",
+              "source_url": "https://lithub.com/artificial-intelligence-is-a-horror-story"
             }
           }
         ],
@@ -95,7 +95,9 @@
         "status": "pending",
         "prose": [],
         "papers": [],
-        "pending_reason": "sources_incomplete"
+        "pending_reason": "generation_pending",
+        "input_hash": "b5af436c735ac6a8e9b2f32f25df425a29db95f7b47bb08860d811b5c7372476",
+        "attempts": 0
       },
       "research": {
         "kind": "research",
@@ -124,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "1a5882de681bf777156e712cbcb99581f1786e31ea076899b55cf37078e4dfa3"
+      "content_sha256": "dcb84fbedf650c5234dd3bca34b58fb3e235c612f601b3ef74c323ce8f26aa7b"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
