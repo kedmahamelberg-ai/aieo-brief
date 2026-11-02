@@ -186,7 +186,7 @@
         "3dd9c6a84eb6f0f86de903a4f5dab34f379c8b70662e2a43bfac4665ade26ef2"
       ],
       "draft": {
-        "editorial_headline": "Villefranche groups invite people to discuss AI uses and unanswered questions",
+        "editorial_headline": "Villefranche groups propose an information meeting about AI",
         "editorial_deck": "A local information meeting lists everyday tools, misleading media, human roles and possible technical progress as topics.",
         "what_happened": "A Villefranche-de-Rouergue notice announces an information meeting about what artificial intelligence is and how it works. It lists voice assistants, recommendations, translation tools and chatbots, alongside misleading videos and altered images.",
         "why_it_matters": "The organizers invite people to discuss whether AI might influence decisions or replace human roles, and where it could bring technical progress. The notice poses these as questions; it reports no answers or observed effects.",
@@ -202,7 +202,7 @@
           {
             "field": "editorial_headline",
             "source_number": 1,
-            "quote": "Venez vous informer et discuter avec Guilhem Landès"
+            "quote": "Réunion d’information proposée par l’Association Familiale Laïque et la Maison de l’amitié de Villefranche"
           },
           {
             "field": "what_happened",
