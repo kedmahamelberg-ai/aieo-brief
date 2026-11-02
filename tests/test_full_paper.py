@@ -90,6 +90,17 @@ class FullPaperReading(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'incomplete_text_extraction'):
                 extract_paper(b'%PDF-test','Study title')
 
+    def test_pdf_identity_allows_latex_math_and_added_year_but_no_changed_claim(self):
+        pages=[Mock(),Mock()]
+        pages[1].extract_text.return_value='Methods and limitations. '*100
+        with patch('pypdf.PdfReader',return_value=Mock(is_encrypted=False,pages=pages)):
+            pages[0].extract_text.return_value='A Quasipolynomial Algorithm for ℓ∞ Contractions\n'+'Abstract and methods. '*80
+            self.assertEqual(extract_paper(b'%PDF-test',r'A Quasipolynomial Algorithm for $\ell_\infty$ Contractions')['pages'],2)
+            pages[0].extract_text.return_value='From Reactive Containment to Proactive Assurance: Lessons from the 2026 OpenAI, Anthropic, and Google Agent Security Incidents\n'+'Abstract and methods. '*80
+            self.assertEqual(extract_paper(b'%PDF-test','From Reactive Containment to Proactive Assurance: Lessons from OpenAI, Anthropic, and Google Agent Security Incidents')['pages'],2)
+            with self.assertRaisesRegex(ValueError,'paper_identity_mismatch'):
+                extract_paper(b'%PDF-test','From Reactive Containment to Proactive Assurance: Lessons from Microsoft, Anthropic, and Google Agent Security Incidents')
+
     def test_crossref_unspecified_pnas_pdf_is_accepted_only_for_exact_doi(self):
         doi='10.1073/pnas.2628851123'
         good='https://pnas.org/doi/pdf/'+doi
