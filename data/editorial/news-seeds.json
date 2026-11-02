@@ -333,6 +333,42 @@
           }
         ]
       }
+    },
+    "03c19c5b-ebc2-49d1-b4ad-020e753d6fba": {
+      "evidence_sha256": [
+        "e3ae8d50facca2045d2b8d8550d7c97a3bf9ace926c1857947041cc0d58fd668"
+      ],
+      "draft": {
+        "editorial_headline": "Tech stock commentary questions cash returns on AI spending",
+        "editorial_deck": "The author says investors are weighing free cash flow and capital spending alongside cloud revenue growth.",
+        "what_happened": "A Moomoo community commentary says recent selling in technology shares reflects investor questions about the cash returns on AI investment. The author discusses revenue, capital spending and free cash flow at major technology companies.",
+        "why_it_matters": "The commentary treats cash flow, margins and company guidance as important context for assessing AI-related investment, rather than relying on earnings figures alone.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The writer discusses Alphabet and Amazon as examples of growing revenue alongside costly AI infrastructure investment. The post asks how long the spending will take to generate additional cash.",
+          "It urges readers to examine cash flow, debt, operating margins, capital spending needs and management guidance when assessing a market decline."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "华尔街希望看到确凿证据，证明投入人工智能领域的巨额资金终将转化为可持续的盈利、更强劲的利润率，以及——更为关键——自由现金流。"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "过去一周的科技股抛售向投资者传递了一个重要信号：仅仅超出盈利预期已不再足够。"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "关键在于超越财报的盈利数据。营收增速、自由现金流、毛利率以及前瞻指引，将日益成为影响投资者反应的重要因素。"
+          }
+        ]
+      }
     }
   }
 }
