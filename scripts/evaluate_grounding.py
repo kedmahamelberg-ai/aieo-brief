@@ -58,7 +58,7 @@ CASES = [
   'The French-language article analyses expected AI growth across Asian economies.'),
  ('harmful_bypass', 'The malware tries another model after a refusal, attempting to bypass safeguards and produce the attacker’s assessment.',
   'Model chaining provides safety safeguards for the malware process.',
-  'The malware tries another model in an attempt to bypass a refusal.'),
+  'The malware tries another model in an attempt to bypass safeguards.'),
  ('qualitative_method', 'Researchers interviewed 18 artists and collaborators about creative work. This was qualitative research, with no controlled creativity experiment.',
   'A controlled experiment proves that AI increases artists’ creativity.',
   'Researchers used 18 qualitative interviews to explore artists’ creative work.')]
