@@ -9,6 +9,7 @@ from zoneinfo import ZoneInfo
 import requests
 from brief_contract import validate_pair, relationship_fingerprint
 from build_site import inputs
+from source_chronology import public_event_ids, public_directional_counts
 
 
 def expected_period(now=None):
@@ -18,13 +19,14 @@ def expected_period(now=None):
 
 
 def needs_update(release, relationship, published):
-    counts = validate_pair(release, relationship)
+    validate_pair(release, relationship)
+    counts = public_directional_counts(release, relationship)
     return any((
         published.get('release_id') != release['release_id'],
         published.get('source_release_sha256') != release['content_sha256'],
         published.get('source_relationship_sha256') != relationship_fingerprint(relationship),
         published.get('directional_counts') != counts,
-        published.get('story_count') != len(release['evidence']),
+        published.get('story_count') != len(public_event_ids(release)),
     ))
 
 
@@ -46,8 +48,7 @@ def missing_news_summaries(release, published):
     """Count source-ready stories in this edition that still lack Brief prose."""
     if published.get('release_id') != release['release_id']:
         return 0
-    expected = {str(event.get('effective_event_id') or event['event_id'])
-                for event in release['evidence']}
+    expected = public_event_ids(release)
     return sum(str(story.get('event_id')) in expected
                and story.get('evidence_complete') is True
                and not story.get('has_editorial')
