@@ -68,12 +68,12 @@
             "name": "France",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "France: selected reporting leaned toward rules and rights, with “IMF Sees Asia Growth Powered by AI, But Risks Linger” as one visible signal.",
+            "sentence": "France: selected reporting leaned toward rules and rights, with “Mistral Opens ML4 Weights, Giving Firms Self-Hosted AI for Cybersecurity, With…” as one visible signal.",
             "story": {
-              "headline": "IMF Sees Asia Growth Powered by AI, But Risks Linger",
-              "path": "story/asian-growth-driven-artificial-intelligence/index.html",
-              "publisher": "Asialyst",
-              "source_url": "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle"
+              "headline": "Mistral Opens ML4 Weights, Giving Firms Self-Hosted AI for Cybersecurity, With Cautions",
+              "path": "story/mistral-has-launched-ai-model-giving-over-cybersecurity/index.html",
+              "publisher": "Euronews.com",
+              "source_url": "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse"
             }
           },
           {
@@ -96,7 +96,7 @@
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "ad75a0279dfb6cb7ca5708bfcbc150b5016263202d4ca8bca77b8acb25d4fb3e",
+        "input_hash": "e79166187f2cf63ae6971bc6906bf50837965c1765b5f02af27ba4ee56421a21",
         "attempts": 0
       },
       "research": {
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "808ab1168bf9bd98ddd3151368fe2227fa046ad4aaecdaebbeaf861d71a3847f"
+      "content_sha256": "173dee57a67e72096aa920e54dfa3598b7e072bc58b073a4ce05700661f51c63"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
