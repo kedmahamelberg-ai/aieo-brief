@@ -33,7 +33,7 @@ class WeeklyHandoff(unittest.TestCase):
         self.sym['generated_at'] = '2099-01-01T12:00:00Z'
         self.assertFalse(needs_update(self.release, self.sym, self.published))
 
-    def test_missing_editorial_is_retried_once_daily(self):
+    def test_deferred_editorial_resumes_after_two_hours_and_rejections_retry_daily(self):
         event = self.release['evidence'][0]
         self.published['stories'] = [{'event_id': event['event_id'],
                                       'evidence_complete': True, 'has_editorial': False}]
@@ -41,6 +41,10 @@ class WeeklyHandoff(unittest.TestCase):
         self.assertEqual(missing_news_summaries(self.release, self.published), 1)
         self.assertTrue(needs_editorial_retry(self.release, self.published, {}, now))
         status = {'release_id': self.release['release_id'], 'updated_at': '2026-11-01T08:00:00Z'}
+        self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
+        status['counts']={'deferred':39}
+        self.assertTrue(needs_editorial_retry(self.release, self.published, status, now))
+        status['updated_at']='2026-11-01T09:30:00Z'
         self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
         status['updated_at'] = '2026-10-31T08:00:00Z'
         self.assertTrue(needs_editorial_retry(self.release, self.published, status, now))
