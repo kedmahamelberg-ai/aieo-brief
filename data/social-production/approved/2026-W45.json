@@ -1,5 +1,5 @@
 {
-  "status": "APPROVED",
+  "status": "SUPERSEDED_PENDING_CORRECTED_REVIEW",
   "source_edition": "2026-W44",
   "publication_week": "2026-W45",
   "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41409498209/artifacts/13124519236",
@@ -11,5 +11,8 @@
   "approval_method": "explicit_user_approval_in_codex",
   "approval_chat": "01a19bd0-ce5e-7cb3-902c-9d59341dec53",
   "approval_statement": "approved",
-  "publishing_status": "NOT_PUBLISHED_BY_THIS_WORKFLOW"
+  "publishing_status": "NOT_PUBLISHED_BY_THIS_WORKFLOW",
+  "corrected_batch_sha256": "4ff515c8e476aa43b7caa6003cefd50e4266cfd7451a156d1c2b594dbcdf3136",
+  "superseded_at": "2026-11-02T13:14:38.270669+01:00",
+  "corrected_artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41442991736/artifacts/13140303719"
 }
