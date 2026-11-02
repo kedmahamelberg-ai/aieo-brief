@@ -39,6 +39,8 @@ def assess_body(row: dict[str, Any], *, language: str = "") -> dict[str, Any]:
     if (len(body) < 1000 and len(re.findall(r"\{\{[A-Za-z][^}]{0,80}\}\}", body)) >= 3
             or "此文章不存在或已下线" in body):
         flags.append("unrendered_or_unavailable_source")
+    if len(body) < 1000 and "热点阅读" in body and "打开东方财富APP查看更多内容" in body:
+        flags.append("article_navigation_only")
     if len(body) < 500 and re.search(r"(?:新华社)?音视频部制作\s*$", body):
         flags.append("video_caption_only")
     basis = str(row.get("content_basis") or "")
