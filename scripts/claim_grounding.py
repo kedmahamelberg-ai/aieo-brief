@@ -13,7 +13,10 @@ FIELDS = ('editorial_headline', 'editorial_deck', 'what_happened',
           'why_it_matters', 'for_humans', 'for_ai', 'limitation')
 CHECKS = ('source_is_substantive', 'entities_and_roles_preserved',
           'dates_and_event_status_preserved', 'comparators_and_metrics_preserved',
-          'provenance_preserved', 'limitations_and_examples_supported')
+          'provenance_preserved', 'limitations_and_examples_supported',
+          'source_position_preserved', 'evidence_type_and_scope_preserved',
+          'claims_and_benefits_attributed', 'translated_identity_and_meaning_preserved',
+          'country_context_preserved')
 
 
 def units(draft):
@@ -121,6 +124,11 @@ In particular, a pilot at one institution does not establish a requirement at th
 dates_and_event_status_preserved: preserve scheduled versus completed events and estimates versus deadlines; roughly twenty years is not up to twenty years.
 comparators_and_metrics_preserved: check each number WITH its denominator, subgroup, metric, baseline, direction and qualifier. Training error is not generalization error. Same trajectory is not equal speed. A worse score than one competitor is not a failure to improve over the base model.
 provenance_preserved: published or obtained does not mean leaked, stolen, confidential or unauthorized. Preserve who made each claim.
+source_position_preserved: an opinion essay's strong objection must not become a moderate endorsement, balanced discussion or claim that the author avoids condemning the technology. Preserve the actual argument, even when the publication tone is calm. Do not reverse a harmful bypass into a safety safeguard.
+evidence_type_and_scope_preserved: distinguish a Perspective, commentary, interview, classroom anecdote, qualitative interviews, survey, experiment and clinical validation. A published Perspective is not experimental evidence. An educator's anecdote is not a population-wide finding. Qualitative interviews cannot prove a causal creativity gain. Preserve abstract-only versus full-paper scope explicitly; do not imply a full-paper reading from an abstract.
+claims_and_benefits_attributed: company performance and efficiency claims, product marketing, interview opinions and projected benefits must retain their attribution. A potential time saving is not a measured outcome. An expected AI/operator gain is not independently demonstrated effectiveness.
+translated_identity_and_meaning_preserved: check names, titles and ambiguous translated terms against original-language context. Use a conventional name only when supported by the supplied evidence; an uncertain identity must be omitted or rejected, never guessed. Commemorative/travel writing does not imply funeral memorials. Preserve a comparison's target: comparable to staff is not worse than staff just because another scan type scores higher.
+country_context_preserved: a publisher's language, country or discovery-stream label does not establish the subject's jurisdiction. US copyright advocacy is not UK law; Dutch schools are not UK schools; a French-language article about Asia is not an event in France. Verify any asserted country against the actual subject and source context.
 limitations_and_examples_supported: do not invent critics, warnings, cautions, mixed results, targets, independent confirmation, lab data, hypothetical studies, or practical applications. Do not turn real observations into hypothetical examples. A missing detail may be described only as absent from the supplied material, not absent from the underlying research. A scope statement can cite supplied evidence metadata; a substantive claim cannot be supported by metadata alone.
 Return one field_reviews entry for EACH field ID. Each entry must cover ALL clauses, give a verdict, and cite original-language passages using the identifiers required by the schema. Supported entries require citations. False/uncertain, omitted or duplicate fields prevent publication. Never repair text inside the review.\n'''
 

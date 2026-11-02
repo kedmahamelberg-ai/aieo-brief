@@ -14,6 +14,21 @@ from test_editorial_recovery import fixture, accepted_review
 
 
 class GroundingGate(unittest.TestCase):
+    def test_source_fidelity_dimensions_are_required_individually(self):
+        draft, sources = fixture()
+        dimensions = ('source_position_preserved', 'evidence_type_and_scope_preserved',
+                      'claims_and_benefits_attributed', 'translated_identity_and_meaning_preserved',
+                      'country_context_preserved')
+        schema = grounding.extend_schema(engine.REVIEW_SCHEMA, draft)
+        for dimension in dimensions:
+            self.assertIn(dimension, schema['required'])
+            for value in (False, None):
+                review = accepted_review()
+                if value is None: review.pop(dimension)
+                else: review[dimension] = value
+                with self.subTest(dimension=dimension, value=value), self.assertRaisesRegex(ValueError, dimension):
+                    grounding.validate(review, draft, sources)
+
     def test_pilot_cannot_become_other_campus_requirement(self):
         source={'source_number':1,'evidence':'Purdue Northwest is piloting an AI literacy requirement. The fall 2026 requirement applies to Purdue West Lafayette.'}
         wrong={'editorial_headline':'Purdue Northwest requires AI literacy for the fall 2026 class.'}
