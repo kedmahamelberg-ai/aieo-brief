@@ -257,6 +257,82 @@
           }
         ]
       }
+    },
+    "bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883": {
+      "evidence_sha256": [
+        "177bc2556a98a7ae5fce95a03b0e67096f5323a6472678b1fd365daf5759948f"
+      ],
+      "draft": {
+        "editorial_headline": "Marquette invites students to discuss AI engagement and discernment",
+        "editorial_deck": "Raynor Library plans an open student conversation about how people engage with AI.",
+        "what_happened": "Raynor Library’s Connect team plans a student-centered discussion of artificial intelligence in its Beaumier Suites. The event is designed to gather student perspectives on AI engagement and discerning AI.",
+        "why_it_matters": "Students are being invited to share their views in an open discussion of AI use. Raynor Library and MU’s Discerning AI Research Community are presenting the event.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The Connect team will facilitate the conversation. The calendar notice says students need an MUID for entry and do not need to register."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Raynor Library’s Connect team will facilitate a student-centered discussion on artificial intelligence"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "This event is designed to gather student perspectives on a variety of issues concerning AI engagement and discerning AI."
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "This will be an open, welcoming environment for student discussions."
+          }
+        ]
+      }
+    },
+    "11dcf5d8-1bd7-4629-8a91-15442fbefeea": {
+      "evidence_sha256": [
+        "9f2e66f557d63a9ee3f01e653c39c4e6eab54de39ae8f439a2c1d4a32a273214"
+      ],
+      "draft": {
+        "editorial_headline": "Shanghai technology fair displays AI tools for consumer use",
+        "editorial_deck": "Xinhua reports demonstrations of text-to-3D tools and a lower-limb exoskeleton at the West Bund fair.",
+        "what_happened": "More than 400 technology brands appeared at the second West Bund International Tech Consumption Festival in Shanghai, Xinhua reports. Exhibits included a text-to-3D model tool and a consumer lower-limb exoskeleton.",
+        "why_it_matters": "The displays place AI tools in consumer products such as printable 3D models and walking assistance. The report also describes local model deployment for phones and robots.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Visitors could generate an editable 3D model from text or an image at one stand. Another stand demonstrated an exoskeleton designed for walking and standing.",
+          "The report also describes companies developing chip and computing services for AI applications on end devices."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "让参观者感受AI产品走向生活的各种可能"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "第二届西岸国际科技消费嘉年华在上海西岸国际会展中心举办，400多个科技品牌亮相"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "一处展位前，参观者正体验“一句话生成3D模型”功能"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "延伸至普通消费者的日常出行、户外休闲，让具身智能走到大众身边"
+          }
+        ]
+      }
     }
   }
 }
