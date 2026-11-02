@@ -6509,6 +6509,26 @@
       },
       "output_sha256": "0daf477aa20e9a581376485a4068747ad6a1138049478439368a6dbcc3a92c68",
       "policy": "brief-english-display-v1"
+    },
+    "4b6f60545171f027e3879e15a2ddce558a3ee2ba4ae236421bc70effce48ec6d": {
+      "english": {
+        "0": "HKEX Introduces Artificial Intelligence and Semiconductor Indices",
+        "1": "People's Daily",
+        "2": "People's Daily"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8cb3b0fdff735f773a3360f8cd950acdfdfbd5dc73333ed8464306e1c4295e94",
+      "policy": "brief-english-display-v1"
     }
   }
 }
