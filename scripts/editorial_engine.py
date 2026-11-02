@@ -349,6 +349,22 @@ def review_scope(draft,compiled,deadline=None,paper=False):
     result=call_json(prompt,claim_grounding.catalog_schema(REVIEW_SCHEMA,draft,catalog),deadline,stage='scope_review',paper=paper)
     if any(result.get(k) is not True for k in REVIEW_CHECKS):
         raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=[k for k in REVIEW_CHECKS if result.get(k) is not True],feedback=str(result.get('reason','claim scope mismatch'))[:300])
+    failed_grounding={key for key in claim_grounding.CHECKS if result.get(key) is not True}
+    omission_checks={'entities_and_roles_preserved','dates_and_event_status_preserved'}
+    if (failed_grounding and failed_grounding<=omission_checks and
+            re.search(r'\b(?:omit\w*|missing|not (?:named|represented|included))\b',str(result.get('reason','')),re.I)):
+        # A missing detail is not itself a changed actor or event status. Ask
+        # for a complete second review; never override the review result.
+        calibration=('\nREVIEW CALIBRATION: The previous review rejected an omitted detail. '
+                     'For entities_and_roles_preserved and dates_and_event_status_preserved, '
+                     'mark false only when a claim actually changes who did what or turns a '
+                     'planned event into a completed one (or vice versa). An omitted source '
+                     'detail alone is not a contradiction. Recheck every field against the '
+                     'original source and provide all required citations. If any asserted '
+                     'claim conflicts with the source, keep the relevant check false.')
+        result=call_json(prompt+calibration,claim_grounding.catalog_schema(REVIEW_SCHEMA,draft,catalog),deadline,attempt=1,stage='scope_review',paper=paper)
+        if any(result.get(k) is not True for k in REVIEW_CHECKS):
+            raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=[k for k in REVIEW_CHECKS if result.get(k) is not True],feedback=str(result.get('reason','claim scope mismatch'))[:300])
     try:
         result=claim_grounding.resolve_citations(result,catalog)
         grounding=claim_grounding.validate(result,draft,compiled)
