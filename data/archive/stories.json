@@ -3277,8 +3277,6 @@
         "Yann LeCun"
       ],
       "institutions": [
-        "Nicolas Ballas2",
-        "1Courant Institute, New York University",
         "Courant Institute, New York University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.42146v1",
@@ -3425,9 +3423,6 @@
         "Mong Li Lee"
       ],
       "institutions": [
-        "1National University of Singapore2University of Oxford",
-        "Project Page:https://flide.org",
-        "Source Code:https://github.com/OmniJev/flide",
         "National University of Singapore",
         "University of Oxford"
       ],
@@ -3502,8 +3497,7 @@
         "Serena Yeung-Levy"
       ],
       "institutions": [
-        "Stanford University",
-        "https://roboarchitect-ai.github.io/"
+        "Stanford University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.42141v1",
       "affiliation_checked_at": "2026-11-02T06:53:41.758192+00:00",
@@ -3650,9 +3644,9 @@
         "James C. R. Whittington"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-02T06:53:41.758192+00:00",
-      "affiliation_fallback_checked_at": "2026-11-02T06:53:41.758192+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "source_verified_at": "2026-11-02T06:53:41.758192+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4112,8 +4106,8 @@
         "Katrina Ligett"
       ],
       "institutions": [
-        "School of Computer Science and Engineering, The Hebrew University of Jerusalem. E-mail:",
-        "Department of Computer Science and Artificial Intelligence, Bar-Ilan University. E-mail:"
+        "School of Computer Science and Engineering, The Hebrew University of Jerusalem",
+        "Department of Computer Science and Artificial Intelligence, Bar-Ilan University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.40654v1",
       "affiliation_checked_at": "2026-11-01T22:09:42.760866+00:00",
@@ -4279,8 +4273,7 @@
       ],
       "institutions": [
         "Laboratory for Information & Decision Systems",
-        "Massachusetts Institute of Technology",
-        "Cambridge, MA 02139, USA"
+        "Massachusetts Institute of Technology"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.40644v1",
       "affiliation_checked_at": "2026-11-01T22:09:42.760866+00:00",
@@ -4364,9 +4357,9 @@
         "Ziwei Liu"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-01T22:09:42.760866+00:00",
-      "affiliation_fallback_checked_at": "2026-11-01T22:09:42.760866+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "source_verified_at": "2026-11-01T22:09:42.760866+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -6505,9 +6498,12 @@
         "Jonas Geiping",
         "Yves-Alexandre de Montjoye"
       ],
-      "institutions": [],
+      "institutions": [
+        "Imperial College London",
+        "Fraunhofer Institute for Telecommunications, Heinrich Hertz Institute"
+      ],
       "affiliation_source_url": "https://openalex.org/W7224122670",
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-29T20:05:34.451488+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -11535,7 +11531,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223269505",
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -11566,8 +11562,8 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 69,
       "paper_text_sha256": "1e08fa5940fd62d8dd8712ff5fc98d07da9cf464ab61c3025782bd7ab8505069",
-      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "training-tiny-fraction-units-boosts-learning-training-grows",
       "path": "research/training-tiny-fraction-units-boosts-learning-training-grows/index.html",
@@ -11699,7 +11695,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223406000",
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -11730,8 +11726,8 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 9,
       "paper_text_sha256": "ba30ff4bcf9ec5088f87f847c40d9ff36f3b3d0cde9afdc6d5573b760be55c63",
-      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "guardrails-cut-auto-routing-ticket-costs-but-vary-rules",
       "path": "research/guardrails-cut-auto-routing-ticket-costs-but-vary-rules/index.html",
@@ -11862,7 +11858,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7223410188",
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-23T17:04:52.381687+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -11893,8 +11889,8 @@
       "full_text_retry_after": "2026-10-30",
       "paper_pages": 42,
       "paper_text_sha256": "6dcc767ae92278f48d956de47db9fd4518b2a24e20564203e80fc5b25e70ee90",
-      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "auditing-image-use-image-generating-models-detectable-signal",
       "path": "research/auditing-image-use-image-generating-models-detectable-signal/index.html",
@@ -21042,7 +21038,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222498763",
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -21073,8 +21069,8 @@
       "full_text_retry_after": "2026-10-23",
       "paper_pages": 32,
       "paper_text_sha256": "8c8c49b5c1b48139c20372f4cb33849dfd145622a220c8f0a886eeaacf2a0651",
-      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "decomposed-graded-verifier-gives-denser-feedback-not-perfect",
       "path": "research/decomposed-graded-verifier-gives-denser-feedback-not-perfect/index.html",
@@ -21298,7 +21294,7 @@
       ],
       "institutions": [],
       "affiliation_source_url": "https://openalex.org/W7222418060",
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-16T16:37:13.714475+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -21329,8 +21325,8 @@
       "full_text_retry_after": "2026-10-23",
       "paper_pages": 16,
       "paper_text_sha256": "a06bc880074464351eb26d51737045e70a84897bff6b63ce701d83da24f272f0",
-      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "memory-guided-training-helps-robots-learn-new-more-reliably",
       "path": "research/memory-guided-training-helps-robots-learn-new-more-reliably/index.html",
@@ -23531,7 +23527,7 @@
         "Koushil Sreenath"
       ],
       "institutions": [
-        "The authors are with the University of California, Berkeley."
+        "The authors are with the University of California, Berkeley"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.20606v1",
       "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
@@ -31109,9 +31105,7 @@
         "Aaron D. Ames"
       ],
       "institutions": [
-        "California Institute of Technology, CA 91125, USA",
-        "New York University, NY 10012, USA",
-        "This work is supported by The Dow Chemical Company project #227027AW and in part by Technology Innovation Institute."
+        "This work is supported by The Dow Chemical Company project #227027AW and in part by Technology Innovation Institute"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.12467v1",
       "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
@@ -32927,7 +32921,7 @@
         "Yukang Chen"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-08T18:50:49.114521+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -32958,8 +32952,8 @@
       "full_text_retry_after": "2026-10-15",
       "paper_pages": 28,
       "paper_text_sha256": "e566298166004d83bc10aa823863b004a88614c746d159eceeeda3cb706a7f70",
-      "affiliation_fallback_checked_at": "2026-10-30T07:54:38.122852+00:00",
-      "affiliation_fallback_version": "arxiv-author-v2",
+      "affiliation_fallback_checked_at": "2026-11-02T12:14:16.843951+00:00",
+      "affiliation_fallback_version": "arxiv-author-v3",
       "kind": "research",
       "slug": "longer-video-history-helps-robot-control-future-prediction-pretraining",
       "path": "research/longer-video-history-helps-robot-control-future-prediction-pretraining/index.html",
@@ -34161,7 +34155,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-02T12:11:29.942426+00:00",
+      "affiliation_checked_at": "2026-11-02T12:14:16.843951+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -35459,7 +35453,7 @@
         "Gregory D. Bellchambers"
       ],
       "institutions": [
-        "PhysicsX Ltd.",
+        "PhysicsX Ltd",
         "London, EC2A 4DQ"
       ],
       "affiliation_checked_at": "2026-10-30T07:54:38.122852+00:00",
