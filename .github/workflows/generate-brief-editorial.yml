@@ -31,7 +31,7 @@ on:
       news_minutes:
         description: Maximum minutes for news this pass (1 to 105)
         type: string
-        default: '45'
+        default: '105'
       research_minutes:
         description: Maximum minutes for research this pass (1 to 60)
         type: string
@@ -115,7 +115,7 @@ jobs:
         if: inputs.dry_run != true && steps.news.outcome == 'success'
         continue-on-error: true
         env:
-          NEWS_MINUTES: ${{ inputs.news_minutes || '45' }}
+          NEWS_MINUTES: ${{ inputs.news_minutes || '105' }}
           NEWS_LIMIT: ${{ inputs.news_limit || '0' }}
           NEWS_EVENT_IDS: ${{ inputs.news_event_ids || '' }}
           NEWS_STRICT: ${{ inputs.news_only || false }}
