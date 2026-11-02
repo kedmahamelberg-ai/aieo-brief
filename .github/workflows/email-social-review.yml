@@ -10,17 +10,23 @@ on:
       - '.github/workflows/email-social-review.yml'
       - 'scripts/social_review_delivery.py'
   workflow_dispatch:
+  # Recovery delivery after Monday's production, independent of later builds.
+  schedule:
+    - cron: '30 12 * * 1'
 permissions:
   contents: write
   actions: read
-concurrency:
-  group: brief-social-email
-  cancel-in-progress: false
 jobs:
   email:
+    # Waiting for owner approval must not block the following week's email.
+    concurrency:
+      group: brief-social-email-delivery
+      cancel-in-progress: false
     if: github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      needs_approval: ${{ steps.delivery.outputs.needs_approval }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -49,6 +55,19 @@ jobs:
           RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
           WEEKLY_REVIEW_TO_EMAIL: ${{ secrets.WEEKLY_REVIEW_TO_EMAIL }}
         run: python scripts/social_review_delivery.py send
+      - name: Keep the exact visual review and batch for repository approval
+        if: steps.delivery.outputs.needed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: social-visual-review-${{ github.run_id }}
+          path: |
+            social-review/BATCH_REVIEW.html
+            social-review/BATCH_REVIEW.md
+            social-review/batch.json
+            social-review/READY_FOR_REVIEW.json
+            social-review/SOCIAL_REVIEW_PLAN.json
+          if-no-files-found: error
+          retention-days: 90
       - name: Authorize the email delivery receipt
         if: steps.delivery.outputs.needed == 'true'
         uses: ./.github/actions/authorize-publisher
@@ -61,5 +80,42 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/social-production/email-receipts.json
           git commit -m 'Record owner social review email delivery [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
+  approve:
+    needs: email
+    if: needs.email.outputs.needs_approval == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Reuse the existing owner-protected approval environment used for the
+    # authored News / Research overview, rather than an unprotected new gate.
+    environment: weekly-editorial
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=11,<13' 'requests>=2.32,<3'
+      - uses: actions/download-artifact@v4
+        with:
+          name: social-visual-review-${{ github.run_id }}
+          path: social-review
+      - name: Verify owner approval and the exact reviewed batch
+        run: python scripts/social_review_delivery.py approve
+      - name: Authorize the approval receipt
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
+      - name: Preserve the approved social batch identity
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/social-production/approved
+          git diff --cached --quiet && exit 0
+          git commit -m 'Record owner-approved social batch [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
