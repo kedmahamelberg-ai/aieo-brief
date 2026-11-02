@@ -35,7 +35,7 @@ def restore_reading_scope(row):
 
 def withhold_abstract_summary(row):
     """Remove editorial copy unless a complete paper reading is cryptographically proven."""
-    if row.get('has_editorial') and row.get('evidence_scope') != 'paper_text':
+    if row.get('has_editorial') and not verified_paper_reading(row):
         return {**row,
                 'has_editorial': False,
                 'headline': row.get('original_headline') or row.get('headline', ''),
