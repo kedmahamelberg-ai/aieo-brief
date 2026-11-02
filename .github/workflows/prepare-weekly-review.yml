@@ -15,6 +15,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/weekly_review_delivery.py'
+      - 'scripts/weekly_editorials.py'
 permissions:
   contents: read
   actions: read

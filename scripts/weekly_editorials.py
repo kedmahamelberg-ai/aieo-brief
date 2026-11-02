@@ -462,8 +462,26 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
                           'artworks': picture_payload, 'recent_style': recent_style,
                           'draft': draft}, ensure_ascii=False),
             schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_review_repair')
-        validate_draft(draft, model_selected, model_pictures, recent_openings, recent_titles,
-                       enforce_style=True, questions_allowed=questions_allowed)
+        try:
+            validate_draft(draft, model_selected, model_pictures, recent_openings, recent_titles,
+                           enforce_style=True, questions_allowed=questions_allowed)
+        except ValueError as error:
+            # The editorial rewrite can drop a citation or break a part even
+            # after the original draft passed. Give that revision one precise
+            # repair, within the same deadline and spending cap, then check it
+            # independently again. A repair never supplies its own verdict.
+            draft = call(
+                'Repair this revised weekly draft without adding facts. The validation failure was '
+                + str(error) + '. Include every supplied source key exactly once on the '
+                'passage supported by that source. Keep all study limitations and attribution. '
+                'Return two to four paragraphs of nonempty text/source_key parts, the same '
+                'draft schema, supported numbers and an eligible artwork marker.\n'
+                + json.dumps({'requirements': brief, 'sources': source_payload,
+                              'artworks': picture_payload, 'recent_style': recent_style,
+                              'draft': draft}, ensure_ascii=False),
+                schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_review_shape_repair')
+            validate_draft(draft, model_selected, model_pictures, recent_openings, recent_titles,
+                           enforce_style=True, questions_allowed=questions_allowed)
         chosen, review, failed = check(draft, 'weekly_review_repeat')
     if failed:
         raise ValueError('weekly_independent_review_failed:' + ','.join(failed))
