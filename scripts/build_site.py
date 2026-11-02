@@ -24,7 +24,7 @@ from search_metadata import identity_graph, canonical_local, weekly_overview_wit
 from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
 from editorial_artifacts import isolated_artifact
-from research_reading import restore_reading_scope
+from research_reading import restore_reading_scope, withhold_abstract_summary
 from research_affiliations import clean_institutions
 from source_evidence_quality import assess_body
 from source_chronology import older_source_year, public_directional_counts
@@ -139,7 +139,7 @@ def papers():
     if not p.exists():return []
     raw=json.loads(p.read_text()).get('papers',[]);out=[]
     for r in raw:
-        r=restore_reading_scope(r)
+        r=withhold_abstract_summary(restore_reading_scope(r))
         r['institutions']=clean_institutions(r.get('institutions'),r.get('authors'))
         if not safe_url(r.get('url')):continue
         key=str(r['key'])
