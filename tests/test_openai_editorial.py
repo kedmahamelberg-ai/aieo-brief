@@ -62,3 +62,7 @@ class OpenAIEditorial(unittest.TestCase):
         with patch.object(ai,'completion',return_value=answer) as request:
             engine.call_json('News source',stage='draft',paper=False)
         self.assertNotIn('max_completion_tokens',request.call_args.kwargs)
+        with patch.object(ai,'completion',side_effect=ai.AIError('unfinished',code='model_output_limit')) as request:
+            with self.assertRaises(ai.AIError):
+                engine.call_json('Complete paper',stage='draft',paper=True)
+        self.assertEqual(request.call_count,1)
