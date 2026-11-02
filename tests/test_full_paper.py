@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from research_reading import extract_paper, needs_upgrade, READING_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
+from research_reading import extract_paper, needs_upgrade, READING_VERSION, PDF_READER_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
 import editorial_engine as engine
 from validate_public_site import validate_research_reading, validate_weekly_research_window
 
@@ -62,7 +62,33 @@ class FullPaperReading(unittest.TestCase):
         self.assertFalse(needs_upgrade(row))
         self.assertTrue(needs_upgrade({**row,'evidence_scope':'abstract','full_text_retry_after':'2020-01-01'}))
         self.assertFalse(needs_upgrade({**row,'evidence_scope':'abstract','full_text_retry_after':'2099-01-01'}))
+        self.assertTrue(needs_upgrade({**row,'evidence_scope':'abstract','full_text_status':'pdf_text_unreadable',
+                                       'pdf_reader_version':1,'full_text_retry_after':'2099-01-01'}))
+        self.assertFalse(needs_upgrade({**row,'evidence_scope':'abstract','full_text_status':'pdf_text_unreadable',
+                                        'pdf_reader_version':PDF_READER_VERSION,'full_text_retry_after':'2099-01-01'}))
         self.assertFalse(allowed_pdf('https://arxiv.org.evil.example/paper'))
+
+    def test_long_complete_pdf_is_read_without_truncating_its_last_page(self):
+        pages=[Mock() for _ in range(169)]
+        for i,page in enumerate(pages):
+            page.extract_text.return_value=('Study title\n' if i == 0 else '')+('Methods, findings, and limitations. '*80)
+        reader=Mock(is_encrypted=False,pages=pages)
+        with patch('pypdf.PdfReader',return_value=reader):
+            result=extract_paper(b'%PDF-test','Study title')
+        self.assertEqual(result['pages'],169)
+        self.assertGreater(len(result['text']),210000)
+        self.assertIn('[PDF page 169]',result['text'])
+
+    def test_one_sparse_figure_page_does_not_hide_an_otherwise_readable_paper(self):
+        pages=[Mock() for _ in range(15)]
+        for i,page in enumerate(pages):
+            page.extract_text.return_value=('Study title\n' if i == 0 else '')+('Study evidence and limitations. '*40)
+        pages[8].extract_text.return_value='Figure 4'
+        with patch('pypdf.PdfReader',return_value=Mock(is_encrypted=False,pages=pages)):
+            self.assertEqual(extract_paper(b'%PDF-test','Study title')['pages'],15)
+            pages[9].extract_text.return_value='Figure 5'
+            with self.assertRaisesRegex(ValueError,'incomplete_text_extraction'):
+                extract_paper(b'%PDF-test','Study title')
 
     def test_crossref_unspecified_pnas_pdf_is_accepted_only_for_exact_doi(self):
         doi='10.1073/pnas.2628851123'
