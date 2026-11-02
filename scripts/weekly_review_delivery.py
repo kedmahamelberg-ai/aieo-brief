@@ -211,6 +211,13 @@ def send_email(draft: dict, run_id: str) -> None:
         raise ValueError("Invalid workflow run ID")
     run_url = "https://github.com/" + REPOSITORY + "/actions/runs/" + run_id
     message = email_content(draft, run_url)
+    # The email displays artwork and prose together using CID images. Keep
+    # the identical self-contained page attached for offline visual review.
+    preview = email_content(draft, run_url, image_mode="data")["html"].encode("utf-8")
+    message["attachments"].append({
+        "filename": "weekly-review-preview.html",
+        "content": base64.b64encode(preview).decode("ascii"),
+    })
     response = requests.post(
         "https://api.resend.com/emails",
         headers={
