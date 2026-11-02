@@ -65,7 +65,7 @@ def main():
     # discovery export no longer contains them.
     repairs=[]
     for prior in old.values():
-        if prior.get('summary_status')!='full_text_required' or prior.get('key') in input_keys:
+        if verified_paper_reading(prior) or prior.get('key') in input_keys:
             continue
         if not (prior.get('arxiv_id') or prior.get('pdf_url')):
             continue
