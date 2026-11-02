@@ -43,7 +43,7 @@ CASES = [
   'Brain and spine protocol accuracy was described as comparable to staff decisions.'),
  ('classroom_scope', 'An accounting educator describes one classroom episode in an opinion essay. The essay reports no representative survey of students.',
   'The study finds that students generally prefer AI to learning independently.',
-  'An accounting educator reflects on one classroom episode in an opinion essay.'),
+  'An accounting educator describes one classroom episode in an opinion essay.'),
  ('perspective_scope', 'The published Perspective proposes a legal framework connecting responsibility to human intentions. This supplied text is the abstract, not the complete paper. It reports no experiment.',
   'The experiment proves that the proposed accountability system works.',
   'The supplied abstract describes a published Perspective proposing a legal framework for responsibility.'),
@@ -64,9 +64,13 @@ CASES = [
   'Researchers used 18 qualitative interviews to explore artists’ creative work.')]
 
 
-def evaluate(review=review_scope):
+def evaluate(review=review_scope, case_name=None):
+    if case_name is not None and case_name not in {row[0] for row in CASES}:
+        raise ValueError('Unknown grounding evaluation case')
     failed = []; deadline = time.monotonic() + 1500
     for name, evidence, wrong, correct in CASES:
+        if case_name is not None and case_name != name:
+            continue
         for label, text, should_pass in [('wrong', wrong, False), ('correct', correct, True)]:
             draft = {'editorial_headline': text, 'editorial_deck': '', 'what_happened': '',
                      'why_it_matters': '', 'for_humans': '', 'for_ai': '', 'limitation': '',
@@ -84,6 +88,10 @@ def evaluate(review=review_scope):
                     print(name + ':' + label + ' attempt ' + str(attempt+1) + ' ' + error.code + ': ' + error.feedback, flush=True)
             if passed != should_pass:failed.append(name + ':' + label)
             print(name + ':' + label + (' PASS' if passed == should_pass else ' FAIL'), flush=True)
+    if case_name is not None:
+        if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))
+        print('Both live grounding checks passed for ' + case_name + '.', flush=True)
+        return
     # Single-field minimal pairs do not exercise the output budget of the real
     # all-fields gate. Include a complete nine-field draft and a body-only error.
     evidence=('Researchers randomly assigned 80 support employees at one company to two groups for four weeks. '
@@ -122,4 +130,9 @@ def evaluate(review=review_scope):
     if failed:raise RuntimeError('Grounding regression failures: ' + ', '.join(failed))
     print('All '+str(2*len(CASES)+2)+' live grounding checks passed, including full-draft completion.', flush=True)
 
-if __name__ == '__main__':evaluate()
+if __name__ == '__main__':
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--case', choices=['all']+[row[0] for row in CASES], default='all')
+    args=parser.parse_args()
+    evaluate(case_name=None if args.case=='all' else args.case)
