@@ -177,6 +177,27 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(result['what_happened'], draft['what_happened'])
         self.assertEqual(proof['draft_origin'], 'model')
 
+    def test_omitted_entity_gets_second_full_grounding_review(self):
+        draft, sources = fixture()
+        first = accepted_review(draft)
+        first['entities_and_roles_preserved'] = False
+        first['reason'] = 'The draft omits a separately named organization.'
+        with patch.object(engine, 'call_json', side_effect=[first, accepted_review(draft)]) as model:
+            result = engine.review_scope(draft, sources)
+        self.assertTrue(result['grounding'])
+        self.assertEqual(model.call_count, 2)
+        self.assertIn('An omitted source detail alone', model.call_args.args[0])
+
+    def test_actual_changed_entity_stays_rejected(self):
+        draft, sources = fixture()
+        first = accepted_review(draft)
+        first['entities_and_roles_preserved'] = False
+        first['reason'] = 'The draft names a different organization.'
+        with patch.object(engine, 'call_json', return_value=first) as model:
+            with self.assertRaises(engine.EditorialError):
+                engine.review_scope(draft, sources)
+        self.assertEqual(model.call_count, 1)
+
     def test_absent_dimensions_do_not_force_an_invented_effect(self):
         for field in ('for_humans', 'for_ai'):
             draft, sources = fixture()
