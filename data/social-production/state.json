@@ -6,6 +6,13 @@
       "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/40338137082/artifacts/12658385817",
       "run_id": "40338137082",
       "created_at": "2026-10-26T15:17:11.040378+01:00"
+    },
+    "2026-W44": {
+      "publication_week": "2026-W45",
+      "status": "DRAFT_NOT_APPROVED_DO_NOT_PUBLISH",
+      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41409498209/artifacts/13124519236",
+      "run_id": "41409498209",
+      "created_at": "2026-11-02T09:00:26.188030+01:00"
     }
   }
 }
