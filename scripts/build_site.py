@@ -25,6 +25,7 @@ from spotlight import spotlight_feed
 from story_photos import photo_registry, story_photo
 from editorial_artifacts import isolated_artifact
 from research_reading import restore_reading_scope
+from research_affiliations import clean_institutions
 from source_evidence_quality import assess_body
 from source_chronology import older_source_year, public_directional_counts
 ROOT=Path(__file__).resolve().parents[1]
@@ -139,6 +140,7 @@ def papers():
     raw=json.loads(p.read_text()).get('papers',[]);out=[]
     for r in raw:
         r=restore_reading_scope(r)
+        r['institutions']=clean_institutions(r.get('institutions'),r.get('authors'))
         if not safe_url(r.get('url')):continue
         key=str(r['key'])
         if not re.fullmatch(r'paper:[a-f0-9]{24}',key):raise ValueError('Unsafe paper key')
@@ -265,6 +267,8 @@ def main():
     for item in old:
         if item.get('kind') in ('news','research'):
             item['body_paragraphs']=clean_body_paragraphs(item.get('body_paragraphs',[]))
+        if item.get('kind')=='research':
+            item['institutions']=clean_institutions(item.get('institutions'),item.get('authors'))
     current_keys={x['key'] for x in news}
     allitems={x['key']:x for x in old if not (x.get('kind')=='news' and x.get('edition')==release['release_id'] and x['key'] not in current_keys)}
     for item in news+research+culture:
