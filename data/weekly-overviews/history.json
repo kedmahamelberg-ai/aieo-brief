@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 14,
             "topic": "Work And Skills",
-            "sentence": "United States: the discovery stream centred most often on work and skills, including “AI Ethics in Self-Study: Mixed Lessons for Humans and AI, CPA….”",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “EFF warns broad fair use is essential to keep AI benefits….”",
             "story": {
-              "headline": "AI Ethics in Self-Study: Mixed Lessons for Humans and AI, CPA Journal Finds",
-              "path": "story/ai-ethics-self-study-mixed-lessons-humans-journal-finds/index.html",
-              "publisher": "The CPA Journal",
-              "source_url": "https://www.cpajournal.com/2026/10/30/artificial-intelligence-and-the-ethics-of-self-study"
+              "headline": "EFF warns broad fair use is essential to keep AI benefits public",
+              "path": "story/rewriting-copyright-law-generative-ai-would-hurt-everyone/index.html",
+              "publisher": "Electronic Frontier Foundation",
+              "source_url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Dutch Lawmakers Seek to Keep Generative AI Out of Primary School….”",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “EFF warns broad fair use is essential to keep AI benefits….”",
             "story": {
-              "headline": "Dutch Lawmakers Seek to Keep Generative AI Out of Primary School Learning",
-              "path": "story/dutch-lawmakers-seek-keep-generative-ai-school-learning/index.html",
-              "publisher": "NL Times",
-              "source_url": "https://nltimes.nl/2026/10/29/dutch-mps-want-ban-primary-school-children-using-generative-ai"
+              "headline": "EFF warns broad fair use is essential to keep AI benefits public",
+              "path": "story/rewriting-copyright-law-generative-ai-would-hurt-everyone/index.html",
+              "publisher": "Electronic Frontier Foundation",
+              "source_url": "https://www.eff.org/deeplinks/2026/10/rewriting-copyright-law-generative-ai-would-hurt-everyone"
             }
           },
           {
@@ -124,7 +124,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "e8c067486e78351efcc6d4bf819e9f491333d350442e3ab9df7dcac7670cb830"
+      "content_sha256": "1a5882de681bf777156e712cbcb99581f1786e31ea076899b55cf37078e4dfa3"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
