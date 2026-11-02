@@ -52,3 +52,17 @@ class OpenAIEditorial(unittest.TestCase):
             result=engine.call_json('Private source',schema,stage='scope_review')
         self.assertEqual(result,{'field_reviews':[]})
         self.assertEqual([call.kwargs['reasoning_effort'] for call in request.call_args_list],['medium','low'])
+
+    def test_full_paper_draft_has_reasoning_room_without_repeated_source_input(self):
+        answer={'choices':[{'message':{'content':'{}'}}]}
+        with patch.object(ai,'completion',return_value=answer) as request:
+            self.assertEqual(engine.call_json('Complete paper',stage='draft',paper=True),{})
+        self.assertEqual(request.call_count,1)
+        self.assertEqual(request.call_args.kwargs['max_completion_tokens'],16384)
+        with patch.object(ai,'completion',return_value=answer) as request:
+            engine.call_json('News source',stage='draft',paper=False)
+        self.assertNotIn('max_completion_tokens',request.call_args.kwargs)
+        with patch.object(ai,'completion',side_effect=ai.AIError('unfinished',code='model_output_limit')) as request:
+            with self.assertRaises(ai.AIError):
+                engine.call_json('Complete paper',stage='draft',paper=True)
+        self.assertEqual(request.call_count,1)
