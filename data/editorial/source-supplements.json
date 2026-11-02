@@ -22,6 +22,13 @@
       "source_url": "https://finance.eastmoney.com/a/202610313917326037.html",
       "published_at": "2026-10-31",
       "evidence_sha256": "2540fafa6ba951d6d9b85e2b3e5ffb17ad6ec2618c5c5297ed2ce844fb95a9de"
+    },
+    "d9e03eca-3c2c-4a2c-b27a-0d5e072075f4": {
+      "publisher": "Eastmoney Research Center",
+      "headline": "DeepSeek agent design and AI application forecasts",
+      "source_url": "https://finance.eastmoney.com/a/202611023917809641.html",
+      "published_at": "2026-11-02",
+      "evidence_sha256": "614aaac3345de08fb4d515c5125faf064aa07c604f61fa07615b23f25e7309a7"
     }
   }
 }
