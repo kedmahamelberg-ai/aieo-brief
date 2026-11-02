@@ -6548,6 +6548,25 @@
       },
       "output_sha256": "98830ca29345b8f265398e43218c0fd32b991034c96a71d225ee54cffbed5713",
       "policy": "brief-english-display-v1"
+    },
+    "de4cd6a4467844bd48c8ffa64092c8bffbbb302683d921e8502815e1386fc4ab": {
+      "english": {
+        "0": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention",
+        "1": "Latent Sparse Attention: Towards Subquadratic Ultra-Long Context Attention"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5651ae61738dfa43daefccefec487c825e5f91511b07b9966dddd86c5b77b145",
+      "policy": "brief-english-display-v1"
     }
   }
 }
