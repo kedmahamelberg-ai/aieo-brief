@@ -120,6 +120,8 @@ class EditorialRecovery(unittest.TestCase):
         self.assertFalse(quality['usable_complete_body'])
         valid='This original article reports on an AI governance forum and describes the statements of several speakers. '*10
         self.assertTrue(assess_body({'body_text':valid+' Example {{template}}','content_basis':'full_source'})['usable_complete_body'])
+        navigation='郑重声明：东方财富发布此内容旨在传播更多信息。热点阅读\n'+('市场新闻与排行。'*15)+'\n打开东方财富APP查看更多内容\n点击查看更多内容'
+        self.assertIn('article_navigation_only',assess_body({'body_text':navigation,'content_basis':'full_source'})['flags'])
 
     def test_verified_copy_requires_the_exact_published_body_hash(self):
         from source_supplements import verified_text
