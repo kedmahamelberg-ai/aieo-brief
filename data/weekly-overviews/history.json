@@ -68,12 +68,12 @@
             "name": "France",
             "count": 11,
             "topic": "Rules And Rights",
-            "sentence": "France: selected reporting leaned toward rules and rights, with “Mistral Opens ML4 Weights, Giving Firms Self-Hosted AI for Cybersecurity, With…” as one visible signal.",
+            "sentence": "France: selected reporting leaned toward rules and rights, with “Banque de France says central banks use AI, but risks require…” as one visible signal.",
             "story": {
-              "headline": "Mistral Opens ML4 Weights, Giving Firms Self-Hosted AI for Cybersecurity, With Cautions",
-              "path": "story/mistral-has-launched-ai-model-giving-over-cybersecurity/index.html",
-              "publisher": "Euronews.com",
-              "source_url": "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse"
+              "headline": "Banque de France says central banks use AI, but risks require care",
+              "path": "story/why-should-central-bank-interested-artificial-french-bank/index.html",
+              "publisher": "Banque de France",
+              "source_url": "https://www.banque-france.fr/fr/publications-et-statistiques/publications/pourquoi-une-banque-centrale-devrait-elle-sinteresser-lintelligence-artificielle-lexemple-de-la"
             }
           },
           {
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "173dee57a67e72096aa920e54dfa3598b7e072bc58b073a4ce05700661f51c63"
+      "content_sha256": "deb40beacb527d79e1ce24d2b1942b5c104d63e04c575745e6b46d33c3886229"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
