@@ -17,6 +17,7 @@ from build_site import inputs,version_valid
 from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION
 from source_evidence_quality import assess_body
 from source_supplements import verified_text
+from source_chronology import older_source_year
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=ai_runtime.identity()['model'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
 MODEL_REVISION=ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','2f3b082b1356a6123f7ed71e65aea340da25d53c')
@@ -59,8 +60,11 @@ def candidates(release,sym,maps,force=False):
     supplements=json.loads(supplement_path.read_text()).get('sources',{}) if supplement_path.exists() else {}
     proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
     legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
-    counts={'unchanged':0,'source_not_ready':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
+    counts={'unchanged':0,'source_not_ready':0,'source_date_mismatch':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
+        if older_source_year(event):
+            counts['source_date_mismatch']+=1
+            continue
         eid=str(event.get('effective_event_id') or event['event_id'])
         story=stories.get(eid)
         latest=versions.get(str((story or {}).get('story_id')))
