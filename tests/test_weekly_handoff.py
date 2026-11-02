@@ -11,6 +11,7 @@ sys.path.insert(0, str(ROOT/'scripts'))
 from brief_contract import validate_pair, relationship_fingerprint
 from check_observatory_update import needs_update, expected_period, missing_news_summaries, needs_editorial_retry
 from build_site import inputs
+from source_chronology import public_directional_counts
 
 
 class WeeklyHandoff(unittest.TestCase):
@@ -32,6 +33,17 @@ class WeeklyHandoff(unittest.TestCase):
         self.assertFalse(needs_update(self.release, self.sym, self.published))
         self.sym['generated_at'] = '2099-01-01T12:00:00Z'
         self.assertFalse(needs_update(self.release, self.sym, self.published))
+
+    def test_withheld_old_source_matches_public_counts_without_retry_loop(self):
+        event = self.release['evidence'][0]
+        event['event_date'] = '2026-09-30'
+        event['sources'] = [{'url': 'https://example.org/news/2023/old-story'}]
+        self.published['story_count'] = len(self.release['evidence']) - 1
+        self.published['directional_counts'] = public_directional_counts(self.release, self.sym)
+        self.assertFalse(needs_update(self.release, self.sym, self.published))
+        self.published['stories'] = [{'event_id': event['event_id'],
+                                      'evidence_complete': True, 'has_editorial': False}]
+        self.assertEqual(missing_news_summaries(self.release, self.published), 0)
 
     def test_deferred_editorial_resumes_after_two_hours_and_rejections_retry_daily(self):
         event = self.release['evidence'][0]
