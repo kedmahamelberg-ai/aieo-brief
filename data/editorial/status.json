@@ -1,19 +1,84 @@
 {
-  "release_id": "2026-W43",
+  "release_id": "2026-W44",
   "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
   "counts": {
-    "unchanged": 40,
+    "unchanged": 0,
     "source_not_ready": 0,
-    "new_registry": 2,
-    "needs_model": 36,
+    "new_registry": 56,
+    "needs_model": 57,
     "needs_rebind": 0,
-    "selected": 2,
-    "generated": 2,
+    "selected": 57,
+    "generated": 11,
     "rebound": 0,
-    "failed": 0,
-    "deferred": 0
+    "failed": 7,
+    "deferred": 39
   },
-  "failure_counts": {},
-  "failed_items": [],
-  "updated_at": "2026-11-02T00:04:00.832189+00:00"
+  "failure_counts": {
+    "claim_grounding_failed": 3,
+    "source_scope_review_failed": 4
+  },
+  "failed_items": [
+    {
+      "event_id": "bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "11dcf5d8-1bd7-4629-8a91-15442fbefeea",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    },
+    {
+      "event_id": "03c19c5b-ebc2-49d1-b4ad-020e753d6fba",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "f1db55f9-fd35-4368-bb5a-8223a6bcbf0b",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    },
+    {
+      "event_id": "e709b8c6-8cbb-4316-90e6-126ccb92066f",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding"
+    },
+    {
+      "event_id": "eee5f3ae-e20f-409e-896a-bdc5c355b9f0",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+      "failed_checks": [
+        "main_story_only"
+      ]
+    },
+    {
+      "event_id": "d80ad193-31f0-4e81-815d-a9f449ebd58b",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v9-all-field-grounding",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-02T03:45:04.966046+00:00"
 }
