@@ -65,6 +65,41 @@ class WeeklyOverviewTests(unittest.TestCase):
             self.assertEqual(len(queue['items']),2)
             self.assertTrue(queue['items'][0]['destination'].startswith('https://brief.example/week-from-above/'))
 
+    def test_archived_review_is_withheld_when_retained_paper_loses_editorial_evidence(self):
+        root = Path(__file__).resolve().parents[1]
+        archived = next(x for x in json.loads((root/'data/weekly-overviews/history.json').read_text())['overviews']
+                        if x['release_id'] == '2026-W43')
+        papers = [dict(paper) for paper in archived['research']['papers']]
+        release = {'release_id': '2026-W44', 'period_start': '2026-10-26', 'period_end': '2026-11-01'}
+        with tempfile.TemporaryDirectory() as folder:
+            destination = Path(folder)/'data/weekly-overviews/history.json'
+            destination.parent.mkdir(parents=True)
+            destination.write_text(json.dumps({'schema_version': 'aieo_weekly_overview_archive_v1',
+                                               'overviews': [archived]}))
+            _, unchanged = prepare_weekly_overviews([], [], release, Path(folder), source_research=papers)
+            old = next(x for x in unchanged if x['release_id'] == '2026-W43')
+            self.assertEqual(old['research']['status'], 'ready')
+            papers[0]['has_editorial'] = False
+            _, changed = prepare_weekly_overviews([], [], release, Path(folder), source_research=papers)
+            old = next(x for x in changed if x['release_id'] == '2026-W43')
+            self.assertEqual(old['research']['status'], 'pending')
+            self.assertEqual(old['research']['pending_reason'], 'approved_sources_changed')
+            self.assertEqual(old['research']['prose'], [])
+            self.assertEqual(old['research']['papers'], [])
+            self.assertFalse(old['research']['human_approved'])
+            self.assertEqual(old['markets'], archived['markets'])
+            self.assertNotEqual(old['content_sha256'], archived['content_sha256'])
+            destination.write_text(json.dumps({'schema_version': 'aieo_weekly_overview_archive_v1',
+                                               'overviews': changed}))
+            approval_path = Path(folder)/'data/weekly-overviews/approved/2026-W43.json'
+            approval_path.parent.mkdir(parents=True)
+            approval_path.write_text((root/'data/weekly-overviews/approved/2026-W43.json').read_text())
+            papers[0]['has_editorial'] = True
+            _, restored = prepare_weekly_overviews([], [], release, Path(folder), source_research=papers)
+            old = next(x for x in restored if x['release_id'] == '2026-W43')
+            self.assertEqual(old['research'], archived['research'])
+            self.assertEqual(old['editorial_status'], 'ready')
+
 
 class ResearchAffiliationTests(unittest.TestCase):
     def paper(self):
