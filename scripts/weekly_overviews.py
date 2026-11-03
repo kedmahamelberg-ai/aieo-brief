@@ -302,56 +302,28 @@ def _load_history(path: Path) -> dict:
     return value
 
 
-def _reconcile_archived_sources(records: dict[str, dict], news: list[dict], research: list[dict], root: Path) -> None:
-    """Withhold archived prose when a still-retained source no longer matches its approval.
+def _restore_archived_research_approvals(records: dict[str, dict], root: Path) -> None:
+    """Restore a previously approved research edition from its review snapshot.
 
-    Missing old sources may have aged out of the current feed, so only a
-    present source can invalidate an archived approval at build time.
+    Historical editions are records of what was published that week. Current
+    source refreshes must not rewrite them; their approved file carries the
+    source snapshot needed to validate and restore an interrupted archive copy.
     """
-    from weekly_editorials import eligible, human_approval, ready_valid, source_matches
+    from weekly_editorials import human_approval, ready_valid, validate_citation_alignment, validate_section
 
-    for overview in records.values():
+    for release_id, overview in records.items():
+        approved = human_approval(root, release_id)
         changed = False
-        approved = human_approval(root, overview["release_id"])
-        for kind, rows in (("markets", news), ("research", research)):
-            section = overview.get(kind, {})
-            available = {row["key"]: row for row in eligible(rows, overview)}
+        for kind in ("research",):
             reviewed = approved.get(kind, {})
-            if reviewed and ready_valid(reviewed, available):
-                if section != reviewed:
-                    overview[kind] = copy.deepcopy(reviewed)
-                    changed = True
+            sources = {paper["key"]: paper for paper in reviewed.get("papers", [])}
+            if not reviewed or not sources or not ready_valid(reviewed, sources):
                 continue
-            hashes = section.get("source_hashes", {})
-            if section.get("status") != "ready" or not hashes:
-                continue
-            retained = {row["key"]: row for row in rows if row.get("key") in hashes}
-            if not retained:
-                continue
-            if all(key not in retained or
-                   (key in available and source_matches(section, key, available[key], digest))
-                   for key, digest in hashes.items()):
-                continue
-            pending = copy.deepcopy(section)
-            pending.update(
-                status="pending",
-                author="",
-                title="The weekly news review is being prepared" if kind == "markets" else "The weekly research review is being prepared",
-                deck="The review will appear when its sources and editorial checks are complete.",
-                summary="",
-                prose=[],
-                scope_note="",
-                word_count=0,
-                source_hashes={},
-                human_approved=False,
-                pending_reason="approved_sources_changed",
-            )
-            if kind == "markets":
-                pending.update(entries=[], active_market_count=0)
-            else:
-                pending.update(papers=[], paper_count=0, affiliation_verified_count=0)
-            overview[kind] = pending
-            changed = True
+            validate_section(reviewed)
+            validate_citation_alignment(reviewed["prose"], reviewed.get("papers", []))
+            if overview.get(kind, {}).get("pending_reason") == "approved_sources_changed":
+                overview[kind] = copy.deepcopy(reviewed)
+                changed = True
         if changed:
             overview["editorial_status"] = (
                 "ready" if all(overview[kind].get("status") == "ready" for kind in ("markets", "research"))
@@ -376,8 +348,8 @@ def prepare_weekly_overviews(
 ) -> tuple[dict, list[dict]]:
     """Return the current overview and newest-first archive.
 
-    Rebuilding the same release is deterministic. A new release preserves
-    earlier weeks unless their retained source evidence has changed.
+    Rebuilding the same release is deterministic. A new release leaves earlier
+    approved editions intact as historical snapshots.
     """
     release_id = _plain(release.get("release_id"))
     if not release_id:
@@ -403,8 +375,7 @@ def prepare_weekly_overviews(
         for item in history["overviews"]
         if isinstance(item, dict) and _plain(item.get("release_id"))
     }
-    _reconcile_archived_sources(records, source_news if source_news is not None else news,
-                                source_research if source_research is not None else research, Path(root))
+    _restore_archived_research_approvals(records, Path(root))
     from weekly_editorials import apply_editorials
     current = apply_editorials(current, source_news if source_news is not None else news,
                                source_research if source_research is not None else research,
