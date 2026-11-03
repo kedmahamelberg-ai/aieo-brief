@@ -171,29 +171,29 @@
         "publisher": "arXiv",
         "source": "arxiv",
         "research_label": "Preprint",
-        "evidence_scope": "abstract",
+        "evidence_scope": "paper_text",
         "access": "Open paper",
         "journal_reference": "",
         "metadata_sha256": "557057f1bbad267b14b827dd200956e37f861ff421432668becfc68a6cda145f",
         "pdf_url": "https://arxiv.org/pdf/2610.26860v1",
         "has_editorial": true,
         "headline": "Keeping images and tool results helps AI answer visual questions",
-        "deck": "OpenVLHarness improves test scores by 9.7–12.6 points. The smaller gains described in the abstract come from giving the starting AI more computing time alone.",
+        "deck": "OpenVLHarness adds tools and memory so an AI can reuse images and earlier tool results. Across twenty two tests, it improves average scores by 9.7–12.6 points over the comparison systems. The modest gains described in the abstract came from giving the starting model more computing time alone. They were not the gains from OpenVLHarness. The results vary with the underlying model and test setup.",
         "what_happened": "Across 22 tests, giving a basic AI model more time to answer produced only modest gains. OpenVLHarness instead adds tools and memory for images, text and earlier tool results. It improves average scores by 9.7–12.6 points over the comparison systems.",
         "why_it_matters": "The approach suggests practical ways to organize external tools and evidence when reasoning with images, with gains that depend on the task and resource use.",
         "body_paragraphs": [
           "The system keeps images, information and links available during a task. This lets the AI reuse evidence across several steps instead of starting again each time.",
-          "The reported gains vary with the underlying AI model and test setup. The abstract also reports lower token use in some comparisons. Tokens are the pieces of text processed by an AI."
+          "The reported gains vary with the underlying AI model and test setup. The paper also compares different reasoning budgets and reports lower model-token costs in some comparisons."
         ],
-        "limitation": "This is an abstract-only preprint; results are not finalized and may change in peer review.",
-        "summary_basis": "Summary of the abstract",
+        "limitation": "The results are from 22 selected benchmarks and eight evaluated model backbones; performance may differ on other tasks and models. This is an arXiv preprint.",
+        "summary_basis": "Summary of the paper",
         "reading_minutes": 1,
         "claim_status": "study",
         "summary_status": "ready",
         "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
         "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
         "research_reading_version": "paper-practitioner-v1",
-        "full_text_status": "pdf_size_limit",
+        "full_text_status": "read",
         "full_text_retry_after": "2026-10-27",
         "manual_source_audit": {
           "date": "2026-10-26",
@@ -226,7 +226,11 @@
         "evidence_complete": false,
         "display_scope": "",
         "edition": "2026-10",
-        "label": "Preprint"
+        "label": "Preprint",
+        "paper_source_url": "https://arxiv.org/html/2610.26860v1",
+        "paper_sections": 17,
+        "paper_text_sha256": "75c715f1ff1dc450813d39f3d282aa006adbd79a3a9be6b4321b3b351607772a",
+        "html_reader_version": 1
       },
       {
         "key": "paper:950cc7fc17d32a70459713fe",
@@ -330,7 +334,7 @@
       ]
     ],
     "source_hashes": {
-      "paper:6e9ca4b2faaee021f6509905": "103d3567612c0e61eed4e2956afd7e937088e0b4ea55ded70847883dbf7a656d",
+      "paper:6e9ca4b2faaee021f6509905": "9b035b149cb5134f850f0c13bdf9af934d05618ee243ab8e2f1e87a6051984dc",
       "paper:950cc7fc17d32a70459713fe": "f40ee8f9579735f8cafc8c0f93fd660436cdd9ac67157a6d2bd7728e66321524"
     },
     "image_key": "culture:8c7df0b43ce2ab4b36e2c102",

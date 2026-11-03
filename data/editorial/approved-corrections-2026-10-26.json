@@ -493,11 +493,11 @@
       },
       "after": {
         "headline": "Keeping images and tool results helps AI answer visual questions",
-        "deck": "OpenVLHarness improves test scores by 9.7–12.6 points. The smaller gains described in the abstract come from giving the starting AI more computing time alone.",
+        "deck": "OpenVLHarness adds tools and memory so an AI can reuse images and earlier tool results. Across twenty two tests, it improves average scores by 9.7–12.6 points over the comparison systems. The modest gains described in the abstract came from giving the starting model more computing time alone. They were not the gains from OpenVLHarness. The results vary with the underlying model and test setup.",
         "what_happened": "Across 22 tests, giving a basic AI model more time to answer produced only modest gains. OpenVLHarness instead adds tools and memory for images, text and earlier tool results. It improves average scores by 9.7–12.6 points over the comparison systems.",
         "body_paragraphs": [
           "The system keeps images, information and links available during a task. This lets the AI reuse evidence across several steps instead of starting again each time.",
-          "The reported gains vary with the underlying AI model and test setup. The abstract also reports lower token use in some comparisons. Tokens are the pieces of text processed by an AI."
+          "The reported gains vary with the underlying AI model and test setup. The paper also compares different reasoning budgets and reports lower model-token costs in some comparisons."
         ]
       }
     }
