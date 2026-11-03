@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-10-27",
-  "period_end": "2026-11-02",
+  "period_start": "2026-10-28",
+  "period_end": "2026-11-03",
   "providers": [
     {
       "source": "arxiv",
@@ -21,37 +21,37 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:c9f5dd952a7d9e67b2e75f9c",
-      "status": "arxiv_authors",
-      "source_verified": true,
-      "institutions": 3
-    },
-    {
-      "key": "paper:a16e0523d2143d9984fed614",
+      "key": "paper:6ad5a095eb5166eb01b8a925",
       "status": "arxiv_authors",
       "source_verified": true,
       "institutions": 2
     },
     {
-      "key": "paper:1de2657fc1355d9f28f75849",
+      "key": "paper:1f57be72ebcab286d54f6980",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 2
+    },
+    {
+      "key": "paper:8854a9ab8822988495c82f90",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 6
+    },
+    {
+      "key": "paper:0403a4b1e55eb0478631c7c9",
+      "status": "unavailable",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:8afc4a99884a0341954374e7",
       "status": "not_matched",
       "source_verified": true,
       "institutions": 0
     },
     {
-      "key": "paper:de6674789d124556ac1d8e17",
-      "status": "arxiv_authors",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
-      "key": "paper:2dedc4dc558b8a96beade31c",
-      "status": "arxiv_authors",
-      "source_verified": true,
-      "institutions": 1
-    },
-    {
-      "key": "paper:2b534ae15654aff4cd88fc4c",
+      "key": "paper:4a2df3114d71ed0d6748f48f",
       "status": "arxiv_authors",
       "source_verified": true,
       "institutions": 1
@@ -69,10 +69,22 @@
       "institutions": 5
     },
     {
+      "key": "paper:7de8e086b715a97caa852c62",
+      "status": "cached",
+      "source_verified": false,
+      "institutions": 3
+    },
+    {
       "key": "paper:6e9ca4b2faaee021f6509905",
       "status": "cached",
       "source_verified": true,
       "institutions": 1
+    },
+    {
+      "key": "paper:73719334b220689bc34e3c32",
+      "status": "cached",
+      "source_verified": false,
+      "institutions": 2
     },
     {
       "key": "paper:3a3475ffddec2b1bfb6c31e2",
@@ -124,7 +136,7 @@
     }
   ],
   "recovery": {
-    "recovered": 9,
+    "recovered": 11,
     "unavailable": 0
   }
 }
