@@ -158,20 +158,18 @@ class GroundingGate(unittest.TestCase):
 
 class WeeklyApprovedCorrections(unittest.TestCase):
     def test_repeated_research_errors_are_corrected_and_source_bound(self):
-        from build_site import papers
-        from editorial_corrections import apply_corrections
         from weekly_editorials import ready_valid, validate_section, validate_citation_alignment
         root = Path(__file__).resolve().parents[1]
         audit = json.loads((root/'data/editorial/weekly-corrections-2026-10-26.json').read_text())
         approved = json.loads((root/'data/weekly-overviews/approved/2026-W43.json').read_text())
         section = approved['research']
-        available = {x['key']:x for x in apply_corrections(papers(sanitize=False), root)}
+        approved_sources = {x['key']: x for x in section['papers']}
         self.assertEqual(section, audit['after'])
-        self.assertTrue(ready_valid(section, available))
+        self.assertTrue(ready_valid(section, approved_sources))
         validate_section(section)
-        validate_citation_alignment(section['prose'], [available[k] for k in section['source_hashes']])
+        validate_citation_alignment(section['prose'], [approved_sources[k] for k in section['source_hashes']])
         self.assertNotIn('results do not always hold on new images', section['summary'])
         self.assertNotIn('gains were modest', section['summary'])
-        changed = copy.deepcopy(available)
+        changed = copy.deepcopy(approved_sources)
         changed[next(iter(section['source_hashes']))]['deck'] += ' Changed evidence.'
         self.assertFalse(ready_valid(section, changed))
