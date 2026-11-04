@@ -418,7 +418,7 @@
   "research": [
     {
       "key": "paper:be49d96abd2a3f5b615d1f08",
-      "reason": "Preserve abstract-only scope and identify the publication as a Perspective proposing a legal accountability framework.",
+      "reason": "A verified 16-page author manuscript supersedes the prior abstract-only reading; retain the Perspective attribution and describe the full paper.",
       "before": {
         "headline": "Responsibility for AI outcomes rests with design decisions",
         "deck": "Explains how human aims shape AI and why tracing responsibility matters",
@@ -435,19 +435,20 @@
       "after": {
         "headline": "A PNAS Perspective links AI accountability to human design decisions",
         "deck": "Martin Hilbert proposes tracing responsibility through the machine-learning pipeline.",
-        "what_happened": "In a PNAS Perspective, Martin Hilbert argues that AI responsibility can be traced through human choices about objectives, training data, deployment and oversight. The abstract proposes a way to analyse legal accountability; it does not report a new experiment.",
+        "what_happened": "In this PNAS Perspective, Martin Hilbert argues that machine learning systems reflect decisions made at several stages: setting objectives, selecting training data, deploying safeguards, shaping user interactions and monitoring harms. He applies this framework to debates over product liability, agency, platform immunity and free speech.",
         "body_paragraphs": [
-          "The argument treats AI outputs as the result of several layers of human intention rather than the speech of one actor. It proposes examining who contributed, causation and how responsibility should be shared.",
-          "The abstract also identifies unresolved problems, including opaque models, many contributors and harms that appear after deployment. This briefing covers the abstract, not a full-text reading or proof that the proposed framework works in court."
+          "The Perspective treats an AI output as the result of layered human choices, rather than the act of one speaker. Unpredictable outputs can affect how responsibility is assigned, but do not erase the design and deployment decisions that shaped the system.",
+          "It identifies four unresolved problems: dividing responsibility among contributors, proving fault inside opaque models, addressing harms that appear after deployment, and keeping remedies in step with technology."
         ],
-        "why_it_matters": "The Perspective offers a way to connect technical design choices with accountability while identifying remaining legal problems.",
-        "limitation": "Abstract-only summary of a published Perspective; no experimental findings or full-paper reading are claimed.",
+        "why_it_matters": "The framework gives courts a way to ask which actors shaped risky behavior, what they could foresee, and how responsibility might be shared.",
+        "limitation": "This is a legal Perspective, not an empirical test of liability outcomes. Its framework still leaves difficult questions about apportioning responsibility and proving fault unresolved.",
         "research_label": "Perspective",
         "claim_status": "perspective"
       },
       "source_urls": [
         "https://doi.org/10.1073/pnas.2610670123",
-        "https://pubmed.ncbi.nlm.nih.gov/42961910/"
+        "https://pubmed.ncbi.nlm.nih.gov/42961910/",
+        "https://arxiv.org/pdf/2611.00380v1"
       ],
       "retrieval_proofs": [
         {
@@ -459,8 +460,14 @@
           "url": "https://pubmed.ncbi.nlm.nih.gov/42961910/",
           "status": 200,
           "response_sha256": "44fc4bbc72af9f437c90a92996c3b08fccdfd470e15aa8919d1c75b18d99a984"
+        },
+        {
+          "url": "https://arxiv.org/pdf/2611.00380v1",
+          "status": 200,
+          "response_sha256": "3a18fafa0d6e1905f5136b8fc1648a1cdc825dd90d9521c79cf1d1ea71697834"
         }
-      ]
+      ],
+      "paper_text_sha256": "1cf4e6c7501a236e15a3f745277dd84554251d3d041c0d83d22212c245d517d1"
     }
   ]
 }
