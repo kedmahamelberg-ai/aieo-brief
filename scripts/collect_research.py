@@ -15,6 +15,8 @@ from research_reading import publisher_pdf_urls
 ROOT=Path(__file__).resolve().parents[1]
 AI=re.compile(r'artificial intelligence|machine learning|large language model|generative ai|deep learning|\bllms?\b|\bchatgpt\b|\bchatbots?\b|\bai\b',re.I)
 N={'a':'http://www.w3.org/2005/Atom','ar':'http://arxiv.org/schemas/atom'}
+# Exact author manuscript for the PNAS record; verified against the manuscript title page and DOI.
+PNAS_ARXIV_MANUSCRIPTS={'10.1073/pnas.2610670123':'2611.00380v1'}
 
 def plain(v):return re.sub(r'\s+',' ',re.sub('<[^>]+>',' ',str(v or ''))).strip()
 def identity(doi,aid):return 'paper:'+hashlib.sha256((doi.lower() if doi else 'arxiv:'+re.sub(r'v\d+$','',aid)).encode()).hexdigest()[:24]
@@ -56,7 +58,7 @@ def crossref(source,start,end,limit):
   licenses=[x.get('URL','') for x in row.get('license') or []]
   oa=any('creativecommons.org/licenses/' in u or 'creativecommons.org/publicdomain/' in u for u in licenses)
   authors=[plain((a.get('given','')+' '+a.get('family',''))) for a in row.get('author') or []]
-  out.append({'key':identity(doi,''),'doi':doi,'arxiv_id':'','original_headline':title,'abstract':abstract,'pdf_url':next(iter(publisher_pdf_urls(doi,row.get('link'))),''),'url':'https://doi.org/'+quote(doi,safe='/'),'date':day,'authors':authors,'publisher':'PNAS' if source=='pnas' else 'SSRN','source':source,'research_label':'Journal article' if source=='pnas' else 'Working paper / preprint','evidence_scope':'abstract' if abstract else 'metadata_only','access':'Open-license record' if oa else 'Check access at source','license_urls':licenses,'metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
+  out.append({'key':identity(doi,''),'doi':doi,'arxiv_id':PNAS_ARXIV_MANUSCRIPTS.get(doi,''),'original_headline':title,'abstract':abstract,'pdf_url':('https://arxiv.org/pdf/'+PNAS_ARXIV_MANUSCRIPTS[doi] if doi in PNAS_ARXIV_MANUSCRIPTS else next(iter(publisher_pdf_urls(doi,row.get('link'))),'')),'url':'https://doi.org/'+quote(doi,safe='/'),'date':day,'authors':authors,'publisher':'PNAS' if source=='pnas' else 'SSRN','source':source,'research_label':'Journal article' if source=='pnas' else 'Working paper / preprint','evidence_scope':'abstract' if abstract else 'metadata_only','access':'Open-license record' if oa else 'Check access at source','license_urls':licenses,'metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
   if len(out)>=limit:break
  return out
 
@@ -77,7 +79,32 @@ def main():
  if all(x['status']=='unavailable' for x in status) and not any(r.get('abstract') for r in rows):raise SystemExit('All research providers unavailable. Prior published research is retained.')
  private=ROOT/'data/research/private';private.mkdir(parents=True,exist_ok=True)
  unique={}
+ available_pnas_dois={r.get('doi','') for r in rows if r.get('source')=='pnas'}
+ mapped_arxiv_ids={re.sub(r'v\d+$','',aid):doi for doi,aid in PNAS_ARXIV_MANUSCRIPTS.items()}
  for r in rows:
+  manuscript_doi=mapped_arxiv_ids.get(re.sub(r'v\d+$','',r.get('arxiv_id','')))
+  if r.get('source')=='arxiv' and manuscript_doi in available_pnas_dois:
+   continue
+  key=r['key'];old=unique.get(key)
+  if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
+ affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
+ payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'recovery':recovery_status,'papers':list(unique.values())}
+ (private/'inputs.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
+ print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))
+if __name__=='__main__':main()
+,'',aid):doi for doi,aid in PNAS_ARXIV_MANUSCRIPTS.items()}
+ for r in rows:
+  if r.get('source')=='arxiv' and r.get('doi','')=='' and mapped_arxiv_ids.get(re.sub(r'v\\d+
+  if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
+ affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
+ payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'recovery':recovery_status,'papers':list(unique.values())}
+ (private/'inputs.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
+ (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
+ print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))
+if __name__=='__main__':main()
+,'',r.get('arxiv_id',''))) in available_pnas_dois:
+   continue
   key=r['key'];old=unique.get(key)
   if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
  affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
