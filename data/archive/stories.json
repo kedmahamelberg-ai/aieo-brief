@@ -2,6 +2,377 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Captain H.S. Rawhinson (recto)",
+      "art_type": "Photograph",
+      "balance_origin": "India",
+      "creator": "Raja Deen Dayal (Indian, 1844–1905)",
+      "creator_origin": "India",
+      "culture_type": "illustration",
+      "deck": "Captain H.S. Rawhinson (recto). albumen print.",
+      "headline": "Captain H.S. Rawhinson (recto)",
+      "image_path": "assets/culture/76c7bd98434e91e9c48e3aeb.jpg",
+      "key": "culture:76c7bd98434e91e9c48e3aeb",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2023.121.20.1/2023.121.20.1_web.jpg",
+      "medium": "albumen print",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2023.121.20.1",
+      "provenance_id": "cma:664311",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2023.121.20.1",
+      "work_date": "c. 1882–87",
+      "date": "2026-11-04",
+      "selected_on": "2026-11-04",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-76c7bd98434e91e9c48e3aeb",
+      "path": "culture/culture-76c7bd98434e91e9c48e3aeb/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Captain H.S. Rawhinson (recto)",
+          "url": "https://clevelandart.org/art/2023.121.20.1",
+          "date": "c. 1882–87",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-04",
+      "summary_basis": "Selected 4 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Grieg%2C_Folkevise_Op_12_No_5.ogg",
+      "creator": "Edvard Grieg",
+      "creator_origin": "Norwegian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Edvard Grieg. 1 minutes to listen.",
+      "duration_seconds": 118,
+      "headline": "Grieg, Folkevise Op 12 No 5",
+      "key": "culture:48e83d2102fe9d56db9c17c6",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Grieg%2C_Folkevise_Op_12_No_5.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Edvard_Grieg",
+      "original_recording_title": "Grieg, Folkevise Op 12 No 5",
+      "provenance_id": "commons:92676016",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Constantin Stephan, piano",
+      "recording_description": "Audio recording of \"Folkevise\" (\"Folk Song\"), one of the lyric pieces by Edvard Grieg",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Constantin Stephan, piano",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Grieg,_Folkevise_Op_12_No_5.ogg",
+      "work_date": "2020-01-29",
+      "date": "2026-11-04",
+      "selected_on": "2026-11-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-48e83d2102fe9d56db9c17c6",
+      "path": "culture/culture-48e83d2102fe9d56db9c17c6/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Grieg, Folkevise Op 12 No 5",
+          "url": "https://commons.wikimedia.org/wiki/File:Grieg,_Folkevise_Op_12_No_5.ogg",
+          "date": "2020-01-29",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-04",
+      "summary_basis": "Selected 4 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Wind in the Willows",
+      "content_fingerprint": "32ba52f46db01444d872a36bf56f40d42049511d7bc0b30bf080bc16ca448484",
+      "creator": "Kenneth Grahame",
+      "creator_origin": "Scottish",
+      "culture_type": "text",
+      "deck": "A passage from The Wind in the Willows.",
+      "excerpt": "When they were quite ready, the now triumphant Toad led his companions to the paddock and set them to capture the old grey horse, who, without having been consulted, and to his own extreme annoyance, had been told off by Toad for the dustiest job in this dusty expedition. He frankly preferred the paddock, and took a deal of catching. Meantime Toad packed the lockers still tighter with necessaries, and hung nosebags, nets of onions, bundles of hay, and baskets from the bottom of the cart. At last the horse was caught and harnessed, and they set off, all talking at once, each animal either trudging by the side of the cart or sitting on the shaft, as the humour took him. It was a golden afternoon. The smell of the dust they kicked up was rich and satisfying; out of thick orchards on either side the road, birds called and whistled to them cheerily; good-natured wayfarers, passing them, gave them “Good-day,” or stopped to say nice things about their beautiful cart; and rabbits, sitting at their front doors in the hedgerows, held up their fore-paws, and said, “O my! O my! O my!”",
+      "headline": "The Wind in the Willows · a short reading",
+      "key": "culture:19385993c7739dbba99790c3",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:289:passage:32ba52f46db01444d872a36bf56f40d42049511d7bc0b30bf080bc16ca448484",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1932. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/289"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "cd2d8bfc50e44b18f9bc20742f1802859a268c8ce5c93aead0dba5f2597ecbfe",
+      "source_locator": "THE RIVER BANK; paragraph 134 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/289",
+      "translator": "",
+      "work_date": "1908",
+      "date": "2026-11-04",
+      "selected_on": "2026-11-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-19385993c7739dbba99790c3",
+      "path": "culture/culture-19385993c7739dbba99790c3/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Wind in the Willows · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/289",
+          "date": "1908",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-04",
+      "summary_basis": "Selected 4 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "When they were quite ready, the now triumphant Toad led his companions to the paddock and set them to capture the old grey horse, who, without having been consulted, and to his own extreme annoyance, had been told off by Toad for the dustiest job in this dusty expedition. He frankly preferred the paddock, and took a deal of catching. Meantime Toad packed the lockers still tighter with necessaries, and hung nosebags, nets of onions, bundles of hay, and baskets from the bottom of the cart. At last the horse was caught and harnessed, and they set off, all talking at once, each animal either trudging by the side of the cart or sitting on the shaft, as the humour took him. It was a golden afternoon. The smell of the dust they kicked up was rich and satisfying; out of thick orchards on either side the road, birds called and whistled to them cheerily; good-natured wayfarers, passing them, gave them “Good-day,” or stopped to say nice things about their beautiful cart; and rabbits, sitting at their front doors in the hedgerows, held up their fore-paws, and said, “O my! O my! O my!”",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "3354652c7fa9cf3d3ab6671f56dc58682af06a5afd17923ad7fdf68e14006c48",
+      "creator": "Emily Dickinson",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Emily Dickinson.",
+      "excerpt": "Three times -- we parted -- Breath -- and I --\nThree times -- He would not go --\nBut strove to stir the lifeless Fan\nThe Waters -- strove to stay.\n\nThree Times -- the Billows tossed me up --\nThen caught me -- like a Ball --\nThen made Blue faces in my face --\nAnd pushed away a sail\n\nThat crawled Leagues off -- I liked to see --\nFor thinking -- while I die --\nHow pleasant to behold a Thing\nWhere Human faces -- be --\n\nThe Waves grew sleepy -- Breath -- did not --\nThe Winds -- like Children -- lulled --\nThen Sunrise kissed my Chrysalis --\nAnd I stood up -- and lived --",
+      "headline": "Three times -- we parted -- Breath -- and I --",
+      "key": "culture:105d6e5851ea0acf493e1ff9",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Three times -- we parted -- Breath -- and I --",
+        "Three times -- He would not go --",
+        "But strove to stir the lifeless Fan",
+        "The Waters -- strove to stay.",
+        "",
+        "Three Times -- the Billows tossed me up --",
+        "Then caught me -- like a Ball --",
+        "Then made Blue faces in my face --",
+        "And pushed away a sail",
+        "",
+        "That crawled Leagues off -- I liked to see --",
+        "For thinking -- while I die --",
+        "How pleasant to behold a Thing",
+        "Where Human faces -- be --",
+        "",
+        "The Waves grew sleepy -- Breath -- did not --",
+        "The Winds -- like Children -- lulled --",
+        "Then Sunrise kissed my Chrysalis --",
+        "And I stood up -- and lived --"
+      ],
+      "provenance_id": "poetrydb:Emily Dickinson:Three times -- we parted -- Breath -- and I --",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1886.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "db928cbb8a63d831d3ee2bfabbbadfe9ced6f6666ef250e69e0c2d0c5e6ae313",
+      "source_locator": "Three times -- we parted -- Breath -- and I --",
+      "source_url": "https://poetrydb.org/title/Three%20times%20--%20we%20parted%20--%20Breath%20--%20and%20I%20--:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1886",
+      "date": "2026-11-04",
+      "selected_on": "2026-11-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-105d6e5851ea0acf493e1ff9",
+      "path": "culture/culture-105d6e5851ea0acf493e1ff9/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Three times -- we parted -- Breath -- and I --",
+          "url": "https://poetrydb.org/title/Three%20times%20--%20we%20parted%20--%20Breath%20--%20and%20I%20--:abs/lines.text",
+          "date": "Before 1886",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-04",
+      "summary_basis": "Selected 4 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Three times -- we parted -- Breath -- and I --\nThree times -- He would not go --\nBut strove to stir the lifeless Fan\nThe Waters -- strove to stay.\n\nThree Times -- the Billows tossed me up --\nThen caught me -- like a Ball --\nThen made Blue faces in my face --\nAnd pushed away a sail\n\nThat crawled Leagues off -- I liked to see --\nFor thinking -- while I die --\nHow pleasant to behold a Thing\nWhere Human faces -- be --\n\nThe Waves grew sleepy -- Breath -- did not --\nThe Winds -- like Children -- lulled --\nThen Sunrise kissed my Chrysalis --\nAnd I stood up -- and lived --",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Reflections; or Sentences and Moral Maxims",
+      "content_fingerprint": "4a79619aed420300cdde5222ccbde8006a5037b08ed9ced6d69d7757da7d8dbc",
+      "creator": "François de La Rochefoucauld",
+      "creator_origin": "French",
+      "culture_type": "quote",
+      "deck": "From Reflections; or Sentences and Moral Maxims. Translation by J. Hain Friswell.",
+      "excerpt": "We may have a large measure of mind fitted for nothing, and one is often inconvenienced with much mind; still of this kind of mind we may say that it is sometimes pleasing in society.",
+      "headline": "We may have a large measure of mind fitted for nothing, and one is often inconvenienced with much mind; still of this kind of mind we may say that it is sometimes pleasing in society.",
+      "key": "culture:0e340b48b881d3bcc1ad07e9",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:9105:quote:4a79619aed420300cdde5222ccbde8006a5037b08ed9ced6d69d7757da7d8dbc",
+      "publisher": "Project Gutenberg",
+      "quote_context": "To have much mind is a doubtful expression. It may mean every class of mind that can be mentioned, it may mean none in particular. It may mean that he talks sensibly while he acts foolishly. We may have a mind, but a narrow one. A mind may be fitted for some things, not for others. We may have a large measure of mind fitted for nothing, and one is often inconvenienced with much mind; still of this kind of mind we may say that it is sometimes pleasing in society.",
+      "rights": {
+        "basis": "Author died 1680. Translator: J. Hain Friswell, died 1878. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/9105"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "b240ded9918a8c04662b68a29101976f7f70fccf249be5fabdea579c95cd74e6",
+      "source_locator": "REFLECTIONS; OR, SENTENCES AND MORAL MAXIMS; paragraph 794 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/9105",
+      "translator": "J. Hain Friswell",
+      "work_date": "1871 translation",
+      "date": "2026-11-04",
+      "selected_on": "2026-11-04",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0e340b48b881d3bcc1ad07e9",
+      "path": "culture/culture-0e340b48b881d3bcc1ad07e9/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "We may have a large measure of mind fitted for nothing, and one is often inconvenienced with much mind; still of this kind of mind we may say that it is sometimes pleasing in society.",
+          "url": "https://www.gutenberg.org/ebooks/9105",
+          "date": "1871 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "4 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-04",
+      "summary_basis": "Selected 4 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "We may have a large measure of mind fitted for nothing, and one is often inconvenienced with much mind; still of this kind of mind we may say that it is sometimes pleasing in society.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "To have much mind is a doubtful expression. It may mean every class of mind that can be mentioned, it may mean none in particular. It may mean that he talks sensibly while he acts foolishly. We may have a mind, but a narrow one. A mind may be fitted for some things, not for others. We may have a large measure of mind fitted for nothing, and one is often inconvenienced with much mind; still of this kind of mind we may say that it is sometimes pleasing in society.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Purcell_-_I_love_and_I_must%2C_Z._382_%28Columbia-rox135-cax7659%29.oga",
       "creator": "Henry Purcell",
       "creator_origin": "English",
@@ -1226,7 +1597,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-03T21:10:45.286817+00:00",
+      "affiliation_checked_at": "2026-11-04T00:00:06.299430+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -4706,14 +5077,17 @@
       "kind": "news",
       "slug": "high-level-panel-discussion-ai-villa-europa",
       "path": "story/high-level-panel-discussion-ai-villa-europa/index.html",
-      "headline": "High-level panel discussion on AI - Villa Europa",
+      "headline": "High-level AI panel at Villa Europa frames governance and human-centric rules in Rome",
       "original_headline": "High-level panel discussion on AI - Villa Europa",
-      "deck": "Reporting from EEAS. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "Policy discussion; governance framing",
-      "for_ai": "Policy-focused discourse on AI governance",
+      "deck": "Policy-focused dialogue ties AI regulation to international cooperation and ethical use.",
+      "what_happened": "Leaders and students gathered at Villa Europa during the Festival della Diplomazia 2026 to discuss AI governance, the EU AI Act, and international treaties, emphasizing human-centric regulation.",
+      "why_it_matters": "The event highlights ongoing policy work on safe, ethical AI and shows how different countries engage in governance.",
+      "body_paragraphs": [
+        "The debate focused on how AI should be developed and used with people at the center. It noted the EU’s continental framework for safe and trustworthy AI and mentioned related international treaties.",
+        "Pope Leo XIV’s encyclica Magnifica Humanitas framed ethical questions in the Rome exchanges."
+      ],
+      "for_humans": "Policy talk shows how nations plan to regulate AI.",
+      "for_ai": "Policy framing and governance discussions shape future AI use.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -4740,10 +5114,10 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
       "limitation": "",
-      "has_editorial": false,
+      "has_editorial": true,
       "edition": "2026-W44",
       "period_start": "2026-10-26",
       "period_end": "2026-11-01",
@@ -35198,7 +35572,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-03T21:10:45.286817+00:00",
+      "affiliation_checked_at": "2026-11-04T00:00:06.299430+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
