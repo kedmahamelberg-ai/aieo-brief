@@ -2,19 +2,54 @@
   "release_id": "2026-W44",
   "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
   "counts": {
-    "unchanged": 19,
+    "unchanged": 12,
     "source_not_ready": 0,
     "source_date_mismatch": 1,
     "new_registry": 1,
     "needs_model": 38,
-    "needs_rebind": 0,
-    "selected": 1,
-    "generated": 1,
-    "rebound": 0,
-    "failed": 0,
-    "deferred": 0
+    "needs_rebind": 8,
+    "selected": 46,
+    "generated": 33,
+    "rebound": 8,
+    "failed": 4,
+    "deferred": 1
   },
-  "failure_counts": {},
-  "failed_items": [],
-  "updated_at": "2026-11-03T23:59:37.377818+00:00"
+  "failure_counts": {
+    "source_scope_review_failed": 1,
+    "claim_grounding_failed": 3
+  },
+  "failed_items": [
+    {
+      "event_id": "c4dbe984-a106-44fb-8412-35ac0b228072",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    },
+    {
+      "event_id": "ca268de9-72d8-44c6-a8a4-177151d08911",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "8ccd7810-b4c4-4a30-8452-0aa761cbf05d",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "fcdb6abc-5fba-422e-9520-87887fccfed9",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    }
+  ],
+  "updated_at": "2026-11-04T13:45:22.582238+00:00"
 }
