@@ -11,127 +11,92 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "How Do We Balance Speed and Caution in AI This Week",
-        "deck": "Over coffee I read that Sam Altman says AI progress has reached a milestone, and yet a controlled test shows how quickly safeguards must keep pace with capability. UdeM is funding a new AI chair for cardiovascular care, aiming to move AI from theory to hospital practice to help clinicians assess risks faster.",
-        "summary": "Over coffee I read that Sam Altman says AI progress has reached a milestone, and yet a controlled test shows how quickly safeguards must keep pace with capability. UdeM is funding a new AI chair for cardiovascular care, aiming to move AI from theory to hospital practice to help clinicians assess risks faster. HKEX has rolled out AI and Semiconductor indices and plans a Mainland ETF, giving a clear path for investors to follow AI opportunities as they grow. Pascal Lamy calls for international AI rules and shared incident reports, highlighting how cooperation might help reduce risk even as rivals compete. Mistral opens the ML4 open weights, letting firms run AI on their own systems, while warning that guardrails still apply to managed services.",
-        "scope_note": "Five selected stories from five discovery markets.",
-        "word_count": 142,
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
         "reading_minutes": 1,
-        "image_path": "assets/culture/ffc5965c3492c77434771ed5.jpg",
-        "image_alt": "View of Schroon Mountain, Essex County, New York, After a Storm",
-        "image_caption": "View of Schroon Mountain, Essex County, New York, After a Storm",
-        "image_credit": "Thomas Cole (American, born England,1801–1848) · Cleveland Museum of Art",
-        "image_source_url": "https://clevelandart.org/art/1917.1335",
-        "image_rights": "CC0 image",
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
         "entries": [
-          {
-            "code": "US",
-            "name": "United States",
-            "topic": "Everyday life",
-            "story": {
-              "path": "story/development-5e16799b-e2a8-4b50-83cc-1f0c9e7b4942/index.html",
-              "headline": "OpenAI’s Altman Declares AI Singularity Arrived, But Context Matters",
-              "publisher": "ABC7 Bay Area"
-            }
-          },
-          {
-            "code": "CA",
-            "name": "Canada",
-            "topic": "Everyday life",
-            "story": {
-              "path": "story/development-1509885f-d854-4259-b08c-4a69e98479a3/index.html",
-              "headline": "UdeM launches first AI chair for cardiovascular care, backed by donors",
-              "publisher": "Université de Montréal"
-            }
-          },
           {
             "code": "CN",
             "name": "China",
-            "topic": "Business & investment",
+            "count": 13,
+            "topic": "Business And Investment",
+            "sentence": "China: the discovery stream centred most often on business and investment, including “Xinhua: AI Influences U.S. Midterms with Mixed Voter Impact and Lobbying.”",
             "story": {
-              "path": "story/development-297f4ab8-5043-4b40-a664-fd6328f0d4b2/index.html",
-              "headline": "HKEX Announces AI and Semiconductor Indices With Mainland ETF Plan",
-              "publisher": "人民日报"
+              "headline": "Xinhua: AI Influences U.S. Midterms with Mixed Voter Impact and Lobbying",
+              "path": "story/international-observation-u-s-midterm-elections-first-time/index.html",
+              "publisher": "Xinhua Net",
+              "source_url": "https://www.news.cn/world/20261031/101e6e534c31460285c998d9b08e670f/c.html"
             }
           },
           {
-            "code": "FR",
-            "name": "France",
-            "topic": "Rules & rights",
+            "code": "US",
+            "name": "United States",
+            "count": 15,
+            "topic": "Work And Skills",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “AI Could Help Map Future Space Outposts, Scientists Say,But It Supports….”",
             "story": {
-              "path": "story/development-41d91767-f7b9-41e1-95c0-5a62e24c3b5c/index.html",
-              "headline": "Pascal Lamy urges international AI rules while warning on cooperation limits",
-              "publisher": "LCP-Assemblée nationale"
+              "headline": "AI Could Help Map Future Space Outposts, Scientists Say,But It Supports Humans, Not Replaces Them",
+              "path": "story/could-next-gen-artificial-intelligence-help-map-space-outposts/index.html",
+              "publisher": "Phys.org",
+              "source_url": "https://phys.org/news/2026-10-gen-artificial-intelligence-future-space.html"
             }
           },
           {
             "code": "GB",
             "name": "United Kingdom",
-            "topic": "AI & technology",
+            "count": 12,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Mistral Opens ML4 Weights, Offering Self-Hosted Cyber Defense for Firms.”",
             "story": {
-              "path": "story/development-0633cab1-acfe-46fc-b52c-41ad85400c26/index.html",
-              "headline": "Mistral Opens ML4 Weights, Giving Firms Self-Hosted AI for Cybersecurity, With Cautions",
-              "publisher": "Euronews.com"
+              "headline": "Mistral Opens ML4 Weights, Offering Self-Hosted Cyber Defense for Firms",
+              "path": "story/mistral-has-launched-ai-model-giving-over-cybersecurity/index.html",
+              "publisher": "Euronews.com",
+              "source_url": "https://fr.euronews.com/2026/10/29/mistral-met-en-ligne-son-modele-dia-donnant-aux-societes-plus-de-controle-sur-leur-cyberse"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 11,
+            "topic": "Rules And Rights",
+            "sentence": "France: selected reporting leaned toward rules and rights, with “AI-Fueled Asian Growth, FMI Finds, but Warnings of a Possible Slowdown…” as one visible signal.",
+            "story": {
+              "headline": "AI-Fueled Asian Growth, FMI Finds, but Warnings of a Possible Slowdown Loom",
+              "path": "story/asian-growth-driven-artificial-intelligence/index.html",
+              "publisher": "Asialyst",
+              "source_url": "https://asialyst.com/fr/2026/10/30/croissance-asiatique-portee-intelligence-artificielle"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 18,
+            "topic": "Work And Skills",
+            "sentence": "Canada: the discovery stream centred most often on work and skills, including “AMF-Backed Survey Finds 30% of Quebecers Used AI for Personal Finances….”",
+            "story": {
+              "headline": "AMF-Backed Survey Finds 30% of Quebecers Used AI for Personal Finances, Higher Among Youth",
+              "path": "story/one-three-quebecers-now-uses-artificial-personal-finances/index.html",
+              "publisher": "Mon Carnet – de l'actualité numérique",
+              "source_url": "https://moncarnet.com/2026/10/30/un-quebecois-sur-trois-utilise-desormais-lintelligence-artificielle-pour-gerer-ses-finances-personnelles"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "ready",
-        "author": "Kedma Hamelberg",
-        "prose": [
-          [
-            {
-              "text": "Over coffee I read that Sam Altman says AI progress has reached a milestone, and yet a controlled test shows how quickly safeguards must keep pace with capability.",
-              "source_key": "event:5e16799b-e2a8-4b50-83cc-1f0c9e7b4942",
-              "path": "story/development-5e16799b-e2a8-4b50-83cc-1f0c9e7b4942/index.html"
-            },
-            {
-              "text": "UdeM is funding a new AI chair for cardiovascular care, aiming to move AI from theory to hospital practice to help clinicians assess risks faster.",
-              "source_key": "event:1509885f-d854-4259-b08c-4a69e98479a3",
-              "path": "story/development-1509885f-d854-4259-b08c-4a69e98479a3/index.html"
-            }
-          ],
-          [
-            {
-              "text": "HKEX has rolled out AI and Semiconductor indices and plans a Mainland ETF, giving a clear path for investors to follow AI opportunities as they grow.",
-              "source_key": "event:297f4ab8-5043-4b40-a664-fd6328f0d4b2",
-              "path": "story/development-297f4ab8-5043-4b40-a664-fd6328f0d4b2/index.html"
-            },
-            {
-              "text": "Pascal Lamy calls for international AI rules and shared incident reports, highlighting how cooperation might help reduce risk even as rivals compete.",
-              "source_key": "event:41d91767-f7b9-41e1-95c0-5a62e24c3b5c",
-              "path": "story/development-41d91767-f7b9-41e1-95c0-5a62e24c3b5c/index.html"
-            }
-          ],
-          [
-            {
-              "text": "Mistral opens the ML4 open weights, letting firms run AI on their own systems, while warning that guardrails still apply to managed services.",
-              "source_key": "event:0633cab1-acfe-46fc-b52c-41ad85400c26",
-              "path": "story/development-0633cab1-acfe-46fc-b52c-41ad85400c26/index.html"
-            }
-          ]
-        ],
-        "source_hashes": {
-          "event:5e16799b-e2a8-4b50-83cc-1f0c9e7b4942": "8d7af9d5014709077725f9022a921cd2608b3b342f7798acbbb31685b606c694",
-          "event:1509885f-d854-4259-b08c-4a69e98479a3": "3c68c1cd75520825d4c279ccf94941c5eab5ac7e3f2b4f185a7547f05a87568c",
-          "event:297f4ab8-5043-4b40-a664-fd6328f0d4b2": "d1b255156c553f56c0fce1524806f79a54eeb72ec40821d9e42e37556bc8b94e",
-          "event:41d91767-f7b9-41e1-95c0-5a62e24c3b5c": "f31d045993250be807ab5229a51c48dbe354c67777647669a358ba6868c3e34e",
-          "event:0633cab1-acfe-46fc-b52c-41ad85400c26": "04086f364539874f562406aceb6f194a1b04eb611963aa360be4506b4b215ae0"
-        },
-        "image_key": "culture:ffc5965c3492c77434771ed5",
-        "image_work_key": "186d5456ba832ec994b0f8ad56595bc1a7af4332dcec22deab996fe635d1cd12",
-        "image_reason": "A quiet landscape after a storm mirrors careful pace amid rapid change.",
-        "review_checks": {
-          "grounded": true,
-          "clear_high_school_language": true,
-          "coherent_prose": true,
-          "meaningful_connection": true,
-          "source_limits_preserved": true,
-          "no_invented_personal_experience": true,
-          "image_metaphor_supported": true
-        },
-        "human_approved": true
+        "status": "pending",
+        "author": "",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "approved_sources_changed"
       },
       "research": {
         "kind": "research",
@@ -347,8 +312,8 @@
         "human_approved": true
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "ready",
-      "content_sha256": "27483370a33cb34487e56009219e8621f2e414d56e7f94b8061f914608ab6b08"
+      "editorial_status": "pending",
+      "content_sha256": "7197111eca9804e87275475d3766a2e4b7f6bac334edaa08efbb1c53dc21e47f"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
