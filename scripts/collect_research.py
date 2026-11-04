@@ -80,7 +80,12 @@ def main():
  private=ROOT/'data/research/private';private.mkdir(parents=True,exist_ok=True)
  unique={}
  available_pnas_dois={r.get('doi','') for r in rows if r.get('source')=='pnas'}
- mapped_arxiv_ids={re.sub(r'v\\d+
+ mapped_arxiv_ids={re.sub(r'v\d+$','',aid):doi for doi,aid in PNAS_ARXIV_MANUSCRIPTS.items()}
+ for r in rows:
+  manuscript_doi=mapped_arxiv_ids.get(re.sub(r'v\d+$','',r.get('arxiv_id','')))
+  if r.get('source')=='arxiv' and manuscript_doi in available_pnas_dois:
+   continue
+  key=r['key'];old=unique.get(key)
   if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
  affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
  payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'recovery':recovery_status,'papers':list(unique.values())}
