@@ -1597,7 +1597,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-04T09:09:53.489571+00:00",
+      "affiliation_checked_at": "2026-11-04T09:21:39.660433+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3444,13 +3444,13 @@
       "has_editorial": true,
       "headline": "A PNAS Perspective links AI accountability to human design decisions",
       "deck": "Martin Hilbert proposes tracing responsibility through the machine-learning pipeline.",
-      "what_happened": "In a PNAS Perspective, Martin Hilbert argues that AI responsibility can be traced through human choices about objectives, training data, deployment and oversight. The abstract proposes a way to analyse legal accountability; it does not report a new experiment.",
-      "why_it_matters": "The Perspective offers a way to connect technical design choices with accountability while identifying remaining legal problems.",
+      "what_happened": "In this PNAS Perspective, Martin Hilbert argues that machine learning systems reflect decisions made at several stages: setting objectives, selecting training data, deploying safeguards, shaping user interactions and monitoring harms. He applies this framework to debates over product liability, agency, platform immunity and free speech.",
+      "why_it_matters": "The framework gives courts a way to ask which actors shaped risky behavior, what they could foresee, and how responsibility might be shared.",
       "body_paragraphs": [
-        "The argument treats AI outputs as the result of several layers of human intention rather than the speech of one actor. It proposes examining who contributed, causation and how responsibility should be shared.",
-        "The abstract also identifies unresolved problems, including opaque models, many contributors and harms that appear after deployment. This briefing covers the abstract, not a full-text reading or proof that the proposed framework works in court."
+        "The Perspective treats an AI output as the result of layered human choices, rather than the act of one speaker. Unpredictable outputs can affect how responsibility is assigned, but do not erase the design and deployment decisions that shaped the system.",
+        "It identifies four unresolved problems: dividing responsibility among contributors, proving fault inside opaque models, addressing harms that appear after deployment, and keeping remedies in step with technology."
       ],
-      "limitation": "Abstract-only summary of a published Perspective; no experimental findings or full-paper reading are claimed.",
+      "limitation": "This is a legal Perspective, not an empirical test of liability outcomes. Its framework still leaves difficult questions about apportioning responsibility and proving fault unresolved.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "summary_status": "ready",
@@ -35581,7 +35581,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-04T09:09:53.489571+00:00",
+      "affiliation_checked_at": "2026-11-04T09:21:39.660433+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
