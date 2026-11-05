@@ -2,6 +2,395 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/63/Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3",
+      "creator": "Claude Debussy",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Claude Debussy. 4 minutes to listen.",
+      "duration_seconds": 242,
+      "headline": "Clair de Lune - Wright Brass - United States Air Force Band of Flight",
+      "key": "culture:ddf24bb2e124e0e227262d77",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Claude_Debussy",
+      "original_recording_title": "Clair de Lune - Wright Brass - United States Air Force Band of Flight",
+      "provenance_id": "commons:106985409",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Composition: Claude Debussy; Performance: United States Air Force Band of Flight, Wright Brass; Recording: United States Air Force",
+      "recording_description": "\"Clair de Lune\" performed by the Wright Brass of the United States Air Force Band of Flight. Track 14 from Blue Skies (1993).",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Composition: Claude Debussy; Performance: United States Air Force Band of Flight, Wright Brass; Recording: United States Air Force",
+        "label": "Public domain (source-declared)",
+        "source_credit": "https://www.music.af.mil/Multimedia/Music/Public-Domain-Music/",
+        "url": "https://commons.wikimedia.org/wiki/File:Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3",
+      "work_date": "1993",
+      "date": "2026-11-05",
+      "selected_on": "2026-11-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ddf24bb2e124e0e227262d77",
+      "path": "culture/culture-ddf24bb2e124e0e227262d77/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Clair de Lune - Wright Brass - United States Air Force Band of Flight",
+          "url": "https://commons.wikimedia.org/wiki/File:Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3",
+          "date": "1993",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-05",
+      "summary_basis": "Selected 5 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Timaeus",
+      "content_fingerprint": "9c6d931b9e85ba1d0ba878b8a39795ea20993a41e68b0b80413ab1c4df204947",
+      "creator": "Plato",
+      "creator_origin": "Greek",
+      "culture_type": "text",
+      "deck": "A passage from Timaeus. Translated by Benjamin Jowett.",
+      "excerpt": "And by reason of all these affections, the soul, when encased in a mortal body, now, as in the beginning, is at first without intelligence; but when the flood of growth and nutriment abates, and the courses of the soul, calming down, go their own way and become steadier as time goes on, then the several circles return to their natural form, and their revolutions are corrected, and they call the same and the other by their right names, and make the possessor of them to become a rational being. And if these combine in him with any true nurture or education, he attains the fulness and health of the perfect man, and escapes the worst disease of all; but if he neglects education he walks lame to the end of his life, and returns imperfect and good for nothing to the world below. This, however, is a later stage; at present we must treat more exactly the subject before us, which involves a preliminary enquiry into the generation of the body and its members, and as to how the soul was created—for what reason and by what providence of the gods; and holding fast to probability, we must pursue our way.",
+      "headline": "Timaeus · a short reading",
+      "key": "culture:b550cc300c8ffd4e68bc1a90",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1572:passage:9c6d931b9e85ba1d0ba878b8a39795ea20993a41e68b0b80413ab1c4df204947",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died -348. Translator: Benjamin Jowett, died 1893. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1572"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af8576f807a2d709ec13daf55fba8d0285af1ba15dcdb466bc50ae1d5080f7ad",
+      "source_locator": "PERSONS OF THE DIALOGUE: Socrates, Critias, Timaeus, Hermocrates.; paragraph 69 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1572",
+      "translator": "Benjamin Jowett",
+      "work_date": "1892 translation",
+      "date": "2026-11-05",
+      "selected_on": "2026-11-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-b550cc300c8ffd4e68bc1a90",
+      "path": "culture/culture-b550cc300c8ffd4e68bc1a90/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Timaeus · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/1572",
+          "date": "1892 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-05",
+      "summary_basis": "Selected 5 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "And by reason of all these affections, the soul, when encased in a mortal body, now, as in the beginning, is at first without intelligence; but when the flood of growth and nutriment abates, and the courses of the soul, calming down, go their own way and become steadier as time goes on, then the several circles return to their natural form, and their revolutions are corrected, and they call the same and the other by their right names, and make the possessor of them to become a rational being. And if these combine in him with any true nurture or education, he attains the fulness and health of the perfect man, and escapes the worst disease of all; but if he neglects education he walks lame to the end of his life, and returns imperfect and good for nothing to the world below. This, however, is a later stage; at present we must treat more exactly the subject before us, which involves a preliminary enquiry into the generation of the body and its members, and as to how the soul was created—for what reason and by what providence of the gods; and holding fast to probability, we must pursue our way.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "4e5cd44a83a85b5dde6b47c25552cadf619bd1106c3150d2a56068abaeed7c33",
+      "creator": "Ch`ang Ch`ien",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "A Night on the Mountain, by Ch`ang Ch`ien. Translated by L. Cranmer-Byng.",
+      "excerpt": "I sat upon the mountain-side and watched\nA tiny barque that skimmed across the lake,\nDrifting, like human destiny upon\nA world of hidden peril; then she sailed\nFrom out my ken, and mingled with the blue\nOf skies unfathomed, while the great round sun\nWeakened towards the waves.\n                             The whole expanse\nSuddenly in the half-light of the dusk\nGlimmered and waned.  The last rays of the sun\nLit but the tops of trees and mountain-peaks\nWith tarnished glory; and the water's sheen,\nOnce blue and bright, grew lustreless, and soon\nA welter of red clouds alone betrayed\nThe passing of the sun.  The scattered isles\nUprose, black-looming o'er the tranquil deeps,\nWhere the reflected heavens wanly showed\nA lingering gleam.  Already wood and hill\nSank in obscurity.  The river marge\nSeemed but a broken line to failing sight.\n\n     .    .    .    .    .\n\nNight is at hand; the night winds fret afar,\nThe North winds moan.  The waterfowl are gone\nTo cover o'er the sand-dunes; dawn alone\nShall call them from the sedges.  Some bright star\n\nMirrors her charms upon the silver shoal;\nAnd I have ta'en the lute, my only friend:\nThe vibrant chords beneath my fingers blend;\nThey sob awhile, then as they slip control\n\nImmortal memories awake, and the dead years\nThrough deathless voices answer to my strings,\nTill from the brink of Time's untarnished springs\nThe melting night recalls me with her tears.",
+      "headline": "A Night on the Mountain",
+      "key": "culture:367388463f3da7814a87d21c",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "I sat upon the mountain-side and watched",
+        "A tiny barque that skimmed across the lake,",
+        "Drifting, like human destiny upon",
+        "A world of hidden peril; then she sailed",
+        "From out my ken, and mingled with the blue",
+        "Of skies unfathomed, while the great round sun",
+        "Weakened towards the waves.",
+        "                             The whole expanse",
+        "Suddenly in the half-light of the dusk",
+        "Glimmered and waned.  The last rays of the sun",
+        "Lit but the tops of trees and mountain-peaks",
+        "With tarnished glory; and the water's sheen,",
+        "Once blue and bright, grew lustreless, and soon",
+        "A welter of red clouds alone betrayed",
+        "The passing of the sun.  The scattered isles",
+        "Uprose, black-looming o'er the tranquil deeps,",
+        "Where the reflected heavens wanly showed",
+        "A lingering gleam.  Already wood and hill",
+        "Sank in obscurity.  The river marge",
+        "Seemed but a broken line to failing sight.",
+        "",
+        "     .    .    .    .    .",
+        "",
+        "Night is at hand; the night winds fret afar,",
+        "The North winds moan.  The waterfowl are gone",
+        "To cover o'er the sand-dunes; dawn alone",
+        "Shall call them from the sedges.  Some bright star",
+        "",
+        "Mirrors her charms upon the silver shoal;",
+        "And I have ta'en the lute, my only friend:",
+        "The vibrant chords beneath my fingers blend;",
+        "They sob awhile, then as they slip control",
+        "",
+        "Immortal memories awake, and the dead years",
+        "Through deathless voices answer to my strings,",
+        "Till from the brink of Time's untarnished springs",
+        "The melting night recalls me with her tears."
+      ],
+      "provenance_id": "pg:390:poem:0bd5813e074734579169d80522a43b83e767bb2653224fff56e156a83c05925b",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "A Night on the Mountain",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-11-05",
+      "selected_on": "2026-11-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-367388463f3da7814a87d21c",
+      "path": "culture/culture-367388463f3da7814a87d21c/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "A Night on the Mountain",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-05",
+      "summary_basis": "Selected 5 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I sat upon the mountain-side and watched\nA tiny barque that skimmed across the lake,\nDrifting, like human destiny upon\nA world of hidden peril; then she sailed\nFrom out my ken, and mingled with the blue\nOf skies unfathomed, while the great round sun\nWeakened towards the waves.\n                             The whole expanse\nSuddenly in the half-light of the dusk\nGlimmered and waned.  The last rays of the sun\nLit but the tops of trees and mountain-peaks\nWith tarnished glory; and the water's sheen,\nOnce blue and bright, grew lustreless, and soon\nA welter of red clouds alone betrayed\nThe passing of the sun.  The scattered isles\nUprose, black-looming o'er the tranquil deeps,\nWhere the reflected heavens wanly showed\nA lingering gleam.  Already wood and hill\nSank in obscurity.  The river marge\nSeemed but a broken line to failing sight.\n\n     .    .    .    .    .\n\nNight is at hand; the night winds fret afar,\nThe North winds moan.  The waterfowl are gone\nTo cover o'er the sand-dunes; dawn alone\nShall call them from the sedges.  Some bright star\n\nMirrors her charms upon the silver shoal;\nAnd I have ta'en the lute, my only friend:\nThe vibrant chords beneath my fingers blend;\nThey sob awhile, then as they slip control\n\nImmortal memories awake, and the dead years\nThrough deathless voices answer to my strings,\nTill from the brink of Time's untarnished springs\nThe melting night recalls me with her tears.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Stray Birds",
+      "content_fingerprint": "fa72b0ee8250b5b4adfc5016c48bdbc29dea36915bf9fa0163af4009bfd7dae6",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "quote",
+      "deck": "From Stray Birds. Translation by Rabindranath Tagore.",
+      "excerpt": "I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp.",
+      "headline": "I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp.",
+      "key": "culture:2b52efa94a2e26d1fe0854d2",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:6524:quote:fa72b0ee8250b5b4adfc5016c48bdbc29dea36915bf9fa0163af4009bfd7dae6",
+      "publisher": "Project Gutenberg",
+      "quote_context": "I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp.",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6524"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "d4824bf4fc12bbe9b854f8d53d6d004a465e20e89fdf0c3cee22a1fd10c60074",
+      "source_locator": "1; paragraph 126 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/6524",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1916",
+      "date": "2026-11-05",
+      "selected_on": "2026-11-05",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-2b52efa94a2e26d1fe0854d2",
+      "path": "culture/culture-2b52efa94a2e26d1fe0854d2/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp.",
+          "url": "https://www.gutenberg.org/ebooks/6524",
+          "date": "1916",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-05",
+      "summary_basis": "Selected 5 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "I feel, thy beauty, dark night, like that of the loved woman when she has put out the lamp.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Necklace",
+      "art_type": "Jewelry",
+      "balance_origin": "Hungary (?)",
+      "creator": "Artist unknown",
+      "creator_origin": "Hungary (?), 18th century",
+      "culture_type": "illustration",
+      "deck": "Necklace. metal with pearls, stones and enamel.",
+      "headline": "Necklace",
+      "image_path": "assets/culture/150a629ddac05fc1c1f719c3.jpg",
+      "key": "culture:150a629ddac05fc1c1f719c3",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1920.527/1920.527_web.jpg",
+      "medium": "metal with pearls, stones and enamel",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1920.527",
+      "provenance_id": "cma:101865",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of J. H. Wade",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1920.527",
+      "work_date": "1700s",
+      "date": "2026-11-05",
+      "selected_on": "2026-11-05",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-150a629ddac05fc1c1f719c3",
+      "path": "culture/culture-150a629ddac05fc1c1f719c3/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Necklace",
+          "url": "https://clevelandart.org/art/1920.527",
+          "date": "1700s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-05",
+      "summary_basis": "Selected 5 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Captain H.S. Rawhinson (recto)",
       "art_type": "Photograph",
       "balance_origin": "India",
