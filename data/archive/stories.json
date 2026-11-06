@@ -2,6 +2,374 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Wolfgang_Amadeus_Mozart_-_Flute_Quartet_No._1_in_D_Major_-_1._Allegro.ogg",
+      "creator": "Wolfgang Amadeus Mozart",
+      "creator_origin": "Austrian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Wolfgang Amadeus Mozart. 7 minutes to listen.",
+      "duration_seconds": 430,
+      "headline": "Wolfgang Amadeus Mozart - Flute Quartet No. 1 in D Major - 1. Allegro",
+      "key": "culture:ea1fbaa6fe02f95ce8a1fb8c",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Wolfgang_Amadeus_Mozart_-_Flute_Quartet_No._1_in_D_Major_-_1._Allegro.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart",
+      "original_recording_title": "Wolfgang Amadeus Mozart - Flute Quartet No. 1 in D Major - 1. Allegro",
+      "provenance_id": "commons:9997590",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Wolfgang Amadeus Mozart",
+      "recording_description": "Flute Quartet No. 1 in D major, K.285",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Wolfgang Amadeus Mozart",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wolfgang_Amadeus_Mozart_-_Flute_Quartet_No._1_in_D_Major_-_1._Allegro.ogg",
+      "work_date": "1777",
+      "date": "2026-11-06",
+      "selected_on": "2026-11-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ea1fbaa6fe02f95ce8a1fb8c",
+      "path": "culture/culture-ea1fbaa6fe02f95ce8a1fb8c/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Wolfgang Amadeus Mozart - Flute Quartet No. 1 in D Major - 1. Allegro",
+          "url": "https://commons.wikimedia.org/wiki/File:Wolfgang_Amadeus_Mozart_-_Flute_Quartet_No._1_in_D_Major_-_1._Allegro.ogg",
+          "date": "1777",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-06",
+      "summary_basis": "Selected 6 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "2b12d3c7a6276f372fb0c4358d8e85341baceda700a8a3b979ea3b95f9390864",
+      "creator": "Sarojini Naidu",
+      "creator_origin": "Indian",
+      "culture_type": "poetry",
+      "deck": "Life, by Sarojini Naidu.",
+      "excerpt": "Children, ye have not lived, to you it seems\n  Life is a lovely stalactite of dreams,\n  Or carnival of careless joys that leap\n  About your hearts like billows on the deep\n  In flames of amber and of amethyst.\n\n  Children, ye have not lived, ye but exist\n  Till some resistless hour shall rise and move\n  Your hearts to wake and hunger after love,\n  And thirst with passionate longing for the things\n  That burn your brows with blood-red sufferings.\n\n  Till ye have battled with great grief and fears,\n  And borne the conflict of dream-shattering years,\n  Wounded with fierce desire and worn with strife,\n  Children, ye have not lived: for this is life.",
+      "headline": "Life",
+      "key": "culture:8043a2f76faeb051b481823e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Children, ye have not lived, to you it seems",
+        "  Life is a lovely stalactite of dreams,",
+        "  Or carnival of careless joys that leap",
+        "  About your hearts like billows on the deep",
+        "  In flames of amber and of amethyst.",
+        "",
+        "  Children, ye have not lived, ye but exist",
+        "  Till some resistless hour shall rise and move",
+        "  Your hearts to wake and hunger after love,",
+        "  And thirst with passionate longing for the things",
+        "  That burn your brows with blood-red sufferings.",
+        "",
+        "  Till ye have battled with great grief and fears,",
+        "  And borne the conflict of dream-shattering years,",
+        "  Wounded with fierce desire and worn with strife,",
+        "  Children, ye have not lived: for this is life."
+      ],
+      "provenance_id": "pg:680:poem:f68950e35308f90c7ed112b6f9791bfc263fc837d5cbf34b80213de782b8fa62",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1949. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "43b66624f43d0564b45974d76131a5058bd18909e6d49c12683dc8ec6216238d",
+      "source_locator": "LIFE",
+      "source_url": "https://www.gutenberg.org/ebooks/680",
+      "translator": "",
+      "work_date": "1905",
+      "date": "2026-11-06",
+      "selected_on": "2026-11-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-8043a2f76faeb051b481823e",
+      "path": "culture/culture-8043a2f76faeb051b481823e/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Life",
+          "url": "https://www.gutenberg.org/ebooks/680",
+          "date": "1905",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-06",
+      "summary_basis": "Selected 6 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Children, ye have not lived, to you it seems\n  Life is a lovely stalactite of dreams,\n  Or carnival of careless joys that leap\n  About your hearts like billows on the deep\n  In flames of amber and of amethyst.\n\n  Children, ye have not lived, ye but exist\n  Till some resistless hour shall rise and move\n  Your hearts to wake and hunger after love,\n  And thirst with passionate longing for the things\n  That burn your brows with blood-red sufferings.\n\n  Till ye have battled with great grief and fears,\n  And borne the conflict of dream-shattering years,\n  Wounded with fierce desire and worn with strife,\n  Children, ye have not lived: for this is life.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Landscape with the Town on a River and the Cottage between Trees",
+      "art_type": "Print",
+      "balance_origin": "Germany",
+      "creator": "Hanns Lautensack (German, 1524–1566)",
+      "creator_origin": "Germany",
+      "culture_type": "illustration",
+      "deck": "Landscape with the Town on a River and the Cottage between Trees. etching.",
+      "headline": "Landscape with the Town on a River and the Cottage between Trees",
+      "image_path": "assets/culture/68bfbd537d24650e53593499.jpg",
+      "key": "culture:68bfbd537d24650e53593499",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1938.386/1938.386_web.jpg",
+      "medium": "etching",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1938.386",
+      "provenance_id": "cma:117765",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Dudley P. Allen Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1938.386",
+      "work_date": "1551",
+      "date": "2026-11-06",
+      "selected_on": "2026-11-06",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-68bfbd537d24650e53593499",
+      "path": "culture/culture-68bfbd537d24650e53593499/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Landscape with the Town on a River and the Cottage between Trees",
+          "url": "https://clevelandart.org/art/1938.386",
+          "date": "1551",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-06",
+      "summary_basis": "Selected 6 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Walden",
+      "content_fingerprint": "7b5c9c1a3281d0113dbd385a491203cd900e556df458517f9757ae517889fd65",
+      "creator": "Henry David Thoreau",
+      "creator_origin": "American",
+      "culture_type": "quote",
+      "deck": "From Walden.",
+      "excerpt": "If the day and the night are such that you greet them with joy, and life emits a fragrance like flowers and sweet-scented herbs, is more elastic, more starry, more immortal,—that is your success.",
+      "headline": "If the day and the night are such that you greet them with joy, and life emits a fragrance like flowers and sweet-scented herbs, is more elastic, more starry, more immortal,—that is your success.",
+      "key": "culture:3b21f037aeacf1c13597dc5e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:205:quote:7b5c9c1a3281d0113dbd385a491203cd900e556df458517f9757ae517889fd65",
+      "publisher": "Project Gutenberg",
+      "quote_context": "If one listens to the faintest but constant suggestions of his genius, which are certainly true, he sees not to what extremes, or even insanity, it may lead him; and yet that way, as he grows more resolute and faithful, his road lies. The faintest assured objection which one healthy man feels will at length prevail over the arguments and customs of mankind. No man ever followed his genius till it misled him. Though the result were bodily weakness, yet perhaps no one can say that the consequences were to be regretted, for these were a life in conformity to higher principles. If the day and the night are such that you greet them with joy, and life emits a fragrance like flowers and sweet-scented herbs, is more elastic, more starry, more immortal,—that is your success. All nature is your congratulation, and you have cause momentarily to bless yourself. The greatest gains and values are farthest from being appreciated. We easily come to doubt if they exist. We soon forget them. They are the highest reality. Perhaps the facts most astounding and most real are never communicated by man to man. The true harvest of my daily life is somewhat as intangible and indescribable as the tints of morning or evening. It is a little star-dust caught, a segment of the rainbow which I have clutched.",
+      "rights": {
+        "basis": "Author died 1862. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ae102eeb00d51790a6b024d8b6c73d3b5cc6d63b47fea3cd532c9678a6935469",
+      "source_locator": "Economy; paragraph 350 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "translator": "",
+      "work_date": "1854",
+      "date": "2026-11-06",
+      "selected_on": "2026-11-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3b21f037aeacf1c13597dc5e",
+      "path": "culture/culture-3b21f037aeacf1c13597dc5e/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "If the day and the night are such that you greet them with joy, and life emits a fragrance like flowers and sweet-scented herbs, is more elastic, more starry, more immortal,—that is your success.",
+          "url": "https://www.gutenberg.org/ebooks/205",
+          "date": "1854",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-06",
+      "summary_basis": "Selected 6 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "If the day and the night are such that you greet them with joy, and life emits a fragrance like flowers and sweet-scented herbs, is more elastic, more starry, more immortal,—that is your success.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "If one listens to the faintest but constant suggestions of his genius, which are certainly true, he sees not to what extremes, or even insanity, it may lead him; and yet that way, as he grows more resolute and faithful, his road lies. The faintest assured objection which one healthy man feels will at length prevail over the arguments and customs of mankind. No man ever followed his genius till it misled him. Though the result were bodily weakness, yet perhaps no one can say that the consequences were to be regretted, for these were a life in conformity to higher principles. If the day and the night are such that you greet them with joy, and life emits a fragrance like flowers and sweet-scented herbs, is more elastic, more starry, more immortal,—that is your success. All nature is your congratulation, and you have cause momentarily to bless yourself. The greatest gains and values are farthest from being appreciated. We easily come to doubt if they exist. We soon forget them. They are the highest reality. Perhaps the facts most astounding and most real are never communicated by man to man. The true harvest of my daily life is somewhat as intangible and indescribable as the tints of morning or evening. It is a little star-dust caught, a segment of the rainbow which I have clutched.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "In Love With the Czarina",
+      "content_fingerprint": "0d19ff86133d580ba5ba595957641f7f76ea7a492e7dfefa2ee2b3b8896392f8",
+      "creator": "Mór Jókai",
+      "creator_origin": "Hungarian",
+      "culture_type": "text",
+      "deck": "A passage from In Love With the Czarina. Translated by Louis Felbermann.",
+      "excerpt": "In this abode of innocent virgins she was taught that the world is divided into three parts. The portion above is Paradise, which is inhabited by angels; that below is Hades, where the devils abide; and between these comes the earth, where dwell women, and heartless beings, alien to animals, and nothing more! The inhabitants of the upper and lower worlds are continually fighting one against the other, and it is the duty of the women who live on earth to pray incessantly and to glorify and honour the angels.",
+      "headline": "In Love With the Czarina · a short reading",
+      "key": "culture:28a647d63c3dcbaf83af1e22",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:34574:passage:0d19ff86133d580ba5ba595957641f7f76ea7a492e7dfefa2ee2b3b8896392f8",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1904. Translator: Louis Felbermann, died 1937. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/34574"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2dce2a32dc7503291c66c84c4c4c30f2274b5d713fee023419da2d15ea47403c",
+      "source_locator": "IN LOVE WITH THE CZARINA; paragraph 166 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/34574",
+      "translator": "Louis Felbermann",
+      "work_date": "1894 translation",
+      "date": "2026-11-06",
+      "selected_on": "2026-11-06",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-28a647d63c3dcbaf83af1e22",
+      "path": "culture/culture-28a647d63c3dcbaf83af1e22/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "In Love With the Czarina · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/34574",
+          "date": "1894 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "6 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-06",
+      "summary_basis": "Selected 6 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "In this abode of innocent virgins she was taught that the world is divided into three parts. The portion above is Paradise, which is inhabited by angels; that below is Hades, where the devils abide; and between these comes the earth, where dwell women, and heartless beings, alien to animals, and nothing more! The inhabitants of the upper and lower worlds are continually fighting one against the other, and it is the duty of the women who live on earth to pray incessantly and to glorify and honour the angels.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/63/Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3",
       "creator": "Claude Debussy",
       "creator_origin": "French",
@@ -1986,7 +2354,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-05T21:29:42.942592+00:00",
+      "affiliation_checked_at": "2026-11-06T11:13:05.001769+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -36026,7 +36394,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-05T21:29:42.942592+00:00",
+      "affiliation_checked_at": "2026-11-06T11:13:05.001769+00:00",
       "source_verified_at": "2026-10-07T18:57:25.012871+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
