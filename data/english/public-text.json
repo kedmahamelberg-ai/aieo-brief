@@ -6567,6 +6567,26 @@
       },
       "output_sha256": "5651ae61738dfa43daefccefec487c825e5f91511b07b9966dddd86c5b77b145",
       "policy": "brief-english-display-v1"
+    },
+    "18c71746a03428f4adc735db2c8776b06d6a9a4febf0900396b1e4d221c27793": {
+      "english": {
+        "0": "19. A Prayer in the Prospect of Death",
+        "1": "A poem by Robert Burns.",
+        "2": "O THOU unknown, Almighty Cause\n  Of all my hope and fear!\nIn whose dread presence, ere an hour,\n  Perhaps I must appear!\n\n\nIf I have wander’d in those paths\n  Of life I ought to shun,\nAs something, loudly, in my breast,\n  Remonstrates I have done;\n\n\nThou know’st that Thou hast formed me\n  With passions wild and strong;\nAnd list’ning to their witching voice\n  Has often led me wrong.\n\n\nWhere human weakness has come short,\n  Or frailty stept aside,\nDo Thou, All-Good-for such Thou art—\n  In shades of darkness hide.\n\n\nWhere with intention I have err’d,\n  No other plea I have,\nBut, Thou art good; and Goodness still\n  Delighteth to forgive."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "eea95436ccea6cb9712189cd1ec04005f29c3095ed4690f04c107f9d2e5eea68",
+      "policy": "brief-english-display-v1"
     }
   }
 }

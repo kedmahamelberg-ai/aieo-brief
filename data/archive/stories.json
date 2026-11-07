@@ -2,6 +2,386 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "54151ee0cae4390affbdb0d5b6e00eb288ae1a0b132936c22e3cfbcdaa69300d",
+      "creator": "Robert Burns",
+      "creator_origin": "Scottish",
+      "culture_type": "poetry",
+      "deck": "A poem by Robert Burns.",
+      "excerpt": "O THOU unknown, Almighty Cause\n  Of all my hope and fear!\nIn whose dread presence, ere an hour,\n  Perhaps I must appear!\n\n\nIf I have wander’d in those paths\n  Of life I ought to shun,\nAs something, loudly, in my breast,\n  Remonstrates I have done;\n\n\nThou know’st that Thou hast formed me\n  With passions wild and strong;\nAnd list’ning to their witching voice\n  Has often led me wrong.\n\n\nWhere human weakness has come short,\n  Or frailty stept aside,\nDo Thou, All-Good-for such Thou art—\n  In shades of darkness hide.\n\n\nWhere with intention I have err’d,\n  No other plea I have,\nBut, Thou art good; and Goodness still\n  Delighteth to forgive.",
+      "headline": "19. A Prayer in the Prospect of Death",
+      "key": "culture:9d55d3af8ec7ef0246e4bfd6",
+      "language": "Scots",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "O THOU unknown, Almighty Cause",
+        "  Of all my hope and fear!",
+        "In whose dread presence, ere an hour,",
+        "  Perhaps I must appear!",
+        "",
+        "",
+        "If I have wander’d in those paths",
+        "  Of life I ought to shun,",
+        "As something, loudly, in my breast,",
+        "  Remonstrates I have done;",
+        "",
+        "",
+        "Thou know’st that Thou hast formed me",
+        "  With passions wild and strong;",
+        "And list’ning to their witching voice",
+        "  Has often led me wrong.",
+        "",
+        "",
+        "Where human weakness has come short,",
+        "  Or frailty stept aside,",
+        "Do Thou, All-Good-for such Thou art—",
+        "  In shades of darkness hide.",
+        "",
+        "",
+        "Where with intention I have err’d,",
+        "  No other plea I have,",
+        "But, Thou art good; and Goodness still",
+        "  Delighteth to forgive."
+      ],
+      "provenance_id": "poetrydb:Robert Burns:19. A Prayer in the Prospect of Death",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1796.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ca368ce4f0e5f6736afc835b47f5a5d78f8c19986449e5194abdb1825620fd2b",
+      "source_locator": "19. A Prayer in the Prospect of Death",
+      "source_url": "https://poetrydb.org/title/19.%20A%20Prayer%20in%20the%20Prospect%20of%20Death:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1796",
+      "date": "2026-11-07",
+      "selected_on": "2026-11-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9d55d3af8ec7ef0246e4bfd6",
+      "path": "culture/culture-9d55d3af8ec7ef0246e4bfd6/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "19. A Prayer in the Prospect of Death",
+          "url": "https://poetrydb.org/title/19.%20A%20Prayer%20in%20the%20Prospect%20of%20Death:abs/lines.text",
+          "date": "Before 1796",
+          "language": "Scots"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-07",
+      "summary_basis": "Selected 7 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "O THOU unknown, Almighty Cause\n  Of all my hope and fear!\nIn whose dread presence, ere an hour,\n  Perhaps I must appear!\n\n\nIf I have wander’d in those paths\n  Of life I ought to shun,\nAs something, loudly, in my breast,\n  Remonstrates I have done;\n\n\nThou know’st that Thou hast formed me\n  With passions wild and strong;\nAnd list’ning to their witching voice\n  Has often led me wrong.\n\n\nWhere human weakness has come short,\n  Or frailty stept aside,\nDo Thou, All-Good-for such Thou art—\n  In shades of darkness hide.\n\n\nWhere with intention I have err’d,\n  No other plea I have,\nBut, Thou art good; and Goodness still\n  Delighteth to forgive.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/38/Prelude_in_G_minor%2C_Op._23%2C_No._5%2C_by_Sergei_Rachmaninoff.oga",
+      "creator": "Sergei Rachmaninoff",
+      "creator_origin": "Russian–American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Sergei Rachmaninoff. 4 minutes to listen.",
+      "duration_seconds": 249,
+      "headline": "Prelude in G minor, Op. 23, No. 5, by Sergei Rachmaninoff",
+      "key": "culture:9a450071d7e0ad9ff48d9b39",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Prelude_in_G_minor%2C_Op._23%2C_No._5%2C_by_Sergei_Rachmaninoff.oga",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "original_recording_title": "Prelude in G minor, Op. 23, No. 5, by Sergei Rachmaninoff",
+      "provenance_id": "commons:9790820",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Sergei Rachmaninoff",
+      "recording_description": "Prelude in G minor",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Sergei Rachmaninoff",
+        "label": "CC BY-SA 3.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Prelude_in_G_minor,_Op._23,_No._5,_by_Sergei_Rachmaninoff.oga",
+      "work_date": "3/20/10",
+      "date": "2026-11-07",
+      "selected_on": "2026-11-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9a450071d7e0ad9ff48d9b39",
+      "path": "culture/culture-9a450071d7e0ad9ff48d9b39/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Prelude in G minor, Op. 23, No. 5, by Sergei Rachmaninoff",
+          "url": "https://commons.wikimedia.org/wiki/File:Prelude_in_G_minor,_Op._23,_No._5,_by_Sergei_Rachmaninoff.oga",
+          "date": "3/20/10",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-07",
+      "summary_basis": "Selected 7 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Walden",
+      "content_fingerprint": "8c11e3372383544e4dc9412b66fc2392f46c39b3a45d987922a56ade50d608a4",
+      "creator": "Henry David Thoreau",
+      "creator_origin": "American",
+      "culture_type": "text",
+      "deck": "A passage from Walden.",
+      "excerpt": "If we knew all the laws of Nature, we should need only one fact, or the description of one actual phenomenon, to infer all the particular results at that point. Now we know only a few laws, and our result is vitiated, not, of course, by any confusion or irregularity in Nature, but by our ignorance of essential elements in the calculation. Our notions of law and harmony are commonly confined to those instances which we detect; but the harmony which results from a far greater number of seemingly conflicting, but really concurring, laws, which we have not detected, is still more wonderful. The particular laws are as our points of view, as, to the traveller, a mountain outline varies with every step, and it has an infinite number of profiles, though absolutely but one form. Even when cleft or bored through it is not comprehended in its entireness.",
+      "headline": "Walden · a short reading",
+      "key": "culture:447d3cd49cf607a326fb6267",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:205:passage:8c11e3372383544e4dc9412b66fc2392f46c39b3a45d987922a56ade50d608a4",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1862. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ae102eeb00d51790a6b024d8b6c73d3b5cc6d63b47fea3cd532c9678a6935469",
+      "source_locator": "Economy; paragraph 460 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "translator": "",
+      "work_date": "1854",
+      "date": "2026-11-07",
+      "selected_on": "2026-11-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-447d3cd49cf607a326fb6267",
+      "path": "culture/culture-447d3cd49cf607a326fb6267/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Walden · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/205",
+          "date": "1854",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-07",
+      "summary_basis": "Selected 7 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "If we knew all the laws of Nature, we should need only one fact, or the description of one actual phenomenon, to infer all the particular results at that point. Now we know only a few laws, and our result is vitiated, not, of course, by any confusion or irregularity in Nature, but by our ignorance of essential elements in the calculation. Our notions of law and harmony are commonly confined to those instances which we detect; but the harmony which results from a far greater number of seemingly conflicting, but really concurring, laws, which we have not detected, is still more wonderful. The particular laws are as our points of view, as, to the traveller, a mountain outline varies with every step, and it has an infinite number of profiles, though absolutely but one form. Even when cleft or bored through it is not comprehended in its entireness.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "art_type": "Painting",
+      "balance_origin": "Eastern India",
+      "creator": "Artist unknown",
+      "creator_origin": "Eastern India, Bihar, Vikramashila Monastery. Paintings: Nepal, Kathmandu",
+      "culture_type": "illustration",
+      "deck": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra). Covers: Gum tempera, colors, and paper on wood; pages: gum tempera and ink on palm leaves.",
+      "headline": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "image_path": "assets/culture/07cfbc75045982acb63b18cd.jpg",
+      "key": "culture:07cfbc75045982acb63b18cd",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1938.301.b/1938.301.b_web.jpg",
+      "medium": "Covers: Gum tempera, colors, and paper on wood; pages: gum tempera and ink on palm leaves",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1938.301.b",
+      "provenance_id": "cma:539040",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1938.301.b",
+      "work_date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+      "date": "2026-11-07",
+      "selected_on": "2026-11-07",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-07cfbc75045982acb63b18cd",
+      "path": "culture/culture-07cfbc75045982acb63b18cd/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Ratnasambhava, Akshobhya, Vairochana with attendants, Amitabha, and Amoghasiddhi, Top cover, from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+          "url": "https://clevelandart.org/art/1938.301.b",
+          "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-07",
+      "summary_basis": "Selected 7 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "6dde75eedca73165517f24f88e120ad07e8d2e509e26998d66e31fcb5bf54e81",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "quote",
+      "deck": "From Tao Te Ching. Translation by James Legge.",
+      "excerpt": "There are few in the world who attain to the teaching without words, and the advantage arising from non-action.",
+      "headline": "There are few in the world who attain to the teaching without words, and the advantage arising from non-action.",
+      "key": "culture:03dc8d2e8ed9d11e62e1bc8b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:quote:6dde75eedca73165517f24f88e120ad07e8d2e509e26998d66e31fcb5bf54e81",
+      "publisher": "Project Gutenberg",
+      "quote_context": "There are few in the world who attain to the teaching without words, and the advantage arising from non-action.",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 144 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-11-07",
+      "selected_on": "2026-11-07",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-03dc8d2e8ed9d11e62e1bc8b",
+      "path": "culture/culture-03dc8d2e8ed9d11e62e1bc8b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "There are few in the world who attain to the teaching without words, and the advantage arising from non-action.",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "7 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-07",
+      "summary_basis": "Selected 7 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "There are few in the world who attain to the teaching without words, and the advantage arising from non-action.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "There are few in the world who attain to the teaching without words, and the advantage arising from non-action.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Wolfgang_Amadeus_Mozart_-_Flute_Quartet_No._1_in_D_Major_-_1._Allegro.ogg",
       "creator": "Wolfgang Amadeus Mozart",
       "creator_origin": "Austrian",
@@ -2354,7 +2734,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-06T20:57:00.642583+00:00",
+      "affiliation_checked_at": "2026-11-07T10:29:55.025243+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -36394,7 +36774,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-06T20:57:00.642583+00:00",
+      "affiliation_checked_at": "2026-11-07T10:29:55.025243+00:00",
       "source_verified_at": "2026-11-06T20:57:00.642583+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
