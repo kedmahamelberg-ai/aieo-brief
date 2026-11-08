@@ -2,6 +2,370 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "cf0bb56dafef888019abb42bffc7834868633dad461767ec4c897c494abd28ab",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "The spurious wise, however, all the priests, the world-weary, and those whose souls are of feminine and servile nature—oh, how hath their game all along abused selfishness!",
+      "headline": "The spurious wise, however, all the priests, the world-weary, and those whose souls are of feminine and servile nature—oh, how hath their game all along abused selfishness!",
+      "key": "culture:ab213e634c246a9b7c14e164",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:cf0bb56dafef888019abb42bffc7834868633dad461767ec4c897c494abd28ab",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The spurious wise, however, all the priests, the world-weary, and those whose souls are of feminine and servile nature—oh, how hath their game all along abused selfishness!",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 2378 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-11-08",
+      "selected_on": "2026-11-08",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ab213e634c246a9b7c14e164",
+      "path": "culture/culture-ab213e634c246a9b7c14e164/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The spurious wise, however, all the priests, the world-weary, and those whose souls are of feminine and servile nature—oh, how hath their game all along abused selfishness!",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "8 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-08",
+      "summary_basis": "Selected 8 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The spurious wise, however, all the priests, the world-weary, and those whose souls are of feminine and servile nature—oh, how hath their game all along abused selfishness!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The spurious wise, however, all the priests, the world-weary, and those whose souls are of feminine and servile nature—oh, how hath their game all along abused selfishness!",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Herbaceous Peony",
+      "art_type": "Painting",
+      "balance_origin": "China",
+      "creator": "Yun Shouping (Chinese, 1633–1690)",
+      "creator_origin": "China, Qing dynasty (1644-1911)",
+      "culture_type": "illustration",
+      "deck": "Herbaceous Peony. Hanging scroll; ink and color on silk.",
+      "headline": "Herbaceous Peony",
+      "image_path": "assets/culture/a7b40618eec6c5be96bc6e4c.jpg",
+      "key": "culture:a7b40618eec6c5be96bc6e4c",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1967.192/1967.192_web.jpg",
+      "medium": "Hanging scroll; ink and color on silk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1967.192",
+      "provenance_id": "cma:143237",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of the American Foundation for the Maud E. and Warren H. Corning Botanical Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1967.192",
+      "work_date": "1685",
+      "date": "2026-11-08",
+      "selected_on": "2026-11-08",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-a7b40618eec6c5be96bc6e4c",
+      "path": "culture/culture-a7b40618eec6c5be96bc6e4c/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Herbaceous Peony",
+          "url": "https://clevelandart.org/art/1967.192",
+          "date": "1685",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "8 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-08",
+      "summary_basis": "Selected 8 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "adb0f1a4b070cce7eaf77dd6a6ee1d9fa60b68106655558e518cb3f0adbd7dae",
+      "creator": "Walt Whitman",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Walt Whitman.",
+      "excerpt": "1\nAS the time draws nigh, glooming, a cloud,\nA dread beyond, of I know not what, darkens me.\n\nI shall go forth,\nI shall traverse The States awhile—but I cannot tell whither or how long;\nPerhaps soon, some day or night while I am singing, my voice will suddenly cease.\n\n2\nO book, O chants! must all then amount to but this?\nMust we barely arrive at this beginning of us?... And yet it is enough, O soul!\nO soul! we have positively appear’d—that is enough.",
+      "headline": "As the Time Draws Nigh.",
+      "key": "culture:48c8a4eb6b2a451c82ba1c0c",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "1",
+        "AS the time draws nigh, glooming, a cloud,",
+        "A dread beyond, of I know not what, darkens me.",
+        "",
+        "I shall go forth,",
+        "I shall traverse The States awhile—but I cannot tell whither or how long;",
+        "Perhaps soon, some day or night while I am singing, my voice will suddenly cease.",
+        "",
+        "2",
+        "O book, O chants! must all then amount to but this?",
+        "Must we barely arrive at this beginning of us?... And yet it is enough, O soul!",
+        "O soul! we have positively appear’d—that is enough."
+      ],
+      "provenance_id": "poetrydb:Walt Whitman:As the Time Draws Nigh.",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1892.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "90c0c51ef7c68c0db0f482b8b7801af9ebf0c7dd4a2a4ac2b840b28051f32cfe",
+      "source_locator": "As the Time Draws Nigh.",
+      "source_url": "https://poetrydb.org/title/As%20the%20Time%20Draws%20Nigh.:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1892",
+      "date": "2026-11-08",
+      "selected_on": "2026-11-08",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-48c8a4eb6b2a451c82ba1c0c",
+      "path": "culture/culture-48c8a4eb6b2a451c82ba1c0c/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "As the Time Draws Nigh.",
+          "url": "https://poetrydb.org/title/As%20the%20Time%20Draws%20Nigh.:abs/lines.text",
+          "date": "Before 1892",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "8 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-08",
+      "summary_basis": "Selected 8 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "1\nAS the time draws nigh, glooming, a cloud,\nA dread beyond, of I know not what, darkens me.\n\nI shall go forth,\nI shall traverse The States awhile—but I cannot tell whither or how long;\nPerhaps soon, some day or night while I am singing, my voice will suddenly cease.\n\n2\nO book, O chants! must all then amount to but this?\nMust we barely arrive at this beginning of us?... And yet it is enough, O soul!\nO soul! we have positively appear’d—that is enough.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/0/06/Lysenko-Zaporozky_march.ogg",
+      "creator": "Mykola Lysenko",
+      "creator_origin": "Ukrainian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Mykola Lysenko. 3 minutes to listen.",
+      "duration_seconds": 186,
+      "headline": "Lysenko-Zaporozky march",
+      "key": "culture:3e5d2fb4201edd5e91453d11",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/0/06/Lysenko-Zaporozky_march.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Mykola_Lysenko",
+      "original_recording_title": "Lysenko-Zaporozky march",
+      "provenance_id": "commons:38972476",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "A1",
+      "recording_description": "Микола Лисенко. Запорозький марш. Виконує Андрій Бондаренко",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "A1",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://commons.wikimedia.org/wiki/File:Lysenko-Zaporozky_march.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lysenko-Zaporozky_march.ogg",
+      "work_date": "2015-03-15",
+      "date": "2026-11-08",
+      "selected_on": "2026-11-08",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3e5d2fb4201edd5e91453d11",
+      "path": "culture/culture-3e5d2fb4201edd5e91453d11/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Lysenko-Zaporozky march",
+          "url": "https://commons.wikimedia.org/wiki/File:Lysenko-Zaporozky_march.ogg",
+          "date": "2015-03-15",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "8 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-08",
+      "summary_basis": "Selected 8 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Eugénie Grandet",
+      "content_fingerprint": "c32425303690979ab36c85e8576764c01947f5e0421737f37576b10bd69bc7a5",
+      "creator": "Honoré de Balzac",
+      "creator_origin": "French",
+      "culture_type": "text",
+      "deck": "A passage from Eugénie Grandet. Translated by Katharine Prescott Wormeley.",
+      "excerpt": "“Now, Monsieur Bergerin,” said Grandet, “you are a man of honor, are not you? I trust to you! Come and see my wife how and when you think necessary. Save my good wife! I love her,--don’t you see?--though I never talk about it; I keep things to myself. I’m full of trouble. Troubles began when my brother died; I have to spend enormous sums on his affairs in Paris. Why, I’m paying through my nose; there’s no end to it. Adieu, monsieur! If you can save my wife, save her. I’ll spare no expense, not even if it costs me a hundred or two hundred francs.”",
+      "headline": "Eugénie Grandet · a short reading",
+      "key": "culture:1b629f77b59e8ac8680a6664",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1715:passage:c32425303690979ab36c85e8576764c01947f5e0421737f37576b10bd69bc7a5",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1850. Translator: Katharine Prescott Wormeley, died 1908. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1715"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "182b3c1b93397e8c37119f0d997da010cc3b9976fabb5d447e43ac0c744c689f",
+      "source_locator": "EUGENIE GRANDET; paragraph 1215 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1715",
+      "translator": "Katharine Prescott Wormeley",
+      "work_date": "1895 translation",
+      "date": "2026-11-08",
+      "selected_on": "2026-11-08",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-1b629f77b59e8ac8680a6664",
+      "path": "culture/culture-1b629f77b59e8ac8680a6664/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Eugénie Grandet · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/1715",
+          "date": "1895 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "8 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-08",
+      "summary_basis": "Selected 8 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "“Now, Monsieur Bergerin,” said Grandet, “you are a man of honor, are not you? I trust to you! Come and see my wife how and when you think necessary. Save my good wife! I love her,--don’t you see?--though I never talk about it; I keep things to myself. I’m full of trouble. Troubles began when my brother died; I have to spend enormous sums on his affairs in Paris. Why, I’m paying through my nose; there’s no end to it. Adieu, monsieur! If you can save my wife, save her. I’ll spare no expense, not even if it costs me a hundred or two hundred francs.”",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "54151ee0cae4390affbdb0d5b6e00eb288ae1a0b132936c22e3cfbcdaa69300d",
       "creator": "Robert Burns",
       "creator_origin": "Scottish",
@@ -2734,7 +3098,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-07T19:29:11.645940+00:00",
+      "affiliation_checked_at": "2026-11-08T10:37:02.763539+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -36774,7 +37138,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-07T19:29:11.645940+00:00",
+      "affiliation_checked_at": "2026-11-08T10:37:02.763539+00:00",
       "source_verified_at": "2026-11-06T20:57:00.642583+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
