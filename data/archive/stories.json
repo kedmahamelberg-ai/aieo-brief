@@ -4291,8 +4291,8 @@
       "key": "event:91aa2239-be4b-40e1-817a-0c4a79792a9f",
       "event_id": "91aa2239-be4b-40e1-817a-0c4a79792a9f",
       "kind": "news",
-      "slug": "development-91aa2239-be4b-40e1-817a-0c4a79792a9f",
-      "path": "story/development-91aa2239-be4b-40e1-817a-0c4a79792a9f/index.html",
+      "slug": "acting-permanent-representative-embassy-uruguay-he-intelligence-center",
+      "path": "story/acting-permanent-representative-embassy-uruguay-he-intelligence-center/index.html",
       "headline": "The Acting Permanent Representative of the embassy in Uruguay, He Fei, visited the Uruguayan National Artificial Intelligence Center",
       "original_headline": "The Acting Permanent Representative of the embassy in Uruguay, He Fei, visited the Uruguayan National Artificial Intelligence Center",
       "deck": "Reporting from 中华人民共和国外交部. Open the source for the article.",
@@ -4333,7 +4333,11 @@
       "has_editorial": false,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
-      "period_end": "2026-11-08"
+      "period_end": "2026-11-08",
+      "legacy_paths": [
+        "story/development-91aa2239-be4b-40e1-817a-0c4a79792a9f/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:62c140c0-0730-41c1-aab8-34108af3c519",
@@ -7089,7 +7093,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-09T09:28:41.593114+00:00",
+      "affiliation_checked_at": "2026-11-09T09:34:35.860505+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -41388,7 +41392,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-09T09:20:02.627007+00:00",
+      "affiliation_checked_at": "2026-11-09T09:34:35.860505+00:00",
       "source_verified_at": "2026-11-06T20:57:00.642583+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

@@ -6746,6 +6746,26 @@
       },
       "output_sha256": "d0f8c1ed1f5bc0a8f95da1af5641e8dcc9bab9e8412ce948318b1cd1963058c5",
       "policy": "brief-english-display-v1"
+    },
+    "bbf5f4d197ad8d946c56cecddf727d57b6f36f4dc0b9c6bc0824cefb9e5e1862": {
+      "english": {
+        "0": "Reporting from the Ministry of Foreign Affairs of the People's Republic of China. Open the source for the article.",
+        "1": "Ministry of Foreign Affairs of the People's Republic of China",
+        "2": "Ministry of Foreign Affairs of the People's Republic of China"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cc40fe3d092885ebe85e00b09f40c8a2ac15a2d2bf67caa7a9ffb9f5bd295ecd",
+      "policy": "brief-english-display-v1"
     }
   }
 }

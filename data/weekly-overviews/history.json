@@ -11,122 +11,360 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "The weekly news review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "title": "A Neighborly View of the Week With a Small Question in Mind",
+        "deck": "The satirical column questions AI productivity promises and who bears the cost. The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain.",
+        "summary": "The satirical column questions AI productivity promises and who bears the cost. The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain. A blue book on AI and media outlines opportunities and risks and calls for ethical use. A Paris conference frames AI as a speed tool where human choices still guide meaning. Le Mans coverage shows AI assisting data work and strategy but not yet dictating car design.",
+        "scope_note": "Five selected stories from five discovery markets.",
+        "word_count": 97,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
-        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
-        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
-        "image_credit": "NPS Photo / Tim Rains",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
-        "image_rights": "Public domain · Full Granting Rights",
+        "image_path": "assets/culture/a51ce6212342f36607ba88c9.jpg",
+        "image_alt": "Bahram Gur Arrives at the House of a Merchant, text page (recto); Bahram Gur Slays a Dragon (verso), from a Shahnama (Book of Kings) of Firdausi (940–1019 or 1025), known as the Great Mongol Shahnama",
+        "image_caption": "Bahram Gur Arrives at the House of a Merchant, text page (recto); Bahram Gur Slays a Dragon (verso), from a Shahnama (Book of Kings) of Firdausi (940–1019 or 1025), known as the Great Mongol Shahnama",
+        "image_credit": "Artist unknown · Cleveland Museum of Art",
+        "image_source_url": "https://clevelandart.org/art/1943.658",
+        "image_rights": "CC0 image",
         "entries": [
-          {
-            "code": "CN",
-            "name": "China",
-            "count": 22,
-            "topic": "Business And Investment",
-            "sentence": "China: business and investment stood out in the selected coverage; one example was “Xinhua reports AI+Media blue book at World Media Summit highlights mixed….”",
-            "story": {
-              "headline": "Xinhua reports AI+Media blue book at World Media Summit highlights mixed gains and cautious, ethical path",
-              "path": "story/xinhua-ai-media-blue-book-world-ethical-path/index.html",
-              "publisher": "Xinhua Net",
-              "source_url": "https://www.news.cn/world/20261107/06211935e00248f2b3eeef224ebbb8d4/c.html"
-            }
-          },
           {
             "code": "US",
             "name": "United States",
-            "count": 13,
-            "topic": "Rules And Rights",
-            "sentence": "United States: selected reporting leaned toward rules and rights, with “Satirical column questions AI productivity promises and job security” as one visible signal.",
+            "topic": "Work & skills",
             "story": {
+              "path": "story/development-5977c536-b34d-40a0-92be-46e4c51b1a63/index.html",
               "headline": "Satirical column questions AI productivity promises and job security",
-              "path": "story/cranky-don-joe-questions-ai-s-feel-risk/index.html",
-              "publisher": "MinneapoliMedia",
-              "source_url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/397519/saturday-morning-cranky-don-joe-artificial-intelligence-supposed-make"
-            }
-          },
-          {
-            "code": "GB",
-            "name": "United Kingdom",
-            "count": 12,
-            "topic": "Everyday Use",
-            "sentence": "United Kingdom: everyday use stood out in the selected coverage; one example was “Is AI Already a Factor in Le Mans, According to Teams….”",
-            "story": {
-              "headline": "Is AI Already a Factor in Le Mans, According to Teams and Experts?",
-              "path": "story/ai-already-factor-le-mans-according-teams-experts/index.html",
-              "publisher": "24 Heures du Mans",
-              "source_url": "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
-            }
-          },
-          {
-            "code": "FR",
-            "name": "France",
-            "count": 15,
-            "topic": "Rules And Rights",
-            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Sciences Po Researchers Warn AI Will Shape 2027 Election, But With….”",
-            "story": {
-              "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
-              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
-              "publisher": "Sciences Po",
-              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+              "publisher": "MinneapoliMedia"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 28,
-            "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Sciences Po Researchers Warn AI Will Shape 2027 Election, But With….”",
+            "topic": "Work & skills",
             "story": {
-              "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
-              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
-              "publisher": "Sciences Po",
-              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+              "path": "story/development-4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8/index.html",
+              "headline": "Australian Reserve Bank Says AI Has Not Yet Raised Productivity or Cut Jobs",
+              "publisher": "Zonebourse Suisse"
+            }
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "topic": "Culture & creativity",
+            "story": {
+              "path": "story/development-3516d3aa-a46d-464a-ac5d-07970de54584/index.html",
+              "headline": "Xinhua reports AI+Media blue book at World Media Summit highlights mixed gains and cautious, ethical path",
+              "publisher": "新华网"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "topic": "Culture & creativity",
+            "story": {
+              "path": "story/development-8520c0a7-7500-49b3-918d-ed09feb6f220/index.html",
+              "headline": "Animation and Generative AI: A Creator Speaks on Mass Production and Meaning",
+              "publisher": "Ville de Paris"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "topic": "Everyday life",
+            "story": {
+              "path": "story/development-1dd8c701-0073-4e51-a6d0-1940fb420919/index.html",
+              "headline": "Is AI Already a Factor in Le Mans, According to Teams and Experts?",
+              "publisher": "24 Heures du Mans"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "pending",
-        "prose": [],
-        "papers": [],
-        "pending_reason": "generation_pending",
-        "input_hash": "4a75ffdad7fc7880367169bfe53809649fd3f4817759284008090e600121d891",
-        "attempts": 0
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "prose": [
+          [
+            {
+              "text": "The satirical column questions AI productivity promises and who bears the cost.",
+              "source_key": "event:5977c536-b34d-40a0-92be-46e4c51b1a63",
+              "path": "story/development-5977c536-b34d-40a0-92be-46e4c51b1a63/index.html"
+            },
+            {
+              "text": "The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain.",
+              "source_key": "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8",
+              "path": "story/development-4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8/index.html"
+            }
+          ],
+          [
+            {
+              "text": "A blue book on AI and media outlines opportunities and risks and calls for ethical use.",
+              "source_key": "event:3516d3aa-a46d-464a-ac5d-07970de54584",
+              "path": "story/development-3516d3aa-a46d-464a-ac5d-07970de54584/index.html"
+            },
+            {
+              "text": "A Paris conference frames AI as a speed tool where human choices still guide meaning.",
+              "source_key": "event:8520c0a7-7500-49b3-918d-ed09feb6f220",
+              "path": "story/development-8520c0a7-7500-49b3-918d-ed09feb6f220/index.html"
+            }
+          ],
+          [
+            {
+              "text": "Le Mans coverage shows AI assisting data work and strategy but not yet dictating car design.",
+              "source_key": "event:1dd8c701-0073-4e51-a6d0-1940fb420919",
+              "path": "story/development-1dd8c701-0073-4e51-a6d0-1940fb420919/index.html"
+            }
+          ]
+        ],
+        "source_hashes": {
+          "event:5977c536-b34d-40a0-92be-46e4c51b1a63": "f928aaffe0b65112e752cd4b31293d91e82e3db0a864a4a27cae9ba5a5cbb84b",
+          "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8": "d0312a7cd5e59019925a0029de41ee22306469244ae9f1d8d70e87c5b423bf80",
+          "event:3516d3aa-a46d-464a-ac5d-07970de54584": "6c1e43decf8b5e77fe5f77e18057d594d534f0cd071e842ec657dc8b02115613",
+          "event:8520c0a7-7500-49b3-918d-ed09feb6f220": "355701ffb78e37d596790f94ab906691754a6f6a0a7d6e52ace19b84be0f5e6a",
+          "event:1dd8c701-0073-4e51-a6d0-1940fb420919": "8cff1446c1176299df3cf8b5865d5877779b3c6ef21019c0182df6b80b939762"
+        },
+        "image_key": "culture:a51ce6212342f36607ba88c9",
+        "image_work_key": "e9747ae0b4f3b8f270660b7a1b01b04b9c04044870e1508652446ed6a095477d",
+        "image_reason": "The landscape evokes patient motion through a shifting environment, mirroring the week s measured progression and human guidance.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "human_approved": true
       },
       "research": {
         "kind": "research",
         "eyebrow": "THE RESEARCH COMPASS",
-        "title": "The weekly research review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "title": "Two small robots, careful steps in the home",
+        "deck": "This week began with Pixel gliding across a kitchen tile, learning from sensorized demonstrations and its own trial runs in ordinary spaces. It shows broad skills for mobile manipulation but there are clear gaps when stairs, touch sensing, or long term planning come into play.",
+        "summary": "This week began with Pixel gliding across a kitchen tile, learning from sensorized demonstrations and its own trial runs in ordinary spaces. It shows broad skills for mobile manipulation but there are clear gaps when stairs, touch sensing, or long term planning come into play. Pixel-UMI adds a layer of safety by relying on scene data and on policy corrections guided by human demonstrations, but it is still limited by a single depth view that can miss hidden surfaces and by approximate contact force signals. The thread here is simple and gentle: affordable robots may take on routine tasks in real spaces, yet reliability and sensing in the shadows remain unsettled, leaving room for careful progress rather than quick leaps.",
+        "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
+        "word_count": 143,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
-        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
-        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
-        "image_credit": "Neal Herbert / NPS",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
-        "image_rights": "Public domain · Full Granting Rights",
-        "papers": [],
+        "image_path": "assets/culture/d65ac8570d1927998fb7cdae.jpg",
+        "image_alt": "A Mounted Prince Hunting Lion in a Rocky Landscape",
+        "image_caption": "A Mounted Prince Hunting Lion in a Rocky Landscape",
+        "image_credit": "Khem Karan (Indian) · Cleveland Museum of Art",
+        "image_source_url": "https://clevelandart.org/art/2013.310",
+        "image_rights": "CC0 image",
+        "papers": [
+          {
+            "key": "paper:1f57be72ebcab286d54f6980",
+            "doi": "",
+            "arxiv_id": "2611.03648v1",
+            "original_headline": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
+            "url": "https://arxiv.org/abs/2611.03648v1",
+            "date": "2026-11-02",
+            "authors": [
+              "Tony Tao",
+              "Jason Jingzhou Liu",
+              "Ruslan Salakhutdinov",
+              "Deepak Pathak"
+            ],
+            "institutions": [
+              "Carnegie Mellon University",
+              "*Equal contribution"
+            ],
+            "affiliation_source_url": "https://arxiv.org/html/2611.03648v1",
+            "affiliation_checked_at": "2026-11-03T19:32:14.401748+00:00",
+            "affiliation_fallback_checked_at": "2026-11-03T19:32:14.401748+00:00",
+            "affiliation_fallback_version": "arxiv-author-v3",
+            "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
+            "publisher": "arXiv",
+            "source": "arxiv",
+            "research_label": "Preprint",
+            "evidence_scope": "paper_text",
+            "access": "Open paper",
+            "journal_reference": "",
+            "metadata_sha256": "e568d6e4419f531f8552868241b1f49e54dbd96804d789616d650507db6afcdc",
+            "pdf_url": "https://arxiv.org/pdf/2611.03648v1",
+            "has_editorial": true,
+            "headline": "Low-cost robot learns tasks but has important limits",
+            "deck": "An affordable mobile robot and learning tools show what cost-conscious robots can do in everyday spaces, while noting current gaps.",
+            "what_happened": "Pixel, a cheap mobile robot with simple hardware and learning software, learned mobile manipulation from both sensorized human demonstrations and robot teleoperation. It shows broad skills but has task-based gaps and limits that depend on task and environment in real spaces.",
+            "why_it_matters": "This suggests cheaper robots can take on many everyday tasks, but safety, reliability, and planning over longer times still need fixes before wide use is possible.",
+            "body_paragraphs": [
+              "Pixel uses a cheap robot and several ways to learn from people and from the robot itself. The goal is to learn safely in normal spaces.",
+              "In practice, a business could use cheaper robots for routine tasks, while gaps like stairs, touch sensing, and long-term planning still need work."
+            ],
+            "limitation": "Preprint status; not yet peer-reviewed.",
+            "summary_basis": "Summary of the paper",
+            "reading_minutes": 1,
+            "claim_status": "study",
+            "summary_status": "ready",
+            "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+            "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+            "editorial_engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+            "research_reading_version": "paper-practitioner-v1",
+            "pdf_reader_version": 2,
+            "html_reader_version": 1,
+            "full_text_status": "read",
+            "full_text_retry_after": "2026-11-10",
+            "paper_text_sha256": "7f29e3e9d07e324dee73daebc9e2e6f167cc23794806abaf091bc51dfab2177f",
+            "paper_pages": 33,
+            "kind": "research",
+            "slug": "paper-1f57be72ebcab286d54f6980",
+            "path": "research/paper-1f57be72ebcab286d54f6980/index.html",
+            "source_count": 1,
+            "sources": [
+              {
+                "publisher": "arXiv",
+                "headline": "Pixel: A Co-Designed Full-Stack Robot System for Learning General-Purpose Mobile Manipulation",
+                "url": "https://arxiv.org/abs/2611.03648v1",
+                "date": "2026-11-02",
+                "language": "en"
+              }
+            ],
+            "display_date": "2 Nov 2026",
+            "markets": [],
+            "market_label": "Research",
+            "topic": "research",
+            "topic_label": "Science & research",
+            "human_direction": "unresolved",
+            "ai_direction": "unresolved",
+            "for_humans": "",
+            "for_ai": "",
+            "human_label": "",
+            "ai_label": "",
+            "evidence_complete": false,
+            "display_scope": "",
+            "edition": "2026-11",
+            "label": "Preprint"
+          },
+          {
+            "key": "paper:6ad5a095eb5166eb01b8a925",
+            "doi": "",
+            "arxiv_id": "2611.03647v1",
+            "original_headline": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
+            "url": "https://arxiv.org/abs/2611.03647v1",
+            "date": "2026-11-02",
+            "authors": [
+              "Jason Jingzhou Liu",
+              "Tony Tao",
+              "Deepak Pathak",
+              "Ruslan Salakhutdinov"
+            ],
+            "institutions": [
+              "Carnegie Mellon University",
+              "∗Equal contribution"
+            ],
+            "affiliation_source_url": "https://arxiv.org/html/2611.03647v1",
+            "affiliation_checked_at": "2026-11-03T19:32:14.401748+00:00",
+            "affiliation_fallback_checked_at": "2026-11-03T19:32:14.401748+00:00",
+            "affiliation_fallback_version": "arxiv-author-v3",
+            "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
+            "publisher": "arXiv",
+            "source": "arxiv",
+            "research_label": "Preprint",
+            "evidence_scope": "paper_text",
+            "access": "Open paper",
+            "journal_reference": "",
+            "metadata_sha256": "e37482cb9eda652720fe0987ae9e77ee0e35625dca6f846651795f6b13b404d1",
+            "pdf_url": "https://arxiv.org/pdf/2611.03647v1",
+            "has_editorial": true,
+            "headline": "Robots learn obstacle avoidance from human demos, but miss hidden surfaces",
+            "deck": "A robot learns obstacle avoidance from scene data and demos, but head-mounted depth can miss hidden surfaces.",
+            "what_happened": "The robot learned from demonstrations recorded with a head-mounted camera. It builds a 3D map from depth data, then retargets human motions to avoid obstacles. The system also masks views that don’t match well, and real-time adjustments helped some tasks.",
+            "why_it_matters": "This suggests robots can learn safe moves in cluttered spaces from shared sensor data and demos, but sensing gaps and weak force feedback stay risks.",
+            "body_paragraphs": [
+              "Offline scene data help shape the robot’s posture to avoid obstacles while following demonstrations. It relies on one depth view and can miss hidden surfaces.",
+              "On-policy corrections add real-world tweaks to the robot’s motions, showing that small human-guided adjustments can improve performance over time without changing the whole task."
+            ],
+            "limitation": "Delay-calibrated action labels are approximate and cannot capture exact contact forces. The offline data uses a single head-mounted depth camera, which may miss occluded or moving surfaces.",
+            "summary_basis": "Summary of the paper",
+            "reading_minutes": 1,
+            "claim_status": "study",
+            "summary_status": "ready",
+            "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+            "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+            "editorial_engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+            "research_reading_version": "paper-practitioner-v1",
+            "pdf_reader_version": 2,
+            "html_reader_version": 1,
+            "full_text_status": "read",
+            "full_text_retry_after": "2026-11-10",
+            "paper_text_sha256": "ab4844b4635325f462665d51dd41b877782da73369ac78fb05cdf93f75e6391d",
+            "paper_pages": 15,
+            "kind": "research",
+            "slug": "paper-6ad5a095eb5166eb01b8a925",
+            "path": "research/paper-6ad5a095eb5166eb01b8a925/index.html",
+            "source_count": 1,
+            "sources": [
+              {
+                "publisher": "arXiv",
+                "headline": "Pixel-UMI: Learning Environment-Aware Whole-Body Manipulation from Sensorized Human Demonstrations",
+                "url": "https://arxiv.org/abs/2611.03647v1",
+                "date": "2026-11-02",
+                "language": "en"
+              }
+            ],
+            "display_date": "2 Nov 2026",
+            "markets": [],
+            "market_label": "Research",
+            "topic": "research",
+            "topic_label": "Science & research",
+            "human_direction": "unresolved",
+            "ai_direction": "unresolved",
+            "for_humans": "",
+            "for_ai": "",
+            "human_label": "",
+            "ai_label": "",
+            "evidence_complete": false,
+            "display_scope": "",
+            "edition": "2026-11",
+            "label": "Preprint"
+          }
+        ],
         "paper_count": 6,
         "affiliation_verified_count": 4,
         "editorial_version": "kedma-weekly-v10",
-        "status": "pending",
-        "prose": [],
-        "pending_reason": "generation_pending",
-        "input_hash": "419f01fc8709e8f1171883875688c43cbe4699f6938abb5a7f3fae8fd8099571",
-        "attempts": 0
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "prose": [
+          [
+            {
+              "text": "This week began with Pixel gliding across a kitchen tile, learning from sensorized demonstrations and its own trial runs in ordinary spaces. It shows broad skills for mobile manipulation but there are clear gaps when stairs, touch sensing, or long term planning come into play.",
+              "source_key": "paper:1f57be72ebcab286d54f6980",
+              "path": "research/paper-1f57be72ebcab286d54f6980/index.html"
+            }
+          ],
+          [
+            {
+              "text": "Pixel-UMI adds a layer of safety by relying on scene data and on policy corrections guided by human demonstrations, but it is still limited by a single depth view that can miss hidden surfaces and by approximate contact force signals.",
+              "source_key": "paper:6ad5a095eb5166eb01b8a925",
+              "path": "research/paper-6ad5a095eb5166eb01b8a925/index.html"
+            }
+          ],
+          [
+            {
+              "text": "The thread here is simple and gentle: affordable robots may take on routine tasks in real spaces, yet reliability and sensing in the shadows remain unsettled, leaving room for careful progress rather than quick leaps.",
+              "source_key": "",
+              "path": ""
+            }
+          ]
+        ],
+        "source_hashes": {
+          "paper:1f57be72ebcab286d54f6980": "ee56a3b32f1d8713664d85e15e78a719e29f45da3dc064a4f8dc0108284001cb",
+          "paper:6ad5a095eb5166eb01b8a925": "6b4ce91d05c1a58d9ed7d3b8aea56e6171420f99b1010b5c8159cc1393913832"
+        },
+        "image_key": "culture:d65ac8570d1927998fb7cdae",
+        "image_work_key": "617ba9aeefcae9c3cc29e27757a5c2b28d0217b959a9b03bac708f5106987782",
+        "image_reason": "A rugged landscape mirrors the robot task in real spaces, where gains are uneven and paths must be found.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "human_approved": true
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "pending",
-      "content_sha256": "dd4d1fbc01de63632572d70532bee845b3891660a24da3e735f286c612009412"
+      "editorial_status": "ready",
+      "content_sha256": "f4dde16414db1e8d1b74a7830b6306332a26faf919fe10937f61f8f4ef24dee5"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
