@@ -19,13 +19,11 @@
     },
     "2026-W45": {
       "publication_week": "2026-W46",
-      "status": "WITHHELD_PENDING_CORRECTED_REVIEW",
-      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42596252167/artifacts/13663438247",
-      "run_id": "42596252167",
-      "review_revision": 2,
-      "created_at": "2026-11-09T10:53:30.671188+01:00",
-      "withheld_reason": "Final copy audit found the Substack post mentions a research selection without linking it and subject tags need topic matching.",
-      "withheld_at": "2026-11-09"
+      "status": "DRAFT_NOT_APPROVED_DO_NOT_PUBLISH",
+      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42597575148/artifacts/13664825642",
+      "run_id": "42597575148",
+      "review_revision": 3,
+      "created_at": "2026-11-09T11:03:48.612407+01:00"
     }
   },
   "review_history": {
@@ -46,6 +44,16 @@
         "run_id": "42592551314",
         "created_at": "2026-11-09T10:24:45.040146+01:00",
         "withheld_reason": "Source and visual audit found future-event copy, an editorial promoted as News, unsupported five-market wording, and geographically misleading/repetitive stock photographs.",
+        "withheld_at": "2026-11-09"
+      },
+      {
+        "publication_week": "2026-W46",
+        "status": "WITHHELD_PENDING_CORRECTED_REVIEW",
+        "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42596252167/artifacts/13663438247",
+        "run_id": "42596252167",
+        "review_revision": 2,
+        "created_at": "2026-11-09T10:53:30.671188+01:00",
+        "withheld_reason": "Final copy audit found the Substack post mentions a research selection without linking it and subject tags need topic matching.",
         "withheld_at": "2026-11-09"
       }
     ]
