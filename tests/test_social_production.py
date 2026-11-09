@@ -74,7 +74,7 @@ class SocialProduction(unittest.TestCase):
   audit=json.loads((ROOT/'config/social-source-audit-2026-W45.json').read_text())
   self.assertEqual(len(audit['selected_news']),14)
   self.assertTrue(set(audit['selected_news']).issubset(scopes['topics']))
-  self.assertTrue(all(scope['queries'] and scope['title_pattern'] and scope['kind'] in ('place','subject') for scope in scopes['topics'].values()))
+  self.assertTrue(all((scope.get('queries') or scope.get('preferred_files')) and scope['title_pattern'] and scope['kind'] in ('place','subject') for scope in scopes['topics'].values()))
  def test_complete_schedule_and_media_contract(self):
   topics=social.topic_plan(self.items,date(2026,10,26),self.news)
   self.assertEqual(len(topics),15);self.assertEqual(len({t['path'] for t in topics}),15)
