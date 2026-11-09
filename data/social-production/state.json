@@ -19,10 +19,12 @@
     },
     "2026-W45": {
       "publication_week": "2026-W46",
-      "status": "DRAFT_NOT_APPROVED_DO_NOT_PUBLISH",
+      "status": "WITHHELD_PENDING_CORRECTED_REVIEW",
       "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42592551314/artifacts/13662167875",
       "run_id": "42592551314",
-      "created_at": "2026-11-09T10:24:45.040146+01:00"
+      "created_at": "2026-11-09T10:24:45.040146+01:00",
+      "withheld_reason": "Source and visual audit found future-event copy, an editorial promoted as News, unsupported five-market wording, and geographically misleading/repetitive stock photographs.",
+      "withheld_at": "2026-11-09"
     }
   },
   "review_history": {
