@@ -38,7 +38,8 @@ class SocialProduction(unittest.TestCase):
  def test_w45_review_revision_replaces_image_risk_without_repeating_later_weeks(self):
   rows=[dict(row,edition='2026-W45',period_start='2026-11-02',period_end='2026-11-08') for row in self.items]
   self.assertTrue(social.due(rows,{'editions':{'2026-W45':{}}},date(2026,11,9))[0])
-  self.assertFalse(social.due(rows,{'editions':{'2026-W45':{'review_revision':2}}},date(2026,11,9))[0])
+  self.assertTrue(social.due(rows,{'editions':{'2026-W45':{'review_revision':2}}},date(2026,11,9))[0])
+  self.assertFalse(social.due(rows,{'editions':{'2026-W45':{'review_revision':3}}},date(2026,11,9))[0])
  def test_old_and_unfinished_editions_cannot_be_new_content(self):
   self.assertFalse(social.due(self.items,{},date(2026,11,2))[0])
   with self.assertRaises(ValueError):social.due(self.items,{},date(2026,10,25))
@@ -60,6 +61,8 @@ class SocialProduction(unittest.TestCase):
   paper=next(topic for topic in topics if topic['kind']=='Research')
   self.assertIn('153 reconstructed website environments',paper['fact'])
   self.assertNotIn('performed best',paper['fact'])
+  medical=next(topic for topic in topics if 'ultrasound' in topic['path'])
+  self.assertEqual(medical['second_subject_tag'],'#HealthAI')
  def test_complete_schedule_and_media_contract(self):
   topics=social.topic_plan(self.items,date(2026,10,26),self.news)
   self.assertEqual(len(topics),15);self.assertEqual(len({t['path'] for t in topics}),15)
@@ -68,6 +71,7 @@ class SocialProduction(unittest.TestCase):
    batch=social.build(topics,{},Path(d),'2026-W43',date(2026,10,19),date(2026,10,25),date(2026,10,26))
   self.assertEqual(len(batch['items']),60)
   self.assertEqual(batch['status'],social.STATUS)
+  self.assertIn('research/one/index.html',batch['substack_post']['body'])
   for i in batch['items']:
    self.assertTrue(i['scheduled_at'].endswith('+01:00'))
    self.assertEqual(len(i['prepared_carousel_assets']),3 if i['platform'] in ['facebook','instagram'] else 1)
