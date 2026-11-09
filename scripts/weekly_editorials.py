@@ -541,14 +541,20 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
                                  'summary': '', 'prose': [], 'scope_note': '', 'word_count': 0,
                                  'papers': [], 'pending_reason': 'approved_sources_changed'}
                 print('::warning::Weekly ' + kind + ' review is pending because approved sources changed.')
+                if not allow_model:
+                    continue
+                # A private review run must be able to replace an approval
+                # whose source fingerprint is stale. The public build above
+                # remains pending until the replacement is owner approved.
+                reviewed = {}
+            if reviewed:
+                validate_section(reviewed)
+                validate_citation_alignment(reviewed['prose'], [available[key] for key in reviewed['source_hashes']])
+                if not reviewed.get('human_approved'):
+                    raise ValueError('weekly_human_approval_missing_marker')
+                current[kind] = copy.deepcopy(reviewed)
+                usage_history.append({kind: current[kind]})
                 continue
-            validate_section(reviewed)
-            validate_citation_alignment(reviewed['prose'], [available[key] for key in reviewed['source_hashes']])
-            if not reviewed.get('human_approved'):
-                raise ValueError('weekly_human_approval_missing_marker')
-            current[kind] = copy.deepcopy(reviewed)
-            usage_history.append({kind: current[kind]})
-            continue
         old = previous.get(kind, {})
         if ready_valid(old, available):
             validate_section(old)
