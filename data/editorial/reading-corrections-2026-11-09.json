@@ -326,8 +326,9 @@
         "why_it_matters": "The team hopes the tool could help clinicians choose next steps, but the project is still in development and has not shown a patient-care benefit.",
         "for_humans": "UCF hopes the proposed tool could help physicians make kidney-care decisions; no clinical benefit has been measured.",
         "for_ai": "The team plans to build a model that links scans with patient records and explains its answers; its performance has not yet been reported.",
-        "ai_label": "Benefits reported",
-        "limitation": "A funded development project; no model validation or patient-care outcome is reported."
+        "ai_label": "Potential benefits",
+        "limitation": "A funded development project; no model validation or patient-care outcome is reported.",
+        "human_label": "Potential benefits"
       }
     },
     {
