@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 13,
             "topic": "Rules And Rights",
-            "sentence": "United States: selected reporting leaned toward rules and rights, with “Satirical column questions AI productivity promises and job security” as one visible signal.",
+            "sentence": "United States: selected reporting leaned toward rules and rights, with “Human-services CEO asks whether AI could improve care” as one visible signal.",
             "story": {
-              "headline": "Satirical column questions AI productivity promises and job security",
-              "path": "story/cranky-don-joe-questions-ai-s-feel-risk/index.html",
-              "publisher": "MinneapoliMedia",
-              "source_url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/397519/saturday-morning-cranky-don-joe-artificial-intelligence-supposed-make"
+              "headline": "Human-services CEO asks whether AI could improve care",
+              "path": "story/little-friends-artificial-intelligence-human-services-think-about/index.html",
+              "publisher": "Positively Naperville",
+              "source_url": "https://www.positivelynaperville.com/2026/11/04/little-friends-artificial-intelligence-and-human-services-a-lot-to-think-about/162345"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 15,
             "topic": "Rules And Rights",
-            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Sciences Po Researchers Warn AI Will Shape 2027 Election, But With….”",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “AFPDC 2026 Colloquium Frames AI as Human Support, Warns of Limits.”",
             "story": {
-              "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
-              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
-              "publisher": "Sciences Po",
-              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+              "headline": "AFPDC 2026 Colloquium Frames AI as Human Support, Warns of Limits",
+              "path": "story/colloque-artificial-intelligence-friendly-intelligence-theme-conference-afpdc/index.html",
+              "publisher": "Éditions Francis Lefebvre",
+              "source_url": "https://www.efl.fr/actualite/colloque-intelligence-artificielle-and-intelligence-amiable-theme-colloque-annuel-2026-afpdc_fb6fd204c-0c45-4e1f-8dec-f891c28178e4"
             }
           },
           {
@@ -329,7 +329,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "95946698eb3fc29de9a07a81802bcb9d4a60c46aba7f4652e8f767ed99876409"
+      "content_sha256": "bbe5561b22747ffa873a3293ce31217692713c308e52aea149fdc643c5ba4965"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
