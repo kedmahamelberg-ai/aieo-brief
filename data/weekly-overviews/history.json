@@ -11,127 +11,92 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "A Neighborly View of the Week With a Small Question in Mind",
-        "deck": "The satirical column questions AI productivity promises and who bears the cost. The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain.",
-        "summary": "The satirical column questions AI productivity promises and who bears the cost. The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain. A blue book on AI and media outlines opportunities and risks and calls for ethical use. A Paris conference frames AI as a speed tool where human choices still guide meaning. Le Mans coverage shows AI assisting data work and strategy but not yet dictating car design.",
-        "scope_note": "Five selected stories from five discovery markets.",
-        "word_count": 97,
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
         "reading_minutes": 1,
-        "image_path": "assets/culture/a51ce6212342f36607ba88c9.jpg",
-        "image_alt": "Bahram Gur Arrives at the House of a Merchant, text page (recto); Bahram Gur Slays a Dragon (verso), from a Shahnama (Book of Kings) of Firdausi (940–1019 or 1025), known as the Great Mongol Shahnama",
-        "image_caption": "Bahram Gur Arrives at the House of a Merchant, text page (recto); Bahram Gur Slays a Dragon (verso), from a Shahnama (Book of Kings) of Firdausi (940–1019 or 1025), known as the Great Mongol Shahnama",
-        "image_credit": "Artist unknown · Cleveland Museum of Art",
-        "image_source_url": "https://clevelandart.org/art/1943.658",
-        "image_rights": "CC0 image",
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
         "entries": [
-          {
-            "code": "US",
-            "name": "United States",
-            "topic": "Work & skills",
-            "story": {
-              "path": "story/development-5977c536-b34d-40a0-92be-46e4c51b1a63/index.html",
-              "headline": "Satirical column questions AI productivity promises and job security",
-              "publisher": "MinneapoliMedia"
-            }
-          },
-          {
-            "code": "CA",
-            "name": "Canada",
-            "topic": "Work & skills",
-            "story": {
-              "path": "story/development-4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8/index.html",
-              "headline": "Australian Reserve Bank Says AI Has Not Yet Raised Productivity or Cut Jobs",
-              "publisher": "Zonebourse Suisse"
-            }
-          },
           {
             "code": "CN",
             "name": "China",
-            "topic": "Culture & creativity",
+            "count": 22,
+            "topic": "Business And Investment",
+            "sentence": "China: business and investment stood out in the selected coverage; one example was “Xinhua reports AI+Media blue book at World Media Summit highlights mixed….”",
             "story": {
-              "path": "story/development-3516d3aa-a46d-464a-ac5d-07970de54584/index.html",
               "headline": "Xinhua reports AI+Media blue book at World Media Summit highlights mixed gains and cautious, ethical path",
-              "publisher": "新华网"
+              "path": "story/xinhua-ai-media-blue-book-world-ethical-path/index.html",
+              "publisher": "Xinhua Net",
+              "source_url": "https://www.news.cn/world/20261107/06211935e00248f2b3eeef224ebbb8d4/c.html"
             }
           },
           {
-            "code": "FR",
-            "name": "France",
-            "topic": "Culture & creativity",
+            "code": "US",
+            "name": "United States",
+            "count": 13,
+            "topic": "Rules And Rights",
+            "sentence": "United States: selected reporting leaned toward rules and rights, with “Satirical column questions AI productivity promises and job security” as one visible signal.",
             "story": {
-              "path": "story/development-8520c0a7-7500-49b3-918d-ed09feb6f220/index.html",
-              "headline": "Animation and Generative AI: A Creator Speaks on Mass Production and Meaning",
-              "publisher": "Ville de Paris"
+              "headline": "Satirical column questions AI productivity promises and job security",
+              "path": "story/cranky-don-joe-questions-ai-s-feel-risk/index.html",
+              "publisher": "MinneapoliMedia",
+              "source_url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/397519/saturday-morning-cranky-don-joe-artificial-intelligence-supposed-make"
             }
           },
           {
             "code": "GB",
             "name": "United Kingdom",
-            "topic": "Everyday life",
+            "count": 12,
+            "topic": "Everyday Use",
+            "sentence": "United Kingdom: everyday use stood out in the selected coverage; one example was “Is AI Already a Factor in Le Mans, According to Teams….”",
             "story": {
-              "path": "story/development-1dd8c701-0073-4e51-a6d0-1940fb420919/index.html",
               "headline": "Is AI Already a Factor in Le Mans, According to Teams and Experts?",
-              "publisher": "24 Heures du Mans"
+              "path": "story/ai-already-factor-le-mans-according-teams-experts/index.html",
+              "publisher": "24 Heures du Mans",
+              "source_url": "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 15,
+            "topic": "Rules And Rights",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Sciences Po Researchers Warn AI Will Shape 2027 Election, But With….”",
+            "story": {
+              "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
+              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
+              "publisher": "Sciences Po",
+              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 28,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Sciences Po Researchers Warn AI Will Shape 2027 Election, But With….”",
+            "story": {
+              "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
+              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
+              "publisher": "Sciences Po",
+              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "ready",
-        "author": "Kedma Hamelberg",
-        "prose": [
-          [
-            {
-              "text": "The satirical column questions AI productivity promises and who bears the cost.",
-              "source_key": "event:5977c536-b34d-40a0-92be-46e4c51b1a63",
-              "path": "story/development-5977c536-b34d-40a0-92be-46e4c51b1a63/index.html"
-            },
-            {
-              "text": "The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain.",
-              "source_key": "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8",
-              "path": "story/development-4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8/index.html"
-            }
-          ],
-          [
-            {
-              "text": "A blue book on AI and media outlines opportunities and risks and calls for ethical use.",
-              "source_key": "event:3516d3aa-a46d-464a-ac5d-07970de54584",
-              "path": "story/development-3516d3aa-a46d-464a-ac5d-07970de54584/index.html"
-            },
-            {
-              "text": "A Paris conference frames AI as a speed tool where human choices still guide meaning.",
-              "source_key": "event:8520c0a7-7500-49b3-918d-ed09feb6f220",
-              "path": "story/development-8520c0a7-7500-49b3-918d-ed09feb6f220/index.html"
-            }
-          ],
-          [
-            {
-              "text": "Le Mans coverage shows AI assisting data work and strategy but not yet dictating car design.",
-              "source_key": "event:1dd8c701-0073-4e51-a6d0-1940fb420919",
-              "path": "story/development-1dd8c701-0073-4e51-a6d0-1940fb420919/index.html"
-            }
-          ]
-        ],
-        "source_hashes": {
-          "event:5977c536-b34d-40a0-92be-46e4c51b1a63": "f928aaffe0b65112e752cd4b31293d91e82e3db0a864a4a27cae9ba5a5cbb84b",
-          "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8": "d0312a7cd5e59019925a0029de41ee22306469244ae9f1d8d70e87c5b423bf80",
-          "event:3516d3aa-a46d-464a-ac5d-07970de54584": "6c1e43decf8b5e77fe5f77e18057d594d534f0cd071e842ec657dc8b02115613",
-          "event:8520c0a7-7500-49b3-918d-ed09feb6f220": "355701ffb78e37d596790f94ab906691754a6f6a0a7d6e52ace19b84be0f5e6a",
-          "event:1dd8c701-0073-4e51-a6d0-1940fb420919": "8cff1446c1176299df3cf8b5865d5877779b3c6ef21019c0182df6b80b939762"
-        },
-        "image_key": "culture:a51ce6212342f36607ba88c9",
-        "image_work_key": "e9747ae0b4f3b8f270660b7a1b01b04b9c04044870e1508652446ed6a095477d",
-        "image_reason": "The landscape evokes patient motion through a shifting environment, mirroring the week s measured progression and human guidance.",
-        "review_checks": {
-          "grounded": true,
-          "clear_high_school_language": true,
-          "coherent_prose": true,
-          "meaningful_connection": true,
-          "source_limits_preserved": true,
-          "no_invented_personal_experience": true,
-          "image_metaphor_supported": true
-        },
-        "human_approved": true
+        "status": "pending",
+        "author": "",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "approved_sources_changed"
       },
       "research": {
         "kind": "research",
@@ -363,8 +328,8 @@
         "human_approved": true
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "ready",
-      "content_sha256": "f4dde16414db1e8d1b74a7830b6306332a26faf919fe10937f61f8f4ef24dee5"
+      "editorial_status": "pending",
+      "content_sha256": "95946698eb3fc29de9a07a81802bcb9d4a60c46aba7f4652e8f767ed99876409"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
