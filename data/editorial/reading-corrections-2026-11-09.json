@@ -278,6 +278,35 @@
       "after": {
         "for_ai": "Teams describe AI tools helping analyse race data, with limits on what the tools can decide; no race-winning effect is established."
       }
+    },
+    {
+      "key": "event:eab4592c-7b02-4e3a-9d56-b3f89fefdcf8",
+      "event_id": "eab4592c-7b02-4e3a-9d56-b3f89fefdcf8",
+      "reason": "The first-person human-services column discusses a possible use of AI and asks whether it would improve care; it does not report an achieved program outcome or an AI/operator benefit.",
+      "source_urls": [
+        "https://www.positivelynaperville.com/2026/11/04/little-friends-artificial-intelligence-and-human-services-a-lot-to-think-about/162345"
+      ],
+      "after": {
+        "headline": "Human-services CEO asks whether AI could improve care",
+        "deck": "A Little Friends CEO considers using AI to reduce administrative work while keeping human contact central; no care outcome is measured.",
+        "what_happened": "In a first-person column, the CEO of Little Friends reflects on AI presentations and says his organization should evaluate whether AI could free staff time for direct care.",
+        "why_it_matters": "The column frames a question for human-services organizations: whether proposed efficiency gains would actually improve care for clients.",
+        "body_paragraphs": [
+          "The author says the organization has much to evaluate before using AI in its work. He hopes administrative tasks could take less time, but says human contact and responsibility to clients should remain central.",
+          "The column does not report that Little Friends has implemented an AI system or measured better care."
+        ],
+        "for_humans": "AI might reduce administrative work, but the author worries about preserving human contact; care benefits have not been measured.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and downsides",
+        "for_ai": "The column reports no separate gain or downside for AI systems or their operators.",
+        "ai_direction": "none",
+        "ai_label": "No direction stated",
+        "claim_status": "opinion",
+        "limitation": "A first-person opinion column about possible future use, not a measured care outcome."
+      },
+      "source_fingerprints": {
+        "76ffc2f42d2d0fa955b50cbdc3dde225": "a1442995a6e66c9729db41b27814d3c3338c71087e2c149d420b4bf04b28849f"
+      }
     }
   ],
   "research": []
