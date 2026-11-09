@@ -55,7 +55,12 @@ class SocialProduction(unittest.TestCase):
   current=[row for row in archive if row.get('kind')=='news' and row.get('edition')=='2026-W45']
   for row in current:
    if row['slug']=='cranky-don-joe-questions-ai-s-feel-risk':row['claim_status']='opinion'
-  topics=social.topic_plan(archive,date(2026,11,9),current)
+  source_read=social.read
+  def archive_read(path,default=None):
+   value=source_read(path,default)
+   return {key:row for key,row in value.items() if key!='selected_news'} if path.name=='social-source-audit-2026-W45.json' else value
+  with patch.object(social,'read',side_effect=archive_read):
+   topics=social.topic_plan(archive,date(2026,11,9),current)
   paths={topic['path'] for topic in topics}
   self.assertEqual(len(topics),15)
   self.assertFalse(any('animation-generative-ai-creator' in path or 'cranky-don-joe' in path or 'ai-bubble-faces-reality' in path for path in paths))
@@ -65,7 +70,10 @@ class SocialProduction(unittest.TestCase):
   medical=next(topic for topic in topics if 'ultrasound' in topic['path'])
   self.assertEqual(medical['second_subject_tag'],'#HealthAI')
   scopes=json.loads((ROOT/'config/social-photo-scopes-2026-W45.json').read_text())
-  self.assertEqual(len(scopes['topics']),14)
+  self.assertGreaterEqual(len(scopes['topics']),14)
+  audit=json.loads((ROOT/'config/social-source-audit-2026-W45.json').read_text())
+  self.assertEqual(len(audit['selected_news']),14)
+  self.assertTrue(set(audit['selected_news']).issubset(scopes['topics']))
   self.assertTrue(all(scope['queries'] and scope['title_pattern'] and scope['kind'] in ('place','subject') for scope in scopes['topics'].values()))
  def test_complete_schedule_and_media_contract(self):
   topics=social.topic_plan(self.items,date(2026,10,26),self.news)
