@@ -125,6 +125,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add "data/weekly-overviews/approved/$RELEASE_ID.json"
+          if [[ -d data/weekly-overviews/approved/archive ]]; then git add data/weekly-overviews/approved/archive/; fi
           git commit -m "Publish owner-approved weekly overview $RELEASE_ID"
           git pull --rebase origin main
           git push origin HEAD:main
