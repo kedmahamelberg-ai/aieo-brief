@@ -200,6 +200,84 @@
         "ai_label": "No direction stated",
         "limitation": "A legal commentary citing several court decisions; the judgments were not independently reviewed for this summary."
       }
+    },
+    {
+      "key": "event:4ee76cdf-87ba-4783-a509-edfd1d22a77a",
+      "event_id": "4ee76cdf-87ba-4783-a509-edfd1d22a77a",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://www.ledevoir.com/economie/1022894/ia-fait-vaciller-bourses-mondiales-apres-elections-mi-mandat"
+      ],
+      "after": {
+        "for_humans": "Le Devoir reports losses for stock investors amid concerns about AI regulation and slower technology spending; this does not establish a broader employment effect.",
+        "for_ai": "The report describes falling AI-related company valuations and concern about data-centre investment. It does not show a change in deployed AI system performance."
+      }
+    },
+    {
+      "key": "event:45ad1e7a-6eca-4ff0-9cf4-cb3a8bd95f5d",
+      "event_id": "45ad1e7a-6eca-4ff0-9cf4-cb3a8bd95f5d",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://www.news.cn/liangzi/20261106/6cbbb0fbea5248aebb553372a728bee7/c.html"
+      ],
+      "after": {
+        "for_ai": "Xinhua reports companies using AI for manufacturing design and inspection, including claimed time and cost savings. These are reported operating results, not independently verified system benchmarks."
+      }
+    },
+    {
+      "key": "event:38a9de29-2483-42ab-af1a-99fc74677bb5",
+      "event_id": "38a9de29-2483-42ab-af1a-99fc74677bb5",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://ici.radio-canada.ca/nouvelle/2298701/intelligence-artificielle-arts-graphisme-musique-peinture-acadie"
+      ],
+      "after": {
+        "for_ai": "The report describes AI entering creative work, but does not quantify a separate benefit to AI providers or system performance."
+      }
+    },
+    {
+      "key": "event:36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
+      "event_id": "36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://eglise.catholique.fr/conference-des-eveques-de-france/cef/assemblees-plenieres/assemblee-eveques-france-novembre-2026/574181-intervention-pere-thierry-magnin-intelligence-artificielle"
+      ],
+      "after": {
+        "for_ai": "The speaker discusses possible educational uses and risks of AI tools; these are arguments, not measured outcomes for AI systems or providers."
+      }
+    },
+    {
+      "key": "event:294e54fb-2c38-4baf-abf1-7e59cdefcb99",
+      "event_id": "294e54fb-2c38-4baf-abf1-7e59cdefcb99",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://www.bbc.com/zhongwen/articles/cqlyeen0z8x2o/simp"
+      ],
+      "after": {
+        "for_ai": "The BBC describes falling technology shares and uncertainty about AI investment and regulation; it does not report a measured change in AI system performance."
+      }
+    },
+    {
+      "key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+      "event_id": "171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/06/first-thing-tech-stocks-ai-regulation-midterms"
+      ],
+      "after": {
+        "for_ai": "The Guardian reports pressure on AI-related company valuations and fears of slower data-centre spending; the future investment effect is uncertain."
+      }
+    },
+    {
+      "key": "event:62c140c0-0730-41c1-aab8-34108af3c519",
+      "event_id": "62c140c0-0730-41c1-aab8-34108af3c519",
+      "reason": "The published W45 directional label needs a source-scoped reading rather than a blank or generic benefits sentence.",
+      "source_urls": [
+        "https://www.24h-lemans.com/fr/actualites/l-intelligence-artificielle-deja-indispensable-pour-gagner-les-24-heures-du-mans-60756"
+      ],
+      "after": {
+        "for_ai": "Teams describe AI tools helping analyse race data, with limits on what the tools can decide; no race-winning effect is established."
+      }
     }
   ],
   "research": []
