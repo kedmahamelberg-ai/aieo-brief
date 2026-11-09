@@ -107,12 +107,12 @@
         "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
         "word_count": 143,
         "reading_minutes": 1,
-        "image_path": "assets/culture/d65ac8570d1927998fb7cdae.jpg",
-        "image_alt": "A Mounted Prince Hunting Lion in a Rocky Landscape",
-        "image_caption": "A Mounted Prince Hunting Lion in a Rocky Landscape",
-        "image_credit": "Khem Karan (Indian) · Cleveland Museum of Art",
-        "image_source_url": "https://clevelandart.org/art/2013.310",
-        "image_rights": "CC0 image",
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "Milky Way and stars reflected on a backcountry lake in Yellowstone National Park; an illustrative night landscape, not a robot test image",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park — illustrative photograph",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
         "papers": [
           {
             "key": "paper:1f57be72ebcab286d54f6980",
@@ -315,7 +315,7 @@
         },
         "image_key": "culture:d65ac8570d1927998fb7cdae",
         "image_work_key": "617ba9aeefcae9c3cc29e27757a5c2b28d0217b959a9b03bac708f5106987782",
-        "image_reason": "A rugged landscape mirrors the robot task in real spaces, where gains are uneven and paths must be found.",
+        "image_reason": "The open landscape suggests exploration; the photograph is illustrative and does not show the robotics experiments.",
         "review_checks": {
           "grounded": true,
           "clear_high_school_language": true,
@@ -329,7 +329,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "bbe5561b22747ffa873a3293ce31217692713c308e52aea149fdc643c5ba4965"
+      "content_sha256": "593e00f75bfd7bf653d564abeb7579845a125cf427568d2a5cee5ebf823a824d"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
