@@ -16,6 +16,6 @@
     "story/left-alliance-finland-claims-can-lead-despite-controversy/index.html": {"queries": ["Helsinki skyline", "Helsinki cityscape", "Helsinki buildings"], "title_pattern": "Helsinki", "kind": "place"},
     "story/open-chinese-ai-models-dominate-token-temps-finds/index.html": {"queries": ["data center server racks", "data centre server room", "server racks"], "title_pattern": "server|data cent", "kind": "subject"},
     "story/ai-productivity-driver-which-firms-benefit-limits-appear/index.html": {"queries": ["office computer desk", "office computers", "workplace computer"], "title_pattern": "office|workplace|computer", "kind": "subject"},
-    "story/ai-regulation-market-risk-contrepoints-warns-stocks-slide/index.html": {"queries": ["Wall Street New York", "New York stock exchange building", "Wall Street buildings"], "title_pattern": "Wall Street|New York Stock Exchange", "kind": "subject"}
+    "story/ai-misuse-artificial-intelligence-can-result-abusive-recourse/index.html": {"queries": ["French courthouse", "Palais de Justice Paris", "tribunal France"], "title_pattern": "courthouse|tribunal|court|Palais de Justice", "kind": "subject"}
   }
 }
