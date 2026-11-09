@@ -209,8 +209,15 @@ def new_photos(topics, history, output, release):
         scope = scoped.get(topic['path'], {})
         searches = scope.get('queries') or [queries[market]]
         pattern = scope.get('title_pattern') or (r'skyline|cityscape|landscape' if market == 'GLOBAL' else re.escape(COUNTRIES[market]))
-        for query in searches:
-            params = dict(action='query', generator='search', gsrsearch=query+' -painting -drawing -map', gsrnamespace=6, gsrlimit=100, prop='imageinfo', iiprop='url|size|mime|extmetadata', iiurlwidth=1400, format='json')
+        lookups = [('file', name) for name in scope.get('preferred_files', [])]
+        if not scope.get('only_preferred'):
+            lookups += [('search', query) for query in searches]
+        for lookup_kind, query in lookups:
+            params = dict(action='query', prop='imageinfo', iiprop='url|size|mime|extmetadata', iiurlwidth=1400, format='json')
+            if lookup_kind == 'file':
+                params['titles'] = query if query.startswith('File:') else 'File:' + query
+            else:
+                params.update(generator='search', gsrsearch=query+' -painting -drawing -map', gsrnamespace=6, gsrlimit=100)
             data = json.loads(fetch('https://commons.wikimedia.org/w/api.php?' + urlencode(params)))
             candidates = sorted(data.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 999))
             for page in candidates:
