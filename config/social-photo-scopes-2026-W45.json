@@ -14,8 +14,8 @@
     "story/vietnamese-cinema-gains-ai-lecourrier-notes-limits-responsibilities/index.html": {"queries": ["film camera", "movie camera", "cinema projector"], "title_pattern": "film camera|movie camera|cinema projector|film projector", "kind": "subject"},
     "story/ai-already-factor-le-mans-according-teams-experts/index.html": {"queries": ["Le Mans circuit", "Circuit de la Sarthe", "motor racing circuit"], "title_pattern": "Le Mans|Sarthe|racing circuit|race track", "kind": "subject"},
     "story/left-alliance-finland-claims-can-lead-despite-controversy/index.html": {"queries": ["Helsinki skyline", "Helsinki cityscape", "Helsinki buildings"], "title_pattern": "Helsinki", "kind": "place"},
-    "story/open-chinese-ai-models-dominate-token-temps-finds/index.html": {"queries": ["data center server racks", "data centre server room", "server racks"], "title_pattern": "server|data cent", "kind": "subject"},
-    "story/ai-productivity-driver-which-firms-benefit-limits-appear/index.html": {"queries": ["office computer desk", "office computers", "workplace computer"], "title_pattern": "office|workplace|computer", "kind": "subject"},
+    "story/china-accelerating-full-range-empowerment-artificial-intelligence-various-industries/index.html": {"queries": ["Shenzhen skyline", "Shenzhen cityscape", "Shenzhen buildings"], "title_pattern": "Shenzhen", "kind": "place"},
+    "story/newfoundland-cultural-sector-faces-ai/index.html": {"queries": ["St John's Newfoundland skyline", "Newfoundland coastline", "Newfoundland landscape"], "title_pattern": "Newfoundland|St. John's|St Johns", "kind": "place"},
     "story/ai-misuse-artificial-intelligence-can-result-abusive-recourse/index.html": {"queries": ["French courthouse", "Palais de Justice Paris", "tribunal France"], "title_pattern": "courthouse|tribunal|court|Palais de Justice", "kind": "subject"}
   }
 }
