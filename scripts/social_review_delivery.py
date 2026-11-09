@@ -151,15 +151,16 @@ def review_html(batch, folder, artifact_url, *, image_mode='data', review_url=''
 
 def email_content(batch, folder, artifact_url, review_url=''):
     esc = html.escape
+    has_photos = any(item.get('photo_rights') for item in batch['items'])
     body = ['<h1>The Brief social approval batch ' + esc(batch['publishing_week']) + '</h1>',
             '<p><strong>DRAFT · NOT APPROVED · DO NOT PUBLISH</strong></p>',
             '<p>14 News selections, 1 Research selection, 60 platform drafts, Story frames and the weekly Substack Post.</p>',
             '<p>Coverage: ' + esc(batch['source_dates']) + '. All times Europe/Amsterdam.</p>',
-            '<p>Open the attached BATCH_REVIEW.html for captions, carousel images, Story frames, evidence and photo credits. The Markdown copy is also attached.</p>',
+            '<p>Open the attached BATCH_REVIEW.html for captions, carousel images, Story frames and evidence' + (', including photo credits' if has_photos else '') + '. The Markdown copy is also attached.</p>',
             '<p><a href="' + esc(artifact_url, quote=True) + '">Download the complete batch and full-resolution media</a></p><ul>']
     for topic in batch['topics']:
         body.append('<li>' + esc(topic['date'] + ' ' + topic['time'] + ' · ' + topic['kind'] + ' · ' + topic['headline']) + '</li>')
-    body.extend(['</ul><p>Review copy, claims, geography, photograph relevance and hashtags. Photographs are illustrative.</p>',
+    body.extend(['</ul><p>Review copy, claims, geography, visuals and hashtags. Branded artwork does not depict reported events' + ('; credited photographs are illustrative' if has_photos else '') + '.</p>',
                  '<p>After review, give your publishing chat this explicit approval: <strong>' + esc(batch['approval_phrase']) + '</strong>.</p>',
                  '<p>This email requests review only. It does not approve, publish or schedule any social posts.</p>'])
     if review_url:
