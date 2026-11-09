@@ -194,7 +194,9 @@ def new_photos(topics, history, output, release):
     stems = set()
     selected = [t for t in topics if t['kind'] == 'News']
     if scoped and set(scoped) != {topic['path'] for topic in selected}:
-        raise ValueError('Photo scope manifest must cover every selected News story exactly')
+        missing = sorted({topic['path'] for topic in selected} - set(scoped))
+        stale = sorted(set(scoped) - {topic['path'] for topic in selected})
+        raise ValueError(f'Photo scope manifest differs from the deployed edition. Missing: {missing}. Stale: {stale}.')
     for topic in selected:
         market = topic['market']
         scope = scoped.get(topic['path'], {})
