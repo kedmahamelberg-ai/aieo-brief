@@ -124,7 +124,7 @@ def review_images(overview: dict, root: Path) -> dict:
             continue
         validate_section(section)
         relative = Path(str(section["image_path"]))
-        if (relative.is_absolute() or relative.parts[:2] != ("assets", "culture")
+        if (relative.is_absolute() or relative.parts[:2] not in (("assets", "culture"), ("assets", "weekly-overviews"))
                 or ".." in relative.parts or relative.suffix.lower() not in IMAGE_TYPES):
             raise ValueError("Weekly review artwork path is invalid")
         path = (root / relative).resolve()
