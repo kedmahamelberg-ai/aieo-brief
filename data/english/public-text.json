@@ -6587,6 +6587,109 @@
       },
       "output_sha256": "eea95436ccea6cb9712189cd1ec04005f29c3095ed4690f04c107f9d2e5eea68",
       "policy": "brief-english-display-v1"
+    },
+    "79569ecc362684f8f32c4b1816580f3b2e062f684868ee2ffd3dea2b64bc0f01": {
+      "english": {
+        "0": "Loose Papers · a short reading",
+        "1": "A passage from Loose Papers.",
+        "2": "Loose Papers",
+        "3": "D. Benedicta speaks, as her visits, but does not speak to all, only to one, who is sitting at her feet. That one is a fat, sympathetic, very smiley lady, mother of a bachelor of twenty-two years, Leandrinho, who is sitting in front of them. D. Benedicta is not content to speak to the fat lady; she has one of her hands between theirs; and not content to have her hand held, she fixes upon her eyes, love-filled, vividly loving. She does not fix them, note well, in a persistent and long way, but restless, small, repeated, instantaneous. In any case, there is much tenderness in that gesture; and given that there were not, nothing would be lost, because D. Benedicta repeats with her mouth to D. Maria dos Anjos everything that her eyes have said to her: that she is enchanted, that she considers it a fortune to know her, that she is very sympathetic, very worthy, that she carries the heart in her eyes, etc., etc., etc. One of her friends tells her, laughing, that she is jealous."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "fe3b373352e8ecac1e5ffb3e29b9b801cb45523f8a42621aef8bef95745f814d",
+      "policy": "brief-english-display-v1"
+    },
+    "f66a539a26c9376e9a67744d16c73b7c474e534d53a19498d987c0ec361ec7b1": {
+      "english": {
+        "0": "Xinhua Net",
+        "1": "Xinhua Net",
+        "2": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5ed208d96fd43b75a3301e405ac3c4c21dd02b796baebaff8d633e48bbb6396a",
+      "policy": "brief-english-display-v1"
+    },
+    "73a90ef6161d8ff4f1680f04aed7382b333ee00599a8af79769ccc024782750e": {
+      "english": {
+        "0": "Reporting from the Central Cyberspace Security and Informatization Commission Office. Open the source for the article.",
+        "1": "Central Cyberspace Security and Informatization Commission Office",
+        "2": "Central Cyberspace Security and Informatization Commission Office"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "62043d5cff36945cc90cfd8890f9c226f125da23a827290ea4098ef85b9afeb1",
+      "policy": "brief-english-display-v1"
+    },
+    "2e5cf3635aa6e9fb21079db54158eceeb1a47de6be791124f3a32f22837f6643": {
+      "english": {
+        "0": "In an interview at the 2026 iFlytek Global 1024 Developers Festival, Liu Qingfeng described AI as a long-term journey that requires focused teamwork. He pointed to topics like full-stack autonomy, cloud-integrated development, and large-model applications as front-line issues. The remarks come from a Xinhua Net interview released during the event.",
+        "1": "Xinhua Net",
+        "2": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4cbc0242553b754ab7d4a35c4f22422ed15ed5735f48b786e633692ceb22e372",
+      "policy": "brief-english-display-v1"
+    },
+    "8c1a78ef7545bb02d9d428a3d7927ef00d455a1c15e9b6cbf8a6c2ad2856912e": {
+      "english": {
+        "0": "Reporting from Xinhua Net. Open the source for the article.",
+        "1": "Open source empowers people by providing opportunities to participate, increasing their capabilities and engagement.",
+        "2": "Open collaboration drives the expansion and dissemination of AI ecosystems.",
+        "3": "Xinhua Net",
+        "4": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "a3649e1399efd0a52adbf98bd67a48b907d9d71a6e8355198a613e3fa455d90e",
+      "policy": "brief-english-display-v1"
     }
   }
 }
