@@ -81,6 +81,14 @@ def inputs(preview=False):
             if attempt==2: raise
             time.sleep(2)
 def text(value): return re.sub(r'\s+',' ',str(value or '')).replace('—',',').strip()
+def validate_current_readings(news):
+    """Keep a directional label from shipping with an empty explanation."""
+    for row in news:
+        if row.get('english_status') == 'pending' or not row.get('evidence_complete'):
+            continue
+        for direction, reading in (('human_direction', 'for_humans'), ('ai_direction', 'for_ai')):
+            if row.get(direction) in ('gain', 'loss', 'mixed') and not text(row.get(reading)):
+                raise ValueError(f"{row.get('key')}: {direction} requires a source-scoped {reading} reading")
 def clean_body_paragraphs(paragraphs):
     """Drop isolated generator fields from previously stored editorial bodies."""
     return [p for p in paragraphs if not isolated_artifact(p)]
@@ -345,6 +353,7 @@ def main():
         for field in ('path', 'slug', 'legacy_paths', 'url_slug_version'):
             if field in public:archived[field] = copy.deepcopy(public[field])
     news=[public_by_key[x['key']] for x in news]
+    validate_current_readings(news)
     research=[public_by_key[x['key']] for x in research]
     culture=[public_by_key[x['key']] for x in culture]
     for item in allcards:
