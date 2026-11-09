@@ -6690,6 +6690,44 @@
       },
       "output_sha256": "a3649e1399efd0a52adbf98bd67a48b907d9d71a6e8355198a613e3fa455d90e",
       "policy": "brief-english-display-v1"
+    },
+    "8d8f04a4b816db5d0e3a7d1e6546e87286f439ff087062726ec55cef405993ea": {
+      "english": {
+        "0": "Reporting from the Catholic Church in France. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5f9da0a46f0e76f486470009fbe9f37c175e5423dc524acb1be975eec67d3de6",
+      "policy": "brief-english-display-v1"
+    },
+    "7f0a2f98ce48681a2f175a5aa94fe650214fe477d2a462c3ee48a7bcde29eaaf": {
+      "english": {
+        "0": "Reporting from Shanghai Jiao Tong University News Network. Open the source for the article.",
+        "1": "Shanghai Jiao Tong University News Network",
+        "2": "Shanghai Jiao Tong University News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6fc105c3873f77aec5027ad9099f6598e3a54f926f55a95fe97ac5e069eb49c5",
+      "policy": "brief-english-display-v1"
     }
   }
 }

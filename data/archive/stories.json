@@ -3485,8 +3485,8 @@
       "key": "event:36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
       "event_id": "36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
       "kind": "news",
-      "slug": "development-36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
-      "path": "story/development-36f8e3f3-e72e-4296-a4d7-7cdd75d76edc/index.html",
+      "slug": "fortifier-inner-man-age-artificial-intelligence-father-magnin",
+      "path": "story/fortifier-inner-man-age-artificial-intelligence-father-magnin/index.html",
       "headline": "Fortifier \"the inner man\" in the age of artificial intelligence: educational challenges according to Father Magnin",
       "original_headline": "Fortifier \"the inner man\" in the age of artificial intelligence: educational challenges according to Father Magnin",
       "deck": "Reporting from Église catholique en France. Open the source for the article.",
@@ -3527,7 +3527,11 @@
       "has_editorial": false,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
-      "period_end": "2026-11-08"
+      "period_end": "2026-11-08",
+      "legacy_paths": [
+        "story/development-36f8e3f3-e72e-4296-a4d7-7cdd75d76edc/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:2e0e6de8-646b-4072-9939-7e8e19bf3fc4",
@@ -5232,8 +5236,8 @@
       "key": "event:33d5d334-70f8-4f44-8c95-eae031d9e90c",
       "event_id": "33d5d334-70f8-4f44-8c95-eae031d9e90c",
       "kind": "news",
-      "slug": "development-33d5d334-70f8-4f44-8c95-eae031d9e90c",
-      "path": "story/development-33d5d334-70f8-4f44-8c95-eae031d9e90c/index.html",
+      "slug": "what-ai-ai-empowering-science-decoding-chen-liya",
+      "path": "story/what-ai-ai-empowering-science-decoding-chen-liya/index.html",
       "headline": "From “What is AI” to “AI Empowering Science”: Decoding the Scientific Logic of Artificial Intelligence , Lecture 4 on Data, Models, and Science by Senior Student Chen Liya",
       "original_headline": "From “What is AI” to “AI Empowering Science”: Decoding the Scientific Logic of Artificial Intelligence , Lecture 4 on Data, Models, and Science by Senior Student Chen Liya",
       "deck": "Reporting from 上海交通大学 新闻网. Open the source for the article.",
@@ -5274,7 +5278,11 @@
       "has_editorial": false,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
-      "period_end": "2026-11-08"
+      "period_end": "2026-11-08",
+      "legacy_paths": [
+        "story/development-33d5d334-70f8-4f44-8c95-eae031d9e90c/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:11b57efe-191f-437f-b405-a2f1c37d774d",
