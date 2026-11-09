@@ -307,6 +307,69 @@
       "source_fingerprints": {
         "76ffc2f42d2d0fa955b50cbdc3dde225": "a1442995a6e66c9729db41b27814d3c3338c71087e2c149d420b4bf04b28849f"
       }
+    },
+    {
+      "key": "event:7f891f3c-7cfa-4a53-b894-39e98e048250",
+      "event_id": "7f891f3c-7cfa-4a53-b894-39e98e048250",
+      "reason": "UCF describes a funded model-development project, not a completed or clinically validated tool. The two readings must state the proposed benefit and the absence of measured outcomes.",
+      "source_urls": [
+        "https://www.ucf.edu/news/ucf-researchers-developing-ai-model-to-help-physicians-improve-kidney-care/"
+      ],
+      "before": {
+        "for_ai": "",
+        "ai_label": "Evidence incomplete"
+      },
+      "after": {
+        "headline": "UCF researchers begin developing AI tool for kidney care",
+        "deck": "A funded UCF project aims to combine kidney scans and clinical reports to help physicians assess tumors and stones; clinical results are not yet reported.",
+        "what_happened": "UCF researchers are developing Kidney-VLM, a proposed AI platform that would combine CT scans, medical history and clinical reports to help physicians evaluate kidney tumors, stones and other abnormalities.",
+        "why_it_matters": "The team hopes the tool could help clinicians choose next steps, but the project is still in development and has not shown a patient-care benefit.",
+        "for_humans": "UCF hopes the proposed tool could help physicians make kidney-care decisions; no clinical benefit has been measured.",
+        "for_ai": "The team plans to build a model that links scans with patient records and explains its answers; its performance has not yet been reported.",
+        "ai_label": "Benefits reported",
+        "limitation": "A funded development project; no model validation or patient-care outcome is reported."
+      }
+    },
+    {
+      "key": "event:654854e4-fe52-4ddf-bc0d-dc5c1d767ba8",
+      "event_id": "654854e4-fe52-4ddf-bc0d-dc5c1d767ba8",
+      "reason": "The Xinhua report describes a concrete building-inspection pilot and proposed shared infrastructure; the readings should distinguish the reported pilot claim from wider ambitions.",
+      "source_urls": [
+        "https://www.news.cn/20261104/b318ccb9cf3e4aad8419c39667ae72a0/c.html"
+      ],
+      "before": {
+        "for_ai": "",
+        "ai_label": "Evidence incomplete"
+      },
+      "after": {
+        "what_happened": "At a Wuzhen exhibition, six Zhejiang AI pilot bases presented work in sectors including health care, cultural heritage and manufacturing. One base showed a tool that reviews photos of damage to old buildings and suggests inspections and maintenance.",
+        "why_it_matters": "Pilot staff say the building tool speeds initial checks. They hope shared data, computing and testing will help more organizations use AI, but the article does not measure those wider effects.",
+        "for_humans": "A building-inspection pilot gives local staff an initial report from uploaded photos; staff say it speeds screening, but the wider benefit is unmeasured.",
+        "for_ai": "Pilot bases train and test sector-specific models, and staff report a working building-inspection tool; broader use of shared AI services remains a goal.",
+        "ai_label": "Benefits reported",
+        "limitation": "Exhibition reporting and claims from pilot staff; no independent measurement of the wider benefits is provided."
+      }
+    },
+    {
+      "key": "event:426f29d1-eef2-446f-ba1b-10d5831691ef",
+      "event_id": "426f29d1-eef2-446f-ba1b-10d5831691ef",
+      "reason": "The study reports better reconstructed brain maps, with a research benefit and no tested patient-care outcome. Both readings were empty despite published gain directions.",
+      "source_urls": [
+        "https://medicalxpress.com/news/2026-11-generative-ai-gaps-brain-wiring.html",
+        "https://keck.usc.edu/news/stevens-ini-researchers-use-generative-ai-to-fill-gaps-in-brain-wiring-maps/"
+      ],
+      "before": {
+        "for_humans": "",
+        "for_ai": "",
+        "human_label": "Evidence incomplete",
+        "ai_label": "Evidence incomplete"
+      },
+      "after": {
+        "for_humans": "Researchers may get fuller estimated brain pathway maps for studies of aging and disease; a patient-care benefit has not been tested.",
+        "for_ai": "In tests, FOD-Diffusion estimated missing MRI signal and produced fuller pathway maps than standard corrections; use on other scanners needs testing.",
+        "human_label": "Benefits reported",
+        "ai_label": "Benefits reported"
+      }
     }
   ],
   "research": []
