@@ -22,7 +22,7 @@
     {% if weekly_overview.markets.author %}<p class="weekly-byline">By <a href="{{ local('about/index.html') }}">{{ weekly_overview.markets.author }}</a></p>{% endif %}
     <p>{{ weekly_overview.markets.deck }}</p>
     <div class="weekly-market-chips" aria-label="Five discovery markets">
-      {% for entry in weekly_overview.markets.entries %}<span><strong>{{ entry.name }}</strong> {{ entry.topic }}</span>{% endfor %}
+      {% for entry in weekly_overview.markets.entries %}<span><strong>{{ entry.name }} feed</strong> {{ entry.topic }}</span>{% endfor %}
     </div>
     <a class="read-link" href="{{ local(weekly_overview.path) }}#five-markets">See the five-market view →</a>
   </div>
