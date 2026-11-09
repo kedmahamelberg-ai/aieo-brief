@@ -39,7 +39,8 @@ class SocialProduction(unittest.TestCase):
   rows=[dict(row,edition='2026-W45',period_start='2026-11-02',period_end='2026-11-08') for row in self.items]
   self.assertTrue(social.due(rows,{'editions':{'2026-W45':{}}},date(2026,11,9))[0])
   self.assertTrue(social.due(rows,{'editions':{'2026-W45':{'review_revision':2}}},date(2026,11,9))[0])
-  self.assertFalse(social.due(rows,{'editions':{'2026-W45':{'review_revision':3}}},date(2026,11,9))[0])
+  self.assertTrue(social.due(rows,{'editions':{'2026-W45':{'review_revision':3}}},date(2026,11,9))[0])
+  self.assertFalse(social.due(rows,{'editions':{'2026-W45':{'review_revision':4}}},date(2026,11,9))[0])
  def test_old_and_unfinished_editions_cannot_be_new_content(self):
   self.assertFalse(social.due(self.items,{},date(2026,11,2))[0])
   with self.assertRaises(ValueError):social.due(self.items,{},date(2026,10,25))
@@ -63,6 +64,9 @@ class SocialProduction(unittest.TestCase):
   self.assertNotIn('performed best',paper['fact'])
   medical=next(topic for topic in topics if 'ultrasound' in topic['path'])
   self.assertEqual(medical['second_subject_tag'],'#HealthAI')
+  scopes=json.loads((ROOT/'config/social-photo-scopes-2026-W45.json').read_text())
+  self.assertEqual(set(scopes['topics']),{topic['path'] for topic in topics if topic['kind']=='News'})
+  self.assertTrue(all(scope['queries'] and scope['title_pattern'] and scope['kind'] in ('place','subject') for scope in scopes['topics'].values()))
  def test_complete_schedule_and_media_contract(self):
   topics=social.topic_plan(self.items,date(2026,10,26),self.news)
   self.assertEqual(len(topics),15);self.assertEqual(len({t['path'] for t in topics}),15)
