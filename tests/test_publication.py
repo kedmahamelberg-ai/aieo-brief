@@ -141,6 +141,7 @@ class Publication(unittest.TestCase):
   seed[eid]['evidence_basis_summary']['grounding_version']=VERSION
   grounded=next(x for x in cards(self.release,self.sym,{}, {},seed,True) if x['event_id']==eid)
   self.assertEqual(grounded['for_humans'],'');self.assertEqual(grounded['for_ai'],'')
+  self.assertEqual((grounded['human_label'],grounded['ai_label']),('Evidence incomplete','Evidence incomplete'))
  def test_changed_draft_cannot_be_saved_with_an_old_review(self):
   import hashlib
   from unittest.mock import Mock
