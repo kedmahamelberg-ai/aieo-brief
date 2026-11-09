@@ -298,7 +298,16 @@ def install_approval(draft: dict, run_id: str) -> Path:
     validate_live_sources(draft)
     path = ROOT / "data/weekly-overviews/approved" / (draft["release_id"] + ".json")
     if path.exists():
-        raise ValueError("This weekly edition already has an approval file")
+        previous_bytes = path.read_bytes()
+        previous = json.loads(previous_bytes)
+        if all(previous.get(kind, {}).get("source_hashes") == result[kind].get("source_hashes")
+               for kind in ("markets", "research")):
+            raise ValueError("This weekly edition already has an approval for these sources")
+        archive = path.parent / "archive" / (draft["release_id"] + "-" + hashlib.sha256(previous_bytes).hexdigest()[:12] + ".json")
+        archive.parent.mkdir(parents=True, exist_ok=True)
+        if archive.exists() and archive.read_bytes() != previous_bytes:
+            raise ValueError("Weekly approval archive collision")
+        archive.write_bytes(previous_bytes)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
     print("Installed owner-approved weekly draft " + draft["release_id"] + ".")
