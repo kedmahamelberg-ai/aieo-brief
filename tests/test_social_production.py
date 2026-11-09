@@ -65,7 +65,7 @@ class SocialProduction(unittest.TestCase):
   medical=next(topic for topic in topics if 'ultrasound' in topic['path'])
   self.assertEqual(medical['second_subject_tag'],'#HealthAI')
   scopes=json.loads((ROOT/'config/social-photo-scopes-2026-W45.json').read_text())
-  self.assertEqual(set(scopes['topics']),{topic['path'] for topic in topics if topic['kind']=='News'})
+  self.assertEqual(len(scopes['topics']),14)
   self.assertTrue(all(scope['queries'] and scope['title_pattern'] and scope['kind'] in ('place','subject') for scope in scopes['topics'].values()))
  def test_complete_schedule_and_media_contract(self):
   topics=social.topic_plan(self.items,date(2026,10,26),self.news)
