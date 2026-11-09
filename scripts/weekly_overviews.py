@@ -312,7 +312,7 @@ def _apply_visual_correction(overview: dict, root: Path) -> None:
         raise ValueError('Weekly visual correction does not match this edition')
     for kind, values in correction['sections'].items():
         section = overview[kind]
-        if section.get('status') != 'ready':
+        if section.get('status') != 'ready' or not section.get('human_approved'):
             continue
         if section.get('image_path') not in (values['previous_image_path'], values['image_path']):
             raise ValueError('Approved weekly image changed before visual correction')
