@@ -73,6 +73,9 @@ def validate(site):
  for axis in ('human','ai'):
   counts=collections.Counter(x[axis+'_direction'] for x in news)
   if any(counts[k]!=v for k,v in payload['directional_counts'][axis].items()):raise ValueError('Wrong '+axis+' totals')
+ for item in news:
+  if not str(item.get('for_humans') or '').strip() or not str(item.get('for_ai') or '').strip():
+   raise ValueError('News directional reading missing for '+item.get('key','unknown'))
  for item in news+papers+culture:
   if not item['sources'] or len(item['sources'])!=item['source_count']:raise ValueError('Missing or inconsistent source list')
   if not (site/item['path']).is_file():raise ValueError('Story page missing')
