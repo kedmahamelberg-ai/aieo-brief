@@ -11,92 +11,129 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "The weekly news review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "title": "What is the bridge open source can offer for AI this week?",
+        "deck": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
+        "summary": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets. From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people. The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses. A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
+        "scope_note": "Five selected stories from five discovery markets.",
+        "word_count": 124,
         "reading_minutes": 1,
         "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
-        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
-        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_alt": "The East Fork of the Toklat River flowing through a mountain valley in Denali National Park; an illustrative landscape, not a reported AI event",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve — illustrative photograph",
         "image_credit": "NPS Photo / Tim Rains",
         "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
         "image_rights": "Public domain · Full Granting Rights",
         "entries": [
           {
-            "code": "CN",
-            "name": "China",
-            "count": 22,
-            "topic": "Business And Investment",
-            "sentence": "China: business and investment stood out in the selected coverage; one example was “Xinhua reports AI+Media blue book at World Media Summit highlights mixed….”",
-            "story": {
-              "headline": "Xinhua reports AI+Media blue book at World Media Summit highlights mixed gains and cautious, ethical path",
-              "path": "story/xinhua-ai-media-blue-book-world-ethical-path/index.html",
-              "publisher": "Xinhua Net",
-              "source_url": "https://www.news.cn/world/20261107/06211935e00248f2b3eeef224ebbb8d4/c.html"
-            }
-          },
-          {
             "code": "US",
             "name": "United States",
-            "count": 13,
-            "topic": "Rules And Rights",
-            "sentence": "United States: selected reporting leaned toward rules and rights, with “Human-services CEO asks whether AI could improve care” as one visible signal.",
+            "topic": "Rules & rights",
             "story": {
-              "headline": "Human-services CEO asks whether AI could improve care",
-              "path": "story/little-friends-artificial-intelligence-human-services-think-about/index.html",
-              "publisher": "Positively Naperville",
-              "source_url": "https://www.positivelynaperville.com/2026/11/04/little-friends-artificial-intelligence-and-human-services-a-lot-to-think-about/162345"
-            }
-          },
-          {
-            "code": "GB",
-            "name": "United Kingdom",
-            "count": 12,
-            "topic": "Everyday Use",
-            "sentence": "United Kingdom: everyday use stood out in the selected coverage; one example was “Is AI Already a Factor in Le Mans, According to Teams….”",
-            "story": {
-              "headline": "Is AI Already a Factor in Le Mans, According to Teams and Experts?",
-              "path": "story/ai-already-factor-le-mans-according-teams-experts/index.html",
-              "publisher": "24 Heures du Mans",
-              "source_url": "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
-            }
-          },
-          {
-            "code": "FR",
-            "name": "France",
-            "count": 15,
-            "topic": "Rules And Rights",
-            "sentence": "France: rules and rights stood out in the selected coverage; one example was “AFPDC 2026 Colloquium Frames AI as Human Support, Warns of Limits.”",
-            "story": {
-              "headline": "AFPDC 2026 Colloquium Frames AI as Human Support, Warns of Limits",
-              "path": "story/colloque-artificial-intelligence-friendly-intelligence-theme-conference-afpdc/index.html",
-              "publisher": "Éditions Francis Lefebvre",
-              "source_url": "https://www.efl.fr/actualite/colloque-intelligence-artificielle-and-intelligence-amiable-theme-colloque-annuel-2026-afpdc_fb6fd204c-0c45-4e1f-8dec-f891c28178e4"
+              "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html",
+              "headline": "Global tech stocks wobble as AI regulation fears rise after midterms",
+              "publisher": "The Guardian"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 28,
-            "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Sciences Po Researchers Warn AI Will Shape 2027 Election, But With….”",
+            "topic": "Culture & creativity",
             "story": {
-              "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
-              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
-              "publisher": "Sciences Po",
-              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+              "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html",
+              "headline": "Do We Need Another Novel? A Professor Questions AI's Role in Literature",
+              "publisher": "l-express.ca"
+            }
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "topic": "Culture & creativity",
+            "story": {
+              "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html",
+              "headline": "From Wuzhen AI Open-Source Talk, key terms for a shared ecosystem emerge",
+              "publisher": "新华网"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "topic": "Rules & rights",
+            "story": {
+              "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html",
+              "headline": "CEDH chief warns AI can speed justice but may overwhelm system and invite abusive claims",
+              "publisher": "BFM"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "topic": "Rules & rights",
+            "story": {
+              "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html",
+              "headline": "BBC: EU AI rules may apply in Northern Ireland; UK government sets limits",
+              "publisher": "BBC"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "pending",
-        "author": "",
-        "prose": [],
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "prose": [
+          [
+            {
+              "text": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms.",
+              "source_key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+              "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html"
+            },
+            {
+              "text": "EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
+              "source_key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
+              "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html"
+            }
+          ],
+          [
+            {
+              "text": "From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people.",
+              "source_key": "event:11b57efe-191f-437f-b405-a2f1c37d774d",
+              "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html"
+            },
+            {
+              "text": "The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses.",
+              "source_key": "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f",
+              "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html"
+            }
+          ],
+          [
+            {
+              "text": "A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
+              "source_key": "event:0137b615-2741-4b50-9a60-dd93e0471ea1",
+              "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html"
+            }
+          ]
+        ],
         "papers": [],
-        "pending_reason": "approved_sources_changed"
+        "pending_reason": "approved_sources_changed",
+        "source_hashes": {
+          "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7": "f074a81b8d14a997089da8fbc984014a23ee8c86c7a9386dbf16758ae63a9e30",
+          "event:0137b615-2741-4b50-9a60-dd93e0471ea1": "cb2e5b3a682d92953e6fe515f4c4972dabc5764c03fc6660f5f02c424dcc91c3",
+          "event:11b57efe-191f-437f-b405-a2f1c37d774d": "21f321d2043b99ceffbf443991255a72d1a463dd7a5f8694a486c263341d65e3",
+          "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f": "8b89aa1258fe76f5593a5059bd22659281028f584bc95cda1a8b594dc5e69bf1",
+          "event:034c9f16-afde-4d13-bfa2-822d8b830213": "d065e86d6131145e1ea4956a0e453e522b4cfadbc1dc7d5001ba1c7a9f4d3df8"
+        },
+        "image_key": "culture:f1b34451095142a9ab80beeb",
+        "image_work_key": "0317aa591e1d8633b61e68dc5dcd3fc18df918ce51c7b33a04f63e848ed9559c",
+        "image_reason": "Branching river channels illustrate several reporting streams. The photograph does not depict an AI event.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "human_approved": true
       },
       "research": {
         "kind": "research",
@@ -328,8 +365,8 @@
         "human_approved": true
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "pending",
-      "content_sha256": "593e00f75bfd7bf653d564abeb7579845a125cf427568d2a5cee5ebf823a824d"
+      "editorial_status": "ready",
+      "content_sha256": "7a233ec881abe7afbec08e64465b0364373e1eb972c7d5c057d78da0873c9467"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
