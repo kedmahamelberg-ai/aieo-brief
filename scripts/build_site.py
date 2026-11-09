@@ -136,8 +136,8 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
         human=public_evidence(axes['human'].get('evidence'));ai=public_evidence(axes['ai'].get('evidence'))
         if v:
             if (v.get('evidence_basis_summary') or {}).get('grounding_version')==GROUNDING_VERSION:
-                # Empty is an intentional reviewed result, not a request for old prose.
-                human=text(v.get('for_humans'));ai=text(v.get('for_ai'))
+                # A blank model reading must not erase the source-bound directional evidence.
+                human=text(v.get('for_humans')) or human;ai=text(v.get('for_ai')) or ai
             else:
                 human=text(v.get('for_humans')) or human;ai=text(v.get('for_ai')) or ai
         count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220))
