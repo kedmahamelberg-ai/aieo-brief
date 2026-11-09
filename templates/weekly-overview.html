@@ -33,7 +33,7 @@
       <div class="market-current-list">
         {% for entry in page_weekly_overview.markets.entries %}
         <section>
-          <h3>{{ entry.name }}</h3>
+          <h3>{{ entry.name }} feed</h3>
           <p>{{ entry.sentence }}</p>
           {% if entry.story %}<p class="weekly-source"><a href="{{ local(entry.story.path) }}">Read the Brief</a>{% if entry.story.source_url %} · <a href="{{ entry.story.source_url }}" target="_blank" rel="noopener noreferrer">{{ entry.story.publisher }} source ↗</a>{% endif %}</p>{% endif %}
         </section>
