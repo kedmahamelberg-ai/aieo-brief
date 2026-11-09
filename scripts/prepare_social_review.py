@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
 BASE = 'https://brief.hamelberg-ai.com/'
 STATUS = 'DRAFT_NOT_APPROVED_DO_NOT_PUBLISH'
-REVIEW_REVISION = 4  # The W45 release restores source-relevant photo covers.
+REVIEW_REVISION = 4
 COUNTRIES = {'US': 'United States', 'CA': 'Canada', 'GB': 'United Kingdom', 'FR': 'France', 'CN': 'China'}
 GEO = dict(US='#USAI', CA='#CanadaAI', GB='#UKAI', FR='#FranceAI', CN='#ChinaAI')
 SUBJECT_TAGS = {'policy': '#AIGovernance', 'work': '#FutureOfWork',
@@ -172,9 +172,9 @@ def country_scene_candidate(page, market):
     if re.search(r'\b(?:painting|drawing|maps?|engraving|lithograph|illustration|portrait|headshot|selfie|people|persons?|man|woman|men|women|wildfires?|fires?|floods?|earthquake|disaster|war|protest|funeral|memorial)\b', material, re.I):
         return False
     places = {'US': r'United States|New York|Manhattan|American|USA',
-              'CA': r'Canada|Canadian|Ottawa|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan',
+              'CA': r'Canada|Canadian|Ottawa|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan|Newfoundland|St. John.s',
               'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland',
-              'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai'}
+              'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai|Shenzhen'}
     scene = r'\b(?:skyline[0-9]*|cityscape|landscape|river|lake|mountains?|forest|trees|crater|coast|harbou?r|bridge|buildings?|cathedral|countryside|city)\b'
     if market == 'GLOBAL':
         return bool(re.search(scene, material, re.I))
