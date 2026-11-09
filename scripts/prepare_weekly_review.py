@@ -12,6 +12,7 @@ import os
 from pathlib import Path
 
 from build_site import ROOT, cards, inputs, papers
+from editorial_corrections import apply_corrections
 from brief_database import dbmaps
 from weekly_overviews import prepare_weekly_overviews
 from weekly_editorials import validate_section
@@ -23,6 +24,8 @@ def main() -> None:
     registry, readiness, editorial = dbmaps(False)
     news = cards(release, symbiosis, registry, readiness, editorial)
     research = papers()
+    apply_corrections(news, ROOT)
+    apply_corrections(research, ROOT)
     # This returns a candidate in memory only.  write_archive=False is the
     # non-negotiable boundary between a review and a public release.
     overview, _ = prepare_weekly_overviews(

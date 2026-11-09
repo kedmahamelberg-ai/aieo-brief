@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
-from editorial_corrections import apply_corrections
+from editorial_corrections import apply_corrections, reading_proof
 from claim_grounding import VERSION as GROUNDING_VERSION
 import argparse, collections, copy, json, os, re, shutil, time
 from datetime import datetime, timezone, date
@@ -68,7 +68,17 @@ def detect_topic(event):
 def version_valid(version, row, release, event=None, legacy_proofs=None):
     if not version or version.get('publication_status') not in ('published','preview'):return False
     basis=version.get('evidence_basis_summary') or {}
-    if basis.get('prompt_version')!=PROMPT_VERSION or basis.get('axes_sha256')!=digest(row.get('axes',{})):return False
+    if basis.get('prompt_version')!=PROMPT_VERSION:return False
+    if basis.get('axes_sha256')!=digest(row.get('axes',{})):
+        # A corrected reading changes the relationship/export hash, but the
+        # original full source and independently reviewed story prose remain.
+        key='event:'+str(row.get('event_id') or '')
+        proof=reading_proof(key,ROOT)
+        current=(row.get('evidence_basis_summary') or {}).get('source_fingerprints')
+        source_urls={s.get('url') for s in (event or {}).get('sources',[])}
+        return bool(proof and basis.get('release_id')==release.get('release_id')
+                    and proof['source_fingerprints']==current
+                    and set(proof['source_urls'])==source_urls)
     if basis.get('source_release_sha256')==release.get('content_sha256'):return True
     if not event or basis.get('release_id')!=release.get('release_id'):return False
     proof=basis.get('editorial_source_fingerprint')

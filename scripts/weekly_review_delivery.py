@@ -15,6 +15,7 @@ from pathlib import Path
 import requests
 
 from build_site import ROOT, cards, inputs, papers
+from editorial_corrections import apply_corrections
 from brief_database import dbmaps
 from weekly_editorials import eligible, ready_valid, validate_section
 
@@ -265,7 +266,10 @@ def validate_live_sources(draft: dict) -> None:
         raise ValueError("The source edition changed before approval")
     registry, readiness, editorial = dbmaps(False)
     news = cards(release, symbiosis, registry, readiness, editorial)
-    for kind, rows in (("markets", news), ("research", papers())):
+    research = papers()
+    apply_corrections(news, ROOT)
+    apply_corrections(research, ROOT)
+    for kind, rows in (("markets", news), ("research", research)):
         available = {row["key"]: row for row in eligible(rows, release)}
         if not ready_valid(draft["overview"][kind], available):
             raise ValueError("Weekly " + kind + " sources changed before approval")

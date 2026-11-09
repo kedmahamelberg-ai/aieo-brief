@@ -9,7 +9,16 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'data/editorial/approved-corrections-2026-10-26.json'
-SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',)
+SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
+                 'data/editorial/reading-corrections-2026-11-09.json')
+
+
+def reading_proof(key, root=ROOT):
+    path = Path(root) / SOURCE_AUDITS[-1]
+    if not path.exists():
+        return None
+    return next((row for row in json.loads(path.read_text()).get('news', [])
+                 if row.get('key') == key and row.get('source_fingerprints')), None)
 
 
 def corrections(root=ROOT):

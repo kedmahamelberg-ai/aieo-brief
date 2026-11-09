@@ -1,0 +1,148 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "authorization": "Owner requested the 2026-W45 classifications be reviewed and the mismatched story readings corrected on 2026-11-09.",
+  "review_method": "Compared each flagged Brief story with its published Observatory directional evidence and the saved Brief editorial; the two direction changes are mirrored in the Observatory correction manifest.",
+  "news": [
+    {
+      "key": "event:360e30e5-080b-46ff-a4ad-6d3491d5b365",
+      "event_id": "360e30e5-080b-46ff-a4ad-6d3491d5b365",
+      "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
+      "source_urls": [
+        "https://www.emjreviews.com/rheumatology/news/acr-2026-artificial-intelligence-enhances-ultrasound-and-decisions"
+      ],
+      "before": {
+        "for_ai": ""
+      },
+      "after": {
+        "for_ai": "The report describes AI assisting ultrasound interpretation, while clinicians must check outputs for errors and bias."
+      }
+    },
+    {
+      "key": "event:5977c536-b34d-40a0-92be-46e4c51b1a63",
+      "event_id": "5977c536-b34d-40a0-92be-46e4c51b1a63",
+      "reason": "The source is a fictional satirical column, not reported job outcomes. Its people-side discussion is mixed and it reports no separate AI/operator outcome.",
+      "source_urls": [
+        "https://minneapolimedia.town.news/g/coon-rapids-mn/n/397519/saturday-morning-cranky-don-joe-artificial-intelligence-supposed-make"
+      ],
+      "before": {
+        "for_humans": "",
+        "for_ai": "",
+        "ai_direction": "gain",
+        "ai_label": "Benefits reported",
+        "claim_status": "reporting"
+      },
+      "after": {
+        "for_humans": "The fictional discussion contrasts possible time savings with worries about job loss and retraining; neither outcome is measured.",
+        "for_ai": "The column does not report a separate gain or downside for AI systems or their operators.",
+        "ai_direction": "none",
+        "ai_label": "No direction stated",
+        "claim_status": "opinion",
+        "headline": "Satirical column questions AI productivity promises and job security",
+        "deck": "In a fictional dialogue, Cranky Don Joe presses a neighbor on whether AI productivity gains would protect displaced workers.",
+        "what_happened": "A satirical MinneapoliMedia column stages conversations about AI assistants and employment. Its fictional characters discuss time-saving tasks, possible job displacement, retraining and who would bear transition costs.",
+        "why_it_matters": "The column raises questions about who benefits from AI productivity and who pays when work changes; it does not measure actual employment effects.",
+        "body_paragraphs": [
+          "In the fictional exchange, Larry demonstrates an AI meal plan and a drafted apology. Don challenges whether either task saves meaningful time or addresses the underlying need.",
+          "The characters then debate whether employers would redeploy or dismiss workers if AI reduced staffing needs. The column asks who would cover training and living costs during that transition."
+        ],
+        "limitation": "A satirical opinion column with fictional characters; it provides no evidence of actual job losses or productivity gains."
+      },
+      "source_fingerprints": {
+        "460617c4b54f40141579be733328377b": "3b57cf937e3a136b0c6a2d28d4d556571c1216b7b7eea1dfe423330bb58c9b04"
+      }
+    },
+    {
+      "key": "event:554a84e1-5ee2-4c42-bc55-1e9c72b149ec",
+      "event_id": "554a84e1-5ee2-4c42-bc55-1e9c72b149ec",
+      "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
+      "source_urls": [
+        "https://www.ledevoir.com/interactif/2026-11-06/discours-trump-carney-ia/index.html"
+      ],
+      "before": {
+        "for_ai": ""
+      },
+      "after": {
+        "for_ai": "The plans discuss wider AI use in public services, though the effects remain proposals rather than measured outcomes."
+      }
+    },
+    {
+      "key": "event:1dd8c701-0073-4e51-a6d0-1940fb420919",
+      "event_id": "1dd8c701-0073-4e51-a6d0-1940fb420919",
+      "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
+      "source_urls": [
+        "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
+      ],
+      "before": {
+        "for_ai": ""
+      },
+      "after": {
+        "for_ai": "Teams describe AI tools supporting race analysis, while their effect on results remains unproven."
+      }
+    },
+    {
+      "key": "event:c0cfe7a3-869a-4f2c-a608-0bb8dfade775",
+      "event_id": "c0cfe7a3-869a-4f2c-a608-0bb8dfade775",
+      "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
+      "source_urls": [
+        "https://www.news.cn/talking/20261106/1008b854ab5647a9a5fe7637f49ff63d/c.html"
+      ],
+      "before": {
+        "for_ai": ""
+      },
+      "after": {
+        "for_ai": "The speech describes ambitions for AI development, without a demonstrated outcome for systems or operators."
+      }
+    },
+    {
+      "key": "event:abc3e322-ff0e-4bda-8007-eea965a10fcc",
+      "event_id": "abc3e322-ff0e-4bda-8007-eea965a10fcc",
+      "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
+      "source_urls": [
+        "https://www.solutions-numeriques.com/avis-dexpert-a-lere-de-lintelligence-artificielle-5-leviers-pragmatiques-pour-renforcer-la-cyber-resilience-des-pme"
+      ],
+      "before": {
+        "for_ai": ""
+      },
+      "after": {
+        "for_ai": "The advice describes governance steps for small firms, without a separate outcome for AI systems or providers."
+      }
+    },
+    {
+      "key": "event:9549a202-980f-47f1-aa80-9ddd4dc740c4",
+      "event_id": "9549a202-980f-47f1-aa80-9ddd4dc740c4",
+      "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
+      "source_urls": [
+        "https://www.latribune.ca/chroniques/mickael-bergeron/2026/11/06/comment-lintelligence-artificielle-menace-linformation-OY4O6XZ6SZCKJN2D5OM4WGCY24"
+      ],
+      "before": {
+        "for_ai": ""
+      },
+      "after": {
+        "for_ai": "The commentary describes AI summaries and generated content spreading through information services, potentially shifting audiences from publishers."
+      }
+    },
+    {
+      "key": "event:7f5ca246-99a6-4209-8914-478d532629f8",
+      "event_id": "7f5ca246-99a6-4209-8914-478d532629f8",
+      "reason": "An announced education program describes opportunities for children, not a separate gain for AI systems or their operators.",
+      "source_urls": [
+        "https://www.maroc-hebdo.com/article/wasl-foundation-lance-un-programme-dinitiation-a-lintelligence-artificielle-et-a-la-robotique-destine-aux-enfants"
+      ],
+      "before": {
+        "for_ai": "",
+        "ai_direction": "gain",
+        "ai_label": "Benefits reported"
+      },
+      "after": {
+        "for_ai": "The report describes children learning about AI and robotics, without a distinct outcome for AI systems or their operators.",
+        "ai_direction": "none",
+        "ai_label": "No direction stated",
+        "for_humans": "The foundation says the new program will give children access to introductory AI and robotics learning; long-term benefits have not been measured."
+      },
+      "source_fingerprints": {
+        "8d89f34995502f6efdb83bbc1df128df": "4b171c4f80adb5c6f9847684f75915629199f4a306a30b3640a7dec3cc2b028a"
+      }
+    }
+  ],
+  "research": []
+}

@@ -35,7 +35,7 @@ def validate(batch, audit=None, since=None, platform=None):
         dt = datetime.fromisoformat(item['scheduled_at'])
         require(dt.utcoffset() == dt.astimezone(ZoneInfo('Europe/Amsterdam')).utcoffset(), 'wrong Amsterdam offset')
         caption = item.get('caption', '')
-        header = 'The brief AI research' if t['kind'] == 'Research' else f"The brief AI news from {t['country']}"
+        header = 'The brief AI research' if t['kind'] == 'Research' else (f"The brief AI news from {t['country']}" if t['country'] else 'The brief AI news')
         cta = 'Read the research briefing on The Brief.' if t['kind'] == 'Research' else 'Read the full story on The Brief.'
         require(caption.startswith(header), 'missing exact series header')
         require(cta in caption, 'missing CTA')

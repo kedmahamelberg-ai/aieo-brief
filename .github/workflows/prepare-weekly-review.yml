@@ -16,6 +16,8 @@ on:
     paths:
       - 'scripts/weekly_review_delivery.py'
       - 'scripts/weekly_editorials.py'
+      - 'data/editorial/reading-corrections-*.json'
+      - 'scripts/prepare_weekly_review.py'
 permissions:
   contents: read
   actions: read

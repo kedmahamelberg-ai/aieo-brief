@@ -101,7 +101,7 @@ def verified_markets(row):
 
 
 def topic_plan(items, monday, news):
-    """Select an even five-market draft; no missing market is silently replaced."""
+    """Prefer verified country stories, then use unlabelled edition stories."""
     target = {k: 3 for k in COUNTRIES}
     target[list(COUNTRIES)[monday.isocalendar().week % 5]] = 2
     pools = {}
@@ -111,16 +111,21 @@ def topic_plan(items, monday, news):
     topics, used, counts, previous = [], set(), Counter(), None
     for n in range(14):
         available = [m for m in COUNTRIES if counts[m] < target[m] and any(a['path'] not in used for a in pools[m])]
-        if not available:
-            raise ValueError('Insufficient distinct source-backed news for all five markets')
-        market = min(available, key=lambda m: (m == previous, counts[m], list(COUNTRIES).index(m)))
-        a = next(a for a in pools[market] if a['path'] not in used)
+        if available:
+            market = min(available, key=lambda m: (m == previous, counts[m], list(COUNTRIES).index(m)))
+            a = next(a for a in pools[market] if a['path'] not in used)
+        else:
+            remaining = [i for i in news if i['path'] not in used and i.get('has_editorial')
+                         and i.get('what_happened') and i.get('body_paragraphs') and i.get('sources')
+                         and not any('_localized_' in str(p) for p in i['body_paragraphs'])]
+            remaining.sort(key=lambda i: (-date.fromisoformat(i['date']).toordinal(), i['path']))
+            if not remaining:
+                raise ValueError('Fewer than fourteen distinct source-backed news stories are ready')
+            market, a = 'GLOBAL', remaining[0]
         used.add(a['path']); counts[market] += 1; previous = market
         day = monday + timedelta(days=n // 2); hour = '10:00' if n % 2 == 0 else '18:00'
         ident = day.strftime('%a').upper() + hour[:2] + '_' + market + '_' + hashlib.sha256(a['path'].encode()).hexdigest()[:8].upper()
-        topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES[market], 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO[market]], 'second_subject_tag': '#AIGovernance', 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Country anchored in the article or a matching source-checked geography record; discovery labels alone are insufficient', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
-    if counts != Counter(target):
-        raise ValueError('The five-market balance is incomplete')
+        topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES.get(market, ''), 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO.get(market, '#AINews')], 'second_subject_tag': '#AIGovernance', 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Country named only when anchored in the article or a matching source-checked geography record', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
     research = [i for i in items if i.get('kind') == 'research' and str(monday - timedelta(days=7)) <= i.get('date', '') < str(monday) and i.get('what_happened') and i.get('sources')]
     if not research:
         raise ValueError('No current source-backed Research item')
@@ -147,16 +152,20 @@ def country_scene_candidate(page, market):
               'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland',
               'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai'}
     scene = r'\b(?:skyline[0-9]*|cityscape|landscape|river|lake|mountains?|forest|trees|crater|coast|harbou?r|bridge|buildings?|cathedral|countryside|city)\b'
+    if market == 'GLOBAL':
+        return bool(re.search(scene, material, re.I))
     return bool(market in places and re.search(r'\b(?:'+places[market]+r')\b', material, re.I) and re.search(scene, material, re.I))
 
 
 def new_photos(topics, history, output):
     """Use only Commons public-domain/CC0 photos, with permanent duplicate history."""
     old_urls = set(history.get('source_urls', [])); old_hashes = set(history.get('sha256', []))
-    queries = {'US': 'New York skyline photograph', 'CA': 'Canada landscape photograph', 'GB': 'London skyline photograph', 'FR': 'Paris cityscape photograph', 'CN': 'Shanghai skyline photograph'}
+    queries = {'US': 'New York skyline photograph', 'CA': 'Canada skyline photograph', 'GB': 'London skyline photograph', 'FR': 'France skyline photograph', 'CN': 'Chinese landscape photograph', 'GLOBAL': 'city skyline photograph'}
     photos = {}
     for market, query in queries.items():
         selected = [t for t in topics if t['kind'] == 'News' and t['market'] == market]
+        if not selected:
+            continue
         params = dict(action='query', generator='search', gsrsearch=query+' -painting -drawing -map', gsrnamespace=6, gsrlimit=100, prop='imageinfo', iiprop='url|size|mime|extmetadata', iiurlwidth=1400, format='json')
         data = json.loads(fetch('https://commons.wikimedia.org/w/api.php?' + urlencode(params)))
         candidates = sorted(data.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 999))
@@ -188,7 +197,7 @@ def new_photos(topics, history, output):
 
 
 def header(t):
-    return 'The brief AI research' if t['kind'] == 'Research' else 'The brief AI news from '+t['country']
+    return 'The brief AI research' if t['kind'] == 'Research' else ('The brief AI news from '+t['country'] if t['country'] else 'The brief AI news')
 
 
 def curated_photos(photos, history, output, archive):
@@ -243,9 +252,10 @@ def render(topics, photos, output):
                 d.rectangle((65,1080,1015,1195),fill=green)
                 block(d,t['evidence'],(95,1100,890,80),30,paper)
             im.paste(logo,(45,50),logo)
-            if t['kind']=='News':
+            if t['kind']=='News' and t['country']:
                 block(d,'The brief AI news from',(190,55,820,60),36)
                 block(d,t['country'].upper(),(190,115,820,100),58)
+            elif t['kind']=='News':block(d,'The brief AI news',(190,65,820,100),43)
             else:block(d,header(t),(190,65,820,100),43)
             block(d,'brief.hamelberg-ai.com',(65,1260,780,55),25, paper if n==1 and t['kind']=='News' else green)
             im.save(output/'assets'/f"{t['id']}_carousel_{n}.png")
@@ -288,7 +298,7 @@ def verify_links(batch):
 
 
 def review(batch, output):
-    lines=['# The Brief social approval batch '+batch['publishing_week'],'','**DRAFT. NOT APPROVED. DO NOT PUBLISH.**','','Source coverage '+batch['source_dates']+'. All dates use Europe/Amsterdam.','','LinkedIn uses one image. Facebook and Instagram carousels must appear in this exact order: 1 cover/photo and headline, 2 explanation, 3 CTA. Upload each carousel image separately and wait for Meta to finish processing it before adding the next. After scheduling or publishing, reopen the saved post and check all three cards in order; a correct composer preview is not sufficient. If the saved order is wrong, create and verify a replacement before moving the wrong scheduled copy to Drafts. Stories use photo/headline, explanation, CTA. Music and stickers are omitted. Exact tracked URLs are the fallback until approved short aliases are imported.','','## Editorial review','', 'Review copy, featured geography, photo relevance and claims before approval. Country photos are illustrative. No generated images or paid model calls are used. Draft tags reflect source topics and require search-interest review.','']
+    lines=['# The Brief social approval batch '+batch['publishing_week'],'','**DRAFT. NOT APPROVED. DO NOT PUBLISH.**','','Source coverage '+batch['source_dates']+'. All dates use Europe/Amsterdam.','','LinkedIn uses one image. Facebook and Instagram carousels must appear in this exact order: 1 cover/photo and headline, 2 explanation, 3 CTA. Upload each carousel image separately and wait for Meta to finish processing it before adding the next. After scheduling or publishing, reopen the saved post and check all three cards in order; a correct composer preview is not sufficient. If the saved order is wrong, create and verify a replacement before moving the wrong scheduled copy to Drafts. Stories use photo/headline, explanation, CTA. Music and stickers are omitted. Exact tracked URLs are the fallback until approved short aliases are imported.','','## Editorial review','', 'Review copy, featured geography, photo relevance and claims before approval. Photographs are illustrative scenes and do not depict the reported events. No generated images or paid model calls are used. Draft tags reflect source topics and require search-interest review.','']
     for t in batch['topics']:
         lines+=['## '+t['id'],'',t['date']+' '+t['time']+' Amsterdam','',f"[Article]({BASE+t['path']})",'',t['evidence'],'',t.get('source_limitation',''),'']
         if t.get('photo'):
@@ -334,7 +344,7 @@ def main():
     for t in topics:
         current=next((i for i in items if i.get('path')==t['path']),None)
         if not current or (t['kind']=='News' and current.get('edition')!=release):raise ValueError('Selected article is not in the deployed edition')
-        if t['kind'] == 'News' and t['market'] not in verified_markets(current):
+        if t['kind'] == 'News' and t['market'] != 'GLOBAL' and t['market'] not in verified_markets(current):
             raise ValueError('Featured country is not supported by the selected article: ' + t['id'])
     history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
     if curated:

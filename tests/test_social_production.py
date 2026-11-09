@@ -38,9 +38,12 @@ class SocialProduction(unittest.TestCase):
  def test_old_and_unfinished_editions_cannot_be_new_content(self):
   self.assertFalse(social.due(self.items,{},date(2026,11,2))[0])
   with self.assertRaises(ValueError):social.due(self.items,{},date(2026,10,25))
- def test_missing_market_blocks_instead_of_substitution(self):
+ def test_missing_market_uses_general_news_without_false_country(self):
   filtered=[i for i in self.news if i['markets']!=['GB']]
-  with self.assertRaises(ValueError):social.topic_plan(self.items,date(2026,10,26),filtered)
+  topics=social.topic_plan(self.items,date(2026,10,26),filtered)
+  self.assertEqual(len([t for t in topics if t['kind']=='News']),14)
+  self.assertFalse(any(t['market']=='GB' for t in topics))
+  self.assertTrue(any(t['market']=='GLOBAL' and not t['country'] for t in topics))
  def test_complete_schedule_and_media_contract(self):
   topics=social.topic_plan(self.items,date(2026,10,26),self.news)
   self.assertEqual(len(topics),15);self.assertEqual(len({t['path'] for t in topics}),15)

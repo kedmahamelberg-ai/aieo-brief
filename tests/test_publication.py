@@ -9,6 +9,31 @@ from source_evidence_quality import evidence_chunks
 from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
 from validate_public_site import inspect_json
 class Publication(unittest.TestCase):
+ def test_current_week_directional_labels_have_supporting_readings(self):
+  from editorial_corrections import apply_corrections
+  stories=json.loads((ROOT/'data/archive/stories.json').read_text())['stories']
+  current=[copy.deepcopy(x) for x in stories if x.get('kind')=='news' and x.get('edition')=='2026-W45']
+  apply_corrections(current,ROOT)
+  self.assertEqual(len(current),74)
+  self.assertFalse([(x['event_id'],side) for x in current for side in ('human','ai')
+                    if not x.get('for_humans' if side=='human' else 'for_ai')])
+  satire=next(x for x in current if x['event_id']=='5977c536-b34d-40a0-92be-46e4c51b1a63')
+  self.assertEqual((satire['claim_status'],satire['ai_direction']),('opinion','none'))
+  self.assertIn('fictional',satire['what_happened'].lower())
+  children=next(x for x in current if x['event_id']=='7f5ca246-99a6-4209-8914-478d532629f8')
+  self.assertEqual(children['ai_direction'],'none')
+ def test_source_bound_direction_correction_keeps_reviewed_story(self):
+  from editorial_corrections import reading_proof
+  proof=reading_proof('event:5977c536-b34d-40a0-92be-46e4c51b1a63',ROOT)
+  row={'event_id':proof['event_id'],'axes':{'human':{'direction':'mixed'},'ai':{'direction':'none'}},
+       'evidence_basis_summary':{'source_fingerprints':proof['source_fingerprints']}}
+  event={'sources':[{'url':url} for url in proof['source_urls']]}
+  release={'release_id':'2026-W45','content_sha256':'revised-public-projection'}
+  version={'publication_status':'published','evidence_basis_summary':{'prompt_version':PROMPT_VERSION,
+           'axes_sha256':'prior-axes','release_id':'2026-W45','source_release_sha256':'prior-public-projection'}}
+  self.assertTrue(version_valid(version,row,release,event))
+  changed=copy.deepcopy(row);changed['evidence_basis_summary']['source_fingerprints']={'source':'changed'}
+  self.assertFalse(version_valid(version,changed,release,event))
  def test_summary_reuse_requires_identical_event_and_relationship_provenance(self):
   from brief_contract import editorial_source_fingerprint, PROMPT_VERSION, digest
   event={'event_id':'one','sources':[{'article_id':'a'}]}
