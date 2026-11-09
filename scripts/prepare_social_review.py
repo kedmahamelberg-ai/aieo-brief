@@ -215,6 +215,12 @@ def new_photos(topics, history, output, release):
                 title = page['title'].removeprefix('File:')
                 if not re.search(pattern, title, re.I):
                     continue
+                if re.search(r'\b(?:Gezicht|etching|engraving|lithograph|drawing|painting|sketch|woodcut|poster|illustration)\b', title, re.I):
+                    continue
+                if scope.get('reject_title_pattern') and re.search(scope['reject_title_pattern'], title, re.I):
+                    continue
+                if scope.get('location_pattern') and not re.search(scope['location_pattern'], title, re.I):
+                    continue
                 if not country_scene_candidate(page, market) and scope.get('kind') != 'subject':
                     continue
                 if scope.get('kind') == 'subject' and re.search(r'\b(?:painting|drawing|engraving|illustration|portrait|headshot|selfie|wildfire|flood|earthquake|war|protest|funeral|memorial)\b', title, re.I):
