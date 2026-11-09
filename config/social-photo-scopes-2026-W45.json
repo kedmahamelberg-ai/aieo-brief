@@ -1,0 +1,21 @@
+{
+  "schema_version": "brief_social_photo_scopes_v1",
+  "source_edition": "2026-W45",
+  "purpose": "The photograph must be relevant to the linked article, be illustrative rather than imply it depicts the event, and have a Public Domain or CC0 Commons record.",
+  "topics": {
+    "story/what-ottawa-thinks-about-trump-s-plans-limits/index.html": {"queries": ["Ottawa skyline", "Ottawa Parliament Hill", "Ottawa cityscape"], "title_pattern": "Ottawa|Parliament Hill", "kind": "place"},
+    "story/sciences-po-researchers-warn-ai-will-but-limits/index.html": {"queries": ["Paris skyline", "Paris cityscape", "Paris rooftops"], "title_pattern": "Paris", "kind": "place"},
+    "story/beijing-reveals-ai-new-brand-card-excitement-caution/index.html": {"queries": ["Beijing skyline", "Beijing cityscape", "Beijing buildings"], "title_pattern": "Beijing", "kind": "place"},
+    "story/sovereignty-jobs-what-governments-ai-roadmap-limits/index.html": {"queries": ["Paris cityscape", "Paris skyline", "Paris river buildings"], "title_pattern": "Paris", "kind": "place"},
+    "story/xinhua-ai-media-blue-book-world-ethical-path/index.html": {"queries": ["Beijing buildings", "Beijing skyline", "Beijing cityscape"], "title_pattern": "Beijing", "kind": "place"},
+    "story/acr-2026-ai-boosts-ultrasound-rheumatology-clinician-oversight/index.html": {"queries": ["ultrasound machine", "medical ultrasound equipment", "ultrasound scanner"], "title_pattern": "ultrasound|sonograph", "kind": "subject"},
+    "story/australian-reserve-bank-ai-has-not-cut-jobs/index.html": {"queries": ["Sydney skyline", "Sydney cityscape", "Sydney buildings"], "title_pattern": "Sydney", "kind": "place"},
+    "story/data-comes-before-artificial-intelligence-experts-say/index.html": {"queries": ["aircraft maintenance hangar", "aircraft hangar", "aircraft maintenance"], "title_pattern": "aircraft|airplane|aeroplane|hangar", "kind": "subject"},
+    "story/vietnamese-cinema-gains-ai-lecourrier-notes-limits-responsibilities/index.html": {"queries": ["film camera", "movie camera", "cinema projector"], "title_pattern": "film camera|movie camera|cinema projector|film projector", "kind": "subject"},
+    "story/ai-already-factor-le-mans-according-teams-experts/index.html": {"queries": ["Le Mans circuit", "Circuit de la Sarthe", "motor racing circuit"], "title_pattern": "Le Mans|Sarthe|racing circuit|race track", "kind": "subject"},
+    "story/left-alliance-finland-claims-can-lead-despite-controversy/index.html": {"queries": ["Helsinki skyline", "Helsinki cityscape", "Helsinki buildings"], "title_pattern": "Helsinki", "kind": "place"},
+    "story/open-chinese-ai-models-dominate-token-temps-finds/index.html": {"queries": ["data center server racks", "data centre server room", "server racks"], "title_pattern": "server|data cent", "kind": "subject"},
+    "story/ai-productivity-driver-which-firms-benefit-limits-appear/index.html": {"queries": ["office computer desk", "office computers", "workplace computer"], "title_pattern": "office|workplace|computer", "kind": "subject"},
+    "story/ai-regulation-market-risk-contrepoints-warns-stocks-slide/index.html": {"queries": ["Wall Street New York", "New York stock exchange building", "Wall Street buildings"], "title_pattern": "Wall Street|New York Stock Exchange", "kind": "subject"}
+  }
+}
