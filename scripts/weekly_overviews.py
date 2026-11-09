@@ -302,6 +302,26 @@ def _load_history(path: Path) -> dict:
     return value
 
 
+def _apply_visual_correction(overview: dict, root: Path) -> None:
+    release_id = _plain(overview.get('release_id'))
+    path = root / 'data/weekly-overviews/visual-corrections' / f'{release_id}.json'
+    if not path.exists():
+        return
+    correction = json.loads(path.read_text(encoding='utf-8'))
+    if correction.get('schema_version') != 'brief_weekly_visual_correction_v1' or correction.get('release_id') != release_id:
+        raise ValueError('Weekly visual correction does not match this edition')
+    for kind, values in correction['sections'].items():
+        section = overview[kind]
+        if section.get('status') != 'ready':
+            continue
+        if section.get('image_path') not in (values['previous_image_path'], values['image_path']):
+            raise ValueError('Approved weekly image changed before visual correction')
+        asset = root / values['image_path']
+        if not asset.is_file():
+            raise ValueError('Corrected weekly image asset is missing: ' + values['image_path'])
+        section.update({key: value for key, value in values.items() if key != 'previous_image_path'})
+
+
 def _restore_archived_research_approvals(records: dict[str, dict], root: Path) -> None:
     """Restore a previously approved research edition from its review snapshot.
 
@@ -380,6 +400,9 @@ def prepare_weekly_overviews(
     current = apply_editorials(current, source_news if source_news is not None else news,
                                source_research if source_research is not None else research,
                                root, list(records.values()), allow_model=allow_model)
+    _apply_visual_correction(current, Path(root))
+    for archived in records.values():
+        _apply_visual_correction(archived, Path(root))
     current.pop('content_sha256', None)
     current['content_sha256'] = hashlib.sha256(
         json.dumps(current, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
