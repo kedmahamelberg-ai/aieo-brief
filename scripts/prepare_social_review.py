@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
 BASE = 'https://brief.hamelberg-ai.com/'
 STATUS = 'DRAFT_NOT_APPROVED_DO_NOT_PUBLISH'
-REVIEW_REVISION = 4  # W45 photo covers require individual source review.
+REVIEW_REVISION = 4
 COUNTRIES = {'US': 'United States', 'CA': 'Canada', 'GB': 'United Kingdom', 'FR': 'France', 'CN': 'China'}
 GEO = dict(US='#USAI', CA='#CanadaAI', GB='#UKAI', FR='#FranceAI', CN='#ChinaAI')
 SUBJECT_TAGS = {'policy': '#AIGovernance', 'work': '#FutureOfWork',
@@ -118,7 +118,13 @@ def topic_plan(items, monday, news):
     for row in news:
         if row['path'] in excluded and excluded[row['path']] not in [source['url'] for source in row.get('sources', [])]:
             raise ValueError('Social exclusion source changed: ' + row['path'])
-    eligible = [row for row in news if row['path'] not in excluded and row.get('claim_status') != 'opinion']
+    selected_news = set(audit.get('selected_news', []))
+    if selected_news and len(selected_news) != 14:
+        raise ValueError('A frozen social News selection must contain fourteen distinct paths')
+    eligible = [row for row in news if row['path'] not in excluded and row.get('claim_status') != 'opinion'
+                and (not selected_news or row['path'] in selected_news)]
+    if selected_news and selected_news != {row['path'] for row in eligible}:
+        raise ValueError('A frozen social News selection is unavailable or was excluded by a source audit')
     target = {k: 3 for k in COUNTRIES}
     target[list(COUNTRIES)[monday.isocalendar().week % 5]] = 2
     pools = {}
@@ -145,6 +151,8 @@ def topic_plan(items, monday, news):
         subject_tag = {'acr-2026-ai-boosts-ultrasound-rheumatology-clinician-oversight': '#HealthAI',
                        'ai-already-factor-le-mans-according-teams-experts': '#MotorsportAI'}.get(a.get('slug'), SUBJECT_TAGS.get(a.get('topic'), '#AIApplications'))
         topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES.get(market, ''), 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO.get(market, '#AINews')], 'second_subject_tag': subject_tag, 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Country named only when anchored in the article or a matching source-checked geography record', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
+    if selected_news and {topic['path'] for topic in topics} != selected_news:
+        raise ValueError('The frozen social News selection could not be fully scheduled')
     research = [i for i in items if i.get('kind') == 'research' and str(monday - timedelta(days=7)) <= i.get('date', '') < str(monday) and i.get('what_happened') and i.get('sources')]
     if not research:
         raise ValueError('No current source-backed Research item')
@@ -193,10 +201,9 @@ def new_photos(topics, history, output, release):
     photos = {}
     stems = set()
     selected = [t for t in topics if t['kind'] == 'News']
-    if scoped and set(scoped) != {topic['path'] for topic in selected}:
+    if scoped and not {topic['path'] for topic in selected}.issubset(set(scoped)):
         missing = sorted({topic['path'] for topic in selected} - set(scoped))
-        stale = sorted(set(scoped) - {topic['path'] for topic in selected})
-        raise ValueError(f'Photo scope manifest differs from the deployed edition. Missing: {missing}. Stale: {stale}.')
+        raise ValueError(f'Photo scope manifest lacks the selected News stories: {missing}.')
     for topic in selected:
         market = topic['market']
         scope = scoped.get(topic['path'], {})
