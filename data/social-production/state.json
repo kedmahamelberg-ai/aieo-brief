@@ -19,13 +19,11 @@
     },
     "2026-W45": {
       "publication_week": "2026-W46",
-      "status": "WITHHELD_PENDING_PHOTO_REVIEW",
-      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42597575148/artifacts/13664825642",
-      "run_id": "42597575148",
-      "review_revision": 3,
-      "created_at": "2026-11-09T11:03:48.612407+01:00",
-      "withheld_reason": "Owner requested the original photo-based layout; branded artwork review is superseded pending source-relevant rights-checked photographs.",
-      "withheld_at": "2026-11-09"
+      "status": "DRAFT_NOT_APPROVED_DO_NOT_PUBLISH",
+      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42612492836/artifacts/13672215694",
+      "run_id": "42612492836",
+      "review_revision": 4,
+      "created_at": "2026-11-09T13:04:39.719091+01:00"
     }
   },
   "review_history": {
@@ -56,6 +54,16 @@
         "review_revision": 2,
         "created_at": "2026-11-09T10:53:30.671188+01:00",
         "withheld_reason": "Final copy audit found the Substack post mentions a research selection without linking it and subject tags need topic matching.",
+        "withheld_at": "2026-11-09"
+      },
+      {
+        "publication_week": "2026-W46",
+        "status": "WITHHELD_PENDING_PHOTO_REVIEW",
+        "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42597575148/artifacts/13664825642",
+        "run_id": "42597575148",
+        "review_revision": 3,
+        "created_at": "2026-11-09T11:03:48.612407+01:00",
+        "withheld_reason": "Owner requested the original photo-based layout; branded artwork review is superseded pending source-relevant rights-checked photographs.",
         "withheld_at": "2026-11-09"
       }
     ]
