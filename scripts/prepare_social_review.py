@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
 BASE = 'https://brief.hamelberg-ai.com/'
 STATUS = 'DRAFT_NOT_APPROVED_DO_NOT_PUBLISH'
+REVIEW_REVISION = 2
 COUNTRIES = {'US': 'United States', 'CA': 'Canada', 'GB': 'United Kingdom', 'FR': 'France', 'CN': 'China'}
 GEO = dict(US='#USAI', CA='#CanadaAI', GB='#UKAI', FR='#FranceAI', CN='#ChinaAI')
 ACCOUNTS = {'linkedin': 'The Brief | AI Empowerment Observatory Page, company 146490147', 'facebook': 'The Brief | AI Empowerment Observatory Page, profile 61594324679612', 'instagram': 'thebrief_ai.empowerment', 'substack_note': 'The Brief publication, @thebriefaieo'}
@@ -67,7 +68,10 @@ def due(items, state, today):
     # Never catch up an obsolete edition as if it were this week's content.
     if today >= monday + timedelta(days=7):
         return False, release
-    return release not in state.get('editions', {}), release
+    editions = state.get('editions', {})
+    previous = editions.get(release, {})
+    required_revision = REVIEW_REVISION if release == '2026-W45' else 1
+    return previous.get('review_revision', 1 if release in editions else 0) < required_revision, release
 
 
 def clean(text):
@@ -102,11 +106,20 @@ def verified_markets(row):
 
 def topic_plan(items, monday, news):
     """Prefer verified country stories, then use unlabelled edition stories."""
+    release = news[0]['edition'] if news else ''
+    audit = read(ROOT / 'config' / f'social-source-audit-{release}.json', {})
+    if audit and audit.get('schema_version') != 'brief_social_source_audit_v1':
+        raise ValueError('Unknown social source audit schema')
+    excluded = {row['path']: row['source_url'] for row in audit.get('excluded_news', [])}
+    for row in news:
+        if row['path'] in excluded and excluded[row['path']] not in [source['url'] for source in row.get('sources', [])]:
+            raise ValueError('Social exclusion source changed: ' + row['path'])
+    eligible = [row for row in news if row['path'] not in excluded and row.get('claim_status') != 'opinion']
     target = {k: 3 for k in COUNTRIES}
     target[list(COUNTRIES)[monday.isocalendar().week % 5]] = 2
     pools = {}
     for market in COUNTRIES:
-        pools[market] = [i for i in news if market in verified_markets(i) and i.get('what_happened') and i.get('body_paragraphs') and i.get('sources') and not any('_localized_' in str(p) for p in i.get('body_paragraphs', []))]
+        pools[market] = [i for i in eligible if market in verified_markets(i) and i.get('what_happened') and i.get('body_paragraphs') and i.get('sources') and not any('_localized_' in str(p) for p in i.get('body_paragraphs', []))]
         pools[market].sort(key=lambda i: (not i.get('has_editorial'), -date.fromisoformat(i['date']).toordinal(), i['path']))
     topics, used, counts, previous = [], set(), Counter(), None
     for n in range(14):
@@ -115,7 +128,7 @@ def topic_plan(items, monday, news):
             market = min(available, key=lambda m: (m == previous, counts[m], list(COUNTRIES).index(m)))
             a = next(a for a in pools[market] if a['path'] not in used)
         else:
-            remaining = [i for i in news if i['path'] not in used and i.get('has_editorial')
+            remaining = [i for i in eligible if i['path'] not in used and i.get('has_editorial')
                          and i.get('what_happened') and i.get('body_paragraphs') and i.get('sources')
                          and not any('_localized_' in str(p) for p in i['body_paragraphs'])]
             remaining.sort(key=lambda i: (-date.fromisoformat(i['date']).toordinal(), i['path']))
@@ -131,6 +144,11 @@ def topic_plan(items, monday, news):
         raise ValueError('No current source-backed Research item')
     a = max(research, key=lambda i: (i['date'], i['path']))
     topics.append({'id': 'WED06_RESEARCH', 'date': str(monday + timedelta(days=2)), 'time': '06:00', 'kind': 'Research', 'country': '', 'market': '', 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#AIResearch', '#ResearchCommunity'], 'second_subject_tag': '#MachineLearning', 'evidence': clean(a.get('research_label', 'Research')) + ', ' + clean(a.get('summary_basis', 'Evidence scope requires review')), 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'substack_lead': 'The research selection examines the evidence behind the result.'})
+    for override in audit.get('research_overrides', []):
+        if override['path'] == a['path']:
+            if override['source_url'] not in topics[-1]['source_urls']:
+                raise ValueError('Social research override source changed')
+            topics[-1].update(override['after'])
     return sorted(topics, key=lambda t: (t['date'], t['time']))
 
 
@@ -243,9 +261,18 @@ def render(topics, photos, output):
     for t in topics:
         for n,text in enumerate([t['hook'],t['fact'],cta(t)],1):
             im=Image.new('RGB',(1080,1350),paper);d=ImageDraw.Draw(im)
-            if n==1 and t['kind']=='News':
+            if n==1 and t['kind']=='News' and t.get('photo'):
                 photo=Image.open(output/photos[t['photo']]['local_source']).convert('RGB')
                 im.paste(ImageOps.fit(photo,(1080,650)),(0,250));d.rectangle((0,900,1080,1350),fill=green)
+                block(d,text,(65,935,950,310),fill=paper)
+            elif n==1 and t['kind']=='News':
+                # Source-linked branded art avoids implying that a stock scene
+                # depicts the country, people, or event in an unrelated story.
+                d.rectangle((0,250,1080,900),fill=green)
+                d.ellipse((630,330,1100,800),outline='#b8d6c5',width=8)
+                d.ellipse((755,455,975,675),outline='#b8d6c5',width=8)
+                block(d,'SOURCE-LINKED REPORT',(65,520,820,85),42,paper)
+                d.rectangle((0,900,1080,1350),fill=green)
                 block(d,text,(65,935,950,310),fill=paper)
             else:block(d,text,(65,380,950,700),max_size=60 if n==1 else 50)
             if n==1 and t['kind']=='Research':
@@ -282,7 +309,7 @@ def build(topics, photos, output, release, start, end, monday):
             if platform=='linkedin':i['single_image_asset']=slides[0]
             if platform=='instagram':i['story']=dict(scheduled_at=dt,frames=[str((output/'assets'/f"{t['id']}_story_{n}.png").resolve()) for n in (1,2,3)],link_stickers_enabled=False,article_destination=url,music_enabled=False)
             items.append(i)
-    post={'status':STATUS,'proposed_at':datetime.combine(monday,datetime.min.time(),tzinfo=ZONE).replace(hour=12).isoformat(),'title':'This week in The Brief','body':'This edition follows AI across five markets, with people and institutions deciding how it should be used. Start with these source-linked stories.\n\n'+'\n\n'.join(t['hook']+'\n'+BASE+t['path'] for t in topics[::3]),'destination':BASE+'?'+urlencode(dict(utm_source='substack_post',utm_medium='organic_social',utm_campaign=campaign))}
+    post={'status':STATUS,'proposed_at':datetime.combine(monday,datetime.min.time(),tzinfo=ZONE).replace(hour=12).isoformat(),'title':'This week in The Brief','body':'This edition follows source-linked reporting on AI and its effects on people and institutions. Start with these stories and the research selection.\n\n'+'\n\n'.join(t['hook']+'\n'+BASE+t['path'] for t in topics[::3]),'destination':BASE+'?'+urlencode(dict(utm_source='substack_post',utm_medium='organic_social',utm_campaign=campaign))}
     return dict(schema_version='aieo_social_batch_v4',source_edition=release,source_dates=f'{start} to {end}',publishing_week=week,timezone='Europe/Amsterdam',status=STATUS,approval_phrase='APPROVE SOCIAL WEEK '+week,topics=topics,items=items,substack_post=post,editorial_review_required=True)
 
 
@@ -298,7 +325,7 @@ def verify_links(batch):
 
 
 def review(batch, output):
-    lines=['# The Brief social approval batch '+batch['publishing_week'],'','**DRAFT. NOT APPROVED. DO NOT PUBLISH.**','','Source coverage '+batch['source_dates']+'. All dates use Europe/Amsterdam.','','LinkedIn uses one image. Facebook and Instagram carousels must appear in this exact order: 1 cover/photo and headline, 2 explanation, 3 CTA. Upload each carousel image separately and wait for Meta to finish processing it before adding the next. After scheduling or publishing, reopen the saved post and check all three cards in order; a correct composer preview is not sufficient. If the saved order is wrong, create and verify a replacement before moving the wrong scheduled copy to Drafts. Stories use photo/headline, explanation, CTA. Music and stickers are omitted. Exact tracked URLs are the fallback until approved short aliases are imported.','','## Editorial review','', 'Review copy, featured geography, photo relevance and claims before approval. Photographs are illustrative scenes and do not depict the reported events. No generated images or paid model calls are used. Draft tags reflect source topics and require search-interest review.','']
+    lines=['# The Brief social approval batch '+batch['publishing_week'],'','**DRAFT. NOT APPROVED. DO NOT PUBLISH.**','','Source coverage '+batch['source_dates']+'. All dates use Europe/Amsterdam.','','LinkedIn uses one image. Facebook and Instagram carousels must appear in this exact order: 1 branded cover and headline, 2 explanation, 3 CTA. Upload each carousel image separately and wait for Meta to finish processing it before adding the next. After scheduling or publishing, reopen the saved post and check all three cards in order; a correct composer preview is not sufficient. If the saved order is wrong, create and verify a replacement before moving the wrong scheduled copy to Drafts. Stories use the same three-card sequence. Music and stickers are omitted. Exact tracked URLs are the fallback until approved short aliases are imported.','','## Editorial review','', 'Review copy, featured geography and claims before approval. The branded covers do not depict the reported events. Curated legacy editions may include separately credited photographs. No generated images or paid model calls are used. Draft tags reflect source topics and require search-interest review.','']
     for t in batch['topics']:
         lines+=['## '+t['id'],'',t['date']+' '+t['time']+' Amsterdam','',f"[Article]({BASE+t['path']})",'',t['evidence'],'',t.get('source_limitation',''),'']
         if t.get('photo'):
@@ -322,7 +349,11 @@ def main():
         history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
         for photo in read(a.output/'PHOTO_MANIFEST.json').values():
             for field,key in [('source_url','source_urls'),('sha256','sha256')]:history[key]=sorted(set(history[key]+[photo[field]]))
-        state['editions'][batch['source_edition']]={'publication_week':batch['publishing_week'],'status':STATUS,'artifact_url':artifact,'run_id':os.environ.get('GITHUB_RUN_ID'),'created_at':datetime.now(ZONE).isoformat()}
+        prior = state.get('editions', {}).get(batch['source_edition'])
+        if prior:
+            state.setdefault('review_history', {}).setdefault(batch['source_edition'], []).append(prior)
+        revision = REVIEW_REVISION if batch['source_edition'] == '2026-W45' else 1
+        state['editions'][batch['source_edition']]={'publication_week':batch['publishing_week'],'status':STATUS,'artifact_url':artifact,'run_id':os.environ.get('GITHUB_RUN_ID'),'review_revision':revision,'created_at':datetime.now(ZONE).isoformat()}
         save(statepath,state);save(ROOT/'config/social-photo-history.json',history);return
     expected_path=os.environ.get('EXPECTED_ITEMS')
     expected=edition(read(Path(expected_path))['items'])[0] if expected_path else None
@@ -350,8 +381,9 @@ def main():
     if curated:
         photos=curated['photos']
         curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip')
-    else:photos=new_photos(topics,history,output)
-    if len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14:raise ValueError('Fourteen distinct photographs required')
+    else:
+        photos={}
+    if curated and (len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14):raise ValueError('Fourteen distinct curated photographs required')
     save(output/'PHOTO_MANIFEST.json',photos);save(output/'topics.json',topics)
     render(topics,photos,output);batch=build(topics,photos,output,release,start,end,monday)
     if curated and curated.get('substack_post'):
@@ -363,7 +395,7 @@ def main():
     # Portable downloaded artifacts must not retain runner-specific absolute paths.
     prefix=str(output)+'/'
     portable=json.loads(json.dumps(batch).replace(prefix,''));save(output/'batch.json',portable)
-    save(output/'READY_FOR_REVIEW.json',{'status':STATUS,'publication_week':batch['publishing_week'],'editorial_review_required':True,'checks':['prepared media','copy fields','link responses','photo rights','photo duplicates'],'created_at':datetime.now(ZONE).isoformat()})
+    save(output/'READY_FOR_REVIEW.json',{'status':STATUS,'publication_week':batch['publishing_week'],'editorial_review_required':True,'checks':['prepared media','copy fields','link responses','visual source scope'],'created_at':datetime.now(ZONE).isoformat()})
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:f.write('## Social review '+batch['publishing_week']+'\n\nDraft package produced after website deployment. Download the social-review artifact and review BATCH_REVIEW.md. **No posts published or scheduled.**\n\n'+batch['approval_phrase']+'\n')
 
