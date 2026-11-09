@@ -1,41 +1,41 @@
 {
   "release_id": "2026-W45",
-  "human_approved_at": "2026-11-09T09:33:57.389408+00:00",
+  "human_approved_at": "2026-11-09T12:23:57.611887+00:00",
   "approved_by": "kedmahamelberg-ai",
   "markets": {
     "kind": "markets",
     "eyebrow": "THE WEEK FROM ABOVE",
-    "title": "A Neighborly View of the Week With a Small Question in Mind",
-    "deck": "The satirical column questions AI productivity promises and who bears the cost. The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain.",
-    "summary": "The satirical column questions AI productivity promises and who bears the cost. The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain. A blue book on AI and media outlines opportunities and risks and calls for ethical use. A Paris conference frames AI as a speed tool where human choices still guide meaning. Le Mans coverage shows AI assisting data work and strategy but not yet dictating car design.",
+    "title": "What is the bridge open source can offer for AI this week?",
+    "deck": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
+    "summary": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets. From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people. The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses. A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
     "scope_note": "Five selected stories from five discovery markets.",
-    "word_count": 97,
+    "word_count": 124,
     "reading_minutes": 1,
-    "image_path": "assets/culture/a51ce6212342f36607ba88c9.jpg",
-    "image_alt": "Bahram Gur Arrives at the House of a Merchant, text page (recto); Bahram Gur Slays a Dragon (verso), from a Shahnama (Book of Kings) of Firdausi (940–1019 or 1025), known as the Great Mongol Shahnama",
-    "image_caption": "Bahram Gur Arrives at the House of a Merchant, text page (recto); Bahram Gur Slays a Dragon (verso), from a Shahnama (Book of Kings) of Firdausi (940–1019 or 1025), known as the Great Mongol Shahnama",
-    "image_credit": "Artist unknown · Cleveland Museum of Art",
-    "image_source_url": "https://clevelandart.org/art/1943.658",
+    "image_path": "assets/culture/f1b34451095142a9ab80beeb.jpg",
+    "image_alt": "Writing Books under the Pine Trees",
+    "image_caption": "Writing Books under the Pine Trees",
+    "image_credit": "Wang Meng (Chinese, c. 1308–1385) · Cleveland Museum of Art",
+    "image_source_url": "https://clevelandart.org/art/1997.94",
     "image_rights": "CC0 image",
     "entries": [
       {
         "code": "US",
         "name": "United States",
-        "topic": "Work & skills",
+        "topic": "Rules & rights",
         "story": {
-          "path": "story/development-5977c536-b34d-40a0-92be-46e4c51b1a63/index.html",
-          "headline": "Satirical column questions AI productivity promises and job security",
-          "publisher": "MinneapoliMedia"
+          "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html",
+          "headline": "Global tech stocks wobble as AI regulation fears rise after midterms",
+          "publisher": "The Guardian"
         }
       },
       {
         "code": "CA",
         "name": "Canada",
-        "topic": "Work & skills",
+        "topic": "Culture & creativity",
         "story": {
-          "path": "story/development-4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8/index.html",
-          "headline": "Australian Reserve Bank Says AI Has Not Yet Raised Productivity or Cut Jobs",
-          "publisher": "Zonebourse Suisse"
+          "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html",
+          "headline": "Do We Need Another Novel? A Professor Questions AI's Role in Literature",
+          "publisher": "l-express.ca"
         }
       },
       {
@@ -43,29 +43,29 @@
         "name": "China",
         "topic": "Culture & creativity",
         "story": {
-          "path": "story/development-3516d3aa-a46d-464a-ac5d-07970de54584/index.html",
-          "headline": "Xinhua reports AI+Media blue book at World Media Summit highlights mixed gains and cautious, ethical path",
+          "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html",
+          "headline": "From Wuzhen AI Open-Source Talk, key terms for a shared ecosystem emerge",
           "publisher": "新华网"
         }
       },
       {
         "code": "FR",
         "name": "France",
-        "topic": "Culture & creativity",
+        "topic": "Rules & rights",
         "story": {
-          "path": "story/development-8520c0a7-7500-49b3-918d-ed09feb6f220/index.html",
-          "headline": "Animation and Generative AI: A Creator Speaks on Mass Production and Meaning",
-          "publisher": "Ville de Paris"
+          "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html",
+          "headline": "CEDH chief warns AI can speed justice but may overwhelm system and invite abusive claims",
+          "publisher": "BFM"
         }
       },
       {
         "code": "GB",
         "name": "United Kingdom",
-        "topic": "Everyday life",
+        "topic": "Rules & rights",
         "story": {
-          "path": "story/development-1dd8c701-0073-4e51-a6d0-1940fb420919/index.html",
-          "headline": "Is AI Already a Factor in Le Mans, According to Teams and Experts?",
-          "publisher": "24 Heures du Mans"
+          "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html",
+          "headline": "BBC: EU AI rules may apply in Northern Ireland; UK government sets limits",
+          "publisher": "BBC"
         }
       }
     ],
@@ -76,46 +76,48 @@
     "prose": [
       [
         {
-          "text": "The satirical column questions AI productivity promises and who bears the cost.",
-          "source_key": "event:5977c536-b34d-40a0-92be-46e4c51b1a63",
-          "path": "story/development-5977c536-b34d-40a0-92be-46e4c51b1a63/index.html"
+          "text": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms.",
+          "source_key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+          "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html"
         },
         {
-          "text": "The Australian central bank brief notes AI has not yet raised productivity or cut jobs, keeping the outlook uncertain.",
-          "source_key": "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8",
-          "path": "story/development-4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8/index.html"
+          "text": "EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
+          "source_key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
+          "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html"
         }
       ],
       [
         {
-          "text": "A blue book on AI and media outlines opportunities and risks and calls for ethical use.",
-          "source_key": "event:3516d3aa-a46d-464a-ac5d-07970de54584",
-          "path": "story/development-3516d3aa-a46d-464a-ac5d-07970de54584/index.html"
+          "text": "From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people.",
+          "source_key": "event:11b57efe-191f-437f-b405-a2f1c37d774d",
+          "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html"
         },
         {
-          "text": "A Paris conference frames AI as a speed tool where human choices still guide meaning.",
-          "source_key": "event:8520c0a7-7500-49b3-918d-ed09feb6f220",
-          "path": "story/development-8520c0a7-7500-49b3-918d-ed09feb6f220/index.html"
+          "text": "The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses.",
+          "source_key": "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f",
+          "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html"
         }
       ],
       [
         {
-          "text": "Le Mans coverage shows AI assisting data work and strategy but not yet dictating car design.",
-          "source_key": "event:1dd8c701-0073-4e51-a6d0-1940fb420919",
-          "path": "story/development-1dd8c701-0073-4e51-a6d0-1940fb420919/index.html"
+          "text": "A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
+          "source_key": "event:0137b615-2741-4b50-9a60-dd93e0471ea1",
+          "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html"
         }
       ]
     ],
+    "papers": [],
+    "pending_reason": "approved_sources_changed",
     "source_hashes": {
-      "event:5977c536-b34d-40a0-92be-46e4c51b1a63": "f928aaffe0b65112e752cd4b31293d91e82e3db0a864a4a27cae9ba5a5cbb84b",
-      "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8": "d0312a7cd5e59019925a0029de41ee22306469244ae9f1d8d70e87c5b423bf80",
-      "event:3516d3aa-a46d-464a-ac5d-07970de54584": "6c1e43decf8b5e77fe5f77e18057d594d534f0cd071e842ec657dc8b02115613",
-      "event:8520c0a7-7500-49b3-918d-ed09feb6f220": "355701ffb78e37d596790f94ab906691754a6f6a0a7d6e52ace19b84be0f5e6a",
-      "event:1dd8c701-0073-4e51-a6d0-1940fb420919": "8cff1446c1176299df3cf8b5865d5877779b3c6ef21019c0182df6b80b939762"
+      "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7": "f074a81b8d14a997089da8fbc984014a23ee8c86c7a9386dbf16758ae63a9e30",
+      "event:0137b615-2741-4b50-9a60-dd93e0471ea1": "cb2e5b3a682d92953e6fe515f4c4972dabc5764c03fc6660f5f02c424dcc91c3",
+      "event:11b57efe-191f-437f-b405-a2f1c37d774d": "21f321d2043b99ceffbf443991255a72d1a463dd7a5f8694a486c263341d65e3",
+      "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f": "8b89aa1258fe76f5593a5059bd22659281028f584bc95cda1a8b594dc5e69bf1",
+      "event:034c9f16-afde-4d13-bfa2-822d8b830213": "d065e86d6131145e1ea4956a0e453e522b4cfadbc1dc7d5001ba1c7a9f4d3df8"
     },
-    "image_key": "culture:a51ce6212342f36607ba88c9",
-    "image_work_key": "e9747ae0b4f3b8f270660b7a1b01b04b9c04044870e1508652446ed6a095477d",
-    "image_reason": "The landscape evokes patient motion through a shifting environment, mirroring the week s measured progression and human guidance.",
+    "image_key": "culture:f1b34451095142a9ab80beeb",
+    "image_work_key": "0317aa591e1d8633b61e68dc5dcd3fc18df918ce51c7b33a04f63e848ed9559c",
+    "image_reason": "The pine trees in Writing Books under the Pine Trees echo a patient pace amid rapid change.",
     "review_checks": {
       "grounded": true,
       "clear_high_school_language": true,
@@ -136,12 +138,12 @@
     "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
     "word_count": 143,
     "reading_minutes": 1,
-    "image_path": "assets/culture/d65ac8570d1927998fb7cdae.jpg",
-    "image_alt": "A Mounted Prince Hunting Lion in a Rocky Landscape",
-    "image_caption": "A Mounted Prince Hunting Lion in a Rocky Landscape",
-    "image_credit": "Khem Karan (Indian) · Cleveland Museum of Art",
-    "image_source_url": "https://clevelandart.org/art/2013.310",
-    "image_rights": "CC0 image",
+    "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+    "image_alt": "Milky Way and stars reflected on a backcountry lake in Yellowstone National Park; an illustrative night landscape, not a robot test image",
+    "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park — illustrative photograph",
+    "image_credit": "Neal Herbert / NPS",
+    "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+    "image_rights": "Public domain · Full Granting Rights",
     "papers": [
       {
         "key": "paper:1f57be72ebcab286d54f6980",
@@ -344,7 +346,7 @@
     },
     "image_key": "culture:d65ac8570d1927998fb7cdae",
     "image_work_key": "617ba9aeefcae9c3cc29e27757a5c2b28d0217b959a9b03bac708f5106987782",
-    "image_reason": "A rugged landscape mirrors the robot task in real spaces, where gains are uneven and paths must be found.",
+    "image_reason": "The open landscape suggests exploration; the photograph is illustrative and does not show the robotics experiments.",
     "review_checks": {
       "grounded": true,
       "clear_high_school_language": true,
