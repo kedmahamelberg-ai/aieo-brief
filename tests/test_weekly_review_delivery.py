@@ -10,7 +10,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from weekly_review_delivery import (REPOSITORY, approved_file, email_content,
-                                    install_approval, load_draft, owner_approved)
+                                    install_approval, load_draft, owner_approved, review_images)
 
 
 class WeeklyReviewDeliveryTests(unittest.TestCase):
@@ -78,6 +78,12 @@ class WeeklyReviewDeliveryTests(unittest.TestCase):
             self.assertEqual(archive.read_bytes(), old_bytes)
             self.assertEqual(json.loads(path.read_text())['markets']['source_hashes'],
                              self.draft['overview']['markets']['source_hashes'])
+
+    def test_review_email_accepts_checked_weekly_photo(self):
+        overview = copy.deepcopy(self.draft['overview'])
+        overview['research']['image_path'] = 'assets/weekly-overviews/milky-way-yellowstone.jpg'
+        images = review_images(overview, Path(__file__).resolve().parents[1])
+        self.assertEqual(images['research']['content_type'], 'image/jpeg')
 
     def test_email_shows_plain_prose_and_named_source_links_and_pending_has_no_approval(self):
         url = 'https://github.com/' + REPOSITORY + '/actions/runs/123'
