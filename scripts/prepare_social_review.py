@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
 BASE = 'https://brief.hamelberg-ai.com/'
 STATUS = 'DRAFT_NOT_APPROVED_DO_NOT_PUBLISH'
-REVIEW_REVISION = 4
+REVIEW_REVISION = 4  # The W45 release restores source-relevant photo covers.
 COUNTRIES = {'US': 'United States', 'CA': 'Canada', 'GB': 'United Kingdom', 'FR': 'France', 'CN': 'China'}
 GEO = dict(US='#USAI', CA='#CanadaAI', GB='#UKAI', FR='#FranceAI', CN='#ChinaAI')
 SUBJECT_TAGS = {'policy': '#AIGovernance', 'work': '#FutureOfWork',
