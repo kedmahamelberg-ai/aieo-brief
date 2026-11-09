@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 from xml.sax.saxutils import escape as xml_escape
 import requests
+from PIL import Image, ImageOps
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from brief_contract import validate_complete_export, validate_pair, load_config, safe_url, digest, editorial_source_fingerprint, relationship_fingerprint, MARKETS, PROMPT_VERSION
 from brief_database import dbmaps
@@ -34,6 +35,38 @@ OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com'
 TOPICS={'work':'Work & skills','creativity':'Culture & creativity','everyday':'Everyday life','policy':'Rules & rights','technology':'AI & technology','research':'Science & research','business':'Business & investment'}
 DIRECTION_LABELS={'gain':'Benefits reported','loss':'Downsides reported','mixed':'Benefits and downsides','none':'No direction stated','unresolved':'Evidence incomplete'}
 ISO={'CAN':'CA','CHN':'CN','FRA':'FR','GBR':'GB','USA':'US',**dict((k,k) for k,_ in MARKETS)}
+
+def optimize_site_photos(site: Path) -> None:
+    """Reduce the Pages artifact without changing source assets or image geometry."""
+    original_bytes = optimized_bytes = changed = 0
+    for folder in ('culture', 'spotlight'):
+        for path in (site / 'assets' / folder).rglob('*'):
+            if path.suffix.lower() not in ('.jpg', '.jpeg') or not path.is_file():
+                continue
+            size = path.stat().st_size
+            original_bytes += size
+            if size < 100_000:
+                optimized_bytes += size
+                continue
+            with Image.open(path) as source:
+                profile = source.info.get('icc_profile')
+                photo = ImageOps.exif_transpose(source).convert('RGB')
+                options = {'format': 'JPEG', 'quality': 84, 'subsampling': 0,
+                           'optimize': True, 'progressive': True}
+                if profile:
+                    options['icc_profile'] = profile
+                temporary = path.with_name(path.name + '.optimized')
+                photo.save(temporary, **options)
+            candidate_size = temporary.stat().st_size
+            if candidate_size < size:
+                temporary.replace(path)
+                optimized_bytes += candidate_size
+                changed += 1
+            else:
+                temporary.unlink()
+                optimized_bytes += size
+    print(f'Pages photo transfer: {original_bytes} -> {optimized_bytes} bytes across {changed} optimized files')
+
 
 def utc_now(): return datetime.now(timezone.utc).isoformat()
 def fetch(url):
@@ -322,6 +355,7 @@ def main():
     validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,news,research)
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
+    optimize_site_photos(SITE)
     shutil.copyfile(ROOT/'assets/favicon.ico', SITE/'favicon.ico')
     env=Environment(loader=FileSystemLoader(str(ROOT/'templates')),autoescape=select_autoescape(['html']))
     baseurl=config.get('site_url','').rstrip('/')
