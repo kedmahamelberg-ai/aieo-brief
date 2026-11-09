@@ -215,6 +215,8 @@ def approve(folder, run_id):
     if digest != plan.get('batch_sha256'):
         raise ValueError('Social batch changed after the review was emailed')
     entry = read(ROOT / 'data/social-production/state.json')['editions'][plan['source_edition']]
+    if entry.get('status') != STATUS:
+        raise ValueError('This social batch is withheld pending a corrected review')
     if entry['artifact_url'] != plan['artifact_url']:
         raise ValueError('The repository social artifact changed before approval')
     if not re.fullmatch(r'\d+', run_id):
