@@ -5147,8 +5147,8 @@
       "for_ai": "The team plans to build a model that links scans with patient records and explains its answers; its performance has not yet been reported.",
       "human_direction": "gain",
       "ai_direction": "gain",
-      "human_label": "Benefits reported",
-      "ai_label": "Benefits reported",
+      "human_label": "Potential benefits",
+      "ai_label": "Potential benefits",
       "evidence_complete": true,
       "display_scope": "",
       "sources": [
