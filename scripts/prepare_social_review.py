@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
 BASE = 'https://brief.hamelberg-ai.com/'
 STATUS = 'DRAFT_NOT_APPROVED_DO_NOT_PUBLISH'
-REVIEW_REVISION = 3
+REVIEW_REVISION = 4
 COUNTRIES = {'US': 'United States', 'CA': 'Canada', 'GB': 'United Kingdom', 'FR': 'France', 'CN': 'China'}
 GEO = dict(US='#USAI', CA='#CanadaAI', GB='#UKAI', FR='#FranceAI', CN='#ChinaAI')
 SUBJECT_TAGS = {'policy': '#AIGovernance', 'work': '#FutureOfWork',
@@ -172,7 +172,7 @@ def country_scene_candidate(page, market):
     if re.search(r'\b(?:painting|drawing|maps?|engraving|lithograph|illustration|portrait|headshot|selfie|people|persons?|man|woman|men|women|wildfires?|fires?|floods?|earthquake|disaster|war|protest|funeral|memorial)\b', material, re.I):
         return False
     places = {'US': r'United States|New York|Manhattan|American|USA',
-              'CA': r'Canada|Canadian|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan',
+              'CA': r'Canada|Canadian|Ottawa|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan',
               'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland',
               'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai'}
     scene = r'\b(?:skyline[0-9]*|cityscape|landscape|river|lake|mountains?|forest|trees|crater|coast|harbou?r|bridge|buildings?|cathedral|countryside|city)\b'
@@ -181,19 +181,29 @@ def country_scene_candidate(page, market):
     return bool(market in places and re.search(r'\b(?:'+places[market]+r')\b', material, re.I) and re.search(scene, material, re.I))
 
 
-def new_photos(topics, history, output):
-    """Use only Commons public-domain/CC0 photos, with permanent duplicate history."""
+def new_photos(topics, history, output, release):
+    """Use topic-scoped Commons photographs with permanent duplicate history."""
     old_urls = set(history.get('source_urls', [])); old_hashes = set(history.get('sha256', []))
     queries = {'US': 'New York skyline photograph', 'CA': 'Canada skyline photograph', 'GB': 'London skyline photograph', 'FR': 'France skyline photograph', 'CN': 'Chinese landscape photograph', 'GLOBAL': 'city skyline photograph'}
+    scope_file = ROOT / 'config' / f'social-photo-scopes-{release}.json'
+    scopes = read(scope_file, {})
+    if scopes and (scopes.get('schema_version') != 'brief_social_photo_scopes_v1' or scopes.get('source_edition') != release):
+        raise ValueError('Photo scope manifest does not match the source edition')
+    scoped = scopes.get('topics', {})
     photos = {}
-    for market, query in queries.items():
-        selected = [t for t in topics if t['kind'] == 'News' and t['market'] == market]
-        if not selected:
-            continue
-        params = dict(action='query', generator='search', gsrsearch=query+' -painting -drawing -map', gsrnamespace=6, gsrlimit=100, prop='imageinfo', iiprop='url|size|mime|extmetadata', iiurlwidth=1400, format='json')
-        data = json.loads(fetch('https://commons.wikimedia.org/w/api.php?' + urlencode(params)))
-        candidates = sorted(data.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 999))
-        for topic in selected:
+    stems = set()
+    selected = [t for t in topics if t['kind'] == 'News']
+    if scoped and set(scoped) != {topic['path'] for topic in selected}:
+        raise ValueError('Photo scope manifest must cover every selected News story exactly')
+    for topic in selected:
+        market = topic['market']
+        scope = scoped.get(topic['path'], {})
+        searches = scope.get('queries') or [queries[market]]
+        pattern = scope.get('title_pattern') or (r'skyline|cityscape|landscape' if market == 'GLOBAL' else re.escape(COUNTRIES[market]))
+        for query in searches:
+            params = dict(action='query', generator='search', gsrsearch=query+' -painting -drawing -map', gsrnamespace=6, gsrlimit=100, prop='imageinfo', iiprop='url|size|mime|extmetadata', iiurlwidth=1400, format='json')
+            data = json.loads(fetch('https://commons.wikimedia.org/w/api.php?' + urlencode(params)))
+            candidates = sorted(data.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 999))
             for page in candidates:
                 info = page.get('imageinfo', [{}])[0]; meta = info.get('extmetadata', {})
                 license = meta.get('LicenseShortName', {}).get('value')
@@ -201,7 +211,15 @@ def new_photos(topics, history, output):
                 if license not in ('Public domain', 'CC0') or info.get('mime') != 'image/jpeg' or min(info.get('width', 0), info.get('height', 0)) < 900 or url in old_urls:
                     continue
                 title = page['title'].removeprefix('File:')
-                if not country_scene_candidate(page, market):
+                if not re.search(pattern, title, re.I):
+                    continue
+                if not country_scene_candidate(page, market) and scope.get('kind') != 'subject':
+                    continue
+                if scope.get('kind') == 'subject' and re.search(r'\b(?:painting|drawing|engraving|illustration|portrait|headshot|selfie|wildfire|flood|earthquake|war|protest|funeral|memorial)\b', title, re.I):
+                    continue
+                stem = re.sub(r'\b(?:18|19|20)\d\d\b|\b\d{1,4}\b', '', title.casefold())
+                stem = re.sub(r'[^a-z]+', ' ', stem).strip()
+                if stem in stems:
                     continue
                 path = output/'sources'/f"{topic['id']}.jpg"
                 try:
@@ -212,11 +230,14 @@ def new_photos(topics, history, output):
                 if digest in old_hashes:
                     continue
                 topic['photo'] = topic['id']
-                photos[topic['photo']] = {'title': title, 'creator': clean(meta.get('Artist', {}).get('value')), 'archive': 'Wikimedia Commons', 'source_url': url, 'download_url': info.get('thumburl') or info['url'], 'rights_status': license, 'local_source': 'sources/'+path.name, 'sha256': digest, 'duplicate_check': 'PASS, URL and SHA-256 absent from permanent history', 'verified_on': str(datetime.now(ZONE).date()), 'use': 'Illustrative country photograph; editorial visual review required'}
-                old_urls.add(url); old_hashes.add(digest)
+                photos[topic['photo']] = {'title': title, 'creator': clean(meta.get('Artist', {}).get('value')), 'archive': 'Wikimedia Commons', 'source_url': url, 'download_url': info.get('thumburl') or info['url'], 'rights_status': license, 'local_source': 'sources/'+path.name, 'sha256': digest, 'duplicate_check': 'PASS, URL and SHA-256 absent from permanent history', 'verified_on': str(datetime.now(ZONE).date()), 'use': 'Illustrative subject or place photograph; not an image of the reported event'}
+                old_urls.add(url); old_hashes.add(digest); stems.add(stem)
+                print(json.dumps({'topic': topic['id'], 'photo': title, 'rights': license, 'source_url': url}, ensure_ascii=False))
                 break
-            else:
-                raise ValueError('No fresh rights-cleared photograph for '+topic['id'])
+            if topic.get('photo'):
+                break
+        if not topic.get('photo'):
+            raise ValueError('No fresh, topic-relevant rights-cleared photograph for '+topic['id'])
     return photos
 
 
@@ -272,14 +293,7 @@ def render(topics, photos, output):
                 im.paste(ImageOps.fit(photo,(1080,650)),(0,250));d.rectangle((0,900,1080,1350),fill=green)
                 block(d,text,(65,935,950,310),fill=paper)
             elif n==1 and t['kind']=='News':
-                # Source-linked branded art avoids implying that a stock scene
-                # depicts the country, people, or event in an unrelated story.
-                d.rectangle((0,250,1080,900),fill=green)
-                d.ellipse((630,330,1100,800),outline='#b8d6c5',width=8)
-                d.ellipse((755,455,975,675),outline='#b8d6c5',width=8)
-                block(d,'SOURCE-LINKED REPORT',(65,520,820,85),42,paper)
-                d.rectangle((0,900,1080,1350),fill=green)
-                block(d,text,(65,935,950,310),fill=paper)
+                raise ValueError('A reviewed photograph is required for every News cover')
             else:block(d,text,(65,380,950,700),max_size=60 if n==1 else 50)
             if n==1 and t['kind']=='Research':
                 d.rectangle((65,1080,1015,1195),fill=green)
@@ -335,7 +349,7 @@ def verify_links(batch):
 
 
 def review(batch, output):
-    lines=['# The Brief social approval batch '+batch['publishing_week'],'','**DRAFT. NOT APPROVED. DO NOT PUBLISH.**','','Source coverage '+batch['source_dates']+'. All dates use Europe/Amsterdam.','','LinkedIn uses one image. Facebook and Instagram carousels must appear in this exact order: 1 branded cover and headline, 2 explanation, 3 CTA. Upload each carousel image separately and wait for Meta to finish processing it before adding the next. After scheduling or publishing, reopen the saved post and check all three cards in order; a correct composer preview is not sufficient. If the saved order is wrong, create and verify a replacement before moving the wrong scheduled copy to Drafts. Stories use the same three-card sequence. Music and stickers are omitted. Exact tracked URLs are the fallback until approved short aliases are imported.','','## Editorial review','', 'Review copy, featured geography and claims before approval. The branded covers do not depict the reported events. Curated legacy editions may include separately credited photographs. No generated images or paid model calls are used. Draft tags reflect source topics and require search-interest review.','']
+    lines=['# The Brief social approval batch '+batch['publishing_week'],'','**DRAFT. NOT APPROVED. DO NOT PUBLISH.**','','Source coverage '+batch['source_dates']+'. All dates use Europe/Amsterdam.','','LinkedIn uses one image. Facebook and Instagram carousels must appear in this exact order: 1 relevant photograph and headline, 2 explanation, 3 CTA. Upload each carousel image separately and wait for Meta to finish processing it before adding the next. After scheduling or publishing, reopen the saved post and check all three cards in order; a correct composer preview is not sufficient. If the saved order is wrong, create and verify a replacement before moving the wrong scheduled copy to Drafts. Stories use the same three-card sequence. Music and stickers are omitted. Exact tracked URLs are the fallback until approved short aliases are imported.','','## Editorial review','', 'Review copy, featured geography, claims, and each photograph against its linked source before approval. Photographs illustrate the subject or place; they do not depict the reported event. Photo source, rights and creator are listed with every item. No generated images or paid model calls are used. Draft tags reflect source topics and require search-interest review.','']
     for t in batch['topics']:
         lines+=['## '+t['id'],'',t['date']+' '+t['time']+' Amsterdam','',f"[Article]({BASE+t['path']})",'',t['evidence'],'',t.get('source_limitation',''),'']
         if t.get('photo'):
@@ -392,8 +406,8 @@ def main():
         photos=curated['photos']
         curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip')
     else:
-        photos={}
-    if curated and (len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14):raise ValueError('Fourteen distinct curated photographs required')
+        photos=new_photos(topics,history,output,release)
+    if len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14:raise ValueError('Fourteen distinct photographs required')
     save(output/'PHOTO_MANIFEST.json',photos);save(output/'topics.json',topics)
     render(topics,photos,output);batch=build(topics,photos,output,release,start,end,monday)
     if curated and curated.get('substack_post'):
