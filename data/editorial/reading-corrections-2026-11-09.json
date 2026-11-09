@@ -142,6 +142,39 @@
       "source_fingerprints": {
         "8d89f34995502f6efdb83bbc1df128df": "4b171c4f80adb5c6f9847684f75915629199f4a306a30b3640a7dec3cc2b028a"
       }
+    },
+    {
+      "key": "event:8520c0a7-7500-49b3-918d-ed09feb6f220",
+      "event_id": "8520c0a7-7500-49b3-918d-ed09feb6f220",
+      "reason": "The Paris source is an announcement for a 14 January 2027 conference. The existing story presents the session and its outcomes as already observed.",
+      "source_urls": [
+        "https://www.paris.fr/evenements/conference-animation-et-ia-generative-regard-d-un-createur-126610"
+      ],
+      "before": {
+        "deck": "A conference in Paris explored how AI changes the role of the creator in animation.",
+        "human_direction": "gain",
+        "human_label": "Benefits reported"
+      },
+      "after": {
+        "headline": "Paris announces January discussion on animation and generative AI",
+        "deck": "A Paris conference planned for 14 January 2027 will explore how generative AI may change animation work and creative learning.",
+        "what_happened": "The Maison de la culture du Japon in Paris has announced a 14 January 2027 talk by animation director Tetsuo Hirakawa. Its event notice says generative AI can produce visual ideas at scale and asks how creators will guide the work; the talk has not yet taken place.",
+        "why_it_matters": "The planned discussion raises questions about creative decisions and learning through trial and error. The notice supplies no findings from a completed conference.",
+        "body_paragraphs": [
+          "The Paris event listing schedules Hirakawa’s talk for 14 January 2027. It describes his animation experience and says he will discuss how generative AI is entering studios.",
+          "The notice asks whether mass production of visual ideas could diminish learning by trial and error or parts of creative culture. These are topics for the upcoming discussion, not observed effects reported from the event."
+        ],
+        "for_humans": "The notice describes possible new creative choices and concern about losing learning through trial and error; neither effect is measured.",
+        "for_ai": "The notice says generative AI can produce visual ideas at scale, without measuring a result for the systems or their operators.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and downsides",
+        "ai_direction": "gain",
+        "ai_label": "Benefits reported",
+        "limitation": "This is an announcement for a future conference on 14 January 2027, not evidence from a completed event or study."
+      },
+      "source_fingerprints": {
+        "40080099f7891fcdff1ac77a2ca8f714": "f4ef138955cbba23fbc3541f5e871cedfb5f778ce2273d495fc8c62b1f3119b8"
+      }
     }
   ],
   "research": []
