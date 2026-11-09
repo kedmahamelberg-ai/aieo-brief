@@ -6728,6 +6728,24 @@
       },
       "output_sha256": "6fc105c3873f77aec5027ad9099f6598e3a54f926f55a95fe97ac5e069eb49c5",
       "policy": "brief-english-display-v1"
+    },
+    "8c59247ed64e66e437c4885e5d5da1821ef07b906a3d90ce64eaf26d93a2f15c": {
+      "english": {
+        "0": "Reporting from InfoBref. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d0f8c1ed1f5bc0a8f95da1af5641e8dcc9bab9e8412ce948318b1cd1963058c5",
+      "policy": "brief-english-display-v1"
     }
   }
 }

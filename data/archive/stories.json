@@ -3693,8 +3693,8 @@
       "key": "event:1a51238e-c53d-40da-9bfa-7baa49f69a97",
       "event_id": "1a51238e-c53d-40da-9bfa-7baa49f69a97",
       "kind": "news",
-      "slug": "development-1a51238e-c53d-40da-9bfa-7baa49f69a97",
-      "path": "story/development-1a51238e-c53d-40da-9bfa-7baa49f69a97/index.html",
+      "slug": "october-2026-ai-related-titles-caused-american-markets-decline",
+      "path": "story/october-2026-ai-related-titles-caused-american-markets-decline/index.html",
       "headline": "October 2026: AI-related titles caused American stock markets to decline",
       "original_headline": "October 2026: AI-related titles caused American stock markets to decline",
       "deck": "Reporting from InfoBref. Open the source for the article.",
@@ -3735,7 +3735,11 @@
       "has_editorial": false,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
-      "period_end": "2026-11-08"
+      "period_end": "2026-11-08",
+      "legacy_paths": [
+        "story/development-1a51238e-c53d-40da-9bfa-7baa49f69a97/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
@@ -41385,7 +41389,7 @@
         "Angjoo Kanazawa"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-09T06:48:38.983796+00:00",
+      "affiliation_checked_at": "2026-11-09T08:40:28.314652+00:00",
       "source_verified_at": "2026-11-06T20:57:00.642583+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
