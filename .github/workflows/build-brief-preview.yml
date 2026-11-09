@@ -142,6 +142,8 @@ jobs:
       - name: Publish validated Brief
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          timeout: 1800000
 
   social_review:
     # This is a deployment dependency, not another clock or workflow_run chain.
