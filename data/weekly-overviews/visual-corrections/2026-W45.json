@@ -4,7 +4,7 @@
   "reason": "The approved image captions described unrelated historical paintings and the accompanying image reasons incorrectly described landscape or robot task imagery. Replace the display images with accurately credited public-domain photographs, clearly labeled as illustrative, while preserving the approved prose and citations.",
   "sections": {
     "markets": {
-      "previous_image_path": "assets/culture/a51ce6212342f36607ba88c9.jpg",
+      "previous_image_path": "assets/culture/f1b34451095142a9ab80beeb.jpg",
       "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
       "image_alt": "The East Fork of the Toklat River flowing through a mountain valley in Denali National Park; an illustrative landscape, not a reported AI event",
       "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve — illustrative photograph",
