@@ -15,7 +15,7 @@ from build_site import ROOT, cards, inputs, papers
 from editorial_corrections import apply_corrections
 from brief_database import dbmaps
 from weekly_overviews import prepare_weekly_overviews
-from weekly_editorials import validate_section
+from weekly_editorials import eligible, ready_valid, validate_section
 from weekly_review_delivery import REPOSITORY, email_content
 
 
@@ -55,13 +55,18 @@ def main() -> None:
     Path("weekly-review-preview.html").write_text(
         email_content(payload, run_url, image_mode="data")["html"], encoding="utf-8"
     )
-    already_approved = (ROOT / "data/weekly-overviews/approved" / (str(payload["release_id"]) + ".json")).exists()
+    approved_path = ROOT / "data/weekly-overviews/approved" / (str(payload["release_id"]) + ".json")
+    approved = json.loads(approved_path.read_text(encoding="utf-8")) if approved_path.exists() else {}
+    needs_review = not approved_path.exists() or (ready and any(
+        not ready_valid(approved.get(kind, {}), {row["key"]: row for row in eligible(rows, release)})
+        for kind, rows in (("markets", news), ("research", research))
+    ))
     output = os.environ.get("GITHUB_OUTPUT")
     if output:
         with Path(output).open("a") as handle:
             handle.write("release_id=" + str(payload["release_id"]) + "\n")
             handle.write("ready=" + str(ready).lower() + "\n")
-            handle.write("needs_review=" + str(not already_approved).lower() + "\n")
+            handle.write("needs_review=" + str(needs_review).lower() + "\n")
             handle.write("draft_sha256=" + hashlib.sha256(path.read_bytes()).hexdigest() + "\n")
     print("Prepared review artifact for " + str(payload["release_id"]))
     print("Publication remains blocked pending human approval.")
