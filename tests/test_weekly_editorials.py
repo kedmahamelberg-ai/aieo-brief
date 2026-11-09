@@ -461,6 +461,26 @@ class WeeklyEditorialTests(unittest.TestCase):
         validate_section(result['markets'])
         validate_public_weekly_sources(result, changed_news, self.papers, changed_news, self.papers)
 
+    def test_private_review_regenerates_stale_approved_section(self):
+        generated = self.generate()
+        approval = {'release_id': self.release['release_id'], 'human_approved_at': '2026-10-12T00:00:00Z'}
+        for kind in ('markets', 'research'):
+            approval[kind] = copy.deepcopy(generated[kind])
+            approval[kind]['human_approved'] = True
+        directory = self.root / 'data/weekly-overviews/approved'
+        directory.mkdir(parents=True)
+        path = directory / (self.release['release_id'] + '.json')
+        path.write_text(json.dumps(approval))
+        changed_news = copy.deepcopy(self.news)
+        changed_news[0]['deck'] = 'A changed claim that requires fresh review.'
+        public, _ = prepare_weekly_overviews(changed_news, self.papers, self.release, self.root)
+        self.assertEqual(public['markets']['status'], 'pending')
+        private = apply_editorials(public, changed_news, self.papers, self.root, [], allow_model=True, call=self.call)
+        self.assertEqual(private['editorial_status'], 'ready')
+        self.assertNotEqual(private['markets']['source_hashes'], approval['markets']['source_hashes'])
+        self.assertEqual(private['research'], approval['research'])
+        self.assertEqual(json.loads(path.read_text()), approval)
+
     def test_citation_cannot_describe_another_selected_story(self):
         sources = [
             {'key': 'ca', 'headline': 'Canadian grant for soybean and barley varieties',
