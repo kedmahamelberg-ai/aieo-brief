@@ -13,6 +13,20 @@
       "accepted_at": "2026-11-02T13:15:07.465507+01:00",
       "recipient": "kedma@hamelberg-ai.com",
       "status": "accepted_by_email_provider"
+    },
+    "2026-W46": {
+      "source_edition": "2026-W45",
+      "publication_week": "2026-W46",
+      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42592551314/artifacts/13662167875",
+      "run_id": "42592551314",
+      "artifact_id": "13662167875",
+      "batch_sha256": "743a91c53096af0902fc31a1f067494168f423d8738c31db4a73a886a0dbcc4f",
+      "provider_message_id": "01a1bfa0-4917-727f-aa9c-3a22c607ec48",
+      "review_version": "post-preview-v2",
+      "review_run_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42593243579",
+      "accepted_at": "2026-11-09T10:25:15.861865+01:00",
+      "recipient": "kedma@hamelberg-ai.com",
+      "status": "accepted_by_email_provider"
     }
   }
 }
