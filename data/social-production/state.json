@@ -16,6 +16,13 @@
       "batch_sha256": "4ff515c8e476aa43b7caa6003cefd50e4266cfd7451a156d1c2b594dbcdf3136",
       "created_at": "2026-11-02T13:14:38.270372+01:00",
       "supersedes_artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/41409498209/artifacts/13124519236"
+    },
+    "2026-W45": {
+      "publication_week": "2026-W46",
+      "status": "DRAFT_NOT_APPROVED_DO_NOT_PUBLISH",
+      "artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/42592551314/artifacts/13662167875",
+      "run_id": "42592551314",
+      "created_at": "2026-11-09T10:24:45.040146+01:00"
     }
   },
   "review_history": {
