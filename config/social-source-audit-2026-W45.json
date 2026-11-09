@@ -1,0 +1,26 @@
+{
+  "schema_version": "brief_social_source_audit_v1",
+  "excluded_news": [
+    {
+      "path": "story/animation-generative-ai-creator-speaks-mass-production-meaning/index.html",
+      "source_url": "https://www.paris.fr/evenements/conference-animation-et-ia-generative-regard-d-un-createur-126610",
+      "reason": "The source advertises a conference scheduled for 14 January 2027. The current Brief copy wrongly describes it as a past event. Do not promote it as completed news."
+    },
+    {
+      "path": "story/ai-bubble-faces-reality-markets-faltered-le-monde/index.html",
+      "source_url": "https://www.lemonde.fr/en/opinion/article/2026/11/07/the-ai-bubble-faces-reality_6774319_23.html",
+      "reason": "The source is expressly marked Editorial. Exclude it from the News schedule rather than imply an independently reported market analysis."
+    }
+  ],
+  "research_overrides": [
+    {
+      "path": "research/trained-visual-interface-agents-generalize-new-tasks-real-sites/index.html",
+      "source_url": "https://arxiv.org/abs/2611.03634v1",
+      "after": {
+        "hook": "A WebHarbor preprint tests whether training on reconstructed websites helps visual-interface agents handle new web tasks.",
+        "fact": "The authors report 153 reconstructed website environments and 3,518 tasks. A Qwen 4B-level agent trained there performed competitively with leading open-source web agents across four benchmarks; the environments and results are reported by the preprint authors.",
+        "evidence": "Preprint abstract and author-reported benchmark results; not independent validation."
+      }
+    }
+  ]
+}
