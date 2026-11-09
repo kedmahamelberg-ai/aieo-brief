@@ -1,0 +1,47 @@
+{
+  "schema_version": "brief_social_publication_status_v1",
+  "publication_week": "2026-W46",
+  "approved_batch_sha256": "db2ee336e967a1325afea2720a9e2153bc6f6591de2ab9b6d6faa468c517090b",
+  "approval_receipt": "data/social-production/approved/2026-W46.json",
+  "recorded_at": "2026-11-09T15:01:50+01:00",
+  "timezone": "Europe/Amsterdam",
+  "publication_method": "Existing signed-in Meta Business Suite, LinkedIn, and Substack accounts",
+  "placements": {
+    "facebook_feed": {
+      "published": 1,
+      "scheduled": 14
+    },
+    "instagram_feed": {
+      "published": 1,
+      "scheduled": 14
+    },
+    "instagram_stories": {
+      "published_frames": 3,
+      "scheduled_frames": 42
+    },
+    "linkedin": {
+      "published": 1,
+      "scheduled": 14
+    },
+    "substack_notes": {
+      "published": 1,
+      "scheduled": 14
+    },
+    "substack_weekly_post": {
+      "published": 1
+    }
+  },
+  "live_examples": {
+    "facebook": "https://facebook.com/permalink.php?story_fbid=pfbid02bPiVXSky53c6o4MEpVXQ85QAzNMxTQmBMzXSvg9bzsVuZYX5E3GxLQwdvoDuQxfhl&id=61594324679612",
+    "instagram": "https://www.instagram.com/p/DfhV7Qnlprn/",
+    "linkedin": "https://www.linkedin.com/feed/update/urn:li:share:7525542898768023552?actorCompanyId=146490147",
+    "substack_post": "https://thebriefaieo.substack.com/p/this-week-in-the-brief"
+  },
+  "verification": {
+    "prepared_package": "passed",
+    "prepared_links": "60 of 60 returned HTTP 200 and resolved to their intended Brief article at 2026-11-09T13:04:34+01:00",
+    "saved_queue_counts": "28 Meta feed entries, 42 W46 Instagram Story frames, 14 LinkedIn posts, and 14 Substack Notes were observed at the approved schedule times",
+    "saved_media_order": "A scheduled Instagram carousel was reopened and its cover, explanation, and CTA cards were checked in order. The full per-placement saved-media audit remains incomplete.",
+    "strict_saved_ui_audit": "not_certified"
+  }
+}
