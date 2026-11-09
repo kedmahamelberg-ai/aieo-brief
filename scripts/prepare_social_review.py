@@ -174,7 +174,7 @@ def country_scene_candidate(page, market):
     places = {'US': r'United States|New York|Manhattan|American|USA',
               'CA': r'Canada|Canadian|Ottawa|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan|Newfoundland|St. John.s',
               'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland',
-              'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai|Shenzhen'}
+              'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai|Shenzhen|Qingdao'}
     scene = r'\b(?:skyline[0-9]*|cityscape|landscape|river|lake|mountains?|forest|trees|crater|coast|harbou?r|bridge|buildings?|cathedral|countryside|city)\b'
     if market == 'GLOBAL':
         return bool(re.search(scene, material, re.I))
