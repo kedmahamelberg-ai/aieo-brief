@@ -21,9 +21,13 @@ ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
 BASE = 'https://brief.hamelberg-ai.com/'
 STATUS = 'DRAFT_NOT_APPROVED_DO_NOT_PUBLISH'
-REVIEW_REVISION = 2
+REVIEW_REVISION = 3
 COUNTRIES = {'US': 'United States', 'CA': 'Canada', 'GB': 'United Kingdom', 'FR': 'France', 'CN': 'China'}
 GEO = dict(US='#USAI', CA='#CanadaAI', GB='#UKAI', FR='#FranceAI', CN='#ChinaAI')
+SUBJECT_TAGS = {'policy': '#AIGovernance', 'work': '#FutureOfWork',
+                'creativity': '#AICreativity', 'business': '#AIEconomy',
+                'technology': '#AITechnology', 'research': '#AIResearch',
+                'everyday': '#AIApplications'}
 ACCOUNTS = {'linkedin': 'The Brief | AI Empowerment Observatory Page, company 146490147', 'facebook': 'The Brief | AI Empowerment Observatory Page, profile 61594324679612', 'instagram': 'thebrief_ai.empowerment', 'substack_note': 'The Brief publication, @thebriefaieo'}
 
 
@@ -138,7 +142,9 @@ def topic_plan(items, monday, news):
         used.add(a['path']); counts[market] += 1; previous = market
         day = monday + timedelta(days=n // 2); hour = '10:00' if n % 2 == 0 else '18:00'
         ident = day.strftime('%a').upper() + hour[:2] + '_' + market + '_' + hashlib.sha256(a['path'].encode()).hexdigest()[:8].upper()
-        topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES.get(market, ''), 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO.get(market, '#AINews')], 'second_subject_tag': '#AIGovernance', 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Country named only when anchored in the article or a matching source-checked geography record', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
+        subject_tag = {'acr-2026-ai-boosts-ultrasound-rheumatology-clinician-oversight': '#HealthAI',
+                       'ai-already-factor-le-mans-according-teams-experts': '#MotorsportAI'}.get(a.get('slug'), SUBJECT_TAGS.get(a.get('topic'), '#AIApplications'))
+        topics.append({'id': ident, 'date': str(day), 'time': hour, 'kind': 'News', 'country': COUNTRIES.get(market, ''), 'market': market, 'path': a['path'], 'headline': clean(a['headline']), 'hook': clean(a.get('deck') or a['headline']), 'fact': clean(a['what_happened']), 'tags': ['#TheBrief', '#ResponsibleAI', GEO.get(market, '#AINews')], 'second_subject_tag': subject_tag, 'evidence': 'Published source-backed Brief reporting', 'source_urls': [s['url'] for s in a['sources']], 'source_limitation': a.get('limitation', ''), 'market_rationale': 'Country named only when anchored in the article or a matching source-checked geography record', 'substack_lead': 'From this week’s Brief, a closer look at how AI is being used.'})
     research = [i for i in items if i.get('kind') == 'research' and str(monday - timedelta(days=7)) <= i.get('date', '') < str(monday) and i.get('what_happened') and i.get('sources')]
     if not research:
         raise ValueError('No current source-backed Research item')
@@ -309,7 +315,11 @@ def build(topics, photos, output, release, start, end, monday):
             if platform=='linkedin':i['single_image_asset']=slides[0]
             if platform=='instagram':i['story']=dict(scheduled_at=dt,frames=[str((output/'assets'/f"{t['id']}_story_{n}.png").resolve()) for n in (1,2,3)],link_stickers_enabled=False,article_destination=url,music_enabled=False)
             items.append(i)
-    post={'status':STATUS,'proposed_at':datetime.combine(monday,datetime.min.time(),tzinfo=ZONE).replace(hour=12).isoformat(),'title':'This week in The Brief','body':'This edition follows source-linked reporting on AI and its effects on people and institutions. Start with these stories and the research selection.\n\n'+'\n\n'.join(t['hook']+'\n'+BASE+t['path'] for t in topics[::3]),'destination':BASE+'?'+urlencode(dict(utm_source='substack_post',utm_medium='organic_social',utm_campaign=campaign))}
+    roundup = topics[::3]
+    research = next(t for t in topics if t['kind'] == 'Research')
+    if research not in roundup:
+        roundup.append(research)
+    post={'status':STATUS,'proposed_at':datetime.combine(monday,datetime.min.time(),tzinfo=ZONE).replace(hour=12).isoformat(),'title':'This week in The Brief','body':'This edition follows source-linked reporting on AI and its effects on people and institutions. Start with these stories and the research selection.\n\n'+'\n\n'.join(t['hook']+'\n'+BASE+t['path'] for t in roundup),'destination':BASE+'?'+urlencode(dict(utm_source='substack_post',utm_medium='organic_social',utm_campaign=campaign))}
     return dict(schema_version='aieo_social_batch_v4',source_edition=release,source_dates=f'{start} to {end}',publishing_week=week,timezone='Europe/Amsterdam',status=STATUS,approval_phrase='APPROVE SOCIAL WEEK '+week,topics=topics,items=items,substack_post=post,editorial_review_required=True)
 
 
