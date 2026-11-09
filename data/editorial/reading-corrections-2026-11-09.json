@@ -175,6 +175,31 @@
       "source_fingerprints": {
         "40080099f7891fcdff1ac77a2ca8f714": "f4ef138955cbba23fbc3541f5e871cedfb5f778ce2273d495fc8c62b1f3119b8"
       }
+    },
+    {
+      "key": "event:5b24ae60-bccc-48c8-ba54-4996bb4b3f89",
+      "event_id": "5b24ae60-bccc-48c8-ba54-4996bb4b3f89",
+      "reason": "Eurojuris reports risks from abusive or inadequate AI-assisted legal filings; drafting convenience is not a measured gain for AI systems or operators.",
+      "source_urls": [
+        "https://www.eurojuris.fr/articles/redaction-requete-avec-ia-recours-abusif-amende-43825.htm"
+      ],
+      "after": {
+        "headline": "Eurojuris reports fines for abusive AI-assisted legal filings",
+        "deck": "A French legal analysis describes courts sanctioning inadequate or abusive filings drafted with AI, while stressing that AI use itself is not prohibited.",
+        "what_happened": "Eurojuris France describes several 2026 administrative court decisions imposing fines for filings that were inadmissible, unfounded, or inadequately supported, including some drafted with AI assistance.",
+        "why_it_matters": "AI may make legal drafting easier, but claimants and lawyers remain responsible for checking facts, legal citations, relevance and admissibility.",
+        "body_paragraphs": [
+          "The Eurojuris analysis describes examples of fines ranging from €200 to €1,000 for abusive or deficient filings. It links several filings to AI-assisted drafting, but says the sanction concerns the filing's shortcomings rather than use of AI alone.",
+          "The article says AI can help prepare a filing only if the person still checks its legal reasoning and sources. It does not measure whether AI improves access to justice or legal outcomes."
+        ],
+        "for_humans": "AI can ease drafting, but inadequate or abusive filings can be rejected and fined; the article does not measure a net benefit.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and downsides",
+        "for_ai": "The analysis does not report a separate outcome for AI systems or their operators.",
+        "ai_direction": "none",
+        "ai_label": "No direction stated",
+        "limitation": "A legal commentary citing several court decisions; the judgments were not independently reviewed for this summary."
+      }
     }
   ],
   "research": []
