@@ -42,9 +42,9 @@
             "name": "United States",
             "count": 13,
             "topic": "Rules And Rights",
-            "sentence": "United States: selected reporting leaned toward rules and rights, with “Cranky Don Joe Questions AI's Promise: Why Do Jobs Feel at…” as one visible signal.",
+            "sentence": "United States: selected reporting leaned toward rules and rights, with “Satirical column questions AI productivity promises and job security” as one visible signal.",
             "story": {
-              "headline": "Cranky Don Joe Questions AI's Promise: Why Do Jobs Feel at Risk?",
+              "headline": "Satirical column questions AI productivity promises and job security",
               "path": "story/cranky-don-joe-questions-ai-s-feel-risk/index.html",
               "publisher": "MinneapoliMedia",
               "source_url": "https://minneapolimedia.town.news/g/coon-rapids-mn/n/397519/saturday-morning-cranky-don-joe-artificial-intelligence-supposed-make"
@@ -96,7 +96,7 @@
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "380dac3e36837e3f41d04a722bea42b005eca38623253f0f9c6d5be7d06fa9d7",
+        "input_hash": "4a75ffdad7fc7880367169bfe53809649fd3f4817759284008090e600121d891",
         "attempts": 0
       },
       "research": {
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "b92da524ba5972ea7425b4d7dbfadf9afa63bfad8a0e602dd9669dc3b1428418"
+      "content_sha256": "dd4d1fbc01de63632572d70532bee845b3891660a24da3e735f286c612009412"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
