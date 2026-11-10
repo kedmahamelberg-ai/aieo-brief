@@ -1,0 +1,168 @@
+{
+  "schema_version": "brief_social_photo_audit_v1",
+  "source_edition": "2026-W45",
+  "publication_week": "2026-W46",
+  "source_week_start": "2026-11-02",
+  "source_week_end": "2026-11-08",
+  "approved_batch_sha256": "db2ee336e967a1325afea2720a9e2153bc6f6591de2ab9b6d6faa468c517090b",
+  "status": "CORRECTION_REQUIRED",
+  "summary": "All 14 News cover photographs fail the current-week capture-date gate; three also have clear subject or geography mismatches. This audit does not claim queued posts have been changed or cancelled. The publication audit records scheduled placements and requires platform-level correction.",
+  "news_cover_count": 14,
+  "covers_passing_current_week_gate": 0,
+  "covers": [
+    {
+      "topic_id": "MON10_CA_717FBE83",
+      "scheduled_at": "2026-11-09T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skyline_view_of_Downtown_Ottawa_from_Parliament_Hill_-_July_2010.jpg",
+      "source_title": "Skyline view of Downtown Ottawa from Parliament Hill - July 2010.jpg",
+      "source_capture_date": "2010-06-26",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "CC0"
+    },
+    {
+      "topic_id": "MON18_GB_2B9EE9C2",
+      "scheduled_at": "2026-11-09T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:30w8jti-1.jpg",
+      "source_title": "30w8jti-1.jpg",
+      "source_capture_date": null,
+      "source_date_note": "no verified camera capture date",
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "TUE10_FR_8BF8EF4C",
+      "scheduled_at": "2026-11-10T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paris_Paris_Skyline_(37328639624).jpg",
+      "source_title": "Paris Paris Skyline (37328639624).jpg",
+      "source_capture_date": "2017-10-12",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "CC0"
+    },
+    {
+      "topic_id": "TUE18_CN_9089288C",
+      "scheduled_at": "2026-11-10T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_sunset.JPG",
+      "source_title": "Beijing sunset.JPG",
+      "source_capture_date": "2008-05-04",
+      "source_date_note": null,
+      "finding": "The source describes Badaling mountains outside Beijing, while the article concerns Beijing’s World Media Summit.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "WED10_CA_EDF85D07",
+      "scheduled_at": "2026-11-11T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Artist_sketching_the_St._John%27s_Harbour_and_skyline_(c._1910).jpg",
+      "source_title": "Artist sketching the St. John's Harbour and skyline (c. 1910).jpg",
+      "source_capture_date": null,
+      "source_date_note": "year-only or ambiguous metadata",
+      "finding": "The source is an archival St. John’s, Newfoundland scene, while the article concerns present-day Nova Scotia artists.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "WED18_FR_31DC75B5",
+      "scheduled_at": "2026-11-11T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Paris_skyline_view_(Unsplash).jpg",
+      "source_title": "Paris skyline view (Unsplash).jpg",
+      "source_capture_date": "2015-08-07",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "CC0"
+    },
+    {
+      "topic_id": "THU10_CN_2D889FD4",
+      "scheduled_at": "2026-11-12T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_Guomao_CBD.jpg",
+      "source_title": "Beijing Guomao CBD.jpg",
+      "source_capture_date": "2023-11-08",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "CC0"
+    },
+    {
+      "topic_id": "THU18_FR_0DFA3778",
+      "scheduled_at": "2026-11-12T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tribunal_de_Paris_seen_from_entrance.jpg",
+      "source_title": "Tribunal de Paris seen from entrance.jpg",
+      "source_capture_date": "2026-06-30",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "CC0"
+    },
+    {
+      "topic_id": "FRI10_CN_E4021658",
+      "scheduled_at": "2026-11-13T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Qingdao_06.JPG",
+      "source_title": "Qingdao 06.JPG",
+      "source_capture_date": "2009-02-15",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "FRI18_GLOBAL_8B159336",
+      "scheduled_at": "2026-11-13T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sonographer_doing_pediatric_echocardiography.JPG",
+      "source_title": "Sonographer doing pediatric echocardiography.JPG",
+      "source_capture_date": null,
+      "source_date_note": "no verified camera capture date",
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "SAT10_GLOBAL_F6BF651D",
+      "scheduled_at": "2026-11-14T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Central_Sydney_Skyline_from_Port_Jackson.jpg",
+      "source_title": "Central Sydney Skyline from Port Jackson.jpg",
+      "source_capture_date": "2007-12-10",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "SAT18_GLOBAL_E1782ABE",
+      "scheduled_at": "2026-11-14T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_camouflaged_USAF_C-5A_Galaxy_aircraft_in_a_hangar_for_inspection_and_maintenance_Dover_AFB.jpg",
+      "source_title": "A camouflaged USAF C-5A Galaxy aircraft in a hangar for inspection and maintenance Dover AFB.jpg",
+      "source_capture_date": null,
+      "source_date_note": "no verified camera capture date",
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    },
+    {
+      "topic_id": "SUN10_GLOBAL_8C165CCD",
+      "scheduled_at": "2026-11-15T10:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Movie_camera_(Unsplash).jpg",
+      "source_title": "Movie camera (Unsplash).jpg",
+      "source_capture_date": "2016-01-13",
+      "source_date_note": null,
+      "finding": "Source photo was not verified as captured during the W45 source week.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "CC0"
+    },
+    {
+      "topic_id": "SUN18_GLOBAL_AFD33A58",
+      "scheduled_at": "2026-11-15T18:00:00+01:00",
+      "source_url": "https://commons.wikimedia.org/wiki/File:26-8-20,_circuit_de_la_Sarthe,_P%C3%A9an_sur_Peugeot_-_btv1b53051599r.jpg",
+      "source_title": "26-8-20, circuit de la Sarthe, Péan sur Peugeot - btv1b53051599r.jpg",
+      "source_capture_date": null,
+      "source_date_note": "year-only or ambiguous metadata",
+      "finding": "The source is a 1920 motorcycling photograph, while the article concerns current AI use at Le Mans.",
+      "decision": "replace_before_further_publication",
+      "rights_status": "Public domain"
+    }
+  ]
+}
