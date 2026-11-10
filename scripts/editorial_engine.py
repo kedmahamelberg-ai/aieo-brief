@@ -273,7 +273,7 @@ def read_segment(text,deadline):
 @validation_errors('evidence_reading')
 def compile_evidence(sources,deadline=None):
  total=sum(len(s['evidence']) for s in sources)
- if total<=6000 or (ai_runtime.uses_openai() and sum(len(s["evidence"].encode("utf-8")) for s in sources)<=(250000 if all(s.get('evidence_basis')=='paper_text' for s in sources) else 64000)):return sources,[]
+ if total<=6000 or (ai_runtime.uses_openai() and sum(len(s["evidence"].encode("utf-8")) for s in sources)<=(100000 if all(s.get('evidence_basis')=='paper_text' for s in sources) else 64000)):return sources,[]
  chunks=[(s,c) for s in sources for c in evidence_chunks(s['evidence'],limit=7000 if s.get('evidence_basis')=='paper_text' else 3600,overlap=160)]
  if len(chunks)>(96 if any(s.get('evidence_basis')=='paper_text' for s in sources) else 40):raise ValueError('Evidence exceeds the automatic reading budget; no source was truncated.')
  notes=[];trace=[]
