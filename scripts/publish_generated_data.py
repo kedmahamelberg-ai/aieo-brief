@@ -24,6 +24,7 @@ EDITORIAL_FIELDS = {
     "editorial_engine_version", "research_reading_version", "pdf_reader_version", "html_reader_version",
     "evidence_scope", "full_text_status", "full_text_retry_after",
     "paper_pages", "paper_sections", "paper_source_url", "paper_text_sha256", "pdf_url",
+    "paper_pmcid", "paper_doi", "pmc_reader_version",
 }
 
 
