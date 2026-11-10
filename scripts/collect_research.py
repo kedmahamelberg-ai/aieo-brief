@@ -11,12 +11,10 @@ from urllib.parse import quote
 import requests
 from research_affiliations import enrich_affiliations
 from research_recovery import recover_unfinished
-from research_reading import publisher_pdf_urls
+from research_reading import publisher_pdf_urls, PNAS_ARXIV_MANUSCRIPTS
 ROOT=Path(__file__).resolve().parents[1]
 AI=re.compile(r'artificial intelligence|machine learning|large language model|generative ai|deep learning|\bllms?\b|\bchatgpt\b|\bchatbots?\b|\bai\b',re.I)
 N={'a':'http://www.w3.org/2005/Atom','ar':'http://arxiv.org/schemas/atom'}
-# Exact author manuscript for the PNAS record; verified against the manuscript title page and DOI.
-PNAS_ARXIV_MANUSCRIPTS={'10.1073/pnas.2610670123':'2611.00380v1'}
 
 def plain(v):return re.sub(r'\s+',' ',re.sub('<[^>]+>',' ',str(v or ''))).strip()
 def identity(doi,aid):return 'paper:'+hashlib.sha256((doi.lower() if doi else 'arxiv:'+re.sub(r'v\d+$','',aid)).encode()).hexdigest()[:24]
@@ -58,7 +56,7 @@ def crossref(source,start,end,limit):
   licenses=[x.get('URL','') for x in row.get('license') or []]
   oa=any('creativecommons.org/licenses/' in u or 'creativecommons.org/publicdomain/' in u for u in licenses)
   authors=[plain((a.get('given','')+' '+a.get('family',''))) for a in row.get('author') or []]
-  out.append({'key':identity(doi,''),'doi':doi,'arxiv_id':PNAS_ARXIV_MANUSCRIPTS.get(doi,''),'original_headline':title,'abstract':abstract,'pdf_url':('https://arxiv.org/pdf/'+PNAS_ARXIV_MANUSCRIPTS[doi] if doi in PNAS_ARXIV_MANUSCRIPTS else next(iter(publisher_pdf_urls(doi,row.get('link'))),'')),'url':'https://doi.org/'+quote(doi,safe='/'),'date':day,'authors':authors,'publisher':'PNAS' if source=='pnas' else 'SSRN','source':source,'research_label':'Journal article' if source=='pnas' else 'Working paper / preprint','evidence_scope':'abstract' if abstract else 'metadata_only','access':'Open-license record' if oa else 'Check access at source','license_urls':licenses,'metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
+  out.append({'key':identity(doi,''),'doi':doi,'arxiv_id':PNAS_ARXIV_MANUSCRIPTS.get(doi,''),'original_headline':title,'abstract':abstract,'pdf_url':('https://arxiv.org/pdf/'+PNAS_ARXIV_MANUSCRIPTS[doi] if doi in PNAS_ARXIV_MANUSCRIPTS else next(iter(publisher_pdf_urls(doi,row.get('link'))),'')),'url':'https://doi.org/'+quote(doi,safe='/'),'date':day,'authors':authors,'publisher':'PNAS' if source=='pnas' else 'SSRN','source':source,'research_label':('Journal article · full text from matching arXiv manuscript' if doi in PNAS_ARXIV_MANUSCRIPTS else 'Journal article') if source=='pnas' else 'Working paper / preprint','evidence_scope':'abstract' if abstract else 'metadata_only','access':'Open-license record' if oa else 'Check access at source','license_urls':licenses,'metadata_sha256':hashlib.sha256((title+'\n'+abstract).encode()).hexdigest()})
   if len(out)>=limit:break
  return out
 

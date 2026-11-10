@@ -61,6 +61,22 @@ class ResearchRecovery(unittest.TestCase):
         get.return_value.text = html.replace('Study title', 'Unrelated paper')
         self.assertIsNone(recovery.recover(self.paper(), get))
 
+    def test_pnas_record_recovers_exact_open_arxiv_manuscript(self):
+        title = 'Efficient and accurate steering of large language models through attention-guided feature learning'
+        doi = '10.1073/pnas.2609978123'
+        abstract = 'The paper studies attention-guided feature learning for steering language models. ' * 12
+        html = ('<meta name="citation_title" content="' + title +
+                '"><blockquote class="abstract"><span>Abstract:</span> ' + abstract + '</blockquote>')
+        paper = {'key': 'paper:steering', 'source': 'pnas', 'doi': doi,
+                 'original_headline': title, 'url': 'https://doi.org/' + doi}
+        get = Mock(return_value=Mock(text=html))
+        result = recovery.recover(paper, get)
+        get.assert_called_once_with('https://arxiv.org/abs/2602.00333v1')
+        self.assertEqual(result['arxiv_id'], '2602.00333v1')
+        self.assertEqual(result['pdf_url'], 'https://arxiv.org/pdf/2602.00333v1')
+        self.assertEqual(result['abstract_source_url'], 'https://arxiv.org/abs/2602.00333v1')
+        self.assertIn('matching arXiv manuscript', result['research_label'])
+
     def test_archive_backlog_survives_discovery_and_network_failure(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)

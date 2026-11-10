@@ -3,6 +3,8 @@ import hashlib
 import io
 import re
 import unicodedata
+import xml.etree.ElementTree as ET
+from difflib import SequenceMatcher
 from datetime import date
 from urllib.parse import unquote, urlparse
 import requests
@@ -10,6 +12,12 @@ import requests
 READING_VERSION = 'paper-practitioner-v1'
 PDF_READER_VERSION = 2
 HTML_READER_VERSION = 1
+PMC_READER_VERSION = 1
+# Exact author manuscripts verified against the journal title and author list.
+PNAS_ARXIV_MANUSCRIPTS = {
+    '10.1073/pnas.2610670123': '2611.00380v1',
+    '10.1073/pnas.2609978123': '2602.00333v1',
+}
 MAX_PDF_BYTES = 64 * 1024 * 1024
 MAX_HTML_BYTES = 8 * 1024 * 1024
 MAX_PAPER_CHARS = 600000
@@ -22,7 +30,12 @@ def verified_paper_reading(row):
             and ((type(row.get('paper_pages')) is int and row['paper_pages'] >= 1)
                  or (type(row.get('paper_sections')) is int and row['paper_sections'] >= 2
                      and row.get('paper_source_url') == 'https://arxiv.org/html/' + str(row.get('arxiv_id', ''))
-                     and bool(re.fullmatch(r'\d{4}\.\d{4,5}(?:v\d+)?', str(row.get('arxiv_id', ''))))))
+                     and bool(re.fullmatch(r'\d{4}\.\d{4,5}(?:v\d+)?', str(row.get('arxiv_id', '')))))
+                 or (type(row.get('paper_sections')) is int and row['paper_sections'] >= 2
+                     and bool(re.fullmatch(r'PMC\d+', str(row.get('paper_pmcid', ''))))
+                     and row.get('paper_source_url') == 'https://www.ebi.ac.uk/europepmc/webservices/rest/' + str(row.get('paper_pmcid', '')) + '/fullTextXML'
+                     and row.get('paper_doi') == row.get('doi')
+                     and bool(re.fullmatch(r'10\.1073/pnas\.\d+', str(row.get('doi', ''))))))
             and bool(re.fullmatch(r'[0-9a-f]{64}', row.get('paper_text_sha256', ''))))
 
 
@@ -57,6 +70,8 @@ def needs_upgrade(row):
             or (row.get('evidence_scope') != 'paper_text' and row.get('arxiv_id')
                 and row.get('html_reader_version', 0) < HTML_READER_VERSION
                 and row.get('full_text_status') in ('pdf_size_limit', 'pdf_text_unreadable', 'pdf_unavailable', 'incomplete_text_extraction', 'paper_reading_size'))
+            or (row.get('evidence_scope') != 'paper_text' and str(row.get('doi', '')).startswith('10.1073/pnas.')
+                and row.get('pmc_reader_version', 0) < PMC_READER_VERSION)
             or (row.get('evidence_scope') != 'paper_text' and row.get('full_text_retry_after', '9999') <= date.today().isoformat()))
 
 
@@ -139,7 +154,15 @@ def extract_arxiv_html(content, title):
     if not heading:
         raise ValueError('html_article_missing')
     words = lambda value: re.findall(r'\w+', unicodedata.normalize('NFKC', value).casefold())
-    if words(heading.get_text(' ', strip=True)) != words(title):
+    actual = words(heading.get_text(' ', strip=True))
+    expected = words(title)
+    # arXiv's converter sometimes replaces one title letter with an image.
+    # Permit exactly one missing character in one word, with every other word exact.
+    one_missing_letter = (len(actual) == len(expected) and len(expected) >= 5
+                          and sum(a != b for a, b in zip(actual, expected)) == 1
+                          and any(len(b) == len(a) + 1 and any(b[:i] + b[i+1:] == a for i in range(len(b)))
+                                  for a, b in zip(actual, expected) if a != b))
+    if actual != expected and not one_missing_letter:
         raise ValueError('paper_identity_mismatch')
     sections = article.find_all('section', recursive=False)
     if len(sections) < 2 or not article.select_one('.ltx_abstract'):
@@ -180,7 +203,68 @@ def read_arxiv_html(paper):
                                                      'paper_identity_mismatch', 'paper_reading_size') else 'html_text_unreadable'}
 
 
+def read_pmc_xml(paper):
+    """Fetch a DOI-matched complete article from Europe PMC when PNAS blocks PDF access."""
+    doi = str(paper.get('doi') or '').lower()
+    if not re.fullmatch(r'10\.1073/pnas\.\d+', doi):
+        return {'status': 'pmc_unavailable'}
+    api = 'https://www.ebi.ac.uk/europepmc/webservices/rest/'
+    try:
+        search = requests.get(api + 'search', params={'query': 'DOI:' + doi, 'format': 'json', 'pageSize': 10},
+                              timeout=45, headers={'User-Agent': 'AIEO-Brief (paper reading; https://brief.hamelberg-ai.com)'})
+        search.raise_for_status()
+        matches = search.json().get('resultList', {}).get('result', [])
+        pmcid = next((str(item.get('pmcid')) for item in matches
+                      if str(item.get('doi', '')).lower() == doi
+                      and item.get('isOpenAccess') == 'Y'
+                      and re.fullmatch(r'PMC\d+', str(item.get('pmcid', '')))), '')
+        if not pmcid:
+            return {'status': 'pmc_unavailable'}
+        url = api + pmcid + '/fullTextXML'
+        with requests.get(url, stream=True, timeout=45,
+                          headers={'User-Agent': 'AIEO-Brief (paper reading; https://brief.hamelberg-ai.com)'}) as response:
+            response.raise_for_status()
+            parts = []; size = 0
+            for chunk in response.iter_content(65536):
+                size += len(chunk)
+                if size > MAX_HTML_BYTES:
+                    return {'status': 'pmc_size_limit'}
+                parts.append(chunk)
+        content = b''.join(parts)
+        root = ET.fromstring(content)
+        meta = root.find('.//{*}article-meta')
+        if meta is None:
+            return {'status': 'pmc_text_unreadable'}
+        source_dois = [str(node.text or '').strip().lower() for node in meta.findall('{*}article-id')
+                       if node.get('pub-id-type') == 'doi']
+        if doi not in source_dois:
+            return {'status': 'paper_identity_mismatch'}
+        title_node = meta.find('{*}title-group/{*}article-title')
+        source_title = ' '.join(title_node.itertext()) if title_node is not None else ''
+        normalize = lambda value: ' '.join(re.findall(r'\w+', unicodedata.normalize('NFKC', value).casefold()))
+        if SequenceMatcher(None, normalize(source_title), normalize(paper['original_headline'])).ratio() < .9:
+            return {'status': 'paper_identity_mismatch'}
+        body = root.find('{*}body')
+        sections = len(body.findall('.//{*}sec')) if body is not None else 0
+        if sections < 2:
+            return {'status': 'incomplete_xml_article'}
+        abstract = meta.find('{*}abstract')
+        text = (' '.join(abstract.itertext()) + '\n\n' if abstract is not None else '') + ' '.join(body.itertext())
+        text = unicodedata.normalize('NFKC', re.sub(r'\s+', ' ', text))
+        if not 2500 <= len(text) <= MAX_PAPER_CHARS:
+            return {'status': 'paper_reading_size'}
+        return {'status': 'read', 'url': url, 'format': 'pmc_xml', 'pmcid': pmcid,
+                'sections': sections, 'text': text, 'xml_sha256': hashlib.sha256(content).hexdigest(),
+                'text_sha256': hashlib.sha256(text.encode()).hexdigest()}
+    except (requests.RequestException, ValueError, ET.ParseError, KeyError):
+        return {'status': 'pmc_unavailable'}
+
+
 def read_paper(paper):
+    if paper.get('source') == 'pnas' and not paper.get('arxiv_id'):
+        pmc = read_pmc_xml(paper)
+        if pmc['status'] == 'read':
+            return pmc
     url = paper.get('pdf_url', '')
     if not url and paper.get('arxiv_id'):
         url = 'https://arxiv.org/pdf/' + paper['arxiv_id']

@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import MagicMock, Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
-from research_reading import extract_paper, extract_arxiv_html, read_paper, needs_upgrade, READING_VERSION, PDF_READER_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
+from research_reading import extract_paper, extract_arxiv_html, read_paper, read_pmc_xml, needs_upgrade, READING_VERSION, PDF_READER_VERSION, allowed_pdf, publisher_pdf_urls, style_problem
 import editorial_engine as engine
 from validate_public_site import validate_research_reading, validate_weekly_research_window
 
@@ -104,6 +104,54 @@ class FullPaperReading(unittest.TestCase):
             extract_arxiv_html(html,'Another Paper')
         with self.assertRaisesRegex(ValueError,'incomplete_html_article'):
             extract_arxiv_html(html.replace(b'</article>',b''),title)
+
+    def test_pnas_pmc_full_text_fallback_requires_matching_doi_and_title(self):
+        title = 'Quantifying ancient architecture: Stone-level machine learning reveals architectural variation and settlement growth at Shivta'
+        doi = '10.1073/pnas.2628851123'
+        xml = ('<article><front><article-meta><article-id pub-id-type="doi">' + doi +
+               '</article-id><title-group><article-title>' + title +
+               '</article-title></title-group><abstract><p>Article abstract.</p></abstract>'
+               '</article-meta></front><body><sec><title>Methods</title><p>' +
+               'The study measured individual building stones. ' * 45 +
+               '</p></sec><sec><title>Results</title><p>' +
+               'The authors compared masonry across structures and describe limitations. ' * 45 +
+               '</p></sec></body></article>').encode()
+        search = Mock()
+        search.json.return_value = {'resultList': {'result': [{'doi': doi, 'pmcid': 'PMC13732063', 'isOpenAccess': 'Y'}]}}
+        search.raise_for_status.return_value = None
+        article = MagicMock()
+        article.__enter__.return_value = article
+        article.iter_content.return_value = [xml]
+        paper = {'source': 'pnas', 'doi': doi, 'original_headline': title, 'pdf_url': ''}
+        with patch('research_reading.requests.get', side_effect=[search, article]) as get:
+            reading = read_paper(paper)
+        self.assertEqual(reading['status'], 'read')
+        self.assertEqual(reading['format'], 'pmc_xml')
+        self.assertIn('The study measured individual building stones', reading['text'])
+        self.assertEqual(get.call_args_list[1].args[0],
+                         'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13732063/fullTextXML')
+        validate_research_reading({'evidence_scope': 'paper_text', 'summary_basis': 'Summary of the paper',
+                                   'full_text_status': 'read', 'limitation': 'Site-specific study.',
+                                   'doi': doi, 'paper_doi': doi, 'paper_pmcid': reading['pmcid'],
+                                   'paper_source_url': reading['url'], 'paper_sections': reading['sections'],
+                                   'paper_text_sha256': reading['text_sha256']})
+        bad_xml = xml.replace(doi.encode(), b'10.1073/pnas.9999999999')
+        article.iter_content.return_value = [bad_xml]
+        with patch('research_reading.requests.get', side_effect=[search, article]):
+            self.assertEqual(read_pmc_xml(paper)['status'], 'paper_identity_mismatch')
+
+    def test_arxiv_title_image_missing_one_letter_still_matches(self):
+        title = 'ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research'
+        heading = 'Scholaratalyst: A Benchmark for Retrieving Papers that Inspire New Research'
+        html = ('<article class="ltx_document"><h1 class="ltx_title_document">' + heading +
+                '</h1><div class="ltx_abstract">Abstract.</div><section><p>' +
+                'The paper describes its methodology and limitations. ' * 35 +
+                '</p></section><section><p>' +
+                'The results include comparisons with competing approaches. ' * 35 +
+                '</p></section></article>').encode()
+        self.assertEqual(extract_arxiv_html(html, title)['sections'], 2)
+        with self.assertRaisesRegex(ValueError, 'paper_identity_mismatch'):
+            extract_arxiv_html(html, title.replace('Benchmark', 'Framework'))
 
     def test_prior_arxiv_pdf_failure_gets_one_immediate_html_retry(self):
         row={'has_editorial':True,'research_reading_version':READING_VERSION,'evidence_scope':'abstract',

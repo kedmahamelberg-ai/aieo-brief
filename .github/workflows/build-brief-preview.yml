@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ['scripts/**', 'templates/**', 'assets/**', 'config/**', 'data/**', 'tests/**', 'supabase/**', 'package*.json', 'requirements.txt', '.github/**']
   workflow_run:
-    workflows: ['Update Brief News and Research', 'Update Brief Daily Culture']
+    workflows: ['Update Brief News and Research', 'Update Brief Daily Culture', 'Refresh Brief Research']
     types: [completed]
   workflow_dispatch:
 permissions:

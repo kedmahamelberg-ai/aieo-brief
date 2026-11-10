@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse,json,os,time
 import ai_runtime
 from editorial_corrections import is_locked
-from research_reading import read_paper, needs_upgrade, restore_reading_scope, withhold_abstract_summary, verified_paper_reading, READING_VERSION, PDF_READER_VERSION, HTML_READER_VERSION
+from research_reading import read_paper, needs_upgrade, restore_reading_scope, withhold_abstract_summary, verified_paper_reading, READING_VERSION, PDF_READER_VERSION, HTML_READER_VERSION, PMC_READER_VERSION
 from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
@@ -103,7 +103,8 @@ def main():
             counts['unchanged']+=1;selected.append(prior);continue
         if p['key'] not in todo_keys and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append(unchanged_record(prior,p));continue
-        base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
+        base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1,
+              'pmc_reader_version':PMC_READER_VERSION if p.get('source')=='pnas' else 0}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
         if not (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')):
             counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
@@ -136,11 +137,15 @@ def main():
             record={**base,**{k:draft[k] for k in ('what_happened','why_it_matters','body_paragraphs','limitation','claim_status')},'headline':draft['editorial_headline'],'deck':draft['editorial_deck'],'has_editorial':True,'summary_status':'ready','summary_basis':'Summary of the paper' if full else 'Summary of the abstract (from PDF)' if p.get('abstract_format')=='pdf' else 'Summary of the abstract','prompt_version':PROMPT_VERSION,'model_revision':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local','reading_minutes':max(1,round(len(' '.join(draft['body_paragraphs']).split())/220))}
             record.update(editorial_engine_version=ENGINE_VERSION,research_reading_version=READING_VERSION,pdf_reader_version=PDF_READER_VERSION,
                           html_reader_version=HTML_READER_VERSION if p.get('arxiv_id') else 0,
+                          pmc_reader_version=PMC_READER_VERSION if p.get('source')=='pnas' else 0,
                           evidence_scope='paper_text' if full else 'abstract',full_text_status=reading['status'],full_text_retry_after=(date.today()+timedelta(days=7)).isoformat())
             if full:
                 record['paper_text_sha256']=reading['text_sha256']
                 if reading.get('format')=='arxiv_html':
                     record.update(paper_source_url=reading['url'],paper_sections=reading['sections'])
+                elif reading.get('format')=='pmc_xml':
+                    record.update(paper_source_url=reading['url'],paper_sections=reading['sections'],
+                                  paper_pmcid=reading['pmcid'],paper_doi=p['doi'])
                 else:
                     record.update(pdf_url=reading['url'],paper_pages=reading['pages'])
             stage='persistence'
