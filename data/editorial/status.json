@@ -2,24 +2,83 @@
   "release_id": "2026-W45",
   "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
   "counts": {
-    "unchanged": 8,
+    "unchanged": 21,
     "source_not_ready": 1,
     "source_date_mismatch": 0,
-    "new_registry": 50,
-    "needs_model": 52,
-    "needs_rebind": 13,
-    "selected": 52,
-    "generated": 21,
-    "rebound": 0,
-    "failed": 9,
-    "deferred": 22
+    "new_registry": 29,
+    "needs_model": 30,
+    "needs_rebind": 22,
+    "selected": 32,
+    "generated": 17,
+    "rebound": 2,
+    "failed": 13,
+    "deferred": 0
   },
   "failure_counts": {
-    "source_scope_review_failed": 6,
-    "claim_grounding_failed": 2,
-    "model_connection_error": 1
+    "claim_grounding_failed": 5,
+    "unsupported_number": 2,
+    "source_scope_review_failed": 6
   },
   "failed_items": [
+    {
+      "event_id": "8ad596ee-83fa-4a49-8b62-5fbbc57fa992",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "96cc11ea-a6df-4320-bfc8-02640df3ae41",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "unsupported_number",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "d4c946ea-42a9-4333-b838-3882a6309390",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    },
+    {
+      "event_id": "542e3c89-8ff0-4db5-8976-93960a906859",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "unsupported_number",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "02fa8350-ffe4-4622-bff6-3889ac3c987a",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+      "failed_checks": [
+        "headline_supported"
+      ]
+    },
+    {
+      "event_id": "ac9c8648-38ea-4d48-b8c9-fd65b756a6d6",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "f8af0f48-8b9e-41f5-b4f0-7ed5b48313d1",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+      "failed_checks": [
+        "headline_supported",
+        "claim_status_preserved"
+      ]
+    },
     {
       "event_id": "686ec330-d8b3-4c52-8c33-343a63e7c840",
       "error_type": "EditorialError",
@@ -34,63 +93,14 @@
       "event_id": "59af5c44-a47a-422b-bcf4-0cf0d231f706",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+      "failed_checks": [
+        "headline_supported"
+      ]
     },
     {
       "event_id": "1a51238e-c53d-40da-9bfa-7baa49f69a97",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
-    },
-    {
-      "event_id": "9d654d97-c6d1-424d-b8db-ebcc0955b358",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
-      "failed_checks": [
-        "headline_supported",
-        "english_only"
-      ]
-    },
-    {
-      "event_id": "91aa2239-be4b-40e1-817a-0c4a79792a9f",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
-      "failed_checks": [
-        "headline_supported",
-        "population_preserved",
-        "claim_status_preserved",
-        "no_unstated_effects",
-        "main_story_only"
-      ]
-    },
-    {
-      "event_id": "a092060b-78ae-46e7-9d29-fcac40c9bcdd",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
-      "failed_checks": [
-        "no_unstated_effects"
-      ]
-    },
-    {
-      "event_id": "33d5d334-70f8-4f44-8c95-eae031d9e90c",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
-      "failed_checks": [
-        "english_only"
-      ]
-    },
-    {
-      "event_id": "fdbb95e3-dcb4-40c5-b7bd-f9269dbf8c80",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -100,12 +110,26 @@
       ]
     },
     {
-      "event_id": "f8388539-b076-4eea-a5a2-0acbb6dd5e7a",
-      "error_type": "AIError",
+      "event_id": "91aa2239-be4b-40e1-817a-0c4a79792a9f",
+      "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "model_connection_error",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "a092060b-78ae-46e7-9d29-fcac40c9bcdd",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
+    },
+    {
+      "event_id": "fdbb95e3-dcb4-40c5-b7bd-f9269dbf8c80",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
       "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
     }
   ],
-  "updated_at": "2026-11-09T11:42:30.161183+00:00"
+  "updated_at": "2026-11-10T12:30:02.675706+00:00"
 }
