@@ -189,6 +189,32 @@ def country_scene_candidate(page, market):
     return bool(market in places and re.search(r'\b(?:'+places[market]+r')\b', material, re.I) and re.search(scene, material, re.I))
 
 
+def verified_camera_date(page, release):
+    """Require a dated camera photograph from the source edition week.
+
+    Commons upload dates do not establish when a photograph was taken.
+    Missing or ambiguous capture dates need human sourcing, not a guess.
+    """
+    meta = page.get('imageinfo', [{}])[0].get('extmetadata', {})
+    material = clean(' '.join(str(meta.get(key, {}).get('value', '')) for key in
+                              ('ObjectName', 'ImageDescription', 'Categories')))
+    if re.search(r'\b(?:AI.generated|artificial.intelligence.generated|generative AI|'
+                 r'stable diffusion|midjourney|dall.e|synthetic image|rendered image|'
+                 r'computer.generated|digital art|photomontage)\b', material, re.I):
+        return None
+    raw = clean(meta.get('DateTimeOriginal', {}).get('value', ''))
+    match = re.fullmatch(r'(\d{4})[-:/](\d{1,2})[-:/](\d{1,2})(?:[ T].*)?', raw)
+    if not match:
+        return None
+    try:
+        taken = date(*(int(part) for part in match.groups()))
+        year, week = map(int, release.split('-W'))
+        start = date.fromisocalendar(year, week, 1)
+    except (ValueError, TypeError):
+        return None
+    return str(taken) if start <= taken <= start + timedelta(days=6) else None
+
+
 def new_photos(topics, history, output, release):
     """Use topic-scoped Commons photographs with permanent duplicate history."""
     old_urls = set(history.get('source_urls', [])); old_hashes = set(history.get('sha256', []))
@@ -226,6 +252,9 @@ def new_photos(topics, history, output, release):
                 url = info.get('descriptionurl', '')
                 if license not in ('Public domain', 'CC0') or info.get('mime') != 'image/jpeg' or min(info.get('width', 0), info.get('height', 0)) < 900 or url in old_urls:
                     continue
+                taken_on = verified_camera_date(page, release)
+                if not taken_on:
+                    continue
                 title = page['title'].removeprefix('File:')
                 if not re.search(pattern, title, re.I):
                     continue
@@ -252,7 +281,7 @@ def new_photos(topics, history, output, release):
                 if digest in old_hashes:
                     continue
                 topic['photo'] = topic['id']
-                photos[topic['photo']] = {'title': title, 'creator': clean(meta.get('Artist', {}).get('value')), 'archive': 'Wikimedia Commons', 'source_url': url, 'download_url': info.get('thumburl') or info['url'], 'rights_status': license, 'local_source': 'sources/'+path.name, 'sha256': digest, 'duplicate_check': 'PASS, URL and SHA-256 absent from permanent history', 'verified_on': str(datetime.now(ZONE).date()), 'use': 'Illustrative subject or place photograph; not an image of the reported event'}
+                photos[topic['photo']] = {'title': title, 'creator': clean(meta.get('Artist', {}).get('value')), 'archive': 'Wikimedia Commons', 'source_url': url, 'download_url': info.get('thumburl') or info['url'], 'rights_status': license, 'camera_capture_date': taken_on, 'image_origin': 'camera photograph', 'local_source': 'sources/'+path.name, 'sha256': digest, 'duplicate_check': 'PASS, URL and SHA-256 absent from permanent history', 'verified_on': str(datetime.now(ZONE).date()), 'use': 'Illustrative subject or place photograph; not an image of the reported event'}
                 old_urls.add(url); old_hashes.add(digest); stems.add(stem)
                 print(json.dumps({'topic': topic['id'], 'photo': title, 'rights': license, 'source_url': url}, ensure_ascii=False))
                 break
@@ -267,10 +296,21 @@ def header(t):
     return 'The brief AI research' if t['kind'] == 'Research' else ('The brief AI news from '+t['country'] if t['country'] else 'The brief AI news')
 
 
-def curated_photos(photos, history, output, archive):
+def curated_photos(photos, history, output, archive, release):
     """Use the reviewed bytes, not a CDN thumbnail that can be re-encoded."""
+    year, week = map(int, release.split('-W'))
+    start = date.fromisocalendar(year, week, 1)
     with zipfile.ZipFile(archive) as bundle:
         for photo in photos.values():
+            try:
+                captured = date.fromisoformat(photo['camera_capture_date'])
+            except (KeyError, TypeError, ValueError) as exc:
+                raise ValueError('Curated photo needs a verified camera capture date') from exc
+            if (photo.get('image_origin') != 'camera photograph' or
+                photo.get('rights_status') not in ('Public domain', 'CC0') or
+                not start <= captured <= start + timedelta(days=6) or
+                not photo.get('source_url', '').startswith('https://commons.wikimedia.org/wiki/File:')):
+                raise ValueError('Curated photo must be a real public-domain photograph from the source week')
             if photo['source_url'] in history['source_urls'] or photo['sha256'] in history['sha256']:
                 raise ValueError('Curated photo already used by another batch')
             relative = Path(photo['local_source'])
@@ -426,7 +466,7 @@ def main():
     history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
     if curated:
         photos=curated['photos']
-        curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip')
+        curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip', release)
     else:
         photos=new_photos(topics,history,output,release)
     if len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14:raise ValueError('Fourteen distinct photographs required')
