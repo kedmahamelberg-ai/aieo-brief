@@ -42,6 +42,8 @@
     "prepared_links": "60 of 60 returned HTTP 200 and resolved to their intended Brief article at 2026-11-09T13:04:34+01:00",
     "saved_queue_counts": "28 Meta feed entries, 42 W46 Instagram Story frames, 14 LinkedIn posts, and 14 Substack Notes were observed at the approved schedule times",
     "saved_media_order": "A scheduled Instagram carousel was reopened and its cover, explanation, and CTA cards were checked in order. The full per-placement saved-media audit remains incomplete.",
-    "strict_saved_ui_audit": "not_certified"
+    "strict_saved_ui_audit": "not_certified",
+    "photo_source_audit": "CORRECTION_REQUIRED: 0 of 14 News cover photographs has a verified W45 capture date; three have specific subject or geography mismatches. See data/social-production/photo-audits/2026-W46.json.",
+    "photo_policy_certified": false
   }
 }
