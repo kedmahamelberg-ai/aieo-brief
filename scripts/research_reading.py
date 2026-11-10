@@ -13,6 +13,11 @@ READING_VERSION = 'paper-practitioner-v1'
 PDF_READER_VERSION = 2
 HTML_READER_VERSION = 1
 PMC_READER_VERSION = 1
+# Exact author manuscripts verified against the journal title and author list.
+PNAS_ARXIV_MANUSCRIPTS = {
+    '10.1073/pnas.2610670123': '2611.00380v1',
+    '10.1073/pnas.2609978123': '2602.00333v1',
+}
 MAX_PDF_BYTES = 64 * 1024 * 1024
 MAX_HTML_BYTES = 8 * 1024 * 1024
 MAX_PAPER_CHARS = 600000
@@ -211,6 +216,7 @@ def read_pmc_xml(paper):
         matches = search.json().get('resultList', {}).get('result', [])
         pmcid = next((str(item.get('pmcid')) for item in matches
                       if str(item.get('doi', '')).lower() == doi
+                      and item.get('isOpenAccess') == 'Y'
                       and re.fullmatch(r'PMC\d+', str(item.get('pmcid', '')))), '')
         if not pmcid:
             return {'status': 'pmc_unavailable'}
@@ -255,7 +261,7 @@ def read_pmc_xml(paper):
 
 
 def read_paper(paper):
-    if paper.get('source') == 'pnas':
+    if paper.get('source') == 'pnas' and not paper.get('arxiv_id'):
         pmc = read_pmc_xml(paper)
         if pmc['status'] == 'read':
             return pmc
