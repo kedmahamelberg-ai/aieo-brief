@@ -68,6 +68,27 @@ def optimize_site_photos(site: Path) -> None:
     print(f'Pages photo transfer: {original_bytes} -> {optimized_bytes} bytes across {changed} optimized files')
 
 
+def prune_unreferenced_culture_photos(site: Path, cards: list[dict], overviews: list[dict]) -> None:
+    """Deploy museum photos used by public pages; keep the source library intact."""
+    referenced = set()
+    for item in cards:
+        path = item.get('image_path', '')
+        if re.fullmatch(r'assets/culture/[a-f0-9]{24}\.jpg', path):
+            referenced.add(Path(path).name)
+    for overview in overviews:
+        for kind in ('markets', 'research'):
+            path = overview.get(kind, {}).get('image_path', '')
+            if re.fullmatch(r'assets/culture/[a-f0-9]{24}\.jpg', path):
+                referenced.add(Path(path).name)
+    folder = site / 'assets' / 'culture'
+    removed = 0
+    for path in folder.glob('*.jpg'):
+        if path.name not in referenced:
+            path.unlink()
+            removed += 1
+    print(f'Pages culture photos: kept {len(referenced)} referenced files; removed {removed} unused deployment copies')
+
+
 def utc_now(): return datetime.now(timezone.utc).isoformat()
 def fetch(url):
     r=requests.get(url,timeout=45);r.raise_for_status();return r.json()
@@ -366,6 +387,7 @@ def main():
     validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,news,research)
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
+    prune_unreferenced_culture_photos(SITE, allcards, [weekly_overview, *overview_archive])
     optimize_site_photos(SITE)
     shutil.copyfile(ROOT/'assets/favicon.ico', SITE/'favicon.ico')
     env=Environment(loader=FileSystemLoader(str(ROOT/'templates')),autoescape=select_autoescape(['html']))
