@@ -154,7 +154,7 @@ def extract_arxiv_html(content, title):
     if not heading:
         raise ValueError('html_article_missing')
     words = lambda value: re.findall(r'\w+', unicodedata.normalize('NFKC', value).casefold())
-    actual = words(heading.get_text(' ', strip=True))
+    actual = words(heading.get_text('', strip=False))
     expected = words(title)
     # arXiv's converter sometimes replaces one title letter with an image.
     # Permit exactly one missing character in one word, with every other word exact.
