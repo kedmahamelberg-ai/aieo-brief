@@ -123,7 +123,7 @@
         },
         "image_key": "culture:f1b34451095142a9ab80beeb",
         "image_work_key": "0317aa591e1d8633b61e68dc5dcd3fc18df918ce51c7b33a04f63e848ed9559c",
-        "image_reason": "A real AI policy and business briefing from the same week gives current context. It is not one of the five stories summarized.",
+        "image_reason": "",
         "review_checks": {
           "grounded": true,
           "clear_high_school_language": true,
@@ -354,7 +354,7 @@
         },
         "image_key": "culture:d65ac8570d1927998fb7cdae",
         "image_work_key": "617ba9aeefcae9c3cc29e27757a5c2b28d0217b959a9b03bac708f5106987782",
-        "image_reason": "A real robotic teleoperation scene from the same week illustrates human control of robots. It is not from either Pixel study.",
+        "image_reason": "",
         "review_checks": {
           "grounded": true,
           "clear_high_school_language": true,
@@ -370,7 +370,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "ready",
-      "content_sha256": "1f50184a704f04fd2d31e521d46f060fa4498046e51d76e715b6d2c23f9c4ee3"
+      "content_sha256": "76f800257c9a0d4a94479121805f1e101223fa63e78acfec23caa87e2e487b84"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
