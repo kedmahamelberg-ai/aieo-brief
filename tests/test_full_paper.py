@@ -35,14 +35,17 @@ class FullPaperReading(unittest.TestCase):
         with self.assertRaises(ValueError):
             validate_weekly_research_window(overview,[canonical[0],{'key':'paper:two','date':'2026-10-12'}])
 
-    def test_direct_paper_reading_retains_the_last_page(self):
+    def test_long_paper_reading_retains_the_last_page(self):
         text='A complete evidence sentence. '*6500+'Final-page limitation.'
         sources=[{'source_number':1,'evidence':text,'evidence_basis':'paper_text'}]
-        with patch.object(engine.ai_runtime,'uses_openai',return_value=True):
+        def note(segment,deadline):
+            return segment[-250:], ['A complete evidence sentence.']
+        with patch.object(engine.ai_runtime,'uses_openai',return_value=True), patch.object(engine,'read_segment',side_effect=note):
             compiled,trace=engine.compile_evidence(sources)
-        self.assertEqual(compiled,sources)
-        self.assertIn('Final-page limitation.',compiled[0]['evidence'])
-        self.assertFalse(trace)
+        self.assertTrue(trace)
+        self.assertEqual(trace[0]['start'],0)
+        self.assertEqual(trace[-1]['end'],len(text))
+        self.assertIn('Final-page limitation.',compiled[-1]['evidence'])
 
     def test_every_page_is_read_and_identity_checked(self):
         pages=[Mock(),Mock(),Mock()]
