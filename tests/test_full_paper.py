@@ -142,8 +142,9 @@ class FullPaperReading(unittest.TestCase):
 
     def test_arxiv_title_image_missing_one_letter_still_matches(self):
         title = 'ScholarCatalyst: A Benchmark for Retrieving Papers That Inspire New Research'
-        heading = 'Scholaratalyst: A Benchmark for Retrieving Papers that Inspire New Research'
-        html = ('<article class="ltx_document"><h1 class="ltx_title_document">' + heading +
+        html = ('<article class="ltx_document"><h1 class="ltx_title_document">Scholar'
+                '<img src="logo.png" alt="[Uncaptioned image]">atalyst: A Benchmark for<br>'
+                'Retrieving Papers that Inspire New Research'
                 '</h1><div class="ltx_abstract">Abstract.</div><section><p>' +
                 'The paper describes its methodology and limitations. ' * 35 +
                 '</p></section><section><p>' +
