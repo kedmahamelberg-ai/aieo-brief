@@ -202,10 +202,15 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
                 human=text(v.get('for_humans'));ai=text(v.get('for_ai'))
             else:
                 human=text(v.get('for_humans')) or human;ai=text(v.get('for_ai')) or ai
-        human_label=DIRECTION_LABELS[axes['human']['direction']] if human else DIRECTION_LABELS['unresolved']
-        ai_label=DIRECTION_LABELS[axes['ai']['direction']] if ai else DIRECTION_LABELS['unresolved']
+        # A reviewed editorial can intentionally withhold an unsupported axis
+        # reading. Do not publish the upstream directional claim without text
+        # that explains it to readers.
+        human_direction = axes['human']['direction'] if human or axes['human']['direction'] in ('none', 'unresolved') else 'unresolved'
+        ai_direction = axes['ai']['direction'] if ai or axes['ai']['direction'] in ('none', 'unresolved') else 'unresolved'
+        human_label=DIRECTION_LABELS[human_direction] if human else DIRECTION_LABELS['unresolved']
+        ai_label=DIRECTION_LABELS[ai_direction] if ai else DIRECTION_LABELS['unresolved']
         count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220))
-        output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':axes['human']['direction'],'ai_direction':axes['ai']['direction'],'human_label':human_label,'ai_label':ai_label,'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
+        output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':human_direction,'ai_direction':ai_direction,'human_label':human_label,'ai_label':ai_label,'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
 
 def papers(sanitize=True):
