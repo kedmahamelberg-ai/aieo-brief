@@ -1,23 +1,21 @@
 # Weekly overview photograph sources
 
-The weekly overview uses documentary photographs, not generated illustrations.
+The weekly overview uses real documentary photographs. An image may provide context without depicting a linked story; captions must say so plainly. AI-generated imagery is prohibited.
 
-## `east-fork-toklat.jpg`
+## W45 news, `w45-news-2026-11-03.jpg`
 
-- Subject: East Fork of the Toklat River, Denali National Park and Preserve
-- Photographer credit: NPS Photo / Tim Rains
-- Publisher: U.S. National Park Service
-- Source record: https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb
-- Source rights statement: Public domain — Full Granting Rights
-- Web preparation: centre-cropped and resized to 1200 × 675 pixels for The Brief
+- Subject: press briefing for the Bangladesh AI Business Summit in Dhaka, 3 November 2026. This event is separate from the five reports linked in the W45 news overview.
+- Credit: Press Information Department of Bangladesh.
+- Source: https://commons.wikimedia.org/wiki/File:Fakir_Mahbub_Anam_at_press_briefing_for_Bangladesh_AI_Business_Summit_2026,_2026-11-03.jpg
+- Rights: public domain, government photograph, as documented by the Commons record.
+- Web preparation: cropped from the original photograph to 1200 × 675 pixels.
 
-## `milky-way-yellowstone.jpg`
+## W45 research, `w45-research-2026-11-02.jpg`
 
-- Subject: the Milky Way and stars reflected on a backcountry lake in Yellowstone National Park
-- Photographer credit: Neal Herbert / NPS
-- Publisher: U.S. National Park Service
-- Source record: https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7
-- Source rights statement: Public domain — Full Granting Rights
-- Web preparation: centre-cropped and resized to 1200 × 675 pixels for The Brief
+- Subject: NASA astronauts practice Canadarm2 robotic arm controls aboard the ISS, 2 November 2026. This is not a photograph of the Pixel robots or their experiments.
+- Credit: NASA / Anil Menon.
+- Source: https://commons.wikimedia.org/wiki/File:Iss075e0254172_(Nov_2,_2026)_---_Expedition_75_flight_engineers_Luke_Delaney_and_Jessica_Watkins,_both_NASA_astronauts,_review_and_practice_Canadarm2_robotic_arm_maneuvers_at_the_robotics_workstation_inside_the_Inter.jpg
+- Rights: public domain, NASA photograph, as documented by the Commons record.
+- Web preparation: cropped from the original photograph to 1200 × 675 pixels.
 
-The source-record links and credits remain visible below the photographs. The retired AIEO-generated illustrations are not used by the website.
+The earlier NPS landscape images remain in repository history but are retired from the W45 page.
