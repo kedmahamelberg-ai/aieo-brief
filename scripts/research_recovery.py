@@ -12,7 +12,7 @@ from urllib.parse import quote
 
 import requests
 from research_pdf import read_pdf_abstract
-from research_reading import needs_upgrade, publisher_pdf_urls
+from research_reading import needs_upgrade, publisher_pdf_urls, PNAS_ARXIV_MANUSCRIPTS
 
 
 class AbstractPage(HTMLParser):
@@ -56,8 +56,8 @@ def unfinished(root):
 
 
 def recover(paper, get):
-    aid = paper.get('arxiv_id', '')
     doi = paper.get('doi', '')
+    aid = paper.get('arxiv_id') or PNAS_ARXIV_MANUSCRIPTS.get(doi, '')
     pdf_urls=[]
     if re.fullmatch(r'\d{4}\.\d{4,5}(?:v\d+)?', aid):
         pdf_urls=['https://arxiv.org/pdf/' + aid]
@@ -85,13 +85,16 @@ def recover(paper, get):
     if len(abstract) < 80:
         return None
     result = {**paper, 'abstract': abstract, 'evidence_scope': 'abstract',
-              'abstract_format': 'html' if aid else 'metadata', 'abstract_source_url': paper.get('url',''),
+              'abstract_format': 'html' if aid else 'metadata', 'abstract_source_url': 'https://arxiv.org/abs/' + aid if aid else paper.get('url',''),
               'metadata_sha256': hashlib.sha256((paper['original_headline'] + '\n' + abstract).encode()).hexdigest()}
     if pdf_source:
         result.update(pdf_url=pdf_source,abstract_source_url=pdf_source,abstract_format='pdf')
     if pdf_urls:result['pdf_url']=pdf_urls[0]
     if aid:
+        result['arxiv_id'] = aid
         result['pdf_url'] = 'https://arxiv.org/pdf/' + aid
+        if paper.get('source') == 'pnas':
+            result['research_label'] = 'Journal article · full text from matching arXiv manuscript'
     return result
 
 
