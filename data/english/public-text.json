@@ -6766,6 +6766,26 @@
       },
       "output_sha256": "cc40fe3d092885ebe85e00b09f40c8a2ac15a2d2bf67caa7a9ffb9f5bd295ecd",
       "policy": "brief-english-display-v1"
+    },
+    "44bd60e021352cff5cf4b8a7773ea7bd419da0eb97631ac465da458a049d94de": {
+      "english": {
+        "0": "394. Song—Braw Lads o’ Gala Water",
+        "1": "A poem by Robert Burns.",
+        "2": "Fine, fine lads on Yarrow braes,\n  They rove among the blooming heather;\nBut Yarrow braes, nor Ettrick shaws\n  Can match the lads of Galla Water.\n\n\nBut there is one, a secret one,\n  Above them all I love him better;\nAnd I’ll be his, and he’ll be mine,\n  The bonnie lad of Gala Water.\n\n\nAlthough his daddy was no laird,\n  And though I have not much dowry,\nYet rich in kindest, truest love,\n  We’ll tend our flocks by Gala Water.\n\n\nIt ne'er was wealth, it ne'er was wealth,\n  That cost contentment, peace, or pleasure;\nThe bonds and bliss of mutual love,\n  O that’s the chiefest world's treasure."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "fa46f30360bb151ce868c1b653881bf47c863f2a9c7348e5338d74257b66f897",
+      "policy": "brief-english-display-v1"
     }
   }
 }
