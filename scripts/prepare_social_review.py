@@ -196,11 +196,13 @@ def verified_camera_date(page, release):
     Missing or ambiguous capture dates need human sourcing, not a guess.
     """
     meta = page.get('imageinfo', [{}])[0].get('extmetadata', {})
-    material = clean(' '.join(str(meta.get(key, {}).get('value', '')) for key in
-                              ('ObjectName', 'ImageDescription', 'Categories')))
+    material = clean(' '.join([page.get('title', ''), *(
+        str(meta.get(key, {}).get('value', '')) for key in
+        ('ObjectName', 'ImageDescription', 'Categories'))]))
     if re.search(r'\b(?:AI.generated|artificial.intelligence.generated|generative AI|'
                  r'stable diffusion|midjourney|dall.e|synthetic image|rendered image|'
-                 r'computer.generated|digital art|photomontage)\b', material, re.I):
+                 r'computer.generated|digital art|photomontage|AI.upscaled|'
+                 r'upscaled with AI|AI.enhanced|AI.edited)\b', material, re.I):
         return None
     raw = clean(meta.get('DateTimeOriginal', {}).get('value', ''))
     match = re.fullmatch(r'(\d{4})[-:/](\d{1,2})[-:/](\d{1,2})(?:[ T].*)?', raw)
