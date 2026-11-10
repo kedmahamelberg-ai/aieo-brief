@@ -316,8 +316,9 @@ def _apply_visual_correction(overview: dict, root: Path) -> None:
         section = overview[kind]
         if section.get('status') != 'ready' or not section.get('human_approved'):
             continue
-        if section.get('image_path') not in (values['previous_image_path'], values['image_path']):
-            raise ValueError('Approved weekly image changed before visual correction')
+        approved_paths = {values['previous_image_path'], values['image_path'], *values.get('legacy_image_paths', [])}
+        if section.get('image_path') not in approved_paths:
+            raise ValueError(f'Approved weekly image changed before visual correction: {release_id} {kind} {section.get("image_path")}')
         try:
             taken = date.fromisoformat(values['image_taken_date'])
             start = date.fromisoformat(overview['period_start'])

@@ -5,6 +5,7 @@
   "sections": {
     "markets": {
       "previous_image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+      "legacy_image_paths": ["assets/culture/f1b34451095142a9ab80beeb.jpg"],
       "image_path": "assets/weekly-overviews/w45-news-2026-11-03.jpg",
       "image_alt": "A real press briefing for the Bangladesh AI Business Summit on 3 November 2026; contextual photograph from the same week, not one of the five linked reports",
       "image_caption": "Bangladesh AI Business Summit press briefing, 3 November 2026 — contextual photograph, separate from the five linked reports",
@@ -17,6 +18,7 @@
     },
     "research": {
       "previous_image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+      "legacy_image_paths": ["assets/culture/d65ac8570d1927998fb7cdae.jpg"],
       "image_path": "assets/weekly-overviews/w45-research-2026-11-02.jpg",
       "image_alt": "NASA astronauts practice robotic arm controls aboard the International Space Station on 2 November 2026; contextual teleoperation photograph, not the Pixel robots",
       "image_caption": "Robotic arm control practice aboard the ISS, 2 November 2026 — contextual photograph, not a Pixel experiment",

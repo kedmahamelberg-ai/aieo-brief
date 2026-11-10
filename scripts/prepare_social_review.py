@@ -296,21 +296,26 @@ def header(t):
     return 'The brief AI research' if t['kind'] == 'Research' else ('The brief AI news from '+t['country'] if t['country'] else 'The brief AI news')
 
 
-def curated_photos(photos, history, output, archive, release):
-    """Use the reviewed bytes, not a CDN thumbnail that can be re-encoded."""
+def validate_curated_photo_policy(photos, release):
+    """Apply the current image policy to a new curated social batch."""
     year, week = map(int, release.split('-W'))
     start = date.fromisocalendar(year, week, 1)
+    for photo in photos.values():
+        try:
+            captured = date.fromisoformat(photo['camera_capture_date'])
+        except (KeyError, TypeError, ValueError) as exc:
+            raise ValueError('Curated photo needs a verified camera capture date') from exc
+        if (photo.get('image_origin') != 'camera photograph' or
+            photo.get('rights_status') not in ('Public domain', 'CC0') or
+            not start <= captured <= start + timedelta(days=6) or
+            not photo.get('source_url', '').startswith('https://commons.wikimedia.org/wiki/File:')):
+            raise ValueError('Curated photo must be a real public-domain photograph from the source week')
+
+
+def curated_photos(photos, history, output, archive):
+    """Use the reviewed bytes, not a CDN thumbnail that can be re-encoded."""
     with zipfile.ZipFile(archive) as bundle:
         for photo in photos.values():
-            try:
-                captured = date.fromisoformat(photo['camera_capture_date'])
-            except (KeyError, TypeError, ValueError) as exc:
-                raise ValueError('Curated photo needs a verified camera capture date') from exc
-            if (photo.get('image_origin') != 'camera photograph' or
-                photo.get('rights_status') not in ('Public domain', 'CC0') or
-                not start <= captured <= start + timedelta(days=6) or
-                not photo.get('source_url', '').startswith('https://commons.wikimedia.org/wiki/File:')):
-                raise ValueError('Curated photo must be a real public-domain photograph from the source week')
             if photo['source_url'] in history['source_urls'] or photo['sha256'] in history['sha256']:
                 raise ValueError('Curated photo already used by another batch')
             relative = Path(photo['local_source'])
@@ -466,7 +471,8 @@ def main():
     history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
     if curated:
         photos=curated['photos']
-        curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip', release)
+        validate_curated_photo_policy(photos, release)
+        curated_photos(photos, history, output, ROOT/'config'/f'social-photos-{release}.zip')
     else:
         photos=new_photos(topics,history,output,release)
     if len(photos)!=14 or len({p['sha256'] for p in photos.values()})!=14:raise ValueError('Fourteen distinct photographs required')
