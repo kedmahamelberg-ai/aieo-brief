@@ -144,13 +144,13 @@ jobs:
         uses: actions/deploy-pages@v4
         continue-on-error: true
         with:
-          timeout: 1800000
+          timeout: 600000
       - name: Retry Pages if file sync times out
         id: deployment_retry
         if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
         with:
-          timeout: 1800000
+          timeout: 600000
 
   social_review:
     # This is a deployment dependency, not another clock or workflow_run chain.
