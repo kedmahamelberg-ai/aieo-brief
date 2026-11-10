@@ -28,7 +28,7 @@ from editorial_artifacts import isolated_artifact
 from research_reading import restore_reading_scope, withhold_abstract_summary
 from research_affiliations import clean_institutions
 from source_evidence_quality import assess_body
-from source_chronology import older_source_year, public_directional_counts
+from source_chronology import older_source_year
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -326,7 +326,6 @@ def main():
     if SITE.resolve()==ROOT or ROOT not in SITE.resolve().parents:raise ValueError('Build directory must be inside the repo')
     preview=args.preview or args.mock
     config=load_config(ROOT);release,sym=inputs(preview);validate_pair(release,sym)
-    counts=public_directional_counts(release,sym)
     if preview:
         registry={};readiness={};editorial=json.loads((ROOT/'data/preview/editorial.json').read_text())
         config.update(community_enabled=False,ga4_measurement_id='',supabase_publishable_key='');config['adsense']['enabled']=False
@@ -380,6 +379,11 @@ def main():
             if field in public:archived[field] = copy.deepcopy(public[field])
     news=[public_by_key[x['key']] for x in news]
     validate_current_readings(news)
+    counts = {axis: {direction: 0 for direction in sorted(DIRECTION_LABELS)}
+              for axis in ('human', 'ai')}
+    for item in news:
+        for axis in counts:
+            counts[axis][item[axis + '_direction']] += 1
     research=[public_by_key[x['key']] for x in research]
     culture=[public_by_key[x['key']] for x in culture]
     for item in allcards:
