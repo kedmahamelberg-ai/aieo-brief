@@ -334,7 +334,7 @@ def _apply_visual_correction(overview: dict, root: Path) -> None:
         asset = root / values['image_path']
         if not asset.is_file():
             raise ValueError('Corrected weekly image asset is missing: ' + values['image_path'])
-        section.update({key: value for key, value in values.items() if key != 'previous_image_path'})
+        section.update({key: value for key, value in values.items() if key not in ('previous_image_path', 'legacy_image_paths')})
 
 
 def _restore_archived_research_approvals(records: dict[str, dict], root: Path) -> None:
@@ -416,6 +416,12 @@ def prepare_weekly_overviews(
                                source_research if source_research is not None else research,
                                root, list(records.values()), allow_model=allow_model)
     _apply_visual_correction(current, Path(root))
+    if release_id > '2026-W45':
+        for kind in ('markets', 'research'):
+            section = current[kind]
+            if (section.get('status') == 'ready' and section.get('human_approved') and
+                    section.get('image_path') == NATURE_IMAGES[kind]['image_path']):
+                raise ValueError(f'{release_id} {kind} needs a current, verified public-domain photograph before publication')
     for archived in records.values():
         _apply_visual_correction(archived, Path(root))
     current.pop('content_sha256', None)
