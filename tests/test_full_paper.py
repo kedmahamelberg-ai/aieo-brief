@@ -117,7 +117,7 @@ class FullPaperReading(unittest.TestCase):
                'The authors compared masonry across structures and describe limitations. ' * 45 +
                '</p></sec></body></article>').encode()
         search = Mock()
-        search.json.return_value = {'resultList': {'result': [{'doi': doi, 'pmcid': 'PMC13732063'}]}}
+        search.json.return_value = {'resultList': {'result': [{'doi': doi, 'pmcid': 'PMC13732063', 'isOpenAccess': 'Y'}]}}
         search.raise_for_status.return_value = None
         article = MagicMock()
         article.__enter__.return_value = article
