@@ -6786,6 +6786,27 @@
       },
       "output_sha256": "fa46f30360bb151ce868c1b653881bf47c863f2a9c7348e5338d74257b66f897",
       "policy": "brief-english-display-v1"
+    },
+    "00312e63490c3ee362cf82b634976f81e3bc6306665d9e82a093cfc985aafc1b": {
+      "english": {
+        "0": "Shanghai Jiao Tong University faculty and students attended senior sister Chen Liya's lecture series, learning the basic concepts of AI, models and generative technologies, and the practical applications boundaries in research and life. The lectures emphasize that AI is not a single machine but a system that includes data, models, and application layers, and point out that in scientific research AI can help organize literature, standardize data, and polish text, but originality and problem definition still require human oversight.",
+        "1": "The course reminds students to correctly understand the capability boundaries of AI, emphasizes concerns about privacy, ethics, and responsibility, and encourages an evidence-based, line-by-line verification approach in research.",
+        "2": "Shanghai Jiao Tong University News Network",
+        "3": "Shanghai Jiao Tong University News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "d51dec94494889e8c3287a6dd194fa700bfa2ccbed0555c5b52d8b7593ae7546",
+      "policy": "brief-english-display-v1"
     }
   }
 }
