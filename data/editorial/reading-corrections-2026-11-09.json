@@ -4,6 +4,17 @@
   "review_method": "Compared each flagged Brief story with its published Observatory directional evidence and the saved Brief editorial; the two direction changes are mirrored in the Observatory correction manifest.",
   "news": [
     {
+      "key": "event:e49b840e-fd52-4816-943d-2c660cdb40f3",
+      "event_id": "e49b840e-fd52-4816-943d-2c660cdb40f3",
+      "reason": "PAHO reports EIOS training and new AI-based signal functions. A stored editorial has a blank AI-side reading despite the published directional label.",
+      "source_urls": [
+        "https://www.paho.org/en/news/3-11-2026-paho-promotes-use-artificial-intelligence-and-digital-tools-strengthen-epidemic"
+      ],
+      "after": {
+        "for_ai": "PAHO reports new AI-based EIOS functions for detecting and managing public-health signals. Their effect on system performance was not measured in this report."
+      }
+    },
+    {
       "key": "event:360e30e5-080b-46ff-a4ad-6d3491d5b365",
       "event_id": "360e30e5-080b-46ff-a4ad-6d3491d5b365",
       "reason": "The published directional label and the Brief reading must describe the same source-supported claim.",
