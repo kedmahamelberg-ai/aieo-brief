@@ -103,7 +103,8 @@ def main():
             counts['unchanged']+=1;selected.append(prior);continue
         if p['key'] not in todo_keys and prior.get('metadata_sha256')==p['metadata_sha256'] and prior.get('has_editorial'):
             counts['unchanged']+=1;selected.append(unchanged_record(prior,p));continue
-        base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1}
+        base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1,
+              'pmc_reader_version':PMC_READER_VERSION if p.get('source')=='pnas' else 0}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
         if not (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')):
             counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
