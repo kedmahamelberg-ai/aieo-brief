@@ -1,54 +1,38 @@
 {
-  "paper:afd9c531da091aca39b7d1e3": {
-    "attempts": 12,
-    "last_attempt": "2026-11-10T14:02:37.070498+00:00"
-  },
   "paper:3ffa2d84b6e20da2db465da1": {
-    "attempts": 12,
-    "last_attempt": "2026-11-10T14:02:37.131417+00:00"
+    "attempts": 13,
+    "last_attempt": "2026-11-10T15:16:21.892550+00:00"
   },
   "paper:beaf7b4a534a2a4135c21b97": {
-    "attempts": 15,
-    "last_attempt": "2026-11-10T13:29:44.566670+00:00"
+    "attempts": 16,
+    "last_attempt": "2026-11-10T15:16:23.564169+00:00"
   },
   "paper:3a3475ffddec2b1bfb6c31e2": {
-    "attempts": 6,
-    "last_attempt": "2026-11-10T13:17:19.266301+00:00"
+    "attempts": 7,
+    "last_attempt": "2026-11-10T14:56:18.616436+00:00"
   },
   "paper:baa1718febeede56b7b7af8a": {
-    "attempts": 5,
-    "last_attempt": "2026-11-10T13:50:41.107262+00:00"
+    "attempts": 6,
+    "last_attempt": "2026-11-10T14:43:35.154239+00:00"
   },
   "paper:be49d96abd2a3f5b615d1f08": {
     "attempts": 2,
     "last_attempt": "2026-11-03T19:50:31.264602+00:00"
   },
   "paper:7cba509615081b2bc0d1faf2": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:17:16.222805+00:00"
+    "attempts": 4,
+    "last_attempt": "2026-11-10T14:32:14.580326+00:00"
   },
   "paper:7de8e086b715a97caa852c62": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:17:16.277925+00:00"
-  },
-  "paper:73719334b220689bc34e3c32": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:17:16.336617+00:00"
+    "attempts": 4,
+    "last_attempt": "2026-11-10T14:32:15.418906+00:00"
   },
   "paper:52c3ba78f28c68d12f1a0973": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:17:16.413605+00:00"
+    "attempts": 4,
+    "last_attempt": "2026-11-10T14:35:36.912749+00:00"
   },
   "paper:565eb5d350d80d2a2f647f6b": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:50:40.810232+00:00"
-  },
-  "paper:8778a5cfae74250c006dc1f6": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:50:40.892971+00:00"
-  },
-  "paper:3dbb5af83842291f863af301": {
-    "attempts": 3,
-    "last_attempt": "2026-11-10T13:50:41.026106+00:00"
+    "attempts": 4,
+    "last_attempt": "2026-11-10T14:35:36.234557+00:00"
   }
 }
