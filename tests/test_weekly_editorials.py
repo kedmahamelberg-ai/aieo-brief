@@ -15,6 +15,16 @@ from check_observatory_update import needs_weekly_review
 
 
 class WeeklyEditorialTests(unittest.TestCase):
+    def test_credited_public_domain_photo_needs_no_extra_image_note(self):
+        section = self.generate()['markets']
+        section['image_reason'] = ''
+        with self.assertRaisesRegex(ValueError, 'weekly_image_reason'):
+            validate_section(section)
+        section.update(image_origin='camera photograph', image_rights='Public domain',
+                       image_source_url='https://commons.wikimedia.org/wiki/File:Example.jpg',
+                       image_caption='A sourced photograph from the edition week')
+        validate_section(section)
+
     def test_approved_source_survives_url_rename_but_not_changed_content(self):
         from weekly_editorials import ready_valid, validate_public_weekly_sources
         result = self.generate()

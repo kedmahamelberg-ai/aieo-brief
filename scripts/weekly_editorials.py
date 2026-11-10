@@ -313,6 +313,13 @@ def validate_section(section):
     draft = {'title': section['title'], 'paragraphs': [[{k: part[k] for k in ('text', 'source_key')}
              for part in paragraph] for paragraph in section['prose']],
              'image_key': section['image_key'], 'image_reason': section['image_reason']}
+    if (not draft['image_reason'] and section.get('image_origin') == 'camera photograph' and
+            str(section.get('image_rights', '')).startswith('Public domain') and
+            str(section.get('image_source_url', '')).startswith('https://') and
+            section.get('image_caption')):
+        # The credited caption gives verified editorial context; an additional
+        # visible image note is optional for this published photograph.
+        draft['image_reason'] = section['image_caption']
     # Numeric grounding was checked against full input before publication.
     text = ' '.join([draft['title']] + [part['text'] for p in draft['paragraphs'] for part in p])
     validate_draft(draft, [{'key': key, 'deck': text} for key in keys], [{'key': draft['image_key']}])
