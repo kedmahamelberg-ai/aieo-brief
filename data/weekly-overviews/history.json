@@ -134,9 +134,6 @@
           "image_metaphor_supported": true
         },
         "human_approved": true,
-        "legacy_image_paths": [
-          "assets/culture/f1b34451095142a9ab80beeb.jpg"
-        ],
         "image_origin": "camera photograph",
         "image_taken_date": "2026-11-03"
       },
@@ -368,15 +365,12 @@
           "image_metaphor_supported": true
         },
         "human_approved": true,
-        "legacy_image_paths": [
-          "assets/culture/d65ac8570d1927998fb7cdae.jpg"
-        ],
         "image_origin": "camera photograph",
         "image_taken_date": "2026-11-02"
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "ready",
-      "content_sha256": "8b94611b11e153b61d38f9c6825a4f390843b0cad5afce33e48d1e75d5263c1c"
+      "content_sha256": "1f50184a704f04fd2d31e521d46f060fa4498046e51d76e715b6d2c23f9c4ee3"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
