@@ -76,6 +76,7 @@ class ResearchRecovery(unittest.TestCase):
         self.assertEqual(result['pdf_url'], 'https://arxiv.org/pdf/2602.00333v1')
         self.assertEqual(result['abstract_source_url'], 'https://arxiv.org/abs/2602.00333v1')
         self.assertIn('matching arXiv manuscript', result['research_label'])
+        self.assertEqual(result['access'], 'Open matching manuscript on arXiv')
 
     def test_archive_backlog_survives_discovery_and_network_failure(self):
         with tempfile.TemporaryDirectory() as folder:
