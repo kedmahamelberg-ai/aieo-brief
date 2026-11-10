@@ -37,6 +37,8 @@ def validate_record(row, root=None, check_image=False):
         raise ValueError('Missing source or reuse terms: ' + row['key'])
     kind = row['culture_type']
     if kind == 'illustration':
+        if not rights['label'].startswith(('CC0', 'Public domain')) or row['publisher'] != 'Cleveland Museum of Art':
+            raise ValueError('Illustration must be a real public-domain museum work: ' + row['key'])
         path = row.get('image_path', '')
         if not re.fullmatch(r'assets/culture/[a-f0-9]{24}\.jpg', path):
             raise ValueError('Invalid cached art path')
