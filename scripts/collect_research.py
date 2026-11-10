@@ -93,23 +93,3 @@ def main():
  (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
  print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))
 if __name__=='__main__':main()
-,'',aid):doi for doi,aid in PNAS_ARXIV_MANUSCRIPTS.items()}
- for r in rows:
-  if r.get('source')=='arxiv' and r.get('doi','')=='' and mapped_arxiv_ids.get(re.sub(r'v\\d+
-  if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
- affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
- payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'recovery':recovery_status,'papers':list(unique.values())}
- (private/'inputs.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
- (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
- print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))
-if __name__=='__main__':main()
-,'',r.get('arxiv_id',''))) in available_pnas_dois:
-   continue
-  key=r['key'];old=unique.get(key)
-  if not old or (r['source']=='pnas' and r.get('abstract')):unique[key]=r
- affiliation_status=enrich_affiliations(list(unique.values()),contact=os.environ.get('RESEARCH_CONTACT_EMAIL',''))
- payload={'schema_version':'aieo_research_inputs_v1','period_start':start,'period_end':end,'providers':status,'affiliation_enrichment':affiliation_status,'recovery':recovery_status,'papers':list(unique.values())}
- (private/'inputs.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
- (ROOT/'data/research/collection-status.json').write_text(json.dumps({k:v for k,v in payload.items() if k!='papers'},indent=2)+'\n')
- print(json.dumps({'period_start':start,'period_end':end,'papers':len(unique),'providers':status},indent=2))
-if __name__=='__main__':main()
