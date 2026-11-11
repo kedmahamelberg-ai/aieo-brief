@@ -1,0 +1,26 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "authorization": "Owner requested source-checked research summaries and corrections on 2026-11-11.",
+  "review_method": "Compared the full ScholarCatalyst paper on arXiv with the generated Brief fields. The paper says authors verified early-stage questions and judged candidate papers; the evaluation used a fixed, time-restricted local corpus.",
+  "news": [],
+  "research": [
+    {
+      "key": "paper:52c3ba78f28c68d12f1a0973",
+      "reason": "The generated summary says researchers labeled queries and that the evaluation corpus was changing. The authors verified 894 questions and judged papers; the measured retrieval used a fixed local corpus. Replace implications about operational research outcomes with the study's measured retrieval result.",
+      "source_urls": [
+        "https://arxiv.org/html/2610.02202v1",
+        "https://arxiv.org/abs/2610.02202v1"
+      ],
+      "after": {
+        "what_happened": "In a test built from 184 lead authors’ judgments about 207 computer science projects, search systems tried to find earlier papers that could inspire work on 894 early-stage questions. The strongest system found 48% of credited papers among its top 20 results.",
+        "why_it_matters": "The test shows that search methods can miss papers researchers credit as useful for forming a new idea, even when search agents make repeated queries.",
+        "body_paragraphs": [
+          "Lead authors of 207 recent computer science projects reviewed 894 questions about their projects before the key findings. They judged which earlier papers did or could have helped, including papers they had not encountered.",
+          "Search agents recovered 42% of credited papers in their top 20, compared with 48% for a similarity-based search system. Each question searched a fixed corpus limited to papers available before the project."
+        ],
+        "limitation": "The labels depend on authors looking back at completed projects. The test used a fixed local paper corpus and no live web access, so its results do not measure research outcomes in practice.",
+        "headline": "Search tools miss papers researchers say could inspire new work"
+      }
+    }
+  ]
+}

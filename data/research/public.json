@@ -4553,15 +4553,15 @@
       "abstract_source_url": "https://arxiv.org/abs/2610.02202v1",
       "abstract_format": "html",
       "has_editorial": true,
-      "headline": "Many strong research papers are missed by automatic search tools",
+      "headline": "Search tools miss papers researchers say could inspire new work",
       "deck": "A benchmark asks if automatic search can find the ideas that spark new work.",
-      "what_happened": "Researchers tested how well automatic search finds ideas that could spark new work. They had 184 researchers label 894 queries. Even the best systems found about half of the key papers in the top results, and the corpus was large and changing.",
-      "why_it_matters": "This means teams should not rely on generic search alone to spark ideas. Expert judgment and careful selection are needed when looking for papers that guide a project.",
+      "what_happened": "In a test built from 184 lead authors’ judgments about 207 computer science projects, search systems tried to find earlier papers that could inspire work on 894 early-stage questions. The strongest system found 48% of credited papers among its top 20 results.",
+      "why_it_matters": "The test shows that search methods can miss papers researchers credit as useful for forming a new idea, even when search agents make repeated queries.",
       "body_paragraphs": [
-        "The study had real researchers judge which papers could inspire a given research question. It found many useful inspirations lie outside top similarities and that coverage gaps grow as the corpus grows.",
-        "Practically, teams should mix AI search with human checks and focus on papers that truly inform the direction, not just those that look similar. How will your team balance automation with human review?"
+        "Lead authors of 207 recent computer science projects reviewed 894 questions about their projects before the key findings. They judged which earlier papers did or could have helped, including papers they had not encountered.",
+        "Search agents recovered 42% of credited papers in their top 20, compared with 48% for a similarity-based search system. Each question searched a fixed corpus limited to papers available before the project."
       ],
-      "limitation": "Limitations include hindsight labels, recognition that coverage is incomplete and tied to a fixed, temporally restricted corpus with no live web access.",
+      "limitation": "The labels depend on authors looking back at completed projects. The test used a fixed local paper corpus and no live web access, so its results do not measure research outcomes in practice.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
