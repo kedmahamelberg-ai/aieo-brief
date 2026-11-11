@@ -1,33 +1,41 @@
 {
   "schema_version": "brief_weekly_visual_correction_v1",
   "release_id": "2026-W45",
-  "reason": "Replace unrelated historical landscape photographs with real public-domain photographs taken during W45. Clearly identify each image as contextual and separate from the five linked news reports or the Pixel studies.",
+  "reason": "Use public-domain camera photographs as explicit visual analogies for the reviewed prose. The connection is conceptual; capture dates need not match the edition week. Do not substitute unrelated events.",
   "sections": {
     "markets": {
       "previous_image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
-      "legacy_image_paths": ["assets/culture/f1b34451095142a9ab80beeb.jpg"],
-      "image_path": "assets/weekly-overviews/w45-news-2026-11-03.jpg",
-      "image_alt": "A real press briefing for the Bangladesh AI Business Summit on 3 November 2026; contextual photograph from the same week, not one of the five linked reports",
-      "image_caption": "Bangladesh AI Business Summit press briefing, 3 November 2026 — contextual photograph, separate from the five linked reports",
-      "image_credit": "Press Information Department of Bangladesh",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Fakir_Mahbub_Anam_at_press_briefing_for_Bangladesh_AI_Business_Summit_2026,_2026-11-03.jpg",
-      "image_rights": "Public domain · government photograph",
+      "legacy_image_paths": [
+        "assets/culture/f1b34451095142a9ab80beeb.jpg",
+        "assets/weekly-overviews/w45-news-2026-11-03.jpg"
+      ],
+      "image_path": "assets/weekly-overviews/w45-open-crossing.jpg",
+      "image_alt": "A narrow suspension footbridge crosses the river at Zion Lodge between leafless trees",
+      "image_caption": "Suspension footbridge at Zion Lodge, 1952",
+      "image_credit": "Courtesy Zion National Park, Photographer Glenn Haynes, Museum Catalog Number ZION 9521",
+      "image_source_url": "https://npgallery.nps.gov/AssetDetail/e00234e696804f57a6cc9d0e1aaa19bf",
+      "image_rights": "Public domain",
       "image_origin": "camera photograph",
-      "image_taken_date": "2026-11-03",
-      "image_reason": ""
+      "image_taken_date": "1952-04-16",
+      "image_reason": "A bridge needs both an open crossing and firm supports, echoing the review’s link between access, shared models and human safeguards.",
+      "image_purpose": "metaphorical illustration"
     },
     "research": {
       "previous_image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
-      "legacy_image_paths": ["assets/culture/d65ac8570d1927998fb7cdae.jpg"],
-      "image_path": "assets/weekly-overviews/w45-research-2026-11-02.jpg",
-      "image_alt": "NASA astronauts practice robotic arm controls aboard the International Space Station on 2 November 2026; contextual teleoperation photograph, not the Pixel robots",
-      "image_caption": "Robotic arm control practice aboard the ISS, 2 November 2026 — contextual photograph, not a Pixel experiment",
-      "image_credit": "NASA / Anil Menon",
-      "image_source_url": "https://commons.wikimedia.org/wiki/File:Iss075e0254172_(Nov_2,_2026)_---_Expedition_75_flight_engineers_Luke_Delaney_and_Jessica_Watkins,_both_NASA_astronauts,_review_and_practice_Canadarm2_robotic_arm_maneuvers_at_the_robotics_workstation_inside_the_Inter.jpg",
-      "image_rights": "Public domain · NASA photograph",
+      "legacy_image_paths": [
+        "assets/culture/d65ac8570d1927998fb7cdae.jpg",
+        "assets/weekly-overviews/w45-research-2026-11-02.jpg"
+      ],
+      "image_path": "assets/weekly-overviews/w45-careful-steps.jpg",
+      "image_alt": "Uneven stone steps climb through mossy rocks and tree roots into shade on Saintly Hill along the Chilkoot Trail",
+      "image_caption": "Stone steps on Saintly Hill, Chilkoot Trail, 2016",
+      "image_credit": "National Park Service",
+      "image_source_url": "https://npgallery.nps.gov/AssetDetail/63dd6ea5-47d6-40fb-aa75-e7a4e4affddb",
+      "image_rights": "Public domain · Full Granting Rights",
       "image_origin": "camera photograph",
-      "image_taken_date": "2026-11-02",
-      "image_reason": ""
+      "image_taken_date": "2016-06-07",
+      "image_reason": "Uneven steps disappearing into shade echo robots learning to move through real spaces, where progress depends on sensing obstacles and knowing what remains unseen.",
+      "image_purpose": "metaphorical illustration"
     }
   }
 }

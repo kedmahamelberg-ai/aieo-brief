@@ -9,13 +9,51 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
-from weekly_overviews import prepare_weekly_overviews, social_queue
+from weekly_overviews import _apply_visual_correction, prepare_weekly_overviews, social_queue
 from research_affiliations import clean_institutions, enrich_affiliations
 from search_metadata import weekly_overview_with_canonical_links
 import build_site
 
 
 class WeeklyOverviewTests(unittest.TestCase):
+    def test_visual_analogy_accepts_historical_photo_and_preserves_reviewed_text(self):
+        root = Path(__file__).resolve().parents[1]
+        correction = json.loads((root / 'data/weekly-overviews/visual-corrections/2026-W45.json').read_text())
+        overview = {
+            'release_id': '2026-W45', 'period_end': '2026-11-08',
+            **{kind: {'status': 'ready', 'human_approved': True,
+                      'image_path': values['previous_image_path'],
+                      'prose': [{'reviewed': 'unchanged'}], 'source_hashes': {'source': 'digest'}}
+               for kind, values in correction['sections'].items()},
+        }
+        for paths in ('previous_image_path', 'image_path'):
+            for kind, values in correction['sections'].items():
+                overview[kind]['image_path'] = values[paths]
+            _apply_visual_correction(overview, root)
+            for kind, values in correction['sections'].items():
+                self.assertEqual(overview[kind]['image_path'], values['image_path'])
+                self.assertEqual(overview[kind]['image_reason'], values['image_reason'])
+                self.assertEqual(overview[kind]['prose'], [{'reviewed': 'unchanged'}])
+                self.assertEqual(overview[kind]['source_hashes'], {'source': 'digest'})
+
+    def test_same_week_event_without_analogy_is_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            path = root / 'data/weekly-overviews/visual-corrections/2026-W45.json'
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps({
+                'schema_version': 'brief_weekly_visual_correction_v1', 'release_id': '2026-W45',
+                'sections': {'markets': {
+                    'previous_image_path': 'old.jpg', 'image_path': 'assets/event.jpg',
+                    'image_taken_date': '2026-11-03', 'image_purpose': 'contextual photograph',
+                    'image_reason': '',
+                }},
+            }))
+            overview = {'release_id': '2026-W45', 'period_end': '2026-11-08',
+                        'markets': {'status': 'ready', 'human_approved': True, 'image_path': 'old.jpg'}}
+            with self.assertRaisesRegex(ValueError, 'explicit analogy'):
+                _apply_visual_correction(overview, root)
+
     def test_saved_overview_links_follow_current_article_urls(self):
         saved = {
             'markets': {'entries': [{'story': {'path': 'story/old/index.html'}}]},

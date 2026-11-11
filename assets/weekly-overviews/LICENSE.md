@@ -1,21 +1,31 @@
 # Weekly overview photograph sources
 
-The weekly overview uses real documentary photographs. An image may provide context without depicting a linked story; captions must say so plainly. AI-generated imagery is prohibited.
+Weekly photographs illustrate the prose through metaphor or analogy. They must
+be real public-domain camera photographs with a verified source record. Their
+capture dates do not need to match the edition week. An unrelated event is not
+an appropriate substitute merely because it concerns AI or happened that week.
+AI-generated imagery is prohibited. The visible note explains the connection;
+the caption identifies the actual subject, with credit and a source link.
 
-## W45 news, `w45-news-2026-11-03.jpg`
+## W45 news, `w45-open-crossing.jpg`
 
-- Subject: press briefing for the Bangladesh AI Business Summit in Dhaka, 3 November 2026. This event is separate from the five reports linked in the W45 news overview.
-- Credit: Press Information Department of Bangladesh.
-- Source: https://commons.wikimedia.org/wiki/File:Fakir_Mahbub_Anam_at_press_briefing_for_Bangladesh_AI_Business_Summit_2026,_2026-11-03.jpg
-- Rights: public domain, government photograph, as documented by the Commons record.
-- Web preparation: cropped from the original photograph to 1200 × 675 pixels.
+- Subject: suspension footbridge at Zion Lodge, photographed 16 April 1952.
+- Analogy: an open crossing needs firm supports, like shared models need human safeguards.
+- Required credit: Courtesy Zion National Park, Photographer Glenn Haynes, Museum Catalog Number ZION 9521.
+- Source: https://npgallery.nps.gov/AssetDetail/e00234e696804f57a6cc9d0e1aaa19bf
+- Original: https://npgallery.nps.gov/GetAsset/e00234e696804f57a6cc9d0e1aaa19bf/original.jpg
+- Rights: the NPS catalog explicitly identifies the image as public domain and requests the credit above.
+- Preparation: original 1200 × 853 JPEG, uncropped.
 
-## W45 research, `w45-research-2026-11-02.jpg`
+## W45 research, `w45-careful-steps.jpg`
 
-- Subject: NASA astronauts practice Canadarm2 robotic arm controls aboard the ISS, 2 November 2026. This is not a photograph of the Pixel robots or their experiments.
-- Credit: NASA / Anil Menon.
-- Source: https://commons.wikimedia.org/wiki/File:Iss075e0254172_(Nov_2,_2026)_---_Expedition_75_flight_engineers_Luke_Delaney_and_Jessica_Watkins,_both_NASA_astronauts,_review_and_practice_Canadarm2_robotic_arm_maneuvers_at_the_robotics_workstation_inside_the_Inter.jpg
-- Rights: public domain, NASA photograph, as documented by the Commons record.
-- Web preparation: cropped from the original photograph to 1200 × 675 pixels.
+- Subject: stone steps ascending Saintly Hill on the Chilkoot Trail, catalog content date 7 June 2016.
+- Analogy: uneven steps and a shaded route echo careful physical progress and incomplete visibility in the robotics review.
+- Credit: National Park Service.
+- Source: https://npgallery.nps.gov/AssetDetail/63dd6ea5-47d6-40fb-aa75-e7a4e4affddb
+- Original: https://npgallery.nps.gov/GetAsset/63dd6ea5-47d6-40fb-aa75-e7a4e4affddb/original.jpg
+- Rights: NPS catalog lists Public domain: Full Granting Rights.
+- Preparation: original 3264 × 2448 JPEG, uncropped.
 
-The earlier NPS landscape images remain in repository history but are retired from the W45 page.
+The earlier NPS landscapes, Bangladesh summit briefing and ISS training photos
+are retired from W45. Their assets remain for historical compatibility.

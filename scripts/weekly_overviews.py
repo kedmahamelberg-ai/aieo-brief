@@ -321,17 +321,20 @@ def _apply_visual_correction(overview: dict, root: Path) -> None:
             raise ValueError(f'Approved weekly image changed before visual correction: {release_id} {kind} {section.get("image_path")}')
         try:
             taken = date.fromisoformat(values['image_taken_date'])
-            start = date.fromisoformat(overview['period_start'])
             end = date.fromisoformat(overview['period_end'])
         except (KeyError, TypeError, ValueError) as exc:
             raise ValueError('Weekly photograph needs a verified capture date') from exc
-        if not start <= taken <= end:
-            raise ValueError('Weekly photograph was not taken in the edition week')
+        if taken > end:
+            raise ValueError('Weekly photograph cannot postdate the edition')
+        if values.get('image_purpose') != 'metaphorical illustration' or not _plain(values.get('image_reason')):
+            raise ValueError('Weekly photograph needs an explicit analogy to the prose')
         if values.get('image_origin') != 'camera photograph' or not values.get('image_rights', '').startswith('Public domain'):
             raise ValueError('Weekly image must be a real public-domain photograph')
         if not _https(values.get('image_source_url')):
             raise ValueError('Weekly photograph needs a source record')
         asset = root / values['image_path']
+        if not asset.resolve().is_relative_to((root / 'assets').resolve()):
+            raise ValueError('Weekly photograph must be a local asset')
         if not asset.is_file():
             raise ValueError('Corrected weekly image asset is missing: ' + values['image_path'])
         section.update({key: value for key, value in values.items() if key not in ('previous_image_path', 'legacy_image_paths')})

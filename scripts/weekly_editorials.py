@@ -400,6 +400,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
         + 'Choose one supplied artwork as a metaphor or inspiration for the review. '
         'Explain the connection in image_reason in no more than 30 words using no colon or dash. '
         'Prefer evocative landscapes, everyday scenes or patterns over sensational violent imagery. '
+        'For photographs, connect the subject to an idea in the prose through metaphor or analogy. '
+        'Do not choose an unrelated event merely because it concerns AI or shares the edition week. '
         'Do not describe unseen visual details beyond the catalog. '
         + ('Last week used a reader question. This week, use no question in the title or prose. '
            if recent_style['question_used_last_week'] else '') + '\n'

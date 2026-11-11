@@ -20,10 +20,15 @@ independent model check must confirm a meaningful connection and accurate limits
 Institution metadata is not a requirement for selecting a paper.
 
 The writer chooses a metaphorical illustration from the existing CC0/public-domain
-art library and explains its relationship to the prose. Credits and source links
-remain visible and the image is shown without cropping. Used files, source URLs
-and artwork identities are excluded so duplicate catalog records cannot repeat
-an illustration. Extend the verified art library if the unused pool runs out.
+art library and explains its relationship to the prose. Photographs must be real,
+public-domain camera photographs whose subjects offer a clear metaphor or analogy
+for the text. Capture dates do not need to match the edition week. Do not choose
+an unrelated event simply because it concerns AI or happened in the same week.
+The visible image note explains the conceptual connection; the caption identifies
+the actual subject, and credits and source links remain visible. Images are shown
+without cropping. Used files, source URLs and artwork identities are excluded so
+duplicate catalog records cannot repeat an illustration. Extend the verified
+library if the unused pool runs out.
 
 The Monday Prepare Weekly Brief Review workflow uses the latest validated
 Observatory release and Brief summaries to make a private draft artifact. It
