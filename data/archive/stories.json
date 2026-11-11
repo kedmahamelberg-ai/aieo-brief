@@ -1570,7 +1570,7 @@
       "full_text_retry_after": "2026-11-17",
       "pdf_url": "https://arxiv.org/pdf/2611.12878v1",
       "journal_reference": "",
-      "affiliation_checked_at": "2026-11-11T08:56:37.700908+00:00",
+      "affiliation_checked_at": "2026-11-11T08:59:31.621731+00:00",
       "paper_pages": 8,
       "publisher": "arXiv",
       "reading_minutes": 1,
@@ -8488,7 +8488,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-11T08:56:37.700908+00:00",
+      "affiliation_checked_at": "2026-11-11T08:59:31.621731+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -10656,7 +10656,7 @@
       "source": "pnas",
       "research_label": "Perspective",
       "evidence_scope": "paper_text",
-      "access": "Open-license record",
+      "access": "Open matching manuscript on arXiv",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
@@ -14318,7 +14318,7 @@
       "source": "pnas",
       "research_label": "Journal article",
       "evidence_scope": "abstract",
-      "access": "Open-license record",
+      "access": "Check access at publisher",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
@@ -16074,7 +16074,7 @@
       "source": "pnas",
       "research_label": "Journal article",
       "evidence_scope": "abstract",
-      "access": "Open-license record",
+      "access": "Check access at publisher",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
@@ -27218,7 +27218,7 @@
       "source": "pnas",
       "research_label": "Journal article · full text from matching arXiv manuscript",
       "evidence_scope": "paper_text",
-      "access": "Open-license record",
+      "access": "Open matching manuscript on arXiv",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
