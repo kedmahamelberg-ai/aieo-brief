@@ -87,6 +87,8 @@ def recover(paper, get):
     result = {**paper, 'abstract': abstract, 'evidence_scope': 'abstract',
               'abstract_format': 'html' if aid else 'metadata', 'abstract_source_url': 'https://arxiv.org/abs/' + aid if aid else paper.get('url',''),
               'metadata_sha256': hashlib.sha256((paper['original_headline'] + '\n' + abstract).encode()).hexdigest()}
+    if paper.get('source') == 'pnas' and not aid:
+        result['access'] = 'Check access at publisher'
     if pdf_source:
         result.update(pdf_url=pdf_source,abstract_source_url=pdf_source,abstract_format='pdf')
     if pdf_urls:result['pdf_url']=pdf_urls[0]
@@ -95,6 +97,7 @@ def recover(paper, get):
         result['pdf_url'] = 'https://arxiv.org/pdf/' + aid
         if paper.get('source') == 'pnas':
             result['research_label'] = 'Journal article · full text from matching arXiv manuscript'
+            result['access'] = 'Open matching manuscript on arXiv'
     return result
 
 
