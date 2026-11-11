@@ -1,5 +1,15 @@
 name: Refresh Brief Research
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh-brief-research.yml'
+      - 'scripts/ai_runtime.py'
+      - 'scripts/editorial_engine.py'
+      - 'scripts/claim_grounding.py'
+      - 'scripts/generate_research_summaries.py'
+      - 'scripts/research_reading.py'
+      - 'scripts/research_recovery.py'
   schedule:
     - cron: '15 12 * * *'
   workflow_dispatch:
