@@ -333,6 +333,27 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(proof['support'][0]['quote'], wanted)
         self.assertNotIn('quote_id', result['support'][0])
 
+    def test_paper_reselects_missing_private_support_from_exact_catalog(self):
+        draft, sources = fixture()
+        draft['support'] = draft['support'][:2]
+        quote_id = engine.research_quotes(sources).index(
+            'A large majority raised concerns about payment.')
+        repaired = {'support': [
+            {'field': field, 'source_number': 1, 'quote_id': quote_id}
+            for field in engine.SUPPORT_FIELDS]}
+        with patch.object(engine, 'style_problem', return_value=None), \
+             patch.object(engine, 'call_json',
+                          side_effect=[repaired, accepted_review()]) as model:
+            result, proof = engine.write_story(
+                {'draft_seed': draft}, {}, sources, kind='paper')
+        self.assertEqual(model.call_args_list[0].kwargs['stage'], 'support')
+        self.assertEqual(model.call_args_list[1].kwargs['stage'], 'scope_review')
+        self.assertEqual(result['what_happened'], draft['what_happened'])
+        self.assertEqual({row['field'] for row in proof['support']},
+                         set(engine.SUPPORT_FIELDS))
+        self.assertTrue(all(row['quote'] in sources[0]['evidence']
+                            for row in proof['support']))
+
     def test_exhausted_retries_keep_the_actual_validation_reason(self):
         draft, sources = fixture()
         draft['support'][0]['quote'] = 'This quotation is absent from the source.'
