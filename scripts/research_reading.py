@@ -164,7 +164,16 @@ def extract_arxiv_html(content, title):
                           and sum(a != b for a, b in zip(actual, expected)) == 1
                           and any(len(b) == len(a) + 1 and any(b[:i] + b[i+1:] == a for i in range(len(b)))
                                   for a, b in zip(actual, expected) if a != b))
-    if actual != expected and not one_missing_letter:
+    # The exact arXiv version can contain a transposed pair in its HTML title
+    # (TorchCruves versus the metadata's TorchCurves). Permit one adjacent
+    # transposition in one word, with all other title words unchanged.
+    one_transposition = (len(actual) == len(expected) and len(expected) >= 2
+                         and sum(a != b for a, b in zip(actual, expected)) == 1
+                         and any(len(a) == len(b) and len(b) >= 6
+                                 and any(a == b[:i] + b[i+1] + b[i] + b[i+2:]
+                                         for i in range(len(b)-1))
+                                 for a, b in zip(actual, expected) if a != b))
+    if actual != expected and not one_missing_letter and not one_transposition:
         raise ValueError('paper_identity_mismatch')
     sections = article.find_all('section', recursive=False)
     if len(sections) < 2 or not article.select_one('.ltx_abstract'):
