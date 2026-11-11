@@ -337,28 +337,38 @@ def _apply_visual_correction(overview: dict, root: Path) -> None:
         section.update({key: value for key, value in values.items() if key not in ('previous_image_path', 'legacy_image_paths')})
 
 
-def _restore_archived_research_approvals(records: dict[str, dict], root: Path) -> None:
-    """Restore a previously approved research edition from its review snapshot.
+def _restore_archived_approvals(records: dict[str, dict], root: Path, *, current_release_id: str) -> None:
+    """Restore historical news and research from their owner-approved records.
 
     Historical editions are records of what was published that week. Current
-    source refreshes must not rewrite them; their approved file carries the
-    source snapshot needed to validate and restore an interrupted archive copy.
+    source refreshes must not rewrite them. News approvals retain the reviewed
+    prose and source links, while research approvals also embed paper evidence.
+    The current edition still goes through live source checks in apply_editorials.
     """
     from weekly_editorials import human_approval, ready_valid, validate_citation_alignment, validate_section
 
     for release_id, overview in records.items():
+        if release_id == current_release_id:
+            continue
         approved = human_approval(root, release_id)
         changed = False
-        for kind in ("research",):
+        for kind in ("markets", "research"):
+            if (overview.get(kind, {}).get("status") != "pending" or
+                    overview[kind].get("pending_reason") != "approved_sources_changed"):
+                continue
             reviewed = approved.get(kind, {})
-            sources = {paper["key"]: paper for paper in reviewed.get("papers", [])}
-            if not reviewed or not sources or not ready_valid(reviewed, sources):
+            if reviewed.get("status") != "ready" or reviewed.get("human_approved") is not True:
                 continue
             validate_section(reviewed)
-            validate_citation_alignment(reviewed["prose"], reviewed.get("papers", []))
-            if overview.get(kind, {}).get("pending_reason") == "approved_sources_changed":
-                overview[kind] = copy.deepcopy(reviewed)
-                changed = True
+            if kind == "research":
+                sources = {paper["key"]: paper for paper in reviewed.get("papers", [])}
+                if not sources or not ready_valid(reviewed, sources):
+                    continue
+                validate_citation_alignment(reviewed["prose"], reviewed["papers"])
+            # Older news approvals do not embed full article evidence. Restore
+            # only the exact owner-approved record, never a newly generated draft.
+            overview[kind] = copy.deepcopy(reviewed)
+            changed = True
         if changed:
             overview["editorial_status"] = (
                 "ready" if all(overview[kind].get("status") == "ready" for kind in ("markets", "research"))
@@ -410,7 +420,7 @@ def prepare_weekly_overviews(
         for item in history["overviews"]
         if isinstance(item, dict) and _plain(item.get("release_id"))
     }
-    _restore_archived_research_approvals(records, Path(root))
+    _restore_archived_approvals(records, Path(root), current_release_id=release_id)
     from weekly_editorials import apply_editorials
     current = apply_editorials(current, source_news if source_news is not None else news,
                                source_research if source_research is not None else research,
