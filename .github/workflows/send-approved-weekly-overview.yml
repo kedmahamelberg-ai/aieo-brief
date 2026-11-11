@@ -20,6 +20,7 @@ jobs:
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
       RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
       RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
+      RELEASE_ID: ${{ inputs.release_id }}
     steps:
       - uses: actions/checkout@v6
         with:
@@ -30,6 +31,6 @@ jobs:
           cache: pip
       - run: python -m pip install -r requirements.txt
       - name: Confirm the approved content without sending
-        run: python scripts/send_weekly_overview_broadcast.py '${{ inputs.release_id }}'
+        run: python scripts/send_weekly_overview_broadcast.py "$RELEASE_ID"
       - name: Send the approved Resend broadcast
-        run: python scripts/send_weekly_overview_broadcast.py '${{ inputs.release_id }}' --send
+        run: python scripts/send_weekly_overview_broadcast.py "$RELEASE_ID" --send
