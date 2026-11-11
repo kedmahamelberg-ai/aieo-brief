@@ -151,7 +151,7 @@ def completion(messages, schema, *, name="aieo_reading", timeout=120, max_reques
                "response_format": {"type": "json_schema", "json_schema": {
                    "name": name, "strict": True, "schema": strict_schema(schema)}}}
     encoded = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-    if len(encoded) > min(max_request_bytes, 384000):
+    if len(encoded) > min(max_request_bytes, 800000):
         raise AIError("Input exceeds the bounded request size; retain complete evidence in smaller segments", code="model_input_limit")
     input_rate, output_rate = RATES[p["model"]]
     # UTF-8 bytes provide a conservative upper bound for text tokenization;
