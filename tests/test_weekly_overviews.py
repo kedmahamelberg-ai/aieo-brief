@@ -1,4 +1,6 @@
 from pathlib import Path
+import copy
+import hashlib
 import json
 import sys
 import tempfile
@@ -95,6 +97,61 @@ class WeeklyOverviewTests(unittest.TestCase):
             old = next(x for x in restored if x['release_id'] == '2026-W43')
             self.assertEqual(old['research'], approved_research)
             self.assertEqual(old['editorial_status'], 'ready')
+
+    def test_w44_news_is_restored_from_owner_approval_and_survives_rebuilds(self):
+        root = Path(__file__).resolve().parents[1]
+        approval = json.loads((root/'data/weekly-overviews/approved/2026-W44.json').read_text())
+        archived = next(x for x in json.loads((root/'data/weekly-overviews/history.json').read_text())['overviews']
+                        if x['release_id'] == '2026-W44')
+        archived['markets'] = {'status': 'pending', 'pending_reason': 'approved_sources_changed'}
+        archived['editorial_status'] = 'pending'
+        release = {'release_id': '2026-W45', 'period_start': '2026-11-02', 'period_end': '2026-11-08'}
+        with tempfile.TemporaryDirectory() as folder:
+            destination = Path(folder)/'data/weekly-overviews/history.json'
+            destination.parent.mkdir(parents=True)
+            destination.write_text(json.dumps({'schema_version': 'aieo_weekly_overview_archive_v1',
+                                               'overviews': [archived]}))
+            approval_path = destination.parent/'approved/2026-W44.json'
+            approval_path.parent.mkdir()
+            approval_path.write_text(json.dumps(approval))
+            # No W44 sources remain in the feed. Recovery must use the saved
+            # approval and must not generate replacement prose.
+            for _ in range(2):
+                _, history = prepare_weekly_overviews([], [], release, Path(folder), write_archive=True)
+                restored = next(x for x in history if x['release_id'] == '2026-W44')
+                self.assertEqual(restored['markets'], approval['markets'])
+                self.assertEqual(restored['research'], archived['research'])
+                self.assertEqual(restored['editorial_status'], 'ready')
+                unhashed = {k: v for k, v in restored.items() if k != 'content_sha256'}
+                expected = hashlib.sha256(json.dumps(unhashed, sort_keys=True, ensure_ascii=False,
+                                                    separators=(',', ':')).encode()).hexdigest()
+                self.assertEqual(restored['content_sha256'], expected)
+
+    def test_archive_recovery_requires_owner_approval_and_preserves_other_pending_reasons(self):
+        from weekly_overviews import _restore_archived_approvals
+        root = Path(__file__).resolve().parents[1]
+        approval = json.loads((root/'data/weekly-overviews/approved/2026-W44.json').read_text())
+        pending = {'release_id': '2026-W44', 'markets': {'status': 'pending',
+                   'pending_reason': 'approved_sources_changed'}, 'research': approval['research']}
+        for case in ('no_approval', 'missing_marker', 'other_pending_reason', 'current_edition', 'already_ready'):
+            with self.subTest(case=case), tempfile.TemporaryDirectory() as folder:
+                record = copy.deepcopy(pending)
+                saved = copy.deepcopy(approval)
+                if case == 'missing_marker':
+                    saved['markets']['human_approved'] = False
+                if case == 'other_pending_reason':
+                    record['markets']['pending_reason'] = 'editorial_check_pending'
+                if case == 'already_ready':
+                    record['markets'] = copy.deepcopy(saved['markets'])
+                if case != 'no_approval':
+                    path = Path(folder)/'data/weekly-overviews/approved/2026-W44.json'
+                    path.parent.mkdir(parents=True)
+                    path.write_text(json.dumps(saved))
+                original = copy.deepcopy(record)
+                records = {'2026-W44': record}
+                _restore_archived_approvals(records, Path(folder),
+                                           current_release_id='2026-W44' if case == 'current_edition' else '2026-W45')
+                self.assertEqual(records['2026-W44'], original)
 
 
 class ResearchAffiliationTests(unittest.TestCase):
