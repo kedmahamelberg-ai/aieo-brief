@@ -102,6 +102,20 @@ class GroundingGate(unittest.TestCase):
         review['field_reviews'][0]['verdict']='unsupported'
         with patch.object(engine,'call_json',return_value=review),self.assertRaises(engine.EditorialError):engine.review_scope(draft,sources)
 
+    def test_long_paper_reaches_complete_verifier_without_truncation(self):
+        draft, sources = fixture()
+        original = sources[0]['evidence']
+        long_text = original + (' Full paper methods, results, and limitations.' * 10000)
+        sources[0]['evidence'] = long_text
+        review = accepted_review()
+        for row in review['field_reviews']:
+            row['citations'] = [{'quote_id': 0}]
+        with patch.object(engine, 'call_json', return_value=review) as model:
+            proof = engine.review_scope(draft, sources, paper=True)
+        self.assertEqual(model.call_count, 1)
+        self.assertIn(long_text[-100:], model.call_args.args[0])
+        self.assertEqual(proof['grounding']['field_reviews'][0]['citations'][0]['source_number'], 1)
+
     def test_duplicate_fields_cannot_hide_unreviewed_paragraph(self):
         draft, sources = fixture(); review = accepted_review()
         review['field_reviews'][-1] = copy.deepcopy(review['field_reviews'][0])
