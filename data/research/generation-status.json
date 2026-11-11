@@ -1,21 +1,11 @@
 {
-  "generated": 2,
-  "failed": 1,
+  "generated": 1,
+  "failed": 0,
   "metadata_only": 5,
   "deferred": 0,
-  "unchanged": 5,
+  "unchanged": 6,
   "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
-  "failure_counts": {
-    "draft_support_missing": 1
-  },
-  "failed_items": [
-    {
-      "key": "paper:d5c89b3070353457efa8c3a8",
-      "error_type": "EditorialError",
-      "stage": "draft_validation",
-      "code": "draft_support_missing",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
-    }
-  ],
-  "updated_at": "2026-11-11T10:44:29.592226+00:00"
+  "failure_counts": {},
+  "failed_items": [],
+  "updated_at": "2026-11-11T11:15:32.311267+00:00"
 }
