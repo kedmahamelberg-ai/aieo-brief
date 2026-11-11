@@ -167,8 +167,7 @@
               "Deepak Pathak"
             ],
             "institutions": [
-              "Carnegie Mellon University",
-              "*Equal contribution"
+              "Carnegie Mellon University"
             ],
             "affiliation_source_url": "https://arxiv.org/html/2611.03648v1",
             "affiliation_checked_at": "2026-11-03T19:32:14.401748+00:00",
@@ -250,8 +249,7 @@
               "Ruslan Salakhutdinov"
             ],
             "institutions": [
-              "Carnegie Mellon University",
-              "∗Equal contribution"
+              "Carnegie Mellon University"
             ],
             "affiliation_source_url": "https://arxiv.org/html/2611.03647v1",
             "affiliation_checked_at": "2026-11-03T19:32:14.401748+00:00",
@@ -370,7 +368,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "ready",
-      "content_sha256": "76f800257c9a0d4a94479121805f1e101223fa63e78acfec23caa87e2e487b84"
+      "content_sha256": "810a5c1e594bc47fc64a484ab107e59944a2a56fb5924c8914b5485554dc0de1"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
