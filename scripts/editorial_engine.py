@@ -202,7 +202,7 @@ def call_json(prompt,schema=SCHEMA,deadline=None,attempt=0,stage='draft',paper=F
   efforts=('medium','low') if stage=='scope_review' and review_fields>1 else (('medium',) if stage=='scope_review' else (None,))
   for index,effort in enumerate(efforts):
    try:
-    payload=ai_runtime.completion(messages,schema,name='brief_'+stage,timeout=timeout,max_request_bytes=384000 if paper else 196608,reasoning_effort=effort,**budget)
+    payload=ai_runtime.completion(messages,schema,name='brief_'+stage,timeout=timeout,max_request_bytes=800000 if paper and stage=='scope_review' else 384000 if paper else 196608,reasoning_effort=effort,**budget)
     break
    except ai_runtime.AIError as error:
     error.stage=stage
@@ -343,8 +343,9 @@ def review_scope(draft,compiled,deadline=None,paper=False):
       'english_only: every public field is in English, apart from conventional proper names. Private support quotes are exempt. '
       'main_story_only: unrelated newsletter teasers and navigation are not merged into the main story. An empty for_humans or for_ai is allowed when that dimension is unstated. Give a reason of at most 300 characters.\nSOURCE METADATA: '+json.dumps(metadata,ensure_ascii=False)+'\nCOMPLETE ORIGINAL SOURCE PASSAGES IN ORDER: '+json.dumps(catalog,ensure_ascii=False))
     prompt+=claim_grounding.INSTRUCTIONS+'\nSelect citations by quote_id from the complete original-source catalog above. Do not retype, translate, or paraphrase quotations. Every original character is included; consecutive passages may continue the same sentence. The catalog is not selected by the writer. Cite only passages that actually support every claim in the field.\nCLAIM STATUS: '+str(draft.get('claim_status',''))+'\nFIELDS TO REVIEW: '+json.dumps(claim_grounding.units(draft),ensure_ascii=False)
-    # Do not silently truncate original evidence to fit a verifier budget.
-    if len(prompt.encode())>(350000 if paper else 175000):
+    # Nano has a 400k-token context. Keep complete paper evidence in the
+    # review request, with headroom below the API request-size cap; never truncate it.
+    if len(prompt.encode())>(700000 if paper else 175000):
         raise EditorialError('grounding_context_budget','Original evidence exceeds verifier budget; manual review required.',stage='scope_review')
     result=call_json(prompt,claim_grounding.catalog_schema(REVIEW_SCHEMA,draft,catalog),deadline,stage='scope_review',paper=paper)
     if any(result.get(k) is not True for k in REVIEW_CHECKS):
