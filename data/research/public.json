@@ -38,15 +38,15 @@
       "metadata_sha256": "f02d37057379b06a2e7ede6a6edb2aef8f06ac1371ec987828bcaf7a3250f9dd",
       "pdf_url": "https://arxiv.org/pdf/2611.14518v1",
       "has_editorial": true,
-      "headline": "Using Multiple Medical Image Datasets Improves Lesion Detection, With Varying Gains",
-      "deck": "A study combines several medical image datasets to improve lesion detection, but gains differ by condition.",
-      "what_happened": "Researchers trained models on four image datasets. They used a large open system to guide smaller models and a method that aligns data using example samples. Overall accuracy rose versus models trained on a single dataset, but gains varied by condition; labeling of atelectasis was tricky.",
-      "why_it_matters": "Using more varied data can help find lesions, but careful training is needed to prevent forgetting and to handle hard-to-label cases like atelectasis.",
+      "headline": "Combining medical image datasets improves some lesion detection tests",
+      "deck": "Researchers combined datasets with different labels; detection gains varied by finding in the reported tests.",
+      "what_happened": "Researchers trained separate models on four medical image datasets, used them to fill missing labels, and trained a combined detector. Compared with a single-dataset detector, the new model improved detection on several chest X-ray and mammography findings. Gains were limited for atelectasis.",
+      "why_it_matters": "The tests show a way to combine datasets with different labels, but they do not establish how the model would perform in clinical use.",
       "body_paragraphs": [
-        "The team trained models on separate datasets, then taught one final model using real and generated labels. This helps keep knowledge steady across many findings.",
-        "In practice, pooling data from different sites can boost detection, but teams must plan for rare or unclear findings that may not improve and can slow learning."
+        "Separate models predicted missing findings in the other datasets. The final model learned from both expert annotations and these generated labels, aiming to retain what each dataset contributed.",
+        "The combined model improved detection for several findings in the reported tests. Atelectasis showed smaller gains because its labels can overlap with other conditions and vary across datasets."
       ],
-      "limitation": "The study tested on four datasets with their own labels; gains are not uniform and naive mixing can reduce performance.",
+      "limitation": "The study tested selected chest X-ray and mammography datasets. Improvements varied by finding, and the paper does not report a clinical deployment.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,

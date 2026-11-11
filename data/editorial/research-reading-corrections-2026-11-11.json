@@ -1,7 +1,7 @@
 {
   "schema_version": "brief_source_audit_corrections_v1",
   "authorization": "Owner requested source-checked research summaries and corrections on 2026-11-11.",
-  "review_method": "Compared the full ScholarCatalyst paper on arXiv with the generated Brief fields. The paper says authors verified early-stage questions and judged candidate papers; the evaluation used a fixed, time-restricted local corpus.",
+  "review_method": "Compared the full ScholarCatalyst and EM-DETR papers on arXiv with the generated Brief fields, including methods, results and limitations.",
   "news": [],
   "research": [
     {
@@ -20,6 +20,25 @@
         ],
         "limitation": "The labels depend on authors looking back at completed projects. The test used a fixed local paper corpus and no live web access, so its results do not measure research outcomes in practice.",
         "headline": "Search tools miss papers researchers say could inspire new work"
+      }
+    },
+    {
+      "key": "paper:d5c89b3070353457efa8c3a8",
+      "reason": "The generated EM-DETR summary described an unclear 'large open system' and claimed difficult findings can slow learning. The paper reports a student-teacher labeling method and limited gains for atelectasis; it does not establish a slowdown or clinical performance.",
+      "source_urls": [
+        "https://arxiv.org/html/2611.14518v1",
+        "https://arxiv.org/abs/2611.14518v1"
+      ],
+      "after": {
+        "headline": "Combining medical image datasets improves some lesion detection tests",
+        "deck": "Researchers combined datasets with different labels; detection gains varied by finding in the reported tests.",
+        "what_happened": "Researchers trained separate models on four medical image datasets, used them to fill missing labels, and trained a combined detector. Compared with a single-dataset detector, the new model improved detection on several chest X-ray and mammography findings. Gains were limited for atelectasis.",
+        "why_it_matters": "The tests show a way to combine datasets with different labels, but they do not establish how the model would perform in clinical use.",
+        "body_paragraphs": [
+          "Separate models predicted missing findings in the other datasets. The final model learned from both expert annotations and these generated labels, aiming to retain what each dataset contributed.",
+          "The combined model improved detection for several findings in the reported tests. Atelectasis showed smaller gains because its labels can overlap with other conditions and vary across datasets."
+        ],
+        "limitation": "The study tested selected chest X-ray and mammography datasets. Improvements varied by finding, and the paper does not report a clinical deployment."
       }
     }
   ]
