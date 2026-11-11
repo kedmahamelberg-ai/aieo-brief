@@ -37,6 +37,10 @@ def clean_institutions(values, authors=()):
     for value in values or []:
         name = re.split(r"\s*(?:E-?mail)\s*:", _plain(value), maxsplit=1, flags=re.I)[0].strip().rstrip(' .,:;')
         name = re.sub(r"^The authors are with (?:the )?", "", name, flags=re.I)
+        # arXiv author blocks sometimes place contribution notes in affiliation cells.
+        name = re.split(r"\s*(?:[,;]|\s+[∗*†‡])\s*[∗*†‡]?\s*(?:equal contribution|contributed equally)\b", name, maxsplit=1, flags=re.I)[0].strip()
+        if re.fullmatch(r"\W*(?:equal contribution|contributed equally)\W*", name, flags=re.I):
+            continue
         if re.search(r"^(?:this work|the work|the study) (?:is|was) (?:supported|funded)\b", name, re.I):
             continue
         postal = re.search(r",\s*(?:[A-Z]{2}\s+\d{5}(?:-\d{4})?|[A-Z]{1,2}\d[A-Z\d]?\s+\d[A-Z]{2})(?:,\s*[^,]+)?$", name)
