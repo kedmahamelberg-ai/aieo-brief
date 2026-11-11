@@ -2076,7 +2076,7 @@
       "full_text_retry_after": "2026-11-17",
       "pdf_url": "https://arxiv.org/pdf/2611.12878v1",
       "journal_reference": "",
-      "affiliation_checked_at": "2026-11-11T10:55:44.907830+00:00",
+      "affiliation_checked_at": "2026-11-11T10:59:31.462724+00:00",
       "paper_pages": 8,
       "publisher": "arXiv",
       "reading_minutes": 1,
@@ -8992,7 +8992,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-11T10:55:44.907830+00:00",
+      "affiliation_checked_at": "2026-11-11T10:59:31.462724+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -48544,7 +48544,7 @@
       "has_editorial": true,
       "headline": "Search tools miss papers researchers say could inspire new work",
       "deck": "A benchmark asks if automatic search can find the ideas that spark new work.",
-      "what_happened": "In a test built from 184 lead authors’ judgments about 207 computer science projects, search systems tried to find earlier papers that could inspire work on 894 early-stage questions. The strongest system found 48% of credited papers among its top 20 results.",
+      "what_happened": "In a test built from 184 lead authors’ judgments about 207 computer science projects, search systems tried to find earlier papers that could inspire work on 894 early-stage questions. A similarity-based search system found 48% of credited papers among its top 20 results.",
       "why_it_matters": "The test shows that search methods can miss papers researchers credit as useful for forming a new idea, even when search agents make repeated queries.",
       "body_paragraphs": [
         "Lead authors of 207 recent computer science projects reviewed 894 questions about their projects before the key findings. They judged which earlier papers did or could have helped, including papers they had not encountered.",
