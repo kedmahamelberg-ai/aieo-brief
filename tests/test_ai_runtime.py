@@ -42,8 +42,10 @@ class AIRuntime(unittest.TestCase):
             post.assert_not_called()
             ai.completion(messages,self.schema,max_request_bytes=384000)
             self.assertEqual(post.call_count,1)
-            with self.assertRaises(ai.AIError):ai.completion([{'role':'user','content':'x'*400000}],self.schema,max_request_bytes=999999)
-            self.assertEqual(post.call_count,1)
+            ai.completion([{'role':'user','content':'x'*500000}],self.schema,max_request_bytes=800000)
+            self.assertEqual(post.call_count,2)
+            with self.assertRaises(ai.AIError):ai.completion([{'role':'user','content':'x'*850000}],self.schema,max_request_bytes=999999)
+            self.assertEqual(post.call_count,2)
 
     def test_key_missing_stops_before_network_or_ledger(self):
         with patch.dict(os.environ, {'OPENAI_API_KEY':''}), patch.object(ai.requests,'post') as post:
