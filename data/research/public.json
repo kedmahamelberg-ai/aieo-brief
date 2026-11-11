@@ -4555,7 +4555,7 @@
       "has_editorial": true,
       "headline": "Search tools miss papers researchers say could inspire new work",
       "deck": "A benchmark asks if automatic search can find the ideas that spark new work.",
-      "what_happened": "In a test built from 184 lead authors’ judgments about 207 computer science projects, search systems tried to find earlier papers that could inspire work on 894 early-stage questions. The strongest system found 48% of credited papers among its top 20 results.",
+      "what_happened": "In a test built from 184 lead authors’ judgments about 207 computer science projects, search systems tried to find earlier papers that could inspire work on 894 early-stage questions. A similarity-based search system found 48% of credited papers among its top 20 results.",
       "why_it_matters": "The test shows that search methods can miss papers researchers credit as useful for forming a new idea, even when search agents make repeated queries.",
       "body_paragraphs": [
         "Lead authors of 207 recent computer science projects reviewed 894 questions about their projects before the key findings. They judged which earlier papers did or could have helped, including papers they had not encountered.",
