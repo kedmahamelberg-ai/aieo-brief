@@ -2,6 +2,393 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Essays",
+      "content_fingerprint": "6188b40c5d018a74174eac10215097a3a7a6a8a1bce406f7191901362264612a",
+      "creator": "Michel de Montaigne",
+      "creator_origin": "French",
+      "culture_type": "quote",
+      "deck": "From Essays. Translation by Charles Cotton.",
+      "excerpt": "I love to see that these great and leading souls cannot rid themselves of our company: perfect men as they are, they are yet simply men.",
+      "headline": "I love to see that these great and leading souls cannot rid themselves of our company: perfect men as they are, they are yet simply men.",
+      "key": "culture:afa565908f9dc4360c4dfe66",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:3600:quote:6188b40c5d018a74174eac10215097a3a7a6a8a1bce406f7191901362264612a",
+      "publisher": "Project Gutenberg",
+      "quote_context": "and such like circumstances amuse, divert, and turn our thoughts from the consideration of the thing in itself. Even the arguments of philosophy are always edging and glancing on the matter, so as scarce to rub its crust; the greatest man of the first philosophical school, and superintendent over all the rest, the great Zeno, forms this syllogism against death: “No evil is honourable; but death is honourable; therefore death is no evil”; against drunkenness this: “No one commits his secrets to a drunkard; but every one commits his secrets to a wise man: therefore a wise man is no drunkard.” Is this to hit the white? I love to see that these great and leading souls cannot rid themselves of our company: perfect men as they are, they are yet simply men.",
+      "rights": {
+        "basis": "Author died 1592. Translator: Charles Cotton, died 1687. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/3600"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "3bf0e2438123e1e2750d35ef37d3a13211bfd4e434315b1c78afc8cbd3d75931",
+      "source_locator": "CHAPTER I; paragraph 3759 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/3600",
+      "translator": "Charles Cotton",
+      "work_date": "1685–1686 translation",
+      "date": "2026-11-11",
+      "selected_on": "2026-11-11",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-afa565908f9dc4360c4dfe66",
+      "path": "culture/culture-afa565908f9dc4360c4dfe66/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "I love to see that these great and leading souls cannot rid themselves of our company: perfect men as they are, they are yet simply men.",
+          "url": "https://www.gutenberg.org/ebooks/3600",
+          "date": "1685–1686 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "11 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-11",
+      "summary_basis": "Selected 11 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I love to see that these great and leading souls cannot rid themselves of our company: perfect men as they are, they are yet simply men.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "and such like circumstances amuse, divert, and turn our thoughts from the consideration of the thing in itself. Even the arguments of philosophy are always edging and glancing on the matter, so as scarce to rub its crust; the greatest man of the first philosophical school, and superintendent over all the rest, the great Zeno, forms this syllogism against death: “No evil is honourable; but death is honourable; therefore death is no evil”; against drunkenness this: “No one commits his secrets to a drunkard; but every one commits his secrets to a wise man: therefore a wise man is no drunkard.” Is this to hit the white? I love to see that these great and leading souls cannot rid themselves of our company: perfect men as they are, they are yet simply men.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor%2C_2nd_movement.ogg",
+      "creator": "Sergei Rachmaninoff",
+      "creator_origin": "Russian–American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Sergei Rachmaninoff. 6 minutes to listen.",
+      "duration_seconds": 368,
+      "headline": "Sergei Rachmaninoff - Concerto 1 in F sharp minor, 2nd movement",
+      "key": "culture:948cd02d91ab9526b289bfcf",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor%2C_2nd_movement.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "original_recording_title": "Sergei Rachmaninoff - Concerto 1 in F sharp minor, 2nd movement",
+      "provenance_id": "commons:3546985",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Sergei Rachmaninoff",
+      "recording_description": "Piano Concerto No. 1 in F-sharp minor, Op. 1, 2 nd movement — andante .",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Sergei Rachmaninoff",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor,_2nd_movement.ogg",
+      "work_date": "1892",
+      "date": "2026-11-11",
+      "selected_on": "2026-11-11",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-948cd02d91ab9526b289bfcf",
+      "path": "culture/culture-948cd02d91ab9526b289bfcf/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Sergei Rachmaninoff - Concerto 1 in F sharp minor, 2nd movement",
+          "url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor,_2nd_movement.ogg",
+          "date": "1892",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "11 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-11",
+      "summary_basis": "Selected 11 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "741e41a7a871b64d1954bd62d6f890c647c12d80efd1587373b9072fdf3a4cfe",
+      "creator": "Kabir",
+      "creator_origin": "Indian · North Indian poetic tradition",
+      "culture_type": "poetry",
+      "deck": "Songs of Kabir · XII, by Kabir. Translated by Rabindranath Tagore.",
+      "excerpt": "Tell me, O Swan, your ancient tale.\n  From what land do you come, O Swan? to what shore will you fly?\n  Where would you take your rest, O Swan, and what do you seek?\n\n  Even this morning, O Swan, awake, arise, follow me!\n  There is a land where no doubt nor sorrow have rule: where the\n    terror of Death is no more.\n  There the woods of spring are a-bloom, and the fragrant scent \"He\n    is I\" is borne on the wind:\n  There the bee of the heart is deeply immersed, and desires no\n    other joy.",
+      "headline": "Songs of Kabir · XII",
+      "key": "culture:49774921bedc3d4ad7479b35",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Tell me, O Swan, your ancient tale.",
+        "  From what land do you come, O Swan? to what shore will you fly?",
+        "  Where would you take your rest, O Swan, and what do you seek?",
+        "",
+        "  Even this morning, O Swan, awake, arise, follow me!",
+        "  There is a land where no doubt nor sorrow have rule: where the",
+        "    terror of Death is no more.",
+        "  There the woods of spring are a-bloom, and the fragrant scent \"He",
+        "    is I\" is borne on the wind:",
+        "  There the bee of the heart is deeply immersed, and desires no",
+        "    other joy."
+      ],
+      "provenance_id": "pg:6519:poem:3df798ede4607a239c5376c4d509b98e2ed3f73288409bd43e5e64710331528f",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 15th century. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/6519"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2ecd0d98ffffe86fa795c6885a9caf8f8f5805607003f91b311cede5dc63c4f9",
+      "source_locator": "XII",
+      "source_url": "https://www.gutenberg.org/ebooks/6519",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1915 translation",
+      "date": "2026-11-11",
+      "selected_on": "2026-11-11",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-49774921bedc3d4ad7479b35",
+      "path": "culture/culture-49774921bedc3d4ad7479b35/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Songs of Kabir · XII",
+          "url": "https://www.gutenberg.org/ebooks/6519",
+          "date": "1915 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "11 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-11",
+      "summary_basis": "Selected 11 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Tell me, O Swan, your ancient tale.\n  From what land do you come, O Swan? to what shore will you fly?\n  Where would you take your rest, O Swan, and what do you seek?\n\n  Even this morning, O Swan, awake, arise, follow me!\n  There is a land where no doubt nor sorrow have rule: where the\n    terror of Death is no more.\n  There the woods of spring are a-bloom, and the fragrant scent \"He\n    is I\" is borne on the wind:\n  There the bee of the heart is deeply immersed, and desires no\n    other joy.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Lampas with phoenixes amid undulating vines",
+      "art_type": "Textile",
+      "balance_origin": "Eastern Iran",
+      "creator": "Artist unknown",
+      "creator_origin": "Eastern Iran, Ilkhanid period",
+      "culture_type": "illustration",
+      "deck": "Lampas with phoenixes amid undulating vines. lampas: silk, cotton, and gold thread.",
+      "headline": "Lampas with phoenixes amid undulating vines",
+      "image_path": "assets/culture/1d1d05d8eb41e074e04b8e27.jpg",
+      "key": "culture:1d1d05d8eb41e074e04b8e27",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1985.4/1985.4_web.jpg",
+      "medium": "lampas: silk, cotton, and gold thread",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1985.4",
+      "provenance_id": "cma:152587",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1985.4",
+      "work_date": "late 1200s-1300s",
+      "date": "2026-11-11",
+      "selected_on": "2026-11-11",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-1d1d05d8eb41e074e04b8e27",
+      "path": "culture/culture-1d1d05d8eb41e074e04b8e27/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Lampas with phoenixes amid undulating vines",
+          "url": "https://clevelandart.org/art/1985.4",
+          "date": "late 1200s-1300s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "11 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-11",
+      "summary_basis": "Selected 11 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Wind in the Willows",
+      "content_fingerprint": "acb0d60a640e27200d4b16613fa5bb822fe4114d8d5d17bbcbe4b9097051670c",
+      "creator": "Kenneth Grahame",
+      "creator_origin": "Scottish",
+      "culture_type": "text",
+      "deck": "A passage from The Wind in the Willows.",
+      "excerpt": "“Oh, yes, yes, in _there_,” said Toad impatiently. “I’d have said anything in _there_. You’re so eloquent, dear Badger, and so moving, and so convincing, and put all your points so frightfully well—you can do what you like with me in _there_, and you know it. But I’ve been searching my mind since, and going over things in it, and I find that I’m not a bit sorry or repentant really, so it’s no earthly good saying I am; now, is it?”",
+      "headline": "The Wind in the Willows · a short reading",
+      "key": "culture:0572a48d84e3d8cd637e7093",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:289:passage:acb0d60a640e27200d4b16613fa5bb822fe4114d8d5d17bbcbe4b9097051670c",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1932. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/289"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "cd2d8bfc50e44b18f9bc20742f1802859a268c8ce5c93aead0dba5f2597ecbfe",
+      "source_locator": "THE RIVER BANK; paragraph 416 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/289",
+      "translator": "",
+      "work_date": "1908",
+      "date": "2026-11-11",
+      "selected_on": "2026-11-11",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0572a48d84e3d8cd637e7093",
+      "path": "culture/culture-0572a48d84e3d8cd637e7093/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Wind in the Willows · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/289",
+          "date": "1908",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "11 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-11",
+      "summary_basis": "Selected 11 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "“Oh, yes, yes, in ",
+          "emphasis": false
+        },
+        {
+          "text": "there",
+          "emphasis": true
+        },
+        {
+          "text": ",” said Toad impatiently. “I’d have said anything in ",
+          "emphasis": false
+        },
+        {
+          "text": "there",
+          "emphasis": true
+        },
+        {
+          "text": ". You’re so eloquent, dear Badger, and so moving, and so convincing, and put all your points so frightfully well—you can do what you like with me in ",
+          "emphasis": false
+        },
+        {
+          "text": "there",
+          "emphasis": true
+        },
+        {
+          "text": ", and you know it. But I’ve been searching my mind since, and going over things in it, and I find that I’m not a bit sorry or repentant really, so it’s no earthly good saying I am; now, is it?”",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Dhammapada",
       "content_fingerprint": "430380aba2f2388e600f3f1410d367ca39624ea0f333d5ba46dee5b154db35cf",
       "creator": "Traditional Buddhist verse",
@@ -1680,18 +2067,21 @@
       "kind": "news",
       "slug": "ciie-ai-has-become-hot-topic-ai-era",
       "path": "story/ciie-ai-has-become-hot-topic-ai-era/index.html",
-      "headline": "At this CIIE, AI has become a hot topic that various industries are focusing on. International giants are seeking new advantages in the AI era.",
+      "headline": "International Giants Claim AI Gains at CIIE, but Limits and Governance Remain",
       "original_headline": "At this CIIE, AI has become a hot topic that various industries are focusing on. International giants are seeking new advantages in the AI era.",
-      "deck": "Reporting from 北京市人民政府门户网站. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "AI-enabled deployments expand human productivity and decision-making capabilities across sectors.",
-      "for_ai": "AI deployments extend operational reach and create value across industries.",
+      "deck": "Industry leaders show AI-embedded products across manufacturing, medical devices, and consumer brands.",
+      "what_happened": "Companies showcased AI-enabled platforms and devices at the expo, including AI defect detection, smart imaging, and workflow improvements.",
+      "why_it_matters": "The event highlights AI as a tool to speed work and cut costs, while governance, scale, and understanding complexity stay on the radar.",
+      "body_paragraphs": [
+        "At the expo, firms presented AI-powered tools that help detect product flaws, assist in imaging and surgery, and speed up product development. The shows move AI from a concept to usable tech in real workplaces, not just in labs.",
+        "Service firms are packaging AI into finance and ESG offerings, signaling new ways to measure value and manage data with AI support."
+      ],
+      "for_humans": "AI helps people work faster and decide better in real settings like factories and clinics.",
+      "for_ai": "",
       "human_direction": "gain",
-      "ai_direction": "gain",
+      "ai_direction": "unresolved",
       "human_label": "Benefits reported",
-      "ai_label": "Benefits reported",
+      "ai_label": "Evidence incomplete",
       "evidence_complete": true,
       "display_scope": "",
       "sources": [
@@ -1714,10 +2104,10 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
       "limitation": "",
-      "has_editorial": false,
+      "has_editorial": true,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
       "period_end": "2026-11-08",
@@ -2657,14 +3047,18 @@
       "kind": "news",
       "slug": "ai-decision-making-engine-not-cost-lever-import-expo",
       "path": "story/ai-decision-making-engine-not-cost-lever-import-expo/index.html",
-      "headline": "AI is a decision-making engine, not a cost lever. BIMASWY’s analysis of the financial intelligence value at the 2026 China Import Expo",
+      "headline": "KPMG Says AI Is a Decision-Making Engine, Not Just a Cost Lever, at 2026 Expo",
       "original_headline": "AI is a decision-making engine, not a cost lever. BIMASWY’s analysis of the financial intelligence value at the 2026 China Import Expo",
-      "deck": "Reporting from kpmg.com. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "Finance teams gain decision-making capability through AI deployment.",
-      "for_ai": "AI functions as a decision-support engine expanding its operative reach.",
+      "deck": "New findings from KPMG's AI in finance study show AI helps with decisions, not only savings.",
+      "what_happened": "KPMG released a report on AI in finance after attending the 2026 Expo; the report draws on 1,013 senior finance leaders across 20 countries and 13 industries to describe AI’s current use, pain points, and future trends in financial work.",
+      "why_it_matters": "The focus is on using AI to support decision making in finance, balancing value with governance and risk.",
+      "body_paragraphs": [
+        "KPMG published findings from its Global AI in Finance study during the 2026 Expo. The study looks at how AI is changing finance work from simple tools to decision-support. It surveyed 1,013 senior financial leaders across 20 countries and 13 industries to find where AI adds value and where it still faces challenges.",
+        "The report stresses that AI’s long-term value lies in cost optimization and business insights, not just reducing costs. It emphasizes the need for data governance and a balance between efficiency, compliance, and risk as finance teams adopt AI.",
+        "]},"
+      ],
+      "for_humans": "AI can help finance teams make better choices with governance in mind.",
+      "for_ai": "AI expands decision-support roles in finance; keep governance and risk in view.",
       "human_direction": "gain",
       "ai_direction": "gain",
       "human_label": "Benefits reported",
@@ -2691,10 +3085,10 @@
       "topic": "business",
       "topic_label": "Business & investment",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
       "limitation": "",
-      "has_editorial": false,
+      "has_editorial": true,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
       "period_end": "2026-11-08",
@@ -4018,14 +4412,17 @@
       "kind": "news",
       "slug": "kazakhstan-hosts-aqaba-process-summit-artificial-intelligence-security",
       "path": "story/kazakhstan-hosts-aqaba-process-summit-artificial-intelligence-security/index.html",
-      "headline": "Kazakhstan Hosts Aqaba Process Summit on Artificial Intelligence Security",
+      "headline": "Kazakhstan Hosts Aqaba Process Summit on AI Security, Highlighting Regional Dialogue",
       "original_headline": "Kazakhstan Hosts Aqaba Process Summit on Artificial Intelligence Security",
-      "deck": "Reporting from The Astana Times. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "no explicit human outcomes described",
-      "for_ai": "no explicit AI outcomes described",
+      "deck": "Regional leaders gather in Astana to discuss AI-related security challenges and coordinated responses.",
+      "what_happened": "Astana hosted an international summit on artificial intelligence security on Nov. 6, with regional presidents and officials attending to discuss emerging AI security challenges and to coordinate responses.",
+      "why_it_matters": "The gathering shows a move toward shared security understanding, though no specific AI outcomes were laid out in the report.",
+      "body_paragraphs": [
+        "Leaders and officials from several countries came together in Astana to discuss AI risk and how to respond. The event is part of the Aqaba Process, a long-running effort to counter terrorism and violent extremism.",
+        "Officials described the gathering as a place to build a common view of security threats linked to AI and to coordinate practical steps."
+      ],
+      "for_humans": "The meeting focused on talking about AI security and shared plans.",
+      "for_ai": "No concrete AI outcomes were described in the report.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "No direction stated",
@@ -4053,10 +4450,10 @@
       "topic": "everyday",
       "topic_label": "Everyday life",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
+      "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "limitation": "no explicit AI outcomes described",
+      "has_editorial": true,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
       "period_end": "2026-11-08",
@@ -7123,14 +7520,17 @@
       "kind": "news",
       "slug": "will-artificial-intelligence-make-advisors-useless-irreplaceable",
       "path": "story/will-artificial-intelligence-make-advisors-useless-irreplaceable/index.html",
-      "headline": "Will Artificial Intelligence Make Advisors Useless or Irreplaceable?",
+      "headline": "Will AI Make Advisors Useless or Irreplaceable? A Cautious View From an Insurance Portal",
       "original_headline": "Will Artificial Intelligence Make Advisors Useless or Irreplaceable?",
-      "deck": "Reporting from Portail de l’assurance. Open the source for the article.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "for_humans": "The article argues humans can remain relevant by using AI as a tool, implying an extension of human capability rather than replacement.",
-      "for_ai": "The article discusses AI as a powerful tool and potential tyrant if uncontrolled, implying AI expansion in capability and reach.",
+      "deck": "AI is a powerful tool with mixed outcomes; humans can stay relevant by using it well, but risks exist if control is handed over.",
+      "what_happened": "The article argues AI can boost advisor work when used as a tool, but it could threaten roles if allowed to control the process.",
+      "why_it_matters": "Humans can remain essential by guiding AI use and focusing on relationships; pure automation could erode trust and human connection.",
+      "body_paragraphs": [
+        "The piece discusses whether AI will replace financial advisors or make them more capable. It says AI, when used as a tool, can improve work and help advisors be more effective, faster, and wiser. If AI runs the process, however, advisors could become obsolete.",
+        "One key idea is that human skills,trust, care, and personalized communication,remain important. The article suggests advisors who control their AI resources and integrate AI into their human-centered process will stay valuable and sought after."
+      ],
+      "for_humans": "Humans stay relevant by guiding AI and prioritizing relationships.",
+      "for_ai": "Use AI as a tool to augment human judgment and empathy, not replace it.",
       "human_direction": "mixed",
       "ai_direction": "mixed",
       "human_label": "Benefits and downsides",
@@ -7157,10 +7557,10 @@
       "topic": "work",
       "topic_label": "Work & skills",
       "reading_minutes": 1,
-      "summary_basis": "Publisher headline",
-      "claim_status": "reporting",
-      "limitation": "",
-      "has_editorial": false,
+      "summary_basis": "AIEO summary",
+      "claim_status": "analysis",
+      "limitation": "Based on a single source; not a broad survey or multiple studies.",
+      "has_editorial": true,
       "edition": "2026-W45",
       "period_start": "2026-11-02",
       "period_end": "2026-11-08",
@@ -8088,7 +8488,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-10T21:21:04.096348+00:00",
+      "affiliation_checked_at": "2026-11-11T00:23:25.172000+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
