@@ -17,12 +17,12 @@
         "scope_note": "Five selected stories from five discovery markets.",
         "word_count": 124,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/w45-news-2026-11-03.jpg",
-        "image_alt": "A real press briefing for the Bangladesh AI Business Summit on 3 November 2026; contextual photograph from the same week, not one of the five linked reports",
-        "image_caption": "Bangladesh AI Business Summit press briefing, 3 November 2026 — contextual photograph, separate from the five linked reports",
-        "image_credit": "Press Information Department of Bangladesh",
-        "image_source_url": "https://commons.wikimedia.org/wiki/File:Fakir_Mahbub_Anam_at_press_briefing_for_Bangladesh_AI_Business_Summit_2026,_2026-11-03.jpg",
-        "image_rights": "Public domain · government photograph",
+        "image_path": "assets/weekly-overviews/w45-open-crossing.jpg",
+        "image_alt": "A narrow suspension footbridge crosses the river at Zion Lodge between leafless trees",
+        "image_caption": "Suspension footbridge at Zion Lodge, 1952",
+        "image_credit": "Courtesy Zion National Park, Photographer Glenn Haynes, Museum Catalog Number ZION 9521",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e00234e696804f57a6cc9d0e1aaa19bf",
+        "image_rights": "Public domain",
         "entries": [
           {
             "code": "US",
@@ -123,7 +123,7 @@
         },
         "image_key": "culture:f1b34451095142a9ab80beeb",
         "image_work_key": "0317aa591e1d8633b61e68dc5dcd3fc18df918ce51c7b33a04f63e848ed9559c",
-        "image_reason": "",
+        "image_reason": "A bridge needs both an open crossing and firm supports, echoing the review’s link between access, shared models and human safeguards.",
         "review_checks": {
           "grounded": true,
           "clear_high_school_language": true,
@@ -135,7 +135,8 @@
         },
         "human_approved": true,
         "image_origin": "camera photograph",
-        "image_taken_date": "2026-11-03"
+        "image_taken_date": "1952-04-16",
+        "image_purpose": "metaphorical illustration"
       },
       "research": {
         "kind": "research",
@@ -146,12 +147,12 @@
         "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
         "word_count": 143,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/w45-research-2026-11-02.jpg",
-        "image_alt": "NASA astronauts practice robotic arm controls aboard the International Space Station on 2 November 2026; contextual teleoperation photograph, not the Pixel robots",
-        "image_caption": "Robotic arm control practice aboard the ISS, 2 November 2026 — contextual photograph, not a Pixel experiment",
-        "image_credit": "NASA / Anil Menon",
-        "image_source_url": "https://commons.wikimedia.org/wiki/File:Iss075e0254172_(Nov_2,_2026)_---_Expedition_75_flight_engineers_Luke_Delaney_and_Jessica_Watkins,_both_NASA_astronauts,_review_and_practice_Canadarm2_robotic_arm_maneuvers_at_the_robotics_workstation_inside_the_Inter.jpg",
-        "image_rights": "Public domain · NASA photograph",
+        "image_path": "assets/weekly-overviews/w45-careful-steps.jpg",
+        "image_alt": "Uneven stone steps climb through mossy rocks and tree roots into shade on Saintly Hill along the Chilkoot Trail",
+        "image_caption": "Stone steps on Saintly Hill, Chilkoot Trail, 2016",
+        "image_credit": "National Park Service",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/63dd6ea5-47d6-40fb-aa75-e7a4e4affddb",
+        "image_rights": "Public domain · Full Granting Rights",
         "papers": [
           {
             "key": "paper:1f57be72ebcab286d54f6980",
@@ -352,7 +353,7 @@
         },
         "image_key": "culture:d65ac8570d1927998fb7cdae",
         "image_work_key": "617ba9aeefcae9c3cc29e27757a5c2b28d0217b959a9b03bac708f5106987782",
-        "image_reason": "",
+        "image_reason": "Uneven steps disappearing into shade echo robots learning to move through real spaces, where progress depends on sensing obstacles and knowing what remains unseen.",
         "review_checks": {
           "grounded": true,
           "clear_high_school_language": true,
@@ -364,11 +365,12 @@
         },
         "human_approved": true,
         "image_origin": "camera photograph",
-        "image_taken_date": "2026-11-02"
+        "image_taken_date": "2016-06-07",
+        "image_purpose": "metaphorical illustration"
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "ready",
-      "content_sha256": "810a5c1e594bc47fc64a484ab107e59944a2a56fb5924c8914b5485554dc0de1"
+      "content_sha256": "97bd18655a31124716a175d442a206ea7df6f8c870486d7f1bf606696bf8f5c8"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
