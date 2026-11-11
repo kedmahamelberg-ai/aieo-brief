@@ -841,7 +841,7 @@
       "source": "pnas",
       "research_label": "Perspective",
       "evidence_scope": "paper_text",
-      "access": "Open-license record",
+      "access": "Open matching manuscript on arXiv",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
@@ -1432,7 +1432,7 @@
       "source": "pnas",
       "research_label": "Journal article",
       "evidence_scope": "abstract",
-      "access": "Open-license record",
+      "access": "Check access at publisher",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
@@ -1803,7 +1803,7 @@
       "source": "pnas",
       "research_label": "Journal article",
       "evidence_scope": "abstract",
-      "access": "Open-license record",
+      "access": "Check access at publisher",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
@@ -3210,7 +3210,7 @@
       "source": "pnas",
       "research_label": "Journal article · full text from matching arXiv manuscript",
       "evidence_scope": "paper_text",
-      "access": "Open-license record",
+      "access": "Open matching manuscript on arXiv",
       "license_urls": [
         "https://creativecommons.org/licenses/by-nc-nd/4.0/"
       ],
