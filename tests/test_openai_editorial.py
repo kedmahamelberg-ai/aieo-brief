@@ -1,3 +1,4 @@
+import copy
 import os
 import sys
 import unittest
@@ -55,6 +56,19 @@ class OpenAIEditorial(unittest.TestCase):
             result=engine.call_json('Private source',schema,stage='scope_review')
         self.assertEqual(result,{'field_reviews':[]})
         self.assertEqual([call.kwargs['reasoning_effort'] for call in request.call_args_list],['medium','low'])
+
+    def test_paper_gets_focused_second_edit_for_unexplained_method_name(self):
+        from test_editorial_recovery import fixture, accepted_review
+        draft, sources = fixture()
+        named = copy.deepcopy(draft)
+        named['editorial_headline'] = 'EM-DETR study highlights concern about AI and income'
+        responses = [copy.deepcopy(named), copy.deepcopy(named),
+                     copy.deepcopy(draft), accepted_review(draft)]
+        with patch.object(engine, 'call_json', side_effect=responses) as model:
+            result, _ = engine.write_story({}, {}, sources, kind='paper')
+        self.assertEqual(result['editorial_headline'], draft['editorial_headline'])
+        self.assertEqual([call.kwargs['stage'] for call in model.call_args_list],
+                         ['draft', 'reading_level', 'reading_level', 'scope_review'])
 
     def test_full_paper_draft_has_reasoning_room_without_repeated_source_input(self):
         answer={'choices':[{'message':{'content':'{}'}}]}
