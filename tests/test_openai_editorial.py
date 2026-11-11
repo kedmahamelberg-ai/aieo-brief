@@ -36,6 +36,9 @@ class OpenAIEditorial(unittest.TestCase):
             with self.assertRaises(ai.AIError):engine.call_json('Private source',schema,stage='scope_review')
         self.assertEqual(request.call_args.kwargs['max_completion_tokens'],32768)
         self.assertEqual([call.kwargs['reasoning_effort'] for call in request.call_args_list],['medium','low'])
+        with patch.object(ai,'completion',side_effect=ai.AIError('Unavailable')) as paper_request:
+            with self.assertRaises(ai.AIError):engine.call_json('Complete paper',schema,stage='scope_review',paper=True)
+        self.assertEqual(paper_request.call_args.kwargs['max_request_bytes'],800000)
         diagnostic=engine.failure_diagnostic(error,'generation')
         self.assertEqual(diagnostic['code'],'model_output_limit')
         self.assertEqual(diagnostic['stage'],'scope_review')
