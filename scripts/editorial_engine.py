@@ -13,7 +13,7 @@ from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v11-news-plain-english'
+ENGINE_VERSION='aieo-editorial-runtime-v12-news-reading-presentation'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -171,6 +171,17 @@ def source_numeric_aliases(text):
  # grouping, French grouping spaces, decimal commas, and spaced percent signs.
  # Only the evidence creates aliases; draft numbers never authorize themselves.
  aliases=set()
+ # Translate only explicit Chinese ordinals used for numbered events. This
+ # accepts the 14th forum written as 第十四届, without turning arbitrary
+ # Chinese numerals or model names into permission for new draft numbers.
+ digits='一二三四五六七八九'
+ for match in re.finditer(r'第([一二三四五六七八九]?十[一二三四五六七八九]?|[一二三四五六七八九])(?:届|次|期)',text):
+  ordinal=match.group(1)
+  if '十' in ordinal:
+   tens,ones=ordinal.split('十')
+   number=(digits.index(tens)+1 if tens else 1)*10+(digits.index(ones)+1 if ones else 0)
+  else:number=digits.index(ordinal)+1
+  aliases.add(str(number))
  for match in re.finditer(r'(?<![\d.,])(\d{1,3}(?:[ \u00a0\u202f]\d{3})+)(?!\d)',text):
   groups=re.split(r'[ \u00a0\u202f]',match.group(1))
   aliases.add(','.join(groups))

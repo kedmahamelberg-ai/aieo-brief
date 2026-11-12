@@ -2,6 +2,7 @@
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
 from editorial_corrections import apply_corrections, reading_proof
+from news_reading import prepare_display as prepare_news_display
 from claim_grounding import VERSION as GROUNDING_VERSION
 import argparse, collections, copy, json, os, re, shutil, time
 from datetime import datetime, timezone, date
@@ -33,7 +34,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
 TOPICS={'work':'Work & skills','creativity':'Culture & creativity','everyday':'Everyday life','policy':'Rules & rights','technology':'AI & technology','research':'Science & research','business':'Business & investment'}
-DIRECTION_LABELS={'gain':'Benefits reported','loss':'Downsides reported','mixed':'Benefits and downsides','none':'No direction stated','unresolved':'Evidence incomplete'}
+DIRECTION_LABELS={'gain':'Benefits reported','loss':'Downsides reported','mixed':'Benefits and downsides','none':'No direction stated','unresolved':''}
 ISO={'CAN':'CA','CHN':'CN','FRA':'FR','GBR':'GB','USA':'US',**dict((k,k) for k,_ in MARKETS)}
 
 def optimize_site_photos(site: Path) -> None:
@@ -361,6 +362,7 @@ def main():
         allitems[row['key']]=row
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
     apply_corrections(allcards,ROOT)
+    prepare_news_display(allcards)
     allcards=[withhold_abstract_summary(x) if x.get('kind')=='research' else x for x in allcards]
     raw_archive=copy.deepcopy(allcards)
     english=EnglishPublication(ROOT, allow_model=(not preview and os.environ.get('BRIEF_TRANSLATE_ENGLISH')=='true'))
@@ -369,6 +371,7 @@ def main():
     current_order={x['key']:i for i,x in enumerate(culture+news+research)}
     public_by_key={x['key']:english.apply(x) for x in sorted(allcards,key=lambda x:current_order.get(x['key'],100000))}
     allcards=[public_by_key[x['key']] for x in allcards]
+    prepare_news_display(allcards)
     pending_culture=[x['key'] for x in allcards if x.get('kind')=='culture' and x.get('english_status')=='pending']
     if pending_culture:
         print('::warning::Culture translations pending; English notices are shown and translations will be retried: '+', '.join(pending_culture))

@@ -7,8 +7,10 @@ field-level audit in `data/editorial/plain-language-corrections-2026-11-12.json`
 revises all 148 implication boxes, simplifies headlines, and repairs source
 position or event timing where needed. It records source hashes, previous text,
 replacements and actual reading scope. Publisher bodies and private quotations
-are not committed. Four records contain an unavailable article, paywall preview
-or navigation instead of full text; their summaries are withheld. Five further
+are not committed. The complete Uruguay visit report and the Xinhua media
+infographic were recovered and reviewed, restoring their briefs. The forum,
+legal article and written video introduction also now have visible summaries.
+Two sources still lack accessible full article text. Five further
 records are explicitly limited to written introductions or notices rather than
 the linked interview, video or PDF report. Other records were read as complete
 retained written pages; that does not independently verify publisher claims.
@@ -22,6 +24,19 @@ alongside the existing factual and original-source citation checks. Empty
 dimensions remain allowed; readability is never a reason to invent an outcome.
 The new engine version refreshes future generation fingerprints. Existing
 reviewed corrections stay locked against automatic overwriting.
+
+The limits section now comes after both implication boxes and original sources,
+at the end of the article text. Internal `unresolved` status never appears as an
+"Evidence incomplete" effect badge. The publication validator checks this order
+and blocks that badge on every news page, including archives and future editions.
+All existing non-empty limits notes in the current edition use ordinary words.
+An effect not being measured does not mean that the source article is missing.
+
+A headline or box-only correction no longer blocks an article's first checked
+summary. Explicit withholding and pending locks remain protected. Numeric checks
+also accept unambiguous Chinese event ordinals such as 第十四届 as the 14th event;
+unrelated or invented numbers still fail. This removes one demonstrated source
+of the forum page's failed automatic draft without relaxing source review.
 
 Sentence limits and a phrase list do not certify a school reading grade. Final
 source review and editorial judgment remain necessary. The source quality check
