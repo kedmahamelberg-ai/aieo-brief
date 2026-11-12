@@ -11,132 +11,92 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "What is the bridge open source can offer for AI this week?",
-        "deck": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
-        "summary": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets. From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people. The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses. A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
-        "scope_note": "Five selected stories from five discovery markets.",
-        "word_count": 124,
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/w45-open-crossing.jpg",
-        "image_alt": "A narrow suspension footbridge crosses the river at Zion Lodge between leafless trees",
-        "image_caption": "Suspension footbridge at Zion Lodge, 1952",
-        "image_credit": "Courtesy Zion National Park, Photographer Glenn Haynes, Museum Catalog Number ZION 9521",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e00234e696804f57a6cc9d0e1aaa19bf",
-        "image_rights": "Public domain",
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
         "entries": [
-          {
-            "code": "US",
-            "name": "United States",
-            "topic": "Rules & rights",
-            "story": {
-              "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html",
-              "headline": "Global tech stocks wobble as AI regulation fears rise after midterms",
-              "publisher": "The Guardian"
-            }
-          },
-          {
-            "code": "CA",
-            "name": "Canada",
-            "topic": "Culture & creativity",
-            "story": {
-              "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html",
-              "headline": "Do We Need Another Novel? A Professor Questions AI's Role in Literature",
-              "publisher": "l-express.ca"
-            }
-          },
           {
             "code": "CN",
             "name": "China",
-            "topic": "Culture & creativity",
+            "count": 22,
+            "topic": "Business And Investment",
+            "sentence": "China: business and investment stood out in the selected coverage; one example was “Deloitte says AI devices need real-world data, privacy rules and human….”",
             "story": {
-              "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html",
-              "headline": "From Wuzhen AI Open-Source Talk, key terms for a shared ecosystem emerge",
-              "publisher": "新华网"
+              "headline": "Deloitte says AI devices need real-world data, privacy rules and human control",
+              "path": "story/screen-reality-competitive-landscape-next-generation-ai-deloitte-china/index.html",
+              "publisher": "Deloitte",
+              "source_url": "https://www.deloitte.com/cn/zh/issues/generative-ai/physical-ai-future-ai-competition-landscape.html"
             }
           },
           {
-            "code": "FR",
-            "name": "France",
-            "topic": "Rules & rights",
+            "code": "US",
+            "name": "United States",
+            "count": 13,
+            "topic": "Rules And Rights",
+            "sentence": "United States: selected reporting leaned toward rules and rights, with “UCF team plans AI tool to help doctors assess kidney problems” as one visible signal.",
             "story": {
-              "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html",
-              "headline": "CEDH chief warns AI can speed justice but may overwhelm system and invite abusive claims",
-              "publisher": "BFM"
+              "headline": "UCF team plans AI tool to help doctors assess kidney problems",
+              "path": "story/ucf-researchers-developing-ai-model-help-kidney-care/index.html",
+              "publisher": "University of Central Florida",
+              "source_url": "https://www.ucf.edu/news/ucf-researchers-developing-ai-model-to-help-physicians-improve-kidney-care"
             }
           },
           {
             "code": "GB",
             "name": "United Kingdom",
-            "topic": "Rules & rights",
+            "count": 12,
+            "topic": "Everyday Use",
+            "sentence": "United Kingdom: everyday use stood out in the selected coverage; one example was “Le Mans teams use AI for meetings, race data and strategy.”",
             "story": {
-              "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html",
-              "headline": "BBC: EU AI rules may apply in Northern Ireland; UK government sets limits",
-              "publisher": "BBC"
+              "headline": "Le Mans teams use AI for meetings, race data and strategy",
+              "path": "story/ai-already-factor-le-mans-according-teams-experts/index.html",
+              "publisher": "24 Heures du Mans",
+              "source_url": "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 15,
+            "topic": "Rules And Rights",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Researchers explore how AI could help voters compare election plans.”",
+            "story": {
+              "headline": "Researchers explore how AI could help voters compare election plans",
+              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
+              "publisher": "Sciences Po",
+              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 28,
+            "topic": "Rules And Rights",
+            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Researchers explore how AI could help voters compare election plans.”",
+            "story": {
+              "headline": "Researchers explore how AI could help voters compare election plans",
+              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
+              "publisher": "Sciences Po",
+              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "ready",
-        "author": "Kedma Hamelberg",
-        "prose": [
-          [
-            {
-              "text": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms.",
-              "source_key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
-              "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html"
-            },
-            {
-              "text": "EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
-              "source_key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
-              "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html"
-            }
-          ],
-          [
-            {
-              "text": "From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people.",
-              "source_key": "event:11b57efe-191f-437f-b405-a2f1c37d774d",
-              "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html"
-            },
-            {
-              "text": "The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses.",
-              "source_key": "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f",
-              "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html"
-            }
-          ],
-          [
-            {
-              "text": "A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
-              "source_key": "event:0137b615-2741-4b50-9a60-dd93e0471ea1",
-              "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html"
-            }
-          ]
-        ],
+        "status": "pending",
+        "author": "",
+        "prose": [],
         "papers": [],
-        "pending_reason": "approved_sources_changed",
-        "source_hashes": {
-          "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7": "f074a81b8d14a997089da8fbc984014a23ee8c86c7a9386dbf16758ae63a9e30",
-          "event:0137b615-2741-4b50-9a60-dd93e0471ea1": "cb2e5b3a682d92953e6fe515f4c4972dabc5764c03fc6660f5f02c424dcc91c3",
-          "event:11b57efe-191f-437f-b405-a2f1c37d774d": "21f321d2043b99ceffbf443991255a72d1a463dd7a5f8694a486c263341d65e3",
-          "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f": "8b89aa1258fe76f5593a5059bd22659281028f584bc95cda1a8b594dc5e69bf1",
-          "event:034c9f16-afde-4d13-bfa2-822d8b830213": "d065e86d6131145e1ea4956a0e453e522b4cfadbc1dc7d5001ba1c7a9f4d3df8"
-        },
-        "image_key": "culture:f1b34451095142a9ab80beeb",
-        "image_work_key": "0317aa591e1d8633b61e68dc5dcd3fc18df918ce51c7b33a04f63e848ed9559c",
-        "image_reason": "A bridge needs both an open crossing and firm supports, echoing the review’s link between access, shared models and human safeguards.",
-        "review_checks": {
-          "grounded": true,
-          "clear_high_school_language": true,
-          "coherent_prose": true,
-          "meaningful_connection": true,
-          "source_limits_preserved": true,
-          "no_invented_personal_experience": true,
-          "image_metaphor_supported": true
-        },
-        "human_approved": true,
-        "image_origin": "camera photograph",
-        "image_taken_date": "1952-04-16",
-        "image_purpose": "metaphorical illustration"
+        "pending_reason": "approved_sources_changed"
       },
       "research": {
         "kind": "research",
@@ -369,8 +329,8 @@
         "image_purpose": "metaphorical illustration"
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "ready",
-      "content_sha256": "97bd18655a31124716a175d442a206ea7df6f8c870486d7f1bf606696bf8f5c8"
+      "editorial_status": "pending",
+      "content_sha256": "9f12533e35928f491b06fd6ce7fcfd47fa13ba6ab7a0bec28104b3ad076a93e8"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
