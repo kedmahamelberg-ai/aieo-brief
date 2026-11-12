@@ -9,14 +9,13 @@
     "needs_model": 4,
     "needs_rebind": 0,
     "selected": 4,
-    "generated": 0,
+    "generated": 1,
     "rebound": 0,
-    "failed": 4,
+    "failed": 3,
     "deferred": 0
   },
   "failure_counts": {
     "unsupported_number": 1,
-    "claim_grounding_failed": 1,
     "source_scope_review_failed": 2
   },
   "failed_items": [
@@ -31,21 +30,10 @@
       "event_id": "02fa8350-ffe4-4622-bff6-3889ac3c987a",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v10-source-fidelity"
-    },
-    {
-      "event_id": "f8af0f48-8b9e-41f5-b4f0-7ed5b48313d1",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
       "failed_checks": [
-        "headline_supported",
-        "population_preserved",
-        "claim_status_preserved",
-        "no_unstated_effects",
-        "main_story_only"
+        "headline_supported"
       ]
     },
     {
@@ -55,12 +43,9 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
       "failed_checks": [
-        "headline_supported",
-        "population_preserved",
-        "claim_status_preserved",
-        "no_unstated_effects"
+        "headline_supported"
       ]
     }
   ],
-  "updated_at": "2026-11-11T22:49:16.294698+00:00"
+  "updated_at": "2026-11-12T03:52:28.632811+00:00"
 }
