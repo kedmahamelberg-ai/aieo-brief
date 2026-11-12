@@ -2,14 +2,14 @@
   "release_id": "2026-W45",
   "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
   "counts": {
-    "unchanged": 69,
+    "unchanged": 70,
     "source_not_ready": 1,
     "source_date_mismatch": 0,
-    "new_registry": 4,
-    "needs_model": 4,
+    "new_registry": 3,
+    "needs_model": 3,
     "needs_rebind": 0,
-    "selected": 4,
-    "generated": 1,
+    "selected": 3,
+    "generated": 0,
     "rebound": 0,
     "failed": 3,
     "deferred": 0
@@ -33,7 +33,8 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
       "failed_checks": [
-        "headline_supported"
+        "population_preserved",
+        "claim_status_preserved"
       ]
     },
     {
@@ -43,9 +44,10 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v10-source-fidelity",
       "failed_checks": [
-        "headline_supported"
+        "headline_supported",
+        "claim_status_preserved"
       ]
     }
   ],
-  "updated_at": "2026-11-12T03:52:28.632811+00:00"
+  "updated_at": "2026-11-12T12:13:46.196323+00:00"
 }
