@@ -142,7 +142,7 @@ class Publication(unittest.TestCase):
   grounded=next(x for x in cards(self.release,self.sym,{}, {},seed,True) if x['event_id']==eid)
   self.assertEqual(grounded['for_humans'],'');self.assertEqual(grounded['for_ai'],'')
   # A blank reviewed impact cannot appear under a benefits label.
-  self.assertEqual((grounded['human_label'],grounded['ai_label']),('Evidence incomplete','Evidence incomplete'))
+  self.assertEqual((grounded['human_label'],grounded['ai_label']),('',''))
  def test_changed_draft_cannot_be_saved_with_an_old_review(self):
   import hashlib
   from unittest.mock import Mock

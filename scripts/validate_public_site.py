@@ -9,6 +9,19 @@ from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 from research_reading import verified_paper_reading
 ROOT=Path(__file__).resolve().parents[1]
 PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref','private_key','manage_token_hash','subscription_id','auth_key'}
+
+def validate_news_layout(raw):
+ if 'class="axis-grid"' not in raw:return
+ if re.search(r'<strong\b[^>]*>\s*Evidence incomplete\s*</strong>',raw):
+  raise ValueError('Internal reading status reached a public implication badge')
+ limit=raw.find('<h2>What this does not tell us</h2>')
+ if limit<0:return
+ people=raw.find('<h3>FOR PEOPLE</h3>')
+ ai=raw.find('<h3>FOR AI TOOLS AND COMPANIES</h3>')
+ sources=raw.find('<summary>Original sources')
+ if people<0 or ai<people or limit<ai or sources<ai or limit<sources:
+  raise ValueError('The news limits section must be at the end, after the implication boxes and sources')
+
 class Page(HTMLParser):
  def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.ids=[];self.headings=0;self.script_data=[];self.capture=False;self.canonicals=[];self.robots=''
  def handle_starttag(self,tag,attrs):
@@ -75,7 +88,9 @@ def validate(site):
   if any(counts[k]!=v for k,v in payload['directional_counts'][axis].items()):raise ValueError('Wrong '+axis+' totals')
  for item in news:
   for side in ('human','ai'):
-   if not str(item.get('for_humans' if side=='human' else 'for_ai') or '').strip() and item.get(side+'_label')!='Evidence incomplete':
+   if item.get(side+'_label')=='Evidence incomplete':
+    raise ValueError('Internal reading status reached a public implication badge: '+item.get('key','unknown'))
+   if not str(item.get('for_humans' if side=='human' else 'for_ai') or '').strip() and item.get(side+'_label'):
     raise ValueError('Blank directional reading has an unsupported public label: '+item.get('key','unknown'))
  for item in news+papers+culture:
   if not item['sources'] or len(item['sources'])!=item['source_count']:raise ValueError('Missing or inconsistent source list')
@@ -93,6 +108,7 @@ def validate(site):
  pages=list(site.rglob('*.html'));links=0;metadata={}
  for path in pages:
   raw=path.read_text();parser=Page();parser.feed(raw)
+  validate_news_layout(raw)
   metadata[path.resolve()]=parser
   if parser.headings!=1:raise ValueError(f'{path.relative_to(site)} needs one page heading')
   if len(parser.ids)!=len(set(parser.ids)):raise ValueError('Duplicate element IDs: '+str(path))

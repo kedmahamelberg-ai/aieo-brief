@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'data/editorial/approved-corrections-2026-10-26.json'
 SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  'data/editorial/reading-corrections-2026-11-09.json',
-                 'data/editorial/research-reading-corrections-2026-11-11.json')
+                 'data/editorial/research-reading-corrections-2026-11-11.json',
+                 'data/editorial/plain-language-corrections-2026-11-12.json')
 
 
 def reading_proof(key, root=ROOT):

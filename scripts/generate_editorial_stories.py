@@ -70,11 +70,15 @@ def candidates(release,sym,maps,force=False):
         latest=versions.get(str((story or {}).get('story_id')))
         if is_locked('event:'+eid,ROOT):
             correction=approved.get('event:'+eid,{})
-            if latest or set(correction)!={'headline'}:
+            first_summary_fields={'headline','for_humans','for_ai','human_direction',
+                                  'ai_direction','human_label','ai_label'}
+            first_summary_allowed=bool(correction) and not latest and set(correction)<=first_summary_fields
+            if not first_summary_allowed:
                 counts['unchanged']+=1;continue
-            # A reviewed spelling correction to a source headline must not
-            # prevent the first editorial summary from being written.
-            event={**event,'event_title':correction['headline']}
+            # A headline or box-only correction must not freeze a page before
+            # its first source-checked article exists. Pending locks and an
+            # explicit decision to withhold a summary still stay locked.
+            if correction.get('headline'):event={**event,'event_title':correction['headline']}
         public_current=version_valid(latest,axis[eid],release,event,legacy_proofs)
         relation=fixed_relationship(axis[eid])
         bound=bool(release.get('complete_content'))

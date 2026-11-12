@@ -1,0 +1,2005 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "authorization": "Owner requested review and plain high-school English for every news story in the current edition, grounded in full articles, on 2026-11-12.",
+  "edition": "2026-W45",
+  "period_start": "2026-11-02",
+  "period_end": "2026-11-08",
+  "review_method": "Reviewed all 74 published W45 news pages and all 76 retained source records, then recovered the complete Uruguay publisher article and visually read the complete Xinhua media infographic. Source hashes and field-level edits are retained without publisher bodies or private quotations. Restored supported briefs, kept video introductions explicitly scoped, moved limits to the end, and removed internal reading status from public effect badges. The Le Temps full article remains paywalled and the CAC page lacks accessible written article content; no full reading is claimed for those two sources.",
+  "news": [
+    {
+      "key": "event:e093a32f-b37e-4704-a1d2-2b17e5d5c8f6",
+      "event_id": "e093a32f-b37e-4704-a1d2-2b17e5d5c8f6",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://theconversation.com/et-si-socrate-etait-le-meilleur-allie-des-enseignants-face-a-lintelligence-artificielle-294543"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "938b1e91861f600649fa996a93d02a74": "bd22e746d2ac04a7e4ccf1718770da9b0b6236f20c627808d91adc1bc3893009"
+      },
+      "before": {
+        "for_humans": "AI can spark questions and reveal gaps; humans still guide interpretation and growth.",
+        "for_ai": "Use AI as a tool to prompt thinking and highlight what is not yet known.",
+        "headline": "What if Socrates was AI’s best ally for teachers, with limits?",
+        "deck": "A Philosophy-forward look at how the Socratic method could guide AI use in higher education.",
+        "what_happened": "An article argues that the Socratic method can help students think more deeply. AI can answer questions, but may struggle to pose the right questions or reveal students’ gaps in understanding. The piece suggests teachers should use AI to provoke inquiry, not replace human guidance.",
+        "why_it_matters": "If true, AI could stretch learning by prompting students to connect ideas and identify what they don’t know. Yet teachers must guard against overreliance and preserve the value of human judgment.",
+        "body_paragraphs": [
+          "The article frames Socrates and Plato as a model for teaching with AI. It notes that AI can answer many questions, yet the learner often grows more through asking the right questions and by recognizing what remains unknown.",
+          "It argues that the hardest part of learning is identifying what you don’t know. AI can help reveal gaps, but it cannot replace the mind’s own inquiry and the teacher’s guidance, especially in complex or creative tasks."
+        ],
+        "claim_status": "analysis",
+        "limitation": ""
+      },
+      "after": {
+        "for_humans": "The author says students need to work out what they do not understand before asking AI for answers.",
+        "for_ai": "The author says AI can answer questions but cannot do the learner's own thinking for them.",
+        "headline": "Students need to find their own questions before asking AI, author argues",
+        "deck": "An education essay argues that students must first recognise what they do not understand, rather than ask AI for quick answers.",
+        "what_happened": "An author draws on Socrates, who taught through questions, to examine learning with AI. The essay argues that getting a quick answer can prevent students from working out what they do not understand.",
+        "why_it_matters": "The author proposes assessing students’ own questions and classroom discussions. This is an argument about teaching, rather than a test of an AI learning tool.",
+        "body_paragraphs": [
+          "In Plato’s dialogues, Socrates helps people discover gaps in what they thought they knew. The author argues that recognising such a gap is part of learning, and AI cannot do that personal work for a student.",
+          "The essay suggests giving students time to question their own understanding before using AI. It also says direct teaching and practical demonstrations remain necessary for many skills."
+        ],
+        "claim_status": "opinion",
+        "limitation": "An education essay proposing a teaching approach; it reports no test of learning outcomes."
+      }
+    },
+    {
+      "key": "event:d4c946ea-42a9-4333-b838-3882a6309390",
+      "event_id": "d4c946ea-42a9-4333-b838-3882a6309390",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.beijing.gov.cn/fuwu/lqfw/gggs/202611/t20261108_4937273.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "d9391af73f8a8a4163d1f7a4eb6feea2": "e9afad2685d3b902edb00727333a817cec68c219eab8e928a790ee8b8bbfa8b8"
+      },
+      "before": {
+        "for_humans": "AI helps people work faster and decide better in real settings like factories and clinics.",
+        "for_ai": "",
+        "headline": "International Giants Claim AI Gains at CIIE, but Limits and Governance Remain"
+      },
+      "after": {
+        "for_humans": "Companies at the fair say AI can help factory staff find defects and help doctors read scans.",
+        "for_ai": "Companies are putting AI into machines and selling new services. Their claims do not show how well every product works.",
+        "headline": "Companies show AI tools for factories and hospitals at China fair"
+      }
+    },
+    {
+      "key": "event:b4a060dc-8380-4332-a8d2-0fa2b168edd2",
+      "event_id": "b4a060dc-8380-4332-a8d2-0fa2b168edd2",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://defense.info/video-of-the-week/data-precedes-artificial-intelligence"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "02ad683e51d49231f42dc0d7f91909dd": "062cd70b7e5f65c4c58826d777ed94a3a74e75901913808441696324f1deb13f"
+      },
+      "before": {
+        "for_humans": "Know that AI works best when the data and the system around it are solid.",
+        "for_ai": "AI effectiveness depends on data quality and an able enterprise to act on results.",
+        "headline": "Data Comes Before Artificial Intelligence, Experts Say"
+      },
+      "after": {
+        "for_humans": "The author says maintenance teams need accurate records and a way to act on them before buying AI.",
+        "for_ai": "The author argues that AI can repeat mistakes faster when it works from poor records.",
+        "headline": "Good records must come before AI in aircraft maintenance, author argues"
+      }
+    },
+    {
+      "key": "event:a818d496-f28c-4fd2-9822-18b44ac61b76",
+      "event_id": "a818d496-f28c-4fd2-9822-18b44ac61b76",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/20261108/51e576edf1174503b7dde466ce4e1b60/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "c33982ef8fbddac0cc148770482f0630": "c2fae4a41e88f4f83e8f8ec6aa1e61f9cc7a23f1392618e5adeb948e21d49f67"
+      },
+      "before": {
+        "for_humans": "AI helps people participate in design tasks with support.",
+        "for_ai": "AI serves as a productive tool that expands human capabilities in design and validation.",
+        "headline": "Frontline AI at China’s Import Fair: Global Collaboration, Local Growth, Mixed Gains",
+        "limitation": "Evidence is drawn from trade fair exhibits and booth descriptions; results may not generalize beyond these showcased demos."
+      },
+      "after": {
+        "for_humans": "Xinhua describes a tool that lets people without specialist training help plan a warehouse before it is built.",
+        "for_ai": "Companies are testing AI in factories, medical devices and robots, and working with local teams to develop products.",
+        "headline": "China trade fair shows AI tools being tested in everyday work",
+        "limitation": "The report describes trade-fair demonstrations and company claims. It does not test how well all the products work in everyday use."
+      }
+    },
+    {
+      "key": "event:64f31a22-822c-4524-bf42-cd52bcc9580c",
+      "event_id": "64f31a22-822c-4524-bf42-cd52bcc9580c",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://lecourrier.vn/lintelligence-artificielle-ouvre-de-nouvelles-perspectives-au-cinema-vietnamien/1359009.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "4f584c50ca623d3e798ebefbcc5b0cb0": "0631a99791cd7aa1b1dfe1199723db30f7f666b752b87ab1d8a859047d107ab5"
+      },
+      "before": {
+        "for_humans": "People gain new capabilities and opportunities in filmmaking through AI-assisted tools.",
+        "for_ai": "AI can lower costs and speed up work, but humans still guide and own final works.",
+        "headline": "Vietnamese cinema gains from AI, Lecourrier notes, with limits and responsibilities",
+        "limitation": "The article is based on a single source and describes reported usage; not a broad, systematic survey."
+      },
+      "after": {
+        "for_humans": "Film experts say AI can help small-budget teams try visual ideas, but creators remain responsible for the finished film.",
+        "for_ai": "The article describes AI making film images and effects. Experts say these uses are still at an early stage.",
+        "headline": "Vietnamese filmmakers try AI while debating costs and creative responsibility",
+        "limitation": "The article describes film projects and quotes experts. It does not measure effects across the whole film industry."
+      }
+    },
+    {
+      "key": "event:542e3c89-8ff0-4db5-8976-93960a906859",
+      "event_id": "542e3c89-8ff0-4db5-8976-93960a906859",
+      "reason": "Owner requested plain language, a complete source-supported brief where available, no internal-status badge, and the limits note at the end.",
+      "source_urls": [
+        "http://paper.people.com.cn/rmrb/pc/content/202611/08/content_30190009.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "da5edf35d923b7f493bc42fcb6a6ab23": "38cac33050ae89045ae289b56819bebdc5dac73a0296bc0213dc8b579ae9b805"
+      },
+      "before": {
+        "for_humans": "no explicit human-side outcome described",
+        "for_ai": "no explicit AI-side outcome described"
+      },
+      "after": {
+        "for_humans": "Participants called for dialogue, but the report does not describe a specific change in people’s lives.",
+        "for_ai": "China’s ambassador said China was willing to expand AI cooperation with Europe. No joint AI project was announced in the report.",
+        "summary_basis": "AIEO summary",
+        "headline": "China–Europe forum calls for dialogue and cooperation on AI",
+        "deck": "Officials, business leaders and academics met in Brussels to discuss relations between China and Europe, including work on AI.",
+        "what_happened": "The China–Europe Forum took place in Brussels. Participants called for dialogue, ways to manage disagreements and closer cooperation on trade and AI.",
+        "why_it_matters": "The report describes a call for China and Europe to work together on AI and its rules. It does not announce a specific joint project.",
+        "body_paragraphs": [
+          "Cai Run, who heads China’s mission to the EU, said China was willing to expand exchanges on AI. He called for dialogue to address trade disagreements and for both sides to respect each other’s main concerns."
+        ],
+        "limitation": "A short report on the meeting. It describes proposals, but gives no details of joint AI projects or their results.",
+        "has_editorial": true,
+        "claim_status": "reporting"
+      }
+    },
+    {
+      "key": "event:4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8",
+      "event_id": "4b12475d-5fc8-45f8-b635-6fa8d1ef4ae8",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://ch.zonebourse.com/actualite-bourse/la-banque-de-reserve-da-australie-estime-que-la-intelligence-artificielle-na-a-pas-encore-stimule-ce785fd2d081f52d"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "e18ad621d49f2b1da6198ebef75ca460": "5da85ad41446530955827d6cd31a2610c92168c7358e2f5d9c45ad338ac595cc"
+      },
+      "before": {
+        "for_humans": "People are watching AI’s real effect on jobs and prices with caution.",
+        "for_ai": "The economy’s AI impact is uncertain and evolving; no guaranteed gains.",
+        "headline": "Australian Reserve Bank Says AI Has Not Yet Raised Productivity or Cut Jobs",
+        "limitation": "Evidence is from a single central bank briefing summarized by a news outlet; scope is written-source reporting and does not establish causation."
+      },
+      "after": {
+        "for_humans": "An Australian central banker says evidence of broad job losses or big gains in work output remains limited.",
+        "for_ai": "She warns that AI investments could lose value if the expected returns do not arrive.",
+        "headline": "Australian central banker sees limited evidence of broad AI job losses",
+        "limitation": "The article reports one central banker’s assessment. Her warnings about future prices and investment are predictions."
+      }
+    },
+    {
+      "key": "event:360e30e5-080b-46ff-a4ad-6d3491d5b365",
+      "event_id": "360e30e5-080b-46ff-a4ad-6d3491d5b365",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.emjreviews.com/rheumatology/news/acr-2026-artificial-intelligence-enhances-ultrasound-and-decisions"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "88593d6bddb046e58ac1fc20671de641": "40358caab6426ab31589a9ba2336c8b69d234bd48d5f55947434d610e3145947"
+      },
+      "before": {
+        "for_humans": "AI can assist doctors; humans make final clinical decisions.",
+        "for_ai": "The report describes AI assisting ultrasound interpretation, while clinicians must check outputs for errors and bias.",
+        "headline": "ACR 2026: AI boosts ultrasound in rheumatology with needed clinician oversight",
+        "limitation": "Evidence notes need for extensive validation across centers and equipment before daily deployment."
+      },
+      "after": {
+        "for_humans": "AI may help doctors read joint scans, but doctors still need to check its answers.",
+        "for_ai": "The report describes scan-reading tools and chatbots. Some chatbots gave wrong or outdated medical advice.",
+        "headline": "AI joint scans show promise, but doctors still need to check",
+        "limitation": "The report says the scan-reading tool needs more tests across hospitals, patient groups and equipment before routine use."
+      }
+    },
+    {
+      "key": "event:02fa8350-ffe4-4622-bff6-3889ac3c987a",
+      "event_id": "02fa8350-ffe4-4622-bff6-3889ac3c987a",
+      "reason": "Owner requested plain language, a complete source-supported brief where available, no internal-status badge, and the limits note at the end.",
+      "source_urls": [
+        "https://www.news.cn/20261108/93b6f5cacb2a4ae98ee09dadb9387ee2/c.html"
+      ],
+      "reading_scope": "complete_publisher_infographic",
+      "retained_source_sha256": {
+        "5c89dfa9c09bc60a740a7eac4a349d17": "5bace8a2592e88cdef118ad1e1c2d2eb78abee67693032196ec1902a2a00563b"
+      },
+      "before": {
+        "for_humans": "Not enough evidence of human outcomes; article describes AI+media development",
+        "for_ai": "Article indicates AI-enabled media development and expansion",
+        "has_editorial": false,
+        "summary_basis": "Publisher headline",
+        "what_happened": "",
+        "why_it_matters": "",
+        "body_paragraphs": [],
+        "deck": "Reporting from 新华网. Open the source for the article.",
+        "limitation": "",
+        "evidence_complete": true,
+        "human_direction": "none",
+        "ai_direction": "gain",
+        "human_label": "No direction stated",
+        "ai_label": "Benefits reported"
+      },
+      "after": {
+        "for_humans": "Xinhua says AI can help journalists check more material and answer readers’ questions. It also stresses the value of original work by people.",
+        "for_ai": "The infographic describes wider AI use in news production and search. It says good training material remains important as these tools develop.",
+        "has_editorial": true,
+        "summary_basis": "AIEO summary",
+        "what_happened": "A Xinhua infographic describes growing AI use in newsrooms. It says tools now help compare documents and sources, prepare content and answer questions using published reporting.",
+        "why_it_matters": "Xinhua argues that AI could help journalists check more material and offer readers more useful answers. It also says AI still depends on high-quality original work by people.",
+        "body_paragraphs": [
+          "The infographic discusses wider access through shared AI models, as well as new ways for news organisations to organise and license their archives. These are Xinhua’s account of industry trends and opportunities."
+        ],
+        "deck": "The infographic says AI is spreading from single tasks such as translation to document checks, news production and answering readers’ questions.",
+        "limitation": "The complete infographic was reviewed. It describes trends and examples, rather than testing effects across all newsrooms.",
+        "evidence_complete": true,
+        "human_direction": "gain",
+        "ai_direction": "gain",
+        "human_label": "Benefits reported",
+        "ai_label": "Benefits reported",
+        "headline": "Xinhua infographic describes AI changing newsroom work and access to news",
+        "claim_status": "analysis"
+      },
+      "recovered_sources": [
+        {
+          "source_url": "https://www.news.cn/20261108/93b6f5cacb2a4ae98ee09dadb9387ee2/202611080905d63497904413b7ea2ce5e48ad022_XxjdzbC000036_20261108_CBMFN0A001.jpg",
+          "asset_sha256": "fbac55dc059c9782da562a2a6b03fd9e23c3baaf8ffe96510032a1df924dd9c4",
+          "read_on": "2026-11-12",
+          "basis": "All nine consecutive image sections visually reviewed, covering the complete 970 by 14980 pixel infographic."
+        }
+      ]
+    },
+    {
+      "key": "event:fb5546e6-dab5-417f-a0aa-e0b6ede17dbc",
+      "event_id": "fb5546e6-dab5-417f-a0aa-e0b6ede17dbc",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits. Withhold the old summary because the full article is unavailable.",
+      "source_urls": [
+        "https://www.letemps.ch/data/intelligence-artificielle-le-graphique-vertigineux-qui-materialise-les-craintes-d-une-bulle"
+      ],
+      "reading_scope": "full_article_unavailable",
+      "retained_source_sha256": {
+        "34c6694d278a4fe9725aca54c20594bd": "90242a7351d863efdcc31527fc30a2d78c27f6ac5d063707d0d737970e7d953c"
+      },
+      "before": {
+        "for_humans": "This reads as a market snapshot, not a forecast.",
+        "for_ai": "AI-facing outcomes are not described beyond market context.",
+        "headline": "Open Chinese AI Models Dominate Token Surge; Major Players See Growth vs Revenue Gap, Le Temps Finds",
+        "has_editorial": true,
+        "summary_basis": "AIEO summary",
+        "what_happened": "In ten months, the token volume on OpenRouter multiplied by 30, and open Chinese models capture the majority of usage. A curve highlights AI growth but also a gap between volumes and revenues amid data-center and market concerns.",
+        "why_it_matters": "The piece frames market dynamics and platform mix, noting data-center economics and competition without claiming user-level effects or outcomes.",
+        "body_paragraphs": [
+          "The article notes a surge in token activity and that most-used models are open and Chinese. It also points to a mismatch between rising usage and revenue and discusses data-center dynamics and broader market signals rather than direct effects on people."
+        ],
+        "deck": "A chart shows token volume rising sharply while the link between activity and income becomes clearer, with Chinese open models leading usage.",
+        "limitation": "",
+        "evidence_complete": true,
+        "human_direction": "none",
+        "ai_direction": "none",
+        "human_label": "No direction stated",
+        "ai_label": "No direction stated"
+      },
+      "after": {
+        "for_humans": "The available preview does not show what the rise in AI use means for people's lives or jobs.",
+        "for_ai": "The preview reports rising AI use, but the full article was unavailable for this review.",
+        "headline": "AI usage chart raises fears of a financial bubble",
+        "has_editorial": false,
+        "summary_basis": "Publisher headline",
+        "what_happened": "",
+        "why_it_matters": "",
+        "body_paragraphs": [],
+        "deck": "The full article could not be reviewed. Open the publisher’s source for its content and access options.",
+        "limitation": "Only the publisher’s paywall preview was available. The full article was not reviewed.",
+        "evidence_complete": false,
+        "human_direction": "unresolved",
+        "ai_direction": "unresolved",
+        "human_label": "",
+        "ai_label": ""
+      }
+    },
+    {
+      "key": "event:d0c016e3-b4fe-4eef-83d0-bf3e239f7be9",
+      "event_id": "d0c016e3-b4fe-4eef-83d0-bf3e239f7be9",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/20261108/e33f42786b744709964a5b59feee2a9c/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "0f47f7882c48fa2a2d70a7231715bcbf": "2af98fb6ee749a1fd6da6e1954c296658d4850a1d4acbc986d00e9979e3317ad"
+      },
+      "before": {
+        "for_humans": "Plain-language look at how AI shows up in media and industry.",
+        "for_ai": "Describe public outcomes and human-facing applications as shown in the demonstrations.",
+        "headline": "Beijing Reveals AI 'New Brand Card' at World Media Summit, amid Global Excitement and Caution",
+        "limitation": "Based on written coverage from the World Media Summit and accompanying demonstrations; not a full survey or systematic study."
+      },
+      "after": {
+        "for_humans": "Visitors saw robots and factory equipment in use. Their praise is not a test of wider benefits for people.",
+        "for_ai": "Xinhua describes AI products on display and in factories, with visitors expressing interest in using similar tools.",
+        "headline": "Beijing shows robots and AI factory tools to visiting media",
+        "limitation": "A report on visits and demonstrations, with praise from participants. It does not test benefits across society."
+      }
+    },
+    {
+      "key": "event:b80680be-f966-4bf8-b33a-5cd69358d6d6",
+      "event_id": "b80680be-f966-4bf8-b33a-5cd69358d6d6",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://jacobin.com/2026/11/finland-ai-google-data-centers-regulation"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "5294180b9b71557a8bd41bf07117f3d2": "4f7b3bc06575b444b26d2539bc023a94362705f57c441e90b5c8ea66797c934c"
+      },
+      "before": {
+        "for_humans": "The evolving AI policy debate touches on jobs, taxes, and the environment for ordinary people.",
+        "for_ai": "AI policy discussions are framed as ethical and practical choices, not hype.",
+        "headline": "Left Alliance in Finland Claims It Can Lead Fair AI Policy Despite Controversy",
+        "limitation": "Evidence is drawn from a single source overview and quotations; the scope and interpretation depend on the original piece."
+      },
+      "after": {
+        "for_humans": "The author calls for AI projects to bring jobs and tax income without raising residents' power bills or damaging forests.",
+        "for_ai": "The article reports that authorities halted work on two Google data centres over environmental checks.",
+        "headline": "Finland debates jobs and forests as AI becomes an election issue",
+        "limitation": "A political argument using examples from Finland, rather than a test of an AI policy."
+      }
+    },
+    {
+      "key": "event:ac9c8648-38ea-4d48-b8c9-fd65b756a6d6",
+      "event_id": "ac9c8648-38ea-4d48-b8c9-fd65b756a6d6",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://kpmg.com/cn/zh/media/press-releases/2026/11/kpmg-global-ai-in-finance-2026-press-release.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "63122da464e311bc6ac981ee6e0f131b": "b340fc3049bb5db106848d672990ee4f03c997e76b19c56037f43069247abec1"
+      },
+      "before": {
+        "for_humans": "AI can help finance teams make better choices with governance in mind.",
+        "for_ai": "AI expands decision-support roles in finance; keep governance and risk in view.",
+        "headline": "KPMG Says AI Is a Decision-Making Engine, Not Just a Cost Lever, at 2026 Expo"
+      },
+      "after": {
+        "for_humans": "KPMG says finance teams need well-managed data and risk checks to make useful decisions with AI.",
+        "for_ai": "KPMG reports growing use of AI in finance. This article gives no test showing how much the tools improved decisions.",
+        "headline": "KPMG says useful AI in finance needs good data and risk checks"
+      }
+    },
+    {
+      "key": "event:5977c536-b34d-40a0-92be-46e4c51b1a63",
+      "event_id": "5977c536-b34d-40a0-92be-46e4c51b1a63",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://minneapolimedia.town.news/g/coon-rapids-mn/n/397519/saturday-morning-cranky-don-joe-artificial-intelligence-supposed-make"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "460617c4b54f40141579be733328377b": "3b57cf937e3a136b0c6a2d28d4d556571c1216b7b7eea1dfe423330bb58c9b04"
+      },
+      "before": {
+        "for_humans": "The fictional discussion contrasts possible time savings with worries about job loss and retraining; neither outcome is measured.",
+        "for_ai": "The column does not report a separate gain or downside for AI systems or their operators.",
+        "limitation": "A satirical opinion column with fictional characters; it provides no evidence of actual job losses or productivity gains."
+      },
+      "after": {
+        "for_humans": "The fictional characters discuss saving time, losing jobs and who would pay for retraining. The column does not report real job outcomes.",
+        "for_ai": "The fictional story gives no separate result for AI tools or the companies that run them.",
+        "limitation": "A satirical column with fictional characters. It does not report real job losses or gains in work output."
+      }
+    },
+    {
+      "key": "event:554a84e1-5ee2-4c42-bc55-1e9c72b149ec",
+      "event_id": "554a84e1-5ee2-4c42-bc55-1e9c72b149ec",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.ledevoir.com/interactif/2026-11-06/discours-trump-carney-ia/index.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "349725c235dfac548949c3044cd2671c": "74caea3a766dfb1eb1e1b95aba6e8c32f69b925e524b85bb88880a4212025125"
+      },
+      "before": {
+        "for_humans": "Ottawa wants a measured AI path that balances growth and protection.",
+        "for_ai": "The plans discuss wider AI use in public services, though the effects remain proposals rather than measured outcomes.",
+        "headline": "What Ottawa Thinks About Trump's Ambitious AI Plans, and Its Limits",
+        "limitation": "Evidence is a mix of commentary and policy statements with limited detail on implementation."
+      },
+      "after": {
+        "for_humans": "The article compares leaders' promises of better public services and jobs with different plans for keeping AI safe.",
+        "for_ai": "Both governments want wider AI use. These are policy goals, rather than proof that the tools have improved.",
+        "headline": "Le Devoir compares Canadian and US leaders’ promises about AI",
+        "limitation": "The article compares political promises and opinions. It gives little detail on how the plans would be carried out."
+      }
+    },
+    {
+      "key": "event:4ce57a9c-cfde-45cf-bc27-2a7936acd845",
+      "event_id": "4ce57a9c-cfde-45cf-bc27-2a7936acd845",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.lemonde.fr/en/opinion/article/2026/11/07/the-ai-bubble-faces-reality_6774319_23.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "463c84a79dac590d8d6d9d886d0ac32e": "715057cf5334112531ab11fbcd8e7f07c4c7ad364e511fdfac1f3481a5e0cf14"
+      },
+      "before": {
+        "for_humans": "The market pause shows AI's limits and the need for broad social buy-in.",
+        "for_ai": "Growth depends on society and policy, not just technology.",
+        "headline": "AI Bubble Faces Reality: Markets Faltered, but Growth Still Tied to Society (Le Monde)"
+      },
+      "after": {
+        "for_humans": "The editorial says AI projects must account for local water use, power bills and what residents are willing to accept.",
+        "for_ai": "The editorial warns that lost investor trust could mean less funding and delayed AI projects.",
+        "headline": "AI investment must account for costs to society, Le Monde argues"
+      }
+    },
+    {
+      "key": "event:3516d3aa-a46d-464a-ac5d-07970de54584",
+      "event_id": "3516d3aa-a46d-464a-ac5d-07970de54584",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/world/20261107/06211935e00248f2b3eeef224ebbb8d4/c.html",
+        "http://www.news.cn/sikepro/20261107/c99085d33f2842adadcc34c05041c002/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "ebca1db91fadd6beef4dc4f46d468055": "f0d4800be5cb59ad1aee0f8b81b9ccf2f9b04a6552e51a3d3bf281e14daa180f",
+        "f37a2b778eb96c1311d7b4b7136c13db": "0453805e12a5d33ade929f20cb7ac9c1a813f088728d8c485a227e8e8f36b364"
+      },
+      "before": {
+        "for_humans": "The report notes mixed opportunities and challenges for people.",
+        "for_ai": "AI in media brings higher efficiency and new risks.",
+        "headline": "Xinhua reports AI+Media blue book at World Media Summit highlights mixed gains and cautious, ethical path"
+      },
+      "after": {
+        "for_humans": "Xinhua's report says AI can speed newsroom work but also spread fakes and weaken links between readers and news outlets.",
+        "for_ai": "The report says AI gives newsrooms new tools and ways to reach readers, while raising new risks.",
+        "headline": "Xinhua report describes AI gains and risks for news organisations"
+      }
+    },
+    {
+      "key": "event:1dd8c701-0073-4e51-a6d0-1940fb420919",
+      "event_id": "1dd8c701-0073-4e51-a6d0-1940fb420919",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "501cf8a022b638c2a7011b9c5cecef5c": "9f7cfc5b163dee3479ba54ef9f89e623348b3cdd27e8caa72379e519656d9f1a"
+      },
+      "before": {
+        "for_humans": "AI can help people process data and make faster, more informed choices.",
+        "for_ai": "Teams describe AI tools supporting race analysis, while their effect on results remains unproven.",
+        "headline": "Is AI Already a Factor in Le Mans, According to Teams and Experts?",
+        "limitation": "Based on a single source with direct quotes; not a broad survey or independent study."
+      },
+      "after": {
+        "for_humans": "Toyota says AI helps staff write up meetings and analyse race data. Teams still make the decisions.",
+        "for_ai": "Teams describe using AI for race preparation and strategy. The article does not show that AI wins races.",
+        "headline": "Le Mans teams use AI for meetings, race data and strategy",
+        "limitation": "Based on team interviews. The article does not test whether AI improves race results."
+      }
+    },
+    {
+      "key": "event:fd4e1c83-0722-48b5-afaf-2515ec2fe6f4",
+      "event_id": "fd4e1c83-0722-48b5-afaf-2515ec2fe6f4",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.publicsenat.fr/actualites/politique/souverainete-et-emplois-quelle-est-la-feuille-de-route-du-gouvernement-en-matiere-dintelligence-artificielle"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "b7b9b03090586899b1dcb7b8c563401a": "f2c0d8980920f0ebe86c9b1bcd2c11254d25e74eea50c30b3cd55ab5e47358b5"
+      },
+      "before": {
+        "for_humans": "AI is framed as a tool for growth with careful job support.",
+        "for_ai": "AI deployment is framed around sovereign, domestic actors.",
+        "headline": "Sovereignty and Jobs: What the Government’s AI Roadmap Says and Its Limits"
+      },
+      "after": {
+        "for_humans": "The minister expects AI to improve work, while senators warn about job losses, especially for young workers.",
+        "for_ai": "France plans more public purchases of French and European AI tools and more data centres.",
+        "headline": "France backs local AI firms as senators question the effect on jobs"
+      }
+    },
+    {
+      "key": "event:f8fc8cc7-0458-4387-9b93-760ba82be471",
+      "event_id": "f8fc8cc7-0458-4387-9b93-760ba82be471",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/world/20261107/eb127fb7fb9e44e4a7bc9e850a19731b/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "6034d954e64a6e059c10551d192dcf65": "8d544e1bcdf532614c882431b84283e2874d0fe14ca631f47f66c93f44a3a787"
+      },
+      "before": {
+        "for_humans": "AI tools can help reporters, but reliable sources matter.",
+        "for_ai": "AI can aid verification and standardization, but human judgment remains essential.",
+        "headline": "Vivo and Partners Discuss AI Mobile Imaging, Standards at World Media Summit"
+      },
+      "after": {
+        "for_humans": "Speakers say phone tools can lighten reporters' workload, but reporters must still check where images and information came from.",
+        "for_ai": "The speakers call for ways to show an image's source and make AI use in news clearer.",
+        "headline": "Media forum discusses phone cameras, AI and how to verify images"
+      }
+    },
+    {
+      "key": "event:f8af0f48-8b9e-41f5-b4f0-7ed5b48313d1",
+      "event_id": "f8af0f48-8b9e-41f5-b4f0-7ed5b48313d1",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits. Withhold the old summary because the full article is unavailable.",
+      "source_urls": [
+        "https://www.cac.gov.cn/2026-11/06/c_1795720752665088.htm"
+      ],
+      "reading_scope": "full_article_unavailable",
+      "retained_source_sha256": {
+        "9939915e61d1f24754d1c43a0ab062e7": "d3a2f26cfcaab72717c805e5d3dcc1433b207b8547fa2feed70441716022fab6"
+      },
+      "before": {
+        "for_humans": "AI can help many jobs become easier, but results depend on how it’s used.",
+        "for_ai": "Shows mixed outcomes; the value comes from how people implement AI in real work.",
+        "headline": "China's AI Push Promises Gains Across Industries, but Limits Remain",
+        "has_editorial": true,
+        "summary_basis": "AIEO summary",
+        "what_happened": "The article reports that AI and related technologies are being used to boost performance across multiple industries. It emphasizes that AI’s outputs are seen as enabling broader capabilities rather than offering universal results.",
+        "why_it_matters": "The piece highlights that AI adoption is framed as a driver of efficiency and innovation, but it also signals that the benefits may vary by context and are not guaranteed for all scenarios.",
+        "body_paragraphs": [
+          "The report describes AI as an active force that expands what industries can do. It notes that the technology can drive new capabilities by automating tasks and providing smarter tools for workers. Yet the article does not claim a guaranteed win for every setting or situation.",
+          "In short, the coverage presents AI as a tool with potential and caveats. It stresses that gains are not universal and depend on how institutions and people apply AI solutions."
+        ],
+        "deck": "A Chinese briefing frames AI as an engine that expands what many sectors can do, while noting no universal promises.",
+        "limitation": "",
+        "evidence_complete": true,
+        "human_direction": "gain",
+        "ai_direction": "mixed",
+        "human_label": "Benefits reported",
+        "ai_label": "Benefits and downsides"
+      },
+      "after": {
+        "for_humans": "The saved page contains menus and a headline, so effects on people could not be checked.",
+        "for_ai": "The saved page contains no readable article explaining effects on AI tools or companies.",
+        "headline": "China’s AI plan aims to reach many industries",
+        "has_editorial": false,
+        "summary_basis": "Publisher headline",
+        "what_happened": "",
+        "why_it_matters": "",
+        "body_paragraphs": [],
+        "deck": "The full article could not be reviewed. Open the publisher’s source for its content and access options.",
+        "limitation": "The saved page contains menus and a headline, rather than readable article text.",
+        "evidence_complete": false,
+        "human_direction": "unresolved",
+        "ai_direction": "unresolved",
+        "human_label": "",
+        "ai_label": ""
+      }
+    },
+    {
+      "key": "event:ce98728a-14dc-4ae0-8b0f-ac2281c421a1",
+      "event_id": "ce98728a-14dc-4ae0-8b0f-ac2281c421a1",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.mediapost.com/publications/article/419276/in-googles-america-children-have-a-new-ai-policy.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "c3920b387e32bb485dc6af9400588afc": "713a44be7c44a4216a19e19394878382b018358bf3ce641eb77461218cd09634"
+      },
+      "before": {
+        "for_humans": "",
+        "for_ai": "",
+        "headline": "In Google's America, Students Face a New AI Policy (11/06/2026)"
+      },
+      "after": {
+        "for_humans": "The columnist says schools must accept AI in Google Search or lose student access, and worries this could weaken independent thinking.",
+        "for_ai": "The reported policy ties student access to Search to its built-in AI features. The column questions Google's growing influence.",
+        "headline": "Columnist questions Google’s choice for schools: AI Search or no Search"
+      }
+    },
+    {
+      "key": "event:ca290b7f-0744-4685-b395-52f1ea229518",
+      "event_id": "ca290b7f-0744-4685-b395-52f1ea229518",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://contrepoints.org/intelligence-artificielle-wall-street-sait-que-la-regulation-est-un-risque"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "ef1b87c435edd67a9c042c5cd195b93b": "1c7d322a517db810022ae34a0a1bf554a13753f0067aad4892af69aa51f9ff2b"
+      },
+      "before": {
+        "for_humans": "The article points to mixed effects of AI changes on jobs and life.",
+        "for_ai": "Discusses regulatory and market risks while noting productivity gains from AI.",
+        "headline": "AI Regulation Is a Market Risk, Contrepoints Warns as Tech Stocks Slide",
+        "limitation": "Based on a single source; no broad surveys or causation claims beyond reported market moves and policy proposals."
+      },
+      "after": {
+        "for_humans": "The writer predicts both higher living standards and job cuts. These are expectations, rather than measured effects.",
+        "for_ai": "The writer links falling AI share prices to fears of tighter rules and limits on new data centres.",
+        "headline": "AI shares fall as investors fear tighter rules, Contrepoints reports",
+        "limitation": "The writer links share-price falls to fears about new rules. Predictions about future work remain opinions."
+      }
+    },
+    {
+      "key": "event:c5acfddc-5dca-42e6-8d3e-9f0395e968e7",
+      "event_id": "c5acfddc-5dca-42e6-8d3e-9f0395e968e7",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://journallesoir.ca/2026/11/06/lintelligence-artificielle-transformera-t-elle-leconomie"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "80358e576c9b1223f591ad1f50d127a8": "8b099e737d5e9886e89b38ca9a164ac32a5be9d88c3b9dd4a723fdb045c417aa"
+      },
+      "before": {
+        "for_humans": "AI can boost productivity, but gains depend on how people and firms use it.",
+        "for_ai": "Focus on human productivity; expect mixed outcomes depending on adoption and context.",
+        "headline": "AI as Productivity Driver: Which Firms Benefit and Where Limits Appear",
+        "limitation": "The evidence is from a single article and may not generalize beyond it."
+      },
+      "after": {
+        "for_humans": "The author argues that AI can help staff finish some tasks faster, but investors cannot assume which firms will profit.",
+        "for_ai": "The author says firms that use AI well could gain more than the companies that make it.",
+        "headline": "Firms using AI could gain more than its makers, author argues",
+        "limitation": "An investment opinion article. Its predictions do not establish which companies will profit from AI."
+      }
+    },
+    {
+      "key": "event:c0cfe7a3-869a-4f2c-a608-0bb8dfade775",
+      "event_id": "c0cfe7a3-869a-4f2c-a608-0bb8dfade775",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/talking/20261106/1008b854ab5647a9a5fe7637f49ff63d/c.html"
+      ],
+      "reading_scope": "interview_introduction",
+      "retained_source_sha256": {
+        "9cf171e2ab80e40e37dacb0cd52ac621": "bb2dc2c9183e1b90ca63cd117c861da3ca721557b2320c3d9fc32a5d5949dcb2"
+      },
+      "before": {
+        "for_humans": "AI growth takes time and teamwork.",
+        "for_ai": "The speech describes ambitions for AI development, without a demonstrated outcome for systems or operators.",
+        "headline": "Liu Qingfeng: AI is a long race that needs steady, collective effort",
+        "deck": "A top executive stresses ongoing work in full-stack autonomy and cloud integration.",
+        "what_happened": "In an interview at the 2026 iFlytek Global 1024 Developers Festival, Liu Qingfeng described AI as a long-term journey that requires focused teamwork. He pointed to topics like full-stack autonomy, cloud-integrated development, and large-model applications as front-line issues. The remarks come from a新华网 interview released during the event.",
+        "why_it_matters": "The remarks highlight that AI progress is gradual and collaborative, not a quick fix. They stress ongoing effort and practical topics over hype.",
+        "body_paragraphs": [
+          "Liu Qingfeng spoke about AI as a long-distance race. He said the industry has grown quickly in China and now has important strengths. He named front-line topics like end-to-end control, cloud-based work, and large-model development as areas to watch.",
+          "The interview frames AI work as steady, sustained effort rather than a sprint. It emphasizes practical topics and underlines that progress comes from collaboration across teams and fields."
+        ],
+        "limitation": "Evidence comes from a single interview excerpt and a news agency report; scope is a written source."
+      },
+      "after": {
+        "for_humans": "The short interview notice gives no result showing how AI development affected people's lives.",
+        "for_ai": "The notice names topics for AI development, but gives no result showing that the tools have improved.",
+        "headline": "Xinhua introduces an interview about the future of AI development",
+        "deck": "A short Xinhua notice introduces an interview with iFlytek’s chair about AI development.",
+        "what_happened": "Xinhua introduces an interview with iFlytek chair Liu Qingfeng about developing AI models and combining online and local computing. The saved notice does not include the interview’s answers.",
+        "why_it_matters": "The notice identifies topics in AI development, rather than reporting a completed technical result.",
+        "body_paragraphs": [
+          "The page announces a discussion of AI development and new uses. Its text does not explain specific changes to the tools or their effect on people."
+        ],
+        "limitation": "The supplied text is an interview introduction, rather than the full interview."
+      }
+    },
+    {
+      "key": "event:c03b4a47-ff96-4da7-860e-23ccbae8fa0d",
+      "event_id": "c03b4a47-ff96-4da7-860e-23ccbae8fa0d",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "a7b0f3ff5121ff8bca6b39489d54808c": "0e0dcfc8d0d761b2b151fa267063a243696438d1230bc931a65c33c9eef463cd"
+      },
+      "before": {
+        "for_humans": "AI can help people compare and understand political programs without replacing judgment.",
+        "for_ai": "AI can organize information and show trade-offs, but cannot decide political truth.",
+        "headline": "Sciences Po Researchers Warn AI Will Shape 2027 Election, But With Limits",
+        "limitation": "Evidence is drawn from a single note and its described experiments; findings are exploratory and not validated as generalizable or causal."
+      },
+      "after": {
+        "for_humans": "Researchers say AI could help voters compare candidates' plans, but its answers can distort those plans and need checking.",
+        "for_ai": "The researchers describe AI helping draft and compare political plans, without showing that it improves election decisions.",
+        "headline": "Researchers explore how AI could help voters compare election plans",
+        "limitation": "The examples explore possible uses. They do not show whether AI will improve voters’ choices in the 2027 election."
+      }
+    },
+    {
+      "key": "event:abc3e322-ff0e-4bda-8007-eea965a10fcc",
+      "event_id": "abc3e322-ff0e-4bda-8007-eea965a10fcc",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.solutions-numeriques.com/avis-dexpert-a-lere-de-lintelligence-artificielle-5-leviers-pragmatiques-pour-renforcer-la-cyber-resilience-des-pme"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "d15f6de25ff48bf19639dbc40e4c045d": "ed59cc4c2652b62108cf3e16f03d3758522a17f105758beb1cdc06e7bc1ade2f"
+      },
+      "before": {
+        "for_humans": "This explains practical steps for small businesses to stay safe with AI.",
+        "for_ai": "The advice describes governance steps for small firms, without a separate outcome for AI systems or providers.",
+        "headline": "Expert Opinion: SMEs Can Build Cyber Resilience with 5 Simple AI-Linked Levers"
+      },
+      "after": {
+        "for_humans": "The expert advises small firms to train staff, test backups and set clear rules for what data can go into AI tools.",
+        "for_ai": "The advice gives no separate result for AI tools or the companies that run them.",
+        "headline": "Expert offers small firms five steps to protect data while using AI"
+      }
+    },
+    {
+      "key": "event:9549a202-980f-47f1-aa80-9ddd4dc740c4",
+      "event_id": "9549a202-980f-47f1-aa80-9ddd4dc740c4",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.latribune.ca/chroniques/mickael-bergeron/2026/11/06/comment-lintelligence-artificielle-menace-linformation-OY4O6XZ6SZCKJN2D5OM4WGCY24"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "2903c7c247eb918620204f9d9ada2111": "833cb833b56555fe077dbafd03dc3a7b5de684f5b476e9e258045695bd664527"
+      },
+      "before": {
+        "for_humans": "AI changes how we find and trust information; stay critical of summaries and sources.",
+        "for_ai": "The commentary describes AI summaries and generated content spreading through information services, potentially shifting audiences from publishers.",
+        "headline": "AI Threatens Information: La Tribune’s View on Limits and Risks",
+        "limitation": "Evidence comes from a single source and reflects commentary within that piece; do not generalize beyond the written article."
+      },
+      "after": {
+        "for_humans": "The columnist warns that AI summaries take readers and income from news outlets, while false content makes reliable news harder to find.",
+        "for_ai": "The columnist argues that AI services reuse publishers' work and attract their readers, with some companies earning money from false content.",
+        "headline": "Columnist warns AI summaries take readers and income from news outlets",
+        "limitation": "A columnist’s argument about journalism and AI, rather than an independent test of every claim made."
+      }
+    },
+    {
+      "key": "event:8520c0a7-7500-49b3-918d-ed09feb6f220",
+      "event_id": "8520c0a7-7500-49b3-918d-ed09feb6f220",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.paris.fr/evenements/conference-animation-et-ia-generative-regard-d-un-createur-126610"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "40080099f7891fcdff1ac77a2ca8f714": "f4ef138955cbba23fbc3541f5e871cedfb5f778ce2273d495fc8c62b1f3119b8"
+      },
+      "before": {
+        "for_humans": "The notice describes possible new creative choices and concern about losing learning through trial and error; neither effect is measured.",
+        "for_ai": "The notice says generative AI can produce visual ideas at scale, without measuring a result for the systems or their operators.",
+        "limitation": "This is an announcement for a future conference on 14 January 2027, not evidence from a completed event or study."
+      },
+      "after": {
+        "for_humans": "The speaker asks whether making images quickly could reduce artists' chances to learn through practice. The talk has not happened yet.",
+        "for_ai": "The event notice says AI can create many visual ideas. It gives no test of how well those tools work.",
+        "limitation": "An announcement for a conference on 14 January 2027. The event has not yet taken place."
+      }
+    },
+    {
+      "key": "event:7f5ca246-99a6-4209-8914-478d532629f8",
+      "event_id": "7f5ca246-99a6-4209-8914-478d532629f8",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.maroc-hebdo.com/article/wasl-foundation-lance-un-programme-dinitiation-a-lintelligence-artificielle-et-a-la-robotique-destine-aux-enfants"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "8d89f34995502f6efdb83bbc1df128df": "4b171c4f80adb5c6f9847684f75915629199f4a306a30b3640a7dec3cc2b028a"
+      },
+      "before": {
+        "for_humans": "The foundation says the new program will give children access to introductory AI and robotics learning; long-term benefits have not been measured.",
+        "for_ai": "The report describes children learning about AI and robotics, without a distinct outcome for AI systems or their operators.",
+        "headline": "WASL Foundation launches AI and robotics program for children with monthly outreach in Morocco"
+      },
+      "after": {
+        "for_humans": "The foundation has started hands-on AI and robotics workshops for children in Morocco, including children from disadvantaged backgrounds.",
+        "for_ai": "The report gives no separate result for AI tools or the companies that run them.",
+        "headline": "WASL starts AI and robotics workshops for children in Morocco"
+      }
+    },
+    {
+      "key": "event:686ec330-d8b3-4c52-8c33-343a63e7c840",
+      "event_id": "686ec330-d8b3-4c52-8c33-343a63e7c840",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://astanatimes.com/2026/11/kazakhstan-hosts-aqaba-process-summit-on-artificial-intelligence-security"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "205322762df3b2b4b230c3aa163d6532": "4062d0d0a67c9108d71451323ec145e260365dd093040e3cb425eb7149721267"
+      },
+      "before": {
+        "for_humans": "The meeting focused on talking about AI security and shared plans.",
+        "for_ai": "No concrete AI outcomes were described in the report.",
+        "headline": "Kazakhstan Hosts Aqaba Process Summit on AI Security, Highlighting Regional Dialogue",
+        "limitation": "no explicit AI outcomes described"
+      },
+      "after": {
+        "for_humans": "Leaders met to discuss AI security. The report gives no result showing how the talks affected people's lives.",
+        "for_ai": "The report gives no result showing that the meeting changed AI tools or the companies that run them.",
+        "headline": "Regional leaders meet in Kazakhstan to discuss AI security",
+        "limitation": "The report names participants and the purpose of the meeting. It does not describe decisions or results from the talks."
+      }
+    },
+    {
+      "key": "event:5b24ae60-bccc-48c8-ba54-4996bb4b3f89",
+      "event_id": "5b24ae60-bccc-48c8-ba54-4996bb4b3f89",
+      "reason": "Owner requested plain language, a complete source-supported brief where available, no internal-status badge, and the limits note at the end.",
+      "source_urls": [
+        "https://www.eurojuris.fr/articles/redaction-requete-avec-ia-recours-abusif-amende-43825.htm"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "c303465f1148a406fb76b1cba03462ee": "4819dbd48d46bfc90bc1c379a09955216e55842e30b28c13d16a22a55b2f7453"
+      },
+      "before": {
+        "for_humans": "AI can ease drafting, but inadequate or abusive filings can be rejected and fined; the article does not measure a net benefit.",
+        "for_ai": "The analysis does not report a separate outcome for AI systems or their operators."
+      },
+      "after": {
+        "for_humans": "The legal article says people remain responsible for court papers written with AI and can face fines for abusive filings.",
+        "for_ai": "The article gives no separate result for AI tools or the companies that run them.",
+        "summary_basis": "AIEO summary",
+        "has_editorial": true,
+        "headline": "French legal article explains fines for abusive court papers drafted with AI",
+        "deck": "Eurojuris describes French courts fining people for flawed or abusive filings, while explaining that using AI is not itself banned.",
+        "what_happened": "A Eurojuris legal article describes several French court decisions involving papers prepared with AI. It says courts fined people for serious flaws or abusive claims, rather than for using AI alone.",
+        "why_it_matters": "People and lawyers remain responsible for checking facts, legal sources and whether a claim can properly be brought to court.",
+        "body_paragraphs": [
+          "The examples include invented court decisions, irrelevant arguments and large bundles of documents that did not support the requested action. The author says AI can help with drafting but cannot replace a careful review of the case."
+        ],
+        "limitation": "A legal article citing court decisions. The judgments themselves were not independently reviewed for this brief.",
+        "claim_status": "analysis"
+      }
+    },
+    {
+      "key": "event:5a9e9170-58db-4bd8-a020-8d6bafa48def",
+      "event_id": "5a9e9170-58db-4bd8-a020-8d6bafa48def",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.air-journal.fr/2026-11-06-biometrie-et-intelligence-artificielle-liata-mesure-les-nouvelles-habitudes-des-passagers-5278578.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "bb5f2ef7834aca37e359255b176ea484": "af3cfb79d5dc79416e6cf72f56fa4157f5a65c390c8a6a9cb934418bcbf133e2"
+      },
+      "before": {
+        "for_humans": "People may see faster checks and smarter travel help, but privacy worries stay.",
+        "for_ai": "AI tools help plan trips and speed up airport processes, with mixed reception.",
+        "headline": "IATA study finds biometrics and AI changing passenger habits, with ongoing data concerns",
+        "limitation": "The article is based on a single industry survey of over 10,000 participants across 200+ countries."
+      },
+      "after": {
+        "for_humans": "Surveyed travellers use AI to plan trips and show interest in faster airport checks, but also worry about their personal data.",
+        "for_ai": "The survey records travellers using AI. It does not test whether the tools give better answers or lead to more bookings.",
+        "headline": "Air passenger survey finds more AI use and worries about personal data",
+        "limitation": "The survey records what respondents say they use or want. It does not test whether AI leads to better trips or more bookings."
+      }
+    },
+    {
+      "key": "event:59af5c44-a47a-422b-bcf4-0cf0d231f706",
+      "event_id": "59af5c44-a47a-422b-bcf4-0cf0d231f706",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.nasa.gov/what-is-super-intelligence"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "64496394e79ae853d592b074ed39ac37": "f69eb669c5f36504252e21f1962ff052ec344dba253e5c6dfd449d7d838b7155"
+      },
+      "before": {
+        "for_humans": "AI can aid thinking, but humans remain central to decisions.",
+        "for_ai": "AI provides analyses to inform choices while keeping human oversight important.",
+        "headline": "NASA's Super Intelligence: Broad Tools Aid Decisions, But No One-Size Fix"
+      },
+      "after": {
+        "for_humans": "NASA explains how AI can help people weigh options. This page does not report a new result for staff or the public.",
+        "for_ai": "NASA describes tools for finding patterns and making predictions. The new name does not show that these tools became more capable.",
+        "headline": "NASA explains its AI tools under the new name “super intelligence”"
+      }
+    },
+    {
+      "key": "event:4ee76cdf-87ba-4783-a509-edfd1d22a77a",
+      "event_id": "4ee76cdf-87ba-4783-a509-edfd1d22a77a",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.ledevoir.com/economie/1022894/ia-fait-vaciller-bourses-mondiales-apres-elections-mi-mandat"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "dcba1288653e2fb0773ac18b5a5c0434": "525f6f95ea3fc1486913f0a1a749665caf6896081b67c9b6e41b0bb4b1b59c55"
+      },
+      "before": {
+        "for_humans": "Le Devoir reports losses for stock investors amid concerns about AI regulation and slower technology spending; this does not establish a broader employment effect.",
+        "for_ai": "The report describes falling AI-related company valuations and concern about data-centre investment. It does not show a change in deployed AI system performance.",
+        "headline": "AI stocks fall after midterm elections, Le Devoir reports, with regulatory fears limiting AI buildout.",
+        "limitation": "Evidence comes from a single news article and quoted voices within that piece."
+      },
+      "after": {
+        "for_humans": "Le Devoir reports losses for people holding technology shares as investors worry about possible limits on AI expansion.",
+        "for_ai": "AI-related companies lost share value. Investors fear slower data-centre construction, rather than a change in how well AI works.",
+        "headline": "AI-related shares fall as investors fear limits on data centres",
+        "limitation": "A news report on share-price falls and investors’ concerns, rather than a test of AI tools."
+      }
+    },
+    {
+      "key": "event:45ad1e7a-6eca-4ff0-9cf4-cb3a8bd95f5d",
+      "event_id": "45ad1e7a-6eca-4ff0-9cf4-cb3a8bd95f5d",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/liangzi/20261106/6cbbb0fbea5248aebb553372a728bee7/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "4f5ae1b5d711c039440074bb2a3718e3": "341002ab41a01a3f739f0a541e388f24dc5d9fb4df0e33b9126745227073870f"
+      },
+      "before": {
+        "for_humans": "AI changes how some tasks are done and who does them.",
+        "for_ai": "Xinhua reports companies using AI for manufacturing design and inspection, including claimed time and cost savings. These are reported operating results, not independently verified system benchmarks.",
+        "headline": "China accelerates AI empowerment across industries, with mixed results and limits",
+        "limitation": "The evidence is drawn from regional examples and official reports; not a single nationwide result."
+      },
+      "after": {
+        "for_humans": "Companies tell Xinhua that AI cuts design time and helps inspect power lines without sending people into difficult terrain.",
+        "for_ai": "The report describes AI used in factories and inspections. The claimed savings and accuracy come from the organisations using it.",
+        "headline": "Chinese firms report faster design and inspections with AI tools",
+        "limitation": "The article uses local examples and claims from the organisations involved. It does not measure a single result for all of China."
+      }
+    },
+    {
+      "key": "event:38a9de29-2483-42ab-af1a-99fc74677bb5",
+      "event_id": "38a9de29-2483-42ab-af1a-99fc74677bb5",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://ici.radio-canada.ca/nouvelle/2298701/intelligence-artificielle-arts-graphisme-musique-peinture-acadie"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "2d61e22e6789c7367b5022fa34d86f9b": "845866b8bb32007275032f21bca91e23268699190897d72bd64fcc444befb5f4"
+      },
+      "before": {
+        "for_humans": "AI changes how artists work and what counts as original.",
+        "for_ai": "The report describes AI entering creative work, but does not quantify a separate benefit to AI providers or system performance.",
+        "headline": "Nova Scotia arts scene grapples with AI, say local artists and critics",
+        "limitation": "The evidence comes from a single regional report, with perspectives that are not a broad, representative survey."
+      },
+      "after": {
+        "for_humans": "Artists describe new ideas and less paperwork, but also worry about lost jobs, copied work and poor-quality content.",
+        "for_ai": "Artists are using AI to make images and handle paperwork. The report gives no measured benefit to AI companies.",
+        "headline": "Nova Scotia artists describe AI uses and worries about copied work",
+        "limitation": "These are the experiences and views of artists in one regional report, rather than a survey of all artists."
+      }
+    },
+    {
+      "key": "event:36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
+      "event_id": "36f8e3f3-e72e-4296-a4d7-7cdd75d76edc",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://eglise.catholique.fr/conference-des-eveques-de-france/cef/assemblees-plenieres/assemblee-eveques-france-novembre-2026/574181-intervention-pere-thierry-magnin-intelligence-artificielle"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "b76d9494fe6b68eeade00c9e61d264bc": "c6e223973e66cbd7490b476189b07c1c9dbed921901a23ef1a5e9b0c96e34138"
+      },
+      "before": {
+        "for_humans": "The message invites readers to value critical thinking and humane education in a tech-rich world.",
+        "for_ai": "The speaker discusses possible educational uses and risks of AI tools; these are arguments, not measured outcomes for AI systems or providers.",
+        "headline": "Fortifying the Inner Self in the AI Era: Educational Challenges, per Father Magnin",
+        "limitation": "The material is a single-perspective argument anchored in ecclesial discourse; it is not a broad empirical study and does not claim universal applicability."
+      },
+      "after": {
+        "for_humans": "Magnin argues that students need time to think, make mistakes and build relationships, rather than hand those tasks to AI.",
+        "for_ai": "The speech suggests ways to use AI in lessons. It gives no measured result for AI tools or companies.",
+        "headline": "Magnin argues AI lessons should protect thinking and human relationships",
+        "limitation": "An argument about education from a Catholic theologian. It does not test effects on students."
+      }
+    },
+    {
+      "key": "event:2e0e6de8-646b-4072-9939-7e8e19bf3fc4",
+      "event_id": "2e0e6de8-646b-4072-9939-7e8e19bf3fc4",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://vancouver.citynews.ca/2026/11/06/artificial-intelligence-health-care-concerns"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "c4e83120ffd7b24f93bc1878f7bd35f0": "a94b545b592ebb8cc8c8470e3150f01d55796e863cda79aa90746fb9c79c92ef"
+      },
+      "before": {
+        "for_humans": "AI can speed care, but privacy must be protected.",
+        "for_ai": "AI improves efficiency if privacy safeguards are in place.",
+        "headline": "Experts warn about AI in health care as officials call for stronger safeguards",
+        "limitation": "The evidence comes from a single news source and quotes from a limited set of practitioners; broader contexts are not included."
+      },
+      "after": {
+        "for_humans": "Doctors say AI saves time on records, but privacy experts want stronger protection for patients' personal information.",
+        "for_ai": "Doctors describe using AI to write reports and find patient records. The report does not test the tools' accuracy.",
+        "headline": "Doctors describe AI time savings as privacy experts call for stronger protection",
+        "limitation": "The article quotes health professionals and privacy advocates. It does not test the safety or accuracy of the tools discussed."
+      }
+    },
+    {
+      "key": "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f",
+      "event_id": "2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.bfmtv.com/tech/intelligence-artificielle/si-nous-n-utilisons-pas-l-ia-nous-serons-submerges-malgre-le-risque-de-plaintes-abusives-le-president-de-la-cour-europeenne-des-droits-de-l-homme-appelle-a-utiliser-l-intelligence-artificielle-pour-continuer-a-rendre-la-justice_AD-202611060360.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "bcfb99aba5332624e9f6f1c063b7a3ed": "7ea22fa760ad182e43bedaad8abb1dfe179b89e550ce9b2e6f42a038baae2e88"
+      },
+      "before": {
+        "for_humans": "Humans stay involved; AI assists, not replaces judgment.",
+        "for_ai": "AI aids processing while human oversight remains essential.",
+        "headline": "CEDH chief warns AI can speed justice but may overwhelm system and invite abusive claims",
+        "limitation": "The article relies on a single interview and quoted statements; the scope is a written source from one news outlet."
+      },
+      "after": {
+        "for_humans": "The court's president says AI could speed case handling, but could also make it easier to submit large numbers of false complaints.",
+        "for_ai": "The court uses search and translation tools and is considering further AI use. Judges will keep responsibility for decisions.",
+        "headline": "European court chief sees AI help and a risk of more false complaints",
+        "limitation": "An interview about the court’s work and plans. It does not test the wider effects of using AI in justice."
+      }
+    },
+    {
+      "key": "event:294e54fb-2c38-4baf-abf1-7e59cdefcb99",
+      "event_id": "294e54fb-2c38-4baf-abf1-7e59cdefcb99",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.bbc.com/zhongwen/articles/cqlyeen0z8x2o/simp"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "19c60f193d3db02a6d80845f65f94c25": "50a8880d64a63b5e2c90af6e23652ed37ced366d883177fc396406960c12588a"
+      },
+      "before": {
+        "for_humans": "This explains what happened and why it matters, in plain terms.",
+        "for_ai": "The BBC describes falling technology shares and uncertainty about AI investment and regulation; it does not report a measured change in AI system performance.",
+        "headline": "BBC reports: AI slowdown fears crash global tech stocks after US midterms; Korea halts trading",
+        "limitation": "Based on a single BBC article."
+      },
+      "after": {
+        "for_humans": "The BBC reports losses for people holding technology shares as investors worry about AI spending and possible new rules.",
+        "for_ai": "AI-related companies lost share value. Analysts warn that stricter data-centre approvals could delay projects and raise costs.",
+        "headline": "BBC reports falling tech shares amid fears about AI spending and rules",
+        "limitation": "The BBC reports market changes and analysts’ views. Future spending and project delays remain uncertain."
+      }
+    },
+    {
+      "key": "event:1a51238e-c53d-40da-9bfa-7baa49f69a97",
+      "event_id": "1a51238e-c53d-40da-9bfa-7baa49f69a97",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://infobref.com/chronique-bourse-octobre2026-2026-11"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "2c3833d8744c6c8b1283507039ae5c43": "d99fb21b9580d03192fa36516bf544201ac489bc978de8fb37cc3f27fde2c0e2"
+      },
+      "before": {
+        "for_humans": "Investors may see market swings tied to AI news.",
+        "for_ai": "",
+        "headline": "Monthly Stock Market Review for October 2026: AI-linked securities weigh on U.S. equities"
+      },
+      "after": {
+        "for_humans": "The review reports losses for holders of several AI-related shares in October, alongside gains in other parts of the market.",
+        "for_ai": "Several AI chip and equipment companies lost share value. The review does not test how well their technology works.",
+        "headline": "October market review reports losses in several AI-related shares"
+      }
+    },
+    {
+      "key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+      "event_id": "171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.theguardian.com/us-news/2026/nov/06/first-thing-tech-stocks-ai-regulation-midterms"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "ac33850a6989d660c16910fb6171f52e": "308d903b047a0e3b9f77a5439525d0f461c77a7df252fc9ef3b09b09cc9bb1b9"
+      },
+      "before": {
+        "for_humans": "The story explains why tech stocks fell and what that might mean for everyday tech, like phones and online services.",
+        "for_ai": "The Guardian reports pressure on AI-related company valuations and fears of slower data-centre spending; the future investment effect is uncertain.",
+        "headline": "Global tech stocks wobble as AI regulation fears rise after midterms",
+        "limitation": "The evidence describes market mood and regulatory signals with selective examples; it does not claim universal outcomes across all investors, markets, or AI applications."
+      },
+      "after": {
+        "for_humans": "The Guardian reports losses for people holding technology shares as a US sell-off spread to other markets.",
+        "for_ai": "Investors fear slower data-centre building and poor returns on AI spending. The newsletter does not show how future investment will change.",
+        "headline": "Guardian reports global tech share losses amid fears of tighter AI rules",
+        "limitation": "The newsletter reports share-price falls and investors’ worries. It does not show what future AI rules will do."
+      }
+    },
+    {
+      "key": "event:b9df2b72-2426-48d5-93f1-c92bfc2159ff",
+      "event_id": "b9df2b72-2426-48d5-93f1-c92bfc2159ff",
+      "reason": "Owner requested plain language, a complete source-supported brief where available, no internal-status badge, and the limits note at the end.",
+      "source_urls": [
+        "https://www.news.cn/world/20261105/b94d1a5cf64e41dab733c4d96bc59df4/c.html"
+      ],
+      "reading_scope": "written_video_introduction",
+      "retained_source_sha256": {
+        "606a357c6afba3e64acde0573ee68057": "4547ba7dd1aeab202c2656c301551851265d1c2aa743d733e5df23f008e9d752"
+      },
+      "before": {
+        "for_humans": "The evidence describes AI-driven changes in media and proactive human collaboration as a response.",
+        "for_ai": "The evidence presents AI as driving change and enabling new collaboration in media.",
+        "limitation": ""
+      },
+      "after": {
+        "for_humans": "Media representatives call for working together as AI changes news. The introduction gives no specific effect on staff or audiences.",
+        "for_ai": "The introduction says AI is changing the media industry. It does not describe a particular tool, company benefit or technical improvement.",
+        "limitation": "Based on the complete written introduction. The video interviews were not reviewed.",
+        "summary_basis": "Summary of the written introduction",
+        "headline": "Media representatives call for cooperation as AI changes news",
+        "deck": "A written Xinhua video introduction describes interviews ahead of a World Media Summit in Beijing.",
+        "what_happened": "Xinhua’s written introduction says media representatives see AI changing their industry. Those interviewed call for more dialogue and cooperation between media organisations.",
+        "why_it_matters": "The introduction describes a call to work together. It does not explain specific changes to newsroom work or results for audiences.",
+        "body_paragraphs": [
+          "The interviews are presented ahead of a summit in Beijing on 5–9 November 2026. The saved written introduction is brief and does not contain a transcript of the interviews."
+        ],
+        "has_editorial": true,
+        "human_label": "",
+        "ai_label": ""
+      }
+    },
+    {
+      "key": "event:9d654d97-c6d1-424d-b8db-ebcc0955b358",
+      "event_id": "9d654d97-c6d1-424d-b8db-ebcc0955b358",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/world/20261105/13d2b057096749eba8915917ec16212f/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "71e18ee4721bc8dee68afc8a7e76a9f4": "b2d8dc628c171da173238e7b19708c2a0e271da9953b68e69c85040881126f7e"
+      },
+      "before": {
+        "for_humans": "People are exploring how AI can help media stay accurate and fair.",
+        "for_ai": "The event shows how human leaders want AI to support governance and trustworthy media.",
+        "headline": "China and abroad discuss AI era global media governance, with mixed views and limits",
+        "limitation": "Evidence from a single conference and related events; not a broad, representative survey."
+      },
+      "after": {
+        "for_humans": "Speakers call for accurate, trustworthy news and wider access to technology. The report does not show these goals being achieved.",
+        "for_ai": "The forum launched a research project on showing where news images come from and announced an AI industry partnership.",
+        "headline": "Media forum calls for trustworthy news and wider access to AI",
+        "limitation": "The report describes speeches and project announcements. It does not show whether those plans improved news reporting."
+      }
+    },
+    {
+      "key": "event:91aa2239-be4b-40e1-817a-0c4a79792a9f",
+      "event_id": "91aa2239-be4b-40e1-817a-0c4a79792a9f",
+      "reason": "Owner requested plain language, a complete source-supported brief where available, no internal-status badge, and the limits note at the end.",
+      "source_urls": [
+        "https://www.mfa.gov.cn/web/wjdt_674879/zwbd_674895/202611/t20261106_12054659.shtml"
+      ],
+      "reading_scope": "publisher_article_recovered",
+      "retained_source_sha256": {
+        "f5ea3384c8e13ae22a043dd6bf48cf64": "82df6cc1a07941c77ad48fabf34f6b4a2c8cb948bc9d1e72d6b5d25ba718f3fe"
+      },
+      "before": {
+        "for_humans": "no explicit human outcome described",
+        "for_ai": "no explicit AI outcome described",
+        "has_editorial": false,
+        "summary_basis": "Publisher headline",
+        "what_happened": "",
+        "why_it_matters": "",
+        "body_paragraphs": [],
+        "deck": "Reporting from 中华人民共和国外交部. Open the source for the article.",
+        "limitation": "",
+        "evidence_complete": true,
+        "human_direction": "none",
+        "ai_direction": "none",
+        "human_label": "No direction stated",
+        "ai_label": "No direction stated",
+        "publisher": "中华人民共和国外交部",
+        "sources": [
+          {
+            "publisher": "中华人民共和国外交部",
+            "headline": "The Acting Permanent Representative of the embassy in Uruguay, He Fei, visited the Uruguayan National Artificial Intelligence Center",
+            "url": "https://www.mfa.gov.cn/web/wjdt_674879/zwbd_674895/202611/t20261106_12054659.shtml",
+            "date": "2026-11-05",
+            "language": "zh"
+          }
+        ]
+      },
+      "after": {
+        "for_humans": "The visit report describes talks, but gives no specific change in people’s lives.",
+        "for_ai": "Both sides expressed interest in AI cooperation. The report does not announce a new tool or a joint AI project.",
+        "has_editorial": true,
+        "summary_basis": "AIEO summary",
+        "what_happened": "Chinese diplomat He Fei visited Uruguay’s national AI centre on 5 November 2026. He met its executive director and head of science to discuss possible cooperation on AI.",
+        "why_it_matters": "Both sides expressed interest in working together. The report does not announce a joint project or show benefits from one.",
+        "body_paragraphs": [
+          "The Uruguayan side briefed the diplomat on the centre’s formation. The embassy says the participants discussed opportunities for contact and cooperation in technology and innovation."
+        ],
+        "deck": "China’s embassy reports talks with Uruguay’s national AI centre about possible joint work.",
+        "limitation": "An embassy report about a visit and intentions to cooperate. It gives no results from joint work.",
+        "evidence_complete": true,
+        "human_direction": "none",
+        "ai_direction": "none",
+        "human_label": "",
+        "ai_label": "",
+        "publisher": "China’s Ministry of Foreign Affairs",
+        "sources": [
+          {
+            "publisher": "China’s Ministry of Foreign Affairs",
+            "headline": "The Acting Permanent Representative of the embassy in Uruguay, He Fei, visited the Uruguayan National Artificial Intelligence Center",
+            "url": "https://www.mfa.gov.cn/web/wjdt_674879/zwbd_674895/202611/t20261106_12054659.shtml",
+            "date": "2026-11-05",
+            "language": "zh"
+          }
+        ],
+        "headline": "Chinese diplomat visits Uruguay’s national AI centre to discuss cooperation",
+        "claim_status": "reporting"
+      },
+      "recovered_sources": [
+        {
+          "source_url": "https://www.mfa.gov.cn/web/wjdt_674879/zwbd_674895/202611/t20261106_12054659.shtml",
+          "body_sha256": "3d22484322d704d1fbba0c89251ec03b226bf964cd655e9fbf0dbd3ea1ac8520",
+          "read_on": "2026-11-12",
+          "basis": "Complete publisher article, recovered from the official page."
+        }
+      ]
+    },
+    {
+      "key": "event:62c140c0-0730-41c1-aab8-34108af3c519",
+      "event_id": "62c140c0-0730-41c1-aab8-34108af3c519",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.24h-lemans.com/fr/actualites/l-intelligence-artificielle-deja-indispensable-pour-gagner-les-24-heures-du-mans-60756"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "7166417197bbc7812c480cd85666bcfd": "f1086c99f74bc6c307a62f6a333a176a5d07181622e48daf8cf9f6036289aa31"
+      },
+      "before": {
+        "for_humans": "AI can help you see patterns in data and plan with others, not replace human judgment.",
+        "for_ai": "Teams describe AI tools helping analyse race data, with limits on what the tools can decide; no race-winning effect is established.",
+        "headline": "Is AI Already Indispensable for the 24 Hours of Le Mans, Claiming Race Teams",
+        "limitation": "The evidence comes from a single source and quotes; it does not claim broad generalizability."
+      },
+      "after": {
+        "for_humans": "Teams say AI helps them analyse race data and write up meetings, while concerns about sharing private data limit some uses.",
+        "for_ai": "Teams are using AI for preparation and strategy. They have not shown that AI can design a whole car or win a race.",
+        "headline": "Le Mans teams describe AI uses and concerns about sharing private data",
+        "limitation": "Based on team interviews. The article does not test whether AI improves race results."
+      }
+    },
+    {
+      "key": "event:503b0507-6008-43ce-b14b-353926600a58",
+      "event_id": "503b0507-6008-43ce-b14b-353926600a58",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://urbania.ca/article/le-mauvais-art-est-le-remede-contre-lintelligence-artificielle"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "3a1124af54f209192c4d244a2b0364a5": "bac505d4316a9a581b9bff54d6452a8a54442963577403b080204ad18869d921"
+      },
+      "before": {
+        "for_humans": "Explains why people value human-made art and why some worry about AI.",
+        "for_ai": "AI can widen access but may dilute traditional craft if used without care.",
+        "headline": "Bad Art as Antidote to AI, While Acknowledging Human Limits",
+        "deck": "A wary but hopeful look at how human-made art and AI tools intersect, without hype.",
+        "what_happened": "A columnist argues that AI can broaden access to art and enable new outputs, but may also dilute handmade craft. The piece uses personal stories and cultural references to explore democratization, visual design, and the tension between mass appeal and skilled making.",
+        "why_it_matters": "The author questions whether AI truly expands art or erodes craftsmanship, emphasizing the value of human touch and the limits of tech-driven art.",
+        "body_paragraphs": [
+          "The piece starts with a noodle shop as a metaphor for art made with limited means. It argues AI can help more people create and share art, but warns that chasing mass appeal can erode the human touch at the heart of creativity.",
+          "The author urges readers to see art as a human act, not just a product, and notes that ‘bad art’,made with care and emotion,carries meaning machines cannot reproduce."
+        ],
+        "claim_status": "opinion",
+        "limitation": "The evidence is from a single opinion piece and cultural examples, not a scientific study."
+      },
+      "after": {
+        "for_humans": "The writer argues that making art matters even when it is imperfect, and that AI-made work can take income from artists.",
+        "for_ai": "The writer criticises using AI to mass-produce art for sale. This opinion piece gives no test of the tools' performance.",
+        "headline": "Imperfect art shows what AI cannot replace, Urbania columnist argues",
+        "deck": "An Urbania columnist rejects the claim that AI makes art more accessible and defends the value of imperfect work made by people.",
+        "what_happened": "The writer uses a homemade restaurant menu, her grandmother’s paintings and films to argue that art matters because people make it. She criticises replacing that process with AI-made products for sale.",
+        "why_it_matters": "For the writer, making art helps people express and understand their experiences. She argues that focusing on the product and its sales can take away that value.",
+        "body_paragraphs": [
+          "The column describes finding more warmth in an imperfect handmade menu than in polished AI images. The writer argues that anyone can make art, even without a large budget or professional skill.",
+          "She challenges the idea that AI opens art to everyone. Her criticism includes the loss of income for artists and the loss of the personal thinking and feeling involved in making something."
+        ],
+        "claim_status": "opinion",
+        "limitation": "A personal opinion column, rather than a study of artists’ income or AI performance."
+      }
+    },
+    {
+      "key": "event:0137b615-2741-4b50-9a60-dd93e0471ea1",
+      "event_id": "0137b615-2741-4b50-9a60-dd93e0471ea1",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://l-express.ca/avons-nous-besoin-dun-roman-de-plus"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "0f43023b5e87ae748bdb09b81162010d": "c5d13930311ccdde603949a29d050b8deeb2c5d0621b0684bb1d8818dd72b669"
+      },
+      "before": {
+        "for_humans": "It asks readers to think about what makes a book worth reading.",
+        "for_ai": "Consider how AI tools influence writing and thinking without assuming they replace people.",
+        "headline": "Do We Need Another Novel? A Professor Questions AI's Role in Literature",
+        "limitation": "Based on a single opinion piece; not a broad survey."
+      },
+      "after": {
+        "for_humans": "The professor argues that writing helps people develop their thinking, and that letting AI write for them can weaken that process.",
+        "for_ai": "The article questions the value of producing more books with AI. It gives no measured result for AI tools or companies.",
+        "headline": "Professor questions whether more AI-written novels help people think",
+        "limitation": "A professor’s opinion about writing and thinking, rather than a study of all writers or students."
+      }
+    },
+    {
+      "key": "event:eab4592c-7b02-4e3a-9d56-b3f89fefdcf8",
+      "event_id": "eab4592c-7b02-4e3a-9d56-b3f89fefdcf8",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.positivelynaperville.com/2026/11/04/little-friends-artificial-intelligence-and-human-services-a-lot-to-think-about/162345"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "76ffc2f42d2d0fa955b50cbdc3dde225": "a1442995a6e66c9729db41b27814d3c3338c71087e2c149d420b4bf04b28849f"
+      },
+      "before": {
+        "for_humans": "AI might reduce administrative work, but the author worries about preserving human contact; care benefits have not been measured.",
+        "for_ai": "The column reports no separate gain or downside for AI systems or their operators.",
+        "headline": "Human-services CEO asks whether AI could improve care",
+        "limitation": "A first-person opinion column about possible future use, not a measured care outcome."
+      },
+      "after": {
+        "for_humans": "The author hopes less paperwork could leave staff more time for care, but worries about privacy and losing human contact.",
+        "for_ai": "The column gives no separate result for AI tools or the companies that run them.",
+        "headline": "Care services chief weighs AI paperwork savings against privacy and human contact",
+        "limitation": "The author is considering future AI use. The column does not show that care has improved."
+      }
+    },
+    {
+      "key": "event:a2b9c610-62fa-4467-be57-9de1a1a11768",
+      "event_id": "a2b9c610-62fa-4467-be57-9de1a1a11768",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.lesoleil.com/actualites/sante/2026/11/04/lintelligence-artificielle-fait-son-entree-dans-le-reseau-de-la-sante-EMQUNEACUBEFDKROF62VNZIHSU",
+        "https://www.lenouvelliste.ca/actualites/sante/2026/11/04/lintelligence-artificielle-fait-son-entree-dans-le-reseau-de-la-sante-EMQUNEACUBEFDKROF62VNZIHSU"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "6c952eea4e3424518f2c2f8d07afe47f": "cf015140a9b4e8a760ca0754c0bcd3290de6c5dbf52c94d8a277e5a97fa58fde",
+        "9954346d10896ba63e6402840e49841e": "cf015140a9b4e8a760ca0754c0bcd3290de6c5dbf52c94d8a277e5a97fa58fde"
+      },
+      "before": {
+        "for_humans": "AI adds workflow support; clinicians keep final say.",
+        "for_ai": "AI augments data gathering and summarization to help clinicians.",
+        "headline": "AI Debuts in Health Network as Quebec Pilot Cuts Wait Times, Say Officials"
+      },
+      "after": {
+        "for_humans": "Officials report shorter call handling in two trial centres. Nurses still check the information and give advice; wider waiting-time benefits are unproven.",
+        "for_ai": "The assistant gathers symptoms and prepares a summary for nurses. It does not choose where patients should go for care.",
+        "headline": "Quebec officials report shorter call handling with an AI assistant trial"
+      }
+    },
+    {
+      "key": "event:a092060b-78ae-46e7-9d29-fcac40c9bcdd",
+      "event_id": "a092060b-78ae-46e7-9d29-fcac40c9bcdd",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.aoshearman.com/en/insights/generative-ai-and-international-arbitration-the-road-to-efficiency-or-ruin"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "f394127f50ad7eacd013cc2aafb50d56": "eab4ed6dbb799179100a832503382278a1cb8874d9cd056ec7bc0295150bf450"
+      },
+      "before": {
+        "for_humans": "AI changes how disputes are handled, with gains and safeguards needed.",
+        "for_ai": "AI can assist with tasks like document review and drafting if properly overseen.",
+        "headline": "Generative AI in International Arbitration: Efficiency Gains, Risks, and Real Limits"
+      },
+      "after": {
+        "for_humans": "Panellists say AI can save lawyers time, but false evidence and unchecked arguments can make disputes less fair.",
+        "for_ai": "Lawyers describe using AI to review documents and draft papers. They say its use needs checks and clear reporting.",
+        "headline": "Lawyers discuss time savings and fairness risks from AI in disputes"
+      }
+    },
+    {
+      "key": "event:87039ce9-41fb-4ad8-9921-5b4db9fcea02",
+      "event_id": "87039ce9-41fb-4ad8-9921-5b4db9fcea02",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.efl.fr/actualite/colloque-intelligence-artificielle-and-intelligence-amiable-theme-colloque-annuel-2026-afpdc_fb6fd204c-0c45-4e1f-8dec-f891c28178e4"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "939533a7344fdf801417b80610db6ddd": "2dc71c54945494276a08a010fc5977aa7b6bba470c90adc1a55b38a1977bd804"
+      },
+      "before": {
+        "for_humans": "Humans stay central while AI supports tasks in legal work.",
+        "for_ai": "AI can assist with drafting and analysis, but its use is bounded by professional rules.",
+        "headline": "AFPDC 2026 Colloquium Frames AI as Human Support, Warns of Limits",
+        "deck": "A conference on artificial intelligence and amicable intelligence discusses AI as a helper, not a replacement for human lawyers, with careful use in practice.",
+        "what_happened": "The publisher outlines a theme focused on AI and friendly intelligence. Juliette Griset notes that human expertise cannot be replaced by AI and that the profession is least threatened by AI when using amiable modes. The event will also examine useful AI tools and their ethical impact on lawyers and clients.",
+        "why_it_matters": "The talks aim to map what AI can do in disputes, the rules that govern its use, and the practical questions participants may face.",
+        "body_paragraphs": [
+          "The AFPDC collogue centers on how artificial intelligence and amiable intelligence can work together in law. The organizers stress that AI cannot replace human judgment or expertise, even as it can handle repetitive tasks and information gathering.",
+          "Speakers, including Juliette Griset, discuss potential roles for AI in drafting meeting notes, formulating agreements, and identifying relevant legal texts, while underscoring limits and ethical considerations."
+        ],
+        "limitation": ""
+      },
+      "after": {
+        "for_humans": "The organiser wants lawyers to explore AI while protecting their duties to clients. The conference has not taken place yet.",
+        "for_ai": "The interview lists possible uses, such as meeting notes. These are topics for discussion, rather than results from the conference.",
+        "headline": "Paris law conference will explore AI uses in settling disputes",
+        "deck": "An organiser previews a 4 December 2026 conference on AI and ways to settle legal disputes through agreement.",
+        "what_happened": "In an interview, Juliette Griset outlines a Paris conference planned for 4 December 2026. Lawyers will explore possible AI uses, such as preparing meeting notes, and the duties they owe clients.",
+        "why_it_matters": "The organiser wants lawyers to consider where AI might help without replacing their expertise. These are aims and discussion topics for a future event.",
+        "body_paragraphs": [
+          "The conference will focus on resolving disputes through agreement and mediation. The interview asks whether AI could help with notes, legal texts and possible agreements; it does not report tests of these uses.",
+          "The planned programme includes accounts from European lawyers, a discussion of good practice and an exercise using AI in a case."
+        ],
+        "limitation": "An interview about a future conference, rather than findings from a completed event."
+      }
+    },
+    {
+      "key": "event:7f891f3c-7cfa-4a53-b894-39e98e048250",
+      "event_id": "7f891f3c-7cfa-4a53-b894-39e98e048250",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.ucf.edu/news/ucf-researchers-developing-ai-model-to-help-physicians-improve-kidney-care"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "1be7dd238e2d5878bb7b713a1c7e427a": "b89586e2633f4befb8af73ec06c375eaf08b8f084ecf8e9b8364b719eaa567ac"
+      },
+      "before": {
+        "for_humans": "UCF hopes the proposed tool could help physicians make kidney-care decisions; no clinical benefit has been measured.",
+        "for_ai": "The team plans to build a model that links scans with patient records and explains its answers; its performance has not yet been reported.",
+        "headline": "UCF researchers begin developing AI tool for kidney care",
+        "limitation": "A funded development project; no model validation or patient-care outcome is reported."
+      },
+      "after": {
+        "for_humans": "UCF hopes the proposed tool will help doctors decide how to treat kidney problems. Benefits for patients have not been tested.",
+        "for_ai": "The team plans to combine scans and medical records in one AI tool. It has not reported test results yet.",
+        "headline": "UCF team plans AI tool to help doctors assess kidney problems",
+        "limitation": "The project has funding and a development plan. The article gives no test results for the tool or its effect on patients."
+      }
+    },
+    {
+      "key": "event:654854e4-fe52-4ddf-bc0d-dc5c1d767ba8",
+      "event_id": "654854e4-fe52-4ddf-bc0d-dc5c1d767ba8",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/20261104/b318ccb9cf3e4aad8419c39667ae72a0/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "74b3037a0d718797996846f526920036": "3041491c52d638b76789a7ef82fba27edb5457f9b429ccbade6232199cae0b1f"
+      },
+      "before": {
+        "for_humans": "A building-inspection pilot gives local staff an initial report from uploaded photos; staff say it speeds screening, but the wider benefit is unmeasured.",
+        "for_ai": "Pilot bases train and test sector-specific models, and staff report a working building-inspection tool; broader use of shared AI services remains a goal.",
+        "headline": "Exhibit Boards at Wuzhen Point to AI's Next Step, According to Exhibitors",
+        "deck": "Display boards outline how AI may move from talking to doing and how industries can share AI tools.",
+        "what_happened": "At a Wuzhen exhibition, six Zhejiang AI pilot bases presented work in sectors including health care, cultural heritage and manufacturing. One base showed a tool that reviews photos of damage to old buildings and suggests inspections and maintenance.",
+        "why_it_matters": "Pilot staff say the building tool speeds initial checks. They hope shared data, computing and testing will help more organizations use AI, but the article does not measure those wider effects.",
+        "body_paragraphs": [
+          "The boards show a shift from AI that mainly talks to AI that can actually help in real tasks, like inspecting historic buildings or assisting in manufacturing. Experts say the goal is to turn piloted ideas into standard, widely used solutions and to make public services more accessible.",
+          "One part of the display highlights how industry data can train models for specific sectors, and how those models can be tested in real lines and lives before they scale up. This helps people understand how AI could fit into daily work without overclaiming what it will do next."
+        ],
+        "limitation": "Exhibition reporting and claims from pilot staff; no independent measurement of the wider benefits is provided."
+      },
+      "after": {
+        "for_humans": "Staff upload photos of old buildings and receive a first report on possible damage. A project manager says this speeds their checks.",
+        "for_ai": "Test centres use industry data to train AI and try it in real tasks. Shared medical AI services remain a plan.",
+        "headline": "Wuzhen test centres show how AI could help with everyday tasks",
+        "deck": "An exhibition describes AI tools for tasks such as checking old buildings, alongside plans for services that hospitals could share.",
+        "what_happened": "At Wuzhen, six test centres in Zhejiang displayed AI projects for fields including health care, robots and historic buildings. One tool lets staff upload photos of damage and receive an initial report with care suggestions.",
+        "why_it_matters": "A project manager says the building tool speeds early checks. Staff also hope to make computing and AI services easier to share, but those wider benefits remain goals.",
+        "body_paragraphs": [
+          "The centres train AI using information from an industry, then test it in real tasks before trying to spread its use. The exhibition also describes robot training for tasks such as cooking and farm work.",
+          "A medical centre hopes hospitals could eventually use shared AI services instead of buying and maintaining their own systems. Staff say this work needs engineers and people who understand the jobs involved."
+        ],
+        "limitation": "An exhibition report quoting project staff. It gives no independent test of the wider benefits."
+      }
+    },
+    {
+      "key": "event:426f29d1-eef2-446f-ba1b-10d5831691ef",
+      "event_id": "426f29d1-eef2-446f-ba1b-10d5831691ef",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://medicalxpress.com/news/2026-11-generative-ai-gaps-brain-wiring.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "2f8c1c44deb30a17d9d1d3146c7e2a57": "6a490b0a9aed12e8386738859247ccd333f876ae2f3224d98a37f6f016dbdb07"
+      },
+      "before": {
+        "for_humans": "Researchers may get fuller estimated brain pathway maps for studies of aging and disease; a patient-care benefit has not been tested.",
+        "for_ai": "In tests, FOD-Diffusion estimated missing MRI signal and produced fuller pathway maps than standard corrections; use on other scanners needs testing.",
+        "headline": "USC Researchers Use Generative AI to Fill Gaps in Brain MRI Maps, With Cautions",
+        "limitation": "Restored data are estimates, not measurements, and the method needs testing on other scanners and settings; not evaluated for patient care."
+      },
+      "after": {
+        "for_humans": "Researchers could use fuller estimates of brain connections to study ageing and disease. Benefits for patients have not been tested.",
+        "for_ai": "In tests, AI filled gaps in brain scans. These are estimates of missing data; use with other scanners still needs testing.",
+        "headline": "AI estimates missing brain-scan data, but patient benefits remain untested",
+        "limitation": "The filled-in data are estimates. The method still needs testing with other scanners and has not been tested for patient care."
+      }
+    },
+    {
+      "key": "event:33d5d334-70f8-4f44-8c95-eae031d9e90c",
+      "event_id": "33d5d334-70f8-4f44-8c95-eae031d9e90c",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://news.sjtu.edu.cn/zhxw/20261104/227227.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "0e4ab65fb5e8fe17d65aa5440917f70e": "5164069dc6553b5a4edc31ee76170cde38778697bf1213700febf8ea05a6e402"
+      },
+      "before": {
+        "for_humans": "AI can assist learning and research with human oversight.",
+        "for_ai": "AI supports tasks like data handling and writing, but humans verify results.",
+        "headline": "AI as a useful, verifiable tool for science, with clear boundaries, says Chen Liya"
+      },
+      "after": {
+        "for_humans": "The speaker says AI can help students sort research and polish writing, but they must check sources and choose their own methods.",
+        "for_ai": "The course describes AI uses in research. It gives no test showing that the tools became more capable.",
+        "headline": "University course explains AI uses in research and why checks matter"
+      }
+    },
+    {
+      "key": "event:11b57efe-191f-437f-b405-a2f1c37d774d",
+      "event_id": "11b57efe-191f-437f-b405-a2f1c37d774d",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/tech/20261104/35617bb81b384b7ab692ed83f63c7753/c.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "4380e81ec321244ff72a89d62e248e76": "639b955d96d8ec9d7ad4c3531281fb6e91d4d5452c0ca25f3dff8b428535f876"
+      },
+      "before": {
+        "for_humans": "Open AI tools get better when more people can contribute and trust is built.",
+        "for_ai": "Open collaboration may speed progress, but safety and governance are essential.",
+        "headline": "From Wuzhen AI Open-Source Talk, key terms for a shared ecosystem emerge"
+      },
+      "after": {
+        "for_humans": "Speakers say sharing AI models lets more people adapt them for different languages and needs, but important uses need safety tests.",
+        "for_ai": "Companies argue that sharing models and training methods can speed AI development. This is their expectation, rather than a measured result.",
+        "headline": "Wuzhen speakers say sharing AI models can widen access and speed development"
+      }
+    },
+    {
+      "key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
+      "event_id": "034c9f16-afde-4d13-bfa2-822d8b830213",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.bbc.co.uk/news/articles/c8x23zqxwdlro"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "915c2ce9eb748cb4d9edf4d196549c62": "e84c1f7a8fbf35f1ed56b5dbdfeeef1d3ced9062c9fbf54ba3b638d36711d62b"
+      },
+      "before": {
+        "for_humans": "UK and NI officials say EU AI rules will affect some physical products in NI, not online tools.",
+        "for_ai": "If AI is embedded in a product, it may be subject to EU rules in NI; standalone tools are not covered.",
+        "headline": "BBC: EU AI rules may apply in Northern Ireland; UK government sets limits",
+        "limitation": "The guidance states that EU AI Act rules apply only to physical products with embedded AI placed on the NI market; online or downloadable AI tools used to manage work are not affected."
+      },
+      "after": {
+        "for_humans": "The UK government says some EU AI rules will cover physical products sold in Northern Ireland, such as certain smart toys.",
+        "for_ai": "The rules described cover AI built into physical products. Businesses would not be covered simply for using online AI tools.",
+        "headline": "UK says some EU AI rules will cover products in Northern Ireland",
+        "limitation": "The rules described cover certain physical products sold in Northern Ireland. They do not cover ordinary use of online AI tools."
+      }
+    },
+    {
+      "key": "event:fdbb95e3-dcb4-40c5-b7bd-f9269dbf8c80",
+      "event_id": "fdbb95e3-dcb4-40c5-b7bd-f9269dbf8c80",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.bfmtv.com/politique/elections/presidentielle/video-intelligence-artificielle-il-va-falloir-totalement-transformer-cette-idee-qu-on-se-fait-de-la-formation-assure-bruno-retailleau-candidat-lr-a-la-presidentielle_VN-202611031010.html"
+      ],
+      "reading_scope": "written_video_notice",
+      "retained_source_sha256": {
+        "819c498e7e835e92834ddca21e7f3db9": "0bd49fc73ac4d0d35053e63a74b8397dc6129d112ae7a35003e5ec77f2d5bf36"
+      },
+      "before": {
+        "for_humans": "",
+        "for_ai": "",
+        "headline": "Bruno Retailleau says AI will totally transform education at BFMTV event",
+        "what_happened": "Bruno Retailleau, président des Républicains and presidential candidate, spoke about transforming our idea of education during BFMTV’s event and later answered questions from undecided citizens.",
+        "limitation": ""
+      },
+      "after": {
+        "for_humans": "Retailleau calls for changes to training as AI spreads. The written video notice gives no result for learners.",
+        "for_ai": "The written video notice gives no separate result for AI tools or the companies that run them.",
+        "headline": "Retailleau calls for changes to training as AI spreads",
+        "what_happened": "BFMTV’s written video notice quotes French presidential candidate Bruno Retailleau calling for a rethink of training in response to AI. It describes the television event and questions from voters.",
+        "limitation": "Based on the written video notice. The video itself was not reviewed."
+      }
+    },
+    {
+      "key": "event:f8388539-b076-4eea-a5a2-0acbb6dd5e7a",
+      "event_id": "f8388539-b076-4eea-a5a2-0acbb6dd5e7a",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.deloitte.com/cn/zh/issues/generative-ai/physical-ai-future-ai-competition-landscape.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "e37d006bd7727cc2471c5be8881d2c3b": "50a9af7b04b8be935cfb26400e5cb67a8d1d483cf00e07a81964a4db4dbd5c56"
+      },
+      "before": {
+        "for_humans": "People gain new real-world operational capabilities by using AI.",
+        "for_ai": "AI becomes a companion that understands real-world environments and helps in real-time tasks.",
+        "headline": "Deloitte says Physical AI shifts reality; firms must build data, governance, and real-world understanding"
+      },
+      "after": {
+        "for_humans": "Deloitte says AI devices could help people act on information around them, but firms must protect privacy and keep people in control.",
+        "for_ai": "Deloitte argues that AI needs real-world data and clear limits on its actions to work well in devices and robots.",
+        "headline": "Deloitte says AI devices need real-world data, privacy rules and human control"
+      }
+    },
+    {
+      "key": "event:f1e2f4f5-6c88-46f5-8496-93dc8dd91057",
+      "event_id": "f1e2f4f5-6c88-46f5-8496-93dc8dd91057",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.theguardian.com/technology/2026/nov/03/google-search-artificial-intelligence"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "e9f81d7b8157d0594ee1238dd0af381a": "d70dd0fb18a16da7ec65d6567c1d5ab34680b875cf83f6f21441208eb6baab9e"
+      },
+      "before": {
+        "for_humans": "Schools decide whether AI features in Search are active for students.",
+        "for_ai": "AI features will be usable only when districts enable them.",
+        "headline": "Guardian notes Google ties Search to AI; schools control access amid mixed signals",
+        "limitation": "Evidence is a single news article; scope limited to classroom AI tools described by The Guardian."
+      },
+      "after": {
+        "for_humans": "Schools that block Google's AI features would also block student access to Search. Critics say this pressures schools to accept AI.",
+        "for_ai": "Google ties Search access to its AI features and plans a study tool inside Search. The article reports no learning test.",
+        "headline": "Google ties school Search access to its built-in AI features",
+        "limitation": "The article reports Google’s announcement and criticism of it. It does not test how the policy affects learning."
+      }
+    },
+    {
+      "key": "event:e49b840e-fd52-4816-943d-2c660cdb40f3",
+      "event_id": "e49b840e-fd52-4816-943d-2c660cdb40f3",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.paho.org/en/news/3-11-2026-paho-promotes-use-artificial-intelligence-and-digital-tools-strengthen-epidemic"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "b0ede540040d093065b1c321de4c31ef": "0c6a8b8a525ce01a512ee1b22f3ff1faa96baebcad89234850142edf092bc0ae"
+      },
+      "before": {
+        "for_humans": "Public health workers gain new tools to spot signals early.",
+        "for_ai": "PAHO reports new AI-based EIOS functions for detecting and managing public-health signals. Their effect on system performance was not measured in this report.",
+        "headline": "PAHO Links Public Health AI Tools to Strengthen Epidemic Intelligence in Americas"
+      },
+      "after": {
+        "for_humans": "Health workers received training to look for early signs of outbreaks in public information. The report does not measure effects on public health.",
+        "for_ai": "New AI features help staff find and manage possible warning signs. The report gives no test of how much better they work.",
+        "headline": "Health workers train to use AI tools for early outbreak warnings"
+      }
+    },
+    {
+      "key": "event:b82fc742-2167-469f-9abd-5840e3af1f7a",
+      "event_id": "b82fc742-2167-469f-9abd-5840e3af1f7a",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.news.cn/sci-tech/20261103/f171b7dec18745bea0c530b323771a9c/c.html"
+      ],
+      "reading_scope": "interview_introduction",
+      "retained_source_sha256": {
+        "15383d8e2d95398baf2f1aa6d10c9f1c": "2e431664a4a39d3d93cb4327d9ad92e38af007f9a48b299f9fa2a33d87864722"
+      },
+      "before": {
+        "for_humans": "The shift is about making AI useful in real factories, not just in theory.",
+        "for_ai": "",
+        "headline": "Chinese AI Firm Explains How AI Goes From Speaking to Calculating in Factories",
+        "deck": "A factory-focused AI expert discusses what it takes for AI to move from language to industrial understanding.",
+        "what_happened": "AI is moving from conversations to factory use. An interview with Tianyu founder Zhang Ming discusses bridging language skills to industrial understanding and the role of digital-space validation before real-world deployment.",
+        "why_it_matters": "This path could affect factory safety and efficiency and shows the gaps that must be bridged for reliable industrial AI, while highlighting potential innovation in manufacturing.",
+        "body_paragraphs": [
+          "AI is moving beyond chat and content. In factories, AI must understand equipment, processes, and how changes affect outcomes."
+        ],
+        "limitation": ""
+      },
+      "after": {
+        "for_humans": "The interview notice asks how AI could help factories test designs. It gives no result showing benefits for workers.",
+        "for_ai": "The notice asks what AI needs to handle factory tasks. It gives no test showing that the tools achieved this.",
+        "headline": "Xinhua introduces interview on what AI needs to work in factories",
+        "deck": "A Xinhua interview notice asks how AI could handle factory equipment and test designs before products are made.",
+        "what_happened": "Xinhua introduces an interview with company founder Zhang Ming about AI in factories. The notice asks what AI needs to understand equipment and processes, and whether designs can be tested on a computer before production.",
+        "why_it_matters": "The notice connects these questions to factory safety and efficiency. It does not give the interviewee’s answers or report a completed test.",
+        "body_paragraphs": [
+          "The notice contrasts AI that handles conversation with the demands of factory work. It asks how predictions and advice can be checked against what actually happens in production."
+        ],
+        "limitation": "The supplied text is an interview introduction, rather than the full interview."
+      }
+    },
+    {
+      "key": "event:b38487a4-0eb6-4e87-8804-9942ace0fc55",
+      "event_id": "b38487a4-0eb6-4e87-8804-9942ace0fc55",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://seas.harvard.edu/news/elise-penn-sm-24-phd-25-atmospheric-chemistry-meets-artificial-intelligence"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "fdbd04ba32127ebd6e1c223c7dc818d8": "e41352a4c33fa5e4a2248b164d0c0444deb523fa9cf11964f7f29e1cfe489ef2"
+      },
+      "before": {
+        "for_humans": "AI can help scientists forecast weather more quickly, using data we can observe.",
+        "for_ai": "A practical use case of AI combining satellite data with observations to improve weather models.",
+        "headline": "Elise Penn Shows AI Can Speed Up Weather Modeling, Says Zeus AI Scientist",
+        "limitation": "The article describes ongoing work and potential applications; it does not claim universal success or generalizable results beyond the described project."
+      },
+      "after": {
+        "for_humans": "Penn describes research that uses satellite observations to build weather tools. The profile does not test benefits for forecast users.",
+        "for_ai": "Zeus AI is developing weather products from observations. Penn says AI models can run faster, but the profile gives no accuracy comparison.",
+        "headline": "Weather scientist describes using AI and satellite observations at Zeus AI",
+        "limitation": "The profile describes ongoing research. It does not compare the accuracy of Zeus AI’s forecasts with other weather tools."
+      }
+    },
+    {
+      "key": "event:b380b95d-5ac9-4e40-a03d-e17da409770e",
+      "event_id": "b380b95d-5ac9-4e40-a03d-e17da409770e",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.thebci.org/news/from-ai-regulation-to-resilience-practice-what-continuity-teams-need-to-do-next.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "e7342de890b0b7a51548446de556b2c7": "08d969fc917e0cd3f79ce9bb7bef969b9776aa2afe2bec33367eda39bcc9d42c"
+      },
+      "before": {
+        "for_humans": "Use what you already know about risk and change to handle AI in the places that matter.",
+        "for_ai": "Apply existing incident and recovery plans to AI use in core workflows.",
+        "headline": "BCI: Extend Existing Resilience Controls to AI in Critical Workflows, Not Build New Ones"
+      },
+      "after": {
+        "for_humans": "The author advises teams to plan for AI mistakes and outages so essential services can keep running.",
+        "for_ai": "The advice says to check AI changes, track outside suppliers and test recovery plans. It does not measure improvements in AI tools.",
+        "headline": "Author urges firms to include AI in existing plans for service failures"
+      }
+    },
+    {
+      "key": "event:8ad596ee-83fa-4a49-8b62-5fbbc57fa992",
+      "event_id": "8ad596ee-83fa-4a49-8b62-5fbbc57fa992",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://portail-assurance.ca/article/lintelligence-artificielle-rendra-t-elle-les-conseillers-inutiles-ou-irremplacables"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "2ab83b9b8d67507ed01821acbebfe6c7": "d2280076b9c2caea38bb8cf5307abef27c03e6ec557455869a6e3a89f43ef4e0"
+      },
+      "before": {
+        "for_humans": "Humans stay relevant by guiding AI and prioritizing relationships.",
+        "for_ai": "Use AI as a tool to augment human judgment and empathy, not replace it.",
+        "headline": "Will AI Make Advisors Useless or Irreplaceable? A Cautious View From an Insurance Portal",
+        "limitation": "Based on a single source; not a broad survey or multiple studies."
+      },
+      "after": {
+        "for_humans": "The author argues that advisers can save time with AI, but risk losing their value if they hand over client relationships and decisions.",
+        "for_ai": "The column suggests using AI for research under an adviser's control. It gives no measured result for AI tools or companies.",
+        "headline": "Advice columnist says financial advisers should keep control when using AI",
+        "limitation": "An advice column about how advisers could use AI. It does not measure effects on jobs or clients."
+      }
+    },
+    {
+      "key": "event:2c1a78f9-bb97-48a9-8042-da3f0eae4437",
+      "event_id": "2c1a78f9-bb97-48a9-8042-da3f0eae4437",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.en-attendant-nadeau.fr/2026/11/03/gouverner-sans-etre-contredit-muhlhoff"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "b71e599b4f3bd998850ade8deb3bda8f": "ba724965c198069c26ce7597eaf3503dd6f0c346dbfafb988158e6e8041642f4"
+      },
+      "before": {
+        "for_humans": "Be aware that AI can shape rules; human review matters.",
+        "for_ai": "Understand limits and safeguards to keep decisions contestable.",
+        "headline": "AI at Scale Raises Governance Risks, Says Mühlhoff: Two Paths, One Challenge",
+        "limitation": "Based on a single source discussing a book; not a broad survey or multiple studies."
+      },
+      "after": {
+        "for_humans": "The book review warns that people can be harmed when they cannot understand or challenge AI-assisted government decisions.",
+        "for_ai": "The review argues that AI can spread unfair decisions widely. It calls for independent checks and the power to stop harmful systems.",
+        "headline": "Book review warns AI can make unfair government decisions harder to challenge",
+        "limitation": "A review of a book’s argument, rather than a test of all government AI systems."
+      }
+    },
+    {
+      "key": "event:b426cb15-ae3f-4950-9f56-4a44e320d433",
+      "event_id": "b426cb15-ae3f-4950-9f56-4a44e320d433",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.consumerfinancemonitor.com/2026/11/02/pennsylvania-enacts-artificial-intelligence-deceptive-advertising-act-new-disclosure-requirements-for-ai-generated-advertising"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "851f1aa4ddea130e9ff69eb1dc50f8bf": "c4f2c784830e7e889d87e1b525a1f64b974e03e870e79e96b2fd226ac15b3d41"
+      },
+      "before": {
+        "for_humans": "This law means ads with AI must tell you when content isn’t real.",
+        "for_ai": "The act creates targeted AI-disclosure obligations tied to deceptive advertising.",
+        "headline": "Pennsylvania Enacts AI Deceptive Advertising Act; New Disclosure Rules Limit AI Ads",
+        "deck": "New law requires clear AI-use disclosures in ads when synthetic content could mislead consumers.",
+        "what_happened": "Pennsylvania passed a law requiring clear disclosures when AI-generated or AI-modified content could create a false impression about products or services.",
+        "why_it_matters": "The act narrows AI disclosure to specific deceptive uses. It sets rules on placement, visibility, and timing of disclosures and carries penalties.",
+        "body_paragraphs": [
+          "The bill, now Act 99 of 2026, requires a clear and conspicuous disclosure when synthetic content could mislead about a product or service. It defines synthetic content as AI-modified images, videos, audio, or text, and notes that the law does not impose blanket disclosures for all AI use.",
+          "Disclosures must meet strict standards for noticeability, language, proximity, and duration, and must appear in the same medium as the synthetic content from its first presentation. Exceptions include evidently fictional content, parody, and text-only content, which are not fully covered by the rule."
+        ],
+        "limitation": "The scope is limited to specific deceptive uses of synthetic content and does not create a general AI-transparency mandate."
+      },
+      "after": {
+        "for_humans": "The legal article says certain misleading AI-made ads will need clear labels under Pennsylvania's law. It does not cover all AI-made content.",
+        "for_ai": "The law described places duties on advertisers using certain AI images, video or audio, rather than requiring labels for every AI use.",
+        "headline": "Pennsylvania law will require labels on certain misleading AI-made ads",
+        "deck": "A legal article explains a Pennsylvania law taking effect on 21 December 2026, including exceptions for text-only ads and clearly fictional content.",
+        "what_happened": "Pennsylvania has passed a law requiring clear labels on certain AI-made or AI-altered ads that mislead people about goods or services. The article says it takes effect on 21 December 2026.",
+        "why_it_matters": "Advertisers will need to make covered labels easy to see or hear from the first presentation. The rule does not apply to every use of AI.",
+        "body_paragraphs": [
+          "The legal analysis says the law covers certain misleading images, video and audio. Text-only content, clearly fictional content, parody, satire, commentary and criticism are exceptions.",
+          "A label must be understandable and appear in the same form as the content it explains. Disclosing AI use does not remove other legal duties or make a deceptive ad lawful."
+        ],
+        "limitation": "A summary of a legal analysis, rather than an independent review of the statute."
+      }
+    },
+    {
+      "key": "event:96cc11ea-a6df-4320-bfc8-02640df3ae41",
+      "event_id": "96cc11ea-a6df-4320-bfc8-02640df3ae41",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.i24news.tv/fr/actu/israel/artc-tsahal-prepare-sa-revolution-de-l-intelligence-artificielle-et-de-la-robotique"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "61abbd37d19845d5dfc20260531aa6c1": "9418536fb90b7fe274c1bc5d8934183a91fa5fb6353cc1d88e9d6c66e6420b90"
+      },
+      "before": {
+        "for_humans": "",
+        "for_ai": "",
+        "headline": "Tsahal’s AI and robotics revolution moves forward as Zamir pushes integration"
+      },
+      "after": {
+        "for_humans": "Zamir wants soldiers to work with uncrewed systems and change how they operate. The report gives no measured effect on people's safety.",
+        "for_ai": "The army plans wider AI and robotics use and new units to support it. These plans do not show that the tools improved.",
+        "headline": "Israeli army chief sets out plans for wider AI and robotics use"
+      }
+    },
+    {
+      "key": "event:646a8770-b1a7-487c-9c9b-48885d2993ca",
+      "event_id": "646a8770-b1a7-487c-9c9b-48885d2993ca",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "http://paper.people.com.cn/rmrb/pc/content/202611/03/content_30189076.html"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "f7be53a36f13eda6360d3001d5a18f14": "ea3d89a2bcbf518a5ecbc4f1bf9fc4e27361fd5a03909de7ccd542c8f0b995e1"
+      },
+      "before": {
+        "for_humans": "",
+        "for_ai": "",
+        "headline": "Latin American Nations Explore AI Potential, Backed by Policy, While Infrastructure Gaps Persist",
+        "limitation": "The text is drawn from a single source and reflects its scope and translation; it does not generalize results beyond described programs and countries."
+      },
+      "after": {
+        "for_humans": "The report describes AI helping with teaching, health services and local complaints, while poor internet and limited computing access leave gaps.",
+        "for_ai": "Latin American countries are funding AI tools and working together on a shared model, but access to the needed computers remains uneven.",
+        "headline": "Latin American countries expand AI use while gaps in access remain",
+        "limitation": "The report describes selected programmes and countries. The forecast for economic growth is an expectation, rather than a result already achieved."
+      }
+    },
+    {
+      "key": "event:2b9164bc-6861-4582-87b6-ffe74ed10d85",
+      "event_id": "2b9164bc-6861-4582-87b6-ffe74ed10d85",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.bbc.com/zhongwen/articles/c5djvk2dm33xo/simp"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "f1233fdc26fb405f87d162d3c87d311a": "1e5dd78f9d653a3f8b8d1783a60d9b57b6b9538be08174c4d120e2146c0d72f1"
+      },
+      "before": {
+        "for_humans": "This is about how funding and big customers shape AI's reach.",
+        "for_ai": "Keep funding plans and customer demand in view; no automatic effect assumed.",
+        "headline": "BBC reports: New Cloud firms raise AI market fears with debt risks",
+        "limitation": "Not all long-term outcomes are observable in the given time frame; conclusions reflect analyst expectations and market signals in the reported period."
+      },
+      "after": {
+        "for_humans": "Investors face losses as shares in smaller AI data-centre firms fall. Analysts worry about debt; company leaders defend their business plans.",
+        "for_ai": "These firms rent computing power to AI developers. High debt and reliance on a few big customers make their future uncertain.",
+        "headline": "BBC examines debt risks at smaller firms renting computing power for AI",
+        "limitation": "Analysts and company leaders disagree about the firms’ future. Their forecasts are not results already known."
+      }
+    },
+    {
+      "key": "event:bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883",
+      "event_id": "bc7c9e9a-07e2-4477-8fbe-6e3fd5b87883",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://today.marquette.edu/calendar/artificial-intelligence-in-a-jesuit-university-a-student-conversation"
+      ],
+      "reading_scope": "retained_written_article",
+      "retained_source_sha256": {
+        "e15ede9962474f087d8a5df3b7336bb3": "177bc2556a98a7ae5fce95a03b0e67096f5323a6472678b1fd365daf5759948f"
+      },
+      "before": {
+        "for_humans": "",
+        "for_ai": ""
+      },
+      "after": {
+        "for_humans": "Students were invited to share their views on AI at a library discussion. The notice gives no findings from the event.",
+        "for_ai": "The notice gives no separate result for AI tools or the companies that run them."
+      }
+    },
+    {
+      "key": "event:27a19978-d1a7-49e1-91aa-294287d26360",
+      "event_id": "27a19978-d1a7-49e1-91aa-294287d26360",
+      "reason": "Use short, concrete high-school English in both implication boxes; keep the source’s claim type and reading limits.",
+      "source_urls": [
+        "https://www.tresor.economie.gouv.fr/Articles/2026/11/02/l-ecosysteme-de-l-intelligence-artificielle-au-quebec"
+      ],
+      "reading_scope": "article_notice_without_linked_report",
+      "retained_source_sha256": {
+        "c3158decec327d28844560c24c3156c9": "3c01d3f3420edefca8a6af7c96323b98469e35cdd13b1e70dcf28b6aa537cc62"
+      },
+      "before": {
+        "for_humans": "The piece explains a national plan in plain language.",
+        "for_ai": "Policy intends to expand AI deployment and capabilities.",
+        "headline": "Canada’s AI for All Strategy Aims to Fast-Track Adoption and Skills",
+        "deck": "Policy aims to broaden AI use, grow skills, and strengthen computing capacity nationwide.",
+        "limitation": ""
+      },
+      "after": {
+        "for_humans": "The notice says Canada's plan aims to build AI skills and encourage business use. It gives no result showing whether those goals were met.",
+        "for_ai": "The notice describes plans for more computing capacity and stronger Canadian AI companies. The linked report was not part of this text.",
+        "headline": "Canada’s AI plan aims to build skills and widen business use",
+        "deck": "A short French Treasury notice outlines Canada’s AI policy goals and links to a longer report.",
+        "limitation": "The short article was reviewed. Its linked PDF report could not be retrieved and is not presented as having been read."
+      }
+    }
+  ],
+  "presentation_policy": {
+    "limits_position": "After both implication boxes and original sources, at the end of the article text.",
+    "internal_status_badges": false
+  }
+}

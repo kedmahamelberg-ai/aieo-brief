@@ -6,13 +6,14 @@ import json,os,re,time,hashlib,copy,functools
 import ai_runtime
 import claim_grounding
 from research_reading import style_problem
+import news_reading
 import requests
 from source_evidence_quality import evidence_chunks
 from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v10-source-fidelity'
+ENGINE_VERSION='aieo-editorial-runtime-v12-news-reading-presentation'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -37,6 +38,7 @@ class EditorialError(ValueError):
   self.feedback=feedback or message
 
 VALIDATION_CODES={
+ 'News plain English:':'news_reading_level',
  'Evidence exceeds the automatic reading budget':'evidence_reading_budget_exceeded',
  'Source segment note exceeded its budget':'segment_note_length',
  'Segment note lacks verifiable source support':'segment_support_invalid',
@@ -169,6 +171,17 @@ def source_numeric_aliases(text):
  # grouping, French grouping spaces, decimal commas, and spaced percent signs.
  # Only the evidence creates aliases; draft numbers never authorize themselves.
  aliases=set()
+ # Translate only explicit Chinese ordinals used for numbered events. This
+ # accepts the 14th forum written as 第十四届, without turning arbitrary
+ # Chinese numerals or model names into permission for new draft numbers.
+ digits='一二三四五六七八九'
+ for match in re.finditer(r'第([一二三四五六七八九]?十[一二三四五六七八九]?|[一二三四五六七八九])(?:届|次|期)',text):
+  ordinal=match.group(1)
+  if '十' in ordinal:
+   tens,ones=ordinal.split('十')
+   number=(digits.index(tens)+1 if tens else 1)*10+(digits.index(ones)+1 if ones else 0)
+  else:number=digits.index(ordinal)+1
+  aliases.add(str(number))
  for match in re.finditer(r'(?<![\d.,])(\d{1,3}(?:[ \u00a0\u202f]\d{3})+)(?!\d)',text):
   groups=re.split(r'[ \u00a0\u202f]',match.group(1))
   aliases.add(','.join(groups))
@@ -320,6 +333,9 @@ def validate_draft(d,sources,kind='news'):
  if unsupported:raise ValueError('Draft introduces a numeric value that is not present in the sources. Correct these fields and values using only the evidence: '+json.dumps(unsupported,sort_keys=True)+'. Preserve supported numbers and their denominators; omit an unsupported value only when the claim remains accurate. Do not invent a replacement.')
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
  if kind in ('preprint','abstract','paper') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')
+ if kind=='news':
+  problem=news_reading.style_problem(d)
+  if problem:raise ValueError(problem)
  if kind in ('preprint','abstract','paper'):
   problem=style_problem(d)
   if problem:raise ValueError(problem)
@@ -327,7 +343,7 @@ def validate_draft(d,sources,kind='news'):
   if len(quick.split())>110 or len((quick+' '+' '.join(d['body_paragraphs'])).split())>200:raise ValueError('Research is too long: keep the quick overview within 110 words and the full brief within 200 words.')
  return {k:([x.replace('—',',').strip() for x in v] if k=='body_paragraphs' else v.replace('—',',').strip() if isinstance(v,str) else v) for k,v in d.items()}
 
-REVIEW_CHECKS=('headline_supported','population_preserved','claim_status_preserved','no_unstated_effects','main_story_only','english_only')
+REVIEW_CHECKS=('headline_supported','population_preserved','claim_status_preserved','no_unstated_effects','main_story_only','english_only','plain_english')
 REVIEW_SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'boolean'} for k in REVIEW_CHECKS},'reason':{'type':'string','maxLength':300}},'required':list(REVIEW_CHECKS)+['reason']}
 @validation_errors('scope_review')
 def review_scope(draft,compiled,deadline=None,paper=False):
@@ -341,6 +357,7 @@ def review_scope(draft,compiled,deadline=None,paper=False):
       'claim_status_preserved: forecasts, corporate claims, opinions, preprints and abstract-only readings are not presented as independently established outcomes. '
       'no_unstated_effects: no invented effects, causality or benefit to all people from a company gain. '
       'english_only: every public field is in English, apart from conventional proper names. Private support quotes are exempt. '
+      'plain_english: a high-school reader with no specialist background can understand every public field, including for_humans and for_ai. Necessary jargon and acronyms are explained, sentences are short, effects are concrete, and the boxes describe the source rather than praise the summary. Reject advice to a user presented as an AI outcome. '
       'main_story_only: unrelated newsletter teasers and navigation are not merged into the main story. An empty for_humans or for_ai is allowed when that dimension is unstated. Give a reason of at most 300 characters.\nSOURCE METADATA: '+json.dumps(metadata,ensure_ascii=False)+'\nCOMPLETE ORIGINAL SOURCE PASSAGES IN ORDER: '+json.dumps(catalog,ensure_ascii=False))
     prompt+=claim_grounding.INSTRUCTIONS+'\nSelect citations by quote_id from the complete original-source catalog above. Do not retype, translate, or paraphrase quotations. Every original character is included; consecutive passages may continue the same sentence. The catalog is not selected by the writer. Cite only passages that actually support every claim in the field.\nCLAIM STATUS: '+str(draft.get('claim_status',''))+'\nFIELDS TO REVIEW: '+json.dumps(claim_grounding.units(draft),ensure_ascii=False)
     # Nano has a 400k-token context. Keep complete paper evidence in the
@@ -382,6 +399,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  prompt+='SOURCE FIDELITY: Preserve the source’s actual position, including strong criticism; a calm Brief tone must not soften or reverse its argument. Attribute company benefits, projected savings and interview opinions. Identify the evidence type accurately: a Perspective is an argument, one classroom anecdote is not a general survey, and qualitative interviews do not establish causation. Preserve exact comparison targets and translated meanings. Use source-supported conventional personal names; never invent an English identity from an uncertain transliteration. Do not infer the subject country from the publisher’s language or discovery label. The independent final verifier checks these dimensions separately and rejects uncertainty.\n'
  prompt+='Character limits per text field: '+json.dumps(FIELD_LIMITS)+'\n'
  if kind=='news':
+  prompt+=news_reading.INSTRUCTIONS+'\n'
   prompt+='For a short event announcement, describe only the announced host, speaker, place and explicit questions or topics. Treat questions as questions. Do not claim the event will demystify AI, use plain language, teach an audience, avoid hype, produce benefits or answer those questions unless the source explicitly says so. In why_it_matters, state the concrete invitation or discussion topic and its announcement-only scope; do not invent an educational outcome.\n'
  if kind in ('preprint','abstract'):prompt+='This is abstract-only research. claim_status must be study. State the abstract-only scope and, where applicable, preprint status in limitation. Never say the full paper lacks validation, methods or results merely because those details are absent from the abstract; say they were not assessed in this reading.\n'
  schema=draft_schema(sources,kind)
@@ -406,6 +424,16 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
    draft=copy.deepcopy(event['draft_seed']) if attempt==0 and isinstance(event.get('draft_seed'),dict) else call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft',paper=kind=='paper')
    draft=resolve_support(draft,catalog)
+   if kind=='news' and news_reading.style_problem(draft):
+    readable_schema=copy.deepcopy(SCHEMA)
+    readable_schema['properties'].pop('support')
+    readable_schema['required'].remove('support')
+    public_draft={k:draft.get(k) for k in readable_schema['required']}
+    editing_prompt=('Edit the public news draft using this reader contract. Preserve its facts, attribution, uncertainty, dates, numbers and source position. Add no claims or examples. Keep empty dimensions empty. Private support is retained separately, and all finished fields will be checked against the original sources.\n'
+      +news_reading.INSTRUCTIONS+'\nCorrection required: '+news_reading.style_problem(draft)+'\nDRAFT: '+json.dumps(public_draft,ensure_ascii=False))
+    edited=call_json(editing_prompt,readable_schema,deadline=deadline,attempt=attempt,stage='reading_level')
+    if any(k not in edited for k in readable_schema['required']):raise ValueError('The draft has an empty required field.')
+    draft.update({k:edited[k] for k in readable_schema['required']})
    if (kind=='paper' and not (attempt==0 and isinstance(event.get('draft_seed'),dict))) or (kind in ('preprint','abstract','paper') and style_problem(draft)):
     readable_schema=copy.deepcopy(SCHEMA)
     readable_schema['properties'].pop('support')
