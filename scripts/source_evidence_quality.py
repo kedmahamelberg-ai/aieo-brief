@@ -5,12 +5,12 @@ import hashlib
 import re
 from typing import Any
 
-QUALITY_VERSION = "stored_source_quality_v4"
+QUALITY_VERSION = "stored_source_quality_v5"
 ACCESS_GATES = (
     r"you have\s+\d+(?:[.,]\d+)?\s*%\s+of (?:this|the) article",
     r"(?:remaining|reste)\s+\d+(?:[.,]\d+)?\s*%",
     r"(?:subscribe|sign in|log in) to (?:continue reading|read (?:the full|this) article)",
-    r"(?:cet article|la suite de cet article) est r[eé]serv[eé](?:e)? aux abonn[eé]s",
+    r"(?:cet article|la suite de cet article) est r[eé]serv[eé](?:e)? (?:aux|[aà] nos) abonn[eé]s",
     r"already (?:a subscriber|subscribed)\??\s*(?:sign|log) in",
     r"enable javascript and cookies to continue",
     r"checking (?:your browser|if the site connection is secure)",
@@ -41,6 +41,10 @@ def assess_body(row: dict[str, Any], *, language: str = "") -> dict[str, Any]:
         flags.append("unrendered_or_unavailable_source")
     if len(body) < 1000 and "热点阅读" in body and "打开东方财富APP查看更多内容" in body:
         flags.append("article_navigation_only")
+    if ((len(body) < 1000 and '正文' in body and '更多内容请看' in body)
+            or (len(body) < 1000 and '当前位置' in body and 'Produced By CMS' in body)
+            or (len(body) < 2000 and '相关链接' in body and len(re.findall(r'^- ', body, re.M)) >= 20)):
+        flags.append('article_navigation_only')
     if len(body) < 500 and re.search(r"(?:新华社)?音视频部制作\s*$", body):
         flags.append("video_caption_only")
     basis = str(row.get("content_basis") or "")
