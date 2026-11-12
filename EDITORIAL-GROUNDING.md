@@ -1,5 +1,34 @@
 # Source-grounded editorial publication
 
+## News readability review, 12 November 2026
+
+The current edition is 2026-W45 (2–8 November), with 74 news stories. The
+field-level audit in `data/editorial/plain-language-corrections-2026-11-12.json`
+revises all 148 implication boxes, simplifies headlines, and repairs source
+position or event timing where needed. It records source hashes, previous text,
+replacements and actual reading scope. Publisher bodies and private quotations
+are not committed. Four records contain an unavailable article, paywall preview
+or navigation instead of full text; their summaries are withheld. Five further
+records are explicitly limited to written introductions or notices rather than
+the linked interview, video or PDF report. Other records were read as complete
+retained written pages; that does not independently verify publisher claims.
+
+Future news uses the contract in `scripts/news_reading.py`: familiar words for a
+reader aged 14–18 without specialist knowledge, concrete effects, and no praise
+of the summary itself. Each box allows up to two sentences, 26 words per sentence
+and 50 words total. A bounded local check sends jargon or dense boxes back for
+editing. An independent `plain_english` review checks all finished public fields
+alongside the existing factual and original-source citation checks. Empty
+dimensions remain allowed; readability is never a reason to invent an outcome.
+The new engine version refreshes future generation fingerprints. Existing
+reviewed corrections stay locked against automatic overwriting.
+
+Sentence limits and a phrase list do not certify a school reading grade. Final
+source review and editorial judgment remain necessary. The source quality check
+now also rejects the observed French paywall wording and Chinese navigation-only
+page patterns. Changes to news sources do not grant approval to rewrite signed
+weekly overview prose; its existing approval and source-hash rules still apply.
+
 The 26 October 2026 audit confirmed errors in 22 news items and seven research items, in addition to the previously corrected France Travail provenance. The approved field-level replacements and previous wording are recorded in `data/editorial/approved-corrections-2026-10-26.json`. Pending cases are explicitly locked and unchanged. The CIIS item changes the institute name only; report verification remains pending.
 
 ## Failure mechanisms found
