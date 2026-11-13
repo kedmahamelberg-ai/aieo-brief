@@ -519,6 +519,15 @@ class WeeklyEditorialTests(unittest.TestCase):
         for _ in range(2):
             _apply_visual_correction(overview, self.root)
             self.assertEqual(overview['markets'], section)
+        # A display-only edit to the new approval must supersede the cached
+        # current record before that discarded copy receives visual corrections.
+        updated = copy.deepcopy(approval)
+        updated['markets']['image_reason_visible'] = False
+        (directory / 'approved' / (self.release['release_id'] + '.json')).write_text(json.dumps(updated))
+        (directory / 'history.json').write_text(json.dumps({
+            'schema_version': 'aieo_weekly_overview_archive_v1', 'overviews': [overview]}))
+        rebuilt, _ = prepare_weekly_overviews(self.news, self.papers, self.release, self.root, write_archive=True)
+        self.assertEqual(rebuilt['markets'], updated['markets'])
         overview['markets']['image_path'] = 'assets/unapproved.jpg'
         with self.assertRaisesRegex(ValueError, 'Approved weekly image changed'):
             _apply_visual_correction(overview, self.root)

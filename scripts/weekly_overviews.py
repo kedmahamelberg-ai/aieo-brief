@@ -443,7 +443,10 @@ def prepare_weekly_overviews(
                     section.get('image_path') == NATURE_IMAGES[kind]['image_path']):
                 raise ValueError(f'{release_id} {kind} needs a current, verified public-domain photograph before publication')
     for archived in records.values():
-        _apply_visual_correction(archived, Path(root))
+        # The current cached copy is replaced below. It may predate the latest
+        # owner approval or a display correction and must not block that update.
+        if archived.get('release_id') != release_id:
+            _apply_visual_correction(archived, Path(root))
     current.pop('content_sha256', None)
     current['content_sha256'] = hashlib.sha256(
         json.dumps(current, sort_keys=True, ensure_ascii=False, separators=(',', ':')).encode('utf-8')
