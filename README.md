@@ -49,8 +49,11 @@ items were checked against their original official written pages on 13 November
 2026; `data/governments/initial-source-checks.json` retains URLs and body hashes,
 not publisher text. Automatic checks can still make mistakes.
 
-The default view lists announcements by publication day, newest first, with
-the announcement date inside each news card. The country view groups by issuing government and
+The day overview includes the current week’s checked announcements and shuffles
+them on every entrance or refresh. A saved browser reading order prevents an
+identical repeat when at least two items are available. Publication dates stay
+inside each card. A quiet new week uses the latest week with checked items and
+labels it accordingly. The country view groups by issuing government and
 can filter one country. Both views reuse the same article identities, cards and
 existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
