@@ -976,7 +976,7 @@
       "full_text_retry_after": "2026-11-17",
       "pdf_url": "https://arxiv.org/pdf/2611.12878v1",
       "journal_reference": "",
-      "affiliation_checked_at": "2026-11-13T15:51:18.263825+00:00",
+      "affiliation_checked_at": "2026-11-13T15:56:00.656737+00:00",
       "paper_pages": 8,
       "publisher": "arXiv",
       "reading_minutes": 1,
@@ -1009,13 +1009,16 @@
         "Aritra Mitra"
       ],
       "source": "arxiv",
-      "institutions": [],
+      "institutions": [
+        "North Carolina State University"
+      ],
       "pdf_reader_version": 2,
       "headline": "Batched data updates keep learning fast on slow networks",
       "claim_status": "study",
       "paper_text_sha256": "03409eb28b8c9a67ee7e983c76d8b1d65ffd8c36d8d1615de7c78544d1836338",
       "limitation": "The conclusions come from a specific setup with linear methods and randomly drawn samples. Results depend on finite capacity and chosen batch sizes; not a universal guarantee for all AI training.",
-      "url": "https://arxiv.org/abs/2611.12878v1"
+      "url": "https://arxiv.org/abs/2611.12878v1",
+      "affiliation_source_url": "https://openalex.org/W7225754424"
     },
     {
       "key": "paper:8afc4a99884a0341954374e7",
@@ -1357,7 +1360,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-13T15:51:18.263825+00:00",
+      "affiliation_checked_at": "2026-11-13T15:56:00.656737+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
