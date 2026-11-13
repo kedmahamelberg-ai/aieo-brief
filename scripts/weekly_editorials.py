@@ -178,8 +178,9 @@ def validate_citation_alignment(paragraphs, selected):
                 raise ValueError(f'weekly_citation_source_mismatch: paragraph {paragraph_index}, part {part_index}, {key}')
 
 
-def validate_public_weekly_sources(overview, raw_news, raw_research, public_news, public_research):
-    """Ensure the displayed article and every weekly link retain reviewed evidence."""
+def validate_public_weekly_sources(overview, raw_news, raw_research, public_news, public_research, *, root=None):
+    """Validate new evidence, or exact approved prose and its reachable links."""
+    approved = human_approval(root, overview['release_id']) if root is not None else {}
     for kind, raw_rows, public_rows in (('markets', raw_news, public_news),
                                         ('research', raw_research, public_research)):
         section = overview[kind]
@@ -187,7 +188,19 @@ def validate_public_weekly_sources(overview, raw_news, raw_research, public_news
             continue
         raw = {row['key']: row for row in raw_rows}
         public = {row['key']: row for row in public_rows}
+        reviewed = approved.get(kind, {})
+        # Visual corrections may replace image metadata, but cannot change the
+        # approved text, citations, evidence hashes, or independent checks.
+        snapshot = (reviewed.get('human_approved') is True and
+                    {k: v for k, v in section.items() if not k.startswith('image_')} ==
+                    {k: v for k, v in reviewed.items() if not k.startswith('image_')})
+        if snapshot:
+            validate_section(section)
         for key, digest in section['source_hashes'].items():
+            if snapshot:
+                if key not in public:
+                    raise ValueError('weekly_public_link_missing: ' + key)
+                continue
             if key not in raw or key not in public or not source_matches(section, key, raw[key], digest):
                 raise ValueError('weekly_public_source_changed: ' + key)
             for field in FIELDS:
@@ -540,6 +553,16 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
         available = {x['key']: x for x in eligible(rows, current)}
         reviewed = approved.get(kind, {})
         if reviewed:
+            if not allow_model:
+                # Publication is a snapshot. Refreshing a source may prepare a
+                # private replacement, but must never unpublish owner-approved
+                # prose, including the latest edition.
+                validate_section(reviewed)
+                if reviewed.get('human_approved') is not True:
+                    raise ValueError('weekly_human_approval_missing_marker')
+                current[kind] = copy.deepcopy(reviewed)
+                usage_history.append({kind: current[kind]})
+                continue
             if not ready_valid(reviewed, available):
                 # Keep the rest of the site publishable without presenting stale
                 # signed prose as if it still matched the current sources.

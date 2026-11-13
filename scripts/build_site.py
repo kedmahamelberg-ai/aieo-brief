@@ -398,7 +398,7 @@ def main():
     weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview),allow_model=(not preview and os.environ.get('BRIEF_WRITE_WEEKLY_OVERVIEWS')=='true'),source_news=weekly_source_news,source_research=weekly_source_research)
     weekly_items=engagement_items(overview_archive)
     weekly_items_by_key={item['key']:item for item in weekly_items}
-    validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,news,research)
+    validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,allcards,allcards,root=ROOT)
     if SITE.exists():shutil.rmtree(SITE)
     SITE.mkdir();shutil.copytree(ROOT/'assets',SITE/'assets',ignore=shutil.ignore_patterns('placeholder.txt'))
     prune_unreferenced_culture_photos(SITE, allcards, [weekly_overview, *overview_archive])
