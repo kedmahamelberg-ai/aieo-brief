@@ -449,7 +449,7 @@ class WeeklyEditorialTests(unittest.TestCase):
         self.assertTrue(result['markets']['human_approved'])
         self.assertTrue(result['research']['human_approved'])
 
-    def test_changed_approved_sources_leave_only_that_section_pending(self):
+    def test_changed_approved_sources_preserve_latest_published_edition(self):
         generated = self.generate()
         approval = {'release_id': self.release['release_id'], 'human_approved_at': '2026-10-12T00:00:00Z'}
         for kind in ('markets', 'research'):
@@ -462,14 +462,24 @@ class WeeklyEditorialTests(unittest.TestCase):
         changed_news = copy.deepcopy(self.news)
         changed_news[0]['deck'] = 'A changed claim that requires fresh review.'
         result, _ = prepare_weekly_overviews(changed_news, self.papers, self.release, self.root)
-        self.assertEqual(result['editorial_status'], 'pending')
-        self.assertEqual(result['markets']['pending_reason'], 'approved_sources_changed')
-        self.assertFalse(result['markets']['prose'])
-        self.assertFalse(result['markets']['author'])
+        self.assertEqual(result['editorial_status'], 'ready')
+        self.assertEqual(result['markets'], approval['markets'])
         self.assertEqual(result['research'], approval['research'])
         self.assertEqual(json.loads(approval_path.read_text()), approval)
         validate_section(result['markets'])
-        validate_public_weekly_sources(result, changed_news, self.papers, changed_news, self.papers)
+        validate_public_weekly_sources(result, changed_news, self.papers, changed_news, self.papers, root=self.root)
+        # Feed removal and repeated archive writes cannot erase the approval.
+        for _ in range(2):
+            result, _ = prepare_weekly_overviews([], [], self.release, self.root, write_archive=True)
+            self.assertEqual(result['markets'], approval['markets'])
+            self.assertEqual(result['research'], approval['research'])
+            validate_public_weekly_sources(result, [], [], changed_news, self.papers, root=self.root)
+        with self.assertRaisesRegex(ValueError, 'weekly_public_link_missing'):
+            validate_public_weekly_sources(result, [], [], [], self.papers, root=self.root)
+        altered = copy.deepcopy(result)
+        altered['markets']['title'] = 'Unapproved replacement'
+        with self.assertRaisesRegex(ValueError, 'weekly_public_source_changed'):
+            validate_public_weekly_sources(altered, changed_news, self.papers, changed_news, self.papers, root=self.root)
 
     def test_private_review_regenerates_stale_approved_section(self):
         generated = self.generate()
@@ -484,12 +494,34 @@ class WeeklyEditorialTests(unittest.TestCase):
         changed_news = copy.deepcopy(self.news)
         changed_news[0]['deck'] = 'A changed claim that requires fresh review.'
         public, _ = prepare_weekly_overviews(changed_news, self.papers, self.release, self.root)
-        self.assertEqual(public['markets']['status'], 'pending')
+        self.assertEqual(public['markets'], approval['markets'])
         private = apply_editorials(public, changed_news, self.papers, self.root, [], allow_model=True, call=self.call)
         self.assertEqual(private['editorial_status'], 'ready')
         self.assertNotEqual(private['markets']['source_hashes'], approval['markets']['source_hashes'])
         self.assertEqual(private['research'], approval['research'])
         self.assertEqual(json.loads(path.read_text()), approval)
+
+    def test_new_owner_approved_image_supersedes_older_visual_correction(self):
+        from weekly_overviews import _apply_visual_correction
+        section = self.generate()['markets']
+        section['human_approved'] = True
+        approval = {'release_id': self.release['release_id'],
+                    'human_approved_at': '2026-11-13T18:18:03Z', 'markets': section}
+        directory = self.root / 'data/weekly-overviews'
+        (directory / 'approved').mkdir(parents=True)
+        (directory / 'approved' / (self.release['release_id'] + '.json')).write_text(json.dumps(approval))
+        (directory / 'visual-corrections').mkdir()
+        (directory / 'visual-corrections' / (self.release['release_id'] + '.json')).write_text(json.dumps({
+            'schema_version': 'brief_weekly_visual_correction_v1',
+            'release_id': self.release['release_id'], 'sections': {'markets': {
+                'previous_image_path': 'assets/old-approved.jpg', 'image_path': 'assets/old-correction.jpg'}}}))
+        overview = {**self.release, 'markets': copy.deepcopy(section)}
+        for _ in range(2):
+            _apply_visual_correction(overview, self.root)
+            self.assertEqual(overview['markets'], section)
+        overview['markets']['image_path'] = 'assets/unapproved.jpg'
+        with self.assertRaisesRegex(ValueError, 'Approved weekly image changed'):
+            _apply_visual_correction(overview, self.root)
 
     def test_citation_cannot_describe_another_selected_story(self):
         sources = [

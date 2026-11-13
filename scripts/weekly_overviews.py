@@ -318,6 +318,13 @@ def _apply_visual_correction(overview: dict, root: Path) -> None:
             continue
         approved_paths = {values['previous_image_path'], values['image_path'], *values.get('legacy_image_paths', [])}
         if section.get('image_path') not in approved_paths:
+            from weekly_editorials import human_approval, validate_section
+            reviewed = human_approval(root, release_id).get(kind, {})
+            if section == reviewed and reviewed.get('human_approved') is True:
+                # This correction targets an older approved image. A later
+                # exact owner approval supersedes it; retain the new image.
+                validate_section(reviewed)
+                continue
             raise ValueError(f'Approved weekly image changed before visual correction: {release_id} {kind} {section.get("image_path")}')
         try:
             taken = date.fromisoformat(values['image_taken_date'])
@@ -346,7 +353,7 @@ def _restore_archived_approvals(records: dict[str, dict], root: Path, *, current
     Historical editions are records of what was published that week. Current
     source refreshes must not rewrite them. News approvals retain the reviewed
     prose and source links, while research approvals also embed paper evidence.
-    The current edition still goes through live source checks in apply_editorials.
+    Public rebuilds also preserve the current owner approval in apply_editorials.
     """
     from weekly_editorials import human_approval, ready_valid, validate_citation_alignment, validate_section
 

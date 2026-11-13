@@ -57,8 +57,12 @@ author byline. GitHub warns when manual attention is needed. Do not edit ready
 prose or source provenance to bypass checks.
 
 Approved sections are cached with hashes of their selected public sources.
-Daily ordering and rebuilds preserve the prose and pictures. Changes or withdrawal
-of a selected summary invalidate that section. Earlier archive records remain intact.
+Daily ordering and rebuilds preserve approved prose, including the latest edition.
+Changes to a selected summary can trigger a private replacement review; the
+published approval stays visible until the owner approves its replacement.
+Public builds verify the saved approval and require all cited story links to
+remain reachable through the story archive. New drafts still require current
+source hashes and a fresh owner approval before publication.
 
 Search indexing checks require sitemap entries to use the same canonical URLs as
 their HTML, reject duplicates and accidental public noindex, and verify all local
