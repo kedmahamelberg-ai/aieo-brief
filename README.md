@@ -33,6 +33,31 @@ npm run test:database
 
 ## Automatic operation
 
+`Governments say` reuses the Monitor's existing government feed; it does not
+run another government discovery or scraping collection. A daily 16:20 UTC
+workflow filters candidates from the retained English summaries, then reads
+only their already-linked official announcements to double-check substantive
+AI content. The Monitor's security-relevance labels are not AI inclusion rules.
+An independent original-source review checks relevance, attribution and simple
+English before publication. Briefs have headlines of at most 16 words and
+summaries of at most 45 words. Inaccessible or doubtful items remain unpublished
+and retry; a corrected source withdraws the superseded summary while its article
+URL and discussion remain available with a checking notice. The initial eight
+items were checked against their original official written pages on 13 November
+2026; `data/governments/initial-source-checks.json` retains URLs and body hashes,
+not publisher text. Automatic checks can still make mistakes.
+
+The default view shows the latest available publication day; readers can select
+an earlier day or all days. The country view groups by issuing government and
+can filter one country. Both views reuse the same article identities, cards and
+existing consent-based engagement services. Occasional country-context images
+come from the existing public-domain/CC0 photo registry with visible source,
+credit and rights links. Country-context images are not presented as event photos.
+The workflow uses the existing bounded AI runtime and publishing credentials,
+preserves checked data on source failures, and triggers the usual validated
+Pages build even after partial collection failure. It reuses the configured
+OpenAI or local provider, starting the existing local model only for pending work.
+
 - The daily 12:15 UTC job checks for unfinished news and research published in the last seven days before loading its local model.
 - Successful news versions are saved individually to Supabase. A failed draft retains its source link, and subsequent passes prioritise less-attempted items.
 - Daily default writing budgets are 45 minutes for news and 15 for research. A no-change pass does not download/start the model. GitHub runner minutes still apply.

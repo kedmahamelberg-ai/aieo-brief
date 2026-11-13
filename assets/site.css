@@ -85,3 +85,9 @@
 .weekly-reading small{display:block;color:var(--muted);font-size:.76rem;margin-top:2px}
 .weekly-byline{font-size:.9rem;color:var(--ink);margin:12px 0 20px}
 .weekly-image-metaphor{font-size:.9rem;line-height:1.6;color:var(--muted);margin:0 0 12px}
+/* Government announcements share the newspaper's feed typography and actions. */
+.government-card h3{font:inherit;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.2;font-weight:650;margin:.5rem 0 .75rem;letter-spacing:-.025em}
+.government-group-title{font-size:1rem;letter-spacing:.06em;text-transform:uppercase;border-bottom:2px solid #122b3d;padding:1.5rem 0 .65rem;margin:0}
+.government-country{font-weight:750}.government-photo{margin:0 0 1.25rem}.government-photo img{width:100%;height:auto;max-height:330px;object-fit:cover;display:block}.government-photo figcaption{font-size:.75rem;line-height:1.5;color:#53616c;padding-top:.4rem}.government-controls label{font-size:.85rem}.government-page .research-intro{max-width:850px}
+
+.government-page .reading-layout{grid-template-columns:minmax(0,1fr);max-width:900px}

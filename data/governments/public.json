@@ -1,0 +1,100 @@
+{
+  "policy": "government-ai-brief-v2",
+  "monitor_as_of": "2026-11-13T14:00:00+00:00",
+  "last_checked_at": "2026-11-13T18:41:11.341856+00:00",
+  "records": {
+    "53e1cfaad5e0566e4ea1": {
+      "id": "53e1cfaad5e0566e4ea1",
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/exteriores/Paginas/2026/que-es-la-30-cumbre-iberoamericana.aspx",
+      "date": "2026-11-13",
+      "headline": "Spain outlines plans for AI cooperation before regional summit",
+      "summary": "Spain says countries are working on AI together ahead of the Ibero-American Summit. Plans cover shared access to data, AI tools for local languages and computer power.",
+      "input_fingerprint": "5848d48130119d47b14e97bd152f73d7ce59829b3b5d5b1d4fda42ebe8002976"
+    },
+    "eefc381d2bfb99dc1716": {
+      "id": "eefc381d2bfb99dc1716",
+      "country": "Sweden",
+      "country_code": "SE",
+      "url": "https://www.regeringen.se/pressmeddelanden/2026/11/statsministern-till-dublin-for-informellt-mote-i-europeiska-radet-och-internationellt-toppmote/",
+      "date": "2026-11-12",
+      "headline": "Sweden joins European talks on AI and society",
+      "summary": "Sweden says its prime minister will attend European meetings in Dublin. Leaders plan to discuss how AI could affect European businesses and society.",
+      "input_fingerprint": "8d196e2408bc7d7e12867e23c059f3586cbf4bc5fa72f4c71419e5edfe8404d9"
+    },
+    "3090da02f395b8809131": {
+      "id": "3090da02f395b8809131",
+      "country": "Slovenia",
+      "country_code": "SI",
+      "url": "https://www.gov.si/novice/2026-11-12-19-redna-seja-vlade-republike-slovenije/",
+      "date": "2026-11-12",
+      "headline": "Slovenia sets up a council to advise on AI",
+      "summary": "Slovenia says it has created a 48-member council on AI and digital services. The group will advise the prime minister on developing and using AI.",
+      "input_fingerprint": "71c9f115f4cee4104332c9ad3334575059e836616936eeddb6ddbf53a65e3d09"
+    },
+    "2e8803a578995adb3b60": {
+      "id": "2e8803a578995adb3b60",
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/igualdad/Paginas/2026/121126-campana-eliminacion-violencia-genero.aspx",
+      "date": "2026-11-12",
+      "headline": "Spain warns about fake sexual images made with AI",
+      "summary": "Spain has presented a campaign about AI-made sexual images shared without consent. The government calls this violence against women and urges people to take responsibility for what they share.",
+      "input_fingerprint": "0ad1732adae1eed8f3424a2e70dda226834c12816a2811bf2a4ae2036759fd1a"
+    },
+    "45c2e6222fa2bcdee437": {
+      "id": "45c2e6222fa2bcdee437",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/peaminister-teel-dublinisse-euroopa-otsustab-ise-oma-julgeoleku-ule",
+      "date": "2026-11-11",
+      "headline": "Estonia calls for stronger and safer European AI",
+      "summary": "Estonia says European leaders will discuss how to build more AI in Europe and use it safely. Its prime minister calls for AI that people can trust and control.",
+      "input_fingerprint": "0ab0c31e4fcc4b340193d507584213765819e17929c39b6e4ebebc17da467cbe"
+    },
+    "24fdfa2b534e112c3d66": {
+      "id": "24fdfa2b534e112c3d66",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/index.php/ro/comunicate-de-presa/premierul-vasile-tofan-discutii-cu-reprezentantii-bancii-mondiale",
+      "date": "2026-11-10",
+      "headline": "Moldova discusses AI projects with the World Bank",
+      "summary": "Moldova says its prime minister discussed possible AI projects with the World Bank. The talks covered using new technology to help people get work done and testing new ideas in Moldova.",
+      "input_fingerprint": "ca9d5af393cf5705210c1b6fba9eb7f1b7c451420a11f80bdf8081d03dfa5c16"
+    },
+    "13446e75e78b5701a66c": {
+      "id": "13446e75e78b5701a66c",
+      "country": "United States",
+      "country_code": "US",
+      "url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-critical-infrastructure-security-and-resilience-month-aa39/",
+      "date": "2026-11-10",
+      "headline": "White House links AI data centres to its infrastructure plans",
+      "summary": "The White House says it is investing in data centres for advanced AI. It says technology companies have agreed to pay for the extra power and grid upgrades their centres need, instead of passing those costs to households.",
+      "input_fingerprint": "95d10a76af444638969dd2df3749ec0c5dc2765d9cf7943ea15b7b341a52ebc4"
+    },
+    "6857c69aceb6a6926df6": {
+      "id": "6857c69aceb6a6926df6",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "https://www.gov.uk/government/news/pm-call-with-president-macron-of-france-9-november-2026",
+      "date": "2026-11-09",
+      "headline": "UK plans to make AI a priority at the G20",
+      "summary": "The UK says its prime minister discussed AI benefits and risks with France’s president. It plans to put AI high on the agenda during its 2027 G20 presidency and work on shared international standards.",
+      "input_fingerprint": "b567fc90e23d6e249a4741417794dc67c7d1e230e8d39d8653f5cb53040a8d39"
+    }
+  },
+  "checked": {
+    "53e1cfaad5e0566e4ea1": "5848d48130119d47b14e97bd152f73d7ce59829b3b5d5b1d4fda42ebe8002976",
+    "eefc381d2bfb99dc1716": "8d196e2408bc7d7e12867e23c059f3586cbf4bc5fa72f4c71419e5edfe8404d9",
+    "3090da02f395b8809131": "71c9f115f4cee4104332c9ad3334575059e836616936eeddb6ddbf53a65e3d09",
+    "2e8803a578995adb3b60": "0ad1732adae1eed8f3424a2e70dda226834c12816a2811bf2a4ae2036759fd1a",
+    "45c2e6222fa2bcdee437": "0ab0c31e4fcc4b340193d507584213765819e17929c39b6e4ebebc17da467cbe",
+    "24fdfa2b534e112c3d66": "ca9d5af393cf5705210c1b6fba9eb7f1b7c451420a11f80bdf8081d03dfa5c16",
+    "13446e75e78b5701a66c": "95d10a76af444638969dd2df3749ec0c5dc2765d9cf7943ea15b7b341a52ebc4",
+    "6857c69aceb6a6926df6": "b567fc90e23d6e249a4741417794dc67c7d1e230e8d39d8653f5cb53040a8d39"
+  },
+  "retry": {},
+  "pending": 117,
+  "failures": []
+}

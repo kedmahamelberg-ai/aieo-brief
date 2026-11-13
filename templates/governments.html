@@ -1,0 +1,31 @@
+{% extends 'base.html' %}{% from 'components.html' import actions with context %}
+{% block title %}Governments say · AI announcements | The Brief{% endblock %}
+{% block description %}Short, source-linked AI announcements from governments. Browse the day’s overview or explore by country.{% endblock %}
+{% block content %}
+<main id="main-content" class="page-shell government-page">
+<header class="research-intro"><span class="eyebrow">GOVERNMENTS & AI</span><h1>Governments say.</h1></header>
+<div class="reading-layout">
+<section class="feed-column" aria-label="Government AI announcements">
+<div class="feed-controls government-controls" data-government-controls hidden>
+<div class="market-tabs" aria-label="Browse announcements"><button type="button" data-government-view="day" aria-pressed="true">Day overview</button><button type="button" data-government-view="country" aria-pressed="false">By country</button></div>
+<div class="filter-line"><label data-day-control>Announcement date <select id="government-day"><option value="all">All days</option>{% for day,group in items|groupby('date')|reverse %}<option value="{{ day }}" {% if loop.first %}selected{% endif %}>{{ group[0].display_date }}</option>{% endfor %}</select></label><label data-country-control hidden>Country <select id="government-country"><option value="all">All countries</option>{% for country,group in items|groupby('country') %}<option value="{{ group[0].country_code }}">{{ country }}</option>{% endfor %}</select></label></div>
+<p class="filter-status" id="government-status" aria-live="polite"></p>
+</div>
+<div id="government-feed">
+{% for day,group in items|groupby('date')|reverse %}<section class="government-group"><h2 class="government-group-title">{{ group[0].display_date }}</h2>
+{% for item in group %}
+<article class="feed-story government-card" data-story-card data-key="{{ item.key }}" data-kind="news" data-markets="" data-topic="policy" data-direction="none" data-search="{{ (item.headline ~ ' ' ~ item.deck ~ ' ' ~ item.publisher)|lower }}" data-country="{{ item.country_code }}" data-country-name="{{ item.country }}" data-date="{{ item.date }}" data-display-date="{{ item.display_date }}">
+{% if item.government_photo %}<figure class="government-photo"><img src="{{ local(item.government_photo.path) }}" alt="{{ item.government_photo.alt }}" loading="lazy" width="1200" height="675"><figcaption>{{ item.government_photo.caption }} <a href="{{ item.government_photo.source_url }}" target="_blank" rel="noopener noreferrer">{{ item.government_photo.credit }}</a> · <a href="{{ item.government_photo.license_url }}" target="_blank" rel="noopener noreferrer">{{ item.government_photo.license }}</a></figcaption></figure>{% endif %}
+<div class="story-kicker"><span class="government-country">{{ item.country }}</span><span>GOVERNMENT STATEMENT</span></div>
+<h3><a href="{{ local(item.path) }}">{{ item.headline }}</a></h3><p class="story-deck">{{ item.deck }}</p>
+<div class="source-line"><time datetime="{{ item.date }}">{{ item.display_date }}</time><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-source-link data-key="{{ item.key }}">Official announcement ↗</a><a class="read-link" href="{{ local(item.path) }}">Read & discuss →</a></div>
+{{ actions(item) }}
+</article>
+{% endfor %}</section>{% endfor %}
+</div>
+{% if not items %}<div class="empty-state"><h2>No checked AI announcements yet.</h2><p>New items appear after their content has passed the AI relevance check. You can also <a href="https://monitor.hamelberg-ai.com/#government">visit the Monitor’s collected announcements</a>.</p></div>{% endif %}
+</section>
+
+</div></main>
+<script src="{{ local('assets/governments.js') }}" defer></script>
+{% endblock %}

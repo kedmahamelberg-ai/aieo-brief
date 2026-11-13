@@ -67,7 +67,7 @@
  else if(action==='export-data')await downloadData();else if(action==='delete-profile'&&confirm('Delete your Brief comments, likes, saves and profile? This cannot be undone.')){await Community.rpc('brief_community_delete_profile');saved.clear();remoteSaves.clear();remember();await Community.signOut();Analytics.event('sign_out');await window.BriefUX?.flush(true);location.href=new URL('index.html',rootURL).href;}
  }catch(err){toast(err.message||'This action could not be completed. Please try again.');}});
  document.querySelectorAll('[data-share-channel]').forEach(a=>a.addEventListener('click',()=>Analytics.event('share_option',{story_key:shareItem?.key||'',channel:a.dataset.shareChannel})));
- document.querySelectorAll('[data-source-link]').forEach(a=>a.addEventListener('click',()=>Analytics.event('source_open',{story_key:storyKey||''})));
+ document.querySelectorAll('[data-source-link]').forEach(a=>a.addEventListener('click',()=>Analytics.event('source_open',{story_key:a.dataset.key||storyKey||''})));
  document.querySelectorAll('[data-sponsor-link]').forEach(a=>a.addEventListener('click',()=>Analytics.event('sponsor_click',{placement:'sponsor'})));
  document.querySelectorAll('[data-read-mode]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-read-mode]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));document.querySelectorAll('[data-full-read]').forEach(x=>x.hidden=b.dataset.readMode==='quick');updateProgress();}));
  let seconds=0,progress=0,readSent=false,readEventSent=false,nextReadAttempt=0,readAttempts=0;
