@@ -47,6 +47,7 @@ def accepted_review(draft=None):
     default, sources = fixture()
     draft = draft or default
     return {**dict.fromkeys(engine.REVIEW_CHECKS + engine.claim_grounding.CHECKS, True), 'reason': 'Supported.',
+            'box_effects': {'human': 'loss' if draft.get('for_humans') else 'none', 'ai': 'none'},
             'field_reviews': [{'field': key, 'verdict': 'supported', 'reason': 'Test verifier fixture.',
                                'citations': [{'source_number': 1, 'quote': sources[0]['evidence'][:42]}]}
                               for key in engine.claim_grounding.units(draft)]}

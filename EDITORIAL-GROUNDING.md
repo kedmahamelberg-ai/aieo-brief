@@ -1,5 +1,37 @@
 # Source-grounded editorial publication
 
+## Concise boxes and effect labels, 13 November 2026
+
+The follow-up audit in `data/editorial/concise-box-corrections-2026-11-13.json`
+reviews all 74 current news stories and replaces all 148 implication boxes.
+Every replacement is one sentence of at most 21 words. It uses the preceding
+complete-source audit, preserves its source hashes and reading scopes, and
+revisits retained passages where needed. The two inaccessible full articles
+remain explicitly unassessed. No publisher body text is committed.
+
+Every box now displays a label: Benefits, Risks, Benefits and risks, or
+No direction stated. The labels describe the named side separately. A firm
+gaining reach is compatible with people facing harm. Plans and opinions can
+describe potential benefits or risks without measured outcomes. New rules do
+not automatically imply harm; neutral proposals and unstated effects retain a
+neutral label. The audit corrects misleading positive labels and restores labels
+that the earlier display cleanup had hidden, including the small-firm article.
+
+Future boxes have one sentence and at most 25 words, using familiar words and
+leading with the effect. Attribution in the headline/body can establish the
+opinion context; short qualifiers retain uncertainty. Specific company-reported
+or disputed results still need attribution. Repeated author/columnist framing
+and generic measurement caveats are removed from the boxes. A specific safety
+or capability limit stays when it is the actual implication.
+
+The final full-source review now independently returns both `box_effects`.
+Missing or invalid effect readings prevent persistence before any database
+write. These readings travel in existing version metadata to rendering; the
+display cannot reuse a stale positive label from the upstream classification.
+Publication checks reject missing/mismatched labels and overlong reviewed
+boxes. Underlying source/export classifications are not rewritten. Limits still
+appear at the end after the boxes and source links.
+
 ## News readability review, 12 November 2026
 
 The current edition is 2026-W45 (2–8 November), with 74 news stories. The
@@ -17,8 +49,8 @@ retained written pages; that does not independently verify publisher claims.
 
 Future news uses the contract in `scripts/news_reading.py`: familiar words for a
 reader aged 14–18 without specialist knowledge, concrete effects, and no praise
-of the summary itself. Each box allows up to two sentences, 26 words per sentence
-and 50 words total. A bounded local check sends jargon or dense boxes back for
+of the summary itself. The follow-up review above tightens the original
+two-sentence allowance to one sentence and 25 words. A bounded local check sends jargon or dense boxes back for
 editing. An independent `plain_english` review checks all finished public fields
 alongside the existing factual and original-source citation checks. Empty
 dimensions remain allowed; readability is never a reason to invent an outcome.

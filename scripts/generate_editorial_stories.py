@@ -134,6 +134,8 @@ def persist(client,item,release,draft,proof):
         public_sha=hashlib.sha256(json.dumps(claim_grounding.units(draft),sort_keys=True,ensure_ascii=False).encode()).hexdigest()
         if grounding.get('version')!=claim_grounding.VERSION or grounding.get('public_sha256')!=public_sha:
             raise EditorialError('publication_proof_mismatch','Draft lacks a matching final grounding proof.',stage='persistence')
+        from news_reading import validate_effects
+        effects=validate_effects((proof.get('scope_review') or {}).get('box_effects'),draft)
     story=item['story'];eid=item['eid'];latest=item['latest'];relation=item['relation']
     if not story:
         story={'story_id':str(uuid.uuid4()),'event_id':eid,'slug':'development-'+eid,'status':'active'}
@@ -145,6 +147,9 @@ def persist(client,item,release,draft,proof):
         story=rows[0]
     basis={'prompt_version':PROMPT_VERSION,'source_release_sha256':release['content_sha256'],'release_id':release['release_id'],'axes_sha256':digest(relation['axes']),'axes':relation['axes'],'input_fingerprint':item['fp'],'editorial_source_fingerprint':editorial_source_fingerprint(item['event'],item['source_relationship']),'full_source_count':len(item['sources']),'model':MODEL,'claim_status':draft.get('claim_status','reporting'),'limitation':draft.get('limitation',''),'validation':'source_support_and_original_wording'}
     if not item['reuse']:basis['grounding_version']=claim_grounding.VERSION
+    if not item['reuse']:
+        # Labels come from the final independent reading of the finished boxes.
+        basis['box_effects']=effects
     if item['reuse']:
         basis['claim_status']=latest['evidence_basis_summary'].get('claim_status','reporting');basis['limitation']=latest['evidence_basis_summary'].get('limitation','')
         generated_id=latest.get('generated_artifact_id');basis={**latest['evidence_basis_summary'],**basis}

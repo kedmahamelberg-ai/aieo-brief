@@ -7,6 +7,7 @@ from urllib.parse import urlsplit,unquote
 from xml.etree import ElementTree
 from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 from research_reading import verified_paper_reading
+from news_reading import EFFECT_LABELS, style_problem as box_style_problem, validate_effects
 ROOT=Path(__file__).resolve().parents[1]
 PRIVATE_KEYS={'evidence_text','body_text','private_validation','segment_readings','support','evidence_basis_summary','supabase_secret_key','text_sha256','snapshot_id','evidence_ref','private_key','manage_token_hash','subscription_id','auth_key'}
 
@@ -14,6 +15,9 @@ def validate_news_layout(raw):
  if 'class="axis-grid"' not in raw:return
  if re.search(r'<strong\b[^>]*>\s*Evidence incomplete\s*</strong>',raw):
   raise ValueError('Internal reading status reached a public implication badge')
+ boxes=re.findall(r'<div class="axis-note [^"]*">(.*?)</div>',raw,re.S)
+ if len(boxes)!=2 or any(not any('<strong>'+label+'</strong>' in box for label in set(EFFECT_LABELS.values())) for box in boxes):
+  raise ValueError('Each news implication box must display a valid effect label')
  limit=raw.find('<h2>What this does not tell us</h2>')
  if limit<0:return
  people=raw.find('<h3>FOR PEOPLE</h3>')
@@ -21,6 +25,17 @@ def validate_news_layout(raw):
  sources=raw.find('<summary>Original sources')
  if people<0 or ai<people or limit<ai or sources<ai or limit<sources:
   raise ValueError('The news limits section must be at the end, after the implication boxes and sources')
+
+def validate_news_boxes(item):
+ for side in ('human','ai'):
+  if item.get(side+'_label')!=EFFECT_LABELS.get(item.get(side+'_direction')):
+   raise ValueError('News implication label does not match its direction: '+item.get('key','unknown'))
+ if item.get('box_effects') is not None:
+  effects=validate_effects(item['box_effects'],item)
+  if any(item.get(side+'_direction')!=effects[side] for side in effects):
+   raise ValueError('News implication direction differs from its reviewed box')
+  problem=box_style_problem(item)
+  if problem:raise ValueError(problem)
 
 class Page(HTMLParser):
  def __init__(self):super().__init__(convert_charrefs=True);self.links=[];self.ids=[];self.headings=0;self.script_data=[];self.capture=False;self.canonicals=[];self.robots=''
@@ -87,11 +102,7 @@ def validate(site):
   counts=collections.Counter(x[axis+'_direction'] for x in news)
   if any(counts[k]!=v for k,v in payload['directional_counts'][axis].items()):raise ValueError('Wrong '+axis+' totals')
  for item in news:
-  for side in ('human','ai'):
-   if item.get(side+'_label')=='Evidence incomplete':
-    raise ValueError('Internal reading status reached a public implication badge: '+item.get('key','unknown'))
-   if not str(item.get('for_humans' if side=='human' else 'for_ai') or '').strip() and item.get(side+'_label'):
-    raise ValueError('Blank directional reading has an unsupported public label: '+item.get('key','unknown'))
+  validate_news_boxes(item)
  for item in news+papers+culture:
   if not item['sources'] or len(item['sources'])!=item['source_count']:raise ValueError('Missing or inconsistent source list')
   if not (site/item['path']).is_file():raise ValueError('Story page missing')
