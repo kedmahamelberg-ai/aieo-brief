@@ -1,36 +1,48 @@
-{  
-"site_name": "AIEO Brief",  
-"site_url": "https://brief.hamelberg-ai.com",  
-"observatory_url": "https://observatory.hamelberg-ai.com",  
-"personal_site_url": "https://kedmahamelberg.com/",  
-"supabase_url": "https://tricsbvxamjzfeckivhz.supabase.co",  
-"supabase_publishable_key": "sb_publishable_MZIVSCpa5w6JAhSptPIqrQ_vTmzhbfF",  
-"ga4_measurement_id": "G-QC9205V7V7",  
-"community_enabled": true,  
-"adsense": {    
-"enabled": false,    
-"publisher_id": "ca-pub-5706650912346516",    
-"cmp_enabled": false,    
-"slots": {      
-"feed": "",      
-"rail": "",      
-"story": ""    
-},    
-"mode": "auto"  
-},  
-"sponsor": {    
-"enabled": false,    
-"name": "",    
-"message": "",    
-"url": "",    
-"starts": "",    
-"ends": ""  
-},  
-"support_url": "https://paypal.me/kedmaphd",  
-"newsletter_url": "https://observatory.hamelberg-ai.com/report/",  
-"privacy_contact_url": "https://observatory.hamelberg-ai.com/privacy/",  
-"revenue": {    
-"contact_url": "mailto:research@hamelberg-ai.com",    
-"offers": []  
-},  
-"visitor_total": {
+{
+  "site_name": "AIEO Brief",
+  "site_url": "https://brief.hamelberg-ai.com",
+  "observatory_url": "https://observatory.hamelberg-ai.com",
+  "personal_site_url": "https://kedmahamelberg.com/",
+  "supabase_url": "https://tricsbvxamjzfeckivhz.supabase.co",
+  "supabase_publishable_key": "sb_publishable_MZIVSCpa5w6JAhSptPIqrQ_vTmzhbfF",
+  "ga4_measurement_id": "G-QC9205V7V7",
+  "community_enabled": true,
+  "adsense": {
+    "enabled": false,
+    "publisher_id": "ca-pub-5706650912346516",
+    "cmp_enabled": false,
+    "slots": {
+      "feed": "",
+      "rail": "",
+      "story": ""
+    },
+    "mode": "auto"
+  },
+  "sponsor": {
+    "enabled": false,
+    "name": "",
+    "message": "",
+    "url": "",
+    "starts": "",
+    "ends": ""
+  },
+  "support_url": "https://paypal.me/kedmaphd",
+  "newsletter_url": "https://observatory.hamelberg-ai.com/report/",
+  "privacy_contact_url": "https://observatory.hamelberg-ai.com/privacy/",
+  "revenue": {
+    "contact_url": "mailto:research@hamelberg-ai.com",
+    "offers": []
+  },
+  "visitor_total": {
+    "count": 287,
+    "source": "Google Analytics",
+    "metric": "totalUsers",
+    "property_id": "549530905",
+    "hostname": "brief.hamelberg-ai.com",
+    "period_start": "2026-09-01",
+    "period_end": "2026-10-28",
+    "period_label": "1 Sep–28 Oct 2026",
+    "updated_at": "2026-10-28",
+    "refresh": "manual_snapshot"
+  }
+}
