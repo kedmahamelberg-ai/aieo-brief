@@ -2,7 +2,7 @@
 
 ## Current facts from the repository inspection
 
-Google Analytics ID G-QC9205V7V7 is configured behind analytics consent. Receipt in that Google property still requires a Realtime check. AdSense publisher ca-pub-5170234738371400 is present, but ads and the consent message are disabled; feed, rail and story ad-unit IDs are empty. No active sponsor, reader-payment link or paid product is configured. This is infrastructure, not yet an operating passive-income business. Resend verification enables email sending; it is unrelated to Google advertising approval.
+Google Analytics ID G-QC9205V7V7 is configured behind analytics consent. Receipt in that Google property still requires a Realtime check. AdSense publisher ca-pub-5706650912346516 is present, but ads and the consent message are disabled; feed, rail and story ad-unit IDs are empty. No active sponsor, reader-payment link or paid product is configured. This is infrastructure, not yet an operating passive-income business. Resend verification enables email sending; it is unrelated to Google advertising approval.
 
 ## Turn on real banner placements
 
