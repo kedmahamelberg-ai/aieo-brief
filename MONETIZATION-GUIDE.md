@@ -1,6 +1,6 @@
 # Funding the Brief
 
-The repository currently has GA4 measurement ID **G-QC9205V7V7** and AdSense publisher ID **ca-pub-5170234738371400**. Analytics uses reader opt-in. Advertising is disabled, the Google consent message is unconfirmed, and no banner ad-unit IDs are configured. A configured ID is not proof that Google has received events or approved the site.
+The repository currently has GA4 measurement ID **G-QC9205V7V7** and AdSense publisher ID **ca-pub-5706650912346516**. Analytics uses reader opt-in. Advertising is disabled, the Google consent message is unconfirmed, and no banner ad-unit IDs are configured. A configured ID is not proof that Google has received events or approved the site.
 
 ## Check Analytics
 
