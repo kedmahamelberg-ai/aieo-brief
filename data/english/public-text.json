@@ -6826,6 +6826,25 @@
       },
       "output_sha256": "1285bdf116c52a4d7fa5ba555f9913d4edb3cffcf470f8a31e4e9c5947da79bf",
       "policy": "brief-english-display-v1"
+    },
+    "3e1c5d8563410191c4919a9191f5fa760217ee917e4d0d86743edad1b420a9c2": {
+      "english": {
+        "0": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?",
+        "1": "AgentSSL: Can MLE Agents Leverage Unlabeled Data?"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "2c426ae911358b15060bdb5629da94196a75f4e7553906db3b9a6b1211b5907d",
+      "policy": "brief-english-display-v1"
     }
   }
 }
