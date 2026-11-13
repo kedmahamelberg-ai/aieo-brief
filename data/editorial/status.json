@@ -1,6 +1,6 @@
 {
   "release_id": "2026-W45",
-  "engine_version": "aieo-editorial-runtime-v12-news-reading-presentation",
+  "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
   "counts": {
     "unchanged": 74,
     "source_not_ready": 0,
@@ -16,5 +16,5 @@
   },
   "failure_counts": {},
   "failed_items": [],
-  "updated_at": "2026-11-13T08:46:19.187041+00:00"
+  "updated_at": "2026-11-13T15:55:28.254131+00:00"
 }
