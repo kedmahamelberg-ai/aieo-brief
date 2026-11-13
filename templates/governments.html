@@ -8,7 +8,7 @@
 <section class="feed-column" aria-label="Government AI announcements">
 <div class="feed-controls government-controls" data-government-controls hidden>
 <div class="market-tabs" aria-label="Browse announcements"><button type="button" data-government-view="day" aria-pressed="true">Day overview</button><button type="button" data-government-view="country" aria-pressed="false">By country</button></div>
-<div class="filter-line"><label data-day-control>Announcement date <select id="government-day"><option value="all">All days</option>{% for day,group in items|groupby('date')|reverse %}<option value="{{ day }}" {% if loop.first %}selected{% endif %}>{{ group[0].display_date }}</option>{% endfor %}</select></label><label data-country-control hidden>Country <select id="government-country"><option value="all">All countries</option>{% for country,group in items|groupby('country') %}<option value="{{ group[0].country_code }}">{{ country }}</option>{% endfor %}</select></label></div>
+<div class="filter-line"><label data-country-control hidden>Country <select id="government-country"><option value="all">All countries</option>{% for country,group in items|groupby('country') %}<option value="{{ group[0].country_code }}">{{ country }}</option>{% endfor %}</select></label></div>
 <p class="filter-status" id="government-status" aria-live="polite"></p>
 </div>
 <div id="government-feed">

@@ -40,15 +40,17 @@ only their already-linked official announcements to double-check substantive
 AI content. The Monitor's security-relevance labels are not AI inclusion rules.
 An independent original-source review checks relevance, attribution and simple
 English before publication. Briefs have headlines of at most 16 words and
-summaries of at most 45 words. Inaccessible or doubtful items remain unpublished
+feed summaries of at most 45 words. Article pages can add up to two short
+paragraphs (90 words total) when the original announcement supports useful detail.
+Inaccessible or doubtful items remain unpublished
 and retry; a corrected source withdraws the superseded summary while its article
 URL and discussion remain available with a checking notice. The initial eight
 items were checked against their original official written pages on 13 November
 2026; `data/governments/initial-source-checks.json` retains URLs and body hashes,
 not publisher text. Automatic checks can still make mistakes.
 
-The default view shows the latest available publication day; readers can select
-an earlier day or all days. The country view groups by issuing government and
+The default view lists announcements by publication day, newest first, with
+the announcement date inside each news card. The country view groups by issuing government and
 can filter one country. Both views reuse the same article identities, cards and
 existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,

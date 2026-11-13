@@ -89,6 +89,7 @@ def validate(site):
  if not (site/'governments-say/index.html').is_file():raise ValueError('Government page missing')
  for item in governments:
   if item.get('section')!='governments' or not re.fullmatch(r'[A-Z]{2}',item.get('country_code','')) or not item.get('country') or len(item.get('deck','').split())>45 or len(item.get('headline','').split())>16:raise ValueError('Government brief lacks country or exceeds brief limits')
+  if len(item.get('body_paragraphs',[]))>2 or sum(len(p.split()) for p in item.get('body_paragraphs',[]))>90:raise ValueError('Government article exceeds its concise detail limit')
   photo=item.get('government_photo')
   if photo and (not photo.get('license','').startswith(('CC0','Public domain')) or not photo.get('source_url') or not photo.get('license_url')):raise ValueError('Government photo lacks public-domain provenance')
  overview=payload.get('weekly_overview') or {}

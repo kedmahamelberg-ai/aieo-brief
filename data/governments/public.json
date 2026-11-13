@@ -11,7 +11,11 @@
       "date": "2026-11-13",
       "headline": "Spain outlines plans for AI cooperation before regional summit",
       "summary": "Spain says countries are working on AI together ahead of the Ibero-American Summit. Plans cover shared access to data, AI tools for local languages and computer power.",
-      "input_fingerprint": "5848d48130119d47b14e97bd152f73d7ce59829b3b5d5b1d4fda42ebe8002976"
+      "input_fingerprint": "5848d48130119d47b14e97bd152f73d7ce59829b3b5d5b1d4fda42ebe8002976",
+      "body_paragraphs": [
+        "Ministers have agreed to create an Ibero-American AI alliance. It would help countries share good-quality data, build AI tools suited to their languages and needs, and pool computer power for researchers, public services and businesses.",
+        "Spain’s announcement says this work should put people first. It calls for closing gaps in access to digital technology and protecting children, teenagers and people in vulnerable situations."
+      ]
     },
     "eefc381d2bfb99dc1716": {
       "id": "eefc381d2bfb99dc1716",

@@ -78,7 +78,7 @@ class GovernmentBriefsTests(unittest.TestCase):
     def test_short_output_and_exact_support_are_required(self):
         for changes in ({'summary': 'AI ' * 46}, {'headline': 'AI ' * 17},
                         {'support_quote': 'This passage does not occur in the source.'},
-                        {'summary': 'A statement. Another. A third. AI fourth.'}):
+                        {'summary': 'A statement. Another. A third. AI fourth.'}, {'details': ['AI ' * 91]}):
             with self.subTest(changes=changes), self.assertRaises(ValueError):
                 gov.validate_draft({**draft(source()), **changes}, source())
 

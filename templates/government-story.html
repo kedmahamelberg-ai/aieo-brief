@@ -7,10 +7,11 @@
 <div class="breadcrumb"><a href="{{ local('governments-say/index.html') }}">← Governments say</a></div>
 <header class="article-header"><div class="story-kicker"><span>{{ story.country }}</span><span>GOVERNMENT STATEMENT</span><span>BRIEF READ</span></div><h1>{{ story.headline }}</h1><div class="source-line"><span>{{ story.publisher }}</span><time datetime="{{ story.date }}">{{ story.display_date }}</time><span data-read-count="{{ story.key }}" hidden></span></div>{{ actions(story,true) }}</header>
 <div class="article-body"><p class="deck">{{ story.deck }}</p>
+{% for paragraph in story.body_paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
 {% if story.government_photo %}<figure class="government-photo"><img src="{{ local(story.government_photo.path) }}" alt="{{ story.government_photo.alt }}" width="1200" height="675"><figcaption>{{ story.government_photo.caption }} <a href="{{ story.government_photo.source_url }}" target="_blank" rel="noopener noreferrer">{{ story.government_photo.credit }}</a> · <a href="{{ story.government_photo.license_url }}" target="_blank" rel="noopener noreferrer">{{ story.government_photo.license }}</a></figcaption></figure>{% endif %}
 <p><a class="read-link" href="{{ story.url }}" target="_blank" rel="noopener noreferrer" data-source-link>Read the official announcement ↗</a></p>
-<p class="small-copy">{% if story.withdrawn %}This item is awaiting a renewed content check and is not included in the current government feed.{% else %}A short summary of a government statement, selected from the <a href="https://monitor.hamelberg-ai.com/#government">Monitor’s collected announcements</a> after checking the original announcement for AI relevance. This reports what the government says. Plans, promises and claimed benefits are not independently verified outcomes.{% endif %}</p>
-</div>{{ conversation(story) }}</article>
+{% if story.withdrawn %}<p class="small-copy">This item is awaiting a renewed content check and is not included in the current government feed.</p>{% endif %}
+</div>{{ conversation(story,minimal=true) }}</article>
 <aside class="article-rail"><section class="rail-section"><span class="eyebrow">GOVERNMENTS & AI</span><h2>More from {{ story.country }}.</h2><a class="text-link" href="{{ local('governments-say/index.html') }}?view=country&amp;country={{ story.country_code }}">Browse this country →</a></section><section class="rail-section"><h2>What else are governments saying?</h2><a class="text-link" href="{{ local('governments-say/index.html') }}">See the day overview →</a></section></aside>
 </div></main>
 {% endblock %}

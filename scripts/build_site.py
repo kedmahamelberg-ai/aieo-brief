@@ -364,7 +364,7 @@ def main():
             # withdrawing text whose corrected source has not passed review.
             item.update(headline='Government announcement being checked',
                         deck='We are checking this announcement again. The official source remains available below.',
-                        summary='',has_editorial=False,withdrawn=True,government_photo=None)
+                        summary='',body_paragraphs=[],has_editorial=False,withdrawn=True,government_photo=None)
     for item in news+research+culture+governments:
         previous=allitems.get(item['key'])
         if previous and previous.get('path') and re.fullmatch(r'(story|research|culture)/[a-zA-Z0-9_-]+/index.html',previous['path']):
