@@ -2,7 +2,7 @@
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
 from editorial_corrections import apply_corrections, reading_proof
-from news_reading import prepare_display as prepare_news_display
+from news_reading import prepare_display as prepare_news_display, EFFECT_LABELS
 from claim_grounding import VERSION as GROUNDING_VERSION
 import argparse, collections, copy, json, os, re, shutil, time
 from datetime import datetime, timezone, date
@@ -34,7 +34,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
 TOPICS={'work':'Work & skills','creativity':'Culture & creativity','everyday':'Everyday life','policy':'Rules & rights','technology':'AI & technology','research':'Science & research','business':'Business & investment'}
-DIRECTION_LABELS={'gain':'Benefits reported','loss':'Downsides reported','mixed':'Benefits and downsides','none':'No direction stated','unresolved':''}
+DIRECTION_LABELS=EFFECT_LABELS
 ISO={'CAN':'CA','CHN':'CN','FRA':'FR','GBR':'GB','USA':'US',**dict((k,k) for k,_ in MARKETS)}
 
 def optimize_site_photos(site: Path) -> None:
@@ -212,6 +212,8 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
         ai_label=DIRECTION_LABELS[ai_direction] if ai else DIRECTION_LABELS['unresolved']
         count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220))
         output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':human_direction,'ai_direction':ai_direction,'human_label':human_label,'ai_label':ai_label,'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
+        if v and (effects:=(v.get('evidence_basis_summary') or {}).get('box_effects')) is not None:
+            output[-1]['box_effects']=copy.deepcopy(effects)
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
 
 def papers(sanitize=True):

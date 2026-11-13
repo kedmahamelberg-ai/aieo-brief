@@ -13,7 +13,7 @@ from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v12-news-reading-presentation'
+ENGINE_VERSION='aieo-editorial-runtime-v13-concise-box-effects'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -39,6 +39,7 @@ class EditorialError(ValueError):
 
 VALIDATION_CODES={
  'News plain English:':'news_reading_level',
+ 'News box effects:':'news_box_effects',
  'Evidence exceeds the automatic reading budget':'evidence_reading_budget_exceeded',
  'Source segment note exceeded its budget':'segment_note_length',
  'Segment note lacks verifiable source support':'segment_support_invalid',
@@ -346,7 +347,7 @@ def validate_draft(d,sources,kind='news'):
 REVIEW_CHECKS=('headline_supported','population_preserved','claim_status_preserved','no_unstated_effects','main_story_only','english_only','plain_english')
 REVIEW_SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'boolean'} for k in REVIEW_CHECKS},'reason':{'type':'string','maxLength':300}},'required':list(REVIEW_CHECKS)+['reason']}
 @validation_errors('scope_review')
-def review_scope(draft,compiled,deadline=None,paper=False):
+def review_scope(draft,compiled,deadline=None,paper=False,news=False):
     escalated=claim_grounding.pilot_requirement_escalation(draft,compiled)
     if escalated:
         raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=['entities_and_roles_preserved'],feedback='A pilot at '+escalated+' is presented as a requirement without source support.')
@@ -364,7 +365,15 @@ def review_scope(draft,compiled,deadline=None,paper=False):
     # review request, with headroom below the API request-size cap; never truncate it.
     if len(prompt.encode())>(700000 if paper else 175000):
         raise EditorialError('grounding_context_budget','Original evidence exceeds verifier budget; manual review required.',stage='scope_review')
-    result=call_json(prompt,claim_grounding.catalog_schema(REVIEW_SCHEMA,draft,catalog),deadline,stage='scope_review',paper=paper)
+    review_schema=copy.deepcopy(REVIEW_SCHEMA)
+    if news:
+        review_schema['properties']['box_effects']={
+            'type':'object','additionalProperties':False,
+            'properties':{axis:{'type':'string','enum':list(news_reading.EFFECT_LABELS)} for axis in ('human','ai')},
+            'required':['human','ai']}
+        review_schema['required'].append('box_effects')
+        prompt+='\n'+news_reading.INSTRUCTIONS+'\nIndependently classify box_effects for the final for_humans and for_ai text against the original sources: gain = supported benefit, loss = supported harm, risk or constraint, mixed = both stated, none = no benefit or harm stated, unresolved = the reading cannot establish a direction. Classify each side separately; do not copy supplied axes or assume AI use helps people. A company gaining reach can harm people. Plans may have potential benefits or risks; they do not need measured results to have a direction. Never treat a rule as a loss unless the source supports a burden or constraint. Missing or empty dimension text must be none. The label must match what the actual short box says, including any risk or both sides it mentions. Reject plain_english if either box exceeds one sentence or 25 words or repeats attribution padding.'
+    result=call_json(prompt,claim_grounding.catalog_schema(review_schema,draft,catalog),deadline,stage='scope_review',paper=paper)
     if any(result.get(k) is not True for k in REVIEW_CHECKS):
         raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=[k for k in REVIEW_CHECKS if result.get(k) is not True],feedback=str(result.get('reason','claim scope mismatch'))[:300])
     failed_grounding={key for key in claim_grounding.CHECKS if result.get(key) is not True}
@@ -380,7 +389,7 @@ def review_scope(draft,compiled,deadline=None,paper=False):
                      'detail alone is not a contradiction. Recheck every field against the '
                      'original source and provide all required citations. If any asserted '
                      'claim conflicts with the source, keep the relevant check false.')
-        result=call_json(prompt+calibration,claim_grounding.catalog_schema(REVIEW_SCHEMA,draft,catalog),deadline,attempt=1,stage='scope_review',paper=paper)
+        result=call_json(prompt+calibration,claim_grounding.catalog_schema(review_schema,draft,catalog),deadline,attempt=1,stage='scope_review',paper=paper)
         if any(result.get(k) is not True for k in REVIEW_CHECKS):
             raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=[k for k in REVIEW_CHECKS if result.get(k) is not True],feedback=str(result.get('reason','claim scope mismatch'))[:300])
     try:
@@ -388,7 +397,9 @@ def review_scope(draft,compiled,deadline=None,paper=False):
         grounding=claim_grounding.validate(result,draft,compiled)
     except ValueError as error:
         raise EditorialError('claim_grounding_failed','Public-field grounding did not pass.',stage='scope_review',feedback=(str(error)+'; '+str(result.get('reason','')))[:600]) from error
-    return {**{k:result[k] for k in REVIEW_CHECKS},'grounding':grounding}
+    effects=news_reading.validate_effects(result.get('box_effects'),draft) if news else None
+    return {**{k:result[k] for k in REVIEW_CHECKS},'grounding':grounding,
+            **({'box_effects':effects} if news else {})}
 
 @validation_errors('draft')
 def write_story(event,axes,sources,kind='news',deadline=None):
@@ -507,7 +518,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
      draft.update({k:edited[k] for k in readable_schema['required']})
    review_sources=sources+[{'source_number':0,'evidence':'Supplied reading scope: '+kind+'. Publication label: '+str(event.get('research_label','unspecified'))+'. '+ '; '.join('Source '+str(s['source_number'])+' evidence basis: '+str(s.get('evidence_basis','unspecified')) for s in sources)}]
    try:
-    scope=review_scope(draft,review_sources,deadline,paper=kind=='paper')
+    scope=review_scope(draft,review_sources,deadline,paper=kind=='paper',news=kind=='news')
    except EditorialError as error:
     # The reviewer can reject an unsupported optional reading while the core
     # news claims are grounded. Remove only the named optional fields, then
@@ -522,7 +533,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
     for field in optional:draft[field]=''
     if removable:draft['body_paragraphs']=[paragraph for index,paragraph in enumerate(draft['body_paragraphs']) if index not in removable]
     draft=validate_draft(draft,sources,kind)
-    scope=review_scope(draft,review_sources,deadline,paper=False)
+    scope=review_scope(draft,review_sources,deadline,paper=False,news=True)
    return draft,{'draft_origin':'reviewed_editorial_seed' if attempt==0 and event.get('draft_seed') else 'model','engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
   except (ValueError,requests.RequestException) as e:
    last=e

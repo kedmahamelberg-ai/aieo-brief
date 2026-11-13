@@ -14,7 +14,7 @@ import editorial_corrections
 import news_reading
 from source_evidence_quality import assess_body
 from test_editorial_recovery import engine, news, fixture, accepted_review
-from validate_public_site import validate_news_layout
+from validate_public_site import validate_news_layout, validate_news_boxes
 
 
 class NewsReading(unittest.TestCase):
@@ -69,15 +69,82 @@ class NewsReading(unittest.TestCase):
                     self.assertTrue(row['has_editorial'])
                     self.assertIn('<h2>What happened</h2>',html)
 
-    def test_display_cleanup_preserves_the_reading_and_internal_direction(self):
+    def test_display_restores_neutral_labels_and_keeps_the_reading(self):
         row={'kind':'news','human_direction':'gain','human_label':'Benefits reported',
              'for_humans':'Staff say the tool saves time.', 'ai_direction':'unresolved',
              'ai_label':'Evidence incomplete','for_ai':'The plan proposes wider AI use in public services.'}
         news_reading.prepare_display([row])
-        self.assertEqual(row['ai_label'],'')
+        self.assertEqual(row['ai_label'],'No direction stated')
         self.assertEqual(row['ai_direction'],'unresolved')
         self.assertEqual(row['for_ai'],'The plan proposes wider AI use in public services.')
-        self.assertEqual(row['human_label'],'Benefits reported')
+        self.assertEqual(row['human_label'],'Benefits')
+
+    def test_reviewed_effects_replace_stale_benefits_independently(self):
+        row={'kind':'news','key':'example','human_direction':'gain','ai_direction':'gain',
+             'for_humans':'People could lose access to services.',
+             'for_ai':'The firm could reach more customers.',
+             'box_effects':{'human':'loss','ai':'gain'}}
+        news_reading.prepare_display([row])
+        self.assertEqual((row['human_label'],row['ai_label']),('Risks','Benefits'))
+        validate_news_boxes(row)
+        row['human_label']='Benefits'
+        with self.assertRaises(ValueError):validate_news_boxes(row)
+
+    def test_news_cannot_pass_without_both_independent_box_readings(self):
+        draft,sources=fixture()
+        for effects in (None, {'human':'loss'}, {'human':'loss','ai':'gain'}):
+            review=accepted_review()
+            review['box_effects']=effects
+            with self.subTest(effects=effects),patch.object(engine,'call_json',return_value=review):
+                with self.assertRaises(engine.EditorialError):
+                    engine.review_scope(draft,sources,news=True)
+
+    def test_final_source_review_carries_effects_to_display(self):
+        draft,sources=fixture()
+        review=accepted_review()
+        with patch.object(engine,'call_json',return_value=review):
+            proof=engine.review_scope(draft,sources,news=True)
+        self.assertEqual(proof['box_effects'],{'human':'loss','ai':'none'})
+        row={'kind':'news',**draft,'box_effects':proof['box_effects'],
+             'human_direction':'gain','ai_direction':'gain'}
+        news_reading.prepare_display([row])
+        self.assertEqual((row['human_label'],row['ai_label']),('Risks','No direction stated'))
+
+    def test_missing_effect_review_cannot_write_to_database(self):
+        import hashlib
+        from unittest.mock import Mock
+        draft,_=fixture()
+        proof={'scope_review':{'grounding':{
+            'version':engine.claim_grounding.VERSION,
+            'public_sha256':hashlib.sha256(json.dumps(engine.claim_grounding.units(draft),sort_keys=True,ensure_ascii=False).encode()).hexdigest()}}}
+        client=Mock()
+        with self.assertRaises(ValueError):news.persist(client,{'reuse':False},{},draft,proof)
+        client.table.assert_not_called()
+
+    def test_boxes_stay_short_without_turning_plans_into_results(self):
+        for value in ('The author says AI could help workers.',
+                      'The columnist argues AI may take jobs.',
+                      'AI may help. Workers still need checks.',
+                      'AI '+'can '*24+'help.'):
+            self.assertTrue(news_reading.style_problem({'for_humans':value}),value)
+        self.assertFalse(news_reading.style_problem({
+            'for_humans':'AI could save workers time, but wrong answers may cause harm.'}))
+
+    def test_live_problem_articles_have_complete_labels_and_mixed_risks(self):
+        rows=copy.deepcopy(json.loads((ROOT/'data/archive/stories.json').read_text())['stories'])
+        editorial_corrections.apply_corrections(rows)
+        news_reading.prepare_display(rows)
+        by_id={r.get('event_id'):r for r in rows}
+        small=by_id['abc3e322-ff0e-4bda-8007-eea965a10fcc']
+        self.assertEqual((small['human_label'],small['ai_label']),('Benefits and risks','No direction stated'))
+        market=by_id['4ce57a9c-cfde-45cf-bc27-2a7936acd845']
+        self.assertEqual((market['human_label'],market['ai_label']),('Risks','Risks'))
+        court=by_id['2c1a78f9-bb97-48a9-8042-da3f0eae4437']
+        self.assertEqual((court['human_label'],court['ai_label']),('Risks','Benefits'))
+
+    def test_missing_labels_in_html_are_rejected(self):
+        raw='<section class="axis-grid"><div class="axis-note gain"><h3>FOR PEOPLE</h3><p>Text.</p></div><div class="axis-note none"><h3>FOR AI TOOLS AND COMPANIES</h3><strong>No direction stated</strong><p>Text.</p></div></section>'
+        with self.assertRaises(ValueError):validate_news_layout(raw)
 
     def test_publication_rejects_early_limits_and_status_badges(self):
         for raw in ('<div class="axis-grid"><strong>Evidence incomplete</strong></div>',
@@ -132,7 +199,7 @@ class NewsReading(unittest.TestCase):
     def test_every_current_edition_story_has_both_reviewed_boxes(self):
         archive = json.loads((ROOT / 'data/archive/stories.json').read_text())['stories']
         current = {r['key'] for r in archive if r.get('kind') == 'news' and r.get('edition') == '2026-W45'}
-        audit = json.loads((ROOT / 'data/editorial/plain-language-corrections-2026-11-12.json').read_text())
+        audit = json.loads((ROOT / 'data/editorial/concise-box-corrections-2026-11-13.json').read_text())
         self.assertEqual({r['key'] for r in audit['news']}, current)
         self.assertEqual(len(audit['news']), 74)
         for row in audit['news']:
@@ -142,10 +209,15 @@ class NewsReading(unittest.TestCase):
                 self.assertFalse(news_reading.style_problem(row['after']))
                 self.assertTrue(row['retained_source_sha256'])
                 self.assertTrue(editorial_corrections.is_locked(row['key']))
+                item=next(r for r in archive if r['key']==row['key'])
+                item=copy.deepcopy(item)
+                editorial_corrections.apply_corrections([item])
+                news_reading.prepare_display([item])
+                validate_news_boxes(item)
                 if row['reading_scope'] == 'full_article_unavailable':
-                    self.assertFalse(row['after']['has_editorial'])
-                    self.assertFalse(row['after']['body_paragraphs'])
-                    self.assertFalse(row['after']['evidence_complete'])
+                    self.assertFalse(item['has_editorial'])
+                    self.assertFalse(item['body_paragraphs'])
+                    self.assertFalse(item['evidence_complete'])
 
     def test_access_gates_and_navigation_cannot_pass_as_complete_articles(self):
         cases = ['La suite de cet article est réservée à nos abonnés. ' * 4,
