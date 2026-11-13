@@ -11,92 +11,132 @@
       "markets": {
         "kind": "markets",
         "eyebrow": "THE WEEK FROM ABOVE",
-        "title": "The weekly news review is being prepared",
-        "deck": "The review will appear when its sources and editorial checks are complete.",
-        "summary": "",
-        "scope_note": "",
-        "word_count": 0,
+        "title": "Is AI Regulation Slowing Progress or Guiding It This Week?",
+        "deck": "The week began with markets dipping as AI regulation fears rattled tech shares. Global tech stocks slid after news about AI rules and a midterm political shift. A Xinhua infographic described AI speeding into newsroom work and reader questions.",
+        "summary": "The week began with markets dipping as AI regulation fears rattled tech shares. Global tech stocks slid after news about AI rules and a midterm political shift. A Xinhua infographic described AI speeding into newsroom work and reader questions. A Canadian professor warns that speed may erode human craft in novels. In Europe and beyond, policies blur two regulatory regimes as Northern Ireland wrestles with how EU and UK rules apply to gadgets. A book review cautions that AI driven governance must keep meaningful recourse.",
+        "scope_note": "Five selected stories from five discovery markets.",
+        "word_count": 102,
         "reading_minutes": 1,
-        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
-        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
-        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
-        "image_credit": "NPS Photo / Tim Rains",
-        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
-        "image_rights": "Public domain · Full Granting Rights",
+        "image_path": "assets/culture/5ebb7135116f24e6e6924f4c.jpg",
+        "image_alt": "Portrait of a Government Official",
+        "image_caption": "Portrait of a Government Official",
+        "image_credit": "Chae Yongshin (Korean, 1850–1941) · Cleveland Museum of Art",
+        "image_source_url": "https://clevelandart.org/art/2020.259",
+        "image_rights": "CC0 image",
         "entries": [
-          {
-            "code": "CN",
-            "name": "China",
-            "count": 22,
-            "topic": "Business And Investment",
-            "sentence": "China: business and investment stood out in the selected coverage; one example was “Deloitte says AI devices need real-world data, privacy rules and human….”",
-            "story": {
-              "headline": "Deloitte says AI devices need real-world data, privacy rules and human control",
-              "path": "story/screen-reality-competitive-landscape-next-generation-ai-deloitte-china/index.html",
-              "publisher": "Deloitte",
-              "source_url": "https://www.deloitte.com/cn/zh/issues/generative-ai/physical-ai-future-ai-competition-landscape.html"
-            }
-          },
           {
             "code": "US",
             "name": "United States",
-            "count": 13,
-            "topic": "Rules And Rights",
-            "sentence": "United States: selected reporting leaned toward rules and rights, with “UCF team plans AI tool to help doctors assess kidney problems” as one visible signal.",
+            "topic": "Rules & rights",
             "story": {
-              "headline": "UCF team plans AI tool to help doctors assess kidney problems",
-              "path": "story/ucf-researchers-developing-ai-model-help-kidney-care/index.html",
-              "publisher": "University of Central Florida",
-              "source_url": "https://www.ucf.edu/news/ucf-researchers-developing-ai-model-to-help-physicians-improve-kidney-care"
-            }
-          },
-          {
-            "code": "GB",
-            "name": "United Kingdom",
-            "count": 12,
-            "topic": "Everyday Use",
-            "sentence": "United Kingdom: everyday use stood out in the selected coverage; one example was “Le Mans teams use AI for meetings, race data and strategy.”",
-            "story": {
-              "headline": "Le Mans teams use AI for meetings, race data and strategy",
-              "path": "story/ai-already-factor-le-mans-according-teams-experts/index.html",
-              "publisher": "24 Heures du Mans",
-              "source_url": "https://www.24h-lemans.com/en/news/is-artificial-intelligence-already-an-essential-factor-in-winning-the-24-hours-of-le-mans-60757"
-            }
-          },
-          {
-            "code": "FR",
-            "name": "France",
-            "count": 15,
-            "topic": "Rules And Rights",
-            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Researchers explore how AI could help voters compare election plans.”",
-            "story": {
-              "headline": "Researchers explore how AI could help voters compare election plans",
-              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
-              "publisher": "Sciences Po",
-              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+              "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html",
+              "headline": "Guardian reports global tech share losses amid fears of tighter AI rules",
+              "publisher": "The Guardian"
             }
           },
           {
             "code": "CA",
             "name": "Canada",
-            "count": 28,
-            "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Researchers explore how AI could help voters compare election plans.”",
+            "topic": "Culture & creativity",
             "story": {
-              "headline": "Researchers explore how AI could help voters compare election plans",
-              "path": "story/sciences-po-researchers-warn-ai-will-but-limits/index.html",
-              "publisher": "Sciences Po",
-              "source_url": "https://www.sciencespo.fr/cevipof/fr/actualites/l-intelligence-artificielle-a-l-epreuve-de-l-election-presidentielle-de-2027"
+              "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html",
+              "headline": "Professor questions whether more AI-written novels help people think",
+              "publisher": "l-express.ca"
+            }
+          },
+          {
+            "code": "CN",
+            "name": "China",
+            "topic": "Everyday life",
+            "story": {
+              "path": "story/development-02fa8350-ffe4-4622-bff6-3889ac3c987a/index.html",
+              "headline": "Xinhua infographic describes AI changing newsroom work and access to news",
+              "publisher": "新华网"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "topic": "Rules & rights",
+            "story": {
+              "path": "story/development-2c1a78f9-bb97-48a9-8042-da3f0eae4437/index.html",
+              "headline": "Book review warns AI can make unfair government decisions harder to challenge",
+              "publisher": "En attendant Nadeau"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "topic": "Rules & rights",
+            "story": {
+              "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html",
+              "headline": "UK says some EU AI rules will cover products in Northern Ireland",
+              "publisher": "BBC"
             }
           }
         ],
         "active_market_count": 5,
         "editorial_version": "kedma-weekly-v10",
-        "status": "pending",
-        "author": "",
-        "prose": [],
+        "status": "ready",
+        "author": "Kedma Hamelberg",
+        "prose": [
+          [
+            {
+              "text": "The week began with markets dipping as AI regulation fears rattled tech shares.",
+              "source_key": "",
+              "path": ""
+            },
+            {
+              "text": "Global tech stocks slid after news about AI rules and a midterm political shift.",
+              "source_key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
+              "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html"
+            },
+            {
+              "text": "A Xinhua infographic described AI speeding into newsroom work and reader questions.",
+              "source_key": "event:02fa8350-ffe4-4622-bff6-3889ac3c987a",
+              "path": "story/development-02fa8350-ffe4-4622-bff6-3889ac3c987a/index.html"
+            }
+          ],
+          [
+            {
+              "text": "A Canadian professor warns that speed may erode human craft in novels.",
+              "source_key": "event:0137b615-2741-4b50-9a60-dd93e0471ea1",
+              "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html"
+            },
+            {
+              "text": "In Europe and beyond, policies blur two regulatory regimes as Northern Ireland wrestles with how EU and UK rules apply to gadgets.",
+              "source_key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
+              "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html"
+            },
+            {
+              "text": "A book review cautions that AI driven governance must keep meaningful recourse.",
+              "source_key": "event:2c1a78f9-bb97-48a9-8042-da3f0eae4437",
+              "path": "story/development-2c1a78f9-bb97-48a9-8042-da3f0eae4437/index.html"
+            }
+          ]
+        ],
         "papers": [],
-        "pending_reason": "approved_sources_changed"
+        "pending_reason": "approved_sources_changed",
+        "source_hashes": {
+          "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7": "1dd30f186af1f223cc2dac96cb5a89e56a8ca57dd509f13d508e55dbcf1a4f2c",
+          "event:0137b615-2741-4b50-9a60-dd93e0471ea1": "d067fccb3ffc69a0bb3b839919f9c78348cc7df2c6cc170f3b440a60ad7c6cb4",
+          "event:02fa8350-ffe4-4622-bff6-3889ac3c987a": "0ae489d01b87ff8b19739e792011b95bd83fb4aa30cfc69e8e782a102800015e",
+          "event:2c1a78f9-bb97-48a9-8042-da3f0eae4437": "ba5dd15b4b186bd8421f749cbde6b5dbc75ab9a76f4f70172c38a8ce1c24aeb0",
+          "event:034c9f16-afde-4d13-bfa2-822d8b830213": "d687474613e28405bfef82b0428a511432c15f6265859fd443656de6e4012b4a"
+        },
+        "image_key": "culture:5ebb7135116f24e6e6924f4c",
+        "image_work_key": "0afccab2bf8cf4e3b5469de246d33525b43776efcb48e6d84e03ff9cf1145239",
+        "image_reason": "A government official portrait echoes measured oversight guiding progress.",
+        "review_checks": {
+          "grounded": true,
+          "clear_high_school_language": true,
+          "coherent_prose": true,
+          "meaningful_connection": true,
+          "source_limits_preserved": true,
+          "no_invented_personal_experience": true,
+          "image_metaphor_supported": true
+        },
+        "human_approved": true
       },
       "research": {
         "kind": "research",
@@ -329,8 +369,8 @@
         "image_purpose": "metaphorical illustration"
       },
       "editorial_version": "kedma-weekly-v10",
-      "editorial_status": "pending",
-      "content_sha256": "9f12533e35928f491b06fd6ce7fcfd47fa13ba6ab7a0bec28104b3ad076a93e8"
+      "editorial_status": "ready",
+      "content_sha256": "ffba0341470c0b3055b7c9e1cf79020406d96bb716fb32bba263ebbda8102952"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
