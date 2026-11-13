@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v2",
   "monitor_as_of": "2026-11-13T14:00:00+00:00",
-  "last_checked_at": "2026-11-13T18:41:11.341856+00:00",
+  "last_checked_at": "2026-11-13T19:34:14.876053+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -86,6 +86,115 @@
       "headline": "UK plans to make AI a priority at the G20",
       "summary": "The UK says its prime minister discussed AI benefits and risks with France’s president. It plans to put AI high on the agenda during its 2027 G20 presidency and work on shared international standards.",
       "input_fingerprint": "b567fc90e23d6e249a4741417794dc67c7d1e230e8d39d8653f5cb53040a8d39"
+    },
+    "7b902390cebc0f5d1039": {
+      "id": "7b902390cebc0f5d1039",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/valitsuse-121126-istungi-kommenteeritud-paevakord",
+      "date": "2026-11-12",
+      "headline": "Estonia proposes a way to identify AI agents",
+      "summary": "Estonia has put a draft law on its agenda to give AI agents a code linked to the person they act for. The code would show when an AI system is acting on someone’s behalf.",
+      "body_paragraphs": [
+        "The government says the code would help make those actions more transparent, secure and accountable. This is a proposal, not a rule already in force."
+      ],
+      "input_fingerprint": "1dfc5bbc193f68622e7793c44021463318d4c2e8cd049c50c4a052995b0db21c"
+    },
+    "21c715fcacb767b80ea4": {
+      "id": "21c715fcacb767b80ea4",
+      "country": "Croatia",
+      "country_code": "HR",
+      "url": "https://vlada.gov.hr/dublin-okupio-europske-celnike-na-razgovorima-o-buducnosti-europe-u-trenutku-velikih-geopolitickih-izazova/47591",
+      "date": "2026-11-12",
+      "headline": "Croatia joins talks on AI and Europe’s economy",
+      "summary": "Croatia says European leaders will discuss how AI could affect Europe’s economy and opportunities for growth at a meeting in Dublin.",
+      "body_paragraphs": [],
+      "input_fingerprint": "ffb6cf69e5814ee7eb410024c016b8bf48871593c6e7b74b776b63c31248844e"
+    },
+    "cf3d6323a26683635404": {
+      "id": "cf3d6323a26683635404",
+      "country": "Denmark",
+      "country_code": "DK",
+      "url": "https://stm.dk/presse/pressemeddelelser/2026/europas-sikkerhed-er-oeverst-paa-dagsordenen-til-topmoede-i-dublin/",
+      "date": "2026-11-11",
+      "headline": "Denmark puts AI high on European leaders’ agenda",
+      "summary": "Denmark says AI is at the top of the agenda for an informal meeting of European Union leaders in Dublin. Its prime minister is due to attend.",
+      "body_paragraphs": [],
+      "input_fingerprint": "45d289915a34e39719a314e28e8890fee958dc603963f4d362c423b7d5c9e097"
+    },
+    "a96a39fbd0e8d7c460b7": {
+      "id": "a96a39fbd0e8d7c460b7",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/valitsuse-kabinetinoupidamise-paevakord-10-november-2026",
+      "date": "2026-11-10",
+      "headline": "Estonia reviews AI use in ambulance and family doctor software",
+      "summary": "Estonia’s government heard a briefing on AI being introduced to ambulance and family doctor software. It also discussed a draft code to identify AI agents acting for people.",
+      "body_paragraphs": [
+        "The proposed code would be linked to a person, so it would be clear when an AI agent acts on that person’s behalf. The healthcare briefing concerned the eKiirabi and PAI software systems."
+      ],
+      "input_fingerprint": "341ec177d764afe2254bc7ab8aabe6ad1d7209aeefa279539b121466c0f31676"
+    },
+    "d1c9f78c8bfc011634f1": {
+      "id": "d1c9f78c8bfc011634f1",
+      "country": "Andorra",
+      "country_code": "AD",
+      "url": "https://www.govern.ad/ca/w/andorra-business-duplica-els-incentius-a-la-recerca-i-el-desenvolupament-i-destina-un-milio-d-euros-a-10-projectes-empresarials",
+      "date": "2026-11-10",
+      "headline": "Andorra funds projects using AI for drones and local language tools",
+      "summary": "Andorra says its business agency awarded €1 million across 10 research projects. Several use AI, including drones that inspect ski facilities and a tool designed to work in Catalan.",
+      "body_paragraphs": [
+        "One project would use AI to guide drones and spot possible problems in images. Another aims to match firms with students and training providers. The Catalan-language tool is being developed for translation, legal advice and business paperwork."
+      ],
+      "input_fingerprint": "8a870bc5c9693f11e719b4fd6375f2a36665962e3964ae779c08db101917f641"
+    },
+    "da239373635d2d24ab50": {
+      "id": "da239373635d2d24ab50",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/index.php/ro/comunicate-de-presa/premierul-vasile-tofan-la-reuniunea-platformei-pentru-conectivitate-digitala",
+      "date": "2026-11-09",
+      "headline": "Moldova plans a data centre to support AI work",
+      "summary": "Moldova says it is preparing a secure data centre that could support AI work and online public services. Its prime minister also called for using AI to help defend government systems from cyberattacks.",
+      "body_paragraphs": [
+        "The data centre is being planned with support from the European Commission and Sweden’s development finance agency. The government says it would provide secure storage and support future AI capabilities."
+      ],
+      "input_fingerprint": "e30e9fc059a67d8ee7ae74ccb3caa0eacf40d067f12f7f343b4aa29192cd5f4e"
+    },
+    "458ab440018a785baadd": {
+      "id": "458ab440018a785baadd",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/aukymdy-kurylys-karkyny-bir-apta-ishinde-kanday-zhana-aleumettik-zhane-kolik-infrakurylymy-nysandary-paydalanuga-berildi-32095",
+      "date": "2026-11-09",
+      "headline": "Kazakhstan opens a public service office with AI tools",
+      "summary": "Kazakhstan says a new public service office in Karaganda has opened with AI tools. It also offers free help so residents can learn to use online government services themselves.",
+      "body_paragraphs": [],
+      "input_fingerprint": "4dcf28a9699c15f90158d1c11f187463a3315c181b702f7a2b36ddfddc4b60e0"
+    },
+    "a6f59cdfd85c6ba4c949": {
+      "id": "a6f59cdfd85c6ba4c949",
+      "country": "North Macedonia",
+      "country_code": "MK",
+      "url": "https://vlada.mk/mk-MK/odnosi-so-javnost/soopstenija/mickoski-vladata-kje-dade-celosna-poddrska-na-sekoj-investiciski-proekt-sto-kje-pridonese-za-ekonomskiot-razvoj-na-makedonija",
+      "date": "2026-11-09",
+      "headline": "North Macedonia backs a factory planning to use AI and robots",
+      "summary": "North Macedonia’s prime minister says the government will support a new factory in Ohrid that plans to use AI and robots. He urged future investors to use similar technology in production.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9b83b856b9772efd5ba490718629cce974a55dc4afbeeacd787498f99dd2902f"
+    },
+    "a43e7da9674e581e716f": {
+      "id": "a43e7da9674e581e716f",
+      "country": "Czechia",
+      "country_code": "CZ",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/vlada-schvalila-strategicke-investice-do-zdravotnictvi-nebo-navrh-na-posileni-ochrany-domacnosti-pred-vysokymi-cenami-energii-229987/",
+      "date": "2026-11-09",
+      "headline": "Czechia creates a government council on AI",
+      "summary": "Czechia’s government says it has created a council on AI. The prime minister will chair it, with industry and trade officials helping to run it.",
+      "body_paragraphs": [
+        "The prime minister said Europe needs to compete in using AI and pay attention to safety. The industry and trade minister will be the council’s first deputy chair, and the government’s AI envoy its executive deputy chair."
+      ],
+      "input_fingerprint": "87d260c1b4461e4d6f522ad0d81a75aceb5e59ecf5726bc856bdc77dbc37d0c3"
     }
   },
   "checked": {
@@ -96,9 +205,20 @@
     "45c2e6222fa2bcdee437": "0ab0c31e4fcc4b340193d507584213765819e17929c39b6e4ebebc17da467cbe",
     "24fdfa2b534e112c3d66": "ca9d5af393cf5705210c1b6fba9eb7f1b7c451420a11f80bdf8081d03dfa5c16",
     "13446e75e78b5701a66c": "95d10a76af444638969dd2df3749ec0c5dc2765d9cf7943ea15b7b341a52ebc4",
-    "6857c69aceb6a6926df6": "b567fc90e23d6e249a4741417794dc67c7d1e230e8d39d8653f5cb53040a8d39"
+    "6857c69aceb6a6926df6": "b567fc90e23d6e249a4741417794dc67c7d1e230e8d39d8653f5cb53040a8d39",
+    "7b902390cebc0f5d1039": "1dfc5bbc193f68622e7793c44021463318d4c2e8cd049c50c4a052995b0db21c",
+    "21c715fcacb767b80ea4": "ffb6cf69e5814ee7eb410024c016b8bf48871593c6e7b74b776b63c31248844e",
+    "cf3d6323a26683635404": "45d289915a34e39719a314e28e8890fee958dc603963f4d362c423b7d5c9e097",
+    "a96a39fbd0e8d7c460b7": "341ec177d764afe2254bc7ab8aabe6ad1d7209aeefa279539b121466c0f31676",
+    "d1c9f78c8bfc011634f1": "8a870bc5c9693f11e719b4fd6375f2a36665962e3964ae779c08db101917f641",
+    "da239373635d2d24ab50": "e30e9fc059a67d8ee7ae74ccb3caa0eacf40d067f12f7f343b4aa29192cd5f4e",
+    "458ab440018a785baadd": "4dcf28a9699c15f90158d1c11f187463a3315c181b702f7a2b36ddfddc4b60e0",
+    "a6f59cdfd85c6ba4c949": "9b83b856b9772efd5ba490718629cce974a55dc4afbeeacd787498f99dd2902f",
+    "a43e7da9674e581e716f": "87d260c1b4461e4d6f522ad0d81a75aceb5e59ecf5726bc856bdc77dbc37d0c3",
+    "c884c90063d14488df22": "28b681aa97aa3d13abcbd2acaf993d0a720c4e1f25355bb91eae1118f55d0a31",
+    "e88aac8344e52a276af2": "0d5328c7cd8affcdad722a41135058b12645a406b44a38a0f1b4f35adfd4712a"
   },
   "retry": {},
-  "pending": 117,
+  "pending": 106,
   "failures": []
 }
