@@ -4,6 +4,7 @@
   "approved_by": "kedmahamelberg-ai",
   "markets": {
     "kind": "markets",
+    "image_reason_visible": false,
     "eyebrow": "THE WEEK FROM ABOVE",
     "title": "Is AI Regulation Slowing Progress or Guiding It This Week?",
     "deck": "The week began with markets dipping as AI regulation fears rattled tech shares. Global tech stocks slid after news about AI rules and a midterm political shift. A Xinhua infographic described AI speeding into newsroom work and reader questions.",
