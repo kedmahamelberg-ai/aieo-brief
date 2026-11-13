@@ -1,21 +1,21 @@
 {
   "release_id": "2026-W45",
-  "human_approved_at": "2026-11-09T12:23:57.611887+00:00",
+  "human_approved_at": "2026-11-13T18:18:03.857827+00:00",
   "approved_by": "kedmahamelberg-ai",
   "markets": {
     "kind": "markets",
     "eyebrow": "THE WEEK FROM ABOVE",
-    "title": "What is the bridge open source can offer for AI this week?",
-    "deck": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
-    "summary": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms. EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets. From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people. The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses. A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
+    "title": "Is AI Regulation Slowing Progress or Guiding It This Week?",
+    "deck": "The week began with markets dipping as AI regulation fears rattled tech shares. Global tech stocks slid after news about AI rules and a midterm political shift. A Xinhua infographic described AI speeding into newsroom work and reader questions.",
+    "summary": "The week began with markets dipping as AI regulation fears rattled tech shares. Global tech stocks slid after news about AI rules and a midterm political shift. A Xinhua infographic described AI speeding into newsroom work and reader questions. A Canadian professor warns that speed may erode human craft in novels. In Europe and beyond, policies blur two regulatory regimes as Northern Ireland wrestles with how EU and UK rules apply to gadgets. A book review cautions that AI driven governance must keep meaningful recourse.",
     "scope_note": "Five selected stories from five discovery markets.",
-    "word_count": 124,
+    "word_count": 102,
     "reading_minutes": 1,
-    "image_path": "assets/culture/f1b34451095142a9ab80beeb.jpg",
-    "image_alt": "Writing Books under the Pine Trees",
-    "image_caption": "Writing Books under the Pine Trees",
-    "image_credit": "Wang Meng (Chinese, c. 1308–1385) · Cleveland Museum of Art",
-    "image_source_url": "https://clevelandart.org/art/1997.94",
+    "image_path": "assets/culture/5ebb7135116f24e6e6924f4c.jpg",
+    "image_alt": "Portrait of a Government Official",
+    "image_caption": "Portrait of a Government Official",
+    "image_credit": "Chae Yongshin (Korean, 1850–1941) · Cleveland Museum of Art",
+    "image_source_url": "https://clevelandart.org/art/2020.259",
     "image_rights": "CC0 image",
     "entries": [
       {
@@ -24,7 +24,7 @@
         "topic": "Rules & rights",
         "story": {
           "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html",
-          "headline": "Global tech stocks wobble as AI regulation fears rise after midterms",
+          "headline": "Guardian reports global tech share losses amid fears of tighter AI rules",
           "publisher": "The Guardian"
         }
       },
@@ -34,17 +34,17 @@
         "topic": "Culture & creativity",
         "story": {
           "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html",
-          "headline": "Do We Need Another Novel? A Professor Questions AI's Role in Literature",
+          "headline": "Professor questions whether more AI-written novels help people think",
           "publisher": "l-express.ca"
         }
       },
       {
         "code": "CN",
         "name": "China",
-        "topic": "Culture & creativity",
+        "topic": "Everyday life",
         "story": {
-          "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html",
-          "headline": "From Wuzhen AI Open-Source Talk, key terms for a shared ecosystem emerge",
+          "path": "story/development-02fa8350-ffe4-4622-bff6-3889ac3c987a/index.html",
+          "headline": "Xinhua infographic describes AI changing newsroom work and access to news",
           "publisher": "新华网"
         }
       },
@@ -53,9 +53,9 @@
         "name": "France",
         "topic": "Rules & rights",
         "story": {
-          "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html",
-          "headline": "CEDH chief warns AI can speed justice but may overwhelm system and invite abusive claims",
-          "publisher": "BFM"
+          "path": "story/development-2c1a78f9-bb97-48a9-8042-da3f0eae4437/index.html",
+          "headline": "Book review warns AI can make unfair government decisions harder to challenge",
+          "publisher": "En attendant Nadeau"
         }
       },
       {
@@ -64,7 +64,7 @@
         "topic": "Rules & rights",
         "story": {
           "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html",
-          "headline": "BBC: EU AI rules may apply in Northern Ireland; UK government sets limits",
+          "headline": "UK says some EU AI rules will cover products in Northern Ireland",
           "publisher": "BBC"
         }
       }
@@ -76,48 +76,51 @@
     "prose": [
       [
         {
-          "text": "Global tech stocks wobble as investors fear AI regulation and slower growth after the midterms.",
+          "text": "The week began with markets dipping as AI regulation fears rattled tech shares.",
+          "source_key": "",
+          "path": ""
+        },
+        {
+          "text": "Global tech stocks slid after news about AI rules and a midterm political shift.",
           "source_key": "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7",
           "path": "story/development-171dddb2-587a-4621-bd28-f1d1b90c9ec7/index.html"
         },
         {
-          "text": "EU rules may apply in Northern Ireland for physical AI products, creating a two track landscape for makers and markets.",
-          "source_key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
-          "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html"
+          "text": "A Xinhua infographic described AI speeding into newsroom work and reader questions.",
+          "source_key": "event:02fa8350-ffe4-4622-bff6-3889ac3c987a",
+          "path": "story/development-02fa8350-ffe4-4622-bff6-3889ac3c987a/index.html"
         }
       ],
       [
         {
-          "text": "From Wuzhen, leaders discuss open models and safety as twin supports for a broader ecosystem that can include more people.",
-          "source_key": "event:11b57efe-191f-437f-b405-a2f1c37d774d",
-          "path": "story/development-11b57efe-191f-437f-b405-a2f1c37d774d/index.html"
-        },
-        {
-          "text": "The European Court of Human Rights president cautions that AI speed must be guided by human judgment to avoid overload and misuses.",
-          "source_key": "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f",
-          "path": "story/development-2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f/index.html"
-        }
-      ],
-      [
-        {
-          "text": "A Canadian professor questions whether AI can reliably add to human craft when speed and volume rise, and whether we truly need more books in a fast cycle.",
+          "text": "A Canadian professor warns that speed may erode human craft in novels.",
           "source_key": "event:0137b615-2741-4b50-9a60-dd93e0471ea1",
           "path": "story/development-0137b615-2741-4b50-9a60-dd93e0471ea1/index.html"
+        },
+        {
+          "text": "In Europe and beyond, policies blur two regulatory regimes as Northern Ireland wrestles with how EU and UK rules apply to gadgets.",
+          "source_key": "event:034c9f16-afde-4d13-bfa2-822d8b830213",
+          "path": "story/development-034c9f16-afde-4d13-bfa2-822d8b830213/index.html"
+        },
+        {
+          "text": "A book review cautions that AI driven governance must keep meaningful recourse.",
+          "source_key": "event:2c1a78f9-bb97-48a9-8042-da3f0eae4437",
+          "path": "story/development-2c1a78f9-bb97-48a9-8042-da3f0eae4437/index.html"
         }
       ]
     ],
     "papers": [],
     "pending_reason": "approved_sources_changed",
     "source_hashes": {
-      "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7": "f074a81b8d14a997089da8fbc984014a23ee8c86c7a9386dbf16758ae63a9e30",
-      "event:0137b615-2741-4b50-9a60-dd93e0471ea1": "cb2e5b3a682d92953e6fe515f4c4972dabc5764c03fc6660f5f02c424dcc91c3",
-      "event:11b57efe-191f-437f-b405-a2f1c37d774d": "21f321d2043b99ceffbf443991255a72d1a463dd7a5f8694a486c263341d65e3",
-      "event:2c9bbaab-e8fb-4d2d-9669-e3ba1ccca64f": "8b89aa1258fe76f5593a5059bd22659281028f584bc95cda1a8b594dc5e69bf1",
-      "event:034c9f16-afde-4d13-bfa2-822d8b830213": "d065e86d6131145e1ea4956a0e453e522b4cfadbc1dc7d5001ba1c7a9f4d3df8"
+      "event:171dddb2-587a-4621-bd28-f1d1b90c9ec7": "1dd30f186af1f223cc2dac96cb5a89e56a8ca57dd509f13d508e55dbcf1a4f2c",
+      "event:0137b615-2741-4b50-9a60-dd93e0471ea1": "d067fccb3ffc69a0bb3b839919f9c78348cc7df2c6cc170f3b440a60ad7c6cb4",
+      "event:02fa8350-ffe4-4622-bff6-3889ac3c987a": "0ae489d01b87ff8b19739e792011b95bd83fb4aa30cfc69e8e782a102800015e",
+      "event:2c1a78f9-bb97-48a9-8042-da3f0eae4437": "ba5dd15b4b186bd8421f749cbde6b5dbc75ab9a76f4f70172c38a8ce1c24aeb0",
+      "event:034c9f16-afde-4d13-bfa2-822d8b830213": "d687474613e28405bfef82b0428a511432c15f6265859fd443656de6e4012b4a"
     },
-    "image_key": "culture:f1b34451095142a9ab80beeb",
-    "image_work_key": "0317aa591e1d8633b61e68dc5dcd3fc18df918ce51c7b33a04f63e848ed9559c",
-    "image_reason": "The pine trees in Writing Books under the Pine Trees echo a patient pace amid rapid change.",
+    "image_key": "culture:5ebb7135116f24e6e6924f4c",
+    "image_work_key": "0afccab2bf8cf4e3b5469de246d33525b43776efcb48e6d84e03ff9cf1145239",
+    "image_reason": "A government official portrait echoes measured oversight guiding progress.",
     "review_checks": {
       "grounded": true,
       "clear_high_school_language": true,
@@ -138,11 +141,11 @@
     "scope_note": "Two papers from this week. Publication status and reading scope are shown with the sources.",
     "word_count": 143,
     "reading_minutes": 1,
-    "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
-    "image_alt": "Milky Way and stars reflected on a backcountry lake in Yellowstone National Park; an illustrative night landscape, not a robot test image",
-    "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park — illustrative photograph",
-    "image_credit": "Neal Herbert / NPS",
-    "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+    "image_path": "assets/weekly-overviews/w45-careful-steps.jpg",
+    "image_alt": "Uneven stone steps climb through mossy rocks and tree roots into shade on Saintly Hill along the Chilkoot Trail",
+    "image_caption": "Stone steps on Saintly Hill, Chilkoot Trail, 2016",
+    "image_credit": "National Park Service",
+    "image_source_url": "https://npgallery.nps.gov/AssetDetail/63dd6ea5-47d6-40fb-aa75-e7a4e4affddb",
     "image_rights": "Public domain · Full Granting Rights",
     "papers": [
       {
@@ -344,7 +347,7 @@
     },
     "image_key": "culture:d65ac8570d1927998fb7cdae",
     "image_work_key": "617ba9aeefcae9c3cc29e27757a5c2b28d0217b959a9b03bac708f5106987782",
-    "image_reason": "The open landscape suggests exploration; the photograph is illustrative and does not show the robotics experiments.",
+    "image_reason": "Uneven steps disappearing into shade echo robots learning to move through real spaces, where progress depends on sensing obstacles and knowing what remains unseen.",
     "review_checks": {
       "grounded": true,
       "clear_high_school_language": true,
@@ -354,6 +357,9 @@
       "no_invented_personal_experience": true,
       "image_metaphor_supported": true
     },
-    "human_approved": true
+    "human_approved": true,
+    "image_origin": "camera photograph",
+    "image_taken_date": "2016-06-07",
+    "image_purpose": "metaphorical illustration"
   }
 }
