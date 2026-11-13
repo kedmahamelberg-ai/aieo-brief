@@ -61,6 +61,12 @@
   <a href="{{ local('archive/index.html') }}" {% if page=='archive' %}aria-current="page"{% endif %}>Past editions</a>
   <a href="{{ local('about/index.html') }}" {% if page=='about' %}aria-current="page"{% endif %}>About</a>
 </div></nav>
+{% if page=='home' and government_ticker %}<aside class="government-stripe" aria-label="Governments say: checked AI announcements">
+  <a class="government-stripe-label" href="{{ local('governments-say/index.html') }}">GOVERNMENTS SAY <span aria-hidden="true">→</span></a>
+  <div class="government-stripe-window"><div class="government-stripe-track" id="government-stripe-track"><div class="government-stripe-run" id="government-stripe-items">
+  {% for item in government_ticker %}<a href="{{ local('governments-say/index.html') }}" data-date="{{ item.date }}" data-key="{{ item.key }}"><strong>{{ item.country }}</strong><span>{{ item.headline }}</span></a>{% endfor %}
+  </div><div class="government-stripe-run" id="government-stripe-repeat" aria-hidden="true"></div></div></div>
+</aside>{% endif %}
 {% block content %}{% endblock %}
 <footer class="site-footer">
   <div><a class="wordmark footer-mark" href="{{ local('index.html') }}">the brief<span>.</span></a><p>A research initiative by <a href="{{ config.personal_site_url }}">Kedma Hamelberg</a>.</p><a href="{{ config.observatory_url }}">AI Empowerment Observatory ↗</a><a href="{{ config.personal_site_url }}">Kedma’s research and work ↗</a><a href="https://monitor.hamelberg-ai.com/">European Security Monitor ↗</a></div>
@@ -81,8 +87,8 @@
 <div id="toast" role="status" aria-live="polite" hidden></div>
 <script id="brief-config" type="application/json">{{ public_config|tojson }}</script>
 <script id="brief-items" type="application/json">{{ client_items|tojson }}</script>
-<script src="{{ local('assets/core.js') }}" defer></script><script src="{{ local('assets/community.js') }}" defer></script><script src="{{ local('assets/ux-history.js') }}" defer></script><script src="{{ local('assets/analytics.js') }}" defer></script><script src="{{ local('assets/app.js') }}" defer></script><script src="{{ local('assets/engagement.js') }}" defer></script>
-{% if page=='home' %}<script src="{{ local('assets/carousels.js') }}" defer></script>{% endif %}
+<script src="{{ local('assets/core.js') }}" defer></script><script src="{{ local('assets/community.js') }}" defer></script><script src="{{ local('assets/ux-history.js') }}" defer></script><script src="{{ local('assets/analytics.js') }}" defer></script><script src="{{ local('assets/app.js') }}?v=20261113-government-stripe" defer></script><script src="{{ local('assets/engagement.js') }}" defer></script>
+{% if page=='home' %}<script src="{{ local('assets/carousels.js') }}" defer></script><script src="{{ local('assets/government-order.js') }}" defer></script><script src="{{ local('assets/government-stripe.js') }}" defer></script>{% endif %}
 {% if page=='notifications' %}<script src="{{ local('assets/notifications.js') }}" defer></script>{% endif %}
 {% if page=='digest' %}<script src="{{ local('assets/digest.js') }}" defer></script>{% endif %}
 </body></html>

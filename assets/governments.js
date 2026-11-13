@@ -47,7 +47,7 @@
     feed.replaceChildren(fragment);
     document.querySelector('[data-country-control]').hidden = view !== 'country';
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.governmentView === view)));
-    document.getElementById('government-status').textContent = selected.length ? `${selected.length} AI announcement${selected.length === 1 ? '' : 's'} · ${view === 'day' ? weekly.current ? 'this week' : 'latest available week' : 'by issuing country'}` : 'No checked AI announcements for this selection.';
+    document.getElementById('government-status').textContent = selected.length ? `${selected.length} checked AI announcement${selected.length === 1 ? '' : 's'} · ${view === 'day' ? weekly.current ? 'published this week' : 'from the latest available week' : 'by issuing country'}` : 'No checked AI announcements for this selection.';
     const params = new URLSearchParams({view});
     if (view === 'country') params.set('country', country.value);
     history.replaceState(null, '', location.pathname + '?' + params.toString() + location.hash);

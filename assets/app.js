@@ -1,6 +1,6 @@
 (function(){'use strict';
  const config=JSON.parse(document.getElementById('brief-config').textContent),items=JSON.parse(document.getElementById('brief-items').textContent),index=new Map(items.map(i=>[i.key,i])),Core=window.BriefCore,Community=window.BriefCommunity,Analytics=window.BriefAnalytics;
- const rootURL=document.querySelector('script[data-brief-root]')?new URL(document.querySelector('script[data-brief-root]').dataset.briefRoot):new URL('../',document.querySelector('script[src$="assets/app.js"]').src),SAVED_KEY='aieo-brief-saved-v1';
+ const rootURL=document.querySelector('script[data-brief-root]')?new URL(document.querySelector('script[data-brief-root]').dataset.briefRoot):new URL('../',document.querySelector('script[src*="assets/app.js"]').src),SAVED_KEY='aieo-brief-saved-v1';
  let metrics={},metricsAvailable=false,shareItem=null,toastTimer,saved=new Set(),remoteSaves=new Set(),limit=8,market='all';
  const page=document.body.dataset.page,storyKey=document.body.dataset.storyKey;
  const returningFromSignIn=new URLSearchParams(location.hash.slice(1)).has('access_token');
@@ -23,7 +23,7 @@
  function share(key){const item=index.get(key);if(!item)return;shareItem=item;byId('share-dialog').dataset.storyKey=item.key;const url=Core.publicURL(config,item,rootURL.href);if(!url){toast('Sharing will use the Brief’s public URL after publication. Original source links already work.');return;}document.querySelector('[data-share-heading]').textContent=item.headline;const links=Core.shareLinks(url,item.headline);document.querySelectorAll('[data-share-channel]').forEach(a=>a.href=links[a.dataset.shareChannel]);openDialog('share-dialog');}
  async function copyShare(){if(!shareItem)return;const url=Core.publicURL(config,shareItem,rootURL.href);if(!url)return;try{await navigator.clipboard.writeText(url);toast('Link copied.');window.BriefEngagement?.share(shareItem.key);}catch{const input=el('input');input.value=url;byId('share-dialog').appendChild(input);input.focus();input.select();toast('Copy the selected link.');}Analytics.event('share_option',{story_key:shareItem.key,channel:'copy'});}
  async function nativeShare(){if(!shareItem)return;const url=Core.publicURL(config,shareItem,rootURL.href);if(navigator.share){try{await navigator.share({title:shareItem.headline,url});window.BriefEngagement?.share(shareItem.key);Analytics.event('share_option',{story_key:shareItem.key,channel:'device'});}catch(e){if(e.name!=='AbortError')toast('Choose a sharing option or copy the link.');}}else toast('Choose an app above, or copy the link to paste elsewhere.');}
- const nodes=[...document.querySelectorAll('[data-story-card]')],nodeMap=new Map(nodes.map(n=>[n.dataset.key,n]));
+ const nodes=[...document.querySelectorAll('#story-feed [data-story-card]')],nodeMap=new Map(nodes.map(n=>[n.dataset.key,n]));
  const feedItems=nodes.map(n=>({...index.get(n.dataset.key),human_direction:n.dataset.direction,markets:n.dataset.markets.split(' ').filter(Boolean),topic:n.dataset.topic}));
  // A dated edition stays intact; only its reading order changes on a new day.
  const planNode=byId('daily-rotation');

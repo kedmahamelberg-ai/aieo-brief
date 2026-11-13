@@ -473,7 +473,7 @@ def main():
             ctx['structured_data'] = ([existing_schema] if existing_schema else []) + [generated_schema]
         output=env.get_template(template).render(**page_defaults,local=local,canonical=canonical,client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
-    render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
+    render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news,government_ticker=governments)
     render('research/index.html','collection.html',page='research',items=research)
     render('governments-say/index.html','governments.html',page='governments',items=governments,government_status=government_state(ROOT))
     render('culture/index.html','culture.html',page='culture',items=culture)
