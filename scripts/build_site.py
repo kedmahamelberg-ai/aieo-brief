@@ -30,6 +30,7 @@ from research_reading import restore_reading_scope, withhold_abstract_summary
 from research_affiliations import clean_institutions
 from source_evidence_quality import assess_body
 from source_chronology import older_source_year
+from government_briefs import cards as government_cards, load as government_state
 ROOT=Path(__file__).resolve().parents[1]
 SITE=ROOT/'_site'
 OBS=os.environ.get('OBSERVATORY_BASE_URL','https://observatory.hamelberg-ai.com').rstrip('/')
@@ -353,7 +354,18 @@ def main():
             item['institutions']=clean_institutions(item.get('institutions'),item.get('authors'))
     current_keys={x['key'] for x in news}
     allitems={x['key']:x for x in old if not (x.get('kind')=='news' and x.get('edition')==release['release_id'] and x['key'] not in current_keys)}
-    for item in news+research+culture:
+    governments=government_cards(ROOT)
+    # Government publication is owned by its checked Monitor-derived cache.
+    # Removed/corrected candidates must not survive in the general archive.
+    government_keys={x['key'] for x in governments}
+    for key,item in allitems.items():
+        if item.get('section')=='governments' and key not in government_keys:
+            # Keep previously shared URLs and discussion identities, while
+            # withdrawing text whose corrected source has not passed review.
+            item.update(headline='Government announcement being checked',
+                        deck='We are checking this announcement again. The official source remains available below.',
+                        summary='',body_paragraphs=[],has_editorial=False,withdrawn=True,government_photo=None)
+    for item in news+research+culture+governments:
         previous=allitems.get(item['key'])
         if previous and previous.get('path') and re.fullmatch(r'(story|research|culture)/[a-zA-Z0-9_-]+/index.html',previous['path']):
             item['path']=previous['path'];item['slug']=previous['slug']
@@ -371,7 +383,7 @@ def main():
     # Prepare the day's cultural translations before the shared model budget is
     # spent on less time-sensitive archive and news display fields.
     current_order={x['key']:i for i,x in enumerate(culture+news+research)}
-    public_by_key={x['key']:english.apply(x) for x in sorted(allcards,key=lambda x:current_order.get(x['key'],100000))}
+    public_by_key={x['key']:(x if x.get('section')=='governments' else english.apply(x)) for x in sorted(allcards,key=lambda x:current_order.get(x['key'],100000))}
     allcards=[public_by_key[x['key']] for x in allcards]
     prepare_news_display(allcards)
     pending_culture=[x['key'] for x in allcards if x.get('kind')=='culture' and x.get('english_status')=='pending']
@@ -391,6 +403,7 @@ def main():
             counts[axis][item[axis + '_direction']] += 1
     research=[public_by_key[x['key']] for x in research]
     culture=[public_by_key[x['key']] for x in culture]
+    governments=[public_by_key[x['key']] for x in governments]
     for item in allcards:
         item['content_hash'],_=content_version(item)
     for item in allcards:
@@ -462,6 +475,7 @@ def main():
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news)
     render('research/index.html','collection.html',page='research',items=research)
+    render('governments-say/index.html','governments.html',page='governments',items=governments,government_status=government_state(ROOT))
     render('culture/index.html','culture.html',page='culture',items=culture)
     render('saved/index.html','collection.html',page='saved',items=allcards)
     render('archive/index.html','collection.html',page='archive',items=allcards)
@@ -498,9 +512,10 @@ def main():
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
         related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
-        render(item['path'],'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related)
+        story_template='government-story.html' if item.get('section')=='governments' else 'culture-story.html' if item['kind']=='culture' else 'story.html'
+        render(item['path'],story_template,page='story',story=item,related=related)
         for alias in item.get('legacy_paths', []):
-            render(alias,'story.html',page='story',story=item,related=related,canonical_path=item['path'],short_destination=baseurl+'/'+item['path'].removesuffix('index.html'))
+            render(alias,story_template,page='story',story=item,related=related,canonical_path=item['path'],short_destination=baseurl+'/'+item['path'].removesuffix('index.html'))
     campaign_file=ROOT/'config/social-links.json'
     campaigns=json.loads(campaign_file.read_text()).get('links',[]) if campaign_file.exists() else []
     # Preview snapshots may predate a live campaign; live builds must resolve all links.
@@ -510,13 +525,14 @@ def main():
     for alias,route in short_routes.items():
         item=by_path[route['article_path']]
         related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
-        render(alias,'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related,canonical_path=item['path'],short_destination=route['destination'])
+        render(alias,'government-story.html' if item.get('section')=='governments' else 'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related,canonical_path=item['path'],short_destination=route['destination'])
     data=SITE/'data';data.mkdir()
     (data/'short-links.json').write_text(json.dumps(short_routes,ensure_ascii=False,indent=2)+'\n')
     payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
     payload['complete_content']=release.get('complete_content',{})
     payload['daily_selection']=rotation
     payload.update(culture_count=len(culture),culture=culture)
+    payload.update(government_count=len(governments),governments=governments)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)
     payload['weekly_overview']=weekly_overview
     spotlight=spotlight_feed(ROOT, [lead]+[n for n in news if n is not lead] if lead else news, baseurl, release['release_id'], utc_now())
@@ -541,11 +557,11 @@ def main():
         rss=['<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>AIEO Brief</title><link>'+xml_escape(baseurl)+'</link><description>Clear AI news and research, with original sources.</description>']
         weekly_url=baseurl+'/'+weekly_overview['path'].removesuffix('index.html')
         rss.append('<item><title>'+xml_escape(weekly_overview['markets']['title'])+'</title><link>'+xml_escape(weekly_url)+'</link><guid isPermaLink="false">weekly:'+xml_escape(weekly_overview['release_id'])+'</guid><description>'+xml_escape(weekly_overview['markets']['deck'])+'</description></item>')
-        for item in sorted(news+research+culture,key=lambda x:x['date'],reverse=True)[:100]:
+        for item in sorted(news+research+culture+governments,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=[
-            ('index.html',today,''),('research/index.html',today,''),('culture/index.html',today,''),
+            ('index.html',today,''),('research/index.html',today,''),('governments-say/index.html',today,''),('culture/index.html',today,''),
             ('archive/index.html',today,''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
             *[(x['path'],x['period_end'],x['markets'].get('image_path','')) for x in overview_archive],
             *[(item['path'],item['date'],'') for item in sitemap_articles(allcards)],

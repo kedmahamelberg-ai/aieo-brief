@@ -81,10 +81,17 @@ def validate(site):
  if not site.exists():raise ValueError('No built website')
  payload=json.loads((site/'data/current.json').read_text());inspect_json(payload)
  inspect_json(json.loads((site/'data/public-items.json').read_text()))
- news=payload['stories'];papers=payload['research'];culture=payload.get('culture',[]);keys=[x['key'] for x in news+papers+culture]
+ news=payload['stories'];papers=payload['research'];culture=payload.get('culture',[]);governments=payload.get('governments',[]);keys=[x['key'] for x in news+papers+culture+governments]
  if len(keys)!=len(set(keys)):raise ValueError('Duplicate story IDs')
  if len(news)!=payload['story_count'] or len(papers)!=payload['research_count']:raise ValueError('Inconsistent collection count')
  if len(culture)!=payload.get('culture_count',0):raise ValueError('Inconsistent culture count')
+ if len(governments)!=payload.get('government_count',0):raise ValueError('Inconsistent government count')
+ if not (site/'governments-say/index.html').is_file():raise ValueError('Government page missing')
+ for item in governments:
+  if item.get('section')!='governments' or not re.fullmatch(r'[A-Z]{2}',item.get('country_code','')) or not item.get('country') or len(item.get('deck','').split())>45 or len(item.get('headline','').split())>16:raise ValueError('Government brief lacks country or exceeds brief limits')
+  if len(item.get('body_paragraphs',[]))>2 or sum(len(p.split()) for p in item.get('body_paragraphs',[]))>90:raise ValueError('Government article exceeds its concise detail limit')
+  photo=item.get('government_photo')
+  if photo and (not photo.get('license','').startswith(('CC0','Public domain')) or not photo.get('source_url') or not photo.get('license_url')):raise ValueError('Government photo lacks public-domain provenance')
  overview=payload.get('weekly_overview') or {}
  if overview.get('schema_version')!='aieo_weekly_overview_v1':raise ValueError('Weekly overview missing')
  if len((overview.get('markets') or {}).get('entries') or [])!=5:raise ValueError('Weekly overview must retain five discovery markets')
@@ -103,7 +110,7 @@ def validate(site):
   if any(counts[k]!=v for k,v in payload['directional_counts'][axis].items()):raise ValueError('Wrong '+axis+' totals')
  for item in news:
   validate_news_boxes(item)
- for item in news+papers+culture:
+ for item in news+papers+culture+governments:
   if not item['sources'] or len(item['sources'])!=item['source_count']:raise ValueError('Missing or inconsistent source list')
   if not (site/item['path']).is_file():raise ValueError('Story page missing')
   if item['kind']=='research' and item['has_editorial']:validate_research_reading(item)

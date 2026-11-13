@@ -1,0 +1,70 @@
+name: Update Brief Government AI Announcements
+on:
+  schedule:
+    - cron: '20 16 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: brief-government-announcements
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      AIEO_AI_PROVIDER: ${{ vars.AIEO_AI_PROVIDER || 'openai' }}
+      AIEO_AI_MAX_JOB_USD: ${{ vars.AIEO_AI_MAX_JOB_USD || '0.50' }}
+      BRIEF_LOCAL_LLM_URL: http://127.0.0.1:8080
+      BRIEF_EDITORIAL_MODEL_REVISION: ggml-org/Qwen3-4B-GGUF@2f3b082b1356a6123f7ed71e65aea340da25d53c
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Verify AI filtering, corrections and source checks
+        run: AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_government_briefs.py' -v
+      - name: Set the existing bounded AI usage ledger
+        run: |
+          mkdir -p "$RUNNER_TEMP/ai-usage"
+          echo "AIEO_AI_LEDGER=$RUNNER_TEMP/ai-usage/governments.json" >> "$GITHUB_ENV"
+      - name: Check pending Monitor candidates before starting a model
+        id: pending
+        run: python scripts/government_briefs.py --dry-run
+      - name: Start the existing local model only when needed
+        if: env.AIEO_AI_PROVIDER == 'local' && steps.pending.outputs.needs_model == 'true'
+        uses: ./.github/actions/local-editorial-model
+      - name: Reuse Monitor announcements and double-check original AI content
+        id: collect
+        continue-on-error: true
+        run: python scripts/government_briefs.py
+      - name: Authorize the checked public summaries
+        uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
+      - name: Preserve checked announcements and retry progress
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [[ -f data/governments/public.json ]]; then
+            git add data/governments/public.json
+            if ! git diff --cached --quiet; then
+              git commit -m 'Update checked government AI announcements'
+              git pull --rebase origin main
+              git push origin HEAD:main
+            fi
+          fi
+      - name: Report incomplete source checks
+        if: steps.collect.outcome == 'failure'
+        run: |
+          echo '::error::Some announcements could not be checked. They remain unpublished and will be retried; previously checked unchanged items are retained.'
+          exit 1
+      - name: Stop the local model
+        if: always()
+        run: |
+          if [[ -f llama-server.pid ]]; then kill "$(cat llama-server.pid)" 2>/dev/null || true; fi

@@ -54,6 +54,7 @@
 <nav class="navigation" aria-label="Main"><div class="nav-inner">
   <a href="{{ local('index.html') }}" {% if page=='home' %}aria-current="page"{% endif %}>The news</a>
   <a href="{{ local('research/index.html') }}" {% if page=='research' %}aria-current="page"{% endif %}>Research</a>
+  <a href="{{ local('governments-say/index.html') }}" {% if page=='governments' or (story is defined and story.section=='governments') %}aria-current="page"{% endif %}>Governments say</a>
   <a href="{{ local('week-from-above/index.html') }}" {% if page in ('weekly-archive','weekly-overview') %}aria-current="page"{% endif %}>Week from above</a>
   <a href="{{ local('culture/index.html') }}" {% if page=='culture' %}aria-current="page"{% endif %}>A daily pause</a>
   <a href="{{ local('saved/index.html') }}" {% if page=='saved' %}aria-current="page"{% endif %}>Saved</a>

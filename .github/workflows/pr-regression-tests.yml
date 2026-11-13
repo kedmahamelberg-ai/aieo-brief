@@ -24,4 +24,4 @@ jobs:
       - name: Test editorial, release, privacy and site behavior
         run: |
           AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_*.py'
-          node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js tests/carousels.test.js tests/ux-history.test.js tests/public-metrics.test.js
+          node --test tests/core.test.js tests/news-worker.test.js tests/monetization.test.js tests/carousels.test.js tests/ux-history.test.js tests/public-metrics.test.js tests/government-order.test.js
