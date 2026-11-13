@@ -2,6 +2,368 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "The Prophet",
+      "content_fingerprint": "0a8810903c854b24195a6015fc1fc96e09cca02e8dbf6eb882fa54cb1ab79fe3",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "quote",
+      "deck": "From The Prophet.",
+      "excerpt": "It is life in quest of life in bodies that fear the grave.",
+      "headline": "It is life in quest of life in bodies that fear the grave.",
+      "key": "culture:c81eecb18a74a22b95e54278",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:58585:quote:0a8810903c854b24195a6015fc1fc96e09cca02e8dbf6eb882fa54cb1ab79fe3",
+      "publisher": "Project Gutenberg",
+      "quote_context": "It is life in quest of life in bodies that fear the grave.",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/58585"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "e4c7f1820ffbfa4d6e2186a1a9f649f3a3b15df2478c7373a24560574af3bcfc",
+      "source_locator": "Almustafa, the chosen and the; paragraph 797 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/58585",
+      "translator": "",
+      "work_date": "1923",
+      "date": "2026-11-13",
+      "selected_on": "2026-11-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c81eecb18a74a22b95e54278",
+      "path": "culture/culture-c81eecb18a74a22b95e54278/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "It is life in quest of life in bodies that fear the grave.",
+          "url": "https://www.gutenberg.org/ebooks/58585",
+          "date": "1923",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-13",
+      "summary_basis": "Selected 13 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "It is life in quest of life in bodies that fear the grave.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "It is life in quest of life in bodies that fear the grave.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "014533a8628156d2602c45ccec6fbf2fcbec93d7e1222baf3f8d6b9ce1548fac",
+      "creator": "Christina Rossetti",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by Christina Rossetti.",
+      "excerpt": "SAFE where I cannot die yet,\n   Safe where I hope to lie too,\nSafe from the fume and the fret;\n   You, and you,\n   Whom I never forget.\nSafe from the frost and the snow,\n   Safe from the storm and the sun,\nSafe where the seeds wait to grow\n   One by one,\n   And to come back in blow.",
+      "headline": "Is it Well with the Child?",
+      "key": "culture:79cef962bcd6196b5dad997c",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "SAFE where I cannot die yet,",
+        "   Safe where I hope to lie too,",
+        "Safe from the fume and the fret;",
+        "   You, and you,",
+        "   Whom I never forget.",
+        "Safe from the frost and the snow,",
+        "   Safe from the storm and the sun,",
+        "Safe where the seeds wait to grow",
+        "   One by one,",
+        "   And to come back in blow."
+      ],
+      "provenance_id": "poetrydb:Christina Rossetti:Is it Well with the Child?",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1894.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5e1aeb524ded77e5a29ef75c8145d6cc77cd6fde187b121133e95cde1bebdb9c",
+      "source_locator": "Is it Well with the Child?",
+      "source_url": "https://poetrydb.org/title/Is%20it%20Well%20with%20the%20Child%3F:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1894",
+      "date": "2026-11-13",
+      "selected_on": "2026-11-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-79cef962bcd6196b5dad997c",
+      "path": "culture/culture-79cef962bcd6196b5dad997c/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Is it Well with the Child?",
+          "url": "https://poetrydb.org/title/Is%20it%20Well%20with%20the%20Child%3F:abs/lines.text",
+          "date": "Before 1894",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-13",
+      "summary_basis": "Selected 13 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "SAFE where I cannot die yet,\n   Safe where I hope to lie too,\nSafe from the fume and the fret;\n   You, and you,\n   Whom I never forget.\nSafe from the frost and the snow,\n   Safe from the storm and the sun,\nSafe where the seeds wait to grow\n   One by one,\n   And to come back in blow.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Meditations",
+      "content_fingerprint": "f0461ffc656e9275601b72f2aca6062edda08d98ce57e69abdf5fabd85f67711",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "text",
+      "deck": "A passage from Meditations. Translated by Méric Casaubon.",
+      "excerpt": "XII. Will any contemn me? let him look to that, upon what grounds he does it: my care shall be that I may never be found either doing or speaking anything that doth truly deserve contempt. Will any hate me? let him look to that. I for my part will be kind and loving unto all, and even unto him that hates me, whom-soever he be, will I be ready to show his error, not by way of exprobation or ostentation of my patience, but ingenuously and meekly: such as was that famous Phocion, if so be that he did not dissemble. For it is inwardly that these things must be: that the Gods who look inwardly, and not upon the outward appearance, may behold a man truly free from all indignation and grief. For what hurt can it be unto thee whatsoever any man else doth, as long as thou mayest do that which is proper and suitable to thine own nature? Wilt not thou (a man wholly appointed to be both what, and as the common good shall require) accept of that which is now seasonable to the nature of the universe?",
+      "headline": "Meditations · a short reading",
+      "key": "culture:74f5022969576755d203f7dd",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:passage:f0461ffc656e9275601b72f2aca6062edda08d98ce57e69abdf5fabd85f67711",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 383 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-11-13",
+      "selected_on": "2026-11-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-74f5022969576755d203f7dd",
+      "path": "culture/culture-74f5022969576755d203f7dd/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Meditations · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-13",
+      "summary_basis": "Selected 13 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "XII. Will any contemn me? let him look to that, upon what grounds he does it: my care shall be that I may never be found either doing or speaking anything that doth truly deserve contempt. Will any hate me? let him look to that. I for my part will be kind and loving unto all, and even unto him that hates me, whom-soever he be, will I be ready to show his error, not by way of exprobation or ostentation of my patience, but ingenuously and meekly: such as was that famous Phocion, if so be that he did not dissemble. For it is inwardly that these things must be: that the Gods who look inwardly, and not upon the outward appearance, may behold a man truly free from all indignation and grief. For what hurt can it be unto thee whatsoever any man else doth, as long as thou mayest do that which is proper and suitable to thine own nature? Wilt not thou (a man wholly appointed to be both what, and as the common good shall require) accept of that which is now seasonable to the nature of the universe?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Fragment with gold leaf lions",
+      "art_type": "Textile",
+      "balance_origin": "Iran or Iraq",
+      "creator": "Artist unknown",
+      "creator_origin": "Iran or Iraq, Seljuk period",
+      "culture_type": "illustration",
+      "deck": "Fragment with gold leaf lions. Silk warp and cotton weft (mulham): plain weave; gold leaf, block printed.",
+      "headline": "Fragment with gold leaf lions",
+      "image_path": "assets/culture/3cf0db498c933d59d92b83e4.jpg",
+      "key": "culture:3cf0db498c933d59d92b83e4",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1950.558/1950.558_web.jpg",
+      "medium": "Silk warp and cotton weft (mulham): plain weave; gold leaf, block printed",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1950.558",
+      "provenance_id": "cma:127924",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1950.558",
+      "work_date": "1000s–1100s",
+      "date": "2026-11-13",
+      "selected_on": "2026-11-13",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-3cf0db498c933d59d92b83e4",
+      "path": "culture/culture-3cf0db498c933d59d92b83e4/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Fragment with gold leaf lions",
+          "url": "https://clevelandart.org/art/1950.558",
+          "date": "1000s–1100s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-13",
+      "summary_basis": "Selected 13 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Mac_Darden_and_H._Carroll_Taylor_arranged_by_Scott_Joplin_-_Good-bye_Old_Gal_Good-bye_%281906%29.ogg",
+      "creator": "Scott Joplin",
+      "creator_origin": "American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Scott Joplin. 2 minutes to listen.",
+      "duration_seconds": 173,
+      "headline": "Mac Darden and H. Carroll Taylor arranged by Scott Joplin - Good-bye Old Gal Good-bye (1906)",
+      "key": "culture:0fc89a87f8283c7f624f63ce",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Mac_Darden_and_H._Carroll_Taylor_arranged_by_Scott_Joplin_-_Good-bye_Old_Gal_Good-bye_%281906%29.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Scott_Joplin",
+      "original_recording_title": "Mac Darden and H. Carroll Taylor arranged by Scott Joplin - Good-bye Old Gal Good-bye (1906)",
+      "provenance_id": "commons:183514393",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Gnissah",
+      "recording_description": "Mac Darden and H. Carroll Taylor arranged by Scott Joplin - Good-bye Old Gal Good-bye (1906)",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Gnissah",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://commons.wikimedia.org/wiki/File:Mac_Darden_and_H._Carroll_Taylor_arranged_by_Scott_Joplin_-_Good-bye_Old_Gal_Good-bye_(1906).ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mac_Darden_and_H._Carroll_Taylor_arranged_by_Scott_Joplin_-_Good-bye_Old_Gal_Good-bye_(1906).ogg",
+      "work_date": "2026-02-08",
+      "date": "2026-11-13",
+      "selected_on": "2026-11-13",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0fc89a87f8283c7f624f63ce",
+      "path": "culture/culture-0fc89a87f8283c7f624f63ce/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Mac Darden and H. Carroll Taylor arranged by Scott Joplin - Good-bye Old Gal Good-bye (1906)",
+          "url": "https://commons.wikimedia.org/wiki/File:Mac_Darden_and_H._Carroll_Taylor_arranged_by_Scott_Joplin_-_Good-bye_Old_Gal_Good-bye_(1906).ogg",
+          "date": "2026-02-08",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "13 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-13",
+      "summary_basis": "Selected 13 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Panel with Royal Woman",
       "art_type": "Sculpture",
       "balance_origin": "Guatemala or Mexico",
@@ -2456,7 +2818,7 @@
       "full_text_retry_after": "2026-11-17",
       "pdf_url": "https://arxiv.org/pdf/2611.12878v1",
       "journal_reference": "",
-      "affiliation_checked_at": "2026-11-12T21:52:32.229505+00:00",
+      "affiliation_checked_at": "2026-11-13T01:30:16.548763+00:00",
       "paper_pages": 8,
       "publisher": "arXiv",
       "reading_minutes": 1,
@@ -9379,7 +9741,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-12T21:52:32.229505+00:00",
+      "affiliation_checked_at": "2026-11-13T01:30:16.548763+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
