@@ -13,8 +13,9 @@ import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 FEED = 'https://monitor.hamelberg-ai.com/government-data.json'
-POLICY = 'government-ai-brief-v3'
+POLICY = 'government-ai-brief-v4'
 PREVIOUS_POLICY = 'government-ai-brief-v2'
+INTERMEDIATE_POLICY = 'government-ai-brief-v3'
 
 
 def clean(value):
@@ -46,20 +47,34 @@ def candidate(item):
 def fingerprint(item, policy=POLICY):
     fields = {k: item.get(k) for k in ('id', 'country', 'country_code', 'url', 'english_summary')}
     fields['date'] = published_day(item)
-    if policy == POLICY:
+    if policy in (POLICY, INTERMEDIATE_POLICY):
         fields['ticker_message'] = item.get('ticker_message')
         fields['topics'] = item.get('topics')
     return hashlib.sha256(json.dumps([policy, fields], sort_keys=True).encode()).hexdigest()
 
 
+def brief_length(value, limit):
+    """Shorten Monitor wording mechanically for the Brief's card limits."""
+    words = clean(value).split()
+    return ' '.join(words[:limit]) + ('…' if len(words) > limit else '')
+
+
+def within_brief_limits(record):
+    return (len(clean(record.get('headline')).split()) <= 16
+            and len(clean(record.get('summary')).split()) <= 45)
+
+
 def monitor_record(item, sha):
-    """Reuse the Monitor's own English wording and official source link."""
-    summary = clean(item['english_summary'])
-    headline = clean(item.get('ticker_message')) or re.split(r'(?<=[.!?])\s+', summary, maxsplit=1)[0]
+    """Reuse Monitor wording and retain any full summary shortened on a card."""
+    full_summary = clean(item['english_summary'])
+    source_headline = clean(item.get('ticker_message')) or re.split(r'(?<=[.!?])\s+', full_summary, maxsplit=1)[0]
+    summary = brief_length(full_summary, 45)
     return {'id': str(item['id']), 'country': clean(item['country']),
             'country_code': item['country_code'], 'url': item['url'],
-            'date': published_day(item), 'headline': headline,
-            'summary': summary, 'body_paragraphs': [], 'input_fingerprint': sha}
+            'date': published_day(item), 'headline': brief_length(source_headline, 16),
+            'summary': summary,
+            'body_paragraphs': [full_summary] if summary != full_summary else [],
+            'input_fingerprint': sha}
 
 
 def refresh(snapshot, state):
@@ -82,7 +97,9 @@ def refresh(snapshot, state):
             continue
         # Preserve previously published copy and community identity when its
         # source evidence has not changed. An old exclusion is reconsidered.
-        if ident in records and checked.get(ident) == fingerprint(item, PREVIOUS_POLICY):
+        if (ident in records and within_brief_limits(records[ident])
+                and checked.get(ident) in (fingerprint(item, PREVIOUS_POLICY),
+                                           fingerprint(item, INTERMEDIATE_POLICY))):
             records[ident] = {**records[ident], 'input_fingerprint': sha}
         else:
             records[ident] = monitor_record(item, sha)
