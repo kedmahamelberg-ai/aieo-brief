@@ -11,9 +11,12 @@ AMSTERDAM = ZoneInfo("Europe/Amsterdam")
 
 def is_due(state, now):
     local = now.astimezone(AMSTERDAM)
-    due_at = datetime.combine(local.date(), time(17, 20), AMSTERDAM)
+    due_at = datetime.combine(local.date(), time(17, 5), AMSTERDAM)
     if local < due_at:
         return False
+    # A changed import policy needs one catch-up even after an earlier same-day check.
+    if state.get("policy") != "government-ai-brief-v3":
+        return True
     checked = state.get("last_checked_at")
     if not checked:
         return True
