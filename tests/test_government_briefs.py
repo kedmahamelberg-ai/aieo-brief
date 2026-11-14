@@ -74,6 +74,31 @@ class GovernmentBriefsTests(unittest.TestCase):
         self.assertIn('ai-item', state['records'])
         self.assertEqual(state['retry'], {})
 
+    def test_long_monitor_text_is_shortened_without_excluding_item(self):
+        item = source(ticker_message='AI ' * 18, english_summary='AI ' * 50)
+        row = gov.monitor_record(item, gov.fingerprint(item))
+        self.assertLessEqual(len(row['headline'].split()), 16)
+        self.assertLessEqual(len(row['summary'].split()), 45)
+        self.assertEqual(row['body_paragraphs'], [gov.clean(item['english_summary'])])
+
+    def test_v3_valid_copy_is_preserved_and_long_copy_reformatted(self):
+        item = source()
+        old_sha = gov.fingerprint(item, gov.INTERMEDIATE_POLICY)
+        good = gov.monitor_record(item, old_sha)
+        good['headline'] = 'Researcher correction'
+        state = gov.refresh(snapshot(item), {'records': {'ai-item': good},
+                                                'checked': {'ai-item': old_sha}})
+        self.assertEqual(state['records']['ai-item']['headline'], 'Researcher correction')
+        long_item = source(id='long', ticker_message='AI ' * 18,
+                           english_summary='AI ' * 50)
+        old_long_sha = gov.fingerprint(long_item, gov.INTERMEDIATE_POLICY)
+        old_long = {'id': 'long', 'headline': 'AI ' * 18,
+                    'summary': 'AI ' * 50}
+        repaired = gov.refresh(snapshot(long_item),
+                               {'records': {'long': old_long},
+                                'checked': {'long': old_long_sha}})
+        self.assertTrue(gov.within_brief_limits(repaired['records']['long']))
+
     def test_changed_evidence_replaces_old_copy(self):
         state = gov.refresh(snapshot(source()), {})
         state['records']['ai-item']['headline'] = 'Old headline'
