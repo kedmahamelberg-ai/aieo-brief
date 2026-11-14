@@ -61,7 +61,7 @@
   <a href="{{ local('archive/index.html') }}" {% if page=='archive' %}aria-current="page"{% endif %}>Past editions</a>
   <a href="{{ local('about/index.html') }}" {% if page=='about' %}aria-current="page"{% endif %}>About</a>
 </div></nav>
-{% if page=='home' and government_ticker %}<aside class="government-stripe" aria-label="Governments say: checked AI announcements">
+{% if page=='home' and government_ticker %}<aside class="government-stripe" aria-label="Governments say: Monitor AI narratives">
   <a class="government-stripe-label" href="{{ local('governments-say/index.html') }}">GOVERNMENTS SAY <span aria-hidden="true">→</span></a>
   <div class="government-stripe-window"><div class="government-stripe-track" id="government-stripe-track"><div class="government-stripe-run" id="government-stripe-items">
   {% for item in government_ticker %}<a href="{{ local('governments-say/index.html') }}" data-date="{{ item.date }}" data-key="{{ item.key }}"><strong>{{ item.country }}</strong><span>{{ item.headline }}</span></a>{% endfor %}
