@@ -39,8 +39,9 @@ is due daily at 17:05 Europe/Amsterdam; hourly GitHub Actions wake-ups and a
 saved-date gate track daylight saving, catch delayed triggers, and prevent duplicate
 daily imports. It publishes records with the Monitor's exact
 `artificial_intelligence` topic label, completed English translation, and a
-provisional or human-reviewed classification. The Brief reuses the Monitor's
-English headline and summary and links to the official announcement. Previously
+provisional or human-reviewed classification. The Brief uses the Monitor's English wording, shortening display text
+mechanically to its 16-word headline and 45-word summary limits, and links to
+the official announcement. Any shortened full summary remains on the story page. Previously
 published Brief copy stays in place when the underlying Monitor record is
 unchanged; a changed source replaces it and a removed AI label withdraws it.
 A policy change causes one same-day catch-up. The first eight Brief items were
