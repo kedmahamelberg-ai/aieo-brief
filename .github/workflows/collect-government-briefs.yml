@@ -6,11 +6,15 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency:
   group: brief-government-announcements
   cancel-in-progress: false
 jobs:
   collect:
+    outputs:
+      publish: ${{ steps.saved.outputs.changed }}
     runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
@@ -59,6 +63,7 @@ jobs:
         with:
           private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Preserve checked announcements and retry progress
+        id: saved
         if: steps.daily.outputs.due == 'true'
         run: |
           git config user.name 'github-actions[bot]'
@@ -69,6 +74,7 @@ jobs:
               git commit -m 'Update checked government AI announcements'
               git pull --rebase origin main
               git push origin HEAD:main
+              echo 'changed=true' >> "$GITHUB_OUTPUT"
             fi
           fi
       - name: Report incomplete source checks
@@ -80,3 +86,10 @@ jobs:
         if: always()
         run: |
           if [[ -f llama-server.pid ]]; then kill "$(cat llama-server.pid)" 2>/dev/null || true; fi
+  publish:
+    needs: collect
+    # Publisher commits intentionally carry [skip ci]; publish the saved data explicitly.
+    # Partial source failures must not hide successfully checked announcements.
+    if: always() && needs.collect.outputs.publish == 'true' && needs.collect.result != 'cancelled'
+    uses: ./.github/workflows/build-brief-preview.yml
+    secrets: inherit
