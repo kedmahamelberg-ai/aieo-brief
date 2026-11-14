@@ -2,6 +2,386 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Portrait of Juan Maria Osorio",
+      "art_type": "Painting",
+      "balance_origin": "Spain",
+      "creator": "Agustín Esteve y Marques (Spanish, 1753–c. 1820)",
+      "creator_origin": "Spain",
+      "culture_type": "illustration",
+      "deck": "Portrait of Juan Maria Osorio. oil on canvas.",
+      "headline": "Portrait of Juan Maria Osorio",
+      "image_path": "assets/culture/ab555dc7ef35868154c7a14f.jpg",
+      "key": "culture:ab555dc7ef35868154c7a14f",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1946.431/1946.431_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1946.431",
+      "provenance_id": "cma:124990",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Gift of the Hanna Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1946.431",
+      "work_date": "c. 1786",
+      "date": "2026-11-14",
+      "selected_on": "2026-11-14",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-ab555dc7ef35868154c7a14f",
+      "path": "culture/culture-ab555dc7ef35868154c7a14f/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Portrait of Juan Maria Osorio",
+          "url": "https://clevelandart.org/art/1946.431",
+          "date": "c. 1786",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-14",
+      "summary_basis": "Selected 14 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "bde018bb500458044ca8c1a2a1490b4f6b69a87b1458008ed797acd1bb3157a7",
+      "creator": "Hafiz",
+      "creator_origin": "Iranian · Persian",
+      "culture_type": "poetry",
+      "deck": "Divan of Hafiz · XLIII, by Hafiz. Translated by Gertrude Bell.",
+      "excerpt": "Where are the tidings of union? that I may arise—\n     Forth from the dust I will rise up to welcome thee!\n     My soul, like a homing bird, yearning for Paradise,\n     Shall arise and soar, from the snares of the world set free.\n     When the voice of thy love shall call me to be thy slave,\n     I shall rise to a greater far than the mastery\n     Of life and the living, time and the mortal span:\n     Pour down, oh Lord! from the clouds of thy guiding grace,\n     The rain of a mercy that quickeneth on my grave,\n     Before, like dust that the wind bears from place to place,\n     I arise and flee beyond the knowledge of man.\n\n     When to my grave thou turnest thy blessed feet,\n     Wine and the lute thou shalt bring in thine hand to me,\n     Thy voice shall ring through the folds of my winding-sheet,\n     And I will arise and dance to thy minstrelsy.\n     Though I be old, clasp me one night to thy breast,\n     And I, when the dawn shall come to awaken me,\n     With the flush of youth on my cheek from thy bosom will rise.\n     Rise up! let mine eyes delight in thy stately grace!\n     Thou art the goal to which all men’s endeavour has pressed,\n     And thou the idol of Hafiz’ worship; thy face\n     From the world and life shall bid him come forth and arise!\n\n\n\n\n                                 NOTES",
+      "headline": "Divan of Hafiz · XLIII",
+      "key": "culture:95026132608e0a45f2210a59",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Where are the tidings of union? that I may arise—",
+        "     Forth from the dust I will rise up to welcome thee!",
+        "     My soul, like a homing bird, yearning for Paradise,",
+        "     Shall arise and soar, from the snares of the world set free.",
+        "     When the voice of thy love shall call me to be thy slave,",
+        "     I shall rise to a greater far than the mastery",
+        "     Of life and the living, time and the mortal span:",
+        "     Pour down, oh Lord! from the clouds of thy guiding grace,",
+        "     The rain of a mercy that quickeneth on my grave,",
+        "     Before, like dust that the wind bears from place to place,",
+        "     I arise and flee beyond the knowledge of man.",
+        "",
+        "     When to my grave thou turnest thy blessed feet,",
+        "     Wine and the lute thou shalt bring in thine hand to me,",
+        "     Thy voice shall ring through the folds of my winding-sheet,",
+        "     And I will arise and dance to thy minstrelsy.",
+        "     Though I be old, clasp me one night to thy breast,",
+        "     And I, when the dawn shall come to awaken me,",
+        "     With the flush of youth on my cheek from thy bosom will rise.",
+        "     Rise up! let mine eyes delight in thy stately grace!",
+        "     Thou art the goal to which all men’s endeavour has pressed,",
+        "     And thou the idol of Hafiz’ worship; thy face",
+        "     From the world and life shall bid him come forth and arise!",
+        "",
+        "",
+        "",
+        "",
+        "                                 NOTES"
+      ],
+      "provenance_id": "pg:74883:poem:c589d075c74ed4481fe93ae70623f4beed7cd7494c3611ddd230e7ce8ed2e6c6",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 14th century. Translator: Gertrude Bell, died 1926. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/74883"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ed837d62a8df162d16126a48d3505e7369407ad71e9eabc9372291e34365bddb",
+      "source_locator": "XLIII",
+      "source_url": "https://www.gutenberg.org/ebooks/74883",
+      "translator": "Gertrude Bell",
+      "work_date": "1897 translation",
+      "date": "2026-11-14",
+      "selected_on": "2026-11-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-95026132608e0a45f2210a59",
+      "path": "culture/culture-95026132608e0a45f2210a59/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Divan of Hafiz · XLIII",
+          "url": "https://www.gutenberg.org/ebooks/74883",
+          "date": "1897 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-14",
+      "summary_basis": "Selected 14 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Where are the tidings of union? that I may arise—\n     Forth from the dust I will rise up to welcome thee!\n     My soul, like a homing bird, yearning for Paradise,\n     Shall arise and soar, from the snares of the world set free.\n     When the voice of thy love shall call me to be thy slave,\n     I shall rise to a greater far than the mastery\n     Of life and the living, time and the mortal span:\n     Pour down, oh Lord! from the clouds of thy guiding grace,\n     The rain of a mercy that quickeneth on my grave,\n     Before, like dust that the wind bears from place to place,\n     I arise and flee beyond the knowledge of man.\n\n     When to my grave thou turnest thy blessed feet,\n     Wine and the lute thou shalt bring in thine hand to me,\n     Thy voice shall ring through the folds of my winding-sheet,\n     And I will arise and dance to thy minstrelsy.\n     Though I be old, clasp me one night to thy breast,\n     And I, when the dawn shall come to awaken me,\n     With the flush of youth on my cheek from thy bosom will rise.\n     Rise up! let mine eyes delight in thy stately grace!\n     Thou art the goal to which all men’s endeavour has pressed,\n     And thou the idol of Hafiz’ worship; thy face\n     From the world and life shall bid him come forth and arise!\n\n\n\n\n                                 NOTES",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Prophet",
+      "content_fingerprint": "23f78566cc3c88b9522789fd6af318cb1401816d8e837321b8f0f75c65541e57",
+      "creator": "Kahlil Gibran",
+      "creator_origin": "Lebanese–American",
+      "culture_type": "text",
+      "deck": "A passage from The Prophet.",
+      "excerpt": "Ay, in the grove of the temple and in the shadow of the citadel I have seen the freest among you wear their freedom as a yoke and a handcuff.",
+      "headline": "The Prophet · a short reading",
+      "key": "culture:647468e5cb8b20254cdf1228",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:58585:passage:23f78566cc3c88b9522789fd6af318cb1401816d8e837321b8f0f75c65541e57",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1931. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/58585"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "e4c7f1820ffbfa4d6e2186a1a9f649f3a3b15df2478c7373a24560574af3bcfc",
+      "source_locator": "Almustafa, the chosen and the; paragraph 420 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/58585",
+      "translator": "",
+      "work_date": "1923",
+      "date": "2026-11-14",
+      "selected_on": "2026-11-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-647468e5cb8b20254cdf1228",
+      "path": "culture/culture-647468e5cb8b20254cdf1228/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Prophet · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/58585",
+          "date": "1923",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-14",
+      "summary_basis": "Selected 14 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Ay, in the grove of the temple and in the shadow of the citadel I have seen the freest among you wear their freedom as a yoke and a handcuff.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Franz_Liszt_-_1st_piano_concerto%2C_1st_movement.ogg",
+      "creator": "Franz Liszt",
+      "creator_origin": "Hungarian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Liszt. 10 minutes to listen.",
+      "duration_seconds": 637,
+      "headline": "Franz Liszt - 1st piano concerto, 1st movement",
+      "key": "culture:4d6f1f6cfc17651519ea35af",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Franz_Liszt_-_1st_piano_concerto%2C_1st_movement.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Liszt",
+      "original_recording_title": "Franz Liszt - 1st piano concerto, 1st movement",
+      "provenance_id": "commons:1066648",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Franz Liszt",
+      "recording_description": "1st piano concerto, 1st movement",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Franz Liszt",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Franz_Liszt_-_1st_piano_concerto,_1st_movement.ogg",
+      "work_date": "Date not stated in source",
+      "date": "2026-11-14",
+      "selected_on": "2026-11-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-4d6f1f6cfc17651519ea35af",
+      "path": "culture/culture-4d6f1f6cfc17651519ea35af/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Franz Liszt - 1st piano concerto, 1st movement",
+          "url": "https://commons.wikimedia.org/wiki/File:Franz_Liszt_-_1st_piano_concerto,_1st_movement.ogg",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-14",
+      "summary_basis": "Selected 14 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "aa0a321357cecf68ad06794dd0d27e58aa508db71f700401120498833b1f6117",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "True art is Peiwoh, and we the harp of Lungmen.",
+      "headline": "True art is Peiwoh, and we the harp of Lungmen.",
+      "key": "culture:0b06485c662d7e88e40a8cdf",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:aa0a321357cecf68ad06794dd0d27e58aa508db71f700401120498833b1f6117",
+      "publisher": "Project Gutenberg",
+      "quote_context": "This story well illustrates the mystery of art appreciation. The masterpiece is a symphony played upon our finest feelings. True art is Peiwoh, and we the harp of Lungmen. At the magic touch of the beautiful the secret chords of our being are awakened, we vibrate and thrill in response to its call. Mind speaks to mind. We listen to the unspoken, we gaze upon the unseen. The master calls forth notes we know not of. Memories long forgotten all come back to us with a new significance. Hopes stifled by fear, yearnings that we dare not recognise, stand forth in new glory. Our mind is the canvas on which the artists lay their colour; their pigments are our emotions; their chiaroscuro the light of joy, the shadow of sadness. The masterpiece is of ourselves, as we are of the masterpiece.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 80 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-11-14",
+      "selected_on": "2026-11-14",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0b06485c662d7e88e40a8cdf",
+      "path": "culture/culture-0b06485c662d7e88e40a8cdf/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "True art is Peiwoh, and we the harp of Lungmen.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "14 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-14",
+      "summary_basis": "Selected 14 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "True art is Peiwoh, and we the harp of Lungmen.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "This story well illustrates the mystery of art appreciation. The masterpiece is a symphony played upon our finest feelings. True art is Peiwoh, and we the harp of Lungmen. At the magic touch of the beautiful the secret chords of our being are awakened, we vibrate and thrill in response to its call. Mind speaks to mind. We listen to the unspoken, we gaze upon the unseen. The master calls forth notes we know not of. Memories long forgotten all come back to us with a new significance. Hopes stifled by fear, yearnings that we dare not recognise, stand forth in new glory. Our mind is the canvas on which the artists lay their colour; their pigments are our emotions; their chiaroscuro the light of joy, the shadow of sadness. The masterpiece is of ourselves, as we are of the masterpiece.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "The Prophet",
       "content_fingerprint": "0a8810903c854b24195a6015fc1fc96e09cca02e8dbf6eb882fa54cb1ab79fe3",
       "creator": "Kahlil Gibran",
@@ -11441,7 +11821,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-13T22:54:33.435452+00:00",
+      "affiliation_checked_at": "2026-11-14T03:35:01.489573+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
