@@ -33,25 +33,22 @@ npm run test:database
 
 ## Automatic operation
 
-`Governments say` reuses the Monitor's existing government feed; it does not
-run another government discovery or scraping collection. The importer is due daily
-at 17:20 Europe/Amsterdam, tracking daylight saving. Hourly GitHub wake-ups allow
-a later check to catch a missed trigger; a saved-date gate and shared concurrency
-prevent repeating the daily import. The workflow filters candidates from the retained English summaries, then reads
-only their already-linked official announcements to double-check substantive
-AI content. The Monitor's security-relevance labels are not AI inclusion rules.
-An independent original-source review checks relevance, attribution and simple
-English before publication. Briefs have headlines of at most 16 words and
-feed summaries of at most 45 words. Article pages can add up to two short
-paragraphs (90 words total) when the original announcement supports useful detail.
-Inaccessible or doubtful items remain unpublished
-and retry; a corrected source withdraws the superseded summary while its article
-URL and discussion remain available with a checking notice. The initial eight
-items were checked against their original official written pages on 13 November
-2026; `data/governments/initial-source-checks.json` retains URLs and body hashes,
-not publisher text. Automatic checks can still make mistakes.
+`Governments say` imports the Monitor's existing government feed. It does not
+collect government archives or make a second AI relevance decision. The importer
+is due daily at 17:05 Europe/Amsterdam; hourly GitHub Actions wake-ups and a
+saved-date gate track daylight saving, catch delayed triggers, and prevent duplicate
+daily imports. It publishes records with the Monitor's exact
+`artificial_intelligence` topic label, completed English translation, and a
+provisional or human-reviewed classification. The Brief reuses the Monitor's
+English headline and summary and links to the official announcement. Previously
+published Brief copy stays in place when the underlying Monitor record is
+unchanged; a changed source replaces it and a removed AI label withdraws it.
+A policy change causes one same-day catch-up. The first eight Brief items were
+independently checked against official pages on 13 November 2026;
+`data/governments/initial-source-checks.json` retains the historical URLs and
+body hashes. New imports use the Monitor's classification and translation.
 
-The day overview includes the current week’s checked announcements and shuffles
+The day overview includes the current week’s Monitor AI announcements and shuffles
 them on every entrance or refresh. A saved browser reading order prevents an
 identical repeat when at least two items are available. Publication dates stay
 inside each card. A quiet new week uses the latest week with checked items and
