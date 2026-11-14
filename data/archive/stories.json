@@ -382,6 +382,60 @@
       ]
     },
     {
+      "id": "b871dc3f647afa076b94",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/peaminister-michal-euroopa-julgeolekukorraldust-ei-hakata-venemaa-soovil-umber-tegema",
+      "date": "2026-11-14",
+      "headline": "Estonia urges Europe to lead AI safety and growth",
+      "summary": "Estonia announced plans to invest in Europe’s AI sector and tighten risk controls. The Dublin meeting also focused on how to monitor and guide powerful AI models across the EU.",
+      "body_paragraphs": [
+        "The Estonian Prime Minister stressed that Europe must invest capital, data, and computing power to grow its AI industry, while keeping the most capable models under human supervision and testing. The plan calls for coordinated EU investments, trusted partners, and clear rules to curb risks.",
+        "Specific steps include accelerating European AI companies, expanding robotics, autonomous transport, and health tech, and ensuring governance of models used across member states."
+      ],
+      "input_fingerprint": "635c52ffe07a877b987c7ea5a363779b037b85cc90aa0c5621db1e51343b8b07",
+      "key": "event:96fba6c9-e0c9-5c30-8010-2a806c13fd62",
+      "kind": "news",
+      "section": "governments",
+      "slug": "estonia-urges-europe-lead-ai-safety-growth",
+      "path": "story/estonia-urges-europe-lead-ai-safety-growth/index.html",
+      "deck": "Estonia announced plans to invest in Europe’s AI sector and tighten risk controls. The Dublin meeting also focused on how to monitor and guide powerful AI models across the EU.",
+      "publisher": "Government of Estonia",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Estonia",
+          "headline": "Official government announcement",
+          "url": "https://valitsus.ee/uudised/peaminister-michal-euroopa-julgeolekukorraldust-ei-hakata-venemaa-soovil-umber-tegema",
+          "date": "2026-11-14",
+          "language": ""
+        }
+      ],
+      "display_date": "14 Nov 2026",
+      "markets": [],
+      "market_label": "Estonia",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-96fba6c9-e0c9-5c30-8010-2a806c13fd62/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "The Prophet",
       "content_fingerprint": "0a8810903c854b24195a6015fc1fc96e09cca02e8dbf6eb882fa54cb1ab79fe3",
       "creator": "Kahlil Gibran",
@@ -9094,6 +9148,60 @@
       "url_slug_version": 1
     },
     {
+      "id": "2e9209c789b945feca67",
+      "country": "Andorra",
+      "country_code": "AD",
+      "url": "https://www.govern.ad/ca/w/la-segona-setmana-de-la-recerca-apropa-la-ciencia-a-la-ciutadania-amb-setze-activitats",
+      "date": "2026-11-05",
+      "headline": "Andorra to spotlight artificial intelligence during 2nd Research Week",
+      "summary": "Andorra's 2nd Research Week (Nov 16–21) will feature AI among its activities. The program includes debates, workshops, and lectures on risks, education, and business applications.",
+      "body_paragraphs": [
+        "AI will be another main feature of this edition, with proposals about algorithm biases, its use in education, and applications to business and tourism.",
+        "The 2nd Setmana de la Recerca d’Andorra runs 16–21 November, organized by the government and universities, with sixteen activities from ten institutions."
+      ],
+      "input_fingerprint": "116366116313caa49a17d8c2c768a41679de28381242ab1727e525d0da2b3db5",
+      "key": "event:cbaae427-8dd2-5238-b5e1-9ef66770ff56",
+      "kind": "news",
+      "section": "governments",
+      "slug": "andorra-spotlight-artificial-intelligence-during-2nd-research-week",
+      "path": "story/andorra-spotlight-artificial-intelligence-during-2nd-research-week/index.html",
+      "deck": "Andorra's 2nd Research Week (Nov 16–21) will feature AI among its activities. The program includes debates, workshops, and lectures on risks, education, and business applications.",
+      "publisher": "Government of Andorra",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Andorra",
+          "headline": "Official government announcement",
+          "url": "https://www.govern.ad/ca/w/la-segona-setmana-de-la-recerca-apropa-la-ciencia-a-la-ciutadania-amb-setze-activitats",
+          "date": "2026-11-05",
+          "language": ""
+        }
+      ],
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Andorra",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-cbaae427-8dd2-5238-b5e1-9ef66770ff56/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "Captain H.S. Rawhinson (recto)",
       "art_type": "Photograph",
       "balance_origin": "India",
@@ -10064,6 +10172,60 @@
       "url_slug_version": 1
     },
     {
+      "id": "57e08689e1dff52c9467",
+      "country": "Andorra",
+      "country_code": "AD",
+      "url": "https://www.govern.ad/ca/w/el-ministre-rossell-defensa-una-intel-ligencia-artificial-al-servei-de-les-persones-i-la-democracia",
+      "date": "2026-11-04",
+      "headline": "Andorra commits to responsible, inclusive AI governance",
+      "summary": "Andorra's Digital and Public Administration minister outlined active, rights-respecting AI governance, aiming to use AI to improve public services, boost efficiency, and strengthen education and international cooperation.",
+      "body_paragraphs": [
+        "Andorra states it will take an active role in setting rules for artificial intelligence, ensuring developments are responsible, secure, and inclusive.",
+        "The plan emphasizes using AI to improve public services, increase administrative efficiency, strengthen education, and foster international cooperation while safeguarding rights and freedoms."
+      ],
+      "input_fingerprint": "b5d77db80f139112f35873653ff8e42ff581eb448efd25c9e417626850324c38",
+      "key": "event:b290e45b-a8d7-58d2-8c2b-8e4078643f62",
+      "kind": "news",
+      "section": "governments",
+      "slug": "andorra-commits-responsible-inclusive-ai-governance",
+      "path": "story/andorra-commits-responsible-inclusive-ai-governance/index.html",
+      "deck": "Andorra's Digital and Public Administration minister outlined active, rights-respecting AI governance, aiming to use AI to improve public services, boost efficiency, and strengthen education and international cooperation.",
+      "publisher": "Government of Andorra",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Andorra",
+          "headline": "Official government announcement",
+          "url": "https://www.govern.ad/ca/w/el-ministre-rossell-defensa-una-intel-ligencia-artificial-al-servei-de-les-persones-i-la-democracia",
+          "date": "2026-11-04",
+          "language": ""
+        }
+      ],
+      "display_date": "4 Nov 2026",
+      "markets": [],
+      "market_label": "Andorra",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-b290e45b-a8d7-58d2-8c2b-8e4078643f62/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Purcell_-_I_love_and_I_must%2C_Z._382_%28Columbia-rox135-cax7659%29.oga",
       "creator": "Henry Purcell",
       "creator_origin": "English",
@@ -10960,6 +11122,222 @@
       "url_slug_version": 1
     },
     {
+      "id": "d62cd63cbf144b067375",
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/031126-alianza-iberoamericana-ia.aspx",
+      "date": "2026-11-03",
+      "headline": "Spain leads Ibero-American AI Alliance for regional data and models",
+      "summary": "Spain announces that Ibero-American ministers will form a voluntary AI Alliance. The plan focuses on data access, language-enabled models, and computing resources, while upholding digital rights and regional cooperation.",
+      "body_paragraphs": [
+        "The announcement describes a regional, voluntary alliance to safeguard digital sovereignty and enable shared AI development in Ibero-America.",
+        "It calls for three axes: data access with guardrails, development of language-adapted AI models, and collaboration on computing capacities, plus a federated data space to share information under national controls."
+      ],
+      "input_fingerprint": "f6ce1cd93bd5de39c7e08dfb870dbcfcd078c7d7538c3e06d775255887dd1863",
+      "key": "event:d2f42c8f-6270-5c90-9bf7-d9cc1b40330d",
+      "kind": "news",
+      "section": "governments",
+      "slug": "spain-leads-ibero-american-ai-alliance-regional-data-models",
+      "path": "story/spain-leads-ibero-american-ai-alliance-regional-data-models/index.html",
+      "deck": "Spain announces that Ibero-American ministers will form a voluntary AI Alliance. The plan focuses on data access, language-enabled models, and computing resources, while upholding digital rights and regional cooperation.",
+      "publisher": "Government of Spain",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Spain",
+          "headline": "Official government announcement",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/031126-alianza-iberoamericana-ia.aspx",
+          "date": "2026-11-03",
+          "language": ""
+        }
+      ],
+      "display_date": "3 Nov 2026",
+      "markets": [],
+      "market_label": "Spain",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-d2f42c8f-6270-5c90-9bf7-d9cc1b40330d/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "77e1a6b9b6b09a89c95d",
+      "country": "Spain",
+      "country_code": "ES",
+      "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/031126-foro-digital-iberoamericano.aspx",
+      "date": "2026-11-03",
+      "headline": "Spain to foster sovereign, ethical AI and Iberian alliance at Madrid Forum",
+      "summary": "Spain's forum opens to discuss digital rights, cybersecurity, and AI. The minister calls for a sovereign, ethical, trustworthy AI and an Iberian alliance, guiding regional AI development in Spanish and Portuguese.",
+      "body_paragraphs": [
+        "Óscar López argues for a third, humanist digital path and the creation of the Madrid Declaration and the Iberian AI Alliance to converge on a sovereign, ethical, and trustworthy AI.",
+        "The official plan highlights developing AI models in Spanish and Portuguese and launching the EU-Latin America-Caribbean Supercomputing Network by 2025 as next steps, with the forum framing digital transformation as a central policy pillar."
+      ],
+      "input_fingerprint": "56378e905abd06bcd99bc82ecd0b1e965391a329c1ef7dfa9e64f3bfc0e7d067",
+      "key": "event:a5f593cd-e358-53e3-bfd1-b5840321aaed",
+      "kind": "news",
+      "section": "governments",
+      "slug": "spain-foster-sovereign-ethical-ai-iberian-madrid-forum",
+      "path": "story/spain-foster-sovereign-ethical-ai-iberian-madrid-forum/index.html",
+      "deck": "Spain's forum opens to discuss digital rights, cybersecurity, and AI. The minister calls for a sovereign, ethical, trustworthy AI and an Iberian alliance, guiding regional AI development in Spanish and Portuguese.",
+      "publisher": "Government of Spain",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Spain",
+          "headline": "Official government announcement",
+          "url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/031126-foro-digital-iberoamericano.aspx",
+          "date": "2026-11-03",
+          "language": ""
+        }
+      ],
+      "display_date": "3 Nov 2026",
+      "markets": [],
+      "market_label": "Spain",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-a5f593cd-e358-53e3-bfd1-b5840321aaed/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "c9b495e7604133bdac69",
+      "country": "Monaco",
+      "country_code": "MC",
+      "url": "https://www.gouv.mc/actualites/monaco-a-la-76e-session-du-comite-regional-de-l-oms-pour-l-europe",
+      "date": "2026-11-03",
+      "headline": "Monaco: responsible health AI development at WHO-Europe session",
+      "summary": "Monaco urged responsible, ethical AI development in health during the WHO Europe regional committee meeting. The government highlighted AI’s potential to support clinicians and patients while preserving rights and safety.",
+      "body_paragraphs": [
+        "Monaco stated that AI in health must develop responsibly, ethically, and in service of health professionals and patients. It called for clear governance, risk assessment, and safeguards to protect privacy and safety as AI tools are adopted in clinical settings.",
+        "The delegation noted ongoing collaboration with OMS/Europe on digital health and youth, emphasizing training for healthcare workers and ethical guidelines to ensure benefit without compromising rights."
+      ],
+      "input_fingerprint": "2dffed46994d2b7d3af20eee76b116bbd39e8cbada8a5b72a60ffa388354c4b8",
+      "key": "event:063952cc-5506-50da-82fa-43dc8515bb02",
+      "kind": "news",
+      "section": "governments",
+      "slug": "monaco-responsible-health-ai-development-who-europe-session",
+      "path": "story/monaco-responsible-health-ai-development-who-europe-session/index.html",
+      "deck": "Monaco urged responsible, ethical AI development in health during the WHO Europe regional committee meeting. The government highlighted AI’s potential to support clinicians and patients while preserving rights and safety.",
+      "publisher": "Government of Monaco",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Monaco",
+          "headline": "Official government announcement",
+          "url": "https://www.gouv.mc/actualites/monaco-a-la-76e-session-du-comite-regional-de-l-oms-pour-l-europe",
+          "date": "2026-11-03",
+          "language": ""
+        }
+      ],
+      "display_date": "3 Nov 2026",
+      "markets": [],
+      "market_label": "Monaco",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-063952cc-5506-50da-82fa-43dc8515bb02/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "d7626ec79e322ba51a87",
+      "country": "Andorra",
+      "country_code": "AD",
+      "url": "https://www.govern.ad/ca/w/el-ministre-marc-rossell-reivindica-una-transformacio-digital-al-servei-de-les-persones-i-del-progres-economic",
+      "date": "2026-11-03",
+      "headline": "Andorra commits to Safe, Ethical AI at Madrid Meeting",
+      "summary": "Andorra's minister for digital transformation voiced a commitment to safe, ethical AI at the Ibero-American digital forum in Madrid. He highlighted a digital strategy and cooperative plans, with Madrid Declaration and AI Alliance documents adopted.",
+      "body_paragraphs": [
+        "Marc Rossell defended Andorra's digital strategy as a plan for a more agile, efficient, and accessible administration, with a focus on safe and responsible AI that centers people and rights.",
+        "The announcement notes Andorra's intention to actively contribute to Iberian-American cooperation on digital and AI matters, including ongoing collaboration with Spain and continued participation in the Madrid Declaration and AI Alliance references, to guide shared challenges in technological transformation."
+      ],
+      "input_fingerprint": "3aac3eceeb22af260b18d176ec1bbef4c342f0bf2f6beba5512aeaa176057b6f",
+      "key": "event:fcdf2570-dc84-5610-b315-5258081badeb",
+      "kind": "news",
+      "section": "governments",
+      "slug": "andorra-commits-safe-ethical-ai-madrid-meeting",
+      "path": "story/andorra-commits-safe-ethical-ai-madrid-meeting/index.html",
+      "deck": "Andorra's minister for digital transformation voiced a commitment to safe, ethical AI at the Ibero-American digital forum in Madrid. He highlighted a digital strategy and cooperative plans, with Madrid Declaration and AI Alliance documents adopted.",
+      "publisher": "Government of Andorra",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Andorra",
+          "headline": "Official government announcement",
+          "url": "https://www.govern.ad/ca/w/el-ministre-marc-rossell-reivindica-una-transformacio-digital-al-servei-de-les-persones-i-del-progres-economic",
+          "date": "2026-11-03",
+          "language": ""
+        }
+      ],
+      "display_date": "3 Nov 2026",
+      "markets": [],
+      "market_label": "Andorra",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-fcdf2570-dc84-5610-b315-5258081badeb/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "The lovelorn heroine, from a Sat Sai of Bihari",
       "art_type": "Painting",
       "balance_origin": "Northern India",
@@ -11821,7 +12199,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-14T17:12:59.500979+00:00",
+      "affiliation_checked_at": "2026-11-14T17:22:55.516680+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -12120,6 +12498,60 @@
       },
       "legacy_paths": [
         "story/development-2b9164bc-6861-4582-87b6-ffe74ed10d85/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "fb977480d066a57c4091",
+      "country": "Iceland",
+      "country_code": "IS",
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/born-fa-aukna-fraedslu-um-gervigreind-og-netoryggi",
+      "date": "2026-11-02",
+      "headline": "Iceland backs Netvís to boost AI safety and literacy",
+      "summary": "Iceland will fund Netvís for three years, adding to EU money to expand AI and media literacy, online safety, and child protection efforts. The plan strengthens education and awareness of AI risks for youths.",
+      "body_paragraphs": [
+        "Iceland will provide additional funding for Netvís over three years, pairing ISK support with EU Digital Europe funds to expand education and prevention on AI, media literacy, and online safety for children and teens.",
+        "Netvís will focus on boosting digital literacy, monitoring online safety risks, and coordinating with EU partners to strengthen child protection related to artificial intelligence and online content."
+      ],
+      "input_fingerprint": "88fe24a2e9ffbd1fbc03afd4318da64d0b14887b0ce02b909b68d81d66b71d4a",
+      "key": "event:27fd82cc-4fd4-5612-8d4b-b8c7e961b6fa",
+      "kind": "news",
+      "section": "governments",
+      "slug": "iceland-backs-netvis-boost-ai-safety-literacy",
+      "path": "story/iceland-backs-netvis-boost-ai-safety-literacy/index.html",
+      "deck": "Iceland will fund Netvís for three years, adding to EU money to expand AI and media literacy, online safety, and child protection efforts. The plan strengthens education and awareness of AI risks for youths.",
+      "publisher": "Government of Iceland",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Iceland",
+          "headline": "Official government announcement",
+          "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/born-fa-aukna-fraedslu-um-gervigreind-og-netoryggi",
+          "date": "2026-11-02",
+          "language": ""
+        }
+      ],
+      "display_date": "2 Nov 2026",
+      "markets": [],
+      "market_label": "Iceland",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-27fd82cc-4fd4-5612-8d4b-b8c7e961b6fa/index.html"
       ],
       "url_slug_version": 1
     },
@@ -17950,6 +18382,60 @@
       "url_slug_version": 1
     },
     {
+      "id": "a3b6c222742d10eed35e",
+      "country": "Iceland",
+      "country_code": "IS",
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/betri-adgengilegri-og-hagkvaemari-thjonusta-med-nyrri-raduneytisstofnun-um-stafraena-thjonustu-og-upplysingataekni",
+      "date": "2026-10-28",
+      "headline": "Iceland forms Digital Iceland to boost AI in public services",
+      "summary": "Iceland will establish Digital Iceland on January 1 to lead digital services and AI in the public sector. The plan includes absorbing the Digital Iceland project office and Umbra’s IT work to boost data use and artificial intelligence.",
+      "body_paragraphs": [
+        "The government announces the creation of a new agency named Digital Iceland that will start on January 1 and drive public-sector digital services and AI. It also plans to bring Umbra’s IT projects under this effort in 2027 and to place a stronger emphasis on government data and artificial intelligence.",
+        "The aim is to improve efficiency and access to services by using AI where suitable, with governance by the government and steps to organize and deploy AI initiatives across agencies."
+      ],
+      "input_fingerprint": "d22a6cbc85e9cae04839658b8571f759beb041161c637ceaf90d80921ff03671",
+      "key": "event:cc9c8e31-de8b-52ca-8d85-ef12622b00f4",
+      "kind": "news",
+      "section": "governments",
+      "slug": "iceland-forms-digital-iceland-boost-ai-public-services",
+      "path": "story/iceland-forms-digital-iceland-boost-ai-public-services/index.html",
+      "deck": "Iceland will establish Digital Iceland on January 1 to lead digital services and AI in the public sector. The plan includes absorbing the Digital Iceland project office and Umbra’s IT work to boost data use and artificial intelligence.",
+      "publisher": "Government of Iceland",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Iceland",
+          "headline": "Official government announcement",
+          "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/betri-adgengilegri-og-hagkvaemari-thjonusta-med-nyrri-raduneytisstofnun-um-stafraena-thjonustu-og-upplysingataekni",
+          "date": "2026-10-28",
+          "language": ""
+        }
+      ],
+      "display_date": "28 Oct 2026",
+      "markets": [],
+      "market_label": "Iceland",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-cc9c8e31-de8b-52ca-8d85-ef12622b00f4/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/3/36/22_-_Mut_%28BK_2967-1%2C_ER_275%29.flac",
       "creator": "Franz Schubert",
       "creator_origin": "Austrian",
@@ -19047,6 +19533,114 @@
       "period_end": "2026-11-01",
       "legacy_paths": [
         "story/development-44ab6ed0-994e-4c80-8eea-1c58773e4ede/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "3c0e49ffad3955843145",
+      "country": "Iceland",
+      "country_code": "IS",
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/heilbrigdisradherra-styrir-evropufundi-althjodaheilbrigdismalastofnunarinnar-i-kaupmannahofn",
+      "date": "2026-10-27",
+      "headline": "Iceland to chair WHO Europe meeting on ageing, AI in health",
+      "summary": "Iceland will chair the WHO Europe Regional Committee meeting in Copenhagen, where delegates will discuss ageing, AI, chronic disease prevention, mental health, WHO priorities and governance. The agenda highlights future AI in health services and governance considerations.",
+      "body_paragraphs": [
+        "The Icelandic government notes AI topics are on the European WHO meeting agenda, including plans to discuss how artificial intelligence could influence ageing, chronic disease prevention, mental health, and health promotion; the statement does not promise immediate results.",
+        "The announcement also mentions exploring WHO initiatives and governance related to AI, including potential new offices and safeguards for AI in health as part of future plans up to 2033."
+      ],
+      "input_fingerprint": "1953d45fa8853d12e35d02738fde5370618ee6f4beaab42928e7a91447a6343b",
+      "key": "event:9978b106-9b1e-5afd-b194-9c8c4933f396",
+      "kind": "news",
+      "section": "governments",
+      "slug": "iceland-chair-who-europe-meeting-ageing-ai-health",
+      "path": "story/iceland-chair-who-europe-meeting-ageing-ai-health/index.html",
+      "deck": "Iceland will chair the WHO Europe Regional Committee meeting in Copenhagen, where delegates will discuss ageing, AI, chronic disease prevention, mental health, WHO priorities and governance. The agenda highlights future AI in health services and governance considerations.",
+      "publisher": "Government of Iceland",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Iceland",
+          "headline": "Official government announcement",
+          "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/heilbrigdisradherra-styrir-evropufundi-althjodaheilbrigdismalastofnunarinnar-i-kaupmannahofn",
+          "date": "2026-10-27",
+          "language": ""
+        }
+      ],
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Iceland",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-9978b106-9b1e-5afd-b194-9c8c4933f396/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "80f6f5ac212fb70d7d3e",
+      "country": "Andorra",
+      "country_code": "AD",
+      "url": "https://www.govern.ad/ca/w/andorra-acollira-la-conferencia-intercultural-del-centre-nord-sud-sobre-el-dialeg-intercultural-en-l-era-de-la-intel-ligencia-artificial-del-consell-d-europa",
+      "date": "2026-10-27",
+      "headline": "Andorra to host AI-focused intercultural dialogue conference",
+      "summary": "Andorra will host a Council of Europe conference on intercultural dialogue and AI, emphasizing education for democratic, inclusive digital societies. The event will bring together Europe, Africa, and the Middle East to discuss AI opportunities, challenges, and governance within a human rights framework.",
+      "body_paragraphs": [
+        "The conference will take place on November 3–4, 2026, with final remarks by the ministers responsible for External Affairs and Digital Transition.",
+        "It will examine how education can prepare people to engage critically and responsibly with AI, stressing human rights, democratic citizenship, and intercultural cooperation; sessions will explore governance, transparency, and inclusivity in AI systems."
+      ],
+      "input_fingerprint": "2eb09dc41e9353b369a683f65dd4b3e3bfe946c3cb76f49392a957f5cbbefaaa",
+      "key": "event:ef5daefc-e145-5661-8bce-d6fba19f61b9",
+      "kind": "news",
+      "section": "governments",
+      "slug": "andorra-host-ai-focused-intercultural-dialogue-conference",
+      "path": "story/andorra-host-ai-focused-intercultural-dialogue-conference/index.html",
+      "deck": "Andorra will host a Council of Europe conference on intercultural dialogue and AI, emphasizing education for democratic, inclusive digital societies. The event will bring together Europe, Africa, and the Middle East to discuss AI opportunities, challenges, and governance within a human rights framework.",
+      "publisher": "Government of Andorra",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Andorra",
+          "headline": "Official government announcement",
+          "url": "https://www.govern.ad/ca/w/andorra-acollira-la-conferencia-intercultural-del-centre-nord-sud-sobre-el-dialeg-intercultural-en-l-era-de-la-intel-ligencia-artificial-del-consell-d-europa",
+          "date": "2026-10-27",
+          "language": ""
+        }
+      ],
+      "display_date": "27 Oct 2026",
+      "markets": [],
+      "market_label": "Andorra",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-ef5daefc-e145-5661-8bce-d6fba19f61b9/index.html"
       ],
       "url_slug_version": 1
     },
@@ -23161,6 +23755,60 @@
       "edition": "2026-10",
       "legacy_paths": [
         "research/paper-4d45a5933f739285098c2ef6/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "224d8adb32197a7b24a9",
+      "country": "Iceland",
+      "country_code": "IS",
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/markviss-sokn-i-grunnfaerni-og-studning-vid-hvert-barn",
+      "date": "2026-10-23",
+      "headline": "Iceland sets AI use standards in 2027–2030 education plan",
+      "summary": "Iceland's Ministry releases a 2027–2030 education plan that includes AI use standards in schools. The plan targets literacy, math, early support, and teacher guidance, with public consultation open until Oct 26.",
+      "body_paragraphs": [
+        "The announcement outlines six annual areas for 2027–2030, focusing on improved reading and math, early student support, dropout prevention, and teacher guidance, with specific reference to governing the use of artificial intelligence in schools.",
+        "It also describes updates to curricula and requests input on AI integration, establishing timelines for implementation beginning in 2027 and ongoing evaluation of AI-related policies tied to the national education strategy."
+      ],
+      "input_fingerprint": "b3b78791bf7ae48281dd23357076850d928de46fe4bf5001c6fae0de922f5a6a",
+      "key": "event:68efbdf2-9dda-5591-94b8-cf8c76241e97",
+      "kind": "news",
+      "section": "governments",
+      "slug": "iceland-sets-ai-use-standards-2027-2030-education-plan",
+      "path": "story/iceland-sets-ai-use-standards-2027-2030-education-plan/index.html",
+      "deck": "Iceland's Ministry releases a 2027–2030 education plan that includes AI use standards in schools. The plan targets literacy, math, early support, and teacher guidance, with public consultation open until Oct 26.",
+      "publisher": "Government of Iceland",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Iceland",
+          "headline": "Official government announcement",
+          "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/markviss-sokn-i-grunnfaerni-og-studning-vid-hvert-barn",
+          "date": "2026-10-23",
+          "language": ""
+        }
+      ],
+      "display_date": "23 Oct 2026",
+      "markets": [],
+      "market_label": "Iceland",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Government statement · AI content checked",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-68efbdf2-9dda-5591-94b8-cf8c76241e97/index.html"
       ],
       "url_slug_version": 1
     },
