@@ -1,7 +1,8 @@
 name: Update Brief Government AI Announcements
 on:
   schedule:
-    - cron: '20 16 * * *'
+    # Hourly wake-ups catch a delayed/missed trigger; the Amsterdam gate runs work once daily.
+    - cron: '20 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -22,32 +23,43 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - name: Check whether today's Amsterdam import is due
+        id: daily
+        run: python3 scripts/government_brief_schedule.py
       - uses: actions/setup-python@v6
+        if: steps.daily.outputs.due == 'true'
         with:
           python-version: '3.12'
           cache: pip
-      - run: python -m pip install -r requirements.txt
+      - if: steps.daily.outputs.due == 'true'
+        run: python -m pip install -r requirements.txt
       - name: Verify AI filtering, corrections and source checks
+        if: steps.daily.outputs.due == 'true'
         run: AIEO_AI_PROVIDER=local python -m unittest discover -s tests -p 'test_government_briefs.py' -v
       - name: Set the existing bounded AI usage ledger
+        if: steps.daily.outputs.due == 'true'
         run: |
           mkdir -p "$RUNNER_TEMP/ai-usage"
           echo "AIEO_AI_LEDGER=$RUNNER_TEMP/ai-usage/governments.json" >> "$GITHUB_ENV"
       - name: Check pending Monitor candidates before starting a model
+        if: steps.daily.outputs.due == 'true'
         id: pending
         run: python scripts/government_briefs.py --dry-run
       - name: Start the existing local model only when needed
-        if: env.AIEO_AI_PROVIDER == 'local' && steps.pending.outputs.needs_model == 'true'
+        if: steps.daily.outputs.due == 'true' && env.AIEO_AI_PROVIDER == 'local' && steps.pending.outputs.needs_model == 'true'
         uses: ./.github/actions/local-editorial-model
       - name: Reuse Monitor announcements and double-check original AI content
+        if: steps.daily.outputs.due == 'true'
         id: collect
         continue-on-error: true
         run: python scripts/government_briefs.py
       - name: Authorize the checked public summaries
+        if: steps.daily.outputs.due == 'true'
         uses: ./.github/actions/authorize-publisher
         with:
           private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Preserve checked announcements and retry progress
+        if: steps.daily.outputs.due == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
