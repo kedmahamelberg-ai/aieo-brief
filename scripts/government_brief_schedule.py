@@ -15,7 +15,7 @@ def is_due(state, now):
     if local < due_at:
         return False
     # A changed import policy needs one catch-up even after an earlier same-day check.
-    if state.get("policy") != "government-ai-brief-v3":
+    if state.get("policy") != "government-ai-brief-v4":
         return True
     checked = state.get("last_checked_at")
     if not checked:
