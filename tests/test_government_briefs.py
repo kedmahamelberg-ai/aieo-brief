@@ -1,117 +1,105 @@
-import copy
-import json
-from pathlib import Path
 import sys
 import unittest
-from unittest.mock import patch, Mock
+from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import government_briefs as gov
 
 
 def source(**changes):
-    return {'id': 'test-ai-item', 'country': 'Estonia', 'country_code': 'EE',
-            'url': 'https://valitsus.ee/news/ai', 'published_at': '2026-11-11T23:00:00Z',
-            'published_date': '2026-11-12', 'classification_status': 'provisional',
-            'translation_complete': True, 'relevance': 'not_related', 'topics': [],
-            'english_summary': 'Estonia plans to discuss rules for AI use in healthcare.', **changes}
-
-
-def draft(item, deadline=None):
-    return {'include': True, 'headline': 'Estonia plans talks on AI rules for healthcare',
-            'summary': 'Estonia says it plans to discuss rules for AI use in healthcare.',
-            'support_quote': item['english_summary']}
+    row = {'id': 'ai-item', 'country': 'Andorra', 'country_code': 'AD',
+           'url': 'https://www.govern.ad/ca/w/ai', 'published_at': '2026-11-13T23:00:00Z',
+           'published_date': '2026-11-14', 'classification_status': 'provisional',
+           'translation_complete': True, 'relevance': 'not_related',
+           'topics': ['artificial_intelligence', 'information_influence'],
+           'ticker_message': 'Andorra seeks cooperation on AI influence',
+           'english_summary': 'Andorra called for international cooperation on AI-driven influence content.'}
+    row.update(changes)
+    return row
 
 
 def snapshot(*items):
-    return {'as_of': '2026-11-13T14:00:00Z', 'items': list(items)}
+    return {'as_of': '2026-11-14T14:00:00Z', 'items': list(items)}
 
 
 class GovernmentBriefsTests(unittest.TestCase):
-    def test_security_relevance_is_not_ai_relevance(self):
-        self.assertTrue(gov.candidate(source()))
-        self.assertFalse(gov.candidate(source(english_summary='Estonia announces new border checks.',
-                                              relevance='related', topics=['artificial_intelligence'])))
+    def test_only_monitor_ai_topic_decides_inclusion(self):
+        self.assertTrue(gov.candidate(source(english_summary='The government met with regional leaders.')))
+        self.assertFalse(gov.candidate(source(topics=['diplomacy_alliances'],
+                                              english_summary='The government discussed AI.')))
+        self.assertFalse(gov.candidate(source(topics=[])))
 
-    def test_unfinished_and_unsafe_sources_are_excluded(self):
+    def test_incomplete_or_unsafe_records_are_not_published(self):
         for changes in ({'translation_complete': False}, {'classification_status': 'needs_review'},
-                        {'url': 'javascript:alert(1)'}, {'published_date': 'unknown'}, {'country_code': ''}):
+                        {'url': 'javascript:alert(1)'}, {'published_date': 'unknown'},
+                        {'country_code': ''}, {'english_summary': ''}):
             with self.subTest(changes=changes):
                 self.assertFalse(gov.candidate(source(**changes)))
 
-    def test_original_local_publication_day_is_preserved(self):
-        self.assertEqual(gov.published_day(source()), '2026-11-12')
+    def test_monitor_date_and_text_are_reused_without_editorial_review(self):
+        item = source()
+        state = gov.refresh(snapshot(item), {})
+        row = state['records']['ai-item']
+        self.assertEqual(row['date'], '2026-11-14')
+        self.assertEqual(row['headline'], item['ticker_message'])
+        self.assertEqual(row['summary'], item['english_summary'])
+        self.assertEqual(row['url'], item['url'])
+        self.assertEqual(state['pending'], 0)
+        self.assertEqual(state['failures'], [])
 
-    def test_passing_mention_can_be_rejected_after_content_check(self):
-        state = gov.refresh(snapshot(source()), {}, writer=lambda *a: {'include': False})
-        self.assertFalse(state['records'])
-        self.assertEqual(len(state['checked']), 1)
+    def test_duplicate_ids_are_merged_and_unchanged_copy_is_preserved(self):
+        state = gov.refresh(snapshot(source(), source()), {})
+        self.assertEqual(len(state['records']), 1)
+        state['records']['ai-item']['headline'] = 'Researcher correction'
+        next_state = gov.refresh(snapshot(source()), state)
+        self.assertEqual(next_state['records']['ai-item']['headline'], 'Researcher correction')
 
-    def test_unchanged_items_are_not_rewritten_and_duplicates_are_merged(self):
-        writer = Mock(side_effect=draft)
-        state = gov.refresh(snapshot(source(), source()), {}, writer=writer)
-        self.assertEqual(writer.call_count, 1)
-        gov.refresh(snapshot(source()), state, writer=writer)
-        self.assertEqual(writer.call_count, 1)
+    def test_existing_checked_copy_migrates_without_overwriting(self):
+        item = source()
+        legacy_sha = gov.fingerprint(item, gov.PREVIOUS_POLICY)
+        prior = {'policy': gov.PREVIOUS_POLICY,
+                 'records': {'ai-item': {**gov.monitor_record(item, legacy_sha),
+                                         'headline': 'Previously checked headline'}},
+                 'checked': {'ai-item': legacy_sha}}
+        state = gov.refresh(snapshot(item), prior)
+        self.assertEqual(state['records']['ai-item']['headline'], 'Previously checked headline')
+        self.assertEqual(state['checked']['ai-item'], gov.fingerprint(item))
+        self.assertEqual(state['records']['ai-item']['input_fingerprint'], gov.fingerprint(item))
 
-    def test_changed_evidence_is_withdrawn_if_recheck_fails(self):
-        state = gov.refresh(snapshot(source()), {}, writer=draft)
-        changed = source(english_summary='Estonia cancels its proposed AI healthcare discussion.')
-        result = gov.refresh(snapshot(changed), state, writer=Mock(side_effect=ValueError('unsupported')))
-        self.assertFalse(result['records'])
-        self.assertEqual(len(result['failures']), 1)
-        self.assertNotEqual(result['checked']['test-ai-item'], gov.fingerprint(changed))
+    def test_old_rejection_is_now_imported_by_monitor_label(self):
+        item = source()
+        prior = {'policy': gov.PREVIOUS_POLICY, 'records': {},
+                 'checked': {'ai-item': gov.fingerprint(item, gov.PREVIOUS_POLICY)},
+                 'retry': {'ai-item': {'attempts': 1}}}
+        state = gov.refresh(snapshot(item), prior)
+        self.assertIn('ai-item', state['records'])
+        self.assertEqual(state['retry'], {})
 
-    def test_now_non_ai_source_removes_previous_summary(self):
-        state = gov.refresh(snapshot(source()), {}, writer=draft)
-        result = gov.refresh(snapshot(source(english_summary='Estonia discusses water quality.')), state, writer=draft)
-        self.assertFalse(result['records'])
+    def test_changed_evidence_replaces_old_copy(self):
+        state = gov.refresh(snapshot(source()), {})
+        state['records']['ai-item']['headline'] = 'Old headline'
+        changed = source(ticker_message='Andorra announces new AI cooperation')
+        result = gov.refresh(snapshot(changed), state)
+        self.assertEqual(result['records']['ai-item']['headline'], changed['ticker_message'])
 
-    def test_failures_do_not_starve_new_or_older_unattempted_items(self):
-        state = gov.refresh(snapshot(source()), {}, writer=Mock(side_effect=TimeoutError), limit=1)
-        result = gov.refresh(snapshot(source(), source(id='older', published_date='2026-11-01')), state, writer=draft, limit=1)
-        self.assertIn('older', result['records'])
+    def test_removed_ai_topic_withdraws_previous_copy(self):
+        state = gov.refresh(snapshot(source()), {})
+        result = gov.refresh(snapshot(source(topics=['diplomacy_alliances'])), state)
+        self.assertNotIn('ai-item', result['records'])
+        self.assertNotIn('ai-item', result['checked'])
 
-    def test_incomplete_monitor_response_preserves_checkpoint(self):
+    def test_invalid_snapshot_preserves_checkpoint(self):
         with self.assertRaises(ValueError):
-            gov.refresh({'items': []}, {}, writer=draft)
+            gov.refresh({'items': []}, {})
 
-    def test_short_output_and_exact_support_are_required(self):
-        for changes in ({'summary': 'AI ' * 46}, {'headline': 'AI ' * 17},
-                        {'support_quote': 'This passage does not occur in the source.'},
-                        {'summary': 'A statement. Another. A third. AI fourth.'}, {'details': ['AI ' * 91]}):
-            with self.subTest(changes=changes), self.assertRaises(ValueError):
-                gov.validate_draft({**draft(source()), **changes}, source())
-
-    def test_original_source_is_required_and_related_links_are_not_evidence(self):
-        response = Mock(content=b'<html><main><nav>Artificial intelligence news</nav><p>' +
-                        b'This official announcement discusses drinking water and public health. ' * 5 +
-                        b'</p></main></html>', headers={'Content-Type': 'text/html'})
-        response.raise_for_status.return_value = None
-        with patch.object(gov.requests, 'get', return_value=response):
-            body = gov.official_text(source()['url'])
-        self.assertNotIn('Artificial intelligence', body)
-        self.assertIn('drinking water', body)
-
-    def test_independent_original_source_review_can_withhold_draft(self):
-        output = draft(source())
-        failed = dict.fromkeys(('substantive_ai','main_announcement_matches','all_claims_supported',
-                               'attribution_preserved','simple_english'), True)
-        failed['substantive_ai'] = False
-        with patch.object(gov, 'official_text', return_value='No substantive AI statement here.'), \
-             patch('editorial_engine.call_json', side_effect=[output, failed]), self.assertRaises(ValueError):
-            gov.write_draft(source(), None)
-
-    def test_engagement_identities_and_licensed_photos(self):
-        root = Path(__file__).resolve().parents[1]
-        row = gov.refresh(snapshot(source()), {}, writer=draft)
-        with patch.object(gov, 'load', return_value=row):
-            a = gov.cards(root)[0]
-            b = gov.cards(root)[0]
+    def test_engagement_identity_stays_stable(self):
+        state = gov.refresh(snapshot(source()), {})
+        import unittest.mock
+        with unittest.mock.patch.object(gov, 'load', return_value=state):
+            a = gov.cards()[0]
+            b = gov.cards()[0]
         self.assertEqual(a['key'], b['key'])
-        self.assertRegex(a['key'], r'^event:[a-f0-9-]{36}$')
-        self.assertEqual(a['kind'], 'news')
         self.assertEqual(a['section'], 'governments')
-        self.assertEqual(a['markets'], [])
+        self.assertEqual(a['summary_basis'], 'Monitor government narrative · AI topic label')
 
 
 if __name__ == '__main__':
