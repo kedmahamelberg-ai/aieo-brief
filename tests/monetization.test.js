@@ -22,7 +22,7 @@ test('adding the head tag does not override disabled advertising or ineligible p
 for(const [device,desktop,userAgent] of [['phone',false,'iPhone'],['tablet',false,'iPad'],['desktop',true,'Desktop']]) {
  test(device+': unknown consent asks; accept enables Analytics; reject stops it',()=>{
   const p=page({enabled:false},desktop,false,{userAgent});
-  const ga=()=>p.nodes.filter(n=>n.src?.includes('googletagmanager.com'));
+  const ga=()=>p.nodes.filter(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com');
   assert.equal(p.ids['consent-banner'].hidden,false);
   assert.equal(p.ctx.BriefAnalytics.allowed(),false);
   assert.equal(ga().length,0);
@@ -47,10 +47,10 @@ test('saved explicit choices are respected; expired or blocked storage asks agai
   const p=page({enabled:false},false,false,options);
   assert.equal(p.ids['consent-banner'].hidden,false);
   assert.equal(p.ctx.BriefAnalytics.allowed(),false);
-  assert.ok(!p.nodes.some(n=>n.src?.includes('googletagmanager.com')));
+  assert.ok(!p.nodes.some(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com'));
  }
  const preview=page({enabled:false},false,false,{preview:true});
  preview.ctx.BriefAnalytics.choose(true);
  assert.equal(preview.ctx.BriefAnalytics.allowed(),false);
- assert.ok(!preview.nodes.some(n=>n.src?.includes('googletagmanager.com')));
+ assert.ok(!preview.nodes.some(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com'));
 });
