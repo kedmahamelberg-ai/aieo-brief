@@ -61,8 +61,9 @@ existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
 credit and rights links. Country-context images are not presented as event photos.
 The workflow uses the existing bounded AI runtime and publishing credentials,
-preserves checked data on source failures, and its saved-data commit triggers the usual validated
-Pages build even after partial collection failure. No-work catch-up checks do not
+preserves checked data on source failures, and explicitly calls the usual validated Pages build after saving changed data,
+even after partial collection failure. Generated commits carry [skip ci], so
+publication does not rely on a push event. No-work catch-up checks do not
 start the model or trigger a publication build. It reuses the configured
 OpenAI or local provider, starting the existing local model only for pending work.
 
