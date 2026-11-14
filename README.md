@@ -34,8 +34,10 @@ npm run test:database
 ## Automatic operation
 
 `Governments say` reuses the Monitor's existing government feed; it does not
-run another government discovery or scraping collection. A daily 16:20 UTC
-workflow filters candidates from the retained English summaries, then reads
+run another government discovery or scraping collection. The importer is due daily
+at 17:20 Europe/Amsterdam, tracking daylight saving. Hourly GitHub wake-ups allow
+a later check to catch a missed trigger; a saved-date gate and shared concurrency
+prevent repeating the daily import. The workflow filters candidates from the retained English summaries, then reads
 only their already-linked official announcements to double-check substantive
 AI content. The Monitor's security-relevance labels are not AI inclusion rules.
 An independent original-source review checks relevance, attribution and simple
@@ -59,8 +61,9 @@ existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
 credit and rights links. Country-context images are not presented as event photos.
 The workflow uses the existing bounded AI runtime and publishing credentials,
-preserves checked data on source failures, and triggers the usual validated
-Pages build even after partial collection failure. It reuses the configured
+preserves checked data on source failures, and its saved-data commit triggers the usual validated
+Pages build even after partial collection failure. No-work catch-up checks do not
+start the model or trigger a publication build. It reuses the configured
 OpenAI or local provider, starting the existing local model only for pending work.
 
 - The daily 12:15 UTC job checks for unfinished news and research published in the last seven days before loading its local model.
