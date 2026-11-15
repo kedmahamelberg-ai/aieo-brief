@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
   "monitor_as_of": "2026-11-15T16:49:11+00:00",
-  "last_checked_at": "2026-11-15T18:44:14.472594+00:00",
+  "last_checked_at": "2026-11-15T18:55:42.253837+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -265,10 +265,10 @@
       "country_code": "GB",
       "url": "https://www.gov.uk/government/news/joint-declaration-on-a-strategic-partnership-between-the-united-kingdom-of-great-britain-and-northern-ireland-and-the-republic-of-azerbaijan",
       "date": "2026-11-12",
-      "headline": "UK and Azerbaijan announce a strategic partnership covering defence, security, trade, energy and innovation.",
-      "summary": "The UK and Azerbaijan adopted a Strategic Partnership Declaration in Dublin on 12 November 2026, covering security, trade, connectivity, clean energy, education, innovation and sustainable peace between Azerbaijan and Armenia. They will promote exchanges and review priorities annually, subject to available resources and domestic laws.",
+      "headline": "UK and Azerbaijan add AI expertise exchange to their strategic partnership.",
+      "summary": "The UK and Azerbaijan agreed to exchange expertise on AI, digital governance and innovation under a new strategic partnership. The declaration also covers security, trade, energy and regional peace.",
       "body_paragraphs": [],
-      "input_fingerprint": "53ca615142b8a83d99b504cbc776ccc4ed76db9c690293a694949e156a4ceee7"
+      "input_fingerprint": "e4dc13cac4d8e195f261c6f01b57606ed03d55ca0c57d5b1dc666071e46e78b8"
     },
     "b1f70657a865d02bf9c2": {
       "id": "b1f70657a865d02bf9c2",
@@ -298,10 +298,10 @@
       "country_code": "LU",
       "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/09-roth-ecofin.html",
       "date": "2026-11-10",
-      "headline": "Euro-area finance ministers discuss sustainable funding for European defence and developments related to Russia’s war against…",
-      "summary": "Finance Minister Gilles Roth attended Eurogroup and ECOFIN meetings in Brussels, where ministers discussed economic and banking developments, the digital euro, European security, tobacco taxation, Ukraine, EU legislation and G20 outcomes. The tobacco-taxation package was not adopted; negotiations will continue under the Irish Presidency.",
+      "headline": "Luxembourg discusses AI’s effects on banking and financial resilience at Eurogroup.",
+      "summary": "At Eurogroup and ECOFIN meetings, Luxembourg’s finance minister discussed AI’s effects on banking and ways to strengthen financial resilience. Ministers also considered European security, Ukraine and EU legislation.",
       "body_paragraphs": [],
-      "input_fingerprint": "28188592ae705fda2df95c15077ad9789585114c17caddd1d5e62ce5f4136c41"
+      "input_fingerprint": "cf6e327cc966a11c6f29f1d16672040e0b752f1af60bc138c4c4472621819d74"
     },
     "b1b34cf07234fcc1fe5a": {
       "id": "b1b34cf07234fcc1fe5a",
@@ -309,10 +309,10 @@
       "country_code": "KZ",
       "url": "https://primeminister.kz/kz/news/nurlybek-nalibaev-londian-wason-zhane-naikan-kompaniyalarynyn-basshylarymen-investiciyalyk-yntymaktastyk-maselelerin-talkylady-32093",
       "date": "2026-11-06",
-      "headline": "Kazakhstan plans an $810 million copper-foil plant supplying battery and data-center-related manufacturing.",
-      "summary": "First Deputy Prime Minister Nurlibek Nalibayev met with executives from Londian Wason and NAIKAN to discuss a jointly implemented copper-foil plant in Kazakhstan. The $810 million facility is planned to begin production in 2029 and reach annual capacity of 50,000 tonnes by 2031.",
+      "headline": "Kazakhstan plans copper foil for AI server boards at an $810 million plant.",
+      "summary": "Kazakhstan announced an $810 million copper-foil plant planned to make material for batteries and circuit boards used in AI servers and data centres. Production is expected to begin in 2029.",
       "body_paragraphs": [],
-      "input_fingerprint": "3262d6ad94d22a05421e1d54badb3f99c4126e6e70eae43c88ff9ed098c9beab"
+      "input_fingerprint": "7fd51ca9b906baf752521af9e0e73d2c21e3ce8cd6c9c56271053bc61a2a9c17"
     },
     "bfff253c6ae5b985b479": {
       "id": "bfff253c6ae5b985b479",
@@ -364,10 +364,10 @@
       "country_code": "AD",
       "url": "https://www.govern.ad/ca/w/espot-situa-la-digitalitzacio-la-resiliencia-climatica-i-la-inclusio-entre-les-prioritats-d-andorra-a-la-xxx-la-cimera-iberoamericana",
       "date": "2026-11-05",
-      "headline": "Andorra backs shared disaster warnings, discusses orderly labour migration, and reiterates support for Ukraine.",
-      "summary": "Andorra’s Head of Government Xavier Espot addressed the Ibero-American Summit on inclusive multilateralism, digital equity, climate resilience, and social inclusion. He announced Andorra’s 2027 rotating presidency of a disaster-risk network and held bilateral meetings with Colombia, Ecuador, and Ukraine, reaffirming support for Ukraine.",
+      "headline": "Andorra backs a new Ibero-American AI alliance alongside disaster-risk cooperation.",
+      "summary": "At the Ibero-American Summit, Andorra highlighted the launch of a regional AI alliance alongside disaster-risk cooperation, digital equity and support for Ukraine. It will chair the disaster-risk network in 2027.",
       "body_paragraphs": [],
-      "input_fingerprint": "d6e72579975727c6f193b8aca2bf042a869fe86707f29c056e15104b86b115c6"
+      "input_fingerprint": "a65202407d129b5754347e95945cf279ee0e49d1b1bff6ef494d9f43846fab87"
     },
     "de4fecfbf8ab7ea67b73": {
       "id": "de4fecfbf8ab7ea67b73",
@@ -430,10 +430,10 @@
       "country_code": "GR",
       "url": "https://media.gov.gr/anakoinosi-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-gia-tin-synedriasi-tou-ypourgikou-symvouliou-tis-2as-noemvriou-2026/",
       "date": "2026-11-02",
-      "headline": "Greece outlines defence acquisitions, police capability improvements and an upgrade to its 112 emergency number.",
-      "summary": "The Cabinet reviewed 90 deliverables across 20 ministries for 2026–27 and considered bills on platform-work protections, the Judicial Police’s conversion into an armed Security Corps, alignment with the 2027 WADA Code, and targeted Interior Ministry and investment-project changes, including faster decisions and shorter post-completion obligations.",
+      "headline": "Greek cabinet considers labour-market AI rules and platform-worker protections.",
+      "summary": "Greece’s cabinet considered a bill setting rules for AI use in the labour market and protections for platform workers. It also reviewed defence, policing, emergency-service and investment measures.",
       "body_paragraphs": [],
-      "input_fingerprint": "926072582ae483167ba90028f7fadf912f66955bb7918cbb501de181a69824ad"
+      "input_fingerprint": "f307c14256c16bfd9db9764530435f15ddfee07126dd57885765491837f6a12f"
     },
     "62347da91db6a9358ce8": {
       "id": "62347da91db6a9358ce8",
@@ -441,10 +441,10 @@
       "country_code": "HR",
       "url": "https://vlada.gov.hr/demokracija-vladavina-prava-i-sigurnost-temelji-su-otporne-i-snazne-europe/47530",
       "date": "2026-11-02",
-      "headline": "Croatia’s prime minister links democratic security to support for Ukraine, resilient institutions, migration controls, and energy…",
-      "summary": "At the World Forum for Democracy in Strasbourg, Prime Minister Andrej Plenković discussed Croatia’s European path, support for Ukraine, democratic security, multilateralism, Western Balkans reconciliation, migration, energy security and social cohesion, emphasizing crisis response, citizens’ trust and cooperation with the Council of Europe.",
+      "headline": "Croatia’s prime minister warns AI manipulation could threaten democracy and rights.",
+      "summary": "At the World Forum for Democracy, Croatia’s prime minister warned that AI can aid innovation but, without safeguards, can enable manipulation and threaten human rights. He also discussed Ukraine and democratic security.",
       "body_paragraphs": [],
-      "input_fingerprint": "3aa303610716ba221a54842c6b3c156511aca08d25ff2397963ae18a15fe355f"
+      "input_fingerprint": "128da46220289d70e783e228ed50743887f73137ffe3581251659e46e254bc43"
     },
     "d5bd8dc30815b44a0518": {
       "id": "d5bd8dc30815b44a0518",
@@ -463,10 +463,10 @@
       "country_code": "LU",
       "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/10-octobre/26-27-wilmes-cop17.html",
       "date": "2026-10-31",
-      "headline": "Luxembourg backs biodiversity protection and financing, citing links to food, water, and climate resilience.",
-      "summary": "Luxembourg’s environment minister attended COP17 in Yerevan, promoting biodiversity finance and climate-nature initiatives. Delegates assessed progress toward global biodiversity targets, discussed financing and Indigenous and local community participation, and reached an agreement after extended negotiations, while finding the world off track to meet 2030 goals.",
+      "headline": "Luxembourg highlights an AI platform for biodiversity and climate finance.",
+      "summary": "At COP17, Luxembourg promoted biodiversity finance, including an AI-based platform designed to attract capital to projects benefiting climate, biodiversity and communities. Delegates also reviewed lagging progress toward 2030 nature goals.",
       "body_paragraphs": [],
-      "input_fingerprint": "622c9b04d519dd17b2ccbcaa1c281d36d0d2b6b4995d87e9a36b5868f8174cf7"
+      "input_fingerprint": "28eb8d0ee8901ddd471b1e31fb9152cf2baa1a96336cfcdf5d00341bbedc8132"
     },
     "19970664ea8e6f384e43": {
       "id": "19970664ea8e6f384e43",
@@ -474,10 +474,10 @@
       "country_code": "NL",
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/30/kabinet-steunt-eu-kids-act-maar-uit-zorgen-over-privacy-en-grondrechten",
       "date": "2026-10-30",
-      "headline": "The Netherlands supports EU rules to protect children online while raising concerns about privacy, rights, and…",
-      "summary": "The Dutch government supports the EU Kids Act’s goal of safer online services and platform accountability. It backs a proposed age-15 minimum but seeks scrutiny of effects on rights and privacy, later reassessment of necessity, and safeguards against excessive reliance on parental consent and monitoring.",
+      "headline": "Netherlands considers EU rules for child safety on social media and AI chatbots.",
+      "summary": "The Dutch government supports the EU Kids Act’s safety rules for social media, games and AI chatbots, while seeking closer scrutiny of children’s rights, privacy and reliance on parental monitoring.",
       "body_paragraphs": [],
-      "input_fingerprint": "a730c0479a9e7189a3fe4a4ed07bc1085e5aa521dd59df28e14dd0eb059ea272"
+      "input_fingerprint": "0a335484fd02fea90bd666705310725515d635aae396e5ebf7544127af008d03"
     },
     "b2ef7fd09c67c3755618": {
       "id": "b2ef7fd09c67c3755618",
@@ -553,10 +553,10 @@
       "country_code": "AT",
       "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/proell-zu-smartglasses.html",
       "date": "2026-10-27",
-      "headline": "Austria proposes tiered smart-glasses rules to prevent covert recording and protect privacy in sensitive places.",
-      "summary": "Austrian State Secretary Alexander Pröll proposes three levels of rules for smart glasses: prohibit use in highly sensitive places, ban recordings in protected venues, and require visible recording indicators in public. He calls for binding manufacturer safeguards and a parliamentary enquiry.",
+      "headline": "Austria proposes privacy rules for AI-enabled smart glasses and covert recording.",
+      "summary": "Austria proposed tiered privacy rules for smart glasses with cameras, microphones and AI functions. The plan would bar use in sensitive places and require visible recording indicators in public.",
       "body_paragraphs": [],
-      "input_fingerprint": "8cc451a781ab25a079301fb4c0341ff85b561badbb343614adf114b3a0cb5c3e"
+      "input_fingerprint": "c23bd3135833d120a661b4f1b738e2ea9d16882934ecdce58d61c4a6eb193140"
     },
     "4903511d02b5bfbbb5a8": {
       "id": "4903511d02b5bfbbb5a8",
@@ -564,10 +564,10 @@
       "country_code": "IS",
       "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/sameiginleg-yfirlysing-forsaetisradherra-nordurlanda-um-ahrif-nyrrar-taekni-a-born-og-ungmenni",
       "date": "2026-10-27",
-      "headline": "Nordic leaders back measures to protect young people online and highlight a regional security agreement strengthening…",
-      "summary": "Nordic prime ministers adopted a statement on protecting young people’s health and wellbeing amid new technology, discussing social media rules, age limits and school phone-free policies. They also addressed Nordic cooperation treaty revision and regional security, including a recent Greenland-Denmark-US security and defence agreement.",
+      "headline": "Nordic leaders discuss children’s safety amid social media, smart devices and AI.",
+      "summary": "Nordic prime ministers agreed to protect children amid social media, smart devices and AI, discussing age limits and phone-free schools. They also addressed regional security and Nordic cooperation.",
       "body_paragraphs": [],
-      "input_fingerprint": "10f28b715ab00e5d95b9452169b30a7caf26d1437df71d7d905cc32f4bf0151a"
+      "input_fingerprint": "6abf969c5118bc190d9c0a0d7b223214efd0217665286c65ecfa879ae9f8815d"
     },
     "6fb4ad90738712d3ecac": {
       "id": "6fb4ad90738712d3ecac",
@@ -623,10 +623,10 @@
       "country_code": "GB",
       "url": "https://www.gov.uk/government/news/uk-oman-joint-statement-on-omani-state-visit",
       "date": "2026-10-23",
-      "headline": "UK and Oman deepen defence, economic, climate, and regional security partnership with expanded cooperation initiatives.",
-      "summary": "During Sultan Haitham bin Tarik's 2026 UK visit, both nations reaffirmed their historic friendship, agreeing to modernize their security partnership, expand economic ties in green industries and technology, cooperate on regional stability, and deepen people-to-people links, aligning with Oman’s Vision 2040 and UK growth goals.",
+      "headline": "UK and Oman agree to deepen AI and critical-technology cooperation.",
+      "summary": "The UK and Oman agreed to deepen cooperation on AI, data centres, critical minerals and space through exchanges and technical meetings. Their wider partnership also covers defence, green industries and regional stability.",
       "body_paragraphs": [],
-      "input_fingerprint": "5fac029159d1ef923a91a39cd0da2b19379c9cc2615c926b16f66811a7d65a9f"
+      "input_fingerprint": "a932c16e1200bd4aed379ebce2808e37b099ed8a85d2d749ae942aeeb43949a4"
     },
     "066566daa57489d292a6": {
       "id": "066566daa57489d292a6",
@@ -638,19 +638,6 @@
       "summary": "The German government and Google.org support the Global Authentic Memory Initiative (GAMI) to protect historical digital archives from AI-generated falsifications. Through cryptographic verification, GAMI ensures document authenticity, combating disinformation and preserving trust in historical records for future generations.",
       "body_paragraphs": [],
       "input_fingerprint": "f4ce699335e6485952bfdd12107e3fcde763076427f86075697c4a30271b1832"
-    },
-    "9524016a6841e970ad49": {
-      "id": "9524016a6841e970ad49",
-      "country": "Croatia",
-      "country_code": "HR",
-      "url": "https://vlada.gov.hr/sigurnost-gospodarstvo-i-demografija-u-fokusu-odluka-koje-ce-odrediti-buducnost-kontinenta/47479",
-      "date": "2026-10-23",
-      "headline": "Croatia's PM receives Pan-European Medal, highlights EU challenges in geopolitics, migration, budget, and Croatia’s stability.",
-      "summary": "Croatian Prime Minister Andrej Plenković received the Pan-European Medal for advancing European unity and values. He highlighted complex EU challenges including security, migration, and economic relations with the US, Russia, and China, emphasizing smart leadership, demographic renewal, and Croatia’s stable politics and growth in strengthening…",
-      "body_paragraphs": [
-        "Croatian Prime Minister Andrej Plenković received the Pan-European Medal for advancing European unity and values. He highlighted complex EU challenges including security, migration, and economic relations with the US, Russia, and China, emphasizing smart leadership, demographic renewal, and Croatia’s stable politics and growth in strengthening Europe’s future."
-      ],
-      "input_fingerprint": "c20d7a58dc82f13e56e5cb0e19ee0f4067d6f7f62d36df0f34260188c4fda973"
     },
     "8fddb8a43c6f356dcea1": {
       "id": "8fddb8a43c6f356dcea1",
@@ -785,10 +772,10 @@
       "country_code": "US",
       "url": "https://www.whitehouse.gov/briefings-statements/2026/10/first-lady-melania-trump-champions-new-u-s-womens-health-initiative/",
       "date": "2026-10-19",
-      "headline": "Executive order creates a task force and NIH division to advance women’s health research, treatments, and…",
-      "summary": "The White House says an executive order will establish a women’s health task force and an NIH division, promote research and treatment development, and improve access to care. Melania Trump outlined five priorities, including targeted research, advanced technology, safety, affordability, and open discussion.",
+      "headline": "White House women’s health plan proposes super-intelligence tools for medical research.",
+      "summary": "The White House announced a women’s health initiative that calls for using super intelligence to improve understanding of female biology and speed medical discoveries. An executive order also creates a task force and NIH division.",
       "body_paragraphs": [],
-      "input_fingerprint": "5506d4cea3273f276e2b75f377142d71b33119787ff88e0636b49827a4fe1da8"
+      "input_fingerprint": "9c0113d53ebe30e8355632e03548469a9347fadad0e3cab1c607cad11e49a041"
     },
     "78f661b3a184db4d991e": {
       "id": "78f661b3a184db4d991e",
@@ -923,10 +910,10 @@
       "country_code": "US",
       "url": "https://www.whitehouse.gov/briefings-statements/2026/10/first-lady-melania-trump-launches-2027-presidential-si-challenge-and-establishes-first-lady-seal-of-si-readiness/",
       "date": "2026-10-13",
-      "headline": "Melania Trump launches a nationwide student super-intelligence challenge and readiness seal.",
-      "summary": "Melania Trump launched the 2027 Presidential Super Intelligence Challenge for K–12 students and introduced a school readiness seal. Participating schools can earn the seal by meeting and documenting readiness milestones; the challenge continues to promote student projects addressing real-world problems.",
+      "headline": "White House launches a student Super Intelligence challenge and school readiness seal.",
+      "summary": "The White House launched a K–12 Super Intelligence challenge and school readiness seal for student projects. The program invites schools to document readiness milestones and support student work on real-world problems.",
       "body_paragraphs": [],
-      "input_fingerprint": "df54d6cc4ce221141e07343f6d5f703a6cb6da455f178fa8e106efa1b8116eef"
+      "input_fingerprint": "fa0e998e179ce04c22ca893f09bdc2cc1e4448dbe67938e64e5d7239159d99f6"
     },
     "824ae51aacffe43f6836": {
       "id": "824ae51aacffe43f6836",
@@ -1048,10 +1035,10 @@
       "country_code": "DE",
       "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen/pressemitteilungen/joint-statement-germany-united-kingdom-2456348",
       "date": "2026-10-08",
-      "headline": "UK and Germany deepen cooperation on hybrid threats, critical tech, space security, and economic growth.",
-      "summary": "UK and Germany ratified the Kensington Treaty and agreed to deepen bilateral cooperation across technology, hybrid threat defense, space, quantum research, and regional economic growth, with initiatives including an Industrial Tech Corridor, counter-hybrid partnership, space collaboration, increased quantum funding, and a Regional Growth Forum.",
+      "headline": "UK and Germany plan an industrial corridor for AI and critical-technology startups.",
+      "summary": "The UK and Germany agreed on an Industrial Tech Corridor linking AI and critical-technology startups with industry demand. Their wider cooperation covers hybrid threats, space, quantum research and regional growth.",
       "body_paragraphs": [],
-      "input_fingerprint": "a355f6f2d4426dc4efd30424d8e8725c3bb856d87e4f798f3559df3444904ff0"
+      "input_fingerprint": "266fc3b96a372590f73384fe7e416af16429ae22a4fbab0cadb1b6763c3a17f7"
     },
     "f60fb01beaf7ccf3229c": {
       "id": "f60fb01beaf7ccf3229c",
@@ -1083,32 +1070,10 @@
       "country_code": "BY",
       "url": "https://president.gov.by/ru/events/privetstvie-ucastnikam-kontrterroristiceskogo-foruma-v-minske",
       "date": "2026-10-07",
-      "headline": "Belarus President Lukashenko urges unified international cooperation to combat sophisticated terrorism threats.",
-      "summary": "Belarusian President Lukashenko greeted the Counter-Terrorism Forum in Minsk, emphasizing the global threat of terrorism and advocating collective efforts through international cooperation. He highlighted Belarus's initiative for a unified anti-terrorist front and the forum's role in advancing regional security and trust among intelligence agencies.",
+      "headline": "Belarus cites terrorist use of AI and drones in call for counterterrorism cooperation.",
+      "summary": "At a Minsk counterterrorism forum, Belarus’s president warned that terrorist groups use AI alongside drones, cryptocurrency and closed online networks for propaganda, recruitment and funding. He called for stronger international cooperation.",
       "body_paragraphs": [],
-      "input_fingerprint": "ad3393e6eee6668fc48e099872a165d6c215594433dbaa6dbe82ecaaaf34279f"
-    },
-    "64e8616d3b23b83670cc": {
-      "id": "64e8616d3b23b83670cc",
-      "country": "Austria",
-      "country_code": "AT",
-      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/proell-wiederkehr-holzleitner-bundesregierung-bringt-reformen-im-bildungsbereich-auf-den-weg.html",
-      "date": "2026-10-06",
-      "headline": "Austria reforms education policy: delayed digital device use, Matura modernization, and university protection laws.",
-      "summary": "On October 7, 2026, Austrian ministers announced education reforms including delaying digital device distribution to sixth grade, modernizing the Matura exams with flexible final projects, and legislating university protection measures against violence as part of efforts to support children's development and safety.",
-      "body_paragraphs": [],
-      "input_fingerprint": "bcf927577868cfaabf3f0f7f94572d8beaa198dd85a279cc39af0f8dc18a6142"
-    },
-    "d419481684da4f0e1b2a": {
-      "id": "d419481684da4f0e1b2a",
-      "country": "Croatia",
-      "country_code": "HR",
-      "url": "https://vlada.gov.hr/hrvatska-postuje-europska-pravila-i-stiti-schengensku-granicu-ali-nece-prihvatiti-migrantske-centre/47399",
-      "date": "2026-10-07",
-      "headline": "Croatia stresses EU Mediterranean security, migration control, energy crisis response, and political stability priorities.",
-      "summary": "Croatia hosted the EU MED9 summit in Split, focusing on Mediterranean security, sustainability, and migration. PM Plenković highlighted trade ties, EU budget discussions, and opposition politicization of local waste issues, while addressing regional cooperation, energy challenges, and Bosnia-Herzegovina's EU integration progress.",
-      "body_paragraphs": [],
-      "input_fingerprint": "c0753dc7152bbe77d5b6d9e235e51e135861567f6b22a2b7c0efc027c95f2e95"
+      "input_fingerprint": "f4de379b165064bbc865ed1e87111c26c70022fba2032c3e1e8785684134bbdc"
     },
     "8518710d06e83dae0210": {
       "id": "8518710d06e83dae0210",
@@ -1283,17 +1248,6 @@
       "body_paragraphs": [],
       "input_fingerprint": "27ecb887cf26c0e5b97fd43b48bf2a14066ac2cefe8688ac0aebbc1774cd9367"
     },
-    "ae9cd58e643feeeb74cd": {
-      "id": "ae9cd58e643feeeb74cd",
-      "country": "Czechia",
-      "country_code": "CZ",
-      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/oceneni-inspirativnich-projektu-a-osobnosti-verejne-spravy-230052/",
-      "date": "2026-11-12",
-      "headline": "Czech awards recognize public-service projects, including a coordinated response to Prague’s major hepatitis A outbreak.",
-      "summary": "The 2025 Public Service Initiative of the Year awards recognized ten projects and public servants from 103 nominations, including the jury’s first Special Prize. The initiative promotes innovation, collaboration, digitalization, better public services and sharing good practices across government institutions.",
-      "body_paragraphs": [],
-      "input_fingerprint": "28a9b0407505ad63e0aa83e477e3c4384a24e94ce2e4bda305da50ff69118db9"
-    },
     "df72482125e7867a1e98": {
       "id": "df72482125e7867a1e98",
       "country": "Czechia",
@@ -1311,10 +1265,10 @@
       "country_code": "MT",
       "url": "https://departmentofinformation.gov.mt/press-release/2026/pr261894en",
       "date": "2026-11-11",
-      "headline": "Malta’s Speaker links national security with defence, democratic resilience, diplomacy, and children’s online safety.",
-      "summary": "Carmelo Abela addressed child safety online and parliament’s role in balancing security with social needs at the Paris Peace Forum 2026. He called for shared responsibility, democratic safeguards, international cooperation and diplomacy, and attended an official dinner hosted by French President Emmanuel Macron.",
+      "headline": "Malta’s Speaker warns of AI-related security risks and urges democratic safeguards.",
+      "summary": "At the Paris Peace Forum, Malta’s Speaker discussed security and children’s online safety, warning that AI and other emerging technologies add risks requiring democratic safeguards and international cooperation.",
       "body_paragraphs": [],
-      "input_fingerprint": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e"
+      "input_fingerprint": "b5105226a308bea586dfbf58ec537ff78a6ac0c938360829f35b8172cb1d0731"
     },
     "80fe0d2b2dc9532f9e29": {
       "id": "80fe0d2b2dc9532f9e29",
@@ -1383,41 +1337,40 @@
     "fb977480d066a57c4091": "f25f81e43402e901ed274015e3340c4d5897c665b02c13039a7d401585c27dc4",
     "80f6f5ac212fb70d7d3e": "f94d6e5259bd456cd64e2180a15b6f16bddf4439f50c33bc10c5ee71cefa28cb",
     "8c43b9854041da796641": "36e373f88fe89535df35b4814779494dd72dfab7f66c2798eb1a8de3d36638e2",
-    "2a8e7651f908d61757c8": "53ca615142b8a83d99b504cbc776ccc4ed76db9c690293a694949e156a4ceee7",
+    "2a8e7651f908d61757c8": "e4dc13cac4d8e195f261c6f01b57606ed03d55ca0c57d5b1dc666071e46e78b8",
     "b1f70657a865d02bf9c2": "5b49c6c06d41dc1b227fade586b7eb04446c78c11c83e6048ba1fddd61b5ed6a",
     "5f4fb3551ad7e6c5b6b6": "055361be1dcf71264df12931badf20c540779933a6910ddaed367deed12d2b5d",
-    "278e70e88147bb2c9b11": "28188592ae705fda2df95c15077ad9789585114c17caddd1d5e62ce5f4136c41",
-    "b1b34cf07234fcc1fe5a": "3262d6ad94d22a05421e1d54badb3f99c4126e6e70eae43c88ff9ed098c9beab",
+    "278e70e88147bb2c9b11": "cf6e327cc966a11c6f29f1d16672040e0b752f1af60bc138c4c4472621819d74",
+    "b1b34cf07234fcc1fe5a": "7fd51ca9b906baf752521af9e0e73d2c21e3ce8cd6c9c56271053bc61a2a9c17",
     "bfff253c6ae5b985b479": "194798794d193c0ce78c30e0bf2deae28eafc6b03df8ee5fc0282679897a0ecd",
     "6b81efe72d632959d31f": "bbe676aaa5420f8df39f4cf931901b180ef940cd3b896d8daab392858292564b",
     "09fa9f199791dc447452": "d996a5c97311b9d9f518748ad2366940fb1bef32b5dd0cd0f60cef605f9908ba",
     "ed9190ea3dd4e848af6b": "12eaeca8e6d5490221bcc9f663f1729bfb53e22deabbcb6cc391d9984c646f05",
-    "b7253d5b8a98f9276516": "d6e72579975727c6f193b8aca2bf042a869fe86707f29c056e15104b86b115c6",
+    "b7253d5b8a98f9276516": "a65202407d129b5754347e95945cf279ee0e49d1b1bff6ef494d9f43846fab87",
     "de4fecfbf8ab7ea67b73": "0fe1a47f69ed23b0ab799718c5dc28113cdfb8e6a1dfd599303043e74cf98652",
     "5500ca7c86470004e3a9": "8734d276eb735fed88fedf3481dce45735b31229a8714bc305b6615d4f2c4ccb",
     "4b50327151948d74ac97": "644a2add76e0a88e06ac62c125d6f055de5752053aa85ebd59ee867cb82e3f2c",
     "eecb217c1d39da14296b": "b4e81082794b4507a7d1fe402735ba80b5be772a4cd3dd93a22ce50979205d2a",
     "a8697cc879473202c61b": "3eed04d245e7eeec15d7ff2030a783f3faa43e0858364898af494d9d2cae31da",
-    "8c86ef7bdfce5d86b178": "926072582ae483167ba90028f7fadf912f66955bb7918cbb501de181a69824ad",
-    "62347da91db6a9358ce8": "3aa303610716ba221a54842c6b3c156511aca08d25ff2397963ae18a15fe355f",
+    "8c86ef7bdfce5d86b178": "f307c14256c16bfd9db9764530435f15ddfee07126dd57885765491837f6a12f",
+    "62347da91db6a9358ce8": "128da46220289d70e783e228ed50743887f73137ffe3581251659e46e254bc43",
     "d5bd8dc30815b44a0518": "e02dac48708d6b285723b4d7ae15a002fe1d6aa03c82b9b84de72bc157f4845f",
-    "5abd7ccdc15dc716ae13": "622c9b04d519dd17b2ccbcaa1c281d36d0d2b6b4995d87e9a36b5868f8174cf7",
-    "19970664ea8e6f384e43": "a730c0479a9e7189a3fe4a4ed07bc1085e5aa521dd59df28e14dd0eb059ea272",
+    "5abd7ccdc15dc716ae13": "28eb8d0ee8901ddd471b1e31fb9152cf2baa1a96336cfcdf5d00341bbedc8132",
+    "19970664ea8e6f384e43": "0a335484fd02fea90bd666705310725515d635aae396e5ebf7544127af008d03",
     "b2ef7fd09c67c3755618": "6c0af0c62057654f8ea8aa158e3ac03a44ca863a8b8ff3c89e9d1982f19ec4d9",
     "72c62b6823ffc4436905": "784df609c538c8a65e35ea9bc34a83e872a35ead3527ab25b6a70c733ecabe26",
     "57894328f9454651c87f": "ff10ae654d3d22ebfce7131aa2f7bd3614345781a7d8a0abf6f98a082891b971",
     "03f1c1d34f736656216a": "799a640da7ebd8076953e22a32a7d638d4230a80b07cf06b93cec22809eab5c8",
     "1f54f33f92f0bd0fe08b": "799591de01d67e74451271027f0f8e05fa939bda75b73f2cef93d8766bba015f",
     "198c6cf02c330deca207": "ce36824f533e84a2d072d06498b37d7ebb62709916a8c65731fe719ee5352c6b",
-    "e6b2633a1a881dafde66": "8cc451a781ab25a079301fb4c0341ff85b561badbb343614adf114b3a0cb5c3e",
-    "4903511d02b5bfbbb5a8": "10f28b715ab00e5d95b9452169b30a7caf26d1437df71d7d905cc32f4bf0151a",
+    "e6b2633a1a881dafde66": "c23bd3135833d120a661b4f1b738e2ea9d16882934ecdce58d61c4a6eb193140",
+    "4903511d02b5bfbbb5a8": "6abf969c5118bc190d9c0a0d7b223214efd0217665286c65ecfa879ae9f8815d",
     "6fb4ad90738712d3ecac": "71a7c6ee29d67ed894a07d091039b451e8d6c4eeb69a1fc4c41f578b0d08d2bf",
     "54269fa4c02e5e9f259d": "5526595d1c25e742b5d91fabb49e5a023e92bcdbb7f558b1dff31d35d8f26a32",
     "31d97d70094a93bb3534": "345918e0c8559fda505afd7dde6ce5282a2c722227dd67055f21de68b9bbd209",
     "3b4f33c624edce8d650c": "1cee4ca19279cfdd7397cc489585bbbb50eeb6bce4763303082ef8034e99e51f",
-    "7b92f5eb993c070eca4b": "5fac029159d1ef923a91a39cd0da2b19379c9cc2615c926b16f66811a7d65a9f",
+    "7b92f5eb993c070eca4b": "a932c16e1200bd4aed379ebce2808e37b099ed8a85d2d749ae942aeeb43949a4",
     "066566daa57489d292a6": "f4ce699335e6485952bfdd12107e3fcde763076427f86075697c4a30271b1832",
-    "9524016a6841e970ad49": "c20d7a58dc82f13e56e5cb0e19ee0f4067d6f7f62d36df0f34260188c4fda973",
     "8fddb8a43c6f356dcea1": "611d261a88ab87cdd25656aea131eca3d1df7d7a3680f553779cc7d4ff7f97da",
     "82d62b02e8ecd4308de5": "2bc9ce963b37be5008c4c1689e2d48a1b852ecdac6754e601da75c0ed350e48a",
     "b39eb1f211967b4c71a1": "7099cdf7b08fa76caa3020531342a47ea8abf849187060dbfb4782648ad193c3",
@@ -1429,7 +1382,7 @@
     "e71a1902782c73a2d16e": "0ef7aa91002e900f26ba081de3b6ba1f99cc1999caceba39298d6545d0abc2f6",
     "fb4546b758a98411759c": "11097b12959941031b0391539fceb5576bf45d4526880e3c119409e68e05f519",
     "a411df8e90b8225f8171": "240011df577bd73f4c0e6af8ab358c277a6ef763f5ee0d51c80ffc0ec0e9a094",
-    "aff3133d705c8e5cb3f0": "5506d4cea3273f276e2b75f377142d71b33119787ff88e0636b49827a4fe1da8",
+    "aff3133d705c8e5cb3f0": "9c0113d53ebe30e8355632e03548469a9347fadad0e3cab1c607cad11e49a041",
     "78f661b3a184db4d991e": "10a26841a0535c841c8c3a007c1ec785bccd987e2f78aa90427ad45a3547948c",
     "e18065014cf66f4be4d4": "9e9ac7d5021cf78bca76f3c3337d0972af8acacd26207d5915ba7e17669fb386",
     "582eff31df24c1cb8313": "f49702c7967d67716b43fc7be3bd8493cd3a4297fd15a73bdc8eab3ee0fb5d0b",
@@ -1441,7 +1394,7 @@
     "d599b9765a58f8977a2c": "32e275e5258cb15533e3da8e673287dda0456dc684b7088ece4444b93a14e026",
     "1a6e6a1257d7a963e080": "8fc8114f6f449c5bd01e2668ba48d4bce6fbe6b815ec2776de733ed2c48ee9ed",
     "e594c7311f82e803b4b7": "9efe843da0ed9ef33820a775e2f0775a3857f316d387674cd94a7e2c7ae1cd36",
-    "ba0a721a1f904eea1284": "df54d6cc4ce221141e07343f6d5f703a6cb6da455f178fa8e106efa1b8116eef",
+    "ba0a721a1f904eea1284": "fa0e998e179ce04c22ca893f09bdc2cc1e4448dbe67938e64e5d7239159d99f6",
     "824ae51aacffe43f6836": "9f83ef15d6d863bae620a21ef323e4867af31969a560ed3ad0e540f5c5f3d646",
     "dfcdaa07e65074e914cf": "bd88028c624138a75768a17908c846b6ddaae9d6858d241a52737af367a40c0d",
     "b1b6c718c965640eac7c": "8f376bec5a6ab3b1bf3d5aeb572a1cbd0e15742d0fb8c88ed53f6032ea752c42",
@@ -1452,12 +1405,10 @@
     "f04f311581b414b8d51f": "4c0cb1832135507f464cd0530798e74aba5a11d58fabf2980ef2fb2553ae7190",
     "c8c8d5d5f449bb9e57eb": "ebfbc80830f7156064447f6789e9e886be7e10fb8a7d16a1f5fef6da863760a7",
     "c7deccf16eb7fadf75f3": "e8e6bd4c384c0531b1c19b019ab1ee14ab17e2d9f3196f879cd7ddaecdf152f0",
-    "a5a7bb5ac6185bae2903": "a355f6f2d4426dc4efd30424d8e8725c3bb856d87e4f798f3559df3444904ff0",
+    "a5a7bb5ac6185bae2903": "266fc3b96a372590f73384fe7e416af16429ae22a4fbab0cadb1b6763c3a17f7",
     "f60fb01beaf7ccf3229c": "927862ca10e41634c0f5f2c61034b52150831a243b55d18928db0d774536d521",
     "04d742c3ae8b90993965": "f390b620906f592703a3d420143601f8f0d2ee69f5110f8a5a21c0a1fc92ea3b",
-    "26342734b3f9df7e2513": "ad3393e6eee6668fc48e099872a165d6c215594433dbaa6dbe82ecaaaf34279f",
-    "64e8616d3b23b83670cc": "bcf927577868cfaabf3f0f7f94572d8beaa198dd85a279cc39af0f8dc18a6142",
-    "d419481684da4f0e1b2a": "c0753dc7152bbe77d5b6d9e235e51e135861567f6b22a2b7c0efc027c95f2e95",
+    "26342734b3f9df7e2513": "f4de379b165064bbc865ed1e87111c26c70022fba2032c3e1e8785684134bbdc",
     "8518710d06e83dae0210": "d5fabaf3591cc616e589da67cafe079d7cec9f84f5db80620379944c7a4dc4da",
     "505541bb63ef36d88ded": "71080d40d90ae3d63ebb4e6b4e0fe44cd2186e04215d6f671010aeb9b55e2464",
     "6d4549f0ede5286da450": "71c3a679f9526f97c84dbaa997b3db4658ecdc1ad2620756f72ad57c215aa8d9",
@@ -1473,9 +1424,8 @@
     "fba1f791f1a41c3d5096": "dd423c36e075925a20473c6eb063a9f25e3e1ef524aabf477dd5c0673474066b",
     "4b9b0f2cc0b30ae13056": "43c18c05531ff9a329411101cc97769459803df13f1ad2b5f9a76c4aad619724",
     "e904c31abb7546108c2e": "27ecb887cf26c0e5b97fd43b48bf2a14066ac2cefe8688ac0aebbc1774cd9367",
-    "ae9cd58e643feeeb74cd": "28a9b0407505ad63e0aa83e477e3c4384a24e94ce2e4bda305da50ff69118db9",
     "df72482125e7867a1e98": "662c022c7ab7ef52fffb0c5fa00569fe094d892dafdc940a8f016c0b6e4dfda1",
-    "607c8db40269b90ba99a": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e",
+    "607c8db40269b90ba99a": "b5105226a308bea586dfbf58ec537ff78a6ac0c938360829f35b8172cb1d0731",
     "80fe0d2b2dc9532f9e29": "4e640b895b5cf70c77ec3308a7eeef288be470b94e2d1c6032ee59ca4b189b00",
     "fef43dfa7e748f727604": "7d65ca895117a6b4576685c0cf64d1efb0e02a45e24c59110a0eb57447f9396c",
     "53bed82538ab94c28daf": "02fca7e213a33a0052c43b31bf0c9407f4c66004bb38561a232a2429735a9b15",
