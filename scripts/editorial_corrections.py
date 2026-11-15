@@ -13,7 +13,8 @@ SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  'data/editorial/reading-corrections-2026-11-09.json',
                  'data/editorial/research-reading-corrections-2026-11-11.json',
                  'data/editorial/plain-language-corrections-2026-11-12.json',
-                 'data/editorial/concise-box-corrections-2026-11-13.json')
+                 'data/editorial/concise-box-corrections-2026-11-13.json',
+                 'data/editorial/article-access-corrections-2026-11-15.json')
 
 
 def reading_proof(key, root=ROOT):
@@ -51,15 +52,25 @@ def corrections(root=ROOT):
     return rows
 
 
+def recoverable_keys(root=ROOT):
+    path = Path(root) / 'data/editorial/article-access-corrections-2026-11-15.json'
+    if not path.exists(): return set()
+    return {row['key'] for row in json.loads(path.read_text()).get('news', [])
+            if row.get('retry_when_full_source_available') is True}
+
+
 def is_locked(key, root=ROOT):
     path = Path(root) / MANIFEST
     pending = json.loads(path.read_text()).get('pending_keys', []) if path.exists() else []
-    return key in corrections(root) or key in pending
+    return key in pending or (key in corrections(root) and key not in recoverable_keys(root))
 
 
 def apply_corrections(rows, root=ROOT):
     approved = corrections(root)
     for row in rows:
         if row.get('key') in approved:
+            # A validated later full reading supersedes a temporary access notice.
+            if row.get('key') in recoverable_keys(root) and row.get('has_editorial'):
+                continue
             row.update(copy.deepcopy(approved[row['key']]))
     return rows
