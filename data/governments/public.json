@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-14T14:00:00+00:00",
-  "last_checked_at": "2026-11-14T18:06:20.397917+00:00",
+  "monitor_as_of": "2026-11-15T16:49:11+00:00",
+  "last_checked_at": "2026-11-15T17:36:54.133821+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1361,6 +1361,72 @@
       "summary": "MCAST celebrated 25 years since its 2001 founding, marking growth as Malta's leading vocational education institution. Minister Byron Camilleri and MCAST leadership highlighted past achievements and plans like Vision 2030 and AI integration to enhance education quality and student experience for future workforce needs.",
       "body_paragraphs": [],
       "input_fingerprint": "6262555986806a4b6519c772151d23f7005f880e7a831983eacba5da6ed35261"
+    },
+    "fba1f791f1a41c3d5096": {
+      "id": "fba1f791f1a41c3d5096",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/peaminister-tugevdab-silicon-valleys-tehnoloogiakoostood-ja-tutvustab-eesti",
+      "date": "2026-11-15",
+      "headline": "Estonian Prime Minister visits Silicon Valley to pursue AI cooperation and discuss regional security and technology.",
+      "summary": "Prime Minister Kristen Michal is visiting Silicon Valley to promote cooperation and investment in AI, data-centre infrastructure and related technologies. His programme includes a technology conference, meetings with industry and political figures, a Stanford University discussion, and a meeting with the Estonian community.",
+      "body_paragraphs": [],
+      "input_fingerprint": "dd423c36e075925a20473c6eb063a9f25e3e1ef524aabf477dd5c0673474066b"
+    },
+    "4b9b0f2cc0b30ae13056": {
+      "id": "4b9b0f2cc0b30ae13056",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr261926",
+      "date": "2026-11-14",
+      "headline": "Malta's prime minister welcomes agreement on EU representation in future Russia-Ukraine peace discussions.",
+      "summary": "At an informal European leaders’ summit in Dublin, Robert Abela welcomed plans for the E5 countries and EU institutions to represent the EU in future Russia–Ukraine peace talks. Leaders also discussed AI, with Abela outlining Malta’s strategy, public training and the need to update policies.",
+      "body_paragraphs": [],
+      "input_fingerprint": "43c18c05531ff9a329411101cc97769459803df13f1ad2b5f9a76c4aad619724"
+    },
+    "e904c31abb7546108c2e": {
+      "id": "e904c31abb7546108c2e",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/11/bundeskanzler-stocker-beim-finanzrahmen-auch-die-iteressen-oesterreichs-beruecksichtigen.html",
+      "date": "2026-11-12",
+      "headline": "Austria’s Chancellor calls for EU AI capacity and rules, while discussing Ukraine funding and Europe’s role…",
+      "summary": "At the informal Dublin EU summit, Chancellor Stocker called for a reduced financial framework that safeguards Austrian interests, stronger EU competitiveness in AI, and meaningful European involvement in Ukraine’s funding and peace efforts.",
+      "body_paragraphs": [],
+      "input_fingerprint": "27ecb887cf26c0e5b97fd43b48bf2a14066ac2cefe8688ac0aebbc1774cd9367"
+    },
+    "ae9cd58e643feeeb74cd": {
+      "id": "ae9cd58e643feeeb74cd",
+      "country": "Czechia",
+      "country_code": "CZ",
+      "url": "https://vlada.gov.cz/cz/media-centrum/aktualne/oceneni-inspirativnich-projektu-a-osobnosti-verejne-spravy-230052/",
+      "date": "2026-11-12",
+      "headline": "Czech awards recognize public-service projects, including a coordinated response to Prague’s major hepatitis A outbreak.",
+      "summary": "The 2025 Public Service Initiative of the Year awards recognized ten projects and public servants from 103 nominations, including the jury’s first Special Prize. The initiative promotes innovation, collaboration, digitalization, better public services and sharing good practices across government institutions.",
+      "body_paragraphs": [],
+      "input_fingerprint": "28a9b0407505ad63e0aa83e477e3c4384a24e94ce2e4bda305da50ff69118db9"
+    },
+    "df72482125e7867a1e98": {
+      "id": "df72482125e7867a1e98",
+      "country": "Czechia",
+      "country_code": "CZ",
+      "url": "https://vlada.gov.cz/cz/media-centrum/tiskove-zpravy/umetac-cesty-pro-excelentni-vyzkum--narodni-cenu-vlady-ceska-hlava-ziskal-informatik-jan-cernocky-230076/",
+      "date": "2026-11-12",
+      "headline": "Czech researcher’s speech AI supports security applications as voice deepfakes become quicker to create.",
+      "summary": "Jan Černocký of Brno University of Technology received the 2026 Czech Head Government Award, including CZK 1 million, for his lifetime research contributions to speech technologies and AI. He credited his research group and university, and discussed the group’s work and applications.",
+      "body_paragraphs": [],
+      "input_fingerprint": "662c022c7ab7ef52fffb0c5fa00569fe094d892dafdc940a8f016c0b6e4dfda1"
+    },
+    "607c8db40269b90ba99a": {
+      "id": "607c8db40269b90ba99a",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr261894en",
+      "date": "2026-11-11",
+      "headline": "Malta’s Speaker links national security with defence, democratic resilience, diplomacy, and children’s online safety.",
+      "summary": "Carmelo Abela addressed child safety online and parliament’s role in balancing security with social needs at the Paris Peace Forum 2026. He called for shared responsibility, democratic safeguards, international cooperation and diplomacy, and attended an official dinner hosted by French President Emmanuel Macron.",
+      "body_paragraphs": [],
+      "input_fingerprint": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e"
     }
   },
   "checked": {
@@ -1481,7 +1547,13 @@
     "76ac5352c780b28312e6": "41608a322bcc65aa67ab8ccec3e53d63846a0cb77256f5297c497b9ae92f1a74",
     "829a439d8cac46edaf4b": "f1c9b28aeeaeaa63b8826864a8598cd5099369f81cf175ef751668d2d8ac459b",
     "7caba08fbe4c1a5e96fb": "971e89d4607009800efdf4b36cfffb150c596c4b2bc3395d9d2fc7fe8a6adae2",
-    "42ce31b1d7e2e2db6f8a": "6262555986806a4b6519c772151d23f7005f880e7a831983eacba5da6ed35261"
+    "42ce31b1d7e2e2db6f8a": "6262555986806a4b6519c772151d23f7005f880e7a831983eacba5da6ed35261",
+    "fba1f791f1a41c3d5096": "dd423c36e075925a20473c6eb063a9f25e3e1ef524aabf477dd5c0673474066b",
+    "4b9b0f2cc0b30ae13056": "43c18c05531ff9a329411101cc97769459803df13f1ad2b5f9a76c4aad619724",
+    "e904c31abb7546108c2e": "27ecb887cf26c0e5b97fd43b48bf2a14066ac2cefe8688ac0aebbc1774cd9367",
+    "ae9cd58e643feeeb74cd": "28a9b0407505ad63e0aa83e477e3c4384a24e94ce2e4bda305da50ff69118db9",
+    "df72482125e7867a1e98": "662c022c7ab7ef52fffb0c5fa00569fe094d892dafdc940a8f016c0b6e4dfda1",
+    "607c8db40269b90ba99a": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e"
   },
   "retry": {},
   "pending": 0,
