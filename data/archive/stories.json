@@ -1422,8 +1422,8 @@
       "country_code": "IS",
       "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026-11-13-dagur-islenskrar-tungu-verdlaunaafhending-i-eddu-og-akall-til-apple",
       "date": "2026-11-13",
-      "headline": "Iceland's culture minister urges Apple to add Icelandic language support to its operating system.",
-      "summary": "The ministry announces Icelandic Language Day events, including the 31st Jónas Hallgrímsson Award ceremony and a public call urging Apple to add Icelandic to its operating system. It also lists cultural and academic events for Icelandic Week, 16–22 November 2026.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "baecfe36733baa7076052decb4c8fbbc4dee45d2b180ba5e558948ac24536a37",
       "key": "event:3066b5a8-5fec-5955-97a1-c529d8464ffc",
@@ -1431,7 +1431,7 @@
       "section": "governments",
       "slug": "iceland-s-culture-minister-urges-apple-operating-system",
       "path": "story/iceland-s-culture-minister-urges-apple-operating-system/index.html",
-      "deck": "The ministry announces Icelandic Language Day events, including the 31st Jónas Hallgrímsson Award ceremony and a public call urging Apple to add Icelandic to its operating system. It also lists cultural and academic events for Icelandic Week, 16–22 November 2026.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Iceland",
       "source_count": 1,
       "sources": [
@@ -1454,7 +1454,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -1465,7 +1465,8 @@
       "legacy_paths": [
         "story/government-3066b5a8-5fec-5955-97a1-c529d8464ffc/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "alt": "Panel with Royal Woman",
@@ -3325,16 +3326,16 @@
       "country_code": "KZ",
       "url": "https://primeminister.kz/kz/news/olzhas-bektenov-prezidenttin-tapsyrmasy-boyynsha-antaliyadagy-cop31-sammitine-katysty-32111",
       "date": "2026-11-11",
-      "headline": "Kazakhstan promotes water security, climate cooperation, renewable energy, and technology for natural-hazard preparedness.",
-      "summary": "Prime Minister Olzhas Bektenov attended COP31 in Antalya, outlining Kazakhstan’s environmental and climate initiatives, energy goals, and proposals for international cooperation. Kazakhstan also presented projects at its national pavilion and signed approximately $1.2 billion in agreements on renewable energy and gas infrastructure.",
+      "headline": "Kazakhstan says AI and space monitoring will help forecast natural hazards and prevent emergencies.",
+      "summary": "At COP31, Kazakhstan said it is introducing AI and space monitoring to forecast natural hazards and prevent emergencies. Prime Minister Bektenov also presented climate and energy projects and international cooperation proposals.",
       "body_paragraphs": [],
-      "input_fingerprint": "92e50e357b13af7fbfe1349c0bfbb0df1ff1408a1d72786b5c56de23c8242d87",
+      "input_fingerprint": "5b49c6c06d41dc1b227fade586b7eb04446c78c11c83e6048ba1fddd61b5ed6a",
       "key": "event:99c10e95-5634-599a-8b62-0d12067e915b",
       "kind": "news",
       "section": "governments",
       "slug": "kazakhstan-promotes-water-security-climate-cooperation-natural-hazard-preparedness",
       "path": "story/kazakhstan-promotes-water-security-climate-cooperation-natural-hazard-preparedness/index.html",
-      "deck": "Prime Minister Olzhas Bektenov attended COP31 in Antalya, outlining Kazakhstan’s environmental and climate initiatives, energy goals, and proposals for international cooperation. Kazakhstan also presented projects at its national pavilion and signed approximately $1.2 billion in agreements on renewable energy and gas infrastructure.",
+      "deck": "At COP31, Kazakhstan said it is introducing AI and space monitoring to forecast natural hazards and prevent emergencies. Prime Minister Bektenov also presented climate and energy projects and international cooperation proposals.",
       "publisher": "Government of Kazakhstan",
       "source_count": 1,
       "sources": [
@@ -3376,16 +3377,16 @@
       "country_code": "EE",
       "url": "https://valitsus.ee/uudised/noorte-sotsiaalmeedia-noukoda-noored-eelistavad-moodukaid-piiranguid-lauskeeldudele",
       "date": "2026-11-11",
-      "headline": "Estonia’s youth social media council reports online risks and favors balanced restrictions to protect young people.",
-      "summary": "The Government’s youth social media and mental health council reported on nationwide student workshops and research into school rules. Young people generally favored moderate restrictions, citing online harms but also concerns about strict bans. The council will continue its analysis and publish recommendations in December.",
+      "headline": "Estonian youth council flags AI misuse and online scams while weighing moderate social-media limits.",
+      "summary": "Estonia’s youth council says students favor moderate social-media limits. Workshops identified AI misuse, misinformation and online scams among digital risks; the council will publish recommendations in December.",
       "body_paragraphs": [],
-      "input_fingerprint": "62b340a162473338c116a2d313e163e89ae5ef23751aa5f9f2e4162511d02e38",
+      "input_fingerprint": "055361be1dcf71264df12931badf20c540779933a6910ddaed367deed12d2b5d",
       "key": "event:e61a5d21-cb91-59cf-8ae8-2a8dc6ee3bfb",
       "kind": "news",
       "section": "governments",
       "slug": "estonias-youth-social-media-council-online-young-people",
       "path": "story/estonias-youth-social-media-council-online-young-people/index.html",
-      "deck": "The Government’s youth social media and mental health council reported on nationwide student workshops and research into school rules. Young people generally favored moderate restrictions, citing online harms but also concerns about strict bans. The council will continue its analysis and publish recommendations in December.",
+      "deck": "Estonia’s youth council says students favor moderate social-media limits. Workshops identified AI misuse, misinformation and online scams among digital risks; the council will publish recommendations in December.",
       "publisher": "Government of Estonia",
       "source_count": 1,
       "sources": [
@@ -3427,8 +3428,8 @@
       "country_code": "BY",
       "url": "https://president.gov.by/ru/events/ucastie-v-sessii-soveta-kollektivnoj-bezopasnosti-odkb",
       "date": "2026-11-11",
-      "headline": "Lukashenko urges stronger CSTO defence and security cooperation, citing cyber, military and infrastructure threats.",
-      "summary": "At a Kremlin CSTO summit, Alexander Lukashenko urged stronger military and counterterrorism cooperation, technological readiness, and support for member states, while warning of Western militarization and hybrid threats. The summit signed about two dozen documents, including a counterterrorism strategy through 2030.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "0398a0360c361ab2f2583e181628ce65adf8fbfaca0f7968ac770a7a0ed52c1e",
       "key": "event:35c777a3-2b31-5aa1-adb0-17616aba65f6",
@@ -3436,7 +3437,7 @@
       "section": "governments",
       "slug": "lukashenko-urges-stronger-csto-defence-security-infrastructure-threats",
       "path": "story/lukashenko-urges-stronger-csto-defence-security-infrastructure-threats/index.html",
-      "deck": "At a Kremlin CSTO summit, Alexander Lukashenko urged stronger military and counterterrorism cooperation, technological readiness, and support for member states, while warning of Western militarization and hybrid threats. The summit signed about two dozen documents, including a counterterrorism strategy through 2030.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Belarus",
       "source_count": 1,
       "sources": [
@@ -3459,7 +3460,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -3470,7 +3471,8 @@
       "legacy_paths": [
         "story/government-35c777a3-2b31-5aa1-adb0-17616aba65f6/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "607c8db40269b90ba99a",
@@ -5835,8 +5837,8 @@
       "country_code": "NL",
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/09/nieuwe-ronde-investeringsfonds-startups-etci-kabinet-investeert-euro200-miljoen",
       "date": "2026-11-09",
-      "headline": "The Netherlands invests €200 million in ETCI 2.0 to grow startups and reduce technological dependencies.",
-      "summary": "The Netherlands is investing €200 million in ETCI’s second round to help startups scale up. The initiative pools public and European investment to fund private investment funds. The first round supported seven Dutch startups, including biotech company Azafaros.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "7c2b82e8b38a27e04cad1294a1142cff957b21c5d3058e0265818b217fc78076",
       "key": "event:29ea3647-4292-502c-9fc0-780079d3911e",
@@ -5844,7 +5846,7 @@
       "section": "governments",
       "slug": "netherlands-invests-200-million-etci-2-technological-dependencies",
       "path": "story/netherlands-invests-200-million-etci-2-technological-dependencies/index.html",
-      "deck": "The Netherlands is investing €200 million in ETCI’s second round to help startups scale up. The initiative pools public and European investment to fund private investment funds. The first round supported seven Dutch startups, including biotech company Azafaros.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Netherlands",
       "source_count": 1,
       "sources": [
@@ -5867,7 +5869,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -5878,7 +5880,8 @@
       "legacy_paths": [
         "story/government-29ea3647-4292-502c-9fc0-780079d3911e/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "book_title": "Thus Spake Zarathustra",
@@ -13048,8 +13051,8 @@
       "country_code": "BY",
       "url": "https://president.gov.by/ru/events/ucastie-v-iv-minskoj-mezdunarodnoj-konferencii-po-evrazijskoj-bezopasnosti",
       "date": "2026-11-03",
-      "headline": "Lukashenko calls for Eurasian security dialogue and warns that escalation in Ukraine could trigger wider conflict.",
-      "summary": "At the Minsk conference, Alexander Lukashenko called for dialogue, compromise and cooperation, including an early Ukraine peace agreement, and warned of escalation and Belarus’s involvement. He criticized Western sanctions, militarization and international organizations, and advocated a broadly developed Eurasian Charter for security and cooperation.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "ae9e49afe5732046c43458970b5c5599e366cfe9c60493730acfa7bea03e5081",
       "key": "event:8afa24e4-7eb6-574b-a72f-312b8c79a120",
@@ -13057,7 +13060,7 @@
       "section": "governments",
       "slug": "lukashenko-calls-eurasian-security-dialogue-warns-wider-conflict",
       "path": "story/lukashenko-calls-eurasian-security-dialogue-warns-wider-conflict/index.html",
-      "deck": "At the Minsk conference, Alexander Lukashenko called for dialogue, compromise and cooperation, including an early Ukraine peace agreement, and warned of escalation and Belarus’s involvement. He criticized Western sanctions, militarization and international organizations, and advocated a broadly developed Eurasian Charter for security and cooperation.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Belarus",
       "source_count": 1,
       "sources": [
@@ -13080,7 +13083,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -13091,7 +13094,8 @@
       "legacy_paths": [
         "story/government-8afa24e4-7eb6-574b-a72f-312b8c79a120/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "a8697cc879473202c61b",
@@ -14006,7 +14010,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-15T18:40:28.672369+00:00",
+      "affiliation_checked_at": "2026-11-15T18:44:40.878422+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -22073,8 +22077,8 @@
       "country_code": "DK",
       "url": "https://stm.dk/presse/pressemeddelelser/2026/de-nordiske-lande-forpligter-sig-til-bedre-digital-beskyttelse-af-boern-og-unge/",
       "date": "2026-10-27",
-      "headline": "Nordic leaders unite to regulate tech giants and strengthen online protections for children and youth.",
-      "summary": "Nordic leaders from Denmark, Greenland, Faroe Islands, Sweden, Norway, Finland, Åland, and Iceland adopt the \"Marienborg Manifesto\" to enhance children and youth's digital protection, advocating tougher regulation of tech giants, social media age limits, and banning private smart devices in schools.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "8579f4d185e574d2709f9c1eee0046a86b50121528e4ca534c6593b498521f92",
       "key": "event:3662a8a4-8553-53e9-9d4e-363a1c9004ee",
@@ -22082,7 +22086,7 @@
       "section": "governments",
       "slug": "nordic-leaders-unite-regulate-tech-giants-children-youth",
       "path": "story/nordic-leaders-unite-regulate-tech-giants-children-youth/index.html",
-      "deck": "Nordic leaders from Denmark, Greenland, Faroe Islands, Sweden, Norway, Finland, Åland, and Iceland adopt the \"Marienborg Manifesto\" to enhance children and youth's digital protection, advocating tougher regulation of tech giants, social media age limits, and banning private smart devices in schools.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Denmark",
       "source_count": 1,
       "sources": [
@@ -22105,7 +22109,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -22116,7 +22120,8 @@
       "legacy_paths": [
         "story/government-3662a8a4-8553-53e9-9d4e-363a1c9004ee/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "e6b2633a1a881dafde66",
@@ -28809,6 +28814,57 @@
       "url_slug_version": 1
     },
     {
+      "id": "80fe0d2b2dc9532f9e29",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+      "date": "2026-10-22",
+      "headline": "UK government boosts wildfire response with firefighting upgrades, peatland restoration, AI detection, and new action plan.",
+      "summary": "The UK government is investing in aerial firefighting, specialist equipment, landscape restoration, and AI to strengthen wildfire response and prevention. A new Wildfire Action Plan and cross-government coordination aim to enhance resilience amid growing climate risks, supported by industry partnerships and funding.",
+      "body_paragraphs": [],
+      "input_fingerprint": "4e640b895b5cf70c77ec3308a7eeef288be470b94e2d1c6032ee59ca4b189b00",
+      "key": "event:51bc9cf6-c0bd-57fd-8681-a3d30a0e624b",
+      "kind": "news",
+      "section": "governments",
+      "slug": "uk-government-boosts-wildfire-response-firefighting-action-plan",
+      "path": "story/uk-government-boosts-wildfire-response-firefighting-action-plan/index.html",
+      "deck": "The UK government is investing in aerial firefighting, specialist equipment, landscape restoration, and AI to strengthen wildfire response and prevention. A new Wildfire Action Plan and cross-government coordination aim to enhance resilience amid growing climate risks, supported by industry partnerships and funding.",
+      "publisher": "Government of United Kingdom",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of United Kingdom",
+          "headline": "Official government announcement",
+          "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+          "date": "2026-10-22",
+          "language": ""
+        }
+      ],
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "United Kingdom",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-51bc9cf6-c0bd-57fd-8681-a3d30a0e624b/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "Landscape of the Four Seasons",
       "art_type": "Painting",
       "balance_origin": "Korea",
@@ -30316,8 +30372,8 @@
       "country_code": "HU",
       "url": "https://kormany.hu/hirek/allami-kitunteteseket-adtak-at-oktober-23-a-alkalmabol",
       "date": "2026-10-21",
-      "headline": "Hungary awards state honors recognizing contributions to culture, security, health, and education.",
-      "summary": "To mark the 1956 revolution's 70th anniversary, Hungary honored notable citizens across various fields for their contributions to culture, science, and public service through prestigious state awards.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "48485060df411b02f26c27e2a96832acc6aab13b3e9369f3b13eeeeaa5e678ba",
       "key": "event:0369789e-2825-562e-a43e-69bfbb647ed7",
@@ -30325,7 +30381,7 @@
       "section": "governments",
       "slug": "hungary-awards-state-honors-recognizing-contributions-health-education",
       "path": "story/hungary-awards-state-honors-recognizing-contributions-health-education/index.html",
-      "deck": "To mark the 1956 revolution's 70th anniversary, Hungary honored notable citizens across various fields for their contributions to culture, science, and public service through prestigious state awards.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Hungary",
       "source_count": 1,
       "sources": [
@@ -30348,7 +30404,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -30359,7 +30415,8 @@
       "legacy_paths": [
         "story/government-0369789e-2825-562e-a43e-69bfbb647ed7/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/2/29/Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_%2805%29_Ihr_habt_nun_Traurigkeit.ogg",
@@ -32772,6 +32829,57 @@
       "government_photo": null,
       "legacy_paths": [
         "story/government-449e1a36-bd23-52f6-b1ee-60bd072f6337/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "fef43dfa7e748f727604",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/19/we-twijfelen-allemaal-maar-klikken-toch-vier-op-de-tien-heeft-weleens-klikspijt",
+      "date": "2026-10-19",
+      "headline": "Dutch campaign urges caution against sophisticated AI-driven cyber scams causing widespread click regret.",
+      "summary": "A 2026 Dutch government campaign urges people to take three seconds before clicking suspicious links to combat widespread online crime. Research shows 94% doubt message reliability, yet many click hastily, leading to regret and risks like data theft and financial loss.",
+      "body_paragraphs": [],
+      "input_fingerprint": "7d65ca895117a6b4576685c0cf64d1efb0e02a45e24c59110a0eb57447f9396c",
+      "key": "event:42b19225-749b-5227-bfc9-1b67d85dfb3c",
+      "kind": "news",
+      "section": "governments",
+      "slug": "dutch-campaign-urges-caution-against-sophisticated-click-regret",
+      "path": "story/dutch-campaign-urges-caution-against-sophisticated-click-regret/index.html",
+      "deck": "A 2026 Dutch government campaign urges people to take three seconds before clicking suspicious links to combat widespread online crime. Research shows 94% doubt message reliability, yet many click hastily, leading to regret and risks like data theft and financial loss.",
+      "publisher": "Government of Netherlands",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Netherlands",
+          "headline": "Official government announcement",
+          "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/19/we-twijfelen-allemaal-maar-klikken-toch-vier-op-de-tien-heeft-weleens-klikspijt",
+          "date": "2026-10-19",
+          "language": ""
+        }
+      ],
+      "display_date": "19 Oct 2026",
+      "markets": [],
+      "market_label": "Netherlands",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-42b19225-749b-5227-bfc9-1b67d85dfb3c/index.html"
       ],
       "url_slug_version": 1
     },
@@ -39566,8 +39674,8 @@
       "country_code": "SE",
       "url": "https://www.regeringen.se/pressmeddelanden/2026/10/ebba-busch-deltar-pa-lanseringen-av-superdator/",
       "date": "2026-10-15",
-      "headline": "Swedish Minister to inaugurate Sferical's Nvidia-based supercomputer; event open to media.",
-      "summary": "Energy and Industry Minister Ebba Busch will inaugurate Sferical's Nvidia-based supercomputer on October 15. Media access is provided; press secretary Axel Vide is the contact person.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "e2f97aa8a0429a2e0398222ac02f69b0c925ccc0b1c398735f3977805e1f945a",
       "key": "event:dc93c31e-9597-528d-b8aa-2e301e69e22c",
@@ -39575,7 +39683,7 @@
       "section": "governments",
       "slug": "swedish-minister-inaugurate-sferical-s-nvidia-based-open-media",
       "path": "story/swedish-minister-inaugurate-sferical-s-nvidia-based-open-media/index.html",
-      "deck": "Energy and Industry Minister Ebba Busch will inaugurate Sferical's Nvidia-based supercomputer on October 15. Media access is provided; press secretary Axel Vide is the contact person.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Sweden",
       "source_count": 1,
       "sources": [
@@ -39598,7 +39706,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -39609,7 +39717,8 @@
       "legacy_paths": [
         "story/government-dc93c31e-9597-528d-b8aa-2e301e69e22c/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "358e1296b7c84431a78a",
@@ -41119,8 +41228,8 @@
       "country_code": "PT",
       "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-e-china-retomam-comissao-mista-de-ciencia-e-tecnologia-e-definem-areas-prioritarias-de-cooperacao",
       "date": "2026-10-14",
-      "headline": "Portugal and China advance joint science and innovation cooperation with focus on education and tech partnerships.",
-      "summary": "Portugal's Minister of Education, Science, and Innovation and Secretary of State begin an official China visit to resume the Mixed Science and Technology Committee, define cooperation priorities, and advance mutual academic recognition, aiming for a joint science and innovation plan through 2030.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "d521cbaabc0d2eaa63e28999cd3325a17e8003e1b5e1765e7b623f330dadd002",
       "key": "event:713e0af7-3d63-5c4d-8b15-5178e141bf8a",
@@ -41128,7 +41237,7 @@
       "section": "governments",
       "slug": "portugal-china-advance-joint-science-innovation-tech-partnerships",
       "path": "story/portugal-china-advance-joint-science-innovation-tech-partnerships/index.html",
-      "deck": "Portugal's Minister of Education, Science, and Innovation and Secretary of State begin an official China visit to resume the Mixed Science and Technology Committee, define cooperation priorities, and advance mutual academic recognition, aiming for a joint science and innovation plan through 2030.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Portugal",
       "source_count": 1,
       "sources": [
@@ -41151,7 +41260,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -41162,7 +41271,8 @@
       "legacy_paths": [
         "story/government-713e0af7-3d63-5c4d-8b15-5178e141bf8a/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "book_title": "Walden",
@@ -42764,18 +42874,16 @@
       "country_code": "LU",
       "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/10-octobre/13-thill-coree-du-sud.html",
       "date": "2026-10-13",
-      "headline": "Luxembourg and South Korea solidify cultural ties and historical memory, reinforcing peace and creative industry collaboration.",
-      "summary": "In October 2026, Luxembourg's Culture Minister Eric Thill led a delegation to South Korea, signing a cooperation agreement between Luxembourg's Film Fund and KOFIC to boost audiovisual partnerships. The visit included industry networking, cultural exchanges, and a commemorative tribute to Korean War volunteers, reinforcing historical…",
-      "body_paragraphs": [
-        "In October 2026, Luxembourg's Culture Minister Eric Thill led a delegation to South Korea, signing a cooperation agreement between Luxembourg's Film Fund and KOFIC to boost audiovisual partnerships. The visit included industry networking, cultural exchanges, and a commemorative tribute to Korean War volunteers, reinforcing historical ties and creative collaboration."
-      ],
+      "headline": "Government announcement being checked",
+      "summary": "",
+      "body_paragraphs": [],
       "input_fingerprint": "e080584c8884600023c483b83c563ab1629c31334b143c85d97b127cb7c8f736",
       "key": "event:e6800add-530c-5b8c-a03f-f111e02e5879",
       "kind": "news",
       "section": "governments",
       "slug": "luxembourg-south-korea-solidify-cultural-ties-industry-collaboration",
       "path": "story/luxembourg-south-korea-solidify-cultural-ties-industry-collaboration/index.html",
-      "deck": "In October 2026, Luxembourg's Culture Minister Eric Thill led a delegation to South Korea, signing a cooperation agreement between Luxembourg's Film Fund and KOFIC to boost audiovisual partnerships. The visit included industry networking, cultural exchanges, and a commemorative tribute to Korean War volunteers, reinforcing historical…",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Luxembourg",
       "source_count": 1,
       "sources": [
@@ -42798,7 +42906,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -42809,7 +42917,8 @@
       "legacy_paths": [
         "story/government-e6800add-530c-5b8c-a03f-f111e02e5879/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "824ae51aacffe43f6836",
@@ -51362,8 +51471,8 @@
       "country_code": "MT",
       "url": "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/10/07/PR261650.aspx",
       "date": "2026-10-07",
-      "headline": "Malta hosts global tourism summit emphasizing sustainable growth and innovation in a key economic sector.",
-      "summary": "Malta hosts the WTTC Global Summit with over 1,000 delegates, highlighting its strong tourism growth. The event focuses on investment, innovation, and sustainability, recognizing tourism's economic importance to Malta and Europe. Malta aims to develop quality, sustainable tourism and strengthen its global industry role.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "802754b0134314b1bfda11b19a2889ec574c621c0aad2dfe3e047cff99364a6e",
       "key": "event:76287e77-c55c-5b29-957b-0fb1443ca3e9",
@@ -51371,7 +51480,7 @@
       "section": "governments",
       "slug": "malta-hosts-global-tourism-summit-emphasizing-economic-sector",
       "path": "story/malta-hosts-global-tourism-summit-emphasizing-economic-sector/index.html",
-      "deck": "Malta hosts the WTTC Global Summit with over 1,000 delegates, highlighting its strong tourism growth. The event focuses on investment, innovation, and sustainability, recognizing tourism's economic importance to Malta and Europe. Malta aims to develop quality, sustainable tourism and strengthen its global industry role.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Malta",
       "source_count": 1,
       "sources": [
@@ -51394,7 +51503,7 @@
       "ai_label": "No direction stated",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -51405,7 +51514,8 @@
       "legacy_paths": [
         "story/government-76287e77-c55c-5b29-957b-0fb1443ca3e9/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "8518710d06e83dae0210",
@@ -53029,6 +53139,57 @@
       "government_photo": null,
       "legacy_paths": [
         "story/government-64e0c6cf-16f7-5c1f-bf1d-2569034db9a1/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "53bed82538ab94c28daf",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/cifrlandyru-shekarada-zhuk-kutu-uakytyn-10-esege-kyskartty-31963",
+      "date": "2026-10-06",
+      "headline": "Kazakhstan advances digital freight logistics and checkpoint processing to strengthen transport infrastructure and supply chains.",
+      "summary": "At a government meeting, Kazakhstan's Transport Minister outlined progress on the Digital Qazaqstan strategy, highlighting digital freight passports, AI-based monitoring, reduced waiting times at checkpoints, and plans to integrate with international platforms to enhance transport efficiency and service delivery.",
+      "body_paragraphs": [],
+      "input_fingerprint": "02fca7e213a33a0052c43b31bf0c9407f4c66004bb38561a232a2429735a9b15",
+      "key": "event:571466ba-528e-5ac2-a221-0c5c5d05676a",
+      "kind": "news",
+      "section": "governments",
+      "slug": "kazakhstan-advances-digital-freight-logistics-checkpoint-supply-chains",
+      "path": "story/kazakhstan-advances-digital-freight-logistics-checkpoint-supply-chains/index.html",
+      "deck": "At a government meeting, Kazakhstan's Transport Minister outlined progress on the Digital Qazaqstan strategy, highlighting digital freight passports, AI-based monitoring, reduced waiting times at checkpoints, and plans to integrate with international platforms to enhance transport efficiency and service delivery.",
+      "publisher": "Government of Kazakhstan",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Kazakhstan",
+          "headline": "Official government announcement",
+          "url": "https://primeminister.kz/kz/news/cifrlandyru-shekarada-zhuk-kutu-uakytyn-10-esege-kyskartty-31963",
+          "date": "2026-10-06",
+          "language": ""
+        }
+      ],
+      "display_date": "6 Oct 2026",
+      "markets": [],
+      "market_label": "Kazakhstan",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-571466ba-528e-5ac2-a221-0c5c5d05676a/index.html"
       ],
       "url_slug_version": 1
     },
@@ -56905,6 +57066,57 @@
       "government_photo": null,
       "legacy_paths": [
         "story/government-4b0c0dfc-7850-550e-a4ab-2c7732c97be7/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "01fe81c9712582479724",
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "https://media.gov.gr/simeia-syzitisis-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-me-ton-dimosiografo-giorgo-evgenidi-sto-1o-athensmedia-communications-summit/",
+      "date": "2026-10-02",
+      "headline": "Government spokesperson relies on reliable media, warns of misinformation and AI deepfakes, and supports social media…",
+      "summary": "The spokesperson calls for credible media, user ID on social media, and European action against misinformation ahead of elections, emphasizing labeling AI videos. He highlights economic gains without added debt and outlines plans for job creation and tax support to aid citizens financially.",
+      "body_paragraphs": [],
+      "input_fingerprint": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6",
+      "key": "event:ab8b6098-192a-5e69-9e97-5b7f1330aebe",
+      "kind": "news",
+      "section": "governments",
+      "slug": "government-spokesperson-relies-reliable-media-warns-social-media",
+      "path": "story/government-spokesperson-relies-reliable-media-warns-social-media/index.html",
+      "deck": "The spokesperson calls for credible media, user ID on social media, and European action against misinformation ahead of elections, emphasizing labeling AI videos. He highlights economic gains without added debt and outlines plans for job creation and tax support to aid citizens financially.",
+      "publisher": "Government of Greece",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Greece",
+          "headline": "Official government announcement",
+          "url": "https://media.gov.gr/simeia-syzitisis-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-me-ton-dimosiografo-giorgo-evgenidi-sto-1o-athensmedia-communications-summit/",
+          "date": "2026-10-02",
+          "language": ""
+        }
+      ],
+      "display_date": "2 Oct 2026",
+      "markets": [],
+      "market_label": "Greece",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "No direction stated",
+      "ai_label": "No direction stated",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-ab8b6098-192a-5e69-9e97-5b7f1330aebe/index.html"
       ],
       "url_slug_version": 1
     },
