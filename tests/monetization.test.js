@@ -17,40 +17,47 @@ test('monetization form never enables ads before explicit setup confirmation',()
 test('reader-support settings are a narrow patch with safe URLs',()=>{assert.deepEqual(create({update_support:true,support_url:'https://ko-fi.com/reader'}),{schema_version:'aieo_brief_monetization_v1',support_url:'https://ko-fi.com/reader'});for(const url of ['javascript:alert(1)','https://user:pass@example.com'])assert.throws(()=>create({update_support:true,support_url:url}))});
 
 test('a paused head verification tag is reused exactly once after consent',()=>{const p=page({},false,true);assert.equal(p.ctx.adsbygoogle.pauseAdRequests,1);p.tcf(true);p.tcf(true);assert.equal(p.ads().length,1);assert.equal(p.ctx.adsbygoogle.pauseAdRequests,0);assert.equal(p.slots[0].children.length,1);p.tcf(false);assert.equal(p.ctx.adsbygoogle.pauseAdRequests,1)});
-test('adding the head tag does not override disabled advertising or ineligible pages',()=>{for(const props of [{enabled:false},{cmp_enabled:false},{page_eligible:false}]){const p=page(props,false,true);assert.equal(p.ads().length,1);assert.equal(p.nodes.length,1);assert.equal(p.ctx.adsbygoogle.pauseAdRequests,1);assert.ok(p.slots.every(s=>s.children.length===0));}});
+test('adding the head tag does not override disabled advertising or ineligible pages',()=>{for(const props of [{enabled:false},{cmp_enabled:false},{page_eligible:false}]){const p=page(props,false,true);assert.equal(p.ads().length,1);assert.equal(p.nodes.length,2);assert.equal(p.ctx.adsbygoogle.pauseAdRequests,1);assert.ok(p.slots.every(s=>s.children.length===0));}});
 
 for(const [device,desktop,userAgent] of [['phone',false,'iPhone'],['tablet',false,'iPad'],['desktop',true,'Desktop']]) {
- test(device+': unknown consent asks; accept enables Analytics; reject stops it',()=>{
+ test(device+': no analytics prompt; cookieless GA starts; private history stays optional',()=>{
   const p=page({enabled:false},desktop,false,{userAgent});
   const ga=()=>p.nodes.filter(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com');
-  assert.equal(p.ids['consent-banner'].hidden,false);
-  assert.equal(p.ctx.BriefAnalytics.allowed(),false);
-  assert.equal(ga().length,0);
+  assert.equal(ga().length,1);
+  assert.equal(p.ctx.BriefAnalytics.allowed(),true);
+  assert.equal(p.ctx.BriefAnalytics.privateAllowed(),false);
   assert.equal(p.events.length,0);
-  p.ctx.BriefAnalytics.choose(true);
-  assert.equal(ga().length,1);assert.equal(p.ctx.BriefAnalytics.allowed(),true);
-  p.ctx.BriefAnalytics.choose(true);assert.equal(ga().length,1);
-  p.ctx.BriefAnalytics.choose(false);
-  const before=p.ctx.dataLayer.filter(x=>x[0]==='event').length;
+  const defaultConsent=p.ctx.dataLayer.find(x=>x[0]==='consent'&&x[1]==='default');
+  assert.equal(defaultConsent[2].analytics_storage,'denied');
+  assert.equal(defaultConsent[2].ad_storage,'denied');
+  assert.equal(p.ctx['ga-disable-G-TEST'],false);
   p.ctx.BriefAnalytics.event('source_open');
-  assert.equal(p.ctx.dataLayer.filter(x=>x[0]==='event').length,before);
-  assert.equal(p.ctx['ga-disable-G-TEST'],true);
+  assert.ok(p.ctx.dataLayer.some(x=>x[0]==='event'&&x[1]==='source_open'));
+  p.ctx.BriefAnalytics.choose(true);
+  assert.equal(p.ctx.BriefAnalytics.privateAllowed(),true);
+  assert.equal(ga().length,1);
+  p.ctx.BriefAnalytics.choose(false);
+  assert.equal(p.ctx.BriefAnalytics.privateAllowed(),false);
+  assert.equal(p.ctx.BriefAnalytics.allowed(),true);
+  assert.equal(p.ctx.dataLayer.some(x=>x[0]==='consent'&&x[2]?.analytics_storage==='granted'),false);
  });
 }
-test('saved explicit choices are respected; expired or blocked storage asks again',()=>{
+test('saved private-history choices do not affect cookieless GA; preview sends nothing',()=>{
  for(const analytics of [true,false]) {
   const p=page({enabled:false},false,false,{saved:{version:1,analytics,research:false,at:Date.now()}});
-  assert.equal(p.ids['consent-banner'].hidden,true);
-  assert.equal(p.ctx.BriefAnalytics.allowed(),analytics);
+  assert.equal(p.ctx.BriefAnalytics.allowed(),true);
+  assert.equal(p.ctx.BriefAnalytics.privateAllowed(),analytics);
+  assert.equal(p.events.length,1);
  }
  for(const options of [{saved:{version:1,analytics:true,at:0}},{storageBlocked:true}]) {
   const p=page({enabled:false},false,false,options);
-  assert.equal(p.ids['consent-banner'].hidden,false);
-  assert.equal(p.ctx.BriefAnalytics.allowed(),false);
-  assert.ok(!p.nodes.some(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com'));
+  assert.equal(p.ctx.BriefAnalytics.allowed(),true);
+  assert.equal(p.ctx.BriefAnalytics.privateAllowed(),false);
+  assert.equal(p.events.length,0);
+  assert.equal(p.nodes.filter(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com').length,1);
  }
  const preview=page({enabled:false},false,false,{preview:true});
- preview.ctx.BriefAnalytics.choose(true);
  assert.equal(preview.ctx.BriefAnalytics.allowed(),false);
  assert.ok(!preview.nodes.some(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com'));
+ assert.doesNotMatch(fs.readFileSync('templates/base.html','utf8'),/id="consent-banner"/);
 });
