@@ -70,7 +70,8 @@ def apply_corrections(rows, root=ROOT):
     for row in rows:
         if row.get('key') in approved:
             # A validated later full reading supersedes a temporary access notice.
-            if row.get('key') in recoverable_keys(root) and row.get('has_editorial'):
+            if (row.get('key') in recoverable_keys(root) and row.get('has_editorial')
+                    and row.get('access_recovery_validated') is True):
                 continue
             row.update(copy.deepcopy(approved[row['key']]))
     return rows
