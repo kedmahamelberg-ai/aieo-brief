@@ -1,0 +1,67 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "reviewed_at": "2026-11-15",
+  "review_scope": {
+    "news_and_research_records_scanned": 1260,
+    "matching_full_article_unavailable_notices": 2,
+    "method": "Scanned every archived news and research record for review/access failure notices; retrieved both affected publisher pages and read the complete CAC infographic. This is an access-error audit, not a fresh factual review of every article."
+  },
+  "news": [
+    {
+      "key": "event:f8af0f48-8b9e-41f5-b4f0-7ed5b48313d1",
+      "event_id": "f8af0f48-8b9e-41f5-b4f0-7ed5b48313d1",
+      "source_urls": [
+        "https://www.cac.gov.cn/2026-11/06/c_1795720752665088.htm"
+      ],
+      "reason": "The complete article is a single tall infographic. Text extraction captured navigation and missed its image. Read all image sections and retain a private OCR transcript.",
+      "source_image_url": "https://www.cac.gov.cn/rootimages/2026/11/06/1795720752665088-1795720752718780_new.png",
+      "source_image_sha256": "bc0fee2b33bc5b30e5fb9e3632841081ccac62c0e67b6ae872cfdd0c56391f69",
+      "transcript_sha256": "f8af1e0fda9f65dc59b7e1b3bb59bf2024259d17d54e16aa0668ecb37d9aed7e",
+      "after": {
+        "headline": "China’s AI plan targets schools, public services and industry",
+        "deck": "A Chinese policy infographic calls for wider AI education, homegrown technology and practical uses in public services, businesses and daily life.",
+        "what_happened": "An infographic published by Huanqiu and republished by China’s cyberspace administration outlines the “AI+” programme. It calls for action on three fronts: training people, developing China’s own AI, and putting the technology to use in government, business and everyday services.",
+        "why_it_matters": "The proposals connect AI development with education, public safety, industrial change and care. They describe intended changes across society rather than a single new product or a completed trial.",
+        "body_paragraphs": [
+          "The education section calls for AI learning across school stages and society, closer links between universities and industry, and wider access to teaching resources in central and western China.",
+          "The infographic argues that AI should combine an understanding of the physical world with social rules and values. It presents this as a foundation for judgement, communication and cooperation with people.",
+          "For government, it proposes combining people, technology and AI to strengthen public safety. For businesses, it calls for lower-cost ways for smaller firms to use AI and for products such as smart vehicle cabins, homes and devices.",
+          "For daily life, it gives priority to education, healthcare, older people’s care and support for disabled people. It also calls for ordinary workers to be able to turn ideas into income and take part in the AI economy."
+        ],
+        "for_humans": "The programme aims to widen access to AI education, healthcare and care services, including in less-served regions.",
+        "for_ai": "The programme would expand demand for Chinese AI tools in public services, businesses and consumer products.",
+        "human_direction": "gain",
+        "ai_direction": "gain",
+        "human_label": "Benefits",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        },
+        "evidence_complete": true,
+        "has_editorial": true,
+        "summary_basis": "Full publisher infographic",
+        "display_scope": "Based on the complete Chinese infographic, including the text embedded in its image.",
+        "claim_status": "proposal",
+        "limitation": "This is a policy argument and set of proposed actions. It does not report measured results for the promised services.",
+        "reading_minutes": 2
+      }
+    },
+    {
+      "key": "event:fb5546e6-dab5-417f-a0aa-e0b6ede17dbc",
+      "event_id": "fb5546e6-dab5-417f-a0aa-e0b6ede17dbc",
+      "source_urls": [
+        "https://www.letemps.ch/data/intelligence-artificielle-le-graphique-vertigineux-qui-materialise-les-craintes-d-une-bulle"
+      ],
+      "reason": "Rechecked the publisher in HTTP and the signed-in browser context; full text remains gated. Replace the vague extraction warning with the verified access condition without presenting a preview as a full reading.",
+      "after": {
+        "deck": "Le Temps examines rapid growth in AI use and concerns about a financial bubble. Its full article requires publisher access.",
+        "limitation": "The publisher currently limits the full article to account holders or subscribers. The public introduction and chart are accessible; a full-article summary is pending.",
+        "summary_basis": "Publisher introduction and chart; full text restricted",
+        "for_humans": "The public introduction raises concerns about AI investment; the complete argument requires publisher access.",
+        "for_ai": "The public chart shows growing use of open AI models through OpenRouter; it does not establish demand across the whole market."
+      },
+      "retry_when_full_source_available": true
+    }
+  ]
+}
