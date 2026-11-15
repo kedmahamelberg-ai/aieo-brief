@@ -6,16 +6,19 @@
   "unchanged": 7,
   "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
   "failure_counts": {
-    "claim_grounding_failed": 1
+    "source_scope_review_failed": 1
   },
   "failed_items": [
     {
       "key": "paper:0be73fb3448eb344ca662eeb",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
     }
   ],
-  "updated_at": "2026-11-14T18:20:52.324193+00:00"
+  "updated_at": "2026-11-15T19:10:56.525702+00:00"
 }
