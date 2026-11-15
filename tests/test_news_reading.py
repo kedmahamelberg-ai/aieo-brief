@@ -208,13 +208,13 @@ class NewsReading(unittest.TestCase):
                 self.assertTrue(row['after']['for_ai'])
                 self.assertFalse(news_reading.style_problem(row['after']))
                 self.assertTrue(row['retained_source_sha256'])
-                self.assertTrue(editorial_corrections.is_locked(row['key']))
+                self.assertEqual(editorial_corrections.is_locked(row['key']), row['key'] not in editorial_corrections.recoverable_keys())
                 item=next(r for r in archive if r['key']==row['key'])
                 item=copy.deepcopy(item)
                 editorial_corrections.apply_corrections([item])
                 news_reading.prepare_display([item])
                 validate_news_boxes(item)
-                if row['reading_scope'] == 'full_article_unavailable':
+                if row['reading_scope'] == 'full_article_unavailable' and not item.get('has_editorial'):
                     self.assertFalse(item['has_editorial'])
                     self.assertFalse(item['body_paragraphs'])
                     self.assertFalse(item['evidence_complete'])

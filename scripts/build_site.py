@@ -2,6 +2,7 @@
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
 from editorial_corrections import apply_corrections, reading_proof
+from article_access_audit import audit as audit_article_access
 from news_reading import prepare_display as prepare_news_display, EFFECT_LABELS
 from claim_grounding import VERSION as GROUNDING_VERSION
 import argparse, collections, copy, json, os, re, shutil, time
@@ -530,6 +531,7 @@ def main():
     (data/'short-links.json').write_text(json.dumps(short_routes,ensure_ascii=False,indent=2)+'\n')
     payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
     payload['complete_content']=release.get('complete_content',{})
+    (SITE/'data/article-access-status.json').write_text(json.dumps(audit_article_access(allcards),ensure_ascii=False,indent=2)+'\n')
     payload['daily_selection']=rotation
     payload.update(culture_count=len(culture),culture=culture)
     payload.update(government_count=len(governments),governments=governments)
