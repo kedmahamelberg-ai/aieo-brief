@@ -28,9 +28,10 @@ def is_due(state, now):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--state", type=Path, default=Path("data/governments/public.json"))
+    parser.add_argument("--force", action="store_true", help="Recheck a corrected Monitor feed after today's import")
     args = parser.parse_args()
     state = json.loads(args.state.read_text()) if args.state.exists() else {}
-    due = is_due(state, datetime.now(AMSTERDAM))
+    due = args.force or is_due(state, datetime.now(AMSTERDAM))
     print("Daily government import " + ("is due" if due else "is not due or already checked"))
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as output:

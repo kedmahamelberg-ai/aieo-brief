@@ -4,6 +4,12 @@ on:
     # Hourly wake-ups catch a delayed/missed trigger; the Amsterdam gate runs work once daily.
     - cron: '5 * * * *'
   workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: Refresh the corrected Monitor feed even if today's import already ran
+        required: false
+        type: boolean
+        default: false
 permissions:
   contents: write
   pages: write
@@ -23,7 +29,7 @@ jobs:
           ref: main
       - name: Check whether today's Amsterdam import is due
         id: daily
-        run: python3 scripts/government_brief_schedule.py
+        run: python3 scripts/government_brief_schedule.py ${{ inputs.force_refresh && '--force' || '' }}
       - uses: actions/setup-python@v6
         if: steps.daily.outputs.due == 'true'
         with:
