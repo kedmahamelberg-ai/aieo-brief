@@ -146,7 +146,10 @@ def persist(client,item,release,draft,proof):
         if not rows:raise RuntimeError('Story registry did not return the saved row.')
         story=rows[0]
     basis={'prompt_version':PROMPT_VERSION,'source_release_sha256':release['content_sha256'],'release_id':release['release_id'],'axes_sha256':digest(relation['axes']),'axes':relation['axes'],'input_fingerprint':item['fp'],'editorial_source_fingerprint':editorial_source_fingerprint(item['event'],item['source_relationship']),'full_source_count':len(item['sources']),'model':MODEL,'claim_status':draft.get('claim_status','reporting'),'limitation':draft.get('limitation',''),'validation':'source_support_and_original_wording'}
-    if not item['reuse']:basis['grounding_version']=claim_grounding.VERSION
+    if not item['reuse']:
+        basis['grounding_version']=claim_grounding.VERSION
+        basis['access_recovery_validated']=bool(item['sources']) and all(
+            source.get('quality',{}).get('usable_complete_body') is True for source in item['sources'])
     if not item['reuse']:
         # Labels come from the final independent reading of the finished boxes.
         basis['box_effects']=effects
