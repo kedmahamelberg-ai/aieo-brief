@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
   "monitor_as_of": "2026-11-15T16:49:11+00:00",
-  "last_checked_at": "2026-11-15T17:36:54.133821+00:00",
+  "last_checked_at": "2026-11-15T18:44:14.472594+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -248,17 +248,6 @@
       "body_paragraphs": [],
       "input_fingerprint": "36e373f88fe89535df35b4814779494dd72dfab7f66c2798eb1a8de3d36638e2"
     },
-    "71d90ca03de75aa9ce0c": {
-      "id": "71d90ca03de75aa9ce0c",
-      "country": "Iceland",
-      "country_code": "IS",
-      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026-11-13-dagur-islenskrar-tungu-verdlaunaafhending-i-eddu-og-akall-til-apple",
-      "date": "2026-11-13",
-      "headline": "Iceland's culture minister urges Apple to add Icelandic language support to its operating system.",
-      "summary": "The ministry announces Icelandic Language Day events, including the 31st Jónas Hallgrímsson Award ceremony and a public call urging Apple to add Icelandic to its operating system. It also lists cultural and academic events for Icelandic Week, 16–22 November 2026.",
-      "body_paragraphs": [],
-      "input_fingerprint": "baecfe36733baa7076052decb4c8fbbc4dee45d2b180ba5e558948ac24536a37"
-    },
     "c884c90063d14488df22": {
       "id": "c884c90063d14488df22",
       "country": "Liechtenstein",
@@ -287,10 +276,10 @@
       "country_code": "KZ",
       "url": "https://primeminister.kz/kz/news/olzhas-bektenov-prezidenttin-tapsyrmasy-boyynsha-antaliyadagy-cop31-sammitine-katysty-32111",
       "date": "2026-11-11",
-      "headline": "Kazakhstan promotes water security, climate cooperation, renewable energy, and technology for natural-hazard preparedness.",
-      "summary": "Prime Minister Olzhas Bektenov attended COP31 in Antalya, outlining Kazakhstan’s environmental and climate initiatives, energy goals, and proposals for international cooperation. Kazakhstan also presented projects at its national pavilion and signed approximately $1.2 billion in agreements on renewable energy and gas infrastructure.",
+      "headline": "Kazakhstan says AI and space monitoring will help forecast natural hazards and prevent emergencies.",
+      "summary": "At COP31, Kazakhstan said it is introducing AI and space monitoring to forecast natural hazards and prevent emergencies. Prime Minister Bektenov also presented climate and energy projects and international cooperation proposals.",
       "body_paragraphs": [],
-      "input_fingerprint": "92e50e357b13af7fbfe1349c0bfbb0df1ff1408a1d72786b5c56de23c8242d87"
+      "input_fingerprint": "5b49c6c06d41dc1b227fade586b7eb04446c78c11c83e6048ba1fddd61b5ed6a"
     },
     "5f4fb3551ad7e6c5b6b6": {
       "id": "5f4fb3551ad7e6c5b6b6",
@@ -298,21 +287,10 @@
       "country_code": "EE",
       "url": "https://valitsus.ee/uudised/noorte-sotsiaalmeedia-noukoda-noored-eelistavad-moodukaid-piiranguid-lauskeeldudele",
       "date": "2026-11-11",
-      "headline": "Estonia’s youth social media council reports online risks and favors balanced restrictions to protect young people.",
-      "summary": "The Government’s youth social media and mental health council reported on nationwide student workshops and research into school rules. Young people generally favored moderate restrictions, citing online harms but also concerns about strict bans. The council will continue its analysis and publish recommendations in December.",
+      "headline": "Estonian youth council flags AI misuse and online scams while weighing moderate social-media limits.",
+      "summary": "Estonia’s youth council says students favor moderate social-media limits. Workshops identified AI misuse, misinformation and online scams among digital risks; the council will publish recommendations in December.",
       "body_paragraphs": [],
-      "input_fingerprint": "62b340a162473338c116a2d313e163e89ae5ef23751aa5f9f2e4162511d02e38"
-    },
-    "fcc7f24b350f296891b7": {
-      "id": "fcc7f24b350f296891b7",
-      "country": "Belarus",
-      "country_code": "BY",
-      "url": "https://president.gov.by/ru/events/ucastie-v-sessii-soveta-kollektivnoj-bezopasnosti-odkb",
-      "date": "2026-11-11",
-      "headline": "Lukashenko urges stronger CSTO defence and security cooperation, citing cyber, military and infrastructure threats.",
-      "summary": "At a Kremlin CSTO summit, Alexander Lukashenko urged stronger military and counterterrorism cooperation, technological readiness, and support for member states, while warning of Western militarization and hybrid threats. The summit signed about two dozen documents, including a counterterrorism strategy through 2030.",
-      "body_paragraphs": [],
-      "input_fingerprint": "0398a0360c361ab2f2583e181628ce65adf8fbfaca0f7968ac770a7a0ed52c1e"
+      "input_fingerprint": "055361be1dcf71264df12931badf20c540779933a6910ddaed367deed12d2b5d"
     },
     "278e70e88147bb2c9b11": {
       "id": "278e70e88147bb2c9b11",
@@ -324,17 +302,6 @@
       "summary": "Finance Minister Gilles Roth attended Eurogroup and ECOFIN meetings in Brussels, where ministers discussed economic and banking developments, the digital euro, European security, tobacco taxation, Ukraine, EU legislation and G20 outcomes. The tobacco-taxation package was not adopted; negotiations will continue under the Irish Presidency.",
       "body_paragraphs": [],
       "input_fingerprint": "28188592ae705fda2df95c15077ad9789585114c17caddd1d5e62ce5f4136c41"
-    },
-    "4b17b4aed93075756ee4": {
-      "id": "4b17b4aed93075756ee4",
-      "country": "Netherlands",
-      "country_code": "NL",
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/09/nieuwe-ronde-investeringsfonds-startups-etci-kabinet-investeert-euro200-miljoen",
-      "date": "2026-11-09",
-      "headline": "The Netherlands invests €200 million in ETCI 2.0 to grow startups and reduce technological dependencies.",
-      "summary": "The Netherlands is investing €200 million in ETCI’s second round to help startups scale up. The initiative pools public and European investment to fund private investment funds. The first round supported seven Dutch startups, including biotech company Azafaros.",
-      "body_paragraphs": [],
-      "input_fingerprint": "7c2b82e8b38a27e04cad1294a1142cff957b21c5d3058e0265818b217fc78076"
     },
     "b1b34cf07234fcc1fe5a": {
       "id": "b1b34cf07234fcc1fe5a",
@@ -445,17 +412,6 @@
       "summary": "The National Security Council discussed NATO planning, Bundeswehr expansion, space security, crisis-response capacity and AI safety, intelligence-law rules, and recent violent disturbances. It agreed to strengthen space security through research and development, review post-service activity rules, and thanked emergency responders.",
       "body_paragraphs": [],
       "input_fingerprint": "b4e81082794b4507a7d1fe402735ba80b5be772a4cd3dd93a22ce50979205d2a"
-    },
-    "0e0533db45de78e78dee": {
-      "id": "0e0533db45de78e78dee",
-      "country": "Belarus",
-      "country_code": "BY",
-      "url": "https://president.gov.by/ru/events/ucastie-v-iv-minskoj-mezdunarodnoj-konferencii-po-evrazijskoj-bezopasnosti",
-      "date": "2026-11-03",
-      "headline": "Lukashenko calls for Eurasian security dialogue and warns that escalation in Ukraine could trigger wider conflict.",
-      "summary": "At the Minsk conference, Alexander Lukashenko called for dialogue, compromise and cooperation, including an early Ukraine peace agreement, and warned of escalation and Belarus’s involvement. He criticized Western sanctions, militarization and international organizations, and advocated a broadly developed Eurasian Charter for security and cooperation.",
-      "body_paragraphs": [],
-      "input_fingerprint": "ae9e49afe5732046c43458970b5c5599e366cfe9c60493730acfa7bea03e5081"
     },
     "a8697cc879473202c61b": {
       "id": "a8697cc879473202c61b",
@@ -613,17 +569,6 @@
       "body_paragraphs": [],
       "input_fingerprint": "10f28b715ab00e5d95b9452169b30a7caf26d1437df71d7d905cc32f4bf0151a"
     },
-    "98bc0ac5ebc08d929d74": {
-      "id": "98bc0ac5ebc08d929d74",
-      "country": "Denmark",
-      "country_code": "DK",
-      "url": "https://stm.dk/presse/pressemeddelelser/2026/de-nordiske-lande-forpligter-sig-til-bedre-digital-beskyttelse-af-boern-og-unge/",
-      "date": "2026-10-27",
-      "headline": "Nordic leaders unite to regulate tech giants and strengthen online protections for children and youth.",
-      "summary": "Nordic leaders from Denmark, Greenland, Faroe Islands, Sweden, Norway, Finland, Åland, and Iceland adopt the \"Marienborg Manifesto\" to enhance children and youth's digital protection, advocating tougher regulation of tech giants, social media age limits, and banning private smart devices in schools.",
-      "body_paragraphs": [],
-      "input_fingerprint": "8579f4d185e574d2709f9c1eee0046a86b50121528e4ca534c6593b498521f92"
-    },
     "6fb4ad90738712d3ecac": {
       "id": "6fb4ad90738712d3ecac",
       "country": "Netherlands",
@@ -774,17 +719,6 @@
         "On 20 October 2026, Luxembourg's Ministry of Labour and digital authorities held a conference on AI-era skills, presenting the NTAC project supporting companies' digital skill development. The event highlighted government efforts to help workers and firms adapt amidst AI-driven labor market changes, emphasizing lifelong learning in the national AI strategy."
       ],
       "input_fingerprint": "e3775ec5d5dfd5290a5e7a09995d26545fb1bcee759b41c6cefb2a3c246281ae"
-    },
-    "7ad3aaabe846edc6dba5": {
-      "id": "7ad3aaabe846edc6dba5",
-      "country": "Hungary",
-      "country_code": "HU",
-      "url": "https://kormany.hu/hirek/allami-kitunteteseket-adtak-at-oktober-23-a-alkalmabol",
-      "date": "2026-10-21",
-      "headline": "Hungary awards state honors recognizing contributions to culture, security, health, and education.",
-      "summary": "To mark the 1956 revolution's 70th anniversary, Hungary honored notable citizens across various fields for their contributions to culture, science, and public service through prestigious state awards.",
-      "body_paragraphs": [],
-      "input_fingerprint": "48485060df411b02f26c27e2a96832acc6aab13b3e9369f3b13eeeeaa5e678ba"
     },
     "429df6190e67dfa5cf05": {
       "id": "429df6190e67dfa5cf05",
@@ -948,17 +882,6 @@
       "body_paragraphs": [],
       "input_fingerprint": "ff905b5d06eb140a772776ab1123627a3a130817c1eeef93fb35921c2a4c5169"
     },
-    "86c3188c00271db6fa55": {
-      "id": "86c3188c00271db6fa55",
-      "country": "Sweden",
-      "country_code": "SE",
-      "url": "https://www.regeringen.se/pressmeddelanden/2026/10/ebba-busch-deltar-pa-lanseringen-av-superdator/",
-      "date": "2026-10-15",
-      "headline": "Swedish Minister to inaugurate Sferical's Nvidia-based supercomputer; event open to media.",
-      "summary": "Energy and Industry Minister Ebba Busch will inaugurate Sferical's Nvidia-based supercomputer on October 15. Media access is provided; press secretary Axel Vide is the contact person.",
-      "body_paragraphs": [],
-      "input_fingerprint": "e2f97aa8a0429a2e0398222ac02f69b0c925ccc0b1c398735f3977805e1f945a"
-    },
     "d599b9765a58f8977a2c": {
       "id": "d599b9765a58f8977a2c",
       "country": "Malta",
@@ -980,17 +903,6 @@
       "summary": "Parliamentary Secretary Deo Debattista spoke at the EPSO conference in Singapore, emphasizing leadership, collaboration, and person-centered care in health services. Highlighting Malta's Active Ageing initiatives, he stressed quality of life, regulatory effectiveness, the human role in care, and responsible leadership for future health systems.",
       "body_paragraphs": [],
       "input_fingerprint": "8fc8114f6f449c5bd01e2668ba48d4bce6fbe6b815ec2776de733ed2c48ee9ed"
-    },
-    "437064355675a5927575": {
-      "id": "437064355675a5927575",
-      "country": "Portugal",
-      "country_code": "PT",
-      "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-e-china-retomam-comissao-mista-de-ciencia-e-tecnologia-e-definem-areas-prioritarias-de-cooperacao",
-      "date": "2026-10-14",
-      "headline": "Portugal and China advance joint science and innovation cooperation with focus on education and tech partnerships.",
-      "summary": "Portugal's Minister of Education, Science, and Innovation and Secretary of State begin an official China visit to resume the Mixed Science and Technology Committee, define cooperation priorities, and advance mutual academic recognition, aiming for a joint science and innovation plan through 2030.",
-      "body_paragraphs": [],
-      "input_fingerprint": "d521cbaabc0d2eaa63e28999cd3325a17e8003e1b5e1765e7b623f330dadd002"
     },
     "e594c7311f82e803b4b7": {
       "id": "e594c7311f82e803b4b7",
@@ -1015,19 +927,6 @@
       "summary": "Melania Trump launched the 2027 Presidential Super Intelligence Challenge for K–12 students and introduced a school readiness seal. Participating schools can earn the seal by meeting and documenting readiness milestones; the challenge continues to promote student projects addressing real-world problems.",
       "body_paragraphs": [],
       "input_fingerprint": "df54d6cc4ce221141e07343f6d5f703a6cb6da455f178fa8e106efa1b8116eef"
-    },
-    "bed05a40fa6ac5a09c27": {
-      "id": "bed05a40fa6ac5a09c27",
-      "country": "Luxembourg",
-      "country_code": "LU",
-      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/10-octobre/13-thill-coree-du-sud.html",
-      "date": "2026-10-13",
-      "headline": "Luxembourg and South Korea solidify cultural ties and historical memory, reinforcing peace and creative industry collaboration.",
-      "summary": "In October 2026, Luxembourg's Culture Minister Eric Thill led a delegation to South Korea, signing a cooperation agreement between Luxembourg's Film Fund and KOFIC to boost audiovisual partnerships. The visit included industry networking, cultural exchanges, and a commemorative tribute to Korean War volunteers, reinforcing historical…",
-      "body_paragraphs": [
-        "In October 2026, Luxembourg's Culture Minister Eric Thill led a delegation to South Korea, signing a cooperation agreement between Luxembourg's Film Fund and KOFIC to boost audiovisual partnerships. The visit included industry networking, cultural exchanges, and a commemorative tribute to Korean War volunteers, reinforcing historical ties and creative collaboration."
-      ],
-      "input_fingerprint": "e080584c8884600023c483b83c563ab1629c31334b143c85d97b127cb7c8f736"
     },
     "824ae51aacffe43f6836": {
       "id": "824ae51aacffe43f6836",
@@ -1233,17 +1132,6 @@
       "body_paragraphs": [],
       "input_fingerprint": "71080d40d90ae3d63ebb4e6b4e0fe44cd2186e04215d6f671010aeb9b55e2464"
     },
-    "cb2083817c398390b4fa": {
-      "id": "cb2083817c398390b4fa",
-      "country": "Malta",
-      "country_code": "MT",
-      "url": "https://www.gov.mt/en/Government/DOI/Press%20Releases/Pages/2026/10/07/PR261650.aspx",
-      "date": "2026-10-07",
-      "headline": "Malta hosts global tourism summit emphasizing sustainable growth and innovation in a key economic sector.",
-      "summary": "Malta hosts the WTTC Global Summit with over 1,000 delegates, highlighting its strong tourism growth. The event focuses on investment, innovation, and sustainability, recognizing tourism's economic importance to Malta and Europe. Malta aims to develop quality, sustainable tourism and strengthen its global industry role.",
-      "body_paragraphs": [],
-      "input_fingerprint": "802754b0134314b1bfda11b19a2889ec574c621c0aad2dfe3e047cff99364a6e"
-    },
     "6d4549f0ede5286da450": {
       "id": "6d4549f0ede5286da450",
       "country": "Azerbaijan",
@@ -1427,6 +1315,50 @@
       "summary": "Carmelo Abela addressed child safety online and parliament’s role in balancing security with social needs at the Paris Peace Forum 2026. He called for shared responsibility, democratic safeguards, international cooperation and diplomacy, and attended an official dinner hosted by French President Emmanuel Macron.",
       "body_paragraphs": [],
       "input_fingerprint": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e"
+    },
+    "80fe0d2b2dc9532f9e29": {
+      "id": "80fe0d2b2dc9532f9e29",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "https://www.gov.uk/government/news/military-planes-and-helicopters-to-fight-wildfires-from-the-sky",
+      "date": "2026-10-22",
+      "headline": "UK government boosts wildfire response with firefighting upgrades, peatland restoration, AI detection, and new action plan.",
+      "summary": "The UK government is investing in aerial firefighting, specialist equipment, landscape restoration, and AI to strengthen wildfire response and prevention. A new Wildfire Action Plan and cross-government coordination aim to enhance resilience amid growing climate risks, supported by industry partnerships and funding.",
+      "body_paragraphs": [],
+      "input_fingerprint": "4e640b895b5cf70c77ec3308a7eeef288be470b94e2d1c6032ee59ca4b189b00"
+    },
+    "fef43dfa7e748f727604": {
+      "id": "fef43dfa7e748f727604",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/10/19/we-twijfelen-allemaal-maar-klikken-toch-vier-op-de-tien-heeft-weleens-klikspijt",
+      "date": "2026-10-19",
+      "headline": "Dutch campaign urges caution against sophisticated AI-driven cyber scams causing widespread click regret.",
+      "summary": "A 2026 Dutch government campaign urges people to take three seconds before clicking suspicious links to combat widespread online crime. Research shows 94% doubt message reliability, yet many click hastily, leading to regret and risks like data theft and financial loss.",
+      "body_paragraphs": [],
+      "input_fingerprint": "7d65ca895117a6b4576685c0cf64d1efb0e02a45e24c59110a0eb57447f9396c"
+    },
+    "53bed82538ab94c28daf": {
+      "id": "53bed82538ab94c28daf",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/cifrlandyru-shekarada-zhuk-kutu-uakytyn-10-esege-kyskartty-31963",
+      "date": "2026-10-06",
+      "headline": "Kazakhstan advances digital freight logistics and checkpoint processing to strengthen transport infrastructure and supply chains.",
+      "summary": "At a government meeting, Kazakhstan's Transport Minister outlined progress on the Digital Qazaqstan strategy, highlighting digital freight passports, AI-based monitoring, reduced waiting times at checkpoints, and plans to integrate with international platforms to enhance transport efficiency and service delivery.",
+      "body_paragraphs": [],
+      "input_fingerprint": "02fca7e213a33a0052c43b31bf0c9407f4c66004bb38561a232a2429735a9b15"
+    },
+    "01fe81c9712582479724": {
+      "id": "01fe81c9712582479724",
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "https://media.gov.gr/simeia-syzitisis-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-me-ton-dimosiografo-giorgo-evgenidi-sto-1o-athensmedia-communications-summit/",
+      "date": "2026-10-02",
+      "headline": "Government spokesperson relies on reliable media, warns of misinformation and AI deepfakes, and supports social media…",
+      "summary": "The spokesperson calls for credible media, user ID on social media, and European action against misinformation ahead of elections, emphasizing labeling AI videos. He highlights economic gains without added debt and outlines plans for job creation and tax support to aid citizens financially.",
+      "body_paragraphs": [],
+      "input_fingerprint": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6"
     }
   },
   "checked": {
@@ -1451,13 +1383,10 @@
     "fb977480d066a57c4091": "f25f81e43402e901ed274015e3340c4d5897c665b02c13039a7d401585c27dc4",
     "80f6f5ac212fb70d7d3e": "f94d6e5259bd456cd64e2180a15b6f16bddf4439f50c33bc10c5ee71cefa28cb",
     "8c43b9854041da796641": "36e373f88fe89535df35b4814779494dd72dfab7f66c2798eb1a8de3d36638e2",
-    "71d90ca03de75aa9ce0c": "baecfe36733baa7076052decb4c8fbbc4dee45d2b180ba5e558948ac24536a37",
     "2a8e7651f908d61757c8": "53ca615142b8a83d99b504cbc776ccc4ed76db9c690293a694949e156a4ceee7",
-    "b1f70657a865d02bf9c2": "92e50e357b13af7fbfe1349c0bfbb0df1ff1408a1d72786b5c56de23c8242d87",
-    "5f4fb3551ad7e6c5b6b6": "62b340a162473338c116a2d313e163e89ae5ef23751aa5f9f2e4162511d02e38",
-    "fcc7f24b350f296891b7": "0398a0360c361ab2f2583e181628ce65adf8fbfaca0f7968ac770a7a0ed52c1e",
+    "b1f70657a865d02bf9c2": "5b49c6c06d41dc1b227fade586b7eb04446c78c11c83e6048ba1fddd61b5ed6a",
+    "5f4fb3551ad7e6c5b6b6": "055361be1dcf71264df12931badf20c540779933a6910ddaed367deed12d2b5d",
     "278e70e88147bb2c9b11": "28188592ae705fda2df95c15077ad9789585114c17caddd1d5e62ce5f4136c41",
-    "4b17b4aed93075756ee4": "7c2b82e8b38a27e04cad1294a1142cff957b21c5d3058e0265818b217fc78076",
     "b1b34cf07234fcc1fe5a": "3262d6ad94d22a05421e1d54badb3f99c4126e6e70eae43c88ff9ed098c9beab",
     "bfff253c6ae5b985b479": "194798794d193c0ce78c30e0bf2deae28eafc6b03df8ee5fc0282679897a0ecd",
     "6b81efe72d632959d31f": "bbe676aaa5420f8df39f4cf931901b180ef940cd3b896d8daab392858292564b",
@@ -1468,7 +1397,6 @@
     "5500ca7c86470004e3a9": "8734d276eb735fed88fedf3481dce45735b31229a8714bc305b6615d4f2c4ccb",
     "4b50327151948d74ac97": "644a2add76e0a88e06ac62c125d6f055de5752053aa85ebd59ee867cb82e3f2c",
     "eecb217c1d39da14296b": "b4e81082794b4507a7d1fe402735ba80b5be772a4cd3dd93a22ce50979205d2a",
-    "0e0533db45de78e78dee": "ae9e49afe5732046c43458970b5c5599e366cfe9c60493730acfa7bea03e5081",
     "a8697cc879473202c61b": "3eed04d245e7eeec15d7ff2030a783f3faa43e0858364898af494d9d2cae31da",
     "8c86ef7bdfce5d86b178": "926072582ae483167ba90028f7fadf912f66955bb7918cbb501de181a69824ad",
     "62347da91db6a9358ce8": "3aa303610716ba221a54842c6b3c156511aca08d25ff2397963ae18a15fe355f",
@@ -1483,7 +1411,6 @@
     "198c6cf02c330deca207": "ce36824f533e84a2d072d06498b37d7ebb62709916a8c65731fe719ee5352c6b",
     "e6b2633a1a881dafde66": "8cc451a781ab25a079301fb4c0341ff85b561badbb343614adf114b3a0cb5c3e",
     "4903511d02b5bfbbb5a8": "10f28b715ab00e5d95b9452169b30a7caf26d1437df71d7d905cc32f4bf0151a",
-    "98bc0ac5ebc08d929d74": "8579f4d185e574d2709f9c1eee0046a86b50121528e4ca534c6593b498521f92",
     "6fb4ad90738712d3ecac": "71a7c6ee29d67ed894a07d091039b451e8d6c4eeb69a1fc4c41f578b0d08d2bf",
     "54269fa4c02e5e9f259d": "5526595d1c25e742b5d91fabb49e5a023e92bcdbb7f558b1dff31d35d8f26a32",
     "31d97d70094a93bb3534": "345918e0c8559fda505afd7dde6ce5282a2c722227dd67055f21de68b9bbd209",
@@ -1497,7 +1424,6 @@
     "ff467a1f3ee16b65024e": "3fa84508e400f10410749a4938a38b688402319e518ed0077841b549978d2452",
     "2c731ece44e2ceb3c59b": "5f4181e525cf4a0a64ee4c68f70fd9c77a237cf6167f9eb7a41d5df3f9d8c31f",
     "53dfe3352bd40dfe266e": "e3775ec5d5dfd5290a5e7a09995d26545fb1bcee759b41c6cefb2a3c246281ae",
-    "7ad3aaabe846edc6dba5": "48485060df411b02f26c27e2a96832acc6aab13b3e9369f3b13eeeeaa5e678ba",
     "429df6190e67dfa5cf05": "e722017cb3a1c45f3993a968abf162e65dddc0be9ae031b58a93143fc80e4ccf",
     "697ba1defa9052c086a6": "fe4d4ed589d94bd5e8affc7dda368e0966a4d9751b4766703aa63b551ba2a574",
     "e71a1902782c73a2d16e": "0ef7aa91002e900f26ba081de3b6ba1f99cc1999caceba39298d6545d0abc2f6",
@@ -1512,13 +1438,10 @@
     "6ea280d1c63883355247": "1523a8ea5e0aac94c7c0804f90854ff9d3772ade89bf1273d2a3f0f1cf27804e",
     "358e1296b7c84431a78a": "2c3864a8c10cb43dfff2942fddd12ef563e7b199c077df9605f7fb7a7f371154",
     "748096ce065aed7e9845": "ff905b5d06eb140a772776ab1123627a3a130817c1eeef93fb35921c2a4c5169",
-    "86c3188c00271db6fa55": "e2f97aa8a0429a2e0398222ac02f69b0c925ccc0b1c398735f3977805e1f945a",
     "d599b9765a58f8977a2c": "32e275e5258cb15533e3da8e673287dda0456dc684b7088ece4444b93a14e026",
     "1a6e6a1257d7a963e080": "8fc8114f6f449c5bd01e2668ba48d4bce6fbe6b815ec2776de733ed2c48ee9ed",
-    "437064355675a5927575": "d521cbaabc0d2eaa63e28999cd3325a17e8003e1b5e1765e7b623f330dadd002",
     "e594c7311f82e803b4b7": "9efe843da0ed9ef33820a775e2f0775a3857f316d387674cd94a7e2c7ae1cd36",
     "ba0a721a1f904eea1284": "df54d6cc4ce221141e07343f6d5f703a6cb6da455f178fa8e106efa1b8116eef",
-    "bed05a40fa6ac5a09c27": "e080584c8884600023c483b83c563ab1629c31334b143c85d97b127cb7c8f736",
     "824ae51aacffe43f6836": "9f83ef15d6d863bae620a21ef323e4867af31969a560ed3ad0e540f5c5f3d646",
     "dfcdaa07e65074e914cf": "bd88028c624138a75768a17908c846b6ddaae9d6858d241a52737af367a40c0d",
     "b1b6c718c965640eac7c": "8f376bec5a6ab3b1bf3d5aeb572a1cbd0e15742d0fb8c88ed53f6032ea752c42",
@@ -1537,7 +1460,6 @@
     "d419481684da4f0e1b2a": "c0753dc7152bbe77d5b6d9e235e51e135861567f6b22a2b7c0efc027c95f2e95",
     "8518710d06e83dae0210": "d5fabaf3591cc616e589da67cafe079d7cec9f84f5db80620379944c7a4dc4da",
     "505541bb63ef36d88ded": "71080d40d90ae3d63ebb4e6b4e0fe44cd2186e04215d6f671010aeb9b55e2464",
-    "cb2083817c398390b4fa": "802754b0134314b1bfda11b19a2889ec574c621c0aad2dfe3e047cff99364a6e",
     "6d4549f0ede5286da450": "71c3a679f9526f97c84dbaa997b3db4658ecdc1ad2620756f72ad57c215aa8d9",
     "78ae9e19e4fd2bc9b41a": "b4de3030460f2b3f4b4af6fa67864390c431ccf2e60fc33d1cd775e7c27ce89b",
     "7edd1ce37ff1ee573983": "3066dd6c6e13898e8a75c0a6a2a82ddb17f5b5b9a38a3569df7449f8bf8fdf08",
@@ -1553,7 +1475,11 @@
     "e904c31abb7546108c2e": "27ecb887cf26c0e5b97fd43b48bf2a14066ac2cefe8688ac0aebbc1774cd9367",
     "ae9cd58e643feeeb74cd": "28a9b0407505ad63e0aa83e477e3c4384a24e94ce2e4bda305da50ff69118db9",
     "df72482125e7867a1e98": "662c022c7ab7ef52fffb0c5fa00569fe094d892dafdc940a8f016c0b6e4dfda1",
-    "607c8db40269b90ba99a": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e"
+    "607c8db40269b90ba99a": "cd74a11223644f62c131bf71a47b809ca9cb7acf153fa07ccb608c4aa3aec07e",
+    "80fe0d2b2dc9532f9e29": "4e640b895b5cf70c77ec3308a7eeef288be470b94e2d1c6032ee59ca4b189b00",
+    "fef43dfa7e748f727604": "7d65ca895117a6b4576685c0cf64d1efb0e02a45e24c59110a0eb57447f9396c",
+    "53bed82538ab94c28daf": "02fca7e213a33a0052c43b31bf0c9407f4c66004bb38561a232a2429735a9b15",
+    "01fe81c9712582479724": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6"
   },
   "retry": {},
   "pending": 0,
