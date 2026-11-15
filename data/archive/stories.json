@@ -2,6 +2,367 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "8e663ee54a802031d11b291caffae8e3ba2a952621e685aa58eb32042e63492d",
+      "creator": "Sarojini Naidu",
+      "creator_origin": "Indian",
+      "culture_type": "poetry",
+      "deck": "Alabaster, by Sarojini Naidu.",
+      "excerpt": "Like this alabaster box whose art\n  Is frail as a cassia-flower, is my heart,\n  Carven with delicate dreams and wrought\n  With many a subtle and exquisite thought.\n\n  Therein I treasure the spice and scent\n  Of rich and passionate memories blent\n  Like odours of cinnamon, sandal and clove,\n  Of song and sorrow and life and love.",
+      "headline": "Alabaster",
+      "key": "culture:a57f15772adc467d72ff5850",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "Like this alabaster box whose art",
+        "  Is frail as a cassia-flower, is my heart,",
+        "  Carven with delicate dreams and wrought",
+        "  With many a subtle and exquisite thought.",
+        "",
+        "  Therein I treasure the spice and scent",
+        "  Of rich and passionate memories blent",
+        "  Like odours of cinnamon, sandal and clove,",
+        "  Of song and sorrow and life and love."
+      ],
+      "provenance_id": "pg:680:poem:e0bca217ba72d343a9490ea34a11a15622eeb8b6102f2498d822fd455ae0648d",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1949. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "43b66624f43d0564b45974d76131a5058bd18909e6d49c12683dc8ec6216238d",
+      "source_locator": "ALABASTER",
+      "source_url": "https://www.gutenberg.org/ebooks/680",
+      "translator": "",
+      "work_date": "1905",
+      "date": "2026-11-15",
+      "selected_on": "2026-11-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a57f15772adc467d72ff5850",
+      "path": "culture/culture-a57f15772adc467d72ff5850/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Alabaster",
+          "url": "https://www.gutenberg.org/ebooks/680",
+          "date": "1905",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-15",
+      "summary_basis": "Selected 15 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Like this alabaster box whose art\n  Is frail as a cassia-flower, is my heart,\n  Carven with delicate dreams and wrought\n  With many a subtle and exquisite thought.\n\n  Therein I treasure the spice and scent\n  Of rich and passionate memories blent\n  Like odours of cinnamon, sandal and clove,\n  Of song and sorrow and life and love.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Anton%C3%ADn_Dvo%C5%99%C3%A1k_-_Concerto_for_Violoncello_and_Orchestra_in_B_minor%2C_op._104_-_1._Allegro_%28Pierre_Fournier%2C_George_Szell%2C_Berliner_Philharmoniker%2C_1962%29.flac",
+      "creator": "Antonín Dvořák",
+      "creator_origin": "Czech",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Antonín Dvořák. 14 minutes to listen.",
+      "duration_seconds": 890,
+      "headline": "Antonín Dvořák - Concerto for Violoncello and Orchestra in B minor, op. 104 - 1. Allegro (Pierre Fournier, George Szell, Berliner Philharmoniker, 1962)",
+      "key": "culture:a50b937751282cb635ebb9f4",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Anton%C3%ADn_Dvo%C5%99%C3%A1k_-_Concerto_for_Violoncello_and_Orchestra_in_B_minor%2C_op._104_-_1._Allegro_%28Pierre_Fournier%2C_George_Szell%2C_Berliner_Philharmoniker%2C_1962%29.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Anton%C3%ADn_Dvo%C5%99%C3%A1k",
+      "original_recording_title": "Antonín Dvořák - Concerto for Violoncello and Orchestra in B minor, op. 104 - 1. Allegro (Pierre Fournier, George Szell, Berliner Philharmoniker, 1962)",
+      "provenance_id": "commons:69642945",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Antonín Dvořák",
+      "recording_description": "Concerto for Violoncello and Orchestra in B minor, op. 104 - 1. Allegro (Pierre Fournier, George Szell, Berliner Philharmoniker, Germany)",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Antonín Dvořák",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Deutsche Grammophon",
+        "url": "https://commons.wikimedia.org/wiki/File:Anton%C3%ADn_Dvo%C5%99%C3%A1k_-_Concerto_for_Violoncello_and_Orchestra_in_B_minor,_op._104_-_1._Allegro_(Pierre_Fournier,_George_Szell,_Berliner_Philharmoniker,_1962).flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anton%C3%ADn_Dvo%C5%99%C3%A1k_-_Concerto_for_Violoncello_and_Orchestra_in_B_minor,_op._104_-_1._Allegro_(Pierre_Fournier,_George_Szell,_Berliner_Philharmoniker,_1962).flac",
+      "work_date": "1962",
+      "date": "2026-11-15",
+      "selected_on": "2026-11-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a50b937751282cb635ebb9f4",
+      "path": "culture/culture-a50b937751282cb635ebb9f4/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Antonín Dvořák - Concerto for Violoncello and Orchestra in B minor, op. 104 - 1. Allegro (Pierre Fournier, George Szell, Berliner Philharmoniker, 1962)",
+          "url": "https://commons.wikimedia.org/wiki/File:Anton%C3%ADn_Dvo%C5%99%C3%A1k_-_Concerto_for_Violoncello_and_Orchestra_in_B_minor,_op._104_-_1._Allegro_(Pierre_Fournier,_George_Szell,_Berliner_Philharmoniker,_1962).flac",
+          "date": "1962",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-15",
+      "summary_basis": "Selected 15 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Enchiridion",
+      "content_fingerprint": "62344056121278a8e2edcc85023e9b495d0fd1daff5e0f852885c70aa0035afa",
+      "creator": "Epictetus",
+      "creator_origin": "Greek · Roman-era philosopher",
+      "culture_type": "text",
+      "deck": "A passage from The Enchiridion. Translated by Thomas Wentworth Higginson.",
+      "excerpt": "As in walking you take care not to tread upon a nail, or turn your foot, so likewise take care not to hurt the ruling faculty of your mind. And if we were to guard against this in every action, we should enter upon action more safely.",
+      "headline": "The Enchiridion · a short reading",
+      "key": "culture:91fcadf2a49922d87421fcc6",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:45109:passage:62344056121278a8e2edcc85023e9b495d0fd1daff5e0f852885c70aa0035afa",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 135. Translator: Thomas Wentworth Higginson, died 1911. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/45109"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "881297baad06ca8a5bbcdf58e2012b7af544e5ba1bccf16a81ad34ab51f4e0b8",
+      "source_locator": "THE ENCHIRIDION; paragraph 93 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/45109",
+      "translator": "Thomas Wentworth Higginson",
+      "work_date": "1865 translation",
+      "date": "2026-11-15",
+      "selected_on": "2026-11-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-91fcadf2a49922d87421fcc6",
+      "path": "culture/culture-91fcadf2a49922d87421fcc6/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Enchiridion · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/45109",
+          "date": "1865 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-15",
+      "summary_basis": "Selected 15 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "As in walking you take care not to tread upon a nail, or turn your foot, so likewise take care not to hurt the ruling faculty of your mind. And if we were to guard against this in every action, we should enter upon action more safely.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "0553ee54d6dd2e062c3151c5523ac172c26ea3d8bac012c0582e86b030ea7c68",
+      "creator": "Michel de Montaigne",
+      "creator_origin": "French",
+      "culture_type": "quote",
+      "deck": "From Essays. Translation by Charles Cotton.",
+      "excerpt": "Pride dwells in the thought; the tongue can have but a very little share in it.",
+      "headline": "Pride dwells in the thought; the tongue can have but a very little share in it.",
+      "key": "culture:282dd9f78fb2e205501d2ce3",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:3600:quote:0553ee54d6dd2e062c3151c5523ac172c26ea3d8bac012c0582e86b030ea7c68",
+      "publisher": "Project Gutenberg",
+      "quote_context": "I am of opinion that a man must be very cautious how he values himself, and equally conscientious to give a true report, be it better or worse, impartially. If I thought myself perfectly good and wise, I would rattle it out to some purpose. To speak less of one’s self than what one really is is folly, not modesty; and to take that for current pay which is under a man’s value is pusillanimity and cowardice, according to, Aristotle. No virtue assists itself with falsehood; truth is never matter of error. To speak more of one’s self than is really true is not always mere presumption; ‘tis, moreover, very often folly; to, be immeasurably pleased with what one is, and to fall into an indiscreet self-love, is in my opinion the substance of this vice. The most sovereign remedy to cure it, is to do quite contrary to what these people direct who, in forbidding men to speak of themselves, consequently, at the same time, interdict thinking of themselves too. Pride dwells in the thought; the tongue can have but a very little share in it.",
+      "rights": {
+        "basis": "Author died 1592. Translator: Charles Cotton, died 1687. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/3600"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "3bf0e2438123e1e2750d35ef37d3a13211bfd4e434315b1c78afc8cbd3d75931",
+      "source_locator": "CHAPTER I; paragraph 1847 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/3600",
+      "translator": "Charles Cotton",
+      "work_date": "1685–1686 translation",
+      "date": "2026-11-15",
+      "selected_on": "2026-11-15",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-282dd9f78fb2e205501d2ce3",
+      "path": "culture/culture-282dd9f78fb2e205501d2ce3/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Pride dwells in the thought; the tongue can have but a very little share in it.",
+          "url": "https://www.gutenberg.org/ebooks/3600",
+          "date": "1685–1686 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-15",
+      "summary_basis": "Selected 15 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Pride dwells in the thought; the tongue can have but a very little share in it.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "I am of opinion that a man must be very cautious how he values himself, and equally conscientious to give a true report, be it better or worse, impartially. If I thought myself perfectly good and wise, I would rattle it out to some purpose. To speak less of one’s self than what one really is is folly, not modesty; and to take that for current pay which is under a man’s value is pusillanimity and cowardice, according to, Aristotle. No virtue assists itself with falsehood; truth is never matter of error. To speak more of one’s self than is really true is not always mere presumption; ‘tis, moreover, very often folly; to, be immeasurably pleased with what one is, and to fall into an indiscreet self-love, is in my opinion the substance of this vice. The most sovereign remedy to cure it, is to do quite contrary to what these people direct who, in forbidding men to speak of themselves, consequently, at the same time, interdict thinking of themselves too. Pride dwells in the thought; the tongue can have but a very little share in it.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "The Lovers",
+      "art_type": "Print",
+      "balance_origin": "Germany",
+      "creator": "Wenzel von Olmütz (Bohemian) · after Hausbuch Master (German, active 1470–1500)",
+      "creator_origin": "Germany",
+      "culture_type": "illustration",
+      "deck": "The Lovers. engraving.",
+      "headline": "The Lovers",
+      "image_path": "assets/culture/0572d044d8e9edb64e9fb034.jpg",
+      "key": "culture:0572d044d8e9edb64e9fb034",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2010.262/2010.262_web.jpg",
+      "medium": "engraving",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2010.262",
+      "provenance_id": "cma:168515",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2010.262",
+      "work_date": "c. 1490",
+      "date": "2026-11-15",
+      "selected_on": "2026-11-15",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-0572d044d8e9edb64e9fb034",
+      "path": "culture/culture-0572d044d8e9edb64e9fb034/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "The Lovers",
+          "url": "https://clevelandart.org/art/2010.262",
+          "date": "c. 1490",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "15 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-15",
+      "summary_basis": "Selected 15 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Portrait of Juan Maria Osorio",
       "art_type": "Painting",
       "balance_origin": "Spain",
@@ -13266,7 +13627,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-14T21:42:14.254541+00:00",
+      "affiliation_checked_at": "2026-11-15T01:21:43.345583+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
