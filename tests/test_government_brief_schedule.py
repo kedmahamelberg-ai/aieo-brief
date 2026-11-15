@@ -1,5 +1,9 @@
 import unittest
 import sys
+import json
+import os
+import subprocess
+import tempfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from datetime import datetime
@@ -43,3 +47,18 @@ class GovernmentBriefScheduleTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             is_due({"policy": "government-ai-brief-v4", "last_checked_at": "2026-11-14T17:30:00"},
                    datetime.fromisoformat("2026-11-14T18:20:00+00:00"))
+
+    def test_manual_force_refresh_bypasses_saved_date_gate(self):
+        with tempfile.TemporaryDirectory() as folder:
+            state = Path(folder) / 'state.json'
+            output = Path(folder) / 'github-output'
+            state.write_text(json.dumps({'policy': 'government-ai-brief-v4',
+                                         'last_checked_at': '2099-12-31T23:59:59Z'}))
+            env = {**os.environ, 'GITHUB_OUTPUT': str(output)}
+            command = [sys.executable, str(Path(__file__).resolve().parents[1] / 'scripts' /
+                                           'government_brief_schedule.py'), '--state', str(state)]
+            self.assertEqual(subprocess.run(command, env=env, capture_output=True).returncode, 0)
+            self.assertIn('due=false', output.read_text())
+            output.write_text('')
+            self.assertEqual(subprocess.run(command + ['--force'], env=env, capture_output=True).returncode, 0)
+            self.assertIn('due=true', output.read_text())
