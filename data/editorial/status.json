@@ -2,8 +2,8 @@
   "release_id": "2026-W45",
   "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
   "counts": {
-    "unchanged": 74,
-    "source_not_ready": 0,
+    "unchanged": 73,
+    "source_not_ready": 1,
     "source_date_mismatch": 0,
     "new_registry": 0,
     "needs_model": 0,
@@ -16,5 +16,5 @@
   },
   "failure_counts": {},
   "failed_items": [],
-  "updated_at": "2026-11-15T08:27:59.697514+00:00"
+  "updated_at": "2026-11-15T15:54:28.636256+00:00"
 }
