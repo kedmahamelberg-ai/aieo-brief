@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 19,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: selected reporting leaned toward rules and rights, with “Liberal Senator Andrew McLachlan says artists must not be sacrificed for…” as one visible signal.",
+            "sentence": "United Kingdom: selected reporting leaned toward rules and rights, with “The Conversation argues four AI stories can hide choices and make…” as one visible signal.",
             "story": {
-              "headline": "Liberal Senator Andrew McLachlan says artists must not be sacrificed for AI profits",
-              "path": "story/liberal-senator-andrew-mclachlan-artists-must-ai-profits/index.html",
-              "publisher": "The Guardian",
-              "source_url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan"
+              "headline": "The Conversation argues four AI stories can hide choices and make its future seem inevitable",
+              "path": "story/artificial-intelligence-desperately-seeking-narrative/index.html",
+              "publisher": "The Conversation",
+              "source_url": "https://theconversation.com/artificial-intelligence-is-desperately-seeking-its-narrative-296067"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 12,
             "topic": "Business And Investment",
-            "sentence": "France: the discovery stream centred most often on business and investment, including “Louis Perez: \"Military artificial intelligence irrigates the entire decision-making chain.”",
+            "sentence": "France: the discovery stream centred most often on business and investment, including “Lille’s Metropolitan Authority Announces an Artificial Intelligence Workshop, With No Outcomes….”",
             "story": {
-              "headline": "Louis Perez: \"Military artificial intelligence irrigates the entire decision-making chain",
-              "path": "story/louis-perez-military-artificial-intelligence-irrigates-decision-making-chain/index.html",
-              "publisher": "Institut des hautes études de défense nationale",
-              "source_url": "https://ihedn.fr/lundis-de-lihedn/louis-perez-lintelligence-artificielle-militaire-irrigue-toute-la-chaine-de-decision"
+              "headline": "Lille’s Metropolitan Authority Announces an Artificial Intelligence Workshop, With No Outcomes Reported",
+              "path": "story/cafe-ia-understanding-artificial-intelligence-daily-life/index.html",
+              "publisher": "Métropole Européenne de Lille (MEL)",
+              "source_url": "https://www.lillemetropole.fr/evenements/cafe-ia-comprendre-lintelligence-artificielle-au-quotidien-1386712"
             }
           },
           {
@@ -81,12 +81,12 @@
             "name": "Canada",
             "count": 22,
             "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Women entrepreneurs are already using Generative AI, will they share in….”",
+            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “The Conversation argues four AI stories can hide choices and make….”",
             "story": {
-              "headline": "Women entrepreneurs are already using Generative AI, will they share in its gains?",
-              "path": "story/women-entrepreneurs-already-using-generative-ai-share-gains/index.html",
-              "publisher": "International Labour Organization",
-              "source_url": "https://www.ilo.org/fr/resource/article/les-entrepreneuses-utilisent-deja-lia-generative-mais-beneficieront-elles"
+              "headline": "The Conversation argues four AI stories can hide choices and make its future seem inevitable",
+              "path": "story/artificial-intelligence-desperately-seeking-narrative/index.html",
+              "publisher": "The Conversation",
+              "source_url": "https://theconversation.com/artificial-intelligence-is-desperately-seeking-its-narrative-296067"
             }
           }
         ],
@@ -124,7 +124,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "c9e8ec019ddc7464c1d4111c62cff2723c34981821f8ecaab79814542b8ccbd2"
+      "content_sha256": "b32b066a6054b4666391957ac87e0501d6742048d61f9dc9817b870a77dbe0a4"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
