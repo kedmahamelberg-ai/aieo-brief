@@ -41,7 +41,7 @@ function overview(rows, search = '?view=day', now = '2026-11-16T12:00:00Z') {
   feed.replaceChildren = fragment => {feed.children = fragment.children;};
   const country = makeNode(); country.value='all';
   country.options = ['all',...new Set(rows.map(row=>row.country))].map(value=>({value}));
-  const buttons = ['day','country','archive'].map(view=>({...makeNode(),dataset:{governmentView:view}}));
+  const buttons = ['day','older'].map(view=>({...makeNode(),dataset:{governmentView:view}}));
   const status = makeNode(), controls = makeNode(), countryControl = makeNode();
   const document = {
     getElementById: id => ({'government-feed':feed,'government-country':country,'government-status':status})[id],
@@ -60,7 +60,7 @@ function overview(rows, search = '?view=day', now = '2026-11-16T12:00:00Z') {
   });
   return {cards,feed,country,buttons,status,visible:()=>cards.filter(card=>!card.hidden)};
 }
-test('Monday imports keep the preceding six days visible and every original card in the archive', () => {
+test('Monday imports keep the preceding six days visible and every older card accessible', () => {
   const rows = [
     {key:'september',date:'2026-09-30',country:'ES',countryName:'Spain'},
     {key:'outside',date:'2026-11-09',country:'GB',countryName:'United Kingdom'},
@@ -73,27 +73,28 @@ test('Monday imports keep the preceding six days visible and every original card
   assert.deepEqual(page.visible().map(card=>card.dataset.key),rows.slice(2).map(row=>row.key));
   assert.deepEqual(page.feed.children.filter(group=>!group.hidden).map(group=>group.children[0].textContent),['2026-11-16','2026-11-15','2026-11-10']);
   assert.match(page.status.textContent,/4 Monitor AI narratives · last 7 days/);
-  page.buttons[2].events.click();
-  assert.deepEqual(page.visible(),page.cards);
-  assert.match(page.status.textContent,/6 Monitor AI narratives · all published dates/);
+  page.buttons[1].events.click();
+  assert.deepEqual(page.visible(),page.cards.slice(0,2));
+  assert.match(page.status.textContent,/2 Monitor AI narratives · older announcements/);
   const displayed = page.feed.children.flatMap(group=>group.children.slice(1));
   assert.equal(new Set(displayed).size,6);
   assert.ok(page.cards.every(card=>displayed.includes(card)));
-  assert.equal(overview(rows,'?view=archive').visible().length,6);
+  assert.equal(overview(rows,'?view=older').visible().length,2);
 });
-test('Country filtering retains old identities and returning to seven days restores the date filter', () => {
+test('Switching date filters keeps every article identity and restores the latest seven days', () => {
   const page = overview([
     {key:'old-malta',date:'2026-10-01',country:'MT',countryName:'Malta'},
     {key:'new-malta',date:'2026-11-16',country:'MT',countryName:'Malta'},
     {key:'slovakia',date:'2026-11-16',country:'SK',countryName:'Slovakia'},
   ]);
   const original = [...page.cards];
-  page.buttons[1].events.click(); page.country.value='MT'; page.country.events.change();
-  assert.deepEqual(page.visible(),original.slice(0,2));
+  page.buttons[1].events.click();
+  assert.deepEqual(page.visible(),original.slice(0,1));
   page.buttons[0].events.click();
   assert.deepEqual(page.visible(),original.slice(1));
-  page.buttons[2].events.click();
-  assert.deepEqual(page.visible(),original);
+  const displayed = page.feed.children.flatMap(group=>group.children.slice(1));
+  assert.equal(new Set(displayed).size,original.length);
+  assert.ok(original.every(card=>displayed.includes(card)));
 });
 test('The seven-day boundary follows Amsterdam midnight across daylight saving and month changes', () => {
   for (const [now,first,today] of [
@@ -111,7 +112,7 @@ test('The seven-day boundary follows Amsterdam midnight across daylight saving a
 test('Quiet periods keep older announcements available with an explicit archive prompt', () => {
   const page = overview([{key:'old',date:'2026-11-01',country:'MT',countryName:'Malta'}]);
   assert.equal(page.visible().length,0);
-  assert.match(page.status.textContent,/Select All dates/);
-  page.buttons[2].events.click();
+  assert.match(page.status.textContent,/Select Older/);
+  page.buttons[1].events.click();
   assert.deepEqual(page.visible(),page.cards);
 });
