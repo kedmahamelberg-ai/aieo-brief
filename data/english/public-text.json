@@ -7093,6 +7093,82 @@
       },
       "output_sha256": "5ab12758e8502ba7fd7b3a097e372406263dd3a64353881969269a0c07ac4119",
       "policy": "brief-english-display-v1"
+    },
+    "35ac68d4f8079dc0fa8cfc2f0f45fd7dc89bd8179bd53525c507eba1b0c571ae": {
+      "english": {
+        "0": "China Economic Net",
+        "1": "China Economic Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "deb121b6d81652715b062bf3875118e5336060744d9b2cd9add6651827f9a3f6",
+      "policy": "brief-english-display-v1"
+    },
+    "f718f2e1bac519fa9a8cf8f2131b0353811deb4f3da22182a900d660a6f74d70": {
+      "english": {
+        "0": "Shanghai Observer News",
+        "1": "Shanghai housing and urban-rural development sector releases its first 'AI+' three-year action plan",
+        "2": "Shanghai Observer News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bc336344f1c281e4d905a92d966d4a778b3a9e86268ff8a1ae50fd04c938c69e",
+      "policy": "brief-english-display-v1"
+    },
+    "7b94a12a5e26bcea2e3e5ba23ebaf85564bbadeea8f9299aa9a8d042f0148dd9": {
+      "english": {
+        "0": "The Hong Kong and Macao Affairs Office of the State Council",
+        "1": "The Hong Kong and Macao Affairs Office of the State Council"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6951de1e651a34492de6d39f35f58773cb72fbca01be22fa9d2190c2aee14f0d",
+      "policy": "brief-english-display-v1"
+    },
+    "f43f855d6e22e25da50d9fe5e05e00d4d6405020e4ec2834643f362c96e90b9d": {
+      "english": {
+        "0": "An exhibition at BU Education in Besançon explores the history, workings and uses of artificial intelligence. It runs from 9 November to 9 December and is organised by Université Marie et Louis Pasteur."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "887020a8dbbe73cace466c28a3865f78f3156acc32b5e9f4b1152faa22eca5c4",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
