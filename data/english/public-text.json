@@ -6977,6 +6977,44 @@
       },
       "output_sha256": "dcaf290b3e56de20c862b3740b94a89353ccec0e8e47ee7c2830721e7425e030",
       "policy": "brief-english-display-v1"
+    },
+    "070319dd020f9e7e060d1c7acaea33e9f782621c069bf59c3e1dc8e74cd168ce": {
+      "english": {
+        "0": "Fudan Development Research Institute",
+        "1": "Fudan Development Research Institute"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4cf7860493d5d085873228dd65ba2f8b22ce4f5d2c44c2a841db8306382ea3cc",
+      "policy": "brief-english-display-v1"
+    },
+    "fab7079c51452e8a84dd5ff97f9221b3685bd3d510f7c878c652b985aa6aeaa1": {
+      "english": {
+        "0": "Canadian media can sue OpenAI in Ontario",
+        "1": "Canadian media can sue OpenAI in Ontario"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "cbc4538aea521655fbe09f40e3a0634dbb02fed914240f55d93b90e5913b0155",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {

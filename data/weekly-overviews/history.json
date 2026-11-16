@@ -29,12 +29,12 @@
             "name": "China",
             "count": 15,
             "topic": "Culture And Creativity",
-            "sentence": "China: the discovery stream centred most often on culture and creativity, including “AI Black Light Laboratory: beyond “no humans doing experiments”.”",
+            "sentence": "China: the discovery stream centred most often on culture and creativity, including “Fudan scholar says China’s AI rule-making could widen cooperation, but shared….”",
             "story": {
-              "headline": "AI Black Light Laboratory: beyond “no humans doing experiments”",
-              "path": "story/ai-black-light-laboratory-beyond-no-doing-experiments/index.html",
-              "publisher": "Nanjing University of Information Science and Technology",
-              "source_url": "https://news.nuist.edu.cn/info/1007/131945.htm"
+              "headline": "Fudan scholar says China’s AI rule-making could widen cooperation, but shared benefits remain an argument",
+              "path": "story/xinhua-digest-fully-reprinted-professor-chen-ai-governance/index.html",
+              "publisher": "Fudan Development Research Institute",
+              "source_url": "https://fddi.fudan.edu.cn/33/a6/c18965a799654/page.htm"
             }
           },
           {
@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 18,
             "topic": "Work And Skills",
-            "sentence": "United States: selected reporting leaned toward work and skills, with “From fossils to artificial intelligence: Adam Stewart’s winding path through science” as one visible signal.",
+            "sentence": "United States: selected reporting leaned toward work and skills, with “Rabbi Max Hollander argues Jewish AI discussions should focus more on…” as one visible signal.",
             "story": {
-              "headline": "From fossils to artificial intelligence: Adam Stewart’s winding path through science",
-              "path": "story/fossils-artificial-intelligence-adam-stewarts-winding-through-science/index.html",
-              "publisher": "Cornell David A. Duffield College of Engineering",
-              "source_url": "https://www.duffield.cornell.edu/from-fossils-to-artificial-intelligence-adam-stewarts-winding-path-through-science"
+              "headline": "Rabbi Max Hollander argues Jewish AI discussions should focus more on safety and regulation",
+              "path": "story/jews-having-wrong-conversation-about-artificial-intelligence/index.html",
+              "publisher": "eJewishPhilanthropy",
+              "source_url": "https://ejewishphilanthropy.com/jews-are-having-the-wrong-conversation-about-artificial-intelligence"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 19,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: selected reporting leaned toward rules and rights, with “The Conversation argues four AI stories can hide choices and make…” as one visible signal.",
+            "sentence": "United Kingdom: selected reporting leaned toward rules and rights, with “Rabbi Max Hollander argues Jewish AI discussions should focus more on…” as one visible signal.",
             "story": {
-              "headline": "The Conversation argues four AI stories can hide choices and make its future seem inevitable",
-              "path": "story/artificial-intelligence-desperately-seeking-narrative/index.html",
-              "publisher": "The Conversation",
-              "source_url": "https://theconversation.com/artificial-intelligence-is-desperately-seeking-its-narrative-296067"
+              "headline": "Rabbi Max Hollander argues Jewish AI discussions should focus more on safety and regulation",
+              "path": "story/jews-having-wrong-conversation-about-artificial-intelligence/index.html",
+              "publisher": "eJewishPhilanthropy",
+              "source_url": "https://ejewishphilanthropy.com/jews-are-having-the-wrong-conversation-about-artificial-intelligence"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 12,
             "topic": "Business And Investment",
-            "sentence": "France: the discovery stream centred most often on business and investment, including “Lille’s Metropolitan Authority Announces an Artificial Intelligence Workshop, With No Outcomes….”",
+            "sentence": "France: the discovery stream centred most often on business and investment, including “France plans Rennes center to coordinate military uses of artificial intelligence.”",
             "story": {
-              "headline": "Lille’s Metropolitan Authority Announces an Artificial Intelligence Workshop, With No Outcomes Reported",
-              "path": "story/cafe-ia-understanding-artificial-intelligence-daily-life/index.html",
-              "publisher": "Métropole Européenne de Lille (MEL)",
-              "source_url": "https://www.lillemetropole.fr/evenements/cafe-ia-comprendre-lintelligence-artificielle-au-quotidien-1386712"
+              "headline": "France plans Rennes center to coordinate military uses of artificial intelligence",
+              "path": "story/international-excellence-center-rennes-dedicated-artificial-defense-established/index.html",
+              "publisher": "Siècle Digital",
+              "source_url": "https://siecledigital.fr/2026/11/13/un-centre-international-consacre-a-lintelligence-artificielle-de-defense-va-ouvrir-en-france"
             }
           },
           {
@@ -81,12 +81,12 @@
             "name": "Canada",
             "count": 22,
             "topic": "Rules And Rights",
-            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “The Conversation argues four AI stories can hide choices and make….”",
+            "sentence": "Canada: the discovery stream centred most often on rules and rights, including “Atalayar traces how spies used personal ties, while noting key claims….”",
             "story": {
-              "headline": "The Conversation argues four AI stories can hide choices and make its future seem inevitable",
-              "path": "story/artificial-intelligence-desperately-seeking-narrative/index.html",
-              "publisher": "The Conversation",
-              "source_url": "https://theconversation.com/artificial-intelligence-is-desperately-seeking-its-narrative-296067"
+              "headline": "Atalayar traces how spies used personal ties, while noting key claims remain unproven",
+              "path": "story/spies-who-women-mata-hari-artificial-intelligence/index.html",
+              "publisher": "Atalayar",
+              "source_url": "https://www.atalayar.com/fr/reportages/femmes-espionnes-mata-hari-l-intelligence-artificielle/20261115192430230472.html"
             }
           }
         ],
@@ -95,7 +95,9 @@
         "status": "pending",
         "prose": [],
         "papers": [],
-        "pending_reason": "sources_incomplete"
+        "pending_reason": "generation_pending",
+        "input_hash": "703ea4b0088d3daa7cc36168982e996c818f9d96a90b7e08e6e4ca09e6176a14",
+        "attempts": 0
       },
       "research": {
         "kind": "research",
@@ -124,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "b32b066a6054b4666391957ac87e0501d6742048d61f9dc9817b870a77dbe0a4"
+      "content_sha256": "cb132ab61b50a6eea6f5d61a1ac688cf7540fde55e247e538078ed3e0b405431"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
