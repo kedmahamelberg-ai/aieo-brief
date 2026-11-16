@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 SELECTORS = {
     'www.ecnu.edu.cn': '.v_news_content',
     'finance.eastmoney.com': '#ContentBody',
+    'm.sohu.com': '.article-content',
 }
 
 
@@ -25,7 +26,7 @@ def verified_text(supplement, get=requests.get):
         article = soup.select_one(SELECTORS[host])
         if article is None:
             return ''
-        for node in article.select('style,script,nav,aside'):
+        for node in article.select('style,script,nav,aside,.surplus-btn'):
             node.decompose()
         text = '\n'.join(' '.join(line.split()) for line in article.get_text('\n').splitlines() if line.strip())
         if hashlib.sha256(text.encode()).hexdigest() != supplement.get('evidence_sha256'):
