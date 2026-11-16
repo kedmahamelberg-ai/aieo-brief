@@ -35,7 +35,7 @@ npm run test:database
 
 `Governments say` imports the Monitor's existing government feed. It does not
 collect government archives or make a second AI relevance decision. The importer
-is due daily at 17:05 Europe/Amsterdam; hourly GitHub Actions wake-ups and a
+is due daily at 16:05 Europe/Amsterdam; explicit summer/winter triggers, hourly retry wake-ups and a
 saved-date gate track daylight saving, catch delayed triggers, and prevent duplicate
 daily imports. It publishes records with the Monitor's exact
 `artificial_intelligence` topic label, completed English translation, and a
