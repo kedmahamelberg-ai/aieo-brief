@@ -5,8 +5,8 @@
   "providers": [
     {
       "source": "arxiv",
-      "status": "unavailable",
-      "error_type": "ReadTimeout"
+      "status": "ok",
+      "count": 6
     },
     {
       "source": "pnas",
@@ -21,10 +21,40 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:0be73fb3448eb344ca662eeb",
-      "status": "cached",
+      "key": "paper:8635558274a5ad6fdbb2190b",
+      "status": "arxiv_authors",
       "source_verified": true,
       "institutions": 2
+    },
+    {
+      "key": "paper:8162908a57f2d8634e1a2e9a",
+      "status": "unavailable",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:dfa83956de260fdbb1461d8c",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 5
+    },
+    {
+      "key": "paper:6a3c343c795d8b3056f04256",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 1
+    },
+    {
+      "key": "paper:29f3a0ced2bcb71a33818a12",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 1
+    },
+    {
+      "key": "paper:69ca59f40cdb74c438f94717",
+      "status": "matched",
+      "source_verified": true,
+      "institutions": 1
     },
     {
       "key": "paper:d5c89b3070353457efa8c3a8",
@@ -70,7 +100,7 @@
     }
   ],
   "recovery": {
-    "recovered": 8,
+    "recovered": 7,
     "unavailable": 0
   }
 }

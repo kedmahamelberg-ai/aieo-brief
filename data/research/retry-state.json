@@ -1,26 +1,31 @@
 {
   "paper:3ffa2d84b6e20da2db465da1": {
-    "attempts": 23,
-    "last_attempt": "2026-11-16T12:50:24.462510+00:00"
+    "attempts": 24,
+    "last_attempt": "2026-11-16T22:17:00.156477+00:00"
   },
   "paper:beaf7b4a534a2a4135c21b97": {
-    "attempts": 26,
-    "last_attempt": "2026-11-16T12:50:29.921303+00:00"
+    "attempts": 27,
+    "last_attempt": "2026-11-16T22:17:01.736426+00:00"
   },
   "paper:be49d96abd2a3f5b615d1f08": {
     "attempts": 2,
     "last_attempt": "2026-11-03T19:50:31.264602+00:00"
   },
   "paper:7cba509615081b2bc0d1faf2": {
-    "attempts": 14,
-    "last_attempt": "2026-11-16T12:50:17.882985+00:00"
+    "attempts": 15,
+    "last_attempt": "2026-11-16T22:04:30.639767+00:00"
   },
   "paper:7de8e086b715a97caa852c62": {
-    "attempts": 14,
-    "last_attempt": "2026-11-16T12:50:23.144563+00:00"
+    "attempts": 15,
+    "last_attempt": "2026-11-16T22:04:31.214044+00:00"
   },
   "paper:565eb5d350d80d2a2f647f6b": {
-    "attempts": 14,
-    "last_attempt": "2026-11-16T12:50:23.803100+00:00"
+    "attempts": 15,
+    "last_attempt": "2026-11-16T22:16:59.252474+00:00"
+  },
+  "paper:29f3a0ced2bcb71a33818a12": {
+    "attempts": 1,
+    "last_attempt": "2026-11-16T22:04:31.696766+00:00",
+    "rejected_fingerprint": "09bf063fa5c0061c621f490caf99b80daa0dbe573f8390d6b04d89fcb291c6d1"
   }
 }
