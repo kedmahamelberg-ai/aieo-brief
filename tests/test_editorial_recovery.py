@@ -205,10 +205,11 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(model.call_args.kwargs['stage'], 'scope_review')
         bad = copy.deepcopy(draft)
         bad['what_happened'] = 'The study included 999 people.'
-        with patch.object(engine, 'call_json', side_effect=[draft, accepted_review()]) as model:
-            result, proof = engine.write_story({'draft_seed': bad}, {}, sources, kind='preprint')
-        self.assertEqual(result['what_happened'], draft['what_happened'])
-        self.assertEqual(proof['draft_origin'], 'model')
+        with patch.object(engine, 'call_json') as model:
+            with self.assertRaises(engine.EditorialError) as caught:
+                engine.write_story({'draft_seed': bad}, {}, sources, kind='preprint')
+        self.assertEqual(caught.exception.code, 'unsupported_number')
+        model.assert_not_called()
 
     def test_news_removes_only_named_unsupported_paragraph_then_rechecks_all_fields(self):
         draft, sources = fixture()
