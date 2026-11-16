@@ -6883,6 +6883,62 @@
       },
       "output_sha256": "6b0182361dd3a7ace10517688b51de4ffc655aacec6a2676288eeeab0434e484",
       "policy": "brief-english-display-v1"
+    },
+    "30d6ffecedccd6423da779ae8d98df3fd9591a3b9fd477f364e4a23fd6792d98": {
+      "english": {
+        "0": "Reporting from the State Council Hong Kong and Macao Affairs Office. Open the source for the article.",
+        "1": "State Council Hong Kong and Macao Affairs Office",
+        "2": "State Council Hong Kong and Macao Affairs Office"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e62576df540603156d4e4d02545670d585f48f6651748e23f0b50cafed1c434f",
+      "policy": "brief-english-display-v1"
+    },
+    "3db7d81ca8ab56175966e99ff306459c8694968eb5998b7dc7b1a8a10455f7d8": {
+      "english": {
+        "0": "Reporting from Sortir in Besançon. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c39e53bfb4dcce85f460983982ca8cfba43fec15a51f059ccf2dc7f7da535ca3",
+      "policy": "brief-english-display-v1"
+    },
+    "00ed9d6ed2a7d671501092277a28ef048fed41afba0e6e060509eb458f6b4d4b": {
+      "english": {
+        "0": "Reporting from the Institute for Higher Defense Studies. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e723a4705212f8cb5f185a1af638f1ed95d868cd71b51ee66ea40f0a94c970d7",
+      "policy": "brief-english-display-v1"
     }
   }
 }

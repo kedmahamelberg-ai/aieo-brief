@@ -7940,8 +7940,8 @@
       "key": "event:1342ae54-2767-4826-9ca0-eda00fc863e1",
       "event_id": "1342ae54-2767-4826-9ca0-eda00fc863e1",
       "kind": "news",
-      "slug": "development-1342ae54-2767-4826-9ca0-eda00fc863e1",
-      "path": "story/development-1342ae54-2767-4826-9ca0-eda00fc863e1/index.html",
+      "slug": "tsinghua-road-hong-kong-international-computer-three-areas",
+      "path": "story/tsinghua-road-hong-kong-international-computer-three-areas/index.html",
       "headline": "Tsinghua Road / Hong Kong International Computer Conference Opens. Sun Dong: Artificial intelligence reshapes various industries. In the next five years, AI+ will create competitive advantages in three areas.",
       "original_headline": "Tsinghua Road / Hong Kong International Computer Conference Opens. Sun Dong: Artificial intelligence reshapes various industries. In the next five years, AI+ will create competitive advantages in three areas.",
       "deck": "Reporting from 国务院港澳事务办公室. Open the source for the article.",
@@ -7983,7 +7983,11 @@
       "access_recovery_validated": false,
       "edition": "2026-W46",
       "period_start": "2026-11-09",
-      "period_end": "2026-11-15"
+      "period_end": "2026-11-15",
+      "legacy_paths": [
+        "story/development-1342ae54-2767-4826-9ca0-eda00fc863e1/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:0c87435f-3cb8-4ae4-9b12-1fedf35e649e",
@@ -9611,8 +9615,8 @@
       "key": "event:76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
       "event_id": "76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
       "kind": "news",
-      "slug": "development-76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
-      "path": "story/development-76b0b3fe-5908-4c17-b875-e6e27d5b23a8/index.html",
+      "slug": "artificial-intelligence-issues",
+      "path": "story/artificial-intelligence-issues/index.html",
       "headline": "Artificial Intelligence – The Issues",
       "original_headline": "Artificial Intelligence – The Issues",
       "deck": "Reporting from Sortir à Besançon. Open the source for the article.",
@@ -9654,7 +9658,11 @@
       "access_recovery_validated": false,
       "edition": "2026-W46",
       "period_start": "2026-11-09",
-      "period_end": "2026-11-15"
+      "period_end": "2026-11-15",
+      "legacy_paths": [
+        "story/development-76b0b3fe-5908-4c17-b875-e6e27d5b23a8/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:6b8118f7-08c9-450a-a3a1-195778222239",
@@ -9721,8 +9729,8 @@
       "key": "event:0747d38f-7bb0-4c09-95e5-58d71445a866",
       "event_id": "0747d38f-7bb0-4c09-95e5-58d71445a866",
       "kind": "news",
-      "slug": "development-0747d38f-7bb0-4c09-95e5-58d71445a866",
-      "path": "story/development-0747d38f-7bb0-4c09-95e5-58d71445a866/index.html",
+      "slug": "louis-perez-military-artificial-intelligence-irrigates-decision-making-chain",
+      "path": "story/louis-perez-military-artificial-intelligence-irrigates-decision-making-chain/index.html",
       "headline": "Louis Perez: \"Military artificial intelligence irrigates the entire decision-making chain",
       "original_headline": "Louis Perez: \"Military artificial intelligence irrigates the entire decision-making chain",
       "deck": "Reporting from Institut des hautes études de défense nationale. Open the source for the article.",
@@ -9764,7 +9772,11 @@
       "access_recovery_validated": false,
       "edition": "2026-W46",
       "period_start": "2026-11-09",
-      "period_end": "2026-11-15"
+      "period_end": "2026-11-15",
+      "legacy_paths": [
+        "story/development-0747d38f-7bb0-4c09-95e5-58d71445a866/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "book_title": "Thus Spake Zarathustra",
@@ -17890,7 +17902,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-16T08:14:22.279130+00:00",
+      "affiliation_checked_at": "2026-11-16T08:35:03.864462+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

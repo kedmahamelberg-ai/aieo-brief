@@ -29,12 +29,12 @@
             "name": "China",
             "count": 15,
             "topic": "Culture And Creativity",
-            "sentence": "China: the discovery stream centred most often on culture and creativity, including “Five first prizes! Beijing participants achieved excellent results in the National….”",
+            "sentence": "China: the discovery stream centred most often on culture and creativity, including “Tsinghua Road / Hong Kong International Computer Conference Opens. Sun Dong….”",
             "story": {
-              "headline": "Five first prizes! Beijing participants achieved excellent results in the National Artificial Intelligence Application Technology Competition.",
-              "path": "story/five-first-prizes-beijing-participants-achieved-technology-competition/index.html",
-              "publisher": "Beijing Municipal People's Government Portal",
-              "source_url": "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202611/t20261110_4939920.html"
+              "headline": "Tsinghua Road / Hong Kong International Computer Conference Opens. Sun Dong: Artificial intelligence reshapes various industries. In the next five years, AI+ will create competitive advantages in three areas.",
+              "path": "story/tsinghua-road-hong-kong-international-computer-three-areas/index.html",
+              "publisher": "State Council Hong Kong and Macao Affairs Office",
+              "source_url": "https://www.hmo.gov.cn/2026/11/10/ARTIyTq6snbbbXlRCQsK3lTs261110.shtml"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 12,
             "topic": "Business And Investment",
-            "sentence": "France: the discovery stream centred most often on business and investment, including “Café IA: Understanding Artificial Intelligence in Daily Life.”",
+            "sentence": "France: the discovery stream centred most often on business and investment, including “Louis Perez: \"Military artificial intelligence irrigates the entire decision-making chain.”",
             "story": {
-              "headline": "Café IA: Understanding Artificial Intelligence in Daily Life",
-              "path": "story/cafe-ia-understanding-artificial-intelligence-daily-life/index.html",
-              "publisher": "Métropole Européenne de Lille (MEL)",
-              "source_url": "https://www.lillemetropole.fr/evenements/cafe-ia-comprendre-lintelligence-artificielle-au-quotidien-1386712"
+              "headline": "Louis Perez: \"Military artificial intelligence irrigates the entire decision-making chain",
+              "path": "story/louis-perez-military-artificial-intelligence-irrigates-decision-making-chain/index.html",
+              "publisher": "Institut des hautes études de défense nationale",
+              "source_url": "https://ihedn.fr/lundis-de-lihedn/louis-perez-lintelligence-artificielle-militaire-irrigue-toute-la-chaine-de-decision"
             }
           },
           {
@@ -124,7 +124,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "4788ed270973c0a28bb58778cd39e0e0b0e4a1aeef3e0174a4d08c85b6490e15"
+      "content_sha256": "58cd958a99bad4afb90d9f139829b31e5500b365f9564039f2c1dacfc34128e8"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
