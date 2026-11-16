@@ -2,6 +2,367 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Gathering of Otsu-e Subjects",
+      "art_type": "Painting",
+      "balance_origin": "Japan",
+      "creator": "Shibata Zeshin (Japanese, 1807–1891)",
+      "creator_origin": "Japan, Meiji period (1868–1912)",
+      "culture_type": "illustration",
+      "deck": "Gathering of Otsu-e Subjects. Eight-panel folding screen; ink and color on hemp.",
+      "headline": "Gathering of Otsu-e Subjects",
+      "image_path": "assets/culture/ffb41586b042236161057994.jpg",
+      "key": "culture:ffb41586b042236161057994",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1982.9/1982.9_web.jpg",
+      "medium": "Eight-panel folding screen; ink and color on hemp",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1982.9",
+      "provenance_id": "cma:151064",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1982.9",
+      "work_date": "late 1800s",
+      "date": "2026-11-16",
+      "selected_on": "2026-11-16",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-ffb41586b042236161057994",
+      "path": "culture/culture-ffb41586b042236161057994/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Gathering of Otsu-e Subjects",
+          "url": "https://clevelandart.org/art/1982.9",
+          "date": "late 1800s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-16",
+      "summary_basis": "Selected 16 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Essays",
+      "content_fingerprint": "c6d3d846af0d446ef5472c11e5d9259735c81976e225b98c6bf6e1c647c485cf",
+      "creator": "Michel de Montaigne",
+      "creator_origin": "French",
+      "culture_type": "text",
+      "deck": "A passage from Essays. Translated by Charles Cotton.",
+      "excerpt": "Let us attribute to them the least we can, we must, however, of necessity grant them this, that it is by their means and mediation that all our instruction is directed. Cicero says, that Chrysippus having attempted to extenuate the force and virtue of the senses, presented to himself arguments and so vehement oppositions to the contrary that he could not satisfy himself therein; whereupon Cameades, who maintained the contrary side, boasted that he would make use of the very words and arguments of Chrysippus to controvert and confute him, and therefore thus cried out against him: “O miserable! thy force has destroyed thee.” There can be nothing absurd to a greater degree than to maintain that fire does not warm, that light does not shine, and that there is no weight nor solidity in iron, which are things conveyed to us by the senses; neither is there belief nor knowledge in man that can be compared to that for certainty.",
+      "headline": "Essays · a short reading",
+      "key": "culture:d4737ef9235cb5bcd4d9aae9",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:3600:passage:c6d3d846af0d446ef5472c11e5d9259735c81976e225b98c6bf6e1c647c485cf",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1592. Translator: Charles Cotton, died 1687. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/3600"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "3bf0e2438123e1e2750d35ef37d3a13211bfd4e434315b1c78afc8cbd3d75931",
+      "source_locator": "CHAPTER I; paragraph 2633 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/3600",
+      "translator": "Charles Cotton",
+      "work_date": "1685–1686 translation",
+      "date": "2026-11-16",
+      "selected_on": "2026-11-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d4737ef9235cb5bcd4d9aae9",
+      "path": "culture/culture-d4737ef9235cb5bcd4d9aae9/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Essays · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/3600",
+          "date": "1685–1686 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-16",
+      "summary_basis": "Selected 16 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Let us attribute to them the least we can, we must, however, of necessity grant them this, that it is by their means and mediation that all our instruction is directed. Cicero says, that Chrysippus having attempted to extenuate the force and virtue of the senses, presented to himself arguments and so vehement oppositions to the contrary that he could not satisfy himself therein; whereupon Cameades, who maintained the contrary side, boasted that he would make use of the very words and arguments of Chrysippus to controvert and confute him, and therefore thus cried out against him: “O miserable! thy force has destroyed thee.” There can be nothing absurd to a greater degree than to maintain that fire does not warm, that light does not shine, and that there is no weight nor solidity in iron, which are things conveyed to us by the senses; neither is there belief nor knowledge in man that can be compared to that for certainty.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/b/be/Alexander_Borodin_-_In_The_Steppes_Of_Central_Asia.ogg",
+      "creator": "Alexander Borodin",
+      "creator_origin": "Russian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Alexander Borodin. 7 minutes to listen.",
+      "duration_seconds": 458,
+      "headline": "Alexander Borodin - In The Steppes Of Central Asia",
+      "key": "culture:ad384936c675dd10e8f0a232",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Alexander_Borodin_-_In_The_Steppes_Of_Central_Asia.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Alexander_Borodin",
+      "original_recording_title": "Alexander Borodin - In The Steppes Of Central Asia",
+      "provenance_id": "commons:22399206",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Musopen Symphony Orchestra",
+      "recording_description": "Borodin: In the Steppes of Central Asia (Russian: В средней Азии, V srednyeĭ Azii, literally \"In Central Asia\")",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Musopen Symphony Orchestra",
+        "label": "CC0 (source-declared)",
+        "source_credit": "This work comes from the non profit U.S. organization Musopen where it is available at the following link: https://musopen.org/music/681-in-the-steppes-of-central-asia/ The Musopen website requires all uploaders to \"represent and warrant that content uploaded to the site is in the public domain\" (see FAQ #4 ). Musopen's own works ( \"Musopen Materials\" and \"Musopen Service\", not user content or public domain content ), are fully copyrighted and may not be used freely as stated in their Terms and Conditions of Use . (OGG from https://archive.org/details/MusopenCollectionAsFlac )",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alexander_Borodin_-_In_The_Steppes_Of_Central_Asia.ogg",
+      "work_date": "Date not stated in source",
+      "date": "2026-11-16",
+      "selected_on": "2026-11-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ad384936c675dd10e8f0a232",
+      "path": "culture/culture-ad384936c675dd10e8f0a232/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Alexander Borodin - In The Steppes Of Central Asia",
+          "url": "https://commons.wikimedia.org/wiki/File:Alexander_Borodin_-_In_The_Steppes_Of_Central_Asia.ogg",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-16",
+      "summary_basis": "Selected 16 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "8e60e6d467a311be002cc4e374e8f7bbc5070e3e8230ce466c09433815e5e948",
+      "creator": "Emily Dickinson",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Emily Dickinson.",
+      "excerpt": "The inundation of the Spring\nEnlarges every soul --\nIt sweeps the tenement away\nBut leaves the Water whole --\n\nIn which the soul at first estranged --\nSeeks faintly for its shore\nBut acclimated -- pines no more\nFor that Peninsula --",
+      "headline": "The inundation of the Spring",
+      "key": "culture:a8e6031cd9cebe79f3f83beb",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "The inundation of the Spring",
+        "Enlarges every soul --",
+        "It sweeps the tenement away",
+        "But leaves the Water whole --",
+        "",
+        "In which the soul at first estranged --",
+        "Seeks faintly for its shore",
+        "But acclimated -- pines no more",
+        "For that Peninsula --"
+      ],
+      "provenance_id": "poetrydb:Emily Dickinson:The inundation of the Spring",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1886.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "b3f1fbcfa7001ee2a26605fba533ad7a7fb72973cd7bbeac124bbac0119511a8",
+      "source_locator": "The inundation of the Spring",
+      "source_url": "https://poetrydb.org/title/The%20inundation%20of%20the%20Spring:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1886",
+      "date": "2026-11-16",
+      "selected_on": "2026-11-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a8e6031cd9cebe79f3f83beb",
+      "path": "culture/culture-a8e6031cd9cebe79f3f83beb/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "The inundation of the Spring",
+          "url": "https://poetrydb.org/title/The%20inundation%20of%20the%20Spring:abs/lines.text",
+          "date": "Before 1886",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-16",
+      "summary_basis": "Selected 16 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The inundation of the Spring\nEnlarges every soul --\nIt sweeps the tenement away\nBut leaves the Water whole --\n\nIn which the soul at first estranged --\nSeeks faintly for its shore\nBut acclimated -- pines no more\nFor that Peninsula --",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "43548fe1cef74d4f81047932023747b1eb38994772f59a7c629996afaf8b54e7",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "New hopes are in their arms and legs, their hearts expand.",
+      "headline": "New hopes are in their arms and legs, their hearts expand.",
+      "key": "culture:0e61de88a3b407cf42884fb1",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:43548fe1cef74d4f81047932023747b1eb38994772f59a7c629996afaf8b54e7",
+      "publisher": "Project Gutenberg",
+      "quote_context": "New hopes are in their arms and legs, their hearts expand. They find new words, soon will their spirits breathe wantonness.",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 3642 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-11-16",
+      "selected_on": "2026-11-16",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-0e61de88a3b407cf42884fb1",
+      "path": "culture/culture-0e61de88a3b407cf42884fb1/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "New hopes are in their arms and legs, their hearts expand.",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "16 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-16",
+      "summary_basis": "Selected 16 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "New hopes are in their arms and legs, their hearts expand.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "New hopes are in their arms and legs, their hearts expand. They find new words, soon will their spirits breathe wantonness.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "8e663ee54a802031d11b291caffae8e3ba2a952621e685aa58eb32042e63492d",
       "creator": "Sarojini Naidu",
       "creator_origin": "Indian",
@@ -14011,7 +14372,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-15T21:18:08.298732+00:00",
+      "affiliation_checked_at": "2026-11-16T01:24:46.371372+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
