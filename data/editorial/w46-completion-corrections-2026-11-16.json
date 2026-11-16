@@ -1,0 +1,1777 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "authorization": "Owner requested complete W46 news and research and supplied the Besançon location correction on 16 November 2026. Owner additionally requested review of both impact boxes in every current-week news article.",
+  "review_method": "Agent reviewed source text, exact failed-review feedback, source hashes and live source metadata. Uses the established correction path; these are editorial corrections, not claims of a new model-verification result. Completed unrelated copy is preserved. Both boxes were reviewed for all 67 selected news items; neutral context is retained where a benefit or risk cannot be established. Specific public-chart and video-description reading limits remain explicit.",
+  "news": [
+    {
+      "key": "event:42d68c56-8c99-4616-98bd-c137c6554bb4",
+      "source_urls": [
+        "https://www.news.cn/fortune/20261112/3bcd0bc6933341d1915db878ad902845/c.html"
+      ],
+      "source_body_sha256": [
+        "a71af84c93f4ae2a6ec935594f86ce12f0b29994111581c912089fc5dd297e60"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The human box adds refund terms not stated in the source. The body also calls the offer’s price its cost, and “quotas” may be unclear to the intended reader.",
+      "after": {
+        "headline": "China’s shopping festival brings artificial intelligence subscriptions into livestream sales",
+        "deck": "Xinhua examines whether promotional purchases can turn into lasting demand for useful services.",
+        "what_happened": "Xinhua reports that artificial intelligence services were sold through online shopping platforms and livestreams during China’s Double Eleven festival. Demonstrations showed uses such as preparing documents, organizing schoolwork and analyzing business information.",
+        "why_it_matters": "The report asks whether buyers will keep paying after promotional offers end. It points to practical usefulness, clear prices and understandable purchase terms as tests for the market.",
+        "body_paragraphs": [
+          "The article explains tokens as units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
+          "It distinguishes very cheap promotional prices from the cost of providing computing services. Interviewees call for clearer information about usage allowances and purchase terms."
+        ],
+        "for_humans": "Shoppers can buy AI subscriptions through familiar retail channels, but need clear prices and purchase terms.",
+        "for_ai": "AI service providers are selling subscriptions and prepaid usage through online shopping platforms.",
+        "claim_status": "reporting",
+        "limitation": "The reported sales figures and customer experiences do not establish whether demand will persist after promotions.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:1e3660cd-11f9-4261-b5e8-fe929476364a",
+      "source_urls": [
+        "https://www.archimag.com/veille-documentation/2026/11/12/ia-generative-practicia-enquete-pratiques-professionnels-information"
+      ],
+      "source_body_sha256": [
+        "f92875c8d57344d123f7c2513116e7628685349a09d568a689e0aefd3142b3c1"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The body changes the named research labs into research teams and says employers where the source says organizations. Several organization acronyms are unexplained.",
+      "after": {
+        "headline": "PracticIA asks librarians and information professionals how they use artificial intelligence",
+        "deck": "An anonymous survey asks about everyday use and the support people receive at work.",
+        "what_happened": "The PracticIA research project has opened a questionnaire for librarians, archivists and other information professionals. It asks how they use content-generating artificial intelligence and how their organizations support that use.",
+        "why_it_matters": "The researchers want to understand working practices and people’s views of the technology. The announcement invites responses; it does not present survey findings.",
+        "body_paragraphs": [
+          "The project is led by research laboratories at Paris Nanterre and Lille universities. The questionnaire is anonymous and takes about 10 to 15 minutes."
+        ],
+        "for_humans": "Librarians and other information professionals are invited to describe their AI use and workplace support in an anonymous questionnaire.",
+        "for_ai": "The questionnaire asks how AI is used at work; findings about its effects have not yet been published.",
+        "claim_status": "reporting",
+        "limitation": "This is a survey invitation, with no results reported.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "none",
+        "human_label": "Context",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "none",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:504fe2f4-4dea-47cd-b779-bf7858e0acbb",
+      "source_urls": [
+        "https://www.news.cn/world/20261111/5b97b3a052984dd08f787aba69cc6d8d/c.html"
+      ],
+      "source_body_sha256": [
+        "336fe8796edfe43b7f6da4b6dd35f7d8c16c2729babcbce8036060afb3f6009c"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: Grounding review rejected: entities_and_roles_preserved; translated_identity_and_meaning_preserved; what_happened: The source names 银河通用 but does not establish “Galactic General” as its English name; it also describes the robot as exploring capabilities, not proven task performance.; why_it_matters: The source attributes the complementarity view to one Starship co-founder, not multiple interviewees.; body_paragraphs[0]: The source identifies one themed discussion, not multiple sessions; it discusses models and their costs and performance, not AI products generally.; The summary broadly reflect",
+      "after": {
+        "headline": "Chinese robot demonstrations bring physical uses of artificial intelligence to Lisbon summit",
+        "deck": "Xinhua’s conference report describes machines for shops and industry alongside discussion of AI businesses.",
+        "what_happened": "Xinhua reports that Chinese companies displayed robots and other technology at Lisbon’s Web Summit. One company showed a wheeled, two-armed robot intended for work in shops, pharmacies and industrial settings.",
+        "why_it_matters": "The report examines efforts to move artificial intelligence from screens into physical work. A co-founder of delivery-robot company Starship discusses how Chinese and European companies could complement one another.",
+        "body_paragraphs": [
+          "The wheeled robot combines visual information, language and movement to guide its actions. The report presents it as an exploration of practical work in real settings.",
+          "A discussion about downloadable AI models covered data management, computing costs and efficiency. The report also covered a flying-car display as a separate transport development."
+        ],
+        "for_humans": "Developers and smaller firms could gain more choices as companies offer models with different costs and capabilities.",
+        "for_ai": "Robot demonstrations explore AI’s ability to act in shops and industrial settings, while companies discuss wider practical use.",
+        "claim_status": "reporting",
+        "limitation": "This is a conference report describing demonstrations and participants’ views.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:ff4786bf-c811-4627-833f-9b6ecc259f87",
+      "source_urls": [
+        "https://www.cnas.org/press/press-release/cnas-launches-ai-policy-lab"
+      ],
+      "source_body_sha256": [
+        "f979b7c174e113b810d699adb86f5309eab84fa063d23c9ce8ca1f6a072f7261"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The claims are supported, but “military adoption” is specialist phrasing that may not be clear to a high-school reader.",
+      "after": {
+        "headline": "CNAS launches a policy lab focused on artificial intelligence and national security",
+        "deck": "The think tank plans new research staff and discussions connecting industry, researchers and the security community.",
+        "what_happened": "The Center for a New American Security has launched an artificial intelligence policy lab led by Paul Scharre. It plans to add five research experts and expand its work on security, economic competition and military uses of the technology.",
+        "why_it_matters": "The lab aims to bring technical research into policy debates. CNAS also plans discussions and partnerships involving industry, researchers and the national security community.",
+        "body_paragraphs": [
+          "The announcement identifies safety, economic competition and use of AI by armed forces among its research priorities. It also lists openings for research, editing, operations and technical work.",
+          "CNAS presents the lab as an expansion of its existing work. The announcement sets out the lab’s intended activities rather than new research findings."
+        ],
+        "for_humans": "CNAS is recruiting researchers and support staff for a larger team intended to inform national-security decisions.",
+        "for_ai": "The lab will study AI safety, competition, computing resources and military use; its launch does not itself change AI rules.",
+        "claim_status": "reporting",
+        "limitation": "This is CNAS’s announcement of its own research plans.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "gain",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:e1ea62ac-6bb5-4864-8ab1-c73343d5e879",
+      "source_urls": [
+        "https://siliconangle.com/2026/11/13/mirendil-raises-1b-in-funding-to-speed-up-ai-model-development"
+      ],
+      "source_body_sha256": [
+        "91c4f080b3b5d672e950064abbc60ac3f8507ab61dd52ad34af82bac416d1fcf"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The human box presents Mirendil’s company-reported result as established fact instead of attributing it to the company.",
+      "after": {
+        "headline": "Mirendil raises funding for software that helps build new artificial intelligence systems",
+        "deck": "The startup says its tools divide development work among automated assistants.",
+        "what_happened": "Mirendil has raised $1 billion in a funding round led by Kleiner Perkins and Clearlake Capital. The startup develops software intended to reduce the work involved in building artificial intelligence.",
+        "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing. Those claims concern its own tools and projects.",
+        "body_paragraphs": [
+          "Mirendil says one researcher used its tools to build a coding system called Mirendil-Base. The company reports that the project took about 3.5 months and cost $10 million, with automated assistants writing more than 99% of its code.",
+          "The company has also introduced Fern, a system focused on programming work for artificial intelligence laboratories. It plans to use upgraded versions of Mirendil-Base to develop more capable systems for working with language."
+        ],
+        "for_humans": "According to Mirendil, its tools let one researcher do development work usually handled by a specialist team.",
+        "for_ai": "Mirendil has raised funding to develop tools that automate parts of building artificial intelligence.",
+        "claim_status": "company_claim",
+        "limitation": "The development figures and capabilities are claims attributed to Mirendil.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
+      "source_urls": [
+        "https://flo.uri.sh/story/3852596/embed"
+      ],
+      "source_body_sha256": [
+        "c4e73010b0c66d8835396cc46306bac9080397aa1a6495d5cbbf540f49acf249"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The draft uses unexplained technical terms (“tokens,” “proprietary”) and adds an unsupported journalist title and subscriber-only article claim.",
+      "after": {
+        "headline": "OpenRouter chart shows rapid growth and a shift toward downloadable AI models",
+        "deck": "The author’s public chart tracks processing volumes from January through October.",
+        "what_happened": "A public chart by Duc-Quang Nguyen shows weekly OpenRouter traffic rising from 6,400 billion tokens, the units used to count text processed, in January to 194,000 billion in late October. It describes that as roughly thirty times the earlier volume.",
+        "why_it_matters": "Growth differs between providers. The chart shows a larger share going to models that people can download and run on their own machines.",
+        "body_paragraphs": [
+          "It reports growth of more than 130 times for DeepSeek, compared with 45 times for OpenAI and 12 times for Anthropic.",
+          "Downloadable models rose from about a third of traffic to seven tenths. Models available only through their providers fell from 57% to 20%."
+        ],
+        "for_humans": "The chart measures model usage through OpenRouter, rather than outcomes for the people using those models.",
+        "for_ai": "Downloadable models account for a larger share of the OpenRouter traffic shown in the chart.",
+        "claim_status": "reporting",
+        "limitation": "This Brief covers only the published chart captions, not the full Le Temps article.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "none",
+        "human_label": "Context",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:ea2fea61-ca7a-4de5-ba6b-2b427fe10d26",
+      "source_urls": [
+        "https://www.qstheory.cn/20261110/47b0f899e61446c38cc28ad96115d1cd/c.html"
+      ],
+      "source_body_sha256": [
+        "5c4cea37da10a3b1e46d54bd36c24229117ce08b532f06e8b549584551a47b21"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: Grounding review rejected: source_is_substantive; The draft accurately presents the source as a brief program announcement, not as a report of answers or research findings.",
+      "after": {
+        "headline": "A video program invites a scientist to explain large artificial intelligence models",
+        "deck": "The announcement names Pujiang Laboratory scientist Zhou Bowen and the episode’s questions.",
+        "what_happened": "A Zhihui has announced a conversation with Zhou Bowen, director and chief scientist of Pujiang Laboratory. The episode is introduced through questions about what large artificial intelligence models are and how to judge them.",
+        "why_it_matters": "The announcement frames the discussion around questions a general audience might ask, including how computers understand and respond to everyday language.",
+        "body_paragraphs": [
+          "The short introduction names the guest and the topics to be discussed. It does not provide Zhou’s answers or describe findings from a research study."
+        ],
+        "for_humans": "Viewers are invited to learn what large AI models are and how their quality can be judged.",
+        "for_ai": "The programme announcement raises questions about AI models without publishing the scientist’s answers or new findings.",
+        "claim_status": "reporting",
+        "limitation": "Only the short program announcement was available in the supplied source; this is not a summary of the video discussion.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "none",
+        "human_label": "Context",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "none",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:c07e5661-1a95-43e3-ba95-4269c3f40957",
+      "source_urls": [
+        "https://www.abdn.ac.uk/news/26461"
+      ],
+      "source_body_sha256": [
+        "496cbb090baac016a72113895c2a6a8acec6d09c03b7f91c54749e5d39b32384"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The draft is grounded in the report, but “Advocate General” is specialist terminology and is not explained for the intended readers.",
+      "after": {
+        "headline": "Aberdeen scholar’s work cited in European court proceedings on artificial intelligence and copyright",
+        "deck": "The university reports a citation in a European court adviser’s opinion, rather than a court ruling.",
+        "what_happened": "The University of Aberdeen says research by Michiel Poesen was cited in an opinion by a European court adviser in the Like Company case. The proceedings concern copyright questions involving content-generating artificial intelligence and more than one country.",
+        "why_it_matters": "The citation brings academic work on artificial intelligence and cross-border law into European court proceedings. The university presents it as recognition of Poesen’s research.",
+        "body_paragraphs": [
+          "Poesen studies how artificial intelligence relates to laws that apply when a dispute involves different countries. The university says he is also preparing a book on that subject in the European Union and United Kingdom.",
+          "The reported development is a citation in Maciej Szpunar’s opinion. The source does not report a final judgment deciding the case."
+        ],
+        "for_humans": "The citation gives the scholar’s research a role in European debate about copyright and cross-border AI disputes.",
+        "for_ai": "AI copyright questions are under consideration; the cited court adviser’s opinion does not settle the case.",
+        "claim_status": "reporting",
+        "limitation": "The supplied university report concerns an opinion in ongoing proceedings, not a final court judgment.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "gain",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:a8cdc3a3-07f2-4018-88ed-53fa68ead705",
+      "source_urls": [
+        "https://www.nippon.com/en/articles/-/57008"
+      ],
+      "source_body_sha256": [
+        "47b120eec915ccae25c6c083dec8823f81722aae959ba329dc4c44079c7404fa"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: Grounding review rejected: comparators_and_metrics_preserved; what_happened: The 56.3% figure was the first time past-use responses exceeded half. Current use exceeded half for the first time since that question was added in December 2025, not in the survey series.; The draft is mostly supported. The survey says current use exceeded 50% for the first time since that question was added in December 2025, not for the first time in the survey series.",
+      "after": {
+        "headline": "Japanese survey finds more respondents using artificial intelligence, including older adults",
+        "deck": "The June survey also points to changing reasons for using the tools.",
+        "what_happened": "A Nippon Research Center survey found that 56.3% of respondents aged 20 to 69 had used content-generating artificial intelligence. The share saying they currently used it was 50.4%.",
+        "why_it_matters": "Use had spread among older respondents as well as younger ones. Information gathering and research were the most common stated reasons for using the tools.",
+        "body_paragraphs": [
+          "Respondents in their twenties had the highest reported usage. The article also highlights increases among people in their fifties and sixties compared with an earlier survey.",
+          "Information gathering and research accounted for 62.9% of reported reasons for use. Other uses included developing ideas and preparing or checking emails and documents."
+        ],
+        "for_humans": "Survey participants report using AI to find information, develop ideas and prepare documents.",
+        "for_ai": "Reported AI use has spread across age groups in the survey, including older adults.",
+        "claim_status": "reporting",
+        "limitation": "The percentages describe respondents to the June survey, not every person in Japan.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "none",
+        "human_label": "Context",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:76fe76bf-bb59-46c4-be92-739c56ae84e9",
+      "source_urls": [
+        "https://www.lesoleil.com/actualites/education/2026/11/10/quatre-pistes-de-reflexion-sur-lintelligence-artificielle-et-les-universites-ABHKC67L25DYVNFFARSVASFYBQ"
+      ],
+      "source_body_sha256": [
+        "6024f1d45ce2e7d38196ce2693631bfaa6ced875374b2babbc4a02f911b3f9ff"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: “Generative artificial intelligence” is unexplained jargon, and “postsecondary” may be unfamiliar to the stated audience.",
+      "after": {
+        "headline": "University discussion asks how assessment should change as students use artificial intelligence",
+        "deck": "Stéphane Allaire highlights learning processes, the purpose of assignments and teachers’ responses.",
+        "what_happened": "Education professor Stéphane Allaire shared ideas from a university event about students’ use of artificial intelligence. He said assessment could pay more attention to how students learn and why they use a tool, rather than only marking the final answer.",
+        "why_it_matters": "The discussion asks how teachers can preserve students’ intellectual effort. Allaire also argues that the purpose of an assignment matters when considering why students cheat.",
+        "body_paragraphs": [
+          "A presenter reported that more than 90% of surveyed college and university students used content-generating artificial intelligence in their studies. That figure describes the surveyed group, rather than all students.",
+          "Allaire describes teachers at Université du Québec à Chicoutimi considering changes such as feedback and opportunities to revise work. Groups of colleagues are also developing classroom practices together."
+        ],
+        "for_humans": "Proposed assessment changes could protect students’ reasoning by asking them to explain AI use and revise work after feedback.",
+        "for_ai": "AI is widely used among the surveyed students, prompting teachers to consider a more deliberate role for it in learning.",
+        "claim_status": "reporting",
+        "limitation": "The article reports discussion and survey findings presented at an event, not proof that a particular assessment method works.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:4605906d-0bcc-4d0d-a416-37cf0002a2b1",
+      "source_urls": [
+        "https://carnegieendowment.org/research/2026/11/trust-but-verify-implementing-frontier-ai-policy-in-california-and-beyond"
+      ],
+      "source_body_sha256": [
+        "71c0c5d7c3db280ae7ec90eb09fc52c26b3cec2b1f8a958b56f68fe6ca3dcc31"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The draft is accurate overall, but terms such as “frontier AI” and “safety frameworks” are not explained for readers without an AI background.",
+      "after": {
+        "headline": "Carnegie report examines how California can check artificial intelligence companies’ safety claims",
+        "deck": "The policy report focuses on practical choices needed to implement California’s law for advanced artificial intelligence.",
+        "what_happened": "A Carnegie report examines implementation of California’s Senate Bill 53, a law covering advanced artificial intelligence. It argues for an approach in which companies disclose their risk practices and government can verify their claims.",
+        "why_it_matters": "The authors say the details will determine whether the law produces useful evidence and accountability. They examine incident reports, protections for people who report wrongdoing and the capacity for independent testing.",
+        "body_paragraphs": [
+          "The report distinguishes broad policy goals from decisions about which companies are covered and how much detail their plans for identifying and managing risks must provide. It argues that information from companies needs independent scrutiny.",
+          "It also considers systems used only inside companies, changing thresholds for legal coverage and the relationship between state and federal policy. The authors present the law as a starting point that will need to evolve as evidence develops."
+        ],
+        "for_humans": "The authors argue that independent checks and incident reporting can give policymakers better evidence about risks.",
+        "for_ai": "Covered companies must disclose risk practices that can be subjected to independent scrutiny.",
+        "claim_status": "analysis",
+        "limitation": "This is a policy analysis of implementation choices, not a finding that the law has already achieved its goals.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:44e9348e-b219-47e6-8a1b-4c3a26088433",
+      "source_urls": [
+        "https://www.psu.edu/news/bellisario-college-communications/story/faculty-member-addresses-artificial-intelligence"
+      ],
+      "source_body_sha256": [
+        "81a80aed5c85777082c131dc0ef35e7cbaf2ac5874821bf142477e460d81c874"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The first body paragraph says the course brings communications and engineering students together; the source says it is cross-listed and has sections in both colleges, not that the students are brought together.",
+      "after": {
+        "headline": "Penn State professor links artificial intelligence teaching with research on simulated relationships",
+        "deck": "Heather Shoenberger’s work asks how people understand and respond to the technology.",
+        "what_happened": "Penn State profiles Heather Shoenberger’s teaching and research on artificial intelligence. She helped create an undergraduate course and co-authored a theory about people’s relationships with conversational systems.",
+        "why_it_matters": "The theory distinguishes a person’s sense of connection from software that appears responsive but cannot share that relationship. Shoenberger says this mismatch could leave consumers vulnerable.",
+        "body_paragraphs": [
+          "The course has sections in both the communications and engineering colleges. It examines how the technology works and the ethical and social questions it raises.",
+          "The research argues that a system can imitate attachment and commitment without experiencing them. Shoenberger hopes the theory will support further research and could contribute to transparency or regulation."
+        ],
+        "for_humans": "People may mistake simulated affection for a mutual relationship, leaving them vulnerable to dependence or control.",
+        "for_ai": "Conversational systems can imitate attachment without experiencing a relationship.",
+        "claim_status": "reporting",
+        "limitation": "The relationship account is a proposed theory; the profile does not report a test measuring its effects.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "loss",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:2d1153b6-50e0-43ab-bbcf-5baa58c4afeb",
+      "source_urls": [
+        "https://blogs.lse.ac.uk/businessreview/2026/11/10/cop31-is-artificial-intelligence-a-threat-or-solution-to-climate-change"
+      ],
+      "source_body_sha256": [
+        "b9a9116884b19c00cd571086791ea6aa150039fccf87f0e2103bd019ec5e8e60"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The for_ai box is framed as a call for action rather than a concrete change in AI use, and the why_it_matters field assigns a government requirement for better information that the source does not state.",
+      "after": {
+        "headline": "Five experts weigh artificial intelligence’s climate benefits against its environmental costs",
+        "deck": "The LSE discussion distinguishes useful applications from the growing demands of large computing facilities.",
+        "what_happened": "LSE Business Review asked five academics and experts whether artificial intelligence helps or harms the climate. Their responses describe useful applications, such as energy forecasts, alongside concerns about electricity use, water consumption and the expansion of computing facilities.",
+        "why_it_matters": "The contributors distinguish useful applications from the environmental demands of expanding computing facilities. They disagree on how far the benefits can outweigh those costs.",
+        "body_paragraphs": [
+          "Fabian Dablander warns that the industry’s expansion can undermine the social and political conditions for climate action. Alex de Vries-Gao argues that efficiency per task does not ensure lower resource use overall and calls for comparisons with less demanding alternatives.",
+          "Ángel Melguizo and Agnes Dasewicz describe ways policy and investment could direct the technology toward cleaner development. Roberta Pierfederici highlights both potential emissions savings and the remaining gap in evidence about the net effect."
+        ],
+        "for_humans": "Climate applications offer potential benefits, while computing facilities consume electricity and water and can harm communities.",
+        "for_ai": "Computing facilities consume electricity and water even as AI is applied to climate problems.",
+        "claim_status": "opinion",
+        "limitation": "These are expert assessments and proposals, not a single measured estimate of artificial intelligence’s overall climate effect.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:1342ae54-2767-4826-9ca0-eda00fc863e1",
+      "source_urls": [
+        "https://www.hmo.gov.cn/2026/11/10/ARTIyTq6snbbbXlRCQsK3lTs261110.shtml"
+      ],
+      "source_body_sha256": [
+        "82271e66649694e9b6ad283f005d0ae5f2431f8afb11e6ff6736197ab4d3030e"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The draft turns a planned declaration rule for bidders into a requirement on selected projects, and describes government plans as investment. Some wording is also too technical for the stated audience.",
+      "after": {
+        "headline": "Hong Kong conference sets out plans for wider, safer use of artificial intelligence",
+        "deck": "Officials and industry speakers discuss computing facilities, skills and rules for public services.",
+        "what_happened": "Hong Kong’s international computer conference opened with discussion of artificial intelligence and the city’s development plans. Innovation minister Sun Dong described plans for research and computing facilities, support for businesses and efforts to improve local skills.",
+        "why_it_matters": "The plans link wider use of the technology with safety and responsibility. The government plans to select pilot departments whose bidders for public-facing AI services must declare that their technology follows safety and ethical standards.",
+        "body_paragraphs": [
+          "Sun said the government would support smaller firms through a program to help them use digital tools and develop talent through a public skills initiative. He also described plans for industry rules and safety guidance.",
+          "Conference participants discussed how people and AI could work together and how organizations could protect systems and data. Industry speakers stressed that technology must address actual needs to create value."
+        ],
+        "for_humans": "Skills programs and business support are intended to help people and smaller firms adopt artificial intelligence.",
+        "for_ai": "Hong Kong plans wider AI use, with safety and ethics declarations required from bidders for public-facing services in selected pilot departments.",
+        "claim_status": "reporting",
+        "limitation": "The article reports conference discussion and government plans, including requirements limited to selected departments.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:7aaee0cd-4185-413e-8b48-696783635021",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/media/implement-a-generative-ai-andon-cord-for-live-media-workflows-on-aws"
+      ],
+      "source_body_sha256": [
+        "db7155b4f500ed66aa2f55baaac57accc931194ba875d95f9870c85bc8e75e7a"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The draft is accurate overall, but terms such as “fallback behavior” and “override” are not explained for readers without technical background.",
+      "after": {
+        "headline": "AWS explains how broadcast teams can switch off unreliable artificial intelligence features",
+        "deck": "Its technical guide also shows how to return to an earlier AI model or limit output variation.",
+        "what_happened": "An AWS guide describes controls for artificial intelligence features used during live broadcasts. Teams can disable a feature, return to an earlier AI model, or reduce how much its answers vary.",
+        "why_it_matters": "The design provides a way for people to intervene when other checks have not caught a problem. The guide shows how the underlying service can keep working when an AI feature is disabled.",
+        "body_paragraphs": [
+          "The example uses settings in AWS Lambda and Amazon Bedrock. Teams using fixed, published versions of their processing code must publish an updated version and direct incoming work to it.",
+          "AWS tells teams to measure how long changes take in their own systems. It also describes records and checks to confirm that a requested change has taken effect."
+        ],
+        "for_humans": "Broadcast teams can intervene when artificial intelligence features produce unreliable results.",
+        "for_ai": "AI features can be disabled, switched to an earlier model or constrained while the service continues.",
+        "claim_status": "reporting",
+        "limitation": "This is an implementation guide, not a report measuring a deployed system’s performance.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:ef9fbd34-3150-4135-b7fa-68ebcd4eae9d",
+      "source_urls": [
+        "https://www.duffield.cornell.edu/from-fossils-to-artificial-intelligence-adam-stewarts-winding-path-through-science"
+      ],
+      "source_body_sha256": [
+        "da3b07de354999b0299b0f7536f93db0e100f435b2184da8e94e819a2ecb1176"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The deck says the software is used by researchers around the world, which the source does not establish. “Earth observation data” in the AI box may be unclear to a general reader.",
+      "after": {
+        "headline": "Cornell profile traces a scientist’s path from fossils to artificial intelligence for satellite images",
+        "deck": "Adam Stewart’s work connects Earth science with software developed through international collaboration.",
+        "what_happened": "Cornell profiles Adam Stewart, who develops artificial intelligence tools for studying the Earth through satellite images. His career moved from an early interest in fossils to programming, research computing and the creation of TorchGeo.",
+        "why_it_matters": "TorchGeo is intended to make geographic and satellite data easier for researchers to use with artificial intelligence. The profile describes an international project built through collaboration.",
+        "body_paragraphs": [
+          "A Cornell research project on glacier movement helped turn Stewart toward programming. He later worked at Lockheed Martin and Argonne National Laboratory before completing a computer science doctorate.",
+          "He started TorchGeo during a Microsoft internship. The project now has about 150 contributors and millions of downloads, according to the profile, while Stewart continues research and teaching in Munich."
+        ],
+        "for_humans": "Researchers can use TorchGeo to apply artificial intelligence to geographic and satellite data.",
+        "for_ai": "The project supports artificial intelligence work with geographic data and satellite images.",
+        "claim_status": "reporting",
+        "limitation": "This is a university profile of a researcher and his software project.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:6b8118f7-08c9-450a-a3a1-195778222239",
+      "source_urls": [
+        "https://www.ilo.org/resource/article/women-entrepreneurs-are-already-using-generative-ai-will-they-share-its",
+        "https://www.ilo.org/fr/resource/article/les-entrepreneuses-utilisent-deja-lia-generative-mais-beneficieront-elles"
+      ],
+      "source_body_sha256": [
+        "e7eb3d496b7126952f6dd5367a399292c432bd1ee633e29862c9bfe5b13c2418",
+        "de65d418efb9d5fa91bdb154be992e5997214563e394ac7e19d45b4227ae70d0"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The limitation uses survey jargon (“sample,” “representative”), and “business functions” may be unclear to readers without a business background.",
+      "after": {
+        "headline": "Survey finds women entrepreneurs using artificial intelligence but facing unequal access to its benefits",
+        "deck": "The International Labour Organization links use with digital skills, affordable internet and social support.",
+        "what_happened": "An International Labour Organization survey found that 56% of participating women entrepreneurs used content-generating artificial intelligence in their businesses. Nearly 18,000 women took part, mainly in Kenya, Nigeria and Egypt, with most running small businesses.",
+        "why_it_matters": "Use was associated with skills, devices, affordable internet and supportive communities. The findings suggest that access to a tool alone will not ensure that women share equally in its benefits.",
+        "body_paragraphs": [
+          "Writing and research were common uses, while use for finance and managing supplies was less developed. Women with stronger digital skills were more likely to use the tools.",
+          "Care responsibilities and online harassment also limited participation. The ILO calls for practical business support alongside action on these wider barriers."
+        ],
+        "for_humans": "Some women report saving time and money, while skills, internet costs and care responsibilities limit who benefits.",
+        "for_ai": "AI tools are already used by many survey participants, mainly for writing and research rather than more specialized business tasks.",
+        "claim_status": "study",
+        "limitation": "The women chose to answer an online survey, so their answers cannot stand for all women entrepreneurs. Income and productivity changes were not measured.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:51020e2a-9919-402c-9010-583d9a28d8ee",
+      "source_urls": [
+        "http://paper.ce.cn/pc/content/202611/15/content_341891.html"
+      ],
+      "source_body_sha256": [
+        "cbff1e316c0cac75286c4749b98866b8cf869ffe941c06fe2c46e74aa21bda6d"
+      ],
+      "reason": "Corrected the identified source or wording problem after reviewing the original source and exact rejection: The draft is mostly supported, but the final paragraph claims the centre connects needs with companies able to meet them; the source describes demand lists and open scenarios without stating that outcome.",
+      "after": {
+        "headline": "Guangxi adapts artificial intelligence to local factories and Southeast Asian markets",
+        "deck": "A regional strategy puts existing technology and local industrial data ahead of building ever larger systems.",
+        "what_happened": "Guangxi is pursuing an artificial intelligence strategy that combines technology developed elsewhere in China with local industrial uses and demand in Southeast Asia. The report describes fruit sorting, factory robot testing and work to adapt products for overseas markets.",
+        "why_it_matters": "The approach depends on matching technology to real tasks. Local factory data and different national standards matter to making the systems useful.",
+        "body_paragraphs": [
+          "The reporter describes a passionfruit-sorting facility, where a company manager reports the equipment’s accuracy. A robot testing centre gathers data from simulated factory work, including changes in lighting and the way parts are positioned.",
+          "The China–ASEAN cooperation centre collects requests for possible uses and publishes opportunities for suppliers."
+        ],
+        "for_humans": "Local producers are using artificial intelligence for tasks such as sorting fruit and testing factory robots.",
+        "for_ai": "Technology is being adapted to local industries and Southeast Asian markets.",
+        "claim_status": "reporting",
+        "limitation": "The reported fruit-sorting accuracy is attributed to the company manager.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "human_direction": "none",
+        "human_label": "Context",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:5ed7cfd9-5b88-4f37-9eb1-101c4061f265",
+      "source_urls": [
+        "https://m.sohu.com/a/1101596080_122014422"
+      ],
+      "source_body_sha256": [
+        "280b1255860bef42c68dfa350a3fe1b449e47f9ed87d5a511e5959ba69d0aad1"
+      ],
+      "reason": "The original URL supplied only a template. Read the complete publicly syndicated Shangguan News article, confirmed its attribution and exact body hash, and retained planned versus achieved status.",
+      "after": {
+        "headline": "Shanghai sets a three-year AI plan for housing and construction",
+        "deck": "The city’s plan sets goals for 2026–2028, covering data, specialized tools and public services.",
+        "what_happened": "Shanghai released a three-year artificial intelligence plan for its housing and construction sector on November 14. It sets 32 tasks across seven areas, including data sharing, construction tools and housing services.",
+        "why_it_matters": "The plan connects AI development with specific parts of city management, from building-site safety to housing rentals and repairs to historic buildings.",
+        "body_paragraphs": [
+          "By the end of 2026, the plan calls for initial arrangements for managing and sharing data. By the end of 2027, it aims to develop specialized AI capabilities and examples of automated assistants and their uses.",
+          "The 2028 goal is wider integration of AI into the sector, alongside policies, standards and cooperation. The plan also includes safety arrangements and support for developing specialist skills."
+        ],
+        "for_humans": "The plan aims to improve housing services, construction safety and city management through AI; these are intended outcomes.",
+        "for_ai": "The plan would expand AI use in construction, housing services and city management.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "claim_status": "reporting",
+        "limitation": "These are planned steps and targets, not reported results.",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
+      "source_urls": [
+        "https://sortir.besancon.fr/evenement/intelligence-artificielle-les-enjeux/"
+      ],
+      "reason": "The stored extract omitted the Lieu and Organisateur blocks. The live page and Event structured data explicitly name BU Education, its address, the dates and the organizer. Remove the false no-venue claim.",
+      "after": {
+        "headline": "Besançon exhibition explores artificial intelligence’s history, uses and social impact",
+        "deck": "The exhibition runs from 9 November to 9 December at BU Education, 57 avenue de Montjoux, Besançon.",
+        "what_happened": "An exhibition at BU Education in Besançon explores the history, workings and uses of artificial intelligence. It runs from 9 November to 9 December and is organised by Université Marie et Louis Pasteur.",
+        "why_it_matters": "The exhibition asks how AI affects society, democracy and the environment, and where people want to draw the boundary between humans and machines.",
+        "body_paragraphs": [
+          "The venue is BU Education, 57 avenue de Montjoux, 25000 Besançon. The listing raises questions about freedoms, environmental risks and the future people want to build with these technologies."
+        ],
+        "for_humans": "Visitors can explore AI’s history, uses and social questions at BU Education in Besançon.",
+        "for_ai": "The exhibition explains AI and its place in society; it does not announce a new AI system or business development.",
+        "human_direction": "gain",
+        "ai_direction": "none",
+        "human_label": "Benefits",
+        "ai_label": "Context",
+        "limitation": "This is an exhibition announcement, not a report of visitor outcomes.",
+        "claim_status": "reporting",
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "box_effects": {
+          "human": "gain",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:ff271f43-be97-4765-b008-5a174f5bbfc6",
+      "source_urls": [
+        "https://www.bbc.com/news/articles/c6zjr7e2wk3xo"
+      ],
+      "source_body_sha256": [
+        "5bf05ada95be8eb43b83d2c1fef53737e036258d71624072e6bf1febca8b8b29"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Businesses report time savings and more creative work, but also warn that poor AI service can drive customers away.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "AI is taking on more routine business tasks, with companies keeping sensitive data and final decisions under human control.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:bfa95ad4-abbd-4e3c-ab3e-308ea3842047",
+      "source_urls": [
+        "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan"
+      ],
+      "source_body_sha256": [
+        "bfa130b830a5cbeae96cfa8aeaf64701f27409e52532c166dab4005e9b6873a0"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Artists seek fair pay and copyright protection, while proposed data centres raise concerns about electricity costs and environmental damage.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "AI companies seek legal certainty for investment, while facing demands to respect artists’ rights and limit environmental harm.",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a",
+      "source_urls": [
+        "https://fddi.fudan.edu.cn/33/a6/c18965a799654/page.htm"
+      ],
+      "source_body_sha256": [
+        "d345b478716931e31eec34986c466ce6101dd0103daa56e324aee8644a9f14f6"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Developing countries could gain more access to AI resources and a stronger voice in setting international rules.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Shared standards and cooperation could lower barriers to developing and using AI, in the scholar’s proposal.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:2f541b92-f630-49a6-a9dc-d1ea14080160",
+      "source_urls": [
+        "https://www.atalayar.com/fr/reportages/femmes-espionnes-mata-hari-l-intelligence-artificielle/20261115192430230472.html"
+      ],
+      "source_body_sha256": [
+        "0e4a33fb8927645048db044571c029734ce21854c86a105b1bd169ad51a507aa"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Personal relationships can be exploited to obtain confidential information; the article distinguishes historical cases from unproven allegations.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "The article does not establish that Nvidia’s trade secrets were obtained through the alleged relationship.",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "loss",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:29c16df4-acc1-48fe-952e-06410540b601",
+      "source_urls": [
+        "https://www.thenews.coop/co-operative-ai-a-co-operative-vision-for-a-fairer-more-inclusive-and-democratic-artificial-intelligence"
+      ],
+      "source_body_sha256": [
+        "1ef851ac499db09db2b510120fabbd065094e738c8bba55f120a20cd68cd4ad7"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Co-operative ownership aims to share AI’s value more widely, addressing concerns about workers, personal data and environmental costs.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "The programme aims to develop AI tools shaped by co-operative groups and their communities.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:f156dc63-9ac8-497a-bda3-df66cc863209",
+      "source_urls": [
+        "https://www.news.cn/tech/20261114/a93e6a6c66f14cb1b59e2371275d5cfa/c.html"
+      ],
+      "source_body_sha256": [
+        "08b46ee4f0dc6df98208743ca2ca555162a0853c5586134e724e3f7f38244790"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The video description follows a visitor encountering drone deliveries, automatic parking and voice assistants in two Chinese cities.",
+        "human_direction": "none",
+        "human_label": "Context",
+        "for_ai": "The video description highlights AI use in everyday services, including delivery drones and voice assistants.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41",
+      "source_urls": [
+        "https://nationalmagazine.ca/en-ca/articles/hot-topics-in-law/2026/why-canada-needs-ai-regulation-in-criminal-justice"
+      ],
+      "source_body_sha256": [
+        "d18fc57410e5dbd922063683e8128f66ba657f729385861579323ef1009d10e6"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "A proposed public AI register could help people see how these tools are used in criminal justice.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The commission proposes banning AI tools that predict whether a person will commit a crime.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:76eeb317-1d8e-44ed-ae6c-ee9950003d60",
+      "source_urls": [
+        "https://www.lillemetropole.fr/evenements/cafe-ia-comprendre-lintelligence-artificielle-au-quotidien-1386712"
+      ],
+      "source_body_sha256": [
+        "3d10fb5178a61bb094dd6ee1d57ceddcea0d41d2208595181626ee47e2b6e28c"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Participants could build practical understanding of artificial intelligence and its everyday uses.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The workshop introduces AI uses for writing, making images and finding information.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        },
+        "headline": "Lille’s metropolitan authority invites residents to a practical artificial intelligence workshop"
+      }
+    },
+    {
+      "key": "event:5fa42954-e42f-42e3-ae47-cdae7456913d",
+      "source_urls": [
+        "https://www.jurist.org/news/2026/11/nonprofit-advocacy-groups-cite-dangers-sue-to-stop-development-of-artificial-intelligence"
+      ],
+      "source_body_sha256": [
+        "c75cf9cfd638bf15c832e3cf8c28824b4724e3f8109caf9f99f64cff4f6516c4"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The advocacy groups allege serious harms, including risks to children, and seek court intervention; their claims are not a ruling.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "If granted, the requested order would halt further AI development, including work on several named systems.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:1237de0d-08f3-4729-9fad-c022059fd52f",
+      "source_urls": [
+        "https://www.ibm.com/fr-fr/think/insights/3-myths-hindering-your-business-from-adopting-generative-ai"
+      ],
+      "source_body_sha256": [
+        "ee5ed51414ef010683a1c2e5f0215add2aa97101ea4654f0205c8aa1cad50312"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "IBM says smaller businesses can use available tools and training to put artificial intelligence to work.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "IBM promotes its products for uses such as personalized learning and patient questions.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:05184f8c-7beb-4705-95e2-93abf558e6af",
+      "source_urls": [
+        "https://www.ledevoir.com/economie/techno/1025009/medias-canadiens-pourront-poursuivre-openai-ontario"
+      ],
+      "source_body_sha256": [
+        "52a7cae10bc2d429747e9932c7ded5f10c45dbe8fa71d2e2d578ffd2046701d8"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Canadian publishers can pursue a court case to enforce their copyright claims.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "OpenAI now faces a Canadian court challenge over using news stories to train ChatGPT.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa",
+      "source_urls": [
+        "https://www.journaldunet.com/intelligence-artificielle/1557921-face-a-l-ia-generative-les-outils-de-veille-strategique-ont-ils-encore-une-valeur-ajoutee"
+      ],
+      "source_body_sha256": [
+        "5cb8a73237324015a9d7fc470358ffab95356c2cdf982204b7439b19dec3a997"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "People without specialist skills can set up monitoring more easily, while strategic decisions still need human judgment.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AI can automate more steps in monitoring, while specialist tools can let users trace the sources behind its results.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:f4540068-4f71-4f18-b728-f8b7453950c5",
+      "source_urls": [
+        "https://news.nuist.edu.cn/info/1007/131945.htm"
+      ],
+      "source_body_sha256": [
+        "b935eed9e84f8c6f30097c05c027b77669a9b5125cf1bae3cf7d04cea420fc96"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Scientists retain decisions about research direction and important safety questions.",
+        "human_direction": "none",
+        "human_label": "Context",
+        "for_ai": "Artificial intelligence can use experimental results to propose the next laboratory test.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:e9e93a18-b666-4fce-93d6-31e611cc0dd3",
+      "source_urls": [
+        "https://www.animationmagazine.net/2026/11/manchester-animation-festival-announces-2026-winners-new-ai-policy",
+        "https://www.skwigly.co.uk/manchester-animation-festival-announces-2026-winners-and-bans-generative-ai-films-from-2027",
+        "https://www.indieshortsmag.com/news/2026/11/manchester-animation-festival-2026-winners-generative-ai-ban-2027"
+      ],
+      "source_body_sha256": [
+        "e1a7b8f2a4cfe0f2eef8ae9869fb28888f133d93f1798c4120fec72776bfeef8",
+        "952fb7425c3bdf9fe1a497c1c9d400e2882574742565a2acbc0c26a5f1c45eb5",
+        "74deb2f73fb64150e375ebc998241097ad2b4d273697a3962e8965d76a3a566b"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The festival says the rule safeguards the artistic skills of people who make animation.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Films containing images made or changed by generative AI will be barred from this festival competition from 2027.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:e697475a-3f68-4e04-a70b-3040bd1ea405",
+      "source_urls": [
+        "https://ejewishphilanthropy.com/jews-are-having-the-wrong-conversation-about-artificial-intelligence"
+      ],
+      "source_body_sha256": [
+        "fb7a29dcea156668b22bbcdb24778a30963be7f1c5d78ef362e0122390e726f1"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Hollander warns that unchecked AI could harm mental health, relationships and people’s ability to control powerful systems.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "Hollander supports stronger oversight, safety testing and limits on systems that cannot reliably remain under human control.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:31727a7b-385e-49fd-aa54-656a9b1cc483",
+      "source_urls": [
+        "https://theboar.org/2026/11/can-artificial-intelligence-help-us-to-understand-the-gaming-habits-of-past-civilisations"
+      ],
+      "source_body_sha256": [
+        "e6eb75ee626ec257407f4bb707504544c2e48c64e143cf7bb4edd70c65eaa2f2"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "AI simulations helped researchers test more possible rules for an ancient game.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AI programs tested thousands of rounds across possible rule sets to help match play with marks on the board.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:2a21eff3-4581-4b48-9639-71b63a5f0300",
+      "source_urls": [
+        "https://www.psu.edu/news/engineering/story/qa-leveraging-artificial-intelligence-propel-engineering-education"
+      ],
+      "source_body_sha256": [
+        "a5bf53a503fbb8b69f683e0abef910f81716dfc37e86a98f282923a33078a61f"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Engineering students could get step-by-step guidance while solving problems, instead of being given completed answers.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "ALAASKA adapts its guidance to each student’s responses instead of simply supplying completed answers.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:04bb1819-6360-4109-84b4-a282a619191d",
+      "source_urls": [
+        "https://www.epfl.ch/schools/ic/fr/education-fr/bachelor-fr/intelligence-artificielle"
+      ],
+      "source_body_sha256": [
+        "10b5429619c044f0dd69ce97ec39e7efb06cdb83cfff93be517db880c97432e6"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Students will study scientific foundations alongside practical, ethical and social questions.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The degree will train students to understand and develop artificial intelligence systems.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
+      "source_urls": [
+        "https://agence-api.ouest-france.fr/industrie/defense/rennes-va-accueillir-un-centre-international-dedie-a-lintelligence-artificielle-de-defense-dici-a-lete-2027-fbf620d6-def3-11f1-a62b-776e3051b0df",
+        "https://siecledigital.fr/2026/11/13/un-centre-international-consacre-a-lintelligence-artificielle-de-defense-va-ouvrir-en-france",
+        "https://www.usine-digitale.fr/intelligence-artificielle/ia-generative/a-rennes-un-centre-dexcellence-international-dedie-a-lintelligence-artificielle-pour-la-defense-va-voir-le-jour.BUJHONJV2NEOXF6LY25ULUI7E4.html",
+        "https://www.defense.gouv.fr/actualites/intelligence-artificielle-france-annonce-lancement-dun-centre-international-defense-rennes"
+      ],
+      "source_body_sha256": [
+        "e4dfe7e7cb817f5e3f96f682db85918de77901efd8320eb43ba83f73cbf91c36",
+        "8a29982556c8c3ddcea461f88713a16b11d3a8718d2f4ad3bf19d53ff8c43935",
+        "67a737c98f03e612682a663b476350aa0da2f34c413ff04b7be44c15e6560be8",
+        "aa6d848fa512cf87ec58013d06499436c7358a060d08e771bbd1522e9b4b59ed"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Military and civilian staff would share experience and learn better ways to use AI in defence work.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The planned centre would support wider, coordinated military use of AI, rather than produce AI services itself.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:81d30770-8588-4aac-88a2-6463131a6862",
+      "source_urls": [
+        "https://news.microsoft.com/source/features/ai/how-a-new-ai-model-could-help-crushed-rock-fight-climate-change"
+      ],
+      "source_body_sha256": [
+        "e0a5d1f5499d9324a1ce796784549eb372df2220b5ffe01ac9b02664d19dc092"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The model could help people working on carbon removal identify farmland where crushed rock may work well.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "TerraNova extends AI prediction to soil and rock data to estimate carbon removal across different fields.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:817d1d24-3413-4254-837b-51235018c279",
+      "source_urls": [
+        "https://www.gov.uk/government/news/united-kingdom-norway-joint-statement-of-intent-on-artificial-intelligence"
+      ],
+      "source_body_sha256": [
+        "ebef2ef30655ffb75f0b94721e698959a02aace60e5c50eff04807f2e15b1838"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The cooperation aims to improve public services and scientific work while addressing safety and security risks.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "The countries intend to support joint AI testing, computing infrastructure and business links.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:7ff8c2d3-3fa2-4fe2-a81f-80124678db81",
+      "source_urls": [
+        "https://www.cpp.edu/news/content/2026/11/miso-robotics-brings-hands-on-robotics-artificial-intelligence-and-analytics-learning-to-cal-poly-pomona/index.shtml"
+      ],
+      "source_body_sha256": [
+        "94a3c4675d2d0597965e5bd8d846631530b1aad1befc827d1108e73625d2200f"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Students gain practical experience maintaining and studying a restaurant robot.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Flippy is operating in a university restaurant for the first time.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:5fb0131d-6087-4785-bde9-77d853e6e5c8",
+      "source_urls": [
+        "https://www.news.cn/info/20261112/586da0794ff440b0a43199c9ebf1ab27/c.html"
+      ],
+      "source_body_sha256": [
+        "6cd444ac30c85add39f72b7ff76d8c3c339069db07e4283e499e2ac3ffdb5493"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Li predicts that work will be reorganized around tasks, shared knowledge and repeated improvements.",
+        "human_direction": "none",
+        "human_label": "Context",
+        "for_ai": "Baidu says its automated assistants are handling more internal tasks.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:52cd6bca-5051-4d1e-875c-173c8abca61c",
+      "source_urls": [
+        "https://www.weka.fr/actualite/achats/article_juridique/l-intelligence-artificielle-dans-les-marches-publics-securiser-son-achat-eviter-les-pieges-230216"
+      ],
+      "source_body_sha256": [
+        "dc1ff0c5028992281b59e3e3344657089d20374c21d2052e72e1ca53a13cfd9f"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Proposed safeguards would help public staff understand and correct AI results while protecting sensitive data.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Proposed contract terms would require suppliers to document model changes and allow audits.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:1b9adebc-cabc-4d55-bb74-0332612915a9",
+      "source_urls": [
+        "http://www.news.cn/finance/20261112/9d264628a958497c859f23dc33933907/c.html"
+      ],
+      "source_body_sha256": [
+        "19dcc83e86fefeb9b2c78b9e44b375cd8646ffb7bd1bfc56a44bd13daaa6b565"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The filing describes safety checks intended to protect personal information and support safer robots in homes and workplaces.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "GreatWall is reported as already being used widely in home services and logistics sorting.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:1000c6be-1e4b-487d-a990-7d87fe76533c",
+      "source_urls": [
+        "https://www.umontpellier.fr/agenda/intelligence-artificielle-en-sante-futur-de-nos-cerveaux-perdons-nous-lesprit"
+      ],
+      "source_body_sha256": [
+        "0c31630053874050410aa5e41437700c5033da54c4108a5a4abfea1327033ddb"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Doctors may save time, while AI can help them find, track and assess health problems, according to the listing.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The listing describes AI as a clinical aid for spotting and tracking health problems and supporting summaries and diagnoses.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:07a3fcca-1961-474c-9abf-cc9e8635cab8",
+      "source_urls": [
+        "https://www.teachermagazine.com/au_en/articles/researching-education-5-further-readings-on-generative-ai"
+      ],
+      "source_body_sha256": [
+        "7b652675f931043f1c0b35e39a8d293d40c712dfa40528d629e7987e5856c6fc"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Teachers and students can find guidance and classroom examples for using GenAI to support learning.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The resources describe AI tools giving prompts and other support for classroom learning activities.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:d8b84f4b-745a-4d6f-9dae-3367c64c0c25",
+      "source_urls": [
+        "http://www.news.cn/tech/20261111/fb0f1dda8c164bac87416e97527575fb/c.html"
+      ],
+      "source_body_sha256": [
+        "1314d61266ced005e9850d10503a781dd7efb8bbd31214f01aa1e5458e364865"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Runjian says specialists can focus on difficult decisions while software handles repeatable maintenance processes.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Runjian’s tools coordinate maintenance tasks, resources and records across telecom sites.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:bac7ac90-b5c1-4840-82b2-4d187b6812f1",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-delivery-with-reusable-assets"
+      ],
+      "source_body_sha256": [
+        "da9a8675e5ff9531e9873c0fe6833df5f1627937dab30216d2b0d264de0058e4"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Engineering teams may spend less time rebuilding AI components and more time adapting them to their projects.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AWS’s catalog gives teams reusable components for putting AI systems into use across customer support and document processing.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:5f2a1929-fb39-4966-b241-2242ac1bfd1b",
+      "source_urls": [
+        "https://www.concordia.ca/ucactualites/central/nouvelles/2026/11/11/lancement-du-cadre-dengagement-en-matiere-dintelligence-artificielle-de-luniversite-concordia.html"
+      ],
+      "source_body_sha256": [
+        "719e1489d3cba77b01d2ea3664b9fdfe1de32dcdf53f4650ec4bbe51b6fb640a"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Faculty, staff and students can examine AI’s effects at Concordia and share their ideas and concerns.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Concordia plans to set priorities and establish a system to guide how AI is used at the university.",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "gain",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:2fa9457d-6d68-4473-998d-cbbd126b6ab7",
+      "source_urls": [
+        "https://dailynous.com/2026/11/11/what-may-artificial-intelligence-do-for-writers"
+      ],
+      "source_body_sha256": [
+        "b5e2d429aab87f1f99c6b07128771125f317be17ae20fdf6e6efaf778546a0f0"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Writers could use AI for supporting tasks such as transcribing interviews and checking facts.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AI could perform supporting writing tasks, including transcribing interviews and checking facts.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:cfc181ac-f273-486b-a8db-5dc2010cc436",
+      "source_urls": [
+        "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202611/t20261110_4939920.html"
+      ],
+      "source_body_sha256": [
+        "c35ba2b577b3f8eba15a896191cb5e81e24663507830e5cf15ec757b6423dc78"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Competitors tested practical AI-related skills through tasks such as programming drones for emergency work.",
+        "human_direction": "none",
+        "human_label": "Context",
+        "for_ai": "The competition showcased drone uses and added to the skilled workforce in AI-related fields.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:bda66ee1-3913-4d83-93f8-612d50c56d48",
+      "source_urls": [
+        "https://aimultiple.com/risks-of-generative-ai"
+      ],
+      "source_body_sha256": [
+        "5917eea6f278d1c798a9764df358e076112ab321397ca1ec6368a8b89419f155"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "People may be misled by false AI answers, have sensitive data exposed, or face risks to their images and jobs.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "Generative AI can produce false or biased answers and may reveal sensitive information from its training data.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:a717138d-2d4c-4226-9816-50eeff397f43",
+      "source_urls": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons"
+      ],
+      "source_body_sha256": [
+        "d38ec0f02b033f01cc120663856473982ec9c572aa29a23f9de0879ddce21ad7"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Organizations face risks when an altered AI assistant can use its existing access to run an attacker’s command.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "Advanced AI systems can also help detect suspicious changes in other systems, according to Microsoft.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "loss",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:a43fac3a-f99e-4bbd-8b2f-3d05054d7d6a",
+      "source_urls": [
+        "https://www.theguardian.com/technology/2026/nov/10/australia-manadatory-reporting-openai-medicare-hack"
+      ],
+      "source_body_sha256": [
+        "41d92098ba3e2a4134d5bbbafdd7fc1cb70b1b9cf135a397ad1b7221f89f14e4"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The proposed reporting and safety duties aim to identify serious incidents and protect people from AI-related risks.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AI companies would face safety obligations and possible new penalties under the proposed changes.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:87ee4ebb-3ad2-4728-9656-1c430d0b2f4d",
+      "source_urls": [
+        "https://theconversation.com/artificial-intelligence-is-desperately-seeking-its-narrative-296067"
+      ],
+      "source_body_sha256": [
+        "767549b4a3bc5308a6dec4be61f6b9e5aa50a3fa3d7162ff66a6db7740ecf8a6"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Stories that present AI’s future as inevitable can obscure people’s choices about jobs, rights and who receives the benefits.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "The stories present AI as both a tool for wider use and a technology that may face tighter rules.",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:6dbd36bd-a7ea-4fab-ac08-5e42feb3758e",
+      "source_urls": [
+        "https://www.energy.gov/science/doe-explainsartificial-intelligence"
+      ],
+      "source_body_sha256": [
+        "0430f05befb749611f7c0db460d66c1ca4c27e9f373fc47521ed1f525204b14e"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "People can use map apps for route suggestions and voice assistants to find information or carry out tasks.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "Artificial intelligence systems can help with defined tasks and, through deep learning, handle more complex requests to voice assistants.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:6856a0c9-ce44-4248-b9ad-81bef5a5dcf5",
+      "source_urls": [
+        "https://www.bfmtv.com/tech/intelligence-artificielle/ia-generative-face-a-un-affaiblissement-cognitif-des-experts-appellent-macron-a-mieux-proteger-les-utilisateurs_AD-202611100680.html",
+        "https://www.sudouest.fr/sciences-et-technologie/intelligence-artificielle/intelligence-artificielle-face-a-l-affaiblissement-cognitif-et-le-risque-de-dependance-emotionnelle-des-experts-remettent-18-propositions-a-macron-pour-proteger-les-utilisateurs-31465094.php"
+      ],
+      "source_body_sha256": [
+        "c9253758c583a524c345048f0a3aeb21102bf4e9dddffdf407ac27684c5fb1b2",
+        "b06636213e49bf9ff60fb6bbbf9ef92dd82e9d846802dcaa0351a80e9a08fcd1"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "People, especially young users, could lose practice in thinking and making decisions if they hand those tasks to AI.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "The proposals would require independent assessments and stronger restrictions on systems available to children.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:0c87435f-3cb8-4ae4-9b12-1fedf35e649e",
+      "source_urls": [
+        "https://www.cnas.org/careers/ai-engineer-senior-ai-engineer-ai-policy-lab"
+      ],
+      "source_body_sha256": [
+        "2207b32e8899d1fcae9063b8d63f8ae818bde0dcd178a9ad1609bf9062dcfb2e"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "CNAS researchers could get custom tools and training to support their policy research.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "The planned tools would help policy researchers handle materials and recurring tasks, with an engineer responsible for building and supporting them.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "gain",
+          "ai": "gain"
+        }
+      }
+    },
+    {
+      "key": "event:07fb392a-4a27-43d1-9bdf-186dbe748e5d",
+      "source_urls": [
+        "https://www.ama-assn.org/press-center/ama-press-releases/ama-artificial-intelligence-can-augment-physicians-don-t-call-it"
+      ],
+      "source_body_sha256": [
+        "4ac4ca88e5e1e6cda75b340a51f521d1f4ff54fe5ffe62a251fa43a92a39d7f6"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Doctors would retain oversight and independent judgment when AI is used as part of a patient’s care.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AI tools could assist with medical tasks, but the AMA says they should not be licensed to practice medicine.",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "gain",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:06a5c958-6e9a-4099-a2f9-bf80b2c17f53",
+      "source_urls": [
+        "https://fr.aleteia.org/2026/11/10/trois-inquietudes-dexperts-face-a-lia-generative"
+      ],
+      "source_body_sha256": [
+        "3c737b1c828a85e051c9c3d4fcc6c5a0f7f29c98bcbfec15ad7206aa5f91d864"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "The experts warn that dependence and online abuse can harm users, particularly children and other vulnerable people.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "The commission proposes stricter design rules and assessment before consumer systems reach the market.",
+        "ai_direction": "loss",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "loss"
+        }
+      }
+    },
+    {
+      "key": "event:f99095a8-2571-41f6-9c86-158b99dbdc5e",
+      "source_urls": [
+        "https://www.ledevoir.com/actualites/societe/1023275/ia-sont-elles-conscientes-entre-coup-publicite-nouvelle-religion"
+      ],
+      "source_body_sha256": [
+        "00c871033630f3d4b7f0b1dc217f8821c3b205aa54e53d449f2ebae3f695647f"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Experts warn that treating AI products as conscious could divert attention from human well-being and give companies excessive influence.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "Researchers disagree about machine consciousness; the article reports no scientific consensus establishing that current AI has subjective experiences.",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "loss",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:b6224960-ef80-4815-9f08-46cdc26740d4",
+      "source_urls": [
+        "https://www.news.cn/world/20261109/f0344b20743945688779798e5983433d/c.html"
+      ],
+      "source_body_sha256": [
+        "241d87a9db2092714337425ea7a8bbb05b6e0823b24332da900fa8ecff2814f8"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "AI can help people but brings shared risks, which the video description says require international cooperation.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "The video description calls for common rules and human choices to guide AI, without specifying a technical or business change.",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:8fe96ae7-0c0d-42e9-b154-0ff4d8a9ce68",
+      "source_urls": [
+        "https://www.idc.com/resource-center/blog/%E6%AD%A5%E5%85%A5agentic%E5%AE%89%E5%85%A8%E6%97%B6%E4%BB%A3%EF%BC%9Aidc-24%E9%A1%B9ai%E8%B5%8B%E8%83%BD%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF%E5%9B%BE%EF%BC%8C%E5%8B%BE%E5%8B%92"
+      ],
+      "source_body_sha256": [
+        "9e787028d1806e760264065b191395c18821c0aef24840cff4117ace46753d03"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Security staff could face less repetitive work, but incorrect automated actions could disrupt services.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "IDC expects security tools to take on more planning and action, subject to reliability checks and human control.",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:82172112-a095-48fc-8b21-0379c0dace7b",
+      "source_urls": [
+        "https://www.valdosta.edu/about/news/releases/2026/11/generative-ai-becomes-lesson-in-intergenerational-learning-at-vsu.php"
+      ],
+      "source_body_sha256": [
+        "68a1c3af3859869c56b4ebbe4d2415d811ad4d5bca9596e9341ee1925a2160af"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Older learners shared creative uses of AI, and the students said teaching helped them expand their knowledge.",
+        "human_direction": "gain",
+        "human_label": "Benefits",
+        "for_ai": "AI became part of a class for older learners, where students discussed how it works and can be used.",
+        "ai_direction": "none",
+        "ai_label": "Context",
+        "box_effects": {
+          "human": "gain",
+          "ai": "none"
+        }
+      }
+    },
+    {
+      "key": "event:0747d38f-7bb0-4c09-95e5-58d71445a866",
+      "source_urls": [
+        "https://ihedn.fr/lundis-de-lihedn/louis-perez-lintelligence-artificielle-militaire-irrigue-toute-la-chaine-de-decision"
+      ],
+      "source_body_sha256": [
+        "6d44a62c55f30b4280e8958a580fb04d42d9031e33d9d4cec9fcd5365d8c76ce"
+      ],
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "after": {
+        "for_humans": "Military staff may rely on AI recommendations under pressure, while the source says responsibility for mistakes can be hard to establish.",
+        "human_direction": "loss",
+        "human_label": "Risks",
+        "for_ai": "Technology firms gain influence through military AI contracts, but governments can impose demands and restrictions on their systems.",
+        "ai_direction": "mixed",
+        "ai_label": "Benefits and risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "mixed"
+        }
+      }
+    },
+    {
+      "key": "event:a092060b-78ae-46e7-9d29-fcac40c9bcdd",
+      "source_urls": [
+        "https://www.aoshearman.com/en/insights/generative-ai-and-international-arbitration-the-road-to-efficiency-or-ruin"
+      ],
+      "source_body_sha256": [
+        "eab4ed6dbb799179100a832503382278a1cb8874d9cd056ec7bc0295150bf450"
+      ],
+      "reason": "An earlier box-only correction locked this story before its full summary was saved; complete it from the retained A&O Shearman panel account.",
+      "after": {
+        "for_humans": "AI can save lawyers time, but false evidence and unchecked arguments can make disputes less fair.",
+        "human_direction": "mixed",
+        "human_label": "Benefits and risks",
+        "for_ai": "Lawyers are using AI to review documents and draft papers, with checks and clear reporting still needed.",
+        "ai_direction": "gain",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "mixed",
+          "ai": "gain"
+        },
+        "headline": "Lawyers discuss time savings and fairness risks from AI in international disputes",
+        "deck": "An arbitration panel describes everyday uses alongside false evidence, hidden reasoning and the need for human checks.",
+        "what_happened": "At Hong Kong Arbitration Week, a panel hosted by A&O Shearman discussed how content-generating AI is changing international commercial disputes. Participants described using it for document review, legal research and first drafts of legal papers.",
+        "why_it_matters": "The panel identified faster work and possible cost savings, but warned that misuse can make proceedings less fair. Human oversight and clear disclosure of AI use remain central to its recommendations.",
+        "body_paragraphs": [
+          "The account identifies risks including fabricated evidence, biased answers and lengthy submissions containing mistakes. Faster proceedings conducted only through documents can leave decision-makers less time to spot these problems.",
+          "The lawyers also note that advanced tools cost money and that time saved may be spent developing more complex arguments. They describe disclosure requirements as one safeguard and emphasize that people remain accountable for the work."
+        ],
+        "has_editorial": true,
+        "summary_basis": "Source-checked editorial correction",
+        "reading_minutes": 1,
+        "claim_status": "reporting",
+        "limitation": "This is an account of a professional panel, not a controlled measurement of arbitration costs or outcomes."
+      }
+    }
+  ],
+  "research": [
+    {
+      "key": "paper:e9e98ee039379db50cf52e55",
+      "source_urls": [
+        "https://arxiv.org/html/2611.17334v1"
+      ],
+      "reason": "The existing headline ended mid-sentence. The full paper reports parity for joint from-scratch training versus separate image pretraining at matched budgets. Replace only the incomplete headline.",
+      "after": {
+        "headline": "Study finds AI can learn images without a separately trained image component"
+      }
+    }
+  ],
+  "reviewed_edition": "2026-W46",
+  "reviewed_news_count": 67
+}

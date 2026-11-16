@@ -14,7 +14,8 @@ SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  'data/editorial/research-reading-corrections-2026-11-11.json',
                  'data/editorial/plain-language-corrections-2026-11-12.json',
                  'data/editorial/concise-box-corrections-2026-11-13.json',
-                 'data/editorial/article-access-corrections-2026-11-15.json')
+                 'data/editorial/article-access-corrections-2026-11-15.json',
+                 'data/editorial/w46-completion-corrections-2026-11-16.json')
 
 
 def reading_proof(key, root=ROOT):

@@ -76,7 +76,7 @@ def candidates(release,sym,maps,force=False):
         if is_locked('event:'+eid,ROOT):
             correction=approved.get('event:'+eid,{})
             first_summary_fields={'headline','for_humans','for_ai','human_direction',
-                                  'ai_direction','human_label','ai_label'}
+                                  'ai_direction','human_label','ai_label','box_effects'}
             first_summary_allowed=bool(correction) and not latest and set(correction)<=first_summary_fields
             if not first_summary_allowed:
                 counts['unchanged']+=1;continue

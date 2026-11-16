@@ -23,6 +23,38 @@ class SourceAuditCorrections(unittest.TestCase):
         self.assertTrue(social.country_scene_candidate(page('Canada winter landscape.jpg'), 'CA'))
         self.assertTrue(social.country_scene_candidate(page('Shanghai Skyline1.jpg'), 'CN'))
 
+    def test_w46_completion_keeps_complete_copy_and_repairs_missing_pages(self):
+        audit=json.loads((ROOT/'data/editorial/w46-completion-corrections-2026-11-16.json').read_text())
+        keys=[r['key'] for r in audit['news']]
+        self.assertEqual(len(keys),67)
+        import news_reading
+        for entry in audit['news']:
+            after=entry['after']
+            self.assertTrue(after['for_humans'])
+            self.assertTrue(after['for_ai'])
+            self.assertFalse(news_reading.style_problem(after))
+            news_reading.validate_effects(after['box_effects'],after)
+            self.assertEqual(after['human_direction'],after['box_effects']['human'])
+            self.assertEqual(after['ai_direction'],after['box_effects']['ai'])
+        self.assertEqual(len(keys),len(set(keys)))
+        existing={'key':'event:already-complete-unrelated','headline':'Preserve this','has_editorial':True,'body_paragraphs':['Original complete text.']}
+        full_keys=[r['key'] for r in audit['news'] if r['after'].get('has_editorial')]
+        rows=[{'key':key,'has_editorial':False,'body_paragraphs':[]} for key in full_keys]+[copy.deepcopy(existing)]
+        corrections.apply_corrections(rows)
+        for row in rows[:-1]:
+            self.assertTrue(row['has_editorial'])
+            self.assertTrue(all(row.get(k) for k in ('headline','deck','what_happened','why_it_matters','body_paragraphs')))
+            self.assertTrue(corrections.is_locked(row['key']))
+        self.assertEqual(rows[-1],existing)
+        venue=next(r for r in rows if r['key']=='event:76b0b3fe-5908-4c17-b875-e6e27d5b23a8')
+        self.assertIn('57 avenue de Montjoux',' '.join(venue['body_paragraphs']))
+        self.assertNotIn('no venue',venue['headline'])
+        chart=next(r for r in rows if r['key']=='event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3')
+        self.assertIn('only the published chart captions',chart['limitation'])
+        before=copy.deepcopy(rows)
+        corrections.apply_corrections(rows)
+        self.assertEqual(rows,before)
+
     def test_registered_audit_repairs_content_without_changing_other_articles(self):
         audit = json.loads((ROOT/corrections.SOURCE_AUDITS[0]).read_text())
         rows = [{'key': row['key'], **copy.deepcopy(row['before'])} for row in audit['news']+audit['research']]

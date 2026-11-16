@@ -8,7 +8,7 @@
 <div class="lead-story">
 {% if lead %}<div class="story-kicker"><span>IN FOCUS TODAY</span><span>{{ lead.topic_label }}</span><span>{{ lead.reading_minutes }} min read</span></div><h1><a href="{{ local(lead.path) }}">{{ lead.headline }}</a></h1><p>{{ lead.deck }}</p><div class="lead-bottom"><a class="read-link" href="{{ local(lead.path) }}">Read the brief <span aria-hidden="true">→</span></a><span data-lead-source>{{ lead.publisher }} · Reported {{ lead.display_date }}</span></div>{% else %}<h1>Checked articles are being prepared.</h1><p><a href="{{ local('archive/index.html') }}">Browse the original source records</a> while their Brief summaries are reviewed.</p>{% endif %}
 </div>
-<div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
+<div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>Discovery feeds: {{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
 </section>
 {% include 'discovery-carousels.html' %}
 {% if weekly_overview %}
