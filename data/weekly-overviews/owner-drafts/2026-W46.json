@@ -1,0 +1,80 @@
+{
+  "release_id": "2026-W46",
+  "market_keys": {
+    "US": "event:2a21eff3-4581-4b48-9639-71b63a5f0300",
+    "CA": "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41",
+    "CN": "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a",
+    "FR": "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa",
+    "GB": "event:ff271f43-be97-4765-b008-5a174f5bbfc6"
+  },
+  "paper_keys": [
+    "paper:d5c89b3070353457efa8c3a8",
+    "paper:5c79f9cd55c88ba44d434d20"
+  ],
+  "markets": {
+    "title": "People are still shaping how AI is used",
+    "paragraphs": [
+      [
+        {
+          "text": "At Penn State, a planned AI tutor would give engineering students hints instead of finished answers. Whether it helps them learn is still being studied.",
+          "source_key": "event:2a21eff3-4581-4b48-9639-71b63a5f0300"
+        },
+        {
+          "text": "A BBC report shows AI entering older industries too, including carpet making. It can save time, but people still need to check the work.",
+          "source_key": "event:ff271f43-be97-4765-b008-5a174f5bbfc6"
+        }
+      ],
+      [
+        {
+          "text": "In France, a columnist says AI can help people keep track of new information. He argues that dedicated tracking tools still matter because they let people check where an answer came from.",
+          "source_key": "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa"
+        },
+        {
+          "text": "Ontario's law commission wants clearer rules and a public list of AI used in criminal justice. Whether those ideas will be adopted is unclear.",
+          "source_key": "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41"
+        }
+      ],
+      [
+        {
+          "text": "A Fudan scholar makes the case for China to help shape global AI rules. The article presents an argument, not evidence that this approach has improved outcomes.",
+          "source_key": "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a"
+        },
+        {
+          "text": "The stories are very different. They keep coming back to a simple point. People should have room to learn, check the work, and question the rules.",
+          "source_key": ""
+        }
+      ]
+    ],
+    "image_key": "culture:219319ff0fc73668b76421dc",
+    "image_reason": "A still life suggests looking carefully at what is presented."
+  },
+  "research": {
+    "title": "Medical AI has to work beyond familiar images",
+    "paragraphs": [
+      [
+        {
+          "text": "Two new preprints look at a practical problem in medical AI. If a system works on one set of images, will it work somewhere else?",
+          "source_key": ""
+        },
+        {
+          "text": "One team combined sets of chest X-rays and mammograms, even though the images were marked in different ways. Its model detected several findings better than a model trained on one set, but the gains were uneven. It was not tested in clinical care.",
+          "source_key": "paper:d5c89b3070353457efa8c3a8"
+        }
+      ],
+      [
+        {
+          "text": "The second team adapted a general image model for colonoscopy, breast ultrasound and skin images. It did better on images from other institutions, but models built for each task still held their own on familiar data and sometimes drew more precise outlines.",
+          "source_key": "paper:5c79f9cd55c88ba44d434d20"
+        }
+      ],
+      [
+        {
+          "text": "The studies measure different jobs. One spots findings, the other draws their outlines. Their scores cannot be lumped together. Taken together, they show that the mix of images and the place of testing can change the result. Neither preprint shows better care for patients.",
+          "source_key": ""
+        }
+      ]
+    ],
+    "image_key": "culture:61b471193719e6e0b51ecbbf",
+    "image_reason": "A landscape across four seasons suggests that conditions can change."
+  }
+}

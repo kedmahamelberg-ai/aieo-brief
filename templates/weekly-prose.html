@@ -16,7 +16,7 @@
   {% endif %}
   </ul>
 </aside>
-<p class="weekly-scope">{{ section.scope_note }}</p>
+{% if section.scope_note %}<p class="weekly-scope">{{ section.scope_note }}</p>{% endif %}
 {% if section.kind == 'markets' %}<p class="weekly-scope">Country names identify discovery feeds. A linked story may describe another place.</p>{% endif %}
 {% else %}
 <p>{{ section.deck }}</p>
