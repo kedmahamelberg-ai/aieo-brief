@@ -7056,6 +7056,43 @@
       },
       "output_sha256": "524eb6fc0d4476d0707a2f59ad230fac0596eb29d57ea3c0e188aed887bd90aa",
       "policy": "brief-english-display-v1"
+    },
+    "9f02bd4bc4309a15a74d3713bc17a24dcce3d385dc27d812d0c2accf1ef062cb": {
+      "english": {
+        "0": "Nanjing University of Information Science and Technology",
+        "1": "Nanjing University of Information Science and Technology"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "429dc78e7f6691490d0edebda60b022f1a1551312219a0533d7cd05c245e86ad",
+      "policy": "brief-english-display-v1"
+    },
+    "473e4ebac6f65fc75acd708ef5815bac976dd132d99b9f256e2bab1ced1400ec": {
+      "english": {
+        "0": "Open vs closed AI tokens"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "5ab12758e8502ba7fd7b3a097e372406263dd3a64353881969269a0c07ac4119",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
