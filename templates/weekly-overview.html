@@ -48,7 +48,7 @@
 
   <article id="research-compass" data-engagement-key="{{ weekly_research_item.key }}" class="weekly-feature weekly-feature-detail weekly-feature-research{% if page_weekly_overview.editorial_version %} weekly-editorial{% endif %}">
     <figure>
-      {% if page_weekly_overview.research.image_reason %}<p class="weekly-image-metaphor">{{ page_weekly_overview.research.image_reason }}</p>{% endif %}
+      {% if page_weekly_overview.research.image_reason and page_weekly_overview.research.image_reason_visible is not sameas false %}<p class="weekly-image-metaphor">{{ page_weekly_overview.research.image_reason }}</p>{% endif %}
       <img src="{{ local(page_weekly_overview.research.image_path) }}" alt="{{ page_weekly_overview.research.image_alt }}" width="1200" height="675">
       <figcaption><a href="{{ page_weekly_overview.research.image_source_url }}" target="_blank" rel="noopener noreferrer">{{ page_weekly_overview.research.image_caption }}</a> · {{ page_weekly_overview.research.image_credit }} · {{ page_weekly_overview.research.image_rights }}.</figcaption>
     </figure>
