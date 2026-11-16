@@ -8,6 +8,23 @@ from unittest.mock import Mock
 
 
 class NewsSourceSupport(unittest.TestCase):
+    def test_public_chart_reads_all_captions_and_rejects_changed_content(self):
+        import hashlib
+        from source_supplements import verified_text
+        response=Mock(text='<script>notExecuted(); {"caption_text":"<p>First chart.</p>","caption_text":"<p>Second chart.</p>"}</script>')
+        response.raise_for_status.return_value=None
+        expected='First chart.\nSecond chart.'
+        source={'source_url':'https://flo.uri.sh/story/3852596/embed','evidence_sha256':hashlib.sha256(expected.encode()).hexdigest()}
+        self.assertEqual(verified_text(source,get=lambda *a,**k:response),expected)
+        self.assertEqual(verified_text({**source,'evidence_sha256':'0'*64},get=lambda *a,**k:response),'')
+        self.assertEqual(verified_text({**source,'source_url':'https://flo.uri.sh/private/3852596'},get=lambda *a,**k:response),'')
+
+    def test_spelled_percent_units_preserve_exact_values(self):
+        aliases=engine.source_numeric_aliases('56 per cent, 49 percent, 10,6 pour cent')
+        self.assertTrue({'56%','49%','10.6%'} <= aliases)
+        self.assertNotIn('57%',aliases)
+        self.assertNotIn('56%',engine.source_numeric_aliases('56 percentage points'))
+
     def test_exact_chinese_quantity_spellings(self):
         aliases=engine.source_numeric_aliases('3.7万、8.4万个、1.2万多个站点、54万余条、超千个、双十一')
         self.assertTrue({'37,000','84,000','12,000','540,000','1,000','11'} <= aliases)
