@@ -8,6 +8,20 @@ from unittest.mock import Mock
 
 
 class NewsSourceSupport(unittest.TestCase):
+    def test_exact_chinese_quantity_spellings(self):
+        aliases=engine.source_numeric_aliases('3.7万、8.4万个、1.2万多个站点、54万余条、超千个、双十一')
+        self.assertTrue({'37,000','84,000','12,000','540,000','1,000','11'} <= aliases)
+        self.assertNotIn('38,000',aliases)
+        self.assertNotIn('120,000',aliases)
+        self.assertNotIn('1,000',engine.source_numeric_aliases('千分之一'))
+
+    def test_seed_skips_unused_paid_reading_but_reviews_full_source(self):
+        draft,sources=fixture()
+        with patch.object(engine,'compile_evidence',side_effect=AssertionError('unused paid reading')), patch.object(engine,'review_scope',return_value=accepted_review()) as review:
+            result,proof=engine.write_story({'draft_seed':draft},{},sources)
+        self.assertEqual(review.call_args.args[1][0]['evidence'],sources[0]['evidence'])
+        self.assertEqual(proof['draft_origin'],'reviewed_editorial_seed')
+
     def test_rejection_feedback_stays_in_private_provenance(self):
         client = Mock()
         error = engine.EditorialError('unsupported_number', 'Safe public reason',
