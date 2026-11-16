@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-15T16:49:11+00:00",
-  "last_checked_at": "2026-11-15T18:55:42.253837+00:00",
+  "monitor_as_of": "2026-11-16T14:00:00+00:00",
+  "last_checked_at": "2026-11-16T19:55:37.791474+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1313,6 +1313,28 @@
       "summary": "The spokesperson calls for credible media, user ID on social media, and European action against misinformation ahead of elections, emphasizing labeling AI videos. He highlights economic gains without added debt and outlines plans for job creation and tax support to aid citizens financially.",
       "body_paragraphs": [],
       "input_fingerprint": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6"
+    },
+    "c98e9ffe717fbe342424": {
+      "id": "c98e9ffe717fbe342424",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr261929",
+      "date": "2026-11-16",
+      "headline": "Malta and Spain’s audit offices discussed AI confidentiality concerns and climate change’s implications for food security.",
+      "summary": "Malta’s National Audit Office met with a Spanish Court of Audit delegation to discuss existing and potential cooperation, including peer learning, digitalisation, artificial intelligence and climate change oversight. Both institutions reaffirmed their strong relationship and commitment to continued collaboration and knowledge exchange.",
+      "body_paragraphs": [],
+      "input_fingerprint": "4a4f04a2627da0728e530a3d1ca73aa4d97854710849c1db30eeea7646c80752"
+    },
+    "44c30360c6e8388a859a": {
+      "id": "44c30360c6e8388a859a",
+      "country": "Slovakia",
+      "country_code": "SK",
+      "url": "https://www.vlada.gov.sk/tlacove-spravy/robert-fico-po-samite-v-dubline-konecne-europa-bude-sediet-za-stolom-s-rozhodujucimi-hracmi/",
+      "date": "2026-11-16",
+      "headline": "Fico welcomes European participation in Ukraine-related talks and calls for strict AI regulation.",
+      "summary": "After the Dublin summit, Robert Fico welcomed plans for an EU delegation to join talks with Ukraine, Russia and the United States, while noting agreement would be difficult. Leaders also discussed strict AI regulation and potential applications in several sectors.",
+      "body_paragraphs": [],
+      "input_fingerprint": "2fc1d33aafeeb25c1496fbfad614d0caf9d4c53e73089e401cd635da3df07d54"
     }
   },
   "checked": {
@@ -1429,7 +1451,9 @@
     "80fe0d2b2dc9532f9e29": "4e640b895b5cf70c77ec3308a7eeef288be470b94e2d1c6032ee59ca4b189b00",
     "fef43dfa7e748f727604": "7d65ca895117a6b4576685c0cf64d1efb0e02a45e24c59110a0eb57447f9396c",
     "53bed82538ab94c28daf": "02fca7e213a33a0052c43b31bf0c9407f4c66004bb38561a232a2429735a9b15",
-    "01fe81c9712582479724": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6"
+    "01fe81c9712582479724": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6",
+    "c98e9ffe717fbe342424": "4a4f04a2627da0728e530a3d1ca73aa4d97854710849c1db30eeea7646c80752",
+    "44c30360c6e8388a859a": "2fc1d33aafeeb25c1496fbfad614d0caf9d4c53e73089e401cd635da3df07d54"
   },
   "retry": {},
   "pending": 0,
