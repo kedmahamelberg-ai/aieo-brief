@@ -34,7 +34,7 @@ class NewsReading(unittest.TestCase):
                  'complete_content':False,'content_sha256':'edition','release_id':'2026-W45'}
         sym={'evidence':[{'event_id':eid}]}
         source={'source_number':1,'publisher':'Source','headline':'Article','evidence':'Complete source text.'}
-        for correction, expected in (({'for_ai':'No AI outcome is described.','box_effects':{'human':'none','ai':'none'}},1),
+        for correction, expected in (({'for_ai':'No AI outcome is described.','location_label':'Japan','box_effects':{'human':'none','ai':'none'}},1),
                                      ({'has_editorial':False},0), ({},0)):
             with self.subTest(correction=correction), tempfile.TemporaryDirectory() as folder:
                 root=Path(folder)
