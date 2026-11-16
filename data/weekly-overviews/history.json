@@ -96,7 +96,7 @@
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "c5a6c66c1abee0d92b7271a37b2bcf526104dd622c9d10141130479a3fbed3fd",
+        "input_hash": "2a0aaab4479cea54468655349c64059477ff2cca3491e776684b8c80ed85e6c8",
         "attempts": 0
       },
       "research": {
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "c51b73160b551d0b5cd6cc853cb9552a3d287b4827c82a950bbfac3fa47e7354"
+      "content_sha256": "6d5496839fe667fd5b85c1768af27d5d7cb5a5aa4cf505a12f19b491d2dd1609"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
