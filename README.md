@@ -49,12 +49,14 @@ independently checked against official pages on 13 November 2026;
 `data/governments/initial-source-checks.json` retains the historical URLs and
 body hashes. New imports use the Monitor's classification and translation.
 
-The day overview includes the current week’s Monitor AI announcements and shuffles
-them on every entrance or refresh. A saved browser reading order prevents an
-identical repeat when at least two items are available. Publication dates stay
-inside each card. A quiet new week uses the latest week with checked items and
-labels it accordingly. The country view groups by issuing government and
-can filter one country. Both views reuse the same article identities, cards and
+Governments say retains every published announcement behind two date filters:
+Last 7 days and Older. Last 7 days is the default and covers today and the preceding
+six calendar days in Europe/Amsterdam. Older includes every earlier date without
+a retention cutoff. Both group announcements by publication date, newest first.
+Monday imports never reset the list to a new calendar week. Story URLs continue
+to work regardless of the date filter, including links in approved social posts.
+Reading order can vary within each date; both filters reuse original article
+identities, publication dates, cards and
 existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
 credit and rights links. Country-context images are not presented as event photos.
@@ -99,3 +101,4 @@ For platform-specific campaign attribution, run `python scripts/import_social_li
 Use the complete `https://` address as plain text on its own line in social posts. Verify the platform renders a hyperlink after saving and click it to check the article and tracking. LinkedIn may display its own `lnkd.in` link. For code-only maintenance, include `[no-cost-build]` in the push commit message to disable paid English translation for that build; stored translations remain available.
 
 Research now attempts the original-source PDF before writing. Every extracted page must be readable and the title must match; complete text is read directly or through verified notes covering all segments. Private provenance retains PDF/text hashes and page counts. Public output says “Summary of the paper” only after successful text reading and review; unavailable PDFs retain an abstract label and retry after seven days. Existing entries are automatically queued for this reading upgrade. The optional `data/research/reading-priority.json` lists paper keys to process first during a backfill. Practitioner writing targets a complete 30-second overview (at most 110 words) and a full brief of at most 200 words, with plain-language findings, a carefully framed example and uncertainty. Image-only charts are not interpreted by text extraction.
+
