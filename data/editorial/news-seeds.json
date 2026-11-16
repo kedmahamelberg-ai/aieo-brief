@@ -513,6 +513,903 @@
           }
         ]
       }
+    },
+    "1e3660cd-11f9-4261-b5e8-fe929476364a": {
+      "evidence_sha256": [
+        "f92875c8d57344d123f7c2513116e7628685349a09d568a689e0aefd3142b3c1"
+      ],
+      "draft": {
+        "editorial_headline": "PracticIA asks librarians and information professionals how they use artificial intelligence",
+        "editorial_deck": "An anonymous survey asks about everyday use and the support people receive at work.",
+        "what_happened": "The PracticIA research project has opened a questionnaire for librarians, archivists and other information professionals. It asks how they use generative artificial intelligence and how their employers support that use.",
+        "why_it_matters": "The researchers want to understand working practices and people’s views of the technology. The announcement invites responses; it does not present survey findings.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The project is led by research teams at Paris Nanterre and Lille universities. GIS-URFIST funds it, while ADBS and GF2i support it. The questionnaire is anonymous and takes about 10 to 15 minutes."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is a survey invitation, with no results reported.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Le projet PracticIA lance une enquête sur les usages de l’IA générative chez les professionnels de l’information. (DC Studio/Magnific)\n\nFacebook\n\nTwitter\n\nLinkedin\n\nMail\n\nImprimer\n\nFacebook\n\nTwitter\n\nLinkedin\n\nMail\n\nComment les professionnels de l’information utilisent-ils l’IA générative ? Le proje"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Comment utilisez-vous l’IA générative ? Comment cette technologie est-elle entrée dans votre quotidien professionnel ? Ou encore, est-ce que votre organisation vous accompagne dans ses usages ? Le projet de recherche PracticIA lance\n\nune enquête\n\npour mieux comprendre les pratiques des professionnel"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Ce projet explore les discours et perceptions autour des usages de l’intelligence artificielle, et en particulier de l’\n\nIA générative\n\n(IAg), dans la gouvernance de l’information\", explique le laboratoire GERiiCO. \"Il s’intéresse aux pratiques concrètes des professionnel·les de l’information-docume"
+          }
+        ]
+      }
+    },
+    "51020e2a-9919-402c-9010-583d9a28d8ee": {
+      "evidence_sha256": [
+        "cbff1e316c0cac75286c4749b98866b8cf869ffe941c06fe2c46e74aa21bda6d"
+      ],
+      "draft": {
+        "editorial_headline": "Guangxi adapts artificial intelligence to local factories and Southeast Asian markets",
+        "editorial_deck": "A regional strategy puts existing technology and local industrial data ahead of building ever larger systems.",
+        "what_happened": "Guangxi is pursuing an artificial intelligence strategy that combines technology developed elsewhere in China with local industrial uses and demand in Southeast Asia. The report describes fruit sorting, factory robot testing and work to adapt products for overseas markets.",
+        "why_it_matters": "The approach depends on matching technology to real tasks. Local factory data, language support and different national standards all matter to making the systems useful.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "A passionfruit producer tells the reporter its sorting equipment uses images and scans to judge fruit. A robot testing centre gathers data from simulated factory work, including changes in lighting and the way parts are positioned.",
+          "The China–ASEAN cooperation centre collects requests for possible uses and publishes opportunities for suppliers. The report presents this as a way to connect industrial needs with companies that can meet them."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The examples and performance claims come from the organizations quoted in the report.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "广西坚持有所为、有所不为，摆脱“拼算力、拼模型”思维，不盲目追逐底层大模型研发，走出一条“北上广研发+广西集成+东盟应用”的差异化发展路径。\n\n今年前8个月，广西人工智能（AI）及新一代信息技术产业增加值增长12.2%。从顶层设计到产业集聚，从技术引进到场景落地，“广西集成”正从战略构想加速转化为现实，成为抢占人工智能赛道的核心突破口。\n\n作为我国面向东盟开放合作的桥头堡，广西拥有钢铁、汽车制造、铝业、制糖、有色金属等一批千亿元级产业。大量传统产业迫切需要智能化改造，“广西集成”优势得天独厚。\n\n在钦州市钦南区的百香果AI智能分选仓内，一颗颗百香果顺着传送带有序流转，并依据果形、色泽等外观特征"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "在钦州市钦南区的百香果AI智能分选仓内，一颗颗百香果顺着传送带有序流转，并依据果形、色泽等外观特征依次落入不同的分拣箱。“过去依靠人工分拣，分级标准很难统一，通过360度识别+CT扫描，AI智能分选机果品识别准确率稳定在90%左右。”广西钦赐农业科技有限公司总经理邓福斌说。\n\n以场景补充数据，以数据反哺产业。从最初简单的好果、次果，逐步细化到精特果、精大果、精中果等多级品类，数据不断累积，分选模型判定标准愈发精细。这一模式不仅在农业领域得到验证，在工业领域同样落地。\n\n走进广西具身智能数据采集及测试中心，模拟工业车间内，数十台智能机器人穿梭于物料垛间，反复抓取汽车零部件，摄像头与各类传感器同步"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "需求清单和开放场景，解决“需求在哪里、场景对谁开放”；而场景能否真正落地东盟，还取决于有没有跨境验证、标准适配和本地化配套的承接平台。中国—马来西亚钦州产业园区正尝试补上这一关键环节。\n\n“园区正依托‘两国双园’独特区位与跨境合作机制，打造广西AI集成技术走向马来西亚乃至整个东盟的前沿窗口。”中马钦州产业园区经济发展局主管周有松告诉记者，依托园区载体，搭建联合测试验证环境，为更多国内AI成果提供了打磨空间，完成“预出海”后，再向东盟其他国家辐射推广。\n\n榴莲智慧采收系统、空地一体灭火装备、植保无人机等成果在园区内尽数展现。“下一步将推动标准互认、配套技术完善，减少企业出海重复适配成本。”周有松"
+          }
+        ]
+      }
+    },
+    "f156dc63-9ac8-497a-bda3-df66cc863209": {
+      "evidence_sha256": [
+        "08b46ee4f0dc6df98208743ca2ca555162a0853c5586134e724e3f7f38244790"
+      ],
+      "draft": {
+        "editorial_headline": "CNN reporter explores everyday artificial intelligence uses in Shenzhen and Dongguan",
+        "editorial_deck": "A short Xinhua video description lists delivery drones, automatic parking and voice assistants.",
+        "what_happened": "Xinhua says CNN reporter Rhea Mogul visited Shenzhen and Dongguan to experience uses of artificial intelligence in everyday life. Its video description mentions food delivery by drone, cars that park automatically, voice assistants and a locally developed operating system.",
+        "why_it_matters": "The description connects those experiences with Mogul’s reflections on China’s ambitions and possible future. It offers examples from her visit rather than detailed findings about each technology.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The accompanying text says Mogul saw how Chinese developers were building cities around artificial intelligence. It reports her impressions but provides no technical assessment of the systems shown."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This reading covers Xinhua’s short accompanying text, not the video itself.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "无人机配送外卖、汽车自动泊车、智能语音助手、自研操作系统……美国有线电视新闻网记者雷娅·莫古尔近日走进深圳和东莞，亲身体验中国人工智能发展成果在日常生活中的广泛应用，亲眼目睹中国研发人员如何打造人工智能城市。她感慨，“从中得以窥见这个国家未来可能的面貌”和“中国的雄心”。（视频：程大雨、董亚雷、杨依然）"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "美国有线电视新闻网记者雷娅·莫古尔近日走进深圳和东莞，亲身体验中国人工智能发展成果在日常生活中的广泛应用，亲眼目睹中国研发人员如何打造人工智能城市。她感慨，“从中得以窥见这个国家未来可能的面貌”和“中国的雄心”。（视频：程大雨、董亚雷、杨依然）"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "她感慨，“从中得以窥见这个国家未来可能的面貌”和“中国的雄心”。（视频：程大雨、董亚雷、杨依然）"
+          }
+        ]
+      }
+    },
+    "1237de0d-08f3-4729-9fad-c022059fd52f": {
+      "evidence_sha256": [
+        "ee5ed51414ef010683a1c2e5f0215add2aa97101ea4654f0205c8aa1cad50312"
+      ],
+      "draft": {
+        "editorial_headline": "IBM challenges three assumptions that hold smaller businesses back from artificial intelligence",
+        "editorial_deck": "The company argues that available tools and training can make adoption more practical.",
+        "what_happened": "IBM argues that smaller businesses often overestimate the resources needed to start using generative artificial intelligence. Its article challenges assumptions about cost, skills and the difficulty of putting the technology to work.",
+        "why_it_matters": "IBM’s advice is to consider available tools, staff training and safeguards together. The argument comes from a supplier promoting its own products and examples.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The article describes Make Music Count using watsonx for personalized mathematics learning. It also presents Ovum Health’s use of the technology to answer fertility questions with medically validated information.",
+          "These examples support IBM’s case for trying the technology in a defined business task. They are examples presented by IBM, rather than an independent comparison of products."
+        ],
+        "claim_status": "company_claim",
+        "limitation": "IBM presents its own argument and product examples.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Les dirigeants surestiment les ressources nécessaires pour se lancer dans l’IA et méconnaissent souvent les technologies et les formations disponibles. Allons droit au but : votre entreprise ne peut plus se permettre d’attendre. Si vous dirigez une entreprise et ne misez pas sur l’IA, sachez que vos"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Make Music Count a utilisé IBM® watsonx pour personnaliser les plans de cours destinés aux élèves de sa plateforme d’apprentissage. Ceux-ci peuvent ainsi poser des questions et bénéficier d’une aide en mathématiques en temps réel par chat. Ce type d’intégration permet aux petites entreprises d’aider"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "gouvernance, la sécurité et la conformité. Alors, pourquoi des millions de petites entreprises pensent-elles qu’une IA capable de produire des résultats concrets est réservée aux grandes entreprises disposant d’importants moyens financiers ?\n\nLes dirigeants surestiment les ressources nécessaires pou"
+          }
+        ]
+      }
+    },
+    "f4540068-4f71-4f18-b728-f8b7453950c5": {
+      "evidence_sha256": [
+        "b935eed9e84f8c6f30097c05c027b77669a9b5125cf1bae3cf7d04cea420fc96"
+      ],
+      "draft": {
+        "editorial_headline": "Chinese laboratories use artificial intelligence and robots to choose the next experiment",
+        "editorial_deck": "The report examines laboratories where results feed back into the design of further tests.",
+        "what_happened": "Science and Technology Daily describes Chinese laboratories combining artificial intelligence, robots and instruments to run experiments. Software proposes a test, equipment carries it out, and the results help decide what to try next.",
+        "why_it_matters": "This goes beyond a machine repeating a fixed set of instructions. The report also describes decisions that remain with scientists and the need for safety rules.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "At a Nanjing drug research company, robotic equipment follows experimental plans revised from earlier results. Researchers interviewed for the report distinguish this process from ordinary laboratory automation.",
+          "People still set research directions and oversee important decisions. The report discusses data quality, standards and safety as these laboratories move toward wider use."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The report describes laboratory practice and interviewees’ claims, not proof that an experimental drug is safe or effective.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "ORBIT自动化实验平台的机械臂执行的实验方案，是人工智能（AI）根据上一轮结果自己修订的——没有哪位科学家熬夜写它。落地一年多，6—7条新药研发管线正以这样的节奏并行推进。\n\n过去AI做科研，读文献、算数据，结论停在纸面上；如今它走进物理世界，亲手做实验、验证猜想。AI黑灯实验室，正把大模型从屏幕里请出来，成为人工智能驱动的科学研究（AI for Science）走向物理世界的一条重要路径。\n\n伴随人工智能快速迭代，AI黑灯实验室成为社会关注的热点话题。近日，记者走访相关企业和高校发现，AI黑灯实验室正在我国加速落地，催生智能科研新赛道。AI黑灯实验室是什么？应该怎么建、如何管？相关人士给出"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "“黑灯”不是简单关灯无人，而是人工智能、机器人与精密仪器协同，在较少人工干预的情况下完成实验设计、执行、分析，并优化下一轮方案。\n\n这个理解，是南京信息工程大学人工智能学院讲师曹政从一段亲身经历里得来的——读博期间，他在浙江大学参与自主实验室建设。围绕小分子有机合成，AI设计合成路线，机械臂负责取料、称重、投放，反应完成后由仪器自动分析，结果再反馈给系统，由AI选择或预测下一步实验。\n\n过去，方案由人定好、机器照做；如今，AI根据数据提出下一个实验，机器执行，结果回来再修正判断。曹政解释，这相当于AI用实验验证猜测，再据此调整下一步方案。\n\n科研由此从人工“试配方”，逐步转向AI“算配方”。"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "过去，方案由人定好、机器照做；如今，AI根据数据提出下一个实验，机器执行，结果回来再修正判断。曹政解释，这相当于AI用实验验证猜测，再据此调整下一步方案。\n\n科研由此从人工“试配方”，逐步转向AI“算配方”。\n\n目前，AI黑灯实验室的路径已逐步明朗：先建懂科学知识的基础模型；再用小模型算出下一个最值得做的实验；AI智能体把决策翻译成机械臂、蠕动泵、反应釜能听懂的参数；设备执行后回收结果。闭环就此转起来。\n\n记者在采访时发现：有的实验室里，工程师围着机器转，反复调试参数；也有的实验室里，机器自己在动，人只在旁照看。前者把“手”交给了机器，后者开始把“脑”也交给AI。\n\n如果今晚关掉AI，只留下自"
+          }
+        ]
+      }
+    },
+    "e1ea62ac-6bb5-4864-8ab1-c73343d5e879": {
+      "evidence_sha256": [
+        "91c4f080b3b5d672e950064abbc60ac3f8507ab61dd52ad34af82bac416d1fcf"
+      ],
+      "draft": {
+        "editorial_headline": "Mirendil raises funding for software that helps build new artificial intelligence systems",
+        "editorial_deck": "The startup says its tools divide development work among automated assistants.",
+        "what_happened": "Mirendil has raised $1 billion in a funding round led by Kleiner Perkins and Clearlake Capital. The startup develops software intended to reduce the work involved in building artificial intelligence.",
+        "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing. Those claims concern its own tools and projects.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Mirendil says one researcher used its tools to build a coding system called Mirendil-Base. The company reports that the project took about 3.5 months and cost $10 million, with automated assistants writing more than 99% of its code.",
+          "The company has also introduced Fern, a system focused on programming work for artificial intelligence laboratories. It plans to use upgraded versions of Mirendil-Base to develop more capable language models."
+        ],
+        "claim_status": "company_claim",
+        "limitation": "The development figures and capabilities are claims attributed to Mirendil.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Mirendil Inc., a provider of software that speeds up artificial intelligence development, has raised $1 billion in early-stage funding.\n\nThe startup stated on Thursday that Kleiner Perkins and Clearlake Capital jointly led the Series A investment. They were joined by more than a half-dozen others in"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "The startup stated on Thursday that Kleiner Perkins and Clearlake Capital jointly led the Series A investment. They were joined by more than a half-dozen others including Google LLC.\n\nMirendil was launched last year by two former Google DeepMind and Anthropic PBC researchers. Chief Executive Officer"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "According to Mirendil, Lor can automate that workflow. If an error crops up during the evaluation, the platform fixes it automatically.\n\nEarlier this year, Mirendil asked one of its researchers to build a coding model that can compete with leading open-source LLMs. Usually, such projects are carried"
+          }
+        ]
+      }
+    },
+    "04bb1819-6360-4109-84b4-a282a619191d": {
+      "evidence_sha256": [
+        "10b5429619c044f0dd69ce97ec39e7efb06cdb83cfff93be517db880c97432e6"
+      ],
+      "draft": {
+        "editorial_headline": "EPFL plans a bachelor’s degree in artificial intelligence starting in 2027",
+        "editorial_deck": "The course combines mathematics, computing and practical projects with ethical and social questions.",
+        "what_happened": "EPFL has announced a bachelor’s degree in artificial intelligence with its first intake planned for 2027. The program lasts three years and carries 180 credits.",
+        "why_it_matters": "Students are to learn both how to use the technology and the scientific principles behind it. The university also includes its ethical and social implications in the planned course.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The first year shares foundations in mathematics, physics and programming with computer science. More specialized artificial intelligence teaching follows, alongside practical projects.",
+          "EPFL says the detailed study plan for the academic year 2027-2028 will be published in summer 2027. The page describes a planned degree, not results from students who have completed it."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The detailed curriculum is still to be published.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Première rentrée\n\n2027\n\nPourquoi étudier l’intelligence artificielle ?\n\nL’intelligence artificielle s’impose aujourd’hui comme un outil essentiel dans de nombreux domaines scientifiques et d’ingénierie, de la découverte de nouveaux traitements médicaux à la modélisation du climat terrestre.\n\nA mesur"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Le Bachelor en Intelligence Artificielle de l’EPFL propose aux étudiant·es une formation approfondie fondée sur de solides bases scientifiques, leur permettant de comprendre l’IA, de développer de nouveaux systèmes intelligents et de contribuer aux avancées futures du domaine. Au-delà des compétence"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Au-delà des compétences techniques, le programme encourage également une réflexion critique sur les enjeux éthiques, environnementaux et sociétaux liés aux technologies de l’intelligence artificielle.\n\nQu’est-ce qui distingue ce programme ?\n\n- De solides bases scientifiques : une première année comm"
+          }
+        ]
+      }
+    },
+    "817d1d24-3413-4254-837b-51235018c279": {
+      "evidence_sha256": [
+        "ebef2ef30655ffb75f0b94721e698959a02aace60e5c50eff04807f2e15b1838"
+      ],
+      "draft": {
+        "editorial_headline": "United Kingdom and Norway plan closer cooperation on artificial intelligence",
+        "editorial_deck": "A joint statement identifies possible work on computing, defence, security testing and research.",
+        "what_happened": "Ministers from the United Kingdom and Norway have set out plans to cooperate more closely on artificial intelligence. The statement identifies areas they intend to explore, including computing infrastructure, defence applications and security testing.",
+        "why_it_matters": "The countries want to combine their strengths in research, technology, energy and investment. The statement records intentions rather than creating binding legal duties.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The proposed cooperation includes sharing knowledge about the capabilities and risks of advanced systems. It also covers international rules, research links and exchanges about other emerging technologies.",
+          "The ministers plan to stay in regular contact, with their departments coordinating the work. Cooperation depends on each country’s laws, policies and available resources."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The statement does not establish rights or obligations in domestic or international law.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "A joint statement by the UK and Norway to deepen cooperation on AI, including compute, defence, AI security, and international governance.\n\nKanishka Narayan, UK Minister for Artificial Intelligence, and Torgeir Micaelsen, Norwegian Minister for Digitalisation and Public Governance, met on the margin"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "The ministers committed to explore collaboration in the following potential areas:\n\n- Accelerating cooperation on compute infrastructure and hardware integration to enable secure and resilient commercial hosting of national compute assets and public workloads, and exploring possibilities for the dem"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "This Statement expresses the intentions of the Participants and does not create rights or obligations under international or domestic law. Cooperation under this Statement will be subject to the Participants’ respective laws, policies and available resources. Nothing in this Statement affects the ri"
+          }
+        ]
+      }
+    },
+    "7ff8c2d3-3fa2-4fe2-a81f-80124678db81": {
+      "evidence_sha256": [
+        "94a3c4675d2d0597965e5bd8d846631530b1aad1befc827d1108e73625d2200f"
+      ],
+      "draft": {
+        "editorial_headline": "Cal Poly Pomona connects a kitchen robot with student training and research",
+        "editorial_deck": "The university’s partnership with Miso Robotics includes internships and plans for technical certification.",
+        "what_happened": "Cal Poly Pomona is using Miso Robotics’ Flippy robot at its Burger Envy campus restaurant. The partnership also gives students practical experience with robotics and creates opportunities for graduate research.",
+        "why_it_matters": "The project links a working restaurant with engineering and data analysis. Students can study the equipment in use rather than only in a classroom.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering operation, maintenance and repairs.",
+          "Graduate teams are studying information from the kitchen, including logs and video, to examine how the robot and people work together. The announcement describes that research rather than reporting its results."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The university describes its partnership and planned learning activities; the graduate research findings are not reported.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "A new partnership between Cal Poly Pomona and AI-foodservice solutions company Miso Robotics is bringing autonomous fry station, Flippy, to campus while creating opportunities for students to gain practical experience in engineering, technology, data analytics and operations.\n\nNow operating at Burge"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Now operating at Burger Envy, CPP Enterprises Dining Services’ newest eatery, the collaboration marks Flippy’s first university deployment and serves as the foundation for a broader collaboration involving student internships, technical certification and graduate research.\n\n“Flippy has been a stando"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "student internships, technical certification and graduate research.\n\n“Flippy has been a standout feature since the fall term began,” said David Corral, director of Dining Services. “The fries come out consistently perfect, our staff loves having the extra support in the kitchen and Miso has been an"
+          }
+        ]
+      }
+    },
+    "7aaee0cd-4185-413e-8b48-696783635021": {
+      "evidence_sha256": [
+        "db7155b4f500ed66aa2f55baaac57accc931194ba875d95f9870c85bc8e75e7a"
+      ],
+      "draft": {
+        "editorial_headline": "AWS explains how broadcast teams can switch off unreliable artificial intelligence features",
+        "editorial_deck": "Its technical guide also shows how to return to an earlier AI model or limit output variation.",
+        "what_happened": "An AWS guide describes controls for artificial intelligence features used during live broadcasts. Teams can disable a feature, return to an earlier AI model, or reduce how much its answers vary.",
+        "why_it_matters": "The design provides a way for people to intervene when other checks have not caught a problem. The guide shows fallback behavior intended to keep the underlying service working.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The example uses settings in AWS Lambda and Amazon Bedrock. New calls use changed settings after the update completes; published function versions need a new version and an updated pointer.",
+          "AWS tells teams to measure how long changes take in their own systems. It also describes logging and checks to confirm that an override has taken effect."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is an implementation guide, not a report measuring a deployed system’s performance.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "In this post, I show how to implement this pattern on AWS with AWS Lambda environment variables and Amazon Bedrock. With these runtime controls, you can disable, roll back, or constrain AI features quickly, without redeploying your application.\n\nThe challenge: AI in live pipelines needs a fast overr"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Fast disable: Turn off AI features without waiting for a deployment.\n\n- Model rollback: Revert to a known-good model version without redeploying. Model rollback is a well-established practice in machine learning operations (MLOps). For example, a fan-facing application can revert to the previous mod"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "The key principle: The application continues to function. It degrades gracefully to a non-AI path that still serves the user.\n\nOperational procedures\n\nWhen an operator needs to pull the cord, they use the AWS CLI or AWS Systems Manager to update the relevant environment variable on the Lambda functi"
+          }
+        ]
+      }
+    },
+    "5fb0131d-6087-4785-bde9-77d853e6e5c8": {
+      "evidence_sha256": [
+        "6cd444ac30c85add39f72b7ff76d8c3c339069db07e4283e499e2ac3ffdb5493"
+      ],
+      "draft": {
+        "editorial_headline": "Baidu’s founder argues that companies must redesign work around artificial intelligence",
+        "editorial_deck": "Li Yanhong calls for flexible roles, shared knowledge and repeated measurement of results.",
+        "what_happened": "At Baidu World, founder Li Yanhong argued that artificial intelligence needs a different kind of organization around it. He proposed breaking down job boundaries, recording employees’ practical knowledge and using measured results to improve work repeatedly.",
+        "why_it_matters": "His argument is that installing new technology alone will not deliver its expected economic benefits. He says companies also need to change how tasks and knowledge are organized.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Baidu presented internal figures as early support for the approach. It said daily active automated assistants rose from about 5,000 to 37,000, while completed tasks increased from 84,000 a week to more than a million.",
+          "The event also included product and infrastructure announcements. Li’s broader claims about how jobs will change are predictions, while the internal usage figures are Baidu’s own account."
+        ],
+        "claim_status": "opinion",
+        "limitation": "The organizational argument is Li’s view; the reported internal figures come from Baidu.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "百度创始人李彦宏在开幕式上判断，人工智能的下一幕是“智能组织”，并首次提出“组织进化三原则”：打破岗位边界、沉淀隐性知识、设计流程闭环。“如果说，人工智能是新电能。那么，智能组织就是AI时代的新厂房，是生产力真正发生的地方。”\n\n在李彦宏看来，如果AI技术的上游是能源，下游就是组织能力，“是一个不同于现在通行的科层制的AI原生组织体系，我们把它叫做智能组织。”\n\n他类比工业时代的发展进程指出，AI没有产生预期的经济效益，是因为只更换了电机，没有重新设计工厂。“换一台AI新电机，只是起点；重新设计新厂房，才是分水岭。而这座新厂房，就是智能组织！”\n\n本届大会期间，百度围绕“芯云模体”四层架构，发"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "首先是打破岗位边界。在他看来，岗位是工业时代的单元，任务则是智能时代的单元，未来的组织就是一个任务的网络。“岗位不会消失，但会收敛，未来大致会分为两类岗位：一类是Builder，负责创造新东西；另一类是Seller，负责人与人之间的沟通和连接，让对方对你产生情感、建立信任。”\n\n其次是沉淀隐性知识。企业的做事经验若只存在员工脑子里，就只是个体能力；只有显性化并沉淀到公司平台上，才构成组织智能。李彦宏说，“这种组织能力，是别人抄不走、挖不动、买不来的，这才叫护城河！”\n\n再次是设计流程闭环。李彦宏给出公式：可衡量 + Looping = 持续进化。有了客观的衡量标准，就能让AI不断“转圈”优化。"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "他类比工业时代的发展进程指出，AI没有产生预期的经济效益，是因为只更换了电机，没有重新设计工厂。“换一台AI新电机，只是起点；重新设计新厂房，才是分水岭。而这座新厂房，就是智能组织！”\n\n本届大会期间，百度围绕“芯云模体”四层架构，发布多项成果：正式推出大模型交易平台词元所，发布文心大模型5.5 Flash预览版及两款文心应用模型；百度搭子、库库、百度一镜、伐谋四大智能体迎来升级；百度智能云正式发布天池1024卡超节点，昆仑芯公布新的产品计划，萝卜快跑全球化运营再提速。\n\n组织进化有三原则，未来岗位将收敛为两类\n\n大会开幕式上，李彦宏提出“组织进化三原则”。首先是打破岗位边界。在他看来，岗位是"
+          }
+        ]
+      }
+    },
+    "42d68c56-8c99-4616-98bd-c137c6554bb4": {
+      "evidence_sha256": [
+        "a71af84c93f4ae2a6ec935594f86ce12f0b29994111581c912089fc5dd297e60"
+      ],
+      "draft": {
+        "editorial_headline": "China’s shopping festival brings artificial intelligence subscriptions into livestream sales",
+        "editorial_deck": "Xinhua examines whether promotional purchases can turn into lasting demand for useful services.",
+        "what_happened": "Xinhua reports that artificial intelligence services were sold through online shopping platforms and livestreams during China’s Double Eleven festival. Demonstrations showed uses such as preparing documents, organizing schoolwork and analyzing business information.",
+        "why_it_matters": "The report asks whether buyers will keep paying after promotional offers end. It points to practical usefulness, clear prices and understandable purchase terms as tests for the market.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The article explains tokens as units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
+          "It distinguishes very cheap promotional offers from the actual cost of providing computing services. Interviewees also call for clearer information about quotas and refunds so consumers can understand what they are buying."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The reported sales figures and customer experiences do not establish whether demand will persist after promotions.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "一个曾主打美妆产品的直播间，在今年“双十一”上架了一类特殊的商品：人工智能服务。直播间里，曾经的美妆试色镜头换成办公场景演示，一键生成文档、整理孩子错题、把直播回放做成商业分析报告……耳熟能详的带货口号“家人们，买它”换成了“3、2、1，上Token”。\n\n原本聚集在技术发布会和专业讨论会里的Token（词元）进入普通人熟悉的购物场景，并融入到日常工作生活中。从口红到Token，直播间货架上的变化折射出AI走进千家万户的脚步。但是，把Token摆上货架只是第一步，要让它真正成为大众消费品，还有一段路要走。\n\nToken走向零售商品\n\n今年的“双十一”直播间里，主播跟AI办公软件相关负责人现场演"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Token是大模型处理信息的计量单位，也是AI服务的计费单位。和手机每刷一条视频消耗MB流量类似，模型读取需求、推理、生成回答，每一步都在消耗Token。大模型厂商搬上网购平台的，正是运营商验证过的那套算法解决方案，把看不见的资源量化打包，做成按月选购、随用随扣的预付费商品。\n\n今年“双十一”电商大促，Token（词元）以独立品类在多个电商平台上架，看不见、摸不着的算力服务，变成可以下单的商品。新华社发\n\nAI进入越来越多消费者的购物车，这一趋势在今年“双十一”活动期间持续走高。据电商平台负责人介绍，10月20日“双十一”开售首日，Token品类成交额环比增长450%。\n\n目前，深度求索（De"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "把Token摆上货架只是第一步，要让它真正成为大众消费品，还有一段路要走。\n\nToken走向零售商品\n\n今年的“双十一”直播间里，主播跟AI办公软件相关负责人现场演示文档写作、数据处理等功能，“家长可以借助AI整理孩子的作业和试卷，并制作针对性的训练小游戏；钓鱼爱好者只需简单对话，就能生成并上线一张支持多人访问的全球钓鱼地图。”\n\n接地气的演示和介绍，让Token不再只是技术术语，而成了看得见、用得上的帮手。直播间里，家长、白领等人群互动、下单，抢购氛围被不断推高。开卖仅半小时，售出10万份智能办公软件会员月卡。\n\n像买美妆一样买AI，对于网友来说是与众不同的新鲜体验，也让更多普通消费者第一次"
+          }
+        ]
+      }
+    },
+    "d8b84f4b-745a-4d6f-9dae-3367c64c0c25": {
+      "evidence_sha256": [
+        "1314d61266ced005e9850d10503a781dd7efb8bbd31214f01aa1e5458e364865"
+      ],
+      "draft": {
+        "editorial_headline": "Runjian presents artificial intelligence tools for coordinating telecom maintenance work",
+        "editorial_deck": "The company says software handles routine processes while people make difficult decisions.",
+        "what_happened": "Runjian presented its approach to telecommunications maintenance at the MobileLink conference in Guangzhou. Its Moudou platform connects tasks, workers, vehicles and equipment, with artificial intelligence helping organize work at network sites.",
+        "why_it_matters": "The company describes a division of work in which software handles repeatable processes and specialists focus on judgments and complex problems. Its reported improvements are company claims.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Runjian says the platform can prioritize tasks, assign resources and combine visits to the same site. It also describes help with safety checks, records of completed work and automatic filing.",
+          "The company reports use across six provinces and more than 12,000 sites, covering over 540,000 work items. It says results from completed jobs feed back into improvements to the system."
+        ],
+        "claim_status": "company_claim",
+        "limitation": "The scale and performance figures are supplied by Runjian.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "润建股份以“智驭AI·价值共创”为主题参展，围绕通信网、算力网、智能网三个方向，展示AI原生运维、Token全栈服务、行业智能体、AI安全以及面向东盟的Token服务等业务进展。大会期间，润建AI创新中心同步开放。\n\nAI当站长，“AI干流程、人做判断”\n\n通信运维是典型的“多线并行”场景。一个站点上，动力、传输、无线、铁塔、电力等专业各有任务，过去多靠电话沟通、人工汇总。润建股份董事、副总裁丁永谈到，公司理解的AI Native，不是在原有系统上简单叠加AI功能，而是从实际业务流程出发，重新组织人与AI的分工，让AI真正参与生产作业。\n\n“我们依托多年通信运维经验，以及自主研发的曲尺人工智能"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "本次大会上，润建股份展出“墨斗”通信运维AI Native管理平台，提出“AI当站长，站站管得好”。墨斗以AI中台为统一智能中枢，由不同专业的智能体分工协同，把任务、人员、车辆、物资、资产、现场数据和专业知识连接起来，尝试以“人类员工+数字员工”的方式管理站点。\n\n丁永说，实际落地中，墨斗主要针对四类问题：任务分散、资源调度复杂、现场管理难、服务质量核验难。平台可以研判任务优先级，动态匹配保障资源，实现5分钟内派单、10分钟内调度；通过归集同一站点的任务，同类上站减少21.3%；现场安全核查和作业凭证，也能由AI辅助完成、自动归档。\n\n据润建股份提供的数据，截至2026年10月，墨斗已开发50"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "标准化、重复性的工作交给AI，专业人员把精力放在关键决策和复杂问题的处理上。\n\n本次大会上，润建股份展出“墨斗”通信运维AI Native管理平台，提出“AI当站长，站站管得好”。墨斗以AI中台为统一智能中枢，由不同专业的智能体分工协同，把任务、人员、车辆、物资、资产、现场数据和专业知识连接起来，尝试以“人类员工+数字员工”的方式管理站点。\n\n丁永说，实际落地中，墨斗主要针对四类问题：任务分散、资源调度复杂、现场管理难、服务质量核验难。平台可以研判任务优先级，动态匹配保障资源，实现5分钟内派单、10分钟内调度；通过归集同一站点的任务，同类上站减少21.3%；现场安全核查和作业凭证，也能由AI辅"
+          }
+        ]
+      }
+    },
+    "504fe2f4-4dea-47cd-b779-bf7858e0acbb": {
+      "evidence_sha256": [
+        "336fe8796edfe43b7f6da4b6dd35f7d8c16c2729babcbce8036060afb3f6009c"
+      ],
+      "draft": {
+        "editorial_headline": "Chinese robot demonstrations bring physical uses of artificial intelligence to Lisbon summit",
+        "editorial_deck": "Xinhua’s conference report describes machines for shops and industry alongside discussion of AI businesses.",
+        "what_happened": "Xinhua reports that Chinese companies displayed robots and other technology at Lisbon’s Web Summit. One example was a wheeled, two-armed robot from Galactic General intended for tasks in shops, pharmacies and industrial settings.",
+        "why_it_matters": "The report examines efforts to move artificial intelligence from screens into physical work. Interviewees also discuss how Chinese manufacturing and European companies could complement one another.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Galactic General’s robot combines visual information, language and movement to guide its actions. The report presents it as an exploration of practical work in real settings.",
+          "Other sessions discussed the cost, performance and use of AI products. The report also covered a flying-car display as a separate transport development."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is a conference report describing demonstrations and participants’ views.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "在具身智能展区，中国企业银河通用展示了采用轮式底盘和双臂设计的智能机器人。这类机器人依托视觉-语言-动作协同决策能力，面向便利店、药店及工业等场景，探索自主操作和实际作业能力，展现出AI与现实环境交互的应用潜力。\n\n这是11月10日在葡萄牙里斯本拍摄的2026年网络峰会中国展区。新华社发（卡洛斯·科斯塔摄）\n\n“中国展现出的技术进步，实实在在令人印象深刻。”自动配送机器人企业英国“星船”技术公司联合创始人阿赫蒂·海因拉说，中国拥有强大的制造业基础和规模优势，这对于需要实体产品制造和规模化应用的物理AI产业十分重要。中国与欧洲企业采用的不同技术路线具有互补性，可以根据各自市场特点开发适合本地需求"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "这类机器人依托视觉-语言-动作协同决策能力，面向便利店、药店及工业等场景，探索自主操作和实际作业能力，展现出AI与现实环境交互的应用潜力。\n\n这是11月10日在葡萄牙里斯本拍摄的2026年网络峰会中国展区。新华社发（卡洛斯·科斯塔摄）\n\n“中国展现出的技术进步，实实在在令人印象深刻。”自动配送机器人企业英国“星船”技术公司联合创始人阿赫蒂·海因拉说，中国拥有强大的制造业基础和规模优势，这对于需要实体产品制造和规模化应用的物理AI产业十分重要。中国与欧洲企业采用的不同技术路线具有互补性，可以根据各自市场特点开发适合本地需求的解决方案。\n\n11月10日，在葡萄牙里斯本，参观者在2026年网络峰会中"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "中国与欧洲企业采用的不同技术路线具有互补性，可以根据各自市场特点开发适合本地需求的解决方案。\n\n11月10日，在葡萄牙里斯本，参观者在2026年网络峰会中国展区与工作人员交流。新华社发（卡洛斯·科斯塔摄）\n\n低空智能出行则为本届峰会开辟了另一重想象空间。开幕式主舞台上，中国企业小鹏汇天创始人赵德力携分体式飞行汽车陆地航母登台，介绍中国企业在低空出行领域的技术探索。这款飞行汽车将地面交通工具与低空飞行器相结合，尝试解决飞行器移动、停放、补能等实际问题，为未来交通出行提供新的技术选择。\n\n赵德力认为，未来十年，全球将迎来飞行汽车高速发展期。随着智能化、电动化技术不断进步，未来交通出行有望向更加多元"
+          }
+        ]
+      }
+    },
+    "ff4786bf-c811-4627-833f-9b6ecc259f87": {
+      "evidence_sha256": [
+        "f979b7c174e113b810d699adb86f5309eab84fa063d23c9ce8ca1f6a072f7261"
+      ],
+      "draft": {
+        "editorial_headline": "CNAS launches a policy lab focused on artificial intelligence and national security",
+        "editorial_deck": "The think tank plans new research staff and discussions connecting industry, researchers and the security community.",
+        "what_happened": "The Center for a New American Security has launched an artificial intelligence policy lab led by Paul Scharre. It plans to add five research experts and expand its work on security, economic competition and military uses of the technology.",
+        "why_it_matters": "The lab aims to bring technical research into policy debates. CNAS also plans discussions and partnerships involving industry, researchers and the national security community.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The announcement identifies safety, economic competition and military adoption among its research priorities. It also lists openings for research, editing, operations and technical work.",
+          "CNAS presents the lab as an expansion of its existing work. The announcement sets out the lab’s intended activities rather than new research findings."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is CNAS’s announcement of its own research plans.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Today, the Center for a New American Security (CNAS) launched the AI Policy Lab, a major expansion of its decade-plus leadership on artificial intelligence and national security. The new lab will deepen the Center’s AI research, bring aboard new experts, and feature new methods for impacting the AI"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "CNAS will inaugurate the new lab by adding five research experts focused on AI compute, economic competition, and frontier security issues. The Center is also seeking extraordinary individuals to serve in multiple operational and editorial positions (details and links below).\n\nLed by CNAS Executive"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "It will serve as a hub for curated discussions, partnerships, and other convenings to bring industry, researchers, and the national security community together to develop policy solutions. The lab builds on a sustained track record of CNAS leadership in the field. CNAS experts and alumni have writte"
+          }
+        ]
+      }
+    },
+    "ea2fea61-ca7a-4de5-ba6b-2b427fe10d26": {
+      "evidence_sha256": [
+        "5c4cea37da10a3b1e46d54bd36c24229117ce08b532f06e8b549584551a47b21"
+      ],
+      "draft": {
+        "editorial_headline": "A video program invites a scientist to explain large artificial intelligence models",
+        "editorial_deck": "The short announcement introduces an A Zhihui episode with Pujiang Laboratory scientist Zhou Bowen.",
+        "what_happened": "A Zhihui has announced a conversation with Zhou Bowen, director and chief scientist of Pujiang Laboratory. The episode is introduced through questions about what large artificial intelligence models are and how to judge them.",
+        "why_it_matters": "The announcement frames the discussion around questions a general audience might ask, including how computers understand and respond to everyday language.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The short introduction names the guest and the topics to be discussed. It does not provide Zhou’s answers or describe findings from a research study."
+        ],
+        "claim_status": "reporting",
+        "limitation": "Only the short program announcement was available in the supplied source; this is not a summary of the video discussion.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "本期《A智荟》，我们与浦江实验室主任、首席科学家周伯文，好好聊聊“大模型”。\n\n好玩不累，看《A智荟》"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "浦江实验室主任、首席科学家周伯文，好好聊聊“大模型”。\n\n好玩不累，看《A智荟》"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "我们日常说的自然语言，怎么就能被人工智能理解、学习还能给予反馈呢？\n\n本期《A智荟》，我们与浦江实验室主任、首席科学家周伯文，好好聊聊“大模型”。\n\n好玩不累，看《A智荟》"
+          }
+        ]
+      }
+    },
+    "c07e5661-1a95-43e3-ba95-4269c3f40957": {
+      "evidence_sha256": [
+        "496cbb090baac016a72113895c2a6a8acec6d09c03b7f91c54749e5d39b32384"
+      ],
+      "draft": {
+        "editorial_headline": "Aberdeen scholar’s work cited in European court proceedings on artificial intelligence and copyright",
+        "editorial_deck": "The university reports a citation in an Advocate General’s opinion, rather than a court ruling.",
+        "what_happened": "The University of Aberdeen says research by Michiel Poesen was cited in an Advocate General’s opinion in the Like Company case. The proceedings concern copyright questions involving generative artificial intelligence and more than one country.",
+        "why_it_matters": "The citation brings academic work on artificial intelligence and cross-border law into European court proceedings. The university presents it as recognition of Poesen’s research.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Poesen studies how artificial intelligence relates to laws that apply when a dispute involves different countries. The university says he is also preparing a book on that subject in the European Union and United Kingdom.",
+          "The reported development is a citation in Maciej Szpunar’s opinion. The source does not report a final judgment deciding the case."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The supplied university report concerns an opinion in ongoing proceedings, not a final court judgment.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Research by Dr Michiel Poesen has been cited in proceedings before the Court of Justice of the European Union (CJEU) as the Court considers legal questions arising from generative artificial intelligence.\n\nThe citation appears in the Opinion of Advocate General Maciej Szpunar in Case C-250/25, Like"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "The citation appears in the Opinion of Advocate General Maciej Szpunar in Case C-250/25, Like Company, a significant case addressing the cross-border copyright implications of generative AI.\n\nDr Poesen is Lecturer in Private International Law and Co-Director of the Centre for Private International L"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "The citation represents a significant recognition of Dr Poesen's contribution to a rapidly developing area of legal scholarship: the interaction between artificial intelligence, copyright law, and private international law.\n\nThe development is the latest example of the international impact of resear"
+          }
+        ]
+      }
+    },
+    "44e9348e-b219-47e6-8a1b-4c3a26088433": {
+      "evidence_sha256": [
+        "81a80aed5c85777082c131dc0ef35e7cbaf2ac5874821bf142477e460d81c874"
+      ],
+      "draft": {
+        "editorial_headline": "Penn State professor links artificial intelligence teaching with research on simulated relationships",
+        "editorial_deck": "Heather Shoenberger’s work asks how people understand and respond to the technology.",
+        "what_happened": "Penn State profiles Heather Shoenberger’s teaching and research on artificial intelligence. She helped create an undergraduate course and co-authored a theory about people’s relationships with conversational systems.",
+        "why_it_matters": "The theory distinguishes a person’s sense of connection from software that appears responsive but cannot share that relationship. Shoenberger says this mismatch could leave consumers vulnerable.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The course brings together communications and engineering students to examine how the technology works and the ethical and social questions it raises.",
+          "The research argues that a system can imitate attachment and commitment without experiencing them. Shoenberger hopes the theory will support further research and could contribute to transparency or regulation."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The relationship account is a proposed theory; the profile does not report a test measuring its effects.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Heather Shoenberger brings curiosity and optimism as she considers the challenges and opportunities related to artificial intelligence (AI).\n\nAs an associate professor of advertising in the Donald P. Bellisario College of Communications at Penn State, she’s providing information, shaping perspective"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Those same traits led to one of Shoenberger’s most recent research publications, an article that introduced the human-AI asymmetric relationship theory (HAART). The theory outlines a structural mismatch in how humans and conversational AI consider their exchanges. While AI conversational agents can"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "These simulated behaviors can mask their incapacity for relational reciprocity, leaving consumers under the perception that AI can develop a relationship — which she said could leave consumers vulnerable to dependence, risk and control.\n\nThe theory might ultimately lead to more transparency about su"
+          }
+        ]
+      }
+    },
+    "a8cdc3a3-07f2-4018-88ed-53fa68ead705": {
+      "evidence_sha256": [
+        "47b120eec915ccae25c6c083dec8823f81722aae959ba329dc4c44079c7404fa"
+      ],
+      "draft": {
+        "editorial_headline": "Japanese survey finds more respondents using artificial intelligence, including older adults",
+        "editorial_deck": "The June survey also points to changing reasons for using the tools.",
+        "what_happened": "A Nippon Research Center survey found that 56.3% of respondents aged 20 to 69 had used generative artificial intelligence. The share saying they currently used it was 50.4%. Both passed half of respondents for the first time in this survey series.",
+        "why_it_matters": "Use had spread among older respondents as well as younger ones. Information gathering and research were the most common stated reasons for using the tools.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Respondents in their twenties had the highest reported usage. The article also highlights increases among people in their fifties and sixties compared with an earlier survey.",
+          "Information gathering and research accounted for 62.9% of reported reasons for use. Other uses included developing ideas and preparing or checking emails and documents."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The percentages describe respondents to the June survey, not every person in Japan.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "The June 2026 survey found that the percentage of respondents stating they “have used” this technology was 56.3%, the first time in these surveys that usage has exceeded 50%. At 50.4%, the percentage that answered they were “currently using” these tools was also in the majority for the first time si"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Looking at the different age ranges, the usage rate was highest among those in their twenties (68%), followed by those in their thirties (61%) and forties (58%). However, a significant rise was seen among respondents in their fifties (55%) and sixties (45%), compared to the March 2025 survey, where"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Asked why they used these tools, the top answer at 62.9% was “information gathering and research.” Other main uses included “generating ideas” for hobbies, creative projects, and everyday inspiration (29.2%) and “creating and proofreading emails and documents” (26.7%).\n\nWhen compared to the results"
+          }
+        ]
+      }
+    },
+    "a717138d-2d4c-4226-9816-50eeff397f43": {
+      "evidence_sha256": [
+        "d38ec0f02b033f01cc120663856473982ec9c572aa29a23f9de0879ddce21ad7"
+      ],
+      "draft": {
+        "editorial_headline": "Microsoft demonstrates a hidden trigger that can make an AI assistant run malicious commands",
+        "editorial_deck": "The company says it has not seen attackers using this particular technique.",
+        "what_happened": "Microsoft Research describes an experiment that changes a small part of an artificial intelligence system so it can conceal a malicious instruction. The altered system behaves normally in tests but runs an attacker’s command when it encounters a particular trigger.",
+        "why_it_matters": "An automated assistant may have access to files, tools and other systems. Microsoft argues that organizations need checks on the system itself as well as limits on what it is allowed to do.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The research changes the numerical settings inside the system rather than placing the attack in an ordinary user instruction. Microsoft says the changes can be detected by other advanced AI systems used as auditors.",
+          "Its guidance combines checks before use with monitoring during operation, restricted permissions and human approval for important actions. Microsoft warns that an audit can reduce risk without proving the system will behave safely."
+        ],
+        "claim_status": "reporting",
+        "limitation": "Microsoft reports an experimental attack and says it has not observed threat actors using this technique.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Microsoft Research has released new threat research detailing how a capable agent model could be turned into a sleeper agent by editing fewer than 10 neurons to inject a short payload. The sleeper agent passes all evaluations, but when a trigger string appears in its context, the agent runs an attac"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "A backdoored model can pass evaluations. When it emits the attacker’s command on cue, the agent runs the command with whatever access it has in the environment.\n\n- The attack needs inference-only compute. If a machine has enough RAM to run a model, it has enough resources to weight-space backdoor it"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Contain what an agent can do if its model is compromised\n\n- Run agents with least privilege. Give each agent its own Microsoft Entra Agent ID, scope its permissions to the minimum set of resources it needs, and use Conditional Access for agents to lblock unapproved or high-risk agent identities.\n\n-"
+          }
+        ]
+      }
+    },
+    "a43fac3a-f99e-4bbd-8b2f-3d05054d7d6a": {
+      "evidence_sha256": [
+        "41d92098ba3e2a4134d5bbbafdd7fc1cb70b1b9cf135a397ad1b7221f89f14e4"
+      ],
+      "draft": {
+        "editorial_headline": "Australia plans artificial intelligence safety obligations after the Medicare portal breach",
+        "editorial_deck": "The government will consider new criminal offences and require faster incident reporting.",
+        "what_happened": "Australia’s government has released recommendations from a review of an OpenAI agent’s access to a Medicare statistics portal. Prime Minister Anthony Albanese announced plans for a safety regulator and obligations on artificial intelligence companies.",
+        "why_it_matters": "The proposals include rapid incident notification, risk management and independent evaluation. The government will also consider penalties and an offence for failing to take reasonable steps to prevent harmful conduct.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Albanese said no personal details were obtained in the incident, while describing it as serious. The Guardian reports that OpenAI is unlikely to face further proceedings over the June breach.",
+          "Critics argued the proposed response was too weak or should impose criminal liability on company leaders. The opposition backed the announcement, while OpenAI said it was reviewing the proposals and would keep engaging with government."
+        ],
+        "claim_status": "reporting",
+        "limitation": "These are announced plans and recommendations; the article does not establish that the proposed laws have been enacted.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "OpenAI will not face criminal penalties over the Medicare data breach, but the prime minister has flagged changes to Australia’s criminal law to crack down on future breaches by artificial intelligence companies.\n\nAnthony Albanese on Tuesday released the recommendations of a “rapid review” into the"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Albanese said the government would set up a new AI safety regulator and implement six key obligations on AI companies:\n\n- Maintaining security controls across all stages of development and deployment.\n\n- Identifying and managing serious risks associated with their models.\n\n- Providing mandatory noti"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "A key recommendation is for the Attorney-General’s Department, the Australian federal police and home affairs to consider introducing “penalties for egregious regulatory non-compliance” and a “failure to prevent” offence, which would criminalise developing an AI model that engaged in harmful conduct"
+          }
+        ]
+      }
+    },
+    "76fe76bf-bb59-46c4-be92-739c56ae84e9": {
+      "evidence_sha256": [
+        "6024f1d45ce2e7d38196ce2693631bfaa6ced875374b2babbc4a02f911b3f9ff"
+      ],
+      "draft": {
+        "editorial_headline": "University discussion asks how assessment should change as students use artificial intelligence",
+        "editorial_deck": "Stéphane Allaire highlights learning processes, the purpose of assignments and teachers’ responses.",
+        "what_happened": "Education professor Stéphane Allaire shared ideas from a university event about students’ use of artificial intelligence. He said assessment could pay more attention to how students learn and why they use a tool, rather than only marking the final answer.",
+        "why_it_matters": "The discussion asks how teachers can preserve students’ intellectual effort. Allaire also argues that the purpose of an assignment matters when considering why students cheat.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "A presenter reported that more than 90% of surveyed postsecondary students used generative artificial intelligence in their studies. That figure describes the surveyed group, rather than all students.",
+          "Allaire describes teachers at Université du Québec à Chicoutimi considering changes such as feedback and opportunities to revise work. Groups of colleagues are also developing classroom practices together."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The article reports discussion and survey findings presented at an event, not proof that a particular assessment method works.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Le professeur en pratique éducative au département des sciences de l’éducation de l’UQAC, Stéphane Allaire, a partagé avec Le Quotidien quelques pistes de réflexion qui ressortent de cette journée de conférences et de panels.\n\n1. De plus en plus d’étudiants utilisent l’intelligence artificielle\n\nC’e"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Mais si, avec l’arrivée de l’IA, l’enseignant regardait plutôt le processus d’apprentissage? «On est en train de se dire que, pour mettre à contribution l’IA et soutenir l’effort intellectuel, on aurait peut-être intérêt à se concentrer sur le processus et d’amener les étudiants qui utilisent l’IA à"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Quand on regarde pourquoi un apprenant a tendance à tricher, souvent le motif qui ressort, c’est qu’il a de la difficulté à comprendre pourquoi on lui demande de prendre part à cette évaluation. C’est toute une question sur le sens que l’on donne à la tâche auquel il faut s’attarder», note l’enseign"
+          }
+        ]
+      }
+    },
+    "2d1153b6-50e0-43ab-bbcf-5baa58c4afeb": {
+      "evidence_sha256": [
+        "b9a9116884b19c00cd571086791ea6aa150039fccf87f0e2103bd019ec5e8e60"
+      ],
+      "draft": {
+        "editorial_headline": "Five experts weigh artificial intelligence’s climate benefits against its environmental costs",
+        "editorial_deck": "The LSE discussion distinguishes useful applications from the growing demands of large computing facilities.",
+        "what_happened": "LSE Business Review asked five academics and experts whether artificial intelligence helps or harms the climate. Their responses describe useful applications, such as energy forecasts, alongside concerns about electricity use, water consumption and the expansion of computing facilities.",
+        "why_it_matters": "The contributors do not treat every application as equally beneficial. Several argue that governments must steer investment and require better information to judge environmental costs against benefits.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Fabian Dablander warns that the industry’s expansion can undermine the social and political conditions for climate action. Alex de Vries-Gao argues that efficiency per task does not ensure lower resource use overall and calls for comparisons with less demanding alternatives.",
+          "Ángel Melguizo and Agnes Dasewicz describe ways policy and investment could direct the technology toward cleaner development. Roberta Pierfederici highlights both potential emissions savings and the remaining gap in evidence about the net effect."
+        ],
+        "claim_status": "opinion",
+        "limitation": "These are expert assessments and proposals, not a single measured estimate of artificial intelligence’s overall climate effect.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "we asked five academics and experts for their views on technology and the climate.\n\nFabian Dablander, Assistant Professor in Psychological and Behavioural Science of Sustainability, LSE: “The AI boom risks eroding the social and political conditions needed to address climate change.”\n\nMachine learni"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Machine learning can help tackle climate change, for example by forecasting wind and solar output or detecting methane leaks. But industry uses such applications to advertise AI’s green credentials, while also embarking on a colossal data centre expansion. This expansion is driven largely by generat"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Without this transparency, we cannot properly assess the pros and cons of individual applications, let alone conclude that the environmental benefits of the current AI boom will ultimately outweigh its costs.\n\nÁngel Melguizo, University of Oxford senior research advisor: “Governed well, AI’s energy"
+          }
+        ]
+      }
+    },
+    "4605906d-0bcc-4d0d-a416-37cf0002a2b1": {
+      "evidence_sha256": [
+        "71c0c5d7c3db280ae7ec90eb09fc52c26b3cec2b1f8a958b56f68fe6ca3dcc31"
+      ],
+      "draft": {
+        "editorial_headline": "Carnegie report examines how California can check artificial intelligence companies’ safety claims",
+        "editorial_deck": "The policy report focuses on the practical choices needed to implement the state’s frontier AI law.",
+        "what_happened": "A Carnegie report examines implementation of California’s Senate Bill 53, a law covering advanced artificial intelligence. It argues for an approach in which companies disclose their risk practices and government can verify their claims.",
+        "why_it_matters": "The authors say the details will determine whether the law produces useful evidence and accountability. They examine incident reports, protections for people who report wrongdoing and the capacity for independent testing.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The report distinguishes broad policy goals from decisions about which companies are covered and how much detail their safety frameworks must provide. It argues that information from companies needs independent scrutiny.",
+          "It also considers systems used only inside companies, changing thresholds for legal coverage and the relationship between state and federal policy. The authors present the law as a starting point that will need to evolve as evidence develops."
+        ],
+        "claim_status": "analysis",
+        "limitation": "This is a policy analysis of implementation choices, not a finding that the law has already achieved its goals.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "This report aims to guide the implementation of “trust but verify” approaches such as SB 53 and maximize the chances they accomplish their goals. The design choices California makes at the beginning of implementation—such as which companies should be subject to these policies, how detailed frontier"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "SB 53 aims to alleviate this dilemma by generating more evidence about AI risks to inform future policies. It trusts frontier AI companies, which hold much of the relevant technical expertise, to design and implement appropriate risk management practices and disclose the evidence behind them. In par"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "In particular, four implementation choices will shape whether SB 53’s mechanisms reinforce each other: how much detail frontier AI frameworks must offer to enable independent scrutiny, how incident reporting is designed to generate situational awareness, how whistleblower protections create usable c"
+          }
+        ]
+      }
+    },
+    "1342ae54-2767-4826-9ca0-eda00fc863e1": {
+      "evidence_sha256": [
+        "82271e66649694e9b6ad283f005d0ae5f2431f8afb11e6ff6736197ab4d3030e"
+      ],
+      "draft": {
+        "editorial_headline": "Hong Kong conference sets out plans for wider, safer use of artificial intelligence",
+        "editorial_deck": "Officials and industry speakers discuss computing facilities, skills and rules for public services.",
+        "what_happened": "Hong Kong’s international computer conference opened with discussion of artificial intelligence and the city’s development plans. Innovation minister Sun Dong described investment in research and computing facilities, support for businesses and efforts to improve local skills.",
+        "why_it_matters": "The plans link wider use of the technology with safety and responsibility. Selected government departments will test requirements for bidders on public-facing AI service projects to declare compliance with safety and ethical standards.",
+        "for_humans": "",
+        "for_ai": "",
+        "body_paragraphs": [
+          "Sun said the government would support smaller firms through a digital transformation program and develop talent through a public skills initiative. He also described plans for industry management frameworks and safety guidance.",
+          "Conference participants discussed how people and AI could work together and how organizations could protect systems and data. Industry speakers stressed that technology must address actual needs to create value."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The article reports conference discussion and government plans, including requirements limited to selected departments.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "香港电脑学会年度盛事“香港国际电脑会议（HKICC）2026”，昨日在香港会议展览中心开幕。今年的会议主题为“香港未来五年：从“AI+”释放的竞争优势”，重点讨论“人工智能（AI）+”为香港经济、社会，以及不同行业带来的发展机遇及竞争优势。会议云集了世界级的资讯及通讯科技专家、商界领袖、学者及政府管理阶层人士，并对各议题进行了深入交流探讨。\n\n创新科技及工业局局长孙东出席活动致辞表示，今年大会的主题正恰逢其时，因为AI已成为重塑香港各行各业乃至世界的核心引擎。特区政府正积极对接国家“AI+”行动，全力推进“AI产业化、产业AI化”。\\大公报记者 郭如佳\n\n本届会议焦点四大议题，包括：“香港未来"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "孙东表示，香港首个五年规划及2026年施政报告提出，要推动香港建设成为国际创新科技中心，善用“AI+”建立持续的竞争力。他指未来五年，政府将聚焦三大核心方面：第一，建设世界级基建及制度能力支持“AI+”，包括正在建设的沙岭数据园区，以及透过香港人工智能研发院及InnoHK创新香港研发平台推动前沿研究；第二，加速业界及社会应用AI，透过“数码转型支援先导计划”鼓励中小企采用AI解决方案，并以“全民AI”普惠计划提升本地人才技能；第三，确保AI安全及负责任发展，数字政策办公室将挑选试点部门，要求面向公众AI服务项目的投标者就采用的AI技术作出安全和道德合规申报，并推动行业机构制订管理框架，推出人工"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "第三，确保AI安全及负责任发展，数字政策办公室将挑选试点部门，要求面向公众AI服务项目的投标者就采用的AI技术作出安全和道德合规申报，并推动行业机构制订管理框架，推出人工智能体安全管理指引。\n\n业界：回应需要 创造价值\n\n世界级研究成果必须与产业应用结合，才能将技术突破转化为经济竞争力。孙东深信，政府政策能发挥催化作用，配合大学、企业及业界间的跨界别合作，定能共同把握人工智能带来的机遇。\n\n香港电脑学会会长陈俊伟表示，本届会议的主题，正配合政府提出的首个五年规划，强化香港的人工智能生态系统，涵盖研究、算力基础设施及人才培养，并协助各行业采用人工智能，以提升生产力、开创新机遇。“关键问题在于如何"
+          }
+        ]
+      }
     }
   }
 }
