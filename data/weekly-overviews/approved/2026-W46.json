@@ -1,0 +1,373 @@
+{
+  "release_id": "2026-W46",
+  "human_approved_at": "2026-11-16T15:39:42.486712+00:00",
+  "approved_by": "kedmahamelberg-ai",
+  "markets": {
+    "kind": "markets",
+    "eyebrow": "THE WEEK FROM ABOVE",
+    "title": "People are still shaping how AI is used",
+    "deck": "At Penn State, researchers plan to test an AI tutor that gives engineering students hints instead of finished answers. Whether it helps them learn is still being studied. A BBC report shows AI entering older industries too, including carpet making. It can save time, but people still need to check the work.",
+    "summary": "At Penn State, researchers plan to test an AI tutor that gives engineering students hints instead of finished answers. Whether it helps them learn is still being studied. A BBC report shows AI entering older industries too, including carpet making. It can save time, but people still need to check the work. In France, a columnist says AI can help people keep track of new information. He argues that dedicated tracking tools still matter because they let people check where an answer came from. Ontario's law commission wants clearer rules and a public list of AI used in criminal justice. Whether those ideas will be adopted is unclear. A Fudan scholar makes the case for China to help shape global AI rules. The article presents an argument, not evidence that this approach has improved outcomes. The stories are very different. They keep coming back to a simple point. People should have room to learn, check the work, and question the rules.",
+    "scope_note": "Five selected stories from five discovery markets.",
+    "word_count": 176,
+    "reading_minutes": 1,
+    "image_path": "assets/culture/219319ff0fc73668b76421dc.jpg",
+    "image_alt": "Trompe l'Oeil Still Life",
+    "image_caption": "Trompe l'Oeil Still Life",
+    "image_credit": "Jacobus Cornelis Meyer (Dutch, active 1700s) · Cleveland Museum of Art",
+    "image_source_url": "https://clevelandart.org/art/1955.376",
+    "image_rights": "CC0 image",
+    "entries": [
+      {
+        "code": "US",
+        "name": "United States",
+        "topic": "Work & skills",
+        "story": {
+          "path": "story/development-2a21eff3-4581-4b48-9639-71b63a5f0300/index.html",
+          "headline": "Penn State Professor Studies Whether an AI Tutor Can Support Engineering Students’ Reasoning",
+          "publisher": "The Pennsylvania State University"
+        }
+      },
+      {
+        "code": "CA",
+        "name": "Canada",
+        "topic": "Rules & rights",
+        "story": {
+          "path": "story/development-c116ab7b-785b-43f3-8083-0f0bd4a3fe41/index.html",
+          "headline": "Ontario law commission urges criminal-justice AI rules, but adoption remains undecided",
+          "publisher": "CBA National Magazine"
+        }
+      },
+      {
+        "code": "CN",
+        "name": "China",
+        "topic": "Rules & rights",
+        "story": {
+          "path": "story/development-96b6f55c-21d2-4e77-8101-b9b71551fd2a/index.html",
+          "headline": "Fudan scholar says China’s AI rule-making could widen cooperation, but shared benefits remain an argument",
+          "publisher": "复旦发展研究院"
+        }
+      },
+      {
+        "code": "FR",
+        "name": "France",
+        "topic": "Business & investment",
+        "story": {
+          "path": "story/development-fe16ebf1-7965-4bbc-a727-031fc716d4fa/index.html",
+          "headline": "A KB Crawl columnist says AI will reshape, not replace, strategic monitoring tools",
+          "publisher": "JDN"
+        }
+      },
+      {
+        "code": "GB",
+        "name": "United Kingdom",
+        "topic": "Business & investment",
+        "story": {
+          "path": "story/development-ff271f43-be97-4765-b008-5a174f5bbfc6/index.html",
+          "headline": "Traditional Industries Adopt AI: BBC Reports Mixed Gains With Guardrails and Humans",
+          "publisher": "BBC"
+        }
+      }
+    ],
+    "active_market_count": 5,
+    "editorial_version": "kedma-weekly-v10",
+    "status": "ready",
+    "author": "Kedma Hamelberg",
+    "prose": [
+      [
+        {
+          "text": "At Penn State, researchers plan to test an AI tutor that gives engineering students hints instead of finished answers. Whether it helps them learn is still being studied.",
+          "source_key": "event:2a21eff3-4581-4b48-9639-71b63a5f0300",
+          "path": "story/development-2a21eff3-4581-4b48-9639-71b63a5f0300/index.html"
+        },
+        {
+          "text": "A BBC report shows AI entering older industries too, including carpet making. It can save time, but people still need to check the work.",
+          "source_key": "event:ff271f43-be97-4765-b008-5a174f5bbfc6",
+          "path": "story/development-ff271f43-be97-4765-b008-5a174f5bbfc6/index.html"
+        }
+      ],
+      [
+        {
+          "text": "In France, a columnist says AI can help people keep track of new information. He argues that dedicated tracking tools still matter because they let people check where an answer came from.",
+          "source_key": "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa",
+          "path": "story/development-fe16ebf1-7965-4bbc-a727-031fc716d4fa/index.html"
+        },
+        {
+          "text": "Ontario's law commission wants clearer rules and a public list of AI used in criminal justice. Whether those ideas will be adopted is unclear.",
+          "source_key": "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41",
+          "path": "story/development-c116ab7b-785b-43f3-8083-0f0bd4a3fe41/index.html"
+        }
+      ],
+      [
+        {
+          "text": "A Fudan scholar makes the case for China to help shape global AI rules. The article presents an argument, not evidence that this approach has improved outcomes.",
+          "source_key": "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a",
+          "path": "story/development-96b6f55c-21d2-4e77-8101-b9b71551fd2a/index.html"
+        },
+        {
+          "text": "The stories are very different. They keep coming back to a simple point. People should have room to learn, check the work, and question the rules.",
+          "source_key": "",
+          "path": ""
+        }
+      ]
+    ],
+    "source_hashes": {
+      "event:2a21eff3-4581-4b48-9639-71b63a5f0300": "6cd0d43d687a613b35d9d1bbdadc1239cea08655e53191ce6fc61bf21494bf4a",
+      "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41": "3fba609232f7b0c8de754cb1b0c19a84c26b19d82b49936da720e54aca55be28",
+      "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a": "db245eafde39dd59d9b70a53622247d5acd4e77a9bd909171cce3cb7fd1e935d",
+      "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa": "318c6f1c07126928f382fd131292cdb10178bec0cba57fbe0350ad47df930ff4",
+      "event:ff271f43-be97-4765-b008-5a174f5bbfc6": "b820c15efe0d035d70434a13f207b3914a86204ed7ba411a1bbc49091fb616b5"
+    },
+    "image_key": "culture:219319ff0fc73668b76421dc",
+    "image_work_key": "0e9e8048efce9a67a0782e6a37b324b80373ce904494f42b7eb85d42e835506a",
+    "image_reason": "A still life suggests looking carefully at what is presented.",
+    "review_checks": {
+      "grounded": true,
+      "clear_high_school_language": true,
+      "coherent_prose": true,
+      "meaningful_connection": true,
+      "source_limits_preserved": true,
+      "no_invented_personal_experience": true,
+      "image_metaphor_supported": true
+    },
+    "image_reason_visible": false,
+    "human_approved": true
+  },
+  "research": {
+    "kind": "research",
+    "eyebrow": "THE RESEARCH COMPASS",
+    "title": "Medical AI has to work beyond familiar images",
+    "deck": "Two new preprints look at a practical problem in medical AI. If a system works on one set of images, will it work somewhere else? One team combined sets of chest X-rays and mammograms, even though the images were marked in different ways. Its model detected several findings better than a model trained on one set, but the gains were uneven. It was not tested in clinical care.",
+    "summary": "Two new preprints look at a practical problem in medical AI. If a system works on one set of images, will it work somewhere else? One team combined sets of chest X-rays and mammograms, even though the images were marked in different ways. Its model detected several findings better than a model trained on one set, but the gains were uneven. It was not tested in clinical care. The second team adapted a general image model for colonoscopy, breast ultrasound and skin images. It did better on images from other institutions, but models built for each task still held their own on familiar data and sometimes drew more precise outlines. The studies measure different jobs. One spots findings, the other draws their outlines. Their scores cannot be lumped together. Taken together, they show that the mix of images and the place of testing can change the result. Neither preprint shows better care for patients.",
+    "scope_note": "",
+    "word_count": 162,
+    "reading_minutes": 1,
+    "image_path": "assets/culture/61b471193719e6e0b51ecbbf.jpg",
+    "image_alt": "Landscape of the Four Seasons",
+    "image_caption": "Landscape of the Four Seasons",
+    "image_credit": "Yi Sumun (Korean, b. c. 1404) · Cleveland Museum of Art",
+    "image_source_url": "https://clevelandart.org/art/1976.92.1",
+    "image_rights": "CC0 image",
+    "papers": [
+      {
+        "key": "paper:d5c89b3070353457efa8c3a8",
+        "doi": "",
+        "arxiv_id": "2611.14518v1",
+        "original_headline": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+        "url": "https://arxiv.org/abs/2611.14518v1",
+        "date": "2026-11-10",
+        "authors": [
+          "Sheethal Bhat",
+          "Bogdan Georgescu",
+          "Awais Mansoor",
+          "Florin C. Ghesu",
+          "Sasa Grbic",
+          "Andreas Maier"
+        ],
+        "institutions": [
+          "Friedrich-Alexander-Universität, 91058, Erlangen-Nürnberg, Germany",
+          "Siemens Healthineers, 91052, Erlangen, Germany",
+          "Siemens Medical Solutions, 08540, Princeton, USA"
+        ],
+        "affiliation_source_url": "https://arxiv.org/html/2611.14518v1",
+        "affiliation_checked_at": "2026-11-11T10:56:17.184778+00:00",
+        "affiliation_fallback_checked_at": "2026-11-11T10:56:17.184778+00:00",
+        "affiliation_fallback_version": "arxiv-author-v3",
+        "source_verified_at": "2026-11-11T10:56:17.184778+00:00",
+        "publisher": "arXiv",
+        "source": "arxiv",
+        "research_label": "Preprint",
+        "evidence_scope": "paper_text",
+        "access": "Open paper",
+        "journal_reference": "",
+        "metadata_sha256": "f02d37057379b06a2e7ede6a6edb2aef8f06ac1371ec987828bcaf7a3250f9dd",
+        "pdf_url": "https://arxiv.org/pdf/2611.14518v1",
+        "has_editorial": true,
+        "headline": "Combining medical image datasets improves some lesion detection tests",
+        "deck": "Researchers combined datasets with different labels; detection gains varied by finding in the reported tests.",
+        "what_happened": "Researchers trained separate models on four medical image datasets, used them to fill missing labels, and trained a combined detector. Compared with a single-dataset detector, the new model improved detection on several chest X-ray and mammography findings. Gains were limited for atelectasis.",
+        "why_it_matters": "The tests show a way to combine datasets with different labels, but they do not establish how the model would perform in clinical use.",
+        "body_paragraphs": [
+          "Separate models predicted missing findings in the other datasets. The final model learned from both expert annotations and these generated labels, aiming to retain what each dataset contributed.",
+          "The combined model improved detection for several findings in the reported tests. Atelectasis showed smaller gains because its labels can overlap with other conditions and vary across datasets."
+        ],
+        "limitation": "The study tested selected chest X-ray and mammography datasets. Improvements varied by finding, and the paper does not report a clinical deployment.",
+        "summary_basis": "Summary of the paper",
+        "reading_minutes": 1,
+        "pmc_reader_version": 0,
+        "claim_status": "study",
+        "summary_status": "ready",
+        "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+        "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "editorial_engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+        "research_reading_version": "paper-practitioner-v1",
+        "pdf_reader_version": 2,
+        "html_reader_version": 1,
+        "full_text_status": "read",
+        "full_text_retry_after": "2026-11-18",
+        "paper_text_sha256": "ba98d0d2a4e31ae1f5e4f08082275fd0ecbc3b8b1eae53673038eca273335b39",
+        "paper_pages": 13,
+        "kind": "research",
+        "slug": "paper-d5c89b3070353457efa8c3a8",
+        "path": "research/paper-d5c89b3070353457efa8c3a8/index.html",
+        "source_count": 1,
+        "sources": [
+          {
+            "publisher": "arXiv",
+            "headline": "Toward Foundation Detection Models via Example-Based Grounding in EM-DETR",
+            "url": "https://arxiv.org/abs/2611.14518v1",
+            "date": "2026-11-10",
+            "language": "en"
+          }
+        ],
+        "display_date": "10 Nov 2026",
+        "markets": [],
+        "market_label": "Research",
+        "topic": "research",
+        "topic_label": "Science & research",
+        "human_direction": "unresolved",
+        "ai_direction": "unresolved",
+        "for_humans": "",
+        "for_ai": "",
+        "human_label": "",
+        "ai_label": "",
+        "evidence_complete": false,
+        "display_scope": "",
+        "edition": "2026-11",
+        "label": "Preprint"
+      },
+      {
+        "key": "paper:5c79f9cd55c88ba44d434d20",
+        "doi": "",
+        "arxiv_id": "2611.14519v1",
+        "original_headline": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+        "url": "https://arxiv.org/abs/2611.14519v1",
+        "date": "2026-11-10",
+        "authors": [
+          "Emre Kutlusan",
+          "Yongmin Li"
+        ],
+        "institutions": [
+          "Department of Computer Science, Brunel University of London, Uxbridge"
+        ],
+        "affiliation_source_url": "https://arxiv.org/html/2611.14519v1",
+        "affiliation_checked_at": "2026-11-11T19:37:57.646061+00:00",
+        "affiliation_fallback_checked_at": "2026-11-11T19:37:57.646061+00:00",
+        "affiliation_fallback_version": "arxiv-author-v3",
+        "source_verified_at": "2026-11-11T19:37:57.646061+00:00",
+        "publisher": "arXiv",
+        "source": "arxiv",
+        "research_label": "Preprint",
+        "evidence_scope": "paper_text",
+        "access": "Open paper",
+        "journal_reference": "",
+        "metadata_sha256": "406462fa9d317e416a755bbe440a8b58a367a8cdc4c3c3b670171e45e72722c7",
+        "pdf_url": "https://arxiv.org/pdf/2611.14519v1",
+        "has_editorial": true,
+        "headline": "A small general AI can adapt to some medical images but not all",
+        "deck": "A small general AI model was tested on three medical imaging tasks across different datasets. Adaptation helped in some cases but not everywhere.",
+        "what_happened": "Researchers tested a small pretrained AI model adapted for medical image tasks against task-specific neural networks in colonoscopy, breast ultrasound, and skin imaging. The adapted model did better on new data from other sources, but within its own data it did not always win and sometimes needed only a little adaptation.",
+        "why_it_matters": "A general AI model can help when data come from new clinics, but you may still need task-specific tweaks for best results.",
+        "body_paragraphs": [
+          "Across three medical image tasks, adapting a small pretrained AI model often helps more on new data than on familiar data. What would this mean for your own data?",
+          "The best approach is to start with small adaptation and pick the domain that matches your data, rather than assuming one setup fits all."
+        ],
+        "limitation": "Findings rely on tests with unseen data and one base model; results may vary with more data or different choices.",
+        "summary_basis": "Summary of the paper",
+        "reading_minutes": 1,
+        "pmc_reader_version": 0,
+        "claim_status": "study",
+        "summary_status": "ready",
+        "prompt_version": "aieo-brief-editorial-v3-whole-evidence-independent-axes",
+        "model_revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "editorial_engine_version": "aieo-editorial-runtime-v10-source-fidelity",
+        "research_reading_version": "paper-practitioner-v1",
+        "pdf_reader_version": 2,
+        "html_reader_version": 1,
+        "full_text_status": "read",
+        "full_text_retry_after": "2026-11-18",
+        "paper_text_sha256": "3e82dbfe51111f5d64ecd18951759ad1eecbb5ff39ac105fc8f1e40edae581d8",
+        "paper_pages": 42,
+        "kind": "research",
+        "slug": "paper-5c79f9cd55c88ba44d434d20",
+        "path": "research/paper-5c79f9cd55c88ba44d434d20/index.html",
+        "source_count": 1,
+        "sources": [
+          {
+            "publisher": "arXiv",
+            "headline": "Medical Image Segmentation: Foundation Model Adaptation versus Task-Specific Training",
+            "url": "https://arxiv.org/abs/2611.14519v1",
+            "date": "2026-11-10",
+            "language": "en"
+          }
+        ],
+        "display_date": "10 Nov 2026",
+        "markets": [],
+        "market_label": "Research",
+        "topic": "research",
+        "topic_label": "Science & research",
+        "human_direction": "unresolved",
+        "ai_direction": "unresolved",
+        "for_humans": "",
+        "for_ai": "",
+        "human_label": "",
+        "ai_label": "",
+        "evidence_complete": false,
+        "display_scope": "",
+        "edition": "2026-11",
+        "label": "Preprint"
+      }
+    ],
+    "paper_count": 18,
+    "affiliation_verified_count": 17,
+    "editorial_version": "kedma-weekly-v10",
+    "status": "ready",
+    "author": "Kedma Hamelberg",
+    "prose": [
+      [
+        {
+          "text": "Two new preprints look at a practical problem in medical AI. If a system works on one set of images, will it work somewhere else?",
+          "source_key": "",
+          "path": ""
+        },
+        {
+          "text": "One team combined sets of chest X-rays and mammograms, even though the images were marked in different ways. Its model detected several findings better than a model trained on one set, but the gains were uneven. It was not tested in clinical care.",
+          "source_key": "paper:d5c89b3070353457efa8c3a8",
+          "path": "research/paper-d5c89b3070353457efa8c3a8/index.html"
+        }
+      ],
+      [
+        {
+          "text": "The second team adapted a general image model for colonoscopy, breast ultrasound and skin images. It did better on images from other institutions, but models built for each task still held their own on familiar data and sometimes drew more precise outlines.",
+          "source_key": "paper:5c79f9cd55c88ba44d434d20",
+          "path": "research/paper-5c79f9cd55c88ba44d434d20/index.html"
+        }
+      ],
+      [
+        {
+          "text": "The studies measure different jobs. One spots findings, the other draws their outlines. Their scores cannot be lumped together. Taken together, they show that the mix of images and the place of testing can change the result. Neither preprint shows better care for patients.",
+          "source_key": "",
+          "path": ""
+        }
+      ]
+    ],
+    "source_hashes": {
+      "paper:d5c89b3070353457efa8c3a8": "f5e3e8d6bf8e7b797a8a1c6d4b4572a0942c85a403b2766b5543e4bf08841198",
+      "paper:5c79f9cd55c88ba44d434d20": "f56cade0ed92b5ff0c48350a42571dc0103ecd82ea5e38b0135a7b0cc8a1c0c5"
+    },
+    "image_key": "culture:61b471193719e6e0b51ecbbf",
+    "image_work_key": "028d380c6812664ad53f636a5ec10b43da77a3a839214590347c9ecf3aada13f",
+    "image_reason": "A landscape across four seasons suggests that conditions can change.",
+    "review_checks": {
+      "grounded": true,
+      "clear_high_school_language": true,
+      "coherent_prose": true,
+      "meaningful_connection": true,
+      "source_limits_preserved": true,
+      "no_invented_personal_experience": true,
+      "image_metaphor_supported": true
+    },
+    "image_reason_visible": false,
+    "human_approved": true
+  }
+}
