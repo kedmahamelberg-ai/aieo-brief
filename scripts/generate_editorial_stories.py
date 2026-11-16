@@ -80,6 +80,11 @@ def candidates(release,sym,maps,force=False):
             # explicit decision to withhold a summary still stay locked.
             if correction.get('headline'):event={**event,'event_title':correction['headline']}
         public_current=version_valid(latest,axis[eid],release,event,legacy_proofs)
+        # A verified public version stays complete when the retry model changes.
+        # Re-run only missing or source-invalid stories, preserving accepted work.
+        if public_current:
+            counts['unchanged']+=1
+            continue
         relation=fixed_relationship(axis[eid])
         bound=bool(release.get('complete_content'))
         allowed={str(s['article_id']) for s in event.get('sources',[])} if bound else None
