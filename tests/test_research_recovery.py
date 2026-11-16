@@ -112,6 +112,20 @@ class ResearchRecovery(unittest.TestCase):
         with patch('generate_research_summaries.ai_runtime.uses_openai',return_value=False):
             self.assertEqual(pending({'papers':[paper]},{paper['key']:prior}),[paper])
 
+    def test_model_change_preserves_completed_paper_but_source_only_stays_pending(self):
+        paper={**self.paper(),'metadata_sha256':'same','abstract':'Verified abstract text.',
+               'pdf_url':'https://arxiv.org/pdf/2609.35767v1'}
+        from brief_contract import PROMPT_VERSION
+        from editorial_engine import ENGINE_VERSION
+        completed={**paper,'has_editorial':True,'evidence_scope':'paper_text',
+                   'research_reading_version':READING_VERSION,
+                   'prompt_version':PROMPT_VERSION,'editorial_engine_version':ENGINE_VERSION,
+                   'model_revision':'gpt-5-nano:low:aieo-openai-json-v1'}
+        with patch('generate_research_summaries.ai_runtime.uses_openai',return_value=True), \
+             patch('generate_research_summaries.ai_runtime.identity',return_value={'revision':'gpt-6-luna:low:aieo-openai-json-v1'}):
+            self.assertEqual(pending({'papers':[paper]},{paper['key']:completed}),[])
+            self.assertEqual(pending({'papers':[paper]},{paper['key']:{**completed,'has_editorial':False}}),[paper])
+
     def test_visible_source_only_pages_precede_new_papers_despite_retry_count(self):
         pending_paper={'key':'paper:old','date':'2026-10-26'}
         new_paper={'key':'paper:new','date':'2026-10-30'}

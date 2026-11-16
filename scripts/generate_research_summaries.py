@@ -23,7 +23,8 @@ def load():
     return data,{r['key']:withhold_abstract_summary(restore_reading_scope(r)) for r in public['papers']}
 
 def pending(data,old):
-    return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and not (p.get('pdf_url') and p.get('pdf_url') != old[p['key']].get('pdf_url')) and (not ai_runtime.uses_openai() or old[p['key']].get('model_revision')==ai_runtime.identity()['revision']))]
+    # A model change alone does not invalidate an already source-checked paper.
+    return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and not (p.get('pdf_url') and p.get('pdf_url') != old[p['key']].get('pdf_url')))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
