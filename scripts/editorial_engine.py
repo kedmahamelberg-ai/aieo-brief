@@ -173,6 +173,10 @@ def source_numeric_aliases(text):
  # grouping, French grouping spaces, decimal commas, and spaced percent signs.
  # Only the evidence creates aliases; draft numbers never authorize themselves.
  aliases=set()
+ # A spelled-out percent unit has exactly the same value as the symbol.
+ for match in re.finditer(r'(?<![\d.,])(\d+(?:[.,]\d+)?)\s+(?:per\s+cent|percent|pour\s+cent)\b',text,re.I):
+  aliases.add(match.group(1)+'%')
+  aliases.add(match.group(1).replace(',','.')+'%')
  # Exact Chinese magnitude conversion is a spelling change, not a new value.
  # Keep the quantity's qualifier and meaning subject to the source reviewer.
  for match in re.finditer(r'(?<![\d.,])([0-9]+(?:\.[0-9]+)?)(万亿|亿|万|千)(?!分)',text):
