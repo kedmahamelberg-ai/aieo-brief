@@ -54,6 +54,35 @@ def accepted_review(draft=None):
 
 
 class EditorialRecovery(unittest.TestCase):
+    def test_changed_editorial_seed_has_a_new_retry_fingerprint(self):
+        event={'event_id':'00000000-0000-0000-0000-000000000001','event_title':'Source title'}
+        source=[{'publisher':'Source','headline':'Article','evidence':'Complete source text.'}]
+        legacy=news.digest({'engine_version':news.ENGINE_VERSION,'prompt_version':news.PROMPT_VERSION,
+                            'model_revision':news.MODEL_REVISION,'event_id':event['event_id'],
+                            'title':event['event_title'],'axes':{},
+                            'sources':[{'publisher':'Source','headline':'Article',
+                                        'hash':news.digest('Complete source text.')} ]})
+        self.assertEqual(news.fingerprint(event,{},source),legacy)
+        first=news.fingerprint({**event,'draft_seed':{'editorial_headline':'First correction'}},{},source)
+        second=news.fingerprint({**event,'draft_seed':{'editorial_headline':'Revised correction'}},{},source)
+        self.assertNotEqual(first,second)
+
+    def test_unchanged_source_rejection_is_not_selected_for_another_paid_retry(self):
+        eid='00000000-0000-0000-0000-000000000001'
+        release={'evidence':[{'event_id':eid,'event_date':'2026-10-22'}],
+                 'complete_content':False,'content_sha256':'edition','release_id':'2026-W43'}
+        sym={'evidence':[{'event_id':eid}]}
+        source={'source_number':1,'publisher':'Source','headline':'Article','evidence':'Complete source text.'}
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);(root/'data/editorial').mkdir(parents=True)
+            (root/'data/editorial/retry-state.json').write_text(json.dumps({'same-input':{'attempts':1,'stage':'generation','last_code':'source_scope_review_failed'}}))
+            with patch.object(news,'ROOT',root),patch.object(news,'corrections',return_value={}),patch.object(news,'fixed_relationship',return_value={'axes':{'evidence_complete':True}}),patch.object(news,'source_payload',return_value=[source]),patch.object(news,'fingerprint',return_value='same-input'),patch.object(news,'version_valid',return_value=False):
+                selected,counts,_=news.candidates(release,sym,({}, {},{},{}))
+                self.assertTrue(selected[0]['blocked'])
+                self.assertEqual(counts['blocked_rejections'],1)
+                forced,_,_=news.candidates(release,sym,({}, {},{},{}),force=True)
+                self.assertFalse(forced[0]['blocked'])
+
     def test_repair_selection_preserves_valid_public_summary_across_model_change(self):
         missing='00000000-0000-0000-0000-000000000001'
         current='00000000-0000-0000-0000-000000000002'
@@ -324,6 +353,19 @@ class EditorialRecovery(unittest.TestCase):
         self.assertIn('PREVIOUS REJECTED DRAFT', model.call_args_list[1].args[0])
         self.assertIn('263 musicians', model.call_args_list[1].args[0])
 
+    def test_rejected_checked_seed_does_not_trigger_paid_model_rewrites(self):
+        draft,sources=fixture()
+        rejected=engine.EditorialError('source_scope_review_failed','Source review failed',
+                                      stage='scope_review',feedback='One claim is not supported')
+        with patch.object(engine,'compile_evidence',return_value=(sources,[])), \
+             patch.object(engine.news_reading,'style_problem',return_value=None), \
+             patch.object(engine,'review_scope',side_effect=rejected), \
+             patch.object(engine,'call_json') as model:
+            with self.assertRaises(engine.EditorialError) as caught:
+                engine.write_story({'draft_seed':draft},{},sources)
+        self.assertIs(caught.exception,rejected)
+        model.assert_not_called()
+
     def test_research_resolves_support_ids_to_verified_source_passages(self):
         draft, sources = fixture()
         quotes = engine.research_quotes(sources)
@@ -513,6 +555,20 @@ class GenerationCheckpoints(unittest.TestCase):
             self.assertEqual(news.main(),0)
             state=json.loads((root/'data/editorial/retry-state.json').read_text())
             self.assertEqual(state['input-1']['attempts'],2)
+            status=json.loads((root/'data/editorial/status.json').read_text())
+            self.assertEqual(status['counts']['deferred'],1)
+
+    def test_blocked_news_does_not_call_model_or_require_key(self):
+        with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:
+            root,_=self.context(stack,folder)
+            self.news_context(stack,root,1)
+            item=news.candidates.return_value[0][0]
+            item['blocked']=True
+            stack.enter_context(patch.object(news,'write_story'))
+            key=stack.enter_context(patch.object(news.ai_runtime,'require_key'))
+            self.assertEqual(news.main(),0)
+            news.write_story.assert_not_called()
+            key.assert_not_called()
 
     def test_database_failure_remains_failed_with_its_stage_visible(self):
         with tempfile.TemporaryDirectory() as folder, ExitStack() as stack:

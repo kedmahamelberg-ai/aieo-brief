@@ -104,9 +104,10 @@ jobs:
         id: research
         if: steps.collect.outcome == 'success'
         run: python scripts/generate_research_summaries.py --dry-run
-      - name: Require source-grounding regression gate
-        if: inputs.dry_run != true && env.AIEO_AI_PROVIDER == 'openai' && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
-        run: python scripts/evaluate_grounding.py
+      # The synthetic live-model suite has its own explicit workflow. Running
+      # it for every editorial batch repeats paid calls and can fail a healthy
+      # batch on an unrelated fixture. Every real draft still must pass its
+      # independent full-source review before it is saved.
       - name: Check API access before writing
         if: inputs.dry_run != true && env.AIEO_AI_PROVIDER == 'openai' && (steps.news.outputs.needs_model == 'true' || steps.research.outputs.needs_model == 'true')
         run: python scripts/ai_runtime.py --preflight
@@ -116,20 +117,20 @@ jobs:
         uses: ./.github/actions/local-editorial-model
       - name: Write and save news one story at a time
         id: write_news
-        if: inputs.dry_run != true && steps.news.outcome == 'success'
+        if: inputs.dry_run != true && steps.news.outcome == 'success' && steps.news.outputs.pending != '0' && steps.news.outputs.pending != ''
         continue-on-error: true
         env:
           NEWS_MINUTES: ${{ inputs.news_minutes || '105' }}
           NEWS_LIMIT: ${{ inputs.news_limit || '0' }}
           NEWS_EVENT_IDS: ${{ inputs.news_event_ids || '' }}
-          NEWS_STRICT: ${{ inputs.news_only || false }}
+          NEWS_STRICT: ${{ github.event_name == 'workflow_dispatch' && inputs.news_only || false }}
         run: |
           args=()
           if [[ "$NEWS_STRICT" == 'true' ]]; then args+=(--strict); fi
           python scripts/generate_editorial_stories.py --max-runtime-minutes "$NEWS_MINUTES" --limit "$NEWS_LIMIT" --event-ids "$NEWS_EVENT_IDS" "${args[@]}"
       - name: Write research with its study limits
         id: write_research
-        if: inputs.dry_run != true && steps.collect.outcome == 'success'
+        if: inputs.dry_run != true && steps.collect.outcome == 'success' && steps.research.outputs.pending != '0' && steps.research.outputs.pending != ''
         continue-on-error: true
         env:
           RESEARCH_MINUTES: ${{ inputs.research_minutes || '60' }}

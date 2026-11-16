@@ -35,6 +35,11 @@ class SocialProduction(unittest.TestCase):
   self.assertEqual(social.due(self.items,{},date(2026,10,26)),(True,'2026-W43'))
  def test_completed_edition_is_idempotent_even_after_culture_refresh(self):
   self.assertFalse(social.due(self.items+[dict(kind='culture',date='2026-10-27')],{'editions':{'2026-W43':{}}},date(2026,10,27))[0])
+ def test_social_waits_for_fourteen_completed_source_backed_stories(self):
+  monday=date(2026,10,26)
+  self.assertEqual(social.social_source_readiness(self.items,monday,self.news,'2026-W43'),(20,True))
+  incomplete=[dict(row,has_editorial=False) for row in self.news[:7]]+self.news[7:]
+  self.assertEqual(social.social_source_readiness(incomplete+self.items[20:],monday,incomplete,'2026-W43'),(13,True))
  def test_w45_review_revision_replaces_image_risk_without_repeating_later_weeks(self):
   rows=[dict(row,edition='2026-W45',period_start='2026-11-02',period_end='2026-11-08') for row in self.items]
   self.assertTrue(social.due(rows,{'editions':{'2026-W45':{}}},date(2026,11,9))[0])

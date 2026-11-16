@@ -61,13 +61,23 @@ def needs_editorial_retry(release, published, status, now=None):
         return False
     if status.get('release_id') != release['release_id']:
         return True
+    counts = status.get('counts') or {}
+    # A source-only page is not a reason to call the model again when every
+    # source-ready draft was already rejected for the same unchanged evidence.
+    if counts.get('selected') == 0 and counts.get('deferred', 0) == 0:
+        return False
     try:
         last_attempt = datetime.fromisoformat(status['updated_at'].replace('Z', '+00:00'))
         if last_attempt.tzinfo is None:
             return True
         current = (now or datetime.now(ZoneInfo('Europe/Amsterdam'))).astimezone(ZoneInfo('Europe/Amsterdam'))
         local_attempt = last_attempt.astimezone(ZoneInfo('Europe/Amsterdam'))
-        if status.get('counts', {}).get('deferred', 0) > 0:
+        # Older targeted runs did not record their unselected remainder as
+        # deferred. Do not let one repaired article postpone all other stories
+        # until tomorrow merely because its targeted pass has finished.
+        remaining = max(0, counts.get('needs_model', 0) + counts.get('needs_rebind', 0)
+                        - counts.get('blocked_rejections', 0) - counts.get('selected', 0))
+        if counts.get('deferred', 0) > 0 or remaining > 0:
             return (current - local_attempt).total_seconds() >= 2 * 3600
         return local_attempt.date() < current.date()
     except (KeyError, TypeError, ValueError):

@@ -16,6 +16,7 @@ import unicodedata
 from pathlib import Path
 
 POLICY = 'brief-english-display-v1'
+FAILURE_POLICY = 'brief-english-failure-v1'
 LAYOUT = 'brief-english-ux-v1'
 TEXT = set('headline original_headline deck what_happened why_it_matters for_humans for_ai display_scope limitation publisher creator creator_origin work_date book_title alt excerpt quote_context translator featuring recording_credit recording_description source_locator creator_role origin_label date_label badge title credit label changes source_credit license_label'.split())
 LISTS = {'body_paragraphs', 'poem_lines'}
@@ -113,17 +114,23 @@ def parts(item):
 class EnglishPublication:
     def __init__(self, root, allow_model=False, checker=needs_translation, seconds=600):
         self.path = Path(root) / 'data/english/public-text.json'
-        self.cache = json.loads(self.path.read_text()).get('entries', {}) if self.path.exists() else {}
+        saved = json.loads(self.path.read_text()) if self.path.exists() else {}
+        self.cache = saved.get('entries', {})
+        # Only hashes are public. An unchanged rejected translation waits for a
+        # source change, a revised translation policy, or an explicit retry.
+        self.failures = saved.get('failures', {})
         self.allow_model, self.checker = allow_model, checker
         self.deadline = time.monotonic() + seconds
         self.generated = self.cached = self.pending = 0
+        self.blocked_retries = 0
         self.errors = {}
         self.stopped = False
 
     def save(self):
         self.path.parent.mkdir(parents=True, exist_ok=True)
         tmp = self.path.with_suffix('.tmp')
-        tmp.write_text(json.dumps({'policy': POLICY, 'entries': self.cache}, ensure_ascii=False, indent=2) + '\n')
+        tmp.write_text(json.dumps({'policy': POLICY, 'entries': self.cache,
+                                   'failures': self.failures}, ensure_ascii=False, indent=2) + '\n')
         os.replace(tmp, self.path)
 
     def translate(self, values):
@@ -195,15 +202,23 @@ class EnglishPublication:
                     self.save()
         if entry:
             self.cached += 1
-        elif self.allow_model and not self.stopped:
+        elif self.allow_model and self.failures.get(key) == FAILURE_POLICY and os.environ.get('BRIEF_RETRY_FAILED_TRANSLATIONS') != 'true':
+            self.blocked_retries += 1
+        elif (self.allow_model and not self.stopped
+              and (self.failures.get(key) != FAILURE_POLICY
+                   or os.environ.get('BRIEF_RETRY_FAILED_TRANSLATIONS') == 'true')):
             try:
                 entry = self.translate(values)
                 self.cache[key] = entry
+                self.failures.pop(key, None)
                 self.generated += 1
                 self.save()  # A later failure does not lose a completed translation.
             except Exception as error:
                 name = type(error).__name__
                 self.errors[name] = self.errors.get(name, 0) + 1
+                if isinstance(error, ValueError):
+                    self.failures[key] = FAILURE_POLICY
+                    self.save()
                 if name in ('AIBudgetExceeded', 'AIError', 'TimeoutError'):
                     self.stopped = True
         if entry:
@@ -244,7 +259,7 @@ class EnglishPublication:
 
     def summary(self):
         return {'translated_items': self.generated, 'cached_items': self.cached, 'pending_items': self.pending,
-                'errors': self.errors, 'policy': POLICY}
+                'blocked_retries': self.blocked_retries, 'errors': self.errors, 'policy': POLICY}
 
 
 def content_version(item):

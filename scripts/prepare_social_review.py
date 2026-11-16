@@ -108,6 +108,24 @@ def verified_markets(row):
     return [market for market in row.get('markets', []) if market in anchors and re.search(anchors[market], material, re.I)]
 
 
+def social_source_readiness(items, monday, news, release):
+    """Check the content minimum without fetching photos or making a package."""
+    audit = read(ROOT / 'config' / f'social-source-audit-{release}.json', {})
+    if audit and audit.get('schema_version') != 'brief_social_source_audit_v1':
+        raise ValueError('Unknown social source audit schema')
+    excluded = {row['path'] for row in audit.get('excluded_news', [])}
+    selected = set(audit.get('selected_news', []))
+    ready = {row['path'] for row in news if row['path'] not in excluded
+             and (not selected or row['path'] in selected)
+             and row.get('claim_status') != 'opinion' and row.get('has_editorial')
+             and row.get('what_happened') and row.get('body_paragraphs') and row.get('sources')
+             and not any('_localized_' in str(part) for part in row['body_paragraphs'])}
+    research = any(row.get('kind') == 'research'
+                   and str(monday - timedelta(days=7)) <= row.get('date', '') < str(monday)
+                   and row.get('what_happened') and row.get('sources') for row in items)
+    return len(ready), research
+
+
 def topic_plan(items, monday, news):
     """Prefer verified country stories, then use unlabelled edition stories."""
     release = news[0]['edition'] if news else ''
@@ -456,9 +474,16 @@ def main():
         if attempt==5:raise ValueError('Live site has not reached the deployed news edition; do not produce stale drafts')
         time.sleep(10)
     needed,release=due(items,state,datetime.now(ZONE).date())
+    ready_news=0;ready_research=False
+    if needed:
+        _,_,_,monday,news=edition(items)
+        ready_news,ready_research=social_source_readiness(items,monday,news,release)
+        if ready_news < 14 or not ready_research:
+            needed=False
+            print(f'::notice::Social package waiting for source-backed articles: {ready_news}/14 news; research ready={ready_research}.',flush=True)
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('needed='+str(needed).lower()+'\n')
-    print(json.dumps({'production_needed':needed,'release_id':release}))
+    print(json.dumps({'production_needed':needed,'release_id':release,'ready_news':ready_news,'ready_research':ready_research}))
     if a.check_only or not needed:return
     release,start,end,monday,news=edition(items);output=a.output.resolve()
     for name in ['assets','sources']: (output/name).mkdir(parents=True,exist_ok=True)

@@ -59,6 +59,23 @@ class EnglishPublicationTests(unittest.TestCase):
         eng=EnglishPublication(self.temp.name,True,self.checker)
         with patch.object(eng,'translate',side_effect=TimeoutError) as call:
             eng.apply(self.row);eng.apply(self.row);self.assertEqual(call.call_count,1)
+    def test_unchanged_validation_failure_is_not_billed_again_on_each_build(self):
+        eng=EnglishPublication(self.temp.name,True,self.checker)
+        with patch.object(eng,'translate',side_effect=ValueError('Rejected translation')) as call:
+            self.assertEqual(eng.apply(self.row)['english_status'],'pending')
+            self.assertEqual(call.call_count,1)
+        again=EnglishPublication(self.temp.name,True,self.checker)
+        with patch.object(again,'translate',side_effect=AssertionError('No repeat call')) as call:
+            self.assertEqual(again.apply(self.row)['english_status'],'pending')
+            call.assert_not_called()
+        self.assertEqual(again.summary()['blocked_retries'],1)
+        saved=again.path.read_text()
+        self.assertNotIn('Papéis avulsos',saved)
+        self.assertNotIn('Rejected translation',saved)
+        with patch.dict('os.environ',{'BRIEF_RETRY_FAILED_TRANSLATIONS':'true'}):
+            with patch.object(again,'translate',side_effect=self.translator) as call:
+                self.assertEqual(again.apply(self.row)['english_status'],'translated')
+                self.assertEqual(call.call_count,1)
     def test_nonlatin_detection(self):
         for text in ['人工智能','الذكاء الاصطناعي','исследование','研究']:self.assertTrue(non_latin(text))
         self.assertFalse(non_latin('Français, Portuguese and English'))

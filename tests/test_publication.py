@@ -3,12 +3,17 @@ from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from brief_contract import validate_pair,load_config,digest,PROMPT_VERSION
-from build_site import cards,version_valid,clean_body_paragraphs
+from build_site import cards,version_valid,clean_body_paragraphs,completed_news
 from generate_editorial_stories import source_payload,candidates
 from source_evidence_quality import evidence_chunks
 from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
 from validate_public_site import inspect_json
 class Publication(unittest.TestCase):
+ def test_home_reading_feed_excludes_unfinished_source_records(self):
+  rows=[{'key':'ready','has_editorial':True,'what_happened':'Checked account','body_paragraphs':['Source detail']},
+        {'key':'source-only','has_editorial':False,'what_happened':'','body_paragraphs':[]},
+        {'key':'thin','has_editorial':True,'what_happened':'Checked account','body_paragraphs':[]}]
+  self.assertEqual([row['key'] for row in completed_news(rows)],['ready'])
  def test_current_week_directional_labels_have_supporting_readings(self):
   from editorial_corrections import apply_corrections
   stories=json.loads((ROOT/'data/archive/stories.json').read_text())['stories']

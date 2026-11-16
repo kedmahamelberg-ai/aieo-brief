@@ -39,7 +39,9 @@ jobs:
     uses: ./.github/workflows/generate-brief-editorial.yml
     with:
       news_only: true
-      news_limit: ${{ needs.check.outputs.needs_update == 'true' && '0' || needs.check.outputs.missing_news_summaries }}
+      # Ten source-ready stories per scheduled pass bound model spending. The
+      # generator records the remainder as deferred, so later wake-ups resume.
+      news_limit: '10'
     secrets: inherit
   publish:
     needs: [check, editorial]

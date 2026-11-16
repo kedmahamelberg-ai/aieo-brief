@@ -539,5 +539,14 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    last=e
    correction=getattr(e,'feedback',str(e))
    if correction not in corrections:corrections.append(correction)
+   if (kind=='news' and attempt==0 and isinstance(event.get('draft_seed'),dict)
+       and isinstance(e,EditorialError)
+       and e.code in {'source_scope_review_failed','claim_grounding_failed',
+                      'draft_quote_unsupported','unsupported_number','source_wording_copied'}):
+    # A hand-corrected seed is already the source-bound revision. If it fails,
+    # retain the exact feedback for a human correction instead of paying for
+    # two speculative model rewrites of the same rejected claims.
+    e.retry_feedback=[message[:600] for message in corrections]
+    raise
  if last is not None:last.retry_feedback=[message[:600] for message in corrections]
  raise last
