@@ -11,8 +11,10 @@ from collections import Counter
 from datetime import datetime,timezone,timedelta,date
 from pathlib import Path
 from brief_contract import PROMPT_VERSION,digest,safe_url
-from editorial_engine import write_story,failure_diagnostic,ENGINE_VERSION,research_quotes
+from editorial_engine import write_story,failure_diagnostic,EditorialError,ENGINE_VERSION,research_quotes
 ROOT=Path(__file__).resolve().parents[1]
+SOURCE_REJECTIONS={'source_scope_review_failed','claim_grounding_failed','draft_quote_unsupported',
+                   'unsupported_number','source_wording_copied'}
 PUBLIC_FIELDS=('key','doi','arxiv_id','original_headline','url','date','authors','institutions','affiliation_source_url','affiliation_checked_at','affiliation_fallback_checked_at','affiliation_fallback_version','source_verified_at','publisher','source','research_label','evidence_scope','access','journal_reference','license_urls','metadata_sha256','pdf_url','abstract_source_url','abstract_format')
 
 def load():
@@ -25,6 +27,18 @@ def load():
 def pending(data,old):
     # A model change alone does not invalidate an already source-checked paper.
     return [p for p in data['papers'] if not is_locked(p['key'],ROOT) and (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')) and not (old.get(p['key'],{}).get('metadata_sha256')==p['metadata_sha256'] and old[p['key']].get('prompt_version')==PROMPT_VERSION and old[p['key']].get('has_editorial') and old[p['key']].get('editorial_engine_version')==ENGINE_VERSION and not needs_upgrade(old[p['key']]) and not (p.get('pdf_url') and p.get('pdf_url') != old[p['key']].get('pdf_url')))]
+
+def rejection_fingerprint(p, seed):
+    """A changed source, draft seed, or writer version permits a fresh review."""
+    return digest({'key':p['key'],'metadata':p.get('metadata_sha256'),
+                   'pdf_url':p.get('pdf_url'),'abstract':p.get('abstract'),
+                   'seed':seed,'prompt':PROMPT_VERSION,'engine':ENGINE_VERSION,
+                   'model':ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else 'local'})
+
+def actionable(papers, retry, seeds):
+    if os.environ.get('BRIEF_RETRY_REJECTED_RESEARCH')=='true':return papers
+    return [p for p in papers if not (retry.get(p['key'],{}).get('rejected_fingerprint')
+            == rejection_fingerprint(p,seeds.get(p['key'],{})))]
 
 def public_record(p):
     return {k:p.get(k) for k in PUBLIC_FIELDS if k in p}
@@ -73,7 +87,11 @@ def main():
         repairs.append({**prior,'abstract':'','publisher':prior.get('publisher',''),
                         'source':prior.get('source',''),'original_headline':prior.get('original_headline') or prior.get('headline','')})
     data['papers'].extend(repairs)
-    todo=pending(data,old);todo_keys={p['key'] for p in todo}
+    retry_path=ROOT/'data/research/retry-state.json'
+    retry=json.loads(retry_path.read_text()) if retry_path.exists() else {}
+    seed_path=ROOT/'data/research/editorial-seeds.json'
+    seeds=json.loads(seed_path.read_text()) if seed_path.exists() else {}
+    todo=actionable(pending(data,old),retry,seeds);todo_keys={p['key'] for p in todo}
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'pending={len(todo)}\nneeds_model={str(bool(todo)).lower()}\n')
     if args.dry_run:print(json.dumps({'pending':len(todo),'records':len(data['papers'])}));return
@@ -82,8 +100,6 @@ def main():
     client=create_client(os.environ['SUPABASE_URL'],os.environ['SUPABASE_SECRET_KEY'])
     deadline=time.monotonic()+args.max_runtime_minutes*60;counts={'generated':0,'failed':0,'metadata_only':0,'deferred':0,'unchanged':0}
     audit=[];selected=[];failures=[];repeated_model_failure=None;model_failure_streak=0
-    retry_path=ROOT/'data/research/retry-state.json'
-    retry=json.loads(retry_path.read_text()) if retry_path.exists() else {}
     def checkpoint():
         payload={'schema_version':'aieo_research_public_v1','period_start':data['period_start'],'period_end':data['period_end'],'generated_at':datetime.now(timezone.utc).isoformat(),'papers':merge_recent(old,selected,data['period_end'])}
         path=ROOT/'data/research/public.json';tmp=path.with_suffix('.tmp');tmp.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n');tmp.replace(path)
@@ -107,6 +123,8 @@ def main():
         base={**public_record(p),'has_editorial':False,'headline':p['original_headline'],'deck':'Open the original research record for the paper and its access options.','what_happened':'','why_it_matters':'','body_paragraphs':[],'limitation':'','summary_basis':'Original paper title','reading_minutes':1,
               'pmc_reader_version':PMC_READER_VERSION if p.get('source')=='pnas' else 0}
         fallback=prior if prior.get('has_editorial') and prior.get('metadata_sha256')==p['metadata_sha256'] else base
+        if p['key'] not in todo_keys:
+            counts['deferred']+=1;selected.append({**fallback,'summary_status':'review_needed'});checkpoint();continue
         if not (p.get('abstract') or p.get('pdf_url') or p.get('arxiv_id')):
             counts['metadata_only']+=1;selected.append({**fallback,'summary_status':'abstract_unavailable'});checkpoint();continue
         if time.monotonic()>deadline-90:counts['deferred']+=1;selected.append({**fallback,'summary_status':'pending'});checkpoint();continue
@@ -129,8 +147,6 @@ def main():
             evidence=reading['text']
             sources=[{'source_number':1,'headline':p['original_headline'],'publisher':p['publisher'],'evidence':evidence,'evidence_basis':'paper_text'}]
             kind='paper'
-            seed_path=ROOT/'data/research/editorial-seeds.json'
-            seeds=json.loads(seed_path.read_text()) if seed_path.exists() else {}
             seed=seeds.get(p['key'],{})
             event={'event_title':p['original_headline'],'research_label':p.get('research_label','Research')}
             if seed.get('metadata_sha256')==p['metadata_sha256'] and ((not full and seed.get('evidence_scope','abstract')=='abstract') or (full and seed.get('paper_text_sha256')==reading['text_sha256'] and seed.get('support_catalog_sha256')==digest(research_quotes(sources)))):event['draft_seed']=seed.get('draft')
@@ -163,6 +179,8 @@ def main():
             counts['failed']+=1;selected.append({**fallback,'summary_status':'retrying'})
             diagnostic=failure_diagnostic(e,stage)
             failures.append({'key':p['key'],**diagnostic})
+            if isinstance(e,EditorialError) and diagnostic['code'] in SOURCE_REJECTIONS:
+                retry[p['key']]['rejected_fingerprint']=rejection_fingerprint(p,seeds.get(p['key'],{}))
             print('Summary withheld for '+p['key']+': '+json.dumps(diagnostic,sort_keys=True),flush=True)
             if isinstance(e,ai_runtime.AIError):
                 fingerprint=(diagnostic['stage'],diagnostic['code'])
