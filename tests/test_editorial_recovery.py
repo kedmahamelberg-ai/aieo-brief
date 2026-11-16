@@ -54,7 +54,7 @@ def accepted_review(draft=None):
 
 
 class EditorialRecovery(unittest.TestCase):
-    def test_repair_selection_prioritizes_missing_public_summary(self):
+    def test_repair_selection_preserves_valid_public_summary_across_model_change(self):
         missing='00000000-0000-0000-0000-000000000001'
         current='00000000-0000-0000-0000-000000000002'
         release={'evidence':[{'event_id':missing,'event_date':'2026-10-22'},
@@ -69,8 +69,9 @@ class EditorialRecovery(unittest.TestCase):
             root=Path(directory);(root/'data/editorial').mkdir(parents=True)
             (root/'data/editorial/retry-state.json').write_text(json.dumps({missing:{'attempts':5}}))
             with patch.object(news,'ROOT',root),patch.object(news,'corrections',return_value={}),patch.object(news,'fixed_relationship',return_value={'axes':{'evidence_complete':True}}),patch.object(news,'source_payload',return_value=[source]),patch.object(news,'fingerprint',side_effect=lambda e,*_:e['event_id']),patch.object(news,'version_valid',side_effect=lambda _v,_r,_l,e,_p:e['event_id']==current):
-                selected,_,_=news.candidates(release,sym,maps)
-        self.assertEqual([item['eid'] for item in selected],[missing,current])
+                selected,counts,_=news.candidates(release,sym,maps)
+        self.assertEqual([item['eid'] for item in selected],[missing])
+        self.assertEqual(counts['unchanged'],1)
 
     def test_targeted_news_repair_rejects_unknown_ids(self):
         eid='00000000-0000-0000-0000-000000000001'
