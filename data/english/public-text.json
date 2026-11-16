@@ -7015,6 +7015,47 @@
       },
       "output_sha256": "cbc4538aea521655fbe09f40e3a0634dbb02fed914240f55d93b90e5913b0155",
       "policy": "brief-english-display-v1"
+    },
+    "0507d4cc46c72feffc88a796936960555dbc62785e14d2f53a29188ac04bd908": {
+      "english": {
+        "0": "Reporting from Shangguan News. Open the source for the article.",
+        "1": "Shangguan News",
+        "2": "Shanghai housing and urban-rural development industry first releases 'AI+' three-year action plan",
+        "3": "Shangguan News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "53aa1b1a46f1ec317b6058cf9afcb5ce03dd36fcbe4a72d36ebeb21ed2c5e0db",
+      "policy": "brief-english-display-v1"
+    },
+    "2bdddade91e83d79b0cce861ce04da5278dc3218ae6c896ac6e4392982dc5c2e": {
+      "english": {
+        "0": "Xinhua reports that Guangdong registered GreatWall, a general embodied AI model developed by Zi Bianliang Jiqiren. An embodied AI model connects AI with actions in the physical world. The report calls GreatWall the first such model registered in the Greater Bay Area.",
+        "1": "Xinhua Net",
+        "2": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "524eb6fc0d4476d0707a2f59ad230fac0596eb29d57ea3c0e188aed887bd90aa",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {

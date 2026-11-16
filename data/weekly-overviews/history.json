@@ -68,12 +68,12 @@
             "name": "France",
             "count": 12,
             "topic": "Business And Investment",
-            "sentence": "France: the discovery stream centred most often on business and investment, including “France plans Rennes center to coordinate military uses of artificial intelligence.”",
+            "sentence": "France: the discovery stream centred most often on business and investment, including “French experts propose 18 AI safeguards, warning that reliance may weaken….”",
             "story": {
-              "headline": "France plans Rennes center to coordinate military uses of artificial intelligence",
-              "path": "story/international-excellence-center-rennes-dedicated-artificial-defense-established/index.html",
-              "publisher": "Siècle Digital",
-              "source_url": "https://siecledigital.fr/2026/11/13/un-centre-international-consacre-a-lintelligence-artificielle-de-defense-va-ouvrir-en-france"
+              "headline": "French experts propose 18 AI safeguards, warning that reliance may weaken thinking and autonomy",
+              "path": "story/artificial-intelligence-facing-cognitive-decline-risk-protect-users/index.html",
+              "publisher": "BFM",
+              "source_url": "https://www.bfmtv.com/tech/intelligence-artificielle/ia-generative-face-a-un-affaiblissement-cognitif-des-experts-appellent-macron-a-mieux-proteger-les-utilisateurs_AD-202611100680.html"
             }
           },
           {
@@ -96,7 +96,7 @@
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "703ea4b0088d3daa7cc36168982e996c818f9d96a90b7e08e6e4ca09e6176a14",
+        "input_hash": "c5a6c66c1abee0d92b7271a37b2bcf526104dd622c9d10141130479a3fbed3fd",
         "attempts": 0
       },
       "research": {
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "cb132ab61b50a6eea6f5d61a1ac688cf7540fde55e247e538078ed3e0b405431"
+      "content_sha256": "c51b73160b551d0b5cd6cc853cb9552a3d287b4827c82a950bbfac3fa47e7354"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
