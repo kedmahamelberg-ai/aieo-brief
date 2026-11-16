@@ -6939,6 +6939,44 @@
       },
       "output_sha256": "e723a4705212f8cb5f185a1af638f1ed95d868cd71b51ee66ea40f0a94c970d7",
       "policy": "brief-english-display-v1"
+    },
+    "3ad9e9cc2388bb38b8c3636bdbe7941fe45609be19ba1df86699b423d9c17212": {
+      "english": {
+        "0": "Reporting from Nanjing University of Information Science and Technology. Open the source for the article.",
+        "1": "Nanjing University of Information Science and Technology",
+        "2": "Nanjing University of Information Science and Technology"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "e04bb7afe6f4e1e0f6d34e4f847efbc13f0c727c0da9397c38dc38d440bcb015",
+      "policy": "brief-english-display-v1"
+    },
+    "3ec64b55af729ae7061310fb787c43bef04bdc5e54f9693116a182802db5bb8f": {
+      "english": {
+        "0": "Reporting from University of Montpellier. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "dcaf290b3e56de20c862b3740b94a89353ccec0e8e47ee7c2830721e7425e030",
+      "policy": "brief-english-display-v1"
     }
   }
 }

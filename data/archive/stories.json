@@ -2535,8 +2535,8 @@
       "key": "event:f4540068-4f71-4f18-b728-f8b7453950c5",
       "event_id": "f4540068-4f71-4f18-b728-f8b7453950c5",
       "kind": "news",
-      "slug": "development-f4540068-4f71-4f18-b728-f8b7453950c5",
-      "path": "story/development-f4540068-4f71-4f18-b728-f8b7453950c5/index.html",
+      "slug": "ai-black-light-laboratory-beyond-no-doing-experiments",
+      "path": "story/ai-black-light-laboratory-beyond-no-doing-experiments/index.html",
       "headline": "AI Black Light Laboratory: beyond “no humans doing experiments”",
       "original_headline": "AI Black Light Laboratory: beyond “no humans doing experiments”",
       "deck": "Reporting from 南京信息工程大学. Open the source for the article.",
@@ -2578,7 +2578,11 @@
       "access_recovery_validated": false,
       "edition": "2026-W46",
       "period_start": "2026-11-09",
-      "period_end": "2026-11-15"
+      "period_end": "2026-11-15",
+      "legacy_paths": [
+        "story/development-f4540068-4f71-4f18-b728-f8b7453950c5/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:e9e93a18-b666-4fce-93d6-31e611cc0dd3",
@@ -4912,8 +4916,8 @@
       "key": "event:1000c6be-1e4b-487d-a990-7d87fe76533c",
       "event_id": "1000c6be-1e4b-487d-a990-7d87fe76533c",
       "kind": "news",
-      "slug": "development-1000c6be-1e4b-487d-a990-7d87fe76533c",
-      "path": "story/development-1000c6be-1e4b-487d-a990-7d87fe76533c/index.html",
+      "slug": "artificial-intelligence-health-future-our-brains-our-minds",
+      "path": "story/artificial-intelligence-health-future-our-brains-our-minds/index.html",
       "headline": "Artificial Intelligence in Health. The Future of Our Brains: Are We Losing Our Minds?",
       "original_headline": "Artificial Intelligence in Health. The Future of Our Brains: Are We Losing Our Minds?",
       "deck": "Reporting from Université de Montpellier. Open the source for the article.",
@@ -4955,7 +4959,11 @@
       "access_recovery_validated": false,
       "edition": "2026-W46",
       "period_start": "2026-11-09",
-      "period_end": "2026-11-15"
+      "period_end": "2026-11-15",
+      "legacy_paths": [
+        "story/development-1000c6be-1e4b-487d-a990-7d87fe76533c/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "key": "event:07a3fcca-1961-474c-9abf-cc9e8635cab8",
@@ -17902,7 +17910,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-16T08:40:36.155869+00:00",
+      "affiliation_checked_at": "2026-11-16T08:45:44.536414+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",

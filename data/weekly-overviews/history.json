@@ -29,12 +29,12 @@
             "name": "China",
             "count": 15,
             "topic": "Culture And Creativity",
-            "sentence": "China: the discovery stream centred most often on culture and creativity, including “Tsinghua Road / Hong Kong International Computer Conference Opens. Sun Dong….”",
+            "sentence": "China: the discovery stream centred most often on culture and creativity, including “AI Black Light Laboratory: beyond “no humans doing experiments”.”",
             "story": {
-              "headline": "Tsinghua Road / Hong Kong International Computer Conference Opens. Sun Dong: Artificial intelligence reshapes various industries. In the next five years, AI+ will create competitive advantages in three areas.",
-              "path": "story/tsinghua-road-hong-kong-international-computer-three-areas/index.html",
-              "publisher": "State Council Hong Kong and Macao Affairs Office",
-              "source_url": "https://www.hmo.gov.cn/2026/11/10/ARTIyTq6snbbbXlRCQsK3lTs261110.shtml"
+              "headline": "AI Black Light Laboratory: beyond “no humans doing experiments”",
+              "path": "story/ai-black-light-laboratory-beyond-no-doing-experiments/index.html",
+              "publisher": "Nanjing University of Information Science and Technology",
+              "source_url": "https://news.nuist.edu.cn/info/1007/131945.htm"
             }
           },
           {
@@ -124,7 +124,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "58cd958a99bad4afb90d9f139829b31e5500b365f9564039f2c1dacfc34128e8"
+      "content_sha256": "c9e8ec019ddc7464c1d4111c62cff2723c34981821f8ecaab79814542b8ccbd2"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
