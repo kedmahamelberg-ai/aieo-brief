@@ -6845,6 +6845,44 @@
       },
       "output_sha256": "2c426ae911358b15060bdb5629da94196a75f4e7553906db3b9a6b1211b5907d",
       "policy": "brief-english-display-v1"
+    },
+    "abdac46ce544210a64d9f6a794f8d32b67f493dd1aa9cd114c774cc4f7b0a7d6": {
+      "english": {
+        "0": "Reporting from the European Metropolis of Lille (MEL). Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "506254617aaf9501c8357418968a1d9ce90232afe2d1a9900e33e6365231d448",
+      "policy": "brief-english-display-v1"
+    },
+    "1b093ca910ec104b775e0c1e43d0e95037c6601561320af68bed17ca26505588": {
+      "english": {
+        "0": "Canadian media can sue OpenAI in Ontario",
+        "1": "Canadian media can sue OpenAI in Ontario",
+        "2": "Canadian media can sue OpenAI in Ontario"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "6b0182361dd3a7ace10517688b51de4ffc655aacec6a2676288eeeab0434e484",
+      "policy": "brief-english-display-v1"
     }
   }
 }
