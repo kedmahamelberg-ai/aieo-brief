@@ -518,7 +518,7 @@ def main():
             weekly_markets_item=weekly_items_by_key[f"weekly:{archived_overview['release_id']}:markets"],
             weekly_research_item=weekly_items_by_key[f"weekly:{archived_overview['release_id']}:research"],
         )
-    for page in ('about','privacy','account','moderation'):
+    for page in ('about','contact','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
         related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
@@ -573,7 +573,7 @@ def main():
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=[
             ('index.html',today,''),('research/index.html',today,''),('governments-say/index.html',today,''),('culture/index.html',today,''),
-            ('archive/index.html',today,''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
+            ('archive/index.html',today,''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('contact/index.html',today,''),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
             *[(x['path'],x['period_end'],x['markets'].get('image_path','')) for x in overview_archive],
             *[(item['path'],item['date'],'') for item in sitemap_articles(allcards)],
         ]
