@@ -1136,7 +1136,7 @@
       "source_body_sha256": [
         "e0a5d1f5499d9324a1ce796784549eb372df2220b5ffe01ac9b02664d19dc092"
       ],
-      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context.",
+      "reason": "Reviewed both implication boxes against the retained source; preserve supported claims and distinguish plans, opinions, findings and neutral context. Owner flagged Canada–USA label: Microsoft source states soil samples from Brazil and the US and predictions for Mississippi using Brazilian data; Canada is only a discovery market.",
       "after": {
         "for_humans": "The model could help people working on carbon removal identify farmland where crushed rock may work well.",
         "human_direction": "gain",
@@ -1147,7 +1147,8 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
+        },
+        "location_label": "Research locations: Brazil · USA"
       }
     },
     {

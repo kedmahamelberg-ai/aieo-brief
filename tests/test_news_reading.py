@@ -157,6 +157,10 @@ class NewsReading(unittest.TestCase):
         self.assertIn('This Brief has not established',html)
         self.assertIn('Discovery feeds: Canada · USA',html)
         self.assertIn('<strong>Context</strong>',html)
+        row['location_label']='Research locations: Brazil · USA'
+        html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
+        self.assertIn('Research locations: Brazil · USA',html)
+        self.assertNotIn('Discovery feeds: Canada · USA',html)
 
     def test_missing_labels_in_html_are_rejected(self):
         raw='<section class="axis-grid"><div class="axis-note gain"><h3>FOR PEOPLE</h3><p>Text.</p></div><div class="axis-note none"><h3>FOR AI TOOLS AND COMPANIES</h3><strong>Context</strong><p>Text.</p></div></section>'
