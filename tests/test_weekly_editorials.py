@@ -104,6 +104,40 @@ class WeeklyEditorialTests(unittest.TestCase):
             self.assertEqual(len(section['source_hashes']), count)
             self.assertNotRegex(section['title']+' '+section['summary'], '[:\u2013\u2014]')
 
+    def test_owner_draft_keeps_exact_prose_and_requires_independent_review(self):
+        original = self.generate()
+        supplied = {'release_id': self.release['release_id'],
+                    'market_keys': {code: row['key'] for code, row in zip(('US','CA','CN','FR','GB'), self.news)},
+                    'paper_keys': [row['key'] for row in self.papers]}
+        for kind in ('markets','research'):
+            section = original[kind]
+            supplied[kind] = {
+                'title': section['title'],
+                'paragraphs': [[{field: part[field] for field in ('text','source_key')}
+                                for part in paragraph] for paragraph in section['prose']],
+                'image_key': section['image_key'], 'image_reason': section['image_reason'],
+            }
+        path = self.root / 'data/weekly-overviews/owner-drafts' / (self.release['release_id'] + '.json')
+        path.parent.mkdir(parents=True)
+        path.write_text(json.dumps(supplied))
+        self.calls.clear()
+        accepted = self.generate()
+        self.assertEqual(self.calls, ['weekly_review', 'weekly_review'])
+        self.assertEqual(accepted['editorial_status'], 'ready')
+        for kind in ('markets','research'):
+            self.assertEqual(accepted[kind]['summary'], original[kind]['summary'])
+            self.assertIs(accepted[kind]['image_reason_visible'], False)
+        self.assertEqual(accepted['research']['scope_note'], '')
+
+        stages = []
+        def reject(prompt, **kwargs):
+            stages.append(kwargs['stage'])
+            return {name: name != 'grounded' for name in CHECKS}
+        withheld = self.generate(call=reject)
+        self.assertEqual(stages, ['weekly_review', 'weekly_review'])
+        self.assertEqual(withheld['editorial_status'], 'pending')
+        self.assertTrue(all(withheld[k]['status'] == 'pending' for k in ('markets','research')))
+
     def test_cached_prose_does_not_change_on_daily_rebuild(self):
         first = self.generate()
         self.news.reverse()
