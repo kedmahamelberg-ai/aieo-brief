@@ -278,6 +278,12 @@ def sitemap_articles(items):
     return [item for item in items if item.get('has_editorial') and (item.get('what_happened') or item.get('body_paragraphs'))]
 
 
+def completed_news(items):
+    """Only checked, substantive news articles belong in the reading feed."""
+    return [item for item in items if item.get('has_editorial')
+            and item.get('what_happened') and item.get('body_paragraphs')]
+
+
 def absolute_url(baseurl, path):
     return (baseurl.rstrip('/') + '/' + path.lstrip('/')) if baseurl and path else ''
 
@@ -429,15 +435,18 @@ def main():
     sponsor=config.get('sponsor',{})
     today=reading_day().isoformat()
     sponsor_active=sponsor_is_active(config,today,preview)
-    market_counts={code:sum(code in c['markets'] for c in news) for code,_ in MARKETS}
-    rotation=rotation_plan(news, release['release_id'], release['period_end'])
+    # Keep source records and their stable URLs in the archive and public data,
+    # but feature only complete, source-checked Brief articles on the homepage.
+    feed_news=completed_news(news)
+    market_counts={code:sum(code in c['markets'] for c in feed_news) for code,_ in MARKETS}
+    rotation=rotation_plan(feed_news, release['release_id'], release['period_end'])
     day_layout=rotation['layouts'][rotation['slot']]
-    bykey={c['key']:c for c in news}
+    bykey={c['key']:c for c in feed_news}
     lead=bykey.get(day_layout['lead'])
     highlights=[bykey[k] for k in day_layout['highlights']]
-    news=[bykey[k] for k in day_layout['order']]
-    for rank, item in enumerate(news):item['daily_rank']=rank
-    defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
+    feed_news=[bykey[k] for k in day_layout['order']]
+    for rank, item in enumerate(feed_news):item['daily_rank']=rank
+    defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(feed_news),'source_news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
     latest_culture_date=max((x['date'] for x in culture),default='')
     defaults.update(rotation=rotation, reading_date=fmt(rotation['selection_date']))
     defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
@@ -458,7 +467,7 @@ def main():
         # Full text stays in HTML. The interaction payload only needs metadata.
         local_items=allcards+weekly_items if ctx.get('page')=='saved' else allcards if ctx.get('page') in ('archive','digest') else (
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
-            news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
+            feed_news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
         client=[{k:x.get(k) for k in ('key','headline','path','anchor','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
@@ -474,7 +483,7 @@ def main():
             ctx['structured_data'] = ([existing_schema] if existing_schema else []) + [generated_schema]
         output=env.get_template(template).render(**page_defaults,local=local,canonical=canonical,client_items=client,**ctx)
         target.write_text(output,encoding='utf-8')
-    render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=news,government_ticker=governments)
+    render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=feed_news,government_ticker=governments)
     render('research/index.html','collection.html',page='research',items=research)
     render('governments-say/index.html','governments.html',page='governments',items=governments,government_status=government_state(ROOT))
     render('culture/index.html','culture.html',page='culture',items=culture)
@@ -537,7 +546,7 @@ def main():
     payload.update(government_count=len(governments),governments=governments)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)
     payload['weekly_overview']=weekly_overview
-    spotlight=spotlight_feed(ROOT, [lead]+[n for n in news if n is not lead] if lead else news, baseurl, release['release_id'], utc_now())
+    spotlight=spotlight_feed(ROOT, [lead]+[n for n in feed_news if n is not lead] if lead else feed_news, baseurl, release['release_id'], utc_now())
     (data/'spotlight.json').write_text(json.dumps(spotlight,ensure_ascii=False,indent=2)+'\n')
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
     (data/'public-items.json').write_text(json.dumps({'items':allcards+weekly_items},ensure_ascii=False)+'\n')
@@ -559,7 +568,7 @@ def main():
         rss=['<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>AIEO Brief</title><link>'+xml_escape(baseurl)+'</link><description>Clear AI news and research, with original sources.</description>']
         weekly_url=baseurl+'/'+weekly_overview['path'].removesuffix('index.html')
         rss.append('<item><title>'+xml_escape(weekly_overview['markets']['title'])+'</title><link>'+xml_escape(weekly_url)+'</link><guid isPermaLink="false">weekly:'+xml_escape(weekly_overview['release_id'])+'</guid><description>'+xml_escape(weekly_overview['markets']['deck'])+'</description></item>')
-        for item in sorted(news+research+culture+governments,key=lambda x:x['date'],reverse=True)[:100]:
+        for item in sorted(feed_news+research+culture+governments,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=[

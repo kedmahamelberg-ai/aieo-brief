@@ -54,11 +54,16 @@ class WeeklyHandoff(unittest.TestCase):
         self.assertTrue(needs_editorial_retry(self.release, self.published, {}, now))
         status = {'release_id': self.release['release_id'], 'updated_at': '2026-11-01T08:00:00Z'}
         self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
+        status['counts']={'selected':0,'deferred':0,'blocked_rejections':1}
+        self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
         status['counts']={'deferred':39}
         self.assertTrue(needs_editorial_retry(self.release, self.published, status, now))
         status['updated_at']='2026-11-01T09:30:00Z'
         self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))
         status['updated_at'] = '2026-10-31T08:00:00Z'
+        self.assertTrue(needs_editorial_retry(self.release, self.published, status, now))
+        status['updated_at'] = '2026-11-01T08:00:00Z'
+        status['counts']={'needs_model':60,'needs_rebind':0,'selected':2,'deferred':0}
         self.assertTrue(needs_editorial_retry(self.release, self.published, status, now))
         self.published['stories'][0]['has_editorial'] = True
         self.assertFalse(needs_editorial_retry(self.release, self.published, status, now))

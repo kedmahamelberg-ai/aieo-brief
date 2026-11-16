@@ -447,15 +447,15 @@
         "8a29982556c8c3ddcea461f88713a16b11d3a8718d2f4ad3bf19d53ff8c43935"
       ],
       "draft": {
-        "editorial_headline": "France plans Rennes center for international cooperation on military artificial intelligence",
-        "editorial_deck": "The French defense ministry expects the center to open next summer with military and civilian staff, including partners from allied countries.",
-        "what_happened": "France's defense ministry presented a planned international center near Rennes for sharing experience and developing practices for artificial intelligence in the armed forces. The article says it expects 34 military and civilian staff, including 17 from France.",
-        "why_it_matters": "The planned center would organize cooperation, track technology and gather lessons from military uses of artificial intelligence. The article says it will be a place for shared work rather than a producer of artificial intelligence services.",
+        "editorial_headline": "France plans Rennes center to coordinate military uses of artificial intelligence",
+        "editorial_deck": "The defense ministry expects the center near Rennes to open next summer with 34 military and civilian staff; France plans to send 17.",
+        "what_happened": "France's defense ministry presented a planned international center near Rennes to coordinate work on artificial intelligence in the armed forces. The article says it should open next summer and expects 34 military and civilian staff, including 17 from France.",
+        "why_it_matters": "The ministry wants the center to share experience and working practices among armed forces using artificial intelligence. This describes planned work, not results from a center already operating.",
         "for_humans": "",
-        "for_ai": "The planned center would encourage use of artificial intelligence in armed forces and share experience from that work.",
+        "for_ai": "",
         "body_paragraphs": [
-          "The center should become operational next summer near Rennes. The article says several allied countries have committed to the project, while France expects to provide 17 of its 34 staff.",
-          "Its listed tasks include bringing together interested teams, promoting good practices, following new technology and collecting lessons from military work. The plan also calls for simulations and group problem-solving events."
+          "The article says several allied countries have committed to the project. It does not say how many staff those countries will provide. France expects to send 17 people.",
+          "Planned tasks include bringing interested groups together, developing working practices, following new technology and collecting lessons. The article says the center will not be dedicated to producing artificial intelligence services."
         ],
         "claim_status": "reporting",
         "limitation": "The article describes a center that has not opened yet, so it does not report results from its work.",
@@ -463,7 +463,7 @@
           {
             "field": "editorial_headline",
             "source_number": 1,
-            "quote": "À l’inverse, l’ICAID favorisera la coopération internationale."
+            "quote": "Ce jeudi, le ministère des Armées a présenté le prochain centre international pour l’IA de défense. Il devrait être opérationnel l’été prochain du côté de Rennes."
           },
           {
             "field": "what_happened",
@@ -473,7 +473,7 @@
           {
             "field": "why_it_matters",
             "source_number": 1,
-            "quote": "Le contre-amiral révèle que le centre ne sera pas dédié à la production de services IA. Il s’agira d’un lieu de travail intellectuel avec des simulations, des hackathons et des benchmarks."
+            "quote": "Plusieurs missions sont déjà prévues :\n\n- Animer une communauté d’intérêt.\n\n- Favoriser l’adoption de l’IA.\n\n- Développer les bonnes pratiques.\n\n- Assurer une veille technologique.\n\n- Centraliser les retours d’expérience."
           }
         ]
       }

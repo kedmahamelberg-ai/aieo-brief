@@ -21,6 +21,8 @@ from source_chronology import older_source_year
 ROOT=Path(__file__).resolve().parents[1]
 MODEL=ai_runtime.identity()['model'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL','Qwen3-4B-Q4_K_M')
 MODEL_REVISION=ai_runtime.identity()['revision'] if ai_runtime.uses_openai() else os.environ.get('BRIEF_EDITORIAL_MODEL_REVISION','2f3b082b1356a6123f7ed71e65aea340da25d53c')
+SOURCE_REJECTIONS={'source_scope_review_failed','claim_grounding_failed','draft_quote_unsupported',
+                   'unsupported_number','source_wording_copied'}
 
 def source_payload(rows, allowed=None, fingerprints=None):
     result=[]
@@ -35,7 +37,9 @@ def source_payload(rows, allowed=None, fingerprints=None):
     return result
 
 def fingerprint(event,axes,sources):
-    return digest({'engine_version':ENGINE_VERSION,'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]})
+    basis={'engine_version':ENGINE_VERSION,'prompt_version':PROMPT_VERSION,'model_revision':MODEL_REVISION,'event_id':event.get('effective_event_id') or event.get('event_id'),'title':event.get('event_title'),'axes':axes,'sources':[{'publisher':s['publisher'],'headline':s['headline'],'hash':digest(s['evidence'])} for s in sources]}
+    if event.get('draft_seed') is not None:basis['draft_seed']=event['draft_seed']
+    return digest(basis)
 def same_input(latest,fp):return ((latest or {}).get('evidence_basis_summary') or {}).get('input_fingerprint')==fp
 
 def retain_rejection(client,item,error):
@@ -60,7 +64,8 @@ def candidates(release,sym,maps,force=False):
     supplements=json.loads(supplement_path.read_text()).get('sources',{}) if supplement_path.exists() else {}
     proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
     legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
-    counts={'unchanged':0,'source_not_ready':0,'source_date_mismatch':0,'new_registry':0,'needs_model':0,'needs_rebind':0}
+    q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
+    counts={'unchanged':0,'source_not_ready':0,'source_date_mismatch':0,'new_registry':0,'needs_model':0,'needs_rebind':0,'blocked_rejections':0}
     for event in sorted(release['evidence'],key=lambda e:(str(e.get('event_date')),str(e.get('event_id'))),reverse=True):
         if older_source_year(event):
             counts['source_date_mismatch']+=1
@@ -109,11 +114,13 @@ def candidates(release,sym,maps,force=False):
             counts['unchanged']+=1;continue
         key='needs_rebind' if reusable else 'needs_model';counts[key]+=1
         if not story:counts['new_registry']+=1
-        selected.append({'event':event,'eid':eid,'relation':relation,'source_relationship':axis[eid],'sources':sources,'fp':fp,'latest':latest,'public_current':public_current,'story':story,'reuse':reusable})
+        retry=state.get(fp,{})
+        blocked=(not force and retry.get('stage')=='generation' and retry.get('last_code') in SOURCE_REJECTIONS)
+        if blocked:counts['blocked_rejections']+=1
+        selected.append({'event':event,'eid':eid,'relation':relation,'source_relationship':axis[eid],'sources':sources,'fp':fp,'latest':latest,'public_current':public_current,'story':story,'reuse':reusable,'blocked':blocked})
     # Fill missing public stories before revising stories that already have a
     # usable version. A model-version change can otherwise queue dozens of
     # rewrites ahead of a small number of headline-only pages.
-    q=ROOT/'data/editorial/retry-state.json';state=json.loads(q.read_text()) if q.exists() else {}
     selected.sort(key=lambda x:(x['public_current'],state.get(x['fp'],{}).get('attempts',0),bool(x['latest']),not x['reuse']))
     return selected,counts,state
 
@@ -183,16 +190,18 @@ def main():
     ids=[str(e.get('effective_event_id') or e['event_id']) for e in release['evidence']]
     items,counts,state=candidates(release,sym,current_maps(client,ids),args.force)
     active_fingerprints={item['fp'] for item in items}
+    items=[item for item in items if not item.get('blocked')]
     items=select_event_ids(items,args.event_ids,release)
+    pending=len(items)
     if args.limit:items=items[:args.limit]
-    counts.update(selected=len(items),generated=0,rebound=0,failed=0,deferred=0)
+    counts.update(selected=len(items),generated=0,rebound=0,failed=0,deferred=pending-len(items))
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write(f'needs_model={str(any(not x["reuse"] for x in items)).lower()}\npending={len(items)}\n')
     if args.dry_run:print(json.dumps(counts,indent=2));return 0
-    ai_runtime.require_key()
+    if any(not item['reuse'] for item in items):ai_runtime.require_key()
     deadline=time.monotonic()+args.max_runtime_minutes*60;failures=[]
     for n,item in enumerate(items):
-        if time.monotonic()>deadline-90:counts['deferred']=len(items)-n;break
+        if time.monotonic()>deadline-90:counts['deferred']+=len(items)-n;break
         stage='generation'
         print(f'[{n+1}/{len(items)}] Preparing news {item["eid"]}',flush=True)
         try:
@@ -201,10 +210,10 @@ def main():
             stage='persistence'
             persist(client,item,release,draft,proof);counts['rebound' if item['reuse'] else 'generated']+=1;state.pop(item['fp'],None)
             print(f'Saved {item["eid"]}: {draft["editorial_headline"]}',flush=True)
-        except TimeoutError:counts['deferred']=len(items)-n;break
+        except TimeoutError:counts['deferred']+=len(items)-n;break
         except Exception as e:
-            counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat()}
             diagnostic=failure_diagnostic(e,stage)
+            counts['failed']+=1;state[item['fp']]={'attempts':state.get(item['fp'],{}).get('attempts',0)+1,'last_attempt':datetime.now(timezone.utc).isoformat(),'last_code':diagnostic['code'],'stage':stage}
             if stage=='generation':
                 try:retain_rejection(client,item,e)
                 except Exception:print('Private rejection diagnostic could not be retained.',flush=True)
