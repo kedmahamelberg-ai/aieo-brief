@@ -557,15 +557,15 @@
         "editorial_headline": "Guangxi adapts artificial intelligence to local factories and Southeast Asian markets",
         "editorial_deck": "A regional strategy puts existing technology and local industrial data ahead of building ever larger systems.",
         "what_happened": "Guangxi is pursuing an artificial intelligence strategy that combines technology developed elsewhere in China with local industrial uses and demand in Southeast Asia. The report describes fruit sorting, factory robot testing and work to adapt products for overseas markets.",
-        "why_it_matters": "The approach depends on matching technology to real tasks. Local factory data, language support and different national standards all matter to making the systems useful.",
+        "why_it_matters": "The approach depends on matching technology to real tasks. Local factory data and different national standards matter to making the systems useful.",
         "for_humans": "Local producers are using artificial intelligence for tasks such as sorting fruit and testing factory robots.",
         "for_ai": "Technology is being adapted to local industries and Southeast Asian markets.",
         "body_paragraphs": [
-          "A passionfruit producer tells the reporter its sorting equipment uses images and scans to judge fruit. A robot testing centre gathers data from simulated factory work, including changes in lighting and the way parts are positioned.",
+          "The reporter describes a passionfruit-sorting facility, where a company manager reports the equipment’s accuracy. A robot testing centre gathers data from simulated factory work, including changes in lighting and the way parts are positioned.",
           "The China–ASEAN cooperation centre collects requests for possible uses and publishes opportunities for suppliers. The report presents this as a way to connect industrial needs with companies that can meet them."
         ],
         "claim_status": "reporting",
-        "limitation": "The examples and performance claims come from the organizations quoted in the report.",
+        "limitation": "The reported fruit-sorting accuracy is attributed to the company manager.",
         "support": [
           {
             "field": "editorial_headline",
@@ -661,7 +661,7 @@
         "b935eed9e84f8c6f30097c05c027b77669a9b5125cf1bae3cf7d04cea420fc96"
       ],
       "draft": {
-        "editorial_headline": "Chinese laboratories use artificial intelligence and robots to choose the next experiment",
+        "editorial_headline": "Chinese laboratories use artificial intelligence to plan experiments that robots carry out",
         "editorial_deck": "The report examines laboratories where results feed back into the design of further tests.",
         "what_happened": "Science and Technology Daily describes Chinese laboratories combining artificial intelligence, robots and instruments to run experiments. Software proposes a test, equipment carries it out, and the results help decide what to try next.",
         "why_it_matters": "This goes beyond a machine repeating a fixed set of instructions. The report also describes decisions that remain with scientists and the need for safety rules.",
@@ -705,7 +705,7 @@
         "for_ai": "Mirendil has raised funding to develop tools that automate parts of building artificial intelligence.",
         "body_paragraphs": [
           "Mirendil says one researcher used its tools to build a coding system called Mirendil-Base. The company reports that the project took about 3.5 months and cost $10 million, with automated assistants writing more than 99% of its code.",
-          "The company has also introduced Fern, a system focused on programming work for artificial intelligence laboratories. It plans to use upgraded versions of Mirendil-Base to develop more capable language models."
+          "The company has also introduced Fern, a system focused on programming work for artificial intelligence laboratories. It plans to use upgraded versions of Mirendil-Base to develop more capable systems for working with language."
         ],
         "claim_status": "company_claim",
         "limitation": "The development figures and capabilities are claims attributed to Mirendil.",
@@ -812,8 +812,8 @@
         "for_humans": "Students gain practical experience maintaining and studying a restaurant robot.",
         "for_ai": "Flippy is operating in a university restaurant for the first time.",
         "body_paragraphs": [
-          "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering operation, maintenance and repairs.",
-          "Graduate teams are studying information from the kitchen, including logs and video, to examine how the robot and people work together. The announcement describes that research rather than reporting its results."
+          "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering use and repairs.",
+          "Graduate teams are studying information from the kitchen, including recorded operating data and video, to examine how the robot and people work together. The announcement describes that research rather than reporting its results."
         ],
         "claim_status": "reporting",
         "limitation": "The university describes its partnership and planned learning activities; the graduate research findings are not reported.",
@@ -848,7 +848,7 @@
         "for_humans": "Broadcast teams can intervene when artificial intelligence features produce unreliable results.",
         "for_ai": "AI features can be disabled, switched to an earlier model or constrained while the service continues.",
         "body_paragraphs": [
-          "The example uses settings in AWS Lambda and Amazon Bedrock. New calls use changed settings after the update completes; published function versions need a new version and an updated pointer.",
+          "The example uses settings in AWS Lambda and Amazon Bedrock. Teams using fixed, published versions of their processing code must publish an updated version and direct incoming work to it.",
           "AWS tells teams to measure how long changes take in their own systems. It also describes logging and checks to confirm that an override has taken effect."
         ],
         "claim_status": "reporting",
@@ -885,7 +885,7 @@
         "for_ai": "Baidu says its automated assistants are handling more internal tasks.",
         "body_paragraphs": [
           "Baidu presented internal figures as early support for the approach. It said daily active automated assistants rose from about 5,000 to 37,000, while completed tasks increased from 84,000 a week to more than a million.",
-          "The event also included product and infrastructure announcements. Li’s broader claims about how jobs will change are predictions, while the internal usage figures are Baidu’s own account."
+          "The event also included announcements about new products and computing equipment. Li’s broader claims about how jobs will change are predictions, while the internal usage figures are Baidu’s own account."
         ],
         "claim_status": "opinion",
         "limitation": "The organizational argument is Li’s view; the reported internal figures come from Baidu.",
@@ -1407,6 +1407,187 @@
             "field": "why_it_matters",
             "source_number": 1,
             "quote": "第三，确保AI安全及负责任发展，数字政策办公室将挑选试点部门，要求面向公众AI服务项目的投标者就采用的AI技术作出安全和道德合规申报，并推动行业机构制订管理框架，推出人工智能体安全管理指引。\n\n业界：回应需要 创造价值\n\n世界级研究成果必须与产业应用结合，才能将技术突破转化为经济竞争力。孙东深信，政府政策能发挥催化作用，配合大学、企业及业界间的跨界别合作，定能共同把握人工智能带来的机遇。\n\n香港电脑学会会长陈俊伟表示，本届会议的主题，正配合政府提出的首个五年规划，强化香港的人工智能生态系统，涵盖研究、算力基础设施及人才培养，并协助各行业采用人工智能，以提升生产力、开创新机遇。“关键问题在于如何"
+          }
+        ]
+      }
+    },
+    "06a5c958-6e9a-4099-a2f9-bf80b2c17f53": {
+      "evidence_sha256": [
+        "3c737b1c828a85e051c9c3d4fcc6c5a0f7f29c98bcbfec15ad7206aa5f91d864"
+      ],
+      "draft": {
+        "editorial_headline": "French experts warn of risks from artificial intelligence and urge stronger protections",
+        "editorial_deck": "Their report highlights thinking skills, emotional dependence and online abuse, especially for vulnerable users.",
+        "what_happened": "A French expert commission has delivered a report on content-generating artificial intelligence to President Emmanuel Macron. The article describes concerns about effects on thinking, emotional attachment and online abuse, alongside recommendations to protect users.",
+        "why_it_matters": "The experts say long-term understanding of the technology’s effects is still lacking. They argue that protections should be built into systems, with particular attention to children and other vulnerable people.",
+        "for_humans": "The experts warn that dependence and online abuse can harm users, particularly children and other vulnerable people.",
+        "for_ai": "The commission proposes stricter design rules and assessment before consumer systems reach the market.",
+        "body_paragraphs": [
+          "The report warns about handing intellectual work to a tool without understanding how it produces an answer. It also describes risks from systems that imitate empathy or repeatedly flatter a user, potentially encouraging dependence.",
+          "The commission calls for stronger controls on design, assessment before products enter the market and education about the technology. The article also highlights abusive synthetic sexual images as a serious concern."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This Brief covers the article’s account of the commission report, not an independent assessment of its cited studies.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Le comité d’experts de la Commission \"IA générative et vulnérabilités\" a remis ce 10 novembre son rapport au président de la République. Si les auteurs soulignent que \"l’IA générative est porteuse d’opportunités\", ils font néanmoins part de leurs inquiétudes face au développement de l’IA générative"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Un cruel manque de recul sur l’IA générative. C’est le constat dressé par la Commission \"IA générative et vulnérabilités\" dans son rapport de 177 pages remis ce mardi 10 novembre à Emmanuel Macron. \"Le recul sur les impacts de l’IA générative et la vision à long terme sur ses enjeux, pourtant essent"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Parmi les 18 préconisations formulées par le comité d’experts pour protéger les utilisateurs, plusieurs priorités se dégagent, à commencer par l’encadrement strict des mécanismes \"favorisant la dépendance et brouillant la frontière entre humain et machine\", notamment ceux relevant de la flagornerie"
+          }
+        ]
+      }
+    },
+    "ef9fbd34-3150-4135-b7fa-68ebcd4eae9d": {
+      "evidence_sha256": [
+        "da3b07de354999b0299b0f7536f93db0e100f435b2184da8e94e819a2ecb1176"
+      ],
+      "draft": {
+        "editorial_headline": "Cornell profile traces a scientist’s path from fossils to artificial intelligence for satellite images",
+        "editorial_deck": "Adam Stewart’s work connects Earth science with software used by researchers around the world.",
+        "what_happened": "Cornell profiles Adam Stewart, who develops artificial intelligence tools for studying the Earth through satellite images. His career moved from an early interest in fossils to programming, research computing and the creation of TorchGeo.",
+        "why_it_matters": "TorchGeo is intended to make geographic and satellite data easier for researchers to use with artificial intelligence. The profile describes an international project built through collaboration.",
+        "for_humans": "Researchers can use TorchGeo to apply artificial intelligence to geographic and satellite data.",
+        "for_ai": "The project supports artificial intelligence work on Earth observation data.",
+        "body_paragraphs": [
+          "A Cornell research project on glacier movement helped turn Stewart toward programming. He later worked at Lockheed Martin and Argonne National Laboratory before completing a computer science doctorate.",
+          "He started TorchGeo during a Microsoft internship. The project now has about 150 contributors and millions of downloads, according to the profile, while Stewart continues research and teaching in Munich."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This is a university profile of a researcher and his software project.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Today, he is a postdoctoral researcher at the Technical University of Munich in Germany, developing artificial intelligence tools that help scientists better understand the Earth through satellite imagery.\n\nThe path between those two points has been anything but straightforward. It has taken Stewart"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "The path between those two points has been anything but straightforward. It has taken Stewart through computer programming, national laboratory research, graduate studies in artificial intelligence and the creation of a widely used open-source software platform called TorchGeo.\n\nDespite these seemin"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "TorchGeo has since grown into an international collaborative project, attracting approximately 150 contributors and millions of downloads. Stewart now chairs its independent organization, which brings together researchers and developers from academia and industry.\n\nAt Munich, Stewart continues devel"
+          }
+        ]
+      }
+    },
+    "8fe96ae7-0c0d-42e9-b154-0ff4d8a9ce68": {
+      "evidence_sha256": [
+        "9e787028d1806e760264065b191395c18821c0aef24840cff4117ace46753d03"
+      ],
+      "draft": {
+        "editorial_headline": "IDC forecasts cybersecurity tools that plan and carry out more defensive work",
+        "editorial_deck": "Its technology roadmap also warns that wrong decisions could disrupt services.",
+        "what_happened": "IDC has published a roadmap assessing 24 artificial intelligence technologies for cybersecurity software in China. It forecasts a shift from tools that help analysts toward systems that plan tasks, use security tools and adjust actions from the results.",
+        "why_it_matters": "IDC says this could reduce repetitive security work, but unreliable answers could also lead to harmful actions. It calls for checks, human approval and ways to reverse high-risk changes.",
+        "for_humans": "Security staff could face less repetitive work, but incorrect automated actions could disrupt services.",
+        "for_ai": "IDC expects security tools to take on more planning and action, subject to reliability checks and human control.",
+        "body_paragraphs": [
+          "The roadmap compares technologies by adoption, interest, risk and expected development. IDC argues that future products will need to coordinate different AI systems rather than simply use the largest one.",
+          "Its longer-term vision is a system that continually finds risks, plans defences and checks results. IDC says this remains an early direction, with reliability, data quality and responsibility still limiting wider use."
+        ],
+        "claim_status": "forecast",
+        "limitation": "IDC presents a roadmap and forecasts, not proof that fully autonomous defence is already established.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "24项AI赋能的网络安全软件技术有望重构安全产业格局\n\n为了更清晰地判断不同AI赋能的网络安全软件技术的发展阶段及未来潜力，并帮助用户进行技术选型，国际数据公司（IDC）近日发布了《中国AI赋能的网络安全软件技术发展路线图，2026》（Doc#CHC53616026，2026年10月）报告，该报告对24项新兴及重要的AI赋能的网络安全软件技术进行了系统评估，并从技术采用阶段、市场热度、风险级别、采用速度以及市场培育时间等维度，对不同AI赋能的网络安全软件技术的发展状态进行了可视化呈现。\n\n360数字安全集团、阿里巴巴、安恒信息、安永、博智安全、长亭科技、德勤、斗象科技、灰度安全、火山引擎、华为"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "该报告对24项新兴及重要的AI赋能的网络安全软件技术进行了系统评估，并从技术采用阶段、市场热度、风险级别、采用速度以及市场培育时间等维度，对不同AI赋能的网络安全软件技术的发展状态进行了可视化呈现。\n\n360数字安全集团、阿里巴巴、安恒信息、安永、博智安全、长亭科技、德勤、斗象科技、灰度安全、火山引擎、华为、绿盟科技、派拉软件、奇安信、启明星辰集团、青藤云安全、瑞数信息、矢安科技、山石网科、深信服科技、天地和兴、天融信、微步在线、威努特、网宿科技、悬镜安全、易安联、亿格云、亚马逊云科技、亚信、永信至诚、中国电信、竹云、指掌易（按公司首字母排序）入选各技术点推荐厂商。\n\n2026年IDC中国AI"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "模型可能生成虚假线索、错误判断或不可行的攻击路径；在涉及自动化处置的场景中，错误推理还可能引发误隔离、权限配置错误或业务中断。因此，模型幻觉不仅影响分析准确性，也可能沿决策与执行链路放大风险。未来，网络安全技术提供商需要结合实时数据校验、安全规则、多模型验证、执行前风险评估及结果反馈等机制，建立覆盖推理、决策、执行和验证的全流程治理体系，并通过分级授权、人工审批和回滚机制约束高风险操作。\n\n- 网络安全软件竞争从单点检测能力转向自主决策与闭环能力\n\nAI对网络安全软件价值的影响将越来越集中于从风险发现到安全处置的全过程自动化。未来，产品需要具备更强的任务理解、攻击分析、风险判断和行动规划能力，"
+          }
+        ]
+      }
+    },
+    "6b8118f7-08c9-450a-a3a1-195778222239": {
+      "evidence_sha256": [
+        "e7eb3d496b7126952f6dd5367a399292c432bd1ee633e29862c9bfe5b13c2418",
+        "de65d418efb9d5fa91bdb154be992e5997214563e394ac7e19d45b4227ae70d0"
+      ],
+      "draft": {
+        "editorial_headline": "Survey finds women entrepreneurs using artificial intelligence but facing unequal access to its benefits",
+        "editorial_deck": "The International Labour Organization links use with digital skills, affordable internet and social support.",
+        "what_happened": "An International Labour Organization survey found that 56% of participating women entrepreneurs used content-generating artificial intelligence in their businesses. Nearly 18,000 women took part, mainly in Kenya, Nigeria and Egypt, with most running small businesses.",
+        "why_it_matters": "Use was associated with skills, devices, affordable internet and supportive communities. The findings suggest that access to a tool alone will not ensure that women share equally in its benefits.",
+        "for_humans": "Women with limited skills, costly internet or heavy care responsibilities may miss out on benefits.",
+        "for_ai": "Use is already common among survey participants, mainly for writing and research rather than wider business functions.",
+        "body_paragraphs": [
+          "Writing and research were common uses, while use in functions such as finance and supply management was less developed. Women with stronger digital skills were more likely to use the tools.",
+          "Care responsibilities and online harassment also limited participation. The ILO calls for practical business support alongside action on these wider barriers."
+        ],
+        "claim_status": "study",
+        "limitation": "The voluntary online sample is not representative of all women entrepreneurs; it did not measure income or productivity outcomes.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "To understand their experience, the ILO led a study[i] under the Women in Digital Business (WIDB) initiative, surveying nearly 18,000 women entrepreneurs, mainly in Kenya, Nigeria and Egypt and most running micro and small businesses. Their answers offer a closer look at who is in a position to bene"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Among the women entrepreneurs surveyed, adoption has been rapid, with 56 per cent already using GenAI in their business, most of them for less than a year.\n\nWhat they use it for is so far more limited. Writing and content creation (64 per cent of users) and research (49 per cent) dominate, while mar"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "GenAI use among respondents was closely associated with digital skills, access to suitable devices and the cost of connectivity. Use rose from 24 per cent among women unable to use word-processing or spreadsheet tools to 65 per cent among those able to use them independently. Use was higher among wo"
+          }
+        ]
+      }
+    },
+    "e9a9b601-601d-470b-9dcb-d95e51a0b2f3": {
+      "evidence_sha256": [
+        "c4e73010b0c66d8835396cc46306bac9080397aa1a6495d5cbbf540f49acf249"
+      ],
+      "draft": {
+        "editorial_headline": "OpenRouter chart shows rapid growth and a shift toward downloadable AI models",
+        "editorial_deck": "The author’s public chart tracks processing volumes from January through October.",
+        "what_happened": "A public chart by Le Temps journalist Duc-Quang Nguyen shows weekly OpenRouter traffic rising from 6,400 billion tokens in January to 194,000 billion in late October. It describes that as roughly thirty times the earlier volume.",
+        "why_it_matters": "Growth differs between providers. The chart shows a larger share going to models that people can download and run on their own machines.",
+        "for_humans": "",
+        "for_ai": "Downloadable models account for a larger share of the OpenRouter traffic shown in the chart.",
+        "body_paragraphs": [
+          "It reports growth of more than 130 times for DeepSeek, compared with 45 times for OpenAI and 12 times for Anthropic.",
+          "Downloadable models rose from about a third of traffic to seven tenths. The share for proprietary models fell from 57% to 20%."
+        ],
+        "claim_status": "reporting",
+        "limitation": "This Brief covers the author’s public chart captions. The subscriber-only Le Temps article was not available for full review.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Début janvier, 6400 milliards de tokens, transitaient chaque semaine par OpenRouter, une plateforme qui aiguille les requêtes des développeurs vers des centaines de modèles.\nFin octobre, ils étaient 194 000 milliards: trente fois plus en dix mois.\nTous les laboratoires d’IA profitent de la vague, ma"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Fin octobre, ils étaient 194 000 milliards: trente fois plus en dix mois.\nTous les laboratoires d’IA profitent de la vague, mais pas au même rythme.\nDepuis janvier, le volume traité par le chinois DeepSeek a été multiplié par plus de 130, celui d’OpenAI par 45 et celui d’Anthropic par 12.\nEn proport"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "En proportion, les modèles à poids ouverts, en bordeaux, que chacun peut télécharger et faire tourner sur ses propres machines, pesaient un tiers des tokens début janvier.\nIls en représentent désormais sept sur dix. Les modèles propriétaires, en bleu, sont tombés de 57% à 20%."
           }
         ]
       }
