@@ -49,14 +49,14 @@ independently checked against official pages on 13 November 2026;
 `data/governments/initial-source-checks.json` retains the historical URLs and
 body hashes. New imports use the Monitor's classification and translation.
 
-The day overview shows a rolling seven calendar days, including today in
-Europe/Amsterdam, grouped by publication date with the newest day first. Monday
-imports do not reset the view to the new calendar week. All earlier announcements
-remain available through the All dates archive and the country view; their story
-URLs continue to work for previously approved social posts. Reading order can vary
-within each date, while article identities, publication dates and engagement remain
-unchanged. The country view groups by issuing government and
-can filter one country. All views reuse the same article identities, cards and
+Governments say retains every published announcement behind two date filters:
+Last 7 days and Older. Last 7 days is the default and covers today and the preceding
+six calendar days in Europe/Amsterdam. Older includes every earlier date without
+a retention cutoff. Both group announcements by publication date, newest first.
+Monday imports never reset the list to a new calendar week. Story URLs continue
+to work regardless of the date filter, including links in approved social posts.
+Reading order can vary within each date; both filters reuse original article
+identities, publication dates, cards and
 existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
 credit and rights links. Country-context images are not presented as event photos.
