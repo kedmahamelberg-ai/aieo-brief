@@ -49,11 +49,11 @@ independently checked against official pages on 13 November 2026;
 `data/governments/initial-source-checks.json` retains the historical URLs and
 body hashes. New imports use the Monitor's classification and translation.
 
-The day overview includes the current week’s Monitor AI announcements and shuffles
-them on every entrance or refresh. A saved browser reading order prevents an
-identical repeat when at least two items are available. Publication dates stay
-inside each card. A quiet new week uses the latest week with checked items and
-labels it accordingly. The country view groups by issuing government and
+The day overview retains all published Monitor AI announcements, grouped by
+publication date with the newest day first. New daily imports and Monday week
+changes must never hide earlier dates. Reading order can vary within each date,
+while the original article identities, publication dates and engagement remain
+unchanged. The country view groups by issuing government and
 can filter one country. Both views reuse the same article identities, cards and
 existing consent-based engagement services. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
