@@ -69,5 +69,42 @@
       ]
     },
     "support_catalog_sha256": "95ff8a751099f8be2f1638a28baacb081dd88f44c55375f0f2c86ae7b03c955b"
+  },
+  "paper:0be73fb3448eb344ca662eeb": {
+    "metadata_sha256": "ca4cf902c0c8bae806a344dba756fb1312958e21f03c37dd3b0fdf09aa4ce5db",
+    "evidence_scope": "paper_text",
+    "paper_text_sha256": "332d083dbd14a93835357ac2eb0f0d977b1a87637fb2f31f4eb87a66cc1ce38a",
+    "support_catalog_sha256": "422acacb5e0aedbe5072f05873bbc240f73f1599f60e6d16ec129851bf90f55c",
+    "draft": {
+      "editorial_headline": "Useful notes help an AI solve more coding tasks with less work",
+      "editorial_deck": "Researchers tested what a coding assistant should remember when it moves between jobs in the same software project.",
+      "what_happened": "The researchers trained an AI coding assistant to reuse short notes about earlier work. In their test, the share of tasks solved rose from 21.0% to 25.7%. It also took 17% fewer steps than the untrained assistant working without memory.",
+      "why_it_matters": "Remembering everything has a cost. The study tests a narrower approach: keep useful file locations and commands for checking code, then teach the assistant when those notes help.",
+      "for_humans": "",
+      "for_ai": "",
+      "body_paragraphs": [
+        "Each task starts with the code changes left by previous tasks. Notes are written before the next task is known. The researchers compared runs with and without parts of the earlier record to identify useful information.",
+        "Training rewards successful solutions and penalizes extra steps in successful runs. The reported improvement combines the memory design with further training; it is not evidence that adding notes alone produces the whole gain."
+      ],
+      "claim_status": "study",
+      "limitation": "This preprint reports tests on selected coding tasks. It does not establish the same improvement for every software project.",
+      "support": [
+        {
+          "field": "editorial_headline",
+          "source_number": 1,
+          "quote_id": 8
+        },
+        {
+          "field": "what_happened",
+          "source_number": 1,
+          "quote_id": 8
+        },
+        {
+          "field": "why_it_matters",
+          "source_number": 1,
+          "quote_id": 5
+        }
+      ]
+    }
   }
 }

@@ -29,6 +29,13 @@
       "source_url": "https://finance.eastmoney.com/a/202611023917809641.html",
       "published_at": "2026-11-02",
       "evidence_sha256": "614aaac3345de08fb4d515c5125faf064aa07c604f61fa07615b23f25e7309a7"
+    },
+    "5ed7cfd9-5b88-4f37-9eb1-101c4061f265": {
+      "publisher": "Shangguan News, syndicated by Sina Finance on Sohu",
+      "headline": "上海住建行业首次发布“人工智能+”三年行动计划",
+      "source_url": "https://m.sohu.com/a/1101596080_122014422",
+      "published_at": "2026-11-14",
+      "evidence_sha256": "280b1255860bef42c68dfa350a3fe1b449e47f9ed87d5a511e5959ba69d0aad1"
     }
   }
 }
