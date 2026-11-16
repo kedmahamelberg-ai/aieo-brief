@@ -1,4 +1,4 @@
-"""The live grounding smoke test must tolerate one false rejection, not false acceptance."""
+"""Live grounding smoke tests reject false claims and require a full positive draft."""
 import sys
 import unittest
 from collections import Counter
@@ -22,7 +22,7 @@ class LiveEvaluationControlTests(unittest.TestCase):
         with self.assertRaisesRegex(RuntimeError,'classroom_scope:wrong'):
             evaluate_grounding.evaluate(lambda *args:None, case_name='classroom_scope')
 
-    def test_one_false_rejection_of_supported_fixture_is_rechecked(self):
+    def test_terse_positive_rejection_is_advisory_but_full_draft_is_rechecked(self):
         correct = {row[3] for row in evaluate_grounding.CASES}
         attempts = Counter()
 
@@ -37,18 +37,18 @@ class LiveEvaluationControlTests(unittest.TestCase):
         evaluate_grounding.evaluate(review)
         for _, _, wrong, right in evaluate_grounding.CASES:
             self.assertEqual(attempts[wrong], 1)
-            self.assertEqual(attempts[right], 2)
+            self.assertEqual(attempts[right], 1)
         self.assertEqual(attempts['Company trial finds workers finish support tickets faster with AI'], 3)
 
     def test_false_acceptance_of_wrong_fixture_still_fails(self):
         with self.assertRaisesRegex(RuntimeError, 'provenance:wrong'):
             evaluate_grounding.evaluate(lambda draft, sources, deadline: None)
 
-    def test_persistent_false_rejection_still_fails(self):
+    def test_persistent_full_draft_rejection_still_fails(self):
         def review(draft, sources, deadline):
             raise EditorialError('claim_grounding_failed', 'Synthetic rejection')
 
-        with self.assertRaisesRegex(RuntimeError, 'provenance:correct'):
+        with self.assertRaisesRegex(RuntimeError, 'full_draft:correct'):
             evaluate_grounding.evaluate(review)
 
 
