@@ -1,8 +1,10 @@
 name: Update Brief Government AI Announcements
 on:
   schedule:
-    # Hourly wake-ups catch a delayed/missed trigger; the Amsterdam gate runs work once daily.
-    - cron: '5 * * * *'
+    # 16:05 Amsterdam in summer/winter; the local gate rejects the early winter wake-up.
+    - cron: '5 14,15 * * *'
+    # Retry delayed/missed daily triggers without importing twice on the same day.
+    - cron: '35 * * * *'
   workflow_dispatch:
     inputs:
       force_refresh:
