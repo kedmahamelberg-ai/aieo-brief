@@ -1,6 +1,10 @@
 name: Build and Publish AIEO Brief
 on:
   workflow_call:
+    inputs:
+      skip_social_review:
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ['scripts/**', 'templates/**', 'assets/**', 'config/**', 'data/**', 'tests/**', 'supabase/**', 'package*.json', 'requirements.txt', '.github/**']
@@ -155,7 +159,7 @@ jobs:
   social_review:
     # This is a deployment dependency, not another clock or workflow_run chain.
     needs: deploy
-    if: needs.deploy.result == 'success'
+    if: needs.deploy.result == 'success' && inputs.skip_social_review != true
     uses: ./.github/workflows/prepare-social-review.yml
     with:
       website_artifact: aieo-brief-website-${{ github.run_id }}
