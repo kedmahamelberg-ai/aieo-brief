@@ -540,10 +540,12 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
     scope=review_scope(draft,review_sources,deadline,paper=kind=='paper',news=kind=='news',
                        long_source=isinstance(event.get('draft_seed'),dict))
    except EditorialError as error:
-    # The reviewer can reject an unsupported optional reading while the core
-    # news claims are grounded. Remove only the named optional fields, then
-    # verify the entire draft again rather than accepting a partial review.
-    optional=[field for field in ('for_humans','for_ai') if re.search(r'\b'+field+r'\s*:',error.feedback,re.I)]
+    # A rejected impact sentence needs correction, not deletion: an empty
+    # field cannot prove that the source describes no effect. Keep its exact
+    # feedback for source review, including when other fields also failed.
+    if re.search(r'\b(?:for_humans|for_ai)\s*:',error.feedback,re.I):
+     raise
+    optional=[]
     if re.search(r'\blimitation\b',error.feedback,re.I):optional.append('limitation')
     unsupported_paragraphs={int(match.group(1)) for match in re.finditer(r'\bbody_paragraphs\[(\d+)\]\s*:',error.feedback,re.I)}
     removable={index for index in unsupported_paragraphs if 0<=index<len(draft['body_paragraphs'])}

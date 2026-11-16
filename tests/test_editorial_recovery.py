@@ -260,16 +260,20 @@ class EditorialRecovery(unittest.TestCase):
         self.assertEqual(review.call_count, 2)
         self.assertEqual(review.call_args.args[0]['limitation'], '')
 
-    def test_news_rechecks_whole_draft_without_unsupported_ai_reading(self):
-        draft, sources = fixture()
-        draft['for_ai'] = 'The source reports a new model benefit.'
-        rejected = engine.EditorialError('claim_grounding_failed', 'Grounding failed',
-                                         stage='scope_review', feedback='for_ai: forecast not stated in source')
-        with patch.object(engine, 'review_scope', side_effect=[rejected, {'grounding': {}}]) as review:
-            result, _ = engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
-        self.assertEqual(result['for_ai'], '')
-        self.assertEqual(result['limitation'], draft['limitation'])
-        self.assertEqual(review.call_count, 2)
+    def test_rejected_impact_is_not_deleted_to_make_a_seed_pass(self):
+        for field in ('for_ai','for_humans'):
+            draft, sources = fixture()
+            draft[field] = 'The source reports a new model benefit.'
+            original = copy.deepcopy(draft)
+            rejected = engine.EditorialError('claim_grounding_failed', 'Grounding failed',
+                stage='scope_review', feedback=field+': forecast not stated in source; limitation: unsupported')
+            with self.subTest(field=field), patch.object(engine, 'review_scope', side_effect=rejected) as review, \
+                 patch.object(engine, 'call_json') as model:
+                with self.assertRaises(engine.EditorialError):
+                    engine.write_story({'draft_seed': draft}, {}, sources, kind='news')
+            self.assertEqual(draft, original)
+            self.assertEqual(review.call_count, 1)
+            model.assert_not_called()
 
     def test_long_news_report_is_read_in_complete_bounded_segments(self):
         source = {'source_number': 1, 'evidence_basis': 'full_source',

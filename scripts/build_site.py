@@ -468,7 +468,7 @@ def main():
         local_items=allcards+weekly_items if ctx.get('page')=='saved' else allcards if ctx.get('page') in ('archive','digest') else (
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
             feed_news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
-        client=[{k:x.get(k) for k in ('key','headline','path','anchor','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
+        client=[{k:x.get(k) for k in ('key','headline','path','anchor','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','location_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
         canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else '')

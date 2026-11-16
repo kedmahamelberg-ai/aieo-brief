@@ -8,7 +8,7 @@
 <div class="lead-story">
 {% if lead %}<div class="story-kicker"><span>IN FOCUS TODAY</span><span>{{ lead.topic_label }}</span><span>{{ lead.reading_minutes }} min read</span></div><h1><a href="{{ local(lead.path) }}">{{ lead.headline }}</a></h1><p>{{ lead.deck }}</p><div class="lead-bottom"><a class="read-link" href="{{ local(lead.path) }}">Read the brief <span aria-hidden="true">→</span></a><span data-lead-source>{{ lead.publisher }} · Reported {{ lead.display_date }}</span></div>{% else %}<h1>Checked articles are being prepared.</h1><p><a href="{{ local('archive/index.html') }}">Browse the original source records</a> while their Brief summaries are reviewed.</p>{% endif %}
 </div>
-<div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.market_label }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
+<div class="opening-list"><span class="eyebrow">EXPLORE TODAY</span>{% for item in highlights %}<a href="{{ local(item.path) }}"><span>{{ item.location_label or ('Discovery feeds: ' ~ item.market_label) }}</span><h2>{{ item.headline }}</h2></a>{% endfor %}</div>
 </section>
 {% include 'discovery-carousels.html' %}
 {% if weekly_overview %}
@@ -41,7 +41,7 @@
 <section class="feed-column" id="news" aria-label="News feed">
 <div class="section-heading"><h2>Make time for what matters to you.</h2><span>Read a little. Leave with more clarity.</span></div>
 <div class="feed-controls">
-<div class="market-tabs" aria-label="Discovery market"><button data-market="all" aria-pressed="true">All markets</button>{% for code,name in markets %}<button data-market="{{ code }}" aria-pressed="false">{{ name }}</button>{% endfor %}</div>
+<div class="market-tabs" aria-label="Discovery market"><button data-market="all" aria-pressed="true">All discovery feeds</button>{% for code,name in markets %}<button data-market="{{ code }}" aria-pressed="false">{{ name }}</button>{% endfor %}</div>
 <div class="filter-line"><label class="search-label"><span class="sr-only">Search news</span><input type="search" id="story-search" placeholder="Find a story or topic" autocomplete="off"></label><label><span class="sr-only">Order stories</span><select id="story-sort"><option value="daily">Today’s reading order</option><option value="latest">Newest reporting</option><option value="reads">Most read</option><option value="likes">Most liked</option><option value="comments">Most discussed</option></select></label><details class="filter-details"><summary>More filters</summary><label>Topic<select id="topic-filter"><option value="all">All topics</option>{% for value,label in topics %}<option value="{{ value }}">{{ label }}</option>{% endfor %}</select></label><label>Reported effects on people<select id="direction-filter"><option value="all">All readings</option><option value="gain">Benefits</option><option value="loss">Downsides</option><option value="mixed">Benefits and downsides</option><option value="none">No direction stated</option></select></label></details></div>
 <p class="filter-status" id="filter-status" aria-live="polite"></p>
 </div>

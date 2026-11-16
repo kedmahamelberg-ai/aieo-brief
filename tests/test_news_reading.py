@@ -34,7 +34,7 @@ class NewsReading(unittest.TestCase):
                  'complete_content':False,'content_sha256':'edition','release_id':'2026-W45'}
         sym={'evidence':[{'event_id':eid}]}
         source={'source_number':1,'publisher':'Source','headline':'Article','evidence':'Complete source text.'}
-        for correction, expected in (({'for_ai':'No AI outcome is described.'},1),
+        for correction, expected in (({'for_ai':'No AI outcome is described.','location_label':'Japan','box_effects':{'human':'none','ai':'none'}},1),
                                      ({'has_editorial':False},0), ({},0)):
             with self.subTest(correction=correction), tempfile.TemporaryDirectory() as folder:
                 root=Path(folder)
@@ -74,7 +74,7 @@ class NewsReading(unittest.TestCase):
              'for_humans':'Staff say the tool saves time.', 'ai_direction':'unresolved',
              'ai_label':'Evidence incomplete','for_ai':'The plan proposes wider AI use in public services.'}
         news_reading.prepare_display([row])
-        self.assertEqual(row['ai_label'],'No direction stated')
+        self.assertEqual(row['ai_label'],'Context')
         self.assertEqual(row['ai_direction'],'unresolved')
         self.assertEqual(row['for_ai'],'The plan proposes wider AI use in public services.')
         self.assertEqual(row['human_label'],'Benefits')
@@ -108,7 +108,7 @@ class NewsReading(unittest.TestCase):
         row={'kind':'news',**draft,'box_effects':proof['box_effects'],
              'human_direction':'gain','ai_direction':'gain'}
         news_reading.prepare_display([row])
-        self.assertEqual((row['human_label'],row['ai_label']),('Risks','No direction stated'))
+        self.assertEqual((row['human_label'],row['ai_label']),('Risks','Context'))
 
     def test_missing_effect_review_cannot_write_to_database(self):
         import hashlib
@@ -136,14 +136,34 @@ class NewsReading(unittest.TestCase):
         news_reading.prepare_display(rows)
         by_id={r.get('event_id'):r for r in rows}
         small=by_id['abc3e322-ff0e-4bda-8007-eea965a10fcc']
-        self.assertEqual((small['human_label'],small['ai_label']),('Benefits and risks','No direction stated'))
+        self.assertEqual((small['human_label'],small['ai_label']),('Benefits and risks','Context'))
         market=by_id['4ce57a9c-cfde-45cf-bc27-2a7936acd845']
         self.assertEqual((market['human_label'],market['ai_label']),('Risks','Risks'))
         court=by_id['2c1a78f9-bb97-48a9-8042-da3f0eae4437']
         self.assertEqual((court['human_label'],court['ai_label']),('Risks','Benefits'))
 
+    def test_empty_reading_does_not_claim_the_source_has_no_effect(self):
+        env=Environment(loader=ChoiceLoader([DictLoader({
+            'base.html':'{% block content %}{% endblock %}',
+            'components.html':'{% macro actions(a,b=false) %}{% endmacro %}{% macro ad(a) %}{% endmacro %}',
+            'conversation.html':'{% macro conversation(a) %}{% endmacro %}'
+        }),FileSystemLoader(str(ROOT/'templates'))]),autoescape=True)
+        row={'kind':'news','headline':'Example','sources':[{'url':'https://example.com','publisher':'Source'}],
+             'market_label':'Canada · USA','markets':['CA','US'],'has_editorial':False,
+             'human_direction':'none','ai_direction':'none','for_humans':'','for_ai':''}
+        news_reading.prepare_display([row])
+        html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
+        self.assertNotIn('The article does not describe',html)
+        self.assertIn('This Brief has not established',html)
+        self.assertIn('Discovery feeds: Canada · USA',html)
+        self.assertIn('<strong>Context</strong>',html)
+        row['location_label']='Research locations: Brazil · USA'
+        html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
+        self.assertIn('Research locations: Brazil · USA',html)
+        self.assertNotIn('Discovery feeds: Canada · USA',html)
+
     def test_missing_labels_in_html_are_rejected(self):
-        raw='<section class="axis-grid"><div class="axis-note gain"><h3>FOR PEOPLE</h3><p>Text.</p></div><div class="axis-note none"><h3>FOR AI TOOLS AND COMPANIES</h3><strong>No direction stated</strong><p>Text.</p></div></section>'
+        raw='<section class="axis-grid"><div class="axis-note gain"><h3>FOR PEOPLE</h3><p>Text.</p></div><div class="axis-note none"><h3>FOR AI TOOLS AND COMPANIES</h3><strong>Context</strong><p>Text.</p></div></section>'
         with self.assertRaises(ValueError):validate_news_layout(raw)
 
     def test_publication_rejects_early_limits_and_status_badges(self):
