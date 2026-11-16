@@ -92,6 +92,35 @@ def research_selection(rows):
     return list(pair) if len(terms(pair[0]) & terms(pair[1])) >= 2 else []
 
 
+def owner_draft(root, release_id):
+    """Load owner-supplied prose for a private review, never as publication approval."""
+    path = Path(root) / 'data/weekly-overviews/owner-drafts' / (release_id + '.json')
+    if not path.exists():
+        return None
+    value = json.loads(path.read_text(encoding='utf-8'))
+    if (value.get('release_id') != release_id or
+            set(value) != {'release_id', 'market_keys', 'paper_keys', 'markets', 'research'}):
+        raise ValueError('weekly_owner_draft_identity')
+    return value
+
+
+def owner_selection(kind, available, owner):
+    if kind == 'markets':
+        mapping = owner['market_keys']
+        if not isinstance(mapping, dict) or set(mapping) != set(MARKETS) or len(set(mapping.values())) != 5:
+            raise ValueError('weekly_owner_draft_market_keys')
+        if any(key not in available or code not in available[key].get('markets', [])
+               for code, key in mapping.items()):
+            raise ValueError('weekly_owner_draft_market_source')
+        return [{**available[mapping[code]], 'selected_market': code} for code in MARKETS]
+    keys = owner['paper_keys']
+    if not isinstance(keys, list) or len(keys) != 2 or len(set(keys)) != 2 or any(key not in available for key in keys):
+        raise ValueError('weekly_owner_draft_paper_keys')
+    if len({re.sub(r'v\d+$', '', available[key]['url'].rstrip('/')) for key in keys}) != 2:
+        raise ValueError('weekly_owner_draft_same_paper')
+    return [available[key] for key in keys]
+
+
 def art_candidates(root, history, selected, release_id, kind):
     path = Path(root) / 'data/culture/library-art.json'
     if not path.exists():
@@ -357,7 +386,7 @@ def validate_section(section):
         raise ValueError('Weekly source list does not match linked prose')
 
 
-def create_section(kind, selected, pictures, base, call, recent_style=None):
+def create_section(kind, selected, pictures, base, call, recent_style=None, owner_seed=None):
     recent_style = recent_style or {'openings': [], 'titles': [], 'question_used_last_week': False}
     # Long opaque database keys are easy for the writer to omit or mistype.
     # Give it short citation markers, then restore the exact saved keys before
@@ -425,7 +454,16 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
     recent_openings = recent_style['openings']
     recent_titles = recent_style['titles']
     questions_allowed = not recent_style['question_used_last_week']
-    draft = call(brief + payload, schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_draft')
+    if owner_seed is None:
+        draft = call(brief + payload, schema=DRAFT_SCHEMA, deadline=deadline, stage='weekly_draft')
+    else:
+        source_alias = {row['key']: alias for alias, row in aliases.items()}
+        image_alias = {row['key']: alias for alias, row in art_aliases.items()}
+        draft = copy.deepcopy(owner_seed)
+        draft['paragraphs'] = [[{**part, 'source_key': source_alias[part['source_key']]
+                                 if part['source_key'] else ''} for part in paragraph]
+                               for paragraph in draft['paragraphs']]
+        draft['image_key'] = image_alias[draft['image_key']]
     # A model can return an empty or malformed inline part despite the JSON
     # schema. Give it a precise location and one more bounded chance to repair
     # the shape. Every candidate still passes all source and content checks.
@@ -435,6 +473,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
                            enforce_style=True, questions_allowed=questions_allowed)
             break
         except ValueError as error:
+            if owner_seed is not None:
+                raise
             draft = call(
                 'Correct this draft without adding facts. The validation failure was '
                 + str(error) + '. Every part must contain exactly a nonempty text string '
@@ -472,6 +512,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
 
     chosen, review, failed = check(draft, 'weekly_review')
     if failed:
+        if owner_seed is not None:
+            raise ValueError('weekly_independent_review_failed:' + ','.join(failed))
         # A failed independent check must lead to a new draft and a fresh
         # independent verdict. It never turns a failed verdict into approval.
         draft = call(
@@ -518,6 +560,7 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
     validate_draft(saved_draft, selected, pictures)
     paragraph_text = [' '.join(part['text'] for part in p) for p in prose]
     note = ('Five selected stories from five discovery markets.' if kind == 'markets' else
+            '' if owner_seed is not None else
             'Two papers from this week. Publication status and reading scope are shown with the sources.')
     result = {**base, 'editorial_version': VERSION, 'status': 'ready', 'author': AUTHOR,
               'title': draft['title'], 'deck': paragraph_text[0], 'summary': ' '.join(paragraph_text),
@@ -529,6 +572,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None):
               'image_caption': chosen['headline'], 'image_credit': chosen['creator'] + ' · ' + chosen['publisher'],
               'image_rights': chosen['rights']['label'], 'image_source_url': chosen['source_url'],
               'image_reason': draft['image_reason'], 'review_checks': review}
+    if owner_seed is not None:
+        result['image_reason_visible'] = False
     if kind == 'markets':
         result['entries'] = [{'code': x['selected_market'], 'name': NAMES[x['selected_market']],
                               'topic': x.get('topic_label', ''),
@@ -548,6 +593,7 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
     current['editorial_version'] = VERSION
     previous = next((x for x in history if x['release_id'] == current['release_id']), {})
     approved = human_approval(root, current['release_id'])
+    supplied = owner_draft(root, current['release_id']) if allow_model else None
     usage_history = copy.deepcopy(history)
     for kind, rows in (('markets', news), ('research', research)):
         available = {x['key']: x for x in eligible(rows, current)}
@@ -594,7 +640,9 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
             current[kind] = copy.deepcopy(old)
             usage_history.append({kind: current[kind]})
             continue
-        selected = news_selection(list(available.values())) if kind == 'markets' else research_selection(list(available.values()))
+        selected = (owner_selection(kind, available, supplied) if supplied else
+                    news_selection(list(available.values())) if kind == 'markets' else
+                    research_selection(list(available.values())))
         base = current[kind]
         pending = {**base, 'editorial_version': VERSION, 'status': 'pending',
                    'title': 'The weekly news review is being prepared' if kind == 'markets' else 'The weekly research review is being prepared',
@@ -633,7 +681,8 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
                 'question_used_last_week': bool(recent and '?' in
                     (recent[0]['title'] + ' ' + recent[0]['summary'])),
             }
-            current[kind] = create_section(kind, selected, pictures, base, call, recent_style)
+            current[kind] = create_section(kind, selected, pictures, base, call, recent_style,
+                                           owner_seed=supplied[kind] if supplied else None)
             validate_section(current[kind])
             usage_history.append({kind: current[kind]})
         except (ValueError, RuntimeError, TimeoutError) as error:
