@@ -359,7 +359,7 @@ def validate_draft(d,sources,kind='news'):
 REVIEW_CHECKS=('headline_supported','population_preserved','claim_status_preserved','no_unstated_effects','main_story_only','english_only','plain_english')
 REVIEW_SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'boolean'} for k in REVIEW_CHECKS},'reason':{'type':'string','maxLength':300}},'required':list(REVIEW_CHECKS)+['reason']}
 @validation_errors('scope_review')
-def review_scope(draft,compiled,deadline=None,paper=False,news=False):
+def review_scope(draft,compiled,deadline=None,paper=False,news=False,long_source=False):
     escalated=claim_grounding.pilot_requirement_escalation(draft,compiled)
     if escalated:
         raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=['entities_and_roles_preserved'],feedback='A pilot at '+escalated+' is presented as a requirement without source support.')
@@ -375,7 +375,8 @@ def review_scope(draft,compiled,deadline=None,paper=False,news=False):
     prompt+=claim_grounding.INSTRUCTIONS+'\nSelect citations by quote_id from the complete original-source catalog above. Do not retype, translate, or paraphrase quotations. Every original character is included; consecutive passages may continue the same sentence. The catalog is not selected by the writer. Cite only passages that actually support every claim in the field.\nCLAIM STATUS: '+str(draft.get('claim_status',''))+'\nFIELDS TO REVIEW: '+json.dumps(claim_grounding.units(draft),ensure_ascii=False)
     # Nano has a 400k-token context. Keep complete paper evidence in the
     # review request, with headroom below the API request-size cap; never truncate it.
-    if len(prompt.encode())>(700000 if paper else 175000):
+    large_request=paper or long_source
+    if len(prompt.encode())>(700000 if large_request else 175000):
         raise EditorialError('grounding_context_budget','Original evidence exceeds verifier budget; manual review required.',stage='scope_review')
     review_schema=copy.deepcopy(REVIEW_SCHEMA)
     if news:
@@ -385,7 +386,7 @@ def review_scope(draft,compiled,deadline=None,paper=False,news=False):
             'required':['human','ai']}
         review_schema['required'].append('box_effects')
         prompt+='\n'+news_reading.INSTRUCTIONS+'\nIndependently classify box_effects for the final for_humans and for_ai text against the original sources: gain = supported benefit, loss = supported harm, risk or constraint, mixed = both stated, none = no benefit or harm stated, unresolved = the reading cannot establish a direction. Classify each side separately; do not copy supplied axes or assume AI use helps people. A company gaining reach can harm people. Plans may have potential benefits or risks; they do not need measured results to have a direction. Never treat a rule as a loss unless the source supports a burden or constraint. Missing or empty dimension text must be none. The label must match what the actual short box says, including any risk or both sides it mentions. Reject plain_english if either box exceeds one sentence or 25 words or repeats attribution padding.'
-    result=call_json(prompt,claim_grounding.catalog_schema(review_schema,draft,catalog),deadline,stage='scope_review',paper=paper)
+    result=call_json(prompt,claim_grounding.catalog_schema(review_schema,draft,catalog),deadline,stage='scope_review',paper=large_request)
     if any(result.get(k) is not True for k in REVIEW_CHECKS):
         raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=[k for k in REVIEW_CHECKS if result.get(k) is not True],feedback=str(result.get('reason','claim scope mismatch'))[:300])
     failed_grounding={key for key in claim_grounding.CHECKS if result.get(key) is not True}
@@ -401,7 +402,7 @@ def review_scope(draft,compiled,deadline=None,paper=False,news=False):
                      'detail alone is not a contradiction. Recheck every field against the '
                      'original source and provide all required citations. If any asserted '
                      'claim conflicts with the source, keep the relevant check false.')
-        result=call_json(prompt+calibration,claim_grounding.catalog_schema(review_schema,draft,catalog),deadline,attempt=1,stage='scope_review',paper=paper)
+        result=call_json(prompt+calibration,claim_grounding.catalog_schema(review_schema,draft,catalog),deadline,attempt=1,stage='scope_review',paper=large_request)
         if any(result.get(k) is not True for k in REVIEW_CHECKS):
             raise EditorialError('source_scope_review_failed','Source-scope review did not pass.',stage='scope_review',failed_checks=[k for k in REVIEW_CHECKS if result.get(k) is not True],feedback=str(result.get('reason','claim scope mismatch'))[:300])
     try:
@@ -441,7 +442,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
   prompt+='\nEND OF SOURCE MATERIAL. Now write for a busy practitioner, not a researcher. Use ordinary words in the title; no method names or unfamiliar acronyms. Replace technical shorthand throughout (for example, say training with rewards rather than RL, and training on examples rather than SFT). Use a work example only if the source itself gives it, preserving its status. Explain the actual finding and the main uncertainty. Keep both reading views complete and the full brief below 200 words.\n'
  # Refuse an oversized prompt rather than letting the server truncate evidence.
  cjk=len(re.findall(r'[\u3400-\u9fff]',prompt))
- if cjk*2+(len(prompt)-cjk)/3>((120000 if kind=='paper' else 65000) if ai_runtime.uses_openai() else 9000):raise ValueError('Complete evidence exceeds the model context budget.')
+ if not isinstance(event.get('draft_seed'),dict) and cjk*2+(len(prompt)-cjk)/3>((120000 if kind=='paper' else 65000) if ai_runtime.uses_openai() else 9000):raise ValueError('Complete evidence exceeds the model context budget.')
  last=None;draft=None;corrections=[]
  for attempt in range(5 if kind in ('preprint','abstract','paper') else 3):
   try:
@@ -532,7 +533,8 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
      draft.update({k:edited[k] for k in readable_schema['required']})
    review_sources=sources+[{'source_number':0,'evidence':'Supplied reading scope: '+kind+'. Publication label: '+str(event.get('research_label','unspecified'))+'. '+ '; '.join('Source '+str(s['source_number'])+' evidence basis: '+str(s.get('evidence_basis','unspecified')) for s in sources)}]
    try:
-    scope=review_scope(draft,review_sources,deadline,paper=kind=='paper',news=kind=='news')
+    scope=review_scope(draft,review_sources,deadline,paper=kind=='paper',news=kind=='news',
+                       long_source=isinstance(event.get('draft_seed'),dict))
    except EditorialError as error:
     # The reviewer can reject an unsupported optional reading while the core
     # news claims are grounded. Remove only the named optional fields, then
@@ -547,16 +549,14 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
     for field in optional:draft[field]=''
     if removable:draft['body_paragraphs']=[paragraph for index,paragraph in enumerate(draft['body_paragraphs']) if index not in removable]
     draft=validate_draft(draft,sources,kind)
-    scope=review_scope(draft,review_sources,deadline,paper=False,news=True)
+    scope=review_scope(draft,review_sources,deadline,paper=False,news=True,
+                       long_source=isinstance(event.get('draft_seed'),dict))
    return draft,{'draft_origin':'reviewed_editorial_seed' if attempt==0 and event.get('draft_seed') else 'model','engine_version':ENGINE_VERSION,'model_runtime':ai_runtime.identity() if ai_runtime.uses_openai() else {'provider':'local_llama_cpp'},'scope_review':scope,'segment_readings':trace,'source_sha256':[hashlib.sha256(s['evidence'].encode()).hexdigest() for s in sources],'support':draft.get('support',[])}
   except (ValueError,requests.RequestException) as e:
    last=e
    correction=getattr(e,'feedback',str(e))
    if correction not in corrections:corrections.append(correction)
-   if (kind=='news' and attempt==0 and isinstance(event.get('draft_seed'),dict)
-       and isinstance(e,EditorialError)
-       and e.code in {'source_scope_review_failed','claim_grounding_failed',
-                      'draft_quote_unsupported','unsupported_number','source_wording_copied'}):
+   if attempt==0 and isinstance(event.get('draft_seed'),dict):
     # A hand-corrected seed is already the source-bound revision. If it fails,
     # retain the exact feedback for a human correction instead of paying for
     # two speculative model rewrites of the same rejected claims.

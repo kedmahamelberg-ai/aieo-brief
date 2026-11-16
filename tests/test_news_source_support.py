@@ -22,6 +22,22 @@ class NewsSourceSupport(unittest.TestCase):
         self.assertEqual(review.call_args.args[1][0]['evidence'],sources[0]['evidence'])
         self.assertEqual(proof['draft_origin'],'reviewed_editorial_seed')
 
+    def test_long_seed_uses_complete_review_and_never_calls_writer(self):
+        draft,sources=fixture()
+        sources[0]['evidence'] += '\nA further policy discussion. ' * 11000
+        with patch.object(engine,'compile_evidence',side_effect=AssertionError('unused reading')), patch.object(engine,'call_json',side_effect=AssertionError('unused writer')), patch.object(engine,'review_scope',return_value=accepted_review()) as review:
+            engine.write_story({'draft_seed':draft},{},sources)
+        self.assertEqual(review.call_args.args[1][0]['evidence'],sources[0]['evidence'])
+        self.assertTrue(review.call_args.kwargs['long_source'])
+
+    def test_invalid_seed_does_not_fall_back_to_paid_rewrites(self):
+        draft,sources=fixture()
+        draft['what_happened']='The result was 987654321.'
+        with patch.object(engine,'call_json',side_effect=AssertionError('no speculative writing')) as model:
+            with self.assertRaises(engine.EditorialError):
+                engine.write_story({'draft_seed':draft},{},sources)
+        model.assert_not_called()
+
     def test_rejection_feedback_stays_in_private_provenance(self):
         client = Mock()
         error = engine.EditorialError('unsupported_number', 'Safe public reason',
