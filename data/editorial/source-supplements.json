@@ -36,6 +36,14 @@
       "source_url": "https://m.sohu.com/a/1101596080_122014422",
       "published_at": "2026-11-14",
       "evidence_sha256": "280b1255860bef42c68dfa350a3fe1b449e47f9ed87d5a511e5959ba69d0aad1"
+    },
+    "e9a9b601-601d-470b-9dcb-d95e51a0b2f3": {
+      "source_url": "https://flo.uri.sh/story/3852596/embed",
+      "publisher": "Duc-Quang Nguyen / Le Temps — public chart",
+      "headline": "Tokens IA ouverts vs fermés",
+      "published_at": "2026-11-06",
+      "evidence_sha256": "c4e73010b0c66d8835396cc46306bac9080397aa1a6495d5cbbf540f49acf249",
+      "note": "Public chart linked by Le Temps. This supplements the available chart facts, not the inaccessible subscriber-only article. The Brief must disclose that reading scope."
     }
   }
 }
