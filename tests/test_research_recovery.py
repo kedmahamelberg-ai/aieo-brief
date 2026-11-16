@@ -12,7 +12,7 @@ import research_recovery as recovery
 from research_pdf import abstract_from_text
 from research_reading import READING_VERSION, restore_reading_scope
 import editorial_engine as engine
-from generate_research_summaries import merge_recent, pending, research_work_order, unchanged_record
+from generate_research_summaries import actionable, rejection_fingerprint, merge_recent, pending, research_work_order, unchanged_record
 
 
 class ResearchRecovery(unittest.TestCase):
@@ -125,6 +125,17 @@ class ResearchRecovery(unittest.TestCase):
              patch('generate_research_summaries.ai_runtime.identity',return_value={'revision':'gpt-6-luna:low:aieo-openai-json-v1'}):
             self.assertEqual(pending({'papers':[paper]},{paper['key']:completed}),[])
             self.assertEqual(pending({'papers':[paper]},{paper['key']:{**completed,'has_editorial':False}}),[paper])
+
+    def test_rejected_research_waits_for_changed_evidence_or_seed(self):
+        paper={**self.paper(),'metadata_sha256':'same','abstract':'Verified abstract text.'}
+        seed={'draft':{'headline':'Source-grounded draft'}}
+        with patch('generate_research_summaries.ai_runtime.uses_openai',return_value=False):
+            fp=rejection_fingerprint(paper,seed)
+            retry={paper['key']:{'rejected_fingerprint':fp}}
+            self.assertEqual(actionable([paper],retry,{paper['key']:seed}),[])
+            self.assertEqual(actionable([{**paper,'metadata_sha256':'new'}],retry,{paper['key']:seed}),
+                             [{**paper,'metadata_sha256':'new'}])
+            self.assertEqual(actionable([paper],retry,{paper['key']:{'draft':{'headline':'Revised'}}}),[paper])
 
     def test_visible_source_only_pages_precede_new_papers_despite_retry_count(self):
         pending_paper={'key':'paper:old','date':'2026-10-26'}
