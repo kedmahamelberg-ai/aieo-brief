@@ -33,18 +33,25 @@ jobs:
         env:
           BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
         run: python scripts/check_observatory_update.py
-  editorial:
+  publish_sources:
     needs: check
-    if: needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_editorial_retry == 'true'
+    if: needs.check.outputs.needs_update == 'true'
+    uses: ./.github/workflows/build-brief-preview.yml
+    with:
+      skip_social_review: true
+    secrets: inherit
+  editorial:
+    needs: [check, publish_sources]
+    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_editorial_retry == 'true') && (needs.publish_sources.result == 'success' || needs.publish_sources.result == 'skipped')
     uses: ./.github/workflows/generate-brief-editorial.yml
     with:
       news_only: true
       news_limit: ${{ needs.check.outputs.needs_update == 'true' && '0' || needs.check.outputs.missing_news_summaries }}
     secrets: inherit
   publish:
-    needs: [check, editorial]
+    needs: [check, publish_sources, editorial]
     # A failed draft must not hide valid new source links. The build still
     # rejects incomplete or mismatched Observatory release data itself.
-    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true') && needs.editorial.result != 'cancelled'
+    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true') && (needs.publish_sources.result == 'success' || needs.publish_sources.result == 'skipped') && needs.editorial.result != 'cancelled'
     uses: ./.github/workflows/build-brief-preview.yml
     secrets: inherit
