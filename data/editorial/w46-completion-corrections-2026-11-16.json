@@ -35,8 +35,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "China"
+      },
+      "geography_review": "Source-based location or topic scope: China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:1e3660cd-11f9-4261-b5e8-fe929476364a",
@@ -69,8 +71,10 @@
         "box_effects": {
           "human": "none",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "France"
+      },
+      "geography_review": "Source-based location or topic scope: France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:504fe2f4-4dea-47cd-b779-bf7858e0acbb",
@@ -104,8 +108,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Lisbon, Portugal"
+      },
+      "geography_review": "Source-based location or topic scope: Lisbon, Portugal. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:ff4786bf-c811-4627-833f-9b6ecc259f87",
@@ -139,8 +145,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Washington, DC, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Washington, DC, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:e1ea62ac-6bb5-4864-8ab1-c73343d5e879",
@@ -174,8 +182,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Company announcement"
+      },
+      "geography_review": "Source-based location or topic scope: Company announcement. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
@@ -209,8 +219,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "AI market analysis"
+      },
+      "geography_review": "Source-based location or topic scope: AI market analysis. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:ea2fea61-ca7a-4de5-ba6b-2b427fe10d26",
@@ -243,8 +255,10 @@
         "box_effects": {
           "human": "none",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Programme announcement"
+      },
+      "geography_review": "Source-based location or topic scope: Programme announcement. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:c07e5661-1a95-43e3-ba95-4269c3f40957",
@@ -278,8 +292,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Aberdeen, UK · European Union"
+      },
+      "geography_review": "Source-based location or topic scope: Aberdeen, UK · European Union. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:a8cdc3a3-07f2-4018-88ed-53fa68ead705",
@@ -313,8 +329,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Japan"
+      },
+      "geography_review": "Source-based location or topic scope: Japan. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:76fe76bf-bb59-46c4-be92-739c56ae84e9",
@@ -348,8 +366,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Québec, Canada"
+      },
+      "geography_review": "Source-based location or topic scope: Québec, Canada. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:4605906d-0bcc-4d0d-a416-37cf0002a2b1",
@@ -383,8 +403,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "California, USA"
+      },
+      "geography_review": "Source-based location or topic scope: California, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:44e9348e-b219-47e6-8a1b-4c3a26088433",
@@ -418,8 +440,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Pennsylvania, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Pennsylvania, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:2d1153b6-50e0-43ab-bbcf-5baa58c4afeb",
@@ -453,8 +477,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "International analysis"
+      },
+      "geography_review": "Source-based location or topic scope: International analysis. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:1342ae54-2767-4826-9ca0-eda00fc863e1",
@@ -488,8 +514,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "Hong Kong"
+      },
+      "geography_review": "Source-based location or topic scope: Hong Kong. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:7aaee0cd-4185-413e-8b48-696783635021",
@@ -523,8 +551,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "Technical guidance"
+      },
+      "geography_review": "Source-based location or topic scope: Technical guidance. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:ef9fbd34-3150-4135-b7fa-68ebcd4eae9d",
@@ -558,8 +588,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Munich, Germany"
+      },
+      "geography_review": "Source-based location or topic scope: Munich, Germany. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:6b8118f7-08c9-450a-a3a1-195778222239",
@@ -595,8 +627,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Survey focus: Kenya · Nigeria · Egypt"
+      },
+      "geography_review": "Source-based location or topic scope: Survey focus: Kenya · Nigeria · Egypt. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:51020e2a-9919-402c-9010-583d9a28d8ee",
@@ -630,8 +664,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Guangxi, China"
+      },
+      "geography_review": "Source-based location or topic scope: Guangxi, China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:5ed7cfd9-5b88-4f37-9eb1-101c4061f265",
@@ -665,8 +701,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Shanghai, China"
+      },
+      "geography_review": "Source-based location or topic scope: Shanghai, China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
@@ -696,8 +734,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Besançon, France"
+      },
+      "geography_review": "Source-based location or topic scope: Besançon, France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:ff271f43-be97-4765-b008-5a174f5bbfc6",
@@ -718,8 +758,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Business reporting"
+      },
+      "geography_review": "Source-based location or topic scope: Business reporting. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:bfa95ad4-abbd-4e3c-ab3e-308ea3842047",
@@ -740,8 +782,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "Australia"
+      },
+      "geography_review": "Source-based location or topic scope: Australia. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a",
@@ -762,8 +806,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "International policy"
+      },
+      "geography_review": "Source-based location or topic scope: International policy. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:2f541b92-f630-49a6-a9dc-d1ea14080160",
@@ -784,8 +830,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "International affairs"
+      },
+      "geography_review": "Source-based location or topic scope: International affairs. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:29c16df4-acc1-48fe-952e-06410540b601",
@@ -806,8 +854,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "International co-operation"
+      },
+      "geography_review": "Source-based location or topic scope: International co-operation. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:f156dc63-9ac8-497a-bda3-df66cc863209",
@@ -828,8 +878,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Shenzhen and Dongguan, China"
+      },
+      "geography_review": "Source-based location or topic scope: Shenzhen and Dongguan, China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41",
@@ -850,8 +902,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "Ontario, Canada"
+      },
+      "geography_review": "Source-based location or topic scope: Ontario, Canada. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:76eeb317-1d8e-44ed-ae6c-ee9950003d60",
@@ -873,8 +927,10 @@
           "human": "gain",
           "ai": "gain"
         },
-        "headline": "Lille’s metropolitan authority invites residents to a practical artificial intelligence workshop"
-      }
+        "headline": "Lille’s metropolitan authority invites residents to a practical artificial intelligence workshop",
+        "location_label": "Lille metropolitan area, France"
+      },
+      "geography_review": "Source-based location or topic scope: Lille metropolitan area, France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:5fa42954-e42f-42e3-ae47-cdae7456913d",
@@ -895,8 +951,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "California, USA"
+      },
+      "geography_review": "Source-based location or topic scope: California, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:1237de0d-08f3-4729-9fad-c022059fd52f",
@@ -917,8 +975,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Business guidance"
+      },
+      "geography_review": "Source-based location or topic scope: Business guidance. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:05184f8c-7beb-4705-95e2-93abf558e6af",
@@ -939,8 +999,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "Ontario, Canada"
+      },
+      "geography_review": "Source-based location or topic scope: Ontario, Canada. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa",
@@ -961,8 +1023,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Technology analysis"
+      },
+      "geography_review": "Source-based location or topic scope: Technology analysis. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:f4540068-4f71-4f18-b728-f8b7453950c5",
@@ -983,8 +1047,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "China"
+      },
+      "geography_review": "Source-based location or topic scope: China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:e9e93a18-b666-4fce-93d6-31e611cc0dd3",
@@ -1009,8 +1075,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "Manchester, UK"
+      },
+      "geography_review": "Source-based location or topic scope: Manchester, UK. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:e697475a-3f68-4e04-a70b-3040bd1ea405",
@@ -1031,8 +1099,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "Commentary"
+      },
+      "geography_review": "Source-based location or topic scope: Commentary. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:31727a7b-385e-49fd-aa54-656a9b1cc483",
@@ -1053,8 +1123,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Heerlen, Netherlands"
+      },
+      "geography_review": "Source-based location or topic scope: Heerlen, Netherlands. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:2a21eff3-4581-4b48-9639-71b63a5f0300",
@@ -1075,8 +1147,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Pennsylvania, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Pennsylvania, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:04bb1819-6360-4109-84b4-a282a619191d",
@@ -1097,8 +1171,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Switzerland"
+      },
+      "geography_review": "Source-based location or topic scope: Switzerland. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
@@ -1125,8 +1201,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Rennes, France"
+      },
+      "geography_review": "Source-based location or topic scope: Rennes, France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:81d30770-8588-4aac-88a2-6463131a6862",
@@ -1149,7 +1227,8 @@
           "ai": "gain"
         },
         "location_label": "Research locations: Brazil · USA"
-      }
+      },
+      "geography_review": "Source-based location or topic scope: Research locations: Brazil · USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:817d1d24-3413-4254-837b-51235018c279",
@@ -1170,8 +1249,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "UK · Norway"
+      },
+      "geography_review": "Source-based location or topic scope: UK · Norway. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:7ff8c2d3-3fa2-4fe2-a81f-80124678db81",
@@ -1192,8 +1273,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Pomona, California, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Pomona, California, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:5fb0131d-6087-4785-bde9-77d853e6e5c8",
@@ -1214,8 +1297,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Beijing, China"
+      },
+      "geography_review": "Source-based location or topic scope: Beijing, China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:52cd6bca-5051-4d1e-875c-173c8abca61c",
@@ -1236,8 +1321,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "France · European Union"
+      },
+      "geography_review": "Source-based location or topic scope: France · European Union. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:1b9adebc-cabc-4d55-bb74-0332612915a9",
@@ -1258,8 +1345,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Guangdong, China"
+      },
+      "geography_review": "Source-based location or topic scope: Guangdong, China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:1000c6be-1e4b-487d-a990-7d87fe76533c",
@@ -1280,8 +1369,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Montpellier, France"
+      },
+      "geography_review": "Source-based location or topic scope: Montpellier, France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:07a3fcca-1961-474c-9abf-cc9e8635cab8",
@@ -1302,8 +1393,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Education resources"
+      },
+      "geography_review": "Source-based location or topic scope: Education resources. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:d8b84f4b-745a-4d6f-9dae-3367c64c0c25",
@@ -1324,8 +1417,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Company announcement"
+      },
+      "geography_review": "Source-based location or topic scope: Company announcement. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:bac7ac90-b5c1-4840-82b2-4d187b6812f1",
@@ -1346,8 +1441,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Technical guidance"
+      },
+      "geography_review": "Source-based location or topic scope: Technical guidance. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:5f2a1929-fb39-4966-b241-2242ac1bfd1b",
@@ -1368,8 +1465,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Montréal, Canada"
+      },
+      "geography_review": "Source-based location or topic scope: Montréal, Canada. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:2fa9457d-6d68-4473-998d-cbbd126b6ab7",
@@ -1390,8 +1489,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Commentary"
+      },
+      "geography_review": "Source-based location or topic scope: Commentary. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:cfc181ac-f273-486b-a8db-5dc2010cc436",
@@ -1412,8 +1513,10 @@
         "box_effects": {
           "human": "none",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "China"
+      },
+      "geography_review": "Source-based location or topic scope: China. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:bda66ee1-3913-4d83-93f8-612d50c56d48",
@@ -1434,8 +1537,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "Technology analysis"
+      },
+      "geography_review": "Source-based location or topic scope: Technology analysis. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:a717138d-2d4c-4226-9816-50eeff397f43",
@@ -1456,8 +1561,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Security research"
+      },
+      "geography_review": "Source-based location or topic scope: Security research. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:a43fac3a-f99e-4bbd-8b2f-3d05054d7d6a",
@@ -1478,8 +1585,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "Australia"
+      },
+      "geography_review": "Source-based location or topic scope: Australia. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:87ee4ebb-3ad2-4728-9656-1c430d0b2f4d",
@@ -1500,8 +1609,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "Commentary"
+      },
+      "geography_review": "Source-based location or topic scope: Commentary. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:6dbd36bd-a7ea-4fab-ac08-5e42feb3758e",
@@ -1522,8 +1633,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Technology explainer"
+      },
+      "geography_review": "Source-based location or topic scope: Technology explainer. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:6856a0c9-ce44-4248-b9ad-81bef5a5dcf5",
@@ -1546,8 +1659,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "France"
+      },
+      "geography_review": "Source-based location or topic scope: France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:0c87435f-3cb8-4ae4-9b12-1fedf35e649e",
@@ -1568,8 +1683,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "gain"
-        }
-      }
+        },
+        "location_label": "Washington, DC, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Washington, DC, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:07fb392a-4a27-43d1-9bdf-186dbe748e5d",
@@ -1590,8 +1707,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "Orlando, Florida, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Orlando, Florida, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:06a5c958-6e9a-4099-a2f9-bf80b2c17f53",
@@ -1612,8 +1731,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "loss"
-        }
-      }
+        },
+        "location_label": "France"
+      },
+      "geography_review": "Source-based location or topic scope: France. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:f99095a8-2571-41f6-9c86-158b99dbdc5e",
@@ -1634,8 +1755,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Science debate"
+      },
+      "geography_review": "Source-based location or topic scope: Science debate. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:b6224960-ef80-4815-9f08-46cdc26740d4",
@@ -1656,8 +1779,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "International commentary"
+      },
+      "geography_review": "Source-based location or topic scope: International commentary. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:8fe96ae7-0c0d-42e9-b154-0ff4d8a9ce68",
@@ -1678,8 +1803,10 @@
         "box_effects": {
           "human": "mixed",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "Technology forecast"
+      },
+      "geography_review": "Source-based location or topic scope: Technology forecast. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:82172112-a095-48fc-8b21-0379c0dace7b",
@@ -1700,8 +1827,10 @@
         "box_effects": {
           "human": "gain",
           "ai": "none"
-        }
-      }
+        },
+        "location_label": "Valdosta, Georgia, USA"
+      },
+      "geography_review": "Source-based location or topic scope: Valdosta, Georgia, USA. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:0747d38f-7bb0-4c09-95e5-58d71445a866",
@@ -1722,8 +1851,10 @@
         "box_effects": {
           "human": "loss",
           "ai": "mixed"
-        }
-      }
+        },
+        "location_label": "International military analysis"
+      },
+      "geography_review": "Source-based location or topic scope: International military analysis. Discovery markets remain separate provenance, not evidence of event location."
     },
     {
       "key": "event:a092060b-78ae-46e7-9d29-fcac40c9bcdd",
@@ -1757,8 +1888,10 @@
         "summary_basis": "Source-checked editorial correction",
         "reading_minutes": 1,
         "claim_status": "reporting",
-        "limitation": "This is an account of a professional panel, not a controlled measurement of arbitration costs or outcomes."
-      }
+        "limitation": "This is an account of a professional panel, not a controlled measurement of arbitration costs or outcomes.",
+        "location_label": "Hong Kong"
+      },
+      "geography_review": "Source-based location or topic scope: Hong Kong. Discovery markets remain separate provenance, not evidence of event location."
     }
   ],
   "research": [
@@ -1774,5 +1907,6 @@
     }
   ],
   "reviewed_edition": "2026-W46",
-  "reviewed_news_count": 67
+  "reviewed_news_count": 67,
+  "geography_policy": "All 67 current-edition labels reviewed: use locations named in the source for events, institutions and study sites; use topic scope for general analysis and company material that does not establish an event location. Preserve the Observatory discovery-market metadata separately."
 }

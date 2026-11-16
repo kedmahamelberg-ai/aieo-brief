@@ -30,6 +30,8 @@ class SourceAuditCorrections(unittest.TestCase):
         import news_reading
         for entry in audit['news']:
             after=entry['after']
+            self.assertTrue(after['location_label'])
+            self.assertTrue(entry['geography_review'])
             self.assertTrue(after['for_humans'])
             self.assertTrue(after['for_ai'])
             self.assertFalse(news_reading.style_problem(after))
@@ -37,6 +39,10 @@ class SourceAuditCorrections(unittest.TestCase):
             self.assertEqual(after['human_direction'],after['box_effects']['human'])
             self.assertEqual(after['ai_direction'],after['box_effects']['ai'])
         self.assertEqual(len(keys),len(set(keys)))
+        reviewed={r['key']:r['after'] for r in audit['news']}
+        self.assertEqual(reviewed['event:87ee4ebb-3ad2-4728-9656-1c430d0b2f4d']['location_label'],'Commentary')
+        self.assertEqual(reviewed['event:a8cdc3a3-07f2-4018-88ed-53fa68ead705']['location_label'],'Japan')
+        self.assertEqual(reviewed['event:81d30770-8588-4aac-88a2-6463131a6862']['location_label'],'Research locations: Brazil · USA')
         existing={'key':'event:already-complete-unrelated','headline':'Preserve this','has_editorial':True,'body_paragraphs':['Original complete text.']}
         full_keys=[r['key'] for r in audit['news'] if r['after'].get('has_editorial')]
         rows=[{'key':key,'has_editorial':False,'body_paragraphs':[]} for key in full_keys]+[copy.deepcopy(existing)]
