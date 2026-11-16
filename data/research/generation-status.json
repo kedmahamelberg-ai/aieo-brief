@@ -1,24 +1,11 @@
 {
-  "generated": 0,
-  "failed": 1,
+  "generated": 1,
+  "failed": 0,
   "metadata_only": 5,
   "deferred": 0,
-  "unchanged": 7,
+  "unchanged": 2,
   "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-  "failure_counts": {
-    "source_scope_review_failed": 1
-  },
-  "failed_items": [
-    {
-      "key": "paper:0be73fb3448eb344ca662eeb",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
-    }
-  ],
-  "updated_at": "2026-11-15T19:10:56.525702+00:00"
+  "failure_counts": {},
+  "failed_items": [],
+  "updated_at": "2026-11-16T12:50:30.582879+00:00"
 }
