@@ -441,6 +441,78 @@
           }
         ]
       }
+    },
+    "91a3e3cb-d7c3-4247-b5ee-a4cd749a6294": {
+      "evidence_sha256": [
+        "8a29982556c8c3ddcea461f88713a16b11d3a8718d2f4ad3bf19d53ff8c43935"
+      ],
+      "draft": {
+        "editorial_headline": "France plans Rennes center for international cooperation on military artificial intelligence",
+        "editorial_deck": "The French defense ministry expects the center to open next summer with military and civilian staff, including partners from allied countries.",
+        "what_happened": "France's defense ministry presented a planned international center near Rennes for sharing experience and developing practices for artificial intelligence in the armed forces. The article says it expects 34 military and civilian staff, including 17 from France.",
+        "why_it_matters": "The planned center would organize cooperation, track technology and gather lessons from military uses of artificial intelligence. The article says it will be a place for shared work rather than a producer of artificial intelligence services.",
+        "for_humans": "",
+        "for_ai": "The planned center would encourage use of artificial intelligence in armed forces and share experience from that work.",
+        "body_paragraphs": [
+          "The center should become operational next summer near Rennes. The article says several allied countries have committed to the project, while France expects to provide 17 of its 34 staff.",
+          "Its listed tasks include bringing together interested teams, promoting good practices, following new technology and collecting lessons from military work. The plan also calls for simulations and group problem-solving events."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The article describes a center that has not opened yet, so it does not report results from its work.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "À l’inverse, l’ICAID favorisera la coopération internationale."
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "34 personnes devraient rejoindre ce centre ; il y aura des militaires et des civils. La France enverra 17 personnes et plusieurs alliés se sont déjà engagés dans ce projet."
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Le contre-amiral révèle que le centre ne sera pas dédié à la production de services IA. Il s’agira d’un lieu de travail intellectuel avec des simulations, des hackathons et des benchmarks."
+          }
+        ]
+      }
+    },
+    "c116ab7b-785b-43f3-8083-0f0bd4a3fe41": {
+      "evidence_sha256": [
+        "d18fc57410e5dbd922063683e8128f66ba657f729385861579323ef1009d10e6"
+      ],
+      "draft": {
+        "editorial_headline": "Ontario law commission calls for rules on artificial intelligence in criminal justice",
+        "editorial_deck": "Its final report proposes legislation, an oversight authority and a public registry after hearing from more than 1,400 people across Ontario.",
+        "what_happened": "The Law Commission of Ontario released a final report on artificial intelligence in criminal law after hearing from more than 1,400 people across the province. Among 29 recommendations, it calls for provincial legislation, a dedicated oversight body and a public registry.",
+        "why_it_matters": "Police and courts already use tools for surveillance, reports and legal work, the article says. The commission wants common rules and public disclosure, but whether governments will adopt its proposals is still an open question.",
+        "for_humans": "Proposed public reporting could let people see which artificial intelligence tools police and courts use.",
+        "for_ai": "The proposed rules could restrict tools that predict whether someone will commit a crime.",
+        "body_paragraphs": [
+          "The article describes current uses ranging from facial recognition and license plate readers to tools that help draft police reports. It says agencies in Canada have adopted different tools and guidelines.",
+          "The commission also recommends banning tools that predict whether someone will commit a crime. Its project lead argues that common rules for buying and using these systems could protect the public and give police clearer requirements."
+        ],
+        "claim_status": "reporting",
+        "limitation": "These are recommendations in a final report; the article does not say they have become law.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Among its 29 recommendations are calls to create a provincial criminal AI framework, new legislation specifically for AI and criminal law, a dedicated provincial authority to oversee AI systems, and a public AI registry."
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "After hearing from more than 1400 people across Ontario, the Law Commission of Ontario has released its final report calling for policy and legislative reform in AI and criminal law."
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "As LCO staff continue to consult with police services, courts, lawyers, and the public, the big question is whether the report’s recommendations will be implemented."
+          }
+        ]
+      }
     }
   }
 }
