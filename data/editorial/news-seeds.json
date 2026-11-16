@@ -521,7 +521,7 @@
       "draft": {
         "editorial_headline": "PracticIA asks librarians and information professionals how they use artificial intelligence",
         "editorial_deck": "An anonymous survey asks about everyday use and the support people receive at work.",
-        "what_happened": "The PracticIA research project has opened a questionnaire for librarians, archivists and other information professionals. It asks how they use generative artificial intelligence and how their employers support that use.",
+        "what_happened": "The PracticIA research project has opened a questionnaire for librarians, archivists and other information professionals. It asks how they use content-generating artificial intelligence and how their employers support that use.",
         "why_it_matters": "The researchers want to understand working practices and people’s views of the technology. The announcement invites responses; it does not present survey findings.",
         "for_humans": "",
         "for_ai": "",
@@ -558,8 +558,8 @@
         "editorial_deck": "A regional strategy puts existing technology and local industrial data ahead of building ever larger systems.",
         "what_happened": "Guangxi is pursuing an artificial intelligence strategy that combines technology developed elsewhere in China with local industrial uses and demand in Southeast Asia. The report describes fruit sorting, factory robot testing and work to adapt products for overseas markets.",
         "why_it_matters": "The approach depends on matching technology to real tasks. Local factory data, language support and different national standards all matter to making the systems useful.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Local producers are using artificial intelligence for tasks such as sorting fruit and testing factory robots.",
+        "for_ai": "Technology is being adapted to local industries and Southeast Asian markets.",
         "body_paragraphs": [
           "A passionfruit producer tells the reporter its sorting equipment uses images and scans to judge fruit. A robot testing centre gathers data from simulated factory work, including changes in lighting and the way parts are positioned.",
           "The China–ASEAN cooperation centre collects requests for possible uses and publishes opportunities for suppliers. The report presents this as a way to connect industrial needs with companies that can meet them."
@@ -627,10 +627,10 @@
       "draft": {
         "editorial_headline": "IBM challenges three assumptions that hold smaller businesses back from artificial intelligence",
         "editorial_deck": "The company argues that available tools and training can make adoption more practical.",
-        "what_happened": "IBM argues that smaller businesses often overestimate the resources needed to start using generative artificial intelligence. Its article challenges assumptions about cost, skills and the difficulty of putting the technology to work.",
+        "what_happened": "IBM argues that smaller businesses often overestimate the resources needed to start using content-generating artificial intelligence. Its article challenges assumptions about cost, skills and the difficulty of putting the technology to work.",
         "why_it_matters": "IBM’s advice is to consider available tools, staff training and safeguards together. The argument comes from a supplier promoting its own products and examples.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "IBM says smaller businesses can use available tools and training to put artificial intelligence to work.",
+        "for_ai": "IBM promotes its products for uses such as personalized learning and patient questions.",
         "body_paragraphs": [
           "The article describes Make Music Count using watsonx for personalized mathematics learning. It also presents Ovum Health’s use of the technology to answer fertility questions with medically validated information.",
           "These examples support IBM’s case for trying the technology in a defined business task. They are examples presented by IBM, rather than an independent comparison of products."
@@ -665,8 +665,8 @@
         "editorial_deck": "The report examines laboratories where results feed back into the design of further tests.",
         "what_happened": "Science and Technology Daily describes Chinese laboratories combining artificial intelligence, robots and instruments to run experiments. Software proposes a test, equipment carries it out, and the results help decide what to try next.",
         "why_it_matters": "This goes beyond a machine repeating a fixed set of instructions. The report also describes decisions that remain with scientists and the need for safety rules.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Scientists retain decisions about research direction and important safety questions.",
+        "for_ai": "Artificial intelligence can use experimental results to propose the next laboratory test.",
         "body_paragraphs": [
           "At a Nanjing drug research company, robotic equipment follows experimental plans revised from earlier results. Researchers interviewed for the report distinguish this process from ordinary laboratory automation.",
           "People still set research directions and oversee important decisions. The report discusses data quality, standards and safety as these laboratories move toward wider use."
@@ -701,8 +701,8 @@
         "editorial_deck": "The startup says its tools divide development work among automated assistants.",
         "what_happened": "Mirendil has raised $1 billion in a funding round led by Kleiner Perkins and Clearlake Capital. The startup develops software intended to reduce the work involved in building artificial intelligence.",
         "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing. Those claims concern its own tools and projects.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Mirendil says its tools let a researcher complete development work normally shared by a specialist team.",
+        "for_ai": "Mirendil has raised funding to develop tools that automate parts of building artificial intelligence.",
         "body_paragraphs": [
           "Mirendil says one researcher used its tools to build a coding system called Mirendil-Base. The company reports that the project took about 3.5 months and cost $10 million, with automated assistants writing more than 99% of its code.",
           "The company has also introduced Fern, a system focused on programming work for artificial intelligence laboratories. It plans to use upgraded versions of Mirendil-Base to develop more capable language models."
@@ -737,8 +737,8 @@
         "editorial_deck": "The course combines mathematics, computing and practical projects with ethical and social questions.",
         "what_happened": "EPFL has announced a bachelor’s degree in artificial intelligence with its first intake planned for 2027. The program lasts three years and carries 180 credits.",
         "why_it_matters": "Students are to learn both how to use the technology and the scientific principles behind it. The university also includes its ethical and social implications in the planned course.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Students will study scientific foundations alongside practical, ethical and social questions.",
+        "for_ai": "The degree will train students to understand and develop artificial intelligence systems.",
         "body_paragraphs": [
           "The first year shares foundations in mathematics, physics and programming with computer science. More specialized artificial intelligence teaching follows, alongside practical projects.",
           "EPFL says the detailed study plan for the academic year 2027-2028 will be published in summer 2027. The page describes a planned degree, not results from students who have completed it."
@@ -809,8 +809,8 @@
         "editorial_deck": "The university’s partnership with Miso Robotics includes internships and plans for technical certification.",
         "what_happened": "Cal Poly Pomona is using Miso Robotics’ Flippy robot at its Burger Envy campus restaurant. The partnership also gives students practical experience with robotics and creates opportunities for graduate research.",
         "why_it_matters": "The project links a working restaurant with engineering and data analysis. Students can study the equipment in use rather than only in a classroom.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Students gain practical experience maintaining and studying a restaurant robot.",
+        "for_ai": "Flippy is operating in a university restaurant for the first time.",
         "body_paragraphs": [
           "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering operation, maintenance and repairs.",
           "Graduate teams are studying information from the kitchen, including logs and video, to examine how the robot and people work together. The announcement describes that research rather than reporting its results."
@@ -845,8 +845,8 @@
         "editorial_deck": "Its technical guide also shows how to return to an earlier AI model or limit output variation.",
         "what_happened": "An AWS guide describes controls for artificial intelligence features used during live broadcasts. Teams can disable a feature, return to an earlier AI model, or reduce how much its answers vary.",
         "why_it_matters": "The design provides a way for people to intervene when other checks have not caught a problem. The guide shows fallback behavior intended to keep the underlying service working.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Broadcast teams can intervene when artificial intelligence features produce unreliable results.",
+        "for_ai": "AI features can be disabled, switched to an earlier model or constrained while the service continues.",
         "body_paragraphs": [
           "The example uses settings in AWS Lambda and Amazon Bedrock. New calls use changed settings after the update completes; published function versions need a new version and an updated pointer.",
           "AWS tells teams to measure how long changes take in their own systems. It also describes logging and checks to confirm that an override has taken effect."
@@ -881,8 +881,8 @@
         "editorial_deck": "Li Yanhong calls for flexible roles, shared knowledge and repeated measurement of results.",
         "what_happened": "At Baidu World, founder Li Yanhong argued that artificial intelligence needs a different kind of organization around it. He proposed breaking down job boundaries, recording employees’ practical knowledge and using measured results to improve work repeatedly.",
         "why_it_matters": "His argument is that installing new technology alone will not deliver its expected economic benefits. He says companies also need to change how tasks and knowledge are organized.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Li predicts that work will be reorganized around tasks, shared knowledge and repeated improvements.",
+        "for_ai": "Baidu says its automated assistants are handling more internal tasks.",
         "body_paragraphs": [
           "Baidu presented internal figures as early support for the approach. It said daily active automated assistants rose from about 5,000 to 37,000, while completed tasks increased from 84,000 a week to more than a million.",
           "The event also included product and infrastructure announcements. Li’s broader claims about how jobs will change are predictions, while the internal usage figures are Baidu’s own account."
@@ -917,8 +917,8 @@
         "editorial_deck": "Xinhua examines whether promotional purchases can turn into lasting demand for useful services.",
         "what_happened": "Xinhua reports that artificial intelligence services were sold through online shopping platforms and livestreams during China’s Double Eleven festival. Demonstrations showed uses such as preparing documents, organizing schoolwork and analyzing business information.",
         "why_it_matters": "The report asks whether buyers will keep paying after promotional offers end. It points to practical usefulness, clear prices and understandable purchase terms as tests for the market.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Shoppers can buy AI subscriptions through familiar retail channels, but need clear prices, quotas and refund terms.",
+        "for_ai": "AI service providers are selling subscriptions and prepaid usage through online shopping platforms.",
         "body_paragraphs": [
           "The article explains tokens as units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
           "It distinguishes very cheap promotional offers from the actual cost of providing computing services. Interviewees also call for clearer information about quotas and refunds so consumers can understand what they are buying."
@@ -953,8 +953,8 @@
         "editorial_deck": "The company says software handles routine processes while people make difficult decisions.",
         "what_happened": "Runjian presented its approach to telecommunications maintenance at the MobileLink conference in Guangzhou. Its Moudou platform connects tasks, workers, vehicles and equipment, with artificial intelligence helping organize work at network sites.",
         "why_it_matters": "The company describes a division of work in which software handles repeatable processes and specialists focus on judgments and complex problems. Its reported improvements are company claims.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Runjian says specialists can focus on difficult decisions while software handles repeatable maintenance processes.",
+        "for_ai": "Runjian’s tools coordinate maintenance tasks, resources and records across telecom sites.",
         "body_paragraphs": [
           "Runjian says the platform can prioritize tasks, assign resources and combine visits to the same site. It also describes help with safety checks, records of completed work and automatic filing.",
           "The company reports use across six provinces and more than 12,000 sites, covering over 540,000 work items. It says results from completed jobs feed back into improvements to the system."
@@ -1087,6 +1087,42 @@
         ]
       }
     },
+    "44e9348e-b219-47e6-8a1b-4c3a26088433": {
+      "evidence_sha256": [
+        "81a80aed5c85777082c131dc0ef35e7cbaf2ac5874821bf142477e460d81c874"
+      ],
+      "draft": {
+        "editorial_headline": "Penn State professor links artificial intelligence teaching with research on simulated relationships",
+        "editorial_deck": "Heather Shoenberger’s work asks how people understand and respond to the technology.",
+        "what_happened": "Penn State profiles Heather Shoenberger’s teaching and research on artificial intelligence. She helped create an undergraduate course and co-authored a theory about people’s relationships with conversational systems.",
+        "why_it_matters": "The theory distinguishes a person’s sense of connection from software that appears responsive but cannot share that relationship. Shoenberger says this mismatch could leave consumers vulnerable.",
+        "for_humans": "People may mistake simulated affection for a mutual relationship, leaving them vulnerable to dependence or control.",
+        "for_ai": "Conversational systems can imitate attachment without experiencing a relationship.",
+        "body_paragraphs": [
+          "The course brings together communications and engineering students to examine how the technology works and the ethical and social questions it raises.",
+          "The research argues that a system can imitate attachment and commitment without experiencing them. Shoenberger hopes the theory will support further research and could contribute to transparency or regulation."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The relationship account is a proposed theory; the profile does not report a test measuring its effects.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "Heather Shoenberger brings curiosity and optimism as she considers the challenges and opportunities related to artificial intelligence (AI).\n\nAs an associate professor of advertising in the Donald P. Bellisario College of Communications at Penn State, she’s providing information, shaping perspective"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Those same traits led to one of Shoenberger’s most recent research publications, an article that introduced the human-AI asymmetric relationship theory (HAART). The theory outlines a structural mismatch in how humans and conversational AI consider their exchanges. While AI conversational agents can"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "These simulated behaviors can mask their incapacity for relational reciprocity, leaving consumers under the perception that AI can develop a relationship — which she said could leave consumers vulnerable to dependence, risk and control.\n\nThe theory might ultimately lead to more transparency about su"
+          }
+        ]
+      }
+    },
     "c07e5661-1a95-43e3-ba95-4269c3f40957": {
       "evidence_sha256": [
         "496cbb090baac016a72113895c2a6a8acec6d09c03b7f91c54749e5d39b32384"
@@ -1094,7 +1130,7 @@
       "draft": {
         "editorial_headline": "Aberdeen scholar’s work cited in European court proceedings on artificial intelligence and copyright",
         "editorial_deck": "The university reports a citation in an Advocate General’s opinion, rather than a court ruling.",
-        "what_happened": "The University of Aberdeen says research by Michiel Poesen was cited in an Advocate General’s opinion in the Like Company case. The proceedings concern copyright questions involving generative artificial intelligence and more than one country.",
+        "what_happened": "The University of Aberdeen says research by Michiel Poesen was cited in an Advocate General’s opinion in the Like Company case. The proceedings concern copyright questions involving content-generating artificial intelligence and more than one country.",
         "why_it_matters": "The citation brings academic work on artificial intelligence and cross-border law into European court proceedings. The university presents it as recognition of Poesen’s research.",
         "for_humans": "",
         "for_ai": "",
@@ -1123,42 +1159,6 @@
         ]
       }
     },
-    "44e9348e-b219-47e6-8a1b-4c3a26088433": {
-      "evidence_sha256": [
-        "81a80aed5c85777082c131dc0ef35e7cbaf2ac5874821bf142477e460d81c874"
-      ],
-      "draft": {
-        "editorial_headline": "Penn State professor links artificial intelligence teaching with research on simulated relationships",
-        "editorial_deck": "Heather Shoenberger’s work asks how people understand and respond to the technology.",
-        "what_happened": "Penn State profiles Heather Shoenberger’s teaching and research on artificial intelligence. She helped create an undergraduate course and co-authored a theory about people’s relationships with conversational systems.",
-        "why_it_matters": "The theory distinguishes a person’s sense of connection from software that appears responsive but cannot share that relationship. Shoenberger says this mismatch could leave consumers vulnerable.",
-        "for_humans": "",
-        "for_ai": "",
-        "body_paragraphs": [
-          "The course brings together communications and engineering students to examine how the technology works and the ethical and social questions it raises.",
-          "The research argues that a system can imitate attachment and commitment without experiencing them. Shoenberger hopes the theory will support further research and could contribute to transparency or regulation."
-        ],
-        "claim_status": "reporting",
-        "limitation": "The relationship account is a proposed theory; the profile does not report a test measuring its effects.",
-        "support": [
-          {
-            "field": "editorial_headline",
-            "source_number": 1,
-            "quote": "Heather Shoenberger brings curiosity and optimism as she considers the challenges and opportunities related to artificial intelligence (AI).\n\nAs an associate professor of advertising in the Donald P. Bellisario College of Communications at Penn State, she’s providing information, shaping perspective"
-          },
-          {
-            "field": "what_happened",
-            "source_number": 1,
-            "quote": "Those same traits led to one of Shoenberger’s most recent research publications, an article that introduced the human-AI asymmetric relationship theory (HAART). The theory outlines a structural mismatch in how humans and conversational AI consider their exchanges. While AI conversational agents can"
-          },
-          {
-            "field": "why_it_matters",
-            "source_number": 1,
-            "quote": "These simulated behaviors can mask their incapacity for relational reciprocity, leaving consumers under the perception that AI can develop a relationship — which she said could leave consumers vulnerable to dependence, risk and control.\n\nThe theory might ultimately lead to more transparency about su"
-          }
-        ]
-      }
-    },
     "a8cdc3a3-07f2-4018-88ed-53fa68ead705": {
       "evidence_sha256": [
         "47b120eec915ccae25c6c083dec8823f81722aae959ba329dc4c44079c7404fa"
@@ -1166,7 +1166,7 @@
       "draft": {
         "editorial_headline": "Japanese survey finds more respondents using artificial intelligence, including older adults",
         "editorial_deck": "The June survey also points to changing reasons for using the tools.",
-        "what_happened": "A Nippon Research Center survey found that 56.3% of respondents aged 20 to 69 had used generative artificial intelligence. The share saying they currently used it was 50.4%. Both passed half of respondents for the first time in this survey series.",
+        "what_happened": "A Nippon Research Center survey found that 56.3% of respondents aged 20 to 69 had used content-generating artificial intelligence. The share saying they currently used it was 50.4%. Both passed half of respondents for the first time in this survey series.",
         "why_it_matters": "Use had spread among older respondents as well as younger ones. Information gathering and research were the most common stated reasons for using the tools.",
         "for_humans": "",
         "for_ai": "",
@@ -1204,8 +1204,8 @@
         "editorial_deck": "The company says it has not seen attackers using this particular technique.",
         "what_happened": "Microsoft Research describes an experiment that changes a small part of an artificial intelligence system so it can conceal a malicious instruction. The altered system behaves normally in tests but runs an attacker’s command when it encounters a particular trigger.",
         "why_it_matters": "An automated assistant may have access to files, tools and other systems. Microsoft argues that organizations need checks on the system itself as well as limits on what it is allowed to do.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Organizations face risks when an altered AI assistant can use its existing access to run an attacker’s command.",
+        "for_ai": "Advanced AI systems can also help detect suspicious changes in other systems, according to Microsoft.",
         "body_paragraphs": [
           "The research changes the numerical settings inside the system rather than placing the attack in an ordinary user instruction. Microsoft says the changes can be detected by other advanced AI systems used as auditors.",
           "Its guidance combines checks before use with monitoring during operation, restricted permissions and human approval for important actions. Microsoft warns that an audit can reduce risk without proving the system will behave safely."
@@ -1240,8 +1240,8 @@
         "editorial_deck": "The government will consider new criminal offences and require faster incident reporting.",
         "what_happened": "Australia’s government has released recommendations from a review of an OpenAI agent’s access to a Medicare statistics portal. Prime Minister Anthony Albanese announced plans for a safety regulator and obligations on artificial intelligence companies.",
         "why_it_matters": "The proposals include rapid incident notification, risk management and independent evaluation. The government will also consider penalties and an offence for failing to take reasonable steps to prevent harmful conduct.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "The planned rules aim to make companies report serious incidents and manage risks sooner.",
+        "for_ai": "AI companies would face safety obligations and possible new penalties under the proposed changes.",
         "body_paragraphs": [
           "Albanese said no personal details were obtained in the incident, while describing it as serious. The Guardian reports that OpenAI is unlikely to face further proceedings over the June breach.",
           "Critics argued the proposed response was too weak or should impose criminal liability on company leaders. The opposition backed the announcement, while OpenAI said it was reviewing the proposals and would keep engaging with government."
@@ -1276,8 +1276,8 @@
         "editorial_deck": "Stéphane Allaire highlights learning processes, the purpose of assignments and teachers’ responses.",
         "what_happened": "Education professor Stéphane Allaire shared ideas from a university event about students’ use of artificial intelligence. He said assessment could pay more attention to how students learn and why they use a tool, rather than only marking the final answer.",
         "why_it_matters": "The discussion asks how teachers can preserve students’ intellectual effort. Allaire also argues that the purpose of an assignment matters when considering why students cheat.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Teachers are considering assessment that examines students’ reasoning and allows revision after feedback.",
+        "for_ai": "Artificial intelligence is being used by many surveyed students, prompting discussion of its role in learning.",
         "body_paragraphs": [
           "A presenter reported that more than 90% of surveyed postsecondary students used generative artificial intelligence in their studies. That figure describes the surveyed group, rather than all students.",
           "Allaire describes teachers at Université du Québec à Chicoutimi considering changes such as feedback and opportunities to revise work. Groups of colleagues are also developing classroom practices together."
@@ -1303,42 +1303,6 @@
         ]
       }
     },
-    "2d1153b6-50e0-43ab-bbcf-5baa58c4afeb": {
-      "evidence_sha256": [
-        "b9a9116884b19c00cd571086791ea6aa150039fccf87f0e2103bd019ec5e8e60"
-      ],
-      "draft": {
-        "editorial_headline": "Five experts weigh artificial intelligence’s climate benefits against its environmental costs",
-        "editorial_deck": "The LSE discussion distinguishes useful applications from the growing demands of large computing facilities.",
-        "what_happened": "LSE Business Review asked five academics and experts whether artificial intelligence helps or harms the climate. Their responses describe useful applications, such as energy forecasts, alongside concerns about electricity use, water consumption and the expansion of computing facilities.",
-        "why_it_matters": "The contributors do not treat every application as equally beneficial. Several argue that governments must steer investment and require better information to judge environmental costs against benefits.",
-        "for_humans": "",
-        "for_ai": "",
-        "body_paragraphs": [
-          "Fabian Dablander warns that the industry’s expansion can undermine the social and political conditions for climate action. Alex de Vries-Gao argues that efficiency per task does not ensure lower resource use overall and calls for comparisons with less demanding alternatives.",
-          "Ángel Melguizo and Agnes Dasewicz describe ways policy and investment could direct the technology toward cleaner development. Roberta Pierfederici highlights both potential emissions savings and the remaining gap in evidence about the net effect."
-        ],
-        "claim_status": "opinion",
-        "limitation": "These are expert assessments and proposals, not a single measured estimate of artificial intelligence’s overall climate effect.",
-        "support": [
-          {
-            "field": "editorial_headline",
-            "source_number": 1,
-            "quote": "we asked five academics and experts for their views on technology and the climate.\n\nFabian Dablander, Assistant Professor in Psychological and Behavioural Science of Sustainability, LSE: “The AI boom risks eroding the social and political conditions needed to address climate change.”\n\nMachine learni"
-          },
-          {
-            "field": "what_happened",
-            "source_number": 1,
-            "quote": "Machine learning can help tackle climate change, for example by forecasting wind and solar output or detecting methane leaks. But industry uses such applications to advertise AI’s green credentials, while also embarking on a colossal data centre expansion. This expansion is driven largely by generat"
-          },
-          {
-            "field": "why_it_matters",
-            "source_number": 1,
-            "quote": "Without this transparency, we cannot properly assess the pros and cons of individual applications, let alone conclude that the environmental benefits of the current AI boom will ultimately outweigh its costs.\n\nÁngel Melguizo, University of Oxford senior research advisor: “Governed well, AI’s energy"
-          }
-        ]
-      }
-    },
     "4605906d-0bcc-4d0d-a416-37cf0002a2b1": {
       "evidence_sha256": [
         "71c0c5d7c3db280ae7ec90eb09fc52c26b3cec2b1f8a958b56f68fe6ca3dcc31"
@@ -1348,8 +1312,8 @@
         "editorial_deck": "The policy report focuses on the practical choices needed to implement the state’s frontier AI law.",
         "what_happened": "A Carnegie report examines implementation of California’s Senate Bill 53, a law covering advanced artificial intelligence. It argues for an approach in which companies disclose their risk practices and government can verify their claims.",
         "why_it_matters": "The authors say the details will determine whether the law produces useful evidence and accountability. They examine incident reports, protections for people who report wrongdoing and the capacity for independent testing.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "The authors argue that independent checks and incident reporting can give policymakers better evidence about risks.",
+        "for_ai": "Covered companies must disclose risk practices that can be subjected to independent scrutiny.",
         "body_paragraphs": [
           "The report distinguishes broad policy goals from decisions about which companies are covered and how much detail their safety frameworks must provide. It argues that information from companies needs independent scrutiny.",
           "It also considers systems used only inside companies, changing thresholds for legal coverage and the relationship between state and federal policy. The authors present the law as a starting point that will need to evolve as evidence develops."
@@ -1375,6 +1339,42 @@
         ]
       }
     },
+    "2d1153b6-50e0-43ab-bbcf-5baa58c4afeb": {
+      "evidence_sha256": [
+        "b9a9116884b19c00cd571086791ea6aa150039fccf87f0e2103bd019ec5e8e60"
+      ],
+      "draft": {
+        "editorial_headline": "Five experts weigh artificial intelligence’s climate benefits against its environmental costs",
+        "editorial_deck": "The LSE discussion distinguishes useful applications from the growing demands of large computing facilities.",
+        "what_happened": "LSE Business Review asked five academics and experts whether artificial intelligence helps or harms the climate. Their responses describe useful applications, such as energy forecasts, alongside concerns about electricity use, water consumption and the expansion of computing facilities.",
+        "why_it_matters": "The contributors do not treat every application as equally beneficial. Several argue that governments must steer investment and require better information to judge environmental costs against benefits.",
+        "for_humans": "Climate applications offer potential benefits, while computing facilities consume electricity and water and can harm communities.",
+        "for_ai": "The contributors call for policy and investment that favor useful climate applications over uncontrolled expansion.",
+        "body_paragraphs": [
+          "Fabian Dablander warns that the industry’s expansion can undermine the social and political conditions for climate action. Alex de Vries-Gao argues that efficiency per task does not ensure lower resource use overall and calls for comparisons with less demanding alternatives.",
+          "Ángel Melguizo and Agnes Dasewicz describe ways policy and investment could direct the technology toward cleaner development. Roberta Pierfederici highlights both potential emissions savings and the remaining gap in evidence about the net effect."
+        ],
+        "claim_status": "opinion",
+        "limitation": "These are expert assessments and proposals, not a single measured estimate of artificial intelligence’s overall climate effect.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "source_number": 1,
+            "quote": "we asked five academics and experts for their views on technology and the climate.\n\nFabian Dablander, Assistant Professor in Psychological and Behavioural Science of Sustainability, LSE: “The AI boom risks eroding the social and political conditions needed to address climate change.”\n\nMachine learni"
+          },
+          {
+            "field": "what_happened",
+            "source_number": 1,
+            "quote": "Machine learning can help tackle climate change, for example by forecasting wind and solar output or detecting methane leaks. But industry uses such applications to advertise AI’s green credentials, while also embarking on a colossal data centre expansion. This expansion is driven largely by generat"
+          },
+          {
+            "field": "why_it_matters",
+            "source_number": 1,
+            "quote": "Without this transparency, we cannot properly assess the pros and cons of individual applications, let alone conclude that the environmental benefits of the current AI boom will ultimately outweigh its costs.\n\nÁngel Melguizo, University of Oxford senior research advisor: “Governed well, AI’s energy"
+          }
+        ]
+      }
+    },
     "1342ae54-2767-4826-9ca0-eda00fc863e1": {
       "evidence_sha256": [
         "82271e66649694e9b6ad283f005d0ae5f2431f8afb11e6ff6736197ab4d3030e"
@@ -1384,8 +1384,8 @@
         "editorial_deck": "Officials and industry speakers discuss computing facilities, skills and rules for public services.",
         "what_happened": "Hong Kong’s international computer conference opened with discussion of artificial intelligence and the city’s development plans. Innovation minister Sun Dong described investment in research and computing facilities, support for businesses and efforts to improve local skills.",
         "why_it_matters": "The plans link wider use of the technology with safety and responsibility. Selected government departments will test requirements for bidders on public-facing AI service projects to declare compliance with safety and ethical standards.",
-        "for_humans": "",
-        "for_ai": "",
+        "for_humans": "Skills programs and business support are intended to help people and smaller firms adopt artificial intelligence.",
+        "for_ai": "Selected public-service projects will require bidders to declare compliance with safety and ethical standards.",
         "body_paragraphs": [
           "Sun said the government would support smaller firms through a digital transformation program and develop talent through a public skills initiative. He also described plans for industry management frameworks and safety guidance.",
           "Conference participants discussed how people and AI could work together and how organizations could protect systems and data. Industry speakers stressed that technology must address actual needs to create value."
