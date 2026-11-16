@@ -2,21 +2,22 @@
   "release_id": "2026-W46",
   "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
   "counts": {
-    "unchanged": 36,
-    "source_not_ready": 2,
+    "unchanged": 40,
+    "source_not_ready": 1,
     "source_date_mismatch": 0,
-    "new_registry": 29,
-    "needs_model": 29,
+    "new_registry": 26,
+    "needs_model": 26,
     "needs_rebind": 0,
-    "blocked_rejections": 4,
-    "selected": 10,
-    "generated": 4,
+    "blocked_rejections": 0,
+    "selected": 26,
+    "generated": 8,
     "rebound": 0,
-    "failed": 6,
-    "deferred": 15
+    "failed": 18,
+    "deferred": 0
   },
   "failure_counts": {
-    "source_scope_review_failed": 6
+    "source_scope_review_failed": 15,
+    "claim_grounding_failed": 3
   },
   "failed_items": [
     {
@@ -30,27 +31,17 @@
       ]
     },
     {
-      "event_id": "f4540068-4f71-4f18-b728-f8b7453950c5",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "headline_supported"
-      ]
-    },
-    {
       "event_id": "e1ea62ac-6bb5-4864-8ab1-c73343d5e879",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
       "failed_checks": [
-        "plain_english"
+        "claim_status_preserved"
       ]
     },
     {
-      "event_id": "7ff8c2d3-3fa2-4fe2-a81f-80124678db81",
+      "event_id": "e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -70,7 +61,130 @@
       ]
     },
     {
-      "event_id": "5fb0131d-6087-4785-bde9-77d853e6e5c8",
+      "event_id": "42d68c56-8c99-4616-98bd-c137c6554bb4",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "no_unstated_effects",
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "1e3660cd-11f9-4261-b5e8-fe929476364a",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "504fe2f4-4dea-47cd-b779-bf7858e0acbb",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+    },
+    {
+      "event_id": "ff4786bf-c811-4627-833f-9b6ecc259f87",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "ea2fea61-ca7a-4de5-ba6b-2b427fe10d26",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+    },
+    {
+      "event_id": "c07e5661-1a95-43e3-ba95-4269c3f40957",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "a8cdc3a3-07f2-4018-88ed-53fa68ead705",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+    },
+    {
+      "event_id": "76fe76bf-bb59-46c4-be92-739c56ae84e9",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "4605906d-0bcc-4d0d-a416-37cf0002a2b1",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "44e9348e-b219-47e6-8a1b-4c3a26088433",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "no_unstated_effects"
+      ]
+    },
+    {
+      "event_id": "2d1153b6-50e0-43ab-bbcf-5baa58c4afeb",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "1342ae54-2767-4826-9ca0-eda00fc863e1",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "no_unstated_effects",
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "ef9fbd34-3150-4135-b7fa-68ebcd4eae9d",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "plain_english"
+      ]
+    },
+    {
+      "event_id": "6b8118f7-08c9-450a-a3a1-195778222239",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -80,5 +194,5 @@
       ]
     }
   ],
-  "updated_at": "2026-11-16T12:42:03.649016+00:00"
+  "updated_at": "2026-11-16T13:15:18.307888+00:00"
 }
