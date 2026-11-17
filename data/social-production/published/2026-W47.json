@@ -7,11 +7,12 @@
   "recorded_at": "2026-11-16T19:59:31.231722+01:00",
   "publishing_status": "PUBLISHED_AND_SCHEDULED",
   "counts": {
-    "feed_and_notes_published": 8,
-    "feed_and_notes_scheduled": 68,
+    "feed_and_notes_published": 12,
+    "feed_and_notes_scheduled": 64,
     "instagram_story_frames_published": 6,
-    "instagram_story_frames_scheduled": 51,
-    "weekly_substack_posts_published": 1
+    "instagram_story_frames_scheduled": 48,
+    "weekly_substack_posts_published": 1,
+    "instagram_story_frames_unverified": 3
   },
   "items": [
     {
@@ -106,9 +107,10 @@
       "platform": "linkedin",
       "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
       "scheduled_at": "2026-11-17T10:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+      "verification": "Published Page post inspected with the approved headline, fact, tracked destination, attribution, three hashtags and one image.",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7528143535305560064?actorCompanyId=146490147"
     },
     {
       "id": "TUE10_GB_35D2B233_facebook",
@@ -116,9 +118,10 @@
       "platform": "facebook",
       "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
       "scheduled_at": "2026-11-17T10:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Published Page post inspected with the approved full caption, tracked destination, two hashtags and three-image carousel.",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid04JzMxM1GTsQxh9dwhceZb9bM9gDRh8VxENgUcGgHxVWVJdKGsTt4wyCGT4tGQHPnl&id=61594324679612"
     },
     {
       "id": "TUE10_GB_35D2B233_instagram",
@@ -126,9 +129,10 @@
       "platform": "instagram",
       "account": "thebrief_ai.empowerment",
       "scheduled_at": "2026-11-17T10:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Public profile shows one new 17 November carousel as the latest post.",
+      "url": "https://www.instagram.com/thebrief_ai.empowerment/p/Df1jwpLwBhj/"
     },
     {
       "id": "TUE10_GB_35D2B233_substack_note",
@@ -136,9 +140,10 @@
       "platform": "substack_note",
       "account": "The Brief publication, @thebriefaieo",
       "scheduled_at": "2026-11-17T10:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed topic and date/time"
+      "verification": "Live Note inspected with the approved topic, caption excerpt and tracked article card.",
+      "url": "https://substack.com/@thebriefaieo/note/c-389072868"
     },
     {
       "id": "TUE12_GOVERNMENTS_linkedin",
@@ -802,9 +807,9 @@
       "topic_id": "TUE10_GB_35D2B233",
       "scheduled_at": "2026-11-17T10:00:00+01:00",
       "platform": "instagram_story",
-      "status": "SCHEDULED",
+      "status": "UNVERIFIED",
       "frames": 3,
-      "verification": "Three frames at exact approved time in Scheduled Stories list"
+      "verification": "The public profile shows an active Story ring, but the saved browser policy blocks Meta Business Suite inspection and Instagram requires login to identify the active frames. No failure or duplicate was observed and no recovery was attempted."
     },
     {
       "topic_id": "TUE12_GOVERNMENTS",
@@ -951,5 +956,20 @@
     "saved_carousel_order_details": "All media uploaded one file at a time in approved order. Saved MON10 Instagram and TUE12 government Instagram carousels reopened and visually checked across three cards. Exhaustive saved-carousel audit was not completed; media-download audit timed out and reset the browser session. No order error observed in checked carousels.",
     "historical_failed_stories": "Unrelated older Story failures were left unchanged"
   },
-  "audit_note": "This reconciled report supersedes transient submission-log statuses and duplicate labels; counts are based on saved platform queues. No duplicate content was submitted during reconciliation."
+  "audit_note": "This reconciled report supersedes transient submission-log statuses and duplicate labels; counts are based on saved platform queues. No duplicate content was submitted during reconciliation.",
+  "post_slot_checks": [
+    {
+      "checked_at": "2026-11-17T10:12:58+01:00",
+      "topic_id": "TUE10_GB_35D2B233",
+      "scheduled_at": "2026-11-17T10:00:00+01:00",
+      "duplicate_check": "PASS: one current placement observed on each inspectable platform",
+      "statuses": {
+        "linkedin": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram_feed": "PUBLISHED",
+        "instagram_story": "UNVERIFIED",
+        "substack_note": "PUBLISHED"
+      }
+    }
+  ]
 }
