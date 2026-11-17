@@ -40,6 +40,7 @@ function loadStripe(reducedMotion = false) {
 test('The bar includes older announcements and flips one upward every seven seconds',()=>{
   const view=loadStripe();
   assert.equal(view.visible().length,1);
+  assert.equal(view.run.children.some(item => item.dataset.date === '2026-09-01'),true);
   assert.equal(view.controls.hidden,false);
   assert.equal([...view.timers.values()][0].delay,7000);
   const first=view.visible()[0];
