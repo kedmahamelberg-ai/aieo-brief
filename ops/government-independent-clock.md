@@ -16,7 +16,7 @@ The backup dispatches the existing main-branch `collect-government-briefs.yml` a
 4. Test a no-force dispatch using the Vault secret. Require GitHub API **HTTP 204** and a corresponding workflow run. If today's import already happened, the due gate must skip collection and publication. Check that no second import occurred.
 5. Apply `government-independent-clock-activate.sql`. Verify the named cron job is active. After the next 16:20 Amsterdam slot, check `brief_scheduler.dispatches`, the matching `net._http_response` status, the GitHub workflow run, saved `last_checked_at`, and the live deployed feed. An enqueued HTTP request alone is not proof of a successful import.
 
-The existing `monitor_github_actions_dispatch` token expires on **18 November 2026** according to the Monitor's scheduler record. Renew it separately so the 09:00 and 15:00 Monitor collection clocks continue. This Brief backup uses its own token and does not alter the Monitor collectors or clocks.
+The existing `monitor_github_actions_dispatch` token expires on **10 February 2027**, according to GitHub's authenticated `github-authentication-token-expiration` response header checked on 17 November 2026. This Brief backup uses its own token and does not alter the Monitor collectors or clocks.
 
 ## Inspection
 
