@@ -24,6 +24,36 @@ class WeeklyHandoff(unittest.TestCase):
             'directional_counts': validate_pair(self.release, self.sym),
             'story_count': len(self.release['evidence'])}
 
+    def test_approved_direction_changes_do_not_repeat_generation(self):
+        row = self.sym['evidence'][0]
+        before = row['axes']['human']['direction']
+        after = 'loss' if before != 'loss' else 'gain'
+        approved = {'event:' + str(row['event_id']): {'human_direction': after}}
+        self.published['directional_counts']['human'][before] -= 1
+        self.published['directional_counts']['human'][after] += 1
+        with patch('check_observatory_update.corrections', return_value=approved):
+            self.assertFalse(needs_update(self.release, self.sym, self.published))
+            self.published['directional_counts']['human'][after] += 1
+            self.assertTrue(needs_update(self.release, self.sym, self.published))
+
+    def test_new_approved_direction_requires_publication(self):
+        row = self.sym['evidence'][0]
+        before = row['axes']['ai']['direction']
+        after = 'loss' if before != 'loss' else 'gain'
+        approved = {'event:' + str(row['event_id']): {'ai_direction': after}}
+        with patch('check_observatory_update.corrections', return_value=approved):
+            self.assertTrue(needs_update(self.release, self.sym, self.published))
+
+    def test_unpublished_old_source_correction_does_not_change_counts(self):
+        event = self.release['evidence'][0]
+        event['event_date'] = '2026-09-30'
+        event['sources'] = [{'url': 'https://example.org/news/2023/old-story'}]
+        self.published['story_count'] -= 1
+        self.published['directional_counts'] = public_directional_counts(self.release, self.sym)
+        approved = {'event:' + str(event['event_id']): {'human_direction': 'loss'}}
+        with patch('check_observatory_update.corrections', return_value=approved):
+            self.assertFalse(needs_update(self.release, self.sym, self.published))
+
     def test_monday_and_sunday_bounds(self):
         zone = ZoneInfo('Europe/Amsterdam')
         self.assertEqual(expected_period(datetime(2026,9,7,2,17,tzinfo=zone)), ('2026-08-31','2026-09-06'))
