@@ -31,16 +31,22 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - name: Skip a social week already approved or published
+        id: completion
+        run: python3 scripts/social_completion.py
       - uses: actions/setup-python@v6
+        if: steps.completion.outputs.needed == 'true'
         with:
           python-version: '3.12'
       - name: Install review renderer and mail client
+        if: steps.completion.outputs.needed == 'true'
         run: python -m pip install 'Pillow>=11,<13' 'requests>=2.32,<3'
       - name: Find this week's completed batch that still needs email
+        if: steps.completion.outputs.needed == 'true'
         id: delivery
         run: python scripts/social_review_delivery.py plan
       - name: Download the completed social artifact
-        if: steps.delivery.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.delivery.outputs.needed == 'true')
         uses: actions/download-artifact@v4
         with:
           artifact-ids: ${{ steps.delivery.outputs.artifact_id }}
@@ -49,14 +55,14 @@ jobs:
           path: social-review
           merge-multiple: true
       - name: Email the unapproved batch to its owner
-        if: steps.delivery.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.delivery.outputs.needed == 'true')
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           RESEND_FROM_EMAIL: ${{ secrets.RESEND_FROM_EMAIL }}
           WEEKLY_REVIEW_TO_EMAIL: ${{ secrets.WEEKLY_REVIEW_TO_EMAIL }}
         run: python scripts/social_review_delivery.py send
       - name: Keep the exact visual review and batch for repository approval
-        if: steps.delivery.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.delivery.outputs.needed == 'true')
         uses: actions/upload-artifact@v4
         with:
           name: social-visual-review-${{ github.run_id }}
@@ -69,12 +75,12 @@ jobs:
           if-no-files-found: error
           retention-days: 90
       - name: Authorize the email delivery receipt
-        if: steps.delivery.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.delivery.outputs.needed == 'true')
         uses: ./.github/actions/authorize-publisher
         with:
           private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Preserve delivery receipt to prevent repeat emails
-        if: steps.delivery.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.delivery.outputs.needed == 'true')
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'

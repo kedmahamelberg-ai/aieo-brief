@@ -20,6 +20,7 @@ class SocialRepair(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name); self.original = self.root / 'original'; self.output = self.root / 'repaired'
         for name in ('assets', 'sources'): (self.original / name).mkdir(parents=True)
+        root_patch = patch.object(repair, "ROOT", self.root); root_patch.start(); self.addCleanup(root_patch.stop)
         self.rows = []; self.topics = []; self.photos = {}
         for n in range(15):
             ident = f'TOPIC{n}'; kind = 'Research' if n == 14 else 'News'
@@ -83,7 +84,7 @@ class SocialRepair(unittest.TestCase):
         state_path = self.root/'data/social-production/state.json'
         repair.save(state_path, {'editions': {'2026-W44': self.receipt}})
         approval_path = self.root/'data/social-production/approved/2026-W45.json'
-        approval = dict(status='APPROVED', batch_sha256=self.plan['baseline_batch_sha256'])
+        approval = dict(status='SUPERSEDED_PENDING_CORRECTED_REVIEW', batch_sha256=self.plan['baseline_batch_sha256'])
         repair.save(approval_path, approval)
         self.output.mkdir(); (self.output/'batch.json').write_text('corrected batch')
         repair.save(self.output/'READY_FOR_REVIEW.json', dict(source_audit_complete=True, live_corrected_destinations_checked=True))

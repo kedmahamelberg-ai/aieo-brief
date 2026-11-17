@@ -21,30 +21,36 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - name: Skip a social week already approved or published
+        id: completion
+        run: python3 scripts/social_completion.py
       - uses: actions/setup-python@v6
+        if: steps.completion.outputs.needed == 'true'
         with:
           python-version: '3.12'
       - name: Install image renderer
+        if: steps.completion.outputs.needed == 'true'
         run: python -m pip install 'Pillow>=11,<13'
       - name: Read the exact website build that was deployed
-        if: inputs.website_artifact != ''
+        if: steps.completion.outputs.needed == 'true' && (inputs.website_artifact != '')
         uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.website_artifact }}
           path: deployed-site
       - name: Check edition identity and durable deduplication state
+        if: steps.completion.outputs.needed == 'true'
         id: readiness
         env:
           EXPECTED_ITEMS: ${{ inputs.website_artifact != '' && 'deployed-site/data/public-items.json' || '' }}
         run: python scripts/prepare_social_review.py --check-only
       - name: Produce the complete review-only social package
-        if: steps.readiness.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.readiness.outputs.needed == 'true')
         env:
           EXPECTED_ITEMS: ${{ inputs.website_artifact != '' && 'deployed-site/data/public-items.json' || '' }}
         run: python scripts/prepare_social_review.py
       - name: Keep the approval package and diagnostic partial work
         id: artifact
-        if: always() && steps.readiness.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (always() && steps.readiness.outputs.needed == 'true')
         uses: actions/upload-artifact@v4
         with:
           name: social-review-${{ github.run_id }}-${{ github.run_attempt }}
@@ -52,12 +58,12 @@ jobs:
           if-no-files-found: error
           retention-days: 90
       - name: Authorize the production receipt
-        if: success() && steps.readiness.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (success() && steps.readiness.outputs.needed == 'true')
         uses: ./.github/actions/authorize-publisher
         with:
           private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Save completed edition and permanent photo history
-        if: success() && steps.readiness.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (success() && steps.readiness.outputs.needed == 'true')
         env:
           SOCIAL_ARTIFACT_URL: ${{ steps.artifact.outputs.artifact-url }}
         run: |

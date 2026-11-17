@@ -16,6 +16,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 from zoneinfo import ZoneInfo
+from social_completion import completed_week, require_unfinished
 
 ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
@@ -71,6 +72,8 @@ def due(items, state, today):
         raise ValueError('Coverage period has not ended')
     # Never catch up an obsolete edition as if it were this week's content.
     if today >= monday + timedelta(days=7):
+        return False, release
+    if completed_week(ROOT, monday.strftime('%G-W%V'), state):
         return False, release
     editions = state.get('editions', {})
     previous = editions.get(release, {})
@@ -455,6 +458,7 @@ def main():
     statepath=ROOT/'data/social-production/state.json';state=read(statepath,{'editions':{}})
     if a.record:
         batch=read(a.output/'batch.json');ready=read(a.output/'READY_FOR_REVIEW.json');assert ready and ready['status']==STATUS
+        require_unfinished(ROOT, batch['publishing_week'])
         artifact=os.environ.get('SOCIAL_ARTIFACT_URL');assert artifact and artifact.startswith('https://github.com/')
         history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
         for photo in read(a.output/'PHOTO_MANIFEST.json').values():
@@ -465,6 +469,12 @@ def main():
         revision = REVIEW_REVISION if batch['source_edition'] == '2026-W45' else 1
         state['editions'][batch['source_edition']]={'publication_week':batch['publishing_week'],'status':STATUS,'artifact_url':artifact,'run_id':os.environ.get('GITHUB_RUN_ID'),'review_revision':revision,'created_at':datetime.now(ZONE).isoformat()}
         save(statepath,state);save(ROOT/'config/social-photo-history.json',history);return
+    week = datetime.now(ZONE).strftime('%G-W%V')
+    if completed_week(ROOT, week, state):
+        if os.environ.get('GITHUB_OUTPUT'):
+            with open(os.environ['GITHUB_OUTPUT'], 'a') as stream: stream.write('needed=false\n')
+        print(json.dumps({'production_needed': False, 'publication_week': week, 'reason': 'already approved or published'}))
+        return
     expected_path=os.environ.get('EXPECTED_ITEMS')
     expected=edition(read(Path(expected_path))['items'])[0] if expected_path else None
     for attempt in range(6):

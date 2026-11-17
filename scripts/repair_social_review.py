@@ -8,6 +8,7 @@ import shutil
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+from social_completion import completed_week, require_unfinished
 import prepare_social_review as social
 from social_review_delivery import ARTIFACT, review_html
 from validate_social_package import validate
@@ -26,6 +27,8 @@ def save(path, value):
 
 
 def needed(plan, state):
+    if completed_week(ROOT, plan['publication_week'], state):
+        return False, None
     entry = state['editions'].get(plan['source_edition'])
     if not entry or entry['publication_week'] != plan['publication_week']:
         raise ValueError('The original edition receipt is missing or mismatched')
@@ -36,6 +39,7 @@ def needed(plan, state):
 
 
 def produce(folder, output, plan, *, items=None, verify_destinations=True):
+    require_unfinished(ROOT, plan['publication_week'])
     raw = (folder / 'batch.json').read_bytes()
     if hashlib.sha256(raw).hexdigest() != plan['baseline_batch_sha256']:
         raise ValueError('Repair input is not the exact audited original batch')
@@ -136,6 +140,7 @@ def produce(folder, output, plan, *, items=None, verify_destinations=True):
 
 
 def record(output, plan):
+    require_unfinished(ROOT, plan['publication_week'])
     ready = read(output / 'READY_FOR_REVIEW.json')
     if ready.get('source_audit_complete') is not True or ready.get('live_corrected_destinations_checked') is not True:
         raise ValueError('Only a repaired batch checked against the live corrected articles can be recorded')
@@ -177,7 +182,9 @@ def main():
         pending, match = needed(plan, read(ROOT / 'data/social-production/state.json'))
         if os.environ.get('GITHUB_OUTPUT'):
             with open(os.environ['GITHUB_OUTPUT'], 'a') as stream:
-                stream.write('needed=' + str(pending).lower() + '\nrun_id=' + match[1] + '\nartifact_id=' + match[2] + '\n')
+                stream.write('needed=' + str(pending).lower() + '\n')
+                if pending:
+                    stream.write('run_id=' + match[1] + '\nartifact_id=' + match[2] + '\n')
         print(json.dumps({'repair_needed': pending, 'revision': plan['revision']}))
     elif args.action == 'produce': produce(args.input.resolve(), args.output.resolve(), plan)
     else: record(args.output, plan)
