@@ -18,7 +18,7 @@ def validate_news_layout(raw):
  boxes=re.findall(r'<div class="axis-note [^"]*">(.*?)</div>',raw,re.S)
  if len(boxes)!=2 or any(not any('<strong>'+label+'</strong>' in box for label in set(EFFECT_LABELS.values())) for box in boxes):
   raise ValueError('Each news implication box must display a valid effect label')
- limit=raw.find('<h2>What this does not tell us</h2>')
+ limit=raw.find('<h2>Reading notes</h2>')
  if limit<0:return
  people=raw.find('<h3>FOR PEOPLE</h3>')
  ai=raw.find('<h3>FOR AI TOOLS AND COMPANIES</h3>')

@@ -98,7 +98,7 @@ def candidates(release,sym,maps,force=False):
         supplement=supplements.get(eid,{})
         if supplement:
             body=verified_text(supplement)
-            quality=assess_body({'body_text':body,'content_basis':'full_source'})
+            quality=assess_body({'body_text':body,'content_basis':supplement.get('content_basis','full_source')})
             if (quality['usable_complete_body'] and quality['body_sha256']==supplement.get('evidence_sha256')
                     and safe_url(supplement.get('source_url'))):
                 sources.append({'source_number':len(sources)+1,'publisher':supplement['publisher'],
