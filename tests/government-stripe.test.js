@@ -13,8 +13,8 @@ function loadStripe(reducedMotion = false) {
     addEventListener(name,handler){this.events[name]=handler},
     setAttribute(name,value){this[name]=value},
     matches(){return false},contains(){return false}});
-  const links = ['a','b','c'].map(key => {
-    const item = node(); item.classList.owner=item; item.dataset={key,date:'2026-11-17'}; return item;
+  const links = ['a','b','c'].map((key,index) => {
+    const item = node(); item.classList.owner=item; item.dataset={key,date:index===2?'2026-09-01':'2026-11-17'}; return item;
   });
   const stripe=node(), run=node(), controls=node(), next=node(), pause=node();
   run.querySelectorAll=()=>links;
@@ -37,7 +37,7 @@ function loadStripe(reducedMotion = false) {
     visible:()=>run.children.filter(item=>!item.hidden)};
 }
 
-test('The bar flips one linked announcement upward every seven seconds and pauses on demand',()=>{
+test('The bar includes older announcements and flips one upward every seven seconds',()=>{
   const view=loadStripe();
   assert.equal(view.visible().length,1);
   assert.equal(view.controls.hidden,false);
