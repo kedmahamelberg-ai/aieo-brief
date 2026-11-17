@@ -9,14 +9,11 @@
   if (!stripe || !run || !controls || !next || !pause || !window.BriefGovernmentOrder) return;
 
   const links = [...run.querySelectorAll('a[data-key]')];
-  const parts = new Intl.DateTimeFormat('en-CA', {timeZone:'Europe/Amsterdam',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
-  const part = name => parts.find(x => x.type === name).value;
-  const today = `${part('year')}-${part('month')}-${part('day')}`;
-  const weekly = window.BriefGovernmentOrder.week(links.map(node => ({key:node.dataset.key,date:node.dataset.date,node})), today);
+  const announcements = links.map(node => ({key:node.dataset.key,node}));
   let previous = [];
   try { const saved = JSON.parse(localStorage.getItem('brief-government-stripe-order') || '[]'); if (Array.isArray(saved)) previous = saved; } catch (_) {}
   const random = () => crypto.getRandomValues(new Uint32Array(1))[0] / 4294967296;
-  const selected = window.BriefGovernmentOrder.shuffle(weekly.items, previous, random);
+  const selected = window.BriefGovernmentOrder.shuffle(announcements, previous, random);
   if (!selected.length) { stripe.hidden = true; return; }
   run.replaceChildren(...selected.map(item => item.node));
   try { localStorage.setItem('brief-government-stripe-order', JSON.stringify(selected.map(item => item.key))); } catch (_) {}
