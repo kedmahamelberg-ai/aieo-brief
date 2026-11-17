@@ -8,14 +8,14 @@ from unittest.mock import Mock
 
 
 class NewsSourceSupport(unittest.TestCase):
-    def test_public_chart_reads_all_captions_and_rejects_changed_content(self):
+    def test_public_chart_captions_cannot_replace_a_complete_article(self):
         import hashlib
         from source_supplements import verified_text
         response=Mock(text='<script>notExecuted(); {"caption_text":"<p>First chart.</p>","caption_text":"<p>Second chart.</p>"}</script>')
         response.raise_for_status.return_value=None
         expected='First chart.\nSecond chart.'
         source={'source_url':'https://flo.uri.sh/story/3852596/embed','evidence_sha256':hashlib.sha256(expected.encode()).hexdigest()}
-        self.assertEqual(verified_text(source,get=lambda *a,**k:response),expected)
+        self.assertEqual(verified_text(source,get=lambda *a,**k:response),'')
         self.assertEqual(verified_text({**source,'evidence_sha256':'0'*64},get=lambda *a,**k:response),'')
         self.assertEqual(verified_text({**source,'source_url':'https://flo.uri.sh/private/3852596'},get=lambda *a,**k:response),'')
 
