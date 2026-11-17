@@ -6,17 +6,19 @@
 .government-stripe-inner{max-width:1220px;min-height:58px;margin:auto;padding:7px 28px;display:flex;align-items:center;gap:12px}
 .government-stripe-window{flex:1;min-width:0}
 .government-stripe-item{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;color:#fff;font-size:1rem;line-height:1.35}
+.government-stripe-item[hidden],.government-stripe-controls[hidden]{display:none}
 .government-stripe-item strong{color:#a3e8da;font-weight:700}
 .government-stripe-item:hover{text-decoration:underline;text-underline-offset:3px}
-.government-stripe-item.is-entering{animation:government-stripe-reveal .35s ease-out both}
+.government-stripe-item.is-leaving{animation:government-stripe-leave .22s ease-in both}
+.government-stripe-item.is-entering{animation:government-stripe-enter .42s ease-out both}
 .government-stripe-controls{display:flex;align-items:center;gap:4px;flex:none}
-.government-stripe-position{min-width:2.3rem;text-align:center;font-size:.72rem;color:#e4f0f2;font-variant-numeric:tabular-nums}
 .government-stripe-controls button{min-width:44px;min-height:44px;padding:5px 8px;border:1px solid #a7bdc8;background:transparent;color:#fff;font-size:.875rem;font-weight:700}
 .government-stripe-controls button:hover{background:#25485c}
 .government-stripe a:focus-visible,.government-stripe button:focus-visible{outline:3px solid #fff;outline-offset:2px}
-@keyframes government-stripe-reveal{from{opacity:.25;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:720px){.government-stripe-inner{padding:7px 20px;gap:8px}.government-stripe-position{display:none}}
-@media(prefers-reduced-motion:reduce){.government-stripe-item.is-entering{animation:none}}
+@keyframes government-stripe-leave{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-10px)}}
+@keyframes government-stripe-enter{from{opacity:.3;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:720px){.government-stripe-inner{padding:7px 20px;gap:8px}}
+@media(prefers-reduced-motion:reduce){.government-stripe-item.is-entering,.government-stripe-item.is-leaving{animation:none}}
 @media(prefers-reduced-motion:no-preference){.reading-progress{transition:width .12s linear}}
 @media print{.navigation,.masthead-actions,.story-actions,.reading-options,.conversation,.article-rail,.consent-banner,.site-footer,.preview-note{display:none!important}.article-layout{display:block}.page-shell{max-width:none;padding:0}a{text-decoration:underline}.evidence-detail>ol{display:block}}
 
