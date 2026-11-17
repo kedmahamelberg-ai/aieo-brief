@@ -48,7 +48,7 @@ def assess_body(row: dict[str, Any], *, language: str = "") -> dict[str, Any]:
     if len(body) < 500 and re.search(r"(?:新华社)?音视频部制作\s*$", body):
         flags.append("video_caption_only")
     basis = str(row.get("content_basis") or "")
-    if basis in {"headline_only", "headline_and_snippet", "article_summary", "abstract_only", "discovery_snippet"}:
+    if basis in {"headline_only", "headline_and_snippet", "article_summary", "abstract_only", "discovery_snippet", "chart_captions", "video_introduction", "video_caption_only"}:
         flags.append("partial_source")
     return {"quality_version": QUALITY_VERSION, "usable_complete_body": not flags,
             "flags": flags, "body_sha256": actual_hash if body else None,
