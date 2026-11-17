@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-16T14:00:00+00:00",
-  "last_checked_at": "2026-11-16T19:55:37.791474+00:00",
+  "monitor_as_of": "2026-11-17T14:00:00+00:00",
+  "last_checked_at": "2026-11-17T17:40:37.437656+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1335,6 +1335,28 @@
       "summary": "After the Dublin summit, Robert Fico welcomed plans for an EU delegation to join talks with Ukraine, Russia and the United States, while noting agreement would be difficult. Leaders also discussed strict AI regulation and potential applications in several sectors.",
       "body_paragraphs": [],
       "input_fingerprint": "2fc1d33aafeeb25c1496fbfad614d0caf9d4c53e73089e401cd635da3df07d54"
+    },
+    "3d5b00da6913e879ed97": {
+      "id": "3d5b00da6913e879ed97",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "https://www.gov.uk/government/speeches/pm-speech-at-the-lord-mayors-banquet-16-november-2026",
+      "date": "2026-11-16",
+      "headline": "UK PM backs Ukraine, stronger European defence, AI safeguards and a pragmatic EU deal amid wider…",
+      "summary": "The Prime Minister announced a Makerfield Test prioritising less well-off communities, urged values-based foreign policy and stronger international ties, proposed practical UK-EU changes, and called for UK-led global AI safeguards.",
+      "body_paragraphs": [],
+      "input_fingerprint": "b30b39c6bdcb33fc28003e4b79b347b88b6b3b625532455934917d9fcd72697b"
+    },
+    "9b77279893d759e215ed": {
+      "id": "9b77279893d759e215ed",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/kanat-bozymbaev-onirlerdin-kysky-mausymga-dayyndygyn-zhane-koktemgi-su-taskyny-kaupi-zhogary-kezenge-dayyndyk-barysyn-tekserdi-32121",
+      "date": "2026-11-16",
+      "headline": "Kazakhstan reports winter and flood risks and directs agencies to strengthen emergency and infrastructure preparations.",
+      "summary": "Deputy Prime Minister Kanat Bozumbayev reviewed regional winter readiness and preparations for the 2027 spring floods. He assigned agencies and regional administrations tasks on snow clearance, emergency response, flood defenses, forecasting, reservoir monitoring and readiness exercises.",
+      "body_paragraphs": [],
+      "input_fingerprint": "17c3ffb7f9994cca48c4e931ece7447680603d2b89762ae5e820134869fb2648"
     }
   },
   "checked": {
@@ -1453,7 +1475,9 @@
     "53bed82538ab94c28daf": "02fca7e213a33a0052c43b31bf0c9407f4c66004bb38561a232a2429735a9b15",
     "01fe81c9712582479724": "cb2e8f847a6b6dd07d35c87b238ae694f7c99de0d6f612109aba6af3410c53e6",
     "c98e9ffe717fbe342424": "4a4f04a2627da0728e530a3d1ca73aa4d97854710849c1db30eeea7646c80752",
-    "44c30360c6e8388a859a": "2fc1d33aafeeb25c1496fbfad614d0caf9d4c53e73089e401cd635da3df07d54"
+    "44c30360c6e8388a859a": "2fc1d33aafeeb25c1496fbfad614d0caf9d4c53e73089e401cd635da3df07d54",
+    "3d5b00da6913e879ed97": "b30b39c6bdcb33fc28003e4b79b347b88b6b3b625532455934917d9fcd72697b",
+    "9b77279893d759e215ed": "17c3ffb7f9994cca48c4e931ece7447680603d2b89762ae5e820134869fb2648"
   },
   "retry": {},
   "pending": 0,
