@@ -1,0 +1,1833 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "review_date": "2026-11-17",
+  "scope": "All 67 news stories in the current 2026-W46 edition; all research summaries dated 9–15 November also reviewed. Government copy and cultural source quotations retain their separate provenance.",
+  "reviewed_news_keys": [
+    "event:ff271f43-be97-4765-b008-5a174f5bbfc6",
+    "event:bfa95ad4-abbd-4e3c-ab3e-308ea3842047",
+    "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a",
+    "event:51020e2a-9919-402c-9010-583d9a28d8ee",
+    "event:2f541b92-f630-49a6-a9dc-d1ea14080160",
+    "event:29c16df4-acc1-48fe-952e-06410540b601",
+    "event:f156dc63-9ac8-497a-bda3-df66cc863209",
+    "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41",
+    "event:76eeb317-1d8e-44ed-ae6c-ee9950003d60",
+    "event:5fa42954-e42f-42e3-ae47-cdae7456913d",
+    "event:1237de0d-08f3-4729-9fad-c022059fd52f",
+    "event:05184f8c-7beb-4705-95e2-93abf558e6af",
+    "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa",
+    "event:f4540068-4f71-4f18-b728-f8b7453950c5",
+    "event:e9e93a18-b666-4fce-93d6-31e611cc0dd3",
+    "event:e697475a-3f68-4e04-a70b-3040bd1ea405",
+    "event:e1ea62ac-6bb5-4864-8ab1-c73343d5e879",
+    "event:5ed7cfd9-5b88-4f37-9eb1-101c4061f265",
+    "event:31727a7b-385e-49fd-aa54-656a9b1cc483",
+    "event:2a21eff3-4581-4b48-9639-71b63a5f0300",
+    "event:04bb1819-6360-4109-84b4-a282a619191d",
+    "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
+    "event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
+    "event:81d30770-8588-4aac-88a2-6463131a6862",
+    "event:817d1d24-3413-4254-837b-51235018c279",
+    "event:7ff8c2d3-3fa2-4fe2-a81f-80124678db81",
+    "event:7aaee0cd-4185-413e-8b48-696783635021",
+    "event:5fb0131d-6087-4785-bde9-77d853e6e5c8",
+    "event:52cd6bca-5051-4d1e-875c-173c8abca61c",
+    "event:42d68c56-8c99-4616-98bd-c137c6554bb4",
+    "event:1e3660cd-11f9-4261-b5e8-fe929476364a",
+    "event:1b9adebc-cabc-4d55-bb74-0332612915a9",
+    "event:1000c6be-1e4b-487d-a990-7d87fe76533c",
+    "event:07a3fcca-1961-474c-9abf-cc9e8635cab8",
+    "event:d8b84f4b-745a-4d6f-9dae-3367c64c0c25",
+    "event:bac7ac90-b5c1-4840-82b2-4d187b6812f1",
+    "event:5f2a1929-fb39-4966-b241-2242ac1bfd1b",
+    "event:504fe2f4-4dea-47cd-b779-bf7858e0acbb",
+    "event:2fa9457d-6d68-4473-998d-cbbd126b6ab7",
+    "event:ff4786bf-c811-4627-833f-9b6ecc259f87",
+    "event:ea2fea61-ca7a-4de5-ba6b-2b427fe10d26",
+    "event:cfc181ac-f273-486b-a8db-5dc2010cc436",
+    "event:c07e5661-1a95-43e3-ba95-4269c3f40957",
+    "event:bda66ee1-3913-4d83-93f8-612d50c56d48",
+    "event:a8cdc3a3-07f2-4018-88ed-53fa68ead705",
+    "event:a717138d-2d4c-4226-9816-50eeff397f43",
+    "event:a43fac3a-f99e-4bbd-8b2f-3d05054d7d6a",
+    "event:87ee4ebb-3ad2-4728-9656-1c430d0b2f4d",
+    "event:76fe76bf-bb59-46c4-be92-739c56ae84e9",
+    "event:6dbd36bd-a7ea-4fab-ac08-5e42feb3758e",
+    "event:6856a0c9-ce44-4248-b9ad-81bef5a5dcf5",
+    "event:4605906d-0bcc-4d0d-a416-37cf0002a2b1",
+    "event:44e9348e-b219-47e6-8a1b-4c3a26088433",
+    "event:2d1153b6-50e0-43ab-bbcf-5baa58c4afeb",
+    "event:1342ae54-2767-4826-9ca0-eda00fc863e1",
+    "event:0c87435f-3cb8-4ae4-9b12-1fedf35e649e",
+    "event:07fb392a-4a27-43d1-9bdf-186dbe748e5d",
+    "event:06a5c958-6e9a-4099-a2f9-bf80b2c17f53",
+    "event:f99095a8-2571-41f6-9c86-158b99dbdc5e",
+    "event:ef9fbd34-3150-4135-b7fa-68ebcd4eae9d",
+    "event:b6224960-ef80-4815-9f08-46cdc26740d4",
+    "event:8fe96ae7-0c0d-42e9-b154-0ff4d8a9ce68",
+    "event:82172112-a095-48fc-8b21-0379c0dace7b",
+    "event:76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
+    "event:6b8118f7-08c9-450a-a3a1-195778222239",
+    "event:0747d38f-7bb0-4c09-95e5-58d71445a866",
+    "event:a092060b-78ae-46e7-9d29-fcac40c9bcdd"
+  ],
+  "news": [
+    {
+      "key": "event:bfa95ad4-abbd-4e3c-ab3e-308ea3842047",
+      "source_urls": [
+        "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "Based on a single Guardian article and its quotes; does not claim results beyond the source content.",
+        "why_it_matters": "The piece highlights tensions between AI investment and protecting creators; it also points to environmental and property-right concerns that could shape future policy and industry moves.",
+        "body_paragraphs": [
+          "The article centers on a debate about how AI uses music, books, and journalism. It quotes McLachlan saying artists’ rights must be protected and that the state should not clear the way for profits at the expense of beauty. It also notes that some AI firms want legal certainty before investing in Australia and mentions an opt-out idea to limit data use.",
+          "Another paragraph notes that datacentres could raise emissions and power costs, and that lawmakers worry about balancing growth with environment and culture. It also records calls for a sustainable approach to building sovereign AI capability."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "why_it_matters": "Australia’s AI policy debate pits investment ambitions against artists’ copyright, electricity costs and environmental concerns.",
+        "body_paragraphs": [
+          "McLachlan says artists’ rights over music, books and journalism must be protected. Some AI firms want legal certainty before investing in Australia, while an opt-out proposal would let creators limit use of their work.",
+          "Lawmakers also raised concerns that data centres could increase emissions and electricity costs, calling for a sustainable approach to developing Australian AI."
+        ]
+      }
+    },
+    {
+      "key": "event:96b6f55c-21d2-4e77-8101-b9b71551fd2a",
+      "source_urls": [
+        "https://fddi.fudan.edu.cn/33/a6/c18965a799654/page.htm"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The article presents an argument and describes initiatives; it does not provide measured evidence that these efforts have improved outcomes.",
+        "headline": "Fudan scholar says China’s AI rule-making could widen cooperation, but shared benefits remain an argument",
+        "deck": "Chen Zhimin’s article describes efforts to shape rules for how AI is developed and used across countries, with more participation for developing nations.",
+        "why_it_matters": "The article argues that countries could better align their AI rules and standards. It also calls for developing nations to have more chances to shape those rules and share in AI’s opportunities.",
+        "for_ai": "Shared standards and cooperation could lower barriers to developing and using AI, in the scholar’s proposal."
+      },
+      "after": {
+        "limitation": "",
+        "headline": "Fudan scholar proposes wider international cooperation on AI rules",
+        "deck": "Chen Zhimin calls for developing countries to have more say in AI rules and access to its resources.",
+        "why_it_matters": "Chen argues that aligning AI rules and standards could give developing countries more influence and a greater share of the opportunities.",
+        "for_ai": "Shared standards could lower barriers to developing and using AI, under Chen’s proposal."
+      }
+    },
+    {
+      "key": "event:51020e2a-9919-402c-9010-583d9a28d8ee",
+      "source_urls": [
+        "http://paper.ce.cn/pc/content/202611/15/content_341891.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The reported fruit-sorting accuracy is attributed to the company manager."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:29c16df4-acc1-48fe-952e-06410540b601",
+      "source_urls": [
+        "https://www.thenews.coop/co-operative-ai-a-co-operative-vision-for-a-fairer-more-inclusive-and-democratic-artificial-intelligence"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "headline": "Co-operative groups launch artificial intelligence plan; a shared framework for trials is still needed",
+        "why_it_matters": "The organisers say co-operatives can help shape the rules for artificial intelligence and how its value is shared. The article says a shared framework is still needed to guide practical experiments.",
+        "body_paragraphs": [
+          "The article argues that co-operative principles could offer another way to shape artificial intelligence (AI). It points to concerns including communities bearing costs for resources used to develop AI, workers doing training tasks in insecure conditions, and users not being properly informed about how platforms use their data.",
+          "The Rome bootcamp connected people working in co-operative research, education, technology and regional networks. The article describes it as an early step towards a shared vision; it says a common framework is still needed before practical experiments can advance."
+        ]
+      },
+      "after": {
+        "headline": "Co-operative groups launch a programme to shape artificial intelligence together",
+        "why_it_matters": "The organisers want co-operatives to help set AI rules and share its value more widely. A common framework for practical trials is still being developed.",
+        "body_paragraphs": [
+          "Co-operative ownership is proposed as a response to concerns about the costs communities bear, insecure work on AI training tasks and unclear use of personal data.",
+          "The Rome bootcamp connected people working in co-operative research, education, technology and regional networks to begin developing a shared approach."
+        ]
+      }
+    },
+    {
+      "key": "event:c116ab7b-785b-43f3-8083-0f0bd4a3fe41",
+      "source_urls": [
+        "https://nationalmagazine.ca/en-ca/articles/hot-topics-in-law/2026/why-canada-needs-ai-regulation-in-criminal-justice"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The article does not say whether governments will adopt the recommendations.",
+        "headline": "Ontario law commission urges criminal-justice AI rules, but adoption remains undecided",
+        "why_it_matters": "Police and courts in Canada already use AI for tasks such as facial recognition, police reports and legal research. Whether governments will put the commission’s recommendations into effect remains an open question."
+      },
+      "after": {
+        "limitation": "",
+        "headline": "Ontario law commission proposes 29 changes to criminal-justice AI rules",
+        "why_it_matters": "Police and courts in Canada already use AI for facial recognition, police reports and legal research. The proposals would make that use more visible and accountable."
+      }
+    },
+    {
+      "key": "event:76eeb317-1d8e-44ed-ae6c-ee9950003d60",
+      "source_urls": [
+        "https://www.lillemetropole.fr/evenements/cafe-ia-comprendre-lintelligence-artificielle-au-quotidien-1386712"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The event invites people to explore how artificial intelligence works and where it is used in daily life. The announcement describes plans, not results."
+      },
+      "after": {
+        "why_it_matters": "The event invites people to explore how artificial intelligence works and where it is used in daily life."
+      }
+    },
+    {
+      "key": "event:1237de0d-08f3-4729-9fad-c022059fd52f",
+      "source_urls": [
+        "https://www.ibm.com/fr-fr/think/insights/3-myths-hindering-your-business-from-adopting-generative-ai"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "IBM presents its own argument and product examples.",
+        "why_it_matters": "IBM’s advice is to consider available tools, staff training and safeguards together. The argument comes from a supplier promoting its own products and examples.",
+        "body_paragraphs": [
+          "The article describes Make Music Count using watsonx for personalized mathematics learning. It also presents Ovum Health’s use of the technology to answer fertility questions with medically validated information.",
+          "These examples support IBM’s case for trying the technology in a defined business task. They are examples presented by IBM, rather than an independent comparison of products."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "why_it_matters": "IBM recommends combining available tools with staff training and safeguards when choosing a first business use.",
+        "body_paragraphs": [
+          "IBM describes Make Music Count using watsonx for personalized mathematics learning and Ovum Health using it to answer fertility questions with medically validated information.",
+          "The examples support the supplier’s case for trying its technology on a defined business task."
+        ]
+      }
+    },
+    {
+      "key": "event:e697475a-3f68-4e04-a70b-3040bd1ea405",
+      "source_urls": [
+        "https://ejewishphilanthropy.com/jews-are-having-the-wrong-conversation-about-artificial-intelligence"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The article presents Hollander’s argument and recommendations, not a study measuring their effects."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:e1ea62ac-6bb5-4864-8ab1-c73343d5e879",
+      "source_urls": [
+        "https://siliconangle.com/2026/11/13/mirendil-raises-1b-in-funding-to-speed-up-ai-model-development"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The development figures and capabilities are claims attributed to Mirendil.",
+        "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing. Those claims concern its own tools and projects."
+      },
+      "after": {
+        "limitation": "",
+        "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing."
+      }
+    },
+    {
+      "key": "event:5ed7cfd9-5b88-4f37-9eb1-101c4061f265",
+      "source_urls": [
+        "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1213885&sid=11",
+        "https://m.sohu.com/a/1101596080_122014422"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "These are planned steps and targets, not reported results.",
+        "for_humans": "The plan aims to improve housing services, construction safety and city management through AI; these are intended outcomes."
+      },
+      "after": {
+        "limitation": "",
+        "for_humans": "Shanghai aims to improve housing services, construction safety and city management through AI."
+      }
+    },
+    {
+      "key": "event:2a21eff3-4581-4b48-9639-71b63a5f0300",
+      "source_urls": [
+        "https://www.psu.edu/news/engineering/story/qa-leveraging-artificial-intelligence-propel-engineering-education"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The comparison study is planned; the source reports no results from it."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:7ff8c2d3-3fa2-4fe2-a81f-80124678db81",
+      "source_urls": [
+        "https://www.cpp.edu/news/content/2026/11/miso-robotics-brings-hands-on-robotics-artificial-intelligence-and-analytics-learning-to-cal-poly-pomona/index.shtml"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The university describes its partnership and planned learning activities; the graduate research findings are not reported.",
+        "body_paragraphs": [
+          "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering use and repairs.",
+          "Graduate teams are studying information from the kitchen, including recorded operating data and video, to examine how the robot and people work together. The announcement describes that research rather than reporting its results."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "body_paragraphs": [
+          "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering use and repairs.",
+          "Graduate teams are studying information from the kitchen, including recorded operating data and video, to examine how the robot and people work together."
+        ]
+      }
+    },
+    {
+      "key": "event:7aaee0cd-4185-413e-8b48-696783635021",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/media/implement-a-generative-ai-andon-cord-for-live-media-workflows-on-aws"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is an implementation guide, not a report measuring a deployed system’s performance."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:5fb0131d-6087-4785-bde9-77d853e6e5c8",
+      "source_urls": [
+        "https://www.news.cn/info/20261112/586da0794ff440b0a43199c9ebf1ab27/c.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The organizational argument is Li’s view; the reported internal figures come from Baidu.",
+        "body_paragraphs": [
+          "Baidu presented internal figures as early support for the approach. It said daily active automated assistants rose from about 5,000 to 37,000, while completed tasks increased from 84,000 a week to more than a million.",
+          "The event also included announcements about new products and computing equipment. Li’s broader claims about how jobs will change are predictions, while the internal usage figures are Baidu’s own account."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "body_paragraphs": [
+          "Baidu presented internal figures as early support for the approach. It said daily active automated assistants rose from about 5,000 to 37,000, while completed tasks increased from 84,000 a week to more than a million.",
+          "The event also included announcements about new products and computing equipment."
+        ]
+      }
+    },
+    {
+      "key": "event:52cd6bca-5051-4d1e-875c-173c8abca61c",
+      "source_urls": [
+        "https://www.weka.fr/actualite/achats/article_juridique/l-intelligence-artificielle-dans-les-marches-publics-securiser-son-achat-eviter-les-pieges-230216"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The source is a legal analysis with recommendations; it does not report measured results from AI use in public procurement.",
+        "what_happened": "Legal writer Pierre-Ange Zalcberg argues that public agencies need to manage AI purchases carefully. The article says rules for AI used in legally listed high-risk areas,such as hiring, education and essential public services,were delayed until December 2027, or August 2028 for AI built into products already covered by industry rules. Other duties, including telling people when they interact with a chatbot, remain in force.",
+        "body_paragraphs": [
+          "The article recommends checking whether ordinary software could meet the need, mapping the data an AI system will use, and setting contract terms for data use, deletion, performance checks and environmental measures.",
+          "Zalcberg says agencies should not put confidential bids into public chatbots. If AI helps assess bids, agencies should keep records of the instructions given to the tool, its results and human corrections."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "what_happened": "Legal writer Pierre-Ange Zalcberg argues that public agencies need to manage AI purchases carefully. In his account, rules for AI used in legally listed high-risk areas, such as hiring, education and essential public services, were delayed until December 2027, or August 2028 for AI built into products already covered by industry rules. Other duties, including telling people when they interact with a chatbot, remain in force.",
+        "body_paragraphs": [
+          "Zalcberg recommends checking whether ordinary software could meet the need, mapping the data an AI system will use, and setting contract terms for data use, deletion, performance checks and environmental measures.",
+          "Zalcberg says agencies should not put confidential bids into public chatbots. If AI helps assess bids, agencies should keep records of the instructions given to the tool, its results and human corrections."
+        ]
+      }
+    },
+    {
+      "key": "event:1e3660cd-11f9-4261-b5e8-fe929476364a",
+      "source_urls": [
+        "https://www.archimag.com/veille-documentation/2026/11/12/ia-generative-practicia-enquete-pratiques-professionnels-information"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is a survey invitation, with no results reported.",
+        "why_it_matters": "The researchers want to understand working practices and people’s views of the technology. The announcement invites responses; it does not present survey findings.",
+        "for_ai": "The questionnaire asks how AI is used at work; findings about its effects have not yet been published."
+      },
+      "after": {
+        "limitation": "",
+        "why_it_matters": "The researchers want to understand working practices and people’s views of the technology.",
+        "for_ai": "PracticIA is investigating how AI tools fit into information professionals’ everyday work."
+      }
+    },
+    {
+      "key": "event:d8b84f4b-745a-4d6f-9dae-3367c64c0c25",
+      "source_urls": [
+        "http://www.news.cn/tech/20261111/fb0f1dda8c164bac87416e97527575fb/c.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The scale and performance figures are supplied by Runjian.",
+        "why_it_matters": "The company describes a division of work in which software handles repeatable processes and specialists focus on judgments and complex problems. Its reported improvements are company claims."
+      },
+      "after": {
+        "limitation": "",
+        "why_it_matters": "The company describes a division of work in which software handles repeatable processes and specialists focus on judgments and complex problems."
+      }
+    },
+    {
+      "key": "event:bac7ac90-b5c1-4840-82b2-4d187b6812f1",
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/accelerating-generative-ai-delivery-with-reusable-assets"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The reported results are AWS’s descriptions of specific customer projects.",
+        "body_paragraphs": [
+          "The catalog includes components for voice and text customer support, document processing, and AI agents,software designed to carry out tasks. AWS says the assets are reviewed for quality and security before publication and maintained over time.",
+          "In AWS’s account, DoorDash used one asset for a voice-operated customer support system, while Ricoh used another to classify and extract information from documents. AWS reports that Ricoh cut engineering time per deployment by more than 90 percent and reduced onboarding from four to six weeks to two or three days."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "body_paragraphs": [
+          "The catalog includes components for voice and text customer support, document processing, and AI agents, software designed to carry out tasks. AWS says the assets are reviewed for quality and security before publication and maintained over time.",
+          "In AWS’s account, DoorDash used one asset for a voice-operated customer support system, while Ricoh used another to classify and extract information from documents. AWS reports that Ricoh cut engineering time per deployment by more than 90 percent and reduced onboarding from four to six weeks to two or three days."
+        ]
+      }
+    },
+    {
+      "key": "event:504fe2f4-4dea-47cd-b779-bf7858e0acbb",
+      "source_urls": [
+        "https://www.news.cn/world/20261111/5b97b3a052984dd08f787aba69cc6d8d/c.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is a conference report describing demonstrations and participants’ views.",
+        "why_it_matters": "The report examines efforts to move artificial intelligence from screens into physical work. A co-founder of delivery-robot company Starship discusses how Chinese and European companies could complement one another.",
+        "body_paragraphs": [
+          "The wheeled robot combines visual information, language and movement to guide its actions. The report presents it as an exploration of practical work in real settings.",
+          "A discussion about downloadable AI models covered data management, computing costs and efficiency. The report also covered a flying-car display as a separate transport development."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "why_it_matters": "The demonstrations explore moving artificial intelligence from screens into physical work. A co-founder of delivery-robot company Starship discusses how Chinese and European companies could complement one another.",
+        "body_paragraphs": [
+          "The wheeled robot combines visual information, language and movement to guide its actions. Its intended uses include practical work in shops and industry.",
+          "A discussion about downloadable AI models covered data management, computing costs and efficiency. Other displays included a flying car."
+        ]
+      }
+    },
+    {
+      "key": "event:ff4786bf-c811-4627-833f-9b6ecc259f87",
+      "source_urls": [
+        "https://www.cnas.org/press/press-release/cnas-launches-ai-policy-lab"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is CNAS’s announcement of its own research plans.",
+        "body_paragraphs": [
+          "The announcement identifies safety, economic competition and use of AI by armed forces among its research priorities. It also lists openings for research, editing, operations and technical work.",
+          "CNAS presents the lab as an expansion of its existing work. The announcement sets out the lab’s intended activities rather than new research findings."
+        ],
+        "for_ai": "The lab will study AI safety, competition, computing resources and military use; its launch does not itself change AI rules."
+      },
+      "after": {
+        "limitation": "",
+        "body_paragraphs": [
+          "The announcement identifies safety, economic competition and use of AI by armed forces among its research priorities. It also lists openings for research, editing, operations and technical work.",
+          "CNAS presents the lab as an expansion of its existing work."
+        ],
+        "for_ai": "The lab will study AI safety, economic competition, computing resources and military use."
+      }
+    },
+    {
+      "key": "event:cfc181ac-f273-486b-a8db-5dc2010cc436",
+      "source_urls": [
+        "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202611/t20261110_4939920.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The source describes competition results and Beijing’s plans, but does not report whether competitors later used these skills at work."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:c07e5661-1a95-43e3-ba95-4269c3f40957",
+      "source_urls": [
+        "https://www.abdn.ac.uk/news/26461"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The supplied university report concerns an opinion in ongoing proceedings, not a final court judgment.",
+        "deck": "The university reports a citation in a European court adviser’s opinion, rather than a court ruling.",
+        "body_paragraphs": [
+          "Poesen studies how artificial intelligence relates to laws that apply when a dispute involves different countries. The university says he is also preparing a book on that subject in the European Union and United Kingdom.",
+          "The reported development is a citation in Maciej Szpunar’s opinion. The source does not report a final judgment deciding the case."
+        ],
+        "for_ai": "AI copyright questions are under consideration; the cited court adviser’s opinion does not settle the case."
+      },
+      "after": {
+        "limitation": "A court adviser’s opinion informs the proceedings but is not a final judgment.",
+        "deck": "A European court adviser cited Michiel Poesen’s work on AI and cross-border law.",
+        "body_paragraphs": [
+          "Poesen studies how artificial intelligence relates to laws that apply when a dispute involves different countries. The university says he is also preparing a book on that subject in the European Union and United Kingdom."
+        ],
+        "for_ai": "The ongoing case examines copyright questions involving content-generating AI."
+      }
+    },
+    {
+      "key": "event:bda66ee1-3913-4d83-93f8-612d50c56d48",
+      "source_urls": [
+        "https://aimultiple.com/risks-of-generative-ai"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is AIMultiple's overview of risks and possible responses; it does not itself report a new study measuring their effects.",
+        "deck": "The article describes ways AI can mislead, expose data or affect work, and lists steps organizations can take to reduce risks.",
+        "what_happened": "AIMultiple's article sets out ten risks linked to generative AI, including inaccurate answers, bias, data leaks, copyright disputes, deepfakes, possible job losses and environmental costs. It also describes steps such as checking AI answers against trusted sources and monitoring systems for bias or data leaks.",
+        "why_it_matters": "The risks described can affect people whose data or images are exposed, and workers in routine roles that may be automated. The article also says AI-made media can be hard to tell apart from human-made work.",
+        "body_paragraphs": [
+          "The article says AI systems learn patterns from large collections of data, but they can still give plausible-sounding answers that are wrong. It recommends checking answers with trusted sources, especially for important decisions, and says diverse training data and regular reviews can help address bias.",
+          "Other concerns include AI-made images or audio used to mislead or harass people, and copyright disputes over training material or generated work. The article also points to possible automation of routine jobs and the resources needed to train large AI models."
+        ]
+      },
+      "after": {
+        "limitation": "",
+        "deck": "AIMultiple outlines how AI can mislead, expose data and affect work, alongside steps to reduce those risks.",
+        "what_happened": "AIMultiple sets out ten risks linked to generative AI, including inaccurate answers, bias, data leaks, copyright disputes, deepfakes, possible job losses and environmental costs. It also describes steps such as checking AI answers against trusted sources and monitoring systems for bias or data leaks.",
+        "why_it_matters": "The risks described can affect people whose data or images are exposed, and workers in routine roles that may be automated. AI-made media can be hard to tell apart from human-made work.",
+        "body_paragraphs": [
+          "AI systems learn patterns from large collections of data, but they can still give plausible-sounding answers that are wrong. AIMultiple recommends checking answers with trusted sources, especially for important decisions, and says diverse training data and regular reviews can help address bias.",
+          "Other concerns include AI-made images or audio used to mislead or harass people, and copyright disputes over training material or generated work. AIMultiple also highlights possible automation of routine jobs and the resources needed to train large AI models."
+        ]
+      }
+    },
+    {
+      "key": "event:a43fac3a-f99e-4bbd-8b2f-3d05054d7d6a",
+      "source_urls": [
+        "https://www.theguardian.com/technology/2026/nov/10/australia-manadatory-reporting-openai-medicare-hack"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "These are announced plans and recommendations; the article does not establish that the proposed laws have been enacted."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:76fe76bf-bb59-46c4-be92-739c56ae84e9",
+      "source_urls": [
+        "https://www.lesoleil.com/actualites/education/2026/11/10/quatre-pistes-de-reflexion-sur-lintelligence-artificielle-et-les-universites-ABHKC67L25DYVNFFARSVASFYBQ"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The article reports discussion and survey findings presented at an event, not proof that a particular assessment method works."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:6856a0c9-ce44-4248-b9ad-81bef5a5dcf5",
+      "source_urls": [
+        "https://www.bfmtv.com/tech/intelligence-artificielle/ia-generative-face-a-un-affaiblissement-cognitif-des-experts-appellent-macron-a-mieux-proteger-les-utilisateurs_AD-202611100680.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The source reports the commission’s proposals, not their adoption or measured effects.",
+        "deck": "A nine-member commission urged President Emmanuel Macron to consider protections for users, including children; its recommendations have not been reported as adopted.",
+        "why_it_matters": "The commission says relying on AI for thinking and decisions could weaken people’s skills and autonomy. Its recommendations call for safeguards, but the source does not report that they have become rules."
+      },
+      "after": {
+        "limitation": "",
+        "deck": "A nine-member commission has proposed protections for users, including children, to President Emmanuel Macron.",
+        "why_it_matters": "The commission says relying on AI for thinking and decisions could weaken people’s skills and autonomy. It calls for safeguards to help people retain control."
+      }
+    },
+    {
+      "key": "event:4605906d-0bcc-4d0d-a416-37cf0002a2b1",
+      "source_urls": [
+        "https://carnegieendowment.org/research/2026/11/trust-but-verify-implementing-frontier-ai-policy-in-california-and-beyond"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is a policy analysis of implementation choices, not a finding that the law has already achieved its goals."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:44e9348e-b219-47e6-8a1b-4c3a26088433",
+      "source_urls": [
+        "https://www.psu.edu/news/bellisario-college-communications/story/faculty-member-addresses-artificial-intelligence"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The relationship account is a proposed theory; the profile does not report a test measuring its effects."
+      },
+      "after": {
+        "limitation": "The account of simulated relationships is a proposed theory."
+      }
+    },
+    {
+      "key": "event:2d1153b6-50e0-43ab-bbcf-5baa58c4afeb",
+      "source_urls": [
+        "https://blogs.lse.ac.uk/businessreview/2026/11/10/cop31-is-artificial-intelligence-a-threat-or-solution-to-climate-change"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "These are expert assessments and proposals, not a single measured estimate of artificial intelligence’s overall climate effect."
+      },
+      "after": {
+        "limitation": "The net climate effect remains uncertain because potential emissions savings must be weighed against growing resource use."
+      }
+    },
+    {
+      "key": "event:1342ae54-2767-4826-9ca0-eda00fc863e1",
+      "source_urls": [
+        "https://www.hmo.gov.cn/2026/11/10/ARTIyTq6snbbbXlRCQsK3lTs261110.shtml"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The article reports conference discussion and government plans, including requirements limited to selected departments."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:0c87435f-3cb8-4ae4-9b12-1fedf35e649e",
+      "source_urls": [
+        "https://www.cnas.org/careers/ai-engineer-senior-ai-engineer-ai-policy-lab"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The posting describes planned duties and goals, not results from tools already built.",
+        "headline": "CNAS seeks an engineer to build AI tools for policy researchers, not to conduct research"
+      },
+      "after": {
+        "limitation": "",
+        "headline": "CNAS seeks an engineer to build AI tools for policy researchers"
+      }
+    },
+    {
+      "key": "event:07fb392a-4a27-43d1-9bdf-186dbe748e5d",
+      "source_urls": [
+        "https://www.ama-assn.org/press-center/ama-press-releases/ama-artificial-intelligence-can-augment-physicians-don-t-call-it"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The source describes AMA policy and proposed legislation; it does not say the proposed laws have been enacted."
+      },
+      "after": {
+        "limitation": "The AMA has adopted the policy; its calls for legislation are proposals."
+      }
+    },
+    {
+      "key": "event:ef9fbd34-3150-4135-b7fa-68ebcd4eae9d",
+      "source_urls": [
+        "https://www.duffield.cornell.edu/from-fossils-to-artificial-intelligence-adam-stewarts-winding-path-through-science"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is a university profile of a researcher and his software project."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:8fe96ae7-0c0d-42e9-b154-0ff4d8a9ce68",
+      "source_urls": [
+        "https://www.idc.com/resource-center/blog/%E6%AD%A5%E5%85%A5agentic%E5%AE%89%E5%85%A8%E6%97%B6%E4%BB%A3%EF%BC%9Aidc-24%E9%A1%B9ai%E8%B5%8B%E8%83%BD%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF%E5%9B%BE%EF%BC%8C%E5%8B%BE%E5%8B%92"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "IDC presents a roadmap and forecasts, not proof that fully autonomous defence is already established."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:76b0b3fe-5908-4c17-b875-e6e27d5b23a8",
+      "source_urls": [
+        "https://sortir.besancon.fr/evenement/intelligence-artificielle-les-enjeux"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is an exhibition announcement, not a report of visitor outcomes.",
+        "for_ai": "The exhibition explains AI and its place in society; it does not announce a new AI system or business development."
+      },
+      "after": {
+        "limitation": "",
+        "for_ai": "The exhibition explores how AI works and its place in society."
+      }
+    },
+    {
+      "key": "event:0747d38f-7bb0-4c09-95e5-58d71445a866",
+      "source_urls": [
+        "https://ihedn.fr/lundis-de-lihedn/louis-perez-lintelligence-artificielle-militaire-irrigue-toute-la-chaine-de-decision"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is an interview presenting Perez’s arguments; it does not report measured outcomes from military AI use.",
+        "for_humans": "Military staff may rely on AI recommendations under pressure, while the source says responsibility for mistakes can be hard to establish."
+      },
+      "after": {
+        "limitation": "",
+        "for_humans": "Military staff may rely on AI recommendations under pressure, while Perez says responsibility for mistakes can be hard to establish."
+      }
+    },
+    {
+      "key": "event:a092060b-78ae-46e7-9d29-fcac40c9bcdd",
+      "source_urls": [
+        "https://www.aoshearman.com/en/insights/generative-ai-and-international-arbitration-the-road-to-efficiency-or-ruin"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This is an account of a professional panel, not a controlled measurement of arbitration costs or outcomes."
+      },
+      "after": {
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:2f541b92-f630-49a6-a9dc-d1ea14080160",
+      "source_urls": [
+        "https://www.atalayar.com/fr/reportages/femmes-espionnes-mata-hari-l-intelligence-artificielle/20261115192430230472.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "headline": "Atalayar traces how spies used personal ties, while noting key claims remain unproven",
+        "deck": "The article links a reported Nvidia controversy to a longer history of intelligence agencies using human relationships to seek information. It does not show that the latest suspicions were proven.",
+        "what_happened": "Atalayar reviews cases in which intelligence agencies used personal relationships to seek information or influence, from historical stories to modern espionage. It connects that history to reports that US officials suspect Alice Huang may have been recruited to help obtain information or access to restricted technology; the article says these suspicions have not been publicly proven.",
+        "why_it_matters": "The article argues that personal access can help intelligence agencies reach people and information that may otherwise be hard to obtain. It links the latest allegations to competition over advanced chips used in artificial intelligence, while noting that no public evidence shows trade secrets were obtained.",
+        "body_paragraphs": [
+          "The article describes several methods: building trust through romance, using social access to approach influential people, and secretly recording conversations. It also says espionage has not always depended on seduction, and cautions against reducing women spies to their appearance.",
+          "The article reports that Nvidia opened an independent inquiry into whether its leader was targeted by foreign intelligence. It says US agencies suspect Alice Huang may have been recruited by China’s Ministry of State Security, but that no public evidence shows she obtained trade secrets or that Jensen Huang knew of any covert activity."
+        ],
+        "for_humans": "Personal relationships can be exploited to obtain confidential information; the article distinguishes historical cases from unproven allegations.",
+        "for_ai": "The article does not establish that Nvidia’s trade secrets were obtained through the alleged relationship.",
+        "limitation": "The article says it has not been publicly shown that Alice Huang obtained trade secrets or that Jensen Huang knew of any covert activity."
+      },
+      "after": {
+        "headline": "From Mata Hari to AI chips: Atalayar examines espionage through personal ties",
+        "deck": "Atalayar connects historical espionage methods with allegations involving Nvidia and competition over advanced AI chips.",
+        "what_happened": "Atalayar examines how intelligence agencies have used personal relationships to seek information or influence. It connects that history with unproven allegations that US officials suspect Alice Huang was recruited to gain access to restricted technology.",
+        "why_it_matters": "Personal access can open routes to confidential information, placing the allegations within the wider competition over advanced chips used in AI.",
+        "body_paragraphs": [
+          "Historical examples include building trust through romance, approaching influential people in social settings and secretly recording conversations. The account also challenges the stereotype that women spies relied only on seduction.",
+          "Nvidia opened an independent inquiry into whether its leader was targeted by foreign intelligence, according to Atalayar."
+        ],
+        "for_humans": "Personal relationships can be exploited to obtain confidential information.",
+        "for_ai": "The allegations concern access to Nvidia’s technology amid competition over advanced AI chips.",
+        "limitation": "The allegations remain unproven. China rejects them; Atalayar cites no public evidence that Alice Huang obtained trade secrets or Jensen Huang knew of covert activity."
+      },
+      "full_source_review": {
+        "scope": "full_article",
+        "source_url": "https://www.atalayar.com/fr/reportages/femmes-espionnes-mata-hari-l-intelligence-artificielle/20261115192430230472.html",
+        "method": "Read complete public source, including historical sections and final conclusion."
+      }
+    },
+    {
+      "key": "event:5fa42954-e42f-42e3-ae47-cdae7456913d",
+      "source_urls": [
+        "https://www.jurist.org/news/2026/11/nonprofit-advocacy-groups-cite-dangers-sue-to-stop-development-of-artificial-intelligence"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "headline": "Five advocacy groups ask California court to halt AI development, alleging harm; no ruling is reported",
+        "deck": "The groups say AI systems cause harm and ask a judge to stop further development. Those claims have not been reported as court findings.",
+        "for_humans": "The advocacy groups allege serious harms, including risks to children, and seek court intervention; their claims are not a ruling.",
+        "limitation": "The report does not say whether the court has ruled on the request.",
+        "body_paragraphs": [
+          "The lawsuit names Anthropic, Google, Meta, OpenAI and SpaceX. The groups say the companies violated California law against unfair business practices.",
+          "The complaint cites warnings about AI risks from technology leaders. These statements and the groups’ claims are part of their case, not reported court findings."
+        ]
+      },
+      "after": {
+        "headline": "Five advocacy groups ask California court to halt further AI development",
+        "deck": "A lawsuit accuses technology companies of unlawful business practices and seeks an order stopping further development.",
+        "for_humans": "The advocacy groups allege serious harms, including risks to children, and seek court intervention.",
+        "limitation": "The request awaits a reported court decision; the accusations are the groups’ claims.",
+        "body_paragraphs": [
+          "The lawsuit names Anthropic, Google, Meta, OpenAI and SpaceX. The groups say the companies violated California law against unfair business practices.",
+          "The complaint cites warnings about AI risks from technology leaders. The groups use those statements to support their case."
+        ]
+      }
+    },
+    {
+      "key": "event:05184f8c-7beb-4705-95e2-93abf558e6af",
+      "source_urls": [
+        "https://www.ledevoir.com/economie/techno/1025009/medias-canadiens-pourront-poursuivre-openai-ontario"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "headline": "Ontario court lets Canadian publishers pursue OpenAI, but does not decide whether its training broke copyright law",
+        "deck": "The appeals court says Ontario can hear the case. The publishers’ accusations have not yet been decided.",
+        "limitation": "The court decided Ontario can hear the case; it did not decide whether OpenAI infringed copyright."
+      },
+      "after": {
+        "headline": "Ontario appeals court allows Canadian publishers’ copyright case against OpenAI to proceed",
+        "deck": "The publishers can pursue their claims over AI training in Ontario.",
+        "limitation": "The ruling settles where the case can be heard, leaving the copyright accusations to be decided."
+      }
+    },
+    {
+      "key": "event:fe16ebf1-7965-4bbc-a727-031fc716d4fa",
+      "source_urls": [
+        "https://www.journaldunet.com/intelligence-artificielle/1557921-face-a-l-ia-generative-les-outils-de-veille-strategique-ont-ils-encore-une-valeur-ajoutee"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The column’s argument is that trust in information depends not only on getting it quickly, but also on knowing where it came from.",
+        "body_paragraphs": [
+          "Marquant says users can describe what they want to monitor in everyday language, and AI can translate that request into technical settings. He also says some platforms can automatically prepare and send newsletters.",
+          "The column says recurring information can suit automation, but interpreting a competitor’s moves or spotting early warning signs still calls for people who understand the organization’s goals. It argues that specialist platforms can help users review sources and ask AI questions about a selected set of material."
+        ]
+      },
+      "after": {
+        "why_it_matters": "Marquant argues that trust in information depends not only on getting it quickly, but also on knowing where it came from.",
+        "body_paragraphs": [
+          "Marquant says users can describe what they want to monitor in everyday language, and AI can translate that request into technical settings. He also says some platforms can automatically prepare and send newsletters.",
+          "Marquant says recurring information can suit automation, but interpreting a competitor’s moves or spotting early warning signs still calls for people who understand the organization’s goals. Specialist platforms, in his view, can help users review sources and ask AI questions about a selected set of material."
+        ]
+      }
+    },
+    {
+      "key": "event:f4540068-4f71-4f18-b728-f8b7453950c5",
+      "source_urls": [
+        "https://news.nuist.edu.cn/info/1007/131945.htm"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "deck": "The report examines laboratories where results feed back into the design of further tests.",
+        "why_it_matters": "This goes beyond a machine repeating a fixed set of instructions. The report also describes decisions that remain with scientists and the need for safety rules.",
+        "limitation": "The report describes laboratory practice and interviewees’ claims, not proof that an experimental drug is safe or effective.",
+        "body_paragraphs": [
+          "At a Nanjing drug research company, robotic equipment follows experimental plans revised from earlier results. Researchers interviewed for the report distinguish this process from ordinary laboratory automation.",
+          "People still set research directions and oversee important decisions. The report discusses data quality, standards and safety as these laboratories move toward wider use."
+        ]
+      },
+      "after": {
+        "deck": "AI proposes laboratory tests, robots carry them out, and the results guide the next experiment.",
+        "why_it_matters": "These systems can revise experiments using earlier results. Scientists still choose research directions and oversee important safety decisions.",
+        "limitation": "The laboratory examples concern how experiments are run; they do not establish whether any resulting drug is safe or effective.",
+        "body_paragraphs": [
+          "At a Nanjing drug research company, robotic equipment follows experimental plans revised from earlier results. Researchers interviewed for the report distinguish this process from ordinary laboratory automation.",
+          "People still set research directions and oversee important decisions. Data quality, standards and safety remain concerns as these laboratories move toward wider use."
+        ]
+      }
+    },
+    {
+      "key": "event:e9e93a18-b666-4fce-93d6-31e611cc0dd3",
+      "source_urls": [
+        "https://www.indieshortsmag.com/news/2026/11/manchester-animation-festival-2026-winners-generative-ai-ban-2027",
+        "https://www.skwigly.co.uk/manchester-animation-festival-announces-2026-winners-and-bans-generative-ai-films-from-2027"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "The published rule focuses on the finished moving images. It does not automatically ban every use of AI during development or other production work, according to the source.",
+          "Festival director Steve Henderson said the policy reflects support for animation artists and craftspeople. Mamuka Tkeshelashvili directed When the Sea Was Calm, the 2026 Short Film Award winner."
+        ],
+        "limitation": "The source says the rule’s application to particular production methods may need further guidance."
+      },
+      "after": {
+        "body_paragraphs": [
+          "The published rule covers finished moving images, leaving its application to other production methods open to further guidance.",
+          "Festival director Steve Henderson said the policy reflects support for animation artists and craftspeople. Mamuka Tkeshelashvili directed When the Sea Was Calm, the 2026 Short Film Award winner."
+        ],
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:31727a7b-385e-49fd-aa54-656a9b1cc483",
+      "source_urls": [
+        "https://theboar.org/2026/11/can-artificial-intelligence-help-us-to-understand-the-gaming-habits-of-past-civilisations"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The team’s reconstruction suggests blocking games existed in ancient Rome, earlier than researchers had believed. The article says AI made it practical to test many rule sets, but notes that the method may not work as well for more complex games.",
+        "limitation": "The article says the method may not apply widely yet: more complex games and the social experience of playing can be difficult to represent in simulations.",
+        "body_paragraphs": [
+          "Crist used a system called Ludii to have AI agents play games based on more than 100 possible rule sets. The team removed rules that did not produce wear patterns like those on the board, narrowing the options before refining the game’s rules.",
+          "In the proposed game, one player has more counters and tries to block the other from moving. The player who stays free longest wins. The article says the method may be harder to use with more complex games, where simulated play can differ more from human play."
+        ]
+      },
+      "after": {
+        "why_it_matters": "The team’s reconstruction suggests blocking games existed in ancient Rome, earlier than researchers had believed. AI made it practical to compare many possible rule sets.",
+        "limitation": "More complex games and the social experience of playing are harder to represent in these simulations.",
+        "body_paragraphs": [
+          "Crist used a system called Ludii to have AI agents play games based on more than 100 possible rule sets. The team removed rules that did not produce wear patterns like those on the board, narrowing the options before refining the game’s rules.",
+          "In the proposed game, one player has more counters and tries to block the other from moving. The player who stays free longest wins."
+        ]
+      }
+    },
+    {
+      "key": "event:04bb1819-6360-4109-84b4-a282a619191d",
+      "source_urls": [
+        "https://www.epfl.ch/schools/ic/fr/education-fr/bachelor-fr/intelligence-artificielle"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "The first year shares foundations in mathematics, physics and programming with computer science. More specialized artificial intelligence teaching follows, alongside practical projects.",
+          "EPFL says the detailed study plan for the academic year 2027-2028 will be published in summer 2027. The page describes a planned degree, not results from students who have completed it."
+        ]
+      },
+      "after": {
+        "body_paragraphs": [
+          "The first year shares foundations in mathematics, physics and programming with computer science. More specialized artificial intelligence teaching follows, alongside practical projects.",
+          "EPFL says the detailed study plan for the academic year 2027-2028 will be published in summer 2027."
+        ]
+      }
+    },
+    {
+      "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
+      "source_urls": [
+        "https://www.letemps.ch/cyber/intelligence-artificielle/intelligence-artificielle-le-graphique-vertigineux-qui-materialise-les-craintes-d-une-bulle",
+        "https://flo.uri.sh/story/3852596/embed",
+        "https://www.kiplinger.com/investing/ai-bubble-how-valuations-may-be-distorted"
+      ],
+      "reason": "Owner explicitly requested an accessible replacement where full original access is unavailable. Read Kevin Webb’s complete November 9 column. Preserve the existing AI-finance story URL; replace attribution and both effect labels to match the new source. Original Le Temps and chart URLs remain in this audit.",
+      "before": {
+        "for_humans": "The chart measures model usage through OpenRouter, rather than outcomes for the people using those models.",
+        "headline": "OpenRouter chart shows rapid growth and a shift toward downloadable AI models",
+        "original_headline": "Artificial Intelligence: The dizzying graph that fuels fears of a bubble",
+        "deck": "The author’s public chart tracks processing volumes from January through October.",
+        "what_happened": "A public chart by Duc-Quang Nguyen shows weekly OpenRouter traffic rising from 6,400 billion tokens, the units used to count text processed, in January to 194,000 billion in late October. It describes that as roughly thirty times the earlier volume.",
+        "why_it_matters": "Growth differs between providers. The chart shows a larger share going to models that people can download and run on their own machines.",
+        "body_paragraphs": [
+          "It reports growth of more than 130 times for DeepSeek, compared with 45 times for OpenAI and 12 times for Anthropic.",
+          "Downloadable models rose from about a third of traffic to seven tenths. Models available only through their providers fell from 57% to 20%."
+        ],
+        "for_ai": "Downloadable models account for a larger share of the OpenRouter traffic shown in the chart.",
+        "human_direction": "none",
+        "ai_direction": "gain",
+        "human_label": "Context",
+        "ai_label": "Benefits",
+        "box_effects": {
+          "human": "none",
+          "ai": "gain"
+        },
+        "sources": [
+          {
+            "publisher": "Le Temps",
+            "headline": "Artificial Intelligence: The dizzying graph that fuels fears of a bubble",
+            "url": "https://www.letemps.ch/cyber/intelligence-artificielle/intelligence-artificielle-le-graphique-vertigineux-qui-materialise-les-craintes-d-une-bulle",
+            "date": "2026-11-12",
+            "language": "fr"
+          },
+          {
+            "publisher": "Duc-Quang Nguyen / Le Temps , public chart",
+            "headline": "Open vs closed AI tokens",
+            "url": "https://flo.uri.sh/story/3852596/embed",
+            "date": "2026-11-06",
+            "language": "zh"
+          }
+        ],
+        "source_count": 2,
+        "publisher": "Le Temps",
+        "date": "2026-11-12",
+        "display_date": "12 Nov 2026",
+        "claim_status": "reporting",
+        "limitation": "This Brief covers only the published chart captions, not the full Le Temps article.",
+        "summary_basis": "Source-checked editorial correction",
+        "source_replacement_note": null,
+        "source_reading_scope": null,
+        "access_recovery_validated": false,
+        "has_editorial": true
+      },
+      "after": {
+        "for_humans": "Investors face losses if AI earnings fall short of expectations, Webb argues.",
+        "headline": "Financial adviser questions whether AI profits can sustain soaring company values",
+        "original_headline": "Are We in an AI Earnings Bubble? 3 Ways Valuations May Be Being Distorted",
+        "deck": "Kevin Webb identifies three reasons to examine the earnings behind AI stocks.",
+        "what_happened": "Writing for Kiplinger, financial adviser Kevin Webb argues that strong profits do not settle the AI-bubble debate. He focuses on spending that outpaces cash generation, disputed assumptions about equipment lifetimes, and suppliers investing in their own customers.",
+        "why_it_matters": "If buyers cut infrastructure spending, chip suppliers could lose revenue. Webb argues that connected financing can also make demand harder to judge.",
+        "body_paragraphs": [
+          "Spreading equipment costs over more years raises annual reported profits. Nvidia counters that customers’ four-to-six-year depreciation periods reflect actual hardware use.",
+          "Webb uses Nvidia’s investment in Nebius to explain how supplier money can return as purchases of its chips. He argues that AI revenue must eventually justify the spending."
+        ],
+        "for_ai": "Chip suppliers could lose revenue if their customers reduce AI infrastructure spending.",
+        "human_direction": "loss",
+        "ai_direction": "loss",
+        "human_label": "Risks",
+        "ai_label": "Risks",
+        "box_effects": {
+          "human": "loss",
+          "ai": "loss"
+        },
+        "sources": [
+          {
+            "publisher": "Kiplinger / Kevin Webb",
+            "headline": "Are We in an AI Earnings Bubble? 3 Ways Valuations May Be Being Distorted",
+            "url": "https://www.kiplinger.com/investing/ai-bubble-how-valuations-may-be-distorted",
+            "date": "2026-11-09",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "Kiplinger / Kevin Webb",
+        "date": "2026-11-09",
+        "display_date": "9 Nov 2026",
+        "claim_status": "opinion",
+        "limitation": "",
+        "summary_basis": "Source-checked replacement",
+        "source_replacement_note": "Updated 17 November: this accessible column replaces the earlier Le Temps chart-only reading.",
+        "source_reading_scope": "full_article",
+        "access_recovery_validated": true,
+        "has_editorial": true
+      },
+      "full_source_review": {
+        "scope": "full_article",
+        "source_url": "https://www.kiplinger.com/investing/ai-bubble-how-valuations-may-be-distorted",
+        "body_sha256": "b38fa84a4db53d15d97a07bd885534f7a349117a9b352332cd6cd22e6b61ab00"
+      }
+    },
+    {
+      "key": "event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
+      "source_urls": [
+        "https://siecledigital.fr/2026/11/13/un-centre-international-consacre-a-lintelligence-artificielle-de-defense-va-ouvrir-en-france"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "what_happened": "France's defense ministry presented a planned international center near Rennes to coordinate work on artificial intelligence in the armed forces. The article says it should open next summer and expects 34 military and civilian staff, including 17 from France.",
+        "why_it_matters": "The ministry wants the center to share experience and working practices among armed forces using artificial intelligence. This describes planned work, not results from a center already operating.",
+        "body_paragraphs": [
+          "The article says several allied countries have committed to the project. It does not say how many staff those countries will provide. France expects to send 17 people.",
+          "Planned tasks include bringing interested groups together, developing working practices, following new technology and collecting lessons. The article says the center will not be dedicated to producing artificial intelligence services."
+        ],
+        "limitation": "The article describes a center that has not opened yet, so it does not report results from its work."
+      },
+      "after": {
+        "what_happened": "France's defense ministry presented a planned international center near Rennes to coordinate military uses of AI. It expects the center to open next summer with 34 military and civilian staff, including 17 from France.",
+        "why_it_matters": "The ministry wants armed forces to share experience and working practices as they adopt AI.",
+        "body_paragraphs": [
+          "Several allied countries have committed to the project. France expects to contribute half of the planned staff.",
+          "The center would connect interested groups, develop working practices, follow new technology and collect lessons from military AI use. Its role is coordination rather than producing AI services."
+        ],
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:81d30770-8588-4aac-88a2-6463131a6862",
+      "source_urls": [
+        "https://news.microsoft.com/source/features/ai/how-a-new-ai-model-could-help-crushed-rock-fight-climate-change"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "The model considers soil makeup, minerals in nearby crushed rock, rainfall, humidity, temperature and large-scale weather patterns. Microsoft researcher Felipe Oviedo says data from Brazilian fields enabled predictions for fields in Mississippi.",
+          "The source says the findings suggest AI could help address practical barriers to expanding this method. The research is due to be shared in a paper that has not yet been checked by other researchers; Terradot co-founder Sasankh Munukutla says further development and extensive testing are needed."
+        ],
+        "limitation": "The research is described as forthcoming and has not yet been checked by other researchers."
+      },
+      "after": {
+        "body_paragraphs": [
+          "The model considers soil makeup, minerals in nearby crushed rock, rainfall, humidity, temperature and large-scale weather patterns. Microsoft researcher Felipe Oviedo says data from Brazilian fields enabled predictions for fields in Mississippi.",
+          "Terradot co-founder Sasankh Munukutla sees potential for the model to help expand carbon-removal projects."
+        ],
+        "limitation": "The forthcoming research has not yet been checked by other researchers; further development and extensive testing are planned."
+      }
+    },
+    {
+      "key": "event:817d1d24-3413-4254-837b-51235018c279",
+      "source_urls": [
+        "https://www.gov.uk/government/news/united-kingdom-norway-joint-statement-of-intent-on-artificial-intelligence"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The countries want to combine their strengths in research, technology, energy and investment. The statement records intentions rather than creating binding legal duties."
+      },
+      "after": {
+        "why_it_matters": "The countries want to combine their strengths in research, technology, energy and investment."
+      }
+    },
+    {
+      "key": "event:42d68c56-8c99-4616-98bd-c137c6554bb4",
+      "source_urls": [
+        "https://www.news.cn/fortune/20261112/3bcd0bc6933341d1915db878ad902845/c.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "The article explains tokens as units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
+          "It distinguishes very cheap promotional prices from the cost of providing computing services. Interviewees call for clearer information about usage allowances and purchase terms."
+        ],
+        "why_it_matters": "The report asks whether buyers will keep paying after promotional offers end. It points to practical usefulness, clear prices and understandable purchase terms as tests for the market.",
+        "limitation": "The reported sales figures and customer experiences do not establish whether demand will persist after promotions."
+      },
+      "after": {
+        "body_paragraphs": [
+          "Tokens are units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
+          "Very cheap promotional prices differ from the cost of providing computing services. Interviewees call for clearer information about usage allowances and purchase terms."
+        ],
+        "why_it_matters": "Lasting demand depends on whether the services remain useful after promotions end, with clear prices and understandable purchase terms.",
+        "limitation": "Demand after the promotional offers remains uncertain."
+      }
+    },
+    {
+      "key": "event:1b9adebc-cabc-4d55-bb74-0332612915a9",
+      "source_urls": [
+        "http://www.news.cn/finance/20261112/9d264628a958497c859f23dc33933907/c.html"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The report says GreatWall is already used widely in home services and logistics sorting. Its registration adds to Guangdong’s list of registered generative AI services.",
+        "body_paragraphs": [
+          "Materials cited by Xinhua say the assessment lasted five months and covered training data, generated content, intellectual property, personal information, accuracy, reliability and ways to block risks. The materials also report 27,148 tests of whether the model refused high-risk requests.",
+          "The report describes WALL-B, one model in the GreatWall series, as combining vision, language, touch, movement and predictions about physical events. It says WALL-B can understand links between its surroundings, objects and tasks, then sense, judge and act. The company’s co-founder said the company would keep improving its safety rules and product standards."
+        ]
+      },
+      "after": {
+        "why_it_matters": "Xinhua says GreatWall is already used widely in home services and logistics sorting. Its registration adds to Guangdong’s list of registered generative AI services.",
+        "body_paragraphs": [
+          "Materials cited by Xinhua say the assessment lasted five months and covered training data, generated content, intellectual property, personal information, accuracy, reliability and ways to block risks. The materials also report 27,148 tests of whether the model refused high-risk requests.",
+          "Xinhua describes WALL-B, one model in the GreatWall series, as combining vision, language, touch, movement and predictions about physical events. It says WALL-B can understand links between its surroundings, objects and tasks, then sense, judge and act. The company’s co-founder said the company would keep improving its safety rules and product standards."
+        ]
+      }
+    },
+    {
+      "key": "event:1000c6be-1e4b-487d-a990-7d87fe76533c",
+      "source_urls": [
+        "https://www.umontpellier.fr/agenda/intelligence-artificielle-en-sante-futur-de-nos-cerveaux-perdons-nous-lesprit"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The announcement set out topics for discussion, including AI’s role in diagnosis and whether it could make patient care less personal. It does not report what happened at the meeting.",
+        "limitation": "The listing says the event has passed but does not give its date in the supplied text."
+      },
+      "after": {
+        "why_it_matters": "The announcement set out topics for discussion, including AI’s role in diagnosis and whether it could make patient care less personal.",
+        "limitation": ""
+      }
+    },
+    {
+      "key": "event:07a3fcca-1961-474c-9abf-cc9e8635cab8",
+      "source_urls": [
+        "https://www.teachermagazine.com/au_en/articles/researching-education-5-further-readings-on-generative-ai"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "Together, the readings examine how teachers might use GenAI to support learning and how schools could adapt assessments. The article also points to early evidence and questions that still need study.",
+        "body_paragraphs": [
+          "The guide from La Trobe University gives classroom examples of ways GenAI can support or undermine learning. A review by researchers from the University of Sydney and The Barker Institute says the value of GenAI depends partly on how tasks, guidance, feedback, and responsibilities are arranged.",
+          "One study found that 62.4% of students in three teacher education courses chose not to use GenAI in non-exam assessments, even though it was allowed. The article says many cited confidence in their own work and concern about being wrongly accused of plagiarism. Separately, another paper proposes changes to essay assessment; its authors say a different approach could keep essays educationally meaningful."
+        ]
+      },
+      "after": {
+        "why_it_matters": "Together, the readings examine how teachers might use GenAI to support learning and how schools could adapt assessments. The selection also highlights early evidence and questions that still need study.",
+        "body_paragraphs": [
+          "The guide from La Trobe University gives classroom examples of ways GenAI can support or undermine learning. A review by researchers from the University of Sydney and The Barker Institute says the value of GenAI depends partly on how tasks, guidance, feedback, and responsibilities are arranged.",
+          "One study found that 62.4% of students in three teacher education courses chose not to use GenAI in non-exam assessments, even though it was allowed. Many cited confidence in their own work and concern about being wrongly accused of plagiarism. Separately, another paper proposes changes to essay assessment; its authors say a different approach could keep essays educationally meaningful."
+        ]
+      }
+    },
+    {
+      "key": "event:2fa9457d-6d68-4473-998d-cbbd126b6ab7",
+      "source_urls": [
+        "https://dailynous.com/2026/11/11/what-may-artificial-intelligence-do-for-writers"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "what_happened": "Philosopher Kyle van Oosterum proposes judging AI help in professional writing by whether a person could morally do the same task. The article clarifies that his rule concerns having AI do tasks, not the act of asking, and gives examples such as transcribing interviews and checking facts.",
+        "body_paragraphs": [
+          "Daily Nous presents a revised version of van Oosterum’s proposal: in professional writing, an AI may do a task if it would be morally acceptable for a person to do it. The piece questions the phrase “other things equal” and says the proposal concerns what is allowed, not what is required.",
+          "The article also describes a similar argument by Mark Robert Taylor about student writing. He says discussing essay ideas with AI may be allowed when discussing them with a classmate is allowed, while submitting an AI-made outline may be barred when submitting a classmate’s outline would be barred."
+        ],
+        "limitation": "The proposal concerns moral permission, not publication rules. The article says it may conflict with existing policies and is intended for AI as it works now."
+      },
+      "after": {
+        "what_happened": "Philosopher Kyle van Oosterum proposes judging AI help in professional writing by whether a person could morally do the same task. His rule concerns the work itself, with examples such as transcribing interviews and checking facts.",
+        "body_paragraphs": [
+          "Daily Nous presents a revised version of van Oosterum’s proposal: in professional writing, an AI may do a task if it would be morally acceptable for a person to do it. The piece questions the phrase “other things equal” and says the proposal concerns what is allowed, not what is required.",
+          "Mark Robert Taylor makes a similar argument about student writing. He says discussing essay ideas with AI may be allowed when discussing them with a classmate is allowed, while submitting an AI-made outline may be barred when submitting a classmate’s outline would be barred."
+        ],
+        "limitation": "This ethical proposal may conflict with existing publication policies and concerns AI as it works today."
+      }
+    },
+    {
+      "key": "event:a8cdc3a3-07f2-4018-88ed-53fa68ead705",
+      "source_urls": [
+        "https://www.nippon.com/en/articles/-/57008"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "Respondents in their twenties had the highest reported usage. The article also highlights increases among people in their fifties and sixties compared with an earlier survey.",
+          "Information gathering and research accounted for 62.9% of reported reasons for use. Other uses included developing ideas and preparing or checking emails and documents."
+        ]
+      },
+      "after": {
+        "body_paragraphs": [
+          "Respondents in their twenties had the highest reported usage. The survey also shows increases among people in their fifties and sixties compared with an earlier survey.",
+          "Information gathering and research accounted for 62.9% of reported reasons for use. Other uses included developing ideas and preparing or checking emails and documents."
+        ]
+      }
+    },
+    {
+      "key": "event:a717138d-2d4c-4226-9816-50eeff397f43",
+      "source_urls": [
+        "https://www.microsoft.com/en-us/security/blog/2026/11/10/detecting-sleeper-agents-hiding-in-ai-model-neurons"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "deck": "The company says it has not seen attackers using this particular technique."
+      },
+      "after": {
+        "deck": "A Microsoft experiment tests how an altered assistant can hide a malicious instruction until it encounters a trigger."
+      }
+    },
+    {
+      "key": "event:06a5c958-6e9a-4099-a2f9-bf80b2c17f53",
+      "source_urls": [
+        "https://fr.aleteia.org/2026/11/10/trois-inquietudes-dexperts-face-a-lia-generative"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "what_happened": "A French expert commission has delivered a report on content-generating artificial intelligence to President Emmanuel Macron. The article describes concerns about effects on thinking, emotional attachment and online abuse, alongside recommendations to protect users.",
+        "body_paragraphs": [
+          "The report warns about handing intellectual work to a tool without understanding how it produces an answer. It also describes risks from systems that imitate empathy or repeatedly flatter a user, potentially encouraging dependence.",
+          "The commission calls for stronger controls on design, assessment before products enter the market and education about the technology. The article also highlights abusive synthetic sexual images as a serious concern."
+        ],
+        "limitation": "This Brief covers the article’s account of the commission report, not an independent assessment of its cited studies."
+      },
+      "after": {
+        "what_happened": "A French expert commission has delivered a report on content-generating artificial intelligence to President Emmanuel Macron. The experts raise concerns about effects on thinking, emotional attachment and online abuse, alongside recommendations to protect users.",
+        "body_paragraphs": [
+          "The report warns about handing intellectual work to a tool without understanding how it produces an answer. It also describes risks from systems that imitate empathy or repeatedly flatter a user, potentially encouraging dependence.",
+          "The commission calls for stronger controls on design, assessment before products enter the market and education about the technology. It also identifies abusive synthetic sexual images as a serious concern."
+        ],
+        "limitation": "This reading covers the published account of the commission’s findings."
+      }
+    },
+    {
+      "key": "event:f99095a8-2571-41f6-9c86-158b99dbdc5e",
+      "source_urls": [
+        "https://www.ledevoir.com/actualites/societe/1023275/ia-sont-elles-conscientes-entre-coup-publicite-nouvelle-religion"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "Neuroscientist Vanessa Hadid says AI consciousness is possible but very unlikely. Richards takes a different view: he says AI may already have, or soon gain, abilities such as talking about what it senses and thinking about its own thoughts.",
+          "The article says no definition of consciousness is accepted by all philosophers and neuroscientists. It also reports Anthropic's October 8 rule change, following meetings about Claude's standing and how to make it more virtuous."
+        ],
+        "for_ai": "Researchers disagree about machine consciousness; the article reports no scientific consensus establishing that current AI has subjective experiences.",
+        "limitation": "The article says philosophers and neuroscientists have no universally accepted definition of consciousness."
+      },
+      "after": {
+        "body_paragraphs": [
+          "Neuroscientist Vanessa Hadid says AI consciousness is possible but very unlikely. Richards takes a different view: he says AI may already have, or soon gain, abilities such as talking about what it senses and thinking about its own thoughts.",
+          "Le Devoir also reports Anthropic's October 8 rule change, following meetings about Claude's standing and how to make it more virtuous."
+        ],
+        "for_ai": "Whether AI can have an inner experience remains disputed among researchers.",
+        "limitation": "Philosophers and neuroscientists have no universally accepted definition of consciousness."
+      }
+    },
+    {
+      "key": "event:f156dc63-9ac8-497a-bda3-df66cc863209",
+      "source_urls": [
+        "https://www.news.cn/tech/20261114/a93e6a6c66f14cb1b59e2371275d5cfa/c.html"
+      ],
+      "reason": "Full published video subtitle reading replaces the short page description; source claims remain attributed.",
+      "before": {
+        "has_editorial": true,
+        "access_recovery_validated": true,
+        "summary_basis": "AIEO summary",
+        "source_reading_scope": null,
+        "limitation": "This reading covers Xinhua’s short accompanying text, not the video itself.",
+        "headline": "CNN reporter explores everyday artificial intelligence uses in Shenzhen and Dongguan",
+        "deck": "A short Xinhua video description lists delivery drones, automatic parking and voice assistants.",
+        "what_happened": "Xinhua says CNN reporter Rhea Mogul visited Shenzhen and Dongguan to experience uses of artificial intelligence in everyday life. Its video description mentions food delivery by drone, cars that park automatically, voice assistants and a locally developed operating system.",
+        "why_it_matters": "The description connects those experiences with Mogul’s reflections on China’s ambitions and possible future. It offers examples from her visit rather than detailed findings about each technology.",
+        "body_paragraphs": [
+          "The accompanying text says Mogul saw how Chinese developers were building cities around artificial intelligence. It reports her impressions but provides no technical assessment of the systems shown."
+        ],
+        "for_humans": "The video description follows a visitor encountering drone deliveries, automatic parking and voice assistants in two Chinese cities.",
+        "for_ai": "The video description highlights AI use in everyday services, including delivery drones and voice assistants."
+      },
+      "after": {
+        "has_editorial": true,
+        "access_recovery_validated": true,
+        "summary_basis": "Source-checked editorial correction",
+        "source_reading_scope": "complete_video_subtitles",
+        "limitation": "",
+        "headline": "CNN reporter explores connected cars, drones and AI development in China",
+        "deck": "Rhea Mogul visits Shenzhen and Huawei’s Dongguan campus to see connected technology in everyday use.",
+        "what_happened": "In a Xinhua video carrying CNN reporting, Rhea Mogul follows drone food deliveries in Shenzhen and sees a car park without anyone inside. She then visits Huawei’s campus in Dongguan, where developers work on connecting devices and services.",
+        "why_it_matters": "The visit links consumer technology with the software and people behind it. Huawei’s HarmonyOS and the separate OpenHarmony open-source foundation are central to the account of how connected devices are being developed.",
+        "body_paragraphs": [
+          "Meituan operates drone delivery routes in Shenzhen. Mogul describes the city as a testing ground for technology that connects everyday devices.",
+          "The tour also visits a campus library, where reading and exchanging ideas are presented as part of the work behind future AI systems."
+        ],
+        "for_humans": "Mogul encounters drone deliveries, self-parking cars and a campus where people develop connected technology.",
+        "for_ai": "OpenHarmony gives companies and developers a shared software foundation on which to build connected devices."
+      },
+      "full_source_review": {
+        "scope": "complete published video subtitles",
+        "method": "Local macOS Vision subtitle extraction across the full video, followed by editorial reading; no paid API or model review.",
+        "duration_seconds": 130.64,
+        "subtitle_text_sha256": "a581e90d94e44e9967a97e0565563ccf6f322e35ef728a0a5557572865352713",
+        "source_video_sha256": "0b7ddd8e53b66e666b7b53d89e194e085bcdc6cb86855d699cb0614468d9bb60"
+      }
+    },
+    {
+      "key": "event:ea2fea61-ca7a-4de5-ba6b-2b427fe10d26",
+      "source_urls": [
+        "https://www.qstheory.cn/20261110/47b0f899e61446c38cc28ad96115d1cd/c.html"
+      ],
+      "reason": "Full 10-minute interview subtitle reading replaces the programme introduction; future capabilities remain Zhou’s proposals.",
+      "before": {
+        "has_editorial": true,
+        "access_recovery_validated": false,
+        "summary_basis": "Source-checked editorial correction",
+        "source_reading_scope": null,
+        "limitation": "Only the short program announcement was available in the supplied source; this is not a summary of the video discussion.",
+        "headline": "A video program invites a scientist to explain large artificial intelligence models",
+        "deck": "The announcement names Pujiang Laboratory scientist Zhou Bowen and the episode’s questions.",
+        "what_happened": "A Zhihui has announced a conversation with Zhou Bowen, director and chief scientist of Pujiang Laboratory. The episode is introduced through questions about what large artificial intelligence models are and how to judge them.",
+        "why_it_matters": "The announcement frames the discussion around questions a general audience might ask, including how computers understand and respond to everyday language.",
+        "body_paragraphs": [
+          "The short introduction names the guest and the topics to be discussed. It does not provide Zhou’s answers or describe findings from a research study."
+        ],
+        "for_humans": "Viewers are invited to learn what large AI models are and how their quality can be judged.",
+        "for_ai": "The programme announcement raises questions about AI models without publishing the scientist’s answers or new findings.",
+        "location_label": "Programme announcement"
+      },
+      "after": {
+        "has_editorial": true,
+        "access_recovery_validated": true,
+        "summary_basis": "Source-checked editorial correction",
+        "source_reading_scope": "complete_video_subtitles",
+        "limitation": "",
+        "headline": "Zhou Bowen explains how AI models learn and how to judge them",
+        "deck": "The Pujiang Laboratory scientist connects language prediction with cost, reliability and scientific discovery.",
+        "what_happened": "Zhou Bowen explains that large language models learn by predicting the next part of a text and adjusting their internal settings when wrong. Huge training datasets, many settings and heavy computing requirements give these models their name.",
+        "why_it_matters": "Zhou proposes judging models by their ability on a task, the value they provide for their cost, performance on unfamiliar problems, and safety. A strong score on one test is only part of that assessment.",
+        "body_paragraphs": [
+          "Words, symbols and other inputs are converted into numerical representations that a model can process. Scientific models also need to handle formulas, molecular structures and images.",
+          "Zhou argues that future AI for discovery should combine broad knowledge with deep expertise. He sees an opportunity for such systems to connect ideas across increasingly specialized scientific fields."
+        ],
+        "for_humans": "Zhou’s explanation offers criteria for choosing AI, including usefulness, cost and reliability.",
+        "for_ai": "Zhou argues that scientific AI needs broad knowledge, specialist expertise and the ability to work with formulas and images.",
+        "location_label": "Scientific interview"
+      },
+      "full_source_review": {
+        "scope": "complete published video subtitles",
+        "method": "Local macOS Vision subtitle extraction across the full video, followed by editorial reading; no paid API or model review.",
+        "duration_seconds": 618.24,
+        "subtitle_text_sha256": "f57f2c6cac3ed2ce139eb9e945c64e8019c1f32a4a603463947ea1cf5639dbf1",
+        "source_video_sha256": "017510463658e1fbdab1bf4c67b3e1978129c232d6368b00f73b3360ccca471f"
+      }
+    },
+    {
+      "key": "event:b6224960-ef80-4815-9f08-46cdc26740d4",
+      "source_urls": [
+        "https://www.news.cn/world/20261109/f0344b20743945688779798e5983433d/c.html"
+      ],
+      "reason": "Full published video subtitle reading replaces the generic introduction, preserving benefits, risks and attributed proposals.",
+      "before": {
+        "has_editorial": true,
+        "access_recovery_validated": true,
+        "summary_basis": "AIEO summary",
+        "source_reading_scope": null,
+        "limitation": "The text does not name particular AI risks or spell out the proposed rules.",
+        "headline": "Xinhua says AI can help people, but its risks call for global cooperation and human choices",
+        "deck": "A Xinhua article presents AI as both a powerful helper and a challenge that needs careful, shared rules.",
+        "what_happened": "Xinhua argues that AI can help people but also brings risks that no country can handle alone. It says international cooperation and sensible rules for AI use can help it keep creating value for people.",
+        "why_it_matters": "The article’s central point is that people’s choices, not AI acting on its own, shape whether AI is used well. It calls for countries to work together on rules.",
+        "body_paragraphs": [
+          "The article describes AI as both a powerful helper and a challenge that calls for care. It frames the risks as global and says no single country can address them alone."
+        ],
+        "for_humans": "AI can help people but brings shared risks, which the video description says require international cooperation.",
+        "for_ai": "The video description calls for common rules and human choices to guide AI, without specifying a technical or business change.",
+        "location_label": "International commentary"
+      },
+      "after": {
+        "has_editorial": true,
+        "access_recovery_validated": true,
+        "summary_basis": "Source-checked editorial correction",
+        "source_reading_scope": "complete_video_subtitles",
+        "limitation": "",
+        "headline": "Media leaders weigh AI’s newsroom uses against false news and unequal access",
+        "deck": "At Beijing’s World Media Summit, participants discuss reporting tools, verification and international cooperation.",
+        "what_happened": "Xinhua interviews media leaders about AI’s role in journalism. Participants describe using it to find information and assist reporting, while warning about convincing fabricated material and gaps in access to digital tools.",
+        "why_it_matters": "The video opens with an AI-made version of its presenter and asks guests to distinguish it from the real person. Their mixed responses illustrate the verification problem discussed throughout the interviews.",
+        "body_paragraphs": [
+          "TASS’s head argues that false reports can leave suspicion even after correction. Algeria’s Le Jeune Indépendant editor describes AI as useful for finding information and helping journalists, with care over what they take from it.",
+          "Other participants call for cooperation against deepfakes, cross-checking information and helping audiences understand AI. A Maldives public-service media representative warns that AI can deepen the digital divide."
+        ],
+        "for_humans": "Media leaders describe useful reporting assistance alongside risks from false news and unequal access to technology.",
+        "for_ai": "Media leaders discuss using AI to find information, assist reporting and check claims under human oversight.",
+        "location_label": "World Media Summit, Beijing"
+      },
+      "full_source_review": {
+        "scope": "complete published video subtitles",
+        "method": "Local macOS Vision subtitle extraction across the full video, followed by editorial reading; no paid API or model review.",
+        "duration_seconds": 319.081333,
+        "subtitle_text_sha256": "59e7289d833cc3a40b416936f7802bb698be76b27d1e2e0450fd015963e0815d",
+        "source_video_sha256": "d3a4c96529efc5cec571be82f18e63ee0c1040b0cdcec7eefaed2482066dfc3a"
+      }
+    },
+    {
+      "key": "event:5f2a1929-fb39-4966-b241-2242ac1bfd1b",
+      "source_urls": [
+        "https://www.concordia.ca/ucactualites/central/nouvelles/2026/11/11/lancement-du-cadre-dengagement-en-matiere-dintelligence-artificielle-de-luniversite-concordia.html"
+      ],
+      "reason": "Remove a nonessential absence-of-detail caveat from an announcement.",
+      "before": {
+        "limitation": "The announcement does not give a timeline for the action plan or detail its eventual priorities."
+      },
+      "after": {
+        "limitation": ""
+      }
+    }
+  ],
+  "research": [
+    {
+      "key": "paper:dfa83956de260fdbb1461d8c",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.18562v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The result suggests skills learned in simulated tasks may carry over to an unfamiliar robot, though evidence comes from one robot and 30 trials.",
+        "body_paragraphs": [
+          "The model used camera images and information about the robot to choose movements; a separate controller carried them out. It was trained on related tasks in two simulated environments.",
+          "On a simulated test, success rose from 1.6% to 74.4%. The authors say training covered only two simulated environments and a small set of tasks."
+        ],
+        "limitation": "The authors say training covered only two simulators and a small set of tasks; the real-robot result came from 30 trials."
+      },
+      "after": {
+        "why_it_matters": "Practice in simulated tasks may help a model control an unfamiliar robot.",
+        "body_paragraphs": [
+          "The model used camera images and information about the robot to choose movements; a separate controller carried them out. It was trained on related tasks in two simulated environments.",
+          "On a simulated test, success rose from 1.6% to 74.4%."
+        ],
+        "limitation": "Training covered two simulated environments and a small task set; the real-robot test involved one robot and 30 trials."
+      }
+    },
+    {
+      "key": "paper:8635558274a5ad6fdbb2190b",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.18563v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The comparison shows how the model performed against a simpler option, but the results are based on simulated signals, not real satellite detections."
+      },
+      "after": {
+        "why_it_matters": "A simpler time-and-distance check performed better, making it an important comparison when choosing a ship-matching method."
+      }
+    },
+    {
+      "key": "paper:8162908a57f2d8634e1a2e9a",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.18561v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "This points toward portable communication for people who cannot speak. Whether the reported speed and reliability hold during live clinical use remains untested.",
+        "body_paragraphs": [
+          "A brain-based speech device uses brain signals to support communication. The researchers also report that adjusting the system with new examples improved performance on later days.",
+          "Tests used an iPhone 15 Pro Max. The authors call this an early step toward untethered brain-to-text communication, not a demonstration of everyday clinical use."
+        ],
+        "limitation": "The results come from the datasets and tests described in this preprint. The authors say live clinical research is needed to test whether the speed and reliability gains carry over to live use."
+      },
+      "after": {
+        "why_it_matters": "The result points toward portable communication tools for people who cannot speak.",
+        "body_paragraphs": [
+          "A brain-based speech device uses brain signals to support communication. The researchers also report that adjusting the system with new examples improved performance on later days.",
+          "Tests used an iPhone 15 Pro Max."
+        ],
+        "limitation": "This preprint used data from one person. Live clinical research is needed to test the speed and reliability during everyday use."
+      }
+    },
+    {
+      "key": "paper:6a3c343c795d8b3056f04256",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.18559v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The findings show stronger results on tests involving movement descriptions, forecasts, and filling data gaps; they do not show better outcomes in everyday settings.",
+        "body_paragraphs": [
+          "Tests covered movement descriptions, forecasts up to four seconds ahead, and estimates of missing movement. Researchers used three daily-activity datasets and kept learned movement patterns unchanged during testing.",
+          "Opening a refrigerator before reaching inside illustrates how the system learns movement order; this example was not a separate real-world test."
+        ],
+        "limitation": "This is a preprint. The reported evidence comes from comparisons on three datasets and three movement tasks, not tests of practical outcomes in real-world use."
+      },
+      "after": {
+        "why_it_matters": "Learning movement order could help with descriptions, forecasts and filling gaps in body-position records.",
+        "body_paragraphs": [
+          "Tests covered movement descriptions, forecasts up to four seconds ahead, and estimates of missing movement. Researchers used three daily-activity datasets and kept learned movement patterns unchanged during testing.",
+          "Opening a refrigerator before reaching inside illustrates the movement order the system aims to learn."
+        ],
+        "limitation": "This preprint compares three datasets and three movement tasks; everyday use was not tested."
+      }
+    },
+    {
+      "key": "paper:69ca59f40cdb74c438f94717",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.18543v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The results suggest demonstrations can help robot teams learn without limiting later performance, but the study does not show how well the approach works with real robots.",
+        "body_paragraphs": [
+          "During training, the system weighs each robot’s learned behavior against a new action learned through trial and feedback. Some robots can keep their learned behavior while others try improved actions.",
+          "In a separate simulated corridor task, one person provided demonstrations. The team passed the imitation-trained approach faster than comparison methods; this test covered only one person and one task."
+        ]
+      },
+      "after": {
+        "why_it_matters": "Demonstrations gave the robot teams a starting point they could improve through trial and feedback.",
+        "body_paragraphs": [
+          "During training, the system weighs each robot’s learned behavior against a new action learned through trial and feedback. Some robots can keep their learned behavior while others try improved actions.",
+          "In a separate simulated corridor task, one person provided demonstrations. The team improved beyond imitation faster than the comparison methods."
+        ]
+      }
+    },
+    {
+      "key": "paper:ee6fe94d890ac6162c64e407",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.17332v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "Planning helps, but teams should test with their own data and hardware to avoid overclaiming results.",
+        "body_paragraphs": [
+          "The project records experiments in public. It shows forecasts may not hold with different data, budgets, or tasks. Expect variation and test early with your own resources.",
+          "Public reviews help teams pick plausible routes, but final choices should be checked with your own data, hardware, and goals before committing to a large project."
+        ]
+      },
+      "after": {
+        "why_it_matters": "Smaller experiments can help teams decide which training ideas merit a larger computing budget.",
+        "body_paragraphs": [
+          "The project records experiments in public so teams can examine how training ideas perform under different budgets.",
+          "Forecasts were then compared with results from much larger models to see which improvements carried over."
+        ]
+      }
+    },
+    {
+      "key": "paper:e9e98ee039379db50cf52e55",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.17334v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "deck": "A careful, controlled test shows that dedicating vision capacity matters more than relying on pretrained vision parts, with results depending on data and compute.",
+        "why_it_matters": "For organizations, this suggests you can save time and compute by training the image and language parts together, but outcomes depend on data and budget.",
+        "body_paragraphs": [
+          "The study tested three design choices at once: training from scratch, a dedicated image-capability part, and where the image work sits in the model. It found the dedicated image-capability part was the key to better understanding, even when starting from scratch.",
+          "A practical takeaway is to start training image and language parts together early, and not rely on a large pretrained image encoder. Results can shift with data and compute limits."
+        ]
+      },
+      "after": {
+        "deck": "A controlled test shows that dedicating vision capacity matters more than relying on pretrained vision parts.",
+        "why_it_matters": "The comparison gives developers another way to build image-and-language models without relying on a separately trained image component.",
+        "body_paragraphs": [
+          "The study tested three design choices at once: training from scratch, a dedicated image-capability part, and where the image work sits in the model. It found the dedicated image-capability part was the key to better understanding, even when starting from scratch.",
+          "Training the image and language components together matched or exceeded the tested alternatives under the shared data and computing budget."
+        ]
+      }
+    },
+    {
+      "key": "paper:868e7c1ce9bdb6c59fec0ee6",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.17323v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "what_happened": "What happened: An approach uses unlabeled data and searches many program options with limited feedback. It found that, on many tasks, agent-made programs can match or beat strong baselines, but picking the best option from many can cut performance by up to 47%. A large benchmark and ecology tests were added to study this.",
+        "why_it_matters": "Why it matters: Data can cut labeling needs, but gains depend on reliably selecting the right program; poor selection under fixed computing can erase advantages.",
+        "deck": "Can automatic agents learn from unlabeled data without heavy human tuning, and what limits still hold."
+      },
+      "after": {
+        "what_happened": "An approach uses unlabeled data and searches many program options with limited feedback. It found that, on many tasks, agent-made programs can match or beat strong baselines, but picking the best option from many can cut performance by up to 47%. A large benchmark and ecology tests were added to study this.",
+        "why_it_matters": "Data can cut labeling needs, but gains depend on reliably selecting the right program; poor selection under fixed computing can erase advantages.",
+        "deck": "Agents can develop training programs from unlabeled data, but selecting the strongest candidate remains difficult."
+      }
+    },
+    {
+      "key": "paper:2be97a02e46fe24a9aac89a3",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.17320v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "A checker watches results and triggers a rewrite only when it helps. It weighs options and keeps the best edit or the original.",
+          "Across benchmarks, accuracy improves, but the extra computing required grows and gains differ by task and model. Some cases show bigger gains than others."
+        ]
+      },
+      "after": {
+        "body_paragraphs": [
+          "Across five math and coding tasks, results differed by task and model. The checking step used extra computing to decide whether to keep an edit or retain the original."
+        ]
+      }
+    },
+    {
+      "key": "paper:0be73fb3448eb344ca662eeb",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.17316v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "This preprint reports tests on selected coding tasks. It does not establish the same improvement for every software project.",
+        "body_paragraphs": [
+          "Each task starts with the code changes left by previous tasks. Notes are written before the next task is known. The researchers compared runs with and without parts of the earlier record to identify useful information.",
+          "Training rewards successful solutions and penalizes extra steps in successful runs. The reported improvement combines the memory design with further training; it is not evidence that adding notes alone produces the whole gain."
+        ]
+      },
+      "after": {
+        "limitation": "This preprint tests selected tasks within software projects, combining memory design with further training.",
+        "body_paragraphs": [
+          "Each task starts with the code changes left by previous tasks. Notes are written before the next task is known. The researchers compared runs with and without parts of the earlier record to identify useful information.",
+          "Training rewards successful solutions and penalizes extra steps in successful runs. The reported improvement combines the memory design with further training. The comparison measures that combined approach."
+        ]
+      }
+    },
+    {
+      "key": "paper:d5c89b3070353457efa8c3a8",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.14518v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "The tests show a way to combine datasets with different labels, but they do not establish how the model would perform in clinical use.",
+        "limitation": "The study tested selected chest X-ray and mammography datasets. Improvements varied by finding, and the paper does not report a clinical deployment."
+      },
+      "after": {
+        "why_it_matters": "Combining datasets could make more use of existing medical images even when their labels differ.",
+        "limitation": "The tests covered selected chest X-ray and mammography datasets. Gains varied by finding; clinical use was not tested."
+      }
+    },
+    {
+      "key": "paper:9c594e46806fe024f28c212f",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.14516v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The report covers a preliminary study with modest efficiency claims and comparisons on CPU and GPU; results depend on hardware and configurations and are not a universal guarantee of speed or effectiveness."
+      },
+      "after": {
+        "limitation": "The preliminary CPU and GPU comparisons depend on model size, hardware and configuration."
+      }
+    },
+    {
+      "key": "paper:93808d426006bb5503583de1",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.14514v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "deck": "A new approach asks which explanations fit the data best, not just whether one idea is true. It often points to a specific alternative without extra experiments, but findings depend on the datasets used.",
+        "why_it_matters": "It can save time by focusing on the most plausible explanations early, but results depend on the six datasets and may not apply to every field.",
+        "body_paragraphs": [
+          "The idea is simple: compare several explanations and see how the data shifts belief among them. This helps show which explanation fits best.",
+          "In practice, this can reduce follow-up tests, but it requires careful choice of explanations and good data, and results may not generalize."
+        ],
+        "limitation": "Based on six domains and experimental settings reported; generalization to other fields may vary."
+      },
+      "after": {
+        "deck": "Comparing several explanations at once can reveal which fits the data best.",
+        "why_it_matters": "Comparing alternatives early could help researchers choose which ideas deserve further experiments.",
+        "body_paragraphs": [
+          "The idea is simple: compare several explanations and see how the data shifts belief among them. This helps show which explanation fits best.",
+          "The approach depends on choosing useful competing explanations and having data that can distinguish between them."
+        ],
+        "limitation": "The evaluation covered six domains and their reported experimental settings."
+      }
+    },
+    {
+      "key": "paper:5c79f9cd55c88ba44d434d20",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.14519v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "body_paragraphs": [
+          "Across three medical image tasks, adapting a small pretrained AI model often helps more on new data than on familiar data. What would this mean for your own data?",
+          "The best approach is to start with small adaptation and pick the domain that matches your data, rather than assuming one setup fits all."
+        ]
+      },
+      "after": {
+        "body_paragraphs": [
+          "The comparison covered colonoscopy, breast ultrasound and skin imaging, including data from sources outside the training set.",
+          "Small amounts of adaptation sometimes worked well, while other tasks benefited from more specialized models."
+        ]
+      }
+    },
+    {
+      "key": "paper:1f4a351aba557931ba20973e",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.14515v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "why_it_matters": "For groups using practice AI, these supports can speed learning during practice, but benefits may not last in real tests unless they are checked and managed."
+      },
+      "after": {
+        "why_it_matters": "A teacher model can target help where a learner struggles, but the benefit depends on checking performance after that help is removed."
+      }
+    },
+    {
+      "key": "paper:bab5e935c1c4dfcb11732426",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.12880v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "headline": "Learning from short moves speeds up simulations but has limits"
+      },
+      "after": {
+        "headline": "Learning from short moves can speed up molecular simulations"
+      }
+    },
+    {
+      "key": "paper:8f56309d4513947324adef74",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.12872v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "Study uses a preprint with three benchmarks and two base models; results may not generalize to all tasks or systems."
+      },
+      "after": {
+        "limitation": "This preprint tested three benchmarks and two base models."
+      }
+    },
+    {
+      "key": "paper:8394fc7da4f959409e912609",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.12869v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "headline": "Cross-modal alignment mainly appears in later layers, study finds limits",
+        "why_it_matters": "Practitioners should test on different data and not trust a single benchmark. Alignment is not the same as overall performance.",
+        "body_paragraphs": [
+          "In plain terms, two separate models handling images and text tend to align ideas only after many steps, not at the start.",
+          "If you want cross-modal links to help a project, use clean captions and test on multiple benchmarks; don’t expect one number to cover all tasks."
+        ],
+        "limitation": "Results apply only to the evaluated models, datasets, and alignment metrics; generalization to all models or tasks is not claimed."
+      },
+      "after": {
+        "headline": "Image and text representations align mainly in later model layers",
+        "why_it_matters": "Caption quality matters when building systems that connect images with language. An alignment score measures shared representations rather than overall task performance.",
+        "body_paragraphs": [
+          "In plain terms, two separate models handling images and text tend to align ideas only after many steps, not at the start.",
+          "Clear captions strengthened the measured connections, and those connections could persist after the representations were compressed."
+        ],
+        "limitation": "The comparison covers the evaluated models, datasets and alignment measures."
+      }
+    },
+    {
+      "key": "paper:451741f97dc57bef756185ff",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.12884v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "Limitations include reliance on estimated separability and tests on a few datasets; results may not apply to all situations."
+      },
+      "after": {
+        "limitation": "The approach relies on estimated differences between subgroups and was tested on a small set of datasets."
+      }
+    },
+    {
+      "key": "paper:068487e94a830cd21a9a8a0f",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.12878v1"
+      ],
+      "reason": "Owner-requested prose review: remove repeated source framing and redundant caveats while retaining claim status, meaningful uncertainty, facts and approved effect labels. Wording edit of the existing source-reviewed copy; no new model review claimed.",
+      "before": {
+        "limitation": "The conclusions come from a specific setup with linear methods and randomly drawn samples. Results depend on finite capacity and chosen batch sizes; not a universal guarantee for all AI training."
+      },
+      "after": {
+        "limitation": "The analysis uses linear methods and randomly drawn samples, with results depending on network capacity and batch size."
+      }
+    },
+    {
+      "key": "paper:29f3a0ced2bcb71a33818a12",
+      "source_urls": [
+        "https://arxiv.org/html/2611.18553v1"
+      ],
+      "reason": "Owner requested full sources. Read the complete arXiv HTML paper, including methods, experiments, tables and appendices; this is a source-based editorial correction, not a model-review result.",
+      "before": {
+        "headline": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
+        "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
+        "what_happened": "",
+        "why_it_matters": "",
+        "body_paragraphs": [],
+        "limitation": "",
+        "has_editorial": false,
+        "summary_status": "full_text_required",
+        "summary_basis": "Original paper title",
+        "full_text_status": null,
+        "evidence_scope": "abstract",
+        "paper_source_url": null,
+        "paper_sections": null,
+        "paper_text_sha256": null,
+        "html_reader_version": null,
+        "research_reading_version": null,
+        "claim_status": null
+      },
+      "after": {
+        "headline": "AI can read small networks, but struggles to repair larger ones",
+        "deck": "WeightBench tests whether AI assistants can inspect and change another model’s internal settings without conventional training.",
+        "what_happened": "Researchers tested AI assistants on 42 tasks involving the numerical settings inside neural networks. The strongest systems could interpret small networks and build simple control systems, but struggled to repair language models, compress them without data or recognize impossible edits.",
+        "why_it_matters": "The tests separate promising small-scale skills from harder repair work. Improving one behavior can damage another, so a successful edit needs more than a higher task score.",
+        "body_paragraphs": [
+          "Each task limits access, computing and allowed changes. An audit records tool use and sets suspicious runs aside with a score of zero until reviewed.",
+          "Thirty-nine tasks passed the benchmark’s validity check. Some reference solutions had access unavailable to the tested assistants, so they demonstrate that a solution exists rather than that an assistant could discover it under the same constraints."
+        ],
+        "limitation": "This preprint uses few runs per task. Flagged runs await review, and one model was tested on 38 rather than all 42 tasks.",
+        "has_editorial": true,
+        "summary_status": "ready",
+        "summary_basis": "Summary of the paper",
+        "full_text_status": "read",
+        "evidence_scope": "paper_text",
+        "paper_source_url": "https://arxiv.org/html/2611.18553v1",
+        "paper_sections": 29,
+        "paper_text_sha256": "e8c1ca257fef422ab0f6d9f61754a235735f6c0071630e77ce31927a690f7528",
+        "html_reader_version": 1,
+        "research_reading_version": "paper-practitioner-v1",
+        "claim_status": "study"
+      }
+    }
+  ],
+  "reviewed_research_keys": [
+    "paper:dfa83956de260fdbb1461d8c",
+    "paper:8635558274a5ad6fdbb2190b",
+    "paper:8162908a57f2d8634e1a2e9a",
+    "paper:6a3c343c795d8b3056f04256",
+    "paper:69ca59f40cdb74c438f94717",
+    "paper:29f3a0ced2bcb71a33818a12",
+    "paper:ee6fe94d890ac6162c64e407",
+    "paper:e9e98ee039379db50cf52e55",
+    "paper:868e7c1ce9bdb6c59fec0ee6",
+    "paper:504b11bbd30209237cd84c41",
+    "paper:2be97a02e46fe24a9aac89a3",
+    "paper:0be73fb3448eb344ca662eeb",
+    "paper:d5c89b3070353457efa8c3a8",
+    "paper:9d5b33b9f0f1bbe3c875eaaa",
+    "paper:9c594e46806fe024f28c212f",
+    "paper:93808d426006bb5503583de1",
+    "paper:5c79f9cd55c88ba44d434d20",
+    "paper:1f4a351aba557931ba20973e",
+    "paper:dfc1bf3505949eefdfc1fdb1",
+    "paper:bab5e935c1c4dfcb11732426",
+    "paper:8f56309d4513947324adef74",
+    "paper:8394fc7da4f959409e912609",
+    "paper:451741f97dc57bef756185ff",
+    "paper:068487e94a830cd21a9a8a0f"
+  ]
+}
