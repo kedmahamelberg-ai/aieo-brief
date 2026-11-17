@@ -168,7 +168,7 @@ class NewsReading(unittest.TestCase):
 
     def test_publication_rejects_early_limits_and_status_badges(self):
         for raw in ('<div class="axis-grid"><strong>Evidence incomplete</strong></div>',
-                    '<h2>What this does not tell us</h2><div class="axis-grid"><h3>FOR PEOPLE</h3><h3>FOR AI TOOLS AND COMPANIES</h3><summary>Original sources</summary></div>'):
+                    '<h2>Reading notes</h2><div class="axis-grid"><h3>FOR PEOPLE</h3><h3>FOR AI TOOLS AND COMPANIES</h3><summary>Original sources</summary></div>'):
             with self.subTest(raw=raw), self.assertRaises(ValueError):
                 validate_news_layout(raw)
 
