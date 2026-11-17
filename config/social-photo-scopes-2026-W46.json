@@ -1,0 +1,20 @@
+{
+  "schema_version": "brief_social_photo_scopes_v1",
+  "source_edition": "2026-W46",
+  "topics": {
+    "story/ai-engineer-senior-ai-engineer-ai-policy-lab/index.html": {"kind": "subject", "preferred_files": ["Eisenhower Executive Office Building - Washington, DC - DSC09999.JPG"], "only_preferred": true, "title_pattern": "Eisenhower Executive Office Building - Washington, DC"},
+    "story/canadian-media-can-sue-openai-ontario/index.html": {"kind": "place", "preferred_files": ["Muttart Conservatory Skyline Downtown Edmonton Alberta Canada 01.jpg"], "only_preferred": true, "title_pattern": "Muttart Conservatory Skyline Downtown Edmonton Alberta Canada"},
+    "story/united-kingdom-norway-joint-statement-artificial-intelligence/index.html": {"kind": "subject", "preferred_files": ["London city hall (1).jpg"], "only_preferred": true, "title_pattern": "London city hall", "location_pattern": "London"},
+    "story/international-excellence-center-rennes-dedicated-artificial-defense-established/index.html": {"kind": "subject", "preferred_files": ["Rennes - place de la Mairie 01.jpg"], "only_preferred": true, "title_pattern": "Rennes - place de la Mairie", "location_pattern": "Rennes"},
+    "story/guangxi-integration-promotes-diverse-development-artificial-intelligence/index.html": {"kind": "subject", "preferred_files": ["Liugong village.jpg"], "only_preferred": true, "title_pattern": "Liugong village"},
+    "story/ama-artificial-intelligence-can-enhance-physicians-call-doctor/index.html": {"kind": "subject", "preferred_files": ["NIH Clinical Center.jpg"], "only_preferred": true, "title_pattern": "NIH Clinical Center"},
+    "story/artificial-intelligence-facing-cognitive-decline-risk-protect-users/index.html": {"kind": "subject", "preferred_files": ["Bibliothèque Nationale de France (46278681904).jpg"], "only_preferred": true, "title_pattern": "Bibliothèque Nationale de France"},
+    "story/ai-black-light-laboratory-beyond-no-doing-experiments/index.html": {"kind": "subject", "preferred_files": ["物质绿色创造与制造海河实验室.jpg"], "only_preferred": true, "title_pattern": "物质绿色创造与制造海河实验室"},
+    "story/cnas-launches-ai-policy-lab/index.html": {"kind": "subject", "preferred_files": ["The U.S. Capitol dominates the skyline in a sweeping view of Washington, DC from the Library dome, July 25, 2024.jpg"], "only_preferred": true, "title_pattern": "U.S. Capitol dominates the skyline"},
+    "story/three-expert-concerns-regarding-generative-ai/index.html": {"kind": "subject", "preferred_files": ["Paris- Institut de France (9811863983).jpg"], "only_preferred": true, "title_pattern": "Paris- Institut de France"},
+    "story/shanghai-s-housing-construction-industry-releases-action-plan/index.html": {"kind": "subject", "preferred_files": ["Shanghai Shimao Plaza Construction.jpg"], "only_preferred": true, "title_pattern": "Shanghai Shimao Plaza Construction"},
+    "story/cooperative-ai-cooperative-vision-fairer-more-artificial-intelligence/index.html": {"kind": "subject", "preferred_files": ["Piazza del Campidoglio, Rome (25849280741).jpg"], "only_preferred": true, "title_pattern": "Piazza del Campidoglio, Rome"},
+    "story/liberal-senator-andrew-mclachlan-artists-must-ai-profits/index.html": {"kind": "subject", "preferred_files": ["Old Parliament House, Canberra 001.JPG"], "only_preferred": true, "title_pattern": "Old Parliament House, Canberra"},
+    "story/spies-who-women-mata-hari-artificial-intelligence/index.html": {"kind": "subject", "preferred_files": ["Stasi Spy Camera.jpg"], "only_preferred": true, "title_pattern": "Stasi Spy Camera"}
+  }
+}

@@ -19,6 +19,17 @@ def news(market,number):
 
 
 class SocialProduction(unittest.TestCase):
+ def test_photo_freshness_uses_permanent_history_not_the_news_week(self):
+  page={'title':'File:Washington policy building.jpg','imageinfo':[{'extmetadata':{
+      'DateTimeOriginal':{'value':'2015-03-26 18:03:17'},
+      'ImageDescription':{'value':'A camera photograph of a policy building.'},
+  }}]}
+  self.assertEqual(social.verified_camera_date(page,'2026-W46'),'2015-03-26')
+  page['imageinfo'][0]['extmetadata']['DateTimeOriginal']['value']='2099-01-01'
+  self.assertIsNone(social.verified_camera_date(page,'2026-W46'))
+  page['imageinfo'][0]['extmetadata']['DateTimeOriginal']['value']='2015-03-26'
+  page['imageinfo'][0]['extmetadata']['ImageDescription']['value']='AI-generated illustration'
+  self.assertIsNone(social.verified_camera_date(page,'2026-W46'))
  def test_discovery_market_cannot_turn_dutch_news_into_uk_news(self):
   row=news('GB',1);row.update(headline='Dutch lawmakers propose rules for school AI',what_happened='The Dutch parliament discusses a proposal for primary schools.')
   self.assertEqual(social.verified_markets(row),[])

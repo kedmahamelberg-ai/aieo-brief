@@ -208,10 +208,13 @@ def country_scene_candidate(page, market):
 
 
 def verified_camera_date(page, release):
-    """Require a dated camera photograph from the source edition week.
+    """Require a dated camera photograph, never an upload-date guess.
 
     Commons upload dates do not establish when a photograph was taken.
-    Missing or ambiguous capture dates need human sourcing, not a guess.
+    Missing or ambiguous capture dates need human sourcing, not a guess. A
+    photograph is fresh for a batch when its source URL and exact bytes have
+    never been used before; the camera date does not have to match the news
+    edition week.
     """
     meta = page.get('imageinfo', [{}])[0].get('extmetadata', {})
     material = clean(' '.join([page.get('title', ''), *(
@@ -228,11 +231,9 @@ def verified_camera_date(page, release):
         return None
     try:
         taken = date(*(int(part) for part in match.groups()))
-        year, week = map(int, release.split('-W'))
-        start = date.fromisocalendar(year, week, 1)
     except (ValueError, TypeError):
         return None
-    return str(taken) if start <= taken <= start + timedelta(days=6) else None
+    return str(taken) if taken <= datetime.now(ZONE).date() else None
 
 
 def new_photos(topics, history, output, release):
@@ -318,8 +319,6 @@ def header(t):
 
 def validate_curated_photo_policy(photos, release):
     """Apply the current image policy to a new curated social batch."""
-    year, week = map(int, release.split('-W'))
-    start = date.fromisocalendar(year, week, 1)
     for photo in photos.values():
         try:
             captured = date.fromisoformat(photo['camera_capture_date'])
@@ -327,9 +326,9 @@ def validate_curated_photo_policy(photos, release):
             raise ValueError('Curated photo needs a verified camera capture date') from exc
         if (photo.get('image_origin') != 'camera photograph' or
             photo.get('rights_status') not in ('Public domain', 'CC0') or
-            not start <= captured <= start + timedelta(days=6) or
+            captured > datetime.now(ZONE).date() or
             not photo.get('source_url', '').startswith('https://commons.wikimedia.org/wiki/File:')):
-            raise ValueError('Curated photo must be a real public-domain photograph from the source week')
+            raise ValueError('Curated photo must be a real public-domain camera photograph with a verified capture date')
 
 
 def curated_photos(photos, history, output, archive):
