@@ -15,7 +15,8 @@ SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  'data/editorial/plain-language-corrections-2026-11-12.json',
                  'data/editorial/concise-box-corrections-2026-11-13.json',
                  'data/editorial/article-access-corrections-2026-11-15.json',
-                 'data/editorial/w46-completion-corrections-2026-11-16.json')
+                 'data/editorial/w46-completion-corrections-2026-11-16.json',
+                 'data/editorial/prose-review-2026-11-17.json')
 
 
 def reading_proof(key, root=ROOT):
@@ -56,8 +57,14 @@ def corrections(root=ROOT):
 def recoverable_keys(root=ROOT):
     path = Path(root) / 'data/editorial/article-access-corrections-2026-11-15.json'
     if not path.exists(): return set()
-    return {row['key'] for row in json.loads(path.read_text()).get('news', [])
-            if row.get('retry_when_full_source_available') is True}
+    recoverable = {row['key'] for row in json.loads(path.read_text()).get('news', [])
+                   if row.get('retry_when_full_source_available') is True}
+    reviewed_path = Path(root) / 'data/editorial/prose-review-2026-11-17.json'
+    if reviewed_path.exists():
+        # A later owner-reviewed full reading or prose edit supersedes the old
+        # temporary access notice, including already recovered stored versions.
+        recoverable -= {row['key'] for row in json.loads(reviewed_path.read_text()).get('news', [])}
+    return recoverable
 
 
 def is_locked(key, root=ROOT):
