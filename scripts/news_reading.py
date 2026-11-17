@@ -81,3 +81,17 @@ def prepare_display(rows):
             row[axis + '_direction'] = direction
             row[axis + '_label'] = EFFECT_LABELS[direction]
     return rows
+
+
+PROSE_INSTRUCTIONS = (
+    'DIRECT PROSE: Lead with the people, action, argument or finding. Establish the source and claim type once; '
+    'do not repeatedly start sentences with the article, the report or the authors. Retain specific attribution '
+    'for disputed allegations, opinions and company claims. Keep qualifications that change the meaning of a claim, '
+    'such as a study sample, an unresolved allegation or a tested limitation. Do not repeat the same caveat across '
+    'the deck, body, boxes and final note. Do not add generic negatives such as no measured results, no technical '
+    'assessment, or it does not report what happened at the meeting to an announcement or opinion. Describe '
+    'plans as plans and questions as questions. Leave limitation empty when no material uncertainty needs a note. '
+    'An abstract, preview, chart caption or video introduction is not a complete source: obtain the full source '
+    'or choose a relevant accessible replacement before writing. Never conceal missing source access with wording.'
+)
+INSTRUCTIONS += ' ' + PROSE_INSTRUCTIONS
