@@ -16,11 +16,11 @@ function loadStripe(reducedMotion = false) {
   const links = ['a','b','c'].map(key => {
     const item = node(); item.classList.owner=item; item.dataset={key,date:'2026-11-17'}; return item;
   });
-  const stripe=node(), run=node(), controls=node(), position=node(), next=node(), pause=node();
+  const stripe=node(), run=node(), controls=node(), next=node(), pause=node();
   run.querySelectorAll=()=>links;
   run.replaceChildren=(...items)=>{run.children=items};
   const elements={'government-stripe-items':run,'government-stripe-controls':controls,
-    'government-stripe-position':position,'government-stripe-next':next,'government-stripe-pause':pause};
+    'government-stripe-next':next,'government-stripe-pause':pause};
   const document={hidden:false,activeElement:null,events:{},querySelector:()=>stripe,
     getElementById:id=>elements[id],addEventListener(name,handler){this.events[name]=handler}};
   const motion={matches:reducedMotion,events:{},addEventListener(name,handler){this.events[name]=handler}};
@@ -32,19 +32,25 @@ function loadStripe(reducedMotion = false) {
     setTimeout(handler,delay){const id=++nextTimer;timers.set(id,{handler,delay});return id},
     clearTimeout(id){timers.delete(id)}};
   vm.runInNewContext(fs.readFileSync(require.resolve('../assets/government-stripe.js'),'utf8'),context);
-  return {stripe,run,controls,position,next,pause,motion,timers,saved,
+  return {stripe,run,controls,next,pause,motion,timers,saved,
+    fire:()=>{const [id,timer]=timers.entries().next().value;timers.delete(id);timer.handler()},
     visible:()=>run.children.filter(item=>!item.hidden)};
 }
 
-test('The bar displays one linked announcement, advances gently, and pauses on demand',()=>{
+test('The bar flips one linked announcement upward every seven seconds and pauses on demand',()=>{
   const view=loadStripe();
   assert.equal(view.visible().length,1);
   assert.equal(view.controls.hidden,false);
-  assert.equal([...view.timers.values()][0].delay,12000);
+  assert.equal([...view.timers.values()][0].delay,7000);
   const first=view.visible()[0];
-  view.next.events.click();
+  view.fire();
+  assert.equal(first.classes.has('is-leaving'),true);
+  assert.equal(view.visible()[0],first);
+  assert.equal([...view.timers.values()][0].delay,220);
+  view.fire();
   assert.equal(view.visible().length,1);
   assert.notEqual(view.visible()[0],first);
+  assert.equal(view.visible()[0].classes.has('is-entering'),true);
   assert.equal(view.run.children.length,3);
   view.pause.events.click();
   assert.equal(view.pause.textContent,'Play');
@@ -54,13 +60,14 @@ test('The bar displays one linked announcement, advances gently, and pauses on d
   assert.equal(view.timers.size,1);
 });
 
-test('Reduced-motion mode keeps the bar still and permits manual reading',()=>{
+test('Reduced-motion mode still changes stories automatically without animation',()=>{
   const view=loadStripe(true);
-  assert.equal(view.pause.hidden,true);
-  assert.equal(view.timers.size,0);
+  assert.equal(view.pause.hidden,false);
+  assert.equal([...view.timers.values()][0].delay,7000);
   const first=view.visible()[0];
-  view.next.events.click();
+  view.fire();
   assert.notEqual(view.visible()[0],first);
-  assert.equal(view.timers.size,0);
   assert.equal(view.visible()[0].classes.has('is-entering'),false);
+  view.pause.events.click();
+  assert.equal(view.timers.size,0);
 });
