@@ -10,6 +10,7 @@ import requests
 from brief_contract import validate_pair, relationship_fingerprint
 from build_site import inputs
 from source_chronology import public_event_ids, public_directional_counts
+from editorial_corrections import corrections
 
 
 def expected_period(now=None):
@@ -18,9 +19,29 @@ def expected_period(now=None):
     return (end - timedelta(days=6)).isoformat(), end.isoformat()
 
 
+def expected_brief_counts(release, relationship):
+    """Apply the same approved direction overrides used by the Brief publisher."""
+    counts = public_directional_counts(release, relationship)
+    eligible = public_event_ids(release)
+    approved = corrections()
+    for row in relationship['evidence']:
+        event_id = str(row['event_id'])
+        if event_id not in eligible:
+            continue
+        override = approved.get('event:' + event_id, {})
+        for axis in counts:
+            before = row['axes'][axis]['direction']
+            after = override.get(axis + '_direction', before)
+            if after not in counts[axis]:
+                raise ValueError('Invalid approved ' + axis + ' direction: ' + event_id)
+            counts[axis][before] -= 1
+            counts[axis][after] += 1
+    return counts
+
+
 def needs_update(release, relationship, published):
     validate_pair(release, relationship)
-    counts = public_directional_counts(release, relationship)
+    counts = expected_brief_counts(release, relationship)
     return any((
         published.get('release_id') != release['release_id'],
         published.get('source_release_sha256') != release['content_sha256'],
