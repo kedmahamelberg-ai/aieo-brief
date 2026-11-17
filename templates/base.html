@@ -32,7 +32,7 @@
      crossorigin="anonymous"></script>
   {% endif %}
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <link rel="stylesheet" href="{{ local('assets/site.css') }}?v=20261117-quiet-government">
+  <link rel="stylesheet" href="{{ local('assets/site.css') }}?v=20261117-government-flip">
   <link rel="icon" href="{{ local('favicon.ico') }}" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ local('assets/favicon-32.png') }}">
   <link rel="icon" type="image/png" sizes="96x96" href="{{ local('assets/favicon-96.png') }}">
@@ -61,13 +61,12 @@
   <a href="{{ local('archive/index.html') }}" {% if page=='archive' %}aria-current="page"{% endif %}>Past editions</a>
   <a href="{{ local('about/index.html') }}" {% if page=='about' %}aria-current="page"{% endif %}>About</a>
 </div></nav>
-{% if page=='home' and government_ticker %}<aside class="government-stripe" aria-label="Latest government AI announcements">
+{% if page=='home' and government_ticker %}<aside class="government-stripe" aria-label="Government AI announcements">
   <div class="government-stripe-inner">
     <div class="government-stripe-window" id="government-stripe-items">
       {% for item in government_ticker %}<a class="government-stripe-item" href="{{ local('governments-say/index.html') }}" data-date="{{ item.date }}" data-key="{{ item.key }}"{% if not loop.first %} hidden{% endif %}><strong>{{ item.country }} ·</strong> <span>{{ item.headline }}</span></a>{% endfor %}
     </div>
     <div class="government-stripe-controls" id="government-stripe-controls" hidden>
-      <span class="government-stripe-position" id="government-stripe-position" aria-hidden="true"></span>
       <button type="button" id="government-stripe-next" aria-label="Next government announcement">Next</button>
       <button type="button" id="government-stripe-pause" aria-label="Pause automatic announcements">Pause</button>
     </div>
@@ -94,7 +93,7 @@
 <script id="brief-config" type="application/json">{{ public_config|tojson }}</script>
 <script id="brief-items" type="application/json">{{ client_items|tojson }}</script>
 <script src="{{ local('assets/core.js') }}" defer></script><script src="{{ local('assets/community.js') }}" defer></script><script src="{{ local('assets/ux-history.js') }}" defer></script><script src="{{ local('assets/aggregate-analytics.js') }}?v=20261115" defer></script><script src="{{ local('assets/analytics.js') }}?v=20261115" defer></script><script src="{{ local('assets/app.js') }}?v=20261113-government-stripe" defer></script><script src="{{ local('assets/engagement.js') }}" defer></script>
-{% if page=='home' %}<script src="{{ local('assets/carousels.js') }}" defer></script><script src="{{ local('assets/government-order.js') }}" defer></script><script src="{{ local('assets/government-stripe.js') }}?v=20261117-quiet-government" defer></script>{% endif %}
+{% if page=='home' %}<script src="{{ local('assets/carousels.js') }}" defer></script><script src="{{ local('assets/government-order.js') }}" defer></script><script src="{{ local('assets/government-stripe.js') }}?v=20261117-government-flip" defer></script>{% endif %}
 {% if page=='notifications' %}<script src="{{ local('assets/notifications.js') }}" defer></script>{% endif %}
 {% if page=='digest' %}<script src="{{ local('assets/digest.js') }}" defer></script>{% endif %}
 </body></html>
