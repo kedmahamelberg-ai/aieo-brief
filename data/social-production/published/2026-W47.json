@@ -7,12 +7,12 @@
   "recorded_at": "2026-11-16T19:59:31.231722+01:00",
   "publishing_status": "PUBLISHED_AND_SCHEDULED",
   "counts": {
-    "feed_and_notes_published": 16,
-    "feed_and_notes_scheduled": 60,
+    "feed_and_notes_published": 20,
+    "feed_and_notes_scheduled": 56,
     "instagram_story_frames_published": 6,
-    "instagram_story_frames_scheduled": 45,
+    "instagram_story_frames_scheduled": 42,
     "weekly_substack_posts_published": 1,
-    "instagram_story_frames_unverified": 6
+    "instagram_story_frames_unverified": 9
   },
   "items": [
     {
@@ -195,9 +195,10 @@
       "platform": "linkedin",
       "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
       "scheduled_at": "2026-11-17T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+      "verification": "Published Page post inspected with the approved France headline, fact, tracked destination, attribution, three hashtags and one image.",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7528145965007015936?actorCompanyId=146490147"
     },
     {
       "id": "TUE18_FR_5CFF2518_facebook",
@@ -205,9 +206,10 @@
       "platform": "facebook",
       "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
       "scheduled_at": "2026-11-17T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Published Page post inspected at its permalink with the approved full caption, tracked destination, two hashtags and three-image carousel.",
+      "url": "https://www.facebook.com/61594324679612/posts/122136349509477489"
     },
     {
       "id": "TUE18_FR_5CFF2518_instagram",
@@ -215,9 +217,10 @@
       "platform": "instagram",
       "account": "thebrief_ai.empowerment",
       "scheduled_at": "2026-11-17T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Public post inspected with the approved France caption, five hashtags and carousel media; it is the sole new latest placement for the slot.",
+      "url": "https://www.instagram.com/thebrief_ai.empowerment/p/Df2asImMfZC/"
     },
     {
       "id": "TUE18_FR_5CFF2518_substack_note",
@@ -225,9 +228,10 @@
       "platform": "substack_note",
       "account": "The Brief publication, @thebriefaieo",
       "scheduled_at": "2026-11-17T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed topic and date/time"
+      "verification": "Live Note inspected with the approved France topic, caption excerpt and tracked article card.",
+      "url": "https://substack.com/@thebriefaieo/note/c-389084510"
     },
     {
       "id": "WED06_RESEARCH_linkedin",
@@ -827,9 +831,9 @@
       "topic_id": "TUE18_FR_5CFF2518",
       "scheduled_at": "2026-11-17T18:00:00+01:00",
       "platform": "instagram_story",
-      "status": "SCHEDULED",
+      "status": "UNVERIFIED",
       "frames": 3,
-      "verification": "Three frames at exact approved time in Scheduled Stories list"
+      "verification": "The public profile shows an active Story ring, but the saved browser policy blocks Meta Business Suite inspection and Instagram requires login to identify the active frames. No failure or duplicate was observed and no recovery was attempted."
     },
     {
       "topic_id": "WED06_RESEARCH",
@@ -979,6 +983,19 @@
       "checked_at": "2026-11-17T12:17:00+01:00",
       "topic_id": "TUE12_GOVERNMENTS",
       "scheduled_at": "2026-11-17T12:00:00+01:00",
+      "duplicate_check": "PASS: one current placement observed on each inspectable platform",
+      "statuses": {
+        "linkedin": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram_feed": "PUBLISHED",
+        "instagram_story": "UNVERIFIED",
+        "substack_note": "PUBLISHED"
+      }
+    },
+    {
+      "checked_at": "2026-11-17T18:12:30+01:00",
+      "topic_id": "TUE18_FR_5CFF2518",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
       "duplicate_check": "PASS: one current placement observed on each inspectable platform",
       "statuses": {
         "linkedin": "PUBLISHED",
