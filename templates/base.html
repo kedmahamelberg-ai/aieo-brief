@@ -64,7 +64,7 @@
 {% if page=='home' and government_ticker %}<aside class="government-stripe" aria-label="Government AI announcements">
   <div class="government-stripe-inner">
     <div class="government-stripe-window" id="government-stripe-items">
-      {% for item in government_ticker %}<a class="government-stripe-item" href="{{ local('governments-say/index.html') }}" data-date="{{ item.date }}" data-key="{{ item.key }}"{% if not loop.first %} hidden{% endif %}><strong>{{ item.country }} ·</strong> <span>{{ item.headline }}</span></a>{% endfor %}
+      {% for item in government_ticker %}<a class="government-stripe-item" href="{{ local('governments-say/index.html') }}" data-key="{{ item.key }}"{% if not loop.first %} hidden{% endif %}><strong>{{ item.country }} ·</strong> <span>{{ item.headline }}</span></a>{% endfor %}
     </div>
     <div class="government-stripe-controls" id="government-stripe-controls" hidden>
       <button type="button" id="government-stripe-next" aria-label="Next government announcement">Next</button>
