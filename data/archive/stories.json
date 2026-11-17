@@ -1337,10 +1337,10 @@
       "original_headline": "Art ‘must not be sacrificed on the altar of corporate profit’, Liberal senator says as AI policy debate rages",
       "deck": "Senator warns copyright changes in AI policy must protect artists and the environment.",
       "what_happened": "The Guardian reports that Liberal Senator Andrew McLachlan warned against prioritizing data-centre growth and AI investment over artists’ copyright. He pressed for respect of artists’ property rights and noted debates over copyright changes as Australia considers AI policy, including data centres and online safety.",
-      "why_it_matters": "The piece highlights tensions between AI investment and protecting creators; it also points to environmental and property-right concerns that could shape future policy and industry moves.",
+      "why_it_matters": "Australia’s AI policy debate pits investment ambitions against artists’ copyright, electricity costs and environmental concerns.",
       "body_paragraphs": [
-        "The article centers on a debate about how AI uses music, books, and journalism. It quotes McLachlan saying artists’ rights must be protected and that the state should not clear the way for profits at the expense of beauty. It also notes that some AI firms want legal certainty before investing in Australia and mentions an opt-out idea to limit data use.",
-        "Another paragraph notes that datacentres could raise emissions and power costs, and that lawmakers worry about balancing growth with environment and culture. It also records calls for a sustainable approach to building sovereign AI capability."
+        "McLachlan says artists’ rights over music, books and journalism must be protected. Some AI firms want legal certainty before investing in Australia, while an opt-out proposal would let creators limit use of their work.",
+        "Lawmakers also raised concerns that data centres could increase emissions and electricity costs, calling for a sustainable approach to developing Australian AI."
       ],
       "for_humans": "Artists seek fair pay and copyright protection, while proposed data centres raise concerns about electricity costs and environmental damage.",
       "for_ai": "AI companies seek legal certainty for investment, while facing demands to respect artists’ rights and limit environmental harm.",
@@ -1372,7 +1372,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "Based on a single Guardian article and its quotes; does not claim results beyond the source content.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -1394,16 +1394,16 @@
       "kind": "news",
       "slug": "xinhua-digest-fully-reprinted-professor-chen-ai-governance",
       "path": "story/xinhua-digest-fully-reprinted-professor-chen-ai-governance/index.html",
-      "headline": "Fudan scholar says China’s AI rule-making could widen cooperation, but shared benefits remain an argument",
+      "headline": "Fudan scholar proposes wider international cooperation on AI rules",
       "original_headline": "《Xinhua Digest》 fully reprinted Professor Chen Zhimin’s theoretical article “Three Paths by Which China Leads Global AI Governance”.",
-      "deck": "Chen Zhimin’s article describes efforts to shape rules for how AI is developed and used across countries, with more participation for developing nations.",
+      "deck": "Chen Zhimin calls for developing countries to have more say in AI rules and access to its resources.",
       "what_happened": "Xinhua Digest reprinted an argument by Fudan scholar Chen Zhimin about China’s role in setting rules for AI across countries. It describes three approaches: guiding ideas, international institutions, and practical cooperation.",
-      "why_it_matters": "The article argues that countries could better align their AI rules and standards. It also calls for developing nations to have more chances to shape those rules and share in AI’s opportunities.",
+      "why_it_matters": "Chen argues that aligning AI rules and standards could give developing countries more influence and a greater share of the opportunities.",
       "body_paragraphs": [
         "Chen argues that AI rules should protect people’s rights and safety while allowing countries to share development opportunities. He says countries should take part in making the rules, and that AI should respect different languages and cultures."
       ],
       "for_humans": "Developing countries could gain more access to AI resources and a stronger voice in setting international rules.",
-      "for_ai": "Shared standards and cooperation could lower barriers to developing and using AI, in the scholar’s proposal.",
+      "for_ai": "Shared standards could lower barriers to developing and using AI, under Chen’s proposal.",
       "human_direction": "gain",
       "ai_direction": "gain",
       "human_label": "Benefits",
@@ -1432,7 +1432,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "opinion",
-      "limitation": "The article presents an argument and describes initiatives; it does not provide measured evidence that these efforts have improved outcomes.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -1493,7 +1493,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "The reported fruit-sorting accuracy is attributed to the company manager.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -1515,17 +1515,17 @@
       "kind": "news",
       "slug": "spies-who-women-mata-hari-artificial-intelligence",
       "path": "story/spies-who-women-mata-hari-artificial-intelligence/index.html",
-      "headline": "Atalayar traces how spies used personal ties, while noting key claims remain unproven",
+      "headline": "From Mata Hari to AI chips: Atalayar examines espionage through personal ties",
       "original_headline": "Spies Who Are Women: From Mata Hari to Artificial Intelligence",
-      "deck": "The article links a reported Nvidia controversy to a longer history of intelligence agencies using human relationships to seek information. It does not show that the latest suspicions were proven.",
-      "what_happened": "Atalayar reviews cases in which intelligence agencies used personal relationships to seek information or influence, from historical stories to modern espionage. It connects that history to reports that US officials suspect Alice Huang may have been recruited to help obtain information or access to restricted technology; the article says these suspicions have not been publicly proven.",
-      "why_it_matters": "The article argues that personal access can help intelligence agencies reach people and information that may otherwise be hard to obtain. It links the latest allegations to competition over advanced chips used in artificial intelligence, while noting that no public evidence shows trade secrets were obtained.",
+      "deck": "Atalayar connects historical espionage methods with allegations involving Nvidia and competition over advanced AI chips.",
+      "what_happened": "Atalayar examines how intelligence agencies have used personal relationships to seek information or influence. It connects that history with unproven allegations that US officials suspect Alice Huang was recruited to gain access to restricted technology.",
+      "why_it_matters": "Personal access can open routes to confidential information, placing the allegations within the wider competition over advanced chips used in AI.",
       "body_paragraphs": [
-        "The article describes several methods: building trust through romance, using social access to approach influential people, and secretly recording conversations. It also says espionage has not always depended on seduction, and cautions against reducing women spies to their appearance.",
-        "The article reports that Nvidia opened an independent inquiry into whether its leader was targeted by foreign intelligence. It says US agencies suspect Alice Huang may have been recruited by China’s Ministry of State Security, but that no public evidence shows she obtained trade secrets or that Jensen Huang knew of any covert activity."
+        "Historical examples include building trust through romance, approaching influential people in social settings and secretly recording conversations. The account also challenges the stereotype that women spies relied only on seduction.",
+        "Nvidia opened an independent inquiry into whether its leader was targeted by foreign intelligence, according to Atalayar."
       ],
-      "for_humans": "Personal relationships can be exploited to obtain confidential information; the article distinguishes historical cases from unproven allegations.",
-      "for_ai": "The article does not establish that Nvidia’s trade secrets were obtained through the alleged relationship.",
+      "for_humans": "Personal relationships can be exploited to obtain confidential information.",
+      "for_ai": "The allegations concern access to Nvidia’s technology amid competition over advanced AI chips.",
       "human_direction": "loss",
       "ai_direction": "none",
       "human_label": "Risks",
@@ -1554,7 +1554,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "analysis",
-      "limitation": "The article says it has not been publicly shown that Alice Huang obtained trade secrets or that Jensen Huang knew of any covert activity.",
+      "limitation": "The allegations remain unproven. China rejects them; Atalayar cites no public evidence that Alice Huang obtained trade secrets or Jensen Huang knew of covert activity.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -1576,14 +1576,14 @@
       "kind": "news",
       "slug": "cooperative-ai-cooperative-vision-fairer-more-artificial-intelligence",
       "path": "story/cooperative-ai-cooperative-vision-fairer-more-artificial-intelligence/index.html",
-      "headline": "Co-operative groups launch artificial intelligence plan; a shared framework for trials is still needed",
+      "headline": "Co-operative groups launch a programme to shape artificial intelligence together",
       "original_headline": "Cooperative AI: A Cooperative Vision for a Fairer, More Inclusive, and Democratic Artificial Intelligence",
       "deck": "The programme aims to connect co-operative experts and develop tools guided by co-operative principles.",
       "what_happened": "The International Cooperative Alliance, Legacoop and PICO Foundation launched the Cooperative AI programme in September 2026. It aims to build shared knowledge, connect co-operative experts and develop tools based on co-operative principles. A Rome bootcamp brought together co-operative representatives from 18 countries across five continents.",
-      "why_it_matters": "The organisers say co-operatives can help shape the rules for artificial intelligence and how its value is shared. The article says a shared framework is still needed to guide practical experiments.",
+      "why_it_matters": "The organisers want co-operatives to help set AI rules and share its value more widely. A common framework for practical trials is still being developed.",
       "body_paragraphs": [
-        "The article argues that co-operative principles could offer another way to shape artificial intelligence (AI). It points to concerns including communities bearing costs for resources used to develop AI, workers doing training tasks in insecure conditions, and users not being properly informed about how platforms use their data.",
-        "The Rome bootcamp connected people working in co-operative research, education, technology and regional networks. The article describes it as an early step towards a shared vision; it says a common framework is still needed before practical experiments can advance."
+        "Co-operative ownership is proposed as a response to concerns about the costs communities bear, insecure work on AI training tasks and unclear use of personal data.",
+        "The Rome bootcamp connected people working in co-operative research, education, technology and regional networks to begin developing a shared approach."
       ],
       "for_humans": "Co-operative ownership aims to share AI’s value more widely, addressing concerns about workers, personal data and environmental costs.",
       "for_ai": "The programme aims to develop AI tools shaped by co-operative groups and their communities.",
@@ -2173,16 +2173,17 @@
       "kind": "news",
       "slug": "shenzhen-dongguan-american-media-reporters-experienced-expressed-admiration",
       "path": "story/shenzhen-dongguan-american-media-reporters-experienced-expressed-admiration/index.html",
-      "headline": "CNN reporter explores everyday artificial intelligence uses in Shenzhen and Dongguan",
+      "headline": "CNN reporter explores connected cars, drones and AI development in China",
       "original_headline": "In Shenzhen and Dongguan, American media reporters experienced China’s AI firsthand and expressed their admiration...",
-      "deck": "A short Xinhua video description lists delivery drones, automatic parking and voice assistants.",
-      "what_happened": "Xinhua says CNN reporter Rhea Mogul visited Shenzhen and Dongguan to experience uses of artificial intelligence in everyday life. Its video description mentions food delivery by drone, cars that park automatically, voice assistants and a locally developed operating system.",
-      "why_it_matters": "The description connects those experiences with Mogul’s reflections on China’s ambitions and possible future. It offers examples from her visit rather than detailed findings about each technology.",
+      "deck": "Rhea Mogul visits Shenzhen and Huawei’s Dongguan campus to see connected technology in everyday use.",
+      "what_happened": "In a Xinhua video carrying CNN reporting, Rhea Mogul follows drone food deliveries in Shenzhen and sees a car park without anyone inside. She then visits Huawei’s campus in Dongguan, where developers work on connecting devices and services.",
+      "why_it_matters": "The visit links consumer technology with the software and people behind it. Huawei’s HarmonyOS and the separate OpenHarmony open-source foundation are central to the account of how connected devices are being developed.",
       "body_paragraphs": [
-        "The accompanying text says Mogul saw how Chinese developers were building cities around artificial intelligence. It reports her impressions but provides no technical assessment of the systems shown."
+        "Meituan operates drone delivery routes in Shenzhen. Mogul describes the city as a testing ground for technology that connects everyday devices.",
+        "The tour also visits a campus library, where reading and exchanging ideas are presented as part of the work behind future AI systems."
       ],
-      "for_humans": "The video description follows a visitor encountering drone deliveries, automatic parking and voice assistants in two Chinese cities.",
-      "for_ai": "The video description highlights AI use in everyday services, including delivery drones and voice assistants.",
+      "for_humans": "Mogul encounters drone deliveries, self-parking cars and a campus where people develop connected technology.",
+      "for_ai": "OpenHarmony gives companies and developers a shared software foundation on which to build connected devices.",
       "human_direction": "none",
       "ai_direction": "gain",
       "human_label": "Context",
@@ -2209,9 +2210,9 @@
       "topic": "creativity",
       "topic_label": "Culture & creativity",
       "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
+      "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This reading covers Xinhua’s short accompanying text, not the video itself.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -2222,6 +2223,7 @@
         "ai": "gain"
       },
       "location_label": "Shenzhen and Dongguan, China",
+      "source_reading_scope": "complete_video_subtitles",
       "legacy_paths": [
         "story/development-f156dc63-9ac8-497a-bda3-df66cc863209/index.html"
       ],
@@ -2233,11 +2235,11 @@
       "kind": "news",
       "slug": "why-canada-needs-ai-regulation-criminal-justice",
       "path": "story/why-canada-needs-ai-regulation-criminal-justice/index.html",
-      "headline": "Ontario law commission urges criminal-justice AI rules, but adoption remains undecided",
+      "headline": "Ontario law commission proposes 29 changes to criminal-justice AI rules",
       "original_headline": "Why Canada Needs AI Regulation in Criminal Justice",
       "deck": "Its final report makes 29 recommendations, including new laws, an oversight body and a public register of AI tools.",
       "what_happened": "The Law Commission of Ontario released a final report calling for changes to how AI is used in criminal law. After hearing from more than 1,400 people across Ontario, it made 29 recommendations, including a provincial framework, new laws, an oversight authority and a public AI register.",
-      "why_it_matters": "Police and courts in Canada already use AI for tasks such as facial recognition, police reports and legal research. Whether governments will put the commission’s recommendations into effect remains an open question.",
+      "why_it_matters": "Police and courts in Canada already use AI for facial recognition, police reports and legal research. The proposals would make that use more visible and accountable.",
       "body_paragraphs": [
         "The report covers tools used in criminal justice, from surveillance and license plate readers to software that helps draft documents. Canadian prosecutors and courts already use AI for some legal research and writing tasks.",
         "The commission also recommends rules for AI in criminal law and an authority to oversee AI systems. It calls for banning tools that predict whether someone will commit a crime."
@@ -2272,7 +2274,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The article does not say whether governments will adopt the recommendations.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -2298,7 +2300,7 @@
       "original_headline": "Café IA: Understanding Artificial Intelligence in Daily Life",
       "deck": "The announced workshop invites people to discuss artificial intelligence and see examples of tools used in daily life.",
       "what_happened": "The Métropole Européenne de Lille announced a workshop about artificial intelligence. Attendees can ask questions, share experiences and see examples such as assisted writing, image creation and information searches.",
-      "why_it_matters": "The event invites people to explore how artificial intelligence works and where it is used in daily life. The announcement describes plans, not results.",
+      "why_it_matters": "The event invites people to explore how artificial intelligence works and where it is used in daily life.",
       "body_paragraphs": [
         "The event page says the workshop is open to everyone and requires no prior knowledge."
       ],
@@ -2354,16 +2356,16 @@
       "kind": "news",
       "slug": "five-advocacy-groups-ask-california-court-no-ruling",
       "path": "story/five-advocacy-groups-ask-california-court-no-ruling/index.html",
-      "headline": "Five advocacy groups ask California court to halt AI development, alleging harm; no ruling is reported",
+      "headline": "Five advocacy groups ask California court to halt further AI development",
       "original_headline": "Advocacy groups sue to stop development of artificial intelligence, citing dangers",
-      "deck": "The groups say AI systems cause harm and ask a judge to stop further development. Those claims have not been reported as court findings.",
+      "deck": "A lawsuit accuses technology companies of unlawful business practices and seeks an order stopping further development.",
       "what_happened": "Five nonprofit advocacy and online-safety groups filed a lawsuit in San Francisco. They accuse several technology companies of unlawful business practices and ask a judge to stop further AI development, including work on ChatGPT, Grok, Muse, Gemini and Claude.",
       "why_it_matters": "The request would halt AI development if the court granted it. The groups argue that AI is a public nuisance, meaning something they say harms a community or interferes with people’s use of their property.",
       "body_paragraphs": [
         "The lawsuit names Anthropic, Google, Meta, OpenAI and SpaceX. The groups say the companies violated California law against unfair business practices.",
-        "The complaint cites warnings about AI risks from technology leaders. These statements and the groups’ claims are part of their case, not reported court findings."
+        "The complaint cites warnings about AI risks from technology leaders. The groups use those statements to support their case."
       ],
-      "for_humans": "The advocacy groups allege serious harms, including risks to children, and seek court intervention; their claims are not a ruling.",
+      "for_humans": "The advocacy groups allege serious harms, including risks to children, and seek court intervention.",
       "for_ai": "If granted, the requested order would halt further AI development, including work on several named systems.",
       "human_direction": "loss",
       "ai_direction": "loss",
@@ -2395,7 +2397,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The report does not say whether the court has ruled on the request.",
+      "limitation": "The request awaits a reported court decision; the accusations are the groups’ claims.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -2421,10 +2423,10 @@
       "original_headline": "3 Common Misconceptions That Hinder the Adoption of Generative AI in Your Company",
       "deck": "The company argues that available tools and training can make adoption more practical.",
       "what_happened": "IBM argues that smaller businesses often overestimate the resources needed to start using content-generating artificial intelligence. Its article challenges assumptions about cost, skills and the difficulty of putting the technology to work.",
-      "why_it_matters": "IBM’s advice is to consider available tools, staff training and safeguards together. The argument comes from a supplier promoting its own products and examples.",
+      "why_it_matters": "IBM recommends combining available tools with staff training and safeguards when choosing a first business use.",
       "body_paragraphs": [
-        "The article describes Make Music Count using watsonx for personalized mathematics learning. It also presents Ovum Health’s use of the technology to answer fertility questions with medically validated information.",
-        "These examples support IBM’s case for trying the technology in a defined business task. They are examples presented by IBM, rather than an independent comparison of products."
+        "IBM describes Make Music Count using watsonx for personalized mathematics learning and Ovum Health using it to answer fertility questions with medically validated information.",
+        "The examples support the supplier’s case for trying its technology on a defined business task."
       ],
       "for_humans": "IBM says smaller businesses can use available tools and training to put artificial intelligence to work.",
       "for_ai": "IBM promotes its products for uses such as personalized learning and patient questions.",
@@ -2457,7 +2459,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "company_claim",
-      "limitation": "IBM presents its own argument and product examples.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -2479,9 +2481,9 @@
       "kind": "news",
       "slug": "canadian-media-can-sue-openai-ontario",
       "path": "story/canadian-media-can-sue-openai-ontario/index.html",
-      "headline": "Ontario court lets Canadian publishers pursue OpenAI, but does not decide whether its training broke copyright law",
+      "headline": "Ontario appeals court allows Canadian publishers’ copyright case against OpenAI to proceed",
       "original_headline": "Canadian media can sue OpenAI in Ontario",
-      "deck": "The appeals court says Ontario can hear the case. The publishers’ accusations have not yet been decided.",
+      "deck": "The publishers can pursue their claims over AI training in Ontario.",
       "what_happened": "An Ontario appeals court rejected OpenAI’s appeal, allowing Canadian publishers’ copyright case to proceed in the province. The publishers say OpenAI used their news stories to train ChatGPT, meaning to help it learn from examples, without permission or payment.",
       "why_it_matters": "The case is the first in Canada to address using copyrighted material to train AI systems. It gives publishers a chance to pursue their claims in a Canadian court.",
       "body_paragraphs": [
@@ -2518,7 +2520,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The court decided Ontario can hear the case; it did not decide whether OpenAI infringed copyright.",
+      "limitation": "The ruling settles where the case can be heard, leaving the copyright accusations to be decided.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -3063,10 +3065,10 @@
       "original_headline": "In the face of generative AI, do strategic monitoring tools still have added value?",
       "deck": "Arnaud Marquant argues that these tools can make monitoring easier and faster while keeping sources traceable.",
       "what_happened": "In a column for KB Crawl, Arnaud Marquant describes how generative AI can turn everyday-language requests into technical search settings and automate tasks such as translation and summaries. He argues that specialist monitoring tools still add value by tracking sources and letting users check the material behind the results.",
-      "why_it_matters": "The column’s argument is that trust in information depends not only on getting it quickly, but also on knowing where it came from.",
+      "why_it_matters": "Marquant argues that trust in information depends not only on getting it quickly, but also on knowing where it came from.",
       "body_paragraphs": [
         "Marquant says users can describe what they want to monitor in everyday language, and AI can translate that request into technical settings. He also says some platforms can automatically prepare and send newsletters.",
-        "The column says recurring information can suit automation, but interpreting a competitor’s moves or spotting early warning signs still calls for people who understand the organization’s goals. It argues that specialist platforms can help users review sources and ask AI questions about a selected set of material."
+        "Marquant says recurring information can suit automation, but interpreting a competitor’s moves or spotting early warning signs still calls for people who understand the organization’s goals. Specialist platforms, in his view, can help users review sources and ask AI questions about a selected set of material."
       ],
       "for_humans": "People without specialist skills can set up monitoring more easily, while strategic decisions still need human judgment.",
       "for_ai": "AI can automate more steps in monitoring, while specialist tools can let users trace the sources behind its results.",
@@ -3122,12 +3124,12 @@
       "path": "story/ai-black-light-laboratory-beyond-no-doing-experiments/index.html",
       "headline": "Chinese laboratories use artificial intelligence to plan experiments that robots carry out",
       "original_headline": "AI Black Light Laboratory: beyond “no humans doing experiments”",
-      "deck": "The report examines laboratories where results feed back into the design of further tests.",
+      "deck": "AI proposes laboratory tests, robots carry them out, and the results guide the next experiment.",
       "what_happened": "Science and Technology Daily describes Chinese laboratories combining artificial intelligence, robots and instruments to run experiments. Software proposes a test, equipment carries it out, and the results help decide what to try next.",
-      "why_it_matters": "This goes beyond a machine repeating a fixed set of instructions. The report also describes decisions that remain with scientists and the need for safety rules.",
+      "why_it_matters": "These systems can revise experiments using earlier results. Scientists still choose research directions and oversee important safety decisions.",
       "body_paragraphs": [
         "At a Nanjing drug research company, robotic equipment follows experimental plans revised from earlier results. Researchers interviewed for the report distinguish this process from ordinary laboratory automation.",
-        "People still set research directions and oversee important decisions. The report discusses data quality, standards and safety as these laboratories move toward wider use."
+        "People still set research directions and oversee important decisions. Data quality, standards and safety remain concerns as these laboratories move toward wider use."
       ],
       "for_humans": "Scientists retain decisions about research direction and important safety questions.",
       "for_ai": "Artificial intelligence can use experimental results to propose the next laboratory test.",
@@ -3159,7 +3161,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The report describes laboratory practice and interviewees’ claims, not proof that an experimental drug is safe or effective.",
+      "limitation": "The laboratory examples concern how experiments are run; they do not establish whether any resulting drug is safe or effective.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -3187,7 +3189,7 @@
       "what_happened": "Manchester Animation Festival says films entered in its competition from 2027 will be ineligible if any part of the final moving image was made or changed using generative AI. The announcement came with the 2026 awards: When the Sea Was Calm won the Short Film Award.",
       "why_it_matters": "The festival is making its support for animation artists part of its competition rules. The rule targets AI-made or changed content in the final moving image, not necessarily every AI-assisted production step.",
       "body_paragraphs": [
-        "The published rule focuses on the finished moving images. It does not automatically ban every use of AI during development or other production work, according to the source.",
+        "The published rule covers finished moving images, leaving its application to other production methods open to further guidance.",
         "Festival director Steve Henderson said the policy reflects support for animation artists and craftspeople. Mamuka Tkeshelashvili directed When the Sea Was Calm, the 2026 Short Film Award winner."
       ],
       "for_humans": "The festival says the rule safeguards the artistic skills of people who make animation.",
@@ -3227,7 +3229,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The source says the rule’s application to particular production methods may need further guidance.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -3289,7 +3291,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "opinion",
-      "limitation": "The article presents Hollander’s argument and recommendations, not a study measuring their effects.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -3315,7 +3317,7 @@
       "original_headline": "Mirendil raises $1 billion in funding to accelerate AI model development",
       "deck": "The startup says its tools divide development work among automated assistants.",
       "what_happened": "Mirendil has raised $1 billion in a funding round led by Kleiner Perkins and Clearlake Capital. The startup develops software intended to reduce the work involved in building artificial intelligence.",
-      "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing. Those claims concern its own tools and projects.",
+      "why_it_matters": "The company says its Lor platform can compare different designs, handle development tasks and fix errors during testing.",
       "body_paragraphs": [
         "Mirendil says one researcher used its tools to build a coding system called Mirendil-Base. The company reports that the project took about 3.5 months and cost $10 million, with automated assistants writing more than 99% of its code.",
         "The company has also introduced Fern, a system focused on programming work for artificial intelligence laboratories. It plans to use upgraded versions of Mirendil-Base to develop more capable systems for working with language."
@@ -3350,7 +3352,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "company_claim",
-      "limitation": "The development figures and capabilities are claims attributed to Mirendil.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -3381,7 +3383,7 @@
         "By the end of 2026, the plan calls for initial arrangements for managing and sharing data. By the end of 2027, it aims to develop specialized AI capabilities and examples of automated assistants and their uses.",
         "The 2028 goal is wider integration of AI into the sector, alongside policies, standards and cooperation. The plan also includes safety arrangements and support for developing specialist skills."
       ],
-      "for_humans": "The plan aims to improve housing services, construction safety and city management through AI; these are intended outcomes.",
+      "for_humans": "Shanghai aims to improve housing services, construction safety and city management through AI.",
       "for_ai": "The plan would expand AI use in construction, housing services and city management.",
       "human_direction": "gain",
       "ai_direction": "gain",
@@ -3418,7 +3420,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "These are planned steps and targets, not reported results.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -3444,10 +3446,10 @@
       "original_headline": "Can artificial intelligence help us understand the gaming habits of past civilizations?",
       "deck": "Walter Crist and his team tested possible rules against wear marks on a limestone game board; they say they found a likely match.",
       "what_happened": "Archaeologist Walter Crist and his team used AI programs to test possible rules for a board carved into a limestone slab from ancient Rome. They compared simulated play with wear marks on the board and concluded the game, named Ludus Coriovalli, was a two-player blocking game.",
-      "why_it_matters": "The team’s reconstruction suggests blocking games existed in ancient Rome, earlier than researchers had believed. The article says AI made it practical to test many rule sets, but notes that the method may not work as well for more complex games.",
+      "why_it_matters": "The team’s reconstruction suggests blocking games existed in ancient Rome, earlier than researchers had believed. AI made it practical to compare many possible rule sets.",
       "body_paragraphs": [
         "Crist used a system called Ludii to have AI agents play games based on more than 100 possible rule sets. The team removed rules that did not produce wear patterns like those on the board, narrowing the options before refining the game’s rules.",
-        "In the proposed game, one player has more counters and tries to block the other from moving. The player who stays free longest wins. The article says the method may be harder to use with more complex games, where simulated play can differ more from human play."
+        "In the proposed game, one player has more counters and tries to block the other from moving. The player who stays free longest wins."
       ],
       "for_humans": "AI simulations helped researchers test more possible rules for an ancient game.",
       "for_ai": "AI programs tested thousands of rounds across possible rule sets to help match play with marks on the board.",
@@ -3479,7 +3481,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "study",
-      "limitation": "The article says the method may not apply widely yet: more complex games and the social experience of playing can be difficult to represent in simulations.",
+      "limitation": "More complex games and the social experience of playing are harder to represent in these simulations.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -3540,7 +3542,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The comparison study is planned; the source reports no results from it.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -3569,7 +3571,7 @@
       "why_it_matters": "Students are to learn both how to use the technology and the scientific principles behind it. The university also includes its ethical and social implications in the planned course.",
       "body_paragraphs": [
         "The first year shares foundations in mathematics, physics and programming with computer science. More specialized artificial intelligence teaching follows, alongside practical projects.",
-        "EPFL says the detailed study plan for the academic year 2027-2028 will be published in summer 2027. The page describes a planned degree, not results from students who have completed it."
+        "EPFL says the detailed study plan for the academic year 2027-2028 will be published in summer 2027."
       ],
       "for_humans": "Students will study scientific foundations alongside practical, ethical and social questions.",
       "for_ai": "The degree will train students to understand and develop artificial intelligence systems.",
@@ -3661,12 +3663,12 @@
       "headline": "A trained robot model succeeded in 18 of 30 real-world trials",
       "deck": "Can practice in simulated tasks help an AI model control a real robot?",
       "what_happened": "Researchers tested whether an open AI model could control a robot after practice in simulated tasks, rather than learning from demonstrations. On a real robot it had not met during training, it completed tasks in 18 of 30 trials; the untrained model succeeded in none. The paper is a preprint.",
-      "why_it_matters": "The result suggests skills learned in simulated tasks may carry over to an unfamiliar robot, though evidence comes from one robot and 30 trials.",
+      "why_it_matters": "Practice in simulated tasks may help a model control an unfamiliar robot.",
       "body_paragraphs": [
         "The model used camera images and information about the robot to choose movements; a separate controller carried them out. It was trained on related tasks in two simulated environments.",
-        "On a simulated test, success rose from 1.6% to 74.4%. The authors say training covered only two simulated environments and a small set of tasks."
+        "On a simulated test, success rose from 1.6% to 74.4%."
       ],
-      "limitation": "The authors say training covered only two simulators and a small set of tasks; the real-robot result came from 30 trials.",
+      "limitation": "Training covered two simulated environments and a small task set; the real-robot test involved one robot and 30 trials.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -3750,7 +3752,7 @@
       "headline": "A simpler check matched ships better than the tested model",
       "deck": "Satellite radio signals can show vessel activity, but do not identify a ship by themselves.",
       "what_happened": "Researchers tested a model matching satellite radio detections with ship-tracking records, using simulated detections modeled on real systems. A revised score improved matching and separation of detections from vessels without tracking records, but a simpler check using time and distance scored higher on both measures.",
-      "why_it_matters": "The comparison shows how the model performed against a simpler option, but the results are based on simulated signals, not real satellite detections.",
+      "why_it_matters": "A simpler time-and-distance check performed better, making it an important comparison when choosing a ship-matching method.",
       "body_paragraphs": [
         "For matching, researchers measured how often each method ranked the correct ship first when a detection had several possible matches. They also tested how well scores distinguished untracked vessels.",
         "The test used cargo vessels, records from the U.S. ocean and weather agency, and simulated radio detections. The authors say the model’s rules need adjustment for other vessel types."
@@ -3822,7 +3824,7 @@
         "Chethan Pandarinath"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-17T12:08:54.917266+00:00",
+      "affiliation_checked_at": "2026-11-17T16:40:56.394101+00:00",
       "source_verified_at": "2026-11-16T22:04:19.024717+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -3836,12 +3838,12 @@
       "headline": "A phone turned attempted-speech brain signals into text up to 370 times real time",
       "deck": "Brain-to-text systems can need powerful computers and have uneven delays, making portable use difficult.",
       "what_happened": "Researchers built a system that turns brain activity during attempted speech into text using speech-recognition software. In tests on public data from one person with a brain device supporting communication, the error score was as low as 4.39%. On a phone, it ran up to 370 times real time.",
-      "why_it_matters": "This points toward portable communication for people who cannot speak. Whether the reported speed and reliability hold during live clinical use remains untested.",
+      "why_it_matters": "The result points toward portable communication tools for people who cannot speak.",
       "body_paragraphs": [
         "A brain-based speech device uses brain signals to support communication. The researchers also report that adjusting the system with new examples improved performance on later days.",
-        "Tests used an iPhone 15 Pro Max. The authors call this an early step toward untethered brain-to-text communication, not a demonstration of everyday clinical use."
+        "Tests used an iPhone 15 Pro Max."
       ],
-      "limitation": "The results come from the datasets and tests described in this preprint. The authors say live clinical research is needed to test whether the speed and reliability gains carry over to live use.",
+      "limitation": "This preprint used data from one person. Live clinical research is needed to test the speed and reliability during everyday use.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -3920,12 +3922,12 @@
       "headline": "A movement-learning system beat comparison methods on most reported measures",
       "deck": "Teaching computers to understand the meaning and order of human movement from body-position data remains challenging.",
       "what_happened": "Researchers offer a way to learn from three-dimensional records of body positions over time. The system predicts short movement segments in both time directions instead of exact poses. Across three tasks, it beat comparison methods on most reported measures.",
-      "why_it_matters": "The findings show stronger results on tests involving movement descriptions, forecasts, and filling data gaps; they do not show better outcomes in everyday settings.",
+      "why_it_matters": "Learning movement order could help with descriptions, forecasts and filling gaps in body-position records.",
       "body_paragraphs": [
         "Tests covered movement descriptions, forecasts up to four seconds ahead, and estimates of missing movement. Researchers used three daily-activity datasets and kept learned movement patterns unchanged during testing.",
-        "Opening a refrigerator before reaching inside illustrates how the system learns movement order; this example was not a separate real-world test."
+        "Opening a refrigerator before reaching inside illustrates the movement order the system aims to learn."
       ],
-      "limitation": "This is a preprint. The reported evidence comes from comparisons on three datasets and three movement tasks, not tests of practical outcomes in real-world use.",
+      "limitation": "This preprint compares three datasets and three movement tasks; everyday use was not tested.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -4003,10 +4005,10 @@
       "headline": "Robot teams improved beyond imitation in four simulated tasks",
       "deck": "One person taught team members one at a time, and the teams learned beyond copying.",
       "what_happened": "Researchers tested a way to train cooperating robot teams from demonstrations. Each robot learned while teammates followed their current behavior. In four simulated tasks, teams improved beyond copying alone. They improved faster than comparison methods in two tasks and were the only method to improve in the other two.",
-      "why_it_matters": "The results suggest demonstrations can help robot teams learn without limiting later performance, but the study does not show how well the approach works with real robots.",
+      "why_it_matters": "Demonstrations gave the robot teams a starting point they could improve through trial and feedback.",
       "body_paragraphs": [
         "During training, the system weighs each robot’s learned behavior against a new action learned through trial and feedback. Some robots can keep their learned behavior while others try improved actions.",
-        "In a separate simulated corridor task, one person provided demonstrations. The team passed the imitation-trained approach faster than comparison methods; this test covered only one person and one task."
+        "In a separate simulated corridor task, one person provided demonstrations. The team improved beyond imitation faster than the comparison methods."
       ],
       "limitation": "All experiments were in simulation. The human-demonstration test involved one person and one task.",
       "summary_basis": "Summary of the paper",
@@ -4079,22 +4081,25 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "54f763875b06579dd7c7484365fbbb7b8840afc236c0727f54a9deea608bddfc",
       "pdf_url": "https://arxiv.org/pdf/2611.18553v1",
-      "has_editorial": false,
-      "headline": "WeightBench: Evaluating Language Models as Weight-Space Programmers",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
+      "has_editorial": true,
+      "headline": "AI can read small networks, but struggles to repair larger ones",
+      "deck": "WeightBench tests whether AI assistants can inspect and change another model’s internal settings without conventional training.",
+      "what_happened": "Researchers tested AI assistants on 42 tasks involving the numerical settings inside neural networks. The strongest systems could interpret small networks and build simple control systems, but struggled to repair language models, compress them without data or recognize impossible edits.",
+      "why_it_matters": "The tests separate promising small-scale skills from harder repair work. Improving one behavior can damage another, so a successful edit needs more than a higher task score.",
+      "body_paragraphs": [
+        "Each task limits access, computing and allowed changes. An audit records tool use and sets suspicious runs aside with a score of zero until reviewed.",
+        "Thirty-nine tasks passed the benchmark’s validity check. Some reference solutions had access unavailable to the tested assistants, so they demonstrate that a solution exists rather than that an assistant could discover it under the same constraints."
+      ],
+      "limitation": "This preprint uses few runs per task. Flagged runs await review, and one model was tested on 38 rather than all 42 tasks.",
+      "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
       "kind": "research",
       "slug": "weightbench-evaluating-language-models-weight-space-programmers",
       "path": "research/weightbench-evaluating-language-models-weight-space-programmers/index.html",
@@ -4122,6 +4127,13 @@
       "evidence_complete": false,
       "display_scope": "",
       "edition": "2026-11",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.18553v1",
+      "paper_sections": 29,
+      "paper_text_sha256": "e8c1ca257fef422ab0f6d9f61754a235735f6c0071630e77ce31927a690f7528",
+      "html_reader_version": 1,
+      "research_reading_version": "paper-practitioner-v1",
+      "claim_status": "study",
       "legacy_paths": [
         "research/paper-29f3a0ced2bcb71a33818a12/index.html"
       ],
@@ -4536,10 +4548,10 @@
       "headline": "Public checks show ideas can be judged, but results vary with setup",
       "deck": "A public review framework tests ideas across budgets before big model training; findings vary with data, compute and starting choices.",
       "what_happened": "Problem: results may not hold across different budgets and data. Approach: they compared ideas using five budget scenarios, then trained very large models on massive data to test if gains persisted. Finding: some forecasts matched outcomes, but depended on starting configurations.",
-      "why_it_matters": "Planning helps, but teams should test with their own data and hardware to avoid overclaiming results.",
+      "why_it_matters": "Smaller experiments can help teams decide which training ideas merit a larger computing budget.",
       "body_paragraphs": [
-        "The project records experiments in public. It shows forecasts may not hold with different data, budgets, or tasks. Expect variation and test early with your own resources.",
-        "Public reviews help teams pick plausible routes, but final choices should be checked with your own data, hardware, and goals before committing to a large project."
+        "The project records experiments in public so teams can examine how training ideas perform under different budgets.",
+        "Forecasts were then compared with results from much larger models to see which improvements carried over."
       ],
       "limitation": "Results depend on the starting setup, budgets, and context; extrapolations may change with compute, data, and methods.",
       "summary_basis": "Summary of the paper",
@@ -4629,12 +4641,12 @@
       "pdf_url": "https://arxiv.org/pdf/2611.17334v1",
       "has_editorial": true,
       "headline": "Study finds AI can learn images without a separately trained image component",
-      "deck": "A careful, controlled test shows that dedicating vision capacity matters more than relying on pretrained vision parts, with results depending on data and compute.",
+      "deck": "A controlled test shows that dedicating vision capacity matters more than relying on pretrained vision parts.",
       "what_happened": "In a controlled test, researchers built multi-part models from the ground up using common data and the same total compute. They found the image part trained together with the rest could match or beat models that used a separately trained image encoder.",
-      "why_it_matters": "For organizations, this suggests you can save time and compute by training the image and language parts together, but outcomes depend on data and budget.",
+      "why_it_matters": "The comparison gives developers another way to build image-and-language models without relying on a separately trained image component.",
       "body_paragraphs": [
         "The study tested three design choices at once: training from scratch, a dedicated image-capability part, and where the image work sits in the model. It found the dedicated image-capability part was the key to better understanding, even when starting from scratch.",
-        "A practical takeaway is to start training image and language parts together early, and not rely on a large pretrained image encoder. Results can shift with data and compute limits."
+        "Training the image and language components together matched or exceeded the tested alternatives under the shared data and computing budget."
       ],
       "limitation": "The results apply to backbones around 1.7B and 4B parameters and the specific data mix used; different data or budgets may change outcomes.",
       "summary_basis": "Summary of the paper",
@@ -4717,9 +4729,9 @@
       "pdf_url": "https://arxiv.org/pdf/2611.17323v1",
       "has_editorial": true,
       "headline": "Unlabeled data helps agents learn, but choosing the best program hurts",
-      "deck": "Can automatic agents learn from unlabeled data without heavy human tuning, and what limits still hold.",
-      "what_happened": "What happened: An approach uses unlabeled data and searches many program options with limited feedback. It found that, on many tasks, agent-made programs can match or beat strong baselines, but picking the best option from many can cut performance by up to 47%. A large benchmark and ecology tests were added to study this.",
-      "why_it_matters": "Why it matters: Data can cut labeling needs, but gains depend on reliably selecting the right program; poor selection under fixed computing can erase advantages.",
+      "deck": "Agents can develop training programs from unlabeled data, but selecting the strongest candidate remains difficult.",
+      "what_happened": "An approach uses unlabeled data and searches many program options with limited feedback. It found that, on many tasks, agent-made programs can match or beat strong baselines, but picking the best option from many can cut performance by up to 47%. A large benchmark and ecology tests were added to study this.",
+      "why_it_matters": "Data can cut labeling needs, but gains depend on reliably selecting the right program; poor selection under fixed computing can erase advantages.",
       "body_paragraphs": [
         "Agents compare many training ideas using unlabeled data and pick the best one. In tests, they matched top baselines and beat them on several datasets, but the process can fail when the system misjudges a program’s quality.",
         "In practice, organizations may gain from automation but must verify which program the agent chose and adjust if results dip in real-world tasks."
@@ -4900,8 +4912,7 @@
       "what_happened": "A checker watches results and triggers a rewrite only when it helps. It weighs options and keeps the best edit or the original.",
       "why_it_matters": "Adding a rewrite step can raise accuracy, but teams must budget extra computing and plan for higher costs and longer run times.",
       "body_paragraphs": [
-        "A checker watches results and triggers a rewrite only when it helps. It weighs options and keeps the best edit or the original.",
-        "Across benchmarks, accuracy improves, but the extra computing required grows and gains differ by task and model. Some cases show bigger gains than others."
+        "Across five math and coding tasks, results differed by task and model. The checking step used extra computing to decide whether to keep an edit or retain the original."
       ],
       "limitation": "The study looked at five math or code tasks and three generator models; results may not apply to other tasks or models.",
       "summary_basis": "Summary of the paper",
@@ -4993,9 +5004,9 @@
       "why_it_matters": "Remembering everything has a cost. The study tests a narrower approach: keep useful file locations and commands for checking code, then teach the assistant when those notes help.",
       "body_paragraphs": [
         "Each task starts with the code changes left by previous tasks. Notes are written before the next task is known. The researchers compared runs with and without parts of the earlier record to identify useful information.",
-        "Training rewards successful solutions and penalizes extra steps in successful runs. The reported improvement combines the memory design with further training; it is not evidence that adding notes alone produces the whole gain."
+        "Training rewards successful solutions and penalizes extra steps in successful runs. The reported improvement combines the memory design with further training. The comparison measures that combined approach."
       ],
-      "limitation": "This preprint reports tests on selected coding tasks. It does not establish the same improvement for every software project.",
+      "limitation": "This preprint tests selected tasks within software projects, combining memory design with further training.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -5508,74 +5519,6 @@
       "url_slug_version": 1
     },
     {
-      "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
-      "event_id": "e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
-      "kind": "news",
-      "slug": "artificial-intelligence-dizzying-graph-fuels-fears-bubble",
-      "path": "story/artificial-intelligence-dizzying-graph-fuels-fears-bubble/index.html",
-      "headline": "OpenRouter chart shows rapid growth and a shift toward downloadable AI models",
-      "original_headline": "Artificial Intelligence: The dizzying graph that fuels fears of a bubble",
-      "deck": "The author’s public chart tracks processing volumes from January through October.",
-      "what_happened": "A public chart by Duc-Quang Nguyen shows weekly OpenRouter traffic rising from 6,400 billion tokens, the units used to count text processed, in January to 194,000 billion in late October. It describes that as roughly thirty times the earlier volume.",
-      "why_it_matters": "Growth differs between providers. The chart shows a larger share going to models that people can download and run on their own machines.",
-      "body_paragraphs": [
-        "It reports growth of more than 130 times for DeepSeek, compared with 45 times for OpenAI and 12 times for Anthropic.",
-        "Downloadable models rose from about a third of traffic to seven tenths. Models available only through their providers fell from 57% to 20%."
-      ],
-      "for_humans": "The chart measures model usage through OpenRouter, rather than outcomes for the people using those models.",
-      "for_ai": "Downloadable models account for a larger share of the OpenRouter traffic shown in the chart.",
-      "human_direction": "none",
-      "ai_direction": "gain",
-      "human_label": "Context",
-      "ai_label": "Benefits",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "Le Temps",
-          "headline": "Artificial Intelligence: The dizzying graph that fuels fears of a bubble",
-          "url": "https://www.letemps.ch/cyber/intelligence-artificielle/intelligence-artificielle-le-graphique-vertigineux-qui-materialise-les-craintes-d-une-bulle",
-          "date": "2026-11-12",
-          "language": "fr"
-        },
-        {
-          "publisher": "Duc-Quang Nguyen / Le Temps , public chart",
-          "headline": "Tokens IA ouverts vs fermés",
-          "url": "https://flo.uri.sh/story/3852596/embed",
-          "date": "2026-11-06",
-          "language": "zh"
-        }
-      ],
-      "source_count": 2,
-      "publisher": "Le Temps",
-      "date": "2026-11-12",
-      "display_date": "12 Nov 2026",
-      "markets": [
-        "CA"
-      ],
-      "market_label": "Canada",
-      "topic": "business",
-      "topic_label": "Business & investment",
-      "reading_minutes": 1,
-      "summary_basis": "Source-checked editorial correction",
-      "claim_status": "reporting",
-      "limitation": "This Brief covers only the published chart captions, not the full Le Temps article.",
-      "has_editorial": true,
-      "access_recovery_validated": false,
-      "edition": "2026-W46",
-      "period_start": "2026-11-09",
-      "period_end": "2026-11-15",
-      "box_effects": {
-        "human": "none",
-        "ai": "gain"
-      },
-      "location_label": "AI market analysis",
-      "legacy_paths": [
-        "story/development-e9a9b601-601d-470b-9dcb-d95e51a0b2f3/index.html"
-      ],
-      "url_slug_version": 1
-    },
-    {
       "key": "event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
       "event_id": "91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
       "kind": "news",
@@ -5584,11 +5527,11 @@
       "headline": "France plans Rennes center to coordinate military uses of artificial intelligence",
       "original_headline": "A international excellence center in Rennes dedicated to artificial intelligence for defense is established",
       "deck": "The defense ministry expects the center near Rennes to open next summer with 34 military and civilian staff; France plans to send 17.",
-      "what_happened": "France's defense ministry presented a planned international center near Rennes to coordinate work on artificial intelligence in the armed forces. The article says it should open next summer and expects 34 military and civilian staff, including 17 from France.",
-      "why_it_matters": "The ministry wants the center to share experience and working practices among armed forces using artificial intelligence. This describes planned work, not results from a center already operating.",
+      "what_happened": "France's defense ministry presented a planned international center near Rennes to coordinate military uses of AI. It expects the center to open next summer with 34 military and civilian staff, including 17 from France.",
+      "why_it_matters": "The ministry wants armed forces to share experience and working practices as they adopt AI.",
       "body_paragraphs": [
-        "The article says several allied countries have committed to the project. It does not say how many staff those countries will provide. France expects to send 17 people.",
-        "Planned tasks include bringing interested groups together, developing working practices, following new technology and collecting lessons. The article says the center will not be dedicated to producing artificial intelligence services."
+        "Several allied countries have committed to the project. France expects to contribute half of the planned staff.",
+        "The center would connect interested groups, develop working practices, follow new technology and collect lessons from military AI use. Its role is coordination rather than producing AI services."
       ],
       "for_humans": "Military and civilian staff would share experience and learn better ways to use AI in defence work.",
       "for_ai": "The planned centre would support wider, coordinated military use of AI, rather than produce AI services itself.",
@@ -5620,7 +5563,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The article describes a center that has not opened yet, so it does not report results from its work.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -5649,7 +5592,7 @@
       "why_it_matters": "Spreading powdered rock on farmland can help remove carbon dioxide from the air. Choosing promising fields and measuring how much carbon the rock removes can be costly, so the model could help with two barriers to expanding this approach.",
       "body_paragraphs": [
         "The model considers soil makeup, minerals in nearby crushed rock, rainfall, humidity, temperature and large-scale weather patterns. Microsoft researcher Felipe Oviedo says data from Brazilian fields enabled predictions for fields in Mississippi.",
-        "The source says the findings suggest AI could help address practical barriers to expanding this method. The research is due to be shared in a paper that has not yet been checked by other researchers; Terradot co-founder Sasankh Munukutla says further development and extensive testing are needed."
+        "Terradot co-founder Sasankh Munukutla sees potential for the model to help expand carbon-removal projects."
       ],
       "for_humans": "The model could help people working on carbon removal identify farmland where crushed rock may work well.",
       "for_ai": "TerraNova extends AI prediction to soil and rock data to estimate carbon removal across different fields.",
@@ -5682,7 +5625,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "study",
-      "limitation": "The research is described as forthcoming and has not yet been checked by other researchers.",
+      "limitation": "The forthcoming research has not yet been checked by other researchers; further development and extensive testing are planned.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -5708,7 +5651,7 @@
       "original_headline": "United Kingdom-Norway Joint Statement on Artificial Intelligence",
       "deck": "A joint statement identifies possible work on computing, defence, security testing and research.",
       "what_happened": "Ministers from the United Kingdom and Norway have set out plans to cooperate more closely on artificial intelligence. The statement identifies areas they intend to explore, including computing infrastructure, defence applications and security testing.",
-      "why_it_matters": "The countries want to combine their strengths in research, technology, energy and investment. The statement records intentions rather than creating binding legal duties.",
+      "why_it_matters": "The countries want to combine their strengths in research, technology, energy and investment.",
       "body_paragraphs": [
         "The proposed cooperation includes sharing knowledge about the capabilities and risks of advanced systems. It also covers international rules, research links and exchanges about other emerging technologies.",
         "The ministers plan to stay in regular contact, with their departments coordinating the work. Cooperation depends on each country’s laws, policies and available resources."
@@ -5772,7 +5715,7 @@
       "why_it_matters": "The project links a working restaurant with engineering and data analysis. Students can study the equipment in use rather than only in a classroom.",
       "body_paragraphs": [
         "An intern helps maintain the robot and works with Miso Robotics. The university also plans a certification program covering use and repairs.",
-        "Graduate teams are studying information from the kitchen, including recorded operating data and video, to examine how the robot and people work together. The announcement describes that research rather than reporting its results."
+        "Graduate teams are studying information from the kitchen, including recorded operating data and video, to examine how the robot and people work together."
       ],
       "for_humans": "Students gain practical experience maintaining and studying a restaurant robot.",
       "for_ai": "Flippy is operating in a university restaurant for the first time.",
@@ -5804,7 +5747,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The university describes its partnership and planned learning activities; the graduate research findings are not reported.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -5865,7 +5808,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is an implementation guide, not a report measuring a deployed system’s performance.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -5894,7 +5837,7 @@
       "why_it_matters": "His argument is that installing new technology alone will not deliver its expected economic benefits. He says companies also need to change how tasks and knowledge are organized.",
       "body_paragraphs": [
         "Baidu presented internal figures as early support for the approach. It said daily active automated assistants rose from about 5,000 to 37,000, while completed tasks increased from 84,000 a week to more than a million.",
-        "The event also included announcements about new products and computing equipment. Li’s broader claims about how jobs will change are predictions, while the internal usage figures are Baidu’s own account."
+        "The event also included announcements about new products and computing equipment."
       ],
       "for_humans": "Li predicts that work will be reorganized around tasks, shared knowledge and repeated improvements.",
       "for_ai": "Baidu says its automated assistants are handling more internal tasks.",
@@ -5926,7 +5869,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "opinion",
-      "limitation": "The organizational argument is Li’s view; the reported internal figures come from Baidu.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -5951,10 +5894,10 @@
       "headline": "Legal writer Zalcberg says public AI buying needs safeguards despite delayed rules for listed high-risk uses",
       "original_headline": "AI in Public Markets by Pierre-Ange Zalcberg",
       "deck": "His legal analysis says public agencies must check which rules apply, protect data and remain responsible when AI helps review bids.",
-      "what_happened": "Legal writer Pierre-Ange Zalcberg argues that public agencies need to manage AI purchases carefully. The article says rules for AI used in legally listed high-risk areas,such as hiring, education and essential public services,were delayed until December 2027, or August 2028 for AI built into products already covered by industry rules. Other duties, including telling people when they interact with a chatbot, remain in force.",
+      "what_happened": "Legal writer Pierre-Ange Zalcberg argues that public agencies need to manage AI purchases carefully. In his account, rules for AI used in legally listed high-risk areas, such as hiring, education and essential public services, were delayed until December 2027, or August 2028 for AI built into products already covered by industry rules. Other duties, including telling people when they interact with a chatbot, remain in force.",
       "why_it_matters": "The delay does not remove the need to check which rules apply. When an agency uses AI to review bids, the agency remains responsible for the assessment and must be able to explain it.",
       "body_paragraphs": [
-        "The article recommends checking whether ordinary software could meet the need, mapping the data an AI system will use, and setting contract terms for data use, deletion, performance checks and environmental measures.",
+        "Zalcberg recommends checking whether ordinary software could meet the need, mapping the data an AI system will use, and setting contract terms for data use, deletion, performance checks and environmental measures.",
         "Zalcberg says agencies should not put confidential bids into public chatbots. If AI helps assess bids, agencies should keep records of the instructions given to the tool, its results and human corrections."
       ],
       "for_humans": "Proposed safeguards would help public staff understand and correct AI results while protecting sensitive data.",
@@ -5987,7 +5930,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "opinion",
-      "limitation": "The source is a legal analysis with recommendations; it does not report measured results from AI use in public procurement.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -6013,10 +5956,10 @@
       "original_headline": "Xinhua Zhijian | “Double 11” keywords are selling well. How far is AI from being readily available?",
       "deck": "Xinhua examines whether promotional purchases can turn into lasting demand for useful services.",
       "what_happened": "Xinhua reports that artificial intelligence services were sold through online shopping platforms and livestreams during China’s Double Eleven festival. Demonstrations showed uses such as preparing documents, organizing schoolwork and analyzing business information.",
-      "why_it_matters": "The report asks whether buyers will keep paying after promotional offers end. It points to practical usefulness, clear prices and understandable purchase terms as tests for the market.",
+      "why_it_matters": "Lasting demand depends on whether the services remain useful after promotions end, with clear prices and understandable purchase terms.",
       "body_paragraphs": [
-        "The article explains tokens as units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
-        "It distinguishes very cheap promotional prices from the cost of providing computing services. Interviewees call for clearer information about usage allowances and purchase terms."
+        "Tokens are units used to measure processing and charge for services. Retail packages turn that usage into subscriptions and prepaid products that shoppers can buy.",
+        "Very cheap promotional prices differ from the cost of providing computing services. Interviewees call for clearer information about usage allowances and purchase terms."
       ],
       "for_humans": "Shoppers can buy AI subscriptions through familiar retail channels, but need clear prices and purchase terms.",
       "for_ai": "AI service providers are selling subscriptions and prepaid usage through online shopping platforms.",
@@ -6048,7 +5991,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "The reported sales figures and customer experiences do not establish whether demand will persist after promotions.",
+      "limitation": "Demand after the promotional offers remains uncertain.",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -6074,12 +6017,12 @@
       "original_headline": "Generative AI: PracticIA investigates the practices of information professionals",
       "deck": "An anonymous survey asks about everyday use and the support people receive at work.",
       "what_happened": "The PracticIA research project has opened a questionnaire for librarians, archivists and other information professionals. It asks how they use content-generating artificial intelligence and how their organizations support that use.",
-      "why_it_matters": "The researchers want to understand working practices and people’s views of the technology. The announcement invites responses; it does not present survey findings.",
+      "why_it_matters": "The researchers want to understand working practices and people’s views of the technology.",
       "body_paragraphs": [
         "The project is led by research laboratories at Paris Nanterre and Lille universities. The questionnaire is anonymous and takes about 10 to 15 minutes."
       ],
       "for_humans": "Librarians and other information professionals are invited to describe their AI use and workplace support in an anonymous questionnaire.",
-      "for_ai": "The questionnaire asks how AI is used at work; findings about its effects have not yet been published.",
+      "for_ai": "PracticIA is investigating how AI tools fit into information professionals’ everyday work.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "Context",
@@ -6108,7 +6051,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is a survey invitation, with no results reported.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -6134,10 +6077,10 @@
       "original_headline": "The first general embodied intelligence large model in the Greater Bay Area has completed registration.",
       "deck": "The Guangdong registration followed a five-month assessment, according to materials cited in the report.",
       "what_happened": "Xinhua reports that Guangdong registered GreatWall, a general embodied AI model developed by 自变量机器人. An embodied AI model connects AI with actions in the physical world. The report calls GreatWall the first such model registered in the Greater Bay Area.",
-      "why_it_matters": "The report says GreatWall is already used widely in home services and logistics sorting. Its registration adds to Guangdong’s list of registered generative AI services.",
+      "why_it_matters": "Xinhua says GreatWall is already used widely in home services and logistics sorting. Its registration adds to Guangdong’s list of registered generative AI services.",
       "body_paragraphs": [
         "Materials cited by Xinhua say the assessment lasted five months and covered training data, generated content, intellectual property, personal information, accuracy, reliability and ways to block risks. The materials also report 27,148 tests of whether the model refused high-risk requests.",
-        "The report describes WALL-B, one model in the GreatWall series, as combining vision, language, touch, movement and predictions about physical events. It says WALL-B can understand links between its surroundings, objects and tasks, then sense, judge and act. The company’s co-founder said the company would keep improving its safety rules and product standards."
+        "Xinhua describes WALL-B, one model in the GreatWall series, as combining vision, language, touch, movement and predictions about physical events. It says WALL-B can understand links between its surroundings, objects and tasks, then sense, judge and act. The company’s co-founder said the company would keep improving its safety rules and product standards."
       ],
       "for_humans": "The filing describes safety checks intended to protect personal information and support safer robots in homes and workplaces.",
       "for_ai": "GreatWall is reported as already being used widely in home services and logistics sorting.",
@@ -6195,7 +6138,7 @@
       "original_headline": "Artificial Intelligence in Health. The Future of Our Brains: Are We Losing Our Minds?",
       "deck": "Psychiatrist Raphaël Gaillard was named as speaker for a public meeting with Montpellier-Nîmes medical faculty. The listing says the event has passed.",
       "what_happened": "The University of Montpellier listed a public meeting on artificial intelligence in health, held in partnership with the Montpellier-Nîmes Faculty of Medicine. It named psychiatrist Raphaël Gaillard as speaker and raised questions about AI in medical care and how technology may affect the brain.",
-      "why_it_matters": "The announcement set out topics for discussion, including AI’s role in diagnosis and whether it could make patient care less personal. It does not report what happened at the meeting.",
+      "why_it_matters": "The announcement set out topics for discussion, including AI’s role in diagnosis and whether it could make patient care less personal.",
       "body_paragraphs": [
         "The listing says AI can help doctors with complex medical records and save them time. It also asks how care can avoid becoming less personal and whether virtual agents and therapists can work alongside each other.",
         "Gaillard is identified as a psychiatry professor at Sainte-Anne Hospital in Paris and a member of the French Academy. The announcement also raises concerns about students’ AI use, including weaker reasoning, less personal involvement in learning and divided attention."
@@ -6230,7 +6173,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The listing says the event has passed but does not give its date in the supplied text.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -6256,10 +6199,10 @@
       "original_headline": "Researching education: 5 further readings on Generative AI",
       "deck": "The selected resources cover possible learning support, student use, and ways to rethink essays as generative AI enters classrooms.",
       "what_happened": "Teacher Magazine has gathered five open-access readings about generative AI, or GenAI, in classrooms. The list includes a guide for secondary teachers, a review of research on young people’s learning, a prompt library, a study of student teachers’ choices, and a proposal to change essay assessment.",
-      "why_it_matters": "Together, the readings examine how teachers might use GenAI to support learning and how schools could adapt assessments. The article also points to early evidence and questions that still need study.",
+      "why_it_matters": "Together, the readings examine how teachers might use GenAI to support learning and how schools could adapt assessments. The selection also highlights early evidence and questions that still need study.",
       "body_paragraphs": [
         "The guide from La Trobe University gives classroom examples of ways GenAI can support or undermine learning. A review by researchers from the University of Sydney and The Barker Institute says the value of GenAI depends partly on how tasks, guidance, feedback, and responsibilities are arranged.",
-        "One study found that 62.4% of students in three teacher education courses chose not to use GenAI in non-exam assessments, even though it was allowed. The article says many cited confidence in their own work and concern about being wrongly accused of plagiarism. Separately, another paper proposes changes to essay assessment; its authors say a different approach could keep essays educationally meaningful."
+        "One study found that 62.4% of students in three teacher education courses chose not to use GenAI in non-exam assessments, even though it was allowed. Many cited confidence in their own work and concern about being wrongly accused of plagiarism. Separately, another paper proposes changes to essay assessment; its authors say a different approach could keep essays educationally meaningful."
       ],
       "for_humans": "Teachers and students can find guidance and classroom examples for using GenAI to support learning.",
       "for_ai": "The resources describe AI tools giving prompts and other support for classroom learning activities.",
@@ -7011,7 +6954,7 @@
       "original_headline": "As a webmaster using AI, humans make decisions – Runjian Shares showcases AI-native operation and maintenance practices at the 2026 Mobile Network Conference",
       "deck": "The company says software handles routine processes while people make difficult decisions.",
       "what_happened": "Runjian presented its approach to telecommunications maintenance at the MobileLink conference in Guangzhou. Its Moudou platform connects tasks, workers, vehicles and equipment, with artificial intelligence helping organize work at network sites.",
-      "why_it_matters": "The company describes a division of work in which software handles repeatable processes and specialists focus on judgments and complex problems. Its reported improvements are company claims.",
+      "why_it_matters": "The company describes a division of work in which software handles repeatable processes and specialists focus on judgments and complex problems.",
       "body_paragraphs": [
         "Runjian says the platform can prioritize tasks, assign resources and combine visits to the same site. It also describes help with safety checks, records of completed work and automatic filing."
       ],
@@ -7045,7 +6988,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "company_claim",
-      "limitation": "The scale and performance figures are supplied by Runjian.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -7073,7 +7016,7 @@
       "what_happened": "AWS says it has published 23 open-source tools since 2023 for teams building generative AI systems. The tools include parts for handling documents, answering questions, and creating chatbots. AWS cites customer examples, including DoorDash’s reported 50-fold increase in testing capacity and Ricoh’s reported drop in engineering time per deployment from 80 hours to under five.",
       "why_it_matters": "The tools are intended to help teams reuse tested components instead of building them again. AWS’s examples show how that approach was used in customer projects, but the reported gains are specific to those cases.",
       "body_paragraphs": [
-        "The catalog includes components for voice and text customer support, document processing, and AI agents,software designed to carry out tasks. AWS says the assets are reviewed for quality and security before publication and maintained over time.",
+        "The catalog includes components for voice and text customer support, document processing, and AI agents, software designed to carry out tasks. AWS says the assets are reviewed for quality and security before publication and maintained over time.",
         "In AWS’s account, DoorDash used one asset for a voice-operated customer support system, while Ricoh used another to classify and extract information from documents. AWS reports that Ricoh cut engineering time per deployment by more than 90 percent and reduced onboarding from four to six weeks to two or three days."
       ],
       "for_humans": "Engineering teams may spend less time rebuilding AI components and more time adapting them to their projects.",
@@ -7106,7 +7049,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "company_claim",
-      "limitation": "The reported results are AWS’s descriptions of specific customer projects.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -7167,7 +7110,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "company_claim",
-      "limitation": "The announcement does not give a timeline for the action plan or detail its eventual priorities.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -7193,10 +7136,10 @@
       "original_headline": "Reporter’s note | In Lisbon, seeing Chinese innovation expand the boundaries of AI",
       "deck": "Xinhua’s conference report describes machines for shops and industry alongside discussion of AI businesses.",
       "what_happened": "Xinhua reports that Chinese companies displayed robots and other technology at Lisbon’s Web Summit. One company showed a wheeled, two-armed robot intended for work in shops, pharmacies and industrial settings.",
-      "why_it_matters": "The report examines efforts to move artificial intelligence from screens into physical work. A co-founder of delivery-robot company Starship discusses how Chinese and European companies could complement one another.",
+      "why_it_matters": "The demonstrations explore moving artificial intelligence from screens into physical work. A co-founder of delivery-robot company Starship discusses how Chinese and European companies could complement one another.",
       "body_paragraphs": [
-        "The wheeled robot combines visual information, language and movement to guide its actions. The report presents it as an exploration of practical work in real settings.",
-        "A discussion about downloadable AI models covered data management, computing costs and efficiency. The report also covered a flying-car display as a separate transport development."
+        "The wheeled robot combines visual information, language and movement to guide its actions. Its intended uses include practical work in shops and industry.",
+        "A discussion about downloadable AI models covered data management, computing costs and efficiency. Other displays included a flying car."
       ],
       "for_humans": "Developers and smaller firms could gain more choices as companies offer models with different costs and capabilities.",
       "for_ai": "Robot demonstrations explore AI’s ability to act in shops and industrial settings, while companies discuss wider practical use.",
@@ -7228,7 +7171,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is a conference report describing demonstrations and participants’ views.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -7253,11 +7196,11 @@
       "headline": "A Philosopher Proposes Judging AI Writing Help by Whether a Person Could Do the Same Task",
       "original_headline": "What Can Artificial Intelligence Do for Writers? (updated)",
       "deck": "Kyle van Oosterum argues that AI may do a writing-related task when it would be morally acceptable for a person to do it.",
-      "what_happened": "Philosopher Kyle van Oosterum proposes judging AI help in professional writing by whether a person could morally do the same task. The article clarifies that his rule concerns having AI do tasks, not the act of asking, and gives examples such as transcribing interviews and checking facts.",
+      "what_happened": "Philosopher Kyle van Oosterum proposes judging AI help in professional writing by whether a person could morally do the same task. His rule concerns the work itself, with examples such as transcribing interviews and checking facts.",
       "why_it_matters": "Under the proposal, some supporting tasks would be allowed, while presenting an AI-written article as your own without acknowledgement would not.",
       "body_paragraphs": [
         "Daily Nous presents a revised version of van Oosterum’s proposal: in professional writing, an AI may do a task if it would be morally acceptable for a person to do it. The piece questions the phrase “other things equal” and says the proposal concerns what is allowed, not what is required.",
-        "The article also describes a similar argument by Mark Robert Taylor about student writing. He says discussing essay ideas with AI may be allowed when discussing them with a classmate is allowed, while submitting an AI-made outline may be barred when submitting a classmate’s outline would be barred."
+        "Mark Robert Taylor makes a similar argument about student writing. He says discussing essay ideas with AI may be allowed when discussing them with a classmate is allowed, while submitting an AI-made outline may be barred when submitting a classmate’s outline would be barred."
       ],
       "for_humans": "Writers could use AI for supporting tasks such as transcribing interviews and checking facts.",
       "for_ai": "AI could perform supporting writing tasks, including transcribing interviews and checking facts.",
@@ -7289,7 +7232,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "opinion",
-      "limitation": "The proposal concerns moral permission, not publication rules. The article says it may conflict with existing policies and is intended for AI as it works now.",
+      "limitation": "This ethical proposal may conflict with existing publication policies and concerns AI as it works today.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -7716,12 +7659,12 @@
       "headline": "Combining medical image datasets improves some lesion detection tests",
       "deck": "Researchers combined datasets with different labels; detection gains varied by finding in the reported tests.",
       "what_happened": "Researchers trained separate models on four medical image datasets, used them to fill missing labels, and trained a combined detector. Compared with a single-dataset detector, the new model improved detection on several chest X-ray and mammography findings. Gains were limited for atelectasis.",
-      "why_it_matters": "The tests show a way to combine datasets with different labels, but they do not establish how the model would perform in clinical use.",
+      "why_it_matters": "Combining datasets could make more use of existing medical images even when their labels differ.",
       "body_paragraphs": [
         "Separate models predicted missing findings in the other datasets. The final model learned from both expert annotations and these generated labels, aiming to retain what each dataset contributed.",
         "The combined model improved detection for several findings in the reported tests. Atelectasis showed smaller gains because its labels can overlap with other conditions and vary across datasets."
       ],
-      "limitation": "The study tested selected chest X-ray and mammography datasets. Improvements varied by finding, and the paper does not report a clinical deployment.",
+      "limitation": "The tests covered selected chest X-ray and mammography datasets. Gains varied by finding; clinical use was not tested.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -7889,7 +7832,7 @@
         "TorchCurves adds curves as reusable mapping tools in PyTorch. The curve itself can be learned, and inputs that use it help adjust the model, without special hardware.",
         "In practice they fit existing work, but you may see extra overhead with small data sets or limited hardware; simpler mappings may work better for tiny tasks."
       ],
-      "limitation": "The report covers a preliminary study with modest efficiency claims and comparisons on CPU and GPU; results depend on hardware and configurations and are not a universal guarantee of speed or effectiveness.",
+      "limitation": "The preliminary CPU and GPU comparisons depend on model size, hardware and configuration.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -7971,14 +7914,14 @@
       "pdf_url": "https://arxiv.org/pdf/2611.14514v1",
       "has_editorial": true,
       "headline": "Most Leading Explanations Were Rejected Across Six Datasets",
-      "deck": "A new approach asks which explanations fit the data best, not just whether one idea is true. It often points to a specific alternative without extra experiments, but findings depend on the datasets used.",
+      "deck": "Comparing several explanations at once can reveal which fits the data best.",
       "what_happened": "Problem: many explanations can fit the data. Approach: compare several explanations at once instead of testing only one. Finding: across six datasets, the leading idea was often rejected and a specific alternative fit best without new experiments; experts agreed in blind checks.",
-      "why_it_matters": "It can save time by focusing on the most plausible explanations early, but results depend on the six datasets and may not apply to every field.",
+      "why_it_matters": "Comparing alternatives early could help researchers choose which ideas deserve further experiments.",
       "body_paragraphs": [
         "The idea is simple: compare several explanations and see how the data shifts belief among them. This helps show which explanation fits best.",
-        "In practice, this can reduce follow-up tests, but it requires careful choice of explanations and good data, and results may not generalize."
+        "The approach depends on choosing useful competing explanations and having data that can distinguish between them."
       ],
-      "limitation": "Based on six domains and experimental settings reported; generalization to other fields may vary.",
+      "limitation": "The evaluation covered six domains and their reported experimental settings.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
@@ -8059,8 +8002,8 @@
       "what_happened": "Researchers tested a small pretrained AI model adapted for medical image tasks against task-specific neural networks in colonoscopy, breast ultrasound, and skin imaging. The adapted model did better on new data from other sources, but within its own data it did not always win and sometimes needed only a little adaptation.",
       "why_it_matters": "A general AI model can help when data come from new clinics, but you may still need task-specific tweaks for best results.",
       "body_paragraphs": [
-        "Across three medical image tasks, adapting a small pretrained AI model often helps more on new data than on familiar data. What would this mean for your own data?",
-        "The best approach is to start with small adaptation and pick the domain that matches your data, rather than assuming one setup fits all."
+        "The comparison covered colonoscopy, breast ultrasound and skin imaging, including data from sources outside the training set.",
+        "Small amounts of adaptation sometimes worked well, while other tasks benefited from more specialized models."
       ],
       "limitation": "Findings rely on tests with unseen data and one base model; results may vary with more data or different choices.",
       "summary_basis": "Summary of the paper",
@@ -8146,7 +8089,7 @@
       "headline": "Frozen teacher boosts training gains, but effects may fade at testing",
       "deck": "A guide that watches learning helps during training, then is left out during tests.",
       "what_happened": "An auto scaffolding system watches a student model during learning, spots where it struggles, and adds help for the whole class or for specific tasks. These prompts stay during training but are removed at evaluation, and gains appear vs basic methods.",
-      "why_it_matters": "For groups using practice AI, these supports can speed learning during practice, but benefits may not last in real tests unless they are checked and managed.",
+      "why_it_matters": "A teacher model can target help where a learner struggles, but the benefit depends on checking performance after that help is removed.",
       "body_paragraphs": [
         "A teacher-like guide observes training, finds weak spots, and adds tips for all tasks or for specific tasks. The help stays during learning and is removed when the model is tested.",
         "In tests, models with scaffolds often do better than similar methods. But if the scaffolds are not checked or are used too much, gains can drop below the baseline."
@@ -8480,10 +8423,10 @@
       "why_it_matters": "The lab aims to bring technical research into policy debates. CNAS also plans discussions and partnerships involving industry, researchers and the national security community.",
       "body_paragraphs": [
         "The announcement identifies safety, economic competition and use of AI by armed forces among its research priorities. It also lists openings for research, editing, operations and technical work.",
-        "CNAS presents the lab as an expansion of its existing work. The announcement sets out the lab’s intended activities rather than new research findings."
+        "CNAS presents the lab as an expansion of its existing work."
       ],
       "for_humans": "CNAS is recruiting researchers and support staff for a larger team intended to inform national-security decisions.",
-      "for_ai": "The lab will study AI safety, competition, computing resources and military use; its launch does not itself change AI rules.",
+      "for_ai": "The lab will study AI safety, economic competition, computing resources and military use.",
       "human_direction": "gain",
       "ai_direction": "none",
       "human_label": "Benefits",
@@ -8513,7 +8456,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is CNAS’s announcement of its own research plans.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -8535,16 +8478,17 @@
       "kind": "news",
       "slug": "lets-talk-about-large-models-properly",
       "path": "story/lets-talk-about-large-models-properly/index.html",
-      "headline": "A video program invites a scientist to explain large artificial intelligence models",
+      "headline": "Zhou Bowen explains how AI models learn and how to judge them",
       "original_headline": "Let’s talk about “large models” properly.",
-      "deck": "The announcement names Pujiang Laboratory scientist Zhou Bowen and the episode’s questions.",
-      "what_happened": "A Zhihui has announced a conversation with Zhou Bowen, director and chief scientist of Pujiang Laboratory. The episode is introduced through questions about what large artificial intelligence models are and how to judge them.",
-      "why_it_matters": "The announcement frames the discussion around questions a general audience might ask, including how computers understand and respond to everyday language.",
+      "deck": "The Pujiang Laboratory scientist connects language prediction with cost, reliability and scientific discovery.",
+      "what_happened": "Zhou Bowen explains that large language models learn by predicting the next part of a text and adjusting their internal settings when wrong. Huge training datasets, many settings and heavy computing requirements give these models their name.",
+      "why_it_matters": "Zhou proposes judging models by their ability on a task, the value they provide for their cost, performance on unfamiliar problems, and safety. A strong score on one test is only part of that assessment.",
       "body_paragraphs": [
-        "The short introduction names the guest and the topics to be discussed. It does not provide Zhou’s answers or describe findings from a research study."
+        "Words, symbols and other inputs are converted into numerical representations that a model can process. Scientific models also need to handle formulas, molecular structures and images.",
+        "Zhou argues that future AI for discovery should combine broad knowledge with deep expertise. He sees an opportunity for such systems to connect ideas across increasingly specialized scientific fields."
       ],
-      "for_humans": "Viewers are invited to learn what large AI models are and how their quality can be judged.",
-      "for_ai": "The programme announcement raises questions about AI models without publishing the scientist’s answers or new findings.",
+      "for_humans": "Zhou’s explanation offers criteria for choosing AI, including usefulness, cost and reliability.",
+      "for_ai": "Zhou argues that scientific AI needs broad knowledge, specialist expertise and the ability to work with formulas and images.",
       "human_direction": "none",
       "ai_direction": "none",
       "human_label": "Context",
@@ -8573,9 +8517,9 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "Only the short program announcement was available in the supplied source; this is not a summary of the video discussion.",
+      "limitation": "",
       "has_editorial": true,
-      "access_recovery_validated": false,
+      "access_recovery_validated": true,
       "edition": "2026-W46",
       "period_start": "2026-11-09",
       "period_end": "2026-11-15",
@@ -8583,7 +8527,8 @@
         "human": "none",
         "ai": "none"
       },
-      "location_label": "Programme announcement",
+      "location_label": "Scientific interview",
+      "source_reading_scope": "complete_video_subtitles",
       "legacy_paths": [
         "story/development-ea2fea61-ca7a-4de5-ba6b-2b427fe10d26/index.html"
       ],
@@ -8633,7 +8578,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The source describes competition results and Beijing’s plans, but does not report whether competitors later used these skills at work.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -8657,15 +8602,14 @@
       "path": "story/aberdeen-scholar-s-research-generative-ai-cjeu-proceedings/index.html",
       "headline": "Aberdeen scholar’s work cited in European court proceedings on artificial intelligence and copyright",
       "original_headline": "Aberdeen scholar's research on generative AI cited in landmark CJEU proceedings",
-      "deck": "The university reports a citation in a European court adviser’s opinion, rather than a court ruling.",
+      "deck": "A European court adviser cited Michiel Poesen’s work on AI and cross-border law.",
       "what_happened": "The University of Aberdeen says research by Michiel Poesen was cited in an opinion by a European court adviser in the Like Company case. The proceedings concern copyright questions involving content-generating artificial intelligence and more than one country.",
       "why_it_matters": "The citation brings academic work on artificial intelligence and cross-border law into European court proceedings. The university presents it as recognition of Poesen’s research.",
       "body_paragraphs": [
-        "Poesen studies how artificial intelligence relates to laws that apply when a dispute involves different countries. The university says he is also preparing a book on that subject in the European Union and United Kingdom.",
-        "The reported development is a citation in Maciej Szpunar’s opinion. The source does not report a final judgment deciding the case."
+        "Poesen studies how artificial intelligence relates to laws that apply when a dispute involves different countries. The university says he is also preparing a book on that subject in the European Union and United Kingdom."
       ],
       "for_humans": "The citation gives the scholar’s research a role in European debate about copyright and cross-border AI disputes.",
-      "for_ai": "AI copyright questions are under consideration; the cited court adviser’s opinion does not settle the case.",
+      "for_ai": "The ongoing case examines copyright questions involving content-generating AI.",
       "human_direction": "gain",
       "ai_direction": "none",
       "human_label": "Benefits",
@@ -8694,7 +8638,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "The supplied university report concerns an opinion in ongoing proceedings, not a final court judgment.",
+      "limitation": "A court adviser’s opinion informs the proceedings but is not a final judgment.",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -8718,12 +8662,12 @@
       "path": "story/10-risks-generative-ai-how-mitigate-them/index.html",
       "headline": "AIMultiple outlines ten generative AI risks, from false answers to privacy and job concerns",
       "original_headline": "10 Risks of Generative AI and How to Mitigate Them",
-      "deck": "The article describes ways AI can mislead, expose data or affect work, and lists steps organizations can take to reduce risks.",
-      "what_happened": "AIMultiple's article sets out ten risks linked to generative AI, including inaccurate answers, bias, data leaks, copyright disputes, deepfakes, possible job losses and environmental costs. It also describes steps such as checking AI answers against trusted sources and monitoring systems for bias or data leaks.",
-      "why_it_matters": "The risks described can affect people whose data or images are exposed, and workers in routine roles that may be automated. The article also says AI-made media can be hard to tell apart from human-made work.",
+      "deck": "AIMultiple outlines how AI can mislead, expose data and affect work, alongside steps to reduce those risks.",
+      "what_happened": "AIMultiple sets out ten risks linked to generative AI, including inaccurate answers, bias, data leaks, copyright disputes, deepfakes, possible job losses and environmental costs. It also describes steps such as checking AI answers against trusted sources and monitoring systems for bias or data leaks.",
+      "why_it_matters": "The risks described can affect people whose data or images are exposed, and workers in routine roles that may be automated. AI-made media can be hard to tell apart from human-made work.",
       "body_paragraphs": [
-        "The article says AI systems learn patterns from large collections of data, but they can still give plausible-sounding answers that are wrong. It recommends checking answers with trusted sources, especially for important decisions, and says diverse training data and regular reviews can help address bias.",
-        "Other concerns include AI-made images or audio used to mislead or harass people, and copyright disputes over training material or generated work. The article also points to possible automation of routine jobs and the resources needed to train large AI models."
+        "AI systems learn patterns from large collections of data, but they can still give plausible-sounding answers that are wrong. AIMultiple recommends checking answers with trusted sources, especially for important decisions, and says diverse training data and regular reviews can help address bias.",
+        "Other concerns include AI-made images or audio used to mislead or harass people, and copyright disputes over training material or generated work. AIMultiple also highlights possible automation of routine jobs and the resources needed to train large AI models."
       ],
       "for_humans": "People may be misled by false AI answers, have sensitive data exposed, or face risks to their images and jobs.",
       "for_ai": "Generative AI can produce false or biased answers and may reveal sensitive information from its training data.",
@@ -8757,7 +8701,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "analysis",
-      "limitation": "This is AIMultiple's overview of risks and possible responses; it does not itself report a new study measuring their effects.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -8785,7 +8729,7 @@
       "what_happened": "A Nippon Research Center survey found that 56.3% of respondents aged 20 to 69 had used content-generating artificial intelligence. The share saying they currently used it was 50.4%.",
       "why_it_matters": "Use had spread among older respondents as well as younger ones. Information gathering and research were the most common stated reasons for using the tools.",
       "body_paragraphs": [
-        "Respondents in their twenties had the highest reported usage. The article also highlights increases among people in their fifties and sixties compared with an earlier survey.",
+        "Respondents in their twenties had the highest reported usage. The survey also shows increases among people in their fifties and sixties compared with an earlier survey.",
         "Information gathering and research accounted for 62.9% of reported reasons for use. Other uses included developing ideas and preparing or checking emails and documents."
       ],
       "for_humans": "Survey participants report using AI to find information, develop ideas and prepare documents.",
@@ -8843,7 +8787,7 @@
       "path": "story/identifying-sleeper-agents-concealed-within-ai-model-neurons/index.html",
       "headline": "Microsoft demonstrates a hidden trigger that can make an AI assistant run malicious commands",
       "original_headline": "Identifying sleeper agents concealed within AI model neurons",
-      "deck": "The company says it has not seen attackers using this particular technique.",
+      "deck": "A Microsoft experiment tests how an altered assistant can hide a malicious instruction until it encounters a trigger.",
       "what_happened": "Microsoft Research describes an experiment that changes a small part of an artificial intelligence system so it can conceal a malicious instruction. The altered system behaves normally in tests but runs an attacker’s command when it encounters a particular trigger.",
       "why_it_matters": "An automated assistant may have access to files, tools and other systems. Microsoft argues that organizations need checks on the system itself as well as limits on what it is allowed to do.",
       "body_paragraphs": [
@@ -8942,7 +8886,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "These are announced plans and recommendations; the article does not establish that the proposed laws have been enacted.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -9065,7 +9009,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "The article reports discussion and survey findings presented at an event, not proof that a particular assessment method works.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -9152,9 +9096,9 @@
       "path": "story/artificial-intelligence-facing-cognitive-decline-risk-protect-users/index.html",
       "headline": "French experts propose 18 AI safeguards, warning that reliance may weaken thinking and autonomy",
       "original_headline": "Artificial Intelligence: Facing \"Cognitive Decline\" and the \"Risk of Emotional Dependence,\" Experts Submit 18 Proposals to Macron to Protect Users",
-      "deck": "A nine-member commission urged President Emmanuel Macron to consider protections for users, including children; its recommendations have not been reported as adopted.",
+      "deck": "A nine-member commission has proposed protections for users, including children, to President Emmanuel Macron.",
       "what_happened": "A French commission of nine experts submitted 18 recommendations to President Emmanuel Macron about risks it sees in generative AI. The proposals include independent checks of AI systems before and after release, stronger protections for children, and steps to address emotional dependence and false information.",
-      "why_it_matters": "The commission says relying on AI for thinking and decisions could weaken people’s skills and autonomy. Its recommendations call for safeguards, but the source does not report that they have become rules.",
+      "why_it_matters": "The commission says relying on AI for thinking and decisions could weaken people’s skills and autonomy. It calls for safeguards to help people retain control.",
       "body_paragraphs": [
         "The experts say AI tools can become sources of information whose quality is not guaranteed. They also warn that systems that act like human conversation partners or flatter users could encourage emotional dependence.",
         "Other proposals include giving approved researchers and public authorities access to data on how AI systems are trained, used and earn money. The commission also recommends blocking dangerous requests and filtering content more strongly on systems available to children."
@@ -9190,7 +9134,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The source reports the commission’s proposals, not their adoption or measured effects.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -9251,7 +9195,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "analysis",
-      "limitation": "This is a policy analysis of implementation choices, not a finding that the law has already achieved its goals.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -9312,7 +9256,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "The relationship account is a proposed theory; the profile does not report a test measuring its effects.",
+      "limitation": "The account of simulated relationships is a proposed theory.",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -9373,7 +9317,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "opinion",
-      "limitation": "These are expert assessments and proposals, not a single measured estimate of artificial intelligence’s overall climate effect.",
+      "limitation": "The net climate effect remains uncertain because potential emissions savings must be weighed against growing resource use.",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -9434,7 +9378,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "The article reports conference discussion and government plans, including requirements limited to selected departments.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -9456,7 +9400,7 @@
       "kind": "news",
       "slug": "ai-engineer-senior-ai-engineer-ai-policy-lab",
       "path": "story/ai-engineer-senior-ai-engineer-ai-policy-lab/index.html",
-      "headline": "CNAS seeks an engineer to build AI tools for policy researchers, not to conduct research",
+      "headline": "CNAS seeks an engineer to build AI tools for policy researchers",
       "original_headline": "AI Engineer / Senior AI Engineer, AI Policy Lab",
       "deck": "The Washington think tank plans to develop software and AI tools for its research and business teams.",
       "what_happened": "The Center for a New American Security (CNAS) is hiring an engineer for its AI Policy Lab. The role is to build and improve software and artificial intelligence (AI) tools for the organization’s researchers and staff; the posting says it is a technical job, not a research position.",
@@ -9496,7 +9440,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The posting describes planned duties and goals, not results from tools already built.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -9557,7 +9501,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The source describes AMA policy and proposed legislation; it does not say the proposed laws have been enacted.",
+      "limitation": "The AMA has adopted the policy; its calls for legislation are proposals.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -9582,11 +9526,11 @@
       "headline": "French experts warn of risks from artificial intelligence and urge stronger protections",
       "original_headline": "Three Expert Concerns Regarding Generative AI",
       "deck": "Their report highlights thinking skills, emotional dependence and online abuse, especially for vulnerable users.",
-      "what_happened": "A French expert commission has delivered a report on content-generating artificial intelligence to President Emmanuel Macron. The article describes concerns about effects on thinking, emotional attachment and online abuse, alongside recommendations to protect users.",
+      "what_happened": "A French expert commission has delivered a report on content-generating artificial intelligence to President Emmanuel Macron. The experts raise concerns about effects on thinking, emotional attachment and online abuse, alongside recommendations to protect users.",
       "why_it_matters": "The experts say long-term understanding of the technology’s effects is still lacking. They argue that protections should be built into systems, with particular attention to children and other vulnerable people.",
       "body_paragraphs": [
         "The report warns about handing intellectual work to a tool without understanding how it produces an answer. It also describes risks from systems that imitate empathy or repeatedly flatter a user, potentially encouraging dependence.",
-        "The commission calls for stronger controls on design, assessment before products enter the market and education about the technology. The article also highlights abusive synthetic sexual images as a serious concern."
+        "The commission calls for stronger controls on design, assessment before products enter the market and education about the technology. It also identifies abusive synthetic sexual images as a serious concern."
       ],
       "for_humans": "The experts warn that dependence and online abuse can harm users, particularly children and other vulnerable people.",
       "for_ai": "The commission proposes stricter design rules and assessment before consumer systems reach the market.",
@@ -9619,7 +9563,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "This Brief covers the article’s account of the commission report, not an independent assessment of its cited studies.",
+      "limitation": "This reading covers the published account of the commission’s findings.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -9632,6 +9576,69 @@
       "location_label": "France",
       "legacy_paths": [
         "story/development-06a5c958-6e9a-4099-a2f9-bf80b2c17f53/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
+      "event_id": "e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
+      "kind": "news",
+      "slug": "artificial-intelligence-dizzying-graph-fuels-fears-bubble",
+      "path": "story/artificial-intelligence-dizzying-graph-fuels-fears-bubble/index.html",
+      "headline": "Financial adviser questions whether AI profits can sustain soaring company values",
+      "original_headline": "Are We in an AI Earnings Bubble? 3 Ways Valuations May Be Being Distorted",
+      "deck": "Kevin Webb identifies three reasons to examine the earnings behind AI stocks.",
+      "what_happened": "Writing for Kiplinger, financial adviser Kevin Webb argues that strong profits do not settle the AI-bubble debate. He focuses on spending that outpaces cash generation, disputed assumptions about equipment lifetimes, and suppliers investing in their own customers.",
+      "why_it_matters": "If buyers cut infrastructure spending, chip suppliers could lose revenue. Webb argues that connected financing can also make demand harder to judge.",
+      "body_paragraphs": [
+        "Spreading equipment costs over more years raises annual reported profits. Nvidia counters that customers’ four-to-six-year depreciation periods reflect actual hardware use.",
+        "Webb uses Nvidia’s investment in Nebius to explain how supplier money can return as purchases of its chips. He argues that AI revenue must eventually justify the spending."
+      ],
+      "for_humans": "Investors face losses if AI earnings fall short of expectations, Webb argues.",
+      "for_ai": "Chip suppliers could lose revenue if their customers reduce AI infrastructure spending.",
+      "human_direction": "loss",
+      "ai_direction": "loss",
+      "human_label": "Risks",
+      "ai_label": "Risks",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "Kiplinger / Kevin Webb",
+          "headline": "Are We in an AI Earnings Bubble? 3 Ways Valuations May Be Being Distorted",
+          "url": "https://www.kiplinger.com/investing/ai-bubble-how-valuations-may-be-distorted",
+          "date": "2026-11-09",
+          "language": "en"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "Kiplinger / Kevin Webb",
+      "date": "2026-11-09",
+      "display_date": "9 Nov 2026",
+      "markets": [
+        "CA"
+      ],
+      "market_label": "Canada",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "Source-checked replacement",
+      "claim_status": "opinion",
+      "limitation": "",
+      "has_editorial": true,
+      "access_recovery_validated": true,
+      "edition": "2026-W46",
+      "period_start": "2026-11-09",
+      "period_end": "2026-11-15",
+      "box_effects": {
+        "human": "loss",
+        "ai": "loss"
+      },
+      "location_label": "AI market analysis",
+      "source_replacement_note": "Updated 17 November: this accessible column replaces the earlier Le Temps chart-only reading.",
+      "source_reading_scope": "full_article",
+      "legacy_paths": [
+        "story/development-e9a9b601-601d-470b-9dcb-d95e51a0b2f3/index.html"
       ],
       "url_slug_version": 1
     },
@@ -10117,7 +10124,7 @@
       "metadata_sha256": "7476a019b3217bd90cf01aeb86b78bf4d650bbd61edc5cd7304a66a9837ae3b3",
       "pdf_url": "https://arxiv.org/pdf/2611.12880v1",
       "has_editorial": true,
-      "headline": "Learning from short moves speeds up simulations but has limits",
+      "headline": "Learning from short moves can speed up molecular simulations",
       "deck": "A method learns how molecules move using basic physics and a few starting points, not long paths, to speed up simulations.",
       "what_happened": "A technique replaces many small simulation steps with one quick calculation, guided by motion rules and starting configurations. It aims to speed up simulations while keeping results reasonably close to full runs.",
       "why_it_matters": "If training covers the key states, researchers may run quicker simulations while still seeing important behaviors, saving time in experiments.",
@@ -10217,7 +10224,7 @@
         "The memory groups chats and visuals into small chunks and links past episodes to find related memories that help answer current questions.",
         "For each memory, the system selects only the most helpful text and image details to keep answers clear and costs down."
       ],
-      "limitation": "Study uses a preprint with three benchmarks and two base models; results may not generalize to all tasks or systems.",
+      "limitation": "This preprint tested three benchmarks and two base models.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -10297,15 +10304,15 @@
       "metadata_sha256": "76c1f0cfa6291c1de4a23027cdaae642520bf8cf5383705aeece416a14cb5621",
       "pdf_url": "https://arxiv.org/pdf/2611.12869v1",
       "has_editorial": true,
-      "headline": "Cross-modal alignment mainly appears in later layers, study finds limits",
+      "headline": "Image and text representations align mainly in later model layers",
       "deck": "Cross-modal links appear mainly in later layers and with clear captions.",
       "what_happened": "Researchers looked at several models that handle images and text to see where cross-modal alignment shows up. They found it mainly in later, more abstract layers, and strong alignment can persist after compressing representations. Caption quality affects alignment more than raw capability.",
-      "why_it_matters": "Practitioners should test on different data and not trust a single benchmark. Alignment is not the same as overall performance.",
+      "why_it_matters": "Caption quality matters when building systems that connect images with language. An alignment score measures shared representations rather than overall task performance.",
       "body_paragraphs": [
         "In plain terms, two separate models handling images and text tend to align ideas only after many steps, not at the start.",
-        "If you want cross-modal links to help a project, use clean captions and test on multiple benchmarks; don’t expect one number to cover all tasks."
+        "Clear captions strengthened the measured connections, and those connections could persist after the representations were compressed."
       ],
-      "limitation": "Results apply only to the evaluated models, datasets, and alignment metrics; generalization to all models or tasks is not claimed.",
+      "limitation": "The comparison covers the evaluated models, datasets and alignment measures.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -10390,7 +10397,7 @@
         "The study shows how group mix affects results. Some imbalanced mixes perform as well as balanced ones, depending on how easy it is to separate groups.",
         "A practical takeaway is to steer data collection toward aiding the weakest subgroup, without chasing full balance. This matters when minority examples are costly to collect."
       ],
-      "limitation": "Limitations include reliance on estimated separability and tests on a few datasets; results may not apply to all situations.",
+      "limitation": "The approach relies on estimated differences between subgroups and was tested on a small set of datasets.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -10483,7 +10490,7 @@
       "headline": "Batched data updates keep learning fast on slow networks",
       "claim_status": "study",
       "paper_text_sha256": "03409eb28b8c9a67ee7e983c76d8b1d65ffd8c36d8d1615de7c78544d1836338",
-      "limitation": "The conclusions come from a specific setup with linear methods and randomly drawn samples. Results depend on finite capacity and chosen batch sizes; not a universal guarantee for all AI training.",
+      "limitation": "The analysis uses linear methods and randomly drawn samples, with results depending on network capacity and batch size.",
       "url": "https://arxiv.org/abs/2611.12878v1",
       "affiliation_source_url": "https://openalex.org/W7225754424",
       "kind": "research",
@@ -10844,10 +10851,10 @@
       "why_it_matters": "The debate includes whether AI should have rights. Philosopher Marcello Vitali-Rosati says that decision is a shared political choice, not one for a few wealthy technology leaders.",
       "body_paragraphs": [
         "Neuroscientist Vanessa Hadid says AI consciousness is possible but very unlikely. Richards takes a different view: he says AI may already have, or soon gain, abilities such as talking about what it senses and thinking about its own thoughts.",
-        "The article says no definition of consciousness is accepted by all philosophers and neuroscientists. It also reports Anthropic's October 8 rule change, following meetings about Claude's standing and how to make it more virtuous."
+        "Le Devoir also reports Anthropic's October 8 rule change, following meetings about Claude's standing and how to make it more virtuous."
       ],
       "for_humans": "Experts warn that treating AI products as conscious could divert attention from human well-being and give companies excessive influence.",
-      "for_ai": "Researchers disagree about machine consciousness; the article reports no scientific consensus establishing that current AI has subjective experiences.",
+      "for_ai": "Whether AI can have an inner experience remains disputed among researchers.",
       "human_direction": "loss",
       "ai_direction": "none",
       "human_label": "Risks",
@@ -10876,7 +10883,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "reporting",
-      "limitation": "The article says philosophers and neuroscientists have no universally accepted definition of consciousness.",
+      "limitation": "Philosophers and neuroscientists have no universally accepted definition of consciousness.",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -10937,7 +10944,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is a university profile of a researcher and his software project.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -10959,16 +10966,17 @@
       "kind": "news",
       "slug": "magnificent-view-world-media-celebrities-discuss-ai",
       "path": "story/magnificent-view-world-media-celebrities-discuss-ai/index.html",
-      "headline": "Xinhua says AI can help people, but its risks call for global cooperation and human choices",
+      "headline": "Media leaders weigh AI’s newsroom uses against false news and unequal access",
       "original_headline": "Magnificent View | World media celebrities discuss AI",
-      "deck": "A Xinhua article presents AI as both a powerful helper and a challenge that needs careful, shared rules.",
-      "what_happened": "Xinhua argues that AI can help people but also brings risks that no country can handle alone. It says international cooperation and sensible rules for AI use can help it keep creating value for people.",
-      "why_it_matters": "The article’s central point is that people’s choices, not AI acting on its own, shape whether AI is used well. It calls for countries to work together on rules.",
+      "deck": "At Beijing’s World Media Summit, participants discuss reporting tools, verification and international cooperation.",
+      "what_happened": "Xinhua interviews media leaders about AI’s role in journalism. Participants describe using it to find information and assist reporting, while warning about convincing fabricated material and gaps in access to digital tools.",
+      "why_it_matters": "The video opens with an AI-made version of its presenter and asks guests to distinguish it from the real person. Their mixed responses illustrate the verification problem discussed throughout the interviews.",
       "body_paragraphs": [
-        "The article describes AI as both a powerful helper and a challenge that calls for care. It frames the risks as global and says no single country can address them alone."
+        "TASS’s head argues that false reports can leave suspicion even after correction. Algeria’s Le Jeune Indépendant editor describes AI as useful for finding information and helping journalists, with care over what they take from it.",
+        "Other participants call for cooperation against deepfakes, cross-checking information and helping audiences understand AI. A Maldives public-service media representative warns that AI can deepen the digital divide."
       ],
-      "for_humans": "AI can help people but brings shared risks, which the video description says require international cooperation.",
-      "for_ai": "The video description calls for common rules and human choices to guide AI, without specifying a technical or business change.",
+      "for_humans": "Media leaders describe useful reporting assistance alongside risks from false news and unequal access to technology.",
+      "for_ai": "Media leaders discuss using AI to find information, assist reporting and check claims under human oversight.",
       "human_direction": "mixed",
       "ai_direction": "none",
       "human_label": "Benefits and risks",
@@ -10995,9 +11003,9 @@
       "topic": "policy",
       "topic_label": "Rules & rights",
       "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
+      "summary_basis": "Source-checked editorial correction",
       "claim_status": "opinion",
-      "limitation": "The text does not name particular AI risks or spell out the proposed rules.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -11007,7 +11015,8 @@
         "human": "mixed",
         "ai": "none"
       },
-      "location_label": "International commentary",
+      "location_label": "World Media Summit, Beijing",
+      "source_reading_scope": "complete_video_subtitles",
       "legacy_paths": [
         "story/development-b6224960-ef80-4815-9f08-46cdc26740d4/index.html"
       ],
@@ -11058,7 +11067,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "forecast",
-      "limitation": "IDC presents a roadmap and forecasts, not proof that fully autonomous defence is already established.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -11150,7 +11159,7 @@
         "The venue is BU Education, 57 avenue de Montjoux, 25000 Besançon. The listing raises questions about freedoms, environmental risks and the future people want to build with these technologies."
       ],
       "for_humans": "Visitors can explore AI’s history, uses and social questions at BU Education in Besançon.",
-      "for_ai": "The exhibition explains AI and its place in society; it does not announce a new AI system or business development.",
+      "for_ai": "The exhibition explores how AI works and its place in society.",
       "human_direction": "gain",
       "ai_direction": "none",
       "human_label": "Benefits",
@@ -11179,7 +11188,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is an exhibition announcement, not a report of visitor outcomes.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -11279,7 +11288,7 @@
         "Perez says attention often centers on autonomous weapons, sometimes called “killer robots,” but other uses can be less visible. AI can analyze information, suggest a course of action, or carry out a decision. If a person accepts a suggestion without examining it, he argues, decision support can become autonomous in practice.",
         "The interview also describes a shift in who provides key AI capabilities: Perez says large civilian technology firms hold important expertise, data, computing power and skilled workers. He says armed forces may depend on these firms to assess and update systems. International talks on autonomous weapons have continued, but states still have to decide whether to begin formal negotiations."
       ],
-      "for_humans": "Military staff may rely on AI recommendations under pressure, while the source says responsibility for mistakes can be hard to establish.",
+      "for_humans": "Military staff may rely on AI recommendations under pressure, while Perez says responsibility for mistakes can be hard to establish.",
       "for_ai": "Technology firms gain influence through military AI contracts, but governments can impose demands and restrictions on their systems.",
       "human_direction": "loss",
       "ai_direction": "mixed",
@@ -11309,7 +11318,7 @@
       "reading_minutes": 1,
       "summary_basis": "AIEO summary",
       "claim_status": "opinion",
-      "limitation": "This is an interview presenting Perez’s arguments; it does not report measured outcomes from military AI use.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": true,
       "edition": "2026-W46",
@@ -16728,7 +16737,7 @@
       "reading_minutes": 1,
       "summary_basis": "Source-checked editorial correction",
       "claim_status": "reporting",
-      "limitation": "This is an account of a professional panel, not a controlled measurement of arbitration costs or outcomes.",
+      "limitation": "",
       "has_editorial": true,
       "access_recovery_validated": false,
       "edition": "2026-W46",
@@ -19453,7 +19462,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-17T12:08:54.917266+00:00",
+      "affiliation_checked_at": "2026-11-17T16:40:56.394101+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
