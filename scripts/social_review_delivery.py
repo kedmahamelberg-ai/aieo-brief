@@ -15,6 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
+from social_completion import completed_week, require_unfinished
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'kedmahamelberg-ai/aieo-brief'
@@ -33,6 +34,8 @@ def read(path, default=None):
 
 def delivery_plan(state, receipts, today):
     week = today.strftime('%G-W%V')
+    if completed_week(ROOT, week, state):
+        return None
     candidates = [(edition, entry) for edition, entry in state.get('editions', {}).items()
                   if entry.get('publication_week') == week and entry.get('status') == STATUS]
     if not candidates:
@@ -51,9 +54,7 @@ def delivery_plan(state, receipts, today):
 
 
 def already_approved(plan):
-    path = ROOT / 'data/social-production/approved' / (plan['publication_week'] + '.json')
-    approval = read(path, {})
-    return approval.get('status') == 'APPROVED' and approval.get('artifact_url') == plan['artifact_url']
+    return completed_week(ROOT, plan['publication_week'])
 
 
 def load_batch(folder, plan):
@@ -181,6 +182,7 @@ def email_content(batch, folder, artifact_url, review_url=''):
 
 
 def send(batch, folder, plan, digest, receipts):
+    require_unfinished(ROOT, plan['publication_week'])
     recipient = os.environ['WEEKLY_REVIEW_TO_EMAIL']
     if recipient != OWNER_EMAIL:
         raise ValueError('Social review recipient is not the confirmed owner address')
@@ -211,6 +213,7 @@ def send(batch, folder, plan, digest, receipts):
 def approve(folder, run_id):
     """Install only the artifact reviewed by the confirmed owner on GitHub."""
     plan = read(folder / 'SOCIAL_REVIEW_PLAN.json')
+    require_unfinished(ROOT, plan['publication_week'])
     batch, digest = load_batch(folder, plan)
     if digest != plan.get('batch_sha256'):
         raise ValueError('Social batch changed after the review was emailed')

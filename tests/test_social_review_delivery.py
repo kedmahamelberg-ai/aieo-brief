@@ -24,6 +24,9 @@ class SocialReviewDelivery(unittest.TestCase):
         self.assertEqual(module.OWNER_EMAIL, delivery.OWNER_EMAIL)
 
     def setUp(self):
+        directory = tempfile.TemporaryDirectory(); self.addCleanup(directory.cleanup)
+        self.addCleanup(patch.stopall)
+        patch.object(delivery, "ROOT", Path(directory.name)).start()
         self.entry = dict(publication_week='2026-W45', status=delivery.STATUS,
                           artifact_url='https://github.com/' + delivery.REPO + '/actions/runs/123/artifacts/456',
                           run_id='123')

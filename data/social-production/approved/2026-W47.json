@@ -1,0 +1,17 @@
+{
+  "source_edition": "2026-W46",
+  "publication_week": "2026-W47",
+  "batch_sha256": "843dfd2c406d2b3b8f94c0ecaeb8be1c38e065d03ca9983aa6d312b8f24d15b9",
+  "package_sha256": "3548dc4e9cdf39b30392e30b408e076dde22dbbb11262137b331566990fbf157",
+  "status": "APPROVED",
+  "approved_by": "Kedma Hamelberg",
+  "approved_at": "2026-11-16T18:04:14.565415+01:00",
+  "approval_method": "explicit_owner_chat_approval",
+  "approval_text": "approved",
+  "approved_review": "social-test/batch-2026-W47/BATCH_REVIEW.html",
+  "publishing_status": "PUBLISHED_AND_SCHEDULED",
+  "scope": "76 platform drafts, 57 Instagram Story frames and weekly Substack post. Overdue slots publish as soon as practical; future slots retain approved Amsterdam times.",
+  "publication_recorded_at": "2026-11-16T19:59:31.231722+01:00",
+  "publication_receipt": "data/social-production/published/2026-W47.json",
+  "saved_carousel_audit": "PARTIAL"
+}

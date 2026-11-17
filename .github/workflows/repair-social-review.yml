@@ -19,15 +19,21 @@ jobs:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - name: Skip a social week already approved or published
+        id: completion
+        run: python3 scripts/social_completion.py --plan config/social-repair-2026-W45.json
       - uses: actions/setup-python@v6
+        if: steps.completion.outputs.needed == 'true'
         with:
           python-version: '3.12'
       - run: python -m pip install 'Pillow>=11,<13' 'requests>=2.32,<3'
+        if: steps.completion.outputs.needed == 'true'
       - name: Read the current edition's pending repair
+        if: steps.completion.outputs.needed == 'true'
         id: repair
         run: python scripts/repair_social_review.py plan
       - uses: actions/download-artifact@v4
-        if: steps.repair.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.repair.outputs.needed == 'true')
         with:
           artifact-ids: ${{ steps.repair.outputs.artifact_id }}
           run-id: ${{ steps.repair.outputs.run_id }}
@@ -35,23 +41,23 @@ jobs:
           path: original-social-review
           merge-multiple: true
       - name: Rebuild the audited copy against the live corrected articles
-        if: steps.repair.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.repair.outputs.needed == 'true')
         run: python scripts/repair_social_review.py produce
       - uses: actions/upload-artifact@v4
         id: artifact
-        if: steps.repair.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.repair.outputs.needed == 'true')
         with:
           name: social-review-${{ github.run_id }}-revision-2
           path: social-review
           if-no-files-found: error
           retention-days: 90
       - name: Authorize the corrected draft receipt
-        if: steps.repair.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.repair.outputs.needed == 'true')
         uses: ./.github/actions/authorize-publisher
         with:
           private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
       - name: Preserve original approval and register the corrected review
-        if: steps.repair.outputs.needed == 'true'
+        if: steps.completion.outputs.needed == 'true' && (steps.repair.outputs.needed == 'true')
         env:
           SOCIAL_ARTIFACT_URL: ${{ steps.artifact.outputs.artifact-url }}
         run: |

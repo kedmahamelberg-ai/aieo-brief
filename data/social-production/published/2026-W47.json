@@ -1,0 +1,955 @@
+{
+  "publication_week": "2026-W47",
+  "source_edition": "2026-W46",
+  "timezone": "Europe/Amsterdam",
+  "batch_sha256": "843dfd2c406d2b3b8f94c0ecaeb8be1c38e065d03ca9983aa6d312b8f24d15b9",
+  "package_sha256": "3548dc4e9cdf39b30392e30b408e076dde22dbbb11262137b331566990fbf157",
+  "recorded_at": "2026-11-16T19:59:31.231722+01:00",
+  "publishing_status": "PUBLISHED_AND_SCHEDULED",
+  "counts": {
+    "feed_and_notes_published": 8,
+    "feed_and_notes_scheduled": 68,
+    "instagram_story_frames_published": 6,
+    "instagram_story_frames_scheduled": 51,
+    "weekly_substack_posts_published": 1
+  },
+  "items": [
+    {
+      "id": "MON10_US_004D7FD1_linkedin",
+      "topic_id": "MON10_US_004D7FD1",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-16T10:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7528141805243117570?actorCompanyId=146490147"
+    },
+    {
+      "id": "MON10_US_004D7FD1_facebook",
+      "topic_id": "MON10_US_004D7FD1",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-16T10:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation",
+      "url": "https://facebook.com/permalink.php?story_fbid=pfbid0UC6r4nJryNED95NuNhJ3cdvMuENnqLSceS5eYvtWToXK1DahfR7mD2GPozFVu7sol&id=61594324679612"
+    },
+    {
+      "id": "MON10_US_004D7FD1_instagram",
+      "topic_id": "MON10_US_004D7FD1",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-16T10:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation",
+      "url": "https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fp%2FDfz2gxPlesc%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTAAcGRvZgNzcnRjBmFwcF9pZA81MTQ3NzE1NjkyMjgwNjEAAR8JyqmZ0Q2sRi32B0x1ZG9TFBqATKm_UTHcGLcB6Gbdpc8ttHeC0dRcjvdOkw_aem__lOJn77Rk47ZNq2QyrTjBA&h=AUCBAGfbYXrNprkNm-ncy34sGkyD8d76aHSeessS00LzgwD3ALn1W8wvBE8zB7ERbxMtOinANdpLNwIChbCL2_VtC52K8Ou1Q4_eUULDtXABVLZ3NM2N2i1pS2qQaQiV-uDGYHi1"
+    },
+    {
+      "id": "MON10_US_004D7FD1_substack_note",
+      "topic_id": "MON10_US_004D7FD1",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-16T10:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation",
+      "url": "https://substack.com/profile/550437116-the-brief/note/c-389067341"
+    },
+    {
+      "id": "MON18_CA_37F9F006_linkedin",
+      "topic_id": "MON18_CA_37F9F006",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-16T18:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7528142684100775936?actorCompanyId=146490147"
+    },
+    {
+      "id": "MON18_CA_37F9F006_facebook",
+      "topic_id": "MON18_CA_37F9F006",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-16T18:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation"
+    },
+    {
+      "id": "MON18_CA_37F9F006_instagram",
+      "topic_id": "MON18_CA_37F9F006",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-16T18:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation"
+    },
+    {
+      "id": "MON18_CA_37F9F006_substack_note",
+      "topic_id": "MON18_CA_37F9F006",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-16T18:00:00+01:00",
+      "status": "PUBLISHED",
+      "verified": true,
+      "verification": "Live post or platform publication confirmation",
+      "url": "https://substack.com/profile/550437116-the-brief/note/c-389068785"
+    },
+    {
+      "id": "TUE10_GB_35D2B233_linkedin",
+      "topic_id": "TUE10_GB_35D2B233",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-17T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "TUE10_GB_35D2B233_facebook",
+      "topic_id": "TUE10_GB_35D2B233",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-17T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "TUE10_GB_35D2B233_instagram",
+      "topic_id": "TUE10_GB_35D2B233",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-17T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "TUE10_GB_35D2B233_substack_note",
+      "topic_id": "TUE10_GB_35D2B233",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-17T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "TUE12_GOVERNMENTS_linkedin",
+      "topic_id": "TUE12_GOVERNMENTS",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-17T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "TUE12_GOVERNMENTS_facebook",
+      "topic_id": "TUE12_GOVERNMENTS",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-17T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "TUE12_GOVERNMENTS_instagram",
+      "topic_id": "TUE12_GOVERNMENTS",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-17T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "TUE12_GOVERNMENTS_substack_note",
+      "topic_id": "TUE12_GOVERNMENTS",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-17T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "TUE18_FR_5CFF2518_linkedin",
+      "topic_id": "TUE18_FR_5CFF2518",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "TUE18_FR_5CFF2518_facebook",
+      "topic_id": "TUE18_FR_5CFF2518",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "TUE18_FR_5CFF2518_instagram",
+      "topic_id": "TUE18_FR_5CFF2518",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "TUE18_FR_5CFF2518_substack_note",
+      "topic_id": "TUE18_FR_5CFF2518",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "WED06_RESEARCH_linkedin",
+      "topic_id": "WED06_RESEARCH",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-18T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "WED06_RESEARCH_facebook",
+      "topic_id": "WED06_RESEARCH",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-18T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "WED06_RESEARCH_instagram",
+      "topic_id": "WED06_RESEARCH",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-18T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "WED06_RESEARCH_substack_note",
+      "topic_id": "WED06_RESEARCH",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-18T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "WED10_CN_95EFE350_linkedin",
+      "topic_id": "WED10_CN_95EFE350",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-18T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "WED10_CN_95EFE350_facebook",
+      "topic_id": "WED10_CN_95EFE350",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-18T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "WED10_CN_95EFE350_instagram",
+      "topic_id": "WED10_CN_95EFE350",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-18T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "WED10_CN_95EFE350_substack_note",
+      "topic_id": "WED10_CN_95EFE350",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-18T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "WED18_US_C3DD2B4B_linkedin",
+      "topic_id": "WED18_US_C3DD2B4B",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-18T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "WED18_US_C3DD2B4B_facebook",
+      "topic_id": "WED18_US_C3DD2B4B",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-18T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "WED18_US_C3DD2B4B_instagram",
+      "topic_id": "WED18_US_C3DD2B4B",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-18T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "WED18_US_C3DD2B4B_substack_note",
+      "topic_id": "WED18_US_C3DD2B4B",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-18T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "THU10_CA_F0B671DE_linkedin",
+      "topic_id": "THU10_CA_F0B671DE",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-19T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "THU10_CA_F0B671DE_facebook",
+      "topic_id": "THU10_CA_F0B671DE",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-19T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "THU10_CA_F0B671DE_instagram",
+      "topic_id": "THU10_CA_F0B671DE",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-19T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "THU10_CA_F0B671DE_substack_note",
+      "topic_id": "THU10_CA_F0B671DE",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-19T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "THU12_GOVERNMENTS_linkedin",
+      "topic_id": "THU12_GOVERNMENTS",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-19T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "THU12_GOVERNMENTS_facebook",
+      "topic_id": "THU12_GOVERNMENTS",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-19T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "THU12_GOVERNMENTS_instagram",
+      "topic_id": "THU12_GOVERNMENTS",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-19T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "THU12_GOVERNMENTS_substack_note",
+      "topic_id": "THU12_GOVERNMENTS",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-19T12:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "THU18_FR_C47300F2_linkedin",
+      "topic_id": "THU18_FR_C47300F2",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-19T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "THU18_FR_C47300F2_facebook",
+      "topic_id": "THU18_FR_C47300F2",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-19T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "THU18_FR_C47300F2_instagram",
+      "topic_id": "THU18_FR_C47300F2",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-19T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "THU18_FR_C47300F2_substack_note",
+      "topic_id": "THU18_FR_C47300F2",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-19T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "FRI06_RESEARCH_linkedin",
+      "topic_id": "FRI06_RESEARCH",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-20T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "FRI06_RESEARCH_facebook",
+      "topic_id": "FRI06_RESEARCH",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-20T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "FRI06_RESEARCH_instagram",
+      "topic_id": "FRI06_RESEARCH",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-20T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "FRI06_RESEARCH_substack_note",
+      "topic_id": "FRI06_RESEARCH",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-20T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "FRI10_CN_CEED9134_linkedin",
+      "topic_id": "FRI10_CN_CEED9134",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-20T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "FRI10_CN_CEED9134_facebook",
+      "topic_id": "FRI10_CN_CEED9134",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-20T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "FRI10_CN_CEED9134_instagram",
+      "topic_id": "FRI10_CN_CEED9134",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-20T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "FRI10_CN_CEED9134_substack_note",
+      "topic_id": "FRI10_CN_CEED9134",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-20T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "FRI18_CA_568983C2_linkedin",
+      "topic_id": "FRI18_CA_568983C2",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "FRI18_CA_568983C2_facebook",
+      "topic_id": "FRI18_CA_568983C2",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "FRI18_CA_568983C2_instagram",
+      "topic_id": "FRI18_CA_568983C2",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "FRI18_CA_568983C2_substack_note",
+      "topic_id": "FRI18_CA_568983C2",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "SAT06_RESEARCH_linkedin",
+      "topic_id": "SAT06_RESEARCH",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-21T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "SAT06_RESEARCH_facebook",
+      "topic_id": "SAT06_RESEARCH",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-21T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SAT06_RESEARCH_instagram",
+      "topic_id": "SAT06_RESEARCH",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-21T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SAT06_RESEARCH_substack_note",
+      "topic_id": "SAT06_RESEARCH",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-21T06:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "SAT10_CN_6447948B_linkedin",
+      "topic_id": "SAT10_CN_6447948B",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-21T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "SAT10_CN_6447948B_facebook",
+      "topic_id": "SAT10_CN_6447948B",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-21T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SAT10_CN_6447948B_instagram",
+      "topic_id": "SAT10_CN_6447948B",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-21T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SAT10_CN_6447948B_substack_note",
+      "topic_id": "SAT10_CN_6447948B",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-21T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "SAT18_GLOBAL_4C655A46_linkedin",
+      "topic_id": "SAT18_GLOBAL_4C655A46",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-21T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "SAT18_GLOBAL_4C655A46_facebook",
+      "topic_id": "SAT18_GLOBAL_4C655A46",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-21T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SAT18_GLOBAL_4C655A46_instagram",
+      "topic_id": "SAT18_GLOBAL_4C655A46",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-21T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SAT18_GLOBAL_4C655A46_substack_note",
+      "topic_id": "SAT18_GLOBAL_4C655A46",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-21T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "SUN10_GLOBAL_0E900282_linkedin",
+      "topic_id": "SUN10_GLOBAL_0E900282",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-22T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "SUN10_GLOBAL_0E900282_facebook",
+      "topic_id": "SUN10_GLOBAL_0E900282",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-22T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SUN10_GLOBAL_0E900282_instagram",
+      "topic_id": "SUN10_GLOBAL_0E900282",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-22T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SUN10_GLOBAL_0E900282_substack_note",
+      "topic_id": "SUN10_GLOBAL_0E900282",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-22T10:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    },
+    {
+      "id": "SUN18_GLOBAL_6794D3EB_linkedin",
+      "topic_id": "SUN18_GLOBAL_6794D3EB",
+      "platform": "linkedin",
+      "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+    },
+    {
+      "id": "SUN18_GLOBAL_6794D3EB_facebook",
+      "topic_id": "SUN18_GLOBAL_6794D3EB",
+      "platform": "facebook",
+      "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SUN18_GLOBAL_6794D3EB_instagram",
+      "topic_id": "SUN18_GLOBAL_6794D3EB",
+      "platform": "instagram",
+      "account": "thebrief_ai.empowerment",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue caption and date/time matched approved pack"
+    },
+    {
+      "id": "SUN18_GLOBAL_6794D3EB_substack_note",
+      "topic_id": "SUN18_GLOBAL_6794D3EB",
+      "platform": "substack_note",
+      "account": "The Brief publication, @thebriefaieo",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "status": "SCHEDULED",
+      "verified": true,
+      "verification": "Saved queue confirmed topic and date/time"
+    }
+  ],
+  "stories": [
+    {
+      "topic_id": "MON10_US_004D7FD1",
+      "scheduled_at": "2026-11-16T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "PUBLISHED",
+      "frames": 3,
+      "verification": "Six Monday frames observed in Active list"
+    },
+    {
+      "topic_id": "MON18_CA_37F9F006",
+      "scheduled_at": "2026-11-16T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "PUBLISHED",
+      "frames": 3,
+      "verification": "Six Monday frames observed in Active list"
+    },
+    {
+      "topic_id": "TUE10_GB_35D2B233",
+      "scheduled_at": "2026-11-17T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "TUE12_GOVERNMENTS",
+      "scheduled_at": "2026-11-17T12:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "TUE18_FR_5CFF2518",
+      "scheduled_at": "2026-11-17T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "WED06_RESEARCH",
+      "scheduled_at": "2026-11-18T06:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "WED10_CN_95EFE350",
+      "scheduled_at": "2026-11-18T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "WED18_US_C3DD2B4B",
+      "scheduled_at": "2026-11-18T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "THU10_CA_F0B671DE",
+      "scheduled_at": "2026-11-19T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "THU12_GOVERNMENTS",
+      "scheduled_at": "2026-11-19T12:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "THU18_FR_C47300F2",
+      "scheduled_at": "2026-11-19T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "FRI06_RESEARCH",
+      "scheduled_at": "2026-11-20T06:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "FRI10_CN_CEED9134",
+      "scheduled_at": "2026-11-20T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "FRI18_CA_568983C2",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "SAT06_RESEARCH",
+      "scheduled_at": "2026-11-21T06:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "SAT10_CN_6447948B",
+      "scheduled_at": "2026-11-21T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "SAT18_GLOBAL_4C655A46",
+      "scheduled_at": "2026-11-21T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "SUN10_GLOBAL_0E900282",
+      "scheduled_at": "2026-11-22T10:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    },
+    {
+      "topic_id": "SUN18_GLOBAL_6794D3EB",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "platform": "instagram_story",
+      "status": "SCHEDULED",
+      "frames": 3,
+      "verification": "Three frames at exact approved time in Scheduled Stories list"
+    }
+  ],
+  "weekly_substack_post": {
+    "status": "PUBLISHED",
+    "title": "This week in The Brief",
+    "url": "https://thebriefaieo.substack.com/p/this-week-in-the-brief-251",
+    "delivery": "web_only",
+    "verified": "Live article text and all six source links inspected"
+  },
+  "verification": {
+    "meta_future_captions_and_times": "34/34 matched",
+    "linkedin_future_posts": "17 confirmed in saved queue",
+    "substack_future_notes": "17 confirmed in saved queue",
+    "future_story_frames": "51 confirmed, three per approved slot",
+    "saved_carousel_order": "PARTIAL",
+    "saved_carousel_order_details": "All media uploaded one file at a time in approved order. Saved MON10 Instagram and TUE12 government Instagram carousels reopened and visually checked across three cards. Exhaustive saved-carousel audit was not completed; media-download audit timed out and reset the browser session. No order error observed in checked carousels.",
+    "historical_failed_stories": "Unrelated older Story failures were left unchanged"
+  },
+  "audit_note": "This reconciled report supersedes transient submission-log statuses and duplicate labels; counts are based on saved platform queues. No duplicate content was submitted during reconciliation."
+}

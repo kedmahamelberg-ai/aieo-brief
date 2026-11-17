@@ -39,6 +39,10 @@ class SocialProduction(unittest.TestCase):
   row.update(headline='NHS Highland tests MRI referral support')
   self.assertEqual(social.verified_markets(row),['GB'])
  def setUp(self):
+  directory=tempfile.TemporaryDirectory();self.addCleanup(directory.cleanup)
+  original=social.completed_week
+  completion=patch.object(social,"completed_week",side_effect=lambda root,week,state=None: original(Path(directory.name),week,state))
+  completion.start();self.addCleanup(completion.stop)
   self.news=[news(m,n) for m in social.COUNTRIES for n in range(4)]
   self.items=self.news+[dict(kind='research',date='2026-10-22',path='research/one/index.html',headline='A research result',deck='A research question',what_happened='An abstract describes the findings.',sources=[{'url':'https://example.org/paper'}],research_label='Preprint',summary_basis='Summary of the abstract')]
  def test_coverage_not_release_number_determines_publication_week(self):
