@@ -70,7 +70,7 @@
     if (canPlay()) timer = setTimeout(advance, dwellMs);
   }
   function syncControls() {
-    pause.textContent = paused ? 'Play' : 'Pause';
+    pause.textContent = paused ? '▶' : '⏸';
     pause.setAttribute('aria-label', paused ? 'Play automatic announcements' : 'Pause automatic announcements');
     schedule();
   }
