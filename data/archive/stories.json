@@ -2,6 +2,372 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Cover for a Potpourri Vase",
+      "art_type": "Ceramic",
+      "balance_origin": "France",
+      "creator": "Vincennes Porcelain Factory (France, 1740–56)",
+      "creator_origin": "France, Vincennes",
+      "culture_type": "illustration",
+      "deck": "Cover for a Potpourri Vase. soft-paste porcelain.",
+      "headline": "Cover for a Potpourri Vase",
+      "image_path": "assets/culture/fe0922cbd9be67b676cd5e89.jpg",
+      "key": "culture:fe0922cbd9be67b676cd5e89",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1966.233.b/1966.233.b_web.jpg",
+      "medium": "soft-paste porcelain",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1966.233.b",
+      "provenance_id": "cma:142468",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "The Norweb Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1966.233.b",
+      "work_date": "c. 1750",
+      "date": "2026-11-18",
+      "selected_on": "2026-11-18",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-fe0922cbd9be67b676cd5e89",
+      "path": "culture/culture-fe0922cbd9be67b676cd5e89/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Cover for a Potpourri Vase",
+          "url": "https://clevelandart.org/art/1966.233.b",
+          "date": "c. 1750",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-18",
+      "summary_basis": "Selected 18 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "cade109df2a9d638da24fed3a718d247cd2b09e20153457e2ab052feccfec2a7",
+      "creator": "Li Po",
+      "creator_origin": "Chinese",
+      "culture_type": "poetry",
+      "deck": "Drifting, by Li Po. Translated by L. Cranmer-Byng.",
+      "excerpt": "We cannot keep the gold of yesterday;\n    To-day's dun clouds we cannot roll away.\nNow the long, wailing flight of geese brings autumn in its train,\nSo to the view-tower cup in hand to fill and drink again,\n\n    And dream of the greatest singers of the past,\n    Their fadeless lines of fire and beauty cast.\nI too have felt the wild-bird thrill of song behind the bars,\nBut these have brushed the world aside and walked amid the stars.\n\n    In vain we cleave the torrent's thread with steel,\n    In vain we drink to drown the grief we feel;\nWhen man's desire with fate doth war this, this avails alone --\nTo hoist the sail and let the gale and the waters bear us on.",
+      "headline": "Drifting",
+      "key": "culture:aa304e6a92d72a6bbe18c01b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "We cannot keep the gold of yesterday;",
+        "    To-day's dun clouds we cannot roll away.",
+        "Now the long, wailing flight of geese brings autumn in its train,",
+        "So to the view-tower cup in hand to fill and drink again,",
+        "",
+        "    And dream of the greatest singers of the past,",
+        "    Their fadeless lines of fire and beauty cast.",
+        "I too have felt the wild-bird thrill of song behind the bars,",
+        "But these have brushed the world aside and walked amid the stars.",
+        "",
+        "    In vain we cleave the torrent's thread with steel,",
+        "    In vain we drink to drown the grief we feel;",
+        "When man's desire with fate doth war this, this avails alone --",
+        "To hoist the sail and let the gale and the waters bear us on."
+      ],
+      "provenance_id": "pg:390:poem:01dbeb41051534132acdcdffefe9cc769ff8695ed261a290045f0d596fb6c41a",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died before 1900. Translator: L. Cranmer-Byng, died 1945. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/390"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "8f971cdb92ee67241c3430fda1aeca40891db03676c3dfc914424b64d335a9fc",
+      "source_locator": "Drifting",
+      "source_url": "https://www.gutenberg.org/ebooks/390",
+      "translator": "L. Cranmer-Byng",
+      "work_date": "1909 translation",
+      "date": "2026-11-18",
+      "selected_on": "2026-11-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-aa304e6a92d72a6bbe18c01b",
+      "path": "culture/culture-aa304e6a92d72a6bbe18c01b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Drifting",
+          "url": "https://www.gutenberg.org/ebooks/390",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-18",
+      "summary_basis": "Selected 18 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "We cannot keep the gold of yesterday;\n    To-day's dun clouds we cannot roll away.\nNow the long, wailing flight of geese brings autumn in its train,\nSo to the view-tower cup in hand to fill and drink again,\n\n    And dream of the greatest singers of the past,\n    Their fadeless lines of fire and beauty cast.\nI too have felt the wild-bird thrill of song behind the bars,\nBut these have brushed the world aside and walked amid the stars.\n\n    In vain we cleave the torrent's thread with steel,\n    In vain we drink to drown the grief we feel;\nWhen man's desire with fate doth war this, this avails alone --\nTo hoist the sail and let the gale and the waters bear us on.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Rachmaninoff_preludia_A-dur.ogg",
+      "creator": "Sergei Rachmaninoff",
+      "creator_origin": "Russian–American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Sergei Rachmaninoff. 3 minutes to listen.",
+      "duration_seconds": 187,
+      "headline": "Rachmaninoff preludia A-dur",
+      "key": "culture:817a7587678c641613b7315e",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Rachmaninoff_preludia_A-dur.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "original_recording_title": "Rachmaninoff preludia A-dur",
+      "provenance_id": "commons:71280577",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "A1",
+      "recording_description": "С. Рахманінов. Прелюдія Ля мажор для фортепіано. op.32 Виконує Андрій БОндаренко. Запис з концерту 9 червня 2018",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "A1",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rachmaninoff_preludia_A-dur.ogg",
+      "work_date": "2018-06-09",
+      "date": "2026-11-18",
+      "selected_on": "2026-11-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-817a7587678c641613b7315e",
+      "path": "culture/culture-817a7587678c641613b7315e/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Rachmaninoff preludia A-dur",
+          "url": "https://commons.wikimedia.org/wiki/File:Rachmaninoff_preludia_A-dur.ogg",
+          "date": "2018-06-09",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-18",
+      "summary_basis": "Selected 18 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Daddy-Long-Legs",
+      "content_fingerprint": "72fcd89f27669bd2bdce29c04f04f6b8847b58de4f2c490c73816baa732d4ba2",
+      "creator": "Jean Webster",
+      "creator_origin": "American",
+      "culture_type": "text",
+      "deck": "A passage from Daddy-Long-Legs.",
+      "excerpt": "Will you kindly convey to me a comprehensible reason why I should not accept that scholarship? I don't understand your objection in the least. But anyway, it won't do the slightest good for you to object, for I've already accepted it and I am not going to change! That sounds a little impertinent, but I don't mean it so.",
+      "headline": "Daddy-Long-Legs · a short reading",
+      "key": "culture:72672fb1d2a2f7795ec88f5f",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:157:passage:72fcd89f27669bd2bdce29c04f04f6b8847b58de4f2c490c73816baa732d4ba2",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1916. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/157"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "82282b044b528c729b04cb4046c95bada0a3ebad7a726d68de79c50d95dd2bfb",
+      "source_locator": "Wednesday; paragraph 588 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/157",
+      "translator": "",
+      "work_date": "1912",
+      "date": "2026-11-18",
+      "selected_on": "2026-11-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-72672fb1d2a2f7795ec88f5f",
+      "path": "culture/culture-72672fb1d2a2f7795ec88f5f/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Daddy-Long-Legs · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/157",
+          "date": "1912",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-18",
+      "summary_basis": "Selected 18 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Will you kindly convey to me a comprehensible reason why I should not accept that scholarship? I don't understand your objection in the least. But anyway, it won't do the slightest good for you to object, for I've already accepted it and I am not going to change! That sounds a little impertinent, but I don't mean it so.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Meditations",
+      "content_fingerprint": "e9b6216400e25fc5e6f3efa7a24ede20cb87a38a85f12e37383f96735682392c",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "quote",
+      "deck": "From Meditations. Translation by Méric Casaubon.",
+      "excerpt": "There is nothing more shameful than perfidious friendship.",
+      "headline": "There is nothing more shameful than perfidious friendship.",
+      "key": "culture:34ec6da195b2b5fbf1197e0f",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:quote:e9b6216400e25fc5e6f3efa7a24ede20cb87a38a85f12e37383f96735682392c",
+      "publisher": "Project Gutenberg",
+      "quote_context": "XIV. How rotten and insincere is he, that saith, I am resolved to carry myself hereafter towards you with all ingenuity and simplicity. O man, what doest thou mean! what needs this profession of thine? the thing itself will show it. It ought to be written upon thy forehead. No sooner thy voice is heard, than thy countenance must be able to show what is in thy mind: even as he that is loved knows presently by the looks of his sweetheart what is in her mind. Such must he be for all the world, that is truly simple and good, as he whose arm-holes are offensive, that whosoever stands by, as soon as ever he comes near him, may as it were smell him whether he will or no. But the affectation of simplicity is nowise laudable. There is nothing more shameful than perfidious friendship. Above all things, that must be avoided. However true goodness, simplicity, and kindness cannot so be hidden, but that as we have already said in the very eyes and countenance they will show themselves.",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 385 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-11-18",
+      "selected_on": "2026-11-18",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-34ec6da195b2b5fbf1197e0f",
+      "path": "culture/culture-34ec6da195b2b5fbf1197e0f/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "There is nothing more shameful than perfidious friendship.",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "18 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-18",
+      "summary_basis": "Selected 18 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "There is nothing more shameful than perfidious friendship.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "XIV. How rotten and insincere is he, that saith, I am resolved to carry myself hereafter towards you with all ingenuity and simplicity. O man, what doest thou mean! what needs this profession of thine? the thing itself will show it. It ought to be written upon thy forehead. No sooner thy voice is heard, than thy countenance must be able to show what is in thy mind: even as he that is loved knows presently by the looks of his sweetheart what is in her mind. Such must he be for all the world, that is truly simple and good, as he whose arm-holes are offensive, that whosoever stands by, as soon as ever he comes near him, may as it were smell him whether he will or no. But the affectation of simplicity is nowise laudable. There is nothing more shameful than perfidious friendship. Above all things, that must be avoided. However true goodness, simplicity, and kindness cannot so be hidden, but that as we have already said in the very eyes and countenance they will show themselves.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Antonin_Dvorak_-_symphony_no._9_in_e_minor_%27from_the_new_world%27%2C_op._95_-_ii._largo.ogg",
       "creator": "Antonín Dvořák",
       "creator_origin": "Czech",
@@ -4435,7 +4801,7 @@
         "Chethan Pandarinath"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-17T22:59:00.604732+00:00",
+      "affiliation_checked_at": "2026-11-18T07:29:43.615545+00:00",
       "source_verified_at": "2026-11-16T22:04:19.024717+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -20076,7 +20442,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-17T22:59:00.604732+00:00",
+      "affiliation_checked_at": "2026-11-18T07:29:43.615545+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
