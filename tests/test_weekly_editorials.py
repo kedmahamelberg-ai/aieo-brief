@@ -221,6 +221,61 @@ class WeeklyEditorialTests(unittest.TestCase):
         later=art_candidates(self.root,[first],self.news,'2026-W42','markets')
         self.assertTrue(all(a['image_work_key'] not in {first[k]['image_work_key'] for k in ('markets','research')} for a in later))
 
+    def test_replacement_review_can_reuse_same_edition_artwork(self):
+        original = self.generate()
+        chosen_key = original['markets']['image_key']
+        same_edition = art_candidates(self.root, [original], self.news,
+                                      self.release['release_id'], 'markets',
+                                      preferred_key=chosen_key)
+        self.assertIn(chosen_key, {row['key'] for row in same_edition})
+        later_edition = art_candidates(self.root, [original], self.news,
+                                       '2026-W42', 'markets',
+                                       preferred_key=chosen_key)
+        self.assertNotIn(chosen_key, {row['key'] for row in later_edition})
+
+    def test_owner_artwork_outside_ranked_pool_is_kept_if_eligible(self):
+        path = self.root / 'data/culture/library-art.json'
+        catalog = json.loads(path.read_text())
+        for i in range(8, 40):
+            image = 'assets/culture/picture' + str(i) + '.jpg'
+            (self.root / image).write_bytes(b'fixture')
+            catalog.append({**catalog[0], 'key': 'picture' + str(i),
+                            'image_path': image, 'headline': 'Artwork ' + str(i),
+                            'source_url': 'https://museum.example/work/' + str(i)})
+        path.write_text(json.dumps(catalog))
+        ranked = art_candidates(self.root, [], self.news, '2026-W41', 'markets')
+        omitted = next(row['key'] for row in catalog if row['key'] not in
+                       {item['key'] for item in ranked})
+        chosen = art_candidates(self.root, [], self.news, '2026-W41', 'markets',
+                                preferred_key=omitted)
+        self.assertEqual(len(chosen), 32)
+        self.assertIn(omitted, {item['key'] for item in chosen})
+
+    def test_ineligible_owner_artwork_leaves_private_review_pending(self):
+        original = self.generate()
+        supplied = {'release_id': self.release['release_id'],
+                    'market_keys': {code: row['key'] for code, row in
+                                    zip(('US', 'CA', 'CN', 'FR', 'GB'), self.news)},
+                    'paper_keys': [row['key'] for row in self.papers]}
+        for kind in ('markets', 'research'):
+            section = original[kind]
+            supplied[kind] = {
+                'title': section['title'],
+                'paragraphs': [[{field: part[field] for field in ('text', 'source_key')}
+                                for part in paragraph] for paragraph in section['prose']],
+                'image_key': section['image_key'], 'image_reason': section['image_reason'],
+            }
+        supplied['markets']['image_key'] = 'missing-artwork'
+        path = self.root / 'data/weekly-overviews/owner-drafts' / (
+            self.release['release_id'] + '.json')
+        path.parent.mkdir(parents=True)
+        path.write_text(json.dumps(supplied))
+        result = self.generate()
+        self.assertEqual(result['editorial_status'], 'pending')
+        self.assertEqual(result['markets']['pending_reason'], 'editorial_check_pending')
+        self.assertEqual(result['markets']['last_error'],
+                         'weekly_owner_draft_image_not_eligible')
+
     def test_preview_does_not_reset_retry_count(self):
         first=self.generate(call=lambda *a,**k: (_ for _ in ()).throw(ValueError('fixture failure')))
         current,_=prepare_weekly_overviews(self.news,self.papers,self.release,self.root)

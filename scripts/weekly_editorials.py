@@ -121,15 +121,19 @@ def owner_selection(kind, available, owner):
     return [available[key] for key in keys]
 
 
-def art_candidates(root, history, selected, release_id, kind):
+def art_candidates(root, history, selected, release_id, kind, preferred_key=None):
     path = Path(root) / 'data/culture/library-art.json'
     if not path.exists():
         return []
-    used = {record.get(section, {}).get('image_path') for record in history
+    # Replacing a review for this edition may keep its owner-selected artwork.
+    # Sections appended during this build have no release_id and still exclude
+    # their artwork from the other section.
+    other_editions = [record for record in history if record.get('release_id') != release_id]
+    used = {record.get(section, {}).get('image_path') for record in other_editions
             for section in ('markets', 'research')}
-    used_sources = {record.get(section, {}).get('image_source_url') for record in history
+    used_sources = {record.get(section, {}).get('image_source_url') for record in other_editions
                     for section in ('markets', 'research')}
-    used_works = {record.get(section, {}).get('image_work_key') for record in history
+    used_works = {record.get(section, {}).get('image_work_key') for record in other_editions
                   for section in ('markets', 'research')}
     vocabulary = set().union(*(terms(x) for x in selected))
     art = []
@@ -148,7 +152,13 @@ def art_candidates(root, history, selected, release_id, kind):
     # Combine content matches with a stable diverse pool. The writer chooses
     # and explains the metaphor from real catalog descriptions, not a URL guess.
     art.sort(key=lambda x: (-len(vocabulary & terms(x)), fingerprint([release_id, kind, x['key']])))
-    return art[:32]
+    chosen = next((row for row in art if row['key'] == preferred_key), None)
+    pool = art[:32]
+    if chosen is not None and chosen not in pool:
+        # Owner-selected art still has to pass every rights, file and reuse gate.
+        # Ranking alone must not exclude it from a private review.
+        pool = pool[:31] + [chosen]
+    return pool
 
 
 def schema_object(properties):
@@ -463,6 +473,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None, owne
         draft['paragraphs'] = [[{**part, 'source_key': source_alias[part['source_key']]
                                  if part['source_key'] else ''} for part in paragraph]
                                for paragraph in draft['paragraphs']]
+        if draft.get('image_key') not in image_alias:
+            raise ValueError('weekly_owner_draft_image_not_eligible')
         draft['image_key'] = image_alias[draft['image_key']]
     # A model can return an empty or malformed inline part despite the JSON
     # schema. Give it a precise location and one more bounded chance to repair
@@ -659,7 +671,9 @@ def apply_editorials(current, news, research, root, history, *, allow_model=Fals
             pending['pending_reason'] = 'review_needs_attention'
             print('::warning::Weekly ' + kind + ' review needs attention after three bounded attempts.')
             continue
-        pictures = art_candidates(root, usage_history, selected, current['release_id'], kind)
+        preferred_key = supplied[kind].get('image_key') if supplied else None
+        pictures = art_candidates(root, usage_history, selected, current['release_id'], kind,
+                                  preferred_key=preferred_key)
         pending['pending_reason'] = 'artwork_pool_empty' if not pictures else 'generation_pending'
         if not pictures or not allow_model:
             continue
