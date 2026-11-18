@@ -12,7 +12,7 @@
 .government-stripe-item.is-leaving{animation:government-stripe-leave .22s ease-in both}
 .government-stripe-item.is-entering{animation:government-stripe-enter .42s ease-out both}
 .government-stripe-controls{display:flex;align-items:center;gap:4px;flex:none}
-.government-stripe-controls button{min-width:44px;min-height:44px;padding:5px 8px;border:1px solid #a7bdc8;background:transparent;color:#fff;font-size:.875rem;font-weight:700}
+.government-stripe-controls button{width:44px;height:44px;min-width:44px;min-height:44px;padding:0;border:1px solid #a7bdc8;background:transparent;color:#fff;font-size:1.3rem;line-height:1;font-weight:700}.government-stripe-controls #government-stripe-next{font-size:1.8rem}
 .government-stripe-controls button:hover{background:#25485c}
 .government-stripe a:focus-visible,.government-stripe button:focus-visible{outline:3px solid #fff;outline-offset:2px}
 @keyframes government-stripe-leave{from{opacity:1;transform:translateY(0)}to{opacity:0;transform:translateY(-10px)}}
