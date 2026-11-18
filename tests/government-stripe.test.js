@@ -54,10 +54,10 @@ test('The bar includes older announcements and flips one upward every seven seco
   assert.equal(view.visible()[0].classes.has('is-entering'),true);
   assert.equal(view.run.children.length,3);
   view.pause.events.click();
-  assert.equal(view.pause.textContent,'Play');
+  assert.equal(view.pause.textContent,'▶');
   assert.equal(view.timers.size,0);
   view.pause.events.click();
-  assert.equal(view.pause.textContent,'Pause');
+  assert.equal(view.pause.textContent,'⏸');
   assert.equal(view.timers.size,1);
 });
 
