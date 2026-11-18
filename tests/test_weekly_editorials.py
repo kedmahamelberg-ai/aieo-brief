@@ -221,6 +221,18 @@ class WeeklyEditorialTests(unittest.TestCase):
         later=art_candidates(self.root,[first],self.news,'2026-W42','markets')
         self.assertTrue(all(a['image_work_key'] not in {first[k]['image_work_key'] for k in ('markets','research')} for a in later))
 
+    def test_replacement_review_can_reuse_same_edition_artwork(self):
+        original = self.generate()
+        chosen_key = original['markets']['image_key']
+        same_edition = art_candidates(self.root, [original], self.news,
+                                      self.release['release_id'], 'markets',
+                                      preferred_key=chosen_key)
+        self.assertIn(chosen_key, {row['key'] for row in same_edition})
+        later_edition = art_candidates(self.root, [original], self.news,
+                                       '2026-W42', 'markets',
+                                       preferred_key=chosen_key)
+        self.assertNotIn(chosen_key, {row['key'] for row in later_edition})
+
     def test_owner_artwork_outside_ranked_pool_is_kept_if_eligible(self):
         path = self.root / 'data/culture/library-art.json'
         catalog = json.loads(path.read_text())
