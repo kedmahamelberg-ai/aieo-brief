@@ -125,11 +125,15 @@ def art_candidates(root, history, selected, release_id, kind, preferred_key=None
     path = Path(root) / 'data/culture/library-art.json'
     if not path.exists():
         return []
-    used = {record.get(section, {}).get('image_path') for record in history
+    # Replacing a review for this edition may keep its owner-selected artwork.
+    # Sections appended during this build have no release_id and still exclude
+    # their artwork from the other section.
+    other_editions = [record for record in history if record.get('release_id') != release_id]
+    used = {record.get(section, {}).get('image_path') for record in other_editions
             for section in ('markets', 'research')}
-    used_sources = {record.get(section, {}).get('image_source_url') for record in history
+    used_sources = {record.get(section, {}).get('image_source_url') for record in other_editions
                     for section in ('markets', 'research')}
-    used_works = {record.get(section, {}).get('image_work_key') for record in history
+    used_works = {record.get(section, {}).get('image_work_key') for record in other_editions
                   for section in ('markets', 'research')}
     vocabulary = set().union(*(terms(x) for x in selected))
     art = []
