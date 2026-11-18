@@ -1,27 +1,27 @@
 {
   "paper:3ffa2d84b6e20da2db465da1": {
-    "attempts": 25,
-    "last_attempt": "2026-11-17T21:17:31.046080+00:00"
+    "attempts": 26,
+    "last_attempt": "2026-11-18T20:52:20.134743+00:00"
   },
   "paper:beaf7b4a534a2a4135c21b97": {
-    "attempts": 28,
-    "last_attempt": "2026-11-17T21:17:34.348793+00:00"
+    "attempts": 29,
+    "last_attempt": "2026-11-18T20:52:21.789022+00:00"
   },
   "paper:be49d96abd2a3f5b615d1f08": {
     "attempts": 2,
     "last_attempt": "2026-11-03T19:50:31.264602+00:00"
   },
   "paper:7cba509615081b2bc0d1faf2": {
-    "attempts": 16,
-    "last_attempt": "2026-11-17T20:57:07.909945+00:00"
+    "attempts": 17,
+    "last_attempt": "2026-11-18T20:33:42.087562+00:00"
   },
   "paper:7de8e086b715a97caa852c62": {
-    "attempts": 16,
-    "last_attempt": "2026-11-17T20:57:09.242333+00:00"
+    "attempts": 17,
+    "last_attempt": "2026-11-18T20:33:49.522464+00:00"
   },
   "paper:565eb5d350d80d2a2f647f6b": {
-    "attempts": 16,
-    "last_attempt": "2026-11-17T21:17:30.150074+00:00"
+    "attempts": 17,
+    "last_attempt": "2026-11-18T20:52:15.050630+00:00"
   },
   "paper:29f3a0ced2bcb71a33818a12": {
     "attempts": 1,
@@ -32,5 +32,25 @@
     "attempts": 1,
     "last_attempt": "2026-11-17T20:57:09.850407+00:00",
     "rejected_fingerprint": "bd1fe98eae3288e1df30c085a0c17fbe060d50add85bd9920faf28a8f0cf7047"
+  },
+  "paper:02d497c961583fb2e54965ab": {
+    "attempts": 1,
+    "last_attempt": "2026-11-18T20:33:56.865631+00:00",
+    "rejected_fingerprint": "ab8a031961e913754aeebf2044567c0c733a4459ece37433a064ee296e98cb9b"
+  },
+  "paper:2ec9f3d53f7f698e2002fce4": {
+    "attempts": 1,
+    "last_attempt": "2026-11-18T20:38:49.894472+00:00",
+    "rejected_fingerprint": "04a23d99c6b854420885beef1da5b44396c54271f94a9856786a82e9f3bf38c5"
+  },
+  "paper:3226688a7cfd72dd76c0bc8e": {
+    "attempts": 1,
+    "last_attempt": "2026-11-18T20:44:20.722635+00:00",
+    "rejected_fingerprint": "16a6e03004360885859d61f3f0c374b7f852439b580841fbacdd527d01d0d80a"
+  },
+  "paper:d563181435f730d121b7a863": {
+    "attempts": 1,
+    "last_attempt": "2026-11-18T20:48:21.110399+00:00",
+    "rejected_fingerprint": "4326590ba17a926d61281a8a811b5512f50c390d359fba72ba323e60286ea6ee"
   }
 }

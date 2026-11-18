@@ -1,24 +1,43 @@
 {
-  "generated": 5,
-  "failed": 1,
+  "generated": 2,
+  "failed": 4,
   "metadata_only": 5,
-  "deferred": 1,
+  "deferred": 2,
   "unchanged": 2,
   "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
   "failure_counts": {
-    "source_scope_review_failed": 1
+    "claim_grounding_failed": 3,
+    "unsupported_number": 1
   },
   "failed_items": [
     {
-      "key": "paper:5b8bb748e2b9ee7c5f421566",
+      "key": "paper:02d497c961583fb2e54965ab",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "population_preserved"
-      ]
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+    },
+    {
+      "key": "paper:2ec9f3d53f7f698e2002fce4",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+    },
+    {
+      "key": "paper:3226688a7cfd72dd76c0bc8e",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
+    },
+    {
+      "key": "paper:d563181435f730d121b7a863",
+      "error_type": "EditorialError",
+      "stage": "draft_validation",
+      "code": "unsupported_number",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
     }
   ],
-  "updated_at": "2026-11-17T21:17:36.224642+00:00"
+  "updated_at": "2026-11-18T20:52:25.170613+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "aieo_research_inputs_v1",
-  "period_start": "2026-11-11",
-  "period_end": "2026-11-17",
+  "period_start": "2026-11-12",
+  "period_end": "2026-11-18",
   "providers": [
     {
       "source": "arxiv",
@@ -21,40 +21,46 @@
   ],
   "affiliation_enrichment": [
     {
-      "key": "paper:5b8bb748e2b9ee7c5f421566",
-      "status": "matched",
+      "key": "paper:02d497c961583fb2e54965ab",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 3
+    },
+    {
+      "key": "paper:d563181435f730d121b7a863",
+      "status": "not_matched",
+      "source_verified": true,
+      "institutions": 0
+    },
+    {
+      "key": "paper:eaba7e365057424f7806dd24",
+      "status": "arxiv_authors",
       "source_verified": true,
       "institutions": 2
     },
     {
-      "key": "paper:ec0f219864eb6c0175617f87",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:e1da903d90e81697bc3ebc0f",
-      "status": "not_matched",
-      "source_verified": true,
-      "institutions": 0
-    },
-    {
-      "key": "paper:67b9f9d800ab1f161cc50d59",
+      "key": "paper:3226688a7cfd72dd76c0bc8e",
       "status": "arxiv_authors",
       "source_verified": true,
       "institutions": 1
     },
     {
-      "key": "paper:b3e86943dd194cad05386172",
+      "key": "paper:2ec9f3d53f7f698e2002fce4",
+      "status": "arxiv_authors",
+      "source_verified": true,
+      "institutions": 2
+    },
+    {
+      "key": "paper:2fa3fba4b39a56982b7ce667",
       "status": "arxiv_authors",
       "source_verified": true,
       "institutions": 1
     },
     {
-      "key": "paper:6c81d3d1cde3b7bb667c603a",
-      "status": "arxiv_authors",
+      "key": "paper:5b8bb748e2b9ee7c5f421566",
+      "status": "cached",
       "source_verified": true,
-      "institutions": 3
+      "institutions": 2
     },
     {
       "key": "paper:29f3a0ced2bcb71a33818a12",
@@ -106,7 +112,7 @@
     }
   ],
   "recovery": {
-    "recovered": 8,
+    "recovered": 9,
     "unavailable": 0
   }
 }
