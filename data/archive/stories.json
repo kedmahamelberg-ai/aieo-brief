@@ -2,6 +2,366 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "137fd03a5c5611423500f4684ea6191177bac5901955123fc1b89cf95b9861af",
+      "creator": "Rabindranath Tagore",
+      "creator_origin": "Indian · Bengali",
+      "culture_type": "poetry",
+      "deck": "Gitanjali · 16, by Rabindranath Tagore. Translated by Rabindranath Tagore.",
+      "excerpt": "I have had my invitation to this world’s festival, and thus my life has\nbeen blessed. My eyes have seen and my ears have heard.\n\nIt was my part at this feast to play upon my instrument, and I have\ndone all I could.\n\nNow, I ask, has the time come at last when I may go in and see thy face\nand offer thee my silent salutation?",
+      "headline": "Gitanjali · 16",
+      "key": "culture:d260301e8cb150436849d8ca",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "I have had my invitation to this world’s festival, and thus my life has",
+        "been blessed. My eyes have seen and my ears have heard.",
+        "",
+        "It was my part at this feast to play upon my instrument, and I have",
+        "done all I could.",
+        "",
+        "Now, I ask, has the time come at last when I may go in and see thy face",
+        "and offer thee my silent salutation?"
+      ],
+      "provenance_id": "pg:7164:poem:de3f96d3cf7983db1ecd710cb08fd26fa4442e40dbf004e3ae8da27e714fdd8d",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1941. Translator: Rabindranath Tagore, died 1941. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/7164"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "eda666f014d2f3191662a609d978823ce544afce6e2b0331458be4598ae219d5",
+      "source_locator": "16",
+      "source_url": "https://www.gutenberg.org/ebooks/7164",
+      "translator": "Rabindranath Tagore",
+      "work_date": "1912",
+      "date": "2026-11-19",
+      "selected_on": "2026-11-19",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-d260301e8cb150436849d8ca",
+      "path": "culture/culture-d260301e8cb150436849d8ca/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Gitanjali · 16",
+          "url": "https://www.gutenberg.org/ebooks/7164",
+          "date": "1912",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "19 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-19",
+      "summary_basis": "Selected 19 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I have had my invitation to this world’s festival, and thus my life has\nbeen blessed. My eyes have seen and my ears have heard.\n\nIt was my part at this feast to play upon my instrument, and I have\ndone all I could.\n\nNow, I ask, has the time come at last when I may go in and see thy face\nand offer thee my silent salutation?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Study for The Sleeping Beauty: The Aged King Pleads with the Good Fairy",
+      "art_type": "Drawing",
+      "balance_origin": "Russia",
+      "creator": "Léon Bakst (Russian, 1866–1924)",
+      "creator_origin": "Russia",
+      "culture_type": "illustration",
+      "deck": "Study for The Sleeping Beauty: The Aged King Pleads with the Good Fairy. pencil.",
+      "headline": "Study for The Sleeping Beauty: The Aged King Pleads with the Good Fairy",
+      "image_path": "assets/culture/ae00b414c0b7c6cce49af021.jpg",
+      "key": "culture:ae00b414c0b7c6cce49af021",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1979.92/1979.92_web.jpg",
+      "medium": "pencil",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1979.92",
+      "provenance_id": "cma:149781",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Dudley P. Allen Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1979.92",
+      "work_date": "1915",
+      "date": "2026-11-19",
+      "selected_on": "2026-11-19",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-ae00b414c0b7c6cce49af021",
+      "path": "culture/culture-ae00b414c0b7c6cce49af021/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Study for The Sleeping Beauty: The Aged King Pleads with the Good Fairy",
+          "url": "https://clevelandart.org/art/1979.92",
+          "date": "1915",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "19 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-19",
+      "summary_basis": "Selected 19 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Reflections; or Sentences and Moral Maxims",
+      "content_fingerprint": "6cdbdb3e7eb6e6b808b43d26545c5a0de284b8915d7df292dae95e8f23e747a7",
+      "creator": "François de La Rochefoucauld",
+      "creator_origin": "French",
+      "culture_type": "text",
+      "deck": "A passage from Reflections; or Sentences and Moral Maxims. Translated by J. Hain Friswell.",
+      "excerpt": "The expression \"Bel Esprit\" is much perverted, for all that one can say of the different kinds of mind meet together in the \"Bel Esprit.\" Yet as the epithet is bestowed on an infinite number of bad poets and tedious authors, it is more often used to ridicule than to praise.",
+      "headline": "Reflections; or Sentences and Moral Maxims · a short reading",
+      "key": "culture:a0f359c98084f3f78a374597",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:9105:passage:6cdbdb3e7eb6e6b808b43d26545c5a0de284b8915d7df292dae95e8f23e747a7",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1680. Translator: J. Hain Friswell, died 1878. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/9105"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "b240ded9918a8c04662b68a29101976f7f70fccf249be5fabdea579c95cd74e6",
+      "source_locator": "REFLECTIONS; OR, SENTENCES AND MORAL MAXIMS; paragraph 790 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/9105",
+      "translator": "J. Hain Friswell",
+      "work_date": "1871 translation",
+      "date": "2026-11-19",
+      "selected_on": "2026-11-19",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a0f359c98084f3f78a374597",
+      "path": "culture/culture-a0f359c98084f3f78a374597/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Reflections; or Sentences and Moral Maxims · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/9105",
+          "date": "1871 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "19 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-19",
+      "summary_basis": "Selected 19 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The expression \"Bel Esprit\" is much perverted, for all that one can say of the different kinds of mind meet together in the \"Bel Esprit.\" Yet as the epithet is bestowed on an infinite number of bad poets and tedious authors, it is more often used to ridicule than to praise.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "3d36dd326b7bde798f984f7b668667bda03c491f463442d368a7bf28024fe3fc",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "quote",
+      "deck": "From Thus Spake Zarathustra. Translation by Thomas Common.",
+      "excerpt": "I love him who desireth not too many virtues.",
+      "headline": "I love him who desireth not too many virtues.",
+      "key": "culture:6fe4b1edf61da865c59b5ca1",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:quote:3d36dd326b7bde798f984f7b668667bda03c491f463442d368a7bf28024fe3fc",
+      "publisher": "Project Gutenberg",
+      "quote_context": "I love him who desireth not too many virtues. One virtue is more of a virtue than two, because it is more of a knot for one’s destiny to cling to.",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 207 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-11-19",
+      "selected_on": "2026-11-19",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-6fe4b1edf61da865c59b5ca1",
+      "path": "culture/culture-6fe4b1edf61da865c59b5ca1/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "I love him who desireth not too many virtues.",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "19 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-19",
+      "summary_basis": "Selected 19 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I love him who desireth not too many virtues.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "I love him who desireth not too many virtues. One virtue is more of a virtue than two, because it is more of a knot for one’s destiny to cling to.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/7/79/Franz_Liszt_Mephisto_Waltz_No._1.ogg",
+      "creator": "Franz Liszt",
+      "creator_origin": "Hungarian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Liszt. 11 minutes to listen.",
+      "duration_seconds": 668,
+      "headline": "Franz Liszt Mephisto Waltz No. 1",
+      "key": "culture:3911c438b77ddf732a801be8",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Franz_Liszt_Mephisto_Waltz_No._1.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Liszt",
+      "original_recording_title": "Franz Liszt Mephisto Waltz No. 1",
+      "provenance_id": "commons:60426829",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Performed by Giorgi Latso; recorded by Asuas",
+      "recording_description": "Franz Liszt Mephisto Waltz No. 1, S.514",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Performed by Giorgi Latso; recorded by Asuas",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "Own work",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Franz_Liszt_Mephisto_Waltz_No._1.ogg",
+      "work_date": "2017-05-13",
+      "date": "2026-11-19",
+      "selected_on": "2026-11-19",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-3911c438b77ddf732a801be8",
+      "path": "culture/culture-3911c438b77ddf732a801be8/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Franz Liszt Mephisto Waltz No. 1",
+          "url": "https://commons.wikimedia.org/wiki/File:Franz_Liszt_Mephisto_Waltz_No._1.ogg",
+          "date": "2017-05-13",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "19 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-19",
+      "summary_basis": "Selected 19 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Cover for a Potpourri Vase",
       "art_type": "Ceramic",
       "balance_origin": "France",
@@ -5459,7 +5819,7 @@
         "Chethan Pandarinath"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-18T22:38:10.981786+00:00",
+      "affiliation_checked_at": "2026-11-19T08:08:20.537994+00:00",
       "source_verified_at": "2026-11-16T22:04:19.024717+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -21202,7 +21562,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-18T22:38:10.981786+00:00",
+      "affiliation_checked_at": "2026-11-19T08:08:20.537994+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
