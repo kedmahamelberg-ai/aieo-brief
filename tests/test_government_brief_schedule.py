@@ -7,9 +7,38 @@ import tempfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from datetime import datetime
-from government_brief_schedule import is_due
+from government_brief_schedule import is_due, feed_has_changes
+from government_briefs import fingerprint
 
 class GovernmentBriefScheduleTests(unittest.TestCase):
+    def test_later_monitor_corrections_are_due_once(self):
+        item = {'id': 'nl-story', 'country': 'Netherlands', 'country_code': 'NL',
+                'url': 'https://example.nl/release', 'published_date': '2026-11-19',
+                'translation_complete': True, 'classification_status': 'provisional',
+                'topics': ['artificial_intelligence'], 'english_summary': 'A source claim about AI.',
+                'ticker_message': 'AI policy'}
+        state = {'records': {'nl-story': {'id': 'nl-story'}},
+                 'checked': {'nl-story': fingerprint(item)}}
+        self.assertFalse(feed_has_changes(state, {'as_of': '2026-11-19T15:00:00Z', 'items': [item]}))
+        corrected = {**item, 'topics': ['military_defence']}
+        self.assertTrue(feed_has_changes(state, {'as_of': '2026-11-19T16:00:00Z', 'items': [corrected]}))
+        state['records'].clear()
+        state['checked'].clear()
+        self.assertFalse(feed_has_changes(state, {'as_of': '2026-11-19T16:00:00Z', 'items': [corrected]}))
+
+    def test_changed_monitor_copy_and_new_ai_item_are_due(self):
+        item = {'id': 'gr-story', 'country': 'Greece', 'country_code': 'GR',
+                'url': 'https://example.gr/speech', 'published_date': '2026-11-19',
+                'translation_complete': True, 'classification_status': 'provisional',
+                'topics': ['artificial_intelligence'], 'english_summary': 'AI can raise productivity.',
+                'ticker_message': 'Minister describes AI'}
+        state = {'records': {'gr-story': {'id': 'gr-story'}},
+                 'checked': {'gr-story': fingerprint(item)}}
+        changed = {**item, 'ticker_message': 'Minister says AI can help small firms'}
+        self.assertTrue(feed_has_changes(state, {'as_of': '2026-11-19T16:00:00Z', 'items': [changed]}))
+        self.assertTrue(feed_has_changes({'records': {}, 'checked': {}},
+                                         {'as_of': '2026-11-19T16:00:00Z', 'items': [item]}))
+
     def test_waits_until_amsterdam_publication_time(self):
         self.assertFalse(is_due({}, datetime.fromisoformat("2026-11-14T15:04:59+00:00")))
 
