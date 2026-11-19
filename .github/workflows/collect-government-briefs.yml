@@ -31,7 +31,7 @@ jobs:
           ref: main
       - name: Check whether today's Amsterdam import is due
         id: daily
-        run: python3 scripts/government_brief_schedule.py ${{ inputs.force_refresh && '--force' || '' }}
+        run: python3 scripts/government_brief_schedule.py --check-feed ${{ inputs.force_refresh && '--force' || '' }}
       - uses: actions/setup-python@v6
         if: steps.daily.outputs.due == 'true'
         with:

@@ -9,7 +9,6 @@ import uuid
 from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
-import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 FEED = 'https://monitor.hamelberg-ai.com/government-data.json'
@@ -146,6 +145,7 @@ def cards(root=ROOT):
 
 
 def main():
+    import requests
     parser = argparse.ArgumentParser()
     parser.add_argument('--dry-run', action='store_true')
     args = parser.parse_args()
