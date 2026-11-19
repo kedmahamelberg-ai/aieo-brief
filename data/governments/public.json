@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-19T14:00:00+00:00",
-  "last_checked_at": "2026-11-19T15:20:22.605096+00:00",
+  "monitor_as_of": "2026-11-19T16:27:12.505162+00:00",
+  "last_checked_at": "2026-11-19T16:37:27.880380+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1497,28 +1497,6 @@
       "body_paragraphs": [],
       "input_fingerprint": "3fa57a67a8b7d8b270478798439e70b2e95a871448fe164fd78961c7938224d1"
     },
-    "a92f8231ce4f0e2cb583": {
-      "id": "a92f8231ce4f0e2cb583",
-      "country": "Kazakhstan",
-      "country_code": "KZ",
-      "url": "https://primeminister.kz/kz/news/olzhas-bektenov-don-tau-ken-bayytu-kombinatynyn-bolashak-shahtasyndagy-onerkasiptik-kauipsizdik-sharalaryn-tekserdi-32139",
-      "date": "2026-11-19",
-      "headline": "Kazakhstan strengthens mine safety oversight with accident-prevention measures and real-time monitoring.",
-      "summary": "Prime Minister Olzhas Bektenov inspected safety measures at the Bolashak mine in Aktobe Region, urging stronger compliance, equipment oversight and accident prevention. The mine uses digital monitoring and advanced mining systems; Kazakhstan’s emergency ministry also receives real-time data from 20 mines and mining sites.",
-      "body_paragraphs": [],
-      "input_fingerprint": "5f031d025b18514a2228d20767e721253c2c2ae4a99a279fba03f9e6295ea569"
-    },
-    "5f24021f506dc5a3b641": {
-      "id": "5f24021f506dc5a3b641",
-      "country": "Netherlands",
-      "country_code": "NL",
-      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/19/nieuw-programma-moet-innovatie-en-opschaling-defensie-industrie-versnellen",
-      "date": "2026-11-19",
-      "headline": "The Netherlands commits €1.6 billion to expand defence production, innovation and supply-chain resilience.",
-      "summary": "The Netherlands launched the NPDII to scale up domestic defence production, protect critical expertise, and accelerate innovation. It sets four focus areas, promotes industry partnerships and improved financing and facilities, and allocates €1.6 billion, aiming for €15 billion in industry turnover by 2030.",
-      "body_paragraphs": [],
-      "input_fingerprint": "600ccf6ab0ffe519e3c98e48d5b8c7bd9986cf46108b14516c306c54492094a1"
-    },
     "7c371c86683310ec946f": {
       "id": "7c371c86683310ec946f",
       "country": "United Kingdom",
@@ -1536,10 +1514,10 @@
       "country_code": "GR",
       "url": "https://media.gov.gr/omilia-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-sto-5o-oikonomiko-synedrio-tis-naftemporikis-elliniki-oikonomia-i-nea-architektoniki/",
       "date": "2026-11-18",
-      "headline": "Marinakis says energy security, infrastructure and technology are strategic to Greece’s productivity and economic competitiveness.",
-      "summary": "Deputy Minister Pavlos Marinakis discusses media reform and Greece’s economic recovery, saying lasting prosperity and social justice depend on higher productivity, investment, fiscal responsibility, technology, infrastructure, energy security and business-friendly reforms. He acknowledges cost-of-living and housing pressures and urges continued reform.",
+      "headline": "Greek minister says AI can lift productivity, while energy security and supply chains shape competitiveness.",
+      "summary": "In an economic-policy speech, Deputy Minister Pavlos Marinakis said AI and digital transformation could help Greek firms raise productivity, cut costs and reduce bureaucracy, with smaller firms sharing the benefits. He also called energy security, infrastructure and reliable supply chains strategic for competitiveness.",
       "body_paragraphs": [],
-      "input_fingerprint": "0d63d16c0b422d27a3658e7177b7913aef0ed4f9cbaa9422d3e4852e8ffc08d5"
+      "input_fingerprint": "26bb4230dbda8a65312371f8841bc1125ec48dc756237b53602704f42ca12229"
     },
     "b4287079579f46e5f20c": {
       "id": "b4287079579f46e5f20c",
@@ -1573,17 +1551,6 @@
       "summary": "Xi and Trump met in Shenzhen and called for maintaining stable bilateral ties, implementing their leaders’ consensus, and expanding cooperation. Xi raised trade, counternarcotics, AI safety and Taiwan; Trump said the United States does not support Taiwan independence.",
       "body_paragraphs": [],
       "input_fingerprint": "f194060c4d8fdf494787ae8fd839c4585ab8882eafeee596c8830e3af125dca3"
-    },
-    "60edd99ad9cecc77e7b6": {
-      "id": "60edd99ad9cecc77e7b6",
-      "country": "Kazakhstan",
-      "country_code": "KZ",
-      "url": "https://primeminister.kz/kz/news/kuryltai/ukimet-kuryltayda-onlayn-platformalar-men-mass-media-maseleleri-boyynsha-zan-zhobalaryn-usyndy-32135",
-      "date": "2026-11-18",
-      "headline": "Kazakhstan advances proposed rules on online platforms, unlawful content and children’s safety.",
-      "summary": "Kurultai deputies approved proposed legislation on online platforms, media and administrative offences at first reading. The measures address platform accountability, child safety, audiovisual services and citizens’ rights. Deputies also advanced budget legislation and approved or ratified agreements with Singapore and Turkic States.",
-      "body_paragraphs": [],
-      "input_fingerprint": "cbf5979eab2a71c84ad4cfaa45f58d595dcb7af3af2f9623493e9c70e41192ce"
     },
     "0d3da572f379627b0365": {
       "id": "0d3da572f379627b0365",
@@ -1740,14 +1707,11 @@
     "dccc30891af6703d9a19": "73f02204ec33a822add5fe50b40c3a09c88c59ec675fa0540249b670aa86eff5",
     "f674ed27a764f88771ee": "278ab54f571064bb9f5cba1f60ac53e3c6e880d6ff57dc096ce87985d1738094",
     "0686c986fc824f74df86": "3fa57a67a8b7d8b270478798439e70b2e95a871448fe164fd78961c7938224d1",
-    "a92f8231ce4f0e2cb583": "5f031d025b18514a2228d20767e721253c2c2ae4a99a279fba03f9e6295ea569",
-    "5f24021f506dc5a3b641": "600ccf6ab0ffe519e3c98e48d5b8c7bd9986cf46108b14516c306c54492094a1",
     "7c371c86683310ec946f": "eb09c74b1b61d9762ca8d1a033daade5242b9e583e50ee1d99ee3c80a6b764c2",
-    "ca2b403c5d8ecf4ef15f": "0d63d16c0b422d27a3658e7177b7913aef0ed4f9cbaa9422d3e4852e8ffc08d5",
+    "ca2b403c5d8ecf4ef15f": "26bb4230dbda8a65312371f8841bc1125ec48dc756237b53602704f42ca12229",
     "b4287079579f46e5f20c": "55756509633eacf462e478917bb9c2dedb552fb64b9ed8d11a0a0b49b608107c",
     "988bc52e00995f14128a": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa",
     "6fcf36d70333107c372a": "f194060c4d8fdf494787ae8fd839c4585ab8882eafeee596c8830e3af125dca3",
-    "60edd99ad9cecc77e7b6": "cbf5979eab2a71c84ad4cfaa45f58d595dcb7af3af2f9623493e9c70e41192ce",
     "0d3da572f379627b0365": "169f47910f1025934907dfc63fa26982ecd9ed5be12ed234965b6b92327ecfbd",
     "c20b880177123988076f": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd"
   },
