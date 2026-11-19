@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-18T14:00:00+00:00",
-  "last_checked_at": "2026-11-18T17:45:22.535432+00:00",
+  "monitor_as_of": "2026-11-19T14:00:00+00:00",
+  "last_checked_at": "2026-11-19T15:20:22.605096+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1261,10 +1261,10 @@
       "country_code": "US",
       "url": "https://www.whitehouse.gov/briefings-statements/2026/11/quad-leaders-summit-joint-press-release/",
       "date": "2026-11-17",
-      "headline": "Quad leaders announce cooperation on maritime surveillance, cyber, supply chains, cables, counterterrorism and trusted AI.",
-      "summary": "Quad leaders met in Manila and reaffirmed support for a free and open Indo-Pacific, regional stability, ASEAN unity, and counterterrorism. They announced or welcomed initiatives on business ties, trusted AI, maritime surveillance, cable and energy connectivity, and cybersecurity.",
+      "headline": "Quad leaders back a trusted “Super Intelligence” accelerator for Indo-Pacific AI access and deployment.",
+      "summary": "Quad leaders backed an accelerator to coordinate and fund access, deployment and technical assistance for trusted “Super Intelligence” across the Indo-Pacific. The release explains that Australia, India and Japan use the term for AI. They also announced maritime-surveillance, cyber, cable and energy-connectivity initiatives.",
       "body_paragraphs": [],
-      "input_fingerprint": "19ff3aa3146d6a76a83619312b4b8552a05b847162451fbb14ba6ce2e1246f64"
+      "input_fingerprint": "2da96d6883d6601c3b127ebb3d6daafdf866da077121d374c2c37402b0b2b351"
     },
     "3814133e4f6eef0b021b": {
       "id": "3814133e4f6eef0b021b",
@@ -1283,10 +1283,10 @@
       "country_code": "CN",
       "url": "https://english.www.gov.cn/news/202611/16/content_WS6afaa399c6d00ca5f9a0e4d3.html",
       "date": "2026-11-16",
-      "headline": "China and ASEAN designate 2027 their Year of AI Cooperation while pursuing a South China Sea…",
-      "summary": "At the Manila summit, Li Qiang urged broader China-ASEAN cooperation, while ASEAN leaders welcomed closer ties and progress toward a South China Sea Code of Conduct. The FTA 3.0 protocol takes effect December 1, 2026, and 2027 was designated the Year of AI Cooperation.",
+      "headline": "The China–ASEAN summit announces a 2027 AI cooperation year; Li urges an early South China Sea…",
+      "summary": "At the China–ASEAN summit, Li urged an early South China Sea code, closer supply-chain ties and a 2027 AI cooperation year. China said it was ready to work with ASEAN on AI+ cooperation; the upgraded free-trade protocol takes effect December 1.",
       "body_paragraphs": [],
-      "input_fingerprint": "ce7402b11ff6293b66f237d2d296395fee7f688567c5e4fefde063ef8a8e877a"
+      "input_fingerprint": "d30feb14ba04f781bc767bc3b730aa2cf1fc9d0160d9d9ee02377b9756c3cbad"
     },
     "2991655920a8759a2cf3": {
       "id": "2991655920a8759a2cf3",
@@ -1496,6 +1496,116 @@
       "summary": "Canada’s 2026 Cyber Security Awareness Month campaign encourages practical online safety habits in response to increasingly convincing AI-enabled scams. Weekly themes address recognizing threats, strengthening defences, protecting information and community awareness, alongside survey findings on cyber incidents and concerns about AI-related crime.",
       "body_paragraphs": [],
       "input_fingerprint": "3fa57a67a8b7d8b270478798439e70b2e95a871448fe164fd78961c7938224d1"
+    },
+    "a92f8231ce4f0e2cb583": {
+      "id": "a92f8231ce4f0e2cb583",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/olzhas-bektenov-don-tau-ken-bayytu-kombinatynyn-bolashak-shahtasyndagy-onerkasiptik-kauipsizdik-sharalaryn-tekserdi-32139",
+      "date": "2026-11-19",
+      "headline": "Kazakhstan strengthens mine safety oversight with accident-prevention measures and real-time monitoring.",
+      "summary": "Prime Minister Olzhas Bektenov inspected safety measures at the Bolashak mine in Aktobe Region, urging stronger compliance, equipment oversight and accident prevention. The mine uses digital monitoring and advanced mining systems; Kazakhstan’s emergency ministry also receives real-time data from 20 mines and mining sites.",
+      "body_paragraphs": [],
+      "input_fingerprint": "5f031d025b18514a2228d20767e721253c2c2ae4a99a279fba03f9e6295ea569"
+    },
+    "5f24021f506dc5a3b641": {
+      "id": "5f24021f506dc5a3b641",
+      "country": "Netherlands",
+      "country_code": "NL",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/19/nieuw-programma-moet-innovatie-en-opschaling-defensie-industrie-versnellen",
+      "date": "2026-11-19",
+      "headline": "The Netherlands commits €1.6 billion to expand defence production, innovation and supply-chain resilience.",
+      "summary": "The Netherlands launched the NPDII to scale up domestic defence production, protect critical expertise, and accelerate innovation. It sets four focus areas, promotes industry partnerships and improved financing and facilities, and allocates €1.6 billion, aiming for €15 billion in industry turnover by 2030.",
+      "body_paragraphs": [],
+      "input_fingerprint": "600ccf6ab0ffe519e3c98e48d5b8c7bd9986cf46108b14516c306c54492094a1"
+    },
+    "7c371c86683310ec946f": {
+      "id": "7c371c86683310ec946f",
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "url": "https://www.gov.uk/government/news/1000-long-range-strike-drones-announced-for-ukraine-as-prime-minister-co-chairs-coalition-of-the-willing-in-berlin",
+      "date": "2026-11-18",
+      "headline": "UK announces over 1,000 long-range drones for Ukraine as Russian attacks disrupt energy and essential services.",
+      "summary": "The UK plans a £260 million package for Ukraine, including more than 1,000 long-range strike drones and other systems; over 80% of the funding will be spent domestically. Twelve UK defence firms will also gain access to Ukraine’s Avengers AI Labs.",
+      "body_paragraphs": [],
+      "input_fingerprint": "eb09c74b1b61d9762ca8d1a033daade5242b9e583e50ee1d99ee3c80a6b764c2"
+    },
+    "ca2b403c5d8ecf4ef15f": {
+      "id": "ca2b403c5d8ecf4ef15f",
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "https://media.gov.gr/omilia-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-sto-5o-oikonomiko-synedrio-tis-naftemporikis-elliniki-oikonomia-i-nea-architektoniki/",
+      "date": "2026-11-18",
+      "headline": "Marinakis says energy security, infrastructure and technology are strategic to Greece’s productivity and economic competitiveness.",
+      "summary": "Deputy Minister Pavlos Marinakis discusses media reform and Greece’s economic recovery, saying lasting prosperity and social justice depend on higher productivity, investment, fiscal responsibility, technology, infrastructure, energy security and business-friendly reforms. He acknowledges cost-of-living and housing pressures and urges continued reform.",
+      "body_paragraphs": [],
+      "input_fingerprint": "0d63d16c0b422d27a3658e7177b7913aef0ed4f9cbaa9422d3e4852e8ffc08d5"
+    },
+    "b4287079579f46e5f20c": {
+      "id": "b4287079579f46e5f20c",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/19/content_WS6afe8c27c6d00ca5f9a0e732.html",
+      "date": "2026-11-19",
+      "headline": "Xi urges wider AI use alongside Asia-Pacific trade and connectivity proposals.",
+      "summary": "At the APEC leaders’ meeting in Shenzhen, Xi called for deeper trade ties, connected supply chains and a digital innovation pillar that would encourage wider AI use. China pledged $20 million for APEC cooperation and proposed a Shenzhen research center.",
+      "body_paragraphs": [],
+      "input_fingerprint": "55756509633eacf462e478917bb9c2dedb552fb64b9ed8d11a0a0b49b608107c"
+    },
+    "988bc52e00995f14128a": {
+      "id": "988bc52e00995f14128a",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/19/content_WS6afe6164c6d00ca5f9a0e70d.html",
+      "date": "2026-11-19",
+      "headline": "Xi urges wider AI use and stronger Asia-Pacific trade, connectivity, energy and food-security cooperation.",
+      "summary": "Xi called for stronger Asia-Pacific trade and connectivity, digital infrastructure and data governance, and broad use of AI to spur industrial innovation. He also urged cooperation on energy and food security and a green transition.",
+      "body_paragraphs": [],
+      "input_fingerprint": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa"
+    },
+    "6fcf36d70333107c372a": {
+      "id": "6fcf36d70333107c372a",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/19/content_WS6afed4bbc6d00ca5f9a0e787.html",
+      "date": "2026-11-19",
+      "headline": "Xi and Trump call for stable ties, AI safety coordination and continued cooperation on cross-border issues.",
+      "summary": "Xi and Trump met in Shenzhen and called for maintaining stable bilateral ties, implementing their leaders’ consensus, and expanding cooperation. Xi raised trade, counternarcotics, AI safety and Taiwan; Trump said the United States does not support Taiwan independence.",
+      "body_paragraphs": [],
+      "input_fingerprint": "f194060c4d8fdf494787ae8fd839c4585ab8882eafeee596c8830e3af125dca3"
+    },
+    "60edd99ad9cecc77e7b6": {
+      "id": "60edd99ad9cecc77e7b6",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/kuryltai/ukimet-kuryltayda-onlayn-platformalar-men-mass-media-maseleleri-boyynsha-zan-zhobalaryn-usyndy-32135",
+      "date": "2026-11-18",
+      "headline": "Kazakhstan advances proposed rules on online platforms, unlawful content and children’s safety.",
+      "summary": "Kurultai deputies approved proposed legislation on online platforms, media and administrative offences at first reading. The measures address platform accountability, child safety, audiovisual services and citizens’ rights. Deputies also advanced budget legislation and approved or ratified agreements with Singapore and Turkic States.",
+      "body_paragraphs": [],
+      "input_fingerprint": "cbf5979eab2a71c84ad4cfaa45f58d595dcb7af3af2f9623493e9c70e41192ce"
+    },
+    "0d3da572f379627b0365": {
+      "id": "0d3da572f379627b0365",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202610/18/content_WS6ad4d9c8c6d00ca5f9a0dc44.html",
+      "date": "2026-10-18",
+      "headline": "China's premier calls for AI and biomedicine to improve traditional-medicine diagnosis and treatment.",
+      "summary": "At a traditional medicine conference in Beijing, Premier Li Qiang called for integrating AI and modern biomedicine with traditional medicine to improve diagnosis and treatment. He also urged international cooperation on chronic and emerging infectious diseases.",
+      "body_paragraphs": [],
+      "input_fingerprint": "169f47910f1025934907dfc63fa26982ecd9ed5be12ed234965b6b92327ecfbd"
+    },
+    "c20b880177123988076f": {
+      "id": "c20b880177123988076f",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202610/13/content_WS6ace33cac6d00ca5f9a0da83.html",
+      "date": "2026-10-13",
+      "headline": "China and Botswana upgrade ties and agree to cooperate on global AI governance.",
+      "summary": "China and Botswana upgraded ties during President Boko’s October visit and agreed to expand cooperation on security and development. Their joint statement also commits them to dialogue on global AI governance; Botswana will consider participating in the World Artificial Intelligence Cooperation Organization.",
+      "body_paragraphs": [],
+      "input_fingerprint": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd"
     }
   },
   "checked": {
@@ -1608,9 +1718,9 @@
     "44c30360c6e8388a859a": "2fc1d33aafeeb25c1496fbfad614d0caf9d4c53e73089e401cd635da3df07d54",
     "3d5b00da6913e879ed97": "b30b39c6bdcb33fc28003e4b79b347b88b6b3b625532455934917d9fcd72697b",
     "6365e6567aa09095e76b": "67f8ff4a725e089826763f58df2dbcf9dd4a5d77f944ba9d14866c1cb91ffcda",
-    "2798261d3ea6f723cbcd": "19ff3aa3146d6a76a83619312b4b8552a05b847162451fbb14ba6ce2e1246f64",
+    "2798261d3ea6f723cbcd": "2da96d6883d6601c3b127ebb3d6daafdf866da077121d374c2c37402b0b2b351",
     "3814133e4f6eef0b021b": "fd189649d47fd4405af8072dfe4c17096f4ea30c33be069f6d6a27e880dc04f6",
-    "0e3e196fe3440012e225": "ce7402b11ff6293b66f237d2d296395fee7f688567c5e4fefde063ef8a8e877a",
+    "0e3e196fe3440012e225": "d30feb14ba04f781bc767bc3b730aa2cf1fc9d0160d9d9ee02377b9756c3cbad",
     "2991655920a8759a2cf3": "b271d13b4f9010ceb31ce5d81fc43cb7a3cc818e1add6ce509437ab8ebce4547",
     "20f68d13d622ab35d854": "940f697e070096c7c66a3aebb00b28b2ebe34728ce11039016d869e4f1fc1ace",
     "8d659c5a68ccb412d439": "b201935ad1df8f776e473d35bb46e65df7bae9a49a32a9edfb7dc488afbc9cda",
@@ -1629,7 +1739,17 @@
     "eb862035c9ec30297a2e": "d5980c430c311240da7c92f2892056e7f2ee94b3858c31340d52a5e20186c577",
     "dccc30891af6703d9a19": "73f02204ec33a822add5fe50b40c3a09c88c59ec675fa0540249b670aa86eff5",
     "f674ed27a764f88771ee": "278ab54f571064bb9f5cba1f60ac53e3c6e880d6ff57dc096ce87985d1738094",
-    "0686c986fc824f74df86": "3fa57a67a8b7d8b270478798439e70b2e95a871448fe164fd78961c7938224d1"
+    "0686c986fc824f74df86": "3fa57a67a8b7d8b270478798439e70b2e95a871448fe164fd78961c7938224d1",
+    "a92f8231ce4f0e2cb583": "5f031d025b18514a2228d20767e721253c2c2ae4a99a279fba03f9e6295ea569",
+    "5f24021f506dc5a3b641": "600ccf6ab0ffe519e3c98e48d5b8c7bd9986cf46108b14516c306c54492094a1",
+    "7c371c86683310ec946f": "eb09c74b1b61d9762ca8d1a033daade5242b9e583e50ee1d99ee3c80a6b764c2",
+    "ca2b403c5d8ecf4ef15f": "0d63d16c0b422d27a3658e7177b7913aef0ed4f9cbaa9422d3e4852e8ffc08d5",
+    "b4287079579f46e5f20c": "55756509633eacf462e478917bb9c2dedb552fb64b9ed8d11a0a0b49b608107c",
+    "988bc52e00995f14128a": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa",
+    "6fcf36d70333107c372a": "f194060c4d8fdf494787ae8fd839c4585ab8882eafeee596c8830e3af125dca3",
+    "60edd99ad9cecc77e7b6": "cbf5979eab2a71c84ad4cfaa45f58d595dcb7af3af2f9623493e9c70e41192ce",
+    "0d3da572f379627b0365": "169f47910f1025934907dfc63fa26982ecd9ed5be12ed234965b6b92327ecfbd",
+    "c20b880177123988076f": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd"
   },
   "retry": {},
   "pending": 0,
