@@ -448,9 +448,9 @@
       "platform": "substack_note",
       "account": "The Brief publication, @thebriefaieo",
       "scheduled_at": "2026-11-19T12:00:00+01:00",
-      "status": "PUBLISHED_DEFECTIVE_PENDING_CONFIRMATION",
+      "status": "PUBLISHED_DEFECTIVE_REQUIRES_LINK_EDIT",
       "verified": false,
-      "verification": "The live Note has the approved caption but exposes only the Slovenia tracked destination despite saying to read both announcements. An in-place edit with labeled Estonia and Slovenia tracked links is prepared; Save awaits user confirmation because it changes a public post.",
+      "verification": "The public Note displays labels for Estonia and Slovenia, but only the Slovenia destination is linked. Substack removed the raw URL from the Estonia label. A further public edit must attach the Estonia tracked URL to visible anchor text; no further edit was attempted without user confirmation.",
       "url": "https://substack.com/@thebriefaieo/note/c-389095495"
     },
     {
@@ -1088,6 +1088,19 @@
         "instagram_feed": "PUBLISHED",
         "instagram_story": "UNVERIFIED",
         "substack_note": "PUBLISHED_DEFECTIVE_PENDING_CONFIRMATION"
+      }
+    },
+    {
+      "checked_at": "2026-11-19T15:23:02+01:00",
+      "topic_id": "THU12_GOVERNMENTS",
+      "scheduled_at": "2026-11-19T12:00:00+01:00",
+      "duplicate_check": "PASS: one current placement remains visible on each inspectable platform",
+      "statuses": {
+        "linkedin": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram_feed": "PUBLISHED",
+        "instagram_story": "UNVERIFIED",
+        "substack_note": "PUBLISHED_DEFECTIVE_REQUIRES_LINK_EDIT"
       }
     }
   ]
