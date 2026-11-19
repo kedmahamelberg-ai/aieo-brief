@@ -367,8 +367,8 @@
       "country_code": "NL",
       "url": "https://www.rijksoverheid.nl/actueel/nieuws/2026/11/19/nieuw-programma-moet-innovatie-en-opschaling-defensie-industrie-versnellen",
       "date": "2026-11-19",
-      "headline": "The Netherlands commits €1.6 billion to expand defence production, innovation and supply-chain resilience.",
-      "summary": "The Netherlands launched the NPDII to scale up domestic defence production, protect critical expertise, and accelerate innovation. It sets four focus areas, promotes industry partnerships and improved financing and facilities, and allocates €1.6 billion, aiming for €15 billion in industry turnover by 2030.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "600ccf6ab0ffe519e3c98e48d5b8c7bd9986cf46108b14516c306c54492094a1",
       "key": "event:7dad2af2-9843-53ce-a69d-27b4f4cc060c",
@@ -376,7 +376,7 @@
       "section": "governments",
       "slug": "netherlands-commits-1-6-billion-expand-supply-chain-resilience",
       "path": "story/netherlands-commits-1-6-billion-expand-supply-chain-resilience/index.html",
-      "deck": "The Netherlands launched the NPDII to scale up domestic defence production, protect critical expertise, and accelerate innovation. It sets four focus areas, promotes industry partnerships and improved financing and facilities, and allocates €1.6 billion, aiming for €15 billion in industry turnover by 2030.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Netherlands",
       "source_count": 1,
       "sources": [
@@ -399,7 +399,7 @@
       "ai_label": "Context",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -410,7 +410,8 @@
       "legacy_paths": [
         "story/government-7dad2af2-9843-53ce-a69d-27b4f4cc060c/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "a92f8231ce4f0e2cb583",
@@ -418,8 +419,8 @@
       "country_code": "KZ",
       "url": "https://primeminister.kz/kz/news/olzhas-bektenov-don-tau-ken-bayytu-kombinatynyn-bolashak-shahtasyndagy-onerkasiptik-kauipsizdik-sharalaryn-tekserdi-32139",
       "date": "2026-11-19",
-      "headline": "Kazakhstan strengthens mine safety oversight with accident-prevention measures and real-time monitoring.",
-      "summary": "Prime Minister Olzhas Bektenov inspected safety measures at the Bolashak mine in Aktobe Region, urging stronger compliance, equipment oversight and accident prevention. The mine uses digital monitoring and advanced mining systems; Kazakhstan’s emergency ministry also receives real-time data from 20 mines and mining sites.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "5f031d025b18514a2228d20767e721253c2c2ae4a99a279fba03f9e6295ea569",
       "key": "event:fd9861ea-2ab4-5e44-b115-91472dbdf18f",
@@ -427,7 +428,7 @@
       "section": "governments",
       "slug": "kazakhstan-strengthens-mine-safety-oversight-accident-prevention-real-time-monitoring",
       "path": "story/kazakhstan-strengthens-mine-safety-oversight-accident-prevention-real-time-monitoring/index.html",
-      "deck": "Prime Minister Olzhas Bektenov inspected safety measures at the Bolashak mine in Aktobe Region, urging stronger compliance, equipment oversight and accident prevention. The mine uses digital monitoring and advanced mining systems; Kazakhstan’s emergency ministry also receives real-time data from 20 mines and mining sites.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Kazakhstan",
       "source_count": 1,
       "sources": [
@@ -450,7 +451,7 @@
       "ai_label": "Context",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -461,7 +462,8 @@
       "legacy_paths": [
         "story/government-fd9861ea-2ab4-5e44-b115-91472dbdf18f/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "988bc52e00995f14128a",
@@ -1090,8 +1092,8 @@
       "country_code": "KZ",
       "url": "https://primeminister.kz/kz/news/kuryltai/ukimet-kuryltayda-onlayn-platformalar-men-mass-media-maseleleri-boyynsha-zan-zhobalaryn-usyndy-32135",
       "date": "2026-11-18",
-      "headline": "Kazakhstan advances proposed rules on online platforms, unlawful content and children’s safety.",
-      "summary": "Kurultai deputies approved proposed legislation on online platforms, media and administrative offences at first reading. The measures address platform accountability, child safety, audiovisual services and citizens’ rights. Deputies also advanced budget legislation and approved or ratified agreements with Singapore and Turkic States.",
+      "headline": "Government announcement being checked",
+      "summary": "",
       "body_paragraphs": [],
       "input_fingerprint": "cbf5979eab2a71c84ad4cfaa45f58d595dcb7af3af2f9623493e9c70e41192ce",
       "key": "event:2746fa7c-da36-5176-8be3-aa03038583df",
@@ -1099,7 +1101,7 @@
       "section": "governments",
       "slug": "kazakhstan-advances-proposed-rules-online-platforms-childrens-safety",
       "path": "story/kazakhstan-advances-proposed-rules-online-platforms-childrens-safety/index.html",
-      "deck": "Kurultai deputies approved proposed legislation on online platforms, media and administrative offences at first reading. The measures address platform accountability, child safety, audiovisual services and citizens’ rights. Deputies also advanced budget legislation and approved or ratified agreements with Singapore and Turkic States.",
+      "deck": "We are checking this announcement again. The official source remains available below.",
       "publisher": "Government of Kazakhstan",
       "source_count": 1,
       "sources": [
@@ -1122,7 +1124,7 @@
       "ai_label": "Context",
       "for_humans": "",
       "for_ai": "",
-      "has_editorial": true,
+      "has_editorial": false,
       "evidence_complete": false,
       "summary_basis": "Monitor government narrative · AI topic label",
       "reading_minutes": 1,
@@ -1133,7 +1135,8 @@
       "legacy_paths": [
         "story/government-2746fa7c-da36-5176-8be3-aa03038583df/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "withdrawn": true
     },
     {
       "id": "ca2b403c5d8ecf4ef15f",
@@ -1141,16 +1144,16 @@
       "country_code": "GR",
       "url": "https://media.gov.gr/omilia-tou-yfypourgou-para-to-prothypourgo-kai-kyvernitikou-ekprosopou-pavlou-marinaki-sto-5o-oikonomiko-synedrio-tis-naftemporikis-elliniki-oikonomia-i-nea-architektoniki/",
       "date": "2026-11-18",
-      "headline": "Marinakis says energy security, infrastructure and technology are strategic to Greece’s productivity and economic competitiveness.",
-      "summary": "Deputy Minister Pavlos Marinakis discusses media reform and Greece’s economic recovery, saying lasting prosperity and social justice depend on higher productivity, investment, fiscal responsibility, technology, infrastructure, energy security and business-friendly reforms. He acknowledges cost-of-living and housing pressures and urges continued reform.",
+      "headline": "Greek minister says AI can lift productivity, while energy security and supply chains shape competitiveness.",
+      "summary": "In an economic-policy speech, Deputy Minister Pavlos Marinakis said AI and digital transformation could help Greek firms raise productivity, cut costs and reduce bureaucracy, with smaller firms sharing the benefits. He also called energy security, infrastructure and reliable supply chains strategic for competitiveness.",
       "body_paragraphs": [],
-      "input_fingerprint": "0d63d16c0b422d27a3658e7177b7913aef0ed4f9cbaa9422d3e4852e8ffc08d5",
+      "input_fingerprint": "26bb4230dbda8a65312371f8841bc1125ec48dc756237b53602704f42ca12229",
       "key": "event:91c0db5c-337e-50cb-a509-3aaa262e4556",
       "kind": "news",
       "section": "governments",
       "slug": "marinakis-energy-security-infrastructure-technology-strategic-economic-competitiveness",
       "path": "story/marinakis-energy-security-infrastructure-technology-strategic-economic-competitiveness/index.html",
-      "deck": "Deputy Minister Pavlos Marinakis discusses media reform and Greece’s economic recovery, saying lasting prosperity and social justice depend on higher productivity, investment, fiscal responsibility, technology, infrastructure, energy security and business-friendly reforms. He acknowledges cost-of-living and housing pressures and urges continued reform.",
+      "deck": "In an economic-policy speech, Deputy Minister Pavlos Marinakis said AI and digital transformation could help Greek firms raise productivity, cut costs and reduce bureaucracy, with smaller firms sharing the benefits. He also called energy security, infrastructure and reliable supply chains strategic for competitiveness.",
       "publisher": "Government of Greece",
       "source_count": 1,
       "sources": [
