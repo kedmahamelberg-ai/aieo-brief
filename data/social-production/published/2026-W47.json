@@ -7,10 +7,10 @@
   "recorded_at": "2026-11-16T19:59:31.231722+01:00",
   "publishing_status": "PUBLISHED_AND_SCHEDULED",
   "counts": {
-    "feed_and_notes_published": 52,
-    "feed_and_notes_scheduled": 24,
-    "instagram_story_frames_published": 6,
-    "instagram_story_frames_scheduled": 18,
+    "feed_and_notes_published": 56,
+    "feed_and_notes_scheduled": 20,
+    "instagram_story_frames_published": 9,
+    "instagram_story_frames_scheduled": 15,
     "weekly_substack_posts_published": 1,
     "instagram_story_frames_unverified": 33
   },
@@ -591,9 +591,10 @@
       "platform": "linkedin",
       "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
       "scheduled_at": "2026-11-20T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+      "verification": "Published Page post inspected with the approved Canada headline, hook, fact, exact LinkedIn-tracked destination, attribution, three hashtags and one branded image.",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7528148201737068544/?actorCompanyId=146490147"
     },
     {
       "id": "FRI18_CA_568983C2_facebook",
@@ -601,9 +602,10 @@
       "platform": "facebook",
       "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
       "scheduled_at": "2026-11-20T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Published Page post inspected with the approved full caption, exact Facebook-tracked destination, two hashtags and three-image post.",
+      "url": "https://www.facebook.com/61594324679612/posts/122137456317477489"
     },
     {
       "id": "FRI18_CA_568983C2_instagram",
@@ -611,9 +613,10 @@
       "platform": "instagram",
       "account": "thebrief_ai.empowerment",
       "scheduled_at": "2026-11-20T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Public carousel inspected with the approved Canada caption, five hashtags and three media slides.",
+      "url": "https://www.instagram.com/thebrief_ai.empowerment/p/Df-JFCVwXj-/"
     },
     {
       "id": "FRI18_CA_568983C2_substack_note",
@@ -621,9 +624,10 @@
       "platform": "substack_note",
       "account": "The Brief publication, @thebriefaieo",
       "scheduled_at": "2026-11-20T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed topic and date/time"
+      "verification": "Live Note inspected with the complete approved copy, attribution, two hashtags and exact tracked article card.",
+      "url": "https://substack.com/@thebriefaieo/note/c-389118018"
     },
     {
       "id": "SAT06_RESEARCH_linkedin",
@@ -935,9 +939,14 @@
       "topic_id": "FRI18_CA_568983C2",
       "scheduled_at": "2026-11-20T18:00:00+01:00",
       "platform": "instagram_story",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "frames": 3,
-      "verification": "Three frames at exact approved time in Scheduled Stories list"
+      "verification": "Meta Business Suite Planner showed three separate 18:00 Instagram Story frames as Active after the slot.",
+      "content_ids": [
+        "17989568595094628",
+        "18201922423385479",
+        "18202580647389528"
+      ]
     },
     {
       "topic_id": "SAT06_RESEARCH",
@@ -1151,6 +1160,19 @@
         "facebook": "PUBLISHED",
         "instagram_feed": "PUBLISHED",
         "instagram_story": "UNVERIFIED",
+        "substack_note": "PUBLISHED"
+      }
+    },
+    {
+      "checked_at": "2026-11-20T18:13:56+01:00",
+      "topic_id": "FRI18_CA_568983C2",
+      "scheduled_at": "2026-11-20T18:00:00+01:00",
+      "duplicate_check": "PASS: one current placement observed on each feed/Note platform and exactly three Active Story frames in Meta Business Suite",
+      "statuses": {
+        "linkedin": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram_feed": "PUBLISHED",
+        "instagram_story": "PUBLISHED",
         "substack_note": "PUBLISHED"
       }
     }
