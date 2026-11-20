@@ -17,10 +17,22 @@ from brief_database import dbmaps
 from weekly_overviews import prepare_weekly_overviews
 from weekly_editorials import eligible, ready_valid, validate_section
 from weekly_review_delivery import REPOSITORY, email_content
+from weekly_review_gate import approved_for_release, reopen_requested
 
 
 def main() -> None:
     release, symbiosis = inputs()
+    release_id = str(release.get("release_id", ""))
+    expected_release_id = os.environ.get("EXPECTED_RELEASE_ID")
+    if expected_release_id and release_id != expected_release_id:
+        raise ValueError("Observatory release changed after the weekly review gate")
+    if approved_for_release(ROOT, release_id) and not reopen_requested():
+        output = os.environ.get("GITHUB_OUTPUT")
+        if output:
+            with Path(output).open("a", encoding="utf-8") as handle:
+                handle.write(f"release_id={release_id}\nready=false\nneeds_review=false\n")
+        print(f"Skipping {release_id}: the owner-approved edition is already published.")
+        return
     registry, readiness, editorial = dbmaps(False)
     news = cards(release, symbiosis, registry, readiness, editorial)
     research = papers()
@@ -43,6 +55,7 @@ def main() -> None:
         "requires_human_approval": ready,
         "publication_blocked": True,
         "email_blocked": True,
+        "reopen_approved": reopen_requested(),
         "overview": overview,
     }
     path = Path("weekly-review-draft.json")
