@@ -2,6 +2,407 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Meditations",
+      "content_fingerprint": "cf00163ce6a3e4cb2142deb4e78f6b097e01f5c33f55e4ad4d07e42227f3afe2",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "quote",
+      "deck": "From Meditations. Translation by Méric Casaubon.",
+      "excerpt": "Is it now void of reason ir no?",
+      "headline": "Is it now void of reason ir no?",
+      "key": "culture:b2fe80628df3fdfc67c3580e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:quote:cf00163ce6a3e4cb2142deb4e78f6b097e01f5c33f55e4ad4d07e42227f3afe2",
+      "publisher": "Project Gutenberg",
+      "quote_context": "XXIV Let it always appear and be manifest unto thee that solitariness, and desert places, by many philosophers so much esteemed of and affected, are of themselves but thus and thus; and that all things are them to them that live in towns, and converse with others as they are the same nature everywhere to be seen and observed: to them that have retired themselves to the top of mountains, and to desert havens, or what other desert and inhabited places soever. For anywhere it thou wilt mayest thou quickly find and apply that to thyself; which Plato saith of his philosopher, in a place: as private and retired, saith he, as if he were shut up and enclosed about in some shepherd's lodge, on the top of a hill. There by thyself to put these questions to thyself or to enter in these considerations: What is my chief and principal part, which hath power over the rest? What is now the present estate of it, as I use it; and what is it, that I employ it about? Is it now void of reason ir no? Is it free, and separated; or so affixed, so congealed and grown together as it were with the flesh, that it is swayed by the motions and inclinations of it?",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 356 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-11-20",
+      "selected_on": "2026-11-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-b2fe80628df3fdfc67c3580e",
+      "path": "culture/culture-b2fe80628df3fdfc67c3580e/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Is it now void of reason ir no?",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-20",
+      "summary_basis": "Selected 20 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Is it now void of reason ir no?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "XXIV Let it always appear and be manifest unto thee that solitariness, and desert places, by many philosophers so much esteemed of and affected, are of themselves but thus and thus; and that all things are them to them that live in towns, and converse with others as they are the same nature everywhere to be seen and observed: to them that have retired themselves to the top of mountains, and to desert havens, or what other desert and inhabited places soever. For anywhere it thou wilt mayest thou quickly find and apply that to thyself; which Plato saith of his philosopher, in a place: as private and retired, saith he, as if he were shut up and enclosed about in some shepherd's lodge, on the top of a hill. There by thyself to put these questions to thyself or to enter in these considerations: What is my chief and principal part, which hath power over the rest? What is now the present estate of it, as I use it; and what is it, that I employ it about? Is it now void of reason ir no? Is it free, and separated; or so affixed, so congealed and grown together as it were with the flesh, that it is swayed by the motions and inclinations of it?",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Fr%C3%A9d%C3%A9ric_Chopin_-_Barcarolle_in_F-sharp_major%2C_op._60_%28Martha_Argerich%2C_1962%29.flac",
+      "creator": "Frédéric Chopin",
+      "creator_origin": "Polish–French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Frédéric Chopin. 8 minutes to listen.",
+      "duration_seconds": 486,
+      "headline": "Frédéric Chopin - Barcarolle in F-sharp major, op. 60 (Martha Argerich, 1962)",
+      "key": "culture:5c175825dd18227b8f37ba71",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Fr%C3%A9d%C3%A9ric_Chopin_-_Barcarolle_in_F-sharp_major%2C_op._60_%28Martha_Argerich%2C_1962%29.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin",
+      "original_recording_title": "Frédéric Chopin - Barcarolle in F-sharp major, op. 60 (Martha Argerich, 1962)",
+      "provenance_id": "commons:69642061",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Martha Argerich",
+      "recording_description": "Frédéric Chopin - Barcarolle in F-sharp major, op. 60 (Martha Argerich, 1962)",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Martha Argerich",
+        "label": "Public domain (source-declared)",
+        "source_credit": "Deutsche Grammophon",
+        "url": "https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_Chopin_-_Barcarolle_in_F-sharp_major,_op._60_(Martha_Argerich,_1962).flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_Chopin_-_Barcarolle_in_F-sharp_major,_op._60_(Martha_Argerich,_1962).flac",
+      "work_date": "1962-01-01",
+      "date": "2026-11-20",
+      "selected_on": "2026-11-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-5c175825dd18227b8f37ba71",
+      "path": "culture/culture-5c175825dd18227b8f37ba71/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Frédéric Chopin - Barcarolle in F-sharp major, op. 60 (Martha Argerich, 1962)",
+          "url": "https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_Chopin_-_Barcarolle_in_F-sharp_major,_op._60_(Martha_Argerich,_1962).flac",
+          "date": "1962-01-01",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-20",
+      "summary_basis": "Selected 20 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "bb59ca83b4623be9038429ada1884e967b3b5f3773be8e9a36d3af9574dca852",
+      "creator": "Elizabeth Barrett Browning",
+      "creator_origin": "English",
+      "culture_type": "poetry",
+      "deck": "A poem by Elizabeth Barrett Browning.",
+      "excerpt": "The breaking waves dashed high\nOn a stern and rock-bound coast,\nAnd the woods, against a stormy sky,\nTheir giant branches tost;\n\nAnd the heavy night hung dark\nThe hills and water o'er,\nWhen a band of exiles moored their bark\nOn the wild New England shore.\n\nNot as the conqueror comes,\nThey, the true-hearted, came;\nNot with the roll of the stirring drums,\nAnd the trumpet that sings of fame;\n\nNot as the flying come,\nIn silence and in fear,—\nThey shook the depths of the desert's gloom\nWith their hymns of lofty cheer.\n\nAmidst the storm they sang,\nAnd the stars heard and the sea;\nAnd the sounding aisles of the dim woods rang\nTo the anthem of the free.\n\nThe ocean-eagle soared\nFrom his nest by the white wave's foam,\nAnd the rocking pines of the forest roared—\nThis was their welcome home!\n\nThere were men with hoary hair\nAmidst that pilgrim band:\nWhy had they come to wither there,\nAway from their childhood's land?\n\nThere was woman's fearless eye,\nLit by her deep love's truth;\nThere was manhood's brow serenely high,\nAnd the fiery heart of youth.\n\nWhat sought they thus afar?\nBright jewels of the mine?\nThe wealth of the seas? the spoils of war?—\nThey sought a faith's pure shrine!\n\nAy, call it holy ground,\nThe soil where first they trod!\nThey have left unstained what there they found—\nFreedom to worship God!",
+      "headline": "The Landing Of The Pilgrim Fathers",
+      "key": "culture:543853b858b88381aaaaee6e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "The breaking waves dashed high",
+        "On a stern and rock-bound coast,",
+        "And the woods, against a stormy sky,",
+        "Their giant branches tost;",
+        "",
+        "And the heavy night hung dark",
+        "The hills and water o'er,",
+        "When a band of exiles moored their bark",
+        "On the wild New England shore.",
+        "",
+        "Not as the conqueror comes,",
+        "They, the true-hearted, came;",
+        "Not with the roll of the stirring drums,",
+        "And the trumpet that sings of fame;",
+        "",
+        "Not as the flying come,",
+        "In silence and in fear,—",
+        "They shook the depths of the desert's gloom",
+        "With their hymns of lofty cheer.",
+        "",
+        "Amidst the storm they sang,",
+        "And the stars heard and the sea;",
+        "And the sounding aisles of the dim woods rang",
+        "To the anthem of the free.",
+        "",
+        "The ocean-eagle soared",
+        "From his nest by the white wave's foam,",
+        "And the rocking pines of the forest roared—",
+        "This was their welcome home!",
+        "",
+        "There were men with hoary hair",
+        "Amidst that pilgrim band:",
+        "Why had they come to wither there,",
+        "Away from their childhood's land?",
+        "",
+        "There was woman's fearless eye,",
+        "Lit by her deep love's truth;",
+        "There was manhood's brow serenely high,",
+        "And the fiery heart of youth.",
+        "",
+        "What sought they thus afar?",
+        "Bright jewels of the mine?",
+        "The wealth of the seas? the spoils of war?—",
+        "They sought a faith's pure shrine!",
+        "",
+        "Ay, call it holy ground,",
+        "The soil where first they trod!",
+        "They have left unstained what there they found—",
+        "Freedom to worship God!"
+      ],
+      "provenance_id": "poetrydb:Elizabeth Barrett Browning:The Landing Of The Pilgrim Fathers",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1861.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "0f17c5f4eb44876cfa476e35ac93383f435a4706d2561857e426fd1f36d99e4b",
+      "source_locator": "The Landing Of The Pilgrim Fathers",
+      "source_url": "https://poetrydb.org/title/The%20Landing%20Of%20The%20Pilgrim%20Fathers:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1861",
+      "date": "2026-11-20",
+      "selected_on": "2026-11-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-543853b858b88381aaaaee6e",
+      "path": "culture/culture-543853b858b88381aaaaee6e/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "The Landing Of The Pilgrim Fathers",
+          "url": "https://poetrydb.org/title/The%20Landing%20Of%20The%20Pilgrim%20Fathers:abs/lines.text",
+          "date": "Before 1861",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-20",
+      "summary_basis": "Selected 20 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The breaking waves dashed high\nOn a stern and rock-bound coast,\nAnd the woods, against a stormy sky,\nTheir giant branches tost;\n\nAnd the heavy night hung dark\nThe hills and water o'er,\nWhen a band of exiles moored their bark\nOn the wild New England shore.\n\nNot as the conqueror comes,\nThey, the true-hearted, came;\nNot with the roll of the stirring drums,\nAnd the trumpet that sings of fame;\n\nNot as the flying come,\nIn silence and in fear,—\nThey shook the depths of the desert's gloom\nWith their hymns of lofty cheer.\n\nAmidst the storm they sang,\nAnd the stars heard and the sea;\nAnd the sounding aisles of the dim woods rang\nTo the anthem of the free.\n\nThe ocean-eagle soared\nFrom his nest by the white wave's foam,\nAnd the rocking pines of the forest roared—\nThis was their welcome home!\n\nThere were men with hoary hair\nAmidst that pilgrim band:\nWhy had they come to wither there,\nAway from their childhood's land?\n\nThere was woman's fearless eye,\nLit by her deep love's truth;\nThere was manhood's brow serenely high,\nAnd the fiery heart of youth.\n\nWhat sought they thus afar?\nBright jewels of the mine?\nThe wealth of the seas? the spoils of war?—\nThey sought a faith's pure shrine!\n\nAy, call it holy ground,\nThe soil where first they trod!\nThey have left unstained what there they found—\nFreedom to worship God!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Major Creagh's home, Mhon (verso)",
+      "art_type": "Photograph",
+      "balance_origin": "India",
+      "creator": "Raja Deen Dayal (Indian, 1844–1905)",
+      "creator_origin": "India",
+      "culture_type": "illustration",
+      "deck": "Major Creagh's home, Mhon (verso). albumen print.",
+      "headline": "Major Creagh's home, Mhon (verso)",
+      "image_path": "assets/culture/2624a5736a6c1277c898e101.jpg",
+      "key": "culture:2624a5736a6c1277c898e101",
+      "media_url": "https://openaccess-cdn.clevelandart.org/2023.121.3.3/2023.121.3.3_web.jpg",
+      "medium": "albumen print",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/2023.121.3.3",
+      "provenance_id": "cma:664315",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "John L. Severance Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/2023.121.3.3",
+      "work_date": "c. 1882–87",
+      "date": "2026-11-20",
+      "selected_on": "2026-11-20",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-2624a5736a6c1277c898e101",
+      "path": "culture/culture-2624a5736a6c1277c898e101/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Major Creagh's home, Mhon (verso)",
+          "url": "https://clevelandart.org/art/2023.121.3.3",
+          "date": "c. 1882–87",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-20",
+      "summary_basis": "Selected 20 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "In Love With the Czarina",
+      "content_fingerprint": "6f3c28e391b3f2dc7174d73d7dd4d9a936aeadb7cbd6ee88f289ca0850d8dc68",
+      "creator": "Mór Jókai",
+      "creator_origin": "Hungarian",
+      "culture_type": "text",
+      "deck": "A passage from In Love With the Czarina. Translated by Louis Felbermann.",
+      "excerpt": "Maria was just sixteen, and she did not know that there was more than one man in the world, and that was her husband, the Emperor Bajazet, whom she loved, revered, and adored, and for whom she forgot everything, even all that she had been taught by the sainted, marble-faced sisters in the convent, concerning the paradise which is lit up by the rays of the stars.",
+      "headline": "In Love With the Czarina · a short reading",
+      "key": "culture:12a2ff91e5a9500302c072bf",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:34574:passage:6f3c28e391b3f2dc7174d73d7dd4d9a936aeadb7cbd6ee88f289ca0850d8dc68",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1904. Translator: Louis Felbermann, died 1937. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/34574"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "2dce2a32dc7503291c66c84c4c4c30f2274b5d713fee023419da2d15ea47403c",
+      "source_locator": "IN LOVE WITH THE CZARINA; paragraph 169 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/34574",
+      "translator": "Louis Felbermann",
+      "work_date": "1894 translation",
+      "date": "2026-11-20",
+      "selected_on": "2026-11-20",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-12a2ff91e5a9500302c072bf",
+      "path": "culture/culture-12a2ff91e5a9500302c072bf/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "In Love With the Czarina · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/34574",
+          "date": "1894 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "20 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-20",
+      "summary_basis": "Selected 20 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Maria was just sixteen, and she did not know that there was more than one man in the world, and that was her husband, the Emperor Bajazet, whom she loved, revered, and adored, and for whom she forgot everything, even all that she had been taught by the sainted, marble-faced sisters in the convent, concerning the paradise which is lit up by the rays of the stars.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "137fd03a5c5611423500f4684ea6191177bac5901955123fc1b89cf95b9861af",
       "creator": "Rabindranath Tagore",
       "creator_origin": "Indian · Bengali",
@@ -22494,7 +22895,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-19T22:41:43.190351+00:00",
+      "affiliation_checked_at": "2026-11-20T07:31:09.538221+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
