@@ -10,6 +10,8 @@ from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
 RELEASE_ID = re.compile(r"202\d-W\d{2}\Z")
+REPOSITORY = "kedmahamelberg-ai/aieo-brief"
+ACTIVE_RUN_STATUSES = ("waiting", "in_progress", "queued")
 
 
 def approved_for_release(root: Path, release_id: str) -> bool:
@@ -49,10 +51,63 @@ def reopen_requested() -> bool:
     return value == "true"
 
 
+def github_json(path: str, token: str) -> dict:
+    request = Request("https://api.github.com/repos/" + REPOSITORY + path,
+                      headers={"Accept": "application/vnd.github+json",
+                               "X-GitHub-Api-Version": "2022-11-28",
+                               "Authorization": "Bearer " + token,
+                               "User-Agent": "AIEO-Brief-Weekly-Review/1.0"})
+    with urlopen(request, timeout=25) as response:
+        value = json.load(response)
+    if not isinstance(value, dict):
+        raise ValueError("GitHub weekly review response is invalid")
+    return value
+
+
+def active_review_exists(release_id: str, current_run_id: str, token: str) -> bool:
+    """Find an unfinished draft for this exact week before starting another."""
+    if (not RELEASE_ID.fullmatch(release_id) or not current_run_id.isdigit()
+            or not token):
+        raise ValueError("Weekly review run identity or GitHub token is missing")
+    for status in ACTIVE_RUN_STATUSES:
+        runs = github_json(
+            f"/actions/workflows/prepare-weekly-review.yml/runs?status={status}&per_page=100",
+            token,
+        )
+        rows = runs.get("workflow_runs")
+        if (not isinstance(rows, list) or not isinstance(runs.get("total_count"), int)
+                or runs["total_count"] > len(rows)):
+            raise ValueError("GitHub did not return the complete active weekly review list")
+        for run in rows:
+            run_id = run.get("id")
+            if (not isinstance(run_id, int) or run.get("status") != status
+                    or str(run_id) == current_run_id):
+                continue
+            artifacts = github_json(f"/actions/runs/{run_id}/artifacts?per_page=100", token)
+            matches = artifacts.get("artifacts")
+            if (not isinstance(matches, list) or not isinstance(artifacts.get("total_count"), int)
+                    or artifacts["total_count"] > len(matches)):
+                raise ValueError("GitHub did not return the complete weekly review artifacts")
+            if any(artifact.get("name") == f"weekly-review-{release_id}-{run_id}"
+                   and artifact.get("expired") is False for artifact in matches):
+                return True
+    return False
+
+
 def main() -> None:
     release_id = current_release_id(os.environ.get(
         "OBSERVATORY_BASE_URL", "https://observatory.hamelberg-ai.com"))
-    prepare = reopen_requested() or not approved_for_release(ROOT, release_id)
+    already_approved = approved_for_release(ROOT, release_id)
+    if already_approved and not reopen_requested():
+        prepare = False
+        reason = "the owner-approved edition is already published"
+    elif active_review_exists(release_id, os.environ.get("GITHUB_RUN_ID", ""),
+                              os.environ.get("GITHUB_TOKEN", "")):
+        prepare = False
+        reason = "a review draft for this edition is already awaiting completion"
+    else:
+        prepare = True
+        reason = ""
     output = os.environ.get("GITHUB_OUTPUT")
     if output:
         with Path(output).open("a", encoding="utf-8") as handle:
@@ -60,7 +115,7 @@ def main() -> None:
     if prepare:
         print(f"Weekly review is due for {release_id}.")
     else:
-        print(f"Skipping {release_id}: the owner-approved edition is already published.")
+        print(f"Skipping {release_id}: {reason}.")
 
 
 if __name__ == "__main__":
