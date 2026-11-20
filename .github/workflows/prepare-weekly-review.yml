@@ -9,6 +9,12 @@ on:
   schedule:
     - cron: '15 12 * * 1'
   workflow_dispatch:
+    inputs:
+      reopen_approved:
+        description: 'Recheck an approved edition after an intentional source correction'
+        type: boolean
+        required: false
+        default: false
   # Send a fresh review when its delivery format is repaired, including the
   # current unapproved edition when this change is installed.
   push:
@@ -31,29 +37,39 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     outputs:
-      ready: ${{ steps.review.outputs.ready }}
-      needs_review: ${{ steps.review.outputs.needs_review }}
+      ready: ${{ steps.review.outputs.ready || 'false' }}
+      needs_review: ${{ steps.review.outputs.needs_review || 'false' }}
       draft_sha256: ${{ steps.review.outputs.draft_sha256 }}
-      release_id: ${{ steps.review.outputs.release_id }}
+      release_id: ${{ steps.review.outputs.release_id || steps.gate.outputs.release_id }}
     env:
       SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
       SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       AIEO_AI_PROVIDER: ${{ vars.AIEO_AI_PROVIDER || 'openai' }}
       AIEO_AI_MAX_JOB_USD: ${{ vars.AIEO_AI_MAX_JOB_USD || '0.50' }}
+      REOPEN_APPROVED: ${{ github.event_name == 'workflow_dispatch' && inputs.reopen_approved || false }}
     steps:
       - uses: actions/checkout@v6
         with:
           ref: main
+      - name: Skip an already approved release before model setup
+        id: gate
+        run: python3 scripts/weekly_review_gate.py
       - uses: actions/setup-python@v6
+        if: steps.gate.outputs.prepare == 'true'
         with:
           python-version: '3.12'
           cache: pip
-      - run: python -m pip install -r requirements.txt
+      - if: steps.gate.outputs.prepare == 'true'
+        run: python -m pip install -r requirements.txt
       - name: Prepare review-only weekly overview
         id: review
+        if: steps.gate.outputs.prepare == 'true'
+        env:
+          EXPECTED_RELEASE_ID: ${{ steps.gate.outputs.release_id }}
         run: python scripts/prepare_weekly_review.py
       - name: Keep the review for human approval
+        if: steps.review.outputs.needs_review == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: weekly-review-${{ github.run_id }}
