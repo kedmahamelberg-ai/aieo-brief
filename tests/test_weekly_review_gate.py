@@ -51,6 +51,7 @@ class WeeklyReviewGateTests(unittest.TestCase):
             output = root / "github-output"
             with patch.object(weekly_review_gate, "ROOT", root), \
                  patch.object(weekly_review_gate, "current_release_id", return_value="2026-W47"), \
+                 patch.object(weekly_review_gate, "active_review_exists", return_value=False), \
                  patch.dict(os.environ, {"GITHUB_OUTPUT": str(output), "REOPEN_APPROVED": "false"}):
                 weekly_review_gate.main()
             self.assertIn("prepare=true", output.read_text())
@@ -58,9 +59,42 @@ class WeeklyReviewGateTests(unittest.TestCase):
             output.write_text("")
             with patch.object(weekly_review_gate, "ROOT", root), \
                  patch.object(weekly_review_gate, "current_release_id", return_value="2026-W46"), \
+                 patch.object(weekly_review_gate, "active_review_exists", return_value=False), \
                  patch.dict(os.environ, {"GITHUB_OUTPUT": str(output), "REOPEN_APPROVED": "true"}):
                 weekly_review_gate.main()
             self.assertIn("prepare=true", output.read_text())
+
+    def test_pending_review_blocks_only_its_own_week(self):
+        def github_response(path, token):
+            self.assertEqual(token, "test-token")
+            if "status=waiting" in path:
+                return {"total_count": 1, "workflow_runs": [{"id": 123, "status": "waiting"}]}
+            if "/actions/runs/123/artifacts" in path:
+                return {"total_count": 1, "artifacts": [{
+                    "name": "weekly-review-2026-W47-123", "expired": False,
+                }]}
+            return {"total_count": 0, "workflow_runs": []}
+
+        with patch.object(weekly_review_gate, "github_json", side_effect=github_response):
+            self.assertTrue(weekly_review_gate.active_review_exists("2026-W47", "456", "test-token"))
+            self.assertFalse(weekly_review_gate.active_review_exists("2026-W48", "456", "test-token"))
+            self.assertFalse(weekly_review_gate.active_review_exists("2026-W47", "123", "test-token"))
+
+        with tempfile.TemporaryDirectory() as folder:
+            output = Path(folder) / "github-output"
+            with patch.object(weekly_review_gate, "ROOT", Path(folder)), \
+                 patch.object(weekly_review_gate, "current_release_id", return_value="2026-W47"), \
+                 patch.object(weekly_review_gate, "active_review_exists", return_value=True), \
+                 patch.dict(os.environ, {"GITHUB_OUTPUT": str(output), "REOPEN_APPROVED": "false",
+                                         "GITHUB_RUN_ID": "456", "GITHUB_TOKEN": "test-token"}):
+                weekly_review_gate.main()
+            self.assertIn("prepare=false", output.read_text())
+
+    def test_incomplete_github_run_list_fails_closed(self):
+        with patch.object(weekly_review_gate, "github_json", return_value={
+                "total_count": 101, "workflow_runs": []}):
+            with self.assertRaisesRegex(ValueError, "complete active weekly review list"):
+                weekly_review_gate.active_review_exists("2026-W47", "456", "test-token")
 
     def test_invalid_approval_fails_closed(self):
         with tempfile.TemporaryDirectory() as folder:
