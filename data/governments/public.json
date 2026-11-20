@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-19T16:27:12.505162+00:00",
-  "last_checked_at": "2026-11-19T16:37:27.880380+00:00",
+  "monitor_as_of": "2026-11-20T14:00:00+00:00",
+  "last_checked_at": "2026-11-20T15:20:26.038072+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1573,6 +1573,50 @@
       "summary": "China and Botswana upgraded ties during President Boko’s October visit and agreed to expand cooperation on security and development. Their joint statement also commits them to dialogue on global AI governance; Botswana will consider participating in the World Artificial Intelligence Cooperation Organization.",
       "body_paragraphs": [],
       "input_fingerprint": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd"
+    },
+    "5da4dd480d49f20def86": {
+      "id": "5da4dd480d49f20def86",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/peaminister-michal-silicon-valleys-eesti-ettevotetel-maailma-tehisintellekti-arengus-oma",
+      "date": "2026-11-20",
+      "headline": "Estonia’s prime minister urges stronger support for Ukraine and outlines plans to build national AI capabilities.",
+      "summary": "Prime Minister Kristen Michal’s Silicon Valley visit covered opportunities for Estonian technology firms, AI skills and development, cybersecurity, and European security. He met researchers, business leaders, and officials, promoted Estonia’s AI goals, and discussed support for Ukraine and a just, lasting peace.",
+      "body_paragraphs": [],
+      "input_fingerprint": "f1c4d4a1bbd35b5dd63e6472c63fffdeb49a6f5d49e420b1e1890a43f0c4df8f"
+    },
+    "1d978cfeba81f4c737f8": {
+      "id": "1d978cfeba81f4c737f8",
+      "country": "Germany",
+      "country_code": "DE",
+      "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen/pressemitteilungen/14-eu-staaten-schliessen-sich-deutscher-initiative-zum-schutz-des-digitalen-raums-an-staatsminister-weimer-starkes-urheberrecht-und-jugendmedienschutz-haben-hoechste-prioritaet--2462122",
+      "date": "2026-11-20",
+      "headline": "Germany urges European TikTok ownership, stronger AI-era copyright protections and safeguards for young people online.",
+      "summary": "At the EU Culture Council, Germany and 14 other Member States called for stronger copyright protections in the AI era. Ministers discussed online child safety and European media policy, adopted the 2027–2030 cultural work plan, and Weimer urged European ownership of TikTok’s European operations.",
+      "body_paragraphs": [],
+      "input_fingerprint": "851478765750fff477e5bf49d524f7fa026e7ed8a57596498270c4a615eb3812"
+    },
+    "1197c1fd44f3cae5e7af": {
+      "id": "1197c1fd44f3cae5e7af",
+      "country": "Kazakhstan",
+      "country_code": "KZ",
+      "url": "https://primeminister.kz/kz/news/kazakstan-buu-nyn-elektrondyk-ukimetti-damytu-reytinginde-16-shy-orynga-koterildi-32143",
+      "date": "2026-11-20",
+      "headline": "Kazakhstan’s digital-government systems expand, with officials citing AI and resilience as drivers of its higher UN…",
+      "summary": "Kazakhstan climbed to 16th in the UN E-Government Development Index, entering its highest category for the first time. The communication cites consistent policy, integrated digital services, AI adoption, stronger connectivity, skills and legal frameworks, and designates 2026 the Year of Digitalization and Artificial Intelligence.",
+      "body_paragraphs": [],
+      "input_fingerprint": "d2ef7bc2f85be21c7a8645111a992a79c1456154bd05654d41e72797b02dc69a"
+    },
+    "51a320c4228d3e563e69": {
+      "id": "51a320c4228d3e563e69",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/20/content_WS6affcf02c6d00ca5f9a0e7ee.html",
+      "date": "2026-11-20",
+      "headline": "Xi urges China and Indonesia to address external risks and deepen energy, minerals, AI and economic…",
+      "summary": "Xi Jinping and Prabowo Subianto announced negotiations on a bilateral comprehensive economic partnership. Xi urged stronger strategic ties and expanded cooperation in major infrastructure, energy, minerals, AI, the digital economy, and clean energy.",
+      "body_paragraphs": [],
+      "input_fingerprint": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad"
     }
   },
   "checked": {
@@ -1713,7 +1757,11 @@
     "988bc52e00995f14128a": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa",
     "6fcf36d70333107c372a": "f194060c4d8fdf494787ae8fd839c4585ab8882eafeee596c8830e3af125dca3",
     "0d3da572f379627b0365": "169f47910f1025934907dfc63fa26982ecd9ed5be12ed234965b6b92327ecfbd",
-    "c20b880177123988076f": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd"
+    "c20b880177123988076f": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd",
+    "5da4dd480d49f20def86": "f1c4d4a1bbd35b5dd63e6472c63fffdeb49a6f5d49e420b1e1890a43f0c4df8f",
+    "1d978cfeba81f4c737f8": "851478765750fff477e5bf49d524f7fa026e7ed8a57596498270c4a615eb3812",
+    "1197c1fd44f3cae5e7af": "d2ef7bc2f85be21c7a8645111a992a79c1456154bd05654d41e72797b02dc69a",
+    "51a320c4228d3e563e69": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad"
   },
   "retry": {},
   "pending": 0,
