@@ -55,6 +55,7 @@ def main() -> None:
         "requires_human_approval": ready,
         "publication_blocked": True,
         "email_blocked": True,
+        "reopen_approved": reopen_requested(),
         "overview": overview,
     }
     path = Path("weekly-review-draft.json")

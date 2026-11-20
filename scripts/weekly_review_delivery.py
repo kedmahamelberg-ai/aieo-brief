@@ -41,7 +41,8 @@ def load_draft(path: Path, expected_sha256: str) -> dict:
     if (not isinstance(release_id, str) or not RELEASE_ID.fullmatch(release_id)
             or overview.get("release_id") != release_id
             or draft.get("publication_blocked") is not True
-            or draft.get("email_blocked") is not True):
+            or draft.get("email_blocked") is not True
+            or not isinstance(draft.get("reopen_approved", False), bool)):
         raise ValueError("Weekly draft identity or publication boundary is invalid")
     ready = overview.get("editorial_status") == "ready"
     if ready != (draft.get("requires_human_approval") is True):
@@ -293,10 +294,12 @@ def approved_file(draft: dict, reviews: list[dict], now: datetime) -> dict:
 
 
 def install_approval(draft: dict, run_id: str) -> Path:
+    path = ROOT / "data/weekly-overviews/approved" / (draft["release_id"] + ".json")
+    if path.exists() and draft.get("reopen_approved") is not True:
+        raise ValueError("This weekly edition is already approved; an explicit correction review is required")
     reviews = review_history(run_id)
     result = approved_file(draft, reviews, datetime.now(timezone.utc))
     validate_live_sources(draft)
-    path = ROOT / "data/weekly-overviews/approved" / (draft["release_id"] + ".json")
     if path.exists():
         previous_bytes = path.read_bytes()
         previous = json.loads(previous_bytes)

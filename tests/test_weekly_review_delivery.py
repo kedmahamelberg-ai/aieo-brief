@@ -68,6 +68,7 @@ class WeeklyReviewDeliveryTests(unittest.TestCase):
             previous['markets']['source_hashes'] = {'stale': 'old'}
             old_bytes = json.dumps(previous).encode()
             path.write_bytes(old_bytes)
+            self.draft['reopen_approved'] = True
             with patch('weekly_review_delivery.ROOT', root), \
                  patch('weekly_review_delivery.review_history', return_value=self.reviews), \
                  patch('weekly_review_delivery.validate_live_sources'):
@@ -78,6 +79,20 @@ class WeeklyReviewDeliveryTests(unittest.TestCase):
             self.assertEqual(archive.read_bytes(), old_bytes)
             self.assertEqual(json.loads(path.read_text())['markets']['source_hashes'],
                              self.draft['overview']['markets']['source_hashes'])
+
+    def test_older_pending_draft_cannot_replace_approved_edition(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            path = root / 'data/weekly-overviews/approved/2026-W41.json'
+            path.parent.mkdir(parents=True)
+            path.write_text(json.dumps(self.fixture))
+            original = json.loads(path.read_text())
+            self.draft['overview']['markets']['source_hashes'] = {'changed': 'new'}
+            with patch('weekly_review_delivery.ROOT', root), \
+                 patch('weekly_review_delivery.review_history', side_effect=AssertionError('review reached')):
+                with self.assertRaisesRegex(ValueError, 'already approved'):
+                    install_approval(self.draft, '123')
+            self.assertEqual(json.loads(path.read_text()), original)
 
     def test_review_email_accepts_checked_weekly_photo(self):
         overview = copy.deepcopy(self.draft['overview'])
