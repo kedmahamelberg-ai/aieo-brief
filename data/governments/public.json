@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-20T14:00:00+00:00",
-  "last_checked_at": "2026-11-20T15:20:26.038072+00:00",
+  "monitor_as_of": "2026-11-21T14:00:00+00:00",
+  "last_checked_at": "2026-11-21T15:20:21.993028+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1617,6 +1617,39 @@
       "summary": "Xi Jinping and Prabowo Subianto announced negotiations on a bilateral comprehensive economic partnership. Xi urged stronger strategic ties and expanded cooperation in major infrastructure, energy, minerals, AI, the digital economy, and clean energy.",
       "body_paragraphs": [],
       "input_fingerprint": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad"
+    },
+    "eb18721cb93e73501f8b": {
+      "id": "eb18721cb93e73501f8b",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr261980",
+      "date": "2026-11-20",
+      "headline": "Malta and the University of Malta establish an expert group to address bias and racial inequality…",
+      "summary": "The Ministry for Equality and Civil Rights and the University of Malta signed an agreement establishing an expert group on artificial intelligence and racial equality. It will support research, guidance, training and policy recommendations to identify AI bias, protect rights and ensure technology benefits everyone.",
+      "body_paragraphs": [],
+      "input_fingerprint": "958480919ac6e4eea93eae922995f9624030999f86d992d5f231600162462bf7"
+    },
+    "a4db83995e5414b97cb7": {
+      "id": "a4db83995e5414b97cb7",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/20/content_WS6b005784c6d00ca5f9a0e8a8.html",
+      "date": "2026-11-20",
+      "headline": "China and Australia signal deeper cooperation on clean energy, AI, trade and international forums.",
+      "summary": "Li Qiang and Anthony Albanese discussed expanding China-Australia trade and cooperation in clean energy, electric vehicles and AI while managing differences. They called for greater cultural exchanges and multilateral coordination and noted the upcoming 55th anniversary of diplomatic ties and Year of Tourism.",
+      "body_paragraphs": [],
+      "input_fingerprint": "b1cb1e49c1a09c375670b0f89b3f03bc3d571610ee4e041adf761eaa44db3487"
+    },
+    "5374f48573316b6e1e1e": {
+      "id": "5374f48573316b6e1e1e",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/20/content_WS6b000277c6d00ca5f9a0e810.html",
+      "date": "2026-11-20",
+      "headline": "Xi and Wong reaffirm China–Singapore cooperation, including on AI, supply chains and regional stability.",
+      "summary": "Xi and Wong discussed closer China-Singapore ties, including trade agreement negotiations, Belt and Road cooperation, and collaboration in digital technology, green development and AI. Wong reaffirmed Singapore’s one-China policy and called for cooperation on international affairs and global challenges.",
+      "body_paragraphs": [],
+      "input_fingerprint": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253"
     }
   },
   "checked": {
@@ -1761,7 +1794,10 @@
     "5da4dd480d49f20def86": "f1c4d4a1bbd35b5dd63e6472c63fffdeb49a6f5d49e420b1e1890a43f0c4df8f",
     "1d978cfeba81f4c737f8": "851478765750fff477e5bf49d524f7fa026e7ed8a57596498270c4a615eb3812",
     "1197c1fd44f3cae5e7af": "d2ef7bc2f85be21c7a8645111a992a79c1456154bd05654d41e72797b02dc69a",
-    "51a320c4228d3e563e69": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad"
+    "51a320c4228d3e563e69": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad",
+    "eb18721cb93e73501f8b": "958480919ac6e4eea93eae922995f9624030999f86d992d5f231600162462bf7",
+    "a4db83995e5414b97cb7": "b1cb1e49c1a09c375670b0f89b3f03bc3d571610ee4e041adf761eaa44db3487",
+    "5374f48573316b6e1e1e": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253"
   },
   "retry": {},
   "pending": 0,
