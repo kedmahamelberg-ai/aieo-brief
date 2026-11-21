@@ -7169,6 +7169,26 @@
       },
       "output_sha256": "887020a8dbbe73cace466c28a3865f78f3156acc32b5e9f4b1152faa22eca5c4",
       "policy": "brief-english-display-v1"
+    },
+    "01dd192b12076e7548e253a91b9fa5f37bf81855793d1288717e29d35b1baed2": {
+      "english": {
+        "0": "234. A Mother’s Lament for her Son’s Death",
+        "1": "A poem by Robert Burns.",
+        "2": "FATE gave the word, the arrow sped,\n  And pierc’d my darling’s heart;\nAnd with him all the joys are fled\n  Life can to me impart.\n\n\nBy cruel hands the sapling drops,\n  In dust dishonour’d laid;\nSo fell the pride of all my hopes,\n  My age’s future shade.\n\n\nThe mother-linnet in the brake\n  Bewails her ravish’d young;\nSo I, for my lost darling’s sake,\n  Lament the live-day long.\n\n\nDeath, oft I’ve feared thy fatal blow.\n  Now, fond, I bare my breast;\nO, do thou kindly lay me low\n  With him I love, at rest!"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "84436ee69f37f5f4755599c11abc318b1d4c88dfe1f931e79234322cfea6aea6",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
