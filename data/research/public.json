@@ -1,8 +1,8 @@
 {
   "schema_version": "aieo_research_public_v1",
-  "period_start": "2026-11-14",
-  "period_end": "2026-11-20",
-  "generated_at": "2026-11-20T20:36:37.452629+00:00",
+  "period_start": "2026-11-15",
+  "period_end": "2026-11-21",
+  "generated_at": "2026-11-21T19:19:38.325205+00:00",
   "papers": [
     {
       "key": "paper:e2afcfefe07b3b78464206d3",
@@ -21,10 +21,10 @@
         "University of Massachusetts Amherst"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.26607v1",
-      "affiliation_checked_at": "2026-11-20T20:24:00.357504+00:00",
-      "affiliation_fallback_checked_at": "2026-11-20T20:24:00.357504+00:00",
+      "affiliation_checked_at": "2026-11-21T19:18:11.528397+00:00",
+      "affiliation_fallback_checked_at": "2026-11-21T19:18:11.528397+00:00",
       "affiliation_fallback_version": "arxiv-author-v3",
-      "source_verified_at": "2026-11-20T20:24:00.357504+00:00",
+      "source_verified_at": "2026-11-21T19:18:11.528397+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -75,10 +75,10 @@
         "Qinghao Hu"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-20T20:24:00.357504+00:00",
-      "affiliation_fallback_checked_at": "2026-11-20T20:24:00.357504+00:00",
+      "affiliation_checked_at": "2026-11-21T19:18:11.528397+00:00",
+      "affiliation_fallback_checked_at": "2026-11-21T19:18:11.528397+00:00",
       "affiliation_fallback_version": "arxiv-author-v3",
-      "source_verified_at": "2026-11-20T20:24:00.357504+00:00",
+      "source_verified_at": "2026-11-21T19:18:11.528397+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -97,7 +97,7 @@
       "summary_basis": "Original paper title",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
-      "summary_status": "retrying"
+      "summary_status": "review_needed"
     },
     {
       "key": "paper:3b32c069dedfc380625fe183",
@@ -123,10 +123,10 @@
         "University of Illinois at Urbana-Champaign"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.26613v1",
-      "affiliation_checked_at": "2026-11-20T20:24:00.357504+00:00",
-      "affiliation_fallback_checked_at": "2026-11-20T20:24:00.357504+00:00",
+      "affiliation_checked_at": "2026-11-21T19:18:11.528397+00:00",
+      "affiliation_fallback_checked_at": "2026-11-21T19:18:11.528397+00:00",
       "affiliation_fallback_version": "arxiv-author-v3",
-      "source_verified_at": "2026-11-20T20:24:00.357504+00:00",
+      "source_verified_at": "2026-11-21T19:18:11.528397+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -184,10 +184,10 @@
         "Stanford University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.26617v1",
-      "affiliation_checked_at": "2026-11-20T20:24:00.357504+00:00",
-      "affiliation_fallback_checked_at": "2026-11-20T20:24:00.357504+00:00",
+      "affiliation_checked_at": "2026-11-21T19:18:11.528397+00:00",
+      "affiliation_fallback_checked_at": "2026-11-21T19:18:11.528397+00:00",
       "affiliation_fallback_version": "arxiv-author-v3",
-      "source_verified_at": "2026-11-20T20:24:00.357504+00:00",
+      "source_verified_at": "2026-11-21T19:18:11.528397+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -233,10 +233,10 @@
         "Weihao Cheng"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-20T20:24:00.357504+00:00",
-      "affiliation_fallback_checked_at": "2026-11-20T20:24:00.357504+00:00",
+      "affiliation_checked_at": "2026-11-21T19:18:11.528397+00:00",
+      "affiliation_fallback_checked_at": "2026-11-21T19:18:11.528397+00:00",
       "affiliation_fallback_version": "arxiv-author-v3",
-      "source_verified_at": "2026-11-20T20:24:00.357504+00:00",
+      "source_verified_at": "2026-11-21T19:18:11.528397+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -293,10 +293,10 @@
         "IBM Research"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.26627v1",
-      "affiliation_checked_at": "2026-11-20T20:24:00.357504+00:00",
-      "affiliation_fallback_checked_at": "2026-11-20T20:24:00.357504+00:00",
+      "affiliation_checked_at": "2026-11-21T19:18:11.528397+00:00",
+      "affiliation_fallback_checked_at": "2026-11-21T19:18:11.528397+00:00",
       "affiliation_fallback_version": "arxiv-author-v3",
-      "source_verified_at": "2026-11-20T20:24:00.357504+00:00",
+      "source_verified_at": "2026-11-21T19:18:11.528397+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
@@ -315,7 +315,7 @@
       "summary_basis": "Original paper title",
       "reading_minutes": 1,
       "pmc_reader_version": 0,
-      "summary_status": "retrying"
+      "summary_status": "review_needed"
     },
     {
       "key": "paper:f61d1c3ebc713a5dc043f130",
@@ -3718,7 +3718,7 @@
       "pmc_reader_version": 1,
       "summary_status": "full_text_required",
       "full_text_status": "pdf_unavailable",
-      "full_text_retry_after": "2026-11-27"
+      "full_text_retry_after": "2026-11-28"
     },
     {
       "key": "paper:eef2f5c6eed261c5b6c3d76c",
@@ -4089,7 +4089,7 @@
       "pmc_reader_version": 1,
       "summary_status": "full_text_required",
       "full_text_status": "pdf_unavailable",
-      "full_text_retry_after": "2026-11-27"
+      "full_text_retry_after": "2026-11-28"
     }
   ]
 }
