@@ -9,7 +9,7 @@ from unittest.mock import patch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT/'scripts'))
 from brief_contract import validate_pair, relationship_fingerprint
-from check_observatory_update import needs_update, expected_period, missing_news_summaries, needs_editorial_retry
+from check_observatory_update import needs_update, expected_period, missing_news_summaries, needs_editorial_retry, needs_daily_refresh
 from build_site import inputs
 from source_chronology import public_directional_counts
 
@@ -63,6 +63,32 @@ class WeeklyHandoff(unittest.TestCase):
         self.assertFalse(needs_update(self.release, self.sym, self.published))
         self.sym['generated_at'] = '2099-01-01T12:00:00Z'
         self.assertFalse(needs_update(self.release, self.sym, self.published))
+
+    def test_new_day_refreshes_calendar_without_rewriting_the_same_edition(self):
+        now = datetime(2026, 11, 21, 8, tzinfo=ZoneInfo('UTC'))
+        self.published['daily_selection'] = {'selection_date': '2026-11-20'}
+        self.assertTrue(needs_daily_refresh(self.published, now))
+        self.assertFalse(needs_update(self.release, self.sym, self.published))
+        self.assertFalse(needs_editorial_retry(self.release, self.published, {}, now))
+        self.published['daily_selection']['selection_date'] = '2026-11-21'
+        self.assertFalse(needs_daily_refresh(self.published, now))
+
+    def test_calendar_refresh_uses_amsterdam_midnight_and_summer_time(self):
+        cases = [
+            ('2026-11-20T22:59:00+00:00', '2026-11-20', False),
+            ('2026-11-20T23:00:00+00:00', '2026-11-20', True),
+            ('2026-07-20T22:00:00+00:00', '2026-07-20', True),
+            ('2026-07-20T22:00:00+00:00', '2026-07-21', False),
+        ]
+        for timestamp, day, expected in cases:
+            with self.subTest(timestamp=timestamp, day=day):
+                self.assertEqual(needs_daily_refresh({'daily_selection': {'selection_date': day}},
+                                 datetime.fromisoformat(timestamp)), expected)
+
+    def test_missing_calendar_marker_requests_one_migration_refresh(self):
+        now = datetime(2026, 11, 21, 8, tzinfo=ZoneInfo('UTC'))
+        for value in (None, {}):
+            self.assertTrue(needs_daily_refresh({'daily_selection': value}, now))
 
     def test_withheld_old_source_matches_public_counts_without_retry_loop(self):
         event = self.release['evidence'][0]
