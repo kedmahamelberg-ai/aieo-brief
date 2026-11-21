@@ -155,7 +155,9 @@ class NewsReading(unittest.TestCase):
         html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
         self.assertNotIn('The article does not describe',html)
         self.assertIn('This Brief has not established',html)
-        self.assertIn('Discovery feeds: Canada · USA',html)
+        self.assertNotIn('Canada · USA',html)
+        self.assertNotIn('Discovery market does not mean the event happened there.',html)
+        self.assertIn('href="https://example.com"',html)
         self.assertIn('<strong>Context</strong>',html)
         row['location_label']='Research locations: Brazil · USA'
         html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
