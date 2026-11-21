@@ -6816,68 +6816,6 @@
       "url_slug_version": 1
     },
     {
-      "key": "event:1237de0d-08f3-4729-9fad-c022059fd52f",
-      "event_id": "1237de0d-08f3-4729-9fad-c022059fd52f",
-      "kind": "news",
-      "slug": "3-common-misconceptions-hinder-adoption-generative-your-company",
-      "path": "story/3-common-misconceptions-hinder-adoption-generative-your-company/index.html",
-      "headline": "IBM challenges three assumptions that hold smaller businesses back from artificial intelligence",
-      "original_headline": "3 Common Misconceptions That Hinder the Adoption of Generative AI in Your Company",
-      "deck": "The company argues that available tools and training can make adoption more practical.",
-      "what_happened": "IBM argues that smaller businesses often overestimate the resources needed to start using content-generating artificial intelligence. Its article challenges assumptions about cost, skills and the difficulty of putting the technology to work.",
-      "why_it_matters": "IBM recommends combining available tools with staff training and safeguards when choosing a first business use.",
-      "body_paragraphs": [
-        "IBM describes Make Music Count using watsonx for personalized mathematics learning and Ovum Health using it to answer fertility questions with medically validated information.",
-        "The examples support the supplier’s case for trying its technology on a defined business task."
-      ],
-      "for_humans": "IBM says smaller businesses can use available tools and training to put artificial intelligence to work.",
-      "for_ai": "IBM promotes its products for uses such as personalized learning and patient questions.",
-      "human_direction": "gain",
-      "ai_direction": "gain",
-      "human_label": "Benefits",
-      "ai_label": "Benefits",
-      "evidence_complete": true,
-      "display_scope": "",
-      "sources": [
-        {
-          "publisher": "IBM",
-          "headline": "3 Common Misconceptions That Hinder the Adoption of Generative AI in Your Company",
-          "url": "https://www.ibm.com/fr-fr/think/insights/3-myths-hindering-your-business-from-adopting-generative-ai",
-          "date": "2026-11-14",
-          "language": "fr"
-        }
-      ],
-      "source_count": 1,
-      "publisher": "IBM",
-      "date": "2026-11-14",
-      "display_date": "14 Nov 2026",
-      "markets": [
-        "CA",
-        "FR"
-      ],
-      "market_label": "Canada · France",
-      "topic": "business",
-      "topic_label": "Business & investment",
-      "reading_minutes": 1,
-      "summary_basis": "AIEO summary",
-      "claim_status": "company_claim",
-      "limitation": "",
-      "has_editorial": true,
-      "access_recovery_validated": true,
-      "edition": "2026-W46",
-      "period_start": "2026-11-09",
-      "period_end": "2026-11-15",
-      "box_effects": {
-        "human": "gain",
-        "ai": "gain"
-      },
-      "location_label": "Business guidance",
-      "legacy_paths": [
-        "story/development-1237de0d-08f3-4729-9fad-c022059fd52f/index.html"
-      ],
-      "url_slug_version": 1
-    },
-    {
       "key": "event:05184f8c-7beb-4705-95e2-93abf558e6af",
       "event_id": "05184f8c-7beb-4705-95e2-93abf558e6af",
       "kind": "news",
@@ -8547,6 +8485,68 @@
       "claim_status": "study",
       "legacy_paths": [
         "research/paper-29f3a0ced2bcb71a33818a12/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "key": "event:1237de0d-08f3-4729-9fad-c022059fd52f",
+      "event_id": "1237de0d-08f3-4729-9fad-c022059fd52f",
+      "kind": "news",
+      "slug": "3-common-misconceptions-hinder-adoption-generative-your-company",
+      "path": "story/3-common-misconceptions-hinder-adoption-generative-your-company/index.html",
+      "headline": "IBM challenges three assumptions that hold smaller businesses back from artificial intelligence",
+      "original_headline": "3 Common Misconceptions That Hinder the Adoption of Generative AI in Your Company",
+      "deck": "The company argues that available tools and training can make adoption more practical.",
+      "what_happened": "IBM argues that smaller businesses often overestimate the resources needed to start using content-generating artificial intelligence. Its article challenges assumptions about cost, skills and the difficulty of putting the technology to work.",
+      "why_it_matters": "IBM recommends combining available tools with staff training and safeguards when choosing a first business use.",
+      "body_paragraphs": [
+        "IBM describes Make Music Count using watsonx for personalized mathematics learning and Ovum Health using it to answer fertility questions with medically validated information.",
+        "The examples support the supplier’s case for trying its technology on a defined business task."
+      ],
+      "for_humans": "IBM says smaller businesses can use available tools and training to put artificial intelligence to work.",
+      "for_ai": "IBM promotes its products for uses such as personalized learning and patient questions.",
+      "human_direction": "gain",
+      "ai_direction": "gain",
+      "human_label": "Benefits",
+      "ai_label": "Benefits",
+      "evidence_complete": true,
+      "display_scope": "",
+      "sources": [
+        {
+          "publisher": "IBM",
+          "headline": "3 Common Misconceptions That Hinder the Adoption of Generative AI in Your Company",
+          "url": "https://www.ibm.com/fr-fr/think/insights/3-myths-hindering-your-business-from-adopting-generative-ai",
+          "date": "2026-11-12",
+          "language": "fr"
+        }
+      ],
+      "source_count": 1,
+      "publisher": "IBM",
+      "date": "2026-11-12",
+      "display_date": "12 Nov 2026",
+      "markets": [
+        "CA",
+        "FR"
+      ],
+      "market_label": "Canada · France",
+      "topic": "business",
+      "topic_label": "Business & investment",
+      "reading_minutes": 1,
+      "summary_basis": "AIEO summary",
+      "claim_status": "company_claim",
+      "limitation": "",
+      "has_editorial": true,
+      "access_recovery_validated": true,
+      "edition": "2026-W46",
+      "period_start": "2026-11-09",
+      "period_end": "2026-11-15",
+      "box_effects": {
+        "human": "gain",
+        "ai": "gain"
+      },
+      "location_label": "Business guidance",
+      "legacy_paths": [
+        "story/development-1237de0d-08f3-4729-9fad-c022059fd52f/index.html"
       ],
       "url_slug_version": 1
     },
@@ -14047,7 +14047,7 @@
         "ai": "loss"
       },
       "location_label": "AI market analysis",
-      "source_replacement_note": "Updated 17 November: this accessible column replaces the earlier Le Temps chart-only reading.",
+      "source_replacement_note": "",
       "source_reading_scope": "full_article",
       "legacy_paths": [
         "story/development-e9a9b601-601d-470b-9dcb-d95e51a0b2f3/index.html"
@@ -23976,7 +23976,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-21T08:45:29.110810+00:00",
+      "affiliation_checked_at": "2026-11-21T09:11:18.893771+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
