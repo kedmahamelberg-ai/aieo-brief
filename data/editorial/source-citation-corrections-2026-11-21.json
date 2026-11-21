@@ -1,0 +1,37 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "reviewed_at": "2026-11-21",
+  "news": [
+    {
+      "key": "event:1237de0d-08f3-4729-9fad-c022059fd52f",
+      "source_urls": [
+        "https://www.ibm.com/fr-fr/think/insights/3-myths-hindering-your-business-from-adopting-generative-ai"
+      ],
+      "reason": "IBM's canonical French article has datePublished 2026-11-12 in its BlogPosting metadata. The Brief cited the right URL and used an accurate English title translation, but displayed a 2026-11-14 discovery date as the publication date. Keep the reviewed English source title so the English-only publication gate does not replace it with a placeholder.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "IBM",
+            "headline": "3 Common Misconceptions That Hinder the Adoption of Generative AI in Your Company",
+            "url": "https://www.ibm.com/fr-fr/think/insights/3-myths-hindering-your-business-from-adopting-generative-ai",
+            "date": "2026-11-12",
+            "language": "fr"
+          }
+        ],
+        "source_count": 1,
+        "date": "2026-11-12",
+        "display_date": "12 Nov 2026"
+      }
+    },
+    {
+      "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
+      "source_urls": [
+        "https://www.kiplinger.com/investing/ai-bubble-how-valuations-may-be-distorted"
+      ],
+      "reason": "The live Kiplinger source and its 2026-11-09 publication date match the Brief's current citation. Remove an obsolete replacement-process note that refers to a different article and distracts from the actual cited source.",
+      "after": {
+        "source_replacement_note": ""
+      }
+    }
+  ]
+}

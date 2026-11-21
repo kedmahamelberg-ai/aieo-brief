@@ -126,6 +126,10 @@ def validate(site):
  pages=list(site.rglob('*.html'));links=0;metadata={}
  for path in pages:
   raw=path.read_text();parser=Page();parser.feed(raw)
+  if path.relative_to(site).parts[0]=='story' and any(phrase in raw for phrase in (
+      'Reporting discovered in', 'Discovery market does not mean the event happened there.',
+      'Discovery feeds:', 'Updated 17 November: this accessible column replaces the earlier Le Temps chart-only reading.')):
+   raise ValueError('Discovery metadata or obsolete source-replacement note reached a story page: '+str(path.relative_to(site)))
   validate_news_layout(raw)
   metadata[path.resolve()]=parser
   if parser.headings!=1:raise ValueError(f'{path.relative_to(site)} needs one page heading')
