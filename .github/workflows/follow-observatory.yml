@@ -16,6 +16,7 @@ jobs:
     timeout-minutes: 10
     outputs:
       needs_update: ${{ steps.edition.outputs.needs_update }}
+      needs_daily_refresh: ${{ steps.edition.outputs.needs_daily_refresh }}
       needs_weekly_review: ${{ steps.edition.outputs.needs_weekly_review }}
       needs_editorial_retry: ${{ steps.edition.outputs.needs_editorial_retry }}
       missing_news_summaries: ${{ steps.edition.outputs.missing_news_summaries }}
@@ -47,6 +48,6 @@ jobs:
     needs: [check, editorial]
     # A failed draft must not hide valid new source links. The build still
     # rejects incomplete or mismatched Observatory release data itself.
-    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true') && needs.editorial.result != 'cancelled'
+    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_daily_refresh == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true') && needs.editorial.result != 'cancelled'
     uses: ./.github/workflows/build-brief-preview.yml
     secrets: inherit

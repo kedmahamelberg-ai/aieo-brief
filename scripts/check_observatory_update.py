@@ -11,6 +11,7 @@ from brief_contract import validate_pair, relationship_fingerprint
 from build_site import inputs
 from source_chronology import public_event_ids, public_directional_counts
 from editorial_corrections import corrections
+from daily_selection import reading_day
 
 
 def expected_period(now=None):
@@ -49,6 +50,11 @@ def needs_update(release, relationship, published):
         published.get('directional_counts') != counts,
         published.get('story_count') != len(public_event_ids(release)),
     ))
+
+
+def needs_daily_refresh(published, now=None):
+    """Refresh the calendar pages even when the source edition is unchanged."""
+    return (published.get('daily_selection') or {}).get('selection_date') != reading_day(now).isoformat()
 
 
 def needs_weekly_review(release, published):
@@ -127,6 +133,7 @@ def main():
         response.raise_for_status()
         published = response.json()
     changed = needs_update(release, relationship, published)
+    daily = needs_daily_refresh(published)
     weekly = needs_weekly_review(release, published)
     status_path = Path(__file__).resolve().parents[1] / 'data/editorial/status.json'
     status = json.loads(status_path.read_text()) if status_path.exists() else {}
@@ -137,12 +144,14 @@ def main():
     summary = {'observatory_edition': release['release_id'], 'period_start': release['period_start'],
                'period_end': release['period_end'], 'developments': len(release['evidence']),
                'brief_needs_update': changed, 'weekly_review_needs_update': weekly,
+               'daily_pages_need_refresh': daily,
                'missing_news_summaries': missing, 'news_retry_due': retry,
                'latest_completed_week': current}
     print(json.dumps(summary, indent=2))
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
             output.write(f'needs_update={str(changed).lower()}\n')
+            output.write(f'needs_daily_refresh={str(daily).lower()}\n')
             output.write(f'needs_weekly_review={str(weekly).lower()}\n')
             output.write(f'needs_editorial_retry={str(retry).lower()}\n')
             output.write(f'missing_news_summaries={missing}\n')
@@ -150,6 +159,7 @@ def main():
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
             output.write(f"## Observatory → Brief\n\nEdition **{release['release_id']}**, {release['period_start']} to {release['period_end']}. "
                          f"{len(release['evidence'])} developments. {'Update required.' if changed else 'Source editions match.'} "
+                         f"{'Daily calendar refresh required.' if daily else 'Daily pages are current.'} "
                          f"**{missing} source-ready news summaries missing**; {'retry due' if retry else 'no retry due now'}.\n")
     if args.require_current and (changed or not current):
         raise ValueError('The two live websites have not both published the latest complete week. Check the weekly pipeline and Follow Observatory Editions runs.')
