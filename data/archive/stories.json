@@ -2,6 +2,380 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "alt": "Text, Folio 8 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "art_type": "Painting",
+      "balance_origin": "Eastern India",
+      "creator": "Artist unknown",
+      "creator_origin": "Eastern India, Bihar, Vikramashila Monastery. Painting: Nepal, Kathmandu",
+      "culture_type": "illustration",
+      "deck": "Text, Folio 8 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra). ink on palm leaf.",
+      "headline": "Text, Folio 8 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "image_path": "assets/culture/fa35b6978c749931f312adc2.jpg",
+      "key": "culture:fa35b6978c749931f312adc2",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1938.301.8.a/1938.301.8.a_web.jpg",
+      "medium": "ink on palm leaf",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1938.301.8.a",
+      "provenance_id": "cma:117675",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1938.301.8.a",
+      "work_date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+      "date": "2026-11-21",
+      "selected_on": "2026-11-21",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-fa35b6978c749931f312adc2",
+      "path": "culture/culture-fa35b6978c749931f312adc2/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Text, Folio 8 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+          "url": "https://clevelandart.org/art/1938.301.8.a",
+          "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-21",
+      "summary_basis": "Selected 21 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "4b32dce7d29d91e9b9a10a98a85f18af65e2bb38289f4222f5d202a728c336e7",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "Taoism accepts the mundane as it is and, unlike the Confucians or the Buddhists, tries to find beauty in our world of woe and worry.",
+      "headline": "Taoism accepts the mundane as it is and, unlike the Confucians or the Buddhists, tries to find beauty in our world of woe and worry.",
+      "key": "culture:bc5ae1bd67094f2c7b13dd18",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:4b32dce7d29d91e9b9a10a98a85f18af65e2bb38289f4222f5d202a728c336e7",
+      "publisher": "Project Gutenberg",
+      "quote_context": "But the chief contribution of Taoism to Asiatic life has been in the realm of aesthetics. Chinese historians have always spoken of Taoism as the \"art of being in the world,\" for it deals with the present--ourselves. It is in us that God meets with Nature, and yesterday parts from to-morrow. The Present is the moving Infinity, the legitimate sphere of the Relative. Relativity seeks Adjustment; Adjustment is Art. The art of life lies in a constant readjustment to our surroundings. Taoism accepts the mundane as it is and, unlike the Confucians or the Buddhists, tries to find beauty in our world of woe and worry. The Sung allegory of the Three Vinegar Tasters explains admirably the trend of the three doctrines. Sakyamuni, Confucius, and Laotse once stood before a jar of vinegar--the emblem of life--and each dipped in his finger to taste the brew. The matter-of-fact Confucius found it sour, the Buddha called it bitter, and Laotse pronounced it sweet.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 45 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-11-21",
+      "selected_on": "2026-11-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-bc5ae1bd67094f2c7b13dd18",
+      "path": "culture/culture-bc5ae1bd67094f2c7b13dd18/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Taoism accepts the mundane as it is and, unlike the Confucians or the Buddhists, tries to find beauty in our world of woe and worry.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-21",
+      "summary_basis": "Selected 21 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Taoism accepts the mundane as it is and, unlike the Confucians or the Buddhists, tries to find beauty in our world of woe and worry.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "But the chief contribution of Taoism to Asiatic life has been in the realm of aesthetics. Chinese historians have always spoken of Taoism as the \"art of being in the world,\" for it deals with the present--ourselves. It is in us that God meets with Nature, and yesterday parts from to-morrow. The Present is the moving Infinity, the legitimate sphere of the Relative. Relativity seeks Adjustment; Adjustment is Art. The art of life lies in a constant readjustment to our surroundings. Taoism accepts the mundane as it is and, unlike the Confucians or the Buddhists, tries to find beauty in our world of woe and worry. The Sung allegory of the Three Vinegar Tasters explains admirably the trend of the three doctrines. Sakyamuni, Confucius, and Laotse once stood before a jar of vinegar--the emblem of life--and each dipped in his finger to taste the brew. The matter-of-fact Confucius found it sour, the Buddha called it bitter, and Laotse pronounced it sweet.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "c0dd5e6152ab3e28baef727f4b6a05162b4dfc3eceb961b67b3f4c91c0c2b21b",
+      "creator": "Robert Burns",
+      "creator_origin": "Scottish",
+      "culture_type": "poetry",
+      "deck": "A poem by Robert Burns.",
+      "excerpt": "FATE gave the word, the arrow sped,\n  And pierc’d my darling’s heart;\nAnd with him all the joys are fled\n  Life can to me impart.\n\n\nBy cruel hands the sapling drops,\n  In dust dishonour’d laid;\nSo fell the pride of all my hopes,\n  My age’s future shade.\n\n\nThe mother-linnet in the brake\n  Bewails her ravish’d young;\nSo I, for my lost darling’s sake,\n  Lament the live-day long.\n\n\nDeath, oft I’ve feared thy fatal blow.\n  Now, fond, I bare my breast;\nO, do thou kindly lay me low\n  With him I love, at rest!",
+      "headline": "234. A Mother’s Lament for her Son’s Death",
+      "key": "culture:7d97baa4300c7e00646d52c7",
+      "language": "Scots",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "FATE gave the word, the arrow sped,",
+        "  And pierc’d my darling’s heart;",
+        "And with him all the joys are fled",
+        "  Life can to me impart.",
+        "",
+        "",
+        "By cruel hands the sapling drops,",
+        "  In dust dishonour’d laid;",
+        "So fell the pride of all my hopes,",
+        "  My age’s future shade.",
+        "",
+        "",
+        "The mother-linnet in the brake",
+        "  Bewails her ravish’d young;",
+        "So I, for my lost darling’s sake,",
+        "  Lament the live-day long.",
+        "",
+        "",
+        "Death, oft I’ve feared thy fatal blow.",
+        "  Now, fond, I bare my breast;",
+        "O, do thou kindly lay me low",
+        "  With him I love, at rest!"
+      ],
+      "provenance_id": "poetrydb:Robert Burns:234. A Mother’s Lament for her Son’s Death",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1796.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "34f55f17d9281be77e85e08d296f65ede0e28888a53893655a71b2d4a55d3e84",
+      "source_locator": "234. A Mother’s Lament for her Son’s Death",
+      "source_url": "https://poetrydb.org/title/234.%20A%20Mother%E2%80%99s%20Lament%20for%20her%20Son%E2%80%99s%20Death:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1796",
+      "date": "2026-11-21",
+      "selected_on": "2026-11-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-7d97baa4300c7e00646d52c7",
+      "path": "culture/culture-7d97baa4300c7e00646d52c7/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "234. A Mother’s Lament for her Son’s Death",
+          "url": "https://poetrydb.org/title/234.%20A%20Mother%E2%80%99s%20Lament%20for%20her%20Son%E2%80%99s%20Death:abs/lines.text",
+          "date": "Before 1796",
+          "language": "Scots"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-21",
+      "summary_basis": "Selected 21 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "FATE gave the word, the arrow sped,\n  And pierc’d my darling’s heart;\nAnd with him all the joys are fled\n  Life can to me impart.\n\n\nBy cruel hands the sapling drops,\n  In dust dishonour’d laid;\nSo fell the pride of all my hopes,\n  My age’s future shade.\n\n\nThe mother-linnet in the brake\n  Bewails her ravish’d young;\nSo I, for my lost darling’s sake,\n  Lament the live-day long.\n\n\nDeath, oft I’ve feared thy fatal blow.\n  Now, fond, I bare my breast;\nO, do thou kindly lay me low\n  With him I love, at rest!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "White Nights",
+      "content_fingerprint": "422a3a08b4843267bf065b9575ea2fbad4f1e81739d80934a58584cd6c70b335",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "\"Wait a minute,\" she said suddenly, in the passage just at the doorway, stopping me with her hand on my overcoat. She put down the candle in hot haste and ran off; evidently she had thought of something or wanted to show me something. As she ran away she flushed, her eyes shone, and there was a smile on her lips--what was the meaning of it? Against my will I waited: she came back a minute later with an expression that seemed to ask forgiveness for something. In fact, it was not the same face, not the same look as the evening before: sullen, mistrustful and obstinate. Her eyes now were imploring, soft, and at the same time trustful, caressing, timid. The expression with which children look at people they are very fond of, of whom they are asking a favour. Her eyes were a light hazel, they were lovely eyes, full of life, and capable of expressing love as well as sullen hatred.",
+      "headline": "White Nights · a short reading",
+      "key": "culture:47396cf6429dba33cbb774b9",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:422a3a08b4843267bf065b9575ea2fbad4f1e81739d80934a58584cd6c70b335",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 790 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-11-21",
+      "selected_on": "2026-11-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-47396cf6429dba33cbb774b9",
+      "path": "culture/culture-47396cf6429dba33cbb774b9/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-21",
+      "summary_basis": "Selected 21 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "\"Wait a minute,\" she said suddenly, in the passage just at the doorway, stopping me with her hand on my overcoat. She put down the candle in hot haste and ran off; evidently she had thought of something or wanted to show me something. As she ran away she flushed, her eyes shone, and there was a smile on her lips--what was the meaning of it? Against my will I waited: she came back a minute later with an expression that seemed to ask forgiveness for something. In fact, it was not the same face, not the same look as the evening before: sullen, mistrustful and obstinate. Her eyes now were imploring, soft, and at the same time trustful, caressing, timid. The expression with which children look at people they are very fond of, of whom they are asking a favour. Her eyes were a light hazel, they were lovely eyes, full of life, and capable of expressing love as well as sullen hatred.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/f0/PDP-CH_-_Wilhelm_Backhaus_-_Liebestraum_No._3_in_A-flat_major%2C_S.541-3_%28Liszt%29_-_Hmv-d788-05754.flac",
+      "creator": "Franz Liszt",
+      "creator_origin": "Hungarian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Liszt. 3 minutes to listen.",
+      "duration_seconds": 238,
+      "headline": "Liebestraum No.3 in A-flat major, S. 541/3",
+      "key": "culture:23da9a770cbd66dee0005441",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/f/f0/PDP-CH_-_Wilhelm_Backhaus_-_Liebestraum_No._3_in_A-flat_major%2C_S.541-3_%28Liszt%29_-_Hmv-d788-05754.flac",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Liszt",
+      "original_recording_title": "PDP-CH - Wilhelm Backhaus - Liebestraum No. 3 in A-flat major, S.541-3 (Liszt) - Hmv-d788-05754",
+      "provenance_id": "commons:39719081",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Wilhelm Backhaus (1884-1969) Vocal range: instrumental Title/Work: Liebestraum No.3 in A-flat major, S. 541/3 Content: Pianoforte solo Genre(s): Solo piano piece",
+      "recording_description": "1st release date: 1924 1st recording date: 15 October 1923 Place of recording: London (United Kingdom) Author(s)/Composer(s): Franz Liszt (1811-1886) Performer(s): Wilhelm Backhaus (1884-1969) Vocal range: instrumental Title/Work: Liebestraum No.3 in A-flat major, S. 541/3 Content: Pianoforte solo Genre(s): Solo piano piece",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Wilhelm Backhaus (1884-1969) Vocal range: instrumental Title/Work: Liebestraum No.3 in A-flat major, S. 541/3 Content: Pianoforte solo Genre(s): Solo piano piece",
+        "label": "Public domain (source-declared)",
+        "source_credit": "http://pool.publicdomainproject.org/index.php?title=Hmv-d788-05754",
+        "url": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Wilhelm_Backhaus_-_Liebestraum_No._3_in_A-flat_major,_S.541-3_(Liszt)_-_Hmv-d788-05754.flac"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Wilhelm_Backhaus_-_Liebestraum_No._3_in_A-flat_major,_S.541-3_(Liszt)_-_Hmv-d788-05754.flac",
+      "work_date": "Date not stated in source",
+      "date": "2026-11-21",
+      "selected_on": "2026-11-21",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-23da9a770cbd66dee0005441",
+      "path": "culture/culture-23da9a770cbd66dee0005441/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Liebestraum No.3 in A-flat major, S. 541/3",
+          "url": "https://commons.wikimedia.org/wiki/File:PDP-CH_-_Wilhelm_Backhaus_-_Liebestraum_No._3_in_A-flat_major,_S.541-3_(Liszt)_-_Hmv-d788-05754.flac",
+          "date": "Date not stated in source",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "21 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-21",
+      "summary_basis": "Selected 21 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Meditations",
       "content_fingerprint": "cf00163ce6a3e4cb2142deb4e78f6b097e01f5c33f55e4ad4d07e42227f3afe2",
       "creator": "Marcus Aurelius",
@@ -23602,7 +23976,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-20T22:16:16.902357+00:00",
+      "affiliation_checked_at": "2026-11-21T08:39:48.930983+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
