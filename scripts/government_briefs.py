@@ -10,6 +10,8 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from story_photos import named_photos, photo_registry
+
 ROOT = Path(__file__).resolve().parents[1]
 FEED = 'https://monitor.hamelberg-ai.com/government-data.json'
 POLICY = 'government-ai-brief-v4'
@@ -116,18 +118,13 @@ def load(root=ROOT):
 
 def cards(root=ROOT):
     result = []
-    photos = json.loads((Path(root) / 'config/story-photos.json').read_text())['photos']
+    registry = photo_registry(root)
+    photos = registry['photos']
     for row in load(root).get('records', {}).values():
         # A UUID5 gives these articles stable community identities without new
         # database key types. It never references an Observatory event record.
         key = 'event:' + str(uuid.uuid5(uuid.NAMESPACE_URL, FEED + '#' + row['id']))
         ident = key.removeprefix('event:')
-        photo = photos.get({'FR': 'fr', 'US': 'us', 'CA': 'quebec', 'CN': 'beijing'}.get(row['country_code'], ''))
-        # Occasional country context, never a purported photo of the event.
-        if photo and (int(hashlib.sha256(row['id'].encode()).hexdigest()[:2], 16) % 2 == 1):
-            photo = {**photo, 'caption': row['country'] + ' · Archive image for country context; not this announcement.'}
-        else:
-            photo = None
         result.append({**row, 'key': key, 'kind': 'news', 'section': 'governments',
                        'slug': 'government-' + ident, 'path': 'story/government-' + ident + '/index.html',
                        'deck': row['summary'], 'publisher': 'Government of ' + row['country'],
@@ -140,20 +137,23 @@ def cards(root=ROOT):
                        'has_editorial': True, 'evidence_complete': False, 'body_paragraphs': row.get('body_paragraphs', []),
                        'summary_basis': 'Monitor government narrative · AI topic label', 'reading_minutes': 1,
                        'edition': 'Governments · ' + row['date'][:7], 'publication_language': 'en',
-                       'english_status': 'checked', 'government_photo': photo})
+                       'english_status': 'checked', 'government_photo': None})
     result.sort(key=lambda x: (x['date'], x['country'], x['key']), reverse=True)
-    # Each published date needs at least one visual. For countries without a
-    # rights-checked archive photo, use an original generic illustration.
-    covered = {item['date'] for item in result if item['government_photo']}
+    used = set()
     for item in result:
-        if item['date'] not in covered:
-            item['government_photo'] = {
-                'path': 'assets/spotlight/government-illustration.svg',
-                'alt': 'Graphic illustration of a government announcement',
-                'caption': 'Illustration; this does not depict the announcement.',
-                'credit': 'AIEO Brief', 'license': 'Original illustration',
-                'source_url': '', 'license_url': ''}
-            covered.add(item['date'])
+        options = named_photos(item, registry)
+        if not options:
+            country_photo = photos.get({'FR':'fr', 'US':'us', 'CA':'quebec', 'CN':'beijing'}.get(item['country_code']))
+            if country_photo:
+                options = [{**country_photo, 'caption': item['country'] + ' · Archive image for country context.'}]
+        if options:
+            # The article can retain its relevant photograph. The listing gives
+            # a photograph to the newest matching story first, across both filters.
+            photo = next((p for p in options if p['sha256'] not in used), None)
+            item['government_photo'] = photo or (options[0] if options[0].get('subjects') else None)
+            item['show_feed_photo'] = photo is not None
+            if photo:
+                used.add(photo['sha256'])
     return result
 
 

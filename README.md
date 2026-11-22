@@ -57,7 +57,7 @@ Monday imports never reset the list to a new calendar week. Story URLs continue
 to work regardless of the date filter, including links in approved social posts.
 Reading order can vary within each date; both filters reuse original article
 identities, publication dates, cards and
-existing consent-based engagement services. Occasional country-context images
+existing consent-based engagement services. For photographs, prefer the named people. The government listing uses each photograph once across its recent and older announcements. Use text when no suitable unused photograph is available. Never use AI-generated editorial images. Occasional country-context images
 come from the existing public-domain/CC0 photo registry with visible source,
 credit and rights links. Country-context images are not presented as event photos.
 The workflow uses the existing bounded AI runtime and publishing credentials,

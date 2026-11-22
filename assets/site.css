@@ -109,3 +109,5 @@
 .government-country{font-weight:750}.government-photo{margin:0 0 1.25rem}.government-photo img{width:100%;height:auto;max-height:330px;object-fit:cover;display:block}.government-photo figcaption{font-size:.75rem;line-height:1.5;color:#53616c;padding-top:.4rem}.government-controls label{font-size:.85rem}.government-page .research-intro{max-width:850px}
 
 .government-page .reading-layout{grid-template-columns:minmax(0,1fr);max-width:900px}
+
+.named-photo img{width:auto;max-width:100%;max-height:320px;object-fit:contain}

@@ -102,5 +102,107 @@
     "story/development-ca40c707-eea2-465e-a501-6d9432bea42e/index.html": "gb-classroom",
     "story/development-7c448b17-5222-473e-aca5-cc6870473c55/index.html": "cn",
     "story/development-f6d8e93a-5464-4745-96b3-684850ff946d/index.html": "beijing"
-  }
+  },
+  "people": {
+    "Xi Jinping": {
+      "country": "CN",
+      "short": "Xi"
+    },
+    "Donald Trump": {
+      "country": "US",
+      "short": "Trump",
+      "context": [
+        "United States",
+        "U.S."
+      ]
+    },
+    "Nikol Pashinyan": {
+      "country": "AM",
+      "short": "Pashinyan"
+    },
+    "Robert Fico": {
+      "country": "SK",
+      "short": "Fico"
+    },
+    "Lawrence Wong": {
+      "country": "SG",
+      "short": "Wong",
+      "context": [
+        "Singapore"
+      ]
+    }
+  },
+  "named_photos": [
+    {
+      "subjects": [
+        "Xi Jinping",
+        "Donald Trump"
+      ],
+      "path": "assets/spotlight/xi-trump.jpg",
+      "width": 1200,
+      "height": 800,
+      "alt": "Donald Trump and Xi Jinping shaking hands in Busan.",
+      "caption": "Archive photograph · Donald Trump and Xi Jinping in Busan, October 2025.",
+      "credit": "Daniel Torok / The White House",
+      "source_url": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_greets_Chinese_President_Xi_Jinping_before_a_bilateral_meeting_at_the_Gimhae_International_Airport_terminal_%2854890669663%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "subjects": [
+        "Nikol Pashinyan"
+      ],
+      "path": "assets/spotlight/pashinyan.jpg",
+      "width": 259,
+      "height": 327,
+      "alt": "Nikol Pashinyan in the Oval Office.",
+      "caption": "Archive photograph · Nikol Pashinyan in Washington, August 2025.",
+      "credit": "Daniel Torok / The White House",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nikol_Pashinyan_%2808-08-2025%29_%28cropped%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "subjects": [
+        "Lawrence Wong"
+      ],
+      "path": "assets/spotlight/wong.jpg",
+      "width": 675,
+      "height": 900,
+      "alt": "Lawrence Wong in Singapore.",
+      "caption": "Archive photograph · Lawrence Wong in Singapore, August 2026.",
+      "credit": "Isaac Castillo / Presidency of Ecuador",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lawrence_Wong%2C_August_2026_%28cropped%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "subjects": [
+        "Xi Jinping"
+      ],
+      "path": "assets/spotlight/xi.jpg",
+      "width": 166,
+      "height": 227,
+      "alt": "Xi Jinping at the G20 summit in Bali.",
+      "caption": "Archive photograph · Xi Jinping in Bali, November 2022.",
+      "credit": "The White House",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xi_Jinping_2022_G20_Bali_Summit_%28cropped%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    },
+    {
+      "subjects": [
+        "Robert Fico"
+      ],
+      "path": "assets/spotlight/fico-us.jpg",
+      "width": 1200,
+      "height": 790,
+      "alt": "Marco Rubio and Robert Fico shaking hands in Bratislava.",
+      "caption": "Archive photograph · Marco Rubio and Robert Fico in Bratislava, February 2026.",
+      "credit": "Freddie Everett / U.S. Department of State",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Secretary_Rubio_Meets_with_Slovak_Prime_Minister_%2855096167797%29.jpg",
+      "license": "Public domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/"
+    }
+  ]
 }

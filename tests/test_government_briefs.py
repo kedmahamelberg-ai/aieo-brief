@@ -126,20 +126,26 @@ class GovernmentBriefsTests(unittest.TestCase):
         self.assertEqual(a['section'], 'governments')
         self.assertEqual(a['summary_basis'], 'Monitor government narrative · AI topic label')
 
-    def test_each_day_has_a_truthfully_captioned_image(self):
+    def test_photo_selection_and_unique_listing(self):
         from unittest.mock import patch
-        import tempfile
-        import json
-        with tempfile.TemporaryDirectory() as folder:
-            root = Path(folder)
-            (root / 'config').mkdir()
-            (root / 'config/story-photos.json').write_text(json.dumps({'photos': {}}))
-            state = gov.refresh(snapshot(source(), source(id='next-day', published_date='2026-11-15')), {})
-            with patch.object(gov, 'load', return_value=state):
-                cards = gov.cards(root)
-        self.assertEqual({card['date'] for card in cards},
-                         {card['date'] for card in cards if card['government_photo']})
-        self.assertTrue(all('does not depict' in card['government_photo']['caption'] for card in cards))
+        stories = [
+            source(id='a', country='China', country_code='CN', ticker_message='Xi and Trump discuss AI',
+                   english_summary='China and the United States discussed AI.'),
+            source(id='b', country='China', country_code='CN', ticker_message='Xi Jinping discusses AI'),
+            source(id='c', country='China', country_code='CN', ticker_message='Xi Jinping visits a port'),
+            source(id='d', country='China', country_code='CN', ticker_message='China opens a summit'),
+            source(id='e', country='China', country_code='CN', ticker_message='China sets a date'),
+            source(id='f', country='Andorra', country_code='AD')]
+        with patch.object(gov, 'load', return_value=gov.refresh(snapshot(*stories), {})):
+            cards = {card['id']:card for card in gov.cards()}
+        shown = [card['government_photo'] for card in cards.values() if card.get('show_feed_photo')]
+        self.assertEqual(len(shown), 3)
+        self.assertEqual(len({p['sha256'] for p in shown}), len(shown))
+        self.assertEqual(cards['a']['government_photo']['subjects'], ['Xi Jinping', 'Donald Trump'])
+        self.assertEqual(cards['b']['government_photo']['subjects'], ['Xi Jinping'])
+        self.assertEqual(next(p for p in shown if not p.get('subjects'))['caption'],
+                         'China · Archive image for country context.')
+        self.assertIsNone(cards['f']['government_photo'])
 
 
 if __name__ == '__main__':

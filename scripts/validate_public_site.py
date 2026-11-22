@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Static publication gate: source counts, destinations and private-data exclusion."""
-import argparse,collections,json,re
+import argparse,collections,hashlib,json,re
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit,unquote
@@ -87,20 +87,21 @@ def validate(site):
  if len(culture)!=payload.get('culture_count',0):raise ValueError('Inconsistent culture count')
  if len(governments)!=payload.get('government_count',0):raise ValueError('Inconsistent government count')
  if not (site/'governments-say/index.html').is_file():raise ValueError('Government page missing')
- government_days={item.get('date') for item in governments}
- pictured_days={item.get('date') for item in governments if item.get('government_photo')}
- if government_days != pictured_days:raise ValueError('Every government day needs at least one image')
+ feed_photo_hashes=set()
  for item in governments:
   if item.get('section')!='governments' or not re.fullmatch(r'[A-Z]{2}',item.get('country_code','')) or not item.get('country') or len(item.get('deck','').split())>45 or len(item.get('headline','').split())>16:raise ValueError('Government brief lacks country or exceeds brief limits')
   if len(item.get('body_paragraphs',[]))>2 or sum(len(p.split()) for p in item.get('body_paragraphs',[]))>90:raise ValueError('Government article exceeds its concise detail limit')
   photo=item.get('government_photo')
   if photo:
-   if photo.get('path')=='assets/spotlight/government-illustration.svg':
-    if (photo.get('credit')!='AIEO Brief' or photo.get('license')!='Original illustration'
-        or photo.get('source_url') or photo.get('license_url')
-        or 'does not depict' not in photo.get('caption','')):raise ValueError('Government illustration lacks truthful provenance')
-   elif (not photo.get('license','').startswith(('CC0','Public domain')) or not photo.get('source_url') or not photo.get('license_url')):
-    raise ValueError('Government photo lacks public-domain provenance')
+   path=site/photo['path']
+   if (path.suffix.lower() not in ('.jpg','.jpeg','.png','.webp') or not path.is_file()
+       or not photo.get('license','').startswith(('CC0','Public domain')) or not photo.get('source_url')
+       or not photo.get('license_url') or not photo.get('credit')):
+    raise ValueError('Government photograph lacks its asset or provenance')
+   if item.get('show_feed_photo'):
+    fingerprint=hashlib.sha256(path.read_bytes()).hexdigest()
+    if fingerprint in feed_photo_hashes:raise ValueError('Repeated government feed photograph')
+    feed_photo_hashes.add(fingerprint)
  overview=payload.get('weekly_overview') or {}
  if overview.get('schema_version')!='aieo_weekly_overview_v1':raise ValueError('Weekly overview missing')
  if len((overview.get('markets') or {}).get('entries') or [])!=5:raise ValueError('Weekly overview must retain five discovery markets')

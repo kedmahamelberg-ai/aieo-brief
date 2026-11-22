@@ -461,6 +461,7 @@ def main():
             photo=story_photo(article,photos)
             if photo:
                 ctx.update(page_image=photo['path'],page_image_alt=photo['alt'])
+                if photo.get('subjects'):ctx['named_photo']=photo
         target=SITE/path;target.parent.mkdir(parents=True,exist_ok=True)
         prefix='../'*len(Path(path).parent.parts)
         local=lambda value:canonical_local(value,prefix)

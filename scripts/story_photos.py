@@ -1,17 +1,40 @@
 """One rights-cleared, story-keyed photo source for pages, carousel and social."""
 import hashlib
 import json
+import re
 from pathlib import Path
 
 def photo_registry(root):
     data=json.loads((Path(root)/'config/story-photos.json').read_text())
-    for photo in data['photos'].values():
+    for photo in [*data['photos'].values(), *data.get('named_photos', [])]:
         if not photo.get('license') or not photo.get('source_url') or not (Path(root)/photo['path']).is_file():
             raise ValueError('A story photograph is missing rights or its local asset')
         photo['sha256']=hashlib.sha256((Path(root)/photo['path']).read_bytes()).hexdigest()
     return data
 
+def named_photos(story, registry):
+    title = story.get('headline') or ''
+    copy = ' '.join([title, story.get('deck') or story.get('summary') or ''])
+    people = set()
+    for name, person in registry.get('people', {}).items():
+        if re.search(r'(?<!\w)' + re.escape(name) + r'(?!\w)', copy, re.I):
+            people.add(name)
+            continue
+        # Use a headline surname only with explicit country or diplomatic context.
+        context = story.get('country_code') == person['country'] or any(
+            term in copy for term in person.get('context', []))
+        if context and re.search(r'\b' + re.escape(person['short']) + r'\b', title):
+            people.add(name)
+    return sorted((photo for photo in registry.get('named_photos', [])
+                   if set(photo['subjects']) <= people), key=lambda p: -len(p['subjects']))
+
+
 def story_photo(story, registry):
+    if story.get('section') == 'governments':
+        return story.get('government_photo')
+    matches = named_photos(story, registry)
+    if matches:
+        return matches[0]
     pinned=registry['stories'].get(story.get('path'))
     if pinned:return registry['photos'][pinned]
     # Stable per article, independent of daily order and build time.
