@@ -2,6 +2,381 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "Thus Spake Zarathustra",
+      "content_fingerprint": "b02495ef65cad16150bea8b070f4fea285a74a36c677710dcb900680e8ca2be1",
+      "creator": "Friedrich Nietzsche",
+      "creator_origin": "German",
+      "culture_type": "text",
+      "deck": "A passage from Thus Spake Zarathustra. Translated by Thomas Common.",
+      "excerpt": "One day had Zarathustra fallen asleep under a fig-tree, owing to the heat, with his arms over his face. And there came an adder and bit him in the neck, so that Zarathustra screamed with pain. When he had taken his arm from his face he looked at the serpent; and then did it recognise the eyes of Zarathustra, wriggled awkwardly, and tried to get away. “Not at all,” said Zarathustra, “as yet hast thou not received my thanks! Thou hast awakened me in time; my journey is yet long.” “Thy journey is short,” said the adder sadly; “my poison is fatal.” Zarathustra smiled. “When did ever a dragon die of a serpent’s poison?”—said he. “But take thy poison back! Thou art not rich enough to present it to me.” Then fell the adder again on his neck, and licked his wound.",
+      "headline": "Thus Spake Zarathustra · a short reading",
+      "key": "culture:f3aaf8345bf2af054dd9b4eb",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:1998:passage:b02495ef65cad16150bea8b070f4fea285a74a36c677710dcb900680e8ca2be1",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1900. Translator: Thomas Common, died 1919. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/1998"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "af4ee52328bba7e2a6adbe51b22fb93b2cdfbbd7628ae711438310517c35f13c",
+      "source_locator": "ZARATHUSTRA’S PROLOGUE.; paragraph 851 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/1998",
+      "translator": "Thomas Common",
+      "work_date": "1909 translation",
+      "date": "2026-11-22",
+      "selected_on": "2026-11-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f3aaf8345bf2af054dd9b4eb",
+      "path": "culture/culture-f3aaf8345bf2af054dd9b4eb/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Thus Spake Zarathustra · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/1998",
+          "date": "1909 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-22",
+      "summary_basis": "Selected 22 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "One day had Zarathustra fallen asleep under a fig-tree, owing to the heat, with his arms over his face. And there came an adder and bit him in the neck, so that Zarathustra screamed with pain. When he had taken his arm from his face he looked at the serpent; and then did it recognise the eyes of Zarathustra, wriggled awkwardly, and tried to get away. “Not at all,” said Zarathustra, “as yet hast thou not received my thanks! Thou hast awakened me in time; my journey is yet long.” “Thy journey is short,” said the adder sadly; “my poison is fatal.” Zarathustra smiled. “When did ever a dragon die of a serpent’s poison?”—said he. “But take thy poison back! Thou art not rich enough to present it to me.” Then fell the adder again on his neck, and licked his wound.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Dhammapada",
+      "content_fingerprint": "3d44916bf22589994a89137cf87737a695b8d949d1da0411a379b4a4e23cf2e6",
+      "creator": "Traditional Buddhist verse",
+      "creator_origin": "South Asian · early Buddhist tradition",
+      "culture_type": "quote",
+      "deck": "From Dhammapada. Translation by F. Max Müller.",
+      "excerpt": "The disciples of Gotama are always well awake, and their thoughts day and night are always set on the church.",
+      "headline": "The disciples of Gotama are always well awake, and their thoughts day and night are always set on the church.",
+      "key": "culture:f2a0402927968d617e6e983b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2017:quote:3d44916bf22589994a89137cf87737a695b8d949d1da0411a379b4a4e23cf2e6",
+      "publisher": "Project Gutenberg",
+      "quote_context": "The disciples of Gotama are always well awake, and their thoughts day and night are always set on the church.",
+      "rights": {
+        "basis": "Author died ancient. Translator: F. Max Müller, died 1900. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2017"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "f69de0fef89409005a7cfce2557319cc78c91dbcdfee2c110ef7cb7285ef320a",
+      "source_locator": "Chapter I. The Twin-Verses; paragraph 309 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2017",
+      "translator": "F. Max Müller",
+      "work_date": "1881 translation",
+      "date": "2026-11-22",
+      "selected_on": "2026-11-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-f2a0402927968d617e6e983b",
+      "path": "culture/culture-f2a0402927968d617e6e983b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The disciples of Gotama are always well awake, and their thoughts day and night are always set on the church.",
+          "url": "https://www.gutenberg.org/ebooks/2017",
+          "date": "1881 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-22",
+      "summary_basis": "Selected 22 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The disciples of Gotama are always well awake, and their thoughts day and night are always set on the church.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "The disciples of Gotama are always well awake, and their thoughts day and night are always set on the church.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "56235f50658e9899897b8341fb689387a2c5f64d16c18e71f17f8c24761383db",
+      "creator": "Paul Laurence Dunbar",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Paul Laurence Dunbar.",
+      "excerpt": "I know what the caged bird feels, alas!\nWhen the sun is bright on the upland slopes;\nWhen the wind stirs soft through the springing grass,\nAnd the river flows like a stream of glass;\nWhen the first bird sings and the first bud opes,\nAnd the faint perfume from its chalice steals--\nI know what the caged bird feels!\n\nI know why the caged bird beats his wing\nTill its blood is red on the cruel bars;\nFor he must fly back to his perch and cling\nWhen he fain would be on the bough a-swing;\nAnd a pain still throbs in the old, old scars\nAnd they pulse again with a keener sting--\nI know why he beats his wing!\n\nI know why the caged bird sings, ah me,\nWhen his wing is bruised and his bosom sore,--\nWhen he beats his bars and he would be free;\nIt is not a carol of joy or glee,\nBut a prayer that he sends from his heart's deep core,\nBut a plea, that upward to Heaven he flings--\nI know why the caged bird sings!",
+      "headline": "Sympathy",
+      "key": "culture:dba3ce1760b20cb1a60a6af7",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "I know what the caged bird feels, alas!",
+        "When the sun is bright on the upland slopes;",
+        "When the wind stirs soft through the springing grass,",
+        "And the river flows like a stream of glass;",
+        "When the first bird sings and the first bud opes,",
+        "And the faint perfume from its chalice steals--",
+        "I know what the caged bird feels!",
+        "",
+        "I know why the caged bird beats his wing",
+        "Till its blood is red on the cruel bars;",
+        "For he must fly back to his perch and cling",
+        "When he fain would be on the bough a-swing;",
+        "And a pain still throbs in the old, old scars",
+        "And they pulse again with a keener sting--",
+        "I know why he beats his wing!",
+        "",
+        "I know why the caged bird sings, ah me,",
+        "When his wing is bruised and his bosom sore,--",
+        "When he beats his bars and he would be free;",
+        "It is not a carol of joy or glee,",
+        "But a prayer that he sends from his heart's deep core,",
+        "But a plea, that upward to Heaven he flings--",
+        "I know why the caged bird sings!"
+      ],
+      "provenance_id": "poetrydb:Paul Laurence Dunbar:Sympathy",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1906.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "97782176c5df82a9f7ccaec4f4f9c596183d9b052f6561e93f8f6c4a693d28c7",
+      "source_locator": "Sympathy",
+      "source_url": "https://poetrydb.org/title/Sympathy:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1906",
+      "date": "2026-11-22",
+      "selected_on": "2026-11-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dba3ce1760b20cb1a60a6af7",
+      "path": "culture/culture-dba3ce1760b20cb1a60a6af7/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Sympathy",
+          "url": "https://poetrydb.org/title/Sympathy:abs/lines.text",
+          "date": "Before 1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-22",
+      "summary_basis": "Selected 22 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I know what the caged bird feels, alas!\nWhen the sun is bright on the upland slopes;\nWhen the wind stirs soft through the springing grass,\nAnd the river flows like a stream of glass;\nWhen the first bird sings and the first bud opes,\nAnd the faint perfume from its chalice steals--\nI know what the caged bird feels!\n\nI know why the caged bird beats his wing\nTill its blood is red on the cruel bars;\nFor he must fly back to his perch and cling\nWhen he fain would be on the bough a-swing;\nAnd a pain still throbs in the old, old scars\nAnd they pulse again with a keener sting--\nI know why he beats his wing!\n\nI know why the caged bird sings, ah me,\nWhen his wing is bruised and his bosom sore,--\nWhen he beats his bars and he would be free;\nIt is not a carol of joy or glee,\nBut a prayer that he sends from his heart's deep core,\nBut a plea, that upward to Heaven he flings--\nI know why the caged bird sings!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Distant View of Tiger Hill from the Canal Mooring, from Twelve Views of Tiger Hill, Suzhou",
+      "art_type": "Painting",
+      "balance_origin": "China",
+      "creator": "Shen Zhou (Chinese, 1427–1509)",
+      "creator_origin": "China, Ming dynasty (1368–1644)",
+      "culture_type": "illustration",
+      "deck": "Distant View of Tiger Hill from the Canal Mooring, from Twelve Views of Tiger Hill, Suzhou. Album leaf; ink on paper or ink and slight color on paper.",
+      "headline": "Distant View of Tiger Hill from the Canal Mooring, from Twelve Views of Tiger Hill, Suzhou",
+      "image_path": "assets/culture/792374464064ed4a1094f172.jpg",
+      "key": "culture:792374464064ed4a1094f172",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1964.371.1/1964.371.1_web.jpg",
+      "medium": "Album leaf; ink on paper or ink and slight color on paper",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1964.371.1",
+      "provenance_id": "cma:140441",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Leonard C. Hanna Jr. Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1964.371.1",
+      "work_date": "after 1490",
+      "date": "2026-11-22",
+      "selected_on": "2026-11-22",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-792374464064ed4a1094f172",
+      "path": "culture/culture-792374464064ed4a1094f172/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Distant View of Tiger Hill from the Canal Mooring, from Twelve Views of Tiger Hill, Suzhou",
+          "url": "https://clevelandart.org/art/1964.371.1",
+          "date": "after 1490",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-22",
+      "summary_basis": "Selected 22 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/b/be/Frederic_Chopin_-_Rondo_for_piano_and_orchestra%2C_Op._14.ogg",
+      "creator": "Frédéric Chopin",
+      "creator_origin": "Polish–French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Frédéric Chopin. 10 minutes to listen.",
+      "duration_seconds": 654,
+      "headline": "Frederic Chopin - Rondo for piano and orchestra, Op. 14",
+      "key": "culture:4f54f10ebdde4489004f9d75",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Frederic_Chopin_-_Rondo_for_piano_and_orchestra%2C_Op._14.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9ric_Chopin",
+      "original_recording_title": "Frederic Chopin - Rondo for piano and orchestra, Op. 14",
+      "provenance_id": "commons:44192545",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Frédéric Chopin",
+      "recording_description": "Rondo for piano and orchestra, Op. 14 (Rondeau de Concert 'Krakowiak')",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Frédéric Chopin",
+        "label": "CC0 (source-declared)",
+        "source_credit": "This work comes from the non profit U.S. organization Musopen where it is available at the following link: https://musopen.org/music/1486/frederic-chopin/rondeau-de-concert-krakowiak-op-14/ The Musopen website requires all uploaders to \"represent and warrant that content uploaded to the site is in the public domain\" (see FAQ #4 ). Musopen's own works ( \"Musopen Materials\" and \"Musopen Service\", not user content or public domain content ), are fully copyrighted and may not be used freely as stated in their Terms and Conditions of Use .",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_-_Rondo_for_piano_and_orchestra,_Op._14.ogg",
+      "work_date": "1828",
+      "date": "2026-11-22",
+      "selected_on": "2026-11-22",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-4f54f10ebdde4489004f9d75",
+      "path": "culture/culture-4f54f10ebdde4489004f9d75/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Frederic Chopin - Rondo for piano and orchestra, Op. 14",
+          "url": "https://commons.wikimedia.org/wiki/File:Frederic_Chopin_-_Rondo_for_piano_and_orchestra,_Op._14.ogg",
+          "date": "1828",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "22 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-22",
+      "summary_basis": "Selected 22 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "alt": "Text, Folio 8 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
       "art_type": "Painting",
       "balance_origin": "Eastern India",
@@ -24129,7 +24504,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-21T20:56:19.820281+00:00",
+      "affiliation_checked_at": "2026-11-22T02:39:23.681225+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
