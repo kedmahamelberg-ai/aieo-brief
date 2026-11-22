@@ -3261,7 +3261,18 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/gb.jpg",
+        "alt": "British service members march in London on Armistice Day 2025; archival context, not the drone announcement.",
+        "credit": "Department for Culture, Media and Sport",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Armistice_Day_2025_in_London,_United_Kingdom_-_10.jpg",
+        "license": "Public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "market": "GB",
+        "sha256": "39978173cbc2e8288dc9761428b39e168e29351d043da8d54c7facf1c9962531",
+        "caption": "UK Armed Forces in London, 2025 · Archive photograph; not the drone announcement."
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-50d70955-b5a6-548f-a63d-82f5d1b1a81f/index.html"
       ],
@@ -24780,7 +24791,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-22T17:36:48.476899+00:00",
+      "affiliation_checked_at": "2026-11-22T19:00:22.651665+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
