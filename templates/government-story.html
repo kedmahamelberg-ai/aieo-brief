@@ -6,9 +6,10 @@
 <main id="main-content" class="page-shell"><div class="article-layout"><article id="article-content">
 <div class="breadcrumb"><a href="{{ local('governments-say/index.html') }}">← Governments say</a></div>
 <header class="article-header"><div class="story-kicker"><span>{{ story.country }}</span><span>GOVERNMENT STATEMENT</span><span>BRIEF READ</span></div><h1>{{ story.headline }}</h1><div class="source-line"><span>{{ story.publisher }}</span><time datetime="{{ story.date }}">{{ story.display_date }}</time><span data-read-count="{{ story.key }}" hidden></span></div>{{ actions(story,true) }}</header>
-<div class="article-body"><p class="deck">{{ story.deck }}</p>
-{% for paragraph in story.body_paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+<div class="article-body">
 {% if story.government_photo %}{{ document_photo(story.government_photo) }}{% endif %}
+<p class="deck">{{ story.deck }}</p>
+{% for paragraph in story.body_paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
 <p><a class="read-link" href="{{ story.url }}" target="_blank" rel="noopener noreferrer" data-source-link>Read the official announcement ↗</a></p>
 {% if story.withdrawn %}<p class="small-copy">This item is awaiting a renewed content check and is not included in the current government feed.</p>{% endif %}
 </div>{{ conversation(story,minimal=true) }}</article>
