@@ -142,6 +142,12 @@ def cards(root=ROOT):
     used = set()
     for item in result:
         options = named_photos(item, registry)
+        if item['id'] == '7c371c86683310ec946f':
+            # This archived UK Armed Forces image supplies documentary context
+            # for the 18 November drone announcement, not a scene from it.
+            options = [{**photos['gb'],
+                        'alt': 'British service members march in London on Armistice Day 2025; archival context, not the drone announcement.',
+                        'caption': 'UK Armed Forces in London, 2025 · Archive photograph; not the drone announcement.'}]
         if not options:
             country_photo = photos.get({'FR':'fr', 'US':'us', 'CA':'quebec', 'CN':'beijing'}.get(item['country_code']))
             if country_photo:

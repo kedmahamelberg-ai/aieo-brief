@@ -87,18 +87,29 @@ def validate(site):
  if len(culture)!=payload.get('culture_count',0):raise ValueError('Inconsistent culture count')
  if len(governments)!=payload.get('government_count',0):raise ValueError('Inconsistent government count')
  if not (site/'governments-say/index.html').is_file():raise ValueError('Government page missing')
+ government_feed=(site/'governments-say/index.html').read_text()
  feed_photo_hashes=set()
  for item in governments:
   if item.get('section')!='governments' or not re.fullmatch(r'[A-Z]{2}',item.get('country_code','')) or not item.get('country') or len(item.get('deck','').split())>45 or len(item.get('headline','').split())>16:raise ValueError('Government brief lacks country or exceeds brief limits')
   if len(item.get('body_paragraphs',[]))>2 or sum(len(p.split()) for p in item.get('body_paragraphs',[]))>90:raise ValueError('Government article exceeds its concise detail limit')
   photo=item.get('government_photo')
   if photo:
+   story_html=(site/item['path']).read_text()
+   story_order=(story_html.find('<h1>'),story_html.find('<figure class="government-photo'),story_html.find('<p class="deck">'))
+   if min(story_order)<0 or story_order!=tuple(sorted(story_order)):
+    raise ValueError('Government story photograph must follow the headline and precede the text')
    path=site/photo['path']
    if (path.suffix.lower() not in ('.jpg','.jpeg','.png','.webp') or not path.is_file()
        or not photo.get('license','').startswith(('CC0','Public domain')) or not photo.get('source_url')
        or not photo.get('license_url') or not photo.get('credit')):
     raise ValueError('Government photograph lacks its asset or provenance')
    if item.get('show_feed_photo'):
+    marker='data-key="'+item['key']+'"'
+    start=government_feed.find(marker)
+    card=government_feed[start:government_feed.find('</article>',start)] if start>=0 else ''
+    feed_order=(card.find('<h3>'),card.find('<figure class="government-photo'),card.find('<p class="story-deck">'))
+    if min(feed_order)<0 or feed_order!=tuple(sorted(feed_order)):
+     raise ValueError('Government feed photograph must follow the headline and precede the text')
     fingerprint=hashlib.sha256(path.read_bytes()).hexdigest()
     if fingerprint in feed_photo_hashes:raise ValueError('Repeated government feed photograph')
     feed_photo_hashes.add(fingerprint)

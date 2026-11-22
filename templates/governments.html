@@ -14,9 +14,10 @@
 {% for day,group in items|groupby('date')|reverse %}<section class="government-group"><h2 class="government-group-title">{{ group[0].display_date }}</h2>
 {% for item in group %}
 <article class="feed-story government-card" data-story-card data-key="{{ item.key }}" data-kind="news" data-markets="" data-topic="policy" data-direction="none" data-search="{{ (item.headline ~ ' ' ~ item.deck ~ ' ' ~ item.publisher)|lower }}" data-country="{{ item.country_code }}" data-country-name="{{ item.country }}" data-date="{{ item.date }}" data-display-date="{{ item.display_date }}">
-{% if item.show_feed_photo and item.government_photo %}{{ document_photo(item.government_photo) }}{% endif %}
 <div class="story-kicker"><span class="government-country">{{ item.country }}</span><span>GOVERNMENT STATEMENT</span></div>
-<h3><a href="{{ local(item.path) }}">{{ item.headline }}</a></h3><p class="story-deck">{{ item.deck }}</p>
+<h3><a href="{{ local(item.path) }}">{{ item.headline }}</a></h3>
+{% if item.show_feed_photo and item.government_photo %}{{ document_photo(item.government_photo) }}{% endif %}
+<p class="story-deck">{{ item.deck }}</p>
 <div class="source-line"><time datetime="{{ item.date }}">{{ item.display_date }}</time><a href="{{ item.url }}" target="_blank" rel="noopener noreferrer" data-source-link data-key="{{ item.key }}">Official announcement ↗</a><a class="read-link" href="{{ local(item.path) }}">Read & discuss →</a></div>
 {{ actions(item) }}
 </article>
