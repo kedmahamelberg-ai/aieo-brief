@@ -7,12 +7,12 @@
   "recorded_at": "2026-11-16T19:59:31.231722+01:00",
   "publishing_status": "PUBLISHED_AND_SCHEDULED",
   "counts": {
-    "feed_and_notes_published": 72,
-    "feed_and_notes_scheduled": 4,
+    "feed_and_notes_published": 76,
+    "feed_and_notes_scheduled": 0,
     "instagram_story_frames_published": 12,
-    "instagram_story_frames_scheduled": 3,
+    "instagram_story_frames_scheduled": 0,
     "weekly_substack_posts_published": 1,
-    "instagram_story_frames_unverified": 42
+    "instagram_story_frames_unverified": 45
   },
   "items": [
     {
@@ -811,9 +811,10 @@
       "platform": "linkedin",
       "account": "The Brief | AI Empowerment Observatory Page, company 146490147",
       "scheduled_at": "2026-11-22T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed 17 topics, hooks and facts"
+      "verification": "Published Page post inspected with the approved headline, full caption, exact tracked destination, attribution, three hashtags and one image.",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:7530314461417549824/"
     },
     {
       "id": "SUN18_GLOBAL_6794D3EB_facebook",
@@ -821,9 +822,10 @@
       "platform": "facebook",
       "account": "The Brief | AI Empowerment Observatory Page, profile 61594324679612",
       "scheduled_at": "2026-11-22T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Published Page post inspected with the approved full caption, exact tracked destination, two hashtags and three-image carousel.",
+      "url": "https://www.facebook.com/61594324679612/posts/122138321355477489"
     },
     {
       "id": "SUN18_GLOBAL_6794D3EB_instagram",
@@ -831,9 +833,10 @@
       "platform": "instagram",
       "account": "thebrief_ai.empowerment",
       "scheduled_at": "2026-11-22T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue caption and date/time matched approved pack"
+      "verification": "Public post inspected with the approved caption, five hashtags and exactly three carousel slides.",
+      "url": "https://www.instagram.com/thebrief_ai.empowerment/p/DgDSqN2lF4U/"
     },
     {
       "id": "SUN18_GLOBAL_6794D3EB_substack_note",
@@ -841,9 +844,10 @@
       "platform": "substack_note",
       "account": "The Brief publication, @thebriefaieo",
       "scheduled_at": "2026-11-22T18:00:00+01:00",
-      "status": "SCHEDULED",
+      "status": "PUBLISHED",
       "verified": true,
-      "verification": "Saved queue confirmed topic and date/time"
+      "verification": "Live Note inspected with the approved full copy, two hashtags and exact tracked article card.",
+      "url": "https://substack.com/@thebriefaieo/note/c-389121100"
     }
   ],
   "stories": [
@@ -1008,9 +1012,10 @@
       "topic_id": "SUN18_GLOBAL_6794D3EB",
       "scheduled_at": "2026-11-22T18:00:00+01:00",
       "platform": "instagram_story",
-      "status": "SCHEDULED",
+      "status": "UNVERIFIED",
       "frames": 3,
-      "verification": "Three frames at exact approved time in Scheduled Stories list"
+      "verification": "Meta Business Suite required a fresh login, and public Instagram exposed an active Story control but not per-frame status. No failure or duplicate was observed, so no recovery was attempted.",
+      "verified": false
     }
   ],
   "weekly_substack_post": {
@@ -1244,6 +1249,19 @@
       "topic_id": "SUN10_GLOBAL_0E900282",
       "scheduled_at": "2026-11-22T10:00:00+01:00",
       "duplicate_check": "PASS for feed/Note platforms: one current placement observed on each. Story duplicate and failure status is UNVERIFIED because Meta Business Suite and public Story inspection required login.",
+      "statuses": {
+        "linkedin": "PUBLISHED",
+        "facebook": "PUBLISHED",
+        "instagram_feed": "PUBLISHED",
+        "instagram_story": "UNVERIFIED",
+        "substack_note": "PUBLISHED"
+      }
+    },
+    {
+      "checked_at": "2026-11-22T18:34:34+01:00",
+      "topic_id": "SUN18_GLOBAL_6794D3EB",
+      "scheduled_at": "2026-11-22T18:00:00+01:00",
+      "duplicate_check": "PASS for feed/Note platforms: one current placement observed on each. Story duplicate and failure status is UNVERIFIED because Meta Business Suite required login and public Instagram did not expose per-frame status.",
       "statuses": {
         "linkedin": "PUBLISHED",
         "facebook": "PUBLISHED",
