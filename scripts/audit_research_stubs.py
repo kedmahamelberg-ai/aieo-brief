@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def source_ready_stubs(papers, reader=read_paper):
     failures = []
     for paper in papers:
-        if paper.get('has_editorial') or not paper.get('arxiv_id'):
+        if paper.get('has_editorial') or not (paper.get('arxiv_id') or paper.get('pdf_url') or paper.get('source') == 'pnas'):
             continue
         reading = reader(paper)
         if reading.get('status') == 'read':
