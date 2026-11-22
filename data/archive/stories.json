@@ -1451,7 +1451,16 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-23af75f7-7071-5ea6-bcf5-4fb9cdff7853/index.html"
       ],
@@ -2017,7 +2026,16 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-8cd5a029-3356-583e-8f5e-f0fd9b3564f2/index.html"
       ],
@@ -2119,7 +2137,16 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-282a7f7b-7717-57e7-832c-f46b469f7b89/index.html"
       ],
@@ -2234,22 +2261,33 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "f9f544a607d1c5739424930956d591069c15088c43e548cb423af9746122cb9d",
       "pdf_url": "https://arxiv.org/pdf/2611.26619v1",
-      "has_editorial": false,
-      "headline": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "A new cache system speeds serving of hybrid language models",
+      "deck": "TideCache shares graphics memory among model caches and streams older context from host memory.",
+      "what_happened": "Researchers built TideCache for hybrid language models that combine global attention with bounded memory layers. On two CPU and graphics processor platforms across seven model and platform configurations, it completed up to 2.04 times as many agent turns as the tested SGLang baseline with HiCache.",
+      "why_it_matters": "The system uses memory released by streaming to admit more requests while avoiding repeated work on reusable context.",
+      "body_paragraphs": [
+        "A transparent cache pool reallocates memory without changing cache layouts. A streamer moves reusable context into graphics memory before a global attention layer needs it, while generated cache entries stay resident.",
+        "In the reported experiments, median per-token latency fell by 20 to 59 percent against the tested baseline. The scheduler chooses when a request should use resident or streamed execution."
+      ],
+      "limitation": "Results cover the tested hybrid models and the two tested CPU and graphics processor systems; they do not establish the same gains on other hardware or traffic.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/pdf/2611.26619v1",
+      "paper_text_sha256": "ea62ec2bf1599d1751543d1a371ae7e951a6f626686bc0456526896c544cf0bf",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_pages": 13,
       "kind": "research",
       "slug": "tidecache-efficient-hybrid-llm-serving-transparent-layer-wise-streaming",
       "path": "research/tidecache-efficient-hybrid-llm-serving-transparent-layer-wise-streaming/index.html",
@@ -2576,22 +2614,33 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "b9389d682429cfd1713198651d473b7288b13155da87f21b331b748eddad5e6a",
       "pdf_url": "https://arxiv.org/pdf/2611.26627v1",
-      "has_editorial": false,
-      "headline": "RL Post-Training in Diffusion Transformers Is Activation Steering",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Small fixed shifts reproduce most reward gains in image models",
+      "deck": "A study found that shared steering vectors recover much of the measured gain from reward training in tested image and video generators.",
+      "what_happened": "Researchers fitted fixed steering vectors to the outputs of eight reward-trained diffusion models while keeping each base model frozen. The vectors recovered 90.0 to 96.3 percent of measured reward gains for six image models and 89.8 and 111.9 percent for two video models.",
+      "why_it_matters": "A small, input-independent change can account for much of the tested reward improvement, although the frozen generator still turns it into different images for different prompts.",
+      "body_paragraphs": [
+        "The vectors were fitted to match the reward-trained models without using reward in that fitting objective. On one image model, training the vectors directly with online rewards exceeded the gains of the tested weight-based reward training on text rendering and human-preference scores.",
+        "The authors examined which layers and sampling stages carried the gain and tested output quality with human raters."
+      ],
+      "limitation": "Recovering a gain does not show that the original trained model uses these vectors or that its weight update is low rank. The video evidence covers two models.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.26627v1",
+      "paper_text_sha256": "d2402163c0ddf9d5bdbc63019558b5bc9e455b61f64915ad9068885cc90a488e",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 16,
       "kind": "research",
       "slug": "rl-post-training-diffusion-transformers-activation-steering",
       "path": "research/rl-post-training-diffusion-transformers-activation-steering/index.html",
@@ -3086,7 +3135,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-50d70955-b5a6-548f-a63d-82f5d1b1a81f/index.html"
       ],
@@ -3219,24 +3276,34 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "091f87b296705d9fe6b232556a899ebd8230321a634d271df9758a1853d22364",
       "pdf_url": "https://arxiv.org/pdf/2611.24908v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.24908v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "Decomposing SGD Dynamics in Neural Networks: Teacher-Induced Spikes and Variance Inflation",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "A training analysis links unused model directions to higher variance",
+      "deck": "Theory and simulations of two-layer networks trace how gradient updates create structure outside the target signal.",
+      "what_happened": "Researchers separated a two-layer network’s learned features into a target-aligned signal and a target-orthogonal component. Their analysis found that stochastic gradient updates create teacher-dependent spikes in the latter component’s covariance, offering a mechanism for inflated test variance.",
+      "why_it_matters": "In the paper’s simulated setting, constraining or freezing that component sometimes improved generalization, suggesting a reason that training every available direction can hurt test performance.",
+      "body_paragraphs": [
+        "The authors built a simplified set of training dynamics whose test-error curves match the original training process asymptotically under stated assumptions. They used this model to isolate the role of covariance structure and the coupling between feature and output weights."
+      ],
+      "limitation": "The proof uses a specified high-dimensional teacher-student model, and the improvement from freezing directions is shown in simulations rather than across deployed networks.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.24908v1",
+      "paper_text_sha256": "21f07e4f1175c7646701f57a3b44dfeba262db55d6fc45d347f8dd028c649cfe",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 17,
       "kind": "research",
       "slug": "decomposing-sgd-dynamics-neural-networks-teacher-induced-variance-inflation",
       "path": "research/decomposing-sgd-dynamics-neural-networks-teacher-induced-variance-inflation/index.html",
@@ -3641,12 +3708,8 @@
         "Yuanyuan Li"
       ],
       "institutions": [
-        "Department of Mathematics",
         "Technical University of Munich",
-        "Garching, Germany",
-        "Insure AI",
-        "Munich Re",
-        "San Francisco, USA"
+        "Munich Re"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.24936v1",
       "affiliation_checked_at": "2026-11-19T20:39:28.335845+00:00",
@@ -3656,24 +3719,35 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "b34290c04826427af27dda07038a5fa74128016650d61f98d05dedcb3e794a6a",
       "pdf_url": "https://arxiv.org/pdf/2611.24936v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.24936v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "Jailbreak Detection on Large Language Models via Contrastive Prototype Structures",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Prototype distances can flag harmful prompts without another classifier",
+      "deck": "A detector compared harmful and benign prompt representations across four safety datasets.",
+      "what_happened": "Researchers trained a text encoder to separate harmful from benign examples, then classified new prompts by their distance from the two groups’ prototypes. Contrastive encoder training raised this prototype detector’s accuracy by 9.1 to 18.0 percentage points across four benchmarks.",
+      "why_it_matters": "The detector was close to a separate classifier built on the same encoder in several tests and can avoid that extra classifier training step.",
+      "body_paragraphs": [
+        "In a fixed multi-turn replay test, using accumulated user history improved the prototype method’s conversation-level accuracy compared with judging each turn alone.",
+        "Across 12 transfers between datasets, the prototype method beat the classifier on accuracy in eight directions, but its false-positive and false-negative rates shifted by dataset."
+      ],
+      "limitation": "The reported gains depend on benchmark and threshold. In the TomGibbs transfer, fewer false alarms came with more missed harmful inputs; this is not a guarantee for live safety screening.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.24936v1",
+      "paper_text_sha256": "ce6f8fc78f665c006676a543298916c2215320cef6ff695e36bb704a09103ca3",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 14,
       "kind": "research",
       "slug": "jailbreak-detection-large-language-models-via-prototype-structures",
       "path": "research/jailbreak-detection-large-language-models-via-prototype-structures/index.html",
@@ -4192,7 +4266,16 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-2cd03941-2196-56f2-856f-98284eaa0423/index.html"
       ],
@@ -4302,24 +4385,34 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "c7613c21fa05cd07c53237bbc5f20e056e136640687538f9659349b7eac921d5",
       "pdf_url": "https://arxiv.org/pdf/2611.23228v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.23228v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "Spool: Low-Latency Streaming Inference for Hybrid Vision-Language Models",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Cached video transitions cut delays in streaming vision models",
+      "deck": "Spool updates a moving video window without rebuilding the model state from every retained frame.",
+      "what_happened": "Researchers designed Spool to cache how each video block changes a hybrid vision-language model’s recurrent state. When old frames leave the window, it combines the retained blocks’ cached changes instead of processing all their tokens again.",
+      "why_it_matters": "Across five open-source models and four video reasoning benchmarks, the paper reports the lowest 95th-percentile time to first token in all 20 comparisons, with a geometric-mean 6.6-fold reduction against the faster tested baseline.",
+      "body_paragraphs": [
+        "The paper reports average accuracy 2.3 percentage points higher than the tested baselines. Its segment-tree structure keeps state reconstruction work logarithmic in the number of video blocks."
+      ],
+      "limitation": "Removing an expired block is exact within a recurrent layer, but information from that block can remain in the cached inputs produced by earlier layers; the method is an approximation to rerunning the full model.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/pdf/2611.23228v1",
+      "paper_text_sha256": "fa9cbb022df788e55904189a6bf4eaf4997a9c805a11cc357264dc342f58c2d9",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_pages": 19,
       "kind": "research",
       "slug": "spool-low-latency-streaming-inference-hybrid-vision-language-models",
       "path": "research/spool-low-latency-streaming-inference-hybrid-vision-language-models/index.html",
@@ -4364,7 +4457,7 @@
         "Yifeng Xiao"
       ],
       "institutions": [
-        "Department of Industrial and Systems Engineering, University of Minnesota, USA ("
+        "University of Minnesota"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.23221v1",
       "affiliation_checked_at": "2026-11-18T20:33:31.405156+00:00",
@@ -4374,24 +4467,34 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "ff7e063b8dbfda5d7f08c04081253c498933236c004996903994c677346b0481",
       "pdf_url": "https://arxiv.org/pdf/2611.23221v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.23221v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "An inexact stochastic variance-reduced gradient method for constrained convex finite-sum optimization",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Optimization method offers tighter guarantees for hard constraints",
+      "deck": "A mathematical method reduces costly objective-gradient evaluations while keeping constraint violations within a set tolerance.",
+      "what_happened": "Researchers proposed a stochastic optimization method for convex problems built from many component functions and hard constraints. Their theorem bounds constraint violation deterministically and the expected objective gap statistically, with fewer objective-gradient evaluations than a prior method under the paper’s assumptions.",
+      "why_it_matters": "The method could matter when evaluating the objective gradient costs more than checking constraints. A fairness-constrained logistic regression is one of three preliminary numerical examples.",
+      "body_paragraphs": [
+        "The paper also tests quadratically constrained least-squares and linearly constrained sparse regression. In its examples, the new method reached lower objective values and reduced constraint violations faster than the compared methods."
+      ],
+      "limitation": "The complexity guarantee assumes a specified convex problem class. The numerical results are preliminary numerical experiments, not evidence of performance in deployed systems.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.23221v1",
+      "paper_text_sha256": "cb32d55e6741755fe43440d34b59862ec05ba2f11e47be64f5b1b3a082164c54",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 8,
       "kind": "research",
       "slug": "inexact-stochastic-variance-reduced-gradient-method-constrained-finite-sum-optimization",
       "path": "research/inexact-stochastic-variance-reduced-gradient-method-constrained-finite-sum-optimization/index.html",
@@ -4531,24 +4634,35 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "e2f415ba3a82203024e420a2a83c89704dadf72388adb104bf75a8af8537fabb",
       "pdf_url": "https://arxiv.org/pdf/2611.23219v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.23219v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "Do LLM Agents Still Need to Be Told How to Self-Improve?",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Some language-model agents invent useful ways to practice games",
+      "deck": "In controlled game tasks, stronger models improved by creating their own practice and revising written guidance.",
+      "what_happened": "Researchers gave frozen language-model agents a goal, a limited toolset and a compute budget, without prescribing a learning loop or providing real games for practice. The stronger tested models generated games, tested their own advice and improved performance after updating text instructions.",
+      "why_it_matters": "The work shows that a model can organize short-horizon, context-based self-improvement in this controlled setting without a human-specified optimization procedure.",
+      "body_paragraphs": [
+        "The reported improvement on one puzzle benchmark was 20, 10 and 6 percent for three newer tested models; older tested generations showed little or no improvement.",
+        "The researchers also tested whether revised guidance transferred to longer puzzles and other game settings. Better agents more often used recognizable planning, testing and reflection behaviors."
+      ],
+      "limitation": "The experiments cover short runs and relatively simple games. The link between recognizable learning strategies and improvement is observational, not a causal test.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.23219v1",
+      "paper_text_sha256": "1ce838506f635339baa6e46eb1789da316f8a84ed4fbee3756d4957e07c2d182",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 16,
       "kind": "research",
       "slug": "do-llm-agents-still-need-told-how-self-improve",
       "path": "research/do-llm-agents-still-need-told-how-self-improve/index.html",
@@ -4608,24 +4722,34 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "c3b836b2c416852017698d9c06c97af75861e44ad75eaf26d4973368b19e6ec3",
       "pdf_url": "https://arxiv.org/pdf/2611.23229v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.23229v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "Ambient LLMs: Data-Efficient Supervised Fine-tuning via Temperature Matching",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Temperature matching helps language models learn from scarce data",
+      "deck": "A fine-tuning method keeps a model loosely aligned with its pretrained predictions while it learns a new task.",
+      "what_happened": "Researchers added a temperature-matching term to supervised fine-tuning. A frozen copy of the pretrained model acts as a noisy teacher, while a temperature setting controls how closely the adapted model follows it.",
+      "why_it_matters": "Across the tested domain adaptation, instruction-tuning and reasoning tasks, the method outperformed ordinary supervised fine-tuning, with the largest gains when training data were scarce.",
+      "body_paragraphs": [
+        "The experiments include a toy text task, adaptation to five text domains and post-training tasks. A theoretical analysis describes how the matching term can trade bias against variance under specified model assumptions."
+      ],
+      "limitation": "The paper tests selected models and tasks; its theory relies on a log-linear model and assumptions about teacher error. It does not establish the same gain for every language model.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.23229v1",
+      "paper_text_sha256": "ed15cac3bedc3f78cd89c834727146d29b90c229fcceeccf4d5d21ac48b4fa51",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 12,
       "kind": "research",
       "slug": "ambient-llms-data-efficient-supervised-fine-tuning-via-temperature-matching",
       "path": "research/ambient-llms-data-efficient-supervised-fine-tuning-via-temperature-matching/index.html",
@@ -5683,24 +5807,34 @@
       "publisher": "arXiv",
       "source": "arxiv",
       "research_label": "Preprint",
-      "evidence_scope": "abstract",
+      "evidence_scope": "paper_text",
       "access": "Open paper",
       "journal_reference": "",
       "metadata_sha256": "351c3ec2208a5e51f1d99c385c48278a0b5b31c0534983e844f5ad4d71f84cac",
       "pdf_url": "https://arxiv.org/pdf/2611.21608v1",
       "abstract_source_url": "https://arxiv.org/abs/2611.21608v1",
       "abstract_format": "html",
-      "has_editorial": false,
-      "headline": "Latent Lattice Language Models",
-      "deck": "A checked summary requires reading the full paper. Open the paper for its source and access options.",
-      "what_happened": "",
-      "why_it_matters": "",
-      "body_paragraphs": [],
-      "limitation": "",
-      "summary_basis": "Original paper title",
-      "reading_minutes": 1,
+      "has_editorial": true,
+      "headline": "Persistent layer states improve tested language-model training",
+      "deck": "A lattice of extra states lets each model layer carry information forward across tokens.",
+      "what_happened": "Researchers added persistent horizontal states alongside the usual signal that passes through a language model’s layers. In a parameter-matched 406-million-parameter Transformer trained on 20 billion tokens, validation perplexity fell from 15.41 to 14.40.",
+      "why_it_matters": "The results suggest that maintaining more active states is another way to increase model computation, alongside adding layers or enlarging existing ones.",
+      "body_paragraphs": [
+        "The paper also reports lower perplexity across tested recurrent backbones and shows that the extra states can be combined with other residual-stream enhancements. The states influence attention, memory writes and output predictions."
+      ],
+      "limitation": "These are architecture comparisons on the reported training and evaluation setups; the paper does not establish universal gains or deployment efficiency.",
+      "summary_basis": "Summary of the paper",
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
-      "summary_status": "full_text_required",
+      "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/html/2611.21608v1",
+      "paper_text_sha256": "7bca468d1da1748302f7b8b4cf3539bb1d51a0773b4da499fcae99b0cbd43931",
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
+      "paper_sections": 8,
       "kind": "research",
       "slug": "latent-lattice-language-models",
       "path": "research/latent-lattice-language-models/index.html",
@@ -5778,7 +5912,16 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-2b37fb73-7a1a-5bfe-b123-416a1f5c863c/index.html"
       ],
@@ -6190,7 +6333,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-604a555c-9153-5a3c-8e09-942c79aba500/index.html"
       ],
@@ -7091,7 +7242,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-d2faf2d8-1bc1-53d9-855b-db926bc8c180/index.html"
       ],
@@ -7814,7 +7973,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-16061431-e8f3-5b9b-b203-fce962250dcf/index.html"
       ],
@@ -8946,7 +9113,7 @@
         "Nick Rahimi"
       ],
       "institutions": [
-        "The University of Southern Mississippi, Hattiesburg"
+        "University of Southern Mississippi"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.18553v1",
       "affiliation_checked_at": "2026-11-16T22:04:19.024717+00:00",
@@ -8964,19 +9131,27 @@
       "abstract_source_url": "https://arxiv.org/abs/2611.18553v1",
       "abstract_format": "html",
       "has_editorial": true,
-      "headline": "AI can read small networks, but struggles to repair larger ones",
-      "deck": "WeightBench tests whether AI assistants can inspect and change another model’s internal settings without conventional training.",
-      "what_happened": "Researchers tested AI assistants on 42 tasks involving the numerical settings inside neural networks. The strongest systems could interpret small networks and build simple control systems, but struggled to repair language models, compress them without data or recognize impossible edits.",
-      "why_it_matters": "The tests separate promising small-scale skills from harder repair work. Improving one behavior can damage another, so a successful edit needs more than a higher task score.",
+      "headline": "Language models can read small networks but struggle to repair large ones",
+      "deck": "A 42-task test probes whether agents can inspect, edit and create neural-network weights without ordinary training.",
+      "what_happened": "Researchers introduced WeightBench, a test of language-model agents on 42 tasks covering weight reading, repair, construction, impossible edits and data-free compression. The strongest tested agents could read small networks and create working control policies from blank weights, but struggled to repair large language models or compress them without data.",
+      "why_it_matters": "The benchmark separates impressive small-network demonstrations from the harder question of whether an agent can make precise edits without damaging other capabilities.",
       "body_paragraphs": [
-        "Each task limits access, computing and allowed changes. An audit records tool use and sets suspicious runs aside with a score of zero until reviewed.",
-        "Thirty-nine tasks passed the benchmark’s validity check. Some reference solutions had access unavailable to the tested assistants, so they demonstrate that a solution exists rather than that an assistant could discover it under the same constraints."
+        "The authors measured task gains, collateral damage, edit size and compute use under an audited sandbox. Four models were run on all 42 tasks; one additional model was run on 38.",
+        "Of the 42 tasks, 39 passed the paper’s validity gate. Some reference solutions used privileged information unavailable to the tested agents, so their existence does not show that every task was solvable under the agent’s restrictions."
       ],
-      "limitation": "This preprint uses few runs per task. Flagged runs await review, and one model was tested on 38 rather than all 42 tasks.",
+      "limitation": "The paper reports fixed-seed tests, some quarantined runs and an incomplete 38-task evaluation for one model. It does not show reliable large-model repair or deployment readiness.",
       "summary_basis": "Summary of the paper",
-      "reading_minutes": 1,
+      "reading_minutes": 2,
       "pmc_reader_version": 0,
       "summary_status": "ready",
+      "claim_status": "study",
+      "full_text_status": "read",
+      "paper_source_url": "https://arxiv.org/pdf/2611.18553v1",
+      "paper_text_sha256": "d3dae11f9436468861a52c67ffd7e9dbc134b29d25b8fb0468fc7eb149f78be7",
+      "paper_pages": 9,
+      "research_reading_version": "paper-practitioner-v1",
+      "pdf_reader_version": 2,
+      "html_reader_version": 1,
       "kind": "research",
       "slug": "weightbench-evaluating-language-models-weight-space-programmers",
       "path": "research/weightbench-evaluating-language-models-weight-space-programmers/index.html",
@@ -9004,13 +9179,7 @@
       "evidence_complete": false,
       "display_scope": "",
       "edition": "2026-11",
-      "full_text_status": "read",
-      "paper_source_url": "https://arxiv.org/html/2611.18553v1",
       "paper_sections": 29,
-      "paper_text_sha256": "e8c1ca257fef422ab0f6d9f61754a235735f6c0071630e77ce31927a690f7528",
-      "html_reader_version": 1,
-      "research_reading_version": "paper-practitioner-v1",
-      "claim_status": "study",
       "legacy_paths": [
         "research/paper-29f3a0ced2bcb71a33818a12/index.html"
       ],
@@ -10297,7 +10466,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-7f6d10ad-6192-5e2d-97df-f61f3765a11f/index.html"
       ],
@@ -11723,7 +11900,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-99c10e95-5634-599a-8b62-0d12067e915b/index.html"
       ],
@@ -12835,7 +13020,6 @@
         "Jennifer J. Sun"
       ],
       "institutions": [
-        "Department of Computer Science",
         "Cornell University",
         "codiscovery.ai/contrastive-discovery"
       ],
@@ -12921,7 +13105,7 @@
         "Yongmin Li"
       ],
       "institutions": [
-        "Department of Computer Science, Brunel University of London, Uxbridge"
+        "Brunel University of London"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.14519v1",
       "affiliation_checked_at": "2026-11-11T19:37:57.646061+00:00",
@@ -15510,7 +15694,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-9a447ac4-304d-5047-bbf1-82f11d9f8a7c/index.html"
       ],
@@ -20021,7 +20213,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-52881d28-db83-5757-a4b3-453d59f924db/index.html"
       ],
@@ -21026,7 +21226,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-479d8658-6ef8-50a4-8f14-1a503c708706/index.html"
       ],
@@ -22263,7 +22471,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-a73b50d8-3f43-5648-9127-947fe70adc3c/index.html"
       ],
@@ -23273,7 +23489,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-d2f42c8f-6270-5c90-9bf7-d9cc1b40330d/index.html"
       ],
@@ -24110,7 +24334,7 @@
       "institutions": [
         "Institute of Logic and Computation, TU Wien, Austria",
         "Institute for Application-Oriented Knowledge Processing, JKU Linz, Austria",
-        "Department of Artificial Intelligence and Cybersecurity, University of Klagenfurt, Austria",
+        "University of Klagenfurt",
         "Institute for Machine Learning, JKU Linz, Austria",
         "Institute for Symbolic Artificial Intelligence, JKU Linz, Austria",
         "Institute for Machine Learning, LIT AI Lab, Department of Virtual Morphology, Clinical Research Institute Medical AI, JKU Linz, Austria"
@@ -24504,7 +24728,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-22T11:44:01.273842+00:00",
+      "affiliation_checked_at": "2026-11-22T11:53:41.958756+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -24858,7 +25082,15 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-27fd82cc-4fd4-5612-8d4b-b8c7e961b6fa/index.html"
       ],
@@ -26570,7 +26802,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-c5b83019-87fd-543f-97b5-0b6b3ade0e74/index.html"
       ],
@@ -28705,7 +28945,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-faae6620-b772-5318-b70c-22c3120f2c00/index.html"
       ],
@@ -30282,7 +30530,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-69d88861-23c8-546a-8737-bd7e29211c58/index.html"
       ],
@@ -31200,7 +31456,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-bd7023d5-e177-5901-91ef-f8e0da0d125a/index.html"
       ],
@@ -32560,7 +32824,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-85f821d4-ab77-549c-9424-ebf2496f71cf/index.html"
       ],
@@ -33578,7 +33850,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "caption": "Canada · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-dcd273f6-ee32-5970-a414-c3cbba7d4329/index.html"
       ],
@@ -35014,7 +35295,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-4b797501-d13b-52f1-813f-b11badc26882/index.html"
       ],
@@ -37190,7 +37479,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-2b014e6f-d783-5e27-b82e-62b64a1b8d54/index.html"
       ],
@@ -39454,7 +39751,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-51bc9cf6-c0bd-57fd-8681-a3d30a0e624b/index.html"
       ],
@@ -40903,7 +41208,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-773d81ef-06d4-5404-baaf-56221fbc4000/index.html"
       ],
@@ -42029,7 +42342,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-615b5e8f-c13b-55f8-8c18-79bd2ce3d60b/index.html"
       ],
@@ -44275,7 +44596,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-8244fb14-61d8-5709-a071-2ae64329dbfc/index.html"
       ],
@@ -45351,7 +45680,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-ad2895d1-574e-5089-9148-1997be7b0381/index.html"
       ],
@@ -47930,7 +48268,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-d3bbfa63-4747-5d43-82a7-5aa32757852c/index.html"
       ],
@@ -50769,7 +51115,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "caption": "Canada · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-d2ce12e6-cf30-5ee9-accb-9b05686b028c/index.html"
       ],
@@ -52221,7 +52576,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-34ba06ae-b7b9-5183-9955-19657eca0042/index.html"
       ],
@@ -52272,7 +52636,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "caption": "Canada · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-e59d6b43-5ee3-594c-a929-17ed342bb262/index.html"
       ],
@@ -54224,7 +54597,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "caption": "Canada · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-510eb7fa-aaa4-52b6-aec4-7e3a8fea5a56/index.html"
       ],
@@ -54275,7 +54657,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-2cdb0541-2453-5c0c-ae58-4a4014d1e620/index.html"
       ],
@@ -55014,7 +55405,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-8befd993-bc3d-582b-a41e-455bbe04c173/index.html"
       ],
@@ -57070,7 +57469,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "caption": "China · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-1d07e6ca-f67b-5fd3-ae1a-b22613e68ccf/index.html"
       ],
@@ -59007,7 +59415,7 @@
         "Kosio Beshkov"
       ],
       "institutions": [
-        "Department of Physics, University of Oslo, Oslo, Norway"
+        "University of Oslo"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2610.13931v1",
       "affiliation_checked_at": "2026-10-30T07:43:27.165651+00:00",
@@ -59475,7 +59883,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-b91537f1-18bd-5410-a67f-dbfb2ed33c43/index.html"
       ],
@@ -61514,7 +61930,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-4756c6b9-3599-5743-9b60-2d1e09b92784/index.html"
       ],
@@ -62766,7 +63190,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-d3c9c20e-de87-53ea-9cd4-69831f468023/index.html"
       ],
@@ -64344,7 +64776,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-e9c18ea3-4184-5561-9fde-f0cced04003d/index.html"
       ],
@@ -65770,7 +66210,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-f9935e70-9145-5f06-b4bc-8ef25742f4e5/index.html"
       ],
@@ -67007,7 +67455,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-d91a11cd-da7d-5776-9085-990e5b3f2567/index.html"
       ],
@@ -68428,7 +68884,15 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-4b0c0dfc-7850-550e-a4ab-2c7732c97be7/index.html"
       ],
@@ -70881,7 +71345,16 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "caption": "Canada · Archive image for country context; not this announcement."
+      },
       "legacy_paths": [
         "story/government-d06ed021-3e5c-5636-b1af-fe202c5ab65f/index.html"
       ],
@@ -72754,7 +73227,15 @@
       "edition": "Governments · 2026-09",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
       "legacy_paths": [
         "story/government-08ec962a-0eb7-5bbb-b7b9-97dc0d92b9ad/index.html"
       ],

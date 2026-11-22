@@ -2216,7 +2216,6 @@
         "Jennifer J. Sun"
       ],
       "institutions": [
-        "Department of Computer Science",
         "Cornell University",
         "codiscovery.ai/contrastive-discovery"
       ],
@@ -2271,7 +2270,7 @@
         "Yongmin Li"
       ],
       "institutions": [
-        "Department of Computer Science, Brunel University of London, Uxbridge"
+        "Brunel University of London"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.14519v1",
       "affiliation_checked_at": "2026-11-11T19:37:57.646061+00:00",
@@ -2772,7 +2771,7 @@
       "institutions": [
         "Institute of Logic and Computation, TU Wien, Austria",
         "Institute for Application-Oriented Knowledge Processing, JKU Linz, Austria",
-        "Department of Artificial Intelligence and Cybersecurity, University of Klagenfurt, Austria",
+        "University of Klagenfurt",
         "Institute for Machine Learning, JKU Linz, Austria",
         "Institute for Symbolic Artificial Intelligence, JKU Linz, Austria",
         "Institute for Machine Learning, LIT AI Lab, Department of Virtual Morphology, Clinical Research Institute Medical AI, JKU Linz, Austria"
@@ -3042,7 +3041,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-22T11:44:01.273842+00:00",
+      "affiliation_checked_at": "2026-11-22T11:53:41.958756+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
