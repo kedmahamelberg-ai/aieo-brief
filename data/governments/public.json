@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-21T14:00:00+00:00",
-  "last_checked_at": "2026-11-21T15:20:21.993028+00:00",
+  "monitor_as_of": "2026-11-22T11:37:52.517302+00:00",
+  "last_checked_at": "2026-11-22T11:54:49.460248+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1650,6 +1650,17 @@
       "summary": "Xi and Wong discussed closer China-Singapore ties, including trade agreement negotiations, Belt and Road cooperation, and collaboration in digital technology, green development and AI. Wong reaffirmed Singapore’s one-China policy and called for cooperation on international affairs and global challenges.",
       "body_paragraphs": [],
       "input_fingerprint": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253"
+    },
+    "58195c888455c8fbf5ad": {
+      "id": "58195c888455c8fbf5ad",
+      "country": "Armenia",
+      "country_code": "AM",
+      "url": "https://www.primeminister.am/en/press-release/item/2026/11/21/Nikol-Pashinyan-Digitec-2026/",
+      "date": "2026-11-21",
+      "headline": "Pashinyan promotes Armenia’s AI hub ambitions and energy independence through renewables, storage and regional grid links.",
+      "summary": "At DigiTec 2026, Prime Minister Pashinyan discussed plans to develop Armenia as an AI hub, attract investment, build infrastructure, and support AI adoption without replacing workers. He also outlined renewable-energy and regional electricity-link initiatives tied to the “Crossroads of Peace” and TRIPP programs.",
+      "body_paragraphs": [],
+      "input_fingerprint": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55"
     }
   },
   "checked": {
@@ -1797,7 +1808,8 @@
     "51a320c4228d3e563e69": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad",
     "eb18721cb93e73501f8b": "958480919ac6e4eea93eae922995f9624030999f86d992d5f231600162462bf7",
     "a4db83995e5414b97cb7": "b1cb1e49c1a09c375670b0f89b3f03bc3d571610ee4e041adf761eaa44db3487",
-    "5374f48573316b6e1e1e": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253"
+    "5374f48573316b6e1e1e": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253",
+    "58195c888455c8fbf5ad": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55"
   },
   "retry": {},
   "pending": 0,
