@@ -21,7 +21,8 @@ def spotlight_feed(root, stories, baseurl, release_id, generated_at):
     for story in selected:
         photo=story_photo(story,registry)
         if not photo or photo['sha256'] in used:continue
-        market=photo['market']
+        market=next((m for m in story.get('markets', []) if m in NAMES), None) if photo.get('subjects') else photo['market']
+        if market not in NAMES:continue
         used.add(photo['sha256'])
         items.append({'id':story['key'],'headline':story['headline'],'summary':story.get('deck',''),
             'url':urljoin(baseurl+'/',story['path']),'date':story.get('date',''),

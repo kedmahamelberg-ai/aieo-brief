@@ -22,3 +22,7 @@
 {{ actions(item) }}
 </article>
 {%- endmacro %}
+
+{% macro document_photo(photo) -%}
+<figure class="government-photo{% if photo.subjects %} named-photo{% endif %}"><img src="{{ local(photo.path) }}" alt="{{ photo.alt }}" width="{{ photo.width or 1200 }}" height="{{ photo.height or 675 }}" loading="lazy"><figcaption>{{ photo.caption }} <a href="{{ photo.source_url }}" target="_blank" rel="noopener noreferrer">{{ photo.credit }}</a> · <a href="{{ photo.license_url }}" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a></figcaption></figure>
+{%- endmacro %}

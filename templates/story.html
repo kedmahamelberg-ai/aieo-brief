@@ -1,4 +1,4 @@
-{% extends 'base.html' %}{% from 'components.html' import actions,ad with context %}{% from 'conversation.html' import conversation with context %}
+{% extends 'base.html' %}{% from 'components.html' import actions,ad,document_photo with context %}{% from 'conversation.html' import conversation with context %}
 {% block title %}{{ story.headline }} | The Brief{% endblock %}{% block description %}{{ story.deck }}{% endblock %}
 {% block content %}
 <div class="reading-progress" aria-hidden="true"></div>
@@ -13,6 +13,7 @@
 {% if story.kind=='research' %}
 <dl class="paper-facts"><div><dt>Publication</dt><dd>{{ story.publisher }}</dd></div><div><dt>Stage</dt><dd>{{ story.research_label }}</dd></div><div><dt>What we read</dt><dd>{{ story.summary_basis }}</dd></div><div><dt>Authors</dt><dd>{{ story.authors|join(', ') if story.authors else 'See the source record' }}</dd></div><div><dt>Universities and research institutions</dt><dd>{{ story.institutions|join(', ') if story.institutions else 'Not yet supplied in verified metadata; the Brief does not guess.' }}</dd></div></dl>{% if story.affiliation_source_url %}<p class="small-copy">Institution metadata: <a href="{{ story.affiliation_source_url }}" target="_blank" rel="noopener noreferrer">{{ 'OpenAlex record' if 'openalex.org/' in story.affiliation_source_url else 'Original paper' if 'arxiv.org/html/' in story.affiliation_source_url else 'Affiliation source' }} ↗</a></p>{% endif %}
 {% endif %}
+{% if named_photo %}{{ document_photo(named_photo) }}{% endif %}
 {% if story.has_editorial %}<section><h2>{{ 'What they did and found' if story.kind=='research' else 'What happened' }}</h2><p>{{ story.what_happened }}</p></section><section class="finding-note"><h2>Why it matters</h2><p>{{ story.why_it_matters }}</p></section><div data-full-read>{% for paragraph in story.body_paragraphs %}<p>{{ paragraph }}</p>{% endfor %}</div>
 
 {% else %}<section class="quiet-box">{% if story.kind=='research' %}<h2>About this summary</h2><p>{% if story.summary_status=='abstract_unavailable' %}We could not retrieve an abstract for this paper yet. Follow the source link to check its abstract and access options.{% elif story.summary_status=='retrying' %}The abstract is available, but our draft did not pass its accuracy checks. We will retry the summary automatically.{% else %}This paper is waiting for a checked summary. Follow the source link to read the research.{% endif %}</p>{% else %}<h2>Read the reporting</h2><p>This item links to the source article. An AIEO summary is not available for this edition.</p>{% endif %}<a class="read-link" href="{{ story.sources[0].url }}" target="_blank" rel="noopener noreferrer" data-source-link>Open {{ story.publisher }} ↗</a></section>{% endif %}
