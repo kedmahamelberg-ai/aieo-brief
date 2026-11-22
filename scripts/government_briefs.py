@@ -122,7 +122,7 @@ def cards(root=ROOT):
         # database key types. It never references an Observatory event record.
         key = 'event:' + str(uuid.uuid5(uuid.NAMESPACE_URL, FEED + '#' + row['id']))
         ident = key.removeprefix('event:')
-        photo = photos.get({'FR': 'fr', 'US': 'us'}.get(row['country_code'], ''))
+        photo = photos.get({'FR': 'fr', 'US': 'us', 'CA': 'quebec', 'CN': 'beijing'}.get(row['country_code'], ''))
         # Occasional country context, never a purported photo of the event.
         if photo and (int(hashlib.sha256(row['id'].encode()).hexdigest()[:2], 16) % 2 == 1):
             photo = {**photo, 'caption': row['country'] + ' · Archive image for country context; not this announcement.'}
@@ -141,7 +141,20 @@ def cards(root=ROOT):
                        'summary_basis': 'Monitor government narrative · AI topic label', 'reading_minutes': 1,
                        'edition': 'Governments · ' + row['date'][:7], 'publication_language': 'en',
                        'english_status': 'checked', 'government_photo': photo})
-    return sorted(result, key=lambda x: (x['date'], x['country'], x['key']), reverse=True)
+    result.sort(key=lambda x: (x['date'], x['country'], x['key']), reverse=True)
+    # Each published date needs at least one visual. For countries without a
+    # rights-checked archive photo, use an original generic illustration.
+    covered = {item['date'] for item in result if item['government_photo']}
+    for item in result:
+        if item['date'] not in covered:
+            item['government_photo'] = {
+                'path': 'assets/spotlight/government-illustration.svg',
+                'alt': 'Graphic illustration of a government announcement',
+                'caption': 'Illustration; this does not depict the announcement.',
+                'credit': 'AIEO Brief', 'license': 'Original illustration',
+                'source_url': '', 'license_url': ''}
+            covered.add(item['date'])
+    return result
 
 
 def main():
