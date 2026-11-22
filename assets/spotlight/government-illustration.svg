@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Government announcement illustration</title>
+  <desc id="desc">Abstract columns and document lines, with no depiction of a place or event.</desc>
+  <rect width="1200" height="675" fill="#12201f"/>
+  <circle cx="960" cy="145" r="245" fill="#25443f"/>
+  <path d="M0 520 1200 260v415H0z" fill="#18342f"/>
+  <path d="M164 438 606 234l440 204" fill="none" stroke="#b8d5bc" stroke-width="16" stroke-linejoin="round"/>
+  <rect x="213" y="437" width="788" height="22" rx="8" fill="#b8d5bc"/>
+  <g fill="#78a99a">
+    <rect x="257" y="480" width="72" height="130" rx="8"/>
+    <rect x="410" y="480" width="72" height="130" rx="8"/>
+    <rect x="563" y="480" width="72" height="130" rx="8"/>
+    <rect x="716" y="480" width="72" height="130" rx="8"/>
+    <rect x="869" y="480" width="72" height="130" rx="8"/>
+  </g>
+  <rect x="182" y="614" width="850" height="21" rx="8" fill="#b8d5bc"/>
+  <rect x="789" y="68" width="235" height="244" rx="16" fill="#f5f0df"/>
+  <path d="M829 127h150M829 171h150M829 215h109M829 259h131" stroke="#486c63" stroke-width="12" stroke-linecap="round"/>
+</svg>

@@ -126,6 +126,21 @@ class GovernmentBriefsTests(unittest.TestCase):
         self.assertEqual(a['section'], 'governments')
         self.assertEqual(a['summary_basis'], 'Monitor government narrative · AI topic label')
 
+    def test_each_day_has_a_truthfully_captioned_image(self):
+        from unittest.mock import patch
+        import tempfile
+        import json
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root / 'config').mkdir()
+            (root / 'config/story-photos.json').write_text(json.dumps({'photos': {}}))
+            state = gov.refresh(snapshot(source(), source(id='next-day', published_date='2026-11-15')), {})
+            with patch.object(gov, 'load', return_value=state):
+                cards = gov.cards(root)
+        self.assertEqual({card['date'] for card in cards},
+                         {card['date'] for card in cards if card['government_photo']})
+        self.assertTrue(all('does not depict' in card['government_photo']['caption'] for card in cards))
+
 
 if __name__ == '__main__':
     unittest.main()

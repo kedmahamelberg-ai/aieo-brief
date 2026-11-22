@@ -37,6 +37,17 @@ def clean_institutions(values, authors=()):
     for value in values or []:
         name = re.split(r"\s*(?:E-?mail)\s*:", _plain(value), maxsplit=1, flags=re.I)[0].strip().rstrip(' .,:;')
         name = re.sub(r"^The authors are with (?:the )?", "", name, flags=re.I)
+        # arXiv sometimes splits one affiliation into department, institution,
+        # and city cells; a city must not be published as an institution.
+        if re.fullmatch(r"[^,]+,\s*(?:Germany|USA|United States|UK|France|Canada|China)", name, re.I):
+            continue
+        if re.fullmatch(r"Department of [^,]+", name, re.I):
+            continue
+        embedded = (re.search(r"\b((?:[A-Za-z]+ )*University of [^,()]+)", name, re.I)
+                    if name.lower().startswith('department of ') else None)
+        if embedded:
+            name = embedded.group(1).strip().rstrip(' .,:;')
+            name = re.sub(r",\s*(?:USA|United States|UK|Germany|France|Canada|China)$", "", name, flags=re.I)
         # arXiv author blocks sometimes place contribution notes in affiliation cells.
         name = re.split(r"\s*(?:[,;]|\s+[∗*†‡])\s*[∗*†‡]?\s*(?:equal contribution|contributed equally)\b", name, maxsplit=1, flags=re.I)[0].strip()
         if re.fullmatch(r"\W*(?:equal contribution|contributed equally)\W*", name, flags=re.I):
