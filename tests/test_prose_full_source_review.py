@@ -24,13 +24,14 @@ class ProseFullSourceReview(unittest.TestCase):
             new_urls=[source['url'] for source in replacement['sources']]
             self.assertIn(original_urls,(entry['source_urls'],new_urls))
             self.assertTrue({'sources','source_count','publisher'} <= set(replacement))
-            self.assertTrue(set(replacement) <= {'sources','source_count','publisher','date','display_date'})
+            self.assertTrue(set(replacement) <= {'sources','source_count','publisher','date','display_date','headline','deck','what_happened','body_paragraphs'})
             self.assertEqual(replacement['publisher'],'The Motley Fool')
             self.assertEqual(replacement['source_count'],1)
             self.assertEqual(replacement['sources'][0]['date'],replacement.get('date',saved['date']))
             self.assertTrue(new_urls[0].startswith('https://www.fool.com/'))
             corrected=apply_corrections([copy.deepcopy(saved)])[0]
             for field,value in replacement.items():self.assertEqual(corrected[field],value,(entry['key'],field))
+            self.assertNotIn('Globe and Mail',json.dumps(corrected,ensure_ascii=False))
         changed=copy.deepcopy(archive[manifest['news'][0]['key']])
         changed['sources'][0]['url']='https://example.org/different-article'
         with self.assertRaisesRegex(ValueError,'source changed after citation review'):
