@@ -57,6 +57,12 @@ def is_due(state, now):
         raise ValueError("last_checked_at must include a timezone")
     return checked_at.astimezone(AMSTERDAM) < due_at
 
+
+def import_due(state, now, check_feed=False):
+    if is_due(state, now):
+        return True
+    return check_feed and changed_live_feed(state)
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--state", type=Path, default=Path("data/governments/public.json"))
@@ -64,9 +70,10 @@ def main():
     parser.add_argument("--check-feed", action="store_true", help="Import later same-day Monitor corrections on scheduled wake-ups")
     args = parser.parse_args()
     state = json.loads(args.state.read_text()) if args.state.exists() else {}
-    due = args.force or is_due(state, datetime.now(AMSTERDAM))
-    if not due and args.check_feed and datetime.now(AMSTERDAM).time() >= time(16, 5):
-        due = changed_live_feed(state)
+    # A late Monitor collection can add yesterday's eligible records after the
+    # preceding daily import. Check exact fingerprints on every wake-up; the
+    # 16:05 daily check remains independently due.
+    due = args.force or import_due(state, datetime.now(AMSTERDAM), args.check_feed)
     print("Daily government import " + ("is due" if due else "is not due or already checked"))
     if os.environ.get("GITHUB_OUTPUT"):
         with open(os.environ["GITHUB_OUTPUT"], "a") as output:
