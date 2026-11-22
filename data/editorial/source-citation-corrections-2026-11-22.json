@@ -1,0 +1,608 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "reviewed_at": "2026-11-22",
+  "news": [
+    {
+      "key": "event:0d5bbdc7-e95d-4a3d-9a82-daf8da8b2fbb",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/IONQ-N/pressreleases/4576964/bigbear-ai-vs-ionq-weighing-whether-to-invest-in-the-artificial-intelligence-company-or-the-quantum-computing-giant"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "BigBear.ai vs. IonQ: Weighing Whether to Invest in the Artificial Intelligence Company or the Quantum Computing Giant",
+            "url": "https://www.fool.com/coverage/better-buy/2026/09/12/bigbear-ai-vs-ionq-weighing-whether-to-invest-in-the-artificial-intelligence-company-or-the-quantum-computing-giant/",
+            "date": "2026-09-13",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:1115366b-1c5e-4835-8a89-f72a446312ed",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AI/pressreleases/4331944/c3ai-vs-uipath-which-artificial-intelligence-stock-is-a-better-investment-in-2026"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "C3.ai vs. UiPath: Which Artificial Intelligence Stock Is a Better Investment in 2026?",
+            "url": "https://www.fool.com/coverage/better-buy/2026/08/28/c3-ai-vs-uipath-which-artificial-intelligence-stock-is-a-better-investment-in-2026/",
+            "date": "2026-08-29",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:18c89da4-076e-481a-b8b3-0345722b743d",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AAPL-Q/pressreleases/4579050/prediction-this-artificial-intelligence-ai-chip-stock-will-soar-after-sept-30-hint-it-s-not-micron"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Prediction: This Artificial Intelligence (AI) Chip Stock Will Soar After Sept. 30 (Hint: It's Not Micron)",
+            "url": "https://www.fool.com/investing/2026/09/13/prediction-this-artificial-intelligence-ai-chip-st/",
+            "date": "2026-09-13",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:25df0d2b-0074-47a7-80fd-af3e6754a139",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/ASML/pressreleases/5316734/1-no-brainer-artificial-intelligence-ai-etf-to-buy-with-100-and-hold-forever"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "1 No-Brainer Artificial Intelligence (AI) ETF to Buy With $100 and Hold Forever",
+            "url": "https://www.fool.com/investing/2026/10/06/1-no-brainer-ai-etf-to-buy-with-100-hold-forever/",
+            "date": "2026-10-06",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:2bfc68c1-17a2-4e1a-bc19-9e29d8aec609",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/markets-news/motley/6002658/spacex-vs-micron-which-is-the-better-artificial-intelligence-ai-stock-to-own-for-the-next-5-years"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "SpaceX vs. Micron: Which Is the Better Artificial Intelligence (AI) Stock to Own for the Next 5 Years?",
+            "url": "https://www.fool.com/investing/2026/10/11/spacex-vs-micron-better-artificial-intelligence-ai/",
+            "date": "2026-10-11",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:2cce67b0-7fa9-49e1-b76f-ebe366fff9e9",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/WMT/pressreleases/4236037/palantir-billionaire-peter-thiel-just-bought-this-magnificent-artificial-intelligence-ai-stock-up-347260-since-its-ipo"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Palantir Billionaire Peter Thiel Just Bought This Magnificent Artificial Intelligence (AI) Stock Up 347,260% Since Its IPO",
+            "url": "https://www.fool.com/investing/2026/08/27/palantir-billionaire-peter-thiel-just-bought-this/",
+            "date": "2026-08-27",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:2f6b1d8a-94a0-4fd1-8b69-5c7ffdb24ed4",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/5273442/michael-burry-is-betting-against-artificial-intelligence-ai-heres-the-case-for-and-against-and-the-one-stock-id-still-own"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Michael Burry Is Betting Against Artificial Intelligence (AI). Here's the Case for and Against, and the One Stock I'd Still Own.",
+            "url": "https://www.fool.com/investing/2026/10/09/michael-burry-is-betting-against-artificial-intell/",
+            "date": "2026-10-09",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:3bbb8de9-7fd3-4a68-86ae-fa498b9a5161",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/INTC/pressreleases/4774411/amd-vs-intel-which-artificial-intelligence-ai-chip-stock-has-more-room-to-run"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "AMD vs. Intel: Which Artificial Intelligence (AI) Chip Stock Has More Room to Run?",
+            "url": "https://www.fool.com/investing/2026/09/24/amd-vs-intel-which-artificial-intelligence-ai-chip-stock-has-more-room-to-run/",
+            "date": "2026-09-24",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:6e7c60fe-40a7-4354-b53c-9d6466ae00a1",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/markets-news/motley/4808906/this-stock-may-be-the-best-artificial-intelligence-ai-and-quantum-computing-investment"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "This Stock May Be the Best Artificial Intelligence (AI) and Quantum Computing Investment",
+            "url": "https://www.fool.com/investing/2026/09/25/this-stock-may-be-the-best-artificial-intelligence/",
+            "date": "2026-09-25",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:774fc675-1a43-4d20-8128-5f606d0d70b9",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA-Q/pressreleases/4463572/broadcom-vs-nvidia-1-critical-metric-shows-which-artificial-intelligence-ai-chipmaker-is-the-better-buy-after-earnings"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Broadcom vs. Nvidia: 1 Critical Metric Shows Which Artificial Intelligence (AI) Chipmaker Is the Better Buy After Earnings",
+            "url": "https://www.fool.com/investing/2026/09/05/broadcom-vs-nvidia-1-critical-metric-shows-which-a/",
+            "date": "2026-09-05",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:7ab0b5a1-0e78-41d7-aa58-a4a29f866b24",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AI/pressreleases/4577027/c3ai-vs-uipath-what-revenue-trends-between-these-artificial-intelligence-companies-tell-investors"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "C3.ai vs. UiPath: What Revenue Trends Between These Artificial Intelligence Companies Tell Investors",
+            "url": "https://www.fool.com/coverage/charts/2026/09/13/c3-ai-vs-uipath-what-revenue-trends-between-these-artificial-intelligence-companies-tell-investors/",
+            "date": "2026-09-13",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:7f2f5061-452e-479a-b1b0-e3cd88fadbfc",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/GOOG/pressreleases/5288327/1-unstoppable-artificial-intelligence-ai-stock-to-buy-before-it-joins-nvidia-in-the-5-trillion-club"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "1 Unstoppable Artificial Intelligence (AI) Stock to Buy Before It Joins Nvidia in the $5 Trillion Club",
+            "url": "https://www.fool.com/investing/2026/10/08/1-artificial-intelligence-ai-stock-that-could-join/",
+            "date": "2026-10-08",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:89488dad-57d4-4d88-9f51-252659032d43",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/CRWV-Q/pressreleases/4772882/this-artificial-intelligence-ai-stock-could-soar-by-63-according-to-wall-street"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "This Artificial Intelligence (AI) Stock Could Soar by 63%, According to Wall Street",
+            "url": "https://www.fool.com/investing/2026/09/24/this-artificial-intelligence-ai-stock-could-soar-by-63-according-to-wall-street/",
+            "date": "2026-09-24",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:8b3f0eb1-8432-4275-ad87-ac45aee1cd68",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/SPCX/pressreleases/4334161/spacex-vs-alphabet-which-is-the-best-artificial-intelligence-ai-stock-to-buy-now"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "SpaceX vs. Alphabet: Which Is the Best Artificial Intelligence (AI) Stock to Buy Now?",
+            "url": "https://www.fool.com/investing/2026/08/29/spacex-vs-alphabet-which-is-the-best-artificial-in/",
+            "date": "2026-08-29",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:8ca1d082-3d5a-45a9-bd74-b3b4567649f1",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AMD/pressreleases/4459564/got-1000-3-stocks-building-the-physical-artificial-intelligence-ai-era"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Got $1,000? 3 Stocks Building the Physical Artificial Intelligence (AI) Era",
+            "url": "https://www.fool.com/investing/2026/09/05/got-1000-3-stocks-building-the-physical-artificial/",
+            "date": "2026-09-05",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:9ed95a40-ab46-4d76-b701-7cfd031b1133",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AI/pressreleases/4260415/c3ai-vs-oracle-which-artificial-intelligence-stock-is-a-better-investment-in-2026"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "C3.ai vs. Oracle: Which Artificial Intelligence Stock Is a Better Investment in 2026?",
+            "url": "https://www.fool.com/coverage/better-buy/2026/08/27/c3-ai-vs-oracle-which-artificial-intelligence-stock-is-a-better-investment-in-2026/",
+            "date": "2026-08-27",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:bc1baa95-0aa8-49a1-af47-dcebb1dda67c",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/BRK-B-N/pressreleases/4701158/berkshire-hathaways-favorite-artificial-intelligence-ai-stock-looks-like-a-genius-buy-now"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Berkshire Hathaway's Favorite Artificial Intelligence (AI) Stock Looks Like a Genius Buy Now",
+            "url": "https://www.fool.com/investing/2026/09/20/berkshire-hathaways-favorite-artificial-intelligen/",
+            "date": "2026-09-20",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:bedfedab-eb0d-4f88-bb4c-7e75b2d10a56",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/META/pressreleases/4447914/broadcoms-artificial-intelligence-ai-chip-sales-surged-221-to-167-billion-last-quarter-is-the-stock-a-screaming-buy-right-now"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Broadcom's Artificial Intelligence (AI) Chip Sales Surged 221% to $16.7 Billion Last Quarter: Is the Stock a Screaming Buy Right Now?",
+            "url": "https://www.fool.com/investing/2026/09/04/broadcoms-artificial-intelligence-ai-chip-sales-su/",
+            "date": "2026-09-04",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:c3c34bc9-e3ba-48c1-9705-752c123aee9e",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/GOOG/pressreleases/4343251/warren-buffetts-successor-greg-abel-keeps-buying-this-incredible-artificial-intelligence-ai-stock-that-buffett-also-loved"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Warren Buffett's Successor, Greg Abel, Keeps Buying This Incredible Artificial Intelligence (AI) Stock That Buffett Also Loved",
+            "url": "https://www.fool.com/investing/2026/08/30/warren-buffetts-successor-greg-abel-keeps-buying-t/",
+            "date": "2026-08-30",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:cc7cf8d5-df83-47b4-8203-29ea2fc60207",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AMD-Q/pressreleases/5306128/should-you-forget-nvidia-and-buy-these-2-artificial-intelligence-ai-chip-stocks-instead"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Should You Forget Nvidia and Buy These 2 Artificial Intelligence (AI) Chip Stocks Instead?",
+            "url": "https://www.fool.com/investing/2026/10/09/nvidia-buy-artificial-intelligence-chip-stock/",
+            "date": "2026-10-09",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:d70b9a00-2f79-4b64-aa70-40cb489c7d33",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/AMAT/pressreleases/5332353/applied-materials-vs-nvidia-what-revenue-trends-reveal-about-these-artificial-intelligence-companies"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the same headline and a 2026-10-06 publication date; the syndicated discovery date was 2026-10-07. Replace the citation, publisher and displayed date, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Applied Materials vs. Nvidia: What Revenue Trends Reveal About These Artificial Intelligence Companies",
+            "url": "https://www.fool.com/coverage/charts/2026/10/06/applied-materials-vs-nvidia-what-revenue-trends-reveal-about-these-artificial-intelligence-companies/",
+            "date": "2026-10-06",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool",
+        "date": "2026-10-06",
+        "display_date": "6 Oct 2026"
+      }
+    },
+    {
+      "key": "event:dd952d35-cc40-411c-8591-6554d99277b0",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/MA/pressreleases/4343830/prediction-if-artificial-intelligence-ai-leads-to-unprecedented-economic-growth-these-2-sp-500-stocks-are-once-in-a-decade-buying-opportunities-right-now"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Prediction: If Artificial Intelligence (AI) Leads to Unprecedented Economic Growth, These 2 S&P 500 Stocks Are Once-in-a-Decade Buying Opportunities Right Now |",
+            "url": "https://www.fool.com/investing/2026/08/30/prediction-ai-unprecedented-once-decade-buy/",
+            "date": "2026-08-30",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:ddffdcda-b6bf-4957-9831-8ce95fb05e75",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/NDAQ/pressreleases/4310850/after-losing-more-than-1-trillion-in-market-cap-this-artificial-intelligence-ai-stock-will-become-the-most-valuable-business-in-the-world-according-to-elon-musk"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "After Losing More Than $1 Trillion in Market Cap, This Artificial Intelligence (AI) Stock Will Become the Most Valuable Business in the World, According to Elon",
+            "url": "https://www.fool.com/investing/2026/08/28/prediction-after-losing-more-than-1-trillion-in-ma/",
+            "date": "2026-08-28",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:df1c720e-e508-431f-b689-ce00bb818b2c",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/4942391/should-you-forget-palantir-and-buy-these-2-artificial-intelligence-ai-stocks-instead"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Should You Forget Palantir and Buy These 2 Artificial Intelligence (AI) Stocks Instead?",
+            "url": "https://www.fool.com/investing/2026/10/03/should-you-forget-palantir-and-buy-these-2-artific/",
+            "date": "2026-10-03",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:e0852335-0e8a-4068-a4bb-a4a26f7382e7",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/INTC/pressreleases/4923249/got-1000-2-growth-stocks-building-the-software-backbone-of-artificial-intelligence"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Got $1,000? 2 Growth Stocks Building the Software Backbone of Artificial Intelligence.",
+            "url": "https://www.fool.com/investing/2026/10/02/got-1000-2-growth-stocks-building-the-software-bac/",
+            "date": "2026-10-02",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:e34755ff-8183-4989-be56-3977cfda724f",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA-Q/pressreleases/4813439/jim-cramer-says-buy-2-artificial-intelligence-ai-stocks-up-875-and-1-400-since-2023"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Jim Cramer Says Buy 2 Artificial Intelligence (AI) Stocks Up 875% and 1,400% Since 2023",
+            "url": "https://www.fool.com/investing/2026/09/26/jim-cramer-says-buy-2-ai-stocks-up-1400-since-2023/",
+            "date": "2026-09-26",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:ed97ff2d-7945-4070-b1da-09873162c9c9",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/IREN/pressreleases/5465647/the-only-2-artificial-intelligence-ai-stocks-id-buy-with-1000-today-and-never-sell"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "The Only 2 Artificial Intelligence (AI) Stocks I'd Buy With $1,000 Today and Never Sell",
+            "url": "https://www.fool.com/investing/2026/10/06/the-only-2-artificial-intelligence-ai-stocks-id-bu/",
+            "date": "2026-10-06",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:f43ef28e-4940-4f12-a103-dec4ccd6a947",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/4433443/amazon-vs-microsoft-1-key-metric-identifies-the-superior-artificial-intelligence-ai-cloud-stock"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "Amazon vs. Microsoft: 1 Key Metric Identifies the Superior Artificial Intelligence (AI) Cloud Stock",
+            "url": "https://www.fool.com/investing/2026/09/03/amazon-vs-microsoft-1-key-metric-identifies-the-su/",
+            "date": "2026-09-03",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:f7c8d2f1-7c1f-4b00-8c1a-7fa5727d7837",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/ORCL/pressreleases/5238516/spacex-vs-nvidia-which-is-the-better-trillion-dollar-artificial-intelligence-ai-stock-for-2027"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "SpaceX vs. Nvidia: Which Is the Better Trillion-Dollar Artificial Intelligence (AI) Stock for 2027?",
+            "url": "https://www.fool.com/investing/2026/10/07/spacex-vs-nvidia-which-is-the-better-buy-for-2027/",
+            "date": "2026-10-07",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    },
+    {
+      "key": "event:f9c0c2c3-fd2b-40bb-9525-94c2909a3588",
+      "source_urls": [
+        "https://www.theglobeandmail.com/investing/markets/stocks/PLTR/pressreleases/4309564/2-premier-artificial-intelligence-ai-stocks-that-can-plunge-up-to-63-according-to-select-wall-street-analysts"
+      ],
+      "reason": "The archived Globe and Mail syndicated link returned HTTP 404 on 2026-11-22. The accessible first-party Motley Fool article has the matching headline, canonical URL and publication date; replace this citation and publisher, leaving story claims unchanged.",
+      "after": {
+        "sources": [
+          {
+            "publisher": "The Motley Fool",
+            "headline": "2 Premier Artificial Intelligence (AI) Stocks That Can Plunge Up to 63%, According to Select Wall Street Analysts",
+            "url": "https://www.fool.com/investing/2026/08/28/2-ai-stocks-that-can-plunge-up-to-63-wall-street/",
+            "date": "2026-08-28",
+            "language": "en"
+          }
+        ],
+        "source_count": 1,
+        "publisher": "The Motley Fool"
+      }
+    }
+  ]
+}
