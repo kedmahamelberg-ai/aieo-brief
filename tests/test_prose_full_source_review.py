@@ -12,6 +12,30 @@ from research_reading import verified_paper_reading
 from news_reading import PROSE_INSTRUCTIONS
 
 class ProseFullSourceReview(unittest.TestCase):
+    def test_reviewed_syndication_citations_use_exact_first_party_sources(self):
+        manifest=json.loads((ROOT/'data/editorial/source-citation-corrections-2026-11-22.json').read_text())
+        archive={row['key']:row for row in json.loads((ROOT/'data/archive/stories.json').read_text())['stories']}
+        self.assertEqual(len(manifest['news']),30)
+        self.assertEqual(len({row['key'] for row in manifest['news']}),30)
+        for entry in manifest['news']:
+            saved=archive[entry['key']]
+            original_urls=[source['url'] for source in saved['sources']]
+            replacement=entry['after']
+            new_urls=[source['url'] for source in replacement['sources']]
+            self.assertIn(original_urls,(entry['source_urls'],new_urls))
+            self.assertTrue({'sources','source_count','publisher'} <= set(replacement))
+            self.assertTrue(set(replacement) <= {'sources','source_count','publisher','date','display_date'})
+            self.assertEqual(replacement['publisher'],'The Motley Fool')
+            self.assertEqual(replacement['source_count'],1)
+            self.assertEqual(replacement['sources'][0]['date'],replacement.get('date',saved['date']))
+            self.assertTrue(new_urls[0].startswith('https://www.fool.com/'))
+            corrected=apply_corrections([copy.deepcopy(saved)])[0]
+            for field,value in replacement.items():self.assertEqual(corrected[field],value,(entry['key'],field))
+        changed=copy.deepcopy(archive[manifest['news'][0]['key']])
+        changed['sources'][0]['url']='https://example.org/different-article'
+        with self.assertRaisesRegex(ValueError,'source changed after citation review'):
+            apply_corrections([changed])
+
     def test_later_review_survives_an_earlier_recovery(self):
         audit=json.loads((ROOT/'data/editorial/prose-review-2026-11-17.json').read_text())
         latest=corrections()

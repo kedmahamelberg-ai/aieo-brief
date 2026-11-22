@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = 'data/editorial/approved-corrections-2026-10-26.json'
+CITATION_MANIFEST = 'data/editorial/source-citation-corrections-2026-11-22.json'
 SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  'data/editorial/reading-corrections-2026-11-09.json',
                  'data/editorial/research-reading-corrections-2026-11-11.json',
@@ -17,7 +18,8 @@ SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  'data/editorial/article-access-corrections-2026-11-15.json',
                  'data/editorial/w46-completion-corrections-2026-11-16.json',
                  'data/editorial/prose-review-2026-11-17.json',
-                 'data/editorial/source-citation-corrections-2026-11-21.json')
+                 'data/editorial/source-citation-corrections-2026-11-21.json',
+                 CITATION_MANIFEST)
 
 
 def reading_proof(key, root=ROOT):
@@ -76,8 +78,17 @@ def is_locked(key, root=ROOT):
 
 def apply_corrections(rows, root=ROOT):
     approved = corrections(root)
+    citation_path = Path(root) / CITATION_MANIFEST
+    citation_guards = ({row['key']: row for row in json.loads(citation_path.read_text()).get('news', [])}
+                       if citation_path.exists() else {})
     for row in rows:
         if row.get('key') in approved:
+            if row['key'] in citation_guards:
+                guard = citation_guards[row['key']]
+                current_urls = [source.get('url') for source in row.get('sources', [])]
+                replacement_urls = [source['url'] for source in guard['after']['sources']]
+                if current_urls not in (guard['source_urls'], replacement_urls):
+                    raise ValueError(row['key'] + ': source changed after citation review')
             # A validated later full reading supersedes a temporary access notice.
             if (row.get('key') in recoverable_keys(root) and row.get('has_editorial')
                     and row.get('access_recovery_validated') is True):
