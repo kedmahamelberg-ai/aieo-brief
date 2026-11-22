@@ -19,7 +19,9 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "A Motley Fool overview compares growth, risk, and pace of AI and quantum computing leaders.",
+        "what_happened": "The Motley Fool reports that BigBear.ai focuses on decision intelligence for government and defense but faces declining revenue, while IonQ grows rapidly in quantum hardware with large losses due to R&D and acquisitions."
       }
     },
     {
@@ -39,7 +41,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -59,7 +62,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -79,7 +83,13 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "headline": "AI ETF approach shows mixed gains and diversification limits, The Motley Fool notes",
+        "what_happened": "The Motley Fool examines the Roundhill Generative AI and Technology ETF, highlighting its concentrated 44-stock lineup, notable gains since 2023, and caveats about past performance and fees.",
+        "body_paragraphs": [
+          "The Motley Fool discusses how the Roundhill ETF bundles AI leaders like Nvidia, Alphabet, and Microsoft, offering a practical entry point for everyday investors who don’t want to pick winners and losers. It also cautions that past gains are not a guarantee of future results, and high fees can erode long-term returns, underscoring the need for diversified holdings.",
+          "The article notes the ETF’s short track record, its top-heavy portfolio, and reliance on a limited set of high-impact AI firms. It suggests using the fund as part of a broader investment strategy rather than the sole AI bet, recognizing that the AI boom does not guarantee universal gains and that suppliers and infrastructure firms play key but uneven roles in value creation."
+        ]
       }
     },
     {
@@ -99,7 +109,9 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "headline": "SpaceX Likely to Outpace Micron for AI Growth Over Next 5 Years, Motley Fool",
+        "what_happened": "The Motley Fool argues SpaceX is the better AI stock over the next five years due to growth in data center infrastructure, AI coding, and satellite internet, while Micron could be vulnerable if conventional memory prices fall."
       }
     },
     {
@@ -119,7 +131,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -139,7 +152,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "The Motley Fool reports investor Michael Burry is betting against AI stocks amid concerns about current infrastructure spending and whether future revenue will meet expectations, while AI demand continues to grow in the near term."
       }
     },
     {
@@ -159,7 +173,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "The Motley Fool notes that AMD is more diversified in AI chips than Intel and has been gaining data-center market share, while both companies show room to grow amid rising AI demand."
       }
     },
     {
@@ -179,7 +194,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -199,7 +215,13 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "The Motley Fool compared Broadcom’s ASIC approach to Nvidia’s GPU leadership, noting Broadcom’s AI chip focus and Nvidia’s pervasive data-center presence, alongside recent earnings signals from both firms.",
+        "body_paragraphs": [
+          "Broadcom and Nvidia sit at opposite ends of the AI chip spectrum: Broadcom builds specialized ASICs for narrow workloads, while Nvidia sells broad, flexible GPUs that power many data-center tasks. The Motley Fool notes Broadcom’s emphasis on AI-focused chips and collaborations with major hyperscalers, alongside Nvidia’s strong data-center results.",
+          "Nvidia’s breadth in GPU hardware contrasts with Broadcom’s narrower mission; the article points to different growth signals in their quarterly updates, with Broadcom highlighting a striking AI-chip division expansion and Nvidia showing robust data-center revenue growth, but neither story confirms a universal outcome for all users.",
+          "The piece cautions that a single metric cannot crown a winner for every buyer, and the future balance between broad GPUs and custom ASICs will depend on workloads, partnerships, and market demand, not just past earnings."
+        ]
       }
     },
     {
@@ -239,7 +261,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "The Motley Fool highlights Alphabet's multi-layer AI position,from TPUs to Google Cloud, Gemini, and Waymo,and notes analysts expect AI-driven earnings growth, including a forecast that Alphabet could reach a $5 trillion market cap by 2028, while cautioning that competition and execution risk remain."
       }
     },
     {
@@ -259,7 +282,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -279,7 +303,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -299,7 +324,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -319,7 +345,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -339,7 +366,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -379,7 +407,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -399,7 +428,12 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "The Motley Fool weighs Nvidia’s leadership against AMD and Cerebras, suggesting AMD and Cerebras could outperform Nvidia in the next decade due to inference growth and strategic partnerships, while noting Nvidia’s ongoing dominance in AI model training.",
+        "body_paragraphs": [
+          "The Motley Fool frames Nvidia as a strong base but points to AMD and Cerebras as potential outperformers, driven by inference opportunities and SRAM-based acceleration, not universally predicting winners for all AI use cases.",
+          "It notes partnerships (e.g., AMD’s deals related to OpenAI and Meta) and product strengths as factors shaping the next decade, while warning that Nvidia’s size may limit its relative gains compared with smaller rivals."
+        ]
       }
     },
     {
@@ -421,7 +455,12 @@
         "source_count": 1,
         "publisher": "The Motley Fool",
         "date": "2026-10-06",
-        "display_date": "6 Oct 2026"
+        "display_date": "6 Oct 2026",
+        "what_happened": "The Motley Fool reports Nvidia has higher, more rapidly growing quarterly revenue than Applied Materials across eight quarters. Applied Materials posted stable quarters with a recent uptick; Nvidia showed consistent quarter-over-quarter growth and a large buyback and supply agreement.",
+        "body_paragraphs": [
+          "Nvidia and Applied Materials stand at different points in the AI supply chain: Nvidia dominates end-market GPUs and related software, while Applied Materials supplies the tools and systems used to manufacture chips. The Motley Fool notes Nvidia’s revenue has grown more quickly and steadily, while Applied Materials has risen more slowly but recently edged upward. This contrast helps readers see that AI growth can fuel multiple business models within the ecosystem, not just a single winner.",
+          "Because this analysis focuses on a specific pair of firms in a defined period, it does not prove outcomes for all AI companies or markets. Investors should avoid generalizing these results to broader populations or times beyond the eight quarters reported, and should consider each company’s role and timing when assessing AI momentum."
+        ]
       }
     },
     {
@@ -461,7 +500,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     },
     {
@@ -481,7 +521,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "A Motley Fool piece highlights Broadcom and Applied Digital as alternative AI-related investments to Palantir, arguing hardware and data-center infrastructure roles could benefit from AI growth while noting varying risk profiles and that investment suitability depends on an investor’s risk tolerance."
       }
     },
     {
@@ -541,7 +582,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "A Motley Fool piece spotlighted two AI stock picks, Iren and Netlist, detailing pipelines, long-term deals, and evolving revenue paths while noting regulatory and market risks."
       }
     },
     {
@@ -561,7 +603,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "what_happened": "The Motley Fool notes that AWS growth is accelerating and AWS' operating margin was 39% in Q2, while Azure's growth remains steady but not accelerating as rapidly. The piece argues AWS's margin and growth trajectory could translate into higher profits than Microsoft when considering the cloud business."
       }
     },
     {
@@ -601,7 +644,8 @@
           }
         ],
         "source_count": 1,
-        "publisher": "The Motley Fool"
+        "publisher": "The Motley Fool",
+        "deck": "Reporting from The Motley Fool. Open the source for the article."
       }
     }
   ]
