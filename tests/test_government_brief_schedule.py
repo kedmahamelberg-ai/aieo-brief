@@ -7,7 +7,7 @@ import tempfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from datetime import datetime
-from government_brief_schedule import is_due, feed_has_changes
+from government_brief_schedule import is_due, import_due, feed_has_changes
 from government_briefs import fingerprint
 
 class GovernmentBriefScheduleTests(unittest.TestCase):
@@ -91,3 +91,14 @@ class GovernmentBriefScheduleTests(unittest.TestCase):
             output.write_text('')
             self.assertEqual(subprocess.run(command + ['--force'], env=env, capture_output=True).returncode, 0)
             self.assertIn('due=true', output.read_text())
+
+    def test_pre_due_wakeup_imports_late_monitor_item_without_model_judgment(self):
+        from unittest.mock import patch
+        state = {'policy': 'government-ai-brief-v4',
+                 'last_checked_at': '2026-11-21T15:20:00Z'}
+        now = datetime.fromisoformat('2026-11-22T10:35:00+00:00')
+        self.assertFalse(is_due(state, now))
+        with patch('government_brief_schedule.changed_live_feed', return_value=True):
+            self.assertTrue(import_due(state, now, check_feed=True))
+        with patch('government_brief_schedule.changed_live_feed', return_value=False):
+            self.assertFalse(import_due(state, now, check_feed=True))
