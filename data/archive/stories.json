@@ -796,14 +796,21 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
+        "subjects": [
+          "Nikol Pashinyan"
+        ],
+        "path": "assets/spotlight/pashinyan.jpg",
+        "width": 259,
+        "height": 327,
+        "alt": "Nikol Pashinyan in the Oval Office.",
+        "caption": "Archive photograph · Nikol Pashinyan in Washington, August 2025.",
+        "credit": "Daniel Torok / The White House",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Nikol_Pashinyan_%2808-08-2025%29_%28cropped%29.jpg",
+        "license": "Public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "30cfce7e6e4acec06a7c707a75d0ff090333b813127f8cd6599c81c6e371454b"
       },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-1c15a2ed-2dd1-59fa-8c8b-2e82fdd913e6/index.html"
       ],
@@ -1408,7 +1415,22 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "subjects": [
+          "Xi Jinping"
+        ],
+        "path": "assets/spotlight/xi.jpg",
+        "width": 166,
+        "height": 227,
+        "alt": "Xi Jinping at the G20 summit in Bali.",
+        "caption": "Archive photograph · Xi Jinping in Bali, November 2022.",
+        "credit": "The White House",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Xi_Jinping_2022_G20_Bali_Summit_%28cropped%29.jpg",
+        "license": "Public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "274bda4e511844bb099c2682a620787a5c9182d2fcf1cddf963a24f09ed46b7f"
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-5c45a692-4890-5e52-8c00-b95cb4d48baf/index.html"
       ],
@@ -1511,15 +1533,21 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
+        "subjects": [
+          "Lawrence Wong"
+        ],
+        "path": "assets/spotlight/wong.jpg",
+        "width": 675,
+        "height": 900,
+        "alt": "Lawrence Wong in Singapore.",
+        "caption": "Archive photograph · Lawrence Wong in Singapore, August 2026.",
+        "credit": "Isaac Castillo / Presidency of Ecuador",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lawrence_Wong%2C_August_2026_%28cropped%29.jpg",
+        "license": "Public domain",
         "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
+        "sha256": "dcd61ad41ecfc702f8115bf28a418c687a8d3750824778084c6b217c785eed79"
       },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-23af75f7-7071-5ea6-bcf5-4fb9cdff7853/index.html"
       ],
@@ -1570,7 +1598,18 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "8d54ae2c4700be09b5139f35f57d73c7e7aace3dde5dda7e67db4220dc0c96df",
+        "caption": "China · Archive image for country context."
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-154d359c-da37-5ddd-95a9-112a0d402380/index.html"
       ],
@@ -2086,15 +2125,21 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
+        "subjects": [
+          "Xi Jinping"
+        ],
+        "path": "assets/spotlight/xi.jpg",
+        "width": 166,
+        "height": 227,
+        "alt": "Xi Jinping at the G20 summit in Bali.",
+        "caption": "Archive photograph · Xi Jinping in Bali, November 2022.",
+        "credit": "The White House",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Xi_Jinping_2022_G20_Bali_Summit_%28cropped%29.jpg",
+        "license": "Public domain",
         "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
+        "sha256": "274bda4e511844bb099c2682a620787a5c9182d2fcf1cddf963a24f09ed46b7f"
       },
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-8cd5a029-3356-583e-8f5e-f0fd9b3564f2/index.html"
       ],
@@ -2145,7 +2190,23 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "subjects": [
+          "Xi Jinping",
+          "Donald Trump"
+        ],
+        "path": "assets/spotlight/xi-trump.jpg",
+        "width": 1200,
+        "height": 800,
+        "alt": "Donald Trump and Xi Jinping shaking hands in Busan.",
+        "caption": "Archive photograph · Donald Trump and Xi Jinping in Busan, October 2025.",
+        "credit": "Daniel Torok / The White House",
+        "source_url": "https://commons.wikimedia.org/wiki/File:President_Donald_Trump_greets_Chinese_President_Xi_Jinping_before_a_bilateral_meeting_at_the_Gimhae_International_Airport_terminal_%2854890669663%29.jpg",
+        "license": "Public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "c41000b55f931538decd3ca80a1bb6cee379b11adcd8dd9fcb715820fb124789"
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-685027b7-ca47-5054-90ca-b773eab69543/index.html"
       ],
@@ -2197,15 +2258,21 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
+        "subjects": [
+          "Xi Jinping"
+        ],
+        "path": "assets/spotlight/xi.jpg",
+        "width": 166,
+        "height": 227,
+        "alt": "Xi Jinping at the G20 summit in Bali.",
+        "caption": "Archive photograph · Xi Jinping in Bali, November 2022.",
+        "credit": "The White House",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Xi_Jinping_2022_G20_Bali_Summit_%28cropped%29.jpg",
+        "license": "Public domain",
         "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
+        "sha256": "274bda4e511844bb099c2682a620787a5c9182d2fcf1cddf963a24f09ed46b7f"
       },
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-282a7f7b-7717-57e7-832c-f46b469f7b89/index.html"
       ],
@@ -3194,15 +3261,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-50d70955-b5a6-548f-a63d-82f5d1b1a81f/index.html"
       ],
@@ -4274,7 +4333,18 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "path": "assets/spotlight/us.jpg",
+        "alt": "United States Capitol 10",
+        "credit": "Kurt Kaiser",
+        "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "market": "US",
+        "sha256": "f0660fade49b7b2903c1f75792bc94884067c5b13966aa0cc0f665d8ed588612",
+        "caption": "United States · Archive image for country context."
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-60188e28-2405-5cf0-9177-f54c964e00fc/index.html"
       ],
@@ -4325,16 +4395,8 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-2cd03941-2196-56f2-856f-98284eaa0423/index.html"
       ],
@@ -5247,7 +5309,22 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "subjects": [
+          "Robert Fico"
+        ],
+        "path": "assets/spotlight/fico-us.jpg",
+        "width": 1200,
+        "height": 790,
+        "alt": "Marco Rubio and Robert Fico shaking hands in Bratislava.",
+        "caption": "Archive photograph · Marco Rubio and Robert Fico in Bratislava, February 2026.",
+        "credit": "Freddie Everett / U.S. Department of State",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Secretary_Rubio_Meets_with_Slovak_Prime_Minister_%2855096167797%29.jpg",
+        "license": "Public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "bcdddd7f6347bb00f9253e4e72741434014cc3f815d1b9e64713ff3b3bf9bc58"
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-cc16d655-9bf2-590d-af1a-b3cc6f3e089b/index.html"
       ],
@@ -5971,16 +6048,8 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-2b37fb73-7a1a-5bfe-b123-416a1f5c863c/index.html"
       ],
@@ -6392,15 +6461,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-604a555c-9153-5a3c-8e09-942c79aba500/index.html"
       ],
@@ -7301,15 +7362,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-d2faf2d8-1bc1-53d9-855b-db926bc8c180/index.html"
       ],
@@ -8032,15 +8085,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-16061431-e8f3-5b9b-b203-fce962250dcf/index.html"
       ],
@@ -10525,15 +10570,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-7f6d10ad-6192-5e2d-97df-f61f3765a11f/index.html"
       ],
@@ -11959,15 +11996,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-99c10e95-5634-599a-8b62-0d12067e915b/index.html"
       ],
@@ -13370,16 +13399,8 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/us.jpg",
-        "alt": "United States Capitol 10",
-        "credit": "Kurt Kaiser",
-        "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
-        "license": "CC0",
-        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "market": "US",
-        "caption": "United States · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-4b63b566-b056-5a2d-b154-14fbf9b0402d/index.html"
       ],
@@ -15753,15 +15774,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-9a447ac4-304d-5047-bbf1-82f11d9f8a7c/index.html"
       ],
@@ -20272,15 +20285,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-52881d28-db83-5757-a4b3-453d59f924db/index.html"
       ],
@@ -21285,15 +21290,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-479d8658-6ef8-50a4-8f14-1a503c708706/index.html"
       ],
@@ -21447,6 +21444,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-a55a584b-0ea6-5ec6-a7e7-45e206e7525a/index.html"
       ],
@@ -22530,15 +22528,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-a73b50d8-3f43-5648-9127-947fe70adc3c/index.html"
       ],
@@ -23548,15 +23538,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-d2f42c8f-6270-5c90-9bf7-d9cc1b40330d/index.html"
       ],
@@ -23919,7 +23901,18 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": null,
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sha256": "c4b7f2a56be34c5d83981f94a341a488ea3cf2a70029989b958cf665c96d4503",
+        "caption": "Canada · Archive image for country context."
+      },
+      "show_feed_photo": true,
       "legacy_paths": [
         "story/government-0aa23e75-9259-571b-a90c-43fb84ffdcdb/index.html"
       ],
@@ -25141,15 +25134,7 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-27fd82cc-4fd4-5612-8d4b-b8c7e961b6fa/index.html"
       ],
@@ -26861,15 +26846,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-c5b83019-87fd-543f-97b5-0b6b3ade0e74/index.html"
       ],
@@ -29004,15 +28981,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-faae6620-b772-5318-b70c-22c3120f2c00/index.html"
       ],
@@ -30589,15 +30558,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-69d88861-23c8-546a-8737-bd7e29211c58/index.html"
       ],
@@ -31515,15 +31476,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-bd7023d5-e177-5901-91ef-f8e0da0d125a/index.html"
       ],
@@ -32883,15 +32836,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-85f821d4-ab77-549c-9424-ebf2496f71cf/index.html"
       ],
@@ -33909,16 +33854,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CA",
-        "path": "assets/spotlight/quebec.jpg",
-        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
-        "credit": "Wilfredor",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
-        "license": "CC0 1.0 Universal",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "caption": "Canada · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-dcd273f6-ee32-5970-a414-c3cbba7d4329/index.html"
       ],
@@ -35354,15 +35291,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-4b797501-d13b-52f1-813f-b11badc26882/index.html"
       ],
@@ -37538,15 +37468,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-2b014e6f-d783-5e27-b82e-62b64a1b8d54/index.html"
       ],
@@ -39810,15 +39732,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-51bc9cf6-c0bd-57fd-8681-a3d30a0e624b/index.html"
       ],
@@ -39870,6 +39784,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-7f903c40-482a-5577-a940-ec7f59a81e57/index.html"
       ],
@@ -41267,15 +41182,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-773d81ef-06d4-5404-baaf-56221fbc4000/index.html"
       ],
@@ -42401,15 +42308,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-615b5e8f-c13b-55f8-8c18-79bd2ce3d60b/index.html"
       ],
@@ -43688,16 +43587,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/us.jpg",
-        "alt": "United States Capitol 10",
-        "credit": "Kurt Kaiser",
-        "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
-        "license": "CC0",
-        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "market": "US",
-        "caption": "United States · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-3ba2633e-a146-5c36-9fb8-79a9fc7a7e15/index.html"
       ],
@@ -44655,15 +44546,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-8244fb14-61d8-5709-a071-2ae64329dbfc/index.html"
       ],
@@ -45739,16 +45623,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-ad2895d1-574e-5089-9148-1997be7b0381/index.html"
       ],
@@ -48327,15 +48203,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-d3bbfa63-4747-5d43-82a7-5aa32757852c/index.html"
       ],
@@ -51174,16 +51042,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CA",
-        "path": "assets/spotlight/quebec.jpg",
-        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
-        "credit": "Wilfredor",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
-        "license": "CC0 1.0 Universal",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "caption": "Canada · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-d2ce12e6-cf30-5ee9-accb-9b05686b028c/index.html"
       ],
@@ -51235,6 +51095,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-83d44112-b456-595e-b429-dff29ee37f90/index.html"
       ],
@@ -51286,6 +51147,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-52236643-a1b4-5539-8844-cb4f543b616c/index.html"
       ],
@@ -52635,16 +52497,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-34ba06ae-b7b9-5183-9955-19657eca0042/index.html"
       ],
@@ -52695,16 +52549,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CA",
-        "path": "assets/spotlight/quebec.jpg",
-        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
-        "credit": "Wilfredor",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
-        "license": "CC0 1.0 Universal",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "caption": "Canada · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-e59d6b43-5ee3-594c-a929-17ed342bb262/index.html"
       ],
@@ -54299,6 +54145,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-0b420bcc-e50d-56f3-b506-8b0d682b53a8/index.html"
       ],
@@ -54504,6 +54351,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-e5350927-c270-5ea7-bd42-0ce50bce427b/index.html"
       ],
@@ -54555,6 +54403,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-eab40164-2997-5dff-874e-10467a108114/index.html"
       ],
@@ -54606,6 +54455,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-a8d4b811-034f-5dfc-baec-0aa2aab149f2/index.html"
       ],
@@ -54656,16 +54506,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CA",
-        "path": "assets/spotlight/quebec.jpg",
-        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
-        "credit": "Wilfredor",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
-        "license": "CC0 1.0 Universal",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "caption": "Canada · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-510eb7fa-aaa4-52b6-aec4-7e3a8fea5a56/index.html"
       ],
@@ -54716,16 +54558,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-2cdb0541-2453-5c0c-ae58-4a4014d1e620/index.html"
       ],
@@ -55464,15 +55298,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-8befd993-bc3d-582b-a41e-455bbe04c173/index.html"
       ],
@@ -57528,16 +57354,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "caption": "China · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-1d07e6ca-f67b-5fd3-ae1a-b22613e68ccf/index.html"
       ],
@@ -59942,15 +59760,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-b91537f1-18bd-5410-a67f-dbfb2ed33c43/index.html"
       ],
@@ -60053,6 +59863,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-2fe73627-929c-55e8-a773-65becb2337b7/index.html"
       ],
@@ -61989,15 +61800,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-4756c6b9-3599-5743-9b60-2d1e09b92784/index.html"
       ],
@@ -63249,15 +63052,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-d3c9c20e-de87-53ea-9cd4-69831f468023/index.html"
       ],
@@ -64835,15 +64630,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-e9c18ea3-4184-5561-9fde-f0cced04003d/index.html"
       ],
@@ -66269,15 +66056,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-f9935e70-9145-5f06-b4bc-8ef25742f4e5/index.html"
       ],
@@ -67514,15 +67293,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-d91a11cd-da7d-5776-9085-990e5b3f2567/index.html"
       ],
@@ -68943,15 +68714,7 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-4b0c0dfc-7850-550e-a4ab-2c7732c97be7/index.html"
       ],
@@ -71404,16 +71167,8 @@
       "edition": "Governments · 2026-10",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CA",
-        "path": "assets/spotlight/quebec.jpg",
-        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
-        "credit": "Wilfredor",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
-        "license": "CC0 1.0 Universal",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "caption": "Canada · Archive image for country context; not this announcement."
-      },
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-d06ed021-3e5c-5636-b1af-fe202c5ab65f/index.html"
       ],
@@ -71465,6 +71220,7 @@
       "publication_language": "en",
       "english_status": "checked",
       "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-6cf4c96a-0752-5653-8ea5-296e10b068d1/index.html"
       ],
@@ -73286,15 +73042,7 @@
       "edition": "Governments · 2026-09",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/government-illustration.svg",
-        "alt": "Graphic illustration of a government announcement",
-        "caption": "Illustration; this does not depict the announcement.",
-        "credit": "AIEO Brief",
-        "license": "Original illustration",
-        "source_url": "",
-        "license_url": ""
-      },
+      "government_photo": null,
       "legacy_paths": [
         "story/government-08ec962a-0eb7-5bbb-b7b9-97dc0d92b9ad/index.html"
       ],
