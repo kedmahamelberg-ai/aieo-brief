@@ -751,6 +751,65 @@
       ]
     },
     {
+      "id": "58195c888455c8fbf5ad",
+      "country": "Armenia",
+      "country_code": "AM",
+      "url": "https://www.primeminister.am/en/press-release/item/2026/11/21/Nikol-Pashinyan-Digitec-2026/",
+      "date": "2026-11-21",
+      "headline": "Pashinyan promotes Armenia’s AI hub ambitions and energy independence through renewables, storage and regional grid links.",
+      "summary": "At DigiTec 2026, Prime Minister Pashinyan discussed plans to develop Armenia as an AI hub, attract investment, build infrastructure, and support AI adoption without replacing workers. He also outlined renewable-energy and regional electricity-link initiatives tied to the “Crossroads of Peace” and TRIPP programs.",
+      "body_paragraphs": [],
+      "input_fingerprint": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55",
+      "key": "event:1c15a2ed-2dd1-59fa-8c8b-2e82fdd913e6",
+      "kind": "news",
+      "section": "governments",
+      "slug": "pashinyan-promotes-armenias-ai-hub-ambitions-grid-links",
+      "path": "story/pashinyan-promotes-armenias-ai-hub-ambitions-grid-links/index.html",
+      "deck": "At DigiTec 2026, Prime Minister Pashinyan discussed plans to develop Armenia as an AI hub, attract investment, build infrastructure, and support AI adoption without replacing workers. He also outlined renewable-energy and regional electricity-link initiatives tied to the “Crossroads of Peace” and TRIPP programs.",
+      "publisher": "Government of Armenia",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Armenia",
+          "headline": "Official government announcement",
+          "url": "https://www.primeminister.am/en/press-release/item/2026/11/21/Nikol-Pashinyan-Digitec-2026/",
+          "date": "2026-11-21",
+          "language": ""
+        }
+      ],
+      "display_date": "21 Nov 2026",
+      "markets": [],
+      "market_label": "Armenia",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": {
+        "path": "assets/spotlight/government-illustration.svg",
+        "alt": "Graphic illustration of a government announcement",
+        "caption": "Illustration; this does not depict the announcement.",
+        "credit": "AIEO Brief",
+        "license": "Original illustration",
+        "source_url": "",
+        "license_url": ""
+      },
+      "legacy_paths": [
+        "story/government-1c15a2ed-2dd1-59fa-8c8b-2e82fdd913e6/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Meditations",
       "content_fingerprint": "cf00163ce6a3e4cb2142deb4e78f6b097e01f5c33f55e4ad4d07e42227f3afe2",
       "creator": "Marcus Aurelius",
@@ -24728,7 +24787,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-22T11:53:41.958756+00:00",
+      "affiliation_checked_at": "2026-11-22T11:57:08.578140+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
