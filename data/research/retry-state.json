@@ -1,67 +1,27 @@
 {
   "paper:3ffa2d84b6e20da2db465da1": {
-    "attempts": 29,
-    "last_attempt": "2026-11-21T19:19:12.652478+00:00"
+    "attempts": 30,
+    "last_attempt": "2026-11-22T19:42:45.052692+00:00"
   },
   "paper:beaf7b4a534a2a4135c21b97": {
-    "attempts": 32,
-    "last_attempt": "2026-11-21T19:19:14.698620+00:00"
+    "attempts": 33,
+    "last_attempt": "2026-11-22T19:42:47.104772+00:00"
   },
   "paper:be49d96abd2a3f5b615d1f08": {
     "attempts": 2,
     "last_attempt": "2026-11-03T19:50:31.264602+00:00"
   },
   "paper:7cba509615081b2bc0d1faf2": {
-    "attempts": 20,
-    "last_attempt": "2026-11-21T19:18:18.499427+00:00"
+    "attempts": 21,
+    "last_attempt": "2026-11-22T19:42:42.574204+00:00"
   },
   "paper:7de8e086b715a97caa852c62": {
-    "attempts": 20,
-    "last_attempt": "2026-11-21T19:18:31.877511+00:00"
+    "attempts": 21,
+    "last_attempt": "2026-11-22T19:42:43.618533+00:00"
   },
   "paper:565eb5d350d80d2a2f647f6b": {
-    "attempts": 20,
-    "last_attempt": "2026-11-21T19:18:52.212327+00:00"
-  },
-  "paper:29f3a0ced2bcb71a33818a12": {
-    "attempts": 1,
-    "last_attempt": "2026-11-16T22:04:31.696766+00:00",
-    "rejected_fingerprint": "09bf063fa5c0061c621f490caf99b80daa0dbe573f8390d6b04d89fcb291c6d1"
-  },
-  "paper:5b8bb748e2b9ee7c5f421566": {
-    "attempts": 1,
-    "last_attempt": "2026-11-17T20:57:09.850407+00:00",
-    "rejected_fingerprint": "bd1fe98eae3288e1df30c085a0c17fbe060d50add85bd9920faf28a8f0cf7047"
-  },
-  "paper:02d497c961583fb2e54965ab": {
-    "attempts": 1,
-    "last_attempt": "2026-11-18T20:33:56.865631+00:00",
-    "rejected_fingerprint": "ab8a031961e913754aeebf2044567c0c733a4459ece37433a064ee296e98cb9b"
-  },
-  "paper:2ec9f3d53f7f698e2002fce4": {
-    "attempts": 1,
-    "last_attempt": "2026-11-18T20:38:49.894472+00:00",
-    "rejected_fingerprint": "04a23d99c6b854420885beef1da5b44396c54271f94a9856786a82e9f3bf38c5"
-  },
-  "paper:3226688a7cfd72dd76c0bc8e": {
-    "attempts": 2,
-    "last_attempt": "2026-11-19T20:39:36.844592+00:00",
-    "rejected_fingerprint": "342c80ef5995c02ec190a3492fe67c5e94c6d10b210a5ea61cffb60dd255e738"
-  },
-  "paper:d563181435f730d121b7a863": {
-    "attempts": 1,
-    "last_attempt": "2026-11-18T20:48:21.110399+00:00",
-    "rejected_fingerprint": "4326590ba17a926d61281a8a811b5512f50c390d359fba72ba323e60286ea6ee"
-  },
-  "paper:1b64bfdae0f6cf12643d110f": {
-    "attempts": 1,
-    "last_attempt": "2026-11-19T20:42:56.082732+00:00",
-    "rejected_fingerprint": "ec140ae1691d5a3f7d02425f05ca32494d3395a6f2490e5dd5f799cb07e8ed5d"
-  },
-  "paper:f61d1c3ebc713a5dc043f130": {
-    "attempts": 1,
-    "last_attempt": "2026-11-19T20:56:14.364004+00:00",
-    "rejected_fingerprint": "bdcfeba663fbe134b5f482ddc534379e66123e960f0efaf4a8325d9f37aa6165"
+    "attempts": 21,
+    "last_attempt": "2026-11-22T19:42:44.328923+00:00"
   },
   "paper:046f56564a169c03dee074b2": {
     "attempts": 1,
