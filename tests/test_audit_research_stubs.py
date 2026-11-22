@@ -35,3 +35,10 @@ class ResearchStubAuditTests(unittest.TestCase):
     def test_inaccessible_full_paper_remains_withheld(self):
         paper = {'key': 'paper:one', 'arxiv_id': '2611.23221v1', 'has_editorial': False}
         self.assertEqual(source_ready_stubs([paper], lambda _: {'status': 'pdf_unavailable'}), [])
+
+    def test_publisher_paper_is_checked_when_no_arxiv_version_exists(self):
+        paper = {'key': 'paper:pnas', 'doi': '10.1073/pnas.2628851123',
+                 'source': 'pnas', 'has_editorial': False}
+        self.assertEqual(source_ready_stubs([paper], lambda _: {
+            'status': 'read', 'url': 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1/fullTextXML'}),
+            [{'key': 'paper:pnas', 'source': 'https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1/fullTextXML'}])
