@@ -7,10 +7,24 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from brief_contract import relationship_fingerprint
 from validate_public_site import validate_home_news_coverage
-from verify_live_news_coverage import verify
+from verify_live_news_coverage import verify, verify_story_page
 
 
 class LiveNewsCoverage(unittest.TestCase):
+    def test_live_data_cannot_claim_an_article_when_its_route_lacks_the_body(self):
+        story = {'event_id': 'one', 'headline': 'The central development',
+                 'what_happened': 'The checked account.', 'body_paragraphs': ['The supported detail.'],
+                 'sources': [{'url': 'https://publisher.example/story'}]}
+        html = ('<h1>The central development</h1><p>The checked account.</p>'
+                '<p>The supported detail.</p><a href="https://publisher.example/story">Source</a>')
+        verify_story_page(story, html)
+        with self.assertRaisesRegex(ValueError, 'missing its saved body_paragraphs'):
+            verify_story_page(story, html.replace('<p>The supported detail.</p>', ''))
+        with self.assertRaisesRegex(ValueError, 'missing its saved source URL'):
+            verify_story_page(story, html.replace('https://publisher.example/story', 'https://wrong.example/'))
+        with self.assertRaisesRegex(ValueError, 'redirects instead'):
+            verify_story_page(story, '<meta http-equiv="refresh" content="0;url=https://publisher.example/story">'+html)
+
     def setUp(self):
         self.release = {'release_id': '2026-W47', 'period_start': '2026-11-16',
                         'period_end': '2026-11-22', 'content_sha256': 'source-hash',
