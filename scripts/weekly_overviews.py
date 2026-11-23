@@ -464,6 +464,20 @@ def prepare_weekly_overviews(
     return current, copy.deepcopy(ordered)
 
 
+def published_overviews(overviews: list[dict]) -> list[dict]:
+    """Keep public listings on published editions while the next week is prepared.
+
+    Older, pre-editorial editions remain part of the archive. Editorial editions
+    enter the listing only after both sections have the owner's approval.
+    This view never changes the saved draft or the approval records.
+    """
+    return [overview for overview in overviews
+            if not overview.get('editorial_version') or all(
+                overview.get(kind, {}).get('status') == 'ready' and
+                overview[kind].get('human_approved') is True
+                for kind in ('markets', 'research'))]
+
+
 def engagement_items(overviews: list[dict]) -> list[dict]:
     """Give each published weekly reading a stable community identity."""
     items = []

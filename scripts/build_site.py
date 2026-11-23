@@ -19,7 +19,7 @@ from news_notifications import public_settings
 from daily_selection import rotation_plan, reading_day
 from culture_library import publication as culture_publication, discoveries as culture_discoveries, summary as culture_summary
 from english_publication import EnglishPublication, content_version, LAYOUT
-from weekly_overviews import prepare_weekly_overviews, engagement_items, social_queue
+from weekly_overviews import prepare_weekly_overviews, published_overviews, engagement_items, social_queue
 from weekly_editorials import validate_public_weekly_sources
 from short_links import short_link_routes
 from article_urls import assign_article_urls
@@ -416,6 +416,8 @@ def main():
     for item in allcards:
         if item.get('image_path') and not (ROOT/item['image_path']).is_file():item['image_path']=''
     weekly_overview,overview_archive=prepare_weekly_overviews(news,research,release,ROOT,write_archive=(args.update_archive and not preview),allow_model=(not preview and os.environ.get('BRIEF_WRITE_WEEKLY_OVERVIEWS')=='true'),source_news=weekly_source_news,source_research=weekly_source_research)
+    published_archive=published_overviews(overview_archive)
+    featured_overview=published_archive[0] if published_archive else None
     weekly_items=engagement_items(overview_archive)
     weekly_items_by_key={item['key']:item for item in weekly_items}
     validate_public_weekly_sources(weekly_overview,weekly_source_news,weekly_source_research,allcards,allcards,root=ROOT)
@@ -453,7 +455,7 @@ def main():
     culture_featured=sorted(defaults['culture_latest'],key=lambda x:({'illustration':0,'poetry':1,'music':2,'text':3,'quote':4}.get(x['culture_type'],5)))
     defaults.update(culture_featured=culture_featured, research_featured=sorted(research,key=lambda x:not x.get('has_editorial'))[:6])
     defaults.update(culture_discoveries=[english.apply(x) for x in culture_discoveries(root=ROOT)],culture_library=culture_summary(ROOT))
-    defaults.update(weekly_overview=weekly_overview,overview_archive=overview_archive)
+    defaults.update(weekly_overview=featured_overview,overview_archive=published_archive)
     photos=photo_registry(ROOT)
     def render(path,template,**ctx):
         article=ctx.get('story')
@@ -493,7 +495,8 @@ def main():
     render('notifications/index.html','notifications.html',page='notifications')
     render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
-    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',items=weekly_items,weekly_items_by_key=weekly_items_by_key,page_image=weekly_overview['markets']['image_path'],page_image_alt=weekly_overview['markets']['image_alt'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research. Every overview links to its original reporting and papers.','about':{'@type':'Thing','name':'AI news and research'}})
+    archive_image=featured_overview or weekly_overview
+    render('week-from-above/index.html','weekly-archive.html',page='weekly-archive',items=weekly_items,weekly_items_by_key=weekly_items_by_key,page_image=archive_image['markets']['image_path'],page_image_alt=archive_image['markets']['image_alt'],structured_data={'@context':'https://schema.org','@type':'CollectionPage','name':'Weekly AI overviews','description':'One-minute weekly views across five AI discovery markets and research. Every overview links to its original reporting and papers.','about':{'@type':'Thing','name':'AI news and research'}})
     # Every URL exposed by the weekly archive and sitemap must be materialized.
     # The current edition and all earlier editions are rendered from the
     # versioned overview history, so a new week can never break the prior week.

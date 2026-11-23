@@ -9,13 +9,53 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 
-from weekly_overviews import _apply_visual_correction, prepare_weekly_overviews, social_queue
+from weekly_overviews import _apply_visual_correction, prepare_weekly_overviews, published_overviews, social_queue
 from research_affiliations import clean_institutions, enrich_affiliations
 from search_metadata import weekly_overview_with_canonical_links
 import build_site
 
 
 class WeeklyOverviewTests(unittest.TestCase):
+    def test_new_unapproved_week_keeps_latest_approved_edition_in_public_listings(self):
+        root = Path(__file__).resolve().parents[1]
+        approval = json.loads((root/'data/weekly-overviews/approved/2026-W46.json').read_text())
+        saved = json.loads((root/'data/weekly-overviews/history.json').read_text())
+        old = next(x for x in saved['overviews'] if x['release_id'] == '2026-W46')
+        approved = {**old, **{kind: approval[kind] for kind in ('markets', 'research')}}
+        release = {'release_id': '2026-W47', 'period_start': '2026-11-16', 'period_end': '2026-11-22'}
+        with tempfile.TemporaryDirectory() as folder:
+            history_path = Path(folder)/'data/weekly-overviews/history.json'
+            history_path.parent.mkdir(parents=True)
+            history_path.write_text(json.dumps({'schema_version': 'aieo_weekly_overview_archive_v1',
+                                                'overviews': [approved]}))
+            with patch('weekly_editorials.create_section', side_effect=AssertionError('model called')):
+                current, history = prepare_weekly_overviews([], [], release, Path(folder), write_archive=True)
+            before = copy.deepcopy(history)
+            visible = published_overviews(history)
+            self.assertEqual(current['editorial_status'], 'pending')
+            self.assertEqual([x['release_id'] for x in visible], ['2026-W46'])
+            for kind in ('markets', 'research'):
+                self.assertEqual(visible[0][kind], approval[kind])
+            self.assertEqual(history, before)
+            self.assertEqual(json.loads(history_path.read_text())['overviews'][0]['release_id'], '2026-W47')
+
+    def test_public_listings_require_both_approvals_and_reveal_the_new_approved_week(self):
+        root = Path(__file__).resolve().parents[1]
+        history = json.loads((root/'data/weekly-overviews/history.json').read_text())['overviews']
+        old = next(x for x in history if x['release_id'] == '2026-W46')
+        new = copy.deepcopy(old)
+        new.update(release_id='2026-W47', period_start='2026-11-16', period_end='2026-11-22')
+        for kind in ('markets', 'research'):
+            for change in ({'status': 'pending'}, {'human_approved': False}, {'human_approved': None}):
+                with self.subTest(kind=kind, change=change):
+                    partial = copy.deepcopy(new)
+                    partial[kind].update(change)
+                    self.assertEqual(published_overviews([partial, old]), [old])
+        self.assertEqual(published_overviews([new, old]), [new, old])
+        legacy = next(x for x in history if x['release_id'] == '2026-W40')
+        self.assertEqual(published_overviews([old, legacy]), [old, legacy])
+        self.assertEqual(published_overviews([]), [])
+
     def test_visual_analogy_accepts_historical_photo_and_preserves_reviewed_text(self):
         root = Path(__file__).resolve().parents[1]
         correction = json.loads((root / 'data/weekly-overviews/visual-corrections/2026-W45.json').read_text())
