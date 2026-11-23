@@ -479,7 +479,7 @@ def main():
     recent_news=recent_completed_news(news,allcards)
     feed_news=list(news)+recent_news
     featured_news=completed_news(news)
-    market_counts={code:sum(code in c['markets'] for c in feed_news) for code,_ in MARKETS}
+    market_counts={code:sum(code in c['markets'] for c in news) for code,_ in MARKETS}
     rotation=rotation_plan(feed_news, release['release_id'], release['period_end'])
     featured_rotation=rotation_plan(featured_news, release['release_id'], release['period_end'])
     for layout, featured_layout in zip(rotation['layouts'],featured_rotation['layouts']):
