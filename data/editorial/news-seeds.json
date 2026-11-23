@@ -1640,14 +1640,14 @@
       "reviewed_at": "2026-11-23",
       "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
       "draft": {
-        "editorial_headline": "Jiangsu lists 13 newly registered AI services and reminds apps about labels",
-        "editorial_deck": "The notice gives updated registration totals and tells apps to identify the AI services they use.",
+        "editorial_headline": "Jiangsu lists 13 new AI registrations and reminds content-generating apps about labels",
+        "editorial_deck": "Online apps or features that generate AI content must identify their registered service, the notice says.",
         "what_happened": "Jiangsu's internet regulator announced 13 newly registered artificial intelligence (AI) services that generate content. The province's total reached 125 as of 18 November 2026.",
-        "why_it_matters": "Apps using these services must display the service name and registration number. The notice also reminds them to label AI-generated or synthetic content.",
-        "for_humans": "Apps using these AI services must display service names and registration numbers, and label AI-generated content.",
+        "why_it_matters": "Online apps or features that generate content with AI must display the registered service name and number. They must also add labels identifying AI-generated content.",
+        "for_humans": "Online apps and features that generate AI content must show the registered service name and number, plus content labels.",
         "for_ai": "",
         "body_paragraphs": [
-          "The service information must appear prominently or on the product details page. The notice links to the list of newly registered services and gives a phone number for organisations seeking registration advice."
+          "For these online apps and features, the service information must appear prominently or on the product details page. The notice links to the newly registered services and gives a phone number for registration advice."
         ],
         "claim_status": "reporting",
         "limitation": "",
