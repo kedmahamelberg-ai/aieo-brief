@@ -29,12 +29,12 @@
             "name": "China",
             "count": 24,
             "topic": "Work And Skills",
-            "sentence": "China: work and skills stood out in the selected coverage; one example was “BBC: Anthropic’s planned IPO could test AI’s market value, but may….”",
+            "sentence": "China: work and skills stood out in the selected coverage; one example was “Observer reports pastor’s argument that Silicon Valley’s AI soul search misreads….”",
             "story": {
-              "headline": "BBC: Anthropic’s planned IPO could test AI’s market value, but may not settle bubble fears",
-              "path": "story/can-anthropics-record-breaking-ipo-prevent-ai-bubble-bursting/index.html",
-              "publisher": "BBC",
-              "source_url": "https://www.bbc.com/zhongwen/articles/cw7v2zlle4v4o/simp"
+              "headline": "Observer reports pastor’s argument that Silicon Valley’s AI soul search misreads human life",
+              "path": "story/how-does-anthropic-researchs-ai-repent-about-you/index.html",
+              "publisher": "Observer Network",
+              "source_url": "https://www.guancha.cn/GuoJi%C2%B7ZhanLue/2026_11_22_909480.shtml"
             }
           },
           {
@@ -42,12 +42,12 @@
             "name": "United States",
             "count": 18,
             "topic": "Work And Skills",
-            "sentence": "United States: the discovery stream centred most often on work and skills, including “AWS says Quick adds AI tools for Meta ads, with approval….”",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “PAHO says adaptive AI could support health decisions, but warns of….”",
             "story": {
-              "headline": "AWS says Quick adds AI tools for Meta ads, with approval required before account changes",
-              "path": "story/aws-quick-adds-ai-tools-meta-account-changes/index.html",
-              "publisher": "Amazon Web Services",
-              "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick"
+              "headline": "PAHO says adaptive AI could support health decisions, but warns of risks from biased data",
+              "path": "story/artificial-intelligence-health-new-paho-publication-reinforcement-learning/index.html",
+              "publisher": "Pan American Health Organization (PAHO)",
+              "source_url": "https://www.paho.org/en/news/20-11-2026-artificial-intelligence-health-new-paho-publication-examines-opportunities-and"
             }
           },
           {
@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 15,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Anthropic shares fall about 10% as tech stocks slide, despite its….”",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Yahoo News UK: Fincher’s past AI use complicates claims about alleged….”",
             "story": {
-              "headline": "Anthropic shares fall about 10% as tech stocks slide, despite its record-setting public offering",
-              "path": "story/anthropic-stock-plummets-wall-street-debut-fears-rise/index.html",
-              "publisher": "The Independent",
-              "source_url": "https://www.independent.co.uk/tech/anthropic-wall-street-stocks-slip-ai-ipo-b3088959.html"
+              "headline": "Yahoo News UK: Fincher’s past AI use complicates claims about alleged new film imagery",
+              "path": "story/if-theres-generative-ai-mis-adventures-cliff-finchers-used/index.html",
+              "publisher": "Yahoo News UK",
+              "source_url": "https://uk.news.yahoo.com/generative-ai-mis-adventures-cliff-234500619.html"
             }
           },
           {
@@ -81,12 +81,12 @@
             "name": "Canada",
             "count": 33,
             "topic": "Business And Investment",
-            "sentence": "Canada: the discovery stream centred most often on business and investment, including “Mila team says its AI review tool matched human decisions in….”",
+            "sentence": "Canada: the discovery stream centred most often on business and investment, including “Shanhui Zhang says Shenzhen shows China quickly turning technology innovations into….”",
             "story": {
-              "headline": "Mila team says its AI review tool matched human decisions in 82% of one conference-paper test",
-              "path": "story/mila-team-ai-review-tool-matched-conference-paper-test/index.html",
-              "publisher": "Le Devoir",
-              "source_url": "https://www.ledevoir.com/actualites/science/1026719/ia-fait-bondir-nombre-publications-scientifiques-soumises"
+              "headline": "Shanhui Zhang says Shenzhen shows China quickly turning technology innovations into market-ready products",
+              "path": "story/apec-2026-shenzhen-chinese-ai-showcase/index.html",
+              "publisher": "Mon Carnet – de l'actualité numérique",
+              "source_url": "https://moncarnet.com/2026/11/21/apec-2026-shenzhen-vitrine-de-lintelligence-artificielle-chinoise"
             }
           }
         ],
@@ -96,7 +96,7 @@
         "prose": [],
         "papers": [],
         "pending_reason": "generation_pending",
-        "input_hash": "f41aa53ef5326eb96ef130f549b984e252bd50bc2cd613423a543acd00998929",
+        "input_hash": "d3159e30d06de06deea48ee0888406db593fba40a40febc77efd068a7c0bd466",
         "attempts": 0
       },
       "research": {
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "b05295b5acf2f60df3250114fafa214d159ad7de7aafe236793aecc3d0007c37"
+      "content_sha256": "33983fbe17a173ac007d888712caa051d3205808909765d14549a7707fec8297"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",

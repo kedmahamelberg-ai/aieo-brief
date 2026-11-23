@@ -7543,6 +7543,44 @@
       },
       "output_sha256": "36bc5a60bb951efced64cf4f8e6342c8be188c7cc56743bd696dacd022907944",
       "policy": "brief-english-display-v1"
+    },
+    "d95c6d47d5893646b14bf870360b5e77cc111d18049ae2390ebc35f673dc3e1a": {
+      "english": {
+        "0": "MIT Technology Review",
+        "1": "MIT Technology Review"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0b711b7b9d98fa5dcd47c5b7f73704e08f3fcd2c8827e1443902e80442b22b3f",
+      "policy": "brief-english-display-v1"
+    },
+    "553f060620b30024d47eef96f934650be69b9cde6e77c659068c3e562d0d4e0b": {
+      "english": {
+        "0": "East China Normal University",
+        "1": "East China Normal University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f2a97586f0f06288b8fbad277fcf046e5ee2172672b670dd71dbf8e4ef83a93d",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
