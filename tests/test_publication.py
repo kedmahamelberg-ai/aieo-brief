@@ -7,7 +7,7 @@ from build_site import cards,version_valid,clean_body_paragraphs,completed_news
 from generate_editorial_stories import source_payload,candidates
 from source_evidence_quality import evidence_chunks
 from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
-from validate_public_site import inspect_json
+from validate_public_site import inspect_json,validate_home_news_coverage
 class Publication(unittest.TestCase):
  def test_home_reading_feed_excludes_unfinished_source_records(self):
   rows=[{'key':'ready','has_editorial':True,'what_happened':'Checked account','body_paragraphs':['Source detail']},
@@ -72,6 +72,16 @@ class Publication(unittest.TestCase):
   seed=copy.deepcopy(self.seed);first=next(iter(seed));seed[first]['evidence_basis_summary']['axes_sha256']='old'
   records=cards(self.release,self.sym,{}, {},seed,True);row=next(x for x in records if x['event_id']==first)
   self.assertFalse(row['has_editorial']);self.assertEqual(row['headline'],row['original_headline'])
+  self.assertEqual((row['for_humans'],row['for_ai'],row['reading_minutes']),('', '', 0))
+  self.assertIn('No checked Brief article',row['deck'])
+ def test_source_only_news_card_must_link_to_original_publisher(self):
+  payload={'stories':[{'event_id':'e1','key':'event:e1','has_editorial':False,
+                       'sources':[{'url':'https://publisher.example/article'}]}],
+           'complete_content':{'eligible_event_ids':['e1']}}
+  article='<article data-story-card data-kind="news" data-key="event:e1" data-editorial-status="source-only"><h2><a href="https://publisher.example/article">Headline</a></h2></article>'
+  self.assertEqual(validate_home_news_coverage(payload,'<div id="story-feed">'+article+'</div>')['source_linked_news'],1)
+  with self.assertRaisesRegex(ValueError,'original source'):
+   validate_home_news_coverage(payload,'<div id="story-feed">'+article.replace('https://publisher.example/article','story/unfinished/')+'</div>')
  def test_every_source_and_discovery_market_survives(self):
   records=cards(self.release,self.sym,{}, {},self.seed,True)
   self.assertEqual(sum(x['source_count'] for x in records),111)
