@@ -58,6 +58,26 @@ def corrections(root=ROOT):
     return rows
 
 
+def reviewed_source_url_sets(root=ROOT):
+    """Source identities recorded with approved news corrections, by event key."""
+    identities = {}
+    for relative in SOURCE_AUDITS:
+        path = Path(root) / relative
+        if not path.exists():
+            continue
+        for record in json.loads(path.read_text()).get('news', []):
+            key = record.get('key')
+            if not key:
+                continue
+            for sources in (record.get('source_urls') or [],
+                            (record.get('after') or {}).get('sources') or []):
+                urls = tuple(source.get('url') if isinstance(source, dict) else source
+                             for source in sources)
+                if urls and all(urls):
+                    identities.setdefault(key, set()).add(urls)
+    return identities
+
+
 def recoverable_keys(root=ROOT):
     path = Path(root) / 'data/editorial/article-access-corrections-2026-11-15.json'
     if not path.exists(): return set()

@@ -3,7 +3,7 @@ from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from brief_contract import validate_pair,load_config,digest,PROMPT_VERSION
-from build_site import cards,version_valid,clean_body_paragraphs,completed_news
+from build_site import cards,version_valid,clean_body_paragraphs,completed_news,apply_current_source_corrections
 from generate_editorial_stories import source_payload,candidates
 from source_evidence_quality import evidence_chunks
 from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
@@ -82,6 +82,20 @@ class Publication(unittest.TestCase):
   self.assertEqual(validate_home_news_coverage(payload,'<div id="story-feed">'+article+'</div>')['source_linked_news'],1)
   with self.assertRaisesRegex(ValueError,'original source'):
    validate_home_news_coverage(payload,'<div id="story-feed">'+article.replace('https://publisher.example/article','story/unfinished/')+'</div>')
+ def test_old_review_cannot_promote_new_source_only_record(self):
+  row={'key':'event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294',
+       'kind':'news','edition':'2026-W47','has_editorial':False,
+       'sources':[{'url':'https://hitwest.ouest-france.fr/new-source'}],
+       'what_happened':'','body_paragraphs':[]}
+  self.assertEqual(apply_current_source_corrections([copy.deepcopy(row)],'2026-W47')[0],row)
+ def test_old_review_cannot_rewrite_new_editorial_with_changed_source(self):
+  row={'key':'event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294',
+       'kind':'news','edition':'2026-W47','has_editorial':True,
+       'sources':[{'url':'https://hitwest.ouest-france.fr/new-source'}],
+       'what_happened':'A new source-checked account',
+       'body_paragraphs':['New reading of this source.'],
+       'for_humans':'New source-supported effect.'}
+  self.assertEqual(apply_current_source_corrections([copy.deepcopy(row)],'2026-W47')[0],row)
  def test_every_source_and_discovery_market_survives(self):
   records=cards(self.release,self.sym,{}, {},self.seed,True)
   self.assertEqual(sum(x['source_count'] for x in records),111)

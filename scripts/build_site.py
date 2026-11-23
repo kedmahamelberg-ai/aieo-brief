@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
-from editorial_corrections import apply_corrections, reading_proof
+from editorial_corrections import apply_corrections, reading_proof, reviewed_source_url_sets
 from article_access_audit import audit as audit_article_access
 from news_reading import prepare_display as prepare_news_display, EFFECT_LABELS
 from claim_grounding import VERSION as GROUNDING_VERSION
@@ -220,6 +220,30 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
             output[-1]['box_effects']=copy.deepcopy(effects)
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
 
+
+def apply_current_source_corrections(rows, release_id, root=ROOT):
+    """Old reviewed prose cannot promote a source-only record in a new release.
+
+    A carried event ID may have different publisher evidence this week. Its
+    current editorial must pass version_valid before any approved article prose
+    can be applied. Historical saved articles retain their approved edits.
+    """
+    reviewed_sources = reviewed_source_url_sets(root)
+    eligible = []
+    for item in rows:
+        if item.get('kind') == 'news' and item.get('edition') == release_id:
+            if not item.get('has_editorial'):
+                continue
+            current_urls = tuple(source.get('url') for source in item.get('sources', []))
+            if (item.get('key') in reviewed_sources
+                    and current_urls not in reviewed_sources[item['key']]):
+                print('::warning::Skipped earlier correction for '
+                      + item['key'] + ': current release source URLs changed.')
+                continue
+        eligible.append(item)
+    apply_corrections(eligible, root)
+    return rows
+
 def papers(sanitize=True):
     p=ROOT/'data/research/public.json'
     if not p.exists():return []
@@ -352,7 +376,7 @@ def main():
     proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
     legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
     news=cards(release,sym,registry,readiness,editorial,preview,legacy_proofs);research=papers();weekly_source_research=papers(sanitize=False);culture=culture_items()
-    apply_corrections(news,ROOT);apply_corrections(research,ROOT);apply_corrections(weekly_source_research,ROOT)
+    apply_current_source_corrections(news,release['release_id'],ROOT);apply_corrections(research,ROOT);apply_corrections(weekly_source_research,ROOT)
     weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(weekly_source_research)
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
@@ -384,7 +408,7 @@ def main():
     for row in research:
         allitems[row['key']]=row
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
-    apply_corrections(allcards,ROOT)
+    apply_current_source_corrections(allcards,release['release_id'],ROOT)
     prepare_news_display(allcards)
     allcards=[withhold_abstract_summary(x) if x.get('kind')=='research' else x for x in allcards]
     raw_archive=copy.deepcopy(allcards)
