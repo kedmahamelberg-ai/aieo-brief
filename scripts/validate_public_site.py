@@ -56,7 +56,7 @@ class Page(HTMLParser):
 
 class NewsFeed(HTMLParser):
  def __init__(self):
-  super().__init__(convert_charrefs=True);self.depth=0;self.found=False;self.keys=[]
+  super().__init__(convert_charrefs=True);self.depth=0;self.found=False;self.keys=[];self.cards=[];self.current=None;self.in_title=False
  def handle_starttag(self,tag,attrs):
   values=dict(attrs)
   if tag=='div' and values.get('id')=='story-feed':
@@ -66,7 +66,13 @@ class NewsFeed(HTMLParser):
    if tag=='div':self.depth+=1
    if tag=='article' and 'data-story-card' in values and values.get('data-kind')=='news':
     self.keys.append(values.get('data-key'))
+    self.current={'key':values.get('data-key'),'status':values.get('data-editorial-status'),'href':''}
+   if tag=='h2' and self.current:self.in_title=True
+   if tag=='a' and self.current and self.in_title and not self.current['href']:
+    self.current['href']=values.get('href','')
  def handle_endtag(self,tag):
+  if tag=='h2':self.in_title=False
+  if tag=='article' and self.current:self.cards.append(self.current);self.current=None
   if tag=='div' and self.depth:self.depth-=1
 
 def validate_home_news_coverage(payload,html):
@@ -86,6 +92,14 @@ def validate_home_news_coverage(payload,html):
   missing=sorted(expected-set(actual));extra=sorted(set(actual)-expected)
   raise ValueError(f'Homepage has {len(actual)} news cards for {len(expected)} Brief records; '
                    f'missing={missing[:5]}, extra={extra[:5]}')
+ by_key={item['key']:item for item in stories}
+ for card in parser.cards:
+  item=by_key[card['key']]
+  if item.get('has_editorial'):
+   if card['status']!='complete' or card['href'].startswith(('http://','https://')):
+    raise ValueError('Completed Brief article is not linked as an article: '+card['key'])
+  elif card['status']!='source-only' or card['href']!=item['sources'][0]['url']:
+   raise ValueError('Unfinished Brief record must link to its original source: '+card['key'])
  return {'source_linked_news':len(expected),'rendered_news_cards':len(actual),
          'full_brief_articles':sum(bool(item.get('has_editorial')) for item in stories)}
 
@@ -168,9 +182,17 @@ def validate(site):
   if any(counts[k]!=v for k,v in payload['directional_counts'][axis].items()):raise ValueError('Wrong '+axis+' totals')
  for item in news:
   validate_news_boxes(item)
+  if not item.get('has_editorial') and (item.get('for_humans') or item.get('for_ai') or
+      item.get('what_happened') or item.get('why_it_matters') or item.get('body_paragraphs') or
+      item.get('reading_minutes')):
+   raise ValueError('Unfinished news source contains Brief article prose: '+item.get('key','unknown'))
  for item in news+papers+culture+governments:
   if not item['sources'] or len(item['sources'])!=item['source_count']:raise ValueError('Missing or inconsistent source list')
   if not (site/item['path']).is_file():raise ValueError('Story page missing')
+  if item['kind']=='news' and not item.get('has_editorial'):
+   source_page=(site/item['path']).read_text()
+   if 'class="axis-grid"' in source_page or 'name="robots" content="noindex,' not in source_page:
+    raise ValueError('Unfinished news source was published as an article: '+item['key'])
   if item['kind']=='research' and item['has_editorial']:validate_research_reading(item)
   if item['kind']=='culture':
    if not item.get('creator') or not item.get('creator_origin') or not item.get('rights',{}).get('url') or not item.get('work_date'):raise ValueError('Culture attribution missing')

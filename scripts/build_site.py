@@ -194,11 +194,13 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
             basis='AIEO summary'
         else:
             headline=original;body=[];happened='';why=''
-            deck=text(event.get('event_summary'))
-            if not deck or not axes.get('evidence_complete'):
-                deck='Reporting from '+sources[0]['publisher']+'. Open the source for the article.'
+            deck='Original reporting at '+sources[0]['publisher']+'. No checked Brief article is available yet.'
             basis='Publisher headline'
-        human=public_evidence(axes['human'].get('evidence'));ai=public_evidence(axes['ai'].get('evidence'))
+        # Observatory source readings are not a substitute for a checked Brief
+        # article. Source-only records must never publish their prose as impact
+        # boxes while the editorial review is pending or rejected.
+        human=public_evidence(axes['human'].get('evidence')) if v else ''
+        ai=public_evidence(axes['ai'].get('evidence')) if v else ''
         if v:
             if (v.get('evidence_basis_summary') or {}).get('grounding_version')==GROUNDING_VERSION:
                 # Empty grounded text is an intentional reviewed result; old axis prose must not replace it.
@@ -208,12 +210,12 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
         # A reviewed editorial can intentionally withhold an unsupported axis
         # reading. Do not publish the upstream directional claim without text
         # that explains it to readers.
-        human_direction = axes['human']['direction'] if human or axes['human']['direction'] in ('none', 'unresolved') else 'unresolved'
-        ai_direction = axes['ai']['direction'] if ai or axes['ai']['direction'] in ('none', 'unresolved') else 'unresolved'
-        human_label=DIRECTION_LABELS[human_direction] if human else DIRECTION_LABELS['unresolved']
-        ai_label=DIRECTION_LABELS[ai_direction] if ai else DIRECTION_LABELS['unresolved']
-        count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220))
-        output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':human_direction,'ai_direction':ai_direction,'human_label':human_label,'ai_label':ai_label,'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')),'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')),'has_editorial':bool(v),'access_recovery_validated':((v or {}).get('evidence_basis_summary') or {}).get('access_recovery_validated') is True,'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
+        human_direction = axes['human']['direction'] if not v or human or axes['human']['direction'] in ('none', 'unresolved') else 'unresolved'
+        ai_direction = axes['ai']['direction'] if not v or ai or axes['ai']['direction'] in ('none', 'unresolved') else 'unresolved'
+        human_label=DIRECTION_LABELS[human_direction] if human or not v else DIRECTION_LABELS['unresolved']
+        ai_label=DIRECTION_LABELS[ai_direction] if ai or not v else DIRECTION_LABELS['unresolved']
+        count=max(1,round(len((' '.join([happened,why,human,ai,*body])).split())/220)) if v else 0
+        output.append({'key':'event:'+eid,'event_id':eid,'kind':'news','slug':slug,'path':f'story/{slug}/index.html','headline':headline,'original_headline':original,'deck':deck,'what_happened':happened,'why_it_matters':why,'body_paragraphs':body,'for_humans':human,'for_ai':ai,'human_direction':human_direction,'ai_direction':ai_direction,'human_label':human_label,'ai_label':ai_label,'evidence_complete':bool(axes.get('evidence_complete')),'display_scope':text(row.get('display_scope')) if v else '', 'sources':sources,'source_count':len(sources),'publisher':sources[0]['publisher'],'date':str(event.get('event_date') or '')[:10],'display_date':fmt(event.get('event_date')),'markets':market,'market_label':' · '.join(names[c] for c in market) or 'Market not recorded','topic':topic,'topic_label':TOPICS[topic],'reading_minutes':count,'summary_basis':basis,'claim_status':((v or {}).get('evidence_basis_summary') or {}).get('claim_status','reporting'),'limitation':text(((v or {}).get('evidence_basis_summary') or {}).get('limitation')) if v else '', 'has_editorial':bool(v),'access_recovery_validated':((v or {}).get('evidence_basis_summary') or {}).get('access_recovery_validated') is True,'edition':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end']})
         if v and (effects:=(v.get('evidence_basis_summary') or {}).get('box_effects')) is not None:
             output[-1]['box_effects']=copy.deepcopy(effects)
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
@@ -530,7 +532,8 @@ def main():
     for page in ('about','contact','privacy','account','moderation'):
         render(f'{page}/index.html','pages.html',page=page)
     for item in allcards:
-        related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
+        related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']
+                 and (c['kind']!='news' or c['has_editorial'])][:3]
         story_template='government-story.html' if item.get('section')=='governments' else 'culture-story.html' if item['kind']=='culture' else 'story.html'
         render(item['path'],story_template,page='story',story=item,related=related)
         for alias in item.get('legacy_paths', []):
@@ -543,7 +546,8 @@ def main():
     by_path={c['path']:c for c in allcards}
     for alias,route in short_routes.items():
         item=by_path[route['article_path']]
-        related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']][:3]
+        related=[c for c in allcards if c['key']!=item['key'] and c['topic']==item['topic']
+                 and (c['kind']!='news' or c['has_editorial'])][:3]
         render(alias,'government-story.html' if item.get('section')=='governments' else 'culture-story.html' if item['kind']=='culture' else 'story.html',page='story',story=item,related=related,canonical_path=item['path'],short_destination=route['destination'])
     data=SITE/'data';data.mkdir()
     (data/'short-links.json').write_text(json.dumps(short_routes,ensure_ascii=False,indent=2)+'\n')

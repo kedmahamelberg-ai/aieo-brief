@@ -154,14 +154,14 @@ class NewsReading(unittest.TestCase):
         news_reading.prepare_display([row])
         html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
         self.assertNotIn('The article does not describe',html)
-        self.assertIn('This Brief has not established',html)
+        self.assertIn('A checked Brief article is not available yet.',html)
         self.assertNotIn('Canada · USA',html)
         self.assertNotIn('Discovery market does not mean the event happened there.',html)
         self.assertIn('href="https://example.com"',html)
-        self.assertIn('<strong>Context</strong>',html)
+        self.assertNotIn('class="axis-grid"',html)
         row['location_label']='Research locations: Brazil · USA'
         html=env.get_template('story.html').render(story=row,related=[],local=lambda x:x)
-        self.assertIn('Research locations: Brazil · USA',html)
+        self.assertNotIn('Research locations: Brazil · USA',html)
         self.assertNotIn('Discovery feeds: Canada · USA',html)
 
     def test_missing_labels_in_html_are_rejected(self):
