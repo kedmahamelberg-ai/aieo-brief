@@ -1,6 +1,10 @@
 name: Build and Publish AIEO Brief
 on:
   workflow_call:
+    inputs:
+      saved_news_only:
+        type: boolean
+        default: false
   push:
     branches: [main]
     paths: ['scripts/**', 'templates/**', 'assets/**', 'config/**', 'data/**', 'tests/**', 'supabase/**', 'package*.json', 'requirements.txt', '.github/**']
@@ -24,7 +28,7 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       AIEO_AI_PROVIDER: ${{ vars.AIEO_AI_PROVIDER || 'openai' }}
       AIEO_AI_MAX_JOB_USD: ${{ vars.AIEO_AI_MAX_JOB_USD || '0.50' }}
-      BRIEF_TRANSLATE_ENGLISH: ${{ !contains(github.event.head_commit.message, '[no-cost-build]') }}
+      BRIEF_TRANSLATE_ENGLISH: ${{ inputs.saved_news_only != true && !contains(github.event.head_commit.message, '[no-cost-build]') }}
       # Weekly prose is prepared in a private review artifact.  A public build
       # may render only a previously human-approved edition from the archive.
       BRIEF_WRITE_WEEKLY_OVERVIEWS: 'false'
@@ -55,6 +59,7 @@ jobs:
           cache: npm
       - run: npm ci --ignore-scripts
       - name: Refresh no-cost research affiliation metadata
+        if: inputs.saved_news_only != true
         continue-on-error: true
         env:
           RESEARCH_CONTACT_EMAIL: research@hamelberg-ai.com
@@ -155,7 +160,7 @@ jobs:
   social_review:
     # This is a deployment dependency, not another clock or workflow_run chain.
     needs: deploy
-    if: needs.deploy.result == 'success'
+    if: needs.deploy.result == 'success' && inputs.saved_news_only != true
     uses: ./.github/workflows/prepare-social-review.yml
     with:
       website_artifact: aieo-brief-website-${{ github.run_id }}
