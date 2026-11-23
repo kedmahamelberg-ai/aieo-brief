@@ -168,11 +168,30 @@ def numeric_values(text):
  # rounding, magnitude expansion or extra numeric values are authorized here.
  return set(re.findall(r'\d+(?:[.,]\d+)*(?:%)?',text))
 
+MAGNITUDES={'thousand':1000,'million':1000000,'milliard':1000000000,
+            'billion':1000000000,'trillion':1000000000000}
+MAGNITUDE_PATTERN=re.compile(r'(?<![\d.,])(\d+(?:[.,]\d+)*)\s+(thousand|million|milliard|billion|trillion)s?\b',re.I)
+
+def magnitude_value(match):
+ token=match.group(1)
+ token=token.replace(',','.') if re.fullmatch(r'\d+,\d{1,2}',token) else token.replace(',','')
+ value=Decimal(token)*MAGNITUDES[match.group(2).lower()]
+ return format(value,'f').rstrip('0').rstrip('.') if '.' in format(value,'f') else str(value)
+
+def draft_numeric_values(text):
+ # Compare complete quantities, so 30 million matches a source's 3000万.
+ # Replacement is confined to the unit-bearing phrase: a separate bare 30
+ # in the same field remains a separate value that still needs support.
+ return numeric_values(MAGNITUDE_PATTERN.sub(magnitude_value,text))
+
 def source_numeric_aliases(text):
  # Preserve exact value while accepting common source typography: thousands
  # grouping, French grouping spaces, decimal commas, and spaced percent signs.
  # Only the evidence creates aliases; draft numbers never authorize themselves.
  aliases=set()
+ for match in MAGNITUDE_PATTERN.finditer(text):
+  plain=magnitude_value(match);aliases.add(plain)
+  if Decimal(plain)==Decimal(plain).to_integral_value():aliases.add(format(int(Decimal(plain)),','))
  # A spelled-out percent unit has exactly the same value as the symbol.
  for match in re.finditer(r'(?<![\d.,])(\d+(?:[.,]\d+)?)\s+(?:per\s+cent|percent|pour\s+cent)\b',text,re.I):
   aliases.add(match.group(1)+'%')
@@ -346,7 +365,7 @@ def validate_draft(d,sources,kind='news'):
  source_numbers=' '.join(s['evidence']+' '+s.get('headline','')+' '+s.get('publisher','') for s in sources)
  allowed_numbers=numeric_values(source_numbers)|source_numeric_aliases(source_numbers)
  numeric_fields={**{k:d[k] for k in TEXT_FIELDS},'limitation':d.get('limitation',''),**{f'body_paragraphs[{i}]':text for i,text in enumerate(d['body_paragraphs'])}}
- unsupported={field:sorted(numeric_values(text)-allowed_numbers) for field,text in numeric_fields.items() if numeric_values(text)-allowed_numbers}
+ unsupported={field:sorted(draft_numeric_values(text)-allowed_numbers) for field,text in numeric_fields.items() if draft_numeric_values(text)-allowed_numbers}
  if unsupported:raise ValueError('Draft introduces a numeric value that is not present in the sources. Correct these fields and values using only the evidence: '+json.dumps(unsupported,sort_keys=True)+'. Preserve supported numbers and their denominators; omit an unsupported value only when the claim remains accurate. Do not invent a replacement.')
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
  if kind in ('preprint','abstract','paper') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')

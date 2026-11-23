@@ -133,6 +133,20 @@ class WeeklyHandoff(unittest.TestCase):
         self.sym['evidence'][0]['axes']['human']['direction'] = 'loss' if self.sym['evidence'][0]['axes']['human']['direction']!='loss' else 'gain'
         self.assertTrue(needs_update(self.release, self.sym, self.published))
 
+    def test_reviewed_writer_push_rechecks_candidates_without_daily_delay(self):
+        event = self.release['evidence'][0]
+        self.published['stories'] = [{'event_id': event['event_id'],
+                                      'evidence_complete': True, 'has_editorial': False}]
+        status = {'release_id': self.release['release_id'],
+                  'updated_at': '2026-11-23T13:00:00Z',
+                  'counts': {'selected': 0, 'deferred': 0, 'blocked_rejections': 1}}
+        with patch.dict('os.environ', {'GITHUB_EVENT_NAME': 'schedule'}):
+            self.assertFalse(needs_editorial_retry(self.release, self.published, status))
+        with patch.dict('os.environ', {'GITHUB_EVENT_NAME': 'push'}):
+            self.assertTrue(needs_editorial_retry(self.release, self.published, status))
+            self.published['stories'][0]['has_editorial'] = True
+            self.assertFalse(needs_editorial_retry(self.release, self.published, status))
+
     def test_missing_or_different_published_week_requests_update(self):
         self.assertTrue(needs_update(self.release, self.sym, {}))
         self.published['release_id'] = '2026-W34'

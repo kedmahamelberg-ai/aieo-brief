@@ -142,6 +142,17 @@ class Publication(unittest.TestCase):
   source='Researchers surveyed 142 musicians about AI. A large majority raised concerns about payment. The survey cannot represent every musician.'
   d={'editorial_headline':'Musician survey highlights concern about AI and income','editorial_deck':'Respondents describe worries about how their work is valued.','what_happened':'A survey asked 142 music professionals about AI.','why_it_matters':'The responses raise questions about fair payment.','for_humans':'Participants describe concerns.','for_ai':'The study asks about its use.','body_paragraphs':['The findings describe what respondents said, with limits on wider conclusions.'],'claim_status':'study','limitation':'A survey is not a population census.','support':[{'field':f,'source_number':1,'quote':'A large majority raised concerns about payment.'} for f in ('editorial_headline','what_happened','why_it_matters')]}
   return d,[{'source_number':1,'headline':'Musician study','evidence':source}]
+ def test_chinese_budget_translates_exactly_without_authorizing_bare_or_wrong_values(self):
+  for quantity,valid in [('30 million yuan',True),('30,000,000 yuan',True),
+                         ('30 billion yuan',False),('30 yuan',False),
+                         ('30 million yuan for 30 people',False)]:
+   with self.subTest(quantity=quantity):
+    d,s=self.draft();s[0]['evidence']+=' 项目计划提供3000万元支持。'
+    d['body_paragraphs']=['The plan provides '+quantity+'.']
+    if valid:validate_draft(d,s)
+    else:
+     with self.assertRaises(EditorialError) as caught:validate_draft(d,s)
+     self.assertEqual(caught.exception.code,'unsupported_number')
  def test_unsupported_numbers_and_missing_support_are_rejected(self):
   d,s=self.draft();validate_draft(d,s)
   d['what_happened']='A survey asked 263 music professionals about AI.'

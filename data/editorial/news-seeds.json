@@ -1591,6 +1591,194 @@
           }
         ]
       }
+    },
+    "f73a5d7d-d4e9-4996-81dc-54946f6316ce": {
+      "evidence_sha256": [
+        "60bdbb56c8724eb76614d004abaab658f81b42b6c1136a6e2cb44faf326cd61d"
+      ],
+      "source_urls": [
+        "https://www.kcur.org/education/2026-11-22/missouri-s-t-will-soon-offer-the-states-first-undergraduate-degree-in-artificial-intelligence"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
+      "draft": {
+        "editorial_headline": "Missouri S&T plans an AI degree combining computing with ethics",
+        "editorial_deck": "The proposed bachelor's degree would cover programming, mathematics and responsible AI use.",
+        "what_happened": "Missouri University of Science and Technology has won initial approval for a bachelor's degree focused on artificial intelligence (AI). The University of Missouri's governing board unanimously backed the proposal, which is planned to start in autumn 2027.",
+        "why_it_matters": "University leaders say the course responds to growing demand for AI education across several industries.",
+        "for_humans": "University leaders say the course would prepare students for industries that increasingly use AI.",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The course would be offered through the computer science department. Proposed subjects include programming, mathematics and statistics, alongside responsible AI use and its effects on society.",
+          "The university expects enrollment to reach 110 within five years after launch. The report also notes that Southern Illinois University recently introduced its own undergraduate AI degree."
+        ],
+        "claim_status": "reporting",
+        "limitation": "The proposed start depends on approval from the Missouri Coordinating Board for Higher Education.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 1
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 4
+          }
+        ]
+      }
+    },
+    "29546d1d-0d34-45ca-8216-32cee160fb5f": {
+      "evidence_sha256": [
+        "920bcb84834f8a986f40e188d057169189ce58162b493359e7705aeb88cf3c72"
+      ],
+      "source_urls": [
+        "https://www.jswx.gov.cn/fwhd/tzgg/202611/t20261118_1373147.shtml"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
+      "draft": {
+        "editorial_headline": "Jiangsu lists 13 newly registered AI services and reminds apps about labels",
+        "editorial_deck": "The notice gives updated registration totals and tells apps to identify the AI services they use.",
+        "what_happened": "Jiangsu's internet regulator announced 13 newly registered artificial intelligence (AI) services that generate content. The province's total reached 125 as of 18 November 2026.",
+        "why_it_matters": "Apps using these services must display the service name and registration number. The notice also reminds them to label AI-generated or synthetic content.",
+        "for_humans": "Apps using these AI services must display service names and registration numbers, and label AI-generated content.",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The service information must appear prominently or on the product details page. The notice links to the list of newly registered services and gives a phone number for organisations seeking registration advice."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "f42455d6-f67d-4c6a-a78f-0d57269138ff": {
+      "evidence_sha256": [
+        "1405663e5cb33f573071d1d19d985bbd05f1c3187725bce1435cb0b438273ba1"
+      ],
+      "source_urls": [
+        "https://itsocial.fr/contenus/tribunes/fraude-documentaire-lintelligence-artificielle-change-lechelle-de-la-menace"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
+      "draft": {
+        "editorial_headline": "Finovox chief warns AI makes convincing fake documents easier to produce",
+        "editorial_deck": "Marc de Beaucorps argues that companies need checks beyond how a document looks.",
+        "what_happened": "In an IT Social column, Finovox chief executive Marc de Beaucorps says artificial intelligence (AI) tools let people quickly create believable forged documents with little technical knowledge. He argues that visual checks alone are no longer enough.",
+        "why_it_matters": "Banks, insurers and other businesses use documents to check customers. De Beaucorps says fraud can weaken those checks and create financial and legal risks.",
+        "for_humans": "De Beaucorps warns that more convincing fake documents put businesses at financial and legal risk.",
+        "for_ai": "AI can help create forged documents and detect signs of manipulation, de Beaucorps argues.",
+        "body_paragraphs": [
+          "He describes fake bank statements, payslips, identity papers and proof-of-address documents. He says AI tools can imitate official layouts, logos and signatures, making forged papers harder to spot by sight.",
+          "His proposed response combines AI checks with human expertise and regular monitoring. The checks examine a document's structure, information attached to the file and possible traces of editing."
+        ],
+        "claim_status": "opinion",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 4
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 4
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 12
+          }
+        ]
+      }
+    },
+    "e30a5b93-37e3-4b09-abdf-9cc4cc5bda19": {
+      "evidence_sha256": [
+        "8db89c18bca7752a30847e10b640f16714320317acc57fe0f1c95ad341bdf9a5"
+      ],
+      "source_urls": [
+        "https://www.ncsti.gov.cn/kjdt/xwjj/202611/t20261120_264744.html"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
+      "draft": {
+        "editorial_headline": "Beijing universities offer free AI computing, with more support planned at Tsinghua",
+        "editorial_deck": "Peking University and Beijing University of Posts and Telecommunications describe current access; Tsinghua outlines a three-year support plan.",
+        "what_happened": "Several Beijing universities are giving students access to artificial intelligence (AI) tools without extra charges. Peking University offers staff and students an AI program that helps write computer code, while Beijing University of Posts and Telecommunications has opened free AI accounts for about 10,000 new students.",
+        "why_it_matters": "Students quoted in the report describe using the tools to write code and find research material without paying for access themselves.",
+        "for_humans": "Students quoted in the report say free access helps them with coding and research.",
+        "for_ai": "The universities are expanding campus access to AI tools.",
+        "body_paragraphs": [
+          "Tsinghua has begun a scheme intended to provide 30 million yuan in computing support over the next three years. The plan includes access to computing equipment and AI software for teaching and research.",
+          "Peking University's partnership with Alibaba Cloud gives each authorised account a monthly computing allowance, with further access available on request. Students are also running training sessions for staff and peers."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "4348948e-e08c-4699-9c74-9f13199c4a72": {
+      "evidence_sha256": [
+        "100207d1c54d1e03cf7e0548b8aa0186235bc3cceb1047f07c52a3a79652cd26"
+      ],
+      "source_urls": [
+        "https://siecledigital.fr/2026/11/20/donald-trump-refuse-toute-reglementation-mondiale-de-lintelligence-artificielle"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
+      "draft": {
+        "editorial_headline": "Trump opposes global AI rules while urging caution over its risks",
+        "editorial_deck": "He argued worldwide restrictions could slow U.S. development; Xi Jinping called for cooperation and human control.",
+        "what_happened": "Donald Trump rejected global rules for artificial intelligence (AI) at the Asia-Pacific Economic Cooperation meeting in Shenzhen, Siècle Digital reports. He said the technology needs careful oversight but argued worldwide rules could hold back its development in the United States.",
+        "why_it_matters": "Xi Jinping called for the United States and China to cooperate on AI safety risks and for the technology to remain under human control.",
+        "for_humans": "",
+        "for_ai": "Trump says worldwide rules could hold back AI development in the United States.",
+        "body_paragraphs": [
+          "Trump described AI as mostly beneficial while acknowledging harmful aspects that require care. The report presents his opposition to worldwide rules alongside Xi's call for closer AI cooperation between the two countries."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 1
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 1
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 16
+          }
+        ]
+      }
     }
   }
 }

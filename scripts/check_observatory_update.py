@@ -86,6 +86,10 @@ def needs_editorial_retry(release, published, status, now=None):
     """Resume time-deferred work promptly; pace repeated draft rejections daily."""
     if not missing_news_summaries(release, published):
         return False
+    # This workflow's push paths contain reviewed writer and source-seed
+    # corrections. Candidate fingerprints still block unchanged rejections.
+    if os.environ.get('GITHUB_EVENT_NAME') == 'push':
+        return True
     if status.get('release_id') != release['release_id']:
         return True
     from editorial_engine import ENGINE_VERSION
