@@ -160,7 +160,7 @@ jobs:
   social_review:
     # This is a deployment dependency, not another clock or workflow_run chain.
     needs: deploy
-    if: needs.deploy.result == 'success' && inputs.saved_news_only != true
+    if: needs.deploy.result == 'success' && inputs.saved_news_only != true && !contains(github.event.head_commit.message, '[no-cost-build]')
     uses: ./.github/workflows/prepare-social-review.yml
     with:
       website_artifact: aieo-brief-website-${{ github.run_id }}
