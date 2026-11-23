@@ -2132,12 +2132,12 @@
       "draft": {
         "editorial_headline": "Report counts 495 people linked to AI’s growth at UN climate talks",
         "editorial_deck": "The identified companies include engineering and construction firms, energy suppliers and major technology businesses.",
-        "what_happened": "Le Devoir reports that Lighthouse Reports identified 495 participants at COP31, the United Nations climate talks, linked to 86 companies involved in expanding artificial intelligence (AI) infrastructure. These include engineering and construction firms, energy suppliers and major technology businesses.",
-        "why_it_matters": "The report questions company access to climate negotiations. It says company representatives on official country teams have direct access to the diplomats negotiating the final text.",
+        "what_happened": "Le Devoir reports that Lighthouse Reports identified 495 delegates at COP31, the United Nations climate talks, linked to 86 companies involved in expanding artificial intelligence (AI) infrastructure. These include engineering and construction firms, energy suppliers and major technology businesses.",
+        "why_it_matters": "In its wider discussion of corporate participation, the article calls industry’s strong presence troubling because it outnumbers most countries. It also says AI is absent from the agenda despite concern over data centres’ environmental effects.",
         "for_humans": "Company representatives on official country teams have direct access to climate negotiators.",
         "for_ai": "The identified companies include engineering, construction, energy and technology businesses.",
         "body_paragraphs": [
-          "Since 2023, participants have had to identify their employers. The article says this allowed investigators to count the companies’ representatives, including some who were part of official country teams.",
+          "Delegates have had to identify their employers since 2023, allowing journalists to make this count.",
           "It also describes a proposed voluntary agreement on AI’s environmental risks and renewable electricity for large computer facilities. Only 10 countries had signalled interest, and the planned announcement press conference was cancelled."
         ],
         "claim_status": "reporting",
