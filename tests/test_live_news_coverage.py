@@ -43,6 +43,17 @@ class LiveNewsCoverage(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'still lack a completed Brief article'):
                 verify({}, self.brief, self.homepage)
 
+    def test_earlier_articles_cannot_displace_the_current_batch(self):
+        self.brief['recent_news']=[{'key':'event:old','event_id':'old','has_editorial':True,
+                                  'what_happened':'Earlier account','body_paragraphs':['Earlier detail']}]
+        old='<article data-story-card data-kind="news" data-key="event:old" data-editorial-status="complete" hidden><h2><a href="story/old/">Earlier</a></h2></article>'
+        current_first=self.homepage.replace('</div>',old+'</div>')
+        self.assertEqual(validate_home_news_coverage(self.brief,current_first)['recent_full_brief_articles'],1)
+        with self.assertRaisesRegex(ValueError,'Current edition news must appear before'):
+            validate_home_news_coverage(self.brief,self.homepage.replace('<div id="story-feed">','<div id="story-feed">'+old))
+        with self.assertRaisesRegex(ValueError,'Earlier articles must be hidden'):
+            validate_home_news_coverage(self.brief,current_first.replace(' hidden>','>'))
+
     def test_two_cards_for_many_records_fails_publication_gate(self):
         larger = {**self.brief, 'story_count': 2,
                   'stories': [{'event_id': 'one'}, {'event_id': 'two'}],

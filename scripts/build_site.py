@@ -478,14 +478,14 @@ def main():
     # feed. Only checked Brief articles may become the lead or a highlight.
     recent_news=recent_completed_news(news,allcards)
     feed_news=list(news)+recent_news
-    featured_news=completed_news(feed_news)
-    market_counts={code:sum(code in c['markets'] for c in feed_news) for code,_ in MARKETS}
+    featured_news=completed_news(news)
+    market_counts={code:sum(code in c['markets'] for c in news) for code,_ in MARKETS}
     rotation=rotation_plan(feed_news, release['release_id'], release['period_end'])
     featured_rotation=rotation_plan(featured_news, release['release_id'], release['period_end'])
     for layout, featured_layout in zip(rotation['layouts'],featured_rotation['layouts']):
         layout['lead']=featured_layout['lead']
         layout['highlights']=featured_layout['highlights']
-        statuses={item['key']:not item.get('has_editorial') for item in feed_news}
+        statuses={item['key']:(item.get('edition')!=release['release_id'],not item.get('has_editorial')) for item in feed_news}
         layout['order'].sort(key=lambda key:statuses[key])
     day_layout=rotation['layouts'][rotation['slot']]
     bykey={c['key']:c for c in feed_news}
@@ -496,6 +496,7 @@ def main():
     defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(featured_news),'source_news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
     latest_culture_date=max((x['date'] for x in culture),default='')
     defaults.update(rotation=rotation, reading_date=fmt(rotation['selection_date']))
+    defaults.update(recent_news_count=len(recent_news))
     defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
     culture_featured=sorted(defaults['culture_latest'],key=lambda x:({'illustration':0,'poetry':1,'music':2,'text':3,'quote':4}.get(x['culture_type'],5)))
     defaults.update(culture_featured=culture_featured, research_featured=sorted(research,key=lambda x:not x.get('has_editorial'))[:6])
