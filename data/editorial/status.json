@@ -2,66 +2,33 @@
   "release_id": "2026-W47",
   "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
   "counts": {
-    "unchanged": 64,
+    "unchanged": 66,
     "source_not_ready": 0,
     "source_date_mismatch": 0,
-    "new_registry": 19,
-    "needs_model": 21,
+    "new_registry": 17,
+    "needs_model": 19,
     "needs_rebind": 0,
     "blocked_rejections": 0,
-    "selected": 21,
-    "generated": 2,
+    "selected": 19,
+    "generated": 10,
     "rebound": 0,
-    "failed": 19,
+    "failed": 9,
     "deferred": 0
   },
   "failure_counts": {
-    "source_scope_review_failed": 17,
-    "claim_grounding_failed": 2
+    "claim_grounding_failed": 2,
+    "source_scope_review_failed": 7
   },
   "failed_items": [
-    {
-      "event_id": "ce99432a-bbe0-428e-b588-e3f9b13c7918",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "no_unstated_effects"
-      ]
-    },
-    {
-      "event_id": "45afe116-7fb6-4d34-b5a0-eb549c6ab0f5",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "no_unstated_effects"
-      ]
-    },
     {
       "event_id": "180985af-7cc7-4e9d-ae3a-c9d01b1c2eb2",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "plain_english"
-      ]
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v14-source-specific-news"
     },
     {
       "event_id": "b4532a7f-ee8f-4975-ab02-96357c06db85",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "9e31d92d-0e24-4aae-9914-d53069eeb6ad",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "claim_grounding_failed",
@@ -74,17 +41,7 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "no_unstated_effects"
-      ]
-    },
-    {
-      "event_id": "d7c525c8-acce-419a-8eb1-9dacb5d9e3d7",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "plain_english"
+        "headline_supported"
       ]
     },
     {
@@ -94,17 +51,6 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "no_unstated_effects"
-      ]
-    },
-    {
-      "event_id": "93b31c5a-f003-4ca9-822c-4d856065055d",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "claim_status_preserved",
         "plain_english"
       ]
     },
@@ -115,7 +61,6 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "no_unstated_effects",
         "plain_english"
       ]
     },
@@ -126,7 +71,6 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "no_unstated_effects",
         "plain_english"
       ]
     },
@@ -137,35 +81,7 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "29546d1d-0d34-45ca-8216-32cee160fb5f",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news"
-    },
-    {
-      "event_id": "e05b0a25-5bc0-4d77-a7aa-8ee8b7733f80",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "headline_supported",
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "d48225e7-5b18-4525-a6a3-8a9164183226",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "no_unstated_effects"
+        "claim_status_preserved"
       ]
     },
     {
@@ -185,29 +101,9 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "population_preserved"
-      ]
-    },
-    {
-      "event_id": "91a3e3cb-d7c3-4247-b5ee-a4cd749a6294",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "population_preserved"
-      ]
-    },
-    {
-      "event_id": "fcdb6abc-5fba-422e-9520-87887fccfed9",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-      "failed_checks": [
-        "plain_english"
+        "no_unstated_effects"
       ]
     }
   ],
-  "updated_at": "2026-11-23T13:58:49.160022+00:00"
+  "updated_at": "2026-11-23T14:15:46.277918+00:00"
 }
