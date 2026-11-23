@@ -143,9 +143,14 @@ class WeeklyHandoff(unittest.TestCase):
         with patch.dict('os.environ', {'GITHUB_EVENT_NAME': 'schedule'}):
             self.assertFalse(needs_editorial_retry(self.release, self.published, status))
         with patch.dict('os.environ', {'GITHUB_EVENT_NAME': 'push'}):
-            self.assertTrue(needs_editorial_retry(self.release, self.published, status))
-            self.published['stories'][0]['has_editorial'] = True
+            # A test process running in push CI must retain normal scheduling
+            # semantics unless the application explicitly passes the trigger.
             self.assertFalse(needs_editorial_retry(self.release, self.published, status))
+            self.assertTrue(needs_editorial_retry(self.release, self.published, status,
+                                                 reviewed_writer_change=True))
+            self.published['stories'][0]['has_editorial'] = True
+            self.assertFalse(needs_editorial_retry(self.release, self.published, status,
+                                                  reviewed_writer_change=True))
 
     def test_missing_or_different_published_week_requests_update(self):
         self.assertTrue(needs_update(self.release, self.sym, {}))
