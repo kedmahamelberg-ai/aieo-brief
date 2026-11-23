@@ -233,7 +233,7 @@ def main():
     print(json.dumps(counts,indent=2))
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'],'a') as f:
-            f.write('## Brief news generation\n\nCompleted edition: **'+release['release_id']+'**.\n\n'+ '\n'.join(f'- {k.replace("_"," ")}: **{v}**' for k,v in counts.items())+'\n\nDeferred items remain queued for the next generation run. Source links remain available.\n')
+            f.write('## Brief news generation\n\nEdition: **'+release['release_id']+'**.\n\n'+ '\n'.join(f'- {k.replace("_"," ")}: **{v}**' for k,v in counts.items())+'\n\nSaved drafts still require publication. Deferred items can resume; rejected drafts require corrected evidence or wording. Edition completion is checked separately against every live article.\n')
             if failures:f.write('\nDraft rejection reasons:\n\n'+'\n'.join(f'- `{code}`: **{count}**' for code,count in sorted(failure_counts.items()))+'\n\nSafe per-item details are in `data/editorial/status.json`.\n')
     if counts['failed'] and (args.strict or not counts['generated']+counts['rebound']):return 1
     return 0
