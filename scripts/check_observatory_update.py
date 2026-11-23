@@ -82,13 +82,13 @@ def missing_news_summaries(release, published):
                for story in published.get('stories', []))
 
 
-def needs_editorial_retry(release, published, status, now=None):
+def needs_editorial_retry(release, published, status, now=None, *, reviewed_writer_change=False):
     """Resume time-deferred work promptly; pace repeated draft rejections daily."""
     if not missing_news_summaries(release, published):
         return False
     # This workflow's push paths contain reviewed writer and source-seed
     # corrections. Candidate fingerprints still block unchanged rejections.
-    if os.environ.get('GITHUB_EVENT_NAME') == 'push':
+    if reviewed_writer_change:
         return True
     if status.get('release_id') != release['release_id']:
         return True
@@ -145,7 +145,8 @@ def main():
     status_path = Path(__file__).resolve().parents[1] / 'data/editorial/status.json'
     status = json.loads(status_path.read_text()) if status_path.exists() else {}
     missing = missing_news_summaries(release, published)
-    retry = needs_editorial_retry(release, published, status)
+    retry = needs_editorial_retry(release, published, status,
+                                 reviewed_writer_change=os.environ.get('GITHUB_EVENT_NAME') == 'push')
     expected = expected_period()
     current = (release['period_start'], release['period_end']) == expected
     summary = {'observatory_edition': release['release_id'], 'period_start': release['period_start'],

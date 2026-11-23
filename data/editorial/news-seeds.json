@@ -1640,14 +1640,14 @@
       "reviewed_at": "2026-11-23",
       "reason": "Reviewed the full original source and retained rejection. Correct scope, attribution, timing and wording without weakening the independent source review.",
       "draft": {
-        "editorial_headline": "Jiangsu lists 13 newly registered AI services and reminds apps about labels",
-        "editorial_deck": "The notice gives updated registration totals and tells apps to identify the AI services they use.",
+        "editorial_headline": "Jiangsu lists 13 new AI registrations and reminds content-generating apps about labels",
+        "editorial_deck": "Online apps or features that generate AI content must identify their registered service, the notice says.",
         "what_happened": "Jiangsu's internet regulator announced 13 newly registered artificial intelligence (AI) services that generate content. The province's total reached 125 as of 18 November 2026.",
-        "why_it_matters": "Apps using these services must display the service name and registration number. The notice also reminds them to label AI-generated or synthetic content.",
-        "for_humans": "Apps using these AI services must display service names and registration numbers, and label AI-generated content.",
+        "why_it_matters": "Online apps or features that generate content with AI must display the registered service name and number. They must also add labels identifying AI-generated content.",
+        "for_humans": "Online apps and features that generate AI content must show the registered service name and number, plus content labels.",
         "for_ai": "",
         "body_paragraphs": [
-          "The service information must appear prominently or on the product details page. The notice links to the list of newly registered services and gives a phone number for organisations seeking registration advice."
+          "For these online apps and features, the service information must appear prominently or on the product details page. The notice links to the newly registered services and gives a phone number for registration advice."
         ],
         "claim_status": "reporting",
         "limitation": "",
@@ -1776,6 +1776,608 @@
           {
             "field": "why_it_matters",
             "quote_id": 16
+          }
+        ]
+      }
+    },
+    "ce99432a-bbe0-428e-b588-e3f9b13c7918": {
+      "evidence_sha256": [
+        "6e220626aecabf2f0f0a522f5a977ae1b5be7b07fb0306495fa4d12ad88de393"
+      ],
+      "source_urls": [
+        "https://aa.com.tr/en/europe/london-protest-calls-for-stricter-ai-regulation-amid-growing-safety-concerns/4133213"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "London marchers demand stricter AI rules and a pause on advanced systems",
+        "editorial_deck": "Pause AI UK organised the demonstration from the BBC area towards Downing Street.",
+        "what_happened": "Hundreds of protesters marched through central London to call for tighter rules on artificial intelligence (AI), Anadolu reports. Pause AI UK organised the demonstration and wants development of the most advanced AI systems to stop.",
+        "why_it_matters": "The march focused on fears about the speed of AI development and possible dangers to people. Protest signs called for limits on systems intended to match broad human abilities.",
+        "for_humans": "Protesters fear advanced AI could threaten human safety.",
+        "for_ai": "Pause AI UK is calling for a halt to the development of the most advanced AI systems.",
+        "body_paragraphs": [
+          "The march began near the BBC offices and headed towards the prime minister’s office on Downing Street. Participants carried signs and chanted demands for stronger regulation."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 1
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "45afe116-7fb6-4d34-b5a0-eb549c6ab0f5": {
+      "evidence_sha256": [
+        "ef55541f381a47f76dc26acf99e0b7cb86bd36dcee46d287cd48865ce81dc7d0"
+      ],
+      "source_urls": [
+        "https://www.ledevoir.com/actualites/education/1026209/jusqu-ou-ecole-doit-elle-preparer-jeunes-monde-travail"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Quebec education experts urge schools to teach judgment as AI changes work",
+        "editorial_deck": "Professors interviewed by Le Devoir argue for citizenship and adaptability alongside preparation for employment.",
+        "what_happened": "Professors interviewed in a Le Devoir partner-content feature say schools should prepare young people for changing work without narrowing education to job training. Artificial intelligence (AI) makes the ability to question answers and keep learning especially important, they argue.",
+        "why_it_matters": "Mircea Vultur says students need to assess the answers AI tools produce. Patrick Charland favours examining how existing jobs will change rather than training pupils for jobs that cannot yet be predicted.",
+        "for_humans": "The interviewed professors want schools to build judgment, adaptability and citizenship alongside preparation for work.",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The feature traces how schools’ purposes have shifted between general education, civic life and employment. The professors describe reading, building an argument and recognising a text’s intent as skills that matter beyond work.",
+          "Vultur also stresses teachers’ role in encouraging curiosity. He argues that education should help young people transfer skills between subjects and build a changing career path."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 3
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 33
+          }
+        ]
+      }
+    },
+    "180985af-7cc7-4e9d-ae3a-c9d01b1c2eb2": {
+      "evidence_sha256": [
+        "0e8e927f9f3c3ff6ab722e7c2d5e4c40e95c621e3019a937d37c19422fcff974"
+      ],
+      "source_urls": [
+        "http://paper.people.com.cn/rmrb/pc/content/202611/21/content_30192380.html"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Chinese AI releases let developers download and adapt the underlying systems",
+        "editorial_deck": "People’s Daily explains how sharing trained software can reduce the need to build AI from scratch.",
+        "what_happened": "People’s Daily reports growing releases of downloadable artificial intelligence (AI) systems from Chinese companies. It explains that sharing a system’s learned settings lets others run and adapt it on their own computers.",
+        "why_it_matters": "The report says companies and developers can build on an existing system rather than pay to train one from the start. Running it on private equipment also matters to users with strict data-privacy requirements.",
+        "for_humans": "Running downloaded AI on private computers can help users with strict data-privacy requirements, the report explains.",
+        "for_ai": "Developers can adapt downloadable AI systems instead of training one from the beginning, the report explains.",
+        "body_paragraphs": [
+          "The article distinguishes sharing trained settings from publishing all the original software code. It says companies can still earn revenue through services that run or adapt the systems for customers.",
+          "Examples include AI used in factory quality checks and software built for particular customer requests. The report attributes company performance claims to the organisations and people describing those projects."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 1
+          }
+        ]
+      }
+    },
+    "b4532a7f-ee8f-4975-ab02-96357c06db85": {
+      "evidence_sha256": [
+        "2844feee39d0085eca0f285dd2bc54e333d411c10cf0e5b4b940a2a92915ceb5"
+      ],
+      "source_urls": [
+        "https://www.china-aii.com/jgdt/7141930.jhtml"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Chinese institute offers help registering AI services that generate content",
+        "editorial_deck": "Its notice separates registration for unmodified third-party systems from reviews for newly developed systems.",
+        "what_happened": "The China Industrial Internet Research Institute has opened consultation services for registering artificial intelligence (AI) software that generates text, images, audio or video. It offers policy training, application templates and support with safety assessments.",
+        "why_it_matters": "The notice describes different procedures depending on whether a company uses an existing third-party system unchanged or develops and modifies its own. Some applications also require review by the relevant industry authority.",
+        "for_humans": "Companies can obtain application guidance and support with safety assessments from the institute.",
+        "for_ai": "The institute offers registration advice for AI services that generate content.",
+        "body_paragraphs": [
+          "For unmodified third-party systems, the notice describes registration with the provincial internet regulator. For internally developed or modified systems, it describes provincial and central reviews. It also offers promotion for registered systems that pass the institute’s standards assessment."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "4514e006-c634-4a92-999a-72e8e096b9bf": {
+      "evidence_sha256": [
+        "a802a8e535f806592ee448833629b4927d72553a0936d0c19be4f4f8be7d58e3"
+      ],
+      "source_urls": [
+        "https://www.hunnu.edu.cn/info/1012/33298.htm"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Luo Yi links AI growth to computing power and its physical limits",
+        "editorial_deck": "The Tsinghua professor discussed energy costs and data quality at Hunan Normal University.",
+        "what_happened": "Luo Yi, a Tsinghua University professor and Chinese Academy of Engineering member, gave a lecture on artificial intelligence (AI) at Hunan Normal University. More than 400 teachers and students attended, alongside university officials.",
+        "why_it_matters": "He described computing power as essential to AI’s development while pointing to high energy costs and uneven data quality. The lecture connected AI software with the chips and networks needed to run it.",
+        "for_humans": "Luo encouraged students to strengthen their scientific foundations and learn across subjects.",
+        "for_ai": "Luo said growing AI systems require more computing power while facing high energy costs and uneven data quality.",
+        "body_paragraphs": [
+          "Teachers and students asked about computing, progress in chip technology and study plans. Luo answered their questions and urged students to approach research with care for underlying physical principles."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "e9c85927-adb4-4d34-8bc1-2061863b891c": {
+      "evidence_sha256": [
+        "4cf856821634514c3046ca2b18cc3b42a601c5088732dd19a444309046d07bb5"
+      ],
+      "source_urls": [
+        "https://www.bbc.com/zhongwen/articles/cmdx1eqdl9vpo/simp"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Qaf creator says Islamic AI assistant cannot issue religious rulings",
+        "editorial_deck": "BBC reporting describes both support for learning tools and warnings about using them for religious decisions.",
+        "what_happened": "The creator of Qaf, an artificial intelligence (AI) assistant for Islamic questions, says it cannot issue religious rulings. BBC reporting describes a debate sparked by its promotional video and the creator’s warning that AI-generated answers can be wrong.",
+        "why_it_matters": "Scholars interviewed by the BBC distinguish help with study from decisions that require qualified religious judgment. They also discuss gaps in Arabic material used to train major commercial AI software.",
+        "for_humans": "Scholars see potential for research assistance but warn against relying on AI to issue religious rulings.",
+        "for_ai": "Limited digitised Arabic material can leave gaps in AI’s specialist Islamic knowledge, an interviewed researcher says.",
+        "body_paragraphs": [
+          "Qaf’s creator says questions about religious rulings trigger a warning. One scholar tells the BBC that people with strong religious and legal knowledge are better placed to assess the answers.",
+          "Researcher Samer Rashwani says Arabic online material forms no more than 0.5% of the training material for major commercial AI systems. He calls for digitising both manuscript collections and the intellectual heritage of the past two centuries."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 1
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 1
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 2
+          }
+        ]
+      }
+    },
+    "d48225e7-5b18-4525-a6a3-8a9164183226": {
+      "evidence_sha256": [
+        "1e1065423a5ab533c395a66c76f5f1d9ea7c473fc49410a4244122c26fd8b720"
+      ],
+      "source_urls": [
+        "https://news.ustc.edu.cn/info/1056/96947.htm"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Former xAI engineer Wu Kan plans research on AI using Chinese chips",
+        "editorial_deck": "A Hefei Daily report republished by his university describes the planned appointment and research.",
+        "what_happened": "Former xAI and Google engineer Wu Kan is due to join the University of Science and Technology of China as an assistant professor this month. A Hefei Daily report republished by the university says he will research systems that train and run artificial intelligence (AI) using Chinese computing hardware.",
+        "why_it_matters": "The planned work combines software and chip design to make AI run more efficiently on domestic equipment. The report also describes research interests in AI interacting with the physical world.",
+        "for_humans": "",
+        "for_ai": "The planned research aims to make AI train and run more efficiently on Chinese computing equipment.",
+        "body_paragraphs": [
+          "Wu studied at the Chinese university before completing a doctorate at the University of Wisconsin–Madison. The report says he previously worked on the computing systems used to serve Grok users at xAI and on data-centre research at Google."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "55630d16-a18b-4be4-8593-b843ffe9d50e": {
+      "evidence_sha256": [
+        "6563d97bc8d95a258ee7b984946c5928b44b4ac2e646f4e576a30c4b1605c743"
+      ],
+      "source_urls": [
+        "https://www.hkma.gov.hk/gb_chi/news-and-media/press-releases/2026/11/20261117-3"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Hong Kong finance survey finds rising use and plans for content-generating AI",
+        "editorial_deck": "The report separates current adoption from future plans and examines safety and explainability concerns.",
+        "what_happened": "A Hong Kong financial research report says 90% of surveyed financial institutions use or plan to use artificial intelligence (AI) that generates content. The release compares that share with 75% in its earlier report.",
+        "why_it_matters": "The survey also examines AI systems that can carry out tasks with greater independence. It says further adoption faces concerns about safety and whether people can understand how an AI system reaches its answers.",
+        "for_humans": "",
+        "for_ai": "Among surveyed financial institutions, 13% already use more autonomous AI systems and 56% plan to do so.",
+        "body_paragraphs": [
+          "The Hong Kong Institute for Monetary and Financial Research commissioned surveys and interviews conducted from January to July 2026. Participants included financial institutions and technology-service providers.",
+          "For work on meeting regulatory rules, 86% of surveyed financial institutions use or plan to use content-generating AI. The release presents recommendations for responsible use alongside the adoption figures."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 1
+          }
+        ]
+      }
+    },
+    "d7c525c8-acce-419a-8eb1-9dacb5d9e3d7": {
+      "evidence_sha256": [
+        "20ce66ff1bfee454f02c03282c4b325040b898c9612138bc2055b7cf36bfe4f7"
+      ],
+      "source_urls": [
+        "https://www.beatportal.com/articles/1726074-dance-spirit-on-cosmic-intellect-artificial-intelligence-and-the-human-experience"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Dance Spirit describe AI vocals as one part of making their new music",
+        "editorial_deck": "The duo explain their creative process ahead of the Cosmic Intellect release.",
+        "what_happened": "Dance Spirit describe using artificial intelligence (AI) to help create vocals and lyrics for their forthcoming Cosmic Intellect release. In a Beatportal interview, the Los Angeles duo present the tools as part of a process they continue to shape themselves.",
+        "why_it_matters": "Reagan Denius says the vocals on Electric on My Skin were generated with Suno. He describes working on the resulting audio in music software and says he would not release a song made entirely by AI.",
+        "for_humans": "The musicians say AI gives them more ways to experiment while they retain a hands-on creative role.",
+        "for_ai": "The duo use AI tools to develop lyrics, generate vocals and help build software instruments.",
+        "body_paragraphs": [
+          "The process combined lyrics developed with Grok, vocals generated with Suno and further changes to the sound in Ableton. Denius also describes using Claude to develop software instruments.",
+          "The duo say some of the release’s central ideas and tracks date from their earlier partnership. Their discussion connects AI experiments with a longer-standing interest in science fiction, consciousness and electronic music."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 12
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 17
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 19
+          }
+        ]
+      }
+    },
+    "87166cd7-31e5-4e38-972b-a2fcf69ddf3f": {
+      "evidence_sha256": [
+        "70fb6bc2d3c150439e81340eb725015439cbe68742985dc4590c70fcd878553b"
+      ],
+      "source_urls": [
+        "https://www.ledevoir.com/economie/techno/1026464/ia-absente-debats-cop31-mais-bien-representee"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Report counts 495 AI-linked company representatives at COP31 climate talks",
+        "editorial_deck": "The companies include builders and energy suppliers serving the expansion of data centres.",
+        "what_happened": "Le Devoir reports that Lighthouse Reports identified 495 COP31 participants linked to 86 companies involved in expanding artificial intelligence (AI) computing facilities. These include companies building data centres and supplying their power, alongside major technology firms.",
+        "why_it_matters": "The report raises questions about corporate access at climate negotiations as the environmental footprint of data centres draws scrutiny. It says some company representatives join country teams that can speak directly with negotiating diplomats.",
+        "for_humans": "The report questions company access to climate negotiators while data centres’ environmental footprint draws scrutiny.",
+        "for_ai": "Companies supplying AI’s buildings, computing equipment and power are represented at the climate talks.",
+        "body_paragraphs": [
+          "The article distinguishes company representatives from official country teams. It says mandatory disclosure of employers since 2023 made this count possible.",
+          "It also describes a proposed voluntary agreement on AI environmental risks and renewable power for data centres. The article reports limited interest and cancellation of the planned announcement press conference."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 2
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 2
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 9
+          }
+        ]
+      }
+    },
+    "f04af8dc-c8e2-4063-ba2d-013fae2f63de": {
+      "evidence_sha256": [
+        "c891a1b1fe9d93ac49f917723e1224c055e536571e4c1b4b307f9e337e8a1817"
+      ],
+      "source_urls": [
+        "https://www.ledevoir.com/culture/1026008/ere-ia-dictionnaire-cambridge-sacre-human-mot-annee"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Cambridge names human its word of the year amid questions raised by AI",
+        "editorial_deck": "Lexicographers connect the choice to debate about work, creativity and what separates people from machines.",
+        "what_happened": "Cambridge Dictionary has named human its word of the year for 2026, Le Devoir reports. Lexicographer Francesca Woodward links the choice to questions about human identity as artificial intelligence (AI) spreads.",
+        "why_it_matters": "Woodward says people are asking what it means to be human, including amid concern about AI replacing jobs. The dictionary has also observed more use of phrases that identify work as made or written by people.",
+        "for_humans": "Lexicographers connect the choice to debate about identity and concern that AI could replace some jobs.",
+        "for_ai": "",
+        "body_paragraphs": [
+          "The report also discusses agent, a term for AI software that can carry out complex tasks with limited human direction. It says the dictionary is considering other terms associated with anxiety about jobs and technological change."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 2
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 3
+          }
+        ]
+      }
+    },
+    "317f8ea0-9de0-4b1d-8e80-a5479803b779": {
+      "evidence_sha256": [
+        "69399fdf1852a4e02d7f74eab7d1e35d78219811c92097a74249ede8357f2338"
+      ],
+      "source_urls": [
+        "https://www.dw.com/zh/%E7%89%B9%E6%9C%97%E6%99%AE%E6%94%BF%E5%BA%9C%E8%80%83%E8%99%91%E5%BC%BA%E5%88%B6%E7%BE%8E%E4%BC%81%E6%8A%AB%E9%9C%B2%E4%B8%AD%E5%9B%BDai%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/a-79982497"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "US officials discuss requiring companies to disclose their use of Chinese AI",
+        "editorial_deck": "DW reports the idea remains under discussion, with its support and legal route uncertain.",
+        "what_happened": "US Treasury and White House technology-policy officials have discussed making American companies disclose their use of Chinese artificial intelligence (AI), DW reports, citing Reuters. The idea could require companies such as Airbnb to publish that information on their websites.",
+        "why_it_matters": "Airbnb uses Alibaba’s Qwen AI software for customer service, the report says. It describes officials’ concern about growing use of Chinese software whose learned settings can be downloaded and adapted.",
+        "for_humans": "",
+        "for_ai": "The discussed requirement could make US companies publicly identify Chinese AI software they use.",
+        "body_paragraphs": [
+          "The report says it is unclear whether the idea has broad support within the administration or how it would become a formal rule. It also describes the appeal of Chinese AI systems’ prices and performance to some American companies."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 0
+          }
+        ]
+      }
+    },
+    "9bd24aa2-2b5d-4000-be6f-07054671f1b4": {
+      "evidence_sha256": [
+        "4bd80fdf69b8d4cf5a6039a3dcd61facd41cc48e9107e870d9427be4a2f0bc9e"
+      ],
+      "source_urls": [
+        "https://www.arcom.fr/actualites/les-enjeux-lies-lintelligence-artificielle-en-periode-electorale"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Arcom outlines how AI can mislead voters and where to report suspect content",
+        "editorial_deck": "France’s media regulator explains election risks, legal duties and routes for complaints.",
+        "what_happened": "French media regulator Arcom has published an overview of election risks linked to artificial intelligence (AI). It describes convincing fake media, mass-produced misleading content and chatbots giving wrong answers as possible threats to informed voting.",
+        "why_it_matters": "The regulator connects these risks to French and European rules and explains where people can report suspected illegal material. It also describes duties applying specifically to very large online platforms and search engines.",
+        "for_humans": "Arcom warns that false AI answers and manipulated media can mislead voters.",
+        "for_ai": "Arcom describes rules on manipulative AI use and on making AI-generated content recognisable.",
+        "body_paragraphs": [
+          "The overview distinguishes risks from fake content, targeted recommendations and incorrect chatbot advice. It notes that platform policies differ: some prohibit misleading AI content on public issues, while others rely on labels.",
+          "People can report suspect content to the platform concerned. The notice also identifies French authorities for suspected criminal material, election offences and foreign digital interference."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 3
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 36
+          }
+        ]
+      }
+    },
+    "93b31c5a-f003-4ca9-822c-4d856065055d": {
+      "evidence_sha256": [
+        "8644da6637da6e4dde431cdd88659f6985b53e1849cfe36f9e8fc88aba34eef2"
+      ],
+      "source_urls": [
+        "https://theconversation.com/demain-lintelligence-artificielle-assistera-le-chirurgien-mais-qui-decidera-296871"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Researchers ask how future surgical AI could support judgment without taking it over",
+        "editorial_deck": "Their article separates existing visual demonstrations from a proposed assistant that could reason about an operation.",
+        "what_happened": "Researchers writing in The Conversation examine how artificial intelligence (AI) might help surgeons compare options during an operation. They distinguish current digital and virtual-reality demonstrations from a future assistant able to assess a changing surgical situation reliably.",
+        "why_it_matters": "The authors say such an assistant does not yet exist as a clinically validated tool. They argue that any future system should help doctors question options while preserving their responsibility for decisions.",
+        "for_humans": "A future assistant could help surgeons compare options, but the authors say reliability and real clinical benefits still need evaluation.",
+        "for_ai": "The authors envisage AI that explains uncertainty and supports a surgeon’s reasoning.",
+        "body_paragraphs": [
+          "Their teams can already reconstruct a patient’s heart from scans and build virtual operating-room scenes. They say it is too early to establish broadly applicable clinical or teaching benefits from these demonstrations.",
+          "The article argues that simulation results alone cannot establish readiness for real surgery. It also calls for designers, hospitals and authorities to share responsibility for reliable systems, safe use and protection of medical data."
+        ],
+        "claim_status": "opinion",
+        "limitation": "The proposed assistant is not an existing clinically validated tool; benefits in real care and training require evaluation.",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 29
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 1
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 38
+          }
+        ]
+      }
+    },
+    "e05b0a25-5bc0-4d77-a7aa-8ee8b7733f80": {
+      "evidence_sha256": [
+        "08ef1540ae88a42eca21285752695c0457078b828723060e9f8abecc91ce9bd2"
+      ],
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/how-arisglobal-scaled-generative-ai-inference-on-amazon-bedrock/"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "ArisGlobal reports 40% lower costs for running AI after reusing shared instructions",
+        "editorial_deck": "An AWS case study attributes the saving to changing which repeated material the system stores for reuse.",
+        "what_happened": "ArisGlobal says it reduced monthly spending on running its artificial intelligence (AI) software by about 40% after changing how repeated instructions are reused. The AWS case study concerns its system for processing reports of possible adverse reactions to medicines.",
+        "why_it_matters": "The shared instructions repeat across cases and customers. Storing that repeated part for reuse, rather than each case’s document, reduced the amount of material processed again at the full rate, the companies report.",
+        "for_humans": "",
+        "for_ai": "ArisGlobal reports lower AI running costs by reusing instructions shared across cases and customers.",
+        "body_paragraphs": [
+          "The earlier design stored a case document for reuse within that case. The revised design puts common instructions first and handles the changing case document separately.",
+          "The post attributes the figures to ArisGlobal’s production measurements. It reports about 50% lower effective input cost and about 40% lower monthly spending on running the AI, with results depending on traffic and reuse patterns."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 93
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 2
+          }
+        ]
+      }
+    },
+    "9e31d92d-0e24-4aae-9914-d53069eeb6ad": {
+      "evidence_sha256": [
+        "6213604d0dfb04f7135bc73c16321619994c63c464307aeaee474536a870cbc7"
+      ],
+      "source_urls": [
+        "https://aws.amazon.com/blogs/machine-learning/how-standard-bank-group-automates-ai-risk-assessment-for-generative-ai/"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Standard Bank automates AI evidence checks while people retain approval decisions",
+        "editorial_deck": "An AWS case study describes software that tests applications and prepares reports for the bank’s risk committee.",
+        "what_happened": "Standard Bank Group has automated parts of the assessment used before an artificial intelligence (AI) application reaches staff or customers. An AWS case study says the system gathers documents, examines code and tests answers against the bank’s policies and international standards.",
+        "why_it_matters": "The software prepares evidence for reviewers, while the risk committee still decides whether an application can proceed. The companies report that generating a risk report took about two hours across six assessments, compared with a previously manual two-week review.",
+        "for_humans": "Bank reviewers receive collected evidence and can amend findings before people make the approval decision.",
+        "for_ai": "The bank uses AI to check evidence about AI applications against defined questions.",
+        "body_paragraphs": [
+          "The checks examine documentation, policy files, code and live answers from the application. Some tests repeat or reword questions, and others attempt to make the system ignore its safeguards.",
+          "Reports link findings to the evidence and relevant rule. The post says the assessment does not certify that legal requirements have been met; the bank remains responsible for those judgments."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 14
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 6
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 76
           }
         ]
       }
