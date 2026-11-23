@@ -442,6 +442,72 @@
       ]
     },
     {
+      "id": "902c930a4fb1772c6dd8",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/23/content_WS6b0384dbc6d00ca5f9a0e904.html",
+      "date": "2026-11-23",
+      "headline": "China and Singapore express interest in deeper AI cooperation and broader bilateral ties.",
+      "summary": "Chinese Vice Premier Ding Xuexiang and Singaporean Prime Minister Lawrence Wong discussed deepening bilateral cooperation, including in AI, green development and the digital economy, and strengthening people-to-people ties. Wong said Singapore would use its upcoming ASEAN chairmanship to advance cooperation between ASEAN and China.",
+      "body_paragraphs": [],
+      "input_fingerprint": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d",
+      "key": "event:c9dde63e-b2e9-53a0-808f-bbd2c8c6384e",
+      "kind": "news",
+      "section": "governments",
+      "slug": "china-singapore-express-interest-deeper-ai-bilateral-ties",
+      "path": "story/china-singapore-express-interest-deeper-ai-bilateral-ties/index.html",
+      "deck": "Chinese Vice Premier Ding Xuexiang and Singaporean Prime Minister Lawrence Wong discussed deepening bilateral cooperation, including in AI, green development and the digital economy, and strengthening people-to-people ties. Wong said Singapore would use its upcoming ASEAN chairmanship to advance cooperation between ASEAN and China.",
+      "publisher": "Government of China",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of China",
+          "headline": "Official government announcement",
+          "url": "https://english.www.gov.cn/news/202611/23/content_WS6b0384dbc6d00ca5f9a0e904.html",
+          "date": "2026-11-23",
+          "language": ""
+        }
+      ],
+      "display_date": "23 Nov 2026",
+      "markets": [],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": {
+        "subjects": [
+          "Lawrence Wong"
+        ],
+        "path": "assets/spotlight/wong.jpg",
+        "width": 675,
+        "height": 900,
+        "alt": "Lawrence Wong in Singapore.",
+        "caption": "Archive photograph · Lawrence Wong in Singapore, August 2026.",
+        "credit": "Isaac Castillo / Presidency of Ecuador",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Lawrence_Wong%2C_August_2026_%28cropped%29.jpg",
+        "license": "Public domain",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "dcd61ad41ecfc702f8115bf28a418c687a8d3750824778084c6b217c785eed79"
+      },
+      "show_feed_photo": true,
+      "legacy_paths": [
+        "story/government-c9dde63e-b2e9-53a0-808f-bbd2c8c6384e/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Thus Spake Zarathustra",
       "content_fingerprint": "b02495ef65cad16150bea8b070f4fea285a74a36c677710dcb900680e8ca2be1",
       "creator": "Friedrich Nietzsche",
@@ -1187,6 +1253,57 @@
       },
       "legacy_paths": [
         "story/development-043fcc16-9866-4fa7-ba06-80dc0b5e0f94/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "530b3338da125dde09c7",
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/22-wilmes-cop31.html",
+      "date": "2026-11-22",
+      "headline": "Luxembourg announces a fossil-fuel phase-out roadmap and an AI-supported marketplace for climate projects.",
+      "summary": "At COP31 in Antalya, Luxembourg and the EU advocated stronger science-based commitments, including phasing out fossil fuels, but the main decision omitted them. Luxembourg announced a national phase-out roadmap, held meetings and events, launched an AI-supported funding marketplace, and supported youth engagement.",
+      "body_paragraphs": [],
+      "input_fingerprint": "664ba746a95d214447d5ba110ddb413527d0755f814c5c3d0f1aa7582075d7c2",
+      "key": "event:107e436f-c28f-5382-8476-adceed116e32",
+      "kind": "news",
+      "section": "governments",
+      "slug": "luxembourg-announces-fossil-fuel-phase-out-roadmap-ai-supported-climate-projects",
+      "path": "story/luxembourg-announces-fossil-fuel-phase-out-roadmap-ai-supported-climate-projects/index.html",
+      "deck": "At COP31 in Antalya, Luxembourg and the EU advocated stronger science-based commitments, including phasing out fossil fuels, but the main decision omitted them. Luxembourg announced a national phase-out roadmap, held meetings and events, launched an AI-supported funding marketplace, and supported youth engagement.",
+      "publisher": "Government of Luxembourg",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Luxembourg",
+          "headline": "Official government announcement",
+          "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/22-wilmes-cop31.html",
+          "date": "2026-11-22",
+          "language": ""
+        }
+      ],
+      "display_date": "22 Nov 2026",
+      "markets": [],
+      "market_label": "Luxembourg",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-107e436f-c28f-5382-8476-adceed116e32/index.html"
       ],
       "url_slug_version": 1
     },
@@ -2798,7 +2915,7 @@
         "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
         "sha256": "dcd61ad41ecfc702f8115bf28a418c687a8d3750824778084c6b217c785eed79"
       },
-      "show_feed_photo": true,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-23af75f7-7071-5ea6-bcf5-4fb9cdff7853/index.html"
       ],
@@ -29687,7 +29804,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-23T09:03:51.964133+00:00",
+      "affiliation_checked_at": "2026-11-23T09:08:39.860035+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
