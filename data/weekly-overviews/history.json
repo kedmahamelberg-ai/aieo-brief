@@ -81,12 +81,12 @@
             "name": "Canada",
             "count": 33,
             "topic": "Business And Investment",
-            "sentence": "Canada: the discovery stream centred most often on business and investment, including “Sonali Sharma argues Canadian AI sovereignty must include who controls knowledge….”",
+            "sentence": "Canada: the discovery stream centred most often on business and investment, including “Quebec professor says AI firms may face suits over reputation-damaging false….”",
             "story": {
-              "headline": "Sonali Sharma argues Canadian AI sovereignty must include who controls knowledge and shares the gains",
-              "path": "story/ai-sovereignty-canada-who-will-benefit-artificial-intelligence/index.html",
-              "publisher": "Retail Insider",
-              "source_url": "https://retail-insider.com/retail-insider/2026/11/ai-sovereignty-in-canada-who-will-benefit-from-the-economic-value-of-artificial-intelligence"
+              "headline": "Quebec professor says AI firms may face suits over reputation-damaging false claims; no local ruling exists",
+              "path": "story/who-responsible-when-artificial-intelligence-defames/index.html",
+              "publisher": "Le Soleil",
+              "source_url": "https://www.lesoleil.com/actualites/justice-et-faits-divers/2026/11/17/qui-est-responsable-quand-lintelligence-artificielle-diffame-B5S73AO5QVFCHPROQBEMR2HS2M"
             }
           }
         ],
@@ -126,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "9ceb9b51abc18eff302685cf458ca34d6d8d0d7b9623d8540eb54b47680634c9"
+      "content_sha256": "65daa670a21924007f2f05f7e4118a58387a65c804a587b47c12e3ab7b9e7ccb"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
