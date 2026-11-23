@@ -1,35 +1,40 @@
 # Independent daily clock for Governments say
 
-Status: prepared, **not activated**. The SQL is inert until the separate activation script is run. On 17 November 2026, the existing Monitor scheduler credential could read the Brief workflow (HTTP 200) but a no-force dispatch returned HTTP 403, with GitHub requiring `actions=write`. It must not be reused or broadened silently.
+Status: the 16:20 backup is active. On 23 November, the Brief-only Vault token and `brief-government-1620-amsterdam` cron job were verified in the live project. The Morning backup is defined in `government-morning-clock.sql` and has its own daily idempotency table.
 
 ## Why this exists
 
 The Monitor's 15:00 Europe/Amsterdam collection succeeded on both 16 and 17 November, but GitHub did not create the Brief government's scheduled 16:05 event or the later :35 retry events. The Brief's own due gate was ready. A separate Supabase pg_cron clock removes dependence on GitHub's schedule event delivery. GitHub runner queues can still delay execution.
 
-The backup dispatches the existing main-branch `collect-government-briefs.yml` at **16:20 Europe/Amsterdam**. It sets `force_refresh=false`; it does not collect Monitor sources or run an editorial model. The existing `government_brief_schedule.py` saved-date guard skips a second import after one already ran. The workflow's `brief-government-announcements` concurrency group serializes overlapping wakeups. The external clock sends at most one request per Amsterdam date. It intentionally leaves GitHub's cron entries as the primary trigger.
+The backups dispatch the existing main-branch `collect-government-briefs.yml` at **10:20 and 16:20 Europe/Amsterdam**. They set `force_refresh=false`; they do not collect Monitor sources or run an editorial model. The import compares the current Monitor feed to saved fingerprints, so a changed morning item is imported even if the preceding afternoon ran. The workflow's `brief-government-announcements` concurrency group serializes overlapping wakeups. Each external clock sends at most one request per Amsterdam date. GitHub's own scheduled checks remain in place.
 
-## Activation after owner approval
+## Morning activation
 
-1. Create a new fine-grained GitHub token with access only to `kedmahamelberg-ai/aieo-brief` and **Actions: Read and write**. No Contents write permission is needed. Set an expiry and renewal reminder. Creating this token or adding Brief access to an existing token expands security-sensitive access and requires owner approval.
-2. Store the token in Supabase Vault in project `jnzibjjejmfochertwco` as `brief_github_actions_dispatch`. Never put it in repository files, SQL text, logs, or browser URLs.
-3. Apply `government-independent-clock.sql` in that project. It creates a private schema, a private idempotency table, and the dispatch function, but no cron job.
-4. Test a no-force dispatch using the Vault secret. Require GitHub API **HTTP 204** and a corresponding workflow run. If today's import already happened, the due gate must skip collection and publication. Check that no second import occurred.
-5. Apply `government-independent-clock-activate.sql`. Verify the named cron job is active. After the next 16:20 Amsterdam slot, check `brief_scheduler.dispatches`, the matching `net._http_response` status, the GitHub workflow run, saved `last_checked_at`, and the live deployed feed. An enqueued HTTP request alone is not proof of a successful import.
+The owner already stored the Brief-only Actions read/write token in Supabase Vault as `brief_github_actions_dispatch`; the 16:20 clock uses it. Do not copy the token into repository files, SQL text, logs, or browser URLs.
 
-The existing `monitor_github_actions_dispatch` token expires on **10 February 2027**, according to GitHub's authenticated `github-authentication-token-expiration` response header checked on 17 November 2026. This Brief backup uses its own token and does not alter the Monitor collectors or clocks.
+Apply `government-morning-clock.sql` in project `jnzibjjejmfochertwco`. It requires the existing token and active afternoon clock, creates a separate private morning idempotency table, and registers `brief-government-1020-amsterdam`. The local-time window follows daylight saving. Calling `brief_scheduler.dispatch_morning()` outside 10:20–10:25 returns `outside morning backup window` without dispatching.
+
+After the next 10:20 Amsterdam slot, verify the new dispatch row, GitHub API HTTP 204 while the response record is retained, the corresponding `workflow_dispatch` run, saved `last_checked_at`, and the live Brief feed. An enqueued HTTP request alone does not prove import or publication.
+
+The existing `monitor_github_actions_dispatch` token expires on **10 February 2027**, according to GitHub's authenticated `github-authentication-token-expiration` response header checked on 17 November 2026. The Brief backups use their own token and do not alter the Monitor collectors or clocks.
 
 ## Inspection
 
 ```sql
 select jobid, jobname, schedule, active from cron.job
-where jobname = 'brief-government-1620-amsterdam';
+where jobname in ('brief-government-1020-amsterdam', 'brief-government-1620-amsterdam');
 
 select d.import_date, d.requested_at, r.status_code, r.timed_out, r.error_msg
 from brief_scheduler.dispatches d
+left join net._http_response r on r.id = d.request_id
+order by d.import_date desc limit 7;
+
+select d.import_date, d.requested_at, r.status_code, r.timed_out, r.error_msg
+from brief_scheduler.morning_dispatches d
 left join net._http_response r on r.id = d.request_id
 order by d.import_date desc limit 7;
 ```
 
 The `net._http_response` rows are transient. Inspect GitHub runs and the saved feed before any retry. Do not blindly dispatch a second run.
 
-To disable the backup, use `cron.alter_job(job_id := <verified job id>, active := false)`. Do not edit `cron.job` directly. The Brief's GitHub cron and saved-date gate remain in place.
+To disable a backup, use `cron.alter_job(job_id := <verified job id>, active := false)`. Do not edit `cron.job` directly. The Brief's GitHub cron and saved-date gate remain in place.
