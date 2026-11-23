@@ -66,7 +66,7 @@ class NewsFeed(HTMLParser):
    if tag=='div':self.depth+=1
    if tag=='article' and 'data-story-card' in values and values.get('data-kind')=='news':
     self.keys.append(values.get('data-key'))
-    self.current={'key':values.get('data-key'),'status':values.get('data-editorial-status'),'href':''}
+    self.current={'key':values.get('data-key'),'status':values.get('data-editorial-status'),'href':'','hidden':'hidden' in values}
    if tag=='h2' and self.current:self.in_title=True
    if tag=='a' and self.current and self.in_title and not self.current['href']:
     self.current['href']=values.get('href','')
@@ -97,6 +97,12 @@ def validate_home_news_coverage(payload,html):
   raise ValueError(f'Homepage has {len(actual)} news cards for {len(expected)} Brief records; '
                    f'missing={missing[:5]}, extra={extra[:5]}')
  by_key={item['key']:item for item in stories+recent}
+ if recent:
+  current_keys={item['key'] for item in stories}
+  if set(actual[:len(stories)])!=current_keys:
+   raise ValueError('Current edition news must appear before earlier articles')
+  if any(not card['hidden'] for card in parser.cards if card['key'] not in current_keys):
+   raise ValueError('Earlier articles must be hidden in the default current-edition view')
  for card in parser.cards:
   item=by_key[card['key']]
   if item.get('has_editorial'):

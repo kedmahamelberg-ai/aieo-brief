@@ -1,7 +1,7 @@
 {% extends 'base.html' %}{% from 'components.html' import card,ad with context %}
 {% block content %}
 <main id="main-content" class="page-shell">
-<div class="edition-line"><span>LATEST OBSERVATORY EDITION</span><time>{{ period_label }}</time><a href="#news">{{ news_count }} full Brief articles · Latest and recent editions</a></div>
+<div class="edition-line"><span>LATEST OBSERVATORY EDITION</span><time>{{ period_label }}</time><a href="#news">{{ source_news_count }} developments in this edition · {{ news_count }} full Brief articles</a></div>
 <div class="daily-reading-label"><span class="eyebrow">TODAY’S READING · <time data-reading-date>{{ reading_date }}</time></span><span>A different way into this week’s news, every day.</span></div>
 <script id="daily-rotation" type="application/json">{{ rotation|tojson }}</script>
 <section class="opening" aria-label="Start reading">
@@ -41,11 +41,13 @@
 <section class="feed-column" id="news" aria-label="News feed">
 <div class="section-heading"><h2>Make time for what matters to you.</h2><span>Read a little. Leave with more clarity.</span></div>
 <div class="feed-controls">
+<label>Edition <select id="edition-filter"><option value="current" selected>This edition ({{ source_news_count }})</option><option value="earlier">Earlier completed articles ({{ recent_news_count }})</option><option value="all">All available news</option></select></label>
 <div class="market-tabs" aria-label="Discovery market"><button data-market="all" aria-pressed="true">All discovery feeds</button>{% for code,name in markets %}<button data-market="{{ code }}" aria-pressed="false">{{ name }}</button>{% endfor %}</div>
 <div class="filter-line"><label class="search-label"><span class="sr-only">Search news</span><input type="search" id="story-search" placeholder="Find a story or topic" autocomplete="off"></label><label><span class="sr-only">Order stories</span><select id="story-sort"><option value="daily">Today’s reading order</option><option value="latest">Newest reporting</option><option value="reads">Most read</option><option value="likes">Most liked</option><option value="comments">Most discussed</option></select></label><details class="filter-details"><summary>More filters</summary><label>Topic<select id="topic-filter"><option value="all">All topics</option>{% for value,label in topics %}<option value="{{ value }}">{{ label }}</option>{% endfor %}</select></label><label>Reported effects on people<select id="direction-filter"><option value="all">All readings</option><option value="gain">Benefits</option><option value="loss">Downsides</option><option value="mixed">Benefits and downsides</option><option value="none">No direction stated</option></select></label></details></div>
 <p class="filter-status" id="filter-status" aria-live="polite"></p>
 </div>
-<div id="story-feed">{% for item in feed %}{{ card(item) }}{% endfor %}</div>
+<div id="story-feed">{% for item in feed %}{{ card(item, hidden=item.edition!=release.release_id) }}{% endfor %}</div>
+<noscript><p><a href="{{ local('archive/index.html') }}">Read earlier editions in the archive</a>.</p></noscript>
 <div class="feed-ending"><button id="show-more-stories" class="button secondary" hidden>Read 8 more stories</button><p id="feed-complete">You have reached the end of this edition. Come back when it suits you.</p></div>
 </section>
 <aside class="reading-rail">
