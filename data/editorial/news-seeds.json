@@ -2418,6 +2418,44 @@
           }
         ]
       }
+    },
+    "0c7be4b3-e947-4db2-8b37-c4902c82c6b1": {
+      "evidence_sha256": [
+        "6948c875be22bd6084a3d26b66dd3ce49dcdeee7c1ca70156839500d0a94070b"
+      ],
+      "source_urls": [
+        "https://www.news.cn/liangzi/20261116/7acf1009b28a478b8afa3ca45fa38110/c.html"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Hefei AI meeting links research partnerships with factory and computing projects",
+        "editorial_deck": "Xinhua describes new cooperation agreements alongside industry accounts of how the technology is being used.",
+        "what_happened": "Researchers and companies met at an artificial intelligence (AI) conference in Hefei co-organised by Huawei and the local national science centre’s AI research institute. Xinhua reports cooperation agreements alongside presentations on manufacturing, medicine and computing.",
+        "why_it_matters": "Speakers argued for closer links between basic research, practical uses and the computing equipment needed to run AI. The institute signed agreements with Huawei and other research and technology organisations.",
+        "for_humans": "Reported uses of health equipment include care in hospitals and local public-health and sports organisations.",
+        "for_ai": "New partnerships plan joint AI research and training, the report says.",
+        "body_paragraphs": [
+          "A cement-company representative described using AI to predict the strength of material used to make cement, with reported accuracy above 85%. The example concerns a Wuhu production site.",
+          "The article also describes automated laboratory experiments. A research institute says its health equipment is used at more than 50 hospitals and more than 200 local public-health and sports organisations. Computing providers discuss matching some non-urgent AI training with available renewable electricity."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 10
+          }
+        ]
+      }
     }
   }
 }
