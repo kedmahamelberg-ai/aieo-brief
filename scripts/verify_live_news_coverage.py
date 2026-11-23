@@ -3,11 +3,13 @@
 import json
 import os
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
+from bs4 import BeautifulSoup
 
 from brief_contract import relationship_fingerprint, validate_complete_export
 from source_chronology import public_event_ids
@@ -55,6 +57,48 @@ def get(session, url):
     return response
 
 
+def verify_story_page(story, html):
+    """A complete data record must have the same prose and sources on its route."""
+    key = story['event_id']
+    if not story.get('what_happened') or not story.get('body_paragraphs'):
+        raise ValueError(f'Completed news record {key} has no article body')
+    soup = BeautifulSoup(html, 'html.parser')
+    if any(str(meta.get('http-equiv', '')).lower() == 'refresh'
+           for meta in soup.find_all('meta')):
+        raise ValueError(f'Live article {key} redirects instead of displaying the article')
+    for node in soup(['script', 'style', 'noscript']):
+        node.decompose()
+    visible = ' '.join(soup.get_text(' ', strip=True).split())
+    fields = {field: story.get(field) for field in
+              ('headline', 'deck', 'what_happened', 'why_it_matters',
+               'for_humans', 'for_ai', 'limitation')}
+    fields.update({f'body_paragraphs[{i}]': value
+                   for i, value in enumerate(story['body_paragraphs'])})
+    for field, value in fields.items():
+        if value and ' '.join(str(value).split()) not in visible:
+            raise ValueError(f'Live article {key} is missing its saved {field}')
+    links = {anchor.get('href') for anchor in soup.find_all('a', href=True)}
+    for source in story.get('sources') or []:
+        if source.get('url') not in links:
+            raise ValueError(f'Live article {key} is missing its saved source URL')
+
+
+def verify_article_routes(brief):
+    stories = [story for story in brief.get('stories') or [] if story.get('has_editorial')]
+    def check(story):
+        url = urljoin(BRIEF, story['path'].removesuffix('index.html'))
+        if urlparse(url).netloc != urlparse(BRIEF).netloc:
+            raise ValueError(f'News route leaves the Brief: {story["event_id"]}')
+        with requests.Session() as session:
+            page = get(session, url)
+        if urlparse(page.url).netloc != urlparse(BRIEF).netloc:
+            raise ValueError(f'News route redirects outside the Brief: {story["event_id"]}')
+        verify_story_page(story, page.text)
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        list(pool.map(check, stories))
+    return len(stories)
+
+
 def main():
     error = None
     for attempt in range(3):
@@ -64,6 +108,7 @@ def main():
                 brief = get(session, urljoin(BRIEF, 'data/current.json')).json()
                 homepage = get(session, BRIEF).text
             report = verify(observatory, brief, homepage)
+            report['live_article_routes_verified'] = verify_article_routes(brief)
             report['checked_at'] = datetime.now(timezone.utc).isoformat()
             print(json.dumps(report, indent=2))
             if os.environ.get('GITHUB_STEP_SUMMARY'):
@@ -71,7 +116,8 @@ def main():
                     summary.write(f"Live news coverage: {report['observatory_developments']} Observatory "
                                   f"developments, {report['brief_records']} Brief records, "
                                   f"{report['rendered_news_cards']} homepage cards, "
-                                  f"{report['full_brief_articles']} full Brief articles.\n")
+                                  f"{report['full_brief_articles']} full Brief articles; "
+                                  f"{report['live_article_routes_verified']} live bodies and source links verified.\n")
             return
         except (ValueError, KeyError, requests.RequestException) as exc:
             error = exc
