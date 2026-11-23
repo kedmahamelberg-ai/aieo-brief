@@ -18,6 +18,14 @@ from validate_public_site import validate_news_layout, validate_news_boxes
 
 
 class NewsReading(unittest.TestCase):
+    def test_fused_comma_is_rejected_in_all_public_news_copy(self):
+        for field in ('what_happened', 'body_paragraphs', 'for_ai'):
+            with self.subTest(field=field):
+                draft = {field: ['The model has weights,the settings learned during training.']
+                         if field == 'body_paragraphs' else 'The model has weights,the settings learned during training.'}
+                self.assertIn('space after the comma', news_reading.draft_punctuation_problem(draft))
+        self.assertEqual(news_reading.draft_punctuation_problem({'what_happened': 'The company raised $1,234.'}), '')
+
     def test_chinese_event_ordinal_does_not_hide_a_supported_article(self):
         draft, sources = fixture()
         sources[0]['evidence'] += ' 第十四届论坛呼吁合作。'
