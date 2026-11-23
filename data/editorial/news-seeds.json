@@ -2381,6 +2381,43 @@
           }
         ]
       }
+    },
+    "a6069bf9-57ea-419b-8276-f56ab8a5afb4": {
+      "evidence_sha256": [
+        "50f210d066b918f77120ad28bbf812ad6a0449ac578902d268066ad2f12ee56f"
+      ],
+      "source_urls": [
+        "http://jxt.hubei.gov.cn/bmdt/rdjj/202611/t20261116_6123055.shtml"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Tsinghua-linked AI security company signs deal for regional headquarters in Wuhan",
+        "editorial_deck": "The project plans safety testing, manipulated-media detection and research partnerships in central China.",
+        "what_happened": "Artificial intelligence (AI) security company 深侬科技 has signed an agreement for a regional headquarters in Wuhan’s Optics Valley. A release on Hubei’s industry-department website describes the company’s Tsinghua University roots and its planned regional security services.",
+        "why_it_matters": "The headquarters is intended to support AI security research and cooperation across regions. The company plans to work with local universities and research institutes on technical research, standards and recruitment.",
+        "for_humans": "",
+        "for_ai": "Planned services include AI safety tests and detection of manipulated media.",
+        "body_paragraphs": [
+          "The release describes planned services for central China and the Yangtze River Economic Belt, including tests of AI software and exercises that look for security weaknesses. It also reports recent financing and the company’s participation in AI security standards work."
+        ],
+        "claim_status": "reporting",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 0
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 1
+          }
+        ]
+      }
     }
   }
 }
