@@ -7363,6 +7363,186 @@
       },
       "output_sha256": "334f0a341ea74f6ad531c2191e0297b21a6b21d015749de7368a642530932c89",
       "policy": "brief-english-display-v1"
+    },
+    "226842619d939c0a49db996d7e0e945aaab8c8fe1cf012e9ab5f4c9e7b381c67": {
+      "english": {
+        "0": "Original reporting at MIT Technology Review. No checked brief article is available yet.",
+        "1": "MIT Technology Review",
+        "2": "MIT Technology Review"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "47930f35f69737673dded0e6a225aaf86e15b189a2bf9cf3b43d81258240308f",
+      "policy": "brief-english-display-v1"
+    },
+    "b8dd8fd2ea4d37390ac695982efabf7e431edbd2f30bd140560a7f5144260bdd": {
+      "english": {
+        "0": "Original reporting at Observer Network. No checked Brief article is available yet.",
+        "1": "Observer Network",
+        "2": "Observer Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c76788fbdd5ba9036fb950eddfa36f69632f5ab3c6eeb89b9b3e2cfbdb5a54e7",
+      "policy": "brief-english-display-v1"
+    },
+    "81c0106b58192e4938cd42205fbe0d4751290d80ce1a8bde569fd24bd3ae15f2": {
+      "english": {
+        "0": "Original reporting at East China Normal University. No checked Brief article is available yet.",
+        "1": "East China Normal University",
+        "2": "East China Normal University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8012a57f50c96e4f6c4f4f5b96d9332674300f5b34c5b8dcb40b63bf829f9c70",
+      "policy": "brief-english-display-v1"
+    },
+    "ca94483ade8caf218f9ca933be04b6e5b7eed2e3ab2a70a0655521d0790e2a47": {
+      "english": {
+        "0": "Original reporting at Hunan Normal University. No checked brief article is available yet.",
+        "1": "Hunan Normal University",
+        "2": "Hunan Normal University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8e9277449d55c3b31407a826f711f0348d16aa588f74841adf5d2918f9292d92",
+      "policy": "brief-english-display-v1"
+    },
+    "4d8f2b64a4ace1d61e469084055f49959e1454fb06753834a1a0f14d06104ac6": {
+      "english": {
+        "0": "Original reporting at Jiangsu Cyberspace Administration Office. No checked Brief article is available yet.",
+        "1": "Jiangsu Cyberspace Administration Office",
+        "2": "Jiangsu Cyberspace Administration Office"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ad5c64f1c89413a37fd92d8b8a586b4f1e56dc3b5c5e551e3cd7030fa17db72c",
+      "policy": "brief-english-display-v1"
+    },
+    "791b032ae5c04408adfcb98bb7767fc41a6918a8477a39f4a95fb0913e6194d2": {
+      "english": {
+        "0": "Original reporting at USTC News. No checked Brief article is available yet.",
+        "1": "USTC News",
+        "2": "USTC News"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f1aae8873216ec48873e2b6b2f921bd70b1e5d81db250d0c9159258654afd99c",
+      "policy": "brief-english-display-v1"
+    },
+    "e0b39d39a88ea550d8b9c0a829ad94099e3ebff714a1f08f18ad2afdfcc7dfa9": {
+      "english": {
+        "0": "Original reporting at Fudan Development Research Institute. No checked brief article is available yet.",
+        "1": "Fudan Development Research Institute",
+        "2": "Fudan Development Research Institute"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "ccaea081208cf194b2c6ed468b712f38f41399cf740b38b5b8c473b24b5c8b59",
+      "policy": "brief-english-display-v1"
+    },
+    "08e5eee90f367885f9f2e52b393dd165c8e852e24cb2cf47df747a384ef2ac5b": {
+      "english": {
+        "0": "Original reporting at Hubei Provincial Department of Economy and Information Technology. No checked Brief article is available yet.",
+        "1": "Hubei Provincial Department of Economy and Information Technology",
+        "2": "Hubei Provincial Department of Economy and Information Technology"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "273315829c62c5ecac656531dc9cb26f30fdaa08098bd4c654e132ab80e5979e",
+      "policy": "brief-english-display-v1"
+    },
+    "43a4278fedf2c5b4b3659712fc1630408f570dedb9328e7e781ebda80a43aecc": {
+      "english": {
+        "0": "Original reporting at Xinhua Net. No checked brief article is available yet.",
+        "1": "Xinhua Net",
+        "2": "Xinhua Net"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "36bc5a60bb951efced64cf4f8e6342c8be188c7cc56743bd696dacd022907944",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
@@ -7371,6 +7551,12 @@
     "2d712feb0c240ca45199198da7581e52225e40616ce7e94ad3d4344bc3e60ab4": "brief-english-failure-v1",
     "e43444b2ffe477bd94bf0c81aa88d6bc27db152989cebf082edf3e49ea7d988a": "brief-english-failure-v1",
     "07c1586d24de75dba818cb0f7bbddfbddd1b4cd34ac003c63d34ac73b405c4f2": "brief-english-failure-v1",
-    "f593db2026d7536acf7bc92f8737791c29794de877552db85d01543608ccc090": "brief-english-failure-v1"
+    "f593db2026d7536acf7bc92f8737791c29794de877552db85d01543608ccc090": "brief-english-failure-v1",
+    "e8d6be36562d85a08e037979085ad8fe4b1080a47d36514f168724b4b75fa12b": "brief-english-failure-v1",
+    "9e4a99303ac979000989c4fe6a7d6ba2ea1fc2823185ad9d8e45b8cb08996a67": "brief-english-failure-v1",
+    "68ec1f5011e57ba581fa3dba49621a5051cfc3972999a1348651c1aa99c896d1": "brief-english-failure-v1",
+    "7995e01a621af0e55bef0f6696dc5a51ea49d01ad7666968805a44fdd7fc5b8c": "brief-english-failure-v1",
+    "2cb1fce9fb2a09d21f51638e669f72136fc15467c9ec32615cb1e37a99eafaca": "brief-english-failure-v1",
+    "40fd5b43dbdf649fd188a8d8fff2f5112848f40aadab3d2834decc93a47f80a5": "brief-english-failure-v1"
   }
 }

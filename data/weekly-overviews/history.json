@@ -29,12 +29,12 @@
             "name": "China",
             "count": 24,
             "topic": "Work And Skills",
-            "sentence": "China: work and skills stood out in the selected coverage; one example was “Focus on AI security! Shennong Technology’s Central China headquarters is located….”",
+            "sentence": "China: work and skills stood out in the selected coverage; one example was “BBC: Anthropic’s planned IPO could test AI’s market value, but may….”",
             "story": {
-              "headline": "Focus on AI security! Shennong Technology’s Central China headquarters is located in Wuhan.",
-              "path": "story/focus-ai-security-shennong-technologys-central-located-wuhan/index.html",
-              "publisher": "Hubei Provincial Department of Economy and Information Technology",
-              "source_url": ""
+              "headline": "BBC: Anthropic’s planned IPO could test AI’s market value, but may not settle bubble fears",
+              "path": "story/can-anthropics-record-breaking-ipo-prevent-ai-bubble-bursting/index.html",
+              "publisher": "BBC",
+              "source_url": "https://www.bbc.com/zhongwen/articles/cw7v2zlle4v4o/simp"
             }
           },
           {
@@ -95,7 +95,9 @@
         "status": "pending",
         "prose": [],
         "papers": [],
-        "pending_reason": "sources_incomplete"
+        "pending_reason": "generation_pending",
+        "input_hash": "b20fcc27ce4de021e52bca1bb1edfecef44929c572afcb3976e01042d6989211",
+        "attempts": 0
       },
       "research": {
         "kind": "research",
@@ -124,7 +126,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "2a9d754bc8f6fff9da87acc1a5373faa44853d4d6e965ed9956900991e85606d"
+      "content_sha256": "f6eb9f31653f163e897eb0731f76bbbd82251697471f8bc387eeff7db3a8917b"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
