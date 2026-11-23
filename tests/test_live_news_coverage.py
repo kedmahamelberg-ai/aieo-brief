@@ -21,12 +21,12 @@ class LiveNewsCoverage(unittest.TestCase):
                       'period_end': '2026-11-22', 'source_release_sha256': 'source-hash',
                       'source_relationship_sha256': relationship_fingerprint(self.relationship),
                       'story_count': 1, 'stories': [{'event_id': 'one', 'key': 'event:one',
-                                                     'has_editorial': False,
+                                                     'has_editorial': False, 'path':'story/one/index.html',
                                                      'sources': [{'url': 'https://publisher.example/story'}]}],
                       'complete_content': {'eligible_event_ids': ['one']}}
         self.homepage = ('<div id="story-feed"><article class="feed-story" data-story-card '
                          'data-kind="news" data-key="event:one" data-editorial-status="source-only">'
-                         '<h2><a href="https://publisher.example/story">Report</a></h2>'
+                         '<h2><a href="story/one/">Report</a></h2>'
                          '</article></div>')
 
     def test_source_only_report_remains_visible_and_counted(self):
@@ -35,6 +35,13 @@ class LiveNewsCoverage(unittest.TestCase):
             result = verify({}, self.brief, self.homepage)
         self.assertEqual((result['observatory_developments'], result['brief_records'],
                           result['rendered_news_cards'], result['full_brief_articles']), (1, 1, 1, 0))
+
+    def test_headline_cards_cannot_hide_missing_source_ready_articles(self):
+        self.brief['stories'][0]['evidence_complete'] = True
+        with patch('verify_live_news_coverage.validate_complete_export',
+                   return_value=(self.release, self.relationship)):
+            with self.assertRaisesRegex(ValueError, 'still lack a completed Brief article'):
+                verify({}, self.brief, self.homepage)
 
     def test_two_cards_for_many_records_fails_publication_gate(self):
         larger = {**self.brief, 'story_count': 2,

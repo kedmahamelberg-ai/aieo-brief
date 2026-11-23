@@ -18,6 +18,22 @@ from validate_public_site import validate_news_layout, validate_news_boxes
 
 
 class NewsReading(unittest.TestCase):
+    def test_changed_publisher_source_does_not_inherit_old_article_lock(self):
+        eid='00000000-0000-0000-0000-000000000001'
+        release={'evidence':[{'event_id':eid,'event_date':'2026-11-20','sources':[{'url':'https://publisher.example/new'}]}],
+                 'complete_content':False,'content_sha256':'edition','release_id':'2026-W47'}
+        sym={'evidence':[{'event_id':eid}]}
+        source={'source_number':1,'publisher':'Source','headline':'Article','evidence':'Complete source text.'}
+        with tempfile.TemporaryDirectory() as folder, patch.object(news,'ROOT',Path(folder)), \
+             patch.object(news,'corrections',return_value={'event:'+eid:{'what_happened':'Earlier article'}}), \
+             patch.object(news,'is_locked',return_value=True), \
+             patch.object(news,'reviewed_source_url_sets',return_value={'event:'+eid:{('https://publisher.example/old',)}}), \
+             patch.object(news,'fixed_relationship',return_value={'axes':{'evidence_complete':True}}), \
+             patch.object(news,'source_payload',return_value=[source]), \
+             patch.object(news,'fingerprint',return_value='input'),patch.object(news,'version_valid',return_value=False):
+            selected,_,_=news.candidates(release,sym,({}, {}, {},{}))
+        self.assertEqual([item['eid'] for item in selected],[eid])
+
     def test_fused_comma_is_rejected_in_all_public_news_copy(self):
         for field in ('what_happened', 'body_paragraphs', 'for_ai'):
             with self.subTest(field=field):

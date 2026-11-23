@@ -310,6 +310,17 @@ def completed_news(items):
             and item.get('what_happened') and item.get('body_paragraphs')]
 
 
+def recent_completed_news(current, archive):
+    """Keep the preceding edition's finished articles on the home reading feed."""
+    keys = {item['key'] for item in current}
+    editions = {item.get('edition', '') for item in current}
+    prior = [item for item in completed_news(archive)
+             if item.get('kind') == 'news' and item['key'] not in keys
+             and item.get('edition', '') < max(editions, default='')]
+    latest = max((item.get('edition', '') for item in prior), default='')
+    return [item for item in prior if item.get('edition', '') == latest]
+
+
 def absolute_url(baseurl, path):
     return (baseurl.rstrip('/') + '/' + path.lstrip('/')) if baseurl and path else ''
 
@@ -465,14 +476,17 @@ def main():
     sponsor_active=sponsor_is_active(config,today,preview)
     # Every eligible Observatory development stays discoverable in the news
     # feed. Only checked Brief articles may become the lead or a highlight.
-    feed_news=list(news)
-    featured_news=completed_news(news)
+    recent_news=recent_completed_news(news,allcards)
+    feed_news=list(news)+recent_news
+    featured_news=completed_news(feed_news)
     market_counts={code:sum(code in c['markets'] for c in feed_news) for code,_ in MARKETS}
     rotation=rotation_plan(feed_news, release['release_id'], release['period_end'])
     featured_rotation=rotation_plan(featured_news, release['release_id'], release['period_end'])
     for layout, featured_layout in zip(rotation['layouts'],featured_rotation['layouts']):
         layout['lead']=featured_layout['lead']
         layout['highlights']=featured_layout['highlights']
+        statuses={item['key']:not item.get('has_editorial') for item in feed_news}
+        layout['order'].sort(key=lambda key:statuses[key])
     day_layout=rotation['layouts'][rotation['slot']]
     bykey={c['key']:c for c in feed_news}
     lead=bykey.get(day_layout['lead'])
@@ -577,6 +591,7 @@ def main():
     (data/'short-links.json').write_text(json.dumps(short_routes,ensure_ascii=False,indent=2)+'\n')
     payload={'schema_version':'aieo_brief_public_v3','release_id':release['release_id'],'period_start':release['period_start'],'period_end':release['period_end'],'generated_at':utc_now(),'story_count':len(news),'research_count':len(research),'source_release_sha256':release['content_sha256'],'directional_counts':counts,'stories':news,'research':research}
     payload['complete_content']=release.get('complete_content',{})
+    payload['recent_news']=recent_news
     (SITE/'data/article-access-status.json').write_text(json.dumps(audit_article_access(allcards),ensure_ascii=False,indent=2)+'\n')
     payload['daily_selection']=rotation
     payload.update(culture_count=len(culture),culture=culture)

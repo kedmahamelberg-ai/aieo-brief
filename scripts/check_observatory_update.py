@@ -88,6 +88,9 @@ def needs_editorial_retry(release, published, status, now=None):
         return False
     if status.get('release_id') != release['release_id']:
         return True
+    from editorial_engine import ENGINE_VERSION
+    if status.get('engine_version') and status['engine_version'] != ENGINE_VERSION:
+        return True
     counts = status.get('counts') or {}
     # A source-only page is not a reason to call the model again when every
     # source-ready draft was already rejected for the same unchanged evidence.

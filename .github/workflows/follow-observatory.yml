@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: '41 * * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/editorial_engine.py'
+      - 'scripts/news_reading.py'
+      - 'data/editorial/news-seeds.json'
 permissions:
   contents: write
   pages: write
@@ -40,15 +46,14 @@ jobs:
     uses: ./.github/workflows/generate-brief-editorial.yml
     with:
       news_only: true
-      # Ten source-ready stories per scheduled pass bound model spending. The
-      # generator records the remainder as deferred, so later wake-ups resume.
-      news_limit: '10'
+      # Complete pending source-ready news within the existing time, request
+      # and spending caps; saved checkpoints resume on later wake-ups.
+      news_limit: '0'
     secrets: inherit
   publish:
-    needs: check
-    # Publish validated Observatory source links without waiting for model
-    # summaries. Saved editorial updates trigger a later public rebuild.
-    # The build rejects incomplete or mismatched release data itself.
-    if: needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_daily_refresh == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true')
+    needs: [check, editorial]
+    # Build after the writer has saved accepted articles and its checkpoint,
+    # including partial success when another draft failed source review.
+    if: always() && needs.check.result == 'success' && (needs.check.outputs.needs_update == 'true' || needs.check.outputs.needs_daily_refresh == 'true' || needs.check.outputs.needs_weekly_review == 'true' || needs.check.outputs.needs_editorial_retry == 'true')
     uses: ./.github/workflows/build-brief-preview.yml
     secrets: inherit

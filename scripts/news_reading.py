@@ -107,3 +107,16 @@ PROSE_INSTRUCTIONS = (
     'or choose a relevant accessible replacement before writing. Never conceal missing source access with wording.'
 )
 INSTRUCTIONS += ' ' + PROSE_INSTRUCTIONS
+
+INSTRUCTIONS += (' Expand AI once as artificial intelligence (AI) in the opening account; '
+                 'this is a vocabulary expansion, not a claim about capabilities. '
+                 'Do not add generic definitions such as AI can write or answer questions unless the source says so. '
+                 'For each implication box, first find a concrete effect stated in the original source. '
+                 'If the source gives no such effect for that side, leave that field empty. '
+                 'Do not manufacture a benefit from the supplied axis, an organization gaining reach, '
+                 'a training event, or a general claim that AI is useful. Empty means no supported box claim; '
+                 'never write that the source proves there was no effect. Preserve specific attribution '
+                 'for company expectations and opinions in the box itself when needed.')
+INSTRUCTIONS += (' Preserve the named publisher of the supplied page. If an aggregator credits '
+                 'another outlet, do not attribute the aggregator\'s summary to that outlet '
+                 'or imply you read the credited outlet\'s full original article.')

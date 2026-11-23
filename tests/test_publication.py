@@ -3,12 +3,20 @@ from pathlib import Path
 from unittest.mock import patch
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'scripts'))
 from brief_contract import validate_pair,load_config,digest,PROMPT_VERSION
-from build_site import cards,version_valid,clean_body_paragraphs,completed_news,apply_current_source_corrections
+from build_site import cards,version_valid,clean_body_paragraphs,completed_news,recent_completed_news,apply_current_source_corrections
 from generate_editorial_stories import source_payload,candidates
 from source_evidence_quality import evidence_chunks
 from editorial_engine import validate_draft,compile_evidence,review_scope,EditorialError
 from validate_public_site import inspect_json,validate_home_news_coverage
 class Publication(unittest.TestCase):
+ def test_new_edition_keeps_previous_completed_articles_on_home(self):
+  def article(key,edition,complete=True):
+   return {'key':key,'kind':'news','edition':edition,'has_editorial':complete,
+           'what_happened':'Account','body_paragraphs':['Checked detail']}
+  current=[article('new','2026-W47')]
+  archive=[article('new','2026-W47'),article('previous','2026-W46'),
+           article('older','2026-W45'),article('unfinished','2026-W46',False)]
+  self.assertEqual([x['key'] for x in recent_completed_news(current,archive)],['previous'])
  def test_home_reading_feed_excludes_unfinished_source_records(self):
   rows=[{'key':'ready','has_editorial':True,'what_happened':'Checked account','body_paragraphs':['Source detail']},
         {'key':'source-only','has_editorial':False,'what_happened':'','body_paragraphs':[]},
@@ -74,14 +82,14 @@ class Publication(unittest.TestCase):
   self.assertFalse(row['has_editorial']);self.assertEqual(row['headline'],row['original_headline'])
   self.assertEqual((row['for_humans'],row['for_ai'],row['reading_minutes']),('', '', 0))
   self.assertIn('No checked Brief article',row['deck'])
- def test_source_only_news_card_must_link_to_original_publisher(self):
+ def test_source_only_news_card_keeps_its_stable_brief_url(self):
   payload={'stories':[{'event_id':'e1','key':'event:e1','has_editorial':False,
-                       'sources':[{'url':'https://publisher.example/article'}]}],
+                       'sources':[{'url':'https://publisher.example/article'}],'path':'story/unfinished/index.html'}],
            'complete_content':{'eligible_event_ids':['e1']}}
-  article='<article data-story-card data-kind="news" data-key="event:e1" data-editorial-status="source-only"><h2><a href="https://publisher.example/article">Headline</a></h2></article>'
+  article='<article data-story-card data-kind="news" data-key="event:e1" data-editorial-status="source-only"><h2><a href="story/unfinished/">Headline</a></h2></article>'
   self.assertEqual(validate_home_news_coverage(payload,'<div id="story-feed">'+article+'</div>')['source_linked_news'],1)
-  with self.assertRaisesRegex(ValueError,'original source'):
-   validate_home_news_coverage(payload,'<div id="story-feed">'+article.replace('https://publisher.example/article','story/unfinished/')+'</div>')
+  with self.assertRaisesRegex(ValueError,'stable local story URL'):
+   validate_home_news_coverage(payload,'<div id="story-feed">'+article.replace('story/unfinished/','https://publisher.example/article')+'</div>')
  def test_old_review_cannot_promote_new_source_only_record(self):
   row={'key':'event:91a3e3cb-d7c3-4247-b5ee-a4cd749a6294',
        'kind':'news','edition':'2026-W47','has_editorial':False,
