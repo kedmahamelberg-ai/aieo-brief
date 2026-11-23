@@ -112,6 +112,15 @@ class GovernmentBriefsTests(unittest.TestCase):
         self.assertNotIn('ai-item', result['records'])
         self.assertNotIn('ai-item', result['checked'])
 
+    def test_missing_saved_record_is_reimported_and_absent_source_is_withdrawn(self):
+        state = gov.refresh(snapshot(source()), {})
+        state['records'].pop('ai-item')
+        repaired = gov.refresh(snapshot(source()), state)
+        self.assertIn('ai-item', repaired['records'])
+        withdrawn = gov.refresh(snapshot(source(id='replacement')), repaired)
+        self.assertNotIn('ai-item', withdrawn['records'])
+        self.assertNotIn('ai-item', withdrawn['checked'])
+
     def test_invalid_snapshot_preserves_checkpoint(self):
         with self.assertRaises(ValueError):
             gov.refresh({'items': []}, {})

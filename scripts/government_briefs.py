@@ -81,6 +81,8 @@ def monitor_record(item, sha):
 def refresh(snapshot, state):
     if not isinstance(snapshot, dict) or not isinstance(snapshot.get('items'), list) or not snapshot.get('as_of'):
         raise ValueError('Monitor government snapshot is invalid')
+    if not snapshot['items'] and (state.get('records') or state.get('checked')):
+        raise ValueError('Monitor government snapshot is unexpectedly empty')
     records = dict(state.get('records', {}))
     checked = dict(state.get('checked', {}))
     seen = set()
@@ -94,7 +96,7 @@ def refresh(snapshot, state):
             checked.pop(ident, None)
             continue
         sha = fingerprint(item)
-        if checked.get(ident) == sha:
+        if checked.get(ident) == sha and ident in records:
             continue
         # Preserve previously published copy and community identity when its
         # source evidence has not changed. An old exclusion is reconsidered.
@@ -105,6 +107,9 @@ def refresh(snapshot, state):
         else:
             records[ident] = monitor_record(item, sha)
         checked[ident] = sha
+    for ident in (set(records) | set(checked)) - seen:
+        records.pop(ident, None)
+        checked.pop(ident, None)
     return {'policy': POLICY, 'monitor_as_of': snapshot['as_of'],
             'last_checked_at': datetime.now(timezone.utc).isoformat(),
             'records': records, 'checked': checked,
