@@ -55,12 +55,12 @@
             "name": "United Kingdom",
             "count": 15,
             "topic": "Rules And Rights",
-            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “AI (Artificial Intelligence).”",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “Anthropic shares fall about 10% as tech stocks slide, despite its….”",
             "story": {
-              "headline": "AI (Artificial Intelligence)",
-              "path": "story/ai-artificial-intelligence/index.html",
-              "publisher": "London School of Business and Research (LSBR)",
-              "source_url": "https://www.lsbr.uk/news/ai-artificial-intelligence"
+              "headline": "Anthropic shares fall about 10% as tech stocks slide, despite its record-setting public offering",
+              "path": "story/anthropic-stock-plummets-wall-street-debut-fears-rise/index.html",
+              "publisher": "The Independent",
+              "source_url": "https://www.independent.co.uk/tech/anthropic-wall-street-stocks-slip-ai-ipo-b3088959.html"
             }
           },
           {
@@ -68,12 +68,12 @@
             "name": "France",
             "count": 16,
             "topic": "Rules And Rights",
-            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Artificial Intelligence in the Service of the Fight Against Emerging Infectious….”",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Researchers find character-voice training weakened AI monitoring of one model in….”",
             "story": {
-              "headline": "Artificial Intelligence in the Service of the Fight Against Emerging Infectious Diseases",
-              "path": "story/development-0e01070c-cf93-4e6d-b914-6a49cc7f4d18/index.html",
-              "publisher": "Université Paris Cité",
-              "source_url": "https://u-paris.fr/lintelligence-artificielle-au-service-de-la-lutte-contre-les-maladies-infectieuses-emergentes"
+              "headline": "Researchers find character-voice training weakened AI monitoring of one model in lab tests",
+              "path": "story/style-reasoning-makes-ai-model-less-observable/index.html",
+              "publisher": "ActuIA",
+              "source_url": "https://www.actuia.com/actualite/styliser-son-raisonnement-rend-un-modele-dia-moins-surveillable"
             }
           },
           {
@@ -124,7 +124,7 @@
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "17030b9c25694d0a80757718b13273317578c2e22fc9f2f5b7fd36940d6c4d8e"
+      "content_sha256": "2a9d754bc8f6fff9da87acc1a5373faa44853d4d6e965ed9956900991e85606d"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
