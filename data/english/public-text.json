@@ -7600,6 +7600,63 @@
       },
       "output_sha256": "33512546d3aad11459e29922d8e53d1b9b6ab2edb94415ef850513e764528cb9",
       "policy": "brief-english-display-v1"
+    },
+    "26f190e5c70eee0737e7783d6f1a02af6dfe8a036bcf0a3baf30c1ea2728c628": {
+      "english": {
+        "0": "China Industrial Internet Research Institute",
+        "1": "China Industrial Internet Research Institute"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bf0503fe0c9296caf84a4c36209ae0dc6c9d45b5d27bb0667db9853823c06e27",
+      "policy": "brief-english-display-v1"
+    },
+    "e20b94e0ddc4b27330f220e18b4e75c0a3c3c6452e3fc93339212086c0ad3533": {
+      "english": {
+        "0": "Hunan Normal University",
+        "1": "Hunan Normal University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "8e212ced41c2613995c9b9705715cbf64c4d2eb30b01bdb40966a2a2fb2c5b7d",
+      "policy": "brief-english-display-v1"
+    },
+    "22439cce1ab185be619e54b9b4f716240fd0e22637e8dfaeb9e7f4f16822eac6": {
+      "english": {
+        "0": "Jiangsu Cyberspace Administration",
+        "1": "Jiangsu Cyberspace Administration"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "23dfd0c40a52faa53786145798146bdae8d49f4a3071177bbccbccb3d7f2ddbe",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
@@ -7614,6 +7671,8 @@
     "68ec1f5011e57ba581fa3dba49621a5051cfc3972999a1348651c1aa99c896d1": "brief-english-failure-v1",
     "7995e01a621af0e55bef0f6696dc5a51ea49d01ad7666968805a44fdd7fc5b8c": "brief-english-failure-v1",
     "2cb1fce9fb2a09d21f51638e669f72136fc15467c9ec32615cb1e37a99eafaca": "brief-english-failure-v1",
-    "40fd5b43dbdf649fd188a8d8fff2f5112848f40aadab3d2834decc93a47f80a5": "brief-english-failure-v1"
+    "40fd5b43dbdf649fd188a8d8fff2f5112848f40aadab3d2834decc93a47f80a5": "brief-english-failure-v1",
+    "79aeccb7fb177a7b8727c585b6ab378f2d956802e26e26f685fcf4093d88d0d8": "brief-english-failure-v1",
+    "531a88f45478fcdcc79bf854422af9680ad621c52bcf6d684514ae7d26fe2acf": "brief-english-failure-v1"
   }
 }
