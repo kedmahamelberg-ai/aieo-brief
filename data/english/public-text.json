@@ -7189,11 +7189,188 @@
       },
       "output_sha256": "84436ee69f37f5f4755599c11abc318b1d4c88dfe1f931e79234322cfea6aea6",
       "policy": "brief-english-display-v1"
+    },
+    "44156e5b2dbf9255099a5cb6e08bea5eb283ccf434d8788b05f6c05b69cf3e8a": {
+      "english": {
+        "0": "Reporting from International Center for Science and Technology Innovation. Open the source for the article.",
+        "1": "International Center for Science and Technology Innovation.",
+        "2": "International Center for Science and Technology Innovation."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "967aa7c1b47f945482e2bc13e6dd3ef81e87cec7664bbc31f288ad942d2f95e0",
+      "policy": "brief-english-display-v1"
+    },
+    "ceddb04c5864f9490aa7c8b475c1acf8672722ef697f37082a651c26b3eba994": {
+      "english": {
+        "0": "Reporting from China Industrial Internet Research Institute. Open the source for the article.",
+        "1": "China Industrial Internet Research Institute",
+        "2": "China Industrial Internet Research Institute"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "bfcca09c22ea13a2fbfa9b501b8cee1d94a354849d674b7ff378c5e6be7ead84",
+      "policy": "brief-english-display-v1"
+    },
+    "a700abf8bb0f9b230003e60b112f86b9e55355135690f2037cce32124f078cc3": {
+      "english": {
+        "0": "Reporting from East China Normal University. Open the source for the article.",
+        "1": "East China Normal University",
+        "2": "East China Normal University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "c73a639516f8970b141052a8f0c001566c8605d61cbf4482eda5b04712a2f855",
+      "policy": "brief-english-display-v1"
+    },
+    "d43ceb4ad0c45fc4e8ecda93f751ea310fe091d43f019df720b821298f5b1247": {
+      "english": {
+        "0": "Reporting from University of Bordeaux. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "b744cbb61c4cd296b0b32b3ce073380210bcd75e9c4662c7b82093a2e6f918d8",
+      "policy": "brief-english-display-v1"
+    },
+    "b792f2271bd0f4d9c5e4fca0cb5b07a02a72bdf205de0789bde3fbeacf5e2514": {
+      "english": {
+        "0": "Reporting from | Grenier aux nouvelles. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "f1e9e413a2242c65da07e62df2d683382f53f031c22f943df55f2039001b8640",
+      "policy": "brief-english-display-v1"
+    },
+    "1125726916ad8cb1daaef35ac06e017ddf910d658075d03b0a32b0b8718114e4": {
+      "english": {
+        "0": "Journal of Jean-François Lisée | Last (?) Warning Regarding Artificial Intelligence",
+        "1": "Journal of Jean-François Lisée | Last (?) Warning Regarding Artificial Intelligence",
+        "2": "Journal of Jean-François Lisée | Last (?) Warning Regarding Artificial Intelligence"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "48a1d8417aecc29433ab001578fffb85f10ca37ae99da125d996e163c3c01e87",
+      "policy": "brief-english-display-v1"
+    },
+    "0d60e1512bddd9e83bc54f8919ba5fdb937d45da7866f588cf8791093491fc3b": {
+      "english": {
+        "0": "Reporting from School of Art | Université Laval. Open the source for the article."
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0b9ede965247dbd2e7dab532a9938f6d2a47109f1b56ab15059fa1a15cb6c9df",
+      "policy": "brief-english-display-v1"
+    },
+    "dd770c658ada52297736e2abe2568b7cb02ed73b51aa0d98e0791a55d2a7c7cb": {
+      "english": {
+        "0": "Reporting from the University of Science and Technology of China News Network. Open the source for the article.",
+        "1": "USTC News Network",
+        "2": "USTC News Network"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "0b4fa991aa64ea9670d581f94573edfc64f4320a9f1beae1c5741523ee961603",
+      "policy": "brief-english-display-v1"
+    },
+    "81995909ae8b5ae34606158f9823663c9a0ab032c70a0c1a7de95ada8ec6394a": {
+      "english": {
+        "0": "Reporting from Xi'an Jiaotong-Liverpool University. Open the source for the article.",
+        "1": "Xi'an Jiaotong-Liverpool University",
+        "2": "Xi'an Jiaotong-Liverpool University"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "334f0a341ea74f6ad531c2191e0297b21a6b21d015749de7368a642530932c89",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
     "6833468ec7476856f5e4a0b53ff4eb488b875b3dcfc0956b1557fa9a6b74e979": "brief-english-failure-v1",
     "f6e3926dedffb2b9a65519b2248401ffe039d8ae8e844b3952634222849a736b": "brief-english-failure-v1",
-    "2d712feb0c240ca45199198da7581e52225e40616ce7e94ad3d4344bc3e60ab4": "brief-english-failure-v1"
+    "2d712feb0c240ca45199198da7581e52225e40616ce7e94ad3d4344bc3e60ab4": "brief-english-failure-v1",
+    "e43444b2ffe477bd94bf0c81aa88d6bc27db152989cebf082edf3e49ea7d988a": "brief-english-failure-v1",
+    "07c1586d24de75dba818cb0f7bbddfbddd1b4cd34ac003c63d34ac73b405c4f2": "brief-english-failure-v1",
+    "f593db2026d7536acf7bc92f8737791c29794de877552db85d01543608ccc090": "brief-english-failure-v1"
   }
 }

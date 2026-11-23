@@ -3,6 +3,131 @@
   "overviews": [
     {
       "schema_version": "aieo_weekly_overview_v1",
+      "release_id": "2026-W47",
+      "period_start": "2026-11-16",
+      "period_end": "2026-11-22",
+      "display_date": "2026-11-22",
+      "path": "week-from-above/2026-w47/index.html",
+      "markets": {
+        "kind": "markets",
+        "eyebrow": "THE WEEK FROM ABOVE",
+        "title": "The weekly news review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/east-fork-toklat.jpg",
+        "image_alt": "The East Fork of the Toklat River flowing through a wide mountain valley in Denali National Park and Preserve",
+        "image_caption": "East Fork of the Toklat River, Denali National Park and Preserve",
+        "image_credit": "NPS Photo / Tim Rains",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/e6ee57ae-3522-4861-8d29-db16ab53d0bb",
+        "image_rights": "Public domain · Full Granting Rights",
+        "entries": [
+          {
+            "code": "CN",
+            "name": "China",
+            "count": 24,
+            "topic": "Work And Skills",
+            "sentence": "China: work and skills stood out in the selected coverage; one example was “Focus on AI security! Shennong Technology’s Central China headquarters is located….”",
+            "story": {
+              "headline": "Focus on AI security! Shennong Technology’s Central China headquarters is located in Wuhan.",
+              "path": "story/focus-ai-security-shennong-technologys-central-located-wuhan/index.html",
+              "publisher": "Hubei Provincial Department of Economy and Information Technology",
+              "source_url": ""
+            }
+          },
+          {
+            "code": "US",
+            "name": "United States",
+            "count": 18,
+            "topic": "Work And Skills",
+            "sentence": "United States: the discovery stream centred most often on work and skills, including “AWS says Quick adds AI tools for Meta ads, with approval….”",
+            "story": {
+              "headline": "AWS says Quick adds AI tools for Meta ads, with approval required before account changes",
+              "path": "story/aws-quick-adds-ai-tools-meta-account-changes/index.html",
+              "publisher": "Amazon Web Services",
+              "source_url": "https://aws.amazon.com/blogs/machine-learning/meta-ads-is-now-available-in-aws-quick"
+            }
+          },
+          {
+            "code": "GB",
+            "name": "United Kingdom",
+            "count": 15,
+            "topic": "Rules And Rights",
+            "sentence": "United Kingdom: the discovery stream centred most often on rules and rights, including “AI (Artificial Intelligence).”",
+            "story": {
+              "headline": "AI (Artificial Intelligence)",
+              "path": "story/ai-artificial-intelligence/index.html",
+              "publisher": "London School of Business and Research (LSBR)",
+              "source_url": "https://www.lsbr.uk/news/ai-artificial-intelligence"
+            }
+          },
+          {
+            "code": "FR",
+            "name": "France",
+            "count": 16,
+            "topic": "Rules And Rights",
+            "sentence": "France: rules and rights stood out in the selected coverage; one example was “Artificial Intelligence in the Service of the Fight Against Emerging Infectious….”",
+            "story": {
+              "headline": "Artificial Intelligence in the Service of the Fight Against Emerging Infectious Diseases",
+              "path": "story/development-0e01070c-cf93-4e6d-b914-6a49cc7f4d18/index.html",
+              "publisher": "Université Paris Cité",
+              "source_url": "https://u-paris.fr/lintelligence-artificielle-au-service-de-la-lutte-contre-les-maladies-infectieuses-emergentes"
+            }
+          },
+          {
+            "code": "CA",
+            "name": "Canada",
+            "count": 33,
+            "topic": "Business And Investment",
+            "sentence": "Canada: the discovery stream centred most often on business and investment, including “Mila team says its AI review tool matched human decisions in….”",
+            "story": {
+              "headline": "Mila team says its AI review tool matched human decisions in 82% of one conference-paper test",
+              "path": "story/mila-team-ai-review-tool-matched-conference-paper-test/index.html",
+              "publisher": "Le Devoir",
+              "source_url": "https://www.ledevoir.com/actualites/science/1026719/ia-fait-bondir-nombre-publications-scientifiques-soumises"
+            }
+          }
+        ],
+        "active_market_count": 5,
+        "editorial_version": "kedma-weekly-v10",
+        "status": "pending",
+        "prose": [],
+        "papers": [],
+        "pending_reason": "sources_incomplete"
+      },
+      "research": {
+        "kind": "research",
+        "eyebrow": "THE RESEARCH COMPASS",
+        "title": "The weekly research review is being prepared",
+        "deck": "The review will appear when its sources and editorial checks are complete.",
+        "summary": "",
+        "scope_note": "",
+        "word_count": 0,
+        "reading_minutes": 1,
+        "image_path": "assets/weekly-overviews/milky-way-yellowstone.jpg",
+        "image_alt": "The Milky Way and stars reflected on a backcountry lake in Yellowstone National Park",
+        "image_caption": "Milky Way reflected over a backcountry lake, Yellowstone National Park",
+        "image_credit": "Neal Herbert / NPS",
+        "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
+        "image_rights": "Public domain · Full Granting Rights",
+        "papers": [],
+        "paper_count": 24,
+        "affiliation_verified_count": 18,
+        "editorial_version": "kedma-weekly-v10",
+        "status": "pending",
+        "prose": [],
+        "pending_reason": "generation_pending",
+        "input_hash": "549de42da7aa0d14c305bd0ad2bee4ec5ffb44ca08b96bf37cf6a45f3f08789e",
+        "attempts": 0
+      },
+      "editorial_version": "kedma-weekly-v10",
+      "editorial_status": "pending",
+      "content_sha256": "17030b9c25694d0a80757718b13273317578c2e22fc9f2f5b7fd36940d6c4d8e"
+    },
+    {
+      "schema_version": "aieo_weekly_overview_v1",
       "release_id": "2026-W46",
       "period_start": "2026-11-09",
       "period_end": "2026-11-15",
