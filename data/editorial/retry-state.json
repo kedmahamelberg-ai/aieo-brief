@@ -76,5 +76,53 @@
     "last_attempt": "2026-11-23T08:25:24.537435+00:00",
     "last_code": "source_scope_review_failed",
     "stage": "generation"
+  },
+  "1839646432291c27b71556a81082d3f558cd7cdb542e69fb6f8fe2067f4eeca5": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:21:39.934060+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "f39698aa7dd5ea4d0673171e73bb9b20ed856350a9725392f8a7f38340133d14": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:23:03.066829+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "f7079677dea4625a9f2b047da612cc5771311125d2665ba16e2d5f2ad44b93f3": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:24:16.582741+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "87475024e1431ff96c8e29cc349fa8f9388eef9421b608c0f96c6de8ad6ea821": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:25:55.208110+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "15c984284dbda86eb0b6520216d913c32ee2edf992a6525fe643b4bc6aa95ba4": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:28:54.948814+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "46ffeb020eb10cfac132e25287edeba90ab4a17b4dec199df53ef610dde6d0dd": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:30:24.486614+00:00",
+    "last_code": "claim_grounding_failed",
+    "stage": "generation"
+  },
+  "824077feebba4d9361a10da8b81404f815066813a147ae4bc86d46c789db42bb": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:32:21.725538+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "a5cdfbff47f6f0eed265d0ee4998880b2dd8c3aa80a7e64ab2306b38f814c362": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T10:33:35.753748+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
   }
 }
