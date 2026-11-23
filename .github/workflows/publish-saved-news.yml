@@ -1,0 +1,48 @@
+name: Publish Saved News Checkpoints
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check_saved_news.py'
+      - '.github/workflows/publish-saved-news.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+  pages: write
+  id-token: write
+concurrency:
+  group: brief-saved-news-checkpoint
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      needs_publish: ${{ steps.check.outputs.needs_publish }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Compare accepted saved articles with the live edition
+        id: check
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
+          BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
+        run: python scripts/check_saved_news.py
+  publish:
+    needs: check
+    if: needs.check.outputs.needs_publish == 'true'
+    uses: ./.github/workflows/build-brief-preview.yml
+    with:
+      saved_news_only: true
+    secrets: inherit
