@@ -2,31 +2,23 @@
   "release_id": "2026-W47",
   "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
   "counts": {
-    "unchanged": 76,
+    "unchanged": 83,
     "source_not_ready": 0,
     "source_date_mismatch": 0,
-    "new_registry": 9,
-    "needs_model": 9,
+    "new_registry": 2,
+    "needs_model": 2,
     "needs_rebind": 0,
     "blocked_rejections": 0,
-    "selected": 9,
-    "generated": 7,
+    "selected": 2,
+    "generated": 1,
     "rebound": 0,
-    "failed": 2,
+    "failed": 1,
     "deferred": 0
   },
   "failure_counts": {
-    "claim_grounding_failed": 1,
     "source_scope_review_failed": 1
   },
   "failed_items": [
-    {
-      "event_id": "9bd24aa2-2b5d-4000-be6f-07054671f1b4",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v14-source-specific-news"
-    },
     {
       "event_id": "87166cd7-31e5-4e38-972b-a2fcf69ddf3f",
       "error_type": "EditorialError",
@@ -34,9 +26,9 @@
       "code": "source_scope_review_failed",
       "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
       "failed_checks": [
-        "plain_english"
+        "population_preserved"
       ]
     }
   ],
-  "updated_at": "2026-11-23T14:26:39.614272+00:00"
+  "updated_at": "2026-11-23T14:37:32.734305+00:00"
 }
