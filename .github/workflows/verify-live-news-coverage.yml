@@ -1,0 +1,32 @@
+name: Verify Live News Coverage
+on:
+  # Independent fallback if a publisher or its workflow_run trigger is delayed.
+  schedule:
+    - cron: '31 * * * *'
+  workflow_run:
+    workflows: ['Build and Publish AIEO Brief']
+    types: [completed]
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: brief-live-news-coverage
+  cancel-in-progress: true
+jobs:
+  verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Compare Observatory IDs with Brief records and live homepage cards
+        env:
+          BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
+        run: python scripts/verify_live_news_coverage.py
