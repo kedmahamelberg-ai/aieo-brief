@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build a source-linked Brief and stable historical story pages; private inputs never ship."""
 from __future__ import annotations
-from editorial_corrections import apply_corrections, reading_proof
+from editorial_corrections import apply_corrections, reading_proof, reviewed_source_url_sets
 from article_access_audit import audit as audit_article_access
 from news_reading import prepare_display as prepare_news_display, EFFECT_LABELS
 from claim_grounding import VERSION as GROUNDING_VERSION
@@ -228,9 +228,19 @@ def apply_current_source_corrections(rows, release_id, root=ROOT):
     current editorial must pass version_valid before any approved article prose
     can be applied. Historical saved articles retain their approved edits.
     """
-    eligible = [item for item in rows if not (
-        item.get('kind') == 'news' and item.get('edition') == release_id
-        and not item.get('has_editorial'))]
+    reviewed_sources = reviewed_source_url_sets(root)
+    eligible = []
+    for item in rows:
+        if item.get('kind') == 'news' and item.get('edition') == release_id:
+            if not item.get('has_editorial'):
+                continue
+            current_urls = tuple(source.get('url') for source in item.get('sources', []))
+            if (item.get('key') in reviewed_sources
+                    and current_urls not in reviewed_sources[item['key']]):
+                print('::warning::Skipped earlier correction for '
+                      + item['key'] + ': current release source URLs changed.')
+                continue
+        eligible.append(item)
     apply_corrections(eligible, root)
     return rows
 
