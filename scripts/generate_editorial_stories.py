@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse,json,os,time,uuid,hashlib
 import ai_runtime
 import claim_grounding
-from editorial_corrections import corrections,is_locked
+from editorial_corrections import corrections,is_locked,reviewed_source_url_sets
 from collections import Counter
 from datetime import datetime,timezone
 from pathlib import Path
@@ -58,6 +58,7 @@ def retain_rejection(client,item,error):
 def candidates(release,sym,maps,force=False):
     stories,readiness,evidence,versions=maps;axis={r['event_id']:r for r in sym['evidence']};selected=[]
     approved=corrections(ROOT)
+    reviewed_sources=reviewed_source_url_sets(ROOT)
     seed_path=ROOT/'data/editorial/news-seeds.json'
     seeds=json.loads(seed_path.read_text()).get('seeds',{}) if seed_path.exists() else {}
     supplement_path=ROOT/'data/editorial/source-supplements.json'
@@ -73,7 +74,10 @@ def candidates(release,sym,maps,force=False):
         eid=str(event.get('effective_event_id') or event['event_id'])
         story=stories.get(eid)
         latest=versions.get(str((story or {}).get('story_id')))
-        if is_locked('event:'+eid,ROOT):
+        reviewed=reviewed_sources.get('event:'+eid)
+        current_urls=tuple(source.get('url') for source in event.get('sources',[]))
+        old_source_review=bool(reviewed and current_urls not in reviewed)
+        if is_locked('event:'+eid,ROOT) and not old_source_review:
             correction=approved.get('event:'+eid,{})
             first_summary_fields={'headline','for_humans','for_ai','human_direction',
                                   'ai_direction','human_label','ai_label','box_effects','location_label'}

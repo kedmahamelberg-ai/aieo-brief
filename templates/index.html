@@ -1,7 +1,7 @@
 {% extends 'base.html' %}{% from 'components.html' import card,ad with context %}
 {% block content %}
 <main id="main-content" class="page-shell">
-<div class="edition-line"><span>LATEST OBSERVATORY EDITION</span><time>{{ period_label }}</time><a href="#news">{{ source_news_count }} source-linked developments · {{ news_count }} full Brief articles</a></div>
+<div class="edition-line"><span>LATEST OBSERVATORY EDITION</span><time>{{ period_label }}</time><a href="#news">{{ news_count }} full Brief articles · Latest and recent editions</a></div>
 <div class="daily-reading-label"><span class="eyebrow">TODAY’S READING · <time data-reading-date>{{ reading_date }}</time></span><span>A different way into this week’s news, every day.</span></div>
 <script id="daily-rotation" type="application/json">{{ rotation|tojson }}</script>
 <section class="opening" aria-label="Start reading">

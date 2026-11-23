@@ -38,6 +38,11 @@ def verify(observatory, brief, homepage):
                          f'{len(actual)} records; missing={sorted(expected-set(actual))[:5]}, '
                          f'extra={sorted(set(actual)-expected)[:5]}')
     coverage = validate_home_news_coverage(brief, homepage)
+    missing = [item['event_id'] for item in brief.get('stories') or []
+               if item.get('evidence_complete') is True and not item.get('has_editorial')]
+    if missing:
+        raise ValueError(f'{len(missing)} source-ready developments still lack a completed Brief article; '
+                         f'headline cards do not complete publication. First IDs: {missing[:5]}')
     return {'release_id': release['release_id'], 'period_start': release['period_start'],
             'period_end': release['period_end'], 'observatory_developments': len(expected),
             'brief_records': len(actual), **coverage}

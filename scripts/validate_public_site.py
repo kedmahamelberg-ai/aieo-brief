@@ -81,7 +81,11 @@ def validate_home_news_coverage(payload,html):
  ids=[str(item.get('event_id') or '') for item in stories]
  if not all(ids) or len(ids)!=len(set(ids)):
   raise ValueError('Brief news data has missing or duplicate event IDs')
- expected={'event:'+event_id for event_id in ids}
+ recent=payload.get('recent_news') or []
+ if any(not item.get('has_editorial') or not item.get('what_happened') or not item.get('body_paragraphs') for item in recent):
+  raise ValueError('Recent home articles must retain their completed reading')
+ if set(ids)&{item.get('event_id') for item in recent}:raise ValueError('Repeated current and recent home article')
+ expected={'event:'+event_id for event_id in ids}|{item['key'] for item in recent}
  eligible=set((payload.get('complete_content') or {}).get('eligible_event_ids') or [])
  if eligible and eligible!=set(ids):
   raise ValueError(f'Brief current edition has {len(ids)} news records but {len(eligible)} eligible Observatory IDs')
@@ -92,16 +96,18 @@ def validate_home_news_coverage(payload,html):
   missing=sorted(expected-set(actual));extra=sorted(set(actual)-expected)
   raise ValueError(f'Homepage has {len(actual)} news cards for {len(expected)} Brief records; '
                    f'missing={missing[:5]}, extra={extra[:5]}')
- by_key={item['key']:item for item in stories}
+ by_key={item['key']:item for item in stories+recent}
  for card in parser.cards:
   item=by_key[card['key']]
   if item.get('has_editorial'):
    if card['status']!='complete' or card['href'].startswith(('http://','https://')):
     raise ValueError('Completed Brief article is not linked as an article: '+card['key'])
-  elif card['status']!='source-only' or card['href']!=item['sources'][0]['url']:
-   raise ValueError('Unfinished Brief record must link to its original source: '+card['key'])
+  elif (card['status']!='source-only' or card['href'].startswith(('http://','https://'))
+        or card['href'].removesuffix('index.html')!=item['path'].removesuffix('index.html')):
+   raise ValueError('Unfinished Brief record must retain its stable local story URL: '+card['key'])
  return {'source_linked_news':len(expected),'rendered_news_cards':len(actual),
-         'full_brief_articles':sum(bool(item.get('has_editorial')) for item in stories)}
+         'full_brief_articles':sum(bool(item.get('has_editorial')) for item in stories),
+         'recent_full_brief_articles':len(recent)}
 
 def inspect_json(value):
  if isinstance(value,dict):

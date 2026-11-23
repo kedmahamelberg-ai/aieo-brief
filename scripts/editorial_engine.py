@@ -14,7 +14,7 @@ from editorial_artifacts import DRAFT_MARKER, FIELD_FRAGMENT, LEADING_ARTIFACT
 TEXT_FIELDS=['editorial_headline','editorial_deck','what_happened','why_it_matters','for_humans','for_ai']
 SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'string'} for k in TEXT_FIELDS},'body_paragraphs':{'type':'array','items':{'type':'string'},'minItems':1,'maxItems':3},'claim_status':{'type':'string','enum':['reporting','company_claim','study','forecast','opinion','analysis']},'limitation':{'type':'string'},'support':{'type':'array','minItems':3,'items':{'type':'object','additionalProperties':False,'properties':{'field':{'type':'string'},'source_number':{'type':'integer'},'quote':{'type':'string'}},'required':['field','source_number','quote']}}},'required':TEXT_FIELDS+['body_paragraphs','claim_status','limitation','support']}
 
-ENGINE_VERSION='aieo-editorial-runtime-v13-concise-box-effects'
+ENGINE_VERSION='aieo-editorial-runtime-v14-source-specific-news'
 CORE_FIELDS=TEXT_FIELDS[:4]
 SUPPORT_FIELDS=('editorial_headline','what_happened','why_it_matters')
 FIELD_LIMITS={'editorial_headline':130,'editorial_deck':260,'what_happened':900,'why_it_matters':650,'for_humans':400,'for_ai':400,'limitation':650}
@@ -360,7 +360,7 @@ def validate_draft(d,sources,kind='news'):
   if problem:raise ValueError(problem)
   quick=' '.join(d[k] for k in ('what_happened','why_it_matters','limitation'))
   if len(quick.split())>110 or len((quick+' '+' '.join(d['body_paragraphs'])).split())>200:raise ValueError('Research is too long: keep the quick overview within 110 words and the full brief within 200 words.')
- return {k:([x.replace('—',',').strip() for x in v] if k=='body_paragraphs' else v.replace('—',',').strip() if isinstance(v,str) else v) for k,v in d.items()}
+ return {k:([re.sub(r'\s*—\s*',', ',x).strip() for x in v] if k=='body_paragraphs' else re.sub(r'\s*—\s*',', ',v).strip() if isinstance(v,str) else v) for k,v in d.items()}
 
 REVIEW_CHECKS=('headline_supported','population_preserved','claim_status_preserved','no_unstated_effects','main_story_only','english_only','plain_english')
 REVIEW_SCHEMA={'type':'object','additionalProperties':False,'properties':{**{k:{'type':'boolean'} for k in REVIEW_CHECKS},'reason':{'type':'string','maxLength':300}},'required':list(REVIEW_CHECKS)+['reason']}
@@ -379,6 +379,8 @@ def review_scope(draft,compiled,deadline=None,paper=False,news=False,long_source
       'plain_english: a high-school reader with no specialist background can understand every public field, including for_humans and for_ai. Necessary jargon and acronyms are explained, sentences are short, effects are concrete, and the boxes describe the source rather than praise the summary. Reject advice to a user presented as an AI outcome. '
       'main_story_only: unrelated newsletter teasers and navigation are not merged into the main story. An empty for_humans or for_ai is allowed when that dimension is unstated. Give a reason of at most 300 characters.\nSOURCE METADATA: '+json.dumps(metadata,ensure_ascii=False)+'\nCOMPLETE ORIGINAL SOURCE PASSAGES IN ORDER: '+json.dumps(catalog,ensure_ascii=False))
     prompt+=news_reading.PROSE_INSTRUCTIONS+'\n'
+    if news:
+        prompt+='READING CONVENTIONS: A headline may use AI when the opening account expands it as artificial intelligence (AI). The expansion is vocabulary, not a new capability claim. Do not require the definition in every field. An empty implication box makes no claim that effects are absent; reject invented effects, not an honest empty box.\n'
     prompt+=claim_grounding.INSTRUCTIONS+'\nSelect citations by quote_id from the complete original-source catalog above. Do not retype, translate, or paraphrase quotations. Every original character is included; consecutive passages may continue the same sentence. The catalog is not selected by the writer. Cite only passages that actually support every claim in the field.\nCLAIM STATUS: '+str(draft.get('claim_status',''))+'\nFIELDS TO REVIEW: '+json.dumps(claim_grounding.units(draft),ensure_ascii=False)
     # Nano has a 400k-token context. Keep complete paper evidence in the
     # review request, with headroom below the API request-size cap; never truncate it.
@@ -445,7 +447,7 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
  if kind in ('preprint','abstract','paper'):
   prompt+='RESEARCH READER CONTRACT: Write for practitioners with high-school education and no specialist knowledge, across business, public services, government and other organizations. Use everyday English, short sentences and no unexplained acronyms. The title must say the useful finding in 8-14 plain words; avoid method names and boilerplate such as with limits. The deck states the problem. what_happened (35-50 words) combines the problem, approach and key finding. why_it_matters (20-35 words) explains a practical decision and, if useful, an example explicitly discussed in the source, preserving whether it was tested or hypothetical. limitation gives a source-stated uncertainty or the verified reading scope; never invent a caveat to meet a length target. Together these three fields form a complete 30-second overview of the whole evidence. body_paragraphs adds ONLY two short paragraphs of 25-40 words each: useful method/result context and a practical implication or trade-off. Full brief including the quick overview must stay under 200 words. No repetition, equations, benchmark lists or promotional claims. At most one short reflective question, only when it helps readers consider a real evidence-grounded trade-off; do not force one into every story. Never infer practical effectiveness from a laboratory score.\n'
   if kind=='paper':prompt+='You have the complete extracted PDF text, or verified notes covering every text segment. Read beyond the abstract: methods, results, discussion and limitations. Publication stage: '+str(event.get('research_label','Research'))+'. Preserve that stage. This is a paper-TEXT reading, not visual inspection: do not infer values from unextracted charts or images. Do not call the reading abstract-only.\n'
- prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nFIXED INDEPENDENT AXES (do not override): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
+ prompt+='ARTICLE TYPE: '+kind+'\nTITLE CONTEXT: '+str(event.get('event_title') or '')+'\nUPSTREAM AXES FOR CONTEXT ONLY (never infer a box claim from a label; the original source and final independent review decide each box): '+json.dumps(axes,ensure_ascii=False)+'\nSOURCE MATERIAL:\n'+json.dumps(compiled,ensure_ascii=False)
  if kind in ('preprint','abstract','paper'):
   prompt+='\nEND OF SOURCE MATERIAL. Now write for a busy practitioner, not a researcher. Use ordinary words in the title; no method names or unfamiliar acronyms. Replace technical shorthand throughout (for example, say training with rewards rather than RL, and training on examples rather than SFT). Use a work example only if the source itself gives it, preserving its status. Explain the actual finding and the main uncertainty. Keep both reading views complete and the full brief below 200 words.\n'
  # Refuse an oversized prompt rather than letting the server truncate evidence.
@@ -458,6 +460,8 @@ Output 8-18 words in the headline, one concise deck, 2-3 sentences explaining wh
    if last and isinstance(draft,dict):feedback+='\nPREVIOUS REJECTED DRAFT (correct the problem; do not repeat it): '+json.dumps(draft,ensure_ascii=False)
    draft=copy.deepcopy(event['draft_seed']) if attempt==0 and isinstance(event.get('draft_seed'),dict) else call_json(prompt+feedback,schema,deadline=deadline,attempt=attempt,stage='draft',paper=kind=='paper')
    draft=resolve_support(draft,catalog)
+   if kind=='news' and re.search(r'\bAI\b',draft.get('what_happened','')) and not re.search(r'artificial intelligence',draft.get('what_happened',''),re.I):
+    draft['what_happened']=re.sub(r'\bAI\b','artificial intelligence (AI)',draft['what_happened'],count=1)
    if kind=='news' and news_reading.style_problem(draft):
     readable_schema=copy.deepcopy(SCHEMA)
     readable_schema['properties'].pop('support')
