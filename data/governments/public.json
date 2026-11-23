@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-22T14:00:00+00:00",
-  "last_checked_at": "2026-11-22T15:20:24.229985+00:00",
+  "monitor_as_of": "2026-11-23T08:00:00+00:00",
+  "last_checked_at": "2026-11-23T09:08:13.547394+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1661,6 +1661,28 @@
       "summary": "At DigiTec 2026, Prime Minister Pashinyan discussed plans to develop Armenia as an AI hub, attract investment, build infrastructure, and support AI adoption without replacing workers. He also outlined renewable-energy and regional electricity-link initiatives tied to the “Crossroads of Peace” and TRIPP programs.",
       "body_paragraphs": [],
       "input_fingerprint": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55"
+    },
+    "530b3338da125dde09c7": {
+      "id": "530b3338da125dde09c7",
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/22-wilmes-cop31.html",
+      "date": "2026-11-22",
+      "headline": "Luxembourg announces a fossil-fuel phase-out roadmap and an AI-supported marketplace for climate projects.",
+      "summary": "At COP31 in Antalya, Luxembourg and the EU advocated stronger science-based commitments, including phasing out fossil fuels, but the main decision omitted them. Luxembourg announced a national phase-out roadmap, held meetings and events, launched an AI-supported funding marketplace, and supported youth engagement.",
+      "body_paragraphs": [],
+      "input_fingerprint": "664ba746a95d214447d5ba110ddb413527d0755f814c5c3d0f1aa7582075d7c2"
+    },
+    "902c930a4fb1772c6dd8": {
+      "id": "902c930a4fb1772c6dd8",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/23/content_WS6b0384dbc6d00ca5f9a0e904.html",
+      "date": "2026-11-23",
+      "headline": "China and Singapore express interest in deeper AI cooperation and broader bilateral ties.",
+      "summary": "Chinese Vice Premier Ding Xuexiang and Singaporean Prime Minister Lawrence Wong discussed deepening bilateral cooperation, including in AI, green development and the digital economy, and strengthening people-to-people ties. Wong said Singapore would use its upcoming ASEAN chairmanship to advance cooperation between ASEAN and China.",
+      "body_paragraphs": [],
+      "input_fingerprint": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d"
     }
   },
   "checked": {
@@ -1809,7 +1831,9 @@
     "eb18721cb93e73501f8b": "958480919ac6e4eea93eae922995f9624030999f86d992d5f231600162462bf7",
     "a4db83995e5414b97cb7": "b1cb1e49c1a09c375670b0f89b3f03bc3d571610ee4e041adf761eaa44db3487",
     "5374f48573316b6e1e1e": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253",
-    "58195c888455c8fbf5ad": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55"
+    "58195c888455c8fbf5ad": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55",
+    "530b3338da125dde09c7": "664ba746a95d214447d5ba110ddb413527d0755f814c5c3d0f1aa7582075d7c2",
+    "902c930a4fb1772c6dd8": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d"
   },
   "retry": {},
   "pending": 0,
