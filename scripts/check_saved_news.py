@@ -64,7 +64,7 @@ def main():
                                  headers={'Cache-Control': 'no-cache'}, timeout=30)
             result.raise_for_status()
             pending = newly_available(current, result.json())
-    report = {'publication_busy': busy, 'accepted_articles_not_live': len(pending),
+    report = {'publication_busy': busy, 'accepted_articles_not_live': None if busy else len(pending),
               'event_ids': pending, 'needs_publish': bool(pending)}
     print(json.dumps(report, indent=2))
     if os.environ.get('GITHUB_OUTPUT'):
@@ -72,9 +72,9 @@ def main():
             output.write('needs_publish=' + str(bool(pending)).lower() + '\n')
     if os.environ.get('GITHUB_STEP_SUMMARY'):
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
-            output.write('Accepted news checkpoint: ' + str(len(pending))
-                         + ' completed articles awaiting publication. '
-                         + ('Another publisher is active.' if busy else '') + '\n')
+            output.write('Checkpoint comparison skipped: another publisher is active.\n' if busy
+                         else 'Accepted news checkpoint: ' + str(len(pending))
+                         + ' completed articles awaiting publication.\n')
 
 
 if __name__ == '__main__':
