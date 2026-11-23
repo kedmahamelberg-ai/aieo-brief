@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from pathlib import Path
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
@@ -11,6 +11,17 @@ from government_briefs import FEED, candidate, fingerprint
 
 AMSTERDAM = ZoneInfo("Europe/Amsterdam")
 MAX_SNAPSHOT_BYTES = 25_000_000
+SUMMER_CHECKS = {'15 8 * * *', '45 14 * * *'}
+WINTER_CHECKS = {'15 9 * * *', '45 15 * * *'}
+
+
+def verify_slot(now, event_name, schedule, import_changed=False):
+    """Run two parity checks at 10:15 and 16:45 Amsterdam, including DST."""
+    if import_changed or event_name != 'schedule':
+        return True
+    local = now.astimezone(AMSTERDAM)
+    slots = SUMMER_CHECKS if local.dst() != timedelta(0) else WINTER_CHECKS
+    return schedule in slots
 
 
 def feed_has_changes(state, snapshot):
@@ -19,6 +30,8 @@ def feed_has_changes(state, snapshot):
         raise ValueError("Monitor government snapshot is invalid")
     checked = state.get("checked") or {}
     records = state.get("records") or {}
+    if not snapshot['items'] and (records or checked):
+        raise ValueError('Monitor government snapshot is unexpectedly empty')
     seen = set()
     for item in snapshot["items"]:
         ident = str(item.get("id") or "")
@@ -26,11 +39,13 @@ def feed_has_changes(state, snapshot):
             continue
         seen.add(ident)
         if candidate(item):
-            if checked.get(ident) != fingerprint(item):
+            if checked.get(ident) != fingerprint(item) or ident not in records:
                 return True
         elif ident in records or ident in checked:
             return True
-    return False
+    # The public Monitor snapshot is complete. An item withdrawn from that
+    # snapshot must also be removed from the Brief, including its old URL.
+    return bool((set(records) | set(checked)) - seen)
 
 
 def changed_live_feed(state):
@@ -68,7 +83,17 @@ def main():
     parser.add_argument("--state", type=Path, default=Path("data/governments/public.json"))
     parser.add_argument("--force", action="store_true", help="Recheck a corrected Monitor feed after today's import")
     parser.add_argument("--check-feed", action="store_true", help="Import later same-day Monitor corrections on scheduled wake-ups")
+    parser.add_argument("--verify-slot", action="store_true", help="Gate the twice-daily live parity check")
     args = parser.parse_args()
+    if args.verify_slot:
+        verify = verify_slot(datetime.now(AMSTERDAM), os.environ.get('GITHUB_EVENT_NAME', ''),
+                             os.environ.get('GITHUB_EVENT_SCHEDULE', ''),
+                             os.environ.get('IMPORT_CHANGED') == 'true')
+        print('Government live parity check ' + ('is due' if verify else 'is not due'))
+        if os.environ.get('GITHUB_OUTPUT'):
+            with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+                output.write('verify=' + str(verify).lower() + '\n')
+        return 0
     state = json.loads(args.state.read_text()) if args.state.exists() else {}
     # A late Monitor collection can add yesterday's eligible records after the
     # preceding daily import. Check exact fingerprints on every wake-up; the

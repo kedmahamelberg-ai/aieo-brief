@@ -7,7 +7,7 @@ import tempfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from datetime import datetime
-from government_brief_schedule import is_due, import_due, feed_has_changes
+from government_brief_schedule import is_due, import_due, feed_has_changes, verify_slot
 from government_briefs import fingerprint
 
 class GovernmentBriefScheduleTests(unittest.TestCase):
@@ -38,6 +38,31 @@ class GovernmentBriefScheduleTests(unittest.TestCase):
         self.assertTrue(feed_has_changes(state, {'as_of': '2026-11-19T16:00:00Z', 'items': [changed]}))
         self.assertTrue(feed_has_changes({'records': {}, 'checked': {}},
                                          {'as_of': '2026-11-19T16:00:00Z', 'items': [item]}))
+
+    def test_missing_saved_record_and_withdrawn_monitor_item_are_due(self):
+        item = {'id': 'lu-story', 'country': 'Luxembourg', 'country_code': 'LU',
+                'url': 'https://example.lu/release', 'published_date': '2026-11-22',
+                'translation_complete': True, 'classification_status': 'provisional',
+                'topics': ['artificial_intelligence'], 'english_summary': 'AI funding marketplace.'}
+        state = {'records': {}, 'checked': {'lu-story': fingerprint(item)}}
+        self.assertTrue(feed_has_changes(state, {'as_of': '2026-11-23T08:00:00Z', 'items': [item]}))
+        state['records']['lu-story'] = {'id': 'lu-story'}
+        unrelated = {**item, 'id': 'unrelated', 'topics': []}
+        self.assertTrue(feed_has_changes(state, {'as_of': '2026-11-23T09:00:00Z', 'items': [unrelated]}))
+        with self.assertRaisesRegex(ValueError, 'unexpectedly empty'):
+            feed_has_changes(state, {'as_of': '2026-11-23T09:00:00Z', 'items': []})
+
+    def test_twice_daily_parity_slots_follow_amsterdam_daylight_saving(self):
+        winter = datetime.fromisoformat('2026-11-23T09:15:00+00:00')
+        summer = datetime.fromisoformat('2026-07-23T08:15:00+00:00')
+        self.assertTrue(verify_slot(winter, 'schedule', '15 9 * * *'))
+        self.assertTrue(verify_slot(winter, 'schedule', '45 15 * * *'))
+        self.assertFalse(verify_slot(winter, 'schedule', '15 8 * * *'))
+        self.assertTrue(verify_slot(summer, 'schedule', '15 8 * * *'))
+        self.assertTrue(verify_slot(summer, 'schedule', '45 14 * * *'))
+        self.assertFalse(verify_slot(summer, 'schedule', '45 15 * * *'))
+        self.assertFalse(verify_slot(winter, 'schedule', '35 * * * *'))
+        self.assertTrue(verify_slot(winter, 'schedule', '35 * * * *', import_changed=True))
 
     def test_waits_until_amsterdam_publication_time(self):
         self.assertFalse(is_due({}, datetime.fromisoformat("2026-11-14T15:04:59+00:00")))
