@@ -55,6 +55,40 @@ class EnglishPublicationTests(unittest.TestCase):
         out=eng.apply({'key':'event:'+'a'*36,'headline':'AI tools help researchers study images','kind':'news'})
         self.assertEqual(out['english_status'],'checked');first=content_version(out)[0]
         out['headline']='AI tools help researchers study sound';self.assertNotEqual(first,content_version(out)[0])
+    def test_one_pending_news_translation_cannot_leave_partial_article_prose(self):
+        from news_reading import EFFECT_LABELS
+        from validate_public_site import validate_news_boxes
+        row={'key':'event:pending','kind':'news','headline':'An AI company announces a new office',
+             'what_happened':'The company 深侬科技 announced an office.',
+             'why_it_matters':'The project includes research.', 'for_humans':'The project provides support.',
+             'for_ai':'The company plans research.', 'body_paragraphs':['The checked details.'],
+             'limitation':'This is a plan.', 'reading_minutes':1,'has_editorial':True,
+             'human_direction':'gain','ai_direction':'gain',
+             'human_label':EFFECT_LABELS['gain'],'ai_label':EFFECT_LABELS['gain'],
+             'box_effects':{'human':'gain','ai':'gain'}}
+        before=copy.deepcopy(row)
+        eng=EnglishPublication(self.temp.name,False,lambda value,field:non_latin(value))
+        result=eng.apply(row)
+        self.assertEqual(row,before)
+        self.assertFalse(result['has_editorial']);self.assertEqual(result['english_status'],'pending')
+        for field in ('what_happened','why_it_matters','for_humans','for_ai','limitation'):
+            self.assertEqual(result[field],'')
+        self.assertEqual(result['body_paragraphs'],[]);self.assertEqual(result['reading_minutes'],0)
+        validate_news_boxes(result)
+        english={**row,'key':'event:ready','what_happened':'The company announced an office.'}
+        ready=eng.apply(english)
+        self.assertTrue(ready['has_editorial']);self.assertEqual(ready['body_paragraphs'],row['body_paragraphs'])
+    def test_untranslated_publishers_use_each_matching_source_host(self):
+        row={'key':'event:ready','kind':'news','headline':'AI research news',
+             'what_happened':'The checked account.','body_paragraphs':['The checked detail.'],
+             'has_editorial':True,'publisher':'甲机构',
+             'sources':[{'publisher':'甲机构','url':'https://www.first.example/story'},
+                        {'publisher':'乙机构','url':'https://second.example/other'}]}
+        result=EnglishPublication(self.temp.name,False,lambda value,field:non_latin(value)).apply(row)
+        self.assertEqual(result['publisher'],'first.example')
+        self.assertEqual([x['publisher'] for x in result['sources']],['first.example','second.example'])
+        self.assertEqual([x['url'] for x in result['sources']],[x['url'] for x in row['sources']])
+        self.assertTrue(result['has_editorial']);self.assertEqual(result['body_paragraphs'],row['body_paragraphs'])
     def test_budget_stops_further_calls(self):
         eng=EnglishPublication(self.temp.name,True,self.checker)
         with patch.object(eng,'translate',side_effect=TimeoutError) as call:

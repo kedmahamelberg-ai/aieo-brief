@@ -1868,7 +1868,7 @@
       "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
       "draft": {
         "editorial_headline": "Chinese AI releases let developers download and adapt the underlying systems",
-        "editorial_deck": "People’s Daily explains how sharing trained software can reduce the need to build AI from scratch.",
+        "editorial_deck": "The report explains how sharing an AI’s settings, the numbers adjusted during training, lets others run and adapt it.",
         "what_happened": "People’s Daily reports growing releases of downloadable artificial intelligence (AI) systems from Chinese companies. It explains that sharing a system’s learned settings lets others run and adapt it on their own computers.",
         "why_it_matters": "The report says companies and developers can build on an existing system rather than pay to train one from the start. Running it on private equipment also matters to users with strict data-privacy requirements.",
         "for_humans": "Downloaded AI can run on private computers for users with strict data-privacy requirements.",
@@ -1907,7 +1907,7 @@
       "draft": {
         "editorial_headline": "Chinese institute offers help registering AI services that generate content",
         "editorial_deck": "Its notice separates registration for unmodified third-party systems from reviews for newly developed systems.",
-        "what_happened": "The China Industrial Internet Research Institute has opened consultation services for registering artificial intelligence (AI) software that generates text, images, audio or video. It offers policy training, application templates and support with safety assessments.",
+        "what_happened": "The China Industrial Internet Research Institute is offering advice on registering services that use artificial intelligence (AI) to create text, images, audio or video. It provides policy training, application templates and support with safety assessments.",
         "why_it_matters": "The notice describes different procedures depending on whether a company uses an existing third-party system unchanged or develops and modifies its own. Some applications also require review by the relevant industry authority.",
         "for_humans": "Companies can obtain application guidance and support with safety assessments from the institute.",
         "for_ai": "",
@@ -1942,7 +1942,7 @@
       "reviewed_at": "2026-11-23",
       "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
       "draft": {
-        "editorial_headline": "Luo Yi links AI growth to computing power and its physical limits",
+        "editorial_headline": "Luo Yi discusses AI computing demand, energy costs and data quality",
         "editorial_deck": "The Tsinghua professor discussed energy costs and data quality at Hunan Normal University.",
         "what_happened": "Luo Yi, a Tsinghua University professor and Chinese Academy of Engineering member, gave a lecture on artificial intelligence (AI) at Hunan Normal University. More than 400 teachers and students attended, alongside university officials.",
         "why_it_matters": "He described computing power as essential to AI’s development while pointing to high energy costs and uneven data quality.",
@@ -2055,7 +2055,7 @@
       "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
       "draft": {
         "editorial_headline": "Hong Kong finance survey finds rising use and plans for content-generating AI",
-        "editorial_deck": "The report separates current adoption from future plans and examines safety and explainability concerns.",
+        "editorial_deck": "The report separates current use from future plans and examines concerns about safety and explaining AI.",
         "what_happened": "A Hong Kong financial research report says 90% of surveyed financial institutions use or plan to use artificial intelligence (AI) that generates content. The release compares that share with 75% in its earlier report.",
         "why_it_matters": "The survey also examines AI that works more independently. The release says safety and questions about explaining AI remain concerns for further adoption.",
         "for_humans": "",
@@ -2130,15 +2130,15 @@
       "reviewed_at": "2026-11-23",
       "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
       "draft": {
-        "editorial_headline": "Report counts 495 AI-linked company representatives at COP31 climate talks",
-        "editorial_deck": "The companies include builders and energy suppliers serving the expansion of data centres.",
-        "what_happened": "Le Devoir reports that Lighthouse Reports identified 495 COP31 participants linked to 86 companies involved in expanding artificial intelligence (AI) computing facilities. These include companies building data centres and supplying their power, alongside major technology firms.",
-        "why_it_matters": "The report raises questions about corporate access at climate negotiations as the environmental footprint of data centres draws scrutiny. It says some company representatives join country teams that can speak directly with negotiating diplomats.",
-        "for_humans": "The report questions company access to climate negotiators while data centres’ environmental footprint draws scrutiny.",
-        "for_ai": "Companies linked to data-centre construction and energy supply are represented at the climate talks.",
+        "editorial_headline": "Report counts 495 people linked to AI’s growth at UN climate talks",
+        "editorial_deck": "The identified companies include engineering and construction firms, energy suppliers and major technology businesses.",
+        "what_happened": "Le Devoir reports that Lighthouse Reports identified 495 participants at COP31, the United Nations climate talks, linked to 86 companies involved in expanding artificial intelligence (AI) infrastructure. These include engineering and construction firms, energy suppliers and major technology businesses.",
+        "why_it_matters": "The report questions company access to climate negotiations. It says company representatives on official country teams have direct access to the diplomats negotiating the final text.",
+        "for_humans": "Company representatives on official country teams have direct access to climate negotiators, the report says.",
+        "for_ai": "The identified companies include engineering, construction, energy and technology businesses.",
         "body_paragraphs": [
-          "The article distinguishes company representatives from official country teams. It says mandatory disclosure of employers since 2023 made this count possible.",
-          "It also describes a proposed voluntary agreement on AI environmental risks and renewable power for data centres. The article reports limited interest and cancellation of the planned announcement press conference."
+          "Since 2023, participants have had to identify their employers. The article says this allowed investigators to count the companies’ representatives, including some who were part of official country teams.",
+          "It also describes a proposed voluntary agreement on AI’s environmental risks and renewable electricity for large computer facilities. Only 10 countries had signalled interest, and the planned announcement press conference was cancelled, the article reports."
         ],
         "claim_status": "reporting",
         "limitation": "",
@@ -2169,10 +2169,10 @@
       "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
       "draft": {
         "editorial_headline": "Cambridge names human its word of the year amid questions raised by AI",
-        "editorial_deck": "The choice reflects questions about human identity and concerns that AI could replace jobs, a lexicographer says.",
-        "what_happened": "Cambridge Dictionary has named human its word of the year for 2026, Le Devoir reports. Lexicographer Francesca Woodward links the choice to questions about human identity as artificial intelligence (AI) spreads.",
+        "editorial_deck": "Francesca Woodward of Cambridge Dictionary connects the choice to questions about human identity and fears that AI could replace jobs.",
+        "what_happened": "Cambridge Dictionary has named human its word of the year for 2026, Le Devoir reports. Cambridge Dictionary’s Francesca Woodward links the choice to questions about human identity as artificial intelligence (AI) spreads.",
         "why_it_matters": "Woodward says people are asking what it means to be human, including amid concern about AI replacing jobs. The dictionary has also observed more use of phrases that identify work as made or written by people.",
-        "for_humans": "Lexicographers connect the choice to debate about identity and concern that AI could replace some jobs.",
+        "for_humans": "The choice reflects questions about human identity and worries that AI could replace jobs, Woodward says.",
         "for_ai": "",
         "body_paragraphs": [
           "The dictionary also observed more use of phrases identifying work as created by humans. Another contender for word of the year was agent, described as AI software that can perform complex tasks without human control."
@@ -2212,7 +2212,7 @@
         "for_humans": "",
         "for_ai": "The discussed requirement could make US companies publicly identify Chinese AI software they use.",
         "body_paragraphs": [
-          "The report says it is unclear whether the idea has broad support within the administration or how it would become a formal rule. It also describes the appeal of Chinese AI systems’ prices and performance to some American companies."
+          "The report says it is unclear whether the idea has broad support. If it goes forward, it is also unclear whether officials would use the formal process for making a new rule. The report also describes the appeal of Chinese AI systems’ prices and performance to some American companies."
         ],
         "claim_status": "reporting",
         "limitation": "",
@@ -2246,8 +2246,8 @@
         "editorial_deck": "France’s media regulator explains election risks, legal duties and routes for complaints.",
         "what_happened": "French media regulator Arcom has published an overview of election risks linked to artificial intelligence (AI). It describes convincing fake media, low-quality AI content and chatbots giving wrong answers as possible risks for voters.",
         "why_it_matters": "The regulator connects these risks to French and European rules and explains where people can report suspected illegal material. It also describes duties applying specifically to very large online platforms and search engines.",
-        "for_humans": "Arcom warns that false AI answers and manipulated media can mislead voters.",
-        "for_ai": "Arcom describes rules on manipulative AI use and on making AI-generated content recognisable.",
+        "for_humans": "False AI answers and manipulated media can mislead voters.",
+        "for_ai": "Rules described by Arcom address manipulative AI use and how to make AI-generated content recognisable.",
         "body_paragraphs": [
           "The overview distinguishes risks from fake content, targeted recommendations and incorrect chatbot advice. It notes that platform policies differ: some prohibit misleading AI content on public issues, while others rely on labels.",
           "People can report suspect content to the platform concerned. The notice also identifies French authorities for suspected criminal material, election offences and foreign digital interference."
@@ -2436,7 +2436,7 @@
         "what_happened": "Researchers and companies met at an artificial intelligence (AI) conference in Hefei co-organised by Huawei and the local national science centre’s AI research institute. Xinhua reports cooperation agreements alongside presentations on manufacturing, medicine and computing.",
         "why_it_matters": "Speakers argued for closer links between basic research, practical uses and the computing equipment needed to run AI. The institute signed agreements with Huawei and other research and technology organisations.",
         "for_humans": "The institute’s health work focuses on chronic conditions, fitness, community care and young people’s health.",
-        "for_ai": "New partnerships plan joint AI research and training, the report says.",
+        "for_ai": "The new agreements include technical cooperation and jointly training people.",
         "body_paragraphs": [
           "A cement-company representative described using AI to predict the strength of material used to make cement, with reported accuracy above 85%. The example concerns a Wuhu production site.",
           "The article also describes automated laboratory experiments. A research institute says related health technologies have reached more than 50 top-tier hospitals and more than 200 local public-health and sports organisations. Computing providers discuss matching some non-urgent AI training with available renewable electricity."

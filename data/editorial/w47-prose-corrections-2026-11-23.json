@@ -43,6 +43,41 @@
           "Investors questioned whether heavy AI spending will earn enough money, especially as companies borrow more to fund it. U.S. government bonds attracted investors seeking safer places for their money."
         ]
       }
+    },
+    {
+      "key": "event:a6069bf9-57ea-419b-8276-f56ab8a5afb4",
+      "source_urls": [
+        "http://jxt.hubei.gov.cn/bmdt/rdjj/202611/t20261116_6123055.shtml"
+      ],
+      "source_body_sha256": [
+        "50f210d066b918f77120ad28bbf812ad6a0449ac578902d268066ad2f12ee56f"
+      ],
+      "reason": "Source-reviewed English identity correction for an independently accepted full-source article. The English company label Shennong Technology is matched to the Chinese identity, website and contact details in its company profile; the company website confirms the same Chinese identity. Preserve all headquarters facts from the complete Hubei release and the original source link. This is a display edit, not a new model judgment or human-review flag.",
+      "after": {
+        "what_happened": "Shennong Technology, an artificial intelligence (AI) security company with roots in Tsinghua University, has signed an agreement for a regional headquarters in Wuhan’s Optics Valley. A release on Hubei’s industry-department website describes its planned regional security services."
+      },
+      "identity_evidence_urls": [
+        "https://www.crunchbase.com/organization/shennong-technology",
+        "https://www.km-e.cn/"
+      ]
+    },
+    {
+      "key": "event:d48225e7-5b18-4525-a6a3-8a9164183226",
+      "source_urls": [
+        "https://news.ustc.edu.cn/info/1056/96947.htm"
+      ],
+      "source_body_sha256": [
+        "1e1065423a5ab533c395a66c76f5f1d9ea7c473fc49410a4244122c26fd8b720"
+      ],
+      "identity_evidence_urls": [
+        "https://sherlockwu.github.io/",
+        "https://pages.cs.wisc.edu/~kanwu/"
+      ],
+      "reason": "Source-reviewed English identity correction for an independently accepted full-source article. The researcher’s own homepage explicitly pairs Kan Wu with the exact Chinese name in the university article; the education and xAI/Google history match. Use that page only for the Latin-script name, and retain the original university-republished report for the planned appointment and research. No human-review flag is added.",
+      "after": {
+        "headline": "Former xAI engineer Kan Wu plans research on AI using Chinese computing equipment",
+        "what_happened": "A Hefei Daily report republished by the University of Science and Technology of China says former xAI and Google engineer Kan Wu is due to join as an assistant professor this month. It describes research on training and running artificial intelligence (AI) using Chinese computing hardware."
+      }
     }
   ],
   "research": []

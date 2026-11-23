@@ -14,6 +14,7 @@ import re
 import time
 import unicodedata
 from pathlib import Path
+from urllib.parse import urlparse
 
 POLICY = 'brief-english-display-v1'
 FAILURE_POLICY = 'brief-english-failure-v1'
@@ -101,6 +102,18 @@ def put(item, path, value):
     for part in path[:-1]:
         target = target[part]
     target[path[-1]] = value.split('\n') if path[-1] in LISTS else value
+
+
+def publisher_fallback(item, path):
+    # Preserve source identity without guessing a translated organisation name.
+    source = item
+    for part in path[:-1]:
+        source = source[part]
+    url = source.get('url') or source.get('source_url')
+    if not url and item.get('sources'):
+        url = item['sources'][0].get('url')
+    host = urlparse(str(url or '')).hostname
+    return host.removeprefix('www.') if host else 'Original source'
 
 
 def parts(item):
@@ -233,6 +246,8 @@ class EnglishPublication:
             for path, _ in candidates:
                 field = str(path[-1])
                 fallback = 'Original source' if field in NAMES else NOTICE
+                if field == 'publisher':
+                    fallback = publisher_fallback(item, path)
                 if field in ('headline', 'original_headline', 'book_title', 'title'):
                     fallback = {'news': 'AI reporting awaiting English translation',
                                 'research': 'Research awaiting English translation',
@@ -242,6 +257,15 @@ class EnglishPublication:
                 put(result, path, fallback)
             if any(p[0] in ('headline', 'deck', 'what_happened', 'body_paragraphs') for p, _ in candidates):
                 result['has_editorial'] = False
+                if result.get('kind') == 'news':
+                    # A pending display translation is a source-only record.
+                    # Keep the accepted original untouched, while withholding
+                    # every article field together instead of mixing a notice
+                    # with leftover prose and blocking the whole publication.
+                    for field in ('what_happened', 'why_it_matters', 'for_humans', 'for_ai', 'limitation'):
+                        result[field] = ''
+                    result.update(body_paragraphs=[], reading_minutes=0)
+                    result.pop('box_effects', None)
             result.update(english_status='pending', brief_translation_note=NOTICE)
             if result.get('kind') == 'culture':
                 result['language'] = 'English translation pending'
