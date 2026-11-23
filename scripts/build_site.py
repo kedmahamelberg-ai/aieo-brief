@@ -437,18 +437,23 @@ def main():
     sponsor=config.get('sponsor',{})
     today=reading_day().isoformat()
     sponsor_active=sponsor_is_active(config,today,preview)
-    # Keep source records and their stable URLs in the archive and public data,
-    # but feature only complete, source-checked Brief articles on the homepage.
-    feed_news=completed_news(news)
+    # Every eligible Observatory development stays discoverable in the news
+    # feed. Only checked Brief articles may become the lead or a highlight.
+    feed_news=list(news)
+    featured_news=completed_news(news)
     market_counts={code:sum(code in c['markets'] for c in feed_news) for code,_ in MARKETS}
     rotation=rotation_plan(feed_news, release['release_id'], release['period_end'])
+    featured_rotation=rotation_plan(featured_news, release['release_id'], release['period_end'])
+    for layout, featured_layout in zip(rotation['layouts'],featured_rotation['layouts']):
+        layout['lead']=featured_layout['lead']
+        layout['highlights']=featured_layout['highlights']
     day_layout=rotation['layouts'][rotation['slot']]
     bykey={c['key']:c for c in feed_news}
     lead=bykey.get(day_layout['lead'])
     highlights=[bykey[k] for k in day_layout['highlights']]
     feed_news=[bykey[k] for k in day_layout['order']]
     for rank, item in enumerate(feed_news):item['daily_rank']=rank
-    defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(feed_news),'source_news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
+    defaults={'config':config,'release':release,'period_label':fmt(release['period_start'])+' - '+fmt(release['period_end']),'markets':MARKETS,'topics':list(TOPICS.items()),'market_counts':market_counts,'news_count':len(featured_news),'source_news_count':len(news),'generated_at':utc_now(),'is_preview':preview,'public_config':public_config,'sponsor_active':sponsor_active,'counts':counts}
     latest_culture_date=max((x['date'] for x in culture),default='')
     defaults.update(rotation=rotation, reading_date=fmt(rotation['selection_date']))
     defaults.update(culture_latest=[x for x in culture if x['date']==latest_culture_date],culture_date=fmt(latest_culture_date))
@@ -472,7 +477,7 @@ def main():
             [ctx['story']]+ctx.get('related',[]) if ctx.get('story') else
             feed_news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
         client=[{k:x.get(k) for k in ('key','headline','path','anchor','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','location_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
-        page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),news)}
+        page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),featured_news)}
         page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
         canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else '')
         page_defaults['identity_data']=identity_graph(ROOT,canonical,ctx.get('page'))
@@ -550,7 +555,7 @@ def main():
     payload.update(government_count=len(governments),governments=governments)
     payload['source_relationship_sha256'] = relationship_fingerprint(sym)
     payload['weekly_overview']=weekly_overview
-    spotlight=spotlight_feed(ROOT, [lead]+[n for n in feed_news if n is not lead] if lead else feed_news, baseurl, release['release_id'], utc_now())
+    spotlight=spotlight_feed(ROOT, [lead]+[n for n in featured_news if n is not lead] if lead else featured_news, baseurl, release['release_id'], utc_now())
     (data/'spotlight.json').write_text(json.dumps(spotlight,ensure_ascii=False,indent=2)+'\n')
     (data/'current.json').write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n')
     (data/'public-items.json').write_text(json.dumps({'items':allcards+weekly_items},ensure_ascii=False)+'\n')
@@ -572,7 +577,7 @@ def main():
         rss=['<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>AIEO Brief</title><link>'+xml_escape(baseurl)+'</link><description>Clear AI news and research, with original sources.</description>']
         weekly_url=baseurl+'/'+weekly_overview['path'].removesuffix('index.html')
         rss.append('<item><title>'+xml_escape(weekly_overview['markets']['title'])+'</title><link>'+xml_escape(weekly_url)+'</link><guid isPermaLink="false">weekly:'+xml_escape(weekly_overview['release_id'])+'</guid><description>'+xml_escape(weekly_overview['markets']['deck'])+'</description></item>')
-        for item in sorted(feed_news+research+culture+governments,key=lambda x:x['date'],reverse=True)[:100]:
+        for item in sorted(featured_news+research+culture+governments,key=lambda x:x['date'],reverse=True)[:100]:
             url=baseurl+'/'+item['path'].removesuffix('index.html');rss.append('<item><title>'+xml_escape(item['headline'])+'</title><link>'+xml_escape(url)+'</link><guid isPermaLink="false">'+xml_escape(item['key'])+'</guid><description>'+xml_escape(item['deck'])+'</description></item>')
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=[

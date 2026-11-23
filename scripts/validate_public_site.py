@@ -53,6 +53,42 @@ class Page(HTMLParser):
   if tag=='script':self.capture=False
  def handle_data(self,data):
   if self.capture:self.script_data.append(data)
+
+class NewsFeed(HTMLParser):
+ def __init__(self):
+  super().__init__(convert_charrefs=True);self.depth=0;self.found=False;self.keys=[]
+ def handle_starttag(self,tag,attrs):
+  values=dict(attrs)
+  if tag=='div' and values.get('id')=='story-feed':
+   if self.found:raise ValueError('Repeated homepage news feed')
+   self.found=True;self.depth=1;return
+  if self.depth:
+   if tag=='div':self.depth+=1
+   if tag=='article' and 'data-story-card' in values and values.get('data-kind')=='news':
+    self.keys.append(values.get('data-key'))
+ def handle_endtag(self,tag):
+  if tag=='div' and self.depth:self.depth-=1
+
+def validate_home_news_coverage(payload,html):
+ """Every current news ID must have a reachable card in the rendered feed."""
+ stories=payload.get('stories') or []
+ ids=[str(item.get('event_id') or '') for item in stories]
+ if not all(ids) or len(ids)!=len(set(ids)):
+  raise ValueError('Brief news data has missing or duplicate event IDs')
+ expected={'event:'+event_id for event_id in ids}
+ eligible=set((payload.get('complete_content') or {}).get('eligible_event_ids') or [])
+ if eligible and eligible!=set(ids):
+  raise ValueError(f'Brief current edition has {len(ids)} news records but {len(eligible)} eligible Observatory IDs')
+ parser=NewsFeed();parser.feed(html)
+ if not parser.found:raise ValueError('Homepage news feed missing')
+ actual=parser.keys
+ if len(actual)!=len(set(actual)) or set(actual)!=expected:
+  missing=sorted(expected-set(actual));extra=sorted(set(actual)-expected)
+  raise ValueError(f'Homepage has {len(actual)} news cards for {len(expected)} Brief records; '
+                   f'missing={missing[:5]}, extra={extra[:5]}')
+ return {'source_linked_news':len(expected),'rendered_news_cards':len(actual),
+         'full_brief_articles':sum(bool(item.get('has_editorial')) for item in stories)}
+
 def inspect_json(value):
  if isinstance(value,dict):
   for k,v in value.items():
@@ -84,6 +120,7 @@ def validate(site):
  news=payload['stories'];papers=payload['research'];culture=payload.get('culture',[]);governments=payload.get('governments',[]);keys=[x['key'] for x in news+papers+culture+governments]
  if len(keys)!=len(set(keys)):raise ValueError('Duplicate story IDs')
  if len(news)!=payload['story_count'] or len(papers)!=payload['research_count']:raise ValueError('Inconsistent collection count')
+ news_coverage=validate_home_news_coverage(payload,(site/'index.html').read_text())
  if len(culture)!=payload.get('culture_count',0):raise ValueError('Inconsistent culture count')
  if len(governments)!=payload.get('government_count',0):raise ValueError('Inconsistent government count')
  if not (site/'governments-say/index.html').is_file():raise ValueError('Government page missing')
@@ -179,7 +216,7 @@ def validate(site):
    if not preview and 'noindex' in page.robots.lower():raise ValueError('Public sitemap page accidentally has noindex')
  for f in site.rglob('*'):
   if f.is_file() and f.suffix in ('.sql','.py','.env','.csv'):raise ValueError('Private/build-only file in published website')
- return {'html_pages':len(pages),'local_destinations_checked':links,'news':len(news),'research':len(papers),'culture':len(culture),'source_links':sum(x['source_count'] for x in news),'human_counts':payload['directional_counts']['human'],'ai_counts':payload['directional_counts']['ai'],'result':'passed'}
+ return {'html_pages':len(pages),'local_destinations_checked':links,'news':len(news),**news_coverage,'research':len(papers),'culture':len(culture),'source_links':sum(x['source_count'] for x in news),'human_counts':payload['directional_counts']['human'],'ai_counts':payload['directional_counts']['ai'],'result':'passed'}
 def main():
  p=argparse.ArgumentParser();p.add_argument('--site',default='_site');args=p.parse_args();result=validate(ROOT/args.site)
  (ROOT/'validation-summary.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
