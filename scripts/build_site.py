@@ -220,6 +220,20 @@ def cards(release,sym,registry,readiness,editorial,preview=False,legacy_proofs=N
             output[-1]['box_effects']=copy.deepcopy(effects)
     return sorted(output,key=lambda c:(c['date'],c['key']),reverse=True)
 
+
+def apply_current_source_corrections(rows, release_id, root=ROOT):
+    """Old reviewed prose cannot promote a source-only record in a new release.
+
+    A carried event ID may have different publisher evidence this week. Its
+    current editorial must pass version_valid before any approved article prose
+    can be applied. Historical saved articles retain their approved edits.
+    """
+    eligible = [item for item in rows if not (
+        item.get('kind') == 'news' and item.get('edition') == release_id
+        and not item.get('has_editorial'))]
+    apply_corrections(eligible, root)
+    return rows
+
 def papers(sanitize=True):
     p=ROOT/'data/research/public.json'
     if not p.exists():return []
@@ -352,7 +366,7 @@ def main():
     proof_path=ROOT/'data/editorial/release-source-fingerprints.json'
     legacy_proofs=json.loads(proof_path.read_text()) if proof_path.exists() else {}
     news=cards(release,sym,registry,readiness,editorial,preview,legacy_proofs);research=papers();weekly_source_research=papers(sanitize=False);culture=culture_items()
-    apply_corrections(news,ROOT);apply_corrections(research,ROOT);apply_corrections(weekly_source_research,ROOT)
+    apply_current_source_corrections(news,release['release_id'],ROOT);apply_corrections(research,ROOT);apply_corrections(weekly_source_research,ROOT)
     weekly_source_news=copy.deepcopy(news);weekly_source_research=copy.deepcopy(weekly_source_research)
     archivepath=ROOT/'data/archive/stories.json'
     old=json.loads(archivepath.read_text()).get('stories',[]) if archivepath.exists() else []
@@ -384,7 +398,7 @@ def main():
     for row in research:
         allitems[row['key']]=row
     allcards=sorted(allitems.values(),key=lambda x:x['date'],reverse=True)
-    apply_corrections(allcards,ROOT)
+    apply_current_source_corrections(allcards,release['release_id'],ROOT)
     prepare_news_display(allcards)
     allcards=[withhold_abstract_summary(x) if x.get('kind')=='research' else x for x in allcards]
     raw_archive=copy.deepcopy(allcards)
