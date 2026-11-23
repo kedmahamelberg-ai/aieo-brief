@@ -1,0 +1,49 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "reviewed_at": "2026-11-23",
+  "news": [
+    {
+      "key": "event:debe38c1-18d5-4b39-9eb5-98a52226b71f",
+      "source_urls": [
+        "https://www.ledevoir.com/actualites/science/1026719/ia-fait-bondir-nombre-publications-scientifiques-soumises"
+      ],
+      "source_body_sha256": [
+        "9c70d13fc39855faa9f99bbc45a2ed7b5556b5a95d46ba7c841d8d025d9e45ec"
+      ],
+      "reason": "Source-reviewed W47 copy edit: fix fused punctuation or remove unnecessary source framing without changing the publisher-supported facts.",
+      "after": {
+        "what_happened": "Mila researchers built ReviewerToo, an AI tool that imitates parts of peer review, the process of checking research papers before publication. In a test using papers submitted to an AI research conference in 2025, its recommendations matched the human decisions in 82% of cases."
+      }
+    },
+    {
+      "key": "event:cf6b5626-8441-4caa-897d-ab97d829a0e0",
+      "source_urls": [
+        "https://www.actuia.com/actualite/styliser-son-raisonnement-rend-un-modele-dia-moins-surveillable"
+      ],
+      "source_body_sha256": [
+        "234c627b66f5121a37f4c1b400c47c45d71ec8865d6b0fd8e616158a3ae1bf85"
+      ],
+      "reason": "Source-reviewed W47 copy edit: fix fused punctuation or remove unnecessary source framing without changing the publisher-supported facts.",
+      "after": {
+        "what_happened": "Researchers rewrote mathematical reasoning in character voices and used it to train gpt-oss-20b, a model whose weights, the settings learned during training, are available to others. In lab tests, an AI monitor had more trouble detecting a secondary task from the model’s written reasoning, although the training examples contained no attempts to hide information."
+      }
+    },
+    {
+      "key": "event:e468da4c-6375-4b66-8e67-72c5ed4ba6fc",
+      "source_urls": [
+        "https://www.ledevoir.com/economie/1026614/ia-fait-nouveau-derailler-bourses-mondiales"
+      ],
+      "source_body_sha256": [
+        "0de636c4e23b75a51826d092c4b4c45521a289eb591e57b96e5202ef7b7fbebf"
+      ],
+      "reason": "Source-reviewed W47 copy edit: fix fused punctuation or remove unnecessary source framing without changing the publisher-supported facts.",
+      "after": {
+        "body_paragraphs": [
+          "Anthropic, which makes the Claude AI chatbot, raised $91.6 billion before its shares rose nearly 17% on Thursday. On Friday, they fell 8.50%, close to the $83 price set for the debut. The Nasdaq, which includes many technology companies, erased all its gains for the year.",
+          "Investors questioned whether heavy AI spending will earn enough money, especially as companies borrow more to fund it. U.S. government bonds attracted investors seeking safer places for their money."
+        ]
+      }
+    }
+  ],
+  "research": []
+}

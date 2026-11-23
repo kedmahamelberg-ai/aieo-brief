@@ -351,6 +351,8 @@ def validate_draft(d,sources,kind='news'):
  if re.search(r'you won.t believe|changes everything|game.changer|mind.blowing|shocking truth',d['editorial_headline'],re.I):raise ValueError('Clickbait headline')
  if kind in ('preprint','abstract','paper') and (not d.get('limitation') or d['claim_status']!='study'):raise ValueError('A research summary must keep its study status and limitation.')
  if kind=='news':
+  problem=news_reading.draft_punctuation_problem(d)
+  if problem:raise ValueError(problem)
   problem=news_reading.style_problem(d)
   if problem:raise ValueError(problem)
  if kind in ('preprint','abstract','paper'):

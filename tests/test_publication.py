@@ -96,6 +96,16 @@ class Publication(unittest.TestCase):
        'body_paragraphs':['New reading of this source.'],
        'for_humans':'New source-supported effect.'}
   self.assertEqual(apply_current_source_corrections([copy.deepcopy(row)],'2026-W47')[0],row)
+ def test_w47_prose_corrections_apply_only_to_reviewed_sources(self):
+  manifest=json.loads((ROOT/'data/editorial/w47-prose-corrections-2026-11-23.json').read_text())
+  for correction in manifest['news']:
+   with self.subTest(key=correction['key']):
+    original={'key':correction['key'],'kind':'news','edition':'2026-W47',
+              'has_editorial':True,'sources':[{'url':url} for url in correction['source_urls']]}
+    actual=apply_current_source_corrections([copy.deepcopy(original)],'2026-W47')[0]
+    for field,value in correction['after'].items():self.assertEqual(actual[field],value)
+    changed=copy.deepcopy(original);changed['sources'][0]['url']='https://publisher.example/other-story'
+    self.assertEqual(apply_current_source_corrections([changed],'2026-W47')[0],changed)
  def test_every_source_and_discovery_market_survives(self):
   records=cards(self.release,self.sym,{}, {},self.seed,True)
   self.assertEqual(sum(x['source_count'] for x in records),111)

@@ -37,6 +37,18 @@ META_COPY = re.compile(
     r'no explicit (?:human|AI)[- ]side outcome)\b', re.I)
 
 
+def draft_punctuation_problem(draft):
+    fields = ('editorial_headline', 'editorial_deck', 'what_happened',
+              'why_it_matters', 'for_humans', 'for_ai', 'limitation')
+    for field in fields:
+        if re.search(r'(?<=[A-Za-z]),(?=[A-Za-z])', str(draft.get(field) or '')):
+            return f'News plain English: add a space after the comma in {field}.'
+    if any(re.search(r'(?<=[A-Za-z]),(?=[A-Za-z])', str(text))
+           for text in draft.get('body_paragraphs') or []):
+        return 'News plain English: add a space after the comma in the body.'
+    return ''
+
+
 def style_problem(draft):
     for field in ('for_humans', 'for_ai'):
         text = str(draft.get(field) or '').strip()
