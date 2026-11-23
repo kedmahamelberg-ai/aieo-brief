@@ -46,5 +46,35 @@
     "last_attempt": "2026-11-23T02:39:24.704892+00:00",
     "last_code": "claim_grounding_failed",
     "stage": "generation"
+  },
+  "0da7674e5e47145b19826236b539b259b834f859530530d66d73b41d77daa298": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T08:16:41.845165+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "44550dbf109db8c93d0367c95638bc6f59d461fa68f78c199c8e711527d67b54": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T08:20:33.966348+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "334c1abfb6727c4868d91e345870f99ef0dc16c03760bce0004d3f89110c4c79": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T08:22:21.078486+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
+  },
+  "e3805e624041e778d1d51d3b0a11e67a18bfdb953dafc043d7a19ff708346f13": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T08:23:04.102515+00:00",
+    "last_code": "unsupported_number",
+    "stage": "generation"
+  },
+  "c105836c650baf10261757f09f4c5915d7dace69fb0db9a1644bedbc7161a712": {
+    "attempts": 1,
+    "last_attempt": "2026-11-23T08:25:24.537435+00:00",
+    "last_code": "source_scope_review_failed",
+    "stage": "generation"
   }
 }
