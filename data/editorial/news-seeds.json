@@ -444,36 +444,38 @@
     },
     "91a3e3cb-d7c3-4247-b5ee-a4cd749a6294": {
       "evidence_sha256": [
-        "8a29982556c8c3ddcea461f88713a16b11d3a8718d2f4ad3bf19d53ff8c43935"
+        "726af2335363bc64c8ce80cd1a7bd9212d279598267621f235b7d38cb95a8dbc"
       ],
+      "source_urls": [
+        "https://hitwest.ouest-france.fr/rennes-va-accueillir-le-centre-international-pour-l-ia-de-defense-european-cyber-week-cybersecurite"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
       "draft": {
-        "editorial_headline": "France plans Rennes center to coordinate military uses of artificial intelligence",
-        "editorial_deck": "The defense ministry expects the center near Rennes to open next summer with 34 military and civilian staff; France plans to send 17.",
-        "what_happened": "France's defense ministry presented a planned international center near Rennes to coordinate work on artificial intelligence in the armed forces. The article says it should open next summer and expects 34 military and civilian staff, including 17 from France.",
-        "why_it_matters": "The ministry wants the center to share experience and working practices among armed forces using artificial intelligence. This describes planned work, not results from a center already operating.",
-        "for_humans": "",
-        "for_ai": "",
+        "editorial_headline": "Rennes plans an international defence AI centre for summer 2027",
+        "editorial_deck": "Participating allied countries would send civilian and military specialists to share experience.",
+        "what_happened": "Rennes is to host an international centre for artificial intelligence (AI) in defence, Hit West reports. Planned for summer 2027, it would bring together French civilian and military specialists and counterparts from allied countries volunteering to participate.",
+        "why_it_matters": "Bertrand Rondepierre, director of France’s defence AI agency, says the centre is intended to share experience and improve cooperation among the participating allies.",
+        "for_humans": "Participating civilian and military specialists would share experience and practices in defence AI.",
+        "for_ai": "The planned centre would support closer cooperation on defence AI among France and participating allies.",
         "body_paragraphs": [
-          "The article says several allied countries have committed to the project. It does not say how many staff those countries will provide. France expects to send 17 people.",
-          "Planned tasks include bringing interested groups together, developing working practices, following new technology and collecting lessons. The article says the center will not be dedicated to producing artificial intelligence services."
+          "Rondepierre links the project to the defence ministry’s AI agency already based near Rennes. He points to the area’s universities, recruitment opportunities and industry.",
+          "Brittany regional president Loïg Chesnais-Girard says the region’s military presence and technology businesses make it a suitable home. He also describes opportunities for people to move between civilian and military work."
         ],
         "claim_status": "reporting",
-        "limitation": "The article describes a center that has not opened yet, so it does not report results from its work.",
+        "limitation": "",
         "support": [
           {
             "field": "editorial_headline",
-            "source_number": 1,
-            "quote": "Ce jeudi, le ministère des Armées a présenté le prochain centre international pour l’IA de défense. Il devrait être opérationnel l’été prochain du côté de Rennes."
+            "quote_id": 0
           },
           {
             "field": "what_happened",
-            "source_number": 1,
-            "quote": "34 personnes devraient rejoindre ce centre ; il y aura des militaires et des civils. La France enverra 17 personnes et plusieurs alliés se sont déjà engagés dans ce projet."
+            "quote_id": 1
           },
           {
             "field": "why_it_matters",
-            "source_number": 1,
-            "quote": "Plusieurs missions sont déjà prévues :\n\n- Animer une communauté d’intérêt.\n\n- Favoriser l’adoption de l’IA.\n\n- Développer les bonnes pratiques.\n\n- Assurer une veille technologique.\n\n- Centraliser les retours d’expérience."
+            "quote_id": 12
           }
         ]
       }
@@ -2453,6 +2455,44 @@
           {
             "field": "why_it_matters",
             "quote_id": 10
+          }
+        ]
+      }
+    },
+    "fcdb6abc-5fba-422e-9520-87887fccfed9": {
+      "evidence_sha256": [
+        "e03bfa0d55311a427ecc8684434d3fe686be252c0944d281d2f30ef12e3e4e12"
+      ],
+      "source_urls": [
+        "https://www.gossement-avocats.com/blog/ia-lusage-abusif-de-lintelligence-artificielle-peut-mener-a-une-amende-pour-recours-abusif-tribunal-administratif-de-rennes-19-aout-2026-n2508168/"
+      ],
+      "reviewed_at": "2026-11-23",
+      "reason": "Read the complete exact original source and retained rejection. Correct the specific scope, population, attribution or readability fault. Independent full-source review and publication gates remain required.",
+      "draft": {
+        "editorial_headline": "Careless AI-assisted court cases can bring fines, French lawyer’s analysis shows",
+        "editorial_deck": "Arnaud Gossement examines decisions involving unclear arguments, irrelevant rules and invented judgments.",
+        "what_happened": "Lawyer Arnaud Gossement examines French rulings involving artificial intelligence (AI) used to prepare challenges to government decisions. His analysis says carelessly prepared cases can lead to fines for abusive proceedings or rejection of the challenge.",
+        "why_it_matters": "The decisions focus on defects such as unclear arguments, repeated claims and references that do not support the case. Gossement says poorly checked AI text wastes time for judges and others involved.",
+        "for_humans": "People can face fines or rejection if their AI-assisted cases are carelessly prepared, the analysis warns.",
+        "for_ai": "AI-generated legal text can cite irrelevant rules and non-existent judgments, as described in the analysis.",
+        "body_paragraphs": [
+          "In one Rennes tax case from August 2026, a claimant was fined 500 euros after repeating an unsuccessful challenge without the required prior complaint. The judge also found the AI-assisted arguments too imprecise.",
+          "A Grenoble case involved hundreds of pages citing rules that did not apply and judgments that did not exist. Gossement calls for careful checks of names, facts specific to the case and cited references."
+        ],
+        "claim_status": "opinion",
+        "limitation": "",
+        "support": [
+          {
+            "field": "editorial_headline",
+            "quote_id": 0
+          },
+          {
+            "field": "what_happened",
+            "quote_id": 4
+          },
+          {
+            "field": "why_it_matters",
+            "quote_id": 3
           }
         ]
       }
