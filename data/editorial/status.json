@@ -1,67 +1,27 @@
 {
-  "release_id": "2026-W46",
+  "release_id": "2026-W47",
   "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
   "counts": {
-    "unchanged": 40,
-    "source_not_ready": 1,
+    "unchanged": 1,
+    "source_not_ready": 0,
     "source_date_mismatch": 0,
-    "new_registry": 26,
-    "needs_model": 26,
+    "new_registry": 83,
+    "needs_model": 84,
     "needs_rebind": 0,
     "blocked_rejections": 0,
-    "selected": 26,
-    "generated": 8,
+    "selected": 10,
+    "generated": 2,
     "rebound": 0,
-    "failed": 18,
-    "deferred": 0
+    "failed": 8,
+    "deferred": 74
   },
   "failure_counts": {
-    "source_scope_review_failed": 15,
-    "claim_grounding_failed": 3
+    "source_scope_review_failed": 7,
+    "claim_grounding_failed": 1
   },
   "failed_items": [
     {
-      "event_id": "51020e2a-9919-402c-9010-583d9a28d8ee",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "no_unstated_effects"
-      ]
-    },
-    {
-      "event_id": "e1ea62ac-6bb5-4864-8ab1-c73343d5e879",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "claim_status_preserved"
-      ]
-    },
-    {
-      "event_id": "e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "7aaee0cd-4185-413e-8b48-696783635021",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "42d68c56-8c99-4616-98bd-c137c6554bb4",
+      "event_id": "f73a5d7d-d4e9-4996-81dc-54946f6316ce",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -72,7 +32,7 @@
       ]
     },
     {
-      "event_id": "1e3660cd-11f9-4261-b5e8-fe929476364a",
+      "event_id": "eceaed8f-016e-468f-aeba-e0ca33f5d9db",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -82,14 +42,7 @@
       ]
     },
     {
-      "event_id": "504fe2f4-4dea-47cd-b779-bf7858e0acbb",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
-    },
-    {
-      "event_id": "ff4786bf-c811-4627-833f-9b6ecc259f87",
+      "event_id": "b0cb507c-5398-436b-a133-93d34b86db0f",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -99,14 +52,7 @@
       ]
     },
     {
-      "event_id": "ea2fea61-ca7a-4de5-ba6b-2b427fe10d26",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
-    },
-    {
-      "event_id": "c07e5661-1a95-43e3-ba95-4269c3f40957",
+      "event_id": "84c3d6af-dc2c-485c-98b0-b70192fa72c3",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -116,34 +62,7 @@
       ]
     },
     {
-      "event_id": "a8cdc3a3-07f2-4018-88ed-53fa68ead705",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "claim_grounding_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
-    },
-    {
-      "event_id": "76fe76bf-bb59-46c4-be92-739c56ae84e9",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "4605906d-0bcc-4d0d-a416-37cf0002a2b1",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "44e9348e-b219-47e6-8a1b-4c3a26088433",
+      "event_id": "44c7e7ef-f5ad-451a-86c9-1ff1fbe5532a",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -153,7 +72,17 @@
       ]
     },
     {
-      "event_id": "2d1153b6-50e0-43ab-bbcf-5baa58c4afeb",
+      "event_id": "25768084-84d4-452a-ae9a-ce86ad15477d",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
+      "failed_checks": [
+        "no_unstated_effects"
+      ]
+    },
+    {
+      "event_id": "ce99432a-bbe0-428e-b588-e3f9b13c7918",
       "error_type": "EditorialError",
       "stage": "scope_review",
       "code": "source_scope_review_failed",
@@ -163,36 +92,12 @@
       ]
     },
     {
-      "event_id": "1342ae54-2767-4826-9ca0-eda00fc863e1",
+      "event_id": "6978c347-7602-4170-9952-de17119f12ed",
       "error_type": "EditorialError",
       "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "no_unstated_effects",
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "ef9fbd34-3150-4135-b7fa-68ebcd4eae9d",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
-    },
-    {
-      "event_id": "6b8118f7-08c9-450a-a3a1-195778222239",
-      "error_type": "EditorialError",
-      "stage": "scope_review",
-      "code": "source_scope_review_failed",
-      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects",
-      "failed_checks": [
-        "plain_english"
-      ]
+      "code": "claim_grounding_failed",
+      "engine_version": "aieo-editorial-runtime-v13-concise-box-effects"
     }
   ],
-  "updated_at": "2026-11-16T13:15:18.307888+00:00"
+  "updated_at": "2026-11-23T02:39:25.450491+00:00"
 }
