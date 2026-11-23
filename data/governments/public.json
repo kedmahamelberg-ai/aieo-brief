@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-23T08:00:00+00:00",
-  "last_checked_at": "2026-11-23T09:08:13.547394+00:00",
+  "monitor_as_of": "2026-11-23T14:00:00+00:00",
+  "last_checked_at": "2026-11-23T14:25:53.681339+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1683,6 +1683,17 @@
       "summary": "Chinese Vice Premier Ding Xuexiang and Singaporean Prime Minister Lawrence Wong discussed deepening bilateral cooperation, including in AI, green development and the digital economy, and strengthening people-to-people ties. Wong said Singapore would use its upcoming ASEAN chairmanship to advance cooperation between ASEAN and China.",
       "body_paragraphs": [],
       "input_fingerprint": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d"
+    },
+    "a5b20dbff694aaba6c32": {
+      "id": "a5b20dbff694aaba6c32",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/23/content_WS6b041647c6d00ca5f9a0e922.html",
+      "date": "2026-11-23",
+      "headline": "China and Singapore agree to deepen cooperation, including in AI, digital economy and green industries.",
+      "summary": "China and Singapore agreed to strengthen cooperation in established and emerging fields, including technology, AI, the digital economy, green industries and connectivity. Their leaders’ meetings also produced 29 outcomes across emerging sectors, finance, health and other areas.",
+      "body_paragraphs": [],
+      "input_fingerprint": "44a91a337aa0e28eb64f43815935e4789dd95d40bf77f5e16d2cbfaea9e727d2"
     }
   },
   "checked": {
@@ -1833,7 +1844,8 @@
     "5374f48573316b6e1e1e": "21ded1b9f430108a758ca207cb4a21508f4081e822a4adf7a348237572c63253",
     "58195c888455c8fbf5ad": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55",
     "530b3338da125dde09c7": "664ba746a95d214447d5ba110ddb413527d0755f814c5c3d0f1aa7582075d7c2",
-    "902c930a4fb1772c6dd8": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d"
+    "902c930a4fb1772c6dd8": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d",
+    "a5b20dbff694aaba6c32": "44a91a337aa0e28eb64f43815935e4789dd95d40bf77f5e16d2cbfaea9e727d2"
   },
   "retry": {},
   "pending": 0,
