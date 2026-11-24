@@ -2,6 +2,376 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "eccc1c6c353118eead69734a800b4fef3a4c573ad9d1b02590e3b544b68da9e3",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "For Teaism is the art of concealing beauty that you may discover it, of suggesting what you dare not reveal.",
+      "headline": "For Teaism is the art of concealing beauty that you may discover it, of suggesting what you dare not reveal.",
+      "key": "culture:fe853f8bfefead0d74c4045d",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:eccc1c6c353118eead69734a800b4fef3a4c573ad9d1b02590e3b544b68da9e3",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Charles Lamb, a professed devotee, sounded the true note of Teaism when he wrote that the greatest pleasure he knew was to do a good action by stealth, and to have it found out by accident. For Teaism is the art of concealing beauty that you may discover it, of suggesting what you dare not reveal. It is the noble secret of laughing at yourself, calmly yet thoroughly, and is thus humour itself,--the smile of philosophy. All genuine humourists may in this sense be called tea-philosophers, Thackeray, for instance, and of course, Shakespeare. The poets of the Decadence (when was not the world in decadence?), in their protests against materialism, have, to a certain extent, also opened the way to Teaism. Perhaps nowadays it is our demure contemplation of the Imperfect that the West and the East can meet in mutual consolation.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 16 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-11-25",
+      "selected_on": "2026-11-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-fe853f8bfefead0d74c4045d",
+      "path": "culture/culture-fe853f8bfefead0d74c4045d/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "For Teaism is the art of concealing beauty that you may discover it, of suggesting what you dare not reveal.",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-25",
+      "summary_basis": "Selected 25 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "For Teaism is the art of concealing beauty that you may discover it, of suggesting what you dare not reveal.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Charles Lamb, a professed devotee, sounded the true note of Teaism when he wrote that the greatest pleasure he knew was to do a good action by stealth, and to have it found out by accident. For Teaism is the art of concealing beauty that you may discover it, of suggesting what you dare not reveal. It is the noble secret of laughing at yourself, calmly yet thoroughly, and is thus humour itself,--the smile of philosophy. All genuine humourists may in this sense be called tea-philosophers, Thackeray, for instance, and of course, Shakespeare. The poets of the Decadence (when was not the world in decadence?), in their protests against materialism, have, to a certain extent, also opened the way to Teaism. Perhaps nowadays it is our demure contemplation of the Imperfect that the West and the East can meet in mutual consolation.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Claude_Debussy_-_Prelude_XII_%28...Feux_d%C2%B4artifice%29_Deuxi%C3%A8me_livre_-_Patrizia_Prati.ogg",
+      "creator": "Claude Debussy",
+      "creator_origin": "French",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Claude Debussy. 5 minutes to listen.",
+      "duration_seconds": 311,
+      "headline": "Claude Debussy - Prelude XII (...Feux d´artifice) Deuxième livre - Patrizia Prati",
+      "key": "culture:9926708e277bd8ebc0921fca",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Claude_Debussy_-_Prelude_XII_%28...Feux_d%C2%B4artifice%29_Deuxi%C3%A8me_livre_-_Patrizia_Prati.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Claude_Debussy",
+      "original_recording_title": "Claude Debussy - Prelude XII (...Feux d´artifice) Deuxième livre - Patrizia Prati",
+      "provenance_id": "commons:45339861",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Claude Debussy",
+      "recording_description": "Prelude XII (...Feux d´artifice) Deuxième livre.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Claude Debussy",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "Patrizia Prati . Piano. Live performance at Museum of Romanticism (Madrid) on November 24, 2015.",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_-_Prelude_XII_(...Feux_d%C2%B4artifice)_Deuxi%C3%A8me_livre_-_Patrizia_Prati.ogg",
+      "work_date": "2015-11-24",
+      "date": "2026-11-25",
+      "selected_on": "2026-11-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-9926708e277bd8ebc0921fca",
+      "path": "culture/culture-9926708e277bd8ebc0921fca/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Claude Debussy - Prelude XII (...Feux d´artifice) Deuxième livre - Patrizia Prati",
+          "url": "https://commons.wikimedia.org/wiki/File:Claude_Debussy_-_Prelude_XII_(...Feux_d%C2%B4artifice)_Deuxi%C3%A8me_livre_-_Patrizia_Prati.ogg",
+          "date": "2015-11-24",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-25",
+      "summary_basis": "Selected 25 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Portrait of Mary Anne Jolliffe",
+      "art_type": "Painting",
+      "balance_origin": "England",
+      "creator": "Gainsborough Dupont (British, 1754–1797)",
+      "creator_origin": "England, 18th century",
+      "culture_type": "illustration",
+      "deck": "Portrait of Mary Anne Jolliffe. oil on canvas.",
+      "headline": "Portrait of Mary Anne Jolliffe",
+      "image_path": "assets/culture/97cee51731bed32a2676ae86.jpg",
+      "key": "culture:97cee51731bed32a2676ae86",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1942.640/1942.640_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1942.640",
+      "provenance_id": "cma:122344",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Bequest of John L. Severance",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1942.640",
+      "work_date": "after 1788",
+      "date": "2026-11-25",
+      "selected_on": "2026-11-25",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-97cee51731bed32a2676ae86",
+      "path": "culture/culture-97cee51731bed32a2676ae86/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Portrait of Mary Anne Jolliffe",
+          "url": "https://clevelandart.org/art/1942.640",
+          "date": "after 1788",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-25",
+      "summary_basis": "Selected 25 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "70b7761718c23fdc63a538fe243da75bb9f880f31a379e2070578cbb51f2dff7",
+      "creator": "Walt Whitman",
+      "creator_origin": "American",
+      "culture_type": "poetry",
+      "deck": "A poem by Walt Whitman.",
+      "excerpt": "ON the beach at night alone,\nAs the old mother sways her to and fro, singing her husky song,\nAs I watch the bright stars shining—I think a thought of the clef of the universes, and of\n  the future.\n\nA VAST SIMILITUDE interlocks all,\nAll spheres, grown, ungrown, small, large, suns, moons, planets, comets, asteroids,\nAll the substances of the same, and all that is spiritual upon the same,\nAll distances of place, however wide,\nAll distances of time—all inanimate forms,\nAll Souls—all living bodies, though they be ever so different, or in different worlds,\nAll gaseous, watery, vegetable, mineral processes—the fishes, the brutes,\nAll men and women—me also;\nAll nations, colors, barbarisms, civilizations, languages;\nAll identities that have existed, or may exist, on this globe, or any globe;\nAll lives and deaths—all of the past, present, future;\nThis vast similitude spans them, and always has spann’d, and shall forever span them, and\n  compactly hold them, and enclose them.",
+      "headline": "On the Beach at Night, Alone.",
+      "key": "culture:464772576547fa70aece4a57",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "ON the beach at night alone,",
+        "As the old mother sways her to and fro, singing her husky song,",
+        "As I watch the bright stars shining—I think a thought of the clef of the universes, and of",
+        "  the future.",
+        "",
+        "A VAST SIMILITUDE interlocks all,",
+        "All spheres, grown, ungrown, small, large, suns, moons, planets, comets, asteroids,",
+        "All the substances of the same, and all that is spiritual upon the same,",
+        "All distances of place, however wide,",
+        "All distances of time—all inanimate forms,",
+        "All Souls—all living bodies, though they be ever so different, or in different worlds,",
+        "All gaseous, watery, vegetable, mineral processes—the fishes, the brutes,",
+        "All men and women—me also;",
+        "All nations, colors, barbarisms, civilizations, languages;",
+        "All identities that have existed, or may exist, on this globe, or any globe;",
+        "All lives and deaths—all of the past, present, future;",
+        "This vast similitude spans them, and always has spann’d, and shall forever span them, and",
+        "  compactly hold them, and enclose them."
+      ],
+      "provenance_id": "poetrydb:Walt Whitman:On the Beach at Night, Alone.",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1892.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "3df19866daa58c9bd6c44c060ed7000c2e32f6980bf735838e91890e882db668",
+      "source_locator": "On the Beach at Night, Alone.",
+      "source_url": "https://poetrydb.org/title/On%20the%20Beach%20at%20Night%2C%20Alone.:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1892",
+      "date": "2026-11-25",
+      "selected_on": "2026-11-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-464772576547fa70aece4a57",
+      "path": "culture/culture-464772576547fa70aece4a57/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "On the Beach at Night, Alone.",
+          "url": "https://poetrydb.org/title/On%20the%20Beach%20at%20Night%2C%20Alone.:abs/lines.text",
+          "date": "Before 1892",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-25",
+      "summary_basis": "Selected 25 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "ON the beach at night alone,\nAs the old mother sways her to and fro, singing her husky song,\nAs I watch the bright stars shining—I think a thought of the clef of the universes, and of\n  the future.\n\nA VAST SIMILITUDE interlocks all,\nAll spheres, grown, ungrown, small, large, suns, moons, planets, comets, asteroids,\nAll the substances of the same, and all that is spiritual upon the same,\nAll distances of place, however wide,\nAll distances of time—all inanimate forms,\nAll Souls—all living bodies, though they be ever so different, or in different worlds,\nAll gaseous, watery, vegetable, mineral processes—the fishes, the brutes,\nAll men and women—me also;\nAll nations, colors, barbarisms, civilizations, languages;\nAll identities that have existed, or may exist, on this globe, or any globe;\nAll lives and deaths—all of the past, present, future;\nThis vast similitude spans them, and always has spann’d, and shall forever span them, and\n  compactly hold them, and enclose them.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "White Nights",
+      "content_fingerprint": "30e2289f2009852c2eaf140cc841e450ff28b4300c4a1b01a52e5ae75345dac8",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "Towards six o'clock on New Year's Eve Shumkov returned home. Arkady Ivanovitch, who was lying on the bed, woke up and looked at his friend with half-closed eyes. He saw that Vasya had on his very best trousers and a very clean shirt front. That, of course, struck him. \"Where had Vasya to go like that? And he had not dined at home either!\" Meanwhile, Shumkov had lighted a candle, and Arkady Ivanovitch guessed immediately that his friend was intending to wake him accidentally. Vasya did, in fact, clear his throat twice, walked twice up and down the room, and at last, quite accidentally, let the pipe, which he had begun filling in the corner by the stove, slip out of his hands. Arkady Ivanovitch laughed to himself.",
+      "headline": "White Nights · a short reading",
+      "key": "culture:08d70757d3c161f4c1002f6e",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:30e2289f2009852c2eaf140cc841e450ff28b4300c4a1b01a52e5ae75345dac8",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 906 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-11-25",
+      "selected_on": "2026-11-25",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-08d70757d3c161f4c1002f6e",
+      "path": "culture/culture-08d70757d3c161f4c1002f6e/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-25",
+      "summary_basis": "Selected 25 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Towards six o'clock on New Year's Eve Shumkov returned home. Arkady Ivanovitch, who was lying on the bed, woke up and looked at his friend with half-closed eyes. He saw that Vasya had on his very best trousers and a very clean shirt front. That, of course, struck him. \"Where had Vasya to go like that? And he had not dined at home either!\" Meanwhile, Shumkov had lighted a candle, and Arkady Ivanovitch guessed immediately that his friend was intending to wake him accidentally. Vasya did, in fact, clear his throat twice, walked twice up and down the room, and at last, quite accidentally, let the pipe, which he had begun filling in the corner by the stove, slip out of his hands. Arkady Ivanovitch laughed to himself.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "Stray Birds",
       "content_fingerprint": "8d510c5f6ad283403c3d730bee13e0068ffd1d3b01cfaba03538a55bb022dbed",
       "creator": "Rabindranath Tagore",
@@ -31880,7 +32250,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-24T22:42:35.965349+00:00",
+      "affiliation_checked_at": "2026-11-24T23:57:23.158468+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
