@@ -115,18 +115,18 @@
         "image_source_url": "https://npgallery.nps.gov/AssetDetail/2ef91b9f-ad6d-4c60-9a57-d2386724aeb7",
         "image_rights": "Public domain · Full Granting Rights",
         "papers": [],
-        "paper_count": 24,
-        "affiliation_verified_count": 18,
+        "paper_count": 30,
+        "affiliation_verified_count": 21,
         "editorial_version": "kedma-weekly-v10",
         "status": "pending",
         "prose": [],
         "pending_reason": "generation_pending",
-        "input_hash": "549de42da7aa0d14c305bd0ad2bee4ec5ffb44ca08b96bf37cf6a45f3f08789e",
+        "input_hash": "45d752a1eb35a57c275918327b5de491b173c4116badfbb8c9340f9669f56b08",
         "attempts": 0
       },
       "editorial_version": "kedma-weekly-v10",
       "editorial_status": "pending",
-      "content_sha256": "87a33f2e5052fced067871d45f32389a17048e8a5e91c1a56bf8bc634d9e4b36"
+      "content_sha256": "2bc5f3b5020f1f101c8dda154407ff701673c9e9dcb57151f459e8a293b3abaf"
     },
     {
       "schema_version": "aieo_weekly_overview_v1",
