@@ -8,8 +8,8 @@
     "GB": "event:0ab86c8d-d3e8-4f31-88d8-b65ce024987b"
   },
   "paper_keys": [
-    "paper:b49075d2088a06ea03ac4f34",
-    "paper:e1da903d90e81697bc3ebc0f"
+    "paper:2ec9f3d53f7f698e2002fce4",
+    "paper:6c81d3d1cde3b7bb667c603a"
   ],
   "markets": {
     "title": "How Do We Keep AI Helpful and Honest This Week",
@@ -43,29 +43,25 @@
     "image_reason": "The mountain landscape suggests a wider view of the week."
   },
   "research": {
-    "title": "What makes a forecast useful?",
+    "title": "How AI agents practise and remember",
     "paragraphs": [
       [
         {
-          "text": "A forecast is only as useful as the test behind it. Two new preprints look at prediction in very different settings and show why the comparison matters.",
+          "text": "Practice is useful only if lessons can be carried forward. Two preprints explore how AI agents can improve or retain skills within controlled tests.",
           "source_key": ""
+        },
+        {
+          "text": "In one study, researchers gave language-model agents tools and a goal, then let them create games and revise written advice. Stronger models improved in the tested games, but the experiments were short and do not prove which learning strategy caused the gains.",
+          "source_key": "paper:2ec9f3d53f7f698e2002fce4"
         }
       ],
       [
         {
-          "text": "In a study of next-day stock market forecasts, researchers compared several models with a simple prediction: tomorrow’s closing price will match today’s. In their tests, the models’ average errors did not beat that baseline. The finding concerns the S&P 500 and the data and target studied; it does not settle how models perform on other assets.",
-          "source_key": "paper:b49075d2088a06ea03ac4f34"
-        }
-      ],
-      [
+          "text": "A second study tested an agent that saves strategies for different conditions and selects one later. It retained skills more consistently than tested versions of the same design in harder simulations. The work does not establish that it beats other methods for preserving skills.",
+          "source_key": "paper:6c81d3d1cde3b7bb667c603a"
+        },
         {
-          "text": "A study of tropical cyclones found that adding forecasters’ written discussions to numerical data reduced average wind-speed error in one historical comparison. The researchers caution that their data and timing do not represent a real-time forecasting test.",
-          "source_key": "paper:e1da903d90e81697bc3ebc0f"
-        }
-      ],
-      [
-        {
-          "text": "Together, the papers invite a practical question: does a more elaborate approach improve a meaningful comparison under the conditions where it will be used?",
+          "text": "Both studies use controlled tasks. They offer clues about practice and memory, while leaving open how well these approaches work in more complex settings.",
           "source_key": ""
         }
       ]
