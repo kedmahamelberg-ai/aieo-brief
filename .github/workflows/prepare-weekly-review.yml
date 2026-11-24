@@ -25,6 +25,7 @@ on:
       - 'scripts/weekly_editorials.py'
       - 'data/editorial/reading-corrections-*.json'
       - 'scripts/prepare_weekly_review.py'
+      - 'data/weekly-overviews/owner-drafts/*.json'
       - '.github/workflows/prepare-weekly-review.yml'
 permissions:
   contents: read
