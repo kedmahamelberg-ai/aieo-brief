@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-23T14:51:37.770782+00:00",
-  "last_checked_at": "2026-11-23T15:20:26.548401+00:00",
+  "monitor_as_of": "2026-11-24T08:00:00+00:00",
+  "last_checked_at": "2026-11-24T09:20:21.343954+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1694,6 +1694,28 @@
       "summary": "China and Singapore agreed to strengthen cooperation in established and emerging fields, including technology, AI, the digital economy, green industries and connectivity. Their leaders’ meetings also produced 29 outcomes across emerging sectors, finance, health and other areas.",
       "body_paragraphs": [],
       "input_fingerprint": "44a91a337aa0e28eb64f43815935e4789dd95d40bf77f5e16d2cbfaea9e727d2"
+    },
+    "2de0e77fddd94dbd8c0a": {
+      "id": "2de0e77fddd94dbd8c0a",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/24/content_WS6b04e1f4c6d00ca5f9a0e957.html",
+      "date": "2026-11-24",
+      "headline": "China and Switzerland discuss Taiwan, AI cooperation, trade and the international order.",
+      "summary": "Wang Yi and Ignazio Cassis co-chaired the fifth China-Switzerland Foreign Ministers’ Strategic Dialogue in Nanjing. They discussed political trust, trade, AI, climate change and cooperation, and agreed to deepen bilateral ties and support the UN-centered international system and international law.",
+      "body_paragraphs": [],
+      "input_fingerprint": "d34b8d5911f6a40879d57d98ef8d92d3f7e33674046d88e1081c5ca63d0d620c"
+    },
+    "00488aa7ad942038c980": {
+      "id": "00488aa7ad942038c980",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/24/content_WS6b04d65cc6d00ca5f9a0e93e.html",
+      "date": "2026-11-24",
+      "headline": "China says it will develop AI for public benefit and expand relevant cooperation with Singapore.",
+      "summary": "Ding Xuexiang and Lee Hsien Loong discussed expanding China-Singapore cooperation, building on recent bilateral meetings and leaders’ exchanges. They emphasized sustained communication, new areas of cooperation, and practical results, including potential collaboration on artificial intelligence.",
+      "body_paragraphs": [],
+      "input_fingerprint": "fce772f0c05e0f08661f2ae1f731ce975218d504e5e10fb545bb40e4912e3400"
     }
   },
   "checked": {
@@ -1845,7 +1867,9 @@
     "58195c888455c8fbf5ad": "bff044cbe56c3f037463310c4863f69740fbf57013d9339eff9794e5204caa55",
     "530b3338da125dde09c7": "664ba746a95d214447d5ba110ddb413527d0755f814c5c3d0f1aa7582075d7c2",
     "902c930a4fb1772c6dd8": "3e046aff8ba70554bc88cf3b532b260ee5e8a269ea3c7a89fca63d47475dfc4d",
-    "a5b20dbff694aaba6c32": "44a91a337aa0e28eb64f43815935e4789dd95d40bf77f5e16d2cbfaea9e727d2"
+    "a5b20dbff694aaba6c32": "44a91a337aa0e28eb64f43815935e4789dd95d40bf77f5e16d2cbfaea9e727d2",
+    "2de0e77fddd94dbd8c0a": "d34b8d5911f6a40879d57d98ef8d92d3f7e33674046d88e1081c5ca63d0d620c",
+    "00488aa7ad942038c980": "fce772f0c05e0f08661f2ae1f731ce975218d504e5e10fb545bb40e4912e3400"
   },
   "retry": {},
   "pending": 0,
