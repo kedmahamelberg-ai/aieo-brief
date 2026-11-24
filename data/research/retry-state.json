@@ -1,36 +1,41 @@
 {
   "paper:3ffa2d84b6e20da2db465da1": {
-    "attempts": 30,
-    "last_attempt": "2026-11-22T19:42:45.052692+00:00"
+    "attempts": 31,
+    "last_attempt": "2026-11-24T00:12:36.186933+00:00"
   },
   "paper:beaf7b4a534a2a4135c21b97": {
-    "attempts": 33,
-    "last_attempt": "2026-11-22T19:42:47.104772+00:00"
+    "attempts": 34,
+    "last_attempt": "2026-11-24T00:12:39.898252+00:00"
   },
   "paper:be49d96abd2a3f5b615d1f08": {
     "attempts": 2,
     "last_attempt": "2026-11-03T19:50:31.264602+00:00"
   },
   "paper:7cba509615081b2bc0d1faf2": {
-    "attempts": 21,
-    "last_attempt": "2026-11-22T19:42:42.574204+00:00"
+    "attempts": 22,
+    "last_attempt": "2026-11-23T23:55:38.052239+00:00"
   },
   "paper:7de8e086b715a97caa852c62": {
-    "attempts": 21,
-    "last_attempt": "2026-11-22T19:42:43.618533+00:00"
+    "attempts": 22,
+    "last_attempt": "2026-11-23T23:55:46.173708+00:00"
   },
   "paper:565eb5d350d80d2a2f647f6b": {
-    "attempts": 21,
-    "last_attempt": "2026-11-22T19:42:44.328923+00:00"
+    "attempts": 22,
+    "last_attempt": "2026-11-24T00:12:34.907548+00:00"
   },
-  "paper:046f56564a169c03dee074b2": {
+  "paper:7eca592b299cbcc823e006f4": {
     "attempts": 1,
-    "last_attempt": "2026-11-20T20:24:19.131054+00:00",
-    "rejected_fingerprint": "c0565b6b7ee8f233afcc053af16163d6c20dd96bc30794f5a616fe6d436d18c1"
+    "last_attempt": "2026-11-23T23:58:41.492478+00:00",
+    "rejected_fingerprint": "edb82bc0fd0140f9898fd3016a03e1ec39110d11c80dc7e7e460f3078ee86f6f"
   },
-  "paper:4b647af289dfc3976e0941cb": {
+  "paper:b9a78a36e197b1a2423a0d81": {
     "attempts": 1,
-    "last_attempt": "2026-11-20T20:32:18.892561+00:00",
-    "rejected_fingerprint": "c2ea7e54f936cde65ec3042e5991c4402cff03400766e91328ddd4034bac89c1"
+    "last_attempt": "2026-11-24T00:04:18.519187+00:00",
+    "rejected_fingerprint": "f7b01b656cbe78c730e4213422df6b0f6edead6424be371b48cde97b08dfd22b"
+  },
+  "paper:c15542014b6ee934a1a4634f": {
+    "attempts": 1,
+    "last_attempt": "2026-11-24T00:07:36.907481+00:00",
+    "rejected_fingerprint": "01e52aad3d4b2ce163403a48b895e0bd3e039a6592b57958cadc75217e7ccfe9"
   }
 }
