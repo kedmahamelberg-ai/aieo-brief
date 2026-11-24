@@ -257,7 +257,7 @@ def opening_words(text):
 
 
 def validate_draft(draft, selected, pictures, recent_openings=(), recent_titles=(), *,
-                   enforce_style=False, questions_allowed=True):
+                   enforce_style=False, questions_allowed=True, owner_question_override=False):
     if set(draft) != {'title', 'paragraphs', 'image_key', 'image_reason'}:
         raise ValueError('weekly_draft_fields')
     if not isinstance(draft['title'], str) or not draft['title'].strip():
@@ -297,9 +297,9 @@ def validate_draft(draft, selected, pictures, recent_openings=(), recent_titles=
                          + ', '.join(repeated_or_unknown or ['none']))
     validate_citation_alignment(paragraphs, selected)
     text = ' '.join([draft['title']] + strings)
-    if enforce_style and text.count('?') > 1:
+    if enforce_style and not owner_question_override and text.count('?') > 1:
         raise ValueError('weekly_too_many_questions')
-    if enforce_style and not questions_allowed and '?' in text:
+    if enforce_style and not owner_question_override and not questions_allowed and '?' in text:
         raise ValueError('weekly_question_repeated_next_week')
     length = words(text)
     if not 60 <= length <= 180:
@@ -482,7 +482,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None, owne
     for repair_number in range(2):
         try:
             validate_draft(draft, model_selected, model_pictures, recent_openings, recent_titles,
-                           enforce_style=True, questions_allowed=questions_allowed)
+                           enforce_style=True, questions_allowed=questions_allowed,
+                           owner_question_override=owner_seed is not None)
             break
         except ValueError as error:
             if owner_seed is not None:
@@ -503,7 +504,8 @@ def create_section(kind, selected, pictures, base, call, recent_style=None, owne
                 schema=DRAFT_SCHEMA, deadline=deadline,
                 stage='weekly_repair' if repair_number == 0 else 'weekly_repair_final')
     validate_draft(draft, model_selected, model_pictures, recent_openings, recent_titles,
-                   enforce_style=True, questions_allowed=questions_allowed)
+                   enforce_style=True, questions_allowed=questions_allowed,
+                   owner_question_override=owner_seed is not None)
     def check(candidate, stage):
         artwork = next(x for x in model_pictures if x['key'] == candidate['image_key'])
         verdict = call(
