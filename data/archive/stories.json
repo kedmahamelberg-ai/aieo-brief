@@ -1030,6 +1030,57 @@
       "url_slug_version": 1
     },
     {
+      "id": "099ebcfda95fec715355",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262001",
+      "date": "2026-11-23",
+      "headline": "EU culture plan includes underwater heritage protection, AI challenges in creative sectors and safer digital services…",
+      "summary": "Malta supported the EU Culture Work Plan for 2027–2030, securing a reference to underwater cultural heritage. The meeting also addressed AI’s effects on creative sectors and a proposal to strengthen children’s protection online.",
+      "body_paragraphs": [],
+      "input_fingerprint": "2f48cc28b3276eeabc0c5ed6f442df7c5cffc07e8af228c26344c203b06c6079",
+      "key": "event:8dfecdb5-5135-5d38-a273-29185eec09cf",
+      "kind": "news",
+      "section": "governments",
+      "slug": "eu-culture-plan-includes-underwater-heritage-digital-services",
+      "path": "story/eu-culture-plan-includes-underwater-heritage-digital-services/index.html",
+      "deck": "Malta supported the EU Culture Work Plan for 2027–2030, securing a reference to underwater cultural heritage. The meeting also addressed AI’s effects on creative sectors and a proposal to strengthen children’s protection online.",
+      "publisher": "Government of Malta",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Malta",
+          "headline": "Official government announcement",
+          "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262001",
+          "date": "2026-11-23",
+          "language": ""
+        }
+      ],
+      "display_date": "23 Nov 2026",
+      "markets": [],
+      "market_label": "Malta",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-8dfecdb5-5135-5d38-a273-29185eec09cf/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Thus Spake Zarathustra",
       "content_fingerprint": "b02495ef65cad16150bea8b070f4fea285a74a36c677710dcb900680e8ca2be1",
       "creator": "Friedrich Nietzsche",
@@ -31311,7 +31362,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-24T14:23:01.497215+00:00",
+      "affiliation_checked_at": "2026-11-24T15:21:01.761832+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
