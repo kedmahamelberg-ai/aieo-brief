@@ -173,6 +173,10 @@ class WeeklyEditorialTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'weekly_too_many_questions'):
             validate_draft({**draft, 'title': 'How do we check an answer?'},
                            self.news, [{'key': section['image_key']}], enforce_style=True)
+        # The owner can approve the exact questions in their supplied copy.
+        validate_draft({**draft, 'title': 'How do we check an answer?'},
+                       self.news, [{'key': section['image_key']}], enforce_style=True,
+                       owner_question_override=True)
         with self.assertRaisesRegex(ValueError, 'weekly_question_repeated_next_week'):
             validate_draft(draft, self.news, [{'key': section['image_key']}],
                            enforce_style=True, questions_allowed=False)
