@@ -30,6 +30,14 @@ class SocialProduction(unittest.TestCase):
   page['imageinfo'][0]['extmetadata']['DateTimeOriginal']['value']='2015-03-26'
   page['imageinfo'][0]['extmetadata']['ImageDescription']['value']='AI-generated illustration'
   self.assertIsNone(social.verified_camera_date(page,'2026-W46'))
+ def test_scanned_photo_cannot_use_a_conflicting_exif_year_as_capture_date(self):
+  page={'title':'File:Luftbild New York City, 1995.jpg','imageinfo':[{'extmetadata':{
+      'DateTimeOriginal':{'value':'2024-11-27'},
+      'ImageDescription':{'value':'An aerial photograph of New York City.'},
+  }}]}
+  self.assertIsNone(social.verified_camera_date(page,'2026-W47'))
+  page['imageinfo'][0]['extmetadata']['DateTimeOriginal']['value']='1995-06-01'
+  self.assertEqual(social.verified_camera_date(page,'2026-W47'),'1995-06-01')
  def test_discovery_market_cannot_turn_dutch_news_into_uk_news(self):
   row=news('GB',1);row.update(headline='Dutch lawmakers propose rules for school AI',what_happened='The Dutch parliament discusses a proposal for primary schools.')
   self.assertEqual(social.verified_markets(row),[])
@@ -177,5 +185,84 @@ class CuratedPhotoReproducibility(unittest.TestCase):
             output = Path(d); (output/'sources').mkdir()
             social.curated_photos(config['photos'],dict(source_urls=[],sha256=[]),output,ROOT/'config/social-photos-2026-W43.zip')
             self.assertEqual(len(list((output/'sources').glob('*.jpg'))),14)
+
+
+class AutomaticPhotoSourcing(unittest.TestCase):
+    def page(self, title, *, license='CC0', description='New York city skyline, United States', captured='2024-01-19', width=1800):
+        return {'title': 'File:'+title, 'imageinfo': [{
+            'mime': 'image/jpeg', 'width': width, 'height': 1200,
+            'descriptionurl': 'https://commons.wikimedia.org/wiki/File:'+title,
+            'url': 'https://upload.wikimedia.org/'+title,
+            'extmetadata': {'LicenseShortName': {'value': license},
+                            'DateTimeOriginal': {'value': captured},
+                            'ImageDescription': {'value': description}},
+        }]}
+
+    def run_search(self, root, pages, topics, history=None):
+        output = root/'output'; (output/'sources').mkdir(parents=True)
+        queries = []
+        def fetch(url, target=None):
+            if target is not None:
+                target.write_bytes(url.encode())
+                return
+            queries.append(url)
+            return json.dumps({'query': {'pages': {str(i): page for i, page in enumerate(pages)}}}).encode()
+        with patch.object(social, 'ROOT', root), patch.object(social, 'fetch', side_effect=fetch):
+            photos = social.new_photos(topics, history or {'source_urls': [], 'sha256': []}, output, '2026-W47')
+        return photos, queries, output
+
+    def test_named_city_photos_pass_without_literal_country_in_filename(self):
+        topics = [{'id': 'first', 'kind': 'News', 'market': 'US', 'path': 'story/one/'},
+                  {'id': 'second', 'kind': 'News', 'market': 'US', 'path': 'story/two/'}]
+        pages = [self.page('New York Midtown skyline.jpg'), self.page('Manhattan river skyline.jpg')]
+        with tempfile.TemporaryDirectory() as d:
+            photos, queries, _ = self.run_search(Path(d), pages, topics)
+        self.assertEqual(len(photos), 2)
+        self.assertEqual(len(queries), 1)  # Reuse metadata while rejecting already-selected photographs.
+        from urllib.parse import parse_qs, urlparse
+        self.assertIn('incategory:CC-Zero', parse_qs(urlparse(queries[0]).query)['gsrsearch'][0])
+
+    def test_fallback_preserves_rights_location_date_size_and_duplicate_gates(self):
+        used = self.page('New York used skyline.jpg')
+        repeated_bytes = self.page('New York duplicate skyline.jpg')
+        rejected = [used, repeated_bytes,
+                    self.page('New York restricted skyline.jpg', license='CC BY-SA 4.0'),
+                    self.page('Paris skyline.jpg', description='Paris city, France'),
+                    self.page('New York future skyline.jpg', captured='2099-01-01'),
+                    self.page('New York undated skyline.jpg', captured=''),
+                    self.page('New York tiny skyline.jpg', width=500),
+                    self.page('New York synthetic skyline.jpg', description='AI-generated New York skyline')]
+        good = self.page('New York Brooklyn skyline.jpg')
+        history = {'source_urls': [used['imageinfo'][0]['descriptionurl']],
+                   'sha256': [hashlib.sha256(repeated_bytes['imageinfo'][0]['url'].encode()).hexdigest()]}
+        with tempfile.TemporaryDirectory() as d:
+            photos, _, _ = self.run_search(Path(d), rejected+[good],
+                [{'id': 'first', 'kind': 'News', 'market': 'US', 'path': 'story/one/'}], history)
+        self.assertEqual(photos['first']['source_url'], good['imageinfo'][0]['descriptionurl'])
+
+    def test_failed_search_keeps_diagnostics_and_never_marks_a_partial_package_ready(self):
+        topics = [{'id': 'first', 'kind': 'News', 'market': 'US', 'path': 'story/one/'},
+                  {'id': 'second', 'kind': 'News', 'market': 'US', 'path': 'story/two/'}]
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            with self.assertRaisesRegex(ValueError, 'second'):
+                self.run_search(root, [self.page('New York river skyline.jpg')], topics)
+            output = root/'output'
+            self.assertEqual(len(json.loads((output/'PHOTO_MANIFEST.json').read_text())), 1)
+            report = json.loads((output/'PHOTO_SELECTION_REPORT.json').read_text())
+            self.assertEqual(report['failed_topic'], 'second')
+            self.assertEqual(report['selected_photos'], 1)
+            self.assertFalse((output/'READY_FOR_REVIEW.json').exists())
+
+    def test_explicit_story_photo_scope_is_not_replaced_by_default_city_search(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d); scope = root/'config/social-photo-scopes-2026-W47.json'
+            scope.parent.mkdir()
+            scope.write_text(json.dumps({'schema_version': 'brief_social_photo_scopes_v1',
+                'source_edition': '2026-W47', 'topics': {'story/one/': {
+                    'queries': ['Capitol building'], 'title_pattern': 'Capitol', 'kind': 'place'}}}))
+            with self.assertRaisesRegex(ValueError, 'first'):
+                self.run_search(root, [self.page('New York river skyline.jpg')],
+                    [{'id': 'first', 'kind': 'News', 'market': 'US', 'path': 'story/one/'}])
 
 if __name__=='__main__':unittest.main()
