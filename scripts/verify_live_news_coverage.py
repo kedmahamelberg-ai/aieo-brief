@@ -84,18 +84,28 @@ def verify_story_page(story, html):
 
 
 def verify_article_routes(brief):
-    stories = [story for story in brief.get('stories') or [] if story.get('has_editorial')]
+    stories = [story for story in (brief.get('stories') or []) + (brief.get('recent_news') or [])
+               if story.get('has_editorial')]
     def check(story):
-        url = urljoin(BRIEF, story['path'].removesuffix('index.html'))
-        if urlparse(url).netloc != urlparse(BRIEF).netloc:
-            raise ValueError(f'News route leaves the Brief: {story["event_id"]}')
-        with requests.Session() as session:
-            page = get(session, url)
-        if urlparse(page.url).netloc != urlparse(BRIEF).netloc:
-            raise ValueError(f'News route redirects outside the Brief: {story["event_id"]}')
-        verify_story_page(story, page.text)
+        try:
+            url = urljoin(BRIEF, story['path'].removesuffix('index.html'))
+            if urlparse(url).netloc != urlparse(BRIEF).netloc:
+                raise ValueError('News route leaves the Brief')
+            with requests.Session() as session:
+                # Check the ordinary reader URL: a cache-busting request can
+                # conceal a stale or missing article served to actual readers.
+                page = session.get(url, timeout=(10, 30))
+                page.raise_for_status()
+            if urlparse(page.url).netloc != urlparse(BRIEF).netloc:
+                raise ValueError('News route redirects outside the Brief')
+            verify_story_page(story, page.text)
+        except (ValueError, KeyError, requests.RequestException) as exc:
+            return f'{story.get("event_id", "unknown")}: {exc}'
     with ThreadPoolExecutor(max_workers=5) as pool:
-        list(pool.map(check, stories))
+        failures = [failure for failure in pool.map(check, stories) if failure]
+    if failures:
+        raise ValueError(f'{len(failures)} of {len(stories)} live news article routes failed:\n'
+                         + '\n'.join(failures))
     return len(stories)
 
 
@@ -117,7 +127,8 @@ def main():
                                   f"developments, {report['brief_records']} Brief records, "
                                   f"{report['rendered_news_cards']} homepage cards, "
                                   f"{report['full_brief_articles']} full Brief articles; "
-                                  f"{report['live_article_routes_verified']} live bodies and source links verified.\n")
+                                  f"{report['live_article_routes_verified']} current and retained live bodies "
+                                  f"and source links verified.\n")
             return
         except (ValueError, KeyError, requests.RequestException) as exc:
             error = exc
