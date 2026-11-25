@@ -15,7 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
-from social_completion import locked_week, require_unfinished
+from social_completion import locked_week as completed_week, require_unfinished
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'kedmahamelberg-ai/aieo-brief'
@@ -34,7 +34,7 @@ def read(path, default=None):
 
 def delivery_plan(state, receipts, today):
     week = today.strftime('%G-W%V')
-    if locked_week(ROOT, week, state):
+    if completed_week(ROOT, week, state):
         return None
     candidates = [(edition, entry) for edition, entry in state.get('editions', {}).items()
                   if entry.get('publication_week') == week and entry.get('status') == STATUS]
@@ -54,7 +54,7 @@ def delivery_plan(state, receipts, today):
 
 
 def already_approved(plan):
-    return locked_week(ROOT, plan['publication_week'])
+    return completed_week(ROOT, plan['publication_week'])
 
 
 def load_batch(folder, plan):
