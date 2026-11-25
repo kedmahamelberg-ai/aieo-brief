@@ -32,7 +32,23 @@ def completed_week(root, week, state=None):
                for entry in state.get('editions', {}).values())
 
 
+def blocked_week(root, week):
+    """A suppression blocks duplicate work without granting publication approval."""
+    if not re.fullmatch(r'\d{4}-W\d{2}', week):
+        raise ValueError('Invalid social publication week')
+    marker = read(root / 'data/social-production/blocked' / (week + '.json'))
+    if marker and (marker.get('publication_week') != week or marker.get('status') != 'BLOCK_DUPLICATE'):
+        raise ValueError('Invalid social duplicate-block marker')
+    return bool(marker)
+
+
+def locked_week(root, week, state=None):
+    return blocked_week(root, week) or completed_week(root, week, state)
+
+
 def require_unfinished(root, week):
+    if blocked_week(root, week):
+        raise ValueError('Social week ' + week + ' is blocked to prevent a duplicate')
     if completed_week(root, week):
         raise ValueError('Social week ' + week + ' is already approved or published; refusing a duplicate')
 
@@ -43,7 +59,7 @@ def main():
     args = parser.parse_args()
     week = (read(args.plan)['publication_week'] if args.plan else
             datetime.now(ZoneInfo('Europe/Amsterdam')).strftime('%G-W%V'))
-    needed = not completed_week(ROOT, week)
+    needed = not locked_week(ROOT, week)
     if os.environ.get('GITHUB_OUTPUT'):
         with open(os.environ['GITHUB_OUTPUT'], 'a') as stream:
             stream.write('needed=' + str(needed).lower() + '\n')
