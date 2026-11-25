@@ -40,6 +40,18 @@ class SocialCompletion(unittest.TestCase):
         self.assertFalse(production.due(rows, {}, date(2026, 11, 17))[0])
         self.assertEqual(repair.needed(dict(self.plan, revision=999), self.state), (False, None))
 
+    def test_blocked_week_stops_all_duplicate_work_without_granting_approval(self):
+        self.save('blocked/2026-W47.json', dict(status='BLOCK_DUPLICATE', publication_week='2026-W47'))
+        self.assertFalse(completion.completed_week(self.root, '2026-W47'))
+        self.assertTrue(completion.locked_week(self.root, '2026-W47'))
+        self.assertFalse(completion.locked_week(self.root, '2026-W48'))
+        self.assertIsNone(delivery.delivery_plan(self.state, {}, date(2026, 11, 17)))
+        rows = [dict(kind='news', edition='2026-W46', period_start='2026-11-09', period_end='2026-11-15')]
+        self.assertFalse(production.due(rows, {}, date(2026, 11, 17))[0])
+        self.assertEqual(repair.needed(dict(self.plan, revision=999), self.state), (False, None))
+        with self.assertRaisesRegex(ValueError, 'blocked to prevent a duplicate'):
+            completion.require_unfinished(self.root, '2026-W47')
+
     def test_publication_receipt_alone_locks_week_and_next_week_remains_eligible(self):
         self.save('published/2026-W47.json', dict(publishing_status='PUBLISHED_AND_SCHEDULED'))
         self.assertTrue(completion.completed_week(self.root, '2026-W47'))
