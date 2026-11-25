@@ -1,18 +1,9 @@
 name: Email Social Approval Batch
 on:
   workflow_run:
-    workflows: ['Build and Publish AIEO Brief', 'Prepare Social Approval Batch', 'Repair Social Approval Batch']
+    workflows: ['Prepare Social Approval Batch', 'Repair Social Approval Batch']
     types: [completed]
-  # Deliver the current batch when this repair is installed, too.
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/email-social-review.yml'
-      - 'scripts/social_review_delivery.py'
   workflow_dispatch:
-  # Recovery delivery after Monday's production, independent of later builds.
-  schedule:
-    - cron: '30 12 * * 1'
 permissions:
   contents: write
   actions: read
