@@ -372,6 +372,68 @@
       ]
     },
     {
+      "id": "c0f4f74e81e2abe1db3e",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/25/content_WS6b0643ecc6d00ca5f9a0e96d.html",
+      "date": "2026-11-25",
+      "headline": "China reports leading international AI standards and developing cross-country guidance on generative-AI risks.",
+      "summary": "China has led the development of 78 international AI standards, including foundational and sector-specific standards. The SAMR also said China and other countries jointly developed what it described as the first international standards proposal focused on managing generative AI risks.",
+      "body_paragraphs": [],
+      "input_fingerprint": "624c89a7a0cb7f59dd4495f8f08ae516f34ede8039e49a3c376791110bf308ec",
+      "key": "event:b99fa194-f438-562a-9826-5527087b79f3",
+      "kind": "news",
+      "section": "governments",
+      "slug": "china-leading-international-ai-standards-developing-generative-ai-risks",
+      "path": "story/china-leading-international-ai-standards-developing-generative-ai-risks/index.html",
+      "deck": "China has led the development of 78 international AI standards, including foundational and sector-specific standards. The SAMR also said China and other countries jointly developed what it described as the first international standards proposal focused on managing generative AI risks.",
+      "publisher": "Government of China",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of China",
+          "headline": "Official government announcement",
+          "url": "https://english.www.gov.cn/news/202611/25/content_WS6b0643ecc6d00ca5f9a0e96d.html",
+          "date": "2026-11-25",
+          "language": ""
+        }
+      ],
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": {
+        "market": "CN",
+        "path": "assets/spotlight/beijing.jpg",
+        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
+        "credit": "Scott Meltzer",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
+        "license": "Public domain dedication by the photographer, worldwide",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "sha256": "8d54ae2c4700be09b5139f35f57d73c7e7aace3dde5dda7e67db4220dc0c96df",
+        "caption": "China · Archive image for country context."
+      },
+      "show_feed_photo": true,
+      "legacy_paths": [
+        "story/government-b99fa194-f438-562a-9826-5527087b79f3/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Stray Birds",
       "content_fingerprint": "8d510c5f6ad283403c3d730bee13e0068ffd1d3b01cfaba03538a55bb022dbed",
       "creator": "Rabindranath Tagore",
@@ -772,18 +834,8 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CN",
-        "path": "assets/spotlight/beijing.jpg",
-        "alt": "Beijing central business district at night. Archival geographic context, not the proposed Haidian corridor.",
-        "credit": "Scott Meltzer",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Beijing_skyline_at_night.JPG",
-        "license": "Public domain dedication by the photographer, worldwide",
-        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-        "sha256": "8d54ae2c4700be09b5139f35f57d73c7e7aace3dde5dda7e67db4220dc0c96df",
-        "caption": "China · Archive image for country context."
-      },
-      "show_feed_photo": true,
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-6ff0977d-f726-57d5-a9f0-8d09ea715960/index.html"
       ],
@@ -32250,7 +32302,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-25T01:05:59.353260+00:00",
+      "affiliation_checked_at": "2026-11-25T09:20:56.337888+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
