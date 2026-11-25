@@ -2,6 +2,376 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor%2C_3rd_movement.ogg",
+      "creator": "Sergei Rachmaninoff",
+      "creator_origin": "Russian–American",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Sergei Rachmaninoff. 7 minutes to listen.",
+      "duration_seconds": 480,
+      "headline": "Sergei Rachmaninoff - Concerto 1 in F sharp minor, 3rd movement",
+      "key": "culture:ef2b08751a96f3f30be4dd46",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor%2C_3rd_movement.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Sergei_Rachmaninoff",
+      "original_recording_title": "Sergei Rachmaninoff - Concerto 1 in F sharp minor, 3rd movement",
+      "provenance_id": "commons:3547007",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Sergei Rachmaninoff",
+      "recording_description": "Piano Concerto No. 1 in F-sharp minor, Op. 1, 3 rd movement. F-sharp minor → F-sharp major — allegro",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Sergei Rachmaninoff",
+        "label": "CC BY-SA 2.0 (source-declared)",
+        "source_credit": "The Al Goldstein collection in the Pandora Music repository at ibiblio.org.",
+        "url": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor,_3rd_movement.ogg",
+      "work_date": "1892",
+      "date": "2026-11-26",
+      "selected_on": "2026-11-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-ef2b08751a96f3f30be4dd46",
+      "path": "culture/culture-ef2b08751a96f3f30be4dd46/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "Sergei Rachmaninoff - Concerto 1 in F sharp minor, 3rd movement",
+          "url": "https://commons.wikimedia.org/wiki/File:Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor,_3rd_movement.ogg",
+          "date": "1892",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-26",
+      "summary_basis": "Selected 26 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "8420a6032e270ecdc6e6e45f1c71ead933c8a8555f38e41b662986d3abdca36f",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "text",
+      "deck": "A passage from The Book of Tea.",
+      "excerpt": "The germ of Taoist speculation may be found long before the advent of Laotse, surnamed the Long-Eared. The archaic records of China, especially the Book of Changes, foreshadow his thought. But the great respect paid to the laws and customs of that classic period of Chinese civilisation which culminated with the establishment of the Chow dynasty in the sixteenth century B.C., kept the development of individualism in check for a long while, so that it was not until after the disintegration of the Chow dynasty and the establishment of innumerable independent kingdoms that it was able to blossom forth in the luxuriance of free-thought. Laotse and Soshi (Chuangtse) were both Southerners and the greatest exponents of the New School. On the other hand, Confucius with his numerous disciples aimed at retaining ancestral conventions. Taoism cannot be understood without some knowledge of Confucianism and vice versa.",
+      "headline": "The Book of Tea · a short reading",
+      "key": "culture:dfda0811bb621baf60bcc9e3",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:passage:8420a6032e270ecdc6e6e45f1c71ead933c8a8555f38e41b662986d3abdca36f",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 42 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-11-26",
+      "selected_on": "2026-11-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-dfda0811bb621baf60bcc9e3",
+      "path": "culture/culture-dfda0811bb621baf60bcc9e3/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Book of Tea · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-26",
+      "summary_basis": "Selected 26 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The germ of Taoist speculation may be found long before the advent of Laotse, surnamed the Long-Eared. The archaic records of China, especially the Book of Changes, foreshadow his thought. But the great respect paid to the laws and customs of that classic period of Chinese civilisation which culminated with the establishment of the Chow dynasty in the sixteenth century B.C., kept the development of individualism in check for a long while, so that it was not until after the disintegration of the Chow dynasty and the establishment of innumerable independent kingdoms that it was able to blossom forth in the luxuriance of free-thought. Laotse and Soshi (Chuangtse) were both Southerners and the greatest exponents of the New School. On the other hand, Confucius with his numerous disciples aimed at retaining ancestral conventions. Taoism cannot be understood without some knowledge of Confucianism and vice versa.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Walden",
+      "content_fingerprint": "3eb3354c4b5d69d57509c6426c9a7262c7bd9c5c1c9b725c199d703fe6487b19",
+      "creator": "Henry David Thoreau",
+      "creator_origin": "American",
+      "culture_type": "quote",
+      "deck": "From Walden.",
+      "excerpt": "How worn and dusty, then, must be the highways of the world, how deep the ruts of tradition and conformity!",
+      "headline": "How worn and dusty, then, must be the highways of the world, how deep the ruts of tradition and conformity!",
+      "key": "culture:c7a2ad8d2bba11cc3b8abb59",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:205:quote:3eb3354c4b5d69d57509c6426c9a7262c7bd9c5c1c9b725c199d703fe6487b19",
+      "publisher": "Project Gutenberg",
+      "quote_context": "I left the woods for as good a reason as I went there. Perhaps it seemed to me that I had several more lives to live, and could not spare any more time for that one. It is remarkable how easily and insensibly we fall into a particular route, and make a beaten track for ourselves. I had not lived there a week before my feet wore a path from my door to the pond-side; and though it is five or six years since I trod it, it is still quite distinct. It is true, I fear that others may have fallen into it, and so helped to keep it open. The surface of the earth is soft and impressible by the feet of men; and so with the paths which the mind travels. How worn and dusty, then, must be the highways of the world, how deep the ruts of tradition and conformity! I did not wish to take a cabin passage, but rather to go before the mast and on the deck of the world, for there I could best see the moonlight amid the mountains. I do not wish to go below now.",
+      "rights": {
+        "basis": "Author died 1862. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/205"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "ae102eeb00d51790a6b024d8b6c73d3b5cc6d63b47fea3cd532c9678a6935469",
+      "source_locator": "Economy; paragraph 511 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/205",
+      "translator": "",
+      "work_date": "1854",
+      "date": "2026-11-26",
+      "selected_on": "2026-11-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c7a2ad8d2bba11cc3b8abb59",
+      "path": "culture/culture-c7a2ad8d2bba11cc3b8abb59/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "How worn and dusty, then, must be the highways of the world, how deep the ruts of tradition and conformity!",
+          "url": "https://www.gutenberg.org/ebooks/205",
+          "date": "1854",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-26",
+      "summary_basis": "Selected 26 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "How worn and dusty, then, must be the highways of the world, how deep the ruts of tradition and conformity!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "I left the woods for as good a reason as I went there. Perhaps it seemed to me that I had several more lives to live, and could not spare any more time for that one. It is remarkable how easily and insensibly we fall into a particular route, and make a beaten track for ourselves. I had not lived there a week before my feet wore a path from my door to the pond-side; and though it is five or six years since I trod it, it is still quite distinct. It is true, I fear that others may have fallen into it, and so helped to keep it open. The surface of the earth is soft and impressible by the feet of men; and so with the paths which the mind travels. How worn and dusty, then, must be the highways of the world, how deep the ruts of tradition and conformity! I did not wish to take a cabin passage, but rather to go before the mast and on the deck of the world, for there I could best see the moonlight amid the mountains. I do not wish to go below now.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Text, folio 44 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "art_type": "Painting",
+      "balance_origin": "Eastern India",
+      "creator": "Artist unknown",
+      "creator_origin": "Eastern India, Bihar, Vikramashila Monastery. Painting: Nepal, Kathmandu",
+      "culture_type": "illustration",
+      "deck": "Text, folio 44 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra). gum tempera and ink on palm leaves.",
+      "headline": "Text, folio 44 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+      "image_path": "assets/culture/3ada8ffa6f61d733768ecf82.jpg",
+      "key": "culture:3ada8ffa6f61d733768ecf82",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1938.301.44.a/1938.301.44.a_web.jpg",
+      "medium": "gum tempera and ink on palm leaves",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1938.301.44.a",
+      "provenance_id": "cma:538628",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Purchase from the J. H. Wade Fund",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1938.301.44.a",
+      "work_date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+      "date": "2026-11-26",
+      "selected_on": "2026-11-26",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-3ada8ffa6f61d733768ecf82",
+      "path": "culture/culture-3ada8ffa6f61d733768ecf82/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Text, folio 44 (recto), from a Manuscript of the Perfection of Wisdom in Eight Thousand Lines (Ashtasahasrika Prajnaparamita-sutra)",
+          "url": "https://clevelandart.org/art/1938.301.44.a",
+          "date": "Sunday, September 14, 1119 (year 239 of the Newar Samvat in the month of Ashvina)",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-26",
+      "summary_basis": "Selected 26 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "56be1b42670eb322df81b86df11e9dbc2f36bcb0a0b5ecc89b17033048fe253e",
+      "creator": "Sarojini Naidu",
+      "creator_origin": "Indian",
+      "culture_type": "poetry",
+      "deck": "The Song Of Princess Zeb-Un-Nissa, by Sarojini Naidu.",
+      "excerpt": "IN PRAISE OF HER OWN BEAUTY\n\n  (From the Persian)\n\n  When from my cheek I lift my veil,\n  The roses turn with envy pale,\n       And from their pierced hearts, rich with pain,\n  Send forth their fragrance like a wail.\n\n  Or if perchance one perfumed tress\n  Be lowered to the wind's caress,\n       The honeyed hyacinths complain,\n  And languish in a sweet distress.\n\n  And, when I pause, still groves among,\n  (Such loveliness is mine) a throng\n       Of nightingales awake and strain\n  Their souls into a quivering song.",
+      "headline": "The Song Of Princess Zeb-Un-Nissa",
+      "key": "culture:2cef034f4b83997c95358357",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "IN PRAISE OF HER OWN BEAUTY",
+        "",
+        "  (From the Persian)",
+        "",
+        "  When from my cheek I lift my veil,",
+        "  The roses turn with envy pale,",
+        "       And from their pierced hearts, rich with pain,",
+        "  Send forth their fragrance like a wail.",
+        "",
+        "  Or if perchance one perfumed tress",
+        "  Be lowered to the wind's caress,",
+        "       The honeyed hyacinths complain,",
+        "  And languish in a sweet distress.",
+        "",
+        "  And, when I pause, still groves among,",
+        "  (Such loveliness is mine) a throng",
+        "       Of nightingales awake and strain",
+        "  Their souls into a quivering song."
+      ],
+      "provenance_id": "pg:680:poem:6f624f311eaebd09e687ccf12277971c5276022375717bac901301afad76760c",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1949. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "43b66624f43d0564b45974d76131a5058bd18909e6d49c12683dc8ec6216238d",
+      "source_locator": "THE SONG OF PRINCESS ZEB-UN-NISSA",
+      "source_url": "https://www.gutenberg.org/ebooks/680",
+      "translator": "",
+      "work_date": "1905",
+      "date": "2026-11-26",
+      "selected_on": "2026-11-26",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-2cef034f4b83997c95358357",
+      "path": "culture/culture-2cef034f4b83997c95358357/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "The Song Of Princess Zeb-Un-Nissa",
+          "url": "https://www.gutenberg.org/ebooks/680",
+          "date": "1905",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-26",
+      "summary_basis": "Selected 26 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "IN PRAISE OF HER OWN BEAUTY\n\n  (From the Persian)\n\n  When from my cheek I lift my veil,\n  The roses turn with envy pale,\n       And from their pierced hearts, rich with pain,\n  Send forth their fragrance like a wail.\n\n  Or if perchance one perfumed tress\n  Be lowered to the wind's caress,\n       The honeyed hyacinths complain,\n  And languish in a sweet distress.\n\n  And, when I pause, still groves among,\n  (Such loveliness is mine) a throng\n       Of nightingales awake and strain\n  Their souls into a quivering song.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "book_title": "The Book of Tea",
       "content_fingerprint": "eccc1c6c353118eead69734a800b4fef3a4c573ad9d1b02590e3b544b68da9e3",
       "creator": "Kakuzō Okakura",
@@ -32920,7 +33290,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-25T21:51:04.585588+00:00",
+      "affiliation_checked_at": "2026-11-25T23:41:45.113671+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
