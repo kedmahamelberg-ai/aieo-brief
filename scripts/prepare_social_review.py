@@ -30,6 +30,21 @@ SUBJECT_TAGS = {'policy': '#AIGovernance', 'work': '#FutureOfWork',
                 'technology': '#AITechnology', 'research': '#AIResearch',
                 'everyday': '#AIApplications'}
 ACCOUNTS = {'linkedin': 'The Brief | AI Empowerment Observatory Page, company 146490147', 'facebook': 'The Brief | AI Empowerment Observatory Page, profile 61594324679612', 'instagram': 'thebrief_ai.empowerment', 'substack_note': 'The Brief publication, @thebriefaieo'}
+SCENE_PLACES = {
+    'US': r'United States|New York|Manhattan|American|USA',
+    'CA': r'Canada|Canadian|Ottawa|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan|Newfoundland|St. John.s',
+    'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland|Northern Ireland|Belfast',
+    'FR': r'France|French|Paris|Parijs',
+    'CN': r'China|Shanghai|Pudong|Beijing|Chengdu|Zhuhai|Shenzhen|Qingdao|Hong Kong',
+}
+SCENE_SEARCHES = {
+    'US': ('New York skyline', 'United States skyline'),
+    'CA': ('Canada skyline', 'Ottawa cityscape', 'Quebec cityscape'),
+    'GB': ('London skyline', 'Scotland landscape'),
+    'FR': ('Paris skyline', 'Paris cityscape', 'France cityscape'),
+    'CN': ('Shanghai skyline', 'Beijing skyline', 'Hong Kong skyline'),
+    'GLOBAL': ('city skyline', 'cityscape'),
+}
 
 
 def read(path, default=None):
@@ -200,14 +215,10 @@ def country_scene_candidate(page, market):
         str(meta.get('Categories', {}).get('value', ''))]))
     if re.search(r'\b(?:painting|drawing|maps?|engraving|lithograph|illustration|portrait|headshot|selfie|people|persons?|man|woman|men|women|wildfires?|fires?|floods?|earthquake|disaster|war|protest|funeral|memorial)\b', material, re.I):
         return False
-    places = {'US': r'United States|New York|Manhattan|American|USA',
-              'CA': r'Canada|Canadian|Ottawa|Quebec|Québec|Ontario|Alberta|British Columbia|Manicouagan|Newfoundland|St. John.s',
-              'GB': r'United Kingdom|Britain|British|London|England|Wales|Scotland|Northern Ireland|Belfast',
-              'FR': r'France|French|Paris|Parijs', 'CN': r'China|Chinese|Shanghai|Pudong|Beijing|Chengdu|Zhuhai|Shenzhen|Qingdao'}
     scene = r'\b(?:skyline[0-9]*|cityscape|landscape|river|lake|mountains?|forest|trees|crater|coast|harbou?r|bridge|buildings?|cathedral|countryside|city)\b'
     if market == 'GLOBAL':
         return bool(re.search(scene, material, re.I))
-    return bool(market in places and re.search(r'\b(?:'+places[market]+r')\b', material, re.I) and re.search(scene, material, re.I))
+    return bool(market in SCENE_PLACES and re.search(r'\b(?:'+SCENE_PLACES[market]+r')\b', material, re.I) and re.search(scene, material, re.I))
 
 
 def verified_camera_date(page, release):
@@ -236,19 +247,26 @@ def verified_camera_date(page, release):
         taken = date(*(int(part) for part in match.groups()))
     except (ValueError, TypeError):
         return None
+    # Scanned or reprocessed photographs can expose a scan date in EXIF.
+    # An explicit, different year in the source title needs human sourcing.
+    title_years = re.findall(r'(?<!\d)(?:18|19|20)\d{2}(?!\d)', page.get('title', ''))
+    if title_years and str(taken.year) not in title_years:
+        return None
     return str(taken) if taken <= datetime.now(ZONE).date() else None
 
 
 def new_photos(topics, history, output, release):
     """Use topic-scoped Commons photographs with permanent duplicate history."""
     old_urls = set(history.get('source_urls', [])); old_hashes = set(history.get('sha256', []))
-    queries = {'US': 'New York skyline photograph', 'CA': 'Canada skyline photograph', 'GB': 'London skyline photograph', 'FR': 'France skyline photograph', 'CN': 'Chinese landscape photograph', 'GLOBAL': 'city skyline photograph'}
     scope_file = ROOT / 'config' / f'social-photo-scopes-{release}.json'
     scopes = read(scope_file, {})
     if scopes and (scopes.get('schema_version') != 'brief_social_photo_scopes_v1' or scopes.get('source_edition') != release):
         raise ValueError('Photo scope manifest does not match the source edition')
     scoped = scopes.get('topics', {})
     photos = {}
+    candidates_by_lookup = {}
+    save(output/'PHOTO_MANIFEST.json', photos)
+    (output/'PHOTO_SELECTION_REPORT.json').unlink(missing_ok=True)
     stems = set()
     selected = [t for t in topics if t['kind'] == 'News']
     if scoped and not {topic['path'] for topic in selected}.issubset(set(scoped)):
@@ -257,8 +275,10 @@ def new_photos(topics, history, output, release):
     for topic in selected:
         market = topic['market']
         scope = scoped.get(topic['path'], {})
-        searches = scope.get('queries') or [queries[market]]
-        pattern = scope.get('title_pattern') or (r'skyline|cityscape|landscape' if market == 'GLOBAL' else re.escape(COUNTRIES[market]))
+        searches = scope.get('queries') or [query+' incategory:CC-Zero' for query in SCENE_SEARCHES[market]]
+        # A New York or London filename need not spell out its country's name.
+        # Keep the country/place check aligned with the scene metadata gate.
+        pattern = scope.get('title_pattern') or (r'skyline|cityscape|landscape' if market == 'GLOBAL' else r'\b(?:'+SCENE_PLACES[market]+r')\b')
         lookups = [('file', name) for name in scope.get('preferred_files', [])]
         if not scope.get('only_preferred'):
             lookups += [('search', query) for query in searches]
@@ -268,8 +288,11 @@ def new_photos(topics, history, output, release):
                 params['titles'] = query if query.startswith('File:') else 'File:' + query
             else:
                 params.update(generator='search', gsrsearch=query+' -painting -drawing -map', gsrnamespace=6, gsrlimit=100)
-            data = json.loads(fetch('https://commons.wikimedia.org/w/api.php?' + urlencode(params)))
-            candidates = sorted(data.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 999))
+            lookup = (lookup_kind, query)
+            if lookup not in candidates_by_lookup:
+                data = json.loads(fetch('https://commons.wikimedia.org/w/api.php?' + urlencode(params)))
+                candidates_by_lookup[lookup] = sorted(data.get('query', {}).get('pages', {}).values(), key=lambda p: p.get('index', 999))
+            candidates = candidates_by_lookup[lookup]
             for page in candidates:
                 info = page.get('imageinfo', [{}])[0]; meta = info.get('extmetadata', {})
                 license = meta.get('LicenseShortName', {}).get('value')
@@ -307,11 +330,17 @@ def new_photos(topics, history, output, release):
                 topic['photo'] = topic['id']
                 photos[topic['photo']] = {'title': title, 'creator': clean(meta.get('Artist', {}).get('value')), 'archive': 'Wikimedia Commons', 'source_url': url, 'download_url': info.get('thumburl') or info['url'], 'rights_status': license, 'camera_capture_date': taken_on, 'image_origin': 'camera photograph', 'local_source': 'sources/'+path.name, 'sha256': digest, 'duplicate_check': 'PASS, URL and SHA-256 absent from permanent history', 'verified_on': str(datetime.now(ZONE).date()), 'use': 'Illustrative subject or place photograph; not an image of the reported event'}
                 old_urls.add(url); old_hashes.add(digest); stems.add(stem)
+                save(output/'PHOTO_MANIFEST.json', photos)
                 print(json.dumps({'topic': topic['id'], 'photo': title, 'rights': license, 'source_url': url}, ensure_ascii=False))
                 break
             if topic.get('photo'):
                 break
         if not topic.get('photo'):
+            save(output/'PHOTO_SELECTION_REPORT.json', {
+                'status': 'NEEDS_PHOTO_SOURCE_REVIEW', 'source_edition': release,
+                'failed_topic': topic['id'], 'selected_photos': len(photos),
+                'message': 'No unused photograph passed the topic, rights, size and camera-date checks.',
+            })
             raise ValueError('No fresh, topic-relevant rights-cleared photograph for '+topic['id'])
     return photos
 
@@ -505,6 +534,7 @@ def main():
         if t['kind'] == 'News' and t['market'] != 'GLOBAL' and t['market'] not in verified_markets(current):
             raise ValueError('Featured country is not supported by the selected article: ' + t['id'])
     history=read(ROOT/'config/social-photo-history.json',{'source_urls':[],'sha256':[]})
+    save(output/'topics.json',topics)
     if curated:
         photos=curated['photos']
         validate_curated_photo_policy(photos, release)
