@@ -1,0 +1,46 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "reviewed_at": "2026-11-25",
+  "authorization": "Owner requested correction of the reported regression-paper scope omission.",
+  "news": [],
+  "research": [
+    {
+      "key": "paper:7eca592b299cbcc823e006f4",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.27983v1",
+        "https://arxiv.org/html/2611.27983v1"
+      ],
+      "paper_text_sha256": "8d5f9c87155063ed93f387a377011724bf8339b9c1e5c1ce8f7bb8d577940e21",
+      "reason": "Owner-requested correction after full-source review. Assumption 1 requires zero conditional mean and a bounded conditional absolute alpha-moment for some 1 < alpha <= 2. Theorem 1 requires Assumptions 1, 2 and 3; finite average error size alone is insufficient. Preserve the input-moment and sample-size conditions and the stated open question.",
+      "source_sections": [
+        "Assumption 1",
+        "Assumption 2",
+        "Assumption 3",
+        "Theorem 1",
+        "Corollary 1",
+        "Section 4: Conclusion"
+      ],
+      "before": {
+        "headline": "A cutoff gives regression an optimal error guarantee under stated input conditions",
+        "what_happened": "A four-researcher preprint studies regression when errors have a finite average size but may have infinite variance, the average squared error. The researchers use a data-based cutoff to remove extreme prediction errors, then apply an existing regression method. They prove an optimal error guarantee when inputs meet a stated condition and there are enough samples.",
+        "why_it_matters": "The result provides a theoretical guarantee for this setting, but it depends on the input data and having enough samples.",
+        "body_paragraphs": [
+          "They set the cutoff using separate data groups and update predictions several times. They also prove no estimator can substantially improve the guarantee under the same conditions.",
+          "The input condition limits how often unusually large input values occur, using their fourth powers. Whether it can be weakened without losing the guarantee remains open, the authors say."
+        ],
+        "limitation": "The authors say it remains open whether the input condition for the estimation guarantee can be weakened while keeping the same rate."
+      },
+      "after": {
+        "headline": "A cutoff gives regression an optimal error guarantee under stated conditions",
+        "what_happened": "A four-researcher preprint studies regression when errors can have infinite variance, the average squared error. It uses a data-based cutoff before applying an existing regression method. The optimal guarantee requires the stated conditions on both errors and inputs, plus enough samples.",
+        "why_it_matters": "The method extends regression guarantees to some errors with infinite variance. Those guarantees depend on conditions on both the errors and the inputs, as well as enough samples.",
+        "body_paragraphs": [
+          "For each input, errors must average to zero. The average of their absolute size raised to some power greater than one and at most two must also stay bounded. Having only a finite average error size is insufficient.",
+          "They set the cutoff using separate data groups and update predictions several times. They also prove no estimator can substantially improve the guarantee under the same conditions.",
+          "The input condition limits how often unusually large input values occur, using their fourth powers. Whether it can be weakened without losing the guarantee remains open, the authors say."
+        ],
+        "limitation": "The guarantee needs the stated conditions on errors and inputs and a sufficiently large sample. Whether the input condition can be weakened while keeping the same rate remains open."
+      }
+    }
+  ]
+}
