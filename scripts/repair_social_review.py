@@ -8,7 +8,7 @@ import shutil
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from social_completion import completed_week, require_unfinished
+from social_completion import locked_week as completed_week, require_unfinished
 import prepare_social_review as social
 from social_review_delivery import ARTIFACT, review_html
 from validate_social_package import validate

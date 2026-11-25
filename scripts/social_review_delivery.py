@@ -15,7 +15,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import requests
-from social_completion import completed_week, require_unfinished
+from social_completion import locked_week as completed_week, require_unfinished
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = 'kedmahamelberg-ai/aieo-brief'

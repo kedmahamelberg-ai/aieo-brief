@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 from zoneinfo import ZoneInfo
-from social_completion import completed_week, require_unfinished
+from social_completion import locked_week as completed_week, require_unfinished
 
 ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
