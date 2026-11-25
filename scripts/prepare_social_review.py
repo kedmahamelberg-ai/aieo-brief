@@ -16,7 +16,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from urllib.parse import urlencode, urlparse
 from zoneinfo import ZoneInfo
-from social_completion import completed_week, require_unfinished
+from social_completion import locked_week, require_unfinished
 
 ROOT = Path(__file__).resolve().parents[1]
 ZONE = ZoneInfo('Europe/Amsterdam')
@@ -88,7 +88,7 @@ def due(items, state, today):
     # Never catch up an obsolete edition as if it were this week's content.
     if today >= monday + timedelta(days=7):
         return False, release
-    if completed_week(ROOT, monday.strftime('%G-W%V'), state):
+    if locked_week(ROOT, monday.strftime('%G-W%V'), state):
         return False, release
     editions = state.get('editions', {})
     previous = editions.get(release, {})
@@ -499,7 +499,7 @@ def main():
         state['editions'][batch['source_edition']]={'publication_week':batch['publishing_week'],'status':STATUS,'artifact_url':artifact,'run_id':os.environ.get('GITHUB_RUN_ID'),'review_revision':revision,'created_at':datetime.now(ZONE).isoformat()}
         save(statepath,state);save(ROOT/'config/social-photo-history.json',history);return
     week = datetime.now(ZONE).strftime('%G-W%V')
-    if completed_week(ROOT, week, state):
+    if locked_week(ROOT, week, state):
         if os.environ.get('GITHUB_OUTPUT'):
             with open(os.environ['GITHUB_OUTPUT'], 'a') as stream: stream.write('needed=false\n')
         print(json.dumps({'production_needed': False, 'publication_week': week, 'reason': 'already approved or published'}))
