@@ -122,11 +122,19 @@ class SocialProduction(unittest.TestCase):
   with tempfile.TemporaryDirectory() as d,patch.object(sys,'argv',['prepare_social_review.py','--record','--output',d]):
    Path(d,'batch.json').write_text('{}')
    with self.assertRaises(AssertionError):social.main()
- def test_deploy_dependency_not_clock_or_workflow_run(self):
-  build=(ROOT/'.github/workflows/build-brief-preview.yml').read_text();trigger=(ROOT/'.github/workflows/prepare-social-review.yml').read_text()
-  self.assertIn('needs: deploy',build);self.assertIn("if: needs.deploy.result == 'success'",build)
-  self.assertNotIn('cron:',trigger);self.assertNotIn('workflow_run:',trigger)
-  self.assertNotIn('OPENAI_API_KEY',trigger);self.assertNotIn('SOCIAL_ACCESS_TOKEN',trigger)
+ def test_social_production_is_not_triggered_by_site_deploy_or_timer(self):
+  build=(ROOT/'.github/workflows/build-brief-preview.yml').read_text()
+  trigger=(ROOT/'.github/workflows/prepare-social-review.yml').read_text()
+  email=(ROOT/'.github/workflows/email-social-review.yml').read_text()
+  repair=(ROOT/'.github/workflows/repair-social-review.yml').read_text()
+  self.assertNotIn('prepare-social-review.yml',build)
+  self.assertIn('workflow_dispatch:',trigger)
+  self.assertNotIn('cron:',trigger)
+  self.assertNotIn('Build and Publish AIEO Brief',email)
+  self.assertNotIn('schedule:',email)
+  self.assertIn('Prepare Social Approval Batch',email)
+  self.assertNotIn('workflow_run:',repair)
+  self.assertIn('workflow_dispatch:',repair)
 
  def test_carousel_requires_prepared_and_post_save_order(self):
      topics=social.topic_plan(self.items,date(2026,10,26),self.news)
