@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-24T15:17:06.253109+00:00",
-  "last_checked_at": "2026-11-24T15:20:28.914544+00:00",
+  "monitor_as_of": "2026-11-25T08:00:00+00:00",
+  "last_checked_at": "2026-11-25T09:20:26.657471+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1727,6 +1727,17 @@
       "summary": "Malta supported the EU Culture Work Plan for 2027–2030, securing a reference to underwater cultural heritage. The meeting also addressed AI’s effects on creative sectors and a proposal to strengthen children’s protection online.",
       "body_paragraphs": [],
       "input_fingerprint": "2f48cc28b3276eeabc0c5ed6f442df7c5cffc07e8af228c26344c203b06c6079"
+    },
+    "c0f4f74e81e2abe1db3e": {
+      "id": "c0f4f74e81e2abe1db3e",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/25/content_WS6b0643ecc6d00ca5f9a0e96d.html",
+      "date": "2026-11-25",
+      "headline": "China reports leading international AI standards and developing cross-country guidance on generative-AI risks.",
+      "summary": "China has led the development of 78 international AI standards, including foundational and sector-specific standards. The SAMR also said China and other countries jointly developed what it described as the first international standards proposal focused on managing generative AI risks.",
+      "body_paragraphs": [],
+      "input_fingerprint": "624c89a7a0cb7f59dd4495f8f08ae516f34ede8039e49a3c376791110bf308ec"
     }
   },
   "checked": {
@@ -1881,7 +1892,8 @@
     "a5b20dbff694aaba6c32": "44a91a337aa0e28eb64f43815935e4789dd95d40bf77f5e16d2cbfaea9e727d2",
     "2de0e77fddd94dbd8c0a": "d34b8d5911f6a40879d57d98ef8d92d3f7e33674046d88e1081c5ca63d0d620c",
     "00488aa7ad942038c980": "fce772f0c05e0f08661f2ae1f731ce975218d504e5e10fb545bb40e4912e3400",
-    "099ebcfda95fec715355": "2f48cc28b3276eeabc0c5ed6f442df7c5cffc07e8af228c26344c203b06c6079"
+    "099ebcfda95fec715355": "2f48cc28b3276eeabc0c5ed6f442df7c5cffc07e8af228c26344c203b06c6079",
+    "c0f4f74e81e2abe1db3e": "624c89a7a0cb7f59dd4495f8f08ae516f34ede8039e49a3c376791110bf308ec"
   },
   "retry": {},
   "pending": 0,
