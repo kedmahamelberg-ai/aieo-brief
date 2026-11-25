@@ -1,0 +1,6 @@
+{
+  "publication_week": "2026-W48",
+  "status": "BLOCK_DUPLICATE",
+  "reason": "The owner approved a separate local W48 batch on 2026-11-23 and its execution log records publication and scheduling. Do not generate, email, approve, repair, or publish the separate GitHub batch for the same week.",
+  "note": "This is a duplicate-prevention block, not an approval or publication receipt."
+}
