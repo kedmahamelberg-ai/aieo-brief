@@ -8,7 +8,7 @@ import shutil
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
-from social_completion import locked_week, require_unfinished
+from social_completion import locked_week as completed_week, require_unfinished
 import prepare_social_review as social
 from social_review_delivery import ARTIFACT, review_html
 from validate_social_package import validate
@@ -27,7 +27,7 @@ def save(path, value):
 
 
 def needed(plan, state):
-    if locked_week(ROOT, plan['publication_week'], state):
+    if completed_week(ROOT, plan['publication_week'], state):
         return False, None
     entry = state['editions'].get(plan['source_edition'])
     if not entry or entry['publication_week'] != plan['publication_week']:
