@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-25T14:56:02.157110+00:00",
-  "last_checked_at": "2026-11-25T15:20:26.611545+00:00",
+  "monitor_as_of": "2026-11-26T11:55:59.024079+00:00",
+  "last_checked_at": "2026-11-26T12:01:35.182377+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1738,6 +1738,18 @@
       "summary": "China has led the development of 78 international AI standards, including foundational and sector-specific standards. The SAMR also said China and other countries jointly developed what it described as the first international standards proposal focused on managing generative AI risks.",
       "body_paragraphs": [],
       "input_fingerprint": "624c89a7a0cb7f59dd4495f8f08ae516f34ede8039e49a3c376791110bf308ec"
+    },
+    "a95745648ac1d21ca099": {
+      "id": "a95745648ac1d21ca099",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/ro/comunicate-de-presa/parcursul-european-al-republicii-moldova-si-extinderea-cooperarii-economice-cu",
+      "date": "2026-11-25",
+      "headline": "Moldova and Latvia discuss EU accession support, AI and digital cooperation, investment, and Chișinău airport development.",
+      "page_headline": "Moldova and Latvia discuss EU accession support, AI and digital cooperation, investment, and Chișinău airport development.",
+      "summary": "Moldova and Latvia discussed EU accession, investment and airport modernization. Talks highlighted Latvian company TILDE’s role in founding Moldova AI Hub and TET’s plans for a Moldovan data centre.",
+      "body_paragraphs": [],
+      "input_fingerprint": "6dfc6b399ab2b923c7e47010eb374578b58c1fab7715274fc812bce723a6fa1f"
     }
   },
   "checked": {
@@ -1893,7 +1905,8 @@
     "2de0e77fddd94dbd8c0a": "d34b8d5911f6a40879d57d98ef8d92d3f7e33674046d88e1081c5ca63d0d620c",
     "00488aa7ad942038c980": "fce772f0c05e0f08661f2ae1f731ce975218d504e5e10fb545bb40e4912e3400",
     "099ebcfda95fec715355": "2f48cc28b3276eeabc0c5ed6f442df7c5cffc07e8af228c26344c203b06c6079",
-    "c0f4f74e81e2abe1db3e": "624c89a7a0cb7f59dd4495f8f08ae516f34ede8039e49a3c376791110bf308ec"
+    "c0f4f74e81e2abe1db3e": "624c89a7a0cb7f59dd4495f8f08ae516f34ede8039e49a3c376791110bf308ec",
+    "a95745648ac1d21ca099": "6dfc6b399ab2b923c7e47010eb374578b58c1fab7715274fc812bce723a6fa1f"
   },
   "retry": {},
   "pending": 0,
