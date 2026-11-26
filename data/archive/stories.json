@@ -894,6 +894,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "a95745648ac1d21ca099",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/ro/comunicate-de-presa/parcursul-european-al-republicii-moldova-si-extinderea-cooperarii-economice-cu",
+      "date": "2026-11-25",
+      "headline": "Moldova and Latvia discuss EU accession support, AI and digital cooperation, investment, and Chișinău airport development.",
+      "page_headline": "Moldova and Latvia discuss EU accession support, AI and digital cooperation, investment, and Chișinău airport development.",
+      "summary": "Moldova and Latvia discussed EU accession, investment and airport modernization. Talks highlighted Latvian company TILDE’s role in founding Moldova AI Hub and TET’s plans for a Moldovan data centre.",
+      "body_paragraphs": [],
+      "input_fingerprint": "6dfc6b399ab2b923c7e47010eb374578b58c1fab7715274fc812bce723a6fa1f",
+      "page_description": "Moldova and Latvia discussed EU accession, investment and airport modernization.",
+      "announcement_paragraphs": [
+        "Moldova and Latvia discussed EU accession, investment and airport modernization. Talks highlighted Latvian company TILDE’s role in founding Moldova AI Hub and TET’s plans for a Moldovan data centre."
+      ],
+      "key": "event:4e64e6b4-c020-54f0-bb85-3e6eccbe2b04",
+      "kind": "news",
+      "section": "governments",
+      "slug": "moldova-latvia-discuss-eu-accession-support-airport-development",
+      "path": "story/moldova-latvia-discuss-eu-accession-support-airport-development/index.html",
+      "deck": "Moldova and Latvia discussed EU accession, investment and airport modernization. Talks highlighted Latvian company TILDE’s role in founding Moldova AI Hub and TET’s plans for a Moldovan data centre.",
+      "publisher": "Government of Moldova",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Moldova",
+          "headline": "Official government announcement",
+          "url": "https://gov.md/ro/comunicate-de-presa/parcursul-european-al-republicii-moldova-si-extinderea-cooperarii-economice-cu",
+          "date": "2026-11-25",
+          "language": ""
+        }
+      ],
+      "display_date": "25 Nov 2026",
+      "markets": [],
+      "market_label": "Moldova",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-4e64e6b4-c020-54f0-bb85-3e6eccbe2b04/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Stray Birds",
       "content_fingerprint": "8d510c5f6ad283403c3d730bee13e0068ffd1d3b01cfaba03538a55bb022dbed",
       "creator": "Rabindranath Tagore",
