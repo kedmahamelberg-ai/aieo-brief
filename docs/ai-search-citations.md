@@ -14,5 +14,13 @@ For each result, record the date, product, prompt ID, whether any page on `brief
 
 | Date | Product | Prompt | Brief linked | URL |
 |---|---|---|---|---|
+| 2026-11-26 | ChatGPT web search | P1 | No | — |
+| 2026-11-26 | ChatGPT web search | P2 | No | — |
+| 2026-11-26 | ChatGPT web search | P3 | No | — |
+| 2026-11-26 | ChatGPT web search | P4 | No | — |
+| 2026-11-26 | ChatGPT web search | P5 | No | — |
+| 2026-11-26 | Claude web search | P1–P5 | Pending sign-in | — |
+
+The 26 November checks were run before the updated pages went live. ChatGPT was signed out and web search was explicitly enabled. Claude opened its sign-in page.
 
 Use the [traffic reports](traffic-measurement.md) for attributable visits. An answer can link to the site without sending a visit. A visit can also arrive without a source signal.
