@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-26T20:37:46+00:00",
-  "last_checked_at": "2026-11-26T21:52:35.803133+00:00",
+  "monitor_as_of": "2026-11-26T21:38:55+00:00",
+  "last_checked_at": "2026-11-26T22:50:47.559860+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -2120,6 +2120,18 @@
       "summary": "Director Michael Kratsios outlines federal efforts to strengthen U.S. science through research computing, data, metascience, replication, research organizations, STEM and early-career training, and national missions in AI, quantum, space, and energy. He urges cross-sector and international coordination; the excerpt ends mid-announcement.",
       "body_paragraphs": [],
       "input_fingerprint": "3e59d7205d4796331b1b63e51618b6736c00f8d403182cbc8647d676b3471fcf"
+    },
+    "90651a99bb5065b01754": {
+      "id": "90651a99bb5065b01754",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/nobelpreistraeger-geoffrey-hinton-begruesst-oesterreichs-vorstoss-fuer-ki-zentrum-in-wien.html",
+      "date": "2026-10-28",
+      "headline": "Austria proposes a Vienna UN-affiliated AI centre for international cooperation on safety, evaluation and standards.",
+      "page_headline": "Austria proposes a Vienna UN-affiliated AI centre for international cooperation on safety, evaluation and standards.",
+      "summary": "Austria proposed a UN-backed AI cooperation centre in Vienna. Geoffrey Hinton welcomed the initiative, while Chancellor Christian Stocker and State Secretary Alexander Pröll discussed AI safety, talent and innovation with Hinton and Austrian developer Peter Steinberger. Austria plans further discussions with international partners.",
+      "body_paragraphs": [],
+      "input_fingerprint": "4fae976c8213e17769267341b433637eac8e30c50c955814ffb3ea809a194c63"
     }
   },
   "checked": {
@@ -2296,7 +2308,8 @@
     "88de504b21d55a41d70b": "69434001d21e36adb01ff19a18806076c4d4ed07e7263f981695057d5ffbcd22",
     "b577f14007056ed2a84c": "86c29dceafebad3c2853f206594b47e137bc349c4e0cef0d20dafdfc29a8f0d6",
     "05186b4b33debd844a26": "21a7ffc69d727fa153c6a427e98e909e6d26476187ff513009427572e48f6ad0",
-    "29a7dc57d72849a8e557": "3e59d7205d4796331b1b63e51618b6736c00f8d403182cbc8647d676b3471fcf"
+    "29a7dc57d72849a8e557": "3e59d7205d4796331b1b63e51618b6736c00f8d403182cbc8647d676b3471fcf",
+    "90651a99bb5065b01754": "4fae976c8213e17769267341b433637eac8e30c50c955814ffb3ea809a194c63"
   },
   "retry": {},
   "pending": 0,
