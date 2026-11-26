@@ -3,13 +3,9 @@
 {% block description %}Read what governments announce about AI, with dates and links to their official statements. Explore what is planned, being tested or already in use.{% endblock %}
 {% block content %}
 <main id="main-content" class="page-shell government-page">
-<header class="research-intro"><span class="eyebrow">GOVERNMENTS & AI</span><h1>What do governments say?</h1></header>
+<header class="research-intro"><span class="eyebrow">GOVERNMENTS & AI</span><h1>What do governments say?</h1><p>AI-related announcements from across the <a href="https://monitor.hamelberg-ai.com/#government">Monitor’s government coverage</a>.</p></header>
 <div class="reading-layout">
 <section class="feed-column" aria-label="Government AI announcements">
-<section class="quiet-box" aria-labelledby="public-services-explainer">
-  <h2 id="public-services-explainer"><a href="{{ local(explainer_path) }}">{{ explainer.title }}</a></h2>
-  <p>{{ explainer.description }}</p>
-</section>
 <div class="feed-controls government-controls" data-government-controls hidden>
 <div class="market-tabs" aria-label="Browse announcements"><button type="button" data-government-view="day" aria-pressed="true">Last 7 days</button><button type="button" data-government-view="older" aria-pressed="false">Older</button></div>
 <p class="filter-status" id="government-status" aria-live="polite"></p>
@@ -28,6 +24,11 @@
 {% endfor %}</section>{% endfor %}
 </div>
 {% if not items %}<div class="empty-state"><h2>No Monitor AI narratives yet.</h2><p>New items appear after the Monitor labels them as artificial intelligence. You can also <a href="https://monitor.hamelberg-ai.com/#government">visit the Monitor’s collected announcements</a>.</p></div>{% endif %}
+<section class="quiet-box" aria-labelledby="public-services-explainer">
+  <p class="eyebrow">BACKGROUND READING · THREE-COUNTRY COMPARISON</p>
+  <h2 id="public-services-explainer"><a href="{{ local(explainer_path) }}">{{ explainer.title }}</a></h2>
+  <p>{{ explainer.description }}</p>
+</section>
 </section>
 
 </div></main>
