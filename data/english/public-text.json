@@ -7657,6 +7657,25 @@
       },
       "output_sha256": "23dfd0c40a52faa53786145798146bdae8d49f4a3071177bbccbccb3d7f2ddbe",
       "policy": "brief-english-display-v1"
+    },
+    "5835fd54e68d770c44ad22358c57e268529acfd25e56eb4ff77f4096788e900e": {
+      "english": {
+        "0": "Tokenisation is not in APX",
+        "1": "Tokenisation is not in APX"
+      },
+      "review": {
+        "english_only": true,
+        "meaning_preserved": true,
+        "attribution_preserved": true
+      },
+      "model": {
+        "provider": "openai",
+        "model": "gpt-5-nano",
+        "revision": "gpt-5-nano:low:aieo-openai-json-v1",
+        "reasoning_effort": "low"
+      },
+      "output_sha256": "4827ebf4747c6d6ed11554df53afd330d7040131f9a440aa31adf0bbe02c1ae5",
+      "policy": "brief-english-display-v1"
     }
   },
   "failures": {
