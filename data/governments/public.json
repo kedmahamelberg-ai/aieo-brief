@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-26T16:32:15+00:00",
-  "last_checked_at": "2026-11-26T18:17:00.811557+00:00",
+  "monitor_as_of": "2026-11-26T18:24:20.058015+00:00",
+  "last_checked_at": "2026-11-26T18:26:27.397942+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1649,9 +1649,9 @@
       "date": "2026-11-19",
       "headline": "Xi urges wider AI use and stronger Asia-Pacific trade, connectivity, energy and food-security cooperation.",
       "page_headline": "Xi urges wider AI use and stronger Asia-Pacific trade, connectivity, energy and food-security cooperation.",
-      "summary": "Xi called for stronger Asia-Pacific trade and connectivity, digital infrastructure and data governance, and broad use of AI to spur industrial innovation. He also urged cooperation on energy and food security and a green transition.",
+      "summary": "At the APEC leaders’ meeting in Shenzhen, Xi urged wider AI use and digital infrastructure investment, stronger trade and connectivity, and cooperation on energy, food security and a green transition.",
       "body_paragraphs": [],
-      "input_fingerprint": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa"
+      "input_fingerprint": "d775ca0e4678708d5b08e64c25604dcb4f138de0daea25131a41762c2c226c91"
     },
     "6fcf36d70333107c372a": {
       "id": "6fcf36d70333107c372a",
@@ -1707,11 +1707,11 @@
       "country_code": "DE",
       "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen/pressemitteilungen/14-eu-staaten-schliessen-sich-deutscher-initiative-zum-schutz-des-digitalen-raums-an-staatsminister-weimer-starkes-urheberrecht-und-jugendmedienschutz-haben-hoechste-prioritaet--2462122",
       "date": "2026-11-20",
-      "headline": "Germany urges European TikTok ownership, stronger AI-era copyright protections and safeguards for young people online.",
-      "page_headline": "Germany urges European TikTok ownership, stronger AI-era copyright protections and safeguards for young people online.",
+      "headline": "Germany seeks stronger AI copyright protections and child safeguards, alongside a European ownership structure for TikTok’s…",
+      "page_headline": "Germany seeks stronger AI copyright protections and child safeguards, alongside a European ownership structure for TikTok’s operations in Europe.",
       "summary": "At the EU Culture Council, Germany and 14 other Member States called for stronger copyright protections in the AI era. Ministers discussed online child safety and European media policy, adopted the 2027–2030 cultural work plan, and Weimer urged European ownership of TikTok’s European operations.",
       "body_paragraphs": [],
-      "input_fingerprint": "851478765750fff477e5bf49d524f7fa026e7ed8a57596498270c4a615eb3812"
+      "input_fingerprint": "975fb237864feab3eaeefb30123127bd492bff779f964b598826ed334b7c100b"
     },
     "1197c1fd44f3cae5e7af": {
       "id": "1197c1fd44f3cae5e7af",
@@ -1959,11 +1959,11 @@
       "country_code": "EE",
       "url": "https://valitsus.ee/uudised/valitsuse-pressikonverents-5-november-2026",
       "date": "2026-11-05",
-      "headline": "Estonia backs continued Russian and Belarusian sports restrictions during Russia’s war and launches nationwide AI skills…",
-      "page_headline": "Estonia backs continued Russian and Belarusian sports restrictions during Russia’s war and launches nationwide AI skills training.",
-      "summary": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "headline": "Estonia urges European AI investment to compete with the US and China, alongside wider AI training.",
+      "page_headline": "Estonia urges European AI investment to compete with the US and China, alongside wider AI training.",
+      "summary": "Estonia called for European AI investment to avoid falling behind the United States and China, alongside AI skills training. Ministers also backed restrictions on Russian and Belarusian participation in international sport during Russia’s war against Ukraine.",
       "body_paragraphs": [],
-      "input_fingerprint": "1a815c7832cd201d226049ca8ebec819767a5a61bd648787ae7376b20f445fb9"
+      "input_fingerprint": "b0a664c73f648042bb848f1104055502eed39c946d84455c70f0bfde81b5fd6c"
     },
     "c1f59b47edf050ee1ea4": {
       "id": "c1f59b47edf050ee1ea4",
@@ -2113,12 +2113,12 @@
     "7c371c86683310ec946f": "eb09c74b1b61d9762ca8d1a033daade5242b9e583e50ee1d99ee3c80a6b764c2",
     "ca2b403c5d8ecf4ef15f": "26bb4230dbda8a65312371f8841bc1125ec48dc756237b53602704f42ca12229",
     "b4287079579f46e5f20c": "55756509633eacf462e478917bb9c2dedb552fb64b9ed8d11a0a0b49b608107c",
-    "988bc52e00995f14128a": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa",
+    "988bc52e00995f14128a": "d775ca0e4678708d5b08e64c25604dcb4f138de0daea25131a41762c2c226c91",
     "6fcf36d70333107c372a": "f194060c4d8fdf494787ae8fd839c4585ab8882eafeee596c8830e3af125dca3",
     "0d3da572f379627b0365": "169f47910f1025934907dfc63fa26982ecd9ed5be12ed234965b6b92327ecfbd",
     "c20b880177123988076f": "55c850ff451fec490d3e95e4a14f6572c3667087154069265503ca032a0e6ccd",
     "5da4dd480d49f20def86": "f1c4d4a1bbd35b5dd63e6472c63fffdeb49a6f5d49e420b1e1890a43f0c4df8f",
-    "1d978cfeba81f4c737f8": "851478765750fff477e5bf49d524f7fa026e7ed8a57596498270c4a615eb3812",
+    "1d978cfeba81f4c737f8": "975fb237864feab3eaeefb30123127bd492bff779f964b598826ed334b7c100b",
     "1197c1fd44f3cae5e7af": "d2ef7bc2f85be21c7a8645111a992a79c1456154bd05654d41e72797b02dc69a",
     "51a320c4228d3e563e69": "cead9fb3f5f3f93b54983eb5a5aed5022fe350806a88c124cf06aa3b81d4bbad",
     "eb18721cb93e73501f8b": "958480919ac6e4eea93eae922995f9624030999f86d992d5f231600162462bf7",
@@ -2139,7 +2139,7 @@
     "da9a13881f5f30e39280": "8985b5cd9387e29625a662ed8fc656ed5d50ee40b6e0d071318248ec64bd25e4",
     "b6ab6a865c7727dcab36": "9a4381cfca69a6de68d095462a413405e786070dcfa9b7c9d1ae04e06f37b677",
     "591f259c4d3bff29412e": "2fca5a907954b5d8d4026bb1feed6516dab8559feb378eca501dc2cc476e5453",
-    "7480232694c7eb45e52b": "1a815c7832cd201d226049ca8ebec819767a5a61bd648787ae7376b20f445fb9",
+    "7480232694c7eb45e52b": "b0a664c73f648042bb848f1104055502eed39c946d84455c70f0bfde81b5fd6c",
     "c1f59b47edf050ee1ea4": "bde4532fca44f0c62b2ae2ed3cd79ecc10706f66f4ff28d7b99d33070ef3f689"
   },
   "retry": {},
