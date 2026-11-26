@@ -484,6 +484,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "b6ab6a865c7727dcab36",
+      "country": "Iceland",
+      "country_code": "IS",
+      "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026-11-26-nordurlond-og-eystrasaltsriki-vilja-efla-stafraent-sjalfstaedi",
+      "date": "2026-11-26",
+      "headline": "Nordic and Baltic ministers seek digital sovereignty; Estonia, Latvia and Lithuania are invited to the New…",
+      "page_headline": "Iceland — Nordic and Baltic ministers seek digital sovereignty; Estonia, Latvia and Lithuania are invited to the New Nordics AI cooperation platform.",
+      "summary": "Nordic and Baltic ministers adopted a declaration to strengthen regional digital sovereignty by 2030, including through cooperation on cloud procurement, submarine-cable security and shared infrastructure projects. Estonia, Latvia and Lithuania were invited to join the New Nordics AI platform.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9a4381cfca69a6de68d095462a413405e786070dcfa9b7c9d1ae04e06f37b677",
+      "page_description": "Nordic and Baltic ministers adopted a declaration to strengthen regional digital sovereignty by 2030, including through cooperation on cloud procurement, submarine-cable security and shared infrastructure projects. Estonia, Latvia and Lithuania were invited to join the New Nordics AI platform.",
+      "announcement_paragraphs": [
+        "Nordic and Baltic ministers adopted a declaration to strengthen regional digital sovereignty by 2030, including through cooperation on cloud procurement, submarine-cable security and shared infrastructure projects. Estonia, Latvia and Lithuania were invited to join the New Nordics AI platform."
+      ],
+      "key": "event:49e6a1f8-7e35-5601-b746-5f5f947b5916",
+      "kind": "news",
+      "section": "governments",
+      "slug": "nordic-baltic-ministers-seek-digital-sovereignty-invited-new",
+      "path": "story/nordic-baltic-ministers-seek-digital-sovereignty-invited-new/index.html",
+      "deck": "Nordic and Baltic ministers adopted a declaration to strengthen regional digital sovereignty by 2030, including through cooperation on cloud procurement, submarine-cable security and shared infrastructure projects. Estonia, Latvia and Lithuania were invited to join the New Nordics AI platform.",
+      "publisher": "Government of Iceland",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Iceland",
+          "headline": "Official government announcement",
+          "url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/2026-11-26-nordurlond-og-eystrasaltsriki-vilja-efla-stafraent-sjalfstaedi",
+          "date": "2026-11-26",
+          "language": ""
+        }
+      ],
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Iceland",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-49e6a1f8-7e35-5601-b746-5f5f947b5916/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "The Book of Tea",
       "content_fingerprint": "eccc1c6c353118eead69734a800b4fef3a4c573ad9d1b02590e3b544b68da9e3",
       "creator": "Kakuzō Okakura",
@@ -9812,6 +9868,73 @@
       "url_slug_version": 1
     },
     {
+      "id": "591f259c4d3bff29412e",
+      "country": "United States",
+      "country_code": "US",
+      "url": "https://www.whitehouse.gov/releases/2026/11/icymi-president-trump-talks-china-iran-super-intelligence-and-the-path-ahead-in-exclusive-interview-from-shenzhen/",
+      "date": "2026-11-19",
+      "headline": "Trump discusses air-traffic-control upgrades, superintelligence, China and Russia, and alleges Iran may be considering biological weapons.",
+      "page_headline": "United States — Trump discusses air-traffic-control upgrades, superintelligence, China and Russia, and alleges Iran may be considering biological weapons.",
+      "summary": "The White House recaps President Trump’s Fox News interview from Shenzhen, covering U.S.–China relations, air-traffic-control modernization, technology outages, Iran, cooperation with Democrats, Super Intelligence, and claims that Obama brought Russia and China closer.",
+      "body_paragraphs": [],
+      "input_fingerprint": "2fca5a907954b5d8d4026bb1feed6516dab8559feb378eca501dc2cc476e5453",
+      "page_description": "The White House recaps President Trump’s Fox News interview from Shenzhen, covering U.S.–China relations, air-traffic-control modernization, technology outages, Iran, cooperation with Democrats, Super Intelligence, and claims that Obama brought Russia and China closer.",
+      "announcement_paragraphs": [
+        "The White House recaps President Trump’s Fox News interview from Shenzhen, covering U.S.–China relations, air-traffic-control modernization, technology outages, Iran, cooperation with Democrats, Super Intelligence, and claims that Obama brought Russia and China closer."
+      ],
+      "key": "event:06d17dcd-19cb-5dd7-abf0-48a7887c9660",
+      "kind": "news",
+      "section": "governments",
+      "slug": "trump-discusses-air-traffic-control-upgrades-superintelligence-china-biological-weapons",
+      "path": "story/trump-discusses-air-traffic-control-upgrades-superintelligence-china-biological-weapons/index.html",
+      "deck": "The White House recaps President Trump’s Fox News interview from Shenzhen, covering U.S.–China relations, air-traffic-control modernization, technology outages, Iran, cooperation with Democrats, Super Intelligence, and claims that Obama brought Russia and China closer.",
+      "publisher": "Government of United States",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of United States",
+          "headline": "Official government announcement",
+          "url": "https://www.whitehouse.gov/releases/2026/11/icymi-president-trump-talks-china-iran-super-intelligence-and-the-path-ahead-in-exclusive-interview-from-shenzhen/",
+          "date": "2026-11-19",
+          "language": ""
+        }
+      ],
+      "display_date": "19 Nov 2026",
+      "markets": [],
+      "market_label": "United States",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": {
+        "path": "assets/spotlight/us.jpg",
+        "alt": "United States Capitol 10",
+        "credit": "Kurt Kaiser",
+        "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
+        "license": "CC0",
+        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "market": "US",
+        "sha256": "f0660fade49b7b2903c1f75792bc94884067c5b13966aa0cc0f665d8ed588612",
+        "caption": "United States · Archive image for country context."
+      },
+      "show_feed_photo": true,
+      "legacy_paths": [
+        "story/government-06d17dcd-19cb-5dd7-abf0-48a7887c9660/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "Cover for a Potpourri Vase",
       "art_type": "Ceramic",
       "balance_origin": "France",
@@ -11913,18 +12036,8 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "path": "assets/spotlight/us.jpg",
-        "alt": "United States Capitol 10",
-        "credit": "Kurt Kaiser",
-        "source_url": "https://commons.wikimedia.org/wiki/File:United_States_Capitol_10.jpg",
-        "license": "CC0",
-        "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-        "market": "US",
-        "sha256": "f0660fade49b7b2903c1f75792bc94884067c5b13966aa0cc0f665d8ed588612",
-        "caption": "United States · Archive image for country context."
-      },
-      "show_feed_photo": true,
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-60188e28-2405-5cf0-9177-f54c964e00fc/index.html"
       ],
@@ -30519,6 +30632,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "7480232694c7eb45e52b",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/valitsuse-pressikonverents-5-november-2026",
+      "date": "2026-11-05",
+      "headline": "Estonia backs continued Russian and Belarusian sports restrictions during Russia’s war and launches nationwide AI skills…",
+      "page_headline": "Estonia backs continued Russian and Belarusian sports restrictions during Russia’s war and launches nationwide AI skills training.",
+      "summary": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "body_paragraphs": [],
+      "input_fingerprint": "1a815c7832cd201d226049ca8ebec819767a5a61bd648787ae7376b20f445fb9",
+      "page_description": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "announcement_paragraphs": [
+        "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport."
+      ],
+      "key": "event:3e35c463-4853-548b-9cf2-1f32e01aa294",
+      "kind": "news",
+      "section": "governments",
+      "slug": "estonia-backs-continued-russian-belarusian-sports-ai-skills",
+      "path": "story/estonia-backs-continued-russian-belarusian-sports-ai-skills/index.html",
+      "deck": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "publisher": "Government of Estonia",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Estonia",
+          "headline": "Official government announcement",
+          "url": "https://valitsus.ee/uudised/valitsuse-pressikonverents-5-november-2026",
+          "date": "2026-11-05",
+          "language": ""
+        }
+      ],
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Estonia",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-3e35c463-4853-548b-9cf2-1f32e01aa294/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "Captain H.S. Rawhinson (recto)",
       "art_type": "Photograph",
       "balance_origin": "India",
@@ -33877,7 +34046,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T18:12:41.896827+00:00",
+      "affiliation_checked_at": "2026-11-26T18:17:33.659349+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -42988,63 +43157,6 @@
       "withdrawn": true
     },
     {
-      "id": "8d659c5a68ccb412d439",
-      "country": "Canada",
-      "country_code": "CA",
-      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/10/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces.html",
-      "date": "2026-10-26",
-      "headline": "Canada adds $500 million to support Prairie AI adoption, commercialization and economic competitiveness.",
-      "page_headline": "Canada adds $500 million to support Prairie AI adoption, commercialization and economic competitiveness.",
-      "summary": "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million. In Alberta, Saskatchewan and Manitoba, it supports responsible AI adoption, commercialization and ecosystem organizations. Applications close December 31, 2030, or when funding is committed.",
-      "body_paragraphs": [],
-      "input_fingerprint": "b201935ad1df8f776e473d35bb46e65df7bae9a49a32a9edfb7dc488afbc9cda",
-      "page_description": "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million.",
-      "announcement_paragraphs": [
-        "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million. In Alberta, Saskatchewan and Manitoba, it supports responsible AI adoption, commercialization and ecosystem organizations. Applications close December 31, 2030, or when funding is committed."
-      ],
-      "key": "event:dcd273f6-ee32-5970-a414-c3cbba7d4329",
-      "kind": "news",
-      "section": "governments",
-      "slug": "canada-adds-500-million-support-prairie-economic-competitiveness",
-      "path": "story/canada-adds-500-million-support-prairie-economic-competitiveness/index.html",
-      "deck": "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million. In Alberta, Saskatchewan and Manitoba, it supports responsible AI adoption, commercialization and ecosystem organizations. Applications close December 31, 2030, or when funding is committed.",
-      "publisher": "Government of Canada",
-      "source_count": 1,
-      "sources": [
-        {
-          "publisher": "Government of Canada",
-          "headline": "Official government announcement",
-          "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/10/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces.html",
-          "date": "2026-10-26",
-          "language": ""
-        }
-      ],
-      "display_date": "26 Oct 2026",
-      "markets": [],
-      "market_label": "Canada",
-      "topic": "policy",
-      "topic_label": "Government & AI",
-      "human_direction": "none",
-      "ai_direction": "none",
-      "human_label": "Context",
-      "ai_label": "Context",
-      "for_humans": "",
-      "for_ai": "",
-      "has_editorial": true,
-      "evidence_complete": false,
-      "summary_basis": "Monitor government narrative · AI topic label",
-      "reading_minutes": 1,
-      "edition": "Governments · 2026-10",
-      "publication_language": "en",
-      "english_status": "checked",
-      "government_photo": null,
-      "show_feed_photo": false,
-      "legacy_paths": [
-        "story/government-dcd273f6-ee32-5970-a414-c3cbba7d4329/index.html"
-      ],
-      "url_slug_version": 1
-    },
-    {
       "alt": "Portrait of Mrs. Leneve",
       "art_type": "Painting",
       "balance_origin": "England",
@@ -46774,6 +46886,63 @@
       ],
       "url_slug_version": 1,
       "withdrawn": true
+    },
+    {
+      "id": "8d659c5a68ccb412d439",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/10/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces.html",
+      "date": "2026-10-22",
+      "headline": "Canada adds $500 million to support Prairie AI adoption, commercialization and economic competitiveness.",
+      "page_headline": "Canada adds $500 million to support Prairie AI adoption, commercialization and economic competitiveness.",
+      "summary": "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million. In Alberta, Saskatchewan and Manitoba, it supports responsible AI adoption, commercialization and ecosystem organizations. Applications close December 31, 2030, or when funding is committed.",
+      "body_paragraphs": [],
+      "input_fingerprint": "8cf6727c6aa179b77f1d0d739bc86be1edce26edab3d6afdf8affe287e35ee65",
+      "page_description": "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million.",
+      "announcement_paragraphs": [
+        "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million. In Alberta, Saskatchewan and Manitoba, it supports responsible AI adoption, commercialization and ecosystem organizations. Applications close December 31, 2030, or when funding is committed."
+      ],
+      "key": "event:dcd273f6-ee32-5970-a414-c3cbba7d4329",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canada-adds-500-million-support-prairie-economic-competitiveness",
+      "path": "story/canada-adds-500-million-support-prairie-economic-competitiveness/index.html",
+      "deck": "PrairiesCan announced an additional $500 million over five years for the Regional Artificial Intelligence Initiative, bringing federal funding to $700 million. In Alberta, Saskatchewan and Manitoba, it supports responsible AI adoption, commercialization and ecosystem organizations. Applications close December 31, 2030, or when funding is committed.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/prairies-economic-development/news/2026/10/government-of-canada-expands-support-for-artificial-intelligence-adoption-and-commercialization-in-the-prairie-provinces.html",
+          "date": "2026-10-22",
+          "language": ""
+        }
+      ],
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-dcd273f6-ee32-5970-a414-c3cbba7d4329/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "content_fingerprint": "52c0b201820441c5a4f3c159892537cfb297e2117c919eccd4ff681f95e08d22",
@@ -63955,6 +64124,63 @@
       "show_feed_photo": false,
       "legacy_paths": [
         "story/government-2cdb0541-2453-5c0c-ae58-4a4014d1e620/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "c1f59b47edf050ee1ea4",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/10/canada-and-the-united-kingdom-renew-their-partnership-on-artificial-intelligence-security.html",
+      "date": "2026-10-13",
+      "headline": "Canada and the UK renew AI security cooperation on risk-sharing, standards, evaluations and societal resilience.",
+      "page_headline": "Canada and the UK renew AI security cooperation on risk-sharing, standards, evaluations and societal resilience.",
+      "summary": "Canada and the United Kingdom renewed their AI security partnership, prioritizing shared standards, sensitive information-sharing, societal resilience, and technical cooperation, including exchanges and coordinated evaluations. The agreement builds on earlier bilateral initiatives and cooperation between their AI safety and security institutes.",
+      "body_paragraphs": [],
+      "input_fingerprint": "bde4532fca44f0c62b2ae2ed3cd79ecc10706f66f4ff28d7b99d33070ef3f689",
+      "page_description": "Canada and the United Kingdom renewed their AI security partnership, prioritizing shared standards, sensitive information-sharing, societal resilience, and technical cooperation, including exchanges and coordinated evaluations. The agreement builds on earlier bilateral initiatives and cooperation between their AI safety and security institutes.",
+      "announcement_paragraphs": [
+        "Canada and the United Kingdom renewed their AI security partnership, prioritizing shared standards, sensitive information-sharing, societal resilience, and technical cooperation, including exchanges and coordinated evaluations. The agreement builds on earlier bilateral initiatives and cooperation between their AI safety and security institutes."
+      ],
+      "key": "event:d6a02cb9-a158-5d01-b84f-990187fd06bf",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canada-uk-renew-ai-security-cooperation-societal-resilience",
+      "path": "story/canada-uk-renew-ai-security-cooperation-societal-resilience/index.html",
+      "deck": "Canada and the United Kingdom renewed their AI security partnership, prioritizing shared standards, sensitive information-sharing, societal resilience, and technical cooperation, including exchanges and coordinated evaluations. The agreement builds on earlier bilateral initiatives and cooperation between their AI safety and security institutes.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/10/canada-and-the-united-kingdom-renew-their-partnership-on-artificial-intelligence-security.html",
+          "date": "2026-10-13",
+          "language": ""
+        }
+      ],
+      "display_date": "13 Oct 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-d6a02cb9-a158-5d01-b84f-990187fd06bf/index.html"
       ],
       "url_slug_version": 1
     },
