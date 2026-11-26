@@ -372,6 +372,62 @@
       ]
     },
     {
+      "id": "6b5705fcc3d11be3f1bd",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/valitsus-suunab-60-miljonit-valisabi-keskkonda-rahvatervisesse-ja-kriisikindlusse",
+      "date": "2026-11-26",
+      "headline": "Estonia’s grants programme funds crisis readiness, including analysis of AI tools for emergency-response workflows.",
+      "page_headline": "Estonia’s grants programme funds crisis readiness, including analysis of AI tools for emergency-response workflows.",
+      "summary": "Estonia approved rules for about €60 million in EEA and Norway grants for environmental projects, public health and crisis readiness. The crisis programme includes analysing AI tools for Emergency Response Centre workflows, warning systems, bomb-disposal equipment and offshore-wind accident preparedness.",
+      "body_paragraphs": [],
+      "input_fingerprint": "40f02c0cc15806bbf557f42dce8919af88391f4d4b79335097dcf2f75dce8b9a",
+      "page_description": "Estonia approved rules for about €60 million in EEA and Norway grants for environmental projects, public health and crisis readiness.",
+      "announcement_paragraphs": [
+        "Estonia approved rules for about €60 million in EEA and Norway grants for environmental projects, public health and crisis readiness. The crisis programme includes analysing AI tools for Emergency Response Centre workflows, warning systems, bomb-disposal equipment and offshore-wind accident preparedness."
+      ],
+      "key": "event:03710d5b-f771-5a9f-8d9e-7173575a57f6",
+      "kind": "news",
+      "section": "governments",
+      "slug": "estonias-grants-programme-funds-crisis-readiness-emergency-response-workflows",
+      "path": "story/estonias-grants-programme-funds-crisis-readiness-emergency-response-workflows/index.html",
+      "deck": "Estonia approved rules for about €60 million in EEA and Norway grants for environmental projects, public health and crisis readiness. The crisis programme includes analysing AI tools for Emergency Response Centre workflows, warning systems, bomb-disposal equipment and offshore-wind accident preparedness.",
+      "publisher": "Government of Estonia",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Estonia",
+          "headline": "Official government announcement",
+          "url": "https://valitsus.ee/uudised/valitsus-suunab-60-miljonit-valisabi-keskkonda-rahvatervisesse-ja-kriisikindlusse",
+          "date": "2026-11-26",
+          "language": ""
+        }
+      ],
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Estonia",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-03710d5b-f771-5a9f-8d9e-7173575a57f6/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "The Book of Tea",
       "content_fingerprint": "eccc1c6c353118eead69734a800b4fef3a4c573ad9d1b02590e3b544b68da9e3",
       "creator": "Kakuzō Okakura",
@@ -3072,6 +3128,62 @@
       "edition": "2026-11",
       "legacy_paths": [
         "research/paper-1ae57ebed176cfb5126e20fe/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "a0cca09e7fed8c60188e",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262002",
+      "date": "2026-11-23",
+      "headline": "Maltese delegates joined NATO PA discussions on defence, cyber threats, undersea infrastructure and military AI.",
+      "page_headline": "Malta — Maltese delegates joined NATO PA discussions on defence, cyber threats, undersea infrastructure and military AI.",
+      "summary": "Malta’s delegation discussed military AI and cybersecurity at NATO’s Parliamentary Assembly and highlighted Malta’s decision to legislate on deepfakes. It also joined sessions on terrorism, deterrence and protection of undersea infrastructure.",
+      "body_paragraphs": [],
+      "input_fingerprint": "930244fb8dc07e97e7fd6fefebc035f755d59cd325613b1f5833b0f091b052d6",
+      "page_description": "Malta’s delegation discussed military AI and cybersecurity at NATO’s Parliamentary Assembly and highlighted Malta’s decision to legislate on deepfakes.",
+      "announcement_paragraphs": [
+        "Malta’s delegation discussed military AI and cybersecurity at NATO’s Parliamentary Assembly and highlighted Malta’s decision to legislate on deepfakes. It also joined sessions on terrorism, deterrence and protection of undersea infrastructure."
+      ],
+      "key": "event:024a89e0-9fce-5efb-8766-addd35f7f294",
+      "kind": "news",
+      "section": "governments",
+      "slug": "maltese-delegates-joined-nato-pa-discussions-military-ai",
+      "path": "story/maltese-delegates-joined-nato-pa-discussions-military-ai/index.html",
+      "deck": "Malta’s delegation discussed military AI and cybersecurity at NATO’s Parliamentary Assembly and highlighted Malta’s decision to legislate on deepfakes. It also joined sessions on terrorism, deterrence and protection of undersea infrastructure.",
+      "publisher": "Government of Malta",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Malta",
+          "headline": "Official government announcement",
+          "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262002",
+          "date": "2026-11-23",
+          "language": ""
+        }
+      ],
+      "display_date": "23 Nov 2026",
+      "markets": [],
+      "market_label": "Malta",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-024a89e0-9fce-5efb-8766-addd35f7f294/index.html"
       ],
       "url_slug_version": 1
     },
@@ -7484,6 +7596,63 @@
       "edition": "2026-11",
       "legacy_paths": [
         "research/paper-3d4a6d687ca78427a8c1fe2c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "f5a5611825205c2d1c68",
+      "country": "China",
+      "country_code": "CN",
+      "url": "https://english.www.gov.cn/news/202611/20/content_WS6affcaffc6d00ca5f9a0e7e9.html",
+      "date": "2026-11-20",
+      "headline": "Wang says APEC advanced Asia-Pacific connectivity, supply-chain cooperation and coordination on AI and emerging technologies.",
+      "page_headline": "China — Wang says APEC advanced Asia-Pacific connectivity, supply-chain cooperation and coordination on AI and emerging technologies.",
+      "summary": "Wang Yi said APEC endorsed a statement aligning AI and emerging-technology cooperation with employment, public services and digital infrastructure. He also highlighted the Shenzhen Outlook, stronger regional supply-chain connectivity and China’s proposed institutions and funding.",
+      "body_paragraphs": [],
+      "input_fingerprint": "2345585269775b1ee6ba3a6e25654dbe8c4792fee663ff129b3fc55acb23132c",
+      "page_description": "Wang Yi said APEC endorsed a statement aligning AI and emerging-technology cooperation with employment, public services and digital infrastructure.",
+      "announcement_paragraphs": [
+        "Wang Yi said APEC endorsed a statement aligning AI and emerging-technology cooperation with employment, public services and digital infrastructure. He also highlighted the Shenzhen Outlook, stronger regional supply-chain connectivity and China’s proposed institutions and funding."
+      ],
+      "key": "event:265dcbcf-cd80-5627-859f-9752269ecbd5",
+      "kind": "news",
+      "section": "governments",
+      "slug": "wang-apec-advanced-asia-pacific-connectivity-supply-chain-emerging-technologies",
+      "path": "story/wang-apec-advanced-asia-pacific-connectivity-supply-chain-emerging-technologies/index.html",
+      "deck": "Wang Yi said APEC endorsed a statement aligning AI and emerging-technology cooperation with employment, public services and digital infrastructure. He also highlighted the Shenzhen Outlook, stronger regional supply-chain connectivity and China’s proposed institutions and funding.",
+      "publisher": "Government of China",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of China",
+          "headline": "Official government announcement",
+          "url": "https://english.www.gov.cn/news/202611/20/content_WS6affcaffc6d00ca5f9a0e7e9.html",
+          "date": "2026-11-20",
+          "language": ""
+        }
+      ],
+      "display_date": "20 Nov 2026",
+      "markets": [],
+      "market_label": "China",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-265dcbcf-cd80-5627-859f-9752269ecbd5/index.html"
       ],
       "url_slug_version": 1
     },
