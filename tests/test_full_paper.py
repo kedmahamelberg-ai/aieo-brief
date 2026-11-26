@@ -8,6 +8,11 @@ import editorial_engine as engine
 from validate_public_site import validate_research_reading, validate_weekly_research_window
 
 class FullPaperReading(unittest.TestCase):
+    def test_research_prose_cannot_claim_the_brief_conducted_the_study(self):
+        self.assertTrue(style_problem({'what_happened':'We tested three prompting methods.'}))
+        self.assertTrue(style_problem({'what_happened':'Our study found fewer errors.'}))
+        self.assertFalse(style_problem({'what_happened':'The researchers tested three prompting methods.'}))
+
     def test_practitioner_style_rejects_unexplained_shorthand_and_vague_titles(self):
         self.assertTrue(style_problem({'headline':'Native RL boosts repair rates','what_happened':'SFT was compared with RL.'}))
         self.assertTrue(style_problem({'headline':'Unified models improve readiness'}))

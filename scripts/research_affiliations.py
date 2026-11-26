@@ -41,6 +41,9 @@ def clean_institutions(values, authors=()):
         # and city cells; a city must not be published as an institution.
         if re.fullmatch(r"[^,]+,\s*(?:Germany|USA|United States|UK|France|Canada|China)", name, re.I):
             continue
+        if (re.fullmatch(r"[^,]+,\s*[^,]+,\s*Hong Kong", name, re.I)
+                and not re.search(r"\b(?:university|institute|laboratory|lab|college|research)\b", name, re.I)):
+            continue
         if re.fullmatch(r"Department of [^,]+", name, re.I):
             continue
         embedded = (re.search(r"\b((?:[A-Za-z]+ )*University of [^,()]+)", name, re.I)
@@ -191,7 +194,7 @@ class _ArxivAuthorInstitutions(HTMLParser):
                 self.label_depth = 0
             self.affiliation_depth -= 1
             if not self.affiliation_depth:
-                value = _plain("".join(self.affiliation_parts))
+                value = _plain(" ".join(self.affiliation_parts))
                 if value:
                     self.affiliations.append(value)
         if self.depth and tag == "div":
@@ -218,7 +221,25 @@ def _arxiv_institutions(paper):
     author_block = _normal(" ".join(parser.parts))
     if not any(_normal(author) in author_block for author in paper.get("authors") or [] if _normal(author)):
         return [], ""
-    names = clean_institutions(parser.affiliations, paper.get("authors"))
+    # Superscript affiliation numbers can share one span with several
+    # institutions, including companies without an academic keyword.
+    numbered = [part.strip() for value in parser.affiliations
+                for part in re.split(r"(?:^|,\s*)\d+\s*(?=[A-Za-z])", value)
+                if part.strip()]
+    names = clean_institutions(numbered, paper.get("authors"))
+    author_names = {_normal(author) for author in paper.get("authors") or []}
+    # In unmarked blocks the last author's superscript is followed directly
+    # by affiliation 1. Do not treat intervening author names as institutions.
+    affiliation_start = next((index for index, part in enumerate(parser.parts)
+        if index and part == "1" and
+        re.fullmatch(r"\d+(?:\s*,\s*\d+)*", parser.parts[index - 1])), len(parser.parts))
+    for index, part in enumerate(parser.parts[:-1]):
+        candidate = parser.parts[index + 1].strip().rstrip(',')
+        if (index >= affiliation_start and re.fullmatch(r"\d+(?:\s*,\s*\d+)*", part)
+                and _normal(candidate) not in author_names
+                and re.search(r"[A-Za-z]", candidate)):
+            names.extend(clean_institutions([candidate], paper.get("authors")))
+            names = clean_institutions(names, paper.get("authors"))
     for part in parser.parts:
         if (re.search(r"\b(university|université|universidad|institute|college|academy)\b", part, re.I)
                 and part not in names):

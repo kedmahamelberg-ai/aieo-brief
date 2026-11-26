@@ -22,7 +22,8 @@ SOURCE_AUDITS = ('data/editorial/source-audit-corrections-2026-11-02.json',
                  CITATION_MANIFEST,
                  'data/editorial/research-stub-corrections-2026-11-22.json',
                  'data/editorial/w47-prose-corrections-2026-11-23.json',
-                 'data/editorial/research-scope-corrections-2026-11-25.json')
+                 'data/editorial/research-scope-corrections-2026-11-25.json',
+                 'data/editorial/research-source-corrections-2026-11-26.json')
 
 
 def reading_proof(key, root=ROOT):

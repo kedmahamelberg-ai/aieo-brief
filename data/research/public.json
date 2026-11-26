@@ -246,7 +246,8 @@
         "Australian National University",
         "Stanford University",
         "The University of Sydney",
-        "The Ohio State University"
+        "The Ohio State University",
+        "Canva"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.33151v1",
       "affiliation_checked_at": "2026-11-25T21:43:29.916448+00:00",
@@ -675,6 +676,7 @@
         "Jeonghoon Kim"
       ],
       "institutions": [
+        "NAVER Cloud",
         "Korea Advanced Institute of Science and Technology"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.31237v1",
@@ -977,8 +979,7 @@
         "Xingyi Yang"
       ],
       "institutions": [
-        "Learning & Generation Lab, The Hong Kong Polytechnic University",
-        "Hung Hom, Kowloon, Hong Kong"
+        "Learning & Generation Lab, The Hong Kong Polytechnic University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.27963v1",
       "affiliation_checked_at": "2026-11-23T23:55:29.766171+00:00",

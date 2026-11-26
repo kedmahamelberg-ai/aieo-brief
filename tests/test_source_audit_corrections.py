@@ -74,6 +74,18 @@ class SourceAuditCorrections(unittest.TestCase):
                 self.assertEqual(actual[field], value)
         self.assertEqual(rows[-1], unrelated)
 
+    def test_november_26_research_corrections_remain_locked(self):
+        audit = json.loads((ROOT/'data/editorial/research-source-corrections-2026-11-26.json').read_text())
+        rows = [{'key':row['key'], **copy.deepcopy(row['before'])} for row in audit['research']]
+        corrections.apply_corrections(rows)
+        for actual, expected in zip(rows, audit['research']):
+            self.assertTrue(corrections.is_locked(actual['key']))
+            for key, value in expected['after'].items():
+                self.assertEqual(actual[key], value)
+        original = copy.deepcopy(rows)
+        corrections.apply_corrections(rows)
+        self.assertEqual(rows, original)
+
     def test_country_proof_becomes_invalid_when_article_changes(self):
         row = dict(key='tested', headline='NHS Highland', sources=[{'url':'https://source.example'}])
         with tempfile.TemporaryDirectory() as folder:

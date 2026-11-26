@@ -1,0 +1,113 @@
+{
+  "schema_version": "brief_source_audit_corrections_v1",
+  "reviewed_at": "2026-11-26",
+  "authorization": "Owner requested correction of all confirmed findings and their recurring causes.",
+  "news": [],
+  "research": [
+    {
+      "key": "paper:307e85c1830ce3790534da5b",
+      "source_urls": [
+        "https://arxiv.org/abs/2609.17516v1",
+        "https://arxiv.org/html/2609.17516v1"
+      ],
+      "paper_text_sha256": "cc62b23a402a63f47e173726542e4ec75083b1dad6c4da9408fddabe47151174",
+      "reason": "Full-source review: attribute the study to its author, include the secondary 300-question Natural Questions evaluation, distinguish an empirical threshold from calibrated probability, and retain inference-cost and transfer limits.",
+      "source_sections": [
+        "Author block",
+        "Section 4.1",
+        "Section 5.4",
+        "Section 7"
+      ],
+      "before": {
+        "institutions": [],
+        "affiliation_source_url": null,
+        "what_happened": "We tested three AI styles that can refuse to answer when evidence is weak. At a 0.90 confidence cut-off, all three reduced wrong commitments and improved accuracy across eleven models on an 817-question test, with some refusals.",
+        "why_it_matters": "In use, an AI that can say 'I don’t know' is safer to deploy, especially where a wrong answer costs more than asking a human.",
+        "body_paragraphs": [
+          "Two ideas guided the work: first, the AI should show what it needs and how sure it is; second, a gate decides to answer or abstain.",
+          "A company could start with a conservative gate, abstain more, and adjust the threshold to balance speed, coverage, and risk for important tasks."
+        ],
+        "limitation": "The study used one test type; results may not apply to other areas, and confidence signals need better calibration."
+      },
+      "after": {
+        "institutions": [
+          "Tarsus University"
+        ],
+        "affiliation_source_url": "https://arxiv.org/html/2609.17516v1",
+        "what_happened": "Ali Şenol of Tarsus University tested three prompting methods that let language models decline uncertain answers. On 817 TruthfulQA questions across eleven models, the methods reduced wrong answers and improved accuracy among answered questions at a 0.90 threshold, while leaving some questions unanswered.",
+        "why_it_matters": "Allowing a model to decline an answer can reduce incorrect commitments, with a trade-off between accuracy and how many questions it answers.",
+        "body_paragraphs": [
+          "The main test used multiple-choice questions. A secondary test used 300 Natural Questions short-answer questions across five models, providing evidence on answers written in the models’ own words.",
+          "The 0.90 threshold is an empirical setting, not a calibrated 90% probability of being correct. The methods require three to four model calls rather than one."
+        ],
+        "limitation": "The results come from these question-answering tests. The confidence threshold needs validation for other tasks and deployment settings."
+      }
+    },
+    {
+      "key": "paper:4abb7f041d8ee19abce06ac7",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.33151v1",
+        "https://arxiv.org/html/2611.33151v1"
+      ],
+      "paper_text_sha256": "de585332193865ad52cd71d66e1d250762701bd98abf1c609ec3c5123d8ee59a",
+      "reason": "The full paper’s numbered author affiliations include Canva (affiliation 5); the parser omitted the company.",
+      "before": {
+        "institutions": [
+          "Australian National University",
+          "Stanford University",
+          "The University of Sydney",
+          "The Ohio State University"
+        ]
+      },
+      "after": {
+        "institutions": [
+          "Australian National University",
+          "Stanford University",
+          "The University of Sydney",
+          "The Ohio State University",
+          "Canva"
+        ]
+      }
+    },
+    {
+      "key": "paper:1ae57ebed176cfb5126e20fe",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.31237v1",
+        "https://arxiv.org/html/2611.31237v1"
+      ],
+      "paper_text_sha256": "3501fc952d3ae38d46ada97478b8429dc1c4bfeae2411d0cd944d0a6e7c94fbf",
+      "reason": "The full paper’s author block identifies NAVER Cloud and KAIST; the merged numbered affiliation span lost NAVER Cloud.",
+      "before": {
+        "institutions": [
+          "Korea Advanced Institute of Science and Technology"
+        ]
+      },
+      "after": {
+        "institutions": [
+          "NAVER Cloud",
+          "Korea Advanced Institute of Science and Technology"
+        ]
+      }
+    },
+    {
+      "key": "paper:3d4a6d687ca78427a8c1fe2c",
+      "source_urls": [
+        "https://arxiv.org/abs/2611.27963v1",
+        "https://arxiv.org/html/2611.27963v1"
+      ],
+      "paper_text_sha256": "45fa3628c036f55395f019b61069996983d055a1ac421e53b2f6c2449d11298a",
+      "reason": "The full paper’s author block separates the laboratory/university from the postal address Hung Hom, Kowloon, Hong Kong; the address is not an institution.",
+      "before": {
+        "institutions": [
+          "Learning & Generation Lab, The Hong Kong Polytechnic University",
+          "Hung Hom, Kowloon, Hong Kong"
+        ]
+      },
+      "after": {
+        "institutions": [
+          "Learning & Generation Lab, The Hong Kong Polytechnic University"
+        ]
+      }
+    }
+  ]
+}
