@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-26T18:54:10.994507+00:00",
-  "last_checked_at": "2026-11-26T18:59:08.617643+00:00",
+  "monitor_as_of": "2026-11-26T19:01:29.236876+00:00",
+  "last_checked_at": "2026-11-26T19:06:49.568566+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1995,11 +1995,11 @@
       "country_code": "CA",
       "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/11/backgrounder-government-of-canada-supports-44-canadian-companies-using-ai-to-transform-industries-and-create-jobs.html",
       "date": "2026-11-26",
-      "headline": "Canada supports 44 companies developing Canadian AI, including projects for sovereignty, cybersecurity, wildfire monitoring and energy…",
-      "page_headline": "Canada supports 44 companies developing Canadian AI, including projects for sovereignty, cybersecurity, wildfire monitoring and energy storage.",
-      "summary": "The Government of Canada announced $66 million for 44 companies through the AI Compute Access Fund to help SMEs develop and commercialize Canadian AI. The communication highlights projects across sectors including cybersecurity, agriculture, health care, manufacturing and transportation.",
+      "headline": "Canada details May awards to 44 AI companies, including cybersecurity and wildfire-detection projects.",
+      "page_headline": "Canada details May awards to 44 AI companies, including cybersecurity and wildfire-detection projects.",
+      "summary": "Canada’s backgrounder lists 44 companies awarded $66 million on 12 May 2026 through the AI Compute Access Fund. Projects include AI for cybersecurity, wildfire monitoring and agriculture, supported by access to computing resources for Canadian AI development.",
       "body_paragraphs": [],
-      "input_fingerprint": "2d4f77dfaad1fa27c9c7ad5c0b5361dd1da75638b800652f299cf30689591736"
+      "input_fingerprint": "a755c2867a10784ac263456b9d4b80d62e08e69a6444bfb685bd6bceb0b42466"
     },
     "7a75e8b457aad440fea1": {
       "id": "7a75e8b457aad440fea1",
@@ -2009,9 +2009,9 @@
       "date": "2026-11-26",
       "headline": "Canada expands AI compute funding for SMEs, supporting domestic AI capacity and projects in cybersecurity, energy,…",
       "page_headline": "Canada expands AI compute funding for SMEs, supporting domestic AI capacity and projects in cybersecurity, energy, food and health.",
-      "summary": "The Government of Canada announced a $700 million expansion of the AI Compute Access Fund to help Canadian businesses access computing resources. It reported more than $52 million for 45 recipients and described AI projects across several industries; the source’s final project entry is incomplete.",
+      "summary": "Canada’s backgrounder details more than $52 million for 45 AI Compute Access Fund recipients announced on 26 November. Projects cover applications including cybersecurity, energy and health, using computing support to develop and scale Canadian AI.",
       "body_paragraphs": [],
-      "input_fingerprint": "f8f34dad0d1fa2d260b6725837f7197a306614524b1dbb314b994ce4f55c82da"
+      "input_fingerprint": "6960487eb33066652ad75980eb1ab3f5bee235cc7bc3edb7c0fccb48b89abbfe"
     }
   },
   "checked": {
@@ -2178,8 +2178,8 @@
     "7480232694c7eb45e52b": "b0a664c73f648042bb848f1104055502eed39c946d84455c70f0bfde81b5fd6c",
     "c1f59b47edf050ee1ea4": "bde4532fca44f0c62b2ae2ed3cd79ecc10706f66f4ff28d7b99d33070ef3f689",
     "be98b1f35db3d183d0ce": "caffafc1778f57ef7c3ab308b1ee67cae50f3a906ef8cc40aed4631032609182",
-    "8f816493f4126f65ad83": "2d4f77dfaad1fa27c9c7ad5c0b5361dd1da75638b800652f299cf30689591736",
-    "7a75e8b457aad440fea1": "f8f34dad0d1fa2d260b6725837f7197a306614524b1dbb314b994ce4f55c82da"
+    "8f816493f4126f65ad83": "a755c2867a10784ac263456b9d4b80d62e08e69a6444bfb685bd6bceb0b42466",
+    "7a75e8b457aad440fea1": "6960487eb33066652ad75980eb1ab3f5bee235cc7bc3edb7c0fccb48b89abbfe"
   },
   "retry": {},
   "pending": 0,
