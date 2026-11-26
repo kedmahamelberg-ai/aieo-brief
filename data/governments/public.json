@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-26T19:01:29.236876+00:00",
-  "last_checked_at": "2026-11-26T19:06:49.568566+00:00",
+  "monitor_as_of": "2026-11-26T20:37:46+00:00",
+  "last_checked_at": "2026-11-26T21:52:35.803133+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -2012,6 +2012,114 @@
       "summary": "Canada’s backgrounder details more than $52 million for 45 AI Compute Access Fund recipients announced on 26 November. Projects cover applications including cybersecurity, energy and health, using computing support to develop and scale Canadian AI.",
       "body_paragraphs": [],
       "input_fingerprint": "6960487eb33066652ad75980eb1ab3f5bee235cc7bc3edb7c0fccb48b89abbfe"
+    },
+    "851a6b262fd223ca9029": {
+      "id": "851a6b262fd223ca9029",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/fr/affaires-mondiales/nouvelles/2026/11/declaration-commune-a-lissue-de-la-reunion-des-ministres-des-affaires-etrangeres-du-g7-a-paris.html",
+      "date": "2026-11-11",
+      "headline": "G7 ministers condemn security threats and pledge coordinated action on conflicts, infrastructure, maritime routes, critical minerals…",
+      "page_headline": "G7 ministers condemn security threats and pledge coordinated action on conflicts, infrastructure, maritime routes, critical minerals and frontier AI.",
+      "summary": "G7 foreign ministers and the EU High Representative reaffirmed support for Ukraine and called for ceasefires, civilian protection, humanitarian access and diplomacy across multiple conflicts. They addressed sanctions, maritime and hybrid threats, regional security, food security, AI, economic coercion and resilient critical-mineral supply chains.",
+      "body_paragraphs": [],
+      "input_fingerprint": "c7d6d44132a5d645525771e9a7a5f82db1180fd091ed24cf86858d1de01a4856"
+    },
+    "6664ef458e4f86c5f8c6": {
+      "id": "6664ef458e4f86c5f8c6",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/ro/comunicate-de-presa/premierul-vasile-tofan-discutii-cu-reprezentantii-bancii-mondiale",
+      "date": "2026-11-10",
+      "headline": "Moldova explores AI productivity projects and World Bank support for cyber resilience against digital risks.",
+      "page_headline": "Moldova explores AI productivity projects and World Bank support for cyber resilience against digital risks.",
+      "summary": "Prime Minister Vasile Tofan and World Bank official Michel Kerf discussed AI and other technology applications, digitalization and resilience funding, and potential cyber-resilience projects. Tofan invited partners to propose sectors for AI deployment and test innovative services in Moldova.",
+      "body_paragraphs": [],
+      "input_fingerprint": "1f464b51818003a169491cdae286935be41a8862bb1c579f20a7b4fb81af9d4d"
+    },
+    "1a48b426e76ad7b7ac64": {
+      "id": "1a48b426e76ad7b7ac64",
+      "country": "United States",
+      "country_code": "US",
+      "url": "https://www.whitehouse.gov/releases/2026/11/icymi-president-trump-on-60-minutes-we-have-historically-good-numbers/",
+      "date": "2026-11-09",
+      "headline": "The White House highlights Trump’s border enforcement, Iran policy, Venezuela attack, Gulf oil protection and AI…",
+      "page_headline": "The White House highlights Trump’s border enforcement, Iran policy, Venezuela attack, Gulf oil protection and AI competition.",
+      "summary": "The White House recaps President Trump’s 60 Minutes interview after the midterm elections, quoting his remarks on economic performance, elections, border security, Iran, energy, investment, artificial intelligence, and other topics, alongside statistics and claims supporting his record.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9122b5f06e9897cfff7a90c63df9053a82ec4ba85d6ad1cfae89f512a01db749"
+    },
+    "da70c5be0d50e07e6110": {
+      "id": "da70c5be0d50e07e6110",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/11/proell-in-tallinn-oesterreich-und-estland-vereinbaren-kooperation-fuer-einfachere-digitale-behoerdenwege.html",
+      "date": "2026-11-06",
+      "headline": "Austria and Estonia will expand secure data exchange and state-controlled digital services to support European digital…",
+      "page_headline": "Austria and Estonia will expand secure data exchange and state-controlled digital services to support European digital sovereignty and AI use.",
+      "summary": "Austria and Estonia signed an MoU to cooperate on secure data exchange, Once-Only services, cross-border administration and business wallets. The partnership will support digital sovereignty and public-sector innovation, with Austria aiming to expand its dadeX infrastructure and strengthen its use of AI.",
+      "body_paragraphs": [],
+      "input_fingerprint": "967a0688e2edcae93dca9923988325abf117423195fde79db0fd32718eff1b9a"
+    },
+    "91378ef532cd22707660": {
+      "id": "91378ef532cd22707660",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/michal-euroopa-ei-tohi-jaada-tehisintellekti-ajastul-teistest-soltuma",
+      "date": "2026-11-05",
+      "headline": "Estonia urges stronger European AI capacity, safe adoption rules and international oversight of frontier AI.",
+      "page_headline": "Estonia urges stronger European AI capacity, safe adoption rules and international oversight of frontier AI.",
+      "summary": "Prime Minister Kristen Michal called on Europe to develop its own AI capabilities and infrastructure through investment and cooperation. He outlined Estonia’s workforce training, practical AI use and safety rules for AI agents, and announced support for an international appeal to oversee frontier AI systems.",
+      "body_paragraphs": [],
+      "input_fingerprint": "51386ef0e7432654c6c1a0ec5580c2f8a95d44bdac72b9cfa47e059ae1f3c5bd"
+    },
+    "88de504b21d55a41d70b": {
+      "id": "88de504b21d55a41d70b",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/10/backgrounder-government-of-canada-announces-canadas-venture-and-growth-capital-plan.html",
+      "date": "2026-10-22",
+      "headline": "Canada outlines capital programs for domestic strategic capabilities, defence innovation, and AI-company growth.",
+      "page_headline": "Canada outlines capital programs for domestic strategic capabilities, defence innovation, and AI-company growth.",
+      "summary": "The Government of Canada outlines a $1-billion Venture and Growth Capital Catalyst Initiative starting in 2026–27, alongside a $500-million AI growth fund and other financing measures, to attract private investment, help Canadian firms scale, and strengthen the country’s venture capital ecosystem and economic sovereignty.",
+      "body_paragraphs": [],
+      "input_fingerprint": "69434001d21e36adb01ff19a18806076c4d4ed07e7263f981695057d5ffbcd22"
+    },
+    "b577f14007056ed2a84c": {
+      "id": "b577f14007056ed2a84c",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/europaministerin-bauer-eine-starke-ehrliche-stimme-fuer-frieden-und-die-sicherheit-der-menschen.html",
+      "date": "2026-10-21",
+      "headline": "Austria sets Security Council priorities on international law, civilian protection, emerging threats and binding rules for…",
+      "page_headline": "Austria sets Security Council priorities on international law, civilian protection, emerging threats and binding rules for AI in weapons systems.",
+      "summary": "Austria outlined priorities for its 2027–28 UN Security Council term, including upholding international and humanitarian law, civilian protection, regulating AI in weapons, conflict prevention, addressing emerging threats, UN reform and strengthening Vienna’s international role. It also called for an effective, transparent and efficient Council.",
+      "body_paragraphs": [],
+      "input_fingerprint": "86c29dceafebad3c2853f206594b47e137bc349c4e0cef0d20dafdfc29a8f0d6"
+    },
+    "05186b4b33debd844a26": {
+      "id": "05186b4b33debd844a26",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/competition-bureau/news/2026/10/competition-is-a-process-not-a-destination.html",
+      "date": "2026-10-20",
+      "headline": "Canada’s competition commissioner calls for open communications markets, secure data portability and scrutiny of AI’s effects…",
+      "page_headline": "Canada’s competition commissioner calls for open communications markets, secure data portability and scrutiny of AI’s effects on competition.",
+      "summary": "Interim Commissioner Jeanne Pratt outlines the Competition Bureau’s role in fostering competition in Canadian communications through advocacy, regulation and enforcement. She discusses wireless and broadband rivals, market entry and switching, data portability, privacy, AI and satellite connectivity, emphasizing open markets, consumer choice, investment and innovation.",
+      "body_paragraphs": [],
+      "input_fingerprint": "21a7ffc69d727fa153c6a427e98e909e6d26476187ff513009427572e48f6ad0"
+    },
+    "29a7dc57d72849a8e557": {
+      "id": "29a7dc57d72849a8e557",
+      "country": "United States",
+      "country_code": "US",
+      "url": "https://www.whitehouse.gov/remarks/2026/10/remarks-by-director-michael-kratsios-at-the-science-a-new-golden-age-summit/",
+      "date": "2026-10-09",
+      "headline": "Kratsios announces U.S. science investments in advanced computing, AI, quantum, energy, space and biomedical research.",
+      "page_headline": "Kratsios announces U.S. science investments in advanced computing, AI, quantum, energy, space and biomedical research.",
+      "summary": "Director Michael Kratsios outlines federal efforts to strengthen U.S. science through research computing, data, metascience, replication, research organizations, STEM and early-career training, and national missions in AI, quantum, space, and energy. He urges cross-sector and international coordination; the excerpt ends mid-announcement.",
+      "body_paragraphs": [],
+      "input_fingerprint": "3e59d7205d4796331b1b63e51618b6736c00f8d403182cbc8647d676b3471fcf"
     }
   },
   "checked": {
@@ -2179,7 +2287,16 @@
     "c1f59b47edf050ee1ea4": "bde4532fca44f0c62b2ae2ed3cd79ecc10706f66f4ff28d7b99d33070ef3f689",
     "be98b1f35db3d183d0ce": "caffafc1778f57ef7c3ab308b1ee67cae50f3a906ef8cc40aed4631032609182",
     "8f816493f4126f65ad83": "a755c2867a10784ac263456b9d4b80d62e08e69a6444bfb685bd6bceb0b42466",
-    "7a75e8b457aad440fea1": "6960487eb33066652ad75980eb1ab3f5bee235cc7bc3edb7c0fccb48b89abbfe"
+    "7a75e8b457aad440fea1": "6960487eb33066652ad75980eb1ab3f5bee235cc7bc3edb7c0fccb48b89abbfe",
+    "851a6b262fd223ca9029": "c7d6d44132a5d645525771e9a7a5f82db1180fd091ed24cf86858d1de01a4856",
+    "6664ef458e4f86c5f8c6": "1f464b51818003a169491cdae286935be41a8862bb1c579f20a7b4fb81af9d4d",
+    "1a48b426e76ad7b7ac64": "9122b5f06e9897cfff7a90c63df9053a82ec4ba85d6ad1cfae89f512a01db749",
+    "da70c5be0d50e07e6110": "967a0688e2edcae93dca9923988325abf117423195fde79db0fd32718eff1b9a",
+    "91378ef532cd22707660": "51386ef0e7432654c6c1a0ec5580c2f8a95d44bdac72b9cfa47e059ae1f3c5bd",
+    "88de504b21d55a41d70b": "69434001d21e36adb01ff19a18806076c4d4ed07e7263f981695057d5ffbcd22",
+    "b577f14007056ed2a84c": "86c29dceafebad3c2853f206594b47e137bc349c4e0cef0d20dafdfc29a8f0d6",
+    "05186b4b33debd844a26": "21a7ffc69d727fa153c6a427e98e909e6d26476187ff513009427572e48f6ad0",
+    "29a7dc57d72849a8e557": "3e59d7205d4796331b1b63e51618b6736c00f8d403182cbc8647d676b3471fcf"
   },
   "retry": {},
   "pending": 0,
