@@ -428,6 +428,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "da9a13881f5f30e39280",
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/25-margue-presse.html",
+      "date": "2026-11-26",
+      "headline": "Luxembourg officials discuss protecting reliable journalism and pluralism as media adapt to digital platforms and AI.",
+      "page_headline": "Luxembourg officials discuss protecting reliable journalism and pluralism as media adapt to digital platforms and AI.",
+      "summary": "Luxembourg’s SMC marked 50 years of press aid with a conference on media pluralism and digital-age challenges. Speakers discussed funding, AI, independent journalism and fair relations between media and platforms, stressing the need to balance innovation, media viability and pluralism.",
+      "body_paragraphs": [],
+      "input_fingerprint": "8985b5cd9387e29625a662ed8fc656ed5d50ee40b6e0d071318248ec64bd25e4",
+      "page_description": "Luxembourg’s SMC marked 50 years of press aid with a conference on media pluralism and digital-age challenges.",
+      "announcement_paragraphs": [
+        "Luxembourg’s SMC marked 50 years of press aid with a conference on media pluralism and digital-age challenges. Speakers discussed funding, AI, independent journalism and fair relations between media and platforms, stressing the need to balance innovation, media viability and pluralism."
+      ],
+      "key": "event:ec7d66b8-959b-5a31-8c3d-b2d599c58fa7",
+      "kind": "news",
+      "section": "governments",
+      "slug": "luxembourg-officials-discuss-protecting-reliable-journalism-platforms-ai",
+      "path": "story/luxembourg-officials-discuss-protecting-reliable-journalism-platforms-ai/index.html",
+      "deck": "Luxembourg’s SMC marked 50 years of press aid with a conference on media pluralism and digital-age challenges. Speakers discussed funding, AI, independent journalism and fair relations between media and platforms, stressing the need to balance innovation, media viability and pluralism.",
+      "publisher": "Government of Luxembourg",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Luxembourg",
+          "headline": "Official government announcement",
+          "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/25-margue-presse.html",
+          "date": "2026-11-26",
+          "language": ""
+        }
+      ],
+      "display_date": "26 Nov 2026",
+      "markets": [],
+      "market_label": "Luxembourg",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-ec7d66b8-959b-5a31-8c3d-b2d599c58fa7/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "The Book of Tea",
       "content_fingerprint": "eccc1c6c353118eead69734a800b4fef3a4c573ad9d1b02590e3b544b68da9e3",
       "creator": "Kakuzō Okakura",
@@ -33821,7 +33877,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T13:14:51.726073+00:00",
+      "affiliation_checked_at": "2026-11-26T15:20:59.488525+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
