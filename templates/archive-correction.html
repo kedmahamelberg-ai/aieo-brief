@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Correction to an ABC News archive entry | The Brief{% endblock %}
+{% block description %}An archived correction explaining the source used for a previous Brief entry about ABC News’s AI coverage.{% endblock %}
+{% block content %}
+<main class="page-shell" id="main-content">
+  <article class="article-body">
+    <a class="text-link" href="{{ local('archive/index.html') }}">← Past editions</a>
+    <h1>Correction to an ABC News archive entry</h1>
+    <p>In October 2026, The Brief treated ABC News’s artificial intelligence topic page as a single article. The topic page groups coverage of several stories. We withdrew the summary because it did not have a single source article.</p>
+    <p>For checked Brief coverage with individual source links, <a href="{{ local('archive/reading-guide/index.html') }}">browse the AI news and research archive by topic</a>.</p>
+  </article>
+</main>
+{% endblock %}

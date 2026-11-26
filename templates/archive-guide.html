@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}AI news and research archive guide | The Brief{% endblock %}
+{% block description %}Explore checked AI news and research by subject, with links to the original reporting and papers.{% endblock %}
+{% block content %}
+<main class="page-shell" id="main-content">
+  <header class="research-intro">
+    <span class="eyebrow">PAST EDITIONS</span>
+    <h1>AI news and research by topic</h1>
+    <p>Browse selected articles and research summaries from The Brief. Each story links to the reporting or paper it draws on.</p>
+    <a class="text-link" href="{{ local('archive/index.html') }}">Browse all editions →</a>
+  </header>
+  <section class="archive-edition">
+    <h2>Weekly overviews</h2>
+    <p>Follow the week’s developments across five news discovery markets and the research literature.</p>
+    <ul>
+      <li><a href="{{ local('week-from-above/index.html') }}">Browse the weekly AI overviews</a></li>
+      {% if overview_path %}
+      <li><a href="{{ local(overview_path) }}">Read the overview for 9–15 November 2026</a></li>
+      {% endif %}
+    </ul>
+  </section>
+  <div class="research-grid">
+    {% for topic, items in guide|groupby('topic_label') %}
+    <section class="archive-edition">
+      <h2>{{ topic }}</h2>
+      {% for item in items %}
+      <div class="ranked-story">
+        <a href="{{ local(item.path) }}">{{ item.headline }}</a>
+        <p>{{ item.deck }}</p>
+      </div>
+      {% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

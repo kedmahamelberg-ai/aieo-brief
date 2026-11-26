@@ -563,6 +563,18 @@ def main():
     render('culture/index.html','culture.html',page='culture',items=culture)
     render('saved/index.html','collection.html',page='saved',items=allcards)
     render('archive/index.html','collection.html',page='archive',items=allcards)
+    archive_guide_path = 'archive/reading-guide/index.html'
+    archive_paths = json.loads((ROOT / 'config/archive-guide.json').read_text())
+    public_articles = {item['path']: item for item in sitemap_articles(allcards)
+                       if item['kind'] in ('news', 'research')}
+    guide = [public_articles[path] for path in archive_paths if path in public_articles]
+    overview_path = 'week-from-above/2026-w46/index.html' if any(item['path'] == 'week-from-above/2026-w46/index.html' for item in overview_archive) else None
+    render(archive_guide_path, 'archive-guide.html', page='archive-guide', guide=guide, overview_path=overview_path,
+           page_title='AI news and research archive guide',
+           page_description='Find checked coverage from The Brief by subject and follow each article to the original reporting or paper.')
+    correction_path = 'story/abc-news-highlights-mixed-ai-uses-security-safeguards/index.html'
+    render(correction_path, 'archive-correction.html', page='correction')
+
     render('notifications/index.html','notifications.html',page='notifications')
     render('notifications/read/index.html','digest.html',page='digest')
     render('support/index.html','support.html',page='support')
@@ -651,7 +663,7 @@ def main():
         (SITE/'feed.xml').write_text(''.join(rss)+'</channel></rss>')
         locations=[
             ('index.html',today,''),('research/index.html',today,''),('governments-say/index.html',today,''),('culture/index.html',today,''),
-            ('archive/index.html',today,''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('contact/index.html',today,''),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
+            ('archive/index.html',today,''),(archive_guide_path,'2026-11-26',''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('contact/index.html',today,''),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
             (explainer_path, explainer['published'], ''),
             *[(x['path'],x['period_end'],x['markets'].get('image_path','')) for x in overview_archive],
             *[(item['path'],item.get('date_modified',item['date']),'') for item in sitemap_articles(allcards)],
