@@ -22271,6 +22271,63 @@
       "url_slug_version": 1
     },
     {
+      "id": "851a6b262fd223ca9029",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/fr/affaires-mondiales/nouvelles/2026/11/declaration-commune-a-lissue-de-la-reunion-des-ministres-des-affaires-etrangeres-du-g7-a-paris.html",
+      "date": "2026-11-11",
+      "headline": "G7 ministers condemn security threats and pledge coordinated action on conflicts, infrastructure, maritime routes, critical minerals…",
+      "page_headline": "Canada — G7 ministers condemn security threats and pledge coordinated action on conflicts, infrastructure, maritime routes, critical minerals and frontier AI.",
+      "summary": "G7 foreign ministers and the EU High Representative reaffirmed support for Ukraine and called for ceasefires, civilian protection, humanitarian access and diplomacy across multiple conflicts. They addressed sanctions, maritime and hybrid threats, regional security, food security, AI, economic coercion and resilient critical-mineral supply chains.",
+      "body_paragraphs": [],
+      "input_fingerprint": "c7d6d44132a5d645525771e9a7a5f82db1180fd091ed24cf86858d1de01a4856",
+      "page_description": "G7 foreign ministers and the EU High Representative reaffirmed support for Ukraine and called for ceasefires, civilian protection, humanitarian access and diplomacy across multiple conflicts. They addressed sanctions, maritime and hybrid threats, regional security, food security, AI, economic coercion and resilient critical-mineral supply chains.",
+      "announcement_paragraphs": [
+        "G7 foreign ministers and the EU High Representative reaffirmed support for Ukraine and called for ceasefires, civilian protection, humanitarian access and diplomacy across multiple conflicts. They addressed sanctions, maritime and hybrid threats, regional security, food security, AI, economic coercion and resilient critical-mineral supply chains."
+      ],
+      "key": "event:a340c352-58d1-57ca-b820-805461c37294",
+      "kind": "news",
+      "section": "governments",
+      "slug": "g7-ministers-condemn-security-threats-pledge-critical-minerals",
+      "path": "story/g7-ministers-condemn-security-threats-pledge-critical-minerals/index.html",
+      "deck": "G7 foreign ministers and the EU High Representative reaffirmed support for Ukraine and called for ceasefires, civilian protection, humanitarian access and diplomacy across multiple conflicts. They addressed sanctions, maritime and hybrid threats, regional security, food security, AI, economic coercion and resilient critical-mineral supply chains.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/fr/affaires-mondiales/nouvelles/2026/11/declaration-commune-a-lissue-de-la-reunion-des-ministres-des-affaires-etrangeres-du-g7-a-paris.html",
+          "date": "2026-11-11",
+          "language": ""
+        }
+      ],
+      "display_date": "11 Nov 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-a340c352-58d1-57ca-b820-805461c37294/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Dhammapada",
       "content_fingerprint": "430380aba2f2388e600f3f1410d367ca39624ea0f333d5ba46dee5b154db35cf",
       "creator": "Traditional Buddhist verse",
@@ -24614,6 +24671,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "6664ef458e4f86c5f8c6",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/ro/comunicate-de-presa/premierul-vasile-tofan-discutii-cu-reprezentantii-bancii-mondiale",
+      "date": "2026-11-10",
+      "headline": "Moldova explores AI productivity projects and World Bank support for cyber resilience against digital risks.",
+      "page_headline": "Moldova explores AI productivity projects and World Bank support for cyber resilience against digital risks.",
+      "summary": "Prime Minister Vasile Tofan and World Bank official Michel Kerf discussed AI and other technology applications, digitalization and resilience funding, and potential cyber-resilience projects. Tofan invited partners to propose sectors for AI deployment and test innovative services in Moldova.",
+      "body_paragraphs": [],
+      "input_fingerprint": "1f464b51818003a169491cdae286935be41a8862bb1c579f20a7b4fb81af9d4d",
+      "page_description": "Prime Minister Vasile Tofan and World Bank official Michel Kerf discussed AI and other technology applications, digitalization and resilience funding, and potential cyber-resilience projects. Tofan invited partners to propose sectors for AI deployment and test innovative services in Moldova.",
+      "announcement_paragraphs": [
+        "Prime Minister Vasile Tofan and World Bank official Michel Kerf discussed AI and other technology applications, digitalization and resilience funding, and potential cyber-resilience projects. Tofan invited partners to propose sectors for AI deployment and test innovative services in Moldova."
+      ],
+      "key": "event:dc2f48c8-f9bd-5256-b00c-cebbcbf0127d",
+      "kind": "news",
+      "section": "governments",
+      "slug": "moldova-explores-ai-productivity-projects-world-digital-risks",
+      "path": "story/moldova-explores-ai-productivity-projects-world-digital-risks/index.html",
+      "deck": "Prime Minister Vasile Tofan and World Bank official Michel Kerf discussed AI and other technology applications, digitalization and resilience funding, and potential cyber-resilience projects. Tofan invited partners to propose sectors for AI deployment and test innovative services in Moldova.",
+      "publisher": "Government of Moldova",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Moldova",
+          "headline": "Official government announcement",
+          "url": "https://gov.md/ro/comunicate-de-presa/premierul-vasile-tofan-discutii-cu-reprezentantii-bancii-mondiale",
+          "date": "2026-11-10",
+          "language": ""
+        }
+      ],
+      "display_date": "10 Nov 2026",
+      "markets": [],
+      "market_label": "Moldova",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-dc2f48c8-f9bd-5256-b00c-cebbcbf0127d/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "key": "event:e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
       "event_id": "e9a9b601-601d-470b-9dcb-d95e51a0b2f3",
       "kind": "news",
@@ -26376,6 +26489,63 @@
       "location_label": "International military analysis",
       "legacy_paths": [
         "story/development-0747d38f-7bb0-4c09-95e5-58d71445a866/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "1a48b426e76ad7b7ac64",
+      "country": "United States",
+      "country_code": "US",
+      "url": "https://www.whitehouse.gov/releases/2026/11/icymi-president-trump-on-60-minutes-we-have-historically-good-numbers/",
+      "date": "2026-11-09",
+      "headline": "The White House highlights Trump’s border enforcement, Iran policy, Venezuela attack, Gulf oil protection and AI…",
+      "page_headline": "United States — The White House highlights Trump’s border enforcement, Iran policy, Venezuela attack, Gulf oil protection and AI competition.",
+      "summary": "The White House recaps President Trump’s 60 Minutes interview after the midterm elections, quoting his remarks on economic performance, elections, border security, Iran, energy, investment, artificial intelligence, and other topics, alongside statistics and claims supporting his record.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9122b5f06e9897cfff7a90c63df9053a82ec4ba85d6ad1cfae89f512a01db749",
+      "page_description": "The White House recaps President Trump’s 60 Minutes interview after the midterm elections, quoting his remarks on economic performance, elections, border security, Iran, energy, investment, artificial intelligence, and other topics, alongside statistics and claims supporting his record.",
+      "announcement_paragraphs": [
+        "The White House recaps President Trump’s 60 Minutes interview after the midterm elections, quoting his remarks on economic performance, elections, border security, Iran, energy, investment, artificial intelligence, and other topics, alongside statistics and claims supporting his record."
+      ],
+      "key": "event:55fb4534-2744-5980-8049-4761067b3d3c",
+      "kind": "news",
+      "section": "governments",
+      "slug": "white-house-highlights-trumps-border-enforcement-protection-ai",
+      "path": "story/white-house-highlights-trumps-border-enforcement-protection-ai/index.html",
+      "deck": "The White House recaps President Trump’s 60 Minutes interview after the midterm elections, quoting his remarks on economic performance, elections, border security, Iran, energy, investment, artificial intelligence, and other topics, alongside statistics and claims supporting his record.",
+      "publisher": "Government of United States",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of United States",
+          "headline": "Official government announcement",
+          "url": "https://www.whitehouse.gov/releases/2026/11/icymi-president-trump-on-60-minutes-we-have-historically-good-numbers/",
+          "date": "2026-11-09",
+          "language": ""
+        }
+      ],
+      "display_date": "9 Nov 2026",
+      "markets": [],
+      "market_label": "United States",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-55fb4534-2744-5980-8049-4761067b3d3c/index.html"
       ],
       "url_slug_version": 1
     },
@@ -30306,6 +30476,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "da70c5be0d50e07e6110",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/11/proell-in-tallinn-oesterreich-und-estland-vereinbaren-kooperation-fuer-einfachere-digitale-behoerdenwege.html",
+      "date": "2026-11-06",
+      "headline": "Austria and Estonia will expand secure data exchange and state-controlled digital services to support European digital…",
+      "page_headline": "Austria and Estonia will expand secure data exchange and state-controlled digital services to support European digital sovereignty and AI use.",
+      "summary": "Austria and Estonia signed an MoU to cooperate on secure data exchange, Once-Only services, cross-border administration and business wallets. The partnership will support digital sovereignty and public-sector innovation, with Austria aiming to expand its dadeX infrastructure and strengthen its use of AI.",
+      "body_paragraphs": [],
+      "input_fingerprint": "967a0688e2edcae93dca9923988325abf117423195fde79db0fd32718eff1b9a",
+      "page_description": "Austria and Estonia signed an MoU to cooperate on secure data exchange, Once-Only services, cross-border administration and business wallets.",
+      "announcement_paragraphs": [
+        "Austria and Estonia signed an MoU to cooperate on secure data exchange, Once-Only services, cross-border administration and business wallets. The partnership will support digital sovereignty and public-sector innovation, with Austria aiming to expand its dadeX infrastructure and strengthen its use of AI."
+      ],
+      "key": "event:9144c147-e3b5-5b87-93e1-98c57e7ef00c",
+      "kind": "news",
+      "section": "governments",
+      "slug": "austria-estonia-will-expand-secure-data-european-digital",
+      "path": "story/austria-estonia-will-expand-secure-data-european-digital/index.html",
+      "deck": "Austria and Estonia signed an MoU to cooperate on secure data exchange, Once-Only services, cross-border administration and business wallets. The partnership will support digital sovereignty and public-sector innovation, with Austria aiming to expand its dadeX infrastructure and strengthen its use of AI.",
+      "publisher": "Government of Austria",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Austria",
+          "headline": "Official government announcement",
+          "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/11/proell-in-tallinn-oesterreich-und-estland-vereinbaren-kooperation-fuer-einfachere-digitale-behoerdenwege.html",
+          "date": "2026-11-06",
+          "language": ""
+        }
+      ],
+      "display_date": "6 Nov 2026",
+      "markets": [],
+      "market_label": "Austria",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-9144c147-e3b5-5b87-93e1-98c57e7ef00c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/63/Clair_de_Lune_-_Wright_Brass_-_United_States_Air_Force_Band_of_Flight.mp3",
       "creator": "Claude Debussy",
       "creator_origin": "French",
@@ -31386,6 +31612,62 @@
       "government_photo": null,
       "legacy_paths": [
         "story/government-3e35c463-4853-548b-9cf2-1f32e01aa294/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "91378ef532cd22707660",
+      "country": "Estonia",
+      "country_code": "EE",
+      "url": "https://valitsus.ee/uudised/michal-euroopa-ei-tohi-jaada-tehisintellekti-ajastul-teistest-soltuma",
+      "date": "2026-11-05",
+      "headline": "Estonia urges stronger European AI capacity, safe adoption rules and international oversight of frontier AI.",
+      "page_headline": "Estonia urges stronger European AI capacity, safe adoption rules and international oversight of frontier AI.",
+      "summary": "Prime Minister Kristen Michal called on Europe to develop its own AI capabilities and infrastructure through investment and cooperation. He outlined Estonia’s workforce training, practical AI use and safety rules for AI agents, and announced support for an international appeal to oversee frontier AI systems.",
+      "body_paragraphs": [],
+      "input_fingerprint": "51386ef0e7432654c6c1a0ec5580c2f8a95d44bdac72b9cfa47e059ae1f3c5bd",
+      "page_description": "Prime Minister Kristen Michal called on Europe to develop its own AI capabilities and infrastructure through investment and cooperation.",
+      "announcement_paragraphs": [
+        "Prime Minister Kristen Michal called on Europe to develop its own AI capabilities and infrastructure through investment and cooperation. He outlined Estonia’s workforce training, practical AI use and safety rules for AI agents, and announced support for an international appeal to oversee frontier AI systems."
+      ],
+      "key": "event:07b5bfa6-5bb5-5585-ba42-e1ba0c466c06",
+      "kind": "news",
+      "section": "governments",
+      "slug": "estonia-urges-stronger-european-ai-capacity-frontier-ai",
+      "path": "story/estonia-urges-stronger-european-ai-capacity-frontier-ai/index.html",
+      "deck": "Prime Minister Kristen Michal called on Europe to develop its own AI capabilities and infrastructure through investment and cooperation. He outlined Estonia’s workforce training, practical AI use and safety rules for AI agents, and announced support for an international appeal to oversee frontier AI systems.",
+      "publisher": "Government of Estonia",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Estonia",
+          "headline": "Official government announcement",
+          "url": "https://valitsus.ee/uudised/michal-euroopa-ei-tohi-jaada-tehisintellekti-ajastul-teistest-soltuma",
+          "date": "2026-11-05",
+          "language": ""
+        }
+      ],
+      "display_date": "5 Nov 2026",
+      "markets": [],
+      "market_label": "Estonia",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-07b5bfa6-5bb5-5585-ba42-e1ba0c466c06/index.html"
       ],
       "url_slug_version": 1
     },
@@ -34738,7 +35020,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T21:48:07.812861+00:00",
+      "affiliation_checked_at": "2026-11-26T21:53:09.478095+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -49880,6 +50162,63 @@
       "url_slug_version": 1
     },
     {
+      "id": "88de504b21d55a41d70b",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/10/backgrounder-government-of-canada-announces-canadas-venture-and-growth-capital-plan.html",
+      "date": "2026-10-22",
+      "headline": "Canada outlines capital programs for domestic strategic capabilities, defence innovation, and AI-company growth.",
+      "page_headline": "Canada outlines capital programs for domestic strategic capabilities, defence innovation, and AI-company growth.",
+      "summary": "The Government of Canada outlines a $1-billion Venture and Growth Capital Catalyst Initiative starting in 2026–27, alongside a $500-million AI growth fund and other financing measures, to attract private investment, help Canadian firms scale, and strengthen the country’s venture capital ecosystem and economic sovereignty.",
+      "body_paragraphs": [],
+      "input_fingerprint": "69434001d21e36adb01ff19a18806076c4d4ed07e7263f981695057d5ffbcd22",
+      "page_description": "The Government of Canada outlines a $1-billion Venture and Growth Capital Catalyst Initiative starting in 2026–27, alongside a $500-million AI growth fund and other financing measures, to attract private investment, help Canadian firms scale, and strengthen the country’s venture capital ecosystem and economic sovereignty.",
+      "announcement_paragraphs": [
+        "The Government of Canada outlines a $1-billion Venture and Growth Capital Catalyst Initiative starting in 2026–27, alongside a $500-million AI growth fund and other financing measures, to attract private investment, help Canadian firms scale, and strengthen the country’s venture capital ecosystem and economic sovereignty."
+      ],
+      "key": "event:5db13a69-9d27-5f5c-a60f-12dc38fc29ba",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canada-outlines-capital-programs-domestic-strategic-ai-company-growth",
+      "path": "story/canada-outlines-capital-programs-domestic-strategic-ai-company-growth/index.html",
+      "deck": "The Government of Canada outlines a $1-billion Venture and Growth Capital Catalyst Initiative starting in 2026–27, alongside a $500-million AI growth fund and other financing measures, to attract private investment, help Canadian firms scale, and strengthen the country’s venture capital ecosystem and economic sovereignty.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/innovation-science-economic-development/news/2026/10/backgrounder-government-of-canada-announces-canadas-venture-and-growth-capital-plan.html",
+          "date": "2026-10-22",
+          "language": ""
+        }
+      ],
+      "display_date": "22 Oct 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-5db13a69-9d27-5f5c-a60f-12dc38fc29ba/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "alt": "Landscape of the Four Seasons",
       "art_type": "Painting",
       "balance_origin": "Korea",
@@ -51449,6 +51788,62 @@
       "withdrawn": true
     },
     {
+      "id": "b577f14007056ed2a84c",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/europaministerin-bauer-eine-starke-ehrliche-stimme-fuer-frieden-und-die-sicherheit-der-menschen.html",
+      "date": "2026-10-21",
+      "headline": "Austria sets Security Council priorities on international law, civilian protection, emerging threats and binding rules for…",
+      "page_headline": "Austria sets Security Council priorities on international law, civilian protection, emerging threats and binding rules for AI in weapons systems.",
+      "summary": "Austria outlined priorities for its 2027–28 UN Security Council term, including upholding international and humanitarian law, civilian protection, regulating AI in weapons, conflict prevention, addressing emerging threats, UN reform and strengthening Vienna’s international role. It also called for an effective, transparent and efficient Council.",
+      "body_paragraphs": [],
+      "input_fingerprint": "86c29dceafebad3c2853f206594b47e137bc349c4e0cef0d20dafdfc29a8f0d6",
+      "page_description": "Austria outlined priorities for its 2027–28 UN Security Council term, including upholding international and humanitarian law, civilian protection, regulating AI in weapons, conflict prevention, addressing emerging threats, UN reform and strengthening Vienna’s international role. It also called for an effective, transparent and efficient Council.",
+      "announcement_paragraphs": [
+        "Austria outlined priorities for its 2027–28 UN Security Council term, including upholding international and humanitarian law, civilian protection, regulating AI in weapons, conflict prevention, addressing emerging threats, UN reform and strengthening Vienna’s international role. It also called for an effective, transparent and efficient Council."
+      ],
+      "key": "event:e3dcfe70-53c2-5718-92c4-e8715d3302d5",
+      "kind": "news",
+      "section": "governments",
+      "slug": "austria-sets-security-council-priorities-international-binding-rules",
+      "path": "story/austria-sets-security-council-priorities-international-binding-rules/index.html",
+      "deck": "Austria outlined priorities for its 2027–28 UN Security Council term, including upholding international and humanitarian law, civilian protection, regulating AI in weapons, conflict prevention, addressing emerging threats, UN reform and strengthening Vienna’s international role. It also called for an effective, transparent and efficient Council.",
+      "publisher": "Government of Austria",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Austria",
+          "headline": "Official government announcement",
+          "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/europaministerin-bauer-eine-starke-ehrliche-stimme-fuer-frieden-und-die-sicherheit-der-menschen.html",
+          "date": "2026-10-21",
+          "language": ""
+        }
+      ],
+      "display_date": "21 Oct 2026",
+      "markets": [],
+      "market_label": "Austria",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-e3dcfe70-53c2-5718-92c4-e8715d3302d5/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/2/29/Johannes_Brahms_-_Op.45_Ein_Deutsches_Requiem_-_%2805%29_Ihr_habt_nun_Traurigkeit.ogg",
       "creator": "Johannes Brahms",
       "creator_origin": "German",
@@ -52474,6 +52869,63 @@
       ],
       "url_slug_version": 1,
       "withdrawn": true
+    },
+    {
+      "id": "05186b4b33debd844a26",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/competition-bureau/news/2026/10/competition-is-a-process-not-a-destination.html",
+      "date": "2026-10-20",
+      "headline": "Canada’s competition commissioner calls for open communications markets, secure data portability and scrutiny of AI’s effects…",
+      "page_headline": "Canada’s competition commissioner calls for open communications markets, secure data portability and scrutiny of AI’s effects on competition.",
+      "summary": "Interim Commissioner Jeanne Pratt outlines the Competition Bureau’s role in fostering competition in Canadian communications through advocacy, regulation and enforcement. She discusses wireless and broadband rivals, market entry and switching, data portability, privacy, AI and satellite connectivity, emphasizing open markets, consumer choice, investment and innovation.",
+      "body_paragraphs": [],
+      "input_fingerprint": "21a7ffc69d727fa153c6a427e98e909e6d26476187ff513009427572e48f6ad0",
+      "page_description": "Interim Commissioner Jeanne Pratt outlines the Competition Bureau’s role in fostering competition in Canadian communications through advocacy, regulation and enforcement. She discusses wireless and broadband rivals, market entry and switching, data portability, privacy, AI and satellite connectivity, emphasizing open markets, consumer choice, investment and innovation.",
+      "announcement_paragraphs": [
+        "Interim Commissioner Jeanne Pratt outlines the Competition Bureau’s role in fostering competition in Canadian communications through advocacy, regulation and enforcement. She discusses wireless and broadband rivals, market entry and switching, data portability, privacy, AI and satellite connectivity, emphasizing open markets, consumer choice, investment and innovation."
+      ],
+      "key": "event:4ea6006c-c7fe-558a-902c-04bd34969295",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canadas-competition-commissioner-calls-open-communications-ais-effects",
+      "path": "story/canadas-competition-commissioner-calls-open-communications-ais-effects/index.html",
+      "deck": "Interim Commissioner Jeanne Pratt outlines the Competition Bureau’s role in fostering competition in Canadian communications through advocacy, regulation and enforcement. She discusses wireless and broadband rivals, market entry and switching, data portability, privacy, AI and satellite connectivity, emphasizing open markets, consumer choice, investment and innovation.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/competition-bureau/news/2026/10/competition-is-a-process-not-a-destination.html",
+          "date": "2026-10-20",
+          "language": ""
+        }
+      ],
+      "display_date": "20 Oct 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-4ea6006c-c7fe-558a-902c-04bd34969295/index.html"
+      ],
+      "url_slug_version": 1
     },
     {
       "book_title": "The Prophet",
@@ -70217,6 +70669,63 @@
       "show_feed_photo": false,
       "legacy_paths": [
         "story/government-2fe73627-929c-55e8-a773-65becb2337b7/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "29a7dc57d72849a8e557",
+      "country": "United States",
+      "country_code": "US",
+      "url": "https://www.whitehouse.gov/remarks/2026/10/remarks-by-director-michael-kratsios-at-the-science-a-new-golden-age-summit/",
+      "date": "2026-10-09",
+      "headline": "Kratsios announces U.S. science investments in advanced computing, AI, quantum, energy, space and biomedical research.",
+      "page_headline": "United States — Kratsios announces U.S. science investments in advanced computing, AI, quantum, energy, space and biomedical research.",
+      "summary": "Director Michael Kratsios outlines federal efforts to strengthen U.S. science through research computing, data, metascience, replication, research organizations, STEM and early-career training, and national missions in AI, quantum, space, and energy. He urges cross-sector and international coordination; the excerpt ends mid-announcement.",
+      "body_paragraphs": [],
+      "input_fingerprint": "3e59d7205d4796331b1b63e51618b6736c00f8d403182cbc8647d676b3471fcf",
+      "page_description": "Director Michael Kratsios outlines federal efforts to strengthen U.S. science through research computing, data, metascience, replication, research organizations, STEM and early-career training, and national missions in AI, quantum, space, and energy. He urges cross-sector and international coordination; the excerpt ends mid-announcement.",
+      "announcement_paragraphs": [
+        "Director Michael Kratsios outlines federal efforts to strengthen U.S. science through research computing, data, metascience, replication, research organizations, STEM and early-career training, and national missions in AI, quantum, space, and energy. He urges cross-sector and international coordination; the excerpt ends mid-announcement."
+      ],
+      "key": "event:703fc203-0d6d-5ae6-8ce8-ac230249f1cd",
+      "kind": "news",
+      "section": "governments",
+      "slug": "kratsios-announces-u-s-science-investments-biomedical-research",
+      "path": "story/kratsios-announces-u-s-science-investments-biomedical-research/index.html",
+      "deck": "Director Michael Kratsios outlines federal efforts to strengthen U.S. science through research computing, data, metascience, replication, research organizations, STEM and early-career training, and national missions in AI, quantum, space, and energy. He urges cross-sector and international coordination; the excerpt ends mid-announcement.",
+      "publisher": "Government of United States",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of United States",
+          "headline": "Official government announcement",
+          "url": "https://www.whitehouse.gov/remarks/2026/10/remarks-by-director-michael-kratsios-at-the-science-a-new-golden-age-summit/",
+          "date": "2026-10-09",
+          "language": ""
+        }
+      ],
+      "display_date": "9 Oct 2026",
+      "markets": [],
+      "market_label": "United States",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-703fc203-0d6d-5ae6-8ce8-ac230249f1cd/index.html"
       ],
       "url_slug_version": 1
     },
