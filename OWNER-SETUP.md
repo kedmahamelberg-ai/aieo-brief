@@ -60,7 +60,7 @@ The settings form handles both. The Brief uses **Google Auto ads**, so Google su
 2. In `owner-tools/CONFIGURE-THE-BRIEF.html`, enter your `ca-pub-…` publisher ID. Install the downloaded settings file, commit and push. This publishes verification metadata and `ads.txt` while ad serving is still off.
 3. After Google approves the site, open **AdSense → Ads → By site → your Brief → Edit**, turn on **Auto ads** and apply it to the site. For a calm experience, start with a low ad load and in-page formats. Turn off overlay anchors, vignettes and ad-intent links.
 4. In AdSense **Privacy & messaging**, publish the consent message for the Brief. In the settings form, check the consent-message box and the approved/Auto-ads box. Install those settings, commit and push.
-5. For Analytics, enter your GA4 web stream’s `G-…` measurement ID in the same form. Measurement starts only after a reader opts in.
+5. For Analytics, enter your GA4 web stream’s `G-…` measurement ID in the same form. The Google tag uses cookieless measurement. See [the traffic reports](docs/traffic-measurement.md) for the first-party view totals and source breakdown.
 
 Google then manages the adverts on newly published pages as well. Approval, ad availability and earnings depend on your account and audience. The code cannot activate your Google account or guarantee income. [Google Auto ads](https://support.google.com/adsense/answer/9261805?hl=en), [site approval](https://support.google.com/adsense/answer/7584263?hl=en), [ads.txt](https://support.google.com/adsense/answer/12171612?hl=en), [consent message requirements](https://support.google.com/adsense/answer/13554116?hl=en)
 
