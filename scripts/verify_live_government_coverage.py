@@ -15,7 +15,7 @@ from urllib.parse import urljoin, urlsplit
 import requests
 from bs4 import BeautifulSoup
 
-from government_briefs import FEED, POLICY, candidate, clean, fingerprint, monitor_record
+from government_briefs import FEED, POLICY, candidate, clean, fingerprint, monitor_record, page_headline
 
 ROOT = Path(__file__).resolve().parents[1]
 BRIEF = (os.environ.get('BRIEF_SITE_URL') or
@@ -85,6 +85,8 @@ def verify(snapshot, state, public, html):
                 raise ValueError(f"Live Brief {item['id']} has stale {public_field}")
         if item.get('announcement_paragraphs') != (record['body_paragraphs'] or [record['summary']]):
             raise ValueError(f"Live Brief {item['id']} has stale announcement paragraphs")
+        if item.get('page_headline') != page_headline(record):
+            raise ValueError(f"Live Brief {item['id']} has a stale full headline")
     parser = GovernmentCards()
     parser.feed(html)
     card_keys = {item['key']: item['date'] for item in governments}
@@ -114,7 +116,7 @@ def verify_article_page(item, record, html):
     if paragraphs != expected:
         raise ValueError(f"Live government article {item['id']} has stale or missing Monitor body")
     heading = article.find('h1')
-    if heading is None or record['page_headline'] not in clean(heading.get_text(' ', strip=True)):
+    if heading is None or page_headline(record) != clean(heading.get_text(' ', strip=True)):
         raise ValueError(f"Live government article {item['id']} has a stale headline")
     if not article.find('time', attrs={'datetime': record['date']}):
         raise ValueError(f"Live government article {item['id']} has a stale date")
@@ -122,7 +124,7 @@ def verify_article_page(item, record, html):
     if kicker is None or record['country'] not in clean(kicker.get_text(' ', strip=True)):
         raise ValueError(f"Live government article {item['id']} has a stale country")
     source_links = {a.get('href') for a in article.select('a[data-source-link]')}
-    if record['url'] not in source_links:
+    if source_links != {record['url']}:
         raise ValueError(f"Live government article {item['id']} has a stale source link")
 
 
@@ -133,8 +135,10 @@ def verify_article_routes(state, public):
             if urlsplit(url).netloc != urlsplit(BRIEF).netloc:
                 raise ValueError('Government article route leaves the Brief')
             # Use the ordinary reader URL: a cache bypass can hide stale pages.
-            page = requests.get(url, timeout=(10, 30))
+            page = requests.get(url, timeout=(10, 30), allow_redirects=False)
             page.raise_for_status()
+            if 300 <= page.status_code < 400:
+                raise ValueError('Government article redirects instead of showing its body')
             if urlsplit(page.url).netloc != urlsplit(BRIEF).netloc:
                 raise ValueError('Government article redirects outside the Brief')
             verify_article_page(item, state['records'][item['id']], page.text)

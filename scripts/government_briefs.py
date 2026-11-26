@@ -117,6 +117,14 @@ def load(root=ROOT):
     return json.loads(path.read_text()) if path.exists() else {'records': {}}
 
 
+def page_headline(record):
+    heading = clean(record.get('page_headline')) or clean(record['headline'])
+    country = record['country']
+    if not re.search(r'\b' + re.escape(country) + r'\b', heading, re.IGNORECASE):
+        heading = country + ' — ' + heading
+    return heading
+
+
 def cards(root=ROOT):
     result = []
     registry = photo_registry(root)
@@ -127,10 +135,8 @@ def cards(root=ROOT):
         key = 'event:' + str(uuid.uuid5(uuid.NAMESPACE_URL, FEED + '#' + row['id']))
         ident = key.removeprefix('event:')
         paragraphs = row.get('body_paragraphs') or [row['summary']]
-        heading = clean(row.get('page_headline')) or clean(row['headline'])
+        heading = page_headline(row)
         country = row['country']
-        if not re.search(r'\b' + re.escape(country) + r'\b', heading, re.IGNORECASE):
-            heading = country + ' — ' + heading
         description = clean(paragraphs[0])
         if len(description) > 165:
             first = re.split(r'(?<!\b[A-Z]\.)(?<=[.!?])\s+', description, maxsplit=1)[0]

@@ -82,6 +82,17 @@ class LiveGovernmentCoverageTests(unittest.TestCase):
             verify_article_page(self.public_item, self.record,
                                 '<meta http-equiv="refresh" content="0;url=https://example.lu/ai">')
 
+    def test_unsupported_addition_to_an_otherwise_correct_headline_fails(self):
+        with self.assertRaisesRegex(ValueError, 'headline'):
+            verify_article_page(self.public_item, self.record,
+                                self.article_html().replace('</h1>', ' AI systems deployed nationwide.</h1>'))
+
+    def test_extra_wrong_source_link_fails_even_when_the_correct_link_exists(self):
+        with self.assertRaisesRegex(ValueError, 'source link'):
+            verify_article_page(self.public_item, self.record,
+                                self.article_html().replace('</article>',
+                                    '<a data-source-link href="https://wrong.example/ai">Wrong</a></article>'))
+
 
 if __name__ == '__main__':
     unittest.main()
