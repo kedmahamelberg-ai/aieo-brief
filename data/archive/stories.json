@@ -5536,11 +5536,11 @@
       "country_code": "DE",
       "url": "https://www.bundesregierung.de/breg-de/aktuelles/pressemitteilungen/pressemitteilungen/14-eu-staaten-schliessen-sich-deutscher-initiative-zum-schutz-des-digitalen-raums-an-staatsminister-weimer-starkes-urheberrecht-und-jugendmedienschutz-haben-hoechste-prioritaet--2462122",
       "date": "2026-11-20",
-      "headline": "Germany urges European TikTok ownership, stronger AI-era copyright protections and safeguards for young people online.",
-      "page_headline": "Germany urges European TikTok ownership, stronger AI-era copyright protections and safeguards for young people online.",
+      "headline": "Germany seeks stronger AI copyright protections and child safeguards, alongside a European ownership structure for TikTok’s…",
+      "page_headline": "Germany seeks stronger AI copyright protections and child safeguards, alongside a European ownership structure for TikTok’s operations in Europe.",
       "summary": "At the EU Culture Council, Germany and 14 other Member States called for stronger copyright protections in the AI era. Ministers discussed online child safety and European media policy, adopted the 2027–2030 cultural work plan, and Weimer urged European ownership of TikTok’s European operations.",
       "body_paragraphs": [],
-      "input_fingerprint": "851478765750fff477e5bf49d524f7fa026e7ed8a57596498270c4a615eb3812",
+      "input_fingerprint": "975fb237864feab3eaeefb30123127bd492bff779f964b598826ed334b7c100b",
       "page_description": "At the EU Culture Council, Germany and 14 other Member States called for stronger copyright protections in the AI era.",
       "announcement_paragraphs": [
         "At the EU Culture Council, Germany and 14 other Member States called for stronger copyright protections in the AI era. Ministers discussed online child safety and European media policy, adopted the 2027–2030 cultural work plan, and Weimer urged European ownership of TikTok’s European operations."
@@ -8240,19 +8240,19 @@
       "date": "2026-11-19",
       "headline": "Xi urges wider AI use and stronger Asia-Pacific trade, connectivity, energy and food-security cooperation.",
       "page_headline": "China — Xi urges wider AI use and stronger Asia-Pacific trade, connectivity, energy and food-security cooperation.",
-      "summary": "Xi called for stronger Asia-Pacific trade and connectivity, digital infrastructure and data governance, and broad use of AI to spur industrial innovation. He also urged cooperation on energy and food security and a green transition.",
+      "summary": "At the APEC leaders’ meeting in Shenzhen, Xi urged wider AI use and digital infrastructure investment, stronger trade and connectivity, and cooperation on energy, food security and a green transition.",
       "body_paragraphs": [],
-      "input_fingerprint": "955773c2931bc34013c26cf0c549d6477608933d5c9e46f01bb4bebdda2d08fa",
-      "page_description": "Xi called for stronger Asia-Pacific trade and connectivity, digital infrastructure and data governance, and broad use of AI to spur industrial innovation.",
+      "input_fingerprint": "d775ca0e4678708d5b08e64c25604dcb4f138de0daea25131a41762c2c226c91",
+      "page_description": "At the APEC leaders’ meeting in Shenzhen, Xi urged wider AI use and digital infrastructure investment, stronger trade and connectivity, and cooperation on energy, food security and a green transition.",
       "announcement_paragraphs": [
-        "Xi called for stronger Asia-Pacific trade and connectivity, digital infrastructure and data governance, and broad use of AI to spur industrial innovation. He also urged cooperation on energy and food security and a green transition."
+        "At the APEC leaders’ meeting in Shenzhen, Xi urged wider AI use and digital infrastructure investment, stronger trade and connectivity, and cooperation on energy, food security and a green transition."
       ],
       "key": "event:8cd5a029-3356-583e-8f5e-f0fd9b3564f2",
       "kind": "news",
       "section": "governments",
       "slug": "xi-urges-wider-ai-use-stronger-food-security-cooperation",
       "path": "story/xi-urges-wider-ai-use-stronger-food-security-cooperation/index.html",
-      "deck": "Xi called for stronger Asia-Pacific trade and connectivity, digital infrastructure and data governance, and broad use of AI to spur industrial innovation. He also urged cooperation on energy and food security and a green transition.",
+      "deck": "At the APEC leaders’ meeting in Shenzhen, Xi urged wider AI use and digital infrastructure investment, stronger trade and connectivity, and cooperation on energy, food security and a green transition.",
       "publisher": "Government of China",
       "source_count": 1,
       "sources": [
@@ -30637,21 +30637,21 @@
       "country_code": "EE",
       "url": "https://valitsus.ee/uudised/valitsuse-pressikonverents-5-november-2026",
       "date": "2026-11-05",
-      "headline": "Estonia backs continued Russian and Belarusian sports restrictions during Russia’s war and launches nationwide AI skills…",
-      "page_headline": "Estonia backs continued Russian and Belarusian sports restrictions during Russia’s war and launches nationwide AI skills training.",
-      "summary": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "headline": "Estonia urges European AI investment to compete with the US and China, alongside wider AI training.",
+      "page_headline": "Estonia urges European AI investment to compete with the US and China, alongside wider AI training.",
+      "summary": "Estonia called for European AI investment to avoid falling behind the United States and China, alongside AI skills training. Ministers also backed restrictions on Russian and Belarusian participation in international sport during Russia’s war against Ukraine.",
       "body_paragraphs": [],
-      "input_fingerprint": "1a815c7832cd201d226049ca8ebec819767a5a61bd648787ae7376b20f445fb9",
-      "page_description": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "input_fingerprint": "b0a664c73f648042bb848f1104055502eed39c946d84455c70f0bfde81b5fd6c",
+      "page_description": "Estonia called for European AI investment to avoid falling behind the United States and China, alongside AI skills training.",
       "announcement_paragraphs": [
-        "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport."
+        "Estonia called for European AI investment to avoid falling behind the United States and China, alongside AI skills training. Ministers also backed restrictions on Russian and Belarusian participation in international sport during Russia’s war against Ukraine."
       ],
       "key": "event:3e35c463-4853-548b-9cf2-1f32e01aa294",
       "kind": "news",
       "section": "governments",
       "slug": "estonia-backs-continued-russian-belarusian-sports-ai-skills",
       "path": "story/estonia-backs-continued-russian-belarusian-sports-ai-skills/index.html",
-      "deck": "Estonian officials discussed AI opportunities and training, research funding, European investment and labour cooperation, and plans for sports education and creative-sector exports. They also outlined regulatory changes and opposition to Russian and Belarusian participation in European sport.",
+      "deck": "Estonia called for European AI investment to avoid falling behind the United States and China, alongside AI skills training. Ministers also backed restrictions on Russian and Belarusian participation in international sport during Russia’s war against Ukraine.",
       "publisher": "Government of Estonia",
       "source_count": 1,
       "sources": [
@@ -34046,7 +34046,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T18:17:33.659349+00:00",
+      "affiliation_checked_at": "2026-11-26T18:27:02.592994+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
