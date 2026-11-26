@@ -2,6 +2,372 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/fb/20091104_Sharon_Isbin_-_Enrique_Granados%2C_Spanish_Dance_number_5_of_12%2C_1890.ogg",
+      "creator": "Enrique Granados",
+      "creator_origin": "Spanish",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Enrique Granados. 5 minutes to listen.",
+      "duration_seconds": 308,
+      "headline": "20091104 Sharon Isbin - Enrique Granados, Spanish Dance number 5 of 12, 1890",
+      "key": "culture:c406247f8a6782bc8c5c0817",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/20091104_Sharon_Isbin_-_Enrique_Granados%2C_Spanish_Dance_number_5_of_12%2C_1890.ogg",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Enrique_Granados",
+      "original_recording_title": "20091104 Sharon Isbin - Enrique Granados, Spanish Dance number 5 of 12, 1890",
+      "provenance_id": "commons:15153682",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Enrique Granados",
+      "recording_description": "w:Sharon Isbin performs w:Enrique Granados ' Danza No. 5 (1890) at the White House Classical Music Student Workshop Concert. In the 1 hour session this is from about 7:42-12:50.",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Enrique Granados",
+        "label": "Public domain (source-declared)",
+        "source_credit": "http://www.whitehouse.gov/photos-and-video/video/white-house-workshop-classical-music",
+        "url": "https://commons.wikimedia.org/wiki/File:20091104_Sharon_Isbin_-_Enrique_Granados,_Spanish_Dance_number_5_of_12,_1890.ogg"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20091104_Sharon_Isbin_-_Enrique_Granados,_Spanish_Dance_number_5_of_12,_1890.ogg",
+      "work_date": "1890",
+      "date": "2026-11-27",
+      "selected_on": "2026-11-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-c406247f8a6782bc8c5c0817",
+      "path": "culture/culture-c406247f8a6782bc8c5c0817/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "20091104 Sharon Isbin - Enrique Granados, Spanish Dance number 5 of 12, 1890",
+          "url": "https://commons.wikimedia.org/wiki/File:20091104_Sharon_Isbin_-_Enrique_Granados,_Spanish_Dance_number_5_of_12,_1890.ogg",
+          "date": "1890",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-27",
+      "summary_basis": "Selected 27 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Tao Te Ching",
+      "content_fingerprint": "fc3f1257a9fa744160af016e3bda119c5cba8ee6a698d29ae207da92906dfe01",
+      "creator": "Laozi (traditional attribution)",
+      "creator_origin": "Chinese",
+      "culture_type": "text",
+      "deck": "A passage from Tao Te Ching. Translated by James Legge.",
+      "excerpt": "The grandest forms of active force From Tao come, their only source. Who can of Tao the nature tell? Our sight it flies, our touch as well. Eluding sight, eluding touch, The forms of things all in it crouch; Eluding touch, eluding sight, There are their semblances, all right. Profound it is, dark and obscure; Things' essences all there endure. Those essences the truth enfold Of what, when seen, shall then be told. Now it is so; 'twas so of old. Its name--what passes not away; So, in their beautiful array, Things form and never know decay.",
+      "headline": "Tao Te Ching · a short reading",
+      "key": "culture:a16e573ad8e5e9b6f9dd3d7b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:216:passage:fc3f1257a9fa744160af016e3bda119c5cba8ee6a698d29ae207da92906dfe01",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died ancient. Translator: James Legge, died 1897. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/216"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "823baa8873fdbf3597780e9e747c721e8fac6efdb6d0a5a786686f0de10c4726",
+      "source_locator": "PART 1.; paragraph 65 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/216",
+      "translator": "James Legge",
+      "work_date": "1891 translation",
+      "date": "2026-11-27",
+      "selected_on": "2026-11-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-a16e573ad8e5e9b6f9dd3d7b",
+      "path": "culture/culture-a16e573ad8e5e9b6f9dd3d7b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Tao Te Ching · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/216",
+          "date": "1891 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-27",
+      "summary_basis": "Selected 27 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "The grandest forms of active force From Tao come, their only source. Who can of Tao the nature tell? Our sight it flies, our touch as well. Eluding sight, eluding touch, The forms of things all in it crouch; Eluding touch, eluding sight, There are their semblances, all right. Profound it is, dark and obscure; Things' essences all there endure. Those essences the truth enfold Of what, when seen, shall then be told. Now it is so; 'twas so of old. Its name--what passes not away; So, in their beautiful array, Things form and never know decay.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "The Book of Tea",
+      "content_fingerprint": "d3e31e9d49aa62ec46963bdaa5028e05ed3e6e8387137bdfa9ad7d2f28649d7c",
+      "creator": "Kakuzō Okakura",
+      "creator_origin": "Japanese",
+      "culture_type": "quote",
+      "deck": "From The Book of Tea.",
+      "excerpt": "Why not destroy flowers if thereby we can evolve new forms ennobling the world idea?",
+      "headline": "Why not destroy flowers if thereby we can evolve new forms ennobling the world idea?",
+      "key": "culture:92385b18276b95e11329db24",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:769:quote:d3e31e9d49aa62ec46963bdaa5028e05ed3e6e8387137bdfa9ad7d2f28649d7c",
+      "publisher": "Project Gutenberg",
+      "quote_context": "Why not destroy flowers if thereby we can evolve new forms ennobling the world idea? We only ask them to join in our sacrifice to the beautiful. We shall atone for the deed by consecrating ourselves to Purity and Simplicity. Thus reasoned the tea-masters when they established the Cult of Flowers.",
+      "rights": {
+        "basis": "Author died 1913. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/769"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5a2758728da8a4aa7927cd77a98894f192fe8b2beaf1499a71700efd1312ee37",
+      "source_locator": "I. The Cup of Humanity; paragraph 104 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/769",
+      "translator": "",
+      "work_date": "1906",
+      "date": "2026-11-27",
+      "selected_on": "2026-11-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-92385b18276b95e11329db24",
+      "path": "culture/culture-92385b18276b95e11329db24/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Why not destroy flowers if thereby we can evolve new forms ennobling the world idea?",
+          "url": "https://www.gutenberg.org/ebooks/769",
+          "date": "1906",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-27",
+      "summary_basis": "Selected 27 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "Why not destroy flowers if thereby we can evolve new forms ennobling the world idea?",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "Why not destroy flowers if thereby we can evolve new forms ennobling the world idea? We only ask them to join in our sacrifice to the beautiful. We shall atone for the deed by consecrating ourselves to Purity and Simplicity. Thus reasoned the tea-masters when they established the Cult of Flowers.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "a9536fca4bff244931b01cf33ab25340593a91f76cdc2260d09ecdb1336311b4",
+      "creator": "Robert Louis Stevenson",
+      "creator_origin": "Scottish",
+      "culture_type": "poetry",
+      "deck": "A poem by Robert Louis Stevenson.",
+      "excerpt": "In the other gardens\nAnd all up the vale,\nFrom the autumn bonfires\nSee the smoke trail!\n\nPleasant summer over\nAnd all the summer flowers,\nThe red fire blazes,\nThe grey smoke towers.\n\nSing a song of seasons!\nSomething bright in all!\nFlowers in the summer,\nFires in the fall!",
+      "headline": "Autumn Fires",
+      "key": "culture:84930a5cfd5c902a9a64b527",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "In the other gardens",
+        "And all up the vale,",
+        "From the autumn bonfires",
+        "See the smoke trail!",
+        "",
+        "Pleasant summer over",
+        "And all the summer flowers,",
+        "The red fire blazes,",
+        "The grey smoke towers.",
+        "",
+        "Sing a song of seasons!",
+        "Something bright in all!",
+        "Flowers in the summer,",
+        "Fires in the fall!"
+      ],
+      "provenance_id": "poetrydb:Robert Louis Stevenson:Autumn Fires",
+      "publisher": "PoetryDB",
+      "rights": {
+        "basis": "Original poem; author died 1894.",
+        "changes": "Verse and line breaks retained.",
+        "label": "Historical public-domain poem",
+        "url": "https://poetrydb.org/index.html"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "5ede9cf62bf4a9dd72cd09d3b1c9d942085a31697df3cecf4254726a1d46449d",
+      "source_locator": "Autumn Fires",
+      "source_url": "https://poetrydb.org/title/Autumn%20Fires:abs/lines.text",
+      "translator": "",
+      "work_date": "Before 1894",
+      "date": "2026-11-27",
+      "selected_on": "2026-11-27",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-84930a5cfd5c902a9a64b527",
+      "path": "culture/culture-84930a5cfd5c902a9a64b527/index.html",
+      "sources": [
+        {
+          "publisher": "PoetryDB",
+          "headline": "Autumn Fires",
+          "url": "https://poetrydb.org/title/Autumn%20Fires:abs/lines.text",
+          "date": "Before 1894",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-27",
+      "summary_basis": "Selected 27 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "In the other gardens\nAnd all up the vale,\nFrom the autumn bonfires\nSee the smoke trail!\n\nPleasant summer over\nAnd all the summer flowers,\nThe red fire blazes,\nThe grey smoke towers.\n\nSing a song of seasons!\nSomething bright in all!\nFlowers in the summer,\nFires in the fall!",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Portrait of King Charles II of England",
+      "art_type": "Painting",
+      "balance_origin": "France",
+      "creator": "Philippe de Champaigne (French, 1602–1674)",
+      "creator_origin": "France",
+      "culture_type": "illustration",
+      "deck": "Portrait of King Charles II of England. oil on canvas.",
+      "headline": "Portrait of King Charles II of England",
+      "image_path": "assets/culture/7f51291e1007d8d88d809321.jpg",
+      "key": "culture:7f51291e1007d8d88d809321",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1959.38/1959.38_web.jpg",
+      "medium": "oil on canvas",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1959.38",
+      "provenance_id": "cma:135875",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "The Elisabeth Severance Prentiss Collection",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1959.38",
+      "work_date": "1653",
+      "date": "2026-11-27",
+      "selected_on": "2026-11-27",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-7f51291e1007d8d88d809321",
+      "path": "culture/culture-7f51291e1007d8d88d809321/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Portrait of King Charles II of England",
+          "url": "https://clevelandart.org/art/1959.38",
+          "date": "1653",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "27 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-27",
+      "summary_basis": "Selected 27 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor%2C_3rd_movement.ogg",
       "creator": "Sergei Rachmaninoff",
       "creator_origin": "Russian–American",
@@ -35020,7 +35386,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T22:51:18.624372+00:00",
+      "affiliation_checked_at": "2026-11-26T23:55:09.726193+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
