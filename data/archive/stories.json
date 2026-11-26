@@ -35020,7 +35020,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T22:36:51.573279+00:00",
+      "affiliation_checked_at": "2026-11-26T22:51:18.624372+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -41878,6 +41878,62 @@
       "government_photo": null,
       "legacy_paths": [
         "story/government-fe6eac4f-140e-5705-8394-5afb2d1db7a1/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "90651a99bb5065b01754",
+      "country": "Austria",
+      "country_code": "AT",
+      "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/nobelpreistraeger-geoffrey-hinton-begruesst-oesterreichs-vorstoss-fuer-ki-zentrum-in-wien.html",
+      "date": "2026-10-28",
+      "headline": "Austria proposes a Vienna UN-affiliated AI centre for international cooperation on safety, evaluation and standards.",
+      "page_headline": "Austria proposes a Vienna UN-affiliated AI centre for international cooperation on safety, evaluation and standards.",
+      "summary": "Austria proposed a UN-backed AI cooperation centre in Vienna. Geoffrey Hinton welcomed the initiative, while Chancellor Christian Stocker and State Secretary Alexander Pröll discussed AI safety, talent and innovation with Hinton and Austrian developer Peter Steinberger. Austria plans further discussions with international partners.",
+      "body_paragraphs": [],
+      "input_fingerprint": "4fae976c8213e17769267341b433637eac8e30c50c955814ffb3ea809a194c63",
+      "page_description": "Austria proposed a UN-backed AI cooperation centre in Vienna.",
+      "announcement_paragraphs": [
+        "Austria proposed a UN-backed AI cooperation centre in Vienna. Geoffrey Hinton welcomed the initiative, while Chancellor Christian Stocker and State Secretary Alexander Pröll discussed AI safety, talent and innovation with Hinton and Austrian developer Peter Steinberger. Austria plans further discussions with international partners."
+      ],
+      "key": "event:b01d1949-0d13-58b4-8e42-51b31607a37b",
+      "kind": "news",
+      "section": "governments",
+      "slug": "austria-proposes-vienna-un-affiliated-ai-centre-evaluation-standards",
+      "path": "story/austria-proposes-vienna-un-affiliated-ai-centre-evaluation-standards/index.html",
+      "deck": "Austria proposed a UN-backed AI cooperation centre in Vienna. Geoffrey Hinton welcomed the initiative, while Chancellor Christian Stocker and State Secretary Alexander Pröll discussed AI safety, talent and innovation with Hinton and Austrian developer Peter Steinberger. Austria plans further discussions with international partners.",
+      "publisher": "Government of Austria",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Austria",
+          "headline": "Official government announcement",
+          "url": "https://www.bundeskanzleramt.gv.at/bundeskanzleramt/nachrichten-der-bundesregierung/2026/10/nobelpreistraeger-geoffrey-hinton-begruesst-oesterreichs-vorstoss-fuer-ki-zentrum-in-wien.html",
+          "date": "2026-10-28",
+          "language": ""
+        }
+      ],
+      "display_date": "28 Oct 2026",
+      "markets": [],
+      "market_label": "Austria",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-b01d1949-0d13-58b4-8e42-51b31607a37b/index.html"
       ],
       "url_slug_version": 1
     },
