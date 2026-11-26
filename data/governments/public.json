@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-26T12:56:30.261396+00:00",
-  "last_checked_at": "2026-11-26T13:14:18.835008+00:00",
+  "monitor_as_of": "2026-11-26T14:00:00+00:00",
+  "last_checked_at": "2026-11-26T15:20:26.390953+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -1916,6 +1916,18 @@
       "summary": "Wang Yi said APEC endorsed a statement aligning AI and emerging-technology cooperation with employment, public services and digital infrastructure. He also highlighted the Shenzhen Outlook, stronger regional supply-chain connectivity and China’s proposed institutions and funding.",
       "body_paragraphs": [],
       "input_fingerprint": "2345585269775b1ee6ba3a6e25654dbe8c4792fee663ff129b3fc55acb23132c"
+    },
+    "da9a13881f5f30e39280": {
+      "id": "da9a13881f5f30e39280",
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "url": "https://gouvernement.lu/fr/actualites/toutes_actualites/communiques/2026/11-novembre/25-margue-presse.html",
+      "date": "2026-11-26",
+      "headline": "Luxembourg officials discuss protecting reliable journalism and pluralism as media adapt to digital platforms and AI.",
+      "page_headline": "Luxembourg officials discuss protecting reliable journalism and pluralism as media adapt to digital platforms and AI.",
+      "summary": "Luxembourg’s SMC marked 50 years of press aid with a conference on media pluralism and digital-age challenges. Speakers discussed funding, AI, independent journalism and fair relations between media and platforms, stressing the need to balance innovation, media viability and pluralism.",
+      "body_paragraphs": [],
+      "input_fingerprint": "8985b5cd9387e29625a662ed8fc656ed5d50ee40b6e0d071318248ec64bd25e4"
     }
   },
   "checked": {
@@ -2075,7 +2087,8 @@
     "a95745648ac1d21ca099": "6dfc6b399ab2b923c7e47010eb374578b58c1fab7715274fc812bce723a6fa1f",
     "6b5705fcc3d11be3f1bd": "40f02c0cc15806bbf557f42dce8919af88391f4d4b79335097dcf2f75dce8b9a",
     "a0cca09e7fed8c60188e": "930244fb8dc07e97e7fd6fefebc035f755d59cd325613b1f5833b0f091b052d6",
-    "f5a5611825205c2d1c68": "2345585269775b1ee6ba3a6e25654dbe8c4792fee663ff129b3fc55acb23132c"
+    "f5a5611825205c2d1c68": "2345585269775b1ee6ba3a6e25654dbe8c4792fee663ff129b3fc55acb23132c",
+    "da9a13881f5f30e39280": "8985b5cd9387e29625a662ed8fc656ed5d50ee40b6e0d071318248ec64bd25e4"
   },
   "retry": {},
   "pending": 0,
