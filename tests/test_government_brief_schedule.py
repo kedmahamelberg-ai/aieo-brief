@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from datetime import datetime
 from government_brief_schedule import is_due, import_due, feed_has_changes, verify_slot
-from government_briefs import fingerprint
+from government_briefs import fingerprint, monitor_record
 
 class GovernmentBriefScheduleTests(unittest.TestCase):
     def test_later_monitor_corrections_are_due_once(self):
@@ -17,7 +17,7 @@ class GovernmentBriefScheduleTests(unittest.TestCase):
                 'translation_complete': True, 'classification_status': 'provisional',
                 'topics': ['artificial_intelligence'], 'english_summary': 'A source claim about AI.',
                 'ticker_message': 'AI policy'}
-        state = {'records': {'nl-story': {'id': 'nl-story'}},
+        state = {'records': {'nl-story': monitor_record(item, fingerprint(item))},
                  'checked': {'nl-story': fingerprint(item)}}
         self.assertFalse(feed_has_changes(state, {'as_of': '2026-11-19T15:00:00Z', 'items': [item]}))
         corrected = {**item, 'topics': ['military_defence']}
@@ -25,6 +25,21 @@ class GovernmentBriefScheduleTests(unittest.TestCase):
         state['records'].clear()
         state['checked'].clear()
         self.assertFalse(feed_has_changes(state, {'as_of': '2026-11-19T16:00:00Z', 'items': [corrected]}))
+
+    def test_unchanged_input_hash_with_old_generated_copy_is_due(self):
+        item = {'id': 'legacy', 'country': 'Iceland', 'country_code': 'IS',
+                'url': 'https://example.is/ai', 'published_date': '2026-11-26',
+                'translation_complete': True, 'classification_status': 'provisional',
+                'topics': ['artificial_intelligence'], 'english_summary': 'A reviewed AI literacy grant.',
+                'ticker_message': 'Iceland supports AI literacy.'}
+        sha = fingerprint(item)
+        row = monitor_record(item, sha)
+        row['body_paragraphs'] = ['Old generated AI claims.']
+        state = {'records': {'legacy': row}, 'checked': {'legacy': sha}}
+        snapshot = {'as_of': '2026-11-26T08:00:00Z', 'items': [item]}
+        self.assertTrue(feed_has_changes(state, snapshot))
+        state['records']['legacy'] = monitor_record(item, sha)
+        self.assertFalse(feed_has_changes(state, snapshot))
 
     def test_changed_monitor_copy_and_new_ai_item_are_due(self):
         item = {'id': 'gr-story', 'country': 'Greece', 'country_code': 'GR',

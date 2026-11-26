@@ -107,7 +107,7 @@ jobs:
           cache: pip
       - if: steps.slot.outputs.verify == 'true'
         run: python -m pip install -r requirements.txt
-      - name: Compare Monitor eligibility, saved import and live Brief cards
+      - name: Compare Monitor copy with saved import, live cards and every government article body
         if: steps.slot.outputs.verify == 'true'
         env:
           BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}

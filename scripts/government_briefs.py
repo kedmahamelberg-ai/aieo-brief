@@ -97,16 +97,11 @@ def refresh(snapshot, state):
             checked.pop(ident, None)
             continue
         sha = fingerprint(item)
-        if checked.get(ident) == sha and ident in records:
-            continue
-        # Preserve previously published copy and community identity when its
-        # source evidence has not changed. An old exclusion is reconsidered.
-        if (ident in records and within_brief_limits(records[ident])
-                and checked.get(ident) in (fingerprint(item, PREVIOUS_POLICY),
-                                           fingerprint(item, INTERMEDIATE_POLICY))):
-            records[ident] = {**records[ident], 'input_fingerprint': sha}
-        else:
-            records[ident] = monitor_record(item, sha)
+        # An input fingerprint proves which source was seen, not that cached
+        # prose still reproduces it. Rebuild deterministically even when a
+        # legacy/generated record carries the current input fingerprint.
+        # Community identities and existing URLs are preserved by the ID/key.
+        records[ident] = monitor_record(item, sha)
         checked[ident] = sha
     for ident in (set(records) | set(checked)) - seen:
         records.pop(ident, None)
@@ -122,6 +117,14 @@ def load(root=ROOT):
     return json.loads(path.read_text()) if path.exists() else {'records': {}}
 
 
+def page_headline(record):
+    heading = clean(record.get('page_headline')) or clean(record['headline'])
+    country = record['country']
+    if not re.search(r'\b' + re.escape(country) + r'\b', heading, re.IGNORECASE):
+        heading = country + ' — ' + heading
+    return heading
+
+
 def cards(root=ROOT):
     result = []
     registry = photo_registry(root)
@@ -132,10 +135,8 @@ def cards(root=ROOT):
         key = 'event:' + str(uuid.uuid5(uuid.NAMESPACE_URL, FEED + '#' + row['id']))
         ident = key.removeprefix('event:')
         paragraphs = row.get('body_paragraphs') or [row['summary']]
-        heading = clean(row.get('page_headline')) or clean(row['headline'])
+        heading = page_headline(row)
         country = row['country']
-        if not re.search(r'\b' + re.escape(country) + r'\b', heading, re.IGNORECASE):
-            heading = country + ' — ' + heading
         description = clean(paragraphs[0])
         if len(description) > 165:
             first = re.split(r'(?<!\b[A-Z]\.)(?<=[.!?])\s+', description, maxsplit=1)[0]
