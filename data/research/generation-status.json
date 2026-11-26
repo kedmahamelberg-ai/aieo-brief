@@ -1,11 +1,24 @@
 {
-  "generated": 5,
-  "failed": 0,
+  "generated": 7,
+  "failed": 1,
   "metadata_only": 7,
   "deferred": 4,
   "unchanged": 2,
   "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
-  "failure_counts": {},
-  "failed_items": [],
-  "updated_at": "2026-11-25T21:50:17.529252+00:00"
+  "failure_counts": {
+    "source_scope_review_failed": 1
+  },
+  "failed_items": [
+    {
+      "key": "paper:64ec0819383a7df750f62655",
+      "error_type": "EditorialError",
+      "stage": "scope_review",
+      "code": "source_scope_review_failed",
+      "engine_version": "aieo-editorial-runtime-v14-source-specific-news",
+      "failed_checks": [
+        "plain_english"
+      ]
+    }
+  ],
+  "updated_at": "2026-11-26T21:47:21.531419+00:00"
 }
