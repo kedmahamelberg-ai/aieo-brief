@@ -1644,7 +1644,8 @@
         "Australian National University",
         "Stanford University",
         "The University of Sydney",
-        "The Ohio State University"
+        "The Ohio State University",
+        "Canva"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.33151v1",
       "affiliation_checked_at": "2026-11-25T21:43:29.916448+00:00",
@@ -2945,6 +2946,7 @@
         "Jeonghoon Kim"
       ],
       "institutions": [
+        "NAVER Cloud",
         "Korea Advanced Institute of Science and Technology"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.31237v1",
@@ -7357,8 +7359,7 @@
         "Xingyi Yang"
       ],
       "institutions": [
-        "Learning & Generation Lab, The Hong Kong Polytechnic University",
-        "Hung Hom, Kowloon, Hong Kong"
+        "Learning & Generation Lab, The Hong Kong Polytechnic University"
       ],
       "affiliation_source_url": "https://arxiv.org/html/2611.27963v1",
       "affiliation_checked_at": "2026-11-23T23:55:29.766171+00:00",
@@ -33625,7 +33626,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-26T10:17:13.566855+00:00",
+      "affiliation_checked_at": "2026-11-26T11:58:17.242832+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -102150,7 +102151,9 @@
       "authors": [
         "Ali Şenol"
       ],
-      "institutions": [],
+      "institutions": [
+        "Tarsus University"
+      ],
       "source_verified_at": "2026-09-16T16:53:07.286160+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -102165,13 +102168,13 @@
       "has_editorial": true,
       "headline": "Abstaining when unsure lowers wrong commitments and boosts accuracy",
       "deck": "A simple trick: let AI abstain when it lacks solid evidence, and only answer when it’s well supported; results vary with gate strictness.",
-      "what_happened": "We tested three AI styles that can refuse to answer when evidence is weak. At a 0.90 confidence cut-off, all three reduced wrong commitments and improved accuracy across eleven models on an 817-question test, with some refusals.",
-      "why_it_matters": "In use, an AI that can say 'I don’t know' is safer to deploy, especially where a wrong answer costs more than asking a human.",
+      "what_happened": "Ali Şenol of Tarsus University tested three prompting methods that let language models decline uncertain answers. On 817 TruthfulQA questions across eleven models, the methods reduced wrong answers and improved accuracy among answered questions at a 0.90 threshold, while leaving some questions unanswered.",
+      "why_it_matters": "Allowing a model to decline an answer can reduce incorrect commitments, with a trade-off between accuracy and how many questions it answers.",
       "body_paragraphs": [
-        "Two ideas guided the work: first, the AI should show what it needs and how sure it is; second, a gate decides to answer or abstain.",
-        "A company could start with a conservative gate, abstain more, and adjust the threshold to balance speed, coverage, and risk for important tasks."
+        "The main test used multiple-choice questions. A secondary test used 300 Natural Questions short-answer questions across five models, providing evidence on answers written in the models’ own words.",
+        "The 0.90 threshold is an empirical setting, not a calibrated 90% probability of being correct. The methods require three to four model calls rather than one."
       ],
-      "limitation": "The study used one test type; results may not apply to other areas, and confidence signals need better calibration.",
+      "limitation": "The results come from these question-answering tests. The confidence threshold needs validation for other tasks and deployment settings.",
       "summary_basis": "Summary of the paper",
       "reading_minutes": 1,
       "claim_status": "study",
@@ -102213,7 +102216,8 @@
       "legacy_paths": [
         "research/paper-307e85c1830ce3790534da5b/index.html"
       ],
-      "url_slug_version": 1
+      "url_slug_version": 1,
+      "affiliation_source_url": "https://arxiv.org/html/2609.17516v1"
     },
     {
       "key": "event:ef636b51-ee29-4f0a-a5af-3cb48eb8759b",
