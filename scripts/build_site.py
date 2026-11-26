@@ -350,8 +350,9 @@ def article_schema(item, canonical, baseurl, page_image='', page_image_alt=''):
     schema = {'@context': 'https://schema.org',
               '@type': 'NewsArticle' if item.get('kind') == 'news' else 'Article',
               'mainEntityOfPage': {'@type': 'WebPage', '@id': canonical},
-              'headline': item['headline'], 'description': item['deck'],
-              'datePublished': item['date'], 'dateModified': item['date'],
+              'headline': item.get('page_headline') or item['headline'],
+              'description': item.get('page_description') or item['deck'],
+              'datePublished': item['date'], 'dateModified': item.get('date_modified', item['date']),
               'author': {'@type': 'Person', '@id': 'https://kedmahamelberg.com/#person',
                          'name': 'Kedma Hamelberg', 'url': 'https://kedmahamelberg.com/'},
               'publisher': {'@id': 'https://brief.hamelberg-ai.com/#organization'},
@@ -434,6 +435,13 @@ def main():
     if pending_culture:
         print('::warning::Culture translations pending; English notices are shown and translations will be retried: '+', '.join(pending_culture))
     assign_article_urls(allcards, old)
+    # Search edits follow the existing canonical path, preserving inbound links.
+    copy_file = ROOT / 'config/article-search-copy.json'
+    search_copy = json.loads(copy_file.read_text()) if copy_file.exists() else {}
+    for article in allcards:
+        override = search_copy.get(article['path'])
+        if override and article.get('has_editorial'):
+            article.update(override)
     for archived in raw_archive:
         public = public_by_key[archived['key']]
         for field in ('path', 'slug', 'legacy_paths', 'url_slug_version'):
@@ -534,7 +542,24 @@ def main():
         target.write_text(output,encoding='utf-8')
     render('index.html','index.html',page='home',lead=lead,highlights=highlights,feed=feed_news,government_ticker=governments)
     render('research/index.html','collection.html',page='research',items=research)
-    render('governments-say/index.html','governments.html',page='governments',items=governments,government_status=government_state(ROOT))
+    explainer_path = 'governments-say/ai-in-public-services/index.html'
+    explainer = json.loads((ROOT / 'data/governments/public-services-explainer.json').read_text())
+    explainer['display_date'] = fmt(explainer['published'])
+    explainer_schema = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        'mainEntityOfPage': absolute_url(baseurl, explainer_path.removesuffix('index.html')),
+        'headline': explainer['title'],
+        'description': explainer['description'],
+        'datePublished': explainer['published'],
+        'author': {'@id': 'https://brief.hamelberg-ai.com/#organization', 'name': 'The Brief'},
+        'publisher': {'@id': 'https://brief.hamelberg-ai.com/#organization'},
+        'citation': [source['url'] for case in explainer['cases'] for source in case['sources']],
+    }
+    render(explainer_path, 'government-ai-explainer.html', page='government-explainer', explainer=explainer,
+           page_title=explainer['title'], page_description=explainer['description'], structured_data=explainer_schema)
+    render('governments-say/index.html', 'governments.html', page='governments', items=governments,
+           government_status=government_state(ROOT), explainer=explainer, explainer_path=explainer_path)
     render('culture/index.html','culture.html',page='culture',items=culture)
     render('saved/index.html','collection.html',page='saved',items=allcards)
     render('archive/index.html','collection.html',page='archive',items=allcards)
@@ -627,8 +652,9 @@ def main():
         locations=[
             ('index.html',today,''),('research/index.html',today,''),('governments-say/index.html',today,''),('culture/index.html',today,''),
             ('archive/index.html',today,''),('about/index.html',today,'https://kedmahamelberg.com/assets/images/KedmaHamelberg1092-a.jpg'),('contact/index.html',today,''),('week-from-above/index.html',release['period_end'],weekly_overview['markets']['image_path']),
+            (explainer_path, explainer['published'], ''),
             *[(x['path'],x['period_end'],x['markets'].get('image_path','')) for x in overview_archive],
-            *[(item['path'],item['date'],'') for item in sitemap_articles(allcards)],
+            *[(item['path'],item.get('date_modified',item['date']),'') for item in sitemap_articles(allcards)],
         ]
         def sitemap_url(path, modified, image=''):
             image_url = image if image.startswith('http') else absolute_url(baseurl, image)

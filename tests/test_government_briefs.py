@@ -78,6 +78,7 @@ class GovernmentBriefsTests(unittest.TestCase):
         item = source(ticker_message='AI ' * 18, english_summary='AI ' * 50)
         row = gov.monitor_record(item, gov.fingerprint(item))
         self.assertLessEqual(len(row['headline'].split()), 16)
+        self.assertEqual(row['page_headline'], gov.clean(item['ticker_message']))
         self.assertLessEqual(len(row['summary'].split()), 45)
         self.assertEqual(row['body_paragraphs'], [gov.clean(item['english_summary'])])
 

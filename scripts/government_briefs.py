@@ -73,6 +73,7 @@ def monitor_record(item, sha):
     return {'id': str(item['id']), 'country': clean(item['country']),
             'country_code': item['country_code'], 'url': item['url'],
             'date': published_day(item), 'headline': brief_length(source_headline, 16),
+            'page_headline': source_headline,
             'summary': summary,
             'body_paragraphs': [full_summary] if summary != full_summary else [],
             'input_fingerprint': sha}
@@ -130,7 +131,17 @@ def cards(root=ROOT):
         # database key types. It never references an Observatory event record.
         key = 'event:' + str(uuid.uuid5(uuid.NAMESPACE_URL, FEED + '#' + row['id']))
         ident = key.removeprefix('event:')
-        result.append({**row, 'key': key, 'kind': 'news', 'section': 'governments',
+        paragraphs = row.get('body_paragraphs') or [row['summary']]
+        heading = clean(row.get('page_headline')) or clean(row['headline'])
+        country = row['country']
+        if not re.search(r'\b' + re.escape(country) + r'\b', heading, re.IGNORECASE):
+            heading = country + ' — ' + heading
+        description = clean(paragraphs[0])
+        if len(description) > 165:
+            first = re.split(r'(?<!\b[A-Z]\.)(?<=[.!?])\s+', description, maxsplit=1)[0]
+            description = first if len(first) <= 165 else clean(row['summary'])
+        result.append({**row, 'page_headline': heading, 'page_description': description,
+                       'announcement_paragraphs': paragraphs, 'key': key, 'kind': 'news', 'section': 'governments',
                        'slug': 'government-' + ident, 'path': 'story/government-' + ident + '/index.html',
                        'deck': row['summary'], 'publisher': 'Government of ' + row['country'],
                        'source_count': 1, 'sources': [{'publisher': 'Government of ' + row['country'],

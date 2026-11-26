@@ -9,9 +9,9 @@
   <meta property="og:site_name" content="The Brief">
   <meta property="og:locale" content="en_GB">
   <script type="application/ld+json">{{ identity_data|tojson }}</script>
-  <meta property="og:type" content="{{ 'article' if story is defined else 'website' }}">
-  <meta property="og:title" content="{{ story.headline if story is defined else 'About The Brief — a research initiative by Kedma Hamelberg' if page == 'about' else 'The Brief | AI Empowerment Observatory' }}">
-  <meta property="og:description" content="{{ story.deck if story is defined else 'AI news you can make sense of. Read, discuss and explore the sources.' }}">
+  <meta property="og:type" content="{{ 'article' if story is defined or page == 'government-explainer' else 'website' }}">
+  <meta property="og:title" content="{{ (story.page_headline or story.headline) if story is defined else page_title|default('About The Brief — a research initiative by Kedma Hamelberg' if page == 'about' else 'The Brief | AI Empowerment Observatory') }}">
+  <meta property="og:description" content="{{ (story.page_description or story.deck) if story is defined else page_description|default('AI news you can make sense of. Read, discuss and explore the sources.') }}">
   {% if page_image is defined and page_image %}
   <meta property="og:image" content="{{ (config.site_url ~ '/' if config.site_url else '') ~ page_image }}">
   <meta name="twitter:image" content="{{ (config.site_url ~ '/' if config.site_url else '') ~ page_image }}">

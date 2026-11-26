@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}{{ explainer.title }} | The Brief{% endblock %}
+{% block description %}{{ explainer.description }}{% endblock %}
+{% block content %}
+<main id="main-content" class="page-shell">
+  <div class="article-layout">
+    <article id="article-content">
+      <div class="breadcrumb"><a href="{{ local('governments-say/index.html') }}">← Governments say</a></div>
+      <header class="article-header">
+        <h1>{{ explainer.title }}</h1>
+        <p class="deck">{{ explainer.introduction }}</p>
+        <div class="source-line"><span>The Brief</span><time datetime="{{ explainer.published }}">{{ explainer.display_date }}</time></div>
+      </header>
+      <div class="article-body">
+        {% for case in explainer.cases %}
+        <section aria-labelledby="case-{{ loop.index }}">
+          <h2 id="case-{{ loop.index }}">{{ case.heading }}</h2>
+          <p><strong>{{ case.status }}</strong></p>
+          {% for paragraph in case.paragraphs %}<p>{{ paragraph }}</p>{% endfor %}
+          <ul>
+            {% for source in case.sources %}<li><a href="{{ source.url }}">{{ source.title }}</a></li>{% endfor %}
+          </ul>
+        </section>
+        {% endfor %}
+        <section aria-labelledby="comparison">
+          <h2 id="comparison">What differs across the three countries?</h2>
+          <p>{{ explainer.comparison }}</p>
+        </section>
+      </div>
+    </article>
+  </div>
+</main>
+{% endblock %}

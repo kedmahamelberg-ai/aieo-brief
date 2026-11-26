@@ -1,11 +1,15 @@
 {% extends 'base.html' %}{% from 'components.html' import document_photo with context %}{% from 'components.html' import actions with context %}
 {% block title %}Governments say · AI announcements | The Brief{% endblock %}
-{% block description %}AI-labelled government narratives imported from the European Security Monitor. Browse announcements from the last seven days or older dates.{% endblock %}
+{% block description %}Read what governments announce about AI, with dates and links to their official statements. Explore what is planned, being tested or already in use.{% endblock %}
 {% block content %}
 <main id="main-content" class="page-shell government-page">
 <header class="research-intro"><span class="eyebrow">GOVERNMENTS & AI</span><h1>What do governments say?</h1></header>
 <div class="reading-layout">
 <section class="feed-column" aria-label="Government AI announcements">
+<section class="quiet-box" aria-labelledby="public-services-explainer">
+  <h2 id="public-services-explainer"><a href="{{ local(explainer_path) }}">{{ explainer.title }}</a></h2>
+  <p>{{ explainer.description }}</p>
+</section>
 <div class="feed-controls government-controls" data-government-controls hidden>
 <div class="market-tabs" aria-label="Browse announcements"><button type="button" data-government-view="day" aria-pressed="true">Last 7 days</button><button type="button" data-government-view="older" aria-pressed="false">Older</button></div>
 <p class="filter-status" id="government-status" aria-live="polite"></p>

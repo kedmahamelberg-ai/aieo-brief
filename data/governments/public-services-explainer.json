@@ -1,0 +1,47 @@
+{
+  "title": "How Canada, France and the UK use AI in public services",
+  "description": "Canada has rules for automated federal decisions. France uses AI to support advisers, and the UK has tested AI on public consultations.",
+  "published": "2026-11-26",
+  "introduction": "Three government records show what AI in public services can mean in practice. Canada’s rules cover certain automated administrative decisions. France has documented a tool that helps advisers answer residents’ questions. The UK has tested a tool on real consultation responses and is offering limited access ahead of a wider rollout.",
+  "cases": [
+    {
+      "heading": "Canada sets rules for automated federal decisions",
+      "status": "Directive in effect",
+      "paragraphs": [
+        "Canada’s Directive on Automated Decision-Making took effect on 1 April 2019. Compliance was required by 1 April 2020. The policy applies to covered federal systems developed or procured after that date, including some systems that help an officer make a decision about a permit or benefit. The required safeguards depend on the assessed impact of the system.",
+        "On 4 March 2025, Canada launched a separate federal public-service AI strategy. It sets priorities for expertise, staff training, governance and transparency. The strategy describes how the government intends to expand its use of AI across departments."
+      ],
+      "sources": [
+        {"title": "Treasury Board directive on automated decision-making", "url": "https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32592"},
+        {"title": "Treasury Board guide to the directive’s scope", "url": "https://www.canada.ca/en/government/system/digital-government/digital-government-innovations/responsible-use-ai/automated-decision-making/guide-scope-directive-automated-decision-making.html"},
+        {"title": "2025 federal public-service AI strategy launch", "url": "https://www.canada.ca/en/treasury-board-secretariat/news/2025/03/canada-launches-first-ever-artificial-intelligence-strategy-for-the-federal-public-service.html"}
+      ]
+    },
+    {
+      "heading": "France uses Albert to help public-service advisers answer questions",
+      "status": "Staff tool in documented use",
+      "paragraphs": [
+        "France presented Albert on 23 April 2024 at a France Services office in Sceaux. Advisers can ask it a question in French and receive a draft answer with links to government guidance. The adviser uses that material to help the person at the counter.",
+        "The France Services pilot was running in more than 40 locations by November 2024. On 14 August 2026, the government reported that Albert was already helping public servants answer questions. That update did not give a count of all locations using it."
+      ],
+      "sources": [
+        {"title": "Government presentation of Albert in Sceaux", "url": "https://www.info.gouv.fr/public/index.php/actualite/ia-connaissez-vous-albert"},
+        {"title": "France Services pilot report", "url": "https://www.france-services.gouv.fr/actualites/experimentation-dun-modele-dassistance-france-services-IA"},
+        {"title": "French government update on Albert’s use", "url": "https://www.info.gouv.fr/actualite/la-parole-officielle-a-l-epreuve-de-l-ia"}
+      ]
+    },
+    {
+      "heading": "The UK tests Consult on public feedback",
+      "status": "Live trial and waitlist. Wider rollout planned for 2027.",
+      "paragraphs": [
+        "On 14 May 2025, the UK reported the first live use of Consult. The tool grouped themes in responses to a Scottish Government consultation on regulating non-surgical cosmetic procedures. Scottish Government experts reviewed and refined the themes before officials used them to assess the feedback.",
+        "On 22 July 2026, the UK government opened registration for a waitlist for government teams and said it was planning a wider rollout in 2027. The announcement describes an expansion still to come."
+      ],
+      "sources": [
+        {"title": "UK government report on the first live Consult trial", "url": "https://www.gov.uk/government/news/government-built-humphrey-ai-tool-reviews-responses-to-consultation-for-first-time-in-bid-to-save-millions"},
+        {"title": "UK government Consult waitlist and rollout guidance", "url": "https://www.gov.uk/government/publications/consult-register-your-interest"}
+      ]
+    }
+  ],
+  "comparison": "The practical difference is who is affected and what the system does. In Canada, the directive governs certain systems that can affect an administrative decision. France’s Albert gives an adviser information to work with. The UK’s Consult helps officials analyse what people said in a consultation. An announcement about wider access tells you what a government intends to do. A live trial or a binding directive tells you what has already happened or applies today."
+}

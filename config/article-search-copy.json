@@ -1,0 +1,27 @@
+{
+  "story/tencents-ai-office-standard-released-authors-clear-limits/index.html": {
+    "headline": "What the Tencent-backed AI office standard covers",
+    "deck": "The Shenzhen framework sets out how office AI should protect data, record actions in audit trails and make clear who is accountable.",
+    "date_modified": "2026-11-26"
+  },
+  "story/aviation-ai-moves-toward-automated-impact-real-world-execution/index.html": {
+    "headline": "How AI agents could handle airline bookings and servicing",
+    "deck": "CAPA examines what AI agents could do across flight search, booking and servicing, and where airlines would still need human oversight.",
+    "date_modified": "2026-11-26"
+  },
+  "story/engineers-will-shape-ais-real-world-use-la-presse/index.html": {
+    "headline": "What engineers need to test before AI acts in the real world",
+    "deck": "A La Presse opinion piece explains why AI for factories and aviation needs safeguards, including tests for failures and unexpected conditions.",
+    "date_modified": "2026-11-26"
+  },
+  "research/when-should-llms-abstain-chain-of-self-questioning-selective-risk-control/index.html": {
+    "headline": "When should AI say it does not know?",
+    "deck": "In an 817-question benchmark, prompting language models to abstain when uncertain reduced wrong answers and left some questions unanswered.",
+    "date_modified": "2026-11-26"
+  },
+  "story/french-author-questions-ais-ability-imitate-noting-limits/index.html": {
+    "headline": "Can AI capture a writer’s personal voice?",
+    "deck": "A Le Devoir essay asks what AI imitation misses about how a writer’s voice develops through lived experience, language and culture.",
+    "date_modified": "2026-11-26"
+  }
+}
