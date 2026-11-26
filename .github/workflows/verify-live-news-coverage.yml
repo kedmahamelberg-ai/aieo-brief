@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '31 * * * *'
   workflow_run:
-    workflows: ['Build and Publish AIEO Brief', 'Follow Observatory Editions', 'Publish Saved News Checkpoints']
+    workflows: ['Build and Publish AIEO Brief', 'Follow Observatory Editions', 'Publish Saved News Checkpoints', 'Update Brief Government AI Announcements']
     types: [completed]
     branches: [main]
 permissions:
