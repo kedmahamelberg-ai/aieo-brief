@@ -319,6 +319,8 @@ def style_problem(row):
     """Reader-facing research must not require an unexplained acronym glossary."""
     title=row.get('editorial_headline',row.get('headline',''))
     public=' '.join(str(row.get(k,'')) for k in ('editorial_headline','headline','editorial_deck','deck','what_happened','why_it_matters','limitation'))+' '+' '.join(row.get('body_paragraphs',[]))
+    if re.search(r'\bwe\s+(?:tested|evaluated|trained|developed|propose[ds]?|introduce[ds]?|demonstrated|found|showed)\b|\bour\s+(?:study|experiment|evaluation|method|results)\b', public, re.I):
+        return 'Attribute the study and findings to the paper’s authors; the Brief did not conduct the research.'
     acronyms=set(re.findall(r'\b[A-Z][A-Z0-9-]{1,}\b',public))-{'AI','IT','API','GPU','CPU','PDF','EU','UK','US','USA','UN','NASA'}
     if public.count('?')>1:return 'Use at most one reflective question across the entire brief.'
     if acronyms:return 'Replace unexplained acronyms with everyday words throughout: '+', '.join(sorted(acronyms))
