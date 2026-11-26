@@ -6,14 +6,16 @@ import json
 import os
 import time
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 import requests
+from bs4 import BeautifulSoup
 
-from government_briefs import FEED, POLICY, candidate, fingerprint
+from government_briefs import FEED, POLICY, candidate, clean, fingerprint, monitor_record
 
 ROOT = Path(__file__).resolve().parents[1]
 BRIEF = (os.environ.get('BRIEF_SITE_URL') or
@@ -62,6 +64,10 @@ def verify(snapshot, state, public, html):
         record = records[ident]
         if checked[ident] != fingerprint(item) or record.get('input_fingerprint') != checked[ident]:
             raise ValueError(f'Saved Brief record {ident} does not match its current Monitor input')
+        canonical = monitor_record(item, checked[ident])
+        for field, value in canonical.items():
+            if record.get(field) != value:
+                raise ValueError(f'Saved Brief record {ident} does not mechanically reuse Monitor {field}')
         if (record.get('date') != (item.get('published_date') or str(item.get('published_at') or '')[:10]) or
                 any(record.get(field) != item.get(field) for field in ('country', 'country_code', 'url'))):
             raise ValueError(f'Saved Brief record {ident} has mismatched source, country or date')
@@ -73,9 +79,12 @@ def verify(snapshot, state, public, html):
         record = records[item['id']]
         for public_field, saved_field in (('date', 'date'), ('country_code', 'country_code'),
                                           ('country', 'country'), ('url', 'url'),
-                                          ('headline', 'headline'), ('deck', 'summary')):
+                                          ('headline', 'headline'), ('deck', 'summary'),
+                                          ('body_paragraphs', 'body_paragraphs')):
             if item.get(public_field) != record.get(saved_field):
                 raise ValueError(f"Live Brief {item['id']} has stale {public_field}")
+        if item.get('announcement_paragraphs') != (record['body_paragraphs'] or [record['summary']]):
+            raise ValueError(f"Live Brief {item['id']} has stale announcement paragraphs")
     parser = GovernmentCards()
     parser.feed(html)
     card_keys = {item['key']: item['date'] for item in governments}
@@ -88,6 +97,56 @@ def verify(snapshot, state, public, html):
             'brief_live_cards': len(parser.cards),
             'external_benchmarks': {code: sum(item.get('country_code') == code for item in expected.values())
                                     for code in ('US', 'CA', 'CN')}}
+
+
+def verify_article_page(item, record, html):
+    """Require the actual article's copy and source, not just a matching card."""
+    soup = BeautifulSoup(html, 'html.parser')
+    if any(str(meta.get('http-equiv', '')).lower() == 'refresh'
+           for meta in soup.find_all('meta')):
+        raise ValueError(f"Live government article {item['id']} redirects instead of showing its body")
+    article = soup.select_one('#article-content')
+    if article is None:
+        raise ValueError(f"Live government article {item['id']} has no article content")
+    section = article.select_one('section[aria-labelledby="announcement"]')
+    paragraphs = [clean(p.get_text(' ', strip=True)) for p in section.find_all('p')] if section else []
+    expected = record['body_paragraphs'] or [record['summary']]
+    if paragraphs != expected:
+        raise ValueError(f"Live government article {item['id']} has stale or missing Monitor body")
+    heading = article.find('h1')
+    if heading is None or record['page_headline'] not in clean(heading.get_text(' ', strip=True)):
+        raise ValueError(f"Live government article {item['id']} has a stale headline")
+    if not article.find('time', attrs={'datetime': record['date']}):
+        raise ValueError(f"Live government article {item['id']} has a stale date")
+    kicker = article.select_one('.story-kicker')
+    if kicker is None or record['country'] not in clean(kicker.get_text(' ', strip=True)):
+        raise ValueError(f"Live government article {item['id']} has a stale country")
+    source_links = {a.get('href') for a in article.select('a[data-source-link]')}
+    if record['url'] not in source_links:
+        raise ValueError(f"Live government article {item['id']} has a stale source link")
+
+
+def verify_article_routes(state, public):
+    def check(item):
+        try:
+            url = urljoin(BRIEF, item['path'].removesuffix('index.html'))
+            if urlsplit(url).netloc != urlsplit(BRIEF).netloc:
+                raise ValueError('Government article route leaves the Brief')
+            # Use the ordinary reader URL: a cache bypass can hide stale pages.
+            page = requests.get(url, timeout=(10, 30))
+            page.raise_for_status()
+            if urlsplit(page.url).netloc != urlsplit(BRIEF).netloc:
+                raise ValueError('Government article redirects outside the Brief')
+            verify_article_page(item, state['records'][item['id']], page.text)
+        except (ValueError, KeyError, requests.RequestException) as exc:
+            return f"{item.get('id', 'unknown')}: {exc}"
+    items = public.get('governments') or []
+    with ThreadPoolExecutor(max_workers=5) as pool:
+        failures = [failure for failure in pool.map(check, items) if failure]
+    if failures:
+        raise ValueError(f'{len(failures)} of {len(items)} live government articles failed:\n'
+                         + '\n'.join(failures))
+    return len(items)
 
 
 def get(session, url, *, max_bytes=None):
@@ -109,13 +168,15 @@ def main():
                 public = get(session, urljoin(BRIEF, 'data/current.json')).json()
                 html = get(session, urljoin(BRIEF, 'governments-say/')).text
             report = verify(snapshot, state, public, html)
+            report['live_article_routes_verified'] = verify_article_routes(state, public)
             report['checked_at'] = datetime.now(timezone.utc).isoformat()
             print(json.dumps(report, indent=2))
             if os.environ.get('GITHUB_STEP_SUMMARY'):
                 with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
                     summary.write(f"Government coverage: {report['monitor_eligible']} Monitor eligible, "
                                   f"{report['brief_saved']} Brief saved, {report['brief_live_data']} Brief data, "
-                                  f"{report['brief_live_cards']} live cards.\n")
+                                  f"{report['brief_live_cards']} live cards; "
+                                  f"{report['live_article_routes_verified']} article bodies and sources verified.\n")
             return
         except (ValueError, KeyError, TypeError, requests.RequestException) as exc:
             error = exc

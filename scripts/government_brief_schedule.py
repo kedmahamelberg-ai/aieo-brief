@@ -7,7 +7,7 @@ from datetime import datetime, time, timedelta
 from pathlib import Path
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
-from government_briefs import FEED, candidate, fingerprint
+from government_briefs import FEED, candidate, fingerprint, monitor_record
 
 AMSTERDAM = ZoneInfo("Europe/Amsterdam")
 MAX_SNAPSHOT_BYTES = 25_000_000
@@ -39,7 +39,8 @@ def feed_has_changes(state, snapshot):
             continue
         seen.add(ident)
         if candidate(item):
-            if checked.get(ident) != fingerprint(item) or ident not in records:
+            sha = fingerprint(item)
+            if checked.get(ident) != sha or records.get(ident) != monitor_record(item, sha):
                 return True
         elif ident in records or ident in checked:
             return True

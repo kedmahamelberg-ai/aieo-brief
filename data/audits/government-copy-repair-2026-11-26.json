@@ -1,0 +1,696 @@
+{
+  "version": 1,
+  "date": "2026-11-26",
+  "monitor_as_of": "2026-11-26T12:48:31.106998+00:00",
+  "policy": "government-ai-brief-v4",
+  "total_eligible_records": 157,
+  "legacy_prose_records": 19,
+  "full_headline_backfills": 134,
+  "full_headline_backfill_ids": [
+    "8c43b9854041da796641",
+    "2a8e7651f908d61757c8",
+    "b1f70657a865d02bf9c2",
+    "5f4fb3551ad7e6c5b6b6",
+    "278e70e88147bb2c9b11",
+    "b1b34cf07234fcc1fe5a",
+    "bfff253c6ae5b985b479",
+    "6b81efe72d632959d31f",
+    "09fa9f199791dc447452",
+    "ed9190ea3dd4e848af6b",
+    "b7253d5b8a98f9276516",
+    "de4fecfbf8ab7ea67b73",
+    "5500ca7c86470004e3a9",
+    "4b50327151948d74ac97",
+    "eecb217c1d39da14296b",
+    "a8697cc879473202c61b",
+    "8c86ef7bdfce5d86b178",
+    "62347da91db6a9358ce8",
+    "5abd7ccdc15dc716ae13",
+    "19970664ea8e6f384e43",
+    "b2ef7fd09c67c3755618",
+    "72c62b6823ffc4436905",
+    "57894328f9454651c87f",
+    "03f1c1d34f736656216a",
+    "1f54f33f92f0bd0fe08b",
+    "198c6cf02c330deca207",
+    "e6b2633a1a881dafde66",
+    "4903511d02b5bfbbb5a8",
+    "6fb4ad90738712d3ecac",
+    "54269fa4c02e5e9f259d",
+    "7b92f5eb993c070eca4b",
+    "066566daa57489d292a6",
+    "8fddb8a43c6f356dcea1",
+    "82d62b02e8ecd4308de5",
+    "b39eb1f211967b4c71a1",
+    "ff467a1f3ee16b65024e",
+    "2c731ece44e2ceb3c59b",
+    "53dfe3352bd40dfe266e",
+    "429df6190e67dfa5cf05",
+    "e71a1902782c73a2d16e",
+    "fb4546b758a98411759c",
+    "a411df8e90b8225f8171",
+    "aff3133d705c8e5cb3f0",
+    "78f661b3a184db4d991e",
+    "e18065014cf66f4be4d4",
+    "582eff31df24c1cb8313",
+    "4978ee190a18a2ac8680",
+    "6ea280d1c63883355247",
+    "358e1296b7c84431a78a",
+    "748096ce065aed7e9845",
+    "d599b9765a58f8977a2c",
+    "1a6e6a1257d7a963e080",
+    "e594c7311f82e803b4b7",
+    "ba0a721a1f904eea1284",
+    "824ae51aacffe43f6836",
+    "dfcdaa07e65074e914cf",
+    "b1b6c718c965640eac7c",
+    "d002d8608028a6b07f70",
+    "dedcc4dc5b8c1407eb65",
+    "7bad4878624d642efcbb",
+    "f04f311581b414b8d51f",
+    "c8c8d5d5f449bb9e57eb",
+    "c7deccf16eb7fadf75f3",
+    "a5a7bb5ac6185bae2903",
+    "f60fb01beaf7ccf3229c",
+    "04d742c3ae8b90993965",
+    "26342734b3f9df7e2513",
+    "8518710d06e83dae0210",
+    "505541bb63ef36d88ded",
+    "78ae9e19e4fd2bc9b41a",
+    "7edd1ce37ff1ee573983",
+    "4df10bc439945fd8e4a2",
+    "0ab35206f4be0706fa08",
+    "1dbe990557d42743a200",
+    "76ac5352c780b28312e6",
+    "829a439d8cac46edaf4b",
+    "7caba08fbe4c1a5e96fb",
+    "42ce31b1d7e2e2db6f8a",
+    "fba1f791f1a41c3d5096",
+    "4b9b0f2cc0b30ae13056",
+    "e904c31abb7546108c2e",
+    "df72482125e7867a1e98",
+    "80fe0d2b2dc9532f9e29",
+    "fef43dfa7e748f727604",
+    "53bed82538ab94c28daf",
+    "01fe81c9712582479724",
+    "c98e9ffe717fbe342424",
+    "44c30360c6e8388a859a",
+    "3d5b00da6913e879ed97",
+    "6365e6567aa09095e76b",
+    "2798261d3ea6f723cbcd",
+    "3814133e4f6eef0b021b",
+    "0e3e196fe3440012e225",
+    "2991655920a8759a2cf3",
+    "20f68d13d622ab35d854",
+    "8d659c5a68ccb412d439",
+    "fe090b60ddceca05be63",
+    "e181a10e623c9aea6a76",
+    "3f65138d6c2f4382f4e4",
+    "7e65c1ff04fb18808e32",
+    "7dc5f25eb22271bd3397",
+    "b17fa6f262b44a5978a2",
+    "c745452695344e7d7e6b",
+    "e3272755d144739fc8d9",
+    "b816c11bceff1f3abb58",
+    "239db98c034eba5875cf",
+    "9750d6b519cebd65e029",
+    "1e83a3f94bafeb3c44b6",
+    "eb862035c9ec30297a2e",
+    "dccc30891af6703d9a19",
+    "f674ed27a764f88771ee",
+    "0686c986fc824f74df86",
+    "7c371c86683310ec946f",
+    "ca2b403c5d8ecf4ef15f",
+    "b4287079579f46e5f20c",
+    "988bc52e00995f14128a",
+    "6fcf36d70333107c372a",
+    "0d3da572f379627b0365",
+    "c20b880177123988076f",
+    "5da4dd480d49f20def86",
+    "1d978cfeba81f4c737f8",
+    "1197c1fd44f3cae5e7af",
+    "51a320c4228d3e563e69",
+    "eb18721cb93e73501f8b",
+    "a4db83995e5414b97cb7",
+    "5374f48573316b6e1e1e",
+    "58195c888455c8fbf5ad",
+    "530b3338da125dde09c7",
+    "902c930a4fb1772c6dd8",
+    "a5b20dbff694aaba6c32",
+    "2de0e77fddd94dbd8c0a",
+    "00488aa7ad942038c980",
+    "099ebcfda95fec715355",
+    "c0f4f74e81e2abe1db3e"
+  ],
+  "finding_scope": "Cached Brief output did not match the deterministic Monitor import. This is an import fault, not a new AI classification or a completed original-source audit.",
+  "root_cause": "Legacy policy migration preserved generated copy, then unchanged input hashes bypassed reconstruction. Input fingerprints alone did not validate the published output.",
+  "repository_correction": "Rebuild every qualified record deterministically; detect noncanonical saved output on every scheduled feed check; verify exact saved/public copy and every ordinary live government article body, date, country, source and headline.",
+  "government_ids_preserved": true,
+  "monitor_labels_changed": false,
+  "broader_historical_source_audit_complete": false,
+  "findings": [
+    {
+      "id": "53e1cfaad5e0566e4ea1",
+      "source_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/exteriores/Paginas/2026/que-es-la-30-cumbre-iberoamericana.aspx",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Spain outlines plans for AI cooperation before regional summit",
+          "summary": "Spain says countries are working on AI together ahead of the Ibero-American Summit. Plans cover shared access to data, AI tools for local languages and computer power.",
+          "body_paragraphs": [
+            "Ministers have agreed to create an Ibero-American AI alliance. It would help countries share good-quality data, build AI tools suited to their languages and needs, and pool computer power for researchers, public services and businesses.",
+            "Spain’s announcement says this work should put people first. It calls for closing gaps in access to digital technology and protecting children, teenagers and people in vulnerable situations."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Ibero-American Summit advances regional disaster response, environmental coordination, and cooperation on AI and digital sovereignty.",
+          "summary": "Spain is preparing to host the 30th Ibero-American Summit in Madrid in November 2026. Regional initiatives cover AI, disaster response, environmental sustainability, care policy, academic mobility and cooperation planning from 2027, with new networks, charters, agendas and strategies.",
+          "body_paragraphs": [],
+          "page_headline": "Ibero-American Summit advances regional disaster response, environmental coordination, and cooperation on AI and digital sovereignty."
+        },
+        "unchanged_input_fingerprint": "7abc64c6edc2a5fc3f93b2c835352f5df9f4e9e7ab682c5c707386771a1e794d"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "3090da02f395b8809131",
+      "source_url": "https://www.gov.si/novice/2026-11-12-19-redna-seja-vlade-republike-slovenije/",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Slovenia sets up a council to advise on AI",
+          "summary": "Slovenia says it has created a 48-member council on AI and digital services. The group will advise the prime minister on developing and using AI.",
+          "body_paragraphs": null,
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Slovenia establishes an AI advisory council and designates authorities to implement the European Cyber Resilience Act.",
+          "summary": "The Government established a 48-member AI and Digitalisation Council, outlined deficit-management preparations for the 2027–2028 budgets, and approved a draft law on access to cash and payment services. It also adopted a burial-area decree and made several public-sector appointments.",
+          "body_paragraphs": [],
+          "page_headline": "Slovenia establishes an AI advisory council and designates authorities to implement the European Cyber Resilience Act."
+        },
+        "unchanged_input_fingerprint": "7c5ae4d7b0963527a0bd00b577e677483be3f05319c77db72119745953240b94"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "2e8803a578995adb3b60",
+      "source_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/igualdad/Paginas/2026/121126-campana-eliminacion-violencia-genero.aspx",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Spain warns about fake sexual images made with AI",
+          "summary": "Spain has presented a campaign about AI-made sexual images shared without consent. The government calls this violence against women and urges people to take responsibility for what they share.",
+          "body_paragraphs": null,
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Spain launches a campaign warning that AI-generated sexual deepfakes enable digital violence against women.",
+          "summary": "Spain’s equality minister and gender-violence delegate presented a campaign warning that AI-generated sexual deepfakes are a form of gender-based digital violence. The campaign highlights the non-consensual use and rapid spread of women’s images, and calls for social awareness and responsibility.",
+          "body_paragraphs": [],
+          "page_headline": "Spain launches a campaign warning that AI-generated sexual deepfakes enable digital violence against women."
+        },
+        "unchanged_input_fingerprint": "37f38b09b0a15623b1ec97f5ff19f1c549a5049b45708ca5a5aefb680d64c78b"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "45c2e6222fa2bcdee437",
+      "source_url": "https://valitsus.ee/uudised/peaminister-teel-dublinisse-euroopa-otsustab-ise-oma-julgeoleku-ule",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Estonia calls for stronger and safer European AI",
+          "summary": "Estonia says European leaders will discuss how to build more AI in Europe and use it safely. Its prime minister calls for AI that people can trust and control.",
+          "body_paragraphs": null,
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Estonia’s prime minister urges unified European action on Ukraine and security, and stronger, safer European AI…",
+          "summary": "Prime Minister Kristen Michal will attend European meetings in Ireland, advocating continued support for Ukraine, pressure on Russia, and a common EU position. Discussions will also address European AI capabilities, safe use, investment, energy, and funding Ukraine’s needs next year.",
+          "body_paragraphs": [],
+          "page_headline": "Estonia’s prime minister urges unified European action on Ukraine and security, and stronger, safer European AI capabilities."
+        },
+        "unchanged_input_fingerprint": "10b13fd3253c11022dff7e972fc583edbb95e192acc93bf3660270117d864cad"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "24fdfa2b534e112c3d66",
+      "source_url": "https://gov.md/index.php/ro/comunicate-de-presa/premierul-vasile-tofan-discutii-cu-reprezentantii-bancii-mondiale",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Moldova discusses AI projects with the World Bank",
+          "summary": "Moldova says its prime minister discussed possible AI projects with the World Bank. The talks covered using new technology to help people get work done and testing new ideas in Moldova.",
+          "body_paragraphs": null,
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Moldova and the World Bank discuss AI applications and potential support for cyber resilience projects.",
+          "summary": "Prime Minister Vasile Tofan and World Bank regional director Michel Kerf discussed AI and other technologies to boost productivity, potential project financing, and opportunities to pilot innovations in Moldova. Kerf also expressed openness to considering support for cyber-resilience projects.",
+          "body_paragraphs": [],
+          "page_headline": "Moldova and the World Bank discuss AI applications and potential support for cyber resilience projects."
+        },
+        "unchanged_input_fingerprint": "0a4fabf561d4530f6ecbc5932b8d28116c2dc1ebacd7156dfe24665f15eea1e0"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "13446e75e78b5701a66c",
+      "source_url": "https://www.whitehouse.gov/briefings-statements/2026/11/presidential-message-on-critical-infrastructure-security-and-resilience-month-aa39/",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "White House links AI data centres to its infrastructure plans",
+          "summary": "The White House says it is investing in data centres for advanced AI. It says technology companies have agreed to pay for the extra power and grid upgrades their centres need, instead of passing those costs to households.",
+          "body_paragraphs": null,
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "U.S. strategy targets resilient infrastructure, domestic energy and component supply, and secure digital systems.",
+          "summary": "The message honors workers who build and protect U.S. infrastructure and outlines an America First resilience agenda: strengthen domestic supply chains and energy production, modernize infrastructure, expand AI data centers while protecting ratepayers, and improve readiness for crises.",
+          "body_paragraphs": [],
+          "page_headline": "U.S. strategy targets resilient infrastructure, domestic energy and component supply, and secure digital systems."
+        },
+        "unchanged_input_fingerprint": "6a5838e33192a5b75dbe26c38486ae8f970eeaac2e3c6f3aa7c1d0cce0283650"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "6857c69aceb6a6926df6",
+      "source_url": "https://www.gov.uk/government/news/pm-call-with-president-macron-of-france-9-november-2026",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "UK plans to make AI a priority at the G20",
+          "summary": "The UK says its prime minister discussed AI benefits and risks with France’s president. It plans to put AI high on the agenda during its 2027 G20 presidency and work on shared international standards.",
+          "body_paragraphs": null,
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "UK Prime Minister discusses AI risks, international standards and cooperation ahead of the UK’s 2027 G20…",
+          "summary": "The Prime Minister discussed AI cooperation with President Macron, highlighting AI’s potential benefits and risks, the UK’s expertise through its AI Security Institute, and plans to prioritise AI and international standards during the UK’s 2027 G20 Presidency.",
+          "body_paragraphs": [],
+          "page_headline": "UK Prime Minister discusses AI risks, international standards and cooperation ahead of the UK’s 2027 G20 Presidency."
+        },
+        "unchanged_input_fingerprint": "cbca568f08c3e3303afb2a1791c0ed46b22618ff39261b56d39b2014d3e00779"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "7b902390cebc0f5d1039",
+      "source_url": "https://valitsus.ee/uudised/valitsuse-121126-istungi-kommenteeritud-paevakord",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Estonia proposes a way to identify AI agents",
+          "summary": "Estonia has put a draft law on its agenda to give AI agents a code linked to the person they act for. The code would show when an AI system is acting on someone’s behalf.",
+          "body_paragraphs": [
+            "The government says the code would help make those actions more transparent, secure and accountable. This is a proposal, not a rule already in force."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Estonia agenda includes drinking-water safeguards, critical-service resilience, Ukraine support, and border-security information cooperation.",
+          "summary": "The Government agenda includes draft legislation on industrial emissions, repair rights, disability and parking cards, drinking water, permits, VAT, traffic rules and background checks, alongside AI codes, funding and reserve proposals, digital governance, EU housing objections and an EU–US information-sharing framework.",
+          "body_paragraphs": [],
+          "page_headline": "Estonia agenda includes drinking-water safeguards, critical-service resilience, Ukraine support, and border-security information cooperation."
+        },
+        "unchanged_input_fingerprint": "e6bd642035a338f1ce53550629e2acff4a6848dbb7ba7cad8f3de7636c1c7e77"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "cf3d6323a26683635404",
+      "source_url": "https://stm.dk/presse/pressemeddelelser/2026/europas-sikkerhed-er-oeverst-paa-dagsordenen-til-topmoede-i-dublin/",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Denmark puts AI high on European leaders’ agenda",
+          "summary": "Denmark says AI is at the top of the agenda for an informal meeting of European Union leaders in Dublin. Its prime minister is due to attend.",
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Denmark’s prime minister calls for stronger European support for Ukraine amid Russian and hybrid attacks.",
+          "summary": "Prime Minister Mette Frederiksen is travelling to Dublin for the ninth EPC meeting, where defence, security and hybrid threats are in focus. She will co-moderate a discussion on defending democratic Europe. Her Ireland visit also includes an informal European Council meeting focused on artificial intelligence.",
+          "page_headline": "Denmark’s prime minister calls for stronger European support for Ukraine amid Russian and hybrid attacks."
+        },
+        "unchanged_input_fingerprint": "0db183ec4f92cef4b79c5994359e982910c321c6dd364975101610753d9c9c3b"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "a96a39fbd0e8d7c460b7",
+      "source_url": "https://valitsus.ee/uudised/valitsuse-kabinetinoupidamise-paevakord-10-november-2026",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Estonia reviews AI use in ambulance and family doctor software",
+          "summary": "Estonia’s government heard a briefing on AI being introduced to ambulance and family doctor software. It also discussed a draft code to identify AI agents acting for people.",
+          "body_paragraphs": [
+            "The proposed code would be linked to a person, so it would be clear when an AI agent acts on that person’s behalf. The healthcare briefing concerned the eKiirabi and PAI software systems."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Estonia’s agenda addresses fuel-price pressures on public transport, AI accountability, healthcare AI, and youth nicotine risks.",
+          "summary": "The Cabinet agenda covers fuel-price impacts on public transport, Estonia–US memorandum negotiations, support for Estonian candidates for senior international roles, AI agent codes and healthcare, electricity-price support for large consumers, tobacco legislation, and use of earmarked Government reserve funds.",
+          "body_paragraphs": [],
+          "page_headline": "Estonia’s agenda addresses fuel-price pressures on public transport, AI accountability, healthcare AI, and youth nicotine risks."
+        },
+        "unchanged_input_fingerprint": "29cffcfb6a9ee8bdcd1b62d82a94cc6f6cd3a59e792e32dfa73dac1d9cf1123d"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "d1c9f78c8bfc011634f1",
+      "source_url": "https://www.govern.ad/ca/w/andorra-business-duplica-els-incentius-a-la-recerca-i-el-desenvolupament-i-destina-un-milio-d-euros-a-10-projectes-empresarials",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Andorra funds projects using AI for drones and local language tools",
+          "summary": "Andorra says its business agency awarded €1 million across 10 research projects. Several use AI, including drones that inspect ski facilities and a tool designed to work in Catalan.",
+          "body_paragraphs": [
+            "One project would use AI to guide drones and spot possible problems in images. Another aims to match firms with students and training providers. The Catalan-language tool is being developed for translation, legal advice and business paperwork."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Andorra Business awards €1 million to company R&D projects, including work on antibiotic resistance, water monitoring…",
+          "summary": "Andorra Business awarded €1 million to 10 of 30 applicant local R&D projects across sectors including health, construction, water monitoring, sports technology, drones, retail analytics, language AI and cosmetics, supporting skilled jobs and products and services for wider markets.",
+          "body_paragraphs": [],
+          "page_headline": "Andorra Business awards €1 million to company R&D projects, including work on antibiotic resistance, water monitoring and infrastructure inspection."
+        },
+        "unchanged_input_fingerprint": "0887e3ce76648a1a3162bf7309771e21f11afc6d5b068692a5d826a0a1d7063c"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "da239373635d2d24ab50",
+      "source_url": "https://gov.md/index.php/ro/comunicate-de-presa/premierul-vasile-tofan-la-reuniunea-platformei-pentru-conectivitate-digitala",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Moldova plans a data centre to support AI work",
+          "summary": "Moldova says it is preparing a secure data centre that could support AI work and online public services. Its prime minister also called for using AI to help defend government systems from cyberattacks.",
+          "body_paragraphs": [
+            "The data centre is being planned with support from the European Commission and Sweden’s development finance agency. The government says it would provide secure storage and support future AI capabilities."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Moldova reports a cyberattack on government infrastructure and plans secure data infrastructure to strengthen digital resilience.",
+          "summary": "Moldova hosted the first Digital Connectivity Platform meeting, where leaders discussed secure digital infrastructure, cybersecurity, AI and regional cooperation. Announced initiatives include EU-funded Wi-Fi access in at least 30 localities and preparation of a secure, resilient data centre project.",
+          "body_paragraphs": [],
+          "page_headline": "Moldova reports a cyberattack on government infrastructure and plans secure data infrastructure to strengthen digital resilience."
+        },
+        "unchanged_input_fingerprint": "a94228b0f53c20dc6434d3106db5fd37f40959019583f510598d9c5b149c934c"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "a43e7da9674e581e716f",
+      "source_url": "https://vlada.gov.cz/cz/media-centrum/aktualne/vlada-schvalila-strategicke-investice-do-zdravotnictvi-nebo-navrh-na-posileni-ochrany-domacnosti-pred-vysokymi-cenami-energii-229987/",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Czechia creates a government council on AI",
+          "summary": "Czechia’s government says it has created a council on AI. The prime minister will chair it, with industry and trade officials helping to run it.",
+          "body_paragraphs": [
+            "The prime minister said Europe needs to compete in using AI and pay attention to safety. The industry and trade minister will be the council’s first deputy chair, and the government’s AI envoy its executive deputy chair."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Czech government proposes energy-price intervention powers, drone protections for critical infrastructure, and an AI council.",
+          "summary": "The Czech Government approved a CZK 68.62 billion healthcare investment plan for 2028–2034, established an AI council and approved the Prime Minister’s mandate for an informal EU leaders’ meeting in Dublin. It also discussed energy, legal, infrastructure, healthcare digitalisation, agricultural subsidies and audit findings.",
+          "body_paragraphs": [],
+          "page_headline": "Czech government proposes energy-price intervention powers, drone protections for critical infrastructure, and an AI council."
+        },
+        "unchanged_input_fingerprint": "dcf66e6031ee3d80ee6f04bfa97ec747fcdaa2c2a047147b251539080ebc25fd"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "b871dc3f647afa076b94",
+      "source_url": "https://valitsus.ee/uudised/peaminister-michal-euroopa-julgeolekukorraldust-ei-hakata-venemaa-soovil-umber-tegema",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Estonia urges Europe to lead AI safety and growth",
+          "summary": "Estonia announced plans to invest in Europe’s AI sector and tighten risk controls. The Dublin meeting also focused on how to monitor and guide powerful AI models across the EU.",
+          "body_paragraphs": [
+            "The Estonian Prime Minister stressed that Europe must invest capital, data, and computing power to grow its AI industry, while keeping the most capable models under human supervision and testing. The plan calls for coordinated EU investments, trusted partners, and clear rules to curb risks.",
+            "Specific steps include accelerating European AI companies, expanding robotics, autonomous transport, and health tech, and ensuring governance of models used across member states."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Estonia pledges €6.5 million in support for Ukraine as leaders discuss war, European security, and AI…",
+          "summary": "At the Dublin European Council meeting, Estonia’s Prime Minister urged leaders to focus on supporting Ukraine rather than discussing changes to Europe’s security arrangements, and announced €6.5 million in additional aid. Leaders also discussed strengthening Europe’s AI sector, investment and oversight of powerful models.",
+          "body_paragraphs": [],
+          "page_headline": "Estonia pledges €6.5 million in support for Ukraine as leaders discuss war, European security, and AI dependence."
+        },
+        "unchanged_input_fingerprint": "2fe9d6663c7c8606d8f70046cfb7a6417cf9aab5502c7a0152aee85b0d0ebc4a"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "2e9209c789b945feca67",
+      "source_url": "https://www.govern.ad/ca/w/la-segona-setmana-de-la-recerca-apropa-la-ciencia-a-la-ciutadania-amb-setze-activitats",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Andorra to spotlight artificial intelligence during 2nd Research Week",
+          "summary": "Andorra's 2nd Research Week (Nov 16–21) will feature AI among its activities. The program includes debates, workshops, and lectures on risks, education, and business applications.",
+          "body_paragraphs": [
+            "AI will be another main feature of this edition, with proposals about algorithm biases, its use in education, and applications to business and tourism.",
+            "The 2nd Setmana de la Recerca d’Andorra runs 16–21 November, organized by the government and universities, with sixteen activities from ten institutions."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Andorra Research Week includes sessions on preventing and anticipating natural hazards.",
+          "summary": "Andorra’s 2nd Research Week, held from 16 to 21 November, features sixteen activities organised with ten institutions. Its programme covers natural hazards, AI, health, public policy and biodiversity through debates, workshops, lectures and field activities.",
+          "body_paragraphs": [],
+          "page_headline": "Andorra Research Week includes sessions on preventing and anticipating natural hazards."
+        },
+        "unchanged_input_fingerprint": "eab77d8879bbfa5821d770178fa95a386f1895e9b708a8528801ca41e66a0bf8"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "d62cd63cbf144b067375",
+      "source_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/031126-alianza-iberoamericana-ia.aspx",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Spain leads Ibero-American AI Alliance for regional data and models",
+          "summary": "Spain announces that Ibero-American ministers will form a voluntary AI Alliance. The plan focuses on data access, language-enabled models, and computing resources, while upholding digital rights and regional cooperation.",
+          "body_paragraphs": [
+            "The announcement describes a regional, voluntary alliance to safeguard digital sovereignty and enable shared AI development in Ibero-America.",
+            "It calls for three axes: data access with guardrails, development of language-adapted AI models, and collaboration on computing capacities, plus a federated data space to share information under national controls."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Ibero-American countries agree to develop sovereign, regionally adapted AI and coordinate on data, computing and digital…",
+          "summary": "Ibero-American ministers agreed in Madrid to establish a voluntary AI Alliance focused on data cooperation, regionally relevant models and computing access, while advancing the digital rights charter and discussing digital rights, child protection, connectivity, cybersecurity and digital government.",
+          "body_paragraphs": [],
+          "page_headline": "Ibero-American countries agree to develop sovereign, regionally adapted AI and coordinate on data, computing and digital safeguards."
+        },
+        "unchanged_input_fingerprint": "6fab1ca4e901cda48fc21e8ac5f133c1bf16de79d3a37a5694d065adc9f141d3"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "77e1a6b9b6b09a89c95d",
+      "source_url": "https://www.lamoncloa.gob.es/serviciosdeprensa/notasprensa/transformacion-digital-y-funcion-publica/Paginas/2026/031126-foro-digital-iberoamericano.aspx",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Spain to foster sovereign, ethical AI and Iberian alliance at Madrid Forum",
+          "summary": "Spain's forum opens to discuss digital rights, cybersecurity, and AI. The minister calls for a sovereign, ethical, trustworthy AI and an Iberian alliance, guiding regional AI development in Spanish and Portuguese.",
+          "body_paragraphs": [
+            "Óscar López argues for a third, humanist digital path and the creation of the Madrid Declaration and the Iberian AI Alliance to converge on a sovereign, ethical, and trustworthy AI.",
+            "The official plan highlights developing AI models in Spanish and Portuguese and launching the EU-Latin America-Caribbean Supercomputing Network by 2025 as next steps, with the forum framing digital transformation as a central policy pillar."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Ibero-American forum promotes sovereign AI and digital capacity while addressing cybersecurity and digital rights.",
+          "summary": "Spain’s digital transformation minister opened the Ibero-American Digital Forum in Madrid. Participants discussed digital rights, cybersecurity, connectivity, digital government and AI, emphasizing regional cooperation and sovereign, ethical, trustworthy AI rooted in Ibero-American languages, data and priorities.",
+          "body_paragraphs": [],
+          "page_headline": "Ibero-American forum promotes sovereign AI and digital capacity while addressing cybersecurity and digital rights."
+        },
+        "unchanged_input_fingerprint": "d16c1c4d9f341498ad808ab3b8001eed0a6136d1bc02a11c6094575aa61f1853"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "fb977480d066a57c4091",
+      "source_url": "https://www.stjornarradid.is/efst-a-baugi/frettir/stok-frett/born-fa-aukna-fraedslu-um-gervigreind-og-netoryggi",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Iceland backs Netvís to boost AI safety and literacy",
+          "summary": "Iceland will fund Netvís for three years, adding to EU money to expand AI and media literacy, online safety, and child protection efforts. The plan strengthens education and awareness of AI risks for youths.",
+          "body_paragraphs": [
+            "Iceland will provide additional funding for Netvís over three years, pairing ISK support with EU Digital Europe funds to expand education and prevention on AI, media literacy, and online safety for children and teens.",
+            "Netvís will focus on boosting digital literacy, monitoring online safety risks, and coordinating with EU partners to strengthen child protection related to artificial intelligence and online content."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Iceland funds expanded online-safety education and prevention for children, including responses to AI-related challenges.",
+          "summary": "Iceland’s Ministry of Culture, Innovation and Higher Education will support Netvís for three years, providing an additional ISK 20 million annually alongside EU funding to expand education and prevention on AI and media literacy, online safety, and risks affecting children and young people.",
+          "body_paragraphs": [],
+          "page_headline": "Iceland funds expanded online-safety education and prevention for children, including responses to AI-related challenges."
+        },
+        "unchanged_input_fingerprint": "f25f81e43402e901ed274015e3340c4d5897c665b02c13039a7d401585c27dc4"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    },
+    {
+      "id": "80f6f5ac212fb70d7d3e",
+      "source_url": "https://www.govern.ad/ca/w/andorra-acollira-la-conferencia-intercultural-del-centre-nord-sud-sobre-el-dialeg-intercultural-en-l-era-de-la-intel-ligencia-artificial-del-consell-d-europa",
+      "fault_type": "import",
+      "published_fields": [
+        "headline",
+        "summary",
+        "body_paragraphs",
+        "page_headline"
+      ],
+      "evidence": {
+        "cached_before": {
+          "headline": "Andorra to host AI-focused intercultural dialogue conference",
+          "summary": "Andorra will host a Council of Europe conference on intercultural dialogue and AI, emphasizing education for democratic, inclusive digital societies. The event will bring together Europe, Africa, and the Middle East to discuss AI opportunities, challenges, and governance within a human rights framework.",
+          "body_paragraphs": [
+            "The conference will take place on November 3–4, 2026, with final remarks by the ministers responsible for External Affairs and Digital Transition.",
+            "It will examine how education can prepare people to engage critically and responsibly with AI, stressing human rights, democratic citizenship, and intercultural cooperation; sessions will explore governance, transparency, and inclusivity in AI systems."
+          ],
+          "page_headline": null
+        },
+        "monitor_derived_after": {
+          "headline": "Andorra hosts Council of Europe conference on AI, democratic education and intercultural dialogue globally.",
+          "summary": "Andorra will host the Council of Europe's North-South Centre conference on intercultural dialogue and AI, focusing on education for democratic, inclusive digital societies. The event will foster dialogue among Europe, Africa, and the Middle East, addressing AI's opportunities, challenges, and governance in a human rights…",
+          "body_paragraphs": [
+            "Andorra will host the Council of Europe's North-South Centre conference on intercultural dialogue and AI, focusing on education for democratic, inclusive digital societies. The event will foster dialogue among Europe, Africa, and the Middle East, addressing AI's opportunities, challenges, and governance in a human rights framework."
+          ],
+          "page_headline": "Andorra hosts Council of Europe conference on AI, democratic education and intercultural dialogue globally."
+        },
+        "unchanged_input_fingerprint": "f94d6e5259bd456cd64e2180a15b6f16bddf4439f50c33bc10c5ee71cefa28cb"
+      },
+      "correction": "Regenerate the saved Brief copy mechanically from the current qualified Monitor record; keep ID and existing URL."
+    }
+  ]
+}
