@@ -128,7 +128,8 @@
           if (!key) return;
           const counts = {};
           node.querySelectorAll('[data-metric]').forEach(n => {
-            if (/^[\d, .]+$/.test(n.textContent.trim())) counts['shown_' + n.dataset.metric] = Number(n.textContent.replace(/\D/g, ''));
+            const metric = n.dataset.metric === 'page_views' ? 'views' : n.dataset.metric;
+            if (/^[\d, .]+$/.test(n.textContent.trim())) counts['shown_' + metric] = Number(n.textContent.replace(/\D/g, ''));
           });
           observed.add(stamp);
           const position = [...document.querySelectorAll('[data-story-card]')].filter(visible).indexOf(node) + 1;

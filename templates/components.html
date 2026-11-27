@@ -4,7 +4,7 @@
 {%- endmacro %}
 {% macro actions(item, full=false) -%}
 <div class="public-metrics" data-public-metrics="{{ item.key }}" aria-label="Public readership and engagement" hidden>
-<span hidden><strong data-metric="views"></strong> views</span><span hidden><strong data-metric="likes"></strong> likes</span><span hidden><strong data-metric="comments"></strong> comments</span><span hidden><strong data-metric="shares"></strong> share actions</span><span hidden><strong data-metric="saves"></strong> account saves</span><span hidden><strong data-metric="reads"></strong> engaged reads (7d)</span><a href="{{ local('privacy/index.html') }}#public-counts" aria-label="How these numbers are measured">ⓘ</a>
+{% if item.kind in ('weekly_news', 'weekly_research') %}<span hidden><strong data-metric="views"></strong> reading views</span>{% else %}<span hidden><strong data-metric="page_views"></strong> page views (30d)</span>{% endif %}<span hidden><strong data-metric="likes"></strong> likes</span><span hidden><strong data-metric="comments"></strong> comments</span><span hidden><strong data-metric="shares"></strong> share actions</span><span hidden><strong data-metric="saves"></strong> account saves</span><span hidden><strong data-metric="reads"></strong> engaged reads (7d)</span><a href="{{ local('privacy/index.html') }}#public-counts" aria-label="How these numbers are measured">ⓘ</a>
 </div>
 <div class="story-actions" data-key="{{ item.key }}">
 <button data-action="like" data-key="{{ item.key }}" aria-pressed="false"><span aria-hidden="true">♡</span> Like <span data-like-count="{{ item.key }}" hidden></span></button>
