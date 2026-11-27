@@ -22,17 +22,21 @@ BRIEF = (os.environ.get('BRIEF_SITE_URL') or
          json.loads((ROOT / 'config/site.json').read_text()).get('site_url') or
          'https://brief.hamelberg-ai.com').rstrip('/') + '/'
 MAX_SNAPSHOT_BYTES = 25_000_000
+HELD_ISSUE_TITLE = 'Government AI labels held for source review'
 
 
 class GovernmentCards(HTMLParser):
     def __init__(self):
         super().__init__()
         self.cards = []
+        self.sync = None
 
     def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == 'p' and attributes.get('id') == 'government-sync':
+            self.sync = attributes
         if tag != 'article':
             return
-        attributes = dict(attrs)
         if 'government-card' in attributes.get('class', '').split():
             self.cards.append((attributes.get('data-key'), attributes.get('data-date')))
 
@@ -51,6 +55,8 @@ def verify(snapshot, state, public, html):
         raise ValueError('Monitor government snapshot is invalid')
     if state.get('policy') != POLICY:
         raise ValueError('Saved Brief government import policy is stale')
+    if state.get('monitor_as_of') != snapshot['as_of']:
+        raise ValueError('Brief government import has not checked the latest Monitor snapshot')
     expected = {}
     for item in snapshot['items']:
         ident = str(item.get('id') or '')
@@ -89,14 +95,21 @@ def verify(snapshot, state, public, html):
             raise ValueError(f"Live Brief {item['id']} has a stale full headline")
     parser = GovernmentCards()
     parser.feed(html)
+    if not parser.sync or parser.sync.get('data-monitor-as-of') != state['monitor_as_of'] or parser.sync.get('data-last-checked') != state.get('last_checked_at'):
+        raise ValueError('Live Governments say page does not show the saved Monitor check time')
     card_keys = {item['key']: item['date'] for item in governments}
     same_ids('Live Governments say cards', [key for key, _ in parser.cards], card_keys)
     for key, day in parser.cards:
         if day != card_keys[key]:
             raise ValueError(f'Live Governments say card {key} has a stale date')
+    held = [item for item in snapshot['items']
+            if 'artificial_intelligence' in (item.get('topics') or [])
+            and item.get('classification_status') == 'needs_review']
     return {'monitor_as_of': snapshot['as_of'], 'monitor_eligible': len(expected),
             'brief_saved': len(records), 'brief_live_data': len(governments),
             'brief_live_cards': len(parser.cards),
+            'monitor_ai_held_for_review': len(held),
+            'held_ids': [str(item['id']) for item in held],
             'external_benchmarks': {code: sum(item.get('country_code') == code for item in expected.values())
                                     for code in ('US', 'CA', 'CN')}}
 
@@ -162,6 +175,47 @@ def get(session, url, *, max_bytes=None):
     return response
 
 
+def sync_held_issue(snapshot):
+    """Keep one GitHub issue for unpublished AI labels; unchanged holds are quiet."""
+    token, repo = os.environ.get('GITHUB_TOKEN'), os.environ.get('GITHUB_REPOSITORY')
+    if not token or not repo:
+        return
+    held = sorted((item for item in snapshot['items']
+                   if 'artificial_intelligence' in (item.get('topics') or [])
+                   and item.get('classification_status') == 'needs_review'),
+                  key=lambda item: str(item.get('id') or ''))
+    base = f'https://api.github.com/repos/{repo}/issues'
+    with requests.Session() as session:
+        session.headers.update({'Authorization': f'Bearer {token}',
+                                'Accept': 'application/vnd.github+json'})
+        issue = None
+        for page in range(1, 11):
+            response = session.get(base, params={'state': 'open', 'per_page': 100, 'page': page}, timeout=20)
+            response.raise_for_status()
+            rows = response.json()
+            issue = next((row for row in rows if row.get('title') == HELD_ISSUE_TITLE
+                          and 'pull_request' not in row), None)
+            if issue or len(rows) < 100:
+                break
+        if not held:
+            if issue:
+                response = session.patch(issue['url'], json={'state': 'closed', 'state_reason': 'completed'}, timeout=20)
+                response.raise_for_status()
+            return
+        lines = ['These Monitor records carry an AI label but remain unpublished because Monitor marked them `needs_review`.',
+                 'Review each complete original source before changing its label or published copy. The Brief must not make a second AI judgment.', '']
+        for item in held:
+            lines.append(f"- `{item['id']}` · {item.get('country_code', '?')} · {item.get('published_date') or str(item.get('published_at') or '')[:10]} · {item.get('url', '')}")
+        body = '\n'.join(lines) + '\n'
+        if issue:
+            if issue.get('body') != body:
+                response = session.patch(issue['url'], json={'body': body}, timeout=20)
+                response.raise_for_status()
+        else:
+            response = session.post(base, json={'title': HELD_ISSUE_TITLE, 'body': body}, timeout=20)
+            response.raise_for_status()
+
+
 def main():
     error = None
     for attempt in range(5):
@@ -172,6 +226,9 @@ def main():
                 public = get(session, urljoin(BRIEF, 'data/current.json')).json()
                 html = get(session, urljoin(BRIEF, 'governments-say/')).text
             report = verify(snapshot, state, public, html)
+            sync_held_issue(snapshot)
+            if report['monitor_ai_held_for_review']:
+                print(f"::warning::{report['monitor_ai_held_for_review']} AI-labelled Monitor announcements are held for source review and correctly absent from the Brief; IDs: {', '.join(report['held_ids'])}")
             report['live_article_routes_verified'] = verify_article_routes(state, public)
             report['checked_at'] = datetime.now(timezone.utc).isoformat()
             print(json.dumps(report, indent=2))
@@ -180,7 +237,8 @@ def main():
                     summary.write(f"Government coverage: {report['monitor_eligible']} Monitor eligible, "
                                   f"{report['brief_saved']} Brief saved, {report['brief_live_data']} Brief data, "
                                   f"{report['brief_live_cards']} live cards; "
-                                  f"{report['live_article_routes_verified']} article bodies and sources verified.\n")
+                                  f"{report['live_article_routes_verified']} article bodies and sources verified; "
+                                  f"{report['monitor_ai_held_for_review']} AI-labelled Monitor items held for source review.\n")
             return
         except (ValueError, KeyError, TypeError, requests.RequestException) as exc:
             error = exc
