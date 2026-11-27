@@ -55,8 +55,9 @@ def verify(snapshot, state, public, html):
         raise ValueError('Monitor government snapshot is invalid')
     if state.get('policy') != POLICY:
         raise ValueError('Saved Brief government import policy is stale')
-    if state.get('monitor_as_of') != snapshot['as_of']:
-        raise ValueError('Brief government import has not checked the latest Monitor snapshot')
+    # Monitor's scheduled site builds advance as_of even when every government
+    # record is unchanged. The exact ID, fingerprint, copy and live-page checks
+    # below decide whether the Brief has imported all eligible content.
     expected = {}
     for item in snapshot['items']:
         ident = str(item.get('id') or '')
@@ -105,7 +106,10 @@ def verify(snapshot, state, public, html):
     held = [item for item in snapshot['items']
             if 'artificial_intelligence' in (item.get('topics') or [])
             and item.get('classification_status') == 'needs_review']
-    return {'monitor_as_of': snapshot['as_of'], 'monitor_eligible': len(expected),
+    return {'monitor_as_of': snapshot['as_of'],
+            'brief_import_as_of': state.get('monitor_as_of'),
+            'snapshot_timestamp_only_advance': state.get('monitor_as_of') != snapshot['as_of'],
+            'monitor_eligible': len(expected),
             'brief_saved': len(records), 'brief_live_data': len(governments),
             'brief_live_cards': len(parser.cards),
             'monitor_ai_held_for_review': len(held),
