@@ -4547,6 +4547,120 @@
       "url_slug_version": 1
     },
     {
+      "id": "69812e5686d44e2f41e0",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/agriculture-agri-food/news/2026/11/backgrounder-secretary-of-state-buckley-belanger-announces-funding-for-saskatchewan-based-agricultural-projects.html",
+      "date": "2026-11-23",
+      "headline": "Canada funds geographic AI tools for fungicide decisions within Saskatchewan agriculture grants.",
+      "page_headline": "Canada funds geographic AI tools for fungicide decisions within Saskatchewan agriculture grants.",
+      "summary": "Canada announced up to $15.8 million for 27 Saskatchewan agriculture projects. A $2.3958 million project by Super GeoAI Technology aims to develop geographic AI tools that guide fungicide use against Fusarium head blight. Other grants include an Indigenous-led food-sovereignty project.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9d5f7a75b8ed6c93dcb48cb9dacc83ed94ae5be158e93ac85ed82b2aa69cc3cb",
+      "page_description": "Canada announced up to $15.8 million for 27 Saskatchewan agriculture projects.",
+      "announcement_paragraphs": [
+        "Canada announced up to $15.8 million for 27 Saskatchewan agriculture projects. A $2.3958 million project by Super GeoAI Technology aims to develop geographic AI tools that guide fungicide use against Fusarium head blight. Other grants include an Indigenous-led food-sovereignty project."
+      ],
+      "key": "event:644706a5-d315-5c24-898e-d0d0026d1060",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canada-funds-geographic-ai-tools-fungicide-agriculture-grants",
+      "path": "story/canada-funds-geographic-ai-tools-fungicide-agriculture-grants/index.html",
+      "deck": "Canada announced up to $15.8 million for 27 Saskatchewan agriculture projects. A $2.3958 million project by Super GeoAI Technology aims to develop geographic AI tools that guide fungicide use against Fusarium head blight. Other grants include an Indigenous-led food-sovereignty project.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/agriculture-agri-food/news/2026/11/backgrounder-secretary-of-state-buckley-belanger-announces-funding-for-saskatchewan-based-agricultural-projects.html",
+          "date": "2026-11-23",
+          "language": ""
+        }
+      ],
+      "display_date": "23 Nov 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-644706a5-d315-5c24-898e-d0d0026d1060/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "08a552c40418815c07e0",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/competition-bureau/news/2026/11/study-on-the-use-of-artificial-intelligence-in-algorithmic-pricing.html",
+      "date": "2026-11-23",
+      "headline": "Canada’s Competition Bureau examines AI-enabled pricing risks and enforcement under competition law.",
+      "page_headline": "Canada’s Competition Bureau examines AI-enabled pricing risks and enforcement under competition law.",
+      "summary": "Canada’s Competition Bureau says AI-enabled pricing can help firms adjust prices but may also facilitate coordination or harm consumers. It cites consultations and investigations involving rental software and gas-station data and says it will assess conduct under competition law.",
+      "body_paragraphs": [],
+      "input_fingerprint": "41ebd2ef500018800a130486b4ae80d6a5c97c78626ac74dfe006b3ddf913bbb",
+      "page_description": "Canada’s Competition Bureau says AI-enabled pricing can help firms adjust prices but may also facilitate coordination or harm consumers.",
+      "announcement_paragraphs": [
+        "Canada’s Competition Bureau says AI-enabled pricing can help firms adjust prices but may also facilitate coordination or harm consumers. It cites consultations and investigations involving rental software and gas-station data and says it will assess conduct under competition law."
+      ],
+      "key": "event:4b29cedf-a713-50a0-a552-ac7cdb1098ca",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canadas-competition-bureau-examines-ai-enabled-pricing-competition-law",
+      "path": "story/canadas-competition-bureau-examines-ai-enabled-pricing-competition-law/index.html",
+      "deck": "Canada’s Competition Bureau says AI-enabled pricing can help firms adjust prices but may also facilitate coordination or harm consumers. It cites consultations and investigations involving rental software and gas-station data and says it will assess conduct under competition law.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/competition-bureau/news/2026/11/study-on-the-use-of-artificial-intelligence-in-algorithmic-pricing.html",
+          "date": "2026-11-23",
+          "language": ""
+        }
+      ],
+      "display_date": "23 Nov 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-4b29cedf-a713-50a0-a552-ac7cdb1098ca/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Thus Spake Zarathustra",
       "content_fingerprint": "b02495ef65cad16150bea8b070f4fea285a74a36c677710dcb900680e8ca2be1",
       "creator": "Friedrich Nietzsche",
@@ -27254,6 +27368,62 @@
       "url_slug_version": 1
     },
     {
+      "id": "db37bc46607aac74ec5a",
+      "country": "Moldova",
+      "country_code": "MD",
+      "url": "https://gov.md/ro/comunicate-de-presa/premierul-vasile-tofan-la-reuniunea-platformei-pentru-conectivitate-digitala",
+      "date": "2026-11-09",
+      "headline": "Moldova proposes AI-supported cyber protection and a data centre for AI capacity.",
+      "page_headline": "Moldova proposes AI-supported cyber protection and a data centre for AI capacity.",
+      "summary": "Moldova and EU partners discussed secure connectivity after a government cyberattack. The prime minister proposed AI in stronger cyber protection, while a planned resilient data centre would support AI and cloud capacity. The EU also announced secure Wi-Fi funding for at least 30 localities.",
+      "body_paragraphs": [],
+      "input_fingerprint": "cb3201a6649c7b4648ef5ab169fce43f3719c6b81bac0ad262a02e5e0374c346",
+      "page_description": "Moldova and EU partners discussed secure connectivity after a government cyberattack.",
+      "announcement_paragraphs": [
+        "Moldova and EU partners discussed secure connectivity after a government cyberattack. The prime minister proposed AI in stronger cyber protection, while a planned resilient data centre would support AI and cloud capacity. The EU also announced secure Wi-Fi funding for at least 30 localities."
+      ],
+      "key": "event:9451f4e8-d09a-558d-8b8a-e9cbc9031a2c",
+      "kind": "news",
+      "section": "governments",
+      "slug": "moldova-proposes-ai-supported-cyber-protection-data-ai-capacity",
+      "path": "story/moldova-proposes-ai-supported-cyber-protection-data-ai-capacity/index.html",
+      "deck": "Moldova and EU partners discussed secure connectivity after a government cyberattack. The prime minister proposed AI in stronger cyber protection, while a planned resilient data centre would support AI and cloud capacity. The EU also announced secure Wi-Fi funding for at least 30 localities.",
+      "publisher": "Government of Moldova",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Moldova",
+          "headline": "Official government announcement",
+          "url": "https://gov.md/ro/comunicate-de-presa/premierul-vasile-tofan-la-reuniunea-platformei-pentru-conectivitate-digitala",
+          "date": "2026-11-09",
+          "language": ""
+        }
+      ],
+      "display_date": "9 Nov 2026",
+      "markets": [],
+      "market_label": "Moldova",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-9451f4e8-d09a-558d-8b8a-e9cbc9031a2c/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "book_title": "Thus Spake Zarathustra",
       "content_fingerprint": "cf0bb56dafef888019abb42bffc7834868633dad461767ec4c897c494abd28ab",
       "creator": "Friedrich Nietzsche",
@@ -35836,7 +36006,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-27T17:43:30.296280+00:00",
+      "affiliation_checked_at": "2026-11-27T17:47:14.553759+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
@@ -63183,6 +63353,63 @@
       "url_slug_version": 1
     },
     {
+      "id": "dee60a2b123b2fe5f44a",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/competition-bureau/news/2026/10/building-an-economy-that-can-bounce-forward.html",
+      "date": "2026-10-15",
+      "headline": "Canada’s Competition Bureau says AI raises competition and security questions while markets need room for challengers.",
+      "page_headline": "Canada’s Competition Bureau says AI raises competition and security questions while markets need room for challengers.",
+      "summary": "Interim Commissioner Jeanne Pratt says competition supports Canada’s resilience, innovation and adaptability. The Bureau advances these goals through guidance, enforcement, merger challenges and barrier removal, including in grocery supply chains and AI, while balancing security and investment priorities with domestic competition.",
+      "body_paragraphs": [],
+      "input_fingerprint": "a98526134a19cc6af2ced03de9fbc2a3b1e2d93487c21ae1e1bf8d07be08f343",
+      "page_description": "Interim Commissioner Jeanne Pratt says competition supports Canada’s resilience, innovation and adaptability.",
+      "announcement_paragraphs": [
+        "Interim Commissioner Jeanne Pratt says competition supports Canada’s resilience, innovation and adaptability. The Bureau advances these goals through guidance, enforcement, merger challenges and barrier removal, including in grocery supply chains and AI, while balancing security and investment priorities with domestic competition."
+      ],
+      "key": "event:763acdbc-7c3f-55e8-90fb-0b2c8b86f3f1",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canadas-competition-bureau-ai-raises-competition-room-challengers",
+      "path": "story/canadas-competition-bureau-ai-raises-competition-room-challengers/index.html",
+      "deck": "Interim Commissioner Jeanne Pratt says competition supports Canada’s resilience, innovation and adaptability. The Bureau advances these goals through guidance, enforcement, merger challenges and barrier removal, including in grocery supply chains and AI, while balancing security and investment priorities with domestic competition.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/competition-bureau/news/2026/10/building-an-economy-that-can-bounce-forward.html",
+          "date": "2026-10-15",
+          "language": ""
+        }
+      ],
+      "display_date": "15 Oct 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-763acdbc-7c3f-55e8-90fb-0b2c8b86f3f1/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "2bbd3ded0b077528f13570bc30c0e99112e2f46a4284156f402f3a7f4f7aa702",
       "creator": "Po Chu-i",
       "creator_origin": "Chinese",
@@ -83613,6 +83840,63 @@
       "show_feed_photo": false,
       "legacy_paths": [
         "story/government-6cf4c96a-0752-5653-8ea5-296e10b068d1/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "9f3589568482cbd7be76",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/communications-security/news/2026/10/statement-by-the-minister-of-national-defence-on-the-start-of-cyber-month-2026.html",
+      "date": "2026-10-01",
+      "headline": "Canada’s Cyber Month warns of AI-assisted phishing and urges basic online security habits.",
+      "page_headline": "Canada’s Cyber Month warns of AI-assisted phishing and urges basic online security habits.",
+      "summary": "Canada’s defence minister says cybercriminals use AI to make phishing messages and scams more convincing. Launching Cyber Month, he urges stronger passwords, multifactor authentication and scam awareness as part of national cyber resilience.",
+      "body_paragraphs": [],
+      "input_fingerprint": "e6ec0a67ff27b1a2519eab7fbe3cbc1205cd6fc64d0acec5cd99a8730898b4a8",
+      "page_description": "Canada’s defence minister says cybercriminals use AI to make phishing messages and scams more convincing.",
+      "announcement_paragraphs": [
+        "Canada’s defence minister says cybercriminals use AI to make phishing messages and scams more convincing. Launching Cyber Month, he urges stronger passwords, multifactor authentication and scam awareness as part of national cyber resilience."
+      ],
+      "key": "event:7627cc77-c710-53dc-b2b3-a71c5526a2a0",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canadas-cyber-month-warns-ai-assisted-phishing-security-habits",
+      "path": "story/canadas-cyber-month-warns-ai-assisted-phishing-security-habits/index.html",
+      "deck": "Canada’s defence minister says cybercriminals use AI to make phishing messages and scams more convincing. Launching Cyber Month, he urges stronger passwords, multifactor authentication and scam awareness as part of national cyber resilience.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/communications-security/news/2026/10/statement-by-the-minister-of-national-defence-on-the-start-of-cyber-month-2026.html",
+          "date": "2026-10-01",
+          "language": ""
+        }
+      ],
+      "display_date": "1 Oct 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-10",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "show_feed_photo": false,
+      "legacy_paths": [
+        "story/government-7627cc77-c710-53dc-b2b3-a71c5526a2a0/index.html"
       ],
       "url_slug_version": 1
     },
