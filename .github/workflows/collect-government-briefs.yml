@@ -12,7 +12,9 @@ on:
     - cron: '45 14 * * *'
     - cron: '45 15 * * *'
   workflow_run:
-    workflows: ['Build and Publish AIEO Brief']
+    # The externally dispatched saved-news checkpoint runs every 15 minutes and
+    # wakes this feed check when GitHub's own schedule is delayed or skipped.
+    workflows: ['Build and Publish AIEO Brief', 'Publish Saved News Checkpoints']
     types: [completed]
     branches: [main]
   workflow_dispatch:
