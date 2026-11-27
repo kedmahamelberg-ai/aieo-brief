@@ -55,7 +55,9 @@ await db.query('select public.brief_community_maintain()');
 await db.exec('reset role');
 for (const file of [
  '20261115145059_brief_cookieless_aggregate_measurement.sql',
- '20261127090743_brief_article_page_views.sql'
+ '20261127090743_brief_article_page_views.sql',
+ '202610220001_weekly_engagement.sql',
+ '20261127110020_brief_weekly_page_views.sql'
 ]) await db.exec(readFileSync('supabase/migrations/'+file,'utf8'));
 await db.query("update public.brief_community_items set url='https://brief.hamelberg-ai.com/culture/a/index.html?campaign=example#read' where story_key=$1",[key]);
 const wrongHost='culture:1234567890abcdef12345679';
@@ -85,4 +87,23 @@ assert.equal(metrics[key].views,2);
 assert.equal(metrics[key].shares,1);
 assert.equal(metrics[key].liked,true);
 assert.equal(metrics[key].saved,true);checks+=5;
-console.log(JSON.stringify({daily_preferences_and_metrics_checks:checks,migration_runs:10}));await db.close();
+await db.exec('reset role');
+const markets='weekly:2026-W45:markets', research='weekly:2026-W45:research';
+await db.query(`
+  insert into public.brief_community_items(story_key,headline,url,kind,published_date) values
+  ($1,'Markets','https://brief.hamelberg-ai.com/week-from-above/2026-w45/#five-markets','weekly_news',current_date),
+  ($2,'Research','https://brief.hamelberg-ai.com/week-from-above/2026-w45/#research-compass','weekly_research',current_date)
+`,[markets,research]);
+await db.exec(`
+  insert into public.brief_engagement_totals(story_key,views)
+  values ('weekly:2026-W45:markets',5), ('weekly:2026-W45:research',3);
+  insert into brief_measurement_private.daily_counts(day,page_path,device,event,total)
+  values ((now() at time zone 'Europe/Amsterdam')::date, '/week-from-above/2026-w45/', 'desktop', 'page_view', 8);
+`);
+await role('anon');
+metrics=await value('select public.brief_community_metrics($1)',[[markets,research]]);
+assert.equal(metrics[markets].page_views,8);
+assert.equal(metrics[research].page_views,null);
+assert.equal(metrics[markets].views,5);
+assert.equal(metrics[research].views,3);checks+=4;
+console.log(JSON.stringify({daily_preferences_and_metrics_checks:checks,migration_runs:12}));await db.close();

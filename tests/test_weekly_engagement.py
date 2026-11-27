@@ -60,6 +60,8 @@ class WeeklyEngagementTests(unittest.TestCase):
             self.assertIn(f'#{item["conversation_anchor"]}', html)
         self.assertEqual(html.count('data-comment-form'), 2)
         self.assertEqual(html.count('data-weekly-reading-body'), 2)
+        self.assertEqual(html.count('data-metric="page_views"'), 1)
+        self.assertEqual(html.count('data-metric="views"'), 2)
         self.assertEqual(html.count('data-action="like"'), 2)
         self.assertEqual(html.count('data-action="save"'), 2)
         self.assertIn('<h1>The week in AI, 12 Oct - 18 Oct</h1>', html)
@@ -77,7 +79,9 @@ class WeeklyEngagementTests(unittest.TestCase):
         self.assertIn('/week-from-above/2026-w42/index.html#research-compass', html)
         self.assertIn('Read both one-minute views', html)
         self.assertNotIn('class="story-actions"', html)
-        self.assertNotIn('class="public-metrics"', html)
+        self.assertEqual(html.count('data-metric="page_views"'), 1)
+        self.assertIn('data-public-metrics="weekly:2026-W42:markets"', html)
+        self.assertNotIn('data-metric="views"', html)
 
 
 if __name__ == '__main__':
