@@ -1,0 +1,72 @@
+name: Refresh Brief GA4 visitor total
+on:
+  schedule:
+    - cron: '39 5 * * *'
+  workflow_dispatch:
+permissions:
+  actions: read
+  pages: write
+  contents: write
+  id-token: write
+concurrency:
+  group: brief-ga4-visitor-total
+  cancel-in-progress: false
+jobs:
+  refresh:
+    permissions:
+      contents: read
+      id-token: write
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check reporting access is configured
+        env:
+          PROVIDER: ${{ vars.GA4_WORKLOAD_IDENTITY_PROVIDER }}
+          ACCOUNT: ${{ vars.GA4_READER_SERVICE_ACCOUNT }}
+        run: |
+          if [ -z "$PROVIDER" ] || [ -z "$ACCOUNT" ]; then
+            echo "::error::Configure GA4 read-only access as described in docs/visitor-total.md."
+            exit 1
+          fi
+      - id: auth
+        uses: google-github-actions/auth@7c6bc770dae815cd3e89ee6cdf493a5fab2cc093 # v3
+        with:
+          workload_identity_provider: ${{ vars.GA4_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GA4_READER_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/analytics.readonly
+          create_credentials_file: false
+      - name: Read the hostname-filtered report
+        env:
+          GA4_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+        run: python3 scripts/refresh_visitor_total.py
+      - uses: ./.github/actions/authorize-publisher
+        with:
+          private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
+      - name: Save the dated total
+        id: save
+        run: |
+          if git diff --quiet -- config/site.json; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add config/site.json
+          git commit -m 'Refresh verified Brief visitor total [no-cost-build]'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+  publish:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    permissions:
+      actions: read
+      contents: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/build-brief-preview.yml
+    with:
+      saved_news_only: true
+    secrets: inherit

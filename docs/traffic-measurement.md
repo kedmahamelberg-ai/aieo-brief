@@ -1,6 +1,6 @@
 # The Brief traffic reports
 
-Use the first-party totals for visible page loads. The reporting day follows Europe/Amsterdam. Each document counts once when it becomes visible. Reloads can add a view. The counts exclude obvious crawlers and previews, and depend on the browser running the measurement script. They do not estimate unique readers.
+Use the first-party totals for visible page loads. The reporting day follows Europe/Amsterdam. A visible navigation counts once. Reloads and returns from the browser’s back-forward cache can add a view. Automatic redirects count at the destination. The counts exclude obvious crawlers and previews, and depend on the browser running the measurement script. They do not estimate unique readers.
 
 In the [Observatory project’s Supabase SQL editor](https://supabase.com/dashboard/project/tricsbvxamjzfeckivhz/sql/new), run this for the last 28 complete days. The project stores only daily aggregates. The legacy counter and the source totals increment in the same database transaction. The residual includes earlier views and visits from cached clients that still use the older counter.
 
