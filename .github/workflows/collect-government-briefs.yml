@@ -90,6 +90,9 @@ jobs:
     if: always() && needs.collect.result == 'success' && (needs.publish.result == 'success' || needs.publish.result == 'skipped')
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: read
+      issues: write
     steps:
       - uses: actions/checkout@v6
         with:
@@ -111,4 +114,5 @@ jobs:
         if: steps.slot.outputs.verify == 'true'
         env:
           BRIEF_SITE_URL: ${{ vars.BRIEF_SITE_URL }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: python scripts/verify_live_government_coverage.py
