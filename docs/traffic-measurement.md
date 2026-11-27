@@ -42,10 +42,10 @@ Use [Search Console Web Performance filtered to The Brief](https://search.google
 
 A recognised external referring hostname takes precedence over a known source tag. Internal links stay internal even with a source tag. Browsers and apps may omit the referrer, so untagged arrivals from those apps can be counted as direct or unknown. Referrals measure arrivals and Search Console measures Google search clicks.
 
-Public article badges use these same page-load counts for the current Amsterdam
+Public article and weekly edition badges use these same page-load counts for the current Amsterdam
 reporting day and the previous 29 days. The first-party history begins on
 15 November 2026. The community endpoint returns only totals of at least three
-for registered public articles. The weekly overview uses its own five-second
-reading counter for each section.
+for registered public articles and weekly editions. Each edition shows one
+page-view total. Its two sections also have five-second reading counts.
 
 Deploy the Supabase migration before publishing the corresponding JavaScript. After publishing, check that the page-view RPC returns HTTP 204 and that the expected source row increases. For controlled smoke tests, use recognisable referrers or `utm_source=google`, `utm_source=chatgpt.com` and `utm_source=claude.ai` on an existing public route. The request body should contain only the page path, broad device category and one source category. Controlled visits add to that day’s totals.

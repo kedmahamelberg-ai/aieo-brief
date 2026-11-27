@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from 'components.html' import edition_views with context %}
 {% block title %}Weekly AI overviews | The Brief{% endblock %}
 {% block description %}The archive of one-minute weekly views across five AI discovery markets and the research compass.{% endblock %}
 {% block content %}
@@ -15,6 +16,7 @@
       <span class="eyebrow">{{ overview.period_start }} to {{ overview.period_end }}</span>
       <h2><a href="{{ local(overview.path) }}">{{ overview.markets.title }}</a></h2>
       <p>{{ overview.markets.deck }}</p>
+      {{ edition_views("weekly:" ~ overview.release_id ~ ":markets") }}
       <p class="weekly-research-line"><strong>Research</strong> <a href="{{ local(overview.path) }}#research-compass">{{ overview.research.title }}</a></p>
       <a class="read-link" href="{{ local(overview.path) }}">Read both one-minute views →</a>
     </article>
