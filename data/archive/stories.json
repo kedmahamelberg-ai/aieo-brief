@@ -2,6 +2,374 @@
   "schema_version": "aieo_brief_archive_v1",
   "stories": [
     {
+      "book_title": "White Nights",
+      "content_fingerprint": "e6db163f7172f99085e41184039decd77155c16f34a1ba4a6fd0536b55e9a2fe",
+      "creator": "Fyodor Dostoyevsky",
+      "creator_origin": "Russian",
+      "culture_type": "text",
+      "deck": "A passage from White Nights. Translated by Constance Garnett.",
+      "excerpt": "I followed her, surprised and perplexed by all that I had seen. My heart was beating violently, as though from terror. I was, as it were, benumbed and befogged; my ideas were shattered and turned upside down; but I remember I was, for some reason, very sad. I got glimpses from time to time through the green foliage of her white dress before me: I followed her mechanically, never losing sight of her, though I trembled at the thought that she might notice me. At last she came out on the little path that led to the house. After waiting half a minute I, too, emerged from the bushes; but what was my amazement when I saw lying on the red sand of the path a sealed packet, which I recognized, from the first glance, as the one that had been given to Mme. M. ten minutes before.",
+      "headline": "White Nights · a short reading",
+      "key": "culture:adc2ea2617335e0236f64717",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:36034:passage:e6db163f7172f99085e41184039decd77155c16f34a1ba4a6fd0536b55e9a2fe",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1881. Translator: Constance Garnett, died 1946. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/36034"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "12b420bd168db372059090925dbcb69e6bd9b5dcfe68e018e471eb1e4a4a8bc2",
+      "source_locator": "FIRST NIGHT; paragraph 1596 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/36034",
+      "translator": "Constance Garnett",
+      "work_date": "1918 translation",
+      "date": "2026-11-28",
+      "selected_on": "2026-11-28",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-adc2ea2617335e0236f64717",
+      "path": "culture/culture-adc2ea2617335e0236f64717/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "White Nights · a short reading",
+          "url": "https://www.gutenberg.org/ebooks/36034",
+          "date": "1918 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "text",
+      "topic_label": "A short reading",
+      "research_label": "A short reading",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-28",
+      "summary_basis": "Selected 28 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "I followed her, surprised and perplexed by all that I had seen. My heart was beating violently, as though from terror. I was, as it were, benumbed and befogged; my ideas were shattered and turned upside down; but I remember I was, for some reason, very sad. I got glimpses from time to time through the green foliage of her white dress before me: I followed her mechanically, never losing sight of her, though I trembled at the thought that she might notice me. At last she came out on the little path that led to the house. After waiting half a minute I, too, emerged from the bushes; but what was my amazement when I saw lying on the red sand of the path a sealed packet, which I recognized, from the first glance, as the one that had been given to Mme. M. ten minutes before.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "alt": "Fishermen-Hermits in Stream and Mountain",
+      "art_type": "Painting",
+      "balance_origin": "China",
+      "creator": "Zhao Yong (Chinese, c. 1289-c. 1362)",
+      "creator_origin": "China, Yuan dynasty (1271-1368)",
+      "culture_type": "illustration",
+      "deck": "Fishermen-Hermits in Stream and Mountain. Hanging scroll; ink and color on silk.",
+      "headline": "Fishermen-Hermits in Stream and Mountain",
+      "image_path": "assets/culture/ab0c38136d23203fe652a7a7.jpg",
+      "key": "culture:ab0c38136d23203fe652a7a7",
+      "media_url": "https://openaccess-cdn.clevelandart.org/1997.93/1997.93_web.jpg",
+      "medium": "Hanging scroll; ink and color on silk",
+      "origin_label": "Cultural origin recorded by the museum",
+      "origin_source_url": "https://clevelandart.org/art/1997.93",
+      "provenance_id": "cma:160135",
+      "publisher": "Cleveland Museum of Art",
+      "rights": {
+        "basis": "Cleveland Museum of Art record: share_license_status=CC0",
+        "changes": "Original museum web image, displayed without cropping.",
+        "credit": "Bequest of Mrs. A. Dean Perry",
+        "label": "CC0 image",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://clevelandart.org/art/1997.93",
+      "work_date": "1300s",
+      "date": "2026-11-28",
+      "selected_on": "2026-11-28",
+      "library_version": "2026-09-06-v1",
+      "kind": "culture",
+      "slug": "culture-ab0c38136d23203fe652a7a7",
+      "path": "culture/culture-ab0c38136d23203fe652a7a7/index.html",
+      "sources": [
+        {
+          "publisher": "Cleveland Museum of Art",
+          "headline": "Fishermen-Hermits in Stream and Mountain",
+          "url": "https://clevelandart.org/art/1997.93",
+          "date": "1300s",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "illustration",
+      "topic_label": "Art & illustration",
+      "research_label": "Art & illustration",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-28",
+      "summary_basis": "Selected 28 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "a500c9cb0d58d50911590757527cc26a3d6ed85a2af4c84d03a353845f90fa36",
+      "creator": "Sarojini Naidu",
+      "creator_origin": "Indian",
+      "culture_type": "poetry",
+      "deck": "Humayun To Zobeida, by Sarojini Naidu.",
+      "excerpt": "(From the Urdu)\n\n  You flaunt your beauty in the rose, your glory in the dawn,\n  Your sweetness in the nightingale, your whiteness in the swan.\n\n  You haunt my waking like a dream, my slumber like a moon,\n  Pervade me like a musky scent, possess me like a tune.\n\n  Yet, when I crave of you, my sweet, one tender moment's grace,\n  You cry, \"I SIT BEHIND THE VEIL, I CANNOT SHOW MY FACE.\"\n\n  Shall any foolish veil divide my longing from my bliss?\n  Shall any fragile curtain hide your beauty from my kiss?\n\n  What war is this of THEE and ME? Give o'er the wanton strife,\n  You are the heart within my heart, the life within my life.",
+      "headline": "Humayun To Zobeida",
+      "key": "culture:560ab0f9bf45ea17226cf10b",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "poem_lines": [
+        "(From the Urdu)",
+        "",
+        "  You flaunt your beauty in the rose, your glory in the dawn,",
+        "  Your sweetness in the nightingale, your whiteness in the swan.",
+        "",
+        "  You haunt my waking like a dream, my slumber like a moon,",
+        "  Pervade me like a musky scent, possess me like a tune.",
+        "",
+        "  Yet, when I crave of you, my sweet, one tender moment's grace,",
+        "  You cry, \"I SIT BEHIND THE VEIL, I CANNOT SHOW MY FACE.\"",
+        "",
+        "  Shall any foolish veil divide my longing from my bliss?",
+        "  Shall any fragile curtain hide your beauty from my kiss?",
+        "",
+        "  What war is this of THEE and ME? Give o'er the wanton strife,",
+        "  You are the heart within my heart, the life within my life."
+      ],
+      "provenance_id": "pg:680:poem:5d5934368c669773efb43a7022a853e3abe0ff7ab250ae4c6677967808be0de7",
+      "publisher": "Project Gutenberg",
+      "rights": {
+        "basis": "Author died 1949. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "43b66624f43d0564b45974d76131a5058bd18909e6d49c12683dc8ec6216238d",
+      "source_locator": "HUMAYUN TO ZOBEIDA",
+      "source_url": "https://www.gutenberg.org/ebooks/680",
+      "translator": "",
+      "work_date": "1905",
+      "date": "2026-11-28",
+      "selected_on": "2026-11-28",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-560ab0f9bf45ea17226cf10b",
+      "path": "culture/culture-560ab0f9bf45ea17226cf10b/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "Humayun To Zobeida",
+          "url": "https://www.gutenberg.org/ebooks/680",
+          "date": "1905",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "poetry",
+      "topic_label": "Poetry",
+      "research_label": "Poetry",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-28",
+      "summary_basis": "Selected 28 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "(From the Urdu)\n\n  You flaunt your beauty in the rose, your glory in the dawn,\n  Your sweetness in the nightingale, your whiteness in the swan.\n\n  You haunt my waking like a dream, my slumber like a moon,\n  Pervade me like a musky scent, possess me like a tune.\n\n  Yet, when I crave of you, my sweet, one tender moment's grace,\n  You cry, \"I SIT BEHIND THE VEIL, I CANNOT SHOW MY FACE.\"\n\n  Shall any foolish veil divide my longing from my bliss?\n  Shall any fragile curtain hide your beauty from my kiss?\n\n  What war is this of THEE and ME? Give o'er the wanton strife,\n  You are the heart within my heart, the life within my life.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "book_title": "Meditations",
+      "content_fingerprint": "d939f045206428d9477895624b890f4e6165e54a5b9cabb5a95f36ca832f0bde",
+      "creator": "Marcus Aurelius",
+      "creator_origin": "Roman",
+      "culture_type": "quote",
+      "deck": "From Meditations. Translation by Méric Casaubon.",
+      "excerpt": "For without relation unto God, thou shalt never speed in any worldly actions; nor on the other side in any divine, without some respect had to things human.",
+      "headline": "For without relation unto God, thou shalt never speed in any worldly actions; nor on the other side in any divine, without some respect had to things human.",
+      "key": "culture:2b7835df9eede762c92a8b10",
+      "language": "English",
+      "origin_label": "Nationality / cultural background",
+      "provenance_id": "pg:2680:quote:d939f045206428d9477895624b890f4e6165e54a5b9cabb5a95f36ca832f0bde",
+      "publisher": "Project Gutenberg",
+      "quote_context": "XIV. As physicians and chirurgeons have always their instruments ready at hand for all sudden cures; so have thou always thy dogmata in a readiness for the knowledge of things, both divine and human: and whatsoever thou dost, even in the smallest things that thou dost, thou must ever remember that mutual relation, and connection that is between these two things divine, and things human. For without relation unto God, thou shalt never speed in any worldly actions; nor on the other side in any divine, without some respect had to things human.",
+      "rights": {
+        "basis": "Author died 180. Translator: Méric Casaubon, died 1671. Edition credited in the linked source.",
+        "changes": "Selected passage; line-end whitespace normalised. No generated quotation.",
+        "label": "Historical public-domain text",
+        "url": "https://www.gutenberg.org/ebooks/2680"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_document_sha256": "6f411fea24a4196dbc2bf3f918054c87c847e77bb873109bc36218407f6e259a",
+      "source_locator": "THE FIRST BOOK; paragraph 49 in the selected body section",
+      "source_url": "https://www.gutenberg.org/ebooks/2680",
+      "translator": "Méric Casaubon",
+      "work_date": "1634 translation",
+      "date": "2026-11-28",
+      "selected_on": "2026-11-28",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-2b7835df9eede762c92a8b10",
+      "path": "culture/culture-2b7835df9eede762c92a8b10/index.html",
+      "sources": [
+        {
+          "publisher": "Project Gutenberg",
+          "headline": "For without relation unto God, thou shalt never speed in any worldly actions; nor on the other side in any divine, without some respect had to things human.",
+          "url": "https://www.gutenberg.org/ebooks/2680",
+          "date": "1634 translation",
+          "language": "English"
+        }
+      ],
+      "source_count": 1,
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "quote",
+      "topic_label": "A quotation",
+      "research_label": "A quotation",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-28",
+      "summary_basis": "Selected 28 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "For without relation unto God, thou shalt never speed in any worldly actions; nor on the other side in any divine, without some respect had to things human.",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "XIV. As physicians and chirurgeons have always their instruments ready at hand for all sudden cures; so have thou always thy dogmata in a readiness for the knowledge of things, both divine and human: and whatsoever thou dost, even in the smallest things that thou dost, thou must ever remember that mutual relation, and connection that is between these two things divine, and things human. For without relation unto God, thou shalt never speed in any worldly actions; nor on the other side in any divine, without some respect had to things human.",
+          "emphasis": false
+        }
+      ]
+    },
+    {
+      "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/6/64/F._Schubert._Letzte_Hoffnung_%28Ukrainian%29.ogv",
+      "creator": "Franz Schubert",
+      "creator_origin": "Austrian",
+      "creator_role": "Composer",
+      "credits": [],
+      "culture_type": "music",
+      "date_label": "Date as catalogued by source",
+      "deck": "A recording of music by Franz Schubert. 2 minutes to listen.",
+      "duration_seconds": 128,
+      "headline": "F. Schubert. Letzte Hoffnung (Ukrainian)",
+      "key": "culture:05862ffc0e1a8d6db0174284",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/6/64/F._Schubert._Letzte_Hoffnung_%28Ukrainian%29.ogv",
+      "origin_label": "Nationality / cultural background",
+      "origin_source_url": "https://en.wikipedia.org/wiki/Franz_Schubert",
+      "original_recording_title": "F. Schubert. Letzte Hoffnung (Ukrainian)",
+      "provenance_id": "commons:78663223",
+      "publisher": "Wikimedia Commons",
+      "recording_credit": "Music by Franz Schubert. Lyrics by Wilhelm Müller Ukrainian translation by Julie Gershunskaya",
+      "recording_description": "F. Schubert. Letzte Hoffnung (from \"Winterreise\") in Ukrainian translation by Julie Gershunskaya Solo - Pavlo Zubov Piano - Andriy Bondarenko",
+      "rights": {
+        "basis": "Recording licence from the linked Wikimedia Commons file record.",
+        "changes": "Recording presented without edits.",
+        "credit": "Music by Franz Schubert. Lyrics by Wilhelm Müller Ukrainian translation by Julie Gershunskaya",
+        "label": "CC BY-SA 4.0 (source-declared)",
+        "source_credit": "YouTube : https://www.youtube.com/watch?v=BtsRz3DLwts – View/save archived versions on archive.org",
+        "url": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "source_checked_on": "2026-09-06",
+      "source_url": "https://commons.wikimedia.org/wiki/File:F._Schubert._Letzte_Hoffnung_(Ukrainian).ogv",
+      "work_date": "2019-04-07",
+      "date": "2026-11-28",
+      "selected_on": "2026-11-28",
+      "library_version": "2026-09-06-v1",
+      "image_path": "",
+      "kind": "culture",
+      "slug": "culture-05862ffc0e1a8d6db0174284",
+      "path": "culture/culture-05862ffc0e1a8d6db0174284/index.html",
+      "sources": [
+        {
+          "publisher": "Wikimedia Commons",
+          "headline": "F. Schubert. Letzte Hoffnung (Ukrainian)",
+          "url": "https://commons.wikimedia.org/wiki/File:F._Schubert._Letzte_Hoffnung_(Ukrainian).ogv",
+          "date": "2019-04-07",
+          "language": ""
+        }
+      ],
+      "source_count": 1,
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Daily culture",
+      "topic": "music",
+      "topic_label": "Music",
+      "research_label": "Music",
+      "human_direction": "unresolved",
+      "ai_direction": "unresolved",
+      "evidence_complete": false,
+      "edition": "2026-11-28",
+      "summary_basis": "Selected 28 Nov 2026",
+      "has_editorial": false,
+      "reading_minutes": 1,
+      "excerpt_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ],
+      "quote_context_parts": [
+        {
+          "text": "",
+          "emphasis": false
+        }
+      ]
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/fb/20091104_Sharon_Isbin_-_Enrique_Granados%2C_Spanish_Dance_number_5_of_12%2C_1890.ogg",
       "creator": "Enrique Granados",
       "creator_origin": "Spanish",
@@ -36006,7 +36374,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-27T22:57:56.184321+00:00",
+      "affiliation_checked_at": "2026-11-27T23:32:16.005610+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
