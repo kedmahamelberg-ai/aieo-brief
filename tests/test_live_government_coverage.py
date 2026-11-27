@@ -1,10 +1,11 @@
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from government_briefs import fingerprint, monitor_record
-from verify_live_government_coverage import verify, verify_article_page
+from verify_live_government_coverage import verify, verify_article_page, sync_held_issue
 
 
 class LiveGovernmentCoverageTests(unittest.TestCase):
@@ -19,11 +20,15 @@ class LiveGovernmentCoverageTests(unittest.TestCase):
         sha = fingerprint(self.item)
         self.record = monitor_record(self.item, sha)
         self.state = {'policy': 'government-ai-brief-v4',
+                      'monitor_as_of': self.snapshot['as_of'],
+                      'last_checked_at': '2026-11-23T09:00:00Z',
                       'records': {'lu-item': self.record}, 'checked': {'lu-item': sha}}
         self.public_item = {**self.record, 'deck': self.record['summary'], 'key': 'government-card-key',
                             'announcement_paragraphs': [self.record['summary']]}
         self.public = {'government_count': 1, 'governments': [self.public_item]}
-        self.html = '<article class="feed-story government-card" data-key="government-card-key" data-date="2026-11-22"></article>'
+        self.sync = '<p id="government-sync" data-monitor-as-of="2026-11-23T08:00:00Z" data-last-checked="2026-11-23T09:00:00Z"></p>'
+        self.card = '<article class="feed-story government-card" data-key="government-card-key" data-date="2026-11-22"></article>'
+        self.html = self.sync + self.card
 
     def test_exact_monitor_saved_public_and_card_ids_pass(self):
         result = verify(self.snapshot, self.state, self.public, self.html)
@@ -41,11 +46,56 @@ class LiveGovernmentCoverageTests(unittest.TestCase):
             verify(self.snapshot, self.state, self.public, self.html)
         self.public_item['deck'] = self.record['summary']
         with self.assertRaisesRegex(ValueError, 'Live Governments say cards'):
-            verify(self.snapshot, self.state, self.public, '')
+            verify(self.snapshot, self.state, self.public, self.sync)
 
     def test_duplicate_live_card_fails(self):
         with self.assertRaisesRegex(ValueError, 'duplicates'):
-            verify(self.snapshot, self.state, self.public, self.html + self.html)
+            verify(self.snapshot, self.state, self.public, self.sync + self.card + self.card)
+
+    def test_stale_monitor_snapshot_or_missing_visible_check_fails(self):
+        self.snapshot['as_of'] = '2026-11-24T08:00:00Z'
+        with self.assertRaisesRegex(ValueError, 'latest Monitor snapshot'):
+            verify(self.snapshot, self.state, self.public, self.html)
+        self.snapshot['as_of'] = self.state['monitor_as_of']
+        with self.assertRaisesRegex(ValueError, 'does not show the saved Monitor check time'):
+            verify(self.snapshot, self.state, self.public, self.card)
+
+    def test_held_ai_item_is_reported_but_not_published(self):
+        held = {**self.item, 'id': 'held-ai', 'classification_status': 'needs_review'}
+        self.snapshot['items'].append(held)
+        report = verify(self.snapshot, self.state, self.public, self.html)
+        self.assertEqual(report['monitor_ai_held_for_review'], 1)
+        self.assertEqual(report['held_ids'], ['held-ai'])
+
+    def test_held_ai_issue_is_not_reposted_when_unchanged(self):
+        held = {**self.item, 'id': 'held-ai', 'classification_status': 'needs_review'}
+        snapshot = {'items': [held]}
+        class Response:
+            def __init__(self, value): self.value = value
+            def raise_for_status(self): pass
+            def json(self): return self.value
+        class Session:
+            def __init__(self, existing=None):
+                self.headers = {}
+                self.existing = existing
+                self.writes = []
+            def __enter__(self): return self
+            def __exit__(self, *_): pass
+            def get(self, *_args, **_kwargs): return Response([self.existing] if self.existing else [])
+            def post(self, _url, json, **_kwargs):
+                self.writes.append(('post', json))
+                return Response({})
+            def patch(self, _url, json, **_kwargs):
+                self.writes.append(('patch', json))
+                return Response({})
+        first = Session()
+        with patch.dict('os.environ', {'GITHUB_TOKEN': 'test-token', 'GITHUB_REPOSITORY': 'owner/brief'}), patch('verify_live_government_coverage.requests.Session', return_value=first):
+            sync_held_issue(snapshot)
+        self.assertEqual([kind for kind, _ in first.writes], ['post'])
+        unchanged = Session({'title': 'Government AI labels held for source review', 'body': first.writes[0][1]['body'], 'url': 'https://api.github.com/repos/owner/brief/issues/1'})
+        with patch.dict('os.environ', {'GITHUB_TOKEN': 'test-token', 'GITHUB_REPOSITORY': 'owner/brief'}), patch('verify_live_government_coverage.requests.Session', return_value=unchanged):
+            sync_held_issue(snapshot)
+        self.assertEqual(unchanged.writes, [])
 
     def test_correct_input_hash_cannot_hide_generated_saved_body(self):
         self.record['body_paragraphs'] = ['An older generated AI claim.']

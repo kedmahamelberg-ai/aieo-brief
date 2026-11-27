@@ -4,6 +4,7 @@
 {% block content %}
 <main id="main-content" class="page-shell government-page">
 <header class="research-intro"><span class="eyebrow">GOVERNMENTS & AI</span><h1>What do governments say?</h1><p>AI-related announcements from across the <a href="https://monitor.hamelberg-ai.com/#government">Monitor’s government coverage</a>.</p></header>
+{% if government_status.last_checked_at %}<p class="small-copy" id="government-sync" data-monitor-as-of="{{ government_status.monitor_as_of }}" data-last-checked="{{ government_status.last_checked_at }}">Brief checked the Monitor on <time datetime="{{ government_status.last_checked_at }}">{{ government_status.last_checked_at[:16]|replace('T', ' ') }} UTC</time>. Announcements are grouped by their original publication date.</p>{% endif %}
 <div class="reading-layout">
 <section class="feed-column" aria-label="Government AI announcements">
 <div class="feed-controls government-controls" data-government-controls hidden>
