@@ -19,7 +19,8 @@ test('weekly sharing points to the selected reading',()=>{
  assert.equal(url,'https://brief.example.test/week-from-above/2026-w42/#research-compass');
 });
 function makeRow(key){
- const names=['views','likes','comments','shares','saves','reads'];
+ const viewMetric=key.startsWith('weekly:')?'views':'page_views';
+ const names=[viewMetric,'likes','comments','shares','saves','reads'];
  const nodes=names.map(metric=>({dataset:{metric},textContent:'',parentElement:{hidden:true}}));
  return {dataset:{publicMetrics:key},hidden:true,nodes,querySelectorAll:()=>nodes};
 }
@@ -37,22 +38,22 @@ function engagementHarness(key='event:00000000-0000-0000-0000-000000000000'){
 }
 test('each statistic is independently hidden; no empty strip or info link',async()=>{
  const h=engagementHarness();await h.tick();
- h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:20,likes:2,comments:0,shares:3,saves:1,reads:2}}});
+ h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:2,page_views:20,likes:2,comments:0,shares:3,saves:1,reads:2}}});
  assert.equal(h.row.hidden,false);
  assert.deepEqual(h.row.nodes.map(n=>!n.parentElement.hidden),[true,false,false,true,false,false]);
  assert.deepEqual(h.row.nodes.map(n=>n.textContent),['20','','','3','','']);
- h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:2,shares:2}}});
+ h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:30,page_views:2,shares:2}}});
  assert.equal(h.row.hidden,true);
  assert.ok(h.row.nodes.every(n=>n.textContent===''&&n.parentElement.hidden));
 });
 test('polling announces updated metrics to both display renderers',async()=>{
- const h=engagementHarness();await h.tick();h.set({[h.key]:{views:3}});
+ const h=engagementHarness();await h.tick();h.set({[h.key]:{page_views:3}});
  await h.window.BriefEngagement.refresh();assert.equal(h.row.nodes[0].textContent,'3');
  assert.equal(h.row.hidden,false);
 });
 test('weekly readings use the same public count baseline',async()=>{
  const h=engagementHarness('weekly:2026-W42:markets');await h.tick();
- h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:2,likes:3}}});
+ h.window.dispatchEvent({type:'brief-metrics',detail:{[h.key]:{views:2,page_views:12,likes:3}}});
  assert.equal(h.row.nodes[0].parentElement.hidden,true);
  assert.equal(h.row.nodes[1].textContent,'3');
  assert.equal(h.row.hidden,false);
@@ -90,9 +91,11 @@ test('public comments and popularity also use the same threshold',()=>{
 test('shared template hides initial placeholders without hiding action buttons',()=>{
  const t=fs.readFileSync(path.join(root,'templates/components.html'),'utf8');
  assert.match(t,/data-public-metrics="\{\{ item.key \}\}"[^>]+hidden>/);
- assert.equal((t.match(/<span hidden><strong data-metric=/g)||[]).length,6);
+ assert.equal((t.match(/<span hidden><strong data-metric=/g)||[]).length,7);
  assert.match(t,/data-like-count="\{\{ item.key \}\}" hidden/);
  assert.match(t,/data-comment-count="\{\{ item.key \}\}" hidden/);
  for(const action of ['like','share','save'])assert.match(t,new RegExp('<button[^>]+data-action="'+action+'"'));
+ assert.match(t,/data-metric="page_views"><\/strong> page views \(30d\)/);
+ assert.match(t,/data-metric="views"><\/strong> reading views/);
  assert.ok(t.includes('Discuss'));assert.ok(!t.includes('>—</strong>'));
 });

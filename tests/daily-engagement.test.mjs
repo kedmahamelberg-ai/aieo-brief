@@ -50,4 +50,39 @@ assert.equal((await db.query("select * from public.brief_push_digest_pending('20
 await role('anon');assert.equal(await value('select public.brief_push_unsubscribe($1,$2)',[endpoint,token]),true);checks++;
 await role('service_role');assert.equal((await db.query('select * from public.brief_push_digest_deliveries')).rows.length,0);checks++;
 await db.query('select public.brief_community_maintain()');
-console.log(JSON.stringify({daily_preferences_and_metrics_checks:checks,migration_runs:8}));await db.close();
+// Public article counts use the first-party page rolls while the previous
+// engagement totals and personalized fields remain available to existing callers.
+await db.exec('reset role');
+for (const file of [
+ '20261115145059_brief_cookieless_aggregate_measurement.sql',
+ '20261127090743_brief_article_page_views.sql'
+]) await db.exec(readFileSync('supabase/migrations/'+file,'utf8'));
+await db.query("update public.brief_community_items set url='https://brief.hamelberg-ai.com/culture/a/index.html?campaign=example#read' where story_key=$1",[key]);
+const wrongHost='culture:1234567890abcdef12345679';
+await db.query("insert into public.brief_community_items(story_key,headline,url,kind,published_date) values($1,'Other host','https://example.test/culture/a/','culture',current_date)",[wrongHost]);
+await db.exec(`
+  insert into brief_measurement_private.daily_counts(day,page_path,device,event,total)
+  values ((now() at time zone 'Europe/Amsterdam')::date, '/culture/a/', 'desktop', 'page_view', 2),
+         ((now() at time zone 'Europe/Amsterdam')::date - 30, '/culture/a/', 'desktop', 'page_view', 30),
+         ((now() at time zone 'Europe/Amsterdam')::date, '/culture/a/', 'desktop', 'engaged_read', 9),
+         ((now() at time zone 'Europe/Amsterdam')::date, '/culture/b/', 'mobile', 'page_view', 10);
+`);
+await role('anon');
+await blocked('select * from brief_measurement_private.daily_counts');
+metrics=await value('select public.brief_community_metrics($1)',[[key,wrongHost,'unknown']]);
+assert.equal(metrics[key].page_views,null);
+assert.equal(metrics[wrongHost].page_views,null);
+assert.equal(metrics.unknown,undefined);checks+=3;
+await db.exec('reset role');
+await db.exec(`
+  insert into brief_measurement_private.daily_counts(day,page_path,device,event,total)
+  values ((now() at time zone 'Europe/Amsterdam')::date - 29, '/culture/a/', 'mobile', 'page_view', 4)
+`);
+await role('authenticated',user);
+metrics=await value('select public.brief_community_metrics($1)',[[key]]);
+assert.equal(metrics[key].page_views,6);
+assert.equal(metrics[key].views,2);
+assert.equal(metrics[key].shares,1);
+assert.equal(metrics[key].liked,true);
+assert.equal(metrics[key].saved,true);checks+=5;
+console.log(JSON.stringify({daily_preferences_and_metrics_checks:checks,migration_runs:10}));await db.close();
