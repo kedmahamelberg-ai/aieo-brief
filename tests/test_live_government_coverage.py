@@ -52,11 +52,20 @@ class LiveGovernmentCoverageTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'duplicates'):
             verify(self.snapshot, self.state, self.public, self.sync + self.card + self.card)
 
-    def test_stale_monitor_snapshot_or_missing_visible_check_fails(self):
+    def test_timestamp_only_monitor_rebuild_keeps_exact_coverage_valid(self):
         self.snapshot['as_of'] = '2026-11-24T08:00:00Z'
-        with self.assertRaisesRegex(ValueError, 'latest Monitor snapshot'):
+        result = verify(self.snapshot, self.state, self.public, self.html)
+        self.assertTrue(result['snapshot_timestamp_only_advance'])
+        self.assertEqual(result['brief_import_as_of'], self.state['monitor_as_of'])
+        self.assertEqual(result['monitor_eligible'], result['brief_live_cards'])
+
+    def test_changed_monitor_copy_after_rebuild_still_fails(self):
+        self.snapshot['as_of'] = '2026-11-24T08:00:00Z'
+        self.snapshot['items'][0]['english_summary'] = 'Luxembourg cancelled the AI marketplace.'
+        with self.assertRaisesRegex(ValueError, 'does not match its current Monitor input'):
             verify(self.snapshot, self.state, self.public, self.html)
-        self.snapshot['as_of'] = self.state['monitor_as_of']
+
+    def test_missing_visible_saved_check_time_fails(self):
         with self.assertRaisesRegex(ValueError, 'does not show the saved Monitor check time'):
             verify(self.snapshot, self.state, self.public, self.card)
 
