@@ -4,15 +4,22 @@ on:
     - cron: '39 5 * * *'
   workflow_dispatch:
 permissions:
-  contents: read
+  actions: read
+  pages: write
+  contents: write
   id-token: write
 concurrency:
   group: brief-ga4-visitor-total
   cancel-in-progress: false
 jobs:
   refresh:
+    permissions:
+      contents: read
+      id-token: write
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.save.outputs.changed }}
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v6
@@ -40,7 +47,8 @@ jobs:
       - uses: ./.github/actions/authorize-publisher
         with:
           private-key: ${{ secrets.SCHEDULED_PUBLISHER_PRIVATE_KEY }}
-      - name: Publish the dated total
+      - name: Save the dated total
+        id: save
         run: |
           if git diff --quiet -- config/site.json; then exit 0; fi
           git config user.name 'github-actions[bot]'
@@ -49,3 +57,16 @@ jobs:
           git commit -m 'Refresh verified Brief visitor total [no-cost-build]'
           git pull --rebase origin main
           git push origin HEAD:main
+          echo 'changed=true' >> "$GITHUB_OUTPUT"
+  publish:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    permissions:
+      actions: read
+      contents: write
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/build-brief-preview.yml
+    with:
+      saved_news_only: true
+    secrets: inherit
