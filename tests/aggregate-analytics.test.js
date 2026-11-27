@@ -15,13 +15,13 @@ function run(navigator, options = {}) {
    hash: '#access_token=private'
   },
   fetch(url, init) { requests.push({url, ...init}); return Promise.resolve({ok: true}); },
-  setInterval() {},
+  setInterval() {}, addEventListener: (name, fn) => listeners[name] = fn,
   document: {
    referrer: options.referrer || '',
    visibilityState: options.hidden ? 'hidden' : 'visible',
    body: {dataset: {}},
    getElementById: () => ({textContent: JSON.stringify({
-    is_preview: Boolean(options.preview), supabase_url: 'https://example.supabase.co',
+    is_preview: Boolean(options.preview), is_redirect: Boolean(options.redirect), supabase_url: 'https://example.supabase.co',
     supabase_publishable_key: 'public'
    })}),
    addEventListener: (name, fn) => listeners[name] = fn
@@ -100,4 +100,20 @@ test('background tabs wait for a visible visit and HTML routes use the public pa
  listeners.visibilitychange();
  assert.equal(requests.length, 1);
  assert.equal(JSON.parse(requests[0].body).p_path, '/story/example/');
+});
+
+test('counts the destination once and a visible return from browser history once', () => {
+ const nav = {userAgent: 'iPhone'};
+ assert.equal(run(nav, {redirect: true}).requests.length, 0);
+ const {requests, listeners, context} = run(nav);
+ listeners.pageshow({persisted: false});
+ listeners.visibilitychange();
+ assert.equal(requests.length, 1);
+ context.document.visibilityState = 'hidden';
+ listeners.pageshow({persisted: true});
+ assert.equal(requests.length, 1);
+ context.document.visibilityState = 'visible';
+ listeners.visibilitychange();
+ listeners.visibilitychange();
+ assert.equal(requests.length, 2);
 });

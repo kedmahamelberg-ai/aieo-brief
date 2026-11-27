@@ -39,19 +39,19 @@
 
  const device = deviceClass(navigator);
  const source = landingSource(document.referrer, location.search);
- const active = !config.is_preview && config.supabase_url && config.supabase_publishable_key
+ const active = !config.is_preview && !config.is_redirect && config.supabase_url && config.supabase_publishable_key
   && path.length <= 240 && /^\/(?:[a-z0-9-]+\/)*$/.test(path) && !bot.test(navigator.userAgent || '');
  let sentView = false, sentRead = false, visibleSeconds = 0;
 
  function record(rpc, body) {
-  fetch(config.supabase_url + '/rest/v1/rpc/' + rpc, {
+  return fetch(config.supabase_url + '/rest/v1/rpc/' + rpc, {
    method: 'POST',
    credentials: 'omit',
    referrerPolicy: 'no-referrer',
    keepalive: true,
    headers: {apikey: config.supabase_publishable_key, 'Content-Type': 'application/json'},
    body: JSON.stringify(body)
-  }).catch(() => {});
+  }).then(response => response.ok, () => false);
  }
 
  function event(name) {
@@ -63,11 +63,16 @@
  function view() {
   if (!active || sentView || document.visibilityState !== 'visible') return;
   sentView = true;
-  record('brief_record_page_view', {p_path: path, p_device: device, p_source: source});
+  record('brief_record_page_view', {p_path: path, p_device: device, p_source: source}).then(saved => {
+   if (saved && document.body.dataset.storyKey) window.dispatchEvent(new CustomEvent('brief-metrics-refresh'));
+  });
  }
 
  view();
  document.addEventListener('visibilitychange', view);
+ window.addEventListener('pageshow', e => {
+  if (e.persisted) { sentView = false; view(); }
+ });
  if (active && document.body.dataset.storyKey) setInterval(() => {
   if (document.visibilityState !== 'visible' || sentRead) return;
   if (++visibleSeconds < 20) return;

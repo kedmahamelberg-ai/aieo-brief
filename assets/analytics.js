@@ -2,10 +2,10 @@
  const config=JSON.parse(document.getElementById('brief-config').textContent),C=window.BriefCore,consentKey='aieo-brief-consent-v2';let consent=null,loaded=false,adsLoaded=false;
  try{const saved=JSON.parse(localStorage.getItem(consentKey));if(C.consentValid(saved))consent=saved;}catch{}
  // Private, linked UX history remains off until this reader opts in.
- window['ga-disable-'+config.ga4_measurement_id]=!!config.is_preview;
+ window['ga-disable-'+config.ga4_measurement_id]=!!(config.is_preview||config.is_redirect);
  window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments);};
  gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('set','ads_data_redaction',true);
- function analyticsAllowed(){return !!(config.ga4_measurement_id&&!config.is_preview);}
+ function analyticsAllowed(){return !!(config.ga4_measurement_id&&!config.is_preview&&!config.is_redirect);}
  function privateAllowed(){return !!(consent?.analytics&&!config.is_preview);}
  function loadGA(){if(!analyticsAllowed()||!config.ga4_measurement_id||loaded)return;loaded=true;const script=document.createElement('script');script.async=true;script.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(config.ga4_measurement_id);document.head.appendChild(script);gtag('js',new Date());gtag('config',config.ga4_measurement_id,{send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false});event('page_view',{});}
  function event(name,props={}){if(name!=='page_view')window.BriefAggregate?.event(name);if(!['page_view','active_reading','qualified_read'].includes(name))window.BriefUX?.track(name,props);if(!analyticsAllowed()||!loaded)return;const allowed={};for(const key of ['story_key','channel','kind','seconds','progress','market','sort','placement'])if(['string','number','boolean'].includes(typeof props[key]))allowed[key]=String(props[key]).slice(0,150);gtag('event',name,{...allowed,page_location:location.origin+location.pathname,page_referrer:'',page_title:document.title});}

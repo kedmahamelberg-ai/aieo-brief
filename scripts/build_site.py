@@ -527,7 +527,7 @@ def main():
             feed_news+defaults['culture_latest']+defaults['research_featured'] if ctx.get('page')=='home' else ctx.get('items',[]))
         client=[{k:x.get(k) for k in ('key','headline','path','anchor','kind','date','topic','markets','publisher','deck','daily_rank','display_date','topic_label','market_label','location_label','reading_minutes','creator','creator_origin','content_hash','edition')} for x in local_items]
         page_defaults={**defaults, 'ads_eligible':advertising_eligible(ctx.get('page'),ctx.get('story'),featured_news)}
-        page_defaults['public_config']={**public_config,'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
+        page_defaults['public_config']={**public_config,'is_redirect':bool(ctx.get('short_destination')),'adsense':{**public_config['adsense'],'page_eligible':page_defaults['ads_eligible']}}
         canonical=(baseurl+'/'+ctx.pop('canonical_path',path).removesuffix('index.html') if baseurl else '')
         page_defaults['identity_data']=identity_graph(ROOT,canonical,ctx.get('page'))
         # A separate JSON-LD block states what the article says, where its

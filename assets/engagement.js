@@ -4,7 +4,7 @@
   const consent = () => !!(window.BriefAnalytics?.allowed() && community?.enabled);
   const storageKey = 'brief-public-metric-session';
   const keyPattern = /^(event:[0-9a-f-]{36}|(?:paper|culture):[0-9a-f]{24}|weekly:\d{4}-W\d{2}:(?:markets|research))$/i;
-  let session, elapsed = 0, viewDone = false, inFlight = false, retryAt = 0;
+  let session, elapsed = 0, viewDone = false, inFlight = false, refreshPending = false, retryAt = 0;
   const weeklyReads = new Map();
   function sessionId() {
     if (!consent()) return null;
@@ -29,7 +29,8 @@
     });
   }
   async function refresh() {
-    if (!community?.enabled || inFlight) return;
+    if (!community?.enabled) return;
+    if (inFlight) { refreshPending = true; return; }
     const keys = [...new Set([...document.querySelectorAll('[data-public-metrics]')].map(n => n.dataset.publicMetrics).filter(k => keyPattern.test(k)))];
     if (!keys.length) return;
     inFlight = true;
@@ -38,7 +39,10 @@
       window.dispatchEvent(new CustomEvent('brief-metrics', {detail:metrics}));
     }
     catch (_) { /* No placeholder statistics when the service is unavailable. */ }
-    finally { inFlight = false; }
+    finally {
+      inFlight = false;
+      if (refreshPending) { refreshPending = false; void refresh(); }
+    }
   }
   async function record(key, kind) {
     if (!consent() || !keyPattern.test(key || '')) return false;
