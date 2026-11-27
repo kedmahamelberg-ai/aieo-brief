@@ -1,104 +1,15 @@
 # AIEO Brief
 
-A source-linked AI news and research publication, with reading lists, email sign-in, moderated discussion and daily art, words and music, and Google Auto ads.
+A source-linked public publication that turns AI news and research into careful, accessible reading.
 
-The Brief uses the Observatory’s canonical weekly release and independent human/AI readings. It preserves those classifications. New headlines and summaries are written only from retained complete article evidence. Research summaries use actual abstracts and identify their limited scope.
+## Contribution
 
-## Owner setup
+The Brief pairs the AI Empowerment Observatory’s structured evidence with independently checked reporting and research summaries. It distinguishes claims, early findings, observed results and uncertainty rather than treating all AI news as equivalent.
 
-Open `OWNER-SETUP.md`. The downloadable update also includes a point-and-click settings form and a Mac installer for this repository.
+**AI as methodology:** the publication pipeline combines computational collection and AI-assisted drafting with source retention, editorial checks and transparent provenance.
 
-The separate Observatory repository is not the installation target.
+**AI as a research phenomenon:** it documents how AI is discussed, developed and experienced across society.
 
-## Build and test
+**Teaching and impact:** The Brief supports evidence literacy in the classroom and makes research-informed AI analysis usable for practitioners, policymakers and general readers.
 
-```bash
-python -m pip install -r requirements.txt
-python -m unittest discover -s tests -p 'test_*.py'
-node --test tests/core.test.js
-python scripts/build_site.py --preview
-python scripts/validate_public_site.py
-```
-
-Open `_site/index.html`. `--preview` uses the real W35 snapshot included in `data/preview`; it has 110 developments, seven original news summaries and five paper summaries. Sign-in, live counts and advertising are disabled in this offline preview.
-
-For a live build, set `SUPABASE_URL` and `SUPABASE_SECRET_KEY`, configure `config/site.json`, then run `python scripts/build_site.py --update-archive`. The service key stays on the server. `SUPABASE_PUBLISHABLE_KEY` is the only browser key. Apply the included database migration before the automatic writer or community services run.
-
-The optional database tests run a real PostgreSQL engine locally through PGlite:
-
-```bash
-npm ci
-npm run test:database
-```
-
-## Automatic operation
-
-`Governments say` imports the Monitor's existing government feed. It does not
-collect government archives or make a second AI relevance decision. The importer
-is due daily at 16:05 Europe/Amsterdam; explicit summer/winter triggers, hourly retry wake-ups and a
-saved-date gate track daylight saving, catch delayed triggers, and prevent duplicate
-daily imports. It publishes records with the Monitor's exact
-`artificial_intelligence` topic label, completed English translation, and a
-provisional or human-reviewed classification. The Brief uses the Monitor's English wording, shortening display text
-mechanically to its 16-word headline and 45-word summary limits, and links to
-the official announcement. Any shortened full summary remains on the story page. Previously
-published Brief copy stays in place when the underlying Monitor record is
-unchanged; a changed source replaces it and a removed AI label withdraws it.
-A policy change causes one same-day catch-up. The first eight Brief items were
-independently checked against official pages on 13 November 2026;
-`data/governments/initial-source-checks.json` retains the historical URLs and
-body hashes. New imports use the Monitor's classification and translation.
-
-Governments say retains every published announcement behind two date filters:
-Last 7 days and Older. Last 7 days is the default and covers today and the preceding
-six calendar days in Europe/Amsterdam. Older includes every earlier date without
-a retention cutoff. Both group announcements by publication date, newest first.
-Monday imports never reset the list to a new calendar week. Story URLs continue
-to work regardless of the date filter, including links in approved social posts.
-Reading order can vary within each date; both filters reuse original article
-identities, publication dates, cards and
-existing consent-based engagement services. For photographs, prefer the named people. The government listing uses each photograph once across its recent and older announcements. Use text when no suitable unused photograph is available. Never use AI-generated editorial images. Occasional country-context images
-come from the existing public-domain/CC0 photo registry with visible source,
-credit and rights links. Country-context images are not presented as event photos.
-The workflow uses the existing bounded AI runtime and publishing credentials,
-preserves checked data on source failures, and explicitly calls the usual validated Pages build after saving changed data,
-even after partial collection failure. Generated commits carry [skip ci], so
-publication does not rely on a push event. No-work catch-up checks do not
-start the model or trigger a publication build. It reuses the configured
-OpenAI or local provider, starting the existing local model only for pending work.
-
-- The daily 12:15 UTC job checks for unfinished news and research published in the last seven days before loading its local model.
-- Successful news versions are saved individually to Supabase. A failed draft retains its source link, and subsequent passes prioritise less-attempted items.
-- Daily default writing budgets are 45 minutes for news and 15 for research. A no-change pass does not download/start the model. GitHub runner minutes still apply.
-- Unfinished published research is rechecked by its exact arXiv version or DOI, including archived papers outside the discovery window. When metadata lacks an abstract, the collector also tries an original-source PDF and requires a matching title and a clearly delimited abstract. Abstract summaries select exact private support passages and still pass the original accuracy checks. Failed refreshes preserve validated summaries when the evidence is unchanged.
-- Research collection uses the arXiv and Crossref APIs, with a maximum of six selected records per source per week. It is a selection, not an exhaustive review of AI science. PNAS/SSRN records without abstracts keep their original titles and links.
-- Every generation pass triggers a fresh validated website build. GitHub Pages deployment is enabled by the `BRIEF_PUBLISH=true` repository variable after Pages is configured.
-- The archive preserves story URLs and discussion keys. A separate 04:00 UTC job expires detailed reading sessions after 90 days.
-- No publisher article bodies or private support quotes are copied into the website. Source support lives in the service-only `brief_editorial_provenance` table.
-
-## Editorial limits
-
-Automatic support checks and model review reduce errors; they do not certify truth. Company claims, forecasts, opinion and study findings keep their attribution. A paper abstract is never labelled as a full-paper reading. Headlines from sources lacking suitable evidence remain clearly identified as publisher headlines.
-
-The seven curated W35 summaries are strictly bound to that release hash and its independent axes. They do not override future releases or corrected classifications.
-
-## Automatic daily publishing
-
-News reads the existing Observatory/Supabase evidence and current weekly release every day at 12:15 UTC. Research discovery checks arXiv and Crossref (PNAS/SSRN) daily, retains recent papers and resumes summaries. Cultural selections run from the stored database at 03:25 UTC, with a second opportunity at 15:25 UTC. The daily reading order also changes the front-page lead, highlights and starting batch without changing the weekly news dates or totals. The five daily categories are illustration, poetry, a short reading, an attributed quotation and music. Both update workflows trigger the validated build/publication workflow.
-
-Culture draws from a stored 2,000-entry collection: 400 artworks, 400 poems, 400 readings, 400 contextual quotations and 400 music recordings. Museum images and literary selections are stored locally. Music streams from its credited host on the reader's Play click. Creator nationality or cultural background, source links, edition dates and translation/recording credits travel with each entry. The 400-day calendar does not repeat entries within a category. No source sites are contacted for daily selection. `data/culture/library.sqlite` is the local database; `scripts/build_culture_library.py` rebuilds it from the shipped source JSON lists. No additional Supabase migration is needed for the collection. Existing culture likes and comments use migration `202609060002_brief_culture.sql`.
-
-AdSense defaults to Auto ads. The owner connects their publisher ID and published Google consent message once, enables Auto ads in their approved account, and Google then manages ad placement. There is no sponsor solicitation workflow in the public site. No revenue or account approval is guaranteed. See `OWNER-SETUP.md`.
-
-## Free short article links
-
-News and research articles use concise title-derived slugs (up to eight meaningful words). The first published slug is retained when a headline is edited. Duplicate titles receive a stable short identifier only when needed. Existing identifier URLs and their short links remain available as static HTML redirects to the new canonical article. Comments and saved articles retain their original story keys. The archive stores both the canonical path and legacy paths; keep these fields when moving or rebuilding the site. Pending English translations retain their current URL until an English headline is available. The sitemap lists canonical articles only.
-
-Every build generates a stable `s/<12-character-id>/` address for every retained article. The ID depends on its original path, never its position in an edition. Pages include the real article and its canonical/preview metadata, with an immediate HTML refresh to the original article. Readers therefore reach the exact destination; there is no external shortening service, account, inactivity expiry, or per-link fee. These are static HTML redirects, not HTTP 301 responses. GitHub Pages storage and traffic limits still apply.
-
-For platform-specific campaign attribution, run `python scripts/import_social_links.py /path/to/approved-batch.json`, review and commit `config/social-links.json`. This appends compact addresses such as `s/26w38-1l/` (LinkedIn) and `s/26w38-1f/` (Facebook), preserving the full destination and UTM parameters. The importer refuses to repoint an existing address. Keep all prior entries and article archives. `data/short-links.json` in the published site lists the resulting routes. Never reuse an address for a different article. A future hosting move must preserve this domain and these paths.
-
-Use the complete `https://` address as plain text on its own line in social posts. Verify the platform renders a hyperlink after saving and click it to check the article and tracking. LinkedIn may display its own `lnkd.in` link. For code-only maintenance, include `[no-cost-build]` in the push commit message to disable paid English translation for that build; stored translations remain available.
-
-Research now attempts the original-source PDF before writing. Every extracted page must be readable and the title must match; complete text is read directly or through verified notes covering all segments. Private provenance retains PDF/text hashes and page counts. Public output says “Summary of the paper” only after successful text reading and review; unavailable PDFs retain an abstract label and retry after seven days. Existing entries are automatically queued for this reading upgrade. The optional `data/research/reading-priority.json` lists paper keys to process first during a backfill. Practitioner writing targets a complete 30-second overview (at most 110 words) and a full brief of at most 200 words, with plain-language findings, a carefully framed example and uncertainty. Image-only charts are not interpreted by text extraction.
-
+For technical setup and operations, see [OWNER-SETUP.md](OWNER-SETUP.md). Visit [The Brief](https://brief.hamelberg-ai.com/).
