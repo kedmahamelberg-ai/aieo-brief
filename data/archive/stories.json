@@ -370,6 +370,118 @@
       ]
     },
     {
+      "id": "0ff89a61c8493a77c910",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262041-0",
+      "date": "2026-11-28",
+      "headline": "Malta meeting highlights AI-related cyber threats and misinformation, advocating digital literacy to protect democratic decision-making.",
+      "page_headline": "Malta meeting highlights AI-related cyber threats and misinformation, advocating digital literacy to protect democratic decision-making.",
+      "summary": "Malta’s Parliament discussed strengthening education partnerships, developing specialised diplomatic training and expanding cooperation with Estonia in digital transformation and cybersecurity. Speakers stressed digital literacy, critical thinking and democratic values, while cautioning that technology and artificial intelligence must serve society and remain guided by human judgement.",
+      "body_paragraphs": [],
+      "input_fingerprint": "6f814bde55becb0d127638f8d8b9460992c86777c1916fd7a939c8c2006fd923",
+      "page_description": "Malta’s Parliament discussed strengthening education partnerships, developing specialised diplomatic training and expanding cooperation with Estonia in digital transformation and cybersecurity. Speakers stressed digital literacy, critical thinking and democratic values, while cautioning that technology and artificial intelligence must serve society and remain guided by human judgement.",
+      "announcement_paragraphs": [
+        "Malta’s Parliament discussed strengthening education partnerships, developing specialised diplomatic training and expanding cooperation with Estonia in digital transformation and cybersecurity. Speakers stressed digital literacy, critical thinking and democratic values, while cautioning that technology and artificial intelligence must serve society and remain guided by human judgement."
+      ],
+      "key": "event:71f1e139-9485-5dec-b1d6-1c5abf854a68",
+      "kind": "news",
+      "section": "governments",
+      "slug": "malta-meeting-highlights-ai-related-cyber-threats-democratic-decision-making",
+      "path": "story/malta-meeting-highlights-ai-related-cyber-threats-democratic-decision-making/index.html",
+      "deck": "Malta’s Parliament discussed strengthening education partnerships, developing specialised diplomatic training and expanding cooperation with Estonia in digital transformation and cybersecurity. Speakers stressed digital literacy, critical thinking and democratic values, while cautioning that technology and artificial intelligence must serve society and remain guided by human judgement.",
+      "publisher": "Government of Malta",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Malta",
+          "headline": "Official government announcement",
+          "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262041-0",
+          "date": "2026-11-28",
+          "language": ""
+        }
+      ],
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Malta",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-71f1e139-9485-5dec-b1d6-1c5abf854a68/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
+      "id": "c4435a8043de106526e4",
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "https://media.gov.gr/kritiki-skepsi-on-mathites-mathainoun-na-anagnorizoun-ta-fake-news-kai-tis-pagides-tis-technitis-noimosynis/",
+      "date": "2026-11-28",
+      "headline": "Greece plans media-literacy education to help students identify fake news, misleading content and AI-generated media.",
+      "page_headline": "Greece plans media-literacy education to help students identify fake news, misleading content and AI-generated media.",
+      "summary": "A government-organized event at OAKA on December 2 will teach Attica high-school seniors to identify misinformation and AI-generated content, verify information and understand algorithms. The initiative forms part of the National Media Literacy Strategy and builds on a pilot critical-reading program.",
+      "body_paragraphs": [],
+      "input_fingerprint": "f7cd5ee59517ecae185983f4eba2d95094e61f950dd4cc2978bc14fc91d9dfc6",
+      "page_description": "A government-organized event at OAKA on December 2 will teach Attica high-school seniors to identify misinformation and AI-generated content, verify information and understand algorithms. The initiative forms part of the National Media Literacy Strategy and builds on a pilot critical-reading program.",
+      "announcement_paragraphs": [
+        "A government-organized event at OAKA on December 2 will teach Attica high-school seniors to identify misinformation and AI-generated content, verify information and understand algorithms. The initiative forms part of the National Media Literacy Strategy and builds on a pilot critical-reading program."
+      ],
+      "key": "event:30e7a95a-404c-5324-9e3c-d9eb9a37ed91",
+      "kind": "news",
+      "section": "governments",
+      "slug": "greece-plans-media-literacy-education-help-students-ai-generated-media",
+      "path": "story/greece-plans-media-literacy-education-help-students-ai-generated-media/index.html",
+      "deck": "A government-organized event at OAKA on December 2 will teach Attica high-school seniors to identify misinformation and AI-generated content, verify information and understand algorithms. The initiative forms part of the National Media Literacy Strategy and builds on a pilot critical-reading program.",
+      "publisher": "Government of Greece",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Greece",
+          "headline": "Official government announcement",
+          "url": "https://media.gov.gr/kritiki-skepsi-on-mathites-mathainoun-na-anagnorizoun-ta-fake-news-kai-tis-pagides-tis-technitis-noimosynis/",
+          "date": "2026-11-28",
+          "language": ""
+        }
+      ],
+      "display_date": "28 Nov 2026",
+      "markets": [],
+      "market_label": "Greece",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": null,
+      "legacy_paths": [
+        "story/government-30e7a95a-404c-5324-9e3c-d9eb9a37ed91/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/f/fb/20091104_Sharon_Isbin_-_Enrique_Granados%2C_Spanish_Dance_number_5_of_12%2C_1890.ogg",
       "creator": "Enrique Granados",
       "creator_origin": "Spanish",
@@ -36431,7 +36543,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-28T08:23:27.982913+00:00",
+      "affiliation_checked_at": "2026-11-28T14:08:31.384526+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
