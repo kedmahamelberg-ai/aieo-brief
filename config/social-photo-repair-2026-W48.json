@@ -1,0 +1,25 @@
+{
+  "schema_version": "brief_social_photo_repair_v1",
+  "source_edition": "2026-W47",
+  "publication_week": "2026-W48",
+  "revision": 2,
+  "baseline_artifact_url": "https://github.com/kedmahamelberg-ai/aieo-brief/actions/runs/45584387430/artifacts/15011349890",
+  "baseline_batch_sha256": "1d0931212f1b852140a4513f9fdfea929d1bced0c3f69fbd39cae6d54f2b3c57",
+  "repair_reason": "Visual audit found all fourteen News photographs generic or geographically unrelated to their approved topics. Replace only the photographs and derived media while preserving source copy, destinations and schedule.",
+  "expected_news_paths": [
+    "story/artificial-intelligence-health-new-paho-publication-reinforcement-learning/index.html",
+    "story/how-far-should-schools-prepare-young-world-work/index.html",
+    "story/if-theres-generative-ai-mis-adventures-cliff-finchers-used/index.html",
+    "story/which-generative-ai-choose-escape-chatgpt-gemini/index.html",
+    "story/when-ai-enters-physical-world-why-increasingly-important/index.html",
+    "story/governor-hochul-breaks-ground-permanent-empire-public-good/index.html",
+    "story/uqo-course-instructors-want-oversight-ai-use/index.html",
+    "story/london-protest-calls-stricter-ai-regulation-safety-concerns/index.html",
+    "story/artificial-intelligence-service-fight-against-emerging-infectious-diseases/index.html",
+    "story/domestic-large-models-lead-global-open-source-intelligent-economy/index.html",
+    "story/noel-2026-artificial-intelligence-invites-itself-canadian-women/index.html",
+    "story/china-industrial-internet-research-institute-launches-consulting-services/index.html",
+    "story/academy-member-european-academy-sciences-moncef-large-models/index.html",
+    "story/aws-quick-adds-ai-tools-meta-account-changes/index.html"
+  ]
+}
