@@ -1,0 +1,90 @@
+{
+  "schema_version": "brief_social_photo_scopes_v1",
+  "source_edition": "2026-W47",
+  "topics": {
+    "story/artificial-intelligence-health-new-paho-publication-reinforcement-learning/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Medical Reserve Corps volunteers working on a computer.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/how-far-should-schools-prepare-young-world-work/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Lecture with two speakers on stage, Quebec City.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/if-theres-generative-ai-mis-adventures-cliff-finchers-used/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Krasnogorsk-3 (Красногорск-3) 16-mm windup camera (Фотокамера) 03.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/which-generative-ai-choose-escape-chatgpt-gemini/index.html": {
+      "kind": "subject",
+      "preferred_files": ["ECE Paris - une salle de TP informatique-électronique.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/when-ai-enters-physical-world-why-increasingly-important/index.html": {
+      "kind": "subject",
+      "preferred_files": ["China Telecom building in Haikou - 01.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/governor-hochul-breaks-ground-permanent-empire-public-good/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Front of server racks at NERSC.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/uqo-course-instructors-want-oversight-ai-use/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Alex Manoogian School, Montreal․ 01.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/london-protest-calls-stricter-ai-regulation-safety-concerns/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Cover page halsburys.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/artificial-intelligence-service-fight-against-emerging-infectious-diseases/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Chapelle de l'Hôpital Saint-Louis, Paris.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/domestic-large-models-lead-global-open-source-intelligent-economy/index.html": {
+      "kind": "subject",
+      "preferred_files": ["SZ 深圳 Shenzhen 南山 Nanshan 科技園區 Keji Science and Technology Park January 2024 R12S 10.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/noel-2026-artificial-intelligence-invites-itself-canadian-women/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Real Canadian Superstore Edmonton North 2014.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/china-industrial-internet-research-institute-launches-consulting-services/index.html": {
+      "kind": "subject",
+      "preferred_files": ["SZ 深圳 Shenzhen 福田 Futian 市民中心 Civic Centre Aministration Service Hall 市政務中心 Shenzhen Government Service Center July 2026 N13P 104.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/academy-member-european-academy-sciences-moncef-large-models/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Students using a computer laptop.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    },
+    "story/aws-quick-adds-ai-tools-meta-account-changes/index.html": {
+      "kind": "subject",
+      "preferred_files": ["Pexels-photo-266176.jpg"],
+      "only_preferred": true,
+      "title_pattern": "."
+    }
+  }
+}
