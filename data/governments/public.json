@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-28T08:00:00+00:00",
-  "last_checked_at": "2026-11-28T08:22:55.065797+00:00",
+  "monitor_as_of": "2026-11-28T14:00:00+00:00",
+  "last_checked_at": "2026-11-28T14:08:04.027367+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -2420,6 +2420,30 @@
       "summary": "ACOA announced $687,723 in repayable support for Dartmouth-based Aurea Technologies to develop and test a third-generation portable wind turbine and supporting AI software. The project includes at least 20 prototypes, pilot preparation and in-house testing equipment, supporting consumer, defence and humanitarian applications.",
       "body_paragraphs": [],
       "input_fingerprint": "9399c3358ceb5c23e4cc27f088763226cf8ec0141fbb59acf1f3cf22175e8439"
+    },
+    "c4435a8043de106526e4": {
+      "id": "c4435a8043de106526e4",
+      "country": "Greece",
+      "country_code": "GR",
+      "url": "https://media.gov.gr/kritiki-skepsi-on-mathites-mathainoun-na-anagnorizoun-ta-fake-news-kai-tis-pagides-tis-technitis-noimosynis/",
+      "date": "2026-11-28",
+      "headline": "Greece plans media-literacy education to help students identify fake news, misleading content and AI-generated media.",
+      "page_headline": "Greece plans media-literacy education to help students identify fake news, misleading content and AI-generated media.",
+      "summary": "A government-organized event at OAKA on December 2 will teach Attica high-school seniors to identify misinformation and AI-generated content, verify information and understand algorithms. The initiative forms part of the National Media Literacy Strategy and builds on a pilot critical-reading program.",
+      "body_paragraphs": [],
+      "input_fingerprint": "f7cd5ee59517ecae185983f4eba2d95094e61f950dd4cc2978bc14fc91d9dfc6"
+    },
+    "0ff89a61c8493a77c910": {
+      "id": "0ff89a61c8493a77c910",
+      "country": "Malta",
+      "country_code": "MT",
+      "url": "https://departmentofinformation.gov.mt/press-release/2026/pr262041-0",
+      "date": "2026-11-28",
+      "headline": "Malta meeting highlights AI-related cyber threats and misinformation, advocating digital literacy to protect democratic decision-making.",
+      "page_headline": "Malta meeting highlights AI-related cyber threats and misinformation, advocating digital literacy to protect democratic decision-making.",
+      "summary": "Malta’s Parliament discussed strengthening education partnerships, developing specialised diplomatic training and expanding cooperation with Estonia in digital transformation and cybersecurity. Speakers stressed digital literacy, critical thinking and democratic values, while cautioning that technology and artificial intelligence must serve society and remain guided by human judgement.",
+      "body_paragraphs": [],
+      "input_fingerprint": "6f814bde55becb0d127638f8d8b9460992c86777c1916fd7a939c8c2006fd923"
     }
   },
   "checked": {
@@ -2621,7 +2645,9 @@
     "db37bc46607aac74ec5a": "cb3201a6649c7b4648ef5ab169fce43f3719c6b81bac0ad262a02e5e0374c346",
     "dee60a2b123b2fe5f44a": "a98526134a19cc6af2ced03de9fbc2a3b1e2d93487c21ae1e1bf8d07be08f343",
     "9f3589568482cbd7be76": "e6ec0a67ff27b1a2519eab7fbe3cbc1205cd6fc64d0acec5cd99a8730898b4a8",
-    "0c4913a4e2113919d14c": "9399c3358ceb5c23e4cc27f088763226cf8ec0141fbb59acf1f3cf22175e8439"
+    "0c4913a4e2113919d14c": "9399c3358ceb5c23e4cc27f088763226cf8ec0141fbb59acf1f3cf22175e8439",
+    "c4435a8043de106526e4": "f7cd5ee59517ecae185983f4eba2d95094e61f950dd4cc2978bc14fc91d9dfc6",
+    "0ff89a61c8493a77c910": "6f814bde55becb0d127638f8d8b9460992c86777c1916fd7a939c8c2006fd923"
   },
   "retry": {},
   "pending": 0,
