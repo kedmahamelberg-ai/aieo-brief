@@ -46,5 +46,17 @@
  clearAnalyticsStorage();
  if(consent)window.BriefUX?.start(consent.analytics,!!consent.research);
 
+ let restoredViewPending = false;
+ function recordRestoredView() {
+   if (!restoredViewPending || document.visibilityState !== 'visible') return;
+   restoredViewPending = false;
+   event('page_view', {});
+ }
+ window.addEventListener('pageshow', event => {
+   if (!event.persisted) return;
+   restoredViewPending = true;
+   recordRestoredView();
+ });
+ document.addEventListener('visibilitychange', recordRestoredView);
  loadGA();initAds();window.BriefAnalytics={allowed:analyticsAllowed,privateAllowed,choose,event,adPrivacy:()=>{if(window.googlefc?.showRevocationMessage){window.googlefc.callbackQueue=window.googlefc.callbackQueue||[];window.googlefc.callbackQueue.push(()=>window.googlefc.showRevocationMessage());}else window.dispatchEvent(new CustomEvent('brief-toast',{detail:'Open the advertising privacy message supplied by Google on this page.'}));}};
 })();
