@@ -1,7 +1,7 @@
 {
   "policy": "government-ai-brief-v4",
-  "monitor_as_of": "2026-11-27T17:28:08.398358+00:00",
-  "last_checked_at": "2026-11-27T17:46:51.366616+00:00",
+  "monitor_as_of": "2026-11-28T08:00:00+00:00",
+  "last_checked_at": "2026-11-28T08:22:55.065797+00:00",
   "records": {
     "53e1cfaad5e0566e4ea1": {
       "id": "53e1cfaad5e0566e4ea1",
@@ -2408,6 +2408,18 @@
       "summary": "Canada’s defence minister says cybercriminals use AI to make phishing messages and scams more convincing. Launching Cyber Month, he urges stronger passwords, multifactor authentication and scam awareness as part of national cyber resilience.",
       "body_paragraphs": [],
       "input_fingerprint": "e6ec0a67ff27b1a2519eab7fbe3cbc1205cd6fc64d0acec5cd99a8730898b4a8"
+    },
+    "0c4913a4e2113919d14c": {
+      "id": "0c4913a4e2113919d14c",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/atlantic-canada-opportunities/news/2026/11/women-led-wind-energy-company-will-develop-test-and-prove-its-portable-turbine-technology.html",
+      "date": "2026-11-27",
+      "headline": "Canada funds development and testing of a portable wind turbine and AI software for defence and…",
+      "page_headline": "Canada funds development and testing of a portable wind turbine and AI software for defence and emergency use.",
+      "summary": "ACOA announced $687,723 in repayable support for Dartmouth-based Aurea Technologies to develop and test a third-generation portable wind turbine and supporting AI software. The project includes at least 20 prototypes, pilot preparation and in-house testing equipment, supporting consumer, defence and humanitarian applications.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9399c3358ceb5c23e4cc27f088763226cf8ec0141fbb59acf1f3cf22175e8439"
     }
   },
   "checked": {
@@ -2608,7 +2620,8 @@
     "69812e5686d44e2f41e0": "9d5f7a75b8ed6c93dcb48cb9dacc83ed94ae5be158e93ac85ed82b2aa69cc3cb",
     "db37bc46607aac74ec5a": "cb3201a6649c7b4648ef5ab169fce43f3719c6b81bac0ad262a02e5e0374c346",
     "dee60a2b123b2fe5f44a": "a98526134a19cc6af2ced03de9fbc2a3b1e2d93487c21ae1e1bf8d07be08f343",
-    "9f3589568482cbd7be76": "e6ec0a67ff27b1a2519eab7fbe3cbc1205cd6fc64d0acec5cd99a8730898b4a8"
+    "9f3589568482cbd7be76": "e6ec0a67ff27b1a2519eab7fbe3cbc1205cd6fc64d0acec5cd99a8730898b4a8",
+    "0c4913a4e2113919d14c": "9399c3358ceb5c23e4cc27f088763226cf8ec0141fbb59acf1f3cf22175e8439"
   },
   "retry": {},
   "pending": 0,
