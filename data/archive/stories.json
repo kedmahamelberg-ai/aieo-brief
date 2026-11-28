@@ -736,6 +736,73 @@
       ]
     },
     {
+      "id": "0c4913a4e2113919d14c",
+      "country": "Canada",
+      "country_code": "CA",
+      "url": "https://www.canada.ca/en/atlantic-canada-opportunities/news/2026/11/women-led-wind-energy-company-will-develop-test-and-prove-its-portable-turbine-technology.html",
+      "date": "2026-11-27",
+      "headline": "Canada funds development and testing of a portable wind turbine and AI software for defence and…",
+      "page_headline": "Canada funds development and testing of a portable wind turbine and AI software for defence and emergency use.",
+      "summary": "ACOA announced $687,723 in repayable support for Dartmouth-based Aurea Technologies to develop and test a third-generation portable wind turbine and supporting AI software. The project includes at least 20 prototypes, pilot preparation and in-house testing equipment, supporting consumer, defence and humanitarian applications.",
+      "body_paragraphs": [],
+      "input_fingerprint": "9399c3358ceb5c23e4cc27f088763226cf8ec0141fbb59acf1f3cf22175e8439",
+      "page_description": "ACOA announced $687,723 in repayable support for Dartmouth-based Aurea Technologies to develop and test a third-generation portable wind turbine and supporting AI software. The project includes at least 20 prototypes, pilot preparation and in-house testing equipment, supporting consumer, defence and humanitarian applications.",
+      "announcement_paragraphs": [
+        "ACOA announced $687,723 in repayable support for Dartmouth-based Aurea Technologies to develop and test a third-generation portable wind turbine and supporting AI software. The project includes at least 20 prototypes, pilot preparation and in-house testing equipment, supporting consumer, defence and humanitarian applications."
+      ],
+      "key": "event:b1ef3a7b-385a-56dc-a458-c7d18d25d49d",
+      "kind": "news",
+      "section": "governments",
+      "slug": "canada-funds-development-testing-portable-wind-software-defence",
+      "path": "story/canada-funds-development-testing-portable-wind-software-defence/index.html",
+      "deck": "ACOA announced $687,723 in repayable support for Dartmouth-based Aurea Technologies to develop and test a third-generation portable wind turbine and supporting AI software. The project includes at least 20 prototypes, pilot preparation and in-house testing equipment, supporting consumer, defence and humanitarian applications.",
+      "publisher": "Government of Canada",
+      "source_count": 1,
+      "sources": [
+        {
+          "publisher": "Government of Canada",
+          "headline": "Official government announcement",
+          "url": "https://www.canada.ca/en/atlantic-canada-opportunities/news/2026/11/women-led-wind-energy-company-will-develop-test-and-prove-its-portable-turbine-technology.html",
+          "date": "2026-11-27",
+          "language": ""
+        }
+      ],
+      "display_date": "27 Nov 2026",
+      "markets": [],
+      "market_label": "Canada",
+      "topic": "policy",
+      "topic_label": "Government & AI",
+      "human_direction": "none",
+      "ai_direction": "none",
+      "human_label": "Context",
+      "ai_label": "Context",
+      "for_humans": "",
+      "for_ai": "",
+      "has_editorial": true,
+      "evidence_complete": false,
+      "summary_basis": "Monitor government narrative · AI topic label",
+      "reading_minutes": 1,
+      "edition": "Governments · 2026-11",
+      "publication_language": "en",
+      "english_status": "checked",
+      "government_photo": {
+        "market": "CA",
+        "path": "assets/spotlight/quebec.jpg",
+        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
+        "credit": "Wilfredor",
+        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
+        "license": "CC0 1.0 Universal",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "sha256": "c4b7f2a56be34c5d83981f94a341a488ea3cf2a70029989b958cf665c96d4503",
+        "caption": "Canada · Archive image for country context."
+      },
+      "show_feed_photo": true,
+      "legacy_paths": [
+        "story/government-b1ef3a7b-385a-56dc-a458-c7d18d25d49d/index.html"
+      ],
+      "url_slug_version": 1
+    },
+    {
       "content_fingerprint": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Sergei_Rachmaninoff_-_Concerto_1_in_F_sharp_minor%2C_3rd_movement.ogg",
       "creator": "Sergei Rachmaninoff",
       "creator_origin": "Russian–American",
@@ -1323,18 +1390,8 @@
       "edition": "Governments · 2026-11",
       "publication_language": "en",
       "english_status": "checked",
-      "government_photo": {
-        "market": "CA",
-        "path": "assets/spotlight/quebec.jpg",
-        "alt": "Jacques-Cartier National Park, Quebec. Geographic context, not a photograph of judges or an AI facility.",
-        "credit": "Wilfredor",
-        "source_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Jacques-Cartier_National_Park_from_the_Wolves_peak_(Les_Loups),_Quebec,_Canada.jpg",
-        "license": "CC0 1.0 Universal",
-        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-        "sha256": "c4b7f2a56be34c5d83981f94a341a488ea3cf2a70029989b958cf665c96d4503",
-        "caption": "Canada · Archive image for country context."
-      },
-      "show_feed_photo": true,
+      "government_photo": null,
+      "show_feed_photo": false,
       "legacy_paths": [
         "story/government-81aef893-aaec-5601-8c6a-fea673c43ede/index.html"
       ],
@@ -36374,7 +36431,7 @@
         "Huaxiu Yao"
       ],
       "institutions": [],
-      "affiliation_checked_at": "2026-11-28T04:58:29.580270+00:00",
+      "affiliation_checked_at": "2026-11-28T08:23:27.982913+00:00",
       "source_verified_at": "2026-11-03T19:32:14.401748+00:00",
       "publisher": "arXiv",
       "source": "arxiv",
