@@ -4,6 +4,9 @@ function page(overrides={},desktop=false,headTag=false,options={}){let listener,
  const slots=['feed','rail'].map(kind=>({dataset:{adKind:kind,adSlot:'12345'},hidden:true,children:[],querySelector(){return this.children[0]},querySelectorAll(){return this.children},appendChild(n){n.remove=()=>{this.children=[]};this.children.push(n)}}));
  const ids={'brief-config':{textContent:JSON.stringify({adsense:ads,is_preview:!!options.preview,ga4_measurement_id:'G-TEST'})},'analytics-consent':{},'consent-banner':{hidden:true}};
  const ctx={console,Date,JSON,CustomEvent:function(n,d){this.type=n;this.detail=d?.detail},localStorage:{getItem:()=>{if(options.storageBlocked)throw Error('blocked');return options.saved?JSON.stringify(options.saved):null;},setItem(){if(options.storageBlocked)throw Error('blocked')},removeItem(){}},location:{origin:'https://brief.hamelberg-ai.com',pathname:'/',hostname:'brief.hamelberg-ai.com',reload(){reloads++}},document:{title:'The Brief',cookie:'',head:{appendChild(n){nodes.push(n)}},getElementById:k=>ids[k],createElement:tag=>({tag,dataset:{},style:{}}),querySelectorAll:q=>q==='[data-ad-slot]'?slots:q==='script[src]'?nodes:[],querySelector:()=>({hidden:true}),addEventListener(){}},BriefCore:require('../assets/core.js'),BriefUX:{start(...args){events.push(args)},track(){}},navigator:{userAgent:options.userAgent||''},dispatchEvent(){},matchMedia:()=>({matches:desktop,addEventListener(){}}),__tcfapi:(op,version,cb)=>{listener=cb}};
+ const listeners = new Map();
+ ctx.addEventListener = ctx.document.addEventListener = (name, listener) => listeners.set(name, listener);
+ ctx.emit = (name, event = {}) => listeners.get(name)?.(event);
  ctx.window=ctx;ctx.globalThis=ctx;
  if(headTag){nodes.push({src:'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+ads.publisher_id});ctx.adsbygoogle=[];ctx.adsbygoogle.pauseAdRequests=1;}
  vm.runInNewContext(source,ctx);
@@ -60,4 +63,19 @@ test('saved private-history choices do not affect cookieless GA; preview sends n
  assert.equal(preview.ctx.BriefAnalytics.allowed(),false);
  assert.ok(!preview.nodes.some(n=>n.src && new URL(n.src).origin === 'https://www.googletagmanager.com'));
  assert.doesNotMatch(fs.readFileSync('templates/base.html','utf8'),/id="consent-banner"/);
+});
+
+test('GA counts a visible cached navigation once and excludes preview restores', () => {
+ for (const preview of [false, true]) {
+  const {ctx} = page({}, false, false, {preview});
+  const views = () => ctx.dataLayer.filter(call => call[0] === 'event' && call[1] === 'page_view').length;
+  ctx.document.visibilityState = 'hidden';
+  ctx.emit('pageshow', {persisted: false});
+  ctx.emit('pageshow', {persisted: true});
+  assert.equal(views(), preview ? 0 : 1);
+  ctx.document.visibilityState = 'visible';
+  ctx.emit('visibilitychange');
+  ctx.emit('visibilitychange');
+  assert.equal(views(), preview ? 0 : 2);
+ }
 });

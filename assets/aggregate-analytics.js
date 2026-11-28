@@ -38,7 +38,7 @@
  }
 
  const device = deviceClass(navigator);
- const source = landingSource(document.referrer, location.search);
+ let source = landingSource(document.referrer, location.search);
  const active = !config.is_preview && !config.is_redirect && config.supabase_url && config.supabase_publishable_key
   && path.length <= 240 && /^\/(?:[a-z0-9-]+\/)*$/.test(path) && !bot.test(navigator.userAgent || '');
  let sentView = false, sentRead = false, visibleSeconds = 0;
@@ -71,7 +71,11 @@
  view();
  document.addEventListener('visibilitychange', view);
  window.addEventListener('pageshow', e => {
-  if (e.persisted) { sentView = false; view(); }
+  if (e.persisted) {
+   source = 'direct_or_unknown';
+   sentView = false;
+   view();
+  }
  });
  if (active && document.body.dataset.storyKey) setInterval(() => {
   if (document.visibilityState !== 'visible' || sentRead) return;

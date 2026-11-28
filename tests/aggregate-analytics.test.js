@@ -116,4 +116,5 @@ test('counts the destination once and a visible return from browser history once
  listeners.visibilitychange();
  listeners.visibilitychange();
  assert.equal(requests.length, 2);
+ assert.equal(JSON.parse(requests[1].body).p_source, 'direct_or_unknown');
 });
